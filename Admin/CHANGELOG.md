@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 659 — Skills sin changelog (2026-10-10)
+
+- `club-data-mapping` (1.019 → 619 líneas), `escala`, `auditoria`, `club-sourcing`, `club-outreach`, `club-nuevo.md`: sin versiones,
+  fechas de decisión, to-dos ni contadores; contradicciones de redacción arregladas (toggle por país, monedas de `lookup-fx-close`,
+  hallazgos a `Admin/TODO.md`, pendientes de sourcing en `_notas-generales.md`, colores sin consultar). Sourcing: los worktrees se lanzan
+  sin consultar a Guido. To-do nuevo: remedir "otros negocios del club" de la skill `escala`.
+
 ## Versión 658 — `verificar.mjs`: subtotal repetido también por la fila de abajo (to-do 199, patrón A) (2026-10-10)
 
 - Una fila que no es renglón con el mismo importe que la fila inmediata de abajo (mismo lado, nada en el medio) no se cuenta; dentro del

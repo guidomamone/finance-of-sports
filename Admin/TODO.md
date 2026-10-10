@@ -117,3 +117,9 @@ ni en el comentario de ningún archivo de código.
 206. CABECERA DE LOS AÑOS DE RUSIA EN data/ (cosmético). Los años escritos por tools/bfo-rusia.mjs llevan el comentario de cargar.mjs ("Filas:
     proponer-carga.mjs (ancla-listas); categorías: <md>.categorias.json"), que no es cierto para ellos (sale del JSON del fisco). `escribir()`
     podría recibir el texto de la cabecera en P.
+
+207. ESCALA: REMEDIR "OTROS NEGOCIOS DEL CLUB" (revisión de la skill `escala-finance-of-sports`, sección I). La señal para evaluar un eje
+    separado de otros negocios del club era "~300 clubes cargados" y la proporción (~10 %) se midió con 161 clubes; hoy hay más (ver
+    `Admin/ESTADO-clubes.md`). Remedir la proporción en la próxima corrida del eje `escala` y, si cambió, actualizar ese punto de la skill
+    (umbral y criterio).
+

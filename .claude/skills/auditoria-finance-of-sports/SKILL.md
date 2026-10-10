@@ -1,23 +1,23 @@
 ---
 name: auditoria-finance-of-sports
-description: Auditoría de rutina del proyecto finance-of-sports — el chequeo transversal y periódico de que el sitio entero está sano y va a seguir estándolo, distinto de la verificación de onboarding (que revisa el club que se acaba de cargar) y de auditAll() (que revisa que los totales cierren). Busca problemas de datos que un total correcto NO delata, cosas que se van a romper cuando el proyecto escale a cientos de clubes o a otros deportes, bugs de runtime, y dónde se puede ahorrar tokens sin resignar exactitud. Usar cuando Guido pida una auditoría, cada ~5 clubes nuevos, antes de un push grande, o cuando algo se sienta raro y no haya un síntoma concreto que perseguir. Acepta un eje: `datos`, `escala`, `codigo`, `docs`, `tokens`.
+description: Auditoría de rutina del proyecto finance-of-sports. El chequeo transversal y periódico de que el sitio entero está sano y va a seguir estándolo, distinto de la verificación de onboarding (que revisa el club que se acaba de cargar) y de auditAll() (que revisa que los totales cierren). Busca problemas de datos que un total correcto NO delata, cosas que se van a romper cuando el proyecto escale a cientos de clubes o a otros deportes, bugs de runtime, y dónde se puede ahorrar tokens sin resignar exactitud. Usar cuando Guido pida una auditoría, cada ~5 clubes nuevos, antes de un push grande, o cuando algo se sienta raro y no haya un síntoma concreto que perseguir. Acepta un eje: `datos`, `escala`, `codigo`, `docs`, `tokens`.
 ---
 
 # Auditoría de rutina de finance-of-sports
 
-## 0. Por qué existe, y qué NO es
+## 0. Qué es, y qué NO es
 
 El proyecto ya tiene dos verificaciones, y las dos son buenas en lo suyo. Esta es una tercera cosa:
 
 | | Qué contesta | Cuándo | Alcance |
 |---|---|---|---|
 | Verificación de onboarding (etapa 6 de `Admin/PIPELINE.md`, `verificar.mjs`, y la compuerta de `cargar.mjs`) | ¿El club que **acabo de cargar** está bien? | Bloqueante, en esa sesión | Un club, contra el PDF |
-| `auditAll()` (`start-session` §4) | ¿Algo dejó de cerrar? | Antes de cada push de datos | Totales, 30 segundos |
+| `auditAll()` (`start-session` §4) | ¿Algo dejó de cerrar? | Antes de cada push de datos | Totales, rápido |
 | **Esto** | ¿El proyecto **entero** está sano, y va a seguir estándolo? | Periódica, no bloqueante | Transversal |
 
 La diferencia que importa: **el onboarding audita lo que se acaba de tocar; esto audita lo que nadie
-tocó hace meses.** Un ejercicio cargado hace 60 versiones no vuelve a pasar por el ojo de nadie, y
-`auditAll()` solo confirma que sigue sumando igual que el día que se cargó — incluido el caso en que
+tocó hace meses.** Un ejercicio cargado hace mucho no vuelve a pasar por el ojo de nadie, y
+`auditAll()` solo confirma que sigue sumando igual que el día que se cargó, incluido el caso en que
 se cargó mal desde el principio (si el total oficial se transcribió con el mismo error de escala,
 cierra perfecto para siempre).
 
@@ -29,10 +29,10 @@ quien tiene el documento delante. Audita CONSISTENCIA, no fuente.
 
 ## 1. El procedimiento: 3 capas, en orden
 
-Lo que hace que esto sea barato de correr es que las capas van de lo más determinista a lo más caro,
-y cada una acota a la siguiente. **No leas el repo entero: leé lo que la capa 1 marcó.**
+Las capas van de lo más determinista a lo más caro, y cada una acota a la siguiente. **No leas el
+repo entero: leé lo que la capa 1 marcó.**
 
-### Capa 1 — el script (5 segundos, 0 juicio)
+### Capa 1: el script (segundos, 0 juicio)
 
 ```bash
 node tools/audit.js
@@ -44,22 +44,22 @@ Agrupa todo en P0/P1/P2/P3 y sale con código 1 si hay P0 o P1. `--json` da la l
 Si la sesión tocó `data/` o el motor, corré **además** `auditAll()` en el navegador (`?audit=1`):
 la consola, los listeners y Chart.js no se ven desde Node.
 
-### Capa 2 — lectura dirigida (solo lo marcado)
+### Capa 2: lectura dirigida (solo lo marcado)
 
 Por cada hallazgo P0/P1 y por los P2 del eje de esta corrida, abrí **el archivo que el hallazgo
 nombra**, no el vecino ni el motor entero. Un hallazgo sin archivo detrás no se reporta.
 
-### Capa 3 — un eje de juicio, rotando
+### Capa 3: un eje de juicio, rotando
 
 Un solo eje por auditoría, no los cinco. Cuál toca sale del reporte anterior (cada uno registra el
 suyo); si Guido pidió uno explícito (`/auditoria escala`), ese manda.
 
 | Eje | Qué mirar, que el script no puede |
 |---|---|
-| `datos` | **Se corre POR PAÍS, no sobre el proyecto entero** (decisión de Guido). A qué país le toca: el que tenga la fecha más vieja (o "nunca") en el campo **Última auditoría de datos** de su `fuentes/_indice/<País>.md` (mismo mecanismo que ya usa `fuentes/README.md` para sourcing — ver su REGLA 5). Dentro del país elegido: los ejercicios con catch-all alto o sin verificación, contra su `.md` transcripto (NO contra el PDF). ¿La categorización dice algo, o está todo en "Otros"? ¿El criterio contable es el mismo que en clubes parecidos del mismo país? Al terminar, actualizar esa fecha a la de hoy. **`brandColor` YA NO es parte de este eje**: se verifica una sola vez, al onboardear el club (`club-or-year-onboarding/club-nuevo.md`, chequeo contra el escudo), no en cada auditoría periódica — evita que se acumule un backlog de clubes nuevos sin revisar. |
-| `escala` | Ver `.claude/skills/escala-finance-of-sports/SKILL.md`: tiene el mapa completo de puntos calientes (con el número en el que se rompe cada uno) y la metodología para actualizarlo. Es una skill aparte porque el mapa es grande y cambia con cada sesión de sourcing/onboarding — meterlo acá bloquearía esta skill genérica. |
+| `datos` | **Se corre POR PAÍS, no sobre el proyecto entero.** A qué país le toca: el que tenga la fecha más vieja (o "nunca") en el campo **Última auditoría de datos** de su `fuentes/_indice/<País>.md` (mismo mecanismo que usa `fuentes/README.md` para sourcing, ver su REGLA 5). Dentro del país elegido: los ejercicios con catch-all alto o sin verificación, contra su `.md` transcripto (NO contra el PDF). ¿La categorización dice algo, o está todo en "Otros"? ¿El criterio contable es el mismo que en clubes parecidos del mismo país? Al terminar, actualizar esa fecha a la de hoy. **`brandColor` no es parte de este eje**: se verifica una sola vez, al onboardear el club (`club-or-year-onboarding/club-nuevo.md`, chequeo contra el escudo), no en cada auditoría periódica. |
+| `escala` | Ver `.claude/skills/escala-finance-of-sports/SKILL.md`: tiene el mapa completo de puntos calientes (con el comando que mide cada uno y el volumen en el que se rompe) y la metodología para actualizarlo. Es una skill aparte porque el mapa es grande y cambia con cada sesión de sourcing y onboarding. |
 | `codigo` | Con el sitio levantado: consola limpia, re-render que no duplica listeners, charts que se destruyen, `loadClubData()` con un club que falla, toggles combinados (moneda × formato × club × año). |
-| `docs` | Qué dice dos veces lo mismo, qué se lee en cada sesión sin usarse, qué quedó desactualizado respecto de los datos (`node tools/generate-club-index.js --check`). |
+| `docs` | Qué dice dos veces lo mismo, qué se lee en cada sesión sin usarse, qué está desactualizado respecto de los datos (`node tools/generate-club-index.js --check`). |
 | `tokens` | Dónde se van los tokens de una sesión típica, y qué de eso es automatizable. **Con el §4 de este skill al lado.** |
 
 ---
@@ -69,9 +69,9 @@ suyo); si Guido pidió uno explícito (`/auditoria escala`), ese manda.
 | | Qué significa | Qué se hace |
 |---|---|---|
 | **P0** | Un número publicado está mal, o puede estarlo | Se arregla en esta sesión, antes que nada |
-| **P1** | Algo roto o ausente que el visitante ve | Se arregla en esta sesión, o va al tope de la to-do con su motivo |
-| **P2** | No está mal hoy; se rompe o no escala mañana | Va a la to-do de `index.html` |
-| **P3** | Limpieza e informativo | Queda en el reporte. No ensucia la to-do |
+| **P1** | Algo roto o ausente que el visitante ve | Se arregla en esta sesión, o va al tope de `Admin/TODO.md` con su motivo |
+| **P2** | No está mal hoy; se rompe o no escala mañana | Va a `Admin/TODO.md` |
+| **P3** | Limpieza e informativo | Queda en el reporte. No ensucia `Admin/TODO.md` |
 
 **Nunca bajes la severidad de un hallazgo para que el resumen quede más lindo.** Si un hallazgo está
 mal clasificado, se reclasifica en `tools/audit.js` (con el comentario de por qué), no en el reporte.
@@ -80,7 +80,8 @@ mal clasificado, se reclasifica en `tools/audit.js` (con el comentario de por qu
 
 ## 3. El reporte
 
-Va a `auditorias/<AAAA-MM-DD>.md`. Estructura fija:
+Va a `auditorias/<AAAA-MM-DD>.md` (con el sufijo del eje si coincide con otra del mismo día, por
+ejemplo `auditorias/<fecha>-escala.md`). Estructura fija:
 
 ```markdown
 # Auditoría <fecha>
@@ -91,15 +92,16 @@ Va a `auditorias/<AAAA-MM-DD>.md`. Estructura fija:
 ## Resueltos desde <fecha anterior>
 ## Hallazgos                      (agrupados por severidad y código)
 ## Eje de juicio: <eje>           (lo que no es asertable)
-## Qué se movió a la to-do
+## Qué se movió a Admin/TODO.md
 ```
 
 **El diff contra el reporte anterior no es opcional: es lo que hace que esto sirva más de una vez.**
-Sin él, la cuarta auditoría repite los mismos 52 hallazgos y nadie la lee. Leé el reporte anterior
-ANTES de escribir el nuevo.
+Sin él, cada auditoría repite los mismos hallazgos y nadie la lee. Leé el reporte anterior ANTES de
+escribir el nuevo.
 
-Los P0/P1/P2 que sobrevivan van a la **to-do de `index.html`**, que es la única lista oficial de
-próximos pasos del proyecto (`CLAUDE.md`). El reporte no es una segunda to-do.
+Los P0/P1/P2 que sobrevivan van a **`Admin/TODO.md`**, que es la única lista oficial de pendientes
+del proyecto (`CLAUDE.md`): un punto nuevo toma el número siguiente al más alto, y lo resuelto se
+borra. El reporte no es una segunda lista de pendientes.
 
 ### Qué mostrarle a Guido en pantalla
 
@@ -125,10 +127,9 @@ es una mala operación, siempre.**
 
 **Sí se puede, y es donde conviene buscar:**
 
-- Duplicación de documentación: el mismo dato de un club vive en `Admin/ESTADO-clubes.md` (antes el comentario de
-  `index.html`, y antes de la Versión 239 el bloque CLUB-INDEX de `Admin/ESTADO.md`), en
+- Duplicación de documentación: el mismo dato de un club puede vivir en `Admin/ESTADO-clubes.md`, en
   la cabecera de su `data/*.js`, en `Admin/CHANGELOG.md` y en `fuentes/`. `tools/generate-club-index.js`
-  ya eliminó una copia; medir cuánta queda.
+  genera una de esas copias; medir cuánta duplicación queda en las demás.
 - Lo que se lee en CADA sesión (`start-session` §1) contra lo que de verdad se usa.
 - Reabrir un PDF ya transcripto: siempre se usa el `.md`, nunca el PDF de nuevo.
 - **Cada chequeo que se automatiza en `tools/audit.js` es un chequeo que deja de costar razonamiento
@@ -142,20 +143,21 @@ es una mala operación, siempre.**
 Una auditoría que solo lista problemas se vuelve ruido en la tercera corrida. La regla:
 
 **Cuando un hallazgo se repite en más de un club, el arreglo no es arreglar los datos: es escribir la
-regla en el skill que corresponde.** Tres clubes con la misma mala categorización se arreglan los
+regla en el lugar que corresponde.** Tres clubes con la misma mala categorización se arreglan los
 tres *y* se agrega la regla a `club-data-mapping`, para que el cuarto no nazca mal. Así cada
 auditoría deja menos trabajo para la siguiente en vez de la misma lista de siempre.
 
 Destinos: criterio de categorización/moneda → `club-data-mapping`; proceso de onboarding o
-arquitectura a reusar → `club-or-year-onboarding`; dónde buscar documentos → `club-sourcing`; regla
-de UI/datos ya decidida → `Admin/CONVENCIONES.md`; trampa del entorno → `CLAUDE.md`.
+arquitectura a reusar → `club-or-year-onboarding`; dónde buscar documentos → `club-sourcing`;
+regla de proceso → `Admin/CONVENCIONES.md`; regla de datos → `Admin/CONVENCIONES-DATOS.md`; regla de
+pantalla o código del sitio, o trampa del navegador → `Admin/PANTALLA.md`; trampa de PDF o del
+pipeline → `Admin/PIPELINE.md`.
 
 ---
 
 ## 6. Falsos positivos ya descartados (no volver a "descubrirlos")
 
-Los 4 que tiró la primera versión de `tools/audit.js` y ya están corregidos en el script. Están acá
-por si reaparecen en otra forma:
+Están corregidos en `tools/audit.js`. Quedan acá por si reaparecen en otra forma:
 
 - **`fx: null` no rompe la conversión.** `yearMetaFor()` sustituye el `FX_RATE` placeholder global
   (1450), así que el toggle a moneda nativa muestra un número aproximado, no `$0`. Aproximado y
@@ -165,12 +167,12 @@ por si reaparecen en otra forma:
 - **Un ingreso negativo o un gasto positivo casi siempre es legítimo** (deducciones sobre a receita
   en Brasil, variación de existencias en España). Solo importa si la línea pesa.
 - **Un ejercicio placeholder tiene sus líneas en cero.** No le "faltan" los sueldos: no tiene datos.
-
-- **Un club sin color NO es un dato faltante si dice `brandColor:null`** (Versión 179). `null` es el
-  resultado CERRADO de "se miró y no lleva color" — el que lo identifica es el blanco, o es ambiguo
-  entre dos (ver `Admin/CONVENCIONES.md`) — no un pendiente que alguien tenga que completar: completarlo a
-  ojo es exactamente lo que el criterio prohíbe. Lo que sí es un hallazgo es el campo AUSENTE, y para
-  eso ya está `club-sin-color-ni-null` (P3) en el script, así que tampoco hace falta mirarlo a mano.
+- **Un club sin color NO es un dato faltante si dice `brandColor:null`.** `null` es el resultado
+  CERRADO de "se miró y no lleva color" (el que lo identifica es el blanco, o es ambiguo entre dos;
+  ver `Admin/PANTALLA.md` y `club-or-year-onboarding/club-nuevo.md`), no un pendiente que alguien
+  tenga que completar: completarlo a ojo es exactamente lo que el criterio prohíbe. Lo que sí es un
+  hallazgo es el campo AUSENTE, y para eso ya está `club-sin-color-ni-null` (P3) en el script, así
+  que tampoco hace falta mirarlo a mano.
 
 Y uno estructural, del propio motor: **`auditAll()` y `verifyTieOuts()` solo ven los clubes cargados
 en memoria.** Cualquier verificación que se escriba en el navegador tiene que forzar la carga primero
@@ -180,8 +182,13 @@ en memoria.** Cualquier verificación que se escriba en el navegador tiene que f
 
 ## Cómo mantener este skill
 
+Esta skill dice cómo se hace hoy, no cómo se llegó: sin versiones, fechas de decisión ni contadores
+(la historia va a `Admin/CHANGELOG.md`; los números se piden con `node tools/audit.js`,
+`node tools/estado.mjs` o `Admin/ESTADO-clubes.md`).
+
 Si una auditoría encuentra una clase de problema que no está en ningún eje, agregá el eje o
-extendelo. Si un chequeo terminó siendo automatizable, movelo a `tools/audit.js` y sacalo de acá —
+extendelo. Si un chequeo terminó siendo automatizable, movelo a `tools/audit.js` y sacalo de acá:
 este archivo es para el juicio, no para lo que una máquina hace mejor. Si un falso positivo costó más
 de una vez entenderlo, va a la sección 6. Si el archivo crece tanto que no se lee en dos minutos, es
-señal de que algo debería vivir en `Admin/CONVENCIONES.md` (una regla) o en `tools/audit.js` (un chequeo).
+señal de que algo debería vivir en `Admin/CONVENCIONES.md` o `Admin/CONVENCIONES-DATOS.md` (una
+regla) o en `tools/audit.js` (un chequeo).
