@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/cargar.mjs — ETAPA 6 del pipeline: cargar en el sitio el ejercicio de un documento ya categorizado.
+// tools/cargar.mjs: ETAPA 8 del pipeline (ver Admin/PIPELINE.md): cargar en el sitio el ejercicio de UN documento ya categorizado.
 //
 //     node tools/cargar.mjs "Clubes/Países Bajos/PSV/PSV-Jaarverslag-2019-2020.pdf"            # propuesta (default): no escribe el sitio
 //     node tools/cargar.mjs "<pdf>" --escribir                                                  # escribe, audita y revierte si algo falla
@@ -8,7 +8,8 @@
 // POR QUÉ EXISTE (pedido de Guido, 2026-09-30, to-do 108 sección 3b y to-do 112): el pipeline (tools/pipeline.mjs) llevaba un PDF hasta la
 // categorización de sus rubros (etapa 5, `<md>.categorias.json`) y ahí se cortaba: el ejercicio lo cargaba a mano una sesión de Claude. Esta
 // herramienta es el paso que faltaba, SOLO para el caso fácil que decidió Guido: un AÑO NUEVO de un club que YA existe en el sitio (el alta de
-// clubes nuevos es tools/alta-club.mjs y todavía no se encadena acá). Todo lo que requiera criterio se FRENA con el motivo escrito; no se
+// clubes nuevos es tools/alta-club.mjs y este script no la encadena: si el club no existe, frena). Quien sí encadena el alta y hace un commit
+// por año es tools/cargar-lote.mjs (lo que corre `lote.mjs --cargar`), que llama a este script para cada documento. Todo lo que requiera criterio se FRENA con el motivo escrito; no se
 // inventa nada. Sin tokens de sesión y sin ninguna API: lee lo que dejaron las etapas anteriores y archivos locales.
 //
 // ----------------------------------------------------------------------------
@@ -62,7 +63,7 @@
 // la fila de liga en data/club-leagues/<iso2>.js, la cotización de mercado nueva en FX_CLOSE si hace falta, la línea de fuentes/, sube
 // ASSET_V (la constante Y cada `?v=` literal de index.html, salvo que ya esté subido respecto de HEAD), corre los 4 generadores y
 // `node tools/audit.js --quiet`. Si la auditoría da algún P0/P1, o cualquier paso falla, RESTAURA cada archivo tocado y borra lo creado
-// (mismo mecanismo que alta-club.mjs). No commitea (eso lo decide Guido). No toca `.claude/skills/`, `Admin/TODO.md` ni `CHANGELOG.md`.
+// (mismo mecanismo que alta-club.mjs). Este script solo NO commitea (el commit por año lo hace tools/cargar-lote.mjs). No toca `.claude/skills/`, `Admin/TODO.md` ni `CHANGELOG.md`.
 //
 // ----------------------------------------------------------------------------
 // MEDIDO (2026-09-30, informe completo en Admin/tests/test-cargar.md)

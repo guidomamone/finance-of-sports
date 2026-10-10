@@ -579,10 +579,9 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   un ejercicio puntual ("Balance 2024/2025") sin bajar nada.
 - VERIFICACIÓN AUTOMÁTICA: `verifyTieOuts()` exige que cada ejercicio con total
   oficial conocido cierre contra el documento impreso, y `checkFxSanity()` que
-  cada `fx` caiga en un rango plausible para su moneda. Hoy son 842 checks (3 no
-  cierran, los mismos ±0,1 M€ de redondeo de Bayern Munich 2024/2025 ya documentados
-  y silenciados, nada nuevo de esta tanda ni de la anterior), 0 warnings de fx (medido
-  el 2026-09-25, Versión 227, tras la 2da tanda de 20 transcripts).
+  cada `fx` caiga en un rango plausible para su moneda. La consola del navegador
+  cuenta los checks y lista los que no cierran; los ±0,1 M€ de redondeo de Bayern Munich 2024/2025 están documentados
+  y silenciados.
   COMPLEMENTO, DESDE LA VERSIÓN 122: `node tools/audit.js` audita en Node lo que un
   total correcto NO delata (ejercicios que no tienen ningún total contra qué
   compararse, categorías con typo o prestadas de la otra taxonomía, errores de
@@ -590,7 +589,7 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   ramas por club en el código), MÁS, desde la Versión 183, que los 4 generadores estén al
   día (`checkGenerados()`, P1): corre el `--check` de cada uno en 0,2 s. Salió de un
   problema real: `tools/generate-fuentes-page.js` LEE `ASSET_V` de `index.html`, así que
-  subirlo desactualiza las 42 páginas de fuentes sin tocar un dato y sin que nada se vea
+  subirlo desactualiza las páginas de fuentes sin tocar un dato y sin que nada se vea
   roto. Carga `js/finanzas-calc.js` en un contexto de `vm`
   y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 1 P2 (intencional: 2
   ejercicios sin fila de liga porque jugaron un 2do escalón sin catálogo todavía, Zulte Waregem
@@ -631,7 +630,7 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   fuente, qué ejercicios respalda, tipo de cambio con su procedencia y
   salvedades), más `fuentes.html`, que desde la Versión 162 es el ÍNDICE: una fila
   por club con su conteo y el link a su página, sin contenido de fuentes adentro.
-  Las 169 páginas, el índice y `sitemap.xml` los GENERA
+  Las páginas por club, el índice y `sitemap.xml` los GENERA
   `node tools/generate-fuentes-page.js`: no se editan a mano, y el generador borra
   la página de un club que deje de existir (si no, Netlify la seguiría sirviendo).
   POR QUÉ POR CLUB Y NO POR PAÍS, que es lo que pedía el to-do viejo: el club es la
@@ -759,9 +758,7 @@ completo está en `Admin/CONVENCIONES.md`.
   decisión. Solo hace falta para entender el "por qué" de algo viejo.
 - `CLAUDE.md`: instrucciones permanentes del proyecto (dónde guardar PDFs, qué
   skill leer antes de qué tarea, qué preguntarle a Guido antes de asumir).
-- `.claude/skills/`: 6 skills propios (start-session-finance-of-sports-project,
-  club-data-mapping, club-or-year-onboarding, club-sourcing,
-  auditoria-finance-of-sports, escala-finance-of-sports). Se autodescubren cuando
+- `.claude/skills/`: los skills propios del proyecto (uno por tarea; los lista CLAUDE.md). Se autodescubren cuando
   la sesión abre directo en `finance-of-sports/`; ver CLAUDE.md para el caso en
   que no.
 - LAS NOTAS INTERNAS DE SOURCING (`fuentes/<País>/<Club>.md`, 610, y

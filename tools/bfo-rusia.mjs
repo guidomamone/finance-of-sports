@@ -13,9 +13,10 @@
 //   escalón 1 (este script, gratis y determinista): el formulario 2 con un mapa FIJO de código a categoría (abajo, MAPA). Los ingresos (2110)
 //     no vienen abiertos: van a "fútbol sin desglosar" con "posiblemente incluido en" TV, entradas, socios y sponsors (decisión de Guido).
 //     Compuerta: la suma de los renglones da el 2300 impreso y, con el impuesto, el 2400. Si no cierra, el año NO se carga.
-//   escalón 2 (pendiente, con IA barata): donde las notas explicativas (poyasneniya) abren los ingresos o los "otros ingresos" (2340: suele
-//     ser el aporte del dueño o la venta de jugadores), reemplazar el renglón por su desglose con la misma compuerta. Los PDFs ya están
-//     transcriptos (lote 60). Decisión de Guido: si hay información útil fuera del JSON, se usa.
+//   escalón 2 (hecho: tools/bfo-rusia-notas.mjs, con IA barata y la misma compuerta aritmética): donde las notas explicativas (poyasneniya)
+//     abren los ingresos o los "otros ingresos" (2340: suele ser el aporte del dueño o la venta de jugadores), reemplaza el renglón por su
+//     desglose. Este script lee lo que ese otro deja en Generados/Rusia/<Club>/<nota>.bfo-notas.json (ver `escalon2` más abajo; con
+//     --reemplazar reescribe los años ya cargados). Decisión de Guido: si hay información útil fuera del JSON, se usa.
 //
 //   escalón 3 (Versión 647, ok de Guido el 2026-10-09): el FORMULARIO 6 (Отчет о целевом использовании средств). Los clubes que son ANO
 //     (sin fines de lucro: Akhmat, Akron) o que reciben aportes del dueño o del gobierno regional (Dynamo Makhachkala, Pari NN, Orenburg) los

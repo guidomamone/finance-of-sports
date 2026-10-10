@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 655 — Documentos de Admin/ al día: sin contadores fijos ni números de to-do (2026-10-09)
+
+- `ESTADO.md` reescrito como snapshot (sin el log de versiones, sin to-dos, sin inventarios: remite a `estado.mjs` y `ESTADO-clubes.md`);
+  qué publica `netlify.toml` (las transcripciones de `Clubes/` se publican a propósito). Premisa de `netlify.toml` corregida en
+  CONVENCIONES-DATOS; números viejos fuera de CONVENCIONES, PANTALLA y ARQUITECTURA; sección Rusia en PIPELINE; costo de extraer medido
+  (mediana US$ 0,20); cabeceras de `bfo-rusia.mjs` (escalón 2 hecho), `cargar.mjs` (etapa 8; `cargar-lote.mjs` encadena alta y commits)
+  y `lote.mjs`.
+
 ## Versión 654 — `verificar.mjs`: escalón "signo del documento" para los ajustes `fila` (to-do 200) (2026-10-09)
 
 - Después de la lectura 4: el signo de un ajuste `fila` se compara con cómo imprime el estado su lado; el contrario resta. Medido:

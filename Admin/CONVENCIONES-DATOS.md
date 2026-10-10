@@ -23,9 +23,10 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   (5) NO se copia a `data/` jamás: el día que ese club publique su balance real se carga leyendo el
       documento, no promoviendo el relleno;
   (6) **NO QUEDA EN EL REPO MÁS ALLÁ DE LA SESIÓN QUE LO NECESITA** (condición nueva, Versión 155,
-      y la que faltaba). El repo SE DEPLOYA ENTERO: no hay `netlify.toml` ni `_redirects`, Netlify
-      publica la raíz, así que cualquier archivo trackeado es alcanzable por URL en
-      `financeofsports.com`. El relleno de los prototipos estuvo servido públicamente tres días sin
+      y la que faltaba). Netlify publica la raíz, y `netlify.toml` solo borra del deploy lo
+      interno (`Admin/`, `CLAUDE.md`, `fuentes/**/*.md`, `auditorias/`, `Prototyping/`, `tools/` y `Generados/`). Todo lo demás
+      que está trackeado es alcanzable por URL en `financeofsports.com`: la raíz, `data/`, `js/`, `fuentes/*.html` y las
+      transcripciones de `Clubes/`. El relleno de los prototipos estuvo servido públicamente tres días sin
       que nadie se diera cuenta. Tenía su franja roja y nadie estaba linkeado a él, pero un sitio
       cuyo argumento entero es que sus números son verificables no puede servir números falsos desde
       su dominio. Vale para cualquier cosa que se deje en el repo "por las dudas".

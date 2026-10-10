@@ -6,8 +6,9 @@ de `index.html`, mezcladas con el historial de versiones: se movieron acá en la
 Versión 114 porque son criterios VIGENTES, no historia: el historial se lee una
 vez y se olvida, esto hay que tenerlo a mano cada vez que se toca el sitio.
 
-Cada bullet conserva la versión en la que se decidió, para poder rastrear el
-porqué completo en `Admin/CHANGELOG.md` (resumen) o `Admin/finance-of-sports-project.md` (narrativa).
+El porqué de cada regla y cuándo se decidió está en `Admin/CHANGELOG.md` (resumen) o
+`Admin/finance-of-sports-project.md` (narrativa). (Muchos bullets todavía llevan su número de versión: es un resto de cuando se
+conservaba ahí, no algo a imitar en los bullets nuevos.)
 Las que dicen "pedido explícito de Guido" no son negociables sin preguntarle.
 
 Si una decisión nueva contradice algo de acá, actualizá ESTE archivo en la misma
@@ -24,7 +25,7 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   sin que nada avise. Pasó el 2026-09-22 con tres sesiones de documentación. La separación es un
   worktree (`git worktree`), que convierte un clobber invisible en un conflicto de merge visible.
   - **El ONBOARDING va en `main`, el SOURCING en el worktree.** No es simétrico, y el motivo es
-    `Clubes/`: hay 2881 PDFs y 10 GB ahí, y **ninguno está trackeado** (solo las transcripciones
+    `Clubes/`: hay miles de PDFs y decenas de GB ahí, y **ninguno está trackeado** (solo las transcripciones
     `.md`). Un worktree nace sin un solo PDF. El onboarding necesita el PDF del club que carga, que
     ya está en el árbol principal; el sourcing los crea. Además el onboarding necesita el preview
     para `auditAll()`, y `.claude/launch.json` tiene el puerto fijo con `autoPort:false`.

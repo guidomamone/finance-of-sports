@@ -488,7 +488,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   lista SE BORRA, hay que sacarlo, o el chequeo entero revienta con ENOENT y deja de correr.
   AMPLIADO (Versión 162): la regla no es solo para `js/`, es para TODO archivo que emita claves de
   i18n, incluido el que GENERA HTML. `tools/generate-fuentes-page.js` escribe `data-i18n` en
-  `fuentes.html` y en las 41 páginas por club, y no estaba en ningún escaneo: una clave nueva de esas
+  `fuentes.html` y en las páginas por club, y no estaba en ningún escaneo: una clave nueva de esas
   páginas era invisible para el chequeo. Ya está en la lista.
   COROLARIO (Versión 155): las claves que quedan huérfanas al borrar una feature se borran de
   `data/lang/en.js` en el mismo movimiento — el merge del selector dejó 88. El audit no las detecta:

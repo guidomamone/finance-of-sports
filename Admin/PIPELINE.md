@@ -78,7 +78,7 @@ Mitigaciones:
             (otro perímetro) no dispara el rearmado
             Un documento con la etapa 4 y sin la 6 (un lote cortado) pasa primero por la etapa 6, gratis y también en el
             ensayo, y el rearmado decide con ella (to-do 162)
- ESCALÓN 2  (falta, to-do 140b) escaneo entero → Gemini o Claude sobre las páginas candidatas
+ ESCALÓN 2  (no entró: no hay escaneo entero con Gemini o Claude) escaneo entero → Gemini o Claude sobre las páginas candidatas
  nada → queda como fuente (memoria, dictamen, balance solo)
 ```
 
@@ -181,7 +181,7 @@ Mitigaciones:
 
 ### 5 Extraer
 
-- a) `extraer.mjs` (IA, ~US$ 0,12; hasta ~US$ 0,35 en documentos largos) recibe solo los bloques elegidos, con cada línea numerada.
+- a) `extraer.mjs` (IA, ~US$ 0,20 de mediana según lo gastado en `Admin/claude-api/resultados.jsonl`; hasta ~US$ 0,35 en documentos largos) recibe solo los bloques elegidos, con cada línea numerada.
 - b) Devuelve las filas tal cual: etiqueta, importe, año anterior, tipo (renglón, subtotal, total, resultado), lado (ingreso, gasto,
   financiero, impuesto), qué renglón del estado desglosa cada fila de nota, y la escala de cada bloque.
 - c) Una nota puede desglosar un renglón de otra nota (desglose anidado). De un cuadro por segmento toma solo la columna del segmento que
@@ -322,7 +322,7 @@ Riesgos:
 - ii) un club sin año vecino para comparar.
 
 Mitigaciones:
-- i) segundo chequeo (año vecino; falta: un número citado en el texto del documento, to-do 140f);
+- i) segundo chequeo (año vecino; el chequeo con un número citado en el texto del documento no entró: se midió y no agrega nada, ver `Admin/HALLAZGOS-pipeline.md`);
 - ii) va a la cola.
 
 ### 7 Categorizar
@@ -510,6 +510,23 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 - Cómo la resuelve Guido (2026-10-05): con un subagente (Sonnet) que resume los casos; no hace falta ordenarla ni otra vista.
 
 ---
+
+## Rusia (GIR BO): otro camino de entrada
+
+Rusia no sale de PDFs. Para cada club hay un JSON oficial del fisco ruso (`Clubes/Rusia/<Club>/bfo-AAAA-datos.json`), así que el camino
+reemplaza las etapas 2 a 7 y comparte la 8 (cargar) y la 9 (un commit por año, sin push). El proceso completo, con ejemplos, está en la
+sección Rusia de `Admin/COMO-CORRE-EL-PROYECTO.html`; el detalle de cada escalón, en la cabecera de cada script.
+
+- Escalón 1, `tools/bfo-rusia.mjs` (gratis, sin IA): el formulario 2 ruso con un mapa fijo de código a categoría. Compuerta: la suma de
+  los renglones da el 2300 impreso. Si no cierra, el año no se carga.
+- Escalón 2, `tools/bfo-rusia-notas.mjs` (IA barata, la corre Guido con `--ejecutar`): abre los renglones del formulario 2 con las tablas de
+  las notas explicativas. Compuerta aritmética sin IA: las filas suman el código del formulario 2. Si no suma, el año queda con el renglón
+  entero del escalón 1.
+- Formulario 6, también en `tools/bfo-rusia.mjs`: para los clubes que reciben aportes (sin fines de lucro o con aportes del dueño o del
+  gobierno regional). Compuerta del propio formulario: 6100 + 6200 − 6300 = 6400.
+- Ensayo por defecto: `node tools/bfo-rusia.mjs [--club <Club>]` no escribe el sitio. `--escribir` carga (con la misma función
+  `escribir()` de `cargar.mjs`, que audita y revierte si da P0/P1) y `--reemplazar` reescribe los años ya cargados que tienen tablas de
+  notas o formulario 6.
 
 ## Caja y deuda (`tools/caja-deuda.mjs`)
 
