@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 209 clubes, 653 ejercicios, 17 países.
+TOTAL: 209 clubes, 654 ejercicios, 17 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -263,7 +263,7 @@ RU (11)
   Akhmat Grozny          4 ejercicios (2022 a 2025), balance, RUB, sin deuda/caja
   Akron Tolyatti         4 ejercicios (2022 a 2025), balance, RUB, sin deuda/caja
   Baltika Kaliningrad    4 ejercicios (2022 a 2025), balance, RUB, sin deuda/caja
-  CSKA Moscow            4 ejercicios (2021 a 2024), balance, RUB, sin deuda/caja
+  CSKA Moscow            5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
   Dynamo Makhachkala     4 ejercicios (2022 a 2025), balance, RUB, sin deuda/caja
   Krasnodar              5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
   Krylia Sovetov Samara  5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
