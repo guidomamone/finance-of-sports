@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Ferroviaria/balanco-2014-b.pdf",
  "md": "Clubes/Brasil/Ferroviaria/balanco-2014-b.md",
- "generado": "2026-10-10T00:07:01.399Z",
+ "generado": "2026-10-10T00:37:09.074Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "ferroviaria-br",
  "year": 2014,
  "escala": {
   "valor": "unidades",
@@ -35,6 +35,26 @@
    "evidencia": "pág. 4 del visor, .md L197-199",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2014-b.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2014 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF",
+   "evidencia": "balanco-2014-b.md L7-L214",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2014-b.pdf",
+   "campo": "resultado-final",
+   "valor": "-1.055.949,71",
+   "linea": 213,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el balancete imprime '= Prejuízo 1.055.949,71 D' (D = déficit) y el sistema lo leía como +1.055.949. Cuenta: ingresos 5.620.101 - gastos 6.650.350 - financiero neto 25.701 = -1.055.950 (= prejuízo, es pérdida)",
+   "evidencia": "balanco-2014-b.md L213",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
   }
  ],
  "cola": [],
@@ -60,6 +80,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "-1.05595 por ajuste manual (-1.055.949,71: Onboarding to-do 165 (Claude, 2026-10-09): el balancete imprime '= Prejuízo 1.055.949,71 D' (D = déficit) y el sistema lo leía como +1.055.949. Cuenta: ingresos 5.620.101 - gastos 6.650.350 - financiero neto 25.701 = -1.055.950 (= prejuízo, es pérdida)); impuesto deducido 0 (antes de impuestos -1.05595; el documento imprimía 0)"
+  },
+  {
    "nombre": "documento del año 2015",
    "ok": null,
    "detalle": "no se puede comparar: balanco-2015-b.pdf no trae la columna del año anterior"
@@ -72,13 +97,14 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2013: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "ajuste manual: fila \"Descontos Obtidos\" (financiero) 412,27, en lugar de la fila de L199 (2026-10-09, Claude 2026-10-09: 'Descontos Obtidos 412,27 C' bajo '(+) Receitas Financeiras' (L197-199, pág. 3-4 del visor) no salió como renglón (solo su 'Total:' de L199); se reemplaza el total por su único renglón. Cuenta: receitas 5.620.101,05 - gastos 6.650.350 - financiero (24.328,43 D - 412,27 C) = -1.055.949,71 = '= Prejuízo 1.055.949,71 D' (L213).)",
   "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de extraer ya contestada para el club (fila-ilegible, \"Total:\"): aceptar, en balanco-2014-b.pdf"
+  "ajuste manual: resultado final -1.055.949,71 (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): el balancete imprime '= Prejuízo 1.055.949,71 D' (D = déficit) y el sistema lo leía como +1.055.949. Cuenta: ingresos 5.620.101 - gastos 6.650.350 - financiero neto 25.701 = -1.055.950 (= prejuízo, es pérdida))",
+  "duda de extraer ya contestada para el club (antes de su alta) (fila-ilegible, \"Total:\"): aceptar, en balanco-2014-b.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -89,8 +115,15 @@
   "financiero": -0.0257,
   "impuesto": 0,
   "resultadoImpreso": 1.05595,
-  "resultadoParaCargar": 1.05595,
-  "resultadoFinal": null,
+  "resultadoParaCargar": -1.05595,
+  "resultadoFinal": {
+   "valor": -1.05595,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/ajustes-manuales.jsonl",
+   "impuestoImpreso": 0,
+   "impuestoDeducido": 0
+  },
   "lecturaSignos": "como impresos"
  },
  "lineas": [
@@ -1073,7 +1106,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -1107,5 +1140,10 @@
    "linea": 198
   }
  ],
- "impuesto": []
+ "impuesto": [
+  {
+   "etiqueta": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": 0
+  }
+ ]
 }

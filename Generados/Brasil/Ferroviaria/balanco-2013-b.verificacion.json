@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Ferroviaria/balanco-2013-b.pdf",
  "md": "Clubes/Brasil/Ferroviaria/balanco-2013-b.md",
- "generado": "2026-10-10T00:07:01.341Z",
+ "generado": "2026-10-10T00:37:01.339Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "ferroviaria-br",
  "year": 2013,
  "escala": {
   "valor": "unidades",
@@ -31,6 +31,26 @@
    "evidencia": "balanco-2013-b.md (Ferroviária Futebol S/A.; CNPJ 06.020.811/0001-30)",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2013-b.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2013 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF",
+   "evidencia": "balanco-2013-b.md L6, L168",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2013-b.pdf",
+   "campo": "resultado-final",
+   "valor": "-1.222.442,07",
+   "linea": 168,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el balancete imprime '= Prejuízo 1.222.442,07 D' (D = déficit) y el sistema lo leía como +1.222.442. Cuenta: ingresos 3.973.653 - gastos 5.017.987 - financiero/otros 178.107 = -1.222.442 (resultado es pérdida)",
+   "evidencia": "balanco-2013-b.md L168",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
   }
  ],
  "cola": [],
@@ -56,6 +76,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "-1.222442 por ajuste manual (-1.222.442,07: Onboarding to-do 165 (Claude, 2026-10-09): el balancete imprime '= Prejuízo 1.222.442,07 D' (D = déficit) y el sistema lo leía como +1.222.442. Cuenta: ingresos 3.973.653 - gastos 5.017.987 - financiero/otros 178.107 = -1.222.442 (resultado es pérdida)); impuesto deducido 0 (antes de impuestos -1.222442; el documento imprimía 0)"
+  },
+  {
    "nombre": "documento del año 2014",
    "ok": null,
    "detalle": "no se puede comparar: balanco-2014-b.pdf no trae la columna del año anterior"
@@ -68,11 +93,12 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2012: este chequeo no se puede hacer"
   }
  ],
  "notas": [
-  "la lectura base no cerraba; cerró con la lectura 5"
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "ajuste manual: resultado final -1.222.442,07 (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): el balancete imprime '= Prejuízo 1.222.442,07 D' (D = déficit) y el sistema lo leía como +1.222.442. Cuenta: ingresos 3.973.653 - gastos 5.017.987 - financiero/otros 178.107 = -1.222.442 (resultado es pérdida))"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -83,8 +109,15 @@
   "financiero": -0.178108,
   "impuesto": 0,
   "resultadoImpreso": 1.222442,
-  "resultadoParaCargar": 1.222442,
-  "resultadoFinal": null,
+  "resultadoParaCargar": -1.222442,
+  "resultadoFinal": {
+   "valor": -1.222442,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/ajustes-manuales.jsonl",
+   "impuestoImpreso": 0,
+   "impuestoDeducido": 0
+  },
   "lecturaSignos": "como impresos"
  },
  "lineas": [
@@ -915,7 +948,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -954,5 +987,10 @@
    "linea": 164
   }
  ],
- "impuesto": []
+ "impuesto": [
+  {
+   "etiqueta": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": 0
+  }
+ ]
 }

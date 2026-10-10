@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Ferroviaria/balanco-2015-b.pdf",
  "md": "Clubes/Brasil/Ferroviaria/balanco-2015-b.md",
- "generado": "2026-10-10T00:07:01.448Z",
+ "generado": "2026-10-10T00:36:23.061Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "ferroviaria-br",
  "year": 2015,
  "escala": {
   "valor": "unidades",
@@ -21,6 +21,16 @@
    "evidencia": "balanco-2015-b.md (Ferroviária Futebol S/A.; CNPJ 06.020.811/0001-30)",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2015-b.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2015 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF",
+   "evidencia": "balanco-2015-b.md L17, L217-L239",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
   }
  ],
  "cola": [],
@@ -58,7 +68,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2014: este chequeo no se puede hacer"
   }
  ],
  "notas": [

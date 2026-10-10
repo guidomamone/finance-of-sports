@@ -63,6 +63,13 @@ const ferroviariabrRevenueLinesByYear = {
     { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:0.815142, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.99
     { rawLabel:'Impostos incidentes sobre a receita', normalizedCategory:'other_income', amountNative:-3.481046, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.99
   ],
+  // 2010: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Ferroviaria/balanco-2010.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Ferroviaria/balanco-2010.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2010: [
+    { rawLabel:'Receitas de atividades desportivas profissionais', normalizedCategory:'lump_football_operations', amountNative:0.576146, disclosureLevel:'aggregated' }, // pág. 5, Jev 1
+    { rawLabel:'Receitas de publicidade e patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:1.0221, disclosureLevel:'aggregated' }, // pág. 5, Jev 1
+    { rawLabel:'( - ) Impostos', normalizedCategory:'other_income', amountNative:-0.016726, disclosureLevel:'aggregated' }, // pág. 5, Jev 0.99
+  ],
 };
 const ferroviariabrExpenseLinesByYear = {
   2023: [ // tools/cargar.mjs (2026-10-10)
@@ -101,6 +108,14 @@ const ferroviariabrExpenseLinesByYear = {
     { rawLabel:'Tributária', normalizedCategory:'admin_general_expense', amountNative:-1.314638, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.98
     { rawLabel:'Outras despesas', normalizedCategory:'other_expenses', amountNative:-1.065365, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.98
   ],
+  2010: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Despesas com pessoal profissional', normalizedCategory:'wages_squad', amountNative:-0.16191, disclosureLevel:'aggregated' }, // pág. 5, Jev 0.91
+    { rawLabel:'Despesas administrativa profissional', normalizedCategory:'admin_general_expense', amountNative:-0.237178, disclosureLevel:'aggregated' }, // pág. 5, Jev 0.96
+    { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.003097, disclosureLevel:'aggregated' }, // pág. 5, Jev 1
+    { rawLabel:'Serviços de terceiros', normalizedCategory:'admin_general_expense', amountNative:-0.019683, disclosureLevel:'aggregated' }, // pág. 5, Jev 0.92
+    { rawLabel:'Serviços do departamento de esportes profissional', normalizedCategory:'lump_football_operations_expense', amountNative:-1.196469, disclosureLevel:'aggregated' }, // pág. 5, precedente
+    { rawLabel:'Serviços do departamento de esportes para outras categorias', normalizedCategory:'youth_other_sports_expense', amountNative:-0.024495, disclosureLevel:'aggregated' }, // pág. 5, Claude 0.8
+  ],
 };
 const ferroviariabrFiscalYearMeta = {
   // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
@@ -137,6 +152,26 @@ const ferroviariabrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:48.136132, officialTotalExpenses:62.863305, officialPAT:-15.24942,
   },
+  // 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
+  // 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 1.196.469,33. Claude 2026-10-09: el costo está impreso entre paréntesis (resta de la receita) y el resto de los gastos en positivo; la lectura 5 invertía su signo. Cuenta: Receitas líquidas 1.581.519,76 (L162) - Custos 1.220.963,91 (L166) - Despesas Operacionais 402.186,01 (L172) - Serviços de terceiros 19.682,75 (L174) - Despesas financeiras 12.921,96 (L173) = -74.234,87 (L177).
+  // 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 24.494,58. Claude 2026-10-09: el costo está impreso entre paréntesis (resta de la receita) y el resto de los gastos en positivo; la lectura 5 invertía su signo. Cuenta: Receitas líquidas 1.581.519,76 (L162) - Custos 1.220.963,91 (L166) - Despesas Operacionais 402.186,01 (L172) - Serviços de terceiros 19.682,75 (L174) - Despesas financeiras 12.921,96 (L173) = -74.234,87 (L177).
+  2010: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2025): Cuotas Sociales, Estadio, Televisión, Premios por competencias, Venta de Jugadores
+    incluidoEn:{ member_dues:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, competition_bonus:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' } },
+    currency:'BRL', fxRef:'BRL@2010-12-31',
+    sourceId:'ferroviaria-br-balanco-2010',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.012922, tax:0,
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Receitas de atividades desportivas profissionais', lado:'revenue', importe:0.576146, motivo:'el documento no desglosa este renglón'},
+      {renglon:'Serviços do departamento de esportes profissional', lado:'expense', importe:1.196469, motivo:'Claude 2026-10-09: Custo dos Serviços Prestados del departamento profesional: bolsón del costo del fútbol sin desglose (L164)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:1.58152, officialTotalExpenses:1.642833, officialPAT:-0.074235,
+  },
 };
 const ferroviariabrPresupuestoOverlayByYear = {};
 
@@ -166,6 +201,12 @@ Object.assign(sources, {
     title:'Ferroviária Futebol S.A. — demonstracoes-financeiras-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'ferroviaria-br-balanco-2010': {
+    id:'ferroviaria-br-balanco-2010', clubId:'ferroviaria-br',
+    title:'Ferroviária Futebol S.A. — balanco-2010 (ejercicio 2010)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Ferroviaria/balanco-2010.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
