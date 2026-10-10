@@ -378,6 +378,7 @@ const FX_CLOSE = {
   'EUR@2012-12-31': { fx: 0.75792, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2012-12-31' }, // tools/cargar.mjs 2026-10-08 (tools/fx-reference/)
   'EUR@2013-12-31': { fx: 0.725111, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2013-12-31' }, // tools/cargar.mjs 2026-10-08 (tools/fx-reference/)
   'RUB@2021-12-31': { fx: 74.2926, source: 'market_close', label: 'Tipo oficial del Banco de Rusia al 2021-12-31' }, // alta-club.mjs 2026-10-10 (tools/fx-reference/)
+  'RUB@2022-12-31': { fx: 70.3375, source: 'market_close', label: 'Tipo oficial del Banco de Rusia al 2022-12-31' }, // tools/cargar.mjs 2026-10-10 (tools/fx-reference/)
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay

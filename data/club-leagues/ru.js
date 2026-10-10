@@ -14,5 +14,5 @@ window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Krasnodar (alta-club.mjs, 2026-10-10): verificado contra roster cacheado de "2021–22 Russian Premier League" (tools/club-league-reference/ru.json), coincidencia exacta "Krasnodar".
-  'krasnodar-ru': { 2021: 'ru-premierliga', 2021: 'ru-premierliga' }, // 2021: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila
+  'krasnodar-ru': { 2021: 'ru-premierliga', 2021: 'ru-premierliga', 2022: 'ru-premierliga' }, // 2021: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila // 2022: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2022–23 Russian Premier League" (tools/club-league-reference/ru.json),
 });
