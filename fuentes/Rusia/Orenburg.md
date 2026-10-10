@@ -32,3 +32,5 @@ Los 5 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 169 KB 
 - Último chequeo: 2026-09-18.
 
 Color de marca: #0000FF — ru.wikipedia (infobox, camiseta local body1 0000FF; colores del club: azul y blanco, gana el no blanco; escudo azul marino), verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Rusia/Orenburg/bfo-2021-datos.json` (sourceId `orenburg-ru-bfo-2021-datos`).

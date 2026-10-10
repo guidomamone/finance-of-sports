@@ -492,6 +492,9 @@ const clubs = {
   // Krylia Sovetov Samara: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Krylia Sovetov Samara/bfo-2021-datos.md. brandColor #80C0FE
   // (procedencia en fuentes/Rusia/Krylia Sovetov Samara.md; tools/bfo-rusia.mjs).
   'kryliasovetovsamara-ru': { id:'kryliasovetovsamara-ru', name:'AO Professional Football Club Krylia Sovetov', displayName:'Krylia Sovetov Samara', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#80C0FE' },
+  // Orenburg: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Orenburg/bfo-2021-datos.md. brandColor #0000FF
+  // (procedencia en fuentes/Rusia/Orenburg.md; tools/bfo-rusia.mjs).
+  'orenburg-ru': { id:'orenburg-ru', name:'ANO Football Club Orenburg', displayName:'Orenburg', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0000FF' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
