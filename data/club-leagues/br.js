@@ -93,5 +93,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Cuiaba (alta-club.mjs, 2026-10-10): verificado contra roster cacheado de "2022 Campeonato Brasileiro Série A" (tools/club-league-reference/br.json), coincidencia exacta "Cuiabá".
   'cuiaba-br': { 2022: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieB' }, // 2024: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2024 Campeonato Brasileiro Série A" (tools/club-league-reference/br.js // 2025: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2025 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
   // Ferroviaria (alta-club.mjs, 2026-10-10): SIN VERIFICAR (no aparece en los rosters cacheados de 2010 (br-serieA): puede haber jugado otra división).
-  'ferroviaria-br': { 2010: null, 2023: 'br-serieD' }, // 2023: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2023 Campeonato Brasileiro Série D" (tools/club-league-reference/br.js
+  'ferroviaria-br': { 2010: null, 2023: 'br-serieD', 2025: 'br-serieB' }, // 2023: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2023 Campeonato Brasileiro Série D" (tools/club-league-reference/br.js // 2025: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2025 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
 });

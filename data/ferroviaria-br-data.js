@@ -47,6 +47,22 @@ const ferroviariabrRevenueLinesByYear = {
     { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:0.15577, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.99
     { rawLabel:'Impostos incidentes sobre a receita', normalizedCategory:'other_income', amountNative:-1.572101, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.99
   ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Ferroviaria/demonstracoes-financeiras-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2025: [
+    { rawLabel:'Direitos de transmissão de TV', normalizedCategory:'broadcasting', amountNative:10.868006, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'Patrocínio', normalizedCategory:'sponsorship_commercial', amountNative:19.398966, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'Direito de gestão comercial da arena', normalizedCategory:'stadium_other', amountNative:3.75, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Timemania', normalizedCategory:'other_income', amountNative:2.062659, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'Auxílio financeiro', normalizedCategory:'other_income', amountNative:4.205103, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.97
+    { rawLabel:'Arrecadação de jogos', normalizedCategory:'matchday_competition', amountNative:0.143336, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'Cessão temporária dos atletas', normalizedCategory:'player_sales', amountNative:4.37511, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'Negociação de atletas', normalizedCategory:'player_sales', amountNative:4.3, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'Sócio torcedor', normalizedCategory:'member_dues', amountNative:0.201856, disclosureLevel:'aggregated' }, // pág. 7, Claude 0.9
+    { rawLabel:'Premiações', normalizedCategory:'competition_bonus', amountNative:1.497, disclosureLevel:'aggregated' }, // pág. 7, Claude 0.85
+    { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:0.815142, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.99
+    { rawLabel:'Impostos incidentes sobre a receita', normalizedCategory:'other_income', amountNative:-3.481046, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.99
+  ],
 };
 const ferroviariabrExpenseLinesByYear = {
   2023: [ // tools/cargar.mjs (2026-10-10)
@@ -58,6 +74,32 @@ const ferroviariabrExpenseLinesByYear = {
     { rawLabel:'Alojamento e moradia', normalizedCategory:'admin_general_expense', amountNative:-1.188523, disclosureLevel:'aggregated' }, // pág. 9, precedente
     { rawLabel:'Tributária', normalizedCategory:'admin_general_expense', amountNative:0.732267, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.98
     { rawLabel:'Outras despesas', normalizedCategory:'other_expenses', amountNative:-0.850559, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.98
+  ],
+  2025: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Com pessoal', normalizedCategory:'wages_squad', amountNative:-21.144215, disclosureLevel:'aggregated' }, // pág. 25, Claude 0.8
+    { rawLabel:'Direito de uso de imagem', normalizedCategory:'wages_squad', amountNative:-15.081833, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.98
+    { rawLabel:'Premiações', normalizedCategory:'wages_squad', amountNative:-2.565067, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Viagens e hospedagens', normalizedCategory:'match_organisation_expense', amountNative:-2.265897, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.97
+    { rawLabel:'Com jogos', normalizedCategory:'match_organisation_expense', amountNative:-2.028162, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.99
+    { rawLabel:'Com refeições', normalizedCategory:'match_organisation_expense', amountNative:-0.543584, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Serviços de terceiros', normalizedCategory:'admin_general_expense', amountNative:-2.152973, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.92
+    { rawLabel:'Taxas de federação e confederação', normalizedCategory:'match_organisation_expense', amountNative:-0.191408, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Agenciamento de atletas', normalizedCategory:'other_expenses', amountNative:-1.345568, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Manutenção e conservação', normalizedCategory:'admin_general_expense', amountNative:-0.140431, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.96
+    { rawLabel:'Moradia', normalizedCategory:'match_organisation_expense', amountNative:-0.254096, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.92
+    { rawLabel:'Mercadorias vendidas', normalizedCategory:'admin_general_expense', amountNative:0.05299, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Com atletas (empréstimos, luvas etc.)', normalizedCategory:'wages_squad', amountNative:-1.00573, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Comissão', normalizedCategory:'other_expenses', amountNative:-0.302405, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.92
+    { rawLabel:'Material esportivo', normalizedCategory:'other_expenses', amountNative:-0.28083, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Amortização de atletas formados', normalizedCategory:'player_amortisation', amountNative:-0.139314, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.99
+    { rawLabel:'Outros custos', normalizedCategory:'other_expenses', amountNative:-0.289399, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Administrativas e gerais', normalizedCategory:'admin_general_expense', amountNative:-3.645881, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'Com pessoal', normalizedCategory:'admin_general_expense', amountNative:-1.824151, disclosureLevel:'aggregated' }, // pág. 8, precedente
+    { rawLabel:'Gastos com atletas não profissionais', normalizedCategory:'youth_other_sports_expense', amountNative:-4.535951, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.98
+    { rawLabel:'Com materiais', normalizedCategory:'admin_general_expense', amountNative:0, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.97
+    { rawLabel:'Aluguéis', normalizedCategory:'admin_general_expense', amountNative:-0.799397, disclosureLevel:'aggregated' }, // pág. 8, precedente
+    { rawLabel:'Tributária', normalizedCategory:'admin_general_expense', amountNative:-1.314638, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.98
+    { rawLabel:'Outras despesas', normalizedCategory:'other_expenses', amountNative:-1.065365, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.98
   ],
 };
 const ferroviariabrFiscalYearMeta = {
@@ -79,6 +121,21 @@ const ferroviariabrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:37.56237, officialTotalExpenses:40.101565, officialPAT:-3.326523,
+  },
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
+  2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2025-12-31',
+    sourceId:'ferroviaria-br-demonstracoes-financeiras-2025',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.522247, tax:0,
+    extraRows: [
+      {label:'Receita financeira', value:0.107707},
+      {label:'Despesas financeiras', value:-0.629954},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:48.136132, officialTotalExpenses:62.863305, officialPAT:-15.24942,
   },
 };
 const ferroviariabrPresupuestoOverlayByYear = {};
@@ -103,6 +160,12 @@ Object.assign(sources, {
     title:'Ferroviária Futebol S.A. — demonstracoes-financeiras-2023-fpf (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2023-fpf.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'ferroviaria-br-demonstracoes-financeiras-2025': {
+    id:'ferroviaria-br-demonstracoes-financeiras-2025', clubId:'ferroviaria-br',
+    title:'Ferroviária Futebol S.A. — demonstracoes-financeiras-2025 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

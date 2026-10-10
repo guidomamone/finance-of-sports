@@ -52,3 +52,5 @@
 Color de marca: #58141E — pt.wikipedia (Associação Ferroviária de Esportes: "suas cores são grená e branco"; plantilla de camiseta corpo1=58141E), escudo AFE grená, verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2023-fpf.pdf` (sourceId `ferroviaria-br-demonstracoes-financeiras-2023-fpf`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2025 desde `Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2025.pdf` (sourceId `ferroviaria-br-demonstracoes-financeiras-2025`).
