@@ -483,6 +483,9 @@ const clubs = {
   // Remo: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Remo/demonstracoes-contabeis-2021.pdf. brandColor #111533
   // (procedencia en fuentes/Brasil/Remo.md; tools/cargar-lote.mjs).
   'remo-br': { id:'remo-br', name:'Clube do Remo', displayName:'Remo', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#111533' },
+  // Krasnodar: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Krasnodar/bfo-2021-datos.md. brandColor:null a propósito
+  // (procedencia en fuentes/Rusia/Krasnodar.md; tools/bfo-rusia.mjs).
+  'krasnodar-ru': { id:'krasnodar-ru', name:'OOO Football Club Krasnodar', displayName:'Krasnodar', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

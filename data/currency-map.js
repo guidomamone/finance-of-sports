@@ -91,6 +91,7 @@ const CURRENCY_META = {
   // euroFijo = unidades de la moneda legado por 1 EUR (paridad irrevocable del 31/12/1998, Reglamento CE 2866/98): con ella toDisplayValue muestra en EUR un
   // ejercicio de esa moneda sin necesitar un tipo de cambio de mercado (es una conversión legal exacta, no una cotización).
   ITL: { scale: 1000, unitSuffix: 'mil M', euroFijo: 1936.27 },   // Italia (lira, hasta 2001)
+  RUB: { scale: 1, unitSuffix: 'M' },          // Rusia (alta-club.mjs 2026-10-10)
 };
 
 // Fallback para cualquier código ISO sin entrada propia todavía: nunca
@@ -376,6 +377,7 @@ const FX_CLOSE = {
   'EUR@2011-12-31': { fx: 0.772857, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2011-12-30, 2011-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-08 (tools/fx-reference/)
   'EUR@2012-12-31': { fx: 0.75792, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2012-12-31' }, // tools/cargar.mjs 2026-10-08 (tools/fx-reference/)
   'EUR@2013-12-31': { fx: 0.725111, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2013-12-31' }, // tools/cargar.mjs 2026-10-08 (tools/fx-reference/)
+  'RUB@2021-12-31': { fx: 74.2926, source: 'market_close', label: 'Tipo oficial del Banco de Rusia al 2021-12-31' }, // alta-club.mjs 2026-10-10 (tools/fx-reference/)
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay
@@ -433,6 +435,7 @@ const FX_PLAUSIBLE_RANGE = {
   DKK: [5, 8],           // Dinamarca — fijada al euro (ERM II, ~7,46 DKK = 1 EUR desde 1982), así
                           // que el rango sigue de cerca al de EUR/USD histórico (0,7-1,15) cruzado
                           // por ~7,46: nunca se aleja mucho de 6-8 DKK por USD.
+  RUB: [20, 140],  // Rusia (alta-club.mjs 2026-10-10, rango generoso de la tabla MONEDAS)
 };
 
 // checkFxSanity(): recorre todo lo que haya en window.CLUB_GENERIC_DATA y avisa por consola
