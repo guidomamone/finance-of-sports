@@ -118,3 +118,8 @@ ni en el comentario de ningún archivo de código.
     `Admin/ESTADO-clubes.md`). Remedir la proporción en la próxima corrida del eje `escala` y, si cambió, actualizar ese punto de la skill
     (umbral y criterio).
 
+208. COMENTARIOS EN LO QUE SE PUBLICA (`index.html` y `js/*.js`). Son ~43% de `index.html` (~46 KB de 107 KB) y ~2.300 líneas en `js/`, y
+    viajan a cada visitante (se ven con "ver código fuente"). Opciones: (a) mover el porqué a `Admin/PANTALLA.md` y dejar en el código solo
+    comentarios cortos; (b) que `netlify.toml` los saque en el deploy con un minificador (paso de build, hoy el proyecto no tiene ninguno).
+    Recomendado: (a), en una sesión aparte. De paso: quedan cuatro "41 clubes" en comentarios de `index.html`.
+
