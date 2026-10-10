@@ -15,6 +15,20 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 657 — `extraer.mjs`: costo de extraer sin historia medido de nuevo (2026-10-10)
+
+- `MEDIANA_EXTRAER` 0,12 → 0,20 y `TECHO_EXTRAER` 0,32 → 0,33 (389 extracciones: mediana 0,196, percentil 90 0,332). Solo cambia lo que
+  estima el ensayo para un club sin historia.
+
+## Versión 656 — Skills y CLAUDE.md al día (2026-10-10)
+
+- `CLAUDE.md`: qué publica `netlify.toml` (también `tools/` y `Generados/` fuera; las transcripciones de `Clubes/` se publican a propósito).
+- `start-session`: sin contadores fijos ni versiones; los generadores ya los corren `cargar`, `alta-club` y `lote --cargar`.
+- `auditoria`: sin to-dos ni tamaños medidos; referencias a secciones que no existían.
+- `club-or-year-onboarding`: `lote --cargar`, `descartar` en categorías, `--autor`, Rusia, números de lote, tabla de etapas sin cerrados.
+- `club-nuevo.md`: los colores los elige la sesión y se los cuenta a Guido.
+- El escalón del to-do 200, medido sobre las 306 verificaciones existentes: idénticas (no se activa en ninguna).
+
 ## Versión 655 — Documentos de Admin/ al día: sin contadores fijos ni números de to-do (2026-10-09)
 
 - `ESTADO.md` reescrito como snapshot (sin el log de versiones, sin to-dos, sin inventarios: remite a `estado.mjs` y `ESTADO-clubes.md`);

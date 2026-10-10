@@ -31,7 +31,7 @@ node tools/gasto-doc.mjs --lista <lista> --desde <ISO> [--hasta <ISO>]       # l
   se cortó (Ctrl+C, terminal cerrada), lo avisa y lo reemplaza.
 - Lo que ya está hecho no se repite (queda en `Generados/`, que se respalda en git). Si el .md cambió desde extraer (`cache-al-dia.mjs`:
   misma huella, o cada fila sigue en su línea), un año sin cargar se rehace y uno cargado solo avisa.
-- El ensayo estima con el tamaño real: extraer = salida 2 × entrada; sin localizar, la mediana del club (sin historia, US$ 0,12-0,32).
+- El ensayo estima con el tamaño real: extraer = salida 2 × entrada; sin localizar, la mediana del club (sin historia, US$ 0,20-0,33: mediana y percentil 90 de las extracciones medidas).
 - Al final: el gasto por documento y por tarea, con "N.ª vez" si esa tarea ya se había pagado para ese PDF; y el RESULTADO (listos,
   frenados, ya en el sitio: un año cargado va ahí aunque su propuesta sea vieja). Cada frenado lista TODOS sus motivos, uno por línea; si
   `cargar.mjs` cortó el análisis en un freno (`cortadoEn` en el `.carga.json`: sin club, sin .md, sin verificación...), lo dice, porque

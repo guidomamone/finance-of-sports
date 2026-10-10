@@ -89,9 +89,9 @@ export const INSTRUCCION_NOTAS_COMO_ESTADO = `ESTE DOCUMENTO NO TIENE ESTADO DE 
 // REINTENTO (Versión 336): `reintento` = la lista de desgloses que no sumaron en la verificación anterior ({renglon, suma, objetivo}). Se le
 // agrega a la IA una instrucción SOLO en ese caso (decisión de Guido: las reglas extra son para cuando hay errores, no para el camino limpio).
 // EXTRAER SIN LOCALIZAR TODAVÍA (Versión 446): no se conocen los bloques, así que el ensayo usa lo que costó extraer en ESE club (mediana de
-// sus llamadas en Admin/claude-api/resultados.jsonl); sin historia, el techo de las 155 extracciones medidas (percentil 90, US$ 0,32; la
-// mediana es US$ 0,12). Antes era US$ 0,07 fijo: Juventus costó US$ 0,18-0,34 por año.
-const TECHO_EXTRAER = 0.32; const MEDIANA_EXTRAER = 0.12;
+// sus llamadas en Admin/claude-api/resultados.jsonl); sin historia, el techo de las extracciones medidas (percentil 90). Medido el 2026-10-10
+// sobre 389 extracciones: mediana US$ 0,20, percentil 90 US$ 0,33, máximo 0,72. Antes era US$ 0,07 fijo: Juventus costó US$ 0,18-0,34 por año.
+const TECHO_EXTRAER = 0.33; const MEDIANA_EXTRAER = 0.20;
 let _costosExtraer = null;
 export function estimarExtraerSinBloques(pdf) {
   if (!_costosExtraer) { _costosExtraer = []; try { for (const l of readFileSync(resolve(ROOT, 'Admin', 'claude-api', 'resultados.jsonl'), 'utf8').split('\n')) { if (!l.includes('"extraer')) continue; try { const x = JSON.parse(l); if (/^extraer/.test(x.tarea) && x.pdf) _costosExtraer.push(x); } catch { /* línea rota */ } } } catch { /* sin log */ } }
