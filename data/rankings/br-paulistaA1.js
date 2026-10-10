@@ -5,7 +5,7 @@
 //
 // Paulista Série A1 (BR) — 2 ejercicio(s) con ranking:
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2016: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -24,6 +24,9 @@ window.RANKINGS["br-paulistaA1"] = {
   2016: {
     leagueSize: null,
     clubs: [
+      { id:"ferroviaria-br", revenue:2.826, reportType:"official_balance_sheet",
+        sourceId:"ferroviaria-br-balanco-2016",
+        mix:[["Cuotas Sociales",0.175],["Comercial / Sponsors",0.633],["Estadio",0.29],["Televisión",0.885],["Venta de Jugadores",0.596],["Otros ingresos",0.246]] },
       { id:"novorizontino-br", revenue:0.995, reportType:"official_balance_sheet",
         sourceId:"novorizontino-br-balanco-2016",
         mix:[["Comercial / Sponsors",0.06],["Estadio",0.195],["Televisión",0.676],["Venta de Jugadores",0.064],["Otros ingresos",0.001]] },
