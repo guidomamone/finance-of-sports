@@ -3,9 +3,10 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série C (BR) — 4 ejercicio(s) con ranking:
+// Brasileirão Série C (BR) — 5 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -29,6 +30,14 @@ window.RANKINGS["br-serieC"] = {
       { id:"voltaredonda-br", revenue:2.042, reportType:"official_balance_sheet",
         sourceId:"voltaredonda-br-balanco-2024",
         mix:[["Cuotas Sociales",0.008],["Comercial / Sponsors",0.433],["Estadio",0.22],["Televisión",0.942],["Venta de Jugadores",0.348],["Otros ingresos",0.09]] },
+    ],
+  },
+  2023: {
+    leagueSize: null,
+    clubs: [
+      { id:"paysandu-br", revenue:9.31, reportType:"official_balance_sheet",
+        sourceId:"paysandu-br-dre-2023",
+        mix:[["Cuotas Sociales",0.859],["Comercial / Sponsors",2.335],["Otras secciones deportivas",0.175],["Fútbol profesional (sin desglosar por la fuente)",4.165],["Otros ingresos",1.775]] },
     ],
   },
   2021: {

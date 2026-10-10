@@ -89,5 +89,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Avai (alta-club.mjs, 2026-10-10): verificado contra roster cacheado de "2021 Campeonato Brasileiro Série B" (tools/club-league-reference/br.json), coincidencia exacta "Avaí".
   'avai-br': { 2021: 'br-serieB', 2025: 'br-serieB' }, // 2025: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2025 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
   // Paysandu (alta-club.mjs, 2026-10-10): verificado contra roster cacheado de "2021 Campeonato Brasileiro Série C" (tools/club-league-reference/br.json), coincidencia exacta "Paysandu".
-  'paysandu-br': { 2021: 'br-serieC' },
+  'paysandu-br': { 2021: 'br-serieC', 2023: 'br-serieC' }, // 2023: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2023 Campeonato Brasileiro Série C" (tools/club-league-reference/br.js
 });

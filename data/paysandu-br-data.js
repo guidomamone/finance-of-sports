@@ -50,6 +50,24 @@ const paysandubrRevenueLinesByYear = {
     { rawLabel:'Lojas Lobo', normalizedCategory:'sponsorship_commercial', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
     { rawLabel:'(-) Deduções da Receita de Venda', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
   ],
+  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Paysandu/dre-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Paysandu/dre-2023.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2023: [
+    { rawLabel:'Futebol Profissional', normalizedCategory:'lump_football_operations', amountNative:20.164819, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
+    { rawLabel:'Futebol de Base', normalizedCategory:'youth_football', amountNative:0.0055, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Esportes Olímpicos', normalizedCategory:'other_sports', amountNative:0.843745, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Sócio Torcedor', normalizedCategory:'member_dues', amountNative:3.659352, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Sócio Proprietário', normalizedCategory:'member_dues', amountNative:0.500273, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.97
+    { rawLabel:'Doações', normalizedCategory:'other_income', amountNative:1.683667, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Royalties e Franquias', normalizedCategory:'sponsorship_commercial', amountNative:3.191832, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.8
+    { rawLabel:'Patrocínio', normalizedCategory:'sponsorship_commercial', amountNative:8.11171, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Remissão de dívida', normalizedCategory:'other_income', amountNative:0.934741, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Time Mania', normalizedCategory:'other_income', amountNative:0.671711, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Outras receita', normalizedCategory:'other_income', amountNative:0.135599, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
+    { rawLabel:'Aluguel', normalizedCategory:'other_income', amountNative:0.2507, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Receita com Gratuidades', normalizedCategory:'other_income', amountNative:5.360617, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'(-) Deduções da Receitas', normalizedCategory:'other_income', amountNative:-0.44134, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
+  ],
 };
 const paysandubrExpenseLinesByYear = {
   2021: [ // tools/cargar.mjs (2026-10-10)
@@ -67,6 +85,16 @@ const paysandubrExpenseLinesByYear = {
     { rawLabel:'Depreciação/Amortização', normalizedCategory:'depreciation', amountNative:-0.00088, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
     { rawLabel:'PECLD', normalizedCategory:'other_expenses', amountNative:-0.090646, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
     { rawLabel:'Outras Despesas com Vendas', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
+  ],
+  2023: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Custo com Pessoal', normalizedCategory:'wages_squad', amountNative:-18.173344, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.91
+    { rawLabel:'Despesa com Pessoal', normalizedCategory:'admin_general_expense', amountNative:-3.446076, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Gerais e Administrativas', normalizedCategory:'admin_general_expense', amountNative:-16.862975, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Despesas com Gratuidades (i)', normalizedCategory:'other_expenses', amountNative:-5.360617, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Depreciação/Amortização', normalizedCategory:'depreciation', amountNative:-0.49864, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Perdas Constituídas (ii)', normalizedCategory:'other_expenses', amountNative:-0.005171, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'PECLD', normalizedCategory:'other_expenses', amountNative:-2.459373, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.043202, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
   ],
 };
 const paysandubrFiscalYearMeta = {
@@ -87,6 +115,25 @@ const paysandubrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:21.976408, officialTotalExpenses:23.813025, officialPAT:-2.015915,
+  },
+  // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2023-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae 2022-12-31 (el primer año del encabezado 'Exercícios findos em 31 de dezembro 2022 e 2023'); el ejercicio del documento cierra el 2023-12-31
+  2023: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2023-12-31',
+    sourceId:'paysandu-br-dre-2023',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.760701, tax:0,
+    extraRows: [
+      {label:'Receitas financeiras', value:0.009504},
+      {label:'Despesas financeiras', value:-0.770205},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Futebol Profissional', lado:'revenue', importe:20.164819, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:45.072926, officialTotalExpenses:46.849398, officialPAT:-2.537173,
   },
 };
 const paysandubrPresupuestoOverlayByYear = {};
@@ -111,6 +158,12 @@ Object.assign(sources, {
     title:'Paysandu Sport Club — dre-2021 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Paysandu/dre-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'paysandu-br-dre-2023': {
+    id:'paysandu-br-dre-2023', clubId:'paysandu-br',
+    title:'Paysandu Sport Club — dre-2023 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Paysandu/dre-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
