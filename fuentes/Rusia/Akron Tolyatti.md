@@ -36,3 +36,5 @@ Color de marca: #FF0000 — ru.wikipedia (cita el sitio oficial fcakron.ru: colo
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Rusia/Akron Tolyatti/bfo-2023-datos.json` (sourceId `akrontolyatti-ru-bfo-2023-datos`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2024 desde `Clubes/Rusia/Akron Tolyatti/bfo-2024-datos.json` (sourceId `akrontolyatti-ru-bfo-2024-datos`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2025 desde `Clubes/Rusia/Akron Tolyatti/bfo-2025-datos.json` (sourceId `akrontolyatti-ru-bfo-2025-datos`).

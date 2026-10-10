@@ -50,6 +50,12 @@ const akrontolyattiruRevenueLinesByYear = {
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:337.147, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:56.645, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Akron Tolyatti/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2025: [
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:691.943, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:57.41, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const akrontolyattiruExpenseLinesByYear = {
   2022: [ // tools/cargar.mjs (2026-10-10)
@@ -69,6 +75,12 @@ const akrontolyattiruExpenseLinesByYear = {
     { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-125.022, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-35.145, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-42.105, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
+  2025: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-244.247, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-432.555, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-40.473, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-38.472, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
 };
 const akrontolyattiruFiscalYearMeta = {
@@ -132,6 +144,27 @@ const akrontolyattiruFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:1.886,
   },
+  2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2025-12-31',
+    sourceId:'akrontolyatti-ru-bfo-2025-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:7.168, tax:14.346,
+    extraRows: [
+      {label:'Проценты к получению (2320)', value:7.84},
+      {label:'Проценты к уплате (2330)', value:-0.672},
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:14.346},
+    ],
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Выручка (2110)', lado:'ingreso', importe:691.943, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:244.247, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:15.12,
+  },
 };
 const akrontolyattiruPresupuestoOverlayByYear = {};
 
@@ -167,6 +200,12 @@ Object.assign(sources, {
     title:'ANO Football Club Akron — отчетность 2024 в ГИР БО (bo.nalog.gov.ru), ejercicio 2024',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2024-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Akron Tolyatti/bfo-2024-datos.md.',
+  },
+  'akrontolyatti-ru-bfo-2025-datos': {
+    id:'akrontolyatti-ru-bfo-2025-datos', clubId:'akrontolyatti-ru',
+    title:'ANO Football Club Akron — отчетность 2025 в ГИР БО (bo.nalog.gov.ru), ejercicio 2025',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2025-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Akron Tolyatti/bfo-2025-datos.md.',
   },
 });
 

@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Premier Liga (RU) — 5 ejercicio(s) con ranking:
-//   2025: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -46,6 +46,10 @@ window.RANKINGS["ru-premierliga"] = {
       { id:"parinizhnynovgorod-ru", revenue:10.089, reportType:"official_balance_sheet",
         sourceId:"parinizhnynovgorod-ru-bfo-2025-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",8.409],["Otros ingresos",1.681]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"akrontolyatti-ru", revenue:9.579, reportType:"official_balance_sheet",
+        sourceId:"akrontolyatti-ru-bfo-2025-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",8.845],["Otros ingresos",0.734]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"akhmatgrozny-ru", revenue:8.735, reportType:"official_balance_sheet",
         sourceId:"akhmatgrozny-ru-bfo-2025-datos",
