@@ -436,6 +436,14 @@ de al lado.
 
 ---
 
+## Comentarios en lo que se publica (`index.html`, `js/`)
+
+Todo comentario viaja al visitante. En el código queda solo el porqué técnico que hace falta para no romper algo al editarlo, en 1 a 3
+líneas. No van nombres de personas, "Versión N", "to-do N", fechas, citas de pedidos ni contadores ("41 clubes"). La historia de un
+cambio va al CHANGELOG. Una regla que vale para más de un lugar va acá, en PANTALLA, y el comentario apunta a la sección.
+`node tools/audit.js` lo chequea (`comentario-interno-publicado`). Para limpiar comentarios sin tocar código:
+`node tools/comparar-sin-comentarios.js <archivo>` compara el archivo contra `HEAD` con los comentarios sacados y tiene que dar igual.
+
 ## Convenciones de pantalla y código
 
 Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.

@@ -536,6 +536,23 @@ function checkDeployInterno() {
   }
 }
 
+// --- Comentarios internos en lo que se publica (to-do 208) -------------------
+// Todo comentario de index.html y js/ viaja al visitante. La regla (Admin/PANTALLA.md, "Comentarios en lo que se publica") deja solo el
+// porqué técnico: nada de nombres, "Versión N", "to-do N", fechas ni contadores de clubes. Un hallazgo por archivo, con el total y el
+// primer caso; la lista completa sale con --json.
+const COMENTARIO_INTERNO = /\bGuido\b|\bVersi[oó]n(es)? \d+|\bto-do \d+|\b20\d\d-\d\d-\d\d\b|\b\d+ clubes\b/i;
+function checkComentariosPublicados() {
+  const { comentarios, publicados } = require('./comparar-sin-comentarios.js');
+  for (const rel of publicados()) {
+    const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');
+    const malos = comentarios(rel, src).filter(c => COMENTARIO_INTERNO.test(c.text));
+    if (!malos.length) continue;
+    const primero = malos[0].text.match(COMENTARIO_INTERNO)[0];
+    add('P2', 'comentario-interno-publicado',
+      `${rel}: ${malos.length} comentarios con historia interna que ve el visitante (el primero en la línea ${malos[0].line}: «${primero}»). Regla: Admin/PANTALLA.md, "Comentarios en lo que se publica"; limpiar con node tools/comparar-sin-comentarios.js`);
+  }
+}
+
 // --- D17b: el párrafo que explica netlify.toml, copiado en 3 archivos, con -
 //     números que se desincronizan (auditoría de docs, 2026-09-26) ----------
 // POR QUÉ. `CLAUDE.md`, `Admin/ESTADO.md` y `Admin/CONVENCIONES.md` explican los
@@ -1466,6 +1483,7 @@ function main() {
   checkCategorizacion(api);
   checkEscala(api);
   checkDeployInterno();
+  checkComentariosPublicados();
   checkParrafoNetlifyDuplicado();
   checkRutasMuertas();
   checkHigiene(api);

@@ -101,3 +101,9 @@ ni en el comentario de ningún archivo de código.
     comentarios cortos; (b) que `netlify.toml` los saque en el deploy con un minificador (paso de build, hoy el proyecto no tiene ninguno).
     Recomendado: (a), en una sesión aparte. De paso: quedan cuatro "41 clubes" en comentarios de `index.html`.
 
+209. COMENTARIOS INTERNOS EN `data/*.js`, que también se publican: ~35% de las líneas son comentario y cientos mencionan a Guido, versiones
+    o to-dos. No es lo mismo que el 208: ahí está, rubro por rubro, por qué cada línea fue a su categoría y de dónde salió cada número (la
+    evidencia para auditar una carga), y parte la escriben los scripts del pipeline (`cargar.mjs` deja los ajustes como comentario).
+    Antes de limpiar: decidir a dónde se muda esa evidencia (¿`fuentes/<club>`? ¿`Generados/`?) y cambiar los scripts para que dejen de
+    escribirla en `data/`. Hacerlo después del 208, con la regla de PANTALLA ("Comentarios en lo que se publica") como base.
+
