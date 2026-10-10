@@ -62,25 +62,28 @@ ni en el comentario de ningún archivo de código.
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (decisión de Guido, 2026-10-07; estado al 2026-10-09). Un país por vez, con el pipeline
-    (skill club-or-year-onboarding; club nuevo: revisión del alta en Admin/altas-revision.jsonl, que ya tiene nombre, color, perímetro, cierres
-    y ligas de los 56 "listo-para-alta" de ese día). `alta-club.mjs --todos` del 2026-10-09: 50 listos, 74 con preguntas, 35 ya en el sitio.
-    HECHO: Brasil completo (8 clubes, 61 años, lotes 56-63) y Rusia desde el fisco (tools/bfo-rusia.mjs: 16 clubes, 78 años, con el formulario 6 en los 5 que
-    lo usan; no entra Akhmat 2021, sin formulario 2). Escalón 2 sin IA aplicado: costos por elemento de Rostov 2021-2024 y Orenburg 2021-2023.
+165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (decisión de Guido, 2026-10-07; estado al 2026-10-10). Un país por vez, con el pipeline
+    (skill club-or-year-onboarding; club nuevo: revisión del alta en Admin/altas-revision.jsonl: nombre, color, perímetro, cierres y ligas).
+    HECHO: Brasil completo (lotes 56-63) y Rusia desde el fisco (tools/bfo-rusia.mjs, 16 clubes). Etapa 2 (transcribir) de los 14 países
+    del (c) hecha: lote 66 (468 documentos). Nombres legales de las altas: 24 contestados con cita (ajustes `name`). Gestiones de los clubes
+    nuevos de Grecia, Rep. Checa, Portugal, Noruega, Países Bajos y Turquía cargadas (to-do 195).
     FALTA, en este orden:
-    b) Rusia, escalón 2 aplicado (tools/bfo-rusia-notas.mjs, US$ 0,72). Queda: las tablas de otros ingresos y gastos que no suman el código
-       del formulario (Krasnodar, Krylia 2021-2025, Rostov 2025, Rubin 2022-2025: la nota los presenta en bruto, el formulario en neto);
-       se podría probar la compuerta contra el total bruto de la nota más una fila de "diferencia de presentación". Sin daño hoy: esos años
-       quedan con el renglón entero.
-    c) Los demás países de los "listo-para-alta": Grecia 6, Rep. Checa 6, Colombia 5, Portugal 5, Países Bajos 4, Turquía 3, Ucrania 3,
-       Bélgica 2, Corea 2, y Austria, Croacia, Dinamarca, Noruega y Suiza 1 cada uno. Ojo: muchos PDFs de Países Bajos, Portugal y Rep. Checa
-       todavía no tienen .md (etapa 2 entera); las 12 preguntas de la revisión del alta (Rapid Wien 2024-25, OB, Sandefjord, Groningen, Rio Ave,
-       Tondela, Pardubice, Gaziantep, Alanyaspor, Trabzonspor, La Equidad, nombres romanizados) están en Admin/altas-revision.jsonl.
-    d) Las 16 preguntas de nombre legal de los clubes que bajaron a "con-preguntas" el 2026-10-09 (Noruega 7, Portugal 3, Chequia 2, Baltika,
-       Basel, Go Ahead Eagles, Başakşehir): contestarlas con cita del documento las devuelve a "listo-para-alta".
-    PRÓXIMOS: Grecia (lote 64, etapa 2 ~US$ 3,31) y Rep. Checa (lote 65, etapa 2 ~US$ 31: 129 documentos, casi todos sin .md).
-    Herramientas de la sesión: `lote.mjs --cargar` (escribe solo lo que queda listo, un commit por año), inventario `--solo`, `--reintentar`
-    con propuestas frescas, escalón de documentos de pocos renglones. Las mejoras de script vistas quedan en los to-dos 197-202.
+    a) GRECIA (lote 67, 42 documentos con estado de resultados; los otros 87 de las carpetas son balances, notas, informes del directorio y
+       del auditor, y actas: no entran). Cola contestada (81 respuestas), intereses de Volos 2021-2025 con signo (ajustes `fila`), 41
+       verificaciones OK. Falta la etapa 7 (categorizar, ~US$ 1) y la carga, que corre Guido:
+       `caffeinate -i node tools/lote.mjs --lista Admin/lote-67.txt --ejecutar --cargar` (alta de AEK, Asteras, Levadiakos, OFI y
+       Panserraikos con sus años; Volos ya tiene la verificación lista). Después: leer el resultado, la cola nueva y lo que quede.
+       AEK 2025 (AEK_NOTES_IFRS_2025-06-30_a): la etapa 4 dejó 3 números sin confirmar contra el PDF. Panserraikos 2024 no pasó por verificar.
+    b) Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
+       (`ls Admin/lote-*.txt | sort -V | tail -1` para el número), `antes-de-localizar.mjs`, ensayo, Guido corre `lote.mjs --ejecutar
+       --cargar`, y la cola se revisa con un Sonnet que recomienda respuestas con cita. Fichas listas para alta (`alta-club.mjs --todos`,
+       2026-10-10): Noruega 8, Portugal 7, Rep. Checa 7, Colombia 4, Países Bajos 4, Turquía 4, Ucrania 3, Corea 2, Suiza 2, Bélgica,
+       Croacia y Dinamarca 1. Ninguna tiene todavía un año verificado: "listo para alta" es solo la ficha del club.
+    c) Perímetro en pregunta (decide el `name` ya registrado): Molde, Vålerenga, Go Ahead Eagles, Basel, Pardubice, Aalesund, Fredrikstad,
+       Sarpsborg 08. Las preguntas de la revisión del alta siguen en Admin/altas-revision.jsonl.
+    d) Rusia: las tablas de otros ingresos y gastos que no suman el código del formulario (Krasnodar, Krylia 2021-2025, Rostov 2025, Rubin
+       2022-2025: la nota en bruto, el formulario en neto). Sin daño hoy: esos años quedan con el renglón entero.
+    Mejoras de script vistas en Grecia: to-dos 210-215.
 
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.

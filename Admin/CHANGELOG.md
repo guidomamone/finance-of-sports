@@ -33,6 +33,16 @@ que dice `ESTADO.md` era verdad ese día.
   cosas que ya no existen (Boca cargada eager, "solo Boca" en el toggle de formato, los "41 clubes"). `comentario-interno-publicado`
   queda en 0. To-do 208 cerrado. ASSET_V 809.
 
+## Versión 670 — Onboarding: lote 66 (etapa 2), Grecia hasta la verificación, gestiones de 10 países (2026-10-10)
+
+- Lote 66: etapa 2 de los 14 países del to-do 165 (c), 468 documentos. Lote 67 (Grecia): 42 documentos con estado de resultados; cola
+  revisada por un Sonnet contra los .md (81 respuestas, 2 contradicciones de AEK resueltas: el cuadro de todo el personal va afuera),
+  intereses de Volos con signo; 41 verificaciones OK. Atalanta 2022 cargado (estaba verificado y sin cargar).
+- 24 nombres legales de altas con cita; gestiones de Grecia, Rep. Checa, Portugal, Noruega, Países Bajos, Turquía, Colombia, Bélgica,
+  España y Dinamarca (`data/gestiones/`), un Sonnet por país en paralelo.
+- `altas-registro.mjs`: un club ya dado de alta cuenta como "existe" en el resumen; `cargar-lote.mjs`: el año de un club nuevo sale de la
+  verificación. To-dos 210-215 (mejoras de script vistas en Grecia).
+
 ## Versión 669 — `verificar.mjs`: escalón "financiero dentro de un subtotal" (to-do 199, patrón C) (2026-10-10)
 
 - Último escalón de la escalera: un subtotal que suma renglones de su lado y una fila del financiero no se cuenta, el financiero toma el
