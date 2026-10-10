@@ -104,6 +104,14 @@ const vilanovabrRevenueLinesByYear = {
     { rawLabel:'Receitas Time mania', normalizedCategory:'other_income', amountNative:0.346337, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
     { rawLabel:'Receitas Diversas', normalizedCategory:'other_income', amountNative:22.764537, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
   ],
+  // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Vila Nova/demonstrativo-financeiro-2021.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2021: [
+    { rawLabel:'RECEITA COM DIREITOS DE TRANSMISSÃO E PREMIAÇÕES', normalizedCategory:'broadcasting', amountNative:16.622995, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'RECEITA PATROCÍNIO E MARKETING', normalizedCategory:'sponsorship_commercial', amountNative:4.50246, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'RECEITAS DIVERSAS', normalizedCategory:'other_income', amountNative:2.989799, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'(-) DEDUÇÕES DA RECEITA BRUTA', normalizedCategory:'other_income', amountNative:-1.511113, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.95
+  ],
 };
 const vilanovabrExpenseLinesByYear = {
   2025: [ // tools/cargar.mjs (2026-10-10)
@@ -164,6 +172,14 @@ const vilanovabrExpenseLinesByYear = {
     { rawLabel:'Despesas Serviços Terceiros', normalizedCategory:'admin_general_expense', amountNative:-0.867857, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
     { rawLabel:'Despesas Diversas', normalizedCategory:'other_expenses', amountNative:-0.008291, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
   ],
+  2021: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'(-) CUSTOS GERAIS', normalizedCategory:'admin_general_expense', amountNative:-0.09868, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.99
+    { rawLabel:'(-) DESPESAS COM PESSOAL', normalizedCategory:'wages_squad', amountNative:-6.451134, disclosureLevel:'aggregated' }, // pág. 8, precedente
+    { rawLabel:'(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES', normalizedCategory:'admin_general_expense', amountNative:-0.372019, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'(-) PROVISÕES E CONTIGÊNCIAS', normalizedCategory:'admin_general_expense', amountNative:-12.27047, disclosureLevel:'aggregated' }, // pág. 8, precedente
+    { rawLabel:'(-) DESPESAS COM VENDAS EM GERAL', normalizedCategory:'admin_general_expense', amountNative:-6.188497, disclosureLevel:'aggregated' }, // pág. 8, precedente
+    { rawLabel:'(-) OUTRAS DESPESAS', normalizedCategory:'other_expenses', amountNative:-4.991006, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.99
+  ],
 };
 const vilanovabrFiscalYearMeta = {
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2025-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2025-12-31
@@ -185,6 +201,8 @@ const vilanovabrFiscalYearMeta = {
   // 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 38.324,22. Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): los 13 renglones de receita suman 6.928.521,06 = TOTAL DAS RECEITAS (L70), con las Receitas Financeiras 38.324,22 adentro; la extracción las sumaba con el mismo signo que el costo financiero
   // 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = -5.029,11. Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): 6.890.197 - 8.598.927 + 38.324 - 5.029 = -1.675.435 (L79, -1.675.435,38)
   2015: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2025): Televisión, Salarios y primas (plantel y cuerpo técnico)
+    incluidoEn:{ broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2015-12-31',
     sourceId:'vilanova-br-balanco-patrimonial-2015',
     reportType:'official_balance_sheet',
@@ -208,6 +226,8 @@ const vilanovabrFiscalYearMeta = {
   // 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 30.508,57. Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): 12.894.474,04 + 30.508,57 = 12.924.982,61 = TOTAL DAS RECEITAS (L67)
   // 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = -33.202,07. Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): 12.894.474,04 - 15.663.783,45 + 30.508,57 - 33.202,07 = -2.772.002,91 = déficit impreso (L78)
   2016: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2025): Salarios y primas (plantel y cuerpo técnico)
+    incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2016-12-31',
     sourceId:'vilanova-br-balanco-patrimonial-2016',
     reportType:'official_balance_sheet',
@@ -231,6 +251,8 @@ const vilanovabrFiscalYearMeta = {
   // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 2.019,64. Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): los 13 renglones de receitas suman 37.956.311,55 = TOTAL DAS RECEITAS (L97) con las financeiras adentro
   // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = -67.298,36. Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): 37.954.291,91 - 39.474.131,33 + 2.019,64 - 67.298,36 = -1.585.118,14 = déficit impreso (L106)
   2017: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2025): Salarios y primas (plantel y cuerpo técnico)
+    incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2017-12-31',
     sourceId:'vilanova-br-balanco-patrimonial-2017',
     reportType:'official_balance_sheet',
@@ -248,6 +270,21 @@ const vilanovabrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:37.954292, officialTotalExpenses:39.474131, officialPAT:-1.585118,
+  },
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2021-12-31. Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2021
+  2021: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2021-12-31',
+    sourceId:'vilanova-br-demonstrativo-financeiro-2021',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:5.972119, tax:0,
+    extraRows: [
+      {label:'(-) DESPESA FINANCEIRA', value:-0.657771},
+      {label:'RECEITAS FINANCEIRAS', value:6.62989},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:22.60414, officialTotalExpenses:30.371805, officialPAT:-1.795546,
   },
 };
 const vilanovabrPresupuestoOverlayByYear = {};
@@ -290,6 +327,12 @@ Object.assign(sources, {
     title:'Vila Nova Futebol Clube — balanco-patrimonial-2017 (ejercicio 2017)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/balanco-patrimonial-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'vilanova-br-demonstrativo-financeiro-2021': {
+    id:'vilanova-br-demonstrativo-financeiro-2021', clubId:'vilanova-br',
+    title:'Vila Nova Futebol Clube — demonstrativo-financeiro-2021 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

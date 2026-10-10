@@ -1,14 +1,145 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf",
- "generado": "2026-10-10T01:03:18.831Z",
- "frena": [
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
+ "generado": "2026-10-10T02:04:28.713Z",
+ "frena": [],
+ "avisos": [
+  "categorías en 0 aun después del reintento (se carga así): Televisión, Estadio, Cuotas sociales",
+  "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-12-31); pregunta en la cola (no frena)"
  ],
- "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "vilanova-br",
+  "year": 2023,
+  "cierre": "2023-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "RECEITA COM PRESTAÇÃO DE SERVIÇOS",
+    "normalizedCategory": "other_income",
+    "amountNative": 24.459549,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "RECEITAS DIVERSAS",
+    "normalizedCategory": "other_income",
+    "amountNative": 5.165898,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "(-) DEDUÇÕES DA RECEITA BRUTA",
+    "normalizedCategory": "other_income",
+    "amountNative": -0.279902,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "(-) CUSTOS GERAIS",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.003564,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "(-) DESPESAS COM PESSOAL",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -8.719408,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.201971,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "(-) PROVISÕES E CONTIGÊNCIAS",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -4.450807,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "(-) DESPESAS COM VENDAS EM GERAL",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -9.735194,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "(-) OUTRAS DESPESAS",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -9.510671,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2023-12-31",
+   "sourceId": "vilanova-br-demonstrativo-financeiro-2023",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.184577,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "(-) DESPESAS FINANCEIRAS",
+     "value": -4.019144
+    },
+    {
+     "label": "RECEITAS FINANCEIRAS",
+     "value": 3.834567
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 29.345546,
+   "officialTotalExpenses": 33.621615,
+   "officialPAT": -4.460647
+  },
+  "source": {
+   "id": "vilanova-br-demonstrativo-financeiro-2023",
+   "clubId": "vilanova-br",
+   "title": "Vila Nova Futebol Clube — demonstrativo-financeiro-2023 (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.md",
  "reemplaza": false,
  "periodo": {
@@ -21,5 +152,262 @@
  },
  "clubId": "vilanova-br",
  "year": 2023,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 11,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "RECEITA COM PRESTAÇÃO DE SERVIÇOS",
+   "page": 4,
+   "native": 24.459549,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 24.459549,
+   "cat": "other_income",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 24.459549
+  },
+  {
+   "label": "RECEITAS DIVERSAS",
+   "page": 4,
+   "native": 5.165898,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 5.165898,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.165898
+  },
+  {
+   "label": "(-) DEDUÇÕES DA RECEITA BRUTA",
+   "page": 4,
+   "native": 0.279902,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": -0.279902,
+   "cat": "other_income",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -0.279902
+  },
+  {
+   "label": "(-) CUSTOS GERAIS",
+   "page": 4,
+   "native": 0.003564,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.003564,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.003564
+  },
+  {
+   "label": "(-) DESPESAS COM PESSOAL",
+   "page": 4,
+   "native": 8.719408,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 8.719408,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Despesas com Pessoal (nota 33.1: salarios, premios, auxilio moradia, derechos de imagen, FGTS...) es personal del club en actividad operacional, no hay bloque administrativo aparte: wages_squad (precedente Pessoal mayoritario)",
+   "destino": "expense",
+   "amountNative": -8.719408
+  },
+  {
+   "label": "(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES",
+   "page": 4,
+   "native": 1.201971,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.201971,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.201971
+  },
+  {
+   "label": "(-) PROVISÕES E CONTIGÊNCIAS",
+   "page": 4,
+   "native": 4.450807,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 4.450807,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Provisões e contingências (provisión de contingencias trabalhistas/cíveis y de férias/13º): admin_general_expense, precedente mayoritario de Contingências",
+   "destino": "expense",
+   "amountNative": -4.450807
+  },
+  {
+   "label": "(-) DESPESAS COM VENDAS EM GERAL",
+   "page": 4,
+   "native": 9.735194,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 9.735194,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Despesas com vendas/atividade em geral (nota 33.4: propaganda, comisiones, viagens): admin_general_expense",
+   "destino": "expense",
+   "amountNative": -9.735194
+  },
+  {
+   "label": "(-) OUTRAS DESPESAS",
+   "page": 4,
+   "native": 9.510671,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 9.510671,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -9.510671
+  },
+  {
+   "label": "(-) DESPESAS FINANCEIRAS",
+   "page": null,
+   "native": -4.019144,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "RECEITAS FINANCEIRAS",
+   "page": null,
+   "native": 3.834567,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 29.345545,
+  "expSum": -33.621615,
+  "officialTotalRevenue": 29.345546,
+  "officialTotalExpenses": 33.621615,
+  "officialPAT": -4.460647,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -4.460647,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 29.345546
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 33.621615
+  }
+ },
+ "liga": {
+  "valor": "br-serieB",
+  "fuente": "roster cacheado de \"2023 Campeonato Brasileiro Série B\" (tools/club-league-reference/br.json), coincidencia exacta \"Vila Nova\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-12-31",
+   "fuente": "año del ejercicio + mes de cierre (los demás .md del club (4 de 4 documentos cierran en el mes 12); este documento no alcanza solo)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "BRL",
+   "fuente": "moneda de curso legal de Brasil (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "BRL@2023-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene BRL@2023-12-31 = 4.8413 (PTAX de cierre (venda) del Banco Central do Brasil, 29/12/2023 (último día hábil del año; 30 y 31/12 cayeron sábado y domingo))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "vilanova-br-demonstrativo-financeiro-2023",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "br-serieB",
+   "fuente": "roster cacheado de \"2023 Campeonato Brasileiro Série B\" (tools/club-league-reference/br.json), coincidencia exacta \"Vila Nova\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 3,
+  "lineasGasto": 6,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
 }

@@ -102,7 +102,8 @@ window.RANKINGS["br-serieC"] = {
     clubs: [
       { id:"vilanova-br", revenue:1.765, reportType:"official_balance_sheet",
         sourceId:"vilanova-br-balanco-patrimonial-2015",
-        mix:[["Cuotas Sociales",0.128],["Comercial / Sponsors",0.339],["Venta de Jugadores",0.12],["Otras secciones deportivas",0.021],["Fútbol profesional (sin desglosar por la fuente)",0.599],["Otros ingresos",0.558]] },
+        mix:[["Cuotas Sociales",0.128],["Comercial / Sponsors",0.339],["Venta de Jugadores",0.12],["Otras secciones deportivas",0.021],["Fútbol profesional (sin desglosar por la fuente)",0.599],["Otros ingresos",0.558]],
+        incluidos:[["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
 };

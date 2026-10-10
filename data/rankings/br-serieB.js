@@ -8,7 +8,7 @@
 //   2024: 16 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -183,6 +183,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"crb-br", revenue:4.197, reportType:"official_balance_sheet",
         sourceId:"crb-br-balanco-patrimonial-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",4.197]] },
+      { id:"vilanova-br", revenue:4.051, reportType:"official_balance_sheet",
+        sourceId:"vilanova-br-demonstrativo-financeiro-2021",
+        mix:[["Comercial / Sponsors",0.807],["Televisión",2.979],["Otros ingresos",0.265]] },
     ],
   },
   2020: {

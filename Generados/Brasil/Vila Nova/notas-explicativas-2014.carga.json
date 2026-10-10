@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
- "generado": "2026-10-10T00:55:24.308Z",
+ "generado": "2026-10-10T02:03:27.440Z",
  "frena": [
   {
    "etapa": "registro",
@@ -9,18 +9,9 @@
   {
    "etapa": "categorizacion",
    "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 6.058415 + gastos -6.488968 + netInterest -0.004187 + tax 0 = -0.43474 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -0.376919)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "ingresos: las filas suman 6.058415 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
   }
  ],
  "avisos": [
-  "ingresos: 1 fila(s) sin categoría aceptable (0.9% del dinero del lado): \"Receitas Extraordinárias\" (no está en categorias.json)",
   "gestión: ningún presidente confirmado cubre 2014 (cierre 2014-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -78,6 +69,16 @@
     "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Receitas Extraordinárias",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.057821,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Receitas Contribuições Conselheiros",
@@ -218,9 +219,9 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
+   "officialTotalRevenue": 6.116236,
    "officialTotalExpenses": 6.488968,
-   "officialPAT": null
+   "officialPAT": -0.376919
   },
   "source": {
    "id": "vilanova-br-notas-explicativas-2014",
@@ -408,10 +409,14 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 0.057821,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "other_income",
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "notaGuido": "Claude 2026-10-09: renglón de primer nivel sin desglose en el documento",
+   "destino": "revenue",
+   "amountNative": 0.057821
   },
   {
    "label": "Receitas Contribuições Conselheiros",
@@ -598,16 +603,29 @@
    "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 6.058415,
+  "revSum": 6.116236,
   "expSum": -6.486249,
-  "officialTotalRevenue": null,
+  "officialTotalRevenue": 6.116236,
   "officialTotalExpenses": 6.488968,
-  "officialPAT": null,
+  "officialPAT": -0.376919,
   "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
    "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.376919,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 6.116236
   },
   "expImpreso": {
    "label": "total de gastos (verificado)",
@@ -665,8 +683,8 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
-  "lineasIngreso": 11,
+  "motivos": 2,
+  "lineasIngreso": 12,
   "lineasGasto": 5,
   "metaFilas": 1,
   "excluidas": 0
