@@ -19,6 +19,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 - El reintento por "categoría en 0" sale de `<doc>.carga.json`, que solo escribe el lote: si el club se dio de alta fuera del lote, la propuesta guardada decía "el club no existe" y `--reintentar` no veía los ceros (Vila Nova 2021-2024, Avaí 2021). Ahora, con `--reintentar`, el lote vuelve a proponer (gratis) la carga de los documentos de su lista que no están en el sitio antes de decidir. Medido: ensayo de `--reintentar` sobre `prueba-completa` idéntico antes y después; con la propuesta fresca, el lote 62 tomó los 5 documentos.
 
+## Versión 645 — Rusia desde los datos oficiales del fisco: `tools/bfo-rusia.mjs` (2026-10-09)
+
+- Nueva tool: de cada `Clubes/Rusia/<Club>/bfo-AAAA-datos.json` (GIR BO, bo.nalog.gov.ru) al año cargado. Escalón 1, gratis y determinista: el formulario 2 con un mapa fijo de código a categoría (2110 → fútbol sin desglosar, con "posiblemente incluido en" TV, entradas, socios y sponsors; 2340 → otros ingresos; 2120 → costo del fútbol sin desglosar; 2210/2220 → administración; 2350 → otros gastos; 2310/2320/2330 → financiero; 2300−2400 → impuesto). Compuerta: la suma da el 2300 impreso (los 79 años medidos cierran). Genera la transcripción legible `bfo-AAAA-datos.md` y escribe con `escribir()` de `cargar.mjs`; alta con el color de `Admin/altas-revision.jsonl`; un commit por año.
+- Primera corrida: Krasnodar, Krylia Sovetov, Orenburg, Pari NN, Rostov y Sochi 2021-2025 y Dynamo Makhachkala 2022-2025 (34 años). Dynamo Makhachkala 2021 no entra (el JSON casi vacío da P0 en la auditoría). `auditAll()`: 205 clubes, 1.812 chequeos que cierran.
+- Escalón 2 pendiente: abrir 2110 y 2340 con las notas explicativas (poyasneniya) donde existan.
+
 ## Versión 644 — Documentos de pocos renglones: escalón para la marca de categorizar (to-do 203) (2026-10-09)
 
 - `tools/verificar.mjs` (avisarRegistro): además del escalón de siempre (5 rubros o más → `listo-para-jev`), uno nuevo: menos de 5 rubros pero la etapa 6 cerró contra el resultado impreso → `listo-para-jev`. Medido sobre las 295 verificaciones en ok de Generados/: cambian 4 (Remo dre-2019, dre-2023, dre-2024 y relatorio-auditoria-2020, DRE de una página que quedaban `sin-rubros` para siempre); las otras 291, igual.

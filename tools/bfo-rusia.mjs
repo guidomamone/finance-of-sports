@@ -111,6 +111,7 @@ function proponer({ carpeta, anio, A, clubId, club, alta }) {
   const md = `${carpeta}/bfo-${anio}-datos.md`;
   return {
     pdf: `${carpeta}/bfo-${anio}-datos.json`, md, reemplaza: false, ajustes: [],
+    totales: { patImpreso: { label: `Чистая прибыль (убыток), código 2400 (suma verificada contra el 2300)`, pag: null } },
     fxCloseNuevo: fxRef.fxClose ? { key: fxRef.valor, ...fxRef.fxClose } : null,
     liga: { valor: liga.valor ?? null, fuente: liga.fuente || 'sin caché de la liga', estado: liga.estado || 'pendiente' },
     ejercicio: {
@@ -160,12 +161,14 @@ for (const nombre of carpetas) {
   const aCargar = filas.filter(({ y, A }) => A.cierra && !yaEnSitio(y));
   if (!aCargar.length) continue;
   let altaHecha = false;
+  const sinTrackAntes = new Set(String(git('ls-files', '--others', '--exclude-standard', '--', 'data', 'fuentes').stdout || '').split('\n').filter(Boolean));
+  const revertirAlta = () => { git('checkout', '-q', '--', 'data', 'index.html', 'fuentes.html', 'sitemap.xml', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/ESTADO-clubes.md'); git('checkout', '-q', '--', 'fuentes'); for (const f of String(git('ls-files', '--others', '--exclude-standard', '--', 'data', 'fuentes').stdout || '').split('\n').filter(Boolean)) if (!sinTrackAntes.has(f)) { try { unlinkSync(resolve(ROOT, f)); } catch { /* */ } } };
   if (esNuevo) {
     const r = run('node', [resolve(ROOT, 'tools/alta-club.mjs'), `${carpeta}/bfo-${aCargar[0].y}-datos.md`, '--escribir']);
     if (!existsSync(resolve(ROOT, 'data', `${clubId}-data.js`))) { console.log(`      alta NO escrita: ${String(r.stdout + r.stderr).trim().split('\n').pop().slice(0, 200)}`); continue; }
     const p = resolve(ROOT, 'data', 'clubs.js'); const L = readFileSync(p, 'utf8').split('\n');
     const k = L.findIndex((l) => l.startsWith(`  '${clubId}': {`));
-    if (k < 0 || L[k].includes('brandColor')) { console.log('      no pude poner el color: revierto'); git('checkout', '-q', '--', 'data', 'index.html', 'fuentes.html', 'sitemap.xml'); git('checkout', '-q', '--', 'fuentes'); try { unlinkSync(resolve(ROOT, 'data', `${clubId}-data.js`)); } catch { /* */ } continue; }
+    if (k < 0 || L[k].includes('brandColor')) { console.log('      no pude poner el color: revierto'); revertirAlta(); continue; }
     L[k] = `${L[k].trimEnd().slice(0, -3)}, brandColor:${color === null ? 'null' : `'${color}'`} },`;
     for (const n of [k - 2, k - 1]) if (n >= 0) L[n] = L[n].replace('brandColor AUSENTE a propósito', color === null ? 'brandColor:null a propósito' : `brandColor ${color}`).replace('// (nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).', `// (procedencia en fuentes/Rusia/${nombre}.md; tools/bfo-rusia.mjs).`);
     writeFileSync(p, L.join('\n')); altaHecha = true; sitio = cargarSitio();
@@ -183,6 +186,6 @@ for (const nombre of carpetas) {
     if (c.status === 0) { escritos++; commits++; sitio = cargarSitio(); console.log(`      ${y}: escrito y commiteado (${String(git('log', '--oneline', '-1').stdout).slice(0, 9)}) — ${res.audit}`); }
     else console.log(`      ${y}: escrito pero el commit falló: ${String(c.stderr).slice(0, 160)}`);
   }
-  if (altaHecha && !escritos) { git('checkout', '-q', '--', 'data', 'index.html', 'fuentes.html', 'sitemap.xml'); git('checkout', '-q', '--', 'fuentes'); try { unlinkSync(resolve(ROOT, 'data', `${clubId}-data.js`)); } catch { /* */ } console.log(`      ningún año se escribió: alta de ${clubId} revertida`); }
+  if (altaHecha && !escritos) { revertirAlta(); console.log(`      ningún año se escribió: alta de ${clubId} revertida`); }
 }
 console.log(ESCRIBIR ? `\nEscritos y commiteados: ${commits} año(s). Sin push.` : '\nENSAYO: no se escribió nada en el sitio (sí las transcripciones bfo-AAAA-datos.md). Agregá --escribir.');
