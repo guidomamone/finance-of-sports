@@ -33,6 +33,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 - `tools/alta-club.mjs --todos`: una carpeta cuyo club ya está en el sitio pasa a `existe` (antes su línea "listo-para-alta" quedaba congelada: el resumen del pipeline ofrecía dar de alta a Atalanta, Inter, Lazio...). Medido con el mismo registro de entrada, código viejo contra nuevo: 28 líneas pasan a `existe` (21 italianas y 7 de Brasil) y las otras 816 salen idénticas.
 
+## Versión 639 — Brasil por el pipeline: 8 clubes nuevos, 61 años (to-do 165, lotes 56-63) (2026-10-09)
+
+- Altas y años: Criciúma 2012-2025 (14), CRB 2020-2025 (6), Paysandu 2021, 2023-2025 (4), Cuiabá 2022-2025 (4), Avaí 2021-2025 (5), Ferroviária 2010, 2012-2016, 2018, 2021-2025 (12), Vila Nova 2015-2017, 2021-2025 (7), Remo 2019-2025 (7). Faltan Ferroviária 2017 y Vila Nova 2014 (lote 63).
+- Criterios fijados: CRB 2022-2023 con los documentos de una página (los auditados tienen otra presentación, descartados); Liga Forte União (Criciúma 2023-2024, Vila Nova 2025) como exceptional_items, criterio Goiás 2023; Ferroviária 2022 armado a mano (balancete de ~580 cuentas, to-do 197); DRE de una página de Remo como bolsón con "posiblemente incluido en".
+- 45 documentos a `Admin/documentos-descartados.txt` (balances solos, DFC/DMPL, informes del auditor, duplicados del mismo año). Costo API: ~US$ 13 (etapa 2 US$ 2,43; lote 56 US$ 9,79; el resto, centavos).
+
 ## Versión 640 — Registro de transcripciones por alcance (`--solo`) (2026-10-09)
 
 - `tools/inventario-transcripciones.mjs --solo <lista|carpeta>`: recalcula solo esos PDFs (la pregunta a `onboard.mjs`, acotada a sus carpetas) y copia el resto del registro; los duplicados se siguen marcando contra el registro entero.
