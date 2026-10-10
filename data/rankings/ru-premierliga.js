@@ -6,7 +6,7 @@
 // Premier Liga (RU) — 5 ejercicio(s) con ranking:
 //   2025: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -48,6 +48,10 @@ window.RANKINGS["ru-premierliga"] = {
       { id:"krasnodar-ru", revenue:118.808, reportType:"official_balance_sheet",
         sourceId:"krasnodar-ru-bfo-2023-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",44.937],["Otros ingresos",73.87]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"kryliasovetovsamara-ru", revenue:30.7, reportType:"official_balance_sheet",
+        sourceId:"kryliasovetovsamara-ru-bfo-2023-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",10.064],["Otros ingresos",20.636]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"dynamomakhachkala-ru", revenue:1.465, reportType:"official_balance_sheet",
         sourceId:"dynamomakhachkala-ru-bfo-2023-datos",
