@@ -5,7 +5,7 @@ Detalle línea-por-club del sourcing de Bielorrusia. El detalle completo de cada
 `fuentes/Bielorrusia/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 **País nuevo (sesión 2026-10-03, barrido Europa del Este). Dead-end documentado (barrido superficial).** No hay balance
 público gratuito: el registro estatal (ЕГР, `egr.gov.by`) entrega solo datos de registro y por solicitud paga (tasa

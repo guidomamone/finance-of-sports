@@ -558,7 +558,7 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [-
  VECINO     lo cargado en el sitio o el documento vecino; nunca un valor aceptado en la misma corrida (Versión 502)
 ```
 
-Los pendientes están en `auditorias/2026-10-04-clubes-pipeline.md` (to-do 138).
+Los pendientes están en `auditorias/2026-10-04-clubes-pipeline.md` .
 
 ---
 

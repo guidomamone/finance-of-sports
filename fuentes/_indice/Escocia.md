@@ -5,7 +5,7 @@ Detalle línea-por-club del sourcing de Escocia. El detalle completo de cada clu
 `fuentes/Escocia/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 - [Celtic](../Escocia/Celtic.md) — **Scottish Premiership** — 5 ejercicios consolidados en disco (2020/21-2024/25; el 2024/25 transcripto), sin cargar al sitio — Último chequeo: 2026-10-03
 - [Rangers](../Escocia/Rangers.md) — **Scottish Premiership** — 5 ejercicios en disco (grupo, 2020/21-2024/25), sin cargar al sitio — Último chequeo: 2026-10-03

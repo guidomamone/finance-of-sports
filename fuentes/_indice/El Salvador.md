@@ -5,7 +5,7 @@ Detalle línea-por-club del sourcing de El Salvador. El detalle completo de cada
 `fuentes/El Salvador/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 - [Alianza](../El Salvador/Alianza.md) — sin PDF, sitio y Wayback agotados, parece asociación con junta directiva (el CNR solo aplica a sociedades) — Último chequeo: 2026-10-03
 - [FAS](../El Salvador/FAS.md) — sin PDF, sitio viejo y Wayback sin documentos financieros, forma societaria sin confirmar — Último chequeo: 2026-10-03

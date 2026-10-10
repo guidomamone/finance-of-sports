@@ -5,7 +5,7 @@ Detalle línea-por-club del sourcing de Rumanía. El detalle completo de cada cl
 `fuentes/Rumania/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 **País nuevo (sesión 2026-10-03).** Carpeta `Clubes/Rumania/` (sin tilde). Canal: sitio de cada club, obligado por el licenciamiento de la FRF (balance + P&L + CCJ, 2 años por archivo, LEI); Wayback para años viejos. El portal estatal (mfinante) solo da indicadores, no sirve. Ver `fuentes/Rumania/_notas-generales.md`.
 

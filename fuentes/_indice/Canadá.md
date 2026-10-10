@@ -5,7 +5,7 @@ Detalle línea-por-club del sourcing de Canadá. El detalle completo de cada clu
 `fuentes/Canadá/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 - [Winnipeg Blue Bombers](<../Canadá/Winnipeg Blue Bombers.md>) — **fútbol canadiense (CFL)** — 4 informes anuales reales descargados (2022, 2023, 2024, 2025) con estados auditados del club solo (sin subsidiarias) que cubren 2021-2025, club comunitario sin fines de lucro — Último chequeo: 2026-10-03
 - [Saskatchewan Roughriders](<../Canadá/Saskatchewan Roughriders.md>) — **fútbol canadiense (CFL)** — 2 informes anuales reales descargados (FY2023-24 y FY2025-26, cierre 31/3) con estados auditados que cubren FY2023-FY2026; faltan FY2022 y anteriores — Último chequeo: 2026-10-03

@@ -2,7 +2,7 @@
 
 Detalle línea-por-club del sourcing de Bulgaria. El detalle completo de cada club (links, qué se probó, qué falta) está en el archivo que linkea cada línea, `fuentes/Bulgaria/<Club>.md`. El índice de países, y las reglas de formato y de registro, están en [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo nuevo (to-do 56): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre POR PAÍS. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país.
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 - [Arda](<../Bulgaria/Arda.md>) — 4 ejercicios (2018, 2020-2022); faltan 2019, 2023, 2024 — Último chequeo: 2026-10-03
 - [Botev Plovdiv](<../Bulgaria/Botev Plovdiv.md>) — 3 ejercicios (2022-2024), presentados con atraso; antes de 2022 nada — Último chequeo: 2026-10-03

@@ -5,7 +5,7 @@ Detalle línea-por-club del sourcing de Australia. El detalle completo de cada c
 `fuentes/Australia/<Club>.md`. Notas del país: [`_notas-generales.md`](../Australia/_notas-generales.md) y [`_notas-NRL.md`](../Australia/_notas-NRL.md). El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 - [Collingwood](<../Australia/Collingwood.md>) — 15 ejercicios 2011-2025 (14 con texto, 2011 escaneo), sitio oficial — Último chequeo: 2026-10-03
 - [Essendon](<../Australia/Essendon.md>) — 15 ejercicios 2011-2025 descargados del sitio oficial (página governance), todos con texto y estados; sin huecos — Último chequeo: 2026-10-03

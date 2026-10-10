@@ -5,7 +5,7 @@ Detalle línea-por-club del sourcing de Hungria. El detalle completo de cada clu
 `fuentes/Hungria/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo del eje `datos` (to-do 56), se actualiza cuando ese eje se corre sobre este país.
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 **País nuevo (sesión 2026-10-03).** Canal oficial (e-beszamolo.im.gov.hu) con captcha ALTCHA = gestión de Guido;
 canal real: sección TAO/gazdálkodás de cada club. Ver `fuentes/Hungria/_notas-generales.md`.

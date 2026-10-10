@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 660 — Referencias viejas fuera de las skills (2026-10-10)
+
+- `dudas-por-club.md` sin dudas de `brandColor` (Crystal Palace, Levante, Sport Recife: quedan en `null`, ambiguos); ARQUITECTURA y
+  PANTALLA sin el mapa de "ex §N" de `club-nuevo.md`; REGLA 5 de `fuentes/README.md` y los `_indice` sin el to-do 56; PIPELINE sin el
+  to-do 138; TODO sin historia en el 51; mensaje de `liga-sin-verificar` (`audit.js`) con `data/club-leagues/<iso2>.js`; cabecera de
+  `outreach-send.js` con `info@`; un comentario de `index.html` sin "41 clubes".
+
 ## Versión 659 — Skills sin changelog (2026-10-10)
 
 - `club-data-mapping` (1.019 → 619 líneas), `escala`, `auditoria`, `club-sourcing`, `club-outreach`, `club-nuevo.md`: sin versiones,

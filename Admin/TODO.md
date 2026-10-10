@@ -7,8 +7,8 @@ ni en el comentario de ningún archivo de código.
 ## Cómo leer esta lista
 
 - **Los números son IDENTIFICADORES, no prioridad.** Se conservan de la lista vieja (la
-  que vivía en el comentario de `index.html`) porque los puntos se citan entre ellos y
-  desde los skills: "ver to-do 20(h)" tiene que seguir apuntando a lo mismo. Por eso hay
+  que vivía en el comentario de `index.html`) porque los puntos se citan entre ellos:
+  "ver to-do 20(h)" tiene que seguir apuntando a lo mismo. Por eso hay
   huecos: son los puntos que se resolvieron o se descartaron. Un punto nuevo toma el
   número siguiente al más alto, nunca uno libre.
 - **La prioridad es el ORDEN en que están escritos**, de arriba hacia abajo.
@@ -29,16 +29,11 @@ ni en el comentario de ningún archivo de código.
         (Aclaración 2026-10-04: desde el 2026-10-03 Diablos Rojos SÍ está sourceado, 4 ejercicios FY2022-FY2025: ver
         `fuentes/México/Diablos Rojos del México.md`. Lo que sigue pendiente es la decisión de abrir béisbol.)
 
-51. PROCESO DE EMAIL A CLUBES — EN CONSTRUCCIÓN, ETAPA 1 (rediseñado 2026-09-24, decisión de Guido
-    tras comparar alternativas: Gmail/MCP, APIs transaccionales, no-code, agentes dedicados). El
-    diseño original de este punto ("Claude redacta, Guido aprueba en el chat, envío por Gmail")
-    quedaba pegado para siempre a confirmar cada mail uno por uno — es una regla de la plataforma de
-    chat, no de Gmail, y ningún scope de conector la evita. La salida es sacar el paso de ENVÍO
-    (nada más) afuera de cualquier sesión de chat: Resend + subdominio propio + una cola de
-    archivos que Guido revisa, con el envío disparado por Guido desde su propia terminal. Proceso
-    completo documentado en `.claude/skills/club-outreach/SKILL.md` (skill nuevo). Arranca directo
-    en la Etapa 1 de ese diseño (sin regla de disparo automática todavía, Guido sigue decidiendo
-    cuándo escribir) — la Etapa 0 (statu quo manual) se salteó a pedido de Guido.
+51. PROCESO DE EMAIL A CLUBES — EN CONSTRUCCIÓN, ETAPA 1. El envío queda afuera de cualquier sesión
+    de chat: Resend + subdominio propio + una cola de archivos que Guido revisa, con el envío
+    disparado por Guido desde su propia terminal. Proceso completo en
+    `.claude/skills/club-outreach/SKILL.md`. Sin regla de disparo automática todavía: Guido decide
+    cuándo escribir.
 
     **Infraestructura, estado real:** (a) ✅ cuenta en Resend creada 2026-09-24 (conectada con
     GitHub, sigue en free por ahora); (b) ✅ subdominio `outreach.financeofsports.com` verificado

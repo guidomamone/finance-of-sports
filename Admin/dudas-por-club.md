@@ -1401,11 +1401,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 
 ## Crystal Palace (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
 
-- **`brandColor` sin resolver**: camiseta a franjas verticales rojo y azul desde 1973 ("Red and
-  Blues"), sin que ninguna fuente consultada (footylogos, Wikipedia) declare cuál de los dos
-  predomina — mismo caso que Levante. Quedó `brandColor:null`. Candidatos si Guido quiere elegir:
-  azul `#1B458F`/`#0055A5` o rojo `#C4122E`/`#EE2E24` (distintas fuentes dan valores levemente
-  distintos, siempre en la misma familia).
 - **`firstYear` de la gestión Parish/Blitzer-Harris/Textor**: no verificado con certeza (Blitzer/
   Harris entraron ~2015, Textor como mayoritario ~2021) — se usó un solo `gestionId` sin firstYear
   preciso por prudencia.
@@ -1454,15 +1449,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   los £396,135m de "transfer fee payables" (trade creditors por pases) siguiendo el criterio estricto
   de la sección 14 del skill. Muchos análisis de finanzas de fútbol tratan esos payables como deuda
   económica real — decisión pendiente si Guido prefiere ese criterio alternativo.
-
-## Levante UD (España) — onboarding 2024-25, sesión 2026-09-25
-
-- **`brandColor` sin resolver**: el kit es a mitades verticales azul y granate ("azulgrana", mismo
-  patrón de nombre que Barcelona pero con las mitades invertidas), sin que ninguna fuente consultada
-  (footylogos, Wikipedia) declare cuál de los dos predomina — mismo caso que Crystal Palace
-  (rojo/azul en franjas, sin desempate posible con las 4 reglas del skill). Quedó `brandColor:null`
-  en `data/clubs.js`. Candidatos de hex si Guido quiere elegir uno: azul `#005CA5` / granate `#B4053F`
-  (footylogos.com).
 
 ## Brighton & Hove Albion (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
 
@@ -1694,9 +1680,7 @@ Outras receitas 75.756, en R$ mil) suman -46.696, pero el propio DRE imprime -35
 línea — diferencia de R$10.957 mil (~6,3%) no explicada por redondeo. Se usó el -35.739 del DRE (la
 cifra que reconcilia exacto contra el déficit auditado). ¿Cuál de las 3 cifras está mal, o falta un
 4to componente no impreso? (2) el footnote "(i)" junto a "Outras receitas/(despesas)" no tiene texto
-en la transcripción, sin explicar. (3) brandColor ambiguo (rubro-negro: el cuerpo del artículo de
-Wikipedia dice "preto e encarnado" pero el infobox estructurado dice "rubro-negro" al revés) — quedó
-`null`, se puede consultar a Guido si se quiere resolver.
+en la transcripción, sin explicar.
 
 **Godoy Cruz (Argentina)**: (1) "Ingresos Varios AFA" cargado a `other_income`, no está claro si es
 TV/premios/otro concepto (ya hay línea separada de TV). (2) "Ingreso Fútbol Amateur"/gasto espejo

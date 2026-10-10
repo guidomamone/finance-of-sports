@@ -251,7 +251,7 @@ MODELO DE DATOS: UN SOLO MOTOR GENÉRICO PARA TODOS LOS CLUBES (desde la Versió
 
 Venía del skill `club-or-year-onboarding` (Versión 471), sin cambios de texto. Sirve al tocar el motor de Finanzas o los scripts de carga.
 
-Las referencias "sección N" dentro del texto son a las secciones del skill viejo (buscá "ex §N"): §2, §3 y §11 están en `Admin/ARQUITECTURA.md`; §4-8, §10 y §12-14 en `Admin/PANTALLA.md`; color de marca, escudo y liga de un club nuevo en `.claude/skills/club-or-year-onboarding/club-nuevo.md`; §15 en `Admin/CONVENCIONES.md`; el skill viejo entero, en `Admin/Archive/club-or-year-onboarding-hasta-V470.md`.
+Los colores de marca, el chequeo contra el escudo y la liga de cada temporada de un club nuevo están en `.claude/skills/club-or-year-onboarding/club-nuevo.md`, secciones "Color de marca", "Chequeo contra el escudo" y "Liga de cada temporada".
 
 ### Arquitectura ya generalizada, no reinventar por club (ex §2)
 
@@ -371,7 +371,7 @@ limpieza de una sola vez:
      dropdown se arma al cargar la página), así que no puede autoregistrarse desde un archivo que
      todavía no se pidió, a diferencia de todo lo del punto 1c.
 
-     **`brandColor`**: el procedimiento para un club nuevo está en `.claude/skills/club-or-year-onboarding/club-nuevo.md` (ex §3, punto 1b).
+     **`brandColor`**: el procedimiento para un club nuevo está en `.claude/skills/club-or-year-onboarding/club-nuevo.md` (sección "Color de marca").
   1c. `sources{}`/`gestionesByClub{}`/`memberCountByClub{}` NO se tocan en `data/clubs.js` — se
      autoregistran al final de tu propio `data/<club>-data.js`, mismo momento que el registro en
      `CLUB_GENERIC_DATA` (punto 2 de abajo), copiando el patrón de cualquier club ya cargado como

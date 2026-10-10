@@ -5,7 +5,7 @@ Detalle línea-por-club del sourcing de Lituania. El detalle completo de cada cl
 `fuentes/Lituania/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 **País nuevo (sesión 2026-10-03, barrido Europa del Este).** Los clubes de la A lyga son `viešoji įstaiga` (VšĮ,
 institución pública sin fines de lucro) o `asociacija`, y la licencia de la LFF les exige PUBLICAR en su sitio el

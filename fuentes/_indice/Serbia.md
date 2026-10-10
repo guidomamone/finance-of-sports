@@ -2,7 +2,7 @@
 
 Detalle línea-por-club del sourcing de Serbia. El detalle completo de cada club (links, qué se probó, qué falta) está en el archivo que linkea cada línea, `fuentes/Serbia/<Club>.md`. El índice de países, y las reglas de formato y de registro, están en [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo nuevo (to-do 56): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre POR PAÍS. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país.
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 - [Crvena Zvezda](<../Serbia/Crvena Zvezda.md>) — sin PDFs: el sitio no publica nada; el balance está en APR (inaccesible desde EE.UU.), gestión de Guido — Último chequeo: 2026-10-03
 - [Cukaricki](<../Serbia/Cukaricki.md>) — 4 ejercicios (2022-2025) con revisor; faltan 2021 y anteriores — Último chequeo: 2026-10-03

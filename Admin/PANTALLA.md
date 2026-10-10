@@ -6,7 +6,7 @@ stats de arriba y cómo verificarlo en el navegador (venía del skill `club-or-y
 código": traducciones, `alert()`, ASSET_V, Chart.js, selects, color de club (venían de `Admin/CONVENCIONES.md`). Se lee cuando se toca
 `js/`, `index.html` o CSS, no en cada sesión. Los textos movidos no cambiaron.
 
-Las referencias "sección N" dentro del texto son a las secciones del skill viejo (buscá "ex §N"): §2, §3 y §11 están en `Admin/ARQUITECTURA.md`; §4-8, §10 y §12-14 en `Admin/PANTALLA.md`; color de marca, escudo y liga de un club nuevo en `.claude/skills/club-or-year-onboarding/club-nuevo.md`; §15 en `Admin/CONVENCIONES.md`; el skill viejo entero, en `Admin/Archive/club-or-year-onboarding-hasta-V470.md`.
+Los colores de marca, el chequeo contra el escudo y la liga de cada temporada de un club nuevo están en `.claude/skills/club-or-year-onboarding/club-nuevo.md`, secciones "Color de marca", "Chequeo contra el escudo" y "Liga de cada temporada".
 
 ---
 
@@ -588,7 +588,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   presupuesto cargado, en vez de mostrar un mensaje de "no hay". Pedido explícito de Guido al ver
   los 4 cards vacíos para Boca 2024/2025 (que tiene balance, no presupuesto). La función
   `noDataMsg()` se borró (ya no la llama nadie). Detalle completo en
-  `Admin/PANTALLA.md`, ex §6.
+  `Admin/PANTALLA.md`, la regla de los 4 cards escondidos sin presupuesto.
 - REGLA PARA EL FUTURO (Versión 40, pedido explícito de Guido: "es mi manera de hacerte un
   control"): toda fila de "Formato simplificado" tiene que llevar `items` con el desglose real de
   qué campo(s) nativo(s) se sumaron para llegar a ese número, nunca `items:null`. Implementado para
@@ -619,7 +619,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   NUNCA va adentro de un card individual (Supuestos, Presupuesto Financiero, Presupuesto de
   Inversiones, ni ningún card nuevo). Va en `#finanzasDataQualityBanner` (por ejercicio),
   `#finanzasClubSourceNote` (por club, al final del bloque de cards) o la pestaña Fuentes, nunca
-  repetida card por card. Ver `Admin/PANTALLA.md`, ex §7.
+  repetida card por card. Ver `Admin/PANTALLA.md`, la regla de la fuente fuera de los cards.
 - REGLA (Versiones 34-35, pedida por Guido, no es opcional, "homologar lo que se pueda
   homologar"): los 3 cards de presupuesto oficial de Finanzas: "Supuestos"
   (`#supuestosCard`/`renderSupuestosCard`), "Presupuesto Financiero"
@@ -832,7 +832,7 @@ Texto movido sin cambios.
   explícito es lo que distingue "se miró y no lleva color" de "nadie lo chequeó": el
   ausente lo marca `node tools/audit.js` (`club-sin-color-ni-null`, P3), y resolver el
   color es desde la Versión 179 un paso del onboarding de cada club nuevo
-  (`club-or-year-onboarding` §3 punto 1b), no una barrida que se repite. Desde la
+  (`club-or-year-onboarding/club-nuevo.md`, sección "Color de marca"), no una barrida que se repite. Desde la
   Versión 180 los 39 hexes tienen su PROCEDENCIA escrita, una línea por club en
   `fuentes/<País>/<Club>.md` ("Color de marca: `#XXXXXX` — <fuente>, verificado
   <fecha>"), el mismo formato con el que la anota un club nuevo: 5 del sitio oficial

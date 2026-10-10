@@ -5,7 +5,7 @@ Detalle línea-por-club del sourcing de Azerbaiyan. El detalle completo de cada 
 `fuentes/Azerbaiyan/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 **País nuevo (sesión 2026-10-03, barrido Europa del Este).** No apareció ningún canal que entregue estados
 financieros auditados individuales de clubes azeríes: ni el registro tributario (`taxes.gov.az`) ni la

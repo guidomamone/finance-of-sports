@@ -5,7 +5,7 @@ Detalle línea-por-club del sourcing de Sudáfrica. El detalle completo de cada 
 `fuentes/Sudáfrica/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 - [Kaizer Chiefs](../Sudáfrica/Kaizer Chiefs.md) — (Pty) Ltd, exceptuado de presentar AFS ante CIPC — Último chequeo: 2026-09-13
 - [Orlando Pirates](../Sudáfrica/Orlando Pirates.md) — (Pty) Ltd, mismo dead-end; manual PAIA sin leer (403) — Último chequeo: 2026-09-13

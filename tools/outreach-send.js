@@ -13,7 +13,7 @@
 //        source Admin/outreach/.env
 //      Ese archivo (gitignoreado, ver .gitignore) tiene:
 //        export RESEND_API_KEY="re_xxxxxxxx"
-//        export OUTREACH_FROM_EMAIL="Guido Mamone <contacto@outreach.financeofsports.com>"
+//        export OUTREACH_FROM_EMAIL="Guido Mamone <info@outreach.financeofsports.com>"
 //   2. node tools/outreach-send.js
 //
 // Formato de cada archivo en Admin/outreach/aprobados/*.md (frontmatter simple, 3 campos):

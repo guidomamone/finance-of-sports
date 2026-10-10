@@ -5,7 +5,7 @@ Detalle línea-por-club del sourcing de Brasil. El detalle completo de cada club
 `fuentes/Brasil/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 - [Amazonas](../Brasil/Amazonas.md) — solo balanços resumidos sin auditar (2022-2024) rescatados de Wayback; dominio oficial caído · **Barrido 2026-10-03**: sigue en 3 ejercicios (2022-2024); Wayback agotado, dominio sin DNS; falta ángulo (mail o Tribunal de Contas) — Último chequeo: 2026-10-03
 - [America Mineiro](<../Brasil/America Mineiro.md>) — CARGADO AL SITIO (`americamineiro-br`): 3 ejercicios (2023-2025) del sitio oficial vía CDN irp.cdn-website.com · **Barrido 2026-10-03**: 5 ejercicios en disco (2020-21, 2023-25); 2022 no ubicado — Último chequeo: 2026-10-03

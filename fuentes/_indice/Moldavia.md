@@ -4,7 +4,7 @@ Pasada corta (sesión 2026-10-03). Sin archivos por club: el detalle está en
 [`fuentes/Moldavia/_notas-generales.md`](../Moldavia/_notas-generales.md). Índice de países y reglas:
 [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo nuevo (to-do 56).
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 - Petrocub — 3 reportes en `Clubes/Moldavia/Petrocub/` (2022, 2023, licencia UEFA 2025; fuente FMF) — Último chequeo: 2026-10-03
 - Bălți (CSF Bălți) — 3 reportes en `Clubes/Moldavia/Balti/` (2022, 2023, 2025; fuente FMF) — Último chequeo: 2026-10-03

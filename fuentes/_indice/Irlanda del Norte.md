@@ -5,7 +5,7 @@ Detalle línea-por-club del sourcing de Irlanda del Norte. El detalle completo d
 `fuentes/Irlanda del Norte/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
-**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+**Última auditoría de datos: nunca**. Se actualiza (AAAA-MM-DD) cada vez que el eje `datos` de `auditoria-finance-of-sports/SKILL.md` se corre sobre este país.
 
 Mismo Companies House que Inglaterra, con números `NI…` (sociedades) y `R…` (registered/Industrial & Provident societies). Regla central: casi todos los clubes de la NIFL Premiership son *small companies* que omiten el Income Statement (s.444) — ver [Notas generales de Irlanda del Norte](../Irlanda del Norte/_notas-generales.md). Derry City (sede en Derry, juega la League of Ireland) vive en [Irlanda](../Irlanda/Derry City.md) por su carpeta pero se contabiliza en la nota de Companies House NI.
 
