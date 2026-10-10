@@ -5,7 +5,7 @@
 //
 // Premier Liga (RU) — 5 ejercicio(s) con ranking:
 //   2025: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -43,6 +43,10 @@ window.RANKINGS["ru-premierliga"] = {
       { id:"kryliasovetovsamara-ru", revenue:25.878, reportType:"official_balance_sheet",
         sourceId:"kryliasovetovsamara-ru-bfo-2024-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",7.957],["Otros ingresos",17.921]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"orenburg-ru", revenue:23.44, reportType:"official_balance_sheet",
+        sourceId:"orenburg-ru-bfo-2024-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",17.052],["Otros ingresos",6.388]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"dynamomakhachkala-ru", revenue:4.637, reportType:"official_balance_sheet",
         sourceId:"dynamomakhachkala-ru-bfo-2024-datos",

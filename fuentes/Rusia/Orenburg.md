@@ -38,3 +38,5 @@ Color de marca: #0000FF — ru.wikipedia (infobox, camiseta local body1 0000FF; 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Rusia/Orenburg/bfo-2022-datos.json` (sourceId `orenburg-ru-bfo-2022-datos`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Rusia/Orenburg/bfo-2023-datos.json` (sourceId `orenburg-ru-bfo-2023-datos`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2024 desde `Clubes/Rusia/Orenburg/bfo-2024-datos.json` (sourceId `orenburg-ru-bfo-2024-datos`).
