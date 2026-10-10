@@ -1,0 +1,216 @@
+{
+ "md": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2016.md",
+ "generatedAt": "2026-10-10T00:14:19.375Z",
+ "rubrosHuella": "7924ba9072ba9f6b870a3190b7df04a4c3db9092",
+ "rubros": [
+  {
+   "label": "Receitas Atividades Esportivas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas Escolinha de Futebol",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "youth_football",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas Doações/Patrocínios",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas Publicidade",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas Direitos Federativos Atletas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas Alugueis",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "stadium_other",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas Contribuições Conselheiros",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "member_dues",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas Time mania",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas Diversas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Administrativas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Depto Esportes",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Serviços Terceiros",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas CBF",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "competition_bonus",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "competition_bonus",
+     0.37
+    ],
+    [
+     "other_income",
+     0.21
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Despesas Diversas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Ajustes de Exercícios Anteriores",
+   "lado": "expense",
+   "page": 1,
+   "section": "ajuste manual",
+   "choice": "exceptional_items",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "exceptional_items",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Receitas Sócio Tigrão",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1030
+  }
+ ]
+}

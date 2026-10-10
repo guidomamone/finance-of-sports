@@ -1,0 +1,286 @@
+{
+ "md": "Clubes/Brasil/Criciuma/balanco-auditado-2016.md",
+ "generatedAt": "2026-10-10T00:14:08.119Z",
+ "rubrosHuella": "dd74dce36f57e156db00eb11a1e541f6e046abb1",
+ "rubros": [
+  {
+   "label": "Receita com transmissão televisíveis",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com Patrocínios",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Venda de mercadorias",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas de royalties",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Demais Receitas",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento Administrativo",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento de Patrimonio",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento Amador",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "Receita com mensalidade de sócios",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Repasse de direitos federativos",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Departamento Jurídico",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 990
+  },
+  {
+   "label": "Receitas Publicidades",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Departamento de Marketing e Comercial",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 992
+  },
+  {
+   "label": "Departamento Profissional",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Receita de mecanismo de solidariedade",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "player_sales",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "player_sales",
+     0.97
+    ],
+    [
+     "youth_football",
+     0.02
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Departamento Loja - Tigre Maniacos",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1012
+  }
+ ]
+}

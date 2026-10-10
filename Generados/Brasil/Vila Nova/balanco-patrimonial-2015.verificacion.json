@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2015.pdf",
  "md": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2015.md",
- "generado": "2026-10-10T00:01:01.676Z",
+ "generado": "2026-10-10T00:07:02.041Z",
  "estado": "ok",
  "clubId": null,
  "year": 2015,
@@ -91,8 +91,7 @@
   "ajuste manual: fila \"Receitas Financeiras\" (financiero) 38.324,22, en lugar de \"Receitas Financeiras\" (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): los 13 renglones de receita suman 6.928.521,06 = TOTAL DAS RECEITAS (L70), con las Receitas Financeiras 38.324,22 adentro; la extracción las sumaba con el mismo signo que el costo financiero)",
   "ajuste manual: fila \"Despesas Financeiras\" (financiero) -5.029,11, en lugar de \"Despesas Financeiras\" (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): 6.890.197 - 8.598.927 + 38.324 - 5.029 = -1.675.435 (L79, -1.675.435,38))",
   "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de extraer que no afecta la carga: L65 no imprime importe en la columna 2.014; puede ser cero o una celda no transcripta.",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L65 no imprime importe en la columna 2.014; puede ser cero o una celda no transcripta."
  ],
  "reintentar": null,
  "reintentado": false,

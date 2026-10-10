@@ -3,7 +3,7 @@
   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2013-b.pdf",
   "club": "ferroviaria",
   "year": 2013,
-  "generatedAt": "2026-10-09T23:23:29.367Z",
+  "generatedAt": "2026-10-10T00:07:01.341Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.14
       ],
-      "glosa": "Derechos de TV Campeonato Paulista Serie A2"
+      "glosa": "Derechos de televisión Campeonato Paulista Serie A-2"
     },
     {
       "label": "Sócio Torcedor",
@@ -64,7 +64,7 @@
       "values": [
         0.188
       ],
-      "glosa": "Contratos de colaboración"
+      "glosa": "Contratos de asociación"
     },
     {
       "label": "Publicidades",
@@ -104,7 +104,7 @@
       "values": [
         0.0001
       ],
-      "glosa": "Penalizaciones contractuales"
+      "glosa": "Multas contractuales"
     },
     {
       "label": "Pis",
@@ -114,7 +114,7 @@
       "values": [
         0.000631
       ],
-      "glosa": "Impuesto PIS"
+      "glosa": "PIS"
     },
     {
       "label": "Cofins",
@@ -124,7 +124,7 @@
       "values": [
         0.002905
       ],
-      "glosa": "Impuesto COFINS"
+      "glosa": "COFINS"
     },
     {
       "label": "Icms",
@@ -134,7 +134,7 @@
       "values": [
         0.006861
       ],
-      "glosa": "Impuesto ICMS"
+      "glosa": "ICMS"
     },
     {
       "label": "Arbitragens",
@@ -184,7 +184,7 @@
       "values": [
         0.000799
       ],
-      "glosa": "Cargas sociales (INSS) sobre taquilla"
+      "glosa": "INSS sobre recaudación de partidos"
     },
     {
       "label": "Inss s/Cotas e Patrocinios",
@@ -194,7 +194,7 @@
       "values": [
         0.04105
       ],
-      "glosa": "Cargas sociales (INSS) sobre cuotas y patrocinios"
+      "glosa": "INSS sobre cuotas y patrocinios"
     },
     {
       "label": "Ingressos",
@@ -204,7 +204,7 @@
       "values": [
         0.01129
       ],
-      "glosa": "Gastos de venta de entradas"
+      "glosa": "Entradas"
     },
     {
       "label": "Combustiveis e Lubrificantes",
@@ -224,7 +224,7 @@
       "values": [
         0.004999
       ],
-      "glosa": "Cargas sociales (INSS) sobre arbitrajes"
+      "glosa": "INSS sobre arbitrajes"
     },
     {
       "label": "Exame Anti-Doping",
@@ -264,7 +264,7 @@
       "values": [
         0.000045
       ],
-      "glosa": "Inspección de estadios"
+      "glosa": "Inspección de estadio"
     },
     {
       "label": "Locação de Estadio",
@@ -274,7 +274,7 @@
       "values": [
         0.013686
       ],
-      "glosa": "Alquiler de estadios"
+      "glosa": "Alquiler de estadio"
     },
     {
       "label": "Salarios e Ordenados",
@@ -294,7 +294,7 @@
       "values": [
         0.159631
       ],
-      "glosa": "Vacaciones"
+      "glosa": "Vacaciones ordinarias"
     },
     {
       "label": "Férias Indenizadas",
@@ -304,7 +304,7 @@
       "values": [
         0.009425
       ],
-      "glosa": "Indemnización por vacaciones"
+      "glosa": "Vacaciones indemnizadas"
     },
     {
       "label": "13º Salario",
@@ -354,7 +354,7 @@
       "values": [
         0.004555
       ],
-      "glosa": "FGTS por despido"
+      "glosa": "FGTS rescisorio"
     },
     {
       "label": "Premios e Gratificações",
@@ -394,7 +394,7 @@
       "values": [
         0.228695
       ],
-      "glosa": "Alimentación"
+      "glosa": "Alimentación y manutención"
     },
     {
       "label": "Despesas de Viagens",
@@ -404,7 +404,7 @@
       "values": [
         0.080656
       ],
-      "glosa": "Gastos de viajes"
+      "glosa": "Gastos de viaje"
     },
     {
       "label": "Vale Transporte",
@@ -444,7 +444,7 @@
       "values": [
         0.011598
       ],
-      "glosa": "PIS sobre nóminas"
+      "glosa": "PIS sobre nómina"
     },
     {
       "label": "Ajuda de Custo",
@@ -464,7 +464,7 @@
       "values": [
         0.314356
       ],
-      "glosa": "Costes de formación de deportistas"
+      "glosa": "Costos de formación de futbolistas"
     },
     {
       "label": "Estoque Inicial",
@@ -534,7 +534,7 @@
       "values": [
         0.022276
       ],
-      "glosa": "Vacaciones"
+      "glosa": "Vacaciones ordinarias"
     },
     {
       "label": "13º Salario",
@@ -584,7 +584,7 @@
       "values": [
         0.0016
       ],
-      "glosa": "PIS sobre nóminas"
+      "glosa": "PIS sobre nómina"
     },
     {
       "label": "Salarios e Ordenados",
@@ -604,7 +604,7 @@
       "values": [
         0.003535
       ],
-      "glosa": "Vacaciones"
+      "glosa": "Vacaciones ordinarias"
     },
     {
       "label": "13º Salario",
@@ -644,7 +644,7 @@
       "values": [
         0.003903
       ],
-      "glosa": "FGTS por despido"
+      "glosa": "FGTS rescisorio"
     },
     {
       "label": "Vale Transporte",
@@ -674,7 +674,7 @@
       "values": [
         0.027474
       ],
-      "glosa": "Amortizaciones"
+      "glosa": "Amortizaciones y depreciaciones"
     },
     {
       "label": "Despesas Diversas",
@@ -694,7 +694,7 @@
       "values": [
         0.031671
       ],
-      "glosa": "Gastos de viajes"
+      "glosa": "Gastos de viaje"
     },
     {
       "label": "Impostos e Taxas",
@@ -744,7 +744,7 @@
       "values": [
         0.000771
       ],
-      "glosa": "Servicios de internet"
+      "glosa": "Servicio de internet"
     },
     {
       "label": "Custas e Emolumentos",
@@ -764,7 +764,7 @@
       "values": [
         0.00698
       ],
-      "glosa": "Gastos de inmovilizado material"
+      "glosa": "Gastos de activo fijo"
     },
     {
       "label": "Contingencias Tributarias",
@@ -824,7 +824,7 @@
       "values": [
         0.000388
       ],
-      "glosa": "Material de consumo"
+      "glosa": "Materiales de consumo"
     },
     {
       "label": "Agua",
@@ -954,7 +954,7 @@
       "values": [
         0.007995
       ],
-      "glosa": "Seguro de vida"
+      "glosa": "Seguros de vida"
     },
     {
       "label": "Impressos e Materiais de Escritorio",
@@ -964,7 +964,7 @@
       "values": [
         0.002477
       ],
-      "glosa": "Material de oficina e impresos"
+      "glosa": "Material impreso y de oficina"
     },
     {
       "label": "Correios",
@@ -974,7 +974,7 @@
       "values": [
         0.00174
       ],
-      "glosa": "Correos y mensajería"
+      "glosa": "Gastos de correos"
     },
     {
       "label": "Custas e Emolumentos",
@@ -994,7 +994,7 @@
       "values": [
         0.000154
       ],
-      "glosa": "Material de cocina y comedor"
+      "glosa": "Material de cocina y cafetería"
     },
     {
       "label": "Telefone",
@@ -1014,7 +1014,7 @@
       "values": [
         0.000628
       ],
-      "glosa": "Material de oficina e impresos"
+      "glosa": "Material impreso y de oficina"
     },
     {
       "label": "Honorarios Contabeis,Adv e de Auditorias",
@@ -1024,7 +1024,7 @@
       "values": [
         0.069348
       ],
-      "glosa": "Honorarios contables, legales y de auditoría"
+      "glosa": "Honorarios contables, jurídicos y de auditoría"
     },
     {
       "label": "Baixa de Imobilizado",

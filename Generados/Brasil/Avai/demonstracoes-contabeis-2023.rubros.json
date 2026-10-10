@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2023.md",
   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2023.pdf",
-  "club": "avai",
+  "club": "avai-br",
   "year": 2023,
-  "generatedAt": "2026-10-09T23:23:27.843Z",
+  "generatedAt": "2026-10-10T00:07:01.032Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -144,7 +144,7 @@
       "values": [
         0.392
       ],
-      "glosa": "Dietas y asignaciones"
+      "glosa": "Dietas y viáticos"
     },
     {
       "label": "Viagens e Hospedagem",
@@ -164,7 +164,7 @@
       "values": [
         0.854
       ],
-      "glosa": "Seguridad Social sobre ingresos (INSS)"
+      "glosa": "INSS sobre ingresos"
     },
     {
       "label": "Aluguel e manutenção dos campos",
@@ -174,7 +174,7 @@
       "values": [
         0.813
       ],
-      "glosa": "Alquiler y mantenimiento de campos de juego"
+      "glosa": "Alquiler y mantenimiento de canchas"
     },
     {
       "label": "Consultoria Esportiva",
@@ -214,7 +214,7 @@
       "values": [
         1.286
       ],
-      "glosa": "Amortización de derechos federativos de deportistas profesionales"
+      "glosa": "Amortización de costes de deportistas profesionales"
     },
     {
       "label": "Seguros/Plano de Saúde",
@@ -224,7 +224,7 @@
       "values": [
         1.481
       ],
-      "glosa": "Seguros / Seguro médico"
+      "glosa": "Seguros / Plan de salud"
     },
     {
       "label": "Direito de Uso de Imagem",
@@ -254,7 +254,7 @@
       "values": [
         0.569
       ],
-      "glosa": "Liquidaciones de partidos (Bordereaux)"
+      "glosa": "Bordereaux de partidos"
     },
     {
       "label": "Taxa de Policiamento",
@@ -294,7 +294,7 @@
       "values": [
         0.696
       ],
-      "glosa": "Primas y premios"
+      "glosa": "Primas deportivas"
     },
     {
       "label": "Direito de Arena",
@@ -304,7 +304,7 @@
       "values": [
         0.454
       ],
-      "glosa": "Derechos de arena"
+      "glosa": "Derecho de arena"
     },
     {
       "label": "Empréstimos de Atletas",
@@ -324,7 +324,7 @@
       "values": [
         1.614
       ],
-      "glosa": "Intermediación y contratación de deportistas"
+      "glosa": "Intermediación y negociación de deportistas"
     },
     {
       "label": "Materiais e serviços diversos",
@@ -364,7 +364,7 @@
       "values": [
         6.033
       ],
-      "glosa": "Costes por rescisión de contratos de deportistas"
+      "glosa": "Coste de deportistas rescindidos"
     },
     {
       "label": "(-) Transferência para o Intangível",
@@ -374,7 +374,7 @@
       "values": [
         -5.605
       ],
-      "glosa": "(-) Transferencia al inmovilizado intangible"
+      "glosa": "(-) Transferencia al activo intangible"
     },
     {
       "label": "Alimentação/Plano de saúde/Seguros",
@@ -384,7 +384,7 @@
       "values": [
         0.701
       ],
-      "glosa": "Alimentación / Seguro médico / Seguros"
+      "glosa": "Alimentación / Plan de salud / Seguros"
     },
     {
       "label": "Aluguéis",
@@ -414,7 +414,7 @@
       "values": [
         1.208
       ],
-      "glosa": "Coste de ventas / ICMS"
+      "glosa": "CMV / ICMS"
     },
     {
       "label": "Demais despesas",
@@ -424,7 +424,7 @@
       "values": [
         0.486
       ],
-      "glosa": "Demás gastos"
+      "glosa": "Otros gastos"
     },
     {
       "label": "Depreciação",
@@ -474,7 +474,7 @@
       "values": [
         0.381
       ],
-      "glosa": "Mantenimiento de equipamiento"
+      "glosa": "Mantenimiento de equipos"
     },
     {
       "label": "Manutenção e conservação do Estádio",
@@ -504,7 +504,7 @@
       "values": [
         0.258
       ],
-      "glosa": "Propaganda y publicidad"
+      "glosa": "Publicidad y propaganda"
     },
     {
       "label": "Provisões para contingências",
@@ -524,7 +524,7 @@
       "values": [
         1.848
       ],
-      "glosa": "Concesión de bares"
+      "glosa": "Liquidación de bares"
     },
     {
       "label": "Softwares e consultorias",
@@ -534,7 +534,7 @@
       "values": [
         0.929
       ],
-      "glosa": "Software y consultorías"
+      "glosa": "Software y consultoría"
     },
     {
       "label": "Telefone e Internet",

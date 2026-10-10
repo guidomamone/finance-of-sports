@@ -3,14 +3,14 @@
   "pdf": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2016.pdf",
   "club": "vila-nova",
   "year": 2016,
-  "generatedAt": "2026-10-09T23:23:30.738Z",
+  "generatedAt": "2026-10-10T00:07:02.091Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
       "label": "Receitas Atividades Esportivas",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         2.220891
       ],
@@ -20,7 +20,7 @@
       "label": "Receitas Escolinha de Futebol",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.119131
       ],
@@ -30,7 +30,7 @@
       "label": "Receitas Doações/Patrocínios",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.50307
       ],
@@ -40,7 +40,7 @@
       "label": "Receitas CBF",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         5.266022
       ],
@@ -50,7 +50,7 @@
       "label": "Receitas Publicidade",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         1.753607
       ],
@@ -60,7 +60,7 @@
       "label": "Receitas Sócio Tigrão",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.368941
       ],
@@ -70,7 +70,7 @@
       "label": "Receitas Direitos Federativos Atletas",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.6
       ],
@@ -80,37 +80,27 @@
       "label": "Receitas Alugueis",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.269565
       ],
       "glosa": "Ingresos por alquileres"
     },
     {
-      "label": "Receitas Extraordinárias",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Ingresos extraordinarios"
-    },
-    {
       "label": "Receitas Contribuições Conselheiros",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.389937
       ],
-      "glosa": "Ingresos por contribuciones de consejeros"
+      "glosa": "Ingresos por aportaciones de consejeros"
     },
     {
       "label": "Receitas Time mania",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.260774
       ],
@@ -120,27 +110,17 @@
       "label": "Receitas Diversas",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         1.142537
       ],
       "glosa": "Ingresos diversos"
     },
     {
-      "label": "TOTAL DAS RECEITAS",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        12.924983
-      ],
-      "glosa": "TOTAL DE INGRESOS"
-    },
-    {
       "label": "Despesas Administrativas",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         9.801794
       ],
@@ -150,7 +130,7 @@
       "label": "Despesas Depto Esportes",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         4.783521
       ],
@@ -160,7 +140,7 @@
       "label": "Despesas Tributárias",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.185638
       ],
@@ -170,7 +150,7 @@
       "label": "Despesas Serviços Terceiros",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.535155
       ],
@@ -180,21 +160,21 @@
       "label": "Despesas Diversas",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.013946
       ],
       "glosa": "Gastos diversos"
     },
     {
-      "label": "TOTAL DAS DESPESAS",
+      "label": "Ajustes de Exercícios Anteriores",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "ajuste manual",
       "values": [
-        15.696986
+        0.34373
       ],
-      "glosa": "TOTAL DE GASTOS"
+      "glosa": "Ajustes de ejercicios anteriores"
     }
   ]
 }

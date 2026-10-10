@@ -3,7 +3,7 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série B (BR) — 12 ejercicio(s) con ranking:
+// Brasileirão Série B (BR) — 13 ejercicio(s) con ranking:
 //   2025: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -11,6 +11,7 @@
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2018: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -180,6 +181,14 @@ window.RANKINGS["br-serieB"] = {
       { id:"criciuma-br", revenue:6.485, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-balanco-2019",
         mix:[["Cuotas Sociales",0.745],["Comercial / Sponsors",0.314],["Estadio",0.181],["Televisión",2.679],["Venta de Jugadores",1.881],["Otros ingresos",0.685]] },
+    ],
+  },
+  2018: {
+    leagueSize: null,
+    clubs: [
+      { id:"criciuma-br", revenue:7.462, reportType:"official_balance_sheet",
+        sourceId:"criciuma-br-balanco-2018",
+        mix:[["Cuotas Sociales",0.929],["Comercial / Sponsors",0.753],["Estadio",0.134],["Televisión",2.02],["Venta de Jugadores",3.321],["Otros ingresos",0.305]] },
     ],
   },
   2017: {

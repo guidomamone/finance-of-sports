@@ -1,0 +1,200 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2010.md",
+ "generatedAt": "2026-10-10T00:14:08.459Z",
+ "rubrosHuella": "e29435237df65be416c1722fe634981d0c10e9a5",
+ "rubros": [
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "( - ) Impostos",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Receitas de publicidade e patrocínios",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "Despesas administrativa profissional",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Despesas com pessoal profissional",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Serviços do departamento de esportes para outras categorias",
+   "lado": "expense",
+   "page": 5,
+   "section": "ajuste manual",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.82
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Receitas de atividades desportivas profissionais",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Serviços do departamento de esportes profissional",
+   "lado": "expense",
+   "page": 5,
+   "section": "ajuste manual",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "lump_football_operations_expense",
+     0.28
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 1042
+  }
+ ]
+}

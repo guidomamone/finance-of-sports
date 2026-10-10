@@ -1,0 +1,102 @@
+{
+ "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.md",
+ "generatedAt": "2026-10-10T00:14:20.691Z",
+ "rubrosHuella": "4e15342cef246151dc91843c88560a20d3c07dbe",
+ "rubros": [
+  {
+   "label": "RECEITA PATROCINIO E MARKETING",
+   "lado": "revenue",
+   "page": 4,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "RECEITAS DIVERSAS",
+   "lado": "revenue",
+   "page": 4,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) DEDUÇÕES DA RECEITA BRUTA",
+   "lado": "revenue",
+   "page": 4,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) DESPESAS COM PESSOAL",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) PROVISÕES E CONTIGÊNCIAS",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) DESPESAS COM VENDAS EM GERAL",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) OUTRAS DESPESAS",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "RECEITA COM PRESTAÇÃO DE SERVIÇOS",
+   "lado": "revenue",
+   "page": 4,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "stadium_other",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1034
+  }
+ ]
+}

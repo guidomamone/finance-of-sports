@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Remo/dre-2024.pdf",
  "md": "Clubes/Brasil/Remo/dre-2024.md",
- "generado": "2026-10-10T00:02:57.372Z",
+ "generado": "2026-10-10T00:07:01.947Z",
  "estado": "ok",
  "clubId": null,
  "year": 2024,
@@ -51,6 +51,16 @@
    "evidencia": "pág. 1 del visor, .md L15-L18",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2024.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício firmada por el contador (una página); el balance del año está en otro PDF (descartado para la carga)",
+   "evidencia": "dre-2024.md L1-L20",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
   }
  ],
  "cola": [],

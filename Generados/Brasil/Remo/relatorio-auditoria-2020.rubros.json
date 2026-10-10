@@ -3,19 +3,9 @@
   "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
   "club": "remo",
   "year": 2020,
-  "generatedAt": "2026-10-09T23:23:30.288Z",
+  "generatedAt": "2026-10-10T00:07:01.792Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
-    {
-      "label": "(+) Receita Bruta Operacional",
-      "lado": "revenue",
-      "page": 8,
-      "section": "estado",
-      "values": [
-        12.351668
-      ],
-      "glosa": "(+) Ingresos brutos de explotación"
-    },
     {
       "label": "Receita De Atividades Esportivas",
       "lado": "revenue",
@@ -27,16 +17,6 @@
       "glosa": "Ingresos por actividades deportivas"
     },
     {
-      "label": "(-) Custos das Atividades Esportivas",
-      "lado": "expense",
-      "page": 8,
-      "section": "estado",
-      "values": [
-        7.54864
-      ],
-      "glosa": "(-) Costes de las actividades deportivas"
-    },
-    {
       "label": "Custos das Atividades Esportivas",
       "lado": "expense",
       "page": 8,
@@ -44,37 +24,7 @@
       "values": [
         7.54864
       ],
-      "glosa": "Costes de las actividades deportivas"
-    },
-    {
-      "label": "(-) Despesas Operacionais",
-      "lado": "expense",
-      "page": 8,
-      "section": "estado",
-      "values": [
-        4.943561
-      ],
-      "glosa": "(-) Gastos de explotación"
-    },
-    {
-      "label": "Despesas Operacionais",
-      "lado": "expense",
-      "page": 8,
-      "section": "estado",
-      "values": [
-        4.555341
-      ],
-      "glosa": "Gastos de explotación"
-    },
-    {
-      "label": "(-) Despesas c/ drepreciação/amortização",
-      "lado": "expense",
-      "page": 8,
-      "section": "estado",
-      "values": [
-        1.923969
-      ],
-      "glosa": "(-) Gastos por depreciación/amortización"
+      "glosa": "Costos de las actividades deportivas"
     },
     {
       "label": "Despesas c/ drepreciação/amortização",
@@ -85,6 +35,16 @@
         1.923969
       ],
       "glosa": "Gastos por depreciación/amortización"
+    },
+    {
+      "label": "(-) Despesas Operacionais (sin Resultado Financeiro)",
+      "lado": "expense",
+      "page": 8,
+      "section": "ajuste manual",
+      "values": [
+        4.749468
+      ],
+      "glosa": "(-) Gastos operativos (sin resultado financiero)"
     }
   ]
 }

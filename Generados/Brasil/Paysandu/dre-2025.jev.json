@@ -1,0 +1,559 @@
+{
+ "md": "Clubes/Brasil/Paysandu/dre-2025.md",
+ "generatedAt": "2026-10-10T00:14:18.238Z",
+ "rubrosHuella": "927cd24e5184973d52b70728066e0faf2286cc48",
+ "rubros": [
+  {
+   "label": "PATROCINIO",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "ESPORTES OLIMPICOS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_sports",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_sports",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "SOCIO TORCEDOR",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "FUTEBOL PROFISSIONAL",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "DOACOES",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "ROYALTIES E FRANQUIAS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "FUTEBOL DE BASE",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "youth_football",
+   "confidence": 1,
+   "top3": [
+    [
+     "youth_football",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "SOCIO PROPRIETARIO",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "REMISSAO DE DIVIDA",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 900
+  },
+  {
+   "label": "ALUGUEL",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "stadium_other",
+     0.08
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "TIMEMANIA",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "CUSTOS COM PESSOAL",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "RECEITA COM GRATUIDADES",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "(-) DEDUCOES DE RECEITAS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "CUSTOS GERAIS",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 991
+  },
+  {
+   "label": "OUTRAS RECEITAS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "DESPESAS COM PESSOAL",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "wages_squad",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "DESPESAS COM GRATUIDADE I",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "DEPRECIACAO/AMORTIZACAO",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "PERDAS DE CAPITAL",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "exceptional_items",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "player_impairment",
+     0.01
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "GERAIS E ADMINISTRATIVAS",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "PECLD",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "PERDAS CONSTITUIDAS II",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "DESPESAS TRIBUTARIAS",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1026
+  }
+ ]
+}

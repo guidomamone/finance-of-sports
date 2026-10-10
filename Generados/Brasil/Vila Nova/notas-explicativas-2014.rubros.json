@@ -3,7 +3,7 @@
   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
   "club": "vila-nova",
   "year": 2014,
-  "generatedAt": "2026-10-09T23:23:30.659Z",
+  "generatedAt": "2026-10-10T00:07:02.003Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -17,16 +17,6 @@
       "glosa": "Ingresos por actividades deportivas"
     },
     {
-      "label": "Receitas de Eventos",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0.12687
-      ],
-      "glosa": "Ingresos por eventos"
-    },
-    {
       "label": "Receitas Doações/Patrocínios",
       "lado": "revenue",
       "page": 1,
@@ -37,16 +27,6 @@
       "glosa": "Ingresos por donaciones/patrocinios"
     },
     {
-      "label": "Receitas CBF",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        1.88
-      ],
-      "glosa": "Ingresos CBF"
-    },
-    {
       "label": "Receitas Publicidade",
       "lado": "revenue",
       "page": 1,
@@ -55,16 +35,6 @@
         0.288755
       ],
       "glosa": "Ingresos por publicidad"
-    },
-    {
-      "label": "Receitas Sócio Torcedor",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0.001461
-      ],
-      "glosa": "Ingresos por socios aficionados"
     },
     {
       "label": "Receitas Direitos Federativos Atletas",
@@ -104,17 +74,7 @@
       "values": [
         0.303172
       ],
-      "glosa": "Ingresos por contribuciones de consejeros"
-    },
-    {
-      "label": "Receitas Sindicatos",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0.078862
-      ],
-      "glosa": "Ingresos por sindicatos"
+      "glosa": "Ingresos por aportaciones de consejeros"
     },
     {
       "label": "Receitas Diversas",
@@ -127,6 +87,46 @@
       "glosa": "Ingresos diversos"
     },
     {
+      "label": "Receitas CBF",
+      "lado": "revenue",
+      "page": 1,
+      "section": "ajuste manual",
+      "values": [
+        1.89
+      ],
+      "glosa": "Ingresos CBF"
+    },
+    {
+      "label": "Receitas Escolinha de Futebol",
+      "lado": "revenue",
+      "page": 1,
+      "section": "ajuste manual",
+      "values": [
+        0.12687
+      ],
+      "glosa": "Ingresos por escuela de fútbol"
+    },
+    {
+      "label": "Receitas Sócio Tigrão",
+      "lado": "revenue",
+      "page": 1,
+      "section": "ajuste manual",
+      "values": [
+        0.001461
+      ],
+      "glosa": "Ingresos por socios Tigrão"
+    },
+    {
+      "label": "Receitas Timemania",
+      "lado": "revenue",
+      "page": 1,
+      "section": "ajuste manual",
+      "values": [
+        0.078862
+      ],
+      "glosa": "Ingresos por Timemania"
+    },
+    {
       "label": "Despesas Administrativas",
       "lado": "expense",
       "page": 1,
@@ -135,16 +135,6 @@
         2.899833
       ],
       "glosa": "Gastos administrativos"
-    },
-    {
-      "label": "Despesas Depto Esportes",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        3.268157
-      ],
-      "glosa": "Gastos del departamento de deportes"
     },
     {
       "label": "Despesas Tributárias",
@@ -175,6 +165,16 @@
         0.002719
       ],
       "glosa": "Ajustes de ejercicios anteriores"
+    },
+    {
+      "label": "Despesas Depto Esportes",
+      "lado": "expense",
+      "page": 1,
+      "section": "ajuste manual",
+      "values": [
+        3.268187
+      ],
+      "glosa": "Gastos del departamento de deportes"
     }
   ]
 }

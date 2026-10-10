@@ -1,0 +1,306 @@
+{
+ "md": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2015.md",
+ "generatedAt": "2026-10-10T00:14:19.074Z",
+ "rubrosHuella": "324f4fafdd72b5fb855e3b8478363ba10d451cfa",
+ "rubros": [
+  {
+   "label": "Receitas Alugueis",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "stadium_other",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "stadium_other",
+     0.57
+    ],
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Receitas Escolinha de Futebol",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "youth_football",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_football",
+     0.99
+    ],
+    [
+     "education",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Receitas Direitos Federativos Atletas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.98
+    ],
+    [
+     "broadcasting",
+     0.01
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Receitas Time mania",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "broadcasting",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Receitas Publicidade",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Receitas Contribuições Conselheiros",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "member_dues",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "member_dues",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Receitas Atividades Esportivas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Receitas Doações/Patrocínios",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.92
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Receitas Diversas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Despesas Serviços Terceiros",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Despesas Administrativas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Despesas Depto Esportes",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "youth_other_sports_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1039
+  }
+ ]
+}

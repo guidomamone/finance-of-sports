@@ -1,0 +1,476 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2012.md",
+ "generatedAt": "2026-10-10T00:14:09.315Z",
+ "rubrosHuella": "bf7b02764d9d8ff8ac905f352e20f41868cc87a3",
+ "rubros": [
+  {
+   "label": "Renda de jogos",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "matchday_competition",
+     0.89
+    ],
+    [
+     "competition_bonus",
+     0.06
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Cotas de TV Campeonato Paulista Série A-2",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Doação de Materiais esportivos",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.77
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Contratos de parcerias",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 983
+  },
+  {
+   "label": "Recuperação de despesas",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Venda de atletas",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Patrocínios",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Vendas líquidas de produtos",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Com doação",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Aviso prévio descontado",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "player_sales",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Publicidades",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "deduções das receitas",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Gerais e administrativas",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Depreciações e amortizações",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Tributárias",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 946
+  },
+  {
+   "label": "Pessoal",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "wages_squad",
+     0.6900000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 982
+  },
+  {
+   "label": "Com pessoal - Atletas Profissionais",
+   "lado": "expense",
+   "page": 6,
+   "section": "ajuste manual",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Com mercadorias",
+   "lado": "expense",
+   "page": 6,
+   "section": "ajuste manual",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Com atividade esportiva - Profissional",
+   "lado": "expense",
+   "page": 6,
+   "section": "ajuste manual",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.71
+    ],
+    [
+     "match_organisation_expense",
+     0.24
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "CUSTOS-Formação de Atletas",
+   "lado": "expense",
+   "page": 6,
+   "section": "ajuste manual",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.9
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1033
+  }
+ ]
+}

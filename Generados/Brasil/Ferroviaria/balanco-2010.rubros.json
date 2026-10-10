@@ -3,14 +3,14 @@
   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2010.pdf",
   "club": "ferroviaria",
   "year": 2010,
-  "generatedAt": "2026-10-09T23:23:29.268Z",
+  "generatedAt": "2026-10-10T00:07:01.221Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
       "label": "Receitas de atividades desportivas profissionais",
       "lado": "revenue",
       "page": 5,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.576146
       ],
@@ -20,7 +20,7 @@
       "label": "Receitas de publicidade e patrocínios",
       "lado": "revenue",
       "page": 5,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         1.0221
       ],
@@ -30,47 +30,17 @@
       "label": "( - ) Impostos",
       "lado": "revenue",
       "page": 5,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        0.016726
+        -0.016726
       ],
       "glosa": "( - ) Impuestos"
-    },
-    {
-      "label": "Receitas Operacionais Líquidas",
-      "lado": "revenue",
-      "page": 5,
-      "section": "estado",
-      "values": [
-        1.58152
-      ],
-      "glosa": "Ingresos operativos netos"
-    },
-    {
-      "label": "Serviços do departamento de esportes profissional",
-      "lado": "expense",
-      "page": 5,
-      "section": "estado",
-      "values": [
-        1.196469
-      ],
-      "glosa": "Servicios del departamento deportivo profesional"
-    },
-    {
-      "label": "Serviços do departamento de esportes para outras categorias",
-      "lado": "expense",
-      "page": 5,
-      "section": "estado",
-      "values": [
-        0.024495
-      ],
-      "glosa": "Servicios del departamento deportivo para otras categorías"
     },
     {
       "label": "Despesas com pessoal profissional",
       "lado": "expense",
       "page": 5,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.16191
       ],
@@ -80,7 +50,7 @@
       "label": "Despesas administrativa profissional",
       "lado": "expense",
       "page": 5,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.237178
       ],
@@ -90,7 +60,7 @@
       "label": "Despesas Tributárias",
       "lado": "expense",
       "page": 5,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.003097
       ],
@@ -100,21 +70,31 @@
       "label": "Serviços de terceiros",
       "lado": "expense",
       "page": 5,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.019683
       ],
       "glosa": "Servicios de terceros"
     },
     {
-      "label": "Total das Despesas",
+      "label": "Serviços do departamento de esportes profissional",
       "lado": "expense",
       "page": 5,
-      "section": "estado",
+      "section": "ajuste manual",
       "values": [
-        0.434791
+        1.196469
       ],
-      "glosa": "Total de gastos"
+      "glosa": "Servicios del departamento de deportes profesional"
+    },
+    {
+      "label": "Serviços do departamento de esportes para outras categorias",
+      "lado": "expense",
+      "page": 5,
+      "section": "ajuste manual",
+      "values": [
+        0.024495
+      ],
+      "glosa": "Servicios del departamento de deportes para otras categorías"
     }
   ]
 }

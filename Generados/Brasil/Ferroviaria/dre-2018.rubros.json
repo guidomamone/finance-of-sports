@@ -3,7 +3,7 @@
   "pdf": "Clubes/Brasil/Ferroviaria/dre-2018.pdf",
   "club": "ferroviaria",
   "year": 2018,
-  "generatedAt": "2026-10-09T23:23:29.711Z",
+  "generatedAt": "2026-10-10T00:07:01.652Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         0.399641
       ],
-      "glosa": "Ingresos por taquilla"
+      "glosa": "Ingresos por taquillas"
     },
     {
       "label": "Cotas de TV",
@@ -54,7 +54,7 @@
       "values": [
         0.223977
       ],
-      "glosa": "Abonados y socios"
+      "glosa": "Socios y abonados"
     },
     {
       "label": "Premios, Outras Receitas",
@@ -154,7 +154,7 @@
       "values": [
         0.041768
       ],
-      "glosa": "Multa contractual"
+      "glosa": "Multas contractuales"
     },
     {
       "label": "Bonificações",
@@ -194,7 +194,7 @@
       "values": [
         0.001536
       ],
-      "glosa": "Reversión de provisión INSS sobre vacaciones"
+      "glosa": "Reversión de provisión de seguridad social sobre vacaciones"
     },
     {
       "label": "Reversão de Provisão FGTS Férias",
@@ -224,7 +224,7 @@
       "values": [
         0.006041
       ],
-      "glosa": "Ajuste de corrección - FPF"
+      "glosa": "Ajuste por corrección - FPF"
     },
     {
       "label": "Multa Tribunal de Justiça Desportiva",
@@ -234,7 +234,7 @@
       "values": [
         0.027
       ],
-      "glosa": "Multa del Tribunal de Justicia Deportiva"
+      "glosa": "Multas del Tribunal de Justicia Deportiva"
     },
     {
       "label": "Despesas Processuais FIFA",
@@ -294,7 +294,7 @@
       "values": [
         0.083575
       ],
-      "glosa": "INSS sobre patrocinios"
+      "glosa": "Seguridad social sobre patrocinios"
     },
     {
       "label": "Manutenção, Conservação Estadio",
@@ -314,7 +314,7 @@
       "values": [
         0.0645
       ],
-      "glosa": "Intermediación de jugadores"
+      "glosa": "Comisiones por intermediación de jugadores"
     },
     {
       "label": "Inss s/Arbitragens",
@@ -324,7 +324,7 @@
       "values": [
         0.017157
       ],
-      "glosa": "INSS sobre arbitrajes"
+      "glosa": "Seguridad social sobre arbitrajes"
     },
     {
       "label": "Locação de Veiculos",
@@ -354,7 +354,7 @@
       "values": [
         0.004539
       ],
-      "glosa": "Control antidopaje"
+      "glosa": "Controles antidopaje"
     },
     {
       "label": "Serviços Prest p/Terceiros",
@@ -384,7 +384,7 @@
       "values": [
         0.241895
       ],
-      "glosa": "INSS sobre derechos de TV"
+      "glosa": "Seguridad social sobre derechos de TV"
     },
     {
       "label": "Alimentação",
@@ -394,7 +394,7 @@
       "values": [
         0.350006
       ],
-      "glosa": "Alimentación y manutención"
+      "glosa": "Alimentación"
     },
     {
       "label": "Gastos c/ Viagens",
@@ -404,7 +404,7 @@
       "values": [
         0.008102
       ],
-      "glosa": "Gastos de viaje"
+      "glosa": "Gastos de viajes"
     },
     {
       "label": "Gastos c/ Hospedagens",
@@ -424,7 +424,7 @@
       "values": [
         0.207858
       ],
-      "glosa": "Primas y recompensas"
+      "glosa": "Primas y premios"
     },
     {
       "label": "Jogos e Competições",
@@ -444,7 +444,7 @@
       "values": [
         0.1634
       ],
-      "glosa": "Derecho de arena"
+      "glosa": "Derechos de arena"
     },
     {
       "label": "Inss s/Premiações",
@@ -454,7 +454,7 @@
       "values": [
         0.018533
       ],
-      "glosa": "INSS sobre primas"
+      "glosa": "Seguridad social sobre primas"
     },
     {
       "label": "Inss s/Publicidade",
@@ -464,7 +464,7 @@
       "values": [
         0.0162
       ],
-      "glosa": "INSS sobre publicidad"
+      "glosa": "Seguridad social sobre publicidad"
     },
     {
       "label": "Isotônico",
@@ -514,7 +514,7 @@
       "values": [
         0.029482
       ],
-      "glosa": "Paga extraordinaria (13º salario)"
+      "glosa": "Paga extraordinaria"
     },
     {
       "label": "Aviso Prévio Indenizado",
@@ -534,7 +534,7 @@
       "values": [
         0.063046
       ],
-      "glosa": "INSS"
+      "glosa": "Seguridad social (INSS)"
     },
     {
       "label": "FGTS",
@@ -544,7 +544,7 @@
       "values": [
         0.109152
       ],
-      "glosa": "FGTS"
+      "glosa": "Fondo de garantía por despido (FGTS)"
     },
     {
       "label": "FGTS Rescisório",
@@ -554,7 +554,7 @@
       "values": [
         0.014491
       ],
-      "glosa": "FGTS por rescisión laboral"
+      "glosa": "FGTS por rescisión"
     },
     {
       "label": "13º Salário Indenizado",
@@ -604,7 +604,7 @@
       "values": [
         0.02396
       ],
-      "glosa": "Dietas y asignaciones"
+      "glosa": "Dietas y asignaciones de transporte"
     },
     {
       "label": "Provisão 13º Salário",
@@ -624,7 +624,7 @@
       "values": [
         0.003898
       ],
-      "glosa": "Provisión INSS sobre paga extraordinaria"
+      "glosa": "Provisión de seguridad social sobre paga extraordinaria"
     },
     {
       "label": "Provisão FGTS 13º Salário",
@@ -644,7 +644,7 @@
       "values": [
         0.000304
       ],
-      "glosa": "Reconocimientos médicos"
+      "glosa": "Exámenes médicos"
     },
     {
       "label": "Provisão PIS 13º Salário",
@@ -694,7 +694,7 @@
       "values": [
         0.001917
       ],
-      "glosa": "Paga extraordinaria (13º salario)"
+      "glosa": "Paga extraordinaria"
     },
     {
       "label": "Aviso Prévio Indenizado",
@@ -714,7 +714,7 @@
       "values": [
         0.017062
       ],
-      "glosa": "INSS"
+      "glosa": "Seguridad social (INSS)"
     },
     {
       "label": "FGTS",
@@ -724,7 +724,7 @@
       "values": [
         0.029992
       ],
-      "glosa": "FGTS"
+      "glosa": "Fondo de garantía por despido (FGTS)"
     },
     {
       "label": "FGTS Rescisório",
@@ -734,7 +734,7 @@
       "values": [
         0.002602
       ],
-      "glosa": "FGTS por rescisión laboral"
+      "glosa": "FGTS por rescisión"
     },
     {
       "label": "Vale Transporte",
@@ -744,7 +744,7 @@
       "values": [
         0.003639
       ],
-      "glosa": "Vales de transporte"
+      "glosa": "Subsidio de transporte"
     },
     {
       "label": "Indenizações Trabalhistas",
@@ -774,7 +774,7 @@
       "values": [
         0.00025
       ],
-      "glosa": "Dietas y asignaciones"
+      "glosa": "Dietas y asignaciones de transporte"
     },
     {
       "label": "Provisão 13º Salário",
@@ -804,7 +804,7 @@
       "values": [
         0.001165
       ],
-      "glosa": "Provisión INSS sobre vacaciones"
+      "glosa": "Provisión de seguridad social sobre vacaciones"
     },
     {
       "label": "Provisão FGTS Férias",
@@ -824,7 +824,7 @@
       "values": [
         0.001413
       ],
-      "glosa": "Provisión INSS sobre paga extraordinaria"
+      "glosa": "Provisión de seguridad social sobre paga extraordinaria"
     },
     {
       "label": "Provisão FGTS 13º Salário",
@@ -894,7 +894,7 @@
       "values": [
         0.004423
       ],
-      "glosa": "Paga extraordinaria (13º salario)"
+      "glosa": "Paga extraordinaria"
     },
     {
       "label": "INSS",
@@ -904,7 +904,7 @@
       "values": [
         0.006999
       ],
-      "glosa": "INSS"
+      "glosa": "Seguridad social (INSS)"
     },
     {
       "label": "FGTS",
@@ -914,7 +914,7 @@
       "values": [
         0.012443
       ],
-      "glosa": "FGTS"
+      "glosa": "Fondo de garantía por despido (FGTS)"
     },
     {
       "label": "Pis s/Folha",
@@ -934,7 +934,7 @@
       "values": [
         0.07145
       ],
-      "glosa": "Dietas y asignaciones"
+      "glosa": "Dietas y asignaciones de transporte"
     },
     {
       "label": "Provisão 13º Salário",
@@ -964,7 +964,7 @@
       "values": [
         0.000306
       ],
-      "glosa": "Provisión INSS sobre vacaciones"
+      "glosa": "Provisión de seguridad social sobre vacaciones"
     },
     {
       "label": "Provisão FGTS Férias",
@@ -984,7 +984,7 @@
       "values": [
         0.001876
       ],
-      "glosa": "Provisión INSS sobre paga extraordinaria"
+      "glosa": "Provisión de seguridad social sobre paga extraordinaria"
     },
     {
       "label": "Provisão FGTS 13º Salário",
@@ -1004,7 +1004,7 @@
       "values": [
         0.000044
       ],
-      "glosa": "Reconocimientos médicos"
+      "glosa": "Exámenes médicos"
     },
     {
       "label": "Provisão PIS 13º Salário",
@@ -1054,7 +1054,7 @@
       "values": [
         0.003181
       ],
-      "glosa": "Paga extraordinaria (13º salario)"
+      "glosa": "Paga extraordinaria"
     },
     {
       "label": "Aviso Prévio Indenizado",
@@ -1074,7 +1074,7 @@
       "values": [
         0.008499
       ],
-      "glosa": "INSS"
+      "glosa": "Seguridad social (INSS)"
     },
     {
       "label": "FGTS",
@@ -1084,7 +1084,7 @@
       "values": [
         0.015074
       ],
-      "glosa": "FGTS"
+      "glosa": "Fondo de garantía por despido (FGTS)"
     },
     {
       "label": "FGTS Rescisório",
@@ -1094,7 +1094,7 @@
       "values": [
         0.001566
       ],
-      "glosa": "FGTS por rescisión laboral"
+      "glosa": "FGTS por rescisión"
     },
     {
       "label": "13º Salário Indenizado",
@@ -1144,7 +1144,7 @@
       "values": [
         0.000399
       ],
-      "glosa": "Provisión INSS sobre vacaciones"
+      "glosa": "Provisión de seguridad social sobre vacaciones"
     },
     {
       "label": "Provisão FGTS Férias",
@@ -1164,7 +1164,7 @@
       "values": [
         0.000466
       ],
-      "glosa": "Provisión INSS sobre paga extraordinaria"
+      "glosa": "Provisión de seguridad social sobre paga extraordinaria"
     },
     {
       "label": "Provisão FGTS 13º Salário",
@@ -1264,7 +1264,7 @@
       "values": [
         0.00077
       ],
-      "glosa": "Uniformes y equipaciones"
+      "glosa": "Uniformes"
     },
     {
       "label": "Salários e Ordenados",
@@ -1304,7 +1304,7 @@
       "values": [
         0.0069
       ],
-      "glosa": "Paga extraordinaria (13º salario)"
+      "glosa": "Paga extraordinaria"
     },
     {
       "label": "Aviso Prévio Indenizado",
@@ -1324,7 +1324,7 @@
       "values": [
         0.026913
       ],
-      "glosa": "INSS"
+      "glosa": "Seguridad social (INSS)"
     },
     {
       "label": "FGTS",
@@ -1334,7 +1334,7 @@
       "values": [
         0.046779
       ],
-      "glosa": "FGTS"
+      "glosa": "Fondo de garantía por despido (FGTS)"
     },
     {
       "label": "FGTS Rescisório",
@@ -1344,7 +1344,7 @@
       "values": [
         0.025034
       ],
-      "glosa": "FGTS por rescisión laboral"
+      "glosa": "FGTS por rescisión"
     },
     {
       "label": "13º Salário Indenizado",
@@ -1364,7 +1364,7 @@
       "values": [
         0.019345
       ],
-      "glosa": "Vales de transporte"
+      "glosa": "Subsidio de transporte"
     },
     {
       "label": "Pis s/Folha",
@@ -1414,7 +1414,7 @@
       "values": [
         0.000603
       ],
-      "glosa": "Provisión INSS sobre vacaciones"
+      "glosa": "Provisión de seguridad social sobre vacaciones"
     },
     {
       "label": "Provisão FGTS Férias",
@@ -1434,7 +1434,7 @@
       "values": [
         0.001895
       ],
-      "glosa": "Provisión INSS sobre paga extraordinaria"
+      "glosa": "Provisión de seguridad social sobre paga extraordinaria"
     },
     {
       "label": "Provisão FGTS 13º Salário",
@@ -1454,7 +1454,7 @@
       "values": [
         0.000132
       ],
-      "glosa": "Reconocimientos médicos"
+      "glosa": "Exámenes médicos"
     },
     {
       "label": "Provisão PIS 13º Salário",
@@ -1484,7 +1484,7 @@
       "values": [
         0.0007
       ],
-      "glosa": "Dietas y asignaciones"
+      "glosa": "Dietas y asignaciones de transporte"
     },
     {
       "label": "Licença de Uso de Software",
@@ -1604,7 +1604,7 @@
       "values": [
         0.001817
       ],
-      "glosa": "Gastos de comidas"
+      "glosa": "Gastos de manutención y comidas"
     },
     {
       "label": "Material de Limpeza, Higiene, Copa, Cozinha",
@@ -1644,7 +1644,7 @@
       "values": [
         0.001885
       ],
-      "glosa": "Permisos de circulación vehicular"
+      "glosa": "Licencias e impuestos de vehículos"
     },
     {
       "label": "Locação de Equipamentos",
@@ -1684,7 +1684,7 @@
       "values": [
         0.000162
       ],
-      "glosa": "Gastos de aparcamiento"
+      "glosa": "Gastos de estacionamiento"
     },
     {
       "label": "Serviços Prestados p/ Terceiros",
@@ -1734,7 +1734,7 @@
       "values": [
         0.0021
       ],
-      "glosa": "Fotocopias, legalizaciones y compulsa de firmas"
+      "glosa": "Fotocopias, legalizaciones y firmas"
     },
     {
       "label": "Utensílios Copa/Cozinha",
@@ -1744,7 +1744,7 @@
       "values": [
         0.001405
       ],
-      "glosa": "Utensilios de cocina y comedor"
+      "glosa": "Enseres de cocina"
     },
     {
       "label": "Despesas c/ Eventos",
@@ -1764,7 +1764,7 @@
       "values": [
         0.000085
       ],
-      "glosa": "Gastos de transporte y fletes"
+      "glosa": "Fletes y transportes"
     },
     {
       "label": "Despesas c/ Seguro de Vida",
@@ -1784,7 +1784,7 @@
       "values": [
         0.00067
       ],
-      "glosa": "Gastos con entidades de prácticas (CIEE)"
+      "glosa": "Gastos de convenios de prácticas (CIEE)"
     },
     {
       "label": "Despesas c/ Estagiários",
@@ -1824,7 +1824,7 @@
       "values": [
         0.000028
       ],
-      "glosa": "Servicios de gestión de cobro"
+      "glosa": "Servicios de cobro"
     },
     {
       "label": "Materiais Esportivos",
@@ -1844,7 +1844,7 @@
       "values": [
         0.672592
       ],
-      "glosa": "Uniformes y equipaciones"
+      "glosa": "Uniformes"
     },
     {
       "label": "Medicamentos e Mat.Medicos e Cirurgicos",
@@ -1874,7 +1874,7 @@
       "values": [
         0.551405
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Alquileres"
     },
     {
       "label": "Bens de Valores Irrelevantes",
@@ -1924,7 +1924,7 @@
       "values": [
         0.00038
       ],
-      "glosa": "Lencería de cama, mesa, baño y enseres"
+      "glosa": "Enseres, lencería y blancos"
     },
     {
       "label": "Gas",
@@ -1944,7 +1944,7 @@
       "values": [
         0.005531
       ],
-      "glosa": "Mantenimiento y conservación de inmuebles"
+      "glosa": "Mantenimiento y conservación del inmueble"
     },
     {
       "label": "Internet",
@@ -2054,7 +2054,7 @@
       "values": [
         0.00112
       ],
-      "glosa": "Homenajes y atenciones"
+      "glosa": "Homenajes"
     },
     {
       "label": "Multas de Trânsito",
@@ -2094,7 +2094,7 @@
       "values": [
         0.000799
       ],
-      "glosa": "Gastos en obsequios"
+      "glosa": "Gastos de atenciones y obsequios"
     },
     {
       "label": "Contingências Trabalhistas",
@@ -2114,7 +2114,7 @@
       "values": [
         0.230547
       ],
-      "glosa": "Honorarios contables, legales y de auditoría"
+      "glosa": "Honorarios contables, jurídicos y de auditoría"
     },
     {
       "label": "Apoio Administrativo",
@@ -2154,7 +2154,7 @@
       "values": [
         0.00335
       ],
-      "glosa": "Multas del Tribunal de Justicia Deportiva (TJD)"
+      "glosa": "Multas TJD - Tribunal de Justicia Deportiva"
     },
     {
       "label": "ISS e Taxa Poder Polícia",
@@ -2174,7 +2174,7 @@
       "values": [
         0.011917
       ],
-      "glosa": "Multas, intereses y corrección monetaria"
+      "glosa": "Multas, intereses y actualización monetaria"
     },
     {
       "label": "Multas, Juros - Parcelamento ISS Retido",
@@ -2194,7 +2194,7 @@
       "values": [
         0.011125
       ],
-      "glosa": "Contribución sindical negocial"
+      "glosa": "Contribución negocial"
     },
     {
       "label": "Imposto de Renda s/Remessa ao Exterior",
@@ -2204,7 +2204,7 @@
       "values": [
         0.003383
       ],
-      "glosa": "Impuesto sobre la renta sobre remesas al exterior"
+      "glosa": "Impuesto a la renta sobre remesas al exterior"
     },
     {
       "label": "Impostos e Taxas Diversas",
@@ -2214,7 +2214,7 @@
       "values": [
         0.000684
       ],
-      "glosa": "Impuestos y tasas diversos"
+      "glosa": "Impuestos y tasas diversas"
     }
   ]
 }

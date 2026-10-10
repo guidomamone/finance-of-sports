@@ -3,24 +3,24 @@
   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2014-b.pdf",
   "club": "ferroviaria",
   "year": 2014,
-  "generatedAt": "2026-10-09T23:23:29.434Z",
+  "generatedAt": "2026-10-10T00:07:01.400Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
       "label": "Rendas de Jogos",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
         0.15099
       ],
-      "glosa": "Ingresos por partidos"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "Cotas de TV Camp Paulista Séria A-2",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
         0.135
       ],
@@ -30,7 +30,7 @@
       "label": "Venda de Atletas",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
         0.45
       ],
@@ -40,27 +40,27 @@
       "label": "Sócio Torcedor",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
         0.021055
       ],
-      "glosa": "Abonados / Socios"
+      "glosa": "Abonos de socios"
     },
     {
       "label": "Mercadorias c/Vendas",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
         0.054708
       ],
-      "glosa": "Ventas de mercancías"
+      "glosa": "Ventas de mercaderías"
     },
     {
       "label": "Patrocinios",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
         2.83474
       ],
@@ -70,17 +70,17 @@
       "label": "Contratos de Parcerias",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
         0.15
       ],
-      "glosa": "Contratos de colaboración"
+      "glosa": "Contratos de asociación"
     },
     {
       "label": "Publicidades",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
         0.491249
       ],
@@ -90,27 +90,17 @@
       "label": "Doações",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
         1.314316
       ],
       "glosa": "Donaciones"
     },
     {
-      "label": "= Receita Líquida:",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        5.545526
-      ],
-      "glosa": "= Ingresos netos:"
-    },
-    {
       "label": "Recuperação de Despesas",
       "lado": "revenue",
       "page": 4,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
         0.009106
       ],
@@ -120,7 +110,7 @@
       "label": "AVlso Prévio Descontado",
       "lado": "revenue",
       "page": 4,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
         0.0081
       ],
@@ -130,7 +120,7 @@
       "label": "Multa Contratual",
       "lado": "revenue",
       "page": 4,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
         0.000836
       ],
@@ -140,7 +130,7 @@
       "label": "Pis",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.007425
       ],
@@ -150,7 +140,7 @@
       "label": "Cofins",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.0342
       ],
@@ -160,7 +150,7 @@
       "label": "Pis",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.000903
       ],
@@ -170,7 +160,7 @@
       "label": "Cofins",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.004158
       ],
@@ -180,7 +170,7 @@
       "label": "Icms",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.009847
       ],
@@ -190,27 +180,27 @@
       "label": "Arbitragens",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.066673
       ],
-      "glosa": "Arbitrajes"
+      "glosa": "Gastos de arbitraje"
     },
     {
       "label": "Taxa de Policiamento",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.022718
       ],
-      "glosa": "Tasa policial"
+      "glosa": "Tasa de seguridad policial"
     },
     {
       "label": "Taxas Federações e Confederações",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.080286
       ],
@@ -220,7 +210,7 @@
       "label": "Segurança e Vigilancia",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.047088
       ],
@@ -230,27 +220,27 @@
       "label": "Inss s/Renda de Jogos",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.000318
       ],
-      "glosa": "INSS sobre ingresos de partidos"
+      "glosa": "Seguridad Social sobre taquilla"
     },
     {
       "label": "Inss s/Patrocinios",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.0484
       ],
-      "glosa": "INSS sobre patrocinios"
+      "glosa": "Seguridad Social sobre patrocinios"
     },
     {
       "label": "Ingressos",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.009412
       ],
@@ -260,7 +250,7 @@
       "label": "Manutenção, Conservação Estadio",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.025421
       ],
@@ -270,7 +260,7 @@
       "label": "Combustíveis e Lubrificantes",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.020423
       ],
@@ -280,27 +270,27 @@
       "label": "Inss s/Arbitragens",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.005359
       ],
-      "glosa": "INSS sobre arbitrajes"
+      "glosa": "Seguridad Social sobre arbitrajes"
     },
     {
       "label": "Exame Anti-Doping",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.026775
       ],
-      "glosa": "Control antidopaje"
+      "glosa": "Controles antidopaje"
     },
     {
       "label": "Serviços Prest p/Terceiros",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.692835
       ],
@@ -310,7 +300,7 @@
       "label": "Direito de Imagem",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         1.085904
       ],
@@ -320,37 +310,37 @@
       "label": "Locação de Estadio",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.039388
       ],
-      "glosa": "Alquiler de estadio"
+      "glosa": "Alquiler del estadio"
     },
     {
       "label": "Inss s/Cotas de TV",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.00675
       ],
-      "glosa": "INSS sobre derechos de TV"
+      "glosa": "Seguridad Social sobre derechos de TV"
     },
     {
       "label": "Inss/Seguro Torcedor FPF",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.008255
       ],
-      "glosa": "INSS / Seguro del aficionado FPF"
+      "glosa": "Seguridad Social / Seguro de aficionados FPF"
     },
     {
       "label": "Salarios e Ordenados",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         1.02087
       ],
@@ -360,17 +350,17 @@
       "label": "Férias Normais",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.111479
       ],
-      "glosa": "Vacaciones ordinarias"
+      "glosa": "Vacaciones"
     },
     {
       "label": "Férias Indenizadas",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.004019
       ],
@@ -380,17 +370,17 @@
       "label": "13º Salario",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.09096
       ],
-      "glosa": "Paga extraordinaria (13º salario)"
+      "glosa": "Paga extraordinaria"
     },
     {
       "label": "Aviso Prévio Indenizado",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.010368
       ],
@@ -400,37 +390,37 @@
       "label": "Inss",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.053465
       ],
-      "glosa": "INSS (Seguridad social)"
+      "glosa": "Seguridad Social"
     },
     {
       "label": "Fgts",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.092603
       ],
-      "glosa": "FGTS (Fondo de garantía)"
+      "glosa": "FGTS"
     },
     {
       "label": "Fgts Rescisório",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.003446
       ],
-      "glosa": "FGTS por despido"
+      "glosa": "FGTS indemnizatorio por despido"
     },
     {
       "label": "Premios e Gratificações",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.104625
       ],
@@ -440,7 +430,7 @@
       "label": "Academia",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.016219
       ],
@@ -450,7 +440,7 @@
       "label": "Agua Mineral",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.010569
       ],
@@ -460,7 +450,7 @@
       "label": "Alimentação",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.248847
       ],
@@ -470,7 +460,7 @@
       "label": "Despesas de Viagens",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.108073
       ],
@@ -480,17 +470,17 @@
       "label": "Vale Transporte",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.008247
       ],
-      "glosa": "Vales de transporte"
+      "glosa": "Subsidio de transporte"
     },
     {
       "label": "Indenizações Trabalhistas",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.179078
       ],
@@ -500,7 +490,7 @@
       "label": "Despesas de Hospedagem",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.109038
       ],
@@ -510,27 +500,27 @@
       "label": "Pis s/Folha",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.011433
       ],
-      "glosa": "PIS sobre nómina"
+      "glosa": "PIS sobre nóminas"
     },
     {
       "label": "Ajuda de Custo",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.085612
       ],
-      "glosa": "Dietas y asignaciones"
+      "glosa": "Dietas y asignaciones para gastos"
     },
     {
       "label": "Contingencias Trabalhistas",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.143289
       ],
@@ -540,19 +530,19 @@
       "label": "Compras Mercadorias a Prazo",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.038096
       ],
-      "glosa": "Compras de mercancías a crédito"
+      "glosa": "Compras de mercaderías a crédito"
     },
     {
       "label": "(-) Recuperação Cofins",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
-        0.002896
+        -0.002896
       ],
       "glosa": "(-) Recuperación de COFINS"
     },
@@ -560,9 +550,9 @@
       "label": "(-) Recuperação Pis",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
-        0.000619
+        -0.000619
       ],
       "glosa": "(-) Recuperación de PIS"
     },
@@ -570,19 +560,19 @@
       "label": "Custo das Mercadorias Vendidas",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.00579
       ],
-      "glosa": "Coste de las mercancías vendidas"
+      "glosa": "Coste de las mercaderías vendidas"
     },
     {
       "label": "(-) Recuperação de Icms",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
-        0.006857
+        -0.006857
       ],
       "glosa": "(-) Recuperación de ICMS"
     },
@@ -590,7 +580,7 @@
       "label": "Salarios e Ordenados",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.101669
       ],
@@ -600,47 +590,47 @@
       "label": "Férias Normais",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.014014
       ],
-      "glosa": "Vacaciones ordinarias"
+      "glosa": "Vacaciones"
     },
     {
       "label": "13º Salario",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.009415
       ],
-      "glosa": "Paga extraordinaria (13º salario)"
+      "glosa": "Paga extraordinaria"
     },
     {
       "label": "Inss",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.004376
       ],
-      "glosa": "INSS (Seguridad social)"
+      "glosa": "Seguridad Social"
     },
     {
       "label": "Fgts",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.009927
       ],
-      "glosa": "FGTS (Fondo de garantía)"
+      "glosa": "FGTS"
     },
     {
       "label": "Fgts Rescisorio",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.006719
       ],
@@ -650,27 +640,27 @@
       "label": "Vale Transporte",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.001038
       ],
-      "glosa": "Vales de transporte"
+      "glosa": "Subsidio de transporte"
     },
     {
       "label": "Pis s/Folha",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.001241
       ],
-      "glosa": "PIS sobre nómina"
+      "glosa": "PIS sobre nóminas"
     },
     {
       "label": "Salarios e Ordenados",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.013303
       ],
@@ -680,67 +670,67 @@
       "label": "Férias Normais",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.001912
       ],
-      "glosa": "Vacaciones ordinarias"
+      "glosa": "Vacaciones"
     },
     {
       "label": "13º Salario",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.001386
       ],
-      "glosa": "Paga extraordinaria (13º salario)"
+      "glosa": "Paga extraordinaria"
     },
     {
       "label": "Inss",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.005668
       ],
-      "glosa": "INSS (Seguridad social)"
+      "glosa": "Seguridad Social"
     },
     {
       "label": "Fgts",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.001245
       ],
-      "glosa": "FGTS (Fondo de garantía)"
+      "glosa": "FGTS"
     },
     {
       "label": "Despesas com Ativo Fixo",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.003662
       ],
-      "glosa": "Gastos de activo fijo"
+      "glosa": "Gastos de inmovilizado material"
     },
     {
       "label": "Assessoria Contábil/Tributaria/Advocatic",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.079033
       ],
-      "glosa": "Asesoría contable, fiscal y jurídica"
+      "glosa": "Asesoría contable, tributaria y legal"
     },
     {
       "label": "Contingencias Cíveis",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.185211
       ],
@@ -750,17 +740,17 @@
       "label": "Contingencias Tributarias",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.371405
       ],
-      "glosa": "Contingencias fiscales"
+      "glosa": "Contingencias tributarias"
     },
     {
       "label": "Despesas pelo uso da Marca",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.051701
       ],
@@ -770,7 +760,7 @@
       "label": "Despesas Indedutíveis",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.0168
       ],
@@ -780,7 +770,7 @@
       "label": "Despesas de Viagens",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.001544
       ],
@@ -790,37 +780,27 @@
       "label": "Medicamentos e Mat Medicos e Cirurgicos",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.000338
       ],
-      "glosa": "Medicamentos y material médico y quirúrgico"
+      "glosa": "Medicamentos y material médico-quirúrgico"
     },
     {
       "label": "Servipos prestados p/Terceiros",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.002819
       ],
       "glosa": "Servicios prestados por terceros"
     },
     {
-      "label": "Total:",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        5.516188
-      ],
-      "glosa": "Total:"
-    },
-    {
       "label": "Aluguel",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.03
       ],
@@ -830,17 +810,17 @@
       "label": "Depreciações",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.033747
       ],
-      "glosa": "Amortizaciones"
+      "glosa": "Amortizaciones y depreciaciones"
     },
     {
       "label": "Despesas Legais e Judiciais",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.060074
       ],
@@ -850,7 +830,7 @@
       "label": "Despesas de Viagens",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.000448
       ],
@@ -860,7 +840,7 @@
       "label": "Impostos e Taxas",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.001591
       ],
@@ -870,7 +850,7 @@
       "label": "Manutenção, Conservação de Bens",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.025367
       ],
@@ -880,7 +860,7 @@
       "label": "Publicações",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.00024
       ],
@@ -890,7 +870,7 @@
       "label": "Combustíveis",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.046114
       ],
@@ -900,7 +880,7 @@
       "label": "Propaganda e Publicidade",
       "lado": "expense",
       "page": 2,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.032493
       ],
@@ -910,7 +890,7 @@
       "label": "Provedor de Internet",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.006102
       ],
@@ -920,7 +900,7 @@
       "label": "Material de Limpeza e Higiene",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.000057
       ],
@@ -930,7 +910,7 @@
       "label": "Condominio",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.004508
       ],
@@ -940,7 +920,7 @@
       "label": "Materiais Esportivos",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.000387
       ],
@@ -950,7 +930,7 @@
       "label": "Materias de Limpeza e Higiene",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.001977
       ],
@@ -960,27 +940,27 @@
       "label": "Medicamentos e Mat.Medicos e Cirurgicos",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.073933
       ],
-      "glosa": "Medicamentos y material médico y quirúrgico"
+      "glosa": "Medicamentos y material médico-quirúrgico"
     },
     {
       "label": "Material de Consumo",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.001469
       ],
-      "glosa": "Material de consumo"
+      "glosa": "Materiales de consumo"
     },
     {
       "label": "Agua",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.025461
       ],
@@ -990,7 +970,7 @@
       "label": "Aluguel",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.313082
       ],
@@ -1000,7 +980,7 @@
       "label": "Alimentação",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.00018
       ],
@@ -1010,7 +990,7 @@
       "label": "Bens de Valores Irrelevantes",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.003483
       ],
@@ -1020,7 +1000,7 @@
       "label": "Energia Eletrica",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.012373
       ],
@@ -1030,7 +1010,7 @@
       "label": "Impostos e Taxas",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.001945
       ],
@@ -1040,7 +1020,7 @@
       "label": "Manutenção e Conservação de Bens",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.065424
       ],
@@ -1050,17 +1030,17 @@
       "label": "Material de Consumo",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.000654
       ],
-      "glosa": "Material de consumo"
+      "glosa": "Materiales de consumo"
     },
     {
       "label": "Matrial de Limpeza e Higiene",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.000956
       ],
@@ -1070,17 +1050,17 @@
       "label": "Utensilios, Guarn.Cama, Mesa e Banho",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.006503
       ],
-      "glosa": "Utensilios y ropa de cama, mesa y baño"
+      "glosa": "Utensilios, lencería y menaje"
     },
     {
       "label": "Gas",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.005376
       ],
@@ -1090,7 +1070,7 @@
       "label": "Multas",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.00312
       ],
@@ -1100,7 +1080,7 @@
       "label": "Multas",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.000062
       ],
@@ -1110,7 +1090,7 @@
       "label": "Agua",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.001031
       ],
@@ -1120,7 +1100,7 @@
       "label": "Energia Eletrica",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.001924
       ],
@@ -1130,7 +1110,7 @@
       "label": "Telefone",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.018536
       ],
@@ -1140,7 +1120,7 @@
       "label": "Seguro de Vida",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.006557
       ],
@@ -1150,17 +1130,17 @@
       "label": "Impressos e Materiais de Escritorio",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.004155
       ],
-      "glosa": "Impresos y material de oficina"
+      "glosa": "Material de oficina e impresos"
     },
     {
       "label": "Correios",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.002604
       ],
@@ -1170,7 +1150,7 @@
       "label": "Bens de Valores Irrelevantes",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.000501
       ],
@@ -1180,17 +1160,17 @@
       "label": "Custas e Emolumentos",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.019278
       ],
-      "glosa": "Costas y aranceles"
+      "glosa": "Costas y aranceles notariales"
     },
     {
       "label": "Telefone",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.002552
       ],
@@ -1200,17 +1180,17 @@
       "label": "Impressos e Matriais de Escritorio",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.000277
       ],
-      "glosa": "Impresos y material de oficina"
+      "glosa": "Material de oficina e impresos"
     },
     {
       "label": "Custo Formação Atleta Profissional",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.144461
       ],
@@ -1220,7 +1200,7 @@
       "label": "Despesas Bancarias",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.011381
       ],
@@ -1230,7 +1210,7 @@
       "label": "Encargos Financeiros",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.10511
       ],
@@ -1240,7 +1220,7 @@
       "label": "Comissão s/Cartão",
       "lado": "expense",
       "page": 3,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.002137
       ],

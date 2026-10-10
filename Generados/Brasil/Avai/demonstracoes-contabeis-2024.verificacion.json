@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2024.pdf",
  "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2024.md",
- "generado": "2026-10-09T23:57:47.831Z",
+ "generado": "2026-10-10T00:07:01.111Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "avai-br",
  "year": 2024,
  "escala": {
   "valor": "miles",
@@ -42,14 +42,14 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"Receita LFU\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Receceita negociação Atletas Profissionais\" no suma el renglón (16.948 contra 8.474, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Deságio Recuperação Judicial\" no suma el renglón (39.376 contra 19.688, sumando sus renglones): quedó el renglón del estado",
-  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Receita LFU\"): aceptar, en demonstracoes-contabeis-2024.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (cuadro-duplicado, \"Receita LFU\"): aceptar, en demonstracoes-contabeis-2024.pdf",
   "duda de extraer que no afecta la carga: Diferencia de 2.000 en el año anterior entre L222/L1359 (92.510) y L1438 (90.510).",
   "duda de extraer que no afecta la carga: L229 (34.959) = Despesa Financeira L1503 (2.755) + Atualização L1510 (32.204), pero la nota la presenta fuera del subtotal Despesa Financeira."
  ],

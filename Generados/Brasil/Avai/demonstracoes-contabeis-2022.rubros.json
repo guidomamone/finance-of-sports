@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2022.md",
   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2022.pdf",
-  "club": "avai",
+  "club": "avai-br",
   "year": 2022,
-  "generatedAt": "2026-10-09T23:23:27.793Z",
+  "generatedAt": "2026-10-10T00:07:00.975Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         1.663
       ],
-      "glosa": "Asignaciones y dietas"
+      "glosa": "Dietas y asignaciones"
     },
     {
       "label": "Viagens e Hospedagem",
@@ -64,7 +64,7 @@
       "values": [
         0.401
       ],
-      "glosa": "Alquiler y mantenimiento de campos deportivos"
+      "glosa": "Alquiler y mantenimiento de campos"
     },
     {
       "label": "Serviços de Terceiros",
@@ -94,7 +94,7 @@
       "values": [
         2.166
       ],
-      "glosa": "Amortización del coste de futbolistas profesionales"
+      "glosa": "Amortización de costes de jugadores profesionales"
     },
     {
       "label": "Seguros/ Plano de Saúde",
@@ -114,7 +114,7 @@
       "values": [
         7.004
       ],
-      "glosa": "Derechos de uso de imagen"
+      "glosa": "Derechos de imagen"
     },
     {
       "label": "Material Esportivo - Patrocínio",
@@ -134,7 +134,7 @@
       "values": [
         0.904
       ],
-      "glosa": "Liquidación de partidos y taquilla"
+      "glosa": "Liquidaciones de taquilla de partidos"
     },
     {
       "label": "Taxa de Policiamento",
@@ -144,7 +144,7 @@
       "values": [
         0.334
       ],
-      "glosa": "Tasa de seguridad policial"
+      "glosa": "Tasa de servicios policiales"
     },
     {
       "label": "Despesas com jogo",
@@ -154,7 +154,7 @@
       "values": [
         0.448
       ],
-      "glosa": "Gastos de organización de partidos"
+      "glosa": "Gastos de partido"
     },
     {
       "label": "Alimentação",
@@ -164,7 +164,7 @@
       "values": [
         1.088
       ],
-      "glosa": "Alimentación y manutención"
+      "glosa": "Alimentación"
     },
     {
       "label": "Premiação Campeonatos",
@@ -184,7 +184,7 @@
       "values": [
         2.212
       ],
-      "glosa": "Derechos de arena"
+      "glosa": "Derecho de arena"
     },
     {
       "label": "Empréstimos de Atletas",
@@ -194,7 +194,7 @@
       "values": [
         0.4
       ],
-      "glosa": "Cesiones de futbolistas"
+      "glosa": "Cesiones de jugadores"
     },
     {
       "label": "Intermediação e Negociação de Atletas",
@@ -204,7 +204,7 @@
       "values": [
         3.395
       ],
-      "glosa": "Intermediación y negociación de futbolistas"
+      "glosa": "Intermediación y negociación de jugadores"
     },
     {
       "label": "Materiais e serviços diversos",
@@ -234,7 +234,7 @@
       "values": [
         3.882
       ],
-      "glosa": "Pérdidas por rescisión de futbolistas"
+      "glosa": "Pérdidas por rescisión de jugadores"
     },
     {
       "label": "Alimentação",
@@ -244,7 +244,7 @@
       "values": [
         0.954
       ],
-      "glosa": "Alimentación y manutención"
+      "glosa": "Alimentación"
     },
     {
       "label": "Aluguéis",
@@ -304,7 +304,7 @@
       "values": [
         0.854
       ],
-      "glosa": "Provisión por insolvencias"
+      "glosa": "Provisión para insolvencias"
     },
     {
       "label": "Plano de Saúde",

@@ -1,0 +1,223 @@
+{
+ "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2021.md",
+ "generatedAt": "2026-10-10T00:14:20.371Z",
+ "rubrosHuella": "ab82b8c9e2574a1f438c73b00d48fa905bb2bdd8",
+ "rubros": [
+  {
+   "label": "RECEITAS DIVERSAS",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) DESPESAS COM VENDAS EM GERAL",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "(-) CUSTOS GERAIS",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "RECEITA PATROCÍNIO E MARKETING",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "RECEITA COM DIREITOS DE TRANSMISSÃO E PREMIAÇÕES",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "(-) PROVISÕES E CONTIGÊNCIAS",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8200000000000001
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "(-) DEDUÇÕES DA RECEITA BRUTA",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "(-) DESPESAS COM PESSOAL",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "wages_squad",
+     0.72
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "(-) OUTRAS DESPESAS",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1014
+  }
+ ]
+}

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2016.pdf",
   "club": "ferroviaria",
   "year": 2016,
-  "generatedAt": "2026-10-09T23:23:29.573Z",
+  "generatedAt": "2026-10-10T00:07:01.514Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         2.885
       ],
-      "glosa": "Derechos de TV – Paulista Serie A-2"
+      "glosa": "Derechos de televisión – Paulista Serie A-2"
     },
     {
       "label": "Sócio Torcedor",
@@ -34,7 +34,7 @@
       "values": [
         0.571909
       ],
-      "glosa": "Abonados / Socios hinchas"
+      "glosa": "Socios abonados"
     },
     {
       "label": "Venda de Atletas",
@@ -44,7 +44,7 @@
       "values": [
         1.943355
       ],
-      "glosa": "Venta de futbolistas"
+      "glosa": "Venta de deportistas"
     },
     {
       "label": "Patrocínios",
@@ -57,16 +57,6 @@
       "glosa": "Patrocinios"
     },
     {
-      "label": "Publicidades",
-      "lado": "revenue",
-      "page": 22,
-      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
-      "values": [
-        0.265
-      ],
-      "glosa": "Publicidad"
-    },
-    {
       "label": "Outras",
       "lado": "revenue",
       "page": 22,
@@ -77,54 +67,34 @@
       "glosa": "Otras"
     },
     {
+      "label": "(-) Deduções da Receita Bruta",
+      "lado": "revenue",
+      "page": 4,
+      "section": "ajuste manual",
+      "values": [
+        -0.010553
+      ],
+      "glosa": "(-) Deducciones de los ingresos brutos"
+    },
+    {
       "label": "Vendas Mercadorias",
       "lado": "revenue",
       "page": 22,
-      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "section": "ajuste manual",
       "values": [
         0.038727
       ],
-      "glosa": "Venta de mercancías"
+      "glosa": "Venta de mercaderías"
     },
     {
-      "label": "PIS",
+      "label": "Publicidades",
       "lado": "revenue",
       "page": 22,
-      "section": "nota que desglosa \"(-) Deduções da Receita Bruta\"",
+      "section": "ajuste manual",
       "values": [
-        0.000639
+        0.265
       ],
-      "glosa": "PIS"
-    },
-    {
-      "label": "COFINS",
-      "lado": "revenue",
-      "page": 22,
-      "section": "nota que desglosa \"(-) Deduções da Receita Bruta\"",
-      "values": [
-        0.002943
-      ],
-      "glosa": "COFINS"
-    },
-    {
-      "label": "ICMS",
-      "lado": "revenue",
-      "page": 22,
-      "section": "nota que desglosa \"(-) Deduções da Receita Bruta\"",
-      "values": [
-        0.006971
-      ],
-      "glosa": "ICMS"
-    },
-    {
-      "label": "RECEITA LÍQUIDA",
-      "lado": "revenue",
-      "page": 4,
-      "section": "estado",
-      "values": [
-        9.211197
-      ],
-      "glosa": "INGRESOS NETOS"
+      "glosa": "Publicidad"
     },
     {
       "label": "Direito de Imagem",
@@ -194,7 +164,7 @@
       "values": [
         0.269421
       ],
-      "glosa": "Gastos de alojamiento"
+      "glosa": "Gastos de hospedaje"
     },
     {
       "label": "Taxas Federações e Confederações",
@@ -214,7 +184,7 @@
       "values": [
         0.113268
       ],
-      "glosa": "FGTS"
+      "glosa": "FGTS (Fondo de garantía laboral)"
     },
     {
       "label": "13 Salário",
@@ -224,7 +194,7 @@
       "values": [
         0.111123
       ],
-      "glosa": "Paga extraordinaria / Decimotercer sueldo"
+      "glosa": "Paga extraordinaria (13.° salario)"
     },
     {
       "label": "Despesas com Viagens",
@@ -234,7 +204,7 @@
       "values": [
         0.197051
       ],
-      "glosa": "Gastos de viaje"
+      "glosa": "Gastos de viajes"
     },
     {
       "label": "Arbitragens",
@@ -264,7 +234,7 @@
       "values": [
         0.070132
       ],
-      "glosa": "INSS"
+      "glosa": "Seguridad Social (INSS)"
     },
     {
       "label": "INSS sobre Cotas de Patrocínio",
@@ -274,7 +244,7 @@
       "values": [
         0.271376
       ],
-      "glosa": "INSS sobre cuotas de patrocinio"
+      "glosa": "Seguridad Social (INSS) sobre cuotas de patrocinio"
     },
     {
       "label": "Indenizações Trabalhistas",
@@ -324,7 +294,7 @@
       "values": [
         0.15524
       ],
-      "glosa": "Tasa policial"
+      "glosa": "Tasa de vigilancia policial"
     },
     {
       "label": "Provisão Contingências Trabalhistas",
@@ -364,7 +334,7 @@
       "values": [
         0.04141
       ],
-      "glosa": "Amortizaciones y depreciaciones"
+      "glosa": "Amortizaciones"
     },
     {
       "label": "Despesas de Viagens",
@@ -374,7 +344,7 @@
       "values": [
         0.027217
       ],
-      "glosa": "Gastos de viaje"
+      "glosa": "Gastos de viajes"
     },
     {
       "label": "Impostos e Taxas",
@@ -434,7 +404,7 @@
       "values": [
         0.008139
       ],
-      "glosa": "Costas y aranceles"
+      "glosa": "Costas y emolumentos"
     },
     {
       "label": "Água",
@@ -504,7 +474,7 @@
       "values": [
         0.278368
       ],
-      "glosa": "Asesoría contable / tributaria / jurídica"
+      "glosa": "Asesoría contable, tributaria y legal"
     },
     {
       "label": "Despesas Indedutíveis",
@@ -544,7 +514,7 @@
       "values": [
         0.025881
       ],
-      "glosa": "Gastos por tarjetas de crédito"
+      "glosa": "Gastos por comisiones de tarjetas de crédito"
     },
     {
       "label": "Serviços Prestados por terceiros",
@@ -574,7 +544,7 @@
       "values": [
         0.003329
       ],
-      "glosa": "Arbitrajes e INSS"
+      "glosa": "Arbitrajes y Seguridad Social (INSS)"
     },
     {
       "label": "Ajuda de Custo",
@@ -584,7 +554,7 @@
       "values": [
         0.02611
       ],
-      "glosa": "Dietas y asignaciones para gastos"
+      "glosa": "Dietas y asignaciones de gastos"
     },
     {
       "label": "Alimentação",
@@ -604,7 +574,7 @@
       "values": [
         0.005226
       ],
-      "glosa": "Gastos de comunidad / Condominio"
+      "glosa": "Gastos de comunidad"
     },
     {
       "label": "Salários e Ordenados",
@@ -634,7 +604,7 @@
       "values": [
         0.033392
       ],
-      "glosa": "FGTS"
+      "glosa": "FGTS (Fondo de garantía laboral)"
     },
     {
       "label": "13 Salário",
@@ -644,7 +614,7 @@
       "values": [
         0.037244
       ],
-      "glosa": "Paga extraordinaria / Decimotercer sueldo"
+      "glosa": "Paga extraordinaria (13.° salario)"
     },
     {
       "label": "Inss",
@@ -654,7 +624,7 @@
       "values": [
         0.02095
       ],
-      "glosa": "INSS"
+      "glosa": "Seguridad Social (INSS)"
     },
     {
       "label": "Vale Transporte",
@@ -834,7 +804,7 @@
       "values": [
         0.064879
       ],
-      "glosa": "Utensilios, ajuar, ropa de cama, mesa y baño"
+      "glosa": "Utensilios, menaje, ropa de cama, mesa y baño"
     },
     {
       "label": "Impostos / Taxas/Contribuições",
@@ -844,7 +814,7 @@
       "values": [
         0.003224
       ],
-      "glosa": "Impuestos / Tasas / Contribuciones"
+      "glosa": "Impuestos, tasas y contribuciones"
     }
   ]
 }

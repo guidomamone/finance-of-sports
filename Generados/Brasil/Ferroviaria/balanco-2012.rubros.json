@@ -3,44 +3,34 @@
   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2012.pdf",
   "club": "ferroviaria",
   "year": 2012,
-  "generatedAt": "2026-10-09T23:23:29.317Z",
+  "generatedAt": "2026-10-10T00:07:01.284Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
-    {
-      "label": "RECEITAS OPERACIONAIS",
-      "lado": "revenue",
-      "page": 6,
-      "section": "estado",
-      "values": [
-        4.262002
-      ],
-      "glosa": "INGRESOS DE EXPLOTACIÓN"
-    },
     {
       "label": "Renda de jogos",
       "lado": "revenue",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.528637
       ],
-      "glosa": "Recaudación de partidos"
+      "glosa": "Ingresos por partidos"
     },
     {
       "label": "Venda de atletas",
       "lado": "revenue",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.217007
       ],
-      "glosa": "Traspaso de jugadores"
+      "glosa": "Venta de jugadores"
     },
     {
       "label": "Cotas de TV Campeonato Paulista Série A-2",
       "lado": "revenue",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.106
       ],
@@ -50,27 +40,17 @@
       "label": "Doação de Materiais esportivos",
       "lado": "revenue",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.067626
       ],
       "glosa": "Donación de material deportivo"
     },
     {
-      "label": "Sócio torcedor",
-      "lado": "revenue",
-      "page": 6,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Socios abonados"
-    },
-    {
       "label": "Vendas líquidas de produtos",
       "lado": "revenue",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.050868
       ],
@@ -80,7 +60,7 @@
       "label": "Patrocínios",
       "lado": "revenue",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         1.061
       ],
@@ -90,7 +70,7 @@
       "label": "Recuperação de despesas",
       "lado": "revenue",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.229608
       ],
@@ -100,17 +80,17 @@
       "label": "Contratos de parcerias",
       "lado": "revenue",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.909721
       ],
-      "glosa": "Contratos de colaboración"
+      "glosa": "Contratos de asociación"
     },
     {
       "label": "Com doação",
       "lado": "revenue",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         1
       ],
@@ -120,7 +100,7 @@
       "label": "Publicidades",
       "lado": "revenue",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.105254
       ],
@@ -130,7 +110,7 @@
       "label": "Aviso prévio descontado",
       "lado": "revenue",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.0004
       ],
@@ -140,87 +120,37 @@
       "label": "deduções das receitas",
       "lado": "revenue",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        0.014119
+        -0.014119
       ],
       "glosa": "Deducciones de los ingresos"
-    },
-    {
-      "label": "Com atividade esportiva - Profissional",
-      "lado": "expense",
-      "page": 6,
-      "section": "estado",
-      "values": [
-        1.834031
-      ],
-      "glosa": "Por actividad deportiva - Profesional"
-    },
-    {
-      "label": "Com pessoal - Atletas Profissionais",
-      "lado": "expense",
-      "page": 6,
-      "section": "estado",
-      "values": [
-        1.406851
-      ],
-      "glosa": "Por personal - Futbolistas profesionales"
-    },
-    {
-      "label": "Com mercadorias",
-      "lado": "expense",
-      "page": 6,
-      "section": "estado",
-      "values": [
-        0.032323
-      ],
-      "glosa": "Por mercancías"
-    },
-    {
-      "label": "CUSTOS-Formação de Atletas",
-      "lado": "expense",
-      "page": 6,
-      "section": "estado",
-      "values": [
-        0.096035
-      ],
-      "glosa": "COSTOS - Formación de deportistas"
-    },
-    {
-      "label": "DESPESAS OPERACIONAIS",
-      "lado": "expense",
-      "page": 6,
-      "section": "estado",
-      "values": [
-        1.101163
-      ],
-      "glosa": "GASTOS DE EXPLOTACIÓN"
     },
     {
       "label": "Gerais e administrativas",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.360339
       ],
-      "glosa": "Generales y administrativos"
+      "glosa": "Generales y administrativas"
     },
     {
       "label": "Depreciações e amortizações",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.385642
       ],
-      "glosa": "Amortizaciones y depreciaciones"
+      "glosa": "Depreciaciones y amortizaciones"
     },
     {
       "label": "Pessoal",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.136093
       ],
@@ -230,7 +160,7 @@
       "label": "Serviços de terceiros",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.051021
       ],
@@ -240,11 +170,51 @@
       "label": "Tributárias",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.014422
       ],
-      "glosa": "Tributarios"
+      "glosa": "Tributarias"
+    },
+    {
+      "label": "Com atividade esportiva - Profissional",
+      "lado": "expense",
+      "page": 6,
+      "section": "ajuste manual",
+      "values": [
+        1.834031
+      ],
+      "glosa": "Por actividad deportiva - Profesional"
+    },
+    {
+      "label": "Com pessoal - Atletas Profissionais",
+      "lado": "expense",
+      "page": 6,
+      "section": "ajuste manual",
+      "values": [
+        1.406851
+      ],
+      "glosa": "Por personal - Jugadores profesionales"
+    },
+    {
+      "label": "Com mercadorias",
+      "lado": "expense",
+      "page": 6,
+      "section": "ajuste manual",
+      "values": [
+        0.032323
+      ],
+      "glosa": "Por mercaderías"
+    },
+    {
+      "label": "CUSTOS-Formação de Atletas",
+      "lado": "expense",
+      "page": 6,
+      "section": "ajuste manual",
+      "values": [
+        0.096035
+      ],
+      "glosa": "COSTOS - Formación de deportistas"
     }
   ]
 }

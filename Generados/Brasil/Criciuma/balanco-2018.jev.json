@@ -1,0 +1,375 @@
+{
+ "md": "Clubes/Brasil/Criciuma/balanco-2018.md",
+ "generatedAt": "2026-10-10T00:14:07.559Z",
+ "rubrosHuella": "acf887510525d470e563edb22c88bb342210f7ba",
+ "rubros": [
+  {
+   "label": "Receita Loteria Esportiva/Timemania",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Venda de mercadorias",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Receita de subvenções",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Receita com mensalidades de sócios",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Receita com transmissão televisíveis",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Receita com jogos",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Receita com patrocínios",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Receita com negociação de atletas",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Receitas de royalties",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.65
+    ],
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "broadcasting",
+     0.01
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Departamento Futebol de Base",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Departamento Administrativo",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 988
+  },
+  {
+   "label": "Demais Receitas",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Departamento Futebol Profissional",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.99
+    ],
+    [
+     "wages_squad",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Departamento de Patrimônio",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Receitas de publicidades",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1025
+  }
+ ]
+}

@@ -1,0 +1,1202 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2014-b.md",
+ "generatedAt": "2026-10-10T00:14:12.967Z",
+ "rubrosHuella": "96e9709d500673c5e5b507f33647d1b122bd5e9e",
+ "rubros": [
+  {
+   "label": "Rendas de Jogos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Cotas de TV Camp Paulista Séria A-2",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Venda de Atletas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sócio Torcedor",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "member_dues",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Mercadorias c/Vendas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocinios",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Contratos de Parcerias",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidades",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Doações",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Recuperação de Despesas",
+   "lado": "revenue",
+   "page": 4,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Multa Contratual",
+   "lado": "revenue",
+   "page": 4,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Pis",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Cofins",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Icms",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Arbitragens",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Taxa de Policiamento",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Taxas Federações e Confederações",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Segurança e Vigilancia",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Inss s/Renda de Jogos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingressos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Combustíveis e Lubrificantes",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Inss s/Arbitragens",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Exame Anti-Doping",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços Prest p/Terceiros",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de Imagem",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Locação de Estadio",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Salarios e Ordenados",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Férias Normais",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Férias Indenizadas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "13º Salario",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Aviso Prévio Indenizado",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.32,
+   "desdeCache": true
+  },
+  {
+   "label": "Inss",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Fgts",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Fgts Rescisório",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Premios e Gratificações",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Academia",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Agua Mineral",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Alimentação",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas de Viagens",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Vale Transporte",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Indenizações Trabalhistas",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas de Hospedagem",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Pis s/Folha",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ajuda de Custo",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Compras Mercadorias a Prazo",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Recuperação Cofins",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Recuperação Pis",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Inss/Seguro Torcedor FPF",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.52
+    ],
+    [
+     "lump_football_operations_expense",
+     0.35
+    ],
+    [
+     "wages_squad",
+     0.08
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Fgts Rescisorio",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com Ativo Fixo",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "depreciation",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Inss s/Patrocinios",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Manutenção, Conservação Estadio",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Contingencias Tributarias",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Contingencias Trabalhistas",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "exceptional_items",
+     0.11
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Custo das Mercadorias Vendidas",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Inss s/Cotas de TV",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.63
+    ],
+    [
+     "lump_football_operations_expense",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0.1
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "AVlso Prévio Descontado",
+   "lado": "revenue",
+   "page": 4,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.060000000000000005
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 839
+  },
+  {
+   "label": "Aluguel",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciações",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Recuperação de Icms",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1075
+  },
+  {
+   "label": "Impostos e Taxas",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Manutenção, Conservação de Bens",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Assessoria Contábil/Tributaria/Advocatic",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Combustíveis",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Propaganda e Publicidade",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Provedor de Internet",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Contingencias Cíveis",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.33
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Condominio",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Materiais Esportivos",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Materias de Limpeza e Higiene",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Medicamentos e Mat.Medicos e Cirurgicos",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Material de Consumo",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Agua",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Bens de Valores Irrelevantes",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Energia Eletrica",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Manutenção e Conservação de Bens",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Legais e Judiciais",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Despesas Indedutíveis",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "exceptional_items",
+     0.49
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Gas",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Multas",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Telefone",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguro de Vida",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Impressos e Materiais de Escritorio",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Correios",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Custas e Emolumentos",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Impressos e Matriais de Escritorio",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Medicamentos e Mat Medicos e Cirurgicos",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Despesas pelo uso da Marca",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "other_amortisation",
+     0.1
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Servipos prestados p/Terceiros",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Publicações",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 856
+  },
+  {
+   "label": "Matrial de Limpeza e Higiene",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Material de Limpeza e Higiene",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Custo Formação Atleta Profissional",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "player_amortisation",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "player_amortisation",
+     0.52
+    ],
+    [
+     "youth_other_sports_expense",
+     0.24000000000000002
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Utensilios, Guarn.Cama, Mesa e Banho",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "match_organisation_expense",
+     0.06
+    ]
+   ],
+   "tokens": 815
+  },
+  {
+   "label": "Encargos Financeiros",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "Despesas Bancarias",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Comissão s/Cartão",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1020
+  }
+ ]
+}

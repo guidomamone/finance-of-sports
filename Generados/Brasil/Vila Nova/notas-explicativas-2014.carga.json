@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
- "generado": "2026-10-09T23:38:38.092Z",
+ "generado": "2026-10-10T00:15:54.905Z",
  "frena": [
   {
    "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
+   "motivo": "todavía no se puede categorizar: la etapa 6 cerró, pero la etapa 4 dejó hasta 5 número(s) sin confirmar (Generados/Brasil/Vila Nova/notas-explicativas-2014.validacion.json, \"noConfirmados\"; ver to-do 160)"
   },
   {
    "etapa": "categorizacion",

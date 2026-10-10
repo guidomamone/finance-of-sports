@@ -1,0 +1,107 @@
+{
+ "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2024.md",
+ "generatedAt": "2026-10-10T00:14:20.943Z",
+ "rubrosHuella": "d95bcc5374469bdb3f415d3c5b22c528313a54b2",
+ "rubros": [
+  {
+   "label": "RECEITAS DIVERSAS",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) DEDUÇÕES DA RECEITA BRUTA",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) DESPESAS COM PESSOAL",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) PROVISÕES E CONTIGÊNCIAS",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) OUTRAS DESPESAS",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "RECEITA COM DIREITOS DE TRANSMISSÃO, PARTICIPAÇÃO E PREMIAÇÃO",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "broadcasting",
+     0.9
+    ],
+    [
+     "competition_bonus",
+     0.06
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "(-) DESPESAS COM ATIVIDADE EM GERAL",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.46
+    ],
+    [
+     "match_organisation_expense",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.19
+    ]
+   ],
+   "tokens": 1041
+  }
+ ]
+}

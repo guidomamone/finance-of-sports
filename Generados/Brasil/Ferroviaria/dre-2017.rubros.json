@@ -3,14 +3,14 @@
   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
   "club": "ferroviaria",
   "year": 2017,
-  "generatedAt": "2026-10-09T23:23:29.657Z",
+  "generatedAt": "2026-10-10T00:07:01.593Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
       "label": "Receitas Brutas",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
         8.67695
       ],
@@ -20,67 +20,57 @@
       "label": "(-) Deduções",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
-        0.087335
+        -0.087335
       ],
       "glosa": "(-) Deducciones"
-    },
-    {
-      "label": "= Receita Líquida",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        8.589615
-      ],
-      "glosa": "= Ingresos netos"
-    },
-    {
-      "label": "(+) Outras Receitas Operacionais",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0.371664
-      ],
-      "glosa": "(+) Otros ingresos operativos"
     },
     {
       "label": "(+) Outras Receitas",
       "lado": "revenue",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con C)",
       "values": [
         0.014003
       ],
       "glosa": "(+) Otros ingresos"
     },
     {
+      "label": "(+) Outras Receitas Operacionais",
+      "lado": "revenue",
+      "page": 1,
+      "section": "ajuste manual",
+      "values": [
+        0.371654
+      ],
+      "glosa": "(+) Otros ingresos de explotación"
+    },
+    {
       "label": "(-) Custos",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         7.802237
       ],
-      "glosa": "(-) Costos"
+      "glosa": "(-) Costes"
     },
     {
       "label": "(-) Despesas Administrativas",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         2.233261
       ],
-      "glosa": "(-) Gastos administrativos"
+      "glosa": "(-) Gastos de administración"
     },
     {
       "label": "(-) Despesas Gerais",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.05518
       ],
@@ -90,7 +80,7 @@
       "label": "(-) Despesas Tributárias",
       "lado": "expense",
       "page": 1,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja con D)",
       "values": [
         0.013243
       ],

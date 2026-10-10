@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2016.pdf",
  "md": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2016.md",
- "generado": "2026-10-10T00:01:02.233Z",
+ "generado": "2026-10-10T00:07:02.091Z",
  "estado": "ok",
  "clubId": null,
  "year": 2016,
@@ -104,8 +104,7 @@
   "ajuste manual: fila \"Ajustes de Exercícios Anteriores\" (gasto) 343.729,73 (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): el renglón L75 no llegó a las filas extraídas; está dentro del TOTAL DAS DESPESAS impreso: 9.801.794,10 + 4.783.520,98 + 185.637,84 + 535.154,62 + 343.729,73 + 13.946,18 = 15.663.783,45; + financiera 33.202,07 = 15.696.985,52 (L77))",
   "ajuste manual: fila \"Receitas Financeiras\" (financiero) 30.508,57, en lugar de \"Receitas Financeiras\" (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): 12.894.474,04 + 30.508,57 = 12.924.982,61 = TOTAL DAS RECEITAS (L67))",
   "ajuste manual: fila \"Despesas Financeiras\" (financiero) -33.202,07, en lugar de \"Despesas Financeiras\" (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): 12.894.474,04 - 15.663.783,45 + 30.508,57 - 33.202,07 = -2.772.002,91 = déficit impreso (L78))",
-  "la lectura base no cerraba; cerró con la lectura 5",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "la lectura base no cerraba; cerró con la lectura 5"
  ],
  "reintentar": null,
  "reintentado": false,

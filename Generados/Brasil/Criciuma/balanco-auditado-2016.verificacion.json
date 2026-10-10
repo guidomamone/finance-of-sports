@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Criciuma/balanco-auditado-2016.pdf",
  "md": "Clubes/Brasil/Criciuma/balanco-auditado-2016.md",
- "generado": "2026-10-09T23:49:19.361Z",
+ "generado": "2026-10-10T00:07:02.411Z",
  "estado": "ok",
  "clubId": "criciuma-br",
  "year": 2016,
@@ -30,6 +30,11 @@
    "detalle": "cierra (como impresos)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2015 de este documento suma ingresos 18.737555; el sitio tiene 18.737555"
+  },
+  {
    "nombre": "documento del año 2017",
    "ok": true,
    "detalle": "ingresos de 2016: 25.964039 en este documento y 25.96404 en balanco-2017.pdf (columna del año anterior)"
@@ -38,11 +43,6 @@
    "nombre": "documento del año 2015",
    "ok": true,
    "detalle": "ingresos de 2015: 18.737555 en balanco-2015.pdf y 18.737555 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2015: este chequeo no se puede hacer"
   }
  ],
  "notas": [],

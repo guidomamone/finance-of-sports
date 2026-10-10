@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Remo/demonstracoes-contabeis-2021.pdf",
  "md": "Clubes/Brasil/Remo/demonstracoes-contabeis-2021.md",
- "generado": "2026-10-09T23:57:41.256Z",
+ "generado": "2026-10-10T00:07:01.835Z",
  "estado": "ok",
  "clubId": null,
  "year": 2021,
@@ -47,8 +47,7 @@
  ],
  "notas": [
   "duda de extraer que no afecta la carga: El cuadro b14 lista solo las despesas 'mais significativas' (L512) mezclando renglones de dos subtotales; su total no es el total de gastos.",
-  "duda de extraer que no afecta la carga: b15 agrupa en 3 categorías (incluye 'Incentivos Fiscais' 13.714.997 vs 'Perse' 13.490.829 en L671) que no mapean uno a uno con L658-L671.",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: b15 agrupa en 3 categorías (incluye 'Incentivos Fiscais' 13.714.997 vs 'Perse' 13.490.829 en L671) que no mapean uno a uno con L658-L671."
  ],
  "reintentar": null,
  "reintentado": false,
