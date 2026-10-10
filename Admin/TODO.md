@@ -108,3 +108,27 @@ ni en el comentario de ningún archivo de código.
     en la cola); el ensayo los cuenta como "se escribirían". Caso: lote 67 (Grecia), el ensayo dijo 21 años y `--escribir` no escribió ninguno
     (alta hecha y revertida 5 veces). Escalón posible: en el ensayo, para un club nuevo, evaluar el resto de los frenos como si el club existiera.
 
+211. DUDAS CONTRADICTORIAS SOBRE EL MISMO CUADRO (mejora de script, cola). localizar y extraer preguntan por separado sobre el mismo cuadro y con
+    propuestas opuestas: AEK 2016-2025, "¿se carga 'Παροχές στο προσωπικό' como desglose?" (sí) y "¿se deja afuera?" (sí). Además verificar ya
+    deja afuera solo una nota que no suma ningún renglón: esas dudas no cambian la carga. Evaluar: (a) juntar las dudas por cuadro (bloque y
+    líneas) en un solo caso; (b) cerrar como "no afecta la carga" la duda sobre un cuadro que verificar no usó porque no suma. Medir cuántos
+    casos de la cola de Grecia (37 de 82 eran de este tipo) desaparecen.
+
+212. INTERESES IMPRESOS SIN SIGNO Y TOLERANCIA QUE LOS TAPA (mejora de script, datos). Volos 2021-2025 imprime interés cobrado y pagado sin
+    signo; la carga sumaba los dos como costo (2024: financiero −11.072 € en vez de −862 €). Solo 2024 no cerraba: en 2021 y 2025 la diferencia
+    (2 × el cobrado) entraba en la tolerancia y la verificación decía "cierra". Hoy se corrigió con ajustes `fila`. Evaluar un escalón: el signo
+    de cada fila del financiero por su etiqueta (πιστωτικοί/χρεωστικοί, receitas/despesas financeiras, financial income/expense), con
+    compuerta de resultado EXACTO, cuando la lectura cierra solo dentro de la tolerancia.
+
+213. DUDAS DE ESCALA QUE OTRO DOCUMENTO DEL MISMO AÑO RESPONDE (optimización, cola). OFI 2018-2024 y Volos 2020-2025 preguntaban "¿los importes
+    están en euros?" y el informe del directorio del mismo año imprime el mismo Κύκλος εργασιών con "€". Evaluar un escalón: si un documento
+    hermano de la carpeta (mismo cierre) imprime el mismo número con símbolo o leyenda de moneda/escala, la duda se cierra sola con esa cita.
+
+214. PRIMER AÑO QUE CIERRA EXACTO (optimización, cola). El caso "primer-anio" pide revisar ingresos, gastos y resultado de todo club nuevo; en
+    Grecia los 7 coincidían exacto con lo impreso. Evaluar: si los tres cierran exacto contra totales impresos (no solo el resultado) y el alta
+    no tiene preguntas, el caso no se levanta (o se baja a una nota). Decisión de Guido: hoy el primer año lo revisa él a propósito.
+
+215. PRECEDENTE DE CATEGORÍA DE UN SOLO CLUB DEL PAÍS (optimización, cola). El escalón B de categorías pide 2 clubes del país con la misma
+    respuesta; en Grecia solo estaba AEL Larissa, así que Asteras, Levadiakos y OFI volvieron a preguntar "Κόστος πωλήσεων", "Έξοδα διάθεσης",
+    "Αμοιβές και έξοδα προσωπικού" (21 casos). Evaluar un escalón con 1 club y mismo contexto exacto (misma nota/renglón título), que proponga
+    con cita del precedente y que la compuerta de lado y de sumas decida; medir aciertos contra las respuestas de hoy.
