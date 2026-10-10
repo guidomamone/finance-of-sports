@@ -24,6 +24,8 @@ que dice `ESTADO.md` era verdad ese día.
 - `js/finanzas-calc.js`: 814 → 443 líneas, 58,8 → 26 KB, mismo código. La historia que se borró ya estaba en este CHANGELOG y en
   `Admin/Archive/CHANGELOG-v010-v299.md`; las dos reglas que solo vivían ahí (revertir la fusión de abonos; aviso de deuda y caja en
   0/0) pasaron a `Admin/PANTALLA.md`. To-do 209 nuevo: lo mismo en `data/*.js`. ASSET_V 805.
+- `js/finanzas-render.js` (1227 → 921 líneas, 84 → 58 KB) y `js/liga.js` (1233 → 941 líneas, 66 → 48 KB), mismo código; sus reglas ya
+  estaban en PANTALLA y CONVENCIONES-DATOS, los comentarios apuntan ahí. ASSET_V 806.
 
 ## Versión 669 — `verificar.mjs`: escalón "financiero dentro de un subtotal" (to-do 199, patrón C) (2026-10-10)
 

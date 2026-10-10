@@ -1,47 +1,23 @@
 // ============================================================================
-// js/finanzas-render.js — capa de RENDER de Finanzas: arma HTML, dibuja los
-// gráficos (Chart.js) y actualiza el DOM a partir de los datos YA
-// calculados por js/finanzas-calc.js. Incluye los selectores/tabs de
-// Pases, Resultados, Comparar e Inicio (mismo criterio: pintan, no
-// calculan).
+// js/finanzas-render.js — capa de RENDER de Finanzas: arma HTML, dibuja los gráficos (Chart.js) y actualiza el DOM a partir de lo
+// que calcula js/finanzas-calc.js. Incluye Pases, Resultados y Comparar (pintan, no calculan). Algunas funciones puente
+// (buildNativeSectionHtml, renderFinanzasStats*Generic, update*Generic) calculan valores chicos (% del total, crecimiento) en el
+// mismo paso en que arman el HTML: separarlo exige tocar funciones financieras ya verificadas, y se hace recién cuando haga falta.
 //
-// Nota de alcance (Versión 51): un puñado de funciones puente
-// (buildNativeSectionHtml, renderFinanzasStats*Generic,
-// update*ByGestion/ByAnio*Generic) calculan un par de valores derivados
-// chicos (% del total, crecimiento vs. año anterior) EN el mismo paso en
-// que arman el HTML, en vez de separarse en un sub-paso de cálculo puro.
-// Es una decisión deliberada, no un descuido: separar ese cálculo a mano
-// exigía tocar el cuerpo interno de funciones financieras ya verificadas
-// (ver finance-of-sports/.claude/skills/club-data-mapping/SKILL.md, historial
-// real de bugs de doble conversión al generalizar este mismo código de
-// Boca a River/Racing), y el riesgo no se justificaba solo para mover
-// archivos. Si se necesita cálculo puro reusable de estos valores más
-// adelante, extraerlo recién ahí, con su propia verificación en el browser.
-//
-// Extraído de index.html (Versión 51, limpieza de arquitectura antes de
-// seguir agregando clubes), mismo código exacto, sin cambiar comportamiento.
-//
-// Orden de carga: después de js/finanzas-calc.js (llama a sus funciones) y
-// de los data/*.js, antes del <script> principal de index.html (que llama
-// a refreshFinanzas/refreshAllForClub, definidas ahí, que a su vez llaman a
-// las funciones de este archivo).
+// Orden de carga: después de js/finanzas-calc.js y de los data/*.js, antes del <script> principal de index.html.
 // ============================================================================
 
-  // (Versión 515, to-do 140(i)) El bocadillo de una fila que el documento junta con otra (`incluidoEn`): nombra el rubro donde
-  // está. Textos de Guido. Lo usan la tabla de Finanzas (abajo) y el desglose de Ligas (js/liga.js, que carga después).
+  // El bocadillo de una fila que el documento junta con otra (`incluidoEn`): nombra el rubro donde está. Lo usan la tabla de
+  // Finanzas (abajo) y el desglose de Ligas (js/liga.js, que carga después).
   window.FINANZAS_DENTRO_TIP = function(rubro, posible){
     return posible
       ? t('finanzas.tipPosible1', 'Sospecho que está dentro de') + ' ' + tLabel(rubro) + ': ' + t('finanzas.tipPosible2', 'no es un cero, pero la fuente no lo aclara o es confusa.')
       : t('finanzas.tipIncluido1', 'Está incluido en') + ' ' + tLabel(rubro) + ': ' + t('finanzas.tipIncluido2', 'la fuente lo reporta junto con ese rubro.');
   };
 
-  // QUÉ EJERCICIOS SE ESTÁN MIRANDO EN FINANZAS (to-do 147, paso 3). Hasta acá el año vivía en el DOM
-  // (`#anioSelect.value`) y unas 10 funciones lo leían de ahí. Ahora vive en este objeto, que ya es una
-  // LISTA de años porque los pasos que siguen (los cards de ejercicios) eligen varios a la vez; mientras
-  // la pantalla siga teniendo el dropdown, la lista tiene un solo año. Quien muestre UN ejercicio
-  // (KPIs, banner de calidad, ficha de fuente) usa `primary()`, el más nuevo elegido; quien necesite
-  // un balance (la simulación en otra liga) usa `lastBalance()`. Nadie lee `#anioSelect` salvo el
-  // dropdown mismo, que escribe acá con `set()`.
+  // QUÉ EJERCICIOS SE ESTÁN MIRANDO EN FINANZAS: una LISTA de años (la vista multi-año elige varios). Quien muestra UN ejercicio
+  // (KPIs, banner de calidad, ficha de fuente) usa `primary()`, el más nuevo; quien necesita un balance usa `lastBalance()`. Nadie lee
+  // `#anioSelect` salvo el dropdown mismo, que escribe acá con `set()`.
   const FIN_SEL = (function(){
     let years = [];
     const BAL = { official_balance_sheet:1, unofficial_mirror:1, official_budget_and_balance:1 };
@@ -62,10 +38,8 @@
   let inicioIngresosChartInst = null, inicioGastosChartInst = null, inicioDeudaChartInst = null;
 
 
-  // % de cada porción dibujado ARRIBA de la porción del pie/doughnut (no en la leyenda. Chart.js no
-  // lo trae de fábrica, así que se dibuja a mano tomando el ángulo medio y el radio medio de cada
-  // arco). Se omiten las porciones muy chicas (<5%): el texto no entra y se superpondría con la de al
-  // lado. Contorno oscuro + relleno blanco para que se lea encima de cualquier color de porción.
+  // % de cada porción dibujado ARRIBA de la porción del doughnut (Chart.js no lo trae): ángulo y radio medios de cada arco. Se
+  // omiten las porciones <5% (el texto no entra). Contorno oscuro + relleno blanco para que se lea sobre cualquier color.
   const pctSliceLabelsPlugin = {
     id: 'pctSliceLabels',
     afterDraw(chart){
@@ -98,12 +72,8 @@
   };
 
 
-  // Glosario de términos contables/de fútbol que aparecen tal cual el club los escribió en algún
-  // desglose (revenueBreakdown/expenseSubBreakdown/items) y pueden no ser obvios para un hincha o
-  // periodista sin trasfondo contable. La clave es el label EXACTO tal cual aparece en el desglose;
-  // el value es el texto que se muestra como tooltip nativo (title=) al pasar el mouse por la fila.
-  // Se aplica automáticamente en `renderBreakdownRows` a CUALQUIER fila cuyo label matchee, así que
-  // alcanza con agregar una entrada acá, no hace falta tocar cada lugar donde ese label se pinta.
+  // Glosario de términos que aparecen tal cual el club los escribió en un desglose. Clave: el label EXACTO; valor: el tooltip.
+  // renderBreakdownRows lo aplica a cualquier fila que matchee: alcanza con agregar una entrada acá.
   const rowGlossary = {
     'Amortizacion Plantel Futbol Profesional - Compras': 'Amortización del costo de los pases de jugadores COMPRADOS a otros clubes: el club capitaliza ese costo como activo intangible al firmar al jugador, y lo va llevando a resultados (gasto) en cuotas iguales repartidas a lo largo de la duración de su contrato, en vez de cargarlo todo de una vez en el año de la compra.',
     'Amortizacion Plantel Futbol Profesional - Inferiores': 'Amortización de jugadores surgidos de las Inferiores (juveniles) del propio club: aunque no hubo un pase comprado a otro club, el club igual capitaliza un costo asociado a esos jugadores al firmarles su primer contrato profesional, y lo amortiza en cuotas de la misma manera que a un jugador comprado.',
@@ -115,14 +85,8 @@
   }
 
 
-  // Pinta las filas de un desglose de sub-items, recursivamente: cada item es [label, value] o
-  // [label, value, subItems] (mismo formato que expenseSubBreakdown/revenueBreakdown). Un item con
-  // subItems se pinta como su propio acordeón anidado (flecha + onclick propio), así una categoría
-  // como "Fútbol Profesional" puede desglosarse en sub-gerencias, y cada sub-gerencia a su vez en
-  // línea de gasto, sin perder ningún nivel del documento original.
-  // sectionTotal: el Total Ingresos/Total Gastos de la sección, el % de un sub-ítem se calcula
-  // contra ESE total (no contra el total de su categoría padre), mismo criterio "common-size" que
-  // las filas de primer nivel en buildNativeSectionHtml.
+  // Pinta las filas de un desglose, recursivamente: cada item es [label, value] o [label, value, subItems], y un item con subItems
+  // es su propio acordeón anidado. El % de un sub-ítem es contra el total de la SECCIÓN (sectionTotal), no contra su fila madre.
   function renderBreakdownRows(items, parentRowId, depth, meta, targetCurrency, sectionTotal){
     return items.map((it, i) => {
       const label = it[0], val = nativeDisplayVal(it[1], meta, targetCurrency), subItems = it[2];
@@ -142,29 +106,18 @@
   }
 
 
-  // Pinta una sección (Ingresos o Gastos): encabezado, cada categoría (con acordeón si tiene
-  // sub-items), y una fila de total. Devuelve el html y el total ya en la moneda a mostrar, para
-  // que el llamador pueda sumar Ingresos + Gastos + extraRows y obtener el resultado final.
-  // REGLA (Versión 60, pedido explícito de Guido: "para presupuesto, dame tambien % del total. O
-  // sea, dos columnas que sean % del total"): cada columna de valor (Actual y Presupuesto) tiene
-  // ahora su PROPIA columna de % al lado, calculada contra el total de ESA columna (no contra el
-  // total de la columna Actual) — 5 celdas por fila en vez de 4: Rubro, Actual, % Actual,
-  // Presupuesto, % Presupuesto.
+  // Pinta una sección (Ingresos o Gastos): encabezado, cada fila (con acordeón si tiene items) y el total. Cada columna de valor
+  // (Actual y Presupuesto) tiene su propia columna de %, calculada contra el total de ESA columna. Devuelve el html y los totales
+  // ya en la moneda a mostrar.
   function buildNativeSectionHtml(sectionLabel, curList, prevList, meta, prevMeta, targetCurrency, groupPrefix){
     const findPrevRow = (label) => { if(!prevList) return null; return prevList.find(x => x.label === label) || null; };
     const findPrevVal = (label) => { const m = findPrevRow(label); return m ? m.value : null; };
-    // to-do 20(h): `unknown` lo pone bucketize() cuando la sección tiene un bolsón "sin desglosar
-    // por la fuente" con plata adentro y esta fila da cero — o sea que el cero es un "no sabemos",
-    // no un cero. Se pinta "—", el mismo carácter que ya usa la tabla para "no hay columna
-    // anterior", y el % también, porque un porcentaje de un dato que no existe no significa nada.
-    // Versión 509: `incluidoEn` (bucketize) = el documento junta esta fila con otra; se dice dónde está en vez de mostrar $0.
-    // (Versión 515, to-do 140(i), textos de Guido) la celda dice solo "Dentro de otro rubro" / "Posiblemente dentro de otro rubro"
-    // (el nombre del rubro la hacía ocupar seis renglones) y el rubro va en el bocadillo (js/info-tip.js: hover o tap).
+    // `unknown` (bolsón sin desglosar con plata adentro) e `incluidoEn` (el documento junta esta fila con otra): ver bucketize() en
+    // js/finanzas-calc.js. Valor y % se pintan "—"; con incluidoEn la celda dice "Dentro de otro rubro" y el rubro va en el
+    // bocadillo (js/info-tip.js).
     const celdaValor = (row, val) => row && row.incluidoEn ? `<span class="pl-incluido" tabindex="0" data-info-tip="${window.FINANZAS_DENTRO_TIP(row.incluidoEn, row.incluidoPosible).replace(/&/g,'&amp;').replace(/"/g,'&quot;')}">${row.incluidoPosible ? t('finanzas.posibleDentroOtro', 'Posiblemente dentro de otro rubro') : t('finanzas.dentroOtro', 'Dentro de otro rubro')}</span>` : row && row.unknown ? '—' : fmtDisplay(val);
     const celdaPct = (row, val, tot) => row && (row.unknown || row.incluidoEn) ? '—' : fmtPctOfTotal(val, tot);
-    // El total tiene que estar calculado ANTES de generar el HTML de cada fila (para poder mostrar
-    // el % de cada una contra el total ya cerrado), antes se acumulaba fila por fila en el mismo
-    // paso en el que se generaba su HTML, así que ninguna fila conocía el total final todavía.
+    // El total se calcula ANTES de armar las filas: cada fila necesita el total cerrado para su %.
     const total = curList.reduce((s,c) => s + nativeDisplayVal(c.value, meta, targetCurrency), 0);
     const totalPrev = prevList ? prevList.reduce((s,c) => s + nativeDisplayVal(c.value, prevMeta, targetCurrency), 0) : null;
     const rowsHtml = curList.map((c, i) => {
@@ -197,54 +150,15 @@
     const totalHtml = `<tr class="pl-bold pl-shade"><td>Total ${sectionLabel}</td><td>${fmtDisplay(total)}</td><td>${fmtPctOfTotal(total, total)}</td>` +
       `<td>${totalPrev !== null ? fmtDisplay(totalPrev) : '—'}</td>` +
       `<td>${totalPrev !== null ? fmtPctOfTotal(totalPrev, totalPrev) : '—'}</td></tr>`;
-    // totalPrev se devuelve para que renderNativePLTable() pueda armar el Resultado Neto DEL
-    // PRESUPUESTO (Ingresos - Gastos de esa misma columna), no solo el del Balance (Versión 60,
-    // Guido: "que resultado neto tenga un numero, no me lo dejes incompleto").
+    // totalPrev: para que renderNativePLTable() arme también el Resultado neto de la columna Presupuesto.
     return { html: headHtml + rowsHtml + totalHtml, total, totalPrev };
   }
 
 
-  // Reescribe el <colgroup> de #finanzasPLTable según si el ejercicio tiene overlay de Presupuesto
-  // o no (Versión 39, criterio de cuándo llamarla actualizado en la Versión 57: antes era Año a
-  // año vs. Por gestión). NECESARIO además de la regla CSS que oculta th/td de la 4ta columna
-  // cuando no hay overlay (`pl-hide-compare`): probado en el navegador con getBoundingClientRect,
-  // en dos vueltas,
-  // 1) un <col> con `display:none` NO libera su ancho fijo en `table-layout:fixed` (Rubro seguía
-  //    midiendo lo mismo con o sin esa regla).
-  // 2) SACAR directamente esos <col> del colgroup TAMPOCO alcanza: la fila de encabezado de sección
-  //    (`buildNativeSectionHtml`, `<td colspan="N">`) sigue escribiendo el mismo colspan sin
-  //    importar el modo, así que el motor de tablas del navegador sigue viendo esa cantidad de
-  //    columnas reales (por esa fila) aunque el colgroup describa menos, y como Rubro Y las
-  //    columnas "de más" quedan TODAS sin ancho explícito, el navegador reparte el espacio sobrante
-  //    en partes IGUALES entre todas (confirmado midiendo antes/después).
-  // Fix real: el <colgroup> SIEMPRE tiene que declarar la MISMA cantidad de columnas que el
-  // `colspan` de la fila de encabezado de sección y que las celdas reales de cada fila de datos
-  // (hoy: 4, ver REGLA de la Versión 59 abajo), pero la columna oculta cuando no hay overlay lleva
-  // un ancho EXPLÍCITO de 0 (no se saca del colgroup, se le pone width:0), así es la ÚNICA con
-  // ancho fijo salvo Rubro, que sigue siendo la única columna sin ancho y se lleva TODO el espacio
-  // sobrante ella sola, sin repartirlo con nadie.
-  // Se llama SIEMPRE junto con el classList.toggle('pl-hide-compare') de #finanzasPLTable, ambos
-  // adentro de `renderNativePLTable()` desde la Versión 57 (antes vivían sueltos en cada uno de los
-  // 4 call sites que llamaban a esa función).
-  // REGLA (Versión 60, pedido explícito de Guido: "para presupuesto, dame tambien % del total. O
-  // sea, dos columnas que sean % del total" + "para leer 'presupuesto' de forma entera, tengo que
-  // scrollear a la derecha... desliza las columnas apenas a la izquierda para que no haya que
-  // scrollear. esto tambien deberia ser regla"): quedan 5 columnas (Rubro, Actual, % Actual,
-  // Presupuesto, % Presupuesto), pero los 4 anchos numéricos se angostaron (100/65 → 78/40) respecto
-  // a la Versión 59 para que, sumados, entren en el ancho del card sin scroll horizontal — la 5ta
-  // columna nueva no puede simplemente sumarse con los anchos viejos o se repite el problema. Regla
-  // general para cualquier columna nueva que se agregue a esta tabla en el futuro: el ancho de las
-  // columnas EXISTENTES tiene que angostarse en la misma medida que se agranda el total, nunca
-  // asumir que "hay lugar" sin volver a mirar el ancho real del card en el navegador.
-  // REGLA (Versión 61, pedido explícito de Guido: "lo ideal es que todas las columnas tengan el
-  // mismo width y que permita que se lea bien"): las 4 columnas numéricas comparten el MISMO ancho
-  // (100px, antes alternaban 84/54/84/54 según fuera Actual/Presupuesto o su "% del total"). 100px
-  // sale de medir en el navegador (getComputedStyle + un <span> de prueba con la misma fuente) el
-  // texto más ancho que puede aparecer en una sola línea de header con el wrap a propósito de
-  // `wrapHeaderLabel` (js/finanzas-calc.js): un rango de años tipo "2026/2027" mide ~69px + 24px de
-  // padding del `<th>` (9px 12px) ≈ 93px, "Ejercicio"/"Balance" miden menos. El ancho uniforme +
-  // esos headers partidos a propósito (más "% del<br>total") reemplazan el wrap automático
-  // letra-por-letra que hacía ilegible el header en columnas angostas.
+  // Reescribe el <colgroup> de #finanzasPLTable según haya overlay de Presupuesto o no. El colgroup declara SIEMPRE la misma
+  // cantidad de columnas que el colspan del encabezado de sección; la columna oculta lleva width:0 (sacarla o darle display:none
+  // hace que el navegador reparta el espacio sobrante en partes iguales). Anchos y regla para columnas nuevas: Admin/PANTALLA.md,
+  // "Reglas de la tabla Estado de resultados".
   function syncPLTableColgroup(hideCompare){
     const colgroup = document.querySelector('#finanzasPLTable colgroup');
     colgroup.innerHTML = hideCompare
@@ -253,36 +167,17 @@
   }
 
 
-  // REGLA (Versión 57, pedido explícito de Guido: "no existe la columna de comparación... la
-  // habíamos eliminado hace rato" + "para cuando un mismo año tenga both presupuesto y balance, en
-  // estado de resultado agregá una columna que sea Balance"): esta función YA NO compara el
-  // ejercicio actual contra OTRO año (esa comparación se sacó del todo, de los 3 clubes y los 2
-  // modos). La 2da columna ahora es, exclusivamente, el overlay de Presupuesto de ESE MISMO
-  // ejercicio, cuando existe (`presupuestoOverlayReportFor`, `js/finanzas-calc.js`) — un ejercicio
-  // con `reportType:'official_budget_and_balance'` en `*FiscalYearMeta` (el balance real es el dato
-  // PRIMARIO de siempre: KPIs, Formato Simplificado, verifyTieOuts salen de ahí, no del overlay).
-  // Para el 99% de los ejercicios (sin overlay) la 2da columna directamente no se pinta, igual que
-  // antes se ocultaba en "Año a año" vía `pl-hide-compare`, solo que ahora es SIEMPRE así salvo que
-  // el ejercicio puntual tenga las 2 fuentes, sin importar si se está mirando "Año a año" o "Por
-  // gestión". Ver `.claude/skills/club-or-year-onboarding/SKILL.md` sección 11 para el detalle
-  // completo (incluida la limitación real: el emparejamiento de filas Balance-vs-Presupuesto es por
-  // `rawLabel` exacto, así que un rubro que cambia de nombre entre los dos documentos no muestra
-  // Var./Var. %, mismo comportamiento que ya tenía la comparación año-contra-año vieja).
+  // Estado de resultados de UN ejercicio. La 2da columna es solo el overlay de Presupuesto de ESE MISMO ejercicio, cuando existe
+  // (presupuestoOverlayReportFor, js/finanzas-calc.js); sin overlay no se pinta. Las filas Balance-vs-Presupuesto se emparejan por
+  // label exacto (skill club-or-year-onboarding, sección 11).
   function renderNativePLTable(clubId, year, curLabel, containerId){
     const curMeta = yearMetaFor(clubId, year);
     const curReport = nativeReportFor(clubId, year);
     const overlayReport = presupuestoOverlayReportFor(clubId, year);
     const overlayMeta = overlayReport ? presupuestoOverlayMetaFor(clubId, year) : null;
 
-    // innerHTML (no textContent) + wrapHeaderLabel (js/finanzas-calc.js): fuerza el corte de
-    // línea en un punto elegido a mano (Versión 61, ver comentario de esa función), en vez de
-    // dejar que `overflow-wrap:break-word` parta la palabra letra por letra en columnas angostas.
-    // REGLA (Versión 65, pedido explícito de Guido viendo Racing 2019/2020: "solamente dice
-    // PRESUPUESTO, agregá el año también, como en el resto de los casos. Es una regla"): el header
-    // de la columna de overlay lleva el año, igual que la columna principal — el overlay es SIEMPRE
-    // el presupuesto de ESE MISMO `year` (ver comentario de `presupuestoOverlayReportFor`), nunca de
-    // otro ejercicio, así que reusa `ejercicioLabel(year, 'official_budget')` (`js/finanzas-calc.js`)
-    // para armar "Presupuesto AAAA/AAAA" con el mismo formato que cualquier otro prefijo+año.
+    // wrapHeaderLabel: corte de línea elegido a mano. El header del overlay lleva el año ("Presupuesto AAAA/AAAA"), como la columna
+    // principal.
     document.getElementById(containerId+'CurLabel').innerHTML = wrapHeaderLabel(curLabel);
     document.getElementById(containerId+'PrevLabel').innerHTML = overlayReport ? wrapHeaderLabel(ejercicioLabel(year, 'official_budget', clubId)) : '—';
     document.getElementById(containerId).classList.toggle('pl-hide-compare', !overlayReport);
@@ -291,13 +186,8 @@
     const ing = buildNativeSectionHtml(t('section.revenue','Ingresos'), curReport.ingresos, overlayReport ? overlayReport.ingresos : null, curMeta, overlayMeta, currentCurrency, containerId+'-ing');
     const gas = buildNativeSectionHtml(t('section.expenses','Gastos'), curReport.gastos, overlayReport ? overlayReport.gastos : null, curMeta, overlayMeta, currentCurrency, containerId+'-gas');
 
-    // "SIN DATO" NO ES CERO, TAMBIÉN ACÁ (Versión 152, to-do 31). Los 10 clubes
-    // japoneses tienen `expenseLines: []` y `officialTotalExpenses: null`: la J.League
-    // publica el ingreso de cada club y no su estructura de costos. Sin este test la
-    // tabla dibuja la lista entera de rubros en 0,0 y cierra con "Total Gastos 0,0" y
-    // un "Resultado neto" igual a los ingresos — no un dato incompleto, uno FALSO.
-    // Arriba, los KPIs ya dicen "Sin dato" desde esta misma versión; sin esto, las dos
-    // mitades de la misma pantalla se contradecían.
+    // "SIN DATO" NO ES CERO (Admin/CONVENCIONES-DATOS.md): un ejercicio sin líneas ni total oficial de gastos (ej. los clubes de la
+    // J.League, que publica solo ingresos) no dibuja rubros en 0,0 ni un Resultado neto igual a los ingresos.
     const cGastos = (typeof computeYearGeneric === 'function') ? computeYearGeneric(clubId, year) : null;
     const sinGastos = !!cGastos
                    && !(cGastos.expenseLines || []).length
@@ -308,24 +198,9 @@
         + `<tr class="pl-nodata"><td colspan="5">${t('pl.sin.gastos','La fuente de este ejercicio publica los ingresos del club pero no su estructura de costos, así que no hay gastos que mostrar. No es que sean cero: no están informados.')}</td></tr>`
       : gas.html;
 
-    // REGLA (Versión 54, pedido explícito de Guido: "en el card de Estado de resultado de Boca,
-    // ponés 'intereses netos, impuestos' y un copy abajo. quitalo, y quede igual para todos los
-    // clubes, todos los años") — REVERTIDA PARCIALMENTE en la Versión 60: Guido detectó que Racing
-    // 2020 mostraba Ingresos 32,9 / Gastos 39,8 / Resultado neto -3,7 ("no da la cuenta. qué pasa?
-    // por qué esto no saltó en ningún chequeo tuyo? es elemental") — el número final SIEMPRE fue
-    // correcto (-277,059572 ARS M / 73,98 = -3,746 ≈ -3,7, ya validado por verifyTieOuts), lo que
-    // estaba mal era mostrar Ingresos y Gastos sin ningún rastro visible de por qué no suman
-    // Resultado Neto: `extraTotal` (acá, Intereses netos ≈ +3,08 M USD) se sumaba pero nunca se
-    // pintaba. Ahora las filas de extraRows SÍ se muestran de nuevo, pero solo cuando su valor no es
-    // cero (así un club/año sin esta fila — la mayoría — no gana una fila "Intereses netos: 0" sin
-    // sentido). Esto es una única función compartida por los 3 clubes y cualquier año/toggle, así que
-    // el cambio es automáticamente igual para todos, sin nada condicional por club/año.
+    // Las filas de extraRows se muestran cuando no son cero: sin ellas Ingresos + Gastos no explicaría el Resultado neto.
     const extraTotal = (curReport.extraRows||[]).reduce((s,e) => s + nativeDisplayVal(e.value, curMeta, currentCurrency), 0);
-    // REGLA (Versión 61, pedido explícito de Guido: "toca ponerlo para todos, aunque sea 0"):
-    // "Intereses netos" es la única extraRow que se muestra SIEMPRE, incluso en $0 — las demás
-    // (Impuestos, Venta de activos, Ganancia por venta de jugadores) siguen ocultas en $0 (Versión
-    // 60, evitar ruido para casos raros). El motor (js/finanzas-calc.js) ya arma "Intereses netos"
-    // sin condicional, así que esta excepción solo decide qué se PINTA, no qué se calcula.
+    // Excepción: "Intereses netos" se muestra siempre, incluso en $0 (Admin/PANTALLA.md, "Reglas de Estado de resultados").
     const extraRowsHtml = (curReport.extraRows||[]).map(e => {
       const v = nativeDisplayVal(e.value, curMeta, currentCurrency);
       if(v === 0 && e.label !== 'Intereses netos') return '';
@@ -333,13 +208,8 @@
     }).join('');
 
     const resultado = sinGastos ? null : (ing.total + gas.total + extraTotal);
-    // REGLA (Versión 60, pedido explícito de Guido: "para presupuesto... que resultado neto tenga
-    // un numero, no me lo dejes incompleto"): el Resultado Neto de la columna Presupuesto es la
-    // suma directa de sus propias revenueLines/expenseLines (`ing.totalPrev + gas.totalPrev`), SIN
-    // sumarle ningún extraTotal — el overlay no tiene su propio concepto de extraRows separado, sus
-    // líneas "extraordinarias" ya viven adentro de revenueLines/expenseLines como líneas normales
-    // (ver nota en `data/racing-data.js`, `racingPresupuestoOverlayByYear[2020]`, corregida en esta
-    // misma versión para que sea así en las 2 columnas).
+    // Resultado neto de la columna Presupuesto = sus propios ingresos + gastos, sin extraTotal: el overlay no tiene extraRows, sus
+    // líneas extraordinarias ya están dentro de revenueLines/expenseLines.
     const resultadoOverlay = overlayReport ? (ing.totalPrev + gas.totalPrev) : null;
     const resultRow = `<tr class="pl-bold pl-highlight"><td>${curReport.resultLabel || 'Resultado neto'}</td><td>${resultado === null ? t('stat.nodata','Sin dato') : fmtDisplay(resultado)}</td><td>—</td>` +
       `<td>${resultadoOverlay !== null ? fmtDisplay(resultadoOverlay) : '—'}</td><td>—</td></tr>`;
@@ -348,22 +218,13 @@
       ing.html + '<tr class="pl-spacer"><td colspan="5"></td></tr>' + gastosHtml +
       (!sinGastos && extraRowsHtml ? '<tr class="pl-spacer"><td colspan="5"></td></tr>' + extraRowsHtml : '') +
       '<tr class="pl-spacer"><td colspan="5"></td></tr>' + resultRow;
-    // Se devuelven los totales YA en la moneda mostrada para que el stat "Gastos" de arriba de
-    // Finanzas use EXACTAMENTE el mismo número que "Total Gastos" acá abajo, antes ese stat salía
-    // de cur.expenses (computeYear), que para 2025/2027 (los únicos ejercicios con documento real)
-    // es solo wages+otherExpenses, sin amortizaciones/depreciación, así que mostraba un Gastos menor
-    // al de la tabla y parecía un descalce con las inversiones. Bug real, reportado por Guido.
-    // extraTotal (Versión 61): se devuelve para que renderFinanzasStatsFromComputed/Generic puedan
-    // pintar el stat "Int." de arriba con EXACTAMENTE el mismo número que ya se sumó acá abajo para
-    // llegar a "Resultado neto" (Ingresos + Gastos + Int. = Resultado neto, visible en los 2
-    // lugares a la vez).
+    // Totales YA en la moneda mostrada, para que los KPIs de arriba usen EXACTAMENTE los mismos números que la tabla (Ingresos +
+    // Gastos + Int. = Resultado neto en los dos lugares).
     return { ingresosTotal: ing.total, gastosTotal: sinGastos ? undefined : gas.total, resultado, extraTotal: sinGastos ? undefined : extraTotal };
   }
 
 
-  // Colapsa un grupo y, en cascada, cualquier sub-grupo anidado que hubiera quedado abierto adentro
-  // (y resetea sus flechas), así un nivel siempre arranca cerrado la próxima vez que se abre, en vez
-  // de quedar en un estado inconsistente con filas nietas visibles sin su fila madre.
+  // Colapsa un grupo y, en cascada, cualquier sub-grupo abierto adentro (y resetea sus flechas): un nivel siempre arranca cerrado.
   function collapseBreakdownGroup(rowId){
     document.querySelectorAll('tr[data-group="'+rowId+'"]').forEach(r => {
       r.style.display = 'none';
@@ -389,27 +250,11 @@
   }
 
 
-  // La tabla "tal cual la muestra el club" (renderNativePLTable, más arriba) ya cubre TODOS los
-  // clubes (Boca incluida desde la Versión 102): nativeReportFor() lee cur.revenueLines/expenseLines
-  // directo (rawLabel tal cual la fuente), así que no hace falta una versión "Generic" separada de
-  // plRows/renderPLTable. Los nombres "...Generic" de las funciones de abajo quedaron del período en
-  // que coexistían con un motor Boca-only propio (ya no existe); no se renombraron para no arrastrar
-  // un cambio cosmético de riesgo innecesario sobre esta migración.
-  // ¿El documento de ESTE ejercicio desglosa deuda y caja? Deuda bruta = Caja = 0 EXACTO en un
-  // documento oficial no es una deuda real de cero (un club de primera división con las dos en
-  // cero no existe): es un documento que no lo publica, típicamente un presupuesto, que proyecta
-  // ingresos y egresos y no trae estado de situación patrimonial. `computeYearGeneric()` escribe
-  // `meta.grossDebt || 0`, así que el caso "null" y el caso "cero" llegan acá iguales y este test
-  // cubre los dos. Placeholder/pending_official quedan afuera: ya tienen su propio banner arriba
-  // de Finanzas.
-  //
-  // VIVE ACÁ, COMPARTIDA, A PROPÓSITO (to-do 25). Este test estaba escrito adentro de
-  // renderDebtBlockGeneric y NO en renderFinanzasStatsGeneric, así que la ficha de Finanzas se
-  // contradecía sola: el KPI publicaba "Deuda neta · 0,0 M USD" en el cuerpo de letra más grande
-  // de la página y, unos centímetros más abajo, el aviso que arma esta misma función decía que ese
-  // cero no significa que la deuda sea cero. Es el MISMO bug que la Versión 140 arregló en Inicio
-  // (el mismo que usaba `informaDeuda()`, borrada con los KPIs de Inicio en la Versión 184). Mientras el test esté en un solo lugar y los
-  // dos lo llamen, no pueden volver a desincronizarse.
+  // Los nombres "...Generic" quedaron de cuando coexistían con un motor solo para Boca, que ya no existe.
+  // ¿El documento de ESTE ejercicio desglosa deuda y caja? Deuda bruta = Caja = 0 en un documento oficial es un documento que no la
+  // publica, no una deuda cero (Admin/PANTALLA.md, "Deuda y caja en 0/0"). computeYearGeneric() escribe `meta.grossDebt || 0`, así
+  // que null y cero llegan iguales. Placeholder/pending_official quedan afuera: tienen su propio banner. Vive acá, compartida por el
+  // KPI y por la tabla de deuda, para que los dos no se contradigan.
   function deudaNoDesglosada(c){
     if(!c) return false;
     const rt = (c.meta || {}).reportType;
@@ -421,9 +266,6 @@
   function renderDebtBlockGeneric(cur, prev, containerId){
     document.getElementById(containerId+'CurLabel').textContent = cur.yearLabel;
     document.getElementById(containerId+'PrevLabel').textContent = prev ? prev.yearLabel : '—';
-    // Conversión de moneda (Versión 32, antes grossDebt/cash/netDebt se mostraban tal cual, sin
-    // convertir, porque River/Racing siempre estaban en USD sin toggle). Mismo patrón que
-    // renderDebtBlock (Boca).
     const curMeta = yearMetaFor(cur.clubId, cur.year);
     const prevMeta = prev ? yearMetaFor(prev.clubId, prev.year) : null;
     const rows = [
@@ -438,49 +280,26 @@
       const prevVal = r.prevTxt !== undefined ? r.prevTxt : (r.prev !== null ? fmtDisplay(toDisplayValue(r.prev, prevMeta, currentCurrency)) : '—');
       return `<tr class="${trCls}"><td>${tLabel(r.label)}</td><td>${curVal}</td><td>${prevVal}</td></tr>`;
     }).join('');
-    // Misma regla general que renderDebtBlock (Boca): un año oficial (no placeholder) con
-    // Deuda bruta = Caja = 0 es un documento que no desglosa deuda, no una deuda real de cero.
     const curUndisclosed = deudaNoDesglosada(cur);
     const prevUndisclosed = deudaNoDesglosada(prev);
     document.getElementById('finanzasDebtNote').textContent = debtDisclosureNote(curUndisclosed, cur.yearLabel, prevUndisclosed, prev ? prev.yearLabel : '');
   }
 
 
-  // gastosTotal/ingresosTotal (opcionales): ver comentario en renderFinanzasStatsFromComputed,
-  // mismo criterio acá (Versión 42: hoy River/Racing no tienen el bug de Boca porque revenueLines
-  // es una sola fuente compartida entre Formato del club y Formato simplificado, pero se pasa
-  // ingresosTotal de todas formas para que los dos stats de arriba, Ingresos y Gastos, sigan el
-  // mismo criterio "usar el total ya calculado por la tabla de abajo" y no se desincronicen si el
-  // motor genérico cambia a futuro). Conversión de moneda (Versión 32): antes esto siempre mostraba
-  // cur.revenue/expenses/pat/netDebt tal cual (ya USD, hardcodeado), ahora convierte con
-  // yearMetaFor(cur.clubId, cur.year) + currentCurrency, mismo patrón que
-  // renderFinanzasStatsFromComputed (Boca).
-  // extraTotal: ver comentario en renderFinanzasStatsFromComputed (Boca), mismo criterio y mismo
-  // stat "Int." acá (Versión 61).
+  // gastosTotal/ingresosTotal/extraTotal (opcionales): los totales que ya calculó renderNativePLTable(), para que los KPIs digan
+  // exactamente lo mismo que la tabla de abajo.
   function renderFinanzasStatsGeneric(cur, gastosTotal, ingresosTotal, extraTotal){
     const meta = yearMetaFor(cur.clubId, cur.year);
     const revenueDisp = ingresosTotal !== undefined ? ingresosTotal : toDisplayValue(cur.revenue, meta, currentCurrency);
-    // gastosTotal (si viene) ya está convertido a currentCurrency por renderNativePLTable/
-    // buildNativeSectionHtml. NO volver a pasarlo por toDisplayValue (bug real, encontrado
-    // probando el toggle en el browser: convertía dos veces y mostraba "Gastos: 0.1 M USD" en vez
-    // de ~76 M USD). Mismo criterio que renderFinanzasStatsFromComputed (Boca).
+    // gastosTotal ya viene convertido: NO volver a pasarlo por toDisplayValue (Admin/PANTALLA.md, "gastosTotal ya viene convertido").
     const expensesDisp = gastosTotal !== undefined ? Math.abs(gastosTotal) : Math.abs(toDisplayValue(cur.expenses, meta, currentCurrency));
     const patDisp = toDisplayValue(cur.pat, meta, currentCurrency);
     const netDebtDisp = toDisplayValue(cur.netDebt, meta, currentCurrency);
-    // "SIN DATO" NO ES CERO (Versión 152, to-do 31). Los 10 clubes japoneses tienen
-    // ingresos cargados y `expenseLines: []` con `officialTotalExpenses: null`, porque
-    // la J.League publica el ingreso de cada club y no su estructura de costos. Sin
-    // este test, la ficha de Cerezo Osaka decía "Gastos 0,0 M USD" y "Resultado neto
-    // +38,1 M USD" en el cuerpo de letra más grande de la página: ese club no ganó 38
-    // millones, simplemente no sabemos qué gastó. La TABLA de abajo ya lo hacía bien
-    // (muestra guiones), así que el criterio existía en el proyecto y eran estos KPIs
-    // los que no lo aplicaban. El resultado cae con los gastos: es el final de una
-    // cascada que arranca ahí.
+    // "SIN DATO" NO ES CERO: sin gastos informados, Gastos y Resultado neto dicen "Sin dato" (como la tabla de abajo).
     const sinGastos = !(cur.expenseLines || []).length
                    && (cur.meta || {}).officialTotalExpenses == null
                    && !cur.expenses && !cur.nonCash;
-    // to-do 25: mismo criterio que `sinGastos` acá arriba y que la tabla de deuda de abajo — un
-    // cero que la fuente no publica no se muestra como cero.
+    // Mismo criterio para la deuda: un cero que la fuente no publica no se muestra como cero.
     const sinDeuda = deudaNoDesglosada(cur);
     const extraStat = extraTotal !== undefined
       ? `<div class="stat" data-k="extra"><div class="label" title="${t('stat.extra.tip','Intereses netos y otros ajustes que no son Ingresos ni Gastos operativos, pero sí suman al Resultado neto')}">${t('stat.extra','Int.')}</div><div class="value ${extraTotal>=0?'pos':'neg'}">${fmtAmount(extraTotal, currentCurrency)}</div></div>`
@@ -495,19 +314,11 @@
   }
 
 
-  // Mismo criterio que drawTrendChart (Boca): un ejercicio con reportType:'placeholder' (ver
-  // riverFiscalYearMeta/racingFiscalYearMeta) se grafica como `null`, barra vacía, en vez de un
-  // número inventado. 'press_estimate' y 'unofficial_mirror' SÍ se grafican, son cifras reales
-  // reportadas, solo que no vienen del documento primario del club. Conversión de moneda (Versión
-  // 32): cada año se convierte con SU PROPIO yearMetaFor (no un fx único), porque distintos
-  // ejercicios de un mismo club pueden estar en ARS (2024 en adelante) o USD (2009-2011).
+  // Un ejercicio placeholder se grafica como null (barra vacía), no con un número inventado; press_estimate y unofficial_mirror
+  // sí se grafican. Cada año se convierte con SU yearMetaFor: un mismo club puede tener ejercicios en monedas distintas.
   function drawTrendChartGeneric(clubId, computedArr){
     if(typeof Chart === 'undefined') return;
     const ctx = document.getElementById('trendChart').getContext('2d');
-    // Ternario, no un objeto { river: riverFiscalYearMeta, racing: racingFiscalYearMeta } armado de
-    // una: ese objeto evalúa LAS DOS propiedades al crearse, y con lazy-loading (loadClubData en
-    // index.html) el archivo del club que NO se está mirando puede no estar cargado todavía, tira
-    // ReferenceError. El ternario solo evalúa la rama que efectivamente hace falta.
     const isReal = year => reportTypeForYear(clubId, year) !== 'placeholder';
     const labels = computedArr.map(c => String(c.year));
     const revenueData = computedArr.map(c => isReal(c.year) ? toDisplayValue(c.revenue, yearMetaFor(clubId, c.year), currentCurrency) : null);
@@ -519,11 +330,8 @@
         {label:'Ingresos', data:revenueData, backgroundColor:'#0a2b5c'},
         {label:'Gastos', data:expensesData, backgroundColor:'#b5372b'},
       ]},
-      // layout.padding.top: deja un margen libre arriba del área de trazado para que el "$" de
-      // .chart-axis-dollar (span de HTML superpuesto, ver CSS) no quede tapado por/tapando la
-      // etiqueta del tick más alto del eje Y, bug real reportado por Guido con captura: sin este
-      // padding, el tick de arriba (ej. "90") se dibuja casi en el mismo pixel donde está
-      // posicionado el "$", y quedan superpuestos/ilegibles los dos.
+      // layout.padding.top: margen arriba del área de trazado para que el "$" de .chart-axis-dollar (HTML superpuesto) no pise el
+      // tick más alto del eje Y.
       options:{responsive:true, maintainAspectRatio:false, layout:{padding:{top:26}}, plugins:{legend:{position:'bottom'}}, scales:{y:{beginAtZero:true, title:{display:false}}, x:{title:{display:true, text:'Ejercicio'}}}}
     });
   }
@@ -546,12 +354,12 @@
 
 
   function updateFinanzasByGestionGeneric(clubId){
-    const gestiones = gestionesByClub[clubId] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
+    const gestiones = gestionesByClub[clubId] || {};
     const key = document.getElementById('gestionSelect').value;
     const g = gestiones[key];
     if(!g) return;
     const cur = computeYearGeneric(clubId, g.lastYear);
-    if(!cur) return;  // Versión 131: sin club elegido no hay ejercicio que mostrar
+    if(!cur) return; // sin club elegido no hay ejercicio que mostrar
     const prev = g.firstYear !== g.lastYear ? computeYearGeneric(clubId, g.firstYear) : null;
     const plTotals = renderNativePLTable(clubId, cur.year, cur.yearLabel, 'finanzasPLTable');
     renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
@@ -569,13 +377,12 @@
   function updateFinanzasByAnioGeneric(clubId){
     const y = FIN_SEL.primary();
     const cur = computeYearGeneric(clubId, y);
-    if(!cur) return;  // Versión 131: sin club elegido no hay ejercicio que mostrar
+    if(!cur) return; // sin club elegido no hay ejercicio que mostrar
     const plTotals = renderNativePLTable(clubId, cur.year, cur.yearLabel, 'finanzasPLTable');
-    // to-do 147, paso 5a: en la vista multi-año y más de un ejercicio, la tabla de una columna por año
-    // (js/finanzas-multi.js) reemplaza a la de arriba en pantalla. La de arriba se arma igual: sus
-    // totales son los del ejercicio más nuevo y los usan los KPIs.
+    // En la vista multi-año con más de un ejercicio, la tabla de una columna por año (js/finanzas-multi.js) reemplaza a la de arriba
+    // en pantalla. La de arriba se arma igual: sus totales son los del ejercicio más nuevo y los usan los KPIs.
     const ysSel = FIN_SEL.years();
-    // Ajustado por inflación (paso 11) también con UN ejercicio: la tabla de un año no sabe ajustar.
+    // Ajustado por inflación también con UN ejercicio: la tabla de un año no sabe ajustar.
     const multiTabla = !!window.FIN_MULTI && (ysSel.length > 1 || (window.FIN_REAL && FIN_REAL.activo() && ysSel.length === 1)) && typeof renderMultiPLTable === 'function';
     document.getElementById('finanzasPLTable').hidden = multiTabla;
     const tablaMulti = document.getElementById('finanzasPLMulti');
@@ -585,13 +392,12 @@
       else if(window.FIN_MULTI_PL) FIN_MULTI_PL.ocultar();
     }
     renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
-    // to-do 147, paso 6: en la vista multi-año, los KPIs dicen de qué ejercicio son, se comparan contra el
-    // primero elegido y llevan una sparkline (js/finanzas-multi.js). El número grande no cambia: sigue
-    // saliendo de los totales de la tabla de arriba.
+    // Vista multi-año: los KPIs dicen de qué ejercicio son, se comparan contra el primero elegido y llevan sparkline
+    // (js/finanzas-multi.js). El número grande sigue saliendo de los totales de la tabla.
     if(window.FIN_MULTI && window.FIN_MULTI_KPIS) FIN_MULTI_KPIS.render(clubId, ysSel);
     if(window.FIN_MULTI && window.FIN_MULTI_CHART) FIN_MULTI_CHART.render(clubId, ysSel);
     renderDebtBlockGeneric(cur, null, 'finanzasDebtTable');
-    // to-do 147, paso 8: en la vista multi-año y más de un ejercicio, la deuda también va con una columna por año.
+    // Vista multi-año con más de un ejercicio: la deuda también va con una columna por año.
     const deudaMulti = document.getElementById('finanzasDebtMulti');
     if(deudaMulti && window.FIN_MULTI_DEBT){
       document.getElementById('finanzasDebtTable').hidden = multiTabla;
@@ -600,9 +406,7 @@
     }
     drawTrendChartGeneric(clubId, [cur]);
     drawBreakdownChartGeneric(cur);
-    // to-do 147, paso 9: en la vista multi-año los cards de presupuesto (Supuestos, Presupuesto Financiero,
-    // Inversiones, Torneos) son los del presupuesto MÁS NUEVO elegido (decisión de Guido), y llevan su
-    // año en el título: con varios ejercicios en pantalla, sin el año no se sabe de cuál son.
+    // Vista multi-año: los cards de presupuesto son los del presupuesto MÁS NUEVO elegido, con su año en el título.
     const yPresu = window.FIN_MULTI ? presupuestoMasNuevoElegido(clubId) : y;
     renderSupuestosCard(clubId, yPresu);
     renderPresupuestoFinancieroCard(clubId, yPresu);
@@ -622,27 +426,17 @@
     return null;
   }
   function labelEjercicioCorto(clubId, y){
-    return esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
+    return esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // por ejercicio, no por club
   }
 
 
   function populateFinanzasSelectors(clubId){
     const gestionSelect = document.getElementById('gestionSelect');
     const anioSelect = document.getElementById('anioSelect');
-    // Antes de reconstruir el <select>, guardamos qué ejercicio se estaba mirando (del club
-    // anterior) para tratar de mantenerlo al cambiar de club, o el más cercano en el tiempo si ese
-    // ejercicio puntual no existe para el club nuevo. Sin esto, el <select> siempre volvía a la
-    // primera opción (el ejercicio más lejano, si la lista no estaba ordenada, ver más abajo).
+    // Se guarda el ejercicio que se estaba mirando para mantenerlo al cambiar de club (o el más cercano si no existe).
     const previousYear = FIN_SEL.primary();
-    // finanzasGestiones/finanzasYears (Versión 102, ver comentario de cabecera en data/boca-data.js):
-    // campos OPCIONALES en CLUB_GENERIC_DATA[clubId], para un club que quiera mostrar en el <select>
-    // de Finanzas menos gestiones/años de los que tiene cargados en gestionesByClub/fiscalYearMeta
-    // (Boca: solo Riquelme y los 4 ejercicios reales/pendientes, ver Versión 81 del historial, "quita
-    // los años placeholder de Finanzas" — Mercado de Pases/Resultados/Comparar Gestiones siguen
-    // usando el set completo, sin filtrar, vía gestionesByClub/fiscalYearMeta directo). Cualquier
-    // club sin estos 2 campos (el resto) muestra TODAS sus gestiones/años, sin cambios.
-    // Versión 131: sin club elegido (cold start) o con el archivo del club todavía sin bajar, los
-    // selectores quedan vacíos en vez de tirar TypeError. Ver `clubCargado()` en index.html.
+    // finanzasGestiones/finanzasYears (opcionales en CLUB_GENERIC_DATA[clubId]): un club que quiera mostrar en Finanzas menos
+    // gestiones/años de los que tiene cargados. Sin club elegido o con su archivo sin bajar, los selectores quedan vacíos.
     const gd = (window.CLUB_GENERIC_DATA || {})[clubId];
     if(!gd){
       gestionSelect.innerHTML = '';
@@ -650,24 +444,13 @@
       FIN_SEL.set([]);
       return;
     }
-    const gestiones = gestionesByClub[clubId] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
+    const gestiones = gestionesByClub[clubId] || {};
     const gestionKeys = gd.finanzasGestiones || Object.keys(gestiones);
     gestionSelect.innerHTML = gestionKeys.map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
-    // REGLA (Versión 56): el sufijo entre paréntesis sale de `anioDropdownSuffix(reportType)` (mismo
-    // criterio para cualquier club), no de un texto suelto por año (cada uno redactado distinto:
-    // "presupuestado", "esperando datos"). REGLA (Versión 61, pedido explícito de Guido: "que no
-    // aparezca 'ejercicio 2020/2021' sino '2020/2021'. Ejercicio sino queda muy redundante y agota la
-    // vista"): sin el prefijo "Ejercicio " que tenían todas las opciones antes, el rango de años solo.
-    // El prefijo sigue vivo en OTRO lugar (el header "Ejercicio/Balance/Presupuesto AAAA/AAAA" de la
-    // tabla Estado de resultados, `ejercicioLabel()`), esto solo afecta el texto del propio `<select>`.
-    // Object.keys() de un objeto con claves numéricas ("2024","2025"...) las devuelve SIEMPRE en
-    // orden ASCENDENTE (son "integer-like keys", JS las reordena así sin importar el orden en el
-    // código fuente), por eso se ordena acá a mano, descendente.
+    // Opción del dropdown: el rango de años solo (sin "Ejercicio ") + el sufijo de anioDropdownSuffix(). Object.keys() devuelve las
+    // claves numéricas siempre en orden ascendente, por eso se ordena acá, descendente.
     const meta = gd.fiscalYearMeta;
     const yearKeys = gd.finanzasYears || Object.keys(meta).map(Number);
-    // AGREGADO al onboardear Brasil: `isCalendarYearClub` (js/finanzas-calc.js) evita el rango de
-    // temporada "AAAA-1/AAAA" para un club cuyo ejercicio es el año calendario — mismo criterio que
-    // ejercicioLabel(), ver su comentario para el detalle de por qué el rango sería falso acá.
     const years = yearKeys.slice().sort((a,b) => b - a).map(y => ({
       value:y, label: (esEjercicioCalendario(clubId, y) ? String(y) : (y-1)+'/'+y)+anioDropdownSuffix((meta[y]||{}).reportType),
     }));
@@ -677,27 +460,19 @@
       const target = exact || years.reduce((best, y) => Math.abs(y.value - previousYear) < Math.abs(best.value - previousYear) ? y : best);
       anioSelect.value = String(target.value);
     }
-    // Con los cards de ejercicios (vista multi-año, to-do 147 paso 4) la selección la maneja FIN_ANIOS:
-    // default de 5 al cambiar de club, y la misma selección si solo cambió el idioma o la moneda.
+    // Con los cards de ejercicios (vista multi-año) la selección la maneja FIN_ANIOS: default de 5 al cambiar de club, y la misma
+    // selección si solo cambió el idioma o la moneda.
     if(window.FIN_MULTI && window.FIN_ANIOS) FIN_ANIOS.alCargarClub(clubId);
     else FIN_SEL.set([parseInt(anioSelect.value, 10)]);
   }
 
 
-  // Los supuestos/premisas que declara CADA presupuesto viven en `presupuestoSupuestosByYear`,
-  // adentro del `data/<club>-data.js` de cada club (movido acá desde este archivo en la Versión
-  // 135, junto con el Presupuesto Financiero y el de Inversiones). Cuando se onboardea un
-  // presupuesto nuevo, su entrada va ahí: onboardear un club no toca este archivo.
+  // Los supuestos, el Presupuesto Financiero y el de Inversiones de cada presupuesto viven en el data/<club>-data.js de cada club
+  // (presupuestoSupuestosByYear, etc.): onboardear un club no toca este archivo.
 
 
-  // Card "Supuestos": REGLA (Versión 42, reemplaza la regla de la Versión 34 documentada acá
-  // abajo, pedido explícito de Guido). Antes el card SIEMPRE se mostraba, con un mensaje "no hay"
-  // cuando el ejercicio no tenía supuestos (ej. un balance auditado, que no es un presupuesto).
-  // Guido decidió que ese mensaje ocupa espacio sin aportar nada para esos casos: ahora el card se
-  // ESCONDE por completo (display:none en #supuestosCard) cuando el club no declara supuestos
-  // para ese ejercicio, en vez de mostrar la explicación. Mismo criterio
-  // para Presupuesto Financiero, Presupuesto de Inversiones e Ingresos y Egresos por Torneo, más
-  // abajo en este mismo archivo.
+  // Card "Supuestos": se ESCONDE por completo si el club no declara supuestos para ese ejercicio. Mismo criterio para Presupuesto
+  // Financiero, Inversiones y Torneos (Admin/PANTALLA.md, "estos 4 cards se esconden").
   function renderSupuestosCard(clubId, year){
     const card = document.getElementById('supuestosCard');
     const data = datosPresupuesto(clubId, year, 'presupuestoSupuestosByYear');
@@ -718,8 +493,7 @@
   function renderDataQualityBannerForCurrentSelection(){
     const banner = document.getElementById('finanzasDataQualityBanner');
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
-    // to-do 147, paso 9: en la vista multi-año y varios ejercicios, el aviso cubre a TODOS los elegidos, no
-    // solo al más nuevo: un dato de prensa en una columna del medio también tiene que avisarse.
+    // Vista multi-año con varios ejercicios: el aviso cubre a TODOS los elegidos, no solo al más nuevo.
     if(window.FIN_MULTI && !isGestion && FIN_SEL.years().length > 1){
       const metas = ((window.CLUB_GENERIC_DATA || {})[currentClub] || {}).fiscalYearMeta || {};
       const OK = { official_budget:1, official_balance_sheet:1, official_budget_and_balance:1 };
@@ -739,22 +513,14 @@
       ? ((gestionesByClub[currentClub] || {})[document.getElementById('gestionSelect').value] || {}).lastYear
       : FIN_SEL.primary();
     const meta = (((window.CLUB_GENERIC_DATA || {})[currentClub] || {}).fiscalYearMeta || {})[year] || {};
-    // REGLA (Versión 58): 'official_budget_and_balance' (ejercicio con las 2 fuentes reales
-    // cargadas a la vez, ver club-or-year-onboarding/SKILL.md sección 11) es tan "real" como
-    // 'official_balance_sheet'/'official_budget' solos, tiene que ocultar el banner igual. Bug
-    // real encontrado al cargar el primer ejercicio con este reportType (Racing 2020): al no estar
-    // en esta lista, caía al default del ternario de abajo ("Dato placeholder, número inventado
-    // para probar el diseño del sitio"), mostrando esa advertencia FALSA para un ejercicio 100%
-    // real (con MÁS fuente que la mayoría, no menos).
+    // 'official_budget_and_balance' es tan real como los otros dos: también oculta el banner (si no, caía al aviso de placeholder).
     if(meta.reportType === 'official_budget' || meta.reportType === 'official_balance_sheet' || meta.reportType === 'official_budget_and_balance'){
       banner.style.display = 'none';
       return;
     }
     const src = sources[meta.sourceId];
     banner.style.display = 'block';
-    // i18n (to-do 42): cada aviso es una clave entera, no fragmentos concatenados (mismo motivo que
-    // debtDisclosureNote en js/finanzas-calc.js: son frases donde el orden de las palabras no tiene
-    // por qué coincidir entre idiomas).
+    // Cada aviso es una clave entera de t(), no fragmentos concatenados: el orden de las palabras cambia entre idiomas.
     const kind = meta.reportType === 'pending_official'
       ? t('finanzas.banner.pending', 'Ejercicio todavía no informado por el club: no hay balance ni presupuesto oficial cargado todavía para este período, se está esperando que Boca lo publique')
       : meta.reportType === 'press_estimate'
@@ -762,20 +528,14 @@
       : meta.reportType === 'unofficial_mirror'
       ? t('finanzas.banner.mirror', 'Balance real y auditado (informe de auditoría independiente incluido), pero descargado de una réplica de una comunidad de hinchas, no del dominio oficial del club')
       : t('finanzas.banner.placeholder', 'Dato placeholder, número inventado para probar el diseño del sitio, no es real');
-    // Versión 125: el banner ya no repite el documento ni sus salvedades, eso pasó a la ficha
-    // de Fuentes del final de la sección, que las muestra para TODOS los ejercicios y no solo
-    // para los que tienen algo malo que avisar. Acá queda solo la advertencia, que es su trabajo.
+    // El documento y sus salvedades están en la ficha de Fuentes del final de la sección; acá queda solo la advertencia.
     banner.innerHTML = `⚠️ <strong>${kind}.</strong>` +
       (src ? ` ${t('fuentes.banner.ver', 'El documento y sus salvedades están en "Fuentes", al final de esta sección.')}` : '');
   }
 
 
-
-  // renderWaterfallSteps: genérico (Versión 35). Pinta una lista de steps {label, op, magnitude,
-  // isResult?} adentro de containerId, convirtiendo cada magnitude con `meta` + currentCurrency. Lo
-  // Lo usan los waterfalls del Presupuesto Financiero de cualquier club: los steps salen de
-  // `presupuestoFinancieroByYear` del propio club (data/<club>-data.js) y la meta de
-  // yearMetaFor(clubId, year), así que un club nuevo no toca esta función.
+  // Pinta los steps {label, op, magnitude, isResult?} del waterfall del Presupuesto Financiero, convirtiendo cada magnitude con
+  // `meta` + currentCurrency. Los steps salen de presupuestoFinancieroByYear del club.
   function renderWaterfallSteps(containerId, steps, meta){
     const wrap = document.getElementById(containerId);
     if(!wrap) return;
@@ -788,27 +548,8 @@
   }
 
 
-
-
-  // Racing agrupa sus inversiones/bienes de uso en UNA sola línea de egresos extraordinarios
-  // ("Pago de gastos de compra de bienes de uso y mejoras" 2026 / equivalente 2027), sin desglosar
-  // por obra individual como sí hace Boca (que nombra cada proyecto con su monto). Se muestra el
-  // total real (ya cargado en racingExpenseLinesByYear como "Egresos extraordinarios...") con una
-  // nota explícita de que no hay desglose por proyecto, no es un "no hay dato", es "el documento
-  // no llega a ese nivel de detalle".
-
-
-  // Versión 135: las dos cards se arman de los datos del club, sin una sola rama por club. Hasta
-  // acá, el Presupuesto Financiero y el de Inversiones de Boca 2026/27 estaban escritos a mano
-  // como HTML adentro de index.html (133 líneas) y un `isBoca2027` decidía cuál de los dos
-  // bloques mostrar; los demás clubes tenían una versión genérica mucho más pobre, y sus datos
-  // vivían en ESTE archivo en vez del `data/<club>-data.js`. Ahora los dos casos usan el mismo
-  // render: el que tiene desglose lo declara, el que no, no.
-  //
-  // Las tablas con `formato:'ars-exacto'` se muestran en pesos enteros con separador de miles,
-  // como las imprime el documento del club, y NO responden al toggle de moneda. Es el
-  // comportamiento que ya tenían cuando eran HTML fijo; cambiarlo es una decisión aparte, no algo
-  // que corresponda colar en una mudanza.
+  // Las dos cards de presupuesto se arman de los datos del club, sin ramas por club: el que tiene desglose lo declara.
+  // Las tablas con `formato:'ars-exacto'` van en pesos enteros, como las imprime el documento, y NO responden al toggle de moneda.
   function fmtArsExacto(magnitudeEnMillones){
     return Math.round(magnitudeEnMillones * 1e6).toLocaleString('es-AR');
   }
@@ -874,39 +615,18 @@
   }
 
 
-  // Cards "Ingresos y Egresos por Torneo" (Versión 41, pedido de Guido: "ver cuánto ingresa y
-  // egresa cada torneo"). HTML estático para Boca 2027 (único ejercicio con este desglose real, ver
-  // Clubes/Argentina/Boca/presupuesto-26-27.md pág. 12 para Ingresos por competencia y pág. 22-23
-  // para Gastos de "Organización de Espectáculos" por competencia). REGLA (Versión 42): para
-  // cualquier otro club/año, los 3 cards se esconden por completo (mismo criterio nuevo que
-  // Supuestos/Presupuesto Financiero/Inversiones, ver comentario en renderSupuestosCard) en vez de
-  // mostrar un card de fallback explicando por qué no hay.
-  //
-  // OJO, alcance real de "Gastos" en estos 3 cards: es SOLO el costo de organización/logística de
-  // los partidos de ESE torneo (seguridad, viajes, concentración, premios grupales por resultado,
-  // AFA, etc.). El presupuesto NO desglosa los sueldos/primas del plantel por torneo (son una única
-  // cifra para todo el plantel, sin importar la competencia), así que la "Diferencia" de cada card
-  // NO es el resultado económico real de esa copa/torneo, está aclarado en cada card, no solo acá,
-  // porque es un matiz fácil de leer mal ("¿Boca pierde plata jugando la Liga?": no, solo que ese
-  // costado del gasto, sueldos, no está en esta cuenta).
+  // Card "Ingresos y Egresos por Torneo": HTML estático de Boca 2026/27, el único ejercicio con este desglose; para el resto se
+  // esconde. Los "Gastos" de ese card son solo organización y logística de cada torneo (el presupuesto no reparte los sueldos por
+  // competencia), así que la "Diferencia" no es el resultado real del torneo: cada card lo aclara.
   function renderTorneosCard(clubId, year){
     const isBoca2027 = clubId === 'boca' && year === 2027;
     document.getElementById('torneosBoca2027').style.display = isBoca2027 ? '' : 'none';
   }
 
 
-  // FICHA DE FUENTE del ejercicio que se está mirando (Versión 125). Reemplaza a
-  // `finanzasClubSourceText`, que era un objeto escrito a mano con 3 entradas (Boca, Racing, River)
-  // y dejaba a los otros 38 clubes sin citar ninguna fuente. Peor todavía: `sources{}` tenía 91
-  // entradas con 61 URLs y se consumía en UN solo lugar, el banner de calidad de dato, que hace
-  // `return` temprano cuando el ejercicio es oficial, o sea que los 88 ejercicios REALES no
-  // mostraban su fuente en ningún lado, y el sitio prometía "todo dato cita su origen". Esta card
-  // se arma de los datos, así que un club nuevo la trae sin tocar una línea de acá.
-  // El nivel de fuente y la procedencia del tipo de cambio son etiquetas NUESTRAS, no texto del
-  // documento, así que se traducen (a diferencia del título de un balance, que sale textual de la
-  // fuente y queda en su idioma original, mismo criterio que los rubros de "Formato del club").
-  // Las etiquetas salen de `data/sources-view.js`, compartidas con `fuentes.html`: antes estaban
-  // duplicadas acá y en el generador, y podían decir cosas distintas del mismo documento.
+  // FICHA DE FUENTE del ejercicio que se está mirando, armada de los datos: un club nuevo la trae sin tocar este archivo. Nivel de
+  // fuente y procedencia del tipo de cambio son etiquetas nuestras y se traducen (el título de un documento no). Las etiquetas salen
+  // de data/sources-view.js, compartidas con fuentes.html.
   function nivelFuente(reliability){
     const n = sourceLevel(reliability);
     return { label: t('fuentes.nivel.' + reliability, n.label), color: n.color };
@@ -940,9 +660,7 @@
     </div>`;
   }
 
-  // La pestaña Fuentes: todos los documentos del club seleccionado (no de un ejercicio suelto),
-  // más el link al listado completo del sitio. Escala por construcción: nunca lista más de un club,
-  // así que da igual que el sitio tenga 41 clubes o 1000.
+  // La pestaña Fuentes: todos los documentos del club seleccionado (nunca más de un club), más el link al listado completo.
   function renderFuentesClubCard(){
     const body = document.getElementById('fuentesClubBody');
     if(!body) return;
@@ -974,10 +692,8 @@
     }).join('') + linkTodasLasFuentes();
   }
 
-  // Las salvedades que se le muestran al visitante: la `publicNote` del documento (escrita para un
-  // lector, la tienen 17 de 91) más lo que `sourceCaveats()` deriva de los propios datos.
-  // NUNCA `note`, que es la nota interna de una sesión para la siguiente y hasta la Versión 126 se
-  // publicaba tal cual, con rutas del disco de Guido adentro. Ver data/sources-view.js.
+  // Salvedades para el visitante: la `publicNote` del documento más lo que sourceCaveats() deriva de los datos. NUNCA `note`, que
+  // es interna (ver data/sources-view.js).
   function salvedadesDe(src, metas){
     const partes = [];
     if(src.publicNote) partes.push(src.publicNote);
@@ -991,16 +707,8 @@
     return Object.keys(meta).filter(y => meta[y].sourceId === sourceId).map(y => meta[y]);
   }
 
-  // DOS LINKS Y NO UNO (Versión 162, punto 2 del plan de escala). Hasta acá el único link
-  // iba a `fuentes.html`, que era la página con los documentos de TODOS los clubes. Ahora
-  // cada club tiene la suya (`fuentes/<clubId>.html`, generada por
-  // tools/generate-fuentes-page.js) y `fuentes.html` es el índice, así que el visitante que
-  // está mirando un club va primero a SU página, y el índice queda como la salida hacia el
-  // resto.
-  // OJO: un club sin ningún documento cargado NO tiene página generada (el generador solo
-  // escribe las de los clubes que aparecen en sources{}), así que en ese caso se muestra
-  // solo el link al índice. Linkear una página que no existe sería un 404 servido por
-  // Netlify, que publica la raíz del repo tal cual.
+  // Dos links: la página del club (fuentes/<clubId>.html) y el índice (fuentes.html). Un club sin documentos no tiene página
+  // generada, así que ahí solo va el link al índice (si no, sería un 404).
   function linkTodasLasFuentes(){
     const tiene = Object.keys(sources).some(id => sources[id].clubId === currentClub);
     const otros = `<a href="fuentes.html">${t('fuentes.card.others', 'Ver fuentes de otros equipos')} →</a>`;
@@ -1014,8 +722,7 @@
     const body = document.getElementById('finanzasFuentesBody');
     if(!body) return;
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
-    // to-do 147, paso 9: en la vista multi-año y varios ejercicios, un renglón plegable por ejercicio elegido
-    // (el más nuevo abierto), cada uno con la misma ficha que se ve con un solo ejercicio, y el
+    // Vista multi-año con varios ejercicios: un renglón plegable por ejercicio (el más nuevo abierto), cada uno con su ficha, y el
     // documento del presupuesto cuando el año tiene las dos fuentes.
     if(window.FIN_MULTI && !isGestion && FIN_SEL.years().length > 1){
       const metas = ((window.CLUB_GENERIC_DATA || {})[currentClub] || {}).fiscalYearMeta || {};
@@ -1034,8 +741,8 @@
     body.innerHTML = fichaFuenteDeAnio(year) + linkTodasLasFuentes();
   }
 
-  // La ficha de fuente de UN ejercicio: documento, nivel, tipos de cambio y salvedades. La usan la
-  // vista de un ejercicio y cada renglón de la vista multi-año (paso 9).
+  // La ficha de fuente de UN ejercicio: documento, nivel, tipos de cambio y salvedades. La usan la vista de un ejercicio y cada
+  // renglón de la vista multi-año.
   function fichaFuenteDeAnio(year){
     const meta = (((window.CLUB_GENERIC_DATA || {})[currentClub] || {}).fiscalYearMeta || {})[year] || {};
     const src = sources[meta.sourceId];
@@ -1074,7 +781,7 @@
 
   // ---------- MERCADO DE PASES ----------
   function populatePasesSelectors(clubId){
-    const gestiones = gestionesByClub[clubId] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
+    const gestiones = gestionesByClub[clubId] || {};
     document.getElementById('pasesGestionFilter').innerHTML = '<option value="todas">Todas</option>' +
       Object.keys(gestiones).map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
     const data = pasesDataForClub(clubId) || [];
@@ -1119,7 +826,7 @@
 
   // ---------- RESULTADOS DEPORTIVOS ----------
   function populateResultadosSelector(clubId){
-    const gestiones = gestionesByClub[clubId] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
+    const gestiones = gestionesByClub[clubId] || {};
     document.getElementById('resultadosGestionSelect').innerHTML =
       Object.keys(gestiones).map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
   }
@@ -1140,7 +847,7 @@
 
 
   function renderTitulosTable(){
-    const gestiones = gestionesByClub[currentClub] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
+    const gestiones = gestionesByClub[currentClub] || {};
     const data = titulosDataForClub(currentClub) || [];
     document.querySelector('#resultadosTable tbody').innerHTML = data.map(t => `
       <tr><td>${t.anio}</td><td>${t.competencia}</td><td>${t.resultado}</td><td>${gestiones[t.gestion] ? gestiones[t.gestion].nombre : t.gestion}</td></tr>
@@ -1150,7 +857,7 @@
 
   // ---------- COMPARAR ----------
   function populateCompararSelectors(clubId){
-    const gestiones = gestionesByClub[clubId] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
+    const gestiones = gestionesByClub[clubId] || {};
     const keys = Object.keys(gestiones);
     const optsHtml = keys.map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
     document.getElementById('compA').innerHTML = optsHtml;
@@ -1162,7 +869,7 @@
   function renderComparar(){
     const aKey = document.getElementById('compA').value;
     const bKey = document.getElementById('compB').value;
-    const gestiones = gestionesByClub[currentClub] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
+    const gestiones = gestionesByClub[currentClub] || {};
     const ga = gestiones[aKey], gb = gestiones[bKey];
     if(!ga || !gb) return;
     const a = computeYearForClub(currentClub, ga.lastYear);
@@ -1201,25 +908,13 @@
   document.getElementById('compB').addEventListener('change', renderComparar);
 
 
-  // ---------- INICIO ----------
-  // ACÁ VIVÍA TODO EL RENDER DE INICIO y ya no existe (Versión 184, to-do 33): los 4 KPIs
-  // del club activo (`renderInicioStats()`), sus 3 gráficos de evolución
-  // (`renderInicioCharts()` y sus 8 helpers) y los 3 helpers de "el último ejercicio que
-  // informa X". Inicio dejó de mostrar el club activo: ahora es la bifurcación más la
-  // vidriera de rankings de liga, que dibuja `js/liga.js` desde `data/destacados.js`.
-  // Los dos gráficos de evolución encima duplicaban al `trendChart` de Finanzas, que sigue
-  // donde estaba. Si hace falta recuperar algo, está en git antes de la Versión 184.
-
-  // Atajo de traducción (Versión 115). `I18N` vive en js/i18n.js, que se carga ANTES que este
-  // archivo. Se envuelve igual por las dudas: si i18n.js no cargara, el sitio tiene que seguir
-  // funcionando en castellano en vez de tirar ReferenceError y dejar Inicio en blanco.
+  // Atajo de traducción. I18N vive en js/i18n.js, que carga antes; se envuelve igual para que, si no cargara, el sitio siga en
+  // castellano en vez de tirar ReferenceError.
   function t(key, es){ return (window.I18N && window.I18N.t) ? window.I18N.t(key, es) : es; }
 
-  // Traduce SOLO las etiquetas que son del sitio (buckets de Formato simplificado y catch-alls,
-  // ver data/site-labels.js). Una etiqueta que no está en ese mapa es un rubro textual del balance
-  // del club (`rawLabel`) y pasa de largo SIN tocar, que es justo lo que queremos: el sitio muestra
-  // cada club tal cual lo reporta. Ojo: esto traduce al DIBUJAR, no cambia `label`, porque el
-  // castellano es la clave con la que matchea findPrevVal()/el overlay de presupuesto.
+  // Traduce SOLO las etiquetas del sitio (filas de Formato simplificado y catch-alls, data/site-labels.js); un rubro textual del
+  // balance del club pasa sin tocar. Traduce al DIBUJAR, no cambia `label`: el castellano es la clave con la que matchean
+  // findPrevVal() y el overlay.
   function tLabel(label){
     const key = (window.SITE_LABEL_KEYS || {})[label];
     return key ? t(key, label) : label;
