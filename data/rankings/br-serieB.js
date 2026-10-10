@@ -8,7 +8,7 @@
 //   2024: 16 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -178,7 +178,6 @@ window.RANKINGS["br-serieB"] = {
   },
   2021: {
     leagueSize: null,
-    sinDato: ["avai-br"],
     clubs: [
       { id:"goias-br", revenue:8.397, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2021",
@@ -186,6 +185,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"remo-br", revenue:7.698, reportType:"official_balance_sheet",
         sourceId:"remo-br-demonstracoes-contabeis-2021",
         mix:[["Cuotas Sociales",0.158],["Comercial / Sponsors",1.379],["Estadio",1.708],["Televisión",0.008],["Otras secciones deportivas",0.149],["Otros ingresos",4.296]] },
+      { id:"avai-br", revenue:4.529, reportType:"official_balance_sheet",
+        sourceId:"avai-br-demonstracoes-contabeis-2021",
+        mix:[["Cuotas Sociales",0.625],["Comercial / Sponsors",0.824],["Televisión",2.318],["Venta de Jugadores",0.45],["Otros ingresos",0.312]] },
       { id:"crb-br", revenue:4.197, reportType:"official_balance_sheet",
         sourceId:"crb-br-balanco-patrimonial-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",4.197]] },

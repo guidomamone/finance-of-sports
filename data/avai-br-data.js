@@ -87,6 +87,17 @@ const avaibrRevenueLinesByYear = {
     { rawLabel:'Receceita negociação Atletas Profissionais', normalizedCategory:'player_sales', amountNative:8.474, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
     { rawLabel:'Deságio Recuperação Judicial', normalizedCategory:'other_income', amountNative:19.688, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
   ],
+  // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Avai/demonstracoes-contabeis-2021.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2021: [
+    { rawLabel:'Receitas de Mensalidades dos Sócios', normalizedCategory:'member_dues', amountNative:3.488065, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Receitas de Negociação de Atletas Profissionais', normalizedCategory:'player_sales', amountNative:2.509456, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Receitas Arrendaments, Patrocínios e Publicidades', normalizedCategory:'sponsorship_commercial', amountNative:3.473746, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.96
+    { rawLabel:'Receitas de Repasses da Loteria Timemania', normalizedCategory:'other_income', amountNative:0.619095, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.99
+    { rawLabel:'Receitas de Venda e uso Marca', normalizedCategory:'sponsorship_commercial', amountNative:1.12498, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Receitas TV e transmissão jogos', normalizedCategory:'broadcasting', amountNative:12.936521, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Receitas Diversas', normalizedCategory:'other_income', amountNative:1.12389, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+  ],
 };
 const avaibrExpenseLinesByYear = {
   2025: [ // tools/cargar.mjs (2026-10-10)
@@ -300,6 +311,16 @@ const avaibrExpenseLinesByYear = {
     { rawLabel:'Honorários Profissionais PJ', normalizedCategory:'admin_general_expense', amountNative:-3.068, disclosureLevel:'aggregated' }, // pág. 38, Jev 1
     { rawLabel:'Serviços de terceiros', normalizedCategory:'admin_general_expense', amountNative:-1.335, disclosureLevel:'aggregated' }, // pág. 38, Claude 0.85
   ],
+  2021: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Custos Futebol Profissional', normalizedCategory:'lump_football_operations_expense', amountNative:-37.345703, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Custos Futebol Feminino', normalizedCategory:'youth_other_sports_expense', amountNative:-0.354097, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Custos Esportes Olímpicos', normalizedCategory:'youth_other_sports_expense', amountNative:-0.012103, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Administrativas', normalizedCategory:'admin_general_expense', amountNative:-12.192491, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Depreciação e Amortização do Imobilizado', normalizedCategory:'depreciation', amountNative:-0.260315, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Materiais e despesas diversas', normalizedCategory:'other_expenses', amountNative:-0.096396, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'CMV e Icms', normalizedCategory:'admin_general_expense', amountNative:-0.759297, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Futebol Amador (Custos - Transferência)', normalizedCategory:'youth_other_sports_expense', amountNative:-2.064896, disclosureLevel:'aggregated' }, // pág. 4, precedente
+  ],
 };
 const avaibrFiscalYearMeta = {
   2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -318,8 +339,8 @@ const avaibrFiscalYearMeta = {
     officialTotalRevenue:43.851, officialTotalExpenses:84.492, officialPAT:-83.429,
   },
   2022: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Cuotas Sociales, Comercial / Sponsors, Estadio, Televisión
-    incluidoEn:{ member_dues:{ en:'lump_football_operations', posible:true, por:'precedente' }, sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' } },
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2023, 2024, 2025): Cuotas Sociales, Comercial / Sponsors, Televisión
+    incluidoEn:{ member_dues:{ en:'lump_football_operations', posible:true, por:'precedente' }, sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2022-12-31',
     sourceId:'avai-br-demonstracoes-contabeis-2022',
     reportType:'official_balance_sheet',
@@ -365,6 +386,39 @@ const avaibrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:57.822, officialTotalExpenses:91.848, officialPAT:-68.731,
   },
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: subtotal impreso que se sumaba ademas de sus componentes (ingresos 75,9M y gastos 167,3M en vez de 25,3M y 53,1M). Se saca y quedan sus componentes. Cuenta completa del estado (L121-148): ingresos 25.303.151 - custo bruto 43.772.256 = -18.469.105 (L140); -18.469.105 - despesas operacionais 15.142.893 - Avai Store 855.694 = -34.467.692 (L148, impreso).
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: subtotal impreso que se sumaba ademas de sus componentes (ingresos 75,9M y gastos 167,3M en vez de 25,3M y 53,1M). Se saca y quedan sus componentes. Cuenta completa del estado (L121-148): ingresos 25.303.151 - custo bruto 43.772.256 = -18.469.105 (L140); -18.469.105 - despesas operacionais 15.142.893 - Avai Store 855.694 = -34.467.692 (L148, impreso).
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: subtotal impreso que se sumaba ademas de sus componentes (ingresos 75,9M y gastos 167,3M en vez de 25,3M y 53,1M). Se saca y quedan sus componentes. Cuenta completa del estado (L121-148): ingresos 25.303.151 - custo bruto 43.772.256 = -18.469.105 (L140); -18.469.105 - despesas operacionais 15.142.893 - Avai Store 855.694 = -34.467.692 (L148, impreso).
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: subtotal impreso que se sumaba ademas de sus componentes (ingresos 75,9M y gastos 167,3M en vez de 25,3M y 53,1M). Se saca y quedan sus componentes. Cuenta completa del estado (L121-148): ingresos 25.303.151 - custo bruto 43.772.256 = -18.469.105 (L140); -18.469.105 - despesas operacionais 15.142.893 - Avai Store 855.694 = -34.467.692 (L148, impreso).
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: subtotal impreso que se sumaba ademas de sus componentes (ingresos 75,9M y gastos 167,3M en vez de 25,3M y 53,1M). Se saca y quedan sus componentes. Cuenta completa del estado (L121-148): ingresos 25.303.151 - custo bruto 43.772.256 = -18.469.105 (L140); -18.469.105 - despesas operacionais 15.142.893 - Avai Store 855.694 = -34.467.692 (L148, impreso).
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: subtotal impreso que se sumaba ademas de sus componentes (ingresos 75,9M y gastos 167,3M en vez de 25,3M y 53,1M). Se saca y quedan sus componentes. Cuenta completa del estado (L121-148): ingresos 25.303.151 - custo bruto 43.772.256 = -18.469.105 (L140); -18.469.105 - despesas operacionais 15.142.893 - Avai Store 855.694 = -34.467.692 (L148, impreso).
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 2.064.896. Claude 2026-10-09: 'Futebol Amador (Custos - Transferência)' 2.064.896 (L137) es el subtotal de Custos do Futebol Categoria de Base 7.805.604 (L138) menos Transferência para o Imobilizado (5.740.708) (L139): 7.805.604 - 5.740.708 = 2.064.896. La transferencia RESTA y no se puede cargar negativa dentro de gastos, asi que se carga el neto de L137 y salen L138 y L139. Custo bruto: 41.707.360 + 2.064.896 = 43.772.256 (L131).
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: 'Futebol Amador (Custos - Transferência)' 2.064.896 (L137) es el subtotal de Custos do Futebol Categoria de Base 7.805.604 (L138) menos Transferência para o Imobilizado (5.740.708) (L139): 7.805.604 - 5.740.708 = 2.064.896. La transferencia RESTA y no se puede cargar negativa dentro de gastos, asi que se carga el neto de L137 y salen L138 y L139. Custo bruto: 41.707.360 + 2.064.896 = 43.772.256 (L131).
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: 'Futebol Amador (Custos - Transferência)' 2.064.896 (L137) es el subtotal de Custos do Futebol Categoria de Base 7.805.604 (L138) menos Transferência para o Imobilizado (5.740.708) (L139): 7.805.604 - 5.740.708 = 2.064.896. La transferencia RESTA y no se puede cargar negativa dentro de gastos, asi que se carga el neto de L137 y salen L138 y L139. Custo bruto: 41.707.360 + 2.064.896 = 43.772.256 (L131).
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 27.397. Claude 2026-10-09: financiero con su signo: Receita Financeira +27.397 (L130), despesas financeiras deságio (3.995.456) (L134, dentro de los 41.707.360 de Custos Futebol Profissional total: 37.345.703 + 3.995.456 + 354.097 + 12.103 = 41.707.359) y Despesas Financeiras (2.690.087) (L144). Neto -6.658.146. Cierre: ingresos 25.275.754 (25.303.151 - 27.397) - gastos 53.085.300 (43.772.256 - 3.995.456 + 12.192.491 + 260.315 + 855.694) - 6.658.146 = -34.467.692.
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = (3.995.456). Claude 2026-10-09: financiero con su signo: Receita Financeira +27.397 (L130), despesas financeiras deságio (3.995.456) (L134, dentro de los 41.707.360 de Custos Futebol Profissional total: 37.345.703 + 3.995.456 + 354.097 + 12.103 = 41.707.359) y Despesas Financeiras (2.690.087) (L144). Neto -6.658.146. Cierre: ingresos 25.275.754 (25.303.151 - 27.397) - gastos 53.085.300 (43.772.256 - 3.995.456 + 12.192.491 + 260.315 + 855.694) - 6.658.146 = -34.467.692.
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = (2.690.087). Claude 2026-10-09: financiero con su signo: Receita Financeira +27.397 (L130), despesas financeiras deságio (3.995.456) (L134, dentro de los 41.707.360 de Custos Futebol Profissional total: 37.345.703 + 3.995.456 + 354.097 + 12.103 = 41.707.359) y Despesas Financeiras (2.690.087) (L144). Neto -6.658.146. Cierre: ingresos 25.275.754 (25.303.151 - 27.397) - gastos 53.085.300 (43.772.256 - 3.995.456 + 12.192.491 + 260.315 + 855.694) - 6.658.146 = -34.467.692.
+  2021: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2023, 2024, 2025): Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Organización de partidos
+    incluidoEn:{ player_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, player_impairment:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
+    currency:'BRL', fxRef:'BRL@2021-12-31',
+    sourceId:'avai-br-demonstracoes-contabeis-2021',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-6.658146, tax:0,
+    extraRows: [
+      {label:'Receita Financeira', value:0.027397},
+      {label:'Despesas financeiras deságio', value:-3.995456},
+      {label:'Despesas Financeiras', value:-2.690087},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Custos Futebol Profissional', lado:'expense', importe:37.345703, motivo:'Claude 2026-10-09: total de costos del fútbol profesional del estado'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:25.275753, officialTotalExpenses:53.085298, officialPAT:-34.467692,
+  },
 };
 const avaibrPresupuestoOverlayByYear = {};
 
@@ -406,6 +460,12 @@ Object.assign(sources, {
     title:'Avaí Futebol Clube — demonstracoes-contabeis-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'avai-br-demonstracoes-contabeis-2021': {
+    id:'avai-br-demonstracoes-contabeis-2021', clubId:'avai-br',
+    title:'Avaí Futebol Clube — demonstracoes-contabeis-2021 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
