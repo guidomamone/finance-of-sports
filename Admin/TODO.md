@@ -73,10 +73,10 @@ ni en el comentario de ningún archivo de código.
     HECHO: Brasil completo (8 clubes, 61 años, lotes 56-63) y Rusia desde el fisco (tools/bfo-rusia.mjs: 16 clubes, 78 años, con el formulario 6 en los 5 que
     lo usan; no entra Akhmat 2021, sin formulario 2). Escalón 2 sin IA aplicado: costos por elemento de Rostov 2021-2024 y Orenburg 2021-2023.
     FALTA, en este orden:
-    b) Rusia, escalón 2 (tools/bfo-rusia-notas.mjs): abrir 2110 / 2340 / 2350 y los costos con las tablas de las notas explicativas
-       (24 notas, 48 tablas candidatas, ensayo ~US$ 1,60). Falta escribir la llamada, la compuerta (la suma da el código del formulario 2) y la
-       reescritura del año en bfo-rusia.mjs. Las tablas estándar "Затраты на производство" (códigos 5610-5660, gastos por elemento: salarios
-       5620 + cargas 5630) se pueden leer sin IA.
+    b) Rusia, escalón 2 aplicado (tools/bfo-rusia-notas.mjs, US$ 0,72). Queda: las tablas de otros ingresos y gastos que no suman el código
+       del formulario (Krasnodar, Krylia 2021-2025, Rostov 2025, Rubin 2022-2025: la nota los presenta en bruto, el formulario en neto);
+       se podría probar la compuerta contra el total bruto de la nota más una fila de "diferencia de presentación". Sin daño hoy: esos años
+       quedan con el renglón entero.
     c) Los demás países de los "listo-para-alta": Grecia 6, Rep. Checa 6, Colombia 5, Portugal 5, Países Bajos 4, Turquía 3, Ucrania 3,
        Bélgica 2, Corea 2, y Austria, Croacia, Dinamarca, Noruega y Suiza 1 cada uno. Ojo: muchos PDFs de Países Bajos, Portugal y Rep. Checa
        todavía no tienen .md (etapa 2 entera); las 12 preguntas de la revisión del alta (Rapid Wien 2024-25, OB, Sandefjord, Groningen, Rio Ave,

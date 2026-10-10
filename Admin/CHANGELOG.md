@@ -29,6 +29,7 @@ que dice `ESTADO.md` era verdad ese día.
 - `tools/bfo-rusia-notas.mjs`: busca en cada `<año>-poyasneniya.md` las tablas que abren 2110 (ventas por tipo), 2340 y 2350 (otros ingresos y gastos) y los costos por elemento; las de costos por elemento (códigos 5610-5660) se leen sin IA, el resto con una llamada a Claude por nota (solo las ventanas). Compuerta sin IA: la suma de las filas = el código del formulario 2 de ese año (± 2 miles). Guarda `Generados/Rusia/<Club>/<nota>.bfo-notas.json`.
 - `tools/bfo-rusia.mjs --reemplazar`: reescribe los años ya cargados con las filas de las tablas que pasaron (la de la nota del año; si no, la columna del año anterior de la nota siguiente), sin las marcas "posiblemente incluido en" de lo que ya quedó abierto.
 - Sin IA ya pasan: costos por elemento de Rostov 2021-2024 y Orenburg 2021-2023 (Orenburg 2024 no: hubo cambio de existencias).
+- Corrida con IA (US$ 0,72): pasan ventas por tipo de Krasnodar 2024-2025 y Sochi 2021-2022, 2024-2025; costos por elemento de Krasnodar 2024-2025; otros ingresos y gastos de Sochi, Dynamo Makhachkala 2024-2025 y Pari NN 2025. No pasan (la tabla de la nota no suma el código del formulario, por presentación distinta): otros ingresos/gastos de Krasnodar, Krylia, Rostov 2025 y Rubin. Reescritos con `--reemplazar`; ejemplo, Krasnodar 2025: sponsors 1.815, TV 1.200, publicidad 914, merchandising 525, entradas 519, abonos 420 (M de rublos); salarios 4.599 + cargas 413.
 
 ## Versión 645 — Rusia desde los datos oficiales del fisco: `tools/bfo-rusia.mjs` (2026-10-09)
 
