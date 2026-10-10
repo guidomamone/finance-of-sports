@@ -83,11 +83,10 @@ Object.assign(window.CLUB_GESTIONES, {
     // sin fecha confiable, queda sin confirmar. Dejó el 27/6/2024 (ceskenoviny.cz, publicado el 28/6/2024, "tras la reunión del jueves").
     { nombre:'Josef Dufek', corto:'Dufek', cargo:'Presidente', desde:'2002-01-01', hasta:'2024-06-27',
       fuente:'https://www.ceskenoviny.cz/zpravy/mlada-boleslav-zmenila-majitele-trunda-prevzal-majoritni-podil-po-dufkovi/2537919', confirmada:false },
-    // Trunda: tomó el 51% de Dufek y la presidencia del directorio (jueves 27/6/2024, inferido de la fecha de la nota). Hasta el 23/8/2025, cuando figura Bartůněk como presidente en el registro (podnikatel.cz).
-    // Fue elegido presidente de la FAČR el 29/5/2025.
-    { nombre:'David Trunda', corto:'Trunda', cargo:'Presidente', desde:'2024-06-27', hasta:'2025-08-23',
-      fuente:'https://www.ceskenoviny.cz/zpravy/mlada-boleslav-zmenila-majitele-trunda-prevzal-majoritni-podil-po-dufkovi/2537919', confirmada:true },
-    { nombre:'Luboš Bartůněk', corto:'Bartůněk', cargo:'Presidente', desde:'2025-08-23', hasta:null,
-      fuente:'https://www.podnikatel.cz/rejstrik/osoby/lubos-bartunek-3129101/', confirmada:true },
+    // Dueño desde 2024 (criterio del dueño persona, como en el resto del archivo): Jiří Šimáně, según cs.wikipedia (FK Mladá Boleslav). Guido
+    // dio por buena esa fuente el 2026-10-10. La prensa de junio de 2024 (ceskenoviny.cz) habla de David Trunda tomando el 51% y la presidencia
+    // del directorio; Trunda (hasta el 23/8/2025) y luego Luboš Bartůněk (registro, podnikatel.cz) son los presidentes formales que firman.
+    { nombre:'Jiří Šimáně', corto:'Šimáně', cargo:'Dueño', desde:'2024-06-27', hasta:null,
+      fuente:'https://cs.wikipedia.org/wiki/FK_Mlad%C3%A1_Boleslav', confirmada:true },
   ],
 });
