@@ -49,7 +49,15 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
   club la tiene en todos sus otros balances desglosados (hoy 70 filas en 16 años de 7 clubes); `cargar.mjs --escribir` la aplica solo. La
   página dice el rubro en un bocadillo (`js/info-tip.js`). Falta la pregunta de la cola para años sin precedente (to-do 140(i), paso 4).
 - Clubes cargados enteros por el pipeline: UC, Fortaleza CEIF, Goiás, Novorizontino, AEL Larissa (2016-2025) y Juventus (2003-2025,
-  estados separados; caja y deuda en parte cargadas a mano).
+  estados separados; caja y deuda en parte cargadas a mano), y Brasil del to-do 165: Criciúma 2012-2025, CRB 2020-2025, Paysandu 2021 y
+  2023-2025, Cuiabá 2022-2025, Avaí 2021-2025, Ferroviária 2010 y 2012-2025, Vila Nova 2014-2017 y 2021-2025, Remo 2019-2025 (61 años).
+- `lote.mjs --ejecutar --cargar` escribe solo lo que queda "listo para cargar" (`tools/cargar-lote.mjs`: alta con el color de
+  `Admin/altas-revision.jsonl`, un commit por año, revierte el alta si ningún año entra). `pipeline.mjs --lista/--dir` y `lote.mjs` recalculan
+  el registro solo para su lista (inventario `--solo`, ~1 s en vez de ~1 min).
+- Rusia (16 clubes, 78 años 2021-2025) NO sale de PDFs: `tools/bfo-rusia.mjs` lee los JSON oficiales del fisco (GIR BO) con el formulario 2
+  (código → categoría fijo, compuerta: la suma da el 2300 impreso) y el formulario 6 en los clubes que reciben aportes (Akhmat, Akron, Dynamo
+  Makhachkala, Pari NN, Orenburg). Escalón 2 (`tools/bfo-rusia-notas.mjs`): abre ingresos, otros ingresos/gastos y costos por elemento con
+  las tablas de las notas explicativas cuando suman el código del formulario (Krasnodar, Sochi, Rostov, Orenburg, Dynamo Makhachkala, Pari NN).
 - `tools/pipeline.mjs` hace SOLO la etapa 2 (transcribir con Mistral y validar, más el control "sin tablas"). La preparación para Jev y
   la categorización vieja se retiraron en la Versión 529 (to-do 142c): la lista de rubros la arma `verificar.mjs` y la categorización es la
   etapa 7 del lote.
