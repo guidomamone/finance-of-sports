@@ -1,0 +1,74 @@
+{
+ "nota": "Clubes/Rusia/Rostov/2023-poyasneniya.md",
+ "generado": "2026-10-10T02:20:43.227Z",
+ "tablas": [
+  {
+   "tipo": "gastos_por_elemento",
+   "titulo": "Затраты на производство (códigos 5610-5660)",
+   "origen": "regex",
+   "columnas": [
+    2023,
+    2022
+   ],
+   "filas": [
+    {
+     "etiqueta": "Материальные затраты (5610)",
+     "linea": 393,
+     "categoria": "other_expenses",
+     "valores": [
+      139059,
+      101095
+     ]
+    },
+    {
+     "etiqueta": "Расходы на оплату труда (5620)",
+     "linea": 394,
+     "categoria": "wages_squad",
+     "valores": [
+      1439814,
+      1175961
+     ]
+    },
+    {
+     "etiqueta": "Отчисления на социальные нужды (5630)",
+     "linea": 395,
+     "categoria": "wages_squad",
+     "valores": [
+      241657,
+      193686
+     ]
+    },
+    {
+     "etiqueta": "Амортизация (5640)",
+     "linea": 396,
+     "categoria": "depreciation",
+     "valores": [
+      7606,
+      8251
+     ]
+    },
+    {
+     "etiqueta": "Прочие затраты (5650)",
+     "linea": 397,
+     "categoria": "other_expenses",
+     "valores": [
+      1016071,
+      1157604
+     ]
+    }
+   ],
+   "total": [
+    2844207,
+    2636597
+   ],
+   "pasa": {
+    "2022": true,
+    "2023": true
+   },
+   "detalle": {
+    "2022": "filas 2636597 · objetivo 2120+2210+2220 = 2636597 · total impreso 2636597",
+    "2023": "filas 2844207 · objetivo 2120+2210+2220 = 2844207 · total impreso 2844207"
+   }
+  }
+ ]
+}

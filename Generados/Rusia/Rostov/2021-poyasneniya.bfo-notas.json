@@ -1,0 +1,73 @@
+{
+ "nota": "Clubes/Rusia/Rostov/2021-poyasneniya.md",
+ "generado": "2026-10-10T02:20:43.221Z",
+ "tablas": [
+  {
+   "tipo": "gastos_por_elemento",
+   "titulo": "Затраты на производство (códigos 5610-5660)",
+   "origen": "regex",
+   "columnas": [
+    2021,
+    2020
+   ],
+   "filas": [
+    {
+     "etiqueta": "Материальные затраты (5610)",
+     "linea": 372,
+     "categoria": "other_expenses",
+     "valores": [
+      100843,
+      71018
+     ]
+    },
+    {
+     "etiqueta": "Расходы на оплату труда (5620)",
+     "linea": 373,
+     "categoria": "wages_squad",
+     "valores": [
+      1473968,
+      1350269
+     ]
+    },
+    {
+     "etiqueta": "Отчисления на социальные нужды (5630)",
+     "linea": 374,
+     "categoria": "wages_squad",
+     "valores": [
+      185042,
+      159646
+     ]
+    },
+    {
+     "etiqueta": "Амортизация (5640)",
+     "linea": 375,
+     "categoria": "depreciation",
+     "valores": [
+      5243,
+      3376
+     ]
+    },
+    {
+     "etiqueta": "Прочие затраты (5650)",
+     "linea": 376,
+     "categoria": "other_expenses",
+     "valores": [
+      1135242,
+      1484469
+     ]
+    }
+   ],
+   "total": [
+    2900338,
+    3068778
+   ],
+   "pasa": {
+    "2020": false,
+    "2021": true
+   },
+   "detalle": {
+    "2021": "filas 2900338 · objetivo 2120+2210+2220 = 2900338 · total impreso 2900338"
+   }
+  }
+ ]
+}

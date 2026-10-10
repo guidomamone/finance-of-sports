@@ -1,0 +1,74 @@
+{
+ "nota": "Clubes/Rusia/Orenburg/2022-poyasneniya.md",
+ "generado": "2026-10-10T02:20:43.484Z",
+ "tablas": [
+  {
+   "tipo": "gastos_por_elemento",
+   "titulo": "Затраты на производство (códigos 5610-5660)",
+   "origen": "regex",
+   "columnas": [
+    2022,
+    2021
+   ],
+   "filas": [
+    {
+     "etiqueta": "**Материальные затраты** (5610)",
+     "linea": 287,
+     "categoria": "other_expenses",
+     "valores": [
+      31924,
+      86817
+     ]
+    },
+    {
+     "etiqueta": "**Расходы на оплату труда** (5620)",
+     "linea": 288,
+     "categoria": "wages_squad",
+     "valores": [
+      655760,
+      428871
+     ]
+    },
+    {
+     "etiqueta": "**Отчисления на социальные нужды** (5630)",
+     "linea": 289,
+     "categoria": "wages_squad",
+     "valores": [
+      81769,
+      59233
+     ]
+    },
+    {
+     "etiqueta": "**Амортизация** (5640)",
+     "linea": 290,
+     "categoria": "depreciation",
+     "valores": [
+      47290,
+      null
+     ]
+    },
+    {
+     "etiqueta": "**Прочие затраты** (5650)",
+     "linea": 291,
+     "categoria": "other_expenses",
+     "valores": [
+      680660,
+      168430
+     ]
+    }
+   ],
+   "total": [
+    1497403,
+    743351
+   ],
+   "pasa": {
+    "2021": true,
+    "2022": true
+   },
+   "detalle": {
+    "2021": "filas 743351 · objetivo 2120+2210+2220 = 743351 · total impreso 743351",
+    "2022": "filas 1497403 · objetivo 2120+2210+2220 = 1497403 · total impreso 1497403"
+   }
+  }
+ ]
+}

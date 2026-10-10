@@ -19,6 +19,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 - El reintento por "categoría en 0" sale de `<doc>.carga.json`, que solo escribe el lote: si el club se dio de alta fuera del lote, la propuesta guardada decía "el club no existe" y `--reintentar` no veía los ceros (Vila Nova 2021-2024, Avaí 2021). Ahora, con `--reintentar`, el lote vuelve a proponer (gratis) la carga de los documentos de su lista que no están en el sitio antes de decidir. Medido: ensayo de `--reintentar` sobre `prueba-completa` idéntico antes y después; con la propuesta fresca, el lote 62 tomó los 5 documentos.
 
+## Versión 646 — Rusia, escalón 2: las tablas de las notas explicativas (2026-10-09)
+
+- `tools/bfo-rusia-notas.mjs`: busca en cada `<año>-poyasneniya.md` las tablas que abren 2110 (ventas por tipo), 2340 y 2350 (otros ingresos y gastos) y los costos por elemento; las de costos por elemento (códigos 5610-5660) se leen sin IA, el resto con una llamada a Claude por nota (solo las ventanas). Compuerta sin IA: la suma de las filas = el código del formulario 2 de ese año (± 2 miles). Guarda `Generados/Rusia/<Club>/<nota>.bfo-notas.json`.
+- `tools/bfo-rusia.mjs --reemplazar`: reescribe los años ya cargados con las filas de las tablas que pasaron (la de la nota del año; si no, la columna del año anterior de la nota siguiente), sin las marcas "posiblemente incluido en" de lo que ya quedó abierto.
+- Sin IA ya pasan: costos por elemento de Rostov 2021-2024 y Orenburg 2021-2023 (Orenburg 2024 no: hubo cambio de existencias).
+
 ## Versión 645 — Rusia desde los datos oficiales del fisco: `tools/bfo-rusia.mjs` (2026-10-09)
 
 - Nueva tool: de cada `Clubes/Rusia/<Club>/bfo-AAAA-datos.json` (GIR BO, bo.nalog.gov.ru) al año cargado. Escalón 1, gratis y determinista: el formulario 2 con un mapa fijo de código a categoría (2110 → fútbol sin desglosar, con "posiblemente incluido en" TV, entradas, socios y sponsors; 2340 → otros ingresos; 2120 → costo del fútbol sin desglosar; 2210/2220 → administración; 2350 → otros gastos; 2310/2320/2330 → financiero; 2300−2400 → impuesto). Compuerta: la suma da el 2300 impreso (los 79 años medidos cierran). Genera la transcripción legible `bfo-AAAA-datos.md` y escribe con `escribir()` de `cargar.mjs`; alta con el color de `Admin/altas-revision.jsonl`; un commit por año.

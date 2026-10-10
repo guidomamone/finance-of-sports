@@ -31,12 +31,14 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync, unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARGS = process.argv.slice(2);
 const flag = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
 const ESCRIBIR = ARGS.includes('--escribir');
 const SOLO = flag('--club');
+const REEMPLAZAR = ARGS.includes('--reemplazar'); // (escalón 2) reescribe los años ya cargados que tienen tablas de las notas que pasaron la compuerta
 const HOY = new Date().toISOString().slice(0, 10);
 const DIR = resolve(ROOT, 'Clubes', 'Rusia');
 
@@ -96,28 +98,48 @@ function transcribir(jsonPath, mdPath, anio) {
   return A;
 }
 
+// ESCALÓN 2: las tablas de las notas explicativas que pasaron la compuerta de tools/bfo-rusia-notas.mjs para el año `anio`. De cada tipo,
+// la de la nota de ese año (columna actual); si no, la de la nota del año siguiente (columna del año anterior).
+function tablasDe(carpeta, anio) {
+  const out = {};
+  for (const [notaAnio, col] of [[anio, 0], [anio + 1, 1]]) {
+    const p = derivado(`${carpeta}/${notaAnio}-poyasneniya.md`, '.bfo-notas.json', { crear: false });
+    if (!existsSync(p)) continue;
+    for (const t of JSON.parse(readFileSync(p, 'utf8')).tablas || []) if (t.pasa?.[anio] && !out[t.tipo]) out[t.tipo] = { ...t, col, nota: `${carpeta}/${notaAnio}-poyasneniya.md` };
+  }
+  return out;
+}
+
 // La propuesta P con el formato de cargar.mjs (ver P.ejercicio en tools/cargar.mjs).
 function proponer({ carpeta, anio, A, clubId, club, alta }) {
   const campo = (k) => (alta.ejercicio?.campos || []).find((c) => c.campo === k) || {};
   const fxRef = campo('fxRef'); const liga = campo('liga'); const sourceId = campo('sourceId').valor;
   const M = (c) => r6(Math.abs(A.v(c) || 0) / 1000);
-  const rev = MAPA.filter((m) => m.lado === 'ingreso' && A.v(m.cod)).map((m) => ({ rawLabel: `${m.ru} (${m.cod})`, normalizedCategory: m.cat, amountNative: M(m.cod), disclosureLevel: 'aggregated' }));
-  const exp = MAPA.filter((m) => m.lado === 'gasto' && A.v(m.cod)).map((m) => ({ rawLabel: `${m.ru} (${m.cod})`, normalizedCategory: m.cat, amountNative: -M(m.cod), disclosureLevel: 'aggregated' }));
+  // Escalón 2: cada tabla que pasó la compuerta reemplaza su(s) renglón(es) del formulario.
+  const T = tablasDe(carpeta, anio);
+  const REEMPLAZA = { ingresos_por_tipo: [2110], otros_ingresos: [2340], otros_gastos: [2350], gastos_por_elemento: [2120, 2210, 2220] };
+  const tapados = new Set(Object.keys(T).flatMap((k) => REEMPLAZA[k] || []));
+  const deTabla = (t, signo) => t.filas.filter((f) => Number(f.valores?.[t.col] || 0)).map((f) => ({ rawLabel: f.etiqueta, normalizedCategory: f.categoria, amountNative: signo * r6(Math.abs(Number(f.valores[t.col])) / 1000), disclosureLevel: 'detailed' }));
+  const rev = [...MAPA.filter((m) => m.lado === 'ingreso' && A.v(m.cod) && !tapados.has(m.cod)).map((m) => ({ rawLabel: `${m.ru} (${m.cod})`, normalizedCategory: m.cat, amountNative: M(m.cod), disclosureLevel: 'aggregated' })),
+    ...(T.ingresos_por_tipo ? deTabla(T.ingresos_por_tipo, 1) : []), ...(T.otros_ingresos ? deTabla(T.otros_ingresos, 1) : [])];
+  const exp = [...MAPA.filter((m) => m.lado === 'gasto' && A.v(m.cod) && !tapados.has(m.cod)).map((m) => ({ rawLabel: `${m.ru} (${m.cod})`, normalizedCategory: m.cat, amountNative: -M(m.cod), disclosureLevel: 'aggregated' })),
+    ...(T.gastos_por_elemento ? deTabla(T.gastos_por_elemento, -1) : []), ...(T.otros_gastos ? deTabla(T.otros_gastos, -1) : [])];
   const netInterest = r6(A.fin / 1000); const pat = r6(A.neto / 1000); const tax = r6(pat - A.pre / 1000);
   const extraRows = MAPA.filter((m) => /^fin/.test(m.lado) && A.v(m.cod)).map((m) => ({ label: `${m.ru} (${m.cod})`, value: (m.lado === 'fin-' ? -1 : 1) * M(m.cod) }));
   if (Math.abs(tax) > 1e-6) extraRows.push({ label: `Налог на прибыль и прочее (2300 − 2400)`, value: tax });
-  const incluidoEn = Object.fromEntries(Object.entries(INCLUIDO).map(([k, en]) => [k, { en, posible: true }]));
+  const presentes = new Set([...rev, ...exp].map((l) => l.normalizedCategory)); const enLump = (en) => presentes.has(en);
+  const incluidoEn = Object.fromEntries(Object.entries(INCLUIDO).filter(([k, en]) => !presentes.has(k) && enLump(en)).map(([k, en]) => [k, { en, posible: true }]));
   const sinDesglose = [...rev, ...exp].filter((l) => /^lump_football_operations/.test(l.normalizedCategory)).map((l) => ({ renglon: l.rawLabel, lado: l.amountNative < 0 ? 'gasto' : 'ingreso', importe: Math.abs(l.amountNative), motivo: 'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)' }));
   const md = `${carpeta}/bfo-${anio}-datos.md`;
   return {
-    pdf: `${carpeta}/bfo-${anio}-datos.json`, md, reemplaza: false, ajustes: [],
+    pdf: `${carpeta}/bfo-${anio}-datos.json`, md, reemplaza: false, ajustes: [], escalon2: Object.keys(T),
     totales: { patImpreso: { label: `Чистая прибыль (убыток), código 2400 (suma verificada contra el 2300)`, pag: null } },
     fxCloseNuevo: fxRef.fxClose ? { key: fxRef.valor, ...fxRef.fxClose } : null,
     liga: { valor: liga.valor ?? null, fuente: liga.fuente || 'sin caché de la liga', estado: liga.estado || 'pendiente' },
     ejercicio: {
       clubId, year: anio, cierre: `${anio}-12-31`, perimetro: 'individual', revenueLines: rev, expenseLines: exp,
       fiscalYearMeta: { currency: 'RUB', ...(fxRef.valor ? { fxRef: fxRef.valor } : {}), sourceId, reportType: 'official_balance_sheet', gestionId: null, profitOnPlayerSales: 0, assetSales: 0, netInterest, tax, extraRows, incluidoEn, sinDesglose, grossDebt: null, cash: null, officialTotalRevenue: null, officialTotalExpenses: null, officialPAT: pat },
-      source: { id: sourceId, clubId, title: `${club.name || club.displayName} — отчетность ${anio} в ГИР БО (bo.nalog.gov.ru), ejercicio ${anio}`, type: 'official_balance_sheet', reliability: 'primary', note: `Cargado por tools/bfo-rusia.mjs (${HOY}) desde ${carpeta}/bfo-${anio}-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: ${md}.` },
+      source: { id: sourceId, clubId, title: `${club.name || club.displayName} — отчетность ${anio} в ГИР БО (bo.nalog.gov.ru), ejercicio ${anio}`, type: 'official_balance_sheet', reliability: 'primary', note: `Cargado por tools/bfo-rusia.mjs (${HOY}) desde ${carpeta}/bfo-${anio}-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: ${md}.${Object.keys(T).length ? ` Escalón 2: ${Object.entries(T).map(([k, t]) => `${k} de ${t.nota}`).join('; ')} (la suma de sus filas da el código del formulario).` : ''}` },
     },
   };
 }
@@ -149,7 +171,7 @@ for (const nombre of carpetas) {
   const color = rev && Object.prototype.hasOwnProperty.call(rev, 'brandColor') ? rev.brandColor : undefined;
   const okColor = color === null || /^#[0-9A-F]{6}$/i.test(String(color));
   const yaEnSitio = (y) => !!sitio.generic?.[clubId]?.fiscalYearMeta?.[y];
-  const linea = filas.map(({ y, A }) => `${y}${A.cierra ? '' : ' (NO CIERRA)'}${yaEnSitio(y) ? ' (ya está)' : ''}: ingresos ${fmt(A.v(2110))} + otros ${fmt(Math.abs(A.v(2340) || 0))}; neto ${fmt(A.neto)}`).join(' | ');
+  const linea = filas.map(({ y, A }) => `${y}${A.cierra ? '' : ' (NO CIERRA)'}${yaEnSitio(y) ? ' (ya está)' : ''}${Object.keys(tablasDe(carpeta, y)).length ? ` [escalón 2: ${Object.keys(tablasDe(carpeta, y)).join('+')}]` : ''}: ingresos ${fmt(A.v(2110))} + otros ${fmt(Math.abs(A.v(2340) || 0))}; neto ${fmt(A.neto)}`).join(' | ');
   // Las preguntas del alta se miran sobre la transcripción del JSON (no sobre el registro, que analiza el documento "base" de la carpeta: en
   // Krylia y Rubin es una nota explicativa con varios tipos de cambio declarados, una duda que no existe en el JSON).
   const preguntasAlta = esNuevo && clubId ? (() => { try { const a = analizar(`${carpeta}/bfo-${anios[anios.length - 1]}-datos.md`, sitio, {}); return [...(a.campos || []), ...(a.ejercicio?.campos || [])].filter((c) => c.estado === 'pregunta').map((c) => c.campo); } catch (e) { return [`analizar falló: ${e.message.slice(0, 80)}`]; } })() : [];
@@ -158,7 +180,7 @@ for (const nombre of carpetas) {
   if (!ESCRIBIR || freno) continue;
 
   // Alta (club nuevo) con el año más viejo que cierra.
-  const aCargar = filas.filter(({ y, A }) => A.cierra && !yaEnSitio(y));
+  const aCargar = filas.filter(({ y, A }) => A.cierra && (!yaEnSitio(y) || (REEMPLAZAR && Object.keys(tablasDe(carpeta, y)).length)));
   if (!aCargar.length) continue;
   let altaHecha = false;
   const sinTrackAntes = new Set(String(git('ls-files', '--others', '--exclude-standard', '--', 'data', 'fuentes').stdout || '').split('\n').filter(Boolean));
@@ -179,10 +201,11 @@ for (const nombre of carpetas) {
     const club = sitio.clubs[clubId] || {};
     const P = proponer({ carpeta, anio: y, A, clubId, club, alta });
     if (!P.ejercicio.fiscalYearMeta.sourceId || (!P.ejercicio.fiscalYearMeta.fxRef)) { console.log(`      ${y}: sin sourceId o sin tipo de cambio (${JSON.stringify(alta.ejercicio?.campos?.find((c) => c.campo === 'fxRef') || {}).slice(0, 160)})`); continue; }
+    if (yaEnSitio(y)) { if (!P.escalon2.length) continue; P.reemplaza = true; }
     const res = escribir(P);
     if (!res.ok) { console.log(`      ${y}: NO escrito: ${res.motivo.slice(0, 200)}`); continue; }
     git('add', '-A', '--', 'data', 'index.html', 'fuentes', 'fuentes.html', 'sitemap.xml', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/altas-club.jsonl', `${carpeta}/bfo-${y}-datos.md`);
-    const c = git('commit', '-q', '-m', `${nombre} ${y} desde el GIR BO (tools/bfo-rusia.mjs)${altaHecha && !escritos ? ` — alta de ${clubId}, color ${color === null ? 'null' : color}` : ''}`);
+    const c = git('commit', '-q', '-m', `${nombre} ${y} desde el GIR BO (tools/bfo-rusia.mjs)${P.escalon2.length ? ` + escalón 2 (${P.escalon2.join(', ')})` : ''}${P.reemplaza ? ', reescrito' : ''}${altaHecha && !escritos ? ` — alta de ${clubId}, color ${color === null ? 'null' : color}` : ''}`);
     if (c.status === 0) { escritos++; commits++; sitio = cargarSitio(); console.log(`      ${y}: escrito y commiteado (${String(git('log', '--oneline', '-1').stdout).slice(0, 9)}) — ${res.audit}`); }
     else console.log(`      ${y}: escrito pero el commit falló: ${String(c.stderr).slice(0, 160)}`);
   }
