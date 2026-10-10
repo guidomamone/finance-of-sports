@@ -498,6 +498,9 @@ const clubs = {
   // Pari Nizhny Novgorod: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2021-datos.md. brandColor #5BB8F8
   // (procedencia en fuentes/Rusia/Pari Nizhny Novgorod.md; tools/bfo-rusia.mjs).
   'parinizhnynovgorod-ru': { id:'parinizhnynovgorod-ru', name:'ANO Football Club Pari Nizhny Novgorod', displayName:'Pari Nizhny Novgorod', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#5BB8F8' },
+  // Rostov: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Rostov/bfo-2021-datos.md. brandColor #FFDD00
+  // (procedencia en fuentes/Rusia/Rostov.md; tools/bfo-rusia.mjs).
+  'rostov-ru': { id:'rostov-ru', name:'AO Football Club Rostov', displayName:'Rostov', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFDD00' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

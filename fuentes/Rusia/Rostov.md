@@ -32,3 +32,5 @@ Los 9 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 159 KB 
 - Último chequeo: 2026-09-18.
 
 Color de marca: #FFDD00 — ru.wikipedia (infobox, camiseta local body1 FFDD00; colores del club: amarillo primero y azul; escudo amarillo y azul), verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Rusia/Rostov/bfo-2021-datos.json` (sourceId `rostov-ru-bfo-2021-datos`).
