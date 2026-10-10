@@ -206,6 +206,32 @@ const ferroviariabrRevenueLinesByYear = {
     { rawLabel:'Impostos incidentes sobre a receita', normalizedCategory:'other_income', amountNative:-1.540516, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.99
     { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.99
   ],
+  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Ferroviaria/dre-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Ferroviaria/dre-2022.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2022: [
+    { rawLabel:'Rendas de competições - futebol feminino: Campeonato Paulista', normalizedCategory:'womens_football', amountNative:0.481934, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Rendas de competições - futebol feminino: Copa Libertadores', normalizedCategory:'womens_football', amountNative:0.039236, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Transmissões esportivas - futebol masculino: Campeonato Paulista', normalizedCategory:'broadcasting', amountNative:5.126695, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Transmissões esportivas - futebol masculino: Copa do Brasil', normalizedCategory:'broadcasting', amountNative:0.558, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Transações de atletas: venda dos direitos federativos e econômicos', normalizedCategory:'player_sales', amountNative:2.839047, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Transações de atletas: repasse de cessão temporária', normalizedCategory:'player_sales', amountNative:0.9, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Transações de atletas - exterior: venda dos direitos federativos e econômicos', normalizedCategory:'player_sales', amountNative:0.393859, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Transações de atletas - exterior: repasse de cessão temporária', normalizedCategory:'player_sales', amountNative:3.62043, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Receita com formação', normalizedCategory:'youth_football', amountNative:0.15, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Premiações - futebol masculino: Campeonato Paulista', normalizedCategory:'competition_bonus', amountNative:0.18, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Premiações - futebol feminino: Campeonato Brasileiro', normalizedCategory:'womens_football', amountNative:0.065, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Premiações - futebol feminino: Campeonato Paulista', normalizedCategory:'womens_football', amountNative:0.08, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Outras premiações - futebol masculino: Programa de excelência FPF', normalizedCategory:'competition_bonus', amountNative:0.08, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Publicidade - futebol masculino: Campeonato Paulista', normalizedCategory:'sponsorship_commercial', amountNative:0.873305, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:3.5231, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Permuta', normalizedCategory:'sponsorship_commercial', amountNative:0.047111, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Mensalidade sócio torcedor', normalizedCategory:'member_dues', amountNative:0.108724, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Venda de mercadorias', normalizedCategory:'sponsorship_commercial', amountNative:0.044605, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Lucro na alienação do ativo imobilizado', normalizedCategory:'other_income', amountNative:0.0795, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'DEDUÇÕES DA RECEITA BRUTA', normalizedCategory:'other_income', amountNative:-1.033091, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'OUTRAS RECEITAS OPERACIONAIS', normalizedCategory:'other_income', amountNative:0.045969, disclosureLevel:'aggregated' }, // pág. 9, precedente
+    { rawLabel:'RECEITAS NÃO OPERACIONAIS', normalizedCategory:'other_income', amountNative:0.306892, disclosureLevel:'aggregated' }, // pág. 9, precedente
+  ],
 };
 const ferroviariabrExpenseLinesByYear = {
   2023: [ // tools/cargar.mjs (2026-10-10)
@@ -875,6 +901,10 @@ const ferroviariabrExpenseLinesByYear = {
     { rawLabel:'Tributária', normalizedCategory:'admin_general_expense', amountNative:-0.328961, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.98
     { rawLabel:'Outras despesas', normalizedCategory:'other_expenses', amountNative:-1.00731, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.98
   ],
+  2022: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'CUSTOS', normalizedCategory:'lump_football_operations_expense', amountNative:-23.267062, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'DESPESAS OPERACIONAIS', normalizedCategory:'admin_general_expense', amountNative:-6.6554, disclosureLevel:'aggregated' }, // pág. 6, precedente
+  ],
 };
 const ferroviariabrFiscalYearMeta = {
   // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
@@ -917,7 +947,7 @@ const ferroviariabrFiscalYearMeta = {
   // 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 1.196.469,33. Claude 2026-10-09: el costo está impreso entre paréntesis (resta de la receita) y el resto de los gastos en positivo; la lectura 5 invertía su signo. Cuenta: Receitas líquidas 1.581.519,76 (L162) - Custos 1.220.963,91 (L166) - Despesas Operacionais 402.186,01 (L172) - Serviços de terceiros 19.682,75 (L174) - Despesas financeiras 12.921,96 (L173) = -74.234,87 (L177).
   // 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 24.494,58. Claude 2026-10-09: el costo está impreso entre paréntesis (resta de la receita) y el resto de los gastos en positivo; la lectura 5 invertía su signo. Cuenta: Receitas líquidas 1.581.519,76 (L162) - Custos 1.220.963,91 (L166) - Despesas Operacionais 402.186,01 (L172) - Serviços de terceiros 19.682,75 (L174) - Despesas financeiras 12.921,96 (L173) = -74.234,87 (L177).
   2010: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2012, 2013, 2014, 2015, 2016, 2018, 2021, 2023, 2024, 2025): Televisión, Organización de partidos
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2012, 2013, 2014, 2015, 2016, 2018, 2021, 2022, 2023, 2024, 2025): Televisión, Organización de partidos
     incluidoEn:{ broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2010-12-31',
     sourceId:'ferroviaria-br-balanco-2010',
@@ -1110,6 +1140,26 @@ const ferroviariabrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:31.503023, officialTotalExpenses:42.984341, officialPAT:-15.28886,
   },
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): filas-a-mano. Onboarding to-do 165 (Claude en sesión, 2026-10-09, pedido de Guido): extraer.mjs cortó por el tope de salida (balancete de ~580 cuentas, to-do 197); .filas.json armado a mano con la receita bruta abierta y los renglones de primer nivel
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): DRE del sistema contable de la SAF, 01/01 a 31/12/2022 (mismo formato que 2013-b a 2018)
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): cero-real = Estadio. Onboarding to-do 165 (Claude, 2026-10-09): el balancete de 2022 no tiene renta de partidos del fútbol masculino (las 'Rendas de competições' son del femenino, L20-L22)
+  2022: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
+    incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
+    currency:'BRL', fxRef:'BRL@2022-12-31',
+    sourceId:'ferroviaria-br-dre-2022',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.47495, tax:0,
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'CUSTOS', lado:'expense', importe:23.267062, motivo:'Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:18.510316, officialTotalExpenses:29.922462, officialPAT:-10.937196,
+  },
 };
 const ferroviariabrPresupuestoOverlayByYear = {};
 
@@ -1193,6 +1243,12 @@ Object.assign(sources, {
     title:'Ferroviária Futebol S.A. — demonstracoes-financeiras-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'ferroviaria-br-dre-2022': {
+    id:'ferroviaria-br-dre-2022', clubId:'ferroviaria-br',
+    title:'Ferroviária Futebol S.A. — dre-2022 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Ferroviaria/dre-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

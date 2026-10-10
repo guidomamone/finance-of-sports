@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
- "generado": "2026-10-10T00:55:23.830Z",
+ "generado": "2026-10-10T02:03:27.140Z",
  "frena": [
   {
    "etapa": "registro",
@@ -11,28 +11,12 @@
    "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
   },
   {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel, Televisión, Estadio, Cuotas sociales. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "100.0% del dinero de ingresos queda sin categoría aceptable (tope 5%): \"Receitas Brutas\" 8.67695 (no está en categorias.json); \"(-) Deduções\" 0.087335 (no está en categorias.json); \"(+) Outras Receitas\" 0.014003 (no está en categorias.json)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "100.0% del dinero de gastos queda sin categoría aceptable (tope 5%): \"(-) Custos\" 7.802237 (no está en categorias.json); \"(-) Despesas Administrativas\" 2.233261 (no está en categorias.json); \"(-) Despesas Gerais\" 0.05518 (no está en categorias.json)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "ninguna fila de ingresos con categoría aceptable"
+   "etapa": "tie-out-resultado",
+   "motivo": "resultado: ingresos 8.975272 + gastos -10.103921 + netInterest -0.430111 + tax -0.16735 = -1.72611 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 1.72611)"
   }
  ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-09: Revisión del alta (Claude, 2026-10-09): una sola sociedad (CNPJ 06.020.811/0001-30, Ferroviária Futebol S.A. luego SAF); 'CONSOLIDADO' es el membrete del reporte contable (consolida filiales/centros de costo), no un grupo. Mismo criterio que Novorizontino)",
-  "ingresos: 4 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"Receitas Brutas\" (no está en categorias.json); \"(-) Deduções\" (no está en categorias.json); \"(+) Outras Receitas\" (no está en categorias.json); \"(+) Outras Receitas Operacionais\" (no está en categorias.json)",
-  "gastos: 4 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"(-) Custos\" (no está en categorias.json); \"(-) Despesas Administrativas\" (no está en categorias.json); \"(-) Despesas Gerais\" (no está en categorias.json); \"(-) Despesas Tributárias\" (no está en categorias.json)",
-  "no se encontró el resultado del ejercicio impreso: officialPAT queda null (audit.js P2 balance-sin-pat)",
-  "ninguna fila de gastos: officialTotalExpenses queda null (el sitio muestra \"sin dato\")",
   "gestión: ningún presidente confirmado cubre 2017 (cierre 2017-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -40,8 +24,90 @@
   "year": 2017,
   "cierre": "2017-12-31",
   "perimetro": "individual",
-  "revenueLines": [],
-  "expenseLines": [],
+  "revenueLines": [
+   {
+    "rawLabel": "Receitas Brutas",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 8.67695,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "(-) Deduções",
+    "normalizedCategory": "other_income",
+    "amountNative": -0.087335,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "(+) Outras Receitas",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.014003,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "(+) Outras Receitas Operacionais",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.371654,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "(-) Custos",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -7.802237,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "(-) Despesas Administrativas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.233261,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "(-) Despesas Gerais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.05518,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "(-) Despesas Tributárias",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.013243,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
   "fiscalYearMeta": {
    "currency": "BRL",
    "fxRef": "BRL@2017-12-31",
@@ -52,10 +118,42 @@
    "assetSales": 0,
    "netInterest": -0.430111,
    "tax": -0.16735,
+   "incluidoEn": {
+    "wages_squad": {
+     "en": "lump_football_operations_expense",
+     "posible": true
+    },
+    "broadcasting": {
+     "en": "lump_football_operations",
+     "posible": true
+    },
+    "matchday_competition": {
+     "en": "lump_football_operations",
+     "posible": true
+    },
+    "member_dues": {
+     "en": "lump_football_operations",
+     "posible": true
+    }
+   },
+   "sinDesglose": [
+    {
+     "renglon": "Receitas Brutas",
+     "lado": "revenue",
+     "importe": 8.67695,
+     "motivo": "Claude 2026-10-09: renglón de primer nivel sin desglose en el documento"
+    },
+    {
+     "renglon": "(-) Custos",
+     "lado": "expense",
+     "importe": 7.802237,
+     "motivo": "Claude 2026-10-09: renglón de primer nivel sin desglose en el documento"
+    }
+   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
-   "officialTotalExpenses": null,
+   "officialTotalRevenue": 8.975272,
+   "officialTotalExpenses": 10.103921,
    "officialPAT": null
   },
   "source": {
@@ -122,6 +220,54 @@
    "evidencia": "dre-2017.md L15, L34-L39",
    "autor": "Guido",
    "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "lump_football_operations_expense",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento",
+   "evidencia": "dre-2017.md L16-L40",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento",
+   "evidencia": "dre-2017.md L16-L40",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "incluye",
+   "valor": "matchday_competition",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento",
+   "evidencia": "dre-2017.md L16-L40",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "incluye",
+   "valor": "member_dues",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento",
+   "evidencia": "dre-2017.md L16-L40",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
   }
  ],
  "seleccion": {
@@ -137,10 +283,14 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado (lectura 5: hoja con C))",
    "signoFijo": 8.67695,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "lump_football_operations",
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "notaGuido": "Claude 2026-10-09: renglón de primer nivel sin desglose en el documento",
+   "destino": "revenue",
+   "amountNative": 8.67695
   },
   {
    "label": "(-) Deduções",
@@ -149,10 +299,14 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado (lectura 5: hoja con D))",
    "signoFijo": -0.087335,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "other_income",
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "notaGuido": "Claude 2026-10-09: renglón de primer nivel sin desglose en el documento",
+   "destino": "revenue",
+   "amountNative": -0.087335
   },
   {
    "label": "(+) Outras Receitas",
@@ -161,10 +315,14 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado (lectura 5: hoja con C))",
    "signoFijo": 0.014003,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "other_income",
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "notaGuido": "Claude 2026-10-09: renglón de primer nivel sin desglose en el documento",
+   "destino": "revenue",
+   "amountNative": 0.014003
   },
   {
    "label": "(+) Outras Receitas Operacionais",
@@ -173,10 +331,14 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (ajuste manual)",
    "signoFijo": 0.371654,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "other_income",
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "notaGuido": "Claude 2026-10-09: renglón de primer nivel sin desglose en el documento",
+   "destino": "revenue",
+   "amountNative": 0.371654
   },
   {
    "label": "(-) Custos",
@@ -185,10 +347,14 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado (lectura 5: hoja con D))",
    "signoFijo": 7.802237,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "lump_football_operations_expense",
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "notaGuido": "Claude 2026-10-09: renglón de primer nivel sin desglose en el documento",
+   "destino": "expense",
+   "amountNative": -7.802237
   },
   {
    "label": "(-) Despesas Administrativas",
@@ -197,10 +363,14 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado (lectura 5: hoja con D))",
    "signoFijo": 2.233261,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "admin_general_expense",
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "notaGuido": "Claude 2026-10-09: renglón de primer nivel sin desglose en el documento",
+   "destino": "expense",
+   "amountNative": -2.233261
   },
   {
    "label": "(-) Despesas Gerais",
@@ -209,10 +379,14 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado (lectura 5: hoja con D))",
    "signoFijo": 0.05518,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "admin_general_expense",
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "notaGuido": "Claude 2026-10-09: renglón de primer nivel sin desglose en el documento",
+   "destino": "expense",
+   "amountNative": -0.05518
   },
   {
    "label": "(-) Despesas Tributárias",
@@ -221,10 +395,14 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado (lectura 5: hoja con D))",
    "signoFijo": 0.013243,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "admin_general_expense",
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "notaGuido": "Claude 2026-10-09: renglón de primer nivel sin desglose en el documento",
+   "destino": "expense",
+   "amountNative": -0.013243
   },
   {
    "label": "(-) Despesas Financeiras",
@@ -271,39 +449,35 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Salarios del plantel",
-   "lado": "gasto"
-  },
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Cuotas sociales"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado (lectura 5: hoja con C))": "gastos con signo",
-   "verificacion (estado (lectura 5: hoja con D))": "gastos con signo",
+   "verificacion (estado (lectura 5: hoja con D))": "gastos sin signo (se invierten)",
    "verificacion (ajuste manual)": "gastos con signo",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
  },
  "totales": {
-  "revSum": 0,
-  "expSum": 0,
-  "officialTotalRevenue": null,
-  "officialTotalExpenses": null,
+  "revSum": 8.975272,
+  "expSum": -10.103921,
+  "officialTotalRevenue": 8.975272,
+  "officialTotalExpenses": 10.103921,
   "officialPAT": null,
-  "verificacion": {}
+  "verificacion": {
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 8.975272
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 10.103921
+  }
  },
  "liga": {
   "valor": "br-paulistaA1",
@@ -354,9 +528,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 6,
-  "lineasIngreso": 0,
-  "lineasGasto": 0,
+  "motivos": 3,
+  "lineasIngreso": 4,
+  "lineasGasto": 4,
   "metaFilas": 4,
   "excluidas": 0
  }

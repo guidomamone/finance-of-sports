@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
  "md": "Clubes/Brasil/Ferroviaria/dre-2017.md",
- "generado": "2026-10-10T00:53:58.705Z",
+ "generado": "2026-10-10T02:02:15.203Z",
  "estado": "ok",
  "clubId": "ferroviaria-br",
  "year": 2017,
@@ -52,6 +52,54 @@
    "linea": null,
    "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2017 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF",
    "evidencia": "dre-2017.md L15, L34-L39",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "lump_football_operations_expense",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento",
+   "evidencia": "dre-2017.md L16-L40",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento",
+   "evidencia": "dre-2017.md L16-L40",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "incluye",
+   "valor": "matchday_competition",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento",
+   "evidencia": "dre-2017.md L16-L40",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "incluye",
+   "valor": "member_dues",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento",
+   "evidencia": "dre-2017.md L16-L40",
    "autor": "Guido",
    "fecha": "2026-10-10"
   }

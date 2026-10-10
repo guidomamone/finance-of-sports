@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Ferroviaria/dre-2022.pdf",
  "md": "Clubes/Brasil/Ferroviaria/dre-2022.md",
- "generado": "2026-10-10T00:53:58.811Z",
+ "generado": "2026-10-10T02:02:15.309Z",
  "estado": "ok",
  "clubId": "ferroviaria-br",
  "year": 2022,
@@ -39,6 +39,16 @@
    "linea": null,
    "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): DRE del sistema contable de la SAF, 01/01 a 31/12/2022 (mismo formato que 2013-b a 2018)",
    "evidencia": "dre-2022.md L1-L15",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2022.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el balancete de 2022 no tiene renta de partidos del fútbol masculino (las 'Rendas de competições' son del femenino, L20-L22)",
+   "evidencia": "dre-2022.md L19-L49",
    "autor": "Guido",
    "fecha": "2026-10-10"
   }
