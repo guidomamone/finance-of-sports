@@ -48,3 +48,5 @@ Color de marca: null — rojo y blanco, camiseta titular blanca con faja roja (p
 - Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2025 desde `Clubes/Brasil/CRB/demonstracoes-contabeis-2025.pdf` (sourceId `crb-br-demonstracoes-contabeis-2025`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Brasil/CRB/balanco-patrimonial-2022.pdf` (sourceId `crb-br-balanco-patrimonial-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Brasil/CRB/balanco-patrimonial-2023.pdf` (sourceId `crb-br-balanco-patrimonial-2023`).

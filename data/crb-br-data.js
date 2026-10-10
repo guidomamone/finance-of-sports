@@ -57,6 +57,11 @@ const crbbrRevenueLinesByYear = {
   2022: [
     { rawLabel:'Receita operacional líquida', normalizedCategory:'lump_football_operations', amountNative:28.583332, disclosureLevel:'aggregated' }, // pág. 1, precedente
   ],
+  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/CRB/balanco-patrimonial-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/CRB/balanco-patrimonial-2023.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2023: [
+    { rawLabel:'Receita operacional líquida', normalizedCategory:'lump_football_operations', amountNative:45.563569, disclosureLevel:'aggregated' }, // pág. 1, precedente
+  ],
 };
 const crbbrExpenseLinesByYear = {
   2020: [ // tools/cargar.mjs (2026-10-09)
@@ -88,6 +93,12 @@ const crbbrExpenseLinesByYear = {
     { rawLabel:'Despesas com pessoal', normalizedCategory:'admin_general_expense', amountNative:-18.425275, disclosureLevel:'aggregated' }, // pág. 1, precedente
     { rawLabel:'Despesas gerais e administrativas', normalizedCategory:'admin_general_expense', amountNative:-3.217749, disclosureLevel:'aggregated' }, // pág. 1, precedente
     { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.070314, disclosureLevel:'aggregated' }, // pág. 1, precedente
+  ],
+  2023: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Custo das atividades sociais e esportivas', normalizedCategory:'lump_football_operations_expense', amountNative:-8.358054, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Despesas com pessoal', normalizedCategory:'admin_general_expense', amountNative:-27.068659, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Despesas gerais e administrativas', normalizedCategory:'admin_general_expense', amountNative:-5.038184, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.050353, disclosureLevel:'aggregated' }, // pág. 1, precedente
   ],
 };
 const crbbrFiscalYearMeta = {
@@ -186,6 +197,25 @@ const crbbrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:28.583332, officialTotalExpenses:28.688164, officialPAT:0.024743,
   },
+  2023: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2023-12-31',
+    sourceId:'crb-br-balanco-patrimonial-2023',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.252817, tax:0,
+    extraRows: [
+      {label:'Receitas financeiras', value:0.131346},
+      {label:'Despesas financeiras', value:-0.384163},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Receita operacional líquida', lado:'revenue', importe:45.563569, motivo:'el documento no desglosa este renglón'},
+      {renglon:'Custo das atividades sociais e esportivas', lado:'expense', importe:8.358054, motivo:'Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:45.563569, officialTotalExpenses:40.51525, officialPAT:4.795503,
+  },
 };
 const crbbrPresupuestoOverlayByYear = {};
 
@@ -233,6 +263,12 @@ Object.assign(sources, {
     title:'Clube de Regatas Brasil — balanco-patrimonial-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/CRB/balanco-patrimonial-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'crb-br-balanco-patrimonial-2023': {
+    id:'crb-br-balanco-patrimonial-2023', clubId:'crb-br',
+    title:'Clube de Regatas Brasil — balanco-patrimonial-2023 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/CRB/balanco-patrimonial-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
