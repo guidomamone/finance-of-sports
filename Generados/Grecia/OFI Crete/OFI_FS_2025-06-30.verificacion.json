@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/OFI Crete/OFI_FS_2025-06-30.pdf",
  "md": "Clubes/Grecia/OFI Crete/OFI_FS_2025-06-30.md",
- "generado": "2026-10-10T14:02:00.877Z",
- "estado": "cola",
+ "generado": "2026-10-10T14:46:04.249Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "c1e365b",
-  "c918250"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -49,7 +46,8 @@
   }
  ],
  "notas": [
-  "la lectura base no cerraba; cerró con la lectura 5"
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en OFI_income_stmt_2024-06-30.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

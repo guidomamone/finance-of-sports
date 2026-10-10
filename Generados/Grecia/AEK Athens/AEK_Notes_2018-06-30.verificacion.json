@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/AEK Athens/AEK_Notes_2018-06-30.pdf",
  "md": "Clubes/Grecia/AEK Athens/AEK_Notes_2018-06-30.md",
- "generado": "2026-10-10T14:01:59.556Z",
- "estado": "cola",
+ "generado": "2026-10-10T14:46:02.883Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2018,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "f8c5b32",
-  "c638174",
-  "55b4850"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -50,7 +46,8 @@
   }
  ],
  "notas": [
-  "el desglose de \"Λοιπά λειτουργικά έξοδα\" (16 filas) no suma la fila: quedó la fila"
+  "el desglose de \"Λοιπά λειτουργικά έξοδα\" (16 filas) no suma la fila: quedó la fila",
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en AEK_oikonomikes_katastaseis.pdf"
  ],
  "reintentar": [
   {

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/AEK Athens/AEK_FS_2016-2017.pdf",
  "md": "Clubes/Grecia/AEK Athens/AEK_FS_2016-2017.md",
- "generado": "2026-10-10T14:01:59.165Z",
- "estado": "cola",
+ "generado": "2026-10-10T14:46:02.492Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2017,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "07ded47",
-  "b93103b"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -49,7 +46,8 @@
   }
  ],
  "notas": [
-  "el desglose de \"Λοιπά λειτουργικά έξοδα\" (15 filas) no suma la fila: quedó la fila"
+  "el desglose de \"Λοιπά λειτουργικά έξοδα\" (15 filas) no suma la fila: quedó la fila",
+  "duda de extraer ya contestada para el club (perimetro, \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"): aceptar, en AEK_oikonomikes_katastaseis.pdf"
  ],
  "reintentar": [
   {

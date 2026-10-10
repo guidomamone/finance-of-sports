@@ -1,80 +1,73 @@
 {
-  "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2024-06-30.md",
-  "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2024-06-30.pdf",
-  "club": "levadiakos",
-  "year": 2024,
-  "generatedAt": "2026-10-10T14:02:00.745Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Κύκλος εργασιών (καθαρός)",
-      "lado": "revenue",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        0.729301
-      ],
-      "glosa": "Cifra de negocios (neta)"
-    },
-    {
-      "label": "Λοιπά συνήθη έσοδα",
-      "lado": "revenue",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        2.006148
-      ],
-      "glosa": "Otros ingresos ordinarios"
-    },
-    {
-      "label": "Λοιπά έσοδα και κέρδη",
-      "lado": "revenue",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        0.043131
-      ],
-      "glosa": "Otros ingresos y ganancias"
-    },
-    {
-      "label": "Κόστος πωλήσεων",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        2.303645
-      ],
-      "glosa": "Coste de ventas"
-    },
-    {
-      "label": "Έξοδα διάθεσης",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        0.022976
-      ],
-      "glosa": "Gastos de distribución"
-    },
-    {
-      "label": "Έξοδα διοίκησης",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        0.294681
-      ],
-      "glosa": "Gastos de administración"
-    },
-    {
-      "label": "Άλλα έξοδα και ζημίες",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        0.039848
-      ],
-      "glosa": "Otros gastos y pérdidas"
-    }
-  ]
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2024-06-30.md",
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2024-06-30.pdf",
+ "club": "levadiakos",
+ "year": 2024,
+ "generatedAt": "2026-10-10T14:46:04.138Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    0.729301
+   ]
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    2.006148
+   ]
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    0.043131
+   ]
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    2.303645
+   ]
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    0.022976
+   ]
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    0.294681
+   ]
+  },
+  {
+   "label": "Άλλα έξοδα και ζημίες",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    0.039848
+   ]
+  }
+ ]
 }

@@ -1,190 +1,172 @@
 {
-  "md": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2023-06-30.md",
-  "pdf": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2023-06-30.pdf",
-  "club": "asteras-tripolis",
-  "year": 2023,
-  "generatedAt": "2026-10-10T14:02:00.322Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Έσοδα αγώνων",
-      "lado": "revenue",
-      "page": 31,
-      "section": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\"",
-      "values": [
-        0.070817
-      ],
-      "glosa": "Ingresos por partidos"
-    },
-    {
-      "label": "Έσοδα από τηλεοπτικές μεταδόσεις αγώνων",
-      "lado": "revenue",
-      "page": 31,
-      "section": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\"",
-      "values": [
-        0.925
-      ],
-      "glosa": "Ingresos por retransmisiones de partidos"
-    },
-    {
-      "label": "Έσοδα από παραχώρηση ποδοσφαιριστών",
-      "lado": "revenue",
-      "page": 31,
-      "section": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\"",
-      "values": [
-        0.04
-      ],
-      "glosa": "Ingresos por cesión de futbolistas"
-    },
-    {
-      "label": "Επιχορηγήσεις",
-      "lado": "revenue",
-      "page": 31,
-      "section": "nota que desglosa \"Λοιπά συνήθη έσοδα\"",
-      "values": [
-        0.413184
-      ],
-      "glosa": "Subvenciones"
-    },
-    {
-      "label": "Αποζημίωση ειδικού σκοπού αθλητικών σωματείων",
-      "lado": "revenue",
-      "page": 31,
-      "section": "nota que desglosa \"Λοιπά συνήθη έσοδα\"",
-      "values": [
-        1.5
-      ],
-      "glosa": "Compensación para fines específicos de clubes deportivos"
-    },
-    {
-      "label": "Έσοδα από παροχή υπηρεσιών σε τρίτους",
-      "lado": "revenue",
-      "page": 31,
-      "section": "nota que desglosa \"Λοιπά συνήθη έσοδα\"",
-      "values": [
-        1.203324
-      ],
-      "glosa": "Ingresos por prestación de servicios a terceros"
-    },
-    {
-      "label": "Έσοδα από συνεισφορά αλληλεγγύης και τροφεία",
-      "lado": "revenue",
-      "page": 31,
-      "section": "nota que desglosa \"Λοιπά συνήθη έσοδα\"",
-      "values": [
-        0.013051
-      ],
-      "glosa": "Ingresos por contribución de solidaridad y derechos de formación"
-    },
-    {
-      "label": "Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
-      "lado": "revenue",
-      "page": 18,
-      "section": "estado",
-      "values": [
-        0.0002
-      ],
-      "glosa": "Resultados por enajenación de activos no corrientes"
-    },
-    {
-      "label": "Έσοδα συμμετοχών και επενδύσεων",
-      "lado": "revenue",
-      "page": 18,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Ingresos por participaciones e inversiones"
-    },
-    {
-      "label": "Κέρδος από αγορά οντότητας ή τμήματος σε τιμή ευκαιρίας",
-      "lado": "revenue",
-      "page": 18,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Beneficio por compra en condiciones ventajosas de una entidad o segmento"
-    },
-    {
-      "label": "Λοιπά έσοδα και κέρδη",
-      "lado": "revenue",
-      "page": 18,
-      "section": "estado",
-      "values": [
-        0.001503
-      ],
-      "glosa": "Otros ingresos y ganancias"
-    },
-    {
-      "label": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
-      "lado": "expense",
-      "page": 18,
-      "section": "estado",
-      "values": [
-        5.016123
-      ],
-      "glosa": "Coste de ventas (Coste operativo de la sección de fútbol)"
-    },
-    {
-      "label": "Έξοδα διοίκησης",
-      "lado": "expense",
-      "page": 18,
-      "section": "estado",
-      "values": [
-        1.562964
-      ],
-      "glosa": "Gastos de administración"
-    },
-    {
-      "label": "Έξοδα διάθεσης",
-      "lado": "expense",
-      "page": 18,
-      "section": "estado",
-      "values": [
-        0.026045
-      ],
-      "glosa": "Gastos de comercialización"
-    },
-    {
-      "label": "Πρόβλεψη για επισφαλείς απαιτήσεις",
-      "lado": "expense",
-      "page": 32,
-      "section": "nota que desglosa \"Λοιπά έξοδα και ζημιές\"",
-      "values": [
-        0.024
-      ],
-      "glosa": "Provisión para insolvencias"
-    },
-    {
-      "label": "Φορολογικά πρόστιμα και προσαυξήσεις",
-      "lado": "expense",
-      "page": 32,
-      "section": "nota que desglosa \"Λοιπά έξοδα και ζημιές\"",
-      "values": [
-        0.000328
-      ],
-      "glosa": "Sanciones y recargos fiscales"
-    },
-    {
-      "label": "Λοιπά έκτακτα έξοδα",
-      "lado": "expense",
-      "page": 32,
-      "section": "nota que desglosa \"Λοιπά έξοδα και ζημιές\"",
-      "values": [
-        0.009106
-      ],
-      "glosa": "Otros gastos extraordinarios"
-    },
-    {
-      "label": "Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)",
-      "lado": "expense",
-      "page": 18,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Deterioro de valor de activos (importe neto)"
-    }
-  ]
+ "md": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2023-06-30.md",
+ "pdf": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2023-06-30.pdf",
+ "club": "asteras-tripolis",
+ "year": 2023,
+ "generatedAt": "2026-10-10T14:46:03.674Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Έσοδα αγώνων",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\"",
+   "values": [
+    0.070817
+   ]
+  },
+  {
+   "label": "Έσοδα από τηλεοπτικές μεταδόσεις αγώνων",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\"",
+   "values": [
+    0.925
+   ]
+  },
+  {
+   "label": "Έσοδα από παραχώρηση ποδοσφαιριστών",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\"",
+   "values": [
+    0.04
+   ]
+  },
+  {
+   "label": "Επιχορηγήσεις",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Λοιπά συνήθη έσοδα\"",
+   "values": [
+    0.413184
+   ]
+  },
+  {
+   "label": "Αποζημίωση ειδικού σκοπού αθλητικών σωματείων",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Λοιπά συνήθη έσοδα\"",
+   "values": [
+    1.5
+   ]
+  },
+  {
+   "label": "Έσοδα από παροχή υπηρεσιών σε τρίτους",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Λοιπά συνήθη έσοδα\"",
+   "values": [
+    1.203324
+   ]
+  },
+  {
+   "label": "Έσοδα από συνεισφορά αλληλεγγύης και τροφεία",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Λοιπά συνήθη έσοδα\"",
+   "values": [
+    0.013051
+   ]
+  },
+  {
+   "label": "Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+   "lado": "revenue",
+   "page": 18,
+   "section": "estado",
+   "values": [
+    0.0002
+   ]
+  },
+  {
+   "label": "Έσοδα συμμετοχών και επενδύσεων",
+   "lado": "revenue",
+   "page": 18,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  },
+  {
+   "label": "Κέρδος από αγορά οντότητας ή τμήματος σε τιμή ευκαιρίας",
+   "lado": "revenue",
+   "page": 18,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": "revenue",
+   "page": 18,
+   "section": "estado",
+   "values": [
+    0.001503
+   ]
+  },
+  {
+   "label": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "values": [
+    5.016123
+   ]
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "values": [
+    1.562964
+   ]
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "values": [
+    0.026045
+   ]
+  },
+  {
+   "label": "Πρόβλεψη για επισφαλείς απαιτήσεις",
+   "lado": "expense",
+   "page": 32,
+   "section": "nota que desglosa \"Λοιπά έξοδα και ζημιές\"",
+   "values": [
+    0.024
+   ]
+  },
+  {
+   "label": "Φορολογικά πρόστιμα και προσαυξήσεις",
+   "lado": "expense",
+   "page": 32,
+   "section": "nota que desglosa \"Λοιπά έξοδα και ζημιές\"",
+   "values": [
+    0.000328
+   ]
+  },
+  {
+   "label": "Λοιπά έκτακτα έξοδα",
+   "lado": "expense",
+   "page": 32,
+   "section": "nota que desglosa \"Λοιπά έξοδα και ζημιές\"",
+   "values": [
+    0.009106
+   ]
+  },
+  {
+   "label": "Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  }
+ ]
 }

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/AEK Athens/AEK_oikonomikes_katastaseis.pdf",
  "md": "Clubes/Grecia/AEK Athens/AEK_oikonomikes_katastaseis.md",
- "generado": "2026-10-10T14:01:59.928Z",
- "estado": "cola",
+ "generado": "2026-10-10T14:46:03.260Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2016,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "7f01ddd",
-  "5997d38"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -44,7 +41,8 @@
   }
  ],
  "notas": [
-  "el desglose de \"Λοιπά λειτουργικά έξοδα\" (14 filas) no suma la fila: quedó la fila"
+  "el desglose de \"Λοιπά λειτουργικά έξοδα\" (14 filas) no suma la fila: quedó la fila",
+  "duda de extraer ya contestada para el club (perimetro, \"Μισθοδοσία\"): aceptar, en AEK_oikonomikes_katastaseis.pdf"
  ],
  "reintentar": [
   {

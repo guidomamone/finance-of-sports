@@ -1,130 +1,118 @@
 {
-  "md": "Clubes/Grecia/AEK Athens/AEK_FS_orthi_epanalipsi_2022.md",
-  "pdf": "Clubes/Grecia/AEK Athens/AEK_FS_orthi_epanalipsi_2022.pdf",
-  "club": "aek-athens",
-  "year": 2022,
-  "generatedAt": "2026-10-10T14:01:59.394Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Έσοδα από εισπήρια",
-      "lado": "revenue",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        3.723556
-      ],
-      "glosa": "Ingresos por taquilla"
-    },
-    {
-      "label": "Χορηγίες και διαφημίσεις",
-      "lado": "revenue",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        9.107238
-      ],
-      "glosa": "Patrocinios y publicidad"
-    },
-    {
-      "label": "Δικαιώματα αναμετάδοσης",
-      "lado": "revenue",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        4.819277
-      ],
-      "glosa": "Derechos de retransmisión"
-    },
-    {
-      "label": "Εμπορικά",
-      "lado": "revenue",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        0.008776
-      ],
-      "glosa": "Ingresos comerciales"
-    },
-    {
-      "label": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
-      "lado": "revenue",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        0.717991
-      ],
-      "glosa": "Fondos de solidaridad de la UEFA y premios"
-    },
-    {
-      "label": "Λοιπά λειτουργικά έσοδα",
-      "lado": "revenue",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        2.909469
-      ],
-      "glosa": "Otros ingresos de explotación"
-    },
-    {
-      "label": "Κέρδος/ζημία από πώληση άυλων περιουσιακών στοιχείων - ποδοσφαιριστές",
-      "lado": "revenue",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        0.732664
-      ],
-      "glosa": "Resultado por venta de activos intangibles - futbolistas"
-    },
-    {
-      "label": "Κόστος πωλήσεων / υλικών",
-      "lado": "expense",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        0.085399
-      ],
-      "glosa": "Coste de ventas / materiales"
-    },
-    {
-      "label": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
-      "lado": "expense",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        19.008245
-      ],
-      "glosa": "Gastos de personal deportivo y otros gastos"
-    },
-    {
-      "label": "Απομείωση και απόσβεση",
-      "lado": "expense",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        3.620319
-      ],
-      "glosa": "Amortizaciones y correcciones por deterioro"
-    },
-    {
-      "label": "Απομείωση παγίων περιουσιακών στοιχείων",
-      "lado": "expense",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        0.597209
-      ],
-      "glosa": "Deterioro del inmovilizado"
-    },
-    {
-      "label": "Λοιπά λειτουργικά έξοδα",
-      "lado": "expense",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        8.08108
-      ],
-      "glosa": "Otros gastos de explotación"
-    }
-  ]
+ "md": "Clubes/Grecia/AEK Athens/AEK_FS_orthi_epanalipsi_2022.md",
+ "pdf": "Clubes/Grecia/AEK Athens/AEK_FS_orthi_epanalipsi_2022.pdf",
+ "club": "aek-athens",
+ "year": 2022,
+ "generatedAt": "2026-10-10T14:46:02.728Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Έσοδα από εισπήρια",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    3.723556
+   ]
+  },
+  {
+   "label": "Χορηγίες και διαφημίσεις",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    9.107238
+   ]
+  },
+  {
+   "label": "Δικαιώματα αναμετάδοσης",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    4.819277
+   ]
+  },
+  {
+   "label": "Εμπορικά",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    0.008776
+   ]
+  },
+  {
+   "label": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    0.717991
+   ]
+  },
+  {
+   "label": "Λοιπά λειτουργικά έσοδα",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    2.909469
+   ]
+  },
+  {
+   "label": "Κέρδος/ζημία από πώληση άυλων περιουσιακών στοιχείων - ποδοσφαιριστές",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    0.732664
+   ]
+  },
+  {
+   "label": "Κόστος πωλήσεων / υλικών",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    0.085399
+   ]
+  },
+  {
+   "label": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    19.008245
+   ]
+  },
+  {
+   "label": "Απομείωση και απόσβεση",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    3.620319
+   ]
+  },
+  {
+   "label": "Απομείωση παγίων περιουσιακών στοιχείων",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    0.597209
+   ]
+  },
+  {
+   "label": "Λοιπά λειτουργικά έξοδα",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    8.08108
+   ]
+  }
+ ]
 }

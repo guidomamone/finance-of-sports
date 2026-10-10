@@ -1,50 +1,46 @@
 {
-  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.md",
-  "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.pdf",
-  "club": "volos-nfc",
-  "year": 2022,
-  "generatedAt": "2026-10-10T14:02:01.687Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Κύκλος εργασιών",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        3.574025
-      ],
-      "glosa": "Cifra de negocios"
-    },
-    {
-      "label": "Λοιπά συνήθη έσοδα",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0.631156
-      ],
-      "glosa": "Otros ingresos ordinarios"
-    },
-    {
-      "label": "Έξοδα διοίκησης",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        4.080745
-      ],
-      "glosa": "Gastos de administración"
-    },
-    {
-      "label": "Λοιπά έξοδα και ζημιές",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0.003871
-      ],
-      "glosa": "Otros gastos y pérdidas"
-    }
-  ]
+ "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.md",
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.pdf",
+ "club": "volos-nfc",
+ "year": 2022,
+ "generatedAt": "2026-10-10T14:46:05.009Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    3.574025
+   ]
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    0.631156
+   ]
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    4.080745
+   ]
+  },
+  {
+   "label": "Λοιπά έξοδα και ζημιές",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    0.003871
+   ]
+  }
+ ]
 }

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2019-06-30.pdf",
  "md": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2019-06-30.md",
- "generado": "2026-10-10T14:02:00.995Z",
- "estado": "cola",
+ "generado": "2026-10-10T14:46:04.365Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2019,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "82dfa6f"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -43,6 +41,7 @@
   }
  ],
  "notas": [
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en OFI_income_stmt_2024-06-30.pdf",
   "duda de extraer que no afecta la carga: El cuadro no declara escala; los decimales sugieren euros en unidades (L5-L20)."
  ],
  "reintentar": null,

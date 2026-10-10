@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2020-06-30.pdf",
  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2020-06-30.md",
- "generado": "2026-10-10T14:02:01.472Z",
- "estado": "cola",
+ "generado": "2026-10-10T14:46:04.837Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2020,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "702f364",
-  "94e7870"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -48,7 +45,9 @@
    "detalle": "club nuevo"
   }
  ],
- "notas": [],
+ "notas": [
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Volos_income_stmt_2025-06-30.pdf"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,

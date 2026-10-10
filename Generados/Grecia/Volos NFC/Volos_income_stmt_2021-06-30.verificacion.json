@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2021-06-30.pdf",
  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2021-06-30.md",
- "generado": "2026-10-10T14:02:01.580Z",
- "estado": "cola",
+ "generado": "2026-10-10T14:46:04.921Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2021,
  "escala": {
@@ -21,13 +21,35 @@
    "evidencia": "Volos_income_stmt_2021-06-30.md L1-8",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2021-06-30.pdf",
+   "campo": "fila",
+   "valor": "62,83",
+   "linea": 20,
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "financiero",
+   "reemplaza": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "motivo": "Interés cobrado: suma al resultado. El estado imprime cobrado y pagado sin signo y la carga sumaba los dos como costo (2024: 2 × 5.104,81 de diferencia con el resultado impreso). Revisión de la cola de Grecia.",
+   "evidencia": "Volos_income_stmt_2021-06-30.md L20",
+   "autor": "Claude",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2021-06-30.pdf",
+   "campo": "fila",
+   "valor": "-3225,46",
+   "linea": 21,
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "financiero",
+   "reemplaza": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "motivo": "Interés pagado: resta del resultado (ver el ajuste del interés cobrado del mismo documento).",
+   "evidencia": "Volos_income_stmt_2021-06-30.md L21",
+   "autor": "Claude",
+   "fecha": "2026-10-10"
   }
  ],
- "cola": [
-  "d31ee34",
-  "c14215f",
-  "c14215f"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -42,7 +64,7 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero e impuesto invertidos)"
+   "detalle": "cierra (impuesto invertido)"
   },
   {
    "nombre": "documento del año 2022",
@@ -62,6 +84,10 @@
  ],
  "notas": [
   "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
+  "ajuste manual: fila \"Πιστωτικοί τόκοι και συναφή έσοδα\" (financiero) 62,83, en lugar de \"Πιστωτικοί τόκοι και συναφή έσοδα\" (2026-10-10, Interés cobrado: suma al resultado. El estado imprime cobrado y pagado sin signo y la carga sumaba los dos como costo (2024: 2 × 5.104,81 de diferencia con el resultado impreso). Revisión de la cola de Grecia.)",
+  "ajuste manual: fila \"Χρεωστικοί τόκοι και συναφή έξοδα\" (financiero) -3225,46, en lugar de \"Χρεωστικοί τόκοι και συναφή έξοδα\" (2026-10-10, Interés pagado: resta del resultado (ver el ajuste del interés cobrado del mismo documento).)",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Volos_income_stmt_2025-06-30.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en Volos_income_stmt_2025-06-30.pdf",
   "duda de extraer que no afecta la carga: Los gastos en L13, L15, L21 y L23 aparecen sin paréntesis ni signo; la aritmética (2177347+879812,8-2739218-1934,54≈316007) confirma que restan."
  ],
  "reintentar": null,
@@ -70,12 +96,12 @@
  "totales": {
   "ingresos": 3.05716,
   "gastos": 2.741153,
-  "financiero": 0.003288,
+  "financiero": -0.003163,
   "impuesto": 0.025264,
   "resultadoImpreso": 0.28758,
   "resultadoParaCargar": 0.28758,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero e impuesto invertidos"
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -112,13 +138,13 @@
   }
  ],
  "signosCarga": {
-  "financiero": -1,
+  "financiero": 1,
   "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
-   "M": -0.000063,
+   "M": 0.000063,
    "linea": 20
   },
   {

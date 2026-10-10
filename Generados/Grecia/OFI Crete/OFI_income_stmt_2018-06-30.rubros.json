@@ -1,80 +1,73 @@
 {
-  "md": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2018-06-30.md",
-  "pdf": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2018-06-30.pdf",
-  "club": "ofi-crete",
-  "year": 2018,
-  "generatedAt": "2026-10-10T14:02:00.933Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Κύκλος εργασιών (καθαρός)",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0.527893
-      ],
-      "glosa": "Cifra de negocios (neta)"
-    },
-    {
-      "label": "Λοιπά συνήθη έσοδα",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0.122035
-      ],
-      "glosa": "Otros ingresos ordinarios"
-    },
-    {
-      "label": "Λοιπά έσοδα και κέρδη",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0.080266
-      ],
-      "glosa": "Otros ingresos y ganancias"
-    },
-    {
-      "label": "Κόστος πωλήσεων",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        1.577619
-      ],
-      "glosa": "Coste de ventas"
-    },
-    {
-      "label": "Έξοδα διοίκησης",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0.095472
-      ],
-      "glosa": "Gastos de administración"
-    },
-    {
-      "label": "Έξοδα διάθεσης",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0.079767
-      ],
-      "glosa": "Gastos de comercialización"
-    },
-    {
-      "label": "Λοιπά έξοδα και ζημίες",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0.211419
-      ],
-      "glosa": "Otros gastos y pérdidas"
-    }
-  ]
+ "md": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2018-06-30.md",
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2018-06-30.pdf",
+ "club": "ofi-crete",
+ "year": 2018,
+ "generatedAt": "2026-10-10T14:46:04.306Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    0.527893
+   ]
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    0.122035
+   ]
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    0.080266
+   ]
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    1.577619
+   ]
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    0.095472
+   ]
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    0.079767
+   ]
+  },
+  {
+   "label": "Λοιπά έξοδα και ζημίες",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    0.211419
+   ]
+  }
+ ]
 }
