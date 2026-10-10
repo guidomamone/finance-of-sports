@@ -139,7 +139,7 @@ window.CLUB_INDEX = {
   "leeds-gb": {"n":"Leeds United","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "levante-es": {"n":"Levante UD","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "liverpool-gb": {"n":"Liverpool","c":"GB","q":"mixed","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
-  "lokomotivmoscow-ru": {"n":"Lokomotiv Moscow","c":"RU","q":"full","y":2,"last":2022,"yrs":[[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
+  "lokomotivmoscow-ru": {"n":"Lokomotiv Moscow","c":"RU","q":"full","y":3,"last":2023,"yrs":[[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "losandes-ar": {"n":"Los Andes","c":"AR","q":"full","y":2,"last":2021,"yrs":[[2021,"official_balance_sheet"],[2020,"official_balance_sheet"]]},
   "mancity-gb": {"n":"Manchester City","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "mechelen-be": {"n":"Mechelen","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
