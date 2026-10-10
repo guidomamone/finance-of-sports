@@ -1,0 +1,310 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/dre-2022.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/dre-2022.md",
+ "mdSha1": "959429c2c4f51c8ddf43b0f6a87d2bad37ff1053",
+ "modelo": "a mano (Claude en sesión, 2026-10-09; extraer.mjs cortó por max_tokens, to-do 197)",
+ "generado": "2026-10-10T00:51:35.672Z",
+ "ubicacion": {
+  "estado": [
+   "b2",
+   "b4",
+   "b6",
+   "b8",
+   "b10",
+   "b12",
+   "b14",
+   "b16",
+   "b18"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "balancete en reales con centavos"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 19,
+   "etiqueta": "RECEITA BRUTA",
+   "actual": "19.190.545,64",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 21,
+   "etiqueta": "Rendas de competições - futebol feminino: Campeonato Paulista",
+   "actual": "481.933,66",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 22,
+   "etiqueta": "Rendas de competições - futebol feminino: Copa Libertadores",
+   "actual": "39.236,27",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 24,
+   "etiqueta": "Transmissões esportivas - futebol masculino: Campeonato Paulista",
+   "actual": "5.126.695,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 25,
+   "etiqueta": "Transmissões esportivas - futebol masculino: Copa do Brasil",
+   "actual": "558.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 27,
+   "etiqueta": "Transações de atletas: venda dos direitos federativos e econômicos",
+   "actual": "2.839.047,21",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 28,
+   "etiqueta": "Transações de atletas: repasse de cessão temporária",
+   "actual": "900.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 30,
+   "etiqueta": "Transações de atletas - exterior: venda dos direitos federativos e econômicos",
+   "actual": "393.858,75",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 31,
+   "etiqueta": "Transações de atletas - exterior: repasse de cessão temporária",
+   "actual": "3.620.430,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 32,
+   "etiqueta": "Receita com formação",
+   "actual": "150.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 34,
+   "etiqueta": "Premiações - futebol masculino: Campeonato Paulista",
+   "actual": "180.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 36,
+   "etiqueta": "Premiações - futebol feminino: Campeonato Brasileiro",
+   "actual": "65.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 37,
+   "etiqueta": "Premiações - futebol feminino: Campeonato Paulista",
+   "actual": "80.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 39,
+   "etiqueta": "Outras premiações - futebol masculino: Programa de excelência FPF",
+   "actual": "80.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 41,
+   "etiqueta": "Publicidade - futebol masculino: Campeonato Paulista",
+   "actual": "873.305,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 43,
+   "etiqueta": "Patrocínios",
+   "actual": "3.523.100,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 44,
+   "etiqueta": "Permuta",
+   "actual": "47.111,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 46,
+   "etiqueta": "Mensalidade sócio torcedor",
+   "actual": "108.724,14",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 48,
+   "etiqueta": "Venda de mercadorias",
+   "actual": "44.604,61",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 49,
+   "etiqueta": "Lucro na alienação do ativo imobilizado",
+   "actual": "79.500,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 50,
+   "etiqueta": "DEDUÇÕES DA RECEITA BRUTA",
+   "actual": "-1.033.090,67",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 77,
+   "etiqueta": "CUSTOS",
+   "actual": "23.267.062,09",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 492,
+   "etiqueta": "DESPESAS OPERACIONAIS",
+   "actual": "6.655.400,05",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 736,
+   "etiqueta": "RECEITAS FINANCEIRAS",
+   "actual": "474.950,20",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 738,
+   "etiqueta": "OUTRAS RECEITAS OPERACIONAIS",
+   "actual": "45.969,21",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 742,
+   "etiqueta": "RECEITAS NÃO OPERACIONAIS",
+   "actual": "306.892,04",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 751,
+   "etiqueta": "PREJUÍZO DO EXERCÍCIO",
+   "actual": "-10.937.195,72",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 751,
+  "actual": "-10.937.195,72",
+  "anterior": null
+ },
+ "dudas": [],
+ "observaciones": "Armado a mano: el balancete tiene ~580 cuentas y la extracción por IA se cortó. Ingresos con el detalle de la receita bruta (L21-L49, suman 19.190.545,64 = L19); deducciones L50; costos (L77) y despesas operacionais (L492, incluye administrativas, tributarias y financieras) como renglones de primer nivel. Cuenta: 19.190.545,64 - 1.033.090,67 - 23.267.062,09 - 6.655.400,05 + 474.950,20 + 45.969,21 + 306.892,04 = -10.937.195,72 (L751)."
+}

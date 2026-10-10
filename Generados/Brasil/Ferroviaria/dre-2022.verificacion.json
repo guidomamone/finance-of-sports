@@ -1,0 +1,307 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/dre-2022.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/dre-2022.md",
+ "generado": "2026-10-10T00:51:36.128Z",
+ "estado": "ok",
+ "clubId": "ferroviaria-br",
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2022.pdf",
+   "campo": "name",
+   "valor": "Ferroviária S.A.F.",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)",
+   "evidencia": "dre-2022.md (FERROVIARIA S.A.F.; CNPJ 06.020.811/0001-30)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2022.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Onboarding to-do 165 (Claude en sesión, 2026-10-09, pedido de Guido): extraer.mjs cortó por el tope de salida (balancete de ~580 cuentas, to-do 197); .filas.json armado a mano con la receita bruta abierta y los renglones de primer nivel",
+   "evidencia": "dre-2022.md L19-L50, L77, L492, L736-L751",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2022.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): DRE del sistema contable de la SAF, 01/01 a 31/12/2022 (mismo formato que 2013-b a 2018)",
+   "evidencia": "dre-2022.md L1-L15",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna 2021"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 18.510316 en este documento y 18.542674 en demonstracoes-financeiras-2023-fpf.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna del año anterior"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar que no afecta la carga: b18 lleva arriba 'CONSOLIDADO' pero es la continuación del mismo balancete de una sola empresa (con filial), sin otro estado individual separado."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 18.510316,
+  "gastos": 29.922462,
+  "financiero": 0.47495,
+  "impuesto": 0,
+  "resultadoImpreso": -10.937196,
+  "resultadoParaCargar": -10.937196,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Rendas de competições - futebol feminino: Campeonato Paulista",
+   "lado": "ingreso",
+   "M": 0.481934,
+   "pagina": 1,
+   "linea": 21,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Rendas de competições - futebol feminino: Copa Libertadores",
+   "lado": "ingreso",
+   "M": 0.039236,
+   "pagina": 1,
+   "linea": 22,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Transmissões esportivas - futebol masculino: Campeonato Paulista",
+   "lado": "ingreso",
+   "M": 5.126695,
+   "pagina": 1,
+   "linea": 24,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Transmissões esportivas - futebol masculino: Copa do Brasil",
+   "lado": "ingreso",
+   "M": 0.558,
+   "pagina": 1,
+   "linea": 25,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Transações de atletas: venda dos direitos federativos e econômicos",
+   "lado": "ingreso",
+   "M": 2.839047,
+   "pagina": 1,
+   "linea": 27,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Transações de atletas: repasse de cessão temporária",
+   "lado": "ingreso",
+   "M": 0.9,
+   "pagina": 1,
+   "linea": 28,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Transações de atletas - exterior: venda dos direitos federativos e econômicos",
+   "lado": "ingreso",
+   "M": 0.393859,
+   "pagina": 1,
+   "linea": 30,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Transações de atletas - exterior: repasse de cessão temporária",
+   "lado": "ingreso",
+   "M": 3.62043,
+   "pagina": 1,
+   "linea": 31,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita com formação",
+   "lado": "ingreso",
+   "M": 0.15,
+   "pagina": 1,
+   "linea": 32,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Premiações - futebol masculino: Campeonato Paulista",
+   "lado": "ingreso",
+   "M": 0.18,
+   "pagina": 1,
+   "linea": 34,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Premiações - futebol feminino: Campeonato Brasileiro",
+   "lado": "ingreso",
+   "M": 0.065,
+   "pagina": 1,
+   "linea": 36,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Premiações - futebol feminino: Campeonato Paulista",
+   "lado": "ingreso",
+   "M": 0.08,
+   "pagina": 1,
+   "linea": 37,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outras premiações - futebol masculino: Programa de excelência FPF",
+   "lado": "ingreso",
+   "M": 0.08,
+   "pagina": 1,
+   "linea": 39,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Publicidade - futebol masculino: Campeonato Paulista",
+   "lado": "ingreso",
+   "M": 0.873305,
+   "pagina": 1,
+   "linea": 41,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Patrocínios",
+   "lado": "ingreso",
+   "M": 3.5231,
+   "pagina": 1,
+   "linea": 43,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Permuta",
+   "lado": "ingreso",
+   "M": 0.047111,
+   "pagina": 1,
+   "linea": 44,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Mensalidade sócio torcedor",
+   "lado": "ingreso",
+   "M": 0.108724,
+   "pagina": 1,
+   "linea": 46,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Venda de mercadorias",
+   "lado": "ingreso",
+   "M": 0.044605,
+   "pagina": 1,
+   "linea": 48,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lucro na alienação do ativo imobilizado",
+   "lado": "ingreso",
+   "M": 0.0795,
+   "pagina": 1,
+   "linea": 49,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "DEDUÇÕES DA RECEITA BRUTA",
+   "lado": "ingreso",
+   "M": -1.033091,
+   "pagina": 1,
+   "linea": 50,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "OUTRAS RECEITAS OPERACIONAIS",
+   "lado": "ingreso",
+   "M": 0.045969,
+   "pagina": 9,
+   "linea": 738,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "RECEITAS NÃO OPERACIONAIS",
+   "lado": "ingreso",
+   "M": 0.306892,
+   "pagina": 9,
+   "linea": 742,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "CUSTOS",
+   "lado": "gasto",
+   "M": 23.267062,
+   "pagina": 1,
+   "linea": 77,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "DESPESAS OPERACIONAIS",
+   "lado": "gasto",
+   "M": 6.6554,
+   "pagina": 6,
+   "linea": 492,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "RECEITAS FINANCEIRAS",
+   "M": 0.47495,
+   "linea": 736
+  }
+ ],
+ "impuesto": []
+}
