@@ -6,7 +6,7 @@
 // Premier Liga (RU) — 5 ejercicio(s) con ranking:
 //   2025: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -72,6 +72,10 @@ window.RANKINGS["ru-premierliga"] = {
       { id:"krasnodar-ru", revenue:118.808, reportType:"official_balance_sheet",
         sourceId:"krasnodar-ru-bfo-2023-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",44.937],["Otros ingresos",73.87]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"rostov-ru", revenue:45.786, reportType:"official_balance_sheet",
+        sourceId:"rostov-ru-bfo-2023-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",28.158],["Otros ingresos",17.628]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"kryliasovetovsamara-ru", revenue:30.7, reportType:"official_balance_sheet",
         sourceId:"kryliasovetovsamara-ru-bfo-2023-datos",
