@@ -305,6 +305,10 @@ Mitigaciones:
   Versión 625 (to-do 189): escalón 1 de los dos chequeos, solo si las columnas crudas no coinciden: cada columna actual con los ajustes `fila` de
   su documento (reemplazar y agregar); en la columna anterior solo los ajustes que sacan una fila (valor 0 con reemplaza). Misma compuerta (2%).
   Caso: Roma 2007 contra 2008 (crudo 157.589 contra 162.017; con el ajuste de 2007, 162.255). Medido en los 242: 14 chequeos pasan a ok, 0 al revés, carga idéntica.
+  Escalón 2 (to-do 201), solo si el 1 tampoco coincide: la columna del año en común con LAS MISMAS FILAS que cerraron la columna que se carga
+  (las líneas finales de cada documento, con su signo), no reconstruida con la lectura. Misma compuerta (2%). Caso: Ferroviária 2024, columna
+  2023 (114,4 M reconstruida; 37,74 M con las filas que cerraron 2024; cargado 37,56 M). Medido en las 306: carga idéntica; pasan a ok
+  Ferroviária 2024, Criciúma 2025 y Lazio 1999-00 (y Cuiabá 2024 contra 2025).
 - **Resultado final** (Versión 364), si cerró contra "antes de impuestos": candidatos antes ± impuesto → escalón 0, impreso en el .md del
   documento; escalón 1, impreso en el documento siguiente (columna del año anterior) → compuerta: uno solo coincide; si no, cola.
 - **Dudas de la IA, escalera** (antes de llegar a la cola):

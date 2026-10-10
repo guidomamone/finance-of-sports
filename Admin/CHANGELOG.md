@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 664 — `verificar.mjs`: escalón 2 de los chequeos del año en común (to-do 201) (2026-10-10)
+
+- Si los escalones 0 y 1 no coinciden, la columna del año en común se compara con las mismas filas que cerraron la columna que se carga
+  (no reconstruida). Medido en las 306 verificaciones (copia aislada): lo cargado idéntico; pasan de cola a OK Ferroviária 2024 (0,5%),
+  Criciúma 2025 (exacto) y Lazio 1999-00 (0,1%); Cuiabá 2024 contra 2025 pasa a OK (sigue en cola por 2023). Remo dre-2024 contra 2025
+  (8,6%) sigue preguntando: parece una diferencia real.
+
 ## Versión 663 — `verificar.mjs`: total que suma un subtotal y renglones de arriba (to-do 199, patrón B) (2026-10-10)
 
 - Dentro del escalón "subtotal repetido": una fila que no es renglón y es la suma con signo de las filas de arriba de su lado, contando los

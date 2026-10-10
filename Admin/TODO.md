@@ -104,10 +104,6 @@ ni en el comentario de ningún archivo de código.
     cambia Ferroviária 2012 (una fila "Sócio torcedor" en 0 que pasaría a cargarse). Un solo caso y ya cargado a mano: no se hace. Remo 2020
     sigue en la cola sin sus ajustes (subtotales de gastos). Si aparecen más casos como Avaí, rediseñar con los dos escalones juntos.
 
-201. EL CHEQUEO DE AÑO VECINO SUMA DE MÁS EN ALGUNOS DOCUMENTOS (optimización: casos falsos en la cola). Cuiabá 2024: la columna 2023 da 326,47 M
-    contra 157,93 M cargados (con el escalón del subtotal repetido; 168,53 M sin él). Remo dre-2024 da 76,58 M de ingresos 2024 (2 × 38,29)
-    contra el documento 2025, y Ferroviária 2024 da 114,4 M para la columna 2023 (37,56 M real). Cada uno levanta un caso que hay que contestar a mano.
-
 202. LAS ALTAS DE DRE DE UNA PÁGINA PREGUNTAN `reportType` (optimización). Remo dre-2019/2023/2024 y Ferroviária 2013-b a 2018: 8 ajustes iguales a mano
     ("es la DRE del ejercicio, el balance está en otro PDF"). Escalón: si el .md trae "Demonstração do Resultado" con el período completo del año, ok.
 

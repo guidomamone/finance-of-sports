@@ -484,7 +484,14 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     }
     return out;
   };
-  const compararVecino = (dy, V2, k, nivelMio = 0, subRepMio = false, ventanaMio = false) => {
+  // (to-do 201) ESCALÓN 2 de los chequeos del año en común: la columna del año en común leída con LAS MISMAS FILAS que cerraron la columna
+  // que se carga (las líneas finales, con el signo con que contaron), en vez de volver a armarla con la lectura. Hace falta cuando esa columna
+  // no suma su propio total (la reconstrucción no reconoce los subtotales y los cuenta además). Caso: Ferroviária 2024, la columna 2023 de
+  // sus renglones da 38.582.080 contra el total impreso 39.134.471; la reconstrucción contaba total y "Receita líquida" (114,4 M); con las
+  // filas que cerraron 2024 (renglones − "Impostos incidentes") da 37.009.979 contra 37.562.370 cargados (1,5%). Misma compuerta (2%).
+  // Una fila sin esa columna (un ajuste `fila`) cuenta 0; si ninguna la trae, no decide.
+  const colConFilas = (lineas, buscar) => { let s = 0; let alguna = false; for (const l of lineas) { const f = buscar(l); const a = f?.A; if (a == null || !isFinite(a)) continue; alguna = true; s += (l.M < 0 ? -1 : 1) * Math.abs(a); } return alguna ? s : null; };
+  const compararVecino = (dy, V2, k, nivelMio = 0, subRepMio = false, ventanaMio = false, lineasMio = null) => {
     const [campoMio, campoSuyo] = dy === 1 ? ['M', 'A'] : ['A', 'M'];
     const sumaDe = (arr, c) => arr.reduce((a, f) => a + (f[c] || 0), 0);
     const Amio = armar(F, U, false, k);
@@ -494,6 +501,14 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     if (!(suyo && cerca(mio, suyo, 0.02))) {
       const m1 = sumaDe(ingresosConAjustes(Amio, pdf, linMio, campoMio, nivelMio === 4), campoMio); const s1 = sumaDe(ingresosConAjustes(V2.A2, V2.otro.pdf, linSuyo, campoSuyo, V2.lect2 === 4), campoSuyo);
       if (s1 && cerca(m1, s1, 0.02)) { mio = m1; suyo = s1; }
+    }
+    // (to-do 201) escalón 2: con las filas que cerraron cada columna que se carga (la mía, `lineasMio`; la del vecino, su .verificacion.json)
+    if (lineasMio && !(suyo && cerca(mio, suyo, 0.02))) {
+      let V2v = null; try { V2v = JSON.parse(readFileSync(resolve(ROOT, derivado(V2.otro.md, '.verificacion.json', { crear: false })), 'utf8')); } catch {}
+      const lin2 = (V2v?.lineas || []).filter((l) => l.lado === 'ingreso');
+      const m2 = campoMio === 'M' ? lineasMio.reduce((a, f) => a + (f.M || 0), 0) : colConFilas(lineasMio, (f) => f);
+      const s2 = campoSuyo === 'M' ? (V2v?.totales?.ingresos ?? null) : colConFilas(lin2, (l) => V2.A2.estado.find((f) => f.linea === l.linea));
+      if (m2 != null && s2 && cerca(m2, s2, 0.02)) { mio = m2; suyo = s2; }
     }
     // COMPUERTA DEL ESCALÓN 0 (Versión 416, escalera aprobada por Guido el 2026-10-02): la columna del año en común ("año anterior", la mía o
     // la del siguiente) tiene que existir: alguna fila del estado la trae leída. Si no, "no se puede comparar" (null), como sin vecino. Caso:
@@ -1042,6 +1057,8 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     let okA = sinColA ? null : prodI ? (cerca(sA, prodI, 0.02) || (extraPrev > 0 && cerca(sA, prodI + extraPrev, 0.02))) : null;
     // (to-do 189) escalón 1: si la columna cruda no coincide, con los ajustes `fila` que solo sacan una fila (la columna anterior no tiene otros).
     if (okA === false) { const sA1 = suma(ingresosConAjustes({ estado, mult }, pdf, ingA, 'A'), 'A'); if (cerca(sA1, prodI, 0.02) || (extraPrev > 0 && cerca(sA1, prodI + extraPrev, 0.02))) { okA = true; sA = sA1; } }
+    // (to-do 201) escalón 2: la columna anterior con las mismas filas que cerraron la actual (ver colConFilas)
+    if (okA === false) { const sA2 = colConFilas(E.ing, (f) => f); if (sA2 != null && (cerca(sA2, prodI, 0.02) || (extraPrev > 0 && cerca(sA2, prodI + extraPrev, 0.02)))) { okA = true; sA = sA2; } }
     chequeos.push({ nombre: 'año anterior cargado', ok: okA, detalle: sinColA ? `no se puede comparar: este documento no trae la columna ${prev}` : prodI ? `la columna ${prev} de este documento suma ingresos ${r6(sA)}; el sitio tiene ${r6(prodI)}` : `el sitio tiene ${prev} sin líneas de ingresos` });
     if (okA === false) caso('anio-anterior', String(prev), `La columna del año anterior (${prev}) de este documento suma ingresos ${r6(sA)} y el sitio tiene ${r6(prodI)} para ese año. Puede ser: otra tabla u otro perímetro (revisar el documento), otra escala, o un error del año ya cargado (revisar producción).`, { pagina: estado[0]?.pagina, lineas: estado.length ? [Math.min(...estado.map((f) => f.linea)), Math.max(...estado.map((f) => f.linea))] : null });
   }
@@ -1053,7 +1070,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // (el documento vecino y su escala: vecinoDe(), arriba, junto a la escalera de escala)
   for (const [dy, v] of vecinosDoc) {
     const { otro } = v;
-    const { mio, suyo, ok, sinColumna, otroRegimen } = compararVecino(dy, v, kEsc, E.nivel, escalonSubRep, escalonVentanaOtros);
+    const { mio, suyo, ok, sinColumna, otroRegimen } = compararVecino(dy, v, kEsc, E.nivel, escalonSubRep, escalonVentanaOtros, E.ing);
     vecinos.push(ok);
     if (otroRegimen) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no` }); continue; }
     if (sinColumna) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} no trae la columna del año anterior` }); continue; }
