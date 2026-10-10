@@ -91,7 +91,11 @@ export function resumenAltas() {
   const porEstado = Object.fromEntries(ESTADOS.map((e) => [e, 0]));
   const preguntasPorCampo = {}; let resueltasPorClaude = 0; let fecha = null;
   const listos = [];
-  for (const e of m.values()) {
+  for (const e0 of m.values()) {
+    // El registro lo escribe alta-club.mjs --todos; un club que se dio de alta por otro camino después (lote.mjs --cargar, bfo-rusia.mjs)
+    // sigue figurando "listo" o "con preguntas" hasta la próxima corrida. Si su data/<id>-data.js ya existe, cuenta como "existe".
+    // Caso: el resumen del 2026-10-10 mostraba a Remo y a los 16 rusos como listos para alta.
+    const e = e0.clubId && e0.estado !== 'existe' && existsSync(resolve(ROOT, 'data', `${e0.clubId}-data.js`)) ? { ...e0, estado: 'existe' } : e0;
     porEstado[e.estado] = (porEstado[e.estado] || 0) + 1;
     for (const p of e.preguntas || []) preguntasPorCampo[p.campo] = (preguntasPorCampo[p.campo] || 0) + 1;
     resueltasPorClaude += (e.resueltas || []).length;

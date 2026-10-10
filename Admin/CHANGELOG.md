@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 668 — Resumen de altas: un club ya dado de alta cuenta como "existe" (2026-10-10)
+
+- `altas-registro.mjs` (`resumenAltas`, lo que imprime `pipeline.mjs`): si `data/<id>-data.js` existe, el club cuenta como "existe" aunque
+  el registro diga "listo" (Remo y los 16 rusos se dieron de alta después de la última corrida de `alta-club.mjs --todos`).
+
 ## Versión 667 — Mediciones que faltaban (2026-10-10)
 
 - To-do 197: ensayo de `prueba-completa` con y sin el escalón del tope de extraer, idéntico (to-do cerrado). To-do 198: las 306
