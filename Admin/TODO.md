@@ -92,10 +92,6 @@ ni en el comentario de ningún archivo de código.
     Inglaterra 16/19 (unos 75 clubes). Un Sonnet por país, con fuente por cada fecha, mismo formato y regla que data/gestiones/ar.js (lo hecho con Juventus, to-do 194).
 
 
-196. REINTENTO DE "CATEGORÍAS EN 0" QUE `lote.mjs --reintentar` NO LEVANTA (mejora de script, en análisis; Guido 2026-10-09: "sí"). `cargar.mjs` frena
-    con "categorías en 0 que deberían tener número ... Reintento: lote.mjs --reintentar", pero el lote solo reintenta desgloses que no suman y dice "sin
-    desgloses que reintentar". Casos: Vila Nova 2021-2024 (TV, bilheteria y sócio-torcedor dentro de "Receita com prestação de serviços", 24,5 M en 2023,
-    abiertos en la nota 30.1) y Avaí 2021. Diseño con la escalera y un caso real antes del código.
 
 197. EXTRAER CORTA POR EL TOPE DE SALIDA EN DOCUMENTOS LARGOS (mejora de script). `extraer.mjs` pide todas las filas en una respuesta (maxTokens 32.000): un
     libro contable de 9 páginas y ~580 cuentas (Ferroviária dre-2022) llegó cortado y se descartó (US$ 0,79 sin resultado). Partir en varias llamadas

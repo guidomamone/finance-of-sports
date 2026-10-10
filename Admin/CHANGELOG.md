@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 643 — `lote.mjs --reintentar` regenera primero las propuestas de carga (to-do 196) (2026-10-09)
+
+- El reintento por "categoría en 0" sale de `<doc>.carga.json`, que solo escribe el lote: si el club se dio de alta fuera del lote, la propuesta guardada decía "el club no existe" y `--reintentar` no veía los ceros (Vila Nova 2021-2024, Avaí 2021). Ahora, con `--reintentar`, el lote vuelve a proponer (gratis) la carga de los documentos de su lista que no están en el sitio antes de decidir. Medido: ensayo de `--reintentar` sobre `prueba-completa` idéntico antes y después; con la propuesta fresca, el lote 62 tomó los 5 documentos.
+
 ## Versión 644 — Documentos de pocos renglones: escalón para la marca de categorizar (to-do 203) (2026-10-09)
 
 - `tools/verificar.mjs` (avisarRegistro): además del escalón de siempre (5 rubros o más → `listo-para-jev`), uno nuevo: menos de 5 rubros pero la etapa 6 cerró contra el resultado impreso → `listo-para-jev`. Medido sobre las 295 verificaciones en ok de Generados/: cambian 4 (Remo dre-2019, dre-2023, dre-2024 y relatorio-auditoria-2020, DRE de una página que quedaban `sin-rubros` para siempre); las otras 291, igual.

@@ -30,6 +30,7 @@
 
 import { readFileSync, writeFileSync, existsSync, copyFileSync, unlinkSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { tmpdir } from 'node:os';
 import { spawnSync } from 'node:child_process';
 import { localizar } from './localizar.mjs';
 import { validar } from './validar-bloques.mjs';
@@ -125,6 +126,20 @@ const { fijarPerimetroDeClubes } = await import('./perimetro-senales.mjs');
 const PS = await fijarPerimetroDeClubes(docs, { registro, ejecutar: EJECUTAR, descartados, faltaPerimetro: (p) => faltaAntesDeLocalizar(p, { registro })?.falta === 'perimetro' });
 const previstoPerimetro = EJECUTAR ? null : new Map(PS.filter((x) => x.valor || x.pendienteJev).map((x) => [x.carpeta, x.valor || '?']));
 for (const x of PS) console.log(`  perímetro ${x.carpeta}: ${x.valor ? `${x.escrito ? 'fijado' : 'se fija al ejecutar'}: ${x.valor} (${x.detalle})` : x.pendienteJev ? `lo decide Jev al ejecutar (${x.detalle})` : `no se fija solo: ${x.detalle}`}`);
+// PROPUESTAS FRESCAS ANTES DE REINTENTAR (Versión 643, to-do 196, ok de Guido el 2026-10-09). Qué reintentar por "categoría en 0" sale de la
+// propuesta guardada (<doc>.carga.json), que solo se escribe cuando corre el lote. Si después el club se dio de alta fuera del lote, la propuesta
+// guardada sigue diciendo "el club no existe" y no menciona los ceros: --reintentar decía "sin desgloses que reintentar" (Vila Nova 2021-2024 y
+// Avaí 2021, lote 62). Escalón 0 del camino de error: se vuelve a proponer la carga de los documentos que no están en el sitio (gratis: cargar.mjs
+// sin --escribir) y recién ahí se decide. Los ya cargados no se tocan: su propuesta fresca podría pedir un reintento pago que nadie pidió.
+if (REINTENTAR) {
+  const sinCargar = docs.filter((d) => !testigos.has(d) && !registro.find((x) => x.pdf === d)?.cargado);
+  if (sinCargar.length) {
+    const tmp = resolve(tmpdir(), `lote-propuestas-${process.pid}.txt`);
+    writeFileSync(tmp, sinCargar.join('\n') + '\n');
+    node('tools/cargar.mjs', ['--lista', tmp, '--desde-verificacion'], { silencioso: true });
+    try { unlinkSync(tmp); } catch { /* ya no está */ }
+  }
+}
 for (const pdf of docs) {
   let e = registro.find((x) => x.pdf === pdf);
   // (Versión 407) el registro puede tener la ruta del .md sin el archivo en disco (tieneMd: false, "PAGADO SIN .md": Novorizontino 2022);
