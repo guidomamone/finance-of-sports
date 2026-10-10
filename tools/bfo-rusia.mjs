@@ -108,7 +108,9 @@ function transcribir(jsonPath, mdPath, anio) {
     for (const [c, t] of [[6100, 'Остаток средств на начало отчетного года'], [6210, 'Вступительные взносы'], [6215, 'Членские взносы'], [6220, 'Целевые взносы'], [6230, 'Добровольные имущественные взносы и пожертвования'], [6240, 'Прибыль от приносящей доход деятельности'], [6250, 'Прочие'], [6200, 'Всего поступило средств'], [6310, 'Расходы на целевые мероприятия'], [6320, 'Расходы на содержание аппарата управления'], [6330, 'Приобретение основных средств, инвентаря и иного имущества'], [6350, 'Прочие'], [6300, 'Всего использовано средств'], [6400, 'Остаток средств на конец отчетного года']]) L.push(`| ${c} | ${t} | ${fmt(A.f6(c) || null)} |`);
   }
   L.push('', `Аудитор: ${A.j.auditReport?.name || '—'}. Обязательный аудит: ${A.j.requiredAudit ? 'да' : 'нет'}.`, '');
-  writeFileSync(mdPath, L.join('\n'));
+  // Solo se reescribe si cambió algo más que la fecha de la primera línea (cada ensayo la regeneraba y ensuciaba git).
+  const nuevo = L.join('\n'); const sinFecha = (t) => t.split('\n').slice(1).join('\n');
+  if (!existsSync(mdPath) || sinFecha(readFileSync(mdPath, 'utf8')) !== sinFecha(nuevo)) writeFileSync(mdPath, nuevo);
   return A;
 }
 
