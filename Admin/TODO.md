@@ -67,22 +67,25 @@ ni en el comentario de ningún archivo de código.
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (otra sesión; decisión de Guido, 2026-10-07). `alta-club.mjs` deja 68 clubes sin preguntas
-    ("listo-para-alta" en Admin/altas-club.jsonl), ninguno con data/<id>-data.js: Brasil (avai, crb, criciuma, cuiaba, ferroviaria,
-    paysandu, remo, vilanova), Colombia (aguilasdoradas, alianzafc, atleticobucaramanga, deportestolima, laequidad), Grecia (aekathens,
-    asterastripolis, levadiakos, oficrete, panserraikos, volosnfc), Noruega (bodoglimt, brann, kfum, lillestrom, rosenborg, sandefjord,
-    start, valerenga), Países Bajos (excelsior, fcvolendam, goaheadeagles, telstar), Portugal (alverca, estreladaamadora, famalicao,
-    moreirense, nacional, vitoriaguimaraes), Chequia (bohemianspraha1905, duklapraha, jablonec, karvina, mladaboleslav, pardubice,
-    slaviapraha, spartapraha), Rusia (baltikakaliningrad, dynamomakhachkala, kryliasovetovsamara, orenburg, parinizhnynovgorod, rostov,
-    sochi), Turquía (alanyaspor, gaziantepfk, istanbulbasaksehir, trabzonspor), Ucrania (koloskovalivka, obolon, veres), Bélgica (ohleuven,
-    raallalouviere), Corea (fcseoul, jeonbukhyundaimotors), Suiza (basel, thun), Austria (rapidwien), Croacia (vukovar1991).
-    NO ESTÁN LISTOS: "listo-para-alta" sale de un barrido del 2026-09-30 (`alta-club.mjs --todos`, Versión 311: ensayo gratis que lee el
-    .md más nuevo de cada club; 13 con preguntas resueltas por Claude por API) y solo dice que el ensayo del alta no dejó preguntas.
-    Ninguno pasó por el pipeline nuevo: sus .md son de la transcripción en masa de ~2026-09-26 y lo que tienen en Generados/ es del
-    proceso viejo (listas de rubros, no cuenta como avance). Falta todo: etapa 2 (validar la transcripción) y etapas 3-8; el alta se
-    escribe recién en el commit del primer año. Ojo: el registro está desactualizado (lista como pendientes 16 clubes de Italia que ya tienen alta):
-    recalcular con `node tools/alta-club.mjs --todos` antes de armar lotes. Proceso: skill club-or-year-onboarding (club nuevo:
-    subagente Sonnet por club que propone; color, liga y perímetro según club-nuevo.md).
+165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (decisión de Guido, 2026-10-07; estado al 2026-10-09). Un país por vez, con el pipeline
+    (skill club-or-year-onboarding; club nuevo: revisión del alta en Admin/altas-revision.jsonl, que ya tiene nombre, color, perímetro, cierres
+    y ligas de los 56 "listo-para-alta" de ese día). `alta-club.mjs --todos` del 2026-10-09: 50 listos, 74 con preguntas, 35 ya en el sitio.
+    HECHO: Brasil completo (8 clubes, 61 años, lotes 56-63) y Rusia desde el fisco (tools/bfo-rusia.mjs: 7 clubes, 34 años).
+    FALTA, en este orden:
+    a) Rusia: los 9 clubes restantes (Zenit, Spartak, CSKA, Lokomotiv, Dynamo Moscú, Rubin, Akhmat, Akron, Baltika): la revisión del alta
+       (color, nombre, ligas) la está haciendo un subagente; después `node tools/bfo-rusia.mjs --club <Club> --escribir` (gratis).
+    b) Rusia, escalón 2 (tools/bfo-rusia-notas.mjs): abrir 2110 / 2340 / 2350 y los costos con las tablas de las notas explicativas
+       (24 notas, 48 tablas candidatas, ensayo ~US$ 1,60). Falta escribir la llamada, la compuerta (la suma da el código del formulario 2) y la
+       reescritura del año en bfo-rusia.mjs. Las tablas estándar "Затраты на производство" (códigos 5610-5660, gastos por elemento: salarios
+       5620 + cargas 5630) se pueden leer sin IA.
+    c) Los demás países de los "listo-para-alta": Grecia 6, Rep. Checa 6, Colombia 5, Portugal 5, Países Bajos 4, Turquía 3, Ucrania 3,
+       Bélgica 2, Corea 2, y Austria, Croacia, Dinamarca, Noruega y Suiza 1 cada uno. Ojo: muchos PDFs de Países Bajos, Portugal y Rep. Checa
+       todavía no tienen .md (etapa 2 entera); las 12 preguntas de la revisión del alta (Rapid Wien 2024-25, OB, Sandefjord, Groningen, Rio Ave,
+       Tondela, Pardubice, Gaziantep, Alanyaspor, Trabzonspor, La Equidad, nombres romanizados) están en Admin/altas-revision.jsonl.
+    d) Las 16 preguntas de nombre legal de los clubes que bajaron a "con-preguntas" el 2026-10-09 (Noruega 7, Portugal 3, Chequia 2, Baltika,
+       Basel, Go Ahead Eagles, Başakşehir): contestarlas con cita del documento las devuelve a "listo-para-alta".
+    Herramientas de la sesión: `lote.mjs --cargar` (escribe solo lo que queda listo, un commit por año), inventario `--solo`, `--reintentar`
+    con propuestas frescas, escalón de documentos de pocos renglones. Las mejoras de script vistas quedan en los to-dos 197-202.
 
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
