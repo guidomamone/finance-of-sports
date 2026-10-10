@@ -38,3 +38,5 @@ Color de marca: null — azul y blanco ("Alviceleste"), pero la camiseta titular
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Brasil/Paysandu/dre-2023.pdf` (sourceId `paysandu-br-dre-2023`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2024 desde `Clubes/Brasil/Paysandu/dre-2024.pdf` (sourceId `paysandu-br-dre-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2025 desde `Clubes/Brasil/Paysandu/dre-2025.pdf` (sourceId `paysandu-br-dre-2025`).
