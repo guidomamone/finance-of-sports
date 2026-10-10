@@ -91,3 +91,30 @@ ni en el comentario de ningún archivo de código.
     Japón 0/10, Grecia 0/2, México 0/1, Perú 0/1, Croacia 1/8, Bélgica 2/14, España 1/19, Dinamarca 2/11, Chile 1/3, Colombia 4/12, Alemania 5/11, Brasil 16/34,
     Inglaterra 16/19 (unos 75 clubes). Un Sonnet por país, con fuente por cada fecha, mismo formato y regla que data/gestiones/ar.js (lo hecho con Juventus, to-do 194).
 
+
+196. REINTENTO DE "CATEGORÍAS EN 0" QUE `lote.mjs --reintentar` NO LEVANTA (mejora de script, en análisis; Guido 2026-10-09: "sí"). `cargar.mjs` frena
+    con "categorías en 0 que deberían tener número ... Reintento: lote.mjs --reintentar", pero el lote solo reintenta desgloses que no suman y dice "sin
+    desgloses que reintentar". Casos: Vila Nova 2021-2024 (TV, bilheteria y sócio-torcedor dentro de "Receita com prestação de serviços", 24,5 M en 2023,
+    abiertos en la nota 30.1) y Avaí 2021. Diseño con la escalera y un caso real antes del código.
+
+197. EXTRAER CORTA POR EL TOPE DE SALIDA EN DOCUMENTOS LARGOS (mejora de script). `extraer.mjs` pide todas las filas en una respuesta (maxTokens 32.000): un
+    libro contable de 9 páginas y ~580 cuentas (Ferroviária dre-2022) llegó cortado y se descartó (US$ 0,79 sin resultado). Partir en varias llamadas
+    por bloque, o pedir solo los renglones de primer nivel cuando el bloque es un balancete. Ferroviária 2022 se cargó a mano mientras tanto.
+
+198. SIGNO DEL RESULTADO EN DRE CON SALDOS D/C (mejora de script). Los balancetes imprimen la pérdida en positivo ("= Prejuízo 1.222.442,07 D") y la carga
+    frena por tie-out hasta fijar `resultado-final` negativo a mano: Ferroviária 2013-b y 2014-b, Paysandu 2025 (este imprime todo el DRE con signos de
+    balancete). Escalón posible: si el resultado solo cierra con el signo invertido y el documento marca D/C o trae los ingresos en negativo, proponerlo.
+
+199. SUBTOTALES CONTADOS DOS VECES EN LA EXTRACCIÓN (optimización: el mayor gasto de tokens de sesión del lote 56). Subtotal y sus componentes juntos
+    (Avaí 2021: ingresos 75,9 M contra 25,3 M reales; Remo 2019-2024; Ferroviária; Vila Nova 2015-2017): decenas de ajustes `fila` a mano para sacar
+    el subtotal. Ver si verificar.mjs puede detectar "renglón = suma de los siguientes" y proponer sacarlo antes de la cola.
+
+200. AJUSTE `fila` DEL LADO GASTO NO ACEPTA UN RENGLÓN QUE RESTA (mejora de script). verificar.mjs toma el valor absoluto, así que un crédito dentro de un
+    subtotal de gastos (Criciúma 2022 "Outras receitas Operacionais" dentro de custos; Avaí 2021 "Transferência para o Imobilizado") obliga a sacar el
+    subtotal y cargar los componentes. Aceptar el signo impreso en `fila`.
+
+201. EL CHEQUEO DE AÑO VECINO SUMA DE MÁS EN ALGUNOS DOCUMENTOS (optimización: casos falsos en la cola). Remo dre-2024 da 76,58 M de ingresos 2024 (2 × 38,29)
+    contra el documento 2025, y Ferroviária 2024 da 114,4 M para la columna 2023 (37,56 M real). Cada uno levanta un caso que hay que contestar a mano.
+
+202. LAS ALTAS DE DRE DE UNA PÁGINA PREGUNTAN `reportType` (optimización). Remo dre-2019/2023/2024 y Ferroviária 2013-b a 2018: 8 ajustes iguales a mano
+    ("es la DRE del ejercicio, el balance está en otro PDF"). Escalón: si el .md trae "Demonstração do Resultado" con el período completo del año, ok.
