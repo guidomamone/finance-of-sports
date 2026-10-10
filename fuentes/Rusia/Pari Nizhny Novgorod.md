@@ -39,3 +39,5 @@ Color de marca: #5BB8F8 — ru.wikipedia (infobox, camiseta local body1 5BB8F8; 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Rusia/Pari Nizhny Novgorod/bfo-2021-datos.json` (sourceId `parinizhnynovgorod-ru-bfo-2021-datos`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Rusia/Pari Nizhny Novgorod/bfo-2022-datos.json` (sourceId `parinizhnynovgorod-ru-bfo-2022-datos`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Rusia/Pari Nizhny Novgorod/bfo-2023-datos.json` (sourceId `parinizhnynovgorod-ru-bfo-2023-datos`).
