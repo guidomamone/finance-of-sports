@@ -45,6 +45,7 @@ window.RANKINGS["ru-premierliga"] = {
   },
   2022: {
     leagueSize: null,
+    sinDato: ["dynamomakhachkala-ru"],
     clubs: [
       { id:"krasnodar-ru", revenue:109.202, reportType:"official_balance_sheet",
         sourceId:"krasnodar-ru-bfo-2022-datos",
@@ -54,6 +55,7 @@ window.RANKINGS["ru-premierliga"] = {
   },
   2021: {
     leagueSize: null,
+    sinDato: ["dynamomakhachkala-ru"],
     clubs: [
       { id:"krasnodar-ru", revenue:63.972, reportType:"official_balance_sheet",
         sourceId:"krasnodar-ru-bfo-2021-datos",

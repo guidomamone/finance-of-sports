@@ -44,3 +44,5 @@ Los 3 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 880 KB 
 - Último chequeo: 2026-09-18.
 
 Color de marca: #0030FF — ru.wikipedia (infobox, camiseta local body1 0030FF; blanco como segundo color; en.wikipedia pone 3DABEA celeste, misma familia azul; escudo azul), verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Rusia/Dynamo Makhachkala/bfo-2022-datos.json` (sourceId `dynamomakhachkala-ru-bfo-2022-datos`).
