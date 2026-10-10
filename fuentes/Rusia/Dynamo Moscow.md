@@ -33,3 +33,5 @@ Los 5 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 536 KB 
 Color de marca: #0044FF — ru.wikipedia (club blanco-azul, letra "Д" de color eléctrico; camiseta visitante body2 0044FF; en.wikipedia: azul y blanco; gana el no blanco; escudo azul), verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Rusia/Dynamo Moscow/bfo-2021-datos.json` (sourceId `dynamomoscow-ru-bfo-2021-datos`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Rusia/Dynamo Moscow/bfo-2022-datos.json` (sourceId `dynamomoscow-ru-bfo-2022-datos`).
