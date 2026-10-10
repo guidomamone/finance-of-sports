@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 641 — Registro de altas: los clubes ya dados de alta pasan a `existe` (2026-10-09)
+
+- `tools/alta-club.mjs --todos`: una carpeta cuyo club ya está en el sitio pasa a `existe` (antes su línea "listo-para-alta" quedaba congelada: el resumen del pipeline ofrecía dar de alta a Atalanta, Inter, Lazio...). Medido con el mismo registro de entrada, código viejo contra nuevo: 28 líneas pasan a `existe` (21 italianas y 7 de Brasil) y las otras 816 salen idénticas.
+
 ## Versión 640 — Registro de transcripciones por alcance (`--solo`) (2026-10-09)
 
 - `tools/inventario-transcripciones.mjs --solo <lista|carpeta>`: recalcula solo esos PDFs (la pregunta a `onboard.mjs`, acotada a sus carpetas) y copia el resto del registro; los duplicados se siguen marcando contra el registro entero.

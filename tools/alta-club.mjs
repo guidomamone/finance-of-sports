@@ -232,6 +232,7 @@
 //        elegido no sirve de base —no es un balance anual, no se le saca el año— prueba
 //        hasta 4 candidatos) y recalcula SOLO las carpetas cuya huella cambió.
 //        ~5 s para 212 carpetas. --forzar recalcula todo; --solo <texto> filtra.
+//        Las carpetas cuyo club YA está en el sitio pasan a `existe` (Versión 641; antes su línea vieja quedaba congelada).
 //   node tools/alta-club.mjs --todos --claude [--tope-usd 1]
 //        además manda a Claude las preguntas de documento todavía sin preguntar
 //        (primero las carpetas que Claude puede dejar listas). Reusa respuestas ya
@@ -1782,8 +1783,20 @@ async function modoTodos() {
     }
     console.error(`Claude: gastado US$ ${gastado.toFixed(3)}.`);
   }
+  // YA DADAS DE ALTA (Versión 641, aprobado por Guido el 2026-10-09). Una carpeta deja de ser `nuevo` cuando su club entra al sitio, y
+  // desde ahí este bucle no la mira: su línea vieja ("listo-para-alta" del día del ensayo) quedaba congelada y el resumen del pipeline
+  // seguía ofreciendo dar de alta a Atalanta, Inter, Lazio... (25 líneas así al medirlo, 21 italianas y 4 de Brasil). Escalón nuevo,
+  // gratis y sin analizar nada: si la carpeta ya resuelve a un club del sitio, su línea pasa a `existe` con ese clubId. Las demás no cambian.
+  const yaEnSitio = todasLasCarpetas().filter((c) => c.via !== 'nuevo' && c.clubId && !c.carpeta.startsWith('_') && (!solo || `${c.pais}/${c.carpeta}`.includes(solo)));
+  let pasanAExiste = 0;
+  for (const c of yaEnSitio) {
+    const p = previo.get(`Clubes/${c.pais}/${c.carpeta}/`);
+    if (!p || p.estado === 'existe') continue;
+    nuevas.push({ ...p, clubId: c.clubId, estado: 'existe', detalle: `el club ya está en el sitio (${c.clubId}, ${c.via}: ${c.fuente || ''}); la línea anterior era "${p.estado}"`, fecha: new Date().toISOString() });
+    pasanAExiste++;
+  }
   guardarEnRegistro(nuevas);
-  console.log(`${carpetas.length} carpetas de club nuevo: ${nuevas.length} recalculadas, ${sinCambio} sin cambios de huella.`);
+  console.log(`${carpetas.length} carpetas de club nuevo: ${nuevas.length - pasanAExiste} recalculadas, ${sinCambio} sin cambios de huella.${pasanAExiste ? ` ${pasanAExiste} carpeta(s) de clubes ya dados de alta pasan a "existe".` : ''}`);
   imprimirResumen();
 }
 
