@@ -6,7 +6,7 @@
 // Primera Liga (RU) — 3 ejercicio(s) con ranking:
 //   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -35,6 +35,10 @@ window.RANKINGS["ru-pervayaliga"] = {
   2022: {
     leagueSize: null,
     clubs: [
+      { id:"rubinkazan-ru", revenue:74.163, reportType:"official_balance_sheet",
+        sourceId:"rubinkazan-ru-bfo-2022-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",35.096],["Otros ingresos",39.067]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"baltikakaliningrad-ru", revenue:8.061, reportType:"official_balance_sheet",
         sourceId:"baltikakaliningrad-ru-bfo-2022-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.631],["Otros ingresos",5.429]],

@@ -36,3 +36,5 @@ Los 6 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 819 KB 
 Color de marca: #AA2704 — ru.wikipedia (sección "Клубные цвета": rubí y verde, rubí primero; camiseta local body1 AA2704; escudo granate), verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Rusia/Rubin Kazan/bfo-2021-datos.json` (sourceId `rubinkazan-ru-bfo-2021-datos`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Rusia/Rubin Kazan/bfo-2022-datos.json` (sourceId `rubinkazan-ru-bfo-2022-datos`).
