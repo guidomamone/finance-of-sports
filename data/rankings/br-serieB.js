@@ -13,7 +13,7 @@
 //   2019: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2016: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2016: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2012: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2011: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -232,6 +232,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"criciuma-br", revenue:7.967, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-balanco-auditado-2016",
         mix:[["Cuotas Sociales",1.535],["Comercial / Sponsors",0.865],["Televisión",1.649],["Venta de Jugadores",3.644],["Otros ingresos",0.274]] },
+      { id:"vilanova-br", revenue:3.956, reportType:"official_balance_sheet",
+        sourceId:"vilanova-br-balanco-patrimonial-2016",
+        mix:[["Cuotas Sociales",0.233],["Comercial / Sponsors",0.692],["Televisión",1.616],["Venta de Jugadores",0.184],["Otras secciones deportivas",0.037],["Fútbol profesional (sin desglosar por la fuente)",0.681],["Otros ingresos",0.513]] },
     ],
   },
   2015: {
