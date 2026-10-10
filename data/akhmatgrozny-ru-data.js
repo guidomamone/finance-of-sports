@@ -47,6 +47,11 @@ const akhmatgroznyruRevenueLinesByYear = {
   2024: [
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:939.691, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Akhmat Grozny/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2025: [
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:683.308, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const akhmatgroznyruExpenseLinesByYear = {
   2022: [ // tools/cargar.mjs (2026-10-10)
@@ -57,6 +62,9 @@ const akhmatgroznyruExpenseLinesByYear = {
   ],
   2024: [ // tools/cargar.mjs (2026-10-10)
     { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-1178.79, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
+  2025: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-831.716, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
 };
 const akhmatgroznyruFiscalYearMeta = {
@@ -113,6 +121,23 @@ const akhmatgroznyruFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:9.017,
   },
+  2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2025-12-31',
+    sourceId:'akhmatgrozny-ru-bfo-2025-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:148.408, tax:0,
+    extraRows: [
+      {label:'Проценты к получению (2320)', value:148.408},
+    ],
+    incluidoEn:{}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:0,
+  },
 };
 const akhmatgroznyruPresupuestoOverlayByYear = {};
 
@@ -148,6 +173,12 @@ Object.assign(sources, {
     title:'ANO Republican Football Club Akhmat — отчетность 2024 в ГИР БО (bo.nalog.gov.ru), ejercicio 2024',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2024-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Akhmat Grozny/bfo-2024-datos.md.',
+  },
+  'akhmatgrozny-ru-bfo-2025-datos': {
+    id:'akhmatgrozny-ru-bfo-2025-datos', clubId:'akhmatgrozny-ru',
+    title:'ANO Republican Football Club Akhmat — отчетность 2025 в ГИР БО (bo.nalog.gov.ru), ejercicio 2025',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2025-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Akhmat Grozny/bfo-2025-datos.md.',
   },
 });
 
