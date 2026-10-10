@@ -1152,6 +1152,38 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     }
   } else if (E.ch.some((c) => c.nombre === 'resultado antes de impuestos' && c.ok)) resParaCargar = res + conSigno(imp);
 
+  // SIGNO DEL RESULTADO IMPRESO (to-do 198). La compuerta del resultado (evaluar) compara valores ABSOLUTOS, así que un resultado impreso sin
+  // el signo de la pérdida cierra igual, pero se le pasaba a la carga positivo y cargar.mjs frenaba por tie-out hasta un ajuste
+  // `resultado-final` a mano. Casos: Ferroviária 2013-b, 2014-b y 2017 ("= Prejuízo 1.222.442,07 D"), Novorizontino 2014-b ("PREJUIZO
+  // 3.108.722,71"), Paysandu 2025 (DRE entero con signos de balancete: receitas "- 69.580.477,67", déficit "2.175.575,20").
+  //   ESCALÓN 0  ajuste manual resultado-final (forzado, arriba)
+  //   ESCALÓN 1  el resultado impreso tal cual
+  //   ESCALÓN 2  el signo de las filas, SOLO si: (compuerta) el resultado del ejercicio cerró EXACTO en valor absoluto con el signo opuesto,
+  //              y (señal) el documento dice que el impreso es una pérdida sin signo: la etiqueta es de pérdida y no de las dos cosas
+  //              ("Prejuízo", sí; "Superávit/Déficit", no), o el importe lleva la marca D de balancete, o los ingresos vienen impresos en
+  //              negativo (más de la mitad del dinero de los renglones de ingreso). Sin señal no decide: frena como antes (un lado mal
+  //              extraído no se arregla dando vuelta el resultado).
+  if (!forzado && !resultadoFinal && resParaCargar != null && res && E.cierra && E.exacto && E.ch.some((c) => c.nombre === 'resultado del ejercicio' && c.ok)) {
+    const [sf, si] = { 'como impresos': [1, 1], 'financiero e impuesto invertidos': [-1, -1], 'impuesto invertido': [1, -1], 'financiero invertido': [-1, 1] }[lectura] || [1, 1];
+    const pat = suma(E.ing) - suma(E.gas) + sf * conSigno(fin) + si * conSigno(imp);
+    if (Math.sign(pat) === -Math.sign(res)) {
+      let etRes = ''; try { etRes = readFileSync(resolve(ROOT, md), 'utf8').split('\n')[(F.resultado?.linea ?? 0) - 1] || ''; } catch {}
+      etRes = etRes.split('|').filter((c) => /[a-zà-ú]/i.test(c)).slice(0, 1).join(' ');
+      const PERDIDA = /preju[ií]zo|d[ée]ficit|\bperdas?\b|p[ée]rdidas?|perdita|\bloss\b/i; const GANANCIA = /super[aá]vit|lucro|ganancia|utilidad|utile|profit|gain/i;
+      const ingImpresos = (F.filas || []).filter((f) => f.lado === 'ingreso' && f.tipo === 'renglon');
+      const dinero = (xs) => xs.reduce((a, f) => a + Math.abs(parseNumber(String(f.actual)) || 0), 0);
+      const senales = [];
+      if (res > 0 && PERDIDA.test(etRes) && !GANANCIA.test(etRes)) senales.push(`la etiqueta "${etRes.trim().replace(/\*/g, '')}" es de pérdida`);
+      if (res > 0 && /\bD\s*$/.test(String(F.resultado?.actual || ''))) senales.push(`el importe impreso "${F.resultado.actual}" lleva la marca D`);
+      if (ingImpresos.length && dinero(ingImpresos.filter((f) => /^\s*[-(−]/.test(String(f.actual)))) > dinero(ingImpresos) / 2) senales.push('los ingresos vienen impresos en negativo (signos de balancete)');
+      if (senales.length) {
+        resParaCargar = -res;
+        chequeos.push({ nombre: 'signo del resultado', ok: true, detalle: `escalón 2: las filas dan ${r6(pat)} y el impreso es ${r6(res)}; se carga ${r6(-res)} porque ${senales.join('; ')}` });
+        notas.push(`resultado impreso sin el signo de la pérdida: se carga ${r6(-res)} (${senales.join('; ')})`);
+      }
+    }
+  }
+
   // SIGNOS DE FINANCIERO E IMPUESTO PARA LA CARGA (Versión 375, escalón de la etapa 8 aprobado por Guido el 2026-10-02: "lo que cerró en la
   // etapa 6 no se vuelve a decidir en la 8"). Hasta la 374 se escribían TAL COMO ESTÁN IMPRESOS y cargar.mjs los sumaba: si el resultado
   // cerró invirtiendo un signo (lectura "financiero e impuesto invertidos", escalón "impuesto restado", ajuste con impuesto deducido), la

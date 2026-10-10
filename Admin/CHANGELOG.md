@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 652 — `verificar.mjs`: signo del resultado impreso sin el signo de la pérdida (to-do 198) (2026-10-09)
+
+- Escalón 2 del resultado que se carga: el signo de las filas cuando el resultado cerró exacto con el signo opuesto y el documento lo marca
+  como pérdida (etiqueta "Prejuízo"/"Déficit"/"Perdita"/"Loss" sin la ganancia al lado, marca D, o ingresos impresos en negativo). Medido:
+  prueba-completa + los 5 casos con sus ajustes, 91 verificaciones idénticas; sin los 5 ajustes `resultado-final`, los 5 dan el mismo valor
+  que el ajuste (Ferroviária 2013-b, 2014-b, 2017; Novorizontino 2014-b; Paysandu 2025).
+
 ## Versión 651 — `cargar.mjs`: sacar una fila vale solo para su documento (to-do 205, cambio 2) (2026-10-09)
 
 - Una respuesta `descartar` (o `corregir --valor no_es_rubro`) de otro documento del club, de la familia o de otros clubes ya no decide:

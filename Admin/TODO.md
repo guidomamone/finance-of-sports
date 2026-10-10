@@ -100,10 +100,6 @@ ni en el comentario de ningún archivo de código.
     libro contable de 9 páginas y ~580 cuentas (Ferroviária dre-2022) llegó cortado y se descartó (US$ 0,79 sin resultado). Partir en varias llamadas
     por bloque, o pedir solo los renglones de primer nivel cuando el bloque es un balancete. Ferroviária 2022 se cargó a mano mientras tanto.
 
-198. SIGNO DEL RESULTADO EN DRE CON SALDOS D/C (mejora de script). Los balancetes imprimen la pérdida en positivo ("= Prejuízo 1.222.442,07 D") y la carga
-    frena por tie-out hasta fijar `resultado-final` negativo a mano: Ferroviária 2013-b y 2014-b, Paysandu 2025 (este imprime todo el DRE con signos de
-    balancete). Escalón posible: si el resultado solo cierra con el signo invertido y el documento marca D/C o trae los ingresos en negativo, proponerlo.
-
 199. SUBTOTALES CONTADOS DOS VECES EN LA EXTRACCIÓN (optimización: el mayor gasto de tokens de sesión del lote 56). Subtotal y sus componentes juntos
     (Avaí 2021: ingresos 75,9 M contra 25,3 M reales; Remo 2019-2024; Ferroviária; Vila Nova 2015-2017): decenas de ajustes `fila` a mano para sacar
     el subtotal. Ver si verificar.mjs puede detectar "renglón = suma de los siguientes" y proponer sacarlo antes de la cola.

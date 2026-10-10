@@ -281,6 +281,11 @@ Mitigaciones:
 - **Resultado impreso, escalón 2** (Versión 415, ampliado en la 592): si no hay resultado en los bloques, una línea PREJUÍZO / SUPERÁVIT /
   "UTILE (PERDITA) DELL'ESERCIZIO" pegada al último bloque (hasta 4 líneas; en italiano el signo lo da el importe, entre paréntesis = pérdida);
   compuerta: alguna lectura cierra con él exacto. `ANTES_RE` reconoce también "prima delle imposte", el checo "před zdaněním" y el griego "προ φόρων" (sin "προ φόρων, χρηματοδοτικών…" ni "προ φόρων και τόκων", que son el resultado operativo).
+- **Signo del resultado que se carga** (to-do 198). La compuerta del resultado compara valores absolutos; el signo que se le pasa a la carga:
+  escalón 0 el ajuste `resultado-final`; escalón 1 el impreso tal cual; escalón 2 el signo de las filas, solo si el resultado del ejercicio
+  cerró EXACTO con el signo opuesto Y el documento dice que el impreso es una pérdida sin signo (etiqueta de pérdida y no de las dos cosas:
+  "Prejuízo" sí, "Superávit/Déficit" no; o la marca D de balancete; o los ingresos impresos en negativo). Sin señal, frena como siempre.
+  Casos: Ferroviária 2013-b, 2014-b y 2017 ("= Prejuízo … D"), Novorizontino 2014-b ("PREJUIZO"), Paysandu 2025 (signos de balancete).
 - **Gestión de jugadores neta** (to-do 170, Versión 601): si ninguna lectura cerró, de las filas sin lado solo cuentan las que están entre el total de
   costos y el "resultado antes de impuestos" (AS Roma 2013-2017: "Gestione operativa netta calciatori"); un valor positivo entra como ingreso, uno
   negativo como gasto. Compuerta: las lecturas 0-6 con esa selección y gana la primera que cierra el resultado EXACTO. El año vecino no se compara con un
