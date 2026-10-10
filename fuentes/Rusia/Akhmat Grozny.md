@@ -49,3 +49,5 @@ este club en 2025.
   simplemente no se subió al registro, o si hay un problema de auditoría real de fondo.
 
 - Último chequeo: 2026-09-18.
+
+Color de marca: #00782F — ru.wikipedia (sección "Клубные цвета": verde y blanco, gana el no blanco; camiseta local body1 00782F; escudo verde), verificado 2026-10-09

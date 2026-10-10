@@ -28,3 +28,5 @@ Los 2 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños: 6,8 MB y 4,8
   auditoría en años anteriores), no una búsqueda incompleta.
 
 - Último chequeo: 2026-09-18.
+
+Color de marca: #FF0000 — ru.wikipedia (cita el sitio oficial fcakron.ru: colores principales rojo-negros, rojo primero; camiseta local body1 FF0000; escudo rojo), verificado 2026-10-09

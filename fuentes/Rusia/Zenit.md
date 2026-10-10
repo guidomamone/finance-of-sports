@@ -36,3 +36,5 @@ y 3,3 MB. 2021 es el ejercicio más antiguo disponible en el recurso (no es lím
   recurso ФНС, no algo para reintentar.
 
 - Último chequeo: 2026-09-18.
+
+Color de marca: #74DAF7 — ru.wikipedia (sección "Клубные цвета": azul, blanco y celeste; camiseta local body1 74DAF7 celeste; misma familia azul que el escudo celeste), verificado 2026-10-09

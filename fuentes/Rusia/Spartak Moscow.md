@@ -32,3 +32,5 @@ llamativamente chico — revisar si son notas reales o un documento mínimo) y 2
   de scope de sourcing puro).
 
 - Último chequeo: 2026-09-18.
+
+Color de marca: #FF0000 — ru.wikipedia (sección "Клубные цвета": rojo y blanco, gana el no blanco; camiseta local body1 FF0000; en.wikipedia: color principal rojo; escudo rojo), verificado 2026-10-09

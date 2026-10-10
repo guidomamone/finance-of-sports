@@ -37,3 +37,5 @@ Tamaños entre 4,4 MB y 49,4 MB.
   historia deportiva reciente), pero vale la nota para quien retome.
 
 - Último chequeo: 2026-09-18.
+
+Color de marca: #0000FF — ru.wikipedia (sección "Цвета клуба": blanco y azul, gana el no blanco; camiseta visitante body2 0000FF y shorts azules; escudo azul), verificado 2026-10-09

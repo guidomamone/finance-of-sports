@@ -29,3 +29,5 @@ Los 5 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 536 KB 
   club por ahora.
 
 - Último chequeo: 2026-09-18.
+
+Color de marca: #0044FF — ru.wikipedia (club blanco-azul, letra "Д" de color eléctrico; camiseta visitante body2 0044FF; en.wikipedia: azul y blanco; gana el no blanco; escudo azul), verificado 2026-10-09

@@ -32,3 +32,5 @@ Los 6 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 819 KB 
   puntuales (aunque no es prioritario: son los ejercicios más viejos y ya hay 3 años reales).
 
 - Último chequeo: 2026-09-18.
+
+Color de marca: #AA2704 — ru.wikipedia (sección "Клубные цвета": rubí y verde, rubí primero; camiseta local body1 AA2704; escudo granate), verificado 2026-10-09
