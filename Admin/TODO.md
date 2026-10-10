@@ -91,9 +91,11 @@ ni en el comentario de ningún archivo de código.
 
 
 
-197. EXTRAER: PROBAR EL ESCALÓN DEL TOPE DE SALIDA. Escrito (reintento con 128.000 por streaming si se corta); falta medir: ensayo de
-    `prueba-completa` (idéntico) y la prueba real con Ferroviária dre-2022 (~US$ 2; ese año ya está cargado a mano: comparar contra lo
-    publicado). Comando: `node tools/extraer.mjs "Clubes/Brasil/Ferroviaria/dre-2022.pdf" --ejecutar --rehacer`.
+197. EXTRAER: FALTA EL ENSAYO DE `prueba-completa` del escalón del tope de salida (después de la corrida del lote 66: el ensayo reescribe el
+    registro). El escalón ya se probó de verdad (2026-10-10, Ferroviária dre-2022 con el tope del escalón 0 bajado a 1.500 en una copia:
+    se cortó, reintentó por streaming y terminó; US$ 0,24). Dato de la prueba sin forzar: la misma extracción de dre-2022 esta vez trajo solo
+    los 13 grupos en negrita del balancete (2.213 tokens, US$ 0,14) en vez de las ~580 cuentas, con la pregunta en dudas: en balancetes la
+    IA no siempre elige el mismo nivel de detalle.
 
 199. SUBTOTALES CONTADOS DOS VECES EN LA EXTRACCIÓN (optimización de tokens de sesión). Patrón A (el mismo importe en dos filas seguidas)
     resuelto. Quedan: B, renglón del estado + las filas de su nota sin vincular (Ferroviária 2016: "RECEITA LÍQUIDA" 9.211.197 y el desglose
