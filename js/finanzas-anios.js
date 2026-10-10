@@ -167,7 +167,7 @@ window.FIN_ANIOS = FIN_ANIOS;
 // ============================================================================
 const FIN_GESTION = (function(){
   // Países con archivo en data/gestiones/. Uno nuevo se suma acá (tools/audit.js lo controla).
-  const PAISES = ['ar', 'br', 'gb', 'cl', 'co', 'de', 'be', 'dk', 'hr', 'es', 'it', 'gr', 'cz'];
+  const PAISES = ['ar', 'br', 'gb', 'cl', 'co', 'de', 'be', 'dk', 'hr', 'es', 'it', 'gr', 'cz', 'pt', 'no', 'nl', 'tr'];
   const pedidos = {};
   let todas = false, clubDeTodas = null;
 
