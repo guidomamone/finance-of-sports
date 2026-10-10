@@ -32,32 +32,27 @@
 // ============================================================================
 
 const rubinkazanruRevenueLinesByYear = {
-  // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2021-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Rubin Kazan/bfo-2021-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2021: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2021-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2021: [
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:3149.141, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:2026.431, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Rubin Kazan/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2022: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2022-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2022: [
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:2468.547, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:2747.875, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Rubin Kazan/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2023: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2023-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2023: [
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:2139.986, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:1770.225, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Rubin Kazan/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2024: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2024-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2024: [
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:4137.976, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:1086.189, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Rubin Kazan/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2025: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2025-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2025: [
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:3607.111, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:2700.951, disclosureLevel:'aggregated' }, // pág. ?, ?

@@ -32,45 +32,23 @@
 // ============================================================================
 
 const dynamomakhachkalaruRevenueLinesByYear = {
-  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Dynamo Makhachkala/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Dynamo Makhachkala/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Dynamo Makhachkala/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Dynamo Makhachkala/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2021-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Dynamo Makhachkala/bfo-2021-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Dynamo Makhachkala/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Dynamo Makhachkala/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Dynamo Makhachkala/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Dynamo Makhachkala/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2021-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Dynamo Makhachkala/bfo-2021-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2021: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2021-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2021: [
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:0.5, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:59.077, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Dynamo Makhachkala/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2022: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2022-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2022: [
     { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:270, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Dynamo Makhachkala/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2023: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2023-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2023: [
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:86.821, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:44.596, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:51.845, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие поступления (6250, форма 6)', normalizedCategory:'other_income', amountNative:300, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Dynamo Makhachkala/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2024: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2024-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2024: [
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:401.924, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Трансферные платежи', normalizedCategory:'player_sales', amountNative:0.8, disclosureLevel:'detailed' }, // pág. ?, ?
@@ -80,8 +58,7 @@ const dynamomakhachkalaruRevenueLinesByYear = {
     { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:344.622, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие поступления (6250, форма 6)', normalizedCategory:'other_income', amountNative:500, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Dynamo Makhachkala/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2025: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2025-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2025: [
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:787.097, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Трансферные платежи', normalizedCategory:'player_sales', amountNative:233.026, disclosureLevel:'detailed' }, // pág. ?, ?

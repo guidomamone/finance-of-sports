@@ -98,8 +98,6 @@ const torinoitRevenueLinesByYear = {
     { rawLabel:'h) altri proventi da trasferimento diritti calciatori', normalizedCategory:'player_sales', amountNative:0.7447, disclosureLevel:'aggregated' }, // pág. 18, precedente
     { rawLabel:'i) ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:1.270827, disclosureLevel:'aggregated' }, // pág. 18, precedente
   ],
-  // 2019: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Torino/Torino-bilancio-2019.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Torino/Torino-bilancio-2019.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   // 2023: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Torino/Torino-bilancio-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Italia/Torino/Torino-bilancio-2023.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2023: [

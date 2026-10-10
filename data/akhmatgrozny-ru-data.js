@@ -32,36 +32,24 @@
 // ============================================================================
 
 const akhmatgroznyruRevenueLinesByYear = {
-  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akhmat Grozny/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akhmat Grozny/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akhmat Grozny/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akhmat Grozny/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akhmat Grozny/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2022: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2022-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2022: [
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:631.027, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:688.263, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:130, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие поступления (6250, форма 6)', normalizedCategory:'other_income', amountNative:52.758, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akhmat Grozny/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2023: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2023-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2023: [
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:963.028, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:651.192, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akhmat Grozny/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2024: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2024-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2024: [
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:939.691, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:667.263, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akhmat Grozny/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2025: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2025-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2025: [
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:683.308, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:1501, disclosureLevel:'aggregated' }, // pág. ?, ?

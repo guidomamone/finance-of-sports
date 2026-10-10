@@ -32,39 +32,27 @@
 // ============================================================================
 
 const akrontolyattiruRevenueLinesByYear = {
-  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akron Tolyatti/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akron Tolyatti/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akron Tolyatti/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akron Tolyatti/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2021-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akron Tolyatti/bfo-2021-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2021: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2021-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2021: [
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:3.532, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:0.428, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:321.341, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akron Tolyatti/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2022: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2022-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2022: [
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:13.166, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:1.087, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:42, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:351.134, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akron Tolyatti/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2023: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2023-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2023: [
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:55.338, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:49.914, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:0.253, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:466.986, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akron Tolyatti/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2024: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2024-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2024: [
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:337.147, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:56.645, disclosureLevel:'aggregated' }, // pág. ?, ?
@@ -72,8 +60,7 @@ const akrontolyattiruRevenueLinesByYear = {
     { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:1345.02, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие поступления (6250, форма 6)', normalizedCategory:'other_income', amountNative:67.764, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
-  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Akron Tolyatti/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2025: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2025-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2025: [
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:691.943, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:57.41, disclosureLevel:'aggregated' }, // pág. ?, ?

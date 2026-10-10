@@ -32,18 +32,7 @@
 // ============================================================================
 
 const sochiruRevenueLinesByYear = {
-  // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2021-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Sochi/bfo-2021-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Sochi/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Sochi/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Sochi/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Sochi/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2021-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Sochi/bfo-2021-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2021: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2021-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2021: [
     { rawLabel:'Спонсорская помощь для организации и проведения спортивных мероприятий', normalizedCategory:'sponsorship_commercial', amountNative:1847.808, disclosureLevel:'detailed' }, // pág. ?, ?
     { rawLabel:'Выручка от продажи билетов на игры', normalizedCategory:'matchday_competition', amountNative:59.968, disclosureLevel:'detailed' }, // pág. ?, ?
@@ -57,8 +46,7 @@ const sochiruRevenueLinesByYear = {
     { rawLabel:'Доходы от выплат на развитие детско-юношеского футбола, целевое финансирование', normalizedCategory:'youth_football', amountNative:31.338, disclosureLevel:'detailed' }, // pág. ?, ?
     { rawLabel:'Прочие доходы', normalizedCategory:'other_income', amountNative:14.291, disclosureLevel:'detailed' }, // pág. ?, ?
   ],
-  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Sochi/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2022: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2022-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2022: [
     { rawLabel:'Спонсорская помощь для организации и проведения спортивных мероприятий', normalizedCategory:'sponsorship_commercial', amountNative:2120.139, disclosureLevel:'detailed' }, // pág. ?, ?
     { rawLabel:'Выручка от продажи билетов на игры', normalizedCategory:'matchday_competition', amountNative:61.567, disclosureLevel:'detailed' }, // pág. ?, ?
@@ -72,8 +60,7 @@ const sochiruRevenueLinesByYear = {
     { rawLabel:'Доходы от выплат на развитие детско-юношеского футбола, целевое финансирование', normalizedCategory:'youth_football', amountNative:13.178, disclosureLevel:'detailed' }, // pág. ?, ?
     { rawLabel:'Прочие доходы', normalizedCategory:'other_income', amountNative:20.335, disclosureLevel:'detailed' }, // pág. ?, ?
   ],
-  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Sochi/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2023: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2023-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2023: [
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:2895.934, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Доход от выбытия регистраций игроков (включая доход аренды)', normalizedCategory:'player_sales', amountNative:385.808, disclosureLevel:'detailed' }, // pág. ?, ?
@@ -81,8 +68,7 @@ const sochiruRevenueLinesByYear = {
     { rawLabel:'Призовые средства (выплаты РФС, прочих организаций)', normalizedCategory:'competition_bonus', amountNative:60.2, disclosureLevel:'detailed' }, // pág. ?, ?
     { rawLabel:'Прочие доходы', normalizedCategory:'other_income', amountNative:10.742, disclosureLevel:'detailed' }, // pág. ?, ?
   ],
-  // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Sochi/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2024: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2024-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2024: [
     { rawLabel:'Спонсорская помощь для организации и проведения спортивных мероприятий', normalizedCategory:'sponsorship_commercial', amountNative:2844.563, disclosureLevel:'detailed' }, // pág. ?, ?
     { rawLabel:'Выручка от продажи билетов на игры', normalizedCategory:'matchday_competition', amountNative:35.961, disclosureLevel:'detailed' }, // pág. ?, ?
@@ -94,8 +80,7 @@ const sochiruRevenueLinesByYear = {
     { rawLabel:'Призовые средства (выплаты РФС, прочих организаций)', normalizedCategory:'competition_bonus', amountNative:12.6, disclosureLevel:'detailed' }, // pág. ?, ?
     { rawLabel:'Прочие доходы', normalizedCategory:'other_income', amountNative:10.605, disclosureLevel:'detailed' }, // pág. ?, ?
   ],
-  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Rusia/Sochi/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  // 2025: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2025-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2025: [
     { rawLabel:'Спонсорская помощь для организации и проведения спортивных мероприятий', normalizedCategory:'sponsorship_commercial', amountNative:2341.194, disclosureLevel:'detailed' }, // pág. ?, ?
     { rawLabel:'Выручка от продажи билетов на игры', normalizedCategory:'matchday_competition', amountNative:50.092, disclosureLevel:'detailed' }, // pág. ?, ?

@@ -50,8 +50,6 @@ const udineseitRevenueLinesByYear = {
     { rawLabel:'Rimborsi assicurativi', normalizedCategory:'other_income', amountNative:0.161012, disclosureLevel:'aggregated' }, // pág. 66, Jev 1
     { rawLabel:'Altri ricavi e proventi', normalizedCategory:'other_income', amountNative:4.843268, disclosureLevel:'aggregated' }, // pág. 66, Jev 0.99
   ],
-  // 2022: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:,
-  // Generados/Italia/Udinese/Udinese-bilancio-2021-22.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   // 2022: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Italia/Udinese/Udinese-bilancio-2021-22.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2022: [
@@ -145,9 +143,6 @@ const udineseitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:141.695325, officialTotalExpenses:130.217417, officialPAT:2.923802,
   },
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 121.750. Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (5.856.187). Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (2.354.788). Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 5.153.111. Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos,
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): incluye = broadcasting. Claude 2026-10-07: la TV (Proventi da cessioni diritti audiovisivi 36.160.511, nota L2442) está dentro del renglón 'altri' 70.918.956 del estado (L857); no se separa porque --reemplaza 'altri' también tocaría el 16) y el 17) (ver to-do 157)
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 121.750. Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos

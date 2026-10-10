@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 666 — Cabeceras de los años en `data/`: Rusia y repetidas (to-do 206) (2026-10-10)
+
+- `escribir()` (`cargar.mjs`) acepta `P.herramienta` y `P.origenFilas`; `bfo-rusia.mjs` los pasa (filas del formulario 2 del GIR BO, no de
+  proponer-carga ni de un categorias.json). Al reemplazar un año borra su cabecera y sus AJUSTE MANUAL viejos antes de escribir los nuevos
+  (se apilaban: Orenburg 2021 tenía tres). En `data/`: 124 cabeceras rusas corregidas, 93 cabeceras repetidas y 76 líneas de ajuste
+  duplicadas borradas (26 archivos; solo comentarios). ASSET_V 799.
+
 ## Versión 665 — `alta-club.mjs`: escalón 1 del tipo de documento para estados de resultados cortos (to-do 202) (2026-10-10)
 
 - Un estado de resultados de una columna con pocas filas vale como estado del ejercicio si la primera página trae su título y el ejercicio

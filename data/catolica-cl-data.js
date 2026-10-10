@@ -231,8 +231,6 @@ const catolicaRevenueLinesByYear = {
     { rawLabel:'Ingresos por Derechos de Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:191.856, disclosureLevel:'aggregated' }, // pág. 75, precedente
     { rawLabel:'Otros ingresos por función', normalizedCategory:'other_income', amountNative:1720.886, disclosureLevel:'aggregated' }, // pág. 8, precedente
   ],
-  // 2018: cargado por tools/cargar.mjs (2026-10-01) desde Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2018.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Chile/Universidad Catolica (Cruzados)/estados-financieros-2018.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   // 2010: cargado por tools/cargar.mjs (2026-10-02) desde Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2010.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Chile/Universidad Catolica (Cruzados)/estados-financieros-2010.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2010: [

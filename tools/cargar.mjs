@@ -935,7 +935,10 @@ export function escribir(P) {
     const vRev = varDe('revenueLinesByYear'); const vExp = varDe('expenseLinesByYear'); const vMeta = varDe('fiscalYearMeta');
     if (!vRev || !vExp || !vMeta) throw new Error(`${dataRel}: el registro no nombra las tres variables (revenue/expense/meta)`);
     const linea = (l) => `    { rawLabel:${js(l.rawLabel)}, normalizedCategory:${js(l.normalizedCategory)}, amountNative:${num(l.amountNative)}, disclosureLevel:${js(l.disclosureLevel)}${l.items ? `, items:[\n      ${l.items.map((it) => `[${js(it[0])}, ${num(it[1])}]`).join(', ')},\n    ]` : ''} }, // pág. ${l._pag ?? '?'}, ${['precedente', 'Jev', 'Claude'][l._escalon] ?? '?'}${l._conf != null && l._escalon ? ` ${l._conf}` : ''}\n`;
-    const cab = `  // ${y}: cargado por tools/cargar.mjs (${HOY}) desde ${P.md}. Filas: proponer-carga.mjs (ancla-listas); categorías:\n  // ${derivado(P.md, '.categorias.json', { crear: false })} (escalón por línea al lado). Tie-out contra lo impreso: ${P.totales.revImpreso ? `ingresos "${String(P.totales.revImpreso.label).slice(0, 60)}" pág. ${P.totales.revImpreso.pag}` : '-'}${P.totales.expImpreso ? `; gastos "${String(P.totales.expImpreso.label).slice(0, 60)}" pág. ${P.totales.expImpreso.pag}` : ''}${P.totales.patImpreso ? `; resultado "${String(P.totales.patImpreso.label).slice(0, 60)}"` : ''}.\n`;
+    // (to-do 206) quien arma la propuesta puede decir de dónde salen las filas: `P.herramienta` y `P.origenFilas` (tools/bfo-rusia.mjs: el JSON
+    // del fisco ruso, sin proponer-carga ni categorías.json). Sin eso, el texto de siempre.
+    const origenFilas = P.origenFilas || `Filas: proponer-carga.mjs (ancla-listas); categorías:\n  // ${derivado(P.md, '.categorias.json', { crear: false })} (escalón por línea al lado).`;
+    const cab = `  // ${y}: cargado por ${P.herramienta || 'tools/cargar.mjs'} (${HOY}) desde ${P.md}. ${origenFilas} Tie-out contra lo impreso: ${P.totales.revImpreso ? `ingresos "${String(P.totales.revImpreso.label).slice(0, 60)}" pág. ${P.totales.revImpreso.pag}` : '-'}${P.totales.expImpreso ? `; gastos "${String(P.totales.expImpreso.label).slice(0, 60)}" pág. ${P.totales.expImpreso.pag}` : ''}${P.totales.patImpreso ? `; resultado "${String(P.totales.patImpreso.label).slice(0, 60)}"` : ''}.\n`;
     // --reemplazar: lo que se conserva del año cargado, y se borran sus bloques (revenue, expense, meta) antes de insertar los nuevos.
     if (P.reemplaza) {
       const viejo = cargarSitio().generic[id] || {};
@@ -955,6 +958,10 @@ export function escribir(P) {
         let hasta = cierra + 1; while (/[ \t,]/.test(src[hasta])) hasta++;
         src = src.slice(0, desde) + src.slice(hasta);
       }
+      // (to-do 206) también los comentarios del año que se reemplaza (su cabecera "cargado por" y sus AJUSTE MANUAL): se vuelven a escribir
+      // abajo con lo de ahora. Antes quedaban y se apilaban (Orenburg 2021 tenía tres cabeceras).
+      src = src.replace(new RegExp(`^  // ${y}: cargado por [^\\n]*\\n(  // [^\\n]*\\.categorias\\.json \\(escalón por línea al lado\\)[^\\n]*\\n)?`, 'gm'), '')
+        .replace(new RegExp(`^  // ${y}: AJUSTE MANUAL \\(Admin/ajustes-manuales\\.jsonl[^\\n]*\\n`, 'gm'), '');
     }
     src = insertarEnObjeto(src, `const ${vRev} = {`, `${cab}  ${y}: [\n${E.revenueLines.map(linea).join('')}  ],\n`, dataRel);
     src = insertarEnObjeto(src, `const ${vExp} = {`, `  ${y}: [ // tools/cargar.mjs (${HOY})\n${E.expenseLines.map(linea).join('')}  ],\n`, dataRel);

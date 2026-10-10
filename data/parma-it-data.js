@@ -63,8 +63,6 @@ const parmaitRevenueLinesByYear = {
     { rawLabel:'Contributi in conto esercizio', normalizedCategory:'other_income', amountNative:14.272881, disclosureLevel:'aggregated' }, // pág. 39, precedente
     { rawLabel:'Ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:1.992988, disclosureLevel:'aggregated' }, // pág. 39, precedente
   ],
-  // 2022: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   // 2024: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Parma/Parma-bilancio-31.12.2024-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Italia/Parma/Parma-bilancio-31.12.2024-individual.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2024: [
@@ -515,7 +513,6 @@ const parmaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:40.681361, officialTotalExpenses:126.998463, officialPAT:-87.564848,
   },
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = consolidado. Guido 2026-10-07: 2022 solo tiene consolidado; se carga así (el club es individual)
   2024: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'EUR', fxRef:'EUR@2024-12-31',
     sourceId:'parma-it-bilancio-31-12-2024-individual',

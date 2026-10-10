@@ -114,10 +114,6 @@ const vilanovabrRevenueLinesByYear = {
   ],
   // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Vila Nova/demonstrativo-financeiro-2022.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
-  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Brasil/Vila Nova/demonstrativo-financeiro-2023.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
-  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Brasil/Vila Nova/demonstrativo-financeiro-2022.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2022: [
     { rawLabel:'RECEITA PATROCINIO E MARKETING', normalizedCategory:'sponsorship_commercial', amountNative:5.431481, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
     { rawLabel:'RECEITAS DIVERSAS', normalizedCategory:'other_income', amountNative:12.457555, disclosureLevel:'aggregated' }, // pág. 4, Jev 1

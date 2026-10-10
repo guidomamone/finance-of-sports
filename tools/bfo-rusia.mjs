@@ -157,6 +157,9 @@ function proponer({ carpeta, anio, A, clubId, club, alta }) {
   const md = `${carpeta}/bfo-${anio}-datos.md`;
   return {
     pdf: `${carpeta}/bfo-${anio}-datos.json`, md, reemplaza: false, ajustes: [], escalon2: [...Object.keys(T), ...(F6 ? ['formulario 6'] : [])],
+    // (to-do 206) la cabecera del año en data/ dice de dónde salen las filas (no de proponer-carga.mjs ni de un categorias.json)
+    herramienta: 'tools/bfo-rusia.mjs',
+    origenFilas: `Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs)${Object.keys(T).length ? `; escalón 2: notas explicativas (${Object.keys(T).join(', ')})` : ''}${F6 ? '; formulario 6' : ''}.`,
     totales: { patImpreso: { label: `Чистая прибыль (убыток), código 2400 (suma verificada contra el 2300)`, pag: null } },
     fxCloseNuevo: fxRef.fxClose ? { key: fxRef.valor, ...fxRef.fxClose } : null,
     liga: { valor: liga.valor ?? null, fuente: liga.fuente || 'sin caché de la liga', estado: liga.estado || 'pendiente' },

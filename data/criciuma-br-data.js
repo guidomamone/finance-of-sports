@@ -88,10 +88,6 @@ const criciumabrRevenueLinesByYear = {
     { rawLabel:'Reversão contingências – Termo de Rescisão Parcial GA', normalizedCategory:'other_income', amountNative:2.390899, disclosureLevel:'aggregated' }, // pág. 20, Jev 0.98
     { rawLabel:'Demais Receitas', normalizedCategory:'other_income', amountNative:0.851256, disclosureLevel:'aggregated' }, // pág. 20, Jev 1
   ],
-  // 2023: cargado por tools/cargar.mjs (2026-10-09) desde Clubes/Brasil/Criciuma/relatorio-de-balanco-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Brasil/Criciuma/relatorio-de-balanco-2023.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
-  // 2024: cargado por tools/cargar.mjs (2026-10-09) desde Clubes/Brasil/Criciuma/relatorio-de-balanco-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Brasil/Criciuma/relatorio-de-balanco-2024.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   // 2025: cargado por tools/cargar.mjs (2026-10-09) desde Clubes/Brasil/Criciuma/relatorio-auditoria-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Criciuma/relatorio-auditoria-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2025: [
@@ -431,8 +427,6 @@ const criciumabrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:15.285978, officialTotalExpenses:18.02324, officialPAT:-3.007985,
   },
-  // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2023-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2023-12-31
-  // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2024-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2024-12-31
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2025-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2025-12-31
   2025: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'BRL', fxRef:'BRL@2025-12-31',
