@@ -62,6 +62,22 @@ const cuiababrRevenueLinesByYear = {
     { rawLabel:'LOTERIAS', normalizedCategory:'other_income', amountNative:0.757616, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
     { rawLabel:'OUTRAS RECEITAS', normalizedCategory:'other_income', amountNative:2.83456, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
   ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Cuiaba/balanco-financeiro-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Cuiaba/balanco-financeiro-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2025: [
+    { rawLabel:'PATROCÍNIOS', normalizedCategory:'sponsorship_commercial', amountNative:12, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'PLACAS DE PUBLICIDADE', normalizedCategory:'sponsorship_commercial', amountNative:2.600926, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'SÓCIO TORCEDOR', normalizedCategory:'member_dues', amountNative:0.303897, disclosureLevel:'aggregated' }, // pág. 7, Claude 0.88
+    { rawLabel:'COTAS/TV', normalizedCategory:'broadcasting', amountNative:12.769767, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'BILHETERIA/JOGOS', normalizedCategory:'matchday_competition', amountNative:1.472385, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'OUTRAS RECEITAS C/ FUTEBOL', normalizedCategory:'other_income', amountNative:0.310765, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.92
+    { rawLabel:'LICENCIAMENTOS', normalizedCategory:'sponsorship_commercial', amountNative:0.22614, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'ESCOLINHA', normalizedCategory:'youth_football', amountNative:1.230119, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'LOTERIAS', normalizedCategory:'other_income', amountNative:0.919328, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'OUTRAS RECEITAS', normalizedCategory:'other_income', amountNative:3.73993, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'VENDAS DE MERCADORIAS', normalizedCategory:'sponsorship_commercial', amountNative:1.051917, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'OUTRAS RECEITAS/(DESPESAS)', normalizedCategory:'player_sales', amountNative:20.805324, disclosureLevel:'aggregated' }, // pág. 7, precedente
+  ],
 };
 const cuiababrExpenseLinesByYear = {
   2022: [ // tools/cargar.mjs (2026-10-10)
@@ -89,6 +105,21 @@ const cuiababrExpenseLinesByYear = {
     { rawLabel:'DESPESAS GERAIS FUTEBOL FEMININO', normalizedCategory:'youth_other_sports_expense', amountNative:-0.222635, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.96
     { rawLabel:'DESPESAS COM VENDAS', normalizedCategory:'admin_general_expense', amountNative:-0.096191, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
     { rawLabel:'DESPESAS TRIBUTÁRIAS', normalizedCategory:'admin_general_expense', amountNative:-0.624905, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
+  ],
+  2025: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'CUSTOS COM PESSOAL', normalizedCategory:'wages_squad', amountNative:-31.917744, disclosureLevel:'aggregated' }, // pág. 7, Claude 0.8
+    { rawLabel:'CUSTOS COM JOGOS', normalizedCategory:'match_organisation_expense', amountNative:-3.388905, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'CUSTOS COM AMORTIZAÇÃO DE CONTRATOS', normalizedCategory:'player_amortisation', amountNative:-19.456556, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.95
+    { rawLabel:'OUTROS CUSTOS COM FUTEBOL', normalizedCategory:'wages_squad', amountNative:-21.975926, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'DESPESAS COM PESSOAL', normalizedCategory:'admin_general_expense', amountNative:-5.561472, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'DESPESAS ADMINISTRATIVAS', normalizedCategory:'admin_general_expense', amountNative:-4.228214, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'DESPESAS DEPRECIAÇÃO', normalizedCategory:'depreciation', amountNative:-1.213151, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'DESPESAS GERAIS CATEGORIA DE BASE', normalizedCategory:'youth_other_sports_expense', amountNative:-1.978408, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.99
+    { rawLabel:'DESPESAS GERAIS ESCOLINHA', normalizedCategory:'youth_other_sports_expense', amountNative:-0.480996, disclosureLevel:'aggregated' }, // pág. 7, Claude 0.85
+    { rawLabel:'DESPESAS GERAIS FUTEBOL FEMININO', normalizedCategory:'youth_other_sports_expense', amountNative:-0.000021, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.96
+    { rawLabel:'DESPESAS COM VENDAS', normalizedCategory:'admin_general_expense', amountNative:-0.231575, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'DESPESAS TRIBUTÁRIAS', normalizedCategory:'admin_general_expense', amountNative:-4.984986, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'DESPESAS TRIBUTÁRIAS (deduções da receita)', normalizedCategory:'admin_general_expense', amountNative:-2.144216, disclosureLevel:'aggregated' }, // pág. 7, precedente
   ],
 };
 const cuiababrFiscalYearMeta = {
@@ -122,6 +153,23 @@ const cuiababrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:224.16675, officialTotalExpenses:162.152227, officialPAT:64.752582,
   },
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 2.144.216. Claude 2026-10-09: la extracción puso la deducción de la receita (L200-L201) del lado ingreso; el estado la resta de la receita bruta y en 2022 y 2024 se carga como gasto. Cuenta (L186-L226): ingresos 36.625.174 (suma de L188-L193 29.457.738 + L195-L199 7.167.435) + OUTRAS RECEITAS/(DESPESAS) 20.805.324 (L221) - custos 76.739.132 (L204) - despesas 18.678.825 (L209) - deduções 2.144.216 (L200) - financeiras 2.017.000 (L220) = -42.148.673 contra -42.148.674 impreso (L222, L226).
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 20.805.324. Claude 2026-10-09: renglón no operativo impreso en positivo que SUMA al resultado: (60.936.997) + 18.788.324 (L219 = (2.017.000) financeiras + 20.805.324 outras) = (42.148.673) y el resultado impreso es (42.148.674) (L222). La nota 15 (L1118-L1123) lo cuenta junto con la receita (total 2024 205.052.629 = receita líquida original). Misma cuenta que en el ajuste de DESPESAS TRIBUTÁRIAS (deduções).
+  2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2025-12-31',
+    sourceId:'cuiaba-br-balanco-financeiro-2025',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-2.017, tax:0,
+    extraRows: [
+      {label:'RECEITAS/(DESPESAS) FINANCEIRAS', value:-2.017},
+      {label:'(-) PROVISÃO PARA IMPOSTO DE RENDA', value:null},
+      {label:'(-) PROVISÃO PARA CONTRIBUIÇÃO SOCIAL', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:57.430498, officialTotalExpenses:97.56217, officialPAT:-42.148674,
+  },
 };
 const cuiababrPresupuestoOverlayByYear = {};
 
@@ -151,6 +199,12 @@ Object.assign(sources, {
     title:'Cuiabá Esporte Clube - Sociedade Anônima do Futebol — balanco-financeiro-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Cuiaba/balanco-financeiro-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'cuiaba-br-balanco-financeiro-2025': {
+    id:'cuiaba-br-balanco-financeiro-2025', clubId:'cuiaba-br',
+    title:'Cuiabá Esporte Clube - Sociedade Anônima do Futebol — balanco-financeiro-2025 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Cuiaba/balanco-financeiro-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
