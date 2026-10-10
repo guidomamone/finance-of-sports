@@ -7,7 +7,7 @@
 //   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -153,6 +153,9 @@ window.RANKINGS["br-serieA"] = {
   2022: {
     leagueSize: null,
     clubs: [
+      { id:"cuiaba-br", revenue:25.556, reportType:"official_balance_sheet",
+        sourceId:"cuiaba-br-balanco-financeiro-2022",
+        mix:[["Cuotas Sociales",0.578],["Comercial / Sponsors",4.396],["Estadio",3.089],["Televisión",16.781],["Venta de Jugadores",0.245],["Otras secciones deportivas",0.168],["Otros ingresos",0.299]] },
       { id:"goias-br", revenue:20.333, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2022-fgf-go",
         mix:[["Cuotas Sociales",0.397],["Comercial / Sponsors",2.398],["Estadio",0.232],["Televisión",12.223],["Premios por competencias",1.382],["Venta de Jugadores",0.574],["Otras secciones deportivas",0.637],["Otros ingresos",2.489]] },

@@ -471,6 +471,9 @@ const clubs = {
   // Paysandu: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Paysandu/dre-2021.pdf. brandColor:null a propósito
   // (procedencia en fuentes/Brasil/Paysandu.md, club-or-year-onboarding/club-nuevo.md).
   'paysandu-br': { id:'paysandu-br', name:'Paysandu Sport Club', displayName:'Paysandu', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  // Cuiaba: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Cuiaba/balanco-financeiro-2022.pdf. brandColor #006030
+  // (procedencia en fuentes/Brasil/Cuiaba.md, club-or-year-onboarding/club-nuevo.md).
+  'cuiaba-br': { id:'cuiaba-br', name:'Cuiabá Esporte Clube - Sociedade Anônima do Futebol', displayName:'Cuiaba', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#006030' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

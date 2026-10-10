@@ -42,3 +42,5 @@
 - Último chequeo: 2026-09-22.
 
 Color de marca: #006030 — pt.wikipedia (plantilla de camiseta titular corpo1=006030; alcunha "Auriverde", verde y amarillo, camiseta verde), escudo verde y amarillo, verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Brasil/Cuiaba/balanco-financeiro-2022.pdf` (sourceId `cuiaba-br-balanco-financeiro-2022`).
