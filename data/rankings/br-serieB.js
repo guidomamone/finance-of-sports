@@ -5,7 +5,7 @@
 //
 // Brasileirão Série B (BR) — 13 ejercicio(s) con ranking:
 //   2025: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 16 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -91,6 +91,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"mirassol", revenue:9.583, reportType:"official_balance_sheet",
         sourceId:"mirassol-relatorio-auditoria-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",9.583]] },
+      { id:"avai-br", revenue:9.338, reportType:"official_balance_sheet",
+        sourceId:"avai-br-demonstracoes-contabeis-2024",
+        mix:[["Cuotas Sociales",1.194],["Comercial / Sponsors",1.818],["Estadio",0.372],["Televisión",1.331],["Premios por competencias",0.012],["Venta de Jugadores",1.368],["Otros ingresos",3.243]] },
       { id:"guarani-br", revenue:7.561, reportType:"official_balance_sheet",
         sourceId:"guarani-br-demonstracoes-2023-2024",
         mix:[["Cuotas Sociales",0.376],["Comercial / Sponsors",1.075],["Televisión",3.468],["Premios por competencias",0.019],["Venta de Jugadores",1.639],["Otros ingresos",0.983]] },

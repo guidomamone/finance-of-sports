@@ -50,3 +50,5 @@ Color de marca: #0040CF — pt.wikipedia (Avaí Futebol Clube: "cores o azul e o
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Brasil/Avai/demonstracoes-contabeis-2022.pdf` (sourceId `avai-br-demonstracoes-contabeis-2022`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Brasil/Avai/demonstracoes-contabeis-2023.pdf` (sourceId `avai-br-demonstracoes-contabeis-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2024 desde `Clubes/Brasil/Avai/demonstracoes-contabeis-2024.pdf` (sourceId `avai-br-demonstracoes-contabeis-2024`).
