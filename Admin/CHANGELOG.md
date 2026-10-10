@@ -19,6 +19,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 - El reintento por "categoría en 0" sale de `<doc>.carga.json`, que solo escribe el lote: si el club se dio de alta fuera del lote, la propuesta guardada decía "el club no existe" y `--reintentar` no veía los ceros (Vila Nova 2021-2024, Avaí 2021). Ahora, con `--reintentar`, el lote vuelve a proponer (gratis) la carga de los documentos de su lista que no están en el sitio antes de decidir. Medido: ensayo de `--reintentar` sobre `prueba-completa` idéntico antes y después; con la propuesta fresca, el lote 62 tomó los 5 documentos.
 
+## Versión 647 — Rusia, formulario 6 (uso de fondos con fin específico) (2026-10-09)
+
+- `tools/bfo-rusia.mjs`: suma el formulario 6 cuando cierra su compuerta (6100 + 6200 − 6300 = 6400): aportes 6210/6215 → member_dues, 6220/6230/6250 → other_income; usos 6310 → costo del fútbol sin desglosar, 6320 → administración, 6330/6350 → otros gastos; el 6240 (ganancia del formulario 2 trasladada) no se suma. Resultado = 2400 + (6200 − 6240) − 6300.
+- Reescritos con `--reemplazar`: Akhmat 2022-2025, Akron 2021-2025 (2021 entra ahora), Dynamo Makhachkala 2021-2025 (2021 entra ahora), Pari NN 2021-2025, Orenburg 2021-2025. Ejemplo, Akron 2024: ingresos 337 M (2110) + 57 M (2340) + 1.414 M de aportes; resultado 76,75 M (era 1,9 M). `auditAll()`: 214 clubes, 1.856 chequeos que cierran.
+
 ## Versión 646 — Rusia, escalón 2: las tablas de las notas explicativas (2026-10-09)
 
 - `tools/bfo-rusia-notas.mjs`: busca en cada `<año>-poyasneniya.md` las tablas que abren 2110 (ventas por tipo), 2340 y 2350 (otros ingresos y gastos) y los costos por elemento; las de costos por elemento (códigos 5610-5660) se leen sin IA, el resto con una llamada a Claude por nota (solo las ventanas). Compuerta sin IA: la suma de las filas = el código del formulario 2 de ese año (± 2 miles). Guarda `Generados/Rusia/<Club>/<nota>.bfo-notas.json`.
