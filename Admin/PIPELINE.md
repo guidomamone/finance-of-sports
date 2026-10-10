@@ -482,6 +482,8 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
   del alta del club (la clave llevaba el nombre de la carpeta y ahora lleva el id del sitio; to-do 153).
 - Cada caso es una **pregunta de sí o no**, con la propuesta del sistema, la página del visor y la impresa, y las líneas del .md.
 - Guido contesta con `node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club --nota "..."`.
+  En un caso de categoría, `descartar` se rechaza (to-do 205: parecía "descarto la pregunta" y sacaba la fila): para sacar la fila,
+  `corregir --valor no_es_rubro`; para un año ya cargado, la categoría con la que está publicado.
 - Una categoría que da 0 porque el documento la junta con otra línea: ajuste `incluye` (`--valor <categoría> --categoria <donde está> [--posible]`); `cargar.mjs` la escribe en `fiscalYearMeta.incluidoEn` y no la revisa como un 0 (Versión 511).
 - Para fijar la categoría de una fila sin que haya un caso: `node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta>" <categoría> --nota "..."`.
 - La próxima corrida toma la respuesta.

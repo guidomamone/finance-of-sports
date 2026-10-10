@@ -20,6 +20,7 @@
 //   aceptar          la propuesta del sistema está bien (o el número del .md está bien): se usa
 //   corregir         el valor correcto es `--valor` (un importe, una categoría, un perímetro...): se usa ese
 //   descartar        el documento (o esa fila) no se carga
+//                    (en un caso de categoría NO se acepta: ver --responder; para sacar la fila, corregir --valor no_es_rubro)
 //   preguntar-club   no se puede saber del documento: pasa a Admin/dudas-por-club.md para escribirle al club (outreach)
 // Las tools que mandaron el caso leen la respuesta con `respuestaDe(clave)` y la aplican la próxima vez que corren (verificar.mjs ya lo
 // hace). QUE UNA RESPUESTA SE VUELVA REGLA (una convención de un grupo de países en tools/grupos-pais.mjs, una categoría como precedente del
@@ -222,6 +223,15 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (!casos.has(id)) { console.error(`No hay ningún caso ${id} (node tools/cola.mjs para verlos).`); process.exit(1); }
     if (!DECISIONES.includes(decision)) { console.error(`La decisión tiene que ser una de: ${DECISIONES.join(', ')}`); process.exit(1); }
     if (decision === 'corregir' && !flag('--valor')) { console.error('Para corregir hace falta --valor "..."'); process.exit(1); }
+    // `descartar` EN UN CASO DE CATEGORÍA (to-do 205): ahí parece "descarto la pregunta", pero cargar.mjs saca la FILA de la carga (Vila Nova
+    // 2025 "Adesão ao condomínio LFU", corregido a tiempo; Novorizontino 2020/2021/2024, diez respuestas "obsoleto: año ya cargado" que sacaban
+    // "Com pessoal" de 2022, 2023 y 2025). Sacar una fila es una decisión con nombre propio: corregir --valor no_es_rubro (cargar.mjs la
+    // excluye). Un caso de categoría de un año ya cargado NO se cierra solo (cerrarCargados() no los toca: pueden tocar un dato publicado): se
+    // contesta con la categoría con la que está publicado (aceptar si es la propuesta, corregir si no).
+    if (decision === 'descartar' && casos.get(id).motivo === 'categoria') {
+      console.error('En un caso de categoría, "descartar" sacaría la FILA de la carga (no la pregunta). Usá:\n  aceptar                              la categoría propuesta está bien\n  corregir --valor <categoría>         va en otra categoría\n  corregir --valor no_es_rubro         la fila no se carga (no es un renglón del estado, es un subtotal, etc.)\nSi el año ya está cargado: contestá con la categoría con la que está publicado (aceptar si es la propuesta, corregir si no).');
+      process.exit(1);
+    }
     appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision, valor: flag('--valor'), nota: flag('--nota') }) + '\n');
     console.log(`Respuesta guardada para ${id}: ${decision}${flag('--valor') ? ` (${flag('--valor')})` : ''}. La toma la próxima corrida de la etapa que mandó el caso.`);
     process.exit(0);

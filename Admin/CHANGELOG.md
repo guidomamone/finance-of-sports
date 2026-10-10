@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 650 — `cola.mjs`: `descartar` no se acepta en un caso de categoría (to-do 205, cambio 1) (2026-10-09)
+
+- En un caso `cargar · categoria`, `descartar` sacaba la FILA de la carga (y de los otros años del club con la misma etiqueta), no la
+  pregunta. Ahora se rechaza y se sugiere `aceptar` / `corregir --valor <categoría>` / `corregir --valor no_es_rubro`.
+
 ## Versión 649 — `ajustes.mjs` firma quien corre el comando (to-do 204) (2026-10-09)
 
 - `--agregar` acepta `--autor`; sin él firma "Claude" si el comando lo corre Claude Code (variable `CLAUDECODE=1`) y "Guido" si no
