@@ -6,7 +6,7 @@
 // Premier Liga (RU) — 5 ejercicio(s) con ranking:
 //   2025: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -142,6 +142,10 @@ window.RANKINGS["ru-premierliga"] = {
       { id:"rostov-ru", revenue:45.786, reportType:"official_balance_sheet",
         sourceId:"rostov-ru-bfo-2023-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",28.158],["Otros ingresos",17.628]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"rubinkazan-ru", revenue:43.598, reportType:"official_balance_sheet",
+        sourceId:"rubinkazan-ru-bfo-2023-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",23.86],["Otros ingresos",19.738]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"sochi-ru", revenue:38.123, reportType:"official_balance_sheet",
         sourceId:"sochi-ru-bfo-2023-datos",
