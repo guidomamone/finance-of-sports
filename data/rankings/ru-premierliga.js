@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Premier Liga (RU) — 5 ejercicio(s) con ranking:
-//   2025: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -22,6 +22,10 @@ window.RANKINGS["ru-premierliga"] = {
       { id:"krasnodar-ru", revenue:143.614, reportType:"official_balance_sheet",
         sourceId:"krasnodar-ru-bfo-2025-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",69.706],["Otros ingresos",73.908]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"rostov-ru", revenue:45.881, reportType:"official_balance_sheet",
+        sourceId:"rostov-ru-bfo-2025-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",35.773],["Otros ingresos",10.108]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"orenburg-ru", revenue:41.877, reportType:"official_balance_sheet",
         sourceId:"orenburg-ru-bfo-2025-datos",
