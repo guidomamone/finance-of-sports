@@ -49,3 +49,5 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   Cerraría 16 chequeos falsos de Sampdoria 2020-21 e Inter 2019-21 (filas que la extracción no trajo de esa columna: Sampdoria L888 1.779.291; Inter L640 27.574.094 y
   L642 16.802.772). Descartado por Guido: son alarmas aceptadas en la cola, sin daño en los datos.
 - 2026-10-09 (Versión 640, `--solo`): medir un cambio de `lote.mjs` solo con el ENSAYO no alcanza: las líneas que tocan el registro después de pagar (resolver, re-transcribir, etapa 7) corren solo con `--ejecutar`. El comentario agregado en esas 3 líneas se tragó `registro = leerRegistro()` y el ensayo de `prueba-completa` dio idéntico; se vio leyendo el diff. Para un cambio en esos caminos: leer el diff línea por línea y, si se puede, simular con `--ejecutar` sobre una copia.
+- 2026-10-10, to-do 199 patrón C (subtotal que suma renglones de cualquier lado, Avaí 2021): no entró. Solo no cierra Avaí (falta el signo
+  del financiero según su bloque) y cambia Ferroviária 2012 (agrega una fila "Sócio torcedor" en 0). Medido en las 306 verificaciones.

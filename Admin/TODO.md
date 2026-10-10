@@ -97,10 +97,12 @@ ni en el comentario de ningún archivo de código.
     los 13 grupos en negrita del balancete (2.213 tokens, US$ 0,14) en vez de las ~580 cuentas, con la pregunta en dudas: en balancetes la
     IA no siempre elige el mismo nivel de detalle.
 
-199. SUBTOTALES CONTADOS DOS VECES EN LA EXTRACCIÓN (optimización de tokens de sesión). Patrón A (el mismo importe en dos filas seguidas)
-    y B (total = subtotal ± renglones de arriba, Ferroviária 2016) resueltos. Queda: C, subtotal que incluye filas del financiero (Avaí 2021: "Receita Bruta" 25.303.151 = ingresos + "Receita Financeira"
-    27.397, se queda junto con sus componentes). Remo 2020 sigue en la cola con el patrón A resuelto: sus gastos también tienen subtotales.
-    Para medir: simular sin los ajustes "(sale) subtotal ..." de esos documentos.
+199. SUBTOTAL QUE INCLUYE FILAS DEL FINANCIERO (conocido, sin daño hoy). Patrones A y B resueltos. El C (Avaí 2021: "Receitas do Futebol
+    Profesional" 25.303.151 = ingresos + "Receita Financeira" 27.397; en gastos, "Despesas financeiras" dentro de los costos) necesita dos
+    escalones: no contar el subtotal que suma renglones de cualquier lado, y además el signo del financiero según el bloque que lo contiene
+    (suma dentro de ingresos, resta dentro de gastos); con el primero solo el resultado no cierra (55 mil = 2 × 27.397). Medido el primero:
+    cambia Ferroviária 2012 (una fila "Sócio torcedor" en 0 que pasaría a cargarse). Un solo caso y ya cargado a mano: no se hace. Remo 2020
+    sigue en la cola sin sus ajustes (subtotales de gastos). Si aparecen más casos como Avaí, rediseñar con los dos escalones juntos.
 
 201. EL CHEQUEO DE AÑO VECINO SUMA DE MÁS EN ALGUNOS DOCUMENTOS (optimización: casos falsos en la cola). Cuiabá 2024: la columna 2023 da 326,47 M
     contra 157,93 M cargados (con el escalón del subtotal repetido; 168,53 M sin él). Remo dre-2024 da 76,58 M de ingresos 2024 (2 × 38,29)
