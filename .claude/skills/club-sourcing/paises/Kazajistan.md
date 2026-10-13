@@ -15,5 +15,5 @@ a los privados (Astana, Kairat, Tobol: TOO, no aparecen).
 - El nodo 3 (formularios Ф1-Ф4) viene con las celdas vacías (los valores se cargan con token): usar
   el PDF del nodo 6.
 - Los archivos pesan de 2 a 56 MB.
-- Script: `Admin/sourcing-europa-este-scripts/dfo.py <БИН> <carpeta>`.
+- Script: `tools/sourcing-europa-este/dfo.py <БИН> <carpeta>`.
 - Informes en ruso, escaneados: OCR `rus`.

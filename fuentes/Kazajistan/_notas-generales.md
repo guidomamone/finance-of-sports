@@ -15,7 +15,7 @@
   - **Nodo 3** (`Ф1 balance`, `Ф2 PyG`, `Ф3 flujo`, `Ф4 patrimonio`) viene como una planilla en base64+gzip dentro de la página, PERO
     sus celdas numéricas están vacías/en cero en los 9 informes inspeccionados; los valores reales los carga el visor desde
     `/grid-data/<plugin>-<reportId>-3-1`, que da 401 sin token. No se insistió ni se guardaron esas planillas vacías; los PDF del nodo 6 sirven.
-- Script reutilizable: `Admin/sourcing-europa-este-scripts/dfo.py <БИН> <carpeta>` (Python + curl; baja nodos 4, 6 y 7 de cada informe).
+- Script reutilizable: `tools/sourcing-europa-este/dfo.py <БИН> <carpeta>` (Python + curl; baja nodos 4, 6 y 7 de cada informe).
 - Gotchas: los archivos pesan 2-56 MB (descarga lenta, hasta ~1 min cada uno); pocos `.docx` de notas. El DFO marca a veces la entidad como "Архивный объект" aunque tenga informes.
 - Ojo: **no es un registro de empresas**, solo de OPI (sociedades por acciones, estatales, emisores, bancos, etc.); un club privado (TOO) no aparece.
 

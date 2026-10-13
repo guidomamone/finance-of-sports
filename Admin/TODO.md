@@ -143,9 +143,9 @@ ni en el comentario de ningún archivo de código.
     Los registros que solo se agregan (`cola-revision.jsonl`, `cargar-ultimo.jsonl`) citan rutas viejas como texto: no se reescriben,
     pero hay que confirmar que ningún script las abre. HECHO: raíz (e2.json, Business Books), lotes (`Admin/lotes/`, los cerrados en Archive), claves (`Admin/api-keys/`,
     `schema.sql` a `tools/supabase/`) logs de gasto de API (`Admin/registros/api/`),
-    mediciones (`Admin/mediciones/`) y registros del pipeline (`Admin/registros/`; la evidencia de `Admin/carga-clubes/` cita la ruta nueva).
+    mediciones (`Admin/mediciones/`) registros del pipeline (`Admin/registros/`; la evidencia de `Admin/carga-clubes/` cita la ruta nueva) y
+    los scripts de sourcing de Europa del Este (`tools/sourcing-europa-este/`). `Admin/` quedó en los documentos y 9 carpetas.
     FALTA, en este orden (decidido con Guido):
-      e) `sourcing-europa-este-scripts/` a `tools/sourcing-europa-este/`.
       f) `fuentes/`: las notas internas (carpetas de país, `_indice/`, `README.md`) a `Admin/sourcing/`; en `fuentes/` quedan solo las
          páginas públicas `<clubId>.html` (son URLs indexadas: no se mueven). ~30 archivos las citan, incluido `CLAUDE.md`.
       g) `data/<país>/<clubId>-data.js`: el loader de `index.html` (~línea 730) arma la ruta con `clubs[clubId].country`; las ~32 tools,

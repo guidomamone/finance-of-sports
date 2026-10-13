@@ -14,7 +14,7 @@ falta pasar por el sitio del club.
    navegador). `/CR/DocumentAccess/<guid>`, el enlace que muestra la web, devuelve la SPA en HTML,
    no el PDF.
 
-Scripts: `Admin/sourcing-europa-este-scripts/bgsearch.sh` (buscar) y
+Scripts: `tools/sourcing-europa-este/bgsearch.sh` (buscar) y
 `bgdl.py <ЕИК> <carpeta> [--min-year=N] [--list]` (bajar).
 
 - Un acto agrupa varios PDF: individual, consolidado, informe del auditor, informe de actividad.
