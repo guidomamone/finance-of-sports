@@ -84,6 +84,9 @@ window.RANKINGS["gr-superleague"] = {
   2018: {
     leagueSize: null,
     clubs: [
+      { id:"aekathens-gr", revenue:28.148, reportType:"official_balance_sheet",
+        sourceId:"aekathens-gr-aek-notes-2018-06-30",
+        mix:[["Comercial / Sponsors",6.483],["Estadio",4.991],["Televisión",2.982],["Premios por competencias",10.517],["Otros ingresos",3.174]] },
       { id:"aellarissa-gr", revenue:3.964, reportType:"official_balance_sheet",
         sourceId:"aellarissa-gr-ael-notes-elp-2018-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",3.16],["Otros ingresos",0.803]] },
