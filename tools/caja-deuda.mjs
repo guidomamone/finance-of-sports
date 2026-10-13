@@ -107,10 +107,34 @@ function columnasDeNotas(L) {
   return res;
 }
 
+// (to-do 221) COLUMNA DE NOTAS DE VARIOS NIVELES ("6.1", "6.8", "5.4.14"; Grecia: AEK), para SACAR esa celda de la fila (filasDelMd). Más
+// estricta que columnasDeNotas() porque acá un error saca un importe: la PRIMERA columna con cifras después de la etiqueta, al menos 2
+// valores, todos números de nota con punto o enteros chicos (al menos uno con punto, ninguno con coma) y EN ORDEN creciente bajando por la
+// tabla, como se numeran las notas (una columna de importes chicos en millones, "6.8", "12.4", no viene ordenada).
+function columnasDeNotasConPunto(L) {
+  const celdasDe = (l) => l.trim().replace(/^\||\|$/g, '').split('|').map((c) => c.replace(/\*\*/g, '').trim());
+  const NOTA = /^\d{1,2}(?:\.\d{1,2}){0,3}$/;
+  const clave = (v) => v.split('.').map((x) => x.padStart(3, '0')).join('.');
+  const res = new Map();
+  for (let a = 0; a < L.length;) {
+    if (!L[a].trim().startsWith('|')) { a++; continue; }
+    let b = a; while (b < L.length && L[b].trim().startsWith('|')) b++;
+    const rs = L.slice(a, b).map(celdasDe);
+    const col = rs.map((r) => { const iEt = r.findIndex((c) => /\p{L}{3,}/u.test(c)); if (iEt < 0) return null; const k = r.findIndex((c, j) => j > iEt && /\d/.test(c) && !/\p{L}{2,}/u.test(c)); return k < 0 ? null : k; }).filter((k) => k != null);
+    const freq = new Map(); for (const k of col) freq.set(k, (freq.get(k) || 0) + 1);
+    const c = freq.size ? [...freq].sort((x, y) => y[1] - x[1])[0][0] : null;
+    const vs = c == null ? [] : rs.map((r) => (r[c] || '').trim()).filter((v) => v && !/^:?-{2,}:?$/.test(v) && !/\p{L}{2,}/u.test(v));
+    const ok = vs.length >= 2 && vs.every((v) => NOTA.test(v)) && vs.some((v) => v.includes('.')) && vs.every((v, k) => k === 0 || clave(v) > clave(vs[k - 1]));
+    for (let k = a; k < b; k++) res.set(k, ok ? c : null);
+    a = b;
+  }
+  return res;
+}
+
 // Las filas de la transcripción: etiqueta + cifras (tablas markdown y renglones de texto), con su página y su línea.
 export function filasDelMd(md) {
   const L = md.split('\n'); const filas = []; let pagina = 1; const textoPag = new Map();
-  const notasAntes = columnasDeNotas(L);
+  const notasAntes = columnasDeNotas(L); const notasPunto = columnasDeNotasConPunto(L);
   for (let i = 0; i < L.length; i++) {
     const l = L[i]; const m = l.match(PAG_RE); if (m) { pagina = Number(m[1]); continue; }
     textoPag.set(pagina, (textoPag.get(pagina) || '') + '\n' + l);
@@ -146,7 +170,13 @@ export function filasDelMd(md) {
     // (columnasDeNotas) entre la etiqueta y la primera cifra, esa cifra es un importe: la celda de nota de esta fila está vacía. Escalón 2,
     // sin esa evidencia, la regla de siempre. Caso: Novorizontino 2019 "| Empréstimos |  | 27 | 24 |" (.md L193) descartaba el 27 (2019) y
     // leía el 24 (2018); se publicó deuda 32,32 en vez de 32,323 (la compuerta lo dejó pasar por la tolerancia de redondeo).
-    const notaAntes = ix0 && notasAntes.get(i) && notasAntes.get(i).some((c) => c > j0 && c < ix0[0]);
+    // (to-do 221, escalón aprobado por Guido el 2026-10-13) UNA CELDA DE LA COLUMNA DE NOTAS NO ES UN IMPORTE: si columnasDeNotasConPunto()
+    // reconoció la columna, la cifra que cae en ella se saca antes de leer la fila. Caso: AEK 2016 y 2018, la caja se cargaba 6,8 EUR (la nota
+    // 6.8) y la compuerta del documento siguiente lo aceptaba porque ese documento tiene la misma columna de notas.
+    const colPunto = ix0 ? notasPunto.get(i) : null;
+    const sacoNota = colPunto != null && ix0.includes(colPunto);
+    if (sacoNota) { const k = ix0.indexOf(colPunto); crudos = crudos.filter((_, q) => q !== k); nums = crudos.map(parseNumber).filter((n) => n !== null); }
+    const notaAntes = sacoNota || (ix0 && notasAntes.get(i) && notasAntes.get(i).some((c) => c > j0 && c < ix0[0]));
     if (!notaAntes && nums.length > 1 && Number.isInteger(nums[0]) && Math.abs(nums[0]) >= 1 && Math.abs(nums[0]) < 100 && !/[.,]/.test(String(crudos[0]))) { nums = nums.slice(1); crudos = crudos.slice(1); }
     if (!nums.length) continue;
     nums = nums.map(Math.abs); // LEER UNA FILA: valor absoluto (ver cabecera)

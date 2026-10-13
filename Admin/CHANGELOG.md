@@ -21,7 +21,9 @@ que dice `ESTADO.md` era verdad ese día.
 - To-do 222: `verificar.mjs` decide sola la duda "¿se carga el cuadro como desglose conjunto/por naturaleza/transversal?" con una cuenta
   (una combinación exacta de renglones del estado -> sí; ninguna y la carga no usa el cuadro -> no). 7 de 7 respuestas iguales; 210
   documentos idénticos.
-- To-do 221: `caja-deuda.mjs` tomó el número de nota como caja en AEK (revertido; barrido sin otros casos).
+- To-do 221: `caja-deuda.mjs` tomaba el número de nota ("6.8") como caja en AEK. Escalón: una columna de notas de varios niveles
+  (primera columna numérica, notas con punto, en orden creciente) se saca de la fila. Medido: 921 filas de 32 documentos pierden solo la
+  nota, 13 renglones título quedan sin importe; `--medir` idéntico en todos los clubes.
 
 ## Versión 682 — Lote 67 (Grecia), gestiones tanda 2, primer año y cola sin Guido, limpieza de la carga (2026-10-13)
 
