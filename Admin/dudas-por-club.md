@@ -1904,3 +1904,10 @@ sin leerlo.
 - **Gestión resuelta por Guido el 2026-10-09:** Andrea Langella (borsaefinanza.it, 19/4/2024; 2021-2026 por el título de un artículo) y, desde junio de 2026, Alfredo Guerri (dato de Guido, con una
   búsqueda como fuente); cargadas en `data/gestiones/it.js` con mes y año (día 01). Sin preguntas pendientes para el club. Solo queda, si algún día hace falta, quién tenía el resto de las cuotas
   antes de Brera Holdings.
+
+## Volos NFC (auditoría de rutina, to-do 219, sesión 2026-10-13: no frena ninguna carga)
+
+- **¿Cuánto fue el costo de personal del ejercicio 2019-20?** La nota 8 de los estados al 30/6/2021 (Volos_notes_2021-06-30.md L189) da,
+  como año anterior, un costo total de personal de 206.287,62; los estados al 30/6/2020 imprimen 481.982,86 para ese mismo ejercicio
+  ("Παροχές σε εργαζόμενους", cargado en wages_squad). 206.287,62 coincide con lo cargado para 2019. ¿Es un error del comparativo de 2021,
+  o un cambio de período o de criterio? Lo cargado de 2020 sale de su propio documento (481.982,86) y no se tocó.

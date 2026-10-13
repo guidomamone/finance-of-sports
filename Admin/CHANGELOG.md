@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 691 — Revisión de los niveles de audit.js (to-do 219) (2026-10-13)
+
+- 42 avisos P2 revisados contra la fuente con subagentes: signo-invertido 20, outlier-liga 12 y salto-interanual 4, todos esperables
+  (silenciados en `tools/audit-ignore.json`, con el importe en el match); sin-salarios 6: 5 errores reales (Volos 2021-2025, sueldos de la
+  nota de personal dentro de los gastos de administración; corregidos con ajustes, un commit por año) y Novorizontino 2010 (cero-real).
+- `gestion-club-inexistente` pasa a P3 (gestiones de clubes sin balance todavía). P2: 180 -> 86 (queda catchall-dominante).
+- To-do nuevo 229 (sueldos desde la nota de personal como escalón); Volos 2019-20 a `Admin/dudas-por-club.md`.
+
 ## Versión 690 — Deuda: la nota de la fila (to-do 228) (2026-10-13)
 
 - `caja-deuda.mjs`: si la deuda propuesta es una fila con su nota y la nota muestra que es solo una parte (AEK: el largo plazo, con la parte

@@ -98,14 +98,6 @@ ni en el comentario de ningún archivo de código.
 
 
 
-219. REVISAR LOS NIVELES P0/P1/P2/P3 DE `tools/audit.js` (pedido de Guido). Dos preguntas: (a) ¿hay chequeos que faltan en P0/P1, cosas que
-    hoy un lote puede cargar mal sin que la auditoría lo frene? (`cargar.mjs` y `cargar-lote.mjs` solo revierten con P0/P1, así que lo que
-    vive en P2 nunca frena una carga); (b) ¿está bien el nivel de cada chequeo de hoy? Hoy el P2 mezcla avisos que pueden tapar un dato mal
-    cargado (`signo-invertido`, `salto-interanual`, `sin-salarios`, `outlier-liga`) con otros que son estructurales y esperables
-    (`gestion-club-inexistente`: gestiones de clubes que todavía no tienen balance, más candidato a P3; `catchall-dominante`). Empezar por
-    revisar los casos de los cuatro primeros contra la fuente: si alguno es un error real, ese chequeo pide subir de nivel o un escalón en
-    la carga. `node tools/audit.js` da el detalle de cada uno.
-
 
 226. AJUSTES DE PERÍMETRO QUE NO COINCIDEN CON EL DOCUMENTO (visto al medir el paso A2 de `perimetro-senales.mjs`). Ninguno cambia un
     número publicado; corregirlos con un ajuste `perimetro` del documento (`node tools/ajustes.mjs --agregar "<pdf>" perimetro --valor ...`)
@@ -125,3 +117,11 @@ ni en el comentario de ningún archivo de código.
     los abre y dice si el estado cargado es del grupo o de la sociedad sola, con cita; un error sube el umbral, cambia un peso o agrega un
     criterio, y se mide otra vez con `Admin/mediciones/perimetro-a2-medicion.txt`. Que entre en la skill `auditoria-finance-of-sports` (eje
     `datos`, cada tanto) cuando Guido apruebe el texto; mientras, se corre a mano después de cada país nuevo.
+
+229. SUELDOS DESDE LA NOTA DE PERSONAL, COMO ESCALÓN (visto en el to-do 219, Volos 2021-2025, corregidos con ajustes `fila` y `categoria`).
+    Un estado de resultados por función ("Έξοδα διοίκησης" como único gasto operativo) no separa los sueldos, pero la nota de personal sí
+    ("Σύνολο κόστους μισθοδοσίας περιόδου"); la carga los dejaba dentro de admin_general_expense y `audit.js` avisaba `sin-salarios` (5 de 6
+    avisos eran este caso). Escalón a pensar, como "la nota de la fila" de caja-deuda: si un año queda sin wages_squad y el documento tiene
+    una nota de personal con su total, proponer partir el renglón que la contiene (compuerta: el total de la nota es menor que el renglón y
+    la cadena año contra año de la nota cierra: el año anterior de una nota es el total de la nota del documento anterior). Medir con
+    `audit.js` (`sin-salarios`) y sobre lo cargado (idéntico salvo los años que hoy no tienen wages_squad).
