@@ -29,7 +29,7 @@ De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   anio               ok        2023 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
   cierre             ok        "2023-06-30" — año del ejercicio + mes de cierre (contenido del .md (658 de 691 fechas de fin de mes caen en el mes 6))
   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
-  perimetro          ok        "consolidado" — ajuste manual (Admin/ajustes-manuales.jsonl, perimetro-senales 2026-10-06): perimetro-senales.mjs: 5 documento(s) con los dos estados votan consolidad
+  perimetro          ok        "consolidado" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-06): perimetro-senales.mjs: 5 documento(s) con los dos estados votan consolidad
   currency           ok        "EUR" — moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)
   fxRef              ok        "EUR@2023-06-30" — el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2023-06-30 = 0.9203 (Cierre BCE al 30/6/2023 (1 EUR = 1,0866 USD))
   sourceId           ok        "lazio-it-bilancio-separato-consolidato-2022-23" — clubId + nombre del archivo en slug
@@ -714,7 +714,7 @@ tools/cargar.mjs (2026-10-09)
 ### Meta
 
 ```text
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (1.866.421). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): el financiero es un subtotal que la lectura 5 no toma; impreso (1.866.421)
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (1.866.421). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): el financiero es un subtotal que la lectura 5 no toma; impreso (1.866.421)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -790,9 +790,9 @@ tools/cargar.mjs (2026-10-07)
 ### Meta
 
 ```text
-2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (3.432.429). el renglón salió con las columnas corridas y no se extrajo (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)
-2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 172.710. to-do 157: columnas corridas en el .md (L3463-3465); L3463 933.312 es el subtotal b)+c) con la etiqueta de b); L3464 172.710 es b). Reemplaza solo su propia fila (antes no reemplazaba y el impuesto entraba doble)
-2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 760.602. to-do 157: L3465 760.602 es c); saca la fila de L3463 (933.312 = b)+c), el subtotal contado además de sus partes)
+2015: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (3.432.429). el renglón salió con las columnas corridas y no se extrajo (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)
+2015: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 172.710. to-do 157: columnas corridas en el .md (L3463-3465); L3463 933.312 es el subtotal b)+c) con la etiqueta de b); L3464 172.710 es b). Reemplaza solo su propia fila (antes no reemplazaba y el impuesto entraba doble)
+2015: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 760.602. to-do 157: L3465 760.602 es c); saca la fila de L3463 (933.312 = b)+c), el subtotal contado además de sus partes)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -840,9 +840,9 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (2.185.354). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila del financiero que falta por columnas corridas (pág. 96 del visor); impreso 75.611 + 180.715 - 2.441.681
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (2.060.898). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de impuestos que falta (columnas corridas)
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 300.414. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de impuestos que falta (columnas corridas)
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (2.185.354). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila del financiero que falta por columnas corridas (pág. 96 del visor); impreso 75.611 + 180.715 - 2.441.681
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (2.060.898). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de impuestos que falta (columnas corridas)
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 300.414. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de impuestos que falta (columnas corridas)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -929,9 +929,9 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2013: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (4.068.181). columnas corridas en L3635-L3661; 105 + 287.471 - 4.355.757 = -4.068.181
-2013: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (2.584.541). columnas corridas; el importe 2013 está en la columna del año
-2013: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 5.533.728. columnas corridas; 5.533.728 = 1.618.551 + 3.915.177 (L3658-L3660); cierra el utile -5.894.288
+2013: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (4.068.181). columnas corridas en L3635-L3661; 105 + 287.471 - 4.355.757 = -4.068.181
+2013: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (2.584.541). columnas corridas; el importe 2013 está en la columna del año
+2013: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 5.533.728. columnas corridas; 5.533.728 = 1.618.551 + 3.915.177 (L3658-L3660); cierra el utile -5.894.288
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -1008,8 +1008,8 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. Guido 2026-10-08 (documento viejo, a mano): las filas del estado se armaron desde el .md L3549-L3651 (la extracción no trajo las sub-filas) y sin las notas en miles; el total se contaba además de sus filas (to-do 167)
-2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. Guido 2026-10-08 (documento viejo, a mano): las filas del estado se armaron desde el .md L3549-L3651 (la extracción no trajo las sub-filas) y sin las notas en miles; el total se contaba además de sus filas (to-do 167). Cierra: 95.509.291 − 96.230.839 − 2.741.427 + 7.684.529 = 4.221.554
+2012: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. Guido 2026-10-08 (documento viejo, a mano): las filas del estado se armaron desde el .md L3549-L3651 (la extracción no trajo las sub-filas) y sin las notas en miles; el total se contaba además de sus filas (to-do 167)
+2012: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. Guido 2026-10-08 (documento viejo, a mano): las filas del estado se armaron desde el .md L3549-L3651 (la extracción no trajo las sub-filas) y sin las notas en miles; el total se contaba además de sus filas (to-do 167). Cierra: 95.509.291 − 96.230.839 − 2.741.427 + 7.684.529 = 4.221.554
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -1084,10 +1084,10 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2011: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 1.648.840. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de gastos que falta (columnas corridas en la pág. 100 del visor; cifra leída de la imagen del PDF)
-2011: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 74.740. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de gastos que falta (columnas corridas)
-2011: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 597.555. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de gastos que falta (columnas corridas)
-2011: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 596.497. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de gastos que falta (columnas corridas)
+2011: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 1.648.840. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de gastos que falta (columnas corridas en la pág. 100 del visor; cifra leída de la imagen del PDF)
+2011: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 74.740. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de gastos que falta (columnas corridas)
+2011: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 597.555. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de gastos que falta (columnas corridas)
+2011: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 596.497. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de gastos que falta (columnas corridas)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -1322,10 +1322,10 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2008: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. total sumado además de sus 18 hojas (doble conteo, to-do 167)
-2008: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (4.224.030). el subtotal financiero (hojas en detalla_a) no se sumaba; 55.350 + 1.283.259 - 5.562.639 = -4.224.030
-2008: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (12.443.793). el subtotal de impuestos no se sumaba; b) 13.687.035 + c) (26.130.829)
-2008: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. Guido 2026-10-08 (documento viejo, a mano): el total se contaba además de sus filas (to-do 167); con el TOTALE RICAVI ya sacado y las notas en miles fuera del .filas.json cierra: 102.482.030 − 68.609.526 − 4.962.375 − 15.148.258 = 13.761.871 vs 13.761.874
+2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. total sumado además de sus 18 hojas (doble conteo, to-do 167)
+2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (4.224.030). el subtotal financiero (hojas en detalla_a) no se sumaba; 55.350 + 1.283.259 - 5.562.639 = -4.224.030
+2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (12.443.793). el subtotal de impuestos no se sumaba; b) 13.687.035 + c) (26.130.829)
+2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. Guido 2026-10-08 (documento viejo, a mano): el total se contaba además de sus filas (to-do 167); con el TOTALE RICAVI ya sacado y las notas en miles fuera del .filas.json cierra: 102.482.030 − 68.609.526 − 4.962.375 − 15.148.258 = 13.761.871 vs 13.761.874
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -1550,7 +1550,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 5.462. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): subtotal 17-bis sin hojas que la extracción no cuenta; el impreso cierra con él
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 5.462. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): subtotal 17-bis sin hojas que la extracción no cuenta; el impreso cierra con él
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -1686,8 +1686,8 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2001: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): moneda = ITL. Guido 2026-10-08: dejarlo en liras; el documento reporta en millones de liras (ejercicio anterior a 2002) y el sitio lo carga en ITL con su tipo de cambio de cierre (paridad fija 1.936,27 por el EUR/USD del BCE)
-2001: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = individual. Claude 2026-10-08 (Guido: liras de Lazio): el documento solo trae el bilancio d'esercizio de la S.S. Lazio S.p.A. (la revisión es del bilancio d'esercizio; no hay consolidado en el .md): individual, aunque el club se carga consolidado desde 2006
+2001: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): moneda = ITL. Guido 2026-10-08: dejarlo en liras; el documento reporta en millones de liras (ejercicio anterior a 2002) y el sitio lo carga en ITL con su tipo de cambio de cierre (paridad fija 1.936,27 por el EUR/USD del BCE)
+2001: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = individual. Claude 2026-10-08 (Guido: liras de Lazio): el documento solo trae el bilancio d'esercizio de la S.S. Lazio S.p.A. (la revisión es del bilancio d'esercizio; no hay consolidado en el .md): individual, aunque el club se carga consolidado desde 2006
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -1753,10 +1753,10 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2000: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): moneda = ITL. Guido 2026-10-08: dejarlo en liras; el documento reporta en millones de liras (ejercicio anterior a 2002) y el sitio lo carga en ITL con su tipo de cambio de cierre (paridad fija 1.936,27 por el EUR/USD del BCE)
-2000: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): anio = 2000. Claude 2026-10-08 (Guido: liras de Lazio): el ejercicio 1999-00 cierra el 30/6/2000 (el estado dice 30/06/2000 Lire); el nombre del archivo hacía que el sitio lo tomara como 1999, el mismo año del ejercicio 1998-99
-2000: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2000-06-30. Claude 2026-10-08 (Guido: liras de Lazio): el estado dice 30/06/2000 (Lire) y el 30/06/1999 de comparativo; es el ejercicio 1999-00, que cierra el 30/6/2000
-2000: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = individual. Claude 2026-10-08 (Guido: liras de Lazio): el documento solo trae el bilancio d'esercizio de la S.S. Lazio S.p.A. (la revisión es del bilancio d'esercizio; no hay consolidado en el .md): individual, aunque el club se carga consolidado desde 2006
+2000: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): moneda = ITL. Guido 2026-10-08: dejarlo en liras; el documento reporta en millones de liras (ejercicio anterior a 2002) y el sitio lo carga en ITL con su tipo de cambio de cierre (paridad fija 1.936,27 por el EUR/USD del BCE)
+2000: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): anio = 2000. Claude 2026-10-08 (Guido: liras de Lazio): el ejercicio 1999-00 cierra el 30/6/2000 (el estado dice 30/06/2000 Lire); el nombre del archivo hacía que el sitio lo tomara como 1999, el mismo año del ejercicio 1998-99
+2000: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2000-06-30. Claude 2026-10-08 (Guido: liras de Lazio): el estado dice 30/06/2000 (Lire) y el 30/06/1999 de comparativo; es el ejercicio 1999-00, que cierra el 30/6/2000
+2000: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = individual. Claude 2026-10-08 (Guido: liras de Lazio): el documento solo trae el bilancio d'esercizio de la S.S. Lazio S.p.A. (la revisión es del bilancio d'esercizio; no hay consolidado en el .md): individual, aunque el club se carga consolidado desde 2006
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -1821,8 +1821,8 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-1999: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): moneda = ITL. Guido 2026-10-08: dejarlo en liras; el documento reporta en millones de liras (ejercicio anterior a 2002) y el sitio lo carga en ITL con su tipo de cambio de cierre (paridad fija 1.936,27 por el EUR/USD del BCE)
-1999: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = individual. Claude 2026-10-08 (Guido: liras de Lazio): el documento solo trae el bilancio d'esercizio de la S.S. Lazio S.p.A. (la revisión es del bilancio d'esercizio; no hay consolidado en el .md): individual, aunque el club se carga consolidado desde 2006
+1999: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): moneda = ITL. Guido 2026-10-08: dejarlo en liras; el documento reporta en millones de liras (ejercicio anterior a 2002) y el sitio lo carga en ITL con su tipo de cambio de cierre (paridad fija 1.936,27 por el EUR/USD del BCE)
+1999: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = individual. Claude 2026-10-08 (Guido: liras de Lazio): el documento solo trae el bilancio d'esercizio de la S.S. Lazio S.p.A. (la revisión es del bilancio d'esercizio; no hay consolidado en el .md): individual, aunque el club se carga consolidado desde 2006
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 

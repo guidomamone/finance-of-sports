@@ -45,7 +45,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   club la tiene en todos sus otros balances desglosados; `cargar.mjs --escribir` la aplica solo. La página dice el rubro en un bocadillo
   (`js/info-tip.js`). Para un año sin precedente todavía no hay pregunta en la cola: queda en "—".
 - `lote.mjs --ejecutar --cargar` escribe solo lo que queda "listo para cargar" (`tools/cargar-lote.mjs`: alta con el color de
-  `Admin/altas-revision.jsonl`, un commit por año, revierte el alta si ningún año entra). `pipeline.mjs --lista/--dir` y `lote.mjs` recalculan
+  `Admin/registros/altas-revision.jsonl`, un commit por año, revierte el alta si ningún año entra). `pipeline.mjs --lista/--dir` y `lote.mjs` recalculan
   el registro solo para su lista (inventario `--solo`, mucho más rápido que el inventario entero).
 - Rusia NO sale de PDFs: `tools/bfo-rusia.mjs` lee los JSON oficiales del fisco (GIR BO) con el formulario 2 (código → categoría fijo,
   compuerta: la suma da el 2300 impreso) y el formulario 6 en los clubes que reciben aportes (Akhmat, Akron, Dynamo Makhachkala, Pari NN,
@@ -61,10 +61,10 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   `node tools/generate-club-index.js`. El detalle de cada año (fuente, qué es real y qué no) está en la cabecera de `data/<club>-data.js`.
 - Brasil, Italia y Rusia se cargaron por el pipeline (Rusia por su camino propio); en los documentos italianos viejos quedan ajustes
   manuales donde el script no da idéntico, y dos ejercicios (Lazio 2012-13, AS Roma 2021) llevan el ajuste `no-recargar` porque lo publicado
-  es más detallado que lo que lee el script. Un ejercicio de menos de 12 meses no se carga: queda en `Admin/documentos-parciales.txt` con el
+  es más detallado que lo que lee el script. Un ejercicio de menos de 12 meses no se carga: queda en `Admin/registros/documentos-parciales.txt` con el
   tramo que falta. Los ejercicios de Lazio en liras (ITL) llevan su tipo de cambio de cierre y la paridad fija a euro para mostrarse en EUR.
   La etiqueta y la gestión de cada ejercicio salen de su propio cierre, aunque el club haya cambiado la fecha de cierre. Un documento que no
-  es del dominio (un artículo de prensa) va a `Admin/documentos-descartados.txt`. Sin transcribir: rugby, tenis y entes italianos; ver
+  es del dominio (un artículo de prensa) va a `Admin/registros/documentos-descartados.txt`. Sin transcribir: rugby, tenis y entes italianos; ver
   `fuentes/Italia/_notas-generales.md`. Las federaciones entran al sitio.
 
 ### Finanzas multi-año

@@ -25,4 +25,4 @@ Contexto: Comisión independiente (`vigilanzasport.it`) le aplicó puntos de pen
 
 ## Tramo que falta buscar (balance parcial, to-do 190, 2026-10-09)
 
-`Juve Stabia-semestral-2024-12-31-SEC-6K.pdf` cubre 2024-07-01 a 2024-12-31 (semestral). Falta el bilancio anual al 30/06/2025 (o el semestre 2025-01-01 a 2025-06-30). Está en `Admin/documentos-parciales.txt`; cómo se juntan los tramos: `Admin/CONVENCIONES-DATOS.md`.
+`Juve Stabia-semestral-2024-12-31-SEC-6K.pdf` cubre 2024-07-01 a 2024-12-31 (semestral). Falta el bilancio anual al 30/06/2025 (o el semestre 2025-01-01 a 2025-06-30). Está en `Admin/registros/documentos-parciales.txt`; cómo se juntan los tramos: `Admin/CONVENCIONES-DATOS.md`.

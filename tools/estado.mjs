@@ -3,7 +3,7 @@
 // tools/estado.mjs — EL tablero del inventario: dónde está cada PDF, qué le falta, con qué comando se avanza y cuánto cuesta. Gratis.
 //
 // POR QUÉ EXISTE (pedido de Guido, 2026-09-30: "tenemos demasiados estados abiertos y me marea. Pasame un código para que la terminal
-// pueda hacer esa consulta siempre que quiera"). Los estados vienen de Admin/transcripciones-estado.jsonl (lo escribe
+// pueda hacer esa consulta siempre que quiera"). Los estados vienen de Admin/registros/transcripciones-estado.jsonl (lo escribe
 // tools/inventario-transcripciones.mjs) y de lo que las etapas 3-8 dejaron en Generados/ (tools/etapa-doc.mjs, Versión 448: las etapas del
 // proceso nuevo, las mismas que muestra el inventario).
 //
@@ -31,7 +31,7 @@ const ROOT = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
 const flagVal = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : null; };
 const dir = flagVal('--dir');
-const regPath = resolve(ROOT, 'Admin', 'transcripciones-estado.jsonl');
+const regPath = resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl');
 
 if (args.includes('--actualizar') || !existsSync(regPath)) {
   process.stdout.write('Regenerando el registro (sin API)... ');
@@ -69,10 +69,10 @@ const usdLocalizarYExtraer = (pdf) => 0.05 + estimarExtraerSinBloques(pdf).usd;
 // 19 PDFs de 151-208 páginas: ~US$ 4 acá contra US$ 25,60 del ensayo de pipeline.mjs). Ahora usa la MISMA cuenta que ese ensayo
 // (tools/resolver-inventario.mjs, dryRunDoc, caso "sin .md"): Mistral en todas las páginas + segunda voz en el 58% que tiene números
 // = 0,004 + 0,58 × (0,002 + 0,6 × 0,25 × 0,02 + 0,15 × 0,02) ≈ US$ 0,0086 por página. Las páginas salen de la caché que mantiene
-// pipeline.mjs (Admin/.paginas-cache.json, sin pdfinfo: el tablero tiene que seguir siendo instantáneo); un PDF que no está en la caché
+// pipeline.mjs (Admin/registros/.paginas-cache.json, sin pdfinfo: el tablero tiene que seguir siendo instantáneo); un PDF que no está en la caché
 // sigue con los US$ 0,20 de antes. Es una estimación (pedido de Guido: no hace falta que sea perfecta); el gasto real lo da tools/gasto.mjs.
 const USD_POR_PAGINA_SIN_MD = 0.004 + 0.58 * (0.002 + 0.6 * 0.25 * 0.02 + 0.15 * 0.02);
-const PAGINAS = (() => { try { return JSON.parse(readFileSync(resolve(ROOT, 'Admin', '.paginas-cache.json'), 'utf8')); } catch { return {}; } })();
+const PAGINAS = (() => { try { return JSON.parse(readFileSync(resolve(ROOT, 'Admin', 'registros', '.paginas-cache.json'), 'utf8')); } catch { return {}; } })();
 const usdTranscribir = (pdf) => (PAGINAS[pdf]?.n ? PAGINAS[pdf].n * USD_POR_PAGINA_SIN_MD : 0.20);
 const ETAPAS = [
   ['1. CONSEGUIR EL PDF (el sourcing no pasa por este registro: acá solo aparecen los PDFs que llegaron rotos)', [
@@ -164,7 +164,7 @@ const imprimirEtapa = ([etapa, filas]) => {
 const rotos = R.filter((e) => clave(e) === 'e1-roto');
 const reabrir = () => { if (!rotos.length) return; console.log('     Reabrir el sourcing (el archivo de fuentes todavía puede darlo por conseguido):'); for (const e of rotos.slice(0, 10)) { const [, pais, club] = e.pdf.split('/'); console.log(`       ${e.pdf}  ->  fuentes/${pais}/${club}.md`); } };
 ETAPAS.forEach((et) => { imprimirEtapa(et); if (et[0].startsWith('1.')) reabrir(); });
-for (const k of Object.keys(cuenta).filter((k) => !conocidas.has(k))) console.log(`  ${String(cuenta[k]).padStart(5)}  ${k === 'descartado' ? 'descartados como fuente (Admin/documentos-descartados.txt; el lote los saltea)' : k === 'parcial' ? 'balances parciales, de menos de 12 meses (Admin/documentos-parciales.txt; el lote los saltea hasta que aparezca el otro tramo)' : `(estado sin describir: ${k})`}`);
+for (const k of Object.keys(cuenta).filter((k) => !conocidas.has(k))) console.log(`  ${String(cuenta[k]).padStart(5)}  ${k === 'descartado' ? 'descartados como fuente (Admin/registros/documentos-descartados.txt; el lote los saltea)' : k === 'parcial' ? 'balances parciales, de menos de 12 meses (Admin/registros/documentos-parciales.txt; el lote los saltea hasta que aparezca el otro tramo)' : `(estado sin describir: ${k})`}`);
 // (to-do 190) cada parcial con lo que falta, en cada corrida: es el aviso para buscar el otro tramo en el sourcing.
 for (const [pdf, p] of PARCIALES) console.log(`         ${pdf.replace(/^Clubes\//, '')}: cubre ${p.cubre}; falta ${p.falta}`);
 console.log(`\n  Costo estimado para llevar todo hasta "propuesta de carga": ~US$ ${Math.round(total)} (API; sesión de Claude: 0 tokens)`);
@@ -172,11 +172,11 @@ console.log(`\n  Costo estimado para llevar todo hasta "propuesta de carga": ~US
 // como avance del proceso nuevo. El proceso viejo se retiró de pipeline.mjs en la Versión 529: estos son los que quedaron de antes.
 const viejos = R.filter((e) => !e.cargado && e.md && rubrosViejo(e)).length;
 if (viejos) console.log(`  Referencia, proceso viejo: ${viejos} documentos sin cargar tienen lista de rubros de pipeline.mjs (no cuenta como avance acá).`);
-// ÚLTIMA PROPUESTA DE CARGA (Admin/cargar-ultimo.jsonl, lo escribe `cargar.mjs --lista`, también desde lote.mjs).
-const ultimo = resolve(ROOT, 'Admin', 'cargar-ultimo.jsonl');
+// ÚLTIMA PROPUESTA DE CARGA (Admin/registros/cargar-ultimo.jsonl, lo escribe `cargar.mjs --lista`, también desde lote.mjs).
+const ultimo = resolve(ROOT, 'Admin', 'registros', 'cargar-ultimo.jsonl');
 if (existsSync(ultimo)) {
   const U = readFileSync(ultimo, 'utf8').trim().split('\n').map((l) => JSON.parse(l));
-  console.log(`  Última propuesta de carga (${U[0]?.lista}, ${String(U[0]?.ts).slice(0, 16).replace('T', ' ')}): ${U.filter((x) => x.carga).length} de ${U.length} cargarían. Detalle: Admin/cargar-ultimo.jsonl`);
+  console.log(`  Última propuesta de carga (${U[0]?.lista}, ${String(U[0]?.ts).slice(0, 16).replace('T', ' ')}): ${U.filter((x) => x.carga).length} de ${U.length} cargarían. Detalle: Admin/registros/cargar-ultimo.jsonl`);
 }
 console.log('  Cola humana: node tools/cola.mjs  ·  un lote: node tools/lote.mjs --lista Admin/lotes/lote-NN.txt');
 console.log(`\n  Grupos de países: ${GRUPOS.map((g) => `${g.corto} ${g.nombre}`).join(' · ')}.\n  Qué tiene de propio cada grupo en cada etapa: node tools/estado.mjs --logica [grupo]`);

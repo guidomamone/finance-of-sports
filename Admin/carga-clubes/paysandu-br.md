@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Brasil/Paysandu/dre-2021.pdf
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "paysandu-br" — slug de "Paysandu" + '-br' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "Paysandu Sport Club" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social tal como la dice el documento, si
+  name               ok        "Paysandu Sport Club" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social tal como la dice el documento, si
   displayName        ok        "Paysandu" — nombre de la carpeta del club en Clubes/
   country            ok        "BR" — carpeta de país "Brasil" (tabla PAISES)
   reportingCurrency  ok        "BRL" — moneda de curso legal de Brasil
@@ -102,7 +102,7 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): resultado-final = -2.175.575,20. Onboarding to-do 165 (Claude, 2026-10-09): este DRE de 2025 imprime con signos de balancete (receitas negativas, custos positivos), así que el déficit sale como '2.175.575,20' positivo (L8 y L45). La cuenta: 69.580.477,67 - 30.443.507,96 - 39.852.911,20 - 1.459.633,71 = -2.175.575,20; dre-2024 (formato normal) imprime 2024 como déficit -3.885.733,14 y este documento lo trae como 3.885.733,14
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): resultado-final = -2.175.575,20. Onboarding to-do 165 (Claude, 2026-10-09): este DRE de 2025 imprime con signos de balancete (receitas negativas, custos positivos), así que el déficit sale como '2.175.575,20' positivo (L8 y L45). La cuenta: 69.580.477,67 - 30.443.507,96 - 39.852.911,20 - 1.459.633,71 = -2.175.575,20; dre-2024 (formato normal) imprime 2024 como déficit -3.885.733,14 y este documento lo trae como 3.885.733,14
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
@@ -160,9 +160,9 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2024-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae 2023-12-31; el ejercicio del documento cierra el 2024-12-31
-2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: el renglon 'Despesas Operacionais da Atividade Desportiva' 33.680.062 (L33) es el subtotal de L34-L41 y la extraccion lo sumaba ademas de sus componentes (gastos 101.003.244 en vez de ~67,3M). Se saca el subtotal y quedan los componentes. Resultado impreso: 64.496.592 - 33.601.309,54 - 33.680.062 = -2.784.779,54 (L42); -2.784.779,54 - 1.100.953,60 = -3.885.733,14 (L46).
-2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Onboarding to-do 165 (Claude, 2026-10-09): el documento imprime 'Perdas de Capital' (41.810, L39) pero no la suma: el subtotal L33 es 33.680.062 = sus renglones sin ella (33.721.872 - 41.810), y el resultado operacional (-2.784.779,54, L41) y el del ejercicio (-3.885.733,14, L45) cierran sin ella. Se carga lo que el documento suma
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2024-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae 2023-12-31; el ejercicio del documento cierra el 2024-12-31
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: el renglon 'Despesas Operacionais da Atividade Desportiva' 33.680.062 (L33) es el subtotal de L34-L41 y la extraccion lo sumaba ademas de sus componentes (gastos 101.003.244 en vez de ~67,3M). Se saca el subtotal y quedan los componentes. Resultado impreso: 64.496.592 - 33.601.309,54 - 33.680.062 = -2.784.779,54 (L42); -2.784.779,54 - 1.100.953,60 = -3.885.733,14 (L46).
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Onboarding to-do 165 (Claude, 2026-10-09): el documento imprime 'Perdas de Capital' (41.810, L39) pero no la suma: el subtotal L33 es 33.680.062 = sus renglones sin ella (33.721.872 - 41.810), y el resultado operacional (-2.784.779,54, L41) y el del ejercicio (-3.885.733,14, L45) cierran sin ella. Se carga lo que el documento suma
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
@@ -219,7 +219,7 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2023-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae 2022-12-31 (el primer año del encabezado 'Exercícios findos em 31 de dezembro 2022 e 2023'); el ejercicio del documento cierra el 2023-12-31
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2023-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae 2022-12-31 (el primer año del encabezado 'Exercícios findos em 31 de dezembro 2022 e 2023'); el ejercicio del documento cierra el 2023-12-31
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```

@@ -87,14 +87,14 @@ tomarCandado('lote.mjs', { lista: LISTA, modo: EJECUTAR ? '--ejecutar' : 'ensayo
 // verifica, no se categoriza ni se propone cargar (UC 2022 en el lote 03: ya cargado, llenaba la terminal con 7 frenos esperables).
 const lineas = readFileSync(resolve(ROOT, LISTA), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'));
 const testigos = new Set(lineas.filter((l) => /^testigo\s+/i.test(l)).map((l) => l.replace(/^testigo\s+/i, '')));
-// DESCARTADOS (Versión 344): Admin/documentos-descartados.txt lista los documentos que Guido descartó como fuente; el lote los saltea.
-const descartados = new Set((existsSync(resolve(ROOT, 'Admin', 'documentos-descartados.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'documentos-descartados.txt'), 'utf8') : '').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')));
-// PARCIALES (to-do 190, Versión 631): los balances de menos de 12 meses (Admin/documentos-parciales.txt) tampoco entran: falta el otro tramo.
-const parciales = new Set((existsSync(resolve(ROOT, 'Admin', 'documentos-parciales.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'documentos-parciales.txt'), 'utf8') : '').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')));
-const docs = lineas.map((l) => l.replace(/^testigo\s+/i, '')).filter((d) => { if (descartados.has(d)) { console.log(`  ${d}: descartado (Admin/documentos-descartados.txt)`); return false; } if (parciales.has(d)) { console.log(`  ${d}: parcial, menos de 12 meses (Admin/documentos-parciales.txt)`); return false; } return true; });
+// DESCARTADOS (Versión 344): Admin/registros/documentos-descartados.txt lista los documentos que Guido descartó como fuente; el lote los saltea.
+const descartados = new Set((existsSync(resolve(ROOT, 'Admin', 'registros', 'documentos-descartados.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'documentos-descartados.txt'), 'utf8') : '').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')));
+// PARCIALES (to-do 190, Versión 631): los balances de menos de 12 meses (Admin/registros/documentos-parciales.txt) tampoco entran: falta el otro tramo.
+const parciales = new Set((existsSync(resolve(ROOT, 'Admin', 'registros', 'documentos-parciales.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'documentos-parciales.txt'), 'utf8') : '').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')));
+const docs = lineas.map((l) => l.replace(/^testigo\s+/i, '')).filter((d) => { if (descartados.has(d)) { console.log(`  ${d}: descartado (Admin/registros/documentos-descartados.txt)`); return false; } if (parciales.has(d)) { console.log(`  ${d}: parcial, menos de 12 meses (Admin/registros/documentos-parciales.txt)`); return false; } return true; });
 if (docs.length > 10) console.log(`OJO: ${docs.length} documentos. El proceso nuevo se refina de a 5 (pedido de Guido).`);
-const ajustesTodos = (() => { let cache = null; return () => (cache ??= (existsSync(resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl')) ? readFileSync(resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return {}; } }) : [])); })();
-const leerRegistro = () => readFileSync(resolve(ROOT, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+const ajustesTodos = (() => { let cache = null; return () => (cache ??= (existsSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return {}; } }) : [])); })();
+const leerRegistro = () => readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
 let registro = leerRegistro();
 // (Versión 521, to-do 140(c)) DUPLICADOS: el mismo PDF que otro (misma huella, inventario-transcripciones.mjs) no se procesa: se procesa el otro.
 for (let i = docs.length - 1; i >= 0; i--) { const e = registro.find((x) => x.pdf === docs[i]); if (e && e.estado === 'duplicado') { console.log(`  ${docs[i]}: duplicado de ${e.duplicadoDe} (misma huella): se saltea`); docs.splice(i, 1); } }
@@ -342,13 +342,13 @@ for (const [pdf, r] of verificarLista(docs.filter((d) => String(estado[d]).start
 console.log('\n=== Etapa 7: categorizar (Jev y Claude, con precedente y memoria) ===');
 const conRubros = docs.filter((d) => String(estado[d]).startsWith('verificado'));
 if (conRubros.length) {
-  writeFileSync(resolve(ROOT, 'Admin', '.lote-lista-actual.txt'), conRubros.join('\n') + '\n');
+  writeFileSync(resolve(ROOT, 'Admin', 'registros', '.lote-lista-actual.txt'), conRubros.join('\n') + '\n');
   node('tools/inventario-transcripciones.mjs', ['--solo', LISTA], { silencioso: true }); registro = leerRegistro(); // (Versión 640) --solo: solo la lista del lote
-  node('tools/glosar-rubros.mjs', ['--listos', '--lista', 'Admin/.lote-lista-actual.txt']);
-  node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/.lote-lista-actual.txt']);
-  node('tools/categorizar-claude.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/.lote-lista-actual.txt']);
+  node('tools/glosar-rubros.mjs', ['--listos', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
+  node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
+  node('tools/categorizar-claude.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
   console.log('\n=== Etapa 8: cargar (PROPUESTA, no escribe el sitio) ===');
-  node('tools/cargar.mjs', ['--lista', 'Admin/.lote-lista-actual.txt', '--desde-verificacion']);
+  node('tools/cargar.mjs', ['--lista', 'Admin/registros/.lote-lista-actual.txt', '--desde-verificacion']);
 }
 
 console.log('\n=== RESUMEN DEL LOTE ===');

@@ -4,11 +4,11 @@
 //
 // USO:
 //   node tools/tablas-sesion.mjs --italia     un renglón por club de fútbol de Clubes/Italia: ejercicios cargados y, de lo que falta, en qué etapa
-//                                             del pipeline está cada documento y por qué (lee Admin/transcripciones-estado.jsonl y Generados/)
+//                                             del pipeline está cada documento y por qué (lee Admin/registros/transcripciones-estado.jsonl y Generados/)
 //   node tools/tablas-sesion.mjs --todo       un renglón por punto de Admin/TODO.md: número, título y su estado
 //   (sin flags: las dos)
 //
-// QUÉ ES "AÑO": el año de cierre del ejercicio (2020 = temporada 2019-20), como en el sitio. Los descartados (Admin/documentos-descartados.txt) no
+// QUÉ ES "AÑO": el año de cierre del ejercicio (2020 = temporada 2019-20), como en el sitio. Los descartados (Admin/registros/documentos-descartados.txt) no
 // aparecen. Antes de leer la tabla: `node tools/estado.mjs --actualizar` (gratis) para que el registro esté al día.
 // ============================================================================
 import { readFileSync, existsSync } from 'node:fs';
@@ -48,7 +48,7 @@ function motivoCorto(e, r) {
 }
 
 if (queIta) {
-  const reg = readFileSync(resolve(ROOT, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+  const reg = readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
   const porClub = new Map();
   for (const e of reg) {
     const m = e.pdf.match(/^Clubes\/Italia\/([^/]+)\//); if (!m || !FUTBOL.has(m[1])) continue;

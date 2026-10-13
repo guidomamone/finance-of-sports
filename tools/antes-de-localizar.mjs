@@ -64,15 +64,15 @@ export function faltaAntesDeLocalizar(pdf, { registro, todos = false, previsto =
   if (cerc?.perimetro === 'consolidado' && (docTipo === 'consolidado' || docTipo === 'ambos')) return null;
   return { falta: 'perimetro', detalle: `${perC.fuente}${cerc ? `; año cargado más cercano: ${cerc.anio} ${cerc.perimetro || '?'}` : '; el club no tiene años cargados'}`,
     // Dos entidades en la carpeta (Molde: "fotballklubb-fli" y "molde-fotball-as" del mismo año): el perímetro solo no alcanza, primero hay
-    // que elegir cuál es el club; los documentos de la otra van a Admin/documentos-descartados.txt (el lote los saltea).
-    comando: `${docTipo === 'dos-entidades' ? 'elegir la entidad que es el club (los documentos de la otra van a Admin/documentos-descartados.txt) y después: ' : ''}node tools/ajustes.mjs --agregar "${carpetaClub(pdf)}" perimetro --valor individual|consolidado --motivo "..."   (del club; o el pdf, solo ese año)` };
+    // que elegir cuál es el club; los documentos de la otra van a Admin/registros/documentos-descartados.txt (el lote los saltea).
+    comando: `${docTipo === 'dos-entidades' ? 'elegir la entidad que es el club (los documentos de la otra van a Admin/registros/documentos-descartados.txt) y después: ' : ''}node tools/ajustes.mjs --agregar "${carpetaClub(pdf)}" perimetro --valor individual|consolidado --motivo "..."   (del club; o el pdf, solo ese año)` };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const i = A.indexOf('--lista');
   if (i < 0) { console.error('Uso: node tools/antes-de-localizar.mjs --lista <archivo> [--todos]'); process.exit(1); }
   const docs = readFileSync(resolve(ROOT, A[i + 1]), 'utf8').split('\n').map((l) => l.trim().replace(/^testigo\s+/i, '')).filter((l) => l && !l.startsWith('#'));
-  const registro = readFileSync(resolve(ROOT, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+  const registro = readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
   // (perimetro-senales.mjs) el escalón que fija el perímetro del club cuando sus documentos coinciden: acá en modo ensayo (sin Jev ni escritura).
   const { fijarPerimetroDeClubes } = await import('./perimetro-senales.mjs');
   const PS = await fijarPerimetroDeClubes(docs, { registro, faltaPerimetro: (p) => faltaAntesDeLocalizar(p, { registro, todos: A.includes('--todos') })?.falta === 'perimetro' });

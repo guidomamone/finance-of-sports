@@ -147,7 +147,7 @@ tools/cargar.mjs (2026-10-04)
 ### Meta
 
 ```text
-2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe
 tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 caja/deuda 2024: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
 ```
@@ -199,7 +199,7 @@ tools/cargar.mjs (2026-10-04)
 ### Meta
 
 ```text
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe
 tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 caja 2023: corregida a mano el 2026-10-04 (Guido): "Cash and cash equivalents" 48,389,386 del balance SEPARADO (.md L4800); caja-deuda.mjs había tomado el consolidado (pág. 53, L1504, 48,676,632). 2003-2006: caja y deuda divididas por 1.000 (caja-deuda leyó esos documentos en miles por las filas de la nota de sponsors abiertas a mano).
 caja/deuda 2023: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
@@ -252,35 +252,35 @@ tools/cargar.mjs (2026-10-04)
 ### Meta
 
 ```text
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 24,541. Guido 2026-10-04: número de una NOTA (b133, pág. 172) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2019. Guido 2026-10-04: número de una NOTA (b133, pág. 172) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 28,838. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 12,123. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 10,495. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,925. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,603. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,129. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2,560. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,355. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,205. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,897. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,600. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,835. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,588. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2,250. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,530. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2,980. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,450. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,129. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 5,123. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 4,927. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 74,237. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 64,011. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 12,086. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 9,545. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2,541. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2021. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2020. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 24,541. Guido 2026-10-04: número de una NOTA (b133, pág. 172) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2019. Guido 2026-10-04: número de una NOTA (b133, pág. 172) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 28,838. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 12,123. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 10,495. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,925. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,603. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,129. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2,560. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,355. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,205. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,897. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,600. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,835. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,588. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2,250. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,530. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2,980. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,450. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,129. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 5,123. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 4,927. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 74,237. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 64,011. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 12,086. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 9,545. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2,541. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2021. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2020. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
 tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 caja/deuda 2022: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
 ```
@@ -332,7 +332,7 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe; '(0,157)' se leía como 157 €
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe; '(0,157)' se leía como 157 €
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
 caja/deuda 2021: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
@@ -437,7 +437,7 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe del estado; '(0,040)' se leía como 40 €
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe del estado; '(0,040)' se leía como 40 €
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
 caja/deuda 2019: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
@@ -1099,17 +1099,17 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -270,216. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -3,386,350. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 34470000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3074)
-2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 17437000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3075)
-2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 95595809. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3076) (incluye -191 € de redondeo de la nota en miles)
-2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3967000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3077)
-2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 8735000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3078)
-2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 18915000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3079)
-2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1628000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3080)
-2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1731000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3081)
-2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 166000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3082)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -270,216. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -3,386,350. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 34470000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3074)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 17437000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3075)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 95595809. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3076) (incluye -191 € de redondeo de la nota en miles)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3967000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3077)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 8735000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3078)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 18915000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3079)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1628000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3080)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1731000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3081)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 166000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3082)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): grossDebt escalón 2 (compuerta: año anterior): "4) Due to banks" pág. 79; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
 ```
@@ -1175,20 +1175,20 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -148,861. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -1,585,619. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 29,168,740. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3,451,549. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 100,745. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 38802000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2804)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 15423000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2805)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 97847015. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2806) (incluye 15 € de redondeo de la nota en miles)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3832000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2807)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 7730000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2808)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 14986000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2809)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 990000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2810)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 2326000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2811)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 192000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2812)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -148,861. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -1,585,619. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 29,168,740. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3,451,549. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 100,745. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 38802000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2804)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 15423000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2805)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 97847015. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2806) (incluye 15 € de redondeo de la nota en miles)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3832000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2807)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 7730000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2808)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 14986000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2809)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 990000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2810)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 2326000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2811)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 192000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2812)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): grossDebt escalón 2 (compuerta: documento siguiente): "4) Due to banks" pág. 70; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
 ```
@@ -1254,21 +1254,21 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -3,026,244. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 5,043,852. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 215,006. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 103,318. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1,314,812. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3,121,282. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 32578000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3396)
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 17782000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3397)
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 84968975. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3398) (incluye -25 € de redondeo de la nota en miles)
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3530000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3399)
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 6720000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3400)
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 14927000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3401)
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1052000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3402)
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 2353000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3403)
-2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 392000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3404)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -3,026,244. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 5,043,852. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 215,006. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 103,318. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1,314,812. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3,121,282. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 32578000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3396)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 17782000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3397)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 84968975. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3398) (incluye -25 € de redondeo de la nota en miles)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3530000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3399)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 6720000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3400)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 14927000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3401)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1052000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3402)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 2353000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3403)
+2004: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 392000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3404)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
 ```
@@ -1336,22 +1336,22 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -670,013. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 196,702. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 48,013,871. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 613,289. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 4,217,905. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 2,447,425. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1,469,301. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 32150000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2806)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 19530000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2807)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 78201921. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2808) (incluye -79 € de redondeo de la nota en miles)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3488000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2809)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 5715000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2810)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 35009000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2811)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 536000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2813)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 2396000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2814)
-2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 478000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2815)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -670,013. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 196,702. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 48,013,871. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 613,289. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 4,217,905. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 2,447,425. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1,469,301. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 32150000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2806)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 19530000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2807)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 78201921. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2808) (incluye -79 € de redondeo de la nota en miles)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3488000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2809)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 5715000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2810)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 35009000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2811)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 536000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2813)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 2396000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2814)
+2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 478000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2815)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
 ```

@@ -2,7 +2,7 @@
 
 Tres cambios en `tools/alta-club.mjs`, más dos módulos nuevos:
 
-- `tools/altas-registro.mjs`: el registro `Admin/altas-club.jsonl`, con huellas y `resumenAltas()`.
+- `tools/altas-registro.mjs`: el registro `Admin/registros/altas-club.jsonl`, con huellas y `resumenAltas()`.
 - `tools/alta-claude.mjs`: Claude por API con cita verificada.
 
 Las reglas están en la cabecera de cada archivo. Este documento guarda **lo que se midió**.
@@ -18,7 +18,7 @@ citas, después `onboard.mjs --quien` y desempataba por país. Ahora usa `clubDe
 - Como ya no se llama a `onboard.mjs` por cada documento, `--todos` tarda **~5 s para 212 carpetas**.
   Antes eran 16 s para 164.
 
-## 2. Registro de altas por script: `Admin/altas-club.jsonl`
+## 2. Registro de altas por script: `Admin/registros/altas-club.jsonl`
 
 Tiene una línea por carpeta, que se **reemplaza** en cada corrida (no se apila). La escribe el
 script en cualquier modo, salvo `--backtest-claude`. Antes de escribir relee el archivo del disco y
@@ -260,7 +260,7 @@ Y después de `printSummary(ledger, 'Estado del inventario');`, en la línea 98,
 `printSummary` final:
 
 ```js
-{ const a = resumenAltas(); if (a.total) console.log(`\nAltas de clubes nuevos (Admin/altas-club.jsonl, ${String(a.fecha).slice(0, 10)}): ${Object.entries(a.porEstado).map(([k, v]) => `${k} ${v}`).join(' · ')}${a.listos.length ? `\n  listos: ${a.listos.map((l) => l.clubId).join(', ')}` : ''}`); }
+{ const a = resumenAltas(); if (a.total) console.log(`\nAltas de clubes nuevos (Admin/registros/altas-club.jsonl, ${String(a.fecha).slice(0, 10)}): ${Object.entries(a.porEstado).map(([k, v]) => `${k} ${v}`).join(' · ')}${a.listos.length ? `\n  listos: ${a.listos.map((l) => l.clubId).join(', ')}` : ''}`); }
 ```
 
 ## 6. Verificación

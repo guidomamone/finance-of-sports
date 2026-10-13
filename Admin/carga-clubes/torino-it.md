@@ -29,7 +29,7 @@ De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   anio               ok        2024 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
   cierre             ok        "2024-12-31" — año del ejercicio + mes de cierre (contenido del .md (131 de 134 fechas de fin de mes caen en el mes 12))
   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
-  perimetro          ok        "individual" — ajuste manual (Admin/ajustes-manuales.jsonl, perimetro-senales 2026-10-06): perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 3 ejerc
+  perimetro          ok        "individual" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-06): perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 3 ejerc
   currency           ok        "EUR" — moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)
   fxRef              ok        "EUR@2024-12-31" — el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2024-12-31 = 0.9626 (Cierre BCE al 31/12/2024 (1 EUR = 1,0389 USD))
   sourceId           ok        "torino-it-bilancio-2024" — clubId + nombre del archivo en slug
@@ -189,7 +189,7 @@ tools/cargar.mjs (2026-10-07)
 ### Meta
 
 ```text
-2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (3.226.978). Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17 = (2.788.248)); la etapa 6 lo sumaba como ingreso (to-do 155)
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (3.226.978). Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17 = (2.788.248)); la etapa 6 lo sumaba como ingreso (to-do 155)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -256,7 +256,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (609.108). el 17) se imprime en positivo y se resta por posición (TOTALE C = 15+16-17 = (108.044), L648); la fila perdió la etiqueta con '17)'
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (609.108). el 17) se imprime en positivo y se resta por posición (TOTALE C = 15+16-17 = (108.044), L648); la fila perdió la etiqueta con '17)'
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -405,7 +405,7 @@ tools/cargar.mjs (2026-10-07)
 ### Meta
 
 ```text
-2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (940.101). Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17); la etapa 6 lo sumaba como ingreso (to-do 155)
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (940.101). Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17); la etapa 6 lo sumaba como ingreso (to-do 155)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -626,7 +626,7 @@ tools/cargar.mjs (2026-10-07)
 ### Meta
 
 ```text
-2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (400.771). Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17); la etapa 6 lo sumaba como ingreso (to-do 155)
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (400.771). Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17); la etapa 6 lo sumaba como ingreso (to-do 155)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 

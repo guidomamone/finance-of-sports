@@ -23,13 +23,13 @@ De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   displayName        ok        "Monza" — nombre de la carpeta del club en Clubes/
   country            ok        "IT" — carpeta de país "Italia" (tabla PAISES)
   reportingCurrency  ok        "EUR" — moneda de curso legal de Italia
-  fiscalYearStart    ok        "01-01" — cierre del ejercicio: ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): Guido 2026-10-06: el ejercicio cierra el 31/12/2022
+  fiscalYearStart    ok        "01-01" — cierre del ejercicio: ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): Guido 2026-10-06: el ejercicio cierra el 31/12/2022
   sport              ok        "futbol" — el .md nombra el fútbol 37 veces y ningún otro deporte más que eso
   brandColor         pendiente (ausente) — la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)
-  anio               ok        2022 — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): Guido 2026-10-06: el ejercicio cierra el 31/12/2022
-  cierre             ok        "2022-12-31" — año del ejercicio + mes de cierre (ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): Guido 2026-10-06: el ejercicio cierra el 31/12/2022
-  reportType         ok        "official_balance_sheet" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): Guido 2026-10-06: balance anual ('Bilancio d'Esercizio al 31 dicembre 2022'); 'semestr
-  perimetro          ok        "individual" — ajuste manual (Admin/ajustes-manuales.jsonl, perimetro-senales 2026-10-06): perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejerc
+  anio               ok        2022 — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): Guido 2026-10-06: el ejercicio cierra el 31/12/2022
+  cierre             ok        "2022-12-31" — año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): Guido 2026-10-06: el ejercicio cierra el 31/12/2022
+  reportType         ok        "official_balance_sheet" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): Guido 2026-10-06: balance anual ('Bilancio d'Esercizio al 31 dicembre 2022'); 'semestr
+  perimetro          ok        "individual" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-06): perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejerc
   currency           ok        "EUR" — moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)
   fxRef              ok        "EUR@2022-12-31" — el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 0.937559. --escribir agrega 'EUR@2022-12-31' a FX_CLOSE
   sourceId           ok        "monza-it-bilancio-2022" — clubId + nombre del archivo en slug
@@ -359,8 +359,8 @@ tools/cargar.mjs (2026-10-07)
 ### Meta
 
 ```text
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): reportType = official_balance_sheet. Guido 2026-10-06: balance anual ('Bilancio d'Esercizio al 31 dicembre 2022'); 'semestre' es un comentario de gestión, no un intermedio
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): cierre = 2022-12-31. Guido 2026-10-06: el ejercicio cierra el 31/12/2022
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): reportType = official_balance_sheet. Guido 2026-10-06: balance anual ('Bilancio d'Esercizio al 31 dicembre 2022'); 'semestre' es un comentario de gestión, no un intermedio
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): cierre = 2022-12-31. Guido 2026-10-06: el ejercicio cierra el 31/12/2022
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 

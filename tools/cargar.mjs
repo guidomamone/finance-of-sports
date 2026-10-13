@@ -16,7 +16,7 @@
 // QUÉ HACE, EN ORDEN (cada paso puede FRENAR; la propuesta junta TODOS los motivos, no solo el primero, para que una sesión vea de una vez
 // qué falta)
 // ----------------------------------------------------------------------------
-//  1. REGISTRO (Admin/transcripciones-estado.jsonl, lo arma tools/inventario-transcripciones.mjs):
+//  1. REGISTRO (Admin/registros/transcripciones-estado.jsonl, lo arma tools/inventario-transcripciones.mjs):
 //       - el PDF tiene que estar `listo-para-jev` (transcripto, validado y con su lista de rubros) y NO `cargado`;
 //       - `periodo.tipo` tiene que ser 'anual' y `periodo.nombreNoCoincide` falso (tools/periodo.mjs): un trimestral o un documento cuyo
 //         nombre dice otro cierre que el contenido no se carga como ejercicio (se junta con los otros períodos, `periodo.mjs --grupos`);
@@ -78,8 +78,8 @@
 // USO
 // ----------------------------------------------------------------------------
 //   node tools/cargar.mjs "<pdf>"                         propuesta en JSON (qué escribiría y por qué frena)
-//        OJO: la propuesta no toca el sitio (data/*.js), pero SÍ escribe, a propósito: en Admin/cola-revision.jsonl (las preguntas de
-//        categoría para Guido, y cierra las ya contestadas para otro año del club), en Admin/categorias-aprendidas.jsonl (copia como
+//        OJO: la propuesta no toca el sitio (data/*.js), pero SÍ escribe, a propósito: en Admin/registros/cola-revision.jsonl (las preguntas de
+//        categoría para Guido, y cierra las ya contestadas para otro año del club), en Admin/registros/categorias-aprendidas.jsonl (copia como
 //        precedente del club las respuestas que Guido ya dio en la cola) y el <doc>.briefing.json de Generados/. Así le hace preguntas el
 //        lote a Guido (lote.mjs, etapa 8). Un ensayo de una sesión deja esos cambios en git status: revisarlos antes de commitear.
 //   node tools/cargar.mjs "<pdf>" --escribir              escribe si no frena; revierte si audit.js da P0/P1
@@ -175,7 +175,7 @@ const CATS = categoriasDelSitio();
 const ladoDeCat = (c) => (CATS.revenue.has(c) ? 'revenue' : CATS.expense.has(c) ? 'expense' : null);
 
 function leerRegistro(root = ROOT) {
-  const p = resolve(root, 'Admin', 'transcripciones-estado.jsonl');
+  const p = resolve(root, 'Admin', 'registros', 'transcripciones-estado.jsonl');
   return existsSync(p) ? readFileSync(p, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];
 }
 function quien(pdf) {
@@ -280,7 +280,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
 
   // ---- 1. registro
   const e = registro.find((x) => x.pdf === pdf);
-  if (!e) { return corta('registro', 'el PDF no está en Admin/transcripciones-estado.jsonl (correr tools/inventario-transcripciones.mjs)'); }
+  if (!e) { return corta('registro', 'el PDF no está en Admin/registros/transcripciones-estado.jsonl (correr tools/inventario-transcripciones.mjs)'); }
   P.md = e.md;
   const reemplaza = REEMPLAZAR && e.cargado;
   if (e.cargado && !REEMPLAZAR) frena('registro', 'el registro dice que el ejercicio ya está cargado en el sitio');
@@ -445,7 +445,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   //   - mientras espera, cuenta en las sumas con la categoría propuesta (las sumas no se rompen) y el documento frena con "N filas esperan
   //     categoría", no con "no cierra";
   //   - la respuesta de Guido gana sobre cualquier otra categoría de esa fila (aceptar -> la propuesta; corregir --valor <categoría> -> esa;
-  //     descartar -> la fila no se carga), y queda en Admin/categorias-aprendidas.jsonl con confianza 1: los años siguientes del mismo club la
+  //     descartar -> la fila no se carga), y queda en Admin/registros/categorias-aprendidas.jsonl con confianza 1: los años siguientes del mismo club la
   //     toman como precedente gratis (memoria-categorias.mjs).
   // `clave` (Versión 374): la etiqueta normalizada, o "etiqueta|lado" para la pregunta propia de una fila cuyo lado contradice la respuesta
   // que ya hay para la etiqueta (ver COMPUERTA DEL LADO abajo).
@@ -523,13 +523,13 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // transporte" es gasto en 2020 y 2023 (nómina) e ingreso en 2021-2024 (de la Dimayor), y "Comisiones" es gasto en 2024 e ingreso en 2025.
     // Si el lado no coincide, la fila sigue por la escalera (y, si no se resuelve, llega a la cola con su propia pregunta).
     // Categoría que trae un ajuste manual (Versión 382: la fila "Diferencia en el documento" de un ajuste `desglose`): escalón 0, gana siempre.
-    if (r.catAjuste && ladoDeCat(r.catAjuste) === r.tside) Object.assign(f, { cat: r.catAjuste, conf: 1, escalon: 0, fuenteCat: 'ajuste manual (Admin/ajustes-manuales.jsonl)', enLista: true });
+    if (r.catAjuste && ladoDeCat(r.catAjuste) === r.tside) Object.assign(f, { cat: r.catAjuste, conf: 1, escalon: 0, fuenteCat: 'ajuste manual (Admin/registros/ajustes-manuales.jsonl)', enLista: true });
     // AJUSTE MANUAL `categoria` (Versión 394; tools/ajustes.mjs): escalón 0, gana sobre todo, también sobre la compuerta del lado (es una
     // decisión explícita de Guido). Si la categoría es del OTRO lado, la fila se muda sin cambiar su efecto en el resultado: un ingreso de
     // 140 pasa a gasto de +140 (ganancia). Caso: Goiás 2023, la venta del 20% de la Liga Forte União como exceptional_items.
     const ajCat = ajustesDe(pdf).find((a) => a.campo === 'categoria' && norm(a.etiqueta) === norm(r.label) && ladoDeCat(a.valor));
     if (ajCat) {
-      Object.assign(f, { cat: ajCat.valor, conf: 1, escalon: 0, fuenteCat: `ajuste manual (Admin/ajustes-manuales.jsonl, ${ajCat.fecha}): ${ajCat.motivo}`, enLista: true, ladoRechazado: false });
+      Object.assign(f, { cat: ajCat.valor, conf: 1, escalon: 0, fuenteCat: `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${ajCat.fecha}): ${ajCat.motivo}`, enLista: true, ladoRechazado: false });
       if (r.tside && ladoDeCat(ajCat.valor) !== r.tside) { f.signoFijo = f.signoFijo !== undefined ? -f.signoFijo : -Math.abs(f.native); f.ladoDoc = ladoDeCat(ajCat.valor); }
     }
     let rg = (r.catAjuste || ajCat) ? null : respuestaCat(r.label, norm(r.label), padreDe(r.origen), r.tside, { familia: !aceptable(f) }); let claveCola = norm(r.label);
@@ -620,7 +620,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
         let tiene = perfil[campo]; if (tiene === undefined || tiene === null) tiene = respPerfil(campo);
         if (tiene === true) ceros.push({ categoria: nombre });
         else if (tiene === undefined || tiene === null) {
-          agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'perfil', detalle: `${clubId}:${campo}`, que: `${pregunta}  (por qué: en ${year} "${nombre}" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/perfil-clubes.jsonl para todos sus años.)`, propuesta: 'responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)' });
+          agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'perfil', detalle: `${clubId}:${campo}`, que: `${pregunta}  (por qué: en ${year} "${nombre}" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)`, propuesta: 'responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)' });
           frena('perfil-en-cola', `"${nombre}" da 0 y el perfil del club no dice si tiene ${campo === 'socios' ? 'socios' : 'otros deportes'}: pregunta en la cola humana (node tools/cola.mjs)`);
         }
       }
@@ -985,7 +985,7 @@ export function escribir(P) {
     const M = E.fiscalYearMeta;
     const fxTxt = M.fxRef ? `fxRef:${js(M.fxRef)}` : M.fx != null ? `fx:${num(M.fx)}, fxSource:${js(M.fxSource)}` : '';
     // AJUSTES MANUALES (Versión 366): lo que Guido forzó para este documento queda a la vista en la evidencia del club, en la meta del año.
-    const ajTxt = (P.ajustes || []).map((a) => `${y}: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, ${a.autor} ${a.fecha}): ${a.campo}${a.valor ? ` = ${a.valor}` : ''}. ${String(a.motivo).replace(/\n/g, ' ')}`);
+    const ajTxt = (P.ajustes || []).map((a) => `${y}: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, ${a.autor} ${a.fecha}): ${a.campo}${a.valor ? ` = ${a.valor}` : ''}. ${String(a.motivo).replace(/\n/g, ' ')}`);
     ev = EV.agregarTexto(ev, y, 'Meta', [...ajTxt, `tools/cargar.mjs (${HOY}). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.`,
       ...(M.incluidoEn ? ['incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.'] : []),
       ...(M.sinDesglose ? ['sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.'] : [])]);
@@ -1104,12 +1104,12 @@ async function main() {
     }
   }
   // ÚLTIMA CORRIDA EN LISTA (Versión 323, pedido de Guido: ver en el tablero por qué frena la etapa 6, por grupo de países): un resumen por
-  // documento en Admin/cargar-ultimo.jsonl (se PISA en cada corrida con --lista; no con un documento suelto ni con --comparar, que es un
+  // documento en Admin/registros/cargar-ultimo.jsonl (se PISA en cada corrida con --lista; no con un documento suelto ni con --comparar, que es un
   // backtest en otro checkout). Lo lee tools/estado.mjs. La propuesta completa sigue yendo a --salida si se la pide.
   if (LISTA && !COMPARAR) {
     const resumen = salidas.map((P) => ({ pdf: P.pdf, clubId: P.clubId || null, year: P.year || null, carga: !P.frena.length, motivos: [...new Set(P.frena.map((f) => f.etapa.replace(/:.*/, '')))], primero: P.frena[0]?.motivo?.slice(0, 200) || null }));
-    writeFileSync(resolve(ROOT, 'Admin', 'cargar-ultimo.jsonl'), resumen.map((x) => JSON.stringify({ ts: new Date().toISOString(), lista: LISTA, ...x })).join('\n') + '\n');
-    console.log(`\n${resumen.filter((x) => x.carga).length} de ${resumen.length} cargarían. Resumen en Admin/cargar-ultimo.jsonl (lo muestra node tools/estado.mjs).`);
+    writeFileSync(resolve(ROOT, 'Admin', 'registros', 'cargar-ultimo.jsonl'), resumen.map((x) => JSON.stringify({ ts: new Date().toISOString(), lista: LISTA, ...x })).join('\n') + '\n');
+    console.log(`\n${resumen.filter((x) => x.carga).length} de ${resumen.length} cargarían. Resumen en Admin/registros/cargar-ultimo.jsonl (lo muestra node tools/estado.mjs).`);
   }
   if ((docs.length === 1 && !LISTA) || JSON_OUT) console.log(JSON.stringify(docs.length === 1 ? salidas[0] : salidas, null, 1));
   if (ESCRIBIR) {

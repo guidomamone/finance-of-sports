@@ -1,5 +1,5 @@
 // ============================================================================
-// tools/altas-registro.mjs — el REGISTRO DE ALTAS: `Admin/altas-club.jsonl`, una línea por carpeta de
+// tools/altas-registro.mjs — el REGISTRO DE ALTAS: `Admin/registros/altas-club.jsonl`, una línea por carpeta de
 // club (`Clubes/<País>/<Club>/`) con qué haría falta para darlo de alta. Lo escribe SOLO
 // tools/alta-club.mjs (cada corrida actualiza las líneas de las carpetas que analizó); lo leen
 // `alta-club.mjs --resumen` / `--dudas` y, a futuro, `pipeline.mjs --resumen` (con `resumenAltas()`).
@@ -43,7 +43,7 @@ import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 
 const ROOT = resolve(import.meta.dirname, '..');
-export const REGISTRO = resolve(ROOT, 'Admin', 'altas-club.jsonl');
+export const REGISTRO = resolve(ROOT, 'Admin', 'registros', 'altas-club.jsonl');
 export const ESTADOS = ['existe', 'listo-para-alta', 'con-preguntas', 'faltan-datos'];
 
 const sha1 = (s) => createHash('sha1').update(s).digest('hex');

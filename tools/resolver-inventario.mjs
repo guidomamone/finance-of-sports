@@ -38,7 +38,7 @@
 //   - RECITATION (Gemini) es permanente para ese documento y sí pasa a Claude.
 //
 // COSTO: nada corre sin --ejecutar. Sin él, es un ensayo (--dry-run implícito) que no llama a ninguna
-// API y estima el costo. Cada corrida real anota en Admin/transcripciones-verificaciones.jsonl qué se
+// API y estima el costo. Cada corrida real anota en Admin/registros/transcripciones-verificaciones.jsonl qué se
 // hizo, qué páginas reemplazó cada motor y cuánto costó.
 //
 // USO:
@@ -70,8 +70,8 @@ const estadoFilter = flagVal('--estado');
 const limit = flagVal('--limit') ? Number(flagVal('--limit')) : Infinity;
 const concurrency = flagVal('--concurrencia') ? Number(flagVal('--concurrencia')) : 1;
 
-const statePath = resolve(root, 'Admin', 'transcripciones-estado.jsonl');
-const verifPath = resolve(root, 'Admin', 'transcripciones-verificaciones.jsonl');
+const statePath = resolve(root, 'Admin', 'registros', 'transcripciones-estado.jsonl');
+const verifPath = resolve(root, 'Admin', 'registros', 'transcripciones-verificaciones.jsonl');
 const TOOL = { mistral: 'tools/mistral-ocr-transcribe.mjs', gemini: 'tools/gemini-transcribe.mjs', claude: 'tools/claude-api-transcribe.mjs' };
 const LOGDIR = { mistral: 'mistral', gemini: 'gemini', claude: 'claude-api' };
 const EST = { mistral: 0.004, gemini: 0.002, claude: 0.02 }; // USD por página, para el ensayo
@@ -767,7 +767,7 @@ function dryRunDoc(e) {
 
 // ---------------------------------------------------------------- main
 const ledger = readJsonl(statePath);
-if (!ledger.length) { console.error('Falta Admin/transcripciones-estado.jsonl: corré primero node tools/inventario-transcripciones.mjs'); process.exit(1); }
+if (!ledger.length) { console.error('Falta Admin/registros/transcripciones-estado.jsonl: corré primero node tools/inventario-transcripciones.mjs'); process.exit(1); }
 const TODO_STATES = new Set(estadoFilter ? [estadoFilter] : ['sin-md', 'sin-tablas', 'revisar', 'pendiente-segunda-voz', 'sin-verificar', 'reintentar']);
 let todo = ledger.filter((e) => !e.cargado && TODO_STATES.has(e.estado)
   && (!dirFilter || e.pdf.startsWith(dirFilter.replace(/\/$/, '') + '/'))

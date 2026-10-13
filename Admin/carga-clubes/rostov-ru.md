@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Rusia/Rostov/bfo-2021-datos.md
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "rostov-ru" — slug de "Rostov" + '-ru' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "AO Football Club Rostov" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social (АО Футбольный клуб «Ростов») seg
+  name               ok        "AO Football Club Rostov" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social (АО Футбольный клуб «Ростов») seg
   displayName        ok        "Rostov" — nombre de la carpeta del club en Clubes/
   country            ok        "RU" — carpeta de país "Rusia" (tabla PAISES)
   reportingCurrency  ok        "RUB" — moneda de curso legal de Rusia

@@ -8,7 +8,7 @@
 // Ocrolus) tienen la revisión humana como una ETAPA NORMAL, ruteada por confianza, y las correcciones vuelven al sistema. Guido lo pidió así:
 // "vos me podés decir 'revisar tal cosa en el PDF y tal otra en el md' y yo abro el PDF por mi cuenta o la transcripción".
 //
-// EL ARCHIVO: Admin/cola-revision.jsonl (trackeado en git: son decisiones de Guido, conocimiento del proyecto). Solo se le AGREGAN líneas:
+// EL ARCHIVO: Admin/registros/cola-revision.jsonl (trackeado en git: son decisiones de Guido, conocimiento del proyecto). Solo se le AGREGAN líneas:
 //   {tipo:'caso', id, ts, pdf, md, etapa, motivo, que, pagina, lineas:[desde,hasta], propuesta, clave}   (pagina = la del visor; al mostrarla
 //                                                                                                     se agrega el número impreso, ver LAS DOS PÁGINAS)
 //   {tipo:'respuesta', id, ts, decision, valor, nota}
@@ -44,7 +44,7 @@ import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 // COLA_ARCHIVO (variable de entorno) apunta a otro archivo: para probar las tools sin ensuciar la cola real.
-export const ARCHIVO = process.env.COLA_ARCHIVO || resolve(ROOT, 'Admin', 'cola-revision.jsonl');
+export const ARCHIVO = process.env.COLA_ARCHIVO || resolve(ROOT, 'Admin', 'registros', 'cola-revision.jsonl');
 const DECISIONES = ['aceptar', 'corregir', 'descartar', 'preguntar-club'];
 
 // RESPUESTAS Y ESTADOS (Versión 350). `resp` tiene SOLO las respuestas de Guido (DECISIONES: aceptar, corregir, descartar,
@@ -160,14 +160,14 @@ export function cerrarObsoletos(pdf, etapa, clavesVigentes) {
 // QUÉ SE CIERRA: solo los casos de 'verificar' (deciden si un año se carga; si ya se cargó, no frenan nada) y los de 'cargar · perimetro' (si
 // el año se cargó, el perímetro ya se decidió). NUNCA 'cargar · categoria' (puede ser una categoría dudosa de un dato ya publicado: contestarla
 // puede cambiar lo que se ve) ni 'cargar · perfil' (es sobre el club, no sobre ese año, y sirve para los años que vienen).
-// "AÑO CARGADO", igual que lote.mjs (Versión 442): el registro (`cargado` en Admin/transcripciones-estado.jsonl) o, si el registro quedó
+// "AÑO CARGADO", igual que lote.mjs (Versión 442): el registro (`cargado` en Admin/registros/transcripciones-estado.jsonl) o, si el registro quedó
 // viejo, el sitio: el club y el año de la última propuesta de carga del documento (`.carga.json`) están en su fiscalYearMeta.
 const cierraSiCargado = (c) => c.etapa === 'verificar' || (c.etapa === 'cargar' && c.motivo === 'perimetro');
 export async function cerrarCargados() {
   const L = leer(); const cand = [...L.casos.values()].filter((c) => pendiente(c, L) && cierraSiCargado(c) && !L.cerrado.has(c.id));
   if (!cand.length) return [];
   const reg = new Map();
-  try { for (const l of readFileSync(resolve(ROOT, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').split('\n')) { if (!l.trim()) continue; const e = JSON.parse(l); reg.set(e.pdf, e); } } catch { /* sin registro: solo el sitio */ }
+  try { for (const l of readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').split('\n')) { if (!l.trim()) continue; const e = JSON.parse(l); reg.set(e.pdf, e); } } catch { /* sin registro: solo el sitio */ }
   let sitio = null; const cerrados = [];
   for (const c of cand) {
     const e = reg.get(c.pdf); let donde = e?.cargado ? 'según el registro' : null;

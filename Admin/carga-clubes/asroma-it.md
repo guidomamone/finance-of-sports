@@ -29,7 +29,7 @@ De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   anio               ok        2022 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
   cierre             ok        "2022-06-30" — año del ejercicio + mes de cierre (contenido del .md (653 de 714 fechas de fin de mes caen en el mes 6))
   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
-  perimetro          ok        "consolidado" — ajuste manual (Admin/ajustes-manuales.jsonl, perimetro-senales 2026-10-06): perimetro-senales.mjs: 3 documento(s) con los dos estados votan consolidad
+  perimetro          ok        "consolidado" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-06): perimetro-senales.mjs: 3 documento(s) con los dos estados votan consolidad
   currency           ok        "EUR" — moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)
   fxRef              ok        "EUR@2022-06-30" — el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2022-06-30 = 0.9627 (Cierre BCE al 30/6/2022 (1 EUR = 1,0387 USD))
   sourceId           ok        "asroma-it-bilancio-2022-consolidato" — clubId + nombre del archivo en slug
@@ -124,8 +124,8 @@ tools/cargar.mjs (2026-10-07)
 ### Meta
 
 ```text
-2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 45.922. resultado neto de la gestión de jugadores, positivo (EBITDA 66.733 = 250.867 - 230.056 + 45.922) (to-do 155/156, arreglo manual 2026-10-07)
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): cierre = 2025-06-30. Claude 2026-10-07: es el BILANCIO 2024-25 (cierre 30/06/2025); periodo.mjs lo leyó como 2024-06-30 (confianza media, el nombre no coincide) y extraer tomó la columna comparativa
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 45.922. resultado neto de la gestión de jugadores, positivo (EBITDA 66.733 = 250.867 - 230.056 + 45.922) (to-do 155/156, arreglo manual 2026-10-07)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): cierre = 2025-06-30. Claude 2026-10-07: es el BILANCIO 2024-25 (cierre 30/06/2025); periodo.mjs lo leyó como 2024-06-30 (confianza media, el nombre no coincide) y extraer tomó la columna comparativa
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -406,8 +406,8 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 36.125. gestión de jugadores en bruto (ingresos y gastos por separado), como AS Roma 2018/2019/2022/2025; el estado la imprime como renglones sin lado
-2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (37.323). gestión de jugadores en bruto (gastos), ver el anterior
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 36.125. gestión de jugadores en bruto (ingresos y gastos por separado), como AS Roma 2018/2019/2022/2025; el estado la imprime como renglones sin lado
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (37.323). gestión de jugadores en bruto (gastos), ver el anterior
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -605,11 +605,11 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 225. el resultado impreso es el del Gruppo (25.498); el consolidado (25.723) incluye la pérdida de terzi; se suma del lado financiero para no inflar ingresos (to-do 155/156, arreglo manual 2026-10-07)
-2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 0. el total se contaba como una línea más; los costos son sus renglones + Ammortamenti (L1920) y Accantonamenti (L1921), impresos fuera del total (to-do 156, arreglo manual 2026-10-07)
-2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 82. la variación de existencias (82) reduce costos; los gastos se toman en valor absoluto, así que va del lado de ingresos con el mismo efecto en el resultado (arreglo manual 2026-10-07; to-do 156)
-2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 69.561. Guido 2026-10-07: gestión de jugadores en bruto (Proventi de la nota 30), como 2019, 2022 y 2025
-2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (23.639). Guido 2026-10-07: gestión de jugadores en bruto (Oneri de la nota 30)
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 225. el resultado impreso es el del Gruppo (25.498); el consolidado (25.723) incluye la pérdida de terzi; se suma del lado financiero para no inflar ingresos (to-do 155/156, arreglo manual 2026-10-07)
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 0. el total se contaba como una línea más; los costos son sus renglones + Ammortamenti (L1920) y Accantonamenti (L1921), impresos fuera del total (to-do 156, arreglo manual 2026-10-07)
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 82. la variación de existencias (82) reduce costos; los gastos se toman en valor absoluto, así que va del lado de ingresos con el mismo efecto en el resultado (arreglo manual 2026-10-07; to-do 156)
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 69.561. Guido 2026-10-07: gestión de jugadores en bruto (Proventi de la nota 30), como 2019, 2022 y 2025
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (23.639). Guido 2026-10-07: gestión de jugadores en bruto (Oneri de la nota 30)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -964,8 +964,8 @@ tools/cargar.mjs (2026-10-09)
 ### Meta
 
 ```text
-2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (221). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): diferencia entre el consolidado (58.253) y el resultado del Gruppo (58.474): resta; criterio de Roma 2018
-2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 9.060. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la gestión de jugadores sale neta en el estado y se carga neta como ingreso, igual que Roma 2009 y 2013 a 2017 (el vecino 2013 usa el mismo régimen)
+2012: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (221). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): diferencia entre el consolidado (58.253) y el resultado del Gruppo (58.474): resta; criterio de Roma 2018
+2012: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 9.060. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la gestión de jugadores sale neta en el estado y se carga neta como ingreso, igual que Roma 2009 y 2013 a 2017 (el vecino 2013 usa el mismo régimen)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -1211,10 +1211,10 @@ tools/cargar.mjs (2026-10-09)
 ### Meta
 
 ```text
-2007: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): el total impreso (122.064) se contaba además de sus renglones; sale la fila (como Roma 2018)
-2007: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 238. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la variación de existencias (+238) reduce costos; los gastos van en absoluto, se resta poniéndola como ingreso (criterio de Roma 2018)
-2007: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (164). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): diferencia entre el consolidado 14.175 y el Gruppo 14.011: resta
-2007: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 4.428. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la gestión de jugadores sale neta en el estado y se carga neta como ingreso (criterio de Roma 2009 y 2013 a 2017); con ella el ingreso de 2007 (162.017) coincide con la columna 2007 del documento de 2008
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): el total impreso (122.064) se contaba además de sus renglones; sale la fila (como Roma 2018)
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 238. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la variación de existencias (+238) reduce costos; los gastos van en absoluto, se resta poniéndola como ingreso (criterio de Roma 2018)
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (164). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): diferencia entre el consolidado 14.175 y el Gruppo 14.011: resta
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 4.428. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la gestión de jugadores sale neta en el estado y se carga neta como ingreso (criterio de Roma 2009 y 2013 a 2017); con ella el ingreso de 2007 (162.017) coincide con la columna 2007 del documento de 2008
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -1428,10 +1428,10 @@ tools/cargar.mjs (2026-10-09)
 ### Meta
 
 ```text
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 557. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 32. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 401. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)
-2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = (547). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 557. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 32. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 401. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)
+2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = (547). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 

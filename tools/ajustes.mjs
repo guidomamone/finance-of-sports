@@ -61,7 +61,7 @@
 //                     Casos: Fortaleza CEIF 2017, nota 23 "Otros gastos" 41.780 perdida en un salto de página, y "Total Otros Ingresos"
 //                     3.581 que en el PDF rotula los costos financieros (etiquetas cruzadas en el propio documento).
 //
-// ARCHIVO: Admin/ajustes-manuales.jsonl, una línea por ajuste: { pdf, campo, valor, motivo, evidencia, autor, fecha }. Si hay dos para el
+// ARCHIVO: Admin/registros/ajustes-manuales.jsonl, una línea por ajuste: { pdf, campo, valor, motivo, evidencia, autor, fecha }. Si hay dos para el
 // mismo pdf y campo (y etiqueta, en `fila`), gana el último (para cambiar uno se agrega otro; el historial queda).
 //
 // USO:
@@ -77,7 +77,7 @@ import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
-const ARCHIVO = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl');
+const ARCHIVO = resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl');
 export const CAMPOS = ['no-recargar', 'filas-a-mano', 'estado', 'resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
@@ -178,7 +178,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`Ajuste guardado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${a.etiqueta ? ` "${a.etiqueta}" (${a.lado})` : ''}${a.valor ? ` = ${a.valor}` : ''}. Lo toma la próxima corrida de verificar.mjs.`);
   } else {
     const vigentes = [...new Set(leer().map((a) => a.pdf))].flatMap((p) => ajustesDe(p));
-    console.log(`AJUSTES MANUALES (${vigentes.length}) — Admin/ajustes-manuales.jsonl\n`);
+    console.log(`AJUSTES MANUALES (${vigentes.length}) — Admin/registros/ajustes-manuales.jsonl\n`);
     // Al lado de cada documento con `resultado-final`, el IMPUESTO que calculó verificar.mjs por diferencia (Versión 372, pedido de Guido): el
     // ajuste no tiene compuerta, así que un error en las filas termina en el impuesto. Fortaleza 2018 daba 248.440 sobre una pérdida antes de
     // impuestos (un costo financiero sumado como ingreso); con el signo bien, 40.604, y el documento imprime 40.612.

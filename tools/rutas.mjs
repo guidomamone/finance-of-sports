@@ -17,7 +17,7 @@
 // (`.mistral-redo.md`, `.gemini-check.md`, `.claude-check.md`: resolver-inventario.mjs los reusa si existen) o EVIDENCIA de una corrección
 // (`.previo-*.md`: lo que había antes de que el resolver reemplazara páginas). Nunca se borran.
 //
-// COMPATIBILIDAD: el historial (Admin/transcripciones-verificaciones.jsonl, solo se agrega) guarda rutas viejas ("Clubes/.../x.previo-
+// COMPATIBILIDAD: el historial (Admin/registros/transcripciones-verificaciones.jsonl, solo se agrega) guarda rutas viejas ("Clubes/.../x.previo-
 // mistral.md"). `ubicar(ruta)` traduce cualquier ruta vieja de un derivado a su lugar nuevo; los lectores la usan en vez de la ruta cruda.
 //
 // USO:

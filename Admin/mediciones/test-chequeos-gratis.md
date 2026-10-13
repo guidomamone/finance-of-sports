@@ -28,7 +28,7 @@ una cifra casi igual a una del PDF, que es la firma de una lectura mal hecha).
 ## Cómo se midió
 
 - **Base**: los 104 documentos que el resolver ya resolvió (último registro por `md` en
-  `Admin/transcripciones-verificaciones.jsonl` con `resolucion` y `previo` en disco): 3.134 páginas, **$38,98 registrados**.
+  `Admin/registros/transcripciones-verificaciones.jsonl` con `resolucion` y `previo` en disco): 3.134 páginas, **$38,98 registrados**.
 - **Entrada de la cascada** = lo que el resolver tenía en la mano: `previo-mistral` (67), `previo-legado` (21), `.mistral-redo.md`
   cuando el resolver rehízo el .md con Mistral (15), `previo-gemini` (1). **Verdad** = el `.md` corregido de hoy.
 - **Error real** en una página = una cifra de >= 4 dígitos de la entrada que el `.md` actual no tiene, **emparejada** con una cifra

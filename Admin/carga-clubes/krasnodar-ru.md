@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Rusia/Krasnodar/bfo-2021-datos.md
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "krasnodar-ru" — slug de "Krasnodar" + '-ru' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "OOO Football Club Krasnodar" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social (ООО «Футбольный клуб «Краснодар»
+  name               ok        "OOO Football Club Krasnodar" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social (ООО «Футбольный клуб «Краснодар»
   displayName        ok        "Krasnodar" — nombre de la carpeta del club en Clubes/
   country            ok        "RU" — carpeta de país "Rusia" (tabla PAISES)
   reportingCurrency  ok        "RUB" — moneda de curso legal de Rusia

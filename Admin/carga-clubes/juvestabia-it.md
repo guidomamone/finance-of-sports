@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "juvestabia-it" — slug de "Juve Stabia" + '-it' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "Società Sportiva Juve Stabia S.r.l." — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): Claude 2026-10-08 (revisión Sonnet de las altas de Italia): el script propuso 'Sportiv
+  name               ok        "Società Sportiva Juve Stabia S.r.l." — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): Claude 2026-10-08 (revisión Sonnet de las altas de Italia): el script propuso 'Sportiv
   displayName        ok        "Juve Stabia" — nombre de la carpeta del club en Clubes/
   country            ok        "IT" — carpeta de país "Italia" (tabla PAISES)
   reportingCurrency  ok        "EUR" — moneda de curso legal de Italia

@@ -67,4 +67,4 @@ La página `parmacalcio1913.com/informativa-finanziaria-parma-calcio-1913/` (ví
 
 ## Tramo que falta buscar (balance parcial, to-do 190, 2026-10-09)
 
-`Parma-bilancio-31.12.2020-individual.pdf` cubre 2020-09-01 a 2020-12-31 (4 meses). Falta el ejercicio anterior (el que cierra en 2020 antes del 1/9, a confirmar su fecha de cierre) para armar el año calendario 2020. Está en `Admin/documentos-parciales.txt`; cómo se juntan los tramos: `Admin/CONVENCIONES-DATOS.md`.
+`Parma-bilancio-31.12.2020-individual.pdf` cubre 2020-09-01 a 2020-12-31 (4 meses). Falta el ejercicio anterior (el que cierra en 2020 antes del 1/9, a confirmar su fecha de cierre) para armar el año calendario 2020. Está en `Admin/registros/documentos-parciales.txt`; cómo se juntan los tramos: `Admin/CONVENCIONES-DATOS.md`.

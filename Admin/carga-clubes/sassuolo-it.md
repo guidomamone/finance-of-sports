@@ -29,7 +29,7 @@ De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   anio               ok        2025 — nombre del archivo (misma regla que onboard.mjs --quien)
   cierre             ok        "2025-12-31" — año del ejercicio + mes de cierre (los demás .md del club (1 de 1 documentos cierran en el mes 12); este documento no alcanza solo)
   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
-  perimetro          ok        "individual" — ajuste manual (Admin/ajustes-manuales.jsonl, perimetro-senales 2026-10-06): perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 6 ejerc
+  perimetro          ok        "individual" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-06): perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 6 ejerc
   currency           ok        "EUR" — moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)
   fxRef              ok        "EUR@2025-12-31" — el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-12-31 = 0.8511 (Cierre BCE al 31/12/2025 (1 EUR = 1,1750 USD))
   sourceId           ok        "sassuolo-it-bilancio-2025" — clubId + nombre del archivo en slug
@@ -123,10 +123,10 @@ tools/cargar.mjs (2026-10-07)
 ### Meta
 
 ```text
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 34.086.540. Guido 2026-10-07: el estado agrupa la TV en "a) Derivanti da attività accessorie" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 16.205.000. Guido 2026-10-07: el estado agrupa la TV en "a) Derivanti da attività accessorie" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): categoria = broadcasting. Guido 2026-10-07: el estado agrupa la TV en "a) Derivanti da attività accessorie" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo,
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): categoria = other_income. Guido 2026-10-07: el estado agrupa la TV en "a) Derivanti da attività accessorie" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 34.086.540. Guido 2026-10-07: el estado agrupa la TV en "a) Derivanti da attività accessorie" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 16.205.000. Guido 2026-10-07: el estado agrupa la TV en "a) Derivanti da attività accessorie" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): categoria = broadcasting. Guido 2026-10-07: el estado agrupa la TV en "a) Derivanti da attività accessorie" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo,
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): categoria = other_income. Guido 2026-10-07: el estado agrupa la TV en "a) Derivanti da attività accessorie" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -195,7 +195,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2024-12-31. Bilancio al 31 dicembre 2024
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2024-12-31. Bilancio al 31 dicembre 2024
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -263,7 +263,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2023-12-31. Bilancio al 31 dicembre 2023 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2023-12-31. Bilancio al 31 dicembre 2023 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -331,7 +331,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2022-12-31. Bilancio al 31 dicembre 2022 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2022-12-31. Bilancio al 31 dicembre 2022 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -398,7 +398,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2021-12-31. Bilancio al 31 dicembre 2021
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2021-12-31. Bilancio al 31 dicembre 2021
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -465,7 +465,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2020-12-31. Bilancio al 31 dicembre 2020 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2020-12-31. Bilancio al 31 dicembre 2020 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -534,7 +534,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2019-12-31. Bilancio al 31 dicembre 2019 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2019-12-31. Bilancio al 31 dicembre 2019 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -602,7 +602,7 @@ tools/cargar.mjs (2026-10-09)
 ### Meta
 
 ```text
-2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2018-12-31. Bilancio al 31 dicembre 2018 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2018-12-31. Bilancio al 31 dicembre 2018 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 

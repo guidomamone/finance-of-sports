@@ -29,7 +29,7 @@ De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   anio               ok        2025 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
   cierre             ok        "2025-06-30" — año del ejercicio + mes de cierre (contenido del .md (368 de 391 fechas de fin de mes caen en el mes 6))
   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
-  perimetro          ok        "consolidado" — ajuste manual (Admin/ajustes-manuales.jsonl, perimetro-senales 2026-10-06): perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 5 ejerc
+  perimetro          ok        "consolidado" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-06): perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 5 ejerc
   currency           ok        "EUR" — moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)
   fxRef              ok        "EUR@2025-06-30" — el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))
   sourceId           ok        "inter-it-fascicolo-bilancio-consolidato-2024-25" — clubId + nombre del archivo en slug
@@ -108,7 +108,7 @@ tools/cargar.mjs (2026-10-07)
 ### Meta
 
 ```text
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 780.928. D) 18) rettifiche: la fila no se extrajo (to-do 155). Sin reemplaza: la toma el escalón 'ajustes del financiero sin reemplaza' de verificar.mjs (to-do 156 B), ya no hace falta --reemplaza-linea
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 780.928. D) 18) rettifiche: la fila no se extrajo (to-do 155). Sin reemplaza: la toma el escalón 'ajustes del financiero sin reemplaza' de verificar.mjs (to-do 156 B), ya no hace falta --reemplaza-linea
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -402,7 +402,7 @@ tools/cargar.mjs (2026-10-07)
 ### Meta
 
 ```text
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 521.197. D) rettifiche quedaban sin lado (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 521.197. D) rettifiche quedaban sin lado (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -505,8 +505,8 @@ tools/cargar.mjs (2026-10-09)
 ### Meta
 
 ```text
-2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): resultado-final = (245.579.264). Claude 2026-10-08 (Guido: to-do 179, ok): el resultado impreso quedó afuera de las filas; cierra exacto con los totales impresos (364.712.220 - 568.782.409 - 33.431.112 - 1.972.728 - 6.105.235)
-2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (1.972.728). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la sección D (19 impairment of investments, 1.972.728 impreso en negativo) no entró en el financiero: el impuesto deducido daba 8,08 M contra 6,105 M impresos (current 4.009.004 + deferred -3.805 + 2.100.036)
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): resultado-final = (245.579.264). Claude 2026-10-08 (Guido: to-do 179, ok): el resultado impreso quedó afuera de las filas; cierra exacto con los totales impresos (364.712.220 - 568.782.409 - 33.431.112 - 1.972.728 - 6.105.235)
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (1.972.728). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la sección D (19 impairment of investments, 1.972.728 impreso en negativo) no entró en el financiero: el impuesto deducido daba 8,08 M contra 6,105 M impresos (current 4.009.004 + deferred -3.805 + 2.100.036)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -611,7 +611,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): resultado-final = (102.393.789). el estado cortó en b12 y el resultado impreso (L912 y L918) quedó afuera; cierra exacto con los totales impresos (372.370.111 − 443.923.801 − 26.213.126 + 529.404 − 5.156.377)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): resultado-final = (102.393.789). el estado cortó en b12 y el resultado impreso (L912 y L918) quedó afuera; cierra exacto con los totales impresos (372.370.111 − 443.923.801 − 26.213.126 + 529.404 − 5.156.377)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -702,7 +702,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 7.147.379. Claude 2026-10-08 (Guido: a mano): el renglón 4) del estado (L795, ingreso 7.147.379) se queda entero: la nota b41 (L2307-L2314) explica los costos que se capitalizan (entrenadores, pensionato, instalaciones) y no es un desglose de ingreso; sin esto sus filas quedaban como gastos y el resultado no cerraba (−62,68 M contra −48,39 M impreso)
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 7.147.379. Claude 2026-10-08 (Guido: a mano): el renglón 4) del estado (L795, ingreso 7.147.379) se queda entero: la nota b41 (L2307-L2314) explica los costos que se capitalizan (entrenadores, pensionato, instalaciones) y no es un desglose de ingreso; sin esto sus filas quedaban como gastos y el resultado no cerraba (−62,68 M contra −48,39 M impreso)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 

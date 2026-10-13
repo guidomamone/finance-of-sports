@@ -35,7 +35,7 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
    corre lo mismo con `caffeinate -i` y `--ejecutar`. `--max-paginas 0` incluye los PDFs de más de 100 páginas (sin él quedan para el
    final). El costo es el del ensayo (cuenta páginas); el de `estado.mjs` es fijo por documento y subestima los PDFs largos.
 2. Armar la lista (`Admin/lotes/lote-NN.txt`). Con un club de varios años: todos los años de la etapa más baja juntos. Un documento sin
-   estado de resultados (informe del auditor, memoria sola) no va a la lista: se le propone a Guido para `Admin/documentos-descartados.txt`
+   estado de resultados (informe del auditor, memoria sola) no va a la lista: se le propone a Guido para `Admin/registros/documentos-descartados.txt`
    (el lote los saltea) y entra ahí solo con su ok. Antes de crear la lista, `ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -3` y tomar el
    número siguiente; nunca reusar uno. Al cerrar un lote, su lista va a `Admin/Archive/lotes/`.
 3. Club nuevo: fijar perímetro y cierre (`node tools/ajustes.mjs`) antes del primer lote, para no pagar dos veces la localización.
@@ -111,7 +111,7 @@ scratchpad con copia de seguridad de `Admin/` y se restaura.
 - `git status` se ensucia solo mientras Guido corre lotes (logs en `Admin/`, `.md` en `Clubes/`, y los `.json` de `Generados/`):
   revisar antes de commitear; los de `Generados/` van con los logs.
 - `estado.mjs` mientras corre un lote muestra una foto a mitad de camino.
-- Los ensayos no llaman a ninguna API, pero reescriben el registro (`Admin/transcripciones-estado.jsonl`) y la lista temporal de la
+- Los ensayos no llaman a ninguna API, pero reescriben el registro (`Admin/registros/transcripciones-estado.jsonl`) y la lista temporal de la
   corrida: que aparezcan en `git status` después de un ensayo no quiere decir que algo cambió de verdad.
 - Los "Syntax Error" en la terminal son de poppler leyendo PDFs dañados: no son errores del pipeline.
 - Para esperar un proceso en segundo plano, usar su PID, no `pgrep -f` (se encuentra a sí mismo y no termina nunca).

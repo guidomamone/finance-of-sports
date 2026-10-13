@@ -7,7 +7,7 @@
 // el resolver volvía a revisar todas. Caso: Juventus 2021-22. El 10-03 el resolver le pagó a Claude 17 páginas (US$ 1,13); el 10-04 se
 // rearmaron las págs. 92, 93 y 100 con el texto propio del PDF, y el resolver volvió a pagar las MISMAS 17 páginas más la 233 (US$ 1,02).
 //
-// QUÉ GUARDA: el resolver (resolver-inventario.mjs) escribe en su línea de Admin/transcripciones-verificaciones.jsonl `paginasSha`:
+// QUÉ GUARDA: el resolver (resolver-inventario.mjs) escribe en su línea de Admin/registros/transcripciones-verificaciones.jsonl `paginasSha`:
 // { "<n>": sha1 del cuerpo de la página n }. Una validación vieja no lo tiene: se comporta como antes (la primera vez nada se reusa).
 //
 // QUIÉN LO USA:
@@ -22,7 +22,7 @@ import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 
 const ROOT = resolve(import.meta.dirname, '..');
-const VERIF = resolve(ROOT, 'Admin', 'transcripciones-verificaciones.jsonl');
+const VERIF = resolve(ROOT, 'Admin', 'registros', 'transcripciones-verificaciones.jsonl');
 
 // El .md partido por sus marcas "--- pág. N ---" (lo que estaba antes de la primera marca queda en `pre`). Era de resolver-inventario.mjs.
 export function splitPages(text) {

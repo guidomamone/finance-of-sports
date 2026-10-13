@@ -23,11 +23,11 @@ node tools/gasto-doc.mjs --lista <lista> --desde <ISO> [--hasta <ISO>]       # l
 ```
 
 `lote.mjs` corre las etapas 3 a 8 sobre una lista chica.
-- El registro (`Admin/transcripciones-estado.jsonl`) se recalcula entero en ~1 min (12.184 PDFs, sobre todo `onboard.mjs --all` para saber
+- El registro (`Admin/registros/transcripciones-estado.jsonl`) se recalcula entero en ~1 min (12.184 PDFs, sobre todo `onboard.mjs --all` para saber
   qué está cargado). `pipeline.mjs` con `--lista`/`--dir` y `lote.mjs` recalculan solo su lista (`--solo`, ~1 s) y copian las demás
   líneas; el recálculo entero queda para `estado.mjs --actualizar` y las corridas sin alcance. Medido: el registro sale idéntico.
 - Un solo proceso a la vez escribiendo el registro: `lote.mjs` y `pipeline.mjs` (también en ensayo) y `cargar.mjs --escribir` toman el
-  mismo candado (`Admin/.candado.lock`, `tools/candado.mjs`). Si otro lo tiene, sale sin hacer nada y dice cuál; si quedó el de uno que
+  mismo candado (`Admin/registros/.candado.lock`, `tools/candado.mjs`). Si otro lo tiene, sale sin hacer nada y dice cuál; si quedó el de uno que
   se cortó (Ctrl+C, terminal cerrada), lo avisa y lo reemplaza.
 - Lo que ya está hecho no se repite (queda en `Generados/`, que se respalda en git). Si el .md cambió desde extraer (`cache-al-dia.mjs`:
   misma huella, o cada fila sigue en su línea), un año sin cargar se rehace y uno cargado solo avisa.
@@ -419,7 +419,7 @@ Mitigaciones:
                   precedente.
 ```
 - En el lote es propuesta; con `lote.mjs --ejecutar --cargar` (o `node tools/cargar-lote.mjs --lista <lista> [--escribir]`) lo que quedó
-  "listo para cargar" se escribe solo (Versión 642): alta del club nuevo si el registro de altas lo da listo y `Admin/altas-revision.jsonl`
+  "listo para cargar" se escribe solo (Versión 642): alta del club nuevo si el registro de altas lo da listo y `Admin/registros/altas-revision.jsonl`
   tiene su color, `cargar.mjs --escribir` con su auditoría, y un commit por año (el alta en el del primer año). Si ningún año de un club
   nuevo escribe, el alta se revierte. Exige `data/`, `index.html` y `fuentes/` sin cambios al empezar. Sin push.
 - Escribir: `cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año; después `caja-deuda.mjs --club <id> [--ejecutar] --escribir`.
@@ -495,7 +495,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 
 ### Perfil de cada club
 
-- Archivo `Admin/perfil-clubes.jsonl`, se lee con `node tools/perfil-clubes.mjs [clubId]`.
+- Archivo `Admin/registros/perfil-clubes.jsonl`, se lee con `node tools/perfil-clubes.mjs [clubId]`.
 - Dos datos por club: ¿tiene socios que pagan cuota?, ¿tiene otros deportes en sus estados financieros? Sí, no o no se sabe, con evidencia.
 - Hoy: los 66 clubes sudamericanos (armado por un subagente con lo cargado y las transcripciones). Socios: 49 sí, 11 no, 6 no se sabe.
   Otros deportes: 31 sí, 25 no, 10 no se sabe. Criterio aceptado por Guido: "clube social e esportes amadores" que además nombra básquet,
@@ -505,7 +505,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 
 ### Ajustes manuales (Versión 366)
 
-- `Admin/ajustes-manuales.jsonl`, se lee y se agrega con `node tools/ajustes.mjs`. Una decisión de Guido atada al documento y al campo
+- `Admin/registros/ajustes-manuales.jsonl`, se lee y se agrega con `node tools/ajustes.mjs`. Una decisión de Guido atada al documento y al campo
   (`no-recargar` (`cargar.mjs` frena aunque sea con `--reemplazar`: lo publicado es mejor que una corrida nueva; Versión 637, Lazio 2012-13 y Roma 2021), `filas-a-mano` (`localizar.mjs` y `extraer.mjs` no pisan la ubicación ni las filas armadas a mano, ni con `--rehacer`; Versión 614), `estado` (los bloques del estado de resultados, escalón 0 de `localizar.mjs`; Versión 614, AS Roma 2005), `resultado-final`, `sin-dudas`, `fila`, `fx`, `cero-real`, `desglose`, `categoria`, `perimetro` — este también para todo el club —, `cierre`, `reportType`, `confirmado`, `caja`, `deuda-incluye` — este también para todo el club); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
 - `fila` saca la fila que trajo mal la extracción con `--reemplaza "<etiqueta>"` (TODAS las que se llaman así) o `--reemplaza-linea N`
   (SOLO la de esa línea del .md, o las hojas de su nota si estaba abierta). Con etiquetas repetidas (en el formato italiano "altri" es
@@ -514,7 +514,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 
 ### Cola humana
 
-- Archivo: `Admin/cola-revision.jsonl`. Se lee con `node tools/cola.mjs`.
+- Archivo: `Admin/registros/cola-revision.jsonl`. Se lee con `node tools/cola.mjs`.
 - Una duda por tema (escala, perímetro, cuadro duplicado...) contestada para el club vale para todos sus años, también si se contestó antes
   del alta del club (la clave llevaba el nombre de la carpeta y ahora lleva el id del sitio; to-do 153).
 - Cada caso es una **pregunta de sí o no**, con la propuesta del sistema, la página del visor y la impresa, y las líneas del .md.
@@ -532,7 +532,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
   contestó en cualquier año del club, se aplica sola.
 - Qué entra: números no confirmados que no cierran, totales o resultado que no cierran, año vecino distinto, primer año sin vecino, dudas de
   localizar y de extraer que afectan la carga, y filas con categoría menor a 0,80 (etapa 8).
-- Una respuesta de categoría queda como precedente del club para los años siguientes (`Admin/categorias-aprendidas.jsonl`).
+- Una respuesta de categoría queda como precedente del club para los años siguientes (`Admin/registros/categorias-aprendidas.jsonl`).
 - Cómo la resuelve Guido (2026-10-05): con un subagente (Sonnet) que resume los casos; no hace falta ordenarla ni otra vista.
 
 ---

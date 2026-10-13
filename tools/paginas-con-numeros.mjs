@@ -11,7 +11,7 @@
 // LA MEDICIÓN (Admin/mediciones/test-seleccion-paginas.md tiene la tabla completa y los casos que se pierden)
 // ----------------------------------------------------------------------------------------------------------------------------------
 // Dos "verdades", las dos gratis y ya en el repo:
-//   A) 222 ejercicios YA CARGADOS en producción (Admin/transcripciones-estado.jsonl, cargado:true, sin memorias ni presupuestos),
+//   A) 222 ejercicios YA CARGADOS en producción (Admin/registros/transcripciones-estado.jsonl, cargado:true, sin memorias ni presupuestos),
 //      10.956 páginas. "Página útil" = página del .md que contiene >= 2 importes de ese club-año tal como están en data/*-data.js
 //      (a escala 1, 1e3 o 1e6). 1.121 páginas útiles, 4.103 importes distintos encontrados en algún lado del .md.
 //   B) 420 `Clubes/**/*.rubros.json` con `page` por rubro: 15.858 páginas, 2.173 páginas con rubros, 20.407 rubros.

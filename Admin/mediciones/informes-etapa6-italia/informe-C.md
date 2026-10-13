@@ -51,7 +51,7 @@ Cuenta de cierre: ingresos 359,264354 − gastos 242,559928 = 116,704426 (= L? A
 ## Parma 2024 individual — 36a3982, 6573d39, 7b237fe
 | caso | respuesta | evidencia |
 |---|---|---|
-| 36a3982 anio-vecino 2023 | `aceptar` (falsa alarma) | col. 2023 de este documento: Totale valore produzione 28.891.375 (L536); el sitio ya tiene 2023 = 28.891.375 (chequeo "año anterior cargado" ok). El 54.231102 del documento 2023 = 28,891375 + 25,339727 ("altri" L557 contado dos veces), que el ajuste fila de Admin/ajustes-manuales.jsonl (L557 → 0, reemplazaLinea) ya corrige en el 2023 cargado |
+| 36a3982 anio-vecino 2023 | `aceptar` (falsa alarma) | col. 2023 de este documento: Totale valore produzione 28.891.375 (L536); el sitio ya tiene 2023 = 28.891.375 (chequeo "año anterior cargado" ok). El 54.231102 del documento 2023 = 28,891375 + 25,339727 ("altri" L557 contado dos veces), que el ajuste fila de Admin/registros/ajustes-manuales.jsonl (L557 → 0, reemplazaLinea) ya corrige en el 2023 cargado |
 | 6573d39 no-cierra "documento del año 2023" | `aceptar` (mismo motivo) | idem; el 2023 .verificacion.json dice ingresos 28,891375 |
 | 7b237fe ¿impuesto L570 como ingreso 961.793? | `aceptar` | pág. 16 del visor, L570-572: "proventi (oneri) da adesione al regime di consolidato fiscale 961.793" positivo = provento; Totale imposte (961.793) entre paréntesis = costo negativo; (64.376.270) + 961.793 = (63.414.477) = L572 ✓. Cierra "como impresos" |
 Por qué falló: verificar.mjs, compararVecino: compara la columna con las filas CRUDAS del documento vecino, sin aplicar los ajustes `fila` de ese documento. Para 7b237fe: duda de signo que la suma ya confirma (resultado cierra).

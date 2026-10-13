@@ -8,7 +8,7 @@
 // el `.categorias.json` de ese documento (Generados/) y nadie lo volvía a leer: el año siguiente del mismo club pagaba a Claude por el
 // mismo rubro otra vez.
 //
-// EL ARCHIVO: Admin/categorias-aprendidas.jsonl (trackeado en git: es conocimiento, no un derivado). Una línea por rubro que Claude
+// EL ARCHIVO: Admin/registros/categorias-aprendidas.jsonl (trackeado en git: es conocimiento, no un derivado). Una línea por rubro que Claude
 // categorizó con confianza >= 0,80 (MIN_REGISTRO), con: club, año, lado, rubro, glosa, categoría, confianza, motivo, modelo, documento.
 // La última respuesta para el mismo (club, lado, rubro) reemplaza a las anteriores al leer.
 //
@@ -33,7 +33,7 @@ import { normalizar } from './vocabulario.mjs';
 import { clubDeRuta } from './carpetas-clubes.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
-export const ARCHIVO = resolve(ROOT, 'Admin', 'categorias-aprendidas.jsonl');
+export const ARCHIVO = resolve(ROOT, 'Admin', 'registros', 'categorias-aprendidas.jsonl');
 export const MIN_REGISTRO = 0.8;
 export const MIN_PRECEDENTE = 0.9;
 // EL RENGLÓN QUE DESGLOSA (padre, Versión 343: escalón "precedente con contexto" de la etapa 7, diseño aprobado por Guido). La misma etiqueta

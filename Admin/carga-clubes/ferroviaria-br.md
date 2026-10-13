@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Brasil/Ferroviaria/balanco-2010.pdf
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "ferroviaria-br" — slug de "Ferroviaria" + '-br' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "Ferroviária Futebol S.A." — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Fe
+  name               ok        "Ferroviária Futebol S.A." — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Fe
   displayName        ok        "Ferroviaria" — nombre de la carpeta del club en Clubes/
   country            ok        "BR" — carpeta de país "Brasil" (tabla PAISES)
   reportingCurrency  ok        "BRL" — moneda de curso legal de Brasil
@@ -29,7 +29,7 @@ De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   anio               ok        2010 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
   cierre             ok        "2010-12-31" — año del ejercicio + mes de cierre (contenido del .md (26 de 26 fechas de fin de mes caen en el mes 12))
   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
-  perimetro          ok        "individual" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): una sola sociedad (CNPJ 06.020.811/0001-30, Fe
+  perimetro          ok        "individual" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): una sola sociedad (CNPJ 06.020.811/0001-30, Fe
   currency           ok        "BRL" — moneda de curso legal de Brasil (tabla PAISES de alta-club.mjs)
   fxRef              ok        "BRL@2010-12-31" — el documento no declara tipo de cambio; FX_CLOSE ya tiene BRL@2010-12-31 = 1.6662 (PTAX de cierre (venda) del Banco Central do Brasil al 2010-12-31)
   sourceId           ok        "ferroviaria-br-balanco-2010" — clubId + nombre del archivo en slug
@@ -114,7 +114,7 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -182,7 +182,7 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -235,7 +235,7 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
@@ -295,10 +295,10 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): filas-a-mano. Onboarding to-do 165 (Claude en sesión, 2026-10-09, pedido de Guido): extraer.mjs cortó por el tope de salida (balancete de ~580 cuentas, to-do 197); .filas.json armado a mano con la receita bruta abierta y los renglones de primer nivel
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): DRE del sistema contable de la SAF, 01/01 a 31/12/2022 (mismo formato que 2013-b a 2018)
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): cero-real = Estadio. Onboarding to-do 165 (Claude, 2026-10-09): el balancete de 2022 no tiene renta de partidos del fútbol masculino (las 'Rendas de competições' son del femenino, L20-L22)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): filas-a-mano. Onboarding to-do 165 (Claude en sesión, 2026-10-09, pedido de Guido): extraer.mjs cortó por el tope de salida (balancete de ~580 cuentas, to-do 197); .filas.json armado a mano con la receita bruta abierta y los renglones de primer nivel
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): DRE del sistema contable de la SAF, 01/01 a 31/12/2022 (mismo formato que 2013-b a 2018)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): cero-real = Estadio. Onboarding to-do 165 (Claude, 2026-10-09): el balancete de 2022 no tiene renta de partidos del fútbol masculino (las 'Rendas de competições' son del femenino, L20-L22)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
@@ -352,7 +352,7 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
@@ -609,8 +609,8 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
-2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2018 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2018 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -652,16 +652,16 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2017-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2017-12-31
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 371.653,59. Claude 2026-10-09: la transcripción dice 371.663,59 y la segunda lectura 371.653,59; solo con 371.653,59 cierra el Prejuízo Operacional impreso: 787.377,89 (L25) - 2.233.261,00 - 437.909,72 - 55.180,00 - 13.242,56 + 7.798,51 + 371.653,59 = -1.572.763,29 (L32).
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2017 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = wages_squad. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = broadcasting. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = matchday_competition. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = member_dues. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): resultado-final = -1.726.110,02. Onboarding to-do 165 (Claude, 2026-10-09): DRE de balancete: imprime el prejuízo en positivo con 'D' (L38); la cuenta 8.975.272 - 10.103.921 - 430.111 - 167.350 = -1.726.110 es pérdida
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 371.663,59. Onboarding to-do 165 (Claude, 2026-10-09): el PDF dice 371.653,59 (pág. 1); la fila que se carga ya va corregida por el ajuste fila de la misma línea, así que este número del .md no entra en la carga
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2017-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2017-12-31
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 371.653,59. Claude 2026-10-09: la transcripción dice 371.663,59 y la segunda lectura 371.653,59; solo con 371.653,59 cierra el Prejuízo Operacional impreso: 787.377,89 (L25) - 2.233.261,00 - 437.909,72 - 55.180,00 - 13.242,56 + 7.798,51 + 371.653,59 = -1.572.763,29 (L32).
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2017 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = wages_squad. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = broadcasting. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = matchday_competition. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = member_dues. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): resultado-final = -1.726.110,02. Onboarding to-do 165 (Claude, 2026-10-09): DRE de balancete: imprime el prejuízo en positivo con 'D' (L38); la cuenta 8.975.272 - 10.103.921 - 430.111 - 167.350 = -1.726.110 es pérdida
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 371.663,59. Onboarding to-do 165 (Claude, 2026-10-09): el PDF dice 371.653,59 (pág. 1); la fila que se carga ya va corregida por el ajuste fila de la misma línea, así que este número del .md no entra en la carga
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2012, 2013, 2014, 2015, 2016, 2018, 2021, 2022, 2023, 2024, 2025): Comercial / Sponsors, Organización de partidos
 ```
@@ -787,11 +787,11 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = (10.553). Claude 2026-10-09: las deducciones (PIS 639 + COFINS 2.943 + ICMS 6.971 = 10.553, nota L966-969) restan de la receita bruta: la nota las imprime en positivo y la extracción las sumaba como ingresos. Cuenta: bruta 9.221.750 (L113 = nota L948-958) - deduções 10.553 (L114) = RECEITA LÍQUIDA 9.211.197 (L115); - custos/despesas 10.134.897 (L116-123) - financiero 266.455 (L124) = -1.190.155 (L129). Se re-cargan dos renglones positivos para que el signo de la deducción se lea como resta.
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 38.727. Claude 2026-10-09: las deducciones (PIS 639 + COFINS 2.943 + ICMS 6.971 = 10.553, nota L966-969) restan de la receita bruta: la nota las imprime en positivo y la extracción las sumaba como ingresos. Cuenta: bruta 9.221.750 (L113 = nota L948-958) - deduções 10.553 (L114) = RECEITA LÍQUIDA 9.211.197 (L115); - custos/despesas 10.134.897 (L116-123) - financiero 266.455 (L124) = -1.190.155 (L129). Se re-cargan dos renglones positivos para que el signo de la deducción se lea como resta.
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 265.000. Claude 2026-10-09: las deducciones (PIS 639 + COFINS 2.943 + ICMS 6.971 = 10.553, nota L966-969) restan de la receita bruta: la nota las imprime en positivo y la extracción las sumaba como ingresos. Cuenta: bruta 9.221.750 (L113 = nota L948-958) - deduções 10.553 (L114) = RECEITA LÍQUIDA 9.211.197 (L115); - custos/despesas 10.134.897 (L116-123) - financiero 266.455 (L124) = -1.190.155 (L129). Se re-cargan dos renglones positivos para que el signo de la deducción se lea como resta.
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: se saca el subtotal RECEITA LÍQUIDA 9.211.197 (L115) para que no se sume junto a sus componentes (bruta 9.221.750 - deduções 10.553 = 9.211.197).
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = (10.553). Claude 2026-10-09: las deducciones (PIS 639 + COFINS 2.943 + ICMS 6.971 = 10.553, nota L966-969) restan de la receita bruta: la nota las imprime en positivo y la extracción las sumaba como ingresos. Cuenta: bruta 9.221.750 (L113 = nota L948-958) - deduções 10.553 (L114) = RECEITA LÍQUIDA 9.211.197 (L115); - custos/despesas 10.134.897 (L116-123) - financiero 266.455 (L124) = -1.190.155 (L129). Se re-cargan dos renglones positivos para que el signo de la deducción se lea como resta.
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 38.727. Claude 2026-10-09: las deducciones (PIS 639 + COFINS 2.943 + ICMS 6.971 = 10.553, nota L966-969) restan de la receita bruta: la nota las imprime en positivo y la extracción las sumaba como ingresos. Cuenta: bruta 9.221.750 (L113 = nota L948-958) - deduções 10.553 (L114) = RECEITA LÍQUIDA 9.211.197 (L115); - custos/despesas 10.134.897 (L116-123) - financiero 266.455 (L124) = -1.190.155 (L129). Se re-cargan dos renglones positivos para que el signo de la deducción se lea como resta.
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 265.000. Claude 2026-10-09: las deducciones (PIS 639 + COFINS 2.943 + ICMS 6.971 = 10.553, nota L966-969) restan de la receita bruta: la nota las imprime en positivo y la extracción las sumaba como ingresos. Cuenta: bruta 9.221.750 (L113 = nota L948-958) - deduções 10.553 (L114) = RECEITA LÍQUIDA 9.211.197 (L115); - custos/despesas 10.134.897 (L116-123) - financiero 266.455 (L124) = -1.190.155 (L129). Se re-cargan dos renglones positivos para que el signo de la deducción se lea como resta.
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: se saca el subtotal RECEITA LÍQUIDA 9.211.197 (L115) para que no se sume junto a sus componentes (bruta 9.221.750 - deduções 10.553 = 9.211.197).
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -936,8 +936,8 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
-2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2015 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF
+2015: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
+2015: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2015 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -1093,10 +1093,10 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 412,27. Claude 2026-10-09: 'Descontos Obtidos 412,27 C' bajo '(+) Receitas Financeiras' (L197-199, pág. 3-4 del visor) no salió como renglón (solo su 'Total:' de L199); se reemplaza el total por su único renglón. Cuenta: receitas 5.620.101,05 - gastos 6.650.350 - financiero (24.328,43 D - 412,27 C) = -1.055.949,71 = '= Prejuízo 1.055.949,71 D' (L213).
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2014 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): resultado-final = -1.055.949,71. Onboarding to-do 165 (Claude, 2026-10-09): el balancete imprime '= Prejuízo 1.055.949,71 D' (D = déficit) y el sistema lo leía como +1.055.949. Cuenta: ingresos 5.620.101 - gastos 6.650.350 - financiero neto 25.701 = -1.055.950 (= prejuízo, es pérdida)
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 412,27. Claude 2026-10-09: 'Descontos Obtidos 412,27 C' bajo '(+) Receitas Financeiras' (L197-199, pág. 3-4 del visor) no salió como renglón (solo su 'Total:' de L199); se reemplaza el total por su único renglón. Cuenta: receitas 5.620.101,05 - gastos 6.650.350 - financiero (24.328,43 D - 412,27 C) = -1.055.949,71 = '= Prejuízo 1.055.949,71 D' (L213).
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2014 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): resultado-final = -1.055.949,71. Onboarding to-do 165 (Claude, 2026-10-09): el balancete imprime '= Prejuízo 1.055.949,71 D' (D = déficit) y el sistema lo leía como +1.055.949. Cuenta: ingresos 5.620.101 - gastos 6.650.350 - financiero neto 25.701 = -1.055.950 (= prejuízo, es pérdida)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -1233,10 +1233,10 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2013: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2013-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2013-12-31
-2013: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
-2013: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2013 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF
-2013: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): resultado-final = -1.222.442,07. Onboarding to-do 165 (Claude, 2026-10-09): el balancete imprime '= Prejuízo 1.222.442,07 D' (D = déficit) y el sistema lo leía como +1.222.442. Cuenta: ingresos 3.973.653 - gastos 5.017.987 - financiero/otros 178.107 = -1.222.442 (resultado es pérdida)
+2013: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2013-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2013-12-31
+2013: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
+2013: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2013 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF
+2013: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): resultado-final = -1.222.442,07. Onboarding to-do 165 (Claude, 2026-10-09): el balancete imprime '= Prejuízo 1.222.442,07 D' (D = déficit) y el sistema lo leía como +1.222.442. Cuenta: ingresos 3.973.653 - gastos 5.017.987 - financiero/otros 178.107 = -1.222.442 (resultado es pérdida)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -1291,11 +1291,11 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
-2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 1.834.030,87. Claude 2026-10-09: los CUSTOS están impresos entre paréntesis (restan de la receita) y las despesas en positivo; la lectura 5 invertía su signo. Cuenta (L173-200): receitas 4.262.001,99 (suma de L174-186 con deduções -14.118,59) - custos 3.369.240,06 - despesas sin financeiras 947.516,67 (1.101.162,64 - 153.645,97) - financeiras 153.645,97 = -208.400,71 (L200 y L202).
-2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 1.406.851,05. Claude 2026-10-09: los CUSTOS están impresos entre paréntesis (restan de la receita) y las despesas en positivo; la lectura 5 invertía su signo. Cuenta (L173-200): receitas 4.262.001,99 (suma de L174-186 con deduções -14.118,59) - custos 3.369.240,06 - despesas sin financeiras 947.516,67 (1.101.162,64 - 153.645,97) - financeiras 153.645,97 = -208.400,71 (L200 y L202).
-2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 32.323,39. Claude 2026-10-09: los CUSTOS están impresos entre paréntesis (restan de la receita) y las despesas en positivo; la lectura 5 invertía su signo. Cuenta (L173-200): receitas 4.262.001,99 (suma de L174-186 con deduções -14.118,59) - custos 3.369.240,06 - despesas sin financeiras 947.516,67 (1.101.162,64 - 153.645,97) - financeiras 153.645,97 = -208.400,71 (L200 y L202).
-2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 96.034,75. Claude 2026-10-09: los CUSTOS están impresos entre paréntesis (restan de la receita) y las despesas en positivo; la lectura 5 invertía su signo. Cuenta (L173-200): receitas 4.262.001,99 (suma de L174-186 con deduções -14.118,59) - custos 3.369.240,06 - despesas sin financeiras 947.516,67 (1.101.162,64 - 153.645,97) - financeiras 153.645,97 = -208.400,71 (L200 y L202).
+2012: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
+2012: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 1.834.030,87. Claude 2026-10-09: los CUSTOS están impresos entre paréntesis (restan de la receita) y las despesas en positivo; la lectura 5 invertía su signo. Cuenta (L173-200): receitas 4.262.001,99 (suma de L174-186 con deduções -14.118,59) - custos 3.369.240,06 - despesas sin financeiras 947.516,67 (1.101.162,64 - 153.645,97) - financeiras 153.645,97 = -208.400,71 (L200 y L202).
+2012: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 1.406.851,05. Claude 2026-10-09: los CUSTOS están impresos entre paréntesis (restan de la receita) y las despesas en positivo; la lectura 5 invertía su signo. Cuenta (L173-200): receitas 4.262.001,99 (suma de L174-186 con deduções -14.118,59) - custos 3.369.240,06 - despesas sin financeiras 947.516,67 (1.101.162,64 - 153.645,97) - financeiras 153.645,97 = -208.400,71 (L200 y L202).
+2012: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 32.323,39. Claude 2026-10-09: los CUSTOS están impresos entre paréntesis (restan de la receita) y las despesas en positivo; la lectura 5 invertía su signo. Cuenta (L173-200): receitas 4.262.001,99 (suma de L174-186 con deduções -14.118,59) - custos 3.369.240,06 - despesas sin financeiras 947.516,67 (1.101.162,64 - 153.645,97) - financeiras 153.645,97 = -208.400,71 (L200 y L202).
+2012: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 96.034,75. Claude 2026-10-09: los CUSTOS están impresos entre paréntesis (restan de la receita) y las despesas en positivo; la lectura 5 invertía su signo. Cuenta (L173-200): receitas 4.262.001,99 (suma de L174-186 con deduções -14.118,59) - custos 3.369.240,06 - despesas sin financeiras 947.516,67 (1.101.162,64 - 153.645,97) - financeiras 153.645,97 = -208.400,71 (L200 y L202).
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2024, 2025): Organización de partidos
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
@@ -1340,9 +1340,9 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
-2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 1.196.469,33. Claude 2026-10-09: el costo está impreso entre paréntesis (resta de la receita) y el resto de los gastos en positivo; la lectura 5 invertía su signo. Cuenta: Receitas líquidas 1.581.519,76 (L162) - Custos 1.220.963,91 (L166) - Despesas Operacionais 402.186,01 (L172) - Serviços de terceiros 19.682,75 (L174) - Despesas financeiras 12.921,96 (L173) = -74.234,87 (L177).
-2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 24.494,58. Claude 2026-10-09: el costo está impreso entre paréntesis (resta de la receita) y el resto de los gastos en positivo; la lectura 5 invertía su signo. Cuenta: Receitas líquidas 1.581.519,76 (L162) - Custos 1.220.963,91 (L166) - Despesas Operacionais 402.186,01 (L172) - Serviços de terceiros 19.682,75 (L174) - Despesas financeiras 12.921,96 (L173) = -74.234,87 (L177).
+2010: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
+2010: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 1.196.469,33. Claude 2026-10-09: el costo está impreso entre paréntesis (resta de la receita) y el resto de los gastos en positivo; la lectura 5 invertía su signo. Cuenta: Receitas líquidas 1.581.519,76 (L162) - Custos 1.220.963,91 (L166) - Despesas Operacionais 402.186,01 (L172) - Serviços de terceiros 19.682,75 (L174) - Despesas financeiras 12.921,96 (L173) = -74.234,87 (L177).
+2010: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 24.494,58. Claude 2026-10-09: el costo está impreso entre paréntesis (resta de la receita) y el resto de los gastos en positivo; la lectura 5 invertía su signo. Cuenta: Receitas líquidas 1.581.519,76 (L162) - Custos 1.220.963,91 (L166) - Despesas Operacionais 402.186,01 (L172) - Serviços de terceiros 19.682,75 (L174) - Despesas financeiras 12.921,96 (L173) = -74.234,87 (L177).
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2012, 2013, 2014, 2015, 2016, 2018, 2021, 2022, 2023, 2024, 2025): Televisión, Organización de partidos
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).

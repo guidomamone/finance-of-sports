@@ -29,7 +29,7 @@ De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   anio               ok        2025 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
   cierre             ok        "2025-06-30" — año del ejercicio + mes de cierre (contenido del .md (190 de 198 fechas de fin de mes caen en el mes 6))
   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
-  perimetro          ok        "individual" — ajuste manual (Admin/ajustes-manuales.jsonl, perimetro-senales 2026-10-06): perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 6 ejerc
+  perimetro          ok        "individual" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-06): perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 6 ejerc
   currency           ok        "EUR" — moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)
   fxRef              ok        "EUR@2025-06-30" — el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))
   sourceId           ok        "napoli-it-bilancio-2025" — clubId + nombre del archivo en slug
@@ -159,7 +159,7 @@ tools/cargar.mjs (2026-10-07)
 ### Meta
 
 ```text
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (918.251). oneri finanziari impresos en positivo bajo 17); Totale C (L326) 4.063.075 = 4.981.326 - 918.251 (to-do 155/156, arreglo manual 2026-10-07)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (918.251). oneri finanziari impresos en positivo bajo 17); Totale C (L326) 4.063.075 = 4.981.326 - 918.251 (to-do 155/156, arreglo manual 2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -216,9 +216,9 @@ tools/cargar.mjs (2026-10-07)
 ### Meta
 
 ```text
-2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (1.063.280). oneri finanziari impresos en positivo bajo 17); Totale C (L290) 7.442.873 (to-do 155/156, arreglo manual 2026-10-07)
-2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (4.559). perdite su cambi impresas en positivo; Totale 17bis (4.529) (to-do 155/156, arreglo manual 2026-10-07)
-2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 2023. Claude 2026-10-07: es el año "2023" del encabezado de la columna, no un importe
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (1.063.280). oneri finanziari impresos en positivo bajo 17); Totale C (L290) 7.442.873 (to-do 155/156, arreglo manual 2026-10-07)
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (4.559). perdite su cambi impresas en positivo; Totale 17bis (4.529) (to-do 155/156, arreglo manual 2026-10-07)
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 2023. Claude 2026-10-07: es el año "2023" del encabezado de la columna, no un importe
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -335,7 +335,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (212). perdite su cambi impresas en positivo; Totale 17bis 3.287 = 3.499 - 212 (patrón to-do 155 igual que Napoli 2024)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (212). perdite su cambi impresas en positivo; Totale 17bis 3.287 = 3.499 - 212 (patrón to-do 155 igual que Napoli 2024)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -441,7 +441,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (6.136). perdite su cambi impresas en positivo; Totale 17bis 6.743 = 12.879 - 6.136 (patrón to-do 155)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (6.136). perdite su cambi impresas en positivo; Totale 17bis 6.743 = 12.879 - 6.136 (patrón to-do 155)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 

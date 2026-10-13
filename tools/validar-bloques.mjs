@@ -126,7 +126,7 @@ export async function validar(pdf, { registro, ejecutar = false, rehacer = false
 if (import.meta.url === `file://${process.argv[1]}`) {
   const docs = flag('--lista') ? readFileSync(resolve(ROOT, flag('--lista')), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')) : ARGS.filter((a) => !a.startsWith('--'));
   if (!docs.length) { console.error('Uso: node tools/validar-bloques.mjs "<pdf>" [--ejecutar] [--rehacer]  |  --lista <archivo>'); process.exit(1); }
-  const registro = readFileSync(resolve(ROOT, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+  const registro = readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
   let usd = 0;
   for (const pdf of docs) {
     const r = await validar(pdf, { registro, ejecutar: ARGS.includes('--ejecutar'), rehacer: ARGS.includes('--rehacer') });

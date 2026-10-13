@@ -59,7 +59,7 @@ const MAX_PAGINAS = 8; // páginas completas que se mandan a extraer
 if (!LISTA) { console.error('Uso: node tools/localizar-extraer.mjs --lista <archivo> [--ejecutar | --medir]'); process.exit(1); }
 
 const docs = readFileSync(resolve(ROOT, LISTA), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'));
-const registro = readFileSync(resolve(ROOT, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+const registro = readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
 const sitio = loadSite();
 
 // Páginas del .md: { numero -> texto }. Las transcripciones marcan cada página con "--- pág. N ---".

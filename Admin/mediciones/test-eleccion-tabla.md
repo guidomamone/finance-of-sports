@@ -151,7 +151,7 @@ deducciones de la receita (ingreso) y subsidios (ingreso). El signo se descartó
 Se corrió `node tools/pipeline.mjs --ejecutar --solo-preparar --repreparar --limit 0 --sin-jev` (sin API): 438 `.rubros.json` re-generados
 (388 `listo-para-jev`, 346 `sin-rubros` en el registro). **Ojo, efecto colateral encontrado**: ese comando además marca como `sin-tablas` los
 documentos cuyo `.md` no tiene tablas (296 acá), y la próxima corrida del pipeline los manda a rehacer con Mistral. Esas 296 marcas NO
-existían antes (eran documentos preparados antes de que existiera la regla), así que se quitaron del historial (`Admin/transcripciones-verificaciones.jsonl`,
+existían antes (eran documentos preparados antes de que existiera la regla), así que se quitaron del historial (`Admin/registros/transcripciones-verificaciones.jsonl`,
 solo las líneas `sin-tablas` de esta corrida; hay una copia de antes en el scratchpad de la sesión) y se regeneró el registro. Las 438 líneas `listo` nuevas
 quedaron (dos veces, porque se corrió dos veces). Los `.jev.json` de esos documentos son de la lista de rubros anterior: Jev va a categorizar de nuevo
 cuando corra `--listos` si el pipeline así lo decide.

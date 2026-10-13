@@ -381,7 +381,7 @@ export function quien(pdfRel) {
 
 // ================================================================ --prueba: la medición
 // Contra los documentos que tools/resolver-inventario.mjs ya resolvió (último registro por `md` en
-// Admin/transcripciones-verificaciones.jsonl con `resolucion` y un `previo` que exista en disco). La entrada de la cascada es lo
+// Admin/registros/transcripciones-verificaciones.jsonl con `resolucion` y un `previo` que exista en disco). La entrada de la cascada es lo
 // que el resolver tenía en la mano: el `.mistral-redo.md` si el resolver rehízo el .md con Mistral (base "... -> mistral
 // (re-hecho)"), si no, el `previo-*.md`. La "verdad" es el .md actual (lo corregido).
 //
@@ -443,7 +443,7 @@ async function literal(args) {
 
 async function prueba() {
   const detalle = process.argv.includes('--detalle');
-  const L = readFileSync(resolve(root, 'Admin/transcripciones-verificaciones.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
+  const L = readFileSync(resolve(root, 'Admin/registros/transcripciones-verificaciones.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
   const ult = new Map(); for (const r of L) if (r.md) ult.set(r.md, r);
   const docs = [];
   for (const r of ult.values()) {

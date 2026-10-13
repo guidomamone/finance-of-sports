@@ -13,7 +13,7 @@
 // en 31 documentos, 58 se deciden así; en 47 gana la lectura de Claude (la reserva se levanta) y en 11 gana la lectura ANTERIOR (el
 // `previo-*.md`), o sea que el `.md` actual probablemente tiene un error en esas páginas.
 //
-// Qué hace, por documento (último registro de Admin/transcripciones-verificaciones.jsonl con `reserva` y un `previo` en disco):
+// Qué hace, por documento (último registro de Admin/registros/transcripciones-verificaciones.jsonl con `reserva` y un `previo` en disco):
 //   - por cada página con reserva, compara el puntaje de la lectura actual contra la del `previo-*.md`;
 //   - gana la actual -> la reserva se levanta (resolución `sumas`);
 //   - gana el previo -> con --aplicar, la página del `.md` se reemplaza por la del previo (el `.md` de antes queda en
@@ -35,7 +35,7 @@ import { tablasDe, respaldoSumas, respaldoFilas } from './chequeos-gratis.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const APLICAR = process.argv.includes('--aplicar');
-const verifPath = resolve(root, 'Admin', 'transcripciones-verificaciones.jsonl');
+const verifPath = resolve(root, 'Admin', 'registros', 'transcripciones-verificaciones.jsonl');
 const sha1 = (p) => createHash('sha1').update(readFileSync(p)).digest('hex');
 
 // Mismo partido del .md que resolver-inventario.mjs (splitPages / joinPages), para no perder ni un carácter.

@@ -29,7 +29,7 @@ De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   anio               ok        2023 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
   cierre             ok        "2023-12-31" — año del ejercicio + mes de cierre (nombre del archivo (2023-12-31) y contenido del .md (149 de 158 fechas de fin de mes))
   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
-  perimetro          ok        "individual" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-06): Guido 2026-10-06: individual (Parma Calcio 1913 S.r.l.); en 2023 y 2024 el consolidado
+  perimetro          ok        "individual" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-06): Guido 2026-10-06: individual (Parma Calcio 1913 S.r.l.); en 2023 y 2024 el consolidado
   currency           ok        "EUR" — moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)
   fxRef              ok        "EUR@2023-12-31" — el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2023-12-31 = 0.905 (Cierre BCE del viernes 29/12/2023 (el 31 es domingo, sin cotización)
   sourceId           ok        "parma-it-bilancio-31-12-2023-individual" — clubId + nombre del archivo en slug
@@ -120,7 +120,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = consolidado. Guido 2026-10-07: 2025 solo tiene consolidado; se carga así (el club es individual)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = consolidado. Guido 2026-10-07: 2025 solo tiene consolidado; se carga así (el club es individual)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -275,9 +275,9 @@ tools/cargar.mjs (2026-10-07)
 ### Meta
 
 ```text
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 0. el renglón 'altri' 25.339.727 se contaba dos veces: la nota b46 abre 'Totale altri ricavi e proventi' (L558) (to-do 155/156, arreglo manual 2026-10-07)
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 40.063. proventi y oneri con la misma etiqueta; el oneri impreso en positivo; Totale C (L589) (68.583) (to-do 155/156, arreglo manual 2026-10-07)
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (108.646). ver el anterior (to-do 155/156, arreglo manual 2026-10-07)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 0. el renglón 'altri' 25.339.727 se contaba dos veces: la nota b46 abre 'Totale altri ricavi e proventi' (L558) (to-do 155/156, arreglo manual 2026-10-07)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 40.063. proventi y oneri con la misma etiqueta; el oneri impreso en positivo; Totale C (L589) (68.583) (to-do 155/156, arreglo manual 2026-10-07)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (108.646). ver el anterior (to-do 155/156, arreglo manual 2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -349,7 +349,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = consolidado. Guido 2026-10-07: 2022 solo tiene consolidado; se carga así (el club es individual)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = consolidado. Guido 2026-10-07: 2022 solo tiene consolidado; se carga así (el club es individual)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 

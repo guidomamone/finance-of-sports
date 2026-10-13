@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Rusia/Baltika Kaliningrad/bfo-2022-datos.
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "baltikakaliningrad-ru" — slug de "Baltika Kaliningrad" + '-ru' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "AO Football Club Baltika" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): Revisión del alta (Claude, 2026-10-09): АО "Футбольный клуб "Балтика" (ИНН 3905064260)
+  name               ok        "AO Football Club Baltika" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): Revisión del alta (Claude, 2026-10-09): АО "Футбольный клуб "Балтика" (ИНН 3905064260)
   displayName        ok        "Baltika Kaliningrad" — nombre de la carpeta del club en Clubes/
   country            ok        "RU" — carpeta de país "Rusia" (tabla PAISES)
   reportingCurrency  ok        "RUB" — moneda de curso legal de Rusia

@@ -140,9 +140,9 @@ tools/cargar.mjs (2026-10-07)
 ### Meta
 
 ```text
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 24.755. proventi y oneri con la misma etiqueta 'altri'; el oneri (L190) impreso en positivo; Totale C (L192) (4.261) (to-do 155/156, arreglo manual 2026-10-07),
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 24.755. proventi y oneri con la misma etiqueta 'altri'; el oneri (L190) impreso en positivo; Totale C (L192) (4.261) (to-do 155/156, arreglo manual 2026-10-07)
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (29.016). ver el anterior (to-do 155/156, arreglo manual 2026-10-07)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 24.755. proventi y oneri con la misma etiqueta 'altri'; el oneri (L190) impreso en positivo; Totale C (L192) (4.261) (to-do 155/156, arreglo manual 2026-10-07),
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 24.755. proventi y oneri con la misma etiqueta 'altri'; el oneri (L190) impreso en positivo; Totale C (L192) (4.261) (to-do 155/156, arreglo manual 2026-10-07)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (29.016). ver el anterior (to-do 155/156, arreglo manual 2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 

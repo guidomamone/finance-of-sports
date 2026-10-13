@@ -29,7 +29,7 @@ De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   anio               ok        2025 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
   cierre             ok        "2025-06-30" — año del ejercicio + mes de cierre (contenido del .md (245 de 261 fechas de fin de mes caen en el mes 6))
   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
-  perimetro          ok        "individual" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): Guido 2026-10-07: individual (ACF Fiorentina S.r.l.); no publica consolidado desde 202
+  perimetro          ok        "individual" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): Guido 2026-10-07: individual (ACF Fiorentina S.r.l.); no publica consolidado desde 202
   currency           ok        "EUR" — moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)
   fxRef              ok        "EUR@2025-06-30" — el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))
   sourceId           ok        "fiorentina-it-bilancio-2024-25" — clubId + nombre del archivo en slug
@@ -106,10 +106,10 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. hijo de a) abierto por la nota (2117-2123 suman 21.493.476)
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. hijo de h) abierto por la nota (2190-2199 suman 3.426.567)
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. hijo de d) (3.268.853 + 622.041 = 3.890.894)
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. idem
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. hijo de a) abierto por la nota (2117-2123 suman 21.493.476)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. hijo de h) abierto por la nota (2190-2199 suman 3.426.567)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. hijo de d) (3.268.853 + 622.041 = 3.890.894)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. idem
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -166,7 +166,7 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. hijo de a) contributi, ya abierto por la nota (2025-2031 suman 28.844.322); se contaba dos veces
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. hijo de a) contributi, ya abierto por la nota (2025-2031 suman 28.844.322); se contaba dos veces
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -259,8 +259,8 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. hijo de 1) abierto por la nota b45; se contaba dos veces (a+b = 7.876.653; 1) = 7.917.332, dif. 40.680 de Coppa Italia fuori casa)
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. idem
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. hijo de 1) abierto por la nota b45; se contaba dos veces (a+b = 7.876.653; 1) = 7.917.332, dif. 40.680 de Coppa Italia fuori casa)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. idem
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -453,9 +453,9 @@ tools/cargar.mjs (2026-10-08)
 ### Meta
 
 ```text
-2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): perimetro = consolidado. Guido 2026-10-07: el 2019 se carga consolidado (Gruppo Fiorentina: ACF Fiorentina S.p.A. + Promesse Viola S.r.l.), único documento de ese año; desde 2021 la serie es individual
-2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): cierre = 2019-12-31. Guido 2026-10-07: el ejercicio 2019 cierra el 31/12 (después el club pasó a cerrar el 30/06)
-2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): name = ACF Fiorentina S.p.A.. Guido 2026-10-07: en 2019 la sociedad era S.p.A.; desde 2021-22 es S.r.l.
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): perimetro = consolidado. Guido 2026-10-07: el 2019 se carga consolidado (Gruppo Fiorentina: ACF Fiorentina S.p.A. + Promesse Viola S.r.l.), único documento de ese año; desde 2021 la serie es individual
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): cierre = 2019-12-31. Guido 2026-10-07: el ejercicio 2019 cierra el 31/12 (después el club pasó a cerrar el 30/06)
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): name = ACF Fiorentina S.p.A.. Guido 2026-10-07: en 2019 la sociedad era S.p.A.; desde 2021-22 es S.r.l.
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 

@@ -495,7 +495,7 @@ function informe(opt) {
 // ---------------------------------------------------------------------------------------------------------
 // LISTOS (producción): <md>.jev.json + <md>.rubros.json -> <md>.categorias.json con el escalón que decidió cada rubro.
 async function listos(opt) {
-  const ledgerPath = resolve(root, 'Admin', 'transcripciones-estado.jsonl');
+  const ledgerPath = resolve(root, 'Admin', 'registros', 'transcripciones-estado.jsonl');
   const ledger = readJsonl(ledgerPath);
   // Trabajo = documentos con .rubros.json y .jev.json cuyo .categorias.json falta o se hizo sobre otra lista de rubros u otro .jev.json
   // (huellas, ver tools/huellas.mjs). Y si el .jev.json mismo está desactualizado respecto de la lista de rubros, NO se manda a Claude:
@@ -511,7 +511,7 @@ async function listos(opt) {
   docs = [...new Map(docs.map((e) => [e.md, e])).values()];
   if (opt.limit > 0) docs = docs.slice(0, opt.limit);
   console.log(`${docs.length} documento(s) con Jev hecho y sin categorías finales.${opt.dry ? ' (dry-run)' : ''}`);
-  // Versión 319: además de lo cargado en el sitio, lo que Claude ya resolvió antes (tools/memoria-categorias.mjs, Admin/categorias-aprendidas.jsonl,
+  // Versión 319: además de lo cargado en el sitio, lo que Claude ya resolvió antes (tools/memoria-categorias.mjs, Admin/registros/categorias-aprendidas.jsonl,
   // confianza >= 0,80): entra como contexto del club y como ejemplos de otros clubes; producción siempre gana sobre lo aprendido.
   const prod = allLines(); const aprendidas = lineasAprendidas({ produccion: prod });
   const lines = [...prod, ...aprendidas]; const retriever = makeRetriever(lines); const apiKey = opt.dry ? null : readKey(); let cost = 0;

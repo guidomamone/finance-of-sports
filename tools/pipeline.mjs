@@ -20,7 +20,7 @@
 //                          rechaza por RECITATION) y Claude como desempate, en lotes de hasta 8 páginas; voto entre voces, cuarta voz,
 //                          aritmética, y "reserva" como último recurso.
 //                     Fallos por crédito/límite: espera y reintenta el mismo motor; tras 3 seguidos corta la corrida (`reintentar`).
-//   MARCAR            registro Admin/transcripciones-estado.jsonl (se regenera solo); historial en Admin/transcripciones-verificaciones.jsonl.
+//   MARCAR            registro Admin/registros/transcripciones-estado.jsonl (se regenera solo); historial en Admin/registros/transcripciones-verificaciones.jsonl.
 // (Hasta la Versión 528 hacía además la preparación para Jev y la categorización con Jev y Claude: ver "PROCESO VIEJO, RETIRADO".)
 //
 // COSTO medido (piloto C, 10 PDFs): ~US$ 0,20 por documento; PDF con texto US$ 0,08-0,18 (casi todo Mistral); escaneo US$ 0,13-0,21;
@@ -71,8 +71,8 @@ const concurrency = flagVal('--concurrencia') || '4';
 // quedaba como la buena. Queda SOLO la etapa 2 (transcribir y validar) y, de la preparación, el control de calidad "sin tablas".
 const maxPages = flagVal('--max-paginas') !== null ? Number(flagVal('--max-paginas')) : 100;
 
-const statePath = resolve(root, 'Admin', 'transcripciones-estado.jsonl');
-const verifPath = resolve(root, 'Admin', 'transcripciones-verificaciones.jsonl');
+const statePath = resolve(root, 'Admin', 'registros', 'transcripciones-estado.jsonl');
+const verifPath = resolve(root, 'Admin', 'registros', 'transcripciones-verificaciones.jsonl');
 const readJsonl = (p) => (existsSync(p) ? readFileSync(p, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : []);
 const sha1 = (p) => createHash('sha1').update(readFileSync(p)).digest('hex');
 const node = (script, argv, opts = {}) => spawnSync('node', [resolve(root, script), ...argv], { cwd: root, encoding: 'utf8', maxBuffer: 512 * 1024 * 1024, ...opts });
@@ -87,12 +87,12 @@ function refreshLedger() {
   return readJsonl(statePath);
 }
 
-// Altas de clubes nuevos (Admin/altas-club.jsonl, lo escribe tools/alta-club.mjs por script: qué club está listo para darse de alta,
+// Altas de clubes nuevos (Admin/registros/altas-club.jsonl, lo escribe tools/alta-club.mjs por script: qué club está listo para darse de alta,
 // cuál tiene preguntas y cuál espera datos). Se muestra junto al inventario para que una sesión nueva lo vea sin acordarse de nada.
 function printAltas() {
   try {
     const a = resumenAltas();
-    if (a.total) console.log(`\nAltas de clubes nuevos (Admin/altas-club.jsonl, ${String(a.fecha).slice(0, 10)}): ${Object.entries(a.porEstado).map(([k, v]) => `${k} ${v}`).join(' · ')}${a.listos.length ? `\n  listos para alta: ${a.listos.map((l) => l.clubId).join(', ')}` : ''}\n  (recalcular: node tools/alta-club.mjs --todos)`);
+    if (a.total) console.log(`\nAltas de clubes nuevos (Admin/registros/altas-club.jsonl, ${String(a.fecha).slice(0, 10)}): ${Object.entries(a.porEstado).map(([k, v]) => `${k} ${v}`).join(' · ')}${a.listos.length ? `\n  listos para alta: ${a.listos.map((l) => l.clubId).join(', ')}` : ''}\n  (recalcular: node tools/alta-club.mjs --todos)`);
   } catch (err) { console.log(`\n(no pude leer el registro de altas: ${err.message})`); }
 }
 
@@ -114,7 +114,7 @@ const needsResolve = (e) => ['sin-md', 'sin-tablas', 'revisar', 'pendiente-segun
 // Validado y todavía sin pasar por verificar.mjs: el único control que queda de la preparación vieja es "sin tablas" (abajo).
 const sinPasarPorElLote = (e) => e.estado === 'listo' && !e.jev;
 // Páginas por PDF, con caché (pdfinfo sobre ~3.000 PDFs tardaría medio minuto en cada corrida).
-const cachePath = resolve(root, 'Admin', '.paginas-cache.json');
+const cachePath = resolve(root, 'Admin', 'registros', '.paginas-cache.json');
 let pageCache = {}; try { pageCache = JSON.parse(readFileSync(cachePath, 'utf8')); } catch { /* sin caché */ }
 function pagesOf(pdf) {
   const st = statSync(resolve(root, pdf)); const key = `${st.size}:${Math.round(st.mtimeMs)}`;
@@ -162,18 +162,18 @@ console.log(`\n${total} documento(s) para transcribir/validar en el alcance pedi
 if (!selected.length && !EXECUTE) { printSummary(ledger, 'Nada para transcribir'); process.exit(0); }
 
 // ---- ensayo o ejecución
-const tmpList = resolve(root, 'Admin', '.pipeline-lista-actual.txt');
+const tmpList = resolve(root, 'Admin', 'registros', '.pipeline-lista-actual.txt');
 const selectedPdfs = new Set(selected.map((e) => e.pdf));
 if (toResolve.length) {
   writeFileSync(tmpList, toResolve.map((e) => e.pdf).join('\n') + '\n');
   if (!EXECUTE) {
-    const dry = node('tools/resolver-inventario.mjs', ['--lista', 'Admin/.pipeline-lista-actual.txt'], { stdio: ['ignore', 'pipe', 'ignore'] });
+    const dry = node('tools/resolver-inventario.mjs', ['--lista', 'Admin/registros/.pipeline-lista-actual.txt'], { stdio: ['ignore', 'pipe', 'ignore'] });
     console.log('\n' + (dry.stdout || '').split('\n').filter((l) => /^\s+\d+ docs|TOTAL|ENSAYO/.test(l)).join('\n'));
     console.log('\nEs un ENSAYO: no se llamó a ninguna API. Agregá --ejecutar para correrlo de verdad.');
     process.exit(0);
   }
   console.log(`\n=== Etapa 2 (Admin/PIPELINE.md): transcribir y validar ${toResolve.length} documento(s) (concurrencia ${concurrency}) ===\n`);
-  node('tools/resolver-inventario.mjs', ['--lista', 'Admin/.pipeline-lista-actual.txt', '--ejecutar', '--concurrencia', concurrency], { stdio: 'inherit' });
+  node('tools/resolver-inventario.mjs', ['--lista', 'Admin/registros/.pipeline-lista-actual.txt', '--ejecutar', '--concurrencia', concurrency], { stdio: 'inherit' });
   ledger = refreshLedger();
 }
 const nSinTablas = chequearTablas(ledger);
@@ -186,7 +186,7 @@ const tally = {};
 for (const e of mine) { const k = e.jev || e.estado; tally[k] = (tally[k] || 0) + 1; }
 console.log(`\nRESULTADO de esta corrida (${mine.length} documentos): ${Object.entries(tally).map(([k, v]) => `${k} ${v}`).join(' | ')}`);
 const conReserva = mine.filter((e) => (e.reserva || []).length);
-if (conReserva.length) console.log(`  ${conReserva.length} con "reserva" (páginas que solo validó Claude; cerrar con sum-check al onboardear): ver "reserva" en Admin/transcripciones-estado.jsonl`);
+if (conReserva.length) console.log(`  ${conReserva.length} con "reserva" (páginas que solo validó Claude; cerrar con sum-check al onboardear): ver "reserva" en Admin/registros/transcripciones-estado.jsonl`);
 for (const e of mine.filter((x) => !['listo', 'listo-para-jev', 'sin-rubros'].includes(x.jev || x.estado))) console.log(`  - ${e.estado.toUpperCase()}  ${e.pdf}\n      ${(e.detalle || '').slice(0, 200)}`);
 printSummary(ledger, 'Inventario completo');
 printAltas();

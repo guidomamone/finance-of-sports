@@ -249,7 +249,7 @@ futuro aparece el Presupuesto 2024 o 2026 del mismo club, se pueda completar una
 y recién ahí cargarla.
 
 **Balances parciales (de menos de 12 meses), to-do 190, Versión 631.** La misma regla vale para un BALANCE de menos de 12 meses (un cambio de
-fecha de cierre, un semestral): no se carga solo. Va a `Admin/documentos-parciales.txt` (no a `documentos-descartados.txt`, que es para lo que no
+fecha de cierre, un semestral): no se carga solo. Va a `Admin/registros/documentos-parciales.txt` (no a `documentos-descartados.txt`, que es para lo que no
 sirve), con lo que cubre y el tramo que falta; `lote.mjs` lo saltea y `tools/estado.mjs` lo lista en cada corrida con lo que falta, y la ficha del club
 en `fuentes/<País>/<Club>.md` dice qué tramo buscar. CÓMO SE JUNTAN DOS TRAMOS cuando aparece el que falta: (1) tienen que ser el mismo perímetro
 (individual o consolidado), la misma moneda y tramos contiguos que sumen exactamente 12 meses del ejercicio que se quiere armar; (2) ingresos y

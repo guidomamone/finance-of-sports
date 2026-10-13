@@ -1,5 +1,5 @@
 # Balances de MENOS DE 12 MESES (to-do 190, Versión 631, pedido de Guido). No se cargan (regla de los 12 meses, Admin/CONVENCIONES-DATOS.md) pero
-# tampoco son documentos que no sirven: falta el otro tramo del ejercicio. lote.mjs los saltea igual que a Admin/documentos-descartados.txt;
+# tampoco son documentos que no sirven: falta el otro tramo del ejercicio. lote.mjs los saltea igual que a Admin/registros/documentos-descartados.txt;
 # estado.mjs y tablas-sesion.mjs los muestran como "parcial" con lo que falta, para que no se pierdan. Cómo se juntan dos tramos: CONVENCIONES-DATOS.
 # Una línea por documento:  ruta # cubre AAAA-MM-DD a AAAA-MM-DD # falta: <tramo o documento que falta> # <quién y cuándo>
 Clubes/Italia/Genoa/Genoa-bilancio-30.06.2024-individual.pdf # cubre 2024-01-01 a 2024-06-30 # falta: 2023-07-01 a 2023-12-31 para armar la temporada 2023-24 (el 2023 cargado es el año calendario completo, no sirve de tramo) # Guido, 2026-10-07; parcial desde 2026-10-09

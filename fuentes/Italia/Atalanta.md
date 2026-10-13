@@ -50,6 +50,6 @@ Ninguna. Serie completa desde el primer ejercicio exigido por el manual UEFA vig
 
 ## Tramo que falta buscar (balance parcial, to-do 190, 2026-10-09)
 
-`Atalanta-bilancio-consolidato-2022.pdf` cubre 2022-01-01 a 2022-06-30 (cambio de cierre). Falta el tramo 2021-07-01 a 2021-12-31 (semestral al 31/12/2021) para armar la temporada 2021-22. Está en `Admin/documentos-parciales.txt`; cómo se juntan los tramos: `Admin/CONVENCIONES-DATOS.md`.
+`Atalanta-bilancio-consolidato-2022.pdf` cubre 2022-01-01 a 2022-06-30 (cambio de cierre). Falta el tramo 2021-07-01 a 2021-12-31 (semestral al 31/12/2021) para armar la temporada 2021-22. Está en `Admin/registros/documentos-parciales.txt`; cómo se juntan los tramos: `Admin/CONVENCIONES-DATOS.md`.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.pdf` (sourceId `atalanta-it-bilancio-consolidato-2022`).

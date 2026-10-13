@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Rusia/Akhmat Grozny/bfo-2022-datos.md
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "akhmatgrozny-ru" — slug de "Akhmat Grozny" + '-ru' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "ANO Republican Football Club Akhmat" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): Revisión del alta (Claude, 2026-10-09): АНО "Республиканский футбольный клуб "Ахмат" (
+  name               ok        "ANO Republican Football Club Akhmat" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): Revisión del alta (Claude, 2026-10-09): АНО "Республиканский футбольный клуб "Ахмат" (
   displayName        ok        "Akhmat Grozny" — nombre de la carpeta del club en Clubes/
   country            ok        "RU" — carpeta de país "Rusia" (tabla PAISES)
   reportingCurrency  ok        "RUB" — moneda de curso legal de Rusia

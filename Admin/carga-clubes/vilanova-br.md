@@ -19,15 +19,15 @@ Documento que originó el alta: Clubes/Brasil/Vila Nova/notas-explicativas-2014.
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "vilanova-br" — slug de "Vila Nova" + '-br' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "Vila Nova Futebol Clube" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social tal como la dice el documento, si
+  name               ok        "Vila Nova Futebol Clube" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social tal como la dice el documento, si
   displayName        ok        "Vila Nova" — nombre de la carpeta del club en Clubes/
   country            ok        "BR" — carpeta de país "Brasil" (tabla PAISES)
   reportingCurrency  ok        "BRL" — moneda de curso legal de Brasil
-  fiscalYearStart    ok        "01-01" — cierre del ejercicio: ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral
+  fiscalYearStart    ok        "01-01" — cierre del ejercicio: ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral
   sport              ok        "futbol" — el .md nombra el fútbol 6 veces y ningún otro deporte más que eso
   brandColor         pendiente (ausente) — la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)
-  anio               ok        2014 — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período par
-  cierre             ok        "2014-12-31" — año del ejercicio + mes de cierre (ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Onboarding to-do 165 (Claude, 2026-10-09): el .md n
+  anio               ok        2014 — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período par
+  cierre             ok        "2014-12-31" — año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Onboarding to-do 165 (Claude, 2026-10-09): el .md n
   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
   perimetro          ok        "individual" — el .md no presenta estados consolidados (0 menciones de "consolidado")
   currency           ok        "BRL" — moneda de curso legal de Brasil (tabla PAISES de alta-club.mjs)
@@ -137,7 +137,7 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2025-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2025-12-31
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2025-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2025-12-31
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -179,7 +179,7 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2024-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae la fecha de la firma (2025-04-30); el ejercicio del documento cierra el 2024-12-31
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2024-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae la fecha de la firma (2025-04-30); el ejercicio del documento cierra el 2024-12-31
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -229,14 +229,14 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 2.718.339,04. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 786.306,37. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 10.448.424,84. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 3.777.180,00. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 5.017.600,75. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 859.339,42. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 825.365,61. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 26.993,18. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 2.718.339,04. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 786.306,37. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 10.448.424,84. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 3.777.180,00. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 5.017.600,75. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 859.339,42. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 825.365,61. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 26.993,18. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -286,14 +286,14 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.199.337,47. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.079.868,47. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 9.320.800,90. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.514.364,23. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 2.654.000,00. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 3.251.231,00. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 932.899,31. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 8.877,40. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.199.337,47. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.079.868,47. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 9.320.800,90. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.514.364,23. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 2.654.000,00. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 3.251.231,00. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 932.899,31. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 8.877,40. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -337,7 +337,7 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2021-12-31. Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2021
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2021-12-31. Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2021
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -388,10 +388,10 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2017-12-31. Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2017
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 0. Onboarding to-do 165 (Claude, 2026-10-09): L105 (39.541.429,69) es el total de los renglones de despesas (L98-L104, con la financiera 67.298,36): se contaba dos veces; 7.215.652,32 + 31.235.464,33 + 146.866,71 + 867.856,64 + 0 + 8.291,33 = 39.474.131,33; + 67.298,36 = 39.541.429,69
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 2.019,64. Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): los 13 renglones de receitas suman 37.956.311,55 = TOTAL DAS RECEITAS (L97) con las financeiras adentro
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = -67.298,36. Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): 37.954.291,91 - 39.474.131,33 + 2.019,64 - 67.298,36 = -1.585.118,14 = déficit impreso (L106)
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2017-12-31. Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2017
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 0. Onboarding to-do 165 (Claude, 2026-10-09): L105 (39.541.429,69) es el total de los renglones de despesas (L98-L104, con la financiera 67.298,36): se contaba dos veces; 7.215.652,32 + 31.235.464,33 + 146.866,71 + 867.856,64 + 0 + 8.291,33 = 39.474.131,33; + 67.298,36 = 39.541.429,69
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 2.019,64. Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): los 13 renglones de receitas suman 37.956.311,55 = TOTAL DAS RECEITAS (L97) con las financeiras adentro
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = -67.298,36. Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): 37.954.291,91 - 39.474.131,33 + 2.019,64 - 67.298,36 = -1.585.118,14 = déficit impreso (L106)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2023, 2024, 2025): Salarios y primas (plantel y cuerpo técnico)
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
@@ -444,10 +444,10 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2016-12-31. Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2016
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 343.729,73. Onboarding to-do 165 (Claude, 2026-10-09): el renglón L75 no llegó a las filas extraídas; está dentro del TOTAL DAS DESPESAS impreso: 9.801.794,10 + 4.783.520,98 + 185.637,84 + 535.154,62 + 343.729,73 + 13.946,18 = 15.663.783,45; + financiera 33.202,07 = 15.696.985,52 (L77)
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 30.508,57. Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): 12.894.474,04 + 30.508,57 = 12.924.982,61 = TOTAL DAS RECEITAS (L67)
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = -33.202,07. Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): 12.894.474,04 - 15.663.783,45 + 30.508,57 - 33.202,07 = -2.772.002,91 = déficit impreso (L78)
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2016-12-31. Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2016
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 343.729,73. Onboarding to-do 165 (Claude, 2026-10-09): el renglón L75 no llegó a las filas extraídas; está dentro del TOTAL DAS DESPESAS impreso: 9.801.794,10 + 4.783.520,98 + 185.637,84 + 535.154,62 + 343.729,73 + 13.946,18 = 15.663.783,45; + financiera 33.202,07 = 15.696.985,52 (L77)
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 30.508,57. Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): 12.894.474,04 + 30.508,57 = 12.924.982,61 = TOTAL DAS RECEITAS (L67)
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = -33.202,07. Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): 12.894.474,04 - 15.663.783,45 + 30.508,57 - 33.202,07 = -2.772.002,91 = déficit impreso (L78)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2023, 2024, 2025): Salarios y primas (plantel y cuerpo técnico)
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
@@ -496,9 +496,9 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2015-12-31. Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2015
-2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 38.324,22. Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): los 13 renglones de receita suman 6.928.521,06 = TOTAL DAS RECEITAS (L70), con las Receitas Financeiras 38.324,22 adentro; la extracción las sumaba con el mismo signo que el costo financiero
-2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = -5.029,11. Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): 6.890.197 - 8.598.927 + 38.324 - 5.029 = -1.675.435 (L79, -1.675.435,38)
+2015: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2015-12-31. Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2015
+2015: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 38.324,22. Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): los 13 renglones de receita suman 6.928.521,06 = TOTAL DAS RECEITAS (L70), con las Receitas Financeiras 38.324,22 adentro; la extracción las sumaba con el mismo signo que el costo financiero
+2015: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = -5.029,11. Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): 6.890.197 - 8.598.927 + 38.324 - 5.029 = -1.675.435 (L79, -1.675.435,38)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2023, 2024, 2025): Televisión, Salarios y primas (plantel y cuerpo técnico)
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
@@ -551,17 +551,17 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2014-12-31. Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2014
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.890.000,00. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L81) lee 1.880.000,00; el PDF imprime 1.890.000,00. Con 1.890.000,00 los 12 renglones suman 6.116.235,71 = TOTAL DAS RECEITAS impreso (con 1.880.000,00 suman 6.106.235,71) y la columna 2014 del balance 2015 también dice 6.116.235,71
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 3.268.187,41. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L93) lee 3.268.157,41; el PDF imprime 3.268.187,41. Con 3.268.187,41 los 6 renglones suman 6.493.155,07 = TOTAL DAS DESPESAS impreso (con 3.268.157,41 suman 6.493.125,07, 30 menos)
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 126.870,00. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L79) rotula 'Receitas de Eventos'; el PDF dice 'Receitas Escolinha de Futebol' (126.870,00)
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.461,44. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L83) rotula 'Receitas Sócio Torcedor'; el PDF dice 'Receitas Sócio Tigrão' (1.461,44)
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 78.862,10. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L88) rotula 'Receitas Sindicatos'; el PDF dice 'Receitas Timemania' (78.862,10)
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 2.338.741,92. Onboarding to-do 165 (Claude, 2026-10-09): columna 2013 (no se carga); el PDF dice 2.338.741,82
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 1.880.000,00. Onboarding to-do 165 (Claude, 2026-10-09): el PDF dice 1.890.000,00; la fila que se carga va corregida por el ajuste fila
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 288.754,80. Onboarding to-do 165 (Claude, 2026-10-09): Receitas Publicidade 2014, confirmado en la imagen de la pág. 1
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 365.952,66. Onboarding to-do 165 (Claude, 2026-10-09): columna 2013 (no se carga); el PDF dice 365.952,68
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 3.268.157,41. Onboarding to-do 165 (Claude, 2026-10-09): el PDF dice 3.268.187,41; la fila que se carga va corregida por el ajuste fila
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2014-12-31. Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2014
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.890.000,00. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L81) lee 1.880.000,00; el PDF imprime 1.890.000,00. Con 1.890.000,00 los 12 renglones suman 6.116.235,71 = TOTAL DAS RECEITAS impreso (con 1.880.000,00 suman 6.106.235,71) y la columna 2014 del balance 2015 también dice 6.116.235,71
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 3.268.187,41. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L93) lee 3.268.157,41; el PDF imprime 3.268.187,41. Con 3.268.187,41 los 6 renglones suman 6.493.155,07 = TOTAL DAS DESPESAS impreso (con 3.268.157,41 suman 6.493.125,07, 30 menos)
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 126.870,00. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L79) rotula 'Receitas de Eventos'; el PDF dice 'Receitas Escolinha de Futebol' (126.870,00)
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.461,44. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L83) rotula 'Receitas Sócio Torcedor'; el PDF dice 'Receitas Sócio Tigrão' (1.461,44)
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 78.862,10. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L88) rotula 'Receitas Sindicatos'; el PDF dice 'Receitas Timemania' (78.862,10)
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 2.338.741,92. Onboarding to-do 165 (Claude, 2026-10-09): columna 2013 (no se carga); el PDF dice 2.338.741,82
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 1.880.000,00. Onboarding to-do 165 (Claude, 2026-10-09): el PDF dice 1.890.000,00; la fila que se carga va corregida por el ajuste fila
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 288.754,80. Onboarding to-do 165 (Claude, 2026-10-09): Receitas Publicidade 2014, confirmado en la imagen de la pág. 1
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 365.952,66. Onboarding to-do 165 (Claude, 2026-10-09): columna 2013 (no se carga); el PDF dice 365.952,68
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 3.268.157,41. Onboarding to-do 165 (Claude, 2026-10-09): el PDF dice 3.268.187,41; la fila que se carga va corregida por el ajuste fila
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2023, 2024, 2025): Salarios y primas (plantel y cuerpo técnico)
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).

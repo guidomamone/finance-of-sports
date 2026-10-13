@@ -144,7 +144,7 @@ tools/cargar.mjs (2026-10-02)
 ### Meta
 
 ```text
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 0 (compuerta: año anterior): "Préstamos y sobregiros bancarios" pág. 13; cash escalón 0 (compuerta: año anterior): "Efectivo" pág. 13
 ```
@@ -248,7 +248,7 @@ tools/cargar.mjs (2026-10-02)
 ### Meta
 
 ```text
-2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento siguiente): "Préstamos y sobregiros bancarios" pág. 13; cash escalón 1 (compuerta: documento siguiente): "Bancos" pág. 13 + "Caja" pág. 13
 ```
@@ -392,8 +392,8 @@ tools/cargar.mjs (2026-10-02)
 ### Meta
 
 ```text
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = 1.021.768. Cerrado por la fuerza por decisión de Guido: el resultado antes de impuestos (1.609.817) cierra con las notas, pero ni restando ni sumando el 'Total impuesto a cargo' (589.589) da el resultado impreso; el impuesto contable es 588.049.
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: 'que nunca más vuelva como problema o duda'. Las dudas de localizar y extraer de 2023 las contesta la aritmética (cierra con las notas) y el ajuste de resultado final.
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = 1.021.768. Cerrado por la fuerza por decisión de Guido: el resultado antes de impuestos (1.609.817) cierra con las notas, pero ni restando ni sumando el 'Total impuesto a cargo' (589.589) da el resultado impreso; el impuesto contable es 588.049.
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: 'que nunca más vuelva como problema o duda'. Las dudas de localizar y extraer de 2023 las contesta la aritmética (cierra con las notas) y el ajuste de resultado final.
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-02): cash escalón 1 (compuerta: documento siguiente): "Bancos" pág. 13 + "Caja" pág. 13
 tools/caja-deuda.mjs (2026-10-05): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Préstamos y sobregiros bancarios del cuadro de instrumentos financieros, criterio del club; su columna 2022 (238.144) coincide con el documento 2022
@@ -503,9 +503,9 @@ tools/cargar.mjs (2026-10-02)
 ### Meta
 
 ```text
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = (175.117). Localizar no eligió el bloque del resultado impreso (el documento trae solo notas). Nota de patrimonio 'Resultados del ejercicio (175.117)'; lo repite el documento 2023 en su columna 2022 (L1099). Antes de impuestos: (199.789), L789.
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra por ajuste manual; las dudas de localizar y extraer no vuelven a la cola.
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): desglose = 54.000. Guido 2026-10-02 (opción a): el renglón dice 2.334.630 y su detalle suma 2.280.630 (error del documento); se abre igual con la diferencia como 'Diferencia en el documento', patrocinio.
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = (175.117). Localizar no eligió el bloque del resultado impreso (el documento trae solo notas). Nota de patrimonio 'Resultados del ejercicio (175.117)'; lo repite el documento 2023 en su columna 2022 (L1099). Antes de impuestos: (199.789), L789.
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra por ajuste manual; las dudas de localizar y extraer no vuelven a la cola.
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): desglose = 54.000. Guido 2026-10-02 (opción a): el renglón dice 2.334.630 y su detalle suma 2.280.630 (error del documento); se abre igual con la diferencia como 'Diferencia en el documento', patrocinio.
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-05): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Préstamos y sobregiros bancarios del cuadro de instrumentos financieros (nota 5), criterio del club; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Efectivo del cuadro de instrumentos financieros (nota 5); el documento 2023 lo abre en Bancos 239.614 + Caja 2.152
 ```
@@ -587,9 +587,9 @@ tools/cargar.mjs (2026-10-02)
 ### Meta
 
 ```text
-2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
-ajuste manual (Admin/ajustes-manuales.jsonl, 2026-10-05): grossDebt = "Préstamos y sobregiros bancarios" del cuadro de instrumentos financieros (nota 5.A, .md L506); antes 102.513, solo el corto plazo
+ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-05): grossDebt = "Préstamos y sobregiros bancarios" del cuadro de instrumentos financieros (nota 5.A, .md L506); antes 102.513, solo el corto plazo
 tools/caja-deuda.mjs (2026-10-05): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Efectivo del cuadro de instrumentos financieros (nota 5.A) = Bancos 14.963 + Caja 5.073
 ```
 
@@ -736,7 +736,7 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-05): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Bancos 148.882 + Caja 2.483 (nota de efectivo; el cuadro de instrumentos financieros del documento 2021 imprime 151.365 para 2020)
 ```
@@ -816,9 +816,9 @@ tools/cargar.mjs (2026-10-02)
 ### Meta
 
 ```text
-2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = (52,122). Localizar (notas como estado) no vio el resultado impreso y el año quedó como fuente. 'Utilidad Contable' de la liquidación del impuesto 2019; el documento 2020 lo imprime como 'Resultado Año 2019 (52,122)'.
-2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): fila = (48,426). El total de costos financieros está impreso en positivo y entraba sumando como ingreso; el impuesto calculado daba 114.320 en vez de 17.462.
-2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra por ajuste manual; las dudas de localizar y extraer no vuelven a la cola.
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = (52,122). Localizar (notas como estado) no vio el resultado impreso y el año quedó como fuente. 'Utilidad Contable' de la liquidación del impuesto 2019; el documento 2020 lo imprime como 'Resultado Año 2019 (52,122)'.
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): fila = (48,426). El total de costos financieros está impreso en positivo y entraba sumando como ingreso; el impuesto calculado daba 114.320 en vez de 17.462.
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra por ajuste manual; las dudas de localizar y extraer no vuelven a la cola.
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: año anterior): "Total Prestamos y Sobregiros Bancarios" pág. 16
 tools/caja-deuda.mjs (2026-10-05): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Total Efectivo y Equivalente de Efectivo (nota 8; su columna 2018, 919.687, es lo cargado)
@@ -878,9 +878,9 @@ tools/cargar.mjs (2026-10-02)
 ### Meta
 
 ```text
-2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = (639,077). Localizar (notas como estado) no vio el resultado impreso y el año quedó como fuente. El resultado de 2018 está en la nota de resultados acumulados; lo repiten 2019 (L767) y 2020.
-2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): fila = (103,918). Nota de gastos financieros (bancarios 31.728 + comisiones 12.692 + intereses 266 + diferencial cambiario 59.233) con el total rotulado 'Total Otros Ingresos' en el PDF, como en 2017: es un costo. Con el signo bien, el impuesto calculado da 40.604 y el documento imprime 'Impuesto de Renta y Complementarios 40,612' (L448).
-2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra por ajuste manual; las dudas de localizar y extraer no vuelven a la cola.
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = (639,077). Localizar (notas como estado) no vio el resultado impreso y el año quedó como fuente. El resultado de 2018 está en la nota de resultados acumulados; lo repiten 2019 (L767) y 2020.
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): fila = (103,918). Nota de gastos financieros (bancarios 31.728 + comisiones 12.692 + intereses 266 + diferencial cambiario 59.233) con el total rotulado 'Total Otros Ingresos' en el PDF, como en 2017: es un costo. Con el signo bien, el impuesto calculado da 40.604 y el documento imprime 'Impuesto de Renta y Complementarios 40,612' (L448).
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra por ajuste manual; las dudas de localizar y extraer no vuelven a la cola.
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Televisión, Premios por competencias, Venta de Jugadores
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
@@ -1043,14 +1043,14 @@ tools/cargar.mjs (2026-10-04)
 ### Meta
 
 ```text
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): fila = 41,780. Nota 23 partida por un salto de página: las filas quedaron en la pág. 18 y el total solo en la 19; extraer la dejó afuera. (1.468) + 36.151 + 4.658 + 1 + 1.615 + 823 = 41.780.
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): fila = (3,581). El PDF rotula 'Total Otros Ingresos' el total de la nota 25 COSTOS FINANCIEROS (gastos bancarios 389 + comisiones 1.944 + intereses 1.249): es un costo.
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = 1,347,094. El documento no imprime el impuesto en ningún lado (sin estado de resultados, sin nota de impuesto, sin conciliación fiscal); el resultado final está en la nota de patrimonio y lo repiten 2018-2020. El impuesto se deduce.
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 4,220,658. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 1,027,450. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 70,183. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 1,600. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): fila = 41,780. Nota 23 partida por un salto de página: las filas quedaron en la pág. 18 y el total solo en la 19; extraer la dejó afuera. (1.468) + 36.151 + 4.658 + 1 + 1.615 + 823 = 41.780.
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): fila = (3,581). El PDF rotula 'Total Otros Ingresos' el total de la nota 25 COSTOS FINANCIEROS (gastos bancarios 389 + comisiones 1.944 + intereses 1.249): es un costo.
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = 1,347,094. El documento no imprime el impuesto en ningún lado (sin estado de resultados, sin nota de impuesto, sin conciliación fiscal); el resultado final está en la nota de patrimonio y lo repiten 2018-2020. El impuesto se deduce.
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 4,220,658. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 1,027,450. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 70,183. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 1,600. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
 tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Televisión, Premios por competencias, Venta de Jugadores
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).

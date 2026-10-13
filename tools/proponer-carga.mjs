@@ -704,7 +704,7 @@ export async function briefingFor(club, year, md) {
 
 async function backtest() {
   const site = loadSite();
-  const ledger = readFileSync(resolve(root, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l));
+  const ledger = readFileSync(resolve(root, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l));
   let cands = ledger.filter((e) => e.cargado && e.tieneMd && !e.pdf.includes('memoria') && !e.pdf.includes('presupuesto'));
   const jobs = [];
   await pool(cands, async (e) => {

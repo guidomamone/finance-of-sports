@@ -19,7 +19,7 @@
 //   - claude: { categoria, confianza, motivo, modelo }  (lo que devuelve categorizarConClaude() de tools/categorizar-claude.mjs)
 // Nunca se guarda una respuesta con error ni sin categoría. Si la misma clave se guarda dos veces, al leer gana la última.
 //
-// DIFERENCIA CON Admin/categorias-aprendidas.jsonl (tools/memoria-categorias.mjs): aquel es CONOCIMIENTO (solo lo que Claude resolvió con
+// DIFERENCIA CON Admin/registros/categorias-aprendidas.jsonl (tools/memoria-categorias.mjs): aquel es CONOCIMIENTO (solo lo que Claude resolvió con
 // confianza >= 0,80, trackeado en git, se usa como precedente y como ejemplos para otros clubes). Esto es solo para no volver a preguntar:
 // guarda TODAS las respuestas, también las de confianza baja, y no se muestra a ningún motor.
 //

@@ -271,7 +271,7 @@ export async function proponer(mdRel, { jev = false } = {}) {
 }
 
 // ---------------------------------------------------------------- LA REGLA DEL CLUB (lo que usa el pipeline)
-// El ajuste `perimetro` se fija por CLUB (Admin/ajustes-manuales.jsonl), pero la propuesta es por documento. Se miran TODOS los .md del club
+// El ajuste `perimetro` se fija por CLUB (Admin/registros/ajustes-manuales.jsonl), pero la propuesta es por documento. Se miran TODOS los .md del club
 // (no solo los de la lista), agrupados por ejercicio (cierre del registro):
 //   - de cada ejercicio, qué perímetros HAY: "solo uno" (paso A) o los dos (dos documentos del mismo cierre, o uno con los dos);
 //   - los votos: lo que eligió el paso B en los documentos que traen los dos.

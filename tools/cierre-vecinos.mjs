@@ -30,6 +30,6 @@ export function cierrePorVecinos(pdf, registro) {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const registro = readFileSync(resolve(import.meta.dirname, '..', 'Admin', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+  const registro = readFileSync(resolve(import.meta.dirname, '..', 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
   console.log(JSON.stringify(cierrePorVecinos(process.argv[2], registro), null, 1));
 }

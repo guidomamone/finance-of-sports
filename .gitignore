@@ -124,10 +124,10 @@ Admin/api-keys/*.env
 *.claude-check.md
 *.mistral-redo.md
 *.rubros.json
-Admin/.pipeline-lista-actual.txt
-Admin/.pipeline-lista-jev.txt
+Admin/registros/.pipeline-lista-actual.txt
+Admin/registros/.pipeline-lista-jev.txt
 *.antes-sumas.md
-Admin/.paginas-cache.json
+Admin/registros/.paginas-cache.json
 *.jev.json
 # tools/categorizar-claude.mjs --listos: categoría final por rubro (precedente / Jev / Claude), mismo criterio que *.jev.json
 *.categorias.json
@@ -142,5 +142,5 @@ Generados/**
 !Generados/**/*.json
 
 # Lista temporal que tools/lote.mjs escribe para la etapa 7 en cada corrida.
-Admin/.lote-lista-actual.txt
-Admin/.candado.lock
+Admin/registros/.lote-lista-actual.txt
+Admin/registros/.candado.lock

@@ -7,10 +7,10 @@
 // muy mecánico ya?"). Hasta acá el lote terminaba en una PROPUESTA y una sesión hacía a mano lo que faltaba: el alta del club nuevo, el color
 // de marca, `cargar.mjs --escribir` y el commit. En el onboarding de Brasil (to-do 165, 37 años) eso se hizo con un script de scratchpad, y
 // su paso del color falló una vez y dejó un alta a medias. Nada de eso es una decisión: el alta la propone `alta-club.mjs`, el color ya lo
-// eligió la revisión del alta (Admin/altas-revision.jsonl) y `cargar.mjs --escribir` corre la auditoría y revierte solo si da P0/P1.
+// eligió la revisión del alta (Admin/registros/altas-revision.jsonl) y `cargar.mjs --escribir` corre la auditoría y revierte solo si da P0/P1.
 //
 // LA ESCALERA DE CADA DOCUMENTO (gratis salvo lo que ya hace cargar.mjs, que es gratis):
-//   0. descartado (Admin/documentos-descartados.txt) o el año ya está en el sitio      -> no se toca
+//   0. descartado (Admin/registros/documentos-descartados.txt) o el año ya está en el sitio      -> no se toca
 //   1. el ensayo de cargar.mjs (--desde-verificacion) frena por algo que no es el club  -> queda frenado, con su primer motivo
 //   2. frena SOLO por el club (club nuevo)                                              -> candidato con alta
 //   3. no frena                                                                         -> candidato
@@ -56,12 +56,12 @@ const ultimaLinea = (r) => { const ls = `${r.stdout || ''}\n${r.stderr || ''}`.s
 
 // Los archivos que toca un alta o una carga (generadores incluidos), para el commit y para revertir un alta.
 const SITIO = ['data', 'index.html', 'fuentes', 'fuentes.html', 'sitemap.xml'];
-const ADMIN = ['Admin/ajustes-manuales.jsonl', 'Admin/documentos-descartados.txt', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/categorias-aprendidas.jsonl', 'Admin/perfil-clubes.jsonl', 'Admin/cola-revision.jsonl', 'Admin/cargar-ultimo.jsonl', 'Admin/altas-club.jsonl', 'Admin/carga-clubes'];
+const ADMIN = ['Admin/registros/ajustes-manuales.jsonl', 'Admin/registros/documentos-descartados.txt', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/registros/categorias-aprendidas.jsonl', 'Admin/registros/perfil-clubes.jsonl', 'Admin/registros/cola-revision.jsonl', 'Admin/registros/cargar-ultimo.jsonl', 'Admin/registros/altas-club.jsonl', 'Admin/carga-clubes'];
 
-const descartados = new Set(leerLineas('Admin/documentos-descartados.txt'));
+const descartados = new Set(leerLineas('Admin/registros/documentos-descartados.txt'));
 const docs = leerLineas(LISTA).filter((d) => !descartados.has(d));
-const altas = new Map(leerJsonl('Admin/altas-club.jsonl').map((o) => [o.carpeta, o]));
-const revision = new Map(leerJsonl('Admin/altas-revision.jsonl').map((o) => [o.clubId, o]));
+const altas = new Map(leerJsonl('Admin/registros/altas-club.jsonl').map((o) => [o.carpeta, o]));
+const revision = new Map(leerJsonl('Admin/registros/altas-revision.jsonl').map((o) => [o.clubId, o]));
 
 // 1) El ensayo de cada documento (cargar.mjs sin --escribir: no toma el candado ni escribe el sitio).
 const clubes = new Map(); // carpeta -> [{ pdf, year, alta }]
@@ -91,7 +91,7 @@ for (const [carpeta, xs] of clubes) {
   if (!reg || reg.estado !== 'listo-para-alta' || !reg.clubId) { for (const x of xs) frenados.push({ pdf: x.pdf, motivo: `[alta] el registro de altas da "${reg?.estado || 'sin línea'}" (node tools/alta-club.mjs --todos)` }); continue; }
   const rev = revision.get(reg.clubId);
   const color = rev && Object.prototype.hasOwnProperty.call(rev, 'brandColor') ? rev.brandColor : undefined;
-  if (!(color === null || /^#[0-9A-F]{6}$/i.test(String(color)))) { for (const x of xs) frenados.push({ pdf: x.pdf, motivo: `[alta] ${reg.clubId} sin color elegido en Admin/altas-revision.jsonl (${color === undefined ? 'no está' : JSON.stringify(color)})` }); continue; }
+  if (!(color === null || /^#[0-9A-F]{6}$/i.test(String(color)))) { for (const x of xs) frenados.push({ pdf: x.pdf, motivo: `[alta] ${reg.clubId} sin color elegido en Admin/registros/altas-revision.jsonl (${color === undefined ? 'no está' : JSON.stringify(color)})` }); continue; }
   plan.push({ carpeta, xs, alta: { clubId: reg.clubId, color, club: reg.club, pais: reg.pais } });
 }
 

@@ -15,7 +15,7 @@ Estados de cada campo:
 
 ## 1. Resultado sobre toda la población (un `.md` por carpeta de club sin nada `cargado`)
 
-Salieron del registro `Admin/transcripciones-estado.jsonl` las carpetas de club sin ningún
+Salieron del registro `Admin/registros/transcripciones-estado.jsonl` las carpetas de club sin ningún
 documento `cargado` que tienen al menos un `.md`: 164 carpetas. De cada una se tomó el `.md` más
 reciente, con preferencia por los `listo`. Corrida completa: 16 s, 0 llamadas a API.
 

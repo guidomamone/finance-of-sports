@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Rusia/Krylia Sovetov Samara/bfo-2021-dato
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "kryliasovetovsamara-ru" — slug de "Krylia Sovetov Samara" + '-ru' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "AO Professional Football Club Krylia Sovetov" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social (АО «Профессиональный футбольный 
+  name               ok        "AO Professional Football Club Krylia Sovetov" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social (АО «Профессиональный футбольный 
   displayName        ok        "Krylia Sovetov Samara" — nombre de la carpeta del club en Clubes/
   country            ok        "RU" — carpeta de país "Rusia" (tabla PAISES)
   reportingCurrency  ok        "RUB" — moneda de curso legal de Rusia

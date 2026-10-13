@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Rusia/Spartak Moscow/bfo-2021-datos.md
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "spartakmoscow-ru" — slug de "Spartak Moscow" + '-ru' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "AO Football Club Spartak-Moscow" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): Revisión del alta (Claude, 2026-10-09): АО "Футбольный клуб "Спартак-Москва" (ИНН 7728
+  name               ok        "AO Football Club Spartak-Moscow" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): Revisión del alta (Claude, 2026-10-09): АО "Футбольный клуб "Спартак-Москва" (ИНН 7728
   displayName        ok        "Spartak Moscow" — nombre de la carpeta del club en Clubes/
   country            ok        "RU" — carpeta de país "Rusia" (tabla PAISES)
   reportingCurrency  ok        "RUB" — moneda de curso legal de Rusia

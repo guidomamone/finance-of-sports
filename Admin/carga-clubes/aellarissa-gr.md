@@ -176,7 +176,7 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): sin-dudas. Guido 2026-10-03: se carga por función (costo de ventas + administración + comercialización); la nota 16 suma también los intereses (7.608,42) y el escalón 1 no la abre
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): sin-dudas. Guido 2026-10-03: se carga por función (costo de ventas + administración + comercialización); la nota 16 suma también los intereses (7.608,42) y el escalón 1 no la abre
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: año anterior): "Δάνεια" pág. 7; cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7

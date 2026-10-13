@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Rusia/Zenit/bfo-2021-datos.md
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "zenit-ru" — slug de "Zenit" + '-ru' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "AO Football Club Zenit" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): Revisión del alta (Claude, 2026-10-09): АО "ФК "Зенит" (ИНН 7812005799)
+  name               ok        "AO Football Club Zenit" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): Revisión del alta (Claude, 2026-10-09): АО "ФК "Зенит" (ИНН 7812005799)
   displayName        ok        "Zenit" — nombre de la carpeta del club en Clubes/
   country            ok        "RU" — carpeta de país "Rusia" (tabla PAISES)
   reportingCurrency  ok        "RUB" — moneda de curso legal de Rusia

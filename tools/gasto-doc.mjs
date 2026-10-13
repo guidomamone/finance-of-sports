@@ -11,7 +11,7 @@
 //   Claude    Admin/registros/api/claude-api.jsonl          localizar (y su segunda vuelta localizar-2), extraer, extraer-reintento,
 //                                                        categorizar, caja-deuda (con la ruta real del PDF)
 //   Mistral   Admin/registros/api/mistral.jsonl             transcribir o re-transcribir
-//   resolver  Admin/transcripciones-verificaciones.jsonl `costoUsd` por documento (etapa 2, escalón 1a; sus llamadas a Gemini y Claude
+//   resolver  Admin/registros/transcripciones-verificaciones.jsonl `costoUsd` por documento (etapa 2, escalón 1a; sus llamadas a Gemini y Claude
 //                                                        van con rutas temporales, por eso se toma el total que deja el resolver)
 //   validar   lo pasa lote.mjs (`extra`): las páginas escaneadas que leyó Gemini en la etapa 4 (también con rutas temporales)
 // Familias para contar repeticiones: localizar-2 es parte de localizar; extraer-reintento cuenta como extraer.
@@ -36,7 +36,7 @@ export function gastoPorDocumento(docs, { desde, hasta = '9999', registro = [], 
   for (const x of leer('Admin/registros/api/claude-api.jsonl')) if (set.has(x.pdf)) pagos.push({ pdf: x.pdf, tarea: x.tarea, ts: x.ts, usd: x.costUsd || 0 });
   for (const x of leer('Admin/registros/api/mistral.jsonl')) if (set.has(x.pdf)) pagos.push({ pdf: x.pdf, tarea: 'mistral', ts: x.ts, usd: x.costUsd || 0 });
   // La línea 'validar-bloques (proceso nuevo)' la escribe verificar.mjs copiando la validación anterior (con su costoUsd): no es un pago.
-  for (const x of leer('Admin/transcripciones-verificaciones.jsonl')) { const pdf = mdAPdf.get(x.md); if (pdf && set.has(pdf) && x.costoUsd && !/^validar-bloques/.test(x.method || '')) pagos.push({ pdf, tarea: 'resolver', ts: x.ts, usd: x.costoUsd }); }
+  for (const x of leer('Admin/registros/transcripciones-verificaciones.jsonl')) { const pdf = mdAPdf.get(x.md); if (pdf && set.has(pdf) && x.costoUsd && !/^validar-bloques/.test(x.method || '')) pagos.push({ pdf, tarea: 'resolver', ts: x.ts, usd: x.costoUsd }); }
   const out = [];
   for (const pdf of docs) {
     const P = pagos.filter((p) => p.pdf === pdf).sort((a, b) => String(a.ts).localeCompare(String(b.ts)));
@@ -66,7 +66,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const f = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
   if (!f('--lista') || !f('--desde')) { console.error('Uso: node tools/gasto-doc.mjs --lista <archivo> --desde <ISO> [--hasta <ISO>]'); process.exit(1); }
   const docs = readFileSync(resolve(ROOT, f('--lista')), 'utf8').split('\n').map((l) => l.trim().replace(/^testigo\s+/i, '')).filter((l) => l && !l.startsWith('#'));
-  const registro = leer('Admin/transcripciones-estado.jsonl');
+  const registro = leer('Admin/registros/transcripciones-estado.jsonl');
   const g = gastoPorDocumento(docs, { desde: f('--desde'), hasta: f('--hasta') || '9999', registro });
   console.log(`GASTO POR DOCUMENTO (${f('--desde')} a ${f('--hasta') || 'hoy'}; validar con Gemini no figura suelto, lo anota el lote):`);
   for (const l of lineasGasto(g)) console.log(l);

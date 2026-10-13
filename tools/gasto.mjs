@@ -10,7 +10,7 @@
 //   - Admin/registros/api/mistral.jsonl, Admin/registros/api/gemini.jsonl, Admin/registros/api/claude-api.jsonl: una línea por llamada
 //     con `costUsd`. OJO: cuando la llamada la hace tools/resolver-inventario.mjs, el `pdf` de esos logs es un archivo temporal
 //     (`/var/folders/.../lote0.pdf`, las páginas recortadas), así que NO sirve para saber de qué documento era. Por eso:
-//   - Admin/transcripciones-verificaciones.jsonl: el resolver deja ahí `costoUsd` POR DOCUMENTO (lo que gastó validándolo).
+//   - Admin/registros/transcripciones-verificaciones.jsonl: el resolver deja ahí `costoUsd` POR DOCUMENTO (lo que gastó validándolo).
 //     Es la fuente del gasto por documento de la fase de validación. La transcripción inicial de Mistral sí trae la ruta real.
 //   - Jev no registra costo (solo tokens en los backtests); se informa aparte como "sin registro".
 //
@@ -76,7 +76,7 @@ const mistralPorPdf = {};
 for (const r of readJsonl(motores.mistral)) if (r.pdf && !r.pdf.startsWith('/')) (mistralPorPdf[r.pdf] ??= []).push({ ts: String(r.ts), usd: Number(r.costUsd) || 0 });
 const ultimaVerif = {};
 const yaContado = new Set();
-for (const v of readJsonl('Admin/transcripciones-verificaciones.jsonl')) {
+for (const v of readJsonl('Admin/registros/transcripciones-verificaciones.jsonl')) {
   if (!v.md) continue;
   const pdf = v.md.replace(/\.md$/, '.pdf');
   const desde = ultimaVerif[pdf] || ''; ultimaVerif[pdf] = String(v.ts);

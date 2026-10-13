@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Rusia/Dynamo Makhachkala/bfo-2021-datos.m
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "dynamomakhachkala-ru" — slug de "Dynamo Makhachkala" + '-ru' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "ANO Football Club Dynamo" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social del documento (АНО «Футбольный Кл
+  name               ok        "ANO Football Club Dynamo" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social del documento (АНО «Футбольный Кл
   displayName        ok        "Dynamo Makhachkala" — nombre de la carpeta del club en Clubes/
   country            ok        "RU" — carpeta de país "Rusia" (tabla PAISES)
   reportingCurrency  ok        "RUB" — moneda de curso legal de Rusia

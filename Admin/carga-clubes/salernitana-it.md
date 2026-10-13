@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Italia/Salernitana/Salernitana-bilancio-3
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "salernitana-it" — slug de "Salernitana" + '-it' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "U.S. Salernitana 1919 S.r.l." — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): Claude 2026-10-08 (revisión Sonnet de las altas de Italia): nombre legal; el escaneo d
+  name               ok        "U.S. Salernitana 1919 S.r.l." — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): Claude 2026-10-08 (revisión Sonnet de las altas de Italia): nombre legal; el escaneo d
   displayName        ok        "Salernitana" — nombre de la carpeta del club en Clubes/
   country            ok        "IT" — carpeta de país "Italia" (tabla PAISES)
   reportingCurrency  ok        "EUR" — moneda de curso legal de Italia

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // ============================================================================
 // tools/perfil-clubes.mjs — EL PERFIL DE CADA CLUB que hace falta para saber si un 0 en el formato simplificado es real o es un desglose que
-// se perdió. Gratis (solo lee y escribe Admin/perfil-clubes.jsonl).
+// se perdió. Gratis (solo lee y escribe Admin/registros/perfil-clubes.jsonl).
 //
 // POR QUÉ EXISTE (Versión 340, diseño aprobado por Guido el 2026-10-01). La etapa 8 (cargar.mjs) dispara un REINTENTO cuando una categoría
 // da 0 en un año. Medido sobre 241 años ya cargados: salarios del plantel nunca da 0, televisión 2% y estadio 1% (un 0 ahí es casi seguro un
@@ -9,7 +9,7 @@
 // son sociedades sin socios) y "otras secciones deportivas" en el 63-68% (clubes sin básquet ni otros deportes). Para esas dos, el 0 solo
 // dispara el reintento si el perfil dice que el club SÍ tiene socios / SÍ tiene otros deportes.
 //
-// EL ARCHIVO: Admin/perfil-clubes.jsonl (trackeado). Una línea por club y por fuente: {clubId, nombre, pais, socios, sociosEvidencia,
+// EL ARCHIVO: Admin/registros/perfil-clubes.jsonl (trackeado). Una línea por club y por fuente: {clubId, nombre, pais, socios, sociosEvidencia,
 // otrosDeportes, otrosDeportesEvidencia, fuente, fecha}. Al leer, por club, cada campo toma el valor de la ÚLTIMA línea que lo trae (una
 // respuesta de Guido en la cola, fuente 'guido-cola', pisa lo que armó el subagente). true / false / null (no se sabe).
 // La primera versión (66 clubes sudamericanos) la armó un subagente con evidencia citada de data/ y de las transcripciones.
@@ -24,7 +24,7 @@ import { readFileSync, appendFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const ROOT = resolve(import.meta.dirname, '..');
-export const ARCHIVO = resolve(ROOT, 'Admin', 'perfil-clubes.jsonl');
+export const ARCHIVO = resolve(ROOT, 'Admin', 'registros', 'perfil-clubes.jsonl');
 const CAMPOS = ['socios', 'otrosDeportes'];
 
 function leer() {

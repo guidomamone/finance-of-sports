@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Rusia/Akron Tolyatti/bfo-2021-datos.md
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "akrontolyatti-ru" — slug de "Akron Tolyatti" + '-ru' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "ANO Football Club Akron" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): Revisión del alta (Claude, 2026-10-09): АНО "Футбольный клуб "Акрон" (ИНН 6376025783)
+  name               ok        "ANO Football Club Akron" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): Revisión del alta (Claude, 2026-10-09): АНО "Футбольный клуб "Акрон" (ИНН 6376025783)
   displayName        ok        "Akron Tolyatti" — nombre de la carpeta del club en Clubes/
   country            ok        "RU" — carpeta de país "Rusia" (tabla PAISES)
   reportingCurrency  ok        "RUB" — moneda de curso legal de Rusia

@@ -63,7 +63,7 @@ ni en el comentario de ningún archivo de código.
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
 165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (decisión de Guido, 2026-10-07; estado al 2026-10-10). Un país por vez, con el pipeline
-    (skill club-or-year-onboarding; club nuevo: revisión del alta en Admin/altas-revision.jsonl: nombre, color, perímetro, cierres y ligas).
+    (skill club-or-year-onboarding; club nuevo: revisión del alta en Admin/registros/altas-revision.jsonl: nombre, color, perímetro, cierres y ligas).
     HECHO: Brasil completo (lotes 56-63) y Rusia desde el fisco (tools/bfo-rusia.mjs, 16 clubes). Etapa 2 (transcribir) de los 14 países
     del (c) hecha: lote 66 (468 documentos). Nombres legales de las altas: 24 contestados con cita (ajustes `name`). Gestiones de los clubes
     nuevos de Grecia, Rep. Checa, Portugal, Noruega, Países Bajos y Turquía cargadas (to-do 195).
@@ -80,7 +80,7 @@ ni en el comentario de ningún archivo de código.
        2026-10-10): Noruega 8, Portugal 7, Rep. Checa 7, Colombia 4, Países Bajos 4, Turquía 4, Ucrania 3, Corea 2, Suiza 2, Bélgica,
        Croacia y Dinamarca 1. Ninguna tiene todavía un año verificado: "listo para alta" es solo la ficha del club.
     c) Perímetro en pregunta (decide el `name` ya registrado): Molde, Vålerenga, Go Ahead Eagles, Basel, Pardubice, Aalesund, Fredrikstad,
-       Sarpsborg 08. Las preguntas de la revisión del alta siguen en Admin/altas-revision.jsonl.
+       Sarpsborg 08. Las preguntas de la revisión del alta siguen en Admin/registros/altas-revision.jsonl.
     d) Rusia: las tablas de otros ingresos y gastos que no suman el código del formulario (Krasnodar, Krylia 2021-2025, Rostov 2025, Rubin
        2022-2025: la nota en bruto, el formulario en neto). Sin daño hoy: esos años quedan con el renglón entero.
     Mejoras de script vistas en Grecia: to-dos 210-215.
@@ -142,10 +142,9 @@ ni en el comentario de ningún archivo de código.
     `diff` antes/después de `audit.js`, `estado.mjs` y `lote.mjs --lista Admin/lotes/prueba-rapida.txt` (ensayo gratis). Un commit por paso.
     Los registros que solo se agregan (`cola-revision.jsonl`, `cargar-ultimo.jsonl`) citan rutas viejas como texto: no se reescriben,
     pero hay que confirmar que ningún script las abre. HECHO: raíz (e2.json, Business Books), lotes (`Admin/lotes/`, los cerrados en Archive), claves (`Admin/api-keys/`,
-    `schema.sql` a `tools/supabase/`) logs de gasto de API (`Admin/registros/api/`) y
-    mediciones (`Admin/mediciones/`).
+    `schema.sql` a `tools/supabase/`) logs de gasto de API (`Admin/registros/api/`),
+    mediciones (`Admin/mediciones/`) y registros del pipeline (`Admin/registros/`; la evidencia de `Admin/carga-clubes/` cita la ruta nueva).
     FALTA, en este orden (decidido con Guido):
-      d) Registros del pipeline (los .jsonl/.txt de la raíz de Admin y los 4 ocultos) a `Admin/registros/`. El paso más grande (~20 tools).
       e) `sourcing-europa-este-scripts/` a `tools/sourcing-europa-este/`.
       f) `fuentes/`: las notas internas (carpetas de país, `_indice/`, `README.md`) a `Admin/sourcing/`; en `fuentes/` quedan solo las
          páginas públicas `<clubId>.html` (son URLs indexadas: no se mueven). ~30 archivos las citan, incluido `CLAUDE.md`.

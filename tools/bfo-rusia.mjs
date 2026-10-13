@@ -27,7 +27,7 @@
 //     (± 2). El resultado del año pasa a ser 2400 + (6200 − 6240) − 6300.
 // QUÉ ESCRIBE. Por cada JSON, una TRANSCRIPCIÓN `bfo-AAAA-datos.md` al lado (generada, fiel al JSON: es el documento fuente legible y lo
 // que lee `analizar()` de alta-club.mjs para el nombre, el cierre, la moneda, el tipo de cambio y la liga). Después, con --escribir:
-//   - club nuevo: `alta-club.mjs --escribir` con el año más viejo y el color de `Admin/altas-revision.jsonl` (sin color, no hay alta);
+//   - club nuevo: `alta-club.mjs --escribir` con el año más viejo y el color de `Admin/registros/altas-revision.jsonl` (sin color, no hay alta);
 //   - cada año: la propuesta P con el mismo formato que arma cargar.mjs, escrita con `escribir(P)` de cargar.mjs (que corre los
 //     generadores y la auditoría y revierte si da P0/P1), y un commit por año (el alta en el del primer año). Sin push.
 //
@@ -177,8 +177,8 @@ const carpetas = readdirSync(DIR, { withFileTypes: true }).filter((d) => d.isDir
 const { analizar } = await import('./alta-club.mjs');
 const { cargarSitio, escribir } = await import('./cargar.mjs');
 let sitio = cargarSitio();
-const altas = new Map(leerJsonl(resolve(ROOT, 'Admin', 'altas-club.jsonl')).map((o) => [o.carpeta, o]));
-const revision = new Map(leerJsonl(resolve(ROOT, 'Admin', 'altas-revision.jsonl')).map((o) => [o.clubId, o]));
+const altas = new Map(leerJsonl(resolve(ROOT, 'Admin', 'registros', 'altas-club.jsonl')).map((o) => [o.carpeta, o]));
+const revision = new Map(leerJsonl(resolve(ROOT, 'Admin', 'registros', 'altas-revision.jsonl')).map((o) => [o.clubId, o]));
 
 if (ESCRIBIR) {
   const sucio = String(git('status', '--porcelain', '--', 'data', 'index.html', 'fuentes').stdout || '').trim();
@@ -203,7 +203,7 @@ for (const nombre of carpetas) {
   // Las preguntas del alta se miran sobre la transcripción del JSON (no sobre el registro, que analiza el documento "base" de la carpeta: en
   // Krylia y Rubin es una nota explicativa con varios tipos de cambio declarados, una duda que no existe en el JSON).
   const preguntasAlta = esNuevo && clubId ? (() => { try { const a = analizar(`${carpeta}/bfo-${anios[anios.length - 1]}-datos.md`, sitio, {}); return [...(a.campos || []), ...(a.ejercicio?.campos || [])].filter((c) => c.estado === 'pregunta').map((c) => c.campo); } catch (e) { return [`analizar falló: ${e.message.slice(0, 80)}`]; } })() : [];
-  const freno = !clubId ? 'sin clubId en el registro de altas (node tools/alta-club.mjs --todos)' : preguntasAlta.length ? `alta: preguntas sin resolver (${preguntasAlta.join(', ')})` : esNuevo && !okColor ? `alta: sin color elegido en Admin/altas-revision.jsonl (${JSON.stringify(color)})` : null;
+  const freno = !clubId ? 'sin clubId en el registro de altas (node tools/alta-club.mjs --todos)' : preguntasAlta.length ? `alta: preguntas sin resolver (${preguntasAlta.join(', ')})` : esNuevo && !okColor ? `alta: sin color elegido en Admin/registros/altas-revision.jsonl (${JSON.stringify(color)})` : null;
   console.log(`  ${nombre} → ${clubId || '?'}${esNuevo ? ` [alta, color ${okColor ? (color === null ? 'null' : color) : '—'}]` : ''}${freno ? `  FRENA: ${freno}` : ''}\n      ${linea}`);
   if (!ESCRIBIR || freno) continue;
 
@@ -236,7 +236,7 @@ for (const nombre of carpetas) {
     if (yaEnSitio(y)) { if (!P.escalon2.length) continue; P.reemplaza = true; }
     const res = escribir(P);
     if (!res.ok) { console.log(`      ${y}: NO escrito: ${res.motivo.slice(0, 200)}`); continue; }
-    git('add', '-A', '--', 'data', 'index.html', 'fuentes', 'fuentes.html', 'sitemap.xml', 'Admin/carga-clubes', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/altas-club.jsonl', `${carpeta}/bfo-${y}-datos.md`);
+    git('add', '-A', '--', 'data', 'index.html', 'fuentes', 'fuentes.html', 'sitemap.xml', 'Admin/carga-clubes', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/registros/altas-club.jsonl', `${carpeta}/bfo-${y}-datos.md`);
     const c = git('commit', '-q', '-m', `${nombre} ${y} desde el GIR BO (tools/bfo-rusia.mjs)${P.escalon2.length ? ` + escalón 2 (${P.escalon2.join(', ')})` : ''}${P.reemplaza ? ', reescrito' : ''}${altaHecha && !escritos ? ` — alta de ${clubId}, color ${color === null ? 'null' : color}` : ''}`);
     if (c.status === 0) { escritos++; commits++; sitio = cargarSitio(); console.log(`      ${y}: escrito y commiteado (${String(git('log', '--oneline', '-1').stdout).slice(0, 9)}) — ${res.audit}`); }
     else console.log(`      ${y}: escrito pero el commit falló: ${String(c.stderr).slice(0, 160)}`);

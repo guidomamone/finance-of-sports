@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Rusia/Pari Nizhny Novgorod/bfo-2021-datos
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "parinizhnynovgorod-ru" — slug de "Pari Nizhny Novgorod" + '-ru' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "ANO Football Club Pari Nizhny Novgorod" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social vigente (АНО «Футбольный клуб «Па
+  name               ok        "ANO Football Club Pari Nizhny Novgorod" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social vigente (АНО «Футбольный клуб «Па
   displayName        ok        "Pari Nizhny Novgorod" — nombre de la carpeta del club en Clubes/
   country            ok        "RU" — carpeta de país "Rusia" (tabla PAISES)
   reportingCurrency  ok        "RUB" — moneda de curso legal de Rusia

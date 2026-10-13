@@ -33,7 +33,7 @@
 //      documento (reportType), sourceId, y el PERÍMETRO (qué entidad es "el
 //      club": individual o consolidado, asociación o sociedad).
 //
-//   4. Escribe su resultado en el REGISTRO DE ALTAS `Admin/altas-club.jsonl` (una línea
+//   4. Escribe su resultado en el REGISTRO DE ALTAS `Admin/registros/altas-club.jsonl` (una línea
 //      por carpeta, con huella de las entradas: ver tools/altas-registro.mjs). Siempre,
 //      en cualquier modo salvo --backtest-claude: no depende de que quien lo corre se
 //      acuerde de anotarlo (pedido de Guido: "las IA se olvidan").
@@ -224,7 +224,7 @@
 //        misses.jsonl de las tools de lookup; con este flag, o con --escribir, se
 //        llama a las tools de verdad, que anotan cada hueco para que Guido lo vea)
 //
-//   REGISTRO (Admin/altas-club.jsonl) — gratis salvo --claude:
+//   REGISTRO (Admin/registros/altas-club.jsonl) — gratis salvo --claude:
 //   node tools/alta-club.mjs --todos
 //        todas las carpetas de Clubes/ que carpetas-clubes.mjs da como `nuevo` (sin
 //        las de agregado "_*"); elige el documento base de cada una (estado contable
@@ -801,7 +801,7 @@ export function nombreBienEscrito(nombre, md) {
 export function decidirNombre(md, displayName, carpeta, pdf, { escribirCola = true, ov = {} } = {}) {
   const claveN = (s) => norm(s).replace(/^the\s+/, '').replace(/[^a-z0-9]+/g, '');
   const aj = ajusteDe(carpeta, 'name') || (pdf ? ajusteDe(pdf, 'name') : null);
-  if (aj) return campo('name', aj.valor, `ajuste manual (Admin/ajustes-manuales.jsonl, ${aj.autor} ${aj.fecha}): ${aj.motivo}`);
+  if (aj) return campo('name', aj.valor, `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${aj.autor} ${aj.fecha}): ${aj.motivo}`);
   const { caso: cq, resp: rq } = casoYRespuesta(carpeta, 'alta', 'name', carpeta);
   if (rq && rq.decision === 'corregir' && rq.valor) return campo('name', String(rq.valor).trim(), `respuesta de Guido en la cola (${cq?.id})`);
   if (rq && rq.decision === 'aceptar' && cq?.nombrePropuesto) return campo('name', cq.nombrePropuesto, `respuesta de Guido en la cola (${cq.id}): aceptó la propuesta`);
@@ -834,11 +834,11 @@ export function analizar(docArg, sitio, ov = {}) {
   const partes = relative(resolve(ROOT, 'Clubes'), abs).split('/');
   if (partes.length < 3 || partes[0].startsWith('..')) { r.error = 'el documento no está en Clubes/<País>/<Club>/'; return r; }
   // AJUSTES MANUALES de cierre y reportType (Versión 413): escalón 0, ganan sobre la respuesta de Claude por API y sobre lo detectado.
-  for (const c of ['cierre', 'reportType']) { const a = r.pdf ? ajusteDe(r.pdf, c) : null; if (a) ov = { ...ov, [c]: { valor: a.valor, fuente: `ajuste manual (Admin/ajustes-manuales.jsonl, ${a.autor} ${a.fecha}): ${a.motivo}`, manual: true } }; }
+  for (const c of ['cierre', 'reportType']) { const a = r.pdf ? ajusteDe(r.pdf, c) : null; if (a) ov = { ...ov, [c]: { valor: a.valor, fuente: `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${a.autor} ${a.fecha}): ${a.motivo}`, manual: true } }; }
   // (Versión 562) Lo mismo para el PERÍMETRO, del documento o de todo el club (ajustePerimetroDe, el mismo escalón 0 que usa cargar.mjs).
   // Caso: lote 14, el ajuste "Bologna -> consolidado" (perimetro-senales.mjs) lo leía cargar.mjs pero no el alta, que volvía a preguntar
   // y bloqueaba --escribir.
-  { const a = r.pdf ? ajustePerimetroDe(r.pdf) : null; if (a) ov = { ...ov, perimetro: { valor: a.valor, fuente: `ajuste manual (Admin/ajustes-manuales.jsonl, ${a.autor} ${a.fecha}): ${a.motivo}`, manual: true } }; }
+  { const a = r.pdf ? ajustePerimetroDe(r.pdf) : null; if (a) ov = { ...ov, perimetro: { valor: a.valor, fuente: `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${a.autor} ${a.fecha}): ${a.motivo}`, manual: true } }; }
   const [paisCarpeta, clubCarpeta] = partes;
   r.carpeta = `Clubes/${paisCarpeta}/${clubCarpeta}/`;
   if (clubCarpeta.startsWith('_')) { r.error = `"${clubCarpeta}" es una carpeta de agregado (empieza con "_"), no un club`; return r; }
@@ -922,7 +922,7 @@ export function analizar(docArg, sitio, ov = {}) {
   }
   // El año de cierre del contenido, para confirmar el del nombre.
   let anio = anioNombre;
-  let estadoAnio = 'ok'; let fuenteAnio = ANIO_FORZADO ? '--anio' : ajAnio ? `ajuste manual (Admin/ajustes-manuales.jsonl, ${ajAnio.autor} ${ajAnio.fecha}): ${ajAnio.motivo}` : 'nombre del archivo (misma regla que onboard.mjs --quien)';
+  let estadoAnio = 'ok'; let fuenteAnio = ANIO_FORZADO ? '--anio' : ajAnio ? `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${ajAnio.autor} ${ajAnio.fecha}): ${ajAnio.motivo}` : 'nombre del archivo (misma regla que onboard.mjs --quien)';
   let preguntaAnio = null;
   // Solo se contradice al nombre del archivo con evidencia FUERTE del contenido (3+ fechas de
   // cierre, 60%+ en el mismo mes): un balance que dice una sola vez "31 de dezembro de 2023 e
@@ -1109,7 +1109,7 @@ export function analizar(docArg, sitio, ov = {}) {
   // (Versión 607) AJUSTE MANUAL `moneda`: escalón 0 de la pregunta "¿se carga en la moneda legado o se convierte a EUR?". Solo cuando el ejercicio es
   // anterior a la entrada del euro y el valor del ajuste es la moneda legado del país. Caso: Lazio 1998-99, 1999-00 y 2000-01 en liras.
   { const aMon = r.pdf ? ajusteDe(r.pdf, 'moneda') : null;
-    if (aMon && pais && pais.legado && anio && anio < pais.legado.desde && aMon.valor === pais.legado.codigo && estadoMoneda === 'pregunta') { moneda = aMon.valor; estadoMoneda = 'ok'; preguntaMoneda = null; fuenteMoneda = `ajuste manual (Admin/ajustes-manuales.jsonl, ${aMon.autor} ${aMon.fecha}): ${aMon.motivo}`; } }
+    if (aMon && pais && pais.legado && anio && anio < pais.legado.desde && aMon.valor === pais.legado.codigo && estadoMoneda === 'pregunta') { moneda = aMon.valor; estadoMoneda = 'ok'; preguntaMoneda = null; fuenteMoneda = `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${aMon.autor} ${aMon.fecha}): ${aMon.motivo}`; } }
   E.push(campo('currency', moneda, fuenteMoneda, estadoMoneda, preguntaMoneda ? { pregunta: preguntaMoneda } : {}));
 
   // Tipo de cambio
@@ -1181,7 +1181,7 @@ function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = 
   const out = [];
   // ESCALÓN 0 (Versión 373): ajuste manual de Guido (tools/ajustes.mjs, campo `fx`, en moneda por 1 USD).
   if (ajFx && isFinite(Number(String(ajFx.valor).replace(',', '.')))) {
-    out.push(campo('fx', Number(String(ajFx.valor).replace(',', '.')), `ajuste manual (Admin/ajustes-manuales.jsonl, ${ajFx.autor} ${ajFx.fecha}): ${ajFx.motivo}`, 'ok', { fxSource: 'manual' }));
+    out.push(campo('fx', Number(String(ajFx.valor).replace(',', '.')), `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${ajFx.autor} ${ajFx.fecha}): ${ajFx.motivo}`, 'ok', { fxSource: 'manual' }));
     return out;
   }
   if (ovFx && moneda && moneda !== 'USD' && estadoMoneda !== 'pregunta' && reportType !== 'official_budget') {
@@ -1580,14 +1580,14 @@ function aplicables(respuestas, r) {
 }
 
 // ============================================================================
-// EL REGISTRO (Admin/altas-club.jsonl, ver tools/altas-registro.mjs)
+// EL REGISTRO (Admin/registros/altas-club.jsonl, ver tools/altas-registro.mjs)
 // ============================================================================
 const sha1 = (x) => createHash('sha1').update(x).digest('hex');
 let _estadoTransc = null;
 function estadoTranscripciones() {
   if (_estadoTransc) return _estadoTransc;
   _estadoTransc = new Map();
-  const p = resolve(ROOT, 'Admin/transcripciones-estado.jsonl');
+  const p = resolve(ROOT, 'Admin/registros/transcripciones-estado.jsonl');
   if (existsSync(p)) for (const l of readFileSync(p, 'utf8').split('\n')) { try { const e = JSON.parse(l); if (e.md) _estadoTransc.set(e.md, e.estado); } catch { /* */ } }
   return _estadoTransc;
 }
@@ -1808,7 +1808,7 @@ async function modoTodos() {
 
 function imprimirResumen() {
   const s = resumenAltas();
-  console.log(`\nAdmin/altas-club.jsonl: ${s.total} carpetas — ${ESTADOS.map((e) => `${e} ${s.porEstado[e] || 0}`).join(' · ')}`);
+  console.log(`\nAdmin/registros/altas-club.jsonl: ${s.total} carpetas — ${ESTADOS.map((e) => `${e} ${s.porEstado[e] || 0}`).join(' · ')}`);
   console.log(`Preguntas abiertas por campo: ${Object.entries(s.preguntasPorCampo).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k} ${v}`).join(', ') || 'ninguna'}`);
   console.log(`Campos resueltos por Claude con cita verificada: ${s.resueltasPorClaude}`);
   if (s.listos.length) {

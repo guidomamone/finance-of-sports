@@ -327,10 +327,10 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): cierre = 2022-12-31. Guido 2026-10-02: el detector de período tomó la fecha de la firma (28/04/2023, L17); el ejercicio cierra el 31/12/2022 (29 menciones)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): cierre = 2022-12-31. Guido 2026-10-02: el detector de período tomó la fecha de la firma (28/04/2023, L17); el ejercicio cierra el 31/12/2022 (29 menciones)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-02: la caja de 2022 como la reclasificó el documento 2023 (sin las aplicaciones financieras de proyectos incentivados, 574.806), coherente con 2023-2025; el 2022 imprimía 721.730
-ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos bancários 28.250 + Partes relacionadas 70.283.684, .md L250/L258
+ajuste manual `deuda` (Admin/registros/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos bancários 28.250 + Partes relacionadas 70.283.684, .md L250/L258
 ```
 
 ### Liga
@@ -383,11 +383,11 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = matchday_competition. Guido 2026-10-02: como 'Vendas de ingressos e bar' (matchday_competition); R$ 6 mil, inmaterial
-2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = player_impairment. Guido 2026-10-02: pérdida con atletas dentro de despesas gerais = baja de pases, no amortización del año
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = matchday_competition. Guido 2026-10-02: como 'Vendas de ingressos e bar' (matchday_competition); R$ 6 mil, inmaterial
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = player_impairment. Guido 2026-10-02: pérdida con atletas dentro de despesas gerais = baja de pases, no amortización del año
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 7
-ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos e financiamentos 87 + 12 + partes relacionadas 51.785 (miles), .md L174/L187/L189
+ajuste manual `deuda` (Admin/registros/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos e financiamentos 87 + 12 + partes relacionadas 51.785 (miles), .md L174/L187/L189
 ```
 
 ### Liga
@@ -442,10 +442,10 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = exceptional_items. Guido 2026-10-02: provisión única por una cobranza a Corinthians por venta de un atleta, en discusión judicial; no recurrente
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = exceptional_items. Guido 2026-10-02: provisión única por una cobranza a Corinthians por venta de un atleta, en discusión judicial; no recurrente
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 8
-ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos 79 + partes relacionadas 39.971 + 9 (miles), .md L198/L204/L211
+ajuste manual `deuda` (Admin/registros/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos 79 + partes relacionadas 39.971 + 9 (miles), .md L198/L204/L211
 ```
 
 ### Liga
@@ -504,7 +504,7 @@ tools/cargar.mjs (2026-10-03)
 ```text
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 8
-ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05, to-do 143): préstamos + partes relacionadas, criterio del club; Empréstimos 27 + Débitos com partes relacionadas 32.296 (miles), .md L193/L204. caja-deuda.mjs (2026-10-03) había leído el 24 de 2018 (32,32)
+ajuste manual `deuda` (Admin/registros/ajustes-manuales.jsonl, 2026-10-05, to-do 143): préstamos + partes relacionadas, criterio del club; Empréstimos 27 + Débitos com partes relacionadas 32.296 (miles), .md L193/L204. caja-deuda.mjs (2026-10-03) había leído el 24 de 2018 (32,32)
 ```
 
 ### Liga
@@ -561,7 +561,7 @@ tools/cargar.mjs (2026-10-03)
 ```text
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-03): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 8
-ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos 24 + Débitos com partes relacionadas 27.467 (miles), .md L181/L191
+ajuste manual `deuda` (Admin/registros/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos 24 + Débitos com partes relacionadas 27.467 (miles), .md L181/L191
 ```
 
 ### Liga
@@ -651,10 +651,10 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 2.204. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 1.794. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 1.945. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 1.422. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 2.204. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 1.794. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 1.945. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 1.422. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -885,12 +885,12 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 56,16. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 21,76. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 34,40. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 857,96. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): reportType = official_balance_sheet. Guido 2026-10-02: balancete con la Demonstração do Resultado completa; la lectura 5 cierra exacto con el PREJUÍZO impreso
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): resultado-final = -3.108.722,71. Guido 2026-10-02: el PREJUIZO viene impreso sin signo; es pérdida
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 56,16. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 21,76. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 34,40. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 857,96. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): reportType = official_balance_sheet. Guido 2026-10-02: balancete con la Demonstração do Resultado completa; la lectura 5 cierra exacto con el PREJUÍZO impreso
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): resultado-final = -3.108.722,71. Guido 2026-10-02: el PREJUIZO viene impreso sin signo; es pérdida
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -1041,10 +1041,10 @@ tools/cargar.mjs (2026-10-07)
 ### Meta
 
 ```text
-2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): reportType = official_balance_sheet. Guido 2026-10-02: la página 1 trae la Demonstração do Resultado completa (pocas filas numéricas porque el club recién se fundaba)
-2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): cero-real = Salarios del plantel. Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio
-2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): cero-real = Televisión. Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio
-2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): cero-real = Estadio. Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio
+2010: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): reportType = official_balance_sheet. Guido 2026-10-02: la página 1 trae la Demonstração do Resultado completa (pocas filas numéricas porque el club recién se fundaba)
+2010: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): cero-real = Salarios del plantel. Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio
+2010: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): cero-real = Televisión. Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio
+2010: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): cero-real = Estadio. Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 

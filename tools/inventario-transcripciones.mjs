@@ -11,11 +11,11 @@
 // Cómo guarda la información (a propósito NO se escribe dentro de los .md: hay ~2200, las tools de
 // Gemini/Mistral dependen de que ciertas líneas estén al principio, y un registro aparte no se
 // desincroniza porque se REGENERA de los logs):
-//   Admin/transcripciones-estado.jsonl        -- REGENERABLE. Una línea por PDF con .md: motor que lo
+//   Admin/registros/transcripciones-estado.jsonl        -- REGENERABLE. Una línea por PDF con .md: motor que lo
 //                                                hizo, modelo, fecha, costo, otras versiones que hay
 //                                                (voces), si el ejercicio ya está cargado en el sitio, y
 //                                                el estado de validación actual.
-//   Admin/transcripciones-verificaciones.jsonl -- HISTORIAL, solo se le agregan líneas. Cada validación
+//   Admin/registros/transcripciones-verificaciones.jsonl -- HISTORIAL, solo se le agregan líneas. Cada validación
 //                                                (método, resultado, hash del .md que se validó).
 //                                                Si el .md cambia después, el hash ya no coincide y el
 //                                                estado vuelve a "sin-verificar" solo.
@@ -76,8 +76,8 @@ const dirFilter = flagVal('--dir');
 const soloArg = flagVal('--solo');
 const limit = flagVal('--limit') ? Number(flagVal('--limit')) : Infinity;
 
-const statePath = resolve(root, 'Admin', 'transcripciones-estado.jsonl');
-const verifPath = resolve(root, 'Admin', 'transcripciones-verificaciones.jsonl');
+const statePath = resolve(root, 'Admin', 'registros', 'transcripciones-estado.jsonl');
+const verifPath = resolve(root, 'Admin', 'registros', 'transcripciones-verificaciones.jsonl');
 
 const readJsonl = (p) => (existsSync(p) ? readFileSync(p, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : []);
 const sha1 = (p) => createHash('sha1').update(readFileSync(p)).digest('hex');
@@ -305,7 +305,7 @@ if (listState) {
 // Resumen
 const tally = (arr, key) => arr.reduce((a, e) => ((a[key(e)] = (a[key(e)] || 0) + 1), a), {});
 const scopeE = entries.filter((e) => !dirFilter || e.pdf.startsWith(dirFilter.replace(/\/$/, '') + '/'));
-console.log(`\n${scopeE.length} PDFs (${scopeE.filter((e) => e.tieneMd).length} con .md)${dirFilter ? ` en ${dirFilter}` : ''}. Registro en Admin/transcripciones-estado.jsonl\n`);
+console.log(`\n${scopeE.length} PDFs (${scopeE.filter((e) => e.tieneMd).length} con .md)${dirFilter ? ` en ${dirFilter}` : ''}. Registro en Admin/registros/transcripciones-estado.jsonl\n`);
 // POR ETAPA (Versión 447, pedido de Guido el 2026-10-04: "que marquen en qué etapa o escalón está"): cada estado del registro con la etapa
 // y el escalón del proceso nuevo; los "listo" se abren según lo que dejaron las etapas 3-8 en Generados/. La lógica vive en
 // tools/etapa-doc.mjs (Versión 448), la misma que usa el tablero (tools/estado.mjs).

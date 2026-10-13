@@ -223,7 +223,7 @@ function report(rows, errors) {
 
 // ---------------------------------------------------------------- LISTOS
 async function listos() {
-  const ledger = existsSync(resolve(root, 'Admin', 'transcripciones-estado.jsonl')) ? readFileSync(resolve(root, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l)) : [];
+  const ledger = existsSync(resolve(root, 'Admin', 'registros', 'transcripciones-estado.jsonl')) ? readFileSync(resolve(root, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l)) : [];
   // Trabajo = documentos `listo-para-jev` cuyo .jev.json falta o se hizo sobre OTRA lista de rubros (huella distinta, ver tools/huellas.mjs:
   // antes se miraba solo si el archivo existía, y 438 listas re-preparadas quedaron con categorías de la versión vieja).
   // `--lista <archivo>`: solo esos PDFs (lo usa pipeline.mjs para que la etapa 5 toque SOLO los documentos de la corrida).

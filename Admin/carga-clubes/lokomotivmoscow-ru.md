@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Rusia/Lokomotiv Moscow/bfo-2021-datos.md
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "lokomotivmoscow-ru" — slug de "Lokomotiv Moscow" + '-ru' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "AO Football Club Lokomotiv" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): Revisión del alta (Claude, 2026-10-09): АО "Футбольный клуб "Локомотив" (ИНН 771820011
+  name               ok        "AO Football Club Lokomotiv" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): Revisión del alta (Claude, 2026-10-09): АО "Футбольный клуб "Локомотив" (ИНН 771820011
   displayName        ok        "Lokomotiv Moscow" — nombre de la carpeta del club en Clubes/
   country            ok        "RU" — carpeta de país "Rusia" (tabla PAISES)
   reportingCurrency  ok        "RUB" — moneda de curso legal de Rusia

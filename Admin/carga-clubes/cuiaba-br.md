@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Brasil/Cuiaba/balanco-financeiro-2022.pdf
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "cuiaba-br" — slug de "Cuiaba" + '-br' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "Cuiabá Esporte Clube - Sociedade Anônima do Futebol" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social tal como la dice el documento, si
+  name               ok        "Cuiabá Esporte Clube - Sociedade Anônima do Futebol" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social tal como la dice el documento, si
   displayName        ok        "Cuiaba" — nombre de la carpeta del club en Clubes/
   country            ok        "BR" — carpeta de país "Brasil" (tabla PAISES)
   reportingCurrency  ok        "BRL" — moneda de curso legal de Brasil
@@ -103,8 +103,8 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 2.144.216. Claude 2026-10-09: la extracción puso la deducción de la receita (L200-L201) del lado ingreso; el estado la resta de la receita bruta y en 2022 y 2024 se carga como gasto. Cuenta (L186-L226): ingresos 36.625.174 (suma de L188-L193 29.457.738 + L195-L199 7.167.435) + OUTRAS RECEITAS/(DESPESAS) 20.805.324 (L221) - custos 76.739.132 (L204) - despesas 18.678.825 (L209) - deduções 2.144.216 (L200) - financeiras 2.017.000 (L220) = -42.148.673 contra -42.148.674 impreso (L222, L226).
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 20.805.324. Claude 2026-10-09: renglón no operativo impreso en positivo que SUMA al resultado: (60.936.997) + 18.788.324 (L219 = (2.017.000) financeiras + 20.805.324 outras) = (42.148.673) y el resultado impreso es (42.148.674) (L222). La nota 15 (L1118-L1123) lo cuenta junto con la receita (total 2024 205.052.629 = receita líquida original). Misma cuenta que en el ajuste de DESPESAS TRIBUTÁRIAS (deduções).
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 2.144.216. Claude 2026-10-09: la extracción puso la deducción de la receita (L200-L201) del lado ingreso; el estado la resta de la receita bruta y en 2022 y 2024 se carga como gasto. Cuenta (L186-L226): ingresos 36.625.174 (suma de L188-L193 29.457.738 + L195-L199 7.167.435) + OUTRAS RECEITAS/(DESPESAS) 20.805.324 (L221) - custos 76.739.132 (L204) - despesas 18.678.825 (L209) - deduções 2.144.216 (L200) - financeiras 2.017.000 (L220) = -42.148.673 contra -42.148.674 impreso (L222, L226).
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 20.805.324. Claude 2026-10-09: renglón no operativo impreso en positivo que SUMA al resultado: (60.936.997) + 18.788.324 (L219 = (2.017.000) financeiras + 20.805.324 outras) = (42.148.673) y el resultado impreso es (42.148.674) (L222). La nota 15 (L1118-L1123) lo cuenta junto con la receita (total 2024 205.052.629 = receita líquida original). Misma cuenta que en el ajuste de DESPESAS TRIBUTÁRIAS (deduções).
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -207,7 +207,7 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): resultado-final = 37.356.016. Claude 2026-10-09: el estado de resultados (L261-L275) termina en 'Lucro Líquido antes dos impostos' 37.356.016 y no imprime renglón de impuesto a la renta ni resultado neto aparte; el resultado del ejercicio es el mismo 37.356.016 en la DMPL (L302 'Lucro do Exercício') y en el flujo de caja (L321 'Resultado do Exercício'). Cuenta: 157.933.413 - 98.846.512 - 107.449 - 20.890.970 - 126.468 - 753.664 + 56.178 + 91.488 = 37.356.016; impuesto 0 (los tributos del SAF, TEF 5%, están en Despesas Tributárias, nota 30 b).
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): resultado-final = 37.356.016. Claude 2026-10-09: el estado de resultados (L261-L275) termina en 'Lucro Líquido antes dos impostos' 37.356.016 y no imprime renglón de impuesto a la renta ni resultado neto aparte; el resultado del ejercicio es el mismo 37.356.016 en la DMPL (L302 'Lucro do Exercício') y en el flujo de caja (L321 'Resultado do Exercício'). Cuenta: 157.933.413 - 98.846.512 - 107.449 - 20.890.970 - 126.468 - 753.664 + 56.178 + 91.488 = 37.356.016; impuesto 0 (los tributos del SAF, TEF 5%, están en Despesas Tributárias, nota 30 b).
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).

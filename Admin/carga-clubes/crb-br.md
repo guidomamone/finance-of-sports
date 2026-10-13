@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "crb-br" — slug de "CRB" + '-br' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "Clube de Regatas Brasil" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social tal como la dice el documento, si
+  name               ok        "Clube de Regatas Brasil" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social tal como la dice el documento, si
   displayName        ok        "CRB" — nombre de la carpeta del club en Clubes/
   country            ok        "BR" — carpeta de país "Brasil" (tabla PAISES)
   reportingCurrency  ok        "BRL" — moneda de curso legal de Brasil

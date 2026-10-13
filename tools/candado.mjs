@@ -1,11 +1,11 @@
 // ============================================================================
 // tools/candado.mjs — UN SOLO PROCESO A LA VEZ ESCRIBIENDO EL REGISTRO (to-dos 162 y 164, ok de Guido).
 //
-// POR QUÉ. lote.mjs, pipeline.mjs y cargar.mjs --escribir reescriben enteros el registro (Admin/transcripciones-estado.jsonl) y otros
+// POR QUÉ. lote.mjs, pipeline.mjs y cargar.mjs --escribir reescriben enteros el registro (Admin/registros/transcripciones-estado.jsonl) y otros
 // archivos compartidos (la lista temporal del lote, el historial, la cola). Dos a la vez se pisan. Caso: el lote 20 se lanzó dos veces
 // seguidas (2026-10-07). El candado nació en lote.mjs (to-do 162) y se sacó acá para que lo usen las tres (to-do 164).
 //
-// CÓMO. El candado (Admin/.candado.lock, en .gitignore) se crea atómico ('wx': si existe, falla) con herramienta, PID, lista, modo y hora.
+// CÓMO. El candado (Admin/registros/.candado.lock, en .gitignore) se crea atómico ('wx': si existe, falla) con herramienta, PID, lista, modo y hora.
 //   - Si ya existe y su proceso sigue vivo y es esa herramienta (`ps`: el PID puede haberse reusado), este proceso sale sin tocar nada.
 //   - Si está muerto (lote 14: se reinició la terminal), se avisa y se reemplaza.
 //   - Al terminar (fin normal, error o process.exit) se borra, solo si sigue siendo el de este proceso.
@@ -21,7 +21,7 @@ import { readFileSync, writeFileSync, unlinkSync } from 'node:fs';
 import { resolve, basename } from 'node:path';
 import { spawnSync } from 'node:child_process';
 
-const LOCK = resolve(import.meta.dirname, '..', 'Admin', '.candado.lock');
+const LOCK = resolve(import.meta.dirname, '..', 'Admin', 'registros', '.candado.lock');
 const hora = (iso) => (iso ? new Date(iso).toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit', hour12: false }) : '?');
 const vivo = (pid, herramienta) => {
   try { process.kill(pid, 0); } catch (err) { if (err.code !== 'EPERM') return false; }

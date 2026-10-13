@@ -106,8 +106,8 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): cero-real = Estadio. Guido 2026-10-02: el documento 2025 no separa bilheteria ni sócio torcedor: van juntos en 'Patrocínio/bilheteria/Sócio Torcedor/ Outras' 19.931.127. El 0 es del desglose, no un dato perdido; reintentar no lo arregla.
-2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): cero-real = Cuotas sociales. Guido 2026-10-02: el documento 2025 no separa bilheteria ni sócio torcedor: van juntos en 'Patrocínio/bilheteria/Sócio Torcedor/ Outras' 19.931.127. El 0 es del desglose, no un dato perdido; reintentar no lo arregla.
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): cero-real = Estadio. Guido 2026-10-02: el documento 2025 no separa bilheteria ni sócio torcedor: van juntos en 'Patrocínio/bilheteria/Sócio Torcedor/ Outras' 19.931.127. El 0 es del desglose, no un dato perdido; reintentar no lo arregla.
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): cero-real = Cuotas sociales. Guido 2026-10-02: el documento 2025 no separa bilheteria ni sócio torcedor: van juntos en 'Patrocínio/bilheteria/Sócio Torcedor/ Outras' 19.931.127. El 0 es del desglose, no un dato perdido; reintentar no lo arregla.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
@@ -487,7 +487,7 @@ tools/cargar.mjs (2026-10-02)
 ### Meta
 
 ```text
-2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2017. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2017-2016' es el ejercicio 2017 con 2016 de comparativo, no 2016.
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2017. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2017-2016' es el ejercicio 2017 con 2016 de comparativo, no 2016.
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -548,7 +548,7 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2016. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2016-2015' es el ejercicio 2016 con 2015 de comparativo, no 2015.
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2016. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2016-2015' es el ejercicio 2016 con 2015 de comparativo, no 2015.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ajuste manual (2026-10-05, auditoría 2026-10-04 hallazgo 1): ingresos y gastos de fútbol abiertos con las notas 17 y 18 (.md L892-941), que suman exacto lo impreso.
 ```
@@ -622,7 +622,7 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2015. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2015-2014' es el ejercicio 2015 con 2014 de comparativo, no 2014.
+2015: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2015. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2015-2014' es el ejercicio 2015 con 2014 de comparativo, no 2014.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -690,7 +690,7 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2014. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2014-2013' es el ejercicio 2014 con 2013 de comparativo, no 2013.
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2014. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2014-2013' es el ejercicio 2014 con 2013 de comparativo, no 2013.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -747,7 +747,7 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2013: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2013. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2013-2012' es el ejercicio 2013 con 2012 de comparativo, no 2012.
+2013: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2013. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2013-2012' es el ejercicio 2013 con 2012 de comparativo, no 2012.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
@@ -805,7 +805,7 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2012. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2012-2011' es el ejercicio 2012 con 2011 de comparativo, no 2011.
+2012: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2012. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2012-2011' es el ejercicio 2012 con 2011 de comparativo, no 2011.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
@@ -864,7 +864,7 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2011: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2011. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2011-2010' es el ejercicio 2011 con 2010 de comparativo, no 2010.
+2011: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2011. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2011-2010' es el ejercicio 2011 con 2010 de comparativo, no 2010.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -927,7 +927,7 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2010. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2010-2009' es el ejercicio 2010 con 2009 de comparativo, no 2009.
+2010: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2010. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2010-2009' es el ejercicio 2010 con 2009 de comparativo, no 2009.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -993,7 +993,7 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2009: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2009. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2009-2008' es el ejercicio 2009 con 2008 de comparativo, no 2008.
+2009: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2009. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2009-2008' es el ejercicio 2009 con 2008 de comparativo, no 2008.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
@@ -1058,7 +1058,7 @@ tools/cargar.mjs (2026-10-03)
 ### Meta
 
 ```text
-2008: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2008. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2008-2007' es el ejercicio 2008 con 2007 de comparativo, no 2007.
+2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2008. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2008-2007' es el ejercicio 2008 con 2007 de comparativo, no 2007.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 

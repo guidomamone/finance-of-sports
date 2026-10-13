@@ -19,7 +19,7 @@ Documento que originó el alta: Clubes/Rusia/Orenburg/bfo-2021-datos.md
 
 De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   id                 ok        "orenburg-ru" — slug de "Orenburg" + '-ru' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-  name               ok        "ANO Football Club Orenburg" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social (АНО «Футбольный клуб «Оренбург»)
+  name               ok        "ANO Football Club Orenburg" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social (АНО «Футбольный клуб «Оренбург»)
   displayName        ok        "Orenburg" — nombre de la carpeta del club en Clubes/
   country            ok        "RU" — carpeta de país "Rusia" (tabla PAISES)
   reportingCurrency  ok        "RUB" — moneda de curso legal de Rusia

@@ -44,7 +44,7 @@ cada tool normalizaba el texto a su manera.
 
 Script en el scratchpad que **replica exactamente la etapa 3 de `pipeline.mjs`** (armado de `<md>.rubros.json`) sobre las tablas de
 `extract-table-rows.mjs`, una vez con una copia de las tools de ANTES (Versión 313) y otra con las de DESPUÉS. Universo: los 1.061 `.md` de
-`Clubes/` que tienen `.briefing.json` o que están `listo` / `listo-para-jev` / `sin-rubros` en `Admin/transcripciones-estado.jsonl`
+`Clubes/` que tienen `.briefing.json` o que están `listo` / `listo-para-jev` / `sin-rubros` en `Admin/registros/transcripciones-estado.jsonl`
 (incluye ejercicios ya cargados, para poder comparar contra producción). Club y año salen del briefing / rubros.json existente (los mismos para
 antes y después). Contra producción: una fila cuyo importe (x 1, x 10^-3 o x 10^-6) coincide con una línea cargada en `data/*-data.js` del mismo
 club (año o año anterior, tolerancia 0,05%) hereda el lado de esa línea como verdad.

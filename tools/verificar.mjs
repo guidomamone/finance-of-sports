@@ -1016,7 +1016,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (E.cierra && E.nivel > 0) { chequeos.push({ nombre: 'lectura', ok: true, detalle: `cerró con la lectura ${E.nivel} (${NOMBRES_LECTURA.slice(1, E.nivel + 1).join(' + ')})` }); notas.push(`la lectura base no cerraba; cerró con la lectura ${E.nivel}`); }
   if (sinNumero) chequeos.push({ nombre: 'número impreso para cerrar', ok: false, detalle: 'el documento no imprime totales ni resultado en los bloques elegidos: no hay cómo confirmar las sumas' });
 
-  // AJUSTES MANUALES (Versión 366; tools/ajustes.mjs, Admin/ajustes-manuales.jsonl): el escalón 0 de cada escalera. Una decisión de Guido
+  // AJUSTES MANUALES (Versión 366; tools/ajustes.mjs, Admin/registros/ajustes-manuales.jsonl): el escalón 0 de cada escalera. Una decisión de Guido
   // atada al documento y al campo, no al texto de una pregunta de la cola.
   // resultado-final: el resultado del ejercicio impreso que fijó Guido. El IMPUESTO pasa a ser la diferencia con el resultado antes de
   // impuestos (el impreso si la lectura 1 cerró; si no, el de las filas: ingresos − gastos ± financiero como impreso), con la convención
@@ -1189,7 +1189,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   //   ESCALÓN 1  el que imprime el documento del año SIGUIENTE en una columna que no es la primera (la del año anterior)
   //   COMPUERTA  un solo candidato coincide. Ninguno o los dos -> cola (Fortaleza 2023: impreso 1.021.768, ninguno de los dos).
   let resParaCargar = res; let resultadoFinal = null;
-  if (forzado) { resParaCargar = forzado.final; resultadoFinal = { valor: r6(forzado.final), impuesto: 'deducido', escalon: 'ajuste manual', donde: 'Admin/ajustes-manuales.jsonl', impuestoImpreso: r6(forzado.impImpreso), impuestoDeducido: r6(forzado.antes - forzado.final) }; }
+  if (forzado) { resParaCargar = forzado.final; resultadoFinal = { valor: r6(forzado.final), impuesto: 'deducido', escalon: 'ajuste manual', donde: 'Admin/registros/ajustes-manuales.jsonl', impuestoImpreso: r6(forzado.impImpreso), impuestoDeducido: r6(forzado.antes - forzado.final) }; }
   else if (E.cierra && E.ch.some((c) => c.nombre === 'resultado antes de impuestos' && c.ok) && Math.abs(conSigno(imp)) > TOL) {
     const NUM_RE = /\(?-?\d{1,3}(?:[.,]\d{3})+(?:[.,]\d{1,2})?\)?|\d{4,}/g;
     const cands = [res + conSigno(imp), res - conSigno(imp)];
@@ -1304,8 +1304,8 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
 }
 
 // AVISO AL REGISTRO VIEJO (Versión 349, ok de Guido). Jev, Claude y cargar.mjs solo trabajan los documentos `listo-para-jev` del registro
-// (Admin/transcripciones-estado.jsonl), que arma inventario-transcripciones.mjs con la ÚLTIMA línea del historial
-// (Admin/transcripciones-verificaciones.jsonl) para la huella del .md actual. Esa línea la escribía solo el proceso viejo (pipeline.mjs, al
+// (Admin/registros/transcripciones-estado.jsonl), que arma inventario-transcripciones.mjs con la ÚLTIMA línea del historial
+// (Admin/registros/transcripciones-verificaciones.jsonl) para la huella del .md actual. Esa línea la escribía solo el proceso viejo (pipeline.mjs, al
 // preparar). Un documento que entra SOLO por el proceso nuevo, o cuyo .md cambió, quedaba "sin-verificar" aunque el proceso nuevo lo hubiera
 // validado y verificado. Caso real: UC 2015, re-transcripto con Mistral en el reintento del lote 06 (validacion.json: 83 números
 // confirmados, 0 sin confirmar; verificar ok), y la etapa 7 decía "0 documentos listo-para-jev" y cargar.mjs frenaba.
@@ -1319,7 +1319,7 @@ function avisarRegistro(md, nRubros, registro, out = null) {
   const mdAbs = resolve(ROOT, md);
   if (!e || e.cargado || !existsSync(mdAbs)) return false;
   const sha = createHash('sha1').update(readFileSync(mdAbs)).digest('hex');
-  const histPath = resolve(ROOT, 'Admin', 'transcripciones-verificaciones.jsonl');
+  const histPath = resolve(ROOT, 'Admin', 'registros', 'transcripciones-verificaciones.jsonl');
   const hist = existsSync(histPath) ? readFileSync(histPath, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter((v) => v && v.md === md && v.mdSha1 === sha) : [];
   const prev = hist[hist.length - 1] || {};
   if (prev.jev === 'listo-para-jev') return false;
@@ -1388,7 +1388,7 @@ export function verificarLista(docs, opts) {
 if (import.meta.url === `file://${process.argv[1]}`) {
   const docs = flag('--lista') ? readFileSync(resolve(ROOT, flag('--lista')), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')) : ARGS.filter((a) => !a.startsWith('--'));
   if (!docs.length) { console.error('Uso: node tools/verificar.mjs "<pdf>" [--rubros]  |  --lista <archivo> [--rubros]'); process.exit(1); }
-  const registro = readFileSync(resolve(ROOT, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+  const registro = readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
   const sitio = loadSite();
   for (const [pdf, r] of verificarLista(docs, { registro, sitio, escribirRubros: ARGS.includes('--rubros') })) {
     if (r.error) { console.log(`  ${pdf}: ${r.error}`); continue; }
