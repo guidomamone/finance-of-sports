@@ -126,6 +126,14 @@ grossDebt = Deudas a largo plazo (7,594336 M) + Deudas a corto plazo
 diferido. cash = Tesorería (Activo Corriente).
 ```
 
+## Gestiones
+
+_antes de Carlos Slim (data/gestiones/es.js):_
+
+```text
+Slim entró el 17/11/2012 con el control del club. Desde julio de 2022 manda Grupo Pachuca (sociedad): el presidente es Martín Peláez (dia 01).
+```
+
 ## Otros
 
 ### memberCountByClub['realoviedo-es']

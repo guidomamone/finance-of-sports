@@ -302,6 +302,20 @@ ordinario + no-efectivo solamente). officialPAT = "Superávit (déficit) do exer
 (-0,734 M BRL, déficit real — el segundo déficit del club desde 2014).
 ```
 
+## Gestiones
+
+_antes de Rodolfo Landim (data/gestiones/br.js):_
+
+```text
+Landim: termino de mandato 01/01/2019 (algunas notas dicen que el acto formal fue el 02/01).
+```
+
+_antes de Luiz Eduardo Baptista (data/gestiones/br.js):_
+
+```text
+Baptista asume el 01/01/2025 y firma las demostraciones financieras 2024 (cerradas con Landim): firmo [2024].
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

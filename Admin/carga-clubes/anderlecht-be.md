@@ -105,3 +105,19 @@ _al lado del campo `officialTotalRevenue`:_
 ```text
 excluye exceptional_items (-0.199), ver Admin/CONVENCIONES / criterio Chelsea
 ```
+
+## Gestiones
+
+_antes de Roger Vanden Stock (data/gestiones/be.js):_
+
+```text
+Vanden Stock: Wikipedia da 1996 (solo año). Entregó el club a Coucke el 28/3/2018 (el consejo nuevo figura en el informe desde el 30/3/2018).
+```
+
+_antes de Marc Coucke (data/gestiones/be.js):_
+
+```text
+Coucke: dueño y accionista mayoritario desde el 28/3/2018, sigue. Fue voorzitter hasta que Wouter Vandenhaute asumió oficialmente
+en enero de 2021 (anunciado el 28/5/2020); Vandenhaute fue voorzitter (no ejecutivo desde 1/2023) hasta que puso su cargo a disposición el
+1/9/2025 (aceptado el 5/9/2025); Michael Verschueren es voorzitter desde mediados de noviembre de 2025 (aprobado el 16/10/2025).
+```

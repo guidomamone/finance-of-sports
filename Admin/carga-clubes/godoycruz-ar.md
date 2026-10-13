@@ -115,3 +115,11 @@ _al lado del campo `netInterest`:_
 ```text
 Interés plazo fijo + Ingresos financieros - Egresos financieros (incl. RECPAM, moneda homogénea RT6)
 ```
+
+## Gestiones
+
+_antes de Alejandro Chapini (data/gestiones/ar.js):_
+
+```text
+Chapini: elegido por asamblea el 12/12/2021 (Wikipedia fecha el traspaso el 18/12/2021).
+```

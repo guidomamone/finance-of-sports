@@ -151,7 +151,7 @@ window.FIN_ANIOS = FIN_ANIOS;
 
 
 // ============================================================================
-// GESTIÓN. Lee data/gestiones/<país>.js (formato y regla de ejercicios: ver el encabezado de ese archivo) y arma la fila
+// GESTIÓN. Lee data/gestiones/<país>.js (formato y regla de ejercicios: Admin/ARQUITECTURA.md, "Gestiones") y arma la fila
 // "Gestión" de los cards: un botón por gestión CONFIRMADA que tenga algún ejercicio cargado, de la más vieja a la más nueva.
 // Tocar uno SUMA sus ejercicios a los elegidos y tocarlo de nuevo los saca (se pueden prender dos para compararlas); un botón se
 // ve prendido cuando todos sus ejercicios están elegidos. Con más de 4, se ven las 3 más nuevas (más la prendida) y "+N más" a

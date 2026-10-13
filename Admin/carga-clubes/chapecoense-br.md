@@ -335,6 +335,32 @@ SUPERAVIT DO EXERCÍCIO impreso: 97.852554 - 86.376908 - 9.553844 (exceptional_i
 2.910458 (netInterest) = 4.832260, contra el 4.832261 impreso (diferencia de R$1, redondeo).
 ```
 
+## Gestiones
+
+_antes de Plinio David De Nes Filho (data/gestiones/br.js):_
+
+```text
+Plinio: aclamado el 16/12/2016. Magro: la prensa dice "desde agosto de 2019" (renuncia formal de Plinio el 01/11/2019), dia 01/08/2019 aproximado.
+```
+
+_antes de Paulo Magro (data/gestiones/br.js):_
+
+```text
+Magro murio el 30/12/2020; Sbeghen (vice administrativo-financiero) lo reemplaza, oficializado el 04/01/2021.
+```
+
+_antes de Nei Roque Mohr (data/gestiones/br.js):_
+
+```text
+Nei Maidana en la prensa; firma el balance como Nei Roque Mohr.
+```
+
+_antes de Alex Passos (data/gestiones/br.js):_
+
+```text
+Mandato 2024/25 (posse 11/12/2023). No se verifico si hubo reeleccion en diciembre de 2025.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

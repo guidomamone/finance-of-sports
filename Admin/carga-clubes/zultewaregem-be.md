@@ -182,3 +182,13 @@ officialTotalExpenses EXCLUYE el ítem exceptional_items de gasto (mismo criteri
 Charleroi/Club Brugge, "Chelsea"). officialTotalRevenue NO excluye nada (ver comentario
 de cabecera, corregido en la integración).
 ```
+
+## Gestiones
+
+_antes de Willy Naessens (data/gestiones/be.js):_
+
+```text
+Naessens: voorzitter desde la fundación en 2001 (solo año). Todavía se presenta como presidente en octubre de 2013 y asume también el cargo de CEO (DH, 14/10/2013).
+Ballière: Wikipedia lo ubica 2013-2025 y Sporza lo llama voorzitter en octubre de 2015; el ejercicio 2014 depende de la fecha del cambio, no confirmada.
+Hullebusch: voorzitter desde 2025 (solo año); no figura en el consejo del informe del ejercicio 2025, donde sigue Ballière.
+```

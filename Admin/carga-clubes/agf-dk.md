@@ -151,3 +151,11 @@ Skat af årets resultat: BENEFICIO (reconocimiento de activo por impuesto diferi
 grossDebt = Leasingforpligtelser (corriente 2.223 + no corriente 2.404), única línea
 de deuda reconocible en el balance (no hay préstamo bancario explícito).
 ```
+
+## Gestiones
+
+_antes de Lars Fournais (data/gestiones/dk.js):_
+
+```text
+Fournais: formand en todos los informes 2014 a 2021 (consejero desde 24/10/2008); en julio de 2025 sigue figurando como formand (inderes.dk, comunicado de AGF), por eso hasta null. Primer informe: 2013/14.
+```

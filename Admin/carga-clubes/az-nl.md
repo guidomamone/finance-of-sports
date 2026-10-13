@@ -134,3 +134,17 @@ grossDebt = Schulden aan kredietinstellingen(7.333) + Overige schulden(10.523+8.
 Handelscrediteuren(9.414) + Belastingen en premies sociale verzekeringen(3.375), EXCLUYE
 Voorzieningen(13.918) y Overlopende passiva(1.934+3.960). cash = Liquide middelen.
 ```
+
+## Gestiones
+
+_antes de Robert Eenhoorn (data/gestiones/nl.js):_
+
+```text
+Eenhoorn: algemeen directeur desde el 1/10/2014 (sucedió a Gerbrands); dejó de ser statutair bestuurder el 1/7/2024 pero siguió de titulair directeur hasta fines de 2024 (informe 2023/24).
+```
+
+_antes de Merijn Zeeman (data/gestiones/nl.js):_
+
+```text
+Zeeman: algemeen directeur desde el 1/12/2024 (informe 2024/25).
+```

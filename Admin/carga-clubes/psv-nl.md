@@ -130,3 +130,17 @@ transfers(31.760) + Overige schulden(404+35.000) + Belastingen en premies(12.820
 Aflossingsverplichting(202) + Crediteuren(25.203), EXCLUYE Voorzieningen(6.006) y
 Overlopende passiva(28.182). cash = Liquide middelen (consolidado).
 ```
+
+## Gestiones
+
+_antes de Toon Gerbrands (data/gestiones/nl.js):_
+
+```text
+Gerbrands: algemeen directeur desde el 1/7/2014 (sucedió a Tiny Sanders); dejó el cargo al final de la temporada 2021/22.
+```
+
+_antes de Marcel Brands (data/gestiones/nl.js):_
+
+```text
+Brands: anunciado el 14/2/2022 para entrar "después de esta temporada"; 1/7/2022 aproximado.
+```

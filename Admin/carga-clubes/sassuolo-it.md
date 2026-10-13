@@ -606,6 +606,14 @@ tools/cargar.mjs (2026-10-09)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## Gestiones
+
+_antes de Carlo Rossi (data/gestiones/it.js):_
+
+```text
+Carlo Rossi, presidente del consejo (dueña: la familia Squinzi, vía Mapei). Las fuentes dicen 2003 o 2004; 01/01/2004 por convención.
+```
+
 ## Fuentes
 
 ### (general)

@@ -88,6 +88,14 @@ no se incluye acá, mismo criterio que Boca/Vélez (solo "Deudas" financieras). 
 y otros activos líquidos equivalentes / Tesorería" del balance.
 ```
 
+## Gestiones
+
+_antes de Chen Yansheng (data/gestiones/es.js):_
+
+```text
+Chen Yansheng (Rastar) tomó el control en enero de 2016 (nota del 19/1/2016) y relevó a Joan Collet.
+```
+
 ## Otros
 
 ### memberCountByClub['espanyol-es']

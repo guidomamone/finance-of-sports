@@ -141,6 +141,14 @@ criterio que Boca/Vélez (club-data-mapping/referencia/formato-simplificado.md).
 consolidado, pág. 15).
 ```
 
+## Gestiones
+
+_antes de Farhad Moshiri (data/gestiones/gb.js):_
+
+```text
+Moshiri: compra del 49,9% confirmada el 27/2/2016 (la Premier la ratificó dos semanas después).
+```
+
 ## Otros
 
 ### Presupuesto al lado del balance (evertonGbPresupuestoOverlayByYear), en general

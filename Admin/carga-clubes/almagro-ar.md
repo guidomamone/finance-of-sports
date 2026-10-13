@@ -288,6 +288,20 @@ _antes de la fila 17 (`Gastos de alimentos`):_
 resultado final (post resultado financiero).
 ```
 
+## Gestiones
+
+_antes de Julián Romeo (data/gestiones/ar.js):_
+
+```text
+Romeo: las fuentes dan solo el año (2014); dia 01 por convencion. Cierre 31/10.
+```
+
+_antes de Julio Cucchi (data/gestiones/ar.js):_
+
+```text
+Cucchi: ganó la elección del 31/10/2021 y la nota dice que asumiría formalmente "en los próximos días": 01/11 aproximado.
+```
+
 ## Otros
 
 ### gestionesByClub['almagro-ar']

@@ -151,3 +151,36 @@ Belastingen op het resultaat.
 grossDebt = Schulden op meer dan één jaar + Schulden op ten hoogste één jaar, EXCLUYE
 Overlopende rekeningen (ingresos diferidos/gastos a pagar). cash = Liquide middelen.
 ```
+
+## Gestiones
+
+_antes de Johan Timmermans (data/gestiones/be.js):_
+
+```text
+Timmermans: voorzitter desde abril de 2003 (después del interino Uytterhoeven, 12 al 24/4/2003); en diciembre de 2018 ya se había retirado como voorzitter (VRT 15/12/2018): hasta aproximado.
+```
+
+_antes de Olivier Somers (data/gestiones/be.js):_
+
+```text
+Somers: co-accionista mayoritario; Wikipedia lo ubica como voorzitter 2018-2019, sin fecha. No confirmado.
+```
+
+_antes de Dieter Penninckx (data/gestiones/be.js):_
+
+```text
+Penninckx: en junio de 2019 compró el paquete de Somers y quedó como único accionista mayoritario y voorzitter oficioso (De Tijd, 1/7/2019).
+El ejercicio 2019 depende de que junio sea previo al cierre. Fue sacado del consejo a fines de febrero de 2021 (Sporza, abril de 2021).
+```
+
+_antes de Luc Leemans (data/gestiones/be.js):_
+
+```text
+Leemans: Wikipedia lo ubica 2020-2022; si fue voorzitter desde agosto de 2020 el cierre 30/6/2020 igual es de Penninckx. Sin fecha confirmada.
+```
+
+_antes de Philippe Van Esch (data/gestiones/be.js):_
+
+```text
+Van Esch: entró como accionista (44%) en la ampliación de capital de enero de 2023 y es hoofdaandeelhouder y voorzitter.
+```

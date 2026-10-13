@@ -167,6 +167,20 @@ _al lado del campo `reportType`:_
 ver duda abierta en Admin/dudas-por-club.md
 ```
 
+## Gestiones
+
+_antes de Luis Segura (data/gestiones/ar.js):_
+
+```text
+Segura: la fuente da solo el año (elegido en las elecciones de 2001, presidente desde 2002); dia 01 por convencion.
+```
+
+_antes de Cristian Malaspina (data/gestiones/ar.js):_
+
+```text
+Malaspina: ganó el 19/12/2015 y asumió a las 72 horas.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

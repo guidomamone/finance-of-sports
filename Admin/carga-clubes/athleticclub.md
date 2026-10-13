@@ -107,6 +107,14 @@ modelo de Athletic Club, sin deuda bancaria significativa) -> grossDebt en 0. ca
 y otros activos líquidos equivalentes.
 ```
 
+## Gestiones
+
+_antes de Jon Uriarte (data/gestiones/es.js):_
+
+```text
+Uriarte asumió el 30/6/2022, el mismo día del cierre del ejercicio 2021/22; la derivación por cierre lo deja de Uriarte aunque ese balance lo formuló la junta de Elizegi (revisar con `firmo` si Guido lo prefiere).
+```
+
 ## Otros
 
 ### athleticclubPasesData

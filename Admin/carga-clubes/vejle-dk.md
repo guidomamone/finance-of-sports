@@ -147,3 +147,11 @@ Finansielle omkostninger(357).
 grossDebt = Leasingforpligtelser (largo 658 + corto 267) + Ansvarlig lånekapital
 (23.203, préstamo subordinado). cash = Likvide beholdninger.
 ```
+
+## Gestiones
+
+_antes de Gert Eg (data/gestiones/dk.js):_
+
+```text
+Sin cubrir 2012 y 2013 (los informes no marcan quien es formand). Ver tambien nota en el reporte: prensa cita a Tage Pedersen como chairman de Vejle Boldklub desde 2022.
+```

@@ -135,6 +135,14 @@ propia DRE (NO el total de la Nota 14, que no reconcilia — ver comentario de c
 officialPAT = "Déficit do exercício" impreso (-246), negativo real: 2024 fue año de déficit.
 ```
 
+## Gestiones
+
+_antes de Juarez Costa Pinto (data/gestiones/br.js):_
+
+```text
+SIN FECHA DE POSSE: solo se encontro que figura como Presidente del Conselho Diretor en la relacion de dirigentes 2023-2024 y firma el balance 2025. 01/01/2023 es un supuesto.
+```
+
 ## Otros
 
 ### gestionesByClub['operarioferroviario-br']

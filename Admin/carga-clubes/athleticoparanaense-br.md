@@ -198,6 +198,14 @@ depreciación), EXCLUYENDO exceptional_items (el motor lo suma aparte, en operat
 mismo criterio que Botafogo. officialPAT = 'Superávit líquido' impreso (23,439), incluye todo.
 ```
 
+## Gestiones
+
+_antes de Mario Celso Petraglia (data/gestiones/br.js):_
+
+```text
+Aclamado el 14/12/2019 para el cuadrienio 2020-2023; la fuente no da la fecha de posse, 01/01/2020 aproximado.
+```
+
 ## Otros
 
 ### gestionesByClub['athleticoparanaense-br']

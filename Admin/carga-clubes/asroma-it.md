@@ -1441,6 +1441,40 @@ tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs
 2005: tools/cargar.mjs 2026-10-09, verificado contra roster cacheado de "2004–05 Serie A" (tools/club-league-reference/it.json), coincidencia ú
 ```
 
+## Gestiones
+
+_antes de Franco Sensi (data/gestiones/it.js):_
+
+```text
+Franco Sensi: dueño y presidente desde el 8/11/1993 hasta su muerte el 17/8/2008 (it.wikipedia, Franco Sensi; el infobox dice 9/11). Rosella Sensi lo sucedió: la fuente da solo el año
+(2008-2011); desde = el día de la muerte de su padre, hasta = 2011-01-01 por convención (cubre los cierres del 30/6/2009 y del 30/6/2010; el 2011 queda pendiente: Cappelli y DiBenedetto).
+```
+
+_antes de Rosella Sensi (data/gestiones/it.js):_
+
+```text
+Rosella Sensi: su renuncia se presentó el 28/6/2011 con efecto el 1/7/2011 (Relazione finanziaria annuale al 30/6/2011 de la A.S. Roma, Corporate Governance); hasta esa fecha cubre el
+cierre del 30/6/2011. Desde: el día de la muerte de su padre (la fuente de la sucesión da solo el año, 2008).
+```
+
+_antes de Roberto Cappelli (data/gestiones/it.js):_
+
+```text
+Cappelli: abogado de UniCredit, presidente del CdA desde el 4/7/2011 hasta el 27/9/2011 (la misma Relazione, firmada por él el 27/9/2011; Sky Sport, 27/9/2011). No tiene cierre propio.
+```
+
+_antes de Thomas DiBenedetto (data/gestiones/it.js):_
+
+```text
+DiBenedetto: nombrado presidente el 27/9/2011 (Sky Sport, 27/9/2011; la asamblea lo ratificó el 27/10/2011) hasta el 27/8/2012, cuando asumió Pallotta (Corriere dello Sport, 30/12/2019).
+```
+
+_antes de James Pallotta (data/gestiones/it.js):_
+
+```text
+Pallotta: presidente desde el 27/8/2012 (Corriere dello Sport, 30/12/2019).
+```
+
 ## Fuentes
 
 ### (general)

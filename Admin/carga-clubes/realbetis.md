@@ -76,6 +76,14 @@ grossDebt = Deudas con entidades de crédito, largo (120,369065 M) + corto plazo
 cash = Efectivo y otros activos líquidos equivalentes (Nota 10).
 ```
 
+## Gestiones
+
+_antes de Ángel Haro García (data/gestiones/es.js):_
+
+```text
+Haro: nombrado por el consejo en febrero de 2016 (nota del 4/2/2016), tras la dimisión de Ollero.
+```
+
 ## Otros
 
 ### realbetisPasesData

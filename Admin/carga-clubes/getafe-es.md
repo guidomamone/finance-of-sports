@@ -117,6 +117,14 @@ Periodificaciones). cash = "VII. Efect. y otros act. líquidos equivalentes" del
 coincide exacto con el cierre del Estado de Flujos de Efectivo.
 ```
 
+## Gestiones
+
+_antes de Ángel Torres Sánchez (data/gestiones/es.js):_
+
+```text
+Torres: las fuentes dan solo el año (2002); dia 01 por convencion.
+```
+
 ## Otros
 
 ### memberCountByClub['getafe-es']

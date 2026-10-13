@@ -50,6 +50,10 @@ que dice `ESTADO.md` era verdad ese día.
   Mismo código en los 18 archivos. ASSET_V 817.
 - `--resto-ligas`: lo que quedaba en las cabeceras de `data/club-leagues/<país>.js` (reglas repetidas y verificaciones de varios clubes
   juntos) pasa tal cual a `Admin/ligas-por-pais/<país>.md`; los 17 archivos quedan sin comentarios, mismo código. ASSET_V 818.
+- `--gestiones`: el porqué de cada gestión pasa a "## Gestiones" del `.md` de su club (217 comentarios, 119 clubes); el criterio de cada país
+  y las notas de clubes todavía sin balances (CZ, NO, PT, TR y otros), etiquetadas, a `Admin/gestiones-por-pais/<país>.md`. El formato de las
+  gestiones (la cabecera de `ar.js`) pasó a `Admin/ARQUITECTURA.md`; `data/gestiones/` queda sin comentarios, mismo código. La pregunta de
+  la cola por un presidente faltante y el to-do 195 apuntan ahí. `tools/evidencia-club.mjs` suma `agregarSeccion()`. ASSET_V 819.
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 

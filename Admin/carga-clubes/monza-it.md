@@ -364,6 +364,15 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## Gestiones
+
+_antes de Fininvest (data/gestiones/it.js):_
+
+```text
+Desde el 8/7/2022 el club no tiene presidente persona: lo controla Fininvest (sociedad de la familia Berlusconi). Decisión de Guido
+2026-10-07: se carga Fininvest como gestión (excepción a "el dueño solo si es una persona con nombre", ver ar.js).
+```
+
 ## Fuentes
 
 ### (general)

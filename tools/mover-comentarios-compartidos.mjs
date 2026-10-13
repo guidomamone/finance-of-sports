@@ -6,6 +6,7 @@
 //   node tools/mover-comentarios-compartidos.mjs                 escribe data/ y Admin/carga-clubes/
 //   node tools/mover-comentarios-compartidos.mjs --ensayo <dir>  escribe todo en <dir>, no toca el repo; lista lo que queda
 //   node tools/mover-comentarios-compartidos.mjs --resto-ligas [--ensayo <dir>]   ver abajo
+//   node tools/mover-comentarios-compartidos.mjs --gestiones [--ensayo <dir>]     ver abajo
 //
 // QUÉ ES "UNA NOTA DE UN CLUB" (lo demás queda donde está, para limpiarse a mano: cabeceras de archivo, títulos por país):
 //   - un bloque de líneas `//` pegado (sin línea en blanco) arriba de la fila de un club;
@@ -34,6 +35,87 @@ const clubIds = new Set(fs.readdirSync(path.join(ROOT, 'data')).filter((f) => f.
 const archivos = ['data/clubs.js', ...fs.readdirSync(path.join(ROOT, 'data/club-leagues')).filter((f) => f.endsWith('.js')).sort().map((f) => `data/club-leagues/${f}`)];
 const RE_FILA = /^\s*['"]?([a-z0-9-]+)['"]?\s*:\s*\{/;
 const texto = (t) => (t.startsWith('//') ? [t.replace(/^\/\/ ?/, '')] : t.replace(/^\/\*+ ?/, '').replace(/ ?\*+\/$/, '').split('\n').map((l) => l.replace(/^\s*\* ?/, '')));
+
+// --gestiones: data/gestiones/<país>.js. La nota arriba de una gestión (o al lado) va a "## Gestiones" del .md de ese club, con una
+// línea "_antes de <nombre> (data/gestiones/xx.js):_"; la de arriba de un club, "_del club (…):_"; la del final de la lista, "_al
+// final de la lista (…):_". Lo que queda (la cabecera de cada archivo) va TAL CUAL a Admin/gestiones-por-pais/<país>.md.
+if (args.includes('--gestiones')) {
+  const errs = []; const salida = {}; const mdsG = {}; let n = 0;
+  const dir = path.join(ROOT, 'data/gestiones');
+  for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.js')).sort()) {
+    const rel = `data/gestiones/${f}`; const iso = f.replace(/\.js$/, '');
+    const src = fs.readFileSync(path.join(ROOT, rel), 'utf8'); const L = src.split('\n');
+    const { comments } = scan(rel, src);
+    if (!comments.length) continue;
+    const lineOf = (p) => src.slice(0, p).split('\n').length;
+    // contexto de cada línea: club abierto y la gestión de esa línea
+    const ctx = []; let club = null;
+    L.forEach((t, k) => {
+      const a = /^\s{2}['"]?([a-z0-9-]+)['"]?\s*:\s*\[/.exec(t);
+      if (a) club = a[1];
+      const nom = /\bnombre\s*:\s*(['"])((?:\\.|(?!\1).)*)\1/.exec(t);
+      ctx[k + 1] = { club, abre: !!a, nombre: nom ? nom[2] : null, cierra: /^\s{2}\],?\s*$/.test(t) };
+      if (ctx[k + 1].cierra) club = null;
+    });
+    const mover = []; const resto = [];
+    for (const c of comments) {
+      const ln = lineOf(c.pos); const tl = L[ln - 1];
+      const fin = tl.slice(0, tl.indexOf(c.text.split('\n')[0])).trim() !== '';
+      const ult = ln + c.text.split('\n').length - 1;
+      let dueno = null, nota = null;
+      if (fin && ctx[ln].club) { dueno = ctx[ln].club; nota = ctx[ln].nombre ? `junto a ${ctx[ln].nombre}` : 'en la lista'; }
+      else if (!fin) {
+        let k = ult + 1; while (k <= L.length && /^\s*\/\//.test(L[k - 1])) k++; // salta el resto del bloque de comentarios
+        const sig = ctx[k] || {};
+        if (sig.abre && sig.club) { dueno = sig.club; nota = 'del club'; }
+        else if (ctx[ln].club && sig.nombre) { dueno = ctx[ln].club; nota = `antes de ${sig.nombre}`; }
+        else if (ctx[ln].club && sig.cierra) { dueno = ctx[ln].club; nota = 'al final de la lista'; }
+      }
+      // un club sin data file (gestiones cargadas antes que sus balances) no tiene .md: su nota va al .md del país, con su etiqueta
+      if (dueno && !clubIds.has(dueno)) resto.push({ c, etiqueta: `${dueno}, ${nota}`, fin });
+      else (dueno ? mover : resto).push({ c, dueno, nota, fin });
+    }
+    // al .md del club: bloques consecutivos con la misma nota, juntos
+    for (let i = 0; i < mover.length;) {
+      let j = i; while (j + 1 < mover.length && mover[j + 1].dueno === mover[i].dueno && mover[j + 1].nota === mover[i].nota && !mover[i].fin) j++;
+      const id = mover[i].dueno; const lineas = mover.slice(i, j + 1).flatMap((x) => texto(x.c.text));
+      mdsG[id] = EV.agregarSeccion(mdsG[id] ?? EV.leer(id), 'Gestiones', lineas, `${mover[i].nota} (${rel})`);
+      for (const l of lineas) if (l.trim() && !mdsG[id].includes(l.trim())) errs.push(`${rel}: "${l.slice(0, 50)}" no llegó a ${id}.md`);
+      n += j - i + 1; i = j + 1;
+    }
+    // el resto, tal cual, al .md del país
+    const lineasR = resto.flatMap((x) => texto(x.c.text));
+    const t = /```/.test(lineasR.join('\n')) ? '~~~' : '```';
+    const bloquesR = [];
+    for (let i = 0; i < resto.length;) {
+      let j = i; while (j + 1 < resto.length && resto[j + 1].etiqueta === resto[i].etiqueta && !resto[i].fin) j++;
+      bloquesR.push((resto[i].etiqueta ? `_${resto[i].etiqueta}:_\n\n` : '') + `${t}text\n${resto.slice(i, j + 1).flatMap((x) => texto(x.c.text)).join('\n')}\n${t}`);
+      i = j + 1;
+    }
+    const mdPais = lineasR.length ? `# Gestiones por país: ${iso}\n\nLo que había como comentario en \`${rel}\` (data/ se publica: to-do 209), movido tal cual por\n`
+      + '`tools/mover-comentarios-compartidos.mjs --gestiones`: el criterio de este país, y las notas de los clubes que todavía no tienen\n'
+      + 'balances cargados. El formato de las gestiones está en `Admin/ARQUITECTURA.md`; las notas de cada gestión de un club cargado, en\n'
+      + 'su `Admin/carga-clubes/<club>.md`.\n\n' + bloquesR.join('\n\n') + '\n' : null;
+    for (const l of lineasR) if (l.trim() && !mdPais.includes(l)) errs.push(`${rel}: "${l.slice(0, 50)}" no llegó al .md del país`);
+    let nuevo = '', last = 0;
+    for (const c of comments) {
+      const ls = src.lastIndexOf('\n', c.pos - 1) + 1; const end = c.pos + c.text.length;
+      const rs = src.slice(end, (src.indexOf('\n', end) + 1 || src.length + 1) - 1);
+      if (src.slice(ls, c.pos).trim() === '' && rs.trim() === '' && ls >= last) { nuevo += src.slice(last, ls); const nl = src.indexOf('\n', end); last = nl < 0 ? src.length : nl + 1; }
+      else { let ini = c.pos; if (rs.trim() === '') while (ini > last && /[ \t]/.test(src[ini - 1])) ini--; nuevo += src.slice(last, ini); last = end; }
+    }
+    nuevo = (nuevo + src.slice(last)).replace(/^\s*\n/, '').replace(/\n{3,}/g, '\n\n');
+    if (normalizar(scan(rel, nuevo).code) !== normalizar(scan(rel, src).code)) errs.push(`${rel}: el código no da igual`);
+    salida[rel] = { nuevo, mdPais, mdRel: `Admin/gestiones-por-pais/${iso}.md`, club: mover.length, pais: resto.length, sinData: resto.filter((x) => x.etiqueta).length };
+  }
+  if (errs.length) { console.log(`NO se escribió nada:\n  ${errs.slice(0, 10).join('\n  ')}`); process.exit(1); }
+  const base = ensayo || ROOT;
+  const w = (r, t) => { const p = path.join(base, r); fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, t); };
+  for (const [rel, x] of Object.entries(salida)) { w(rel, x.nuevo); if (x.mdPais) w(x.mdRel, x.mdPais); console.log(`${rel}: ${x.club} a los clubes, ${x.pais} a ${x.mdPais ? x.mdRel : '-'} (${x.sinData} de clubes sin balances)`); }
+  for (const [id, md] of Object.entries(mdsG)) w(EV.rutaRel(id), md);
+  console.log(`${n} comentarios a "## Gestiones" de ${Object.keys(mdsG).length} clubes${ensayo ? ` (ENSAYO en ${ensayo})` : ''}.`);
+  process.exit(0);
+}
 
 if (args.includes('--resto-ligas')) {
   const errs = []; const salida = {};

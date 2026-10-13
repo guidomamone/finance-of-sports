@@ -164,6 +164,14 @@ diferido/corriente y Acreedores comerciales. cash = Efectivo y otros
 activos líquidos equivalentes (Activo Corriente, íntegro en Tesorería).
 ```
 
+## Gestiones
+
+_antes de Raúl Martín Presa (data/gestiones/es.js):_
+
+```text
+Martín Presa compró el club a Nueva Rumasa en 2011; su primera junta como dueño fue el 7/11/2011 (fecha aproximada de asunción).
+```
+
 ## Otros
 
 ### memberCountByClub['rayovallecano-es']

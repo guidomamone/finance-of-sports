@@ -465,6 +465,14 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 2019: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2019–20 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
+## Gestiones
+
+_antes de Rocco Commisso (data/gestiones/it.js):_
+
+```text
+Commisso: compra oficializada el 6/6/2019; presidente hasta su muerte, el 16/1/2026.
+```
+
 ## Fuentes
 
 ### (general)

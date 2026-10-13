@@ -158,3 +158,12 @@ Overlopende rekeningen. cash = Liquide middelen.
 officialTotalExpenses EXCLUYE los 2 ítems exceptional_items (neto -5.923300), mismo
 criterio que Zulte Waregem/Sint-Truiden/Charleroi/Club Brugge.
 ```
+
+## Gestiones
+
+_antes de Frans Schotte (data/gestiones/be.js):_
+
+```text
+Sin dueño persona (AS Monaco compró la mayoría de la cvba el 5/5/2017). Presidentes según la lista de Wikipedia, solo año (01-01).
+Goemaere ya figura como voorzitter el 22/4/2020 (Sporza), antes del cierre del 30/6/2020. Tousseyn: la fuente da solo 2023; el ejercicio 2023 depende de ese año.
+```

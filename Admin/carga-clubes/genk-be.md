@@ -116,3 +116,24 @@ _al lado del campo `officialTotalRevenue`:_
 ```text
 excluye exceptional_items (-0.231), mismo criterio que Chelsea
 ```
+
+## Gestiones
+
+_antes de Harry Lemmens (data/gestiones/be.js):_
+
+```text
+Genk es una vzw sin dueño: presidente del consejo. Lemmens: voorzitter desde 2006 (solo año); renunció en la semana del 23/10/2009.
+```
+
+_antes de Herbert Houben (data/gestiones/be.js):_
+
+```text
+Houben: ya es voorzitter en noviembre de 2009 (voetbalkrant 24/11/2009); desde = fecha del artículo de VRT sobre la renuncia de Lemmens (aproximada).
+Hasta: el consejo se renovó el 16/5/2017 (terminaron cuatro mandatos); en el informe del ejercicio 2017 ya preside Croonen.
+```
+
+_antes de Peter Croonen (data/gestiones/be.js):_
+
+```text
+Croonen: voorzitter hasta junio de 2026; Wikipedia lo ubica 2018-2026 pero el informe del ejercicio 2017 ya lo lista como presidente.
+```

@@ -654,6 +654,24 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   dice una vez en la tabla y se referencia. Antes esto vivía en prosa, con 10
   redacciones distintas, y 18 de los 89 valores no decían nada. Ver
   `Admin/CONVENCIONES.md` y `club-data-mapping/referencia/fx.md`.
+- GESTIONES (`data/gestiones/<país>.js`, `window.CLUB_GESTIONES`): quién condujo cada club y desde/hasta cuándo.
+  Reemplaza a `gestionesByClub`, que sigue vivo solo para las pestañas ocultas Pases y Resultados. Un archivo por
+  país, igual que `data/club-leagues/`: es un dato sobre personas, que se actualiza con cada elección, no con cada
+  documento. Cada gestión:
+  - `nombre`: el nombre completo, como lo publica la fuente; `corto`: el que va en el botón y en la franja del
+    gráfico (el apellido, casi siempre); `cargo`: 'Presidente' (en una sociedad, el dueño solo si es una persona
+    con nombre);
+  - `desde`: fecha en que ASUMIÓ (no la de la elección), AAAA-MM-DD; `hasta`: fecha en que dejó el cargo, o null si
+    sigue; `fuente`: de dónde salen las fechas (una URL); `confirmada`: true solo con fuente (una gestión sin
+    confirmar no se muestra en el sitio).
+  - LOS EJERCICIOS DE CADA GESTIÓN NO SE ESCRIBEN: se derivan. Un ejercicio es de quien estaba en el cargo el día de
+    su CIERRE (30/6 para un club que arranca el 1/7). La regla es "de quien firmó el balance"; las dos coinciden salvo
+    cuando el cambio cae entre el cierre y la aprobación del balance. Para esos casos existe `firmo` (lista de
+    ejercicios que esta gestión firmó aunque no estuviera al cierre). Caso: Racing 2012/13 cerró con Cogorno
+    (30/6/2013) y Blanco asumió el 30/9/2013; queda con Blanco.
+  - El archivo NO lleva comentarios (se publica): por qué se eligió una fecha o una fuente va al
+    `Admin/carga-clubes/<club>.md` del club, en "## Gestiones"; el criterio del país y las notas de un club que
+    todavía no tiene balances cargados, a `Admin/gestiones-por-pais/<país>.md`.
 ## Dónde está cada cosa
 
 **La raíz del repo es el SITIO; los documentos internos viven en `Admin/`** (Versión 196). Antes

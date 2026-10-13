@@ -127,6 +127,14 @@ grossDebt = Bank loans (78.071) + Other loans/factored receivable (32.500), Note
 corriente. cash = Cash at bank and in hand.
 ```
 
+## Gestiones
+
+_antes de Nassef Sawiris (data/gestiones/gb.js):_
+
+```text
+NSWE compró el control el 20-21/7/2018 (fecha aproximada: anuncio del club). Xia siguió de co-chairman hasta agosto de 2019; Sawiris quedó como chairman.
+```
+
 ## Otros
 
 ### astonvillaGbPasesData

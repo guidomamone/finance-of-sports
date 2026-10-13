@@ -146,3 +146,19 @@ Produits financiers (0.007086) - Charges financières (0.506461).
 grossDebt = Dettes (17/49) EXCLUYENDO Comptes de régularisation (1.131688, ingresos
 diferidos). cash = Valeurs disponibles.
 ```
+
+## Gestiones
+
+_antes de Charles Picqué (data/gestiones/be.js):_
+
+```text
+Presidentes anteriores a 2018 según la lista de Wikipedia (fr, marcada "à sourcer"), solo años. NO confirmados: los informes lo contradicen en parte
+(el del ejercicio 2002 lista a Michielsen y el de 2003 a Ravasio como presidente; el de 2013 ubica a Ravasio como presidente y a Baatzsch en el consejo).
+```
+
+_antes de Alex Muzio (data/gestiones/be.js):_
+
+```text
+Muzio: président du conseil d'administration desde el 2/7/2018 (informes de los ejercicios 2018 y 2019); el club lo compró en 2018 la sociedad de Tony Bloom
+(Wikipedia fr: Muzio 75%, Bloom 25%). Se carga como Président y no como Dueño porque el reparto del capital es de Wikipedia.
+```

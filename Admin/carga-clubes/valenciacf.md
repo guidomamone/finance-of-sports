@@ -61,6 +61,15 @@ grossDebt = Deudas con entidades de crédito, largo (116,269 M) + corto plazo (5
 Tesorería.
 ```
 
+## Gestiones
+
+_antes de Peter Lim (data/gestiones/es.js):_
+
+```text
+Peter Lim (Meriton Holdings) es el dueño; los presidentes formales (Amadeo Salvo 2014, Layhoon Chan 2014-17 y desde 2022, Anil Murthy 2017-22, Kiat Lim) quedan en comentarios.
+La fecha 24/10/2014 (traspaso de las acciones) salió de una sola nota de prensa; revisar si Guido quiere otra (la elección de la oferta fue el 17/5/2014).
+```
+
 ## Otros
 
 ### valenciacfPasesData

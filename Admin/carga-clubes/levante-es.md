@@ -143,6 +143,14 @@ plazo (63.304,17) + Deudas grupo CP (13.026,93). cash = Efectivo y otros activos
 equivalentes (balance consolidado).
 ```
 
+## Gestiones
+
+_antes de Francisco Catalán (data/gestiones/es.js):_
+
+```text
+Quico Catalán: presidente desde 2010 (solo el año; dia 01) hasta el 4/9/2023.
+```
+
 ## Otros
 
 ### memberCountByClub['levante-es']

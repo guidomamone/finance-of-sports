@@ -157,6 +157,14 @@ impuestos diferidos y Periodificaciones. cash = Efectivo y otros activos
 líquidos (Activo Corriente).
 ```
 
+## Gestiones
+
+_antes de Andy Kohlberg (data/gestiones/es.js):_
+
+```text
+Kohlberg: designado por el consejo el 8/9/2017; accionista mayoritario desde que Sarver le vendió su paquete en 2023.
+```
+
 ## Otros
 
 ### memberCountByClub['rcdmallorca-es']

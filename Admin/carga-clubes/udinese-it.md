@@ -198,6 +198,14 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 2022: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
+## Gestiones
+
+_antes de Franco Soldati (data/gestiones/it.js):_
+
+```text
+Franco Soldati, presidente del consejo (la familia Pozzo controla vía Gesapar). La fuente dice 2000 en un lado y 2002 en otro; 01/01/2002 por convención.
+```
+
 ## Fuentes
 
 ### (general)

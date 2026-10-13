@@ -207,6 +207,14 @@ da 198,186 (diferença de 0,003 M BRL / R$3 mil contra o impreso, ruído de redo
 nota "Outras Receitas"/"Rendas diversas", muito abaixo da tolerância de verifyTieOuts()).
 ```
 
+## Gestiones
+
+_antes de Leila Pereira (data/gestiones/br.js):_
+
+```text
+Mandato desde el 15/12/2021; reelecta en 2024 para 2025-2027 (una sola gestion continua).
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

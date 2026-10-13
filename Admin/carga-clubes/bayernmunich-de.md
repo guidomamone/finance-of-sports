@@ -270,3 +270,18 @@ netInterest:0 y la línea 'depreciation' de -93,4 combinan D&A + resultado finan
 comentario de cabecera (aproximación documentada, el documento no los separa). tax = residual:
 Jahresüberschuss 1,9 - EBT 5,0 = -3,1.
 ```
+
+## Gestiones
+
+_antes de Karl-Heinz Rummenigge (data/gestiones/de.js):_
+
+```text
+Cargo de quien firma: Vorstandsvorsitzender de la FC Bayern München AG. El presidente del e.V. (Herbert Hainer, desde 2019) es otro cargo y no se carga.
+Rummenigge: Vorstandsvorsitzender desde 2002 (solo año en la fuente, 1/1 aproximado).
+```
+
+_antes de Jan-Christian Dreesen (data/gestiones/de.js):_
+
+```text
+Dreesen asumió tras el despido de Kahn (votado el 26/5/2023); el 27/5/2023 es la fecha que da la prensa. Cierre del ejercicio 2023: 30/6/2023, ya con Dreesen.
+```

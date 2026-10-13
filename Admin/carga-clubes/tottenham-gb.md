@@ -149,6 +149,14 @@ grossDebt = Bank loans (secured) 80.908 + Other loans (secured) 770.540 (Nota 16
 miento del estadio), 100% no corriente en este ejercicio. cash = Cash and cash equivalents.
 ```
 
+## Gestiones
+
+_antes de Daniel Levy (data/gestiones/gb.js):_
+
+```text
+Levy: executive chairman desde febrero de 2001 (día aproximado, no verificado en la fuente citada).
+```
+
 ## Otros
 
 ### tottenhamGbPasesData

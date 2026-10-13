@@ -184,3 +184,11 @@ _al lado del campo `netInterest`:_
 ```text
 REPCAM - Gastos financieros e intereses - intereses s/préstamos - diferencia de cotización (las 3 en columna Estadio este ejercicio)
 ```
+
+## Gestiones
+
+_antes de Omar Plaini (data/gestiones/ar.js):_
+
+```text
+Plaini: ganó la elección del 26/2/2023; la fuente dice que asumió en marzo de 2023 (dia 01 por convencion).
+```

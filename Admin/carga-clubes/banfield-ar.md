@@ -216,6 +216,14 @@ officialPAT = "Resultado Final del Ejercicio" impreso. Verificado: revenue + exp
 netInterest = 80,173576 M exacto.
 ```
 
+## Gestiones
+
+_antes de Lucía Barbuto (data/gestiones/ar.js):_
+
+```text
+Barbuto: elegida el 6/10/2018 (lista única), asumió el 8/10/2018; el mandato terminó en octubre de 2021 (hasta aproximado, dia 08).
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

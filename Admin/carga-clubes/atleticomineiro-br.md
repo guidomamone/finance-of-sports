@@ -241,6 +241,21 @@ en el balance 2024, con comparativo 2023 en cero). cash = "Caixa e equivalentes 
 netInterest = "Receitas/(despesas) financeiras, líquidas", Controladora (31,370 - 56,890).
 ```
 
+## Gestiones
+
+_antes de Bruno Muzzi (data/gestiones/br.js):_
+
+```text
+SAF con cuatro accionistas personas (Menin, Guimaraes, Salvador): sin dueño unico, se carga el Diretor Presidente que firma el balance.
+Muzzi: la fuente solo dice "desde 2022" (oficializacion de la SAF), dia 01/01 aproximado. Dejo el 31/12/2025.
+```
+
+_antes de Pedro Daniel (data/gestiones/br.js):_
+
+```text
+Pedro Daniel firma el balance 2025 (relatorio integrado) aunque asume el 01/01/2026: firmo [2025].
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

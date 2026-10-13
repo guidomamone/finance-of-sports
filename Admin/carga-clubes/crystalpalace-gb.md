@@ -94,3 +94,11 @@ funding agreement 48.052 + Bank loans 31.879 + Loans from parent company 76.516 
 assetSales = "Profit on disposal of plant & machinery". netInterest = interest receivable
 (0.593) - interest payable (14.606) + foreign exchange gains/(losses) (0.452).
 ```
+
+## Gestiones
+
+_antes de Steve Parish (data/gestiones/gb.js):_
+
+```text
+El club sale de la administración en junio de 2010 (día 01 aproximado). Parish es chairman y cabeza del consorcio; Textor (2021-2025) y Blitzer/Harris fueron socios.
+```

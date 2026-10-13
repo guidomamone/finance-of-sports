@@ -112,3 +112,19 @@ Belastingen op het resultaat (código 67/77), resta pese a estar en pérdida.
 grossDebt = Schulden op meer dan één jaar - Overige leningen (deuda con partes
 relacionadas, Nota 6.6). cash = Liquide middelen.
 ```
+
+## Gestiones
+
+_antes de André Van Roy (data/gestiones/be.js):_
+
+```text
+Van Roy: voorzitter de la vzw; el informe más antiguo (ejercicio 2008) ya lo lista así y sigue hasta que el consejo cambió el 30/1/2018 (nuevos dueños de Indonesia).
+El inicio real no se conoce: desde = inicio del ejercicio 2008.
+```
+
+_antes de Sihar Sitorus (data/gestiones/be.js):_
+
+```text
+Sitorus: dueño (Wikipedia). El 30/1/2018 entró el grupo indonesio (Belinda Siahaan, gedelegeerd bestuurder desde esa fecha, y Denderfoot NV);
+Sitorus figura en el consejo desde el 3/6/2019. La fecha de compra se toma del cambio de consejo (aproximada).
+```

@@ -694,6 +694,14 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 2018: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2017–18 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
+## Gestiones
+
+_antes de Joey Saputo (data/gestiones/it.js):_
+
+```text
+Saputo: control del club desde el 19/9/2015 (Tacopina fue presidente en 2014-15 con Saputo de chairman).
+```
+
 ## Fuentes
 
 ### (general)

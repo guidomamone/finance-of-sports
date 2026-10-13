@@ -86,3 +86,12 @@ tools/fetch-club-league-reference.mjs agarró esa por error (extrajo 1 solo equi
 "Levadiakos") -- se confirmó a mano con el wikitext crudo en vez de confiar en el fetch
 automático. Mismo tipo de limitación que ya quedó anotada para Argentina (to-do 98/95).
 ```
+
+## Gestiones
+
+_antes de Giannis Alafouzos (data/gestiones/gr.js):_
+
+```text
+Alafouzos: dueño desde que la Alianza Panathinaikos tomó el control (julio de 2012) y presidente electo el 25/9/2012; fue presidente formal hasta el 21/4/2017
+y desde el 11/7/2022; entre medio fue el dueño y financista mientras presidían Mavrokoukoulakis y Konstantinou (ver cabecera). Sigue de dueño.
+```

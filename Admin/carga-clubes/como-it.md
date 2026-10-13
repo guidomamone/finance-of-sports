@@ -316,6 +316,15 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 2024: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2023–24 Serie B" (tools/club-league-reference/it.json), coincidencia e
 ```
 
+## Gestiones
+
+_antes de Mirwan Suwarso (data/gestiones/it.js):_
+
+```text
+Mirwan Suwarso (familia Hartono, dueña desde 2019), firma los bilanci como "Il Presidente". Las fuentes difieren en la fecha de la
+presidencia (2019 o 2024); decisión de Guido 2026-10-07: desde 2019 (solo el año; 01/01 por convención).
+```
+
 ## Fuentes
 
 ### (general)

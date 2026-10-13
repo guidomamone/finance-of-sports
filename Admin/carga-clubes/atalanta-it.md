@@ -798,6 +798,15 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 2018: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2018–19 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
+## Gestiones
+
+_antes de Antonio Percassi (data/gestiones/it.js):_
+
+```text
+Percassi: "presidente dal 2010" (solo el año; 01/01 por convención). Desde 2022 hay un copresidente (Stephen Pagliuca, cordata
+estadounidense), pero Percassi sigue de presidente y principal accionista individual: no se parte la gestión.
+```
+
 ## Fuentes
 
 ### (general)

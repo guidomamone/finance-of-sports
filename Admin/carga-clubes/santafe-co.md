@@ -151,6 +151,14 @@ sitio (ver club-data-mapping/referencia/formato-simplificado.md). cash = Nota 5,
 equivalentes al efectivo.
 ```
 
+## Gestiones
+
+_antes de Luis Eduardo Méndez Bustos (data/gestiones/co.js):_
+
+```text
+Méndez: asumió en la asamblea extraordinaria del 1/8/2019 (reemplazó a Juan Andrés Carreño). Wikipedia lista a Diego Perdomo con el 85% de las acciones; se carga al presidente que conduce el club (criterio a confirmar por Guido).
+```
+
 ## Otros
 
 ### gestionesByClub['santafe-co']

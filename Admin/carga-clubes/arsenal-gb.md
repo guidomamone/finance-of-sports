@@ -132,6 +132,14 @@ grossDebt = Debentures (17.722) + Balance due to parent undertaking, KSE UK Inc.
 ver comentario de cabecera. cash = Cash at bank and in hand.
 ```
 
+## Gestiones
+
+_antes de Stan Kroenke (data/gestiones/gb.js):_
+
+```text
+Kroenke pasó a ser accionista mayoritario el 11/4/2011 (62,89%); recién en 2018 compró el 100%. Dueño; el chairman operativo fue otra persona.
+```
+
 ## Otros
 
 ### arsenalGbPasesData

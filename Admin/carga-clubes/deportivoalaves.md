@@ -67,6 +67,14 @@ No hay línea "Deudas con entidades de crédito" con valor en el balance (ni a l
 plazo) -> grossDebt en 0. cash = Tesorería.
 ```
 
+## Gestiones
+
+_antes de Alfonso Fernández de Trocóniz (data/gestiones/es.js):_
+
+```text
+Fernández de Trocóniz: presentado el 3/10/2013 (nota de LaLiga); ahí figura el apoyo de Josean Querejeta, que no se carga como dueño (criterio a confirmar).
+```
+
 ## Otros
 
 ### deportivoalavesPasesData

@@ -267,6 +267,14 @@ officialPAT = "(Déficit)/Superávit do exercício" impreso (-34,499 M BRL, déf
 atribuido por la Memoria a las enchentes de Rio Grande do Sul de mayo de 2024).
 ```
 
+## Gestiones
+
+_antes de Alessandro Barcellos (data/gestiones/br.js):_
+
+```text
+Asumio el 01/01/2021; reelecto el 09/12/2023 para 2024-2026 (una sola gestion continua).
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

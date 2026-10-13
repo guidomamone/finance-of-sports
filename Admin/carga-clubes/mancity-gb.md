@@ -170,6 +170,14 @@ netInterest = Interest receivable (Statement of P&L, £1.098M) - Interest payabl
 de las Notas 9/10 (£3.583M / £11.132M), que no reconcilia contra el resultado impreso.
 ```
 
+## Gestiones
+
+_antes de Khaldoon Al Mubarak (data/gestiones/gb.js):_
+
+```text
+Nombrado chairman el 23/9/2008 según Companies House; el club cambió de dueño el 1/9/2008. Se usa la fecha de Companies House.
+```
+
 ## Otros
 
 ### Presupuesto al lado del balance (mancityGbPresupuestoOverlayByYear), en general

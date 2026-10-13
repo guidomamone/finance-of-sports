@@ -135,3 +135,11 @@ NO el total del pasivo (excluye acreedores comerciales). cash = Efectivo y otros
 líquidos equivalentes. Ambos del propio balance de este ejercicio (Balance de situación,
 pág. 3 del PDF).
 ```
+
+## Gestiones
+
+_antes de Christian Bragarnik (data/gestiones/es.js):_
+
+```text
+Bragarnik compró las acciones de José Sepulcre el 3/12/2019 (tesis de la UMH). El presidente formal es Joaquín Buitrago (desde agosto de 2019).
+```

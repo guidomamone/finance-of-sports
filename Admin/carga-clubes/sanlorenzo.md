@@ -185,6 +185,32 @@ tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por pr
 Comparativo dentro del balance 2011-2012 — no hay archivo propio descargado para este año.
 ```
 
+## Gestiones
+
+_antes de Carlos Abdo (data/gestiones/ar.js):_
+
+```text
+Abdo: electo el 11/12/2010, asumió el 28/12/2010; renunció en julio de 2012 y Lammens asumió la conducción el 1/8/2012.
+```
+
+_antes de Matías Lammens (data/gestiones/ar.js):_
+
+```text
+Lammens: interino desde el 1/8/2012, formalmente electo con asunción el 1/9/2012.
+```
+
+_antes de Marcelo Tinelli (data/gestiones/ar.js):_
+
+```text
+Tinelli: licencia desde mayo de 2021; la renuncia se anunció el 30/4/2022 y se formalizó a fines de mayo (30/5/2022, aproximado).
+```
+
+_antes de Marcelo Moretti (data/gestiones/ar.js):_
+
+```text
+Moretti: hasta = acefalía declarada el 16/12/2025 (licencia desde agosto de 2025 con Lopardo a cargo; Costantino transitorio desde el 22/12/2025). Sin gestiones posteriores cargadas.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

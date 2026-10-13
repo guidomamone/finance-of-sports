@@ -1083,6 +1083,21 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 2008: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2008–09 Serie A" (tools/club-league-reference/it.json), coincidencia ú
 ```
 
+## Gestiones
+
+_antes de Silvio Berlusconi (data/gestiones/it.js):_
+
+```text
+Berlusconi: dueño del 20/2/1986 al 13/4/2017 (presidente 1986-2004 y 2006-2008; de 2008 a 2017 el cargo de presidente estuvo vacante y
+fue presidente honorario desde el 29/3/2012). Se carga como dueño con nombre (regla de la cabecera de ar.js).
+```
+
+_antes de Paolo Scaroni (data/gestiones/it.js):_
+
+```text
+Elliott (fondo) subió a Scaroni a la presidencia el 21/7/2018; RedBird (fondo) lo confirmó desde 2022.
+```
+
 ## Fuentes
 
 ### (general)

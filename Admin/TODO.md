@@ -90,7 +90,9 @@ ni en el comentario de ningún archivo de código.
 
 195. GESTIONES DE LOS CLUBES YA CARGADOS QUE NO LAS TIENEN (pedido de Guido, 2026-10-09). Medido ese día (clubes con gestión / clubes en el sitio): Países Bajos 0/4,
     Japón 0/10, Grecia 0/2, México 0/1, Perú 0/1, Croacia 1/8, Bélgica 2/14, España 1/19, Dinamarca 2/11, Chile 1/3, Colombia 4/12, Alemania 5/11, Brasil 16/34,
-    Inglaterra 16/19 (unos 75 clubes). Un Sonnet por país, con fuente por cada fecha, mismo formato y regla que data/gestiones/ar.js (lo hecho con Juventus, to-do 194).
+    Inglaterra 16/19 (unos 75 clubes). Un Sonnet por país, con fuente por cada fecha, mismo formato y regla de siempre (`Admin/ARQUITECTURA.md`,
+    "Gestiones"; lo hecho con Juventus, to-do 194). Sin comentarios en `data/gestiones/`: el porqué de cada fecha va a "## Gestiones" del
+    `Admin/carga-clubes/<club>.md` (con `agregarSeccion()` de `tools/evidencia-club.mjs`), y el criterio del país a `Admin/gestiones-por-pais/<país>.md`.
 
 
 

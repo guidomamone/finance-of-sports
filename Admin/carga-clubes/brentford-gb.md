@@ -114,6 +114,14 @@ Los dos cierran EXACTOS, sin residuo.
 ============================================================================
 ```
 
+## Gestiones
+
+_antes de Matthew Benham (data/gestiones/gb.js):_
+
+```text
+Benham tomó el control total en junio de 2012 (Bees United votó la transferencia); día 01 aproximado. Cliff Crown fue chairman; Benham es el dueño.
+```
+
 ## Otros
 
 ### brentfordGbPasesData

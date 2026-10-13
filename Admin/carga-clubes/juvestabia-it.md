@@ -106,6 +106,16 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## Gestiones
+
+_antes de Andrea Langella (data/gestiones/it.js):_
+
+```text
+Andrea Langella: presidente y dueño de la mayoría con su hermano Giuseppe desde 2019 (borsaefinanza.it, 19/4/2024: lo describe como presidente en esa fecha). Las fechas 2021-2026 salen
+del título de un artículo que encontró Guido ("2021 - 2026: The Andrea Langella Era"); en junio de 2026 el dueño pasó a Alfredo Guerri (dato de Guido, 2026-10-09; la fuente es la búsqueda que él pasó):
+solo mes y año: día 01 por convención. Falta la fecha exacta de asunción de Langella y la del cambio.
+```
+
 ## Fuentes
 
 ### (general)

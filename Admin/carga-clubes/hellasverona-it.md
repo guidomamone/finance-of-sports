@@ -515,6 +515,14 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+## Gestiones
+
+_antes de Maurizio Setti (data/gestiones/it.js):_
+
+```text
+Setti compró el club el 23/6/2012 (único dueño desde marzo de 2013); presidente hasta el pase a Presidio Investors (15/1/2025).
+```
+
 ## Fuentes
 
 ### (general)

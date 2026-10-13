@@ -843,6 +843,14 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 2018: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2017–18 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
+## Gestiones
+
+_antes de Aurelio De Laurentiis (data/gestiones/it.js):_
+
+```text
+De Laurentiis: "presidente y dueño desde 2004" tras la quiebra (solo el año; 01/09 aproximado, verano de 2004).
+```
+
 ## Fuentes
 
 ### (general)

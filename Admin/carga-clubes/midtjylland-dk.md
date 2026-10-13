@@ -81,3 +81,11 @@ hechos posteriores del ejercicio 2023, que menciona la venta de sus acciones a
 Impact Co A/S recién en 2023, muy posterior a este ejercicio 2018/19).
 ============================================================================
 ```
+
+## Gestiones
+
+_antes de Matthew Benham (data/gestiones/dk.js):_
+
+```text
+Benham es el accionista mayoritario de FCM Holding desde julio de 2014 (día 01 aproximado). El chairman operativo (Rasmus Ankersen) es otro cargo y no se carga.
+```

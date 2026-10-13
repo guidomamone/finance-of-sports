@@ -157,3 +157,11 @@ promovido a FX_CLOSE en la integración (data/currency-map.js)
 grossDebt = Langfristet gæld + Kortfristet gæld, EXCLUYE Periodeafgrænsningsposter.
 cash = Likvide beholdninger.
 ```
+
+## Gestiones
+
+_antes de Morten Rahbek Hansen (data/gestiones/dk.js):_
+
+```text
+Rahbek es formand desde hace "32 años" a 2025 (~1993): el inicio es aproximado; en 2019 estaba en el cargo.
+```

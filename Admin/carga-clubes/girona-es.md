@@ -120,6 +120,14 @@ Abreviado (tabla en miles de EUR, Anexo comparativo 30/06/2019 vs 30/06/2020, co
 cash = "Efectivo y otros activos líquidos equivalentes" del balance principal.
 ```
 
+## Gestiones
+
+_antes de Delfí Geli (data/gestiones/es.js):_
+
+```text
+Geli: presidente desde 2015 (solo el año; dia 01). City Football Group y Girona Football Group (Pere Guardiola) son los accionistas: no se cargan como dueño.
+```
+
 ## Otros
 
 ### memberCountByClub['girona-es']

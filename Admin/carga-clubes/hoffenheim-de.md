@@ -195,3 +195,12 @@ Steuern (-0.206206) + 13. Ergebniszuweisung atypisch stiller Gesellschafter (+24
 15. auf andere Gesellschafter entfallender Gewinn/Verlust (-1.636257) = 22.794546.
 officialPAT = 16. Konzernverlust (el resultado final, el que se traslada a la Bilanz).
 ```
+
+## Gestiones
+
+_antes de Markus Schütz (data/gestiones/de.js):_
+
+```text
+Schütz asumió el 8/7/2024, después del cierre del ejercicio 2024 (30/6/2024), pero firmó ese Konzernabschluss (Zuzenhausen, 7/10/2024, "Dr. Markus Schütz, Geschäftsführer"): firmo:[2024].
+Antes de él no había Vorsitzender (los Geschäftsführer eran Strich, Mayer y Rosen); Peter Görlich salió de la Geschäftsführung el 1/6/2021, así que no cubre ningún año cargado.
+```

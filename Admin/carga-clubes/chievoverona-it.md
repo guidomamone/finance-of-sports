@@ -246,6 +246,14 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## Gestiones
+
+_antes de Luca Campedelli (data/gestiones/it.js):_
+
+```text
+Luca Campedelli: presidente desde septiembre de 1992 (murió su padre Luigi) hasta 2022; la fuente da solo mes y año o solo el año: día 01 por convención.
+```
+
 ## Fuentes
 
 ### (general)

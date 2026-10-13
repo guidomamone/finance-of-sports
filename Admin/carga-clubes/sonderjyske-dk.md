@@ -156,3 +156,11 @@ grossDebt = Kortfristet del af langfristede(2.000000) + Gæld til banker(7.89259
 + Langfristede gældsforpligtelser Anden gæld(4.187740). Excluye deuda con partes
 relacionadas y "Anden gæld" de corto plazo ambigua (ver comentario de cabecera).
 ```
+
+## Gestiones
+
+_antes de Gynther Kohls (data/gestiones/dk.js):_
+
+```text
+Cierre 30/6. Kohls firma 2013 a 2021; Davidsen firma 2022 como formand.
+```

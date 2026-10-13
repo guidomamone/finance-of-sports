@@ -124,3 +124,11 @@ corriente/diferido anotada en el reporte de esta sesión.
 grossDebt = Obligaciones Financieras (Nota 12) corriente (357,812) + no corriente
 (40.281,740). cash = Nota 5, Bancos+Cajas+Derechos fiduciarios.
 ```
+
+## Gestiones
+
+_antes de Rafael Tinoco Kipps (data/gestiones/co.js):_
+
+```text
+Tinoco: la nueva junta directiva se oficializó el 19-20/11/2025 (las fuentes difieren por un día); renunció el 21/4/2026 y asumió Joaquín Losada Fina (fecha de relevo aproximada).
+```

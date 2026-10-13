@@ -115,3 +115,12 @@ grossDebt = "Total obligaciones financieras" (Nota 12). cash = Nota 6, Efectivo 
 equivalentes de efectivo (Bancos moneda extranjera+nacionales+Caja general+Fideicomisos+
 Caja menor).
 ```
+
+## Gestiones
+
+_antes de Antonio Char Chaljub (data/gestiones/co.js):_
+
+```text
+Antonio Char asumió de nuevo a principios de 2025 (la prensa lo anunció el 18/1/2025 "desde el lunes"): 20/1/2025 es aproximada.
+Presidió antes 2016-12 a 2020-12 (reemplazado por Alejandro Arteta el 21/12/2020); ese tramo no hace falta para los años cargados.
+```

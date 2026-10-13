@@ -99,3 +99,11 @@ Ejercicio 2024 (01.07.2023-30.06.2024). Fuente: geschaeftsbericht-2024-25.md, co
 Financial result HGB = Income from p&l transfer agreements (17.570) + Other interest income
 (2.686) - Interest expenses (5.756) = 14.500. tax = Taxes on income (-4.319) + Other taxes (-0.243).
 ```
+
+## Gestiones
+
+_antes de Hans-Joachim Watzke (data/gestiones/de.js):_
+
+```text
+Watzke: Vorsitzender der Geschäftsführung desde 2005 (solo año en la fuente, 1/1 aproximado); dejó el cargo al ser elegido presidente del e.V. el 23/11/2025.
+```

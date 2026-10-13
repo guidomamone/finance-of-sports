@@ -132,6 +132,14 @@ que estos 2 campos son la suma verificada de todas las líneas cargadas, no un n
 directo de una sola fila. officialPAT = "SUPERÁVIT DO EXERCÍCIO" impreso, pág. 7.
 ```
 
+## Gestiones
+
+_antes de Alberto Jerônimo Guerra Neto (data/gestiones/br.js):_
+
+```text
+Electo en noviembre de 2022; la fuente dice "desde enero de 2023", dia 01/01/2023 aproximado. Roman asume el 01/01/2026.
+```
+
 ## Otros
 
 ### Presupuesto al lado del balance (gremioPresupuestoOverlayByYear), en general

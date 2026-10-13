@@ -152,3 +152,11 @@ Finansielle indtægter(264.030) - Finansielle omkostninger(324.028).
 grossDebt = Kreditinstitutter (largo plazo 1.625.684 + corto plazo 437.009). cash =
 Likvide beholdninger.
 ```
+
+## Gestiones
+
+_antes de Svend Lynge Jørgensen (data/gestiones/dk.js):_
+
+```text
+Cierre 30/6. 2013 a 2016: Svend Lynge Jørgensen figura primero en Bestyrelse y firma primero (OCR dañado en las firmas); 2017 en adelante Per Hastrup firma como Formand.
+```

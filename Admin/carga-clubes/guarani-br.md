@@ -167,6 +167,20 @@ contra el Déficit do Exercício final: 46,817 − 53,983 + 6,754 = −0,412).
 officialPAT = "Déficit do Exercício" impreso (−0,412).
 ```
 
+## Gestiones
+
+_antes de André Marconatto (data/gestiones/br.js):_
+
+```text
+Marconatto: electo el 12/03/2023, asume el 01/04/2023. Presidente del Conselho de Administracao.
+```
+
+_antes de Rômulo Aleksander Moreno Amaro (data/gestiones/br.js):_
+
+```text
+Rômulo Amaro: interino desde el 10/10/2024 (Marconatto se aparta por salud), reelecto en diciembre de 2025 para 2026-2028.
+```
+
 ## Otros
 
 ### gestionesByClub['guarani-br']

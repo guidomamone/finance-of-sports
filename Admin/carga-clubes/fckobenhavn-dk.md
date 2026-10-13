@@ -146,3 +146,24 @@ _al lado del campo `grossDebt`:_
 ```text
 fuera de alcance de esta carga (Finanzas), no se transcribió el detalle de Balance para deuda/caja
 ```
+
+## Gestiones
+
+_antes de John Dueholm (data/gestiones/dk.js):_
+
+```text
+Parken Sport & Entertainment. Formand del directorio, no el Koncerndirektør. Sin informe 2021 y 2022 en la carpeta.
+Dueholm: formand en el informe 2014; no se presentó a la asamblea del 15/4 (tv2kosmopol.dk/kobenhavn/fck-skal-have-ny-formand, sin año en la nota; Rygaard entró al directorio en 2015 según el informe 2015). 15/4/2015 inferido.
+```
+
+_antes de Bo Rygaard (data/gestiones/dk.js):_
+
+```text
+Rygaard: se retiró tras seis años en la asamblea del 19/4/2021 (altinget.dk/artikel/formanden-for-parken-takker-af).
+```
+
+_antes de Henrik Møgelmose (data/gestiones/dk.js):_
+
+```text
+Møgelmose: era næstformand en 2020 y formand en los informes 2023 y 2024; la fecha de asuncion (asamblea del 19/4/2021) es inferida, no hay comunicado a mano.
+```

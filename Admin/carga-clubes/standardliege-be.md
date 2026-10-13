@@ -153,3 +153,23 @@ _al lado del campo `officialTotalRevenue`:_
 ```text
 excluye exceptional_items (+0.972273 crédito), ver criterio Chelsea
 ```
+
+## Gestiones
+
+_antes de André Duchêne (data/gestiones/be.js):_
+
+```text
+Duchêne: président 1998-2000 (administrateur délégué en los informes de 1999 y 2000); Stiffler lo reemplazó en octubre de 2000.
+```
+
+_antes de Reto Stiffler (data/gestiones/be.js):_
+
+```text
+Stiffler: presidente puesto por el dueño Robert Louis-Dreyfus (murió el 4/7/2009; su viuda vendió). Hasta que Duchâtelet compró el club el 23/6/2011.
+```
+
+_antes de Bruno Venanzi (data/gestiones/be.js):_
+
+```text
+Venanzi: compró el 24/6/2015 (99,7%); acordó la venta a 777 Partners el 13/3/2022, que se cerró el 19/4/2022. Desde ahí no hay dueño persona.
+```

@@ -380,6 +380,20 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 2018: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2018–19 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
+## Gestiones
+
+_antes de Massimo Ferrero (data/gestiones/it.js):_
+
+```text
+Ferrero compró el club el 12/6/2014. Entre el 5/4 y el 19/12/2017 la FIGC lo hizo decaer de la presidencia (siguió de dueño): no se parte la gestión.
+```
+
+_antes de Marco Lanna (data/gestiones/it.js):_
+
+```text
+Lanna: nombrado el 27/12/2021; la lista da su fin como "2024" (solo el año; 01/01/2024 por convención).
+```
+
 ## Fuentes
 
 ### (general)

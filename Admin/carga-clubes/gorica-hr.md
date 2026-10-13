@@ -184,3 +184,12 @@ comentario de cabecera). Financijski prihodi = 0.
 grossDebt = Prekoračenja po bankovnim računima (bank overdraft), PISO/lower-bound —
 ver comentario de cabecera. cash = Novac i novčani ekvivalenti.
 ```
+
+## Gestiones
+
+_antes de Ilija Karamatić (data/gestiones/hr.js):_
+
+```text
+Karamatić pasó a conducir el club en agosto de 2025 (presidente de la Skupština, tras Nenad Črnko) y quedó con el 100% el 21/10/2025: 1/8/2025 es aproximada.
+Črnko (presidente 16 años hasta agosto de 2025) no se carga: ningún año cargado cae en su gestión.
+```

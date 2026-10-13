@@ -1362,6 +1362,34 @@ tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): a
 2003: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2002–03 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
+## Gestiones
+
+_antes de Vittorio Caissotti di Chiusano (data/gestiones/it.js):_
+
+```text
+(to-do 194, 2026-10-09) Juventus es una S.p.A. controlada por Exor (sociedad, no persona): la gestión es la del presidente del consejo.
+Chiusano: presidente desde 1990 (la fuente da solo el año: 01/01 por convención) hasta su muerte, el 31/7/2003 (sitio oficial). El cierre del 30/6/2003 es suyo.
+```
+
+_antes de Franzo Grande Stevens (data/gestiones/it.js):_
+
+```text
+Grande Stevens: elegido por el consejo el 12/8/2003 (UEFA, 12/8/2003).
+```
+
+_antes de Giovanni Cobolli Gigli (data/gestiones/it.js):_
+
+```text
+Cobolli Gigli: el consejo que lo hizo presidente lo eligió la asamblea del 29/6/2006 (convocatoria en el comunicado de IFIL del 14/6/2006; no se
+encontró el acta). Ese consejo aprobó el balance 2005-06, por eso `firmo:[2006]`. Hasta la asamblea del 27/10/2009, que ratificó a Blanc (Sky, 12/10/2009).
+```
+
+_antes de Andrea Agnelli (data/gestiones/it.js):_
+
+```text
+Andrea Agnelli: nombrado por el consejo el 19/5/2010; renunció el 28/11/2022 y siguió en el cargo hasta la asamblea del 18/1/2023, que eligió a Ferrero.
+```
+
 ## Fuentes
 
 ### (general)

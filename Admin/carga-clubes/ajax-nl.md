@@ -161,6 +161,44 @@ Crediteuren(89.664) + Belastingen en premies sociale verzekeringen(8.770), EXCLU
 Belastinglatenties(24.492) y Overlopende passiva(33.345). cash = Liquide middelen.
 ```
 
+## Gestiones
+
+_antes de Michael Kinsbergen (data/gestiones/nl.js):_
+
+```text
+Kinsbergen: algemeen directeur y voorzitter de la directie desde el 26/11/2012; su mandato terminó el 30/6/2015 (hasta = día siguiente, así el cierre 30/6/2015 es suyo).
+```
+
+_antes de Dolf Collee (data/gestiones/nl.js):_
+
+```text
+Collee: directeur ad interim el 7/9/2015, statutair directeur y directievoorzitter el 13/11/2015; mandato hasta el 11/11/2016.
+```
+
+_antes de Edwin van der Sar (data/gestiones/nl.js):_
+
+```text
+Van der Sar: directievoorzitter y algemeen directeur desde el 11/11/2016; el 1/6/2023 traspasó sus tareas (el contrato terminó el 1/8/2023).
+```
+
+_antes de Jan van Halst (data/gestiones/nl.js):_
+
+```text
+Van Halst: algemeen directeur ad interim (titulair) del 1/6/2023 al 14/3/2024 inclusive.
+```
+
+_antes de Alex Kroes (data/gestiones/nl.js):_
+
+```text
+Kroes: algemeen directeur (statutair) desde el 15/3/2024; desde el 1/5/2024 es technisch directeur (titulair).
+```
+
+_antes de Menno Geelen (data/gestiones/nl.js):_
+
+```text
+Geelen: algemeen directeur ad interim desde el 10/5/2024; el contrato como titular rige desde el 1/7/2025 (VI, según la prensa).
+```
+
 ## Otros
 
 ### gestionesByClub['ajax-nl']

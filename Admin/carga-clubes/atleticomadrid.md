@@ -74,6 +74,14 @@ grossDebt = Deudas con entidades de crédito, largo (28,092989 M) + corto plazo 
 cash = Efectivo y otros activos líquidos equivalentes.
 ```
 
+## Gestiones
+
+_antes de Enrique Cerezo (data/gestiones/es.js):_
+
+```text
+Cerezo es el presidente; Miguel Ángel Gil Marín (consejero delegado, accionista de referencia) no se carga como dueño: criterio a confirmar por Guido.
+```
+
 ## Otros
 
 ### atleticomadridPasesData

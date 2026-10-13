@@ -129,3 +129,11 @@ grossDebt = Deudas a largo plazo + Deudas a corto plazo (Nota 13, deuda financie
 separada de "Acreedores comerciales y otras cuentas a pagar" en el propio balance). cash =
 Efectivo y otros activos líquidos equivalentes.
 ```
+
+## Gestiones
+
+_antes de Luis Sabalza Iriarte (data/gestiones/es.js):_
+
+```text
+Sabalza: presidente desde diciembre de 2014 (dia 01), reelegido sin urnas; el mandato actual corre del 22/8/2025 al 21/8/2029.
+```

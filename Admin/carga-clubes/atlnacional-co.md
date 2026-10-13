@@ -121,3 +121,11 @@ grossDebt = "Obligaciones financieras" (Nota 15, corriente 13.869,434 + no corri
 2.078,851). cash = "La Sociedad mantenía efectivo y equivalentes al efectivo por
 $17.130.558" (Nota, texto narrativo, no tabla).
 ```
+
+## Gestiones
+
+_antes de Sebastián Arango Botero (data/gestiones/co.js):_
+
+```text
+Cargo: Presidente (representante legal). El dueño es la Organización Ardila Lulle, una sociedad sin dueño persona: no se carga como gestión.
+```

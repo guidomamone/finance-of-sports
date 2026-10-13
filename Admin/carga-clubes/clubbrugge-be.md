@@ -123,3 +123,23 @@ _al lado del campo `officialTotalRevenue`:_
 ```text
 excluye exceptional_items (+0.335 crédito), mismo criterio que Chelsea
 ```
+
+## Gestiones
+
+_antes de Michel Van Maele (data/gestiones/be.js):_
+
+```text
+Van Maele: voorzitter desde 1999 (solo año; Fernand De Clerck renunció por un desacuerdo en el consejo), murió el 26/2/2003. El ejercicio 1999 depende de ese año.
+```
+
+_antes de Michel D'Hooghe (data/gestiones/be.js):_
+
+```text
+D'Hooghe: lo sucedió en 2003 (la fecha exacta no figura; marzo aproximado, ganó la liga dos meses después). Dejó en junio de 2009 (hasta = 1/7/2009, así el cierre 30/6/2009 es suyo).
+```
+
+_antes de Pol Jonckheere (data/gestiones/be.js):_
+
+```text
+Jonckheere: voorzitter 2009-2011; Verhaeghe lo sucedió el 1 de febrero de 2011.
+```

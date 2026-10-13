@@ -505,6 +505,23 @@ tools/caja-deuda.mjs (2026-10-03): cash escalón 2 (compuerta: documento siguien
 2016: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2015–16 Football League (Greece)" (tools/club-league-reference/gr.json
 ```
 
+## Gestiones
+
+_antes de Alexis Kougias (data/gestiones/gr.js):_
+
+```text
+Kougias: compró la mayoría en julio de 2015 (en.wikipedia, mes sin día: 01) y conduce hasta junio de 2022, cuando anunció su salida y la cesión de las acciones a
+Achilleas Ntavelis (el.wikipedia da solo el mes: 01). Entre 2016 y 2020 firmaron los balances Liontos (2016, 2017) y Markou (2018, 2019) como presidentes del directorio;
+quedan fuera por el criterio del dueño.
+```
+
+_antes de Achilleas Ntavelis (data/gestiones/gr.js):_
+
+```text
+Achilleas Ntavelis: dueño y presidente (firma los balances 2022 a 2024). Hasta el 9/7/2026, cuando Zisis Stylianos se presentó como nuevo dueño
+(Skai, 9/7/2026). Su hermano Ioannis firma el balance 2025 como presidente del directorio.
+```
+
 ## Fuentes
 
 ### (general)

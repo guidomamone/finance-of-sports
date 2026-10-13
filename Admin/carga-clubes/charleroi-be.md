@@ -154,3 +154,17 @@ _al lado del campo `officialTotalRevenue`:_
 ```text
 excluye exceptional_items netos +0.659382, mismo criterio que Chelsea
 ```
+
+## Gestiones
+
+_antes de Abbas Bayat (data/gestiones/be.js):_
+
+```text
+Bayat: el club fue comprado por el grupo Chaudfontaine (Abbas Bayat) y anunciado el 12/7/2000; propietario y presidente. Renunció a fines de agosto de 2012.
+```
+
+_antes de Fabien Debecq (data/gestiones/be.js):_
+
+```text
+Debecq: nuevo presidente a fines de agosto de 2012 (fundador de QNT); sigue.
+```

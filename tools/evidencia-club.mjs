@@ -23,6 +23,7 @@
 //   agregarCabecera(md, lineas, nota?)        un bloque nuevo al final de "## Cabecera" (lo del club entero: alta, color), con una
 //                                             línea _nota:_ arriba si se pasa (ej. de qué archivo vino).
 //   reemplazarTexto(md, viejo, nuevo)         un texto exacto por otro (el color del alta).
+//   agregarSeccion(md, titulo, lineas, nota?) un bloque en una sección del club que no es de un año ("## Gestiones").
 // Después de cada operación, una sección o un año que quedaron vacíos se borran.
 // ============================================================================
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
@@ -144,6 +145,17 @@ export function agregarCabecera(md, lineas, nota = null) {
   const L = md.replace(/\n+$/, '').split('\n');
   let i = L.findIndex((t) => t.trim() === '## Cabecera');
   if (i < 0) { let pos = L.findIndex((t) => RE_H2.test(t)); if (pos < 0) pos = L.length; L.splice(pos, 0, '## Cabecera', ''); i = pos; }
+  let pos = finDe(L, i, RE_H2); while (pos > i + 1 && L[pos - 1].trim() === '') pos--;
+  L.splice(pos, 0, '', ...(nota ? [`_${nota}:_`, ''] : []), ...fence(lineas), '');
+  return limpiar(L.join('\n'));
+}
+// Una sección del club que no es de un año (ej. "## Gestiones"): un bloque nuevo al final, con _nota:_ arriba si se pasa. La crea, si no
+// está, después de los años y antes de "## Fuentes" / "## Otros".
+export function agregarSeccion(md, titulo, lineas, nota = null) {
+  if (!lineas || !lineas.length) return md;
+  const L = md.replace(/\n+$/, '').split('\n');
+  let i = L.findIndex((t) => t.trim() === `## ${titulo}`);
+  if (i < 0) { let pos = L.findIndex((t) => /^## (Fuentes|Otros)\s*$/.test(t)); if (pos < 0) pos = L.length; L.splice(pos, 0, `## ${titulo}`, ''); i = pos; }
   let pos = finDe(L, i, RE_H2); while (pos > i + 1 && L[pos - 1].trim() === '') pos--;
   L.splice(pos, 0, '', ...(nota ? [`_${nota}:_`, ''] : []), ...fence(lineas), '');
   return limpiar(L.join('\n'));

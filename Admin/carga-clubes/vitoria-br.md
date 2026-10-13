@@ -196,6 +196,14 @@ negativo (ver comentario de cabecera) pero el DÉFICIT del ejercicio en sí (-25
 en ingresos, ~11%) es moderado comparado con el agujero patrimonial acumulado (-300,309 M).
 ```
 
+## Gestiones
+
+_antes de Fábio Rios Mota (data/gestiones/br.js):_
+
+```text
+Interino desde octubre de 2021 (la fuente no da el dia, 01/10/2021 aproximado), efectivo en 2022, reelecto el 13/12/2025 hasta 2028. Una sola gestion continua.
+```
+
 ## Otros
 
 ### memberCountByClub['vitoria-br']

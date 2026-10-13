@@ -150,3 +150,18 @@ Overlopende rekeningen. cash = Liquide middelen.
 officialTotalExpenses EXCLUYE el ítem exceptional_items (-2.300000, niet-recurrente
 bedrijfskosten), mismo criterio que Zulte Waregem/Charleroi/Club Brugge.
 ```
+
+## Gestiones
+
+_antes de Roland Duchâtelet (data/gestiones/be.js):_
+
+```text
+Duchâtelet: voorzitter y dueño desde 2004 (solo año; la titular formal de las acciones era su esposa, Maria Höfte, gedelegeerd bestuurder 2016-2017).
+DMM compró el 20% en junio de 2017 y el 80% restante en noviembre de 2017; el consejo anterior terminó el 30/11/2017.
+```
+
+_antes de Yusuke Muranaka (data/gestiones/be.js):_
+
+```text
+DMM (empresa, no persona): los presidentes que puso. Muranaka duró muy poco; Meekers figura 2018-actual (solo año).
+```

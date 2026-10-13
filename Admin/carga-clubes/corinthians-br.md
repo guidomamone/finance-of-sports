@@ -290,6 +290,20 @@ BRL. officialPAT = 'Total de Superávit (déficit) do exercício' impreso (-181,
 real).
 ```
 
+## Gestiones
+
+_antes de Augusto Melo (data/gestiones/br.js):_
+
+```text
+Afastamiento por el Conselho Deliberativo la noche del lunes 26/05/2025 (el balance 2025 dice que Stabile asumio el 28/05; la prensa, el 26/05).
+```
+
+_antes de Osmar Stábile (data/gestiones/br.js):_
+
+```text
+Interino desde el 26/05/2025, efectivado el 25/08/2025 (mandato hasta el 31/12/2026): una sola gestion continua.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

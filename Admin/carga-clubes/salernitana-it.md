@@ -173,6 +173,14 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## Gestiones
+
+_antes de Danilo Iervolino (data/gestiones/it.js):_
+
+```text
+Iervolino: presidente del consejo desde el 13/1/2022 (el trust Salernitana 2021, con un administrador único, condujo antes); firma los balances 2022 y 2023.
+```
+
 ## Fuentes
 
 ### (general)

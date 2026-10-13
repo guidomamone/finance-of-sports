@@ -75,3 +75,11 @@ officialTotalExpenses EXCLUYE exceptional_items (-50.200), mismo criterio que el
 sitio desde Botafogo (el motor no los cuenta en verifyTieOuts() de Expenses, sino que llegan
 al PAT por otro camino) — el total CON exceptionales que imprime el documento es £799,514m.
 ```
+
+## Gestiones
+
+_antes de Todd Boehly (data/gestiones/gb.js):_
+
+```text
+Boehly dejó la presidencia al vender su parte a Clearlake (anuncio del 16/9/2026). Desde entonces no se carga a nadie (Clearlake es un fondo).
+```

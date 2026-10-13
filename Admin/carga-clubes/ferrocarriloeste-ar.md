@@ -205,6 +205,14 @@ revenue + expenses = "Superávit (deficit) Operativo" (6.245.701,63); + netInter
 256.901.915,58 = officialPAT.
 ```
 
+## Gestiones
+
+_antes de Guillermo Bameule (data/gestiones/ar.js):_
+
+```text
+Bameule: sigue abierta; el 27/9/2026 hubo elecciones y ganó la oposición, todavía no figura quién asumió.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

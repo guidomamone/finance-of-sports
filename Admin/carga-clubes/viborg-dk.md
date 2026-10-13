@@ -197,3 +197,11 @@ _al lado del campo `profitOnPlayerSales`:_
 ```text
 el resultado por venta de pases YA está en revenueLines (Andre driftsindtægter)
 ```
+
+## Gestiones
+
+_antes de Kim Nielsen (data/gestiones/dk.js):_
+
+```text
+Cierre 30/6. Kim Nielsen firma como formand todos los informes 2012 a 2024; inicio real no documentado.
+```

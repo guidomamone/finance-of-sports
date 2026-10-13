@@ -813,6 +813,20 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 2018: verificado 2026-10-09 contra roster cacheado de "2017–18 Serie A" (tools/club-league-reference/it.json), "Internazionale" (= Inter)
 ```
 
+## Gestiones
+
+_antes de Erick Thohir (data/gestiones/it.js):_
+
+```text
+Thohir: presidente desde el 15/11/2013 (LaPresse, 15/11/2013) hasta el 26/10/2018, cuando lo reemplazó Zhang (Calcio e Finanza, 26/10/2018).
+```
+
+_antes de Giuseppe Marotta (data/gestiones/it.js):_
+
+```text
+Oaktree (fondo) tomó el control en mayo de 2024; Marotta es presidente del consejo desde el 4/6/2024.
+```
+
 ## Fuentes
 
 ### (general)

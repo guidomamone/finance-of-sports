@@ -103,3 +103,11 @@ _al lado del campo `grossDebt`:_
 ```text
 no verificado esta sesión, mismo alcance que los demás onboardings de esta ronda
 ```
+
+## Gestiones
+
+_antes de Eduardo Pimentel (data/gestiones/co.js):_
+
+```text
+Dueño: Eduardo Pimentel, persona con nombre (dueño y gestor del proyecto desde la fundación del club en 2002, Wikipedia; Publimetro 2024 lo llama "dueño del Boyacá Chicó"). Su hijo Nicolás Pimentel es el presidente/gerente que firma (Publimetro, 10/2024): sin fecha de inicio, queda fuera por el criterio del dueño.
+```

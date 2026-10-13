@@ -390,6 +390,14 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 2022: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2021–22 Serie B" (tools/club-league-reference/it.json), coincidencia e
 ```
 
+## Gestiones
+
+_antes de Paolo Rossi (data/gestiones/it.js):_
+
+```text
+Rossi: la lista de presidentes da solo el año de arranque (2017); 01/01 por convención.
+```
+
 ## Fuentes
 
 ### (general)

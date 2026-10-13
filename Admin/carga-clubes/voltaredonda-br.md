@@ -180,6 +180,14 @@ igual al "Receitas/Despesas Financeiras" impreso en la DRE.
 Associação civil sem fins lucrativos: isenta de IRPJ/CSLL (Nota 3.7.1, art. 195 CF).
 ```
 
+## Gestiones
+
+_antes de Flávio Horta Jardim (data/gestiones/br.js):_
+
+```text
+Transicion el 08/12/2014; reelecto (tercer mandato en noviembre de 2022, vigente hasta noviembre de 2026). Una sola gestion continua.
+```
+
 ## Otros
 
 ### gestionesByClub['voltaredonda-br']

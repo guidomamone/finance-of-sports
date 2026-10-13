@@ -742,6 +742,22 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 2016: verificado 2026-10-09 contra roster cacheado de "2015–16 Serie D" (tools/club-league-reference/it.json, los 9 gironi armados a mano), "Parma" (girone D)
 ```
 
+## Gestiones
+
+_antes de Nevio Scala (data/gestiones/it.js):_
+
+```text
+Scala: presidente del Parma refundado (Serie D) desde el verano de 2015 (la sociedad se constituyó el 30/6/2015) hasta el 22/11/2016.
+Entre el 22/11 y el 31/12/2016 la fuente no nombra a nadie (la gestión siguiente arranca el 01/01/2017 por convención): ningún cierre cae ahí.
+```
+
+_antes de Jiang Lizhang (data/gestiones/it.js):_
+
+```text
+Las tres gestiones: la fuente da solo los años (2017-2018, 2018-2020, 2020-); 01/01/2017, 01/10/2018 (control de Nuovo Inizio,
+octubre de 2018) y 01/09/2020 (septiembre de 2020, entra la familia Krause) por convención.
+```
+
 ## Fuentes
 
 ### (general)

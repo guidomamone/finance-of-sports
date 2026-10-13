@@ -298,6 +298,14 @@ título de Copa do Brasil 2023 — el propio Conselho Fiscal lo atribuye al exce
 fútbol profesional sobre el presupuesto aprobado).
 ```
 
+## Gestiones
+
+_antes de Julio Casares (data/gestiones/br.js):_
+
+```text
+Reelecto para 2024-2026 (una sola gestion). Afastado/renuncia en enero de 2026 (Wikipedia: 16/01/2026; otras notas dicen 21/01).
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

@@ -246,6 +246,14 @@ officialTotalRevenue/officialTotalExpenses = suma verificada de revenueLines/exp
 exercício" impreso, exacto.
 ```
 
+## Gestiones
+
+_antes de Raul Aguirre Zegarra (data/gestiones/br.js):_
+
+```text
+SAF controlada por City Football Group (sociedad, sin dueño persona). Raul Aguirre Zegarra firma los balances como "Presidente"; la prensa lo llama CEO.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

@@ -73,6 +73,14 @@ entidades deportivas de 116,896 M) + Deudas a corto plazo (34,920 M). cash = Efe
 activos líquidos equivalentes.
 ```
 
+## Gestiones
+
+_antes de José Castro Carmona (data/gestiones/es.js):_
+
+```text
+Castro: ocupó la presidencia en funciones al dimitir Del Nido Benavente (anunciado el 9/12/2013).
+```
+
 ## Otros
 
 ### sevillafcPasesData

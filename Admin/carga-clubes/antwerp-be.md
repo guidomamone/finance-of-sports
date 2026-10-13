@@ -157,3 +157,24 @@ _al lado del campo `officialTotalRevenue`:_
 ```text
 excluye exceptional_items (+0.213502 crédito), ver criterio Chelsea
 ```
+
+## Gestiones
+
+_antes de Eddy Wauters (data/gestiones/be.js):_
+
+```text
+Wauters: voorzitter desde 1969 (Wikipedia, solo año); fue sacado del consejo a comienzos de 2012 y lo reemplazó Jan Michel.
+```
+
+_antes de Jan Michel (data/gestiones/be.js):_
+
+```text
+Michel: voorzitter desde comienzos de 2012 (grupo de Jos Verhaeghen). Desde la temporada 2015-16 figura Patrick Decuyper como voorzitter
+con Gheysens detrás; el hasta coincide con el desde de Gheysens de más abajo (aproximado, solo año).
+```
+
+_antes de Paul Gheysens (data/gestiones/be.js):_
+
+```text
+Gheysens compró el club en 2015 (solo año en la fuente, 1/1 aproximado; se hizo público en marzo de 2017). Vendió a un grupo de Wouter Vandenhaute en julio de 2026 (16/7/2026 aproximado).
+```

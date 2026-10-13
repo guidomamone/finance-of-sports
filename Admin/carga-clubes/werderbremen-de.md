@@ -147,3 +147,11 @@ _al lado del campo `currency`:_
 ```text
 PENDIENTE: esta clave todavía no existe en FX_CLOSE (data/currency-map.js), la agrega el orquestador.
 ```
+
+## Gestiones
+
+_antes de Klaus Filbry (data/gestiones/de.js):_
+
+```text
+Filbry: Vorsitzender der Geschäftsführung desde noviembre de 2012 (solo mes en la fuente, día 01 aproximado).
+```

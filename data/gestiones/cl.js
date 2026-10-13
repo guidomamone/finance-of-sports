@@ -1,9 +1,3 @@
-// ============================================================================
-// data/gestiones/cl.js: quién condujo cada club de Chile y desde/hasta cuándo (to-do 149).
-// El formato, la regla de qué ejercicio es de qué gestión y el campo `firmo` están explicados en la
-// cabecera de data/gestiones/ar.js. En una sociedad se carga el dueño solo si es una persona con nombre.
-// ============================================================================
-
 window.CLUB_GESTIONES = window.CLUB_GESTIONES || {};
 
 Object.assign(window.CLUB_GESTIONES, {

@@ -149,6 +149,14 @@ ordinario + no-efectivo solamente, exceptional_items no participa de ese check (
 officialPAT). 113884,331 (impreso, incluye el extraordinario) - 256,298 = 113628,033.
 ```
 
+## Gestiones
+
+_antes de Enrique Camacho Matamoros (data/gestiones/co.js):_
+
+```text
+Camacho: presidente desde 2014, tras la renuncia de Juan Carlos Saldarriaga (Noticias Caracol; solo el año: dia 01). Sigue en 2026. El accionista mayoritario es un fondo (Amber Capital, vía Blas de Lezo Inversiones, 86,61%): no es una persona, no se carga como dueño.
+```
+
 ## Otros
 
 ### gestionesByClub['millonarios-co']

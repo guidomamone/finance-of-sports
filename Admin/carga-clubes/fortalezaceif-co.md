@@ -1062,6 +1062,15 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2017: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2017 Categoría Primera B season" (tools/club-league-reference/co.json)
 ```
 
+## Gestiones
+
+_antes de Carlos Alberto Barato Méndez (data/gestiones/co.js):_
+
+```text
+Barato: fundador de CEIF, presidente y representante legal (firma las certificaciones 2017 y 2019 y el informe 2021 en Clubes/Colombia/Fortaleza CEIF/). Win Sports ubica el cambio de administración en 2015 (solo el año: dia 01).
+Hasta: el club anunció su salida el 25/11/2025 (Wikipedia en inglés). Quién lo sucedió no se pudo confirmar: el ejercicio 2025 queda sin cubrir.
+```
+
 ## Fuentes
 
 ### (general)

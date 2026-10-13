@@ -106,3 +106,12 @@ _al lado del campo `officialTotalRevenue`:_
 ```text
 excluye exceptional_items netos -0.639136, mismo criterio que Chelsea
 ```
+
+## Gestiones
+
+_antes de Ivan De Witte (data/gestiones/be.js):_
+
+```text
+De Witte: voorzitter desde 1999 (solo año). Baro compró el club el 20/7/2023 (95% de las acciones, aprobado en asamblea especial); De Witte siguió como voorzitter
+un año más y Baro pasó a presidir desde la temporada 2024-25.
+```

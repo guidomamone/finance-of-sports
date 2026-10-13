@@ -122,3 +122,11 @@ ya capturado íntegro en player_sales (Transfer income, resultado neto de dispos
 Other financial income(1.578) - Other financial expenses(209).
 Tax on profit/loss for the year: Current tax(14.397) + cambio en deferred tax(-797).
 ```
+
+## Gestiones
+
+_antes de Kent Madsen (data/gestiones/dk.js):_
+
+```text
+2012 a 2015: Kent Madsen firma como Bestyrelsesformand; 2024: Benjamin Albert Boycott figura como chairman y Lyhne como deputy chairman.
+```

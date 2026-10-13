@@ -137,6 +137,14 @@ officialTotalRevenue/Expenses = RECURSOS/GASTOS ORDINARIOS + la porción positiv
 normales (ver comentario de cabecera): 4264.184851+68.756627 / 4419.205412+29.218628+0.024121.
 ```
 
+## Gestiones
+
+_antes de Juan Sebastián Verón (data/gestiones/ar.js):_
+
+```text
+Verón: desde el 27/11/2025 la AFA lo suspendió 6 meses y Gorostegui lo reemplazó de forma interina; se deja abierta.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

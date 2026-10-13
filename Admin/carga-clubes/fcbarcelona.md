@@ -87,6 +87,14 @@ bancaria (el balance no separa un subtotal solo-bancario limpio, a diferencia de
 cash = Tesorería (Efectivo y otros activos líquidos equivalentes).
 ```
 
+## Gestiones
+
+_antes de Joan Laporta (data/gestiones/es.js):_
+
+```text
+Toma de posesión el 17/3/2021 (elegido el 7/3), tras la comisión gestora de Tusquets.
+```
+
 ## Otros
 
 ### fcbarcelonaPasesData

@@ -114,3 +114,11 @@ indtægter(1.631.843) - Øvrige finansielle omkostninger(5.376.361).
 grossDebt = Gæld til pengeinstitutter total (largo plazo 6.875.000 + porción corriente
 13.750.000, Nota 11). cash = Likvide beholdninger.
 ```
+
+## Gestiones
+
+_antes de Allan K. Pedersen (data/gestiones/dk.js):_
+
+```text
+Right to Dream es el dueño (una organizacion, no una persona): se carga el formand del A/S.
+```

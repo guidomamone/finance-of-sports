@@ -68,6 +68,14 @@ solo-bancario a largo plazo en este balance (a corto plazo, "Deudas con entidade
 es 0 este ejercicio). cash = Efectivo y otros activos líquidos equivalentes (Tesorería).
 ```
 
+## Gestiones
+
+_antes de Carlos Mouriño (data/gestiones/es.js):_
+
+```text
+Carlos Mouriño: compró el paquete de Horacio Gómez en mayo de 2006 (dia 01 por convencion). Renunció a fines de septiembre de 2023; Marián ejerció en funciones hasta su nombramiento por el consejo el 13/12/2023.
+```
+
 ## Otros
 
 ### celtavigoPasesData

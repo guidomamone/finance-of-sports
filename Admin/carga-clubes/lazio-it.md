@@ -1832,6 +1832,15 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 1999: verificado 2026-10-09 contra roster cacheado de "1998–99 Serie A" (tools/club-league-reference/it.json), "Lazio"
 ```
 
+## Gestiones
+
+_antes de Sergio Cragnotti (data/gestiones/it.js):_
+
+```text
+Cragnotti: dueño de la Lazio entre 1992 y 2003; presidente desde el 12/3/1992 y, en su segundo mandato, de 1998 a 2003 (la fuente da solo los años: 01/01
+por convención). Los cierres de 1999, 2000 y 2001 caen en ese tramo; el hueco hasta Lotito (2004) es de Ugo Longo y no tiene cierre cargado.
+```
+
 ## Fuentes
 
 ### (general)

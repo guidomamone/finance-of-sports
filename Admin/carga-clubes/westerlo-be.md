@@ -137,3 +137,13 @@ Financiële opbrengsten (0.015311) - Financiële kosten (0.102800).
 grossDebt = Schulden (17/49) EXCLUYENDO Overlopende rekeningen (1.120386, ingresos
 diferidos). cash = Liquide middelen.
 ```
+
+## Gestiones
+
+_antes de Herman Wijnants (data/gestiones/be.js):_
+
+```text
+Wijnants: gedelegeerd bestuurder en figura de conducción del club (Wikipedia lo llama voorzitter) desde antes del informe más antiguo (ejercicio 1998);
+el voorzitter del consejo en los informes de 1998 a 2005 es Guido Kestens. Inicio real desconocido: desde = inicio del ejercicio 1998.
+Hasta que Ercan compró el club (anunciado el 18/6/2019).
+```

@@ -243,6 +243,14 @@ officialTotalRevenue/officialTotalExpenses = "Total recursos ordinarios"/"Total 
 ordinarios" impresos (pág. 6). DÉFICIT DEL EJERCICIO real: $(3.107.221.597) ARS.
 ```
 
+## Gestiones
+
+_antes de Gonzalo Belloso (data/gestiones/ar.js):_
+
+```text
+Belloso: proclamado en la elección del 18/12/2022; no hay una fecha de traspaso aparte, se usa la de la proclamación.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

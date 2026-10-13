@@ -121,3 +121,23 @@ Crediteuren(8.557) + Schulden aan participanten(979) + Schulden aan verbonden
 partijen(8) + Schuld inzake pensioenen(141) + Overige schulden(19.225), EXCLUYE
 Voorziening latente belastingen(305) y Overlopende passiva(22.945). cash = Liquide middelen.
 ```
+
+## Gestiones
+
+_antes de Jan de Jong (data/gestiones/nl.js):_
+
+```text
+De Jong: asumió en noviembre de 2017 (sin día: 01); dejó el 23/7/2019 (informe 2018/19).
+```
+
+_antes de Mark Koevermans (data/gestiones/nl.js):_
+
+```text
+Koevermans: ad interim desde mediados de julio de 2019, nombrado el 1/12/2019; renunció el 1/12/2021. Se carga desde el 23/7/2019.
+```
+
+_antes de Dennis te Kloese (data/gestiones/nl.js):_
+
+```text
+Te Kloese: nombrado el 15/1/2022; deja el club el 1/7/2026.
+```

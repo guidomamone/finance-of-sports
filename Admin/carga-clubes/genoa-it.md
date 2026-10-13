@@ -353,6 +353,14 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## Gestiones
+
+_antes de Alberto Zangrillo (data/gestiones/it.js):_
+
+```text
+Zangrillo: presidente desde el closing de 777 Partners (15/11/2021); lo reemplazó Sucu el 13/1/2025 (sigue en el consejo).
+```
+
 ## Fuentes
 
 ### (general)

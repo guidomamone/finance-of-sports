@@ -157,3 +157,11 @@ renglones impresos por separado en el Estado de Resultados.
 grossDebt = Obligaciones Financieras corriente (4.755,842) + no corriente (7.080,129), del
 Estado Individual de Situación Financiera. cash = Efectivo y equivalentes del efectivo.
 ```
+
+## Gestiones
+
+_antes de Marcela Gómez Giraldo (data/gestiones/co.js):_
+
+```text
+Marcela Gómez Giraldo (hija del accionista mayoritario Tulio Gómez) es la presidente y firma como representante legal; Tulio Gómez no ejerce el cargo.
+```

@@ -331,6 +331,20 @@ EXACTO (0,114 M BRL = R$114 mil) — ver verificación completa en el comentario
 (diferencia de 1 mil BRL contra la suma propia, redondeo despreciable).
 ```
 
+## Gestiones
+
+_antes de Mário Bittencourt (data/gestiones/br.js):_
+
+```text
+Asumio el 10/06/2019; reelecto, segundo mandato desde el 15/12/2022 (una sola gestion continua).
+```
+
+_antes de Mattheus Montenegro (data/gestiones/br.js):_
+
+```text
+Asume el 19/12/2025, antes del cierre: el ejercicio 2025 es suyo (y firma el balance).
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

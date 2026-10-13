@@ -201,6 +201,15 @@ ordinario + no-efectivo solamente. 32066,253874 (impreso, incluye el extraordina
 50,042287 = 32016,211587.
 ```
 
+## Gestiones
+
+_antes de Álvaro de Jesús López Bedoya (data/gestiones/co.js):_
+
+```text
+López Bedoya: presidente, representante legal y máximo accionista (Supersociedades lo multó en 12/2025 y 4/2026 como representante legal). La fecha de inicio no se pudo confirmar:
+la familia López Bedoya recuperó el club en 9/2010 (Wikipedia en inglés) y Las2orillas dice que lleva 16 años en el equipo en 2026. Desde aproximado: 2010-09-01, sin confirmar. El anuncio de venta a Group Empresarios Full CCI Dubai (11/2025) no se concretó según las fuentes.
+```
+
 ## Otros
 
 ### gestionesByClub['deportivopereira-co']

@@ -106,6 +106,21 @@ grossDebt = Deudas con entidades de crédito, largo + corto plazo (74,904+66,110
 Efectivo y otros activos líquidos equivalentes (Nota 10). Ambos en EUR M.
 ```
 
+## Gestiones
+
+_del club (data/gestiones/es.js):_
+
+```text
+---- Agregado to-do 195 (España). Ejercicios que cierran el 30/6. Los clubes de socios (Real Madrid, Barcelona, Athletic, Osasuna) llevan al presidente elegido. ----
+```
+
+_antes de Florentino Pérez (data/gestiones/es.js):_
+
+```text
+Primera etapa de Pérez, Calderón y Boluda: fechas de memoria, sin fuente verificada en esta pasada (confirmada:false, no se muestran).
+Segunda etapa: la lista de Wikipedia da solo el año (2009); el 1/6/2009 es la fecha de proclamación y toma de posesión que recuerdo, pero no la pude contrastar en esta pasada.
+```
+
 ## Otros
 
 ### realmadridPasesData

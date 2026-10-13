@@ -157,3 +157,11 @@ _al lado del campo `grossDebt`:_
 ```text
 fuera de alcance de esta carga (Finanzas)
 ```
+
+## Gestiones
+
+_antes de Jan Bech Andersen (data/gestiones/dk.js):_
+
+```text
+Cierre 31/12. Cambios por convencion (el informe 2016 trae "Jan Bech Andersen genopstiller ikke som formand" para la asamblea de 2016; Jesper Møller firma 2016 a 2018). Vuelta de Bech Andersen: asamblea del 2/4/2019 (informe 2019).
+```

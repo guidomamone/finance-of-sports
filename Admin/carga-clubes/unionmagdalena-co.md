@@ -159,6 +159,14 @@ grossDebt = Obligaciones Financieras corrientes (Nota 10, 419,425) + no corrient
 638,889). cash = Efectivo y equivalente al efectivo (pág. 3).
 ```
 
+## Gestiones
+
+_antes de Luis Eduardo Méndez Bustos (data/gestiones/co.js):_
+
+```text
+Méndez Bustos: presidente en enero de 2018 (convenio por el estadio Sierra Nevada) y todavía en junio de 2019 (El Heraldo); asumió la presidencia de Santa Fe el 1/8/2019. Se desconoce cuándo llegó a Unión Magdalena: desde aproximado (primera fecha documentada), sin confirmar.
+```
+
 ## Otros
 
 ### unionmagdalenaCoPasesData

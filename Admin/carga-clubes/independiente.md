@@ -246,6 +246,14 @@ del Plantel Profesional" (extraordinario) / "GASTOS ORDINARIOS" impresos (pág. 
 SUPERÁVIT FINAL real: $7.392.788.960 ARS.
 ```
 
+## Gestiones
+
+_antes de Néstor Grindetti (data/gestiones/ar.js):_
+
+```text
+Grindetti asumió como interino el 11/4/2023 y la asamblea lo ratificó el 6/7/2023 (mandato hasta diciembre de 2026).
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

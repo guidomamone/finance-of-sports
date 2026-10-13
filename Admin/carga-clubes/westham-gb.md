@@ -96,6 +96,14 @@ grossDebt = Bank overdraft (16.311) + Secured loan (1.621+2.256) + Debenture loa
 ver comentario de cabecera. cash = "Cash at bank and in hand".
 ```
 
+## Gestiones
+
+_antes de David Sullivan (data/gestiones/gb.js):_
+
+```text
+Sullivan y Gold compraron el club el 19/1/2010; Sullivan es el cabeza (Gold, co-chairman, murió en enero de 2023).
+```
+
 ## Otros
 
 ### gestionesByClub['westham-gb']
