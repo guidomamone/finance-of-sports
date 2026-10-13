@@ -36,6 +36,8 @@ que dice `ESTADO.md` era verdad ese día.
 - `dentro-de-otro.mjs`: la marca va a `data/` sin comentario y su nota a la meta del año en `Admin/carga-clubes/<club>.md` (saca las suyas
   de todos los años y las vuelve a poner; el `.md` entra en el snapshot). Medido: `--medir` y el ensayo `--todos` iguales; `--todos
   --escribir` en dos copias da el mismo código en `data/` en los 214 clubes, y las notas de los 15 clubes marcados están en su `.md`.
+- `caja-deuda.mjs`: el valor va a `data/` sin comentario y la nota de dónde salió a la meta del año en `Admin/carga-clubes/<club>.md`.
+  Medido: `--medir` igual; `--club chievoverona-it --escribir` en dos copias da el mismo código y las 2 notas en el `.md`.
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 

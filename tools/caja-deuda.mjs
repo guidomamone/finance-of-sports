@@ -41,7 +41,8 @@
 // recorre los años cargados del club, de más viejo a más nuevo, y lee caja y deuda SOLO donde el sitio tiene null (nunca pisa un valor cargado
 // a mano). Corrido después de cargar, el año anterior ya está en el sitio y sirve de compuerta. Un valor que se completa en esta
 // misma corrida NO cuenta como cargado para el año siguiente (Versión 502: un error se encadenaba). Sin --ejecutar, el escalón 2 es ensayo (costo estimado). --escribir: lo escribe en
-// data/<club>-data.js con un comentario de dónde salió cada dato, sube ASSET_V, corre los generadores y audit.js; si da P0/P1, revierte.
+// data/<club>-data.js (el valor, sin comentario: data/ se publica) y en Admin/carga-clubes/<club>.md una nota de dónde salió cada dato, en la
+// meta del año (to-do 209); sube ASSET_V, corre los generadores y audit.js; si da P0/P1, revierte los dos.
 //
 // --medir: para cada año ya cargado con grossDebt/cash y con transcripción (la fuente nombra el .md), lee el balance como si fuera un año nuevo
 // y lo compara con lo cargado a mano. El precedente sale SOLO de los OTROS años del club (nunca del mismo: si no, se aprendería la respuesta).
@@ -53,6 +54,7 @@ import { resolve } from 'node:path';
 import vm from 'node:vm';
 import { readdirSync } from 'node:fs';
 import { derivado } from './rutas.mjs';
+import * as EV from './evidencia-club.mjs';
 import { ajusteDe, ajusteClubODoc, ajustePerimetroDe } from './ajustes.mjs';
 import { normalizar, claveFamilia, CAJA_RE, DEUDA_FINANCIERA_RE, TITULO_BALANCE_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE, FLUJO_O_PATRIMONIO_RE, esTotal } from './vocabulario.mjs';
 
@@ -590,11 +592,14 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
   const conValor = propuestas.filter((p) => p.valor != null);
   console.log(`\n${clubId}: ${conValor.length} dato(s) para completar de ${propuestas.length} vacío(s).${!ejecutar && usd ? ` Escalón 2 (IA) en ensayo: ~US$ ${usd.toFixed(2)}; agregá --ejecutar.` : ejecutar ? ` IA: US$ ${usd.toFixed(3)}.` : ''}`);
   if (!escribir || !conValor.length) return { propuestas };
-  // ESCRIBIR: solo reemplaza `grossDebt:null` / `cash:null` adentro del bloque del año en <club>FiscalYearMeta, con un comentario de la fuente.
+  // ESCRIBIR: solo reemplaza `grossDebt:null` / `cash:null` adentro del bloque del año en <club>FiscalYearMeta; la nota de la fuente va a la
+  // evidencia del club (Admin/carga-clubes/<club>.md), que entra en el snapshot para revertirse con el resto.
   const { snapshot, revertir, publicarCambios } = await import('./cargar.mjs');
-  const dataPath = resolve(ROOT, `data/${clubId}-data.js`); const snap = snapshot(); const escritos = [`data/${clubId}-data.js`];
+  const evExtra = [EV.rutaRel(clubId)];
+  const dataPath = resolve(ROOT, `data/${clubId}-data.js`); const snap = snapshot(evExtra); const escritos = [`data/${clubId}-data.js`, EV.rutaRel(clubId)];
   try {
     let t = readFileSync(dataPath, 'utf8');
+    let ev = EV.leer(clubId);
     const ini = t.search(/const \w+FiscalYearMeta\s*=\s*\{/); if (ini < 0) throw new Error('no encontré <club>FiscalYearMeta');
     for (const anio of [...new Set(conValor.map((p) => p.anio))]) {
       const abreObj = t.indexOf('{', ini); const cierraObj = cierreDe(t, abreObj);
@@ -606,14 +611,15 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
         bloque = bloque.replace(re, `${p.cual}:${r6(p.valor)}`);
         notas.push(`${p.cual} escalón ${p.escalon} (compuerta: ${p.validacion}): ${p.filas.length ? p.filas.map((f) => `"${String(f.etiqueta).slice(0, 50)}" pág. ${f.pagina}`).join(' + ') : p.como}`);
       }
-      bloque = bloque.replace(/(\n(\s*)(?=[^\n]*\b(?:grossDebt|cash)\s*:))/, `\n$2// tools/caja-deuda.mjs (${HOY}): ${notas.join('; ').replace(/\n/g, ' ')}$1`);
+      ev = EV.agregarTexto(ev, anio, 'Meta', [`tools/caja-deuda.mjs (${HOY}): ${notas.join('; ').replace(/\n/g, ' ')}`]);
       t = t.slice(0, abre) + bloque + t.slice(cierra);
     }
     writeFileSync(dataPath, t);
-    const r = publicarCambios(snap, [], escritos);
+    EV.guardar(clubId, ev);
+    const r = publicarCambios(snap, evExtra, escritos);
     console.log(r.ok ? `Escrito: ${r.escritos.join(', ')} · ${r.audit}` : `NO se escribió: ${r.motivo}`);
     return { propuestas, escrito: r };
-  } catch (err) { const rv = revertir(snap, []); console.log(`NO se escribió: ${err.message} (se revirtió: ${rv.restaurados} restaurados)`); return { propuestas, error: err.message }; }
+  } catch (err) { const rv = revertir(snap, evExtra); console.log(`NO se escribió: ${err.message} (se revirtió: ${rv.restaurados} restaurados)`); return { propuestas, error: err.message }; }
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
