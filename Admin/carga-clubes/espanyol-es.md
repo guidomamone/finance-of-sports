@@ -1,14 +1,14 @@
 # espanyol-es — evidencia de carga
 
-Lo que había como comentario en `data/espanyol-es-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/es/espanyol-es-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/espanyol-es-data.js — R.C.D. Espanyol de Barcelona, S.A.D. Ejercicios
+data/es/espanyol-es-data.js — R.C.D. Espanyol de Barcelona, S.A.D. Ejercicios
 2023/2024 (1/7/2023 a 30/6/2024, jugado en Segunda División) y 2024/2025
 (1/7/2024 a 30/6/2025, jugado en LaLiga).
 

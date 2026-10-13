@@ -26,7 +26,7 @@ los 3 ya bajados: buscar "SV Werder Bremen GmbH & Co KGaA" en `unternehmensregis
 ## CARGADO al sitio (sesión 2026-09-22)
 
 **Estado: CARGADO (Ejercicios 2023, 2024, 2025).** `clubId`: `werderbremen-de`. Datos en
-`data/werderbremen-de-data.js`. Los 3 ejercicios son Konzernabschluss (consolidado del grupo) —
+`data/de/werderbremen-de-data.js`. Los 3 ejercicios son Konzernabschluss (consolidado del grupo) —
 ese consolidado ES el total oficial de cada documento.
 
 - **Tipo de cambio**: los 3 documentos declaran EUR y ninguno declara su propio tipo de cambio a
@@ -40,7 +40,7 @@ ese consolidado ES el total oficial de cada documento.
   Lagebericht narrativo). 2024: 2,186374 vs. 2,187061 impreso (diferencia ~0,69 mil EUR, mismo
   motivo). 2025: -7,420364 vs. -7,420336 impreso (diferencia ~28 EUR, además de una aproximación
   documentada en el desglose interno de resultado financiero/impuestos — ver comentario de
-  cabecera de `data/werderbremen-de-data.js`, la tabla de GuV de este ejercicio llegó con columnas
+  cabecera de `data/de/werderbremen-de-data.js`, la tabla de GuV de este ejercicio llegó con columnas
   desalineadas en la transcripción PDF→Markdown).
 - **Categorización**: "Umsatzerlöse" se desglosó Spielbetrieb/Werbung/mediale Verwertungsrechte/
   Transfer(-erlöse/-und Ausbildungsentschädigungen)/Handel usando el Konzernlagebericht narrativo

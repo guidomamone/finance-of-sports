@@ -1,14 +1,14 @@
 # atleticomineiro-br — evidencia de carga
 
-Lo que había como comentario en `data/atleticomineiro-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/atleticomineiro-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/atleticomineiro-br-data.js — Clube Atlético Mineiro SAF (Sociedade Anônima do Futebol),
+data/br/atleticomineiro-br-data.js — Clube Atlético Mineiro SAF (Sociedade Anônima do Futebol),
 Belo Horizonte-MG, Brasil ("Galo"). 3 ejercicios cargados: 2023, 2024, 2025.
 
 Fuente: "Demonstrações contábeis individuais e consolidadas" da Atlético Mineiro S.A.F.,
@@ -223,7 +223,7 @@ debêntures" (13,548 + 45,423 = 58,971, emitidas 25/09/2024), Controladora = 554
 cash = "Caixa e equivalentes de caixa".
 netInterest = "Receitas/(despesas) financeiras, líquidas", Controladora (35,037 - 174,965).
 officialTotalExpenses EXCLUYE 'Resultado equivalência patrimonial' (-51,738, exceptional_items)
-— mismo criterio que Botafogo (data/botafogo-data.js): verifyTieOuts()/tools/audit.js comparan
+— mismo criterio que Botafogo (data/br/botafogo-data.js): verifyTieOuts()/tools/audit.js comparan
 "Expenses" contra gasto ordinario + no-efectivo solamente (expenses+nonCash), exceptional_items
 no participa de ese check (sí de officialPAT, vía operatingProfit). Documento imprime 739,558
 como total de despesas INCLUYENDO ese ítem; acá va 687,820 (739,558 - 51,738) para que cierre
@@ -263,7 +263,7 @@ Pedro Daniel firma el balance 2025 (relatorio integrado) aunque asume el 01/01/2
 _note (data/):_
 
 ```text
-PDF oficial (texto nativo), descargado del Portal da Transparência SAF (atletico.com.br/institucional/portal-da-transparencia/portal-da-transparencia-saf/). Se cargó la columna CONTROLADORA (la SAF standalone), no la Consolidado (que suma 3 controladas ajenas al negocio de fútbol: un fundo de investimento imobiliário dueño de la Arena MRV, y 2 SPE de locación/eventos del estadio). Este ejercicio cubre SOLO el período 14/set-31/dic/2023 (~3,5 meses desde la constitución de la SAF), no un año completo — ver comentario de cabecera de data/atleticomineiro-br-data.js. Firmado por Bruno Muzzi como Diretor Presidente. Convertido a USD con PTAX BCB de cierre 31/12/2023 (R$4,8413), el documento no declara un tipo de cambio propio. Transcripción completa en Clubes/Brasil/Atletico Mineiro/demonstracoes-financeiras-saf-2023.md.
+PDF oficial (texto nativo), descargado del Portal da Transparência SAF (atletico.com.br/institucional/portal-da-transparencia/portal-da-transparencia-saf/). Se cargó la columna CONTROLADORA (la SAF standalone), no la Consolidado (que suma 3 controladas ajenas al negocio de fútbol: un fundo de investimento imobiliário dueño de la Arena MRV, y 2 SPE de locación/eventos del estadio). Este ejercicio cubre SOLO el período 14/set-31/dic/2023 (~3,5 meses desde la constitución de la SAF), no un año completo — ver comentario de cabecera de data/br/atleticomineiro-br-data.js. Firmado por Bruno Muzzi como Diretor Presidente. Convertido a USD con PTAX BCB de cierre 31/12/2023 (R$4,8413), el documento no declara un tipo de cambio propio. Transcripción completa en Clubes/Brasil/Atletico Mineiro/demonstracoes-financeiras-saf-2023.md.
 ```
 
 ### atleticomineiro-br-demonstracoes-2024
@@ -279,7 +279,7 @@ PDF oficial (texto nativo). Columna CONTROLADORA. Primer ejercicio con emisión 
 _note (data/):_
 
 ```text
-A diferencia de 2023/2024 (PDFs solo-financieros), 2025 se publicó como "Relatório Integrado", un documento único y más amplio (financiero + sustentabilidad + gobernanza corporativa) que incluye las demonstrações financeiras en su propia sección (Balanço/DRE pág. 122-123, Notas explicativas de detalle pág. 168-171 del PDF). Columna CONTROLADORA. Prejuízo do exercício de R$882,109 M (casi triplica 2024), explicado principalmente por una "Perda com Valor Justo" de R$572,161 M (impairment puntual, no recurrente según la propia Nota 1) y un resultado negativo de equivalencia patrimonial de R$180,320 M. El informe del auditor (BDO) incluye 2 párrafos de Ênfase sin salvedad: transacciones con partes relacionadas (Nota 16, cesión no onerosa de ingresos de boletería/sócio torcedor a la controlada Arena Vencer) y deficiencia de capital circulante neto de R$817,991 M al cierre. Firmado por Pedro Daniel como Diretor Presidente (cambio de gestión respecto de 2023-2024, cuando firmaba Bruno Muzzi). Incluye además una cesión parcial (10%) de derechos económicos de transmisión futuros (Temporadas 2030-2074, R$98,056 M reconocidos en 2025) — ver comentario de cabecera de data/atleticomineiro-br-data.js sobre por qué se cargó como other_income y no como broadcasting. Convertido a USD con PTAX BCB de cierre 31/12/2025 (R$5,5024), ya existente en data/currency-map.js. Transcripción completa en Clubes/Brasil/Atletico Mineiro/relatorio-integrado-saf-2025.md.
+A diferencia de 2023/2024 (PDFs solo-financieros), 2025 se publicó como "Relatório Integrado", un documento único y más amplio (financiero + sustentabilidad + gobernanza corporativa) que incluye las demonstrações financeiras en su propia sección (Balanço/DRE pág. 122-123, Notas explicativas de detalle pág. 168-171 del PDF). Columna CONTROLADORA. Prejuízo do exercício de R$882,109 M (casi triplica 2024), explicado principalmente por una "Perda com Valor Justo" de R$572,161 M (impairment puntual, no recurrente según la propia Nota 1) y un resultado negativo de equivalencia patrimonial de R$180,320 M. El informe del auditor (BDO) incluye 2 párrafos de Ênfase sin salvedad: transacciones con partes relacionadas (Nota 16, cesión no onerosa de ingresos de boletería/sócio torcedor a la controlada Arena Vencer) y deficiencia de capital circulante neto de R$817,991 M al cierre. Firmado por Pedro Daniel como Diretor Presidente (cambio de gestión respecto de 2023-2024, cuando firmaba Bruno Muzzi). Incluye además una cesión parcial (10%) de derechos económicos de transmisión futuros (Temporadas 2030-2074, R$98,056 M reconocidos en 2025) — ver comentario de cabecera de data/br/atleticomineiro-br-data.js sobre por qué se cargó como other_income y no como broadcasting. Convertido a USD con PTAX BCB de cierre 31/12/2025 (R$5,5024), ya existente en data/currency-map.js. Transcripción completa en Clubes/Brasil/Atletico Mineiro/relatorio-integrado-saf-2025.md.
 ```
 
 ## Otros

@@ -1,14 +1,14 @@
 # gorica-hr — evidencia de carga
 
-Lo que había como comentario en `data/gorica-hr-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/hr/gorica-hr-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/gorica-hr-data.js — Hrvatski Nogometni klub GORICA sportsko dioničko
+data/hr/gorica-hr-data.js — Hrvatski Nogometni klub GORICA sportsko dioničko
 društvo (s.d.d.), Velika Gorica, Croacia. Cuarto club croata cargado (país
 ya existente). clubId 'gorica-hr' (sufijo de país, misma convención que
 dinamozagreb-hr/hajduksplit-hr/rijeka-hr/osijek-hr/slavenbelupo-hr).

@@ -39,7 +39,7 @@ agotado en sesión anterior, 0 PDFs archivados en el dominio) · búsqueda web: 
   tampoco sirve para recuperar años viejos. El ángulo que queda es pedírselos al club (ver contacto).
 - Contacto: consultasasamblea@clubtalleres.com.ar (mail específico para consultas de la rendición de
   cuentas).
-- **CARGADO 2026-09-23: onboarding inicial del club, 2 ejercicios (`data/talleres-ar-data.js`,
+- **CARGADO 2026-09-23: onboarding inicial del club, 2 ejercicios (`data/ar/talleres-ar-data.js`,
   `clubId:'talleres-ar'`).** Ejercicios 2024 y 2025, ejercicio CALENDARIO (1/1-31/12).
   `sourceId`s: `talleres-ar-estados-contables-2024` / `talleres-ar-estados-contables-2025`. Los dos
   EECC de arriba, transcriptos completos a `estados-contables-2024.md` / `estados-contables-2025.md`

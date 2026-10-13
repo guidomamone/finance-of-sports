@@ -6,7 +6,7 @@
 // - Un ranking es (liga, EJERCICIO), nunca (liga): el ejercicio va siempre en el encabezado y se cambia con un selector propio.
 // - El default es el ejercicio con MÁS clubes, no el más reciente (los balances tardan en publicarse: el más nuevo es el más flaco).
 // - Los números salen de data/rankings/<liga>.js, precalculado por tools/generate-rankings.js con el motor real: no se baja ningún
-//   data/<club>-data.js.
+//   data/<país>/<club>-data.js.
 // - Barras de un color sólido (no apiladas: el bolsón sin desglosar y los segmentos negativos no se leerían), en orden ascendente
 //   en el gráfico y descendente en la tabla, con el número escrito arriba de cada barra (con eje lineal, un club chico es un hilo).
 // ============================================================================

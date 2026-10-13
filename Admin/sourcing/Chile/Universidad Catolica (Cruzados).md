@@ -24,7 +24,7 @@
   cmfchile.cl/institucional/mercados/entidad.php?mercado=V&rut=76072469&tipoentidad=RVEMI.
 - Último chequeo: 2026-09-12.
 - **CARGADO al sitio (2026-09-25).** Ejercicios 2024, 2023 y 2022 onboardeados en
-  `data/catolica-cl-data.js` (clubId `catolica-cl`, con sufijo de país porque hay una Universidad
+  `data/cl/catolica-cl-data.js` (clubId `catolica-cl`, con sufijo de país porque hay una Universidad
   Católica de Ecuador sourceándose en paralelo). Los 3 ejercicios cierran exacto contra sus propios
   documentos (revenue/expenses/PAT, ver comentario de cabecera del archivo de datos). `sourceId` por
   año: `catolica-cl-estados-financieros-2024`, `catolica-cl-estados-financieros-2023`,

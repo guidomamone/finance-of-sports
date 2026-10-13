@@ -16,7 +16,7 @@
   - El de 2024-25 no se confirmó por texto interno (no se chequeó si tiene capa de texto).
 - Pendiente: ejercicios anteriores a 2023-24.
 - Contacto: `elchecf.es/transparencia`.
-- **CARGADO al sitio (sesión 2026-09-22, Ejercicios 2023/2024 y 2024/2025)**: ver `data/elche-es-data.js`.
+- **CARGADO al sitio (sesión 2026-09-22, Ejercicios 2023/2024 y 2024/2025)**: ver `data/es/elche-es-data.js`.
   Los dos PDF tienen texto nativo y transcribieron bien, salvo la tabla "Balance de situación" del PDF
   2024/2025, que perdió sus columnas de números en la extracción — `grossDebt`/`cash` de ese año se
   reconstruyeron cruzando la Nota 8.2.1 (pasivos financieros) y la Nota 18.3 (ratio de deuda neta,

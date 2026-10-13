@@ -19,11 +19,11 @@
 
 ## Cargado (2026-09-24)
 
-- SAF, ejercicios 2024 y 2025, en `data/bahia-br-data.js` (`clubId: 'bahia-br'`). La associação NO se
+- SAF, ejercicios 2024 y 2025, en `data/br/bahia-br-data.js` (`clubId: 'bahia-br'`). La associação NO se
   cargó (entidades jurídicas separadas, ver arriba). 2024 se cargó desde la columna año corriente de
   `demonstracoes-financeiras-2024.md` (as-filed), NO desde la columna comparativa reexpresada que trae
   `demonstracoes-financeiras-2025.md` (esa columna difiere en Total do Ativo por R$348,365 mil por un
-  cambio de criterio contable — ver comentario de cabecera de `data/bahia-br-data.js`, Nota 2.20 del
+  cambio de criterio contable — ver comentario de cabecera de `data/br/bahia-br-data.js`, Nota 2.20 del
   balance 2025). Tie-out verificado exacto los 2 años (revenue, expenses, Prejuízo do exercício).
 - Color de marca: NO resuelto — `brandColor: null`. Bahia es tricolor en partes iguales (azul, vermelho,
   branco — "Tricolor Baiano"), Wikipedia en portugués no declara predominancia de ninguno de los 3, y

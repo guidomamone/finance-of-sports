@@ -1,14 +1,14 @@
 # wolves-gb — evidencia de carga
 
-Lo que había como comentario en `data/wolves-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/wolves-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/wolves-gb-data.js — Wolverhampton Wanderers Football Club (1986) Limited (clubId
+data/gb/wolves-gb-data.js — Wolverhampton Wanderers Football Club (1986) Limited (clubId
 'wolves-gb'), 2 ejercicios: 2023/24 (12 meses, 1° de junio de 2023 a 31 de mayo de 2024) y un
 PERÍODO DE TRANSICIÓN DE 13 MESES (1° de junio de 2024 a 30 de junio de 2025, cargado como año
 "2025"). Ver el aviso grande más abajo antes de comparar 2025 contra cualquier otro ejercicio.

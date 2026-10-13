@@ -1,14 +1,14 @@
 # mechelen-be — evidencia de carga
 
-Lo que había como comentario en `data/mechelen-be-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/be/mechelen-be-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/mechelen-be-data.js — Yellow-Red KV Mechelen (Bélgica). Uno de 4 clubes
+data/be/mechelen-be-data.js — Yellow-Red KV Mechelen (Bélgica). Uno de 4 clubes
 belgas cargados en este batch en paralelo (Club Brugge, Anderlecht, Genk,
 Gent/otros ya existentes en el sitio; Mechelen es un país YA onboardeado,
 club nuevo dentro de Bélgica).

@@ -32,7 +32,7 @@ la Premier League discutió públicamente. Es exactamente el tipo de operación 
 leer con cuidado la nota de partes relacionadas del PDF.
 
 - Último chequeo: 2026-09-13.
-- **CARGADO al sitio (2026-09-25)**: único ejercicio disponible, 2024-25, `data/chelsea-gb-data.js`
+- **CARGADO al sitio (2026-09-25)**: único ejercicio disponible, 2024-25, `data/gb/chelsea-gb-data.js`
   (clubId `chelsea-gb`). Tie-out exacto. Premier League. OJO: la venta de Chelsea FC Women a una
   parte relacionada (£198,7m de ganancia) ocurrió en el ejercicio ANTERIOR (2023-24, comparativo),
   no en el ejercicio cargado — si se carga 2023-24 en el futuro, ESE es el ejercicio donde aplica

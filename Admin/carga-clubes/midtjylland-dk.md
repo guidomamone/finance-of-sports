@@ -1,14 +1,14 @@
 # midtjylland-dk — evidencia de carga
 
-Lo que había como comentario en `data/midtjylland-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/dk/midtjylland-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/midtjylland-dk-data.js — FC Midtjylland (Dinamarca, Superliga), clubId
+data/dk/midtjylland-dk-data.js — FC Midtjylland (Dinamarca, Superliga), clubId
 'midtjylland-dk'.
 
 Fuente: Årsrapport de FC Midtjylland A/S, ejercicio 1° de julio de 2018 a 30 de
@@ -97,5 +97,5 @@ Benham es el accionista mayoritario de FCM Holding desde julio de 2014 (día 01 
 _note (data/):_
 
 ```text
-Depositado en Erhvervsstyrelsen (registro mercantil danés). Transcripción completa en Clubes/Dinamarca/FC Midtjylland/aarsrapport-2019-06-30.md. Se eligió este ejercicio (no uno más reciente) porque los balances 2022/23-2024 reportan desde "Bruttofortjeneste" sin desglosar Revenue bruto — ver comentario de cabecera de data/midtjylland-dk-data.js.
+Depositado en Erhvervsstyrelsen (registro mercantil danés). Transcripción completa en Clubes/Dinamarca/FC Midtjylland/aarsrapport-2019-06-30.md. Se eligió este ejercicio (no uno más reciente) porque los balances 2022/23-2024 reportan desde "Bruttofortjeneste" sin desglosar Revenue bruto — ver comentario de cabecera de data/dk/midtjylland-dk-data.js.
 ```

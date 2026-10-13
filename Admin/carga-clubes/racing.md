@@ -1,14 +1,14 @@
 # racing — evidencia de carga
 
-Lo que había como comentario en `data/racing-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ar/racing-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/racing-data.js — Racing Club: Milito (2024-actual) y Blanco (2013-2024).
+data/ar/racing-data.js — Racing Club: Milito (2024-actual) y Blanco (2013-2024).
 
 Ejercicios 2024, 2025, 2026 y 2027 = REALES, del archivo oficial completo de
 racingclub.com.ar/informes/ (~24 PDFs 2009-2027, guardados en
@@ -1053,7 +1053,7 @@ Todas las finanzas de Racing que estaban cargadas con esta fuente (Blanco placeh
 _note (data/):_
 
 ```text
-PDF oficial (22 páginas, con texto extraíble nativo) bajado directo de racingclub.com.ar/informes/. Ejercicio anterior a la presidencia de Víctor Blanco (asumió en 2013) — no se identificó con confianza quién presidía el club en este ejercicio específico, ver comentario en data/racing-data.js. El balance en sí documenta que Racing venía de una quiebra (línea "Resultado Extraordinario s/Quiebra"). GANANCIA real del ejercicio de $2.687.137 ARS. Cifras en pesos históricos, SIN reexpresión por inflación (la práctica de moneda homogénea/RT6 llegó recién con la crisis de los 2020) — convertido a USD con el dólar mayorista de cierre estimado en $3,82 al 31/10/2009 (no se encontró la cotización exacta de ese día puntual, se usó la cotización más cercana disponible, ver comentario en racing-data.js). Copia local en finance-of-sports/Clubes/Argentina/Racing/balance2009.pdf.
+PDF oficial (22 páginas, con texto extraíble nativo) bajado directo de racingclub.com.ar/informes/. Ejercicio anterior a la presidencia de Víctor Blanco (asumió en 2013) — no se identificó con confianza quién presidía el club en este ejercicio específico, ver comentario en data/ar/racing-data.js. El balance en sí documenta que Racing venía de una quiebra (línea "Resultado Extraordinario s/Quiebra"). GANANCIA real del ejercicio de $2.687.137 ARS. Cifras en pesos históricos, SIN reexpresión por inflación (la práctica de moneda homogénea/RT6 llegó recién con la crisis de los 2020) — convertido a USD con el dólar mayorista de cierre estimado en $3,82 al 31/10/2009 (no se encontró la cotización exacta de ese día puntual, se usó la cotización más cercana disponible, ver comentario en racing-data.js). Copia local en finance-of-sports/Clubes/Argentina/Racing/balance2009.pdf.
 ```
 
 ### racing-balance-2010
@@ -1277,14 +1277,14 @@ Guido en la Versión 52 (compraventa de jugadores y CAPEX, ver arriba).
   línea más grande de todo el catch-all (hasta ~30% de "Otros gastos" en algunos años). Se
   re-etiquetaron a `wages_squad`, NO a una categoría nueva: Boca ya mezcla este mismo tipo de
   costo dentro de su propio campo "wages" para el Ejercicio 2027 (ver
-  `expenseSubBreakdown[2027]['Fútbol Profesional']` en data/boca-data.js: "Gerencia de Fútbol
+  `expenseSubBreakdown[2027]['Fútbol Profesional']` en data/ar/boca-data.js: "Gerencia de Fútbol
   Profesional" incluye Farmacia/Pretemporada/Vigilancia/Canjes/Indumentaria junto con
   Remuneraciones y Primas, y ESE total completo es lo que alimenta `r.wages` para "Salarios y
   primas" en `simplifiedReportForBoca()`), así que sumarlo a `wages_squad` en Racing sigue el
   mismo criterio que ya usa Boca, no uno inventado para esta sesión. OJO (documentado para no
   repetir la investigación): esto es distinto de cómo Boca arma su Ejercicio 2025 (balance
   auditado real), donde `wages` es una cifra de remuneraciones MÁS estricta (excluye
-  médico/indumentaria/viajes, ver comentario de `yearsRaw[2025]` en data/boca-data.js) — los dos
+  médico/indumentaria/viajes, ver comentario de `yearsRaw[2025]` en data/ar/boca-data.js) — los dos
   ejercicios reales de Boca NO son 100% consistentes entre sí en este punto específico, y esta
   homologación de Racing sigue el criterio del Ejercicio 2027 (la referencia "canónica" que ya usa
   el resto de este skill/sitio para el orden y los nombres de fila).

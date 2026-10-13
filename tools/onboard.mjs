@@ -30,7 +30,7 @@
 //
 // SIN TOCAR NADA YA CARGADO (pedido explícito de Guido, 2026-09-29): antes
 // de tocar Mistral o Gemini para NINGÚN documento, este script resuelve
-// club+año y chequea si data/<clubId>-data.js YA tiene ese ejercicio cargado
+// club+año y chequea si data/<país>/<clubId>-data.js YA tiene ese ejercicio cargado
 // -- si sí, lo salta ENTERO (ni transcribe, ni compara, ni gasta un solo
 // dólar de API) con el mensaje "Ya cargado ... no lo toco". Esto es lo que
 // hace seguro correr `--all` sobre TODO Clubes/: los ~305 ejercicios ya
@@ -212,7 +212,7 @@ function briefingIsFresh(mdPath) {
 function resolveClubAndYearQuiet(pdfPath, club, year) {
   let clubId = club;
   if (!clubId) {
-    // Versión 309: el club sale de tools/carpetas-clubes.mjs (la cita en data/<id>-data.js, y si no, nombre IGUAL dentro del mismo país),
+    // Versión 309: el club sale de tools/carpetas-clubes.mjs (la cita en data/<país>/<id>-data.js, y si no, nombre IGUAL dentro del mismo país),
     // no de guessClubId() por substring y sin país. Esa regla vieja no reconocía 17 clubes del sitio (Racing, Botafogo, Gent...) y asignaba
     // 11 carpetas a un club EQUIVOCADO en silencio (Porto -> Grêmio, Inter -> Internacional, Lazio y Rubin Kazan -> AZ, Braga ->
     // Bragantino...): si ese club tenía el mismo año cargado, el PDF figuraba como "ya cargado" y el pipeline no lo tocaba nunca.

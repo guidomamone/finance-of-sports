@@ -1,14 +1,14 @@
 # botafogosp-br — evidencia de carga
 
-Lo que había como comentario en `data/botafogosp-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/botafogosp-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/botafogosp-br-data.js — Botafogo Futebol S.A. - SAF (Botafogo Futebol Clube,
+data/br/botafogosp-br-data.js — Botafogo Futebol S.A. - SAF (Botafogo Futebol Clube,
 Ribeirão Preto, São Paulo, Brasil) — SAF (Sociedade Anônima do Futebol), 60% del
 capital del Botafogo Futebol Clube (associação, fundado 1918) + 40% de Trexx Sports
 Participações. NO es el Botafogo de Rio de Janeiro (ese es clubId 'botafogo', ya
@@ -192,7 +192,7 @@ Notas 22+23+24+25+26). officialPAT = 'LUCRO (PREJUÍZO) DO EXERCÍCIO' impreso
 _note (data/):_
 
 ```text
-PDF oficial (texto nativo), descargado del portal institucional de la SAF (botafogofutebolsa.com.br). DRE auditada con 8 notas de desglose (21-28) — ver comentario de cabecera de data/botafogosp-br-data.js. Prejuízo real de R$3.543.877 (2024), después de un lucro de R$906.642 en 2023. Patrimônio líquido negativo (R$-27.924.832 al cierre 2024). Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2023-2024.md. El mismo archivo fuente también cubre 2019/2020 y 2022/2023 (NO cargados en esta sesión, ver nota de alcance de cabecera).
+PDF oficial (texto nativo), descargado del portal institucional de la SAF (botafogofutebolsa.com.br). DRE auditada con 8 notas de desglose (21-28) — ver comentario de cabecera de data/br/botafogosp-br-data.js. Prejuízo real de R$3.543.877 (2024), después de un lucro de R$906.642 en 2023. Patrimônio líquido negativo (R$-27.924.832 al cierre 2024). Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2023-2024.md. El mismo archivo fuente también cubre 2019/2020 y 2022/2023 (NO cargados en esta sesión, ver nota de alcance de cabecera).
 ```
 
 ## Otros

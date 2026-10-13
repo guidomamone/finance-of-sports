@@ -20,7 +20,7 @@ sesión.
 ## Qué se cargó al sitio (sesión de onboarding de Países Bajos)
 
 **2 ejercicios cargados** (los más recientes de los 7 bajados): 2023/24 y 2024/25, en
-`data/feyenoord-nl-data.js` (`clubId: 'feyenoord-nl'`). Transcripciones completas vía `pdftotext
+`data/nl/feyenoord-nl-data.js` (`clubId: 'feyenoord-nl'`). Transcripciones completas vía `pdftotext
 -layout` en `Clubes/Países Bajos/Feyenoord/jaarverslag-2023-24.md` y `jaarverslag-2024-25.md`.
 Tie-out verificado exacto contra los 2 documentos y contra el motor real del sitio (`node
 tools/audit.js`, sin hallazgos de descuadre). Color de marca: `#FF0000` (rojo) — footylogos.com
@@ -34,7 +34,7 @@ una sesión futura de histórico.
 - La línea "Partnerships, business seats, units en boarding" de Netto-omzet (45,2M€ en 2024/25,
   ~20% del ingreso) mezcla sponsors/publicidad de valla (comercial) con paquetes de temporada
   premium (estadio) sin que el documento la desglose — se cargó entera como
-  `sponsorship_commercial` (ver comentario de cabecera de `data/feyenoord-nl-data.js`). Anotado en
+  `sponsorship_commercial` (ver comentario de cabecera de `data/nl/feyenoord-nl-data.js`). Anotado en
   `Admin/dudas-por-club.md`.
 - Cargar los 5 ejercicios 2018/19-2022/23 ya bajados pero sin transcribir/cargar.
 - Último chequeo: 2026-09-17. Carga al sitio: 2026-09-25.

@@ -18,7 +18,7 @@
   históricamente a Mitsubishi Motors) — el documento de la liga ya cubre lo pedido.
 - Contacto: `aboutj.jleague.jp/corporate/assets/pdf/club_info/club_doc-<año>.pdf`.
 - Último chequeo: 2026-09-13.
-- **CARGADO al sitio (2026-09-13), Ejercicio 2025**: ver `data/urawareddiamonds-data.js`
+- **CARGADO al sitio (2026-09-13), Ejercicio 2025**: ver `data/jp/urawareddiamonds-data.js`
   (clubId `urawareddiamonds`). Solo Sponsor (¥4.195M)/Gate (¥2.214M)/Total (¥11.310M) son reales por
   club — el resto de categorías y TODOS los costos solo se publican a nivel de división, no por club
   (ver corrección en `_notas-generales.md`). `expenseLinesByYear` vacío a propósito,

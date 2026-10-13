@@ -4,7 +4,7 @@ Este archivo es para anotar preguntas puntuales que quedaron SIN respuesta clara
 documentos oficiales de un club — cosas que valdría la pena preguntarle directo al club (prensa,
 área de socios, o quien corresponda) en vez de asumir o inventar un criterio. Complementa a
 `Admin/sourcing/README.md` (que es sobre DÓNDE está cada documento) y a los comentarios de cada
-`data/<club>-data.js` (que son sobre CÓMO se categorizó cada línea puntual) — acá van específicamente
+`data/<país>/<club>-data.js` (que son sobre CÓMO se categorizó cada línea puntual) — acá van específicamente
 las preguntas abiertas, para no perderlas sueltas en el medio de un comentario de código.
 
 Cómo se agrega algo acá: una sección por club, una línea por pregunta, con el formato:
@@ -82,7 +82,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   2026-09-26: no se encontró una línea equivalente para recategorizar.** El to-do (originado en
   `auditorias/2026-09-22-catchall-no-futbol.md` sección 4-i) lista a Estudiantes entre los 7 clubes
   con este concepto "escondido" en `youth_football`/`other_income`, pero la única línea de
-  `data/estudianteslp-data.js` en `youth_football` es "Recursos fútbol infantil/amateur" — se revisó
+  `data/ar/estudianteslp-data.js` en `youth_football` es "Recursos fútbol infantil/amateur" — se revisó
   el texto de los 4 balances (`Clubes/Argentina/Estudiantes LP/*.md`) y esa línea es ingreso
   operativo de la Escuela de Fútbol Infantil/divisiones amateur (aranceles, sponsors puntuales:
   "Mains Sponsors Futbol Infantil"), no cobros de FIFA training compensation/mecanismo de
@@ -100,7 +100,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   "desde 2015" (reelecto dic-2019, dic-2023), pero no se encontró el mes exacto de esa primera
   asunción. Si fue DESPUÉS del cierre del Ejercicio 2015 (30/6/2015), ese ejercicio en particular no
   debería caer bajo su gestión (se cargó con `gestionId:null` por las dudas, ver
-  `data/argentinosjuniors-data.js`). A quién preguntarle: prensa institucional del club o
+  `data/ar/argentinosjuniors-data.js`). A quién preguntarle: prensa institucional del club o
   argentinosjuniors.com.ar/institucional.
 - **El archivo "balance-2018-2019.pdf" del club es en realidad la Memoria narrativa completa**, sin
   una sola cifra de balance — el nombre del archivo no es fiable como indicador de contenido (mismo
@@ -166,7 +166,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
 - **to-do 43 (unificar "derechos de formación/mecanismo de solidaridad" a `player_sales`), sesión
   2026-09-26: mismo caso que Estudiantes LP, no se encontró línea equivalente.** El to-do lista a
   Unión entre los 7 clubes con este concepto "escondido" en el catch-all, pero la única línea de
-  `data/union-data.js` en `youth_football` es "Ingresos Fútbol Amateur" — revisando las memorias del
+  `data/ar/union-data.js` en `youth_football` es "Ingresos Fútbol Amateur" — revisando las memorias del
   club (`Clubes/Argentina/Union/*.md`), el Departamento de Fútbol Amateur es la estructura de
   divisiones inferiores/pensión, y su línea de ingresos no tiene ninguna mención a mecanismo de
   solidaridad o derechos de formación por jugadores transferidos. De hecho Unión YA tiene una línea
@@ -237,7 +237,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   declara $18.0012 MXN/USD al 31/12/2025 en la sección MD&A (pág. 7, comentario de "Gastos
   financieros, neto") pero $17.9528 MXN/USD para la MISMA fecha en la Nota a los estados financieros
   auditados (pág. 104, footnote de la misma partida). Se usó $17.9528 (la cifra de la Nota formal)
-  para `data/clubamerica-data.js`, pero no se encontró una explicación de por qué el mismo documento
+  para `data/mx/clubamerica-data.js`, pero no se encontró una explicación de por qué el mismo documento
   trae dos cifras — a quién preguntarle: Ollamani Investor Relations (contacto en
   ollamani.com.mx/reportes-3/, o el propio `ir@ollamani.com.mx` si existe, no confirmado).
 - **¿Vale la pena cargar el Ejercicio 2024 (11 meses) como 2do punto de la serie?**: PDF ya
@@ -288,7 +288,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   disponible en las notas descargadas (no hay una línea de "ganancia extraordinaria" ni similar,
   pese a que la compañía sigue en un acuerdo de reestructuración de pasivos desde 2012, lo que
   sugiere que podría haber un ítem de este tipo no desglosado en el documento). Se cargó el club de
-  todos modos (ver `data/oncecaldas-data.js`, comentario de cabecera) usando el PAT confirmado como
+  todos modos (ver `data/co/oncecaldas-data.js`, comentario de cabecera) usando el PAT confirmado como
   ancla y despejando `tax` como residuo (pretax línea por línea menos PAT confirmado), documentado
   explícito en el código como una aproximación, no un número impreso. **Pregunta para el club/SIIS**:
   ¿qué explica la diferencia entre la "Utilidad contable" de la Nota 15 ($9.846,710 M) y la suma de
@@ -301,7 +301,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   impreso) — y la fila "IMPUESTO DE RENTA Y COMPLEMENTARIO" del documento contradice a su propio
   detalle: la fila resumen (en negrita) muestra **0**, pero la fila de detalle inmediatamente debajo
   muestra **1.761.301**. Se cargó igual usando el mismo método de residuo que 2025 (PAT confirmado
-  menos pretax línea por línea, ver `data/oncecaldas-data.js`). A diferencia de 2025, el PAT 2024
+  menos pretax línea por línea, ver `data/co/oncecaldas-data.js`). A diferencia de 2025, el PAT 2024
   ($4.112,260 M) NO está confirmado triple: sale de una sola fuente (Cuenta de Patrimonio, fila
   "Utilidad o pérdida del ejercicio") — el dictamen del revisor fiscal 2024 es una opinión limpia
   que no narra la cifra (a diferencia del de 2025). **Pregunta para el club/SIIS**: ¿por qué la Nota
@@ -315,7 +315,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   -$1.726.052.997,15, el 21% del ingreso BRUTO del club**, sin que el documento aclare a qué
   concepto de ingreso corresponde (no está indentada bajo ninguna línea específica, aparece suelta
   al final de la tabla). Se cargó como línea propia en `other_income` (negativa,
-  `data/boyacachico-co-data.js`) en vez de forzarla contra un rubro puntual (ej. Derechos de TV, la
+  `data/co/boyacachico-co-data.js`) en vez de forzarla contra un rubro puntual (ej. Derechos de TV, la
   línea más grande) sin base real para esa atribución. **Pregunta para el club/SIIS**: ¿a qué
   ingreso corresponde esta devolución/reversión? El PAT del ejercicio reconcilia igual (confirmado
   doble, ver comentario de cabecera del archivo), así que no bloqueó la carga — pero afecta a qué
@@ -334,7 +334,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   del resultado del ejercicio (receita R$ 59.339.448,33, despesas operacionais R$ 19.090.092,99,
   superávit R$ 4.143.614,12) sí cierran exacto entre sí y con el porcentaje de custos que el propio
   documento publica a 14 decimales, así que el ejercicio 2024 se cargó igual, solo sin patrimonio.
-  Ver `data/mirassol-data.js`.
+  Ver `data/br/mirassol-data.js`.
 - **Aparte, el documento tiene varios errores de redacción** que conviene tener en cuenta si alguien
   vuelve a leerlo: cifras cuya versión en letras no coincide con el número (el PL final
   R$ 30.267.600,99 está escrito en letras como el saldo inicial; las disponibilidades
@@ -419,7 +419,7 @@ PDFs SÍ tienen capa de texto real (la premisa "escaneado sin capa de texto" del
 2026-09-16 estaba vencida) y los dos son el informe de auditoría + cuentas anuales completo (balance,
 cuenta de pérdidas y ganancias, memoria), no un fragmento — se confirmó leyendo el texto interno de
 cada uno, con período jul-jun literal en la carátula: "1 de julio de 2021 al 30 de junio de 2022" y
-"1 de julio de 2023 al 30 de junio de 2024". Ver `data/osasuna-es-data.js`.
+"1 de julio de 2023 al 30 de junio de 2024". Ver `data/es/osasuna-es-data.js`.
 
 Lo que SIGUE abierto: si el club cambió a ejercicio CALENDARIO después de 2024 — la noticia de
 `osasuna.es/en/noticia151` sobre un cierre a 31/12/2025 puede ser real para un ejercicio de
@@ -1301,7 +1301,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 - **Nota "Gastos deportivos: Servicios" (S/ 9-15M/año, el 2do rubro más grande de esa Nota después
   de Personal, en los EEFF 2019-2021): ¿qué compone este bloque?** La Nota no lo abre más — podría
   ser viajes/concentración/seguridad para partidos (lo que llevó a categorizarlo como
-  `match_organisation_expense` en `data/alianzalima-pe-data.js`), pero también podría incluir
+  `match_organisation_expense` en `data/pe/alianzalima-pe-data.js`), pero también podría incluir
   servicios médicos tercerizados, comisiones de intermediación por fichajes, u otros conceptos que
   en otro club de este sitio caen en categorías distintas. Vale la pena preguntarle al club/auditor
   qué compone específicamente esta línea antes de confiar en la categorización actual para
@@ -1565,7 +1565,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   (traducción literal del rótulo), pero es una categorización con incertidumbre genuina: ¿la HNS la
   agrupa ahí porque conceptualmente el club la trata como una forma de acceso al estadio (una
   membresía que incluye entrada), o es solo una cuestión de formato del formulario? Aparece en Dinamo
-  Zagreb (888.330€, ver `data/dinamozagreb-hr-data.js`) y probablemente en los otros 2 clubes croatas
+  Zagreb (888.330€, ver `data/hr/dinamozagreb-hr-data.js`) y probablemente en los otros 2 clubes croatas
   con la misma plantilla — si se carga un 4to club croata en el futuro, confirmar si el patrón se
   repite antes de asumir que es el criterio fijo del país.
 

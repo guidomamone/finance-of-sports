@@ -1,14 +1,14 @@
 # chapecoense-br — evidencia de carga
 
-Lo que había como comentario en `data/chapecoense-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/chapecoense-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/chapecoense-br-data.js — Associação Chapecoense de Futebol, Chapecó, Santa Catarina, Brasil.
+data/br/chapecoense-br-data.js — Associação Chapecoense de Futebol, Chapecó, Santa Catarina, Brasil.
 Entidade civil sem fins lucrativos (NÃO é SAF — Sociedade Anônima do Futebol), mismo criterio
 societario que Flamengo (no Botafogo/Cruzeiro/Coritiba/Athletico-PR, que sí convirtieron a SAF).
 clubId 'chapecoense-br' (CON GUIÓN, bracket notation en clubs{}/CLUB_GENERIC_DATA/

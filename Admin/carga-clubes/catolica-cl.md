@@ -1,14 +1,14 @@
 # catolica-cl — evidencia de carga
 
-Lo que había como comentario en `data/catolica-cl-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/cl/catolica-cl-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/catolica-cl-data.js — Cruzados S.A.D.P. (Universidad Católica, Santiago,
+data/cl/catolica-cl-data.js — Cruzados S.A.D.P. (Universidad Católica, Santiago,
 Chile). clubId lleva el sufijo `-cl` (NO `catolica` a secas) porque hay una
 Universidad Católica de ECUADOR sourceándose en paralelo (otro club, otro
 país) — ver `CONVENCIONES.md` Versión 129: todo clubId nuevo que pueda

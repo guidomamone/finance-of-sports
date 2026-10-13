@@ -1,16 +1,16 @@
 # boca — evidencia de carga
 
-Lo que había como comentario en `data/boca-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ar/boca-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/boca-data.js — datos financieros y deportivos de Boca: bocaRevenueLinesByYear/
+data/ar/boca-data.js — datos financieros y deportivos de Boca: bocaRevenueLinesByYear/
 bocaExpenseLinesByYear/bocaFiscalYearMeta (motor genérico, mismo shape que
-data/river-data.js), gestionesByClub/sources/memberCountByClub (en data/clubs.js,
+data/ar/river-data.js), gestionesByClub/sources/memberCountByClub (en data/clubs.js,
 Boca sigue eager-loaded ahí), bocaPasesData, bocaResultadosData, bocaTitulosData.
 
 MIGRACIÓN (a pedido explícito de Guido, "poné a Boca en el mismo motor que el resto"):
@@ -260,7 +260,7 @@ PDF subido directamente por Guido. Transcripto completo en el acordeón "Presupu
 _note (data/):_
 
 ```text
-PDF oficial (149 páginas, firmado por Comisión Directiva/Fiscalizadora, con dictamen de auditoría de Becher y Asociados S.R.L. sin salvedades, 10/09/2025), descargado del Google Drive linkeado en la página oficial del club. Cifras en moneda homogénea (reexpresadas a poder adquisitivo del 30/06/2025 según RT 6/17, Nota 2.2 del balance), no nominales del momento de cada operación. "Revenue" del sitio incluye ingresos por venta/rescisión de pases (Versión 102: igual que el propio balance los trata en su Total de Recursos, pág. 76, y que el resto de los clubes del motor genérico); "wages" es la suma real de "Remuneraciones y cargas sociales" de los 9 anexos que la desglosan por departamento (ver comentario de cabecera de data/boca-data.js).
+PDF oficial (149 páginas, firmado por Comisión Directiva/Fiscalizadora, con dictamen de auditoría de Becher y Asociados S.R.L. sin salvedades, 10/09/2025), descargado del Google Drive linkeado en la página oficial del club. Cifras en moneda homogénea (reexpresadas a poder adquisitivo del 30/06/2025 según RT 6/17, Nota 2.2 del balance), no nominales del momento de cada operación. "Revenue" del sitio incluye ingresos por venta/rescisión de pases (Versión 102: igual que el propio balance los trata en su Total de Recursos, pág. 76, y que el resto de los clubes del motor genérico); "wages" es la suma real de "Remuneraciones y cargas sociales" de los 9 anexos que la desglosan por departamento (ver comentario de cabecera de data/ar/boca-data.js).
 ```
 
 ### boca-balance-2021-22
@@ -268,7 +268,7 @@ PDF oficial (149 páginas, firmado por Comisión Directiva/Fiscalizadora, con di
 _note (data/):_
 
 ```text
-PDF oficial (101 páginas, escaneado, sin dictamen con salvedades — Becher y Asociados S.R.L., 15/09/2022), no linkeado desde la página vigente del club: encontrado vía Wayback CDX de dominio completo sobre bocajuniors.com.ar (to-do 73, Versión 247, snapshot 2023-01-01), colgando de un directorio /rebrand/files/ sin ningún nombre obvio en el sitio vivo de hoy. Transcripto con Mistral OCR (Clubes/Argentina/Boca/eecc-30525418835-2022.md) y verificado íntegramente contra los totales impresos del propio documento (ver comentario de cabecera de data/boca-data.js).
+PDF oficial (101 páginas, escaneado, sin dictamen con salvedades — Becher y Asociados S.R.L., 15/09/2022), no linkeado desde la página vigente del club: encontrado vía Wayback CDX de dominio completo sobre bocajuniors.com.ar (to-do 73, Versión 247, snapshot 2023-01-01), colgando de un directorio /rebrand/files/ sin ningún nombre obvio en el sitio vivo de hoy. Transcripto con Mistral OCR (Clubes/Argentina/Boca/eecc-30525418835-2022.md) y verificado íntegramente contra los totales impresos del propio documento (ver comentario de cabecera de data/ar/boca-data.js).
 ```
 
 ### boca-balance-2022-23

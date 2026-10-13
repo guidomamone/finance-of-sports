@@ -1,14 +1,14 @@
 # randers-dk — evidencia de carga
 
-Lo que había como comentario en `data/randers-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/dk/randers-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/randers-dk-data.js — Randers FC A/S (CVR 83 94 08 16), Randers NV,
+data/dk/randers-dk-data.js — Randers FC A/S (CVR 83 94 08 16), Randers NV,
 Dinamarca. clubId 'randers-dk' (sufijo de país, misma convención que
 fckobenhavn-dk/silkeborg-dk/agf-dk/viborg-dk/vejle-dk). Ejercicio fiscal
 2022/23 (1° de julio de 2022 al 30 de junio de 2023, `fiscalYearStart:'07-01'`,
@@ -168,5 +168,5 @@ Cierre 30/6. 2013 a 2016: Svend Lynge Jørgensen figura primero en Bestyrelse y 
 _note (data/):_
 
 ```text
-Entidad única para el fútbol profesional (CVR 83 94 08 16), con 3 subsidiarias 100%-controladas por el método de la participación (Randers FC Jobakademi ApS, Business Park Randers ApS, Randers Sports College ApS), sin consolidar línea por línea. El estado de resultados usa la exención del § 32 de la Årsregnskabsloven (solo reporta "Bruttofortjeneste"/Gross profit neto) — todo el revenue se cargó sin desglosar. Tipo de cambio calculado vía Danmarks Nationalbank (no declarado por el propio documento, ver comentario de cabecera de data/randers-dk-data.js). Transcripción completa en Clubes/Dinamarca/Randers FC/aarsrapport-2023-06-30.md.
+Entidad única para el fútbol profesional (CVR 83 94 08 16), con 3 subsidiarias 100%-controladas por el método de la participación (Randers FC Jobakademi ApS, Business Park Randers ApS, Randers Sports College ApS), sin consolidar línea por línea. El estado de resultados usa la exención del § 32 de la Årsregnskabsloven (solo reporta "Bruttofortjeneste"/Gross profit neto) — todo el revenue se cargó sin desglosar. Tipo de cambio calculado vía Danmarks Nationalbank (no declarado por el propio documento, ver comentario de cabecera de data/dk/randers-dk-data.js). Transcripción completa en Clubes/Dinamarca/Randers FC/aarsrapport-2023-06-30.md.
 ```

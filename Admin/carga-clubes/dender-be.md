@@ -1,14 +1,14 @@
 # dender-be — evidencia de carga
 
-Lo que había como comentario en `data/dender-be-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/be/dender-be-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/dender-be-data.js — Football Club Verbroedering Dender EH VZW (conocido como
+data/be/dender-be-data.js — Football Club Verbroedering Dender EH VZW (conocido como
 "FCV Dender EH"), Bélgica, clubId 'dender-be'. Cierre 30/6/2025 (ejercicio
 1/7/2024-30/6/2025) → clave 2025, mismo criterio que el resto de los clubes belgas.
 

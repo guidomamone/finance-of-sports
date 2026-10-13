@@ -5,7 +5,7 @@
 // uno YA categorizado en un año anterior del MISMO club, sugerir esa
 // categoría en vez de que Claude la vuelva a decidir de cero.
 //
-// SOLO sugiere. Nunca escribe en ningún `data/<club>-data.js` — eso lo sigue
+// SOLO sugiere. Nunca escribe en ningún `data/<país>/<club>-data.js` — eso lo sigue
 // haciendo Claude a mano, con el criterio de `club-data-mapping/SKILL.md`.
 // Tres niveles de confianza, a propósito separados:
 //   - EXACTO: mismo texto normalizado que un rawLabel ya cargado, DEL MISMO

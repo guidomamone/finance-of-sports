@@ -1,14 +1,14 @@
 # depcali-co — evidencia de carga
 
-Lo que había como comentario en `data/depcali-co-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/co/depcali-co-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/depcali-co-data.js — Club Profesional Deportivo Cali S.A. (Cali,
+data/co/depcali-co-data.js — Club Profesional Deportivo Cali S.A. (Cali,
 Colombia). clubId lleva el país al final (`depcali-co`) por la convención
 de Admin/CONVENCIONES.md. Ejercicio 2025 = REAL, único ejercicio cargado a
 propósito (mismo criterio que Envigado/Once Caldas).
@@ -62,7 +62,7 @@ Intereses + Otros (Gmf, descuentos) + Gastos Bancarios = $2.761.779 M) =
 -1.041.619 M, EXACTO igual a los 2 totales impresos por separado.
 
 tax = RESIDUO (mismo criterio que Once Caldas, ver comentario en
-data/oncecaldas-data.js): pretax calculado línea por línea desde las Notas
+data/co/oncecaldas-data.js): pretax calculado línea por línea desde las Notas
 18-23 = Revenue(57.387.255) - Expenses(55.225.028) + netInterest(-1.041.619)
 = 1.120.608. officialPAT confirmado por la vista SIIS = -6.954.741 (pérdida).
 tax = officialPAT - pretax = -6.954.741 - 1.120.608 = -8.075.349. Esto NO es
@@ -140,5 +140,5 @@ Tinoco: la nueva junta directiva se oficializó el 19-20/11/2025 (las fuentes di
 _note (data/):_
 
 ```text
-Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890301160 — el mismo NIT de la histórica Asociación Deportivo Cali). El PDF trae solo las notas (texto nativo, sin tabla de Estado de Resultados primaria aparte ni impuesto de renta corriente como cifra única), así que el campo tax de este ejercicio es un residuo (pretax línea por línea menos el resultado neto confirmado por la vista SIIS) — ver comentario de cabecera de data/depcali-co-data.js. El club convirtió su forma jurídica de Asociación (sin ánimo de lucro) a S.A. en 2024-2025 (IDC Network con 85% de las acciones), lo que explica el cargo grande de impuesto diferido detrás de esa pérdida neta. Transcripción completa en Clubes/Colombia/Deportivo Cali/estados-financieros-2025.md.
+Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890301160 — el mismo NIT de la histórica Asociación Deportivo Cali). El PDF trae solo las notas (texto nativo, sin tabla de Estado de Resultados primaria aparte ni impuesto de renta corriente como cifra única), así que el campo tax de este ejercicio es un residuo (pretax línea por línea menos el resultado neto confirmado por la vista SIIS) — ver comentario de cabecera de data/co/depcali-co-data.js. El club convirtió su forma jurídica de Asociación (sin ánimo de lucro) a S.A. en 2024-2025 (IDC Network con 85% de las acciones), lo que explica el cargo grande de impuesto diferido detrás de esa pérdida neta. Transcripción completa en Clubes/Colombia/Deportivo Cali/estados-financieros-2025.md.
 ```

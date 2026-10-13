@@ -1,14 +1,14 @@
 # istra-hr — evidencia de carga
 
-Lo que había como comentario en `data/istra-hr-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/hr/istra-hr-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/istra-hr-data.js — NK Istra 1961 sportsko dioničko društvo (Pula, Croacia),
+data/hr/istra-hr-data.js — NK Istra 1961 sportsko dioničko društvo (Pula, Croacia),
 clubId 'istra-hr'. Ejercicio fiscal = año CALENDARIO (1/1-31/12/2025).
 
 FUENTE: `Clubes/Croacia/Istra 1961/financijsko-izvjesce-2025.md` (transcripción

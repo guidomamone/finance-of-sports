@@ -1,14 +1,14 @@
 # gimnasiaesgrima-ar — evidencia de carga
 
-Lo que había como comentario en `data/gimnasiaesgrima-ar-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ar/gimnasiaesgrima-ar-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/gimnasiaesgrima-ar-data.js — Club de Gimnasia y Esgrima La Plata (Asociación Civil, "el
+data/ar/gimnasiaesgrima-ar-data.js — Club de Gimnasia y Esgrima La Plata (Asociación Civil, "el
 Lobo"). Club nuevo, primeros ejercicios cargados: 2023/2024/2025 (balances reales, 136°/137°/138°
 Ejercicio) + 2026 (presupuesto standalone, todavía sin balance real). Ver
 Admin/sourcing/Argentina/Gimnasia y Esgrima LP.md para cómo se encontraron los 9 documentos (2 hosts
@@ -145,7 +145,7 @@ _de data/clubs.js:_
 ```text
 Gimnasia y Esgrima (La Plata), club nuevo (sesión 2026-09-23, to-do 58): 3 balances reales +
 presupuestos, 2 de ellos cargados como overlay de un ejercicio dual (ver
-data/gimnasiaesgrima-ar-data.js). `brandColor:null` (no ausente): camiseta blanca con banda
+data/ar/gimnasiaesgrima-ar-data.js). `brandColor:null` (no ausente): camiseta blanca con banda
 azul marino, el que lo identifica es el blanco — mismo bucket que River/Vélez/Sevilla/Real
 Madrid/Valencia/Once Caldas, confirmado en.wikipedia.org.
 ```

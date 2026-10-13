@@ -1,14 +1,14 @@
 # sonderjyske-dk — evidencia de carga
 
-Lo que había como comentario en `data/sonderjyske-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/dk/sonderjyske-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/sonderjyske-dk-data.js — Sønderjyske Fodbold A/S (Haderslev, Dinamarca),
+data/dk/sonderjyske-dk-data.js — Sønderjyske Fodbold A/S (Haderslev, Dinamarca),
 clubId 'sonderjyske-dk'. Cierre 30/6/2022 (ejercicio 1/7/2021-30/6/2022, temporada
 deportiva 2021/22) → clave 2022.
 

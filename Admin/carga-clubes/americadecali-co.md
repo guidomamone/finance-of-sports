@@ -1,14 +1,14 @@
 # americadecali-co — evidencia de carga
 
-Lo que había como comentario en `data/americadecali-co-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/co/americadecali-co-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/americadecali-co-data.js — América de Cali S.A. En Reorganización
+data/co/americadecali-co-data.js — América de Cali S.A. En Reorganización
 (Cali, Colombia). clubId lleva el país al final (`americadecali-co`, ver
 Admin/CONVENCIONES.md) porque "América" es un nombre que se repite entre
 países. Ejercicio 2025 = REAL, único ejercicio cargado a propósito (mismo
@@ -173,5 +173,5 @@ Marcela Gómez Giraldo (hija del accionista mayoritario Tulio Gómez) es la pres
 _note (data/):_
 
 ```text
-Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890305773). Texto nativo (pdftotext -layout), pero las tablas de Notas 19-25 se renderizan superpuestas/duplicadas en el PDF (no es un escaneo, es un artefacto de layout) — se reconstruyó cada nota sumando sus líneas y verificando contra el subtotal impreso en el Estado de Resultados antes de cargar, ver comentario de cabecera de data/americadecali-co-data.js. El club está formalmente "en reorganización" (Ley 1116) desde 2014-2015, pero esto no altera la estructura del Estado de Resultados. Transcripción completa en Clubes/Colombia/America de Cali/estados-financieros-2025.md.
+Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890305773). Texto nativo (pdftotext -layout), pero las tablas de Notas 19-25 se renderizan superpuestas/duplicadas en el PDF (no es un escaneo, es un artefacto de layout) — se reconstruyó cada nota sumando sus líneas y verificando contra el subtotal impreso en el Estado de Resultados antes de cargar, ver comentario de cabecera de data/co/americadecali-co-data.js. El club está formalmente "en reorganización" (Ley 1116) desde 2014-2015, pero esto no altera la estructura del Estado de Resultados. Transcripción completa en Clubes/Colombia/America de Cali/estados-financieros-2025.md.
 ```

@@ -43,7 +43,7 @@ no aplica la preferencia por consolidado de este onboarding para este club/año.
 `clubId`: `gent-be`. A diferencia de Anderlecht/Genk, el Jaarverslag de este filing
 sí trae comentario cuantitativo por línea del P&L (pág. 42), lo que permitió una
 categorización algo más fundamentada — ver el comentario de cabecera de
-`data/gent-be-data.js` para el detalle completo y el tie-out verificado. Color de
+`data/be/gent-be-data.js` para el detalle completo y el tie-out verificado. Color de
 marca: `#004794` (azul, encycolorpedia.com/schemecolor.com, confirmado contra la
 identidad azul/blanco de Wikipedia — se usó el acento no blanco), verificado
 2026-09-25.

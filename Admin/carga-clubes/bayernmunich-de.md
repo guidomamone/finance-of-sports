@@ -1,14 +1,14 @@
 # bayernmunich-de — evidencia de carga
 
-Lo que había como comentario en `data/bayernmunich-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/de/bayernmunich-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/bayernmunich-de-data.js — FC Bayern München AG (Alemania, Bundesliga).
+data/de/bayernmunich-de-data.js — FC Bayern München AG (Alemania, Bundesliga).
 
 4 ejercicios cargados: 2020/21, 2022/23, 2023/24, 2024/25. Fuente de 2023/24 y 2024/25: el
 comunicado oficial anual "Jahresabschluss der Saison <año>" que el club publica en fcbayern.com
@@ -293,7 +293,7 @@ Dreesen asumió tras el despido de Kahn (votado el 26/5/2023); el 27/5/2023 es l
 _note (data/):_
 
 ```text
-Comunicado oficial anual del club (fcbayern.com, Direktion Medien, Digital und Kommunikation), SOLO 2 páginas — mucho más chico que los comunicados de 2023/24 y 2024/25 (7 páginas): trae solo el Konzern (Bilanz condensado + Umsatz/EBITDA/Gewinn vor Steuern/Jahresüberschuss), sin el desglose de GuV por rubro del Einzelabschluss que sí tienen los otros 2 ejercicios. revenueLines/expenseLines se cargaron con el máximo detalle que el documento permite (1 línea de ingreso sin desglosar, 2 de gasto derivadas matemáticamente de las 4 cifras impresas) — ver comentario de cabecera de data/bayernmunich-de-data.js para el detalle completo de la aproximación (la línea de depreciation combina D&A con el resultado financiero neto, que el documento no separa). Sin nota de deuda financiera (no se cargó grossDebt/cash, mismo criterio que 2023/24 y 2024/25). Convertido a USD con el cierre BCE del 30/6/2021 (1 EUR = 1,1884 USD), consultado en esta sesión vía api.frankfurter.dev — no está en FX_CLOSE compartido todavía. Transcripción completa en Clubes/Alemania/Bayern Munich/jahresabschluss-2020-21.md.
+Comunicado oficial anual del club (fcbayern.com, Direktion Medien, Digital und Kommunikation), SOLO 2 páginas — mucho más chico que los comunicados de 2023/24 y 2024/25 (7 páginas): trae solo el Konzern (Bilanz condensado + Umsatz/EBITDA/Gewinn vor Steuern/Jahresüberschuss), sin el desglose de GuV por rubro del Einzelabschluss que sí tienen los otros 2 ejercicios. revenueLines/expenseLines se cargaron con el máximo detalle que el documento permite (1 línea de ingreso sin desglosar, 2 de gasto derivadas matemáticamente de las 4 cifras impresas) — ver comentario de cabecera de data/de/bayernmunich-de-data.js para el detalle completo de la aproximación (la línea de depreciation combina D&A con el resultado financiero neto, que el documento no separa). Sin nota de deuda financiera (no se cargó grossDebt/cash, mismo criterio que 2023/24 y 2024/25). Convertido a USD con el cierre BCE del 30/6/2021 (1 EUR = 1,1884 USD), consultado en esta sesión vía api.frankfurter.dev — no está en FX_CLOSE compartido todavía. Transcripción completa en Clubes/Alemania/Bayern Munich/jahresabschluss-2020-21.md.
 ```
 
 ### bayernmunich-de-jahresabschluss-2023
@@ -301,7 +301,7 @@ Comunicado oficial anual del club (fcbayern.com, Direktion Medien, Digital und K
 _note (data/):_
 
 ```text
-Comunicado oficial anual del club (fcbayern.com, Direktion Medien und Kommunikation), 4 páginas — pese al nombre del archivo ("presseinformation"), es el mismo tipo de comunicado que jahresabschluss-2020-21.md: trae Bilanz condensado (Aktiva/Passiva) del Konzern Y del Einzelabschluss AG, más Kennzahlen Umsatz/EBITDA/Gewinn vor Steuern/Jahresüberschuss de cada nivel y una tabla histórica de 10 años, pero SIN el desglose de GuV por rubro que sí tienen 2023/24 y 2024/25. revenueLines/expenseLines se cargaron con el máximo detalle que el documento permite (1 línea de ingreso sin desglosar, 2 de gasto derivadas matemáticamente de las 4 cifras del Einzelabschluss AG) — ver comentario de cabecera de data/bayernmunich-de-data.js para el detalle completo de la aproximación (la línea de depreciation combina D&A con el resultado financiero neto, que el documento no separa). Sin nota de deuda financiera (no se cargó grossDebt/cash, mismo criterio que 2020/21, 2023/24 y 2024/25). Oliver Kahn fue Vorstandsvorsitzender casi todo el ejercicio (hasta el 25/5/2023); Jan-Christian Dreesen asumió el 1/6/2023, últimas semanas del ejercicio. Transcripción completa en Clubes/Alemania/Bayern Munich/presseinformation-jhv-2022-23.md.
+Comunicado oficial anual del club (fcbayern.com, Direktion Medien und Kommunikation), 4 páginas — pese al nombre del archivo ("presseinformation"), es el mismo tipo de comunicado que jahresabschluss-2020-21.md: trae Bilanz condensado (Aktiva/Passiva) del Konzern Y del Einzelabschluss AG, más Kennzahlen Umsatz/EBITDA/Gewinn vor Steuern/Jahresüberschuss de cada nivel y una tabla histórica de 10 años, pero SIN el desglose de GuV por rubro que sí tienen 2023/24 y 2024/25. revenueLines/expenseLines se cargaron con el máximo detalle que el documento permite (1 línea de ingreso sin desglosar, 2 de gasto derivadas matemáticamente de las 4 cifras del Einzelabschluss AG) — ver comentario de cabecera de data/de/bayernmunich-de-data.js para el detalle completo de la aproximación (la línea de depreciation combina D&A con el resultado financiero neto, que el documento no separa). Sin nota de deuda financiera (no se cargó grossDebt/cash, mismo criterio que 2020/21, 2023/24 y 2024/25). Oliver Kahn fue Vorstandsvorsitzender casi todo el ejercicio (hasta el 25/5/2023); Jan-Christian Dreesen asumió el 1/6/2023, últimas semanas del ejercicio. Transcripción completa en Clubes/Alemania/Bayern Munich/presseinformation-jhv-2022-23.md.
 ```
 
 ### bayernmunich-de-jahresabschluss-2024

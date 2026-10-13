@@ -1,14 +1,14 @@
 # dynamomakhachkala-ru — evidencia de carga
 
-Lo que había como comentario en `data/dynamomakhachkala-ru-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ru/dynamomakhachkala-ru-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/dynamomakhachkala-ru-data.js — ANO Football Club Dynamo (Rusia).
+data/ru/dynamomakhachkala-ru-data.js — ANO Football Club Dynamo (Rusia).
 ALTA POR SCRIPT (tools/alta-club.mjs, 2026-10-10), SIN EJERCICIOS CARGADOS TODAVÍA:
 las estructuras de abajo están vacías a propósito. Los rubros, los totales
 oficiales y el resto del fiscalYearMeta los agrega la etapa de carga

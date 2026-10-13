@@ -30,7 +30,7 @@ vienen mezcladas, no son solo del plantel masculino.
 
 ## CARGADO al sitio (2026-09-22)
 
-Onboardeado a `data/tottenham-gb-data.js` (clubId `tottenham-gb`), motor genérico, 2 ejercicios:
+Onboardeado a `data/gb/tottenham-gb-data.js` (clubId `tottenham-gb`), motor genérico, 2 ejercicios:
 Ejercicio 2024 (cerrado 30/6/2024, temporada 2023/24) y Ejercicio 2025 (cerrado 30/6/2025, temporada
 2024/25). Fuente: los 2 `.md` ya transcriptos (ver arriba), cuentas consolidadas del grupo,
 Companies House n° 01706358.
@@ -59,7 +59,7 @@ club") — no son solo del primer equipo masculino.
   catering), pero la Nota 2 en sí no desglosa esa cifra exacta — solo la prosa, redondeada a
   £0,1 M, que además no reconcilia centavo a centavo contra el total de "Commercial". Por eso no se
   promovió esa porción a `stadium_other` (criterio conservador: el rótulo real es "Commercial", no
-  nombra el estadio). Ver el comentario de cabecera de `data/tottenham-gb-data.js` para el detalle
+  nombra el estadio). Ver el comentario de cabecera de `data/gb/tottenham-gb-data.js` para el detalle
   completo.
 - **Pendiente, no hecho en esta sesión a propósito** (la tarea lo excluyó explícitamente): el club
   todavía no tiene entrada en `data/clubs.js` (`clubs{}`, `displayName`, `reportingCurrency`,

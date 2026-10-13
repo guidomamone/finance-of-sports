@@ -1,14 +1,14 @@
 # chelsea-gb — evidencia de carga
 
-Lo que había como comentario en `data/chelsea-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/chelsea-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/chelsea-gb-data.js — Chelsea (Inglaterra, Premier League), clubId 'chelsea-gb'.
+data/gb/chelsea-gb-data.js — Chelsea (Inglaterra, Premier League), clubId 'chelsea-gb'.
 
 Fuente: cuentas consolidadas de Chelsea FC Holdings Limited (Companies House n° 02536231),
 único ejercicio disponible: cerrado 30/6/2025 (temporada 2024-25). Transcripción completa en
@@ -91,5 +91,5 @@ Boehly dejó la presidencia al vender su parte a Clearlake (anuncio del 16/9/202
 _note (data/):_
 
 ```text
-Cuentas consolidadas del grupo, depositadas en Companies House (Reino Unido). Transcripción completa en Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2024-25.md. Ver comentario de cabecera de data/chelsea-gb-data.js para el detalle completo de categorización y las dudas abiertas (Cost of sales sin desglose, gap de amortización/deterioro, grossDebt).
+Cuentas consolidadas del grupo, depositadas en Companies House (Reino Unido). Transcripción completa en Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2024-25.md. Ver comentario de cabecera de data/gb/chelsea-gb-data.js para el detalle completo de categorización y las dudas abiertas (Cost of sales sin desglose, gap de amortización/deterioro, grossDebt).
 ```

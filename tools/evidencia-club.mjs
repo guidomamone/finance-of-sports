@@ -1,7 +1,7 @@
 // ============================================================================
 // tools/evidencia-club.mjs — leer y editar Admin/carga-clubes/<clubId>.md, la evidencia de carga de cada club (to-do 209).
 //
-// POR QUÉ: data/<club>-data.js se publica y NO lleva comentarios (Admin/CONVENCIONES-DATOS.md). Lo que los scripts del pipeline antes
+// POR QUÉ: data/<país>/<club>-data.js se publica y NO lleva comentarios (Admin/CONVENCIONES-DATOS.md). Lo que los scripts del pipeline antes
 // escribían como comentario al lado del dato (cabecera del año, nota de cada fila, ajustes manuales, caja y deuda, liga, marcas de
 // "posiblemente dentro de otro rubro") va a este .md. Este módulo es el ÚNICO que lo edita, así el formato es uno solo para todos.
 //
@@ -39,7 +39,7 @@ const ruta = (id) => resolve(ROOT, rutaRel(id));
 
 export function esqueleto(id) {
   return `# ${id} — evidencia de carga\n\n`
-    + `Lo que antes iba como comentario en \`data/${id}-data.js\` (la regla: \`Admin/CONVENCIONES-DATOS.md\`, "data/<club>-data.js NO LLEVA\n`
+    + `Lo que antes iba como comentario en el data file del club, \`data/<país>/${id}-data.js\` (la regla: \`Admin/CONVENCIONES-DATOS.md\`, "data/<país>/<club>-data.js NO LLEVA\n`
     + 'COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y meta. Las notas de cada fila van en una tabla con su número de\n'
     + 'fila (hay nombres de rubro repetidos en un mismo año).\n';
 }

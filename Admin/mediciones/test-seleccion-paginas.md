@@ -15,7 +15,7 @@ por página, `analyze*.mjs` arma la grilla y `evalmod.mjs` corre el módulo fina
 
 | | Qué es | Documentos | Páginas | Denominador |
 |---|---|---|---|---|
-| **A** | Ejercicios cargados (`Admin/registros/transcripciones-estado.jsonl`, `cargado:true`, `tieneMd:true`, sin memorias/presupuestos) con >= 3 importes en `data/*-data.js` y alguna página útil. **Página útil** = página del `.md` con >= 2 importes de producción de ese club-año (escala 1, 1e3 o 1e6, tolerancia 0,15%). | 222 | 10.956 | 1.121 páginas útiles, 4.103 importes distintos hallados en el `.md` |
+| **A** | Ejercicios cargados (`Admin/registros/transcripciones-estado.jsonl`, `cargado:true`, `tieneMd:true`, sin memorias/presupuestos) con >= 3 importes en `data/*/*-data.js` y alguna página útil. **Página útil** = página del `.md` con >= 2 importes de producción de ese club-año (escala 1, 1e3 o 1e6, tolerancia 0,15%). | 222 | 10.956 | 1.121 páginas útiles, 4.103 importes distintos hallados en el `.md` |
 | **B** | `Clubes/**/*.rubros.json` (hay 734; 420 tienen `pdf` + `md` en disco y rubros con `page`) | 420 | 15.858 | 2.173 páginas con rubros, 20.407 rubros |
 
 Las dos verdades salen del `.md` (A busca los importes en el `.md`; B viene de las tablas del `.md`), así que favorecen un poco al método

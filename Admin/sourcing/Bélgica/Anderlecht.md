@@ -34,7 +34,7 @@ no hay consolidado para este club). `clubId`: `anderlecht-be`. La categorizació
 "Omzet" y "Andere bedrijfsopbrengsten" quedó gruesa (`lump_football_operations` /
 `player_sales`) porque las notas 6.10 del propio filing (desglose de la cifra de
 negocios) no tienen ningún valor cargado por el club — ver la pregunta anotada en
-`Admin/dudas-por-club.md`. Ver `data/anderlecht-be-data.js` para el detalle completo
+`Admin/dudas-por-club.md`. Ver `data/be/anderlecht-be-data.js` para el detalle completo
 y el tie-out verificado. Color de marca: `#4C2484` (violeta, schemecolor.com,
 confirmado contra la identidad "paars-wit"/púrpura-blanco de Wikipedia — se usó el
 acento no blanco), verificado 2026-09-25.

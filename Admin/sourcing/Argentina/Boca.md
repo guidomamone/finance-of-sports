@@ -24,7 +24,7 @@ no tiene ningún nombre obvio en el sitio vivo de hoy y que ningún intento ante
   Ejercicio 2022)**: transcripto con Mistral OCR, categorizado y verificado — las 12 líneas de
   Recursos y las 18 de Gastos suman EXACTO los totales impresos pág. 32 ($14.279.912.579 /
   $13.669.793.975 / $461.837.755 de superávit). Ver `sources['boca-balance-2021-22']` en
-  `data/clubs.js` y el comentario de cabecera de `data/boca-data.js`.
+  `data/clubs.js` y el comentario de cabecera de `data/ar/boca-data.js`.
 - Memoria y Balance, **Ejercicio N° 119 (cerrado 30/06/2023), firmado** —
   `https://www.bocajuniors.com.ar/rebrand/files/balance_01_07_22_al_30_06_23_firmado.pdf`, snapshot
   del 2023-11-11. Período confirmado igual, abriendo la portada. Escaneado, sin capa de texto en

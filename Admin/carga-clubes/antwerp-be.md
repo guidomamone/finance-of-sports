@@ -1,14 +1,14 @@
 # antwerp-be — evidencia de carga
 
-Lo que había como comentario en `data/antwerp-be-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/be/antwerp-be-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/antwerp-be-data.js — Royal Antwerp Football Club NV / RAFC (Bélgica).
+data/be/antwerp-be-data.js — Royal Antwerp Football Club NV / RAFC (Bélgica).
 Club nuevo, cargado en paralelo con otros 3 agentes sobre este mismo repo
 (cada uno con su propio club, sin tocar archivos ajenos).
 

@@ -20,7 +20,7 @@
 
 ## Cargado (sesión 2026-09-24)
 
-- **2 ejercicios cargados en `data/athleticoparanaense-br-data.js`** (`clubId:
+- **2 ejercicios cargados en `data/br/athleticoparanaense-br-data.js`** (`clubId:
   'athleticoparanaense-br'`): 2024 (Superávit R$23,439 M) y 2025 (primer DÉFICIT real desde que hay
   balances cargados, -R$58,134 M). Columna Controladora (no Consolidado). Ver el comentario de
   cabecera del archivo de datos para la categorización completa y la verificación de tie-out.

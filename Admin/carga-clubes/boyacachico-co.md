@@ -1,14 +1,14 @@
 # boyacachico-co — evidencia de carga
 
-Lo que había como comentario en `data/boyacachico-co-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/co/boyacachico-co-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/boyacachico-co-data.js — Deportivo Boyacá Chicó Futbol Club S.A.
+data/co/boyacachico-co-data.js — Deportivo Boyacá Chicó Futbol Club S.A.
 (Tunja, Colombia). Club nuevo, agregado el 2026-09-28 (ronda de 5
 onboardings de prueba de los tools del to-do 98/95, 3/5). Ejercicio 2024 =
 REAL, único ejercicio cargado a propósito.
@@ -32,7 +32,7 @@ impreso $143,886002 M menos "Intereses Bancarios" $6,865639 M, que va a
 `netInterest`). Los 5 rubros de auxilio DIMAYOR (Hotelero/Transporte/
 Arbitraje/Logística/Mejoramientos) y "Fondo de Equipos" se categorizaron
 como `broadcasting`, mismo criterio que la sub-descomposición de "DIMAYOR"
-en `data/oncecaldas-data.js` (son la misma distribución de la liga, no
+en `data/co/oncecaldas-data.js` (son la misma distribución de la liga, no
 ingreso propio del club). "Ingresos Abonados con Boyacá" -> `season_tickets`
 (abonos, mismo concepto que Once Caldas). "Menos: Devoluciones"
 (-$1.726,052997 M, 21% del ingreso bruto) NO se pudo atribuir con

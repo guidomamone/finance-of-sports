@@ -32,7 +32,7 @@ temporadas de liga: 2023/24 (enero-mayo 2024) y 2024/25 (agosto-diciembre
 en LAS DOS temporadas, sin descenso ninguno de los 3 en ningún momento:
 2023/24 — Dinamo Zagreb campeón (clasificó a Champions League 2024/25,
 donde jugó la fase de liga, ver ingreso de "Uefine nagrade" en
-data/dinamozagreb-hr-data.js), Rijeka 2°/3° (Europa League), Hajduk Split
+data/hr/dinamozagreb-hr-data.js), Rijeka 2°/3° (Europa League), Hajduk Split
 entre los primeros 4 (Conference League). 2024/25 — Rijeka campeón (2°
 título), Dinamo Zagreb 2° (Europa League), Hajduk Split 3°/4°
 (Conference League). Como las 2 temporadas que se superponen con el

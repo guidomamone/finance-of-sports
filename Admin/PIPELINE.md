@@ -425,7 +425,7 @@ Mitigaciones:
 - Escribir: `cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año; después `caja-deuda.mjs --club <id> [--ejecutar] --escribir`.
   Las marcas "Posiblemente dentro de otro rubro" las pone `--escribir` solo (no hay un paso más). Para un club cargado a mano o corregido
   fuera de `cargar.mjs`: `node tools/dentro-de-otro.mjs --club <id> [--escribir]`.
-- Dónde queda la evidencia: `data/<club>-data.js` no lleva comentarios (se publica). `cargar.mjs --escribir` deja en
+- Dónde queda la evidencia: `data/<país>/<club>-data.js` no lleva comentarios (se publica). `cargar.mjs --escribir` deja en
   `Admin/carga-clubes/<clubId>.md`, en la sección del año, la cabecera "cargado por… tie-out", la tabla de filas con la página y el
   escalón de cada categoría, los ajustes manuales y la nota de meta, y de dónde salió la liga. Lo edita solo a través de
   `tools/evidencia-club.mjs`; con `--reemplazar` saca SUS líneas de ese año (lo escrito a mano queda) y las vuelve a escribir. Si la
@@ -731,7 +731,7 @@ justamente el dato suelto que capaz hace falta en una sesión futura.
 
 Una vez que el `.md` está armado, se usa ESE archivo (no el PDF) para extraer
 los datos que se vayan a cargar a `<club>RevenueLinesByYear`/
-`<club>ExpenseLinesByYear`/etc. (ver `data/river-data.js` para el shape, el
+`<club>ExpenseLinesByYear`/etc. (ver `data/ar/river-data.js` para el shape, el
 mismo que usan todos los clubes incluida Boca desde la Versión 102), y para
 cualquier experimentación de formato que pida Guido más adelante sobre ese
 mismo documento.

@@ -1,14 +1,14 @@
 # bournemouth-gb — evidencia de carga
 
-Lo que había como comentario en `data/bournemouth-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/bournemouth-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/bournemouth-gb-data.js — AFC Bournemouth Limited (clubId 'bournemouth-gb'), Ejercicios
+data/gb/bournemouth-gb-data.js — AFC Bournemouth Limited (clubId 'bournemouth-gb'), Ejercicios
 2023/24 (año ended 30 junio 2024) y 2024/25 (año ended 30 junio 2025).
 
 ENTIDAD LEGAL: "AFC Bournemouth Limited", Companies House n° 06632170 — cuentas de la SOCIEDAD
@@ -144,7 +144,7 @@ PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/
 _note (data/):_
 
 ```text
-PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2024-25.md. Adopta una presentación nueva (leases/right-of-use assets) que restata levemente el comparativo 2024 — se usó SIEMPRE la presentación propia de cada ejercicio, nunca la comparativa del documento del año siguiente (ver comentario de cabecera de data/bournemouth-gb-data.js). fxRef apunta a FX_CLOSE (GBP@2025-06-30).
+PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2024-25.md. Adopta una presentación nueva (leases/right-of-use assets) que restata levemente el comparativo 2024 — se usó SIEMPRE la presentación propia de cada ejercicio, nunca la comparativa del documento del año siguiente (ver comentario de cabecera de data/gb/bournemouth-gb-data.js). fxRef apunta a FX_CLOSE (GBP@2025-06-30).
 ```
 
 ## Otros

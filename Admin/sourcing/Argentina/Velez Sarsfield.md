@@ -21,7 +21,7 @@
   $36.833.752 / DÉFICIT 2024 $(1.113.139.098) / SUPERÁVIT 2023 $522.234.138 / SUPERÁVIT 2022
   $1.216.670.585 / DÉFICIT 2021 $(753.625.872) / DÉFICIT 2020 $(145.019.616) / SUPERÁVIT 2019
   $370.018.627 / SUPERÁVIT 2018 $342.815.648 / DÉFICIT 2017 $(73.534.953) / SUPERÁVIT 2016
-  $66.227.589 / DÉFICIT 2015 $(36.195.305) (todo en ARS). Ver `data/velez-data.js` para el detalle
+  $66.227.589 / DÉFICIT 2015 $(36.195.305) (todo en ARS). Ver `data/ar/velez-data.js` para el detalle
   completo de categorización (incluye una separación por sector del Anexo III para que "Salarios y
   primas" sea solo plantel profesional, no todo el personal del club — mismo criterio en los 11
   ejercicios). Gestiones: Raúl H. Gámez (2014-2017, ejercicios 2015-2017), Sergio Rapisarda
@@ -35,7 +35,7 @@
   imagen con el Read tool. Números verificados fila por fila contra los totales impresos de cada
   Anexo antes de cargarlos, no solo con el OCR crudo (2016 cerró exacto, 2015/2017 con un ruido
   irrelevante de $40-50 mil sobre totales de cientos de millones). Ver comentario de cabecera de
-  `data/velez-data.js` para el detalle completo del flujo (útil si en el futuro aparece un
+  `data/ar/velez-data.js` para el detalle completo del flujo (útil si en el futuro aparece un
   ejercicio anterior a 2015 en el archivo del club, o si hay que reprocesar alguno).
   **Bug real encontrado y corregido**: al cargar 2015, `verifyTieOuts()` marcó una diferencia real
   (no de OCR) en el check de "Expenses" — la fórmula del check (`Math.abs(a) + Math.abs(b)` en vez
@@ -43,7 +43,7 @@
   amortización real (nunca había pasado antes en ningún club/ejercicio). Corregido en TODOS los
   checks de `verifyTieOuts()`, no solo los de Vélez.
 - Pendiente: Mercado de Pases/Resultados Deportivos/Títulos (esta sesión se enfocó solo en
-  Finanzas, quedaron vacíos a propósito en `data/velez-data.js`, no con placeholder inventado).
+  Finanzas, quedaron vacíos a propósito en `data/ar/velez-data.js`, no con placeholder inventado).
   Confirmar si hay un ejercicio 2026 más reciente (se publica recién tras el cierre del próximo
   ejercicio) o alguno anterior a 2015 en el archivo del club. Algún año puntual puede faltar en una
   de las dos series (Balance General vs. Memoria+Balance) — revisar la carpeta local antes de dar

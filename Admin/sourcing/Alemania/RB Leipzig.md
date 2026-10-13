@@ -52,7 +52,7 @@ _notas-generales.md` sección 1. Búsqueda: razón social exacta "RasenBallsport
 
 **CARGADO al sitio**: Ejercicios 2024 (2023/24) y 2025 (2024/25), ambos desde
 `jahresabschluss-2024-25.pdf` (que trae 2023/24 completo como columna comparativa — válido, cuentas
-HGB nominales sin reexpresión). Ver `data/rbleipzig-de-data.js` para el mapeo completo.
+HGB nominales sin reexpresión). Ver `data/de/rbleipzig-de-data.js` para el mapeo completo.
 
 **CORRECCIÓN a la nota de arriba** ("otros 7.292" en el resumen del Umsatzerlöse 2024/25): esa cifra
 efectivamente ERA la correcta — una relectura de la transcripción durante el onboarding la había

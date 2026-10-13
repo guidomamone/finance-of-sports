@@ -1,14 +1,14 @@
 # saopaulo-br — evidencia de carga
 
-Lo que había como comentario en `data/saopaulo-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/saopaulo-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/saopaulo-br-data.js — São Paulo Futebol Clube, Brasil. Associação civil sem finalidade
+data/br/saopaulo-br-data.js — São Paulo Futebol Clube, Brasil. Associação civil sem finalidade
 econômica ou lucrativa (Nota 1: "constituída na forma de associação civil sem finalidade
 econômica"), NO es SAF — mismo tipo de entidade que Flamengo (mejor plantilla de estructura para
 este archivo). clubId 'saopaulo-br' (CON GUIÓN, mismo criterio que banfield-ar/flamengo-br:

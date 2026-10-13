@@ -1,14 +1,14 @@
 # oncecaldas — evidencia de carga
 
-Lo que había como comentario en `data/oncecaldas-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/co/oncecaldas-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/oncecaldas-data.js — Once Caldas S.A. En Reorganización (Manizales,
+data/co/oncecaldas-data.js — Once Caldas S.A. En Reorganización (Manizales,
 Colombia). Primer club colombiano cargado en finance-of-sports (junto con
 Envigado, misma sesión). Ejercicios 2022, 2023, 2024 y 2025 = REALES.
 
@@ -115,7 +115,7 @@ carpeta. Bajado vía SIIS (siis.ia.supersociedades.gov.co), ver
 OJO — este PDF (a pesar del nombre "estados-financieros") son las NOTAS a
 los estados financieros (desglose rubro por rubro), NO incluye una tabla
 de Estado de Situación Financiera/Estado de Resultado Integral aparte como
-sí incluye el de Envigado (ver data/envigado-data.js). Esto afecta cómo se
+sí incluye el de Envigado (ver data/co/envigado-data.js). Esto afecta cómo se
 armó fiscalYearMeta[2025].tax, ver ese comentario.
 
 Cifras del documento en MILES de pesos colombianos (confirmado: pág. 7,

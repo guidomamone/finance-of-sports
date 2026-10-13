@@ -28,10 +28,10 @@ OCR de la página 2 del PDF 2024/25: `The Brighton and Hove Albion Football Club
 ## CARGADO al sitio (sesión 2026-09-25)
 
 Los 2 ejercicios transcriptos (`brighton-full-accounts-2023-24.md`/`-2024-25.md`, ya con texto
-nativo, no hizo falta OCR) se cargaron a `data/brighton-gb-data.js`, `clubId` **`brighton-gb`**.
+nativo, no hizo falta OCR) se cargaron a `data/gb/brighton-gb-data.js`, `clubId` **`brighton-gb`**.
 Cuentas individuales de la compañía (no consolidadas), Premier League los 2 ejercicios (11° puesto
 en 2023/24, 8° en 2024/25, confirmado por el propio Strategic Report de cada documento). Ver el
-comentario de cabecera de `data/brighton-gb-data.js` para el detalle completo de categorización,
+comentario de cabecera de `data/gb/brighton-gb-data.js` para el detalle completo de categorización,
 `fx` (sin tipo de cambio propio declarado, `fxRef` a `GBP@2024-06-30`/`GBP@2025-06-30` ya existentes
 en `data/currency-map.js`) y `grossDebt` (préstamo intragrupo del accionista Tony Bloom, el club no
 tiene deuda bancaria).
@@ -44,7 +44,7 @@ siguiendo la regla de bicolor "si el otro color es blanco, gana el que no es bla
 (restates) el resultado neto del ejercicio 2023/24 por un error de impuesto diferido no reconocido
 anteriormente (de £56,065m a £73,369m) — se cargó la cifra tal cual depositada en el documento
 propio de ESE ejercicio (2023/24), no la restated, ver el comentario extenso en
-`data/brighton-gb-data.js`.
+`data/gb/brighton-gb-data.js`.
 
 - Último chequeo: 2026-09-25.
 

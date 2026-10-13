@@ -51,7 +51,7 @@
   2025) es un salto de calidad adicional o si la prensa se refería a años anteriores a 2019.
 - Contacto: redbullbragantino.com.br/balanco/<archivo> (ya no sirve en vivo, usar Wayback);
   web.archive.org/web/2*/https://www.redbullbragantino.com.br/balanco/*.
-- **CARGADO (sesión 2026-09-24): 2 ejercicios al sitio, `data/rbbragantino-br-data.js`, clubId
+- **CARGADO (sesión 2026-09-24): 2 ejercicios al sitio, `data/br/rbbragantino-br-data.js`, clubId
   `rbbragantino-br`** — 2019 (balanco-2019.pdf, gotcha de tooling: PDF vectorial sin capa de texto,
   Balanço patrimonial reconstruido cruzando subtotales, ver comentario de cabecera del archivo de
   datos) y 2024 (balanco-2024-auditado-fev2025.pdf, BDO, texto nativo limpio pero transcripción sin

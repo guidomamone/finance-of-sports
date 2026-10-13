@@ -60,7 +60,7 @@ Confirmados por WebSearch pero no descargados (por priorización de tiempo, no p
 ## Onboarding (sesión 2026-09-25)
 
 **CARGADO al sitio**: Ejercicios 2024 (2023/24) y 2025 (2024/25), desde `jahresabschluss-2023-24.pdf`
-y `jahresabschluss-2024-25.pdf` (ver `data/bayernmunich-de-data.js` para el mapeo completo y las
+y `jahresabschluss-2024-25.pdf` (ver `data/de/bayernmunich-de-data.js` para el mapeo completo y las
 decisiones tomadas — nivel de cuentas Einzelabschluss AG, netInterest/tax reconstruidos como
 residuales por falta de desglose en la fuente, ver duda abierta en `Admin/dudas-por-club.md`).
 `jahresabschluss-2020-21.md` y `presseinformation-jhv-2022-23.md` quedan sin cargar (prioridad de

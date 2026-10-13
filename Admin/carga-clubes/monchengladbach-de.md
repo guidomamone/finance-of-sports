@@ -1,14 +1,14 @@
 # monchengladbach-de — evidencia de carga
 
-Lo que había como comentario en `data/monchengladbach-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/de/monchengladbach-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/monchengladbach-de-data.js — Borussia VfL 1900 Mönchengladbach GmbH
+data/de/monchengladbach-de-data.js — Borussia VfL 1900 Mönchengladbach GmbH
 (Alemania, Bundesliga). 2 ejercicios REALES (2023, 2024), Jahresabschluss
 INDIVIDUAL (no hay Konzernabschluss separado). Transcripciones en
 Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-<año>.md.

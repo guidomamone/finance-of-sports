@@ -1,14 +1,14 @@
 # stuttgart-de — evidencia de carga
 
-Lo que había como comentario en `data/stuttgart-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/de/stuttgart-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/stuttgart-de-data.js — VfB Stuttgart 1893 AG (Stuttgart, Alemania).
+data/de/stuttgart-de-data.js — VfB Stuttgart 1893 AG (Stuttgart, Alemania).
 Uno de 5 clubes alemanes cargados en paralelo (sesión 2026-09-22) — este
 club tiene la particularidad de cerrar ejercicio CALENDARIO, no
 julio-junio como los otros 4 de la misma ronda.
@@ -232,7 +232,7 @@ cash = III. Kassenbestand und Guthaben bei Kreditinstituten (Konzernbilanz Aktiv
 _note (data/):_
 
 ```text
-Descargado del Unternehmensregister alemán. Auditado por RSM Ebner Stolz GmbH & Co. KG, sin salvedades. Ejercicio CALENDARIO confirmado por el propio título del documento (01.01.2023-31.12.2023). "Handel und Sonstiges" (revenue) mezcla merchandising con venta neta de jugadores sin desglose exacto disponible — ver comentario de cabecera de data/stuttgart-de-data.js. Transcripción completa en Clubes/Alemania/VfB Stuttgart/konzernabschluss-2023.md.
+Descargado del Unternehmensregister alemán. Auditado por RSM Ebner Stolz GmbH & Co. KG, sin salvedades. Ejercicio CALENDARIO confirmado por el propio título del documento (01.01.2023-31.12.2023). "Handel und Sonstiges" (revenue) mezcla merchandising con venta neta de jugadores sin desglose exacto disponible — ver comentario de cabecera de data/de/stuttgart-de-data.js. Transcripción completa en Clubes/Alemania/VfB Stuttgart/konzernabschluss-2023.md.
 ```
 
 ### stuttgart-de-konzernabschluss-2024

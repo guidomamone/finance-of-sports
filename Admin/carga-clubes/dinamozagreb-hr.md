@@ -1,14 +1,14 @@
 # dinamozagreb-hr — evidencia de carga
 
-Lo que había como comentario en `data/dinamozagreb-hr-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/hr/dinamozagreb-hr-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/dinamozagreb-hr-data.js — Građanski nogometni klub Dinamo (Zagreb, Croacia).
+data/hr/dinamozagreb-hr-data.js — Građanski nogometni klub Dinamo (Zagreb, Croacia).
 Primer club croata cargado en el sitio (país nuevo, sesión de onboarding de
 Croacia). clubId 'dinamozagreb-hr' (sufijo de país, convención desde la
 Versión 129).
@@ -186,5 +186,5 @@ novčani ekvivalenti.
 _note (data/):_
 
 ```text
-Balance auditado CONSOLIDADO (GNK Dinamo + Dinamo trade d.o.o. + Plavi korner d.o.o., 100% controladas), preparado según el Pravilnik o licenciranju i financijskoj održivosti klubova de la HNS (Federación Croata de Fútbol). Auditor: Forvis Mazars d.o.o. Dictamen "Mišljenje s rezervom" (opinión con 3 salvedades sobre el EJERCICIO de reconocimiento de ciertas partidas entre 2023/2024, ver comentario de cabecera de data/dinamozagreb-hr-data.js) — no afecta la exactitud del ejercicio 2024 tal cual se carga acá. Transcripción completa en Clubes/Croacia/Dinamo Zagreb/financijsko-izvjesce-2024.md.
+Balance auditado CONSOLIDADO (GNK Dinamo + Dinamo trade d.o.o. + Plavi korner d.o.o., 100% controladas), preparado según el Pravilnik o licenciranju i financijskoj održivosti klubova de la HNS (Federación Croata de Fútbol). Auditor: Forvis Mazars d.o.o. Dictamen "Mišljenje s rezervom" (opinión con 3 salvedades sobre el EJERCICIO de reconocimiento de ciertas partidas entre 2023/2024, ver comentario de cabecera de data/hr/dinamozagreb-hr-data.js) — no afecta la exactitud del ejercicio 2024 tal cual se carga acá. Transcripción completa en Clubes/Croacia/Dinamo Zagreb/financijsko-izvjesce-2024.md.
 ```

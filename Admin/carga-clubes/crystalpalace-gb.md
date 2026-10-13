@@ -1,14 +1,14 @@
 # crystalpalace-gb — evidencia de carga
 
-Lo que había como comentario en `data/crystalpalace-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/crystalpalace-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/crystalpalace-gb-data.js — Crystal Palace (Inglaterra, Premier League), clubId
+data/gb/crystalpalace-gb-data.js — Crystal Palace (Inglaterra, Premier League), clubId
 'crystalpalace-gb'.
 
 Fuente: cuentas CONSOLIDADAS del grupo de CPFC 2010 Limited (Companies House n° 07206409),
@@ -110,7 +110,7 @@ El club sale de la administración en junio de 2010 (día 01 aproximado). Parish
 _note (data/):_
 
 ```text
-Cuentas consolidadas del grupo, auditadas por RSM UK Audit LLP, depositadas en Companies House (Reino Unido). Transcripción completa en Clubes/Inglaterra/Crystal Palace/cpfc2010-group-accounts-2023-24.md. Ver comentario de cabecera de data/crystalpalace-gb-data.js.
+Cuentas consolidadas del grupo, auditadas por RSM UK Audit LLP, depositadas en Companies House (Reino Unido). Transcripción completa en Clubes/Inglaterra/Crystal Palace/cpfc2010-group-accounts-2023-24.md. Ver comentario de cabecera de data/gb/crystalpalace-gb-data.js.
 ```
 
 ### crystalpalace-gb-group-accounts-2025

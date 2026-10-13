@@ -1,14 +1,14 @@
 # brentford-gb — evidencia de carga
 
-Lo que había como comentario en `data/brentford-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/brentford-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/brentford-gb-data.js — Brentford FC Ltd (clubId 'brentford-gb'), Ejercicios 2023/24 (año
+data/gb/brentford-gb-data.js — Brentford FC Ltd (clubId 'brentford-gb'), Ejercicios 2023/24 (año
 ended 30 junio 2024) y 2024/25 (año ended 30 junio 2025).
 
 ENTIDAD LEGAL: "Brentford FC Ltd", Companies House n° 03642327 — cuentas CONSOLIDADAS del grupo
@@ -129,7 +129,7 @@ Benham tomó el control total en junio de 2012 (Bees United votó la transferenc
 _note (data/):_
 
 ```text
-PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Brentford/brentford-group-accounts-2023-24.md. La Nota de intereses pagados imprime un total (£6.020M) que no reconcilia con el resto del documento — se usó £5.020M (suma exacta de sus 2 componentes, y el único valor que hace cerrar Loss before taxation), ver comentario de cabecera de data/brentford-gb-data.js. No se encontró un tipo de cambio GBP/USD propio declarado — fxRef apunta a FX_CLOSE (GBP@2024-06-30).
+PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Brentford/brentford-group-accounts-2023-24.md. La Nota de intereses pagados imprime un total (£6.020M) que no reconcilia con el resto del documento — se usó £5.020M (suma exacta de sus 2 componentes, y el único valor que hace cerrar Loss before taxation), ver comentario de cabecera de data/gb/brentford-gb-data.js. No se encontró un tipo de cambio GBP/USD propio declarado — fxRef apunta a FX_CLOSE (GBP@2024-06-30).
 ```
 
 ### brentford-gb-group-accounts-2025

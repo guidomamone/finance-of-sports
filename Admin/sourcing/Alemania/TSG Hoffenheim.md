@@ -49,7 +49,7 @@ Browser pane sin renderizar, que impedía el click "real" que exige la Sicherhei
 Unternehmensregister) se resolvió al abrir una pestaña nueva del navegador — ver
 `Admin/sourcing/Alemania/_notas-generales.md` sección 1 y 5.
 
-## Carga a `data/hoffenheim-de-data.js` (sesión 2026-09-25)
+## Carga a `data/de/hoffenheim-de-data.js` (sesión 2026-09-25)
 
 Cargados los 2 ejercicios más recientes: 2023/24 (clave 2024) y 2024/25 (clave 2025), los 2
 Konzernabschluss. Color de marca: `#1966A6` (azul, footylogos.com), verificado 2026-09-25.
@@ -57,7 +57,7 @@ Konzernabschluss. Color de marca: `#1966A6` (azul, footylogos.com), verificado 2
 La tabla de GuV de `konzernabschluss-2023-24.md` llegó con las columnas de la Bilanz-Passiva y de la
 Konzern-GuV desalineadas/intercaladas por el proceso de conversión PDF→Markdown — se reconstruyó
 cruzando el Konzernanhang y el Lagebericht (ver comentario de cabecera de
-`data/hoffenheim-de-data.js` para el detalle línea por línea). `konzernabschluss-2024-25.md` llegó
+`data/de/hoffenheim-de-data.js` para el detalle línea por línea). `konzernabschluss-2024-25.md` llegó
 con la tabla perfectamente alineada, y su columna comparativa (2023/24) coincidió EXACTA con la
 reconstrucción hecha a mano — confirma que estaba bien.
 

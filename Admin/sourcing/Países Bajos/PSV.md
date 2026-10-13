@@ -22,7 +22,7 @@ de esa página en esta sesión.
 ## Qué se cargó al sitio (sesión de onboarding de Países Bajos)
 
 **2 ejercicios cargados** (los más recientes de los 9 bajados): 2023/24 y 2024/25, en
-`data/psv-nl-data.js` (`clubId: 'psv-nl'`). Transcripciones completas vía `pdftotext -layout` en
+`data/nl/psv-nl-data.js` (`clubId: 'psv-nl'`). Transcripciones completas vía `pdftotext -layout` en
 `Clubes/Países Bajos/PSV/jaarverslag-2023-24.md` y `jaarverslag-2024-25.md`. Tie-out verificado
 exacto contra los 2 documentos y contra el motor real del sitio (`node tools/audit.js`, sin
 hallazgos de descuadre). A diferencia de Ajax, PSV desglosa el resultado de transferencias en sus 3

@@ -22,7 +22,7 @@
 //     <moneda>-usd.json` de la moneda del país, `tools/club-league-reference/<iso2>.json` y
 //     `data/club-leagues/<iso2>.js` (liga);
 //   - la resolución de la regla carpeta -> club (tools/carpetas-clubes.mjs): si mañana algún
-//     data/<id>-data.js empieza a citar la carpeta, la línea pasa a `existe` sin que nadie lo pida;
+//     data/<país>/<id>-data.js empieza a citar la carpeta, la línea pasa a `existe` sin que nadie lo pida;
 //   - sha1 de tools/alta-club.mjs y tools/alta-claude.mjs: si cambian las reglas, se recalcula todo
 //     (son ~20 s para 200 carpetas, 0 llamadas a API).
 //
@@ -94,7 +94,7 @@ export function resumenAltas() {
   const listos = [];
   for (const e0 of m.values()) {
     // El registro lo escribe alta-club.mjs --todos; un club que se dio de alta por otro camino después (lote.mjs --cargar, bfo-rusia.mjs)
-    // sigue figurando "listo" o "con preguntas" hasta la próxima corrida. Si su data/<id>-data.js ya existe, cuenta como "existe".
+    // sigue figurando "listo" o "con preguntas" hasta la próxima corrida. Si su data/<país>/<id>-data.js ya existe, cuenta como "existe".
     // Caso: el resumen del 2026-10-10 mostraba a Remo y a los 16 rusos como listos para alta.
     const e = e0.clubId && e0.estado !== 'existe' && existsSync(resolve(ROOT, rutaData(e0.clubId))) ? { ...e0, estado: 'existe' } : e0;
     porEstado[e.estado] = (porEstado[e.estado] || 0) + 1;

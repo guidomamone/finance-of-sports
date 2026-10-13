@@ -1,14 +1,14 @@
 # amazonas-br — evidencia de carga
 
-Lo que había como comentario en `data/amazonas-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/amazonas-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/amazonas-br-data.js — Amazonas FC, Manaus, Brasil (CNPJ 34.639.980/0001-99).
+data/br/amazonas-br-data.js — Amazonas FC, Manaus, Brasil (CNPJ 34.639.980/0001-99).
 clubId 'amazonas-br' (CON GUIÓN, bracket notation en clubs{}/CLUB_GENERIC_DATA/
 gestionesByClub/memberCountByClub, mismo criterio que el resto de los clubes de Brasil).
 

@@ -34,7 +34,7 @@
 //                    sumando rompe la suma, así que ese sumando queda sin respaldo. Es la misma idea que filasSuma() de
 //                    tools/filas-rubro.mjs, pero con tolerancia de redondeo en vez del 0,05% de allá (con 0,05%, en 1.000.000 se
 //                    toleran 500 unidades: un 3 leído como 8 en las centenas pasaba como "cierra").
-//   3. produccion  : si el club-año N-1 está cargado en el sitio (data/<club>-data.js, cargado con vm como hace
+//   3. produccion  : si el club-año N-1 está cargado en el sitio (data/<país>/<club>-data.js, cargado con vm como hace
 //                    tools/proponer-carga.mjs), una celda que coincide EXACTO (a la precisión impresa, probando escala en
 //                    unidades / miles / millones) con un amountNative o un total oficial de N-1 queda respaldada: es la columna
 //                    comparativa del año anterior.

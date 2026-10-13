@@ -38,7 +38,7 @@
   `futebolpaulista.com.br/Repositorio/Institucional/<año>/Palmeiras.pdf` (mirror de la federación,
   confirmado igual para 2024).
 - **Cargado al sitio (sesión 2026-09-24)**: 2 ejercicios, `clubId` `palmeiras-br`, en
-  `data/palmeiras-br-data.js` — 2024 (de `demonstracoes-financeiras-2023-2024.pdf`, superávit real de
+  `data/br/palmeiras-br-data.js` — 2024 (de `demonstracoes-financeiras-2023-2024.pdf`, superávit real de
   R$198.183 mil, año de venta grande de jugadores: Endrick al Real Madrid, Luis Guilherme al West
   Ham) y 2025 (de `demonstracoes-financeiras-2024-2025.pdf`, superávit récord de R$292.395 mil,
   impulsado por vice-campeonato del Brasileirão/Libertadores y la primera Copa do Mundo de Clubes

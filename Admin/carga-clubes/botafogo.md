@@ -1,14 +1,14 @@
 # botafogo — evidencia de carga
 
-Lo que había como comentario en `data/botafogo-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/botafogo-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/botafogo-data.js — Botafogo Sociedade Anônima do Futebol (SAF), Rio de Janeiro, Brasil.
+data/br/botafogo-data.js — Botafogo Sociedade Anônima do Futebol (SAF), Rio de Janeiro, Brasil.
 El club tiene DOS entidades reales: la SAF (Botafogo Futebol S.A., el negocio de fútbol
 profesional, convertida en 2022) y a associação "Botafogo de Futebol e Regatas" (club social sin
 fines de lucro, entidad separada). Se cargó la SAF (ver Admin/sourcing/Brasil/_notas-generales.md y

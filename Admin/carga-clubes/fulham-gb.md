@@ -1,14 +1,14 @@
 # fulham-gb — evidencia de carga
 
-Lo que había como comentario en `data/fulham-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/fulham-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/fulham-gb-data.js — Fulham (Inglaterra, Premier League), clubId 'fulham-gb'.
+data/gb/fulham-gb-data.js — Fulham (Inglaterra, Premier League), clubId 'fulham-gb'.
 
 Fuente: "Full accounts" (NO group accounts) de Fulham Football Club Limited (Companies House n°
 02114486), auditadas, depositadas en Companies House UK. 2 ejercicios, ambos cerrados el 30 de
@@ -89,7 +89,7 @@ Ejercicio 2024. Fuente: Note 3 + Note 4 + Note 9. Suma = -251.022 = officialTota
 _note (data/):_
 
 ```text
-Cuentas de la sociedad individual (no consolida, no tiene subsidiarias), depositadas en Companies House (Reino Unido). El CAPEX y financiamiento del Riverside Stand viven en Fulham Stadium Limited, compañía hermana no incluida acá. Transcripción completa en Clubes/Inglaterra/Fulham/fulham-full-accounts-2023-24.md. Ver comentario de cabecera de data/fulham-gb-data.js.
+Cuentas de la sociedad individual (no consolida, no tiene subsidiarias), depositadas en Companies House (Reino Unido). El CAPEX y financiamiento del Riverside Stand viven en Fulham Stadium Limited, compañía hermana no incluida acá. Transcripción completa en Clubes/Inglaterra/Fulham/fulham-full-accounts-2023-24.md. Ver comentario de cabecera de data/gb/fulham-gb-data.js.
 ```
 
 ### fulham-gb-full-accounts-2025

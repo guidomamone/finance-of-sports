@@ -1,14 +1,14 @@
 # fredericia-dk — evidencia de carga
 
-Lo que había como comentario en `data/fredericia-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/dk/fredericia-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/fredericia-dk-data.js — Fodbold Club Fredericia 1991 ApS (Dinamarca),
+data/dk/fredericia-dk-data.js — Fodbold Club Fredericia 1991 ApS (Dinamarca),
 clubId 'fredericia-dk'. Uno de 3 clubes belgas + 1 danés cargados en esta
 sesión (2da tanda de onboarding, 20 transcripts más, 4 clubes totalmente
 nuevos).
@@ -24,7 +24,7 @@ archivo asignado (`aarsrapport-2024-12-31.md`):
   sociedades chicas, que protege el detalle comercial pero le impide a
   este sitio separar Revenue real de Cost of Sales/gastos externos ya
   netos entre sí. MISMO CRITERIO YA ESTABLECIDO en
-  `data/midtjylland-dk-data.js` (ver su comentario de cabecera): ante este
+  `data/dk/midtjylland-dk-data.js` (ver su comentario de cabecera): ante este
   problema, se elige un ejercicio distinto del mismo club que SÍ desglose
   Nettoomsætning, en vez de forzar "Bruttofortjeneste" como si fuera
   Revenue bruto (lo que subestimaría Revenue Y Gastos por igual, ocultando
@@ -173,5 +173,5 @@ Rahbek es formand desde hace "32 años" a 2025 (~1993): el inicio es aproximado;
 _note (data/):_
 
 ```text
-Depositado en Erhvervsstyrelsen (registro mercantil danés). Auditor: PricewaterhouseCoopers, sin salvedades. Transcripción completa en Clubes/Dinamarca/FC Fredericia/aarsrapport-2019-12-31.md. Se eligió este ejercicio (no el 2024 originalmente sugerido) porque los ejercicios 2020 en adelante reportan desde "Bruttofortjeneste" sin desglosar Nettoomsætning — ver comentario de cabecera de data/fredericia-dk-data.js. El club jugó en la 1. Division (2da categoría danesa, "Nordic Bet Ligaen" ese año), no en Superliga; recién ascendió a Superliga para la temporada 2025/26. Patrimonio neto negativo al cierre, con nota de going concern resuelta con un préstamo subordinado de DKK 2,0 M recibido en el propio ejercicio.
+Depositado en Erhvervsstyrelsen (registro mercantil danés). Auditor: PricewaterhouseCoopers, sin salvedades. Transcripción completa en Clubes/Dinamarca/FC Fredericia/aarsrapport-2019-12-31.md. Se eligió este ejercicio (no el 2024 originalmente sugerido) porque los ejercicios 2020 en adelante reportan desde "Bruttofortjeneste" sin desglosar Nettoomsætning — ver comentario de cabecera de data/dk/fredericia-dk-data.js. El club jugó en la 1. Division (2da categoría danesa, "Nordic Bet Ligaen" ese año), no en Superliga; recién ascendió a Superliga para la temporada 2025/26. Patrimonio neto negativo al cierre, con nota de going concern resuelta con un préstamo subordinado de DKK 2,0 M recibido en el propio ejercicio.
 ```

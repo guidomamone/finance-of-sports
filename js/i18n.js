@@ -7,7 +7,7 @@
 //     1. crear `data/lang/<code>.js` con el mismo patrón que `data/lang/en.js` (un objeto plano clave -> texto traducido);
 //     2. agregar una entrada en `LANGS` de `data/lang/langs.js`.
 //   El archivo del idioma se inyecta por convención (`data/lang/<code>.js`), igual que loadClubData() con
-//   `data/<clubId>-data.js`. No hay ningún mapa de rutas a mano que mantener.
+//   `data/<país>/<clubId>-data.js`. No hay ningún mapa de rutas a mano que mantener.
 //
 //   El CASTELLANO NO TIENE ARCHIVO DE DICCIONARIO, a propósito. El HTML ya está escrito en castellano, así que `apply()` guarda
 //   el texto original de cada elemento la primera vez que corre y lo usa como valor "es". Consecuencias:

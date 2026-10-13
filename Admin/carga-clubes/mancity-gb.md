@@ -1,14 +1,14 @@
 # mancity-gb — evidencia de carga
 
-Lo que había como comentario en `data/mancity-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/mancity-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/mancity-gb-data.js — Manchester City. Companies House n.° 00040946.
+data/gb/mancity-gb-data.js — Manchester City. Companies House n.° 00040946.
 
 OJO, LA SALVEDAD MÁS IMPORTANTE DE ESTE CLUB: a diferencia de los otros clubes ingleses ya
 sourceados (Arsenal, Liverpool, etc.), estas cuentas NO son consolidadas. Son las de la
@@ -202,7 +202,7 @@ PDF de 39 páginas depositado en Companies House ("Full accounts"), mismo format
 
 ```text
 mancityGbPresupuestoOverlayByYear: sin presupuesto oficial cargado (solo hay balances
-auditados), vacío por ahora, mismo mecanismo que el resto de los clubes (ver data/river-data.js).
+auditados), vacío por ahora, mismo mecanismo que el resto de los clubes (ver data/ar/river-data.js).
 ```
 
 ### mancityGbPasesData

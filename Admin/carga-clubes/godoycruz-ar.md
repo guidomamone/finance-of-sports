@@ -1,14 +1,14 @@
 # godoycruz-ar — evidencia de carga
 
-Lo que había como comentario en `data/godoycruz-ar-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ar/godoycruz-ar-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/godoycruz-ar-data.js — Club Deportivo Godoy Cruz Antonio Tomba (Mendoza,
+data/ar/godoycruz-ar-data.js — Club Deportivo Godoy Cruz Antonio Tomba (Mendoza,
 Asociación Civil). Club nuevo, primer ejercicio cargado: 2019/2020 (Ejercicio
 N° 72, 1°/7/2019 al 30/6/2020), balance real (Estados Contables auditados).
 

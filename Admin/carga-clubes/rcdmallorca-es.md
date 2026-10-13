@@ -1,14 +1,14 @@
 # rcdmallorca-es — evidencia de carga
 
-Lo que había como comentario en `data/rcdmallorca-es-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/es/rcdmallorca-es-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/rcdmallorca-es-data.js — Real Club Deportivo Mallorca, S.A.D. Ejercicio
+data/es/rcdmallorca-es-data.js — Real Club Deportivo Mallorca, S.A.D. Ejercicio
 2024/2025 (1/7/2024 a 30/6/2025), único ejercicio cargado.
 
 Fuente: "Cuentas Anuales e Informe de Gestión, Temporada 2024-25"
@@ -172,7 +172,7 @@ Kohlberg: designado por el consejo el 8/9/2017; accionista mayoritario desde que
 _note (data/):_
 
 ```text
-PDF oficial (75 págs.), escaneo con ruido de OCR en la transcripción — la Cuenta de Pérdidas y Ganancias venía con las etiquetas de fila separadas de sus columnas de números (ver comentario de cabecera de data/rcdmallorca-es-data.js). Un dígito de "Importe neto de la cifra de negocios" se corrigió cruzando contra la Nota 31.1 (mejor calidad de OCR, misma tabla repetida). Bajado de rcdmallorca.es/en/ley-de-transparencia, host statics-maker.llt-services.com/mll/. Transcripción completa en Clubes/España/RCD Mallorca/cuentas-anuales-informe-gestion-2024-2025.md.
+PDF oficial (75 págs.), escaneo con ruido de OCR en la transcripción — la Cuenta de Pérdidas y Ganancias venía con las etiquetas de fila separadas de sus columnas de números (ver comentario de cabecera de data/es/rcdmallorca-es-data.js). Un dígito de "Importe neto de la cifra de negocios" se corrigió cruzando contra la Nota 31.1 (mejor calidad de OCR, misma tabla repetida). Bajado de rcdmallorca.es/en/ley-de-transparencia, host statics-maker.llt-services.com/mll/. Transcripción completa en Clubes/España/RCD Mallorca/cuentas-anuales-informe-gestion-2024-2025.md.
 ```
 
 ## Otros

@@ -15,16 +15,19 @@ Para las reglas vigentes de UI/datos, ver `Admin/CONVENCIONES.md`.
 ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
 - index.html: HTML y el <script> principal con toda la lógica de render. Desde
   la Versión 102, TODOS los datos de club (Boca incluida) viven en su propio
-  data/<club>-data.js, ninguno inline acá. Desde la Versión 238, el CSS tampoco
+  data/<país>/<club>-data.js, ninguno inline acá. Desde la Versión 238, el CSS tampoco
   vive acá: está en js/styles.css, referenciado con un <link> que lleva el
   mismo `?v=` que los <script src> propios.
+- data/<país>/<clubId>-data.js: un archivo por club, en la carpeta de su país (código ISO de `clubs[clubId].country` en
+  minúscula, igual que `data/club-leagues/` y `data/gestiones/`). El sitio arma la ruta en `loadClubData()`; las tools, SOLO con
+  `tools/data-clubes.js` (`rutaData(clubId)`, `archivosData()`, `idDeArchivo()`): ninguna tool arma esa ruta a mano.
 - ASSET_V (`window.ASSET_V`, declarado en un `<script>` inline en index.html
   justo antes de los `<script src>` propios, Versión 115): la versión de los
   assets propios, para invalidar el caché del navegador en cada deploy. Los
   `?v=` de los `<script src>` ESTÁTICOS (los de index.html y los que arma
   `tools/generate-fuentes-page.js`) son LITERALES, no leen la constante — hay
   que cambiar el número Y cada tag a mano. Solo 2 cargadores DINÁMICOS la leen
-  de verdad: `loadClubData()` (el `data/<club>-data.js` que se inyecta al
+  de verdad: `loadClubData()` (el `data/<país>/<club>-data.js` que se inyecta al
   elegir un club) e `I18N.load()` (el `data/lang/<code>.js` del idioma
   elegido). Cambiar uno de los dos lugares sin el otro es PEOR que no cambiar
   ninguno: el navegador termina mezclando un archivo nuevo con otros viejos
@@ -70,7 +73,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   (siempre (liga, ejercicio), nunca (liga) sola), precalculado por
   tools/generate-rankings.js con el motor real (`computeYearGeneric()` +
   `simplifiedReportForClub()`, nunca reimplementado) para no tener que bajar
-  los data/<club>-data.js de toda una liga en vivo. Un archivo por liga
+  los data/<país>/<club>-data.js de toda una liga en vivo. Un archivo por liga
   (Versión 182), 1-3,4 KB gzip cada uno. Alimenta la pestaña Ligas
   (js/liga.js) y los rankings curados de Inicio (data/destacados.js).
   `node tools/generate-rankings.js --check` avisa si quedó viejo (y
@@ -83,7 +86,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   tenga su data/rankings/<liga>.js correspondiente (`destacado-sin-ranking`,
   P1), para que un club borrado o una membresía que cambia no deje un
   ranking de 1 en la portada sin avisar.
-- data/river-data.js, data/racing-data.js: datos de esos dos clubes
+- data/ar/river-data.js, data/ar/racing-data.js: datos de esos dos clubes
   (ingresos/gastos por línea, mercado de pases, resultados deportivos,
   títulos), cada uno con comentarios explicando qué es real y qué es
   placeholder.
@@ -99,7 +102,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   reimplementa nunca por afuera. Se alimenta solo de `clubs.js` +
   `club-index.js` + `leagues.js` + `club-leagues/<iso2>.js` (estos últimos lazy,
   se bajan al abrir el modal): dibuja todos los clubes cargados (161 al
-  2026-09-26) sin bajar un solo `data/<club>-data.js`, y recién baja los que
+  2026-09-26) sin bajar un solo `data/<país>/<club>-data.js`, y recién baja los que
   hagan falta al apretar "Comparar". La explicación larga del modelo está en
   `Admin/Archive/selector-merge-a-produccion.md`, secciones 0, 3 y 5.
   `js/comparar-clubes.js` (la bandeja de chips de la Versión 137) ya no existe:
@@ -109,7 +112,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   liga" sola), con su propio selector de ejercicio. El default NO es el año
   más reciente sino el que tiene MÁS clubes cargados, porque los balances
   tardan en publicarse y el ejercicio más nuevo es siempre el más flaco. Lee
-  data/rankings/<liga>.js directo, no baja ningún data/<club>-data.js. Barras
+  data/rankings/<liga>.js directo, no baja ningún data/<país>/<club>-data.js. Barras
   de un solo color y no apiladas (decisión de Guido, 2026-09-22: buena parte
   de cada barra sería "sin desglosar por la fuente", y algunos clubes reportan
   un segmento NEGATIVO), orden ascendente en el gráfico y descendente (por
@@ -195,7 +198,7 @@ MODELO DE DATOS: UN SOLO MOTOR GENÉRICO PARA TODOS LOS CLUBES (desde la Versió
 - CÁLCULO: TODOS los clubes, Boca incluida, pasan por computeYearGeneric(clubId,
   year) (buscar "MULTI-CLUB" en el <script>), sobre listas de líneas {rawLabel,
   normalizedCategory, amountNative, disclosureLevel} (revenueLinesByYear/
-  expenseLinesByYear, ver data/<club>-data.js), porque cada club reporta una
+  expenseLinesByYear, ver data/<país>/<club>-data.js), porque cada club reporta una
   cantidad distinta de rubros reales. Boca ya NO tiene un yearsRaw{}/computeYear()
   propio (migración completa: ver la evidencia en Admin/carga-clubes/boca.md para
   el detalle de cómo se reconcilió su balance 2025, que hasta esa migración vivía
@@ -243,7 +246,7 @@ MODELO DE DATOS: UN SOLO MOTOR GENÉRICO PARA TODOS LOS CLUBES (desde la Versió
   conocido de cada club-ejercicio. Un solo loop itera `window.CLUB_GENERIC_DATA`
   leyendo officialTotalRevenue/officialTotalExpenses/officialPAT de cada
   `fiscalYearMeta[year]` — agregar un club o ejercicio nuevo con total conocido
-  significa sumar esos 3 campos en su propio data/<club>-data.js, no tocar esta
+  significa sumar esos 3 campos en su propio data/<país>/<club>-data.js, no tocar esta
   función.
 
 
@@ -311,8 +314,8 @@ Hasta que `index.html` se separó en archivos por club, todos los datos vivían 
 Boca. Lo que sigue es la estructura VIGENTE desde el día uno para cualquier club nuevo, no una
 limpieza de una sola vez:
 
-- **Datos del club, en su propio `data/<club>-data.js`.** Mismo patrón que ya tienen
-  `data/river-data.js`/`data/racing-data.js`/`data/boca-data.js`: `<club>RevenueLinesByYear`,
+- **Datos del club, en su propio `data/<país>/<club>-data.js`.** Mismo patrón que ya tienen
+  `data/ar/river-data.js`/`data/ar/racing-data.js`/`data/ar/boca-data.js`: `<club>RevenueLinesByYear`,
   `<club>ExpenseLinesByYear`, `<club>FiscalYearMeta`, `<club>PasesData`, `<club>ResultadosData`,
   `<club>TitulosData`. NUNCA pegues los datos de un club nuevo inline en el `<script>` de
   index.html, ni en `js/finanzas-calc.js`/`js/finanzas-render.js` (esos dos archivos son solo
@@ -348,7 +351,7 @@ limpieza de una sola vez:
   está en `club-data-mapping` sección 1 y `club-data-mapping/referencia/formato-simplificado.md`. Y si vas a tocar la fusión de abonos, el
   interruptor es `ABONOS_DENTRO_DE_ESTADIO` en `js/finanzas-calc.js`, no los datos.
 - **Lazy-loading: sumar el club a la carga bajo demanda, NUNCA al `<head>` fijo.** El archivo
-  `data/<club>-data.js` NO va en la lista de `<script src>` del `<head>` de index.html (esa lista
+  `data/<país>/<club>-data.js` NO va en la lista de `<script src>` del `<head>` de index.html (esa lista
   solo tiene `clubs.js`/`category-map.js`/`boca-data.js`/`js/finanzas-calc.js`/
   `js/finanzas-render.js`, porque Boca es el club default). En cambio:
   1. Nada que tocar en index.html para esto: `loadClubData(clubId)` construye el path directo,
@@ -373,7 +376,7 @@ limpieza de una sola vez:
 
      **`brandColor`**: el procedimiento para un club nuevo está en `.claude/skills/club-or-year-onboarding/club-nuevo.md` (sección "Color de marca").
   1c. `sources{}`/`gestionesByClub{}`/`memberCountByClub{}` NO se tocan en `data/clubs.js` — se
-     autoregistran al final de tu propio `data/<club>-data.js`, mismo momento que el registro en
+     autoregistran al final de tu propio `data/<país>/<club>-data.js`, mismo momento que el registro en
      `CLUB_GENERIC_DATA` (punto 2 de abajo), copiando el patrón de cualquier club ya cargado como
      plantilla:
      ```js
@@ -398,7 +401,7 @@ limpieza de una sola vez:
      directamente.
   2. `pasesDataForClub`/`resultadosDataForClub`/`titulosDataForClub` (index.html) NO necesitan
      ningún cambio manual: leen `CLUB_GENERIC_DATA[clubId].pasesData` (etc.) directo, y tu
-     `data/<club>-data.js` ya se autorregistra ahí (`window.CLUB_GENERIC_DATA.<club> = {...}`, ver
+     `data/<país>/<club>-data.js` ya se autorregistra ahí (`window.CLUB_GENERIC_DATA.<club> = {...}`, ver
      el final de cualquier archivo de club ya cargado como plantilla) — con eso alcanza.
   3. `verifyTieOuts()` tampoco necesita ningún cambio manual: itera solo
      `Object.keys(window.CLUB_GENERIC_DATA)`, así que agregar tu club a ese registro (punto 2) ya
@@ -409,7 +412,7 @@ limpieza de una sola vez:
      ese 3er campo, ese año simplemente no suma el check de Resultado neto, mismo criterio que un
      presupuesto sin balance (ver Racing 2019/2026/2027 como ejemplo).
   4. Si el club nuevo pasa a ser el DEFAULT en vez de Boca (poco probable, pero por si acaso): recién
-     ahí su `data/<club>-data.js` sí va al `<head>` como `<script src>` fijo, sacándolo de
+     ahí su `data/<país>/<club>-data.js` sí va al `<head>` como `<script src>` fijo, sacándolo de
      `CLUB_DATA_SCRIPT_SRC`, mismo criterio que hoy tiene Boca.
 - **Nunca armes un objeto `{ river: X, racing: Y, <club>: Z }` de una sola vez para indexarlo
   después por `clubId`.** Un objeto así evalúa TODAS sus propiedades al crearse — con lazy-loading,
@@ -422,7 +425,7 @@ limpieza de una sola vez:
   encontrás un objeto de este tipo en el código (buscá `river:` seguido de `racing:` en la misma
   línea/bloque), convertilo ANTES de sumarle una tercera rama, no repliques el patrón viejo.
 - **Verificación obligatoria en el navegador, no alcanza con que el código "se vea bien":** con
-  Network abierto, cargar la página de cero y confirmar que `data/<club>-data.js` NO aparece en la
+  Network abierto, cargar la página de cero y confirmar que `data/<país>/<club>-data.js` NO aparece en la
   lista (solo `clubs.js`/`category-map.js`/`boca-data.js`/los 2 `js/finanzas-*.js`); elegir el club
   nuevo y confirmar que ahí SÍ aparece un único GET 200; volver a Boca y de nuevo al club nuevo, y
   confirmar que esta vez NO se vuelve a pedir (debe quedar cacheado en `clubDataLoaded`). Un
@@ -503,7 +506,7 @@ afectado. Ese overlay de prueba nunca se guardó en ningún archivo, era solo en
 
 Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA.md`.
 
-- CONVENCIÓN DE ARCHIVOS: un club = un `data/<clubId>-data.js`, cargado bajo
+- CONVENCIÓN DE ARCHIVOS: un club = un `data/<país>/<clubId>-data.js`, cargado bajo
   demanda por `loadClubData(clubId)` armando el path por convención. Onboardear un
   club NO requiere tocar `index.html`: alcanza con el `data/*.js` nuevo y su
   entrada en `data/clubs.js`, más correr `node tools/generate-club-index.js`.
@@ -568,7 +571,7 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   GENERADO, con lo que hay que mostrar de un club ANTES de entrar a él (nombre,
   país, calidad del dato, cuántos ejercicios, el más reciente, y desde la Versión
   146 `yrs`: la LISTA de ejercicios con el reportType de cada uno). Existe porque
-  eso vive adentro de `data/<club>-data.js`, que es justamente lo que no se carga
+  eso vive adentro de `data/<país>/<club>-data.js`, que es justamente lo que no se carga
   hasta que el visitante elige ese club: con la página recién abierta, `clubs{}`
   tiene 92 entradas y `sources{}` tiene 3, todas de Boca. Son ~10 KB para los 92
   clubes (`data/club-index.js`) contra los ~25,8 KB de `clubs.js` completo (~420
@@ -607,7 +610,7 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   `catch-all dominante` (P2) que había quedado sin revisar tras onboardear los 20 clubes de la
   Versión 201 (varios alemanes con "Sonstige betriebliche Aufwendungen" sin partir, y 2 españoles con
   "Ingresos accesorios y otros de gestión corriente" sin partir) se verificaron uno por uno contra el
-  comentario de cabecera de cada `data/<club>-data.js` — no es un error de carga, es el techo real de
+  comentario de cabecera de cada `data/<país>/<club>-data.js` — no es un error de carga, es el techo real de
   lo que declara cada balance — y quedaron silenciados. El P1 `fuentes-indice-desfasado` de esa misma
   corrida (13 clubes que el generador no podía clasificar solo) se resolvió con `OVERRIDES` en
   `tools/generate-fuentes-index.js`. Desde la Versión 125 audita además la

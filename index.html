@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="site.title">El deporte en Números | Datos para votar informado</title>
-<link rel="stylesheet" href="js/styles.css?v=823">
+<link rel="stylesheet" href="js/styles.css?v=824">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -61,7 +61,7 @@
 <!-- ===================== EL SELECTOR DE CLUB =====================
      Un modal con los pasos apilados: Deporte › Región › País › Clubes › Ejercicio, una pregunta por vez, y el buscador arriba
      como atajo para el que ya sabe qué club quiere. TODO el contenido lo genera js/selector.js desde `clubs{}` + `CLUB_INDEX` +
-     `data/leagues.js` + `data/club-leagues.js`; NO se baja ningún `data/<club>-data.js` para dibujarlo. -->
+     `data/leagues.js` + `data/club-leagues.js`; NO se baja ningún `data/<país>/<club>-data.js` para dibujarlo. -->
 <div class="sel-backdrop" id="clubBackdrop"></div>
 <div class="sel-modal" id="clubPanel" role="dialog" aria-modal="true" data-i18n-aria-label="selector.aria" aria-label="Elegir club">
   <div class="modal-panel">
@@ -88,7 +88,7 @@
 <main>
 
   <!-- EL AVISO DE "NO SE PUDO CARGAR EL CLUB" VIVE ACÁ, ARRIBA DE LAS SECCIONES, Y NO ADENTRO DE UNA: selectClub() lo destapa
-       cuando el data/<club>-data.js de un club no se puede bajar, y adentro de una sección escondida (el visitante cambia de club
+       cuando el data/<país>/<club>-data.js de un club no se puede bajar, y adentro de una sección escondida (el visitante cambia de club
        parado en otra pestaña) quedaba invisible. Acá, adentro de <main> y afuera de toda <section>, se ve pase lo que pase. -->
   <p class="aviso-error" id="clubLoadError" hidden></p>
 
@@ -155,7 +155,7 @@
   </section>
 
   <!-- LIGAS: el ranking de ingresos de los clubes de una liga en UN ejercicio. Lo llena entero js/liga.js desde
-       `data/rankings/<liga>.js` (precalculado): esta vista NO baja ningún data/<club>-data.js. NO necesita club activo, así que está
+       `data/rankings/<liga>.js` (precalculado): esta vista NO baja ningún data/<país>/<club>-data.js. NO necesita club activo, así que está
        en TABS_SIN_CLUB y su botón del nav se ve siempre. -->
   <section id="liga">
     <h1 data-i18n="liga.title">Ligas</h1>
@@ -663,41 +663,41 @@
 <!-- ASSET_V: versión de los assets propios, para invalidar el cache del navegador en cada deploy (si no, un visitante se queda
      con un js/*.js viejo mientras el HTML es nuevo). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o `data/`. Lo leen
      también los cargadores dinámicos (loadClubData, I18N.load, loadRanking). -->
-<script>window.ASSET_V = '823';</script>
-<script src="data/lang/langs.js?v=823"></script>
-<script src="js/i18n.js?v=823"></script>
-<script src="data/clubs.js?v=823"></script>
+<script>window.ASSET_V = '824';</script>
+<script src="data/lang/langs.js?v=824"></script>
+<script src="js/i18n.js?v=824"></script>
+<script src="data/clubs.js?v=824"></script>
 <!-- data/club-index.js: el índice liviano de TODOS los clubes (nombre, país, calidad del dato, ejercicios), GENERADO por
-     tools/generate-club-index.js. Lo que hay que mostrar de un club ANTES de entrar a él vive adentro de data/<club>-data.js, que
+     tools/generate-club-index.js. Lo que hay que mostrar de un club ANTES de entrar a él vive adentro de data/<país>/<club>-data.js, que
      no se carga hasta que el visitante lo elige. -->
-<script src="data/club-index.js?v=823"></script>
+<script src="data/club-index.js?v=824"></script>
 <!-- data/leagues.js: el CATÁLOGO de la taxonomía del selector (deportes, regiones, países, ligas). NO tiene membresía: qué club
      jugó en qué liga es (club, ejercicio) y vive en data/club-leagues.js. Ver la cabecera de data/leagues.js ("no existe ninguna
      arista club → liga sin año"). -->
-<script src="data/leagues.js?v=823"></script>
-<script src="data/club-leagues.js?v=823"></script>
-<script src="data/category-map.js?v=823"></script>
-<script src="data/site-labels.js?v=823"></script>
-<script src="data/currency-map.js?v=823"></script>
-<script src="data/sources-view.js?v=823"></script>
+<script src="data/leagues.js?v=824"></script>
+<script src="data/club-leagues.js?v=824"></script>
+<script src="data/category-map.js?v=824"></script>
+<script src="data/site-labels.js?v=824"></script>
+<script src="data/currency-map.js?v=824"></script>
+<script src="data/sources-view.js?v=824"></script>
 <!-- Ningún data file de club se carga acá: el sitio abre en la portada sin club, y CUALQUIER club entra por loadClubData() cuando
      el visitante lo elige. -->
-<script src="js/info-tip.js?v=823"></script>
-<script src="data/deflactores.js?v=823"></script>
-<script src="js/finanzas-calc.js?v=823"></script>
-<script src="js/finanzas-render.js?v=823"></script>
-<script src="js/finanzas-anios.js?v=823"></script>
-<script src="js/finanzas-multi.js?v=823"></script>
+<script src="js/info-tip.js?v=824"></script>
+<script src="data/deflactores.js?v=824"></script>
+<script src="js/finanzas-calc.js?v=824"></script>
+<script src="js/finanzas-render.js?v=824"></script>
+<script src="js/finanzas-anios.js?v=824"></script>
+<script src="js/finanzas-multi.js?v=824"></script>
 <!-- js/selector.js: el selector de club. Se alimenta solo de clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja todos
-     los clubes sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=823"></script>
-<script src="data/destacados.js?v=823"></script>
-<script src="js/liga.js?v=823"></script>
+     los clubes sin bajar un solo data/<país>/<club>-data.js. -->
+<script src="js/selector.js?v=824"></script>
+<script src="data/destacados.js?v=824"></script>
+<script src="js/liga.js?v=824"></script>
 <!-- js/cuenta.js: login con Google vía Supabase + guardado automático de búsquedas. No sabe cómo se renderiza el resto del sitio:
      recibe `reopen` por CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=823"></script>
+<script src="js/cuenta.js?v=824"></script>
 <script>
-  // `window.CLUB_GENERIC_DATA` solo lo crean los data/<club>-data.js, que se cargan bajo demanda. Se crea acá, antes que nada: una
+  // `window.CLUB_GENERIC_DATA` solo lo crean los data/<país>/<club>-data.js, que se cargan bajo demanda. Se crea acá, antes que nada: una
   // referencia SIN `window.` a un global nunca declarado tira ReferenceError y corta el resto del INIT.
   window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
 
@@ -713,8 +713,9 @@
 
   // ---------- CARGA BAJO DEMANDA DE DATOS POR CLUB ----------
   // Todo club se inyecta como <script> recién cuando el visitante lo elige; `clubDataLoaded` cachea qué ya se bajó.
-  // CONVENCIÓN: el archivo de CUALQUIER club es SIEMPRE `data/<clubId>-data.js`, sin registro que mantener. Si alguna vez un club
-  // necesita otro nombre, va una entrada en CLUB_DATA_SCRIPT_OVERRIDE, no un mapa completo.
+  // CONVENCIÓN: el archivo de CUALQUIER club es SIEMPRE `data/<país>/<clubId>-data.js` (país = `clubs[clubId].country` en minúscula),
+  // sin registro que mantener; las tools arman la misma ruta en tools/data-clubes.js. Si alguna vez un club necesita otro nombre, va una
+  // entrada en CLUB_DATA_SCRIPT_OVERRIDE, no un mapa completo.
   const CLUB_DATA_SCRIPT_OVERRIDE = {};
   // Arranca vacío: ningún data file de club entra eager.
   const clubDataLoaded = {};
@@ -727,7 +728,7 @@
     if(clubDataPending[clubId]) return clubDataPending[clubId];
     // `?v=`: mismo ASSET_V que los <script src> estáticos. Sin esto, un visitante con un data file viejo cacheado seguiría viendo
     // números viejos después de un deploy que los corrigió.
-    const base = CLUB_DATA_SCRIPT_OVERRIDE[clubId] || ('data/' + clubId + '-data.js');
+    const base = CLUB_DATA_SCRIPT_OVERRIDE[clubId] || ('data/' + clubs[clubId].country.toLowerCase() + '/' + clubId + '-data.js');
     const src = base + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
     clubDataPending[clubId] = new Promise((resolve, reject) => {
       const script = document.createElement('script');
@@ -1279,7 +1280,7 @@
     // toque datos. El tamaño de tanda es un TECHO (el navegador ya limita a ~6 conexiones por origen): sirve para no inyectar miles
     // de <script> de una. `allSettled` Y NO `all`: el primer club que falla no aborta la tanda, y `failedToLoad` conserva un orden
     // determinista.
-    // OJO SI ALGÚN DÍA UN data/<club>-data.js LOGUEA ALGO: hoy ninguno lo hace y las verificaciones corren DESPUÉS de toda la carga,
+    // OJO SI ALGÚN DÍA UN data/<país>/<club>-data.js LOGUEA ALGO: hoy ninguno lo hace y las verificaciones corren DESPUÉS de toda la carga,
     // así que cargar en paralelo no entremezcla mensajes. Un data file que loguee tendría que prefijar su propio id.
     const TANDA = 25;
     for(let i = 0; i < ids.length; i += TANDA){

@@ -1,14 +1,14 @@
 # celtavigo — evidencia de carga
 
-Lo que había como comentario en `data/celtavigo-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/es/celtavigo-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/celtavigo-data.js — Real Club Celta de Vigo, S.A.D., Ejercicio 2024/2025 (1/7/2024 a 30/6/2025).
+data/es/celtavigo-data.js — Real Club Celta de Vigo, S.A.D., Ejercicio 2024/2025 (1/7/2024 a 30/6/2025).
 
 Un solo ejercicio (alcance de esta sesión: sumar clubes, no profundizar años; el club tenía 4
 ejercicios reales con huecos, ver Admin/sourcing/España/Celta de Vigo.md — se eligió el más reciente).
@@ -20,7 +20,7 @@ cuentas-anuales-individual-2024-2025-cuenta-resultados.md (misma carpeta). Texto
 Cifras en EUR MILLONES nativos (documento en euros completos, dividido por 1.000.000 al cargar).
 Tipo de cambio EUR/USD 1,172 al 30/6/2025. `fx` en fiscalYearMeta va INVERTIDO (0,8532 =
 1/1,172, EUR por 1 USD, mismo sentido que ARS/COP/BRL/MXN/JPY en el resto del sitio) — ver
-comentario de cabecera de data/realmadrid-data.js para el detalle completo.
+comentario de cabecera de data/es/realmadrid-data.js para el detalle completo.
 
 Categorización de Ingresos (cifra de negocios, 5 líneas):
 - "Ingresos por competiciones" -> competition_bonus.

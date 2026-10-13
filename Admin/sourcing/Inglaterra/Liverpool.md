@@ -31,7 +31,7 @@ Annual report and consolidated financial statements / 31 May 2025`.
 
 ## CARGADO al sitio (2026-09-22)
 
-Los 2 ejercicios (2023/24 y 2024/25) se cargaron en `data/liverpool-gb-data.js` (`clubId`
+Los 2 ejercicios (2023/24 y 2024/25) se cargaron en `data/gb/liverpool-gb-data.js` (`clubId`
 `liverpool-gb`), leyendo completas las transcripciones `liverpool-group-accounts-2023-24.md` y
 `liverpool-group-accounts-2024-25.md` de esta misma carpeta. Cuentas consolidadas, cierre 31 de
 mayo confirmado en la carátula y en el Group Strategic Report de cada documento (no en la

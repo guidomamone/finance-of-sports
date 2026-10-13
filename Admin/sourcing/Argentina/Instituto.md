@@ -11,7 +11,7 @@ ejercicio todavía no cerró/aprobó, nada para descargar todavía · Wayback CD
   primer club nuevo agregado después de Vélez — 5to del motor genérico). Superávit final real:
   $1.830.503.804 ARS. Convertido a USD con $909 (dólar mayorista de cierre al 30/6/2024 — el
   documento no declara su propio tipo de cambio, a diferencia de Boca/Racing/Vélez). Ver
-  `data/instituto-data.js` para el detalle completo de categorización (el Anexo V separa gasto por
+  `data/ar/instituto-data.js` para el detalle completo de categorización (el Anexo V separa gasto por
   sector — Fútbol/Básquet/La Agustina/Sede/Colegio/Tienda —, mismo mecanismo que el Anexo III de
   Vélez). Presidente: Juan Manuel Cavagliatto ("Juntos por Instituto"), gestión 2022-2025.
 - Memoria Anual, mismo Ejercicio N°70 — misma noticia, otro Drive (6 págs, narrativa, sin usar).

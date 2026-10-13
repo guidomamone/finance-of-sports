@@ -1,14 +1,14 @@
 # americamineiro-br — evidencia de carga
 
-Lo que había como comentario en `data/americamineiro-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/americamineiro-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/americamineiro-br-data.js — América Futebol Clube (AFC), Belo Horizonte-MG, Brasil.
+data/br/americamineiro-br-data.js — América Futebol Clube (AFC), Belo Horizonte-MG, Brasil.
 3 ejercicios cargados: 2023, 2024, 2025 (año calendario completo, 1°/1 a 31/12,
 fiscalYearStart:'01-01', mismo criterio que Botafogo/Grêmio).
 

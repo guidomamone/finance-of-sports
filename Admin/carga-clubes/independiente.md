@@ -1,14 +1,14 @@
 # independiente — evidencia de carga
 
-Lo que había como comentario en `data/independiente-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ar/independiente-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/independiente-data.js — Club Atlético Independiente: 7mo club del motor genérico. Un
+data/ar/independiente-data.js — Club Atlético Independiente: 7mo club del motor genérico. Un
 ejercicio cargado: 2023/2024 (1°/7/2023 al 30/6/2024), balance auditado real, texto nativo. PDF +
 transcripción en Clubes/Argentina/Independiente/memoria-y-balance-2023-2024.{pdf,md}.
 
@@ -61,7 +61,7 @@ PROBLEMA DE FUENTE, no de escaneo: `pdftotext` da texto LEGIBLE en la carátula/
 narrativas (fuente Arial, uni:yes) pero BASURA en todas las páginas con tablas numéricas
 (fuente "Owners", `pdffonts` confirma Custom/uni:no) — mismo síntoma que
 `presupuesto-2024-2025.pdf` de Gimnasia y Esgrima LP (ver comentario de cabecera de
-data/gimnasiaesgrima-ar-data.js), pero acá afecta ~48 de 54 páginas, no una tabla puntual.
+data/ar/gimnasiaesgrima-ar-data.js), pero acá afecta ~48 de 54 páginas, no una tabla puntual.
 Se resolvió renderizando cada página a imagen (`pdftoppm -png -r 300/400`) y leyéndola con el
 Read tool: la imagen es nítida (no es un escaneo, es un PDF nativo con fuente mal empaquetada),
 así que la lectura visual fue exacta. Se probó Tesseract primero (más barato) y funcionó bien

@@ -54,7 +54,7 @@ bajar los ejercicios 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011,
 2007 y 2006 (15 años más), no bajados por priorización de tiempo dentro de esta sesión. Mismo
 procedimiento que los 4 ya bajados.
 
-## Carga a `data/monchengladbach-de-data.js` (sesión 2026-09-25)
+## Carga a `data/de/monchengladbach-de-data.js` (sesión 2026-09-25)
 
 Cargados los 2 ejercicios más recientes YA BAJADOS: 2023 (`jahresabschluss-2023.md`) y 2024
 (`jahresabschluss-2024-completo.md`) — se usó el archivo `-completo`, NO el
@@ -72,7 +72,7 @@ Se reconstruyó cruzando el Lagebericht (que narra el movimiento interanual de c
 y el Konzern-Anlagenspiegel (que sí sobrevivió completo, con la columna "Abschreibung des
 Geschäftsjahres" separando Spielerwerte de Sachanlagen/Konzessionen). Quedó una duda real sin
 resolver — la separación entre "Sonstige betriebliche Erträge" y el resultado financiero neto (ver
-comentario de cabecera de `data/monchengladbach-de-data.js` y `Admin/dudas-por-club.md`).
+comentario de cabecera de `data/de/monchengladbach-de-data.js` y `Admin/dudas-por-club.md`).
 
 Quedan 2 ejercicios ya bajados sin cargar (2021, 2022) y 15 años más sin bajar (2006-2020, ver
 sección de arriba).

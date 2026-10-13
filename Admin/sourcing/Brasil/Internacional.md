@@ -21,7 +21,7 @@
 
 ## Cargado (2026-09-24)
 
-- 2 ejercicios onboardeados: 2024 y 2025 (`data/internacional-br-data.js`, clubId `internacional-br`).
+- 2 ejercicios onboardeados: 2024 y 2025 (`data/br/internacional-br-data.js`, clubId `internacional-br`).
   Fuente: "Relatório do auditor independente — Demonstrações contábeis" de cada año (texto nativo,
   transcripción completa en `Clubes/Brasil/Internacional/relatorio-anual-{2024,2025}.md`).
 - Color de marca: `#E5050F` (rojo) — Wikipédia en portugués confirma vermelho e branco
@@ -45,4 +45,4 @@
      "Deduções" suman R$73.112 mil pero el documento imprime R$73.132 mil de total (diferencia de
      R$20 mil) — no se pudo determinar cuál de las 4 líneas individuales tiene el redondeo/typo. Lo
      mismo pasa en la Nota "Custos operacionais das atividades" del mismo PDF, con una diferencia de
-     R$1 mil. Documentado en el comentario de cabecera de `data/internacional-br-data.js`.
+     R$1 mil. Documentado en el comentario de cabecera de `data/br/internacional-br-data.js`.

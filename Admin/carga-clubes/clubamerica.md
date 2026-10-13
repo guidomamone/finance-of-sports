@@ -1,14 +1,14 @@
 # clubamerica — evidencia de carga
 
-Lo que había como comentario en `data/clubamerica-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/mx/clubamerica-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/clubamerica-data.js — Club de Fútbol América (México). PRIMER CLUB NO ARGENTINO cargado con
+data/mx/clubamerica-data.js — Club de Fútbol América (México). PRIMER CLUB NO ARGENTINO cargado con
 datos reales, y primer caso del sitio donde la fuente es un SEGMENTO de negocio dentro de una
 compañía bursátil más grande, no un balance del club en sí. Leer este comentario completo antes
 de tocar cualquier número de este archivo — la estructura de la fuente es genuinamente distinta a
@@ -159,7 +159,7 @@ _de data/clubs.js:_
 
 ```text
 Primer club no argentino del sitio (Versión 104). reportingCurrency:'MXN' — ver data/currency-map.js
-(entrada MXN, scale:1) y data/clubamerica-data.js (comentario de cabecera) para el detalle completo
+(entrada MXN, scale:1) y data/mx/clubamerica-data.js (comentario de cabecera) para el detalle completo
 de la fuente (segmento de negocio de una compañía bursátil, no un balance propio del club).
 fiscalYearStart:'01-01': Ollamani reporta en año calendario (1/1 a 31/12), no en un ejercicio
 partido como los clubes argentinos.
@@ -235,7 +235,7 @@ archivo.
 _note (data/):_
 
 ```text
-PDF oficial de 113 páginas (texto nativo), Estados Financieros Consolidados auditados bajo IFRS del año terminado el 31/12/2025, presentados ante la Bolsa Mexicana de Valores (BMV, clave AGUILAS) y espejados en bmv.com.mx y gob.mx/cnbv. Club América NO publica balance propio: Ollamani es la controladora pública (post spin-off de Grupo Televisa, 31/01/2024) y reporta un "Segmento de Fútbol" bajo IFRS 8 que agrupa Club América (varonil y femenil) CON el Estadio Banorte — ver comentario de cabecera de data/clubamerica-data.js para el detalle completo de este límite y de por qué grossDebt/cash/officialPAT quedan en 0/0/null. Copia local en finance-of-sports/Clubes/México/Club América/reporte-financiero-ollamani-2025-auditado.pdf.
+PDF oficial de 113 páginas (texto nativo), Estados Financieros Consolidados auditados bajo IFRS del año terminado el 31/12/2025, presentados ante la Bolsa Mexicana de Valores (BMV, clave AGUILAS) y espejados en bmv.com.mx y gob.mx/cnbv. Club América NO publica balance propio: Ollamani es la controladora pública (post spin-off de Grupo Televisa, 31/01/2024) y reporta un "Segmento de Fútbol" bajo IFRS 8 que agrupa Club América (varonil y femenil) CON el Estadio Banorte — ver comentario de cabecera de data/mx/clubamerica-data.js para el detalle completo de este límite y de por qué grossDebt/cash/officialPAT quedan en 0/0/null. Copia local en finance-of-sports/Clubes/México/Club América/reporte-financiero-ollamani-2025-auditado.pdf.
 ```
 
 ## Otros

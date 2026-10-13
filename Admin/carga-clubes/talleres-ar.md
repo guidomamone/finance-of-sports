@@ -1,19 +1,19 @@
 # talleres-ar — evidencia de carga
 
-Lo que había como comentario en `data/talleres-ar-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ar/talleres-ar-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/talleres-ar-data.js — Club Atlético Talleres Asociación Civil (Córdoba,
+data/ar/talleres-ar-data.js — Club Atlético Talleres Asociación Civil (Córdoba,
 Argentina). Onboarding inicial del club (sesión 2026-09-23): pasa de "sin
 nada cargado" a 2 ejercicios auditados reales, 2024 y 2025, ejercicio
 CALENDARIO (1/1-31/12, NO temporada jul-jun como la mayoría de los clubes
 argentinos ya cargados — fiscalYearStart:'01-01', igual criterio que
-data/stuttgart-de-data.js, usado como plantilla de shape/convención).
+data/de/stuttgart-de-data.js, usado como plantilla de shape/convención).
 
 FUENTE: `Clubes/Argentina/Talleres/estados-contables-2024.md` y
 `estados-contables-2025.md` — Estados Contables completos (Estado de
@@ -246,7 +246,7 @@ _de data/club-leagues/ar.js:_
 3 clubes nuevos (sesión 2026-09-23, onboarding de Talleres/Newell's/Banfield). Ninguno se
 verificó contra Wikipedia línea por línea (mismo nivel de confianza que "conoce el dato" de
 arriba, no una fuente primaria citada): Talleres jugó Copa Libertadores/Sudamericana los 2 años
-(confirmado por sus propios ingresos "Copas internacionales" en data/talleres-ar-data.js, algo
+(confirmado por sus propios ingresos "Copas internacionales" en data/ar/talleres-ar-data.js, algo
 que solo pasa jugando Primera); Newell's nunca descendió en toda su historia (hecho público muy
 conocido del fútbol argentino); Banfield 2019-20 lo confirma el propio balance ("CONSIDERACIONES
 REGLAMENTARIAS A.F.A./SAF", tratando la afiliación a la Superliga como vigente ese ejercicio).
@@ -286,7 +286,7 @@ cash = Caja y bancos (Estado de Situación Patrimonial, Activo Corriente).
 _note (data/):_
 
 ```text
-Descargado de clubtalleres.com.ar (nota de prensa de la Asamblea, no de una sección fija de transparencia — ver Admin/sourcing/Argentina/Talleres.md). Auditado, con Informe de la Comisión Revisora de Cuentas. Expresado en moneda homogénea (RT6) a la fecha de cierre. Ejercicio CALENDARIO (1/1/2024-31/12/2024). El Anexo V (Moneda Extranjera) no declara un tipo de cambio de cierre único — ver comentario de cabecera de data/talleres-ar-data.js. Transcripción completa en Clubes/Argentina/Talleres/estados-contables-2024.md.
+Descargado de clubtalleres.com.ar (nota de prensa de la Asamblea, no de una sección fija de transparencia — ver Admin/sourcing/Argentina/Talleres.md). Auditado, con Informe de la Comisión Revisora de Cuentas. Expresado en moneda homogénea (RT6) a la fecha de cierre. Ejercicio CALENDARIO (1/1/2024-31/12/2024). El Anexo V (Moneda Extranjera) no declara un tipo de cambio de cierre único — ver comentario de cabecera de data/ar/talleres-ar-data.js. Transcripción completa en Clubes/Argentina/Talleres/estados-contables-2024.md.
 ```
 
 ### talleres-ar-estados-contables-2025

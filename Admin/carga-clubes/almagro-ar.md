@@ -1,14 +1,14 @@
 # almagro-ar — evidencia de carga
 
-Lo que había como comentario en `data/almagro-ar-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ar/almagro-ar-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/almagro-ar-data.js — Club Almagro (Asociación Civil, Medrano 522, CABA):
+data/ar/almagro-ar-data.js — Club Almagro (Asociación Civil, Medrano 522, CABA):
 clubId lleva el sufijo de país ('almagro-ar') por la convención de la Versión 129
 (Admin/CONVENCIONES.md): cualquier club nuevo desde entonces nace con el país en el id,
 para no arrastrar una colisión futura si aparece otro "Almagro" en otro país. Los 41
@@ -155,7 +155,7 @@ Almagro: ejercicio económico 1°/11 al 31/10 (los 6 balances cargados cierran t
 Versión 129 (ver CONVENCIONES.md). brandColor:null a propósito: Wikipedia confirma que
 el club es TRICOLOR azul/blanco/negro (apodo "Tricolor"), sin un color que predomine
 declarado por el club ni fuente de hex confiable — ver comentario de cabecera de
-data/almagro-ar-data.js.
+data/ar/almagro-ar-data.js.
 ```
 
 _de data/club-leagues/ar.js:_

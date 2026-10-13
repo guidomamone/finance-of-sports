@@ -17,7 +17,7 @@
   (横浜マリノス株式会社, de Nissan/City Football Group) — el documento de la liga ya cubre lo pedido.
 - Contacto: `aboutj.jleague.jp/corporate/assets/pdf/club_info/club_doc-<año>.pdf`.
 - Último chequeo: 2026-09-13.
-- **CARGADO al sitio (2026-09-13), Ejercicio 2025**: ver `data/yokohamafmarinos-data.js`. Solo
+- **CARGADO al sitio (2026-09-13), Ejercicio 2025**: ver `data/jp/yokohamafmarinos-data.js`. Solo
   Sponsor (¥2.871M)/Gate (¥1.530M)/Total (¥7.751M) son reales por club — el resto de categorías y
   TODOS los costos solo se publican a nivel de división, no por club (ver corrección en
   `_notas-generales.md`). `expenseLinesByYear` vacío a propósito, `officialTotalExpenses`/

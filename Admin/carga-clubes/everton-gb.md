@@ -1,14 +1,14 @@
 # everton-gb — evidencia de carga
 
-Lo que había como comentario en `data/everton-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/everton-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/everton-gb-data.js — Everton (Inglaterra, Premier League), clubId 'everton-gb'.
+data/gb/everton-gb-data.js — Everton (Inglaterra, Premier League), clubId 'everton-gb'.
 
 Fuente: "Report and Accounts" (cuentas CONSOLIDADAS del grupo) de Everton Football Club
 Company, Limited (Companies House n° 00036624), depositadas en Companies House UK. Ejercicio
@@ -156,7 +156,7 @@ Moshiri: compra del 49,9% confirmada el 27/2/2016 (la Premier la ratificó dos s
 _note (data/):_
 
 ```text
-PDF de 37 páginas, "Report and accounts" depositado en Companies House, entidad Everton Football Club Company, Limited n° 00036624. Transcripción completa en Clubes/Inglaterra/Everton/everton-group-accounts-2023-24.md. Ver el comentario de cabecera de data/everton-gb-data.js para el detalle completo de categorización (staff costs sin desglose por departamento, profit on player trading como línea neta, CAPEX del estadio excluido a propósito).
+PDF de 37 páginas, "Report and accounts" depositado en Companies House, entidad Everton Football Club Company, Limited n° 00036624. Transcripción completa en Clubes/Inglaterra/Everton/everton-group-accounts-2023-24.md. Ver el comentario de cabecera de data/gb/everton-gb-data.js para el detalle completo de categorización (staff costs sin desglose por departamento, profit on player trading como línea neta, CAPEX del estadio excluido a propósito).
 ```
 
 ### everton-gb-group-accounts-2025
@@ -164,7 +164,7 @@ PDF de 37 páginas, "Report and accounts" depositado en Companies House, entidad
 _note (data/):_
 
 ```text
-PDF de 44 páginas, "Report and accounts" depositado en Companies House, entidad Everton Football Club Company, Limited n° 00036624. Transcripción completa en Clubes/Inglaterra/Everton/everton-group-accounts-2024-25.md. Cambio de control societario (Moshiri -> Friedkin/Roundhouse Capital Holdings, completado 18/12/2024) ocurrido DENTRO de este ejercicio. Ver el comentario de cabecera de data/everton-gb-data.js para el detalle completo de categorización.
+PDF de 44 páginas, "Report and accounts" depositado en Companies House, entidad Everton Football Club Company, Limited n° 00036624. Transcripción completa en Clubes/Inglaterra/Everton/everton-group-accounts-2024-25.md. Cambio de control societario (Moshiri -> Friedkin/Roundhouse Capital Holdings, completado 18/12/2024) ocurrido DENTRO de este ejercicio. Ver el comentario de cabecera de data/gb/everton-gb-data.js para el detalle completo de categorización.
 ```
 
 ## Otros

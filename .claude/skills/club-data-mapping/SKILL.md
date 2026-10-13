@@ -53,7 +53,7 @@ Busca el texto exacto (o parecido) contra lo YA categorizado en otros años del 
 rubro puede significar cosas distintas según el lado: Boca, "Futbol Femenino" ingreso vs. "Fútbol femenino" gasto). Resultados:
 `EXACTO` (misma categoría entre años: usarla), `PARECIDO` (candidato a revisar, no aceptar sin más), `SIN_PRECEDENTE` (criterio de
 esta sección, de cero), `CONFLICTO` (el mismo texto tuvo 2 categorías en años distintos: revisar a mano cuál es correcta). Es una
-consulta, nunca escribe en `data/<club>-data.js`. `--list` vuelca todo el precedente cargado de un club.
+consulta, nunca escribe en `data/<país>/<club>-data.js`. `--list` vuelca todo el precedente cargado de un club.
 
 Mapeos usados en la práctica (no es la lista completa de `category-map.js`):
 

@@ -58,7 +58,7 @@ país. Antes de mandar una línea de colegio/polideportivo/alquiler de estadio a
   comparabilidad.
 - "Fútbol profesional"/"Otros gastos deportivos fútbol profesional" (costos NO salariales del plantel: médico, indumentaria, viajes,
   pretemporada) → `wages_squad`, no una categoría nueva, porque Boca Ejercicio 2027 mezcla ese tipo de costo en su `wages_squad`
-  (`data/boca-data.js`, línea "Fútbol Profesional — Remuneraciones y primas"). OJO: Boca 2025 (balance auditado) SÍ separa esto en 2
+  (`data/ar/boca-data.js`, línea "Fútbol Profesional — Remuneraciones y primas"). OJO: Boca 2025 (balance auditado) SÍ separa esto en 2
   líneas (Remuneraciones / Otros gastos operativos), así que `wages_squad` significa algo un poco distinto según el ejercicio de
   Boca que se tome; el criterio de Racing sigue al Ejercicio 2027 por ser la referencia de nombres/orden.
 

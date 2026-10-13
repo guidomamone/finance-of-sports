@@ -13,7 +13,7 @@
   se abrió en esta sesión).
 - Contacto: siis.ia.supersociedades.gov.co (NIT 901644853).
 - Último chequeo: 2026-09-12.
-- **Cargado (2026-09-25): ejercicio 2025 en `data/deportivopereira-co-data.js`** (`clubId:
+- **Cargado (2026-09-25): ejercicio 2025 en `data/co/deportivopereira-co-data.js`** (`clubId:
   'deportivopereira-co'`), desde `estados-financieros-2025.pdf`. El PDF tiene texto nativo, PERO
   cada tabla de cifras está insertada como imagen (captura de Excel) — la transcripción .md quedó
   con esas tablas en blanco, los números se leyeron renderizando las páginas puntuales a PNG y

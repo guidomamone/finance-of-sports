@@ -1,14 +1,14 @@
 # brondby-dk — evidencia de carga
 
-Lo que había como comentario en `data/brondby-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/dk/brondby-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/brondby-dk-data.js — Brøndbyernes I.F. Fodbold A/S (clubId 'brondby-dk'). Un solo ejercicio:
+data/dk/brondby-dk-data.js — Brøndbyernes I.F. Fodbold A/S (clubId 'brondby-dk'). Un solo ejercicio:
 2020 (año calendario, 1° de enero a 31 de diciembre de 2020 — el archivo más reciente
 transcripto para este club, no hay años más nuevos disponibles todavía, ver
 Admin/sourcing/Dinamarca/Brøndby.md).
@@ -24,7 +24,7 @@ Cifras en DKK MILLONES nativos (documento en tDKK = miles de coronas, dividido p
 cargar). `fxRef:'DKK@2020-12-31'` porque el documento no declara ningún tipo de cambio propio
 (todo en DKK, sociedad 100% doméstica) — cotización de cierre EUR/DKK del BCE (7,4409) / EUR/USD
 del BCE (1,2271) = 6,0638 DKK por USD, mismo método que FC København (ver comentario de
-data/fckobenhavn-dk-data.js y la entrada 'DKK@2020-12-31' en FX_CLOSE).
+data/dk/fckobenhavn-dk-data.js y la entrada 'DKK@2020-12-31' en FX_CLOSE).
 
 OJO — VARIOS SUBTOTALES DE LA TRANSCRIPCIÓN TENÍAN EL SIGNO NEGATIVO CAÍDO (probablemente un
 artefacto de la conversión del XHTML/iXBRL original a texto plano, no un error del documento en

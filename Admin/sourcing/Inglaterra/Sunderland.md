@@ -25,7 +25,7 @@ OCR de la página 2 del PDF 2024/25: `SUNDERLAND ASSOCIATION FOOTBALL CLUB, LIMI
 THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 JULY 2025`. Entidad y período confirmados, no asumidos.
 
 - Último chequeo: 2026-09-16.
-- **CARGADO al sitio (2026-09-25)**: ejercicios 2023-24 y 2024-25, `data/sunderland-gb-data.js`
+- **CARGADO al sitio (2026-09-25)**: ejercicios 2023-24 y 2024-25, `data/gb/sunderland-gb-data.js`
   (clubId `sunderland-gb`). Tie-out exacto contra el propio documento en los 2 años. Los 2 ejercicios
   jugados en el Championship (2ª división) — el ascenso a Premier League fue vía playoff en mayo de
   2025, para la temporada 2025/26, posterior al cierre del ejercicio cargado. Liga `gb-championship`

@@ -1,14 +1,14 @@
 # vascodagama-br — evidencia de carga
 
-Lo que había como comentario en `data/vascodagama-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/vascodagama-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/vascodagama-br-data.js — Vasco da Gama Sociedade Anônima do Futebol (SAF), Rio de Janeiro,
+data/br/vascodagama-br-data.js — Vasco da Gama Sociedade Anônima do Futebol (SAF), Rio de Janeiro,
 Brasil. 1 EJERCICIO CARGADO: 2023 (auditado). fiscalYearStart:'01-01' (ejercicio social = año
 calendario completo, mismo criterio que Botafogo/Grêmio, ver clubs.js/isCalendarYearClub()).
 
@@ -178,7 +178,7 @@ officialPAT = "Prejuízo do exercício/período" impreso.
 _note (data/):_
 
 ```text
-PDF oficial (texto nativo, 82 páginas), auditado por Grant Thornton Auditores Independentes, parecer SIN salvedades (26/4/2024) — descargado de un mirror en netvasco.com.br porque el dominio oficial (media.vasco.com.br) está bloqueado por un challenge de Cloudflare. Transcripción completa en Clubes/Brasil/Vasco da Gama/demonstracoes-contabeis-2023.md. 2023 fue un ejercicio de DÉFICIT real (Prejuízo de R$123,498 M), atribuido en el propio balance a un resultado financeiro negativo (R$53,976 M) sobre un resultado operacional ya negativo. No se cargó un 2do ejercicio (2024) esta sesión: el documento originalmente identificado para 2024 (dre-balanco-patrimonial-2024.pdf, mirror de crvascodagama.com) resultó, tras lectura completa, ser las demonstrações contábeis del CRVG (Club de Regatas Vasco da Gama, la associação social) y NO de la SAF — ver comentario de cabecera de data/vascodagama-br-data.js para el detalle. Convertido a USD con PTAX BCB de cierre 31/12/2023 (R$4,8413, FX_CLOSE), el documento no declara su propio tipo de cambio de cierre en un Anexo dedicado.
+PDF oficial (texto nativo, 82 páginas), auditado por Grant Thornton Auditores Independentes, parecer SIN salvedades (26/4/2024) — descargado de un mirror en netvasco.com.br porque el dominio oficial (media.vasco.com.br) está bloqueado por un challenge de Cloudflare. Transcripción completa en Clubes/Brasil/Vasco da Gama/demonstracoes-contabeis-2023.md. 2023 fue un ejercicio de DÉFICIT real (Prejuízo de R$123,498 M), atribuido en el propio balance a un resultado financeiro negativo (R$53,976 M) sobre un resultado operacional ya negativo. No se cargó un 2do ejercicio (2024) esta sesión: el documento originalmente identificado para 2024 (dre-balanco-patrimonial-2024.pdf, mirror de crvascodagama.com) resultó, tras lectura completa, ser las demonstrações contábeis del CRVG (Club de Regatas Vasco da Gama, la associação social) y NO de la SAF — ver comentario de cabecera de data/br/vascodagama-br-data.js para el detalle. Convertido a USD con PTAX BCB de cierre 31/12/2023 (R$4,8413, FX_CLOSE), el documento no declara su propio tipo de cambio de cierre en un Anexo dedicado.
 ```
 
 ## Otros

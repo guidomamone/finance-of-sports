@@ -24,10 +24,10 @@
 - Contacto: transparenciafluminense.com.br/public/.
 - Último chequeo: 2026-09-16.
 
-## Carga a data/fluminense-br-data.js (2026-09-24)
+## Carga a data/br/fluminense-br-data.js (2026-09-24)
 
 - **2 ejercicios cargados: 2024 y 2025** (fiscalYearStart '01-01', año calendario, mismo criterio que
-  Botafogo/Flamengo/Grêmio). Ver el comentario de cabecera de `data/fluminense-br-data.js` para el
+  Botafogo/Flamengo/Grêmio). Ver el comentario de cabecera de `data/br/fluminense-br-data.js` para el
   detalle completo de categorización/verificación.
 - **Auditor CONFIRMADO leyendo los propios PDF: BDO RCS Auditores Independentes SS Ltda. firmó AMBOS
   ejercicios** (2024 y 2025) — no Mazars. La mención de prensa a Mazars corresponde, según el propio

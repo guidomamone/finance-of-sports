@@ -3,7 +3,7 @@
 // filas ya verificadas. Gratis: lee los Generados/**/<doc>.verificacion.json (la etapa 6 deja escrito el origen de cada línea:
 // 'nota que desglosa "Custo com futebol"').
 //
-// POR QUÉ (Versión 403, auditoría del pipeline del 2026-10-02, diseño aprobado por Guido): lo CARGADO en el sitio (data/*-data.js) no guarda
+// POR QUÉ (Versión 403, auditoría del pipeline del 2026-10-02, diseño aprobado por Guido): lo CARGADO en el sitio (data/*/*-data.js) no guarda
 // en qué nota estaba cada fila, y el precedente "sin contexto" de la etapa 7 decidía por la etiqueta sola. Casos reales, Goiás:
 //   - "Despesa com pessoal" 2014 (nota de fútbol, 21.628.163) tomó el precedente de 2022-2023, donde la misma etiqueta está en la nota
 //     ADMINISTRATIVA: salió gastos generales en vez de sueldos del plantel;

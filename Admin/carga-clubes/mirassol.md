@@ -1,14 +1,14 @@
 # mirassol — evidencia de carga
 
-Lo que había como comentario en `data/mirassol-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/mirassol-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/mirassol-data.js — Mirassol Futebol Clube (Mirassol, SP, Brasil).
+data/br/mirassol-data.js — Mirassol Futebol Clube (Mirassol, SP, Brasil).
 NO es SAF (sigue como associação/clube tradicional). Ejercicio social = ANO
 CALENDÁRIO (1/1/2024 a 31/12/2024), ver `fiscalYearStart:'01-01'` en
 data/clubs.js, igual que el resto de los clubes brasileños del sitio.
@@ -41,7 +41,7 @@ porcentaje de custos sobre la receita con 14 decimales. Despejando:
     el documento imprime  60,84610193746302 %   -> coincide a 14 decimales
 O sea, el valor despejado queda confirmado por una vía independiente del
 propio documento, no es un residuo a ciegas (a diferencia del `tax` de Once
-Caldas, que sí es un residuo documentado, ver data/oncecaldas-data.js). El
+Caldas, que sí es un residuo documentado, ver data/co/oncecaldas-data.js). El
 mismo chequeo con despesas/receita da 32,17099842896366 %, exacto al impreso.
 
 ESCALA: el documento está en reales enteros con centavos (R$ 59.339.448,33).

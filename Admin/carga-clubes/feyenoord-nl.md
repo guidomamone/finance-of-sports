@@ -1,16 +1,16 @@
 # feyenoord-nl — evidencia de carga
 
-Lo que había como comentario en `data/feyenoord-nl-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/nl/feyenoord-nl-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/feyenoord-nl-data.js — Feyenoord Rotterdam N.V. (Róterdam, Países Bajos).
+data/nl/feyenoord-nl-data.js — Feyenoord Rotterdam N.V. (Róterdam, Países Bajos).
 Uno de 4 clubes holandeses cargados en la sesión de onboarding de Países Bajos
-como país nuevo (Eredivisie). Ver data/ajax-nl-data.js para el contexto
+como país nuevo (Eredivisie). Ver data/nl/ajax-nl-data.js para el contexto
 compartido de la tanda.
 
 FUENTE: `Clubes/Países Bajos/Feyenoord/jaarverslag-2024-25.md` y

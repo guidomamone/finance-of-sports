@@ -14,7 +14,7 @@
   Cali", si existen en SIIS con el mismo NIT).
 - Contacto: siis.ia.supersociedades.gov.co (NIT 890301160).
 - **CARGADO al sitio (sesión 2026-09-22, Ejercicio 2025 únicamente)**: ver
-  `data/depcali-co-data.js`. El PDF trae solo las notas (texto nativo, sin Estado de Resultados
+  `data/co/depcali-co-data.js`. El PDF trae solo las notas (texto nativo, sin Estado de Resultados
   primario ni impuesto de renta corriente como cifra aparte), así que el campo `tax` es un RESIDUO
   (pretax línea por línea menos el resultado neto confirmado por la vista SIIS, $-6.954.741 M) —
   mismo criterio que Once Caldas. La Nota 25 (Impuesto a las ganancias) prueba un cargo de impuesto

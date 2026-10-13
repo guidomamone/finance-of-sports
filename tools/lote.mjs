@@ -188,7 +188,7 @@ for (const pdf of docs) {
   // de Fortaleza 2017 y su reintento no corría (86 de 87 propuestas de prueba-completa contaban como viejas; por documento y club, 58).
   const cargaFresca = (() => { try { const c = leerDerivado(e, '.carga.json'); if (!c?.generado) return false; const dia = String(c.generado).slice(0, 10); const carpeta = pdf.split('/').slice(0, 3).join('/') + '/'; return !ajustesTodos().some((a) => (a.pdf === pdf || a.pdf === carpeta) && String(a.fecha || '') >= dia); } catch { return false; } })();
   // AÑO YA CARGADO SEGÚN EL SITIO (Versión 442): el registro se queda viejo si no se regenera después de cargar (Juventus 2021-22: en
-  // data/juventus-it-data.js y `cargado: false` en el registro; un --reintentar lo volvía a pagar). Se mira también el sitio, por el clubId y
+  // data/it/juventus-it-data.js y `cargado: false` en el registro; un --reintentar lo volvía a pagar). Se mira también el sitio, por el clubId y
   // el año de la última propuesta de carga del documento.
   const cargado = e.cargado || (() => { const c = leerDerivado(e, '.carga.json'); return !!(c?.clubId && c?.year && sitio.generic?.[c.clubId]?.fiscalYearMeta?.[c.year]); })();
   const reintento = !REINTENTAR ? null : cargado ? (cargaFresca && categoriasPendientes(e).length ? categoriasPendientes(e) : null) : verifDe(e)?.reintentar || null;

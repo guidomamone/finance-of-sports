@@ -5,7 +5,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
 
 ---
 
-- **`data/<club>-data.js` NO LLEVA COMENTARIOS.** Ese archivo se publica entero: cada comentario lo baja cada visitante, y se lee con
+- **`data/<país>/<club>-data.js` NO LLEVA COMENTARIOS.** Ese archivo se publica entero: cada comentario lo baja cada visitante, y se lee con
   "ver código fuente". La evidencia de una carga (de qué documento sale, perímetro, unidades, por qué cada rubro va a su categoría,
   ajustes, contra qué total cierra, de dónde salió la caja y la deuda) va en `Admin/carga-clubes/<clubId>.md`, que no se publica. Un
   título por ejercicio, y adentro ingresos, gastos y meta. Las notas de cada fila van en una tabla con su número de fila, porque hay
@@ -13,7 +13,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   Cuando termine la mudanza, `node tools/audit.js` va a avisar si aparece un comentario en `data/`.
 
 - **IDENTIDAD DEL CLUB (`data/clubs.js`).** `clubs{}` es central porque hace falta ANTES de elegir ningún club; `sources{}`,
-  `gestionesByClub{}` y `memberCountByClub{}` se autoregistran desde el `data/<club>-data.js` de cada club. `name` es el nombre legal
+  `gestionesByClub{}` y `memberCountByClub{}` se autoregistran desde el `data/<país>/<club>-data.js` de cada club. `name` es el nombre legal
   completo; `displayName`, el corto que muestra el selector. **`brandColor`** (el círculo de iniciales; nunca escudos como imagen, por
   derechos y hosting) es el color VERIFICADO contra la fuente del club (sitio oficial, infobox de Wikipedia del país, la クラブカラー de
   la J.League), nunca deducido de otro club; si la fuente da solo el nombre del color, el hex sale de la paleta publicada del escudo.
@@ -128,7 +128,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   comparación, se agrega el matiz en el aviso, no cambiando el criterio.
 - EL `clubId` DE UN CLUB NUEVO LLEVA EL PAÍS AL FINAL (Versión 129, decidido antes del selector
   jerárquico). `racingsantander-es`, `nacional-uy`, `independiente-co`. Por qué: el `clubId` no es
-  una clave más, nombra el archivo de datos (`data/<clubId>-data.js`, por convención de
+  una clave más, nombra el archivo de datos (`data/<país>/<clubId>-data.js`, por convención de
   `loadClubData()`) y prefija cada `sourceId` (`racing-balance-2009`), así que una colisión se paga
   en tres lugares. Los nombres se repiten entre países mucho más de lo que parece: Racing
   (Argentina y Santander), Independiente (Argentina, del Valle, Medellín), Unión (Argentina,

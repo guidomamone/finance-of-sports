@@ -55,7 +55,7 @@ país: no aplica — 2026-09-26
 - **CARGADO AL SITIO (2026-09-23): `banfield-ar-memoria-y-balance-2019-2020`**, el balance 116°
   Ejercicio (2019-20) descripto arriba, primer ejercicio de Banfield en el sitio (`clubId`
   `banfield-ar`). Transcripción completa en `Clubes/Argentina/Banfield/memoria-y-balance-2019-2020.md`
-  (58 páginas, texto nativo). Ver `data/banfield-ar-data.js` para el detalle de categorización
+  (58 páginas, texto nativo). Ver `data/ar/banfield-ar-data.js` para el detalle de categorización
   (reporta por sector/departamento, no por naturaleza de gasto transversal como Racing/River/Unión).
   RESULTADO FINAL real: $80.173.576,08 ARS (superávit). El documento NO declara tipo de cambio de
   cierre propio (sin Anexo de moneda extranjera) — pendiente que se agregue `ARS@2020-06-30` a

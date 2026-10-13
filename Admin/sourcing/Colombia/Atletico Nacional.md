@@ -12,7 +12,7 @@
 - Pendiente: años anteriores, navegando los otros 10 registros de la búsqueda SIIS.
 - Contacto: siis.ia.supersociedades.gov.co (NIT 900464187).
 - **CARGADO al sitio (sesión 2026-09-22, Ejercicio 2025 únicamente)**: ver
-  `data/atlnacional-co-data.js`. El PDF trae solo las notas (texto nativo, sin Estado de Resultado
+  `data/co/atlnacional-co-data.js`. El PDF trae solo las notas (texto nativo, sin Estado de Resultado
   Integral primario aparte), pero la Nota 14 (Impuestos a las ganancias) imprime literalmente
   "Utilidad contable Antes de Impuestos: 7.162.607" para 2025, que reconcilia EXACTO contra la suma
   independiente Revenue-Expenses+netInterest calculada desde las notas de ingresos/gastos — sin

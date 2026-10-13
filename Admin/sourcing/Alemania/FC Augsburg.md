@@ -15,7 +15,7 @@ documentos).
 - **2024** (ejercicio 01.07.2023-30.06.2024) y **2025** (ejercicio 01.07.2024-30.06.2025), ambos
   desde el Konzernabschluss (consolidado) transcripto en
   `Clubes/Alemania/FC Augsburg/konzernabschluss-2023-24.md` y `konzernabschluss-2024-25.md`.
-  Ver el comentario de cabecera de `data/augsburg-de-data.js` para el detalle completo de
+  Ver el comentario de cabecera de `data/de/augsburg-de-data.js` para el detalle completo de
   categorización (Umsatzerlöse y Abschreibungen promovidos a líneas de primer nivel por tener
   sub-categorías reales distintas, siguiendo club-data-mapping SKILL.md sección 1).
 - **Moneda/FX**: EUR, sin tipo de cambio propio declarado por ninguno de los 2 documentos (no hay
@@ -25,7 +25,7 @@ documentos).
   en 2025 entre la suma de líneas de Umsatzerlöse y el total impreso), causada por que la Nota VI
   de la Konzern-GuV solo da esa cifra en miles de EUR (TEUR) redondeados, mientras el total impreso
   de Umsatzerlöse es exacto al centavo. Expenses y PAT cierran EXACTOS en los 2 años (ver
-  `fiscalYearMeta` en `data/augsburg-de-data.js`).
+  `fiscalYearMeta` en `data/de/augsburg-de-data.js`).
 - **Color de marca**: `#BA3733` (rojo) — Wikipedia (de.wikipedia.org e en.wikipedia.org, infobox:
   "Rot, Grün, Weiß" / "red, green and white", rojo listado primero en los 2 idiomas) + hex de
   teamcolorcodes.com/fc-augsburg-color-codes, verificado 2026-09-22.

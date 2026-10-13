@@ -57,7 +57,7 @@ Almagro, Argentinos Juniors, Estudiantes LP, Gimnasia y Esgrima LP, Independient
 Unión, Amazonas, Botafogo-SP, Botafogo, Gent, Union Saint-Gilloise, Universidad de Chile (Azul
 Azul), Independiente Santa Fe, Unión Magdalena y Varaždin.
 
-El script los reconoce porque algún `data/<id>-data.js` cita la carpeta `Clubes/<País>/<Club>/`.
+El script los reconoce porque algún `data/<país>/<id>-data.js` cita la carpeta `Clubes/<País>/<Club>/`.
 `onboard.mjs --quien` no los reconoce, porque el nombre de la carpeta matchea a 0 o a 2+ clubes
 (Racing = Racing Club + Genk). O sea que la cifra de "~205 clubes nuevos" está inflada: las
 carpetas con `.md` que son clubes nuevos de verdad son 141, y de esas 14 no son de fútbol. Sus PDFs
@@ -168,7 +168,7 @@ Bugs que encontró esta prueba y ya están corregidos en el script:
    `?v=`, solo si todavía no está subido respecto de HEAD.
 2. **Corrida final (Slavia Praha, país y moneda nuevos): OK, `P0 0 · P1 0`.** Escribió:
    - `data/clubs.js`
-   - el esqueleto `data/<id>-data.js` del club `slaviapraha-cz`
+   - el esqueleto `data/<país>/<id>-data.js` del club `slaviapraha-cz`
    - el archivo de ligas de CZ (`data/club-leagues/<iso2>.js`, nuevo, fila en `null`)
    - `data/leagues.js` (COUNTRIES CZ 🇨🇿)
    - `data/lang/en.js` (`country.CZ`)
@@ -185,7 +185,7 @@ Qué toca un alta, sacado del commit de Panathinaikos (839fea7), del skill de on
 que pidió el audit:
 
 - `clubs.js`
-- `data/<id>-data.js`
+- `data/<país>/<id>-data.js`
 - `club-leagues/<iso2>.js`
 - `leagues.js` y `lang/en.js`, si el país es nuevo
 - `currency-map.js`, si la moneda o la cotización es nueva

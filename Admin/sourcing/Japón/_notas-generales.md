@@ -47,7 +47,7 @@ archivos ya están identificados y confirmados.
   agregadas a nivel de división (J1/J2/J3 completo, Apéndice 3-1/3-2), nunca desglosadas por club
   individual — confirmado que ninguna de esas categorías aparece en ninguna fila "por club" en
   ninguna de las 2 ediciones revisadas. Los 10 clubes objetivo se cargaron al sitio (Ejercicio 2025,
-  ver `data/<club>-data.js` de cada uno) con revenueLines de 3 líneas: Sponsor, Gate, y un residual
+  ver `data/<país>/<club>-data.js` de cada uno) con revenueLines de 3 líneas: Sponsor, Gate, y un residual
   "Otros ingresos" (= Total − Sponsor − Gate, agrupa todo lo demás sin poder separarlo más). Sin
   desglose de costos por club en ninguna edición (ver bullet siguiente, que sigue vigente sin
   cambios) — `expenseLinesByYear` de los 10 clubes quedó vacío, no se usó el promedio/total
@@ -147,7 +147,7 @@ archivos ya están identificados y confirmados.
 - fx:150 (JPY/USD) usado para los 10 clubes es un PLACEHOLDER de referencia, no declarado por
   ningún documento de esta fuente (un reporte de gestión deportiva, no un balance con anexo de
   moneda extranjera) — si se encuentra una fuente mejor (ej. tipo de cambio de cierre de año
-  calendario 2025 de un sitio de cotización), reemplazar en los 10 `data/<club>-data.js`
+  calendario 2025 de un sitio de cotización), reemplazar en los 10 `data/<país>/<club>-data.js`
   (`fiscalYearMeta[2025].fx`).
 - Buscar 2005-2011 con otro ángulo si aparece un lead (ej. Wayback Machine de jleague.jp, no
   intentado todavía en esta sesión).

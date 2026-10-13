@@ -1,14 +1,14 @@
 # vitoria-br — evidencia de carga
 
-Lo que había como comentario en `data/vitoria-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/vitoria-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/vitoria-br-data.js — Esporte Clube Vitória (Salvador, Bahia, Brasil). Sigue siendo
+data/br/vitoria-br-data.js — Esporte Clube Vitória (Salvador, Bahia, Brasil). Sigue siendo
 ASSOCIAÇÃO (NO se convirtió a SAF). clubId CON GUIÓN desde el arranque: 'vitoria-br' (mismo
 criterio que banfield-ar/athleticoparanaense-br), bracket notation en
 clubs/gestionesByClub/memberCountByClub/CLUB_GENERIC_DATA. 1 ejercicio cargado: 2025 (ejercicio
@@ -211,7 +211,7 @@ Interino desde octubre de 2021 (la fuente no da el dia, 01/10/2021 aproximado), 
 _note (data/):_
 
 ```text
-PDF oficial (texto nativo), publicado 09/07/2026 en el portal de transparencia propio del club (sección movida desde una URL vieja que daba 404 — ver Admin/sourcing/Brasil/Vitoria.md). Auditado por RSM Brasil Auditores Independentes Ltda. Se cargó la columna INDIVIDUAL/CONTROLADORA, no la Consolidado. El club reporta patrimonio neto NEGATIVO ("Passivo a descoberto") de R$300,309 millones al cierre — ver comentario de cabecera de data/vitoria-br-data.js para el detalle. Transcripción completa en "Clubes/Brasil/Vitoria/demonstracoes-financeiras-2025.md". Firmado por el presidente Fabio Rios Mota. Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024). 2024 y años anteriores: "Nenhum documento encontrado" en la sección de transparencia del club, confirmado navegando la página real.
+PDF oficial (texto nativo), publicado 09/07/2026 en el portal de transparencia propio del club (sección movida desde una URL vieja que daba 404 — ver Admin/sourcing/Brasil/Vitoria.md). Auditado por RSM Brasil Auditores Independentes Ltda. Se cargó la columna INDIVIDUAL/CONTROLADORA, no la Consolidado. El club reporta patrimonio neto NEGATIVO ("Passivo a descoberto") de R$300,309 millones al cierre — ver comentario de cabecera de data/br/vitoria-br-data.js para el detalle. Transcripción completa en "Clubes/Brasil/Vitoria/demonstracoes-financeiras-2025.md". Firmado por el presidente Fabio Rios Mota. Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024). 2024 y años anteriores: "Nenhum documento encontrado" en la sección de transparencia del club, confirmado navegando la página real.
 ```
 
 ## Otros

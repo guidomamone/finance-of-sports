@@ -1,14 +1,14 @@
 # corinthians-br — evidencia de carga
 
-Lo que había como comentario en `data/corinthians-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/corinthians-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/corinthians-br-data.js — Sport Club Corinthians Paulista, São Paulo, Brasil. NO es SAF: es
+data/br/corinthians-br-data.js — Sport Club Corinthians Paulista, São Paulo, Brasil. NO es SAF: es
 una sociedade civil de fins não econômicos (associação), fundada em 1910 — mismo tipo de entidad
 que Flamengo/Palmeiras (asociación multideportiva, NO sociedad anônima do futebol). clubId
 'corinthians-br' (CON GUIÓN, mismo criterio que banfield-ar/flamengo-br: bracket notation en
@@ -311,7 +311,7 @@ Interino desde el 26/05/2025, efectivado el 25/08/2025 (mandato hasta el 31/12/2
 _note (data/):_
 
 ```text
-PDF oficial (texto nativo, layout de "publicação legal" tipo página de diário para a capa, corpo do documento com camada de texto real), descarregado do portal de transparência oficial do Clube (a URL direta do PDF leva um query string ?rand= instável entre sessões — ver Admin/sourcing/Brasil/Corinthians.md). DRE auditada SEGMENTADA em 2 blocos (Segmento futebol / Segmento clube social e esportes amadores), não consolidada — ver comentário de cabeçalho de data/corinthians-br-data.js. Déficit real de R$181.766 mil, ano com nota de incerteza sobre continuidade operacional (pedido de RCE — Regime Centralizado de Execuções — para organizar dívidas cíveis) e saldo expressivo de contingências reconhecidas de exercícios passados. Convertido a USD com PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcrição completa em Clubes/Brasil/Corinthians/demonstracoes-financeiras-2023-2024.md.
+PDF oficial (texto nativo, layout de "publicação legal" tipo página de diário para a capa, corpo do documento com camada de texto real), descarregado do portal de transparência oficial do Clube (a URL direta do PDF leva um query string ?rand= instável entre sessões — ver Admin/sourcing/Brasil/Corinthians.md). DRE auditada SEGMENTADA em 2 blocos (Segmento futebol / Segmento clube social e esportes amadores), não consolidada — ver comentário de cabeçalho de data/br/corinthians-br-data.js. Déficit real de R$181.766 mil, ano com nota de incerteza sobre continuidade operacional (pedido de RCE — Regime Centralizado de Execuções — para organizar dívidas cíveis) e saldo expressivo de contingências reconhecidas de exercícios passados. Convertido a USD com PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcrição completa em Clubes/Brasil/Corinthians/demonstracoes-financeiras-2023-2024.md.
 ```
 
 ### corinthians-br-demonstracoes-2025

@@ -1,14 +1,14 @@
 # kashimaantlers — evidencia de carga
 
-Lo que había como comentario en `data/kashimaantlers-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/jp/kashimaantlers-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/kashimaantlers-data.js — Kashima Antlers (鹿島アントラーズ), primer club de
+data/jp/kashimaantlers-data.js — Kashima Antlers (鹿島アントラーズ), primer club de
 Japón cargado al sitio (sesión 2026-09-13, junto con otros 9 clubes de
 J.League: ver Admin/sourcing/Japón/_notas-generales.md para la metodología
 completa y el gotcha de fondo, resumido acá).

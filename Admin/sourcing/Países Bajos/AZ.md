@@ -19,7 +19,7 @@ En julio de 2025 el accionista Billy Beane vendió su 5% y Stichting AZ Alkmaar 
 ## Qué se cargó al sitio (sesión de onboarding de Países Bajos)
 
 **2 ejercicios cargados** (los más recientes de los 7 bajados): 2023/24 y 2024/25, en
-`data/az-nl-data.js` (`clubId: 'az-nl'`). Transcripciones completas vía `pdftotext -layout` en
+`data/nl/az-nl-data.js` (`clubId: 'az-nl'`). Transcripciones completas vía `pdftotext -layout` en
 `Clubes/Países Bajos/AZ/jaarrekening-2023-24.md` y `jaarrekening-2024-25.md`. Documento tipo
 "Jaarrekening" (solo estados contables, sin memoria narrativa como Ajax/PSV/Feyenoord). Tie-out
 verificado contra los 2 documentos (diferencia de EUR ~1-2 mil por redondeo de componentes,

@@ -1,14 +1,14 @@
 # hamburgersv-de — evidencia de carga
 
-Lo que había como comentario en `data/hamburgersv-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/de/hamburgersv-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/hamburgersv-de-data.js — Hamburger SV Fußball AG (Alemania, 2. Bundesliga).
+data/de/hamburgersv-de-data.js — Hamburger SV Fußball AG (Alemania, 2. Bundesliga).
 2 ejercicios REALES (2023/24, 2024/25), Jahresabschluss INDIVIDUAL de la
 Fußball AG. Transcripciones en Clubes/Alemania/Hamburger SV/
 fussball-ag-jahresabschluss-<ejercicio>.md.
@@ -102,14 +102,14 @@ _de data/clubs.js:_
 
 ```text
 Hamburger SV: se carga la Fußball AG (entidad de fútbol profesional), no el e.V. (club social) —
-ver comentario de cabecera de data/hamburgersv-de-data.js.
+ver comentario de cabecera de data/de/hamburgersv-de-data.js.
 ```
 
 _de data/club-leagues/de.js:_
 
 ```text
 Hamburger SV: 2. Bundesliga los 2 ejercicios (asciende a Bundesliga recién para 2025/26, fuera
-de los 2 ejercicios cargados — ver comentario de cabecera de data/hamburgersv-de-data.js).
+de los 2 ejercicios cargados — ver comentario de cabecera de data/de/hamburgersv-de-data.js).
 ```
 
 ## 2025

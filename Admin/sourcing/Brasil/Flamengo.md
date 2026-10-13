@@ -32,7 +32,7 @@
 - Contacto: flamengo.com.br/clube/transparencia (portal, requiere JS); notas de prensa
   individuales por año para sacar el link real del PDF.
 - **Cargado (2026-09-24): 2024 y 2025, los 2 ejercicios ya descargados arriba.** clubId
-  `flamengo-br`. Ver `data/flamengo-br-data.js` para el detalle completo de categorización/
+  `flamengo-br`. Ver `data/br/flamengo-br-data.js` para el detalle completo de categorización/
   verificación. 2022 y 2023 siguen pendientes (el link del PDF no se pudo extraer de la nota de
   prensa en esta sesión tampoco, mismo problema de SPA).
 - Color de marca: `#FF0000` — infobox de kit de en.wikipedia.org/wiki/CR_Flamengo (parámetro

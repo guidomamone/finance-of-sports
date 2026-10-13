@@ -1,14 +1,14 @@
 # realmadrid — evidencia de carga
 
-Lo que había como comentario en `data/realmadrid-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/es/realmadrid-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/realmadrid-data.js — Real Madrid C.F., Ejercicio 2024/2025 (1/7/2024 a 30/6/2025).
+data/es/realmadrid-data.js — Real Madrid C.F., Ejercicio 2024/2025 (1/7/2024 a 30/6/2025).
 
 Primer club español cargado al motor genérico. Fuente: "Informe Económico Real Madrid 2024-2025"
 (Cuentas Anuales CONSOLIDADAS, informe de auditoría incluido), descargado de
@@ -138,7 +138,7 @@ PDF oficial de 94 páginas, texto nativo (sin necesidad de OCR), publicado en la
 ```text
 Mercado de pases / Resultados deportivos / Títulos: NO onboardeados en esta sesión (alcance fue
 solo Finanzas, un ejercicio por club). Vacíos a propósito, mismo criterio que Vélez/Instituto (ver
-comentario en data/velez-data.js) — `pasesDataForClub`/`resultadosDataForClub`/`titulosDataForClub`
+comentario en data/ar/velez-data.js) — `pasesDataForClub`/`resultadosDataForClub`/`titulosDataForClub`
 en index.html ya manejan la ausencia de datos con `|| []`/`|| {}` sin romper.
 ```
 

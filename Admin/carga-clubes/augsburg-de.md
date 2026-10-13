@@ -1,14 +1,14 @@
 # augsburg-de — evidencia de carga
 
-Lo que había como comentario en `data/augsburg-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/de/augsburg-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/augsburg-de-data.js — Fußball-Club Augsburg 1907 GmbH & Co. KGaA
+data/de/augsburg-de-data.js — Fußball-Club Augsburg 1907 GmbH & Co. KGaA
 (Augsburg, Alemania). Uno de 5 clubes alemanes cargados en paralelo el
 2026-09-22 (país 'DE' / liga 'de-bundesliga' ya agregados a data/leagues.js
 por otra sesión). clubId = 'augsburg-de' (con guion, no 'augsburg' solo).

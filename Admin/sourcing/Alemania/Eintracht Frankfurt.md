@@ -27,7 +27,7 @@ los 2 ya bajados: buscar "Eintracht Frankfurt Fußball Aktiengesellschaft" en
 
 **Estado: CARGADO (Ejercicios 2024, 2025).** Último chequeo: 2026-09-22.
 
-`clubId`: `eintrachtfrankfurt-de`. `data/eintrachtfrankfurt-de-data.js` (motor genérico), 2 ejercicios
+`clubId`: `eintrachtfrankfurt-de`. `data/de/eintrachtfrankfurt-de-data.js` (motor genérico), 2 ejercicios
 desde los 2 Konzernabschluss ya bajados (`konzernabschluss-2023-24.md` -> año 2024,
 `konzernabschluss-2024-25.md` -> año 2025). `fiscalYearStart:'07-01'` confirmado en el propio
 documento ("Geschäftsjahr vom 01.07.2023 bis zum 30.06.2024" / "...01.07.2024 bis zum 30.06.2025").
@@ -45,7 +45,7 @@ impresas en la Konzern-GuV, no la suma de las líneas redondeadas. Detalle compl
 y el despeje del campo `tax` (que en el extracto del Unternehmensregister salta de numeración entre
 "Ergebnis nach Steuern" y "Konzernjahresüberschuss/-fehlbetrag vor nicht beherrschenden Anteilen",
 sin una fila "Sonstige Steuern" impresa con nombre) en el comentario de cabecera de
-`data/eintrachtfrankfurt-de-data.js`.
+`data/de/eintrachtfrankfurt-de-data.js`.
 
 `brandColor`: `#E1000F` (Pantone PMS 2347 C) — sourced de teamcolorcodes.com/footylogos.com (fan
 sites, no hay hex oficial publicado), cruzado contra de.wikipedia.org/wiki/Eintracht_Frankfurt cuyo

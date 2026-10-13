@@ -1,14 +1,14 @@
 # guarani-br — evidencia de carga
 
-Lo que había como comentario en `data/guarani-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/guarani-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/guarani-br-data.js — Guarani Futebol Clube (Campinas, São Paulo, Brasil).
+data/br/guarani-br-data.js — Guarani Futebol Clube (Campinas, São Paulo, Brasil).
 EM RECUPERAÇÃO JUDICIAL (aprovada em assembleia de credores el 27/2/2023, homologada
 por el juzgado el 3/6/2024) — associação civil sem fins lucrativos, NO es SAF. 2 ejercicios
 cargados: 2024 y 2025 (ejercicio social = AÑO CALENDARIO completo, 1°/1 a 31/12, confirmado

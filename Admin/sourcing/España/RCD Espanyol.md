@@ -28,7 +28,7 @@
   2024-25 SÍ es un escaneo con ruido de OCR real en la cuenta de pérdidas y ganancias (varios dígitos
   mal leídos, y la sección final de impuestos/resultado salió directamente ilegible en la
   transcripción) — se re-renderizó la página 12 del PDF a imagen (300 DPI) y se leyó directo con el
-  Read tool, ver comentario de cabecera de `data/espanyol-es-data.js`. FX: `EUR@2024-06-30` y
+  Read tool, ver comentario de cabecera de `data/es/espanyol-es-data.js`. FX: `EUR@2024-06-30` y
   `EUR@2025-06-30` (cierre BCE, ya en `data/currency-map.js`). Liga: 2023/24 (Segunda División) queda
   FUERA de `data/club-leagues/es.js` a propósito; 2024/25 sí lleva `es-laliga`, verificado contra
   Wikipedia/UEFA. Color de marca: `#007fc8` — Wikipedia en español (bicolor blanco/azul a rayas; con

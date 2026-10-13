@@ -1,14 +1,14 @@
 # santafe-co — evidencia de carga
 
-Lo que había como comentario en `data/santafe-co-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/co/santafe-co-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/santafe-co-data.js — Independiente Santa Fe S.A. En Reorganización
+data/co/santafe-co-data.js — Independiente Santa Fe S.A. En Reorganización
 (Bogotá, Colombia). clubId lleva el país al final (`santafe-co`) por la
 convención de Admin/CONVENCIONES.md. Ejercicio 2025 = REAL, único
 ejercicio cargado a propósito (mismo criterio que Envigado/Once Caldas).
@@ -166,7 +166,7 @@ Méndez: asumió en la asamblea extraordinaria del 1/8/2019 (reemplazó a Juan A
 _note (data/):_
 
 ```text
-Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 860009807). Texto nativo, incluye el Estado de Resultados Integral primario completo. El club está en proceso de reorganización (Ley 1116) ante Supersociedades; 11 registros distintos existen en SIIS bajo este NIT, solo se cargó el ejercicio más reciente (2025) esta sesión. El impuesto de renta diferido de 2025 fue un BENEFICIO neto (mayor al gasto corriente), lo que hizo que la Utilidad Neta terminara por encima de la Utilidad Operacional — ver comentario de cabecera de data/santafe-co-data.js. Transcripción completa en Clubes/Colombia/Independiente Santa Fe/estados-financieros-2025.md.
+Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 860009807). Texto nativo, incluye el Estado de Resultados Integral primario completo. El club está en proceso de reorganización (Ley 1116) ante Supersociedades; 11 registros distintos existen en SIIS bajo este NIT, solo se cargó el ejercicio más reciente (2025) esta sesión. El impuesto de renta diferido de 2025 fue un BENEFICIO neto (mayor al gasto corriente), lo que hizo que la Utilidad Neta terminara por encima de la Utilidad Operacional — ver comentario de cabecera de data/co/santafe-co-data.js. Transcripción completa en Clubes/Colombia/Independiente Santa Fe/estados-financieros-2025.md.
 ```
 
 ## Otros

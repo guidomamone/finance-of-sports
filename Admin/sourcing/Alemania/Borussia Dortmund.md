@@ -61,7 +61,7 @@ House (18 ejercicios, ver `Admin/sourcing/Inglaterra/Arsenal.md`).
 
 **CARGADO al sitio**: Ejercicios 2024 (2023/24) y 2025 (2024/25), ambos desde
 `geschaeftsbericht-2024-25.pdf` (que trae el ejercicio 2023/24 completo como columna comparativa —
-válido porque son cuentas HGB nominales en EUR sin reexpresión, ver `data/dortmund-de-data.js`). Se
+válido porque son cuentas HGB nominales en EUR sin reexpresión, ver `data/de/dortmund-de-data.js`). Se
 usó el nivel HGB KGaA standalone ("Annual Financial Statements"), no el IFRS Group consolidado,
 por consistencia con el resto de clubes alemanes ya cargados. Los 5 ejercicios más viejos
 (2018/19-2022/23) quedan sin cargar (prioridad de esta sesión: los 2 más recientes).

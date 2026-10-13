@@ -40,7 +40,7 @@
   tener más PDFs bajo links genéricos "Descargar" no identificados por texto en esta sesión).
 - Contacto: `osasuna.es/en/transparency`.
 - **CARGADO al sitio (sesión 2026-09-22, Ejercicios 2021/2022 y 2023/2024)**: ver
-  `data/osasuna-es-data.js`. El ejercicio 2021/2022 tuvo varias cifras de la Nota 16.1 con coma en vez
+  `data/es/osasuna-es-data.js`. El ejercicio 2021/2022 tuvo varias cifras de la Nota 16.1 con coma en vez
   de punto de miles por un error de OCR/extracción (ej. "541,994" en vez de "541.994") — corregidas
   verificando que la fila cerrara exacta contra el total impreso de esa nota. El ejercicio 2023/2024
   desglosa ingresos/gastos con sub-letras directo en la Cuenta de Pérdidas y Ganancias, mucho más fino

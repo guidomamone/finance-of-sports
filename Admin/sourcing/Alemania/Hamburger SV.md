@@ -50,7 +50,7 @@ PDF real — un "404 silencioso". La URL vigente hoy usa un CDN distinto
 (`hsv.de/fileadmin/user_upload/HSV_EV/Dokumente/...`) tiene el mismo problema y no se resolvió esta
 sesión — pendiente.
 
-## Carga a `data/hamburgersv-de-data.js` (sesión 2026-09-25)
+## Carga a `data/de/hamburgersv-de-data.js` (sesión 2026-09-25)
 
 Cargados los 2 ejercicios más recientes de la Fußball AG/KGaA (perímetro correcto): 2023/24 (clave
 2024) y 2024/25 (clave 2025). El e.V. matriz NO se cargó, confirmando el criterio ya documentado
@@ -64,7 +64,7 @@ este archivo ocurre para la temporada 2025/26, posterior al último ejercicio ca
 **Ambos Jahresabschluss llegaron MUY garbled en la conversión PDF→Markdown** (dígitos y separadores
 de miles mezclados en la tabla de GuV/Bilanz, ej. "10.ErgebnisnachSteuem 0080[.......247327649"). Se
 reconstruyó cruzando el Lagebericht ("iii) Ertragslage"), que transcribió limpio en prosa con cada
-componente en TEUR — ver comentario de cabecera de `data/hamburgersv-de-data.js` para el detalle
+componente en TEUR — ver comentario de cabecera de `data/de/hamburgersv-de-data.js` para el detalle
 completo, incluida la razón por la que `tax` de cada año es un plug (la fila de impuesto a las
 ganancias quedó ilegible en los 2 ejercicios) y por la que `grossDebt`/`cash` no se cargaron (el
 Bilanz-Passiva/Aktiva también llegó garbled, sin poder confirmarlo con confianza).

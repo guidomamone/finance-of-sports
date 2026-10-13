@@ -16,7 +16,7 @@
   interactivo); fcf.com.br (federación, al menos tiene el ejercicio 2020-2021).
 - Último chequeo: 2026-09-12.
 - **Cargado (sesión 2026-09-24):** ejercicio 2021 (año calendario, columna "año corriente" del PDF
-  comparativo `demonstracoes-financeiras-2020-2021.pdf`, Controladora), en `data/chapecoense-br-data.js`.
+  comparativo `demonstracoes-financeiras-2020-2021.pdf`, Controladora), en `data/br/chapecoense-br-data.js`.
   El documento tiene una inconsistencia interna real entre su DRE (pág. 7, imagen dentro del PDF) y
   sus Notas explicativas de detalle (texto nativo) — ver el comentario de cabecera del archivo de
   datos para el detalle completo y cómo se resolvió (se usaron las Notas para categorizar, y el

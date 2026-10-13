@@ -32,7 +32,7 @@
 // USO:
 //   node tools/dentro-de-otro.mjs --medir                        backtest en los años completos (no escribe)
 //   node tools/dentro-de-otro.mjs --todos | --club <id>          ENSAYO: lista lo que marcaría
-//   node tools/dentro-de-otro.mjs --todos | --club <id> --escribir   lo escribe en data/<club>-data.js (la marca) y en
+//   node tools/dentro-de-otro.mjs --todos | --club <id> --escribir   lo escribe en data/<país>/<club>-data.js (la marca) y en
 //                                                                Admin/carga-clubes/<club>.md (su nota, en la meta del año), sube ASSET_V,
 //                                                                corre los generadores y audit.js; si da P0/P1, revierte todo.
 // ============================================================================
@@ -126,8 +126,8 @@ function medir(M) {
 
 function cierreDe(txt, abre) { let n = 0; for (let i = abre; i < txt.length; i++) { if (txt[i] === '{') n++; else if (txt[i] === '}') { n--; if (!n) return i; } } return -1; }
 
-// Escribe las marcas de un club en su data/<club>-data.js: agrega (o completa) `incluidoEn:{…}` en el bloque del año de <club>FiscalYearMeta.
-// Saca de un texto de data/<club>-data.js TODAS las marcas que escribió esta tool (y su comentario). Las de un ajuste manual quedan.
+// Escribe las marcas de un club en su data/<país>/<club>-data.js: agrega (o completa) `incluidoEn:{…}` en el bloque del año de <club>FiscalYearMeta.
+// Saca de un texto de data/<país>/<club>-data.js TODAS las marcas que escribió esta tool (y su comentario). Las de un ajuste manual quedan.
 export function limpiar(t) {
   t = t.replace(/^[ \t]*\/\/ tools\/dentro-de-otro\.mjs .*\n/gm, '');
   t = t.replace(/(,\s*)?\b\w+:\{ en:'[^']*', posible:true, por:'precedente' \}/g, '');

@@ -43,7 +43,7 @@
   `futebolpaulista.com.br/Repositorio/Institucional/<año>/` (mirror de la federación, usado solo
   para 2017).
 - **Cargado al sitio (sesión 2026-09-24)**: 2 ejercicios, `clubId` `corinthians-br`, en
-  `data/corinthians-br-data.js` — 2024 (de `demonstracoes-financeiras-2023-2024.pdf`, déficit real de
+  `data/br/corinthians-br-data.js` — 2024 (de `demonstracoes-financeiras-2023-2024.pdf`, déficit real de
   R$181.766 mil, DRE auditada segmentada en Futebol/Clube social) y 2025 (de
   `demonstracoes-financeiras-2024-2025.pdf`, prejuízo real de R$143.441 mil, DRE ya consolidada en un
   solo cuerpo — ver comentario de cabecera del archivo de datos para el detalle completo de

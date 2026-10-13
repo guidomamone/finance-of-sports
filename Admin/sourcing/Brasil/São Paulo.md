@@ -38,11 +38,11 @@
 
 ## Estado de carga (2026-09-24)
 
-- **2 ejercicios cargados en `data/saopaulo-br-data.js`** (clubId `saopaulo-br`): **2023** (de
+- **2 ejercicios cargados en `data/br/saopaulo-br-data.js`** (clubId `saopaulo-br`): **2023** (de
   `demonstracoes-financeiras-2022-2023.pdf`, exercício corrente de ese documento) y **2024** (de
   `demonstracoes-financeiras-2023-2024.pdf`, exercício corrente de ese documento). Ambos años
   reconciliaron EXACTO contra "TOTAL DAS RECEITAS OPERACIONAIS"/"Déficit do exercício" impresos —
-  ver el comentario de cabecera de `data/saopaulo-br-data.js` para el detalle completo de
+  ver el comentario de cabecera de `data/br/saopaulo-br-data.js` para el detalle completo de
   categorización, FX y verificación.
 - El documento 2022-2023 es formato "publicación legal" (layout de diario, 4 columnas) — la
   transcripción `.md` existente intercala filas del Balanço y la DRE de forma poco confiable para

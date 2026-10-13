@@ -40,7 +40,7 @@
     prensa/portal deportivo que suela adjuntar el documento completo (patrón que funcionó en
     Brasil, sección 3 del skill).
 - **Duda para Guido / criterio del sitio**: ninguna, esta ficha no generó preguntas de criterio.
-- **CARGADO al sitio (2026-09-25)**: ejercicio 2024, `data/dinamozagreb-hr-data.js` (clubId
+- **CARGADO al sitio (2026-09-25)**: ejercicio 2024, `data/hr/dinamozagreb-hr-data.js` (clubId
   `dinamozagreb-hr`, primer club de Croacia — país nuevo). Tie-out exacto contra el propio
   documento. Duda de categorización anotada en `Admin/dudas-por-club.md`: "Članarine" (cuotas de
   socios) está agrupado dentro de "Prihodi od ulaznica" (ingresos de entradas) en la plantilla

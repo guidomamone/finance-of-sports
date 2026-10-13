@@ -30,7 +30,7 @@ OCR no es limpio de entrada — el cuerpo del documento sí lo es.
 
 ## CARGADO al sitio (2026-09-22)
 
-Cargados los 2 ejercicios ya bajados, en `data/everton-gb-data.js` (clubId `everton-gb`). Entidad
+Cargados los 2 ejercicios ya bajados, en `data/gb/everton-gb-data.js` (clubId `everton-gb`). Entidad
 legal confirmada en la carátula de los 2 documentos: "Everton Football Club Company, Limited"
 (Companies House n° 00036624), cuentas CONSOLIDADAS del grupo. Ejercicio cerrado el 30 de junio,
 confirmado en la carátula y en el propio cuerpo de los 2 balances ("FOR THE YEAR ENDED 30 JUNE
@@ -47,7 +47,7 @@ confirmado en la carátula y en el propio cuerpo de los 2 balances ("FOR THE YEA
 - **FX**: GBP es moneda nueva, todavía sin entrada en `FX_CLOSE` (`data/currency-map.js`) — se usó
   `fxRef:'GBP@2024-06-30'` y `fxRef:'GBP@2025-06-30'`, sin `fx` literal (ninguno de los 2 documentos
   declara un tipo de cambio propio a USD). Pendiente de otra sesión agregar esas 2 entradas a
-  `FX_CLOSE` (mismo gotcha ya documentado en `data/arsenal-gb-data.js`, el otro club inglés cargado).
+  `FX_CLOSE` (mismo gotcha ya documentado en `data/gb/arsenal-gb-data.js`, el otro club inglés cargado).
 - **Ganancia por venta de jugadores**: el P&L solo reporta un renglón NETO "Profit on player
   trading" (no desglosa ingreso/costo bruto), cargado como línea de `revenueLines`
   (`normalizedCategory:'player_sales'`).
@@ -60,7 +60,7 @@ confirmado en la carátula y en el propio cuerpo de los 2 balances ("FOR THE YEA
   (junto al "Profit on disposal of tangible fixed assets"), a falta de una categoría dedicada a
   "ganancia por reestructuración societaria/desconsolidación" distinta de "venta de activos
   tangibles". No es un dato que falte, es una aproximación de categorización — ver el comentario de
-  cabecera de `data/everton-gb-data.js` para el detalle completo.
+  cabecera de `data/gb/everton-gb-data.js` para el detalle completo.
 - **Gestión**: `gestionesByClub['everton-gb']` tiene 2 entradas separadas — `moshiri` (Ejercicio
   2024, controlaba el club en toda su extensión, la venta a Friedkin se firmó el 22/9/2024 y se
   completó el 18/12/2024, ambas posteriores al cierre) y `friedkin` (Ejercicio 2025, el cambio de

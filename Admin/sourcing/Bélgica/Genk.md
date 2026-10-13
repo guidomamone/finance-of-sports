@@ -34,7 +34,7 @@ VOL-VZW (distinto de Anderlecht/Gent, NV/VOL-kap): tiene una línea propia "Lidg
 schenkingen, legaten en subsidies" (cuotas+donaciones+subsidios) que se categorizó
 como `member_dues`, y movimientos de reservas libres de impuesto/impuesto diferido
 por 7.225.620 EUR de plusvalías de transferencias diferidas a ejercicios futuros (ver
-comentario de cabecera de `data/genk-be-data.js`). Ver ese archivo para el detalle
+comentario de cabecera de `data/be/genk-be-data.js`). Ver ese archivo para el detalle
 completo y el tie-out verificado. Color de marca: `#00468F` (azul, logotyp.us,
 confirmado contra la identidad "blauw-wit"/azul-blanco de Wikipedia — se usó el
 acento no blanco), verificado 2026-09-25.

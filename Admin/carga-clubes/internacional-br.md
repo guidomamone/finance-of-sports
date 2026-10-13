@@ -1,14 +1,14 @@
 # internacional-br — evidencia de carga
 
-Lo que había como comentario en `data/internacional-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/internacional-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/internacional-br-data.js — Sport Club Internacional, Porto Alegre-RS, Brasil. Associação
+data/br/internacional-br-data.js — Sport Club Internacional, Porto Alegre-RS, Brasil. Associação
 civil SEM fins lucrativos (NÃO é SAF/Sociedade Anônima do Futebol), multideportiva (futebol
 masculino/feminino, categorias de base "Celeiro de Ases"). Publica "Demonstrações contábeis" +
 "Relatório do auditor independente" todos os anos en su Portal da Transparência. clubId
@@ -144,7 +144,7 @@ Revenue de 601,873 M BRL (= 396,755 Receita líquida impresa + 205,118 Outras re
 de ingreso) — diferencia de 20 mil BRL (0,003%), rastreada a que la propia Nota 22 del PDF 2025 no
 cierra perfecto: sus 4 líneas de "Deduções" (11.104+44.446+3.123+14.439 = 73.112 mil) suman 20 mil
 menos que el total "Deduções" que el documento imprime (73.132 mil) — un redondeo del propio
-documento, no un error de carga (mismo espíritu que los redondeos del propio documento anotados en data/racing-data.js). expenseLines suman
+documento, no un error de carga (mismo espíritu que los redondeos del propio documento anotados en data/ar/racing-data.js). expenseLines suman
 -527,236 M BRL contra un officialTotalExpenses de 527,237 M BRL (diferencia de 1 mil BRL,
 rastreada de la misma forma a la Nota 23: la suma de sus 21 líneas da 437.229 mil contra el
 437.230 mil impreso). Con los officialTotal* tomados de los SUBTOTALES IMPRESOS (no de mi propia

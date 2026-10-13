@@ -4,7 +4,7 @@
 //
 // POR QUÉ EXISTE (pedido de Guido, 2026-09-30): "cuando Claude API resuelve algo que Jev no sabía resolver, debería quedar documentado en
 // algún lado para que Jev la próxima vez sepa". Hasta la Versión 318, Jev (tools/jev-categorizar.mjs) y el escalón de precedente
-// (categorizar-claude.mjs precedente()) solo aprendían de lo YA CARGADO en el sitio (data/*-data.js). Lo que Claude categorizaba quedaba en
+// (categorizar-claude.mjs precedente()) solo aprendían de lo YA CARGADO en el sitio (data/*/*-data.js). Lo que Claude categorizaba quedaba en
 // el `.categorias.json` de ese documento (Generados/) y nadie lo volvía a leer: el año siguiente del mismo club pagaba a Claude por el
 // mismo rubro otra vez.
 //
@@ -66,7 +66,7 @@ export function registrarAprendidas({ club, year, md, modelo, rubros }) {
 }
 
 // Lo aprendido, en el MISMO formato que allLines() de categorizar-claude.mjs ({club, year, side, label, cat}), sin lo que producción ya
-// tiene (`produccion`: esas mismas líneas de data/*-data.js), con confianza >= minConf. La última respuesta por (club, lado, rubro) gana.
+// tiene (`produccion`: esas mismas líneas de data/*/*-data.js), con confianza >= minConf. La última respuesta por (club, lado, rubro) gana.
 export function lineasAprendidas({ produccion = [], minConf = MIN_REGISTRO } = {}) {
   if (!existsSync(ARCHIVO)) return [];
   const enProd = new Set(produccion.map((l) => clave(l.club, l.side, l.label)));

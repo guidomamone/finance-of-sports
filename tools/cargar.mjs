@@ -59,7 +59,7 @@
 //     (audit.js checkFuentesPublicas: las salvedades públicas las deriva sourceCaveats() de los campos). Y una línea en
 //     Admin/sourcing/<País>/<Club>.md si ese archivo existe.
 //
-// --escribir (solo si no quedó NINGÚN motivo para frenar): inserta el año en las tres estructuras del data/<club>-data.js y en sources{},
+// --escribir (solo si no quedó NINGÚN motivo para frenar): inserta el año en las tres estructuras del data/<país>/<club>-data.js y en sources{},
 // la fila de liga en data/club-leagues/<iso2>.js, la cotización de mercado nueva en FX_CLOSE si hace falta, la línea de fuentes/, sube
 // ASSET_V (la constante Y cada `?v=` literal de index.html, salvo que ya esté subido respecto de HEAD), corre los 4 generadores y
 // `node tools/audit.js --quiet`. Si la auditoría da algún P0/P1, o cualquier paso falla, RESTAURA cada archivo tocado y borra lo creado

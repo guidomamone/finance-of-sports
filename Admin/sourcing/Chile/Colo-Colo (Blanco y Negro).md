@@ -24,7 +24,7 @@
   desde la ficha, no por URL directa); atajo Bolsa de Santiago para el año más reciente:
   apiws.bolsadesantiago.com/ifrs/newobtenerpdf.asp?nemo=COLO+COLO.
 - Último chequeo: 2026-09-12.
-- **CARGADO al sitio (2026-09-25)**: ejercicios 2024, 2023 y 2022 en `data/colocolo-cl-data.js`
+- **CARGADO al sitio (2026-09-25)**: ejercicios 2024, 2023 y 2022 en `data/cl/colocolo-cl-data.js`
   (clubId `colocolo-cl`), verificados tie-out exacto (revenue/expenses/PAT) contra los totales
   impresos de cada documento. Fuente: `sourceId` `colocolo-cl-estados-financieros-2024/2023/2022`
   (ver `data/clubs.js` → `sources`). Tipo de cambio: dólar observado de cierre (`fx` literal,

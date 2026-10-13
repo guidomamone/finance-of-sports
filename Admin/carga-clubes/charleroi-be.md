@@ -1,14 +1,14 @@
 # charleroi-be — evidencia de carga
 
-Lo que había como comentario en `data/charleroi-be-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/be/charleroi-be-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/charleroi-be-data.js — R. Charleroi S.C. (SA Sporting du Pays de
+data/be/charleroi-be-data.js — R. Charleroi S.C. (SA Sporting du Pays de
 Charleroi, Bélgica). Cargado en paralelo con otros 3 clubes nuevos (sesión
 de batch de onboarding).
 

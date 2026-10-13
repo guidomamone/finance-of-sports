@@ -1,14 +1,14 @@
 # newcastle-gb — evidencia de carga
 
-Lo que había como comentario en `data/newcastle-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/newcastle-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/newcastle-gb-data.js — Newcastle United (Inglaterra, Premier League), clubId 'newcastle-gb'.
+data/gb/newcastle-gb-data.js — Newcastle United (Inglaterra, Premier League), clubId 'newcastle-gb'.
 
 Fuente: cuentas CONSOLIDADAS del grupo de Newcastle United Limited (Companies House n° 02529667),
 depositadas en Companies House UK. Ejercicio cerrado el 30 de junio de 2025 (temporada 2024/25),
@@ -107,5 +107,5 @@ officialTotalExpenses (sin exceptional_items, este ejercicio no tuvo ninguno).
 _note (data/):_
 
 ```text
-Transcripción completa en Clubes/Inglaterra/Newcastle United/newcastle-united-group-accounts-2024-25.md. Amanda Staveley renunció al directorio y desinvirtió su participación en julio de 2024. Ver comentario de cabecera de data/newcastle-gb-data.js para el detalle completo de categorización.
+Transcripción completa en Clubes/Inglaterra/Newcastle United/newcastle-united-group-accounts-2024-25.md. Amanda Staveley renunció al directorio y desinvirtió su participación en julio de 2024. Ver comentario de cabecera de data/gb/newcastle-gb-data.js para el detalle completo de categorización.
 ```

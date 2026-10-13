@@ -1,14 +1,14 @@
 # udechile-cl — evidencia de carga
 
-Lo que había como comentario en `data/udechile-cl-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/cl/udechile-cl-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/udechile-cl-data.js — Universidad de Chile (Azul Azul S.A.), Santiago,
+data/cl/udechile-cl-data.js — Universidad de Chile (Azul Azul S.A.), Santiago,
 Chile. clubId = 'udechile-cl' (sufijo de país, ver CONVENCIONES.md Versión
 129 — 'udechile' a secas lo marca audit.js como clubid-sin-pais, P1). Primer
 club chileno cargado en finance-of-sports. 3 ejercicios REALES cargados:

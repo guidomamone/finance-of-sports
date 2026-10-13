@@ -1,14 +1,14 @@
 # ituano — evidencia de carga
 
-Lo que había como comentario en `data/ituano-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/ituano-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/ituano-data.js — Ituano Futebol Clube (Itu, SP, Brasil).
+data/br/ituano-data.js — Ituano Futebol Clube (Itu, SP, Brasil).
 NO es SAF: sigue siendo una associação/clube tradicional (el Patrimônio
 Líquido se compone de "Patrimonio Social" + reservas, no de capital social).
 Ejercicio social = ANO CALENDÁRIO (1/1/2024 a 31/12/2024), ver
@@ -18,7 +18,7 @@ FUENTE: `Clubes/Brasil/Ituano/relatorio-auditoria-2024.pdf` (17 páginas,
 texto nativo, vía pdftotext -layout), transcripción completa en
 `relatorio-auditoria-2024.md` en la misma carpeta. Trae Balanço Patrimonial,
 DRE, Mutações do PL, Fluxos de Caixa y Notas Explicativas — a diferencia del
-documento de Mirassol (ver data/mirassol-data.js), acá SÍ están las
+documento de Mirassol (ver data/br/mirassol-data.js), acá SÍ están las
 demonstrações completas, con la DRE desglosada línea por línea.
 
 EJERCICIO EN DÉFICIT: R$ (7.063.131,20). Los 4 subtotales de la DRE y el

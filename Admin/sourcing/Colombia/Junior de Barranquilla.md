@@ -10,7 +10,7 @@
 - Pendiente: años anteriores (10 registros SIIS bajo el mismo NIT, no explorados).
 - Contacto: siis.ia.supersociedades.gov.co (NIT 900456729).
 - **CARGADO al sitio (sesión 2026-09-22, Ejercicio 2025 únicamente)**: ver
-  `data/junior-co-data.js`. Notas limpias, con subtotales que reconcilian exacto en cada una — la
+  `data/co/junior-co-data.js`. Notas limpias, con subtotales que reconcilian exacto en cada una — la
   Nota de Impuesto de Renta confirma la "Utilidad antes de provisión para impuesto sobre la renta"
   como cifra propia, lo que permitió verificar la reconstrucción completa sin ningún residuo. fx
   usado: TRM oficial al 31/12/2025 ($3.757,08 COP/USD) — el documento no declara su propio tipo de

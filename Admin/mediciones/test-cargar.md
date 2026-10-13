@@ -24,7 +24,7 @@ valioso de este informe es la sección 4: la lista de problemas de etapas anteri
 
 1. Worktree en el scratchpad (`git worktree add --detach`), con `tools/` del working tree, una copia de `Generados/`, los 18 PDFs y las
    keys enlazadas. Para cada documento: el `.md` reemplazado por su `.mistral-redo.md` (lo que el pipeline produce hoy; 16 de 18),
-   el año BORRADO de `data/<club>-data.js` (las tres estructuras + su fuente) y de `data/club-leagues/<iso2>.js`, sus derivados
+   el año BORRADO de `data/<país>/<club>-data.js` (las tres estructuras + su fuente) y de `data/club-leagues/<iso2>.js`, sus derivados
    (`.rubros/.jev/.categorias/.briefing`) borrados, y una verificación sintética `listo` (el ejercicio ya está verificado a mano en
    producción) para que el pipeline vaya directo a la etapa 3.
 2. `node tools/pipeline.mjs --ejecutar --lista Admin/bt.txt --limit 0 --max-paginas 0` en el worktree: etapas 3 (preparar), 5 (glosa,

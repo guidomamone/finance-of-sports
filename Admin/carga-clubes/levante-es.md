@@ -1,14 +1,14 @@
 # levante-es — evidencia de carga
 
-Lo que había como comentario en `data/levante-es-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/es/levante-es-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/levante-es-data.js — Levante Unión Deportiva, S.A.D. y Sociedades Dependientes (clubId
+data/es/levante-es-data.js — Levante Unión Deportiva, S.A.D. y Sociedades Dependientes (clubId
 'levante-es'), Ejercicio 2024/25 único (1/7/2024 a 30/6/2025, confirmado en la carátula: "EJERCICIO
 TERMINADO EL 30 DE JUNIO 2025"). Es el único ejercicio con transcripción disponible para este club.
 
@@ -158,7 +158,7 @@ Quico Catalán: presidente desde 2010 (solo el año; dia 01) hasta el 4/9/2023.
 _note (data/):_
 
 ```text
-PDF oficial, cuentas CONSOLIDADAS del grupo (Levante UD S.A.D. + Levante UD Nuevos Desarrollos S.L.U. + Linkshow S.L.U.). Transcripción completa en Clubes/España/Levante UD/cuentas-anuales-consolidadas-2024-2025.md. Temporada jugada en Segunda División (el ascenso a Primera se definió al final de ESTE ejercicio, vía playoff de junio de 2025, para la temporada 2025/26 — ver aviso completo en el comentario de cabecera de data/levante-es-data.js). Cargas sociales prorrateadas por aproximación al no venir separadas por sector en el documento.
+PDF oficial, cuentas CONSOLIDADAS del grupo (Levante UD S.A.D. + Levante UD Nuevos Desarrollos S.L.U. + Linkshow S.L.U.). Transcripción completa en Clubes/España/Levante UD/cuentas-anuales-consolidadas-2024-2025.md. Temporada jugada en Segunda División (el ascenso a Primera se definió al final de ESTE ejercicio, vía playoff de junio de 2025, para la temporada 2025/26 — ver aviso completo en el comentario de cabecera de data/es/levante-es-data.js). Cargas sociales prorrateadas por aproximación al no venir separadas por sector en el documento.
 ```
 
 ## Otros

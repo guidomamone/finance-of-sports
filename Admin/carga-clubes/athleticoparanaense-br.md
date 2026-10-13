@@ -1,14 +1,14 @@
 # athleticoparanaense-br — evidencia de carga
 
-Lo que había como comentario en `data/athleticoparanaense-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/athleticoparanaense-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/athleticoparanaense-br-data.js — Club Athletico Paranaense (Curitiba, Paraná, Brasil). Sigue
+data/br/athleticoparanaense-br-data.js — Club Athletico Paranaense (Curitiba, Paraná, Brasil). Sigue
 siendo ASSOCIAÇÃO (NO se convirtió a SAF), pero publica "Demonstrações Financeiras" auditadas
 (BDO RCS Auditores Independentes) todos los años, buena cobertura histórica. clubId CON GUIÓN
 desde el arranque: 'athleticoparanaense-br' (mismo criterio que banfield-ar), bracket notation en

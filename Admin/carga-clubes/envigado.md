@@ -1,14 +1,14 @@
 # envigado — evidencia de carga
 
-Lo que había como comentario en `data/envigado-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/co/envigado-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/envigado-data.js — Envigado Fútbol Club S.A. (Envigado, Colombia).
+data/co/envigado-data.js — Envigado Fútbol Club S.A. (Envigado, Colombia).
 Segundo club colombiano cargado en finance-of-sports (junto con Once
 Caldas, misma sesión). Ejercicio 2025 = REAL, único ejercicio cargado a
 propósito: SIIS tiene 10 ejercicios consecutivos (2016-2025) disponibles
@@ -142,7 +142,7 @@ Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 900.470.848). PDF esca
 ### gestionesByClub.envigado
 
 ```text
-gestionesByClub: mismo criterio que Once Caldas (ver comentario en data/oncecaldas-data.js) —
+gestionesByClub: mismo criterio que Once Caldas (ver comentario en data/co/oncecaldas-data.js) —
 entrada genérica "Gestión actual" para que el selector "Por gestión" tenga al menos 1 opción, sin
 atribuir un nombre propio que no se confirmó con confianza (la firma del Representante Legal en
 el PDF escaneado salió parcialmente ilegible en la transcripción OCR de esta sesión).

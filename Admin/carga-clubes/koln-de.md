@@ -1,14 +1,14 @@
 # koln-de — evidencia de carga
 
-Lo que había como comentario en `data/koln-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/de/koln-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/koln-de-data.js — 1. FC Köln GmbH & Co. KGaA (Köln, Alemania).
+data/de/koln-de-data.js — 1. FC Köln GmbH & Co. KGaA (Köln, Alemania).
 Uno de 5 clubes alemanes cargados en paralelo el 2026-09-22 (Bundesliga).
 País 'DE' y liga 'de-bundesliga' ya existían en data/leagues.js (agregados
 por otra sesión). clubId 'koln-de' (con guion) porque hay otros clubes
@@ -152,7 +152,7 @@ _de data/clubs.js:_
 ```text
 Alemania (sesión 2026-09-22): PAÍS NUEVO, 5 clubes de Bundesliga. `fiscalYearStart:'07-01'`
 (ejercicio 1/7-30/6, igual que España) para los 4 primeros; VfB Stuttgart es la excepción, su
-ejercicio es año CALENDARIO (confirmado en el propio documento, ver data/stuttgart-de-data.js).
+ejercicio es año CALENDARIO (confirmado en el propio documento, ver data/de/stuttgart-de-data.js).
 ```
 
 _de data/club-leagues/de.js:_

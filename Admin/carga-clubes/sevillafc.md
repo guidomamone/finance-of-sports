@@ -1,14 +1,14 @@
 # sevillafc — evidencia de carga
 
-Lo que había como comentario en `data/sevillafc-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/es/sevillafc-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/sevillafc-data.js — Sevilla Fútbol Club, S.A.D., Ejercicio 2024/2025 (1/7/2024 a 30/6/2025).
+data/es/sevillafc-data.js — Sevilla Fútbol Club, S.A.D., Ejercicio 2024/2025 (1/7/2024 a 30/6/2025).
 
 Un solo ejercicio (alcance de esta sesión: sumar clubes, no profundizar años). Fuente: "Cuentas
 Anuales" oficiales, descargadas de la página de la Junta General de Accionistas
@@ -25,7 +25,7 @@ Cifras en EUR MILLONES nativos (documento en miles de €, dividido por 1.000 al
 impreso leído como decimal ya da millones, mismo criterio que Real Madrid/Barcelona). Tipo de
 cambio EUR/USD 1,172 al 30/6/2025. `fx` en fiscalYearMeta va INVERTIDO (0,8532 = 1/1,172, EUR por
 1 USD, mismo sentido que ARS/COP/BRL/MXN/JPY en el resto del sitio) — ver comentario de cabecera
-de data/realmadrid-data.js para el detalle completo.
+de data/es/realmadrid-data.js para el detalle completo.
 
 Sevilla tuvo un ejercicio 2024/25 MUY MALO: pérdida neta de EUR 54,061 M, revenue cayó de 174,970
 a 115,185 M (caída de ~34%, consistente con no clasificar a competición europea esa temporada,

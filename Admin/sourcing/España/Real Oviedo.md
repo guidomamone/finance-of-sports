@@ -22,7 +22,7 @@
 
 ## Cargado a Finanzas (2026-09-25)
 
-- Ejercicio 2024/25 cargado en `data/realoviedo-es-data.js` (`clubId: 'realoviedo-es'`), a partir de
+- Ejercicio 2024/25 cargado en `data/es/realoviedo-es-data.js` (`clubId: 'realoviedo-es'`), a partir de
   `Clubes/España/Real Oviedo/cuentas-anuales-2024-2025.md` — mucho menos ruido de OCR que Mallorca
   (cada fila y su número quedaron en la misma línea de la transcripción), reconcilió exacto (con
   redondeo ≤2 EUR) contra "Resultado del ejercicio" (-5.578.650), impreso tanto en la Cuenta de

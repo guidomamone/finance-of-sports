@@ -25,7 +25,7 @@
 
 ## Cargado a Finanzas (2026-09-25)
 
-- Ejercicio 2024/25 cargado en `data/rcdmallorca-es-data.js` (`clubId: 'rcdmallorca-es'`), a partir
+- Ejercicio 2024/25 cargado en `data/es/rcdmallorca-es-data.js` (`clubId: 'rcdmallorca-es'`), a partir
   de la transcripción confirmada como escaneo con OCR (ver arriba): el PDF SÍ resultó tener el
   contenido completo, transcripto en `Clubes/España/RCD Mallorca/
   cuentas-anuales-informe-gestion-2024-2025.md`. La Cuenta de Pérdidas y Ganancias venía con las

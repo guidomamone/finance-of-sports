@@ -1,14 +1,14 @@
 # unionsg-be — evidencia de carga
 
-Lo que había como comentario en `data/unionsg-be-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/be/unionsg-be-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/unionsg-be-data.js — Royale Union Saint-Gilloise SRL (Bélgica). Club
+data/be/unionsg-be-data.js — Royale Union Saint-Gilloise SRL (Bélgica). Club
 nuevo, cargado en la 2da tanda de onboarding de la sesión 2026-09-25 (junto
 con Standard Liège y Westerlo).
 
@@ -170,5 +170,5 @@ Muzio: président du conseil d'administration desde el 2/7/2018 (informes de los
 _note (data/):_
 
 ```text
-Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Banque Nationale de Belgique (BNB/NBB), esquema estatutario abreviado C-app (forma jurídica SRL). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2025-06-30-individual.md. Ejercicio en el que el club ganó su primer título de Pro League desde 1934/35. Dos componentes de "Autres produits d'exploitation" y el desglose fino de "Autres charges d'exploitation" quedaron sin poder confirmarse con certeza en esta transcripción — ver comentario de cabecera de data/unionsg-be-data.js y Admin/dudas-por-club.md.
+Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Banque Nationale de Belgique (BNB/NBB), esquema estatutario abreviado C-app (forma jurídica SRL). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2025-06-30-individual.md. Ejercicio en el que el club ganó su primer título de Pro League desde 1934/35. Dos componentes de "Autres produits d'exploitation" y el desglose fino de "Autres charges d'exploitation" quedaron sin poder confirmarse con certeza en esta transcripción — ver comentario de cabecera de data/be/unionsg-be-data.js y Admin/dudas-por-club.md.
 ```

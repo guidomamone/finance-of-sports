@@ -1,14 +1,14 @@
 # ceara-br — evidencia de carga
 
-Lo que había como comentario en `data/ceara-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/ceara-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/ceara-br-data.js — Ceará Sporting Club, Fortaleza (CE), Brasil (CNPJ
+data/br/ceara-br-data.js — Ceará Sporting Club, Fortaleza (CE), Brasil (CNPJ
 07.369.226/0001-03). Associação civil sem fins econômicos (fundada em 2 de junho de 1914,
 originalmente Rio Branco Football Club — mudou de nome e cores em 1915, ver comentário de
 brandColor abaixo), NÃO é SAF: mesmo tipo de entidade que Palmeiras/Flamengo/Corinthians. clubId

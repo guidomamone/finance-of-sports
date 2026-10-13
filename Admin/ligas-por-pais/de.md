@@ -10,7 +10,7 @@ data/club-leagues/de.js — en qué liga jugó cada club de Alemania en cada
 ejercicio. El cierre de ejercicio varía por club: los 5 cargados hoy cierran
 30/6 (Köln, Eintracht Frankfurt, Werder Bremen, FC Augsburg), salvo VfB
 Stuttgart, que cierra en año CALENDARIO (31/12) — ver el comentario de
-cabecera de data/stuttgart-de-data.js.
+cabecera de data/de/stuttgart-de-data.js.
 
 SE EDITA A MANO, no lo genera ninguna herramienta. Un archivo por país
 (Versión 164) para que el repaso anual de ascensos y descensos sea el de UN

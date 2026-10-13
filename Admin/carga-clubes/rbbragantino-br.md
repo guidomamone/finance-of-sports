@@ -1,14 +1,14 @@
 # rbbragantino-br — evidencia de carga
 
-Lo que había como comentario en `data/rbbragantino-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/rbbragantino-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/rbbragantino-br-data.js — Red Bull Bragantino Futebol Ltda. (Bragança Paulista-SP, Brasil).
+data/br/rbbragantino-br-data.js — Red Bull Bragantino Futebol Ltda. (Bragança Paulista-SP, Brasil).
 CASO ATÍPICO: es una Sociedade Empresária Limitada (Ltda), NO una SAF ni una associação — ver
 Admin/sourcing/Brasil/RB Bragantino.md. Publica demonstrações financeiras auditadas (BDO) por ser
 "sociedade de grande porte" (Lei 11.638/2007), no por mandato de la Lei do SAF. 2 ejercicios

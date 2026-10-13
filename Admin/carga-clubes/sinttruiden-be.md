@@ -1,14 +1,14 @@
 # sinttruiden-be — evidencia de carga
 
-Lo que había como comentario en `data/sinttruiden-be-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/be/sinttruiden-be-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/sinttruiden-be-data.js — Koninklijke Sint-Truidense Voetbalvereniging NV
+data/be/sinttruiden-be-data.js — Koninklijke Sint-Truidense Voetbalvereniging NV
 (STVV, Bélgica). Uno de 3 clubes belgas + 1 danés cargados en esta sesión
 (2da tanda de onboarding, 20 transcripts más, 4 clubes totalmente nuevos).
 

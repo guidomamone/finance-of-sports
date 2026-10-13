@@ -27,7 +27,7 @@ ya bajados: buscar "VfB Stuttgart 1893 AG" en `unternehmensregister.de`.
 ## CARGADO al sitio (sesión 2026-09-22)
 
 **Estado: CARGADO (Ejercicios 2023, 2024).** `clubId`: `stuttgart-de`. Los dos Konzernabschluss ya
-transcriptos se cargaron a `data/stuttgart-de-data.js`.
+transcriptos se cargaron a `data/de/stuttgart-de-data.js`.
 
 - **Período confirmado de cada ejercicio: CALENDARIO, no temporada jul-jun** (a diferencia de los
   otros 4 clubes alemanes cargados en la misma ronda). Confirmado leyendo el propio título de cada
@@ -40,7 +40,7 @@ transcriptos se cargaron a `data/stuttgart-de-data.js`.
   todavía en `FX_CLOSE` (`data/currency-map.js`); las agrega el orquestador de esta ronda.
 - **Tie-out**: EXACTO en los dos ejercicios (diferencia de ~0,0003M EUR = ~0,0001% del total,
   100% explicada por el redondeo a miles de la propia tabla de Umsatzerlöse del Anhang — ver
-  comentario de cabecera de `data/stuttgart-de-data.js` para el detalle completo con los números).
+  comentario de cabecera de `data/de/stuttgart-de-data.js` para el detalle completo con los números).
   2023: revenue 217,62M / expenses 210,07M / PAT calculado 0,679M vs. Konzernjahresüberschuss
   impreso 679.300,04 EUR. 2024: revenue 299,82M / expenses 277,88M / PAT calculado 15,44M vs.
   Konzernjahresüberschuss impreso 15.443.275,78 EUR.

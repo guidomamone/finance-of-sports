@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/mover-comentarios-data.mjs — muda los comentarios de data/<club>-data.js a Admin/carga-clubes/<clubId>.md (to-do 209).
+// tools/mover-comentarios-data.mjs — muda los comentarios de data/<país>/<club>-data.js a Admin/carga-clubes/<clubId>.md (to-do 209).
 //
-// POR QUÉ: data/<club>-data.js se publica entero, y sus comentarios (la evidencia de cada carga: fuente, perímetro, unidades,
-// categorización, ajustes, tie-out) los baja cada visitante. La regla está en Admin/CONVENCIONES-DATOS.md ("data/<club>-data.js NO
+// POR QUÉ: data/<país>/<club>-data.js se publica entero, y sus comentarios (la evidencia de cada carga: fuente, perímetro, unidades,
+// categorización, ajustes, tie-out) los baja cada visitante. La regla está en Admin/CONVENCIONES-DATOS.md ("data/<país>/<club>-data.js NO
 // LLEVA COMENTARIOS"). Este script los MUEVE, tal cual, sin resumir: el texto de cada comentario llega entero al .md.
 //
 //   node tools/mover-comentarios-data.mjs udinese-it racing          # muda esos clubes (escribe data/ y Admin/carga-clubes/)
-//   node tools/mover-comentarios-data.mjs --todos                     # todos los data/*-data.js que tengan comentarios
+//   node tools/mover-comentarios-data.mjs --todos                     # todos los data/*/*-data.js que tengan comentarios
 //   node tools/mover-comentarios-data.mjs udinese-it --ensayo <dir>   # escribe los dos archivos en <dir>, no toca el repo
 //
 // A DÓNDE VA CADA COMENTARIO (el "ancla"), con las reglas del inventario del paso 0:
@@ -209,7 +209,7 @@ function mudar(clubId, src) {
   const md = [];
   md.push(`# ${clubId} — evidencia de carga`, '',
     `Lo que había como comentario en \`data/${clubId}-data.js\`, movido tal cual por \`tools/mover-comentarios-data.mjs\` (la regla:`,
-    '`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y',
+    '`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y',
     'meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).');
   const cab = piezas.filter((p) => p.grupo === 'cabecera');
   if (cab.length) md.push('', '## Cabecera', '', bloques(cab));

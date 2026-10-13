@@ -1,14 +1,14 @@
 # vejle-dk — evidencia de carga
 
-Lo que había como comentario en `data/vejle-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/dk/vejle-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/vejle-dk-data.js — VB Alliancen A/S (CVR 31 08 51 79), Vejle, Dinamarca
+data/dk/vejle-dk-data.js — VB Alliancen A/S (CVR 31 08 51 79), Vejle, Dinamarca
 (la sociedad profesional de Vejle Boldklub, distinta de "VEJLE BOLDKLUB" a
 secas, CVR 68 04 67 18, que es la asociación sin fines de lucro dueña del
 resto del club — ver Admin/sourcing/Dinamarca/Vejle.md). clubId 'vejle-dk' (sufijo
@@ -163,5 +163,5 @@ Sin cubrir 2012 y 2013 (los informes no marcan quien es formand). Ver tambien no
 _note (data/):_
 
 ```text
-Sociedad profesional del fútbol de Vejle Boldklub (CVR 31 08 51 79, distinta de la asociación "VEJLE BOLDKLUB" CVR 68 04 67 18), con 65% de VB Plus ApS por el método de la participación (grupos de networking empresarial, no fútbol). El estado de resultados usa explícitamente la exención del § 32 de la Årsregnskabsloven (solo "Bruttofortjeneste"/Gross profit neto) — todo el revenue se cargó sin desglosar. Patrimonio neto negativo al cierre (-19,936 M DKK). La transcripción tenía las tablas desalineadas y el signo negativo de varios números convertido en un "7" literal; se reconstruyó cruzando la aritmética interna y 2 anclas de texto del informe de gestión (ver comentario de cabecera de data/vejle-dk-data.js). Transcripción completa en Clubes/Dinamarca/Vejle/aarsrapport-2024-12-31.md.
+Sociedad profesional del fútbol de Vejle Boldklub (CVR 31 08 51 79, distinta de la asociación "VEJLE BOLDKLUB" CVR 68 04 67 18), con 65% de VB Plus ApS por el método de la participación (grupos de networking empresarial, no fútbol). El estado de resultados usa explícitamente la exención del § 32 de la Årsregnskabsloven (solo "Bruttofortjeneste"/Gross profit neto) — todo el revenue se cargó sin desglosar. Patrimonio neto negativo al cierre (-19,936 M DKK). La transcripción tenía las tablas desalineadas y el signo negativo de varios números convertido en un "7" literal; se reconstruyó cruzando la aritmética interna y 2 anclas de texto del informe de gestión (ver comentario de cabecera de data/dk/vejle-dk-data.js). Transcripción completa en Clubes/Dinamarca/Vejle/aarsrapport-2024-12-31.md.
 ```

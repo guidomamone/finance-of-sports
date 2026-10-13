@@ -34,7 +34,7 @@ Color de marca: `#EF0107` — footylogos (color-codes/arsenal, "Red Arsenal logo
 ## CARGADO al sitio (2026-09-22)
 
 Se cargaron los 2 ejercicios ya transcriptos (`arsenal-holdings-group-accounts-2023-24.md` y
-`-2024-25.md`) en `data/arsenal-gb-data.js`: clubId `arsenal-gb`, displayName "Arsenal". Entidad
+`-2024-25.md`) en `data/gb/arsenal-gb-data.js`: clubId `arsenal-gb`, displayName "Arsenal". Entidad
 legal confirmada en la carátula de los dos documentos: **Arsenal Holdings Limited** (no "plc" —
 corrige el supuesto del pedido original), Companies House n° 04250459, cuentas CONSOLIDADAS del
 grupo. Ejercicio 1° de junio a 31 de mayo (confirmado en Nota 1(b) de los dos documentos):
@@ -57,7 +57,7 @@ Un ajuste no trivial en los dos ejercicios: la línea "Share of joint venture op
 participación en el resultado de Arsenal Broadband Limited, método de la participación) no encaja
 en ningún campo de `fiscalYearMeta` existente (no es interés, impuesto, venta de jugadores ni venta
 de activos) — se cargó como una `revenueLine` (`other_income`, negativa) para que el PAT
-reconciliara exacto. Ver el comentario de cabecera de `data/arsenal-gb-data.js` para el detalle.
+reconciliara exacto. Ver el comentario de cabecera de `data/gb/arsenal-gb-data.js` para el detalle.
 
 <!-- ing-sourcing -->
 ## Ejercicios en disco (sesión 2026-10-03, serie de 5)

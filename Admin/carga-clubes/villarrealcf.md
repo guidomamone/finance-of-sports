@@ -1,14 +1,14 @@
 # villarrealcf — evidencia de carga
 
-Lo que había como comentario en `data/villarrealcf-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/es/villarrealcf-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/villarrealcf-data.js — Villarreal C.F., S.A.D., Ejercicio 2023/2024 (1/7/2023 a 30/6/2024).
+data/es/villarrealcf-data.js — Villarreal C.F., S.A.D., Ejercicio 2023/2024 (1/7/2023 a 30/6/2024).
 
 Único ejercicio disponible en el archivo descargado (1 solo PDF, ver Admin/sourcing/España/Villarreal
 CF.md — la búsqueda de esta sesión solo confirmó este año, el 2021-22 quedó pendiente por caída
@@ -27,7 +27,7 @@ Cifras en EUR MILLONES nativos (documento en euros completos, dividido por 1.000
 Tipo de cambio EUR/USD 1,071 al 30/6/2024 (cotización de cierre BCE de esa fecha — DISTINTA de la
 del resto de los clubes de esta sesión, que cerraron el 30/6/2025). `fx` en fiscalYearMeta va
 INVERTIDO (0,9337 = 1/1,071, EUR por 1 USD, mismo sentido que ARS/COP/BRL/MXN/JPY en el resto del
-sitio) — ver comentario de cabecera de data/realmadrid-data.js para el detalle completo.
+sitio) — ver comentario de cabecera de data/es/realmadrid-data.js para el detalle completo.
 
 DOS APROXIMACIONES ESPECÍFICAS DE ESTE CLUB (el documento tiene MENOS desglose que el resto de los
 clubes españoles cargados esta sesión):

@@ -1,14 +1,14 @@
 # palmeiras-br — evidencia de carga
 
-Lo que había como comentario en `data/palmeiras-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/palmeiras-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/palmeiras-br-data.js — Sociedade Esportiva Palmeiras, São Paulo, Brasil (CNPJ
+data/br/palmeiras-br-data.js — Sociedade Esportiva Palmeiras, São Paulo, Brasil (CNPJ
 61.750.345/0001-57). NO es SAF: es uma associação civil sem fins de lucro — publica balanços
 auditados por buena gobernanza propia (recibió premios de transparência según prensa), no por
 obligación de la Lei do SAF. Mismo tipo de entidad que Corinthians/Flamengo. clubId
@@ -222,7 +222,7 @@ Mandato desde el 15/12/2021; reelecta en 2024 para 2025-2027 (una sola gestion c
 _note (data/):_
 
 ```text
-PDF oficial (texto nativo), descarregado do portal de transparência oficial do Clube. DRE auditada segmentada em 4 colunas (Futebol profissional / Futebol feminino / Futebol de base / Clube social e esportes amadores) + Total — ver comentário de cabeçalho de data/palmeiras-br-data.js. Superávit real de R$198.183 mil, ano de venda grande de jogadores (Endrick para o Real Madrid, Luis Guilherme para o West Ham, entre outros — R$504.345 mil em receita bruta de Negociações com atletas). Convertido a USD com PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcrição completa em Clubes/Brasil/Palmeiras/demonstracoes-financeiras-2023-2024.md.
+PDF oficial (texto nativo), descarregado do portal de transparência oficial do Clube. DRE auditada segmentada em 4 colunas (Futebol profissional / Futebol feminino / Futebol de base / Clube social e esportes amadores) + Total — ver comentário de cabeçalho de data/br/palmeiras-br-data.js. Superávit real de R$198.183 mil, ano de venda grande de jogadores (Endrick para o Real Madrid, Luis Guilherme para o West Ham, entre outros — R$504.345 mil em receita bruta de Negociações com atletas). Convertido a USD com PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcrição completa em Clubes/Brasil/Palmeiras/demonstracoes-financeiras-2023-2024.md.
 ```
 
 ### palmeiras-br-demonstracoes-2025

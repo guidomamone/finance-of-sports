@@ -13,9 +13,9 @@
 //
 // EL PROBLEMA QUE RESUELVE (la "fuga 1" del mapa de procesos): esa sección se
 // escribía a mano, un párrafo por club, y decía lo mismo que el comentario de
-// cabecera de cada `data/<club>-data.js` ya decía. Dos copias de la misma
+// cabecera de cada `data/<país>/<club>-data.js` ya decía. Dos copias de la misma
 // información, y la escrita a mano es la que se desactualiza, porque el
-// `data/<club>-data.js` es el único archivo que SÍ o SÍ se toca al cargar un
+// `data/<país>/<club>-data.js` es el único archivo que SÍ o SÍ se toca al cargar un
 // club. Con 41 clubes ya eran 18 párrafos desparejos (los primeros clubes con
 // 20 líneas cada uno, los últimos 10 clubes compartiendo un bullet); al objetivo
 // de ~1000 clubes es inmantenible.
@@ -28,7 +28,7 @@
 // QUÉ NO HACE, A PROPÓSITO: no intenta resumir el "por qué" de cada club (qué
 // supuesto se tomó, qué salvedad tiene una cifra, qué quedó sin cargar). Eso NO
 // es derivable de los datos y sigue viviendo donde siempre debió: el comentario
-// de cabecera del `data/<club>-data.js`, que es lo que el índice linkea. El
+// de cabecera del `data/<país>/<club>-data.js`, que es lo que el índice linkea. El
 // índice contesta "qué hay"; el archivo del club contesta "por qué".
 //
 // USO:
@@ -205,7 +205,7 @@ function buildIndex({ clubs, sources, generic }) {
 // EL PROBLEMA QUE RESUELVE, encontrado auditando el plan del selector jerárquico
 // ANTES de escribirlo: ese panel tiene que mostrar, al lado de cada club y sin
 // entrar a ninguno, su punto de calidad de dato y cuántos ejercicios tiene. Las
-// dos cosas viven adentro de `data/<club>-data.js`, que es justamente lo que el
+// dos cosas viven adentro de `data/<país>/<club>-data.js`, que es justamente lo que el
 // panel NO puede cargar (son 41 archivos hoy, 1000 mañana). Verificado en el
 // navegador con la página recién abierta: `clubs{}` tiene 41 entradas y
 // `sources{}` tiene 3, todas de Boca.
@@ -236,7 +236,7 @@ function buildClubIndex({ clubs, sources, generic, clubQuality }) {
       // reciente al más viejo, cada uno con su reportType. Lo pidió el selector:
       // para ofrecer "Balance 2024/2025" o "Presupuesto 2026/2027" al lado de cada
       // club hace falta saber qué años tiene y de qué tipo es cada uno, y eso vivía
-      // solo adentro del `data/<club>-data.js` que el panel justamente no puede
+      // solo adentro del `data/<país>/<club>-data.js` que el panel justamente no puede
       // cargar (41 archivos hoy, 1000 mañana). Con el conteo (`y`) no alcanzaba.
       //
       // Se listan TODOS los ejercicios de `fiscalYearMeta`, incluidos los
@@ -278,7 +278,7 @@ function main() {
   // sitio: es un error real y conviene gritarlo acá, que es donde se mira.
   const huerfanos = Object.keys(data.generic).filter(id => !data.clubs[id]);
   if (huerfanos.length) {
-    console.error(`ERROR: estos clubes tienen data/<club>-data.js pero no están en data/clubs.js, así que el sitio nunca los muestra: ${huerfanos.join(', ')}`);
+    console.error(`ERROR: estos clubes tienen data/<país>/<club>-data.js pero no están en data/clubs.js, así que el sitio nunca los muestra: ${huerfanos.join(', ')}`);
     process.exit(1);
   }
 

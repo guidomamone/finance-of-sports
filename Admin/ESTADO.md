@@ -58,7 +58,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   `perimetro` de un club nuevo cuando sus documentos coinciden (tablas de cada perímetro y voto con Jev); si la serie cambia de perímetro,
   frena y decide Guido. Reconoce títulos en italiano e inglés; en otros idiomas no decide (frena).
 - Qué hay cargado de cada club (ejercicios, tipo de documento, moneda, deuda y caja): `Admin/ESTADO-clubes.md`, generado por
-  `node tools/generate-club-index.js`. El detalle de cada año (fuente, qué es real y qué no) está en la cabecera de `data/<club>-data.js`.
+  `node tools/generate-club-index.js`. El detalle de cada año (fuente, qué es real y qué no) está en la cabecera de `data/<país>/<club>-data.js`.
 - Brasil, Italia y Rusia se cargaron por el pipeline (Rusia por su camino propio); en los documentos italianos viejos quedan ajustes
   manuales donde el script no da idéntico, y dos ejercicios (Lazio 2012-13, AS Roma 2021) llevan el ajuste `no-recargar` porque lo publicado
   es más detallado que lo que lee el script. Un ejercicio de menos de 12 meses no se carga: queda en `Admin/registros/documentos-parciales.txt` con el

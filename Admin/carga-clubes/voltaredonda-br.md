@@ -1,14 +1,14 @@
 # voltaredonda-br — evidencia de carga
 
-Lo que había como comentario en `data/voltaredonda-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/voltaredonda-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/voltaredonda-br-data.js — Volta Redonda Futebol Clube (RJ, Brasil).
+data/br/voltaredonda-br-data.js — Volta Redonda Futebol Clube (RJ, Brasil).
 Sigue siendo ASSOCIAÇÃO CIVIL SEM FINS LUCRATIVOS (CNPJ 29.444.957/0001-09,
 isenta de IRPJ/CSLL por el art. 195 CF, ver Nota 3.7.1), NO se convirtió a SAF — distinto de
 Botafogo/Cruzeiro/Coritiba (mismo país, ya SAF). 2 ejercicios cargados: 2024 y 2025, ambos

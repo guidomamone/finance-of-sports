@@ -1,14 +1,14 @@
 # gent-be — evidencia de carga
 
-Lo que había como comentario en `data/gent-be-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/be/gent-be-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/gent-be-data.js — K.A.A. Gent NV (Bélgica). Uno de 4 clubes belgas de la
+data/be/gent-be-data.js — K.A.A. Gent NV (Bélgica). Uno de 4 clubes belgas de la
 Pro League cargados en esta sesión (onboarding de Bélgica como país nuevo):
 Club Brugge, Anderlecht, Genk, Gent.
 

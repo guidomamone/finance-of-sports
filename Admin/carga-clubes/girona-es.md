@@ -1,14 +1,14 @@
 # girona-es — evidencia de carga
 
-Lo que había como comentario en `data/girona-es-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/es/girona-es-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/girona-es-data.js — Girona Futbol Club, S.A.D. Ejercicios 2019/2020
+data/es/girona-es-data.js — Girona Futbol Club, S.A.D. Ejercicios 2019/2020
 (1/7/2019 a 30/6/2020) y 2024/2025 (1/7/2024 a 30/6/2025).
 
 AÑOS NO CONSECUTIVOS a propósito: son los 2 únicos ejercicios reales
@@ -135,7 +135,7 @@ Geli: presidente desde 2015 (solo el año; dia 01). City Football Group y Girona
 _note (data/):_
 
 ```text
-PDF oficial, escaneo con ruido de OCR en la transcripción. Un sub-ítem de "Otros gastos de explotación" se reconstruyó por residuo contra el subtotal impreso (probable dígito mal leído, ver comentario de cabecera de data/girona-es-data.js). Bajado vía statics-maker.llt-services.com/gir/ (mismo backend de CMS que otros clubes de LaLiga). Transcripción completa en Clubes/España/Girona FC/cuentas-anuales-2019-2020.md.
+PDF oficial, escaneo con ruido de OCR en la transcripción. Un sub-ítem de "Otros gastos de explotación" se reconstruyó por residuo contra el subtotal impreso (probable dígito mal leído, ver comentario de cabecera de data/es/girona-es-data.js). Bajado vía statics-maker.llt-services.com/gir/ (mismo backend de CMS que otros clubes de LaLiga). Transcripción completa en Clubes/España/Girona FC/cuentas-anuales-2019-2020.md.
 ```
 
 ### girona-es-informe-auditoria-cuentas-anuales-2024-25
@@ -143,7 +143,7 @@ PDF oficial, escaneo con ruido de OCR en la transcripción. Un sub-ítem de "Otr
 _note (data/):_
 
 ```text
-PDF oficial, escaneo con ruido de OCR en la transcripción. "Amortización del inmovilizado" se corrigió por residuo contra RESULTADO DE EXPLOTACIÓN impreso (diferencia de exactamente EUR 3.000.000, ver comentario de cabecera de data/girona-es-data.js). Bajado vía statics-maker.llt-services.com/gir/. Transcripción completa en Clubes/España/Girona FC/informe-auditoria-cuentas-anuales-2024-2025.md.
+PDF oficial, escaneo con ruido de OCR en la transcripción. "Amortización del inmovilizado" se corrigió por residuo contra RESULTADO DE EXPLOTACIÓN impreso (diferencia de exactamente EUR 3.000.000, ver comentario de cabecera de data/es/girona-es-data.js). Bajado vía statics-maker.llt-services.com/gir/. Transcripción completa en Clubes/España/Girona FC/informe-auditoria-cuentas-anuales-2024-2025.md.
 ```
 
 ## Otros

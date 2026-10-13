@@ -1,14 +1,14 @@
 # newells-ar — evidencia de carga
 
-Lo que había como comentario en `data/newells-ar-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ar/newells-ar-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/newells-ar-data.js — Club Atlético Newell's Old Boys: club nuevo del motor genérico
+data/ar/newells-ar-data.js — Club Atlético Newell's Old Boys: club nuevo del motor genérico
 (clubId con sufijo de país, `newells-ar`, ver CLAUDE.md/convención de la Versión 129: los ids
 nuevos llevan el país al final). 1 ejercicio cargado: 2019 (Ejercicio 1°/7/2018 al 30/6/2019).
 PDF + transcripción en
@@ -84,7 +84,7 @@ TC de cierre al 30/06/2019, `fxSource:'document_close'` (regla #0 de club-data-m
 El documento usa DOS tasas de USD distintas según el lado del balance: 41,50 (comprador, para los
 Créditos/Activos en USD, ej. "Deudores por transferencia jugadores") y 43,50 (vendedor, para las
 Deudas/Pasivos en USD) — el mismo spread comprador/vendedor que ya documentó Unión
-(data/union-data.js) para su propio Anexo de moneda extranjera. Se usó el lado ACTIVO/CRÉDITO
+(data/ar/union-data.js) para su propio Anexo de moneda extranjera. Se usó el lado ACTIVO/CRÉDITO
 (comprador, 41,50), mismo criterio ya establecido para Unión ("Anexo V, lado Activo/Créditos").
 NO se usó el fxRef ARS@2019-06-30 de currency-map.js (42,45, cotización de mercado): el documento
 declara el suyo propio, que gana siempre sobre una cotización externa.
@@ -178,7 +178,7 @@ y final— se imprimen positivos, sin paréntesis).
 _note (data/):_
 
 ```text
-PDF oficial (98 páginas, capa de texto nativa, sin OCR). Recuperado vía Wayback Machine (la URL oficial viva, newellsoldboys.com.ar/uploadsarchivos/memoria_y_balance_nob.pdf, devuelve 404 hoy — el club rehízo el sitio a WordPress). SUPERÁVIT FINAL real: $208.963.563 ARS (Ordinario $205.980.660 + Extraordinario $2.982.903). Anexo V/VI de Recursos y Anexo VII/VIII de Gastos con desglose completo por rubro, verificados fila por fila contra sus propios subtotales impresos antes de cargar. Convertido a USD con $41,50 (Anexo I, lado Activo/Créditos, comprador — el mismo documento usa $43,50 vendedor del lado Pasivo). Ver data/newells-ar-data.js.
+PDF oficial (98 páginas, capa de texto nativa, sin OCR). Recuperado vía Wayback Machine (la URL oficial viva, newellsoldboys.com.ar/uploadsarchivos/memoria_y_balance_nob.pdf, devuelve 404 hoy — el club rehízo el sitio a WordPress). SUPERÁVIT FINAL real: $208.963.563 ARS (Ordinario $205.980.660 + Extraordinario $2.982.903). Anexo V/VI de Recursos y Anexo VII/VIII de Gastos con desglose completo por rubro, verificados fila por fila contra sus propios subtotales impresos antes de cargar. Convertido a USD con $41,50 (Anexo I, lado Activo/Créditos, comprador — el mismo documento usa $43,50 vendedor del lado Pasivo). Ver data/ar/newells-ar-data.js.
 ```
 
 ## Otros
@@ -186,7 +186,7 @@ PDF oficial (98 páginas, capa de texto nativa, sin OCR). Recuperado vía Waybac
 ### window.CLUB_GENERIC_DATA
 
 ```text
-Registro en CLUB_GENERIC_DATA (ver comentario completo en data/instituto-data.js, Versión 95).
+Registro en CLUB_GENERIC_DATA (ver comentario completo en data/ar/instituto-data.js, Versión 95).
 ```
 
 ### gestionesByClub['newells-ar']

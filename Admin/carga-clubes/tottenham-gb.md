@@ -1,14 +1,14 @@
 # tottenham-gb — evidencia de carga
 
-Lo que había como comentario en `data/tottenham-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/tottenham-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/tottenham-gb-data.js — Tottenham Hotspur Limited (clubId 'tottenham-gb'), Ejercicios
+data/gb/tottenham-gb-data.js — Tottenham Hotspur Limited (clubId 'tottenham-gb'), Ejercicios
 2023/24 y 2024/25 (cerrados el 30 de junio, confirmado en la carátula de los dos documentos:
 "Annual Report and Consolidated Financial Statements, 30 June 2024/2025" — OJO, el pedido
 original de sourcing asumía 31 de mayo como Arsenal/Liverpool, pero Tottenham cierra 30/6, ya

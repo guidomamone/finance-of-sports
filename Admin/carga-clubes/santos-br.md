@@ -1,14 +1,14 @@
 # santos-br — evidencia de carga
 
-Lo que había como comentario en `data/santos-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/santos-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/santos-br-data.js — Santos Futebol Clube, Santos, São Paulo, Brasil. Associação civil sem
+data/br/santos-br-data.js — Santos Futebol Clube, Santos, São Paulo, Brasil. Associação civil sem
 fins econômicos (fundado 1912), NO é SAF (a diferencia de Botafogo/Cruzeiro/Coritiba) — mismo tipo
 de entidad que Flamengo (club social/multideportivo con Futebol Profissional, Futebol Amador y
 Clube Social como 3 "departamentos" contables separados, ver estructura abajo). clubId 'santos-br'

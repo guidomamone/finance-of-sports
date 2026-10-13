@@ -1,14 +1,14 @@
 # agf-dk — evidencia de carga
 
-Lo que había como comentario en `data/agf-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/dk/agf-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/agf-dk-data.js — AGF A/S (clubId 'agf-dk'), Aarhus, Dinamarca. Ejercicio fiscal
+data/dk/agf-dk-data.js — AGF A/S (clubId 'agf-dk'), Aarhus, Dinamarca. Ejercicio fiscal
 2020/21 (1° de julio de 2020 a 30 de junio de 2021, `fiscalYearStart:'07-01'` — a
 diferencia de fckobenhavn-dk/brondby-dk que son año calendario, mismo criterio de
 cierre de ejercicio que midtjylland-dk).

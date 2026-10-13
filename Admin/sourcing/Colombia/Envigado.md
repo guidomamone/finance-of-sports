@@ -30,7 +30,7 @@
 - Contacto: siis.ia.supersociedades.gov.co (NIT 900470848); envigadofc.co.
 - **CARGADO al sitio (sesión 2026-09-13, Ejercicio 2025 únicamente, a propósito — ver
   dudas-por-club.md/CHANGELOG.md sobre el pedido explícito de ampliar clubes en vez de profundizar
-  uno; los otros 9 ejercicios ya están en disco desde el 2026-09-22, listos para onboardear)**: ver `data/envigado-data.js`. Transcripto vía OCR (Tesseract, el escaneo no tiene capa de
+  uno; los otros 9 ejercicios ya están en disco desde el 2026-09-22, listos para onboardear)**: ver `data/co/envigado-data.js`. Transcripto vía OCR (Tesseract, el escaneo no tiene capa de
   texto). A diferencia de Once Caldas/Deportes Tolima, este PDF SÍ incluye el Estado de Resultado
   Integral primario completo (no solo notas) — reconciliación EXACTA sin ningún residuo, la carga de
   mayor confianza de las 3 investigadas esta sesión. fx usado: TRM oficial al 31/12/2025 ($3.757,08

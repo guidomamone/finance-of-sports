@@ -14,7 +14,7 @@
 - Contacto: millonarios.com.co (buscar "Informe de Gestión" o "Asamblea de Accionistas");
   siis.ia.supersociedades.gov.co (NIT 900430878).
 - Último chequeo: 2026-09-12.
-- **Cargado (2026-09-25): ejercicio 2025 en `data/millonarios-co-data.js`** (`clubId:
+- **Cargado (2026-09-25): ejercicio 2025 en `data/co/millonarios-co-data.js`** (`clubId:
   'millonarios-co'`), desde `estados-financieros-2025.pdf` (documento escaneado, OCR). Sin Estado
   de Resultado Integral primario (solo notas 22-28), pero reconciliación EXACTA contra "Resultado
   del ejercicio" impreso (Nota 20, Patrimonio): -$4.690,112 M. TRM de cierre declarada por el

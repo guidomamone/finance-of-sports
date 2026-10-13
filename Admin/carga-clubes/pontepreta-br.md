@@ -1,14 +1,14 @@
 # pontepreta-br — evidencia de carga
 
-Lo que había como comentario en `data/pontepreta-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/pontepreta-br-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/pontepreta-br-data.js — Associação Atlética Ponte Preta (Campinas, São Paulo, Brasil).
+data/br/pontepreta-br-data.js — Associação Atlética Ponte Preta (Campinas, São Paulo, Brasil).
 Sociedade civil sem fins lucrativos, NO es SAF. 3 ejercicios cargados: 2022, 2023 y 2024
 (ejercicio social = AÑO CALENDARIO completo, 1°/1 a 31/12, confirmado en la carátula de los 3
 documentos: "Balanços Patrimoniais em 31/12/<ano> e 31/12/<ano-1>"; clubs.js
@@ -231,7 +231,7 @@ officialPAT = "Superávit/Déficit do Exercício" impreso (−4,530791).
 _note (data/):_
 
 ```text
-PDF con capa de texto real (formato "publicación legal"/recorte de diario), descargado del repositorio institucional de la Federação Paulista de Futebol. Auditado por Audcorp Auditoria e Assessoria S/S, opinião COM RESSALVA (avaliação de atletas sin metodología de mercado verificable, parcelamentos PROFUT/PERT/PERSE en atraso). 2022 fue un ejercicio de déficit (R$4.530.791). Valores expresados en reais completos (no en miles). Transcripción completa en Clubes/Brasil/Ponte Preta/balanco-2021-2022.md. Convertido a USD con el PTAX BCB de cierre 30/12/2022 (R$5,2177 — 31/12/2022 fue sábado; ver nota sobre fx en data/pontepreta-br-data.js, todavía no centralizado en data/currency-map.js).
+PDF con capa de texto real (formato "publicación legal"/recorte de diario), descargado del repositorio institucional de la Federação Paulista de Futebol. Auditado por Audcorp Auditoria e Assessoria S/S, opinião COM RESSALVA (avaliação de atletas sin metodología de mercado verificable, parcelamentos PROFUT/PERT/PERSE en atraso). 2022 fue un ejercicio de déficit (R$4.530.791). Valores expresados en reais completos (no en miles). Transcripción completa en Clubes/Brasil/Ponte Preta/balanco-2021-2022.md. Convertido a USD con el PTAX BCB de cierre 30/12/2022 (R$5,2177 — 31/12/2022 fue sábado; ver nota sobre fx en data/br/pontepreta-br-data.js, todavía no centralizado en data/currency-map.js).
 ```
 
 ### pontepreta-br-balanco-2022-2023
@@ -247,7 +247,7 @@ PDF con capa de texto real, descargado del repositorio institucional de la Feder
 _note (data/):_
 
 ```text
-PDF con capa de texto real, descargado del repositorio institucional de la Federação Paulista de Futebol. Mismo auditor/contadora que los demás años. Opinião COM RESSALVA. 2024 revirtió el déficit de 2023 con un superávit de R$7.000.643, impulsado por la venta de la línea de "Receita transmissão" (R$45,0 M, ligada a la negociación con la Liga Forte União (LFU) según el informe de auditoría) — incluye además un ajuste extraordinario de R$22.168.194 ("Depreciação/Contingência/Pept/CNRD", ligado a un pasivo nuevo de acuerdos laborales, ver comentario de cabecera de data/pontepreta-br-data.js). Valores expresados en reais completos. Transcripción completa en Clubes/Brasil/Ponte Preta/balanco-2023-2024.md. Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923).
+PDF con capa de texto real, descargado del repositorio institucional de la Federação Paulista de Futebol. Mismo auditor/contadora que los demás años. Opinião COM RESSALVA. 2024 revirtió el déficit de 2023 con un superávit de R$7.000.643, impulsado por la venta de la línea de "Receita transmissão" (R$45,0 M, ligada a la negociación con la Liga Forte União (LFU) según el informe de auditoría) — incluye además un ajuste extraordinario de R$22.168.194 ("Depreciação/Contingência/Pept/CNRD", ligado a un pasivo nuevo de acuerdos laborales, ver comentario de cabecera de data/br/pontepreta-br-data.js). Valores expresados en reais completos. Transcripción completa en Clubes/Brasil/Ponte Preta/balanco-2023-2024.md. Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923).
 ```
 
 ## Otros

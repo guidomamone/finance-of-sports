@@ -1,14 +1,14 @@
 # panathinaikos-gr — evidencia de carga
 
-Lo que había como comentario en `data/panathinaikos-gr-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gr/panathinaikos-gr-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/panathinaikos-gr-data.js — Panathinaikos Athlitikos Omilos P.A.E.
+data/gr/panathinaikos-gr-data.js — Panathinaikos Athlitikos Omilos P.A.E.
 (Atenas, Grecia). Primer club griego cargado en finance-of-sports
 (2026-09-28, ronda de 5 onboardings de prueba de los tools del to-do
 98/95, 4/5 — primer país 100% nuevo de esta ronda). Ejercicio 2025 = REAL,

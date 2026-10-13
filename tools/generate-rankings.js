@@ -5,7 +5,7 @@
 //
 // EL PROBLEMA QUE RESUELVE. Un ranking de liga necesita el ingreso de los N
 // clubes que la integraron ESE ejercicio, y esos números viven en los
-// `data/<club>-data.js`, que el sitio carga POR DEMANDA justamente para no
+// `data/<país>/<club>-data.js`, que el sitio carga POR DEMANDA justamente para no
 // pagar 41 archivos por visita. Calcularlo en vivo cuesta, medido archivo por
 // archivo el 2026-09-22:
 //
@@ -20,7 +20,7 @@
 // PERO EL ARGUMENTO DECISIVO NO ES LA VISTA DE LIGA, ES INICIO (to-do 33): la
 // vista de liga está detrás de un click, o sea que el visitante la pidió; el
 // ranking de Inicio lo paga TODO visitante, incluido el que rebota. Hoy el
-// sitio no carga ni un solo `data/<club>-data.js` de forma eager, y eso es un
+// sitio no carga ni un solo `data/<país>/<club>-data.js` de forma eager, y eso es un
 // logro explícito de la arquitectura (ver Admin/ESTADO.md). Un ranking en vivo en
 // Inicio lo rompe.
 //

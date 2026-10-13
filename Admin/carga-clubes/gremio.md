@@ -1,14 +1,14 @@
 # gremio — evidencia de carga
 
-Lo que había como comentario en `data/gremio-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/br/gremio-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/gremio-data.js — Grêmio Foot-Ball Porto Alegrense (Porto Alegre, RS, Brasil).
+data/br/gremio-data.js — Grêmio Foot-Ball Porto Alegrense (Porto Alegre, RS, Brasil).
 NO es SAF (sigue como associação/clube social tradicional, sin desmembrar el fútbol profissional
 en una Sociedade Anônima do Futebol) — ver Admin/sourcing/Brasil/Gremio.md. 1 ejercicio cargado: 2024
 (ejercicio social = ANO CALENDÁRIO completo, 1°/1/2024 a 31/12/2024, a diferencia de los clubes

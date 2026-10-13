@@ -1,14 +1,14 @@
 # nordsjaelland-dk — evidencia de carga
 
-Lo que había como comentario en `data/nordsjaelland-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/dk/nordsjaelland-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/nordsjaelland-dk-data.js — FC Nordsjælland A/S (CVR 24 25 77 03), Farum,
+data/dk/nordsjaelland-dk-data.js — FC Nordsjælland A/S (CVR 24 25 77 03), Farum,
 Dinamarca. clubId 'nordsjaelland-dk' (sufijo de país, misma convención que
 fckobenhavn-dk/silkeborg-dk/agf-dk/viborg-dk). Ejercicio fiscal 2024 (año
 CALENDARIO, 1° de enero a 31 de diciembre de 2024, `fiscalYearStart:'01-01'`).

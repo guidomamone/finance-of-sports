@@ -1,14 +1,14 @@
 # werderbremen-de — evidencia de carga
 
-Lo que había como comentario en `data/werderbremen-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/de/werderbremen-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/werderbremen-de-data.js — SV Werder Bremen GmbH & Co. KGaA (Alemania, Bundesliga).
+data/de/werderbremen-de-data.js — SV Werder Bremen GmbH & Co. KGaA (Alemania, Bundesliga).
 
 3 ejercicios REALES, los 3 Konzernabschluss (cuentas CONSOLIDADAS del grupo, incluye Werder
 Bremen Merchandising GmbH y Werder Bremen Payment GmbH), bajados de unternehmensregister.de

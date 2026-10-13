@@ -540,7 +540,7 @@ function checkDeployInterno() {
 // --- Comentarios internos en lo que se publica (to-do 208 y 209) -------------
 // Todo comentario de index.html, js/ y data/ viaja al visitante. La regla (Admin/PANTALLA.md, "Comentarios en lo que se publica") deja
 // solo el porqué técnico: nada de nombres, "Versión N", "to-do N", fechas ni contadores de clubes. Un hallazgo por archivo, con el total y
-// el primer caso; la lista completa sale con --json. Además, un data/<club>-data.js no lleva NINGÚN comentario (Admin/CONVENCIONES-DATOS.md):
+// el primer caso; la lista completa sale con --json. Además, un data/<país>/<club>-data.js no lleva NINGÚN comentario (Admin/CONVENCIONES-DATOS.md):
 // la evidencia de cada carga va a Admin/carga-clubes/<club>.md, y una nota de evidencia puede no tener nada que la regex reconozca.
 const COMENTARIO_INTERNO = /\bGuido\b|\bVersi[oó]n(es)? \d+|\bto-do \d+|(?<!@)\b20\d\d-\d\d-\d\d\b|\b\d{2,} clubes\b/i;
 function checkComentariosPublicados() {
@@ -550,9 +550,9 @@ function checkComentariosPublicados() {
   for (const rel of [...publicados(), ...jsDe('data')]) {
     const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');
     const todos = comentarios(rel, src);
-    if (/^data\/[^/]+-data\.js$/.test(rel) && todos.length) {
+    if (/^data\/(?:[a-z]{2}\/)?[^/]+-data\.js$/.test(rel) && todos.length) {
       add('P2', 'comentario-en-data-club',
-        `${rel}: ${todos.length} comentarios (el primero en la línea ${todos[0].line}). Un data/<club>-data.js no lleva comentarios: la nota va a Admin/carga-clubes/<club>.md (regla: Admin/CONVENCIONES-DATOS.md)`);
+        `${rel}: ${todos.length} comentarios (el primero en la línea ${todos[0].line}). Un data/<país>/<club>-data.js no lleva comentarios: la nota va a Admin/carga-clubes/<club>.md (regla: Admin/CONVENCIONES-DATOS.md)`);
     }
     const malos = todos.filter(c => COMENTARIO_INTERNO.test(c.text));
     if (!malos.length) continue;
@@ -717,7 +717,7 @@ function checkRutasMuertas() {
   // UNA RUTA GITIGNOREADA NO CUENTA (Versión 200). Su presencia no es una propiedad
   // del repo sino de ESTE checkout: `Clubes/Argentina/River/estados-contables-leads/`
   // (la fuente no oficial, que se guarda y no se trackea) está en el árbol principal y
-  // NO en un worktree recién creado, así que `data/river-data.js` citándola daba
+  // NO en un worktree recién creado, así que `data/ar/river-data.js` citándola daba
   // hallazgo en un lado y no en el otro. Peor que ruidoso: empujaba a "arreglar" el
   // comentario de un archivo de club que estaba bien. Lo destapó el worktree de
   // sourcing, que nace sin ninguno de los 2881 PDFs ni de los archivos ignorados.
@@ -865,7 +865,7 @@ function checkRankings(api) {
 
 // --- D14: el espacio de nombres de clubId (Versión 129) --------------------
 // `clubId` no lleva país, y no es una clave más: nombra el archivo de datos
-// (`data/<clubId>-data.js`, por convención de loadClubData()) y prefija cada
+// (`data/<país>/<clubId>-data.js`, por convención de loadClubData()) y prefija cada
 // sourceId (`racing-balance-2009`). Los ids de hoy son `racing`, `independiente`,
 // `union`, `sanlorenzo`: los cuatro nombres existen en varios países (Racing de
 // Santander, Independiente del Valle y el de Medellín, Unión Española, Unión
@@ -928,7 +928,7 @@ function checkClubIds(api) {
 // --- D12c: colisión de clubId adelantada al SOURCING (Versión 163) ----------
 // checkClubIds() avisa cuando un id heredado sin país deja de ser inequívoco, pero recién
 // cuando el club que colisiona YA ESTÁ CARGADO en clubs{}. Para entonces renombrar el
-// viejo cuesta tres cosas (el archivo data/<id>-data.js, el clubId y el prefijo de cada
+// viejo cuesta tres cosas (el archivo data/<país>/<id>-data.js, el clubId y el prefijo de cada
 // sourceId) y encima ya se transcribió el documento del club nuevo. Esto mira el escalón
 // anterior: los clubes que alguien está SOURCEANDO, que viven en Admin/sourcing/_indice/<País>.md
 // desde la Versión 158, y avisa el día que uno de ellos empieza a amenazar a un id pelado.
@@ -1076,7 +1076,7 @@ function checkCarpetasClubes() {
   }
 
   // Versión 309: ¿cada carpeta de club resuelve a UN club sin ambigüedad? La regla vive en tools/carpetas-clubes.mjs (cita en
-  // data/<id>-data.js, y si no, nombre IGUAL dentro del mismo país) y la usan onboard.mjs, el registro de transcripciones y el pipeline.
+  // data/<país>/<id>-data.js, y si no, nombre IGUAL dentro del mismo país) y la usan onboard.mjs, el registro de transcripciones y el pipeline.
   // Con la regla vieja (substring, sin país) 17 clubes del sitio no se reconocían y 11 carpetas caían en un club EQUIVOCADO (Porto ->
   // Grêmio, Inter -> Internacional): el registro marcaba "ya cargado" PDFs que no lo estaban, y al revés. Si una carpeta vuelve a ser
   // ambigua (la citan dos clubes, o su nombre es igual a dos clubes del país), es P1: el pipeline no puede saber de quién es.
@@ -1085,7 +1085,7 @@ function checkCarpetasClubes() {
   try { carpetas = JSON.parse(execFileSync('node', [path.join(ROOT, 'tools', 'carpetas-clubes.mjs'), '--json'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 })); }
   catch (e) { add('P1', 'carpetas-clubes-fallo', `tools/carpetas-clubes.mjs falló: ${String(e.message).slice(0, 200)}. Sin esa regla el registro de transcripciones no sabe qué PDF es de qué club`); return; }
   for (const c of carpetas) {
-    if (c.via === 'ambigua' && !c.carpeta.startsWith('_')) add('P1', 'carpeta-club-ambigua', `Clubes/${c.pais}/${c.carpeta}/ no resuelve a un solo club (${c.fuente}). Que la cite UN solo data/<id>-data.js (o renombrar la carpeta): mientras tanto el pipeline y el registro no saben de quién son sus PDFs`);
+    if (c.via === 'ambigua' && !c.carpeta.startsWith('_')) add('P1', 'carpeta-club-ambigua', `Clubes/${c.pais}/${c.carpeta}/ no resuelve a un solo club (${c.fuente}). Que la cite UN solo data/<país>/<id>-data.js (o renombrar la carpeta): mientras tanto el pipeline y el registro no saben de quién son sus PDFs`);
   }
   // Y al revés: un club del sitio cuyos PDFs ninguna carpeta identifica (no cita su carpeta ni se llama igual). Sus PDFs figurarían como
   // de un club nuevo y el pipeline los procesaría aunque el ejercicio ya esté cargado.

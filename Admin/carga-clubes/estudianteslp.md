@@ -1,14 +1,14 @@
 # estudianteslp — evidencia de carga
 
-Lo que había como comentario en `data/estudianteslp-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ar/estudianteslp-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/estudianteslp-data.js — Club Estudiantes de La Plata: 9no club del motor genérico. 4
+data/ar/estudianteslp-data.js — Club Estudiantes de La Plata: 9no club del motor genérico. 4
 ejercicios consecutivos cargados: 2022, 2023, 2024, 2025 (30/6 de cada año), todos balances
 auditados reales, texto nativo (Becher y Asociados S.R.L.). PDF + transcripción en
 Clubes/Argentina/Estudiantes LP/memoria-y-balance-{2021-2022,2022-2023,2023-2024,2024-2025}.
@@ -152,7 +152,7 @@ Verón: desde el 27/11/2025 la AFA lo suspendió 6 meses y Gorostegui lo reempla
 _note (data/):_
 
 ```text
-PDF oficial (92 páginas, texto nativo), auditado por Becher y Asociados S.R.L., informe de fecha 29/9/2022. SUPERÁVIT real: $574.824.674 ARS. Convertido a USD con $125,03 (Anexo IV, lado Activo/Caja — el Pasivo declara $125,23, diferencia de centavos). Ver data/estudianteslp-data.js para el detalle completo de categorización (columna "Fútbol - Exhibición y espectáculos" = wages_squad, distinto nombre que Vélez/Instituto pero mismo criterio de fondo).
+PDF oficial (92 páginas, texto nativo), auditado por Becher y Asociados S.R.L., informe de fecha 29/9/2022. SUPERÁVIT real: $574.824.674 ARS. Convertido a USD con $125,03 (Anexo IV, lado Activo/Caja — el Pasivo declara $125,23, diferencia de centavos). Ver data/ar/estudianteslp-data.js para el detalle completo de categorización (columna "Fútbol - Exhibición y espectáculos" = wages_squad, distinto nombre que Vélez/Instituto pero mismo criterio de fondo).
 ```
 
 ### estudianteslp-memoria-y-balance-2022-23
@@ -168,7 +168,7 @@ PDF oficial (94 páginas, texto nativo), auditado por Becher y Asociados S.R.L.,
 _note (data/):_
 
 ```text
-PDF oficial (127 páginas, escaneado sin capa de texto, transcripto vía OCR con Tesseract — a diferencia de los 3 ejercicios anteriores del mismo club, que son texto nativo), auditado por Becher y Asociados S.R.L., informe de fecha 7/10/2025, firmado por Juan Sebastián Verón como Presidente (ejercicio completo bajo su gestión, sin ambigüedad). DÉFICIT real: $(14.277.112.789) ARS — primer déficit del club en los 4 ejercicios cargados. Estructura nueva: "Fútbol - Plantel profesional" aparece como columna separada de "Fútbol - Exhibición y espectáculos" (antes la economía de pases vivía dentro de esa 2da columna). Convertido a USD con $1.196 (Anexo de moneda extranjera, lado Activo/Caja). Ver data/estudianteslp-data.js.
+PDF oficial (127 páginas, escaneado sin capa de texto, transcripto vía OCR con Tesseract — a diferencia de los 3 ejercicios anteriores del mismo club, que son texto nativo), auditado por Becher y Asociados S.R.L., informe de fecha 7/10/2025, firmado por Juan Sebastián Verón como Presidente (ejercicio completo bajo su gestión, sin ambigüedad). DÉFICIT real: $(14.277.112.789) ARS — primer déficit del club en los 4 ejercicios cargados. Estructura nueva: "Fútbol - Plantel profesional" aparece como columna separada de "Fútbol - Exhibición y espectáculos" (antes la economía de pases vivía dentro de esa 2da columna). Convertido a USD con $1.196 (Anexo de moneda extranjera, lado Activo/Caja). Ver data/ar/estudianteslp-data.js.
 ```
 
 ### estudianteslp-memoria-y-balance-2023-24

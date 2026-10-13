@@ -1,14 +1,14 @@
 # millonarios-co — evidencia de carga
 
-Lo que había como comentario en `data/millonarios-co-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/co/millonarios-co-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/millonarios-co-data.js — Azul & Blanco Millonarios FC S.A. (Bogotá,
+data/co/millonarios-co-data.js — Azul & Blanco Millonarios FC S.A. (Bogotá,
 Colombia). Tercer club colombiano cargado en finance-of-sports (junto con
 Envigado/Once Caldas). Un único ejercicio cargado a propósito: 2025.
 

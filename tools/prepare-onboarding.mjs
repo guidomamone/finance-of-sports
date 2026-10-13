@@ -19,7 +19,7 @@
 //      checkTieOuts() más abajo para el porqué de sumar por segmento)
 //   3. tools/suggest-category-precedent.mjs -- precedente de categoría para
 //      cada rawLabel de una tabla marcada relevante (solo si el club YA
-//      tiene data/<clubId>-data.js; si es un club nuevo, no hay precedente
+//      tiene data/<país>/<clubId>-data.js; si es un club nuevo, no hay precedente
 //      posible y se lo dice en vez de fallar)
 //   4. tools/lookup-club-league.js    -- liga cacheada para ese club-año, SI
 //      el club ya tiene entrada en data/clubs.js (país + nombre)
@@ -225,7 +225,7 @@ function checkTieOuts(tables) {
 
 // ----------------------------------------------------------------------------
 // Paso 3: precedente de categoría (tools/suggest-category-precedent.mjs),
-// solo si el club ya tiene data/<clubId>-data.js. Junta rawLabels ÚNICOS de
+// solo si el club ya tiene data/<país>/<clubId>-data.js. Junta rawLabels ÚNICOS de
 // las tablas marcadas "likelyRelevant", sin las filas de total (no son un
 // rubro categorizable, son un agregado).
 // ----------------------------------------------------------------------------

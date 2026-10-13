@@ -41,7 +41,7 @@
 // recorre los años cargados del club, de más viejo a más nuevo, y lee caja y deuda SOLO donde el sitio tiene null (nunca pisa un valor cargado
 // a mano). Corrido después de cargar, el año anterior ya está en el sitio y sirve de compuerta. Un valor que se completa en esta
 // misma corrida NO cuenta como cargado para el año siguiente (Versión 502: un error se encadenaba). Sin --ejecutar, el escalón 2 es ensayo (costo estimado). --escribir: lo escribe en
-// data/<club>-data.js (el valor, sin comentario: data/ se publica) y en Admin/carga-clubes/<club>.md una nota de dónde salió cada dato, en la
+// data/<país>/<club>-data.js (el valor, sin comentario: data/ se publica) y en Admin/carga-clubes/<club>.md una nota de dónde salió cada dato, en la
 // meta del año (to-do 209); sube ASSET_V, corre los generadores y audit.js; si da P0/P1, revierte los dos.
 //
 // --medir: para cada año ya cargado con grossDebt/cash y con transcripción (la fuente nombra el .md), lee el balance como si fuera un año nuevo

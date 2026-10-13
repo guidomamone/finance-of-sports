@@ -1,14 +1,14 @@
 # argentinosjuniors — evidencia de carga
 
-Lo que había como comentario en `data/argentinosjuniors-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ar/argentinosjuniors-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/argentinosjuniors-data.js — Asociación Atlética Argentinos Juniors: 8vo club del motor
+data/ar/argentinosjuniors-data.js — Asociación Atlética Argentinos Juniors: 8vo club del motor
 genérico. 5 ejercicios cargados (2015 a 2019, 30/6 de cada año).
 
 BUG REAL ENCONTRADO Y CORREGIDO (sesión de onboarding posterior a la Versión 95): los 4
@@ -188,7 +188,7 @@ Malaspina: ganó el 19/12/2015 y asumió a las 72 horas.
 _note (data/):_
 
 ```text
-PDF oficial de 2 páginas (texto nativo) preparado para la asamblea del club, con las cifras COMPARATIVAS de los 5 ejercicios a la vez, EN PESOS AJUSTADOS POR INFLACIÓN (dice explícito "cifras en pesos ajustadas por inflación" en el propio título de cada cuadro) — NO son pesos nominales, a diferencia de todo el resto del sitio. Usado SOLO para el Ejercicio 2019 (el más reciente de la presentación, su columna es ~nominal ya que la restatement se hace hacia atrás desde el año más nuevo) — los ejercicios 2015 a 2018 se reemplazaron con datos reales de los balances auditados de cada año (ver las 3 fuentes de abajo y el comentario de cabecera de data/argentinosjuniors-data.js para el detalle completo del bug encontrado y corregido). El archivo "balance-2018-2019.pdf" del mismo club, a pesar del nombre, resultó ser la Memoria narrativa (sin una sola cifra contable), y no hay balance auditado real de 2018/2019 descargado — SUPERÁVIT 2019 $119.274.273 ARS sigue sin confirmar contra un documento primario propio.
+PDF oficial de 2 páginas (texto nativo) preparado para la asamblea del club, con las cifras COMPARATIVAS de los 5 ejercicios a la vez, EN PESOS AJUSTADOS POR INFLACIÓN (dice explícito "cifras en pesos ajustadas por inflación" en el propio título de cada cuadro) — NO son pesos nominales, a diferencia de todo el resto del sitio. Usado SOLO para el Ejercicio 2019 (el más reciente de la presentación, su columna es ~nominal ya que la restatement se hace hacia atrás desde el año más nuevo) — los ejercicios 2015 a 2018 se reemplazaron con datos reales de los balances auditados de cada año (ver las 3 fuentes de abajo y el comentario de cabecera de data/ar/argentinosjuniors-data.js para el detalle completo del bug encontrado y corregido). El archivo "balance-2018-2019.pdf" del mismo club, a pesar del nombre, resultó ser la Memoria narrativa (sin una sola cifra contable), y no hay balance auditado real de 2018/2019 descargado — SUPERÁVIT 2019 $119.274.273 ARS sigue sin confirmar contra un documento primario propio.
 ```
 
 ### argentinosjuniors-balance-2015-2016
@@ -196,7 +196,7 @@ PDF oficial de 2 páginas (texto nativo) preparado para la asamblea del club, co
 _note (data/):_
 
 ```text
-PDF oficial (39 páginas, escaneado sin capa de texto, transcripto vía OCR con Tesseract). Da el Ejercicio 2016 con detalle completo de Anexo IV (Recursos por rubro)/Anexo V (Gastos por rubro x departamento) y el Ejercicio 2015 como comparativo (revenue con detalle completo, gastos solo a nivel de 4 categorías agregadas — Anexo V no desglosa el año comparativo). DÉFICIT real 2016: $(24.707.096) ARS. DÉFICIT real 2015: $(67.509.882) ARS. El Anexo IV de este balance tiene un error aritmético propio de $20.000 (0,02%) entre la suma de sus líneas de "Fútbol profesional" y su propio total impreso — verificado visualmente contra la imagen de la página, no es un error de transcripción (ver comentario de cabecera de data/argentinosjuniors-data.js). Convertido a USD con $15,2 (2016)/$9,085 (2015), dólar vendedor BNA de cierre investigado externamente (la fuente no declara tipo de cambio propio).
+PDF oficial (39 páginas, escaneado sin capa de texto, transcripto vía OCR con Tesseract). Da el Ejercicio 2016 con detalle completo de Anexo IV (Recursos por rubro)/Anexo V (Gastos por rubro x departamento) y el Ejercicio 2015 como comparativo (revenue con detalle completo, gastos solo a nivel de 4 categorías agregadas — Anexo V no desglosa el año comparativo). DÉFICIT real 2016: $(24.707.096) ARS. DÉFICIT real 2015: $(67.509.882) ARS. El Anexo IV de este balance tiene un error aritmético propio de $20.000 (0,02%) entre la suma de sus líneas de "Fútbol profesional" y su propio total impreso — verificado visualmente contra la imagen de la página, no es un error de transcripción (ver comentario de cabecera de data/ar/argentinosjuniors-data.js). Convertido a USD con $15,2 (2016)/$9,085 (2015), dólar vendedor BNA de cierre investigado externamente (la fuente no declara tipo de cambio propio).
 ```
 
 ### argentinosjuniors-balance-2016-2017
@@ -229,7 +229,7 @@ Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-data.js, Ver
 Confirmado por búsqueda (Versión 95): Cristian Malaspina presidente desde 2015, reelecto en
 dic-2019 y de nuevo en 2023. Mes exacto de asunción en 2015 sin confirmar (ver duda abierta en
 Admin/dudas-por-club.md) — por eso el Ejercicio 2015 (30/6/2015) quedó sin gestión asignada
-(gestionId:null en data/argentinosjuniors-data.js), y esta entrada arranca en 2016.
+(gestionId:null en data/ar/argentinosjuniors-data.js), y esta entrada arranca en 2016.
 ```
 
 ### memberCountByClub.argentinosjuniors

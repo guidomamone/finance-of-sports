@@ -70,7 +70,7 @@ Wayback CDX: agotado · búsqueda web: agotado (sin PDF nuevo) · regulador/paí
 - Contacto: no se relevó sección de contacto específica del sitio (dominio caído); redes o Secretaría
   del club.
 - Último chequeo: 2026-09-22.
-- **ONBOARDING (2026-09-24): 2 ejercicios cargados a `data/ferrocarriloeste-ar-data.js`** — Ejercicio
+- **ONBOARDING (2026-09-24): 2 ejercicios cargados a `data/ar/ferrocarriloeste-ar-data.js`** — Ejercicio
   118 (2021-22, `estados-contables-ejercicio-118-2021-22.pdf`, superávit real $256.901.915,58) y
   Ejercicio 119 (2022-23, `balance-ejercicio-119-2022-23.pdf`, superávit real $712.927.771,84,
   impulsado por una venta/préstamo grande de jugadores, $459,76 M ARS homogéneos, que no existía

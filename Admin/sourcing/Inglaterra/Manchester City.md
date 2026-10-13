@@ -33,7 +33,7 @@ fue firmado electrónicamente y después escaneado igual.
 
 ## CARGADO al sitio (2026-09-22)
 
-`clubId: 'mancity-gb'`. Cargados los 2 ejercicios ya bajados en `data/mancity-gb-data.js`:
+`clubId: 'mancity-gb'`. Cargados los 2 ejercicios ya bajados en `data/gb/mancity-gb-data.js`:
 Ejercicio 2023/24 (cerrado 30/6/2024) y Ejercicio 2024/25 (cerrado 30/6/2025).
 
 **OJO, salvedad de perímetro (la más importante de este club): lo cargado es el balance de la
@@ -42,7 +42,7 @@ cuentas consolidadas de City Football Group** (dueño además de New York City F
 FC, Girona FC y otros clubes, que consolida y publica su propio balance por separado). Esto es
 distinto de los otros 4 clubes ingleses ya cargados/en carga que sí tienen cuentas consolidadas de
 su propia sociedad matriz de club. La aclaración está en `publicNote` de las 2 fuentes en
-`data/mancity-gb-data.js`, visible para el visitante en la pestaña Fuentes, no solo acá.
+`data/gb/mancity-gb-data.js`, visible para el visitante en la pestaña Fuentes, no solo acá.
 
 FX: GBP es moneda nueva del proyecto, todavía sin entrada en `data/currency-map.js` (no se agregó
 en esta sesión, no era tarea de esta carga). Se referenció `fxRef:'GBP@2024-06-30'` y
@@ -58,7 +58,7 @@ Tie-out (verificado con `node -e`, sin residuo):
 Detalle de categorización, la fila ambigua "(Profit)/loss on disposal of property, plant and
 equipment" (resuelta cruzando los 2 ejercicios entre sí) y por qué `netInterest` usa el Statement
 of Profit or Loss primario y no el total de las Notas 9/10: ver el comentario de cabecera de
-`data/mancity-gb-data.js`.
+`data/gb/mancity-gb-data.js`.
 
 **Color de marca**: `#6CABDD` — sky blue / Pantone PMS 292 C, verificado contra
 teamcolorcodes.com y cruzado contra brandpalettes.com/teamcolorsguide.com/schemecolor.com (los 4

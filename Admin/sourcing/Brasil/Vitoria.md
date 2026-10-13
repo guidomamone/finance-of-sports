@@ -30,12 +30,12 @@
 
 ## Cargado (sesión 2026-09-24)
 
-- **1 ejercicio cargado en `data/vitoria-br-data.js`** (`clubId: 'vitoria-br'`): 2025 (Déficit
+- **1 ejercicio cargado en `data/br/vitoria-br-data.js`** (`clubId: 'vitoria-br'`): 2025 (Déficit
   -R$25,418 M). Columna Individual/Controladora (no Consolidado). El club reporta patrimonio neto
   NEGATIVO ("Passivo a descoberto") de -R$300,309 M al cierre — ver comentario de cabecera del
   archivo de datos. Se encontró y documentó una inconsistencia real entre la Nota 29 y la propia DRE
   del balance auditado (ver `Admin/dudas-por-club.md`, sección de este club, y el comentario de
-  cabecera de `data/vitoria-br-data.js`).
+  cabecera de `data/br/vitoria-br-data.js`).
 - **Color de marca: #FF1100 — footylogos.com/color-codes/vitoria ("Bright Red"), confirmado contra
   pt.wikipedia.org (infobox: "o vermelho foi substituído... consolidándose o rubro-negro como padrão
   cromático oficial") y logos.fandom.com (escudo: mitad superior roja, mitad inferior negra, con

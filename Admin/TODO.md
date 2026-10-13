@@ -133,7 +133,7 @@ ni en el comentario de ningún archivo de código.
 
 216. PRIMER ALTA DE CLUB CON LA EVIDENCIA FUERA DE `data/` (probar en vivo). Ningún lote dio todavía de alta un club nuevo Y cargó su primer
     año con los scripts que escriben la evidencia en `Admin/carga-clubes/<clubId>.md` en vez de comentarios en `data/`. La primera vez, mirar:
-    el `.md` nuevo del club, que `data/<club>-data.js` salga sin comentarios (`node tools/audit.js` lo avisa como `comentario-en-data-club`)
+    el `.md` nuevo del club, que `data/<país>/<club>-data.js` salga sin comentarios (`node tools/audit.js` lo avisa como `comentario-en-data-club`)
     y el commit de cada año. Si algo sale mal, el lugar es `tools/evidencia-club.mjs` y `Admin/PIPELINE.md`, "Dónde queda la evidencia" (etapa 8).
 
 217. ORGANIZAR LAS CARPETAS DEL PROYECTO (pedido de Guido). Método: un paso por vez, con ejemplo real; cada paso con `git mv`, buscar la
@@ -144,12 +144,11 @@ ni en el comentario de ningún archivo de código.
     pero hay que confirmar que ningún script las abre. HECHO: raíz (e2.json, Business Books), lotes (`Admin/lotes/`, los cerrados en Archive), claves (`Admin/api-keys/`,
     `schema.sql` a `tools/supabase/`) logs de gasto de API (`Admin/registros/api/`),
     mediciones (`Admin/mediciones/`) registros del pipeline (`Admin/registros/`; la evidencia de `Admin/carga-clubes/` cita la ruta nueva) y
-    los scripts de sourcing de Europa del Este (`tools/sourcing-europa-este/`). `Admin/` quedó en los documentos y 9 carpetas.
+    los scripts de sourcing de Europa del Este (`tools/sourcing-europa-este/`). `Admin/` quedó en los documentos y 10 carpetas (con `sourcing/`).
     Las notas de sourcing (`<País>/<Club>.md`, `_indice/`, `README.md`) en `Admin/sourcing/`; `fuentes/` quedó solo con las páginas públicas.
     `cargar-lote.mjs` y `bfo-rusia.mjs` exigen, commitean y revierten `Admin/sourcing` junto con `fuentes`.
+    Los data files de club en `data/<país>/<clubId>-data.js`; la ruta vive solo en `tools/data-clubes.js` (tools) y `loadClubData()` (sitio).
     FALTA, en este orden (decidido con Guido):
-      g) `data/<país>/<clubId>-data.js`: el loader de `index.html` (~línea 730) arma la ruta con `clubs[clubId].country`; las ~32 tools,
-         con una función compartida. Red: `?audit=1` carga los 214 clubes y cuenta "clubes que no cargaron".
       h) `js/`: sacar los ~78 KB de JS inline de `index.html` a archivos de `js/`, y `js/styles.css` a `css/`. Verificar en la vista
          previa y con `?audit=1`.
       i) `tools/` en carpetas por etapa (sourcing, transcripción, onboarding, generadores, auditoría, común): 99 archivos, 128 imports

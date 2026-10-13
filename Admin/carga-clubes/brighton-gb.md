@@ -1,14 +1,14 @@
 # brighton-gb — evidencia de carga
 
-Lo que había como comentario en `data/brighton-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/brighton-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/brighton-gb-data.js — The Brighton and Hove Albion Football Club Limited (clubId
+data/gb/brighton-gb-data.js — The Brighton and Hove Albion Football Club Limited (clubId
 'brighton-gb'), Ejercicios 2023/24 y 2024/25 (1° de julio a 30 de junio, confirmado en la
 carátula de los dos documentos: "Year Ended 30 June 2024"/"for the Year Ended 30 June 2025").
 
@@ -146,7 +146,7 @@ position" en 2024/25).
 _note (data/):_
 
 ```text
-PDF con texto nativo, transcripción completa en "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2023-24.md". Cuentas individuales de la compañía, no consolidadas con Brighton & Hove Albion Women's Football Club Limited ni The Community Stadium Limited. No declara tipo de cambio propio (fxRef apunta a FX_CLOSE). El ejercicio 2024 fue restated (impuesto diferido) en el documento del ejercicio 2025 — se cargó con la cifra tal cual depositada en SU PROPIO documento, ver comentario de cabecera de data/brighton-gb-data.js y Admin/dudas-por-club.md.
+PDF con texto nativo, transcripción completa en "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2023-24.md". Cuentas individuales de la compañía, no consolidadas con Brighton & Hove Albion Women's Football Club Limited ni The Community Stadium Limited. No declara tipo de cambio propio (fxRef apunta a FX_CLOSE). El ejercicio 2024 fue restated (impuesto diferido) en el documento del ejercicio 2025 — se cargó con la cifra tal cual depositada en SU PROPIO documento, ver comentario de cabecera de data/gb/brighton-gb-data.js y Admin/dudas-por-club.md.
 ```
 
 ### brighton-gb-full-accounts-2025

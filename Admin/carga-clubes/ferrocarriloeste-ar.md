@@ -1,14 +1,14 @@
 # ferrocarriloeste-ar — evidencia de carga
 
-Lo que había como comentario en `data/ferrocarriloeste-ar-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ar/ferrocarriloeste-ar-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/ferrocarriloeste-ar-data.js — Club Ferro Carril Oeste (Asociación Civil), Caballito, Buenos
+data/ar/ferrocarriloeste-ar-data.js — Club Ferro Carril Oeste (Asociación Civil), Caballito, Buenos
 Aires, Argentina. Club social multideportivo (fútbol, básquet, natación, hockey, tenis, etc.),
 mismo tipo de entidad que Banfield/Vélez/Racing — NO una SAF. 2 EJERCICIOS CARGADOS: 118
 (1°/7/2021 al 30/6/2022) y 119 (1°/7/2022 al 30/6/2023). fiscalYearStart:'07-01'.
@@ -220,7 +220,7 @@ Bameule: sigue abierta; el 27/9/2026 hubo elecciones y ganó la oposición, toda
 _note (data/):_
 
 ```text
-PDF oficial (texto nativo), informe de auditoría sin salvedades (Dr. Gabriel Alejandro Warley, CPCECABA T°295 F°232, 16/9/2022). Estados contables preparados en moneda homogénea (RT6). SUPERÁVIT real: $256.901.915,58 ARS. Total del Activo al cierre: $3.693.397.732,35. No declara tipo de cambio de cierre propio (sin Anexo de moneda extranjera) — convertido con dólar mayorista de referencia BCRA (Comunicación A 3500) al 30/6/2022 ($125,215), investigado vía apis.datos.gob.ar. Ver data/ferrocarriloeste-ar-data.js para el detalle completo de categorización.
+PDF oficial (texto nativo), informe de auditoría sin salvedades (Dr. Gabriel Alejandro Warley, CPCECABA T°295 F°232, 16/9/2022). Estados contables preparados en moneda homogénea (RT6). SUPERÁVIT real: $256.901.915,58 ARS. Total del Activo al cierre: $3.693.397.732,35. No declara tipo de cambio de cierre propio (sin Anexo de moneda extranjera) — convertido con dólar mayorista de referencia BCRA (Comunicación A 3500) al 30/6/2022 ($125,215), investigado vía apis.datos.gob.ar. Ver data/ar/ferrocarriloeste-ar-data.js para el detalle completo de categorización.
 ```
 
 ### ferrocarriloeste-ar-balance-119-2022-23
@@ -228,7 +228,7 @@ PDF oficial (texto nativo), informe de auditoría sin salvedades (Dr. Gabriel Al
 _note (data/):_
 
 ```text
-PDF oficial (texto nativo), informe de auditoría sin salvedades (Dr. Gabriel Alejandro Warley, CPCECABA T°295 F°232, 7/9/2023). Estados contables preparados en moneda homogénea (RT6). SUPERÁVIT real: $712.927.771,84 ARS, impulsado por una venta/préstamo grande de jugadores del plantel profesional ($459,755138 M, línea "Futbol Profesional Ventas y Prestamos", que no existía como línea propia en el Ej. 118). Total del Activo al cierre: $8.563.450.301,47. No declara tipo de cambio de cierre propio — convertido con dólar mayorista de referencia BCRA al 30/6/2023 ($256,675). 18.280 socios/as al 30/6/2023 (única cifra de padrón encontrada en las 2 memorias). Ver data/ferrocarriloeste-ar-data.js para el detalle completo de categorización.
+PDF oficial (texto nativo), informe de auditoría sin salvedades (Dr. Gabriel Alejandro Warley, CPCECABA T°295 F°232, 7/9/2023). Estados contables preparados en moneda homogénea (RT6). SUPERÁVIT real: $712.927.771,84 ARS, impulsado por una venta/préstamo grande de jugadores del plantel profesional ($459,755138 M, línea "Futbol Profesional Ventas y Prestamos", que no existía como línea propia en el Ej. 118). Total del Activo al cierre: $8.563.450.301,47. No declara tipo de cambio de cierre propio — convertido con dólar mayorista de referencia BCRA al 30/6/2023 ($256,675). 18.280 socios/as al 30/6/2023 (única cifra de padrón encontrada en las 2 memorias). Ver data/ar/ferrocarriloeste-ar-data.js para el detalle completo de categorización.
 ```
 
 ## Otros

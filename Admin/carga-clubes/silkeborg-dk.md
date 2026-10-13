@@ -1,14 +1,14 @@
 # silkeborg-dk — evidencia de carga
 
-Lo que había como comentario en `data/silkeborg-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/dk/silkeborg-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/silkeborg-dk-data.js — Silkeborg IF A/S (clubId 'silkeborg-dk'), Dinamarca.
+data/dk/silkeborg-dk-data.js — Silkeborg IF A/S (clubId 'silkeborg-dk'), Dinamarca.
 Ejercicio fiscal 2024 (año CALENDARIO, 1° de enero a 31 de diciembre de 2024,
 `fiscalYearStart:'01-01'`, mismo criterio que fckobenhavn-dk).
 

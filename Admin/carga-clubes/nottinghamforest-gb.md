@@ -1,14 +1,14 @@
 # nottinghamforest-gb — evidencia de carga
 
-Lo que había como comentario en `data/nottinghamforest-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/nottinghamforest-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/nottinghamforest-gb-data.js — Nottingham Forest Football Club Limited (clubId
+data/gb/nottinghamforest-gb-data.js — Nottingham Forest Football Club Limited (clubId
 'nottinghamforest-gb'), Ejercicios 2023/24 y 2024/25 (1° de julio a 30 de junio, confirmado en la
 carátula de los dos documentos: "FOR THE YEAR ENDED 30 JUNE 2024"/"...2025").
 

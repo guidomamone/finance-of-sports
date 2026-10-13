@@ -34,7 +34,7 @@ CVR 83 93 34 10 confirmado vía `cvrapi.dk` (dirección y forma societaria Aktie
 
 Ninguna.
 
-- **CARGADO al sitio (2026-09-25)**: ejercicio 2020, `data/brondby-dk-data.js` (clubId
+- **CARGADO al sitio (2026-09-25)**: ejercicio 2020, `data/dk/brondby-dk-data.js` (clubId
   `brondby-dk`). Tie-out exacto (se corrigió un typo de decimal en la transcripción original: un
   sub-ítem "Bestyrelseshonorar" transcripto como -499 en vez de -0,499, encontrado por el
   chequeo de `node tools/audit.js`).

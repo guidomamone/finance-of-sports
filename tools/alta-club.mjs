@@ -15,7 +15,7 @@
 //   1. Resuelve si el club YA EXISTE en el sitio con la regla ÚNICA del proyecto,
 //      `clubDeCarpeta()` de tools/carpetas-clubes.mjs (la misma que usan onboard.mjs,
 //      inventario-transcripciones.mjs, pipeline.mjs y audit.js): (a) algún
-//      `data/<id>-data.js` cita la carpeta `Clubes/<País>/<Club>/` -> ese club; (b) si
+//      `data/<país>/<id>-data.js` cita la carpeta `Clubes/<País>/<Club>/` -> ese club; (b) si
 //      no, el nombre de la carpeta es IGUAL al de un club del mismo país; (c) si no,
 //      club nuevo. Hasta la Versión 309 este script tenía su propia regla (citas +
 //      `onboard.mjs --quien` + desempate por país) y onboard.mjs otra: se reemplazó
@@ -179,7 +179,7 @@
 // ----------------------------------------------------------------------------
 // Sale del commit que agregó Panathinaikos (839fea7) y del skill de onboarding §3:
 //   - `data/clubs.js`: la línea del club en `clubs{}` (única cosa centralizada).
-//   - `data/<id>-data.js`: el ESQUELETO, con la cabecera de comentario de siempre y
+//   - `data/<país>/<id>-data.js`: el ESQUELETO, con la cabecera de comentario de siempre y
 //     todas las estructuras vacías (sin ejercicios: los rubros los carga la etapa de
 //     carga, `tools/proponer-carga.mjs`). El `fiscalYearMeta` propuesto va ADENTRO
 //     DE UN COMENTARIO, no registrado: un ejercicio con meta y sin rubros se vería
@@ -850,7 +850,7 @@ export function analizar(docArg, sitio, ov = {}) {
 
   // ---------------------------------------------------------------- ¿ya existe?
   // UNA sola regla en todo el proyecto (tools/carpetas-clubes.mjs, 2026-09-30): cita en algún
-  // data/<id>-data.js -> ese club; si no, nombre IGUAL a un club del mismo país; si no, club nuevo.
+  // data/<país>/<id>-data.js -> ese club; si no, nombre IGUAL a un club del mismo país; si no, club nuevo.
   // Hasta la Versión 309 este script tenía su propia versión (mapa de citas + `onboard.mjs --quien` +
   // desempate por país) y onboard.mjs otra distinta: dos reglas que podían dar respuestas distintas
   // para la misma carpeta. Ahora las dos (y audit.js, que vigila que la regla sea inequívoca) usan esta.
@@ -1371,7 +1371,7 @@ function escribir(r) {
     clubsJs = insertarAntes(clubsJs, 'const clubs = {', /^\};$/m, linea, 'data/clubs.js');
     writeFileSync(clubsPath, clubsJs); escritos.push('data/clubs.js');
 
-    // 2. data/<id>-data.js (esqueleto)
+    // 2. data/<país>/<id>-data.js (esqueleto)
     const v = id.replace(/[^a-z0-9]/g, '');
     const dataPath = resolve(ROOT, rutaData(id, { pais: val('country') }));
     if (existsSync(dataPath)) throw new Error(`ya existe ${rutaData(id, { pais: val('country') })}`);

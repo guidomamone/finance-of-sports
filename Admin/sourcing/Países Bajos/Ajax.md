@@ -34,7 +34,7 @@ ejercicio anual completo), quedan como complemento si se necesita un cierre a mi
 ## Qué se cargó al sitio (sesión de onboarding de Países Bajos)
 
 **2 ejercicios cargados** (los más recientes de los 11 bajados): 2023/24 y 2024/25, en
-`data/ajax-nl-data.js` (`clubId: 'ajax-nl'`). Transcripciones completas vía `pdftotext -layout`
+`data/nl/ajax-nl-data.js` (`clubId: 'ajax-nl'`). Transcripciones completas vía `pdftotext -layout`
 (PDF con capa de texto nativa) en `Clubes/Países Bajos/Ajax/jaarverslag-2023-24.md` y
 `jaarverslag-2024-25.md`. Tie-out verificado exacto contra los 2 documentos (Bedrijfsresultaat,
 Resultaat vóór/na belastingen) y contra el motor real del sitio (`node tools/audit.js`, sin

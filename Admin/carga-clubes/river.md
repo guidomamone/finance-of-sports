@@ -1,14 +1,14 @@
 # river — evidencia de carga
 
-Lo que había como comentario en `data/river-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ar/river-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/river-data.js — River Plate: Brito (2021-actual) y D'Onofrio (2013-2021).
+data/ar/river-data.js — River Plate: Brito (2021-actual) y D'Onofrio (2013-2021).
 
 Ejercicios 2021 y 2024 = REALES. Ejercicio 2025 SIGUE SIENDO PLACEHOLDER: no hay documento
 oficial cargado todavía (ver Admin/sourcing/Argentina/River.md).
@@ -79,7 +79,7 @@ fiscalYearStart corregido a '09-01' en esta sesión (onboarding de Brasil): dec�
 siempre, un dato incorrecto pero inofensivo mientras nada leía este campo (ver comentario de
 `isCalendarYearClub()` en js/finanzas-calc.js, agregado esta sesión — es la primera vez que
 `fiscalYearStart` se usa de verdad). El ejercicio real de River corre de 1° de septiembre a 31 de
-agosto (ver cabecera de data/river-data.js: "Ejercicio 2024 (1° de septiembre de 2023 al 31 de
+agosto (ver cabecera de data/ar/river-data.js: "Ejercicio 2024 (1° de septiembre de 2023 al 31 de
 agosto de 2024...)"), nunca fue año calendario — con el '01-01' viejo, `isCalendarYearClub('river')`
 hubiera dado true por error y el dropdown "Año"/tabla "Estado de resultados" de River habrían
 perdido el rango de temporada "2023/2024", mostrando solo "2024" suelto, un caso real de dato
@@ -124,7 +124,7 @@ los gastó) y no POR NATURALEZA (en qué se gastaron), así que los sueldos est�
 cada área, sin una línea propia.
 
 QUÉ SE HIZO: mapear cada destino al bucket de destino que el sitio ya tiene, siguiendo
-LÍNEA POR LÍNEA el precedente de Boca 2025 (`data/boca-data.js`), que es la referencia
+LÍNEA POR LÍNEA el precedente de Boca 2025 (`data/ar/boca-data.js`), que es la referencia
 canónica de Formato simplificado. No se movió ni un peso: los montos son los mismos y el
 total sigue cerrando contra los $149.674.797.729 impresos.
   - "Fútbol profesional" -> `lump_football_operations_expense`, que es exactamente lo que
@@ -275,7 +275,7 @@ PDF de 67 páginas con informe de auditoría independiente real y sellos de lega
 
 ```text
 riverPresupuestoOverlayByYear (Versión 57): mismo mecanismo que racingPresupuestoOverlayByYear
-(ver data/racing-data.js), vacío hoy, para el día que aparezca un ejercicio de River con
+(ver data/ar/racing-data.js), vacío hoy, para el día que aparezca un ejercicio de River con
 Presupuesto Y Balance reales cargados a la vez.
 ```
 

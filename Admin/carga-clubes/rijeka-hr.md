@@ -1,14 +1,14 @@
 # rijeka-hr — evidencia de carga
 
-Lo que había como comentario en `data/rijeka-hr-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/hr/rijeka-hr-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/rijeka-hr-data.js — HRVATSKI NOGOMETNI KLUB RIJEKA sportsko dioničko
+data/hr/rijeka-hr-data.js — HRVATSKI NOGOMETNI KLUB RIJEKA sportsko dioničko
 društvo (Rijeka, Croacia). Tercer club croata cargado en esta sesión de
 onboarding de Croacia como país nuevo. clubId 'rijeka-hr' (sufijo de país,
 convención desde la Versión 129).

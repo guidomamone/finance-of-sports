@@ -1,14 +1,14 @@
 # alianzalima-pe — evidencia de carga
 
-Lo que había como comentario en `data/alianzalima-pe-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/pe/alianzalima-pe-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/alianzalima-pe-data.js — Alianza Lima (Perú), primer club peruano del sitio.
+data/pe/alianzalima-pe-data.js — Alianza Lima (Perú), primer club peruano del sitio.
 
 FUENTE: 6 Estados Financieros auditados (NIIF), uno por ejercicio 2019-2024, transcriptos en
 `Clubes/Perú/Alianza Lima/estado-financiero-<año>.md`. Los de 2019 y 2021 tienen capa de texto
@@ -78,7 +78,7 @@ club-data-mapping/SKILL.md sección 1 (agregados ahí también al cerrar esta se
     "comerciales" según la propia descripción de esta categoría en category-map.js).
   - 2022/2023/2024, "Otros ingresos deportivos"/"Otros ingresos" (Nota 15/17, NO transcripta): se
     dejó como UNA sola línea sin desglosar, `lump_football_operations` (ingreso) — mismo criterio
-    que usa River para su "Fútbol Profesional" (ver data/river-data.js): el documento SÍ separa
+    que usa River para su "Fútbol Profesional" (ver data/ar/river-data.js): el documento SÍ separa
     esto en algo (se ve en 2019-2021: cuotas de socios, taquilla, transferencias, academias,
     concesionarios, regalías, diversos), pero ESTA transcripción no llegó a esa Nota, así que
     mandarlo a `other_income` sería subestimar cuánto de esto es en realidad fútbol operativo
@@ -181,7 +181,7 @@ resultado integral 2022.
 ```text
 EEFF 2022 (solo estados principales transcriptos). "Costos deportivos" queda como bolsón sin
 desglosar, `lump_football_operations_expense` (mismo criterio que usa River para su "Fútbol
-profesional", ver data/river-data.js: el documento sí lo desglosaría en su Nota, pero esta
+profesional", ver data/ar/river-data.js: el documento sí lo desglosaría en su Nota, pero esta
 transcripción no llegó a esa página). Suma = -75.511252 M PEN, EXACTO igual a "Gastos" del
 Estado de resultado integral 2022 (60.792598+8.734136+5.984518).
 ```
@@ -372,7 +372,7 @@ Boca/Vélez (club-data-mapping/referencia/formato-simplificado.md). cash = "Efec
 ```text
 Mercado de pases / resultados deportivos / títulos: sin datos verificados todavía para este club
 (fuera del alcance de esta sesión, que fue onboarding financiero). Mismo patrón que otros clubes
-recién onboardeados sin este trabajo hecho todavía (ver data/envigado-data.js).
+recién onboardeados sin este trabajo hecho todavía (ver data/co/envigado-data.js).
 ```
 
 ### gestionesByClub['alianzalima-pe']

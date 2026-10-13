@@ -62,7 +62,7 @@ Se cargó el ejercicio 2025 (1/7/2024-30/6/2025), usando la versión **consolida
 `jaarrekening-2025-06-30-consolidado.md`) por preferirse siempre sobre la individual
 cuando ambas están disponibles para el mismo año (cuentas de grupo, IFRS, más
 completas — la individual también existe para 2025 pero no se usó). `clubId`:
-`clubbrugge-be`. Ver `data/clubbrugge-be-data.js` para el detalle completo de
+`clubbrugge-be`. Ver `data/be/clubbrugge-be-data.js` para el detalle completo de
 categorización y el tie-out verificado. Color de marca: `#0078BF` (azul,
 teamcolorcodes.com, confirmado contra la identidad azul/negro de Wikipedia),
 verificado 2026-09-25.

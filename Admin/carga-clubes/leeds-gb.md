@@ -1,14 +1,14 @@
 # leeds-gb — evidencia de carga
 
-Lo que había como comentario en `data/leeds-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/leeds-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/leeds-gb-data.js — Leeds United (Inglaterra, Championship), clubId 'leeds-gb'.
+data/gb/leeds-gb-data.js — Leeds United (Inglaterra, Championship), clubId 'leeds-gb'.
 
 Fuente: "Consolidated Financial Statements" (cuentas de GRUPO) de Leeds United Football Club
 Limited (Companies House n° 06233875), auditadas por Gibson Booth, depositadas en Companies
@@ -110,7 +110,7 @@ year 23.120370 = 60.297537, reconcilia EXACTO con cash-grossDebt=-55.288543 impr
 _note (data/):_
 
 ```text
-Cuentas consolidadas del grupo, auditadas por Gibson Booth, depositadas en Companies House (Reino Unido). Championship (no Premier League), verificado contra el propio documento y WebSearch. Transcripción completa en Clubes/Inglaterra/Leeds United/leeds-group-accounts-2023-24.md. Ver comentario de cabecera de data/leeds-gb-data.js.
+Cuentas consolidadas del grupo, auditadas por Gibson Booth, depositadas en Companies House (Reino Unido). Championship (no Premier League), verificado contra el propio documento y WebSearch. Transcripción completa en Clubes/Inglaterra/Leeds United/leeds-group-accounts-2023-24.md. Ver comentario de cabecera de data/gb/leeds-gb-data.js.
 ```
 
 ### leeds-gb-group-accounts-2025

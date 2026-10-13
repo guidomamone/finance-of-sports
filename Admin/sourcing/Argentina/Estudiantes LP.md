@@ -16,7 +16,7 @@ ver abajo) · búsqueda web: agotado · regulador/país: no aplica — 2026-09-2
   distinta de Vélez/Instituto (acá el fútbol se separa en "Plantel profesional" — economía de pases —
   vs. "Exhibición y espectáculos" — operación de partidos). Resultados reales: SUPERÁVIT 2022
   $574.824.674 / SUPERÁVIT 2023 $14.074.185 / SUPERÁVIT 2024 $9.565.538.179 (ARS, salto grande por
-  una venta de pases importante). Ver `data/estudianteslp-data.js` para el detalle completo,
+  una venta de pases importante). Ver `data/ar/estudianteslp-data.js` para el detalle completo,
   incluye 2 bugs de categorización encontrados y corregidos (una fila de gasto etiquetada con una
   categoría de revenue, ver comentario de cabecera del archivo).
 - Memoria y Balance, Ejercicio 2024-25 — mismo dominio, `memoria-y-balance-2024-2025.pdf` (127
@@ -25,7 +25,7 @@ ver abajo) · búsqueda web: agotado · regulador/país: no aplica — 2026-09-2
   DÉFICIT real: $(14.277.112.789) ARS — primer déficit del club en los 4 ejercicios cargados.
   Estructura nueva este año: "Fútbol - Plantel profesional" pasó a ser columna propia (antes esa
   economía de pases vivía dentro de "Fútbol - Exhibición y espectáculos"). Ver
-  `data/estudianteslp-data.js`.
+  `data/ar/estudianteslp-data.js`.
 - Pendiente: ejercicios anteriores a 2021-22 (el club tiene más de un siglo, probable archivo
   histórico no indexado por buscadores).
 - Contacto: no se encontró mail institucional directo; secciones Socios/Contacto del sitio oficial.

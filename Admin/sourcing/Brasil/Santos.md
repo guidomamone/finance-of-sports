@@ -34,7 +34,7 @@
 
 ## Onboarding (2026-09-24)
 
-- **2 ejercicios cargados en `data/santos-br-data.js`** (clubId `santos-br`): 2024 (de
+- **2 ejercicios cargados en `data/br/santos-br-data.js`** (clubId `santos-br`): 2024 (de
   `demonstracoes-financeiras-2023-2024.md`, columna "exercício corrente" de ESE documento, nunca la
   comparativa) y 2025 (de `demonstracoes-financeiras-2024-2025.md`, ídem). Confirmado en la carátula
   de ambos PDF: "exercício social findo em 31 de dezembro de 2024/2025" — año calendario,

@@ -30,7 +30,7 @@
   reconciliaba contra su subtotal impreso por EUR 10.000 exactos (probable transposición de dígitos);
   2024/25 tenía "Amortización del inmovilizado" desviada EUR 3.000.000 exactos contra RESULTADO DE
   EXPLOTACIÓN impreso. Los dos se corrigieron por residuo contra el subtotal/total impreso (ver
-  comentario de cabecera de `data/girona-es-data.js`) y reconciliaron EXACTOS después del ajuste.
+  comentario de cabecera de `data/es/girona-es-data.js`) y reconciliaron EXACTOS después del ajuste.
   FX: `EUR@2025-06-30` para el ejercicio 2025 (ya en `data/currency-map.js`); el ejercicio 2020
   necesita `EUR@2020-06-30`, que NO EXISTE TODAVÍA en `FX_CLOSE` — pendiente que Guido la agregue
   (cotización de cierre BCE al 30/6/2020), mientras tanto el archivo tira un `console.warn`.

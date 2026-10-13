@@ -15,7 +15,7 @@
   más reciente).
 - Contacto: siis.ia.supersociedades.gov.co (NIT 890305773).
 - **CARGADO al sitio (sesión 2026-09-22, Ejercicio 2025 únicamente)**: ver
-  `data/americadecali-co-data.js`. El PDF es texto nativo, pero las tablas de Notas 19-25 se
+  `data/co/americadecali-co-data.js`. El PDF es texto nativo, pero las tablas de Notas 19-25 se
   renderizan superpuestas/duplicadas en el documento (no un escaneo, un artefacto de layout) — se
   reconstruyó cada nota sumando sus líneas y verificando contra el subtotal impreso en el Estado de
   Resultados antes de cargar. fx usado: TRM oficial al 31/12/2025 ($3.757,08 COP/USD) — el documento

@@ -40,7 +40,7 @@ exista el post -8 o una nueva convocatoria de asamblea (probable oct/nov 2026).
 ## Cargado al sitio (2026-09-23): 3 balances + 3 presupuestos, `clubId: 'gimnasiaesgrima-ar'`
 
 Los 9 documentos de la sesión anterior (ver más abajo) quedaron transcriptos y cargados en
-`data/gimnasiaesgrima-ar-data.js`. Los 8 documentos con texto nativo se transcribieron con
+`data/ar/gimnasiaesgrima-ar-data.js`. Los 8 documentos con texto nativo se transcribieron con
 `pdftotext -layout` (uno de ellos, `presupuesto-2024-2025.pdf`, tiene una fuente subseteada sin
 tabla ToUnicode para los montos/meses — se resolvió leyendo visualmente la página renderizada, ver
 la nota al principio de `Clubes/Argentina/Gimnasia y Esgrima LP/presupuesto-2024-2025.md`). El único

@@ -800,7 +800,7 @@ else if (IS_MAIN) {
   const site = loadSite(); const pdf = flagVal('--pdf');
   const q = JSON.parse(await run('tools/onboard.mjs', ['--quien', pdf, ...(flagVal('--club') ? ['--club', flagVal('--club')] : [])]));
   const md = pdf.replace(/\.pdf$/i, '.md'); const cd = site.generic[q.clubId];
-  if (!cd) { console.error(`El club ${q.clubId} no tiene data/<club>-data.js: la carga automática solo cubre un año nuevo de un club existente.`); process.exit(2); }
+  if (!cd) { console.error(`El club ${q.clubId} no tiene data/<país>/<club>-data.js: la carga automática solo cubre un año nuevo de un club existente.`); process.exit(2); }
   const b = await briefingFor(q.clubId, q.year, md);
   const p = await propose({ briefing: b, mdText: readFileSync(resolve(root, md), 'utf8'), clubData: cd, generic: site.generic, club: q.clubId, year: q.year });
   console.log(JSON.stringify({ club: q.clubId, year: q.year, ...p, lines: p.lines?.slice(0, 40) }, null, 1));

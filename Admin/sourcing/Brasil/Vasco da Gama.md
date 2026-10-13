@@ -23,7 +23,7 @@
   SAF sin el bloqueo Cloudflare); crvascodagama.com (documentos de la associação CRVG); vasco.com.br/transparencia
   y media.vasco.com.br (oficiales, bloqueados por Cloudflare en todos los intentos hasta ahora).
 - Último chequeo: 2026-09-12.
-- **ONBOARDING (2026-09-24): 1 ejercicio cargado a `data/vascodagama-br-data.js`, NO 2 — hallazgo
+- **ONBOARDING (2026-09-24): 1 ejercicio cargado a `data/br/vascodagama-br-data.js`, NO 2 — hallazgo
   sobre `dre-balanco-patrimonial-2024.pdf`.** Se cargó 2023 (auditado, Grant Thornton, sin
   salvedades). El plan asumía que `dre-balanco-patrimonial-2024.md` eran las demonstrações
   contábeis 2024 de la SAF (no auditadas). Leído completo, el documento entero (Carta do

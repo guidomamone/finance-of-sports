@@ -1,14 +1,14 @@
 # instituto — evidencia de carga
 
-Lo que había como comentario en `data/instituto-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ar/instituto-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/instituto-data.js — Instituto Atlético Central Córdoba: club nuevo, 4to del motor genérico
+data/ar/instituto-data.js — Instituto Atlético Central Córdoba: club nuevo, 4to del motor genérico
 (después de River/Racing/Vélez). Un solo ejercicio cargado hasta ahora: 2023/2024 (Ejercicio
 N°70, 1°/7/2023 a 30/6/2024), balance auditado real, texto nativo en el PDF (no hizo falta OCR).
 PDF + transcripción en Clubes/Argentina/Instituto/balance-general-2023-2024.{pdf,md}.
@@ -173,7 +173,7 @@ ordinarios" impresos (pág. 3). SUPERÁVIT FINAL real (post-extraordinarios): $1
 _note (data/):_
 
 ```text
-PDF oficial (17 páginas, texto nativo, sin necesidad de OCR), con informe de auditoría de fecha 15/10/2024. Instituto es el primer club nuevo agregado al sitio después de Vélez (Versión 94). Cifras en moneda homogénea reexpresada (RT 6, Resol. JG FACPCE 539/18). Convertido a USD con $909, el dólar mayorista de cierre al 30/6/2024 (mismo tipo de cambio ya usado para Racing y Vélez en esa misma fecha de cierre — el documento de Instituto no declara su propio tipo de cambio, a diferencia de Boca/Racing/Vélez, no tiene Anexo de moneda extranjera). SUPERÁVIT FINAL real del ejercicio: $1.830.503.804 ARS. El Anexo V ("Gastos Específicos de Sectores") desglosa gasto por sector (Fútbol/Básquet/La Agustina/Sede/Colegio/Tienda), mismo mecanismo que el Anexo III de Vélez para separar "Salarios y primas (plantel y cuerpo técnico)" del resto — ver comentario completo en data/instituto-data.js. Presidente: Juan Manuel Cavagliatto ("Juntos por Instituto"), electo 4/5/2021, reelecto para el período 2022-2025 (institutoacc.com.ar/index.php/asumio-la-nueva-comision-directiva-en-instituto/), cubre la totalidad de este ejercicio. Club con 30.000 socios (institutoacc.com.ar/index.php/somos-30-mil-socios-y-socias/).
+PDF oficial (17 páginas, texto nativo, sin necesidad de OCR), con informe de auditoría de fecha 15/10/2024. Instituto es el primer club nuevo agregado al sitio después de Vélez (Versión 94). Cifras en moneda homogénea reexpresada (RT 6, Resol. JG FACPCE 539/18). Convertido a USD con $909, el dólar mayorista de cierre al 30/6/2024 (mismo tipo de cambio ya usado para Racing y Vélez en esa misma fecha de cierre — el documento de Instituto no declara su propio tipo de cambio, a diferencia de Boca/Racing/Vélez, no tiene Anexo de moneda extranjera). SUPERÁVIT FINAL real del ejercicio: $1.830.503.804 ARS. El Anexo V ("Gastos Específicos de Sectores") desglosa gasto por sector (Fútbol/Básquet/La Agustina/Sede/Colegio/Tienda), mismo mecanismo que el Anexo III de Vélez para separar "Salarios y primas (plantel y cuerpo técnico)" del resto — ver comentario completo en data/ar/instituto-data.js. Presidente: Juan Manuel Cavagliatto ("Juntos por Instituto"), electo 4/5/2021, reelecto para el período 2022-2025 (institutoacc.com.ar/index.php/asumio-la-nueva-comision-directiva-en-instituto/), cubre la totalidad de este ejercicio. Club con 30.000 socios (institutoacc.com.ar/index.php/somos-30-mil-socios-y-socias/).
 ```
 
 ## Otros
@@ -186,7 +186,7 @@ misma sesión, extender a mano 8 ternarios `clubId === 'river' ? ... : clubId ==
 ...` por cada club nuevo (finanzas-calc.js x5, finanzas-render.js x2, index.html x3) dejó de
 escalar — cada club nuevo era una rama más en CADA uno de esos 8 lugares, alto riesgo de
 olvidarse uno (exactamente el problema que ya advertía club-or-year-onboarding/SKILL.md sección
-2). Reemplazado por un registro simple: cada data/<club>-data.js se anota a sí mismo en
+2). Reemplazado por un registro simple: cada data/<país>/<club>-data.js se anota a sí mismo en
 `window.CLUB_GENERIC_DATA[clubId]` (un objeto plano, sin ternarios) al final del archivo. Los 8
 call-sites ahora hacen `CLUB_GENERIC_DATA[clubId].fiscalYearMeta` (etc.) en vez de la cadena de
 ternarios — agregar un club nuevo de acá en más significa SOLO agregar este bloque a su propio

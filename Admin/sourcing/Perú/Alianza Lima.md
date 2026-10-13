@@ -2,7 +2,7 @@
 
 **Ángulos**: sitio oficial: agotado (6 PDFs 2019-2024; /transparencia es JS y no lista) · regulador/país: no aplica · Wayback CDX: hecho (3.859 URLs; solo 2019/2020/2022/2023 archivados) · búsqueda web: n/a · barrido: 4 (Sonnet) — 2026-10-03
 
-- **CARGADO al sitio: los 6 ejercicios (2019-2024), `data/alianzalima-pe-data.js`.** Tie-out exacto
+- **CARGADO al sitio: los 6 ejercicios (2019-2024), `data/pe/alianzalima-pe-data.js`.** Tie-out exacto
   contra el propio Estado de resultados integrales de cada EEFF (Ingresos, Gastos y Resultado
   operativo/neto, los 6 años) — verificado con un script Node aparte además de a mano, y en el
   navegador (Formato del club y Formato simplificado, moneda nativa y USD).

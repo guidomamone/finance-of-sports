@@ -21,7 +21,7 @@
 
 ## Cargado a Finanzas (2026-09-25)
 
-- Ejercicio 2024/25 cargado en `data/rayovallecano-es-data.js` (`clubId: 'rayovallecano-es'`), a
+- Ejercicio 2024/25 cargado en `data/es/rayovallecano-es-data.js` (`clubId: 'rayovallecano-es'`), a
   partir de `Clubes/España/Rayo Vallecano/informe-auditoria-cuentas-anuales-2024-2025.md`. La opinión
   de auditoría CON SALVEDADES (AUDRIA, S.L.) es por la valoración del derecho de uso sobre el Campo
   de Fútbol de Vallecas (Convenio con la Comunidad de Madrid, 5/7/2019): el auditor no recibió una

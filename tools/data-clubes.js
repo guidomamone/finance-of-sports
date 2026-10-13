@@ -19,7 +19,6 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
-const POR_PAIS = false;
 
 let paises = null;
 function paisDe(clubId) {
@@ -34,7 +33,7 @@ function paisDe(clubId) {
 // Un club que no está en clubs.js (y sin `pais`) devuelve la ruta plana, que no existe: un existsSync da false, que es lo correcto.
 function rutaData(clubId, { pais } = {}) {
   const p = (pais || '').toLowerCase() || paisDe(clubId);
-  return POR_PAIS && p ? `data/${p}/${clubId}-data.js` : `data/${clubId}-data.js`;
+  return p ? `data/${p}/${clubId}-data.js` : `data/${clubId}-data.js`;
 }
 
 function idDeArchivo(rel) {

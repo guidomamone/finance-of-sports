@@ -33,7 +33,7 @@ cambia; este criterio es lo que no cambia):
 
 1. **¿Este archivo o estructura se LEE, CARGA o ITERA ENTERO, o solo la porción que hace falta?**
    `index.html`, `Admin/ESTADO.md` y `Admin/TODO.md` se leen enteros: su tamaño importa.
-   `Admin/CHANGELOG.md` se consulta con grep: su tamaño casi no importa. Un `data/<club>-data.js` se
+   `Admin/CHANGELOG.md` se consulta con grep: su tamaño casi no importa. Un `data/<país>/<club>-data.js` se
    carga bajo demanda, uno por visita: no importa cuántos existan, importa cuánto pesa CADA UNO. La
    misma pregunta aplica en el navegador: los archivos de `data/` que `index.html` incluye con
    `<script src>` se bajan SIEMPRE, antes de elegir club; el resto es lazy.
@@ -48,7 +48,7 @@ cambia; este criterio es lo que no cambia):
    club en `Admin/sourcing/_indice/<País>.md`, justamente por esto.
 
 Y una anti-pregunta, para no gastar tiempo donde no hace falta: **¿esto vive en disco pero se sirve
-de a uno por visita o por sesión?** (`data/<club>-data.js`, `Clubes/<País>/<Club>/`, el detalle de
+de a uno por visita o por sesión?** (`data/<país>/<club>-data.js`, `Clubes/<País>/<Club>/`, el detalle de
 `Admin/sourcing/<País>/<Club>.md`). Si la respuesta es sí, el peso TOTAL en disco no es un cuello aunque sea
 grande: un directorio de mil carpetas no es más lento de abrir que uno de cuarenta, y el sitio nunca
 baja más de un archivo de club por visita.
@@ -63,7 +63,7 @@ hacer o cuándo se rompe**. Los números no viven en esta skill: se miden cada v
 Medidas de base que se reusan abajo:
 
 ```bash
-ls data/*-data.js | wc -l                      # clubes cargados
+ls data/*/*-data.js | wc -l                      # clubes cargados
 node tools/audit.js                            # grupo `escala`: proyeccion y archivo-pesado
 ```
 
@@ -125,7 +125,7 @@ por club.
 son dos "campos que solo hacen falta con el club ya cargado": `fiscalYearStart` se lee ANTES de bajar
 ningún archivo de club, para decidir si un ejercicio se etiqueta "2024" o "2023/2024" (el selector y
 `js/liga.js` llaman a `esEjercicioCalendario()` / `ejercicioLabel()` de `js/finanzas-calc.js`, que
-leen `clubs[id].fiscalYearStart`). Moverlo al `data/<club>-data.js` obligaría a bajar todos los
+leen `clubs[id].fiscalYearStart`). Moverlo al `data/<país>/<club>-data.js` obligaría a bajar todos los
 archivos de club para escribir una etiqueta, justo lo que el selector existe para evitar. Si se
 retoma, el destino correcto de ese campo es `club-index.js` (que es generado), no el archivo del club.
 
@@ -164,14 +164,14 @@ Lo que enseñó resolver `club-leagues.js`, para aplicarlo a los otros dos:
   así que 25 no compra más paralelismo de red que 6, sirve para no inyectar miles de `<script>` de una
   sola vez. LO QUE HAY QUE CUIDAR SI SE TOCA: cargar en paralelo no entremezcla los mensajes de
   consola de dos clubes por dos razones, y las dos hay que preservarlas. Una, ningún
-  `data/<club>-data.js` loguea nada al ejecutarse. Dos, `verifyTieOuts()` y `checkFxSanity()` corren
+  `data/<país>/<club>-data.js` loguea nada al ejecutarse. Dos, `verifyTieOuts()` y `checkFxSanity()` corren
   DESPUÉS de que terminó toda la carga, no intercaladas.
 
 ### E. Namespacing e IDs
 
 - **`clubId` sin país**: resuelto como MECANISMO, no como migración completa. Los clubes con id
   heredado (sin sufijo de país) se cuentan con
-  `ls data/*-data.js | sed 's|data/||;s|-data.js||' | grep -v -- '-[a-z][a-z]$' | wc -l`.
+  `ls data/*/*-data.js | sed 's|data/||;s|-data.js||' | grep -v -- '-[a-z][a-z]$' | wc -l`.
   `checkClubIds()` en `tools/audit.js` detecta el momento exacto en que un id heredado deja de ser
   inequívoco (P2) y marca cualquier club nuevo sin país (P2). No requiere más trabajo salvo
   mantenerlo. Es el modelo a copiar para el resto de esta lista: un chequeo automático que avisa en
@@ -217,14 +217,14 @@ Lo que enseñó resolver `club-leagues.js`, para aplicarlo a los otros dos:
   juega una liga de otro país, así que la carpeta de un país tiene todo lo que hace falta para
   contestar tanto "las ligas de este club" como "los clubes de esta liga".
 - `Admin/dudas-por-club.md`: mismo patrón (`wc -l Admin/dudas-por-club.md`). Vigilar.
-- Cabeceras de `data/<club>-data.js`: NO es un caso de este problema, ya es 1 archivo por club.
+- Cabeceras de `data/<país>/<club>-data.js`: NO es un caso de este problema, ya es 1 archivo por club.
 
 ### G. Proceso, no código
 
 - **Backlog de transcripción (`Clubes/`)**: es un aviso de RITMO, no de arquitectura. Se mide
   comparando lo sourceado contra lo cargado:
   `find Clubes -mindepth 2 -maxdepth 2 -type d | wc -l` (carpetas de club),
-  `find Clubes -name '*.md' | wc -l` (transcripciones) y `ls data/*-data.js | wc -l` (clubes
+  `find Clubes -name '*.md' | wc -l` (transcripciones) y `ls data/*/*-data.js | wc -l` (clubes
   cargados). Si la brecha se agranda, el sourcing le gana a la carga; si se achica, al revés. Un
   directorio por club no colisiona ni pesa como problema. El cuello para llegar a miles de clubes
   cargados es el trabajo de cargar y verificar cada balance (ver `Admin/PIPELINE.md`), no la falta de

@@ -1,14 +1,14 @@
 # banfield-ar — evidencia de carga
 
-Lo que había como comentario en `data/banfield-ar-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/ar/banfield-ar-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/banfield-ar-data.js — Club Atlético Banfield (Sociedad Civil). Primer ejercicio cargado:
+data/ar/banfield-ar-data.js — Club Atlético Banfield (Sociedad Civil). Primer ejercicio cargado:
 2020 (116° Ejercicio Económico, 1°/7/2019 al 30/6/2020). PDF + transcripción completa en
 Clubes/Argentina/Banfield/memoria-y-balance-2019-2020.{pdf,md} (58 páginas, texto nativo,
 confirmado con pdftotext -layout, sin OCR). Ver Admin/sourcing/Argentina/Banfield.md para cómo se
@@ -231,7 +231,7 @@ Barbuto: elegida el 6/10/2018 (lista única), asumió el 8/10/2018; el mandato t
 _note (data/):_
 
 ```text
-PDF oficial (58 páginas, texto nativo, sin OCR), informe del auditor (Juan Pablo Régoli, C.P.C.E.P.B.A.) del 30/9/2020, sin salvedades. URL oficial del club (clubabanfield.org/inicio/balance/CAB-MemoriaBalance2020.pdf) da 404 hoy — recuperado del snapshot de Wayback Machine de esa misma URL (ver Admin/sourcing/Argentina/Banfield.md). RESULTADO FINAL real: $80.173.576,08 ARS (superávit). Total del Activo al cierre: $1.253.147.745,78. Reporta por SECTOR/DEPARTAMENTO (Fútbol Profesional, Fútbol Amateur, Estadio, Administración Sede Social, Predio, Departamento Deportes, Instituto CAB) más 2 Anexos transversales (Impositivos y Financieros, Generales), a diferencia del desglose por naturaleza de gasto de otros clubes. No declara tipo de cambio de cierre propio (sin Anexo de moneda extranjera) — convertido con cotización de mercado (ARS@2020-06-30, FX_CLOSE). Ver data/banfield-ar-data.js para el detalle completo de categorización.
+PDF oficial (58 páginas, texto nativo, sin OCR), informe del auditor (Juan Pablo Régoli, C.P.C.E.P.B.A.) del 30/9/2020, sin salvedades. URL oficial del club (clubabanfield.org/inicio/balance/CAB-MemoriaBalance2020.pdf) da 404 hoy — recuperado del snapshot de Wayback Machine de esa misma URL (ver Admin/sourcing/Argentina/Banfield.md). RESULTADO FINAL real: $80.173.576,08 ARS (superávit). Total del Activo al cierre: $1.253.147.745,78. Reporta por SECTOR/DEPARTAMENTO (Fútbol Profesional, Fútbol Amateur, Estadio, Administración Sede Social, Predio, Departamento Deportes, Instituto CAB) más 2 Anexos transversales (Impositivos y Financieros, Generales), a diferencia del desglose por naturaleza de gasto de otros clubes. No declara tipo de cambio de cierre propio (sin Anexo de moneda extranjera) — convertido con cotización de mercado (ARS@2020-06-30, FX_CLOSE). Ver data/ar/banfield-ar-data.js para el detalle completo de categorización.
 ```
 
 ## Otros

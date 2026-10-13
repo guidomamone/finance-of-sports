@@ -1,14 +1,14 @@
 # athleticclub — evidencia de carga
 
-Lo que había como comentario en `data/athleticclub-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/es/athleticclub-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/athleticclub-data.js — Athletic Club (Bilbao), Ejercicio 2024/2025 (1/7/2024 a 30/6/2025).
+data/es/athleticclub-data.js — Athletic Club (Bilbao), Ejercicio 2024/2025 (1/7/2024 a 30/6/2025).
 
 Un solo ejercicio (alcance de esta sesión: sumar clubes, no profundizar años). Fuente: "Cuentas
 Anuales" oficial 2024-2025, presentado en la Asamblea General de socios, descargado de
@@ -20,7 +20,7 @@ Cifras en EUR MILLONES nativos (documento en euros completos, dividido por 1.000
 Tipo de cambio EUR/USD 1,172 al 30/6/2025 (mismo que el resto de los clubes con este cierre).
 `fx` en fiscalYearMeta va INVERTIDO (0,8532 = 1/1,172, EUR por 1 USD, mismo sentido que
 ARS/COP/BRL/MXN/JPY en el resto del sitio) — ver comentario de cabecera de
-data/realmadrid-data.js para el detalle completo.
+data/es/realmadrid-data.js para el detalle completo.
 
 Categorización de Ingresos (cifra de negocios, 2 líneas):
 - "Ingresos deportivos" -> ABIERTA en sus 5 componentes de la Nota 21.4 en la Versión 189 (antes

@@ -149,7 +149,7 @@ Inversiones" e "Ingresos y Egresos por Torneo" (los 4 cards de Finanzas que depe
 documento de PRESUPUESTO cargado, no un balance) se esconden enteros (`display:none` en el `.card`)
 cuando el club/ejercicio seleccionado no tiene datos en el mapa correspondiente
 (`presupuestoSupuestosByYear`/`presupuestoFinancieroByYear`/`presupuestoInversionesByYear` en el
-`data/<club>-data.js` del club, y el `#torneosBoca2027` de los 3 cards de torneo). Nada de mensaje
+`data/<país>/<club>-data.js` del club, y el `#torneosBoca2027` de los 3 cards de torneo). Nada de mensaje
 "no hay supuestos para este ejercicio": si no hay dato, el card directamente no aparece.
 
 Implementación de referencia (`renderSupuestosCard`/`renderPresupuestoFinancieroCard`/
@@ -316,7 +316,7 @@ con el primer ejercicio real (Racing 2019/2020):
    lee como un bug, no como una limitación real.
 
 Al implementar el punto 3 salió a la luz una ASIMETRÍA real en los datos del overlay de Racing 2020
-(`data/racing-data.js`, `racingPresupuestoOverlayByYear[2020]`): `revenueLines` excluía a propósito
+(`data/ar/racing-data.js`, `racingPresupuestoOverlayByYear[2020]`): `revenueLines` excluía a propósito
 su línea "extraordinaria" (`Cobros por venta de inversiones financieras`, 96 M) mientras que
 `expenseLines` SÍ incluía su análoga (`Egresos extraordinarios`) como línea normal — con ese
 criterio mixto, sumar `ingresos - gastos` del propio overlay no daba el superávit/déficit
@@ -524,7 +524,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   arreglaba solo después de cambiar de club y volver — causa: `pasesDataForClub`/
   `resultadosDataForClub`/`titulosDataForClub` (más abajo en el `<script>`) referencian
   `CLUB_GENERIC_DATA` SIN el prefijo `window.`, y ese objeto global solo se crea DENTRO de cada
-  `data/<club>-data.js` lazy-loaded (Versión 95) — en la carga inicial, antes del primer cambio de
+  `data/<país>/<club>-data.js` lazy-loaded (Versión 95) — en la carga inicial, antes del primer cambio de
   club, ningún data-file de club genérico corrió todavía, así que el identificador bare
   `CLUB_GENERIC_DATA` no estaba declarado en ningún lado y tiraba `ReferenceError` (a diferencia de
   `window.CLUB_GENERIC_DATA`, que da `undefined` sin explotar) — eso frenaba en seco TODO el resto
@@ -650,7 +650,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   compartida `noDataMsg()` que hacía esto se borró, ver el punto de más arriba en este mismo
   archivo — este párrafo la seguía citando en presente.) Los 3 se repintan
   juntos cada vez que cambia club/año/gestión. ACTUALIZADO (Versión 135): los datos de los 3
-  viven en el `data/<club>-data.js` de cada club, en `presupuestoSupuestosByYear` /
+  viven en el `data/<país>/<club>-data.js` de cada club, en `presupuestoSupuestosByYear` /
   `presupuestoFinancieroByYear` / `presupuestoInversionesByYear`, indexados por `[year]`. Antes
   eran 3 registros `[clubId][year]` adentro de `js/finanzas-render.js`, o sea datos de club en la
   capa de render: onboardear un presupuesto obligaba a editar el archivo del motor. Ahora no.
@@ -765,7 +765,7 @@ Texto movido sin cambios.
   ejercicio con presupuesto (Supuestos, Presupuesto Financiero, Presupuesto de
   Inversiones) sacan sus datos de `presupuestoSupuestosByYear` /
   `presupuestoFinancieroByYear` / `presupuestoInversionesByYear`, adentro del
-  `data/<club>-data.js` de cada club. Antes vivían en 3 registros por club dentro
+  `data/<país>/<club>-data.js` de cada club. Antes vivían en 3 registros por club dentro
   de `js/finanzas-render.js`, y el contenido de Boca era HTML escrito a mano en
   ESTE archivo. Onboardear un presupuesto ya no toca ni el motor ni el HTML.
 - PESTAÑAS: Finanzas es la única con datos reales y es donde está todo el
@@ -780,7 +780,7 @@ Texto movido sin cambios.
 - PESTAÑA LIGAS (Versión 183, to-do 23(c); ampliada en la Versión 243, to-do 68):
   el ranking de ingresos de los clubes de una liga en UN ejercicio. Vive en
   `js/liga.js` y lee `data/rankings/<liga>.js`, así que NO baja ningún
-  `data/<club>-data.js` (1 a 3,4 KB gzip por liga, contra 18-101 KB que costaría en
+  `data/<país>/<club>-data.js` (1 a 3,4 KB gzip por liga, contra 18-101 KB que costaría en
   vivo). Barras verticales ascendentes en el `brandColor` de cada club, con el
   valor en M/MM USD y, debajo, el % que esa barra representa del total de la
   liga-ejercicio (Versión 243) escritos arriba de cada barra; tabla con
@@ -871,7 +871,7 @@ Texto movido sin cambios.
   Finanzas. Inicio se ve IGUAL haya club elegido o no. Sin club se ven Inicio,
   Comparar, Ligas, Finanzas y Mi Cuenta; Fuentes aparece recién cuando hay uno. El
   club queda en `localStorage` y las visitas siguientes entran derecho a él.
-  NINGÚN `data/<club>-data.js` SE CARGA EAGER, ni siquiera para la vidriera: los
+  NINGÚN `data/<país>/<club>-data.js` SE CARGA EAGER, ni siquiera para la vidriera: los
   rankings salen de `data/rankings/<liga>.js`, ~6,5 KB gzip por los 4 bloques de
   hoy, contra ~150 KB que costaría calcularlos desde los archivos de club.
 - COMPARAR (Versión 148-154, pestaña `#vs`, no confundir con "Comparar Gestiones",

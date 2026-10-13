@@ -24,7 +24,7 @@
   había DRE, y era cierto solo para `balancos-2022-2023.pdf` (el que además tiene mala calidad de
   OCR, ver `Admin/TODO.md` punto 60).** `balanco-patrimonial-2024.pdf` SÍ trae una DRE de 7 líneas
   (Receitas/Custos/Superávit ou Déficit) que reconcilia EXACTO contra el "Déficits líquido do
-  período" impreso — se cargó como `data/amazonas-br-data.js`, ejercicio 2024. Qué SIGUE faltando:
+  período" impreso — se cargó como `data/br/amazonas-br-data.js`, ejercicio 2024. Qué SIGUE faltando:
   ejercicio 2025, ningún relatório de auditoria, ninguna nota explicativa que permita desglosar
   "Receita de Atividades Esportivas"/"Custo das atividades Esportivas" más allá de la cifra
   agregada (ver `Admin/dudas-por-club.md`).

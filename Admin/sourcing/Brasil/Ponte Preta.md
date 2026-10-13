@@ -27,7 +27,7 @@
   agotó exhaustivamente el dominio propio del club).
 - Contacto: `futebolpaulista.com.br/Repositorio/Institucional/<año>/`.
 - Último chequeo: 2026-09-16.
-- **Cargado en el sitio (2026-09-25):** 3 ejercicios, `data/pontepreta-br-data.js` (`clubId`:
+- **Cargado en el sitio (2026-09-25):** 3 ejercicios, `data/br/pontepreta-br-data.js` (`clubId`:
   `pontepreta-br`). 2022 desde `balanco-2021-2022.pdf` (Déficit R$4,53 M), 2023 desde
   `balanco-2022-2023.pdf` (Déficit R$15,17 M, el mayor de los 3), 2024 desde
   `balanco-2023-2024.pdf` (Superávit R$7,00 M, incl. un ajuste extraordinario de R$22,17 M

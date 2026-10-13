@@ -1,14 +1,14 @@
 # arsenal-gb — evidencia de carga
 
-Lo que había como comentario en `data/arsenal-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/arsenal-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/arsenal-gb-data.js — Arsenal Holdings Limited (clubId 'arsenal-gb'), Ejercicios 2023/24 y
+data/gb/arsenal-gb-data.js — Arsenal Holdings Limited (clubId 'arsenal-gb'), Ejercicios 2023/24 y
 2024/25 (1° de junio a 31 de mayo — confirmado en la carátula de los dos documentos y en la nota
 1(b) "Basis of preparation of Group financial statements": "made up to 31 May 2024/2025").
 
@@ -165,7 +165,7 @@ PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/
 ```text
 Mercado de pases / Resultados deportivos / Títulos: NO onboardeados (alcance de esta sesión fue
 solo Finanzas, 2 ejercicios). Vacíos a propósito, mismo criterio que otros clubes onboardeados
-solo para Finanzas (ver data/valenciacf-data.js).
+solo para Finanzas (ver data/es/valenciacf-data.js).
 ```
 
 ### gestionesByClub['arsenal-gb']

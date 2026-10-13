@@ -13,7 +13,7 @@ web: agotado (filetype:pdf sin resultados propios) · regulador/país: no aplica
   V/VI con desglose muy granular (19 filas x 8 columnas de departamento en Recursos, 38 x 13 en
   Gastos). DÉFICIT real: $(3.107.221.597) ARS. Se encontró y corrigió un error de lectura de $201M
   (una fila desalineada por el layout de pdftotext) verificando la suma contra el total impreso —
-  ver `data/rosariocentral-data.js`. La Memoria (36 págs) es narrativa, no se usó.
+  ver `data/ar/rosariocentral-data.js`. La Memoria (36 págs) es narrativa, no se usó.
 - **Estados Contables, Ejercicio 2024-25 (cierre 30/6/2025) — ENCONTRADO 2026-09-22, CARGADO al
   sitio en sesión posterior.** 41 págs. **CORRECCIÓN: la nota anterior decía "escaneo sin capa de
   texto" y estaba mal** — verificado con `pdftotext -layout`, el documento SÍ tiene texto nativo
@@ -29,7 +29,7 @@ web: agotado (filetype:pdf sin resultados propios) · regulador/país: no aplica
   ejercicio 2022-23, que tenía 12+). fx: USD 1.165 (Anexo IV, lado Activo/Créditos — consistente en
   sus 3 líneas, sin la ambigüedad que tuvo 2022-23). DÉFICIT real: $(13.410.007.536) ARS. Verificación
   numérica cierra exacto (revenue exacto, expense con $1 de redondeo del propio documento, resultado
-  final exacto al peso) — ver comentario de cabecera de `data/rosariocentral-data.js`.
+  final exacto al peso) — ver comentario de cabecera de `data/ar/rosariocentral-data.js`.
 - **Ejercicio 2023-24: CONFIRMADO que existe y fue aprobado, pero NUNCA se publicó como PDF
   descargable — candidato a mail (2026-09-26).** Prensa (El Ciudadano, Doble Amarilla) confirma que
   Memoria y Balance del período 01.07.23-30.06.24 fueron aprobados por unanimidad en la Asamblea

@@ -7,7 +7,7 @@
   (Versión 95)**: 7mo club del motor genérico. Anexo D (Fútbol Profesional) desglosa por naturaleza
   (entradas/TV/publicidad/plateas/jugadores/técnicos), Anexo V clasifica el resto por departamento.
   SUPERÁVIT FINAL real: $7.392.788.960 ARS. Convertido a USD con $890,50 (único valor declarado, sin
-  ambigüedad). Ver `data/independiente-data.js`.
+  ambigüedad). Ver `data/ar/independiente-data.js`.
 - **Ejercicio N°122 (2025-26, 1/7/2025 a 30/6/2026) — YA CARGADO en el sitio (2026-09-23, to-do
   58).** Ambos documentos vía Drive embebido en la noticia oficial
   `clubaindependiente.com.ar/institucion/noticias/1789415777_memoria-y-balance-25-26`:
@@ -24,7 +24,7 @@
     imagen y verificando visualmente, no con OCR crudo. Superávit final $1.778.079.629 (reconcilia
     exacto contra el ancla de esta nota: superávit final $1.778 M, recursos ordinarios $80.727 M,
     gastos ordinarios antes de D&A $79.605 M, superávit operativo $1.122 M, Activo $192.453 M — los
-    5 confirmados). Ver `data/independiente-data.js` para el detalle completo de mapeo/FX/
+    5 confirmados). Ver `data/ar/independiente-data.js` para el detalle completo de mapeo/FX/
     verificación.
   - Este documento trae el ejercicio 121 (2024-25) como columna comparativa, así que aunque no
     tengamos el PDF del 121 (ver abajo) sus cifras de balance ya están disponibles ahí — NO se

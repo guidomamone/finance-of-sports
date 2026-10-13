@@ -1,14 +1,14 @@
 # westham-gb — evidencia de carga
 
-Lo que había como comentario en `data/westham-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/westham-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/westham-gb-data.js — West Ham United Football Club Limited (clubId 'westham-gb'),
+data/gb/westham-gb-data.js — West Ham United Football Club Limited (clubId 'westham-gb'),
 Ejercicio 2024/25 único (1° de junio de 2024 a 31 de mayo de 2025, confirmado en la carátula:
 "For the year ended 31 May 2025"). Solo hay UNA transcripción disponible para este club (a
 diferencia de Forest/Sunderland/Wolves, que tienen 2 ejercicios).

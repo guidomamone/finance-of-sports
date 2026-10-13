@@ -12,7 +12,7 @@
 - Pendiente: años anteriores, y confirmar el motivo/fecha de la reorganización.
 - Contacto: siis.ia.supersociedades.gov.co (NIT 860009807).
 - **CARGADO al sitio (sesión 2026-09-22, Ejercicio 2025 únicamente)**: ver
-  `data/santafe-co-data.js`. El PDF incluye el Estado de Resultados Integral Separado primario
+  `data/co/santafe-co-data.js`. El PDF incluye el Estado de Resultados Integral Separado primario
   completo. fx usado: TRM oficial al 31/12/2025 ($3.757,08 COP/USD) — el documento no declara su
   propio tipo de cambio de cierre. El impuesto de renta diferido de 2025 fue un BENEFICIO neto
   (mayor al gasto corriente), así que la Utilidad Neta terminó por encima de la Utilidad

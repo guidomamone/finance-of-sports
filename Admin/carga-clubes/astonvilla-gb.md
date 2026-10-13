@@ -1,14 +1,14 @@
 # astonvilla-gb — evidencia de carga
 
-Lo que había como comentario en `data/astonvilla-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/gb/astonvilla-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/astonvilla-gb-data.js — Aston Villa Football Club Limited (clubId 'astonvilla-gb'), UN SOLO
+data/gb/astonvilla-gb-data.js — Aston Villa Football Club Limited (clubId 'astonvilla-gb'), UN SOLO
 ejercicio: 2024/25 (año ended 30 junio 2025). NO se cargó 2023/24: la única transcripción
 disponible (aston-villa-full-accounts-2024-25.md) trae el ejercicio ANTERIOR como un período de
 13 MESES (1 junio 2023 a 30 junio 2024, cambio de fecha de cierre), no comparable año a año con
@@ -142,7 +142,7 @@ NSWE compró el control el 20-21/7/2018 (fecha aproximada: anuncio del club). Xi
 _note (data/):_
 
 ```text
-PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Aston Villa/aston-villa-full-accounts-2024-25.md. Entidad individual, no consolidada — NO reporta activos intangibles ni compraventa de jugadores en absoluto, ver limitación documentada en el comentario de cabecera de data/astonvilla-gb-data.js y en Admin/dudas-por-club.md. El ejercicio anterior (13 meses, no comparable) no se cargó. fxRef apunta a FX_CLOSE (GBP@2025-06-30).
+PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Aston Villa/aston-villa-full-accounts-2024-25.md. Entidad individual, no consolidada — NO reporta activos intangibles ni compraventa de jugadores en absoluto, ver limitación documentada en el comentario de cabecera de data/gb/astonvilla-gb-data.js y en Admin/dudas-por-club.md. El ejercicio anterior (13 meses, no comparable) no se cargó. fxRef apunta a FX_CLOSE (GBP@2025-06-30).
 ```
 
 ## Otros

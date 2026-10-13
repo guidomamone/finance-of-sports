@@ -1,14 +1,14 @@
 # ajax-nl — evidencia de carga
 
-Lo que había como comentario en `data/ajax-nl-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/nl/ajax-nl-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/ajax-nl-data.js — AFC Ajax N.V. (Ámsterdam, Países Bajos).
+data/nl/ajax-nl-data.js — AFC Ajax N.V. (Ámsterdam, Países Bajos).
 Uno de 4 clubes holandeses cargados en la sesión de onboarding de Países Bajos
 como país nuevo (Eredivisie). País 'NL' y liga 'nl-eredivisie' se crean en esta
 misma sesión (ver data/leagues.js). clubId 'ajax-nl' (sufijo de país, convención

@@ -12,7 +12,7 @@
 // Pedido de Guido: "estas cosas no pueden pasar". Por eso la regla vive en UN lugar y audit.js la vigila.
 //
 // LA REGLA, en orden:
-//   1. CITA: algún data/<id>-data.js o su evidencia (Admin/carga-clubes/<id>.md) menciona la carpeta ("Clubes/<País>/<Club>/") como fuente -> ese club. Es un dato escrito por
+//   1. CITA: algún data/<país>/<id>-data.js o su evidencia (Admin/carga-clubes/<id>.md) menciona la carpeta ("Clubes/<País>/<Club>/") como fuente -> ese club. Es un dato escrito por
 //      quien cargó el club, no una adivinanza. Si la citan DOS clubes distintos, es ambigua: no se resuelve (y audit.js da P1, salvo
 //      las carpetas de agregados que empiezan con "_", como "_J.League", que por diseño alimentan varios clubes).
 //   2. NOMBRE, solo dentro del mismo país: el nombre normalizado de la carpeta es IGUAL (no "contiene") al displayName o al name de un
@@ -23,7 +23,7 @@
 //
 // USO:
 //   import { clubDeCarpeta } from './carpetas-clubes.mjs';
-//   clubDeCarpeta('Argentina', 'Racing')   -> { clubId: 'racing', via: 'cita', fuente: 'data/racing-data.js' }
+//   clubDeCarpeta('Argentina', 'Racing')   -> { clubId: 'racing', via: 'cita', fuente: 'data/ar/racing-data.js' }
 //   clubDeCarpeta('Portugal', 'Nacional')  -> { clubId: null, via: 'nuevo' }
 //   node tools/carpetas-clubes.mjs            imprime el mapa completo y las carpetas ambiguas
 //   node tools/carpetas-clubes.mjs --json

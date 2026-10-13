@@ -1,14 +1,14 @@
 # viborg-dk — evidencia de carga
 
-Lo que había como comentario en `data/viborg-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
-`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+Lo que había como comentario en `data/dk/viborg-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
 ## Cabecera
 
 ```text
 ============================================================================
-data/viborg-dk-data.js — Viborg F.F. Prof. Fodbold A/S (clubId 'viborg-dk').
+data/dk/viborg-dk-data.js — Viborg F.F. Prof. Fodbold A/S (clubId 'viborg-dk').
 Dinamarca/DKK ya existen como país/moneda en el sitio (F.C. København,
 Brøndby, FC Midtjylland ya cargados). Un solo ejercicio: 2024
 (temporada 01.07.2023-30.06.2024, típica de la 3F Superliga — confirmado en

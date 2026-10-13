@@ -28,11 +28,11 @@
   outerHTML.match(/\.pdf/)`) en cada sub-página en vez de asumir el patrón de URL a mano.
 - Contacto: transparencia.fortaleza1918.com.br/portal-saf/ y /portal-associacao/.
 - **Cargado (2026-09-24)**: ejercicio 2025 de la SAF (`demonstracoes-contabeis-saf-2025.md`, el
-  paquete completo auditado, NO los balancetes de Fortes Contábil), en `data/fortaleza-br-data.js`.
+  paquete completo auditado, NO los balancetes de Fortes Contábil), en `data/br/fortaleza-br-data.js`.
   1 solo ejercicio. La SAF no tiene columna Controladora/Consolidado (a diferencia de Botafogo/
   Atlético Mineiro): no tiene subsidiárias propias, una sola columna de cifras. Tie-out exacto contra
   el "Prejuízo do exercício" impreso (-120,141 M BRL). Ver el comentario de cabecera de
-  `data/fortaleza-br-data.js` para el detalle completo de categorización y verificación.
+  `data/br/fortaleza-br-data.js` para el detalle completo de categorización y verificación.
 - **Color de marca: `null`** (corregido 2026-09-26, ver `Admin/TODO.md` to-do 64) — el hex anterior
   (`#FF0000`, cargado 2026-09-24) rompía el mismo criterio que ya se aplicó a sus pares tricolores
   `saopaulo-br`/`bahia-br`: Fortaleza es tricolor declarado (azul, rojo y blanco, homenaje a la

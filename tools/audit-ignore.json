@@ -243,7 +243,7 @@
  {
   "code": "outlier-liga",
   "match": "voltaredonda-br 2024: 2.0 M USD contra una mediana de",
-  "motivo": "VERIFICADO, no es error de escala: Volta Redonda es un club chico de Série C (campeón 2024, ver data/voltaredonda-br-data.js, cargado en la Versión 217) y la mediana de la liga BR sigue moviéndose cada vez que este proyecto suma más clubes brasileños grandes (Flamengo, Corinthians, Palmeiras, Internacional, etc., todos con revenue de cientos de millones de USD) — por eso el `match` de esta entrada NO incluye el valor exacto de la mediana, para no tener que reescribirla cada vez que cambie. Es la mediana la que se mueve, no el dato de Volta Redonda, que ya estaba verificado con tie-out exacto en su propia carga."
+  "motivo": "VERIFICADO, no es error de escala: Volta Redonda es un club chico de Série C (campeón 2024, ver data/br/voltaredonda-br-data.js, cargado en la Versión 217) y la mediana de la liga BR sigue moviéndose cada vez que este proyecto suma más clubes brasileños grandes (Flamengo, Corinthians, Palmeiras, Internacional, etc., todos con revenue de cientos de millones de USD) — por eso el `match` de esta entrada NO incluye el valor exacto de la mediana, para no tener que reescribirla cada vez que cambie. Es la mediana la que se mueve, no el dato de Volta Redonda, que ya estaba verificado con tie-out exacto en su propia carga."
  },
  {
   "code": "catchall-dominante",
@@ -253,7 +253,7 @@
  {
   "code": "categoria-cruzada",
   "match": "atleticomineiro-br 2024 ingreso \"Custo de mercadorias e produtos",
-  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Atlético Mineiro, 2026-09-24). El propio balance agrupa esta línea dentro de 'Deduções da receita' (costo de las camisetas vendidas, neteado contra el ingreso de merchandising), así que se cargó como línea negativa dentro de revenueLines usando 'admin_general_expense' (misma categoría que Botafogo usa para 'Custo venda de mercadoria', ver data/botafogo-data.js) — cruce de taxonomía intencional, monto inmaterial (0,2%-0,7% del revenue), no un error."
+  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Atlético Mineiro, 2026-09-24). El propio balance agrupa esta línea dentro de 'Deduções da receita' (costo de las camisetas vendidas, neteado contra el ingreso de merchandising), así que se cargó como línea negativa dentro de revenueLines usando 'admin_general_expense' (misma categoría que Botafogo usa para 'Custo venda de mercadoria', ver data/br/botafogo-data.js) — cruce de taxonomía intencional, monto inmaterial (0,2%-0,7% del revenue), no un error."
  },
  {
   "code": "categoria-cruzada",
@@ -408,7 +408,7 @@
  {
   "code": "balance-sin-pat",
   "match": "clubamerica 2025",
-  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (to-do 20(a), 2026-09-20). Club América no publica balance propio: la controladora pública es Ollamani, que reporta un 'Segmento de Fútbol' bajo IFRS 8 agrupando al club (varonil y femenil) CON el Estadio Banorte. Ese segmento informa 'UTILIDAD DEL SEGMENTO', que NO es el resultado neto del club: no le imputa costos financieros ni impuestos. Cargar esos $43.911 M como officialPAT publicaría un 'Resultado neto' que ningún documento afirma — exactamente lo que este proyecto no hace. officialTotalExpenses SÍ se carga porque es una identidad aritmética exacta del segmento. El razonamiento completo está en la cabecera de data/clubamerica-data.js."
+  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (to-do 20(a), 2026-09-20). Club América no publica balance propio: la controladora pública es Ollamani, que reporta un 'Segmento de Fútbol' bajo IFRS 8 agrupando al club (varonil y femenil) CON el Estadio Banorte. Ese segmento informa 'UTILIDAD DEL SEGMENTO', que NO es el resultado neto del club: no le imputa costos financieros ni impuestos. Cargar esos $43.911 M como officialPAT publicaría un 'Resultado neto' que ningún documento afirma — exactamente lo que este proyecto no hace. officialTotalExpenses SÍ se carga porque es una identidad aritmética exacta del segmento. El razonamiento completo está en la cabecera de data/mx/clubamerica-data.js."
  },
  {
   "code": "signo-invertido",

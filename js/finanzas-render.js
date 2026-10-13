@@ -467,7 +467,7 @@
   }
 
 
-  // Los supuestos, el Presupuesto Financiero y el de Inversiones de cada presupuesto viven en el data/<club>-data.js de cada club
+  // Los supuestos, el Presupuesto Financiero y el de Inversiones de cada presupuesto viven en el data/<país>/<club>-data.js de cada club
   // (presupuestoSupuestosByYear, etc.): onboardear un club no toca este archivo.
 
 
