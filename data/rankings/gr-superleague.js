@@ -56,6 +56,9 @@ window.RANKINGS["gr-superleague"] = {
   2020: {
     leagueSize: null,
     clubs: [
+      { id:"aekathens-gr", revenue:22.045, reportType:"official_balance_sheet",
+        sourceId:"aekathens-gr-aek-notes-2020-06-30",
+        mix:[["Comercial / Sponsors",11.922],["Estadio",3.986],["Televisión",1.597],["Premios por competencias",1.756],["Otros ingresos",2.784]] },
       { id:"asterastripolis-gr", revenue:3.839, reportType:"official_balance_sheet",
         sourceId:"asterastripolis-gr-asteras-fs-2020-06-30",
         mix:[["Estadio",0.202],["Televisión",0.957],["Venta de Jugadores",0.773],["Otros ingresos",1.906]] },
