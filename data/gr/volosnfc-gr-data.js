@@ -9,10 +9,6 @@ const volosnfcgrRevenueLinesByYear = {
     { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:0.063431, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
   ],
-  2021: [
-    { rawLabel:'Κύκλος εργασιών', normalizedCategory:'lump_football_operations', amountNative:2.177347, disclosureLevel:'aggregated' },
-    { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:0.879813, disclosureLevel:'aggregated' },
-  ],
   2022: [
     { rawLabel:'Κύκλος εργασιών', normalizedCategory:'lump_football_operations', amountNative:3.574025, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:0.631156, disclosureLevel:'aggregated' },
@@ -28,6 +24,10 @@ const volosnfcgrRevenueLinesByYear = {
   2025: [
     { rawLabel:'Κύκλος εργασιών', normalizedCategory:'lump_football_operations', amountNative:4.639776, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:1.884758, disclosureLevel:'aggregated' },
+  ],
+  2021: [
+    { rawLabel:'Κύκλος εργασιών', normalizedCategory:'lump_football_operations', amountNative:2.177347, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:0.879813, disclosureLevel:'aggregated' },
   ],
 };
 const volosnfcgrExpenseLinesByYear = {
@@ -45,10 +45,6 @@ const volosnfcgrExpenseLinesByYear = {
     { rawLabel:'Αποσβέσεις ενσωμάτων παγίων και άυλων στοιχείων', normalizedCategory:'depreciation', amountNative:-0.046583, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-1.246395, disclosureLevel:'aggregated' },
   ],
-  2021: [
-    { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-2.739218, disclosureLevel:'aggregated' },
-    { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.001935, disclosureLevel:'aggregated' },
-  ],
   2022: [
     { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-4.080745, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.003871, disclosureLevel:'aggregated' },
@@ -61,6 +57,11 @@ const volosnfcgrExpenseLinesByYear = {
   ],
   2025: [
     { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-5.978754, disclosureLevel:'aggregated' },
+  ],
+  2021: [
+    { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.001935, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα διοίκησης (sin el costo de personal de la nota 8)', normalizedCategory:'admin_general_expense', amountNative:-1.570357, disclosureLevel:'aggregated' },
+    { rawLabel:'Σύνολο κόστους μισθοδοσίας περιόδου', normalizedCategory:'wages_squad', amountNative:-1.168861, disclosureLevel:'aggregated' },
   ],
 };
 const volosnfcgrFiscalYearMeta = {
@@ -97,24 +98,6 @@ const volosnfcgrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:1.518128, officialTotalExpenses:1.774961, officialPAT:-0.258615,
-  },
-  2021: {
-    currency:'EUR', fxRef:'EUR@2021-06-30',
-    sourceId:'volosnfc-gr-volos-income-stmt-2021-06-30',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:-0.003162, tax:-0.025264,
-    extraRows: [
-      {label:'Πιστωτικοί τόκοι και συναφή έσοδα', value:0.000063},
-      {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.003225},
-      {label:'Φόροι εισοδήματος', value:-0.025264},
-    ],
-    sinDesglose: [
-      {renglon:'Κύκλος εργασιών', lado:'revenue', importe:2.177347, motivo:'el documento no desglosa este renglón'},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:3.05716, officialTotalExpenses:2.741153, officialPAT:0.28758,
   },
   2022: {
     currency:'EUR', fxRef:'EUR@2022-06-30',
@@ -187,6 +170,24 @@ const volosnfcgrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:6.524534, officialTotalExpenses:5.978754, officialPAT:0.421947,
+  },
+  2021: {
+    currency:'EUR', fxRef:'EUR@2021-06-30',
+    sourceId:'volosnfc-gr-volos-income-stmt-2021-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.003162, tax:-0.025264,
+    extraRows: [
+      {label:'Πιστωτικοί τόκοι και συναφή έσοδα', value:0.000063},
+      {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.003225},
+      {label:'Φόροι εισοδήματος', value:-0.025264},
+    ],
+    sinDesglose: [
+      {renglon:'Κύκλος εργασιών', lado:'revenue', importe:2.177347, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:3.05716, officialTotalExpenses:2.741153, officialPAT:0.28758,
   },
 };
 const volosnfcgrPresupuestoOverlayByYear = {};
