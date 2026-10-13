@@ -161,3 +161,14 @@ ni en el comentario de ningún archivo de código.
     escalón, con el método de la skill: una cifra que es el contenido de la columna de notas del renglón (encabezado `NOTAS_COLUMNA_RE` de
     vocabulario.mjs, "Σημ.", "Notes", "Nota") no es un importe; medir con `caja-deuda.mjs --medir` en todos los clubes. Después, volver a
     correr AEK (`--ejecutar --escribir`, ~US$ 0,28): la caja real es 1.785.822,70 (2017) y 1.650.369,92 (2018).
+
+222. ESCALÓN PARA LAS DUDAS DE "CUADRO POR NATURALEZA" (verificar.mjs, cola). extraer.mjs pregunta si un cuadro de ingresos o gastos por
+    naturaleza de una nota se carga como desglose conjunto de varios renglones del estado. Hasta hoy lo contestó siempre una cuenta, a mano:
+    Asteras 2020-2025 y OFI 2025 "aceptar" (el cuadro suma EXACTO los renglones que desglosa: Asteras 2020, 4.444.615,37 = 3.147.828,19 +
+    1.259.542,66 + 37.244,52), Levadiakos 2020 y OFI 2020 gastos "no" (no coincide con ninguna combinación: OFI 2020, 5.728.101,09 contra
+    5.723.865,08 o 5.899.706,23), OFI 2020 ingresos "aceptar" (3.205.963,38 = 1.835.448,31 + 1.370.515,07). Escalón con UNA compuerta: si el
+    total del cuadro es exacto (media unidad por fila) a la suma de un subconjunto de renglones contiguos del mismo lado del estado, la duda
+    se cierra "aceptar" con la cita; si ninguna combinación da, "no"; si dan dos o más, sigue a la cola. Medir sobre las respuestas
+    existentes de "duda-de-extraer" (las de arriba y las de otros países): mismas decisiones, ninguna distinta.
+    Junto: el escalón B de categorías (to-do 215) dice cuántos clubes lo respaldan; separar en la nota de la carga "precedente del país:
+    1 club" de "2 o más" (hoy es el mismo peldaño con mínimo 1), para poder medir aparte si alguna vez una respuesta de un solo club sale mal.
