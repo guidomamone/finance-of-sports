@@ -12,6 +12,9 @@ window.RANKINGS["gr-superleague2"] = {
   2024: {
     leagueSize: null,
     clubs: [
+      { id:"levadiakos-gr", revenue:2.976, reportType:"official_balance_sheet",
+        sourceId:"levadiakos-gr-fs-2024-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.781],["Otros ingresos",2.195]] },
       { id:"aellarissa-gr", revenue:1.299, reportType:"official_balance_sheet",
         sourceId:"aellarissa-gr-ael-fs-elp-2024-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.449],["Otros ingresos",0.85]] },
