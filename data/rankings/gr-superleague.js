@@ -9,6 +9,14 @@ window.RANKINGS["gr-superleague"] = {
         mix:[["Comercial / Sponsors",23.125],["Estadio",22.65],["Televisión",6.322],["Premios por competencias",14.774],["Otros ingresos",0.64]] },
     ],
   },
+  2023: {
+    leagueSize: null,
+    clubs: [
+      { id:"levadiakos-gr", revenue:3.965, reportType:"official_balance_sheet",
+        sourceId:"levadiakos-gr-fs-2023-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.275],["Otros ingresos",3.689]] },
+    ],
+  },
   2021: {
     leagueSize: null,
     clubs: [
