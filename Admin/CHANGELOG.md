@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 682 — Lote 67 (Grecia), gestiones tanda 2, primer año y cola sin Guido, limpieza de la carga (2026-10-13)
+
+- Lote 67: Asteras 2019-2020, Levadiakos 2019-2025, OFI 2018-2025 (sin 2020) y AEK 2016-2020, con sus altas; caja y deuda de los tres
+  primeros. Bug de `cargar-lote.mjs`: el segundo club nuevo de un lote salía "el alta no se escribió" (`data-clubes.js` cacheaba
+  `clubs.js`); se relee si cambió, y ese camino revierte el alta.
+- To-do 195: tanda 2 de gestiones cargada (26 clubes; `mx.js` y `pe.js` nuevos); la carga suma a lo ya cargado en vez de reemplazar.
+- To-do 214: `verificar.mjs` no levanta "primer-anio" si lo impreso confirma lo cargado a 0,01% (los tres totales, o un total y el
+  resultado con el otro sin imprimir): 29 de 77 aceptados históricos, 0 de 2 descartados.
+- To-do 215: el precedente de categoría de otros clubes del país pide 1 club (decide 59, acierta 59; antes 34/34).
+- To-do 218 (a, b): fuera `tieScore()` y el camino de `cargar.mjs` sin `--desde-verificacion`; `proponer-carga.mjs` archivado,
+  `loadSite()`/`parseNumber()` en `tools/datos-sitio.mjs`.
+- Cola sin Guido (to-do 220): AEK contestada por un subagente Sonnet con cita. To-do 219 nuevo (niveles de `audit.js`).
+
 ## Versión 681 — Gestiones, tanda 2 investigada y guardada (2026-10-13)
 
 - 4 subagentes más (Brasil SAF con el ejecutivo, Brasil por confirmar, Rusia/Croacia/Colombia/México/Perú, Alemania con el presidente de la

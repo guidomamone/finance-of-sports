@@ -37,7 +37,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 
 - El onboarding se hace con el pipeline: `tools/lote.mjs` (etapas 3 a 8, lo corre Guido), `tools/cargar.mjs` (escribe el año en el sitio,
   corre los generadores y `audit.js`, y revierte si algo falla) y `tools/caja-deuda.mjs` (caja y deuda, con el club ya publicado). Lo que no
-  se resuelve solo va a la cola humana (`tools/cola.mjs`). Cómo se trabaja: skill `club-or-year-onboarding`; el proceso etapa por etapa y
+  se resuelve solo va a la cola (`tools/cola.mjs`). Guido ya no la revisa (decisión del 2026-10-13): la contesta un subagente Sonnet con cita
+  del documento y del criterio de `club-data-mapping`, firmada "Claude", y lo que no puede decidir va a `Admin/dudas-por-club.md` (to-do 220). Cómo se trabaja: skill `club-or-year-onboarding`; el proceso etapa por etapa y
   las decisiones de Guido: `Admin/PIPELINE.md`; las mejoras medidas y descartadas: `Admin/HALLAZGOS-pipeline.md`. Un dato publicado mal se
   corrige con un ajuste manual (`tools/ajustes.mjs`, escalón 0 de cada escalera) además de en `data/`, para que una corrida futura no lo deshaga.
 - Cuántos documentos hay en cada etapa y cuánto cuesta el paso siguiente: `node tools/estado.mjs` (gratis).

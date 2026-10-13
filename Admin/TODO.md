@@ -135,3 +135,20 @@ ni en el comentario de ningún archivo de código.
     (`gestion-club-inexistente`: gestiones de clubes que todavía no tienen balance, más candidato a P3; `catchall-dominante`). Empezar por
     revisar los casos de los cuatro primeros contra la fuente: si alguno es un error real, ese chequeo pide subir de nivel o un escalón en
     la carga. `node tools/audit.js` da el detalle de cada uno.
+
+220. LA COLA SIN GUIDO (decisión de Guido, 2026-10-13: no la revisa ni puede revisarla). Probado con AEK Athens: un subagente Sonnet contestó
+    las 19 etiquetas de categoría (80 casos de 6 años; leyó la skill `club-data-mapping`, los precedentes griegos y cada nota del .md) y
+    Claude aplicó las 18 firmes con `cola.mjs --responder` firmadas "Claude 2026-10-13 (subagente Sonnet...)"; los 22 de perfil (socios,
+    otros deportes) los contestó Claude con cita (PAE de solo fútbol, L574). Entraron AEK 2016-2020. Falta:
+      - Escribir el proceso en la skill `club-or-year-onboarding` (sección 3a paso 7 y "Cola humana" de la sección 4 dicen "para Guido"):
+        mostrarle a Guido el texto antes (regla de skills). Qué contesta el subagente, con qué cita, qué hace con "no sé"
+        (`Admin/dudas-por-club.md`), y que Claude revisa contra el documento las correcciones grandes antes de aplicarlas.
+      - Contestar así el resto de la cola (`node tools/cola.mjs`: unos 210 casos), de a un club por subagente.
+      - AEK 2022-2025: la fila del estado "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες" mezcla la nómina (Μισθοδοσία) y la amortización de
+        contratos de jugadores (Αποσβέσεις συμβολαίων ποδοσφαιριστών, 53-60%, nota 6.19; la política contable lo dice en
+        AEK_Notes_2018-06-30.md L843). Como `wages_squad` inflaría los salarios: cargar las dos filas de la nota en vez de la del estado,
+        como en 2016-2021 (ajuste manual `desglose` o un escalón de extraer.mjs que abra esa fila en su nota). 5 casos en la cola.
+      - AEK 2021: "Estadio en 0" pide `--reintentar` (lista solo con AEK_Notes_IFRS_2021-06-30.pdf). Caja y deuda de AEK:
+        `node tools/caja-deuda.mjs --club aekathens-gr --ejecutar --escribir` (~US$ 0,15).
+      - Dudas opcionales del subagente para el club (no frenan): qué activos cubre "Μισθώματα" (¿el estadio?) y qué explica el salto de
+        "Αμοιβές τρίτων" de 1,8 M (2018) a 6,8 M (2019).
