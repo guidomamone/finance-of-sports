@@ -25,6 +25,10 @@ const volosnfcgrRevenueLinesByYear = {
     { rawLabel:'Κύκλος εργασιών', normalizedCategory:'lump_football_operations', amountNative:3.377522, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:2.495048, disclosureLevel:'aggregated' },
   ],
+  2025: [
+    { rawLabel:'Κύκλος εργασιών', normalizedCategory:'lump_football_operations', amountNative:4.639776, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:1.884758, disclosureLevel:'aggregated' },
+  ],
 };
 const volosnfcgrExpenseLinesByYear = {
   2019: [
@@ -54,6 +58,9 @@ const volosnfcgrExpenseLinesByYear = {
   ],
   2024: [
     { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-5.379128, disclosureLevel:'aggregated' },
+  ],
+  2025: [
+    { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-5.978754, disclosureLevel:'aggregated' },
   ],
 };
 const volosnfcgrFiscalYearMeta = {
@@ -163,6 +170,24 @@ const volosnfcgrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:5.872569, officialTotalExpenses:5.379128, officialPAT:0.383182,
   },
+  2025: {
+    currency:'EUR', fxRef:'EUR@2025-06-30',
+    sourceId:'volosnfc-gr-volos-income-stmt-2025-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.003367, tax:-0.120465,
+    extraRows: [
+      {label:'Πιστωτικοί τόκοι και συναφή έσοδα', value:0.003818},
+      {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.007185},
+      {label:'Φόροι εισοδήματος', value:-0.120465},
+    ],
+    sinDesglose: [
+      {renglon:'Κύκλος εργασιών', lado:'revenue', importe:4.639776, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:6.524534, officialTotalExpenses:5.978754, officialPAT:0.421947,
+  },
 };
 const volosnfcgrPresupuestoOverlayByYear = {};
 
@@ -207,6 +232,11 @@ Object.assign(sources, {
   'volosnfc-gr-volos-income-stmt-2024-06-30': {
     id:'volosnfc-gr-volos-income-stmt-2024-06-30', clubId:'volosnfc-gr',
     title:'Volos N.P.S. P.A.E. — Volos_income_stmt_2024-06-30 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'volosnfc-gr-volos-income-stmt-2025-06-30': {
+    id:'volosnfc-gr-volos-income-stmt-2025-06-30', clubId:'volosnfc-gr',
+    title:'Volos N.P.S. P.A.E. — Volos_income_stmt_2025-06-30 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
