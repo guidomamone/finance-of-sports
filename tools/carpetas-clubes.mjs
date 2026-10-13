@@ -12,7 +12,7 @@
 // Pedido de Guido: "estas cosas no pueden pasar". Por eso la regla vive en UN lugar y audit.js la vigila.
 //
 // LA REGLA, en orden:
-//   1. CITA: algún data/<id>-data.js menciona la carpeta ("Clubes/<País>/<Club>/") como fuente -> ese club. Es un dato escrito por
+//   1. CITA: algún data/<id>-data.js o su evidencia (Admin/carga-clubes/<id>.md) menciona la carpeta ("Clubes/<País>/<Club>/") como fuente -> ese club. Es un dato escrito por
 //      quien cargó el club, no una adivinanza. Si la citan DOS clubes distintos, es ambigua: no se resuelve (y audit.js da P1, salvo
 //      las carpetas de agregados que empiezan con "_", como "_J.League", que por diseño alimentan varios clubes).
 //   2. NOMBRE, solo dentro del mismo país: el nombre normalizado de la carpeta es IGUAL (no "contiene") al displayName o al name de un
@@ -47,7 +47,9 @@ function cargar() {
   const citas = {};
   for (const f of readdirSync(resolve(ROOT, 'data')).filter((x) => x.endsWith('-data.js'))) {
     const id = f.replace(/-data\.js$/, '');
-    const txt = readFileSync(resolve(ROOT, 'data', f), 'utf8');
+    // la cita está en el data file o, desde el to-do 209 (data/ sin comentarios ni `note`), en la evidencia del club: se leen los dos
+    const ev = resolve(ROOT, 'Admin', 'carga-clubes', `${id}.md`);
+    const txt = readFileSync(resolve(ROOT, 'data', f), 'utf8') + (existsSync(ev) ? `\n${readFileSync(ev, 'utf8')}` : '');
     for (const m of txt.matchAll(/Clubes\/([^/\n`'"]+)\/([^/\n`'"]+)\//g)) (citas[`${m[1]}/${m[2]}`] ??= new Set()).add(id);
   }
   // País de cada carpeta de país, deducido de las citas (solo si es inequívoco).

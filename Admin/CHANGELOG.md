@@ -68,6 +68,12 @@ que dice `ESTADO.md` era verdad ese día.
   de las cards de presupuesto (Boca, Racing) quedan. `cargar.mjs` escribe la nota de una fuente nueva en el `.md`; la prueba retrospectiva
   de `alta-club.mjs` la lee de ahí (`--informe-backtest` igual antes y después). `audit.js`: `note-interna-en-data` (P2). `evidencia-club.mjs`
   suma `agregarFuente()` y `textoDeFuente()`. ASSET_V 823.
+- ARREGLO de una regresión de esta misma tanda: `tools/carpetas-clubes.mjs` (qué carpeta de `Clubes/` es de qué club, la usan `cargar.mjs`,
+  los lotes y el alta) reconocía un club por la CITA de su carpeta en el texto de `data/<club>-data.js`, y esas citas estaban en los
+  comentarios y `note` mudados: desde el lote 1 las 992 carpetas daban "club nuevo" (el sitio no se afectó; ningún lote corrió en el medio).
+  Ahora lee también `Admin/carga-clubes/<club>.md`: la resolución da idéntica a la de antes del to-do 209 (202 por cita, 2 por nombre,
+  1 ambigua). `audit.js` (`club-sin-carpeta`) salteaba en silencio a un club sin `Clubes/` en su data file y no lo detectó: ahora lee
+  los dos (sin el arreglo habría dado 202 avisos).
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 

@@ -1084,7 +1084,9 @@ function checkCarpetasClubes() {
   for (const f of fs.readdirSync(path.join(ROOT, 'data')).filter(x => x.endsWith('-data.js'))) {
     const id = f.replace(/-data\.js$/, '');
     if (resueltos.has(id)) continue;
-    const txt = fs.readFileSync(path.join(ROOT, 'data', f), 'utf8');
+    // (to-do 209) la cita de la carpeta puede estar en la evidencia del club y no en data/: se leen los dos, como carpetas-clubes.mjs
+    const ev = path.join(ROOT, 'Admin', 'carga-clubes', `${id}.md`);
+    const txt = fs.readFileSync(path.join(ROOT, 'data', f), 'utf8') + (fs.existsSync(ev) ? `\n${fs.readFileSync(ev, 'utf8')}` : '');
     if (/Clubes\/[^/\n`'"]+\/_/.test(txt)) continue; // se alimenta de una carpeta de agregado (J.League)
     if (!/Clubes\//.test(txt)) continue; // club cargado solo de fuentes externas (prensa): no tiene PDFs en Clubes/
     add('P2', 'club-sin-carpeta', `data/${f} cita Clubes/ pero ninguna carpeta de Clubes/ resuelve a '${id}' (tools/carpetas-clubes.mjs): sus PDFs se tratarían como de un club nuevo`);
