@@ -158,12 +158,3 @@ ni en el comentario de ningún archivo de código.
     (por ejemplo, que la columna "año anterior" de la fila coincida con lo leído en el documento anterior). Medir con `filasDelMd` sobre
     todos los .md antes y después (script del scratchpad: cifras de cada fila) y `caja-deuda.mjs --medir`. Después correr AEK
     (`--ejecutar --escribir`; la IA ya está en caché).
-
-224. LAS CORRIDAS SE ESTÁN VOLVIENDO LENTAS (pedido de Guido, 2026-10-13). MEDIDO: no hace falta una base de datos; el tiempo está en tres
-    puntos. HECHO: (2) `cola.mjs` y `ajustes.mjs` leen su registro una vez por proceso (verificar --lista 237 documentos 36 s -> 3 s; propuesta
-    de carga de 129 documentos 206 s -> 94 s); (1) `caja-deuda.mjs` lee los renglones de texto sin la expresión que explotaba (`--medir`
-    155 s -> 17 s). Todo idéntico. FALTA:
-      (3) `vocabulario.mjs`, `compilar()`: compilar las ~1.600 alternativas cuesta ~200 ms por proceso (cargar-lote lanza uno por documento).
-          Agrupar bajo un solo límite de palabra los términos CONSECUTIVOS con los mismos límites (mismo orden, misma prioridad) baja la
-          importación de 277 a 133 ms; falta probar equivalencia (cada expresión exportada, vieja contra nueva, sobre una muestra de etiquetas
-          y líneas) y ojo con términos objeto `{re}` con un `|` suelto adentro.

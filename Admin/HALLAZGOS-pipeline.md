@@ -3,6 +3,9 @@
 Ideas que se probaron con casos reales y se descartaron, con el porqué, para no volver a probarlas. Una línea por hallazgo; el
 detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente está en `Admin/PIPELINE.md`.
 
+- **Compilar el vocabulario agrupando los límites de palabra** (to-do 224): los términos consecutivos con los mismos límites bajo un solo
+  `(?<!…)(?:a|b)(?!…)` bajan la importación de `vocabulario.mjs` de 277 a 133 ms por proceso (~17 s en un lote de 87 documentos), pero
+  probar que todas las expresiones dan lo mismo compilando las dos versiones se quedó sin memoria. Ganancia chica sin prueba barata: no entra.
 - **Elegir filas por palabras clave** (la etapa vieja): reproduce los ingresos ya cargados en 7-11% de los años. Por eso existe el proceso nuevo.
 - **Cerrar sola la duda sobre un cuadro que la carga no usa** (to-do 211, parte b): en la cola de Grecia se equivocaba en 6 de 26 dudas
   (Asteras 2020-2023: la nota por naturaleza no se usaba como desglose de un renglón pero suma un GRUPO de renglones, y Guido dijo que va).

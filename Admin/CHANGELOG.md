@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 684 — Corridas más rápidas (to-do 224) (2026-10-13)
+
+- Medido: no hacía falta una base de datos. `cola.mjs` y `ajustes.mjs` leen su registro una vez por proceso (verificar de 237 documentos
+  36 s -> 3 s; propuesta de carga de 129 documentos 206 s -> 94 s) y `caja-deuda.mjs` lee los renglones de texto sin la expresión que
+  explotaba (`--medir` 155 s -> 17 s). Salidas idénticas. La compilación del vocabulario quedó en HALLAZGOS.
+
 ## Versión 683 — OFI 2020 y escalón de las dudas de cuadro por naturaleza (2026-10-13)
 
 - Lote 68: OFI 2020 desde el anexo (`OFI_notes_2020`, que trae la cuenta de resultados; no estaba en el lote 67).
