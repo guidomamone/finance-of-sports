@@ -3,7 +3,7 @@
  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.md",
  "mdSha1": "53b40a5a5f4757e22e6760ef16945f96812e8fc9",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-10T13:59:59.275Z",
+ "generado": "2026-10-13T16:47:23.437Z",
  "ubicacion": {
   "estado": [
    "b1"
@@ -15,7 +15,7 @@
   {
    "bloque": "b1",
    "escala": "no se sabe",
-   "evidencia": "El bloque no indica escala; los importes con dos decimales (ej. 3574024,86) sugieren unidades (euros)."
+   "evidencia": "El bloque no indica escala; importes con decimales (ej. 3574024,86) sugieren unidades (euros)."
   }
  ],
  "filas": [
@@ -139,16 +139,27 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se cargan los importes del estado (L9-L24) como unidades de euro?",
+   "pregunta": "¿Se cargan los importes de b1 en unidades (euros), dado que no hay leyenda de escala y tienen dos decimales?",
    "propuesta": "sí",
    "tema": "escala",
    "renglon": "",
-   "texto": "El bloque b1 no imprime la escala; los decimales con coma (ej. L9 3574024,86) indican euros en unidades.",
+   "texto": "El bloque b1 (L5-L24) no imprime la escala; los decimales indican unidades.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se confirma que el documento no tiene ningún cuadro con 'Salarios del plantel' y que no se carga esa fila?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Έξοδα διοίκησης",
+   "texto": "Solo se recibió el estado b1 sin notas; los salarios estarían dentro de Έξοδα διοίκησης (L13) sin desglose.",
    "bloques": [
     "b1"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Solo hay columna 2021-2022; no se imprime año anterior. Los gastos y el impuesto se presentan sin signo. No se imprimen totales de ingresos ni de gastos. Renglones sin importe (L10, L14, L16-L18) omitidos. Chequeo: 3574024,86+631156,22-4080745,14-3871,14=120564,80 coincide con L19."
+ "observaciones": "Solo hay columna 2021-2022; no hay año anterior. Los gastos se imprimen sin signo. Renglones sin importe (L10, L14, L16-L18) se omiten. No hay totales de ingresos ni de gastos impresos. No se encontró 'Salarios del plantel': no se recibieron notas de gastos."
 }

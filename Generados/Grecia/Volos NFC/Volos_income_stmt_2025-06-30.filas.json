@@ -3,7 +3,7 @@
  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.md",
  "mdSha1": "55eceb22502eccc6cfda4fef0de6ea5e9749cb6c",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-10T14:01:59.062Z",
+ "generado": "2026-10-13T16:48:21.309Z",
  "ubicacion": {
   "estado": [
    "b1"
@@ -15,7 +15,7 @@
   {
    "bloque": "b1",
    "escala": "unidades",
-   "evidencia": "No se indica escala; importes con dos decimales (ej. 4.639.776,05 en L9) sugieren unidades de euro."
+   "evidencia": "No se indica escala; importes con dos decimales (ej. 4.639.776,05) indican unidades de euro"
   }
  ],
  "filas": [
@@ -35,7 +35,7 @@
    "etiqueta": "Μικτό αποτέλεσμα",
    "actual": "4.639.776,05",
    "anterior": null,
-   "tipo": "resultado",
+   "tipo": "subtotal",
    "lado": "resultado",
    "detalla_a": null
   },
@@ -142,27 +142,16 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se carga como resultado positivo 545.779,63 (L20) aunque Σύνολο 6.524.533,85 menos Έξοδα διοίκησης 5.978.754,22 da 545.779,63, confirmando que los importes de gasto están sin signo?",
+   "pregunta": "¿Se acepta que no hay renglón de 'Salarios del plantel' en este documento porque el estado (L5-L25) no tiene notas de gastos y los salarios están incluidos en 'Έξοδα διοίκησης' (L14)?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Αποτελέσματα προ τόκων και φόρων",
-   "texto": "Los gastos (L14, L22, L24) se imprimen sin signo negativo; la aritmética confirma que restan.",
-   "bloques": [
-    "b1"
-   ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se confirma que el estado no tiene columna del año anterior y que la escala es unidades de euro?",
-   "propuesta": "sí",
-   "tema": "columna",
-   "renglon": "",
-   "texto": "L7 solo muestra la columna 2024-2025 y no hay frase de escala.",
+   "renglon": "Έξοδα διοίκησης",
+   "texto": "El documento solo trae el estado por función sin notas; no existe cuadro con salarios del plantel (L14).",
    "bloques": [
     "b1"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Estado de resultados por función (formato griego ELP). Sin notas de desglose. Renglones vacíos (L10, L15-L19) omitidos. No hay total de gastos impreso."
+ "observaciones": "Estado de resultados por función (normas griegas) con una sola columna 2024-2025; no hay año anterior ni notas. No se imprime total de gastos. Renglones sin importe (L10, L15-L19) omitidos. Salarios del plantel no figuran por separado."
 }

@@ -69,6 +69,9 @@ window.RANKINGS["gr-superleague"] = {
       { id:"aellarissa-gr", revenue:5.132, reportType:"official_balance_sheet",
         sourceId:"aellarissa-gr-ael-notes-elp-2021-06-30",
         mix:[["Comercial / Sponsors",0.048],["Fútbol profesional (sin desglosar por la fuente)",2.457],["Otros ingresos",2.627]] },
+      { id:"volosnfc-gr", revenue:3.633, reportType:"official_balance_sheet",
+        sourceId:"volosnfc-gr-volos-income-stmt-2021-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.587],["Otros ingresos",1.046]] },
     ],
   },
   2020: {

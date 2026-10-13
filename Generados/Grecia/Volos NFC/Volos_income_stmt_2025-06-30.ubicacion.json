@@ -3,7 +3,8 @@
  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.md",
  "mdSha1": "55eceb22502eccc6cfda4fef0de6ea5e9749cb6c",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-10T14:01:31.360Z",
+ "generado": "2026-10-13T16:48:08.179Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -21,7 +22,7 @@
  "notas_ingresos": [],
  "notas_gastos": [],
  "escala": "no se sabe",
- "escala_evidencia": "",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala sobre el cuadro b1.",
  "moneda": "EUR",
  "columna_ejercicio": "2024-2025",
  "columna_anterior": null,
@@ -29,16 +30,27 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Los importes del estado de resultados 'ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ' (b1) están expresados en euros (unidades)?",
+   "pregunta": "¿El documento contiene algún cuadro o nota que desglose los salarios del plantel (Κόστος πωλήσεων / παροχές σε εργαζόμενους) además del estado b1?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Κόστος πωλήσεων",
+   "texto": "El índice solo tiene un bloque (b1, estado de resultados por función) y no hay notas que abran los gastos de personal/plantel.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Los importes del estado b1 están expresados en euros (unidades) y no en miles?",
    "propuesta": "sí",
    "tema": "escala",
    "renglon": "",
-   "texto": "El índice no muestra ninguna frase que indique la escala sobre la tabla b1.",
+   "texto": "No se ve ninguna leyenda de escala arriba del cuadro b1.",
    "bloques": [
     "b1"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Documento con un único bloque: estado de resultados por función (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΕΙΑ) de ΒΟΛΟΣ Ν.Π.Σ. ΠΑΕ, columna 2024-2025, sin columna del año anterior. No hay notas de desglose. Perímetro presumiblemente individual (sociedad anónima de fútbol, normas griegas)."
+ "observaciones": "Documento de una sola página con el estado de resultados por función (Κατάσταση αποτελεσμάτων κατά λειτουργία) del ejercicio 2024-2025, sin columna del año anterior. No hay notas ni cuadros que desglosen salarios del plantel; posiblemente quedan incluidos en Κόστος πωλήσεων."
 }

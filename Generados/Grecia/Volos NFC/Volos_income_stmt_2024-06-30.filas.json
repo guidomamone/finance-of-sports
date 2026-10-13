@@ -3,7 +3,7 @@
  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2024-06-30.md",
  "mdSha1": "64282b34d95523bacc2808582d229214335a140f",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-10T14:01:26.168Z",
+ "generado": "2026-10-13T16:48:01.643Z",
  "ubicacion": {
   "estado": [
    "b1"
@@ -15,7 +15,7 @@
   {
    "bloque": "b1",
    "escala": "unidades",
-   "evidencia": "No se indica escala; importes con decimales (ej. 3.377.521,91), se asume unidades (euros)"
+   "evidencia": "No se imprime la escala; los importes llevan decimales (ej. 3.377.521,91), lo que indica euros en unidades"
   }
  ],
  "filas": [
@@ -140,6 +140,29 @@
   "actual": "383.182,45",
   "anterior": null
  },
- "dudas": [],
- "observaciones": "Solo hay columna 2023-2024; sin año anterior. Importes de gastos e impuestos impresos sin signo. No se imprime total de gastos. Renglones sin importe (L10, L15-L19) omitidos. Escala no declarada; por decimales se asume unidades."
+ "dudas": [
+  {
+   "pregunta": "¿Se acepta que no hay renglón 'Salarios del plantel' porque el documento no trae notas de gastos y los salarios están dentro de 'Έξοδα διοίκησης' (L14)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Έξοδα διοίκησης",
+   "texto": "El estado (L9-L25) no tiene renglón ni cuadro de salarios y no se pasaron notas que desglosen gastos.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se confirma que el PDF no tiene columna del ejercicio anterior en el estado de resultados (L7)?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado en L7 sólo muestra la columna 2023-2024.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado por función en euros. Sólo hay columna 2023-2024. Renglones sin importe (L10, L15-L19) omitidos. 'Σύνολο' (L13) es el total de ingresos operativos; no se imprime total de gastos. No hay notas, por lo que no existe desglose de salarios del plantel."
 }

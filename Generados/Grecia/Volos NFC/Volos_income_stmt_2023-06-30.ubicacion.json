@@ -3,7 +3,8 @@
  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.md",
  "mdSha1": "7964cb9650b7036c80c1c0e801ce205342e9deac",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-10T14:00:12.592Z",
+ "generado": "2026-10-13T16:47:31.143Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -20,8 +21,8 @@
  ],
  "notas_ingresos": [],
  "notas_gastos": [],
- "escala": "unidades",
- "escala_evidencia": "Importes con decimales (ej. 4198075,44), sin indicación de miles: están en unidades de euro.",
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala sobre el cuadro b1.",
  "moneda": "EUR",
  "columna_ejercicio": "2022-2023",
  "columna_anterior": null,
@@ -29,16 +30,27 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se cargan 'Έξοδα διοίκησης' 4432911,74 y 'Φόροι εισοδήματος' 246871,67 como gastos aunque estén impresos sin signo negativo?",
+   "pregunta": "¿Los importes del cuadro 'ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΕΙΑ' (b1) están expresados en euros (unidades)?",
    "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Έξοδα διοίκησης",
-   "texto": "4198075,44 + 1356712,45 - 4432911,74 = 1121876,15 cuadra con el resultado antes de intereses e impuestos, así que los gastos van sin signo en el cuadro.",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No se ve ninguna indicación de escala sobre b1, y las sociedades griegas suelen presentar en euros.",
    "bloques": [
     "b1"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se confirma que el documento no tiene ninguna nota que abra los salarios del plantel, de modo que esa categoría quede incluida en 'Κόστος πωλήσεων' sin desglose?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Κόστος πωλήσεων",
+   "texto": "El estado de resultados está presentado por función y el documento tiene un único bloque, sin notas.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
   }
  ],
- "observaciones": "Hay un único estado de resultados por función (Κατάσταση αποτελεσμάτων κατά λειτουργία) de la ΠΑΕ, ejercicio 2022-2023, que cierra el 30/06/2023. No tiene columna del año anterior. No hay notas que desglosen los renglones. Los importes de gastos van sin signo y la aritmética del cuadro cuadra: 1121876,15 + 63,73 - 7464,46 = 1114475,42, y 1114475,42 - 246871,67 = 867603,75."
+ "observaciones": "El documento contiene solo el estado de resultados por función (b1), con una única columna 2022-2023 y sin año anterior. No hay notas ni cuadros que abran los salarios del plantel; quedan dentro de Κόστος πωλήσεων y gastos de administración. La entidad es Volos NFC ΠΑΕ en estados individuales."
 }

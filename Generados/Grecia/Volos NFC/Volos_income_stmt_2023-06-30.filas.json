@@ -3,7 +3,7 @@
  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.md",
  "mdSha1": "7964cb9650b7036c80c1c0e801ce205342e9deac",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-10T14:00:37.912Z",
+ "generado": "2026-10-13T16:47:42.264Z",
  "ubicacion": {
   "estado": [
    "b1"
@@ -15,7 +15,7 @@
   {
    "bloque": "b1",
    "escala": "no se sabe",
-   "evidencia": "No se indica escala; importes con decimales (ej. 4198075,44) sugieren unidades (euros)."
+   "evidencia": "No se imprime la escala; los importes tienen dos decimales (ej. 4198075,44), lo que sugiere unidades (euros)."
   }
  ],
  "filas": [
@@ -129,27 +129,16 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se cargan los importes de b1 en unidades (euros), dado que no se imprime la escala y tienen decimales?",
+   "pregunta": "¿Se cargan los importes de b1 (L9-L24) como unidades (euros), aunque el documento no imprime la escala?",
    "propuesta": "sí",
    "tema": "escala",
    "renglon": "",
-   "texto": "El estado (L5-L24) no indica escala; los decimales sugieren unidades.",
+   "texto": "No hay frase de escala en b1; los dos decimales sugieren unidades.",
    "bloques": [
     "b1"
    ],
    "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se carga sin dudar el resultado operativo 1121876,15 (L19) aunque 4198075,44+1356712,45-4432911,74 da 1121876,15 y cierra?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Αποτελέσματα προ τόκων και φόρων",
-   "texto": "Verificado: el operativo cuadra con los renglones L11-L13, signos de gastos impresos sin paréntesis.",
-   "bloques": [
-    "b1"
-   ],
-   "afecta_carga": false
   }
  ],
- "observaciones": "Solo hay columna 2022-2023; no hay año anterior. Los gastos e intereses se imprimen en positivo sin signo. No hay totales de ingresos ni gastos impresos."
+ "observaciones": "No existe ninguna fila de 'Salarios del plantel' ni notas de desglose en los bloques recibidos; solo el estado de resultados por función (b1) con una única columna 2022-2023, sin año anterior. Renglones sin importe (L10, L14-L18) omitidos. Los importes cuadran: 4198075,44+1356712,45-4432911,74=1121876,15; menos intereses netos =1114475,42; menos impuesto =867603,75."
 }

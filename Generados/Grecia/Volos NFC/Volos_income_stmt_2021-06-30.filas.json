@@ -3,7 +3,7 @@
  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2021-06-30.md",
  "mdSha1": "4d48711d7dfe536353212abac2a3c7e55ff20354",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-10T13:59:21.816Z",
+ "generado": "2026-10-13T16:47:02.113Z",
  "ubicacion": {
   "estado": [
    "b1"
@@ -14,8 +14,8 @@
  "escalas": [
   {
    "bloque": "b1",
-   "escala": "no se sabe",
-   "evidencia": "No se imprime la escala; los importes con decimales (ej. 879812,8 en L12) sugieren unidades (euros)."
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con decimales (ej. 879812,8) sugieren euros en unidades"
   }
  ],
  "filas": [
@@ -139,27 +139,27 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se cargan los importes del estado (L9-L24) en unidades (euros), aunque el documento no imprime la escala?",
+   "pregunta": "¿Se carga el resultado de L24 (287579,9) como ganancia pese a que 2177347+879812,8-2739218-1934,54 = 316007 positivo es coherente, aunque no hay signos impresos?",
    "propuesta": "sí",
-   "tema": "escala",
-   "renglon": "",
-   "texto": "El bloque b1 no indica escala; los decimales (L12, L15, L20) indican unidades.",
+   "tema": "otro",
+   "renglon": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "texto": "El cuadro no imprime signos; la aritmética (L19, L22, L24) es consistente con ganancia.",
    "bloques": [
     "b1"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   },
   {
-   "pregunta": "¿Se cargan los gastos (L13, L15, L21) y el impuesto (L23) como importes negativos aunque se imprimen sin signo?",
+   "pregunta": "¿Se confirma que no existe en el documento un cuadro con 'Salarios del plantel' ni columna del año anterior?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Έξοδα διοίκησης",
-   "texto": "Los gastos en L13, L15, L21 y L23 aparecen sin paréntesis ni signo; la aritmética (2177347+879812,8-2739218-1934,54≈316007) confirma que restan.",
+   "texto": "El bloque b1 (L7-L24) solo tiene la columna 2020-2021 y no hay notas que desglosen gastos; los salarios estarían dentro de Έξοδα διοίκησης (L13).",
    "bloques": [
     "b1"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Estado sin columna de año anterior. Los renglones vacíos (Κόστος πωλήσεων, Έξοδα διάθεσης, etc.) no se extraen. Los totales de ingresos y gastos no están impresos. El resultado del ejercicio es una ganancia de 287579,9."
+ "observaciones": "Estado de resultados por función (Grecia), sin columna de año anterior ni notas de desglose. No aparece 'Salarios del plantel' en el material provisto. Renglones vacíos (L10, L14, L16-L18) omitidos por no tener importe."
 }

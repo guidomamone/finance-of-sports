@@ -3,7 +3,8 @@
  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2024-06-30.md",
  "mdSha1": "64282b34d95523bacc2808582d229214335a140f",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-10T14:00:51.900Z",
+ "generado": "2026-10-13T16:47:49.153Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -20,13 +21,36 @@
  ],
  "notas_ingresos": [],
  "notas_gastos": [],
- "escala": "unidades",
- "escala_evidencia": "Importes con decimales (3.377.521,91); no hay leyenda de escala, se infiere unidades de euro.",
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala (\"σε ευρώ\" / \"ποσά σε €\") encima del cuadro b1.",
  "moneda": "EUR",
  "columna_ejercicio": "2023-2024",
  "columna_anterior": null,
  "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [],
- "observaciones": "Único bloque: estado de resultados por función (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΕΙΑ) de Volos NFC PAE, ejercicio 2023-2024 (cierre 30-06-2024). Sin columna del año anterior ni notas de desglose. Perímetro individual (sociedad única, sin mención de consolidación). Cuadra: 5.872.569,47 - 5.379.127,72 = 493.441,75."
+ "dudas": [
+  {
+   "pregunta": "¿El documento contiene, fuera del cuadro b1, alguna nota o anexo que abra el costo de personal o los salarios del plantel?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Κόστος πωλήσεων",
+   "texto": "El índice tiene un solo bloque (b1, estado de resultados por función) y no se ve ningún desglose de gastos de personal; los salarios del plantel quedarían dentro del costo de ventas.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Los importes del estado de resultados b1 están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No se ve ninguna indicación de escala encima del cuadro b1.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento contiene un único cuadro: el estado de resultados por función (b1) de Volos NFC PAE para 2023-2024. Ese cuadro no trae columna del año anterior. El estado es por función (κατά λειτουργία), así que los salarios del plantel no aparecen como renglón propio: probablemente están dentro de Κόστος πωλήσεων. No hay ningún otro bloque que los desglose."
 }

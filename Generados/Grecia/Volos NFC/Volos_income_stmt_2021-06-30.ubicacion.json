@@ -3,7 +3,8 @@
  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2021-06-30.md",
  "mdSha1": "4d48711d7dfe536353212abac2a3c7e55ff20354",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-10T13:58:52.119Z",
+ "generado": "2026-10-13T16:46:49.775Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -21,7 +22,7 @@
  "notas_ingresos": [],
  "notas_gastos": [],
  "escala": "no se sabe",
- "escala_evidencia": "El índice no muestra ninguna frase de escala sobre el bloque b1.",
+ "escala_evidencia": "",
  "moneda": "EUR",
  "columna_ejercicio": "2020-2021",
  "columna_anterior": null,
@@ -29,16 +30,27 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Los importes del estado de resultados (b1) están expresados en euros (unidades)?",
+   "pregunta": "¿Se carga el estado b1 sin un renglón separado de 'Salarios del plantel', porque el documento no trae ninguna nota que abra los gastos de personal?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Κόστος πωλήσεων",
+   "texto": "El estado por función (b1) presenta 'Κόστος πωλήσεων' sin desglose y el documento no tiene otros bloques con cifras.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Los importes del estado b1 están expresados en euros (unidades)?",
    "propuesta": "sí",
    "tema": "escala",
    "renglon": "",
-   "texto": "No aparece leyenda de escala sobre la tabla b1; los estados griegos de una ΠΑΕ suelen presentarse en euros.",
+   "texto": "No se ve ninguna frase sobre la escala ni la moneda arriba del bloque b1.",
    "bloques": [
     "b1"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Único bloque: estado de resultados por función (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΕΙΑ) de Volos NFC ΠΑΕ, solo columna 2020-2021, sin año anterior ni notas de desglose. Se asume perímetro individual (sociedad anónima de fútbol)."
+ "observaciones": "El documento tiene un solo bloque: el estado de resultados por función (b1) de la sociedad anónima de fútbol (ΠΑΕ), con una única columna, 2020-2021. No hay notas, así que no aparece ningún desglose de salarios del plantel. Probablemente estén incluidos en 'Κόστος πωλήσεων'."
 }
