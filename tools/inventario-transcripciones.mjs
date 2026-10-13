@@ -47,9 +47,9 @@
 //   node tools/inventario-transcripciones.mjs --solo "Clubes/Brasil/Remo"       # ... o los de esa carpeta
 //
 // ALCANCE (--solo, Versión 640, aprobado por Guido el 2026-10-09). Recalcular el registro entero tarda ~1-2 min (12.184 PDFs; ~70 s
-// son `onboard.mjs --all --dry-run` para saber qué está cargado) y pipeline.mjs y lote.mjs lo disparaban varias veces por corrida
+// son la pregunta de qué está cargado, hoy `quien.mjs --pendientes`) y pipeline.mjs y lote.mjs lo disparaban varias veces por corrida
 // aunque la corrida fuera de 62 PDFs (lote 56, Brasil). Con --solo <lista|carpeta> se recalculan SOLO esos PDFs (también la pregunta
-// a onboard.mjs, acotada a sus carpetas) y las demás líneas del registro se copian tal cual de la versión anterior; los duplicados se
+// a quien.mjs, acotada a sus carpetas) y las demás líneas del registro se copian tal cual de la versión anterior; los duplicados se
 // siguen buscando contra el registro entero (la huella de cada PDF ya está guardada). La escalera: escalón 0 = --solo (lo usan
 // pipeline.mjs --lista/--dir y lote.mjs con su lista); escalón 1 = el recálculo completo (estado.mjs --actualizar, o sin alcance).
 // Compuerta medida: las líneas de los PDFs del alcance salen idénticas a las del recálculo completo, y las demás, idénticas a las
@@ -99,19 +99,19 @@ function walkPdfs(dir, out = []) {
   return out;
 }
 
-// Qué ejercicios ya están cargados en el sitio: el mismo criterio que usa tools/onboard.mjs (lo que
-// ese comando NO lista como "necesita trabajo" es lo que ya está cargado). Se le pregunta a él en vez
+// Qué ejercicios ya están cargados en el sitio: tools/quien.mjs --pendientes (lo que NO lista es lo que ya está cargado; hasta el to-do 218
+// era `onboard.mjs --all --dry-run`, el mismo código). Se le pregunta a él en vez
 // de duplicar la lógica de resolver club+año, que ya tiene sus casos raros resueltos.
 // Con `dirs` (el alcance de --solo) se le pregunta solo por esas carpetas (una corrida por carpeta, --dir). Una carpeta sin nada pendiente
 // devuelve 0 documentos y es válido (todo cargado); el control de "no devolvió nada" queda para el recálculo completo.
 function pendingByOnboard(dirs = null) {
   const set = new Set();
   for (const dir of dirs || [null]) {
-    const r = spawnSync('node', [resolve(root, 'tools/onboard.mjs'), '--all', ...(dir ? ['--dir', dir] : []), '--dry-run', '--confirm'], { cwd: root, encoding: 'utf8', maxBuffer: 512 * 1024 * 1024, env: { ...process.env, ONBOARD_IGNORE_BRIEFING: '1' } });
-    if (r.status !== 0) throw new Error(`onboard.mjs --dry-run${dir ? ` --dir ${dir}` : ''} falló: ${(r.stderr || '').slice(0, 300)}`);
+    const r = spawnSync('node', [resolve(root, 'tools/quien.mjs'), '--pendientes', ...(dir ? ['--dir', dir] : [])], { cwd: root, encoding: 'utf8', maxBuffer: 512 * 1024 * 1024 });
+    if (r.status !== 0) throw new Error(`quien.mjs --pendientes${dir ? ` --dir ${dir}` : ''} falló: ${(r.stderr || '').slice(0, 300)}`);
     for (const m of (r.stdout || '').matchAll(/^=== (.+?) ===$/gm)) set.add(m[1]);
   }
-  if (!dirs && set.size === 0) throw new Error('onboard.mjs --dry-run no devolvió ningún documento: no puedo saber qué está cargado');
+  if (!dirs && set.size === 0) throw new Error('quien.mjs --pendientes no devolvió ningún documento: no puedo saber qué está cargado');
   return set;
 }
 

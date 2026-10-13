@@ -37,7 +37,7 @@
 //                     error del documento); --categoria opcional para la fila de la diferencia. verificar.mjs abre el desglose con una fila
 //                     más, "Diferencia en el documento", si la diferencia es exactamente esa. Caso: Fortaleza 2022 "Patrocinios (1)", 54.000.
 //   anio              (Versión 390) valor: el año del ejercicio cuando el NOMBRE DEL ARCHIVO lo dice mal: escalón 0 del año en
-//                     tools/alta-club.mjs (analizar, que también usa cargar.mjs) y en tools/onboard.mjs --quien. Caso: Goiás,
+//                     tools/alta-club.mjs (analizar, que también usa cargar.mjs) y en tools/quien.mjs --quien. Caso: Goiás,
 //                     "demonstracoes-contabeis-2017-2016.pdf" es el ejercicio 2017 (con 2016 de comparativo) y el nombre daba 2016.
 //   categoria         (Versión 394) etiqueta = la fila tal cual; valor = una categoría de data/category-map.js. Escalón 0 de la escalera de
 //                     categorías de cargar.mjs: gana sobre todo, también sobre la COMPUERTA DEL LADO. Si la categoría es del otro lado, la

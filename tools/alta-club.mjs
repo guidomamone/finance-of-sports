@@ -547,7 +547,7 @@ function cierreDelNombre(nombre) {
   return null;
 }
 
-// Misma función que tools/onboard.mjs (guessYear): año de CIERRE a partir del nombre.
+// Misma función que tools/quien.mjs (guessYear): año de CIERRE a partir del nombre.
 function anioDelNombre(filename) {
   const iso = filename.match(/(?<!\d)(\d{4})[-_](0[1-9]|1[0-2])[-_](0[1-9]|[12]\d|3[01])(?!\d)/);
   if (iso) return parseInt(iso[1], 10);

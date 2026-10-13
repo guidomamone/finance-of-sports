@@ -374,9 +374,9 @@ export async function chequearPaginas({ pdfPath, mdText, club, year, umbrales = 
   return out.sort((a, b) => a.pagina - b.pagina);
 }
 
-// ---------------------------------------------------------------- club y año de un PDF (tools/onboard.mjs --quien)
+// ---------------------------------------------------------------- club y año de un PDF (tools/quien.mjs --quien)
 export function quien(pdfRel) {
-  const r = spawnSync('node', [resolve(root, 'tools/onboard.mjs'), '--quien', pdfRel], { cwd: root, encoding: 'utf8' });
+  const r = spawnSync('node', [resolve(root, 'tools/quien.mjs'), '--quien', pdfRel], { cwd: root, encoding: 'utf8' });
   try { return JSON.parse(r.stdout.trim().split('\n').pop()); } catch { return {}; }
 }
 

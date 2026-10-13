@@ -98,17 +98,6 @@ ni en el comentario de ningún archivo de código.
 
 
 
-218. SACAR LAS ETAPAS VIEJAS DE `tools/onboard.mjs` Y ARCHIVAR `tools/prepare-onboarding.mjs` (limpieza de código). Hechos (a) y (b):
-    `tieScore()` borrado; el camino de `cargar.mjs` sin `--desde-verificacion` sacado y `proponer-carga.mjs` archivado (sus `loadSite()` y
-    `parseNumber()` están en `tools/datos-sitio.mjs`). Falta: (c) separar las dos funciones vivas de `onboard.mjs`, `--quien` (qué club y
-    año es un PDF; lo llaman `cargar.mjs` y `chequeos-gratis.mjs`) y `--all --dry-run` (qué está cargado; lo llama
-    `inventario-transcripciones.mjs`), en `onboard.mjs` o en una tool chica nueva, y borrar las etapas viejas (`--transcribe-only`,
-    `--check-only`, la etapa `onboard`), que ya no usa nadie; (d) archivar `prepare-onboarding.mjs` en `tools/archivo/` (hoy solo lo
-    llaman esas etapas viejas). Medir antes y después: `node tools/estado.mjs --actualizar` y `diff` de
-    `Admin/registros/transcripciones-estado.jsonl`; ensayos de `cargar-lote.mjs` y de `lote.mjs --lista Admin/lotes/prueba-completa.txt`.
-    `suggest-category-precedent.mjs`, `sum-check.mjs`, `extract-table-rows.mjs` y `compare-transcripts.mjs` NO se archivan: las usan la skill
-    `club-data-mapping` e `inventario-transcripciones.mjs`.
-
 219. REVISAR LOS NIVELES P0/P1/P2/P3 DE `tools/audit.js` (pedido de Guido). Dos preguntas: (a) ¿hay chequeos que faltan en P0/P1, cosas que
     hoy un lote puede cargar mal sin que la auditoría lo frene? (`cargar.mjs` y `cargar-lote.mjs` solo revierten con P0/P1, así que lo que
     vive en P2 nunca frena una carga); (b) ¿está bien el nivel de cada chequeo de hoy? Hoy el P2 mezcla avisos que pueden tapar un dato mal

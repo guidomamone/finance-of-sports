@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 689 — Limpieza: `onboard.mjs` y `prepare-onboarding.mjs` archivados (to-do 218) (2026-10-13)
+
+- `tools/quien.mjs` (nueva) con las dos funciones vivas de `onboard.mjs`, mismo código: `--quien` (club y año de un PDF; cargar.mjs,
+  chequeos-gratis.mjs) y `--pendientes` (qué PDF no están cargados; inventario-transcripciones.mjs). `onboard.mjs` y `prepare-onboarding.mjs`
+  a `tools/archivo/`. Medido: `--quien` idéntico en los 87 de prueba-completa, `--pendientes` idéntico (11.125 líneas), registro, estado y
+  los ensayos de lote y cargar-lote idénticos.
+
 ## Versión 688 — El primer año de un club sin Guido: escalón 3 (to-do 214) (2026-10-13)
 
 - `verificar.mjs` + `tools/primer-anio-ia.mjs` (nueva): cuando del primer año solo coincide el resultado, Claude revisa las líneas del

@@ -24,7 +24,7 @@
 //         después de categorizar, las categorías son de otra lista.
 //  2. CLUB Y AÑO: el club sale de tools/carpetas-clubes.mjs (la única regla del proyecto) y tiene que existir; el año, del mismo análisis
 //     que usa el alta (`analizar()` de tools/alta-club.mjs: nombre del archivo confirmado por las fechas de cierre del contenido) y de
-//     `onboard.mjs --quien` (el que usa el registro): si no coinciden, frena. Si el club ya tiene ese año en su fiscalYearMeta, frena.
+//     `quien.mjs --quien` (el que usa el registro): si no coinciden, frena. Si el club ya tiene ese año en su fiscalYearMeta, frena.
 //  3. FILAS Y MONTOS: las de la verificación (Generados/.../<doc>.verificacion.json, etapa 6), con el signo y el lado que decidió
 //     verificar.mjs. Hasta el to-do 218 había además una selección por palabras (proponer-carga.mjs, archivada).
 //     Todo en MILLONES de moneda nativa (convención del sitio, club-data-mapping/referencia/fx.md).
@@ -179,7 +179,7 @@ function leerRegistro(root = ROOT) {
   return existsSync(p) ? readFileSync(p, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];
 }
 function quien(pdf) {
-  try { return JSON.parse(execFileSync('node', [resolve(ROOT, 'tools/onboard.mjs'), '--quien', pdf], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] })); } catch { return {}; }
+  try { return JSON.parse(execFileSync('node', [resolve(ROOT, 'tools/quien.mjs'), '--quien', pdf], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] })); } catch { return {}; }
 }
 
 // ============================================================================
@@ -341,8 +341,8 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   if (!alta.ejercicio.cierre && per?.cierreDeducido) alta.ejercicio.cierre = per.cierre; // fecha deducida de los vecinos (arriba)
   const year = alta.ejercicio.anio ?? (per?.cierreDeducido ? Number(per.cierre.slice(0, 4)) : null); P.year = year;
   const q = quien(pdf);
-  if (q.year && Number(q.year) !== Number(year)) frena('año', `alta-club.mjs dice ejercicio ${year} y onboard.mjs --quien (el que usa el registro) dice ${q.year}`);
-  if (q.clubId && q.clubId !== clubId) frena('club', `carpetas-clubes.mjs dice ${clubId} y onboard.mjs --quien dice ${q.clubId}`);
+  if (q.year && Number(q.year) !== Number(year)) frena('año', `alta-club.mjs dice ejercicio ${year} y quien.mjs --quien (el que usa el registro) dice ${q.year}`);
+  if (q.clubId && q.clubId !== clubId) frena('club', `carpetas-clubes.mjs dice ${clubId} y quien.mjs --quien dice ${q.clubId}`);
   if (!year) { return corta('año', 'no se pudo determinar el año del ejercicio'); }
   if ((cd.fiscalYearMeta || {})[year]) { if (P.reemplaza) P.avisos.push(`${clubId} ${year} ya cargado: se reemplaza`); else frena('año', `${clubId} ya tiene el ejercicio ${year} cargado`); }
   // (Versión 637) ajuste manual `no-recargar`: lo publicado de ese año no lo reproduce una corrida nueva y es mejor que ella (Lazio 2012-13, Roma 2021: el

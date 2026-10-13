@@ -23,7 +23,7 @@ node tools/gasto-doc.mjs --lista <lista> --desde <ISO> [--hasta <ISO>]       # l
 ```
 
 `lote.mjs` corre las etapas 3 a 8 sobre una lista chica.
-- El registro (`Admin/registros/transcripciones-estado.jsonl`) se recalcula entero en ~1 min (12.184 PDFs, sobre todo `onboard.mjs --all` para saber
+- El registro (`Admin/registros/transcripciones-estado.jsonl`) se recalcula entero en ~1 min (12.184 PDFs, sobre todo `quien.mjs --pendientes` para saber
   qué está cargado). `pipeline.mjs` con `--lista`/`--dir` y `lote.mjs` recalculan solo su lista (`--solo`, ~1 s) y copian las demás
   líneas; el recálculo entero queda para `estado.mjs --actualizar` y las corridas sin alcance. Medido: el registro sale idéntico.
 - Un solo proceso a la vez escribiendo el registro: `lote.mjs` y `pipeline.mjs` (también en ensayo) y `cargar.mjs --escribir` toman el

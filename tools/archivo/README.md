@@ -17,3 +17,8 @@ Sus `import` relativos (`./rutas.mjs`, etc.) ya no resuelven desde esta carpeta:
 - `proponer-carga.mjs` — la carga por selección de filas por palabras (seleccionarFilas, briefingFor con prepare-onboarding.mjs) y su
   backtest (`--backtest`, `--pdf`, to-do 108). Lo reemplazó la carga desde la verificación (`cargar.mjs`, etapa 8); se archivó en el to-do 218.
   Sus dos utilidades vivas, `loadSite()` y `parseNumber()`, están en `tools/datos-sitio.mjs`.
+- `onboard.mjs` — el onboarding viejo: transcribir con Mistral y Gemini, comparar las dos transcripciones y armar el briefing con
+  `prepare-onboarding.mjs`. Lo reemplazaron `pipeline.mjs` (etapa 2) y `lote.mjs` (3 a 8); se archivó en el to-do 218. Sus dos funciones
+  vivas (`--quien` y `--all --dry-run`) están, con el mismo código, en `tools/quien.mjs` (`--quien` y `--pendientes`).
+- `prepare-onboarding.mjs` — el briefing por documento (`.briefing.json`) del onboarding viejo; solo lo llamaba `onboard.mjs`. Archivado en
+  el to-do 218.

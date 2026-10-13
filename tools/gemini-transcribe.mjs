@@ -136,7 +136,7 @@ function findPdfsSinTranscribir(startDir) {
 
 async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, opts = {}) {
   // `opts.outSuffix` (mismo patrón que ya tiene mistral-ocr-transcribe.mjs): escribe a un archivo
-  // aparte en vez de al `.md` canónico -- lo usa tools/onboard.mjs para transcribir con Gemini EN
+  // aparte en vez de al `.md` canónico -- lo usaba tools/onboard.mjs (archivado) para transcribir con Gemini EN
   // PARALELO a Mistral (no como redo de un escaneo), sin pisar el .md de Mistral, así
   // compare-transcripts.mjs puede comparar los dos.
   const outSuffix = opts.outSuffix || '';
