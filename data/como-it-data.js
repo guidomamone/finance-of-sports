@@ -1,255 +1,104 @@
-// ============================================================================
-// data/como-it-data.js — Como 1907 S.r.l. (Italia).
-// ALTA POR SCRIPT (tools/alta-club.mjs, 2026-10-07), SIN EJERCICIOS CARGADOS TODAVÍA:
-// las estructuras de abajo están vacías a propósito. Los rubros, los totales
-// oficiales y el resto del fiscalYearMeta los agrega la etapa de carga
-// (tools/proponer-carga.mjs / sesión de onboarding), que es también la que
-// reemplaza esta cabecera por la de siempre (fuente, perímetro, categorización).
-//
-// Documento que originó el alta: Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf
-//
-// De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
-//   id                 ok        "como-it" — slug de "Como" + '-it' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-//   name               ok        "Como 1907 S.r.l." — el .md, 6 veces (nombre del club + forma societaria)
-//   displayName        ok        "Como" — nombre de la carpeta del club en Clubes/
-//   country            ok        "IT" — carpeta de país "Italia" (tabla PAISES)
-//   reportingCurrency  ok        "EUR" — moneda de curso legal de Italia
-//   fiscalYearStart    ok        "07-01" — cierre del ejercicio: contenido del .md (133 de 133 fechas de fin de mes caen en el mes 6)
-//   sport              ok        "futbol" — el .md nombra el fútbol 36 veces y ningún otro deporte más que eso
-//   brandColor         pendiente (ausente) — tools/brand-color-reference/ (footylogos): [italia] como 1907: #10416A Navy Blue, #FFFFFF White
-//   anio               ok        2025 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
-//   cierre             ok        "2025-06-30" — año del ejercicio + mes de cierre (contenido del .md (133 de 133 fechas de fin de mes caen en el mes 6))
-//   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
-//   perimetro          ok        "individual" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): Guido 2026-10-06: individual (Como 1907 S.p.A.); el pro-forma di consolidamento es una
-//   currency           ok        "EUR" — moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)
-//   fxRef              ok        "EUR@2025-06-30" — el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))
-//   sourceId           ok        "como-it-gruppo-pro-forma-consolidamento-2025" — clubId + nombre del archivo en slug
-//   liga               ok        "it-seriea" — roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Como"
-//
-// FISCAL YEAR META PROPUESTO para 2025 (NO registrado: un ejercicio con meta y
-// sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
-//   2025: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2025-06-30","sourceId":"como-it-gruppo-pro-forma-consolidamento-2025"}
-// ============================================================================
-
 const comoitRevenueLinesByYear = {
-  // 2025: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2025: [
-    { rawLabel:'Gare Campionato', normalizedCategory:'matchday_competition', amountNative:2.885, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
-    { rawLabel:'Percentuale squadra ospite', normalizedCategory:'matchday_competition', amountNative:0.07, disclosureLevel:'aggregated' }, // pág. 29, Claude 0.85
-    { rawLabel:'Tornei e amichevoli', normalizedCategory:'matchday_competition', amountNative:0.004, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.98
-    { rawLabel:'b) abbonamenti', normalizedCategory:'season_tickets', amountNative:2.962219, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
-    { rawLabel:'a) contributi in conto esercizio', normalizedCategory:'other_income', amountNative:4.671024, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.98
-    { rawLabel:'e) proventi da cessione diritti televisivi', normalizedCategory:'broadcasting', amountNative:31.781894, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
-    { rawLabel:'f) ricavi cessione temporanea calciatori', normalizedCategory:'player_sales', amountNative:0.880488, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.98
-    { rawLabel:'g) plusvalenze cessione diritti prestazioni calciatori', normalizedCategory:'player_sales', amountNative:5.146957, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
-    { rawLabel:'h) altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:0.853053, disclosureLevel:'aggregated' }, // pág. 9, Claude 0.85
-    { rawLabel:'b) sponsorizzazioni (Como 1907)', normalizedCategory:'sponsorship_commercial', amountNative:5.213198, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
-    { rawLabel:'d) proventi commerciali e royalties (Como 1907)', normalizedCategory:'sponsorship_commercial', amountNative:0.56813, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
-    { rawLabel:'i) altri ricavi e proventi diversi (Como 1907)', normalizedCategory:'other_income', amountNative:0.360799, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
+    { rawLabel:'Gare Campionato', normalizedCategory:'matchday_competition', amountNative:2.885, disclosureLevel:'aggregated' },
+    { rawLabel:'Percentuale squadra ospite', normalizedCategory:'matchday_competition', amountNative:0.07, disclosureLevel:'aggregated' },
+    { rawLabel:'Tornei e amichevoli', normalizedCategory:'matchday_competition', amountNative:0.004, disclosureLevel:'aggregated' },
+    { rawLabel:'b) abbonamenti', normalizedCategory:'season_tickets', amountNative:2.962219, disclosureLevel:'aggregated' },
+    { rawLabel:'a) contributi in conto esercizio', normalizedCategory:'other_income', amountNative:4.671024, disclosureLevel:'aggregated' },
+    { rawLabel:'e) proventi da cessione diritti televisivi', normalizedCategory:'broadcasting', amountNative:31.781894, disclosureLevel:'aggregated' },
+    { rawLabel:'f) ricavi cessione temporanea calciatori', normalizedCategory:'player_sales', amountNative:0.880488, disclosureLevel:'aggregated' },
+    { rawLabel:'g) plusvalenze cessione diritti prestazioni calciatori', normalizedCategory:'player_sales', amountNative:5.146957, disclosureLevel:'aggregated' },
+    { rawLabel:'h) altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:0.853053, disclosureLevel:'aggregated' },
+    { rawLabel:'b) sponsorizzazioni (Como 1907)', normalizedCategory:'sponsorship_commercial', amountNative:5.213198, disclosureLevel:'aggregated' },
+    { rawLabel:'d) proventi commerciali e royalties (Como 1907)', normalizedCategory:'sponsorship_commercial', amountNative:0.56813, disclosureLevel:'aggregated' },
+    { rawLabel:'i) altri ricavi e proventi diversi (Como 1907)', normalizedCategory:'other_income', amountNative:0.360799, disclosureLevel:'aggregated' },
   ],
-  // 2024: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Como/Como-fascicolo-bilancio-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Como/Como-fascicolo-bilancio-2024.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2024: [
-    { rawLabel:'Gare Campionato', normalizedCategory:'matchday_competition', amountNative:0.894, disclosureLevel:'aggregated' }, // pág. 30, precedente
-    { rawLabel:'Percentuale squadra ospite', normalizedCategory:'matchday_competition', amountNative:0.071, disclosureLevel:'aggregated' }, // pág. 30, precedente
-    { rawLabel:'Tornei e amichevoli', normalizedCategory:'matchday_competition', amountNative:0.028, disclosureLevel:'aggregated' }, // pág. 30, precedente
-    { rawLabel:'b) abbonamenti', normalizedCategory:'season_tickets', amountNative:0.552687, disclosureLevel:'aggregated' }, // pág. 12, precedente
-    { rawLabel:'a) contributi in conto esercizio', normalizedCategory:'other_income', amountNative:7.356392, disclosureLevel:'aggregated' }, // pág. 12, precedente
-    { rawLabel:'b) sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:0.265358, disclosureLevel:'aggregated' }, // pág. 12, precedente
-    { rawLabel:'c) proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:0.2871, disclosureLevel:'aggregated' }, // pág. 12, Jev 1
-    { rawLabel:'d) proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.1, disclosureLevel:'aggregated' }, // pág. 12, precedente
-    { rawLabel:'e) proventi da cessione diritti televisivi', normalizedCategory:'broadcasting', amountNative:0, disclosureLevel:'aggregated' }, // pág. 12, precedente
-    { rawLabel:'f) ricavi cessione temporanea calciatori', normalizedCategory:'player_sales', amountNative:0, disclosureLevel:'aggregated' }, // pág. 12, precedente
-    { rawLabel:'g) plusvalenze cessione diritti prestazioni calciatori', normalizedCategory:'player_sales', amountNative:0, disclosureLevel:'aggregated' }, // pág. 12, precedente
-    { rawLabel:'h) altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:0, disclosureLevel:'aggregated' }, // pág. 12, precedente
-    { rawLabel:'i) altri ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:0.26097, disclosureLevel:'aggregated' }, // pág. 12, precedente
+    { rawLabel:'Gare Campionato', normalizedCategory:'matchday_competition', amountNative:0.894, disclosureLevel:'aggregated' },
+    { rawLabel:'Percentuale squadra ospite', normalizedCategory:'matchday_competition', amountNative:0.071, disclosureLevel:'aggregated' },
+    { rawLabel:'Tornei e amichevoli', normalizedCategory:'matchday_competition', amountNative:0.028, disclosureLevel:'aggregated' },
+    { rawLabel:'b) abbonamenti', normalizedCategory:'season_tickets', amountNative:0.552687, disclosureLevel:'aggregated' },
+    { rawLabel:'a) contributi in conto esercizio', normalizedCategory:'other_income', amountNative:7.356392, disclosureLevel:'aggregated' },
+    { rawLabel:'b) sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:0.265358, disclosureLevel:'aggregated' },
+    { rawLabel:'c) proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:0.2871, disclosureLevel:'aggregated' },
+    { rawLabel:'d) proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.1, disclosureLevel:'aggregated' },
+    { rawLabel:'e) proventi da cessione diritti televisivi', normalizedCategory:'broadcasting', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'f) ricavi cessione temporanea calciatori', normalizedCategory:'player_sales', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'g) plusvalenze cessione diritti prestazioni calciatori', normalizedCategory:'player_sales', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'h) altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'i) altri ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:0.26097, disclosureLevel:'aggregated' },
   ],
 };
 const comoitExpenseLinesByYear = {
-  2025: [ // tools/cargar.mjs (2026-10-07)
-    { rawLabel:'b) costi per acquisizione temporanea prestazione calciatori', normalizedCategory:'other_expenses', amountNative:-1.542998, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.99
-    { rawLabel:'c) minusvalenze cessione diritti prestaz.calciatori', normalizedCategory:'exceptional_items', amountNative:-2.219836, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.98
-    { rawLabel:'d) altri oneri da gestione calciatori', normalizedCategory:'other_expenses', amountNative:-2.635726, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.98
-    { rawLabel:'6) Per materie prime, sussidiarie, di consumo (Como 1907)', normalizedCategory:'other_expenses', amountNative:-1.966288, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.99
-    { rawLabel:'7) Per servizi (Como 1907)', normalizedCategory:'admin_general_expense', amountNative:-26.307897, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
-    { rawLabel:'8) Per godimento di beni di terzi (Como 1907)', normalizedCategory:'admin_general_expense', amountNative:-1.633489, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.99
-    { rawLabel:'a) salari e stipendi (Como 1907)', normalizedCategory:'wages_squad', amountNative:-80.1403, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
-    { rawLabel:'b) oneri sociali (Como 1907)', normalizedCategory:'wages_squad', amountNative:-4.824772, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.92
-    { rawLabel:'c) trattamento di fine rapporto (Como 1907)', normalizedCategory:'wages_squad', amountNative:-0.691136, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.91
-    { rawLabel:'a) ammortamento delle immobilizzazioni immateriali (Como 1907)', normalizedCategory:'player_amortisation', amountNative:-26.618093, disclosureLevel:'aggregated' }, // pág. 9, Claude 0.8
-    { rawLabel:'b) ammortamento delle immobilizzazioni materiali (Como 1907)', normalizedCategory:'depreciation', amountNative:-0.176785, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
-    { rawLabel:'c) altre svalutazioni delle immobilizzazioni (Como 1907)', normalizedCategory:'player_impairment', amountNative:-4.687777, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.98
-    { rawLabel:'a) oneri da organizzazione competizioni (Como 1907)', normalizedCategory:'match_organisation_expense', amountNative:-0.673144, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
-    { rawLabel:'e) altri oneri diversi e sopravvenienze passive (Como 1907)', normalizedCategory:'other_expenses', amountNative:-4.492695, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.95
+  2025: [
+    { rawLabel:'b) costi per acquisizione temporanea prestazione calciatori', normalizedCategory:'other_expenses', amountNative:-1.542998, disclosureLevel:'aggregated' },
+    { rawLabel:'c) minusvalenze cessione diritti prestaz.calciatori', normalizedCategory:'exceptional_items', amountNative:-2.219836, disclosureLevel:'aggregated' },
+    { rawLabel:'d) altri oneri da gestione calciatori', normalizedCategory:'other_expenses', amountNative:-2.635726, disclosureLevel:'aggregated' },
+    { rawLabel:'6) Per materie prime, sussidiarie, di consumo (Como 1907)', normalizedCategory:'other_expenses', amountNative:-1.966288, disclosureLevel:'aggregated' },
+    { rawLabel:'7) Per servizi (Como 1907)', normalizedCategory:'admin_general_expense', amountNative:-26.307897, disclosureLevel:'aggregated' },
+    { rawLabel:'8) Per godimento di beni di terzi (Como 1907)', normalizedCategory:'admin_general_expense', amountNative:-1.633489, disclosureLevel:'aggregated' },
+    { rawLabel:'a) salari e stipendi (Como 1907)', normalizedCategory:'wages_squad', amountNative:-80.1403, disclosureLevel:'aggregated' },
+    { rawLabel:'b) oneri sociali (Como 1907)', normalizedCategory:'wages_squad', amountNative:-4.824772, disclosureLevel:'aggregated' },
+    { rawLabel:'c) trattamento di fine rapporto (Como 1907)', normalizedCategory:'wages_squad', amountNative:-0.691136, disclosureLevel:'aggregated' },
+    { rawLabel:'a) ammortamento delle immobilizzazioni immateriali (Como 1907)', normalizedCategory:'player_amortisation', amountNative:-26.618093, disclosureLevel:'aggregated' },
+    { rawLabel:'b) ammortamento delle immobilizzazioni materiali (Como 1907)', normalizedCategory:'depreciation', amountNative:-0.176785, disclosureLevel:'aggregated' },
+    { rawLabel:'c) altre svalutazioni delle immobilizzazioni (Como 1907)', normalizedCategory:'player_impairment', amountNative:-4.687777, disclosureLevel:'aggregated' },
+    { rawLabel:'a) oneri da organizzazione competizioni (Como 1907)', normalizedCategory:'match_organisation_expense', amountNative:-0.673144, disclosureLevel:'aggregated' },
+    { rawLabel:'e) altri oneri diversi e sopravvenienze passive (Como 1907)', normalizedCategory:'other_expenses', amountNative:-4.492695, disclosureLevel:'aggregated' },
   ],
-  2024: [ // tools/cargar.mjs (2026-10-08)
-    { rawLabel:'6) Per materie prime, sussidiarie, di consumo', normalizedCategory:'other_expenses', amountNative:-0.563223, disclosureLevel:'aggregated' }, // pág. 12, precedente
-    { rawLabel:'Costi per allenamenti e ritiri', normalizedCategory:'match_organisation_expense', amountNative:-0.89, disclosureLevel:'aggregated' }, // pág. 31, precedente
-    { rawLabel:'Spese sanitarie', normalizedCategory:'other_expenses', amountNative:-0.107, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.91
-    { rawLabel:'Compensi lavoratori autonomi', normalizedCategory:'admin_general_expense', amountNative:-0.218, disclosureLevel:'aggregated' }, // pág. 31, precedente
-    { rawLabel:'Spese manutenzione campi sportivi', normalizedCategory:'match_organisation_expense', amountNative:-0.695, disclosureLevel:'aggregated' }, // pág. 31, precedente
-    { rawLabel:'Diversi', normalizedCategory:'other_expenses', amountNative:-0.051, disclosureLevel:'aggregated' }, // pág. 31, precedente
-    { rawLabel:'Osservazione calciatori', normalizedCategory:'other_expenses', amountNative:-2.326, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.91
-    { rawLabel:'Costi accessori campagna trasferimenti', normalizedCategory:'other_expenses', amountNative:-1.482, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
-    { rawLabel:'Costi vitto, alloggio, locomozione', normalizedCategory:'match_organisation_expense', amountNative:-0.856, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.99
-    { rawLabel:'Servizio biglietteria, controllo ingressi', normalizedCategory:'match_organisation_expense', amountNative:-0.213, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
-    { rawLabel:'Assicurative e previdenziali', normalizedCategory:'admin_general_expense', amountNative:-0.106, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.98
-    { rawLabel:'Servizi da controllante e controllate dalla controllante', normalizedCategory:'admin_general_expense', amountNative:-4.033, disclosureLevel:'aggregated' }, // pág. 32, precedente
-    { rawLabel:'Omaggi, promozionali e rappresentanza', normalizedCategory:'admin_general_expense', amountNative:-0.33, disclosureLevel:'aggregated' }, // pág. 32, Jev 0.99
-    { rawLabel:'Commissioni su fidejussioni', normalizedCategory:'admin_general_expense', amountNative:-0.301, disclosureLevel:'aggregated' }, // pág. 32, precedente
-    { rawLabel:'Consulenti esterni', normalizedCategory:'admin_general_expense', amountNative:-0.286, disclosureLevel:'aggregated' }, // pág. 32, Jev 0.93
-    { rawLabel:'Rimborsi vari', normalizedCategory:'admin_general_expense', amountNative:-0.174, disclosureLevel:'aggregated' }, // pág. 32, precedente
-    { rawLabel:'Diversi', normalizedCategory:'other_expenses', amountNative:-0.135, disclosureLevel:'aggregated' }, // pág. 32, precedente
-    { rawLabel:'Utenze diverse', normalizedCategory:'admin_general_expense', amountNative:-0.127, disclosureLevel:'aggregated' }, // pág. 32, Claude 0.8
-    { rawLabel:'Pubblicità', normalizedCategory:'admin_general_expense', amountNative:-0.077, disclosureLevel:'aggregated' }, // pág. 32, Jev 1
-    { rawLabel:'Legali e notarili', normalizedCategory:'admin_general_expense', amountNative:-0.05, disclosureLevel:'aggregated' }, // pág. 32, Jev 1
-    { rawLabel:'Spese bancarie', normalizedCategory:'admin_general_expense', amountNative:-0.042, disclosureLevel:'aggregated' }, // pág. 32, Jev 0.99
-    { rawLabel:'Compenso collegio sindacale', normalizedCategory:'admin_general_expense', amountNative:-0.012, disclosureLevel:'aggregated' }, // pág. 32, Jev 0.99
-    { rawLabel:'Manutenzioni ordinarie', normalizedCategory:'admin_general_expense', amountNative:-0.01, disclosureLevel:'aggregated' }, // pág. 32, Jev 0.96
-    { rawLabel:'Postelegrafoniche', normalizedCategory:'admin_general_expense', amountNative:-0.001, disclosureLevel:'aggregated' }, // pág. 32, Jev 0.96
-    { rawLabel:'Affitti passivi', normalizedCategory:'admin_general_expense', amountNative:-0.157, disclosureLevel:'aggregated' }, // pág. 32, Jev 0.96
-    { rawLabel:'Affitto stadio Sinigaglia', normalizedCategory:'match_organisation_expense', amountNative:-0.066, disclosureLevel:'aggregated' }, // pág. 32, precedente
-    { rawLabel:'Canoni leasing operativo', normalizedCategory:'admin_general_expense', amountNative:-0.045, disclosureLevel:'aggregated' }, // pág. 32, Jev 0.98
-    { rawLabel:'Concessione impianti sportivi', normalizedCategory:'match_organisation_expense', amountNative:-0.138, disclosureLevel:'aggregated' }, // pág. 32, precedente
-    { rawLabel:'Canoni noleggio', normalizedCategory:'admin_general_expense', amountNative:-0.187, disclosureLevel:'aggregated' }, // pág. 32, precedente
-    { rawLabel:'Salari e stipendi (Tesserati)', normalizedCategory:'wages_squad', amountNative:-29.357, disclosureLevel:'aggregated' }, // pág. 32, Jev 1
-    { rawLabel:'Salari e stipendi (Altri)', normalizedCategory:'admin_general_expense', amountNative:-1.035, disclosureLevel:'aggregated' }, // pág. 32, Claude 0.8
-    { rawLabel:'Oneri sociali (Tesserati)', normalizedCategory:'wages_squad', amountNative:-2.276, disclosureLevel:'aggregated' }, // pág. 32, Jev 0.98
-    { rawLabel:'Oneri sociali (Altri)', normalizedCategory:'admin_general_expense', amountNative:-0.457, disclosureLevel:'aggregated' }, // pág. 32, precedente
-    { rawLabel:'Trattamento di fine rapporto (Tesserati)', normalizedCategory:'wages_squad', amountNative:-0.302, disclosureLevel:'aggregated' }, // pág. 32, Jev 0.96
-    { rawLabel:'Trattamento di fine rapporto (Altri)', normalizedCategory:'admin_general_expense', amountNative:-0.098, disclosureLevel:'aggregated' }, // pág. 32, precedente
-    { rawLabel:'a) ammortamento delle immobilizzazioni immateriali', normalizedCategory:'player_amortisation', amountNative:-4.74636, disclosureLevel:'aggregated' }, // pág. 12, Claude 0.95
-    { rawLabel:'b) ammortamento delle immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-0.342459, disclosureLevel:'aggregated' }, // pág. 12, Jev 1
-    { rawLabel:'c) altre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-0.6034, disclosureLevel:'aggregated' }, // pág. 12, precedente
-    { rawLabel:'12) Accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-0.175655, disclosureLevel:'aggregated' }, // pág. 12, Claude 0.85
-    { rawLabel:'a) oneri da organizzazione competizioni', normalizedCategory:'match_organisation_expense', amountNative:-0.62777, disclosureLevel:'aggregated' }, // pág. 12, precedente
-    { rawLabel:'b) costi per acquisizione temporanea prestazione calciatori', normalizedCategory:'other_expenses', amountNative:-0.5, disclosureLevel:'aggregated' }, // pág. 12, precedente
-    { rawLabel:'c) minusvalenze cessione diritti prestaz.calciatori', normalizedCategory:'exceptional_items', amountNative:-0.585411, disclosureLevel:'aggregated' }, // pág. 12, precedente
-    { rawLabel:'d) altri oneri da gestione calciatori', normalizedCategory:'other_expenses', amountNative:-0.08825, disclosureLevel:'aggregated' }, // pág. 12, precedente
-    { rawLabel:'- Spese, ammende e multe gare', normalizedCategory:'other_expenses', amountNative:-0.198, disclosureLevel:'aggregated' }, // pág. 33, Jev 0.98
-    { rawLabel:'- Oneri tributari indiretti', normalizedCategory:'admin_general_expense', amountNative:-0.021, disclosureLevel:'aggregated' }, // pág. 33, Jev 0.99
-    { rawLabel:'- Contributi Lega', normalizedCategory:'match_organisation_expense', amountNative:-0.906, disclosureLevel:'aggregated' }, // pág. 33, Jev 0.91
-    { rawLabel:'- Oneri precedenti esercizi', normalizedCategory:'exceptional_items', amountNative:-0.613, disclosureLevel:'aggregated' }, // pág. 33, precedente
-    { rawLabel:'- Diversi', normalizedCategory:'other_expenses', amountNative:-0.974, disclosureLevel:'aggregated' }, // pág. 33, Jev 0.96
+  2024: [
+    { rawLabel:'6) Per materie prime, sussidiarie, di consumo', normalizedCategory:'other_expenses', amountNative:-0.563223, disclosureLevel:'aggregated' },
+    { rawLabel:'Costi per allenamenti e ritiri', normalizedCategory:'match_organisation_expense', amountNative:-0.89, disclosureLevel:'aggregated' },
+    { rawLabel:'Spese sanitarie', normalizedCategory:'other_expenses', amountNative:-0.107, disclosureLevel:'aggregated' },
+    { rawLabel:'Compensi lavoratori autonomi', normalizedCategory:'admin_general_expense', amountNative:-0.218, disclosureLevel:'aggregated' },
+    { rawLabel:'Spese manutenzione campi sportivi', normalizedCategory:'match_organisation_expense', amountNative:-0.695, disclosureLevel:'aggregated' },
+    { rawLabel:'Diversi', normalizedCategory:'other_expenses', amountNative:-0.051, disclosureLevel:'aggregated' },
+    { rawLabel:'Osservazione calciatori', normalizedCategory:'other_expenses', amountNative:-2.326, disclosureLevel:'aggregated' },
+    { rawLabel:'Costi accessori campagna trasferimenti', normalizedCategory:'other_expenses', amountNative:-1.482, disclosureLevel:'aggregated' },
+    { rawLabel:'Costi vitto, alloggio, locomozione', normalizedCategory:'match_organisation_expense', amountNative:-0.856, disclosureLevel:'aggregated' },
+    { rawLabel:'Servizio biglietteria, controllo ingressi', normalizedCategory:'match_organisation_expense', amountNative:-0.213, disclosureLevel:'aggregated' },
+    { rawLabel:'Assicurative e previdenziali', normalizedCategory:'admin_general_expense', amountNative:-0.106, disclosureLevel:'aggregated' },
+    { rawLabel:'Servizi da controllante e controllate dalla controllante', normalizedCategory:'admin_general_expense', amountNative:-4.033, disclosureLevel:'aggregated' },
+    { rawLabel:'Omaggi, promozionali e rappresentanza', normalizedCategory:'admin_general_expense', amountNative:-0.33, disclosureLevel:'aggregated' },
+    { rawLabel:'Commissioni su fidejussioni', normalizedCategory:'admin_general_expense', amountNative:-0.301, disclosureLevel:'aggregated' },
+    { rawLabel:'Consulenti esterni', normalizedCategory:'admin_general_expense', amountNative:-0.286, disclosureLevel:'aggregated' },
+    { rawLabel:'Rimborsi vari', normalizedCategory:'admin_general_expense', amountNative:-0.174, disclosureLevel:'aggregated' },
+    { rawLabel:'Diversi', normalizedCategory:'other_expenses', amountNative:-0.135, disclosureLevel:'aggregated' },
+    { rawLabel:'Utenze diverse', normalizedCategory:'admin_general_expense', amountNative:-0.127, disclosureLevel:'aggregated' },
+    { rawLabel:'Pubblicità', normalizedCategory:'admin_general_expense', amountNative:-0.077, disclosureLevel:'aggregated' },
+    { rawLabel:'Legali e notarili', normalizedCategory:'admin_general_expense', amountNative:-0.05, disclosureLevel:'aggregated' },
+    { rawLabel:'Spese bancarie', normalizedCategory:'admin_general_expense', amountNative:-0.042, disclosureLevel:'aggregated' },
+    { rawLabel:'Compenso collegio sindacale', normalizedCategory:'admin_general_expense', amountNative:-0.012, disclosureLevel:'aggregated' },
+    { rawLabel:'Manutenzioni ordinarie', normalizedCategory:'admin_general_expense', amountNative:-0.01, disclosureLevel:'aggregated' },
+    { rawLabel:'Postelegrafoniche', normalizedCategory:'admin_general_expense', amountNative:-0.001, disclosureLevel:'aggregated' },
+    { rawLabel:'Affitti passivi', normalizedCategory:'admin_general_expense', amountNative:-0.157, disclosureLevel:'aggregated' },
+    { rawLabel:'Affitto stadio Sinigaglia', normalizedCategory:'match_organisation_expense', amountNative:-0.066, disclosureLevel:'aggregated' },
+    { rawLabel:'Canoni leasing operativo', normalizedCategory:'admin_general_expense', amountNative:-0.045, disclosureLevel:'aggregated' },
+    { rawLabel:'Concessione impianti sportivi', normalizedCategory:'match_organisation_expense', amountNative:-0.138, disclosureLevel:'aggregated' },
+    { rawLabel:'Canoni noleggio', normalizedCategory:'admin_general_expense', amountNative:-0.187, disclosureLevel:'aggregated' },
+    { rawLabel:'Salari e stipendi (Tesserati)', normalizedCategory:'wages_squad', amountNative:-29.357, disclosureLevel:'aggregated' },
+    { rawLabel:'Salari e stipendi (Altri)', normalizedCategory:'admin_general_expense', amountNative:-1.035, disclosureLevel:'aggregated' },
+    { rawLabel:'Oneri sociali (Tesserati)', normalizedCategory:'wages_squad', amountNative:-2.276, disclosureLevel:'aggregated' },
+    { rawLabel:'Oneri sociali (Altri)', normalizedCategory:'admin_general_expense', amountNative:-0.457, disclosureLevel:'aggregated' },
+    { rawLabel:'Trattamento di fine rapporto (Tesserati)', normalizedCategory:'wages_squad', amountNative:-0.302, disclosureLevel:'aggregated' },
+    { rawLabel:'Trattamento di fine rapporto (Altri)', normalizedCategory:'admin_general_expense', amountNative:-0.098, disclosureLevel:'aggregated' },
+    { rawLabel:'a) ammortamento delle immobilizzazioni immateriali', normalizedCategory:'player_amortisation', amountNative:-4.74636, disclosureLevel:'aggregated' },
+    { rawLabel:'b) ammortamento delle immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-0.342459, disclosureLevel:'aggregated' },
+    { rawLabel:'c) altre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-0.6034, disclosureLevel:'aggregated' },
+    { rawLabel:'12) Accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-0.175655, disclosureLevel:'aggregated' },
+    { rawLabel:'a) oneri da organizzazione competizioni', normalizedCategory:'match_organisation_expense', amountNative:-0.62777, disclosureLevel:'aggregated' },
+    { rawLabel:'b) costi per acquisizione temporanea prestazione calciatori', normalizedCategory:'other_expenses', amountNative:-0.5, disclosureLevel:'aggregated' },
+    { rawLabel:'c) minusvalenze cessione diritti prestaz.calciatori', normalizedCategory:'exceptional_items', amountNative:-0.585411, disclosureLevel:'aggregated' },
+    { rawLabel:'d) altri oneri da gestione calciatori', normalizedCategory:'other_expenses', amountNative:-0.08825, disclosureLevel:'aggregated' },
+    { rawLabel:'- Spese, ammende e multe gare', normalizedCategory:'other_expenses', amountNative:-0.198, disclosureLevel:'aggregated' },
+    { rawLabel:'- Oneri tributari indiretti', normalizedCategory:'admin_general_expense', amountNative:-0.021, disclosureLevel:'aggregated' },
+    { rawLabel:'- Contributi Lega', normalizedCategory:'match_organisation_expense', amountNative:-0.906, disclosureLevel:'aggregated' },
+    { rawLabel:'- Oneri precedenti esercizi', normalizedCategory:'exceptional_items', amountNative:-0.613, disclosureLevel:'aggregated' },
+    { rawLabel:'- Diversi', normalizedCategory:'other_expenses', amountNative:-0.974, disclosureLevel:'aggregated' },
   ],
 };
 const comoitFiscalYearMeta = {
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 5.213.198. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 568.130. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 360.799. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 1.966.288. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 26.307.897. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 1.633.489. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 80.140.300. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 4.824.772. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 691.136. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 26.618.093. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 176.785. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 4.687.777. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 673.144. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 4.492.695. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 146.607. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (1.862.027). Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (98.887). Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (37.000). Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 0. Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): resultado-final = (105.065.627). Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna "Como 1907" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1907. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 2025. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 2.958.856. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 2.962.219. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.438.174. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 4.671.024. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 5.213.198. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 6.694.132. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 568.130. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 6.168.914. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 2.689.124. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 4.047.920. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 31.781.894. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 880.488. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 5.146.957. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 853.053. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 360.799. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 5.440.013. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 5.190.302. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 610.509. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 55.396.617. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 19.741.233. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 13.092.624. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 62.045.226. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.966.288. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 6.323.293. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.910.724. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 6.378.857. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 26.307.897. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 25.666.810. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 10.555.377. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 41.419.331. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.633.489. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 2.229.730. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 380.000. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 3.483.219. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 80.140.300. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 6.097.750. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 59.221. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 86.178.829. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 4.824.772. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.658.315. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 6.483.088. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 691.136. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 337.058. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.028.195. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 26.618.093. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 206.201. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 26.824.294. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 176.785. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 625.326. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 802.112. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 4.687.777. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 23.514. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 4.711.291. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 204.808. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 182.605. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 66.500. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 673.144. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.020.837. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.693.982. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.542.998. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 2.219.836. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 2.635.726. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 4.492.695. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 960.572. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.037.127. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 6.490.393. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 158.610.937. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 45.603.321. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 11.868.195. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 192.346.063. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 103.214.320. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 25.862.088. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.224.430. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 130.300.838. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 146.607. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 43.691. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 190.298. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.862.027. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.862.381. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 98.887. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 5.031. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 93.856. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.814.307. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 48.369. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 1.765.938. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 37.000. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 10.188.310. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 10.225.310. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 105.065.627. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 36.002.029. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 9.000.880. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): confirmado = 132.066.776. Claude 2026-10-07: tabla pro-forma con encabezados de varias líneas: el texto propio del PDF no la conserva; los importes de la columna Como 1907 cierran con su total impreso (55.396.617 / 158.610.937) y con el resultado (105.065.627)
-  2025: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2025: {
     currency:'EUR', fxRef:'EUR@2025-06-30',
     sourceId:'como-it-gruppo-pro-forma-consolidamento-2025',
     reportType:'official_balance_sheet',
@@ -266,8 +115,7 @@ const comoitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:55.396762, officialTotalExpenses:156.3911, officialPAT:-105.065627,
   },
-  // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (8.695). la sección D (rettifiche di valore) no se extrajo; mismo criterio que Milan 2023-24 y Bologna 2019-20 (D va al financiero)
-  2024: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2024: {
     currency:'EUR', fxRef:'EUR@2024-06-30',
     sourceId:'como-it-fascicolo-bilancio-2024',
     reportType:'official_balance_sheet',
@@ -298,8 +146,6 @@ window.CLUB_GENERIC_DATA['como-it'] = {
   presupuestoOverlayByYear: comoitPresupuestoOverlayByYear,
 };
 
-// Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
-// primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 Object.assign(sources, {
   'como-it-gruppo-pro-forma-consolidamento-2025': {
     id:'como-it-gruppo-pro-forma-consolidamento-2025', clubId:'como-it',

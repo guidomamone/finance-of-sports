@@ -1,607 +1,528 @@
-// ============================================================================
-// data/juventus-it-data.js — Juventus Football Club S.p.A. (Italia).
-// ALTA POR SCRIPT (tools/alta-club.mjs, 2026-10-03), SIN EJERCICIOS CARGADOS TODAVÍA:
-// las estructuras de abajo están vacías a propósito. Los rubros, los totales
-// oficiales y el resto del fiscalYearMeta los agrega la etapa de carga
-// (tools/proponer-carga.mjs / sesión de onboarding), que es también la que
-// reemplaza esta cabecera por la de siempre (fuente, perímetro, categorización).
-//
-// Documento que originó el alta: Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.pdf
-//
-// De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
-//   id                 ok        "juventus-it" — slug de "Juventus" + '-it' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-//   name               ok        "Juventus Football Club S.p.A." — el .md, 3 veces (nombre del club + forma societaria)
-//   displayName        ok        "Juventus" — nombre de la carpeta del club en Clubes/
-//   country            ok        "IT" — carpeta de país "Italia" (tabla PAISES)
-//   reportingCurrency  ok        "EUR" — moneda de curso legal de Italia
-//   fiscalYearStart    ok        "07-01" — cierre del ejercicio: contenido del .md (296 de 310 fechas de fin de mes caen en el mes 6)
-//   sport              ok        "futbol" — el .md nombra el fútbol 140 veces y ningún otro deporte más que eso
-//   brandColor         pendiente (ausente) — la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)
-//   anio               ok        2012 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
-//   cierre             ok        "2012-06-30" — año del ejercicio + mes de cierre (contenido del .md (296 de 310 fechas de fin de mes caen en el mes 6))
-//   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
-//   perimetro          ok        "individual" — el .md no presenta estados consolidados (2 menciones de "consolidado")
-//   currency           ok        "EUR" — moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)
-//   fxRef              ok        "EUR@2012-06-30" — el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 0.794281. --escribir agrega 'EUR@2012-06-30' a FX_CLOSE
-//   sourceId           ok        "juventus-it-annual-financial-report-2011-12" — clubId + nombre del archivo en slug
-//   liga               ok        "it-seriea" — roster cacheado de "2011–12 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Juventus"
-//
-// FISCAL YEAR META PROPUESTO para 2012 (NO registrado: un ejercicio con meta y
-// sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
-//   2012: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2012-06-30","sourceId":"juventus-it-annual-financial-report-2011-12"}
-// ============================================================================
-
 const juventusitRevenueLinesByYear = {
-  // 2012: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2011-12.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2012: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:31.824261, disclosureLevel:'aggregated' }, // pág. 86, Jev 0.99
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:90.581926, disclosureLevel:'aggregated' }, // pág. 86, Jev 1
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:53.452409, disclosureLevel:'aggregated' }, // pág. 86, Jev 1
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:18.433501, disclosureLevel:'aggregated' }, // pág. 86, Jev 0.94
-    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:19.494134, disclosureLevel:'aggregated' }, // pág. 86, Jev 0.98
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:31.824261, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:90.581926, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:53.452409, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:18.433501, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:19.494134, disclosureLevel:'aggregated' },
   ],
-  // 2013: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2012-13.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2012-13.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2013: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:38.051069, disclosureLevel:'aggregated' }, // pág. 79, precedente
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:163.47767, disclosureLevel:'aggregated' }, // pág. 79, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:52.598893, disclosureLevel:'aggregated' }, // pág. 79, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:11.397065, disclosureLevel:'aggregated' }, // pág. 79, precedente
-    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:18.276776, disclosureLevel:'aggregated' }, // pág. 79, precedente
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:38.051069, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:163.47767, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:52.598893, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:11.397065, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:18.276776, disclosureLevel:'aggregated' },
   ],
-  // 2014: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2013-14.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2013-14.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2014: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:40.996209, disclosureLevel:'aggregated' }, // pág. 77, precedente
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:150.965077, disclosureLevel:'aggregated' }, // pág. 77, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:60.29976, disclosureLevel:'aggregated' }, // pág. 77, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:36.431526, disclosureLevel:'aggregated' }, // pág. 77, precedente
-    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:27.090529, disclosureLevel:'aggregated' }, // pág. 77, precedente
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:40.996209, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:150.965077, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:60.29976, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:36.431526, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:27.090529, disclosureLevel:'aggregated' },
   ],
-  // 2015: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2014-15.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2014-15.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2015: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:51.368524, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:194.710818, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:53.755276, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:23.527518, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:24.831749, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Other non-recurring revenues and costs', normalizedCategory:'other_income', amountNative:1.75, disclosureLevel:'aggregated' }, // pág. 69, Jev 0.99
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:51.368524, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:194.710818, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:53.755276, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:23.527518, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:24.831749, disclosureLevel:'aggregated' },
+    { rawLabel:'Other non-recurring revenues and costs', normalizedCategory:'other_income', amountNative:1.75, disclosureLevel:'aggregated' },
   ],
-  // 2016: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2015-16.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2015-16.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2016: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:43.667912, disclosureLevel:'aggregated' }, // pág. 64, precedente
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:194.897031, disclosureLevel:'aggregated' }, // pág. 64, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:70.008038, disclosureLevel:'aggregated' }, // pág. 64, precedente
-    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:13.509887, disclosureLevel:'aggregated' }, // pág. 64, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:46.403703, disclosureLevel:'aggregated' }, // pág. 64, precedente
-    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:19.414202, disclosureLevel:'aggregated' }, // pág. 64, precedente
-    { rawLabel:'Other non-recurring revenues and costs', normalizedCategory:'other_income', amountNative:10.638769, disclosureLevel:'aggregated' }, // pág. 64, precedente
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:43.667912, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:194.897031, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:70.008038, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:13.509887, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:46.403703, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:19.414202, disclosureLevel:'aggregated' },
+    { rawLabel:'Other non-recurring revenues and costs', normalizedCategory:'other_income', amountNative:10.638769, disclosureLevel:'aggregated' },
   ],
-  // 2017: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2016-17.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2016-17.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2017: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:57.835297, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:232.773784, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:74.718794, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:19.198979, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:151.149536, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:27.034664, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Other non-recurring revenues and costs', normalizedCategory:'other_income', amountNative:0.35, disclosureLevel:'aggregated' }, // pág. 68, precedente
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:57.835297, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:232.773784, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:74.718794, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:19.198979, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:151.149536, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:27.034664, disclosureLevel:'aggregated' },
+    { rawLabel:'Other non-recurring revenues and costs', normalizedCategory:'other_income', amountNative:0.35, disclosureLevel:'aggregated' },
   ],
-  // 2018: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2017-18.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2017-18.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2018: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:56.410423, disclosureLevel:'aggregated' }, // pág. 45, precedente
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:200.169142, disclosureLevel:'aggregated' }, // pág. 45, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:86.896999, disclosureLevel:'aggregated' }, // pág. 45, precedente
-    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:27.796591, disclosureLevel:'aggregated' }, // pág. 45, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:102.401466, disclosureLevel:'aggregated' }, // pág. 45, precedente
-    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:30.995269, disclosureLevel:'aggregated' }, // pág. 45, precedente
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:56.410423, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:200.169142, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:86.896999, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:27.796591, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:102.401466, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:30.995269, disclosureLevel:'aggregated' },
   ],
-  // 2020: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2019-20.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2020: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:49.200379, disclosureLevel:'aggregated' }, // pág. 49, precedente
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:166.378556, disclosureLevel:'aggregated' }, // pág. 49, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:129.560768, disclosureLevel:'aggregated' }, // pág. 49, precedente
-    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:31.725193, disclosureLevel:'aggregated' }, // pág. 49, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:172.020621, disclosureLevel:'aggregated' }, // pág. 49, precedente
-    { rawLabel:'Other revenue and income', normalizedCategory:'other_income', amountNative:24.538574, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.99
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:49.200379, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:166.378556, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:129.560768, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:31.725193, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:172.020621, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenue and income', normalizedCategory:'other_income', amountNative:24.538574, disclosureLevel:'aggregated' },
   ],
-  // 2021: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2020-21.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2021: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:7.751571, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:235.310322, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:145.907636, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:25.303332, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:43.179105, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Other revenue and income', normalizedCategory:'other_income', amountNative:21.551574, disclosureLevel:'aggregated' }, // pág. 69, precedente
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:7.751571, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:235.310322, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:145.907636, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:25.303332, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:43.179105, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenue and income', normalizedCategory:'other_income', amountNative:21.551574, disclosureLevel:'aggregated' },
   ],
-  // 2007: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2006-07.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2006-07.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2007: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:7.74397, disclosureLevel:'aggregated' }, // pág. 61, precedente
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:92.995993, disclosureLevel:'aggregated' }, // pág. 61, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:34.497537, disclosureLevel:'aggregated' }, // pág. 61, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:41.531103, disclosureLevel:'aggregated' }, // pág. 61, precedente
-    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:9.917241, disclosureLevel:'aggregated' }, // pág. 61, precedente
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:7.74397, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:92.995993, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:34.497537, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:41.531103, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:9.917241, disclosureLevel:'aggregated' },
   ],
-  // 2009: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2008-09.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2008-09.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2009: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:18.43599, disclosureLevel:'aggregated' }, // pág. 75, precedente
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:150.350568, disclosureLevel:'aggregated' }, // pág. 75, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:46.133442, disclosureLevel:'aggregated' }, // pág. 75, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:17.270843, disclosureLevel:'aggregated' }, // pág. 75, precedente
-    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:8.243297, disclosureLevel:'aggregated' }, // pág. 75, precedente
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:18.43599, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:150.350568, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:46.133442, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:17.270843, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:8.243297, disclosureLevel:'aggregated' },
   ],
-  // 2010: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2009-10.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2009-10.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2010: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:18.471393, disclosureLevel:'aggregated' }, // pág. 62, precedente
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:151.436256, disclosureLevel:'aggregated' }, // pág. 62, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:45.678338, disclosureLevel:'aggregated' }, // pág. 62, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:14.66472, disclosureLevel:'aggregated' }, // pág. 62, precedente
-    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:9.914903, disclosureLevel:'aggregated' }, // pág. 62, precedente
-    { rawLabel:'Other non recurring revenues and costs', normalizedCategory:'other_income', amountNative:3.134187, disclosureLevel:'aggregated' }, // pág. 62, precedente
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:18.471393, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:151.436256, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:45.678338, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:14.66472, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:9.914903, disclosureLevel:'aggregated' },
+    { rawLabel:'Other non recurring revenues and costs', normalizedCategory:'other_income', amountNative:3.134187, disclosureLevel:'aggregated' },
   ],
-  // 2019: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2018-19.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2018-19.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2019: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:70.652591, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:206.642858, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:108.842634, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:44.026765, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:157.186818, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:34.104728, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:70.652591, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:206.642858, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:108.842634, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:44.026765, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:157.186818, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:34.104728, disclosureLevel:'aggregated' },
   ],
-  // 2003: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2002-03.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2003: [
-    { rawLabel:'1) REVENUES FROM SALES AND SERVICES', normalizedCategory:'matchday_competition', amountNative:22.589103, disclosureLevel:'aggregated' }, // pág. 67, precedente
-    { rawLabel:'a) Income from temporary transfer of players', normalizedCategory:'player_sales', amountNative:1.016095, disclosureLevel:'aggregated' }, // pág. 67, Jev 0.98
-    { rawLabel:'e) Other revenues and income', normalizedCategory:'other_income', amountNative:17.21318, disclosureLevel:'aggregated' }, // pág. 67, precedente
-    { rawLabel:'a) capital gains on disposals', normalizedCategory:'player_sales', amountNative:48.013871, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'b) use of reserve art. 25 of the Company By-Laws', normalizedCategory:'other_income', amountNative:0.613289, disclosureLevel:'aggregated' }, // pág. 68, Jev 0.99
-    { rawLabel:'d) others', normalizedCategory:'other_income', amountNative:4.217905, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Official and technical sponsors', normalizedCategory:'sponsorship_commercial', amountNative:32.15, disclosureLevel:'aggregated' }, // pág. 87, Jev 1
-    { rawLabel:'Other sponsorships and other commercial contracts', normalizedCategory:'sponsorship_commercial', amountNative:19.53, disclosureLevel:'aggregated' }, // pág. 87, Jev 0.99
-    { rawLabel:'Television revenues', normalizedCategory:'broadcasting', amountNative:78.201921, disclosureLevel:'aggregated' }, // pág. 87, Jev 1
-    { rawLabel:'TV revenues percentage from visiting team', normalizedCategory:'broadcasting', amountNative:3.488, disclosureLevel:'aggregated' }, // pág. 87, Jev 0.99
-    { rawLabel:'Telephonic rights', normalizedCategory:'broadcasting', amountNative:5.715, disclosureLevel:'aggregated' }, // pág. 87, precedente
-    { rawLabel:'Revenues from U.E.F.A. Champions League', normalizedCategory:'competition_bonus', amountNative:35.009, disclosureLevel:'aggregated' }, // pág. 87, Jev 0.96
-    { rawLabel:'Advertising', normalizedCategory:'sponsorship_commercial', amountNative:0.536, disclosureLevel:'aggregated' }, // pág. 87, Jev 1
-    { rawLabel:'Players\' and coach image rights', normalizedCategory:'sponsorship_commercial', amountNative:2.396, disclosureLevel:'aggregated' }, // pág. 87, precedente
-    { rawLabel:'Sundry income', normalizedCategory:'other_income', amountNative:0.478, disclosureLevel:'aggregated' }, // pág. 87, Jev 0.98
+    { rawLabel:'1) REVENUES FROM SALES AND SERVICES', normalizedCategory:'matchday_competition', amountNative:22.589103, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Income from temporary transfer of players', normalizedCategory:'player_sales', amountNative:1.016095, disclosureLevel:'aggregated' },
+    { rawLabel:'e) Other revenues and income', normalizedCategory:'other_income', amountNative:17.21318, disclosureLevel:'aggregated' },
+    { rawLabel:'a) capital gains on disposals', normalizedCategory:'player_sales', amountNative:48.013871, disclosureLevel:'aggregated' },
+    { rawLabel:'b) use of reserve art. 25 of the Company By-Laws', normalizedCategory:'other_income', amountNative:0.613289, disclosureLevel:'aggregated' },
+    { rawLabel:'d) others', normalizedCategory:'other_income', amountNative:4.217905, disclosureLevel:'aggregated' },
+    { rawLabel:'Official and technical sponsors', normalizedCategory:'sponsorship_commercial', amountNative:32.15, disclosureLevel:'aggregated' },
+    { rawLabel:'Other sponsorships and other commercial contracts', normalizedCategory:'sponsorship_commercial', amountNative:19.53, disclosureLevel:'aggregated' },
+    { rawLabel:'Television revenues', normalizedCategory:'broadcasting', amountNative:78.201921, disclosureLevel:'aggregated' },
+    { rawLabel:'TV revenues percentage from visiting team', normalizedCategory:'broadcasting', amountNative:3.488, disclosureLevel:'aggregated' },
+    { rawLabel:'Telephonic rights', normalizedCategory:'broadcasting', amountNative:5.715, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from U.E.F.A. Champions League', normalizedCategory:'competition_bonus', amountNative:35.009, disclosureLevel:'aggregated' },
+    { rawLabel:'Advertising', normalizedCategory:'sponsorship_commercial', amountNative:0.536, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' and coach image rights', normalizedCategory:'sponsorship_commercial', amountNative:2.396, disclosureLevel:'aggregated' },
+    { rawLabel:'Sundry income', normalizedCategory:'other_income', amountNative:0.478, disclosureLevel:'aggregated' },
   ],
-  // 2004: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2003-04.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2004: [
-    { rawLabel:'1) REVENUES FROM SALES AND SERVICES', normalizedCategory:'matchday_competition', amountNative:17.612596, disclosureLevel:'aggregated' }, // pág. 74, precedente
-    { rawLabel:'a) Income from temporary transfer of players', normalizedCategory:'player_sales', amountNative:0.91, disclosureLevel:'aggregated' }, // pág. 74, Jev 0.98
-    { rawLabel:'e) Other revenues and income', normalizedCategory:'other_income', amountNative:33.125764, disclosureLevel:'aggregated' }, // pág. 74, precedente
-    { rawLabel:'a) capital gains on disposals', normalizedCategory:'player_sales', amountNative:5.043852, disclosureLevel:'aggregated' }, // pág. 75, precedente
-    { rawLabel:'b) use of reserve ex art. 26 of the Company By-Laws', normalizedCategory:'other_income', amountNative:0.215006, disclosureLevel:'aggregated' }, // pág. 75, Jev 0.99
-    { rawLabel:'d) others', normalizedCategory:'other_income', amountNative:0.103318, disclosureLevel:'aggregated' }, // pág. 75, precedente
-    { rawLabel:'Official and technical sponsors', normalizedCategory:'sponsorship_commercial', amountNative:32.578, disclosureLevel:'aggregated' }, // pág. 95, Jev 1
-    { rawLabel:'Other sponsorships and other commercial contracts', normalizedCategory:'sponsorship_commercial', amountNative:17.782, disclosureLevel:'aggregated' }, // pág. 95, Jev 0.99
-    { rawLabel:'Television revenues', normalizedCategory:'broadcasting', amountNative:84.968975, disclosureLevel:'aggregated' }, // pág. 95, Jev 1
-    { rawLabel:'TV revenues percentage from visiting team', normalizedCategory:'broadcasting', amountNative:3.53, disclosureLevel:'aggregated' }, // pág. 95, Jev 0.99
-    { rawLabel:'Telephonic rights', normalizedCategory:'broadcasting', amountNative:6.72, disclosureLevel:'aggregated' }, // pág. 95, precedente
-    { rawLabel:'Revenues from U.E.F.A. Champions League', normalizedCategory:'competition_bonus', amountNative:14.927, disclosureLevel:'aggregated' }, // pág. 95, Jev 0.96
-    { rawLabel:'Advertising', normalizedCategory:'sponsorship_commercial', amountNative:1.052, disclosureLevel:'aggregated' }, // pág. 95, Jev 1
-    { rawLabel:'Players\' and coach image rights', normalizedCategory:'sponsorship_commercial', amountNative:2.353, disclosureLevel:'aggregated' }, // pág. 95, precedente
-    { rawLabel:'Sundry income', normalizedCategory:'other_income', amountNative:0.392, disclosureLevel:'aggregated' }, // pág. 95, Jev 0.98
+    { rawLabel:'1) REVENUES FROM SALES AND SERVICES', normalizedCategory:'matchday_competition', amountNative:17.612596, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Income from temporary transfer of players', normalizedCategory:'player_sales', amountNative:0.91, disclosureLevel:'aggregated' },
+    { rawLabel:'e) Other revenues and income', normalizedCategory:'other_income', amountNative:33.125764, disclosureLevel:'aggregated' },
+    { rawLabel:'a) capital gains on disposals', normalizedCategory:'player_sales', amountNative:5.043852, disclosureLevel:'aggregated' },
+    { rawLabel:'b) use of reserve ex art. 26 of the Company By-Laws', normalizedCategory:'other_income', amountNative:0.215006, disclosureLevel:'aggregated' },
+    { rawLabel:'d) others', normalizedCategory:'other_income', amountNative:0.103318, disclosureLevel:'aggregated' },
+    { rawLabel:'Official and technical sponsors', normalizedCategory:'sponsorship_commercial', amountNative:32.578, disclosureLevel:'aggregated' },
+    { rawLabel:'Other sponsorships and other commercial contracts', normalizedCategory:'sponsorship_commercial', amountNative:17.782, disclosureLevel:'aggregated' },
+    { rawLabel:'Television revenues', normalizedCategory:'broadcasting', amountNative:84.968975, disclosureLevel:'aggregated' },
+    { rawLabel:'TV revenues percentage from visiting team', normalizedCategory:'broadcasting', amountNative:3.53, disclosureLevel:'aggregated' },
+    { rawLabel:'Telephonic rights', normalizedCategory:'broadcasting', amountNative:6.72, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from U.E.F.A. Champions League', normalizedCategory:'competition_bonus', amountNative:14.927, disclosureLevel:'aggregated' },
+    { rawLabel:'Advertising', normalizedCategory:'sponsorship_commercial', amountNative:1.052, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' and coach image rights', normalizedCategory:'sponsorship_commercial', amountNative:2.353, disclosureLevel:'aggregated' },
+    { rawLabel:'Sundry income', normalizedCategory:'other_income', amountNative:0.392, disclosureLevel:'aggregated' },
   ],
-  // 2005: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2004-05.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2004-05.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2005: [
-    { rawLabel:'1) REVENUES FROM SALES AND SERVICES', normalizedCategory:'matchday_competition', amountNative:22.759068, disclosureLevel:'aggregated' }, // pág. 72, precedente
-    { rawLabel:'a) Income from temporary transfer of players', normalizedCategory:'player_sales', amountNative:0.55, disclosureLevel:'aggregated' }, // pág. 72, Jev 0.98
-    { rawLabel:'e) Other revenues and income', normalizedCategory:'other_income', amountNative:24.477168, disclosureLevel:'aggregated' }, // pág. 72, precedente
-    { rawLabel:'a) Capital gains on disposals', normalizedCategory:'player_sales', amountNative:29.16874, disclosureLevel:'aggregated' }, // pág. 73, precedente
-    { rawLabel:'Official and Technical sponsors', normalizedCategory:'sponsorship_commercial', amountNative:38.802, disclosureLevel:'aggregated' }, // pág. 101, Jev 1
-    { rawLabel:'Other sponsorships and other commercial contracts', normalizedCategory:'sponsorship_commercial', amountNative:15.423, disclosureLevel:'aggregated' }, // pág. 101, Jev 0.99
-    { rawLabel:'Television and radio revenues', normalizedCategory:'broadcasting', amountNative:97.847015, disclosureLevel:'aggregated' }, // pág. 101, Jev 1
-    { rawLabel:'TV revenues percentage from other teams', normalizedCategory:'broadcasting', amountNative:3.832, disclosureLevel:'aggregated' }, // pág. 101, Jev 0.96
-    { rawLabel:'Telephone rights', normalizedCategory:'broadcasting', amountNative:7.73, disclosureLevel:'aggregated' }, // pág. 101, precedente
-    { rawLabel:'Revenues from U.E.F.A. Champions League', normalizedCategory:'competition_bonus', amountNative:14.986, disclosureLevel:'aggregated' }, // pág. 101, Jev 0.96
-    { rawLabel:'Advertising', normalizedCategory:'sponsorship_commercial', amountNative:0.99, disclosureLevel:'aggregated' }, // pág. 101, Jev 1
-    { rawLabel:'Technical staff and players\' image rights', normalizedCategory:'sponsorship_commercial', amountNative:2.326, disclosureLevel:'aggregated' }, // pág. 101, precedente
-    { rawLabel:'Sundry income', normalizedCategory:'other_income', amountNative:0.192, disclosureLevel:'aggregated' }, // pág. 101, Jev 0.98
+    { rawLabel:'1) REVENUES FROM SALES AND SERVICES', normalizedCategory:'matchday_competition', amountNative:22.759068, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Income from temporary transfer of players', normalizedCategory:'player_sales', amountNative:0.55, disclosureLevel:'aggregated' },
+    { rawLabel:'e) Other revenues and income', normalizedCategory:'other_income', amountNative:24.477168, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Capital gains on disposals', normalizedCategory:'player_sales', amountNative:29.16874, disclosureLevel:'aggregated' },
+    { rawLabel:'Official and Technical sponsors', normalizedCategory:'sponsorship_commercial', amountNative:38.802, disclosureLevel:'aggregated' },
+    { rawLabel:'Other sponsorships and other commercial contracts', normalizedCategory:'sponsorship_commercial', amountNative:15.423, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio revenues', normalizedCategory:'broadcasting', amountNative:97.847015, disclosureLevel:'aggregated' },
+    { rawLabel:'TV revenues percentage from other teams', normalizedCategory:'broadcasting', amountNative:3.832, disclosureLevel:'aggregated' },
+    { rawLabel:'Telephone rights', normalizedCategory:'broadcasting', amountNative:7.73, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from U.E.F.A. Champions League', normalizedCategory:'competition_bonus', amountNative:14.986, disclosureLevel:'aggregated' },
+    { rawLabel:'Advertising', normalizedCategory:'sponsorship_commercial', amountNative:0.99, disclosureLevel:'aggregated' },
+    { rawLabel:'Technical staff and players\' image rights', normalizedCategory:'sponsorship_commercial', amountNative:2.326, disclosureLevel:'aggregated' },
+    { rawLabel:'Sundry income', normalizedCategory:'other_income', amountNative:0.192, disclosureLevel:'aggregated' },
   ],
-  // 2006: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2005-06.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2006: [
-    { rawLabel:'1) REVENUES FROM SALES AND SERVICES', normalizedCategory:'matchday_competition', amountNative:16.594705, disclosureLevel:'aggregated' }, // pág. 81, precedente
-    { rawLabel:'a) Income from temporary transfer of players', normalizedCategory:'player_sales', amountNative:1.485, disclosureLevel:'aggregated' }, // pág. 81, Jev 0.98
-    { rawLabel:'b) LNP contributions', normalizedCategory:'broadcasting', amountNative:1, disclosureLevel:'aggregated' }, // pág. 81, precedente
-    { rawLabel:'Option rights granted to RTI (Mediaset), TV 2007/08-2008/09', normalizedCategory:'broadcasting', amountNative:30, disclosureLevel:'aggregated' }, // pág. 111, ajuste manual (auditoría 2026-10-04): parte de 'e) Other revenues and income', .md L3133
-    { rawLabel:'e) Other revenues and income (resto)', normalizedCategory:'other_income', amountNative:21.002569, disclosureLevel:'aggregated' }, // pág. 81, ajuste manual: 51.002569 menos los 30 de RTI
-    { rawLabel:'a) Capital gains on disposals', normalizedCategory:'player_sales', amountNative:4.444841, disclosureLevel:'aggregated' }, // pág. 82, precedente
-    { rawLabel:'b) Others', normalizedCategory:'other_income', amountNative:4.871963, disclosureLevel:'aggregated' }, // pág. 82, Jev 0.99
-    { rawLabel:'Official and Technical sponsors', normalizedCategory:'sponsorship_commercial', amountNative:34.47, disclosureLevel:'aggregated' }, // pág. 109, Jev 1
-    { rawLabel:'Other sponsorships and other commercial contracts', normalizedCategory:'sponsorship_commercial', amountNative:17.437, disclosureLevel:'aggregated' }, // pág. 109, Jev 0.99
-    { rawLabel:'Television and radio revenues', normalizedCategory:'broadcasting', amountNative:95.595809, disclosureLevel:'aggregated' }, // pág. 109, Jev 1
-    { rawLabel:'TV revenues percentage from other teams', normalizedCategory:'broadcasting', amountNative:3.967, disclosureLevel:'aggregated' }, // pág. 109, Jev 0.96
-    { rawLabel:'Telephone rights', normalizedCategory:'broadcasting', amountNative:8.735, disclosureLevel:'aggregated' }, // pág. 109, precedente
-    { rawLabel:'Revenues from U.E.F.A. Champions League', normalizedCategory:'competition_bonus', amountNative:18.915, disclosureLevel:'aggregated' }, // pág. 109, Jev 0.96
-    { rawLabel:'Advertising', normalizedCategory:'sponsorship_commercial', amountNative:1.628, disclosureLevel:'aggregated' }, // pág. 109, Jev 1
-    { rawLabel:'Technical staff and players\' image rights', normalizedCategory:'sponsorship_commercial', amountNative:1.731, disclosureLevel:'aggregated' }, // pág. 109, precedente
-    { rawLabel:'Sundry income', normalizedCategory:'other_income', amountNative:0.166, disclosureLevel:'aggregated' }, // pág. 109, Jev 0.98
+    { rawLabel:'1) REVENUES FROM SALES AND SERVICES', normalizedCategory:'matchday_competition', amountNative:16.594705, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Income from temporary transfer of players', normalizedCategory:'player_sales', amountNative:1.485, disclosureLevel:'aggregated' },
+    { rawLabel:'b) LNP contributions', normalizedCategory:'broadcasting', amountNative:1, disclosureLevel:'aggregated' },
+    { rawLabel:'Option rights granted to RTI (Mediaset), TV 2007/08-2008/09', normalizedCategory:'broadcasting', amountNative:30, disclosureLevel:'aggregated' },
+    { rawLabel:'e) Other revenues and income (resto)', normalizedCategory:'other_income', amountNative:21.002569, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Capital gains on disposals', normalizedCategory:'player_sales', amountNative:4.444841, disclosureLevel:'aggregated' },
+    { rawLabel:'b) Others', normalizedCategory:'other_income', amountNative:4.871963, disclosureLevel:'aggregated' },
+    { rawLabel:'Official and Technical sponsors', normalizedCategory:'sponsorship_commercial', amountNative:34.47, disclosureLevel:'aggregated' },
+    { rawLabel:'Other sponsorships and other commercial contracts', normalizedCategory:'sponsorship_commercial', amountNative:17.437, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio revenues', normalizedCategory:'broadcasting', amountNative:95.595809, disclosureLevel:'aggregated' },
+    { rawLabel:'TV revenues percentage from other teams', normalizedCategory:'broadcasting', amountNative:3.967, disclosureLevel:'aggregated' },
+    { rawLabel:'Telephone rights', normalizedCategory:'broadcasting', amountNative:8.735, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from U.E.F.A. Champions League', normalizedCategory:'competition_bonus', amountNative:18.915, disclosureLevel:'aggregated' },
+    { rawLabel:'Advertising', normalizedCategory:'sponsorship_commercial', amountNative:1.628, disclosureLevel:'aggregated' },
+    { rawLabel:'Technical staff and players\' image rights', normalizedCategory:'sponsorship_commercial', amountNative:1.731, disclosureLevel:'aggregated' },
+    { rawLabel:'Sundry income', normalizedCategory:'other_income', amountNative:0.166, disclosureLevel:'aggregated' },
   ],
-  // 2008: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2007-08.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2008: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:13.98013, disclosureLevel:'aggregated' }, // pág. 47, precedente
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:124.249226, disclosureLevel:'aggregated' }, // pág. 47, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:41.172522, disclosureLevel:'aggregated' }, // pág. 47, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:17.129728, disclosureLevel:'aggregated' }, // pág. 47, precedente
-    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:7.200056, disclosureLevel:'aggregated' }, // pág. 47, precedente
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:13.98013, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:124.249226, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:41.172522, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:17.129728, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:7.200056, disclosureLevel:'aggregated' },
   ],
-  // 2011: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2010-11.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2010-11.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2011: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:11.552155, disclosureLevel:'aggregated' }, // pág. 70, precedente
-    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:88.711288, disclosureLevel:'aggregated' }, // pág. 70, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:43.270459, disclosureLevel:'aggregated' }, // pág. 70, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:18.239442, disclosureLevel:'aggregated' }, // pág. 70, precedente
-    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:10.293106, disclosureLevel:'aggregated' }, // pág. 70, precedente
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:11.552155, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:88.711288, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:43.270459, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:18.239442, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:10.293106, disclosureLevel:'aggregated' },
   ],
-  // 2025: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2024-25.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2024-25.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2025: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:65.410993, disclosureLevel:'aggregated' }, // pág. 193, precedente
-    { rawLabel:'Broadcasting revenues', normalizedCategory:'broadcasting', amountNative:177.388791, disclosureLevel:'aggregated' }, // pág. 193, Jev 1
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:105.619021, disclosureLevel:'aggregated' }, // pág. 193, precedente
-    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:10.31347, disclosureLevel:'aggregated' }, // pág. 193, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:109.724534, disclosureLevel:'aggregated' }, // pág. 193, precedente
-    { rawLabel:'Other income', normalizedCategory:'other_income', amountNative:56.215886, disclosureLevel:'aggregated' }, // pág. 193, Jev 0.99
-    { rawLabel:'Change in the fair value of equity investments in joint ventures', normalizedCategory:'other_income', amountNative:1.837205, disclosureLevel:'aggregated' }, // pág. 193, Jev 1
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:65.410993, disclosureLevel:'aggregated' },
+    { rawLabel:'Broadcasting revenues', normalizedCategory:'broadcasting', amountNative:177.388791, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:105.619021, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:10.31347, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:109.724534, disclosureLevel:'aggregated' },
+    { rawLabel:'Other income', normalizedCategory:'other_income', amountNative:56.215886, disclosureLevel:'aggregated' },
+    { rawLabel:'Change in the fair value of equity investments in joint ventures', normalizedCategory:'other_income', amountNative:1.837205, disclosureLevel:'aggregated' },
   ],
-  // 2023: cargado por tools/cargar.mjs (2026-10-04) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2022-23.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2023: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:61.500497, disclosureLevel:'aggregated' }, // pág. 142, precedente
-    { rawLabel:'Audiovisual rights and media revenues', normalizedCategory:'broadcasting', amountNative:157.161351, disclosureLevel:'aggregated' }, // pág. 142, Jev 1
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:150.280938, disclosureLevel:'aggregated' }, // pág. 142, precedente
-    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:28.569824, disclosureLevel:'aggregated' }, // pág. 142, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:70.166506, disclosureLevel:'aggregated' }, // pág. 142, precedente
-    { rawLabel:'Other revenue and income', normalizedCategory:'other_income', amountNative:35.844221, disclosureLevel:'aggregated' }, // pág. 142, precedente
-    { rawLabel:'Share of results of associates and joint ventures', normalizedCategory:'other_income', amountNative:0.157487, disclosureLevel:'aggregated' }, // pág. 142, Jev 1
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:61.500497, disclosureLevel:'aggregated' },
+    { rawLabel:'Audiovisual rights and media revenues', normalizedCategory:'broadcasting', amountNative:157.161351, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:150.280938, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:28.569824, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:70.166506, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenue and income', normalizedCategory:'other_income', amountNative:35.844221, disclosureLevel:'aggregated' },
+    { rawLabel:'Share of results of associates and joint ventures', normalizedCategory:'other_income', amountNative:0.157487, disclosureLevel:'aggregated' },
   ],
-  // 2024: cargado por tools/cargar.mjs (2026-10-04) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2023-24.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2024: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:57.747868, disclosureLevel:'aggregated' }, // pág. 123, precedente
-    { rawLabel:'Audiovisual rights and media revenues', normalizedCategory:'broadcasting', amountNative:99.727971, disclosureLevel:'aggregated' }, // pág. 123, Jev 1
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:132.558275, disclosureLevel:'aggregated' }, // pág. 123, precedente
-    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:27.950406, disclosureLevel:'aggregated' }, // pág. 123, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:34.170085, disclosureLevel:'aggregated' }, // pág. 123, precedente
-    { rawLabel:'Other revenues and income', normalizedCategory:'other_income', amountNative:37.926468, disclosureLevel:'aggregated' }, // pág. 123, precedente
-    { rawLabel:'Share of results of associates and joint ventures', normalizedCategory:'other_income', amountNative:0.460977, disclosureLevel:'aggregated' }, // pág. 123, Jev 1
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:57.747868, disclosureLevel:'aggregated' },
+    { rawLabel:'Audiovisual rights and media revenues', normalizedCategory:'broadcasting', amountNative:99.727971, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:132.558275, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:27.950406, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:34.170085, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues and income', normalizedCategory:'other_income', amountNative:37.926468, disclosureLevel:'aggregated' },
+    { rawLabel:'Share of results of associates and joint ventures', normalizedCategory:'other_income', amountNative:0.460977, disclosureLevel:'aggregated' },
   ],
-  // 2022: cargado por tools/cargar.mjs (2026-10-04) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Juventus/Juventus-annual-financial-report-2021-22.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2022: [
-    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:32.293161, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'Audiovisual rights and media revenues', normalizedCategory:'broadcasting', amountNative:170.517144, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:142.538542, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:24.434746, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:40.78279, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'Other revenues and income', normalizedCategory:'other_income', amountNative:29.398082, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'Share of results of associates and joint ventures', normalizedCategory:'other_income', amountNative:0.087694, disclosureLevel:'aggregated' }, // pág. 136, precedente
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:32.293161, disclosureLevel:'aggregated' },
+    { rawLabel:'Audiovisual rights and media revenues', normalizedCategory:'broadcasting', amountNative:170.517144, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:142.538542, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:24.434746, disclosureLevel:'aggregated' },
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:40.78279, disclosureLevel:'aggregated' },
+    { rawLabel:'Other revenues and income', normalizedCategory:'other_income', amountNative:29.398082, disclosureLevel:'aggregated' },
+    { rawLabel:'Share of results of associates and joint ventures', normalizedCategory:'other_income', amountNative:0.087694, disclosureLevel:'aggregated' },
   ],
 };
 const juventusitExpenseLinesByYear = {
-  2012: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.588125, disclosureLevel:'aggregated' }, // pág. 86, precedente
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-41.162241, disclosureLevel:'aggregated' }, // pág. 86, Jev 1
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-137.131802, disclosureLevel:'aggregated' }, // pág. 86, Jev 1
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-12.959489, disclosureLevel:'aggregated' }, // pág. 86, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-6.297027, disclosureLevel:'aggregated' }, // pág. 86, precedente
-    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-6.179816, disclosureLevel:'aggregated' }, // pág. 86, Jev 1
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-52.304836, disclosureLevel:'aggregated' }, // pág. 86, Jev 0.96
-    { rawLabel:'Amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-6.794484, disclosureLevel:'aggregated' }, // pág. 86, Jev 0.96
-    { rawLabel:'Provisions and other write-downs/reverses and releases', normalizedCategory:'other_amortisation', amountNative:10.443216, disclosureLevel:'aggregated' }, // pág. 86, precedente
+  2012: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.588125, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-41.162241, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-137.131802, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-12.959489, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-6.297027, disclosureLevel:'aggregated' },
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-6.179816, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-52.304836, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-6.794484, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisions and other write-downs/reverses and releases', normalizedCategory:'other_amortisation', amountNative:10.443216, disclosureLevel:'aggregated' },
   ],
-  2013: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.93377, disclosureLevel:'aggregated' }, // pág. 79, precedente
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-45.079682, disclosureLevel:'aggregated' }, // pág. 79, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-149.010399, disclosureLevel:'aggregated' }, // pág. 79, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-14.452797, disclosureLevel:'aggregated' }, // pág. 79, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-5.579779, disclosureLevel:'aggregated' }, // pág. 79, precedente
-    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-10.03385, disclosureLevel:'aggregated' }, // pág. 79, precedente
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-51.414589, disclosureLevel:'aggregated' }, // pág. 79, precedente
-    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-8.291739, disclosureLevel:'aggregated' }, // pág. 79, Jev 0.99
-    { rawLabel:'Provisions and other write-downs/reverses and releases', normalizedCategory:'other_amortisation', amountNative:-0.810874, disclosureLevel:'aggregated' }, // pág. 79, precedente
+  2013: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.93377, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-45.079682, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-149.010399, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-14.452797, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-5.579779, disclosureLevel:'aggregated' },
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-10.03385, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-51.414589, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-8.291739, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisions and other write-downs/reverses and releases', normalizedCategory:'other_amortisation', amountNative:-0.810874, disclosureLevel:'aggregated' },
   ],
-  2014: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.471449, disclosureLevel:'aggregated' }, // pág. 77, precedente
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-47.960673, disclosureLevel:'aggregated' }, // pág. 77, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-167.886939, disclosureLevel:'aggregated' }, // pág. 77, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-16.203836, disclosureLevel:'aggregated' }, // pág. 77, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-3.83044, disclosureLevel:'aggregated' }, // pág. 77, precedente
-    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-7.259174, disclosureLevel:'aggregated' }, // pág. 77, precedente
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-50.845719, disclosureLevel:'aggregated' }, // pág. 77, precedente
-    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-8.216286, disclosureLevel:'aggregated' }, // pág. 77, Jev 0.99
-    { rawLabel:'Provisions and other write-downs/reverses and releases', normalizedCategory:'other_amortisation', amountNative:-1.262567, disclosureLevel:'aggregated' }, // pág. 77, precedente
+  2014: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.471449, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-47.960673, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-167.886939, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-16.203836, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-3.83044, disclosureLevel:'aggregated' },
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-7.259174, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-50.845719, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-8.216286, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisions and other write-downs/reverses and releases', normalizedCategory:'other_amortisation', amountNative:-1.262567, disclosureLevel:'aggregated' },
   ],
-  2015: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.103221, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-45.888195, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-178.839411, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-19.590646, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-7.090063, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-9.343474, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-57.874089, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-8.476726, disclosureLevel:'aggregated' }, // pág. 69, Jev 0.99
-    { rawLabel:'Provisions and other write-downs/reverses and releases', normalizedCategory:'other_amortisation', amountNative:-0.434553, disclosureLevel:'aggregated' }, // pág. 69, precedente
+  2015: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.103221, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-45.888195, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-178.839411, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-19.590646, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-7.090063, disclosureLevel:'aggregated' },
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-9.343474, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-57.874089, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-8.476726, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisions and other write-downs/reverses and releases', normalizedCategory:'other_amortisation', amountNative:-0.434553, disclosureLevel:'aggregated' },
   ],
-  2016: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.380235, disclosureLevel:'aggregated' }, // pág. 64, precedente
-    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-4.344289, disclosureLevel:'aggregated' }, // pág. 64, Jev 0.99
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-51.503546, disclosureLevel:'aggregated' }, // pág. 64, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-197.742952, disclosureLevel:'aggregated' }, // pág. 64, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-23.740893, disclosureLevel:'aggregated' }, // pág. 64, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-10.94084, disclosureLevel:'aggregated' }, // pág. 64, precedente
-    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-8.441139, disclosureLevel:'aggregated' }, // pág. 64, precedente
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-67.046721, disclosureLevel:'aggregated' }, // pág. 64, precedente
-    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-9.28455, disclosureLevel:'aggregated' }, // pág. 64, precedente
-    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-1.9, disclosureLevel:'aggregated' }, // pág. 64, Claude 0.93
-    { rawLabel:'Group\'s share of results of associates and joint ventures', normalizedCategory:'other_expenses', amountNative:-0.661133, disclosureLevel:'aggregated' }, // pág. 64, Jev 0.99
+  2016: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.380235, disclosureLevel:'aggregated' },
+    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-4.344289, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-51.503546, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-197.742952, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-23.740893, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-10.94084, disclosureLevel:'aggregated' },
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-8.441139, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-67.046721, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-9.28455, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-1.9, disclosureLevel:'aggregated' },
+    { rawLabel:'Group\'s share of results of associates and joint ventures', normalizedCategory:'other_expenses', amountNative:-0.661133, disclosureLevel:'aggregated' },
   ],
-  2017: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.979934, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-8.29014, disclosureLevel:'aggregated' }, // pág. 68, Jev 0.99
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-66.578563, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-235.344554, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-26.481657, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-50.492316, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-10.52469, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-82.949776, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-9.934144, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-2.107849, disclosureLevel:'aggregated' }, // pág. 68, Claude 0.93
-    { rawLabel:'Group\'s share of results of associates and *joint ventures', normalizedCategory:'other_expenses', amountNative:-1.266633, disclosureLevel:'aggregated' }, // pág. 68, Jev 0.98
+  2017: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.979934, disclosureLevel:'aggregated' },
+    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-8.29014, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-66.578563, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-235.344554, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-26.481657, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-50.492316, disclosureLevel:'aggregated' },
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-10.52469, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-82.949776, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-9.934144, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-2.107849, disclosureLevel:'aggregated' },
+    { rawLabel:'Group\'s share of results of associates and *joint ventures', normalizedCategory:'other_expenses', amountNative:-1.266633, disclosureLevel:'aggregated' },
   ],
-  2018: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.464062, disclosureLevel:'aggregated' }, // pág. 45, precedente
-    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-11.469144, disclosureLevel:'aggregated' }, // pág. 45, Jev 0.99
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-76.943169, disclosureLevel:'aggregated' }, // pág. 45, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-233.319806, disclosureLevel:'aggregated' }, // pág. 45, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-25.683238, disclosureLevel:'aggregated' }, // pág. 45, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-20.107143, disclosureLevel:'aggregated' }, // pág. 45, precedente
-    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-12.273621, disclosureLevel:'aggregated' }, // pág. 45, precedente
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-107.954427, disclosureLevel:'aggregated' }, // pág. 45, precedente
-    { rawLabel:'Amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-12.525527, disclosureLevel:'aggregated' }, // pág. 45, precedente
-    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-2.363811, disclosureLevel:'aggregated' }, // pág. 45, Claude 0.93
-    { rawLabel:'Group\'s share of results of associates and joint ventures', normalizedCategory:'other_expenses', amountNative:-0.886073, disclosureLevel:'aggregated' }, // pág. 45, Jev 0.99
+  2018: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.464062, disclosureLevel:'aggregated' },
+    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-11.469144, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-76.943169, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-233.319806, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-25.683238, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-20.107143, disclosureLevel:'aggregated' },
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-12.273621, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-107.954427, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-12.525527, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-2.363811, disclosureLevel:'aggregated' },
+    { rawLabel:'Group\'s share of results of associates and joint ventures', normalizedCategory:'other_expenses', amountNative:-0.886073, disclosureLevel:'aggregated' },
   ],
-  2020: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.20779, disclosureLevel:'aggregated' }, // pág. 49, precedente
-    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-12.142221, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.99
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-71.126279, disclosureLevel:'aggregated' }, // pág. 49, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-259.273661, disclosureLevel:'aggregated' }, // pág. 49, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-25.065396, disclosureLevel:'aggregated' }, // pág. 49, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-31.123416, disclosureLevel:'aggregated' }, // pág. 49, precedente
-    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-12.184348, disclosureLevel:'aggregated' }, // pág. 49, precedente
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-193.47591, disclosureLevel:'aggregated' }, // pág. 49, precedente
-    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-17.417474, disclosureLevel:'aggregated' }, // pág. 49, precedente
-    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-15.468313, disclosureLevel:'aggregated' }, // pág. 49, Claude 0.93
-    { rawLabel:'Group\'s share of results of associates and joint ventures', normalizedCategory:'other_expenses', amountNative:-1.107177, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.99
+  2020: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.20779, disclosureLevel:'aggregated' },
+    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-12.142221, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-71.126279, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-259.273661, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-25.065396, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-31.123416, disclosureLevel:'aggregated' },
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-12.184348, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-193.47591, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-17.417474, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-15.468313, disclosureLevel:'aggregated' },
+    { rawLabel:'Group\'s share of results of associates and joint ventures', normalizedCategory:'other_expenses', amountNative:-1.107177, disclosureLevel:'aggregated' },
   ],
-  2021: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.770321, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-11.749404, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-64.010795, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-298.193764, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-23.771876, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-37.328857, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-9.544876, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-197.437118, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-17.437779, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-11.595333, disclosureLevel:'aggregated' }, // pág. 69, precedente
-    { rawLabel:'Share of results of associates and joint ventures', normalizedCategory:'other_expenses', amountNative:-0.196921, disclosureLevel:'aggregated' }, // pág. 69, Jev 0.94
+  2021: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.770321, disclosureLevel:'aggregated' },
+    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-11.749404, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-64.010795, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-298.193764, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-23.771876, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-37.328857, disclosureLevel:'aggregated' },
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-9.544876, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-197.437118, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-17.437779, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-11.595333, disclosureLevel:'aggregated' },
+    { rawLabel:'Share of results of associates and joint ventures', normalizedCategory:'other_expenses', amountNative:-0.196921, disclosureLevel:'aggregated' },
   ],
-  2007: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.159079, disclosureLevel:'aggregated' }, // pág. 61, precedente
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-28.400285, disclosureLevel:'aggregated' }, // pág. 61, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-95.018696, disclosureLevel:'aggregated' }, // pág. 61, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-7.872066, disclosureLevel:'aggregated' }, // pág. 61, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-4.526139, disclosureLevel:'aggregated' }, // pág. 61, precedente
-    { rawLabel:'Other costs', normalizedCategory:'other_expenses', amountNative:-8.420421, disclosureLevel:'aggregated' }, // pág. 61, Jev 0.99
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-22.764546, disclosureLevel:'aggregated' }, // pág. 61, precedente
-    { rawLabel:'Other amortisation, write-downs and provisions', normalizedCategory:'other_amortisation', amountNative:-10.054944, disclosureLevel:'aggregated' }, // pág. 61, Jev 1
+  2007: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.159079, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-28.400285, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-95.018696, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-7.872066, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-4.526139, disclosureLevel:'aggregated' },
+    { rawLabel:'Other costs', normalizedCategory:'other_expenses', amountNative:-8.420421, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-22.764546, disclosureLevel:'aggregated' },
+    { rawLabel:'Other amortisation, write-downs and provisions', normalizedCategory:'other_amortisation', amountNative:-10.054944, disclosureLevel:'aggregated' },
   ],
-  2009: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.299971, disclosureLevel:'aggregated' }, // pág. 75, precedente
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-27.789763, disclosureLevel:'aggregated' }, // pág. 75, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-129.285999, disclosureLevel:'aggregated' }, // pág. 75, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-8.477818, disclosureLevel:'aggregated' }, // pág. 75, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-2.271636, disclosureLevel:'aggregated' }, // pág. 75, precedente
-    { rawLabel:'Other costs', normalizedCategory:'other_expenses', amountNative:-24.053994, disclosureLevel:'aggregated' }, // pág. 75, Jev 0.99
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-28.038586, disclosureLevel:'aggregated' }, // pág. 75, precedente
-    { rawLabel:'Other amortisation, write-downs and provisions', normalizedCategory:'other_amortisation', amountNative:-4.338215, disclosureLevel:'aggregated' }, // pág. 75, Jev 1
+  2009: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.299971, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-27.789763, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-129.285999, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-8.477818, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-2.271636, disclosureLevel:'aggregated' },
+    { rawLabel:'Other costs', normalizedCategory:'other_expenses', amountNative:-24.053994, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-28.038586, disclosureLevel:'aggregated' },
+    { rawLabel:'Other amortisation, write-downs and provisions', normalizedCategory:'other_amortisation', amountNative:-4.338215, disclosureLevel:'aggregated' },
   ],
-  2010: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.246618, disclosureLevel:'aggregated' }, // pág. 62, precedente
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-27.265348, disclosureLevel:'aggregated' }, // pág. 62, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-127.035001, disclosureLevel:'aggregated' }, // pág. 62, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-11.167834, disclosureLevel:'aggregated' }, // pág. 62, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-3.42177, disclosureLevel:'aggregated' }, // pág. 62, precedente
-    { rawLabel:'Other costs', normalizedCategory:'other_expenses', amountNative:-25.352588, disclosureLevel:'aggregated' }, // pág. 62, Jev 0.99
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-39.486912, disclosureLevel:'aggregated' }, // pág. 62, precedente
-    { rawLabel:'Other amortisation, write-downs and provisions', normalizedCategory:'other_amortisation', amountNative:-2.10402, disclosureLevel:'aggregated' }, // pág. 62, Jev 1
+  2010: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.246618, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-27.265348, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-127.035001, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-11.167834, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-3.42177, disclosureLevel:'aggregated' },
+    { rawLabel:'Other costs', normalizedCategory:'other_expenses', amountNative:-25.352588, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-39.486912, disclosureLevel:'aggregated' },
+    { rawLabel:'Other amortisation, write-downs and provisions', normalizedCategory:'other_amortisation', amountNative:-2.10402, disclosureLevel:'aggregated' },
   ],
-  2019: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.733793, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-17.501352, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-81.236433, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-301.334879, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-26.416512, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-15.521017, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-12.717676, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-149.440966, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'Amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-11.722391, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-17.160672, disclosureLevel:'aggregated' }, // pág. 43, precedente
-    { rawLabel:'Group\'s share of results of associates and joint ventures', normalizedCategory:'other_expenses', amountNative:-0.500891, disclosureLevel:'aggregated' }, // pág. 43, precedente
+  2019: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.733793, disclosureLevel:'aggregated' },
+    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-17.501352, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-81.236433, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-301.334879, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-26.416512, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-15.521017, disclosureLevel:'aggregated' },
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-12.717676, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-149.440966, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-11.722391, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-17.160672, disclosureLevel:'aggregated' },
+    { rawLabel:'Group\'s share of results of associates and joint ventures', normalizedCategory:'other_expenses', amountNative:-0.500891, disclosureLevel:'aggregated' },
   ],
-  2003: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'6) PURCHASES', normalizedCategory:'other_expenses', amountNative:-1.926493, disclosureLevel:'aggregated' }, // pág. 67, Jev 0.99
-    { rawLabel:'7) SERVICE EXPENSES', normalizedCategory:'admin_general_expense', amountNative:-29.289936, disclosureLevel:'aggregated' }, // pág. 67, precedente
-    { rawLabel:'8) LEASE AND RENT COSTS', normalizedCategory:'admin_general_expense', amountNative:-12.51283, disclosureLevel:'aggregated' }, // pág. 67, Jev 0.99
-    { rawLabel:'a) Salaries and wages', normalizedCategory:'wages_squad', amountNative:-128.222349, disclosureLevel:'aggregated' }, // pág. 67, Jev 0.98
-    { rawLabel:'b) Social security contributions', normalizedCategory:'wages_squad', amountNative:-2.900048, disclosureLevel:'aggregated' }, // pág. 67, precedente
-    { rawLabel:'c) Severance indemnity', normalizedCategory:'wages_squad', amountNative:-0.570386, disclosureLevel:'aggregated' }, // pág. 67, precedente
-    { rawLabel:'e) Other costs', normalizedCategory:'other_expenses', amountNative:-0.000304, disclosureLevel:'aggregated' }, // pág. 67, Jev 0.99
-    { rawLabel:'a) Amortisation of intangible fixed assets', normalizedCategory:'player_amortisation', amountNative:-61.866923, disclosureLevel:'aggregated' }, // pág. 67, precedente
-    { rawLabel:'b) Depreciation of tangible fixed assets', normalizedCategory:'depreciation', amountNative:-0.550461, disclosureLevel:'aggregated' }, // pág. 67, Jev 1
-    { rawLabel:'d) Write-downs of receivables entered under current assets and cash at bank and in hand', normalizedCategory:'other_amortisation', amountNative:-0.100217, disclosureLevel:'aggregated' }, // pág. 67, precedente
-    { rawLabel:'Other risks', normalizedCategory:'other_expenses', amountNative:-1.224288, disclosureLevel:'aggregated' }, // pág. 67, Jev 0.94
-    { rawLabel:'a) Match organisation expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.435865, disclosureLevel:'aggregated' }, // pág. 67, Jev 1
-    { rawLabel:'b) Official match expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.116913, disclosureLevel:'aggregated' }, // pág. 67, Jev 1
-    { rawLabel:'c) Match registration fees', normalizedCategory:'match_organisation_expense', amountNative:-0.004823, disclosureLevel:'aggregated' }, // pág. 67, Jev 1
-    { rawLabel:'d) Others', normalizedCategory:'other_expenses', amountNative:-22.385241, disclosureLevel:'aggregated' }, // pág. 67, Jev 0.99
-    { rawLabel:'c) of securities entered under current assets other than shareholdings', normalizedCategory:'other_expenses', amountNative:-0.196702, disclosureLevel:'aggregated' }, // pág. 68, Jev 0.94
-    { rawLabel:'a) capital losses on disposals', normalizedCategory:'exceptional_items', amountNative:-2.447425, disclosureLevel:'aggregated' }, // pág. 68, precedente
-    { rawLabel:'c) other extraordinary expenses', normalizedCategory:'exceptional_items', amountNative:-1.469301, disclosureLevel:'aggregated' }, // pág. 68, precedente
+  2003: [
+    { rawLabel:'6) PURCHASES', normalizedCategory:'other_expenses', amountNative:-1.926493, disclosureLevel:'aggregated' },
+    { rawLabel:'7) SERVICE EXPENSES', normalizedCategory:'admin_general_expense', amountNative:-29.289936, disclosureLevel:'aggregated' },
+    { rawLabel:'8) LEASE AND RENT COSTS', normalizedCategory:'admin_general_expense', amountNative:-12.51283, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Salaries and wages', normalizedCategory:'wages_squad', amountNative:-128.222349, disclosureLevel:'aggregated' },
+    { rawLabel:'b) Social security contributions', normalizedCategory:'wages_squad', amountNative:-2.900048, disclosureLevel:'aggregated' },
+    { rawLabel:'c) Severance indemnity', normalizedCategory:'wages_squad', amountNative:-0.570386, disclosureLevel:'aggregated' },
+    { rawLabel:'e) Other costs', normalizedCategory:'other_expenses', amountNative:-0.000304, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Amortisation of intangible fixed assets', normalizedCategory:'player_amortisation', amountNative:-61.866923, disclosureLevel:'aggregated' },
+    { rawLabel:'b) Depreciation of tangible fixed assets', normalizedCategory:'depreciation', amountNative:-0.550461, disclosureLevel:'aggregated' },
+    { rawLabel:'d) Write-downs of receivables entered under current assets and cash at bank and in hand', normalizedCategory:'other_amortisation', amountNative:-0.100217, disclosureLevel:'aggregated' },
+    { rawLabel:'Other risks', normalizedCategory:'other_expenses', amountNative:-1.224288, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Match organisation expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.435865, disclosureLevel:'aggregated' },
+    { rawLabel:'b) Official match expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.116913, disclosureLevel:'aggregated' },
+    { rawLabel:'c) Match registration fees', normalizedCategory:'match_organisation_expense', amountNative:-0.004823, disclosureLevel:'aggregated' },
+    { rawLabel:'d) Others', normalizedCategory:'other_expenses', amountNative:-22.385241, disclosureLevel:'aggregated' },
+    { rawLabel:'c) of securities entered under current assets other than shareholdings', normalizedCategory:'other_expenses', amountNative:-0.196702, disclosureLevel:'aggregated' },
+    { rawLabel:'a) capital losses on disposals', normalizedCategory:'exceptional_items', amountNative:-2.447425, disclosureLevel:'aggregated' },
+    { rawLabel:'c) other extraordinary expenses', normalizedCategory:'exceptional_items', amountNative:-1.469301, disclosureLevel:'aggregated' },
   ],
-  2004: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'6) RAW MATERIALS, SUPPLIES, CONSUMABLES AND GOODS', normalizedCategory:'admin_general_expense', amountNative:-2.889909, disclosureLevel:'aggregated' }, // pág. 74, Claude 0.8
-    { rawLabel:'7) SERVICES', normalizedCategory:'admin_general_expense', amountNative:-24.243997, disclosureLevel:'aggregated' }, // pág. 74, Jev 0.99
-    { rawLabel:'8) LEASES AND RENTALS', normalizedCategory:'admin_general_expense', amountNative:-3.889311, disclosureLevel:'aggregated' }, // pág. 74, Jev 0.99
-    { rawLabel:'a) Salaries and wages', normalizedCategory:'wages_squad', amountNative:-113.70405, disclosureLevel:'aggregated' }, // pág. 74, Jev 0.98
-    { rawLabel:'b) Social security contributions', normalizedCategory:'wages_squad', amountNative:-2.817063, disclosureLevel:'aggregated' }, // pág. 74, precedente
-    { rawLabel:'c) Employees\' severance indemnity', normalizedCategory:'admin_general_expense', amountNative:-0.473703, disclosureLevel:'aggregated' }, // pág. 74, Jev 0.9
-    { rawLabel:'e) Other costs', normalizedCategory:'other_expenses', amountNative:-0.089351, disclosureLevel:'aggregated' }, // pág. 74, Jev 0.99
-    { rawLabel:'a) Amortisation of intangible fixed assets', normalizedCategory:'player_amortisation', amountNative:-64.274145, disclosureLevel:'aggregated' }, // pág. 74, precedente
-    { rawLabel:'b) Depreciation of tangible fixed assets', normalizedCategory:'depreciation', amountNative:-0.92213, disclosureLevel:'aggregated' }, // pág. 74, Jev 1
-    { rawLabel:'d) Write-downs of receivables entered under current assets and cash at bank and in hand', normalizedCategory:'other_amortisation', amountNative:-0.51726, disclosureLevel:'aggregated' }, // pág. 74, precedente
-    { rawLabel:'a) Match organisation expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.172906, disclosureLevel:'aggregated' }, // pág. 74, Jev 1
-    { rawLabel:'b) Official match expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.110419, disclosureLevel:'aggregated' }, // pág. 74, Jev 1
-    { rawLabel:'c) Match registration fees', normalizedCategory:'match_organisation_expense', amountNative:-0.001182, disclosureLevel:'aggregated' }, // pág. 74, Jev 1
-    { rawLabel:'d) Others', normalizedCategory:'other_expenses', amountNative:-20.402008, disclosureLevel:'aggregated' }, // pág. 74, Jev 0.99
-    { rawLabel:'a) capital losses on disposals', normalizedCategory:'exceptional_items', amountNative:-1.314812, disclosureLevel:'aggregated' }, // pág. 75, precedente
-    { rawLabel:'c) others', normalizedCategory:'other_expenses', amountNative:-3.121282, disclosureLevel:'aggregated' }, // pág. 75, Jev 0.99
+  2004: [
+    { rawLabel:'6) RAW MATERIALS, SUPPLIES, CONSUMABLES AND GOODS', normalizedCategory:'admin_general_expense', amountNative:-2.889909, disclosureLevel:'aggregated' },
+    { rawLabel:'7) SERVICES', normalizedCategory:'admin_general_expense', amountNative:-24.243997, disclosureLevel:'aggregated' },
+    { rawLabel:'8) LEASES AND RENTALS', normalizedCategory:'admin_general_expense', amountNative:-3.889311, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Salaries and wages', normalizedCategory:'wages_squad', amountNative:-113.70405, disclosureLevel:'aggregated' },
+    { rawLabel:'b) Social security contributions', normalizedCategory:'wages_squad', amountNative:-2.817063, disclosureLevel:'aggregated' },
+    { rawLabel:'c) Employees\' severance indemnity', normalizedCategory:'admin_general_expense', amountNative:-0.473703, disclosureLevel:'aggregated' },
+    { rawLabel:'e) Other costs', normalizedCategory:'other_expenses', amountNative:-0.089351, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Amortisation of intangible fixed assets', normalizedCategory:'player_amortisation', amountNative:-64.274145, disclosureLevel:'aggregated' },
+    { rawLabel:'b) Depreciation of tangible fixed assets', normalizedCategory:'depreciation', amountNative:-0.92213, disclosureLevel:'aggregated' },
+    { rawLabel:'d) Write-downs of receivables entered under current assets and cash at bank and in hand', normalizedCategory:'other_amortisation', amountNative:-0.51726, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Match organisation expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.172906, disclosureLevel:'aggregated' },
+    { rawLabel:'b) Official match expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.110419, disclosureLevel:'aggregated' },
+    { rawLabel:'c) Match registration fees', normalizedCategory:'match_organisation_expense', amountNative:-0.001182, disclosureLevel:'aggregated' },
+    { rawLabel:'d) Others', normalizedCategory:'other_expenses', amountNative:-20.402008, disclosureLevel:'aggregated' },
+    { rawLabel:'a) capital losses on disposals', normalizedCategory:'exceptional_items', amountNative:-1.314812, disclosureLevel:'aggregated' },
+    { rawLabel:'c) others', normalizedCategory:'other_expenses', amountNative:-3.121282, disclosureLevel:'aggregated' },
   ],
-  2005: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'6) RAW MATERIALS, SUPPLIES, CONSUMABLES AND GOODS', normalizedCategory:'admin_general_expense', amountNative:-2.462348, disclosureLevel:'aggregated' }, // pág. 72, Claude 0.8
-    { rawLabel:'7) SERVICES', normalizedCategory:'admin_general_expense', amountNative:-30.267061, disclosureLevel:'aggregated' }, // pág. 72, Jev 0.99
-    { rawLabel:'8) LEASES AND RENTALS', normalizedCategory:'admin_general_expense', amountNative:-2.055753, disclosureLevel:'aggregated' }, // pág. 72, Jev 0.99
-    { rawLabel:'a) Salaries and wages', normalizedCategory:'wages_squad', amountNative:-123.353107, disclosureLevel:'aggregated' }, // pág. 72, Jev 0.98
-    { rawLabel:'b) Social security contributions', normalizedCategory:'wages_squad', amountNative:-3.193501, disclosureLevel:'aggregated' }, // pág. 72, precedente
-    { rawLabel:'c) Employees\' severance indemnity', normalizedCategory:'admin_general_expense', amountNative:-0.512797, disclosureLevel:'aggregated' }, // pág. 72, Jev 0.9
-    { rawLabel:'e) Other costs', normalizedCategory:'other_expenses', amountNative:-0.097736, disclosureLevel:'aggregated' }, // pág. 72, Jev 0.99
-    { rawLabel:'a) Amortisation of intangible fixed assets', normalizedCategory:'player_amortisation', amountNative:-59.335751, disclosureLevel:'aggregated' }, // pág. 72, precedente
-    { rawLabel:'b) Depreciation of tangible fixed assets', normalizedCategory:'depreciation', amountNative:-1.306504, disclosureLevel:'aggregated' }, // pág. 72, Jev 1
-    { rawLabel:'c) Altre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-3.826242, disclosureLevel:'aggregated' }, // pág. 72, precedente
-    { rawLabel:'d) Write-downs of receivables entered under current assets and cash at bank and in hand', normalizedCategory:'other_amortisation', amountNative:-0.0675, disclosureLevel:'aggregated' }, // pág. 72, precedente
-    { rawLabel:'Other risks', normalizedCategory:'other_expenses', amountNative:-1.5, disclosureLevel:'aggregated' }, // pág. 72, Jev 0.94
-    { rawLabel:'a) Match organisation expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.64081, disclosureLevel:'aggregated' }, // pág. 72, Jev 1
-    { rawLabel:'b) Official match expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.115565, disclosureLevel:'aggregated' }, // pág. 72, Jev 1
-    { rawLabel:'c) Match registration fees', normalizedCategory:'match_organisation_expense', amountNative:-0.001209, disclosureLevel:'aggregated' }, // pág. 72, Jev 1
-    { rawLabel:'d) Others', normalizedCategory:'other_expenses', amountNative:-21.283192, disclosureLevel:'aggregated' }, // pág. 72, Jev 0.99
-    { rawLabel:'a) Capital losses on disposals', normalizedCategory:'exceptional_items', amountNative:-3.451549, disclosureLevel:'aggregated' }, // pág. 73, precedente
-    { rawLabel:'c) Others', normalizedCategory:'other_expenses', amountNative:-0.100745, disclosureLevel:'aggregated' }, // pág. 73, Jev 0.99
+  2005: [
+    { rawLabel:'6) RAW MATERIALS, SUPPLIES, CONSUMABLES AND GOODS', normalizedCategory:'admin_general_expense', amountNative:-2.462348, disclosureLevel:'aggregated' },
+    { rawLabel:'7) SERVICES', normalizedCategory:'admin_general_expense', amountNative:-30.267061, disclosureLevel:'aggregated' },
+    { rawLabel:'8) LEASES AND RENTALS', normalizedCategory:'admin_general_expense', amountNative:-2.055753, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Salaries and wages', normalizedCategory:'wages_squad', amountNative:-123.353107, disclosureLevel:'aggregated' },
+    { rawLabel:'b) Social security contributions', normalizedCategory:'wages_squad', amountNative:-3.193501, disclosureLevel:'aggregated' },
+    { rawLabel:'c) Employees\' severance indemnity', normalizedCategory:'admin_general_expense', amountNative:-0.512797, disclosureLevel:'aggregated' },
+    { rawLabel:'e) Other costs', normalizedCategory:'other_expenses', amountNative:-0.097736, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Amortisation of intangible fixed assets', normalizedCategory:'player_amortisation', amountNative:-59.335751, disclosureLevel:'aggregated' },
+    { rawLabel:'b) Depreciation of tangible fixed assets', normalizedCategory:'depreciation', amountNative:-1.306504, disclosureLevel:'aggregated' },
+    { rawLabel:'c) Altre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-3.826242, disclosureLevel:'aggregated' },
+    { rawLabel:'d) Write-downs of receivables entered under current assets and cash at bank and in hand', normalizedCategory:'other_amortisation', amountNative:-0.0675, disclosureLevel:'aggregated' },
+    { rawLabel:'Other risks', normalizedCategory:'other_expenses', amountNative:-1.5, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Match organisation expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.64081, disclosureLevel:'aggregated' },
+    { rawLabel:'b) Official match expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.115565, disclosureLevel:'aggregated' },
+    { rawLabel:'c) Match registration fees', normalizedCategory:'match_organisation_expense', amountNative:-0.001209, disclosureLevel:'aggregated' },
+    { rawLabel:'d) Others', normalizedCategory:'other_expenses', amountNative:-21.283192, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Capital losses on disposals', normalizedCategory:'exceptional_items', amountNative:-3.451549, disclosureLevel:'aggregated' },
+    { rawLabel:'c) Others', normalizedCategory:'other_expenses', amountNative:-0.100745, disclosureLevel:'aggregated' },
   ],
-  2006: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'6) RAW MATERIALS, SUPPLIES, CONSUMABLES AND GOODS', normalizedCategory:'admin_general_expense', amountNative:-2.923914, disclosureLevel:'aggregated' }, // pág. 81, Claude 0.8
-    { rawLabel:'7) SERVICES', normalizedCategory:'admin_general_expense', amountNative:-33.078357, disclosureLevel:'aggregated' }, // pág. 81, Jev 0.99
-    { rawLabel:'8) LEASES AND RENTALS', normalizedCategory:'admin_general_expense', amountNative:-3.922155, disclosureLevel:'aggregated' }, // pág. 81, Jev 0.99
-    { rawLabel:'a) Salaries and wages', normalizedCategory:'wages_squad', amountNative:-128.245135, disclosureLevel:'aggregated' }, // pág. 81, Jev 0.98
-    { rawLabel:'b) Social security contributions', normalizedCategory:'wages_squad', amountNative:-3.001448, disclosureLevel:'aggregated' }, // pág. 81, precedente
-    { rawLabel:'c) Employees\' severance indemnity', normalizedCategory:'admin_general_expense', amountNative:-0.599339, disclosureLevel:'aggregated' }, // pág. 81, Jev 0.9
-    { rawLabel:'e) Other costs', normalizedCategory:'other_expenses', amountNative:-0.572349, disclosureLevel:'aggregated' }, // pág. 81, Jev 0.99
-    { rawLabel:'a) Amortisation of intangible fixed assets', normalizedCategory:'player_amortisation', amountNative:-57.230754, disclosureLevel:'aggregated' }, // pág. 81, precedente
-    { rawLabel:'b) Depreciation of tangible fixed assets', normalizedCategory:'depreciation', amountNative:-1.123946, disclosureLevel:'aggregated' }, // pág. 81, Jev 1
-    { rawLabel:'c) Other write-downs of assets', normalizedCategory:'player_impairment', amountNative:-12.08581, disclosureLevel:'aggregated' }, // pág. 81, precedente
-    { rawLabel:'d) Write-downs of receivables entered under current assets and cash at bank and in hand', normalizedCategory:'other_amortisation', amountNative:-0.926, disclosureLevel:'aggregated' }, // pág. 81, precedente
-    { rawLabel:'Other risks', normalizedCategory:'other_expenses', amountNative:-12.72, disclosureLevel:'aggregated' }, // pág. 81, Jev 0.94
-    { rawLabel:'a) Match organisation expenses', normalizedCategory:'match_organisation_expense', amountNative:-1.864058, disclosureLevel:'aggregated' }, // pág. 81, Jev 1
-    { rawLabel:'b) Official match expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.119242, disclosureLevel:'aggregated' }, // pág. 81, Jev 1
-    { rawLabel:'c) Match registration fees', normalizedCategory:'match_organisation_expense', amountNative:-0.002805, disclosureLevel:'aggregated' }, // pág. 81, Jev 1
-    { rawLabel:'d) Others', normalizedCategory:'other_expenses', amountNative:-30.397813, disclosureLevel:'aggregated' }, // pág. 81, Jev 0.99
-    { rawLabel:'a) Capital losses on disposals', normalizedCategory:'exceptional_items', amountNative:-2.307167, disclosureLevel:'aggregated' }, // pág. 82, precedente
-    { rawLabel:'c) Others', normalizedCategory:'other_expenses', amountNative:-0.186914, disclosureLevel:'aggregated' }, // pág. 82, Jev 0.99
+  2006: [
+    { rawLabel:'6) RAW MATERIALS, SUPPLIES, CONSUMABLES AND GOODS', normalizedCategory:'admin_general_expense', amountNative:-2.923914, disclosureLevel:'aggregated' },
+    { rawLabel:'7) SERVICES', normalizedCategory:'admin_general_expense', amountNative:-33.078357, disclosureLevel:'aggregated' },
+    { rawLabel:'8) LEASES AND RENTALS', normalizedCategory:'admin_general_expense', amountNative:-3.922155, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Salaries and wages', normalizedCategory:'wages_squad', amountNative:-128.245135, disclosureLevel:'aggregated' },
+    { rawLabel:'b) Social security contributions', normalizedCategory:'wages_squad', amountNative:-3.001448, disclosureLevel:'aggregated' },
+    { rawLabel:'c) Employees\' severance indemnity', normalizedCategory:'admin_general_expense', amountNative:-0.599339, disclosureLevel:'aggregated' },
+    { rawLabel:'e) Other costs', normalizedCategory:'other_expenses', amountNative:-0.572349, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Amortisation of intangible fixed assets', normalizedCategory:'player_amortisation', amountNative:-57.230754, disclosureLevel:'aggregated' },
+    { rawLabel:'b) Depreciation of tangible fixed assets', normalizedCategory:'depreciation', amountNative:-1.123946, disclosureLevel:'aggregated' },
+    { rawLabel:'c) Other write-downs of assets', normalizedCategory:'player_impairment', amountNative:-12.08581, disclosureLevel:'aggregated' },
+    { rawLabel:'d) Write-downs of receivables entered under current assets and cash at bank and in hand', normalizedCategory:'other_amortisation', amountNative:-0.926, disclosureLevel:'aggregated' },
+    { rawLabel:'Other risks', normalizedCategory:'other_expenses', amountNative:-12.72, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Match organisation expenses', normalizedCategory:'match_organisation_expense', amountNative:-1.864058, disclosureLevel:'aggregated' },
+    { rawLabel:'b) Official match expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.119242, disclosureLevel:'aggregated' },
+    { rawLabel:'c) Match registration fees', normalizedCategory:'match_organisation_expense', amountNative:-0.002805, disclosureLevel:'aggregated' },
+    { rawLabel:'d) Others', normalizedCategory:'other_expenses', amountNative:-30.397813, disclosureLevel:'aggregated' },
+    { rawLabel:'a) Capital losses on disposals', normalizedCategory:'exceptional_items', amountNative:-2.307167, disclosureLevel:'aggregated' },
+    { rawLabel:'c) Others', normalizedCategory:'other_expenses', amountNative:-0.186914, disclosureLevel:'aggregated' },
   ],
-  2008: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.408753, disclosureLevel:'aggregated' }, // pág. 47, precedente
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-26.296011, disclosureLevel:'aggregated' }, // pág. 47, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-112.739183, disclosureLevel:'aggregated' }, // pág. 47, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-8.123481, disclosureLevel:'aggregated' }, // pág. 47, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-2.172615, disclosureLevel:'aggregated' }, // pág. 47, precedente
-    { rawLabel:'Other costs', normalizedCategory:'other_expenses', amountNative:-22.743293, disclosureLevel:'aggregated' }, // pág. 47, Jev 0.99
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-32.258847, disclosureLevel:'aggregated' }, // pág. 47, precedente
-    { rawLabel:'Other amortisation, write-downs and provisions', normalizedCategory:'other_amortisation', amountNative:-5.986141, disclosureLevel:'aggregated' }, // pág. 47, Jev 1
-    { rawLabel:'Other non recurring revenues and costs', normalizedCategory:'other_expenses', amountNative:-1.291444, disclosureLevel:'aggregated' }, // pág. 47, precedente
+  2008: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.408753, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-26.296011, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-112.739183, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-8.123481, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-2.172615, disclosureLevel:'aggregated' },
+    { rawLabel:'Other costs', normalizedCategory:'other_expenses', amountNative:-22.743293, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-32.258847, disclosureLevel:'aggregated' },
+    { rawLabel:'Other amortisation, write-downs and provisions', normalizedCategory:'other_amortisation', amountNative:-5.986141, disclosureLevel:'aggregated' },
+    { rawLabel:'Other non recurring revenues and costs', normalizedCategory:'other_expenses', amountNative:-1.291444, disclosureLevel:'aggregated' },
   ],
-  2011: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.398277, disclosureLevel:'aggregated' }, // pág. 70, precedente
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-33.569182, disclosureLevel:'aggregated' }, // pág. 70, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-126.920625, disclosureLevel:'aggregated' }, // pág. 70, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-12.733196, disclosureLevel:'aggregated' }, // pág. 70, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-16.171234, disclosureLevel:'aggregated' }, // pág. 70, precedente
-    { rawLabel:'Other costs', normalizedCategory:'other_expenses', amountNative:-4.50583, disclosureLevel:'aggregated' }, // pág. 70, Jev 0.99
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-46.744888, disclosureLevel:'aggregated' }, // pág. 70, precedente
-    { rawLabel:'Other amortisation, provisions and release of provisions', normalizedCategory:'other_amortisation', amountNative:-13.813322, disclosureLevel:'aggregated' }, // pág. 70, Jev 0.99
-    { rawLabel:'Other non recurring revenues and costs', normalizedCategory:'other_expenses', amountNative:-7.364688, disclosureLevel:'aggregated' }, // pág. 70, precedente
+  2011: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.398277, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-33.569182, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-126.920625, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-12.733196, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-16.171234, disclosureLevel:'aggregated' },
+    { rawLabel:'Other costs', normalizedCategory:'other_expenses', amountNative:-4.50583, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-46.744888, disclosureLevel:'aggregated' },
+    { rawLabel:'Other amortisation, provisions and release of provisions', normalizedCategory:'other_amortisation', amountNative:-13.813322, disclosureLevel:'aggregated' },
+    { rawLabel:'Other non recurring revenues and costs', normalizedCategory:'other_expenses', amountNative:-7.364688, disclosureLevel:'aggregated' },
   ],
-  2025: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Cost of raw materials and other consumables', normalizedCategory:'admin_general_expense', amountNative:-4.588252, disclosureLevel:'aggregated' }, // pág. 193, Claude 0.85
-    { rawLabel:'Cost of goods for sale', normalizedCategory:'other_expenses', amountNative:-1.583172, disclosureLevel:'aggregated' }, // pág. 193, Jev 0.98
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-95.001543, disclosureLevel:'aggregated' }, // pág. 193, precedente
-    { rawLabel:'Registered players and technical staff', normalizedCategory:'wages_squad', amountNative:-220.268725, disclosureLevel:'aggregated' }, // pág. 193, Jev 0.92
-    { rawLabel:'Other personnel expenses', normalizedCategory:'admin_general_expense', amountNative:-22.702276, disclosureLevel:'aggregated' }, // pág. 193, Claude 0.92
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-43.770967, disclosureLevel:'aggregated' }, // pág. 193, precedente
-    { rawLabel:'Other operating expenses', normalizedCategory:'other_expenses', amountNative:-15.466314, disclosureLevel:'aggregated' }, // pág. 193, Jev 1
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-124.931543, disclosureLevel:'aggregated' }, // pág. 193, precedente
-    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-10.046757, disclosureLevel:'aggregated' }, // pág. 193, precedente
-    { rawLabel:'Provisions, other impairments/reversals and releases of provisions', normalizedCategory:'other_amortisation', amountNative:-16.765822, disclosureLevel:'aggregated' }, // pág. 193, Jev 0.93
-    { rawLabel:'Equity-accounted profit (loss) of associates', normalizedCategory:'other_expenses', amountNative:-0.00247, disclosureLevel:'aggregated' }, // pág. 193, Claude 0.88
+  2025: [
+    { rawLabel:'Cost of raw materials and other consumables', normalizedCategory:'admin_general_expense', amountNative:-4.588252, disclosureLevel:'aggregated' },
+    { rawLabel:'Cost of goods for sale', normalizedCategory:'other_expenses', amountNative:-1.583172, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-95.001543, disclosureLevel:'aggregated' },
+    { rawLabel:'Registered players and technical staff', normalizedCategory:'wages_squad', amountNative:-220.268725, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel expenses', normalizedCategory:'admin_general_expense', amountNative:-22.702276, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-43.770967, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating expenses', normalizedCategory:'other_expenses', amountNative:-15.466314, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-124.931543, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-10.046757, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisions, other impairments/reversals and releases of provisions', normalizedCategory:'other_amortisation', amountNative:-16.765822, disclosureLevel:'aggregated' },
+    { rawLabel:'Equity-accounted profit (loss) of associates', normalizedCategory:'other_expenses', amountNative:-0.00247, disclosureLevel:'aggregated' },
   ],
-  2023: [ // tools/cargar.mjs (2026-10-04)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.990748, disclosureLevel:'aggregated' }, // pág. 142, precedente
-    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-11.515611, disclosureLevel:'aggregated' }, // pág. 142, precedente
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-94.520409, disclosureLevel:'aggregated' }, // pág. 142, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-255.358523, disclosureLevel:'aggregated' }, // pág. 142, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-25.379144, disclosureLevel:'aggregated' }, // pág. 142, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-12.043215, disclosureLevel:'aggregated' }, // pág. 142, precedente
-    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-22.675515, disclosureLevel:'aggregated' }, // pág. 142, precedente
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-159.134997, disclosureLevel:'aggregated' }, // pág. 142, precedente
-    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-12.380303, disclosureLevel:'aggregated' }, // pág. 142, precedente
-    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-5.691459, disclosureLevel:'aggregated' }, // pág. 142, precedente
+  2023: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.990748, disclosureLevel:'aggregated' },
+    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-11.515611, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-94.520409, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-255.358523, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-25.379144, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-12.043215, disclosureLevel:'aggregated' },
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-22.675515, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-159.134997, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-12.380303, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-5.691459, disclosureLevel:'aggregated' },
   ],
-  2024: [ // tools/cargar.mjs (2026-10-04)
-    { rawLabel:'Purchases of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-4.291393, disclosureLevel:'aggregated' }, // pág. 123, precedente
-    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-13.722398, disclosureLevel:'aggregated' }, // pág. 123, precedente
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-81.487658, disclosureLevel:'aggregated' }, // pág. 123, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-239.03938, disclosureLevel:'aggregated' }, // pág. 123, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-23.445034, disclosureLevel:'aggregated' }, // pág. 123, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-22.214748, disclosureLevel:'aggregated' }, // pág. 123, precedente
-    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-13.705941, disclosureLevel:'aggregated' }, // pág. 123, precedente
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-139.140296, disclosureLevel:'aggregated' }, // pág. 123, precedente
-    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-11.140365, disclosureLevel:'aggregated' }, // pág. 123, precedente
-    { rawLabel:'Provisions and other write-downs/reverses and releases of funds', normalizedCategory:'other_amortisation', amountNative:-17.465991, disclosureLevel:'aggregated' }, // pág. 123, Jev 1
+  2024: [
+    { rawLabel:'Purchases of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-4.291393, disclosureLevel:'aggregated' },
+    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-13.722398, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-81.487658, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-239.03938, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-23.445034, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-22.214748, disclosureLevel:'aggregated' },
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-13.705941, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-139.140296, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-11.140365, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisions and other write-downs/reverses and releases of funds', normalizedCategory:'other_amortisation', amountNative:-17.465991, disclosureLevel:'aggregated' },
   ],
-  2022: [ // tools/cargar.mjs (2026-10-04)
-    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.489368, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-8.904961, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-74.237041, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-310.82451, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-24.934326, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-31.853535, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-12.086153, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-173.360643, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-14.594215, disclosureLevel:'aggregated' }, // pág. 136, precedente
-    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-6.44871, disclosureLevel:'aggregated' }, // pág. 136, precedente
+  2022: [
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.489368, disclosureLevel:'aggregated' },
+    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-8.904961, disclosureLevel:'aggregated' },
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-74.237041, disclosureLevel:'aggregated' },
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-310.82451, disclosureLevel:'aggregated' },
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-24.934326, disclosureLevel:'aggregated' },
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-31.853535, disclosureLevel:'aggregated' },
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-12.086153, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-173.360643, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-14.594215, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-6.44871, disclosureLevel:'aggregated' },
   ],
 };
 const juventusitFiscalYearMeta = {
-  2012: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2012: {
     currency:'EUR', fxRef:'EUR@2012-06-30',
     sourceId:'juventus-it-annual-financial-report-2011-12',
     reportType:'official_balance_sheet',
@@ -614,12 +535,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-3.788628},
       {label:'Deferred taxes', value:1.052707},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 83
-    // caja/deuda 2012: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:131.692117, cash:0.65365,
     officialTotalRevenue:213.786231, officialTotalExpenses:254.974604, officialPAT:-48.65455,
   },
-  2013: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2013: {
     currency:'EUR', fxRef:'EUR@2013-06-30',
     sourceId:'juventus-it-annual-financial-report-2012-13',
     reportType:'official_balance_sheet',
@@ -632,12 +551,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-5.924068},
       {label:'Deferred taxes', value:0.928417},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 76
-    // caja/deuda 2013: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:165.48985, cash:1.777036,
     officialTotalRevenue:283.801473, officialTotalExpenses:287.607479, officialPAT:-15.910649,
   },
-  2014: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2014: {
     currency:'EUR', fxRef:'EUR@2014-06-30',
     sourceId:'juventus-it-annual-financial-report-2013-14',
     reportType:'official_balance_sheet',
@@ -650,12 +567,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-7.20472},
       {label:'Deferred taxes', value:0.383825},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 74
-    // caja/deuda 2014: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:211.254424, cash:1.586969,
     officialTotalRevenue:315.783101, officialTotalExpenses:306.937083, officialPAT:-6.67443,
   },
-  2015: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2015: {
     currency:'EUR', fxRef:'EUR@2015-06-30',
     sourceId:'juventus-it-annual-financial-report-2014-15',
     reportType:'official_balance_sheet',
@@ -668,12 +583,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-7.992976},
       {label:'Deferred taxes', value:-0.516666},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 66
-    // caja/deuda 2015: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:195.900802, cash:3.126754,
     officialTotalRevenue:349.943885, officialTotalExpenses:330.640378, officialPAT:2.298263,
   },
-  2016: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2016: {
     currency:'EUR', fxRef:'EUR@2016-06-30',
     sourceId:'juventus-it-annual-financial-report-2015-16',
     reportType:'official_balance_sheet',
@@ -686,12 +599,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-8.431039},
       {label:'Deferred taxes', value:0.885383},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 61
-    // caja/deuda 2016: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:232.088203, cash:28.618353,
     officialTotalRevenue:398.539542, officialTotalExpenses:378.986298, officialPAT:4.062312,
   },
-  2017: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2017: {
     currency:'EUR', fxRef:'EUR@2017-06-30',
     sourceId:'juventus-it-annual-financial-report-2016-17',
     reportType:'official_balance_sheet',
@@ -704,12 +615,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-11.363921},
       {label:'Deferred taxes', value:-4.482874},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 65
-    // caja/deuda 2017: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:306.600435, cash:139.996455,
     officialTotalRevenue:563.061054, officialTotalExpenses:496.950256, officialPAT:42.567924,
   },
-  2018: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2018: {
     currency:'EUR', fxRef:'EUR@2018-06-30',
     sourceId:'juventus-it-annual-financial-report-2017-18',
     reportType:'official_balance_sheet',
@@ -722,12 +631,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-8.820346},
       {label:'Deferred taxes', value:-0.385923},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 42
-    // caja/deuda 2018: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:329.200221, cash:15.335208,
     officialTotalRevenue:504.66989, officialTotalExpenses:506.990021, officialPAT:-19.228819,
   },
-  2020: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2020: {
     currency:'EUR', fxRef:'EUR@2020-06-30',
     sourceId:'juventus-it-annual-financial-report-2019-20',
     reportType:'official_balance_sheet',
@@ -740,13 +647,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-7.971802},
       {label:'Deferred and prepaid taxes', value:-0.05321},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 2 (compuerta: año anterior): "Cash and cash equivalents" pág. 46
-    // caja/deuda 2020: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:395.956205, cash:5.917079,
     officialTotalRevenue:573.424091, officialTotalExpenses:641.591985, officialPAT:-89.682106,
   },
-  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe; '(0,157)' se leía como 157 €
-  2021: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2021: {
     currency:'EUR', fxRef:'EUR@2021-06-30',
     sourceId:'juventus-it-annual-financial-report-2020-21',
     reportType:'official_balance_sheet',
@@ -759,12 +663,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-2.967812},
       {label:'Deferred and prepaid taxes', value:0.628027},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
-    // caja/deuda 2021: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:382.402644, cash:10.077958,
     officialTotalRevenue:479.00354, officialTotalExpenses:675.037044, officialPAT:-209.51375,
   },
-  2007: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2007: {
     currency:'EUR', fxRef:'EUR@2007-06-30',
     sourceId:'juventus-it-annual-financial-report-2006-07',
     reportType:'official_balance_sheet',
@@ -777,12 +679,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-3.848013},
       {label:'Deferred and prepaid taxes', value:-1.265964},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
-    // caja/deuda 2007: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:18.712257, cash:40.460847,
     officialTotalRevenue:186.685844, officialTotalExpenses:180.216176, officialPAT:-0.927569,
   },
-  2009: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2009: {
     currency:'EUR', fxRef:'EUR@2009-06-30',
     sourceId:'juventus-it-annual-financial-report-2008-09',
     reportType:'official_balance_sheet',
@@ -795,12 +695,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-5.517771},
       {label:'Deferred taxes', value:-1.306834},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 73
-    // caja/deuda 2009: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:16.592999, cash:42.063414,
     officialTotalRevenue:240.43414, officialTotalExpenses:226.555982, officialPAT:6.582489,
   },
-  2010: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2010: {
     currency:'EUR', fxRef:'EUR@2010-06-30',
     sourceId:'juventus-it-annual-financial-report-2009-10',
     reportType:'official_balance_sheet',
@@ -813,13 +711,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-5.544717},
       {label:'Deferred taxes', value:-7.499068},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 60
-    // caja/deuda 2010: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:32.293943, cash:37.253757,
     officialTotalRevenue:243.299797, officialTotalExpenses:238.080091, officialPAT:-10.967944,
   },
-  // 2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe del estado; '(0,040)' se leía como 40 €
-  2019: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2019: {
     currency:'EUR', fxRef:'EUR@2019-06-30',
     sourceId:'juventus-it-annual-financial-report-2018-19',
     reportType:'official_balance_sheet',
@@ -832,28 +727,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-11.738088},
       {label:'Deferred taxes', value:-1.259871},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
-    // caja/deuda 2019: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:473.218889, cash:9.744722,
     officialTotalRevenue:621.456394, officialTotalExpenses:637.286582, officialPAT:-39.895794,
   },
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -670,013. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 196,702. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 48,013,871. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 613,289. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 4,217,905. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 2,447,425. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1,469,301. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 32150000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2806)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 19530000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2807)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 78201921. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2808) (incluye -79 € de redondeo de la nota en miles)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3488000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2809)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 5715000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2810)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 35009000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2811)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 536000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2813)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 2396000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2814)
-  // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 478000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2815)
-  2003: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2003: {
     currency:'EUR', fxRef:'EUR@2003-06-30',
     sourceId:'juventus-it-annual-financial-report-2002-03',
     reportType:'official_balance_sheet',
@@ -869,26 +746,10 @@ const juventusitFiscalYearMeta = {
       {label:'d) from others', value:-0.670013},
       {label:'22) INCOME TAXES', value:-7.392658},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
     grossDebt:null, cash:67.198129,
     officialTotalRevenue:271.167364, officialTotalExpenses:262.303779, officialPAT:2.15006,
   },
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -3,026,244. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 5,043,852. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 215,006. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 103,318. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1,314,812. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3,121,282. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 32578000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3396)
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 17782000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3397)
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 84968975. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3398) (incluye -25 € de redondeo de la nota en miles)
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3530000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3399)
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 6720000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3400)
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 14927000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3401)
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1052000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3402)
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 2353000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3403)
-  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 392000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3404)
-  2004: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2004: {
     currency:'EUR', fxRef:'EUR@2004-06-30',
     sourceId:'juventus-it-annual-financial-report-2003-04',
     reportType:'official_balance_sheet',
@@ -904,25 +765,10 @@ const juventusitFiscalYearMeta = {
       {label:'a) current taxes', value:-5.727157},
       {label:'b) deferred taxes', value:7.238419},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
     grossDebt:null, cash:51.101966,
     officialTotalRevenue:221.313511, officialTotalExpenses:237.628716, officialPAT:-18.459155,
   },
-  // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -148,861. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-  // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -1,585,619. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-  // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 29,168,740. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-  // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3,451,549. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-  // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 100,745. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-  // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 38802000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2804)
-  // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 15423000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2805)
-  // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 97847015. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2806) (incluye 15 € de redondeo de la nota en miles)
-  // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3832000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2807)
-  // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 7730000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2808)
-  // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 14986000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2809)
-  // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 990000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2810)
-  // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 2326000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2811)
-  // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 192000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2812)
-  2005: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2005: {
     currency:'EUR', fxRef:'EUR@2005-06-30',
     sourceId:'juventus-it-annual-financial-report-2004-05',
     reportType:'official_balance_sheet',
@@ -940,22 +786,10 @@ const juventusitFiscalYearMeta = {
       {label:'b) Deferred taxes', value:3.769198},
       {label:'c) Prepaid taxes', value:-6.604863},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): grossDebt escalón 2 (compuerta: documento siguiente): "4) Due to banks" pág. 70; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
     grossDebt:24.973807, cash:6.53872,
     officialTotalRevenue:259.082991, officialTotalExpenses:250.119821, officialPAT:-3.015954,
   },
-  // 2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -270,216. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-  // 2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -3,386,350. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
-  // 2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 34470000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3074)
-  // 2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 17437000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3075)
-  // 2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 95595809. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3076) (incluye -191 € de redondeo de la nota en miles)
-  // 2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3967000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3077)
-  // 2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 8735000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3078)
-  // 2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 18915000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3079)
-  // 2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1628000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3080)
-  // 2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1731000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3081)
-  // 2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 166000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3082)
-  2006: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2006: {
     currency:'EUR', fxRef:'EUR@2006-06-30',
     sourceId:'juventus-it-annual-financial-report-2005-06',
     reportType:'official_balance_sheet',
@@ -973,11 +807,10 @@ const juventusitFiscalYearMeta = {
       {label:'b) Deferred taxes', value:12.172514},
       {label:'c) Prepaid taxes', value:-10.099504},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): grossDebt escalón 2 (compuerta: año anterior): "4) Due to banks" pág. 79; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
     grossDebt:14.927923, cash:0.202266,
     officialTotalRevenue:262.043887, officialTotalExpenses:289.000039, officialPAT:-36.48023,
   },
-  2008: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2008: {
     currency:'EUR', fxRef:'EUR@2008-06-30',
     sourceId:'juventus-it-annual-financial-report-2007-08',
     reportType:'official_balance_sheet',
@@ -990,12 +823,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-4.339172},
       {label:'Deferred taxes', value:-7.032003},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
-    // caja/deuda 2008: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:17.509964, cash:28.104289,
     officialTotalRevenue:203.731662, officialTotalExpenses:214.019768, officialPAT:-20.787469,
   },
-  2011: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2011: {
     currency:'EUR', fxRef:'EUR@2011-06-30',
     sourceId:'juventus-it-annual-financial-report-2010-11',
     reportType:'official_balance_sheet',
@@ -1008,12 +839,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-2.766491},
       {label:'Deferred taxes', value:1.11905},
     ],
-    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 68
-    // caja/deuda 2011: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:123.88332, cash:0.760587,
     officialTotalRevenue:172.06645, officialTotalExpenses:264.221242, officialPAT:-95.414019,
   },
-  2025: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2025: {
     currency:'EUR', fxRef:'EUR@2025-06-30',
     sourceId:'juventus-it-annual-financial-report-2024-25',
     reportType:'official_balance_sheet',
@@ -1026,12 +855,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-8.007641},
       {label:'Deferred taxes', value:-0.131821},
     ],
-    // caja/deuda 2025: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:331.295303, cash:36.004033,
     officialTotalRevenue:526.5099, officialTotalExpenses:555.127841, officialPAT:-56.962102,
   },
-  // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe
-  2023: { // tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2023: {
     currency:'EUR', fxRef:'EUR@2023-06-30',
     sourceId:'juventus-it-annual-financial-report-2022-23',
     reportType:'official_balance_sheet',
@@ -1044,13 +871,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-6.583716},
       {label:'Deferred and prepaid taxes', value:0.215795},
     ],
-    // caja 2023: corregida a mano el 2026-10-04 (Guido): "Cash and cash equivalents" 48,389,386 del balance SEPARADO (.md L4800); caja-deuda.mjs había tomado el consolidado (pág. 53, L1504, 48,676,632). 2003-2006: caja y deuda divididas por 1.000 (caja-deuda leyó esos documentos en miles por las filas de la nota de sponsors abiertas a mano).
-    // caja/deuda 2023: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:375.882071, cash:48.389386,
     officialTotalRevenue:503.680824, officialTotalExpenses:602.689924, officialPAT:-123.294245,
   },
-  // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe
-  2024: { // tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2024: {
     currency:'EUR', fxRef:'EUR@2024-06-30',
     sourceId:'juventus-it-annual-financial-report-2023-24',
     reportType:'official_balance_sheet',
@@ -1063,40 +887,10 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-3.117744},
       {label:'Deferred tax assets and liabilities', value:-0.131357},
     ],
-    // caja/deuda 2024: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:269.16637, cash:35.750313,
     officialTotalRevenue:390.54205, officialTotalExpenses:565.653204, officialPAT:-199.173045,
   },
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 24,541. Guido 2026-10-04: número de una NOTA (b133, pág. 172) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2019. Guido 2026-10-04: número de una NOTA (b133, pág. 172) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 28,838. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 12,123. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 10,495. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,925. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,603. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,129. Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2,560. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,355. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,205. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,897. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,600. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,835. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,588. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2,250. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,530. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2,980. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,450. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 1,129. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 5,123. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 4,927. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 74,237. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 64,011. Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 12,086. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 9,545. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2,541. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2021. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): confirmado = 2020. Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro
-  2022: { // tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2022: {
     currency:'EUR', fxRef:'EUR@2022-06-30',
     sourceId:'juventus-it-annual-financial-report-2021-22',
     reportType:'official_balance_sheet',
@@ -1109,7 +903,6 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-2.564904},
       {label:'Deferred and prepaid taxes', value:0.666785},
     ],
-    // caja/deuda 2022: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
     grossDebt:208.667731, cash:69.654833,
     officialTotalRevenue:440.052159, officialTotalExpenses:660.733462, officialPAT:-238.137095,
   },
@@ -1128,8 +921,6 @@ window.CLUB_GENERIC_DATA['juventus-it'] = {
   presupuestoOverlayByYear: juventusitPresupuestoOverlayByYear,
 };
 
-// Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
-// primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 Object.assign(sources, {
   'juventus-it-annual-financial-report-2011-12': {
     id:'juventus-it-annual-financial-report-2011-12', clubId:'juventus-it',
