@@ -1,65 +1,3 @@
-// ============================================================================
-// data/estudianteslp-data.js — Club Estudiantes de La Plata: 9no club del motor genérico. 4
-// ejercicios consecutivos cargados: 2022, 2023, 2024, 2025 (30/6 de cada año), todos balances
-// auditados reales, texto nativo (Becher y Asociados S.R.L.). PDF + transcripción en
-// Clubes/Argentina/Estudiantes LP/memoria-y-balance-{2021-2022,2022-2023,2023-2024,2024-2025}.
-// {pdf,md}. El 4to (2024-2025) es un escaneo sin capa de texto (127 páginas) — transcripto vía OCR
-// (Tesseract, 300dpi); a diferencia de otros clubes esta sesión, sus 2 Anexos clave (Recursos-
-// Resultados por Sectores / Gastos) resultaron ser tablas grandes pero NÍTIDAS en el escaneo — se
-// verificaron visualmente contra la imagen renderizada (no solo el texto OCR crudo, que salía
-// bastante ruidoso en esta tabla en particular) antes de cargar.
-//
-// 2025 — Estructura NUEVA respecto a 2022-2024: el eje de fútbol ahora tiene "Fútbol - Plantel
-// profesional" como columna SEPARADA (antes esa economía de pases vivía dentro de "Fútbol -
-// Exhibición y espectáculos") — el club separó explícitamente transferencias/pases de la operación
-// de partidos este ejercicio. Se cargó con el mismo criterio de siempre: cada rubro por su
-// NATURALEZA (no por la columna de departamento en la que aparece), "Sueldos y jornales"/"Cargas
-// sociales" son los únicos 2 rubros que sí se reparten por columna (Fútbol - Exhibición y
-// espectáculos → wages_squad, resto de columnas sumadas → youth_other_sports_expense). DÉFICIT
-// real: $(14.277.112.789) ARS — primer déficit del club en los 4 ejercicios cargados.
-//
-// Estructura (Anexo V "Recursos-Resultados por Sectores" / Anexo VI "Gastos"): igual mecanismo de
-// columna-por-sector que Vélez/Instituto/Rosario Central, pero acá el eje de fútbol se separa en
-// "Fútbol - Plantel profesional" (economía de pases: transferencias, revaluación de jugadores,
-// amortización acelerada) vs. "Fútbol - Exhibición y espectáculos" (operación de partidos: sueldos,
-// TV, publicidad, entradas) — DISTINTO de Vélez/Instituto, que usan una sola columna "Fútbol
-// Profesional" para todo. Para "Sueldos y jornales"/"Cargas sociales" se usó la columna "Fútbol -
-// Exhibición y espectáculos" como wages_squad (es la que de verdad tiene personal del plantel/cuerpo
-// técnico) y el resto de columnas como youth_other_sports_expense, mismo criterio de fondo que los
-// demás clubes aunque la columna de referencia tenga otro nombre.
-//
-// A partir de 2023 aparece una 7ma columna "Estadio" (separada de "Fútbol - Exhibición y
-// espectáculos", donde vivía en 2022) — la fuente de cada ejercicio ya trae esa separación (o no)
-// por su cuenta, no se fuerza a que los 3 años tengan las mismas columnas.
-//
-// "OTROS INGRESOS Y EGRESOS" (Nota 3.7 de cada ejercicio: Indemnizaciones y juicios, Licitaciones de
-// palco, Recuperos de cargas sociales Dto 1212, etc.) se cargó como líneas de revenue/expense
-// normales (other_income/other_expenses), NO como parte de RECPAM/netInterest — el propio documento
-// los separa de "RESULTADOS FINANCIEROS Y POR TENENCIA" (que SÍ va a netInterest).
-//
-// "Resultado por revaluación de jugadores" y "Gastos por transferencias y préstamos jugadores"/
-// "Amortización acelerada por libertad de acción" van a `player_sales`/`player_amortisation`
-// respectivamente (economía de pases, columna "Fútbol - Plantel profesional").
-//
-// grossDebt = "Deudas" (Nota 3.5) corriente+no corriente, EXCLUYENDO "Fondos específicos" y
-// "Previsiones" — mismo criterio que Boca/Vélez/Instituto. cash = Caja y bancos.
-//
-// FX: cada balance declara su propio Anexo IV con DOS cotizaciones de USD (Activo vs. Pasivo,
-// diferencia de centavos) — se usó siempre la del lado Activo/Caja (coherente con `cash`), mismo
-// criterio que Rosario Central: $125,030 (2022), $256,30 (2023), $909,00 (2024 — mismo valor que
-// declararon Racing/Vélez/Instituto para la misma fecha de cierre), $1.196 (2025).
-//
-// Gestión: Martín Gorostegui (presidente marzo-2021 a abril-2024) cubre 2022 y 2023 con confianza.
-// El balance 2024 (cierre 30/6/2024) está FIRMADO por Juan Sebastián Verón, proclamado presidente el
-// 6/4/2024 — o sea, asumió ~3 meses antes del cierre de este ejercicio. DUDA ABIERTA (ver
-// Admin/dudas-por-club.md): Gorostegui presidió la gran mayoría de este ejercicio (jul-2023 a abr-2024),
-// pero es Verón quien firma el balance como Presidente — se cargó gestionId:'veron' (criterio de
-// "quien está a cargo al momento del cierre/firma", mismo usado para Berlanga/Belloso cuando asumen
-// a mitad de ejercicio), pero la mayoría de los meses del ejercicio fueron de Gorostegui, vale
-// confirmar el criterio con Guido. 2025 (Ejercicio completo bajo Verón, sin ambigüedad) también
-// gestionId:'veron'.
-// ============================================================================
-
 const estudiantesLPRevenueLinesByYear = {
   2022: [
     { rawLabel:'Transferencias y préstamos de jugadores', normalizedCategory:'player_sales', amountNative:956.625854, disclosureLevel:'detailed' },
@@ -150,7 +88,6 @@ const estudiantesLPExpenseLinesByYear = {
     { rawLabel:'Gastos por transferencias y préstamos jugadores', normalizedCategory:'player_amortisation', amountNative:-434.068466, disclosureLevel:'detailed' },
     { rawLabel:'Amortización acelerada por libertad de acción', normalizedCategory:'player_amortisation', amountNative:-428.885403, disclosureLevel:'detailed' },
     { rawLabel:'Otros gastos', normalizedCategory:'other_expenses', amountNative:-364.350711, disclosureLevel:'detailed' },
-    // Reconocimientos y premios: premios al plantel profesional (columna 'Fútbol - Exhibición y espectáculos' del anexo de gastos, la de los sueldos de los jugadores; la memoria habla de 'reconocimientos con el plantel profesional'). Sueldos del plantel en todos los años (decisión de Guido, 2026-10-04).
     { rawLabel:'Reconocimientos y premios', normalizedCategory:'wages_squad', amountNative:-352.503491, disclosureLevel:'detailed' },
     { rawLabel:'Gastos de partidos internacionales', normalizedCategory:'match_organisation_expense', amountNative:-233.409423, disclosureLevel:'detailed' },
     { rawLabel:'Cargas sociales (Fútbol - Exhibición y espectáculos)', normalizedCategory:'wages_squad', amountNative:-75.742867, disclosureLevel:'detailed' },
@@ -175,7 +112,6 @@ const estudiantesLPExpenseLinesByYear = {
   2023: [
     { rawLabel:'Sueldos y jornales (Fútbol - Exhibición y espectáculos)', normalizedCategory:'wages_squad', amountNative:-1293.963095, disclosureLevel:'detailed' },
     { rawLabel:'Sueldos y jornales (resto de sectores)', normalizedCategory:'youth_other_sports_expense', amountNative:-1501.533091, disclosureLevel:'detailed' },
-    // Reconocimientos y premios: premios al plantel profesional (columna 'Fútbol - Exhibición y espectáculos' del anexo de gastos, la de los sueldos de los jugadores; la memoria habla de 'reconocimientos con el plantel profesional'). Sueldos del plantel en todos los años (decisión de Guido, 2026-10-04).
     { rawLabel:'Reconocimientos y premios', normalizedCategory:'wages_squad', amountNative:-1217.864742, disclosureLevel:'detailed' },
     { rawLabel:'Gastos de partidos internacionales', normalizedCategory:'match_organisation_expense', amountNative:-737.833743, disclosureLevel:'detailed' },
     { rawLabel:'Otros gastos', normalizedCategory:'other_expenses', amountNative:-727.116735, disclosureLevel:'detailed' },
@@ -203,7 +139,6 @@ const estudiantesLPExpenseLinesByYear = {
     { rawLabel:'Sueldos y jornales (Fútbol - Exhibición y espectáculos)', normalizedCategory:'wages_squad', amountNative:-4761.049974, disclosureLevel:'detailed' },
     { rawLabel:'Sueldos y jornales (resto de sectores)', normalizedCategory:'youth_other_sports_expense', amountNative:-5455.670716, disclosureLevel:'detailed' },
     { rawLabel:'Gastos por transferencias y préstamos jugadores', normalizedCategory:'player_amortisation', amountNative:-4667.951256, disclosureLevel:'detailed' },
-    // Reconocimientos y premios: premios al plantel profesional (columna 'Fútbol - Exhibición y espectáculos' del anexo de gastos, la de los sueldos de los jugadores; la memoria habla de 'reconocimientos con el plantel profesional'). Sueldos del plantel en todos los años (decisión de Guido, 2026-10-04).
     { rawLabel:'Reconocimientos y premios', normalizedCategory:'wages_squad', amountNative:-4402.027264, disclosureLevel:'detailed' },
     { rawLabel:'Gastos de partidos internacionales', normalizedCategory:'match_organisation_expense', amountNative:-2759.110986, disclosureLevel:'detailed' },
     { rawLabel:'Cargas sociales (Fútbol - Exhibición y espectáculos)', normalizedCategory:'wages_squad', amountNative:-531.866624, disclosureLevel:'detailed' },
@@ -257,9 +192,6 @@ const estudiantesLPFiscalYearMeta = {
     reportType:'official_balance_sheet', gestionId:'gorostegui',
     grossDebt:1153.353229, cash:12.545548,
     profitOnPlayerSales:0, assetSales:0, netInterest:690.331357, tax:0,
-    // officialTotalRevenue/Expenses = RECURSOS/GASTOS ORDINARIOS + la porción positiva/negativa de
-    // "Otros Ingresos y Egresos" (Nota 3.7), ya que esas líneas se cargaron como revenue/expense
-    // normales (ver comentario de cabecera): 4264.184851+68.756627 / 4419.205412+29.218628+0.024121.
     officialTotalRevenue:4332.941478, officialTotalExpenses:4448.448161, officialPAT:574.824674,
   },
   2023: {
@@ -267,26 +199,20 @@ const estudiantesLPFiscalYearMeta = {
     reportType:'official_balance_sheet', gestionId:'gorostegui',
     grossDebt:2410.436335, cash:36.433986,
     profitOnPlayerSales:0, assetSales:0, netInterest:1535.101326, tax:0,
-    // 7404.751724+9.148760+236.542911 / 9109.489587+61.980949.
     officialTotalRevenue:7650.443395, officialTotalExpenses:9171.470536, officialPAT:14.074185,
   },
   2024: {
     currency:'ARS', fx:909.00, fxSource:'document_close', sourceId:'estudianteslp-memoria-y-balance-2023-24',
-    reportType:'official_balance_sheet', gestionId:'veron', // ver duda abierta en Admin/dudas-por-club.md
+    reportType:'official_balance_sheet', gestionId:'veron',
     grossDebt:12029.051057, cash:67.946816,
     profitOnPlayerSales:0, assetSales:0, netInterest:534.909348, tax:0,
-    // 49648.052256+9.707725+172.145497 / 40626.579372+172.697275.
     officialTotalRevenue:49829.905478, officialTotalExpenses:40799.276647, officialPAT:9565.538179,
   },
   2025: {
     currency:'ARS', fx:1196.00, fxSource:'document_close', sourceId:'estudianteslp-memoria-y-balance-2024-25',
     reportType:'official_balance_sheet', gestionId:'veron',
-    // grossDebt = Deudas corriente (23197.866989) + no corriente (12564.970707), EXCLUYENDO Fondos
-    // específicos (144.600000+710.269290) y Previsiones (129.000000).
     grossDebt:35762.837696, cash:1364.903809,
     profitOnPlayerSales:0, assetSales:0, netInterest:2475.498214, tax:0,
-    // 58112.923456+1404.273084 / 76269.807543. DÉFICIT FINAL real: $(14.277.112.789) ARS — primer
-    // déficit del club en los 4 ejercicios cargados.
     officialTotalRevenue:59517.196540, officialTotalExpenses:76269.807543, officialPAT:-14277.112789,
   },
 };
@@ -295,14 +221,12 @@ const estudiantesLPPasesData = [];
 const estudiantesLPResultadosData = {};
 const estudiantesLPTitulosData = [];
 
-// Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-data.js, Versión 95).
 window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
 window.CLUB_GENERIC_DATA.estudianteslp = {
   revenueLinesByYear: estudiantesLPRevenueLinesByYear, expenseLinesByYear: estudiantesLPExpenseLinesByYear,
   fiscalYearMeta: estudiantesLPFiscalYearMeta, pasesData: estudiantesLPPasesData,
   resultadosData: estudiantesLPResultadosData, titulosData: estudiantesLPTitulosData,
 };
-
 
 Object.assign(sources, {
   'estudianteslp-memoria-y-balance-2021-22': {
@@ -332,14 +256,9 @@ Object.assign(sources, {
 });
 
 gestionesByClub.estudianteslp = {
-    // Confirmado por búsqueda (Versión 95): Martín Gorostegui presidente marzo-2021 a abril-2024.
     gorostegui: { nombre:'Gorostegui (2021-2024)', firstYear:2022, lastYear:2023 },
-    // Juan Sebastián Verón, proclamado presidente el 6/4/2024 (sin elecciones, lista única). Firma
-    // el balance del Ejercicio 2024 como Presidente — ver duda abierta sobre el criterio de
-    // atribución en Admin/dudas-por-club.md (la mayoría de los meses de ese ejercicio fueron de
-    // Gorostegui).
     veron: { nombre:'Verón (2024-actual)', firstYear:2024, lastYear:2024 },
   };
 
-memberCountByClub.estudianteslp = 56000; // ~55.781-56.000 socios (cobertura de prensa, 2026)
+memberCountByClub.estudianteslp = 56000;
 

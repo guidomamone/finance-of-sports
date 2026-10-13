@@ -1,66 +1,4 @@
-// ============================================================================
-// data/boca-data.js — datos financieros y deportivos de Boca: bocaRevenueLinesByYear/
-// bocaExpenseLinesByYear/bocaFiscalYearMeta (motor genérico, mismo shape que
-// data/river-data.js), gestionesByClub/sources/memberCountByClub (en data/clubs.js,
-// Boca sigue eager-loaded ahí), bocaPasesData, bocaResultadosData, bocaTitulosData.
-//
-// MIGRACIÓN (a pedido explícito de Guido, "poné a Boca en el mismo motor que el resto"):
-// hasta acá Boca vivía en yearsRaw{} (9 campos fijos) + computeYear() propio, con una
-// SEGUNDA estructura paralela (nativeFinancialsBoca) para la tabla nativa del Ejercicio
-// 2025, que reconciliaba a un total distinto ("Revenue" excluía transferencias de
-// jugadores) del que usaban KPIs/verifyTieOuts. Esto se resolvió así:
-//
-// 1) "Revenue" de Boca ahora SÍ incluye ingresos por transferencias/rescisión de pases,
-//    igual que hace el balance en su propia pág. 76 (Total de Recursos) y que ya hacían
-//    8 clubes migrados antes (Estudiantes, Argentinos, Instituto, Rosario Central, Unión,
-//    Independiente, Vélez, San Lorenzo: todos suman su propia línea de venta de jugadores
-//    directo a Revenue, normalizedCategory 'player_sales'). El comentario viejo que decía
-//    "misma convención que usa el resto del sitio" para EXCLUIR transferencias era
-//    incorrecto: el resto del sitio no hace eso. Revenue 2025 pasó de $152.899,938548 M
-//    (excluyendo transferencias) a $237.614,566642 M (Total de Recursos real, pág. 76).
-//
-// 2) El Ejercicio 2025 (balance auditado) desglosaba Gastos por DEPARTAMENTO (Fútbol
-//    profesional, Estadio, Educación física, etc.), mezclando sueldos + amortización +
-//    gastos operativos en una sola línea por departamento — no alcanzaba para separar
-//    wages_squad/player_amortisation/depreciation (categorías que el motor genérico
-//    necesita para nonCash/PAT). Se volvió a los anexos originales del balance
-//    (Clubes/Argentina/Boca/memoria-y-balance-2024-25.md, Anexos IX y XI-XVII) y se
-//    verificó que CADA departamento reporta su propia línea "Remuneraciones y cargas
-//    sociales" (o equivalente) por separado — sumando esas 9 líneas da EXACTO
-//    $67.869,732365 M, el mismo total de sueldos que ya usaba el sitio. Cada departamento
-//    ahora son 2 líneas (Remuneraciones / Otros gastos operativos) en vez de 1, con el
-//    mismo nombre de departamento, para no perder ni un peso ni el desglose por área.
-//    Verificado: revenue+expenses+nonCash reconcilian EXACTO contra "Resultado antes del
-//    efecto financiero" ($34.869,724928 M) y PAT contra "Superávit del ejercicio"
-//    ($35.581,462204 M), impresos en la pág. 76.
-//
-// Quién lo usa: js/finanzas-calc.js (computeYearGeneric, nativeReportFor,
-// simplifiedReportForGeneric) y js/finanzas-render.js leen estas constantes vía
-// window.CLUB_GENERIC_DATA.boca, igual que cualquier otro club.
-// ============================================================================
-
-
-// ---------- INGRESOS ----------
-// Versión 138 (pedido de Guido: "quita los ejercicios que sean placeholder, antes tenían
-// sentido, hoy no"): Boca tenía 7 ejercicios sin documento detrás y se borraron los 7. Cinco
-// eran placeholder puro con 9 rubros inventados (2018, 2019, 2021, 2022, 2023), puestos
-// cuando el sitio era un MVP y necesitaba algo que dibujar; los otros dos (2024, 2026) eran
-// `pending_official`, ejercicios reales que Boca todavía no publicó, cargados en cero. Los
-// dos casos se veían igual en pantalla: una columna vacía en los gráficos de Inicio con la
-// leyenda "no reportado por el club", y una opción "(Placeholder)" en el selector de Año.
-// Quedan los 2 ejercicios con documento: el balance 2024/25 y el presupuesto 2026/27.
 const bocaRevenueLinesByYear = {
-  // Ejercicio 2022 = Estados Contables auditados, Ejercicio Económico N°118 (1/7/2021 al 30/6/2022,
-  // sources['boca-balance-2021-22']). Encontrado vía Wayback CDX de dominio completo (to-do 73,
-  // Versión 247), transcripto con Mistral OCR (Clubes/Argentina/Boca/eecc-30525418835-2022.md).
-  // Las 12 categorías tal cual el Estado de Recursos y Gastos (pág. 32): la suma da EXACTO el Total
-  // de Recursos ($14.279.912.579) impreso ahí. Guardado en ARS MILLONES (el documento imprime pesos
-  // completos en moneda homogénea, Nota 2.2, reexpresada a poder adquisitivo del 30/06/2022; cada
-  // cifra se divide por 1.000.000 al cargar, mismo criterio de unidad que 2025/2027).
-  // OJO: la columna "30/06/2022" que aparece como COMPARATIVA dentro del balance de 2023 (año
-  // siguiente) reexpresa estas mismas cifras a OTRA fecha de cierre y NO coincide con estos
-  // números — se usó siempre la columna "año corriente" del balance cuyo ejercicio es el que se
-  // carga, nunca la comparativa de un balance posterior (club-data-mapping sección 6, regla 5).
   2022: [
     { rawLabel:'Ingresos por transferencias de jugadores', normalizedCategory:'player_sales', amountNative:3066.44042, disclosureLevel:'detailed' },
     { rawLabel:'Exhibiciones y espectáculos de fútbol', normalizedCategory:'matchday_competition', amountNative:2697.553971, disclosureLevel:'detailed', items:[
@@ -86,12 +24,6 @@ const bocaRevenueLinesByYear = {
     { rawLabel:'Cesión de jugadores a préstamo', normalizedCategory:'player_sales', amountNative:89.065287, disclosureLevel:'detailed' },
     { rawLabel:'Departamento de básquet', normalizedCategory:'other_sports', amountNative:15.866965, disclosureLevel:'detailed' },
   ],
-  // Ejercicio 2023 = Estados Contables auditados, Ejercicio Económico N°119 (1/7/2022 al 30/6/2023,
-  // sources['boca-balance-2022-23']). Mismo hallazgo/transcripción que 2022 (to-do 73). Las 11
-  // categorías tal cual el Estado de Recursos y Gastos (pág. 61): suma EXACTA al Total de Recursos
-  // ($26.178.273.845). "Departamento de fútbol juvenil" no tiene ingreso propio este ejercicio (el
-  // documento lo imprime en $0 para 30/06/2023) y se omite, igual que "Derechos de tanteo" (revenue),
-  // que no aparece en absoluto en esta columna.
   2023: [
     { rawLabel:'Exhibiciones y espectáculos de fútbol', normalizedCategory:'matchday_competition', amountNative:7608.836867, disclosureLevel:'detailed', items:[
       ['Abonos a palcos, plateas y cocheras', 3647.604427], ['Copa Libertadores', 1429.037411], ['Televisación de partidos', 1466.532553],
@@ -115,11 +47,6 @@ const bocaRevenueLinesByYear = {
     { rawLabel:'Departamento de educación física', normalizedCategory:'other_sports', amountNative:111.347243, disclosureLevel:'detailed' },
     { rawLabel:'Departamento de básquet', normalizedCategory:'other_sports', amountNative:54.73709, disclosureLevel:'detailed' },
   ],
-  // Ejercicio 2025 = Memoria y Balance oficial auditado al 30/06/2025 (sources['boca-balance-2024-25']
-  // en data/clubs.js). Las 11 categorías tal cual la pág. 76 del balance (mismo orden y mismos montos
-  // que antes vivían en nativeFinancialsBoca[2025].ingresos): la suma da EXACTO el Total de Recursos
-  // ($237.614,566642 M) impreso en esa página. Guardado en ARS MILLONES EXACTOS ("moneda homogénea",
-  // Nota 2.2 del balance, reexpresado a poder adquisitivo del 30/06/2025 según RT 6/17).
   2025: [
     { rawLabel:'Ingresos por transferencias de jugadores', normalizedCategory:'player_sales', amountNative:36487.756293, disclosureLevel:'detailed', items:[
       ['Anselmino, Aaron (100%)', 26764.724260], ['Langoni, Luca (100%)', 8625.663125], ['Retegui, Mateo', 702.928645],
@@ -153,8 +80,6 @@ const bocaRevenueLinesByYear = {
     { rawLabel:'Departamento de educación física', normalizedCategory:'other_sports', amountNative:796.665345, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos varios', normalizedCategory:'other_income', amountNative:3037.163188, disclosureLevel:'detailed' },
   ],
-  // Ejercicio 2027 = Presupuesto oficial 2026/27. Las mismas 9 categorías y montos que antes vivían en
-  // yearsRaw[2027]+revenueBreakdown[2027]. Suma exacta a $239.392,104 M, el total oficial del presupuesto.
   2027: [
     { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:84600.271, disclosureLevel:'detailed', items:[
       ['Socios Activos', 32387.986], ['Adherente AMBA', 17308.922], ['Socios Interior', 11537.424], ['Adherente Interior', 7869.528],
@@ -203,22 +128,7 @@ const bocaRevenueLinesByYear = {
   ],
 };
 
-
-// ---------- GASTOS ----------
-// SUELDOS POR DEPARTAMENTO (decisión de Guido, to-do 101, 2026-10-06; NO volver a plantearla): en 2022, 2023
-// y 2025 el sueldo de cada departamento va a la MISMA categoría que los otros gastos de ese departamento.
-// Solo "Fútbol profesional" queda en wages_squad. Estadio, Casa Amarilla, Departamento médico y Gastos de
-// estructura operativa → admin_general_expense; Educación física, Fútbol juvenil y Básquet →
-// youth_other_sports_expense. Es lo que dice club-data-mapping/referencia/casos-por-pais-y-formato.md y lo que hacen Vélez, Rosario Central y
-// San Lorenzo. Antes de esta decisión los 8 sueldos iban a wages_squad (2025: 67.870 M de sueldos del plantel;
-// ahora 46.452 M). Totales sin cambio.
 const bocaExpenseLinesByYear = {
-  // Ejercicio 2022: mismo criterio de separación wages_squad/player_amortisation/other_expenses por
-  // departamento que ya usa 2025 (ver comentario de cabecera del archivo) — acá cada departamento SÍ
-  // desglosa su propia línea "Remuneraciones y cargas sociales" (o "Remuneraciones personal
-  // administrativo"/"Remuneraciones plantel profesional, primas" en Fútbol profesional), así que se
-  // separa igual. La suma total (con las 4 líneas de transferencias de pases de arriba) da EXACTO
-  // $(13.669.793.975), el Total de Gastos impreso pág. 32.
   2022: [
     { rawLabel:'Fútbol profesional — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-2476.698555, disclosureLevel:'detailed', items:[
       ['Remuneraciones plantel profesional, primas', -2410.789835], ['Remuneraciones personal administrativo', -65.90872],
@@ -298,10 +208,6 @@ const bocaExpenseLinesByYear = {
     ]},
     { rawLabel:'Depreciaciones y amortizaciones', normalizedCategory:'depreciation', amountNative:-493.964693, disclosureLevel:'detailed' },
   ],
-  // Ejercicio 2023: mismo criterio que 2022. La suma total (con las 4 líneas de transferencias de
-  // pases) da EXACTO $(27.795.138.995), el Total de Gastos impreso pág. 60. "Participación de
-  // terceros en venta de jugadores" no tiene gasto propio este ejercicio (el documento lo imprime en
-  // $0 para 30/06/2023) y se omite.
   2023: [
     { rawLabel:'Fútbol profesional — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-5729.020205, disclosureLevel:'detailed', items:[
       ['Remuneraciones plantel profesional, primas', -5415.580061], ['Remuneraciones personal administrativo', -313.440144],
@@ -379,16 +285,6 @@ const bocaExpenseLinesByYear = {
     ]},
     { rawLabel:'Depreciaciones y amortizaciones', normalizedCategory:'depreciation', amountNative:-1170.136081, disclosureLevel:'detailed' },
   ],
-  // Ejercicio 2025: reconstruido departamento por departamento a partir de Clubes/Argentina/Boca/
-  // memoria-y-balance-2024-25.md (Anexos IX, X, XI-XVIII), separando en cada departamento su propia
-  // línea "Remuneraciones y cargas sociales" (wages_squad) del resto de sus gastos operativos —
-  // verificado que las 9 líneas de sueldo suman EXACTO $67.869,732365 M (el total de sueldos que ya
-  // usaba el sitio antes de esta migración). "Amortización jugadores profesionales" (Anexo IX) es la
-  // única línea de amortización real, $36.573,123213 M exacto. Las líneas SIN desglose de sueldo
-  // propio (Organización de espectáculos, Fútbol femenino, Departamento de cultura, Impuestos y
-  // tasas, Gastos generales, Depreciaciones) no tienen un item de "Remuneraciones" identificable en
-  // la fuente, se dejan como una sola línea, igual que antes. La suma total (con las líneas de
-  // transferencias de pases de abajo) da EXACTO $202.744,841714 M, el Total de Gastos impreso.
   2025: [
     { rawLabel:'Fútbol profesional — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-46452.232219, disclosureLevel:'detailed', items:[
       ['Remuneraciones plantel profesional, primas', -44390.524043], ['Remuneraciones personal administrativo', -2061.708176],
@@ -476,13 +372,6 @@ const bocaExpenseLinesByYear = {
     ]},
     { rawLabel:'Depreciaciones', normalizedCategory:'depreciation', amountNative:-7452.805787, disclosureLevel:'detailed' },
   ],
-  // Ejercicio 2027 = Presupuesto oficial 2026/27, misma fuente que antes (expenseBreakdown[2027]/
-  // expenseSubBreakdown[2027]). "Fútbol Profesional" (-120.358,357 M en el resumen del presupuesto) se
-  // separa acá en sus 2 componentes reales, ya desglosados en el propio presupuesto (pág. 15):
-  // Remuneraciones ($72.632,108 M = Gerencia de Fútbol Profesional + Futbol Femenino) y Amortización
-  // de plantel ($47.726,249 M), para que el motor genérico calcule nonCash/wages igual que para
-  // cualquier otro club. El resto de las categorías no cambia de valor, solo de etiqueta (mismo
-  // agrupamiento que ya usaba "Formato simplificado" para este ejercicio).
   2027: [
     { rawLabel:'Fútbol Profesional — Remuneraciones y primas', normalizedCategory:'wages_squad', amountNative:-72632.108, disclosureLevel:'detailed', items:[
       ['Gerencia de Fútbol Profesional', -68458.578, [
@@ -656,55 +545,24 @@ const bocaExpenseLinesByYear = {
   ],
 };
 
-
-// ---------- METADATOS POR EJERCICIO ----------
 const bocaFiscalYearMeta = {
-  // Ejercicio 2022 = Estados Contables auditados, Ejercicio N°118 (sources['boca-balance-2021-22']).
-  // fx = USD activo al 30/06/2022 ($125,03), declarado por el propio balance en su Anexo III
-  // (Activos y Pasivos en Moneda Extranjera) — regla 0 de club-data-mapping/referencia/fx.md, se prefiere
-  // siempre al de mercado. grossDebt = "Deudas" corriente + no corriente (nota 6.1, $2.413.758.080 +
-  // $449.885.280), EXCLUYE Obligaciones de hacer y Previsiones, mismo criterio que Boca 2025.
-  // officialTotalRevenue/officialTotalExpenses/officialPAT = Total de Recursos/Total de
-  // Gastos/Superávit del ejercicio impresos pág. 32. gestionId 'ameal': Jorge Amor Ameal firma como
-  // Presidente en todo el documento (fecha de informe 15/09/2022).
   2022: { currency:'ARS', fx:125.03, fxSource:'document_close', sourceId:'boca-balance-2021-22', reportType:'official_balance_sheet', gestionId:'ameal',
     grossDebt:2863.64336, cash:311.870166, profitOnPlayerSales:0, assetSales:0, netInterest:-148.280849, tax:0,
     extraRows:[{label:'Resultados financieros y por tenencia (incluye RECPAM)', value:-148.280849}],
     officialTotalRevenue:14279.912579, officialTotalExpenses:13669.793975, officialPAT:461.837755 },
-  // Ejercicio 2023 = Estados Contables auditados, Ejercicio N°119 (sources['boca-balance-2022-23']).
-  // fx = USD activo al 30/06/2023 ($256,30), declarado en el mismo Anexo III. grossDebt = "Deudas"
-  // corriente + no corriente ($2.155.761.442 + $1.192.317.317). netInterest da POSITIVO este
-  // ejercicio ($2.639.247.885, RECPAM incluido) — el "Resultado antes del efecto financiero" fue
-  // deficitario (-$1.616.865.150) y el resultado financiero lo revirtió a superávit, verificado
-  // exacto contra el Superávit del ejercicio impreso ($1.022.382.735, pág. 60). gestionId 'ameal':
-  // mismas firmas que 2022 (informe fechado 08/09/2023, la gestión de Ameal termina en 2023).
   2023: { currency:'ARS', fx:256.30, fxSource:'document_close', sourceId:'boca-balance-2022-23', reportType:'official_balance_sheet', gestionId:'ameal',
     grossDebt:3348.078759, cash:568.183797, profitOnPlayerSales:0, assetSales:0, netInterest:2639.247885, tax:0,
     extraRows:[{label:'Resultados financieros y por tenencia (incluye RECPAM)', value:2639.247885}],
     officialTotalRevenue:26178.273845, officialTotalExpenses:27795.138995, officialPAT:1022.382735 },
-  // Ejercicio 2025 = Memoria y Balance auditado al 30/06/2025 (sources['boca-balance-2024-25']). fx =
-  // dólar mayorista BCRA al 30/06/2025 ($1.203), fecha de cierre puntual (el balance ya está en
-  // "moneda homogénea" al 30/06/2025, Nota 2.2, así que corresponde el tipo de cambio de ESE día, no
-  // un promedio del ejercicio). officialTotalRevenue = Total de Recursos impreso pág. 76 (incluye
-  // transferencias de pases, ver comentario de cabecera del archivo). officialTotalExpenses = Total
-  // de Gastos impreso pág. 76. officialPAT = Superávit del ejercicio impreso pág. 76. extraRows
-  // preserva la etiqueta real del balance para esta fila (en vez de la genérica "Intereses netos").
   2025: { currency:'ARS', fxRef:'ARS@2025-06-30', sourceId:'boca-balance-2024-25', reportType:'official_balance_sheet', gestionId:'riquelme',
     grossDebt:44566.207208, cash:12520.193181, profitOnPlayerSales:0, assetSales:0, netInterest:711.737276, tax:0,
     extraRows:[{label:'Resultados financieros y por tenencia (incluye RECPAM)', value:711.737276}],
     officialTotalRevenue:237614.566642, officialTotalExpenses:202744.841714, officialPAT:35581.462204 },
-  // Ejercicio 2027 = Presupuesto oficial 2026/27. fx = promedio entre el dólar de inicio ($1.480) y
-  // cierre ($1.840) del ejercicio = $1.660 (ver acordeón "Presupuesto 2026/27"). officialPAT acá es un
-  // resultado DERIVADO (Ingresos − Gastos del propio presupuesto, $3.402,243 M), no una cifra que el
-  // documento imprima con esa etiqueta (un presupuesto no tiene "Superávit del ejercicio" real
-  // todavía), se deja como chequeo de consistencia interna igual que Revenue/Expenses.
   2027: { currency:'ARS', fx:1660, fxSource:'document_assumption', sourceId:'boca-presupuesto-2026-27', reportType:'official_budget', gestionId:'riquelme',
     grossDebt:0, cash:0, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
     officialTotalRevenue:239392.104, officialTotalExpenses:235989.861, officialPAT:3402.243 },
 };
 
-
-// ---------- MERCADO DE PASES / RESULTADOS DEPORTIVOS / TÍTULOS (sin cambios de contenido) ----------
 const bocaPasesData = [
   {gestion:'riquelme', anio:2025, ventana:'Invierno', tipo:'Jugador', nombre:'Jugador A', movimiento:'Venta', monto:18.5},
   {gestion:'riquelme', anio:2025, ventana:'Verano', tipo:'Jugador', nombre:'Jugador B', movimiento:'Compra', monto:-14.0},
@@ -724,15 +582,11 @@ const bocaPasesData = [
   {gestion:'angelici', anio:2018, ventana:'Verano', tipo:'DT', nombre:'DT entrante (Angelici)', movimiento:'Contratación', monto:0},
 ];
 
-
-// Fuente: cobertura de Infobae, La Nación y Wikipedia sobre cada gestión (agosto 2026).
-// Verificar contra el sitio oficial del club antes de publicar.
 const bocaResultadosData = {
   angelici:{titulosLocales:6, titulosInternacionales:0, mejorResultadoLibertadores:'Finalista (2012 y 2018)'},
   ameal:{titulosLocales:6, titulosInternacionales:0, mejorResultadoLibertadores:'Semifinalista (2020)'},
   riquelme:{titulosLocales:0, titulosInternacionales:0, mejorResultadoLibertadores:'Eliminado en fase preliminar (2025), primera vez en 19 participaciones consecutivas'},
 };
-
 
 const bocaTitulosData = [
   {anio:2012, competencia:'Copa Argentina', resultado:'Campeón', gestion:'angelici'},
@@ -749,25 +603,7 @@ const bocaTitulosData = [
   {anio:2023, competencia:'Supercopa Argentina', resultado:'Campeón', gestion:'ameal'},
 ];
 
-
-// Versión 102 (migración de Boca al motor genérico, ver comentario de cabecera del archivo): mismo
-// registro que ya usan River/Racing/etc. — reemplaza yearMeta/computeYear/simplifiedReportForBoca/
-// nativeFinancialsBoca (borrados de js/finanzas-calc.js y js/finanzas-render.js en la misma migración).
-// finanzasYears/finanzasGestiones (campos opcionales, leídos por populateFinanzasSelectors en
-// js/finanzas-render.js): qué años/gestiones muestra el <select> de Finanzas. Desde la Versión 138
-// `finanzasYears` es redundante para Boca (los años que excluía ya no existen en
-// bocaFiscalYearMeta), pero se deja declarado: es el mecanismo genérico que cualquier club puede
-// necesitar, y borrarlo acá no lo documenta mejor. `finanzasGestiones:['riquelme']` sí sigue
-// haciendo falta, porque gestionesByClub.boca conserva ameal/angelici para Mercado de Pases y
-// Resultados. Cualquier club sin estos 2 campos (el resto) muestra TODOS sus años/gestiones.
 const bocaPresupuestoFinancieroByYear = {
-  // Presupuesto Financiero 2026/27, tal cual lo imprime el documento oficial (ver
-  // Clubes/Argentina/Boca/presupuesto-26-27.md). Estuvo escrito a mano como HTML adentro de
-  // index.html hasta la Versión 135: era el mismo dato, pero en la capa de markup y solo para
-  // Boca, con un `isBoca2027` decidiendo si se mostraba. Los montos están en MILLONES de ARS,
-  // como el resto del proyecto; `formato:'ars-exacto'` le dice al render que esta tabla se
-  // muestra en pesos enteros con separador de miles (así la imprime el documento), no
-  // convertida por el toggle de moneda.
   2027: {
     steps: [
       { label:'Saldo Inicial', op:'', magnitude:6045.520 },
@@ -813,8 +649,6 @@ const bocaPresupuestoFinancieroByYear = {
 };
 
 const bocaPresupuestoInversionesByYear = {
-  // Presupuesto de Inversiones 2026/27, obra por obra, del mismo documento. Mismo origen y
-  // mismo criterio de unidades que el financiero de arriba.
   2027: {
     total:41767.058,
     formato:'ars-exacto',
@@ -901,9 +735,6 @@ const bocaPresupuestoInversionesByYear = {
 };
 
 const bocaPresupuestoSupuestosByYear = {
-  // Las premisas que el propio presupuesto declara (macro, política de ingresos y de gastos).
-  // Movido desde js/finanzas-render.js en la Versión 135, junto con el Presupuesto Financiero
-  // y el de Inversiones: son datos del club y su lugar es el archivo del club.
     2027: {
       docLabel: 'Ejercicio N° 123, del 1° de julio de 2026 al 30 de junio de 2027. Está en pesos argentinos constantes a abril de 2026.',
       sections: [

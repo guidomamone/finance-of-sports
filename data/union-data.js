@@ -1,71 +1,3 @@
-// ============================================================================
-// data/union-data.js — Club Atlético Unión (Santa Fe): 11vo club del motor genérico. 4 ejercicios
-// cargados: 2022, 2023 (agregado a nivel de 4 categorías, ver más abajo), 2024, 2025. PDF +
-// transcripción en Clubes/Argentina/Union/{memoria-y-balance-116,memoria-y-balance-117,
-// estados-contables-118-2023-2024,memoria-y-balance-119}.{pdf,md}.
-//
-// 2025 (Ejercicio N°119, 1°/7/2024 al 30/6/2025): balance auditado real. Este PDF es MIXTO:
-// páginas 1-35 (Memoria narrativa) tienen texto nativo, pero páginas 36-54 (los Estados Contables
-// reales — Situación Patrimonial, Recursos y Gastos, Anexos) son un escaneo sin capa de texto,
-// transcripto vía OCR (Tesseract, español, 300-600dpi). Varias páginas de Anexo (Bienes de Uso,
-// Activos Intangibles, Situación Patrimonial) estaban rotadas 90° dentro del escaneo — se corrigió
-// con PIL antes de re-OCRear, mismo criterio que club-data-mapping/referencia/leer-pdf.md. El Anexo V
-// (moneda extranjera) no se pudo leer de forma confiable ni rotado ni a 600dpi (tabla multi-columna
-// resistente al OCR) — se usó el dólar oficial vendedor BNA de cierre en su lugar (investigado
-// externamente, ver fx abajo).
-//
-// Categorización del Anexo IV de 2025 ("Informe sobre el rubro Gastos y su aplicación"): a
-// diferencia de Vélez/Instituto/Rosario Central/Estudiantes LP, este Anexo NO tiene una columna por
-// sector limpiamente separable en el texto OCR de ESTE documento puntual (las columnas de
-// departamento se mezclaron en la extracción). Se cargaron con CONFIANZA solo 3 desgloses que se
-// pudieron verificar por checksum exacto contra el total de su categoría en el Estado de Recursos y
-// Gastos: "Sueldos y Jornales de Futbol" (6.510,993333 M, dentro de "Gastos de fútbol") →
-// wages_squad, y las 2 filas de "Amortizaciones" (Anexo I: 398,387133 M + Anexo II: 2.476,887829 M
-// = 2.875,274962 M, cierra EXACTO contra "Amortizaciones de bienes de uso y activo intangibles" del
-// estado principal) → depreciation / player_amortisation respectivamente. El RESTO de cada una de
-// las 6 categorías del estado principal (Administración, Partidos y estadio, resto de Fútbol,
-// Subcomisiones, Otros gastos) se cargó como una sola línea por categoría (usando el total ya
-// verificado del propio Estado de Recursos y Gastos), en vez de forzar una asignación fila-por-fila
-// que el OCR no permite confirmar con certeza — más fiel que adivinar a qué departamento pertenece
-// cada fila ambigua.
-//
-// 2022 (Ejercicio N°116, "Rectificativo" — versión corregida presentada, firmada 4/3/2024) y 2023
-// (Ejercicio N°117): a diferencia del documento de 2025, el Anexo IV ("Informe Sobre el Rubro
-// Gastos y su Aplicación") de estos 2 balances SÍ tiene columnas por departamento razonablemente
-// separables en el texto OCR (aunque el header de columnas quedó parcialmente cortado en la
-// extracción) — se verificó fila por fila que la SUMA de todos los rubros del Anexo cierra EXACTO
-// contra el "Total de Gastos Ordinarios" del Estado de Recursos y Gastos principal antes de cargar
-// (2022: 23 rubros suman $2.067.493.328,46 vs. impreso $2.067.493.328,45, diferencia de 1 centavo
-// por redondeo). Categorización por NATURALEZA del rubro (mismo criterio que Argentinos Juniors
-// esta sesión), no por columna de departamento cuando el reparto exacto entre 2 departamentos no
-// se pudo confirmar con certeza (ej. "Sueldos y Jornales de Maestranza", que el Anexo reparte entre
-// 2 columnas, se cargó entero en admin_general_expense en vez de forzar el split).
-// Ambos documentos declaran "expresado a moneda de cierre" — es la aplicación normal de la
-// normativa de ajuste por inflación vigente en Argentina desde 2019 (no es el mismo problema
-// encontrado en Argentinos Juniors esta sesión: ahí una presentación RESTATED HACIA ATRÁS convivía
-// con balances individuales NO restated de los mismos años, dando cifras incompatibles entre sí.
-// Acá cada balance de Unión declara su PROPIO ejercicio "a moneda de cierre" de ESE mismo ejercicio
-// — es simplemente la cifra nominal de cierre del año, consistente con el resto del sitio) — pero
-// por las dudas, se usó SIEMPRE la columna "del ejercicio actual" de cada balance (nunca la columna
-// comparativa de un balance posterior, que si se restated hacia una fecha de cierre distinta no
-// sería comparable).
-// NINGUNO de los 2 archivos (116, 117) incluye una página de Estado de Situación Patrimonial
-// completa en el escaneo disponible (se buscó explícitamente "TOTAL DEL ACTIVO"/"TOTAL ACTIVO" en
-// todo el texto OCR de ambos archivos, sin encontrarlo) — grossDebt/cash quedaron SIN CARGAR para
-// 2022 y 2023 (no inventados), a diferencia de 2024/2025 que sí lo tienen.
-//
-// 2024 (Ejercicio N°118, Estados Contables 2023-2024): ver comentario en su propio bloque de
-// fiscalYearMeta más abajo — este documento SOLO da el Estado de Recursos y Gastos a nivel de las 4
-// categorías agregadas (no tiene Anexo IV de detalle por rubro en el archivo descargado), se cargó
-// con ese nivel de agregación honesta.
-//
-// grossDebt = "Deudas" corriente+no corriente, EXCLUYENDO "Previsiones" — mismo criterio que el
-// resto de los clubes (cuando el balance lo permite calcular). cash = Caja y bancos.
-//
-// Gestión: Luis Jorge Spahn, presidente desde el 24/7/2009 (varias reelecciones, la más reciente en
-// mayo de 2025, mandato hasta 2028) — cubre los 4 ejercicios cargados con confianza total.
-// ============================================================================
-
 const unionRevenueLinesByYear = {
   2022: [
     { rawLabel:'Carnet Socios', normalizedCategory:'member_dues', amountNative:5.205313, disclosureLevel:'detailed' },
@@ -193,12 +125,6 @@ const unionExpenseLinesByYear = {
     { rawLabel:'Quebrantos por Libertad de Acción de Jugadores Prof.', normalizedCategory:'other_expenses', amountNative:-170.295073, disclosureLevel:'detailed' },
   ],
   2024: [
-    // Este archivo (Estados Contables 2023-2024) NO incluye el Anexo IV de detalle por rubro (a
-    // diferencia de 116/117) — se cargó a nivel de las 6 categorías agregadas del Estado de
-    // Recursos y Gastos principal, agregación honesta. Única excepción: "Amortizaciones de bienes
-    // de uso y activo intangibles" SÍ se pudo partir en 2, cruzando contra el Anexo II (Activos
-    // Intangibles) que declara "Amortización del Ejercicio" = $1.245.739.483 exacto — el resto
-    // ($259.700.253) es la depreciación de bienes de uso.
     { rawLabel:'Gastos generales de administración y funcionamiento', normalizedCategory:'admin_general_expense', amountNative:-2512.306320, disclosureLevel:'detailed' },
     { rawLabel:'Gastos de partidos y estadio de futbol', normalizedCategory:'match_organisation_expense', amountNative:-2000.707871, disclosureLevel:'detailed' },
     { rawLabel:'Gastos de futbol (sin desglosar por rubro)', normalizedCategory:'lump_football_operations_expense', amountNative:-9412.264760, disclosureLevel:'detailed' },
@@ -219,65 +145,32 @@ const unionExpenseLinesByYear = {
   ],
 };
 
-// LOS 4 TIPOS DE CAMBIO DE UNIÓN SON `document_close`, NO `market_close` (corregido en la
-// Versión 140). Estaban etiquetados como cotización de mercado y no lo son: los 4 salen del
-// ANEXO V del propio balance de Unión, lado Activo/Créditos, como dice la `note` de cada
-// fuente en data/clubs.js. La etiqueta equivocada disparaba 2 hallazgos de la auditoría, y el
-// más ruidoso era real pero mal diagnosticado: "Unión 2024 usa 890,50 pero la tabla de mercado
-// dice 909 para esa fecha".
-//
-// LOS DOS NÚMEROS ESTÁN BIEN, Y ESTA ES LA PARTE QUE HAY QUE ENTENDER ANTES DE "CORREGIR"
-// ALGUNO (lo planteó Guido: "puede ser porque tuvieron acceso a distinto FX, o porque al
-// momento de cancelar o recibir tal plata, el fx era distinto"): un Anexo de moneda extranjera
-// valúa los ACTIVOS (créditos, lo que le deben al club) al tipo COMPRADOR y los PASIVOS
-// (deudas) al VENDEDOR. Son los dos lados del spread del mismo día. 890,50 es el comprador
-// del 30/6/2024 y ~909 el mayorista/vendedor: no se contradicen, describen cosas distintas.
-// Por eso la regla del proyecto dice que el `fx` que declara un documento va LITERAL en el
-// archivo de ese club y nunca se mueve a FX_CLOSE ni se reemplaza por el de otro club.
 const unionFiscalYearMeta = {
   2022: {
-    // No se encontró página de Estado de Situación Patrimonial en el escaneo disponible de este
-    // archivo (ver comentario de cabecera) — grossDebt/cash quedan sin cargar, no inventados.
     currency:'ARS', fx:124, fxSource:'document_close', sourceId:'union-memoria-y-balance-116',
     reportType:'official_balance_sheet', gestionId:'spahn',
     profitOnPlayerSales:0, assetSales:0, netInterest:-45.996916, tax:0,
-    // SUPERÁVIT FINAL real: $190.408.914 ARS.
     officialTotalRevenue:2303.899158, officialTotalExpenses:2067.493328, officialPAT:190.408914,
   },
   2023: {
-    // No se encontró página de Estado de Situación Patrimonial en el escaneo disponible de este
-    // archivo (ver comentario de cabecera) — grossDebt/cash quedan sin cargar, no inventados.
     currency:'ARS', fx:255, fxSource:'document_close', sourceId:'union-memoria-y-balance-117',
     reportType:'official_balance_sheet', gestionId:'spahn',
     profitOnPlayerSales:0, assetSales:0, netInterest:145.239007, tax:0,
-    // SUPERÁVIT FINAL real: $893.901.287 ARS.
     officialTotalRevenue:5087.874350, officialTotalExpenses:4339.212070, officialPAT:893.901287,
   },
   2024: {
-    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2023): Salarios y primas (plantel y cuerpo técnico), Educación
     incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, education_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
-    // No se encontró página de Estado de Situación Patrimonial en el escaneo disponible de este
-    // archivo — grossDebt/cash quedan sin cargar, no inventados.
     currency:'ARS', fx:890.50, fxSource:'document_close', sourceId:'union-estados-contables-118-2023-24',
     reportType:'official_balance_sheet', gestionId:'spahn',
     profitOnPlayerSales:0, assetSales:0, netInterest:-64.084989, tax:0,
-    // SUPERÁVIT FINAL real: $1.166.322.977 ARS.
     officialTotalRevenue:20283.299213, officialTotalExpenses:19052.891247, officialPAT:1166.322977,
   },
   2025: {
-    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2023): Educación
     incluidoEn:{ education_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
-    // El propio balance no se pudo leer con confianza para su Anexo de moneda extranjera (ver
-    // comentario de cabecera) — dólar oficial vendedor BNA de cierre 30/6/2025, investigado
-    // externamente.
     currency:'ARS', fx:1217.87, fxSource:'document_close', sourceId:'union-memoria-y-balance-119',
     reportType:'official_balance_sheet', gestionId:'spahn',
-    // grossDebt = Deudas corriente (8.619,653532) + no corriente (137,744168), sin Previsiones
-    // (704,285792, contingencia). cash = Caja y bancos.
     grossDebt:8757.397700, cash:352.305154,
     profitOnPlayerSales:0, assetSales:0, netInterest:-2715.522000, tax:0,
-    // officialTotalRevenue/Expenses = "Total de Recursos"/"Total de Gastos Ordinarios" impresos.
-    // DÉFICIT FINAL real: $(4.022.045.732) ARS.
     officialTotalRevenue:27694.001347, officialTotalExpenses:29000.525079, officialPAT:-4022.045732,
   },
 };
@@ -286,14 +179,12 @@ const unionPasesData = [];
 const unionResultadosData = {};
 const unionTitulosData = [];
 
-// Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-data.js, Versión 95).
 window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
 window.CLUB_GENERIC_DATA.union = {
   revenueLinesByYear: unionRevenueLinesByYear, expenseLinesByYear: unionExpenseLinesByYear,
   fiscalYearMeta: unionFiscalYearMeta, pasesData: unionPasesData,
   resultadosData: unionResultadosData, titulosData: unionTitulosData,
 };
-
 
 Object.assign(sources, {
   'union-memoria-y-balance-116': {
@@ -323,10 +214,8 @@ Object.assign(sources, {
 });
 
 gestionesByClub.union = {
-    // Confirmado por búsqueda (Versión 95): Luis Jorge Spahn presidente desde 24/7/2009, varias
-    // reelecciones, la más reciente en mayo de 2025 (mandato hasta 2028).
     spahn: { nombre:'Spahn (2009-actual)', firstYear:2025, lastYear:2025 },
   };
 
-memberCountByClub.union = null; // no se encontró una cifra confiable en esta sesión
+memberCountByClub.union = null;
 
