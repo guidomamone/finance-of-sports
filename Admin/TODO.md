@@ -96,11 +96,6 @@ ni en el comentario de ningún archivo de código.
 
 
 
-207. ESCALA: REMEDIR "OTROS NEGOCIOS DEL CLUB" (revisión de la skill `escala-finance-of-sports`, sección I). La señal para evaluar un eje
-    separado de otros negocios del club era "~300 clubes cargados" y la proporción (~10 %) se midió con 161 clubes; hoy hay más (ver
-    `Admin/ESTADO-clubes.md`). Remedir la proporción en la próxima corrida del eje `escala` y, si cambió, actualizar ese punto de la skill
-    (umbral y criterio).
-
 210. EL ENSAYO DE `cargar-lote.mjs` PROMETE AÑOS DE CLUBES NUEVOS QUE DESPUÉS NO ENTRAN (mejora de script). Con un club que no existe,
     `cargar.mjs --desde-verificacion` frena en "el club no existe" y no mira los demás frenos (casos de la verificación pendientes, categorías
     en la cola); el ensayo los cuenta como "se escribirían". Caso: lote 67 (Grecia), el ensayo dijo 21 años y `--escribir` no escribió ninguno

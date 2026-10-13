@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 674 — To-do 207: "otros negocios del club" remedido (2026-10-13)
+
+- 214 clubes: 29 con plata en `education` u `other_sports` (13,6 %), 15 solo en `education` (7 %); sin aceleración. Informe en
+  `auditorias/2026-10-13-escala.md`. La skill `escala-finance-of-sports` (sección I) dice ahora cómo se mide. Se borra el 207.
+
 ## Versión 673 — Carpetas ordenadas (to-do 217) y tools obsoletas archivadas (2026-10-13)
 
 - Raíz: se borra `e2.json` (salida de prueba commiteada por error) y `Business Books/` sale del proyecto.

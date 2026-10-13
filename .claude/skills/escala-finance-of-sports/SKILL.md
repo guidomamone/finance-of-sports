@@ -245,9 +245,11 @@ un polideportivo o una tienda (el modelo de club social argentino). Se resuelve 
 a Formato simplificado por cada negocio nuevo que aparece (por ejemplo `education`), la misma lista
 para todos los clubes cargados. Eso escala mal por VARIEDAD de rubros, no por cantidad de clubes:
 cada fila nueva aparece en $0 para todos los que no la tienen. **Decisión de Guido: no decidir ahora,
-mirarlo evolucionar a medida que se cargan más clubes y deportes.** La proporción de clubes con el
-patrón se mide con el método de `auditorias/2026-09-22-catchall-no-futbol.md` y viene siendo de
-alrededor de 1 de cada 10, sin acelerarse. Como orden de magnitud (no número decidido), cuando la
+mirarlo evolucionar a medida que se cargan más clubes y deportes.** La proporción se mide como
+clubes con plata en `education` u `other_sports` sobre los clubes cargados (`stadium_other` no
+cuenta: ya es una fila estándar). Viene siendo de alrededor de 1 de cada 10, sin acelerarse, y
+depende de la forma jurídica: los clubes sociales (Argentina, parte de Brasil) la suben; las
+sociedades (Europa, Japón, Rusia) la bajan. Como orden de magnitud (no número decidido), cuando la
 cantidad de clubes cargados ronde los 300 es el momento de evaluar un eje separado ("Otros negocios
 del club", con filas propias por club en vez de una lista fija) en vez de seguir sumando filas a
 Formato simplificado.
