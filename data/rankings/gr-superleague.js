@@ -15,6 +15,9 @@ window.RANKINGS["gr-superleague"] = {
   2023: {
     leagueSize: null,
     clubs: [
+      { id:"oficrete-gr", revenue:7.288, reportType:"official_balance_sheet",
+        sourceId:"oficrete-gr-ofi-income-stmt-2023-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.135],["Otros ingresos",2.153]] },
       { id:"levadiakos-gr", revenue:3.965, reportType:"official_balance_sheet",
         sourceId:"levadiakos-gr-fs-2023-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.275],["Otros ingresos",3.689]] },
