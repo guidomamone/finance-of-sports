@@ -217,6 +217,10 @@ Mitigaciones:
   Escalera de la compuerta (Versión 582, to-do 155 escalón 1): primero las 4 combinaciones de signo del financiero y del impuesto con el
   resultado EXACTO (media unidad impresa por fila); solo si ninguna es exacta, la tolerancia de siempre. Caso: Cremonese 2025 ganaba
   "los dos invertidos" a 8.522 EUR del impreso cuando "impuesto invertido" daba exacto.
+  Escalón 2 (to-do 212), entre las combinaciones exactas y la tolerancia: el signo de CADA fila del financiero por su rótulo (intereses
+  cobrados / ingresos financieros suman, pagados / gastos financieros restan; un rótulo que no dice o dice las dos cosas queda como está
+  impreso; listas FIN_INGRESO / FIN_GASTO de `tools/vocabulario.mjs`), con la misma compuerta EXACTA. Caso: Volos 2021-2025 imprime los
+  intereses cobrados y pagados los dos en positivo; en bloque, 2021 y 2025 entraban por la tolerancia con el cobrado cargado como gasto.
 - c) Año anterior cargado: la columna del año anterior contra lo que tiene el sitio.
 - d) Año vecino: si el documento del año siguiente ya pasó por extraer, su columna "año anterior" tiene que coincidir.
 - e) Redondeo: si solo falta menos de media unidad por fila, se agrega una fila "Diferencia de redondeo".

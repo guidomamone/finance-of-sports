@@ -439,6 +439,32 @@ export const VOCABULARIO = {
     zh: ['合计', '总计', '合計'], ja: ['合計'], ko: ['합계', '총계', '소계'], ar: ['الاجمالي'],
   },
 
+  // ---- SIGNO DE UNA FILA DEL FINANCIERO POR SU RÓTULO (to-do 212, escalón 2 de la compuerta del resultado en verificar.mjs). Un documento
+  // puede imprimir los intereses cobrados y los pagados los dos en positivo (Volos 2021-2025: "Πιστωτικοί τόκοι" y "Χρεωστικοί τόκοι"); el
+  // rótulo dice cuál suma y cuál resta. Una fila que matchea los dos (o ninguno) queda con su signo impreso.
+  FIN_INGRESO: {
+    es: ['ingresos financieros', 'ingreso financiero', 'intereses ganados', 'intereses cobrados', 'rendimientos financieros'],
+    pt: ['receitas financeiras', 'receita financeira', 'rendimentos financeiros', 'juros ativos', 'juros recebidos', 'juros auferidos'],
+    en: ['finance income', 'financial income', 'interest income', 'interest receivable', 'interest received', 'investment income'],
+    de: ['zinsertrage', 'zinsen und ahnliche ertrage', 'finanzertrage', 'finanzertrag'], fr: ['produits financiers'],
+    it: ['proventi finanziari', 'interessi attivi'], nl: ['financiele baten', 'rentebaten', 'financiele opbrengsten'],
+    da: ['finansielle indtaegter', 'renteindtaegter'], no: ['finansinntekter', 'renteinntekter', 'finansielle inntekter'],
+    sv: ['finansiella intakter', 'ranteintakter'], hr: ['financijski prihodi', 'prihodi od kamata'], cs: ['financni vynosy', 'vynosove uroky'],
+    pl: ['przychody finansowe'], tr: ['finansman gelirleri', 'finansal gelirler', 'faiz gelirleri'],
+    el: ['πιστωτικοι τοκοι', 'χρηματοοικονομικα εσοδα', 'εσοδα τοκων'], ru: ['проценты к получению', 'финансовые доходы'], ja: ['受取利息', '金融収益'],
+  },
+  FIN_GASTO: {
+    es: ['gastos financieros', 'gasto financiero', 'intereses pagados', 'costos financieros', 'costes financieros'],
+    pt: ['despesas financeiras', 'despesa financeira', 'juros passivos', 'juros pagos', 'encargos financeiros'],
+    en: ['finance costs', 'finance cost', 'financial expense*', 'financial costs', 'interest expense', 'interest payable', 'interest paid'],
+    de: ['zinsaufwand', 'zinsaufwendungen', 'zinsen und ahnliche aufwendungen', 'finanzaufwand', 'finanzaufwendungen'], fr: ['charges financieres'],
+    it: ['oneri finanziari', 'interessi passivi'], nl: ['financiele lasten', 'rentelasten'],
+    da: ['finansielle omkostninger', 'renteudgifter'], no: ['finanskostnader', 'rentekostnader', 'finansielle kostnader'],
+    sv: ['finansiella kostnader', 'rantekostnader'], hr: ['financijski rashodi', 'rashodi od kamata'], cs: ['financni naklady', 'nakladove uroky'],
+    pl: ['koszty finansowe'], tr: ['finansman giderleri', 'finansal giderler', 'faiz giderleri'],
+    el: ['χρεωστικοι τοκοι', 'χρηματοοικονομικα εξοδα', 'εξοδα τοκων'], ru: ['проценты к уплате', 'финансовые расходы'], ja: ['支払利息', '金融費用'],
+  },
+
   // ---- TOTAL DE INGRESOS al comienzo de una etiqueta (proponer-carga.mjs: detecta la fila del total de ingresos del documento).
   TOTAL_INGRESOS: {
     es: ['total de ingresos', 'total ingresos', 'total de recursos', 'total recursos', 'ingresos totales', 'recursos totales', 'ingresos de actividades ordinarias'],
@@ -622,6 +648,9 @@ export const GANANCIA_PERDIDA_RE = compilar(T('GANANCIA_PERDIDA'));
 // Subtotal/total: al comienzo O al final de la etiqueta.
 export const TOTAL_INICIO_RE = compilar(T('TOTAL_INICIO'), 'inicio');
 export const TOTAL_FIN_RE = compilar(T('TOTAL_FIN'), 'fin');
+// (to-do 212) signo de una fila del financiero por su rótulo; se prueban sobre normalizar(etiqueta)
+export const FIN_INGRESO_RE = compilar(T('FIN_INGRESO'));
+export const FIN_GASTO_RE = compilar(T('FIN_GASTO'));
 export const TOTAL_RE = new RegExp(`${TOTAL_INICIO_RE.source}|${TOTAL_FIN_RE.source}`, 'u');
 export const esTotal = (etiqueta) => TOTAL_RE.test(normalizar(etiqueta));
 export const TOTAL_INGRESOS_RE = compilar(T('TOTAL_INGRESOS'), 'inicio');

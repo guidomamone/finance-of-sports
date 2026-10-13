@@ -42,6 +42,7 @@ import { cierrePorVecinos } from './cierre-vecinos.mjs';
 import { VERSION_AMPLIADO } from './indice-bloques.mjs';
 import { norm as normNum } from './verify-numbers.mjs';
 import { ajusteDe, ajustesDe } from './ajustes.mjs';
+import { FIN_INGRESO_RE, FIN_GASTO_RE, INGRESOS_RE, GASTOS_RE, normalizar } from './vocabulario.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
 const { loadSite, parseNumber } = await import('./proponer-carga.mjs');
 process.argv = argvAntes;
@@ -580,6 +581,18 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const fin = renglonesOTotal('financiero'); const imp = renglonesOTotal('impuesto');
   const suma = (arr, c = 'M') => arr.reduce((a, f) => a + (f[c] || 0), 0);
   const conSigno = (arr, c = 'M') => arr.reduce((a, f) => a + (f[c] || 0), 0);
+  // (to-do 212) SIGNO DE UNA FILA DEL FINANCIERO POR SU RÓTULO: +1 si dice ingreso financiero (intereses cobrados, receitas financeiras,
+  // finance income...), -1 si dice gasto financiero, 0 si no dice o dice las dos cosas ("Ingresos y gastos financieros", "Oneri e proventi
+  // finanziari": queda con su signo impreso). Las listas están en tools/vocabulario.mjs (FIN_INGRESO / FIN_GASTO).
+  const signoRotulo = (f) => {
+    const t = normalizar(f.etiqueta || '');
+    const ing = FIN_INGRESO_RE.test(t) && !GASTOS_RE.test(t); const gas = FIN_GASTO_RE.test(t) && !INGRESOS_RE.test(t);
+    return ing && !gas ? 1 : gas && !ing ? -1 : 0;
+  };
+  const conSignoRotulo = (arr) => arr.reduce((a, f) => { const sg = signoRotulo(f); return a + (sg ? sg * Math.abs(f.M || 0) : (f.M || 0)); }, 0);
+  // el efecto del financiero y el signo del impuesto según la lectura que cerró (los mismos nombres que COMBOS, más "financiero por rótulo")
+  const finSegun = (lect, arr) => (/por rótulo/.test(String(lect)) ? conSignoRotulo(arr) : (/financiero e impuesto invertidos|financiero invertido/.test(String(lect)) ? -1 : 1) * conSigno(arr));
+  const siSegun = (lect) => (/financiero e impuesto invertidos|impuesto invertido/.test(String(lect)) ? -1 : 1);
 
   // 3. totales y resultado: LA ESCALERA DE LECTURAS (Versión 342, flujo aprobado por Guido el 2026-10-01). Se prueba una lectura; si no cierra
   // con un número impreso (resultado o totales), la siguiente, que agrega una interpretación más a la anterior. Gana la primera que cierra y
@@ -792,6 +805,18 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           if (exacto ? Math.abs(Math.abs(pat) - Math.abs(objetivo)) <= tol5 : cerca(Math.abs(pat), Math.abs(objetivo))) { okRes = true; lect = nm; exactoRes = exacto; break; }
         }
         if (okRes) break;
+        // (to-do 212, escalón 2, aprobado por Guido el 2026-10-13) EL SIGNO DE CADA FILA DEL FINANCIERO POR SU RÓTULO, entre los signos en
+        // bloque exactos (arriba) y la tolerancia (la vuelta siguiente). Volos 2023-24 imprime "Πιστωτικοί τόκοι" 5.104,81 y "Χρεωστικοί
+        // τόκοι" 5.967,01, los dos en positivo: en bloque daba 482.369,93 o 504.513,57 contra 492.579,55 impreso; por rótulo, 493.441,75 +
+        // 5.104,81 − 5.967,01 = 492.579,55 exacto. Y en Volos 2020-21 "los dos como gasto" entraba en la tolerancia (125,6 = 2 × 62,83 de
+        // diferencia) y se cargaba mal. Misma compuerta: resultado EXACTO. Solo si algún rótulo cambia algo respecto de lo impreso.
+        if (exacto && finL.some((f) => signoRotulo(f)) && Math.abs(conSignoRotulo(finL) - conSigno(finL)) > 1e-9) {
+          for (const si of conImp ? [1, -1] : [1]) {
+            const pat = suma(ing) - suma(gas) + conSignoRotulo(finL) + (conImp ? si * conSigno(imp) : 0);
+            if (Math.abs(Math.abs(pat) - Math.abs(objetivo)) <= tol5) { okRes = true; lect = si === 1 ? 'financiero por rótulo' : 'financiero por rótulo, impuesto invertido'; exactoRes = true; break; }
+          }
+          if (okRes) break;
+        }
       }
       if (!okRes) okRes = false;
       ch.push({ nombre: nombreRes, ok: okRes, detalle: okRes ? `cierra (${lect})` : `ingresos ${r6(suma(ing))} - gastos ${r6(suma(gas))} ± financiero ${r6(conSigno(fin))}${conImp ? ` ± impuesto ${r6(conSigno(imp))}` : ''} no da el impreso ${r6(objetivo)}` });
@@ -1055,8 +1080,8 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       let confirma = false; let porque = '';
       const objetivo = E.objetivo; const conImpR = !chequeos.some((c) => c.nombre === 'resultado antes de impuestos');
       if (objetivo != null && isFinite(objetivo) && alt != null && isFinite(alt) && isFinite(actualN) && alt !== actualN) {
-        const [sf, si] = { 'como impresos': [1, 1], 'financiero e impuesto invertidos': [-1, -1], 'impuesto invertido': [1, -1], 'financiero invertido': [-1, 1] }[lectura] || [1, 1];
-        const pat = suma(ing) - suma(gas) + sf * conSigno(fin) + (conImpR ? si * conSigno(imp) : 0);
+        const sf = /por rótulo/.test(String(lectura)) ? 1 : (/financiero e impuesto invertidos|financiero invertido/.test(String(lectura)) ? -1 : 1); const si = siSegun(lectura);
+        const pat = suma(ing) - suma(gas) + finSegun(lectura, fin) + (conImpR ? si * conSigno(imp) : 0);
         const dM = Math.sign(fila.M || 1) * (Math.abs(alt) - Math.abs(actualN)) * mult(fila.bloque);
         const efecto = ing.includes(fila) ? dM : gas.includes(fila) ? -dM : fin.includes(fila) ? sf * dM : imp.includes(fila) && conImpR ? si * dM : 0;
         const tolR = Math.max(1e-6, 0.5 * [...ing, ...gas, ...fin].reduce((a, f) => a + (f.u || 0), 0));
@@ -1280,8 +1305,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   //              negativo (más de la mitad del dinero de los renglones de ingreso). Sin señal no decide: frena como antes (un lado mal
   //              extraído no se arregla dando vuelta el resultado).
   if (!forzado && !resultadoFinal && resParaCargar != null && res && E.cierra && E.exacto && E.ch.some((c) => c.nombre === 'resultado del ejercicio' && c.ok)) {
-    const [sf, si] = { 'como impresos': [1, 1], 'financiero e impuesto invertidos': [-1, -1], 'impuesto invertido': [1, -1], 'financiero invertido': [-1, 1] }[lectura] || [1, 1];
-    const pat = suma(E.ing) - suma(E.gas) + sf * conSigno(fin) + si * conSigno(imp);
+    const pat = suma(E.ing) - suma(E.gas) + finSegun(lectura, fin) + siSegun(lectura) * conSigno(imp);
     if (Math.sign(pat) === -Math.sign(res)) {
       let etRes = ''; try { etRes = readFileSync(resolve(ROOT, md), 'utf8').split('\n')[(F.resultado?.linea ?? 0) - 1] || ''; } catch {}
       etRes = etRes.split('|').filter((c) => /[a-zà-ú]/i.test(c)).slice(0, 1).join(' ');
@@ -1308,6 +1332,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // cambia nada (UC).
   const lect = String(lectura || '');
   const sfCarga = forzado ? 1 : /financiero e impuesto invertidos|financiero invertido/.test(lect) ? -1 : 1;
+  // (to-do 212) "financiero por rótulo": cada fila con el signo de su rótulo (las que no dicen nada, como están impresas)
+  const porRotulo = !forzado && /por rótulo/.test(lect);
+  const finCarga = (f) => (porRotulo ? (signoRotulo(f) ? signoRotulo(f) * Math.abs(f.M || 0) : f.M) : sfCarga * f.M);
   const siCarga = forzado || resultadoFinal?.impuesto === 'restado' ? -1 : resultadoFinal?.impuesto === 'sumado' ? 1 : /financiero e impuesto invertidos|impuesto invertido/.test(lect) ? -1 : 1;
 
   const obsoletos = cerrarObsoletos(pdf, 'verificar', vigentes);
@@ -1324,8 +1351,8 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // nada nuevo. Hasta la 391 salía como ingreso negativo y la carga no cerraba.
     lineas: [...ing.map((f) => [f, 'ingreso']), ...gas.map((f) => [f, 'gasto'])].map(([f0, lista]) => { const opuesto = lista === 'ingreso' ? 'gasto' : 'ingreso'; return f0.lado === opuesto && f0.M < 0 ? { ...f0, M: -f0.M } : f0; }).map((f) => ({ etiqueta: f.etiqueta, lado: f.lado, M: r6(f.M), pagina: f.pagina, linea: f.linea ?? null, origen: f.origen || 'estado', ...(f.catAjuste ? { categoria: f.catAjuste } : {}) })),
     // financiero / impuesto: su efecto en el resultado (ver SIGNOS ... PARA LA CARGA arriba); `signosCarga` dice qué se invirtió.
-    signosCarga: { financiero: sfCarga, impuesto: siCarga },
-    financiero: fin.map((f) => ({ etiqueta: f.etiqueta, M: r6(sfCarga * f.M), linea: f.linea })), impuesto: imp.map((f) => ({ etiqueta: f.etiqueta, M: r6(siCarga * f.M), linea: f.linea })) };
+    signosCarga: { financiero: porRotulo ? 'rótulo' : sfCarga, impuesto: siCarga },
+    financiero: fin.map((f) => ({ etiqueta: f.etiqueta, M: r6(finCarga(f)), linea: f.linea })), impuesto: imp.map((f) => ({ etiqueta: f.etiqueta, M: r6(siCarga * f.M), linea: f.linea })) };
   if (notaSubtotalLados.size) out.notaSubtotal = [...notaSubtotalLados]; // (to-do 163) la señal que se queda prendida, ver ladosCero
   if (confirmadosPorSumas.length) out.confirmadosPorSumas = confirmadosPorSumas; // (to-do 176) los lee avisarRegistro()
   writeFileSync(resolve(ROOT, derivado(md, '.verificacion.json')), JSON.stringify(out, null, 1));

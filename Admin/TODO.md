@@ -102,12 +102,6 @@ ni en el comentario de ningún archivo de código.
 
 
 
-212. INTERESES IMPRESOS SIN SIGNO Y TOLERANCIA QUE LOS TAPA (mejora de script, datos). Volos 2021-2025 imprime interés cobrado y pagado sin
-    signo; la carga sumaba los dos como costo (2024: financiero −11.072 € en vez de −862 €). Solo 2024 no cerraba: en 2021 y 2025 la diferencia
-    (2 × el cobrado) entraba en la tolerancia y la verificación decía "cierra". Hoy se corrigió con ajustes `fila`. Evaluar un escalón: el signo
-    de cada fila del financiero por su etiqueta (πιστωτικοί/χρεωστικοί, receitas/despesas financeiras, financial income/expense), con
-    compuerta de resultado EXACTO, cuando la lectura cierra solo dentro de la tolerancia.
-
 213. DUDAS DE ESCALA QUE OTRO DOCUMENTO DEL MISMO AÑO RESPONDE (optimización, cola). OFI 2018-2024 y Volos 2020-2025 preguntaban "¿los importes
     están en euros?" y el informe del directorio del mismo año imprime el mismo Κύκλος εργασιών con "€". Evaluar un escalón: si un documento
     hermano de la carpeta (mismo cierre) imprime el mismo número con símbolo o leyenda de moneda/escala, la duda se cierra sola con esa cita.

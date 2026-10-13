@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 679 — To-do 212: el signo de cada fila del financiero por su rótulo (2026-10-13)
+
+- `verificar.mjs`: escalón 2 de la compuerta del resultado, entre los signos en bloque exactos y la tolerancia: cada fila del financiero
+  con el signo de su rótulo (listas nuevas FIN_INGRESO / FIN_GASTO en `tools/vocabulario.mjs`, 18 idiomas; un rótulo mixto como "Oneri e
+  proventi finanziari" queda como está impreso), pidiendo el resultado EXACTO. Volos 2021-2025 sin sus ajustes `fila`: 2024 pasa de la cola
+  a cerrar exacto y 2021 y 2025 dejan de cargar el interés cobrado como gasto (entraban por la tolerancia). Sobre los 347 documentos
+  verificados: 4 cambian de lectura (Hellas Verona 2022, 2024 y 2025, Torino 2019) con lo cargado idéntico. `prueba-completa`: idéntico.
+  Se borra el 212. Los ajustes `fila` de Volos quedan (escalón 0, dan lo mismo).
+
 ## Versión 678 — To-do 211 como escalón: la respuesta a una duda cierra la otra del mismo cuadro (2026-10-13)
 
 - `verificar.mjs`: en lugar de juntar en un caso las dos dudas de un cuadro (escondía una pregunta genuina en Levadiakos 2019), las dos van
