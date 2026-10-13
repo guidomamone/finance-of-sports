@@ -217,7 +217,7 @@ explica en la prosa qué trae el documento, y lo que queda es elegir. `--dudas` 
 lo que dijo Claude, cada cita con su estado y qué páginas se revisaron.
 
 **Gasto total de API de esta tarea: US$ 2,95** (backtest 1,15 + corrida 1,73 + Sarpsborg 0,08).
-Todo quedó en `Admin/claude-api/resultados.jsonl` con `tarea: "alta-club"` o
+Todo quedó en `Admin/registros/api/claude-api.jsonl` con `tarea: "alta-club"` o
 `"alta-club-backtest"`, sin campo `md`.
 
 ## 4. Rangos plausibles de tipo de cambio

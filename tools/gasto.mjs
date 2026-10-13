@@ -7,7 +7,7 @@
 // cuesta menos por documento?") ni detectar plata tirada.
 //
 // De dónde sale cada número:
-//   - Admin/mistral/resultados.jsonl, Admin/gemini/resultados.jsonl, Admin/claude-api/resultados.jsonl: una línea por llamada
+//   - Admin/registros/api/mistral.jsonl, Admin/registros/api/gemini.jsonl, Admin/registros/api/claude-api.jsonl: una línea por llamada
 //     con `costUsd`. OJO: cuando la llamada la hace tools/resolver-inventario.mjs, el `pdf` de esos logs es un archivo temporal
 //     (`/var/folders/.../lote0.pdf`, las páginas recortadas), así que NO sirve para saber de qué documento era. Por eso:
 //   - Admin/transcripciones-verificaciones.jsonl: el resolver deja ahí `costoUsd` POR DOCUMENTO (lo que gastó validándolo).
@@ -45,7 +45,7 @@ const enRango = (r) => !desde || String(r.ts || '') >= desde;
 const usd = (n) => `$${n.toFixed(2)}`;
 
 // ---------------------------------------------------------------- por motor y por día
-const motores = { mistral: 'Admin/mistral/resultados.jsonl', gemini: 'Admin/gemini/resultados.jsonl', 'claude-api': 'Admin/claude-api/resultados.jsonl' };
+const motores = { mistral: 'Admin/registros/api/mistral.jsonl', gemini: 'Admin/registros/api/gemini.jsonl', 'claude-api': 'Admin/registros/api/claude-api.jsonl' };
 const porMotor = {}; const porDia = {};
 for (const [motor, rel] of Object.entries(motores)) {
   for (const r of readJsonl(rel).filter(enRango)) {

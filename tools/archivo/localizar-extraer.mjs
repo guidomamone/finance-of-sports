@@ -28,7 +28,7 @@
 // MODELO: Claude Opus 5.5 (el modelo por defecto del proyecto, como categorizar-claude.mjs), esfuerzo bajo, salida en JSON con esquema
 // (structured outputs) y `fallbacks: "default"` (si un clasificador de seguridad rechaza el pedido, lo reintenta otro modelo). Llamadas con
 // fetch directo, sin SDK: el proyecto no tiene package.json (mismo criterio que categorizar-claude.mjs). Tope de 5 minutos por llamada: sin
-// tope, una conexión colgada frena la corrida para siempre. Cada llamada queda en Admin/claude-api/resultados.jsonl (tarea 'localizar' /
+// tope, una conexión colgada frena la corrida para siempre. Cada llamada queda en Admin/registros/api/claude-api.jsonl (tarea 'localizar' /
 // 'extraer'), así tools/gasto.mjs la cuenta.
 //
 // USO:
@@ -86,7 +86,7 @@ async function llamar({ apiKey, system, user, schema, tarea, pdf }) {
     catch (e) { ultimo = String(e); await sleep(3000 * (intento + 1)); continue; }
     if (res.ok) {
       const j = await res.json(); const costo = costOf(MODELO, j.usage);
-      appendFileSync(resolve(ROOT, 'Admin', 'claude-api', 'resultados.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tarea, pdf, model: j.model, promptTokenCount: j.usage?.input_tokens, cacheReadTokens: j.usage?.cache_read_input_tokens, candidatesTokenCount: j.usage?.output_tokens, costUsd: Number(costo.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: j.stop_reason }) + '\n');
+      appendFileSync(resolve(ROOT, 'Admin', 'registros', 'api', 'claude-api.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tarea, pdf, model: j.model, promptTokenCount: j.usage?.input_tokens, cacheReadTokens: j.usage?.cache_read_input_tokens, candidatesTokenCount: j.usage?.output_tokens, costUsd: Number(costo.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: j.stop_reason }) + '\n');
       if (j.stop_reason === 'refusal') return { error: `refusal: ${JSON.stringify(j.stop_details)}`, costo };
       const texto = (j.content || []).filter((c) => c.type === 'text').map((c) => c.text).join('');
       try { return { datos: JSON.parse(texto), costo }; } catch { return { error: `JSON inválido (stop=${j.stop_reason})`, costo }; }

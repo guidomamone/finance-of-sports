@@ -1,7 +1,7 @@
 # Test de categorización con Claude (escalón 2, lo que Jev deja < 0,90)
 
 Generado el 2026-09-30 con `tools/categorizar-claude.mjs --backtest`. Gasto total del test: **US$ 5,62** (314 llamadas, 0 errores, todo
-registrado en `Admin/claude-api/resultados.jsonl` con `tarea: "categorizar"`). Resultados por rubro: `Admin/categorizar-claude/backtest_*.jsonl`.
+registrado en `Admin/registros/api/claude-api.jsonl` con `tarea: "categorizar"`). Resultados por rubro: `Admin/categorizar-claude/backtest_*.jsonl`.
 
 ## Qué se midió
 

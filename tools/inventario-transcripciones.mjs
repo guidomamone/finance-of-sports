@@ -5,7 +5,7 @@
 //
 // Por qué existe (pedido de Guido, 2026-09-29): "dejar todo el inventario actual de .md validado para
 // onboarding" y "cada transcripción necesita conservar quién la hizo". Antes esa información estaba
-// repartida: el motor solo en los logs de cada API (Admin/<motor>/resultados.jsonl), sin marca dentro
+// repartida: el motor solo en los logs de cada API (Admin/registros/api/<motor>.jsonl), sin marca dentro
 // del .md salvo en los escaneos de Mistral, y el estado de verificación en ningún lado.
 //
 // Cómo guarda la información (a propósito NO se escribe dentro de los .md: hay ~2200, las tools de
@@ -119,7 +119,7 @@ function pendingByOnboard(dirs = null) {
 // es ese archivo. Si un motor re-hizo el archivo (Gemini sobre un escaneo de Mistral), gana el último.
 function loadProvenance() {
   const byMd = new Map();
-  const sources = [['mistral', 'Admin/mistral/resultados.jsonl'], ['gemini', 'Admin/gemini/resultados.jsonl'], ['claude-api', 'Admin/claude-api/resultados.jsonl']];
+  const sources = [['mistral', 'Admin/registros/api/mistral.jsonl'], ['gemini', 'Admin/registros/api/gemini.jsonl'], ['claude-api', 'Admin/registros/api/claude-api.jsonl']];
   for (const [engine, rel] of sources) {
     for (const r of readJsonl(resolve(root, rel))) {
       if (!r.md) continue;

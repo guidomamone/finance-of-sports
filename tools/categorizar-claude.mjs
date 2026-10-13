@@ -71,7 +71,7 @@
 //   Extras: --modelo (default claude-opus-5-5), --esfuerzo low|medium|high (default low; Haiku no lo usa),
 //           --concurrencia 4, --semilla 7, --umbral-jev 0.9, --jev-jsonl <ruta>, --muestra-estratificada N
 //
-// COSTO: cada llamada queda en Admin/claude-api/resultados.jsonl (mismo archivo que las tools de transcripción,
+// COSTO: cada llamada queda en Admin/registros/api/claude-api.jsonl (mismo archivo que las tools de transcripción,
 // lo suma tools/gasto.mjs) con `tarea: "categorizar"`, sin campo `md` a propósito: inventario-transcripciones.mjs
 // usa `md` de ese log para saber qué motor hizo cada transcripción, y esto no es una transcripción.
 //
@@ -91,7 +91,7 @@ import vm from 'node:vm';
 
 const root = resolve(import.meta.dirname, '..');
 const envPath = resolve(root, 'Admin', 'api-keys', 'claude-api.env');
-const costLogPath = resolve(root, 'Admin', 'claude-api', 'resultados.jsonl');
+const costLogPath = resolve(root, 'Admin', 'registros', 'api', 'claude-api.jsonl');
 const outDir = resolve(root, 'Admin', 'categorizar-claude');
 
 // Precios por millón de tokens (skill claude-api, tabla cacheada 2026-09-25). La escritura de caché cuesta 1,25x la

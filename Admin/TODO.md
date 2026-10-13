@@ -137,18 +137,16 @@ ni en el comentario de ningún archivo de código.
     y el commit de cada año. Si algo sale mal, el lugar es `tools/evidencia-club.mjs` y `Admin/PIPELINE.md`, "Dónde queda la evidencia" (etapa 8).
 
 217. ORGANIZAR LAS CARPETAS DEL PROYECTO (pedido de Guido). Método: un paso por vez, con ejemplo real; cada paso con `git mv`, buscar la
-    ruta vieja de las dos formas (`Admin/x` y `'Admin', 'x'`) hasta dar 0 fuera de la historia, `node --check` de cada tool tocada y
+    ruta vieja de las dos formas (`Admin/x` y `'Admin', 'x'`) hasta dar 0 fuera de la historia, y además las armadas con una
+    variable (`grep -rnE "'Admin',\s*[a-zA-Z_\[\$]|\`Admin/\$\{" tools`: así se escapaba `resolver-inventario.mjs`, `LOGDIR[engine]`), `node --check` de cada tool tocada y
     `diff` antes/después de `audit.js`, `estado.mjs` y `lote.mjs --lista Admin/lotes/prueba-rapida.txt` (ensayo gratis). Un commit por paso.
     Los registros que solo se agregan (`cola-revision.jsonl`, `cargar-ultimo.jsonl`) citan rutas viejas como texto: no se reescriben,
-    pero hay que confirmar que ningún script las abre. HECHO: raíz (e2.json, Business Books) y lotes (`Admin/lotes/`, los cerrados en Archive).
+    pero hay que confirmar que ningún script las abre. HECHO: raíz (e2.json, Business Books), lotes (`Admin/lotes/`, los cerrados en Archive), claves (`Admin/api-keys/`,
+    `schema.sql` a `tools/supabase/`) y logs de gasto de API (`Admin/registros/api/`).
     FALTA, en este orden (decidido con Guido):
-      a) `Admin/api-keys/<servicio>.env` (los 9 .env; `supabase.env` sigue trackeado a propósito: su clave es pública). 11 tools,
-         `.gitignore`, skills `club-sourcing` y `club-outreach`, PIPELINE.
-      b) Logs de gasto de API (`resultados.jsonl`/`fallidos.jsonl` de claude-api, gemini, mistral) a `Admin/registros/api/`; verificar con
-         `node tools/gasto.mjs` igual.
       c) `Admin/mediciones/`: `tests/`, backtests (`jev/`, `categorizar-claude/`, `altas-claude/`), `informes-etapa6-italia/`, `propuestas/`.
       d) Registros del pipeline (los .jsonl/.txt de la raíz de Admin y los 4 ocultos) a `Admin/registros/`. El paso más grande (~20 tools).
-      e) `sourcing-europa-este-scripts/` a `tools/sourcing-europa-este/`; `supabase/schema.sql` a `tools/supabase/`.
+      e) `sourcing-europa-este-scripts/` a `tools/sourcing-europa-este/`.
       f) `fuentes/`: las notas internas (carpetas de país, `_indice/`, `README.md`) a `Admin/sourcing/`; en `fuentes/` quedan solo las
          páginas públicas `<clubId>.html` (son URLs indexadas: no se mueven). ~30 archivos las citan, incluido `CLAUDE.md`.
       g) `data/<país>/<clubId>-data.js`: el loader de `index.html` (~línea 730) arma la ruta con `clubs[clubId].country`; las ~32 tools,

@@ -81,8 +81,8 @@ function sizedRanges(pdfPath, a, b, tmp) {
 
 const projectRoot = resolve(import.meta.dirname, '..');
 const envPath = resolve(projectRoot, 'Admin', 'api-keys', 'claude-api.env');
-const resultsPath = resolve(projectRoot, 'Admin', 'claude-api', 'resultados.jsonl');
-const failuresPath = resolve(projectRoot, 'Admin', 'claude-api', 'fallidos.jsonl');
+const resultsPath = resolve(projectRoot, 'Admin', 'registros', 'api', 'claude-api.jsonl');
+const failuresPath = resolve(projectRoot, 'Admin', 'registros', 'api', 'claude-api-fallidos.jsonl');
 const fidelidadScript = resolve(projectRoot, 'tools', 'check-transcripcion-fidelidad.js');
 
 function checkFidelidad(mdPath) {

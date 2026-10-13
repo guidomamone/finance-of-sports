@@ -25,7 +25,7 @@ import { derivado, ubicar } from './rutas.mjs';
 import { execFileSync } from 'node:child_process';
 
 const MISTRAL_SCANNED_MARKER = 'ESCANEADO, TRANSCRIPTO CON MISTRAL OCR';
-const mistralResultsPath = resolve(import.meta.dirname, '..', 'Admin', 'mistral', 'resultados.jsonl');
+const mistralResultsPath = resolve(import.meta.dirname, '..', 'Admin', 'registros', 'api', 'mistral.jsonl');
 
 function findMistralScannedNotYetRedone() {
   if (!existsSync(mistralResultsPath)) return [];
@@ -48,10 +48,10 @@ function findMistralScannedNotYetRedone() {
   return out.sort();
 }
 
-const mistralFailuresPath = resolve(import.meta.dirname, '..', 'Admin', 'mistral', 'fallidos.jsonl');
+const mistralFailuresPath = resolve(import.meta.dirname, '..', 'Admin', 'registros', 'api', 'mistral-fallidos.jsonl');
 
 function findPendientesClaude() {
-  const geminiFailuresPath = resolve(import.meta.dirname, '..', 'Admin', 'gemini', 'fallidos.jsonl');
+  const geminiFailuresPath = resolve(import.meta.dirname, '..', 'Admin', 'registros', 'api', 'gemini-fallidos.jsonl');
   const seen = new Set();
   for (const p of [mistralFailuresPath, geminiFailuresPath]) {
     if (!existsSync(p)) continue;
@@ -80,8 +80,8 @@ const DEFAULT_TIMEOUT_MS = 150_000; // 150s -- un documento normal tarda 15-110s
 
 const projectRoot = resolve(import.meta.dirname, '..');
 const envPath = resolve(projectRoot, 'Admin', 'api-keys', 'gemini.env');
-const resultsPath = resolve(projectRoot, 'Admin', 'gemini', 'resultados.jsonl');
-const failuresPath = resolve(projectRoot, 'Admin', 'gemini', 'fallidos.jsonl');
+const resultsPath = resolve(projectRoot, 'Admin', 'registros', 'api', 'gemini.jsonl');
+const failuresPath = resolve(projectRoot, 'Admin', 'registros', 'api', 'gemini-fallidos.jsonl');
 const fidelidadScript = resolve(projectRoot, 'tools', 'check-transcripcion-fidelidad.js');
 
 // Corre tools/check-transcripcion-fidelidad.js (to-do 90) sobre el .md recién escrito. A diferencia

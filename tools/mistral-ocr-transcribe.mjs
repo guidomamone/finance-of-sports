@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Transcribe PDFs a .md usando Mistral OCR (motor de extracción de documentos, no un chat genérico --
 // por eso no tiene el filtro de "RECITATION" que bloquea ~26% de los documentos con Gemini, ver
-// Admin/gemini/fallidos.jsonl). DEFAULT del pipeline desde la Versión 244 (ver CLAUDE.md, "Cada PDF
+// Admin/registros/api/gemini-fallidos.jsonl). DEFAULT del pipeline desde la Versión 244 (ver CLAUDE.md, "Cada PDF
 // nuevo"): corré esto primero con --all; gemini-transcribe.mjs --redo-mistral-scanned es la SEGUNDA
 // pasada, para lo que esto marque como escaneo. `--retry-gemini-failures` de acá abajo es un camino
 // de recuperación aparte (para un lote que corrió Gemini primero y quedó con rechazos RECITATION),
@@ -10,7 +10,7 @@
 // Uso individual: node tools/mistral-ocr-transcribe.mjs "Clubes/Colombia/Alianza FC/estados-financieros-2016.pdf"
 // Uso en lote (todos los PDF sin .md bajo Clubes/):
 //   node tools/mistral-ocr-transcribe.mjs --all [--dir Clubes/Colombia] [--limit 1000] [--concurrency 2]
-// Recuperación (SOLO los que Gemini rechazó por RECITATION, leyendo Admin/gemini/fallidos.jsonl):
+// Recuperación (SOLO los que Gemini rechazó por RECITATION, leyendo Admin/registros/api/gemini-fallidos.jsonl):
 //   node tools/mistral-ocr-transcribe.mjs --retry-gemini-failures
 //
 // Corre entero desde tu propia terminal, sin sesión de Claude Code: 0 tokens de Claude.
@@ -27,9 +27,9 @@ const DEFAULT_TIMEOUT_MS = 150_000;
 
 const projectRoot = resolve(import.meta.dirname, '..');
 const envPath = resolve(projectRoot, 'Admin', 'api-keys', 'mistral.env');
-const resultsPath = resolve(projectRoot, 'Admin', 'mistral', 'resultados.jsonl');
-const failuresPath = resolve(projectRoot, 'Admin', 'mistral', 'fallidos.jsonl');
-const geminiFailuresPath = resolve(projectRoot, 'Admin', 'gemini', 'fallidos.jsonl');
+const resultsPath = resolve(projectRoot, 'Admin', 'registros', 'api', 'mistral.jsonl');
+const failuresPath = resolve(projectRoot, 'Admin', 'registros', 'api', 'mistral-fallidos.jsonl');
+const geminiFailuresPath = resolve(projectRoot, 'Admin', 'registros', 'api', 'gemini-fallidos.jsonl');
 const fidelidadScript = resolve(projectRoot, 'tools', 'check-transcripcion-fidelidad.js');
 
 // Corre tools/check-transcripcion-fidelidad.js (to-do 90) sobre el .md recién escrito -- placeholders
@@ -306,7 +306,7 @@ async function main() {
 
   if (args.includes('--retry-gemini-failures')) {
     const pending = readGeminiFailures();
-    console.log(`${pending.length} PDFs pendientes en Admin/gemini/fallidos.jsonl (sin .md todavía), procesando con Mistral OCR (concurrencia=${concurrency})`);
+    console.log(`${pending.length} PDFs pendientes en Admin/registros/api/gemini-fallidos.jsonl (sin .md todavía), procesando con Mistral OCR (concurrencia=${concurrency})`);
     await runBatch(pending, apiKey, concurrency, timeoutMs);
     return;
   }

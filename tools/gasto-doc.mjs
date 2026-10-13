@@ -8,9 +8,9 @@
 // fechas al lado dejan ver si fue justificada.
 //
 // DE DÓNDE SALE CADA NÚMERO (solo lo que tiene fecha dentro de la corrida):
-//   Claude    Admin/claude-api/resultados.jsonl          localizar (y su segunda vuelta localizar-2), extraer, extraer-reintento,
+//   Claude    Admin/registros/api/claude-api.jsonl          localizar (y su segunda vuelta localizar-2), extraer, extraer-reintento,
 //                                                        categorizar, caja-deuda (con la ruta real del PDF)
-//   Mistral   Admin/mistral/resultados.jsonl             transcribir o re-transcribir
+//   Mistral   Admin/registros/api/mistral.jsonl             transcribir o re-transcribir
 //   resolver  Admin/transcripciones-verificaciones.jsonl `costoUsd` por documento (etapa 2, escalón 1a; sus llamadas a Gemini y Claude
 //                                                        van con rutas temporales, por eso se toma el total que deja el resolver)
 //   validar   lo pasa lote.mjs (`extra`): las páginas escaneadas que leyó Gemini en la etapa 4 (también con rutas temporales)
@@ -33,8 +33,8 @@ const fecha = (ts) => String(ts).slice(5, 16).replace('T', ' ');
 export function gastoPorDocumento(docs, { desde, hasta = '9999', registro = [], extra = {} } = {}) {
   const set = new Set(docs); const mdAPdf = new Map(registro.filter((e) => e.md).map((e) => [e.md, e.pdf]));
   const pagos = []; // { pdf, tarea, ts, usd }
-  for (const x of leer('Admin/claude-api/resultados.jsonl')) if (set.has(x.pdf)) pagos.push({ pdf: x.pdf, tarea: x.tarea, ts: x.ts, usd: x.costUsd || 0 });
-  for (const x of leer('Admin/mistral/resultados.jsonl')) if (set.has(x.pdf)) pagos.push({ pdf: x.pdf, tarea: 'mistral', ts: x.ts, usd: x.costUsd || 0 });
+  for (const x of leer('Admin/registros/api/claude-api.jsonl')) if (set.has(x.pdf)) pagos.push({ pdf: x.pdf, tarea: x.tarea, ts: x.ts, usd: x.costUsd || 0 });
+  for (const x of leer('Admin/registros/api/mistral.jsonl')) if (set.has(x.pdf)) pagos.push({ pdf: x.pdf, tarea: 'mistral', ts: x.ts, usd: x.costUsd || 0 });
   // La línea 'validar-bloques (proceso nuevo)' la escribe verificar.mjs copiando la validación anterior (con su costoUsd): no es un pago.
   for (const x of leer('Admin/transcripciones-verificaciones.jsonl')) { const pdf = mdAPdf.get(x.md); if (pdf && set.has(pdf) && x.costoUsd && !/^validar-bloques/.test(x.method || '')) pagos.push({ pdf, tarea: 'resolver', ts: x.ts, usd: x.costoUsd }); }
   const out = [];

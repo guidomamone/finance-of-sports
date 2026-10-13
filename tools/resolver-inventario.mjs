@@ -127,7 +127,7 @@ let consecutiveAccountFailures = 0;
 // o absoluta si está fuera). Con documentos en paralelo no se puede contar "líneas nuevas del log", se busca por ese md.
 function costOfCall(engine, outAbs, sinceTs) {
   const rel = outAbs.startsWith(root + '/') ? outAbs.slice(root.length + 1) : outAbs;
-  return readJsonl(resolve(root, 'Admin', LOGDIR[engine], 'resultados.jsonl')).filter((r) => r.md === rel && r.ts >= sinceTs).reduce((a, r) => a + (r.costUsd || 0), 0);
+  return readJsonl(resolve(root, 'Admin', 'registros', 'api', `${LOGDIR[engine]}.jsonl`)).filter((r) => r.md === rel && r.ts >= sinceTs).reduce((a, r) => a + (r.costUsd || 0), 0);
 }
 
 const docCost = new AsyncLocalStorage(); // acumulador de costo del documento que se está resolviendo

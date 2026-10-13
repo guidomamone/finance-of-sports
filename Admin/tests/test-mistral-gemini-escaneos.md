@@ -20,7 +20,7 @@ relajarlo.
 
 ## Metodología
 
-- **8 documentos** que Mistral marcó `scanned:true` en `Admin/mistral/resultados.jsonl`, elegidos por
+- **8 documentos** que Mistral marcó `scanned:true` en `Admin/registros/api/mistral.jsonl`, elegidos por
   diversidad de país (Brasil, Colombia, Grecia, Noruega — los 4 con volumen real de escaneos en el
   proyecto al momento del test) y por tamaño (18 a 40 páginas, evitando tanto los anexos de 1 página
   como los bilanci italianos de 100+ páginas, poco representativos del caso común).

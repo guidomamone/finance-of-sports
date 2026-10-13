@@ -46,7 +46,7 @@
 // MODELO: claude-opus-5-5 (default de la skill claude-api), effort `low` (es lectura, no razonamiento
 // largo), salida JSON estricta (`output_config.format` json_schema), system prompt cacheado,
 // `fallbacks: "default"`. HTTP sin SDK, como categorizar-claude.mjs. Costo registrado en
-// Admin/claude-api/resultados.jsonl con `tarea: "alta-club"` (sin campo `md`, igual que "categorizar":
+// Admin/registros/api/claude-api.jsonl con `tarea: "alta-club"` (sin campo `md`, igual que "categorizar":
 // inventario-transcripciones.mjs cuenta como "pagado" cualquier línea con `md`).
 // Números medidos: ver Admin/tests/test-altas-claude.md.
 // ============================================================================
@@ -56,7 +56,7 @@ import { resolve } from 'node:path';
 import { readKey, costOf } from './categorizar-claude.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
-const COST_LOG = resolve(ROOT, 'Admin', 'claude-api', 'resultados.jsonl');
+const COST_LOG = resolve(ROOT, 'Admin', 'registros', 'api', 'claude-api.jsonl');
 export const MODELO_DEFAULT = 'claude-opus-5-5';
 export const UMBRAL_CONFIANZA = 0.8;
 const PRESUPUESTO_CHARS = 45000;

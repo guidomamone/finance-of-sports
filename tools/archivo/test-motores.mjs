@@ -13,7 +13,7 @@
 //      con Ctrl+C y volver a correr: sigue donde quedó).
 //   2. Compara cada uno contra el .md canónico con tools/compare-transcripts.mjs (rubro por rubro:
 //      mismo texto de rubro, ¿mismo número?).
-//   3. Junta el costo real que cada tool ya anota en Admin/<motor>/resultados.jsonl.
+//   3. Junta el costo real que cada tool ya anota en Admin/registros/api/<motor>.jsonl.
 //   4. Escribe el resumen en Admin/tests/test-motores-resultados.md y el detalle en
 //      Admin/tests/test-motores-resultados.jsonl.
 //
@@ -92,7 +92,7 @@ function readJsonl(path) {
 // El costo real de cada corrida: la última línea del log de ese motor cuyo "md" es el archivo de test.
 function costOf(engine, pdfRel) {
   const rel = derivado(pdfRel, `.t-${engine}.md`, { crear: false });
-  const rows = readJsonl(resolve(projectRoot, 'Admin', engine === 'claude' ? 'claude-api' : engine, 'resultados.jsonl'))
+  const rows = readJsonl(resolve(projectRoot, 'Admin', 'registros', 'api', `${engine === 'claude' ? 'claude-api' : engine}.jsonl`))
     .filter((r) => r.md === rel);
   return rows.length ? rows[rows.length - 1].costUsd : null;
 }
@@ -137,7 +137,7 @@ if (dryRun) {
   }
   console.log(`\nTotal: ${totalPages} páginas.`);
   for (const e of ENGINES) console.log(`Costo estimado ${e}: ~$${est[e].toFixed(2)}`);
-  console.log(`Costo estimado TOTAL: ~$${Object.values(est).reduce((a, b) => a + b, 0).toFixed(2)} (gruesa; el real queda en Admin/<motor>/resultados.jsonl)`);
+  console.log(`Costo estimado TOTAL: ~$${Object.values(est).reduce((a, b) => a + b, 0).toFixed(2)} (gruesa; el real queda en Admin/registros/api/<motor>.jsonl)`);
   process.exit(0);
 }
 
