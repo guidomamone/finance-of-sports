@@ -112,11 +112,6 @@ ni en el comentario de ningún archivo de código.
       - Lo que quede en la cola: lo contesta un subagente Sonnet de la sesión con cita del documento (como ya se hizo "Claude, Guido
         delega"), nunca Guido. Si el subagente no puede confirmar, el año no se carga y va a `Admin/dudas-por-club.md`.
 
-216. PRIMER ALTA DE CLUB CON LA EVIDENCIA FUERA DE `data/` (probar en vivo). Ningún lote dio todavía de alta un club nuevo Y cargó su primer
-    año con los scripts que escriben la evidencia en `Admin/carga-clubes/<clubId>.md` en vez de comentarios en `data/`. La primera vez, mirar:
-    el `.md` nuevo del club, que `data/<país>/<club>-data.js` salga sin comentarios (`node tools/audit.js` lo avisa como `comentario-en-data-club`)
-    y el commit de cada año. Si algo sale mal, el lugar es `tools/evidencia-club.mjs` y `Admin/PIPELINE.md`, "Dónde queda la evidencia" (etapa 8).
-
 218. SACAR LAS ETAPAS VIEJAS DE `tools/onboard.mjs` Y ARCHIVAR `tools/prepare-onboarding.mjs` (limpieza de código). Hechos (a) y (b):
     `tieScore()` borrado; el camino de `cargar.mjs` sin `--desde-verificacion` sacado y `proponer-carga.mjs` archivado (sus `loadSite()` y
     `parseNumber()` están en `tools/datos-sitio.mjs`). Falta: (c) separar las dos funciones vivas de `onboard.mjs`, `--quien` (qué club y
