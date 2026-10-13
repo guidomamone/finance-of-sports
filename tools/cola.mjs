@@ -36,7 +36,7 @@
 //   import { agregarCaso, respuestaDe, pendientes } from './cola.mjs';
 // ============================================================================
 
-import { readFileSync, appendFileSync, existsSync } from 'node:fs';
+import { readFileSync, appendFileSync, existsSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
@@ -53,7 +53,17 @@ const DECISIONES = ['aceptar', 'corregir', 'descartar', 'preguntar-club'];
 // más, y un caso cerrado que volvía a aparecer quedaba "contestado" sin que nadie lo contestara: cargar.mjs frenaba por un caso que la cola
 // no mostraba (UC 2013, "Otras ganancias (pérdidas)", ni siquiera buscaba la respuesta de 2014), y verificar.mjs lo daba por respondido y no
 // lo mandaba a la cola (un "no cierra" o un "año vecino distinto" pasaba sin que nadie lo viera).
+// (to-do 224) UNA LECTURA POR PROCESO: leer() se llama en cada respuestaDe/casoYRespuesta (miles de veces en un verificar --lista) y
+// releía y parseaba el archivo entero cada vez: 14 de los 36 s de `verificar.mjs --lista` sobre 237 documentos. Ahora guarda lo leído y
+// vuelve a leer solo si el archivo cambió (tamaño o fecha de modificación): una escritura de esta misma corrida (agregarCaso, responder)
+// lo cambia y la consulta siguiente la ve. Lo devuelto no se modifica en ningún llamador.
+let cacheLeer = null;
 function leer() {
+  let firma = null; try { const st = statSync(ARCHIVO); firma = `${st.size}|${st.mtimeMs}`; } catch { /* no existe */ }
+  if (cacheLeer && cacheLeer.firma === firma) return cacheLeer.datos;
+  const datos = leerArchivo(); cacheLeer = { firma, datos }; return datos;
+}
+function leerArchivo() {
   const casos = new Map(); const resp = new Map(); const cerrado = new Map();
   if (!existsSync(ARCHIVO)) return { casos, resp, cerrado };
   for (const l of readFileSync(ARCHIVO, 'utf8').split('\n')) {

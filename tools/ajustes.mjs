@@ -72,7 +72,7 @@
 //   import { ajusteDe, ajustesDe } from './ajustes.mjs'        lo que usan los scripts
 // ============================================================================
 
-import { readFileSync, appendFileSync, existsSync } from 'node:fs';
+import { readFileSync, appendFileSync, existsSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
 
@@ -81,9 +81,15 @@ const ARCHIVO = resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl');
 export const CAMPOS = ['no-recargar', 'filas-a-mano', 'estado', 'resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
+// (to-do 224) UNA LECTURA POR PROCESO, igual que leer() de cola.mjs: 18 de los 36 s de `verificar.mjs --lista` sobre 237 documentos eran
+// releer este archivo en cada ajusteDe. Se vuelve a leer solo si cambió (tamaño o fecha de modificación). Lo devuelto no se modifica.
+let cacheLeer = null;
 function leer() {
   if (!existsSync(ARCHIVO)) return [];
-  return readFileSync(ARCHIVO, 'utf8').split('\n').filter((l) => l.trim()).map((l) => JSON.parse(l));
+  const st = statSync(ARCHIVO); const firma = `${st.size}|${st.mtimeMs}`;
+  if (cacheLeer && cacheLeer.firma === firma) return cacheLeer.datos;
+  const datos = readFileSync(ARCHIVO, 'utf8').split('\n').filter((l) => l.trim()).map((l) => JSON.parse(l));
+  cacheLeer = { firma, datos }; return datos;
 }
 
 // Todos los ajustes vigentes de un documento (el último por campo; en `fila`, por campo + etiqueta).
