@@ -40,6 +40,7 @@
 //   node tools/perimetro-senales.mjs --md "Clubes/Italia/AC Milan/x.md" --detalle      # un documento, con cada tabla encontrada
 //   node tools/perimetro-senales.mjs --md "Clubes/Grecia/Aris/x.md" --ver-a2           # el texto que recibiría Claude en A2 (gratis)
 //   node tools/perimetro-senales.mjs --lista <txt> --exportar-a2 <carpeta>             # los pedidos de A2 sin caché, para contestarlos sin API
+//   node tools/perimetro-senales.mjs --auditar-a2 <carpeta>                             # auditoría a posteriori: lo que decidió A2 en corridas reales
 // Jev: Admin/api-keys/jev.env con JEV_API_KEY=...; respuestas guardadas en Generados/_cache/jev-perimetro.jsonl (no se paga dos veces).
 // ============================================================================
 import { readFileSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
@@ -451,9 +452,13 @@ export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false,
     for (const [k, v] of unicos) if (v !== valor) for (const { e } of props.filter(({ e, r }) => (e.periodo?.cierre || e.md) === k && r.propuesta === v)) porDocumento.push({ pdf: e.pdf, valor: v, cierre: k });
     if (!valor && !porDocumento.length && pendJev && !ejecutar) { out.push({ carpeta: c, valor: null, porDocumento, pendienteJev: true, detalle: `${evidencia}; ${pendJev} documento(s) se deciden al ejecutar (Jev o Claude)` }); continue; }
     if (!valor && !porDocumento.length) { out.push({ carpeta: c, valor: null, porDocumento, detalle: 'ningún documento del club decide' }); continue; }
+    // (to-do 227) los documentos que decidió el paso A2 (Claude) quedan en la `evidencia` del ajuste ("A2 (Claude): <md>; <md>"), para la
+    // auditoría a posteriori (--auditar-a2).
+    const a2 = props.filter(({ r }) => r.propuesta && /^A2 \(Claude\)/.test(r.motivo || '')).map(({ e }) => e.md);
+    const evA2 = (mds) => (mds.length ? `A2 (Claude): ${mds.join('; ')}` : null);
     if (ejecutar) {
-      if (valor) agregarAjuste({ pdf: c, campo: 'perimetro', valor, motivo: `perimetro-senales.mjs: ${evidencia}`, autor: 'perimetro-senales' });
-      for (const d of porDocumento) agregarAjuste({ pdf: d.pdf, campo: 'perimetro', valor: d.valor, motivo: `perimetro-senales.mjs: el ejercicio ${d.cierre} se publicó solo ${d.valor}${valor ? ` (el club es ${valor})` : ' (el club no tiene un perímetro único)'}; ${evidencia}`, autor: 'perimetro-senales' });
+      if (valor) agregarAjuste({ pdf: c, campo: 'perimetro', valor, motivo: `perimetro-senales.mjs: ${evidencia}`, evidencia: evA2(a2.filter((m) => !porDocumento.some((d) => m === d.pdf.replace(/\.pdf$/i, '.md')))), autor: 'perimetro-senales' });
+      for (const d of porDocumento) agregarAjuste({ pdf: d.pdf, campo: 'perimetro', valor: d.valor, motivo: `perimetro-senales.mjs: el ejercicio ${d.cierre} se publicó solo ${d.valor}${valor ? ` (el club es ${valor})` : ' (el club no tiene un perímetro único)'}; ${evidencia}`, evidencia: evA2(a2.filter((m) => m === d.pdf.replace(/\.pdf$/i, '.md'))), autor: 'perimetro-senales' });
     }
     out.push({ carpeta: c, valor, porDocumento, escrito: ejecutar, detalle: `${evidencia}${porDocumento.length ? `; por documento: ${porDocumento.map((d) => `${d.pdf.split('/').pop()} ${d.valor}`).join(', ')}` : ''}` });
   }
@@ -470,6 +475,26 @@ function linea(r) {
 }
 
 async function main() {
+  // --auditar-a2 <carpeta> (to-do 227): la auditoría a posteriori del paso A2. Junta los documentos que decidió A2 en una corrida real (los
+  // que nombra la `evidencia` de un ajuste `perimetro` firmado por perimetro-senales) y deja un pedido por documento para un subagente de la
+  // sesión, que abre el .md y dice, con cita, si el estado de resultados es del grupo o de la sociedad sola (instruccion.txt). Un error se
+  // corrige con un ajuste del documento, y sube el umbral, cambia un peso o agrega un criterio; después se mide otra vez con
+  // Admin/mediciones/perimetro-a2-medicion.txt.
+  const auditarF = flagVal('--auditar-a2');
+  if (auditarF) {
+    const { writeFileSync } = await import('node:fs');
+    const aj = readFileSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l))
+      .filter((a) => a.campo === 'perimetro' && a.autor === 'perimetro-senales' && !a.anulado && /^A2 \(Claude\): /.test(a.evidencia || ''));
+    const pedidos = []; const vistos = new Set();
+    for (const a of aj) for (const md of a.evidencia.replace(/^A2 \(Claude\): /, '').split('; ')) {
+      if (vistos.has(md) || !existsSync(resolve(ROOT, md))) continue; vistos.add(md);
+      pedidos.push({ n: pedidos.length + 1, md, decidido: a.valor, ajuste: a.pdf, fecha: a.fecha });
+    }
+    const dir = resolve(ROOT, auditarF); mkdirSync(dir, { recursive: true });
+    writeFileSync(resolve(dir, 'instruccion.txt'), `Para cada pedido de pedidos.jsonl: abrí el .md (md) con grep/sed por partes, ubicá el estado de resultados del ejercicio y decidí si es CONSOLIDADO (incluye a la sociedad y a sus controladas) o INDIVIDUAL (la sociedad sola). El pipeline decidió "decidido". Escribí <n>.json con {"perimetro": "consolidado"|"individual"|"no sé", "coincide": true|false, "cita": "línea del .md y qué dice", "explicacion": "una o dos oraciones"}. No edites nada del repositorio.`);
+    writeFileSync(resolve(dir, 'pedidos.jsonl'), pedidos.map((p) => JSON.stringify(p)).join('\n') + (pedidos.length ? '\n' : ''));
+    console.log(`${pedidos.length} documento(s) decididos por A2 para auditar en ${auditarF}${pedidos.length ? ' (instruccion.txt + pedidos.jsonl)' : ''}.`); return;
+  }
   const verdadF = flagVal('--verdad'); const listaF = flagVal('--lista'); const mdF = flagVal('--md');
   let items = [];
   if (verdadF) items = readFileSync(resolve(ROOT, verdadF), 'utf8').split('\n').filter((l) => l.trim() && !l.startsWith('#')).map((l) => { const [md, per] = l.split('\t'); return { md, verdad: per }; });
