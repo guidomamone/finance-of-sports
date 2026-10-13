@@ -61,7 +61,7 @@ window.RANKINGS["gr-superleague"] = {
         mix:[["Comercial / Sponsors",11.922],["Estadio",3.986],["Televisión",1.597],["Premios por competencias",1.756],["Otros ingresos",2.784]] },
       { id:"asterastripolis-gr", revenue:3.839, reportType:"official_balance_sheet",
         sourceId:"asterastripolis-gr-asteras-fs-2020-06-30",
-        mix:[["Estadio",0.202],["Televisión",0.957],["Venta de Jugadores",0.773],["Otros ingresos",1.906]] },
+        mix:[["Estadio",0.202],["Televisión",0.957],["Venta de Jugadores",0.833],["Otros ingresos",1.846]] },
       { id:"oficrete-gr", revenue:3.68, reportType:"official_balance_sheet",
         sourceId:"oficrete-gr-ofi-notes-2020-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.055],["Otros ingresos",1.625]] },

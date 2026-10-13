@@ -57,7 +57,7 @@ Generados/Grecia/Asteras Tripolis/Asteras_FS_2020-06-30.categorias.json (escaló
 | 3 | Έσοδα από παραχώρηση ποδοσφαιριστών | pág. 31, precedente |
 | 4 | Επιχορηγήσεις | pág. 31, Claude 0.85 |
 | 5 | Έσοδα από παροχή υπηρεσιών σε τρίτους | pág. 31, precedente |
-| 6 | Έσοδα από συνεισφορά αλληλεγγύης | pág. 31, Jev 0.97 |
+| 6 | Έσοδα από συνεισφορά αλληλεγγύης | pág. 31, precedente |
 | 7 | Άλλα λειτουργικά έσοδα | pág. 31, Jev 0.97 |
 | 8 | Λοιπά Έκτακτα και ανόργανα έσοδα | pág. 31, Jev 1 |
 
@@ -77,14 +77,9 @@ Generados/Grecia/Asteras Tripolis/Asteras_FS_2020-06-30.categorias.json (escaló
 ### Meta
 
 ```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-13): categoria = player_sales. mecanismo de solidaridad cobrado por jugadores formados en el club: compraventa de jugadores, igual que Asteras 2021-2025 (decisión de Guido 2026-10-13)
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-13): gr-superleague, verificado contra roster cacheado de "2019–20 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Asteras Tripolis".
 ```
 
 ## 2019

@@ -16,7 +16,7 @@ const asterastripolisgrRevenueLinesByYear = {
     { rawLabel:'Έσοδα από παραχώρηση ποδοσφαιριστών', normalizedCategory:'player_sales', amountNative:0.690353, disclosureLevel:'aggregated' },
     { rawLabel:'Επιχορηγήσεις', normalizedCategory:'other_income', amountNative:0.405879, disclosureLevel:'aggregated' },
     { rawLabel:'Έσοδα από παροχή υπηρεσιών σε τρίτους', normalizedCategory:'other_income', amountNative:1.239662, disclosureLevel:'aggregated' },
-    { rawLabel:'Έσοδα από συνεισφορά αλληλεγγύης', normalizedCategory:'other_income', amountNative:0.053814, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα από συνεισφορά αλληλεγγύης', normalizedCategory:'player_sales', amountNative:0.053814, disclosureLevel:'aggregated' },
     { rawLabel:'Άλλα λειτουργικά έσοδα', normalizedCategory:'other_income', amountNative:0.000097, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά Έκτακτα και ανόργανα έσοδα', normalizedCategory:'other_income', amountNative:0.002855, disclosureLevel:'aggregated' },
   ],

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2020-06-30.pdf",
  "md": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2020-06-30.md",
- "generado": "2026-10-13T12:59:37.656Z",
+ "generado": "2026-10-13T16:33:30.531Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "asterastripolis-gr",
  "year": 2020,
  "escala": {
   "valor": "unidades",
@@ -11,7 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2020-06-30.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Έσοδα από συνεισφορά αλληλεγγύης",
+   "motivo": "mecanismo de solidaridad cobrado por jugadores formados en el club: compraventa de jugadores, igual que Asteras 2021-2025 (decisión de Guido 2026-10-13)",
+   "evidencia": ".md L1494",
+   "autor": "Guido",
+   "fecha": "2026-10-13"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -27,7 +39,13 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)"
+   "detalle": "cierra (como impresos)",
+   "dif": 8.881784197001252e-16
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 3.538891; el sitio tiene 3.538891"
   },
   {
    "nombre": "documento del año 2021",
@@ -38,14 +56,11 @@
    "nombre": "documento del año 2019",
    "ok": true,
    "detalle": "ingresos de 2019: 3.538891 en Asteras_FS_2019-06-30.pdf y 3.538891 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
   }
  ],
- "notas": [],
+ "notas": [
+  "duda de extraer decidida por las sumas (to-do 222): sí, el cuadro b37 (4.444.615,37) es la suma de L862 + L866 + L867. \"¿Se cargan los renglones por naturaleza de b37 (L1539-L1547) como desglose conjunto de los tres renglones de gasto operativo (Κόστος πωλήσεων, Έξοδα διοίκησης, Έξοδα διάθεσης), sin asignarlos a uno solo?\""
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
