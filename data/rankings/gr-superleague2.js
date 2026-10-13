@@ -26,6 +26,9 @@ window.RANKINGS["gr-superleague2"] = {
       { id:"aellarissa-gr", revenue:1.489, reportType:"official_balance_sheet",
         sourceId:"aellarissa-gr-ael-fs-2023-06-30-a",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.047],["Otros ingresos",0.442]] },
+      { id:"panserraikos-gr", revenue:1.057, reportType:"official_balance_sheet",
+        sourceId:"panserraikos-gr-income-stmt-2023-06-30",
+        mix:[["Comercial / Sponsors",0.421],["Estadio",0.188],["Televisión",0.084],["Venta de Jugadores",0.311],["Otros ingresos",0.053]] },
     ],
   },
   2022: {

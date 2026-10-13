@@ -153,6 +153,7 @@ window.CLUB_INDEX = {
   "osijek-hr": {"n":"Osijek","c":"HR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "palmeiras-br": {"n":"Palmeiras","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "panathinaikos-gr": {"n":"Panathinaikos","c":"GR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
+  "panserraikos-gr": {"n":"Panserraikos","c":"GR","q":"full","y":1,"last":2023,"yrs":[[2023,"official_balance_sheet"]]},
   "parinizhnynovgorod-ru": {"n":"Pari Nizhny Novgorod","c":"RU","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "parma-it": {"n":"Parma","c":"IT","q":"full","y":9,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]],"ci":{"2016":"06-30","2017":"06-30","2018":"06-30","2019":"06-30"}},
   "paysandu-br": {"n":"Paysandu","c":"BR","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
