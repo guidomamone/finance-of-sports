@@ -140,6 +140,23 @@ No se encontró una cifra de cantidad de socios en ninguno de los 9 documentos.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Gimnasia y Esgrima (La Plata), club nuevo (sesión 2026-09-23, to-do 58): 3 balances reales +
+presupuestos, 2 de ellos cargados como overlay de un ejercicio dual (ver
+data/gimnasiaesgrima-ar-data.js). `brandColor:null` (no ausente): camiseta blanca con banda
+azul marino, el que lo identifica es el blanco — mismo bucket que River/Vélez/Sevilla/Real
+Madrid/Valencia/Once Caldas, confirmado en.wikipedia.org.
+```
+
+_de data/club-leagues/ar.js:_
+
+```text
+Confirmado vía en.wikipedia.org ("2025 Club de Gimnasia y Esgrima La Plata season": 2025 fue su
+11ma temporada consecutiva en Primera, sin descenso desde ~2015) — cubre los 4 ejercicios.
+```
+
 ## 2026
 
 ### Ingresos

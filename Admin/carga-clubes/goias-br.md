@@ -41,6 +41,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Goias: alta por tools/alta-club.mjs (2026-10-02) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf. brandColor de Guido
+(2026-10-02: verde #006633; footylogos no tiene a Goiás).
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+Goias (alta-club.mjs, 2026-10-02): verificado contra roster cacheado de "2025 Campeonato Brasileiro Série B" (tools/club-league-reference/br.json), coincidencia exacta "Goiás".
+```
+
 ## 2025
 
 ### Ingresos
@@ -175,6 +188,12 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+### Liga
+
+```text
+2024: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2024 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
+```
+
 ## 2023
 
 ### Ingresos
@@ -251,6 +270,12 @@ tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (n
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+### Liga
+
+```text
+2023: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2023 Campeonato Brasileiro Série A" (tools/club-league-reference/br.js
+```
+
 ## 2022
 
 ### Ingresos
@@ -323,6 +348,12 @@ tools/cargar.mjs (2026-10-02)
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2022: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2022 Campeonato Brasileiro Série A" (tools/club-league-reference/br.js
+```
+
 ## 2021
 
 ### Ingresos
@@ -385,6 +416,12 @@ tools/cargar.mjs (2026-10-02)
 
 ```text
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2021: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2021 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
 ```
 
 ## 2017
@@ -454,6 +491,12 @@ tools/cargar.mjs (2026-10-02)
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2017: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2017 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
+```
+
 ## 2016
 
 ### Ingresos
@@ -508,6 +551,16 @@ tools/cargar.mjs (2026-10-03)
 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2016. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2016-2015' es el ejercicio 2016 con 2015 de comparativo, no 2015.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ajuste manual (2026-10-05, auditoría 2026-10-04 hallazgo 1): ingresos y gastos de fútbol abiertos con las notas 17 y 18 (.md L892-941), que suman exacto lo impreso.
+```
+
+### Liga
+
+```text
+2016: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
+```
+
+```text
+2016: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2016 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
 ```
 
 ## 2015
@@ -573,6 +626,12 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2015: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2015 Campeonato Brasileiro Série A" (tools/club-league-reference/br.js
+```
+
 ## 2014
 
 ### Ingresos
@@ -635,6 +694,16 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2014: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
+```
+
+```text
+2014: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2014 Campeonato Brasileiro Série A" (tools/club-league-reference/br.js
+```
+
 ## 2013
 
 ### Ingresos
@@ -683,6 +752,16 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+### Liga
+
+```text
+2013: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
+```
+
+```text
+2013: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2013 Campeonato Brasileiro Série A" (tools/club-league-reference/br.js
+```
+
 ## 2012
 
 ### Ingresos
@@ -729,6 +808,12 @@ tools/cargar.mjs (2026-10-03)
 2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2012. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2012-2011' es el ejercicio 2012 con 2011 de comparativo, no 2011.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+### Liga
+
+```text
+2012: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2012 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
 ```
 
 ## 2011
@@ -783,6 +868,16 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2011: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
+```
+
+```text
+2011: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2011 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
+```
+
 ## 2010
 
 ### Ingresos
@@ -834,6 +929,16 @@ tools/cargar.mjs (2026-10-03)
 ```text
 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2010. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2010-2009' es el ejercicio 2010 con 2009 de comparativo, no 2009.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2010: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
+```
+
+```text
+2010: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2010 Campeonato Brasileiro Série A" (tools/club-league-reference/br.js
 ```
 
 ## 2009
@@ -892,6 +997,16 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2009: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
+```
+
+```text
+2009: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2009 Campeonato Brasileiro Série A" (tools/club-league-reference/br.js
+```
+
 ## 2008
 
 ### Ingresos
@@ -945,6 +1060,12 @@ tools/cargar.mjs (2026-10-03)
 ```text
 2008: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2008. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2008-2007' es el ejercicio 2008 con 2007 de comparativo, no 2007.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2008: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2008 Campeonato Brasileiro Série A" (tools/club-league-reference/br.js
 ```
 
 ## Fuentes

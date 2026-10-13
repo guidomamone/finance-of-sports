@@ -41,6 +41,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Juventus: alta por tools/alta-club.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.pdf. brandColor AUSENTE a propósito
+(nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).
+```
+
+_de data/club-leagues/it.js:_
+
+```text
+Juventus (alta-club.mjs, 2026-10-03): verificado contra roster cacheado de "2011–12 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Juventus".
+```
+
 ## 2025
 
 ### Ingresos
@@ -85,6 +98,12 @@ tools/cargar.mjs (2026-10-03)
 ```text
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 caja/deuda 2025: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
+```
+
+### Liga
+
+```text
+2025: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2024
@@ -133,6 +152,12 @@ tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (n
 caja/deuda 2024: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
 ```
 
+### Liga
+
+```text
+2024: tools/cargar.mjs 2026-10-04, verificado contra roster cacheado de "2023–24 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2023
 
 ### Ingresos
@@ -178,6 +203,12 @@ tools/cargar.mjs (2026-10-04)
 tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 caja 2023: corregida a mano el 2026-10-04 (Guido): "Cash and cash equivalents" 48,389,386 del balance SEPARADO (.md L4800); caja-deuda.mjs había tomado el consolidado (pág. 53, L1504, 48,676,632). 2003-2006: caja y deuda divididas por 1.000 (caja-deuda leyó esos documentos en miles por las filas de la nota de sponsors abiertas a mano).
 caja/deuda 2023: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
+```
+
+### Liga
+
+```text
+2023: tools/cargar.mjs 2026-10-04, verificado contra roster cacheado de "2022–23 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2022
@@ -254,6 +285,12 @@ tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (n
 caja/deuda 2022: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
 ```
 
+### Liga
+
+```text
+2022: tools/cargar.mjs 2026-10-04, verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2021
 
 ### Ingresos
@@ -301,6 +338,12 @@ tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): a
 caja/deuda 2021: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
 ```
 
+### Liga
+
+```text
+2021: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2020–21 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2020
 
 ### Ingresos
@@ -345,6 +388,12 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): cash escalón 2 (compuerta: año anterior): "Cash and cash equivalents" pág. 46
 caja/deuda 2020: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
+```
+
+### Liga
+
+```text
+2020: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2019–20 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2019
@@ -394,6 +443,12 @@ tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): a
 caja/deuda 2019: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
 ```
 
+### Liga
+
+```text
+2019: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2018–19 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2018
 
 ### Ingresos
@@ -438,6 +493,12 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 42
 caja/deuda 2018: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
+```
+
+### Liga
+
+```text
+2018: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2017–18 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2017
@@ -487,6 +548,12 @@ tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "
 caja/deuda 2017: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
 ```
 
+### Liga
+
+```text
+2017: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2016–17 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2016
 
 ### Ingresos
@@ -534,6 +601,12 @@ tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "
 caja/deuda 2016: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
 ```
 
+### Liga
+
+```text
+2016: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2015–16 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2015
 
 ### Ingresos
@@ -576,6 +649,12 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 66
 caja/deuda 2015: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
+```
+
+### Liga
+
+```text
+2015: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2014–15 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2014
@@ -621,6 +700,12 @@ tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "
 caja/deuda 2014: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
 ```
 
+### Liga
+
+```text
+2014: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2013–14 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2013
 
 ### Ingresos
@@ -662,6 +747,12 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 76
 caja/deuda 2013: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
+```
+
+### Liga
+
+```text
+2013: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2012–13 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2012
@@ -750,6 +841,12 @@ tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "
 caja/deuda 2011: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
 ```
 
+### Liga
+
+```text
+2011: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2010–11 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2010
 
 ### Ingresos
@@ -793,6 +890,12 @@ tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "
 caja/deuda 2010: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
 ```
 
+### Liga
+
+```text
+2010: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2009–10 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2009
 
 ### Ingresos
@@ -833,6 +936,12 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 73
 caja/deuda 2009: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
+```
+
+### Liga
+
+```text
+2009: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2008–09 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2008
@@ -878,6 +987,12 @@ tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): a
 caja/deuda 2008: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
 ```
 
+### Liga
+
+```text
+2008: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2007–08 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2007
 
 ### Ingresos
@@ -918,6 +1033,12 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
 caja/deuda 2007: cargadas a mano el 2026-10-04 (Guido) del balance SEPARADO; deuda = "Loans/Bonds and other financial payables/liabilities" no corriente + corriente (diagnóstico de caja-deuda, Admin/HANDOFF-pipeline.md).
+```
+
+### Liga
+
+```text
+2007: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2006–07 Serie B" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2006
@@ -993,6 +1114,12 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-04): grossDebt escalón 2 (compuerta: año anterior): "4) Due to banks" pág. 79; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
 ```
 
+### Liga
+
+```text
+2006: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2005–06 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2005
 
 ### Ingresos
@@ -1064,6 +1191,12 @@ tools/cargar.mjs (2026-10-03)
 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 192000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2812)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): grossDebt escalón 2 (compuerta: documento siguiente): "4) Due to banks" pág. 70; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
+```
+
+### Liga
+
+```text
+2005: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2004–05 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2004
@@ -1138,6 +1271,12 @@ tools/cargar.mjs (2026-10-03)
 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 392000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3404)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
+```
+
+### Liga
+
+```text
+2004: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2003–04 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2003
@@ -1215,6 +1354,12 @@ tools/cargar.mjs (2026-10-03)
 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 478000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2815)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
+```
+
+### Liga
+
+```text
+2003: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2002–03 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## Fuentes

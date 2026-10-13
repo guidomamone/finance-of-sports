@@ -72,6 +72,33 @@ Ordinarios ya confirmado) que el valor correcto es $5.984.158.778 — el de la n
 tiene una transposición de dígitos. Se usó el valor verificado, no el de la nota.
 ```
 
+_de data/clubs.js:_
+
+```text
+fiscalYearStart corregido a '09-01' en esta sesión (onboarding de Brasil): decía '01-01' desde
+siempre, un dato incorrecto pero inofensivo mientras nada leía este campo (ver comentario de
+`isCalendarYearClub()` en js/finanzas-calc.js, agregado esta sesión — es la primera vez que
+`fiscalYearStart` se usa de verdad). El ejercicio real de River corre de 1° de septiembre a 31 de
+agosto (ver cabecera de data/river-data.js: "Ejercicio 2024 (1° de septiembre de 2023 al 31 de
+agosto de 2024...)"), nunca fue año calendario — con el '01-01' viejo, `isCalendarYearClub('river')`
+hubiera dado true por error y el dropdown "Año"/tabla "Estado de resultados" de River habrían
+perdido el rango de temporada "2023/2024", mostrando solo "2024" suelto, un caso real de dato
+muerto que se vuelve vivo (y rompe algo) al generalizar una función existente — visto y corregido
+en el spot-check del navegador de esta sesión, no antes.
+```
+
+_de data/club-leagues/ar.js:_
+
+```text
+2026 y 2027 son presupuestos: el de 2027 cierra en el futuro, y el de 2026 (cerrado el
+30/6/2026) no se verificó contra la temporada, así que queda en null como cualquier otro
+dato sin chequear.
+2021 verificado el 2026-09-28 contra "2021 Copa de la Liga Profesional" (Wikipedia): River
+("RIV") aparece en la Zona A. Esta página usa una plantilla de tabla deportiva sin sección
+"Teams" (a diferencia de las ligas que sí trae tools/fetch-club-league-reference.mjs hoy),
+así que se confirmó a mano con el wikitext crudo, no con el pipeline automático completo.
+```
+
 ## 2024
 
 ### Ingresos

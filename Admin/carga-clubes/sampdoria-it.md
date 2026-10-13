@@ -41,6 +41,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Sampdoria: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf.
+brandColor y su procedencia: fuentes/Italia/Sampdoria.md.
+```
+
+_de data/club-leagues/it.js:_
+
+```text
+Sampdoria (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Sampdoria".
+```
+
 ## 2021
 
 ### Ingresos
@@ -176,6 +189,12 @@ tools/cargar.mjs (2026-10-09)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2020: tools/cargar.mjs 2026-10-09, verificado contra roster cacheado de "2020–21 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2019
 
 ### Ingresos
@@ -257,6 +276,12 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2019: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2019–20 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2018
@@ -347,6 +372,12 @@ tools/cargar.mjs (2026-10-08)
 2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 440.273. idem
 2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2018-12-31. Fascicolo di Bilancio al 31 dicembre 2018; el 29/03/2019 es la fecha de aprobación del CdA
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2018: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2018–19 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## Fuentes

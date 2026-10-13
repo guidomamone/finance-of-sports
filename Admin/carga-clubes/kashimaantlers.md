@@ -63,6 +63,17 @@ una cotización de cierre exacta.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Japón (J.League), sesión 2026-09-13: 10 clubes, todos con Ejercicio 2025 (temporada calendario
+ene-dic 2025, la convención estándar de J.League — ninguno de estos 10 está en la lista de 7
+clubes con cierre marzo/junio del club_doc-2025.pdf, ver fuentes/Japón/_notas-generales.md).
+reportingCurrency:'JPY' — ver data/currency-map.js para el CURRENCY_META nuevo. displayName usa
+el nombre corto habitual en español/inglés (el que ya usan medios deportivos hispanohablantes),
+name lleva el nombre oficial completo en inglés.
+```
+
 ## 2025
 
 ### Ingresos

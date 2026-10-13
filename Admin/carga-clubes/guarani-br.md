@@ -116,6 +116,26 @@ criterio que Operário Ferroviário.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+2 clubes nuevos (Versión 221, 4to batch de PDF transcriptos pendientes, sesión 2026-09-25,
+prioridad Sudamérica): mismo motor genérico.
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+Verificado el 2026-09-25 (onboarding, Versión 221) contra Wikipedia en inglés (temporadas 2022,
+2023, 2024 y 2025).
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+descendido de la Série B al cierre de 2024
+```
+
 ## 2025
 
 ### Meta

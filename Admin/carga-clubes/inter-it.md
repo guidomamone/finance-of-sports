@@ -41,6 +41,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Inter: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.pdf.
+brandColor y su procedencia: fuentes/Italia/Inter.md.
+```
+
+_de data/club-leagues/it.js:_
+
+```text
+Inter (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia única por palabras "Inter Milan" = "Inter".
+```
+
 ## 2025
 
 ### Ingresos
@@ -189,6 +202,12 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2024: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2023–24 Serie A" (tools/club-league-reference/it.json), coincidencia ú
+```
+
 ## 2023
 
 ### Ingresos
@@ -279,6 +298,12 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2023: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2022–23 Serie A" (tools/club-league-reference/it.json), coincidencia ú
 ```
 
 ## 2022
@@ -381,6 +406,12 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2022: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia ú
+```
+
 ## 2021
 
 ### Ingresos
@@ -477,6 +508,12 @@ tools/cargar.mjs (2026-10-09)
 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): resultado-final = (245.579.264). Claude 2026-10-08 (Guido: to-do 179, ok): el resultado impreso quedó afuera de las filas; cierra exacto con los totales impresos (364.712.220 - 568.782.409 - 33.431.112 - 1.972.728 - 6.105.235)
 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (1.972.728). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la sección D (19 impairment of investments, 1.972.728 impreso en negativo) no entró en el financiero: el impuesto deducido daba 8,08 M contra 6,105 M impresos (current 4.009.004 + deferred -3.805 + 2.100.036)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2021: tools/cargar.mjs 2026-10-09, verificado contra roster cacheado de "2020–21 Serie A" (tools/club-league-reference/it.json), coincidencia ú
 ```
 
 ## 2020
@@ -578,6 +615,12 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2020: verificado 2026-10-09 contra roster cacheado de "2019–20 Serie A" (tools/club-league-reference/it.json), "Internazionale" (= Inter)
+```
+
 ## 2019
 
 ### Ingresos
@@ -661,6 +704,12 @@ tools/cargar.mjs (2026-10-08)
 ```text
 2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 7.147.379. Claude 2026-10-08 (Guido: a mano): el renglón 4) del estado (L795, ingreso 7.147.379) se queda entero: la nota b41 (L2307-L2314) explica los costos que se capitalizan (entrenadores, pensionato, instalaciones) y no es un desglose de ingreso; sin esto sus filas quedaban como gastos y el resultado no cerraba (−62,68 M contra −48,39 M impreso)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2019: verificado 2026-10-09 contra roster cacheado de "2018–19 Serie A" (tools/club-league-reference/it.json), "Internazionale" (= Inter)
 ```
 
 ## 2018
@@ -756,6 +805,12 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2018: verificado 2026-10-09 contra roster cacheado de "2017–18 Serie A" (tools/club-league-reference/it.json), "Internazionale" (= Inter)
 ```
 
 ## Fuentes

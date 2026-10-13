@@ -96,6 +96,14 @@ VERIFICACIÓN Ejercicio 2023/2024: Revenue 76,443297 M - Expenses (cash
 ============================================================================
 ```
 
+_de data/club-leagues/es.js:_
+
+```text
+Verificado el 22/9/2026 contra "2021-22 CA Osasuna season"/"2023-24 CA Osasuna season" y el
+propio documento de Osasuna (Nota 6, "instalaciones de Tajonar... 1ª división" al 30/6/2022):
+Osasuna jugó Primera División los 2 ejercicios cargados, sin descenso.
+```
+
 ## 2024
 
 ### Meta

@@ -41,6 +41,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Lazio: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.pdf.
+brandColor y su procedencia: fuentes/Italia/Lazio.md.
+```
+
+_de data/club-leagues/it.js:_
+
+```text
+Lazio (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2022–23 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Lazio".
+```
+
 ## 2026
 
 ### Ingresos
@@ -79,6 +92,12 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2026: verificado 2026-10-09 contra roster cacheado de "2025–26 Serie A" (tools/club-league-reference/it.json), "Lazio"
 ```
 
 ## 2025
@@ -122,6 +141,12 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2025: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2024
 
 ### Ingresos
@@ -161,6 +186,12 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2024: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2023–24 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2023
@@ -244,6 +275,12 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2022: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2021
 
 ### Ingresos
@@ -309,6 +346,12 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2021: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2020–21 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2020
@@ -379,6 +422,12 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2020: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2019–20 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2019
 
 ### Ingresos
@@ -447,6 +496,12 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2019: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2018–19 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2018
@@ -529,6 +584,12 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2018: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2017–18 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2017
 
 ### Ingresos
@@ -609,6 +670,12 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2017: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2016–17 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2016
 
 ### Ingresos
@@ -649,6 +716,12 @@ tools/cargar.mjs (2026-10-09)
 ```text
 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (1.866.421). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): el financiero es un subtotal que la lectura 5 no toma; impreso (1.866.421)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2016: tools/cargar.mjs 2026-10-09, verificado contra roster cacheado de "2015–16 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2015
@@ -723,6 +796,12 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2015: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2014–15 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2014
 
 ### Ingresos
@@ -765,6 +844,12 @@ tools/cargar.mjs (2026-10-08)
 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (2.060.898). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de impuestos que falta (columnas corridas)
 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 300.414. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de impuestos que falta (columnas corridas)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2014: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2013–14 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2013
@@ -850,6 +935,12 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2013: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2012–13 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2012
 
 ### Ingresos
@@ -920,6 +1011,12 @@ tools/cargar.mjs (2026-10-08)
 2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. Guido 2026-10-08 (documento viejo, a mano): las filas del estado se armaron desde el .md L3549-L3651 (la extracción no trajo las sub-filas) y sin las notas en miles; el total se contaba además de sus filas (to-do 167)
 2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. Guido 2026-10-08 (documento viejo, a mano): las filas del estado se armaron desde el .md L3549-L3651 (la extracción no trajo las sub-filas) y sin las notas en miles; el total se contaba además de sus filas (to-do 167). Cierra: 95.509.291 − 96.230.839 − 2.741.427 + 7.684.529 = 4.221.554
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2012: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2011–12 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2011
@@ -994,6 +1091,12 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2011: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2010–11 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2010
 
 ### Ingresos
@@ -1066,6 +1169,12 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2010: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2009–10 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2009
 
 ### Ingresos
@@ -1136,6 +1245,12 @@ tools/cargar.mjs (2026-10-07)
 
 ```text
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2009: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2008–09 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2008
@@ -1214,6 +1329,12 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2008: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2007–08 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2007
 
 ### Ingresos
@@ -1284,6 +1405,12 @@ tools/cargar.mjs (2026-10-07)
 
 ```text
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2007: verificado 2026-10-09 contra roster cacheado de "2006–07 Serie A" (tools/club-league-reference/it.json), "Lazio"
 ```
 
 ## 2006
@@ -1360,6 +1487,12 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2006: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2005–06 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2005
 
 ### Ingresos
@@ -1419,6 +1552,12 @@ tools/cargar.mjs (2026-10-08)
 ```text
 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 5.462. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): subtotal 17-bis sin hojas que la extracción no cuenta; el impreso cierra con él
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2005: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2004–05 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2004
@@ -1484,6 +1623,12 @@ tools/cargar.mjs (2026-10-09)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2004: tools/cargar.mjs 2026-10-09, verificado contra roster cacheado de "2003–04 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2001
 
 ### Ingresos
@@ -1544,6 +1689,12 @@ tools/cargar.mjs (2026-10-08)
 2001: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): moneda = ITL. Guido 2026-10-08: dejarlo en liras; el documento reporta en millones de liras (ejercicio anterior a 2002) y el sitio lo carga en ITL con su tipo de cambio de cierre (paridad fija 1.936,27 por el EUR/USD del BCE)
 2001: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = individual. Claude 2026-10-08 (Guido: liras de Lazio): el documento solo trae el bilancio d'esercizio de la S.S. Lazio S.p.A. (la revisión es del bilancio d'esercizio; no hay consolidado en el .md): individual, aunque el club se carga consolidado desde 2006
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2001: verificado 2026-10-09 contra roster cacheado de "2000–01 Serie A" (tools/club-league-reference/it.json), "Lazio"
 ```
 
 ## 2000
@@ -1609,6 +1760,12 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2000: verificado 2026-10-09 contra roster cacheado de "1999–2000 Serie A" (tools/club-league-reference/it.json), "Lazio"
+```
+
 ## 1999
 
 ### Ingresos
@@ -1667,6 +1824,12 @@ tools/cargar.mjs (2026-10-08)
 1999: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): moneda = ITL. Guido 2026-10-08: dejarlo en liras; el documento reporta en millones de liras (ejercicio anterior a 2002) y el sitio lo carga en ITL con su tipo de cambio de cierre (paridad fija 1.936,27 por el EUR/USD del BCE)
 1999: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = individual. Claude 2026-10-08 (Guido: liras de Lazio): el documento solo trae el bilancio d'esercizio de la S.S. Lazio S.p.A. (la revisión es del bilancio d'esercizio; no hay consolidado en el .md): individual, aunque el club se carga consolidado desde 2006
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+1999: verificado 2026-10-09 contra roster cacheado de "1998–99 Serie A" (tools/club-league-reference/it.json), "Lazio"
 ```
 
 ## Fuentes

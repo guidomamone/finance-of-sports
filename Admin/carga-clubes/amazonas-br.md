@@ -94,6 +94,12 @@ confirmada por búsqueda. Verificado 2026-09-25.
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+ascendido campeón de la Série C 2023
+```
+
 ## 2024
 
 ### Meta

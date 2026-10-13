@@ -84,6 +84,13 @@ A.1) impreso (23.001.581,87) EXACTO; + netInterest -1,004234 M =
 ============================================================================
 ```
 
+_de data/club-leagues/es.js:_
+
+```text
+Versión de esta sesión: 'es-segunda' se agregó al catálogo (data/leagues.js), así que estos 3
+ejercicios en Segunda YA NO quedan afuera de la tabla, tienen su fila propia.
+```
+
 ## 2025
 
 ### Meta

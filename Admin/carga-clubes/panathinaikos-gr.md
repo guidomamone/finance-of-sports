@@ -65,3 +65,24 @@ FX: EUR, `EUR@2025-06-30` (ya cacheado en data/currency-map.js desde
 antes de esta sesión, cierre BCE, sin fetch nuevo).
 ============================================================================
 ```
+
+_de data/clubs.js:_
+
+```text
+Panathinaikos, primer club griego cargado (2026-09-28, ronda de onboardings de prueba).
+Colores VERDE Y BLANCO confirmados (Wikipedia: "green established as the primary colour since
+1910", apodo "Πράσινοι"/"los verdes"), pero sin un hex específico de la sección de FÚTBOL
+(footylogos no tiene Grecia cacheada todavía, y las fuentes de color encontradas mezclan con
+el club de básquet del mismo nombre) — brandColor:null a propósito en vez de adivinar un tono.
+```
+
+_de data/club-leagues/gr.js:_
+
+```text
+Verificado el 2026-09-28 (to-do 95) contra "2024–25 Super League Greece" (Wikipedia):
+Panathinaikos ("PAO") aparece en la tabla de posiciones de esa temporada. La página tiene una
+tabla wikitable ANTES de la de equipos reales (un resumen de ascendidos/descendidos), así que
+tools/fetch-club-league-reference.mjs agarró esa por error (extrajo 1 solo equipo,
+"Levadiakos") -- se confirmó a mano con el wikitext crudo en vez de confiar en el fetch
+automático. Mismo tipo de limitación que ya quedó anotada para Argentina (to-do 98/95).
+```

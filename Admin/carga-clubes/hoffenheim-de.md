@@ -121,6 +121,19 @@ criterio que Köln.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+6 clubes alemanes nuevos (sesión 2026-09-25, 2 ejercicios cada uno: 2023/24 y 2024/25 salvo
+Mönchengladbach, ejercicio CALENDARIO). Colores: footylogos.com/Wikipedia.
+```
+
+_de data/club-leagues/de.js:_
+
+```text
+Sesión 2026-09-25: TSG Hoffenheim (7° puesto 2023/24, 15° puesto 2024/25, sin descenso).
+```
+
 ## 2025
 
 ### Ingresos

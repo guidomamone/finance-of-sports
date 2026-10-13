@@ -108,6 +108,13 @@ financiera/societaria (Red Bull GmbH, accionista único) en ninguno de los 4 eje
 ============================================================================
 ```
 
+_de data/club-leagues/de.js:_
+
+```text
+2022 (2da tanda, misma sesión) y 2023 (misma sesión): RB Leipzig es Bundesliga desde su ascenso
+en 2016/17, sin descenso nunca — 2022/23 terminó 3°, Champions League.
+```
+
 ## 2025
 
 ### Ingresos

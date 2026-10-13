@@ -183,6 +183,25 @@ diferencia.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Colombia: ejercicio fiscal es año calendario (1-ene a 31-dic), moneda nativa COP (ver
+data/currency-map.js y fuentes/Colombia/*.md sobre el tipo de cambio TRM usado).
+`brandColor:null` (no ausente): se miró y NO lleva color, el que lo identifica es el blanco.
+```
+
+_de data/club-leagues/co.js:_
+
+```text
+2024 verificado el 2026-09-28 (to-do 95, pipeline nuevo de Wikipedia: tools/resolve-wikipedia-
+season-page.mjs + tools/fetch-club-league-reference.mjs) contra "2024 Liga DIMAYOR" (título
+vigente de la temporada 2024 en Wikipedia, cambió de sponsor respecto de años anteriores):
+roster de 21 equipos de Primera A 2024, Once Caldas incluido. 2022 verificado el mismo día,
+mismo pipeline, contra "2022 Liga DIMAYOR": roster de 20 equipos, Once Caldas incluido. 2023
+verificado el mismo día contra "2023 Liga DIMAYOR": roster de 20 equipos, Once Caldas incluido.
+```
+
 ## 2025
 
 ### Gastos

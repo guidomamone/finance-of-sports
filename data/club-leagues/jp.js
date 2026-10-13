@@ -18,8 +18,6 @@
 window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
-  // Verificado el 13/9/2026 contra "2025 J1 League" (Wikipedia): los 10 clubes cargados
-  // jugaron J1 en 2025.
   cerezoosaka: { 2025: 'jp-j1' },
   fctokyo: { 2025: 'jp-j1' },
   gambaosaka: { 2025: 'jp-j1' },

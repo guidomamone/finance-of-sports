@@ -130,6 +130,12 @@ GESTIÓN: sin mención de cambio de presidencia en el ejercicio — gestionId:nu
 ============================================================================
 ```
 
+_de data/club-leagues/dk.js:_
+
+```text
+relegado recién al cierre de 2024/25 (fuera del ejercicio calendario 2024)
+```
+
 ## 2024
 
 ### Meta

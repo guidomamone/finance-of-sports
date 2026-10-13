@@ -147,6 +147,20 @@ archivo.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Alemania (sesión 2026-09-22): PAÍS NUEVO, 5 clubes de Bundesliga. `fiscalYearStart:'07-01'`
+(ejercicio 1/7-30/6, igual que España) para los 4 primeros; VfB Stuttgart es la excepción, su
+ejercicio es año CALENDARIO (confirmado en el propio documento, ver data/stuttgart-de-data.js).
+```
+
+_de data/club-leagues/de.js:_
+
+```text
+descendió al cierre de 2023/24, campeón y ascenso directo en 2024/25
+```
+
 ## 2025
 
 ### Gastos

@@ -18,11 +18,5 @@
 window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
-  // Verificado el 25/9/2026: Alianza Lima jugó Liga 1 (primera división) los 6 ejercicios cargados,
-  // sin interrupción. Hubo un intento real de descenso administrativo (tabla acumulada 2019-2020,
-  // por los puntos de Carlos Stein), pero el Tribunal Arbitral del Deporte (TAS) anuló esa pérdida de
-  // categoría en 2021 antes de que Alianza llegara a jugar en segunda división — nunca descendió de
-  // hecho (ver https://www.swissinfo.ch/spa/la-liga-peruana-patas-arriba-tras-anularse-el-descenso-de-alianza-lima/46457674).
-  // Campeón de Liga 1 en 2021 y 2022 (24° y 25° título, respectivamente).
   'alianzalima-pe': { 2019: 'pe-liga1', 2020: 'pe-liga1', 2021: 'pe-liga1', 2022: 'pe-liga1', 2023: 'pe-liga1', 2024: 'pe-liga1' },
 });

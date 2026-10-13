@@ -131,6 +131,12 @@ con confianza) → gestionId: null.
 ============================================================================
 ```
 
+_de data/club-leagues/be.js:_
+
+```text
+campeón 2024/25
+```
+
 ## 2025
 
 ### Meta

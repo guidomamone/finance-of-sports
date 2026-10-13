@@ -121,6 +121,23 @@ el ejercicio → gestionId: null.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+2da tanda de 15 clubes nuevos (misma sesión 2026-09-25, "20 más"): países ya cargados otra vez
+a propósito (Bélgica/Dinamarca/Croacia), descubiertos porque estos 3 países tenían series
+históricas completas ya transcriptas y sin cargar, sentadas en `Clubes/`. Ningún dead-end esta
+vez (los 20 candidatos, entre clubes nuevos y ejercicios de clubes ya cargados, cerraron los
+20). Detalle completo, club por club, en `Admin/CHANGELOG.md`.
+```
+
+_de data/club-leagues/be.js:_
+
+```text
+2da tanda de Bélgica (misma sesión, "20 más"): los 6 jugaron Pro League completa 2024/25,
+Union SG salió CAMPEÓN (primer título desde 1934/35).
+```
+
 ## 2025
 
 ### Meta

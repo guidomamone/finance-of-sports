@@ -132,6 +132,12 @@ genérica que cubre el único año cargado.
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+ascendido en 2022, primera temporada completa de vuelta en Série A
+```
+
 ## 2023
 
 ### Gastos

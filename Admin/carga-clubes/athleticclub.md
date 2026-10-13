@@ -64,6 +64,13 @@ EJERCICIO impreso (6.980.735,78) EXACTO.
 ============================================================================
 ```
 
+_de data/club-leagues/es.js:_
+
+```text
+Verificado el 13/9/2026 contra "2024-25 La Liga" y "2023-24 La Liga" (Wikipedia). El
+ejercicio cierra el 30/6 y coincide con la temporada, sin ambigüedad.
+```
+
 ## 2025
 
 ### Ingresos

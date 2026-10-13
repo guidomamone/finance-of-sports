@@ -18,7 +18,5 @@
 window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
-  // Verificado el 13/9/2026 contra "2024-25 Liga MX season" (Wikipedia). Liga MX viene con
-  // los mismos 18 clubes desde 2020-21.
   clubamerica: { 2025: 'mx-ligamx' },
 });

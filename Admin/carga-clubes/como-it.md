@@ -41,6 +41,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Como: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf.
+brandColor y su procedencia: fuentes/Italia/Como.md.
+```
+
+_de data/club-leagues/it.js:_
+
+```text
+Como (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Como".
+```
+
 ## 2025
 
 ### Ingresos
@@ -295,6 +308,12 @@ tools/cargar.mjs (2026-10-08)
 ```text
 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (8.695). la sección D (rettifiche di valore) no se extrajo; mismo criterio que Milan 2023-24 y Bologna 2019-20 (D va al financiero)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2024: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2023–24 Serie B" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## Fuentes

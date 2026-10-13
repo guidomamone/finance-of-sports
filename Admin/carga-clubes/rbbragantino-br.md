@@ -150,6 +150,12 @@ detalle completo de la investigación (colores originales, kit actual, fuente de
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+campeón de la Série B 2019 (ascenso), 16° en la Série A 2024
+```
+
 ## 2024
 
 ### Meta

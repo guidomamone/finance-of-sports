@@ -84,6 +84,19 @@ instancias, no solo en el resultado final.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+España (Versión 111): sexto país con datos reales. `reportingCurrency:'EUR'` ya soportado de
+forma genérica por CURRENCY_META (data/currency-map.js) desde la Versión 103 — el toggle de
+moneda y "Formato del club/simplificado" se muestran para CUALQUIER club (no gateados por
+`country === 'AR'` ni por ninguna moneda en particular, ver populateCurrencyToggle() en
+index.html). `fiscalYearStart:'07-01'`: los ejercicios de LaLiga corren 1/7 a 30/6, confirmado
+en cada PDF fuente ("ejercicio anual terminado el 30 de junio de AAAA") — temporada partida,
+igual que los clubes argentinos (no aplica isCalendarYearClub acá).
+`brandColor:null` (no ausente): se miró y NO lleva color, el que lo identifica es el blanco.
+```
+
 ## 2025
 
 ### Meta

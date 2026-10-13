@@ -92,6 +92,13 @@ Efectivo" ($6.465,046 M).
 ============================================================================
 ```
 
+_de data/club-leagues/co.js:_
+
+```text
+Verificado el 2026-09-25 (onboarding, Versión 221) — se enfrentaron entre sí en la Primera A
+2025 (Apertura y Clausura), confirma que los 2 jugaron esa categoría ese año.
+```
+
 ## 2025
 
 ### Ingresos

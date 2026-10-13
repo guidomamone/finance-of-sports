@@ -198,6 +198,12 @@ WordPress (#ff6900, #fcb900, #f78da7, etc., ninguno de la familia real del club)
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+clasificó a Libertadores los 2 años
+```
+
 ## 2025
 
 ### Meta

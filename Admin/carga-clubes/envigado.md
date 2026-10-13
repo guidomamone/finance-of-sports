@@ -82,6 +82,18 @@ impuesto impresas por separado, nada que despejar).
 ============================================================================
 ```
 
+_de data/club-leagues/co.js:_
+
+```text
+Verificado el 13/9/2026 contra "2025 Categoría Primera A season" (Wikipedia).
+```
+
+_de data/club-leagues/co.js:_
+
+```text
+descendió al terminar 2025
+```
+
 ## 2025
 
 ### Gastos

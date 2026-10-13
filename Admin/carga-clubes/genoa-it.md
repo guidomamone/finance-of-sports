@@ -41,6 +41,18 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Genoa: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf.
+```
+
+_de data/club-leagues/it.js:_
+
+```text
+Genoa (alta-club.mjs, 2026-10-08): verificado contra roster cacheado de "2022–23 Serie B" (tools/club-league-reference/it.json), coincidencia exacta "Genoa".
+```
+
 ## 2025
 
 ### Ingresos
@@ -112,6 +124,12 @@ tools/cargar.mjs (2026-10-08)
 ```text
 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): name = Genoa Cricket and Football Club S.p.A.. Guido 2026-10-07: la sociedad que juega (perímetro individual)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2025: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2023
@@ -251,6 +269,12 @@ tools/cargar.mjs (2026-10-08)
 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): confirmado = 32.541.764. Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022
 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): confirmado = 61.728.621. Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2023: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2023–24 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2022

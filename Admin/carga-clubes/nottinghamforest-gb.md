@@ -95,6 +95,29 @@ Los dos cierran EXACTOS, sin residuo.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+5 clubes nuevos (onboarding 2026-09-25, pool de PDF ya transcriptos): Nottingham Forest,
+Sunderland, West Ham, Wolves (Inglaterra) y Levante (España, país ya cargado). brandColor
+verificado contra footylogos.com salvo Levante (ver duda en Admin/dudas-por-club.md: kit
+mitades azul/granate sin predominancia declarada, mismo caso que Crystal Palace).
+```
+
+_de data/club-leagues/gb.js:_
+
+```text
+4 clubes nuevos: Nottingham Forest, West Ham y Wolves jugaron Premier League los 2 ejercicios
+(verificado contra "2023-24 Premier League" y "2024-25 Premier League", Wikipedia: ninguno de
+los 3 aparece en las listas de descendidos de esos 2 años — 2023/24: Luton/Burnley/Sheffield
+United; 2024/25: Leicester/Ipswich/Southampton). Sunderland es el caso distinto: ascendió a la
+Premier League recién para 2025/26 (vía playoff, jugado en mayo de 2025, POSTERIOR al cierre de
+su ejercicio 2024/25) — sus 2 ejercicios cargados (2024 y 2025, cierre 31/7) fueron enteros en
+el Championship, confirmado por el propio Strategic Report de cada documento. El ejercicio
+"2025" de Wolves cubre 13 meses (1/6/2024-30/6/2025, cambio de fecha de cierre de ejercicio)
+pero cae enteramente dentro de la temporada 2024/25 de Premier League, sin ambigüedad de liga.
+```
+
 ## Otros
 
 ### gestionesByClub['nottinghamforest-gb']

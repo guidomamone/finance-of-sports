@@ -41,6 +41,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Avai: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf. brandColor #0040CF
+(procedencia en fuentes/Brasil/Avai.md, club-or-year-onboarding/club-nuevo.md).
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+Avai (alta-club.mjs, 2026-10-10): verificado contra roster cacheado de "2021 Campeonato Brasileiro Série B" (tools/club-league-reference/br.json), coincidencia exacta "Avaí".
+```
+
 ## 2025
 
 ### Ingresos
@@ -149,6 +162,12 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2025: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2025 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
+```
+
 ## 2024
 
 ### Ingresos
@@ -241,6 +260,12 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2024: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2024 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
+```
+
 ## 2023
 
 ### Ingresos
@@ -325,6 +350,12 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2023: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2023 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
+```
+
 ## 2022
 
 ### Ingresos
@@ -391,6 +422,12 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2023, 2024, 2025): Cuotas Sociales, Comercial / Sponsors, Televisión
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+### Liga
+
+```text
+2022: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2022 Campeonato Brasileiro Série A" (tools/club-league-reference/br.js
 ```
 
 ## 2021

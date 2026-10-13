@@ -18,8 +18,6 @@
 window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
-  // Verificado el 13/9/2026 contra "2024-25 La Liga" y "2023-24 La Liga" (Wikipedia). El
-  // ejercicio cierra el 30/6 y coincide con la temporada, sin ambigüedad.
   athleticclub: { 2025: 'es-laliga' },
   atleticomadrid: { 2025: 'es-laliga' },
   celtavigo: { 2025: 'es-laliga' },
@@ -29,39 +27,17 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   realmadrid: { 2025: 'es-laliga' },
   sevillafc: { 2025: 'es-laliga' },
   valenciacf: { 2025: 'es-laliga' },
-  villarrealcf: { 2024: 'es-laliga' },         // temporada 2023/24
+  villarrealcf: { 2024: 'es-laliga' },
 
-  // Verificado el 22/9/2026 contra "2023-24 La Liga", "2024-25 La Liga", "2019-20 Segunda División"
-  // y "2023-24 RCD Espanyol season" (Wikipedia/UEFA). Getafe jugó LaLiga los 2 ejercicios cargados,
-  // sin ambigüedad. Girona 2019/20 (cierre 30/6/2020) jugó Segunda División (descendido al cierre de
-  // 2018/19) -> 'es-segunda'. Espanyol 2023/24 (cierre 30/6/2024) también jugó Segunda División
-  // (descendido al cierre de 2022/23, ascendido recién en el playoff de junio de 2024, ya sobre el
-  // final del propio ejercicio 2023/24) -> 'es-segunda'.
   'getafe-es': { 2024: 'es-laliga', 2025: 'es-laliga' },
-  // Versión de esta sesión: 'es-segunda' se agregó al catálogo (data/leagues.js), así que estos 3
-  // ejercicios en Segunda YA NO quedan afuera de la tabla, tienen su fila propia.
   'girona-es': { 2020: 'es-segunda', 2025: 'es-laliga' },
   'espanyol-es': { 2024: 'es-segunda', 2025: 'es-laliga' },
 
-  // Verificado el 22/9/2026 contra "2021-22 CA Osasuna season"/"2023-24 CA Osasuna season" y el
-  // propio documento de Osasuna (Nota 6, "instalaciones de Tajonar... 1ª división" al 30/6/2022):
-  // Osasuna jugó Primera División los 2 ejercicios cargados, sin descenso.
   'osasuna-es': { 2022: 'es-laliga', 2024: 'es-laliga' },
-  // Elche descendió al cierre de 2022/23 y jugó Segunda División en los 2 ejercicios cargados
-  // (2023/24 y 2024/25) — el propio presupuesto 2025/26 del club (cifra de negocios proyectada de
-  // 58,3 M, el triple de 2024/25) confirma el ascenso recién para la temporada SIGUIENTE, fuera del
-  // rango cargado.
   'elche-es': { 2024: 'es-segunda', 2025: 'es-segunda' },
-  // Verificado el 2026-09-25 (onboarding, Versión 221) contra Wikipedia en inglés ("2024-25 La
-  // Liga", "2024-25 Real Oviedo season"). Real Oviedo jugó Segunda 2024/25 completa (3° en la
-  // liga regular, ascendió recién por el playoff de junio 2025, para la temporada SIGUIENTE).
-  'rcdmallorca-es': { 2025: 'es-laliga' }, // 10° de 20
-  'rayovallecano-es': { 2025: 'es-laliga' }, // 8° de 20
+  'rcdmallorca-es': { 2025: 'es-laliga' },
+  'rayovallecano-es': { 2025: 'es-laliga' },
   'realoviedo-es': { 2025: 'es-segunda' },
-  // Levante UD, club nuevo: ejercicio 2024/25 (cierre 30/6/2025) jugado en Segunda División — el
-  // ascenso a Primera fue el RESULTADO de este mismo ejercicio (playoff de junio de 2025, para la
-  // temporada 2025/26), confirmado por la propia memoria consolidada del club. Mismo patrón que
-  // Sunderland en Inglaterra.
   'levante-es': { 2025: 'es-segunda' },
 });
 

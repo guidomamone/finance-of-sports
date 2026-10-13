@@ -134,6 +134,12 @@ búsqueda (verde y branco). Verificado 2026-09-25.
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+obtuvo el ascenso a la Série A para 2021 (jugó la B en 2020)
+```
+
 ## 2020
 
 ### Meta

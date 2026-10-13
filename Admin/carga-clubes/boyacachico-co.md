@@ -63,6 +63,23 @@ cruzada de que la TRM oficial de esa fecha es correcta).
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Boyacá Chicó ("Los Ajedrezados"): camiseta a cuadros (patrón ajedrezado) azul marino y blanco
+según Wikipedia (infobox pattern_la1/pattern_b1) -- bicolor en partes iguales, mismo caso que
+Almagro (tricolor): sin un color que predomine con claridad, brandColor:null a propósito en
+vez de forzar uno de los dos (footylogos da #001356 azul marino como #1, pero es el orden del
+escudo, no confirma que domine sobre el blanco en la camiseta a cuadros).
+```
+
+_de data/club-leagues/co.js:_
+
+```text
+Verificado el 2026-09-28 contra el roster ya cacheado de "2024 Liga DIMAYOR" (bajado durante
+el onboarding de Once Caldas, mismo día) -- Boyacá Chicó apareció ahí mismo, sin fetch nuevo.
+```
+
 ## 2024
 
 ### Ingresos

@@ -186,6 +186,28 @@ impresa).
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+5 clubes nuevos (Versión 219, 2do batch de PDF transcriptos pendientes, sesión 2026-09-24):
+mismo motor genérico, mismo país/moneda. `brandColor:null` en RB Bragantino: camiseta titular
+blanca dominante, mismo criterio que River/Vélez/Once Caldas — ver `fuentes/Brasil/<Club>.md`
+para el detalle de cada investigación de color.
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+Verificado el 2026-09-24 (onboarding, Versión 219) contra Wikipedia en inglés (temporadas 2019,
+2023, 2024 y 2025 de cada club). Ejercicio = año calendario, coincide con la temporada.
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+3° en 2024, campeón 2025
+```
+
 ## 2025
 
 ### Gastos

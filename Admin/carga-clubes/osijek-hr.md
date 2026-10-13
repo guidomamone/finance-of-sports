@@ -110,6 +110,27 @@ ver club-or-year-onboarding SKILL.md sección 16).
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Tanda de 15 clubes nuevos (sesión 2026-09-25, "onboardear 20 transcripts al azar"): 2 más de
+Croacia, 3 más de Dinamarca, 3 más de Bélgica (los 3 países ya venían de la tanda de arriba),
+5 de Brasil (país ya cargado) y 2 de Argentina (país ya cargado). De los 20 candidatos
+elegidos al azar, 3 resultaron dead-ends sin estados contables reales (Temperley: solo
+Memoria narrativa sin balance; Belgrano: ídem; Palestino: solo un estado financiero
+intermedio de 6 meses, sin P&L anual) y se reemplazaron por otros 3 (Botafogo-SP, Juventude,
+Amazonas). Las 3 preguntas quedaron en Admin/dudas-por-club.md. brandColor: Wikipedia del
+idioma del país primero (identidad), hex después (footylogos/teamcolorcodes/wikitext de kit
+template) — ver el detalle por club en `fuentes/<País>/<Club>.md`.
+```
+
+_de data/club-leagues/hr.js:_
+
+```text
+Osijek/Slaven Belupo (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar):
+ejercicio calendario 2025, jugaron HNL completa ese año (Wikipedia, sin descenso).
+```
+
 ## 2025
 
 ### Meta

@@ -126,6 +126,14 @@ grossDebt: "Leasingforpligtelser" (pasivo de leasing IFRS16, corriente 2.223 + n
 ============================================================================
 ```
 
+_de data/club-leagues/dk.js:_
+
+```text
+AGF/Silkeborg/Viborg (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar): los 3
+jugaron 3F Superliga completa en el ejercicio cargado (confirmado contra el propio informe de
+gestión de cada documento, sin descenso).
+```
+
 ## 2021
 
 ### Meta

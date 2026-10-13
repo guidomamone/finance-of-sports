@@ -100,6 +100,20 @@ tax = Impuesto de Renta Diferido (297.250) + Impuesto de Renta (271.895) =
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+5 clubes colombianos nuevos (sesión 2026-09-22, Ejercicio 2025 cada uno), mismo criterio de
+ejercicio/moneda que Envigado/Once Caldas de arriba.
+```
+
+_de data/club-leagues/co.js:_
+
+```text
+Verificado el 22/9/2026 contra "2025 Categoría Primera A season" (Wikipedia): los 5 jugaron
+la temporada 2025 completa en Primera A (20 equipos participantes ese año).
+```
+
 ## 2025
 
 ### Gastos

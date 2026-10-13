@@ -17,6 +17,13 @@ Abreviado "Ｃ大阪" en las tablas del club_doc-2025.pdf.
 ============================================================================
 ```
 
+_de data/club-leagues/jp.js:_
+
+```text
+Verificado el 13/9/2026 contra "2025 J1 League" (Wikipedia): los 10 clubes cargados
+jugaron J1 en 2025.
+```
+
 ## 2025
 
 ### Ingresos

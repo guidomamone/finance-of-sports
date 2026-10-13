@@ -242,6 +242,12 @@ socios impresa).
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+clasificó a Libertadores 2026 por el resultado de 2025
+```
+
 ## 2025
 
 ### Ingresos

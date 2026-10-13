@@ -161,6 +161,22 @@ quórum, no el padrón total). Se usó el único total real disponible (18.280, 
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Ferro Carril Oeste, club nuevo (Versión 220, 3er batch de PDF transcriptos pendientes, sesión
+2026-09-24): 2 balances reales (Ejercicios 118 y 119, 2021-22 y 2022-23).
+```
+
+_de data/club-leagues/ar.js:_
+
+```text
+Ferro Carril Oeste (Versión 220, sesión 2026-09-24): fuentes encontradas se contradicen entre sí
+sobre la categoría exacta de estos 2 ejercicios (Primera B Metropolitana/Nacional/Torneo Federal
+A, ninguna de las cuales tiene liga propia en el catálogo hoy) — queda en `null`, sin verificar,
+en vez de adivinar.
+```
+
 ## 2023
 
 ### Meta

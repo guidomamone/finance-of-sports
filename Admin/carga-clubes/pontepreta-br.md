@@ -164,6 +164,12 @@ la contadora Adriana Vieira (CRC 1SP 221376/0-2) y el auditor (Audcorp). gestion
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+descendido de la Série B al cierre de 2024, campeón de la Série C 2025 (fuera del rango cargado)
+```
+
 ## 2024
 
 ### Meta

@@ -260,6 +260,19 @@ un tipo de cambio propio.
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+2023 y 2025 (2da tanda, misma sesión, "20 más"): 5° y 6° respectivamente, Série A completa
+los 2 años, sin descenso (confirmado vía Wikipedia).
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+campeón 2024
+```
+
 ## 2025
 
 ### Ingresos

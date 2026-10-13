@@ -105,6 +105,30 @@ Once Caldas cuando el balance/deuda no se sourceó).
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Chile (onboarding 2026-09-25): primer país sudamericano con moneda propia CLP (scale:1000, ver
+data/currency-map.js). fiscalYearStart:'01-01': los 3 son sociedades anónimas cerradas/abiertas
+que reportan EEFF IFRS en año calendario (1/1 a 31/12), igual que Brasil/Colombia, no un
+ejercicio partido como los clubes argentinos/españoles.
+Los 3 clubes de Chile llevan el país al final del id (convención desde la Versión 129,
+CONVENCIONES.md: `<clubId>-<iso2>`), a diferencia de los 41 clubes heredados de arriba. Clave
+entre comillas porque un id con guion no es una key JS válida sin comillas. brandColor: color
+identificador del club verificado contra footylogos.com (Colo-Colo negro de su camiseta, no el
+azul/dorado del escudo; U de Chile y Católica el azul de su camiseta pese a ser predominantemente
+blanca, mismo criterio que River con su franja roja).
+```
+
+_de data/club-leagues/cl.js:_
+
+```text
+Verificado el 25/9/2026 contra "2022/2023/2024 Campeonato Nacional Primera División" (Wikipedia):
+los 3 jugaron Primera División de Chile en los 3 ejercicios (Colo-Colo campeón en 2022 y 2024).
+clubId con sufijo de país (Versión 129: colocolo-cl/udechile-cl/catolica-cl), clave entre // 2021: tools/cargar.mjs 2026-10-01, SIN VERIFICAR // 2025: tools/cargar.mjs 2026-10-01, SIN VERIFICAR // 2020: tools/cargar.mjs 2026-10-01, SIN VERIFICAR // 2019: tools/cargar.mjs 2026-10-01, SIN VERIFICAR // 2018: tools/cargar.mjs 2026-10-01, SIN VERIFICAR // 2010: tools/cargar.mjs 2026-10-02, SIN VERIFICAR // 2011: tools/cargar.mjs 2026-10-02, SIN VERIFICAR // 2012: tools/cargar.mjs 2026-10-02, SIN VERIFICAR // 2013: tools/cargar.mjs 2026-10-02, SIN VERIFICAR // 2014: tools/cargar.mjs 2026-10-02, SIN VERIFICAR // 2015: tools/cargar.mjs 2026-10-02, SIN VERIFICAR // 2016: tools/cargar.mjs 2026-10-02, SIN VERIFICAR // 2017: tools/cargar.mjs 2026-10-02, SIN VERIFICAR
+comillas porque un id con guion no es una key JS válida sin comillas.
+```
+
 ## 2024
 
 ### Meta

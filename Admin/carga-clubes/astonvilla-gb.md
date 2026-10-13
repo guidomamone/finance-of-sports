@@ -100,6 +100,24 @@ VERIFICACIÓN (a mano, sumando cada línea contra los totales impresos — recon
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+4 clubes ingleses más (onboarding 2026-09-25, mismo pool de PDF transcriptos). brandColor
+verificado contra footylogos.com.
+```
+
+_de data/club-leagues/gb.js:_
+
+```text
+4 clubes ingleses más: Aston Villa (solo 2025 cargado), Bournemouth y Brentford jugaron Premier
+League en todos sus ejercicios cargados (confirmado en el propio documento de cada uno, no
+asumido). Burnley es la excepción: 2024 Premier League (recién ascendido, descendió 19°), 2025
+Championship (recién descendido, ascendió de nuevo terminando 2°) — confirmado también en el
+propio documento ("Turnover has decreased... due to the Club competing in the Championship,
+compared to the Premier League").
+```
+
 ## 2025
 
 ### Meta

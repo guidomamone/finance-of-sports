@@ -133,6 +133,13 @@ ejercicio (5 administradores/sociedades listados, sin un cargo de
 ============================================================================
 ```
 
+_de data/club-leagues/be.js:_
+
+```text
+Charleroi/Mechelen/Antwerp (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar):
+los 3 jugaron Pro League completa en el ejercicio 2024/2025, sin descenso.
+```
+
 ## 2025
 
 ### Meta

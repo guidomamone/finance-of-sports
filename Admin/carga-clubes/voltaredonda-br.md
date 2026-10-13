@@ -152,6 +152,12 @@ queda en null en vez de adivinar. Ver fuentes/Brasil/Volta Redonda.md.
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+campeón de la Série C 2024, ascendido a la Série B para 2025
+```
+
 ## 2025
 
 ### Meta

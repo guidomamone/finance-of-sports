@@ -75,6 +75,12 @@ Once Caldas/Envigado (ver club-data-mapping SKILL.md sección 7).
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+ascendió a la Série A para 2025
+```
+
 ## 2024
 
 ### Meta

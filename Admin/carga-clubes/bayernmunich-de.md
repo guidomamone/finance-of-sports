@@ -184,6 +184,14 @@ firstYear/lastYear:2023 (predominancia de Kahn en el ejercicio, mismo criterio q
 ============================================================================
 ```
 
+_de data/club-leagues/de.js:_
+
+```text
+2021 (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar): campeón de la 2020/21
+Bundesliga (9° título consecutivo), verificado vía Wikipedia/Bundesliga.com. 2023 (2da tanda,
+misma sesión): campeón también de la 2022/23 Bundesliga (11° título consecutivo).
+```
+
 ## 2025
 
 ### Ingresos

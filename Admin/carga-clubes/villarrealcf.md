@@ -55,6 +55,12 @@ el ejercicio 2023/24 con pérdida neta real de EUR 14,12 M.
 ============================================================================
 ```
 
+_de data/club-leagues/es.js:_
+
+```text
+temporada 2023/24
+```
+
 ## 2024
 
 ### Meta

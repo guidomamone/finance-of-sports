@@ -147,6 +147,36 @@ cerrado, no pendiente. Ver fuentes/Argentina/Almagro.md para el detalle de la b�
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Almagro: ejercicio económico 1°/11 al 31/10 (los 6 balances cargados cierran todos el
+31/10). Club nuevo, id con sufijo de país ('almagro-ar') por la convención de la
+Versión 129 (ver CONVENCIONES.md). brandColor:null a propósito: Wikipedia confirma que
+el club es TRICOLOR azul/blanco/negro (apodo "Tricolor"), sin un color que predomine
+declarado por el club ni fuente de hex confiable — ver comentario de cabecera de
+data/almagro-ar-data.js.
+```
+
+_de data/club-leagues/ar.js:_
+
+```text
+Verificado el 13/9/2026: temporadas 2022, 2023, 2024 y 2025 de Primera División contra sus
+páginas de Wikipedia (cubren Estudiantes, Unión, Rosario Central, Independiente, Instituto,
+River, Boca, San Lorenzo 2024, Racing 2024 y Vélez 2024); Argentinos Juniors contra su propia
+página y la de la B Nacional 2016-17. Vélez, San Lorenzo y Racing en todos los años con
+balance: confirmado por Guido, que conoce el dato (13/9/2026).
+
+SUB-REGLA DE "LA CATEGORÍA AL CIERRE", para los ejercicios que cierran entre dos torneos:
+vale la categoría de la temporada EN CURSO o recién terminada a la fecha de cierre. Importa
+una sola vez acá, y es el caso de Argentinos: su ejercicio jul-2015/jun-2016 se jugó entero en
+Primera (el descenso se definió al terminar el torneo 2016, en mayo), así que ese ejercicio es
+Primera aunque al 30/6/2016 el club ya estuviera descendido para el torneo siguiente. Leerlo al
+revés pondría como "B Nacional" un año cuyos ingresos son 100% de Primera.
+Confirmado por búsqueda web (2026-09-27): Almagro jugó Primera Nacional (ex Primera B
+Nacional) de forma corrida en los 6 ejercicios cargados, sin ascenso ni descenso en el medio.
+```
+
 ## 2023
 
 ### Ingresos

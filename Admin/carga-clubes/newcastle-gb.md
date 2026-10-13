@@ -63,6 +63,25 @@ Brothers (RB Sports & Media) ~15% tras esa salida.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+5 clubes ingleses más (onboarding 2026-09-25, mismo pool de PDF transcriptos). brandColor
+verificado contra footylogos.com/chelseafc.com, salvo Crystal Palace (ver duda en
+Admin/dudas-por-club.md: franjas rojo/azul desde 1973, sin predominancia declarada, mismo caso
+que Levante) y Fulham (camiseta blanca, mismo bucket que River/Vélez/Sevilla/Real Madrid).
+```
+
+_de data/club-leagues/gb.js:_
+
+```text
+5 clubes más: Newcastle, Crystal Palace, Fulham y Chelsea jugaron Premier League en todos sus
+ejercicios cargados (confirmado en el propio documento de cada uno). Leeds es la excepción:
+Championship los 2 ejercicios cargados (2023-24 y 2024-25), ascendió a Premier League recién
+para la temporada 2025-26 (no cargada), confirmado con WebSearch y en el propio documento
+("would remain in the Championship for the 2024/25 season").
+```
+
 ## 2025
 
 ### Ingresos

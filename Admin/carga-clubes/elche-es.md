@@ -91,6 +91,15 @@ VERIFICACIÓN Ejercicio 2024/2025: Revenue 20,550790 M - Expenses cash
 ============================================================================
 ```
 
+_de data/club-leagues/es.js:_
+
+```text
+Elche descendió al cierre de 2022/23 y jugó Segunda División en los 2 ejercicios cargados
+(2023/24 y 2024/25) — el propio presupuesto 2025/26 del club (cifra de negocios proyectada de
+58,3 M, el triple de 2024/25) confirma el ascenso recién para la temporada SIGUIENTE, fuera del
+rango cargado.
+```
+
 ## 2025
 
 ### Meta

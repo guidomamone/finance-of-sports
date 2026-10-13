@@ -122,6 +122,19 @@ GESTIÓN: Bestyrelse (Søren Peder Dalager Davidsen, formand) vigente al cierre 
 ============================================================================
 ```
 
+_de data/club-leagues/dk.js:_
+
+```text
+2da tanda de Dinamarca (misma sesión, "20 más"), verificado por WebSearch/Wikipedia caso por
+caso.
+```
+
+_de data/club-leagues/dk.js:_
+
+```text
+relegado recién para la temporada SIGUIENTE (2022/23)
+```
+
 ## 2022
 
 ### Meta

@@ -144,6 +144,18 @@ sección 16).
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Croacia (onboarding 2026-09-25): PAÍS NUEVO, 3 clubes de HNL, ejercicio 2024 (año CALENDARIO,
+fiscalYearStart:'01-01' — confirmado en cada documento fuente: "za godinu koja završava na dan
+31. prosinca 2024."). reportingCurrency:'EUR' (Croacia adoptó el euro el 1/1/2023, el ejercicio
+2024 es 100% en euros). brandColor verificado vía schemecolor.com/brandpalettes (Dinamo: azul de
+su escudo/camiseta, "Hermes" en la paleta; Hajduk: camiseta blanca dominante con acento azul,
+mismo criterio que River — se usó el azul #21409A de su indumentaria; Rijeka: camiseta
+blanca/azul con la cruz celeste característica, se usó ese azul #38A1CE).
+```
+
 ## 2024
 
 ### Gastos

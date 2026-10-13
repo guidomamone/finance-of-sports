@@ -199,6 +199,12 @@ alcance de esta sesión), documentado en el reporte de handback para quien integ
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+jugó la Série A completa 2025 (61 partidos, el propio documento), rebaixado para 2026
+```
+
 ## 2025
 
 ### Gastos

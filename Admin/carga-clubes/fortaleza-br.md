@@ -175,6 +175,12 @@ CORPO (torso) como criterio de desempate, cae en la familia tricolor confirmada 
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+descendido al cierre de 2025 (jugó la Série A completa ese año)
+```
+
 ## 2025
 
 ### Meta

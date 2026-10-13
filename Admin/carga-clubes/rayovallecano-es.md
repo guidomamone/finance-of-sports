@@ -138,6 +138,12 @@ pág. 47 del .md) — confirmado en el propio documento primario.
 ============================================================================
 ```
 
+_de data/club-leagues/es.js:_
+
+```text
+8° de 20
+```
+
 ## 2025
 
 ### Meta

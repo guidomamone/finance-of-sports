@@ -131,6 +131,14 @@ Los dos cierran EXACTOS, sin residuo.
 ============================================================================
 ```
 
+_de data/club-leagues/gb.js:_
+
+```text
+Brighton & Hove Albion: Premier League los 2 ejercicios, confirmado por el propio documento de
+cada ejercicio (Strategic Report: "finishing in 11th position" en 2023/24, "finishing in 8th
+position" en 2024/25).
+```
+
 ## Otros
 
 ### Presupuesto al lado del balance (brightonGbPresupuestoOverlayByYear), en general

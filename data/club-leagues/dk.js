@@ -29,21 +29,12 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'fckobenhavn-dk': { 2024: 'dk-superliga' },
   'brondby-dk':     { 2020: 'dk-superliga' },
   'midtjylland-dk': { 2019: 'dk-superliga' },
-  // AGF/Silkeborg/Viborg (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar): los 3
-  // jugaron 3F Superliga completa en el ejercicio cargado (confirmado contra el propio informe de
-  // gestión de cada documento, sin descenso).
   'agf-dk':         { 2021: 'dk-superliga' },
   'silkeborg-dk':   { 2024: 'dk-superliga' },
   'viborg-dk':      { 2024: 'dk-superliga' },
-  // 2da tanda de Dinamarca (misma sesión, "20 más"), verificado por WebSearch/Wikipedia caso por
-  // caso.
-  'sonderjyske-dk':    { 2022: 'dk-superliga' }, // relegado recién para la temporada SIGUIENTE (2022/23)
+  'sonderjyske-dk':    { 2022: 'dk-superliga' },
   'nordsjaelland-dk':  { 2024: 'dk-superliga' },
-  'randers-dk':        { 2023: 'dk-superliga' }, // 6° puesto
-  'vejle-dk':           { 2024: 'dk-superliga' }, // relegado recién al cierre de 2024/25 (fuera del ejercicio calendario 2024)
-  // FC Fredericia: el ejercicio cargado (2019) lo jugó en la Nordic Bet Ligaen (1. Division, 2do
-  // escalón danés) — ascendió a Superliga recién para 2025/26. No hay liga de 2do escalón danesa en
-  // el catálogo todavía (un solo club-ejercicio no lo justifica, ver `data/club-leagues.js` cabecera
-  // para el sentinel `'liga-no-catalogada'` y to-do 64c de `Admin/TODO.md`).
+  'randers-dk':        { 2023: 'dk-superliga' },
+  'vejle-dk':           { 2024: 'dk-superliga' },
   'fredericia-dk':     { 2019: 'liga-no-catalogada' },
 });

@@ -41,6 +41,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Juve Stabia: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.pdf. brandColor AUSENTE a propósito
+(nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).
+```
+
+_de data/club-leagues/it.js:_
+
+```text
+Juve Stabia (alta-club.mjs, 2026-10-08): SIN VERIFICAR (no aparece en los rosters cacheados de 2024 (it-seriea, it-serieb): puede haber jugado otra división).
+```
+
 ## 2024
 
 ### Ingresos

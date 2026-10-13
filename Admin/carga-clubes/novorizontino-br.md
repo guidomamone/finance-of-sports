@@ -41,6 +41,25 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Novorizontino: alta por tools/alta-club.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf. brandColor AUSENTE a propósito
+(nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).
+```
+
+_de data/clubs.js:_
+
+```text
+name: demonstracoes-financeiras-2023.md L70 (SAF desde 06/12/2023; antes associação 'Grêmio Novorizontino'). Color: aurinegro, amarillo primero (pt.wikipedia, himno 'Amarelo e negro'); hex como Amazonas,
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+Novorizontino (alta-club.mjs, 2026-10-03): verificado contra roster cacheado de "2024 Campeonato Brasileiro Série B" (tools/club-league-reference/br.json), coincidencia exacta "Novorizontino".
+```
+
 ## 2025
 
 ### Ingresos
@@ -110,6 +129,12 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 6
 tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: año anterior): "Partes relacionadas" pág. 6
+```
+
+### Liga
+
+```text
+2025: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2025 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
 ```
 
 ## 2024
@@ -232,6 +257,12 @@ tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: documento siguien
 tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos bancários" pág. 6 + "Partes relacionadas" pág. 6
 ```
 
+### Liga
+
+```text
+2023: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2023 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
+```
+
 ## 2022
 
 ### Ingresos
@@ -302,6 +333,12 @@ tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: ajuste manual): a
 ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos bancários 28.250 + Partes relacionadas 70.283.684, .md L250/L258
 ```
 
+### Liga
+
+```text
+2022: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2022 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
+```
+
 ## 2021
 
 ### Ingresos
@@ -353,6 +390,16 @@ tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: documento siguien
 ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos e financiamentos 87 + 12 + partes relacionadas 51.785 (miles), .md L174/L187/L189
 ```
 
+### Liga
+
+```text
+2021: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
+```
+
+```text
+2021: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2021 Campeonato Brasileiro Série C" (tools/club-league-reference/br.js
+```
+
 ## 2020
 
 ### Ingresos
@@ -399,6 +446,16 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 8
 ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos 79 + partes relacionadas 39.971 + 9 (miles), .md L198/L204/L211
+```
+
+### Liga
+
+```text
+2020: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
+```
+
+```text
+2020: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2020 Campeonato Brasileiro Série D" (tools/club-league-reference/br.js
 ```
 
 ## 2019
@@ -450,6 +507,16 @@ tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "
 ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05, to-do 143): préstamos + partes relacionadas, criterio del club; Empréstimos 27 + Débitos com partes relacionadas 32.296 (miles), .md L193/L204. caja-deuda.mjs (2026-10-03) había leído el 24 de 2018 (32,32)
 ```
 
+### Liga
+
+```text
+2019: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
+```
+
+```text
+2019: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2019 Campeonato Brasileiro Série D" (tools/club-league-reference/br.js
+```
+
 ## 2018
 
 ### Ingresos
@@ -497,6 +564,12 @@ tools/caja-deuda.mjs (2026-10-03): cash escalón 1 (compuerta: documento siguien
 ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos 24 + Débitos com partes relacionadas 27.467 (miles), .md L181/L191
 ```
 
+### Liga
+
+```text
+2018: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2018 Campeonato Brasileiro Série D" (tools/club-league-reference/br.js
+```
+
 ## 2017
 
 ### Ingresos
@@ -531,6 +604,16 @@ tools/cargar.mjs (2026-10-03)
 ```text
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+### Liga
+
+```text
+2017: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
+```
+
+```text
+2017: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2017 Campeonato Paulista" (tools/club-league-reference/br.json), coinc
 ```
 
 ## 2016
@@ -573,6 +656,16 @@ tools/cargar.mjs (2026-10-03)
 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 1.945. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 1.422. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2016: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
+```
+
+```text
+2016: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2016 Campeonato Paulista" (tools/club-league-reference/br.json), coinc
 ```
 
 ## 2015
@@ -683,6 +776,16 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2015: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
+```
+
+```text
+2015: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "Campeonato Paulista de Futebol de 2015 - Série A2" (tools/club-league-
+```
+
 ## 2014
 
 ### Ingresos
@@ -791,6 +894,16 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2014: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
+```
+
+```text
+2014: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "Campeonato Paulista de Futebol de 2014 - Série A3" (tools/club-league-
+```
+
 ## 2013
 
 ### Ingresos
@@ -889,6 +1002,16 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2013: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
+```
+
+```text
+2013: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "Campeonato Paulista de Futebol de 2013 - Série A3" (tools/club-league-
+```
+
 ## 2010
 
 ### Ingresos
@@ -923,6 +1046,12 @@ tools/cargar.mjs (2026-10-07)
 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): cero-real = Televisión. Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio
 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): cero-real = Estadio. Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2010: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
 ```
 
 ## Fuentes

@@ -109,6 +109,16 @@ VERIFICACIÓN (regla #1 de CLAUDE.md, "precisión antes que velocidad"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Dinamarca (sesión de esta tanda): PAÍS NUEVO, DKK MONEDA NUEVA (ver data/currency-map.js), 3
+clubes de la Superliga, cada uno con el ejercicio más reciente que permitiera separar Revenue de
+Expenses de verdad (ver comentario de cabecera de cada archivo — FC Midtjylland usa 2019 en vez
+de un año más reciente porque sus balances 2022+ netean Revenue contra Cost of Sales en una sola
+línea "Bruttofortjeneste", sin desglose disponible). brandColor: footylogos.com/Wikipedia.
+```
+
 ## 2024
 
 ### Meta

@@ -227,6 +227,20 @@ genérica `sinconfirmar` para cubrir 2023-2024.
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+2023 (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar): jugó la Série A completa
+2023, descendido recién al cierre de esa temporada (confirmado por prensa: Gazeta Esportiva/
+Banda B, derrota vs. Fluminense 25/11/2023).
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+descendido de la Série A 2023
+```
+
 ## 2024
 
 ### Meta

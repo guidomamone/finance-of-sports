@@ -63,45 +63,18 @@
 // que necesita saber quiénes la integraban ESE año. Ver la cabecera de `data/leagues.js`.
 const clubs = {
   boca:   { id:'boca',   name:'Club Atlético Boca Juniors', displayName:'Boca Juniors', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0A2B5C' },
-  // fiscalYearStart corregido a '09-01' en esta sesión (onboarding de Brasil): decía '01-01' desde
-  // siempre, un dato incorrecto pero inofensivo mientras nada leía este campo (ver comentario de
-  // `isCalendarYearClub()` en js/finanzas-calc.js, agregado esta sesión — es la primera vez que
-  // `fiscalYearStart` se usa de verdad). El ejercicio real de River corre de 1° de septiembre a 31 de
-  // agosto (ver cabecera de data/river-data.js: "Ejercicio 2024 (1° de septiembre de 2023 al 31 de
-  // agosto de 2024...)"), nunca fue año calendario — con el '01-01' viejo, `isCalendarYearClub('river')`
-  // hubiera dado true por error y el dropdown "Año"/tabla "Estado de resultados" de River habrían
-  // perdido el rango de temporada "2023/2024", mostrando solo "2024" suelto, un caso real de dato
-  // muerto que se vuelve vivo (y rompe algo) al generalizar una función existente — visto y corregido
-  // en el spot-check del navegador de esta sesión, no antes.
   river:  { id:'river',  name:'Club Atlético River Plate',  displayName:'River Plate', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'09-01', sport:'futbol', brandColor:'#E30520' },
   racing: { id:'racing', name:'Racing Club',                displayName:'Racing Club', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#029CDC' },
   velez:  { id:'velez',  name:'Club Atlético Vélez Sarsfield', displayName:'Vélez Sarsfield', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0061A8' },
   instituto: { id:'instituto', name:'Instituto Atlético Central Córdoba', displayName:'Instituto ACC', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#DF040B' },
   rosariocentral: { id:'rosariocentral', name:'Club Atlético Rosario Central', displayName:'Rosario Central', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0A3D72' },
-  // Almagro: ejercicio económico 1°/11 al 31/10 (los 6 balances cargados cierran todos el
-  // 31/10). Club nuevo, id con sufijo de país ('almagro-ar') por la convención de la
-  // Versión 129 (ver CONVENCIONES.md). brandColor:null a propósito: Wikipedia confirma que
-  // el club es TRICOLOR azul/blanco/negro (apodo "Tricolor"), sin un color que predomine
-  // declarado por el club ni fuente de hex confiable — ver comentario de cabecera de
-  // data/almagro-ar-data.js.
   'almagro-ar': { id:'almagro-ar', name:'Club Almagro', displayName:'Almagro', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'11-01', sport:'futbol', brandColor:null },
   independiente: { id:'independiente', name:'Club Atlético Independiente', displayName:'Independiente', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#EC1C24' },
   argentinosjuniors: { id:'argentinosjuniors', name:'Asociación Atlética Argentinos Juniors', displayName:'Argentinos Juniors', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E32021' },
   estudianteslp: { id:'estudianteslp', name:'Club Estudiantes de La Plata', displayName:'Estudiantes de La Plata', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E41815' },
   sanlorenzo: { id:'sanlorenzo', name:'Club Atlético San Lorenzo de Almagro', displayName:'San Lorenzo', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#00325A' },
   union: { id:'union', name:'Club Atlético Unión', displayName:'Unión', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#ED1C24' },
-  // Primer club no argentino del sitio (Versión 104). reportingCurrency:'MXN' — ver data/currency-map.js
-  // (entrada MXN, scale:1) y data/clubamerica-data.js (comentario de cabecera) para el detalle completo
-  // de la fuente (segmento de negocio de una compañía bursátil, no un balance propio del club).
-  // fiscalYearStart:'01-01': Ollamani reporta en año calendario (1/1 a 31/12), no en un ejercicio
-  // partido como los clubes argentinos.
   clubamerica: { id:'clubamerica', name:'Club de Fútbol América, S.A. de C.V.', displayName:'Club América', country:'MX', reportingCurrency:'MXN', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFEB00' },
-  // Japón (J.League), sesión 2026-09-13: 10 clubes, todos con Ejercicio 2025 (temporada calendario
-  // ene-dic 2025, la convención estándar de J.League — ninguno de estos 10 está en la lista de 7
-  // clubes con cierre marzo/junio del club_doc-2025.pdf, ver fuentes/Japón/_notas-generales.md).
-  // reportingCurrency:'JPY' — ver data/currency-map.js para el CURRENCY_META nuevo. displayName usa
-  // el nombre corto habitual en español/inglés (el que ya usan medios deportivos hispanohablantes),
-  // name lleva el nombre oficial completo en inglés.
   kashimaantlers: { id:'kashimaantlers', name:'Kashima Antlers Football Club', displayName:'Kashima Antlers', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#B7183F' },
   urawareddiamonds: { id:'urawareddiamonds', name:'Urawa Red Diamonds', displayName:'Urawa Red Diamonds', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#E4032E' },
   yokohamafmarinos: { id:'yokohamafmarinos', name:'Yokohama F. Marinos', displayName:'Yokohama F. Marinos', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#164194' },
@@ -112,11 +85,6 @@ const clubs = {
   fctokyo: { id:'fctokyo', name:'FC Tokyo', displayName:'FC Tokyo', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#11216C' },
   sanfreccehiroshima: { id:'sanfreccehiroshima', name:'Sanfrecce Hiroshima', displayName:'Sanfrecce Hiroshima', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#59358C' },
   nagoyagrampus: { id:'nagoyagrampus', name:'Nagoya Grampus', displayName:'Nagoya Grampus', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#D51317' },
-  // Primeros clubes de Brasil (sesión 2026-09-13): ejercicio social = año calendario
-  // (fiscalYearStart:'01-01', no jul-jun/sep-ago como los clubes argentinos de arriba) — ver
-  // isCalendarYearClub() en js/finanzas-calc.js, que generaliza el dropdown "Año"/"Estado de
-  // resultados"/gráficos de Inicio para mostrar "2024" en vez de un rango de temporada "2023/2024"
-  // que sería falso para este club.
   gremio: { id:'gremio', name:'Grêmio Foot-Ball Porto Alegrense', displayName:'Grêmio', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0D80BF' },
   botafogo: { id:'botafogo', name:'Botafogo Sociedade Anônima do Futebol', displayName:'Botafogo', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
   cruzeiro: { id:'cruzeiro', name:'Cruzeiro Esporte Clube SAF', displayName:'Cruzeiro', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#2F529E' },
@@ -124,26 +92,14 @@ const clubs = {
   ituano: { id:'ituano', name:'Ituano Futebol Clube', displayName:'Ituano', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#E2041A' },
   coritiba: { id:'coritiba', name:'Coritiba Sociedade Anônima do Futebol - SAF', displayName:'Coritiba', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#005742' },
   atleticogoianiense: { id:'atleticogoianiense', name:'Atlético Clube Goianiense', displayName:'Atlético Goianiense', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#ED3237' },
-  // 3 clubes nuevos (Versión 217, onboarding en paralelo de 10 PDF transcriptos pendientes): mismo
-  // motor genérico, mismo país/moneda que los de arriba. `brandColor:null` en 2 de los 3 no es
-  // ausencia: se investigó y quedó ambiguo (bicolor sin predominancia clara declarada por ninguna
-  // fuente) — ver `fuentes/Brasil/<Club>.md` para el detalle de cada investigación.
   'americamineiro-br': { id:'americamineiro-br', name:'América Futebol Clube', displayName:'América Mineiro', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#007242' },
   'operarioferroviario-br': { id:'operarioferroviario-br', name:'Operário Ferroviário Esporte Clube', displayName:'Operário Ferroviário', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
   'voltaredonda-br': { id:'voltaredonda-br', name:'Volta Redonda Futebol Clube', displayName:'Volta Redonda', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
-  // 5 clubes nuevos (Versión 219, 2do batch de PDF transcriptos pendientes, sesión 2026-09-24):
-  // mismo motor genérico, mismo país/moneda. `brandColor:null` en RB Bragantino: camiseta titular
-  // blanca dominante, mismo criterio que River/Vélez/Once Caldas — ver `fuentes/Brasil/<Club>.md`
-  // para el detalle de cada investigación de color.
   'flamengo-br': { id:'flamengo-br', name:'Clube de Regatas do Flamengo', displayName:'Flamengo', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
   'atleticomineiro-br': { id:'atleticomineiro-br', name:'Clube Atlético Mineiro SAF', displayName:'Atlético Mineiro', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
   'athleticoparanaense-br': { id:'athleticoparanaense-br', name:'Club Athletico Paranaense', displayName:'Athletico Paranaense', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#CE181E' },
   'vitoria-br': { id:'vitoria-br', name:'Esporte Clube Vitória', displayName:'Vitória', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF1100' },
   'rbbragantino-br': { id:'rbbragantino-br', name:'Red Bull Bragantino Futebol Ltda.', displayName:'RB Bragantino', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
-  // 10 clubes nuevos (Versión 220, 3er batch de PDF transcriptos pendientes, sesión 2026-09-24):
-  // mismo motor genérico, mismo país/moneda. `brandColor:null` en Bahia (tricolor en partes
-  // iguales, sin predominancia declarada por ninguna fuente) y São Paulo (camiseta titular blanca
-  // dominante, mismo criterio que RB Bragantino) — ver `fuentes/Brasil/<Club>.md` para el detalle.
   'corinthians-br': { id:'corinthians-br', name:'Sport Club Corinthians Paulista', displayName:'Corinthians', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
   'palmeiras-br': { id:'palmeiras-br', name:'Sociedade Esportiva Palmeiras', displayName:'Palmeiras', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#035F30' },
   'saopaulo-br': { id:'saopaulo-br', name:'São Paulo Futebol Clube', displayName:'São Paulo', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
@@ -154,32 +110,14 @@ const clubs = {
   'bahia-br': { id:'bahia-br', name:'Esporte Clube Bahia S.A.F.', displayName:'Bahia', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'chapecoense-br': { id:'chapecoense-br', name:'Associação Chapecoense de Futebol', displayName:'Chapecoense', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#1B552A' },
   'vascodagama-br': { id:'vascodagama-br', name:'Vasco da Gama Sociedade Anônima do Futebol', displayName:'Vasco da Gama', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
-  // 2 clubes nuevos (Versión 221, 4to batch de PDF transcriptos pendientes, sesión 2026-09-25,
-  // prioridad Sudamérica): mismo motor genérico.
   'guarani-br': { id:'guarani-br', name:'Guarani Futebol Clube', displayName:'Guarani', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#006C51' },
   'pontepreta-br': { id:'pontepreta-br', name:'Associação Atlética Ponte Preta', displayName:'Ponte Preta', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
-  // Colombia: ejercicio fiscal es año calendario (1-ene a 31-dic), moneda nativa COP (ver
-  // data/currency-map.js y fuentes/Colombia/*.md sobre el tipo de cambio TRM usado).
-  // `brandColor:null` (no ausente): se miró y NO lleva color, el que lo identifica es el blanco.
   oncecaldas: { id:'oncecaldas', name:'Once Caldas S.A. En Reorganización', displayName:'Once Caldas', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   envigado: { id:'envigado', name:'Envigado Fútbol Club S.A.', displayName:'Envigado FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#ED7039' },
   'unionmagdalena-co': { id:'unionmagdalena-co', name:'Unión Magdalena S.A.', displayName:'Unión Magdalena', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'millonarios-co': { id:'millonarios-co', name:'Azul y Blanco Millonarios FC S.A.', displayName:'Millonarios', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#293378' },
   'deportivopereira-co': { id:'deportivopereira-co', name:'Deportivo Pereira F.C. S.A.', displayName:'Deportivo Pereira', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0013' },
-  // Boyacá Chicó ("Los Ajedrezados"): camiseta a cuadros (patrón ajedrezado) azul marino y blanco
-  // según Wikipedia (infobox pattern_la1/pattern_b1) -- bicolor en partes iguales, mismo caso que
-  // Almagro (tricolor): sin un color que predomine con claridad, brandColor:null a propósito en
-  // vez de forzar uno de los dos (footylogos da #001356 azul marino como #1, pero es el orden del
-  // escudo, no confirma que domine sobre el blanco en la camiseta a cuadros).
   'boyacachico-co': { id:'boyacachico-co', name:'Deportivo Boyacá Chicó Futbol Club S.A.', displayName:'Boyacá Chicó', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
-  // España (Versión 111): sexto país con datos reales. `reportingCurrency:'EUR'` ya soportado de
-  // forma genérica por CURRENCY_META (data/currency-map.js) desde la Versión 103 — el toggle de
-  // moneda y "Formato del club/simplificado" se muestran para CUALQUIER club (no gateados por
-  // `country === 'AR'` ni por ninguna moneda en particular, ver populateCurrencyToggle() en
-  // index.html). `fiscalYearStart:'07-01'`: los ejercicios de LaLiga corren 1/7 a 30/6, confirmado
-  // en cada PDF fuente ("ejercicio anual terminado el 30 de junio de AAAA") — temporada partida,
-  // igual que los clubes argentinos (no aplica isCalendarYearClub acá).
-  // `brandColor:null` (no ausente): se miró y NO lleva color, el que lo identifica es el blanco.
   realmadrid: { id:'realmadrid', name:'Real Madrid Club de Fútbol', displayName:'Real Madrid', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
   fcbarcelona: { id:'fcbarcelona', name:'Futbol Club Barcelona', displayName:'FC Barcelona', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#004D98' },
   atleticomadrid: { id:'atleticomadrid', name:'Club Atlético de Madrid, S.A.D.', displayName:'Atlético de Madrid', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E8151E' },
@@ -190,159 +128,73 @@ const clubs = {
   realbetis: { id:'realbetis', name:'Real Betis Balompié, S.A.D.', displayName:'Real Betis', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#00954C' },
   celtavigo: { id:'celtavigo', name:'Real Club Celta de Vigo, S.A.D.', displayName:'Celta de Vigo', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#6DACE5' },
   deportivoalaves: { id:'deportivoalaves', name:'Deportivo Alavés, S.A.D.', displayName:'Deportivo Alavés', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0232A0' },
-  // Chile (onboarding 2026-09-25): primer país sudamericano con moneda propia CLP (scale:1000, ver
-  // data/currency-map.js). fiscalYearStart:'01-01': los 3 son sociedades anónimas cerradas/abiertas
-  // que reportan EEFF IFRS en año calendario (1/1 a 31/12), igual que Brasil/Colombia, no un
-  // ejercicio partido como los clubes argentinos/españoles.
-  // Los 3 clubes de Chile llevan el país al final del id (convención desde la Versión 129,
-  // CONVENCIONES.md: `<clubId>-<iso2>`), a diferencia de los 41 clubes heredados de arriba. Clave
-  // entre comillas porque un id con guion no es una key JS válida sin comillas. brandColor: color
-  // identificador del club verificado contra footylogos.com (Colo-Colo negro de su camiseta, no el
-  // azul/dorado del escudo; U de Chile y Católica el azul de su camiseta pese a ser predominantemente
-  // blanca, mismo criterio que River con su franja roja).
   'colocolo-cl': { id:'colocolo-cl', name:'Blanco y Negro S.A.', displayName:'Colo-Colo', country:'CL', reportingCurrency:'CLP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
   'udechile-cl': { id:'udechile-cl', name:'Azul Azul S.A.', displayName:'Universidad de Chile', country:'CL', reportingCurrency:'CLP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#022F87' },
   'catolica-cl': { id:'catolica-cl', name:'Cruzados S.A.D.P.', displayName:'Universidad Católica', country:'CL', reportingCurrency:'CLP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0071B9' },
-  // Perú, primer club del país (onboarding 2026-09-25). fiscalYearStart:'01-01': año calendario
-  // (los EEFF dicen "Al 31 de diciembre de AAAA"), mismo criterio que Brasil/Colombia/Chile.
-  // reportingCurrency:'PEN', ya soportado en CURRENCY_META (data/currency-map.js, scale:1).
   'alianzalima-pe': { id:'alianzalima-pe', name:'Club Alianza Lima', displayName:'Alianza Lima', country:'PE', reportingCurrency:'PEN', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#192745' },
-  // 5 clubes colombianos nuevos (sesión 2026-09-22, Ejercicio 2025 cada uno), mismo criterio de
-  // ejercicio/moneda que Envigado/Once Caldas de arriba.
   'americadecali-co': { id:'americadecali-co', name:'América de Cali S.A. En Reorganización', displayName:'América de Cali', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#B00000' },
   'atlnacional-co': { id:'atlnacional-co', name:'Atlético Nacional S.A.', displayName:'Atlético Nacional', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#00953B' },
   'depcali-co': { id:'depcali-co', name:'Club Profesional Deportivo Cali S.A.', displayName:'Deportivo Cali', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#2A975E' },
   'santafe-co': { id:'santafe-co', name:'Independiente Santa Fe S.A. En Reorganización', displayName:'Independiente Santa Fe', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#ED1E26' },
   'junior-co': { id:'junior-co', name:'Club Deportivo Popular Junior F.C. S.A.', displayName:'Junior de Barranquilla', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#B21117' },
-  // 3 clubes españoles nuevos (sesión 2026-09-22, 2 ejercicios cada uno salvo Girona), mismo
-  // criterio de ejercicio/moneda que los 10 españoles de arriba.
   'getafe-es': { id:'getafe-es', name:'Getafe Club de Fútbol, S.A.D.', displayName:'Getafe CF', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#005999' },
   'girona-es': { id:'girona-es', name:'Girona Futbol Club, S.A.D.', displayName:'Girona FC', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#CF0C29' },
   'espanyol-es': { id:'espanyol-es', name:'R.C.D. Espanyol de Barcelona, S.A.D.', displayName:'RCD Espanyol', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#007fc8' },
   'elche-es': { id:'elche-es', name:'Elche Club de Fútbol, S.A.D.', displayName:'Elche CF', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#05642C' },
   'osasuna-es': { id:'osasuna-es', name:'Club Atlético Osasuna', displayName:'CA Osasuna', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#D91A21' },
-  // 3 clubes nuevos (Versión 221, 4to batch de PDF transcriptos pendientes, sesión 2026-09-25,
-  // completando a 10 tras agotar el pool limpio de Sudamérica). `brandColor:null` en Rayo
-  // Vallecano: camiseta blanca dominante con franja diagonal roja, mismo bucket que River/Vélez/
-  // Sevilla/Real Madrid.
   'rcdmallorca-es': { id:'rcdmallorca-es', name:'Real Club Deportivo Mallorca, S.A.D.', displayName:'RCD Mallorca', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E20613' },
   'realoviedo-es': { id:'realoviedo-es', name:'Real Oviedo, S.A.D.', displayName:'Real Oviedo', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0033A0' },
   'rayovallecano-es': { id:'rayovallecano-es', name:'Rayo Vallecano de Madrid, S.A.D.', displayName:'Rayo Vallecano', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
-  // Alemania (sesión 2026-09-22): PAÍS NUEVO, 5 clubes de Bundesliga. `fiscalYearStart:'07-01'`
-  // (ejercicio 1/7-30/6, igual que España) para los 4 primeros; VfB Stuttgart es la excepción, su
-  // ejercicio es año CALENDARIO (confirmado en el propio documento, ver data/stuttgart-de-data.js).
   'koln-de': { id:'koln-de', name:'1. FC Köln GmbH & Co. KGaA', displayName:'1. FC Köln', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#ED1C24' },
   'eintrachtfrankfurt-de': { id:'eintrachtfrankfurt-de', name:'Eintracht Frankfurt Fußball Aktiengesellschaft', displayName:'Eintracht Frankfurt', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E1000F' },
   'werderbremen-de': { id:'werderbremen-de', name:'SV Werder Bremen GmbH & Co. KGaA', displayName:'Werder Bremen', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#1D9053' },
   'augsburg-de': { id:'augsburg-de', name:'Fußball-Club Augsburg 1907 GmbH & Co. KGaA', displayName:'FC Augsburg', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#BA3733' },
-  // `brandColor:null` (no ausente): se miró (de.wikipedia.org, "Vereinsfarben: Weiß-Rot") y NO
-  // lleva color, el que lo identifica es el blanco.
   'stuttgart-de': { id:'stuttgart-de', name:'VfB Stuttgart 1893 AG', displayName:'VfB Stuttgart', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
-  // 6 clubes alemanes nuevos (sesión 2026-09-25, 2 ejercicios cada uno: 2023/24 y 2024/25 salvo
-  // Mönchengladbach, ejercicio CALENDARIO). Colores: footylogos.com/Wikipedia.
   'hoffenheim-de': { id:'hoffenheim-de', name:'TSG 1899 Hoffenheim Fußball-Spielbetriebs GmbH', displayName:'TSG Hoffenheim', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#1966A6' },
-  // Hamburger SV: se carga la Fußball AG (entidad de fútbol profesional), no el e.V. (club social) —
-  // ver comentario de cabecera de data/hamburgersv-de-data.js.
   'hamburgersv-de': { id:'hamburgersv-de', name:'HSV Fußball AG & Co. KGaA', displayName:'Hamburger SV', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#041E42' },
-  // Borussia Mönchengladbach: ejercicio CALENDARIO (01/01-31/12), confirmado en el propio documento.
   'monchengladbach-de': { id:'monchengladbach-de', name:'Borussia VfL 1900 Mönchengladbach GmbH', displayName:'Borussia Mönchengladbach', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#00963A' },
   'bayernmunich-de': { id:'bayernmunich-de', name:'FC Bayern München AG', displayName:'Bayern Munich', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#DC052D' },
   'dortmund-de': { id:'dortmund-de', name:'Borussia Dortmund GmbH & Co. KGaA', displayName:'Borussia Dortmund', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FDE100' },
   'rbleipzig-de': { id:'rbleipzig-de', name:'RasenBallsport Leipzig GmbH', displayName:'RB Leipzig', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#DD0741' },
-  // Inglaterra (sesión 2026-09-22): PAÍS NUEVO, LIBRA ESTERLINA (GBP) MONEDA NUEVA, 5 clubes de
-  // Premier League, 2 ejercicios cada uno (2023/24 y 2024/25). `fiscalYearStart` varía por club
-  // (a diferencia de España/Alemania, cada club inglés cierra en una fecha distinta, confirmada
-  // en su propio documento): Arsenal/Liverpool cierran 31 de mayo (`'06-01'`), Manchester
-  // City/Everton/Tottenham cierran 30 de junio (`'07-01'`).
   'arsenal-gb': { id:'arsenal-gb', name:'Arsenal Holdings Limited', displayName:'Arsenal', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'06-01', sport:'futbol', brandColor:'#EF0107' },
   'liverpool-gb': { id:'liverpool-gb', name:'The Liverpool Football Club and Athletic Grounds Limited', displayName:'Liverpool', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'06-01', sport:'futbol', brandColor:'#C8102E' },
   'mancity-gb': { id:'mancity-gb', name:'Manchester City Football Club Limited', displayName:'Manchester City', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#6CABDD' },
   'everton-gb': { id:'everton-gb', name:'Everton Football Club Company, Limited', displayName:'Everton', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#003399' },
   'tottenham-gb': { id:'tottenham-gb', name:'Tottenham Hotspur Limited', displayName:'Tottenham Hotspur', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#000a3c' },
-  // 5 clubes nuevos (onboarding 2026-09-25, pool de PDF ya transcriptos): Nottingham Forest,
-  // Sunderland, West Ham, Wolves (Inglaterra) y Levante (España, país ya cargado). brandColor
-  // verificado contra footylogos.com salvo Levante (ver duda en Admin/dudas-por-club.md: kit
-  // mitades azul/granate sin predominancia declarada, mismo caso que Crystal Palace).
   'nottinghamforest-gb': { id:'nottinghamforest-gb', name:'Nottingham Forest Football Club Limited', displayName:'Nottingham Forest', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#DD0000' },
   'sunderland-gb': { id:'sunderland-gb', name:'Sunderland Association Football Club, Limited (The)', displayName:'Sunderland', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'08-01', sport:'futbol', brandColor:'#EB172B' },
   'westham-gb': { id:'westham-gb', name:'West Ham United Football Club Limited', displayName:'West Ham United', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'06-01', sport:'futbol', brandColor:'#7C2C3B' },
   'wolves-gb': { id:'wolves-gb', name:'Wolverhampton Wanderers Football Club (1986) Limited', displayName:'Wolverhampton Wanderers', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'06-01', sport:'futbol', brandColor:'#FDB913' },
   'levante-es': { id:'levante-es', name:'Levante Unión Deportiva, S.A.D. y Sociedades Dependientes', displayName:'Levante UD', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
-  // 4 clubes ingleses más (onboarding 2026-09-25, mismo pool de PDF transcriptos). brandColor
-  // verificado contra footylogos.com.
   'astonvilla-gb': { id:'astonvilla-gb', name:'Aston Villa Football Club Limited', displayName:'Aston Villa', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#480024' },
   'bournemouth-gb': { id:'bournemouth-gb', name:'AFC Bournemouth Limited', displayName:'AFC Bournemouth', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#D6171C' },
   'brentford-gb': { id:'brentford-gb', name:'Brentford FC Ltd', displayName:'Brentford', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E30613' },
   'burnley-gb': { id:'burnley-gb', name:'Burnley FC Holdings Limited', displayName:'Burnley', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'08-01', sport:'futbol', brandColor:'#5F0041' },
-  // 5 clubes ingleses más (onboarding 2026-09-25, mismo pool de PDF transcriptos). brandColor
-  // verificado contra footylogos.com/chelseafc.com, salvo Crystal Palace (ver duda en
-  // Admin/dudas-por-club.md: franjas rojo/azul desde 1973, sin predominancia declarada, mismo caso
-  // que Levante) y Fulham (camiseta blanca, mismo bucket que River/Vélez/Sevilla/Real Madrid).
   'newcastle-gb': { id:'newcastle-gb', name:'Newcastle United Limited', displayName:'Newcastle United', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#231F20' },
   'crystalpalace-gb': { id:'crystalpalace-gb', name:'CPFC 2010 Limited', displayName:'Crystal Palace', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
   'fulham-gb': { id:'fulham-gb', name:'Fulham Football Club Limited', displayName:'Fulham', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
   'leeds-gb': { id:'leeds-gb', name:'Leeds United Football Club Limited', displayName:'Leeds United', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
   'chelsea-gb': { id:'chelsea-gb', name:'Chelsea FC Holdings Limited', displayName:'Chelsea', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0033A0' },
   'brighton-gb': { id:'brighton-gb', name:'The Brighton and Hove Albion Football Club Limited', displayName:'Brighton', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#005DAA' },
-  // 3 clubes argentinos nuevos (sesión 2026-09-23, to-do 58 — barrido de sourcing del 2026-09-22
-  // que descargó los PDFs, onboardeados en 3 agentes en paralelo): los 3 pasan de "sin nada
-  // cargado" a tener ejercicios reales. `clubId` con sufijo de país porque son clubes NUEVOS
-  // (Versión 129), a diferencia de los 11 argentinos de arriba, cargados antes de esa convención.
   'talleres-ar': { id:'talleres-ar', name:'Club Atlético Talleres Asociación Civil', displayName:'Talleres', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#040D2D' },
   'newells-ar': { id:'newells-ar', name:"Club Atlético Newell's Old Boys", displayName:"Newell's Old Boys", country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#F42121' },
   'banfield-ar': { id:'banfield-ar', name:'Club Atlético Banfield', displayName:'Banfield', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#03953F' },
-  // Gimnasia y Esgrima (La Plata), club nuevo (sesión 2026-09-23, to-do 58): 3 balances reales +
-  // presupuestos, 2 de ellos cargados como overlay de un ejercicio dual (ver
-  // data/gimnasiaesgrima-ar-data.js). `brandColor:null` (no ausente): camiseta blanca con banda
-  // azul marino, el que lo identifica es el blanco — mismo bucket que River/Vélez/Sevilla/Real
-  // Madrid/Valencia/Once Caldas, confirmado en.wikipedia.org.
   'gimnasiaesgrima-ar': { id:'gimnasiaesgrima-ar', name:'Club de Gimnasia y Esgrima La Plata', displayName:'Gimnasia y Esgrima (La Plata)', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
-  // Ferro Carril Oeste, club nuevo (Versión 220, 3er batch de PDF transcriptos pendientes, sesión
-  // 2026-09-24): 2 balances reales (Ejercicios 118 y 119, 2021-22 y 2022-23).
   'ferrocarriloeste-ar': { id:'ferrocarriloeste-ar', name:'Club Ferro Carril Oeste', displayName:'Ferro Carril Oeste', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#156538' },
-  // Países Bajos (sesión de esta tanda): PAÍS NUEVO, 4 clubes de Eredivisie, 2 ejercicios cada uno
-  // (2023/2024 y 2024/2025, ambos cierran 30/6). brandColor verificado contra footylogos.com
-  // (color-codes/eredivisie): los 4 clubes tienen rojo como color primario listado (no el blanco
-  // ni el negro que también llevan en el escudo/indumentaria).
   'ajax-nl': { id:'ajax-nl', name:'AFC Ajax N.V.', displayName:'Ajax', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#DA121A' },
   'psv-nl': { id:'psv-nl', name:'PSV N.V.', displayName:'PSV', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#ED1C24' },
   'feyenoord-nl': { id:'feyenoord-nl', name:'Feyenoord Rotterdam N.V.', displayName:'Feyenoord', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FF0000' },
   'az-nl': { id:'az-nl', name:'AZ Holding B.V.', displayName:'AZ', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#CA0008' },
-  // Croacia (onboarding 2026-09-25): PAÍS NUEVO, 3 clubes de HNL, ejercicio 2024 (año CALENDARIO,
-  // fiscalYearStart:'01-01' — confirmado en cada documento fuente: "za godinu koja završava na dan
-  // 31. prosinca 2024."). reportingCurrency:'EUR' (Croacia adoptó el euro el 1/1/2023, el ejercicio
-  // 2024 es 100% en euros). brandColor verificado vía schemecolor.com/brandpalettes (Dinamo: azul de
-  // su escudo/camiseta, "Hermes" en la paleta; Hajduk: camiseta blanca dominante con acento azul,
-  // mismo criterio que River — se usó el azul #21409A de su indumentaria; Rijeka: camiseta
-  // blanca/azul con la cruz celeste característica, se usó ese azul #38A1CE).
   'dinamozagreb-hr': { id:'dinamozagreb-hr', name:'Građanski nogometni klub Dinamo', displayName:'Dinamo Zagreb', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#1D3A8D' },
   'hajduksplit-hr': { id:'hajduksplit-hr', name:'HNK Hajduk s.d.d.', displayName:'Hajduk Split', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#21409A' },
   'rijeka-hr': { id:'rijeka-hr', name:'Hrvatski nogometni klub Rijeka s.d.d.', displayName:'Rijeka', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#38A1CE' },
-  // Bélgica (sesión de esta tanda): PAÍS NUEVO, 4 clubes de la Pro League, 1 ejercicio cada uno
-  // (2024/2025, cierra 30/6). brandColor verificado con Wikipedia (colores oficiales del infobox)
-  // + teamcolorcodes.com/schemecolor.com/logotyp.us para el hex — mismo criterio que River: bicolor
-  // con blanco, se usa el acento NO blanco (Club Brugge es azul/negro sin blanco, se usó el azul).
   'clubbrugge-be': { id:'clubbrugge-be', name:'Club Brugge NV', displayName:'Club Brugge', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0078BF' },
   'anderlecht-be': { id:'anderlecht-be', name:'Royal Sporting Club Anderlecht NV', displayName:'Anderlecht', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#4C2484' },
   'genk-be': { id:'genk-be', name:'K. Racing Club Genk 322 VZW', displayName:'Genk', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#00468F' },
   'gent-be': { id:'gent-be', name:'K.A.A. Gent NV', displayName:'Gent', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#004794' },
-  // Dinamarca (sesión de esta tanda): PAÍS NUEVO, DKK MONEDA NUEVA (ver data/currency-map.js), 3
-  // clubes de la Superliga, cada uno con el ejercicio más reciente que permitiera separar Revenue de
-  // Expenses de verdad (ver comentario de cabecera de cada archivo — FC Midtjylland usa 2019 en vez
-  // de un año más reciente porque sus balances 2022+ netean Revenue contra Cost of Sales en una sola
-  // línea "Bruttofortjeneste", sin desglose disponible). brandColor: footylogos.com/Wikipedia.
   'fckobenhavn-dk': { id:'fckobenhavn-dk', name:'F.C. København P/S', displayName:'FC København', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#375197' },
   'brondby-dk': { id:'brondby-dk', name:'Brøndbyernes I.F. Fodbold A/S', displayName:'Brøndby', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFD100' },
   'midtjylland-dk': { id:'midtjylland-dk', name:'FC Midtjylland A/S', displayName:'FC Midtjylland', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#B60C28' },
-  // Tanda de 15 clubes nuevos (sesión 2026-09-25, "onboardear 20 transcripts al azar"): 2 más de
-  // Croacia, 3 más de Dinamarca, 3 más de Bélgica (los 3 países ya venían de la tanda de arriba),
-  // 5 de Brasil (país ya cargado) y 2 de Argentina (país ya cargado). De los 20 candidatos
-  // elegidos al azar, 3 resultaron dead-ends sin estados contables reales (Temperley: solo
-  // Memoria narrativa sin balance; Belgrano: ídem; Palestino: solo un estado financiero
-  // intermedio de 6 meses, sin P&L anual) y se reemplazaron por otros 3 (Botafogo-SP, Juventude,
-  // Amazonas). Las 3 preguntas quedaron en Admin/dudas-por-club.md. brandColor: Wikipedia del
-  // idioma del país primero (identidad), hex después (footylogos/teamcolorcodes/wikitext de kit
-  // template) — ver el detalle por club en `fuentes/<País>/<Club>.md`.
   'osijek-hr': { id:'osijek-hr', name:'Nogometni klub Osijek, sportsko dioničko društvo', displayName:'Osijek', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'slavenbelupo-hr': { id:'slavenbelupo-hr', name:'Nogometni klub Slaven Belupo', displayName:'Slaven Belupo', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0000FF' },
   'agf-dk': { id:'agf-dk', name:'AGF A/S', displayName:'AGF', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
@@ -358,11 +210,6 @@ const clubs = {
   'amazonas-br': { id:'amazonas-br', name:'Amazonas Futebol Clube', displayName:'Amazonas', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFDD00' },
   'juventude-br': { id:'juventude-br', name:'Esporte Clube Juventude', displayName:'Juventude', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#009846' },
   'botafogosp-br': { id:'botafogosp-br', name:'Botafogo Futebol S.A. - SAF', displayName:'Botafogo-SP', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
-  // 2da tanda de 15 clubes nuevos (misma sesión 2026-09-25, "20 más"): países ya cargados otra vez
-  // a propósito (Bélgica/Dinamarca/Croacia), descubiertos porque estos 3 países tenían series
-  // históricas completas ya transcriptas y sin cargar, sentadas en `Clubes/`. Ningún dead-end esta
-  // vez (los 20 candidatos, entre clubes nuevos y ejercicios de clubes ya cargados, cerraron los
-  // 20). Detalle completo, club por club, en `Admin/CHANGELOG.md`.
   'standardliege-be': { id:'standardliege-be', name:'Standard de Liège SA', displayName:'Standard Liège', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#DD0000' },
   'unionsg-be': { id:'unionsg-be', name:'Royale Union Saint-Gilloise SRL', displayName:'Union Saint-Gilloise', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFE000' },
   'westerlo-be': { id:'westerlo-be', name:'KVC Westerlo BV', displayName:'Westerlo', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFDD00' },
@@ -378,158 +225,56 @@ const clubs = {
   'istra-hr': { id:'istra-hr', name:'Nogometni klub Istra 1961 sportsko dioničko društvo', displayName:'Istra 1961', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#007B33' },
   'varazdin-hr': { id:'varazdin-hr', name:'Nogometni klub Varaždin sportsko dioničko društvo za obavljanje sportskih djelatnosti', displayName:'Varaždin', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'gorica-hr': { id:'gorica-hr', name:'Hrvatski Nogometni klub GORICA s.d.d.', displayName:'Gorica', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
-  // Panathinaikos, primer club griego cargado (2026-09-28, ronda de onboardings de prueba).
-  // Colores VERDE Y BLANCO confirmados (Wikipedia: "green established as the primary colour since
-  // 1910", apodo "Πράσινοι"/"los verdes"), pero sin un hex específico de la sección de FÚTBOL
-  // (footylogos no tiene Grecia cacheada todavía, y las fuentes de color encontradas mezclan con
-  // el club de básquet del mismo nombre) — brandColor:null a propósito en vez de adivinar un tono.
   'panathinaikos-gr': { id:'panathinaikos-gr', name:'Panathinaikos Athlitikos Omilos P.A.E.', displayName:'Panathinaikos', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
-  // Fortaleza CEIF: alta por tools/alta-club.mjs (2026-10-02) desde Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf. brandColor de Guido
-  // (2026-10-02: azul #003366 y rojo #CC0000; el campo admite un color y va el azul).
   'fortalezaceif-co': { id:'fortalezaceif-co', name:'FORTALEZA FUTBOL CLUB S.A.', displayName:'Fortaleza CEIF', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#003366' },
-  // Goias: alta por tools/alta-club.mjs (2026-10-02) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf. brandColor de Guido
-  // (2026-10-02: verde #006633; footylogos no tiene a Goiás).
   'goias-br': { id:'goias-br', name:'Goiás Esporte Clube', displayName:'Goiás', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#006633' },
-  // Novorizontino: alta por tools/alta-club.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf. brandColor AUSENTE a propósito
-  // (nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).
-  'novorizontino-br': { id:'novorizontino-br', name:'Grêmio Novorizontino Sociedade Anônima do Futebol', displayName:'Novorizontino', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFDD00' }, // name: demonstracoes-financeiras-2023.md L70 (SAF desde 06/12/2023; antes associação 'Grêmio Novorizontino'). Color: aurinegro, amarillo primero (pt.wikipedia, himno 'Amarelo e negro'); hex como Amazonas,
-  // AEL Larissa: alta por tools/alta-club.mjs (2026-10-03) desde Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2025-06-30_a.pdf. brandColor AUSENTE a propósito
-  // (nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).
+  'novorizontino-br': { id:'novorizontino-br', name:'Grêmio Novorizontino Sociedade Anônima do Futebol', displayName:'Novorizontino', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFDD00' },
   'aellarissa-gr': { id:'aellarissa-gr', name:'Athlitiki Enosi Larissas AEL P.A.E.', displayName:'AEL Larissa', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
-  // Juventus: alta por tools/alta-club.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.pdf. brandColor AUSENTE a propósito
-  // (nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).
   'juventus-it': { id:'juventus-it', name:'Juventus Football Club S.p.A.', displayName:'Juventus', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#000000' },
-  // AC Milan: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.pdf.
-  // brandColor y su procedencia: fuentes/Italia/AC Milan.md.
   'acmilan-it': { id:'acmilan-it', name:'A.C. Milan S.p.A.', displayName:'AC Milan', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E4002B' },
-  // AS Roma: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.pdf.
-  // brandColor y su procedencia: fuentes/Italia/AS Roma.md.
   'asroma-it': { id:'asroma-it', name:'A.S. Roma S.r.l.', displayName:'AS Roma', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#980A2B' },
-  // Atalanta: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2021.pdf.
-  // brandColor y su procedencia: fuentes/Italia/Atalanta.md.
   'atalanta-it': { id:'atalanta-it', name:'Atalanta Bergamasca Calcio S.p.A.', displayName:'Atalanta', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0D68B1' },
-  // Bologna: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2018-19.pdf.
-  // brandColor y su procedencia: fuentes/Italia/Bologna.md.
   'bologna-it': { id:'bologna-it', name:'Bologna F.C. 1909 S.p.A.', displayName:'Bologna', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#9F1F33' },
-  // Como: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf.
-  // brandColor y su procedencia: fuentes/Italia/Como.md.
   'como-it': { id:'como-it', name:'Como 1907 S.r.l.', displayName:'Como', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#10416A' },
-  // Cremonese: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Cremonese/Cremonese-bilancio-2025.pdf.
-  // brandColor y su procedencia: fuentes/Italia/Cremonese.md.
   'cremonese-it': { id:'cremonese-it', name:'U.S. Cremonese S.p.A.', displayName:'Cremonese', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#ED1C24' },
-  // Hellas Verona: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2020.pdf.
-  // brandColor y su procedencia: fuentes/Italia/Hellas Verona.md.
   'hellasverona-it': { id:'hellasverona-it', name:'Hellas Verona Football Club S.p.A.', displayName:'Hellas Verona', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#002F6C' },
-  // Inter: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.pdf.
-  // brandColor y su procedencia: fuentes/Italia/Inter.md.
   'inter-it': { id:'inter-it', name:'F.C. Internazionale Milano S.p.A.', displayName:'Inter', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#00239C' },
-  // Lazio: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.pdf.
-  // brandColor y su procedencia: fuentes/Italia/Lazio.md.
   'lazio-it': { id:'lazio-it', name:'S.S. Lazio S.p.A.', displayName:'Lazio', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#74D1EA' },
-  // Monza: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Monza/Monza-bilancio-2022.pdf.
-  // brandColor y su procedencia: fuentes/Italia/Monza.md.
   'monza-it': { id:'monza-it', name:'Associazione Calcio Monza S.p.A.', displayName:'Monza', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#E10032' },
-  // Napoli: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Napoli/Napoli-bilancio-2025.pdf.
-  // brandColor y su procedencia: fuentes/Italia/Napoli.md.
   'napoli-it': { id:'napoli-it', name:'SSC Napoli S.p.A.', displayName:'Napoli', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#00ABE7' },
-  // Parma: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.pdf.
-  // brandColor y su procedencia: fuentes/Italia/Parma.md.
   'parma-it': { id:'parma-it', name:'Parma Calcio 1913 S.r.l.', displayName:'Parma', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
-  // Sampdoria: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf.
-  // brandColor y su procedencia: fuentes/Italia/Sampdoria.md.
   'sampdoria-it': { id:'sampdoria-it', name:'U.C. Sampdoria S.p.A.', displayName:'Sampdoria', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#002160' },
-  // Sassuolo: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.pdf.
-  // brandColor y su procedencia: fuentes/Italia/Sassuolo.md.
   'sassuolo-it': { id:'sassuolo-it', name:'Unione Sportiva Sassuolo Calcio S.r.l.', displayName:'Sassuolo', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#1EA451' },
-  // Torino: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Torino/Torino-bilancio-2024.pdf.
-  // brandColor y su procedencia: fuentes/Italia/Torino.md.
   'torino-it': { id:'torino-it', name:'Torino Football Club S.p.A.', displayName:'Torino', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#8B2A1F' },
-  // Udinese: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Udinese/Udinese-bilancio-2024-25.pdf.
-  // brandColor y su procedencia: fuentes/Italia/Udinese.md.
   'udinese-it': { id:'udinese-it', name:'Udinese Calcio S.p.A.', displayName:'Udinese', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#000000' },
-  // Fiorentina: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Fiorentina/Fiorentina-bilancio-2024-25.pdf.
   'fiorentina-it': { id:'fiorentina-it', name:'ACF Fiorentina S.r.l.', displayName:'Fiorentina', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#61358B' },
-  // Genoa: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf.
   'genoa-it': { id:'genoa-it', name:'Genoa Cricket and Football Club S.p.A.', displayName:'Genoa', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#AB131C' },
-  // Chievo Verona: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.pdf. brandColor AUSENTE a propósito
-  // (nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).
   'chievoverona-it': { id:'chievoverona-it', name:'Associazione Calcio Chievo-Verona S.r.l.', displayName:'Chievo Verona', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFD200' },
-  // Salernitana: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2022.pdf. brandColor AUSENTE a propósito
-  // (nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).
   'salernitana-it': { id:'salernitana-it', name:'U.S. Salernitana 1919 S.r.l.', displayName:'Salernitana', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#701D2F' },
-  // Juve Stabia: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.pdf. brandColor AUSENTE a propósito
-  // (nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).
   'juvestabia-it': { id:'juvestabia-it', name:'Società Sportiva Juve Stabia S.r.l.', displayName:'Juve Stabia', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFD200' },
-  // Criciuma: alta por tools/alta-club.mjs (2026-10-09) desde Clubes/Brasil/Criciuma/demonstrativo-financeiro-2012.pdf. brandColor:null a propósito:
-  // tricolor amarillo, negro y blanco, mismo criterio que Fortaleza (procedencia en fuentes/Brasil/Criciuma.md).
   'criciuma-br': { id:'criciuma-br', name:'Criciúma Esporte Clube', displayName:'Criciuma', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
-  // CRB: alta por tools/alta-club.mjs (2026-10-09) desde Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf. brandColor:null a propósito (procedencia en fuentes/Brasil/CRB.md).
   'crb-br': { id:'crb-br', name:'Clube de Regatas Brasil', displayName:'CRB', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
-  // Avai: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf. brandColor #0040CF
-  // (procedencia en fuentes/Brasil/Avai.md, club-or-year-onboarding/club-nuevo.md).
   'avai-br': { id:'avai-br', name:'Avaí Futebol Clube', displayName:'Avai', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0040CF' },
-  // Paysandu: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Paysandu/dre-2021.pdf. brandColor:null a propósito
-  // (procedencia en fuentes/Brasil/Paysandu.md, club-or-year-onboarding/club-nuevo.md).
   'paysandu-br': { id:'paysandu-br', name:'Paysandu Sport Club', displayName:'Paysandu', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
-  // Cuiaba: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Cuiaba/balanco-financeiro-2022.pdf. brandColor #006030
-  // (procedencia en fuentes/Brasil/Cuiaba.md, club-or-year-onboarding/club-nuevo.md).
   'cuiaba-br': { id:'cuiaba-br', name:'Cuiabá Esporte Clube - Sociedade Anônima do Futebol', displayName:'Cuiaba', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#006030' },
-  // Ferroviaria: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Ferroviaria/balanco-2010.pdf. brandColor #58141E
-  // (procedencia en fuentes/Brasil/Ferroviaria.md, club-or-year-onboarding/club-nuevo.md).
   'ferroviaria-br': { id:'ferroviaria-br', name:'Ferroviária Futebol S.A.', displayName:'Ferroviaria', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#58141E' },
-  // Vila Nova: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf. brandColor #F00000
-  // (procedencia en fuentes/Brasil/Vila Nova.md, club-or-year-onboarding/club-nuevo.md).
   'vilanova-br': { id:'vilanova-br', name:'Vila Nova Futebol Clube', displayName:'Vila Nova', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#F00000' },
-  // Remo: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Remo/demonstracoes-contabeis-2021.pdf. brandColor #111533
-  // (procedencia en fuentes/Brasil/Remo.md; tools/cargar-lote.mjs).
   'remo-br': { id:'remo-br', name:'Clube do Remo', displayName:'Remo', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#111533' },
-  // Krasnodar: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Krasnodar/bfo-2021-datos.md. brandColor:null a propósito
-  // (procedencia en fuentes/Rusia/Krasnodar.md; tools/bfo-rusia.mjs).
   'krasnodar-ru': { id:'krasnodar-ru', name:'OOO Football Club Krasnodar', displayName:'Krasnodar', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
-  // Dynamo Makhachkala: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2021-datos.md. brandColor #0030FF
-  // (procedencia en fuentes/Rusia/Dynamo Makhachkala.md; tools/bfo-rusia.mjs).
   'dynamomakhachkala-ru': { id:'dynamomakhachkala-ru', name:'ANO Football Club Dynamo', displayName:'Dynamo Makhachkala', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0030FF' },
-  // Krylia Sovetov Samara: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Krylia Sovetov Samara/bfo-2021-datos.md. brandColor #80C0FE
-  // (procedencia en fuentes/Rusia/Krylia Sovetov Samara.md; tools/bfo-rusia.mjs).
   'kryliasovetovsamara-ru': { id:'kryliasovetovsamara-ru', name:'AO Professional Football Club Krylia Sovetov', displayName:'Krylia Sovetov Samara', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#80C0FE' },
-  // Orenburg: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Orenburg/bfo-2021-datos.md. brandColor #0000FF
-  // (procedencia en fuentes/Rusia/Orenburg.md; tools/bfo-rusia.mjs).
   'orenburg-ru': { id:'orenburg-ru', name:'ANO Football Club Orenburg', displayName:'Orenburg', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0000FF' },
-  // Pari Nizhny Novgorod: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2021-datos.md. brandColor #5BB8F8
-  // (procedencia en fuentes/Rusia/Pari Nizhny Novgorod.md; tools/bfo-rusia.mjs).
   'parinizhnynovgorod-ru': { id:'parinizhnynovgorod-ru', name:'ANO Football Club Pari Nizhny Novgorod', displayName:'Pari Nizhny Novgorod', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#5BB8F8' },
-  // Rostov: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Rostov/bfo-2021-datos.md. brandColor #FFDD00
-  // (procedencia en fuentes/Rusia/Rostov.md; tools/bfo-rusia.mjs).
   'rostov-ru': { id:'rostov-ru', name:'AO Football Club Rostov', displayName:'Rostov', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFDD00' },
-  // Sochi: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2021-datos.md. brandColor #0044A8
-  // (procedencia en fuentes/Rusia/Sochi.md; tools/bfo-rusia.mjs).
   'sochi-ru': { id:'sochi-ru', name:'OOO Football Club Sochi', displayName:'Sochi', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0044A8' },
-  // Akhmat Grozny: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2022-datos.md. brandColor #00782F
-  // (procedencia en fuentes/Rusia/Akhmat Grozny.md; tools/bfo-rusia.mjs).
   'akhmatgrozny-ru': { id:'akhmatgrozny-ru', name:'ANO Republican Football Club Akhmat', displayName:'Akhmat Grozny', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#00782F' },
-  // Akron Tolyatti: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2021-datos.md. brandColor #FF0000
-  // (procedencia en fuentes/Rusia/Akron Tolyatti.md; tools/bfo-rusia.mjs).
   'akrontolyatti-ru': { id:'akrontolyatti-ru', name:'ANO Football Club Akron', displayName:'Akron Tolyatti', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
-  // Baltika Kaliningrad: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Baltika Kaliningrad/bfo-2022-datos.md. brandColor #0000FF
-  // (procedencia en fuentes/Rusia/Baltika Kaliningrad.md; tools/bfo-rusia.mjs).
   'baltikakaliningrad-ru': { id:'baltikakaliningrad-ru', name:'AO Football Club Baltika', displayName:'Baltika Kaliningrad', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0000FF' },
-  // CSKA Moscow: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/CSKA Moscow/bfo-2021-datos.md. brandColor #EB2F2D
-  // (procedencia en fuentes/Rusia/CSKA Moscow.md; tools/bfo-rusia.mjs).
   'cskamoscow-ru': { id:'cskamoscow-ru', name:'AO Professional Football Club CSKA', displayName:'CSKA Moscow', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#EB2F2D' },
-  // Dynamo Moscow: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Moscow/bfo-2021-datos.md. brandColor #0044FF
-  // (procedencia en fuentes/Rusia/Dynamo Moscow.md; tools/bfo-rusia.mjs).
   'dynamomoscow-ru': { id:'dynamomoscow-ru', name:'AO Football Club Dynamo-Moscow', displayName:'Dynamo Moscow', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0044FF' },
-  // Lokomotiv Moscow: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Lokomotiv Moscow/bfo-2021-datos.md. brandColor #FF0000
-  // (procedencia en fuentes/Rusia/Lokomotiv Moscow.md; tools/bfo-rusia.mjs).
   'lokomotivmoscow-ru': { id:'lokomotivmoscow-ru', name:'AO Football Club Lokomotiv', displayName:'Lokomotiv Moscow', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
-  // Rubin Kazan: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2021-datos.md. brandColor #AA2704
-  // (procedencia en fuentes/Rusia/Rubin Kazan.md; tools/bfo-rusia.mjs).
   'rubinkazan-ru': { id:'rubinkazan-ru', name:'OOO Football Club Rubin', displayName:'Rubin Kazan', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#AA2704' },
-  // Spartak Moscow: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Spartak Moscow/bfo-2021-datos.md. brandColor #FF0000
-  // (procedencia en fuentes/Rusia/Spartak Moscow.md; tools/bfo-rusia.mjs).
   'spartakmoscow-ru': { id:'spartakmoscow-ru', name:'AO Football Club Spartak-Moscow', displayName:'Spartak Moscow', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
-  // Zenit: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Zenit/bfo-2021-datos.md. brandColor #74DAF7
-  // (procedencia en fuentes/Rusia/Zenit.md; tools/bfo-rusia.mjs).
   'zenit-ru': { id:'zenit-ru', name:'AO Football Club Zenit', displayName:'Zenit', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#74DAF7' },
 };
 

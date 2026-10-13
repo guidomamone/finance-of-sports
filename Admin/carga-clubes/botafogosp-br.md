@@ -163,6 +163,12 @@ pendiente para una sesión futura de onboarding de más ejercicios de este mismo
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+17° lugar
+```
+
 ## 2024
 
 ### Meta

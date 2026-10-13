@@ -113,6 +113,16 @@ Los dos cierran EXACTOS, sin residuo — no hizo falta forzar ningún número.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Inglaterra (sesión 2026-09-22): PAÍS NUEVO, LIBRA ESTERLINA (GBP) MONEDA NUEVA, 5 clubes de
+Premier League, 2 ejercicios cada uno (2023/24 y 2024/25). `fiscalYearStart` varía por club
+(a diferencia de España/Alemania, cada club inglés cierra en una fecha distinta, confirmada
+en su propio documento): Arsenal/Liverpool cierran 31 de mayo (`'06-01'`), Manchester
+City/Everton/Tottenham cierran 30 de junio (`'07-01'`).
+```
+
 ## 2024
 
 ### Meta

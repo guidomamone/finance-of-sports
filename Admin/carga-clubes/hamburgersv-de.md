@@ -98,6 +98,20 @@ donde sí aparecen los Geschäftsführer nombrados).
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Hamburger SV: se carga la Fußball AG (entidad de fútbol profesional), no el e.V. (club social) —
+ver comentario de cabecera de data/hamburgersv-de-data.js.
+```
+
+_de data/club-leagues/de.js:_
+
+```text
+Hamburger SV: 2. Bundesliga los 2 ejercicios (asciende a Bundesliga recién para 2025/26, fuera
+de los 2 ejercicios cargados — ver comentario de cabecera de data/hamburgersv-de-data.js).
+```
+
 ## 2025
 
 ### Ingresos

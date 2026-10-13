@@ -301,6 +301,14 @@ estaba en FX_CLOSE ('BRL@2022-12-31'). El documento no declara un tipo de cambio
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+2024 (misma sesión): 9° lugar en la Série A 2024, verificado vía Wikipedia.
+2022 y 2023 (2da tanda, misma sesión): campeón de la Série B 2022 (ascenso), 14° en la
+Série A 2023, primer año de vuelta (confirmado vía Wikipedia).
+```
+
 ## 2025
 
 ### Meta

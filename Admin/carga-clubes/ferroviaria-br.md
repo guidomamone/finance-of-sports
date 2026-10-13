@@ -41,6 +41,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Ferroviaria: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Ferroviaria/balanco-2010.pdf. brandColor #58141E
+(procedencia en fuentes/Brasil/Ferroviaria.md, club-or-year-onboarding/club-nuevo.md).
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+Ferroviaria (alta-club.mjs, 2026-10-10): SIN VERIFICAR (no aparece en los rosters cacheados de 2010 (br-serieA): puede haber jugado otra división).
+```
+
 ## 2025
 
 ### Ingresos
@@ -105,6 +118,12 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2025: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2025 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
+```
+
 ## 2024
 
 ### Ingresos
@@ -167,6 +186,12 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2024: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2024 Campeonato Brasileiro Série C" (tools/club-league-reference/br.js
+```
+
 ## 2023
 
 ### Ingresos
@@ -214,6 +239,12 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+### Liga
+
+```text
+2023: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2023 Campeonato Brasileiro Série D" (tools/club-league-reference/br.js
 ```
 
 ## 2022
@@ -273,6 +304,12 @@ tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por pr
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+### Liga
+
+```text
+2022: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2022 Campeonato Brasileiro Série D" (tools/club-league-reference/br.js
+```
+
 ## 2021
 
 ### Ingresos
@@ -319,6 +356,12 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+### Liga
+
+```text
+2021: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2021 Campeonato Brasileiro Série D" (tools/club-league-reference/br.js
 ```
 
 ## 2018
@@ -571,6 +614,12 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2018: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2018 Campeonato Brasileiro Série D" (tools/club-league-reference/br.js
+```
+
 ## 2017
 
 ### Ingresos
@@ -625,6 +674,12 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 
 ```text
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+### Liga
+
+```text
+2017: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2017 Campeonato Paulista" (tools/club-league-reference/br.json), coinc
 ```
 
 ## 2016
@@ -738,6 +793,12 @@ tools/cargar.mjs (2026-10-10)
 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 265.000. Claude 2026-10-09: las deducciones (PIS 639 + COFINS 2.943 + ICMS 6.971 = 10.553, nota L966-969) restan de la receita bruta: la nota las imprime en positivo y la extracción las sumaba como ingresos. Cuenta: bruta 9.221.750 (L113 = nota L948-958) - deduções 10.553 (L114) = RECEITA LÍQUIDA 9.211.197 (L115); - custos/despesas 10.134.897 (L116-123) - financiero 266.455 (L124) = -1.190.155 (L129). Se re-cargan dos renglones positivos para que el signo de la deducción se lea como resta.
 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: se saca el subtotal RECEITA LÍQUIDA 9.211.197 (L115) para que no se sume junto a sus componentes (bruta 9.221.750 - deduções 10.553 = 9.211.197).
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2016: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2016 Campeonato Paulista" (tools/club-league-reference/br.json), coinc
 ```
 
 ## 2015
@@ -878,6 +939,12 @@ tools/cargar.mjs (2026-10-10)
 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2015 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2015: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "Campeonato Paulista de Futebol de 2015 - Série A2" (tools/club-league-
 ```
 
 ## 2014
@@ -1033,6 +1100,12 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2014: tools/cargar.mjs 2026-10-10, SIN VERIFICAR
+```
+
 ## 2013
 
 ### Ingresos
@@ -1167,6 +1240,12 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2013: tools/cargar.mjs 2026-10-10, SIN VERIFICAR
+```
+
 ## 2012
 
 ### Ingresos
@@ -1220,6 +1299,12 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2024, 2025): Organización de partidos
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+### Liga
+
+```text
+2012: tools/cargar.mjs 2026-10-10, SIN VERIFICAR
 ```
 
 ## 2010

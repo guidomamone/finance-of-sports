@@ -41,6 +41,25 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Sassuolo: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.pdf.
+brandColor y su procedencia: fuentes/Italia/Sassuolo.md.
+```
+
+_de data/club-leagues/it.js:_
+
+```text
+Sassuolo (alta-club.mjs, 2026-10-07): SIN VERIFICAR (no aparece en los rosters cacheados de 2025 (it-seriea): puede haber jugado otra división).
+```
+
+_de data/club-leagues/it.js:_
+
+```text
+2025 (cierre 31/12/2025): Serie A 2025-26, ascendido como campeón de la Serie B 2024-25 (it.wikipedia, Serie_B_2024-2025); regla: la categoría al cierre del ejercicio // 2021: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia e // 2024: verificado 2026-10-09 contra roster cacheado de "2024–25 Serie B" (cierre 31/12/2024) (tools/club-league-reference/it.json), "Sassuolo" // 2019: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2019–20 Serie A" (tools/club-league-reference/it.json), coincidencia e // 2020: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2020–21 Serie A" (tools/club-league-reference/it.json), coincidencia e // 2022: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2022–23 Serie A" (tools/club-league-reference/it.json), coincidencia e // 2023: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2023–24 Serie A" (tools/club-league-reference/it.json), coincidencia e // 2018: tools/cargar.mjs 2026-10-09, verificado contra roster cacheado de "2018–19 Serie A" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2025
 
 ### Ingresos

@@ -183,6 +183,12 @@ en un Anexo/Nota contable formal), no se cargó por no ser una cifra de fuente c
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+clasificó a Libertadores los 2 años
+```
+
 ## 2025
 
 ### Gastos

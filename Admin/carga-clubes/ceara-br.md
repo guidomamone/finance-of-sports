@@ -180,6 +180,24 @@ tie-break que ya usaron Estudiantes/Instituto/Unión.
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+Tanda de 5 clubes brasileños nuevos (onboarding sesión 2026-09-25, tanda de 20 transcripts al
+azar: Ceará, Sport Recife, Amazonas, Juventude, Botafogo-SP — este último NO es el Botafogo de
+Río, ya cargado como `botafogo`, es la SAF de Ribeirão Preto).
+2024 verificado el 2026-09-28 (to-do 104, herramienta ya corregida): Ceará NO aparece en el
+roster de "2024 Campeonato Brasileiro Série A" (20 equipos, tools/club-league-reference/
+br.json) y SÍ en el de "2024 Campeonato Brasileiro Série B" (28 equipos) -- jugó la B en 2024,
+ascendió para 2025.
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+2025 confirmado (rebaixado a la Série B recién para 2026)
+```
+
 ## 2025
 
 ### Meta

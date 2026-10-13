@@ -129,6 +129,15 @@ esta sesión, acá el título SÍ está explícito y sin ambigüedad.
 ============================================================================
 ```
 
+_de data/club-leagues/dk.js:_
+
+```text
+FC Fredericia: el ejercicio cargado (2019) lo jugó en la Nordic Bet Ligaen (1. Division, 2do
+escalón danés) — ascendió a Superliga recién para 2025/26. No hay liga de 2do escalón danesa en
+el catálogo todavía (un solo club-ejercicio no lo justifica, ver `data/club-leagues.js` cabecera
+para el sentinel `'liga-no-catalogada'` y to-do 64c de `Admin/TODO.md`).
+```
+
 ## 2019
 
 ### Meta

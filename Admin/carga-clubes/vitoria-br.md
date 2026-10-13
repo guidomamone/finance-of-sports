@@ -149,6 +149,12 @@ memberCountByClub (queda null); mencionado en fuentes/Brasil/Vitoria.md por si s
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+15° de 20
+```
+
 ## 2025
 
 ### Gastos

@@ -41,6 +41,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Parma: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.pdf.
+brandColor y su procedencia: fuentes/Italia/Parma.md.
+```
+
+_de data/club-leagues/it.js:_
+
+```text
+Parma (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2023–24 Serie B" (tools/club-league-reference/it.json), coincidencia exacta "Parma".
+```
+
 ## 2025
 
 ### Ingresos
@@ -109,6 +122,12 @@ tools/cargar.mjs (2026-10-08)
 ```text
 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = consolidado. Guido 2026-10-07: 2025 solo tiene consolidado; se carga así (el club es individual)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2025: verificado 2026-10-09 contra roster cacheado de "2025–26 Serie A" (cierre 31/12/2025) (tools/club-league-reference/it.json), "Parma"
 ```
 
 ## 2024
@@ -180,6 +199,12 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2024: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2023
@@ -328,6 +353,12 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2022: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2022–23 Serie B" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2021
 
 ### Ingresos
@@ -402,6 +433,12 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2021: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2021–22 Serie B" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2019
 
 ### Ingresos
@@ -470,6 +507,12 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2019: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2018–19 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2018
@@ -547,6 +590,12 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2018: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2017–18 Serie B" (tools/club-league-reference/it.json), coincidencia e
+```
+
 ## 2017
 
 ### Ingresos
@@ -621,6 +670,12 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+2017: verificado 2026-10-09 contra roster cacheado de "2016–17 Lega Pro" (tools/club-league-reference/it.json, los 3 grupos armados a mano), "Parma" (girone B)
+```
+
 ## 2016
 
 ### Ingresos
@@ -679,6 +734,12 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2016: verificado 2026-10-09 contra roster cacheado de "2015–16 Serie D" (tools/club-league-reference/it.json, los 9 gironi armados a mano), "Parma" (girone D)
 ```
 
 ## Fuentes

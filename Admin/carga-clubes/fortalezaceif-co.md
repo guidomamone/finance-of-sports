@@ -42,6 +42,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Fortaleza CEIF: alta por tools/alta-club.mjs (2026-10-02) desde Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf. brandColor de Guido
+(2026-10-02: azul #003366 y rojo #CC0000; el campo admite un color y va el azul).
+```
+
+_de data/club-leagues/co.js:_
+
+```text
+Fortaleza CEIF (alta-club.mjs, 2026-10-02): verificado contra roster cacheado de "2025 Liga DIMAYOR" (tools/club-league-reference/co.json), coincidencia única por palabras "Fortaleza" = "Fortaleza CEIF".
+```
+
 ## 2025
 
 ### Ingresos
@@ -240,6 +253,12 @@ tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento siguiente): "Préstamos y sobregiros bancarios" pág. 13; cash escalón 1 (compuerta: documento siguiente): "Bancos" pág. 13 + "Caja" pág. 13
 ```
 
+### Liga
+
+```text
+2024: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2024 Liga DIMAYOR" (tools/club-league-reference/co.json), coincidencia
+```
+
 ## 2023
 
 ### Ingresos
@@ -380,6 +399,12 @@ tools/caja-deuda.mjs (2026-10-02): cash escalón 1 (compuerta: documento siguien
 tools/caja-deuda.mjs (2026-10-05): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Préstamos y sobregiros bancarios del cuadro de instrumentos financieros, criterio del club; su columna 2022 (238.144) coincide con el documento 2022
 ```
 
+### Liga
+
+```text
+2023: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2023 Torneo DIMAYOR" (tools/club-league-reference/co.json), coincidenc
+```
+
 ## 2022
 
 ### Ingresos
@@ -485,6 +510,12 @@ tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-05): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Préstamos y sobregiros bancarios del cuadro de instrumentos financieros (nota 5), criterio del club; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Efectivo del cuadro de instrumentos financieros (nota 5); el documento 2023 lo abre en Bancos 239.614 + Caja 2.152
 ```
 
+### Liga
+
+```text
+2022: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2022 Torneo DIMAYOR" (tools/club-league-reference/co.json), coincidenc
+```
+
 ## 2021
 
 ### Ingresos
@@ -560,6 +591,12 @@ tools/cargar.mjs (2026-10-02)
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ajuste manual (Admin/ajustes-manuales.jsonl, 2026-10-05): grossDebt = "Préstamos y sobregiros bancarios" del cuadro de instrumentos financieros (nota 5.A, .md L506); antes 102.513, solo el corto plazo
 tools/caja-deuda.mjs (2026-10-05): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Efectivo del cuadro de instrumentos financieros (nota 5.A) = Bancos 14.963 + Caja 5.073
+```
+
+### Liga
+
+```text
+2021: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2021 Torneo DIMAYOR" (tools/club-league-reference/co.json), coincidenc
 ```
 
 ## 2020
@@ -704,6 +741,12 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-05): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Bancos 148.882 + Caja 2.483 (nota de efectivo; el cuadro de instrumentos financieros del documento 2021 imprime 151.365 para 2020)
 ```
 
+### Liga
+
+```text
+2020: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2020 Torneo DIMAYOR" (tools/club-league-reference/co.json), coincidenc
+```
+
 ## 2019
 
 ### Ingresos
@@ -781,6 +824,12 @@ tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: año anterio
 tools/caja-deuda.mjs (2026-10-05): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Total Efectivo y Equivalente de Efectivo (nota 8; su columna 2018, 919.687, es lo cargado)
 ```
 
+### Liga
+
+```text
+2019: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2019 Categoría Primera B season" (tools/club-league-reference/co.json)
+```
+
 ## 2018
 
 ### Ingresos
@@ -837,6 +886,12 @@ tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por pr
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 tools/caja-deuda.mjs (2026-10-02): cash escalón 0 (compuerta: año anterior): "Bancos" pág. 8 + "Cajas" pág. 8
 tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento siguiente): "Total Prestamos y Sobregiros Bancarios" pág. 11
+```
+
+### Liga
+
+```text
+2018: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2018 Categoría Primera B season" (tools/club-league-reference/co.json)
 ```
 
 ## 2017
@@ -999,6 +1054,12 @@ tools/cargar.mjs (2026-10-04)
 tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Televisión, Premios por competencias, Venta de Jugadores
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+### Liga
+
+```text
+2017: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2017 Categoría Primera B season" (tools/club-league-reference/co.json)
 ```
 
 ## Fuentes

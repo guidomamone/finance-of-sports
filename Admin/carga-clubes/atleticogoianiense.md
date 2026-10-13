@@ -82,6 +82,19 @@ preside el club/la SAF — entrada mínima "sin confirmar", mismo criterio que B
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+Verificado el 13/9/2026 contra las páginas de temporada de Wikipedia: Série A 2024 y 2025,
+Série B 2024 y 2025. El ejercicio es el año calendario, así que coincide con la temporada.
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+descendido de la Série A 2024
+```
+
 ## 2025
 
 ### Meta

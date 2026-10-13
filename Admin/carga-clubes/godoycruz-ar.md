@@ -93,6 +93,13 @@ el rango de su gestión en esta sesión, se cargó solo para este ejercicio.
 ============================================================================
 ```
 
+_de data/club-leagues/ar.js:_
+
+```text
+Godoy Cruz (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar): Ejercicio N°72
+(1/7/2019-30/6/2020), Wikipedia confirma temporada 2019-20 completa en Primera División.
+```
+
 ## 2020
 
 ### Meta

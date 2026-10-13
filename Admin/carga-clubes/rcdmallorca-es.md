@@ -119,6 +119,29 @@ confirmar".
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+3 clubes nuevos (Versión 221, 4to batch de PDF transcriptos pendientes, sesión 2026-09-25,
+completando a 10 tras agotar el pool limpio de Sudamérica). `brandColor:null` en Rayo
+Vallecano: camiseta blanca dominante con franja diagonal roja, mismo bucket que River/Vélez/
+Sevilla/Real Madrid.
+```
+
+_de data/club-leagues/es.js:_
+
+```text
+Verificado el 2026-09-25 (onboarding, Versión 221) contra Wikipedia en inglés ("2024-25 La
+Liga", "2024-25 Real Oviedo season"). Real Oviedo jugó Segunda 2024/25 completa (3° en la
+liga regular, ascendió recién por el playoff de junio 2025, para la temporada SIGUIENTE).
+```
+
+_de data/club-leagues/es.js:_
+
+```text
+10° de 20
+```
+
 ## 2025
 
 ### Meta

@@ -55,6 +55,12 @@ no-efectivo), pero sí de PAT vía `operatingProfit`.
 ============================================================================
 ```
 
+_de data/club-leagues/ar.js:_
+
+```text
+ascendido para 2023, ya en Primera al cierre
+```
+
 ## 2024
 
 ### Gastos

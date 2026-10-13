@@ -182,6 +182,28 @@ VERIFICACIÓN (Node, antes de cargar) — Consolidado, columna año corriente de
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+3 clubes nuevos (Versión 217, onboarding en paralelo de 10 PDF transcriptos pendientes): mismo
+motor genérico, mismo país/moneda que los de arriba. `brandColor:null` en 2 de los 3 no es
+ausencia: se investigó y quedó ambiguo (bicolor sin predominancia clara declarada por ninguna
+fuente) — ver `fuentes/Brasil/<Club>.md` para el detalle de cada investigación.
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+Verificado el 2026-09-24 (onboarding, Versión 217) contra Wikipedia en inglés (temporadas 2023,
+2024 y 2025 de cada club). Ejercicio = año calendario, coincide con la temporada.
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+descendido de la Série A al cierre de 2023
+```
+
 ## 2025
 
 ### Meta

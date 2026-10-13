@@ -117,6 +117,13 @@ y equivalente al efectivo (pág. 3) = 1.494,693 M.
 ============================================================================
 ```
 
+_de data/club-leagues/co.js:_
+
+```text
+Verificado el 2026-09-24 (onboarding, Versión 217) contra "2018 Categoría Primera B season"
+(Wikipedia): subcampeón del Torneo Águila 2018, ascendido a Primera A para 2019.
+```
+
 ## 2018
 
 ### Gastos

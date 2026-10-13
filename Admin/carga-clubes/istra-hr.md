@@ -110,6 +110,13 @@ es obligatorio, ver club-or-year-onboarding SKILL.md sección 16).
 ============================================================================
 ```
 
+_de data/club-leagues/hr.js:_
+
+```text
+2da tanda de Croacia (misma sesión, "20 más"): ejercicio calendario 2025, los 3 jugaron HNL
+completa (Wikipedia: Istra 6°, Varaždin 4°, Gorica 7 temporadas consecutivas sin descenso).
+```
+
 ## 2025
 
 ### Meta

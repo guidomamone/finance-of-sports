@@ -212,6 +212,22 @@ programa Fiel Torcedor puntual, no el total de sócios del Clube).
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+10 clubes nuevos (Versión 220, 3er batch de PDF transcriptos pendientes, sesión 2026-09-24):
+mismo motor genérico, mismo país/moneda. `brandColor:null` en Bahia (tricolor en partes
+iguales, sin predominancia declarada por ninguna fuente) y São Paulo (camiseta titular blanca
+dominante, mismo criterio que RB Bragantino) — ver `fuentes/Brasil/<Club>.md` para el detalle.
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+Verificado el 2026-09-24 (onboarding, Versión 220) contra Wikipedia en inglés (temporadas 2021,
+2023, 2024 y 2025 de cada club). Ejercicio = año calendario, coincide con la temporada.
+```
+
 ## 2025
 
 ### Meta

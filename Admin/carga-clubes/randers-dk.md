@@ -129,6 +129,12 @@ GESTIÓN: sin mención de cambio de presidencia en el ejercicio — gestionId:nu
 ============================================================================
 ```
 
+_de data/club-leagues/dk.js:_
+
+```text
+6° puesto
+```
+
 ## 2023
 
 ### Meta

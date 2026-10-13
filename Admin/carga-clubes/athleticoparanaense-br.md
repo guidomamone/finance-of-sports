@@ -136,6 +136,12 @@ en R$ de esa línea de ingreso) — memberCountByClub null.
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+descendido de la Série A al cierre de 2024 (18°), 2° en la Série B 2025, vuelve a la A en 2026
+```
+
 ## 2025
 
 ### Meta

@@ -277,6 +277,20 @@ asumir el rango completo de su mandato).
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+2017 (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar): entre los primeros 6,
+clasificó a Copa Libertadores 2018 (verificado vía Wikipedia, "2017 Campeonato Brasileiro Série
+A"); jugó Série A de corrido desde el ascenso previo hasta la caída de 2021 de abajo.
+```
+
+_de data/club-leagues/br.js:_
+
+```text
+ascendido en 2020, descendido al cierre de 2021
+```
+
 ## 2021
 
 ### Meta

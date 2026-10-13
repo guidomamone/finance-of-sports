@@ -160,6 +160,15 @@ obligatorio inventar una entrada solo por robustez técnica).
 ============================================================================
 ```
 
+_de data/club-leagues/be.js:_
+
+```text
+Zulte Waregem: ese ejercicio (2024/25) lo jugó en Challenger Pro League (2ª división, la ganó,
+ascendió recién para 2025/26), no en `be-proleague`. No hay liga de 2do escalón belga en el
+catálogo todavía (un solo club-ejercicio no lo justifica, ver `data/club-leagues.js` cabecera
+para el sentinel `'liga-no-catalogada'` y to-do 64c de `Admin/TODO.md`).
+```
+
 ## 2025
 
 ### Meta

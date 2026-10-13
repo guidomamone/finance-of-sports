@@ -41,6 +41,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Chievo Verona: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.pdf. brandColor AUSENTE a propósito
+(nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).
+```
+
+_de data/club-leagues/it.js:_
+
+```text
+Chievo Verona (alta-club.mjs, 2026-10-08): verificado contra roster cacheado de "2013–14 Serie A" (tools/club-league-reference/it.json), coincidencia única por palabras "Chievo" = "Chievo Verona".
+```
+
 ## 2016
 
 ### Ingresos
@@ -97,6 +110,12 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2016: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2015–16 Serie A" (tools/club-league-reference/it.json), coincidencia ú
 ```
 
 ## 2015
@@ -161,6 +180,12 @@ tools/cargar.mjs (2026-10-08)
 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 301.239. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón
 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 635.672. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+2015: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2014–15 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
 ## 2014

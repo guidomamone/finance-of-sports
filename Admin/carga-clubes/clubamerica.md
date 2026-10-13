@@ -155,6 +155,23 @@ vez de forzada una corrección fuera del alcance de esta sesión.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Primer club no argentino del sitio (Versión 104). reportingCurrency:'MXN' — ver data/currency-map.js
+(entrada MXN, scale:1) y data/clubamerica-data.js (comentario de cabecera) para el detalle completo
+de la fuente (segmento de negocio de una compañía bursátil, no un balance propio del club).
+fiscalYearStart:'01-01': Ollamani reporta en año calendario (1/1 a 31/12), no en un ejercicio
+partido como los clubes argentinos.
+```
+
+_de data/club-leagues/mx.js:_
+
+```text
+Verificado el 13/9/2026 contra "2024-25 Liga MX season" (Wikipedia). Liga MX viene con
+los mismos 18 clubes desde 2020-21.
+```
+
 ## 2025
 
 ### Ingresos

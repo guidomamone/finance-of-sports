@@ -114,6 +114,15 @@ VERIFICACIÓN (a mano, contra los totales impresos):
 ============================================================================
 ```
 
+_de data/club-leagues/es.js:_
+
+```text
+Levante UD, club nuevo: ejercicio 2024/25 (cierre 30/6/2025) jugado en Segunda División — el
+ascenso a Primera fue el RESULTADO de este mismo ejercicio (playoff de junio de 2025, para la
+temporada 2025/26), confirmado por la propia memoria consolidada del club. Mismo patrón que
+Sunderland en Inglaterra.
+```
+
 ## 2025
 
 ### Gastos

@@ -186,6 +186,13 @@ null en vez de elegir rojo unilateralmente.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+`brandColor:null` (no ausente): se miró (de.wikipedia.org, "Vereinsfarben: Weiß-Rot") y NO
+lleva color, el que lo identifica es el blanco.
+```
+
 ## 2024
 
 ### Meta

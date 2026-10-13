@@ -98,6 +98,15 @@ sin fecha de inicio verificada con precisión para este ejercicio puntual.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Bélgica (sesión de esta tanda): PAÍS NUEVO, 4 clubes de la Pro League, 1 ejercicio cada uno
+(2024/2025, cierra 30/6). brandColor verificado con Wikipedia (colores oficiales del infobox)
++ teamcolorcodes.com/schemecolor.com/logotyp.us para el hex — mismo criterio que River: bicolor
+con blanco, se usa el acento NO blanco (Club Brugge es azul/negro sin blanco, se usó el azul).
+```
+
 ## 2025
 
 ### Meta

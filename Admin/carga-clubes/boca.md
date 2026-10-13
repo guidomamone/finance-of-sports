@@ -58,6 +58,20 @@ leyenda "no reportado por el club", y una opción "(Placeholder)" en el selector
 Quedan los 2 ejercicios con documento: el balance 2024/25 y el presupuesto 2026/27.
 ```
 
+_de data/club-leagues/ar.js:_
+
+```text
+El único de los 11 que cambió de categoría en el período cargado: descendió al terminar el
+torneo de transición 2016 y jugó la B Nacional 2016-17, que ganó (terminó el 30/7/2017, o sea
+que al cierre del ejercicio 2017 todavía estaba en curso). Volvió a Primera para 2017-18.
+```
+
+_de data/club-leagues/ar.js:_
+
+```text
+2027 es el presupuesto jul-2026/jun-2027: cierra en el futuro; 2022/2023 (to-do 73) Boca jugó Primera todo el período, ambos cierres 30/6
+```
+
 ## 2027
 
 ### Ingresos

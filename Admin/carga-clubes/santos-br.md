@@ -185,6 +185,12 @@ socios impresa).
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+descendido por primera vez en su historia al cierre de 2023; campeón de la Série B 2024, vuelve a la A en 2025
+```
+
 ## 2025
 
 ### Gastos

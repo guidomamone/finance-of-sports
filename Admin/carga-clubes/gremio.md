@@ -105,6 +105,16 @@ un rango de mandato más amplio.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Primeros clubes de Brasil (sesión 2026-09-13): ejercicio social = año calendario
+(fiscalYearStart:'01-01', no jul-jun/sep-ago como los clubes argentinos de arriba) — ver
+isCalendarYearClub() en js/finanzas-calc.js, que generaliza el dropdown "Año"/"Estado de
+resultados"/gráficos de Inicio para mostrar "2024" en vez de un rango de temporada "2023/2024"
+que sería falso para este club.
+```
+
 ## 2024
 
 ### Meta

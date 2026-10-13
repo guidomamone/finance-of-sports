@@ -41,6 +41,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Spartak Moscow: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Spartak Moscow/bfo-2021-datos.md. brandColor #FF0000
+(procedencia en fuentes/Rusia/Spartak Moscow.md; tools/bfo-rusia.mjs).
+```
+
+_de data/club-leagues/ru.js:_
+
+```text
+Spartak Moscow (alta-club.mjs, 2026-10-10): SIN VERIFICAR (coincidencia NO exacta en los rosters cacheados: "Spartak" en 2021–22 Russian Premier League | "Spartak-2 Moscow" en 2021–22 Russian First Division).
+```
+
 ## 2025
 
 ### Ingresos
@@ -81,6 +94,12 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 
 ```text
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+### Liga
+
+```text
+2025: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2025–26 Russian Premier League" (tools/club-league-reference/ru.json),
 ```
 
 ## 2024
@@ -124,6 +143,12 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+### Liga
+
+```text
+2024: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2024–25 Russian Premier League" (tools/club-league-reference/ru.json),
+```
+
 ## 2023
 
 ### Ingresos
@@ -163,6 +188,12 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 
 ```text
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+### Liga
+
+```text
+2023: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2023–24 Russian Premier League" (tools/club-league-reference/ru.json),
 ```
 
 ## 2022
@@ -206,6 +237,12 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+### Liga
+
+```text
+2022: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2022–23 Russian Premier League" (tools/club-league-reference/ru.json),
+```
+
 ## 2021
 
 ### Ingresos
@@ -245,6 +282,12 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 
 ```text
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+### Liga
+
+```text
+2021: tools/cargar.mjs 2026-10-10, SIN VERIFICAR
 ```
 
 ## Fuentes

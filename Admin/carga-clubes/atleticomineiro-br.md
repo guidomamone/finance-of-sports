@@ -191,6 +191,12 @@ ambos confirmados por firma en el propio balance (fuente primaria).
 ============================================================================
 ```
 
+_de data/club-leagues/br.js:_
+
+```text
+clasificó a Libertadores 2023, a Sudamericana 2025
+```
+
 ## 2025
 
 ### Meta

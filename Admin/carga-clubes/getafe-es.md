@@ -86,6 +86,24 @@ VERIFICACIÓN Ejercicio 2024/2025: Revenue 60,709312 M - Expenses cash
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+3 clubes españoles nuevos (sesión 2026-09-22, 2 ejercicios cada uno salvo Girona), mismo
+criterio de ejercicio/moneda que los 10 españoles de arriba.
+```
+
+_de data/club-leagues/es.js:_
+
+```text
+Verificado el 22/9/2026 contra "2023-24 La Liga", "2024-25 La Liga", "2019-20 Segunda División"
+y "2023-24 RCD Espanyol season" (Wikipedia/UEFA). Getafe jugó LaLiga los 2 ejercicios cargados,
+sin ambigüedad. Girona 2019/20 (cierre 30/6/2020) jugó Segunda División (descendido al cierre de
+2018/19) -> 'es-segunda'. Espanyol 2023/24 (cierre 30/6/2024) también jugó Segunda División
+(descendido al cierre de 2022/23, ascendido recién en el playoff de junio de 2024, ya sobre el
+final del propio ejercicio 2023/24) -> 'es-segunda'.
+```
+
 ## 2024
 
 ### Meta

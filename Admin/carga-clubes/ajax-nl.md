@@ -108,6 +108,15 @@ bancario tradicional en este balance). cash: Liquide middelen.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Países Bajos (sesión de esta tanda): PAÍS NUEVO, 4 clubes de Eredivisie, 2 ejercicios cada uno
+(2023/2024 y 2024/2025, ambos cierran 30/6). brandColor verificado contra footylogos.com
+(color-codes/eredivisie): los 4 clubes tienen rojo como color primario listado (no el blanco
+ni el negro que también llevan en el escudo/indumentaria).
+```
+
 ## 2025
 
 ### Gastos

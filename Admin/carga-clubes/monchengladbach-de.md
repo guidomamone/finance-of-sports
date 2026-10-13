@@ -101,6 +101,19 @@ para todo el período en ninguno de los 2 ejercicios.
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+Borussia Mönchengladbach: ejercicio CALENDARIO (01/01-31/12), confirmado en el propio documento.
+```
+
+_de data/club-leagues/de.js:_
+
+```text
+Borussia Mönchengladbach: ejercicio CALENDARIO. Bundesliga (1ª división) los 2 ejercicios, sin
+descenso (14° puesto temporada 2023/24, que cubre ambos años calendario cargados).
+```
+
 ## 2024
 
 ### Ingresos

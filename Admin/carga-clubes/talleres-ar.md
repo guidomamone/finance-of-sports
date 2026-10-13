@@ -231,6 +231,27 @@ exactos sin redondeo):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+3 clubes argentinos nuevos (sesión 2026-09-23, to-do 58 — barrido de sourcing del 2026-09-22
+que descargó los PDFs, onboardeados en 3 agentes en paralelo): los 3 pasan de "sin nada
+cargado" a tener ejercicios reales. `clubId` con sufijo de país porque son clubes NUEVOS
+(Versión 129), a diferencia de los 11 argentinos de arriba, cargados antes de esa convención.
+```
+
+_de data/club-leagues/ar.js:_
+
+```text
+3 clubes nuevos (sesión 2026-09-23, onboarding de Talleres/Newell's/Banfield). Ninguno se
+verificó contra Wikipedia línea por línea (mismo nivel de confianza que "conoce el dato" de
+arriba, no una fuente primaria citada): Talleres jugó Copa Libertadores/Sudamericana los 2 años
+(confirmado por sus propios ingresos "Copas internacionales" en data/talleres-ar-data.js, algo
+que solo pasa jugando Primera); Newell's nunca descendió en toda su historia (hecho público muy
+conocido del fútbol argentino); Banfield 2019-20 lo confirma el propio balance ("CONSIDERACIONES
+REGLAMENTARIAS A.F.A./SAF", tratando la afiliación a la Superliga como vigente ese ejercicio).
+```
+
 ## 2025
 
 ### Meta

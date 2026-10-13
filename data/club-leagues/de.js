@@ -50,25 +50,15 @@
 window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
-  'koln-de':               { 2024: 'de-bundesliga', 2025: 'de-2bundesliga' },   // descendió al cierre de 2023/24, campeón y ascenso directo en 2024/25
+  'koln-de':               { 2024: 'de-bundesliga', 2025: 'de-2bundesliga' },
   'eintrachtfrankfurt-de': { 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
   'werderbremen-de':       { 2023: 'de-bundesliga', 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
   'augsburg-de':           { 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
   'stuttgart-de':          { 2023: 'de-bundesliga', 2024: 'de-bundesliga' },
-  // Sesión 2026-09-25: TSG Hoffenheim (7° puesto 2023/24, 15° puesto 2024/25, sin descenso).
   'hoffenheim-de':         { 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
-  // Hamburger SV: 2. Bundesliga los 2 ejercicios (asciende a Bundesliga recién para 2025/26, fuera
-  // de los 2 ejercicios cargados — ver comentario de cabecera de data/hamburgersv-de-data.js).
   'hamburgersv-de':        { 2024: 'de-2bundesliga', 2025: 'de-2bundesliga' },
-  // Borussia Mönchengladbach: ejercicio CALENDARIO. Bundesliga (1ª división) los 2 ejercicios, sin
-  // descenso (14° puesto temporada 2023/24, que cubre ambos años calendario cargados).
   'monchengladbach-de':    { 2023: 'de-bundesliga', 2024: 'de-bundesliga' },
-  // 2021 (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar): campeón de la 2020/21
-  // Bundesliga (9° título consecutivo), verificado vía Wikipedia/Bundesliga.com. 2023 (2da tanda,
-  // misma sesión): campeón también de la 2022/23 Bundesliga (11° título consecutivo).
   'bayernmunich-de':       { 2021: 'de-bundesliga', 2023: 'de-bundesliga', 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
   'dortmund-de':           { 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
-  // 2022 (2da tanda, misma sesión) y 2023 (misma sesión): RB Leipzig es Bundesliga desde su ascenso
-  // en 2016/17, sin descenso nunca — 2022/23 terminó 3°, Champions League.
   'rbleipzig-de':          { 2022: 'de-bundesliga', 2023: 'de-bundesliga', 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
 });

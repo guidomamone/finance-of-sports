@@ -20,7 +20,8 @@
 //                                             bloque que queda vacío se va con su _nota:_. Lo escrito a mano no se toca: cada script
 //                                             reconoce SUS líneas por cómo empiezan. anio = null: en todos los años.
 //   ponerTabla(md, anio, seccion, filas)      reemplaza la tabla de filas de esa sección ([] la saca). filas: [{fila, rawLabel, nota}].
-//   agregarCabecera(md, lineas)               un bloque nuevo al final de "## Cabecera" (lo del club entero: alta, color).
+//   agregarCabecera(md, lineas, nota?)        un bloque nuevo al final de "## Cabecera" (lo del club entero: alta, color), con una
+//                                             línea _nota:_ arriba si se pasa (ej. de qué archivo vino).
 //   reemplazarTexto(md, viejo, nuevo)         un texto exacto por otro (el color del alta).
 // Después de cada operación, una sección o un año que quedaron vacíos se borran.
 // ============================================================================
@@ -138,13 +139,13 @@ export function ponerTabla(md, anio, seccion, filas) {
 
 // "## Cabecera" (lo de todo el club: el alta, de dónde salió cada campo, el color): un bloque nuevo al final de esa sección. La crea, si no
 // está, antes del primer "## ".
-export function agregarCabecera(md, lineas) {
+export function agregarCabecera(md, lineas, nota = null) {
   if (!lineas || !lineas.length) return md;
   const L = md.replace(/\n+$/, '').split('\n');
   let i = L.findIndex((t) => t.trim() === '## Cabecera');
   if (i < 0) { let pos = L.findIndex((t) => RE_H2.test(t)); if (pos < 0) pos = L.length; L.splice(pos, 0, '## Cabecera', ''); i = pos; }
   let pos = finDe(L, i, RE_H2); while (pos > i + 1 && L[pos - 1].trim() === '') pos--;
-  L.splice(pos, 0, '', ...fence(lineas), '');
+  L.splice(pos, 0, '', ...(nota ? [`_${nota}:_`, ''] : []), ...fence(lineas), '');
   return limpiar(L.join('\n'));
 }
 // Reemplaza un texto exacto en la evidencia (ej. "brandColor AUSENTE a propósito" -> "brandColor #c8102e" al ponerle el color a un club).

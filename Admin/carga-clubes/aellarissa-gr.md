@@ -41,6 +41,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ============================================================================
 ```
 
+_de data/clubs.js:_
+
+```text
+AEL Larissa: alta por tools/alta-club.mjs (2026-10-03) desde Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2025-06-30_a.pdf. brandColor AUSENTE a propósito
+(nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).
+```
+
+_de data/club-leagues/gr.js:_
+
+```text
+AEL Larissa (alta-club.mjs, 2026-10-03): verificado contra roster cacheado de "2024–25 Super League Greece 2" (tools/club-league-reference/gr.json), coincidencia única por palabras "AEL" = "AEL Larissa".
+```
+
 ## 2025
 
 ### Ingresos
@@ -121,6 +134,12 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: documento siguiente): "Δάνεια" pág. 7; cash escalón 0 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7
 ```
 
+### Liga
+
+```text
+2024: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2023–24 Super League Greece 2" (tools/club-league-reference/gr.json),
+```
+
 ## 2023
 
 ### Ingresos
@@ -161,6 +180,12 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: año anterior): "Δάνεια" pág. 7; cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7
+```
+
+### Liga
+
+```text
+2023: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2022–23 Super League Greece 2" (tools/club-league-reference/gr.json),
 ```
 
 ## 2022
@@ -204,6 +229,12 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: año anterior): "Δάνεια" pág. 7; cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7
 ```
 
+### Liga
+
+```text
+2022: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2021–22 Super League Greece 2" (tools/club-league-reference/gr.json),
+```
+
 ## 2021
 
 ### Ingresos
@@ -243,6 +274,12 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: año anterior): "Δάνεια" pág. 7; cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7
+```
+
+### Liga
+
+```text
+2021: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2020–21 Super League Greece" (tools/club-league-reference/gr.json), co
 ```
 
 ## 2020
@@ -286,6 +323,12 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 6; cash escalón 0 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 6
 ```
 
+### Liga
+
+```text
+2020: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2019–20 Super League Greece" (tools/club-league-reference/gr.json), co
+```
+
 ## 2019
 
 ### Ingresos
@@ -327,6 +370,12 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
 ```
 
+### Liga
+
+```text
+2019: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2018–19 Super League Greece" (tools/club-league-reference/gr.json), co
+```
+
 ## 2018
 
 ### Ingresos
@@ -362,6 +411,12 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación)
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
+```
+
+### Liga
+
+```text
+2018: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2017–18 Super League Greece" (tools/club-league-reference/gr.json), co
 ```
 
 ## 2017
@@ -401,6 +456,12 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
 ```
 
+### Liga
+
+```text
+2017: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2016–17 Super League Greece" (tools/club-league-reference/gr.json), co
+```
+
 ## 2016
 
 ### Ingresos
@@ -436,6 +497,12 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación)
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 tools/caja-deuda.mjs (2026-10-03): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
+```
+
+### Liga
+
+```text
+2016: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2015–16 Football League (Greece)" (tools/club-league-reference/gr.json
 ```
 
 ## Fuentes
