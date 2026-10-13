@@ -69,7 +69,7 @@ ni en el comentario de ningún archivo de código.
     nuevos de Grecia, Rep. Checa, Portugal, Noruega, Países Bajos y Turquía cargadas (to-do 195).
     FALTA, en este orden:
     a) GRECIA: lote 67 corrido (2026-10-13). Cargados: Asteras 2019-2020, Levadiakos 2019-2025, OFI 2018-2025, AEK 2016-2020. Falta:
-       Asteras 2021-2025 (9 casos de categoría en la cola), AEK 2021-2025 (to-do 220), Panserraikos 2023 y 2025 (categoría y perfil),
+       Asteras 2021 ("Estadio en 0": `--reintentar` con una lista solo de ese documento; 2022-2025 cargados), AEK 2021-2025 (to-do 220), Panserraikos 2023 y 2025 (categoría y perfil),
        Volos 2019-2025 (2019-2020 categoría; 2021-2025 la pregunta del alta `reportType` y "Salarios del plantel en 0", que pide
        `--reintentar` con una lista solo de esos años). La cola la contesta un subagente (to-do 220).
     b) Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
@@ -133,7 +133,10 @@ ni en el comentario de ningún archivo de código.
     las 19 etiquetas de categoría (80 casos de 6 años; leyó la skill `club-data-mapping`, los precedentes griegos y cada nota del .md) y
     Claude aplicó las 18 firmes con `cola.mjs --responder` firmadas "Claude 2026-10-13 (subagente Sonnet...)"; los 22 de perfil (socios,
     otros deportes) los contestó Claude con cita (PAE de solo fútbol, L574). Entraron AEK 2016-2020. Falta:
-      - Contestar así el resto de la cola (`node tools/cola.mjs`: unos 210 casos), de a un club por subagente.
+      - Contestar así el resto de la cola, de a un club por subagente. Hecho Asteras (2022-2025 cargados; la solidaridad y los derechos de
+        formación van a `player_sales`, decisión de Guido, también Asteras 2020 con ajuste `categoria`). Lo que frena cargas: categoría
+        (Volos, Panserraikos, AEK 2022-2025), perfil (32) y nombre legal de altas (37). Los 97 casos `gestion` son del to-do 195.
+        Conocido, sin daño: `cargar.mjs --reemplazar` repite la línea "Cargado en el sitio…" en la nota de `Admin/sourcing/` (se restaura a mano).
       - AEK 2022-2025: la fila del estado "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες" mezcla la nómina (Μισθοδοσία) y la amortización de
         contratos de jugadores (Αποσβέσεις συμβολαίων ποδοσφαιριστών, 53-60%, nota 6.19; la política contable lo dice en
         AEK_Notes_2018-06-30.md L843). Como `wages_squad` inflaría los salarios: cargar las dos filas de la nota en vez de la del estado,
