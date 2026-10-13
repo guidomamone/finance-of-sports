@@ -103,7 +103,10 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   de Guido; `netlify.toml` no las borra). Los PDFs no se trackean (`.gitignore`). Un documento interno nuevo va adentro de `Admin/`;
   `node tools/audit.js` caza el que quede suelto en la raíz (`doc-interno-no-excluido`).
   Los comentarios de `index.html` y `js/` también viajan al visitante: solo el porqué técnico, sin historia interna (regla en
-  `Admin/PANTALLA.md`, chequeo `comentario-interno-publicado`). Los de `data/*.js` todavía no están limpios.
+  `Admin/PANTALLA.md`, chequeo `comentario-interno-publicado`). `data/` tampoco lleva comentarios internos ni `note`: la evidencia de
+  cada carga vive en `Admin/carga-clubes/<club>.md` (la escriben los scripts del pipeline vía `tools/evidencia-club.mjs`; regla en
+  `Admin/CONVENCIONES-DATOS.md`), y las de ligas, gestiones y cotizaciones en `Admin/ligas-por-pais/`, `Admin/gestiones-por-pais/` y
+  `Admin/fx-cotizaciones.md`.
 - ANALYTICS: Cloudflare Web Analytics (snippet en el `<head>` de `index.html`): visitas, pageviews, referrers y país, sin cookies ni banner
   de consentimiento. Además, un Worker + KV propios (`square-sky-ca25.guidomamone91.workers.dev` → KV namespace `FOS_LOGS`, cuenta de
   Cloudflare de Guido, free tier) loggean texto libre que Web Analytics no puede: qué se tipea en el buscador (con o sin resultado) y qué par
