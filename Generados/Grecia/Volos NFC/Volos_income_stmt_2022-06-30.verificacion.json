@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.pdf",
  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.md",
- "generado": "2026-10-13T16:50:42.848Z",
+ "generado": "2026-10-13T20:56:04.822Z",
  "estado": "ok",
  "clubId": "volosnfc-gr",
  "year": 2022,
@@ -57,6 +57,54 @@
    "evidencia": ".md L5 (título) y L24-25 (Αποτέλεσμα περιόδου μετά από φόρους)",
    "autor": "Claude",
    "fecha": "2026-10-13"
+  },
+  {
+   "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.pdf",
+   "campo": "fila",
+   "valor": "1.818.701,81",
+   "linea": 13,
+   "etiqueta": "Έξοδα διοίκησης (sin el costo de personal de la nota 8)",
+   "lado": "gasto",
+   "reemplaza": "Έξοδα διοίκησης",
+   "motivo": "Claude 2026-10-13 (to-do 219): el estado es por función y 'Έξοδα διοίκησης' (4080745,14) es el único gasto operativo; la nota 8 de Volos_notes_2022-06-30 abre el costo de personal (2.262.043,33), que va aparte a wages_squad. Queda 4080745,14 - 2.262.043,33.",
+   "evidencia": "Volos_income_stmt_2022-06-30.md L13; Volos_notes_2022-06-30.md L167 (nota 8)",
+   "autor": "Claude",
+   "fecha": "2026-10-13"
+  },
+  {
+   "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.pdf",
+   "campo": "fila",
+   "valor": "2.262.043,33",
+   "linea": 13,
+   "etiqueta": "Σύνολο κόστους μισθοδοσίας περιόδου (nota 8)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-13 (to-do 219): costo total de personal de la nota 8 (sueldos, cargas sociales y beneficios), dentro de 'Έξοδα διοίκησης'.",
+   "evidencia": "Volos_notes_2022-06-30.md L167",
+   "autor": "Claude",
+   "fecha": "2026-10-13"
+  },
+  {
+   "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Σύνολο κόστους μισθοδοσίας περιόδου (nota 8)",
+   "motivo": "Claude 2026-10-13 (to-do 219): sueldos y cargas sociales del personal (club-data-mapping: 'Sueldos del Personal, Cargas Sociales' -> wages_squad)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-13"
+  },
+  {
+   "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Έξοδα διοίκησης (sin el costo de personal de la nota 8)",
+   "motivo": "Claude 2026-10-13 (to-do 219): gastos de administración sin el personal",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-13"
   }
  ],
  "cola": [],
@@ -75,7 +123,12 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (impuesto invertido)",
-   "dif": 5.273559366969494e-16
+   "dif": 3.608224830031759e-16
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna 2021"
   },
   {
    "nombre": "documento del año 2023",
@@ -86,17 +139,14 @@
    "nombre": "documento del año 2021",
    "ok": null,
    "detalle": "no se puede comparar: este documento no trae la columna del año anterior"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
   "ajuste manual: fila \"Πιστωτικοί τόκοι και συναφή έσοδα\" (financiero) 98,90, en lugar de \"Πιστωτικοί τόκοι και συναφή έσοδα\" (2026-10-10, Interés cobrado: suma al resultado. El estado imprime cobrado y pagado sin signo y la carga sumaba los dos como costo (2024: 2 × 5.104,81 de diferencia con el resultado impreso). Revisión de la cola de Grecia.)",
   "ajuste manual: fila \"Χρεωστικοί τόκοι και συναφή έξοδα\" (financiero) -7685,44, en lugar de \"Χρεωστικοί τόκοι και συναφή έξοδα\" (2026-10-10, Interés pagado: resta del resultado (ver el ajuste del interés cobrado del mismo documento).)",
+  "ajuste manual: fila \"Έξοδα διοίκησης (sin el costo de personal de la nota 8)\" (gasto) 1.818.701,81, en lugar de \"Έξοδα διοίκησης\" (2026-10-13, Claude 2026-10-13 (to-do 219): el estado es por función y 'Έξοδα διοίκησης' (4080745,14) es el único gasto operativo; la nota 8 de Volos_notes_2022-06-30 abre el costo de personal (2.262.043,33), que va aparte a wages_squad. Queda 4080745,14 - 2.262.043,33.)",
+  "ajuste manual: fila \"Σύνολο κόστους μισθοδοσίας περιόδου (nota 8)\" (gasto) 2.262.043,33 (2026-10-13, Claude 2026-10-13 (to-do 219): costo total de personal de la nota 8 (sueldos, cargas sociales y beneficios), dentro de 'Έξοδα διοίκησης'.)",
   "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en Volos_income_stmt_2025-06-30.pdf",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en Volos_income_stmt_2025-06-30.pdf"
  ],
@@ -131,20 +181,28 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Έξοδα διοίκησης",
-   "lado": "gasto",
-   "M": 4.080745,
-   "pagina": 1,
-   "linea": 13,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Λοιπά έξοδα και ζημιές",
    "lado": "gasto",
    "M": 0.003871,
    "pagina": 1,
    "linea": 15,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης (sin el costo de personal de la nota 8)",
+   "lado": "gasto",
+   "M": 1.818702,
+   "pagina": 1,
+   "linea": 13,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Σύνολο κόστους μισθοδοσίας περιόδου (nota 8)",
+   "lado": "gasto",
+   "M": 2.262043,
+   "pagina": 1,
+   "linea": 13,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
