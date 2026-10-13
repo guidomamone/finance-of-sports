@@ -5,6 +5,7 @@
 //
 //   node tools/mover-comentarios-compartidos.mjs                 escribe data/ y Admin/carga-clubes/
 //   node tools/mover-comentarios-compartidos.mjs --ensayo <dir>  escribe todo en <dir>, no toca el repo; lista lo que queda
+//   node tools/mover-comentarios-compartidos.mjs --resto-ligas [--ensayo <dir>]   ver abajo
 //
 // QUÉ ES "UNA NOTA DE UN CLUB" (lo demás queda donde está, para limpiarse a mano: cabeceras de archivo, títulos por país):
 //   - un bloque de líneas `//` pegado (sin línea en blanco) arriba de la fila de un club;
@@ -12,6 +13,8 @@
 // A DÓNDE VA: en data/club-leagues/, una nota que empieza con un año ("2025: tools/cargar.mjs ..., verificado contra ...") va a
 // "## 2025" / "### Liga"; una fila con varias ("// 2024: ... // 2025: ...") se parte en una por año. Todo lo demás va a "## Cabecera",
 // con una línea "_de data/<archivo>:_" arriba.
+// --resto-ligas: lo que queda en data/club-leagues/<país>.js después (la cabecera: reglas repetidas y verificaciones de varios clubes
+// juntos, que no se pueden partir por club sin cortar mal) va TAL CUAL a Admin/ligas-por-pais/<país>.md, y el archivo queda sin comentarios.
 // SEGURIDAD: el archivo sin comentarios tiene que dar el mismo código que antes (normalizar(scan()) de comparar-sin-comentarios.js) y
 // cada línea mudada tiene que estar en el .md de su club; si no, no escribe nada.
 // ============================================================================
@@ -31,6 +34,40 @@ const clubIds = new Set(fs.readdirSync(path.join(ROOT, 'data')).filter((f) => f.
 const archivos = ['data/clubs.js', ...fs.readdirSync(path.join(ROOT, 'data/club-leagues')).filter((f) => f.endsWith('.js')).sort().map((f) => `data/club-leagues/${f}`)];
 const RE_FILA = /^\s*['"]?([a-z0-9-]+)['"]?\s*:\s*\{/;
 const texto = (t) => (t.startsWith('//') ? [t.replace(/^\/\/ ?/, '')] : t.replace(/^\/\*+ ?/, '').replace(/ ?\*+\/$/, '').split('\n').map((l) => l.replace(/^\s*\* ?/, '')));
+
+if (args.includes('--resto-ligas')) {
+  const errs = []; const salida = {};
+  for (const rel of archivos.filter((r) => r.startsWith('data/club-leagues/'))) {
+    const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');
+    const { comments } = scan(rel, src);
+    if (!comments.length) continue;
+    const iso = path.basename(rel, '.js');
+    const lineas = comments.flatMap((c) => texto(c.text));
+    const t = /```/.test(lineas.join('\n')) ? '~~~' : '```';
+    const md = `# Ligas por país: ${iso}\n\nLo que había como comentario en \`${rel}\` (data/ se publica: to-do 209), movido tal cual por\n`
+      + '`tools/mover-comentarios-compartidos.mjs --resto-ligas`: cómo se verificó en qué liga jugó cada club. Las reglas del formato están en\n'
+      + '`data/club-leagues.js`; las notas de UN club, en su `Admin/carga-clubes/<club>.md`.\n\n'
+      + `${t}text\n${lineas.join('\n')}\n${t}\n`;
+    let nuevo = '', last = 0;
+    for (const c of comments) {
+      const ls = src.lastIndexOf('\n', c.pos - 1) + 1; const end = c.pos + c.text.length;
+      const resto = src.slice(end, (src.indexOf('\n', end) + 1 || src.length + 1) - 1);
+      if (src.slice(ls, c.pos).trim() === '' && resto.trim() === '' && ls >= last) { nuevo += src.slice(last, ls); const nl = src.indexOf('\n', end); last = nl < 0 ? src.length : nl + 1; }
+      else { let ini = c.pos; if (resto.trim() === '') while (ini > last && /[ \t]/.test(src[ini - 1])) ini--; nuevo += src.slice(last, ini); last = end; }
+    }
+    nuevo = (nuevo + src.slice(last)).replace(/^\s*\n/, '').replace(/\n{3,}/g, '\n\n');
+    if (normalizar(scan(rel, nuevo).code) !== normalizar(scan(rel, src).code)) errs.push(`${rel}: el código no da igual`);
+    for (const l of lineas) if (l.trim() && !md.includes(l)) errs.push(`${rel}: falta "${l.slice(0, 50)}"`);
+    salida[rel] = { nuevo, md, mdRel: `Admin/ligas-por-pais/${iso}.md`, n: comments.length };
+  }
+  if (errs.length) { console.log(`NO se escribió nada:\n  ${errs.join('\n  ')}`); process.exit(1); }
+  const base = ensayo || ROOT;
+  for (const [rel, x] of Object.entries(salida)) {
+    for (const [r, t] of [[rel, x.nuevo], [x.mdRel, x.md]]) { const p = path.join(base, r); fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, t); }
+    console.log(`${rel}: ${x.n} comentarios -> ${x.mdRel}`);
+  }
+  process.exit(0);
+}
 
 const mds = {}; // clubId -> texto del .md
 const leerMd = (id) => (mds[id] ??= EV.leer(id));

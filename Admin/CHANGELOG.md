@@ -48,6 +48,8 @@ que dice `ESTADO.md` era verdad ese día.
 - `tools/mover-comentarios-compartidos.mjs`: las notas de UN club que estaban en `data/clubs.js` y `data/club-leagues/<país>.js` (pegadas
   arriba de su fila o al final) pasan a su `Admin/carga-clubes/<club>.md` (578 comentarios de 137 clubes; las de liga con año, a ese año).
   Mismo código en los 18 archivos. ASSET_V 817.
+- `--resto-ligas`: lo que quedaba en las cabeceras de `data/club-leagues/<país>.js` (reglas repetidas y verificaciones de varios clubes
+  juntos) pasa tal cual a `Admin/ligas-por-pais/<país>.md`; los 17 archivos quedan sin comentarios, mismo código. ASSET_V 818.
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 
