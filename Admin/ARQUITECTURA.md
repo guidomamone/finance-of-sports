@@ -197,7 +197,7 @@ MODELO DE DATOS: UN SOLO MOTOR GENÉRICO PARA TODOS LOS CLUBES (desde la Versió
   normalizedCategory, amountNative, disclosureLevel} (revenueLinesByYear/
   expenseLinesByYear, ver data/<club>-data.js), porque cada club reporta una
   cantidad distinta de rubros reales. Boca ya NO tiene un yearsRaw{}/computeYear()
-  propio (migración completa: ver comentario de cabecera de data/boca-data.js para
+  propio (migración completa: ver la evidencia en Admin/carga-clubes/boca.md para
   el detalle de cómo se reconcilió su balance 2025, que hasta esa migración vivía
   en DOS estructuras paralelas sin cruzar entre sí). Estas funciones alimentan los
   KPIs de arriba de Finanzas, los gráficos, "Comparar Gestiones" y verifyTieOuts().
@@ -227,8 +227,8 @@ MODELO DE DATOS: UN SOLO MOTOR GENÉRICO PARA TODOS LOS CLUBES (desde la Versió
   reconvertirlo después con otro.
 - El toggle de moneda vive DENTRO del header (aplica a Inicio y Finanzas) y muestra
   [moneda nativa del club / USD] para CUALQUIER club (Versión 103, ver
-  `populateCurrencyToggle()` en el <script> y el comentario de cabecera de
-  `data/currency-map.js` para el modelo completo — `CURRENCY_META` por código ISO,
+  `populateCurrencyToggle()` en el <script> y "Monedas y tipo de cambio", más abajo en este
+  archivo, para el modelo completo — `CURRENCY_META` por código ISO,
   USD siempre como pivote). Un club cuyo `reportingCurrency` ya es 'USD' (ej.
   Ecuador) no tiene nada que togglear, el toggle se esconde entero para ese caso.
   "Formato del club"/"Formato simplificado" (`simplifyToggleWrap`) es un toggle
@@ -291,7 +291,7 @@ Buscalas y reusalas antes de escribir un `if(clubId === 'racing')` nuevo:
   hereda automático con solo tener `reportingCurrency` seteado en `data/clubs.js` y sus datos en el
   formato correcto (ver bullet siguiente), no hace falta tocar `refreshAllForClub()`. Si
   `reportingCurrency` es `'USD'` (ej. Ecuador, dolarizado), el toggle se esconde entero, no hay nada
-  que togglear. Ver el comentario de cabecera de `data/currency-map.js` para el modelo completo.
+  que togglear. Ver "Monedas y tipo de cambio", más abajo en este archivo, para el modelo completo.
 - **"Formato del club"/"Formato simplificado" (`simplifyToggleWrap`), visibilidad**: SIEMPRE
   visible para cualquier club, depende solo de que el club tenga `normalizedCategory` en sus líneas,
   que todos tienen desde que Boca se migró al motor genérico.

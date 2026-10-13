@@ -199,7 +199,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
 - **Por qué "Estadio" y "Parque Santo Domingo" no tienen línea de INGRESO en el Anexo V este año**
   (ambos ejercicios, 2026 y 2025, muestran "-"), cuando el 120° Ejercicio (2023-24) sí tenía una
   línea real "Estadio (concesiones, no recaudación de partidos)" con plata (72,525021 M). Hipótesis
-  no confirmada en el comentario de `data/independiente-data.js`: esa recaudación podría estar
+  no confirmada (ver la evidencia en `Admin/carga-clubes/independiente.md`): esa recaudación podría estar
   embebida este año dentro de "Publicidad y concesiones" del Anexo D (Fútbol Profesional) en vez de
   quedar como línea de departamento aparte — no se pudo confirmar con lo que dice el documento.
 
@@ -976,8 +976,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
     Reforzaría la hipótesis de que la línea "Outras receitas atividades esportivas" 2025 incluye algo
     más que Timemania pura (quizás una porción de la cesión de derechos de transmisión de la Nota 26a,
     o un ajuste puntual) — no se pudo confirmar en el documento disponible. Mantener la pregunta.
-- **CVM / debêntures**: resuelto en gran parte (ver comentario de cabecera de
-  `data/atleticomineiro-br-data.js` y `fuentes/Brasil/Atletico Mineiro.md`) — la SAF emitió 60.000
+- **CVM / debêntures**: resuelto en gran parte (ver la evidencia en `Admin/carga-clubes/atleticomineiro-br.md` y `fuentes/Brasil/Atletico Mineiro.md`) — la SAF emitió 60.000
   debêntures reales (R$60M nominal) el 25/09/2024, quirografárias, 3,50% a.a., vencimiento 25/09/2027.
   Lo que NO se confirmó en el documento es bajo qué instrução CVM exacta se hizo la oferta
   (probablemente Instrução CVM 476, oferta restrita a investidores profissionais, pero es una
@@ -1016,8 +1015,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   conceptualmente una porción debería ir a `member_dues`. Vale la pena preguntarle al club el
   desglose exacto entre premios deportivos y cuotas de socio-hincha si se vuelve a tocar este club o
   se carga un ejercicio nuevo con la misma estructura.
-- **Vitória — inconsistencia real entre la Nota 29 y la DRE impresa** (ver el comentario de cabecera
-  completo en `data/vitoria-br-data.js`): la Nota 29 declara que desde 2025 las transações com
+- **Vitória — inconsistencia real entre la Nota 29 y la DRE impresa** (ver la evidencia en `Admin/carga-clubes/vitoria-br.md`): la Nota 29 declara que desde 2025 las transações com
   atletas y su costo directo ("Custo das transações com atletas", -10,208 M) se reconocen juntos en
   "Outras receitas e despesas" del segmento clube social, pero el total que imprime esa nota
   (43,514 M) NO coincide con lo que imprime la DRE para esa misma línea (53,724 M) — la diferencia
@@ -1051,8 +1049,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   Red Bull).
 - **2019: la tabla del Passivo (circulante/não circulante) se reconstruyó por orden de impresión
   cruzando contra los subtotales**, no confirmando cada rubro contra su propio rótulo — el PDF
-  original era vectorial sin capa de texto real (ver comentario de cabecera de
-  `data/rbbragantino-br-data.js` y el gotcha en `fuentes/Brasil/RB Bragantino.md`). El DRE (de donde
+  original era vectorial sin capa de texto real (ver la evidencia en `Admin/carga-clubes/rbbragantino-br.md` y el gotcha en `fuentes/Brasil/RB Bragantino.md`). El DRE (de donde
   sale el tie-out de Revenue/Expenses/PAT) sí cerró exacto, así que el riesgo queda acotado a
   `grossDebt`/`cash` de ESE año puntual, no a los ingresos/gastos. Si en el futuro aparece una copia
   más legible del PDF de 2019, vale la pena re-verificar esas 2 cifras.
@@ -1155,7 +1152,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   Demonstração do Superávit/Déficit impresa (pág. 7, imagen dentro de un PDF de texto nativo) dice
   -R$59,564 M; el Estado de Flujo de Efectivo dice -R$59,184 M; y la suma de las Notas explicativas
   detalladas (cada una reconciliando exacta contra su propio subtotal) da -R$59,872 M. Las 3 caen
-  dentro de ~1% entre sí — ver el comentario extenso de cabecera de `data/chapecoense-br-data.js`
+  dentro de ~1% entre sí — ver la evidencia en `Admin/carga-clubes/chapecoense-br.md`
   ("INCONSISTENCIA DE FUENTE") para el detalle completo. Se usó -59,872 como `officialPAT` (el valor
   que reconcilia con los datos efectivamente cargados) en vez del titular de la pág. 7, para que
   `verifyTieOuts()`/`tools/audit.js` no fallen por un defecto real del documento. **Candidato fuerte a
@@ -1257,8 +1254,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   "22.168.194" (mismos dígitos con un "2" al principio que el OCR parece haber perdido) SÍ
   reconcilia exacto, y coincide de forma independiente con un pasivo NUEVO del balance ese año
   ("Acordos trabalhistas-Pept e CNRD", R$20,9 M, R$0 en 2023). Se cargó -22.168.194 como
-  `exceptional_items`, documentado en detalle en el comentario de cabecera de
-  `data/pontepreta-br-data.js`. Es una reconstrucción con buena evidencia cruzada, no un número
+  `exceptional_items`, documentado en detalle en la evidencia en `Admin/carga-clubes/pontepreta-br.md`. Es una reconstrucción con buena evidencia cruzada, no un número
   leído limpio — vale la pena confirmarlo releyendo el PDF original a mayor resolución, o
   preguntándole al club la naturaleza exacta de este cargo de R$22,2 M.
 
@@ -1358,8 +1354,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 - **El ejercicio "2025" cubre 13 meses, no 12** (1/6/2024 a 30/6/2025): la compañía cambió su fecha de
   cierre de ejercicio de 31 de mayo a 30 de junio, y el documento disponible es el período de
   transición completo, no un año calendario normal. Se cargó igual (la alternativa era dejar a Wolves
-  con un solo ejercicio real), documentado en detalle en el comentario de cabecera de
-  `data/wolves-gb-data.js`. Pregunta para Guido: ¿preferís una nota visible de "13 meses" en el sitio
+  con un solo ejercicio real), documentado en detalle en la evidencia en `Admin/carga-clubes/wolves-gb.md`. Pregunta para Guido: ¿preferís una nota visible de "13 meses" en el sitio
   para este ejercicio, o alcanza con la documentación interna? Cualquier comparación año a año entre
   2024 (12 meses) y 2025 (13 meses) va a sobreestimar el crecimiento real de este club.
 
@@ -1462,7 +1457,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   contable real, no una reexpresión por poder adquisitivo). La corrección NO afecta Turnover/
   Operating expenses/Player trading/Interest, solo Tax y el resultado neto. ¿Preferís reflejar la
   cifra restated (73.369) en su lugar, ya que es la que BDO LLP considera la correcta con
-  retrospectiva completa? Ver el comentario extenso en `data/brighton-gb-data.js`.
+  retrospectiva completa? Ver la evidencia en `Admin/carga-clubes/brighton-gb.md`.
 
 ## Países Bajos (Ajax, PSV, Feyenoord, AZ) — onboarding 2023/24-2024/25, país nuevo, sesión 2026-09-25
 
@@ -1474,7 +1469,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   skybox-plaatsen" como líneas propias). Se cargó entera como `sponsorship_commercial` (el rótulo
   "Partnerships" lidera y "boarding" es publicidad, pero la porción de "business seats/units" bien
   podría ser mayoritariamente `season_tickets`). ¿Feyenoord puede aclarar qué proporción de esa línea
-  corresponde a cada concepto? Ver comentario de cabecera de `data/feyenoord-nl-data.js`.
+  corresponde a cada concepto? Ver la evidencia en `Admin/carga-clubes/feyenoord-nl.md`.
 - **AZ — línea "Verhuur spelers en detachering personeel"** (0,698M€/0,687M€, chica): mezcla ingreso
   por cesión/préstamo de jugadores con secondment de personal, sin desglose — se cargó a
   `other_income` por ser mixta y chica, en vez de forzarla a `player_sales`. No amerita mail (monto
@@ -1500,7 +1495,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   es una cláusula contractual de absorción de pérdidas que por sí sola transforma un resultado
   operativo+financiero de -23,4M en un consolidado de +1,3M (2023/24). ¿Preferís en cambio usar la
   línea 14 (Konzernjahresüberschuss, antes de toda asignación a terceros, criterio Augsburg/
-  Frankfurt)? Ver el comentario extenso en `data/hoffenheim-de-data.js`.
+  Frankfurt)? Ver la evidencia en `Admin/carga-clubes/hoffenheim-de.md`.
 
 ## Hamburger SV (Alemania) — onboarding 2023/24-2024/25, sesión 2026-09-25
 
@@ -1515,7 +1510,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   año porque el Bilanz-Passiva/Aktiva llegó igual de garbled y no se pudo reconstruir con confianza.
   Si en algún momento se consigue releer el PDF original (páginas 4-6 de cada ejercicio), valdría la
   pena confirmar el desglose exacto de Steuern vom Einkommen/sonstige Steuern y cargar grossDebt/cash.
-  Ver el comentario extenso en `data/hamburgersv-de-data.js`.
+  Ver la evidencia en `Admin/carga-clubes/hamburgersv-de.md`.
 
 ## Borussia Mönchengladbach (Alemania) — onboarding 2023-2024, sesión 2026-09-25
 
@@ -1531,7 +1526,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   de deuda bancaria, así que es probable que el Finanzergebnis real sea negativo, compensado por una
   "Sonstige betriebliche Erträge" positiva de magnitud similar). Si se consigue releer el PDF original
   (la página de la GuV, entre Personalaufwand y "11. Ergebnis nach Steuern"), valdría la pena separar
-  los 2 componentes con precisión. Ver el comentario extenso en `data/monchengladbach-de-data.js`.
+  los 2 componentes con precisión. Ver la evidencia en `Admin/carga-clubes/monchengladbach-de.md`.
 
 ## Bayern Munich (Alemania) — onboarding 2023-24/2024-25, sesión 2026-09-25
 
@@ -1549,16 +1544,15 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   vom Einkommen und vom Ertrag" de la AG Einzelabschluss para los ejercicios 2023/24 y 2024/25?
 - **Nivel de cuentas (Einzelabschluss vs. Konzern) da 2 pares de cifras oficiales distintas para el
   mismo ejercicio** (908,1 M€ vs. 951,5 M€ de Umsatz 2023/24, por ejemplo) — se usó el Einzelabschluss
-  porque es el único con desglose de ingresos/gastos por rubro (ver comentario de cabecera de
-  `data/bayernmunich-de-data.js`). Si Guido prefiere el Konzern (que incluye Allianz Arena München
+  porque es el único con desglose de ingresos/gastos por rubro (ver la evidencia en `Admin/carga-clubes/bayernmunich-de.md`). Si Guido prefiere el Konzern (que incluye Allianz Arena München
   Stadion GmbH y el resto de subsidiarias, más representativo del "negocio Bayern" completo) habría
   que resignar el desglose por `normalizedCategory`, ya que el documento no lo da a ese nivel.
 - **`verifyTieOuts()` marca 3 checks de este club como "NO CIERRA" (diferencia de 0,1 M€)**: Revenue
   2024, Revenue 2025 y Resultado neto (PAT) 2025 — verificado en el navegador el 2026-09-25. No es un
   error de carga: la fuente redondea cada cifra a 1 decimal (100.000 €), así que 6 líneas de revenue
   independientemente redondeadas pueden sumar hasta ±0,1 M€ distinto de un total también redondeado.
-  Los otros 3 checks (Expenses de los 2 años, PAT 2024) sí cierran exacto. Documentado en el
-  comentario de cabecera de `data/bayernmunich-de-data.js` para que ninguna sesión futura lo confunda
+  Los otros 3 checks (Expenses de los 2 años, PAT 2024) sí cierran exacto. Documentado en
+  la evidencia en `Admin/carga-clubes/bayernmunich-de.md` para que ninguna sesión futura lo confunda
   con un bug — la pregunta de si conseguir un documento con más precisión sigue abierta arriba.
 
 ## Croacia (Dinamo Zagreb, Hajduk Split, Rijeka) — onboarding 2024, país nuevo, sesión 2026-09-25
@@ -1862,8 +1856,7 @@ para consultas de la asamblea, según la propia convocatoria).
 su origen — a diferencia de "Ingreso A.F.A: dcho tv" (que el propio rótulo liga a derechos de TV),
 este solo dice "extraordinaria". Se cargó como `other_income` en vez de `broadcasting` (judgment
 call, no cubierto por el skill de categorización) por no poder confirmar si es un reparto de TV
-excepcional o un aporte de otro tipo (ej. alivio post-pandemia). Ver comentario de cabecera de
-`data/almagro-ar-data.js`. A quién preguntarle: prensa@almagro.club.
+excepcional o un aporte de otro tipo (ej. alivio post-pandemia). Ver la evidencia en `Admin/carga-clubes/almagro-ar.md`. A quién preguntarle: prensa@almagro.club.
 
 **"Gastos de alimentos" (Ejercicio 2018, Anexo V, $3.911.226,61)**: costo de comida del plantel, sin
 precedente explícito en `club-data-mapping/SKILL.md`. Se agrupó con `wages_squad` siguiendo el
