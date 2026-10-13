@@ -7,6 +7,9 @@ window.RANKINGS["gr-superleague"] = {
       { id:"panathinaikos-gr", revenue:67.512, reportType:"official_balance_sheet",
         sourceId:"panathinaikos-gr-annual-fr-2025",
         mix:[["Comercial / Sponsors",23.125],["Estadio",22.65],["Televisión",6.322],["Premios por competencias",14.774],["Otros ingresos",0.64]] },
+      { id:"levadiakos-gr", revenue:6.583, reportType:"official_balance_sheet",
+        sourceId:"levadiakos-gr-fs-2025-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.491],["Otros ingresos",3.093]] },
     ],
   },
   2023: {
