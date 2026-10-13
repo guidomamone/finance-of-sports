@@ -60,6 +60,9 @@ que dice `ESTADO.md` era verdad ese día.
 - `data/club-leagues.js` (210 → 32 comentarios), `data/leagues.js` (156 → 16) y `data/clubs.js` (77 → 6), mismo código: las reglas de ligas y
   del catálogo, al día y sin historia, en `Admin/ARQUITECTURA.md` ("Ligas por ejercicio y catálogo"); las de identidad y color de marca
   en `Admin/CONVENCIONES-DATOS.md` ("Identidad del club"). ASSET_V 821.
+- `category-map.js`, `sources-view.js`, `destacados.js`, `deflactores.js`, `site-labels.js`, `lang/en.js` y `lang/langs.js`: sin historia,
+  comentarios de 1 a 3 líneas, mismo código; el criterio de los deflactores en ARQUITECTURA. Lo que queda en `data/` (17 KB de comentarios)
+  es técnico y sin historia interna. ASSET_V 822.
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 

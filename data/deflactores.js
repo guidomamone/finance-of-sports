@@ -1,24 +1,7 @@
-// ============================================================================
-// data/deflactores.js — deflactor del PBI por moneda y año, para "Valores ajustados por inflación"
-// en Finanzas (to-do 147, paso 11; resuelve el 23(d)).
-//
-// QUÉ AJUSTA Y QUÉ NO. Cada ejercicio ya se convierte a USD (o EUR) con el tipo de cambio de SU
-// cierre, y eso absorbe la inflación local (pesos, reales, etc.). Lo que queda es la inflación de la
-// moneda en la que se muestra: 100 M USD de 2005 no compran lo mismo que 100 M USD de 2025. Por eso
-// hay una serie por moneda DE PANTALLA, no por club ni por país. Solo USD y EUR: en las demás monedas
-// el toggle no aparece.
-//
-// DECISIONES DE GUIDO (2026-10-05): el deflactor del PBI y no el IPC; año base = el último año de la
-// serie (hoy 2025, o sea el ejercicio 2024/25); cada ejercicio usa el año en que CIERRA (2024/25 usa
-// 2025, mismo criterio que el tipo de cambio); un ejercicio posterior al año base (un presupuesto
-// futuro) no se ajusta.
-//
-// EL OBJETO DE ABAJO SE GENERA, NO SE EDITA A MANO: `node tools/fetch-fx-reference.mjs --deflactores`
-// baja las dos series de su fuente oficial a tools/fx-reference/ (deflactor-usd.json, deflactor-eur.json,
-// al lado de las series de tipo de cambio del pipeline de altas) y reescribe el objeto; este encabezado
-// se conserva. Se corre una vez por año, cuando BEA y Eurostat publican el año que cerró: el año base se
-// mueve solo (es el último de cada serie). Si la fuente revisó años viejos, también se actualizan.
-// ============================================================================
+// Deflactor del PBI por moneda de pantalla (USD, EUR) para "Valores ajustados por inflación". El criterio (deflactor del PBI y no IPC;
+// año base = el último de la serie; cada ejercicio usa el año en que cierra; un ejercicio posterior al año base no se ajusta):
+// Admin/ARQUITECTURA.md, "Monedas y tipo de cambio". El objeto lo GENERA `node tools/fetch-fx-reference.mjs --deflactores` (una vez
+// por año); esta cabecera se conserva.
 
 window.DEFLACTORES = {
   USD: {

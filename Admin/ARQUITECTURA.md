@@ -762,6 +762,13 @@ escribe una vez en `FX_CLOSE`. Solo entran cotizaciones exactas y verificadas: u
 un error de carga (un `fx` invertido, como los 10 archivos de España que guardaron USD por EUR, o un orden de magnitud mal tipeado),
 nunca para validar precisión: es ancho a propósito. `checkFxSanity()` avisa por consola (warn, no error). Una moneda sin rango no se
 chequea: agregar el rango con el primer club de esa moneda.
+
+**Valores ajustados por inflación (`data/deflactores.js`).** Cada ejercicio ya se convierte con el tipo de cambio de SU cierre, que
+absorbe la inflación local; lo que queda es la inflación de la moneda en la que se muestra (100 M USD de 2005 no compran lo mismo que
+100 M USD de 2025). Por eso hay una serie por moneda DE PANTALLA, solo USD y EUR (en las demás el toggle no aparece). El criterio: el
+deflactor del PBI, no el IPC; año base = el último año de la serie; cada ejercicio usa el año en que CIERRA (como el tipo de cambio);
+un ejercicio posterior al año base (un presupuesto futuro) no se ajusta. El objeto lo genera `node tools/fetch-fx-reference.mjs
+--deflactores` desde la fuente oficial (BEA, Eurostat), una vez por año.
 ## Dónde está cada cosa
 
 **La raíz del repo es el SITIO; los documentos internos viven en `Admin/`** (Versión 196). Antes

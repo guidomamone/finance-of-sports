@@ -1,37 +1,6 @@
-// ============================================================================
-// data/lang/en.js - Diccionario inglés (Versión 115).
-//
-// CÓMO FUNCIONA: cada clave se corresponde con un `data-i18n="clave"` del HTML o
-// con una llamada `I18N.t('clave', 'castellano')` desde el JS. Si una clave NO
-// está acá, el sitio muestra el castellano original (ver `js/i18n.js`): faltar
-// una traducción degrada, no rompe.
-//
-// PARA AGREGAR UN IDIOMA: copiar este archivo a `data/lang/<code>.js`, cambiar
-// `window.I18N.strings.en` por el código nuevo, traducir los valores (NO las
-// claves), y sumar la entrada en `data/lang/langs.js`. Nada más.
-//
-// OJO, DECISIÓN ABIERTA: `site.name` traduce la marca ("Tu club en números" ->
-// "Finance of Sports", que es el dominio que Guido compró el 2026-09-13). Es la
-// única clave que cambia el NOMBRE del sitio y no solo su copy. Si el branding
-// definitivo termina siendo otro, se cambia acá y en el HTML. Ver to-do 7 y 8.
-//
-// LO QUE NO SE TRADUCE, A PROPÓSITO (por si alguien se pregunta si falta o si fue
-// a propósito):
-//   - Los rubros de "Formato del club" en Finanzas: salen textuales del balance
-//     de cada club y NO se traducen nunca, a propósito. Traducir una línea de un
-//     balance argentino sería inventar un dato que el documento no dice.
-//   - Los nombres de gestión (`gestionesByClub` en data/clubs.js, ej. "Ameal
-//     (2019-2023)"): son apellidos y años reales, no copy del sitio — mismo
-//     criterio que los rubros de arriba, se corrigió acá al notarlo durante el
-//     to-do 42 (el comentario viejo los listaba como pendientes de traducir por
-//     error).
-//   - El párrafo largo "Calidad de dato por club" de la pestaña Fuentes: se
-//     reescribe seguido y hoy habla casi solo de clubes argentinos.
-//
-// Los buckets de "Formato simplificado" (`data/site-labels.js` + `tLabel()` en
-// js/finanzas-render.js) y los avisos por tipo de reporte (banner de calidad de
-// dato, claves `finanzas.banner.*`) SÍ se traducen — el segundo desde el to-do 42.
-// ============================================================================
+// Diccionario inglés: cada clave es un `data-i18n` del HTML o un `I18N.t('clave', 'castellano')` del JS; una clave que falta muestra el
+// castellano (degrada, no rompe). Otro idioma: copiar este archivo a data/lang/<code>.js, traducir los valores (no las claves) y sumarlo
+// en data/lang/langs.js. No se traducen, a propósito: los rubros de "Formato del club" ni los nombres de gestión (son datos, no copy).
 
 window.I18N = window.I18N || {};
 window.I18N.strings = window.I18N.strings || {};
@@ -297,7 +266,7 @@ window.I18N.strings.en = {
   "th.window": "Window",
   "th.year": "Year",
 
-  // --- Selector jerárquico de club (Versión 137) ---
+  // --- Selector de club ---
   "header.club.btn": "Change club (Ctrl+K)",
   "header.club.btn.none": "Pick a club to see its numbers (Ctrl+K)",
   "header.club.change": "Change \u25BE",
@@ -352,7 +321,7 @@ window.I18N.strings.en = {
   "country.PT": "Portugal",
   "country.RU": "Russia",
   "country.TR": "Turkey",
-  // --- Comparación entre clubes (Versión 137) ---
+  // --- Comparación entre clubes ---
   "cmp.nodata": "no data",
   "cmp.cancel": "Cancel",
   "bif.dos.cta": "Go to Compare \u203A",
@@ -377,10 +346,8 @@ window.I18N.strings.en = {
   "cmp.mix.sub": "Where each one's money comes from. Bars at 100%, to compare the mix rather than the size; the total is on the side.",
   "cmp.mix.deducciones": "Deductions from gross revenue (subtracted from the total)",
   "cmp.rules": "Everything in <b>USD</b> (the comparison ignores the currency toggle on purpose) and in <b>simplified format</b>, the only taxonomy comparable across clubs from different countries. Each subject shows <b>its own financial year</b>, written next to each bar: clubs do not close on the same day nor have the same years loaded.",
-  // --- Cards de torneo del presupuesto de Boca 2026/27 (Versión 138) ---
-  // Solo el CHROME. Los rubros de las tablas ("Premios Grupales", "Remuneraciones BICA,
-  // S.A.C. y Cs. Sociales", "Policía Adicional") salen textuales del presupuesto y NO se
-  // traducen, mismo criterio que los rubros de "Formato del club".
+  // --- Cards de torneo del presupuesto de Boca 2026/27 ---
+  // Solo el chrome: los rubros de las tablas salen textuales del presupuesto y no se traducen.
   "torneo.lib.title": "Copa Libertadores. Revenue and costs",
   "torneo.liga.title": "Liga Profesional championship. Revenue and costs",
   "torneo.copa.title": "Copa Argentina. Revenue and costs",
@@ -392,7 +359,7 @@ window.I18N.strings.en = {
   "torneo.gastos.org": "Matchday organisation costs",
   "torneo.total.ingresos": "TOTAL REVENUE",
   "torneo.total.gastos": "TOTAL ORGANISATION COSTS",
-  // --- fuentes.html, la página estática de documentos (Versión 138) ---
+  // --- fuentes.html, la página estática de documentos ---
   "fuentes.page.title": "Sources | Finance of Sports",
   "fuentes.page.intro1a": "Every figure on this site comes from a public document of its club, and this is the full list:",
   "fuentes.page.intro1b": "documents from",

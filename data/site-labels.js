@@ -1,29 +1,7 @@
-// ============================================================================
-// data/site-labels.js - Etiquetas del SITIO que se pueden traducir (Versión 115).
-//
-// POR QUÉ ESTÁ SEPARADO: en la tabla de Finanzas conviven dos clases de texto muy
-// distintas, y solo UNA se traduce.
-//
-//   1. Los rubros de "Formato del club": salen textuales del balance de cada club
-//      (`rawLabel`). NO se traducen NUNCA. La promesa del sitio es mostrar cada
-//      club tal cual lo reporta; traducir "Ingresos por Cuota Social" de un
-//      balance argentino sería poner en el documento algo que el documento no
-//      dice.
-//   2. Los buckets de "Formato simplificado" y los catch-all ("Otros gastos"):
-//      son categorías que inventó el SITIO para poder comparar clubes entre sí.
-//      Esos SÍ se traducen.
-//
-// Este archivo es la lista de la clase (2). `tLabel()` en js/finanzas-render.js
-// traduce solo si la etiqueta está acá; cualquier otra pasa de largo intacta, que
-// es justo lo que necesita la clase (1).
-//
-// La CLAVE de este mapa es la etiqueta en castellano tal cual aparece en
-// GENERIC_SIMPLIFIED_*_BUCKETS (js/finanzas-calc.js). Si se renombra un bucket
-// allá, hay que renombrarlo acá también, o deja de traducirse (degrada a
-// castellano, no rompe). Los `label` en castellano siguen siendo los que usa el
-// código para MATCHEAR (findPrevVal, el overlay de presupuesto): acá solo se
-// traduce al momento de dibujar.
-// ============================================================================
+// Las etiquetas del SITIO que se traducen (las filas de Formato simplificado y los catch-all); un rubro textual del balance de un club
+// (rawLabel) no se traduce nunca. La clave es la etiqueta en castellano de GENERIC_SIMPLIFIED_*_BUCKETS (js/finanzas-calc.js): si se
+// renombra un bucket allá, hay que renombrarlo acá (si no, degrada a castellano). Se traduce al dibujar: el castellano es la clave con
+// la que matchean findPrevVal() y el overlay.
 
 window.SITE_LABEL_KEYS = {
   "Ingresos": "section.revenue",

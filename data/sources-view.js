@@ -1,35 +1,6 @@
-// ============================================================================
-// data/sources-view.js — cómo se MUESTRA una fuente. Las etiquetas de tipo y
-// nivel de documento, y las salvedades que se derivan solas de los datos.
-//
-// POR QUÉ EXISTE (Versión 127): la ficha de Fuentes de Finanzas, la pestaña
-// Fuentes y `fuentes.html` muestran lo mismo, y hasta acá cada una tenía su
-// propia copia de las etiquetas ("Balance auditado", "Fuente primaria"...): dos
-// en `js/finanzas-render.js` y dos más en `tools/generate-fuentes-page.js`. Es
-// la misma duplicación que veníamos sacando de los datos, ahora en la capa de
-// presentación. Vive en `data/` y no en `js/` porque lo cargan los dos mundos:
-// el navegador por `<script src>` y los generadores de `tools/` por `vm`.
-//
-// LA DIVISIÓN QUE IMPORTA, Y ES LA RAZÓN DE FONDO DE ESTE ARCHIVO:
-//
-//   `note`        es INTERNA. Se la escribe una sesión para la siguiente: dónde
-//                 quedó la transcripción, cómo se leyó el PDF, qué se verificó,
-//                 qué quedó pendiente. NO SE RENDERIZA NUNCA. Hasta la Versión
-//                 126 se publicaba tal cual, y el visitante terminaba leyendo
-//                 rutas del disco de Guido y detalles de OCR.
-//   `publicNote`  es para el LECTOR. Una o dos oraciones, solo donde hay una
-//                 salvedad real que no se puede deducir de los datos (que el
-//                 balance de River salga de una réplica de hinchas, que Club
-//                 América venga del segmento de Ollamani junto con el estadio).
-//                 Hoy la tienen 17 de 91 documentos, y está bien que sea así.
-//   derivadas     todo lo demás. Que un tipo de cambio sea de referencia y no
-//                 del documento, que el balance no publique el resultado del
-//                 ejercicio, que no informe deuda ni caja: eso ya está en los
-//                 campos, y escribirlo a mano documento por documento sería
-//                 inventar una tercera copia que se desincroniza. Lo arma
-//                 `sourceCaveats()`, acá abajo, y un club nuevo las trae bien
-//                 sin que nadie escriba una línea.
-// ============================================================================
+// Cómo se MUESTRA una fuente (etiquetas de tipo y nivel, salvedades derivadas de los datos), compartido por la ficha de Finanzas, la
+// pestaña Fuentes y fuentes.html; lo cargan el navegador y los generadores de tools/. OJO: `note` es INTERNA y no se renderiza nunca;
+// `publicNote` es para el lector; el resto de las salvedades se derivan acá (sourceCaveats), no se escriben a mano.
 
 // Qué tipo de documento es. Las claves son las de `sources[].type`.
 const SOURCE_TYPE_LABEL = {
@@ -84,25 +55,8 @@ function sourceCaveats(source, metas){
   return out;
 }
 
-// ============================================================================
-// CALIDAD DE DATO POR CLUB (Versión 129)
-//
-// El punto de color que el selector jerárquico va a mostrar al lado de cada
-// club, ANTES de que el visitante entre: que no descubra recién adentro que el
-// club que eligió es un placeholder.
-//
-// POR QUÉ VIVE ACÁ Y NO EN EL PANEL: es la misma pregunta que ya contesta
-// `sourceLevel()` ("cuánto pesa esta fuente"), agregada a nivel club. Escribirla
-// de nuevo en el panel sería la cuarta copia de un criterio que ya tuvimos
-// duplicado dos veces esta semana.
-//
-// OJO, EL DETALLE QUE HACE FALTA MIRAR DOS VECES: los 4 estados NO son los 4
-// valores de `reliability`. Una regla del tipo "verde si todos son primary, gris
-// si ninguno lo es" deja a River en gris ("solo placeholder"), y River tiene un
-// balance auditado de verdad, conseguido en una réplica de hinchas
-// (`secondary_mirror`). Un balance real que no viene del dominio oficial es un
-// dato real: no es lo mismo que no tener nada. Por eso la pregunta que se hace
-// acá es "¿hay algún documento REAL?" y no "¿hay algún primary?".
+// Calidad de dato por club: el punto de color del selector. Los 4 estados NO son los 4 valores de `reliability`: la pregunta es
+// "¿hay algún documento REAL?" (un balance auditado conseguido en una réplica es un dato real), no "¿hay algún primary?".
 const CLUB_QUALITY = {
   full:        { label: 'Todos los ejercicios con documento oficial', dot: 'verde' },
   mixed:       { label: 'Mezcla de documento real y placeholder',     dot: 'amarillo' },

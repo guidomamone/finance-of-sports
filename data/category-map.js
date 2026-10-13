@@ -1,30 +1,20 @@
-// ============================================================================
-// data/category-map.js — la "tabla de traducción" que normaliza las
-// categorías de ingresos/gastos de cada club a un vocabulario compartido,
-// sin borrar el nombre real que usa cada club (eso se guarda aparte, en
-// rawLabel, junto a cada número).
-//
-// Por qué existe: Boca reporta 9 rubros de ingresos bien separados. Racing
-// reporta básicamente 2 (todo "fútbol profesional" junto, más "cuotas
-// sociales"). Forzar los datos de Racing dentro de las 9 cajas de Boca
-// implicaría inventar cómo se divide ese número — por eso existe la
-// categoría de "bolsón sin desglosar" (lump_football_operations): un lugar
-// honesto para un monto real que el club/la prensa no separó más.
-// ============================================================================
+// Las categorías compartidas (normalizedCategory) a las que se mapea cada línea de cada club; el nombre real del club queda en
+// rawLabel. `lump_football_operations`: el bolsón para un monto real que la fuente no separó más (nunca se inventa cómo dividirlo).
+// El criterio de cada categoría: skill club-data-mapping.
 
 const REVENUE_CATEGORIES = [
   'member_dues',              // cuotas sociales / socios
   'season_tickets',           // abonos
-  'matchday_competition',     // recaudación de entradas (Versión 46: ya NO incluye premios, ver competition_bonus)
-  'stadium_other',            // uso del estadio FUERA del partido: alquiler para recitales/eventos, concesiones del estadio, licitación de palcos (Versión 189). NO es recaudación: comparte la fila "Estadio" de Formato simplificado con matchday_competition y season_tickets, pero se guarda aparte para no decir que un alquiler de recital fue venta de entradas — y para que el día que "Estadio" se vuelva a partir en filas, la distinción siga estando en el dato.
+  'matchday_competition', // recaudación de entradas (los premios van en competition_bonus)
+  'stadium_other', // uso del estadio FUERA del partido: alquiler para eventos, concesiones, palcos. Comparte la fila "Estadio" con matchday_competition
   'broadcasting',             // televisación / derechos de TV
-  'competition_bonus',        // premios/bonos por avance de ronda o participación en un torneo (Versión 46, separado de matchday_competition para poder igualar la fila "Premios por competencias" que ya usa Boca)
+  'competition_bonus', // premios/bonos por avance de ronda o participación en un torneo
   'sponsorship_commercial',   // sponsors, merchandising, canjes
   'player_sales',             // ventas de jugadores (ingreso bruto)
   'other_sports',             // básquet, otros deportes
   'youth_football',           // fútbol juvenil / derechos de formación
   'womens_football',          // fútbol femenino
-  'education',                // colegio/escuela del club: aranceles de enseñanza y subsidios estatales a la educación (Versión 189). Es un negocio no futbolístico con fila propia — hasta la 188 caía al catch-all y era, por ejemplo, el 20% de los ingresos de Vélez sin aparecer en ninguna fila. NO incluye escuelas/academias de fútbol (eso es youth_football) ni departamentos de educación física (eso es other_sports).
+  'education', // colegio/escuela del club: aranceles y subsidios estatales a la educación (un negocio no futbolístico, con fila propia)
   'other_income',             // diversos, intereses ganados, partidas sueltas
   'lump_football_operations', // bolsón sin desglosar (ver nota arriba)
 ];
@@ -53,13 +43,9 @@ const EXPENSE_CATEGORIES = [
   'depreciation',
   'other_amortisation',
   'exceptional_items',
-  // Versión 53: las 3 categorías de abajo son el equivalente-gasto de la fila "Otros gastos"
-  // desagregada, siguiendo el mismo criterio que ya usa Boca en su Ejercicio 2027 (ver
-  // otrosGastos2027 en js/finanzas-calc.js y GENERIC_SIMPLIFIED_EXPENSE_BUCKETS): reducen cuánto
-  // cae en el catch-all genérico `other_expenses` para un club/año que sí tiene el desglose
-  // disponible en la fuente.
+  // Las 3 de abajo desagregan "Otros gastos" cuando la fuente lo permite, para que el catch-all other_expenses absorba menos.
   'match_organisation_expense',     // costo de organizar partidos/participar en competencias (seguridad, viajes, concentración, AFA, tickets, etc.)
-  'education_expense',              // colegio/escuela del club: sueldos docentes, mantenimiento, servicios del área educativa (Versión 194). Espejo, del lado de Gastos, de `education` (ver su comentario arriba) — hasta la 193 caía en `youth_other_sports_expense` o `admin_general_expense` según el club, sin fila propia, así que el sitio podía mostrar cuánto INGRESA un colegio pero no cuánto CUESTA. NO incluye escuelas/academias de fútbol (eso es youth_other_sports_expense) ni educación física del plantel (eso es admin_general_expense o wages_squad según el caso).
+  'education_expense', // colegio/escuela del club: sueldos docentes, mantenimiento, servicios del área educativa (espejo de `education`)
   'youth_other_sports_expense',     // fútbol juvenil, femenino, otros deportes, básquet, actividades sociales (todo lo que no es el plantel profesional)
   'admin_general_expense',          // administración, gastos generales, comerciales, impuestos, mantenimiento de sede/estadio (costos NO deportivos)
   'other_expenses',
@@ -81,13 +67,8 @@ const EXPENSE_CATEGORY_LABELS = {
   lump_football_operations_expense: 'Fútbol profesional (sin desglosar por la fuente)',
 };
 
-// Mapa de categorías reales -> normalizadas, por club. Esto es lo que se
-// edita si mañana Boca cambia cómo nombra un rubro, o si se agrega otro
-// club: una fila acá, no tocar la lógica de cálculo del sitio.
-// Nota: el motor de Finanzas del sitio hoy sólo usa este mapa como
-// referencia/documentación para Boca (Boca sigue con su código original,
-// ya verificado). River y Racing sí lo usan en vivo — ver data/river-data.js
-// y data/racing-data.js.
+// Mapa de rubros reales -> categorías normalizadas de algunos clubes cargados a mano (referencia; las líneas de cada club ya traen su
+// normalizedCategory en su data file).
 const categoryMapByClub = {
   boca: {
     revenue: {
