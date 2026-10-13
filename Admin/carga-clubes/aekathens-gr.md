@@ -41,6 +41,65 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2016: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2016-06-30","sourceId":"aekathens-gr-aek-oikonomikes-katastaseis"}
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-13) desde Clubes/Grecia/AEK Athens/AEK_Notes_2019-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/AEK Athens/AEK_Notes_2019-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Έσοδα εισιτηρίων εγχώριων διοργανώσεων | pág. 42, Jev 1 |
+| 2 | Έσοδα από πωλήσεις εισιτηρίων διαρκείας | pág. 42, Claude 0.95 |
+| 3 | Χορηγίες και διαφημίσεις | pág. 15, Jev 1 |
+| 4 | Δικαιώματα αναμετάδοσης | pág. 15, Jev 1 |
+| 5 | Εμπορικά | pág. 15, Jev 1 |
+| 6 | Αλληλεγγύη UEFA και χρηματικά έπαθλα | pág. 15, Jev 0.98 |
+| 7 | Λοιπά λειτουργικά έσοδα | pág. 15, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ανάλυση αθλητικού υλικού | pág. 42, Jev 1 |
+| 2 | Έξοδα φαρμακείου αθλητών | pág. 42, precedente |
+| 3 | Μισθοδοσία | pág. 43, precedente |
+| 4 | Αποσβέσεις συμβολαίων ποδοσφαιριστών | pág. 43, Jev 1 |
+| 5 | Απομείωση και απόσβεση | pág. 15, precedente |
+| 6 | Αποσβέσεις ιδιοχρησιμοποιούμενων κτιρίων | pág. 43, Jev 0.99 |
+| 7 | Αποσβέσεις μηχανημάτων | pág. 43, Claude 0.92 |
+| 8 | Αποσβέσεις μεταφορικών μέσων | pág. 43, Claude 0.92 |
+| 9 | Αποσβέσεις επιπλών & λοιπού εξοπλισμού | pág. 43, Claude 0.92 |
+| 10 | Αποσβέσεις λογισμικού | pág. 43, Jev 0.97 |
+| 11 | Έξοδα αγώνων | pág. 44, Jev 0.96 |
+| 12 | Αμοιβές τρίτων | pág. 44, precedente |
+| 13 | Τηλεπικοινωνίες | pág. 44, Claude 0.8 |
+| 14 | Μισθώματα | pág. 44, precedente |
+| 15 | Ασφάλιστρα | pág. 44, Claude 0.8 |
+| 16 | Επισκευές & συντηρήσεις | pág. 44, Claude 0.85 |
+| 17 | Διάφοροι φοροι-τελη | pág. 44, Claude 0.9 |
+| 18 | Έξοδα μετακινήσεων | pág. 44, precedente |
+| 19 | Διαφημίσεις και εκδηλώσεις | pág. 44, precedente |
+| 20 | Συνδρομές | pág. 44, precedente |
+| 21 | Δωρεές - επιχορηγήσεις | pág. 44, precedente |
+| 22 | Διάφορα έξοδα | pág. 44, Claude 0.82 |
+| 23 | Προβλέψεις επισφαλειών | pág. 44, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-13): gr-superleague, verificado contra roster cacheado de "2018–19 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "AEK Athens".
+```
+
 ## 2018
 
 ### Ingresos
@@ -234,4 +293,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/AEK Athens/AEK_Notes_2018-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aekathens-gr-aek-notes-2019-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/AEK Athens/AEK_Notes_2019-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

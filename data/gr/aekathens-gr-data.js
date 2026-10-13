@@ -24,6 +24,15 @@ const aekathensgrRevenueLinesByYear = {
     { rawLabel:'Αλληλεγγύη UEFA και χρηματικά έπαθλα', normalizedCategory:'competition_bonus', amountNative:9.021521, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά λειτουργικά έσοδα', normalizedCategory:'other_income', amountNative:2.722672, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Έσοδα εισιτηρίων εγχώριων διοργανώσεων', normalizedCategory:'matchday_competition', amountNative:2.235097, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα από πωλήσεις εισιτηρίων διαρκείας', normalizedCategory:'season_tickets', amountNative:2.447758, disclosureLevel:'aggregated' },
+    { rawLabel:'Χορηγίες και διαφημίσεις', normalizedCategory:'sponsorship_commercial', amountNative:8.782559, disclosureLevel:'aggregated' },
+    { rawLabel:'Δικαιώματα αναμετάδοσης', normalizedCategory:'broadcasting', amountNative:1.5, disclosureLevel:'aggregated' },
+    { rawLabel:'Εμπορικά', normalizedCategory:'sponsorship_commercial', amountNative:0.016888, disclosureLevel:'aggregated' },
+    { rawLabel:'Αλληλεγγύη UEFA και χρηματικά έπαθλα', normalizedCategory:'competition_bonus', amountNative:19.120784, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά λειτουργικά έσοδα', normalizedCategory:'other_income', amountNative:2.816091, disclosureLevel:'aggregated' },
+  ],
 };
 const aekathensgrExpenseLinesByYear = {
   2016: [
@@ -95,6 +104,31 @@ const aekathensgrExpenseLinesByYear = {
     { rawLabel:'Ζημιές από εκποίηση παγίων', normalizedCategory:'exceptional_items', amountNative:-0.001342, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά λειτουργικά έξοδα', normalizedCategory:'other_expenses', amountNative:-3.360533, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Ανάλυση αθλητικού υλικού', normalizedCategory:'other_expenses', amountNative:-0.290819, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα φαρμακείου αθλητών', normalizedCategory:'other_expenses', amountNative:-0.086939, disclosureLevel:'aggregated' },
+    { rawLabel:'Μισθοδοσία', normalizedCategory:'wages_squad', amountNative:-7.834513, disclosureLevel:'aggregated' },
+    { rawLabel:'Αποσβέσεις συμβολαίων ποδοσφαιριστών', normalizedCategory:'player_amortisation', amountNative:-6.556222, disclosureLevel:'aggregated' },
+    { rawLabel:'Απομείωση και απόσβεση', normalizedCategory:'player_amortisation', amountNative:-2.087081, disclosureLevel:'aggregated' },
+    { rawLabel:'Αποσβέσεις ιδιοχρησιμοποιούμενων κτιρίων', normalizedCategory:'depreciation', amountNative:-0.083801, disclosureLevel:'aggregated' },
+    { rawLabel:'Αποσβέσεις μηχανημάτων', normalizedCategory:'depreciation', amountNative:-0.000055, disclosureLevel:'aggregated' },
+    { rawLabel:'Αποσβέσεις μεταφορικών μέσων', normalizedCategory:'depreciation', amountNative:-0.020491, disclosureLevel:'aggregated' },
+    { rawLabel:'Αποσβέσεις επιπλών & λοιπού εξοπλισμού', normalizedCategory:'depreciation', amountNative:-0.088456, disclosureLevel:'aggregated' },
+    { rawLabel:'Αποσβέσεις λογισμικού', normalizedCategory:'other_amortisation', amountNative:-0.008566, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα αγώνων', normalizedCategory:'match_organisation_expense', amountNative:-0.81972, disclosureLevel:'aggregated' },
+    { rawLabel:'Αμοιβές τρίτων', normalizedCategory:'admin_general_expense', amountNative:-6.83912, disclosureLevel:'aggregated' },
+    { rawLabel:'Τηλεπικοινωνίες', normalizedCategory:'admin_general_expense', amountNative:-0.07953, disclosureLevel:'aggregated' },
+    { rawLabel:'Μισθώματα', normalizedCategory:'other_expenses', amountNative:-0.98113, disclosureLevel:'aggregated' },
+    { rawLabel:'Ασφάλιστρα', normalizedCategory:'admin_general_expense', amountNative:-0.07617, disclosureLevel:'aggregated' },
+    { rawLabel:'Επισκευές & συντηρήσεις', normalizedCategory:'admin_general_expense', amountNative:-0.011237, disclosureLevel:'aggregated' },
+    { rawLabel:'Διάφοροι φοροι-τελη', normalizedCategory:'admin_general_expense', amountNative:-0.227097, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα μετακινήσεων', normalizedCategory:'match_organisation_expense', amountNative:-1.398992, disclosureLevel:'aggregated' },
+    { rawLabel:'Διαφημίσεις και εκδηλώσεις', normalizedCategory:'admin_general_expense', amountNative:-0.231139, disclosureLevel:'aggregated' },
+    { rawLabel:'Συνδρομές', normalizedCategory:'admin_general_expense', amountNative:-0.000337, disclosureLevel:'aggregated' },
+    { rawLabel:'Δωρεές - επιχορηγήσεις', normalizedCategory:'other_expenses', amountNative:-0.02, disclosureLevel:'aggregated' },
+    { rawLabel:'Διάφορα έξοδα', normalizedCategory:'other_expenses', amountNative:-0.343011, disclosureLevel:'aggregated' },
+    { rawLabel:'Προβλέψεις επισφαλειών', normalizedCategory:'other_amortisation', amountNative:-1, disclosureLevel:'aggregated' },
+  ],
 };
 const aekathensgrFiscalYearMeta = {
   2016: {
@@ -142,6 +176,22 @@ const aekathensgrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:24.144686, officialTotalExpenses:22.801188, officialPAT:1.5957,
   },
+  2019: {
+    currency:'EUR', fxRef:'EUR@2019-06-30',
+    sourceId:'aekathens-gr-aek-notes-2019-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.086225, tax:-1.504974,
+    extraRows: [
+      {label:'Χρηματοοικονομικά Έξοδα', value:-0.096634},
+      {label:'Χρηματοοικονομικά Έσοδα', value:0.010409},
+      {label:'Φόρος εισοδήματος', value:-1.023407},
+      {label:'Αναβαλλόμενος Φόρος', value:-0.481567},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:36.919177, officialTotalExpenses:29.084426, officialPAT:6.243552,
+  },
 };
 const aekathensgrPresupuestoOverlayByYear = {};
 
@@ -171,6 +221,11 @@ Object.assign(sources, {
   'aekathens-gr-aek-notes-2018-06-30': {
     id:'aekathens-gr-aek-notes-2018-06-30', clubId:'aekathens-gr',
     title:'Athlitiki Enosis Konstantinoupoleos P.A.E. — AEK_Notes_2018-06-30 (ejercicio 2018)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'aekathens-gr-aek-notes-2019-06-30': {
+    id:'aekathens-gr-aek-notes-2019-06-30', clubId:'aekathens-gr',
+    title:'Athlitiki Enosis Konstantinoupoleos P.A.E. — AEK_Notes_2019-06-30 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
