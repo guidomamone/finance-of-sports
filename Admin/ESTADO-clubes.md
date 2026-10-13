@@ -19,9 +19,9 @@ GENERADO AUTOMÁTICAMENTE — no editar a mano. Se regenera con:
 
 Esta lista contesta QUÉ hay cargado de cada club. El POR QUÉ (qué supuesto se tomó,
 qué salvedad tiene una cifra, qué quedó sin cargar y por qué) NO está acá y no puede
-estarlo: vive en el comentario de cabecera de cada `data/<club>-data.js`, que es el
-archivo que sí o sí se toca al cargar un club y por lo tanto el único que no se puede
-desincronizar. Si querés entender un club, abrí SU archivo.
+estarlo: vive en la evidencia de cada club, `Admin/carga-clubes/<club>.md`, que escriben
+los mismos scripts que cargan el club (y quien carga a mano). Si querés entender un club,
+abrí SU evidencia.
 
 Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y cierra
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no

@@ -416,7 +416,8 @@ function sitio() {
   return { G: vm.runInContext('window.CLUB_GENERIC_DATA', ctx), S: vm.runInContext('typeof sources !== "undefined" ? sources : {}', ctx) };
 }
 // El .md de un año cargado: la ruta que nombra su fuente (220 de los 284 años con deuda/caja la tienen).
-const mdDeFuente = (S, sourceId) => { const m = JSON.stringify(S[sourceId] || {}).match(/Clubes\/[^"]+?\.md/); return m && existsSync(resolve(ROOT, m[0])) ? m[0] : null; };
+// la ruta de la transcripción está en la nota de la fuente, que desde el to-do 209 vive en la evidencia del club (textoFuenteCompleto)
+const mdDeFuente = (S, sourceId) => { const m = EV.textoFuenteCompleto(S[sourceId]).match(/Clubes\/[^"`\n]+?\.md/); return m && existsSync(resolve(ROOT, m[0])) ? m[0] : null; };
 
 // Factor del estado de resultados de un documento contra lo cargado (para el escalón 1 en la medición): la escala con la que más rubros de
 // ingresos cargados aparecen tal cual entre las cifras del documento.

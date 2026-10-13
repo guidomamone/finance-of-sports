@@ -74,6 +74,11 @@ que dice `ESTADO.md` era verdad ese día.
   Ahora lee también `Admin/carga-clubes/<club>.md`: la resolución da idéntica a la de antes del to-do 209 (202 por cita, 2 por nombre,
   1 ambigua). `audit.js` (`club-sin-carpeta`) salteaba en silencio a un club sin `Clubes/` en su data file y no lo detectó: ahora lee
   los dos (sin el arreglo habría dado 202 avisos).
+- Mismo tipo de regresión, en tres lugares más que leían la nota de la fuente o la cabecera del data file: `caja-deuda.mjs` y
+  `dentro-de-otro.mjs` (la ruta de la transcripción, sacada del `note`) y `cargar.mjs` (el perímetro, de la cabecera y del `note`). Ahora
+  usan `textoFuenteCompleto()` / `cabeceraDe()` de `evidencia-club.mjs`. Medido contra lo guardado ANTES de mudar los `note`: `caja-deuda
+  --medir` igual (sin el arreglo medía 0 años), `dentro-de-otro --todos` igual, propuestas de `cargar.mjs` y ensayo de `lote.mjs` sobre
+  `prueba-completa` iguales. El texto de `Admin/ESTADO-clubes.md` sobre dónde vive el porqué de cada club apunta a la evidencia.
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 

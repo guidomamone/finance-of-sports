@@ -82,7 +82,7 @@ const completo = (filas) => !filas.some((f) => f.unknown);
 const sinAcento = (x) => String(x).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
 const primera = (x) => sinAcento(x).split(/\s+/)[0];
 function ceroRealDe(M, a) {
-  const md = (JSON.stringify(M.S[a.meta.sourceId] || {}).match(/Clubes\/[^"]+?\.md/) || [])[0]; if (!md) return [];
+  const md = (EV.textoFuenteCompleto(M.S[a.meta.sourceId]).match(/Clubes\/[^"`\n]+?\.md/) || [])[0]; if (!md) return []; // (to-do 209) la nota de la fuente está en la evidencia
   return ajustesDe(md.replace(/\.md$/i, '.pdf')).filter((x) => x.campo === 'cero-real' && x.valor).map((x) => primera(x.valor));
 }
 const conPlata = (f) => f && f.value !== 0 && !f.unknown && !f.incluidoEn;

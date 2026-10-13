@@ -181,6 +181,17 @@ export function textoDeFuente(md, sourceId) {
   const j = L.findIndex((t) => t.trim() === `### ${sourceId}`); if (j < 0) return '';
   return L.slice(j + 1, finDe(L, j, RE_H2_H3)).filter((t) => !/^(```|~~~)/.test(t) && !/^_.*:_$/.test(t)).join(' ').replace(/\s+/g, ' ').trim();
 }
+// Para quien antes leía el TEXTO del data file (comentarios incluidos) buscando algo (la ruta de la transcripción, el perímetro):
+//   textoFuenteCompleto(src)  el objeto de la fuente como JSON + su nota en la evidencia (lo que antes era JSON.stringify(src) con `note`)
+//   cabeceraDe(clubId)        la "## Cabecera" de la evidencia (lo que antes eran las primeras líneas de comentario del data file)
+export function textoFuenteCompleto(src) {
+  if (!src) return '';
+  return `${JSON.stringify(src)} ${src.clubId && src.id ? textoDeFuente(leer(src.clubId), src.id) : ''}`;
+}
+export function cabeceraDe(clubId) {
+  const md = leer(clubId); const i = md.indexOf('\n## Cabecera'); if (i < 0) return '';
+  const f = md.indexOf('\n## ', i + 5); return md.slice(i, f < 0 ? md.length : f);
+}
 // Reemplaza un texto exacto en la evidencia (ej. "brandColor AUSENTE a propósito" -> "brandColor #c8102e" al ponerle el color a un club).
 export function reemplazarTexto(md, viejo, nuevo) { return md.includes(viejo) ? md.replace(viejo, nuevo) : md; }
 

@@ -208,9 +208,10 @@ function perimetroDeTexto(t) {
 }
 export function perimetroHeredado(sitio, clubId) {
   const cd = sitio.generic[clubId] || {};
-  const header = (() => { try { return readFileSync(resolve(ROOT, 'data', `${clubId}-data.js`), 'utf8').slice(0, 6000); } catch { return ''; } })();
+  // (to-do 209) la cabecera del club (antes, el comentario del principio del data file) y la nota de cada fuente viven en su evidencia
+  const header = EV.cabeceraDe(clubId).slice(0, 6000);
   const porAnio = {};
-  for (const [y, m] of Object.entries(cd.fiscalYearMeta || {})) { const s = sitio.sources[m.sourceId] || {}; porAnio[y] = perimetroDeTexto(`${s.title || ''} ${s.note || ''}`); }
+  for (const [y, m] of Object.entries(cd.fiscalYearMeta || {})) { const s = sitio.sources[m.sourceId] || {}; porAnio[y] = perimetroDeTexto(`${s.title || ''} ${s.note || (s.id ? EV.textoDeFuente(EV.leer(clubId), s.id) : '')}`); }
   const vals = new Set(Object.values(porAnio).map((v) => v.replace('?', '')));
   const cab = perimetroDeTexto(header);
   return { porAnio, cabecera: cab, unico: vals.size === 1 ? [...vals][0] : null };
