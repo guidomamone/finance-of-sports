@@ -8,13 +8,13 @@
 //   node tools/exa-search.mjs "balance auditado 2024 Club Atlético Banfield"
 //   node tools/exa-search.mjs "memoria y balance River Plate" --numResults 5
 //
-// Necesita Admin/exa/.env con EXA_API_KEY=... (gitignoreado, mismo criterio que Gemini/Mistral/Resend).
+// Necesita Admin/api-keys/exa.env con EXA_API_KEY=... (gitignoreado, mismo criterio que Gemini/Mistral/Resend).
 
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const projectRoot = resolve(import.meta.dirname, '..');
-const envPath = resolve(projectRoot, 'Admin', 'exa', '.env');
+const envPath = resolve(projectRoot, 'Admin', 'api-keys', 'exa.env');
 
 function readEnvKey() {
   const raw = readFileSync(envPath, 'utf8');

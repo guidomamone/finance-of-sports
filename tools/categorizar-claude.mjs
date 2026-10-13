@@ -76,7 +76,7 @@
 // usa `md` de ese log para saber qué motor hizo cada transcripción, y esto no es una transcripción.
 //
 // RAW HTTP, sin SDK: mismo criterio que claude-api-transcribe.mjs (el proyecto no tiene package.json a propósito).
-// Necesita Admin/claude-api/.env con ANTHROPIC_API_KEY=... (gitignoreado).
+// Necesita Admin/api-keys/claude-api.env con ANTHROPIC_API_KEY=... (gitignoreado).
 // ============================================================================
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
@@ -90,7 +90,7 @@ import { abrirCache } from './respuestas-cache.mjs'; // respuestas ya pagadas (V
 import vm from 'node:vm';
 
 const root = resolve(import.meta.dirname, '..');
-const envPath = resolve(root, 'Admin', 'claude-api', '.env');
+const envPath = resolve(root, 'Admin', 'api-keys', 'claude-api.env');
 const costLogPath = resolve(root, 'Admin', 'claude-api', 'resultados.jsonl');
 const outDir = resolve(root, 'Admin', 'categorizar-claude');
 

@@ -34,7 +34,7 @@
 //   node tools/claude-api-transcribe.mjs "<archivo.pdf>" [--out-suffix -gemini-check]
 //   node tools/claude-api-transcribe.mjs --all [--dir Clubes/Colombia] [--limit N] [--concurrency N]
 //
-// Necesita Admin/claude-api/.env con ANTHROPIC_API_KEY=... (gitignoreado,
+// Necesita Admin/api-keys/claude-api.env con ANTHROPIC_API_KEY=... (gitignoreado,
 // mismo criterio que Gemini/Mistral/Resend).
 // ============================================================================
 
@@ -80,7 +80,7 @@ function sizedRanges(pdfPath, a, b, tmp) {
 }
 
 const projectRoot = resolve(import.meta.dirname, '..');
-const envPath = resolve(projectRoot, 'Admin', 'claude-api', '.env');
+const envPath = resolve(projectRoot, 'Admin', 'api-keys', 'claude-api.env');
 const resultsPath = resolve(projectRoot, 'Admin', 'claude-api', 'resultados.jsonl');
 const failuresPath = resolve(projectRoot, 'Admin', 'claude-api', 'fallidos.jsonl');
 const fidelidadScript = resolve(projectRoot, 'tools', 'check-transcripcion-fidelidad.js');
@@ -352,7 +352,7 @@ async function main() {
   const args = process.argv.slice(2);
   mkdirSync(dirname(envPath), { recursive: true });
   if (!existsSync(envPath)) {
-    console.error(`No existe ${envPath.replace(projectRoot + '/', '')} -- creá el archivo con una línea "ANTHROPIC_API_KEY=..." (mismo formato que Admin/gemini/.env).`);
+    console.error(`No existe ${envPath.replace(projectRoot + '/', '')} -- creá el archivo con una línea "ANTHROPIC_API_KEY=..." (mismo formato que Admin/api-keys/gemini.env).`);
     process.exit(1);
   }
   const apiKey = readEnvKey();

@@ -5,7 +5,7 @@
 // 1.000 tweets leídos, sin suscripción, y SÍ busca en el archivo histórico completo (no solo los
 // últimos 7 días).
 //
-// Necesita Admin/twitterapiio/.env con TWITTERAPI_IO_KEY=... (gitignoreado, mismo criterio que
+// Necesita Admin/api-keys/twitterapiio.env con TWITTERAPI_IO_KEY=... (gitignoreado, mismo criterio que
 // Exa/Gemini/Mistral/Firecrawl).
 //
 // NO es parte de la escalera rutinaria de sourcing (decisión de Guido, to-do 80 cerrado): correrlo a
@@ -21,7 +21,7 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const projectRoot = resolve(import.meta.dirname, '..');
-const envPath = resolve(projectRoot, 'Admin', 'twitterapiio', '.env');
+const envPath = resolve(projectRoot, 'Admin', 'api-keys', 'twitterapiio.env');
 
 function readEnvKey() {
   const raw = readFileSync(envPath, 'utf8');

@@ -705,7 +705,7 @@ que salió de ese test:
    caro (70.000-290.000 tokens por documento) pero también el más minucioso: cruza sumas entre notas,
    marca `[ilegible]` en vez de inventar, y corrige ambigüedades de OCR contra el resto del documento.
 
-Las dos APIs necesitan su propia key en `Admin/gemini/.env` / `Admin/mistral/.env` (gitignoreadas,
+Las dos APIs necesitan su propia key en `Admin/api-keys/gemini.env` / `Admin/api-keys/mistral.env` (gitignoreadas,
 mismo criterio que la de Resend) — si no existen todavía, pedírselas a Guido, no asumir que hay que
 usar el flujo de Tesseract de abajo por default.
 

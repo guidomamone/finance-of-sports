@@ -29,7 +29,7 @@
 //   Extras: --concurrencia 8, --semilla 7, --lado-conocido, --ejemplos 8 (le muestra 8 rubros parecidos ya categorizados),
 //           --sin-mismo-club (los ejemplos salen solo de otros clubes: el caso de un club nuevo), --etiqueta _nombre (no pisa el informe de otra variante), --club river, --dry-run
 //
-// Necesita Admin/jev/.env con JEV_API_KEY=... (gitignoreado).
+// Necesita Admin/api-keys/jev.env con JEV_API_KEY=... (gitignoreado).
 // API: POST https://api.typesafe.ai/v1/systemone, Authorization: Bearer <key>, ver https://docs.typesafe.ai/
 // ============================================================================
 
@@ -58,7 +58,7 @@ const tag = flagVal('--etiqueta') || ''; // sufijo para no pisar el informe de o
 
 if (!BACKTEST && !LISTOS) { console.error('Uso: node tools/jev-categorizar.mjs --backtest [--limit N]   o   --listos [--limit N]   (ver la cabecera del archivo)'); process.exit(1); }
 
-const envPath = resolve(root, 'Admin', 'jev', '.env');
+const envPath = resolve(root, 'Admin', 'api-keys', 'jev.env');
 const readKey = () => {
   if (!existsSync(envPath)) throw new Error(`Falta ${envPath} con una línea JEV_API_KEY=...`);
   const line = readFileSync(envPath, 'utf8').split('\n').find((l) => l.startsWith('JEV_API_KEY='));

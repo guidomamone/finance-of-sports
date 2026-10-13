@@ -11,7 +11,7 @@
 // USO:
 //   node tools/glosar-rubros.mjs <ruta/al/archivo.rubros.json> [...]      glosa esos documentos (los que ya la tienen se saltean)
 //   node tools/glosar-rubros.mjs --listos                                  glosa todos los `.rubros.json` sin glosa cuyo `.jev.json` todavía no existe
-// Necesita Admin/gemini/.env (el mismo de gemini-transcribe.mjs).
+// Necesita Admin/api-keys/gemini.env (el mismo de gemini-transcribe.mjs).
 // ============================================================================
 
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
@@ -20,7 +20,7 @@ import { resolve, join } from 'node:path';
 
 const root = resolve(import.meta.dirname, '..');
 const MODEL = 'gemini-3.8-flash';
-const key = () => readFileSync(resolve(root, 'Admin', 'gemini', '.env'), 'utf8').split('\n').find((l) => l.startsWith('GEMINI_API_KEY=')).slice(15).trim();
+const key = () => readFileSync(resolve(root, 'Admin', 'api-keys', 'gemini.env'), 'utf8').split('\n').find((l) => l.startsWith('GEMINI_API_KEY=')).slice(15).trim();
 
 async function glosar(labels, club) {
   const prompt = `Estas son etiquetas de filas de un estado financiero de un club de fútbol (${club}), en su idioma original. Devolvé un arreglo JSON con la traducción contable al ESPAÑOL de cada una, en el mismo orden y con la misma cantidad de elementos (${labels.length}). Usá el vocabulario contable estándar en español (ej. "Annen driftskostnad" -> "Otros gastos de explotación"; "Lønnskostnad" -> "Gastos de personal"; "Salgsinntekt" -> "Ingresos por ventas"). Si la etiqueta ya está en español o no tiene traducción posible (número, símbolo), devolvela igual.\n\n${JSON.stringify(labels)}`;

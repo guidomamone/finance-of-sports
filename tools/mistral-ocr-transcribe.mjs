@@ -14,7 +14,7 @@
 //   node tools/mistral-ocr-transcribe.mjs --retry-gemini-failures
 //
 // Corre entero desde tu propia terminal, sin sesión de Claude Code: 0 tokens de Claude.
-// Necesita Admin/mistral/.env con MISTRAL_API_KEY=... (gitignoreado, mismo criterio que Gemini/Resend).
+// Necesita Admin/api-keys/mistral.env con MISTRAL_API_KEY=... (gitignoreado, mismo criterio que Gemini/Resend).
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync, mkdirSync } from 'node:fs';
 import { resolve, dirname, basename, extname, join } from 'node:path';
@@ -26,7 +26,7 @@ const MAX_RETRIES = 4;
 const DEFAULT_TIMEOUT_MS = 150_000;
 
 const projectRoot = resolve(import.meta.dirname, '..');
-const envPath = resolve(projectRoot, 'Admin', 'mistral', '.env');
+const envPath = resolve(projectRoot, 'Admin', 'api-keys', 'mistral.env');
 const resultsPath = resolve(projectRoot, 'Admin', 'mistral', 'resultados.jsonl');
 const failuresPath = resolve(projectRoot, 'Admin', 'mistral', 'fallidos.jsonl');
 const geminiFailuresPath = resolve(projectRoot, 'Admin', 'gemini', 'fallidos.jsonl');

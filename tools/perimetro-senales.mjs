@@ -34,7 +34,7 @@
 //   node tools/perimetro-senales.mjs --verdad Admin/tests/perimetro-verdad.tsv --jev    # con Jev (~US$ 0,0001 por documento)
 //   node tools/perimetro-senales.mjs --lista Admin/lotes/lote-NN.txt [--jev]                  # sin verdad: solo la propuesta
 //   node tools/perimetro-senales.mjs --md "Clubes/Italia/AC Milan/x.md" --detalle      # un documento, con cada tabla encontrada
-// Jev: Admin/jev/.env con JEV_API_KEY=...; respuestas guardadas en Generados/_cache/jev-perimetro.jsonl (no se paga dos veces).
+// Jev: Admin/api-keys/jev.env con JEV_API_KEY=...; respuestas guardadas en Generados/_cache/jev-perimetro.jsonl (no se paga dos veces).
 // ============================================================================
 import { readFileSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
@@ -193,7 +193,7 @@ async function preguntarJev(texto) {
   const cache = cargarCache();
   if (cache.has(clave)) return { ...cache.get(clave), cache: true };
   if (!jevKey) {
-    const env = resolve(ROOT, 'Admin', 'jev', '.env');
+    const env = resolve(ROOT, 'Admin', 'api-keys', 'jev.env');
     const line = existsSync(env) ? readFileSync(env, 'utf8').split('\n').find((l) => l.startsWith('JEV_API_KEY=')) : null;
     if (!line) throw new Error(`Falta ${env} con JEV_API_KEY=...`);
     jevKey = line.slice(12).trim();

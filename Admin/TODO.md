@@ -40,7 +40,7 @@ ni en el comentario de ningún archivo de código.
     2026-09-24 (DNS en Netlify DNS — DKIM, SPF vía 2 CNAME, DMARC `p=none` en `_dmarc.outreach`, no
     en la raíz); (c) `Receiving` activado (MX agregado, propagación confirmada por `dig` desde 3
     resolvers distintos) — el dashboard de Resend tardó en reflejarlo como verificado pero la
-    infraestructura ya estaba bien; (d) ✅ API key generada y en `Admin/outreach/.env`
+    infraestructura ya estaba bien; (d) ✅ API key generada y en `Admin/api-keys/outreach.env`
     (gitignoreado), `from` = `info@outreach.financeofsports.com`.
 
     **✅ PIPELINE PROBADO DE PUNTA A PUNTA, 2026-09-25**: mail de prueba escrito directo en

@@ -168,7 +168,7 @@ function loadCategories() {
 const CATS = loadCategories();
 const sideOfCat = (c) => (c in CATS.revenue ? 'revenue' : c in CATS.expense ? 'expense' : null);
 let jevKey = null;
-const readJevKey = () => (jevKey ??= readFileSync(resolve(root, 'Admin', 'jev', '.env'), 'utf8').split('\n').find((l) => l.startsWith('JEV_API_KEY=')).slice(12).trim());
+const readJevKey = () => (jevKey ??= readFileSync(resolve(root, 'Admin', 'api-keys', 'jev.env'), 'utf8').split('\n').find((l) => l.startsWith('JEV_API_KEY=')).slice(12).trim());
 const words = (t) => new Set(norm(t).split(/[^a-z0-9]+/).filter((w) => w.length > 2));
 
 // Caché de respuestas de Jev (--cache-jev): la clave es club|año|lado|etiqueta; los ejemplos dependen solo de eso (el banco excluye el

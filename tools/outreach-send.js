@@ -10,7 +10,7 @@
 //
 // Uso:
 //   1. Setear las variables de entorno (una vez por sesión de terminal):
-//        source Admin/outreach/.env
+//        source Admin/api-keys/outreach.env
 //      Ese archivo (gitignoreado, ver .gitignore) tiene:
 //        export RESEND_API_KEY="re_xxxxxxxx"
 //        export OUTREACH_FROM_EMAIL="Guido Mamone <info@outreach.financeofsports.com>"
@@ -80,7 +80,7 @@ async function sendOne(draft, apiKey, fromEmail) {
 async function main() {
   const apiKey = process.env.RESEND_API_KEY;
   const fromEmail = process.env.OUTREACH_FROM_EMAIL;
-  if (!apiKey) fail("falta RESEND_API_KEY — corré 'source Admin/outreach/.env' primero (ver el comentario de cabecera de este script).");
+  if (!apiKey) fail("falta RESEND_API_KEY — corré 'source Admin/api-keys/outreach.env' primero (ver el comentario de cabecera de este script).");
   if (!fromEmail) fail("falta OUTREACH_FROM_EMAIL — mismo archivo que RESEND_API_KEY.");
 
   if (!fs.existsSync(APROBADOS_DIR)) fail(`no existe ${APROBADOS_DIR}`);

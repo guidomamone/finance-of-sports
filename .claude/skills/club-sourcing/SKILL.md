@@ -100,7 +100,7 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
 
    **Si el sitio devuelve 403/bloqueo a `curl`/`WebFetch`** (WAF, CDN, IP deny; no confundir con
    ausencia de contenido), antes de dar la familia 1 por "parcial" probar Firecrawl (clave en
-   `Admin/firecrawl/.env`): `POST api.firecrawl.dev/v1/scrape` con `{"url":..., "formats":["markdown"]}`,
+   `Admin/api-keys/firecrawl.env`): `POST api.firecrawl.dev/v1/scrape` con `{"url":..., "formats":["markdown"]}`,
    agregando `"proxy":"stealth"` si el intento básico falla. Costo bajo (~1 crédito por request): no
    hace falta ningún gate de "señal" antes de probarlo, a diferencia de Exa (ver 0.1b). Para confirmar
    el MENÚ COMPLETO de un sitio grande de una sola vez, en vez de navegar página por página, usar
@@ -252,7 +252,7 @@ Boca/Racing), pero no es la regla.
    repago que en un puñado de clubes grandes.
 3. **3er barrido** (con señal, sigue sin nada): **Exa** (búsqueda semántica por contenido, no por
    nombre de archivo ni palabra clave): `node tools/exa-search.mjs "<query>"`, necesita
-   `Admin/exa/.env`. En el A/B test, sobre 5 clubes argentinos ya cerrados como dead-end real
+   `Admin/api-keys/exa.env`. En el A/B test, sobre 5 clubes argentinos ya cerrados como dead-end real
    (escalera de Sonnet agotada a fondo), una sola query de Exa por club reabrió 2 de los 5: un sitio
    de hinchas con balances completos que ninguna de las 3 familias estándar puede ver (no es sitio
    oficial, no está en Wayback del dominio del club, no rankea en búsqueda web genérica) y una nota de

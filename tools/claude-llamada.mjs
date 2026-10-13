@@ -12,7 +12,7 @@
 //   - `stream: true` (to-do 197): la respuesta llega por streaming (SSE). Hace falta para topes de salida grandes (más de ~16.000 tokens): sin
 //     streaming, una respuesta larga puede pasar el tiempo máximo de la conexión. La usa el escalón 1 de extraer.mjs (128.000 tokens).
 // Modelo: Claude Opus 5.5 (el del proyecto), esfuerzo bajo por defecto. Sin SDK: el proyecto no tiene package.json (mismo criterio que
-// categorizar-claude.mjs, que tiene la clave en Admin/claude-api/.env y la tabla de precios).
+// categorizar-claude.mjs, que tiene la clave en Admin/api-keys/claude-api.env y la tabla de precios).
 //
 // USO:
 //   import { llamarClaude } from './claude-llamada.mjs';

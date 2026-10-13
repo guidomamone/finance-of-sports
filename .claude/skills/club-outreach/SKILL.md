@@ -105,7 +105,7 @@ sin más.
 **Enviar** (Guido, desde su terminal, NUNCA una sesión de Claude Code; ver sección 0):
 
 ```
-source Admin/outreach/.env
+source Admin/api-keys/outreach.env
 node tools/outreach-send.js
 ```
 
@@ -139,7 +139,7 @@ y cómo está armado:
    y apuntar el reenvío a la casilla de Gmail de Guido. Necesita el registro MX que Resend da en el
    mismo paso del punto 2.
 4. **API key de Resend** → `API keys` en el dashboard → `Create API Key` (el valor solo se muestra
-   una vez) → va en `Admin/outreach/.env` (gitignoreado, NUNCA se trackea):
+   una vez) → va en `Admin/api-keys/outreach.env` (gitignoreado, NUNCA se trackea):
    ```
    export RESEND_API_KEY="re_xxxxxxxx"
    export OUTREACH_FROM_EMAIL="Guido Mamone <info@outreach.financeofsports.com>"

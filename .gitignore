@@ -92,47 +92,15 @@ Clubes/Argentina/River/estados-contables-leads/
 # decisión quiso salvar. Si volvés a agregar una regla por nombre suelto acá, acordate
 # de que también aplica dentro de cualquier carpeta.
 
-# EXCEPCIÓN A LO DE ARRIBA: CREDENCIALES, no documentos internos (Versión 216). La regla de "todo
-# se trackea, lo interno se saca en el deploy" es sobre DOCUMENTOS — nada de eso aplica a una
-# credencial real. Admin/outreach/.env tiene la API key de Resend que usa `tools/outreach-send.js`
-# (ver `.claude/skills/club-outreach/SKILL.md`): si se trackeara, quedaría en el historial de git
-# para siempre (llegue o no a publicarse por Netlify), recuperable aunque se borre después. Esto NO
-# es una excepción a "no hace falta gitignore para lo interno" — es una categoría distinta
-# (secreto, no documento) que nunca entra a git, con o sin `Admin/`.
-Admin/outreach/.env
-
-# Misma excepción: Admin/gemini/.env tiene la API key de Gemini que usa `tools/gemini-transcribe.mjs`
-# (promovido a herramienta permanente el 2026-09-26 después del to-do 66, test de costo Sonnet vs
-# Haiku vs API externa) — mismo criterio que la de arriba.
-Admin/gemini/.env
-
-# Misma excepción: Admin/mistral/.env tiene la API key de Mistral OCR que usa
-# `tools/mistral-ocr-transcribe.mjs` (segunda pasada para los PDFs que Gemini rechaza con
-# RECITATION, 2026-09-26).
-Admin/mistral/.env
-
-# Misma excepción: Admin/exa/.env tiene la API key de Exa (búsqueda semántica), evaluada como
-# barrido 3 de sourcing (ver .claude/skills/club-sourcing/SKILL.md sección 0.1b, 2026-09-26).
-Admin/exa/.env
-
-# Misma excepción: Admin/firecrawl/.env tiene la API key de Firecrawl (renderiza como navegador
-# real para leer sitios bloqueados por WAF/JS que curl/WebFetch no pueden bajar, to-do 75,
-# 2026-09-27).
-Admin/firecrawl/.env
-
-# Misma excepción: Admin/twitterapiio/.env tiene la API key de TwitterAPI.io (revendedor de la API
-# de X/Twitter, búsqueda de archivo completo mucho más barata que la oficial), evaluada como
-# capa de sourcing en el to-do 80 (2026-09-27).
-Admin/twitterapiio/.env
-
-# Misma excepción: Admin/jev/.env tiene la API key de Jev (TypeSafe AI, docs.typesafe.ai),
-# evaluada para categorizar rubros de ingresos/gastos en onboarding (to-do 74, 2026-09-28).
-Admin/jev/.env
-
-# Misma excepción: Admin/claude-api/.env tiene la API key de Anthropic que usa
-# tools/claude-api-transcribe.mjs -- la 3ra API del pipeline de transcripción, entra sola cuando
-# Gemini rechaza un documento por RECITATION (falso positivo de copyright), ver Admin/CHANGELOG.md.
-Admin/claude-api/.env
+# EXCEPCIÓN A LO DE ARRIBA: CREDENCIALES, no documentos internos. La regla de "todo se trackea, lo
+# interno se saca en el deploy" es sobre DOCUMENTOS; una credencial real nunca entra a git: si se
+# trackeara, quedaría en el historial para siempre (el repo es público), aunque se borre después.
+# Todas las claves viven en Admin/api-keys/<servicio>.env (Mistral, Gemini y Claude transcriben; Jev y
+# Claude categorizan; Exa, Firecrawl y TwitterAPI.io son de sourcing; Resend manda los mails de outreach).
+# La única que se trackea es supabase.env: la `anon public key` de Supabase está hecha para viajar en el
+# JS del sitio (la seguridad la da Row Level Security), ver el comentario adentro del archivo.
+Admin/api-keys/*.env
+!Admin/api-keys/supabase.env
 
 # LO INTERNO YA NO SE DESTRACKEA: SE SACA EN EL DEPLOY (2026-09-20, decisión de Guido,
 # reemplaza a las reglas de los to-do 37 y 39 que estuvieron acá unas horas).

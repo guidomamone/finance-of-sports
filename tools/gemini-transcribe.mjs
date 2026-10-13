@@ -79,7 +79,7 @@ const MAX_RETRIES = 4;
 const DEFAULT_TIMEOUT_MS = 150_000; // 150s -- un documento normal tarda 15-110s; más que eso, mejor cortar y anotarlo como fallo en vez de esperar varios minutos por uno solo.
 
 const projectRoot = resolve(import.meta.dirname, '..');
-const envPath = resolve(projectRoot, 'Admin', 'gemini', '.env');
+const envPath = resolve(projectRoot, 'Admin', 'api-keys', 'gemini.env');
 const resultsPath = resolve(projectRoot, 'Admin', 'gemini', 'resultados.jsonl');
 const failuresPath = resolve(projectRoot, 'Admin', 'gemini', 'fallidos.jsonl');
 const fidelidadScript = resolve(projectRoot, 'tools', 'check-transcripcion-fidelidad.js');
