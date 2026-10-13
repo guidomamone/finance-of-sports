@@ -33,7 +33,7 @@ que dice `ESTADO.md` era verdad ese día.
   (`onboard.mjs`, `prepare-onboarding.mjs`, `proponer-carga.mjs`, `extract-table-rows.mjs` y `pipeline.mjs` ya no se presentan como el
   pipeline), números de etapa, flags que ya no existen, rutas viejas y to-dos cerrados. `estado.mjs` suma `cargar-lote.mjs` a la etapa 8.
 - `audit.js`: el chequeo de claves de traducción lee todos los `js/*.js` (antes, una lista fija que dejaba afuera `js/principal.js` y
-  `js/cuenta.js`). Encontró 3 claves de Mi Cuenta sin traducir en `data/lang/en.js` (P3 `i18n-incompleto`).
+  `js/cuenta.js`). Encontró 3 claves de Mi Cuenta sin traducir en `data/lang/en.js`: agregadas ("more", "in", "financial year"). ASSET_V 826.
 - Cada paso, verificado con la misma batería antes y después (`audit.js`, los generadores con `--check`, `estado.mjs`, ensayos de `lote.mjs`
   con `prueba-completa` y de `cargar-lote.mjs`, `dentro-de-otro`, `carpetas-clubes`, `cola`, `gasto`) y, en los que tocan el sitio,
   `?audit=1` (214 clubes cargan, 1859 checks cierran, 3 no: Bayern, igual que antes) y el texto de las 6 secciones.
