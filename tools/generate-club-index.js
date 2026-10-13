@@ -36,6 +36,14 @@
 //   node tools/generate-club-index.js --check   no escribe; sale con código 1 si
 //                                               la sección quedó desactualizada
 //                                               (sirve para chequear antes de un push)
+//
+// TAMBIÉN GENERA data/club-index.js: el índice liviano de todos los clubes, para lo que necesita mostrarse ANTES de cargar ninguno (el
+// selector de club, y cualquier vista que liste clubes sin entrar a sus datos). Sale de `clubs.js` y de los `fiscalYearMeta`/`sources` de
+// cada club, así que no puede desincronizarse. Los campos de cada club:
+//   n: nombre corto · c: país ISO-2 · q: calidad del dato (ver clubQuality() en data/sources-view.js) · y: ejercicios cargados ·
+//   last: el más reciente · yrs: los ejercicios, del más reciente al más viejo, como [año, reportType] ·
+//   ci: solo si hay, los ejercicios que no cierran en la fecha del club, { año: 'MM-DD' }
+// El archivo publicado lleva UNA línea de comentario (data/ se publica: to-do 209).
 // ============================================================================
 
 const fs = require('fs');
@@ -256,20 +264,7 @@ function buildClubIndex({ clubs, sources, generic, clubQuality }) {
     if (Object.keys(ci).length) idx[id].ci = ci;
   }
   const filas = Object.keys(idx).map(id => `  ${JSON.stringify(id)}: ${JSON.stringify(idx[id])},`);
-  return `// ============================================================================
-// data/club-index.js — GENERADO AUTOMÁTICAMENTE por tools/generate-club-index.js.
-// NO EDITAR A MANO: se sobrescribe.
-//
-// El índice liviano de todos los clubes, para lo que necesita mostrarse ANTES de
-// cargar ninguno (el selector de club, y cualquier vista que liste clubes sin
-// entrar a sus datos). Todo lo de acá sale de \`clubs.js\` y de los
-// \`fiscalYearMeta\`/\`sources\` de cada club, así que no puede desincronizarse.
-//
-//   n: nombre corto · c: país ISO-2 · q: calidad del dato (ver clubQuality() en
-//   data/sources-view.js) · y: ejercicios cargados · last: el más reciente ·
-//   yrs: los ejercicios, del más reciente al más viejo, como [año, reportType] ·
-//   ci: solo si hay, los ejercicios que no cierran en la fecha del club, { año: 'MM-DD' }
-// ============================================================================
+  return `// GENERADO por tools/generate-club-index.js: no editar a mano (los campos, en la cabecera del generador).
 
 window.CLUB_INDEX = {
 ${filas.join('\n')}

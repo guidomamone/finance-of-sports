@@ -1,27 +1,4 @@
-// ============================================================================
-// data/rankings/br-serieB.js — GENERADO por tools/generate-rankings.js.
-// NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
-// `data/<club>-data.js` que lo origina y volver a correr el generador.
-//
-// Brasileirão Série B (BR) — 13 ejercicio(s) con ranking:
-//   2025: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 17 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2019: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2018: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2017: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2016: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2012: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2011: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//
-// Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
-// documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
-// Formato simplificado. Orden DESCENDENTE: el 1 del ranking primero.
-// ============================================================================
+// GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["br-serieB"] = {
   2025: {

@@ -1,32 +1,4 @@
-// ============================================================================
-// data/rankings/ar-primera.js — GENERADO por tools/generate-rankings.js.
-// NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
-// `data/<club>-data.js` que lo origina y volver a correr el generador.
-//
-// Primera División (AR) — 18 ejercicio(s) con ranking:
-//   2026: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2025: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 10 club(es) cargado(s), de 28.
-//   2023: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2020: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2019: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2018: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2017: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2016: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2015: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2014: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2013: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2012: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2011: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2010: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2009: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//
-// Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
-// documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
-// Formato simplificado. Orden DESCENDENTE: el 1 del ranking primero.
-// ============================================================================
+// GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ar-primera"] = {
   2026: {

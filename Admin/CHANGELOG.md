@@ -43,6 +43,8 @@ que dice `ESTADO.md` era verdad ese día.
   El color se anota ahí al ponerlo, y el `.md` se borra si el alta se revierte y entra en el commit de cada año. Medido: ensayo del alta
   igual (OH Leuven, FC Seoul); el alta real en dos copias da el mismo código en los 6 archivos de `data/`; color y reversión probados
   sobre OH Leuven. `tools/evidencia-club.mjs` suma `agregarCabecera` y `reemplazarTexto`, y deja una línea en blanco antes de cada título.
+- Generadores: `data/rankings/*.js`, `data/club-index.js`, `fuentes.html` y las páginas `fuentes/<club>.html` llevan una sola línea de
+  comentario ("GENERADO por …: no editar a mano"); el formato pasó a la cabecera de cada generador. Contenido idéntico sin comentarios. ASSET_V 816.
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 

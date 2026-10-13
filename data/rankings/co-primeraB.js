@@ -1,21 +1,4 @@
-// ============================================================================
-// data/rankings/co-primeraB.js — GENERADO por tools/generate-rankings.js.
-// NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
-// `data/<club>-data.js` que lo origina y volver a correr el generador.
-//
-// Primera B (CO) — 7 ejercicio(s) con ranking:
-//   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2018: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//
-// Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
-// documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
-// Formato simplificado. Orden DESCENDENTE: el 1 del ranking primero.
-// ============================================================================
+// GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraB"] = {
   2023: {

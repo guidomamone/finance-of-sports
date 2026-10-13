@@ -1,17 +1,4 @@
-// ============================================================================
-// data/club-index.js — GENERADO AUTOMÁTICAMENTE por tools/generate-club-index.js.
-// NO EDITAR A MANO: se sobrescribe.
-//
-// El índice liviano de todos los clubes, para lo que necesita mostrarse ANTES de
-// cargar ninguno (el selector de club, y cualquier vista que liste clubes sin
-// entrar a sus datos). Todo lo de acá sale de `clubs.js` y de los
-// `fiscalYearMeta`/`sources` de cada club, así que no puede desincronizarse.
-//
-//   n: nombre corto · c: país ISO-2 · q: calidad del dato (ver clubQuality() en
-//   data/sources-view.js) · y: ejercicios cargados · last: el más reciente ·
-//   yrs: los ejercicios, del más reciente al más viejo, como [año, reportType] ·
-//   ci: solo si hay, los ejercicios que no cierran en la fecha del club, { año: 'MM-DD' }
-// ============================================================================
+// GENERADO por tools/generate-club-index.js: no editar a mano (los campos, en la cabecera del generador).
 
 window.CLUB_INDEX = {
   "acmilan-it": {"n":"AC Milan","c":"IT","q":"full","y":14,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2013,"official_balance_sheet"],[2012,"official_balance_sheet"],[2011,"official_balance_sheet"],[2010,"official_balance_sheet"],[2009,"official_balance_sheet"],[2008,"official_balance_sheet"]],"ci":{"2008":"12-31","2009":"12-31","2010":"12-31","2011":"12-31","2012":"12-31","2013":"12-31"}},

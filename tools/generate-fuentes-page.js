@@ -165,13 +165,7 @@ const CSS = `
 // `fuentes/data/lang/langs.js`, que no existe, y se quedaría sin traducir.
 function pagina({ title, desc, canonical, cuerpo, assetV, hoy, prefijo }) {
   return `<!DOCTYPE html>
-<!--
-  GENERADO AUTOMÁTICAMENTE por tools/generate-fuentes-page.js. NO EDITAR A MANO.
-  Todo lo que se ve acá sale de sources{} y de los fiscalYearMeta de cada
-  data/<club>-data.js, o sea de los mismos campos con los que el sitio renderiza
-  los números. Para corregir algo de esta página, corregí el archivo del club y
-  volvé a correr el generador.
--->
+<!-- GENERADO por tools/generate-fuentes-page.js: no editar a mano (sale de sources{} y fiscalYearMeta de cada club). -->
 <html lang="es">
 <head>
 <meta charset="utf-8">

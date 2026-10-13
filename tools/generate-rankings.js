@@ -53,6 +53,11 @@
 //                                             algún archivo quedó desactualizado
 //   node tools/generate-rankings.js --print   imprime el ranking en la terminal,
 //                                             para verificarlo a ojo contra la fuente
+//
+// EL FORMATO DE data/rankings/<liga>.js: `window.RANKINGS[liga][año] = { leagueSize, clubs:[{ id, revenue, reportType, sourceId, mix,
+// incluidos }], sinDato }`. Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada documento (`fxSource`/`fxRef` del
+// archivo de cada club) y agrupados en Formato simplificado. Orden DESCENDENTE: el 1 del ranking primero. `leagueSize` null = nadie
+// verificó cuántos equipos tuvo la temporada. El archivo publicado lleva UNA línea de comentario (data/ se publica: to-do 209).
 // ============================================================================
 
 const fs = require('fs');
@@ -220,25 +225,9 @@ function rankingDe(api, leagueId, year) {
 // EL ARCHIVO DE UNA LIGA.
 // ---------------------------------------------------------------------------
 function archivoDe(api, leagueId, porAnio) {
-  const lg = api.LEAGUES[leagueId] || {};
   const anios = Object.keys(porAnio).map(Number).sort((a, b) => b - a);
   const L = [];
-  L.push('// ============================================================================');
-  L.push(`// data/rankings/${leagueId}.js — GENERADO por tools/generate-rankings.js.`);
-  L.push('// NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el');
-  L.push('// `data/<club>-data.js` que lo origina y volver a correr el generador.');
-  L.push('//');
-  L.push(`// ${lg.name || leagueId} (${lg.country || '??'}) — ${anios.length} ejercicio(s) con ranking:`);
-  anios.forEach(y => {
-    const r = porAnio[y];
-    const m = r.leagueSize == null ? 'sin verificar cuántos equipos tuvo' : `de ${r.leagueSize}`;
-    L.push(`//   ${y}: ${r.clubs.length} club(es) cargado(s), ${m}.`);
-  });
-  L.push('//');
-  L.push('// Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada');
-  L.push('// documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en');
-  L.push('// Formato simplificado. Orden DESCENDENTE: el 1 del ranking primero.');
-  L.push('// ============================================================================');
+  L.push('// GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).');
   L.push('window.RANKINGS = window.RANKINGS || {};');
   L.push(`window.RANKINGS[${JSON.stringify(leagueId)}] = {`);
   anios.forEach(y => {

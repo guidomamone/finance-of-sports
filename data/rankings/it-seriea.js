@@ -1,41 +1,4 @@
-// ============================================================================
-// data/rankings/it-seriea.js — GENERADO por tools/generate-rankings.js.
-// NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
-// `data/<club>-data.js` que lo origina y volver a correr el generador.
-//
-// Serie A (IT) — 27 ejercicio(s) con ranking:
-//   2026: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2025: 16 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2020: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2019: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2018: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2017: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2016: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2015: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2014: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2013: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2012: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2011: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2010: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2009: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2008: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2007: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2006: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2005: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2004: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2003: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2001: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2000: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   1999: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//
-// Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
-// documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
-// Formato simplificado. Orden DESCENDENTE: el 1 del ranking primero.
-// ============================================================================
+// GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["it-seriea"] = {
   2026: {
