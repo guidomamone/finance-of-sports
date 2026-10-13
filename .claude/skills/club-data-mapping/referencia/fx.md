@@ -5,21 +5,21 @@ cambio usar, cómo se escribe su procedencia (`fxSource`/`fxRef`) y en qué sent
 
 ## Conversión a USD: cualquier moneda nativa, no solo ARS (ver `data/currency-map.js`)
 
-- **Todos los clubes tienen toggle [moneda nativa / USD] en vivo**, con CUALQUIER moneda (ARS, BRL, CLP, COP, PEN, EUR, etc.). El
-  comentario de cabecera de `data/currency-map.js` tiene el modelo completo y es lectura obligatoria antes de onboardear un club
+- **Todos los clubes tienen toggle [moneda nativa / USD] en vivo**, con CUALQUIER moneda (ARS, BRL, CLP, COP, PEN, EUR, etc.). 
+  `Admin/ARQUITECTURA.md`, "Monedas y tipo de cambio", tiene el modelo completo y es lectura obligatoria antes de onboardear un club
   fuera de Argentina. Se guardan los montos en la moneda NATIVA del documento (`amountNative`, en millones de esa moneda, tal cual
   el balance/presupuesto), con `fiscalYearMeta[year].currency`/`fx` diciendo en qué moneda está y con qué tipo de cambio convertir.
   La conversión pasa al renderizar (`yearMetaFor(clubId, year)` + `toDisplayValue`, en `js/finanzas-calc.js`). Nunca guardes un
   valor ya convertido, para ningún club.
 - **El toggle SIEMPRE es [moneda nativa del club] <-> USD, nunca entre 2 monedas no-USD** (ej. nunca ARS<->BRL en vivo). USD es el
-  pivote universal, igual que "Comparar Gestiones" (siempre en USD). No agregues un 3er destino a `toDisplayValue()` sin releer el
-  comentario de cabecera de `data/currency-map.js`.
+  pivote universal, igual que "Comparar Gestiones" (siempre en USD). No agregues un 3er destino a `toDisplayValue()` sin releer
+  `Admin/ARQUITECTURA.md`, "Monedas y tipo de cambio".
 - **Moneda nueva** (sin entrada en `CURRENCY_META`, `data/currency-map.js`): agregale una entrada (`scale:1` si sus montos leen
   bien en millones, como BRL, PEN, EUR; `scale:1000` si el valor nominal es tan grande que conviene "miles de millones", como ARS,
   CLP, COP). Sin entrada, el fallback `DEFAULT_CURRENCY_META` no rompe, pero puede leer raro.
 - **Excepción documentada**: si un ejercicio NO tiene tipo de cambio propio recuperable (ni declarado por el documento ni con una
   fuente externa confiable, ej. Racing 2009-2011, balances sin Anexo de moneda extranjera) y quedó cargado en USD ya convertido,
-  está bien dejarlo (`currency:'USD'` con el fx usado, documentado en el comentario del año) en vez de forzar una re-extracción. El
+  está bien dejarlo (`currency:'USD'` con el fx usado, documentado en la evidencia del club, en el título de ese año) en vez de forzar una re-extracción. El
   toggle funciona, reconstruyendo un ARS aproximado.
 
 ### Qué tipo de cambio usar, en orden de preferencia
@@ -110,5 +110,5 @@ se chequea, no rompe nada).
 Para fechas viejas (2009-2011 en este proyecto) las fuentes web no siempre tienen la cotización de un día puntual. Se usa (a) la
 cotización real más cercana en fecha si se encuentra (ej. una nota de diario de esa semana), o (b) interpolación LINEAL entre los
 valores de apertura y cierre de año calendario publicados por sitios de cotización histórica. Sea cual sea, DOCUMENTALO como
-aproximación (`fxSource:'market_approx'`) en el comentario del código Y en el `note` de `sources{}` en `data/clubs.js`: la próxima
+aproximación (`fxSource:'market_approx'`) en la evidencia del club: el título de ese año Y la fuente en "## Fuentes" (`Admin/carga-clubes/<clubId>.md`): la próxima
 sesión tiene que distinguir "esto es exacto" de "esto es una estimación razonable".

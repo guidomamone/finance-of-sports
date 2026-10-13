@@ -102,7 +102,7 @@ existe una versión más desglosada del informe (uso interno del club).
 `netInterest`, no revenue.** randers-dk (un centro de empleo, un parque de negocios, un colegio deportivo) y vejle-dk (VB Plus ApS,
 grupos de networking) la presentan ENTRE el resultado operativo y "Finansielle indtægter"/"Finansielle omkostninger", como una
 línea más del bloque financiero. No es interés en sentido literal, pero es resultado no-operativo de inversiones, y sigue el
-criterio de la sección 2 de `SKILL.md`. Documentá en el comentario que ese neto incluye este concepto.
+criterio de la sección 2 de `SKILL.md`. Documentá en la evidencia del club que ese neto incluye este concepto.
 
 ## Ejemplo largo: sub-ítems enterrados en `lump_football_operations` (Racing)
 

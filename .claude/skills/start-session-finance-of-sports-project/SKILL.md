@@ -80,8 +80,8 @@ Boca. Sin `auditAll()`, un error en un club que nadie está mirando es invisible
 
 **Correlo siempre antes de pushear algo que toque datos.** El número de clubes y de checks sube con
 cada sesión, así que no se compara contra un total: lo que importa es que los "no cierran" y los
-"warnings" no crezcan sin explicación. Un "no cierra" nuevo que no tenga ya un comentario en su
-`data/<club>-data.js` es el que amerita parar.
+"warnings" no crezcan sin explicación. Un "no cierra" nuevo que no tenga ya una nota en su
+evidencia (`Admin/carga-clubes/<clubId>.md`, el título de ese ejercicio) es el que amerita parar.
 
 **`node tools/audit.js` es el otro lado de lo mismo.** `auditAll()` verifica que cada
 ejercicio CIERRE contra su propio documento; `audit.js` busca lo que cierra igual: ejercicios sin

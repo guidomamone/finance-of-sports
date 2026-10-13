@@ -91,5 +91,5 @@ Fútbol Profesional/Amateur/Complejo Polideportivo/Enseñanza/Culturales/Otros D
 columna. Racing, Boca y River solo tienen una cifra por rubro, así que su `wages_squad` incluye "todo el personal reportado en ese
 rubro". Cuando el documento SÍ tiene el 2do eje, partí la línea en 2: la columna "Fútbol Profesional" (→ `wages_squad`, comparable
 entre clubes) y el resto de las columnas sumadas (→ `youth_other_sports_expense`, que cubre amateur/juvenil/otros deportes y, si el
-club no separa más fino, personal de escuela/cultura no deportiva; documentarlo en el comentario). Verificá que las 2 líneas nuevas
+club no separa más fino, personal de escuela/cultura no deportiva; documentarlo en la evidencia del club). Verificá que las 2 líneas nuevas
 sumen EXACTO el total de fila impreso (sección 6 de `SKILL.md`).

@@ -169,7 +169,8 @@ mano. `--relevant` filtra a las tablas con palabra clave (una ayuda de dónde mi
    arrastraba un rótulo de plantilla del año anterior, con el número real de signo contrario).
 4. Si el documento agrupa categorías distinto según el año (ej. a veces incluye Amortizaciones en el total de Gastos impreso, a
    veces no, en varios balances viejos de Racing), NO fuerces un check automático de `verifyTieOuts()` contra un número que
-   significa algo distinto de un año a otro. Documentá la verificación a mano en un comentario explicando la inconsistencia, antes
+   significa algo distinto de un año a otro. Documentá la verificación a mano en la evidencia del club (`Admin/carga-clubes/<clubId>.md`, el título de ese ejercicio)
+   explicando la inconsistencia, antes
    que agregar un check frágil que parezca "no cerrar" por una diferencia de definición y no de datos.
 5. **Usá SIEMPRE la columna "año corriente" del balance DE ESE MISMO ejercicio, nunca la comparativa de un balance posterior.**
    Un balance en "moneda homogénea"/RT6 REEXPRESA el ejercicio anterior al poder adquisitivo de la fecha de cierre del balance
