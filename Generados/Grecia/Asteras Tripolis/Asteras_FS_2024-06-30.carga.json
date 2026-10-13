@@ -1,14 +1,269 @@
 {
  "pdf": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2024-06-30.pdf",
- "generado": "2026-10-10T14:10:08.093Z",
+ "generado": "2026-10-13T13:07:42.775Z",
  "frena": [
   {
    "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (asterastripolis-gr)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "carpetas-clubes.mjs dice asterastripolis-gr y onboard.mjs --quien dice asteras-tripolis"
+  },
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Αποζημίωση ειδικού σκοπού αθλητικών σωμα\" -> other_income 0.6; \"Έσοδα από συνεισφορά αλληλεγγύης και τρο\" -> player_sales 0.6"
   }
  ],
- "avisos": [],
- "ejercicio": null,
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-09: Revisión del alta (Claude, 2026-10-09): la sociedad no pertenece a grupo consolidado (notas 5.9 y 5.10); las 6 menciones de 'consolidado' son esas notas)"
+ ],
+ "ejercicio": {
+  "clubId": "asterastripolis-gr",
+  "year": 2024,
+  "cierre": "2024-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Έσοδα αγώνων",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.188791,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έσοδα από τηλεοπτικές μεταδόσεις αγώνων",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.925,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έσοδα από παραχώρηση ποδοσφαιριστών",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.217707,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Επιχορηγήσεις",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.416949,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αποζημίωση ειδικού σκοπού αθλητικών σωματείων",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.50282,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Διάφορα έσοδα πωλήσεων",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.00352,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Έσοδα από παροχή υπηρεσιών σε τρίτους",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.339776,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Έσοδα από συνεισφορά αλληλεγγύης και τροφεία",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.033608,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Άλλα λειτουργικά έσοδα",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.0001,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έσοδα συμμετοχών και επενδύσεων",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Κέρδος από αγορά οντότητας ή τμήματος σε τιμή ευκαιρίας",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπά Έκτακτα και ανόργανα έσοδα",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.001326,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έσοδα από αχρησιμοποίητες προβλέψεις προηγούμενων χρήσεων",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.054637,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -4.804987,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έξοδα διοίκησης",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.725763,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έξοδα διάθεσης",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.035026,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Φορολογικά πρόστιμα και προσαυξήσεις",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.001165,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Λοιπά έκτακτα έξοδα",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.0002,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)",
+    "normalizedCategory": "player_impairment",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2024-06-30",
+   "sourceId": "asterastripolis-gr-asteras-fs-2024-06-30",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.01944,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+     "value": 0.000037
+    },
+    {
+     "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+     "value": -0.019477
+    },
+    {
+     "label": "Φόροι εισοδήματος",
+     "value": 0
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+     "lado": "expense",
+     "importe": 4.804987,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 4.684235,
+   "officialTotalExpenses": 6.567142,
+   "officialPAT": -1.902346
+  },
+  "source": {
+   "id": "asterastripolis-gr-asteras-fs-2024-06-30",
+   "clubId": "asterastripolis-gr",
+   "title": "A.G.S. Asteras Tripolis P.A.E. — Asteras_FS_2024-06-30 (ejercicio 2024)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/Asteras Tripolis/Asteras_FS_2024-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2024-06-30.md",
  "reemplaza": false,
  "periodo": {
@@ -22,5 +277,434 @@
   "confianza": "alta",
   "anual": "temporada"
  },
- "cortadoEn": "club"
+ "clubId": "asterastripolis-gr",
+ "year": 2024,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 22,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Έσοδα αγώνων",
+   "page": 31,
+   "native": 0.188791,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Κύκλος εργασιών (καθαρός)\")",
+   "signoFijo": 0.188791,
+   "cat": "matchday_competition",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.188791
+  },
+  {
+   "label": "Έσοδα από τηλεοπτικές μεταδόσεις αγώνων",
+   "page": 31,
+   "native": 0.925,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Κύκλος εργασιών (καθαρός)\")",
+   "signoFijo": 0.925,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.925
+  },
+  {
+   "label": "Έσοδα από παραχώρηση ποδοσφαιριστών",
+   "page": 31,
+   "native": 0.217707,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Κύκλος εργασιών (καθαρός)\")",
+   "signoFijo": 0.217707,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Asteras 2019: L186 dice ventas de 2 jugadores (294.174,30 y 196.880) mas un prestamo (99.230,10); el rubro es 'παραχώρηση ποδοσφαιριστών' e integra el Κύκλος εργασιών como venta",
+   "destino": "revenue",
+   "amountNative": 0.217707
+  },
+  {
+   "label": "Επιχορηγήσεις",
+   "page": 31,
+   "native": 0.416949,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
+   "signoFijo": 0.416949,
+   "cat": "other_income",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.416949
+  },
+  {
+   "label": "Αποζημίωση ειδικού σκοπού αθλητικών σωματείων",
+   "page": 31,
+   "native": 1.50282,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
+   "signoFijo": 1.50282,
+   "cat": "other_income",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 1.50282
+  },
+  {
+   "label": "Διάφορα έσοδα πωλήσεων",
+   "page": 31,
+   "native": 0.00352,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
+   "signoFijo": 0.00352,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Asteras 2019: Διάφορα έσοδα πωλήσεων 789,52 (L1593)",
+   "destino": "revenue",
+   "amountNative": 0.00352
+  },
+  {
+   "label": "Έσοδα από παροχή υπηρεσιών σε τρίτους",
+   "page": 31,
+   "native": 1.339776,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
+   "signoFijo": 1.339776,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Asteras 2019: servicios a terceros 1.008.292,93 (L1594), el documento no dice a quien; other_income es el criterio conservador (opcional: anotar en dudas-por-club)",
+   "destino": "revenue",
+   "amountNative": 1.339776
+  },
+  {
+   "label": "Έσοδα από συνεισφορά αλληλεγγύης και τροφεία",
+   "page": 31,
+   "native": 0.033608,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
+   "signoFijo": 0.033608,
+   "cat": "player_sales",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 0.033608
+  },
+  {
+   "label": "Άλλα λειτουργικά έσοδα",
+   "page": 31,
+   "native": 0.0001,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
+   "signoFijo": 0.0001,
+   "cat": "other_income",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.0001
+  },
+  {
+   "label": "Έσοδα συμμετοχών και επενδύσεων",
+   "page": 18,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Κέρδος από αγορά οντότητας ή τμήματος σε τιμή ευκαιρίας",
+   "page": 18,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Λοιπά Έκτακτα και ανόργανα έσοδα",
+   "page": 31,
+   "native": 0.001326,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Λοιπά έσοδα και κέρδη\")",
+   "signoFijo": 0.001326,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.001326
+  },
+  {
+   "label": "Έσοδα από αχρησιμοποίητες προβλέψεις προηγούμενων χρήσεων",
+   "page": 31,
+   "native": 0.054637,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Λοιπά έσοδα και κέρδη\")",
+   "signoFijo": 0.054637,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.054637
+  },
+  {
+   "label": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+   "page": 18,
+   "native": 4.804987,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.804987,
+   "cat": "lump_football_operations_expense",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.804987
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "page": 18,
+   "native": 1.725763,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.725763,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.725763
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "page": 18,
+   "native": 0.035026,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.035026,
+   "cat": "admin_general_expense",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.035026
+  },
+  {
+   "label": "Φορολογικά πρόστιμα και προσαυξήσεις",
+   "page": 32,
+   "native": 0.001165,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")",
+   "signoFijo": 0.001165,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Asteras 2019: multas fiscales 981,33 -> other_expenses (precedente multas)",
+   "destino": "expense",
+   "amountNative": -0.001165
+  },
+  {
+   "label": "Λοιπά έκτακτα έξοδα",
+   "page": 32,
+   "native": 0.0002,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")",
+   "signoFijo": 0.0002,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Asteras 2019: Λοιπά έκτακτα έξοδα 130,86 -> exceptional_items",
+   "destino": "expense",
+   "amountNative": -0.0002
+  },
+  {
+   "label": "Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)",
+   "page": 18,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "player_impairment",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Asteras 2019: Απομειώσεις (L898) en 0,00; sin efecto en plata, mismo criterio que svalutazioni -> player_impairment",
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "page": null,
+   "native": 0.000037,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "page": null,
+   "native": -0.019477,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Φόροι εισοδήματος",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Κύκλος εργασιών (καθαρός)\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Λοιπά έσοδα και κέρδη\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 4.684234,
+  "expSum": -6.566941,
+  "officialTotalRevenue": 4.684235,
+  "officialTotalExpenses": 6.567142,
+  "officialPAT": -1.902346,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -1.902346,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 4.684235
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 6.567142
+  }
+ },
+ "liga": {
+  "valor": "gr-superleague",
+  "fuente": "roster cacheado de \"2023–24 Super League Greece\" (tools/club-league-reference/gr.json), coincidencia exacta \"Asteras Tripolis\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2024,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2024-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2024-06-30) y contenido del .md (149 de 167 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-09)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Grecia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2024-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2024-06-30 = 0.9337 (Cierre BCE al 30/6/2024 (1 EUR = 1,071 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "asterastripolis-gr-asteras-fs-2024-06-30",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gr-superleague",
+   "fuente": "roster cacheado de \"2023–24 Super League Greece\" (tools/club-league-reference/gr.json), coincidencia exacta \"Asteras Tripolis\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 3,
+  "lineasIngreso": 13,
+  "lineasGasto": 6,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

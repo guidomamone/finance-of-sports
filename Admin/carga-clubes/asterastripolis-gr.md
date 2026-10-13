@@ -1,0 +1,103 @@
+# asterastripolis-gr — evidencia de carga
+
+Lo que antes iba como comentario en el data file del club, `data/<país>/asterastripolis-gr-data.js` (la regla: `Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA
+COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y meta. Las notas de cada fila van en una tabla con su número de
+fila (hay nombres de rubro repetidos en un mismo año).
+
+## Cabecera
+
+```text
+Asteras Tripolis: alta por tools/alta-club.mjs (2026-10-13) desde Clubes/Grecia/Asteras Tripolis/Asteras_FS_2019-06-30.pdf. brandColor:null a propósito
+(procedencia en Admin/sourcing/Grecia/Asteras Tripolis.md; tools/cargar-lote.mjs).
+```
+
+```text
+data/gr/asterastripolis-gr-data.js — A.G.S. Asteras Tripolis P.A.E. (Grecia).
+ALTA POR SCRIPT (tools/alta-club.mjs, 2026-10-13), SIN EJERCICIOS CARGADOS TODAVÍA: las estructuras del data file
+nacen vacías a propósito. Los rubros, los totales oficiales y el resto del fiscalYearMeta los agrega la etapa de carga.
+
+Documento que originó el alta: Clubes/Grecia/Asteras Tripolis/Asteras_FS_2019-06-30.pdf
+
+De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
+  id                 ok        "asterastripolis-gr" — slug de "Asteras Tripolis" + '-gr' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
+  name               ok        "A.G.S. Asteras Tripolis P.A.E." — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social del documento (ΑΓΣ ΑΣΤΕ
+  displayName        ok        "Asteras Tripolis" — nombre de la carpeta del club en Clubes/
+  country            ok        "GR" — carpeta de país "Grecia" (tabla PAISES)
+  reportingCurrency  ok        "EUR" — moneda de curso legal de Grecia
+  fiscalYearStart    ok        "07-01" — cierre del ejercicio: nombre del archivo (2019-06-30) y contenido del .md (113 de 114 fechas de fin de mes)
+  sport              ok        "futbol" — el .md nombra el fútbol 43 veces y ningún otro deporte más que eso
+  brandColor         pendiente (ausente) — la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)
+  anio               ok        2019 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
+  cierre             ok        "2019-06-30" — año del ejercicio + mes de cierre (nombre del archivo (2019-06-30) y contenido del .md (113 de 114 fechas de fin de mes))
+  reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
+  perimetro          ok        "individual" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): la sociedad no pertenece a grupo con
+  currency           ok        "EUR" — moneda de curso legal de Grecia (tabla PAISES de alta-club.mjs)
+  fxRef              ok        "EUR@2019-06-30" — el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2019-06-30 = 0.878735 (Tipo de referencia del Banco Central Europeo, última rueda hábil 
+  sourceId           ok        "asterastripolis-gr-asteras-fs-2019-06-30" — clubId + nombre del archivo en slug
+  liga               ok        "gr-superleague" — roster cacheado de "2018–19 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Asteras Tripolis"
+
+FISCAL YEAR META PROPUESTO para 2019 (NO registrado: un ejercicio con meta y
+sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
+  2019: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2019-06-30","sourceId":"asterastripolis-gr-asteras-fs-2019-06-30"}
+```
+
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-13) desde Clubes/Grecia/Asteras Tripolis/Asteras_FS_2019-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Asteras Tripolis/Asteras_FS_2019-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Έσοδα αγώνων | pág. 30, Jev 0.95 |
+| 2 | Έσοδα από τηλεοπτικές μεταδόσεις αγώνων | pág. 30, Jev 1 |
+| 3 | Έσοδα από παραχώρηση ποδοσφαιριστών | pág. 30, precedente |
+| 4 | Έσοδα από πώληση λοιπών αποθεμάτων | pág. 30, precedente |
+| 5 | Επιχορηγήσεις | pág. 30, Claude 0.85 |
+| 6 | Διάφορα έσοδα πωλήσεων | pág. 30, precedente |
+| 7 | Έσοδα από παροχή υπηρεσιών σε τρίτους | pág. 30, precedente |
+| 8 | Άλλα λειτουργικά έσοδα | pág. 30, Jev 0.97 |
+| 9 | Λοιπά έσοδα και κέρδη | pág. 18, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Αμοιβές και έξοδα προσωπικού | pág. 31, precedente |
+| 2 | Αμοιβές και έξοδα τρίτων | pág. 31, precedente |
+| 3 | Παροχές τρίτων | pág. 31, precedente |
+| 4 | Φόροι και τέλη | pág. 31, Jev 0.98 |
+| 5 | Διάφορα έξοδα | pág. 31, Jev 0.98 |
+| 6 | Αποσβέσεις παγίων στο λειτουργικό κόστος | pág. 31, Jev 0.99 |
+| 7 | Πρόβλεψη αποζημίωσης προσωπικού | pág. 31, precedente |
+| 8 | Αξία χορηγούμενων εισιτηρίων δωρεάν | pág. 31, precedente |
+| 9 | Πρόβλεψη για επισφαλείς απαιτήσεις | pág. 31, precedente |
+| 10 | Φορολογικά πρόστιμα και προσαυξήσεις | pág. 31, precedente |
+| 11 | Αποσβέσεις αποχωρησάντων ποδοσφαιριστών | pág. 31, precedente |
+| 12 | Λοιπά έκτακτα έξοδα | pág. 31, precedente |
+| 13 | Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό) | pág. 18, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+alta-club.mjs (2026-10-13): gr-superleague, verificado contra roster cacheado de "2018–19 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Asteras Tripolis".
+```
+
+## Fuentes
+
+### asterastripolis-gr-asteras-fs-2019-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/Asteras Tripolis/Asteras_FS_2019-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

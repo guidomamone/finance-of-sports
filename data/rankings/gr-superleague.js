@@ -28,6 +28,9 @@ window.RANKINGS["gr-superleague"] = {
   2019: {
     leagueSize: null,
     clubs: [
+      { id:"asterastripolis-gr", revenue:4.027, reportType:"official_balance_sheet",
+        sourceId:"asterastripolis-gr-asteras-fs-2019-06-30",
+        mix:[["Estadio",0.261],["Televisión",1.024],["Venta de Jugadores",0.672],["Otros ingresos",2.07]] },
       { id:"aellarissa-gr", revenue:3.513, reportType:"official_balance_sheet",
         sourceId:"aellarissa-gr-ael-notes-elp-2019-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.639],["Otros ingresos",0.874]] },
