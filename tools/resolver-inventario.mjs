@@ -415,22 +415,11 @@ function patchToMajority(cands, best) {
 }
 
 // PASO 2 (gratis): ARITMÉTICA DEL DOCUMENTO. Entre versiones distintas de una página gana la que deja más celdas respaldadas por
-// sumas (sumScore(), abajo). tieScore() es el puntaje anterior (cierres exactos menos fallos de prepare-onboarding.mjs): ya no lo
-// llama nadie, queda para el to-do 218. Comprobado a mano en
+// sumas (sumScore(), abajo). Comprobado a mano en
 // Argentinos Juniors: 425.204.023 + 233.796.753 - 275.518.976 = 383.481.800 decidía cuál de las lecturas era la correcta.
-function tieScore(body) {
-  const tmp = mkdtempSync(join(tmpdir(), 'tie-'));
-  try {
-    const f = join(tmp, 'cand.md');
-    writeFileSync(f, `--- pág. 1 ---\n${body}`);
-    const r = spawnSync('node', [resolve(root, 'tools/prepare-onboarding.mjs'), 'zz-tmp', '2000', f, '--json'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
-    const t = JSON.parse(r.stdout).tieOuts || [];
-    return t.filter((x) => x.closes === true).length - t.filter((x) => x.closes === false).length;
-  } catch { return 0; } finally { rmSync(tmp, { recursive: true, force: true }); }
-}
 // Versión 313: el puntaje es la cantidad de CELDAS que quedan respaldadas por sumas genéricas de tools/chequeos-gratis.mjs — verticales
 // (una fila = suma de las contiguas) y horizontales (en una fila, una celda = combinación con signo de las demás: tablas de movimiento,
-// saldo inicial + altas - bajas = saldo final). Antes se usaba tieScore() (prepare-onboarding.mjs), que solo ve filas rotuladas "total":
+// saldo inicial + altas - bajas = saldo final). Antes se usaba un puntaje de prepare-onboarding.mjs (tieScore(), borrado en el to-do 218), que solo veía filas rotuladas "total":
 // en las notas rusas de Rubin Kazan 2025 daba 0 en las 11 páginas, todas terminaron "con reserva", y en 2 (págs. 18 y 32) la lectura
 // elegida era la que NO cerraba ninguna suma. Con este puntaje se deciden 5 de esas 11; el resto no tiene aritmética y sigue con reserva.
 function sumScore(body) {

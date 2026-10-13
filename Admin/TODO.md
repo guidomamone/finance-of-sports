@@ -123,7 +123,7 @@ ni en el comentario de ningún archivo de código.
     `inventario-transcripciones.mjs`). Las etapas transcribir / comparar con Gemini / onboardear (`--transcribe-only`, `--check-only`, la
     etapa `onboard`) ya no las usa nadie. `prepare-onboarding.mjs` todavía tiene dos usuarios además de esas etapas: `briefingFor()` de
     `proponer-carga.mjs` (lo usa `cargar.mjs` solo SIN `--desde-verificacion`, que el lote y `cargar-lote` siempre pasan; y `--backtest` /
-    `--pdf`) y `tieScore()` de `resolver-inventario.mjs`, que ya nadie llama (código muerto). Orden: (a) borrar `tieScore()`; (b) decidir
+    `--pdf`) (`tieScore()` de `resolver-inventario.mjs`, código muerto, ya se borró: paso a). Falta: (b) decidir
     con Guido si el camino de `cargar.mjs` sin `--desde-verificacion` y el backtest de `proponer-carga.mjs` siguen haciendo falta, y si no,
     sacarlos; (c) separar `--quien` y `--all --dry-run` (en `onboard.mjs` o en una tool chica nueva) y borrar las etapas viejas; (d) archivar
     `prepare-onboarding.mjs` en `tools/archivo/`. Medir antes y después: `node tools/estado.mjs --actualizar` y `diff` de
