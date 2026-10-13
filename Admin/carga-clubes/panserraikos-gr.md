@@ -41,6 +41,44 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2023: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2023-06-30","sourceId":"panserraikos-gr-income-stmt-2023-06-30"}
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-13) desde Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2025-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Panserraikos/Panserraikos_income_stmt_2025-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κύκλος εργασιών | pág. 1, Jev 1 |
+| 2 | (+) Λοιπά συνήθη έσοδα | pág. 1, Jev 0.99 |
+| 3 | Κέρδη από διάθεση μη κυκλοφορούντων | pág. 1, Jev 0.91 |
+| 4 | Λοιπά έσοδα και κέρδη | pág. 1, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | (-) Κόστος πωλήσεων | pág. 1, precedente |
+| 2 | Έξοδα διοίκησης | pág. 1, Jev 1 |
+| 3 | Έξοδα διάθεσης | pág. 1, Jev 1 |
+| 4 | Λοιπά έξοδα και ζημιές | pág. 1, Jev 0.93 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-13): gr-superleague, verificado contra roster cacheado de "2024–25 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Panserraikos".
+```
+
 ## 2023
 
 ### Ingresos
@@ -90,4 +128,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### panserraikos-gr-income-stmt-2025-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2025-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

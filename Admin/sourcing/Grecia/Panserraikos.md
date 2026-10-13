@@ -41,3 +41,5 @@ del club actual — a confirmar con `club-data-mapping` antes de mezclarlos si s
 Color de marca: #FF0000 — rojo (en.wikipedia: apodo Kokkinoi, camiseta body1 FF0000; colores rojo y blanco, gana el no blanco); coincide con el escudo rojo, verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2023 desde `Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.pdf` (sourceId `panserraikos-gr-income-stmt-2023-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2025 desde `Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2025-06-30.pdf` (sourceId `panserraikos-gr-income-stmt-2025-06-30`).
