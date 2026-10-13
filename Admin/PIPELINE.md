@@ -425,6 +425,11 @@ Mitigaciones:
 - Escribir: `cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año; después `caja-deuda.mjs --club <id> [--ejecutar] --escribir`.
   Las marcas "Posiblemente dentro de otro rubro" las pone `--escribir` solo (no hay un paso más). Para un club cargado a mano o corregido
   fuera de `cargar.mjs`: `node tools/dentro-de-otro.mjs --club <id> [--escribir]`.
+- Dónde queda la evidencia: `data/<club>-data.js` no lleva comentarios (se publica). `cargar.mjs --escribir` deja en
+  `Admin/carga-clubes/<clubId>.md`, en la sección del año, la cabecera "cargado por… tie-out", la tabla de filas con la página y el
+  escalón de cada categoría, los ajustes manuales y la nota de meta, y de dónde salió la liga. Lo edita solo a través de
+  `tools/evidencia-club.mjs`; con `--reemplazar` saca SUS líneas de ese año (lo escrito a mano queda) y las vuelve a escribir. Si la
+  auditoría da P0/P1, el `.md` se revierte junto con `data/`.
 
 Riesgos:
 - i) el documento declara varios tipos de cambio;

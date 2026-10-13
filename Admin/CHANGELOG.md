@@ -28,6 +28,11 @@ que dice `ESTADO.md` era verdad ese día.
 - Lote 4: Inglaterra, Alemania, Bélgica y Países Bajos (47 clubes, 5.284 comentarios). ASSET_V 814.
 - Lote 5: Rusia, Colombia, Dinamarca, Japón, Croacia y Grecia (59 clubes, 6.289 comentarios). ASSET_V 815. Los 214 `data/<club>-data.js`
   quedan sin comentarios.
+- `tools/evidencia-club.mjs` (nuevo): el único que edita `Admin/carga-clubes/<clubId>.md` (agregar texto, quitar las líneas propias de un
+  script, poner la tabla de filas). `cargar.mjs` ya no escribe comentarios en `data/<club>-data.js`, `data/club-leagues/` ni
+  `data/currency-map.js`: la cabecera del año, la tabla de filas, los ajustes, la nota de meta y la liga van al `.md` (que entra en el
+  snapshot y se revierte con P0/P1). Medido: `lote.mjs` y las propuestas de `cargar.mjs` sobre `prueba-completa` iguales antes y después;
+  recargar Udinese 2025 en una copia deja el mismo código en `data/` que el script viejo.
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 
