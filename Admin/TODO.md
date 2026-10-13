@@ -102,10 +102,6 @@ ni en el comentario de ningún archivo de código.
 
 
 
-213. DUDAS DE ESCALA QUE OTRO DOCUMENTO DEL MISMO AÑO RESPONDE (optimización, cola). OFI 2018-2024 y Volos 2020-2025 preguntaban "¿los importes
-    están en euros?" y el informe del directorio del mismo año imprime el mismo Κύκλος εργασιών con "€". Evaluar un escalón: si un documento
-    hermano de la carpeta (mismo cierre) imprime el mismo número con símbolo o leyenda de moneda/escala, la duda se cierra sola con esa cita.
-
 214. PRIMER AÑO QUE CIERRA EXACTO (optimización, cola). El caso "primer-anio" pide revisar ingresos, gastos y resultado de todo club nuevo; en
     Grecia los 7 coincidían exacto con lo impreso. Evaluar: si los tres cierran exacto contra totales impresos (no solo el resultado) y el alta
     no tiene preguntas, el caso no se levanta (o se baja a una nota). Decisión de Guido: hoy el primer año lo revisa él a propósito.

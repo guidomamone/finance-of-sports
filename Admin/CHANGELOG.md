@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 680 — To-do 213: la duda de escala que otro documento del club responde se cierra sola (2026-10-13)
+
+- `verificar.mjs`: si la carga usó unidades y otro `.md` de la carpeta del club imprime un importe del estado (6+ cifras, mismos
+  decimales) pegado a su moneda, la duda de escala se cierra con la cita (OFI 2018: `OFI_board_report_2018` L20, "527.892,56€").
+  Simulado en Grecia sin las respuestas de escala: 15 -> 7 abiertas; las 8 cerradas coinciden con la respuesta de Guido ("unidades").
+  `prueba-completa`: idéntico. Se borra el 213.
+
 ## Versión 679 — To-do 212: el signo de cada fila del financiero por su rótulo (2026-10-13)
 
 - `verificar.mjs`: escalón 2 de la compuerta del resultado, entre los signos en bloque exactos y la tolerancia: cada fila del financiero

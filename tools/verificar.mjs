@@ -32,9 +32,9 @@
 //   node tools/verificar.mjs --lista <archivo> [--rubros]
 // ============================================================================
 
-import { readFileSync, writeFileSync, existsSync, appendFileSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, appendFileSync, statSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-import { resolve } from 'node:path';
+import { resolve, dirname, basename, join } from 'node:path';
 import { derivado } from './rutas.mjs';
 import { agregarCaso, respuestaDe, cerrarObsoletos, respuestaPorDetalle } from './cola.mjs';
 import { clubDeRuta } from './carpetas-clubes.mjs';
@@ -1153,6 +1153,32 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   //     llegó a la cola y es un peso sobre 1,8 millones (pedido de Guido: una diferencia de esa magnitud no va a la cola).
   //   - las dudas en el formato viejo (texto suelto, archivos anteriores a la Versión 327) se tratan como afecta_carga = true.
   const dudaComoObjeto = (d) => (typeof d === 'string' ? { texto: d, bloques: [...new Set(d.match(/\bb\d+\b/g) || [])], afecta_carga: true } : d);
+  // (to-do 213) CITA DE MONEDA EN OTRO DOCUMENTO DEL CLUB: un importe del estado (6 cifras o más, mismos dígitos y decimales) impreso en otro
+  // .md de la misma carpeta pegado a un símbolo o código de moneda, en una línea que no habla de miles. Prueba literal de que ese número está
+  // en UNIDADES. Caso: OFI 2018, el estado dice Κύκλος εργασιών 527.892,56 y OFI_board_report_2018 L20 "…ανήλθε στο ποσό των 527.892,56€".
+  let citaMonedaMemo;
+  const citaMoneda = () => {
+    if (citaMonedaMemo !== undefined) return citaMonedaMemo;
+    citaMonedaMemo = null;
+    const nums = [...new Set(estado.map((f) => String(f.actual ?? '').replace(/[()\s−-]/g, '')).filter((t) => (t.match(/\d/g) || []).length >= 6))];
+    if (!nums.length) return null;
+    const dir = dirname(resolve(ROOT, md)); const propio = basename(md);
+    const MON = '€|eur\\b|euros?\\b|ευρω|ευρώ|r\\$|us\\$|usd\\b|£|gbp\\b|kč|czk\\b|kr\\.?(?![\\p{L}])|dkk\\b|nok\\b|sek\\b|chf\\b|₽|руб|rub\\b|¥|円|\\$';
+    const MILES = /miles|\bmil\b|thousand|χιλ|tausend|tsd|teur|migliaia|milhares|tusind|tusen|тыс|k€|€k|'000/;
+    const esc = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    let hermanos = [];
+    try { hermanos = readdirSync(dir).filter((f) => f.endsWith('.md') && f !== propio && !/\.(t-[a-z]+|previo-[^.]*|mistral-redo|gemini-check|claude-check|antes-sumas)\.md$/.test(f)); } catch { return null; }
+    const res = nums.map((n) => new RegExp(`(?<![\\d.,])${esc(n)}(?!\\d|[.,]\\d)\\s?(?:${MON})|(?:${MON})\\s?${esc(n)}(?!\\d|[.,]\\d)`, 'iu'));
+    for (const h of hermanos.sort()) {
+      let L; try { L = readFileSync(join(dir, h), 'utf8').split('\n'); } catch { continue; }
+      for (let i = 0; i < L.length; i++) {
+        if (MILES.test(normalizar(L[i]))) continue;
+        const k = res.findIndex((re) => re.test(L[i]));
+        if (k >= 0) { citaMonedaMemo = { doc: h, linea: i + 1, numero: nums[k] }; return citaMonedaMemo; }
+      }
+    }
+    return null;
+  };
   const pendientes = []; const contestadas = []; // (to-do 211) las dudas que irían a la cola se juntan por cuadro antes de escribirlas (abajo)
   for (const [origen, lista] of [['localizar', U.dudas || []], ['extraer', F.dudas || []]]) {
     for (const d of lista.map(dudaComoObjeto)) {
@@ -1185,6 +1211,13 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         const antesDelAlta = clubId && clubId !== pdf.split('/')[2] ? respuestaPorDetalle('verificar', 'duda-tema', `${pdf.split('/')[2]}|${d.tema}|${normalizarRenglon(d.renglon)}`, mismaCarpeta) : null;
         const ya = respuestaPorDetalle('verificar', 'duda-tema', det) || (antesDelAlta && antesDelAlta.resp.decision !== 'obsoleto' ? antesDelAlta : null);
         if (ya) { notas.push(`duda de ${origen} ya contestada para el club${ya === antesDelAlta ? ' (antes de su alta)' : ''} (${d.tema}, "${d.renglon || '-'}"): ${ya.resp.decision}${ya.resp.valor ? ` ${ya.resp.valor}` : ''}, en ${ya.caso.pdf.split('/').pop()}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); contestadas.push({ origen, bloques: d.bloques || [], lineas, tema: d.tema, resp: ya.resp, que: ya.caso.que, propuesta: ya.caso.propuesta }); continue; }
+        // (to-do 213, escalón aprobado por Guido el 2026-10-13) DUDA DE ESCALA QUE OTRO DOCUMENTO DEL CLUB RESPONDE: si la carga usó UNIDADES para
+        // el estado y otro .md de la carpeta imprime uno de sus importes con su moneda (citaMoneda, arriba), la duda se cierra con la cita. Si la
+        // carga usó miles o no hay cita, sigue a la cola como siempre. Sin vigentes.push: un caso viejo abierto se cierra como obsoleto.
+        if (d.tema === 'escala' && Math.abs(mult(estado[0]?.bloque) - 1e-6) < 1e-12) {
+          const c = citaMoneda();
+          if (c) { notas.push(`duda de ${origen} de escala confirmada por otro documento del club (to-do 213): ${c.doc} L${c.linea} imprime ${c.numero} con su moneda; la carga usó unidades`); continue; }
+        }
         // ESCALÓN 2 DE LAS DUDAS (Versión 346, diseño aprobado por Guido): la aritmética la confirma. Si la escalera de lecturas cerró con un
         // número impreso, ningún año vecino da distinto, el tema es de los que las sumas pueden confirmar y la propuesta de la IA es "sí" (lo que
         // extraer ya aplicó), se acepta sola. Perímetro, cuadro de otro año, fila ilegible y "otro" nunca: un perímetro equivocado cierra igual.

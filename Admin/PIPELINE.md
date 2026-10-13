@@ -326,6 +326,8 @@ Mitigaciones:
  ESCALÓN 1  ¿Guido ya la contestó para este club? (club + tema + renglón) ── sí ──► se aplica
  ESCALÓN 2  ¿la aritmética la confirma? (la escalera de lecturas cerró, ningún año vecino da distinto, tema = cuadro por segmento /
             cuadro duplicado / columna, y la propuesta "sí" ya está aplicada) ── sí ──► se acepta sola, con nota
+ ESCALA     (to-do 213) duda de escala, la carga usó unidades y otro .md de la carpeta del club imprime uno de los importes del estado
+            (6+ cifras, mismos decimales) pegado a su moneda, en una línea que no habla de miles ── sí ──► se cierra con la cita
  ESCALÓN 2b lo mismo cuando lo único que falla es el año vecino (Versión 628, to-do 173: medido contra las respuestas de Guido,
             21 de 21 aceptadas tal cual) ── sí ──► se acepta sola, con nota
  MISMO CUADRO (to-do 211) Guido ya contestó la duda del otro origen sobre el mismo cuadro (mismo primer bloque, que no sea el
