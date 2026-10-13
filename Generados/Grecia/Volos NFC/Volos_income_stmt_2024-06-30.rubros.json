@@ -1,37 +1,40 @@
 {
- "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2024-06-30.md",
- "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2024-06-30.pdf",
- "club": "volos-nfc",
- "year": 2024,
- "generatedAt": "2026-10-10T14:46:05.148Z",
- "origen": "verificar.mjs (proceso nuevo, Versión 324)",
- "rubros": [
-  {
-   "label": "Κύκλος εργασιών",
-   "lado": "revenue",
-   "page": 1,
-   "section": "estado",
-   "values": [
-    3.377522
-   ]
-  },
-  {
-   "label": "Λοιπά συνήθη έσοδα",
-   "lado": "revenue",
-   "page": 1,
-   "section": "estado",
-   "values": [
-    2.495048
-   ]
-  },
-  {
-   "label": "Έξοδα διοίκησης",
-   "lado": "expense",
-   "page": 1,
-   "section": "estado",
-   "values": [
-    5.379128
-   ]
-  }
- ]
+  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2024-06-30.md",
+  "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2024-06-30.pdf",
+  "club": "volos-nfc",
+  "year": 2024,
+  "generatedAt": "2026-10-13T12:59:39.506Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Κύκλος εργασιών",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3.377522
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Λοιπά συνήθη έσοδα",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2.495048
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Έξοδα διοίκησης",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        5.379128
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
 }

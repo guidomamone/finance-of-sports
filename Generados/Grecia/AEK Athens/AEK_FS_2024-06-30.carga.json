@@ -1,22 +1,205 @@
 {
  "pdf": "Clubes/Grecia/AEK Athens/AEK_FS_2024-06-30.pdf",
- "generado": "2026-10-10T14:10:08.039Z",
+ "generado": "2026-10-13T13:07:32.375Z",
  "frena": [
   {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (aekathens-gr)"
   },
   {
    "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "motivo": "carpetas-clubes.mjs dice aekathens-gr y onboard.mjs --quien dice aek-athens"
+  },
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Κόστος πωλήσεων / υλικών\" -> other_expenses 0.65; \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\" -> wages_squad 0.75; \"Απομείωση και απόσβεση\" -> other_expenses 0; \"Απομείωση παγίων περιουσιακών στοιχείων\" -> depreciation 0.55"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
- "avisos": [],
- "ejercicio": null,
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-10: Revisión del alta (Admin/altas-revision.jsonl): sin grupo consolidado en los documentos, ΠΑΕ individual)"
+ ],
+ "ejercicio": {
+  "clubId": "aekathens-gr",
+  "year": 2024,
+  "cierre": "2024-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Έσοδα από εισιτήρια",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 21.603121,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Χορηγίες και διαφημίσεις",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 9.524532,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Δικαιώματα αναμετάδοσης",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 5.39399,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Εμπορικά",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.010044,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 11.406695,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.68441,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπά λειτουργικά έσοδα",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.388442,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Κέρδος/ζημία από πώληση άυλων περιουσιακών στοιχείων - ποδοσφαιριστές",
+    "normalizedCategory": "player_sales",
+    "amountNative": 7.757325,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Κόστος πωλήσεων / υλικών",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.218712,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 2,
+    "_conf": 0.65,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -35.77883,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Απομείωση και απόσβεση",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -6.590993,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "categorias.json decía no_es_rubro con 0.7 (fila verificada: no se excluye sola): se propone la genérica de su lado"
+   },
+   {
+    "rawLabel": "Απομείωση παγίων περιουσιακών στοιχείων",
+    "normalizedCategory": "depreciation",
+    "amountNative": -1.548923,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπά λειτουργικά έξοδα",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -12.761798,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2024-06-30",
+   "sourceId": "aekathens-gr-aek-fs-2024-06-30",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -2.150954,
+   "tax": 0.212803,
+   "extraRows": [
+    {
+     "label": "Χρηματοοικονομικά Έξοδα",
+     "value": -2.150954
+    },
+    {
+     "label": "Αναβαλλόμενος Φόρος",
+     "value": 0.212803
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 58.768559,
+   "officialTotalExpenses": 56.899256,
+   "officialPAT": -0.068848
+  },
+  "source": {
+   "id": "aekathens-gr-aek-fs-2024-06-30",
+   "clubId": "aekathens-gr",
+   "title": "Athlitiki Enosis Konstantinoupoleos P.A.E. — AEK_FS_2024-06-30 (ejercicio 2024)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/AEK Athens/AEK_FS_2024-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Grecia/AEK Athens/AEK_FS_2024-06-30.md",
  "reemplaza": false,
  "periodo": {
@@ -30,5 +213,326 @@
   "confianza": "alta",
   "anual": "temporada"
  },
- "cortadoEn": "club"
+ "clubId": "aekathens-gr",
+ "year": 2024,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 15,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Έσοδα από εισιτήρια",
+   "page": 14,
+   "native": 21.603121,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 21.603121,
+   "cat": "matchday_competition",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 21.603121
+  },
+  {
+   "label": "Χορηγίες και διαφημίσεις",
+   "page": 14,
+   "native": 9.524532,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 9.524532,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 9.524532
+  },
+  {
+   "label": "Δικαιώματα αναμετάδοσης",
+   "page": 14,
+   "native": 5.39399,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 5.39399,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.39399
+  },
+  {
+   "label": "Εμπορικά",
+   "page": 14,
+   "native": 0.010044,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.010044,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.010044
+  },
+  {
+   "label": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
+   "page": 14,
+   "native": 11.406695,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 11.406695,
+   "cat": "competition_bonus",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 11.406695
+  },
+  {
+   "label": "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση",
+   "page": 14,
+   "native": 1.68441,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.68441,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.68441
+  },
+  {
+   "label": "Λοιπά λειτουργικά έσοδα",
+   "page": 14,
+   "native": 1.388442,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.388442,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.388442
+  },
+  {
+   "label": "Κέρδος/ζημία από πώληση άυλων περιουσιακών στοιχείων - ποδοσφαιριστές",
+   "page": 14,
+   "native": 7.757325,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 7.757325,
+   "cat": "player_sales",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.757325
+  },
+  {
+   "label": "Κόστος πωλήσεων / υλικών",
+   "page": 14,
+   "native": 0.218712,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.218712,
+   "cat": "other_expenses",
+   "conf": 0.65,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.218712
+  },
+  {
+   "label": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
+   "page": 14,
+   "native": 35.77883,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 35.77883,
+   "cat": "wages_squad",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -35.77883
+  },
+  {
+   "label": "Απομείωση και απόσβεση",
+   "page": 14,
+   "native": 6.590993,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 6.590993,
+   "cat": "other_expenses",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "categorias.json decía no_es_rubro con 0.7 (fila verificada: no se excluye sola): se propone la genérica de su lado",
+   "enLista": true,
+   "ladoRechazado": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -6.590993
+  },
+  {
+   "label": "Απομείωση παγίων περιουσιακών στοιχείων",
+   "page": 14,
+   "native": 1.548923,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.548923,
+   "cat": "depreciation",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.548923
+  },
+  {
+   "label": "Λοιπά λειτουργικά έξοδα",
+   "page": 14,
+   "native": 12.761798,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 12.761798,
+   "cat": "other_expenses",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -12.761798
+  },
+  {
+   "label": "Χρηματοοικονομικά Έξοδα",
+   "page": null,
+   "native": -2.150954,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Αναβαλλόμενος Φόρος",
+   "page": null,
+   "native": 0.212803,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 58.768559,
+  "expSum": -56.899256,
+  "officialTotalRevenue": 58.768559,
+  "officialTotalExpenses": 56.899256,
+  "officialPAT": -0.068848,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.068848,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 58.768559
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 56.899256
+  }
+ },
+ "liga": {
+  "valor": "gr-superleague",
+  "fuente": "roster cacheado de \"2023–24 Super League Greece\" (tools/club-league-reference/gr.json), coincidencia exacta \"AEK Athens\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2024,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2024-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2024-06-30) y contenido del .md (140 de 141 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-10)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Grecia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2024-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2024-06-30 = 0.9337 (Cierre BCE al 30/6/2024 (1 EUR = 1,071 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "aekathens-gr-aek-fs-2024-06-30",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gr-superleague",
+   "fuente": "roster cacheado de \"2023–24 Super League Greece\" (tools/club-league-reference/gr.json), coincidencia exacta \"AEK Athens\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 5,
+  "lineasIngreso": 8,
+  "lineasGasto": 5,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
 }

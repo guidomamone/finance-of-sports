@@ -1,22 +1,111 @@
 {
  "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.pdf",
- "generado": "2026-10-10T14:10:08.183Z",
+ "generado": "2026-10-13T13:07:50.343Z",
  "frena": [
   {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (volosnfc-gr)"
   },
   {
    "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "motivo": "carpetas-clubes.mjs dice volosnfc-gr y onboard.mjs --quien dice volos-nfc"
+  },
+  {
+   "etapa": "alta:reportType",
+   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
+  },
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "volosnfc-gr",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Κύκλος εργασιών",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 4.639776,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπά συνήθη έσοδα",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.884758,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Έξοδα διοίκησης",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -5.978754,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2025-06-30",
+   "sourceId": "volosnfc-gr-volos-income-stmt-2025-06-30",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.003367,
+   "tax": -0.120465,
+   "extraRows": [
+    {
+     "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+     "value": 0.003818
+    },
+    {
+     "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+     "value": -0.007185
+    },
+    {
+     "label": "Φόροι εισοδήματος",
+     "value": -0.120465
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Κύκλος εργασιών",
+     "lado": "revenue",
+     "importe": 4.639776,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 6.524534,
+   "officialTotalExpenses": 5.978754,
+   "officialPAT": 0.421947
+  },
+  "source": {
+   "id": "volosnfc-gr-volos-income-stmt-2025-06-30",
+   "clubId": "volosnfc-gr",
+   "title": "Volos N.P.S. P.A.E. — Volos_income_stmt_2025-06-30 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.md",
  "reemplaza": false,
  "periodo": {
@@ -27,5 +116,226 @@
   "confianza": "alta",
   "evidencia": "ajuste manual (2026-10-09): Revisión del alta (Claude, 2026-10-09): el registro no trae periodo; el estado cubre la temporada 2024-2025 y el balance de la misma serie cierra al 30/6"
  },
- "cortadoEn": "club"
+ "clubId": "volosnfc-gr",
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): el registro no trae periodo; el estado cubre la temporada 2024-2025 y el balance de la misma serie cierra al 30/6",
+   "evidencia": "Volos_income_stmt_2025-06-30.md L1-8",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.pdf",
+   "campo": "fila",
+   "valor": "3.818,37",
+   "linea": 21,
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "financiero",
+   "reemplaza": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "motivo": "Interés cobrado: suma al resultado. El estado imprime cobrado y pagado sin signo y la carga sumaba los dos como costo (2024: 2 × 5.104,81 de diferencia con el resultado impreso). Revisión de la cola de Grecia.",
+   "evidencia": "Volos_income_stmt_2025-06-30.md L21",
+   "autor": "Claude",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.pdf",
+   "campo": "fila",
+   "valor": "-7.185,43",
+   "linea": 22,
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "financiero",
+   "reemplaza": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "motivo": "Interés pagado: resta del resultado (ver el ajuste del interés cobrado del mismo documento).",
+   "evidencia": "Volos_income_stmt_2025-06-30.md L22",
+   "autor": "Claude",
+   "fecha": "2026-10-10"
+  }
+ ],
+ "seleccion": {
+  "filas": 6,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Κύκλος εργασιών",
+   "page": 1,
+   "native": 4.639776,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.639776,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.639776
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "page": 1,
+   "native": 1.884758,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.884758,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.884758
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "page": 1,
+   "native": 5.978754,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.978754,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.978754
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "page": null,
+   "native": 0.003818,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "page": null,
+   "native": -0.007185,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Φόροι εισοδήματος",
+   "page": null,
+   "native": -0.120465,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Salarios del plantel",
+   "lado": "gasto"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 6.524534,
+  "expSum": -5.978754,
+  "officialTotalRevenue": 6.524534,
+  "officialTotalExpenses": 5.978754,
+  "officialPAT": 0.421947,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.421947,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 6.524534
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 5.978754
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "coincidencia NO exacta en los rosters cacheados: \"Volos\" en 2024–25 Super League Greece | \"Niki Volos\" en 2024–25 Super League Greece 2",
+  "estado": "pendiente",
+  "nota": "fila en null hasta confirmar: ¿\"Volos NFC\" es \"Volos\" (gr-superleague, 2024–25 Super League Greece) o \"Niki Volos\" (gr-superleague2, 2024–25 Super League Greece 2)?"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): el registro no trae periodo; el estado cubre la temporada 2024-2025 y el balance de la misma serie cierra al 30/6",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): el registro no trae periodo; el estado cubre la temporada 2024-2025 y el balance de la misma serie cierra al 30/6)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md casi no tiene tablas con números (0 filas numéricas): parece un informe/dictamen que nombra los estados sin traerlos",
+   "estado": "pregunta"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Grecia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "volosnfc-gr-volos-income-stmt-2025-06-30",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "coincidencia NO exacta en los rosters cacheados: \"Volos\" en 2024–25 Super League Greece | \"Niki Volos\" en 2024–25 Super League Greece 2",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 4,
+  "lineasIngreso": 2,
+  "lineasGasto": 1,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

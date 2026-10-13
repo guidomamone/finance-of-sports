@@ -1,0 +1,250 @@
+{
+ "md": "Clubes/Grecia/AEK Athens/AEK_FS_2016-2017.md",
+ "generatedAt": "2026-10-13T13:07:20.014Z",
+ "rubrosHuella": "795a0665e9c5724ed7e095431ed0c88759561e60",
+ "rubros": [
+  {
+   "label": "Έσοδα εισιτηρίων εγχώριων διοργανώσεων",
+   "lado": "revenue",
+   "page": 41,
+   "section": "nota que desglosa \"Έσοδα από εισιτήρια\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα από πωλήσεις εισιτηρίων διαρκείας",
+   "lado": "revenue",
+   "page": 41,
+   "section": "nota que desglosa \"Έσοδα από εισιτήρια\"",
+   "choice": "season_tickets",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Χορηγίες και διαφημίσεις",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Δικαιώματα αναμετάδοσης",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "competition_bonus",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά λειτουργικά έσοδα",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ανάλυση αθλητικού υλικού",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Κόστος πωλήσεων / υλικών\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα φαρμακείου αθλητών",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Κόστος πωλήσεων / υλικών\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Μισθοδοσία",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"",
+   "choice": "wages_squad",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Αποσβέσεις συμβολαίων ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Απομείωση και απόσβεση",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Αποσβέσεις πάγιων περιουσιακών στοιχείων",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Αποσβέσεις λοιπών άυλων περιουσιακών στοιχείων",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
+   "choice": "other_amortisation",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Μισθώματα",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "wages_squad",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Τηλεφωνικά - Ταχυδρομικά",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Ασφάλιστρα",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Επισκευές και συντηρήσεις",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα μετακινήσεων",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Διαφημίσεις και εκδηλώσεις",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Συνδρομές",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Δωρεές",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα δημοσιεύσεων",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Φόροι - Τέλη",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Αμοιβές τρίτων",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα αγώνων",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Προβλέψεις επισφαλειών",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά λειτουργικά έξοδα",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "desdeCache": true
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.md",
+ "club": "volos-nfc",
+ "year": 2022,
+ "generatedAt": "2026-10-13T13:07:30.347Z",
+ "rubrosHuella": "6c0b6e3c00e307931751491250a6db4689f71669",
+ "jevHuella": "c708ed21e02adb33306ee2f527315ccfd61ca150",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Cifra de negocios",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos de explotación",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Λοιπά έξοδα και ζημιές",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos y pérdidas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 1,
+   "jevConf": 0.97,
+   "categoria": "other_expenses",
+   "confianza": 0.97
+  }
+ ]
+}
