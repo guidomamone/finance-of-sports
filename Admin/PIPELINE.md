@@ -370,7 +370,7 @@ Mitigaciones:
             nota (o una es el renglón del estado y la otra su hoja en la nota) y una sola categoría entre las respuestas
  ESCALÓN 7b (to-do 152) si no: la respuesta de OTROS CLUBES DEL MISMO PAÍS. Compuertas: misma etiqueta (claveFamilia), mismo lado, mismo
             contexto (la nota que la abre o, en el estado, el renglón título de arriba: contextoFila() de padres-filas.mjs), respondida
-            en al menos 2 clubes, todos con la misma categoría. La carga lo dice: "precedente del país: N clubes (...)"
+            en al menos 1 club (to-do 215: con 1 decide 59 y acierta 59), todos con la misma categoría. La carga lo dice: "precedente del país: N clubes (...)"
  SACAR UNA FILA (to-do 205): una respuesta `descartar` o `corregir --valor no_es_rubro` vale solo para SU documento; la de otro año
             del club (respuesta del club, 7a) o de otros clubes (7b) no decide y la fila sigue por los escalones
  "NO ES RUBRO" de la IA en una fila verificada con lado: se excluye; si la carga no cierra, se prueba incluirla (a la cola);

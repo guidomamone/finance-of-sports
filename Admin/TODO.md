@@ -112,11 +112,6 @@ ni en el comentario de ningún archivo de código.
       - Lo que quede en la cola: lo contesta un subagente Sonnet de la sesión con cita del documento (como ya se hizo "Claude, Guido
         delega"), nunca Guido. Si el subagente no puede confirmar, el año no se carga y va a `Admin/dudas-por-club.md`.
 
-215. PRECEDENTE DE CATEGORÍA DE UN SOLO CLUB DEL PAÍS (optimización, cola). El escalón B de categorías pide 2 clubes del país con la misma
-    respuesta; en Grecia solo estaba AEL Larissa, así que Asteras, Levadiakos y OFI volvieron a preguntar "Κόστος πωλήσεων", "Έξοδα διάθεσης",
-    "Αμοιβές και έξοδα προσωπικού" (21 casos). Evaluar un escalón con 1 club y mismo contexto exacto (misma nota/renglón título), que proponga
-    con cita del precedente y que la compuerta de lado y de sumas decida; medir aciertos contra las respuestas de hoy.
-
 216. PRIMER ALTA DE CLUB CON LA EVIDENCIA FUERA DE `data/` (probar en vivo). Ningún lote dio todavía de alta un club nuevo Y cargó su primer
     año con los scripts que escriben la evidencia en `Admin/carga-clubes/<clubId>.md` en vez de comentarios en `data/`. La primera vez, mirar:
     el `.md` nuevo del club, que `data/<país>/<club>-data.js` salga sin comentarios (`node tools/audit.js` lo avisa como `comentario-en-data-club`)

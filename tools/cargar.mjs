@@ -502,11 +502,13 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       const cats = new Set(fam.map(catDe).filter(Boolean));
       if (cats.size === 1 && (!lado || [...cats][0] === '(descartar)' || !ladoDeCat([...cats][0]) || ladoDeCat([...cats][0]) === lado)) { const ult = fam.filter((x) => catDe(x)).sort((a, b) => String(b.resp.ts).localeCompare(String(a.resp.ts)))[0]; ({ caso, resp } = ult); viaFamilia = `familia de "${String(caso.detalle).split('|')[0]}" (${caso.pdf.split('/').pop()})`; }
     }
-    // ESCALÓN B (to-do 152, ok de Guido; mínimo 2 clubes): la respuesta de OTROS CLUBES DEL MISMO PAÍS, solo para una fila que iba a la cola.
+    // ESCALÓN B (to-do 152, ok de Guido): la respuesta de OTROS CLUBES DEL MISMO PAÍS, solo para una fila que iba a la cola. Mínimo 1 club
+    // (to-do 215, ok de Guido 2026-10-13; antes 2): en Grecia solo AEL Larissa había contestado "Κόστος πωλήσεων" y Asteras, Levadiakos y OFI
+    // volvieron a preguntarlo. Medido sobre las respuestas existentes: con 2 clubes decide 34 y acierta 34; con 1, decide 59 y acierta 59.
+    // Una respuesta que saca la fila (descartar) no decide desde otro club (sacaFila, abajo).
     // Compuertas: misma etiqueta (claveFamilia), mismo lado, mismo CONTEXTO (contextoFila(): la nota que la abre o, en el estado, el renglón
     // título de arriba), respondida en al menos 2 clubes y todos con la misma categoría. Caso: "c) trattamento di fine rapporto" bajo
     // "per il personale" (wages_squad en varios clubes); "altri costi" no se generaliza porque cada club lo tiene bajo otro título.
-    // Medido sobre las respuestas existentes: decide 34, acierta 34.
     if (!resp && familia && lado) {
       const ctx = contextoFila(P.md, label, lado);
       if (ctx) {
@@ -514,7 +516,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
         const clubDe = (p) => String(p).split('/').slice(0, 3).join('/'); const pais = pdf.split('/')[1];
         const otros = respuestasDonde('cargar', 'categoria', (c) => { const [et, ld] = String(c.detalle).split('|'); return c.pdf.split('/')[1] === pais && clubDe(c.pdf) !== clubDe(pdf) && ld === ladoClave && claveFamilia(et) === fb && contextoFila(c.md || c.pdf.replace(/\.pdf$/i, '.md'), et, lado) === ctx; }).filter((x) => catDe(x));
         const clubes = new Set(otros.map((x) => clubDe(x.caso.pdf))); const cats = new Set(otros.map(catDe)); const unica = [...cats][0];
-        if (clubes.size >= 2 && cats.size === 1 && (unica === '(descartar)' || !ladoDeCat(unica) || ladoDeCat(unica) === lado)) {
+        if (clubes.size >= 1 && cats.size === 1 && (unica === '(descartar)' || !ladoDeCat(unica) || ladoDeCat(unica) === lado)) {
           ({ caso, resp } = otros.sort((a, b) => String(b.resp.ts).localeCompare(String(a.resp.ts)))[0]);
           viaFamilia = `precedente del país: ${clubes.size} clubes (${[...clubes].map((c) => c.split('/')[2]).join(', ')}), ${ctx}`;
         }
