@@ -670,7 +670,7 @@ function sufijosDelRepo() {
     catch { return; }
     for (const e of entradas) {
       const rel = d ? `${d}/${e.name}` : e.name;
-      if (e.name === '.git' || e.name === 'node_modules' || rel === 'Business Books') continue;
+      if (e.name === '.git' || e.name === 'node_modules') continue;
       if (e.isDirectory()) walk(rel); else todos.push(rel);
     }
   })('');
