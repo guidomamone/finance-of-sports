@@ -25,6 +25,7 @@ que dice `ESTADO.md` era verdad ese día.
 - Lote 1: Argentina, Chile, Perú y México (22 clubes, 4.053 comentarios). ASSET_V 811.
 - Lote 2: Brasil (42 clubes, 9.544 comentarios). ASSET_V 812.
 - Lote 3: Italia y España (40 clubes, 10.402 comentarios). ASSET_V 813.
+- Lote 4: Inglaterra, Alemania, Bélgica y Países Bajos (47 clubes, 5.284 comentarios). ASSET_V 814.
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 

@@ -1,0 +1,264 @@
+# bayernmunich-de — evidencia de carga
+
+Lo que había como comentario en `data/bayernmunich-de-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
+
+## Cabecera
+
+```text
+============================================================================
+data/bayernmunich-de-data.js — FC Bayern München AG (Alemania, Bundesliga).
+
+4 ejercicios cargados: 2020/21, 2022/23, 2023/24, 2024/25. Fuente de 2023/24 y 2024/25: el
+comunicado oficial anual "Jahresabschluss der Saison <año>" que el club publica en fcbayern.com
+(media@fcbayern.com), NO el Geschäftsbericht completo con Anhang notarial — es un resumen oficial
+de 7 páginas con el Balance y la GuV condensados, publicado por el propio club (no un tercero), así
+que se trata como fuente primaria (reliability:'primary'), aunque con menos desglose que el
+Konzernabschluss completo de Werder Bremen/Köln. Transcripciones completas en
+Clubes/Alemania/Bayern Munich/jahresabschluss-<año>.md.
+
+EJERCICIO 2022/23 (presseinformation-jhv-2022-23.md): PESE AL NOMBRE DEL ARCHIVO, es el mismo tipo
+de comunicado oficial que 2020/21 (4 páginas: Bilanz condensado del Konzern Y del Einzelabschluss,
+más Kennzahlen Umsatz/EBITDA/Gewinn vor Steuern/Jahresüberschuss de cada nivel, más una tabla
+histórica de 10 años) — NO trae el desglose de GuV por rubro ("Komponenten der Gewinn- und
+Verlustrechnung im Einzelabschluss") que sí tienen los comunicados de 2023/24 y 2024/25. Se
+confirmó ANTES de mapear (pedido explícito de la consigna) que el documento efectivamente no tiene
+ese nivel de detalle — es igual de "chico" que 2020/21, solo que además de traer el Konzern trae el
+Einzelabschluss (2020/21 solo traía Konzern). Mismo criterio de club-data-mapping SKILL.md sección 1 que ya usa 2020/21: se cargó con el máximo detalle que el documento permite (1 línea de ingreso
+sin desglosar + 2 de gasto derivadas matemáticamente), usando el nivel Einzelabschluss AG (no
+Konzern) para ser consistente con 2023/24 y 2024/25 — ver "NIVEL DE CUENTAS ELEGIDO" abajo.
+
+EJERCICIO 2020/21 (jahresabschluss-2020-21.md): documento MUCHO MÁS CHICO que los otros 2 (2
+páginas, no 7) — SOLO trae el Konzern (nunca el Einzelabschluss con el desglose de GuV por rubro
+que sí tienen 2023/24 y 2024/25) y 4 cifras: Umsatz, EBITDA, Gewinn vor Steuern (EBT) y
+Jahresüberschuss, más el Bilanz Konzern condensado (Aktiva/Passiva) y una tabla histórica de 10
+años (solo Umsatz/EBITDA/Jahresüberschuss, sin más desglose). Confirmado con `pdftotext -layout`
+directo sobre el PDF (2 páginas, texto nativo) que la transcripción no se salteó nada — es TODO el
+contenido del documento real, no un problema de esta sesión. Categorización forzosamente distinta
+de 2023/24 y 2024/25 (ver detalle más abajo, después del comentario de esos 2 ejercicios) porque el
+documento no tiene el nivel de detalle que sí tienen esos 2.
+
+NIVEL DE CUENTAS ELEGIDO: Einzelabschluss (AG standalone), NO el Konzern (consolidado con
+Allianz Arena München Stadion GmbH y el resto de las subsidiarias). Motivo: el documento da el
+desglose de ingresos/gastos por rubro SOLO para el Einzelabschluss ("2. Komponenten der Gewinn-
+und Verlustrechnung im Einzelabschluss der FC Bayern München AG"), el Konzern solo imprime 4
+cifras agregadas (Umsatz/EBITDA/EBT/Jahresüberschuss) sin desglose. Sin el desglose no hay forma
+de categorizar por normalizedCategory, así que se usa el nivel de cuentas que SÍ lo tiene — mismo
+criterio de club-data-mapping/referencia/formato-simplificado.md ("cuando una estructura no alcanza para
+categorizar, buscar el nivel de detalle que sí distingue, no forzar sobre la que no alcanza").
+officialTotalRevenue/officialTotalExpenses/officialPAT son también los de la AG Einzelabschluss
+(908,1 M€ / 926,6 M€ de Umsatz), NO los 951,5 M€ / 978,3 M€ del Konzern — coherencia entre el
+nivel de detalle y el nivel de los totales.
+
+Ingresos (Einzelabschluss AG), 6 líneas impresas con cifra propia, todas 'detailed': Spielbetrieb
+(matchday_competition), Sponsoring und Vermarktung (sponsorship_commercial), mediale Vermarktung
+(broadcasting), Transfers (player_sales), Merchandising (sponsorship_commercial, mismo criterio
+que "Handel" de Werder Bremen: venta de indumentaria/merchandising del propio club, no un negocio
+no futbolístico separado), Sonstiges (other_income, incluye alquileres, museo, cesión de
+jugadores a la selección, FC Bayern II, fútbol juvenil y femenino — el documento no separa más).
+
+Gastos (Einzelabschluss AG): Gesamtpersonalaufwand (wages_squad, sin separar plantel de
+administrativo, el documento no llega a ese nivel), Betriebliche Aufwendungen (other_expenses, es
+su propia línea de P&L separada de Materialaufwand, sin más desglose impreso), Materialaufwand
+(other_expenses), Abschreibungen (player_amortisation por la porción "davon Abschreibungen auf
+Transferentschädigungen" impresa con cifra propia — pases de jugadores capitalizados — y
+depreciation por el resto, activo fijo).
+
+netInterest/tax: el documento NO imprime el resultado financiero ni el impuesto a las ganancias
+como líneas separadas (solo EBITDA/EBT/Jahresüberschuss). Se calculan como RESIDUALES:
+netInterest = EBT - (EBITDA - Abschreibungen); tax = Jahresüberschuss - EBT.
+
+VERIFICACIÓN EN NAVEGADOR (2026-09-25): `verifyTieOuts()` da "NO CIERRA, diferencia de 0.1" en 3
+checks de este club (Revenue 2024 y 2025, Resultado neto 2025) — NO es un error de carga, es el
+límite de precisión de la FUENTE: el comunicado de prensa redondea cada cifra a 1 decimal (100.000
+€), así que 6 líneas de revenue independientemente redondeadas pueden sumar hasta ±0,1 M€ distinto
+del total también redondeado a 1 decimal — a diferencia de Werder Bremen/Dortmund/RB Leipzig, que
+vienen de cuentas auditadas completas con cifras exactas al euro. Los 6 checks restantes (Expenses
+de los 2 años, PAT 2024) sí cierran exacto porque `officialTotalExpenses`/`officialPAT` se tomaron
+directo de sumar/usar las mismas cifras ya redondeadas que alimentan expenseLines, sin acumular
+redondeos independientes de un lado distintos del otro. Ver duda abierta en
+`Admin/dudas-por-club.md` (pedirle a Bayern el desglose exacto, si existiera un documento con más
+precisión que este comunicado).
+
+Moneda: EUR. Ningún ejercicio declara TC propio a USD (no es práctica habitual en cuentas
+alemanas) → fxRef contra FX_CLOSE (data/currency-map.js): 'EUR@2024-06-30' y 'EUR@2025-06-30' YA
+EXISTEN, no hace falta agregar nada.
+
+gestionId: 'actual' en 2024/2025 — Jan-Christian Dreesen es Vorstandsvorsitzender (CEO) en los 2.
+2020/21 usa una gestión propia, ver más abajo.
+
+---------------------------------------------------------------------------
+EJERCICIO 2020/21 — categorización (documento SIN desglose, ver nota de cabecera):
+
+El documento solo da 4 cifras (Konzern): Umsatz 643,9; EBITDA 98,4; Gewinn vor Steuern (EBT) 5,0;
+Jahresüberschuss 1,9 — más un Bilanz condensado sin nota de deuda financiera separada de otros
+pasivos (a diferencia de otros clubes, no se cargó grossDebt/cash para NINGÚN ejercicio de este
+club, mismo criterio que 2023/24 y 2024/25, que tampoco los tienen: el comunicado no alcanza ese
+nivel).
+
+Se cargó lo que el documento SÍ permite, sin inventar una separación que no está: revenueLines
+es UNA sola línea 'lump_football_operations' con el Umsatz completo (643,9) — no hay ninguna otra
+opción honesta, el documento no da NINGÚN desglose por rubro para el Konzern (esa apertura
+—Spielbetrieb/Sponsoring/mediale Vermarktung/Transfers/Merchandising/Sonstiges— solo existe para el
+Einzelabschluss de 2023/24 y 2024/25, que este documento de 2020/21 ni siquiera menciona).
+
+expenseLines tiene 2 líneas, ambas DERIVADAS matemáticamente de las 4 cifras (no inventadas):
+1. 'Aufwendungen vor Abschreibungen' (lump_football_operations_expense) = Umsatz - EBITDA =
+   643,9 - 98,4 = 545,5: todo el gasto operativo en efectivo antes de amortizaciones, sin
+   desglose posible (mismo argumento que arriba, no hay ninguna apertura disponible).
+2. 'Abschreibungen und Zinsergebnis kombiniert' (depreciation) = EBITDA - EBT = 98,4 - 5,0 = 93,4:
+   ACÁ HAY UNA APROXIMACIÓN DOCUMENTADA, no un hecho puro del documento. Este monto combina
+   Abschreibungen (D&A) Y Zinsergebnis (resultado financiero neto) — el documento NO los separa
+   (a diferencia de 2023/24 y 2024/25, donde SÍ hay líneas propias de "davon Abschreibungen auf
+   Transferentschädigungen" que permiten separar netInterest como residual, ver comentario de
+   cabecera de esos 2 años). Con solo Umsatz/EBITDA/EBT/Jahresüberschuss no hay forma matemática de
+   separar D&A de intereses: son 2 incógnitas y 1 sola ecuación. Se cargó el monto COMBINADO
+   entero como 'depreciation' (en vez de partirlo a ojo entre depreciation/netInterest) porque D&A
+   es casi con certeza el componente dominante (en 2023/24 y 2024/25, D&A fue 95,1 y 132,3 contra
+   un netInterest de apenas 4,4 y 1,9 — ~95-99% del gap EBITDA-EBT es D&A en los 2 años con
+   desglose real), así que `netInterest:0` para este ejercicio es la aproximación más chica
+   posible dado lo que hay, NO un hecho confirmado. Documentado acá y como pregunta abierta en
+   `Admin/dudas-por-club.md` (si existe un Jahresabschluss/Geschäftsbericht más completo de
+   2020/21, con el Einzelabschluss y su desglose de GuV, permitiría separar esto con precisión).
+
+tax = Jahresüberschuss - EBT = 1,9 - 5,0 = -3,1 (mismo método residual que 2023/24 y 2024/25, este
+SÍ es un hecho directo de las 2 cifras impresas, no una aproximación).
+
+TIE-OUT: revenue(643,9) - expenses(545,5+93,4=638,9) + netInterest(0) + tax(-3,1) = 1,9, EXACTO
+contra el Jahresüberschuss impreso — más preciso que 2023/24 y 2024/25 (que tienen ±0,1 M€ de
+diferencia por redondeo de 6 líneas independientes), simplemente porque acá hay menos líneas
+(2 en vez de 6) que redondear por separado.
+
+FX: cierre BCE del 30/6/2021 (miércoles, día hábil): 1 EUR = 1,1884 USD → 0.8415 (EUR por 1 USD),
+consultado en esta sesión vía api.frankfurter.dev (espejo de series del BCE). Promovido a
+'EUR@2021-06-30' en FX_CLOSE (data/currency-map.js) en la integración de esta misma sesión.
+
+Gestión: Karl-Heinz Rummenigge fue Vorstandsvorsitzender (CEO) de Bayern Munich desde 2002 hasta
+su retiro en noviembre de 2021 — cubre la totalidad del ejercicio 2020/21 (01.07.2020-30.06.2021).
+Se cargó una gestión propia 'rummenigge', acotada a firstYear/lastYear:2021 (solo el año
+confirmado por esta carga, sin extender el rango a ejercicios no verificados en esta sesión).
+---------------------------------------------------------------------------
+EJERCICIO 2022/23 — categorización (documento SIN desglose, mismo caso que 2020/21, ver nota de
+cabecera):
+
+El documento da 4 cifras POR NIVEL (Konzern Y Einzelabschluss, a diferencia de 2020/21 que solo
+traía Konzern). Se usó el nivel EINZELABSCHLUSS AG (Umsatz 817,3; EBITDA 153,4; Gewinn vor Steuern
+[EBT] 35,5; Jahresüberschuss 22,6), no el Konzern (Umsatz 854,2; EBITDA 187,4; EBT 54,5;
+Jahresüberschuss 35,7) — mismo criterio que 2023/24 y 2024/25 (ver "NIVEL DE CUENTAS ELEGIDO"
+arriba: el desglose de GuV por rubro, cuando existe, solo está disponible para el Einzelabschluss,
+así que se usa ese nivel de cuentas de forma consistente en los 3 ejercicios que sí tienen ese
+nivel, aunque este ejercicio puntual no llegue a tener el desglose).
+
+revenueLines es UNA sola línea 'lump_football_operations' con el Umsatz Einzelabschluss completo
+(817,3) — el documento no da NINGÚN desglose por rubro en ningún nivel, mismo argumento que 2020/21.
+
+expenseLines tiene 2 líneas, ambas DERIVADAS matemáticamente de las 4 cifras (mismo método que
+2020/21, misma aproximación documentada para la 2da línea — combina D&A con resultado financiero
+neto porque el documento no los separa):
+1. 'Aufwendungen vor Abschreibungen' (lump_football_operations_expense) = Umsatz - EBITDA =
+   817,3 - 153,4 = 663,9.
+2. 'Abschreibungen und Zinsergebnis kombiniert' (depreciation) = EBITDA - EBT = 153,4 - 35,5 =
+   117,9 — mismo argumento que 2020/21 (D&A es casi con certeza el componente dominante del gap,
+   netInterest:0 es la aproximación más chica posible, no un hecho confirmado; pregunta abierta en
+   `Admin/dudas-por-club.md`, mismo ítem que 2020/21).
+
+tax = Jahresüberschuss - EBT = 22,6 - 35,5 = -12,9 (residual directo, no aproximación).
+
+TIE-OUT: revenue(817,3) - expenses(663,9+117,9=781,8) + netInterest(0) + tax(-12,9) = 22,6, EXACTO
+contra el Jahresüberschuss Einzelabschluss impreso.
+
+FX: cierre BCE del 30/6/2023, 'EUR@2023-06-30' YA EXISTÍA en FX_CLOSE (data/currency-map.js, de
+una sesión anterior de onboarding de clubes españoles/alemanes/ingleses).
+
+Sin nota de deuda financiera separada de otros pasivos en ninguno de los 2 niveles (Verbindlichkeiten
+198,4 Einzelabschluss / 208,7 Konzern, sin desglosar) — no se cargó grossDebt/cash, mismo criterio
+que 2020/21, 2023/24 y 2024/25 (ninguno de los 4 ejercicios de este club tiene grossDebt/cash).
+
+Gestión: Oliver Kahn fue Vorstandsvorsitzender (CEO) desde 2021 hasta su salida el 25/5/2023 —
+cubre la gran mayoría del ejercicio 2022/23 (01.07.2022-30.06.2023); Jan-Christian Dreesen asumió
+recién el 1/6/2023, últimas 4 semanas del ejercicio. Se cargó una gestión propia 'kahn', acotada a
+firstYear/lastYear:2023 (predominancia de Kahn en el ejercicio, mismo criterio que "rummenigge" de
+2020/21 — solo el año confirmado por esta carga).
+---------------------------------------------------------------------------
+============================================================================
+```
+
+## 2025
+
+### Ingresos
+
+```text
+Ejercicio 2025 (01.07.2024-30.06.2025). Fuente: jahresabschluss-2024-25.md, pág. 2.
+```
+
+### Meta
+
+```text
+EBT=18,0; EBITDA-Abschr.=148,4-132,3=16,1 -> netInterest=1,9. Jahresüberschuss=11,3; tax=11,3-18,0=-6,7.
+```
+
+## 2024
+
+### Ingresos
+
+```text
+Ejercicio 2024 (01.07.2023-30.06.2024). Fuente: jahresabschluss-2023-24.md, pág. 2.
+```
+
+### Meta
+
+```text
+netInterest/tax residuales, ver comentario de cabecera. EBT=42,1; EBITDA-Abschr.=132,8-95,1=37,7 -> netInterest=4,4.
+Jahresüberschuss=29,5; tax=29,5-42,1=-12,6.
+```
+
+## 2023
+
+### Ingresos
+
+```text
+Ejercicio 2023 (01.07.2022-30.06.2023). Fuente: presseinformation-jhv-2022-23.md — Einzelabschluss
+AG, sin desglose por rubro (ver comentario de cabecera).
+```
+
+### Gastos
+
+```text
+Ejercicio 2023: 2 líneas derivadas matemáticamente de Umsatz/EBITDA/EBT del Einzelabschluss AG
+(ver comentario de cabecera para el detalle completo de la aproximación en la 2da línea).
+```
+
+### Meta
+
+```text
+tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico)
+netInterest:0 y la línea 'depreciation' de -117,9 combinan D&A + resultado financiero, ver
+comentario de cabecera (aproximación documentada, el documento no los separa). tax = residual:
+Jahresüberschuss 22,6 - EBT 35,5 = -12,9.
+```
+
+## 2021
+
+### Ingresos
+
+```text
+Ejercicio 2021 (01.07.2020-30.06.2021). Fuente: jahresabschluss-2020-21.md — Konzern, sin
+desglose por rubro (ver comentario de cabecera).
+```
+
+### Gastos
+
+```text
+Ejercicio 2021: 2 líneas derivadas matemáticamente de Umsatz/EBITDA/EBT (ver comentario de
+cabecera para el detalle completo de la aproximación en la 2da línea).
+```
+
+### Meta
+
+```text
+tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico)
+netInterest:0 y la línea 'depreciation' de -93,4 combinan D&A + resultado financiero, ver
+comentario de cabecera (aproximación documentada, el documento no los separa). tax = residual:
+Jahresüberschuss 1,9 - EBT 5,0 = -3,1.
+```

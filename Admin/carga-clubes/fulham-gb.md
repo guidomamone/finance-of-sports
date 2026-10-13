@@ -1,0 +1,83 @@
+# fulham-gb — evidencia de carga
+
+Lo que había como comentario en `data/fulham-gb-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
+
+## Cabecera
+
+```text
+============================================================================
+data/fulham-gb-data.js — Fulham (Inglaterra, Premier League), clubId 'fulham-gb'.
+
+Fuente: "Full accounts" (NO group accounts) de Fulham Football Club Limited (Companies House n°
+02114486), auditadas, depositadas en Companies House UK. 2 ejercicios, ambos cerrados el 30 de
+junio:
+  2024: temporada 2023-24, terminó 13°. Transcripción:
+        Clubes/Inglaterra/Fulham/fulham-full-accounts-2023-24.md
+  2025: temporada 2024-25, terminó 11°. Transcripción:
+        Clubes/Inglaterra/Fulham/fulham-full-accounts-2024-25.md
+
+amountNative en millones de GBP nativos. revenue positivo, expense NEGATIVO. fxRef porque
+ninguno de los 2 documentos declara un tipo de cambio propio.
+
+POR QUÉ "FULL ACCOUNTS" Y NO "GROUP ACCOUNTS" (a diferencia de la mayoría de los clubes ingleses
+ya cargados): Fulham Football Club Limited NO tiene subsidiarias propias (Nota 18 de ambos
+documentos), es standalone. El préstamo de £125m con JPMorgan Chase Bank (julio 2024, para
+completar el Riverside Stand) y todo el CAPEX de esa obra están registrados en Fulham Stadium
+Limited, una compañía HERMANA — fuera de alcance de este documento, no una omisión. La Nota 11
+(Creditors) de los 2 ejercicios no tiene ninguna línea "Borrowings"/deuda bancaria.
+
+"Central Awards" + "Broadcasting" van las dos a `broadcasting`: la política contable 1.12 las
+describe como las 2 mitades de la misma frase ("Broadcasting revenue can be recognised in two
+parts"), no dos conceptos distintos.
+
+"Compensation" (£0,873m 2024 / £4,013m 2025): "sums from collaboration agreements with other
+Clubs and remediation of lost income" — no encaja limpio en ninguna categoría, va a `other_income`
+(catch-all). Duda genuina en Admin/dudas-por-club.md.
+
+GROSSDEBT: Fulham FC Limited no tiene ninguna nota "Borrowings" en ningún ejercicio. La única
+partida deuda-like es "Amounts due to immediate parent company" (préstamo del dueño, SIN interés,
+"repayable on demand", que se convierte en acciones): £44,398m (2024), £0 (2025, todo convertido
+a equity en el año). Se usa ese valor tentativamente — duda genuina en Admin/dudas-por-club.md
+sobre si corresponde tratarlo como deuda financiera real o excluirlo (es cuasi-equity, sin interés).
+
+"Gate Receipts" 2025: la transcripción OCR trae un valor que no reconcilia contra el Turnover
+total impreso (194.790) menos las otras 4 líneas (179.780) — se usa 15.010 (el valor
+matemáticamente forzado por el total, consistente con un patrón de error OCR 1↔4 ya visto en el
+documento 2023-24), duda anotada para confirmar contra el PDF original.
+
+brandColor: NO resuelto — camiseta blanca ("The Whites"/"The Cottagers"), mismo bucket que
+River/Vélez/Sevilla/Real Madrid/Valencia/Once Caldas (club-or-year-onboarding sección 3). `null`.
+============================================================================
+```
+
+## 2025
+
+### Ingresos
+
+```text
+Ejercicio 2025. Suma Turnover (5 líneas) = 194.790 exacto. Total = 235.825 = officialTotalRevenue.
+```
+
+### Gastos
+
+```text
+Ejercicio 2025. Suma componentes = -275.356 (subtotal impreso D&A da 63.220 vs 63.221 real,
+redondeo de £1.000 de la propia fuente, inmaterial).
+```
+
+## 2024
+
+### Ingresos
+
+```text
+Ejercicio 2024. Fuente: Note 2 "Turnover" + P&L (Profit on disposal of players' registrations).
+Suma Turnover (5 líneas) = 181.559 exacto. Total = 218.918 = officialTotalRevenue.
+```
+
+### Gastos
+
+```text
+Ejercicio 2024. Fuente: Note 3 + Note 4 + Note 9. Suma = -251.022 = officialTotalExpenses.
+```
