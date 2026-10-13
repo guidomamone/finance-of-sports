@@ -1128,6 +1128,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   //     llegó a la cola y es un peso sobre 1,8 millones (pedido de Guido: una diferencia de esa magnitud no va a la cola).
   //   - las dudas en el formato viejo (texto suelto, archivos anteriores a la Versión 327) se tratan como afecta_carga = true.
   const dudaComoObjeto = (d) => (typeof d === 'string' ? { texto: d, bloques: [...new Set(d.match(/\bb\d+\b/g) || [])], afecta_carga: true } : d);
+  const pendientes = []; const contestadas = []; // (to-do 211) las dudas que irían a la cola se juntan por cuadro antes de escribirlas (abajo)
   for (const [origen, lista] of [['localizar', U.dudas || []], ['extraer', F.dudas || []]]) {
     for (const d of lista.map(dudaComoObjeto)) {
       // ajuste manual sin-dudas (Versión 366): Guido cerró el documento; sus dudas quedan como nota y no van a la cola (las viejas se cierran
@@ -1158,7 +1159,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         const mismaCarpeta = (c) => c.pdf.split('/').slice(0, 3).join('/') === pdf.split('/').slice(0, 3).join('/');
         const antesDelAlta = clubId && clubId !== pdf.split('/')[2] ? respuestaPorDetalle('verificar', 'duda-tema', `${pdf.split('/')[2]}|${d.tema}|${normalizarRenglon(d.renglon)}`, mismaCarpeta) : null;
         const ya = respuestaPorDetalle('verificar', 'duda-tema', det) || (antesDelAlta && antesDelAlta.resp.decision !== 'obsoleto' ? antesDelAlta : null);
-        if (ya) { notas.push(`duda de ${origen} ya contestada para el club${ya === antesDelAlta ? ' (antes de su alta)' : ''} (${d.tema}, "${d.renglon || '-'}"): ${ya.resp.decision}${ya.resp.valor ? ` ${ya.resp.valor}` : ''}, en ${ya.caso.pdf.split('/').pop()}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
+        if (ya) { notas.push(`duda de ${origen} ya contestada para el club${ya === antesDelAlta ? ' (antes de su alta)' : ''} (${d.tema}, "${d.renglon || '-'}"): ${ya.resp.decision}${ya.resp.valor ? ` ${ya.resp.valor}` : ''}, en ${ya.caso.pdf.split('/').pop()}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); contestadas.push({ origen, bloques: d.bloques || [], lineas, tema: d.tema }); continue; }
         // ESCALÓN 2 DE LAS DUDAS (Versión 346, diseño aprobado por Guido): la aritmética la confirma. Si la escalera de lecturas cerró con un
         // número impreso, ningún año vecino da distinto, el tema es de los que las sumas pueden confirmar y la propuesta de la IA es "sí" (lo que
         // extraer ya aplicó), se acepta sola. Perímetro, cuadro de otro año, fila ilegible y "otro" nunca: un perímetro equivocado cierra igual.
@@ -1173,11 +1174,41 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         // escalón 2 sin la condición del vecino (la escalera de lecturas cerró el resultado). Medido contra las respuestas de Guido en los 242 documentos
         // con verificación: 21 dudas de este grupo, 21 aceptadas tal cual (Roma 2011 separato se descartó por el documento entero, no por la duda).
         if (E.cierra && vecinos.includes(false) && ['usar-cuadro-por-segmento', 'cuadro-duplicado', 'columna'].includes(d.tema) && d.propuesta === 'sí') { notas.push(`duda de ${origen} confirmada por las sumas aunque un año vecino da distinto (escalón 2b; ${d.tema}, "${d.renglon || '-'}"): ${d.pregunta}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
-        caso('duda-tema', det, que, { pagina, lineas, propuesta });
+        pendientes.push({ origen, motivo: 'duda-tema', detalle: det, que, pregunta: d.pregunta || d.texto, bloques: d.bloques || [], extra: { pagina, lineas, propuesta } });
         continue;
       }
-      caso(`duda-de-${origen}`, (d.pregunta || d.texto).slice(0, 80), que, { pagina, lineas, propuesta });
+      pendientes.push({ origen, motivo: `duda-de-${origen}`, detalle: (d.pregunta || d.texto).slice(0, 80), que, pregunta: d.pregunta || d.texto, bloques: d.bloques || [], extra: { pagina, lineas, propuesta } });
     }
+  }
+  // MISMO CUADRO, UNA SOLA PREGUNTA (to-do 211, diseño aprobado por Guido el 2026-10-13). localizar y extraer preguntaban por separado sobre
+  // el mismo cuadro y con propuestas opuestas: AEK 2016-17, cuadro 6.23 'Παροχές στο προσωπικό' (L1612-1618): "¿se carga como desglose?" (sí)
+  // y "¿se deja afuera?" (sí). En la cola de Grecia, 24 de las 59 dudas eran 12 pares así, y Guido contestó lo mismo de los dos lados. Contestar
+  // una duda no cambia lo que se carga (solo libera el caso; la de un tema se reusa en los otros años del club), así que juntarlas no cambia
+  // ningún dato. Solo entre ORÍGENES distintos (dos dudas de la misma IA son
+  // dos preguntas suyas; "mismo cuadro" se define abajo, en cuadroDe). Queda la duda con tema (su respuesta se reusa en el club); la otra va como contexto dentro del mismo caso. Si la duda
+  // con tema del mismo cuadro ya la había contestado Guido (arriba, `ya`), la otra se cierra con nota en vez de volver a la cola.
+  // MEDIDO Y DESCARTADO (HALLAZGOS-pipeline.md): cerrar sola la duda sobre un cuadro que la carga no usa se equivocaba en 6 de 26 casos
+  // de Grecia (Asteras 2020-2023: la nota por naturaleza suma un GRUPO de renglones).
+  // EL CUADRO DE UNA DUDA es el PRIMER bloque que nombra (los demás son contexto: "¿se carga b43 como desglose de b40?"). Mismo cuadro = mismo
+  // primer bloque, y que no sea un bloque del estado de resultados: casi todas las dudas de un documento lo nombran, y por ahí se juntaban
+  // preguntas distintas (Volos 2019-2022: "¿unidades?" con "¿se carga el interés de L21?", ambas sobre b1). Compartir líneas o un bloque
+  // cualquiera tampoco alcanza: medido en Grecia, 8 de 18 pares juntados así eran preguntas distintas (Asteras 2020: b37 con b42).
+  const estadoB = new Set(F.ubicacion?.estado || []);
+  const cuadroDe = (x) => { const b = (x.bloques || [])[0]; return b && !estadoB.has(b) ? b : null; };
+  const mismoCuadro = (x, y) => { const c = cuadroDe(x); return !!c && c === cuadroDe(y); };
+  const juntadas = new Set();
+  for (let i = 0; i < pendientes.length; i++) {
+    if (juntadas.has(i)) continue;
+    const a = pendientes[i];
+    const yaC = contestadas.find((c) => c.origen !== a.origen && mismoCuadro(c, a));
+    if (yaC) { notas.push(`duda de ${a.origen} sobre un cuadro cuya duda de ${yaC.origen} ya contestó Guido para el club (${yaC.tema}): ${a.pregunta}`); continue; }
+    const j = pendientes.findIndex((b, k) => k > i && !juntadas.has(k) && b.origen !== a.origen && mismoCuadro(a, b));
+    if (j < 0) { caso(a.motivo, a.detalle, a.que, a.extra); continue; }
+    juntadas.add(j);
+    const b = pendientes[j];
+    const [prim, sec] = a.motivo === 'duda-tema' || b.motivo !== 'duda-tema' ? [a, b] : [b, a];
+    notas.push(`duda de ${sec.origen} juntada con la de ${prim.origen} (mismo cuadro, to-do 211): ${sec.pregunta} ||| la que queda: ${prim.pregunta}`);
+    caso(prim.motivo, prim.detalle, `${prim.que}  [La misma pregunta sobre este cuadro, desde ${sec.origen}: ${sec.pregunta}]`, prim.extra);
   }
 
   // ESCALERA DEL RESULTADO FINAL (Versión 364, diseño aprobado por Guido el 2026-10-02). Si se cerró contra "resultado antes de impuestos"

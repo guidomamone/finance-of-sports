@@ -96,12 +96,6 @@ ni en el comentario de ningún archivo de código.
 
 
 
-211. DUDAS CONTRADICTORIAS SOBRE EL MISMO CUADRO (mejora de script, cola). localizar y extraer preguntan por separado sobre el mismo cuadro y con
-    propuestas opuestas: AEK 2016-2025, "¿se carga 'Παροχές στο προσωπικό' como desglose?" (sí) y "¿se deja afuera?" (sí). Además verificar ya
-    deja afuera solo una nota que no suma ningún renglón: esas dudas no cambian la carga. Evaluar: (a) juntar las dudas por cuadro (bloque y
-    líneas) en un solo caso; (b) cerrar como "no afecta la carga" la duda sobre un cuadro que verificar no usó porque no suma. Medir cuántos
-    casos de la cola de Grecia (37 de 82 eran de este tipo) desaparecen.
-
 212. INTERESES IMPRESOS SIN SIGNO Y TOLERANCIA QUE LOS TAPA (mejora de script, datos). Volos 2021-2025 imprime interés cobrado y pagado sin
     signo; la carga sumaba los dos como costo (2024: financiero −11.072 € en vez de −862 €). Solo 2024 no cerraba: en 2021 y 2025 la diferencia
     (2 × el cobrado) entraba en la tolerancia y la verificación decía "cierra". Hoy se corrigió con ajustes `fila`. Evaluar un escalón: el signo

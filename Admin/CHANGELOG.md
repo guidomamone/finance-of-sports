@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 676 — To-do 211: una sola pregunta por cuadro en la cola (2026-10-13)
+
+- `verificar.mjs`: dos dudas de localizar y de extraer sobre el mismo cuadro (mismo primer bloque, que no sea el estado de resultados) van
+  en un solo caso; si una ya la contestó Guido para el club, la otra se cierra con nota. Simulado sobre la cola de Grecia sin sus respuestas:
+  59 -> 49 preguntas, y en 9 de los 10 pares Guido había contestado lo mismo de los dos lados (el décimo, Levadiakos 2019, son dos preguntas
+  complementarias sobre el mismo cuadro). `prueba-completa`: idéntico. Cerrar sola la duda sobre un cuadro que la carga no usa: medido y
+  descartado (HALLAZGOS). Se borra el 211.
+
 ## Versión 675 — To-do 210: el ensayo evalúa los clubes nuevos con un club provisional (2026-10-13)
 
 - `cargar.mjs`: sin `--escribir`, un club que no existe ya no corta el análisis si su ficha de alta está completa: anota el freno `club`

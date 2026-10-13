@@ -324,6 +324,8 @@ Mitigaciones:
             cuadro duplicado / columna, y la propuesta "sí" ya está aplicada) ── sí ──► se acepta sola, con nota
  ESCALÓN 2b lo mismo cuando lo único que falla es el año vecino (Versión 628, to-do 173: medido contra las respuestas de Guido,
             21 de 21 aceptadas tal cual) ── sí ──► se acepta sola, con nota
+ MISMO CUADRO (to-do 211) dos dudas de localizar y de extraer sobre el mismo cuadro (mismo primer bloque, que no sea el estado) van
+            en UN caso: queda la que tiene tema y la otra va como contexto; si la del tema ya la contestó Guido, la otra se cierra con nota
  COLA HUMANA (escala, perímetro, cuadro de otro año, fila ilegible, "otro" y las propuestas "no" siempre llegan: medido el 2026-10-09,
             un tercio de esas dudas terminó corregido, así que son preguntas legítimas)
 ```

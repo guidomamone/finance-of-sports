@@ -4,6 +4,10 @@ Ideas que se probaron con casos reales y se descartaron, con el porqué, para no
 detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente está en `Admin/PIPELINE.md`.
 
 - **Elegir filas por palabras clave** (la etapa vieja): reproduce los ingresos ya cargados en 7-11% de los años. Por eso existe el proceso nuevo.
+- **Cerrar sola la duda sobre un cuadro que la carga no usa** (to-do 211, parte b): en la cola de Grecia se equivocaba en 6 de 26 dudas
+  (Asteras 2020-2023: la nota por naturaleza no se usaba como desglose de un renglón pero suma un GRUPO de renglones, y Guido dijo que va).
+  Haría falta probar que el cuadro no suma ni un renglón ni un grupo. Y juntar dudas "por cuadro" con líneas superpuestas o un bloque en
+  común junta preguntas distintas (8 de 18 en Grecia): el cuadro de una duda es su PRIMER bloque.
 - **Localizar por páginas enteras:** descartado; un estado puede empezar a mitad de página.
 - **Una sola escala por documento:** descartado; la nota puede estar en miles y el estado en unidades (1. FC Köln).
 - **Escala por "plausibilidad" contra otros años del club:** inútil con inflación y años en otra moneda (Racing).
