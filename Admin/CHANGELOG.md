@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 692 — Perímetro: ajustes por documento y auditoría de A2 (to-dos 226 y 227) (2026-10-13)
+
+- Ajustes `perimetro` individuales para Trabzonspor 2016-2020, Roma 2006 y Bologna 2024-2025 (el ajuste del club no coincidía con el
+  documento; ningún número cambia). Prospecto y memorias de Trabzonspor a documentos-descartados.
+- `perimetro-senales.mjs`: los ajustes que escribe nombran en su `evidencia` los documentos que decidió A2, y `--auditar-a2` arma la
+  auditoría a posteriori para un subagente. Skill `auditoria-finance-of-sports`, eje `datos`: el paso que la corre por país.
+- To-do 229 queda como conocido, sin daño hoy.
+
 ## Versión 691 — Revisión de los niveles de audit.js (to-do 219) (2026-10-13)
 
 - 42 avisos P2 revisados contra la fuente con subagentes: signo-invertido 20, outlier-liga 12 y salto-interanual 4, todos esperables

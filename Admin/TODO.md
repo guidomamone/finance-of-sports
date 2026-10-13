@@ -99,14 +99,6 @@ ni en el comentario de ningún archivo de código.
 
 
 
-227. AUDITORÍA A POSTERIORI DEL PASO A2 DEL PERÍMETRO (pedido de Guido: por si la idea sale mal). A2 decide el perímetro de documentos en
-    idiomas que el paso A no reconoce, con cinco criterios con peso (título 4, texto 4, auditor 1, grupo 1, portada 1; 4 puntos o más =
-    consolidado). Se midió en una muestra de 75 documentos; lo que decida en clubes nuevos no lo revisa nadie. Armar el chequeo: un
-    subagente toma los documentos que pasaron por A2 (`Generados/_cache/claude-perimetro.jsonl`) y cuyo ajuste firmó `perimetro-senales`,
-    los abre y dice si el estado cargado es del grupo o de la sociedad sola, con cita; un error sube el umbral, cambia un peso o agrega un
-    criterio, y se mide otra vez con `Admin/mediciones/perimetro-a2-medicion.txt`. Que entre en la skill `auditoria-finance-of-sports` (eje
-    `datos`, cada tanto) cuando Guido apruebe el texto; mientras, se corre a mano después de cada país nuevo.
-
 229. SUELDOS DESDE LA NOTA DE PERSONAL (conocido, sin daño hoy). Un estado por función ("Έξοδα διοίκησης" único gasto operativo) no separa
     los sueldos y la nota de personal sí ("Σύνολο κόστους μισθοδοσίας περιόδου"): Volos 2021-2025 los tenía dentro de admin_general_expense
     (corregidos con ajustes `fila` y `categoria`). Medido el 2026-10-13: ningún otro año cargado está así (`audit.js` no marca `sin-salarios`
