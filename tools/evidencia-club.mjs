@@ -5,7 +5,7 @@
 // escribían como comentario al lado del dato (cabecera del año, nota de cada fila, ajustes manuales, caja y deuda, liga, marcas de
 // "posiblemente dentro de otro rubro") va a este .md. Este módulo es el ÚNICO que lo edita, así el formato es uno solo para todos.
 //
-// EL FORMATO (el mismo que dejó tools/mover-comentarios-data.mjs):
+// EL FORMATO (el mismo que dejó tools/archivo/mover-comentarios-data.mjs):
 //   # <clubId> — evidencia de carga
 //   ## Cabecera
 //   ## 2025                      <- un título por ejercicio, de más nuevo a más viejo

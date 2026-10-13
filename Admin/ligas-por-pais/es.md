@@ -1,7 +1,7 @@
 # Ligas por país: es
 
 Lo que había como comentario en `data/club-leagues/es.js` (data/ se publica: to-do 209), movido tal cual por
-`tools/mover-comentarios-compartidos.mjs --resto-ligas`: cómo se verificó en qué liga jugó cada club. Las reglas del formato están en
+`tools/archivo/mover-comentarios-compartidos.mjs --resto-ligas`: cómo se verificó en qué liga jugó cada club. Las reglas del formato están en
 `data/club-leagues.js`; las notas de UN club, en su `Admin/carga-clubes/<club>.md`.
 
 ```text

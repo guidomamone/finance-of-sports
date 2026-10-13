@@ -441,7 +441,7 @@ function sumScore(body) {
 function settleByArithmetic(cands) {
   const scores = cands.map((c) => sumScore(c.body));
   const max = Math.max(...scores);
-  // Gana solo si le saca al menos 3 celdas respaldadas a la segunda (mismo MARGEN que tools/revisar-reservas.mjs): por 1-2 celdas no se
+  // Gana solo si le saca al menos 3 celdas respaldadas a la segunda (mismo MARGEN que tools/archivo/revisar-reservas.mjs): por 1-2 celdas no se
   // decide una página.
   const segundo = Math.max(...scores.filter((_, i) => i !== scores.indexOf(max)), 0);
   if (max <= 0 || max < segundo + 3) return null;

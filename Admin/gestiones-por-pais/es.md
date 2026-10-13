@@ -1,7 +1,7 @@
 # Gestiones por país: es
 
 Lo que había como comentario en `data/gestiones/es.js` (data/ se publica: to-do 209), movido tal cual por
-`tools/mover-comentarios-compartidos.mjs --gestiones`: el criterio de este país, y las notas de los clubes que todavía no tienen
+`tools/archivo/mover-comentarios-compartidos.mjs --gestiones`: el criterio de este país, y las notas de los clubes que todavía no tienen
 balances cargados. El formato de las gestiones está en `Admin/ARQUITECTURA.md`; las notas de cada gestión de un club cargado, en
 su `Admin/carga-clubes/<club>.md`.
 

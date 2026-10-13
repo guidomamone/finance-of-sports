@@ -152,3 +152,14 @@ ni en el comentario de ningún archivo de código.
     FALTA, en este orden (decidido con Guido):
       i) `tools/` en carpetas por etapa (sourcing, transcripción, onboarding, generadores, auditoría, común): 99 archivos, 128 imports
          entre ellos, ~248 menciones en docs y skills. Con su propio plan y ejemplo; decidir con Guido antes de empezar.
+
+218. SACAR LAS ETAPAS VIEJAS DE `tools/onboard.mjs` Y ARCHIVAR `tools/prepare-onboarding.mjs` (limpieza de código). `onboard.mjs` era el comando
+    único del pipeline anterior a `lote.mjs`; hoy solo viven dos funciones suyas: `--quien` (qué club y año es un PDF; lo llama
+    `cargar.mjs`) y `--all --dry-run` (qué está cargado; lo llama `inventario-transcripciones.mjs`). Las etapas transcribir / comparar con
+    Gemini / onboardear (`--transcribe-only`, `--check-only`, la etapa `onboard`) ya no las usa nadie y son las únicas que llaman a
+    `prepare-onboarding.mjs` (más un `statSync` de su fecha en `proponer-carga.mjs`, ~línea 701). Separar las dos funciones vivas (en
+    `onboard.mjs` o en una tool chica nueva), borrar las etapas viejas, archivar `prepare-onboarding.mjs` en `tools/archivo/` y medir que
+    el registro salga idéntico (`node tools/estado.mjs --actualizar` antes y después, `diff` de `Admin/registros/transcripciones-estado.jsonl`)
+    y que `cargar.mjs` resuelva igual cada PDF (ensayo de `cargar-lote.mjs` y de `lote.mjs --lista Admin/lotes/prueba-completa.txt`).
+    `suggest-category-precedent.mjs`, `sum-check.mjs`, `extract-table-rows.mjs` y `compare-transcripts.mjs` NO se archivan: las usan la skill
+    `club-data-mapping` y `inventario-transcripciones.mjs`.

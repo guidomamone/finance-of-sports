@@ -1,6 +1,6 @@
 # viborg-dk — evidencia de carga
 
-Lo que había como comentario en `data/dk/viborg-dk-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+Lo que había como comentario en `data/dk/viborg-dk-data.js`, movido tal cual por `tools/archivo/mover-comentarios-data.mjs` (la regla:
 `Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
 meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
 
