@@ -23,6 +23,9 @@ window.RANKINGS["gr-superleague"] = {
   2021: {
     leagueSize: null,
     clubs: [
+      { id:"oficrete-gr", revenue:7.202, reportType:"official_balance_sheet",
+        sourceId:"oficrete-gr-ofi-income-stmt-2021-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.2],["Otros ingresos",4.003]] },
       { id:"aellarissa-gr", revenue:5.132, reportType:"official_balance_sheet",
         sourceId:"aellarissa-gr-ael-notes-elp-2021-06-30",
         mix:[["Comercial / Sponsors",0.048],["Fútbol profesional (sin desglosar por la fuente)",2.457],["Otros ingresos",2.627]] },
