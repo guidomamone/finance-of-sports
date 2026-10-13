@@ -5,6 +5,13 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
 
 ---
 
+- **`data/<club>-data.js` NO LLEVA COMENTARIOS.** Ese archivo se publica entero: cada comentario lo baja cada visitante, y se lee con
+  "ver código fuente". La evidencia de una carga (de qué documento sale, perímetro, unidades, por qué cada rubro va a su categoría,
+  ajustes, contra qué total cierra, de dónde salió la caja y la deuda) va en `Admin/carga-clubes/<clubId>.md`, que no se publica. Un
+  título por ejercicio, y adentro ingresos, gastos y meta. Las notas de cada fila van en una tabla con su número de fila, porque hay
+  nombres de rubro repetidos dentro del mismo año. Lo escriben los scripts del pipeline cuando cargan, y una carga a mano también.
+  Cuando termine la mudanza, `node tools/audit.js` va a avisar si aparece un comentario en `data/`.
+
 - DÓNDE PUEDE VIVIR UN DATO INVENTADO, Y DÓNDE NO (Versión 152, actualizada en la 155 cuando el
   único que existía se borró). El proyecto existe porque sus números son verificables, así que un
   archivo de datos de mentira es lo más peligroso que se le puede agregar. **Hoy no hay ninguno.**

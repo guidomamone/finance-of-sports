@@ -94,7 +94,7 @@ notas de roll-forward de activos permiten separar `player_amortisation` de `depr
 "Kontraktrettigheder" contra el de PP&E.
 
 **Efecto en "Formato simplificado"**: la fila "Fútbol profesional (sin desglosar por la fuente)" va a tener prácticamente el 100%
-del revenue. Es el comportamiento CORRECTO acá, no un error de carga. Documentalo en el comentario de cabecera del archivo (con la
+del revenue. Es el comportamiento CORRECTO acá, no un error de carga. Documentalo en `Admin/carga-clubes/<clubId>.md` (con la
 cita textual de la nota de política contable que confirma el § 32) y anotalo como pregunta en `Admin/dudas-por-club.md`, por si
 existe una versión más desglosada del informe (uso interno del club).
 
