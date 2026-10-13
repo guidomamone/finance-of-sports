@@ -190,8 +190,8 @@
     <div class="tbl-wrap"><table class="ledger">
       <thead><tr><th>Archivo</th><th>Qué hace</th><th class="num">Peso</th></tr></thead>
       <tbody>
-        <tr><td class="mono">index.html</td><td>El HTML y el script principal (KPIs, gráficos, Inicio, Comparar, verificación). Ya no lleva ningún comentario con estado o to-do: eso vive en <code>Admin/</code>.</td><td class="num">82 KB</td></tr>
-        <tr><td class="mono">js/styles.css</td><td>Todo el CSS del sitio, en su propio archivo (no vive inline en <code>index.html</code>), con el mismo criterio de caché que el resto de <code>js/</code> (<code>?v=</code> literal en el <code>&lt;link&gt;</code>, no <code>ASSET_V</code> — ver el gotcha de caché de <code>CLAUDE.md</code>).</td><td class="num">60 KB</td></tr>
+        <tr><td class="mono">index.html</td><td>El HTML del sitio; el script principal está en <code>js/principal.js</code> (KPIs, gráficos, Inicio, Comparar, verificación). Ya no lleva ningún comentario con estado o to-do: eso vive en <code>Admin/</code>.</td><td class="num">82 KB</td></tr>
+        <tr><td class="mono">css/styles.css</td><td>Todo el CSS del sitio, en su propio archivo (no vive inline en <code>index.html</code>), con el mismo criterio de caché que el resto de <code>js/</code> (<code>?v=</code> literal en el <code>&lt;link&gt;</code>, no <code>ASSET_V</code> — ver el gotcha de caché de <code>CLAUDE.md</code>).</td><td class="num">60 KB</td></tr>
         <tr><td class="mono">js/finanzas-calc.js</td><td>El motor: convierte las líneas de un balance en los totales, los porcentajes y la cascada hasta el resultado neto. Un solo motor para los 161 clubes, <code>computeYearGeneric()</code>.</td><td class="num">53 KB</td></tr>
         <tr><td class="mono">js/finanzas-render.js</td><td>Dibuja: arma las tablas, los gráficos y los números de arriba de cada pestaña.</td><td class="num">73 KB</td></tr>
         <tr><td class="mono">js/selector.js</td><td>El archivo más grande de <code>js/</code>. Elegir club (el modal paso a paso) y Comparar (ligas, clubes o una mezcla de ambos con su propio agregador) viven juntos acá.</td><td class="num">118 KB</td></tr>

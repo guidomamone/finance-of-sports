@@ -13,10 +13,11 @@ Para las reglas vigentes de UI/datos, ver `Admin/CONVENCIONES.md`.
 ---
 
 ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
-- index.html: HTML y el <script> principal con toda la lógica de render. Desde
+- index.html: el HTML del sitio; la lógica principal (arranque, carga de clubes, navegación, verificación) está en
+  js/principal.js, que se carga al final del body, después de los demás js/. Desde
   la Versión 102, TODOS los datos de club (Boca incluida) viven en su propio
   data/<país>/<club>-data.js, ninguno inline acá. Desde la Versión 238, el CSS tampoco
-  vive acá: está en js/styles.css, referenciado con un <link> que lleva el
+  vive acá: está en css/styles.css, referenciado con un <link> que lleva el
   mismo `?v=` que los <script src> propios.
 - data/<país>/<clubId>-data.js: un archivo por club, en la carpeta de su país (código ISO de `clubs[clubId].country` en
   minúscula, igual que `data/club-leagues/` y `data/gestiones/`). El sitio arma la ruta en `loadClubData()`; las tools, SOLO con

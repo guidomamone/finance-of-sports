@@ -148,8 +148,7 @@ ni en el comentario de ningún archivo de código.
     Las notas de sourcing (`<País>/<Club>.md`, `_indice/`, `README.md`) en `Admin/sourcing/`; `fuentes/` quedó solo con las páginas públicas.
     `cargar-lote.mjs` y `bfo-rusia.mjs` exigen, commitean y revierten `Admin/sourcing` junto con `fuentes`.
     Los data files de club en `data/<país>/<clubId>-data.js`; la ruta vive solo en `tools/data-clubes.js` (tools) y `loadClubData()` (sitio).
+    El script principal de `index.html` en `js/principal.js` (Mixpanel y `ASSET_V` siguen inline a propósito) y el CSS en `css/styles.css`.
     FALTA, en este orden (decidido con Guido):
-      h) `js/`: sacar los ~78 KB de JS inline de `index.html` a archivos de `js/`, y `js/styles.css` a `css/`. Verificar en la vista
-         previa y con `?audit=1`.
       i) `tools/` en carpetas por etapa (sourcing, transcripción, onboarding, generadores, auditoría, común): 99 archivos, 128 imports
          entre ellos, ~248 menciones en docs y skills. Con su propio plan y ejemplo; decidir con Guido antes de empezar.

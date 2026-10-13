@@ -83,7 +83,7 @@ function loadEngine() {
   sandbox.globalThis = sandbox;
   const ctx = vm.createContext(sandbox);
 
-  // Globals que `js/finanzas-calc.js` espera del <script> de index.html, no de
+  // Globals que `js/finanzas-calc.js` espera de js/principal.js, no de
   // los data files. Mismos valores que el sitio al cargar.
   vm.runInContext('var FX_RATE = 1450; var currentCurrency = "USD"; var simplifyFormat = true;',
     ctx, { filename: 'globals-de-index.html' });

@@ -73,7 +73,7 @@ emergencia, no para visitantes). Mockup aprobado y el porqué de cada decisión:
 ## Comparar con el diseño de Finanzas (to-do 23, Versión 559): cómo es y qué no romper
 
 Mockup aprobado y el porqué de cada decisión (en el comentario del principio): `Prototyping/Comparar/mockup-23.html`. Todo vive en
-`js/selector.js`; el CSS, en `js/styles.css` (bloques `cd-*`, más las clases de Finanzas que se reusan: `.fin-year*`, `.pl-multi`).
+`js/selector.js`; el CSS, en `css/styles.css` (bloques `cd-*`, más las clases de Finanzas que se reusan: `.fin-year*`, `.pl-multi`).
 
 - **Los cards son el título.** No hay "A contra B" ni párrafo de reglas. Abajo del nombre, una línea dice cómo se arma el lado
   (`comoSeArma()`: país · promedio/suma de N ejercicios de M clubes · "incluye N presupuesto"). B lleva la letra en naranja

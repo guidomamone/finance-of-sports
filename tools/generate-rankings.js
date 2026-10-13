@@ -81,7 +81,7 @@ function loadEngine() {
   sandbox.globalThis = sandbox;
   const ctx = vm.createContext(sandbox);
 
-  // Globals que `js/finanzas-calc.js` espera del <script> de index.html. Los
+  // Globals que `js/finanzas-calc.js` espera de js/principal.js. Los
   // mismos valores que usa la auditoría. `toDisplayValue(v, meta, 'USD')` recibe
   // la moneda explícita, así que FX_RATE no entra en ninguna cuenta de acá: se
   // declara igual porque el archivo lo referencia al cargarse.

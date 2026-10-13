@@ -4,7 +4,7 @@
 // (buildNativeSectionHtml, renderFinanzasStats*Generic, update*Generic) calculan valores chicos (% del total, crecimiento) en el
 // mismo paso en que arman el HTML: separarlo exige tocar funciones financieras ya verificadas, y se hace recién cuando haga falta.
 //
-// Orden de carga: después de js/finanzas-calc.js y de los data/*.js, antes del <script> principal de index.html.
+// Orden de carga: después de js/finanzas-calc.js y de los data/*.js, antes de js/principal.js.
 // ============================================================================
 
   // El bocadillo de una fila que el documento junta con otra (`incluidoEn`): nombra el rubro donde está. Lo usan la tabla de

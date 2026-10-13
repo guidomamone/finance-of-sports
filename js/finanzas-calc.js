@@ -4,7 +4,7 @@
 // js/finanzas-render.js).
 //
 // Orden de carga: después de clubs.js/category-map.js/currency-map.js (lee esas constantes por nombre), antes de
-// js/finanzas-render.js y del <script> principal de index.html.
+// js/finanzas-render.js y de js/principal.js.
 // ============================================================================
 
 

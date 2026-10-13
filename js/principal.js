@@ -1,0 +1,630 @@
+  // `window.CLUB_GENERIC_DATA` solo lo crean los data/<país>/<club>-data.js, que se cargan bajo demanda. Se crea acá, antes que nada: una
+  // referencia SIN `window.` a un global nunca declarado tira ReferenceError y corta el resto del INIT.
+  window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
+
+  const FX_RATE = 1450; // ARS por USD, placeholder de referencia
+  let currentCurrency = 'USD';
+  let simplifyFormat = true; // toggle "Formato del club" / "Formato simplificado"
+
+  // El club de la visita anterior, si hubo. `currentClub` arranca SIEMPRE en null: el sitio se dibuja en frío (la portada) y
+  // recién al final del INIT se pide el club guardado, que entra por el mismo camino que un click en el selector (selectClub ->
+  // loadClubData -> refreshAllForClub). Un solo camino para llegar a un club mostrado.
+  const clubGuardado = CLUB_SELECTOR.savedClub();
+  let currentClub = null;
+
+  // ---------- CARGA BAJO DEMANDA DE DATOS POR CLUB ----------
+  // Todo club se inyecta como <script> recién cuando el visitante lo elige; `clubDataLoaded` cachea qué ya se bajó.
+  // CONVENCIÓN: el archivo de CUALQUIER club es SIEMPRE `data/<país>/<clubId>-data.js` (país = `clubs[clubId].country` en minúscula),
+  // sin registro que mantener; las tools arman la misma ruta en tools/data-clubes.js. Si alguna vez un club necesita otro nombre, va una
+  // entrada en CLUB_DATA_SCRIPT_OVERRIDE, no un mapa completo.
+  const CLUB_DATA_SCRIPT_OVERRIDE = {};
+  // Arranca vacío: ningún data file de club entra eager.
+  const clubDataLoaded = {};
+  // Dos llamadas SIMULTÁNEAS al mismo club devuelven la MISMA promesa: si no, el archivo se ejecuta dos veces y la segunda tira
+  // "Identifier ... has already been declared" (los `const` de un data file viven en el scope global). Pasa al comparar varios clubes
+  // en paralelo.
+  const clubDataPending = {};
+  function loadClubData(clubId){
+    if(clubDataLoaded[clubId] || !clubs[clubId]) return Promise.resolve();
+    if(clubDataPending[clubId]) return clubDataPending[clubId];
+    // `?v=`: mismo ASSET_V que los <script src> estáticos. Sin esto, un visitante con un data file viejo cacheado seguiría viendo
+    // números viejos después de un deploy que los corrigió.
+    const base = CLUB_DATA_SCRIPT_OVERRIDE[clubId] || ('data/' + clubs[clubId].country.toLowerCase() + '/' + clubId + '-data.js');
+    const src = base + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+    clubDataPending[clubId] = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = src;
+      script.onload = () => { clubDataLoaded[clubId] = true; delete clubDataPending[clubId]; resolve(); };
+      // Se borra también al fallar, para que un reintento (el visitante que elige otra vez el
+      // mismo club después de un error de red) vuelva a intentarlo de verdad.
+      script.onerror = () => { delete clubDataPending[clubId]; reject(new Error('No se pudo cargar ' + src)); };
+      document.head.appendChild(script);
+    });
+    return clubDataPending[clubId];
+  }
+
+  // El ejercicio que se lleva a otra liga: el balance más nuevo de los elegidos; si no se eligió ninguno con balance, el balance
+  // más nuevo del club (CLUB_INDEX). null si no hay.
+  function ligaSimYear(){
+    const elegido = FIN_SEL.lastBalance(currentClub);
+    if(elegido) return elegido;
+    const BAL = { official_balance_sheet:1, unofficial_mirror:1, official_budget_and_balance:1 };
+    const yrs = ((window.CLUB_INDEX || {})[currentClub] || {}).yrs || [];
+    const ultimo = yrs.find(p => BAL[p[1]]);
+    return ultimo ? ultimo[0] : null;
+  }
+  function renderLigaSimCard(isGestion){
+    const card = document.getElementById('ligaSimWrap');
+    if(!card) return;
+    const year = currentClub && !isGestion ? ligaSimYear() : null;
+    card.style.display = year ? '' : 'none';
+    if(!year) return;
+    const club = clubs[currentClub] || {};
+    const nombre = club.displayName || ((window.CLUB_INDEX || {})[currentClub] || {}).n || currentClub;
+    const ej = club.fiscalYearStart === '01-01' ? String(year) : (year - 1) + '/' + year;
+    document.getElementById('ligaSimTitle').textContent = I18N.t('finanzas.ligasim.title', '{club} en otra liga').replace('{club}', nombre);
+    document.getElementById('ligaSimSub').textContent = I18N.t('finanzas.ligasim.sub',
+      'Ponemos sus ingresos de {ej} en el ranking de ingresos de otra liga, mismo ejercicio. No es una predicción deportiva: es cuánta plata maneja comparado con esos clubes.').replace('{ej}', ej);
+    card.dataset.year = year;
+    renderLigaSimPuesto(year, ej);
+  }
+
+  // El puesto en otra liga, sin salir de Finanzas. Candidatas = las ligas que no son la del club y que tienen clubes cargados ESE
+  // ejercicio (leagueAt sobre el índice de clubes, sin bajar ningún ranking). Default: la de más clubes cargados. El puesto sale de
+  // LIGA_VIEW.filaSimulada (el motor de la simulación de Ligas) contra el ranking precalculado. Un ranking tiene solo los clubes
+  // cargados, así que el texto dice entre cuántos, nunca "de 20" a secas.
+  let ligaSimElegida = {}, ligasPorClubListas = false;
+  function renderLigaSimPuesto(year, ej){
+    const res = document.getElementById('ligaSimRes'), btnViejo = document.getElementById('btnLigaSim');
+    const club = currentClub;
+    if(!res || typeof leagueAt !== 'function' || !window.LIGA_VIEW || !LIGA_VIEW.filaSimulada){ if(res) res.hidden = true; return; }
+    // Las ligas por club (data/club-leagues/) se cargan aparte: hasta que lleguen, no hay candidatas.
+    if(!ligasPorClubListas && typeof window.loadClubLeagues === 'function'){
+      window.loadClubLeagues().then(() => { ligasPorClubListas = true; if(currentClub === club) renderLigaSimPuesto(year, ej); });
+      res.hidden = true; return;
+    }
+    const propia = leagueAt(club, year);
+    const cuenta = {};
+    Object.entries(window.CLUB_INDEX || {}).forEach(([id, c]) => {
+      if(id === club || !(c.yrs || []).some(p => p[0] === year)) return;
+      const lid = leagueAt(id, year);
+      if(lid && lid !== propia) cuenta[lid] = (cuenta[lid] || 0) + 1;
+    });
+    const ligas = Object.keys(cuenta).sort((a, b) => (cuenta[b] - cuenta[a]) || ((LEAGUES[a] || {}).name || a).localeCompare((LEAGUES[b] || {}).name || b));
+    if(!ligas.length){ res.hidden = true; btnViejo.hidden = false; return; }
+    const sel = document.getElementById('ligaSimLeague');
+    const clave = club + '|' + year;
+    const elegida = ligas.includes(ligaSimElegida[clave]) ? ligaSimElegida[clave] : ligas[0];
+    sel.innerHTML = ligas.map(l => `<option value="${l}">${(LEAGUES[l] || {}).name || l}</option>`).join('');
+    sel.value = elegida;
+    sel.onchange = () => { ligaSimElegida[clave] = sel.value; renderLigaSimPuesto(year, ej); };
+    res.hidden = false; btnViejo.hidden = true;
+    const rank = document.getElementById('ligaSimRank'), cap = document.getElementById('ligaSimCap');
+    rank.textContent = '…'; cap.textContent = '';
+    LIGA_VIEW.loadRanking(elegida).then(() => {
+      if(currentClub !== club || sel.value !== elegida) return;
+      const r = LIGA_VIEW.rankingDe(elegida, year), yo = LIGA_VIEW.filaSimulada(club, year);
+      if(!r || !yo){ rank.textContent = '—'; cap.textContent = ''; return; }
+      const otros = (r.clubs || []).filter(c => c.id !== club && c.revenue);
+      const puesto = 1 + otros.filter(c => c.revenue > yo.revenue).length;
+      const nombreLiga = (LEAGUES[elegida] || {}).name || elegida;
+      rank.textContent = I18N.t('finanzas.ligasim.rank', '{p}.º').replace('{p}', puesto);
+      cap.textContent = I18N.t('finanzas.ligasim.among', 'en ingresos, entre los {n} clubes de {liga} {ej} que tenemos cargados')
+        .replace('{n}', otros.length + 1).replace('{liga}', nombreLiga).replace('{ej}', ej)
+        + (r.leagueSize ? ' ' + I18N.t('finanzas.ligasim.size', '(la liga tuvo {m})').replace('{m}', r.leagueSize) : '') + '.';
+      document.getElementById('btnLigaSimVer').onclick = () => {
+        LIGA_VIEW.showConSimulados(elegida, year, [{ clubId: club, clubYear: year }]);
+        irASeccion('liga');
+      };
+    });
+  }
+
+  function refreshFinanzas(){
+    const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
+    isGestion ? updateFinanzasByGestionGeneric(currentClub) : updateFinanzasByAnioGeneric(currentClub);
+    renderDataQualityBannerForCurrentSelection();
+    renderFuentesCard();
+    // El card de simulación solo tiene sentido con un club elegido y en modo "Año a año" (es de UN ejercicio, no de una gestión).
+    renderLigaSimCard(isGestion);
+    if(window.FIN_MULTI) FIN_ANIOS.render(currentClub);
+    if(window.FIN_MULTI && window.FIN_GESTION) FIN_GESTION.render(currentClub);
+    if(window.FIN_REAL_UI) FIN_REAL_UI.render(currentClub, FIN_SEL.years());
+    // Guardado en Mi Cuenta: cada vez que el club/año/gestión se asienta se avisa a js/cuenta.js, que guarda solo (no es un botón).
+    // Sin sesión, o en la portada, CUENTA.notifyStateChange no hace nada.
+    if(window.CUENTA && currentClub && (isGestion || FIN_SEL.years().length)){
+      window.CUENTA.notifyStateChange({
+        view: 'finanzas',
+        club: currentClub,
+        mode: isGestion ? 'gestion' : 'anio',
+        year: isGestion ? null : FIN_SEL.primary(),
+        // La lista completa de ejercicios elegidos. `year` (el más nuevo) se sigue guardando para que una búsqueda se pueda reabrir con
+        // la vista de un año y para que las búsquedas viejas, que solo tienen `year`, se sigan leyendo.
+        years: isGestion ? null : FIN_SEL.years(),
+        gestion: isGestion ? document.getElementById('gestionSelect').value : null,
+      });
+    }
+  }
+
+  // Cambiar de club en el header reconstruye los selectores y vuelve a dibujar TODAS las
+  // secciones (no solo la que está a la vista), para que al cambiar de pestaña ya esté todo
+  // al día con el club elegido, en vez de quedar desactualizado hasta el próximo evento.
+  function refreshAllForClub(){
+    populateFinanzasSelectors(currentClub);
+    // Los cards de presupuesto son genéricos: cada uno decide su contenido en su render (renderSupuestosCard(), etc.).
+    // Toggle de moneda: nativa/USD para cualquier club (populateCurrencyToggle(), y la cabecera de data/currency-map.js).
+    populateCurrencyToggle(currentClub);
+    // "Formato del club" / "Formato simplificado": siempre visible, para cualquier club.
+    refreshFinanzas();
+    populatePasesSelectors(currentClub);
+    applyPasesFilters();
+    populateResultadosSelector(currentClub);
+    renderResultados();
+    renderTitulosTable();
+    populateCompararSelectors(currentClub);
+    renderComparar();
+    // Pestaña Fuentes: los documentos son por club, así que se repintan al cambiar de club, no en cada cambio de ejercicio.
+    renderFuentesClubCard();
+  }
+
+  // ---------- SELECTOR DE CLUB (js/selector.js) ----------
+  // Este archivo le pasa 2 funciones y no sabe nada más de él; el selector no sabe cómo se renderiza el sitio. Cambiar de club es:
+  // cargar su data file, actualizar `currentClub`, repintar todo, y verificar los tie-outs de ese club.
+  // Cambiar de pestaña APRETANDO EL BOTÓN del nav, en vez de repetir las clases `active` que pone su listener: si esa navegación
+  // cambia, esto no se entera.
+  function irASeccion(id){
+    const btn = document.querySelector('#mainNav button[data-section="' + id + '"]');
+    if(btn) btn.click();
+    window.scrollTo(0, 0);
+  }
+  // Lo prende la opción "quiero ver un club en particular" de la bifurcación de Inicio, y lo
+  // apaga selectClub() al aterrizar. Un flag y no un parámetro de selectClub() porque entre
+  // el click y la elección hay un panel entero de por medio.
+  let irAFinanzasAlElegir = false;
+
+  function selectClub(newClub){
+    const previousClub = currentClub;
+    // null = volver a la portada (el "Ver la portada" del panel). No se descarga ni
+    // se descarta ningún dato: el archivo del club que estaba cargado queda en
+    // memoria, así que volver a elegirlo es instantáneo.
+    if(newClub === null){
+      currentClub = null;
+      applyClubMode();
+      return Promise.resolve();
+    }
+    return loadClubData(newClub).then(() => {
+      // Se apaga el aviso de un intento anterior que falló: vive en <main> y no se esconde solo al cambiar de pestaña, así que un error
+      // viejo quedaría al lado de los datos del club que SÍ cargó.
+      const avisoPrevio = document.getElementById('clubLoadError');
+      if(avisoPrevio) avisoPrevio.hidden = true;
+      currentClub = newClub;
+      applyClubMode();
+      refreshAllForClub();
+      verifyTieOuts(newClub);
+      // El que entró por "quiero ver un club en particular" aterriza en FINANZAS. Es lo único que distingue ese camino del botón de
+      // club del header, que te deja donde estabas.
+      if(irAFinanzasAlElegir){
+        irAFinanzasAlElegir = false;
+        irASeccion('finanzas');
+      }
+    }).catch(err => {
+      // NO un alert(): un alert nativo CONGELA la página entera (timers, onload de scripts). Si el club que falla es el guardado en
+      // localStorage, el sitio quedaría congelado en cada visita. El error va a la consola y a un aviso en la página.
+      console.error('[club] no se pudo cargar', newClub, err);
+      currentClub = previousClub;
+      applyClubMode();
+      const aviso = document.getElementById('clubLoadError');
+      if(aviso){
+        aviso.textContent = 'No se pudieron cargar los datos de ' + ((clubs[newClub] || {}).displayName || newClub) + '. Probá de nuevo en un momento.';
+        aviso.hidden = false;
+      }
+    });
+  }
+
+  // Reabrir una búsqueda guardada desde Mi Cuenta. js/cuenta.js no toca `currentClub` ni ningún <select>: le pasa el `state`
+  // guardado y esta función hace lo mismo que haría el visitante a mano (elegir el club, después el año/gestión, y aterrizar en
+  // Finanzas).
+  function reopenSavedSearch(state){
+    if(!state) return;
+    // Comparación (pestaña "Comparar"/vs): CLUB_SELECTOR sabe rearmar los dos lados, index.html
+    // solo tiene que pararse en esa pestaña.
+    if(state.view === 'vs'){
+      CLUB_SELECTOR.reopenComparacion(state.ladoA, state.ladoB);
+      irASeccion('vs');
+      return;
+    }
+    // Simulación de uno o más clubes en una liga que no es la suya. `state.clubes` es SIEMPRE un array. Necesitan sus data files
+    // cargados para recalcular el ingreso con computeYearGeneric(), pero NO pasa por selectClub(): no cambia el club activo, solo arma
+    // una vista (LIGA_VIEW no sabe cargar clubes).
+    if(state.view === 'ligaSim'){
+      if(!state.league || !state.clubes || !state.clubes.length) return;
+      Promise.all(state.clubes.map(c => loadClubData(c.club).catch(() => null))).then(() => {
+        LIGA_VIEW.showConSimulados(state.league, state.leagueYear,
+          state.clubes.map(c => ({ clubId:c.club, clubYear:c.clubYear })));
+        irASeccion('liga');
+      });
+      return;
+    }
+    if(!state.club) return;
+    selectClub(state.club).then(() => {
+      const isGestion = state.mode === 'gestion';
+      document.querySelectorAll('#viewToggle button').forEach(b => b.classList.toggle('active', b.dataset.view === state.mode));
+      document.getElementById('gestionSelectWrap').style.display = isGestion ? 'inline' : 'none';
+      document.getElementById('anioSelectWrap').style.display = isGestion ? 'none' : 'inline';
+      if(isGestion) document.getElementById('gestionSelect').value = state.gestion;
+      else {
+        document.getElementById('anioSelect').value = String(state.year);
+        FIN_SEL.set([parseInt(document.getElementById('anioSelect').value, 10)]);
+        // Una búsqueda guardada con varios ejercicios los vuelve a elegir todos (los que el club siga teniendo). Con ?multi=0 queda el
+        // más nuevo, `year`.
+        if(window.FIN_MULTI && Array.isArray(state.years) && state.years.length > 1){
+          const hay = new Set([...document.getElementById('anioSelect').options].map(o => parseInt(o.value, 10)));
+          const ys = state.years.filter(y => hay.has(y));
+          if(ys.length) FIN_SEL.set(ys);
+        }
+      }
+      refreshFinanzas();
+      irASeccion('finanzas');
+    });
+  }
+
+  // applyClubMode(): la única función que decide qué se ve según haya club o no. Las pestañas que funcionan SIN club se ven
+  // siempre (Inicio, Comparar, Ligas, Finanzas, Mi Cuenta) y las que no significan nada sin uno se esconden hasta que lo haya
+  // (Fuentes). Finanzas sin club no está vacía: es el card del selector. Si el visitante estaba en una pestaña que acaba de
+  // esconderse, vuelve a Inicio.
+  const TABS_SIN_CLUB = ['inicio', 'vs', 'liga', 'finanzas', 'cuenta'];
+  function applyClubMode(){
+    const cold = !currentClub;
+    document.getElementById('mainNav').style.display = '';
+    document.querySelectorAll('main > section').forEach(sec => { sec.style.display = ''; });
+
+    document.querySelectorAll('#mainNav button').forEach(b => {
+      b.hidden = cold && TABS_SIN_CLUB.indexOf(b.dataset.section) < 0;
+    });
+    const activo = document.querySelector('#mainNav button.active');
+    if(activo && activo.hidden) document.querySelector('#mainNav button[data-section="inicio"]').click();
+
+
+    CLUB_SELECTOR.renderButton();
+  }
+
+  CLUB_SELECTOR.init({
+    getClub: () => currentClub,
+    pickClub: selectClub,
+    // Elegir una LIGA en el selector aterriza en la pestaña Ligas.
+    pickLeague: (leagueId, year) => LIGA_VIEW.show(leagueId, year).then(() => irASeccion('liga')),
+  });
+
+  // js/cuenta.js no sabe cargar un club ni cambiar de pestaña: se le pasa reopenSavedSearch() para que reabrir una búsqueda
+  // guardada haga exactamente lo mismo que elegirla a mano.
+  CUENTA.init({
+    reopen: reopenSavedSearch,
+  });
+
+  // La vista de liga tampoco sabe navegar ni cargar un club: se le pasa qué hacer cuando
+  // el visitante clickea una barra o una fila de la tabla, que es ir a Finanzas de ese club.
+  LIGA_VIEW.init({
+    pickClub: selectClub,
+    goFinanzas: () => irASeccion('finanzas'),
+    // El "Ver la liga ›" de cada bloque de la vidriera de Inicio.
+    goLiga: () => irASeccion('liga'),
+    // LIGA_VIEW no sabe de Supabase: avisa acá cuando una simulación se armó de verdad, y acá se decide si guardarla (sin sesión,
+    // notifyStateChange no hace nada).
+    onSimulado: (league, leagueYear, clubes) => {
+      if(window.CUENTA) window.CUENTA.notifyStateChange({
+        view: 'ligaSim', league, leagueYear, clubes,
+      });
+    },
+  });
+  document.getElementById('btnLigaSim').addEventListener('click', () => {
+    LIGA_VIEW.iniciarSimulacion(currentClub, parseInt(document.getElementById('ligaSimWrap').dataset.year, 10));
+    irASeccion('liga');
+  });
+  // Se dibujan las dos pantallas del módulo: la pestaña (estado frío: la grilla de ligas) y la vidriera de Inicio.
+  LIGA_VIEW.refresh();
+
+  applyClubMode();
+
+  // ---------- LA BIFURCACIÓN DE INICIO ----------
+  // La primera opción abre el selector y al elegir cae en Finanzas; la segunda lleva a la pestaña Comparar.
+  document.getElementById('bifUno').addEventListener('click', () => {
+    irAFinanzasAlElegir = true;
+    CLUB_SELECTOR.open();
+  });
+  document.getElementById('bifDos').addEventListener('click', () => irASeccion('vs'));
+
+  document.getElementById('gestionSelect').addEventListener('change', refreshFinanzas);
+  // El dropdown escribe en FIN_SEL (js/finanzas-render.js) y nadie más lo lee.
+  document.getElementById('anioSelect').addEventListener('change', e => {
+    FIN_SEL.set([parseInt(e.target.value, 10)]);
+    refreshFinanzas();
+  });
+  document.querySelectorAll('#viewToggle button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#viewToggle button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const isGestion = btn.dataset.view === 'gestion';
+      document.getElementById('gestionSelectWrap').style.display = isGestion ? 'inline' : 'none';
+      document.getElementById('anioSelectWrap').style.display = isGestion ? 'none' : 'inline';
+      refreshFinanzas();
+    });
+  });
+
+  // Verificación automática: para cada club-ejercicio con un total oficial conocido, chequea que la suma de las líneas cargadas
+  // coincida, y avisa por consola si algo no cierra. Revisa solo los clubes cargados en memoria; `onlyClub` (opcional) la limita al
+  // que se acaba de cargar (la llama loadClubData()). Para todos los clubes: auditAll().
+  function verifyTieOuts(onlyClub){
+    const checks = [];
+    // Cada club guarda officialTotalRevenue / officialTotalExpenses / officialPAT dentro de su fiscalYearMeta[year]: agregar un club o
+    // un ejercicio no toca esta función. officialPAT se omite en un presupuesto puro (no hay un resultado real impreso contra qué
+    // comparar).
+    Object.keys(window.CLUB_GENERIC_DATA || {}).forEach(clubId => {
+      const meta = window.CLUB_GENERIC_DATA[clubId].fiscalYearMeta;
+      if(!meta) return;
+      Object.keys(meta).map(Number).forEach(year => {
+        const y = meta[year];
+        if(y.officialTotalRevenue == null && y.officialTotalExpenses == null && y.officialPAT == null) return;
+        const computed = computeYearGeneric(clubId, year);
+        if(y.officialTotalRevenue != null){
+          checks.push({ club:clubId, year, label:'Revenue', computed: computed.revenue, official: y.officialTotalRevenue });
+        }
+        if(y.officialTotalExpenses != null){
+          checks.push({ club:clubId, year, label:'Expenses (incl. no-efectivo)', computed: Math.abs(computed.expenses + computed.nonCash), official: Math.abs(y.officialTotalExpenses) });
+        }
+        if(y.officialPAT != null){
+          checks.push({ club:clubId, year, label:'Resultado neto (PAT)', computed: computed.pat, official: y.officialPAT });
+        }
+      });
+    });
+    checks.filter(c => c.official !== null && (!onlyClub || c.club === onlyClub)).forEach(c => {
+      const delta = +(c.computed - c.official).toFixed(3);
+      const ok = Math.abs(delta) < 0.01;
+      console[ok ? 'log' : 'error'](`[verificación] ${c.club} ${c.year} ${c.label}: calculado ${c.computed} vs. oficial ${c.official} -> ${ok ? 'OK, cierra' : 'NO CIERRA, diferencia de ' + delta}`);
+    });
+  }
+
+  // ---------- ACCESO POR CLUB PARA PASES / RESULTADOS / COMPARAR GESTIONES ----------
+  // Todos los clubes viven en CLUB_GENERIC_DATA: un club nuevo no toca estas funciones. Devuelven null si no hay club elegido o si
+  // sus datos todavía no se cargaron (ver clubCargado()).
+  function pasesDataForClub(clubId){
+    return clubCargado(clubId) ? CLUB_GENERIC_DATA[clubId].pasesData : null;
+  }
+  function resultadosDataForClub(clubId){
+    return clubCargado(clubId) ? CLUB_GENERIC_DATA[clubId].resultadosData : null;
+  }
+  function titulosDataForClub(clubId){
+    return clubCargado(clubId) ? CLUB_GENERIC_DATA[clubId].titulosData : null;
+  }
+
+  // clubCargado(clubId): el único lugar que contesta "¿hay datos de este club acá y ahora?" (distingue "todavía no se eligió
+  // club" de "se eligió pero su archivo todavía no bajó").
+  function clubCargado(clubId){
+    return !!(clubId && (window.CLUB_GENERIC_DATA || {})[clubId]);
+  }
+  window.clubCargado = clubCargado;
+
+  // ---------- NAVEGACIÓN ----------
+  const navButtons = document.querySelectorAll('#mainNav button');
+  const sections = document.querySelectorAll('main > section');
+  navButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      navButtons.forEach(b => b.classList.remove('active'));
+      sections.forEach(s => s.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.section).classList.add('active');
+      // La pestaña activa también en <body>, para que el CSS esconda lo que en ella no hace nada (el USD / ARS del header en Comparar,
+      // que siempre muestra USD).
+      document.body.dataset.section = btn.dataset.section;
+    });
+  });
+
+  // ---------- CURRENCY TOGGLE (universal, en el header) ----------
+  // "Comparar Gestiones" lo ignora a propósito (displayFinancialsForClub, js/finanzas-calc.js: siempre USD). Los botones se
+  // regeneran por club en populateCurrencyToggle() (modelo completo: cabecera de data/currency-map.js), así que el listener de
+  // click se delega en el contenedor fijo #currencyToggleGlobal.
+  document.getElementById('currencyToggleGlobal').addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-currency]');
+    if(!btn) return;
+    document.querySelectorAll('#currencyToggleGlobal button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentCurrency = btn.dataset.currency;
+    refreshFinanzas();
+  });
+
+  // Arma el toggle [moneda nativa del club / USD]. Un club cuyo `reportingCurrency` YA ES 'USD' (ej. Ecuador, dolarizado) no tiene
+  // nada que togglear y el contenedor se esconde. `currentCurrency` vuelve a USD al cambiar de club SOLO si la moneda elegida no
+  // tiene sentido para el club nuevo; entre dos clubes de la misma moneda nativa, la elección se conserva.
+  function populateCurrencyToggle(clubId){
+    const wrap = document.getElementById('currencyToggleGlobal');
+    const native = (clubs[clubId] || {}).reportingCurrency;
+    // Sin club elegido (portada) no hay moneda nativa que ofrecer: si no, el toggle se pintaba con "undefined" al lado de USD.
+    if(!native || native === 'USD'){
+      wrap.style.display = 'none';
+      currentCurrency = 'USD';
+      return;
+    }
+    wrap.style.display = '';
+    if(currentCurrency !== 'USD' && currentCurrency !== native) currentCurrency = 'USD';
+    wrap.innerHTML = `<button data-currency="USD" class="${currentCurrency === 'USD' ? 'active' : ''}">USD</button>` +
+      `<button data-currency="${native}" class="${currentCurrency === native ? 'active' : ''}">${native}</button>`;
+  }
+
+  // ---------- TOGGLE "FORMATO DEL CLUB" / "FORMATO SIMPLIFICADO" (Estado de resultados) ----------
+  document.querySelectorAll('#simplifyToggle button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#simplifyToggle button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      simplifyFormat = btn.dataset.simplify === '1';
+      refreshFinanzas();
+    });
+  });
+
+  // ---------- CONTACTO ----------
+  document.getElementById('contactBtn').addEventListener('click', () => document.getElementById('contactModal').classList.add('open'));
+  document.getElementById('cfCancel').addEventListener('click', () => document.getElementById('contactModal').classList.remove('open'));
+  document.getElementById('contactModal').addEventListener('click', (e) => { if(e.target.id === 'contactModal') document.getElementById('contactModal').classList.remove('open'); });
+  document.getElementById('contactForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const nombre = document.getElementById('cfNombre').value || 'Anónimo';
+    const email = document.getElementById('cfEmail').value;
+    const tipo = document.getElementById('cfTipo').value;
+    const mensaje = document.getElementById('cfMensaje').value;
+    const subject = encodeURIComponent(`[El deporte en Números] ${tipo} de ${nombre}`);
+    const body = encodeURIComponent(`${mensaje}\n\nEmail de contacto: ${email || 'no provisto'}`);
+    window.location.href = `mailto:guidomamone91@gmail.com?subject=${subject}&body=${body}`;
+    document.getElementById('contactModal').classList.remove('open');
+    document.getElementById('contactForm').reset();
+  });
+
+  // ---------- INIT ----------
+  // Los selectores de Finanzas se generan también en la carga inicial, no solo al cambiar de club: el dropdown tiene que ser
+  // SIEMPRE el que arma el JS, nunca las opciones estáticas del HTML.
+  populateFinanzasSelectors(currentClub);
+  populateCurrencyToggle(currentClub);
+  refreshFinanzas();
+  verifyTieOuts();
+  checkFxSanity();
+  applyPasesFilters();
+  renderResultados();
+  renderTitulosTable();
+  renderComparar();
+  renderFuentesClubCard();
+
+  // Y recién acá entra el club de la visita anterior, por el mismo camino que un click en
+  // el selector (selectClub -> loadClubData -> applyClubMode -> refreshAllForClub). Si no
+  // hay ninguno, el sitio se queda en la portada, que es el estado del que arranca todo
+  // esto: `currentClub` nace en null y ninguna de las llamadas de arriba lo asume cargado.
+  if(clubGuardado) selectClub(clubGuardado);
+
+  // ==========================================================================
+  // SELECTOR DE IDIOMA
+  //
+  // El menú se dibuja leyendo `window.LANGS` (data/lang/langs.js), así que sumar un idioma NO toca este código ni el HTML: alcanza
+  // con la entrada en LANGS y su `data/lang/<code>.js`. Convención, no un mapa a mano.
+  // ==========================================================================
+  function renderLangMenu(){
+    const menu = document.getElementById('langMenu');
+    menu.innerHTML = Object.keys(window.LANGS).map(code => {
+      const l = window.LANGS[code];
+      const active = (code === I18N.current) ? ' class="active"' : '';
+      return `<button type="button" role="menuitem" data-lang="${code}"${active}>${l.name}</button>`;
+    }).join('');
+    document.getElementById('langBtnLabel').textContent = I18N.current.toUpperCase();
+  }
+
+  function setLangMenuOpen(open){
+    const menu = document.getElementById('langMenu');
+    const btn  = document.getElementById('langBtn');
+    menu.hidden = !open;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  document.getElementById('langBtn').addEventListener('click', (e) => {
+    e.stopPropagation();
+    setLangMenuOpen(document.getElementById('langMenu').hidden);
+  });
+
+  document.getElementById('langMenu').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-lang]');
+    if (!b) return;
+    I18N.setLang(b.dataset.lang);
+    setLangMenuOpen(false);
+  });
+
+  // Cerrar el menú al hacer click afuera o con Escape (si no, queda abierto tapando
+  // el contenido, que es justo lo que pasa con un dropdown hecho a mano sin esto).
+  document.addEventListener('click', () => setLangMenuOpen(false));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setLangMenuOpen(false); });
+
+  // Todo lo que se genera en JS hay que volver a dibujarlo cuando cambia el idioma:
+  // `I18N.apply()` solo alcanza para lo que está escrito en el HTML con data-i18n.
+  // Si mañana se agrega una vista nueva que genere texto propio, sumarla ACÁ.
+  I18N.onChange(() => {
+    renderLangMenu();
+    // El chip del club del header y el modal del selector se arman en JS: sin esta llamada no se vuelven a traducir.
+    CLUB_SELECTOR.refresh();
+    populateFinanzasSelectors(currentClub);
+    populateCurrencyToggle(currentClub);
+    refreshFinanzas();
+    applyPasesFilters();
+    renderResultados();
+    renderTitulosTable();
+    renderComparar();
+    // La pestaña Fuentes arma su contenido en JS: sin esto, el título y las etiquetas quedan en el idioma del arranque.
+    // refreshFinanzas(), acá arriba, ya redibuja la ficha de Fuentes de Finanzas.
+    renderFuentesClubCard();
+    // La pestaña Ligas también arma todo su contenido en JS.
+    LIGA_VIEW.refresh();
+  });
+
+  I18N.init().then(renderLangMenu);
+
+  // ==========================================================================
+  // auditAll() — AUDITORÍA COMPLETA, DE TODOS LOS CLUBES
+  //
+  // verifyTieOuts() y checkFxSanity() solo revisan los clubes CARGADOS en memoria, y los clubes se cargan por demanda: sin esto,
+  // un error de datos en un club que nadie abre es invisible. La carga por demanda se conserva (el visitante que solo quiere ver un
+  // club no baja todos); acá se fuerza la carga de todos.
+  //
+  // REGLA: cualquier verificación total pasa por computeYearGeneric(), el motor real; nunca reimplementar la cascada (una fórmula
+  // simplificada tiró falsos positivos por no contemplar nonCash, profitOnPlayerSales, assetSales ni tax).
+  //
+  // CÓMO SE USA:
+  //   - `financeofsports.com/?audit=1` — carga todos los clubes y audita todo.
+  //   - `auditAll()` desde la consola del navegador, en cualquier momento.
+  // Devuelve una Promise con el resumen, además de imprimirlo.
+  // ==========================================================================
+  async function auditAll(){
+    const ids = Object.keys(clubs);
+    const failedToLoad = [];
+    console.log(`[auditoría] cargando los ${ids.length} clubes...`);
+    // EN TANDAS PARALELAS, NO DE A UNO: en fila serían decenas de segundos con muchos clubes, y esto corre antes de cada push que
+    // toque datos. El tamaño de tanda es un TECHO (el navegador ya limita a ~6 conexiones por origen): sirve para no inyectar miles
+    // de <script> de una. `allSettled` Y NO `all`: el primer club que falla no aborta la tanda, y `failedToLoad` conserva un orden
+    // determinista.
+    // OJO SI ALGÚN DÍA UN data/<país>/<club>-data.js LOGUEA ALGO: hoy ninguno lo hace y las verificaciones corren DESPUÉS de toda la carga,
+    // así que cargar en paralelo no entremezcla mensajes. Un data file que loguee tendría que prefijar su propio id.
+    const TANDA = 25;
+    for(let i = 0; i < ids.length; i += TANDA){
+      const tanda = ids.slice(i, i + TANDA);
+      const res = await Promise.allSettled(tanda.map(id => loadClubData(id)));
+      res.forEach((r, j) => {
+        if(r.status !== 'rejected') return;
+        failedToLoad.push(tanda[j]);
+        console.error(`[auditoría] no se pudo cargar ${tanda[j]}:`, r.reason && r.reason.message);
+      });
+    }
+
+    // Se interceptan console.log/error para CONTAR, pero se deja pasar todo a la
+    // consola igual: el detalle línea por línea sigue siendo útil para encontrar
+    // cuál check falló, el resumen es un agregado arriba de eso, no un reemplazo.
+    let ok = 0; const failures = [], warnings = [];
+    const realLog = console.log, realError = console.error, realWarn = console.warn;
+    console.log = (...a) => { const t = a.join(' '); if(t.includes('OK, cierra')) ok++; realLog(...a); };
+    console.error = (...a) => { const t = a.join(' '); if(t.includes('[verificación]')) failures.push(t); realError(...a); };
+    console.warn = (...a) => { const t = a.join(' '); if(t.includes('fx')) warnings.push(t); realWarn(...a); };
+    try { verifyTieOuts(); checkFxSanity(); }
+    finally { console.log = realLog; console.error = realError; console.warn = realWarn; }
+
+    const summary = {
+      clubes: ids.length,
+      clubesQueNoCargaron: failedToLoad,
+      checksOK: ok,
+      checksQueNoCierran: failures.length,
+      warningsDeTipoDeCambio: warnings.length,
+      detalle: { noCierran: failures, fx: warnings },
+    };
+    const limpio = failures.length === 0 && warnings.length === 0 && failedToLoad.length === 0;
+    console[limpio ? 'log' : 'error'](
+      `[auditoría] ${ids.length} clubes · ${ok} checks cierran · ${failures.length} no cierran · ` +
+      `${warnings.length} warnings de fx · ${failedToLoad.length} clubes que no cargaron` +
+      (limpio ? ' -> TODO OK' : ' -> REVISAR')
+    );
+    return summary;
+  }
+  window.auditAll = auditAll;
+
+  // `?audit=1` dispara la auditoría completa sola, para poder pegar el link en
+  // una sesión o revisarlo después de un deploy sin tener que abrir la consola.
+  if(new URLSearchParams(location.search).get('audit') === '1'){
+    auditAll();
+  }
