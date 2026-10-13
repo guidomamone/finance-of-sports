@@ -1,0 +1,160 @@
+{
+  "criterioPais": {
+    "HR": "Se cargó al presidente del club o, en las sociedades deportivas (s.d.d.), al Predsjednik Uprave (presidente de la junta directiva, quien firma el balance). Los dueños son empresas, fondos o accionistas, no personas con nombre, salvo en Rijeka, donde Mišković es a la vez dueño y presidente.",
+    "DE": "Se cargó a la figura que dirige la sociedad (Vorsitzender/Sprecher der Geschäftsführung o del Vorstand, o el Geschäftsführer con la responsabilidad general). El Präsident del e.V. (club matriz, honorario) no es la figura relevante. En Köln, HSV y RB Leipzig NO hubo un presidente formal de la dirección durante los cierres cargados: se cargó la figura que más se le acerca y esas gestiones quedan con confirmada:false."
+  },
+  "clubes": {
+    "dinamozagreb-hr": {
+      "gestiones": [
+        { "nombre": "Velimir Zajec", "corto": "Zajec", "cargo": "Predsjednik", "desde": "2024-03-10", "hasta": "2025-09-16",
+          "fuente": "https://en.wikipedia.org/wiki/Velimir_Zajec", "confirmada": true }
+      ],
+      "notas": {
+        "Velimir Zajec": "Wikipedia en inglés da 10 de marzo de 2024 a 16 de septiembre de 2025 (lo sucede Zvonimir Boban); lo antecede Mirko Barišić. Dos fuentes de prensa (gnkdinamo.hr y zagreb.info, ambas con 403 al abrirlas) figuran en la búsqueda como confirmación de su elección en la asamblea de marzo de 2024; las fechas salen solo de la Wikipedia."
+      },
+      "cubre": { "2024-12-31": "Velimir Zajec" },
+      "dudas": [ "Las fechas de Zajec (2024-03-10 y 2025-09-16) salen de una sola fuente (Wikipedia). La página del club no se pudo abrir (403)." ]
+    },
+    "hajduksplit-hr": {
+      "gestiones": [
+        { "nombre": "Ivan Bilić", "corto": "Bilić", "cargo": "Predsjednik Uprave", "desde": "2024-04-25", "hasta": null,
+          "fuente": "https://hajduk.hr/povijest/predsjednici", "confirmada": true }
+      ],
+      "notas": {
+        "Ivan Bilić": "La lista oficial de presidentes de hajduk.hr da 25/4/2024 hasta hoy. La página de organización del club lo muestra como Predsjednik Uprave. Antes: Marinka Akrap (8/4/2024 a 25/4/2024, interina) y Lukša Jakobušić (30/10/2020 a 8/4/2024)."
+      },
+      "cubre": { "2024-12-31": "Ivan Bilić" },
+      "dudas": []
+    },
+    "rijeka-hr": {
+      "gestiones": [
+        { "nombre": "Damir Mišković", "corto": "Mišković", "cargo": "Predsjednik Uprave", "desde": "2012-03-20", "hasta": null,
+          "fuente": "https://en.wikipedia.org/wiki/Damir_Mi%C5%A1kovi%C4%87", "confirmada": true }
+      ],
+      "notas": {
+        "Damir Mišković": "Wikipedia en inglés: asumió como chairman el 20 de marzo de 2012, cuando rescató al club y pasó a ser el dueño. El informe financiero auditado 2024 (nk-rijeka.hr) lo muestra como Predsjednik Uprave con mandato vigente del 27/11/2020 al 27/11/2028: es la renovación actual, no el inicio. Los accionistas son TEANNA LIMITED (70 por ciento) y la ciudad de Rijeka (30 por ciento); se cargó a Mišković porque es quien firma y a la vez la persona detrás del dueño."
+      },
+      "cubre": { "2024-12-31": "Damir Mišković" },
+      "dudas": [ "El desde 2012-03-20 es la fecha en que se hizo cargo del club (Wikipedia); el mandato formal de la Uprava actual figura desde 2020-11-27 en el informe del club. Si el sitio prefiere la fecha societaria, usar 2020-11-27." ]
+    },
+    "osijek-hr": {
+      "gestiones": [
+        { "nombre": "Ferenc Sakalj", "corto": "Sakalj", "cargo": "Predsjednik Uprave", "desde": "2020-01-01", "hasta": "2026-02-20",
+          "fuente": "https://radio.hrt.hr/radio-osijek/sport/alexandra-vegh-nova-predsjednica-uprave-nk-osijek-12574464", "confirmada": false }
+      ],
+      "notas": {
+        "Ferenc Sakalj": "El club dice que asumió como presidente de la Uprava en 2020 (declaración oficial en nk-osijek.hr) y la prensa lo ubica en el verano de 2020; ninguna fuente da el día, así que desde 2020-01-01 es solo una convención por año. Su mandato vigente fue renovado del 19/07/2024 al 19/07/2028 (nk-osijek.hr, noticia 35328). Se fue por mutuo acuerdo: HRT informa que la sucesora, Alexandra Végh, fue nombrada por el Consejo de Supervisión el 18/02/2026 con inicio el 20/02/2026, por eso hasta 2026-02-20. El dueño es NK OS d.o.o. (BETA / Mészáros), una empresa, por eso se carga al presidente de la Uprava."
+      },
+      "cubre": { "2025-12-31": "Ferenc Sakalj" },
+      "dudas": [ "No hay fecha exacta de asunción de Sakalj en 2020 (probable septiembre de 2020 según prensa húngara, verano según Glas Slavonije).", "Su salida se produjo el 12 de febrero de 2026 aproximadamente (Glas Slavonije), antes de la fecha oficial de inicio de Végh (2026-02-20). El balance 2025 casi seguro lo aprobó Végh: informar al campo firmo si se usa." ]
+    },
+    "slavenbelupo-hr": {
+      "gestiones": [
+        { "nombre": "Robert Markulin", "corto": "Markulin", "cargo": "Predsjednik", "desde": "2022-06-30", "hasta": null,
+          "fuente": "https://www.nacional.hr/slaven-belupo-dobio-novog-predsjednika/", "confirmada": true }
+      ],
+      "notas": {
+        "Robert Markulin": "Nacional.hr (30/06/2022) informa que fue elegido presidente en la asamblea electoral de ese día, sucediendo a Hrvoje Kolarić (en el cargo desde 2014); Sportklub lo confirma en la nota del 1/7/2022. Se tomó la fecha de la elección como inicio. Fue reelegido por cuatro años en junio de 2026 (HRT, 9/6/2026)."
+      },
+      "cubre": { "2025-12-31": "Robert Markulin" },
+      "dudas": [ "Una búsqueda de prensa daba 2011 como primera elección de Markulin; las dos fuentes de 2022 lo contradicen y se descartó. Conviene que Guido lo mire si ya tenía otro dato." ]
+    },
+    "istra-hr": {
+      "gestiones": [
+        { "nombre": "Branko Devidé Vincenti", "corto": "Devidé Vincenti", "cargo": "Predsjednik Uprave", "desde": "2018-07-03", "hasta": null,
+          "fuente": "https://nogometplus.net/index.php/domaci_nogomet/branko-devide-vincenti-novi-predsjednik-istre-1961", "confirmada": true }
+      ],
+      "notas": {
+        "Branko Devidé Vincenti": "Nogometplus.net (3/7/2018) lo da como nombrado presidente tras la compra del club por el grupo Baskonia-Alavés la semana anterior; la fecha usada es la de la nota, no la de un acta. Hoy figura en el registro como presidente de la Uprava del s.d.d. (Fina, fininfo y Wikipedia). Dueño: Baskonia-Alavés Group, una empresa, por eso se carga al presidente."
+      },
+      "cubre": { "2025-12-31": "Branko Devidé Vincenti" },
+      "dudas": [ "El 2018-07-03 es la fecha del artículo; la fecha exacta del acta de nombramiento no se encontró." ]
+    },
+    "varazdin-hr": {
+      "gestiones": [
+        { "nombre": "Dražen Vitez", "corto": "Vitez", "cargo": "Predsjednik Uprave", "desde": "2021-03-23", "hasta": null,
+          "fuente": "https://evarazdin.hr/sport/drazen-vitez-novi-je-predsjednik-nk-varazdin-389977/", "confirmada": true }
+      ],
+      "notas": {
+        "Dražen Vitez": "Elegido presidente del club en la asamblea electoral del 23/03/2021 (evarazdin.hr), sucediendo a Stjepan Cvek. Al transformarse en s.d.d. (asamblea fundacional del 2/4/2025, registro el 28/04/2025) fue elegido Predsjednik Uprave por el Consejo de Supervisión, es decir continúa sin interrupción. Se unificó en una sola gestión."
+      },
+      "cubre": { "2025-12-31": "Dražen Vitez" },
+      "dudas": []
+    },
+    "koln-de": {
+      "gestiones": [
+        { "nombre": "Philipp Türoff", "corto": "Türoff", "cargo": "Kaufmännischer Geschäftsführer", "desde": "2022-01-01", "hasta": null,
+          "fuente": "https://fc.de/aktuelles/news/1-fc-koeln-stellt-geschaeftsfuehrung-fuer-die-zukunft-auf", "confirmada": false }
+      ],
+      "notas": {
+        "Philipp Türoff": "Según la nota oficial del club (22/1/2026) es Kaufmännischer Geschäftsführer (finanzas y administración) desde el 1/1/2022 y recién desde el 22/1/2026 también Sprecher der Geschäftsführung. Entre la salida de Wehrle (2022) y esa fecha la dirección no tuvo presidente ni portavoz formal: Keller (Sport), Türoff (Finanzas) y Rejek (Marketing) eran Geschäftsführer en pie de igualdad. Se cargó a Türoff porque es el único que estuvo en los dos cierres y el que firma lo financiero, pero eso es un criterio nuestro: por eso confirmada:false."
+      },
+      "cubre": { "2024-06-30": "Philipp Türoff", "2025-06-30": "Philipp Türoff" },
+      "dudas": [ "No existía Vorsitzender ni Sprecher de la Geschäftsführung en los cierres 2024-06-30 y 2025-06-30; Guido debe decidir si se carga al Geschäftsführer de Finanzas o al Präsident del e.V. (Werner Wolf / Jörn Stobbe, no investigados).", "Quién firmó cada balance (Bundesanzeiger) no se verificó." ]
+    },
+    "eintrachtfrankfurt-de": {
+      "gestiones": [
+        { "nombre": "Axel Hellmann", "corto": "Hellmann", "cargo": "Vorstandssprecher", "desde": "2021-04-01", "hasta": null,
+          "fuente": "https://de.wikipedia.org/wiki/Axel_Hellmann", "confirmada": true }
+      ],
+      "notas": {
+        "Axel Hellmann": "Wikipedia en alemán: miembro del Vorstand desde 2012 y Sprecher desde abril de 2021 (solo mes: día 01 por convención). Hessenschau y Bundesliga.com confirman que es portavoz desde 2021 y que renovó hasta 2031. Se cargó el cargo de portavoz del Vorstand, no el de Vorstandsvorsitzender, que no existe."
+      },
+      "cubre": { "2024-06-30": "Axel Hellmann", "2025-06-30": "Axel Hellmann" },
+      "dudas": []
+    },
+    "augsburg-de": {
+      "gestiones": [
+        { "nombre": "Michael Ströll", "corto": "Ströll", "cargo": "Gesamtverantwortlicher Geschäftsführer (CEO)", "desde": "2023-09-12", "hasta": null,
+          "fuente": "https://www.spox.com/de/sport/fussball/bundesliga/2309/News/fc-augsburg-stefan-reuter-zieht-sich-als-geschaeftsfuehrer-sport-zurueck.html", "confirmada": true }
+      ],
+      "notas": {
+        "Michael Ströll": "Es Geschäftsführer desde el 22/8/2016 (b4bschwaben.de) y, según el club, Gesamtverantwortlicher (CEO) desde 2023: asumió la responsabilidad general cuando Stefan Reuter (hasta entonces Geschäftsführer Sport y cabeza) renunció el 12/9/2023 (Spox, Sky). Se usó esa fecha como inicio; el club solo dice 2023. Contrato renovado hasta el 30/6/2029. El Präsident (Markus Krapf desde 6/9/2022) es honorario y del e.V., no se cargó."
+      },
+      "cubre": { "2024-06-30": "Michael Ströll", "2025-06-30": "Michael Ströll" },
+      "dudas": [ "La fecha 2023-09-12 es la renuncia de Reuter, la fecha en que Ströll asumió la responsabilidad general se infiere; el club solo dice 'desde 2023'." ]
+    },
+    "hamburgersv-de": {
+      "gestiones": [
+        { "nombre": "Eric Huwer", "corto": "Huwer", "cargo": "Vorstand Finanzen & Organisation", "desde": "2023-01-01", "hasta": null,
+          "fuente": "https://www.hsv.de/news/boldt-und-huwer-unterschreiben-vorstandsvertraege", "confirmada": false }
+      ],
+      "notas": {
+        "Eric Huwer": "Vorstand desde el 1/1/2023 (nota oficial del 22/12/2022) a cargo de finanzas, organización, personal y legal; contrato extendido hasta 2029. En el Vorstand de la Komplementärin (HSV Fußball Management AG) no hubo Vorsitzender: Jonas Boldt (Vorstand Sport, hasta el 21/5/2024) y después Stefan Kuntz (Vorstand Sport, desde mayo de 2024 hasta el 31/12/2025) tenían el mismo nivel. Recién en 2026 la prensa lo llama 'HSV-Chef', cuando quedó como único Vorstand. Se cargó a Huwer porque es el único presente en ambos cierres, pero es un criterio nuestro: confirmada:false."
+      },
+      "cubre": { "2024-06-30": "Eric Huwer", "2025-06-30": "Eric Huwer" },
+      "dudas": [ "No hay Vorstandsvorsitzender en 2024-06-30 ni 2025-06-30; decidir si se carga a Huwer o a Boldt/Kuntz (Vorstand Sport) o al presidente del Aufsichtsrat (Marcell Jansen, no investigado).", "Quién firmó cada balance no se verificó (Bundesanzeiger)." ]
+    },
+    "monchengladbach-de": {
+      "gestiones": [
+        { "nombre": "Stephan Schippers", "corto": "Schippers", "cargo": "Geschäftsführer (CEO)", "desde": "1999-07-01", "hasta": "2024-08-07",
+          "fuente": "https://www.gladbachlive.de/news/gladbach-aus-fuer-schippers-nachfolger-steht-schon-parat-1-841355", "confirmada": false },
+        { "nombre": "Stefan Stegemann", "corto": "Stegemann", "cargo": "Vorsitzender der Geschäftsführung (CEO)", "desde": "2025-01-01", "hasta": null,
+          "fuente": "https://www.gladbachlive.de/news/nach-schippers-aus-gladbach-hat-einen-neuen-geschaeftsfuehrer-865999", "confirmada": true }
+      ],
+      "notas": {
+        "Stephan Schippers": "Asumió en el verano de 1999 (sin día: se usó 01-07 pero es aproximado). Pidió terminar su contrato (válido hasta 2026) poco después de la temporada 2023/24; el club lo anunció el 7/8/2024 y gladbachlive dice que la empresa quedó sin Geschäftsführer desde principios de agosto. Se usó 2024-08-07, que es la fecha del anuncio, no la de la baja.",
+        "Stefan Stegemann": "Anunciado el 20/9/2024, asumió el 1/1/2025 como Geschäftsführer (CEO), hasta entonces vicepresidente del Präsidium desde mayo de 2022."
+      },
+      "cubre": { "2023-12-31": "Stephan Schippers" },
+      "dudas": [ "El cierre 2024-12-31 NO queda cubierto: Schippers se fue en agosto de 2024 y Stegemann asumió el 1/1/2025, un día después del cierre. En el intervalo la Geschäftsführung la formaban Roland Virkus (Sport) y Markus Aretz (Comunicación/Marketing) sin CEO. Probablemente Stegemann firmó el balance 2024 (campo firmo), no se verificó.", "El día de inicio de Schippers (verano de 1999) y el día exacto de su baja en agosto de 2024 no están en las fuentes." ]
+    },
+    "rbleipzig-de": {
+      "gestiones": [
+        { "nombre": "Oliver Mintzlaff", "corto": "Mintzlaff", "cargo": "Vorsitzender der Geschäftsführung", "desde": "2016-01-01", "hasta": "2022-11-15",
+          "fuente": "https://de.wikipedia.org/wiki/Oliver_Mintzlaff", "confirmada": false },
+        { "nombre": "Johann Plenge", "corto": "Plenge", "cargo": "Geschäftsführer (de facto cabeza de la dirección, sin CEO)", "desde": "2023-01-01", "hasta": "2025-12-31",
+          "fuente": "https://de.wikipedia.org/wiki/Johann_Plenge_(Fu%C3%9Fballfunktion%C3%A4r)", "confirmada": false },
+        { "nombre": "Tatjana Haenni", "corto": "Haenni", "cargo": "Vorsitzende der Geschäftsführung (CEO)", "desde": "2026-01-01", "hasta": null,
+          "fuente": "https://rbleipzig.com/de/news/rb-leipzig-ceo-tatjana-haenni-johann-plenge", "confirmada": true }
+      ],
+      "notas": {
+        "Oliver Mintzlaff": "Wikipedia en alemán lo da como Vorstandsvorsitzender del e.V. del 12/6/2014 al 15/11/2022 y presidente de la Geschäftsführung de la GmbH desde el 1/1/2016 (hay una fuente de prensa que dice junio de 2016: dato inconsistente). Dejó el 15/11/2022 para ir a la dirección de Red Bull GmbH; SPORT1 informó el 4/11/2022. Hoy es presidente del Aufsichtsrat. La dueña de la GmbH es Red Bull GmbH, una empresa, por eso se carga al presidente de la dirección.",
+        "Johann Plenge": "Tras la salida de Mintzlaff el puesto de CEO estuvo vacante hasta el 31/12/2025 (kicker, RB Leipzig). La Geschäftsführung de 2023 a 2025 la compartían Plenge (estrategia y negocio), Florian Hopp (finanzas) y Max Eberl (Sport, hasta 2025), según rblive.de del 26/4/2023. Plenge es presidente del Vorstand del e.V. desde principios de 2023 y no hay fuente que diga que haya sido Vorsitzender de la GmbH. El inicio 2023-01-01 es solo por año; el 2025-12-31 es la víspera de la llegada de Haenni.",
+        "Tatjana Haenni": "Anuncio oficial del club: CEO desde el 1/1/2026; Plenge pasa a vicepresidente de la Geschäftsführung."
+      },
+      "cubre": { "2022-06-30": "Oliver Mintzlaff", "2023-06-30": "Johann Plenge", "2024-06-30": "Johann Plenge", "2025-06-30": "Johann Plenge" },
+      "dudas": [ "En los cierres 2023-06-30, 2024-06-30 y 2025-06-30 no hubo Vorsitzender de la Geschäftsführung: la GmbH la dirigían Plenge, Hopp y Eberl a la par. Plenge es una elección nuestra (confirmada:false); la alternativa es Florian Hopp (Finanzas), que firma lo financiero.", "Fecha exacta de inicio de Mintzlaff como Geschäftsführer (2016-01-01 vs junio de 2016) y de la entrada de Plenge a la Geschäftsführung no resueltas.", "Quién firmó cada balance (Bundesanzeiger) no se verificó." ]
+    }
+  }
+}

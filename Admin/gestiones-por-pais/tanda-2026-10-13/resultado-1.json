@@ -1,0 +1,374 @@
+{
+ "criterioPais": {
+  "BR": "En las SAF/sociedades se cargó al dueño si es persona con nombre (Textor en Botafogo, Ronaldo y luego Pedro Lourenço en Cruzeiro) y, si el dueño es empresa o fondo (Treecorp en Coritiba, 777 en Vasco, Red Bull en Bragantino) o la asociación misma (América, Fortaleza), al presidente del Conselho de Administração; en los clubes asociativos (Mirassol, Ituano, Ponte Preta, Ceará, Sport) al presidente del club. Atlético Goianiense: Adson Batista, presidente del consejo de la SAF y diretor presidente. Precedente en data/gestiones/br.js: Atlético Mineiro y Bahia usan al ejecutivo (CEO/diretor presidente) de la SAF; aquí se siguió la regla de las instrucciones, a decidir por Guido si se unifica."
+ },
+ "clubes": {
+  "botafogo": {
+   "gestiones": [
+    {
+     "nombre": "John Textor",
+     "corto": "Textor",
+     "cargo": "Presidente",
+     "desde": "2022-03-03",
+     "hasta": "2026-04-23",
+     "fuente": "https://pt.wikipedia.org/wiki/John_Textor",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "John Textor": "Desde: 3 de marzo de 2022, firma del contrato de transferencia del control de la SAF entre el presidente Durcesio Mello y el accionista Textor (comunicado del club citado por la prensa, p. ej. gazetasp.com.br/brasil/agora-e-oficial-john-textor-assina-contrato-e-e-o-novo-dono-do/); el pre-contrato era del 24-12-2021 y la AGE que emitió acciones es del 11-03-2022. Hasta: 23-04-2026, cuando el Tribunal Arbitral de la FGV lo apartó del comando de la SAF (la fuente wiki lo dice; decisión provisoria que él intenta revertir). El 01-07-2026 fue destituido además del Conselho de Administração (mktesportivo.com/2026/07/john-textor-e-afastado-oficialmente-do-conselho-da-saf-do-botafogo/). En los balances: 2024 firma la carta como 'Presidente da SAF Botafogo' y 2025 como 'Presidente do Conselho de Administração da SAF Botafogo' (transcripciones en Clubes/Brasil/Botafogo). Es persona con nombre y controlador (vía Eagle Football Holdings), por eso se carga a él."
+   },
+   "cubre": {
+    "2023-12-31": "John Textor",
+    "2024-12-31": "John Textor",
+    "2025-12-31": "John Textor"
+   },
+   "dudas": [
+    "Desde 2026-04-23 el comando es discutido (director general interino Durcesio Mello, luego Eduardo Iglesias; Textor intenta revertir el apartamiento por vía judicial). No se carga ninguna gestión posterior porque no hay fuente firme de quién preside hoy; ningún cierre pedido cae ahí.",
+    "La fecha 2026-04-23 es de una decisión provisoria del tribunal arbitral; si fuera revocada habría que reabrir el hasta de Textor.",
+    "No se encontró fuente primaria (botafogo.com.br) con la fecha del 3-mar-2022; la fecha sale de resúmenes de prensa del comunicado oficial."
+   ]
+  },
+  "cruzeiro": {
+   "gestiones": [
+    {
+     "nombre": "Ronaldo Nazário",
+     "corto": "Ronaldo",
+     "cargo": "Presidente",
+     "desde": "2022-01-01",
+     "hasta": "2024-04-29",
+     "fuente": "https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/futebol-mineiro/cruzeiro/pedro-lourenco-oficializa-compra-do-cruzeiro-saf-junto-a-ronaldo-veja-detalhes/",
+     "confirmada": true
+    },
+    {
+     "nombre": "Pedro Lourenço",
+     "corto": "Pedro Lourenço",
+     "cargo": "Presidente",
+     "desde": "2024-04-29",
+     "hasta": null,
+     "fuente": "https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/futebol-mineiro/cruzeiro/pedro-lourenco-oficializa-compra-do-cruzeiro-saf-junto-a-ronaldo-veja-detalhes/",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Ronaldo Nazário": "Dueño del 90% de la SAF (vía Tara Sports). Itatiaia (29-04-2024) dice que 'geria a empresa desde janeiro de 2022' y que 'a oficialização da compra só ocorreu de fato em março' de 2022; otras fuentes dan firma del contrato el 8-04-2022 y confirmación del club el 14-04-2022. Se usa 2022-01-01 (inicio de gestión según Itatiaia; día 01 por mes sin día). Hasta 2024-04-29: anuncio y firma de la venta a Pedro Lourenço.",
+    "Pedro Lourenço": "Compró el 90% de la SAF (vía BPW Sports); firma/anuncio el 29-04-2024 en la Toca da Raposa II (Itatiaia). El balance 2023 aclara que el acuerdo estaba sujeto a condiciones precedentes (CADE y concordancia de la Associação); la nota de EconomicNews (2024-06-15) habla de aprobación del CADE en junio, sin fecha de cierre formal. Por eso confirmada:false: 29-04-2024 es la firma, no necesariamente el cierre. En 2023 ya había aportado R$100 millones (20% convertido). Es el primero del Conselho de Administração en los balances 2024 y 2025 (Clubes/Brasil/Cruzeiro)."
+   },
+   "cubre": {
+    "2022-12-31": "Ronaldo Nazário",
+    "2023-12-31": "Ronaldo Nazário",
+    "2024-12-31": "Pedro Lourenço",
+    "2025-12-31": "Pedro Lourenço"
+   },
+   "dudas": [
+    "AVISO firmo: el balance 2023 (cierre 2023-12-31) se aprobó/firmó el 15-05-2024, DESPUÉS de la venta a Lourenço (29-04-2024). El ejercicio es de la gestión Ronaldo, pero lo aprobó la gestión Lourenço.",
+    "Firmantes ejecutivos distintos del dueño: 2022 'Presidente' Gabriel R. Lima (declaración del 05-05-2023); balance 2024 y 2025 firmados por Pedro Junio de Oliveira como 'Diretor Presidente'. Se cargó al dueño por la regla (persona con nombre). Si Guido prefiere al ejecutivo, hay que investigar sus fechas.",
+    "Ronaldo siguió en el Conselho de Administração tras vender (aparece en los balances 2024 y 2025); no se carga como gestión."
+   ]
+  },
+  "mirassol": {
+   "gestiones": [
+    {
+     "nombre": "Edson Antonio Ermenegildo",
+     "corto": "Ermenegildo",
+     "cargo": "Presidente",
+     "desde": "1995-01-01",
+     "hasta": null,
+     "fuente": "https://pt.wikipedia.org/wiki/Mirassol_Futebol_Clube",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Edson Antonio Ermenegildo": "Wikipedia pt: club 'presidido desde 1995 por Edson Ermenegildo' (solo año; se usa 1995-01-01). Es también el prefecto de Mirassol (reelecto octubre 2024, A Gazeta). Firma el balance 2024 como PRESIDENTE (Clubes/Brasil/Mirassol/balancopatrimonial-modelo4-anual-01-12-2024assinado.md, firma digital 28-04-2025), lo que confirma que presidía en el cierre."
+   },
+   "cubre": {
+    "2024-12-31": "Edson Antonio Ermenegildo"
+   },
+   "dudas": [
+    "El año 1995 es de Wikipedia; otras notas de prensa dicen '30 años al mando' (coherente). Falta el día/mes de asunción."
+   ]
+  },
+  "ituano": {
+   "gestiones": [
+    {
+     "nombre": "João Paulo Ruiz",
+     "corto": "Ruiz",
+     "cargo": "Presidente",
+     "desde": "2024-01-01",
+     "hasta": null,
+     "fuente": "https://ge.globo.com/sp/tem-esporte/futebol/times/ituano/noticia/2023/12/06/joao-paulo-ruiz-e-eleito-novo-presidente-do-ituano.ghtml",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "João Paulo Ruiz": "GE (06-12-2023): elegido por aclamación (única plancha) en la noche del martes 5-12-2023, 'presidente do Ituano até 2026', en lugar de Ricardo Giordani (presidente 2014-2018 y 2021-2023). La fuente no da fecha de asunción; se usa 2024-01-01 (inicio del mandato), por eso confirmada:false."
+   },
+   "cubre": {
+    "2024-12-31": "João Paulo Ruiz"
+   },
+   "dudas": [
+    "Falta la fecha exacta de asunción (elegido 2023-12-05; ¿posse en diciembre 2023 o enero 2024?). No afecta el cierre 2024-12-31.",
+    "No se verificó que siga en el cargo hoy (mandato hasta 2026): hasta:null asume que sí."
+   ]
+  },
+  "coritiba": {
+   "gestiones": [
+    {
+     "nombre": "Bruno Levi D'Ancona",
+     "corto": "D'Ancona",
+     "cargo": "Presidente",
+     "desde": "2023-06-22",
+     "hasta": null,
+     "fuente": "https://www.umdoisesportes.com.br/coritiba/grupo-safra-compra-participacao-treecorp-saf-coritiba/",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Bruno Levi D'Ancona": "90% de la SAF es de Coxa Participações / Treecorp (empresa-fondo, no persona), por la regla se carga al presidente del Conselho de Administração: UmDois Esportes (26-06-2026) lo llama 'sócio-fundador da Treecorp e presidente do Conselho de Administração do Coritiba'. Desde 2023-06-22: la venta se concretó el jueves 22 (homologación de la jueza de la recuperación judicial; Soccerway), tras aprobación de socios el 31-05-2023 (Banda B), que preveía asunción oficial a inicios de julio y decía que la Treecorp ya comandaba informalmente. La convocatoria de la AGO sobre el ejercicio 2023 (12-04-2024, publicada en Clubes/Brasil/Coritiba/demonstracoes-contabeis-2022-2023.md) está firmada 'BRUNO LEVI D'ANCONA' (la transcripción no muestra el cargo). confirmada:false porque ninguna fuente fecha cuándo asumió la presidencia del consejo."
+   },
+   "cubre": {
+    "2023-12-31": "Bruno Levi D'Ancona",
+    "2024-12-31": "Bruno Levi D'Ancona"
+   },
+   "dudas": [
+    "No se encontró fecha de designación de D'Ancona como presidente del consejo; 2023-06-22 es la fecha del cierre de la venta. Antes (hasta junio 2023) conducía la asociación el presidente interino Glenn Stenger, que había sido propuesto como representante del club en el consejo, no como presidente.",
+    "El balance 2023 se firmó/publicó en 2024-04 con la Treecorp ya al mando: sin conflicto de firmo.",
+    "Ejecutivos: Carlos Amodeo CEO (2023 a julio 2024), luego Gabriel Lima; el firmante contable es André Campestrini (Diretor Administrativo e de Finanças). No se cargan porque la regla pide al presidente del consejo.",
+    "Wikipedia pt lista a Marianna Libano como presidenta del club asociativo desde 2025 (chapa electa 27-12-2024, posse 6-01-2025); la asociación solo tiene el 10% y una silla."
+   ]
+  },
+  "atleticogoianiense": {
+   "gestiones": [
+    {
+     "nombre": "Adson José Batista",
+     "corto": "Adson",
+     "cargo": "Presidente",
+     "desde": "2019-01-01",
+     "hasta": null,
+     "fuente": "https://opopular.com.br/esporte/presidente-do-atletico-go-encerra-mandato-e-ja-inicia-outro-agora-de-quatro-anos-1.2379467",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Adson José Batista": "O Popular: terminó el primer mandato de tres años como presidente ejecutivo al cierre de 2021 y el 1-ene-2022 inició un segundo de cuatro años (2022-2025), sin otro candidato. Primer mandato de 3 años que termina fin de 2021 implica inicio 2019 (derivado, por eso confirmada:false; no se halló nota de la asunción). Balance 2024-2025 (Clubes/Brasil/Atletico Goianiense): 'Adson José Batista, Diretor Presidente' y 'Presidente' del Conselho de Administração de la SAF en 2025. En 2026 sigue figurando como presidente (Wikipedia pt, prensa julio-septiembre 2026), por eso hasta:null."
+   },
+   "cubre": {
+    "2025-12-31": "Adson José Batista"
+   },
+   "dudas": [
+    "El mandato 2022-2025 vencía a fin de 2025; no se encontró nota de renovación para 2026, aunque la prensa 2026 lo sigue llamando presidente. No afecta el cierre pedido.",
+    "Inicio exacto (2019) derivado de la duración del primer mandato, no de una nota de asunción."
+   ]
+  },
+  "americamineiro-br": {
+   "gestiones": [
+    {
+     "nombre": "Alencar da Silveira Júnior",
+     "corto": "Alencar",
+     "cargo": "Presidente",
+     "desde": "2021-02-22",
+     "hasta": "2025-09-01",
+     "fuente": "https://ofator.com.br/informacao/eleito-para-o-tce-alencar-define-data-para-deixar-a-presidencia-do-america/",
+     "confirmada": false
+    },
+    {
+     "nombre": "Márcio Vidal Gomes da Gama",
+     "corto": "Márcio Vidal",
+     "cargo": "Presidente",
+     "desde": "2025-09-01",
+     "hasta": null,
+     "fuente": "https://ofator.com.br/informacao/eleito-para-o-tce-alencar-define-data-para-deixar-a-presidencia-do-america/",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Alencar da Silveira Júnior": "Presidente del Conselho de Administração del América (asociación, dueña de las acciones de la SAF y que gobierna la SAF desde enero 2025). Asumió tras la salida de Salum en febrero 2021 (Itatiaia 27-11-2024); elegido el 22-02-2021 (Superesportes/em.com.br). Firma los balances 2023 y 2024 como 'Presidente do Conselho de Administração'. Hasta 2025-09-01: él anunció a O Fator (28-08-2025) que dejaría de firmar como presidente el 1-sep por su elección al TCE-MG. Es intención declarada, por eso confirmada:false en ambas. O Fator dice que su 'último mandato' comenzó en 2024, lo que sugiere una renovación/ruptura de mandato no aclarada.",
+    "Márcio Vidal Gomes da Gama": "Asumiría el 1-sep-2025 según Alencar (O Fator); firma el balance 2025 (30-04-2026) como 'Presidente do Conselho de Administração' y la prensa 2026 (Itatiaia, Hoje em Dia) lo llama presidente. Sin nota que fije la fecha de posse."
+   },
+   "cubre": {
+    "2023-12-31": "Alencar da Silveira Júnior",
+    "2024-12-31": "Alencar da Silveira Júnior",
+    "2025-12-31": "Márcio Vidal Gomes da Gama"
+   },
+   "dudas": [
+    "Marcus Salum fue 'presidente da SAF' (ejecutivo) desde mayo 2022 hasta el fin de su mandato en dic-2024 (Itatiaia 27-11-2024); se priorizó al presidente del consejo que firma los balances 2023/2024. Si Guido prefiere el ejecutivo de la SAF para 2023-2024, Salum: desde 2022-05-01 hasta 2025-01-01.",
+    "La asociación (no un fondo ni persona) es dueña de la SAF; no hay inversor (venta en curso).",
+    "El día de asunción de Alencar (2021-02-22) es el de la elección, no verificado como posse."
+   ]
+  },
+  "rbbragantino-br": {
+   "gestiones": [
+    {
+     "nombre": "Thiago Scuro",
+     "corto": "Scuro",
+     "cargo": "Presidente",
+     "desde": "2019-04-23",
+     "hasta": "2020-01-01",
+     "fuente": "https://pt.wikipedia.org/wiki/Red_Bull_Bragantino",
+     "confirmada": false
+    },
+    {
+     "nombre": "André Rocha",
+     "corto": "Rocha",
+     "cargo": "Presidente",
+     "desde": "2020-01-01",
+     "hasta": null,
+     "fuente": "https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/futebol-paulista/bragantino/ceo-do-bragantino-cita-equipe-de-formula-1-como-inspiracao-para-o-clube-paulista/",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Thiago Scuro": "Dueño: Red Bull GmbH (empresa), por eso no hay 'dueño persona'. Wikipedia pt lista a Scuro como 'presidente' 2019-2023 (Marco Antônio 'Marquinho' Chedid 1998-2019, hoy 'presidente de honra'). El 23-04-2019 se anunció la alianza entre Chedid y Scuro (descrito como CEO de Red Bull Brasil). Se cierra su gestión el 2020-01-01 porque Itatiaia dice que André Rocha está al frente 'desde 2020'. Todo con confirmada:false: el título exacto de Scuro varía por fuente.",
+    "André Rocha": "Itatiaia (04-02-2024): 'André Rocha está à frente da gestão do clube desde 2020', 'CEO do Red Bull Bragantino', balance de 'quatro anos' (solo año: 2020-01-01). Times Brasil (24-03-2025) lo sigue llamando CEO. Diego Cerri es el director ejecutivo de fútbol (desde ~dic-2022/jun-2023), no el CEO, según Itatiaia 2024."
+   },
+   "cubre": {
+    "2019-12-31": "Thiago Scuro",
+    "2024-12-31": "André Rocha"
+   },
+   "dudas": [
+    "GESTIÓN DUDOSA, no publicar sin confirmar: no hay figura con título de 'presidente' del Red Bull Bragantino Futebol Ltda. Las transcripciones de los balances 2019 y 2024 no traen firmantes. Wikipedia en inglés lista a Diego Cerri como CEO; Itatiaia/Times Brasil dicen André Rocha. Wikipedia pt dice Scuro presidente 2019-2023 y Cerri 2023-hoy.",
+    "Para 2019 podría argumentarse Marquinho Chedid (presidente de la asociación Clube Atlético Bragantino, que firmó la alianza), pero el balance es de la Ltda. controlada por Red Bull.",
+    "Conviene buscar el contrato social / ata de la Red Bull Bragantino Futebol Ltda. o el balance firmado para saber quién firma."
+   ]
+  },
+  "fortaleza-br": {
+   "gestiones": [
+    {
+     "nombre": "Fabiano Barreira",
+     "corto": "Barreira",
+     "cargo": "Presidente",
+     "desde": "2025-04-15",
+     "hasta": "2026-01-15",
+     "fuente": "https://www.portalin.com.br/notas/fabiano-barreira-assume-presidencia-do-conselho-de-administra-da-saf-do-fortaleza/",
+     "confirmada": true
+    },
+    {
+     "nombre": "Bruno Cals",
+     "corto": "Cals",
+     "cargo": "Presidente",
+     "desde": "2026-01-15",
+     "hasta": null,
+     "fuente": "https://www.opovo.com.br/esportes/futebol/times/fortaleza/2026/01/15/bruno-cals-e-o-novo-presidente-do-conselho-da-saf-do-fortaleza.html",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Fabiano Barreira": "Presidente del Conselho de Administração de la SAF; escogido el martes 15-04-2025 (Portal IN, 16-04-2025). Hasta 2026-01-15: O Povo (15-01-2026) informa que Bruno Cals es el nuevo presidente del consejo (la composición se aprobó el miércoles 14-01 con 98 votos a favor). Antecesor en la SAF: José Rolim Machado, que dejó el consejo para presidir la asociación 2025-2027.",
+    "Bruno Cals": "Nuevo presidente del Conselho de la SAF, notas del 15-01-2026 (O Povo); no cubre ningún cierre pedido, se agrega para dejar el hasta de Barreira cerrado."
+   },
+   "cubre": {
+    "2025-12-31": "Fabiano Barreira"
+   },
+   "dudas": [
+    "Marcelo Paz fue CEO de la SAF hasta que el consejo oficializó su salida el 27-12-2025; se cargó al presidente del consejo por la regla. El balance 2025 de la SAF (transcripto) no trae el nombre del firmante.",
+    "El hasta de Barreira (2026-01-15) es la fecha de la nota que anuncia a Cals; la asunción exacta podría ser el 14 o 15."
+   ]
+  },
+  "vascodagama-br": {
+   "gestiones": [
+    {
+     "nombre": "Joshua Wander",
+     "corto": "Wander",
+     "cargo": "Presidente",
+     "desde": "2022-09-02",
+     "hasta": "2024-05-15",
+     "fuente": "https://www.netvasco.com.br/n/337018/justica-concede-liminar-acatando-pedido-do-crvg-e-tira-777-partners-do-controle-da-vasco-saf",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Joshua Wander": "777 Partners (empresa) compró el 70% de la SAF; 777 asumió el control societario el 2-09-2022 (Máquina do Esporte). Josh Wander, co-fundador y socio-administrador de 777, presidía el Conselho de Administração de la SAF (la prensa 2023 lo llama chairman; 5 asientos 777, 2 del club); figura como 'Joshua Wander' en el Conselho de Administração del balance 2023. Hasta 2024-05-15: liminar del juez Paulo Assed Estefan (4ª Vara Empresarial) que suspendió los derechos societarios de 777 y apartó a sus consejeros; mantenida en 2ª instancia (mayo 2024 y mayo 2025). confirmada:false porque no hay fuente que fije el día en que asumió la presidencia del consejo ni la hipótesis de que el cierre de la venta sea esa fecha."
+   },
+   "cubre": {
+    "2023-12-31": "Joshua Wander"
+   },
+   "dudas": [
+    "El chairman se confirma por prensa (netvasco/Lance 2023), no por el estatuto. El balance 2023 lista a Wander en el consejo sin decir 'presidente'.",
+    "Ejecutivos de 2023: Luiz Mello (CEO hasta mediados de 2023) y luego Lucio Ferreira Barbosa, que firma el balance como Diretor Presidente. El balance 2023 se firmó el 26-04-2024, antes de la liminar de mayo 2024.",
+    "Tras el 15-05-2024 el Vasco asociativo (presidente Pedrinho) retomó el control; no se cargó gestión posterior porque ningún cierre pedido cae ahí, y en 2026 hay proceso de venta de la SAF (leilão a Marcos Lamacchia)."
+   ]
+  },
+  "pontepreta-br": {
+   "gestiones": [
+    {
+     "nombre": "Marco Antônio Eberlin",
+     "corto": "Eberlin",
+     "cargo": "Presidente",
+     "desde": "2022-01-01",
+     "hasta": "2026-01-01",
+     "fuente": "https://ge.globo.com/sp/campinas-e-regiao/futebol/times/ponte-preta/noticia/marco-antonio-eberlin-e-eleito-presidente-da-ponte-para-quadrienio-2022-2025.ghtml",
+     "confirmada": true
+    },
+    {
+     "nombre": "Luiz Antônio Alves Torrano",
+     "corto": "Torrano",
+     "cargo": "Presidente",
+     "desde": "2026-01-01",
+     "hasta": null,
+     "fuente": "https://www.band.com.br/band-multi/campinas-e-regiao/noticias/ponte-preta-torcida-organizada-convoca-protesto-devido-a-fase-do-time-202601191443",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Marco Antônio Eberlin": "GE (29-11-2021): elegido por el Conselho Deliberativo presidente 'para o quadriênio 2022-2025' (solo años: desde 2022-01-01; Jovem Pan dice que la gestión empieza en enero). Hasta 2026-01-01: Torrano asumió en enero 2026 (Band, 19-01-2026); Eberlin pasó a vicepresidente.",
+    "Luiz Antônio Alves Torrano": "Presidente desde enero de 2026 (Band Multi 19-01-2026 y Wikipedia pt); sin fecha exacta, día 01. En mayo 2026 consejeros pidieron en la Justicia su apartamiento inmediato (Correio da Manhã)."
+   },
+   "cubre": {
+    "2022-12-31": "Marco Antônio Eberlin",
+    "2023-12-31": "Marco Antônio Eberlin",
+    "2024-12-31": "Marco Antônio Eberlin"
+   },
+   "dudas": [
+    "Falta la fecha exacta de posse de Eberlin (enero 2022) y de Torrano (enero 2026).",
+    "El estado del pedido judicial contra Torrano (mayo 2026) no se verificó."
+   ]
+  },
+  "ceara-br": {
+   "gestiones": [
+    {
+     "nombre": "João Paulo Silva",
+     "corto": "João Paulo",
+     "cargo": "Presidente",
+     "desde": "2023-03-29",
+     "hasta": null,
+     "fuente": "https://diariodonordeste.verdesmares.com.br/jogada/joao-paulo-silva-e-eleito-o-novo-presidente-do-ceara-veja-detalhes-1.3352042",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "João Paulo Silva": "Elegido el miércoles 29-03-2023 (179 votos contra 47) para completar el trienio 2021-2024 tras la renuncia de Robinson de Castro (9-02-2023; interino Carlos Moraes). El Diário do Nordeste no da fecha de posse (la nueva diretoria ya actuaba el 17-04-2023); se usa la fecha de elección, por eso confirmada:false. Reelecto para 2025-2027 (166 de 291 votos, O Povo). En mayo y julio 2026 sigue en el cargo pese a un pedido de impeachment de consejeros."
+   },
+   "cubre": {
+    "2024-12-31": "João Paulo Silva",
+    "2025-12-31": "João Paulo Silva"
+   },
+   "dudas": [
+    "Fecha exacta de posse tras el 29-03-2023 no hallada (no afecta cierres 2024/2025).",
+    "Pedido de impeachment (mayo 2026) y su resultado no verificados; se asume que sigue (hasta:null)."
+   ]
+  },
+  "sportrecife-br": {
+   "gestiones": [
+    {
+     "nombre": "Matheus Souto Maior",
+     "corto": "Souto Maior",
+     "cargo": "Presidente",
+     "desde": "2025-12-19",
+     "hasta": null,
+     "fuente": "https://www.diariodepernambuco.com.br/esportes-dp/sport/2025/12/11703300-novo-presidente-do-sport-matheus-souto-maior-toma-posse-e-dispara-situacao-e-pior.html",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Matheus Souto Maior": "Elegido el 15-12-2025 en elección suplementaria (795 votos) y posesionado el viernes 19-12-2025 en la Ilha do Retiro (Diario de Pernambuco). Completa el mandato de Yuri Romão hasta fin de 2026 (mandato-tampão)."
+   },
+   "cubre": {
+    "2025-12-31": "Matheus Souto Maior"
+   },
+   "dudas": [
+    "El ejercicio 2025 casi entero fue de Yuri Romão (renuncia anunciada 27-11-2025, último día 12-12-2025); hubo un hueco 12 al 19-12-2025 sin presidente titular. Los balances 2025 los aprobó Souto Maior (campo firmo no necesario: el cierre cae en su gestión).",
+    "No se verificó que siga hoy en octubre 2026 más allá de una nota de agosto 2026."
+   ]
+  }
+ }
+}

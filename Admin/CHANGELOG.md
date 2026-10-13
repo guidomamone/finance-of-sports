@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 681 — Gestiones, tanda 2 investigada y guardada (2026-10-13)
+
+- 4 subagentes más (Brasil SAF con el ejecutivo, Brasil por confirmar, Rusia/Croacia/Colombia/México/Perú, Alemania con el presidente de la
+  asociación) con las decisiones de criterio de Guido. Resultados y scripts de carga guardados en `Admin/gestiones-por-pais/tanda-2026-10-13/`;
+  la carga queda para la sesión siguiente (to-do 195). To-do 214 al día con la decisión de Guido (el primer año ya no lo revisa él).
+
 ## Versión 680 — To-do 213: la duda de escala que otro documento del club responde se cierra sola (2026-10-13)
 
 - `verificar.mjs`: si la carga usó unidades y otro `.md` de la carpeta del club imprime un importe del estado (6+ cifras, mismos

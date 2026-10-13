@@ -1,0 +1,330 @@
+{
+ "criterioPais": {
+  "GB": "Siguiendo gb.md: sociedad con dueño persona con nombre se carga el dueño; si el dueño es un grupo/fondo/Estado (FSG, Fosun, PIF) se carga el Chairman (quien firma el balance): Werner (Liverpool), Jeff Shi (Wolves), Al-Rumayyan (Newcastle).",
+  "CO": "Siguiendo co.md: el presidente / representante legal que firma la certificación de estados financieros, salvo que el máximo accionista sea una persona con nombre (no es el caso de Once Caldas, de muchos accionistas, ni de Envigado, cuyo dueño es el fondo ProFútbol).",
+  "CL": "Siguiendo el precedente de Colo-Colo: Presidente del Directorio de la sociedad anónima deportiva (Azul Azul, Cruzados SADP), aunque haya accionista mayoritario (Clark controla ~63% vía fondo Tactical Sports, una entidad, no se carga como dueño).",
+  "MX": "Propuesta: Club América pertenece a Ollamani (escindida de Televisa el 31/1/2024; 51% tras la venta del 49% a General Atlantic en dic. 2025), controlada por un solo accionista con nombre, Emilio Azcárraga Jean, que además es presidente ejecutivo del consejo; se carga a él como Dueño. El 'presidente deportivo' (Santiago Baños, desde 2017) es un cargo de gestión deportiva, no la figura relevante.",
+  "PE": "Propuesta: Alianza Lima está en procedimiento concursal (INDECOPI) y lo conduce el Administrador (temporal) designado por la Junta de Acreedores, que también es gerente general y firma los estados financieros; no hay presidente electo desde 2012. Se carga al administrador con cargo 'Administrador concursal'. Wikipedia lo trata como presidente."
+ },
+ "clubes": {
+  "liverpool-gb": {
+   "gestiones": [
+    {
+     "nombre": "Tom Werner",
+     "corto": "Werner",
+     "cargo": "Chairman",
+     "desde": "2010-12-01",
+     "hasta": null,
+     "fuente": "https://en.wikipedia.org/wiki/Tom_Werner",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Tom Werner": "Chairman del club desde el 1/12/2010 (Wikipedia y prensa: anunciado el 25/11/2010, asumió el 1/12). El dueño es Fenway Sports Group (empresa), por eso se carga el Chairman. Sin salida encontrada: hasta null."
+   },
+   "cubre": {
+    "2024-05-31": "Tom Werner",
+    "2025-05-31": "Tom Werner"
+   },
+   "dudas": [
+    "No verifiqué si sigue de chairman en octubre 2026 (ninguna fuente indica un cambio)."
+   ]
+  },
+  "wolves-gb": {
+   "gestiones": [
+    {
+     "nombre": "Jeff Shi",
+     "corto": "Jeff Shi",
+     "cargo": "Chairman",
+     "desde": "2016-07-01",
+     "hasta": "2025-12-19",
+     "fuente": "https://www.expressandstar.com/sport/football/wolverhampton-wanderers/ten-years-of-fosun-the-highs-and-lows-of-jeff-shi-at-wolves-8782815",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Jeff Shi": "Chairman desde la compra por Fosun en julio de 2016 (Express & Star; solo mes: dia 01); el club lo nombró Executive Chairman el 10/6/2017 (wolves.co.uk/news/club/20170611-jeff-shi-appointed-chairman). Salió el 19/12/2025, fecha del comunicado del club que nombra a Nathan Shi interino (https://www.wolves.co.uk/news/club/20251219-appointment-of-interim-executive-chairman/). Dueño: Fosun (empresa), por eso Chairman."
+   },
+   "cubre": {
+    "2024-05-31": "Jeff Shi",
+    "2025-05-31": "Jeff Shi"
+   },
+   "dudas": [
+    "El Chairman actual es Nathan Shi (interino desde 12/2025, luego permanente según un reporte de mayo 2026); no se cargó porque ningún cierre le corresponde. Si se quiere mostrar la gestión actual, falta fecha y fuente de su confirmación."
+   ]
+  },
+  "newcastle-gb": {
+   "gestiones": [
+    {
+     "nombre": "Yasir Al-Rumayyan",
+     "corto": "Al-Rumayyan",
+     "cargo": "Chairman",
+     "desde": "2021-10-07",
+     "hasta": null,
+     "fuente": "https://www.pif.gov.sa/en/news-and-insights/press-releases/2021/nufc/",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Yasir Al-Rumayyan": "Non-Executive Chairman desde el cierre de la compra el 7/10/2021 (comunicado del PIF). Wikipedia en inglés dice 19/11/2021: se usó la fecha del comunicado. Dueño: PIF (Estado saudí) con PCP y RB Sports, por eso Chairman. Sigue en 2026 según prensa."
+   },
+   "cubre": {
+    "2025-06-30": "Yasir Al-Rumayyan"
+   },
+   "dudas": [
+    "Discrepancia de fecha entre PIF (7/10/2021) y Wikipedia (19/11/2021)."
+   ]
+  },
+  "oncecaldas": {
+   "gestiones": [
+    {
+     "nombre": "Tulio Mario Castrillón Tobón",
+     "corto": "Castrillón",
+     "cargo": "Presidente",
+     "desde": "2016-01-01",
+     "hasta": "2024-10-01",
+     "fuente": "https://www.clarosports.com/colombia/liga-bet-play/oficial-tulio-mario-castrillon-deja-de-ser-presidente-de-once-caldas/",
+     "confirmada": false
+    },
+    {
+     "nombre": "Daniel Jaramillo Vélez",
+     "corto": "Jaramillo",
+     "cargo": "Presidente",
+     "desde": "2024-10-21",
+     "hasta": null,
+     "fuente": "https://www.lapatria.com/deportes/este-es-el-ejecutivo-que-asumira-la-presidencia-del-once-caldas-en-reemplazo-de-castrillon",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Tulio Mario Castrillón Tobón": "Firma como Representante Legal las certificaciones 2022 (21/4/2023) y 2023 (29/4/2024). Hasta: renunció ante la junta el 1/10/2024 (Claro Sports, que sí confirma el día). Desde: la prensa dice 'tras ocho años', o sea alrededor de 2016; sin fecha ni mes: 2016-01-01 aproximado y no confirmado.",
+    "Daniel Jaramillo Vélez": "Firma como Representante Legal las certificaciones 2024 y 2025. La Patria (9/10/2024) lo anuncia como reemplazo, yerno de Jaime Pineda, el máximo accionista; una asamblea extraordinaria del 21/10/2024 lo habría designado (dato de un resumen de búsqueda, no leído en la fuente). Entre el 1 y el 21/10/2024 mandó la junta directiva. Sin confirmar el día."
+   },
+   "cubre": {
+    "2022-12-31": "Tulio Mario Castrillón Tobón",
+    "2023-12-31": "Tulio Mario Castrillón Tobón",
+    "2024-12-31": "Daniel Jaramillo Vélez",
+    "2025-12-31": "Daniel Jaramillo Vélez"
+   },
+   "dudas": [
+    "Fecha de inicio de Castrillón (aprox. 2016) y día exacto de asunción de Jaramillo sin fuente que los diga. Un cargo 'gerente general' (Felipe Trujillo) existe aparte y no se cargó. Por la regla del proyecto, esta gestión no se publica hasta confirmar las fechas."
+   ]
+  },
+  "envigado": {
+   "gestiones": [
+    {
+     "nombre": "Óscar Armando Astudillo Palomino",
+     "corto": "Astudillo",
+     "cargo": "Presidente",
+     "desde": "2025-11-21",
+     "hasta": null,
+     "fuente": "https://telemedellin.tv/?p=152246",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Óscar Armando Astudillo Palomino": "Firma como representante legal los estados financieros 2025 (dictamen del 4/3/2026). Telemedellín lo presentó como nuevo presidente el 21/11/2025: se usó esa fecha (de presentación; la fuente no dice día de posesión). Dueño: fondo ProFútbol (55%, no persona), por eso presidente."
+   },
+   "cubre": {
+    "2025-12-31": "Óscar Armando Astudillo Palomino"
+   },
+   "dudas": [
+    "La fuente no dice a quién reemplazó (Ramiro Ruiz figuraba como presidente en 2024); Wikipedia en inglés aún lista a Manuel Valero. Fecha de posesión real sin confirmar."
+   ]
+  },
+  "udechile-cl": {
+   "gestiones": [
+    {
+     "nombre": "Michael Clark Varela",
+     "corto": "Clark",
+     "cargo": "Presidente del Directorio",
+     "desde": "2021-09-30",
+     "hasta": "2026-04-23",
+     "fuente": "https://www.df.cl/mercados/bolsa-monedas/tras-cinco-anos-al-mando-michael-clark-renuncia-a-la-presidencia-de-azul",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Michael Clark Varela": "Elegido por el directorio de Azul Azul tras la renuncia de Cristián Aubert como presidente. Diario Financiero da el 30/9/2021; Wikipedia en inglés y la prensa 1/10/2021 (fecha del anuncio); se usó el 30/9. Renunció el 23/4/2026 (hecho esencial a la CMF), Cecilia Pérez asumió interina. Clark controla ~63% vía un fondo (entidad), por eso no es 'dueño'."
+   },
+   "cubre": {
+    "2022-12-31": "Michael Clark Varela",
+    "2023-12-31": "Michael Clark Varela",
+    "2024-12-31": "Michael Clark Varela"
+   },
+   "dudas": [
+    "Discrepancia 30/9 vs 1/10/2021 (y un 21/10/2021 en el cuerpo de Wikipedia) para el inicio; no afecta ningún cierre."
+   ]
+  },
+  "catolica-cl": {
+   "gestiones": [
+    {
+     "nombre": "Jaime Estévez Valencia",
+     "corto": "Estévez",
+     "cargo": "Presidente del Directorio",
+     "desde": "2010-05-03",
+     "hasta": "2014-04-16",
+     "fuente": "https://derecho.uc.cl/en/exalumnos/derecho-uc-en-linea/y-despues-del-grado-exalumnos-derecho-uc/8379-exalumno-de-la-facultad-asumio-presidencia-del-directorio-de-cruzados-sadp",
+     "confirmada": true
+    },
+    {
+     "nombre": "Luis Larraín Arroyo",
+     "corto": "Larraín",
+     "cargo": "Presidente del Directorio",
+     "desde": "2014-04-16",
+     "hasta": "2016-07-25",
+     "fuente": "https://en.wikipedia.org/wiki/Luis_Larra%C3%ADn_Arroyo",
+     "confirmada": true
+    },
+    {
+     "nombre": "Juan Tagle Quiroz",
+     "corto": "Tagle",
+     "cargo": "Presidente del Directorio",
+     "desde": "2016-07-25",
+     "hasta": "2026-04-20",
+     "fuente": "https://es.wikipedia.org/wiki/Cruzados_SADP",
+     "confirmada": true
+    },
+    {
+     "nombre": "Matías Claro",
+     "corto": "Claro",
+     "cargo": "Presidente del Directorio",
+     "desde": "2026-04-20",
+     "hasta": null,
+     "fuente": "https://www.biobiochile.cl/noticias/deportes/futbol/universidad-catolica/2026/04/20/fue-fundador-de-cdf-cruzados-sadp-oficializa-a-matias-claro-como-presidente-tras-adios-de-juan-tagle.shtml",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Jaime Estévez Valencia": "Nombrado presidente de Cruzados SADP el 3/5/2010 tras reunión de directorio (antes, Jorge O'Ryan 2009-2010). Hasta: el día que asumió Larraín (la fuente solo dice 2014); el día de salida es inferido.",
+    "Luis Larraín Arroyo": "Asumió el 16/4/2014 y renunció el 25/7/2016 (Wikipedia en inglés; comunicado del club).",
+    "Juan Tagle Quiroz": "Asumió el 25/7/2016; reelecto abril 2025. Hasta: el 20/4/2026 es el día en que el directorio eligió a Claro; la fuente no da el día exacto de la salida de Tagle.",
+    "Matías Claro": "Oficializado el 20/4/2026 en el directorio."
+   },
+   "cubre": {
+    "2010-12-31": "Jaime Estévez Valencia",
+    "2011-12-31": "Jaime Estévez Valencia",
+    "2012-12-31": "Jaime Estévez Valencia",
+    "2013-12-31": "Jaime Estévez Valencia",
+    "2014-12-31": "Luis Larraín Arroyo",
+    "2015-12-31": "Luis Larraín Arroyo",
+    "2016-12-31": "Juan Tagle Quiroz",
+    "2017-12-31": "Juan Tagle Quiroz",
+    "2018-12-31": "Juan Tagle Quiroz",
+    "2019-12-31": "Juan Tagle Quiroz",
+    "2020-12-31": "Juan Tagle Quiroz",
+    "2021-12-31": "Juan Tagle Quiroz",
+    "2022-12-31": "Juan Tagle Quiroz",
+    "2023-12-31": "Juan Tagle Quiroz",
+    "2024-12-31": "Juan Tagle Quiroz",
+    "2025-12-31": "Juan Tagle Quiroz"
+   },
+   "dudas": [
+    "Cierre 2025: el balance se aprueba en abril 2026, cuando Tagle sale y asume Claro (20/4/2026); si firmó Claro, hace falta el campo `firmo`. Ver la memoria del ejercicio. Los apellidos completos (Estévez Valencia, Tagle Quiroz) vienen de memoria y de Wikipedia; el 'nombre' publicado puede acortarse a lo que dicen las fuentes."
+   ]
+  },
+  "clubamerica": {
+   "gestiones": [
+    {
+     "nombre": "Emilio Azcárraga Jean",
+     "corto": "Azcárraga",
+     "cargo": "Dueño",
+     "desde": "1997-04-01",
+     "hasta": null,
+     "fuente": "https://es.wikipedia.org/wiki/Emilio_Azc%C3%A1rraga_Jean",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Emilio Azcárraga Jean": "Sucedió a su padre al frente de Televisa en abril de 1997 (día 01: solo mes) y desde entonces controla el club (Wikipedia: dato con 'cita requerida'). El reporte financiero de Ollamani 2025 lo declara accionista de control y la nota de ESPN del 23/12/2025 lo confirma como presidente ejecutivo del consejo y máximo líder del club tras la venta del 49% a General Atlantic. Fecha de dueño del club no confirmada por fuente directa."
+   },
+   "cubre": {
+    "2025-12-31": "Emilio Azcárraga Jean"
+   },
+   "dudas": [
+    "La fecha de desde (1997) no está confirmada con una fuente que la diga para el club; confirmada=false. Alternativa más defendible si se prefiere: cargar como Presidente Ejecutivo del Consejo de Ollamani desde su escisión (2024-01-31, no confirmado que asumiera ese cargo ese día). Santiago Baños es presidente deportivo desde 2017, no se cargó."
+   ]
+  },
+  "alianzalima-pe": {
+   "gestiones": [
+    {
+     "nombre": "Kattia Bohórquez Cairo",
+     "corto": "Bohórquez",
+     "cargo": "Administrador concursal",
+     "desde": "2019-12-19",
+     "hasta": "2021-02-09",
+     "fuente": "https://larepublica.pe/deportes/2019/12/19/alianza-lima-kattia-bohorquez-fue-designada-como-la-nueva-administradora-del-club-blanquiazul-tras-reunion-de-la-junta-de-acreedores",
+     "confirmada": true
+    },
+    {
+     "nombre": "Miguel Pons Castro",
+     "corto": "Pons",
+     "cargo": "Administrador concursal",
+     "desde": "2021-02-09",
+     "hasta": "2022-08-02",
+     "fuente": "https://www.futbolperuano.com/liga-1/noticias/miguel-pons-no-continuara-como-administrador-de-alianza-lima-342679",
+     "confirmada": false
+    },
+    {
+     "nombre": "Fernando Salazar Barbagelata",
+     "corto": "Salazar",
+     "cargo": "Administrador concursal",
+     "desde": "2022-08-02",
+     "hasta": "2023-06-10",
+     "fuente": "https://depor.com/futbol-peruano/descentralizado/alianza-lima-anuncio-a-fernando-salazar-como-nuevo-administrador-de-la-institucion-liga-1-noticia/",
+     "confirmada": false
+    },
+    {
+     "nombre": "José Sabogal Carrillo",
+     "corto": "Sabogal",
+     "cargo": "Administrador concursal",
+     "desde": "2023-06-10",
+     "hasta": "2023-12-21",
+     "fuente": "https://rpp.pe/futbol/descentralizado/alianza-lima-jose-sabogal-ya-no-es-mas-administrador-noticia-1523591",
+     "confirmada": true
+    },
+    {
+     "nombre": "Diego Guerrero Alburqueque",
+     "corto": "Guerrero",
+     "cargo": "Administrador concursal",
+     "desde": "2023-12-21",
+     "hasta": "2024-04-19",
+     "fuente": "https://libero.pe/futbol-peruano/alianza-lima/2023/12/21/jose-sabogal-renuncio-como-administrador-alianza-lima-diego-guerrero-asume-cargo-fondo-blanquiazul-519309",
+     "confirmada": true
+    },
+    {
+     "nombre": "Rafael Medina",
+     "corto": "Medina",
+     "cargo": "Administrador concursal",
+     "desde": "2024-04-19",
+     "hasta": "2025-01-16",
+     "fuente": "https://libero.pe/futbol-peruano/alianza-lima/2024/04/19/quien-es-rafael-medina-nuevo-administrador-alianza-lima-2024-junto-acreedores-280022",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Kattia Bohórquez Cairo": "Designada por la Junta de Acreedores el 19/12/2019 (La República y notas de los estados financieros 2019 y 2020) tras la renuncia de Renzo Ratto; ejerció hasta febrero de 2021.",
+    "Miguel Pons Castro": "Designado el 9/2/2021 por Junta de Acreedores (nota de los estados financieros 2020/2021). Anunció su salida en la semana del 5/3/2022 (motivos familiares). Hasta: se puso el 2/8/2022, cuando Salazar asumió; entre marzo y agosto de 2022 no se encontró quién estuvo (¿Pons hasta que se eligió sucesor?). Sin confirmar.",
+    "Fernando Salazar Barbagelata": "Asumió el martes 2/8/2022 (Depor del 2/8/2022: 'designado en la última reunión de la Junta de Acreedores'). Renunció por carta a principios de junio de 2023 (Libero 8/6/2023); hasta = fecha de inicio de Sabogal, aproximada.",
+    "José Sabogal Carrillo": "Elegido en la Junta de Acreedores de junio de 2023; su vínculo contractual empezó el 10/6/2023. Renunció el 21/12/2023 (RPP).",
+    "Diego Guerrero Alburqueque": "Gerente general interino y administrador temporal desde el 21/12/2023 hasta el 19/4/2024.",
+    "Rafael Medina": "Designado el 19/4/2024 por la Junta de Acreedores (también gerente general). Fue revocado con 80,70% de los votos; la nota de Cabada es del 16/1/2025 y no da el día de la revocación: hasta = esa fecha, aproximada."
+   },
+   "cubre": {
+    "2019-12-31": "Kattia Bohórquez Cairo",
+    "2020-12-31": "Kattia Bohórquez Cairo",
+    "2021-12-31": "Miguel Pons Castro",
+    "2022-12-31": "Fernando Salazar Barbagelata",
+    "2023-12-31": "Diego Guerrero Alburqueque",
+    "2024-12-31": "Rafael Medina"
+   },
+   "dudas": [
+    "Cierre 2024: el 16/1/2025 ya asumía Fernando Cabada (Medina revocado); si el balance 2024 lo firmó Cabada hace falta `firmo` (el estado financiero 2024 no lo verifiqué).",
+    "Cierre 2023: la gestión de Guerrero fue interina por 4 meses.",
+    "Pons -> Salazar: hueco de marzo a agosto de 2022 sin esclarecer; el cierre 2021 no se afecta.",
+    "Fernando Cabada (desde ~enero 2025) no se cargó: ningún cierre es suyo.",
+    "Los segundos apellidos (Sabogal Carrillo, Pons Castro) vienen de Gestión y Depor; verificar antes de publicar."
+   ]
+  }
+ }
+}

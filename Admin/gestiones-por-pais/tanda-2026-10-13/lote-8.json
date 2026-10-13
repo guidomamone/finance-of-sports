@@ -1,0 +1,120 @@
+{
+ "RU": [
+  {
+   "clubId": "lokomotivmoscow-ru",
+   "nombre": "AO Football Club Lokomotiv",
+   "displayName": "Lokomotiv Moscow",
+   "cierres": [
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "pedido": "Decisión de Guido: cargar al DIRECTOR GENERAL (генеральный директор) en cada cierre. Confirmar con fuente las fechas que quedaron sin confirmar (ver Admin/carga-clubes/lokomotivmoscow-ru.md, sección Gestiones)."
+  },
+  {
+   "clubId": "dynamomoscow-ru",
+   "nombre": "AO Football Club Dynamo-Moscow",
+   "displayName": "Dynamo Moscow",
+   "cierres": [
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "pedido": "Decisión de Guido: cargar al DIRECTOR GENERAL (генеральный директор) en cada cierre. Confirmar con fuente las fechas que quedaron sin confirmar (ver Admin/carga-clubes/dynamomoscow-ru.md, sección Gestiones)."
+  },
+  {
+   "clubId": "baltikakaliningrad-ru",
+   "nombre": "AO Football Club Baltika",
+   "displayName": "Baltika Kaliningrad",
+   "cierres": [
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "pedido": "Decisión de Guido: cargar al DIRECTOR GENERAL (генеральный директор) en cada cierre. Confirmar con fuente las fechas que quedaron sin confirmar (ver Admin/carga-clubes/baltikakaliningrad-ru.md, sección Gestiones)."
+  },
+  {
+   "clubId": "parinizhnynovgorod-ru",
+   "nombre": "ANO Football Club Pari Nizhny Novgorod",
+   "displayName": "Pari Nizhny Novgorod",
+   "cierres": [
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "pedido": "Decisión de Guido: cargar al DIRECTOR GENERAL (генеральный директор) en cada cierre. Confirmar con fuente las fechas que quedaron sin confirmar (ver Admin/carga-clubes/parinizhnynovgorod-ru.md, sección Gestiones)."
+  },
+  {
+   "clubId": "rostov-ru",
+   "nombre": "AO Football Club Rostov",
+   "displayName": "Rostov",
+   "cierres": [
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "pedido": "Falta el cierre 2025-12-31 (Arutiunián renunció el 2025-10-15): quién quedó a cargo y desde cuándo."
+  }
+ ],
+ "HR": [
+  {
+   "clubId": "osijek-hr",
+   "nombre": "Nogometni klub Osijek, sportsko dioničko društvo",
+   "displayName": "Osijek",
+   "cierres": [
+    "2025-12-31"
+   ],
+   "pedido": "Fecha exacta de asunción de Sakalj (2020) y quién firmó el balance 2025."
+  }
+ ],
+ "CO": [
+  {
+   "clubId": "oncecaldas",
+   "nombre": "Once Caldas S.A. En Reorganización",
+   "displayName": "Once Caldas",
+   "cierres": [
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "pedido": "Confirmar con fuente las fechas de Castrillón (inicio) y Jaramillo (2024-10)."
+  }
+ ],
+ "MX": [
+  {
+   "clubId": "clubamerica",
+   "nombre": "Club de Fútbol América, S.A. de C.V.",
+   "displayName": "Club América",
+   "cierres": [
+    "2025-12-31"
+   ],
+   "pedido": "Decisión de Guido: cargar a Emilio Azcárraga Jean como Dueño (vía Grupo Televisa / Ollamani). Fuente para la fecha desde la que es dueño (o desde que lo controla)."
+  }
+ ],
+ "PE": [
+  {
+   "clubId": "alianzalima-pe",
+   "nombre": "Club Alianza Lima",
+   "displayName": "Alianza Lima",
+   "cierres": [
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31"
+   ],
+   "pedido": "Decisión de Guido: UNA gestión con nombre \"Concurso de Acreedores\" (corto \"Concurso\", cargo \"Concurso de Acreedores\") que cubra los años en que el club estuvo en concurso ante INDECOPI. Hace falta la fecha de inicio del concurso (y de fin, si terminó) con fuente. Y para los cierres fuera del concurso, el presidente."
+  }
+ ]
+}

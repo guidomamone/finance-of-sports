@@ -1,0 +1,372 @@
+{
+ "criterioPais": {
+  "BR": "Se cargó al presidente del club (presidente ejecutivo/de la diretoria) en las asociaciones civiles; en Amazonas FC, que firma su Diretor Presidente y es de un dueño con nombre, a Wesley Couto; en Atlético Goianiense (ACG con SAF) al presidente de la SAF, Adson Batista (la presidencia de la asociación la ocupa Valdivino de Oliveira: ver dudas)."
+ },
+ "clubes": {
+  "vilanova-br": {
+   "gestiones": [
+    {
+     "nombre": "Gutemberg Veronez",
+     "corto": "Guto Veronez",
+     "cargo": "Presidente",
+     "desde": "2014-12-01",
+     "hasta": "2016-10-11",
+     "fuente": "https://pt.wikipedia.org/wiki/Lista_de_presidentes_do_Vila_Nova_Futebol_Clube",
+     "confirmada": false
+    },
+    {
+     "nombre": "Ecival Martins",
+     "corto": "Ecival",
+     "cargo": "Presidente",
+     "desde": "2016-10-11",
+     "hasta": "2019-12-09",
+     "fuente": "https://sagresonline.com.br/apresentado-novo-presidente-do-vila-pede-paciencia-a-torcida-e-destaca-que-a-paz-vai-voltar/",
+     "confirmada": false
+    },
+    {
+     "nombre": "Hugo Jorge Bravo",
+     "corto": "Hugo Jorge Bravo",
+     "cargo": "Presidente",
+     "desde": "2019-12-09",
+     "hasta": "2025-11-28",
+     "fuente": "https://pt.wikipedia.org/wiki/Lista_de_presidentes_do_Vila_Nova_Futebol_Clube",
+     "confirmada": true
+    },
+    {
+     "nombre": "Fábio Brasil de Castro",
+     "corto": "Fábio Brasil",
+     "cargo": "Presidente",
+     "desde": "2025-11-28",
+     "hasta": null,
+     "fuente": "https://www.maisgoias.com.br/esportes/futebol/futebol-goiano/vila-nova/fabio-brasil-ira-assumir-a-presidencia-do-vila-nova-na-proxima-sexta-feira-28-11/",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Gutemberg Veronez": "Wikipedia pt (lista): presidente 2014-2016, interino tras la renuncia del anterior; elegido el 01/12/2015 (posse 02/12/2015, venció la chapa de Carlos Antunes Júnior). Sagres Online: asumió \"a fines de 2014\" y renunció 22 meses después. El día exacto de la asunción de 2014 NO figura en ninguna fuente leída: 2014-12-01 es una estimación (día 01 por convención). Hasta = 2016-10-11, día en que se presentó a Ecival; la fecha exacta de la renuncia no se encontró (Sagres: renuncia previa al nombramiento de Ecival). confirmada=false.",
+    "Ecival Martins": "Sagres Online: presentado como presidente el martes 11/10/2016 (nombrado por el presidente del consejo, Wilson Balzacchi, tras la renuncia de Guto, hasta elecciones del 09/11/2016); la fecha del nombramiento no figura (pudo ser 1-2 días antes). Wikipedia pt: elegido 09/11/2016 (posse 30/12/2016), nuevo mandato 2018-2019 (posse 01/01/2018; la fila no trae nombre). Hasta = 09/12/2019, posse de Hugo Jorge Bravo según la lista de Wikipedia; ninguna fuente leída afirma explícitamente que Ecival fue el inmediato anterior. confirmada=false.",
+    "Hugo Jorge Bravo": "Ya confirmada en la tanda anterior (posse 09/12/2019; Wikipedia pt).",
+    "Fábio Brasil de Castro": "Ya confirmada en la tanda anterior (posse 28/11/2025)."
+   },
+   "cubre": {
+    "2014-12-31": "Gutemberg Veronez (dudoso)",
+    "2015-12-31": "Gutemberg Veronez",
+    "2016-12-31": "Ecival Martins",
+    "2017-12-31": "Ecival Martins",
+    "2021-12-31": "Hugo Jorge Bravo",
+    "2022-12-31": "Hugo Jorge Bravo",
+    "2023-12-31": "Hugo Jorge Bravo",
+    "2024-12-31": "Hugo Jorge Bravo",
+    "2025-12-31": "Fábio Brasil de Castro"
+   },
+   "dudas": [
+    "Cierre 2014: no se encontró el día de asunción de Guto Veronez; la lista de Wikipedia pt lo muestra con posse 02/12/2015 y a Rodrigo Nogueira (interino desde 18/03/2014) como anterior. Si Guto asumió después del 31/12/2014, el cierre 2014 sería de Rodrigo Nogueira.",
+    "Cierre 2025: Hugo Jorge Bravo presidió hasta el 28/11/2025 y Fábio Brasil estaba al cierre (posible firmo).",
+    "Cierre 2016: Guto Veronez presidió hasta octubre; Ecival estaba al cierre (posible firmo)."
+   ]
+  },
+  "remo-br": {
+   "gestiones": [
+    {
+     "nombre": "Fábio Osório Bentes",
+     "corto": "Bentes",
+     "cargo": "Presidente",
+     "desde": "2018-11-10",
+     "hasta": "2023-11-12",
+     "fuente": "https://dol.com.br/esporte/esporte-para/noticia-555563-fabio-bentes-confirma-quais-serao-suas-primeiras-medidas-como-novo-presidente-azulino.html",
+     "confirmada": true
+    },
+    {
+     "nombre": "Antônio Carlos Teixeira",
+     "corto": "Tonhão",
+     "cargo": "Presidente",
+     "desde": "2023-11-12",
+     "hasta": null,
+     "fuente": "https://www.oliberal.com/esportes/remo/tonhao-vence-a-eleicao-e-e-novo-presidente-do-remo-nos-proximos-tres-anos-veja-os-numeros-1.747125",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Fábio Osório Bentes": "Elegido el 10/11/2018 (DOL, \"eleição do último dia 10\"); DOL (13/11/2018): \"A posse de Fábio Bentes como novo presidente do Clube do Remo foi imediata\". Por eso desde = 2018-11-10 (antes se había estimado 01/01/2019, lo cual era incorrecto). Reelecto el 11/12/2020. Hasta: DOL (10/11/2023) dice que el nuevo presidente asume \"la próxima segunda (13)\", es decir 13/11/2023, mientras la gestión de Tonhão ya cargada empieza el 12/11/2023 (día de la elección): se usa 12/11 para no dejar hueco ni superponer.",
+    "Antônio Carlos Teixeira": "Ya confirmada en la tanda anterior (elegido 12/11/2023). Ojo: DOL dice que asume el lunes 13/11/2023."
+   },
+   "cubre": {
+    "2019-12-31": "Fábio Osório Bentes",
+    "2020-12-31": "Fábio Osório Bentes",
+    "2021-12-31": "Fábio Osório Bentes",
+    "2022-12-31": "Fábio Osório Bentes",
+    "2023-12-31": "Antônio Carlos Teixeira",
+    "2024-12-31": "Antônio Carlos Teixeira",
+    "2025-12-31": "Antônio Carlos Teixeira"
+   },
+   "dudas": [
+    "Cierre 2023: Bentes presidió hasta el 12-13/11/2023; Tonhão al cierre (posible firmo).",
+    "Posse de Tonhão: 12/11/2023 (elección) vs. lunes 13/11/2023 (DOL)."
+   ]
+  },
+  "paysandu-br": {
+   "gestiones": [
+    {
+     "nombre": "Maurício Ettinger",
+     "corto": "Ettinger",
+     "cargo": "Presidente",
+     "desde": "2021-01-01",
+     "hasta": "2025-01-01",
+     "fuente": "https://www.oliberal.com/esportes/futebol/e-hora-de-sair-de-cena-mauricio-ettinger-avalia-gestao-e-se-despede-do-paysandu-1.903032",
+     "confirmada": false
+    },
+    {
+     "nombre": "Roger Aguilera",
+     "corto": "Aguilera",
+     "cargo": "Presidente",
+     "desde": "2025-01-01",
+     "hasta": "2025-12-22",
+     "fuente": "https://www.oliberal.com/esportes/futebol/e-hora-de-sair-de-cena-mauricio-ettinger-avalia-gestao-e-se-despede-do-paysandu-1.903032",
+     "confirmada": true
+    },
+    {
+     "nombre": "Márcio Tuma",
+     "corto": "Tuma",
+     "cargo": "Presidente",
+     "desde": "2025-12-22",
+     "hasta": null,
+     "fuente": "https://diariodopara.com.br/bola/paysandu-saiba-quem-assume-a-presidencia-apos-saida-de-aguilera/",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Maurício Ettinger": "O Liberal (despedida): presidió de 2020 a 2024 y terminó el 31/12/2024. Elegido en 2020 (venció a Luiz Omar Pinheiro; el 03/12/2020 según la tanda anterior), reelecto el 07/12/2022 para 2023-24 (DOL). Ninguna fuente da el día de posse (Sindiclubes PA: ceremonia 26/01/2021); 2021-01-01 = inicio del mandato bienal, convención. confirmada=false. Hasta 2025-01-01 = día en que asumió Aguilera.",
+    "Roger Aguilera": "Elegido el 05/11/2024 (DOL). O Liberal: asumió el 01/01/2025 (mandato 2025/26; otra nota previa anuncia ceremonia el 20/01). Renunció el 22/12/2025 (O Liberal, Diário do Pará).",
+    "Márcio Tuma": "Vice-presidente, asumió en ejercicio (\"de imediato\") al renunciar Aguilera el lunes 22/12/2025 (Diário do Pará, 22/12/2025); la nota no dice la fecha explícita, es la de la renuncia. confirmada=false por eso (la tanda anterior la había cargado con Estado do Pará Online)."
+   },
+   "cubre": {
+    "2021-12-31": "Maurício Ettinger",
+    "2023-12-31": "Maurício Ettinger",
+    "2024-12-31": "Maurício Ettinger",
+    "2025-12-31": "Márcio Tuma"
+   },
+   "dudas": [
+    "Cierre 2025: Aguilera presidió casi todo el año; Tuma asumió el 22/12/2025 (posible firmo).",
+    "Posse de Ettinger 2021: sin día en las fuentes; O Liberal dice \"2020\"."
+   ]
+  },
+  "ituano": {
+   "gestiones": [
+    {
+     "nombre": "João Paulo Silveira Ruiz",
+     "corto": "Ruiz",
+     "cargo": "Presidente",
+     "desde": "2024-01-01",
+     "hasta": null,
+     "fuente": "https://tudosobrepaulista.com.br/materia/ituano-tem-novo-presidente/",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "João Paulo Silveira Ruiz": "Elegido (chapa única, aclamado) el 05/12/2023 para 2024/2026 (Tudo Sobre Paulista, 07/12/2023; Periscópio; Wikipedia pt lo lista como presidente). Reemplazó a Ricardo Giordani. Ninguna fuente da el día de posse: 2024-01-01 = inicio del mandato, convención. Ituano: el balance lo firma solo el contador (ver carga)."
+   },
+   "cubre": {
+    "2024-12-31": "João Paulo Silveira Ruiz"
+   },
+   "dudas": [
+    "Fecha exacta de posse no encontrada (confirmada=false). La Wikipedia en inglés lista a otro nombre (Vinicius Guitti Moraes), sin respaldo en prensa; la pt y la prensa dan a Ruiz."
+   ]
+  },
+  "ceara-br": {
+   "gestiones": [
+    {
+     "nombre": "João Paulo Silva",
+     "corto": "João Paulo",
+     "cargo": "Presidente",
+     "desde": "2023-03-29",
+     "hasta": null,
+     "fuente": "https://diariodonordeste.verdesmares.com.br/jogada/joao-paulo-silva-e-eleito-o-novo-presidente-do-ceara-veja-detalhes-1.3352042",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "João Paulo Silva": "Elegido el miércoles 29/03/2023 para completar el mandato de Robinson de Castro (renunció el 09/02/2023; Carlos Moraes fue interino y volvió a vice 2º) (Diário do Nordeste, O Povo). Reelecto el 28/11/2024 (166 votos contra 123) para 2025-2027. Las fuentes no dan día de posse: se usa el día de la elección (el interino volvió a vice con la elección). confirmada=false por eso. Sigue en el cargo en agosto de 2026 (O Povo); en mayo de 2026 26 conselheiros pidieron su impeachment, sin desenlace encontrado."
+   },
+   "cubre": {
+    "2024-12-31": "João Paulo Silva",
+    "2025-12-31": "João Paulo Silva"
+   },
+   "dudas": [
+    "Día exacto de posse en 2023 no encontrado.",
+    "Pedido de impeachment (mayo 2026) sin resultado conocido: no afecta los cierres."
+   ]
+  },
+  "atleticogoianiense": {
+   "gestiones": [
+    {
+     "nombre": "Adson José Batista",
+     "corto": "Adson Batista",
+     "cargo": "Presidente",
+     "desde": "2019-01-14",
+     "hasta": null,
+     "fuente": "https://www.lance.com.br/atletico-goianiense/adson-batista-aclamado-novo-presidente-atletico.html",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Adson José Batista": "Lance: chapa \"Castelo do Dragão\" aclamada ~07/12/2018 para 2019/2021, posse el 14/01/2019. O Popular (2021): el Consejo de Administración lo mantuvo para 2022-2025 (posse automática el 01/01/2022). Prensa de 2025-2026 lo muestra aún presidente (Dragão Goiano, Jornal Opção). Hasta = null."
+   },
+   "cubre": {
+    "2025-12-31": "Adson José Batista"
+   },
+   "dudas": [
+    "El balance 2025 es de ACG + SAF: en la asociación (ACG) figura Valdivino José de Oliveira como Presidente; en la SAF, Adson Batista como Diretor Presidente y presidente del Consejo. Se cargó a Adson (SAF, figura pública). Decisión de Guido si prefiere Valdivino.",
+    "No se encontró nota que confirme formalmente el mandato de Adson para 2026 (el 2022-2025 terminó); la prensa lo sigue llamando presidente."
+   ]
+  },
+  "amazonas-br": {
+   "gestiones": [
+    {
+     "nombre": "Francisco Weslley Couto dos Santos",
+     "corto": "Wesley Couto",
+     "cargo": "Presidente",
+     "desde": "2019-05-23",
+     "hasta": null,
+     "fuente": "https://en.wikipedia.org/wiki/Amazonas_Futebol_Clube",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Francisco Weslley Couto dos Santos": "Fundador y presidente (Wikipedia en/pt; Diário do Pará; Máquina do Esporte), firma como Diretor Presidente el balance 2024 (firma digital 04/08/2025; Clubes/Brasil/Amazonas/balanco-patrimonial-2024.md). Desde = 2019-05-23, fecha de fundación del club (Wikipedia en): ninguna fuente dice cuándo asumió como presidente ni que lo hiciera ese día; confirmada=false. Dueño con nombre: en 2025 vendió 45% a un grupo estadounidense (SAF) y retiene 55% según la infobox."
+   },
+   "cubre": {
+    "2024-12-31": "Francisco Weslley Couto dos Santos"
+   },
+   "dudas": [
+    "Fecha de asunción como presidente no encontrada (solo fundación 23/05/2019).",
+    "En 2024 fue suspendido temporalmente del cargo por una agresión a un jugador (Rede Onda); duración no encontrada, no afecta quién conducía el club al cierre."
+   ]
+  },
+  "criciuma-br": {
+   "gestiones": [
+    {
+     "nombre": "Antenor Angeloni",
+     "corto": "Angeloni",
+     "cargo": "Presidente",
+     "desde": "2010-01-01",
+     "hasta": "2015-12-08",
+     "fuente": "https://www.criciuma.com.br/noticias/o-clube/novo-presidente-e-empossado",
+     "confirmada": false
+    },
+    {
+     "nombre": "Jaime Dal Farra",
+     "corto": "Dal Farra",
+     "cargo": "Presidente",
+     "desde": "2015-12-08",
+     "hasta": "2021-01-01",
+     "fuente": "https://www.criciuma.com.br/noticias/o-clube/novo-presidente-e-empossado",
+     "confirmada": true
+    },
+    {
+     "nombre": "Anselmo Freitas",
+     "corto": "Anselmo Freitas",
+     "cargo": "Presidente",
+     "desde": "2021-01-01",
+     "hasta": "2022-06-28",
+     "fuente": "https://www.criciuma.com.br/noticias/o-clube/anselmo-freitas-e-eleito-presidente-administrativo",
+     "confirmada": false
+    },
+    {
+     "nombre": "Vilmar Guedes",
+     "corto": "Vilmar Guedes",
+     "cargo": "Presidente",
+     "desde": "2022-06-28",
+     "hasta": "2024-12-05",
+     "fuente": "https://www.nsctotal.com.br/?p=7363783",
+     "confirmada": true
+    },
+    {
+     "nombre": "Alexandre Farias",
+     "corto": "Alexandre Farias",
+     "cargo": "Presidente",
+     "desde": "2024-12-05",
+     "hasta": "2025-11-26",
+     "fuente": "https://www.4oito.com.br/",
+     "confirmada": false
+    },
+    {
+     "nombre": "Pedro Paulo Canella",
+     "corto": "Canella",
+     "cargo": "Presidente",
+     "desde": "2025-11-26",
+     "hasta": null,
+     "fuente": "https://www.4oito.com.br/",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Antenor Angeloni": "Wikipedia pt (lista): 2010 a 2015, solo años; el club (08/12/2015) dice que comandaba desde 2010. Desde = 01/01/2010 (solo año), hasta = 08/12/2015, aclamación de Dal Farra. Para los cierres 2012-2014 no hay dudas sobre quién conducía (presentado como presidente en 2013, DC; campeón estadual 2013). confirmada=false por el día 01.",
+    "Jaime Dal Farra": "Aclamado el 08/12/2015 (club). Renunció el 14/05/2020 y siguió hasta el 31/12/2020: hasta = 2021-01-01 por convención. Ya confirmada en la tanda anterior.",
+    "Anselmo Freitas": "Wikipedia pt: electo el 17/12/2020 (no verificado en prensa); el club informa su ratificación el 23/11/2021 para el trienio 2022-2024 (única chapa, 109 votos). Ninguna fuente da el día de posse: 2021-01-01 inferido del fin de Dal Farra. Hasta = 2022-06-28, aclamación de Guedes; la fecha de su salida no se encontró (carta al Conselho por salud, NSC Total, sin fecha). confirmada=false.",
+    "Vilmar Guedes": "Aclamado el 28/06/2022 (Futebol Interior); la fuente no da posse, se usa la aclamación. Renunció el 05/12/2024 (ND Mais / NSC Total). Ya cargada en la tanda anterior; no vuelto a verificar.",
+    "Alexandre Farias": "Vice-presidente administrativo, interino desde la renuncia de Guedes (05/12/2024) hasta la posse de Canella (4oito). Cargada antes con fuente 4oito; no re-leída aquí.",
+    "Pedro Paulo Canella": "Posse el 26/11/2025 en la ACIC (4oito). Cargada antes; no re-leída aquí."
+   },
+   "cubre": {
+    "2012-12-31": "Antenor Angeloni",
+    "2013-12-31": "Antenor Angeloni",
+    "2014-12-31": "Antenor Angeloni",
+    "2015-12-31": "Jaime Dal Farra",
+    "2016-12-31": "Jaime Dal Farra",
+    "2017-12-31": "Jaime Dal Farra",
+    "2018-12-31": "Jaime Dal Farra",
+    "2019-12-31": "Jaime Dal Farra",
+    "2020-12-31": "Jaime Dal Farra",
+    "2021-12-31": "Anselmo Freitas",
+    "2022-12-31": "Vilmar Guedes",
+    "2023-12-31": "Vilmar Guedes",
+    "2024-12-31": "Alexandre Farias",
+    "2025-12-31": "Pedro Paulo Canella"
+   },
+   "dudas": [
+    "Anselmo Freitas: día de asunción y de salida no confirmados (2021-01-01 y 2022-06-28 son convenciones).",
+    "Cierre 2015: Angeloni presidió casi todo el año, Dal Farra estaba al cierre (posible firmo).",
+    "Cierre 2022: Freitas hasta ~junio, Guedes el resto. Cierre 2024: Guedes casi todo el año, Farias al cierre. Cierre 2025: Farias hasta el 26/11, Canella al cierre.",
+    "NSC Total (nota sobre la renuncia de Guedes) dice por error que asumió en junio de 2024; las demás fuentes dicen 2022.",
+    "Quién condujo entre octubre y diciembre de 2015 (renuncia de Angeloni - posse de Dal Farra): sin dato."
+   ]
+  },
+  "crb-br": {
+   "gestiones": [
+    {
+     "nombre": "Marcos Barbosa",
+     "corto": "Marcos Barbosa",
+     "cargo": "Presidente",
+     "desde": "2011-01-01",
+     "hasta": "2021-04-01",
+     "fuente": "https://www.gazetaweb.com/noticias/esportes/alagoano/mario-marroquim-e-oficialmente-o-novo-presidente-do-crb",
+     "confirmada": false
+    },
+    {
+     "nombre": "Mário Marroquim",
+     "corto": "Marroquim",
+     "cargo": "Presidente",
+     "desde": "2021-04-01",
+     "hasta": null,
+     "fuente": "https://www.gazetaweb.com/noticias/esportes/alagoano/mario-marroquim-e-oficialmente-o-novo-presidente-do-crb",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Marcos Barbosa": "Gazeta Web / NE45: presidió desde 2011 hasta el inicio de 2021 (\"después de una década\"); aclamado por 4ª vez el 19/12/2016 para 2017/2018 (TNH1). Solo año de inicio (01/01/2011 por convención). Hasta = 01/04/2021, posse de Marroquim; ninguna fuente dice cuándo dejó Barbosa. confirmada=false.",
+    "Mário Marroquim": "Aclamado el viernes 05/03/2021 (chapa única \"Avante, Galo!\"), posse el 1 de abril de 2021 (Gazeta Web, que dice que \"toma posse el día 1 de abril\"). Reelecto el 18/12/2024 para 2025-2028, posse 01/01/2025 (continúa)."
+   },
+   "cubre": {
+    "2020-12-31": "Marcos Barbosa",
+    "2021-12-31": "Mário Marroquim",
+    "2022-12-31": "Mário Marroquim",
+    "2023-12-31": "Mário Marroquim",
+    "2024-12-31": "Mário Marroquim",
+    "2025-12-31": "Mário Marroquim"
+   },
+   "dudas": [
+    "Gazeta Web y Jornal de Alagoas discrepan sobre la duración del primer mandato de Marroquim (2022 vs 2024); no afecta quién conducía."
+   ]
+  }
+ }
+}

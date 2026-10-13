@@ -1,0 +1,213 @@
+{
+ "criterioPais": {
+  "JP": "Los clubes de la J.League son sociedades anonimas (株式会社) con dueño empresarial (Mercari, Nissan, Fujitsu, Rakuten, Panasonic, MIXI, Toyota, etc.), por lo que se carga al 代表取締役社長 (presidente de la sociedad, quien firma). Se mantiene 'Presidente' como cargo. Un 会長 (chairman) es aparte y no se carga salvo que cumpla ese rol (caso Kobe/Mikitani: no cargado)."
+ },
+ "clubes": {
+  "kashimaantlers": {
+   "gestiones": [
+    {
+     "nombre": "Fumiaki Koizumi",
+     "corto": "Koizumi",
+     "cargo": "Presidente",
+     "desde": "2019-08-30",
+     "hasta": null,
+     "fuente": "https://www.goal.com/jp/%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9/%E3%82%A2%E3%83%B3%E3%83%88%E3%83%A9%E3%83%BC%E3%82%BA%E3%81%AF%E6%96%B0%E6%99%82%E4%BB%A3%E3%81%B8%E9%B9%BF%E5%B3%B6%E6%96%B0%E7%A4%BE%E9%95%B7%E3%81%AB%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AE%E5%B0%8F%E6%B3%89%E6%96%87%E6%98%8E%E6%B0%8F%E3%81%8C%E5%B0%B1%E4%BB%BB/wc0zk5isruqi15fd7mwqv1ll5",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Fumiaki Koizumi": "Asumió por resolución del directorio el 2019-08-30, cuando Mercari pasó a ser accionista principal (Goal Japan). Sigue siendo 代表取締役社長 en 2025 (J.League lo lista como tal en 2024; prensa de sep. 2025). El dueño es una empresa (Mercari), por eso se carga al presidente; Koizumi es además presidente del directorio de Mercari."
+   },
+   "cubre": {
+    "2025-12-31": "Fumiaki Koizumi"
+   },
+   "dudas": []
+  },
+  "urawareddiamonds": {
+   "gestiones": [
+    {
+     "nombre": "Makoto Taguchi",
+     "corto": "Taguchi",
+     "cargo": "Presidente",
+     "desde": "2023-02-01",
+     "hasta": "2026-07-01",
+     "fuente": "https://www1.targma.jp/urawa-football/2022/12/20/post62830/",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Makoto Taguchi": "La fuente (nota de 2022-12-20 sobre el anuncio del club) dice que asume el 2023-02-01 en lugar de Yoichi Tachibana. Fecha anunciada como prevista; no se vio el comunicado posterior de efectivización, pero la prensa y el club lo tratan como presidente desde 2023 (visita al gobernador 2023-03-24). Deja el cargo el 2026-07-01 (anuncio del club 2026-06-12; lo reemplaza Minoru Shimizu). Dueño: Mitsubishi Motors/grupo, empresa, por eso se carga al 代表取締役社長."
+   },
+   "cubre": {
+    "2025-12-31": "Makoto Taguchi"
+   },
+   "dudas": []
+  },
+  "yokohamafmarinos": {
+   "gestiones": [
+    {
+     "nombre": "Akihiro Nakayama",
+     "corto": "Nakayama",
+     "cargo": "Presidente",
+     "desde": "2022-12-01",
+     "hasta": "2026-07-01",
+     "fuente": "https://www.f-marinos.com/news/club/4955",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Akihiro Nakayama": "Comunicado oficial del club (2022-11-06): Kurosawa deja el 2022-11-30 y Nakayama (hasta entonces vicepresidente) asume el 2022-12-01; figuraba como 内定/予定, y J.League y prensa lo muestran como 社長 desde entonces. Sale por fin de mandato; el relevo (Shunsuke Ashizawa) asume el 2026-07-01 (comunicado 10137 del club), por eso hasta=2026-07-01, no la fecha exacta de salida de Nakayama (probablemente 2026-06-30). Dueño: Nissan (empresa)."
+   },
+   "cubre": {
+    "2025-12-31": "Akihiro Nakayama"
+   },
+   "dudas": []
+  },
+  "kawasakifrontale": {
+   "gestiones": [
+    {
+     "nombre": "Akihiro Yoshida",
+     "corto": "Yoshida",
+     "cargo": "Presidente",
+     "desde": "2022-04-08",
+     "hasta": null,
+     "fuente": "https://www.frontale.co.jp/info/2022/0408_1.html",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Akihiro Yoshida": "Comunicado oficial: decidido en la asamblea de accionistas y directorio del 2022-04-08, de vicepresidente a 代表取締役社長, reemplazando a Yoshihiro Warashina. Aún presidente en oct. 2024 (sitio del club). No se verificó que siga en 2026 pero cubre el cierre 2025 sin cambios reportados. Dueño: Fujitsu (empresa)."
+   },
+   "cubre": {
+    "2025-12-31": "Akihiro Yoshida"
+   },
+   "dudas": [
+    "No se buscó confirmación expresa de que Yoshida siga hoy (hasta=null por falta de noticia de cambio). La búsqueda no devolvió ningún cambio de presidente en 2025."
+   ]
+  },
+  "visselkobe": {
+   "gestiones": [
+    {
+     "nombre": "Yuki Senfu",
+     "corto": "Senfu",
+     "cargo": "Presidente",
+     "desde": "2022-06-01",
+     "hasta": null,
+     "fuente": "https://www.kobe-np.co.jp/news/sports/202205/sp/0015336301.shtml",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Yuki Senfu": "Kobe Shimbun (2022-05-27): Tokuyama deja y Senfu asume el 2022-06-01. Sigue en 2026 (comunicado de la prefectura de Hyogo, jul. 2026). El dueño es Rakuten (empresa); Hiroshi Mikitani figura como chairman/presidente del directorio, pero el criterio del proyecto manda cargar al 代表取締役社長 cuando el dueño es una empresa."
+   },
+   "cubre": {
+    "2025-12-31": "Yuki Senfu"
+   },
+   "dudas": [
+    "Posible discusión de criterio: Mikitani (fundador/CEO de Rakuten) es 会長 del club. Se cargó a Senfu por regla (dueño = empresa)."
+   ]
+  },
+  "gambaosaka": {
+   "gestiones": [
+    {
+     "nombre": "Naoto Mizutani",
+     "corto": "Mizutani",
+     "cargo": "Presidente",
+     "desde": "2025-01-01",
+     "hasta": null,
+     "fuente": "https://www.gamba-osaka.net/news/index/no/17564/",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Naoto Mizutani": "Comunicado oficial: 2025-01-01 asume como 代表取締役 (社長執行役員) y Tadashi Ono pasa a asesor, a confirmar por directorio ese mismo día tras junta extraordinaria de dic. 2024. Mizutani lo repite en su saludo de fin de temporada 2025. Dueño: Panasonic (empresa)."
+   },
+   "cubre": {
+    "2025-12-31": "Naoto Mizutani"
+   },
+   "dudas": []
+  },
+  "cerezoosaka": {
+   "gestiones": [
+    {
+     "nombre": "Takayuki Hioki",
+     "corto": "Hioki",
+     "cargo": "Presidente",
+     "desde": "2025-04-01",
+     "hasta": null,
+     "fuente": "https://www.soccer-king.jp/news/japan/jl/20250331/2003349.html",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Takayuki Hioki": "Anuncio del 2025-03-31 con vigencia 2025-04-01: Hiroaki Morishima pasa a 代表取締役会長 y Hioki (vicepresidente desde feb. 2025) asume la presidencia. Morishima era presidente desde dic. 2018 (no verificado el día exacto, no se cargó). Dueño: Yanmar y otros (varios accionistas, empresas)."
+   },
+   "cubre": {
+    "2025-12-31": "Takayuki Hioki"
+   },
+   "dudas": []
+  },
+  "fctokyo": {
+   "gestiones": [
+    {
+     "nombre": "Shigeya Kawagishi",
+     "corto": "Kawagishi",
+     "cargo": "Presidente",
+     "desde": "2022-02-01",
+     "hasta": "2026-07-01",
+     "fuente": "https://soccermagazine.jp/j1/17502678",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Shigeya Kawagishi": "Soccer Magazine WEB dice que asumiría el 2022-02-01 (fecha prevista, nota previa al ingreso; MIXI toma la gestión). Reemplazó a Naoki Ohkane. El club confirma 'desde febrero de 2022'. Deja el cargo el 2026-07-01 (anuncio oficial 2026-05-28; sucesor Eisuke Shirai). Dueño: MIXI (empresa)."
+   },
+   "cubre": {
+    "2025-12-31": "Shigeya Kawagishi"
+   },
+   "dudas": []
+  },
+  "sanfreccehiroshima": {
+   "gestiones": [
+    {
+     "nombre": "Masayoshi Kubo",
+     "corto": "Kubo",
+     "cargo": "Presidente",
+     "desde": "2025-01-01",
+     "hasta": null,
+     "fuente": "https://www.sanfrecce.co.jp/news/team/10487",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Masayoshi Kubo": "Comunicado oficial (2024-12-09): por resolución del directorio extraordinario, asume 代表取締役社長 el 2025-01-01, de vicepresidente; Shingo Senda (presidente desde 2020) sigue en el club. Aún presidente en dic. 2025 (visita al gobernador). Hijo del presidente del directorio/dueño Masataka Kubo, pero la figura de 社長 es la firmante."
+   },
+   "cubre": {
+    "2025-12-31": "Masayoshi Kubo"
+   },
+   "dudas": []
+  },
+  "nagoyagrampus": {
+   "gestiones": [
+    {
+     "nombre": "Katsuhiro Shimizu",
+     "corto": "Shimizu",
+     "cargo": "Presidente",
+     "desde": "2025-04-26",
+     "hasta": null,
+     "fuente": "https://www3.targma.jp/akasyachi/2025/04/26/post125002/",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Katsuhiro Shimizu": "Asumió el 2025-04-26 tras la asamblea ordinaria de accionistas y directorio ese día (nota de Akasha Shinpo del mismo día; comunicado oficial 0426post-2478 del club, que dio 403 al leerlo). Había sido anunciado como 内定 el 2025-01-11. Sale Kouki Konishi (presidente desde 2017) como Executive Adviser. Dueño: Toyota y grupo (empresa)."
+   },
+   "cubre": {
+    "2025-12-31": "Katsuhiro Shimizu"
+   },
+   "dudas": [
+    "Konishi estuvo hasta 2025-04-26; ejercicios anteriores a esa fecha no se cargaron (solo cierre 2025)."
+   ]
+  }
+ }
+}

@@ -88,23 +88,39 @@ ni en el comentario de ningún archivo de código.
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
 
-195. GESTIONES DE LOS CLUBES YA CARGADOS QUE NO LAS TIENEN (pedido de Guido). 2026-10-13: 6 subagentes Sonnet investigaron los 74 clubes que
-    faltaban; se cargaron las 67 gestiones CONFIRMADAS de 48 clubes (archivos nuevos `data/gestiones/ru.js` y `jp.js`). Lo investigado sin
-    confirmar y las dudas de cada club quedaron en "## Gestiones" de su `Admin/carga-clubes/<club>.md`. FALTA:
-      a) Decisiones de criterio de Guido (clubes sin cargar a propósito): Alemania sin presidente/portavoz en esos años (Köln, Hamburgo, Leipzig;
-         Gladbach sin CEO ago-dic 2024); Rusia con director general (Lokomotiv, Dynamo Moscú, Baltika, Pari NN), Sochi (Rotenberg o Rubashko)
-         y Rubin (OOO o ANO); Brasil SAF: presidente del consejo o ejecutivo (América-MG, Coritiba, Vasco, Fortaleza, RB Bragantino,
-         Ferroviária 2023+, Novorizontino, Cuiabá; br.js ya usa al ejecutivo en Atlético Mineiro y Bahia); México (Club América: Azcárraga
-         vía Ollamani) y Perú (Alianza Lima en concurso: administrador concursal).
-      b) Huecos sin fuente (otra tanda de búsqueda): Goiás 2010-2013, Ferroviária 2010-2013, Cruzeiro 2024-2025 (fecha de asunción de
-         Pedro Lourenço), Vila Nova, Remo, Paysandu, Ituano, Ceará, Atlético Goianiense, Amazonas, Once Caldas, Osijek, Rostov 2025.
-      c) Casos `firmo` (cambio de gestión entre el cierre y la aprobación del balance) que avisaron los subagentes: están en las notas de cada club.
+195. GESTIONES DE LOS CLUBES YA CARGADOS QUE NO LAS TIENEN (pedido de Guido). HECHO 2026-10-13 (tanda 1): 6 subagentes Sonnet investigaron
+    los 74 clubes que faltaban; se cargaron las 67 gestiones CONFIRMADAS de 48 clubes (`data/gestiones/ru.js` y `jp.js` nuevos). Lo no
+    confirmado y las dudas, en "## Gestiones" de cada `Admin/carga-clubes/<club>.md`.
+    TANDA 2, INVESTIGADA Y SIN CARGAR (todo en `Admin/gestiones-por-pais/tanda-2026-10-13/`: `lote-N.json` = lo pedido, `resultado-N.json`
+    = lo que encontró cada subagente con fuente, `instrucciones.md`, `validar.js` y `cargar-gestiones.mjs`). Decisiones de Guido ya tomadas,
+    que estos resultados aplican:
+      - Brasil SAF: el EJECUTIVO (CEO o diretor-presidente), como Atlético Mineiro y Bahia (lote 7: América-MG, Coritiba, Vasco, Fortaleza,
+        RB Bragantino, Novorizontino, Cuiabá, Ferroviária, Goiás, Cruzeiro).
+      - Rusia: el DIRECTOR GENERAL donde no hay presidente (lote 8: Lokomotiv, Dynamo Moscú, Baltika, Pari NN; Rostov 2025 = Goncharov).
+      - Club América: Emilio Azcárraga Jean como Dueño (lote 8; la fecha quedó sin confirmar).
+      - Alianza Lima: UNA gestión "Concurso de Acreedores" desde el 2012-03-27 (Res. 2152-2012/CCO-INDECOPI), hasta null (lote 8).
+      - Alemania: el PRESIDENTE DE LA ASOCIACIÓN (e.V.) donde la sociedad no tuvo presidente ni portavoz (lote 10: Köln = Werner Wolf, HSV =
+        Marcell Jansen y Henrik Köncke, RB Leipzig = Mintzlaff y Plenge, Gladbach = Rolf Königs y Rainer Bonhof). Los 4 cubiertos.
+      - Lote 9: confirmar fechas de Brasil (Vila Nova, Remo, Paysandu, Ituano, Ceará, Atlético Goianiense, Amazonas, Criciúma, CRB).
+    CÓMO CARGARLA: validar: correr desde esa carpeta (rutas relativas:
+    `cd` ahí y `node validar.js 7`); ensayo de la carga: `node Admin/gestiones-por-pais/tanda-2026-10-13/cargar-gestiones.mjs
+    Admin/gestiones-por-pais/tanda-2026-10-13 --lotes 7,8,9,10`. FRENA a propósito si un club ya tiene gestiones en su archivo (Goiás,
+    Criciúma, CRB, Vila Nova, Remo, Paysandu, Cruzeiro... de la tanda 1): para esos hay que REEMPLAZAR su entrada de `data/gestiones/br.js`
+    con la de la tanda 2 (que trae también las ya confirmadas), no agregar. Solo se cargan las `confirmada: true`; mirar el resumen de cada
+    subagente en `resultado-N.json` (`dudas`) antes. Los archivos de país nuevos (mx, pe) van en `PAISES` de `js/finanzas-anios.js`, y su
+    criterio en `Admin/gestiones-por-pais/<iso>.md`; después ASSET_V, `generate-fuentes-page.js`, `audit.js` y ver la fila de gestión en el sitio.
+    QUEDA SIN FUENTE (otra tanda si Guido quiere): Goiás 2010-2013 y Ferroviária 2012-2013 (solo la firma del balance), Novorizontino,
+    Cuiabá (fecha del cambio Alessandro -> Cristiano Dresch), Pari NN 2021-2022, Once Caldas 2024-2025, Club América (fecha), Osijek ya resuelto.
+    Casos `firmo` (cambio de gestión entre el cierre y la aprobación del balance): en las `dudas` de cada resultado.
 
 
 
-214. PRIMER AÑO QUE CIERRA EXACTO (optimización, cola). El caso "primer-anio" pide revisar ingresos, gastos y resultado de todo club nuevo; en
-    Grecia los 7 coincidían exacto con lo impreso. Evaluar: si los tres cierran exacto contra totales impresos (no solo el resultado) y el alta
-    no tiene preguntas, el caso no se levanta (o se baja a una nota). Decisión de Guido: hoy el primer año lo revisa él a propósito.
+214. EL PRIMER AÑO DE UN CLUB NUEVO YA NO LO REVISA GUIDO (decisión de Guido, 2026-10-13: "no quiero revisar yo el primer año del club,
+    ya podemos cambiar eso"). Hoy `verificar.mjs` levanta el caso "primer-anio" (cola humana) para todo club nuevo sin año anterior cargado;
+    en Grecia los 7 coincidían exacto con lo impreso. Diseñar como escalón (método de la skill club-or-year-onboarding: caso real, escalera,
+    ejemplo por escalón, ok de Guido, medir con `prueba-completa` y la cola de Grecia): el caso deja de ir a la cola cuando ingresos, gastos y
+    resultado cierran EXACTO contra totales impresos (no solo el resultado) y el alta no tiene preguntas; si algo no cierra exacto o falta un
+    total impreso, sigue la cola. Medir cuántos "primer-anio" de la cola se habrían cerrado y que ninguno de esos tuviera una corrección de Guido.
 
 215. PRECEDENTE DE CATEGORÍA DE UN SOLO CLUB DEL PAÍS (optimización, cola). El escalón B de categorías pide 2 clubes del país con la misma
     respuesta; en Grecia solo estaba AEL Larissa, así que Asteras, Levadiakos y OFI volvieron a preguntar "Κόστος πωλήσεων", "Έξοδα διάθεσης",

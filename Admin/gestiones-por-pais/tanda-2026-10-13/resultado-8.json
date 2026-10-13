@@ -1,0 +1,312 @@
+{
+ "criterioPais": {
+  "RU": "Por decisión de Guido se carga al director general (генеральный директор), que es quien conduce y firma el balance, en Lokomotiv, Dynamo Moscú, Baltika y Pari NN. En Rostov la gestión que cubre 2025 (tras irse el presidente Arutiunián) es el director general Goncharov, porque no hay presidente nombrado; 2021-2024 sigue Arutiunián como presidente.",
+  "HR": "Osijek: presidente de la Uprava (predsjednik uprave); el dueño es el fondo/empresa húngara de Meszáros, no se carga como persona.",
+  "CO": "Once Caldas S.A.: el presidente del club, que es también el representante legal que firma la certificación de estados financieros (sociedad de muchos accionistas).",
+  "MX": "Decisión de Guido: Club América se carga con Emilio Azcárraga Jean como Dueño (vía Grupo Televisa y luego Ollamani), no con el presidente deportivo.",
+  "PE": "Decisión de Guido: Alianza Lima está en proceso concursal ante INDECOPI desde 2012; una sola gestión 'Concurso de Acreedores' (cargo 'Concurso de Acreedores') cubre todos los cierres, en lugar de un presidente."
+ },
+ "clubes": {
+  "lokomotivmoscow-ru": {
+   "gestiones": [
+    {
+     "nombre": "Vladimir Leonchenko",
+     "corto": "Leonchenko",
+     "cargo": "Director General",
+     "desde": "2020-12-23",
+     "hasta": "2025-11-12",
+     "fuente": "https://ru.wikipedia.org/wiki/Леонченко,_Владимир_Валерьевич",
+     "confirmada": true
+    },
+    {
+     "nombre": "Boris Rotenberg (hijo)",
+     "corto": "Rotenberg",
+     "cargo": "Director General",
+     "desde": "2025-11-12",
+     "hasta": null,
+     "fuente": "https://ru.wikipedia.org/wiki/Ротенберг,_Борис_Борисович",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Vladimir Leonchenko": "Wikipedia ru: nombrado director general por el consejo de directores el 23/12/2020 (Kiknadze se iba el 28/12/2020); apartado el 12/11/2025. Sucedió a Vasily Kiknadze.",
+    "Boris Rotenberg (hijo)": "Wikipedia ru: nombrado por el consejo de directores el 12/11/2025 (misma fecha en Novaya Gazeta Europe). No es el empresario Boris Rotenberg padre: es el exfutbolista (39 años). Sigue en octubre 2026 (sin cambio encontrado)."
+   },
+   "cubre": {
+    "2021-12-31": "Vladimir Leonchenko",
+    "2022-12-31": "Vladimir Leonchenko",
+    "2023-12-31": "Vladimir Leonchenko",
+    "2024-12-31": "Vladimir Leonchenko",
+    "2025-12-31": "Boris Rotenberg (hijo)"
+   },
+   "dudas": [
+    "Cambio de gestión el 12/11/2025, antes del cierre 2025: el balance 2025 lo firmaría Rotenberg (dato a verificar en el documento, no lo vi)."
+   ]
+  },
+  "dynamomoscow-ru": {
+   "gestiones": [
+    {
+     "nombre": "Pavel Pivovarov",
+     "corto": "Pivovarov",
+     "cargo": "Director General",
+     "desde": "2021-01-12",
+     "hasta": null,
+     "fuente": "https://www.sport-express.ru/football/rfpl/reviews/1746323/",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Pavel Pivovarov": "Sport-Express (12/01/2021): el club anunció ese día su nombramiento como director general (antes en Zenit); sucedió a Yuri Belkin, que pasó a presidente del club. La fuente no da el día exacto de entrada en funciones: se usa el día del anuncio. El club lo confirma 'desde enero de 2021' y renovó su contrato hasta 2029 el 19/06/2026 (m24.ru, matchtv.ru). Sin cambio de director general encontrado."
+   },
+   "cubre": {
+    "2021-12-31": "Pavel Pivovarov",
+    "2022-12-31": "Pavel Pivovarov",
+    "2023-12-31": "Pavel Pivovarov",
+    "2024-12-31": "Pavel Pivovarov",
+    "2025-12-31": "Pavel Pivovarov"
+   },
+   "dudas": [
+    "Dynamo tiene además un presidente (Belkin hasta 2021-05-28 según Wikipedia ru) y un presidente del consejo (Dmitri Gafin hasta oct 2025); no se cargan por decisión de Guido (director general)."
+   ]
+  },
+  "baltikakaliningrad-ru": {
+   "gestiones": [
+    {
+     "nombre": "Kirill Volzhenkin",
+     "corto": "Volzhenkin",
+     "cargo": "Director General",
+     "desde": "2021-08-16",
+     "hasta": "2023-12-11",
+     "fuente": "https://kaliningrad.rbc.ru/kaliningrad/16/08/2021/611a07cb9a7947b077b8c004",
+     "confirmada": true
+    },
+    {
+     "nombre": "Ravil Izmailov",
+     "corto": "Izmailov",
+     "cargo": "Director General",
+     "desde": "2023-12-11",
+     "hasta": null,
+     "fuente": "https://www.sport-express.ru/football/rfpl/news/novym-generalnym-direktorom-baltiki-stal-ravil-izmaylov-2156186/",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Kirill Volzhenkin": "RBC Kaliningrado 16/08/2021: nombrado ese día, tras irse Tazhutdin Kachukaev. Sport-Express 11/12/2023: el club informó su salida por voluntad propia ese día.",
+    "Ravil Izmailov": "Sport-Express y Match TV 11/12/2023: Baltika anunció su nombramiento ese día (venía de Pari NN). Sigue en 2026."
+   },
+   "cubre": {
+    "2022-12-31": "Kirill Volzhenkin",
+    "2023-12-31": "Ravil Izmailov",
+    "2024-12-31": "Ravil Izmailov",
+    "2025-12-31": "Ravil Izmailov"
+   },
+   "dudas": [
+    "El cierre 2023-12-31 queda en la gestión de Izmailov, que asumió 20 días antes; el ejercicio 2023 casi entero fue de Volzhenkin (campo firmo a evaluar)."
+   ]
+  },
+  "parinizhnynovgorod-ru": {
+   "gestiones": [
+    {
+     "nombre": "Ravil Izmailov",
+     "corto": "Izmailov",
+     "cargo": "Director General",
+     "desde": "2021-01-19",
+     "hasta": "2023-07-21",
+     "fuente": "https://news.sportbox.ru/Vidy_sporta/Futbol/Russia/1st_division/spbnews_NI1300857_Izmajlov_stanet_generalnym_direktorom_Nizhnego_Novgoroda",
+     "confirmada": false
+    },
+    {
+     "nombre": "David Melik-Guseinov",
+     "corto": "Melik-Guseinov",
+     "cargo": "Director General",
+     "desde": "2023-07-21",
+     "hasta": "2025-09-13",
+     "fuente": "https://pravda-nn.ru/news/david-melik-gusejnov-pokinul-post-gendirektora-pari-nn-v-nizhnem-novgorode/",
+     "confirmada": true
+    },
+    {
+     "nombre": "Vitaly Karasev",
+     "corto": "Karasev",
+     "cargo": "Director General",
+     "desde": "2025-09-19",
+     "hasta": null,
+     "fuente": "https://nn.rbc.ru/nn/freenews/68cd3a909a794752f993710d",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Ravil Izmailov": "Sportbox 19/01/2021: 'en los próximos días' asumirá como director general (sucede a Maxim Metlin). Se usa el día de la noticia; la fecha real de entrada no está dada: confirmada=false solo por esa razón. Otras fuentes dicen 'desde 2020' o 'desde 2021'; en mayo 2021 ya firmaba como director general. Salida: pravda-nn.ru 21/07/2023 anuncia que deja el cargo.",
+    "David Melik-Guseinov": "Anunciado por el gobernador Nikitin el 21/07/2023 (pravda-nn.ru, Championat); venía de vicegobernador y ministro de Salud. La fuente no da el día de entrada efectiva: se usa el del anuncio. Salida: avisó que se iba en su Telegram el 13/09/2025 (pravda-nn.ru; nn.ru).",
+    "Vitaly Karasev": "RBC Nizhni Nóvgorod 19/09/2025: nombrado director general en reemplazo de Melik-Guseinov (que había anunciado la salida unos días antes). Sigue en 2026; el 11/07/2026 el club recuperó el nombre 'Nizhny Novgorod' y cambió de accionista (Andrey Artyomov), sin cambio de director general encontrado."
+   },
+   "cubre": {
+    "2021-12-31": "Ravil Izmailov",
+    "2022-12-31": "Ravil Izmailov",
+    "2023-12-31": "David Melik-Guseinov",
+    "2024-12-31": "David Melik-Guseinov",
+    "2025-12-31": "Vitaly Karasev"
+   },
+   "dudas": [
+    "Cierre 2025-12-31: Karasev asumió ~3 meses antes, casi todo el ejercicio fue de Melik-Guseinov; firmo a evaluar. Lo mismo para 2023 (Izmailov hasta julio).",
+    "No encontré el día exacto de entrada en funciones de Izmailov (enero 2021) ni de Melik-Guseinov."
+   ]
+  },
+  "rostov-ru": {
+   "gestiones": [
+    {
+     "nombre": "Artashés Arutiunián",
+     "corto": "Arutiunián",
+     "cargo": "Presidente",
+     "desde": "2017-06-17",
+     "hasta": "2025-10-15",
+     "fuente": "https://www.sport-express.ru/football/rfpl/news/1270040/",
+     "confirmada": true
+    },
+    {
+     "nombre": "Igor Goncharov",
+     "corto": "Goncharov",
+     "cargo": "Director General",
+     "desde": "2025-10-15",
+     "hasta": "2026-07-17",
+     "fuente": "https://rostov.mk.ru/sport/2025/10/15/generalnyy-direktor-fk-rostov-igor-goncharov-podtverdil-uvolnenie-prezidenta-kluba.html",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Artashés Arutiunián": "Gestión ya confirmada en la tanda anterior (Sport-Express 2017-06-17; salida 2025-10-15, RIA/MK).",
+    "Igor Goncharov": "Quedó a cargo de hecho al irse el presidente: MK Rostov (15/10/2025) lo muestra como director general confirmando el despido del presidente; Vedomosti (22/11/2025) no nombra nuevo presidente y dice que el club lo conduce el director general. Es director general desde el 10/06/2025 (Sport-Express, sucedió a Vadim Rybakov), pero hasta el 15/10 el presidente era Arutiunián: por eso desde 2025-10-15. Hasta: Sport-Express (20/07/2026) informa que el consejo nombró director general a Andréi Chaika el 17/07/2026; Goncharov queda en el club en otro puesto."
+   },
+   "cubre": {
+    "2021-12-31": "Artashés Arutiunián",
+    "2022-12-31": "Artashés Arutiunián",
+    "2023-12-31": "Artashés Arutiunián",
+    "2024-12-31": "Artashés Arutiunián",
+    "2025-12-31": "Igor Goncharov"
+   },
+   "dudas": [
+    "Cargo distinto entre gestiones (Presidente / Director General): decisión de Guido para este cierre.",
+    "Presidente del consejo: Igor Sorokin (vicegobernador) según Wikipedia ru, sin fecha de asunción; el club pasó a 100 % del ministerio regional en febrero 2026 (Sports.ru).",
+    "Chaika (director general desde 2026-07-17) queda fuera de los cierres."
+   ]
+  },
+  "osijek-hr": {
+   "gestiones": [
+    {
+     "nombre": "Ferenc Sakalj",
+     "corto": "Sakalj",
+     "cargo": "Presidente",
+     "desde": "2020-06-23",
+     "hasta": "2026-02-20",
+     "fuente": "https://www.novilist.hr/?p=267424",
+     "confirmada": true
+    },
+    {
+     "nombre": "Alexandra Végh",
+     "corto": "Végh",
+     "cargo": "Presidente",
+     "desde": "2026-02-20",
+     "hasta": null,
+     "fuente": "https://www.novilist.hr/?p=1629341",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Ferenc Sakalj": "Nombre correcto: Ferenc Sakalj (Szakály en húngaro), no Ivan; Ivan Meštrović fue su antecesor. Novi list 23/06/2020: comunicado del club, Meštrović deja la presidencia a su pedido y Sakalj (hasta entonces vicepresidente) es el nuevo presidente; index.hr (29/07/2020) dice que asumió 'en junio'. Se usa el 23/06/2020 (fecha del comunicado). Salida: comunicado del club, reproducido por Novi list, renuncia de común acuerdo con efecto 20/02/2026 (tras la derrota 0-2 con Hajduk según Index).",
+    "Alexandra Végh": "Asume la presidencia de la Uprava el 20/02/2026; la tabla de la Uprava del informe 2025 dice 'Predsjednica Uprave 20.02.2026.-19.07.2028'. Firmó el balance 2025 el 20/03/2026."
+   },
+   "cubre": {
+    "2025-12-31": "Ferenc Sakalj"
+   },
+   "dudas": [
+    "Aviso para el campo firmo: el balance 2025 lo firmó Alexandra Végh (20/03/2026), que asumió después del cierre; al 31/12/2025 conducía Sakalj."
+   ]
+  },
+  "oncecaldas": {
+   "gestiones": [
+    {
+     "nombre": "Tulio Mario Castrillón",
+     "corto": "Castrillón",
+     "cargo": "Presidente",
+     "desde": "2016-01-01",
+     "hasta": "2024-10-01",
+     "fuente": "https://www.clarosports.com/colombia/liga-bet-play/oficial-tulio-mario-castrillon-deja-de-ser-presidente-de-once-caldas/",
+     "confirmada": true
+    },
+    {
+     "nombre": "Daniel Jaramillo",
+     "corto": "Jaramillo",
+     "cargo": "Presidente",
+     "desde": "2024-10-01",
+     "hasta": null,
+     "fuente": "https://www.lapatria.com/deportes/este-es-el-ejecutivo-que-asumira-la-presidencia-del-once-caldas-en-reemplazo-de-castrillon",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Tulio Mario Castrillón": "Inicio: solo año, 2016 (La Patria citando una resolución de la SIC: presidente 'entre 2016 a octubre de 2024'; el club habla de 'los últimos ocho años'), por eso día/mes 01. Salida: Claro Sports 01/10/2024, renunció 'el día de hoy' ante la junta; consistente con el tuit de Pipe Sierra ('hasta este martes'). Firmó como Representante Legal las certificaciones de 2022 y 2023 (Clubes/Colombia/Once Caldas/).",
+    "Daniel Jaramillo": "La Patria (09/10/2024): reemplaza a Castrillón (yerno de Jaime Pineda, máximo accionista); no da el día de asunción efectiva, solo que 'es o será' el presidente. Se usa 2024-10-01 como aproximado (sin hueco con la salida de Castrillón): confirmada=false por eso. Firma como Representante Legal las certificaciones de 2024 y 2025 (Daniel Jaramillo Vélez). Sigue presidente en octubre 2026 (Publimetro, Infobae)."
+   },
+   "cubre": {
+    "2022-12-31": "Tulio Mario Castrillón",
+    "2023-12-31": "Tulio Mario Castrillón",
+    "2024-12-31": "Daniel Jaramillo",
+    "2025-12-31": "Daniel Jaramillo"
+   },
+   "dudas": [
+    "Fecha exacta de asunción de Jaramillo (entre 2024-10-01 y 2024-10-09).",
+    "Entre la renuncia y la llegada de Jaramillo la junta directiva decidía el día a día, según el comunicado del club."
+   ]
+  },
+  "clubamerica": {
+   "gestiones": [
+    {
+     "nombre": "Emilio Azcárraga Jean",
+     "corto": "Azcárraga",
+     "cargo": "Dueño",
+     "desde": "1997-04-16",
+     "hasta": null,
+     "fuente": "https://es.wikipedia.org/wiki/Emilio_Azcárraga_Jean",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Emilio Azcárraga Jean": "Ninguna fuente dice 'dueño desde'. El club perteneció a Emilio Azcárraga Milmo desde 1959 (Wikipedia es, Club América); Milmo murió el 16/04/1997 (Wikipedia en) y Azcárraga Jean lo sucedió al frente de Televisa, dueña del club (Wikipedia es: presidente de Televisa 'al fallecimiento de su padre, en 1997'). Se usa el 16/04/1997 como fecha de control: confirmada=false porque la fuente da el año, y la fecha es la de la muerte del padre. Desde el 31/01/2024 el club está en Ollamani (escisión de Televisa), de la que es presidente del consejo y accionista de control (44,4 % de las acciones serie A según prensa); sigue en 2026."
+   },
+   "cubre": {
+    "2025-12-31": "Emilio Azcárraga Jean"
+   },
+   "dudas": [
+    "Si se prefiere un hito más preciso: 2018-01-01, cuando asumió la responsabilidad directa de la división fútbol de Televisa (Wikipedia es), o 2024-01-31, escisión a Ollamani.",
+    "Fecha del control exacto de Televisa/Ollamani sobre el club entre 1959 y 1997 no investigada."
+   ]
+  },
+  "alianzalima-pe": {
+   "gestiones": [
+    {
+     "nombre": "Concurso de Acreedores",
+     "corto": "Concurso",
+     "cargo": "Concurso de Acreedores",
+     "desde": "2012-03-27",
+     "hasta": null,
+     "fuente": "https://vlex.com.pe/vid/637556497",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Concurso de Acreedores": "Resolución 2152-2012/CCO-INDECOPI del 27/03/2012 declaró el inicio del procedimiento concursal ordinario (sentencia de la Sala de Defensa de la Competencia, 19/08/2013, vLex); administrador temporal Albaconsult designado el 20/04/2012. Sigue vigente en 2026: Junta de Acreedores convocada para marzo 2026 con informe del administrador del ejercicio 2025 (Libero, Infobae) y nuevo administrador temporal (Alfredo Arosemena) a mediados de 2026. Los estados 2019-2024 muestran deuda concursal y la nota de 2019 el proceso desde 2012. No hay cierre fuera del concurso. Administradores nombrados por la Junta (para el campo firmo, si hace falta): Kattia Bohórquez (designada 19/12/2019), Miguel Pons (09/02/2021, según las notas de los estados 2020 y 2021), Fernando Salazar (en 2023, saliente), luego José Sabogal, Fernando Cabada y Alfredo Arosemena (2026)."
+   },
+   "cubre": {
+    "2019-12-31": "Concurso de Acreedores",
+    "2020-12-31": "Concurso de Acreedores",
+    "2021-12-31": "Concurso de Acreedores",
+    "2022-12-31": "Concurso de Acreedores",
+    "2023-12-31": "Concurso de Acreedores",
+    "2024-12-31": "Concurso de Acreedores"
+   },
+   "dudas": [
+    "Fechas exactas de cada administrador posterior a Pons no verificadas con fuente por fecha.",
+    "Fin del concurso: no terminó a octubre de 2026 (hasta null)."
+   ]
+  }
+ }
+}

@@ -1,0 +1,547 @@
+{
+ "criterioPais": {
+  "RU": "Regla aplicada: si hay un dueño con nombre propio (Galitski, Rotenberg en Sochi, Morózov, Fedun hasta 2022, Saimánov en Rubin) se cargó a esa persona; en CSKA, Rostov, Orenburg, Dynamo Majachkalá, Akhmat y Rubin desde 2023 se cargó al presidente del club (figura ejecutiva con ese título); en clubes de empresa o región (Zenit, Spartak desde 2022, Krylia Sovetov) al presidente del consejo de directores; y donde no se halló fecha del presidente del consejo (Lokomotiv, Dynamo Moscú, Baltika, Pari NN) al director general, que es quien firma el balance."
+ },
+ "clubes": {
+  "krasnodar-ru": {
+   "gestiones": [
+    {
+     "nombre": "Serguéi Galitski",
+     "corto": "Galitski",
+     "cargo": "Presidente",
+     "desde": "2008-02-22",
+     "hasta": null,
+     "fuente": "https://ru.wikipedia.org/wiki/Краснодар_(футбольный_клуб)",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Serguéi Galitski": "ru.wikipedia dice que el club se fundó el 22/02/2008 y que su iniciador y dueño es Galitski; la ficha lo lista como presidente (el director general Vladimir Jashig es otra figura). La fecha de asunción es la de fundación del club: la fuente no da una fecha separada para el cargo de presidente."
+   },
+   "cubre": {
+    "2021-12-31": "Serguéi Galitski",
+    "2022-12-31": "Serguéi Galitski",
+    "2023-12-31": "Serguéi Galitski",
+    "2024-12-31": "Serguéi Galitski",
+    "2025-12-31": "Serguéi Galitski"
+   },
+   "dudas": []
+  },
+  "dynamomakhachkala-ru": {
+   "gestiones": [
+    {
+     "nombre": "Gadzhi Gadzhiev",
+     "corto": "Gadzhiev",
+     "cargo": "Presidente",
+     "desde": "2019-01-01",
+     "hasta": "2026-01-11",
+     "fuente": "https://ru.wikipedia.org/wiki/Гаджиев,_Гаджи_Муслимович",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Gadzhi Gadzhiev": "ru.wikipedia (ficha de Gadzhiev) lo da presidente de 'Majachkalá' desde 2019 (solo año: día 01 por convención) y de Dynamo 2021-2026. El club Majachkalá fue la base sobre la que se revivió Dynamo (anuncio 2021-06-29). Hasta: matchtv (2026-01-11) informa que la asamblea de fundadores abolió el cargo de presidente y le dio el título de Presidente Honorario. Fuente de la salida: https://matchtv.ru/football/matchtvnews_NI2284756_V_mahachkalinskom_Dinamo_uprazdnena_dolzhnost_prezidenta_kotoruju_zanimal_Gadzhi_Gadzhijev"
+   },
+   "cubre": {
+    "2021-12-31": "Gadzhi Gadzhiev",
+    "2022-12-31": "Gadzhi Gadzhiev",
+    "2023-12-31": "Gadzhi Gadzhiev",
+    "2024-12-31": "Gadzhi Gadzhiev",
+    "2025-12-31": "Gadzhi Gadzhiev"
+   },
+   "dudas": [
+    "El balance 2025 se aprueba en 2026, ya sin presidente: firma el director general Shamil Gazizov (en el cargo desde verano de 2023 según Sport-Express); desde 2026-01-11 quien preside es Magomed Bagaudinov como presidente de la Asamblea General de Fundadores (sin fecha de asunción hallada). Avisar por el campo firmo.",
+    "Gadzhiev asumió en 2019 en el club antecesor 'Majachkalá', no en la ANO 'Dynamo' actual; solo se conoce el año."
+   ]
+  },
+  "kryliasovetovsamara-ru": {
+   "gestiones": [
+    {
+     "nombre": "Andrei Priamilov",
+     "corto": "Priamilov",
+     "cargo": "Presidente",
+     "desde": "2021-10-26",
+     "hasta": "2022-01-21",
+     "fuente": "https://63.ru/text/sport/2021/10/26/70217453/",
+     "confirmada": true
+    },
+    {
+     "nombre": "Gabibulla Jasaev",
+     "corto": "Jasaev",
+     "cargo": "Presidente",
+     "desde": "2022-01-21",
+     "hasta": "2025-01-10",
+     "fuente": "https://samaragis.ru/novym-predsedatelem-soveta-direktorov-krylev-sovetov-stal-gabibulla-hasaev/",
+     "confirmada": true
+    },
+    {
+     "nombre": "Dmitri Yákovlev",
+     "corto": "Yákovlev",
+     "cargo": "Presidente",
+     "desde": "2025-01-10",
+     "hasta": "2026-05-20",
+     "fuente": "https://oboz.info/vitse-gubernator-porulit-krylyami-sovetov-v-novom-sovete-direktorov",
+     "confirmada": true
+    },
+    {
+     "nombre": "Maksim Simónov",
+     "corto": "Simónov",
+     "cargo": "Presidente",
+     "desde": "2026-05-20",
+     "hasta": null,
+     "fuente": "https://news.sportbox.ru/Vidy_sporta/Futbol/spbnews_NI2328056_Sergej_Bulatov_i_jego_trenerskij_shtab_prodolzhat_rabotu_s_Kryljami_Sovetov_soobshhil_gubernator_Samarskoj_oblasti",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Andrei Priamilov": "63.ru (2021-10-26): el consejo lo eligió presidente del consejo de directores (ministro de Finanzas de Samara); reemplazó a Kíslov.",
+    "Gabibulla Jasaev": "Samaragis (2022-01-21) informa su designación como presidente del consejo; Priamilov era el anterior. Su salida no tiene noticia propia: se toma la elección de Yákovlev.",
+    "Dmitri Yákovlev": "Sportmail/RIA (2025-01-10): el consejo elegido en la asamblea del viernes 10/01 tenía a Yákovlev como único candidato a presidente; oboz.info confirma la asamblea del 10/01/2025. Hasta: elección de Simónov.",
+    "Maksim Simónov": "Sportbox (2026-05-20): la asamblea de accionistas del 20 de mayo eligió a Simónov nuevo presidente del consejo."
+   },
+   "cubre": {
+    "2021-12-31": "Andrei Priamilov",
+    "2022-12-31": "Gabibulla Jasaev",
+    "2023-12-31": "Gabibulla Jasaev",
+    "2024-12-31": "Gabibulla Jasaev",
+    "2025-12-31": "Dmitri Yákovlev"
+   },
+   "dudas": [
+    "La salida de Jasaev y la fecha exacta de elección de Yákovlev como presidente (10/01/2025) salen de notas de prensa, no de un acta; no hay noticia de un presidente intermedio.",
+    "Si el balance 2025 se aprobó después del 2026-05-20, firmó Yákovlev o Simónov: avisar por firmo.",
+    "Cargo cargado: presidente del consejo de directores (club del gobierno regional de Samara); el director general (Tarján Dzhabrailov) es otra figura."
+   ]
+  },
+  "orenburg-ru": {
+   "gestiones": [
+    {
+     "nombre": "Vasili Eriómkin",
+     "corto": "Eriómkin",
+     "cargo": "Presidente",
+     "desde": "2020-05-21",
+     "hasta": "2024-12-17",
+     "fuente": "https://www.sport-express.ru/football/rfpl/news/v-orenburge-smenilsya-prezident-1674718/",
+     "confirmada": true
+    },
+    {
+     "nombre": "Kiril Volzhenkin",
+     "corto": "Volzhenkin",
+     "cargo": "Presidente",
+     "desde": "2024-12-17",
+     "hasta": "2026-08-19",
+     "fuente": "https://www.sport-express.ru/football/rfpl/news/kirill-volzhenkin-stal-prezidentom-orenburga-2282538/",
+     "confirmada": true
+    },
+    {
+     "nombre": "Dmitri Rubashko",
+     "corto": "Rubashko",
+     "cargo": "Presidente",
+     "desde": "2026-08-24",
+     "hasta": null,
+     "fuente": "https://matchtv.ru/football/matchtvnews_NI2357439_Byvshij_gendirektor_Sochi_Dmitrij_Rubashko_stal_prezidentom_futbolnogo_kluba_Orenburg",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Vasili Eriómkin": "Sport-Express 2020-05-21: la asamblea de fundadores lo designó presidente (reemplazó a Kiyáev). Es directivo de Gazprom dobycha Orenburg. Hasta: SE 2024-12-17, 'ocupaba el cargo desde mayo de 2020'.",
+    "Kiril Volzhenkin": "SE 2024-12-17 (club en Telegram). Hasta 2026-08-19: matchtv dice que el cargo estaba vacante desde el 19 de agosto, tras irse por acuerdo mutuo.",
+    "Dmitri Rubashko": "matchtv 2026-08-24: el club anunció su designación; ex director general de Sochi."
+   },
+   "cubre": {
+    "2021-12-31": "Vasili Eriómkin",
+    "2022-12-31": "Vasili Eriómkin",
+    "2023-12-31": "Vasili Eriómkin",
+    "2024-12-31": "Kiril Volzhenkin",
+    "2025-12-31": "Kiril Volzhenkin"
+   },
+   "dudas": [
+    "Entre el 19 y el 24/08/2026 el cargo estuvo vacante.",
+    "Club ANO financiado por Gazprom dobycha Orenburg y la región; se cargó al presidente del club (figura ejecutiva), no al director general (Nikolái Krasnikov)."
+   ]
+  },
+  "parinizhnynovgorod-ru": {
+   "gestiones": [
+    {
+     "nombre": "Ravil Izmáilov",
+     "corto": "Izmáilov",
+     "cargo": "Presidente",
+     "desde": "2020-01-01",
+     "hasta": "2023-07-01",
+     "fuente": "https://matchtv.ru/football/matchtvnews_NI1992746_Ravil_Izmajlov_stal_novym_generalnym_direktorom_Baltiki",
+     "confirmada": false
+    },
+    {
+     "nombre": "David Mélik-Guseínov",
+     "corto": "Mélik-Guseínov",
+     "cargo": "Presidente",
+     "desde": "2023-07-01",
+     "hasta": "2025-09-19",
+     "fuente": "https://en.wikipedia.org/wiki/FC_Pari_Nizhny_Novgorod",
+     "confirmada": false
+    },
+    {
+     "nombre": "Vitali Karásiov",
+     "corto": "Karásiov",
+     "cargo": "Presidente",
+     "desde": "2025-09-19",
+     "hasta": null,
+     "fuente": "https://nn.rbc.ru/nn/freenews/68cd3a909a794752f993710d",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Ravil Izmáilov": "Matchtv/SE: director general de Pari NN de 2020 a julio 2023 (solo año y mes: día 01 por convención). confirmada=false porque ninguna fuente da el día ni el mes de 2020.",
+    "David Mélik-Guseínov": "Sucedió a Izmáilov; la fuente (en.wikipedia, ficha) solo lo nombra director general; no hallé la nota de su designación, por eso el 2023-07-01 es inferido de la salida de Izmáilov. Hasta: la nota del 2025-09-19 dice que Karásiov lo reemplazó.",
+    "Vitali Karásiov": "RBC Nizhni Nóvgorod y MK (2025-09-19): nuevo director general."
+   },
+   "cubre": {
+    "2021-12-31": "Ravil Izmáilov",
+    "2022-12-31": "Ravil Izmáilov",
+    "2023-12-31": "David Mélik-Guseínov",
+    "2024-12-31": "David Mélik-Guseínov",
+    "2025-12-31": "Vitali Karásiov"
+   },
+   "dudas": [
+    "No hallé persona con título de presidente: se cargó al director general, que es quien firma. Las fechas de Izmáilov (inicio 2020) y de Mélik-Guseínov (inicio ~julio 2023) no están confirmadas. El club cambia de nombre y de dueño (Andréi Artiómov) en 2026.",
+    "Hubo que dejarlas con confirmada=false: una gestión dudosa no se publica."
+   ]
+  },
+  "rostov-ru": {
+   "gestiones": [
+    {
+     "nombre": "Artashés Arutiunián",
+     "corto": "Arutiunián",
+     "cargo": "Presidente",
+     "desde": "2017-06-17",
+     "hasta": "2025-10-15",
+     "fuente": "https://www.sport-express.ru/football/rfpl/news/1270040/",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Artashés Arutiunián": "Sport-Express 2017-06-17: nombrado presidente del club (accionista y miembro del consejo). Hasta 2025-10-15: RIA Novosti (rsport), renunció por voluntad propia (sigue como accionista y miembro del consejo)."
+   },
+   "cubre": {
+    "2021-12-31": "Artashés Arutiunián",
+    "2022-12-31": "Artashés Arutiunián",
+    "2023-12-31": "Artashés Arutiunián",
+    "2024-12-31": "Artashés Arutiunián"
+   },
+   "dudas": [
+    "El cierre 2025-12-31 no queda cubierto: tras Arutiunián el club tiene director general (Ígor Goncharov desde 2025-06-10 según SE; Andréi Chaika desde 2026-07-17) y presidente del consejo Ígor Sorokin (vicegobernador de la región), cuya fecha de asunción no encontré. No cargué a nadie para 2025.",
+    "Cargo cargado: presidente del club (figura ejecutiva), no el director general ni el presidente del consejo."
+   ]
+  },
+  "sochi-ru": {
+   "gestiones": [
+    {
+     "nombre": "Borís Rotenberg",
+     "corto": "Rotenberg",
+     "cargo": "Presidente",
+     "desde": "2018-07-04",
+     "hasta": null,
+     "fuente": "https://www.sport-express.ru/football/rfpl/news/boris-rotenberg-obyasnil-smenu-rukovodstva-sochi-2337498/",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Borís Rotenberg": "Sport-Express (2025-06-23) lo llama 'Presidente de Sochi'; ru.wikipedia lo lista como dueño; el club se fundó el 2018-07-04 (Vedomosti: creado por Rotenberg). La fecha de asunción es la de fundación: ninguna fuente da el día en que asumió como presidente, por eso confirmada=false."
+   },
+   "cubre": {
+    "2021-12-31": "Borís Rotenberg",
+    "2022-12-31": "Borís Rotenberg",
+    "2023-12-31": "Borís Rotenberg",
+    "2024-12-31": "Borís Rotenberg",
+    "2025-12-31": "Borís Rotenberg"
+   },
+   "dudas": [
+    "Registro mercantil (rusprofile, citado por una búsqueda): único fundador de OOO FK Sochi, desde 2019-05-29, sería Dmitri Rubashko con 100 %. Si el proyecto prefiere a quien firma: director general Rubashko hasta 2025-06-17 (RT, SE) y Serguéi Novikov desde esa fecha.",
+    "Cargo cargado: dueño con nombre propio (Rotenberg) según la regla del proyecto."
+   ]
+  },
+  "akhmatgrozny-ru": {
+   "gestiones": [
+    {
+     "nombre": "Magomed Daudov",
+     "corto": "Daudov",
+     "cargo": "Presidente",
+     "desde": "2011-01-01",
+     "hasta": "2024-05-23",
+     "fuente": "https://ru.wikipedia.org/wiki/Ахмат_(футбольный_клуб)",
+     "confirmada": true
+    },
+    {
+     "nombre": "Ajmat Kadírov",
+     "corto": "Kadírov",
+     "cargo": "Presidente",
+     "desde": "2024-05-23",
+     "hasta": null,
+     "fuente": "https://meduza.io/news/2024/05/23/syn-kadyrova-v-18-let-stal-prezidentom-futbolnogo-kluba-ahmat-i-ministrom-sporta-chechni",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Magomed Daudov": "ru.wikipedia: presidente 2011-2024 (solo años: inicio día 01/01 por convención). Hasta: Meduza y Novaya Gazeta (2024-05-23) informan que dejó el cargo y que lo reemplazó Ajmat Kadírov.",
+    "Ajmat Kadírov": "Meduza 2024-05-23: a los 18 años, hijo de Ramzán Kadírov, presidente del club."
+   },
+   "cubre": {
+    "2022-12-31": "Magomed Daudov",
+    "2023-12-31": "Magomed Daudov",
+    "2024-12-31": "Ajmat Kadírov",
+    "2025-12-31": "Ajmat Kadírov"
+   },
+   "dudas": [
+    "El balance 2023 se aprobó en 2024; si fue después del 23/05/2024 firmó Kadírov: avisar por firmo. Director general: Ajmed Aidamírov (sin fecha)."
+   ]
+  },
+  "akrontolyatti-ru": {
+   "gestiones": [
+    {
+     "nombre": "Pável Morózov",
+     "corto": "Morózov",
+     "cargo": "Presidente",
+     "desde": "2015-01-01",
+     "hasta": null,
+     "fuente": "https://ru.wikipedia.org/wiki/Акрон_(футбольный_клуб)",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Pável Morózov": "ru.wikipedia: en 2015 Morózov (dueño del holding Akron) creó la ANO 'Football Club Akron' y figura como dueño (solo año: día 01/01 por convención). Vedomosti (2023) dice que el club tiene cinco años, es decir 2018: las fuentes discrepan, no afecta a los cierres 2021 en adelante."
+   },
+   "cubre": {
+    "2021-12-31": "Pável Morózov",
+    "2022-12-31": "Pável Morózov",
+    "2023-12-31": "Pável Morózov",
+    "2024-12-31": "Pável Morózov",
+    "2025-12-31": "Pável Morózov"
+   },
+   "dudas": [
+    "No hallé que use el título de presidente: es dueño y financista; el director general es Konstantín Kliúshev."
+   ]
+  },
+  "baltikakaliningrad-ru": {
+   "gestiones": [
+    {
+     "nombre": "Kiril Volzhenkin",
+     "corto": "Volzhenkin",
+     "cargo": "Presidente",
+     "desde": "2021-01-01",
+     "hasta": "2023-12-11",
+     "fuente": "https://kaliningrad.rbc.ru/kaliningrad/11/12/2023/6576cd879a794743e12c36cc",
+     "confirmada": true
+    },
+    {
+     "nombre": "Ravil Izmáilov",
+     "corto": "Izmáilov",
+     "cargo": "Presidente",
+     "desde": "2023-12-11",
+     "hasta": null,
+     "fuente": "https://matchtv.ru/football/matchtvnews_NI1992746_Ravil_Izmajlov_stal_novym_generalnym_direktorom_Baltiki",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Kiril Volzhenkin": "RBC Kaliningrado: 'en 2021 encabezó el club' (solo año: día 01/01 por convención). Era director general. Hasta: el club anunció su salida el 2023-12-11.",
+    "Ravil Izmáilov": "Matchtv, SE, RBC (2023-12-11): club lo anuncia nuevo director general con aval del gobierno de Kaliningrado y Rostec."
+   },
+   "cubre": {
+    "2022-12-31": "Kiril Volzhenkin",
+    "2023-12-31": "Ravil Izmáilov",
+    "2024-12-31": "Ravil Izmáilov",
+    "2025-12-31": "Ravil Izmáilov"
+   },
+   "dudas": [
+    "Club de la región con Rostec como patrocinador: se cargó al director general porque no hallé fechas de los presidentes del consejo (en 2018 lo era Alexandr Shenderiuk-Zhidkov)."
+   ]
+  },
+  "cskamoscow-ru": {
+   "gestiones": [
+    {
+     "nombre": "Yevgueni Giner",
+     "corto": "Giner",
+     "cargo": "Presidente",
+     "desde": "2001-02-20",
+     "hasta": null,
+     "fuente": "https://ru.wikipedia.org/wiki/Гинер,_Евгений_Леннорович",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Yevgueni Giner": "ru.wikipedia (ficha de Giner): el 20/02/2001 asumió como presidente y dueño de CSKA. Desde 2019 el VEB tiene el 75 % de las acciones (conversión de deuda); la ficha del club sigue listando a Giner como presidente."
+   },
+   "cubre": {
+    "2021-12-31": "Yevgueni Giner",
+    "2022-12-31": "Yevgueni Giner",
+    "2023-12-31": "Yevgueni Giner",
+    "2024-12-31": "Yevgueni Giner",
+    "2025-12-31": "Yevgueni Giner"
+   },
+   "dudas": [
+    "Presidente del consejo (ficha del club): Maksim Oreshkin, sin fecha. Se cargó al presidente ejecutivo, que es la figura pública del club."
+   ]
+  },
+  "dynamomoscow-ru": {
+   "gestiones": [
+    {
+     "nombre": "Pável Pivovárov",
+     "corto": "Pivovárov",
+     "cargo": "Presidente",
+     "desde": "2021-01-12",
+     "hasta": null,
+     "fuente": "https://rsport.ria.ru/20210112/futbol-1592709488.html",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Pável Pivovárov": "RIA Novosti y TASS (2021-01-12): el consejo lo designó director general y Yuri Belkin pasó a presidente del club (rol de enlace con la comunidad del fútbol). Se cargó al director general porque firma el balance."
+   },
+   "cubre": {
+    "2021-12-31": "Pável Pivovárov",
+    "2022-12-31": "Pável Pivovárov",
+    "2023-12-31": "Pável Pivovárov",
+    "2024-12-31": "Pável Pivovárov",
+    "2025-12-31": "Pável Pivovárov"
+   },
+   "dudas": [
+    "Presidente del consejo hoy: Alexandr Ivlev (fecha no hallada). Belkin: presidente desde 2021-01-12 (sin fecha de salida hallada). Propiedad del banco VTB."
+   ]
+  },
+  "lokomotivmoscow-ru": {
+   "gestiones": [
+    {
+     "nombre": "Vladimir Leonchenko",
+     "corto": "Leonchenko",
+     "cargo": "Presidente",
+     "desde": "2020-12-24",
+     "hasta": "2025-11-12",
+     "fuente": "https://sport24.ru/news/football/2020-12-24-kto-takoy-vladimir-leonchenko--novyy-gendir-lokomotiva",
+     "confirmada": true
+    },
+    {
+     "nombre": "Borís Rotenberg (hijo)",
+     "corto": "Rotenberg",
+     "cargo": "Presidente",
+     "desde": "2025-11-12",
+     "hasta": null,
+     "fuente": "https://www.sport-express.ru/football/rfpl/news/lokomotiv-obyavil-o-smene-generalnogo-direktora-novym-rukovoditelem-naznachen-boris-rotenberg-2375232/",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Vladimir Leonchenko": "Sport24 (2020-12-24): el club anuncia su designación como director general (se esperaba que Kiknadze se fuera el 28/12). Hasta: SE y Vedomosti 2025-11-12.",
+    "Borís Rotenberg (hijo)": "SE 2025-11-12: el consejo lo designa director general (Borís Borísovich, hijo del empresario Borís Románovich)."
+   },
+   "cubre": {
+    "2021-12-31": "Vladimir Leonchenko",
+    "2022-12-31": "Vladimir Leonchenko",
+    "2023-12-31": "Vladimir Leonchenko",
+    "2024-12-31": "Vladimir Leonchenko",
+    "2025-12-31": "Borís Rotenberg (hijo)"
+   },
+   "dudas": [
+    "Cargado el director general (firma el balance). Presidente del consejo (RZD): Alexandr Plutnik en diciembre 2020 y luego Yuri Nagornij; no encontré fechas.",
+    "El balance 2025 se aprobó en 2026 con Rotenberg al mando; el cierre 2025-12-31 ya cae en su gestión."
+   ]
+  },
+  "rubinkazan-ru": {
+   "gestiones": [
+    {
+     "nombre": "Rustem Saimánov",
+     "corto": "Saimánov",
+     "cargo": "Presidente",
+     "desde": "2019-07-01",
+     "hasta": "2023-01-12",
+     "fuente": "https://www.kommersant.ru/doc/4018048",
+     "confirmada": false
+    },
+    {
+     "nombre": "Marat Safiullin",
+     "corto": "Safiullin",
+     "cargo": "Presidente",
+     "desde": "2023-01-12",
+     "hasta": null,
+     "fuente": "https://rsport.ria.ru/20230112/safiullin-1844395196.html",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Rustem Saimánov": "Kommersant (2019-07-01): era director general y pasó a ser único dueño de OOO FK Rubin (antes con Berdiev). Ya dirigía antes (abril 2018 o 2019, las fuentes discrepan). Hasta 2023-01-12: Realnoe Vremia informa su salida el mismo día de la designación de Safiullin. confirmada=false: la fecha de inicio es la del paso a dueño único, no de asunción.",
+    "Marat Safiullin": "RIA Novosti 2023-01-12: el club anuncia a Safiullin (jefe de la FNS de Tatarstán) como presidente; preside el directorio de la ANO FK Rubin."
+   },
+   "cubre": {
+    "2021-12-31": "Rustem Saimánov",
+    "2022-12-31": "Rustem Saimánov",
+    "2023-12-31": "Marat Safiullin",
+    "2024-12-31": "Marat Safiullin",
+    "2025-12-31": "Marat Safiullin"
+   },
+   "dudas": [
+    "El club cargado figura como OOO; desde fines de 2022 el club pasó a una ANO controlada por Tatarstán y OOO sigue con director general Alexandr Aibátov. Si el balance es del OOO, quien firma es Aibátov (fecha de asunción no hallada).",
+    "Saimánov no usaba el título de presidente."
+   ]
+  },
+  "spartakmoscow-ru": {
+   "gestiones": [
+    {
+     "nombre": "Leonid Fedun",
+     "corto": "Fedun",
+     "cargo": "Presidente",
+     "desde": "2004-01-01",
+     "hasta": "2022-08-22",
+     "fuente": "https://ru.wikipedia.org/wiki/Федун,_Леонид_Арнольдович",
+     "confirmada": true
+    },
+    {
+     "nombre": "Alexandr Matitsin",
+     "corto": "Matitsin",
+     "cargo": "Presidente",
+     "desde": "2022-09-26",
+     "hasta": null,
+     "fuente": "https://ru.wikipedia.org/wiki/Спартак_(футбольный_клуб,_Москва)",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Leonid Fedun": "ru.wikipedia: de 2004 a 2022 dueño y presidente/presidente del consejo (solo año: día 01/01). Hasta: el 22/08/2022 Lukoil anunció la compra del 100 % del club (fecha de venta; la renuncia al cargo no tiene fecha propia).",
+    "Alexandr Matitsin": "ru.wikipedia: el 26/09/2022 el primer vicepresidente de Lukoil fue elegido presidente del consejo."
+   },
+   "cubre": {
+    "2021-12-31": "Leonid Fedun",
+    "2022-12-31": "Alexandr Matitsin",
+    "2023-12-31": "Alexandr Matitsin",
+    "2024-12-31": "Alexandr Matitsin",
+    "2025-12-31": "Alexandr Matitsin"
+   },
+   "dudas": [
+    "Entre el 22/08 y el 26/09/2022 no hay cierre; la fecha de salida de Fedun es la de la venta. Dueño actual: Lukoil (empresa) por lo que se cargó al presidente del consejo."
+   ]
+  },
+  "zenit-ru": {
+   "gestiones": [
+    {
+     "nombre": "Yelena Iliujina",
+     "corto": "Iliujina",
+     "cargo": "Presidente",
+     "desde": "2019-02-22",
+     "hasta": null,
+     "fuente": "https://www.dp.ru/a/2019/02/22/Iljuhina_stala_io_predseda",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Yelena Iliujina": "Delovoi Peterburg (2019-02-22): quedó como presidenta interina del consejo al irse Diukov a la RFS; otras fuentes de prensa la dan como presidenta del consejo desde entonces (sin acta de confirmación). El dueño es Gazprom, por eso se cargó al presidente del consejo."
+   },
+   "cubre": {
+    "2021-12-31": "Yelena Iliujina",
+    "2022-12-31": "Yelena Iliujina",
+    "2023-12-31": "Yelena Iliujina",
+    "2024-12-31": "Yelena Iliujina",
+    "2025-12-31": "Yelena Iliujina"
+   },
+   "dudas": [
+    "Quien firma: presidente del directorio ejecutivo (Alexandr Medvédev hasta agosto 2025; Konstantín Ziriánov desde entonces, según Sport24/Match TV). La regla del proyecto lleva al presidente del consejo."
+   ]
+  }
+ }
+}
