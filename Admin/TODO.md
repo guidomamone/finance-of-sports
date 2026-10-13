@@ -144,3 +144,11 @@ ni en el comentario de ningún archivo de código.
     (por ejemplo, que la columna "año anterior" de la fila coincida con lo leído en el documento anterior). Medir con `filasDelMd` sobre
     todos los .md antes y después (script del scratchpad: cifras de cada fila) y `caja-deuda.mjs --medir`. Después correr AEK
     (`--ejecutar --escribir`; la IA ya está en caché).
+
+225. PERÍMETRO SIN PREGUNTAR (pedido de Guido, 2026-10-13: que casos como Aris se resuelvan solos, sin pensar una regla nueva ni
+    preguntarle). Aris publica estados CONSOLIDADOS en 2023-2025 e individuales (ELP) en 2019 y 2021; `antes-de-localizar.mjs` frena por
+    perímetro y hoy se fija a mano con `ajustes.mjs --agregar "<carpeta del club>/" perimetro`. Hace falta una regla escrita (en
+    `Admin/CONVENCIONES-DATOS.md` y aplicada por `antes-de-localizar.mjs` / `perimetro-senales.mjs` como escalón) que decida sola qué
+    perímetro se carga cuando un club publica consolidado, individual o los dos según el año, con el precedente de lo ya cargado (Roma
+    consolidado; Asteras, AEK, PAOK individuales: PAOK es filial de DIMERA, que es la que consolida). Medir sobre los clubes con ajuste
+    `perimetro` en `Admin/registros/ajustes-manuales.jsonl`: la regla tiene que dar lo mismo que cada ajuste ya fijado.
