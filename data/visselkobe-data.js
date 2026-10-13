@@ -1,15 +1,4 @@
-// ============================================================================
-// data/visselkobe-data.js — Vissel Kobe (ヴィッセル神戸). Mismo lote de carga y
-// misma fuente que Kashima Antlers (data/kashimaantlers-data.js) — ver ESE
-// archivo para la metodología completa. Acá solo el detalle específico de
-// Vissel Kobe.
-//
-// Abreviado "神戸" en las tablas del club_doc-2025.pdf.
-// ============================================================================
-
 const visselkobeRevenueLinesByYear = {
-  // Millones de JPY, Ejercicio 2025. Página 8: 神戸 2025年度 = 8.711 (+644 vs. 2024).
-  // Página 9 (Sponsor): 3.025. Página 10 (Gate): 1.441.
   2025: [
     { rawLabel:'スポンサー収入 (Ingreso por sponsors)', normalizedCategory:'sponsorship_commercial', amountNative:3025, disclosureLevel:'detailed' },
     { rawLabel:'入場料収入 (Ingreso por entradas/gate)', normalizedCategory:'matchday_competition', amountNative:1441, disclosureLevel:'detailed' },

@@ -1,0 +1,213 @@
+# deportivopereira-co — evidencia de carga
+
+Lo que había como comentario en `data/deportivopereira-co-data.js`, movido tal cual por `tools/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
+
+## Cabecera
+
+```text
+============================================================================
+data/deportivopereira-co-data.js — Deportivo Pereira F.C. S.A. (Pereira,
+Colombia). Cuarto club colombiano cargado en finance-of-sports. Un único
+ejercicio cargado a propósito: 2025.
+
+CONTEXTO: al 22/1/2026 la Superintendencia de Sociedades ordenó DE OFICIO el
+inicio de un proceso de reorganización empresarial (Auto 2026-01-023551) por
+cesación de pagos de $11.252 M (50,4% del pasivo), verificada al 31/8/2025 —
+el ejercicio 2025 cargado acá es exactamente el que sustenta esa decisión. El
+dictamen del revisor fiscal (`dictamen-revisor-fiscal-2025.md`) confirma una
+"Incertidumbre material relacionada con negocio en marcha" (sin modificar su
+opinión) y el proceso de reorganización radicado el 25/11/2025. Ver
+fuentes/Colombia/Deportivo Pereira.md.
+
+FUENTE PRINCIPAL: `Clubes/Colombia/Deportivo Pereira/estados-financieros-2025.md`
+(33 páginas, "Revelaciones Estados Financieros de Propósito General bajo NIIF
+para PYME's al 31 de diciembre de 2025", vía SIIS, NIT 901644853). El PDF
+TIENE capa de texto nativa (`pdftotext -layout` funciona para todo el texto
+narrativo), PERO cada tabla de cifras del documento está insertada como
+IMAGEN (captura de Excel), no como texto — la transcripción .md quedó con
+esas tablas en blanco. Los números de este archivo se leyeron directo del PDF
+renderizando esas páginas puntuales a PNG (300dpi) y leyéndolas con el Read
+tool, NO de la transcripción .md (que solo sirve para el texto narrativo de
+cada nota). `certificacion-ef-2025.md` (carátula, sin cifras) y
+`dictamen-revisor-fiscal-2025.md` (dictamen del revisor fiscal, confirma la
+incertidumbre de negocio en marcha) son de contexto.
+
+ESCALA: el documento está en PESOS COMPLETOS (no miles) — confirmado por el
+propio "Resultado del periodo" impreso, $5.908.561.384, que solo tiene
+magnitud de club real en pesos completos (en miles sería 5,9 billones,
+imposible). Se guarda dividido por 1.000.000, en millones de COP, mismo
+criterio que Envigado.
+
+FX: el documento NO declara un tipo de cambio de cierre propio (se buscó
+explícitamente "tasa de cambio"/"TRM" en los 3 PDF de este club — ausente,
+a diferencia de Millonarios). Se usa la TRM oficial de cierre al 31/12/2025
+ya cargada en FX_CLOSE (`COP@2025-12-31` = 3.757,08), vía fxRef.
+
+REVENUE: Nota 3.18 "Ingresos de actividades ordinarias" (22 líneas, tabla en
+imagen pág. 28-29 del PDF, suma EXACTA $20.659.304.256, el total impreso) +
+Nota 3.19 "Otros ingresos de actividades ordinarias" (tabla en imagen pág. 29
+del PDF) MENOS su línea "Diferencia en cambio" ($284.862, reclasificada a
+netInterest per club-data-mapping sección 2 — es la única línea de la Nota
+3.19 que es inequívocamente un resultado financiero y no está mezclada con
+nada más, a diferencia de "Gastos financieros" del lado de Gastos, ver
+abajo). officialTotalRevenue = 20.659,304256 + 5.498,103371 = 26.157,407627 M.
+
+CAVEAT IMPORTANTE — "Ingreso por actualización derecho de (DIMAYOR)"
+($4.428.430.000, el 17% de TODO el revenue del ejercicio, dentro de la Nota
+3.19): NO es un ingreso operativo real (taquilla, sponsors, TV) sino la
+REVALUACIÓN ESTATUTARIA del activo intangible "derecho a pertenecer a la
+DIMAYOR", que la Nota 3.7 explica se actualiza según los estatutos de la
+DIMAYOR por un monto equivalente a 10.000 SMLV — una revaluación contable
+formulaica, sin entrada de caja. Se cargó igual como `other_income` (omitirla
+habría roto la reconciliación exacta contra el "Resultado del periodo"
+impreso, que si la incluye), pero es una pregunta genuina para
+Admin/dudas-por-club.md: ¿tiene sentido mostrar esto en la misma fila que
+taquilla/sponsors, o merece su propia categoría de "revaluación no-cash"?
+
+EXPENSES: Nota 3.20 "Gastos administrativos" ($3.458,523458 M, tabla imagen
+pág. 29-30) + Nota 3.21 "Gastos de ventas" ($26.866,661018 M, tabla imagen
+pág. 30-32 — el costo de sostener la planta de jugadores/cuerpo técnico) +
+Nota 3.22 "Otros gastos" ($1.741,069398 M, tabla imagen pág. 32). Categorías
+asignadas DENTRO de "Gastos de ventas" según lo que cada sub-línea describe
+en el propio texto de la nota (pág. 31 del .md/PDF): "Impuestos" ahí es
+explícitamente el impuesto a los espectáculos públicos POR PARTIDO (no un
+impuesto administrativo genérico, por eso NO sigue el default de
+club-data-mapping/referencia/casos-por-pais-y-formato.md y va a `match_organisation_expense`, no
+`admin_general_expense` — el propio documento lo liga a "poder disputar cada
+partido"), igual que Arrendamientos (alquiler del Estadio), Honorarios
+(arbitrajes + médicos), Afiliaciones (bus del equipo, inscripciones a
+divisiones menores), Seguros y Servicios (energía/agua/logística/ambulancia
+del Estadio) y los sub-ítems de "Diversos" ligados a la operación del equipo
+(combustibles, casino/restaurante, taxis). officialTotalExpenses = 3.458,523
++ 26.866,661 + 1.741,069 = 32.066,253874 M.
+
+CAVEAT — "Trayectoria deportiva" ($2.854.789520 M dentro de "Diversos" de
+Gastos de ventas, ~11% del gasto total): per Nota 3.21, es "el gasto que se
+incurre PREVIO A LA CONTRATACIÓN de jugadores y cuerpos técnicos, cuyos
+recorridos futbolísticos han sido notables" — un bono/pago ligado al prestigio
+del jugador/DT al momento de ficharlo, pagado en cuotas a cada uno por nombre
+(aparece también como activo pagado por anticipado, Nota 3.8, y como pasivo
+no corriente "Pasivos financieros cuentas por pagar trayectoria deportiva",
+Nota 3.16, con nombres — Rafael Edgar Dudamel Ochoa, exdirector técnico, entre
+ellos). Se cargó a `wages_squad` (es compensación a personas físicas
+vinculadas al club, no una transferencia a otro club), pero es una
+clasificación con incertidumbre genuina — bien podría ser más parecido a
+`player_amortisation` si se entiende como costo de fichaje. Anotado en
+Admin/dudas-por-club.md.
+
+"Gastos financieros" (Nota 3.22, $852,554333 M, ~2,7% del gasto total):
+mezcla GMF (impuesto a movimientos financieros), comisiones bancarias Y
+diferencia en cambio SIN discriminar cuánto es cada una — a diferencia de la
+línea aislada de la Nota 3.19, acá no se puede separar el componente
+cambiario. Se dejó completa en `admin_general_expense`, mismo criterio que
+Banfield con su Anexo VII (línea mixta, tamaño marginal, ~2,7% del total) —
+ver club-data-mapping/referencia/fx.md.
+
+netInterest = SOLO la "Diferencia en cambio" aislada de la Nota 3.19
+(+$0,284862 M) — ver caveat de "Gastos financieros" arriba (esa pieza sigue
+en admin_general_expense, no se pudo separar).
+
+tax: el documento NO reporta una línea de impuesto a las ganancias separada
+(a diferencia de Millonarios) — el único resultado impreso, "Resultado del
+periodo (PÉRDIDA) $5.908.561.384... ANTES DE IMPUESTOS" (Nota 3.23, pág. 33),
+reconcilia EXACTO contra revenue − expenses + netInterest sin ningún ajuste
+de impuesto adicional (ver verificación abajo) — consistente con que una
+compañía con pérdida fiscal y en cesación de pagos no genera impuesto de
+renta corriente ese ejercicio. tax = 0.
+
+VERIFICACIÓN (node, antes de cargar): revenue (26.157,407627) − expenses
+(32.066,253874) + netInterest (0,284862) + tax (0) = −5.908,561385 M, EXACTO
+(diferencia de $1 peso, redondeo) igual al "Resultado del periodo" impreso,
+−5.908,561384 M. Reconciliación exacta pese a que el documento NO trae ningún
+Estado de Resultado Integral primario ni desglose de impuesto — un solo
+número de resultado, sin cifras contradictorias entre sí (no aplica la
+alerta de "más de una cifra de resultado neto" de Deportes Tolima).
+
+grossDebt = Nota 3.9 "Pasivos Financieros" corrientes ($3.300,431201 M:
+Gestores de Contenido, LC Proyectos y Construcciones, Scotiabank Colpatria
+Dimayor) + Nota 3.16 "Pasivos financieros no corrientes" ($7.970,935634 M:
+Trayectoria deportiva por pagar + "Deudas con socios", $7.607,132557 M
+adeudados al accionista Inversiones López Ltda. por aportes para sostener la
+operación del club — el propio documento los clasifica como pasivo
+financiero, no como aporte de capital, así que se incluyen) = 11.271,366835 M
+— del mismo orden de magnitud que los $11.252 M de cesación de pagos citados
+en el Auto de reorganización de oficio (dato de cruce, no del mismo campo
+exacto). cash = Nota 3.1 "Efectivo y equivalente del efectivo", Total 2025 =
+$9,656770 M (de los cuales $8,586425 M de "efectivo de uso restringido" por
+el embargo de la DIAN sobre las cuentas del club, ver Nota 3.1).
+============================================================================
+```
+
+## 2025
+
+### Ingresos
+
+_antes de la fila 5 (`Regalías`):_
+
+```text
+"Regalías": no se pudo confirmar si es royalty comercial (marca/merchandising) o de otro
+tipo — el mecanismo de solidaridad por pases ya tiene su propia línea separada abajo, así
+que esto es algo distinto. Categorizado como comercial por descarte; duda genuina anotada.
+```
+
+_antes de la fila 23 (`Descuentos comerciales`):_
+
+```text
+Nota 3.19 "Otros ingresos de actividades ordinarias" (MENOS su línea "Diferencia en cambio",
+reclasificada a netInterest — ver comentario de cabecera):
+```
+
+### Gastos
+
+_antes de la fila 1 (`Gastos administrativos`):_
+
+```text
+Nota 3.20 "Gastos administrativos" ($3.458,523458 M impreso):
+```
+
+_antes de la fila 2 (`Gastos de personal (planta deportiva: jugadores, cuerpo técnico y médico)`):_
+
+```text
+Nota 3.21 "Gastos de ventas" ($26.866,661018 M impreso) — costo de la planta deportiva.
+```
+
+_antes de la fila 3 (`Trayectoria deportiva (bonos de fichaje ligados al prestigio del jugador/DT — ver caveat en cabecera)`):_
+
+```text
+Ver caveat en cabecera sobre esta línea puntual.
+```
+
+_antes de la fila 7 (`Gastos financieros (GMF, comisiones bancarias y diferencia en cambio sin discriminar — ver caveat en cabecera)`):_
+
+```text
+Nota 3.22 "Otros gastos" ($1.741,069398 M impreso).
+```
+
+### Meta
+
+```text
+El documento no declara TC de cierre propio (se buscó explícitamente, ausente en los 3
+PDF de este club) — TRM oficial de cierre al 31/12/2025 (FX_CLOSE).
+Solo la "Diferencia en cambio" aislada de la Nota 3.19 (ver caveat de cabecera sobre
+"Gastos financieros", que sigue mezclado en admin_general_expense).
+El documento no reporta impuesto a las ganancias por separado — el "Resultado del periodo"
+impreso ya reconcilia exacto sin ajuste de impuesto adicional (ver verificación en cabecera).
+officialTotalExpenses EXCLUYE "Gastos extraordinarios (costos y gastos de ejercicios
+anteriores, impuestos asumidos)" (-50,042287, exceptional_items) — mismo criterio que
+Botafogo/Atlético Mineiro: verifyTieOuts()/tools/audit.js comparan "Expenses" contra gasto
+ordinario + no-efectivo solamente. 32066,253874 (impreso, incluye el extraordinario) -
+50,042287 = 32016,211587.
+```
+
+## Otros
+
+### gestionesByClub['deportivopereira-co']
+
+```text
+No se confirmó con certeza una "gestión"/presidencia en el sentido usado para clubes
+argentinos (S.A. adjudicada judicialmente a 147 accionistas ex acreedores de la extinta
+Corpereira, el firmante de los EEFF es el Representante Legal, Álvaro de Jesús López Bedoya) —
+entrada genérica sin confirmar.
+```

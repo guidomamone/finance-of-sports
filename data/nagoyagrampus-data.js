@@ -1,16 +1,4 @@
-// ============================================================================
-// data/nagoyagrampus-data.js — Nagoya Grampus (名古屋グランパス). Mismo lote de
-// carga y misma fuente que Kashima Antlers (data/kashimaantlers-data.js) —
-// ver ESE archivo para la metodología completa. Acá solo el detalle
-// específico de Nagoya Grampus.
-//
-// Abreviado "名古屋" en las tablas del club_doc-2025.pdf.
-// ============================================================================
-
 const nagoyagrampusRevenueLinesByYear = {
-  // Millones de JPY, Ejercicio 2025. Página 8: 名古屋 2025年度 = 6.463 (▲411 vs. 2024,
-  // el único de los 10 clubes objetivo con ingreso en BAJA este ejercicio).
-  // Página 9 (Sponsor): 2.988. Página 10 (Gate): 1.360.
   2025: [
     { rawLabel:'スポンサー収入 (Ingreso por sponsors)', normalizedCategory:'sponsorship_commercial', amountNative:2988, disclosureLevel:'detailed' },
     { rawLabel:'入場料収入 (Ingreso por entradas/gate)', normalizedCategory:'matchday_competition', amountNative:1360, disclosureLevel:'detailed' },

@@ -1,15 +1,4 @@
-// ============================================================================
-// data/gambaosaka-data.js — Gamba Osaka (ガンバ大阪). Mismo lote de carga y
-// misma fuente que Kashima Antlers (data/kashimaantlers-data.js) — ver ESE
-// archivo para la metodología completa. Acá solo el detalle específico de
-// Gamba Osaka.
-//
-// Abreviado "Ｇ大阪" en las tablas del club_doc-2025.pdf.
-// ============================================================================
-
 const gambaosakaRevenueLinesByYear = {
-  // Millones de JPY, Ejercicio 2025. Página 8: Ｇ大阪 2025年度 = 8.817 (+1.594 vs. 2024).
-  // Página 9 (Sponsor): 2.292. Página 10 (Gate): 1.451.
   2025: [
     { rawLabel:'スポンサー収入 (Ingreso por sponsors)', normalizedCategory:'sponsorship_commercial', amountNative:2292, disclosureLevel:'detailed' },
     { rawLabel:'入場料収入 (Ingreso por entradas/gate)', normalizedCategory:'matchday_competition', amountNative:1451, disclosureLevel:'detailed' },

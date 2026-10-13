@@ -1,93 +1,55 @@
-// ============================================================================
-// data/spartakmoscow-ru-data.js — AO Football Club Spartak-Moscow (Rusia).
-// ALTA POR SCRIPT (tools/alta-club.mjs, 2026-10-10), SIN EJERCICIOS CARGADOS TODAVÍA:
-// las estructuras de abajo están vacías a propósito. Los rubros, los totales
-// oficiales y el resto del fiscalYearMeta los agrega la etapa de carga
-// (tools/proponer-carga.mjs / sesión de onboarding), que es también la que
-// reemplaza esta cabecera por la de siempre (fuente, perímetro, categorización).
-//
-// Documento que originó el alta: Clubes/Rusia/Spartak Moscow/bfo-2021-datos.md
-//
-// De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
-//   id                 ok        "spartakmoscow-ru" — slug de "Spartak Moscow" + '-ru' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-//   name               ok        "AO Football Club Spartak-Moscow" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): Revisión del alta (Claude, 2026-10-09): АО "Футбольный клуб "Спартак-Москва" (ИНН 7728
-//   displayName        ok        "Spartak Moscow" — nombre de la carpeta del club en Clubes/
-//   country            ok        "RU" — carpeta de país "Rusia" (tabla PAISES)
-//   reportingCurrency  ok        "RUB" — moneda de curso legal de Rusia
-//   fiscalYearStart    ok        "01-01" — cierre del ejercicio: contenido del .md (4 de 4 fechas de fin de mes caen en el mes 12)
-//   sport              ok        "futbol" — el .md nombra el fútbol 1 veces y ningún otro deporte más que eso
-//   brandColor         pendiente (ausente) — la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)
-//   anio               ok        2021 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
-//   cierre             ok        "2021-12-31" — año del ejercicio + mes de cierre (contenido del .md (4 de 4 fechas de fin de mes caen en el mes 12))
-//   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
-//   perimetro          ok        "individual" — el .md no presenta estados consolidados (0 menciones de "consolidado")
-//   currency           ok        "RUB" — moneda de curso legal de Rusia (tabla PAISES de alta-club.mjs)
-//   fxRef              ok        "RUB@2021-12-31" — el documento no declara tipo de cambio; FX_CLOSE ya tiene RUB@2021-12-31 = 74.2926 (Tipo oficial del Banco de Rusia al 2021-12-31)
-//   sourceId           ok        "spartakmoscow-ru-bfo-2021-datos" — clubId + nombre del archivo en slug
-//   liga               pendiente null — coincidencia NO exacta en los rosters cacheados: "Spartak" en 2021–22 Russian Premier League | "Spartak-2 Moscow" en 2021–22 Russian First Division
-//
-// FISCAL YEAR META PROPUESTO para 2021 (NO registrado: un ejercicio con meta y
-// sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
-//   2021: {"reportType":"official_balance_sheet","currency":"RUB","fxRef":"RUB@2021-12-31","sourceId":"spartakmoscow-ru-bfo-2021-datos"}
-// ============================================================================
-
 const spartakmoscowruRevenueLinesByYear = {
-  // 2021: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Spartak Moscow/bfo-2021-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2021: [
-    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:7991.133, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:2472.263, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:7991.133, disclosureLevel:'aggregated' },
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:2472.263, disclosureLevel:'aggregated' },
   ],
-  // 2022: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Spartak Moscow/bfo-2022-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2022: [
-    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:5829.706, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:3653.405, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:5829.706, disclosureLevel:'aggregated' },
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:3653.405, disclosureLevel:'aggregated' },
   ],
-  // 2023: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Spartak Moscow/bfo-2023-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2023: [
-    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:9217.564, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:2204.418, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:9217.564, disclosureLevel:'aggregated' },
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:2204.418, disclosureLevel:'aggregated' },
   ],
-  // 2024: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Spartak Moscow/bfo-2024-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2024: [
-    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:10303.709, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:1926.7, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:10303.709, disclosureLevel:'aggregated' },
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:1926.7, disclosureLevel:'aggregated' },
   ],
-  // 2025: cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Spartak Moscow/bfo-2025-datos.md. Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs; escalón 2 de notas y formulario 6 donde corresponde). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2025: [
-    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:14610.225, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:586.813, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:14610.225, disclosureLevel:'aggregated' },
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:586.813, disclosureLevel:'aggregated' },
   ],
 };
 const spartakmoscowruExpenseLinesByYear = {
-  2021: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-9041.728, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-54.015, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-2415.58, disclosureLevel:'aggregated' }, // pág. ?, ?
+  2021: [
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-9041.728, disclosureLevel:'aggregated' },
+    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-54.015, disclosureLevel:'aggregated' },
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-2415.58, disclosureLevel:'aggregated' },
   ],
-  2022: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-7736.016, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-87.93, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-3890.684, disclosureLevel:'aggregated' }, // pág. ?, ?
+  2022: [
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-7736.016, disclosureLevel:'aggregated' },
+    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-87.93, disclosureLevel:'aggregated' },
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-3890.684, disclosureLevel:'aggregated' },
   ],
-  2023: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-9063.581, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-99.09, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-3588.747, disclosureLevel:'aggregated' }, // pág. ?, ?
+  2023: [
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-9063.581, disclosureLevel:'aggregated' },
+    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-99.09, disclosureLevel:'aggregated' },
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-3588.747, disclosureLevel:'aggregated' },
   ],
-  2024: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-10568.472, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-122.796, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-4264.015, disclosureLevel:'aggregated' }, // pág. ?, ?
+  2024: [
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-10568.472, disclosureLevel:'aggregated' },
+    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-122.796, disclosureLevel:'aggregated' },
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-4264.015, disclosureLevel:'aggregated' },
   ],
-  2025: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-15815.522, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-1228.665, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-1067.838, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-643.907, disclosureLevel:'aggregated' }, // pág. ?, ?
+  2025: [
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-15815.522, disclosureLevel:'aggregated' },
+    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-1228.665, disclosureLevel:'aggregated' },
+    { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-1067.838, disclosureLevel:'aggregated' },
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-643.907, disclosureLevel:'aggregated' },
   ],
 };
 const spartakmoscowruFiscalYearMeta = {
-  2021: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2021: {
     currency:'RUB', fxRef:'RUB@2021-12-31',
     sourceId:'spartakmoscow-ru-bfo-2021-datos',
     reportType:'official_balance_sheet',
@@ -98,8 +60,7 @@ const spartakmoscowruFiscalYearMeta = {
       {label:'Проценты к получению (2320)', value:26.361},
       {label:'Налог на прибыль и прочее (2300 − 2400)', value:140.277},
     ],
-    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}},
     sinDesglose: [
       {renglon:'Выручка (2110)', lado:'ingreso', importe:7991.133, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:9041.728, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
@@ -107,7 +68,7 @@ const spartakmoscowruFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-881.289,
   },
-  2022: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2022: {
     currency:'RUB', fxRef:'RUB@2022-12-31',
     sourceId:'spartakmoscow-ru-bfo-2022-datos',
     reportType:'official_balance_sheet',
@@ -119,8 +80,7 @@ const spartakmoscowruFiscalYearMeta = {
       {label:'Проценты к уплате (2330)', value:-43.125},
       {label:'Налог на прибыль и прочее (2300 − 2400)', value:373.701},
     ],
-    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}},
     sinDesglose: [
       {renglon:'Выручка (2110)', lado:'ingreso', importe:5829.706, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:7736.016, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
@@ -128,7 +88,7 @@ const spartakmoscowruFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-1823.413,
   },
-  2023: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2023: {
     currency:'RUB', fxRef:'RUB@2023-12-31',
     sourceId:'spartakmoscow-ru-bfo-2023-datos',
     reportType:'official_balance_sheet',
@@ -139,8 +99,7 @@ const spartakmoscowruFiscalYearMeta = {
       {label:'Проценты к получению (2320)', value:18.044},
       {label:'Налог на прибыль и прочее (2300 − 2400)', value:135.561},
     ],
-    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}},
     sinDesglose: [
       {renglon:'Выручка (2110)', lado:'ingreso', importe:9217.564, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:9063.581, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
@@ -148,7 +107,7 @@ const spartakmoscowruFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-1175.831,
   },
-  2024: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2024: {
     currency:'RUB', fxRef:'RUB@2024-12-31',
     sourceId:'spartakmoscow-ru-bfo-2024-datos',
     reportType:'official_balance_sheet',
@@ -159,8 +118,7 @@ const spartakmoscowruFiscalYearMeta = {
       {label:'Проценты к получению (2320)', value:76.473},
       {label:'Налог на прибыль и прочее (2300 − 2400)', value:1182.604},
     ],
-    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}},
     sinDesglose: [
       {renglon:'Выручка (2110)', lado:'ingreso', importe:10303.709, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:10568.472, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
@@ -168,7 +126,7 @@ const spartakmoscowruFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-1465.797,
   },
-  2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2025: {
     currency:'RUB', fxRef:'RUB@2025-12-31',
     sourceId:'spartakmoscow-ru-bfo-2025-datos',
     reportType:'official_balance_sheet',
@@ -180,8 +138,7 @@ const spartakmoscowruFiscalYearMeta = {
       {label:'Проценты к уплате (2330)', value:-161.817},
       {label:'Налог на прибыль и прочее (2300 − 2400)', value:24.607},
     ],
-    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}},
     sinDesglose: [
       {renglon:'Выручка (2110)', lado:'ingreso', importe:14610.225, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:15815.522, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
@@ -204,8 +161,6 @@ window.CLUB_GENERIC_DATA['spartakmoscow-ru'] = {
   presupuestoOverlayByYear: spartakmoscowruPresupuestoOverlayByYear,
 };
 
-// Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
-// primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 Object.assign(sources, {
   'spartakmoscow-ru-bfo-2021-datos': {
     id:'spartakmoscow-ru-bfo-2021-datos', clubId:'spartakmoscow-ru',

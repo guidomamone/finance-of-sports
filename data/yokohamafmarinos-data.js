@@ -1,15 +1,4 @@
-// ============================================================================
-// data/yokohamafmarinos-data.js — Yokohama F. Marinos (横浜Ｆ・マリノス). Mismo
-// lote de carga y misma fuente que Kashima Antlers (data/kashimaantlers-data.js)
-// — ver ESE archivo para la metodología completa. Acá solo el detalle
-// específico de Yokohama FM.
-//
-// Abreviado "横浜FM" en las tablas del club_doc-2025.pdf.
-// ============================================================================
-
 const yokohamafmarinosRevenueLinesByYear = {
-  // Millones de JPY, Ejercicio 2025. Página 8: 横浜FM 2025年度 = 7.751 (+418 vs. 2024).
-  // Página 9 (Sponsor): 2.871. Página 10 (Gate): 1.530.
   2025: [
     { rawLabel:'スポンサー収入 (Ingreso por sponsors)', normalizedCategory:'sponsorship_commercial', amountNative:2871, disclosureLevel:'detailed' },
     { rawLabel:'入場料収入 (Ingreso por entradas/gate)', normalizedCategory:'matchday_competition', amountNative:1530, disclosureLevel:'detailed' },

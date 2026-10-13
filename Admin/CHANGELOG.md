@@ -26,6 +26,8 @@ que dice `ESTADO.md` era verdad ese día.
 - Lote 2: Brasil (42 clubes, 9.544 comentarios). ASSET_V 812.
 - Lote 3: Italia y España (40 clubes, 10.402 comentarios). ASSET_V 813.
 - Lote 4: Inglaterra, Alemania, Bélgica y Países Bajos (47 clubes, 5.284 comentarios). ASSET_V 814.
+- Lote 5: Rusia, Colombia, Dinamarca, Japón, Croacia y Grecia (59 clubes, 6.289 comentarios). ASSET_V 815. Los 214 `data/<club>-data.js`
+  quedan sin comentarios.
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 
