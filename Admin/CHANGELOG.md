@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 671 — Comentarios de `data/` a `Admin/carga-clubes/`: regla, script y piloto con 4 clubes (to-do 209) (2026-10-12)
+
+- Regla en `Admin/CONVENCIONES-DATOS.md`: `data/<club>-data.js` no lleva comentarios; la evidencia de cada carga va en
+  `Admin/carga-clubes/<clubId>.md` (una sección por ejercicio, tabla de notas por fila). La skill `club-data-mapping` apunta ahí.
+- `tools/mover-comentarios-data.mjs`: muda los comentarios tal cual (cabecera, por año, por fila, fuentes y otros), con `--ensayo`; no
+  escribe un club si el código sin comentarios no da idéntico o si alguna línea no llegó al `.md`.
+- Piloto: Udinese, Gimnasia y Esgrima, Racing y Anderlecht (1.248 comentarios; Racing 181 → 112 KB). `auditAll()` igual que antes. ASSET_V 810.
+
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 
 - Regla nueva en `Admin/PANTALLA.md` ("Comentarios en lo que se publica"): en `index.html` y `js/` solo el porqué técnico, corto, sin
