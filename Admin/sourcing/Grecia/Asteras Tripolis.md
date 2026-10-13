@@ -36,3 +36,5 @@ Color de marca: null — bicolor azul y amarillo (apodo Kitrinoble 'amarillo-azu
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2022 desde `Clubes/Grecia/Asteras Tripolis/Asteras_FS_2022-06-30.pdf` (sourceId `asterastripolis-gr-asteras-fs-2022-06-30`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2023 desde `Clubes/Grecia/Asteras Tripolis/Asteras_FS_2023-06-30.pdf` (sourceId `asterastripolis-gr-asteras-fs-2023-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2024 desde `Clubes/Grecia/Asteras Tripolis/Asteras_FS_2024-06-30.pdf` (sourceId `asterastripolis-gr-asteras-fs-2024-06-30`).

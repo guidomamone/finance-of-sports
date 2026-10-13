@@ -21,6 +21,9 @@ window.RANKINGS["gr-superleague"] = {
       { id:"oficrete-gr", revenue:6.648, reportType:"official_balance_sheet",
         sourceId:"oficrete-gr-ofi-income-stmt-2024-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",4.304],["Otros ingresos",2.344]] },
+      { id:"asterastripolis-gr", revenue:5.017, reportType:"official_balance_sheet",
+        sourceId:"asterastripolis-gr-asteras-fs-2024-06-30",
+        mix:[["Estadio",0.202],["Televisión",0.991],["Venta de Jugadores",0.269],["Otros ingresos",3.555]] },
     ],
   },
   2023: {
