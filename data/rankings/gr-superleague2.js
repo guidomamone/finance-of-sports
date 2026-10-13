@@ -55,6 +55,14 @@ window.RANKINGS["gr-superleague2"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.018],["Otros ingresos",1.475]] },
     ],
   },
+  2019: {
+    leagueSize: null,
+    clubs: [
+      { id:"volosnfc-gr", revenue:0.513, reportType:"official_balance_sheet",
+        sourceId:"volosnfc-gr-volos-income-stmt-2019-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.462],["Otros ingresos",0.051]] },
+    ],
+  },
   2018: {
     leagueSize: null,
     clubs: [
