@@ -91,7 +91,7 @@ ni en el comentario de ningún archivo de código.
 195. GESTIONES DE LOS CLUBES YA CARGADOS QUE NO LAS TIENEN (pedido de Guido). HECHO 2026-10-13 (tanda 1): 6 subagentes Sonnet investigaron
     los 74 clubes que faltaban; se cargaron las 67 gestiones CONFIRMADAS de 48 clubes (`data/gestiones/ru.js` y `jp.js` nuevos). Lo no
     confirmado y las dudas, en "## Gestiones" de cada `Admin/carga-clubes/<club>.md`.
-    TANDA 2, INVESTIGADA Y SIN CARGAR (todo en `Admin/gestiones-por-pais/tanda-2026-10-13/`: `lote-N.json` = lo pedido, `resultado-N.json`
+    TANDA 2, INVESTIGADA Y SIN CARGAR (todo en `Admin/gestiones-por-pais/tanda-2026-10-13/`: los `lote-<N>.json` = lo pedido, los `resultado-<N>.json`
     = lo que encontró cada subagente con fuente, `instrucciones.md`, `validar.js` y `cargar-gestiones.mjs`). Decisiones de Guido ya tomadas,
     que estos resultados aplican:
       - Brasil SAF: el EJECUTIVO (CEO o diretor-presidente), como Atlético Mineiro y Bahia (lote 7: América-MG, Coritiba, Vasco, Fortaleza,
@@ -107,7 +107,7 @@ ni en el comentario de ningún archivo de código.
     Admin/gestiones-por-pais/tanda-2026-10-13 --lotes 7,8,9,10`. FRENA a propósito si un club ya tiene gestiones en su archivo (Goiás,
     Criciúma, CRB, Vila Nova, Remo, Paysandu, Cruzeiro... de la tanda 1): para esos hay que REEMPLAZAR su entrada de `data/gestiones/br.js`
     con la de la tanda 2 (que trae también las ya confirmadas), no agregar. Solo se cargan las `confirmada: true`; mirar el resumen de cada
-    subagente en `resultado-N.json` (`dudas`) antes. Los archivos de país nuevos (mx, pe) van en `PAISES` de `js/finanzas-anios.js`, y su
+    subagente en cada `resultado-<N>.json` (`dudas`) antes. Los archivos de país nuevos (mx, pe) van en `PAISES` de `js/finanzas-anios.js`, y su
     criterio en `Admin/gestiones-por-pais/<iso>.md`; después ASSET_V, `generate-fuentes-page.js`, `audit.js` y ver la fila de gestión en el sitio.
     QUEDA SIN FUENTE (otra tanda si Guido quiere): Goiás 2010-2013 y Ferroviária 2012-2013 (solo la firma del balance), Novorizontino,
     Cuiabá (fecha del cambio Alessandro -> Cristiano Dresch), Pari NN 2021-2022, Once Caldas 2024-2025, Club América (fecha), Osijek ya resuelto.
