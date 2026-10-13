@@ -47,14 +47,15 @@ Cuatro trampas, que son de donde sale ese orden:
   primero (el caso japonés, muy limpio); (b) Wikipedia dice explícitamente cuál predomina
   ("con predominancia del primero", Argentinos); (c) el `theme-color` propio (San Lorenzo,
   `#00325A`); (d) si el otro color es blanco, gana el que no es blanco (Estudiantes,
-  Instituto, Unión). Si no aplica ninguno de los cuatro, elegí el que más identifica al
-  club y contale a Guido qué elegiste, sin pedirle confirmación.
+  Instituto, Unión). Si no aplica ninguno de los cuatro, gana el primero por orden
+  alfabético de su nombre en inglés (azul y amarillo: "blue" antes que "yellow", gana el azul).
 - **Camiseta blanca con un acento fuerte: no se resuelve buscando más, es decisión de
   producto.** Pasa seguido (River, Vélez, Sevilla, Real Madrid, Valencia, Once Caldas). La
   decide la sesión (`brandColor: null` si la identidad es el blanco) y se la cuenta a Guido.
 
-**Si queda ambiguo, o el color que lo identifica es el blanco: `brandColor: null`, que es un
-RESULTADO CERRADO, no un pendiente.** `pintarCrest()` (`js/selector.js`) trata el `null` igual
+**Si el color que lo identifica es el blanco: `brandColor: null`, que es un RESULTADO CERRADO,
+no un pendiente. Un bicolor nunca queda en `null`:** se resuelve con los desempates de arriba,
+hasta el orden alfabético en inglés. `pintarCrest()` (`js/selector.js`) trata el `null` igual
 que el campo ausente (`if(!c)` → resetea y cae al azul del sitio), así que en pantalla no
 cambia nada: el `null` existe para distinguir un club QUE SE MIRÓ Y NO LLEVA COLOR de uno que
 nadie chequeó todavía, que es lo único que evita tener que rebarrer todos los clubes para
