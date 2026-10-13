@@ -98,12 +98,21 @@ ni en el comentario de ningún archivo de código.
 
 
 
-214. EL PRIMER AÑO DE UN CLUB NUEVO YA NO LO REVISA GUIDO (decisión de Guido, 2026-10-13: "no quiero revisar yo el primer año del club,
-    ya podemos cambiar eso"). Hoy `verificar.mjs` levanta el caso "primer-anio" (cola humana) para todo club nuevo sin año anterior cargado;
-    en Grecia los 7 coincidían exacto con lo impreso. Diseñar como escalón (método de la skill club-or-year-onboarding: caso real, escalera,
-    ejemplo por escalón, ok de Guido, medir con `prueba-completa` y la cola de Grecia): el caso deja de ir a la cola cuando ingresos, gastos y
-    resultado cierran EXACTO contra totales impresos (no solo el resultado) y el alta no tiene preguntas; si algo no cierra exacto o falta un
-    total impreso, sigue la cola. Medir cuántos "primer-anio" de la cola se habrían cerrado y que ninguno de esos tuviera una corrección de Guido.
+214. EL PRIMER AÑO DE UN CLUB SIN GUIDO (decisión de Guido, 2026-10-13: no lo revisa ni puede revisarlo; el plan no cuenta con él). Hecho el
+    escalón 1 (`verificar.mjs`: imprime ingresos, gastos y resultado y lo cargado da los tres a 0,01% -> sin caso; 22 de 77 aceptados).
+    Lo que falta, de a un escalón, cada uno medido con el script de simulación (los 115 casos "primer-anio" históricos de
+    `Admin/registros/cola-revision.jsonl` contra los números de cada `.verificacion.json`: `suma`/`impreso` de los totales, `dif` del resultado)
+    y con `verificar.mjs --lista` sobre lo ya cargado (tiene que dar idéntico; restaurar después la cola y `Generados/`, porque re-verificar
+    años cargados levanta casos "anio-anterior" que no son trabajo real):
+      - Escalón 2: imprime UN total y el resultado, los dos a 0,01% -> sin caso (el otro total queda determinado por la cuenta). 8 de los 77
+        (Volos 2024-2025, Remo 2023-2024, Paysandu 2021, Hellas Verona 2023, Juve Stabia 2024, Novorizontino 2024).
+      - Escalón 3: solo imprime el resultado (42 de los 77: Grecia, DRE de Brasil). Con el resultado exacto, lo único que se escapa son
+        errores que se compensan (la misma cifra de más en los dos lados) o el documento equivocado (Roma 2011 separato). Pregunta puntual a
+        la IA (Claude por API, en el pipeline) con las filas del estado y su cita: "¿falta, sobra o se repite alguna fila del estado?"; si
+        dice que no y el resultado es exacto, sin caso. Medir: 0 alarmas sobre los 42 aceptados, y que detecte errores fabricados (una fila
+        repetida en los dos lados) en una copia del scratchpad.
+      - Lo que quede en la cola: lo contesta un subagente Sonnet de la sesión con cita del documento (como ya se hizo "Claude, Guido
+        delega"), nunca Guido. Si el subagente no puede confirmar, el año no se carga y va a `Admin/dudas-por-club.md`.
 
 215. PRECEDENTE DE CATEGORÍA DE UN SOLO CLUB DEL PAÍS (optimización, cola). El escalón B de categorías pide 2 clubes del país con la misma
     respuesta; en Grecia solo estaba AEL Larissa, así que Asteras, Levadiakos y OFI volvieron a preguntar "Κόστος πωλήσεων", "Έξοδα διάθεσης",
