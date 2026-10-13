@@ -29,3 +29,5 @@ confirmados como `PDF document` real, tamaños entre 131 KB y 2,16 MB.
 Ninguna. Serie completa y pareja — el segundo mejor caso del barrido junto con Olympiacos.
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: #006C40 — verde (apodo "Τριφύλλι" / "Πράσινοι"; el.wikipedia, infobox: χρώμα2 = #006c40, "Πράσινο, Λευκό"). Elegido por Claude el 2026-10-13 (antes null sin nota).
