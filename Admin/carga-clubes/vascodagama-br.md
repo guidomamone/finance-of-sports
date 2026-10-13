@@ -171,6 +171,15 @@ officialTotalRevenue = "Receita operacional líquida" impresa (Nota 25). officia
 officialPAT = "Prejuízo do exercício/período" impreso.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Lucio Ferreira Barbosa (2023-07-25 a 2024-06-11): Era CFO desde ago-2022; 777 Partners lo puso como CEO interino el 25-07-2023 al sacar a Luiz Mello (Lance, 25-07-2023); Trivela (11-06-2024) dice que asumió en julio de 2023 y fue confirmado al final de la temporada 2023; renunció el 11-06-2024 junto con la CFO Kátia dos Santos (Trivela, NetVasco, Correio Braziliense). Fecha desde = anuncio de Lance del 25-07-2023. El balance 2023 lo firma como "Diretor Presidente" (Diretoria Executiva, abril 2024) y la carta es "CEO – Vasco da Gama SAF". Fuente única elegida: Trivela (cubre ambas fechas).
+Duda: La tanda anterior cargó a Joshua Wander (777 Partners, presidente del Conselho). Aquí, por el pedido, el ejecutivo. Luiz Mello fue CEO hasta el 25-07-2023 (no cubre el cierre).
+```
+
 ## Fuentes
 
 ### vascodagama-br-demonstracoes-2023

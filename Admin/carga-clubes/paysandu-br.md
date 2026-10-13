@@ -297,6 +297,16 @@ SIN CONFIRMAR, no cargada: Roger Aguilera (2025-01-01 a 2025-12-22), https://dol
 Duda: Cierre 2025: Aguilera presidió casi todo el año; Tuma asumió el 22/12/2025 (posible firmo).
 ```
 
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Roger Aguilera (2025-01-01 a 2025-12-22): Elegido el 05/11/2024 (DOL). O Liberal: asumió el 01/01/2025 (mandato 2025/26; otra nota previa anuncia ceremonia el 20/01). Renunció el 22/12/2025 (O Liberal, Diário do Pará).
+SIN CONFIRMAR, no cargada: Maurício Ettinger (2021-01-01 a 2025-01-01), https://www.oliberal.com/esportes/futebol/e-hora-de-sair-de-cena-mauricio-ettinger-avalia-gestao-e-se-despede-do-paysandu-1.903032: O Liberal (despedida): presidió de 2020 a 2024 y terminó el 31/12/2024. Elegido en 2020 (venció a Luiz Omar Pinheiro; el 03/12/2020 según la tanda anterior), reelecto el 07/12/2022 para 2023-24 (DOL). Ninguna fuente da el día de posse (Sindiclubes PA: ceremonia 26/01/2021); 2021-01-01 = inicio del mandato bienal, convención. confirmada=false. Hasta 2025-01-01 = día en que asumió Aguilera.
+SIN CONFIRMAR, no cargada: Márcio Tuma (2025-12-22 a hoy), https://diariodopara.com.br/bola/paysandu-saiba-quem-assume-a-presidencia-apos-saida-de-aguilera/: Vice-presidente, asumió en ejercicio ("de imediato") al renunciar Aguilera el lunes 22/12/2025 (Diário do Pará, 22/12/2025); la nota no dice la fecha explícita, es la de la renuncia. confirmada=false por eso (la tanda anterior la había cargado con Estado do Pará Online).
+Duda: Cierre 2025: Aguilera presidió casi todo el año; Tuma asumió el 22/12/2025 (posible firmo).
+Duda: Posse de Ettinger 2021: sin día en las fuentes; O Liberal dice "2020".
+```
+
 ## Fuentes
 
 ### (general)

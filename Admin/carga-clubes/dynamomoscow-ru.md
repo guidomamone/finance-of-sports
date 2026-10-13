@@ -294,6 +294,15 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2021: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Pavel Pivovarov (2021-01-12 a hoy): Sport-Express (12/01/2021): el club anunció ese día su nombramiento como director general (antes en Zenit); sucedió a Yuri Belkin, que pasó a presidente del club. La fuente no da el día exacto de entrada en funciones: se usa el día del anuncio. El club lo confirma 'desde enero de 2021' y renovó su contrato hasta 2029 el 19/06/2026 (m24.ru, matchtv.ru). Sin cambio de director general encontrado.
+Duda: Dynamo tiene además un presidente (Belkin hasta 2021-05-28 según Wikipedia ru) y un presidente del consejo (Dmitri Gafin hasta oct 2025); no se cargan por decisión de Guido (director general).
+```
+
 ## Fuentes
 
 ### (general)

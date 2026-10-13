@@ -380,6 +380,17 @@ _al lado del campo `grossDebt`:_
 no verificado esta sesión, mismo alcance que 2024
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Tulio Mario Castrillón (2016-01-01 a 2024-10-01): Inicio: solo año, 2016 (La Patria citando una resolución de la SIC: presidente 'entre 2016 a octubre de 2024'; el club habla de 'los últimos ocho años'), por eso día/mes 01. Salida: Claro Sports 01/10/2024, renunció 'el día de hoy' ante la junta; consistente con el tuit de Pipe Sierra ('hasta este martes'). Firmó como Representante Legal las certificaciones de 2022 y 2023 (Clubes/Colombia/Once Caldas/).
+SIN CONFIRMAR, no cargada: Daniel Jaramillo (2024-10-01 a hoy), https://www.lapatria.com/deportes/este-es-el-ejecutivo-que-asumira-la-presidencia-del-once-caldas-en-reemplazo-de-castrillon: La Patria (09/10/2024): reemplaza a Castrillón (yerno de Jaime Pineda, máximo accionista); no da el día de asunción efectiva, solo que 'es o será' el presidente. Se usa 2024-10-01 como aproximado (sin hueco con la salida de Castrillón): confirmada=false por eso. Firma como Representante Legal las certificaciones de 2024 y 2025 (Daniel Jaramillo Vélez). Sigue presidente en octubre 2026 (Publimetro, Infobae).
+Duda: Fecha exacta de asunción de Jaramillo (entre 2024-10-01 y 2024-10-09).
+Duda: Entre la renuncia y la llegada de Jaramillo la junta directiva decidía el día a día, según el comunicado del club.
+```
+
 ## Fuentes
 
 ### oncecaldas-estados-financieros-2023

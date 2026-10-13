@@ -1348,6 +1348,21 @@ tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por pr
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Carlos Alberto Salmazo (2014-08-02 a 2023-01-19): (Dato de la tanda anterior, RCI Araraquara) "Era Salmazo" desde el 02-08-2014, 8 años 5 meses 17 días, hasta el 19-01-2023 cuando la asamblea aprobó el cambio con el nuevo inversor (SAF).
+SIN CONFIRMAR, no cargada: Welson Alves Ferreira Júnior (2010-01-01 a 2014-08-02), https://casadomedicoararaquara.com.br/um-apaixonado-pela-ferroviaria/: Presidente de Ferroviária Futebol S/A (y de la diretoria). Firma como "Presidente" los balances de 2012 (Clubes/Brasil/Ferroviaria/balanco-2012.md) y 2013 (balanco-2013-a.md). Perfil de Casa do Médico Araraquara (no pude abrir la página; dato leído en el resumen de búsqueda): presidente de la S/A 2006-2008 y 2010-2014 (solo años: desde 2010-01-01 por convención). hasta = 2014-08-02, inicio de Salmazo (RCI Araraquara). Para el cierre 2010 no hay firma local ni otra fuente; se asume por el perfil.
+SIN CONFIRMAR, no cargada: Elias Barquete Albarello (2023-01-19 a 2024-04-19), https://rciararaquara.com.br/ferroviaria/ferroviaria-passa-a-ter-novo-presidente-na-saf/: RCI (21-01-2023): en la Assembleia Geral del jueves 19-01-2023 fue definido diretor presidente de la SAF (venía como director financiero); Salmazo pasó a Conselheiro de Administración y Bertolucci a presidente del Consejo. Hasta = 2024-04-19 es inferido: RCI (26-04-2024) cuenta la nueva diretoria executiva (Remiro, Leite, Carneiro) y el 19-04 el Consejo apartó a Malara; Albarello no figura y reaparece como CEO de la SAF del XV de Piracicaba (Máquina do Esporte, 17-12-2025). La fecha real de su salida de la Ferroviária no está publicada.
+SIN CONFIRMAR, no cargada: Júlio César Carneiro (2024-04-19 a hoy), https://rciararaquara.com.br/destaques/juliano-malara-deixa-a-ferroviaria-acionistas-escolhem-julio-carneiro-para-a-direcao-executiva/: RCI (26-04-2024): los accionistas lo eligieron para la dirección ejecutiva en lugar de Juliano Malara; "ya asumió las funciones"; el Consejo lo decidió "desde el día 19 pasado" (19-04-2024). Comunicado oficial del club (26-11-2025): "Júlio Carneiro permanece ejerciendo sus funciones como Diretor-Presidente" y el sitio del club lo lista como Diretor-Presidente. En 2024 la nota lo llama "director ejecutivo". confirmada:false: el título Diretor-Presidente no tiene fecha de inicio publicada.
+Duda: Cierre 2022: Salmazo llevó el club hasta el 19-01-2023; el balance se aprobó con la conducción ya cambiada (posible firmo=[2022]).
+Duda: Cierre 2023: no está confirmado que Albarello siguiera de diretor-presidente al 31-12-2023; sale entre ene-2023 y abr-2024. Juliano Malara figuraba como "presidente" en su tarjeta y era uno de los tres directores ejecutivos hasta abril de 2024 (RCI); Filippo Bertolucci era "de hecho por el estatuto el presidente de la sociedad" (presidente del Consejo, renunció el 26-11-2025).
+Duda: Dueño de la SAF (nuevo inversor, 2023): grupo de Giuliano Bertolucci según RCI; ninguna fuente lo confirma como persona individual.
+Duda: Cierre 2010: sin respaldo más que el perfil de Casa do Médico (sin abrir).
+```
+
 ## Fuentes
 
 ### (general)

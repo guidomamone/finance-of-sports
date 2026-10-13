@@ -478,6 +478,15 @@ Duda: Cierre 2023: Bentes presidió hasta el 12/11/2023; Tonhão al cierre (posi
 Duda: Fecha exacta de posse de Bentes (2018-11 / 2019-01).
 ```
 
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Fábio Osório Bentes (2018-11-10 a 2023-11-12): Elegido el 10/11/2018 (DOL, "eleição do último dia 10"); DOL (13/11/2018): "A posse de Fábio Bentes como novo presidente do Clube do Remo foi imediata". Por eso desde = 2018-11-10 (antes se había estimado 01/01/2019, lo cual era incorrecto). Reelecto el 11/12/2020. Hasta: DOL (10/11/2023) dice que el nuevo presidente asume "la próxima segunda (13)", es decir 13/11/2023, mientras la gestión de Tonhão ya cargada empieza el 12/11/2023 (día de la elección): se usa 12/11 para no dejar hueco ni superponer.
+Antônio Carlos Teixeira (2023-11-12 a hoy): Ya confirmada en la tanda anterior (elegido 12/11/2023). Ojo: DOL dice que asume el lunes 13/11/2023.
+Duda: Cierre 2023: Bentes presidió hasta el 12-13/11/2023; Tonhão al cierre (posible firmo).
+Duda: Posse de Tonhão: 12/11/2023 (elección) vs. lunes 13/11/2023 (DOL).
+```
+
 ## Fuentes
 
 ### (general)

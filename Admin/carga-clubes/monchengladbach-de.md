@@ -183,6 +183,16 @@ tax = 10. Steuern vom Einkommen und vom Ertrag (-5.734, Lagebericht "Steuerergeb
 officialPAT = IV. Jahresüberschuss impreso EXACTO (4.286.546,48 EUR).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Rainer Bonhof (2024-03-19 a hoy): El Aufsichtsrat lo eligió presidente el 19-3-2024, con efecto inmediato (fohlen-hautnah; nota del club fechada en la URL). En Gladbach el presidente del e.V. lo elige el Aufsichtsrat, no la asamblea.
+SIN CONFIRMAR, no cargada: Rolf Königs (2004-04-06 a 2024-03-19), https://de.wikipedia.org/wiki/Rolf_K%C3%B6nigs: Wikipedia confirma presidente 2004-2024 y que entregó en marzo de 2024; el día 6-4-2004 salió de una búsqueda (esb-online/otra prensa) sin que la página lo confirme, por eso confirmada:false en el desde. El hasta 19-3-2024 coincide con la nota del club y fohlen-hautnah. Para el cierre pedido (2023-12-31) basta con que estuviera, que Wikipedia confirma.
+Duda: Fecha exacta de asunción de Königs (6-4-2004) sin fuente que la confirme en la página citada; irrelevante para los cierres pedidos.
+```
+
 ## Fuentes
 
 ### monchengladbach-de-jahresabschluss-2023

@@ -32,9 +32,25 @@ for (const [iso, bloques] of Object.entries(porPais)) {
   const f = `data/gestiones/${iso}.js`;
   const nuevo = !existsSync(f);
   let s = nuevo ? `window.CLUB_GESTIONES = window.CLUB_GESTIONES || {};\n\nObject.assign(window.CLUB_GESTIONES, {\n});\n` : readFileSync(f, 'utf8');
-  for (const b of bloques) { const id = b.match(/^  '([^']+)'/)[1]; if (s.includes(`'${id}': [`)) throw new Error(`${id} ya tiene gestiones en ${f}`); }
-  const i = s.lastIndexOf('});'); s = s.slice(0, i) + bloques.join('\n') + '\n' + s.slice(i);
-  console.log(`${f}${nuevo ? ' (NUEVO)' : ''}: ${bloques.length} clubes`);
+  // Club que ya tiene gestiones (de la tanda 1): se SUMA, no se reemplaza. Lo cargado queda tal cual (la tanda 2 trae como "sin confirmar"
+  // algunas que la tanda 1 confirmó: Paysandu/Tuma, Criciúma/Farias) y entran solo las confirmadas que faltan (misma persona y mismo desde),
+  // ordenadas por desde.
+  const nuevos = [];
+  for (const b of bloques) {
+    const id = b.match(/^  '([^']+)'/)[1]; const ini = s.indexOf(`  '${id}': [\n`);
+    if (ini < 0) { nuevos.push(b); continue; }
+    const fin = s.indexOf('\n  ],', ini); const cuerpo = s.slice(s.indexOf('\n', ini) + 1, fin);
+    const entradas = (txt) => txt.split(/\n(?=    \{ )/).filter((e) => e.trim());
+    const clave = (e) => `${e.match(/nombre:'((?:[^'\\]|\\.)*)'/)[1]}|${e.match(/desde:'([^']+)'/)[1]}`;
+    const hoy = entradas(cuerpo); const ya = new Set(hoy.map(clave));
+    const agregar = entradas(b.slice(b.indexOf('\n') + 1, b.lastIndexOf('\n  ],'))).filter((e) => !ya.has(clave(e)));
+    if (!agregar.length) { console.log(`  ${id}: ya tiene todas las confirmadas`); continue; }
+    const todas = [...hoy, ...agregar].sort((a, b2) => a.match(/desde:'([^']+)'/)[1].localeCompare(b2.match(/desde:'([^']+)'/)[1]));
+    s = s.slice(0, s.indexOf('\n', ini) + 1) + todas.join('\n') + s.slice(fin);
+    console.log(`  ${id}: + ${agregar.map((e) => clave(e).replace('|', ' desde ')).join('; ')}`);
+  }
+  const i = s.lastIndexOf('});'); if (nuevos.length) s = s.slice(0, i) + nuevos.join('\n') + '\n' + s.slice(i);
+  console.log(`${f}${nuevo ? ' (NUEVO)' : ''}: ${nuevos.length} clubes nuevos`);
   if (ESCRIBIR) writeFileSync(f, s);
 }
 for (const e of evid) if (ESCRIBIR) EV.guardar(e.id, EV.agregarSeccion(EV.leer(e.id), 'Gestiones', e.lineas, 'investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195'));

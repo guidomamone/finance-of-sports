@@ -151,6 +151,16 @@ Ejercicio 2022 (01.07.2021-30.06.2022). Fuente: jahresabschluss-2021-22.md, pág
 8 (Anhang 4.1, SOLO 3 categorías este ejercicio, mismo caso que 2022/23, ver comentario de cabecera).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Oliver Mintzlaff (2014-06-12 a 2022-11-15): Vorstandsvorsitzender del RasenBallsport Leipzig e.V.: elegido en la asamblea del 12-6-2014 y renunció con efecto el 15-11-2022 (Wikipedia, que cita el comunicado del club del 4-11-2022). En Leipzig el e.V. no tiene un 'Präsident': el cargo es Vorstandsvorsitzender.
+Johann Plenge (2022-11-15 a hoy): El directorio del e.V. lo eligió Vorstandsvorsitzender el 15-11-2022, tras la salida de Mintzlaff (rblive; el artículo no menciona el año, inferido por la salida de Mintzlaff). Sigue en el cargo según Wikipedia en inglés (temporada 2025-26).
+Duda: El cierre 2022-06-30 lo firmó/aprobó con probabilidad la gestión Mintzlaff, pero si el balance se aprobó después del 15-11-2022 podría haber firmado Plenge: no verificado (campo firmo).
+```
+
 ## Fuentes
 
 ### rbleipzig-de-jahresabschluss-2022

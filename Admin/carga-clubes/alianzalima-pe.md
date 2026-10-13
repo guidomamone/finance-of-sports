@@ -302,6 +302,16 @@ documento da un rango compra/venta, no un valor único como los Anexos de River/
 el promedio de los dos a falta de otro precedente en el sitio para este caso puntual.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Concurso de Acreedores (2012-03-27 a hoy): Resolución 2152-2012/CCO-INDECOPI del 27/03/2012 declaró el inicio del procedimiento concursal ordinario (sentencia de la Sala de Defensa de la Competencia, 19/08/2013, vLex); administrador temporal Albaconsult designado el 20/04/2012. Sigue vigente en 2026: Junta de Acreedores convocada para marzo 2026 con informe del administrador del ejercicio 2025 (Libero, Infobae) y nuevo administrador temporal (Alfredo Arosemena) a mediados de 2026. Los estados 2019-2024 muestran deuda concursal y la nota de 2019 el proceso desde 2012. No hay cierre fuera del concurso. Administradores nombrados por la Junta (para el campo firmo, si hace falta): Kattia Bohórquez (designada 19/12/2019), Miguel Pons (09/02/2021, según las notas de los estados 2020 y 2021), Fernando Salazar (en 2023, saliente), luego José Sabogal, Fernando Cabada y Alfredo Arosemena (2026).
+Duda: Fechas exactas de cada administrador posterior a Pons no verificadas con fuente por fecha.
+Duda: Fin del concurso: no terminó a octubre de 2026 (hasta null).
+```
+
 ## Fuentes
 
 ### alianzalima-pe-eeff-2019

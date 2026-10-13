@@ -291,6 +291,14 @@ SIN CONFIRMAR, no cargada: Marcos Barbosa (2011-01-01 a 2021-04-01), https://www
 Duda: Fecha de aclamación de Marroquim (viernes 5): el mes (marzo 2021) lo deduje por el día de la semana y la posse del 1 de abril; no leí la nota completa (Gazeta Web).
 ```
 
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Mário Marroquim (2021-04-01 a hoy): Aclamado el viernes 05/03/2021 (chapa única "Avante, Galo!"), posse el 1 de abril de 2021 (Gazeta Web, que dice que "toma posse el día 1 de abril"). Reelecto el 18/12/2024 para 2025-2028, posse 01/01/2025 (continúa).
+SIN CONFIRMAR, no cargada: Marcos Barbosa (2011-01-01 a 2021-04-01), https://www.gazetaweb.com/noticias/esportes/alagoano/mario-marroquim-e-oficialmente-o-novo-presidente-do-crb: Gazeta Web / NE45: presidió desde 2011 hasta el inicio de 2021 ("después de una década"); aclamado por 4ª vez el 19/12/2016 para 2017/2018 (TNH1). Solo año de inicio (01/01/2011 por convención). Hasta = 01/04/2021, posse de Marroquim; ninguna fuente dice cuándo dejó Barbosa. confirmada=false.
+Duda: Gazeta Web y Jornal de Alagoas discrepan sobre la duración del primer mandato de Marroquim (2022 vs 2024); no afecta quién conducía.
+```
+
 ## Fuentes
 
 ### (general)

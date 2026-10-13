@@ -30,6 +30,8 @@ Object.assign(window.CLUB_GESTIONES, {
   'rostov-ru': [
     { nombre:'Artashés Arutiunián', corto:'Arutiunián', cargo:'Presidente', desde:'2017-06-17', hasta:'2025-10-15',
       fuente:'https://www.sport-express.ru/football/rfpl/news/1270040/', confirmada:true },
+    { nombre:'Igor Goncharov', corto:'Goncharov', cargo:'Director General', desde:'2025-10-15', hasta:'2026-07-17',
+      fuente:'https://rostov.mk.ru/sport/2025/10/15/generalnyy-direktor-fk-rostov-igor-goncharov-podtverdil-uvolnenie-prezidenta-kluba.html', confirmada:true },
   ],
   'akhmatgrozny-ru': [
     { nombre:'Magomed Daudov', corto:'Daudov', cargo:'Presidente', desde:'2011-01-01', hasta:'2024-05-23',
@@ -54,5 +56,27 @@ Object.assign(window.CLUB_GESTIONES, {
   'zenit-ru': [
     { nombre:'Yelena Iliujina', corto:'Iliujina', cargo:'Presidente', desde:'2019-02-22', hasta:null,
       fuente:'https://www.dp.ru/a/2019/02/22/Iljuhina_stala_io_predseda', confirmada:true },
+  ],
+  'lokomotivmoscow-ru': [
+    { nombre:'Vladimir Leonchenko', corto:'Leonchenko', cargo:'Director General', desde:'2020-12-23', hasta:'2025-11-12',
+      fuente:'https://ru.wikipedia.org/wiki/Леонченко,_Владимир_Валерьевич', confirmada:true },
+    { nombre:'Boris Rotenberg (hijo)', corto:'Rotenberg', cargo:'Director General', desde:'2025-11-12', hasta:null,
+      fuente:'https://ru.wikipedia.org/wiki/Ротенберг,_Борис_Борисович', confirmada:true },
+  ],
+  'dynamomoscow-ru': [
+    { nombre:'Pavel Pivovarov', corto:'Pivovarov', cargo:'Director General', desde:'2021-01-12', hasta:null,
+      fuente:'https://www.sport-express.ru/football/rfpl/reviews/1746323/', confirmada:true },
+  ],
+  'baltikakaliningrad-ru': [
+    { nombre:'Kirill Volzhenkin', corto:'Volzhenkin', cargo:'Director General', desde:'2021-08-16', hasta:'2023-12-11',
+      fuente:'https://kaliningrad.rbc.ru/kaliningrad/16/08/2021/611a07cb9a7947b077b8c004', confirmada:true },
+    { nombre:'Ravil Izmailov', corto:'Izmailov', cargo:'Director General', desde:'2023-12-11', hasta:null,
+      fuente:'https://www.sport-express.ru/football/rfpl/news/novym-generalnym-direktorom-baltiki-stal-ravil-izmaylov-2156186/', confirmada:true },
+  ],
+  'parinizhnynovgorod-ru': [
+    { nombre:'David Melik-Guseinov', corto:'Melik-Guseinov', cargo:'Director General', desde:'2023-07-21', hasta:'2025-09-13',
+      fuente:'https://pravda-nn.ru/news/david-melik-gusejnov-pokinul-post-gendirektora-pari-nn-v-nizhnem-novgorode/', confirmada:true },
+    { nombre:'Vitaly Karasev', corto:'Karasev', cargo:'Director General', desde:'2025-09-19', hasta:null,
+      fuente:'https://nn.rbc.ru/nn/freenews/68cd3a909a794752f993710d', confirmada:true },
   ],
 });

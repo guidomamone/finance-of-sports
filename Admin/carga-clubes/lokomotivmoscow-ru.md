@@ -294,6 +294,16 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2021: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Vladimir Leonchenko (2020-12-23 a 2025-11-12): Wikipedia ru: nombrado director general por el consejo de directores el 23/12/2020 (Kiknadze se iba el 28/12/2020); apartado el 12/11/2025. Sucedió a Vasily Kiknadze.
+Boris Rotenberg (hijo) (2025-11-12 a hoy): Wikipedia ru: nombrado por el consejo de directores el 12/11/2025 (misma fecha en Novaya Gazeta Europe). No es el empresario Boris Rotenberg padre: es el exfutbolista (39 años). Sigue en octubre 2026 (sin cambio encontrado).
+Duda: Cambio de gestión el 12/11/2025, antes del cierre 2025: el balance 2025 lo firmaría Rotenberg (dato a verificar en el documento, no lo vi).
+```
+
 ## Fuentes
 
 ### (general)

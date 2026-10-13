@@ -236,6 +236,18 @@ cash = "Caixa e equivalentes de caixa" (Nota 4), Consolidado.
 netInterest = "Resultado financeiro líquido" (Nota 21), Consolidado.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Dower Alexandre de Araújo (2020-07-31 a 2025-12-17): Ejecutivo que conduce el club día a día. Superesportes (31-07-2020) lo anuncia como nuevo superintendente geral; la prensa lo llama CEO (Itatiaia 27-11-2025 y 17-12-2025: "CEO de América"; Última Divisão: "CEO y presidente de la SAF") y el comunicado del club del 17-12-2025 habla de "cinco años y seis meses a la frente de la función de CEO" (coincide con jul-2020). Hasta 2025-12-17: Itatiaia, Rede 98 y No Ataque (17-12-2025) anuncian su salida ese día; sus funciones las absorben Paulo Assis, Renato Drummond y Henrique Saliba. La fuente de desde (Superesportes) dice "superintendente geral", no "CEO"; el título CEO no tiene fecha propia.
+SIN CONFIRMAR, no cargada: Márcio Vidal Gomes da Gama (2025-12-17 a hoy), https://www.ultimadivisao.com.br/saf-dividas-e-troca-de-comando-o-que-explica-a-crise-do-america-mg-na-serie-b/: Última Divisão dice que Márcio Vidal pasó a ocupar la presidencia de la SAF y del Conselho de Administración después de las salidas de Alencar (sept-2025) y de Dower (dic-2025), sin dar fecha exacta; se usa 2025-12-17 (salida de Dower) como fecha tope. El cierre 2025-12-31 cae en su gestión, pero el ejercicio 2025 casi entero fue de Dower (posible firmo=[2025] a favor de Dower). No hay CEO sucesor: las funciones se repartieron entre tres directores.
+Duda: Alternativa: Marcus Salum fue "presidente da SAF" (ejecutivo) desde mayo-2022 hasta el fin de su mandato en dic-2024 (Itatiaia 27-11-2024, "su mandato termina en diciembre"; Máquina do Esporte lo ubica hasta inicios de enero 2025). Esa nota dice a la vez que el América "pasará a tener un CEO" en 90 días, lo que contradice que Dower ya fuera CEO en 2024. Se cargó a Dower como el ejecutivo que el club y la prensa llaman CEO; si Guido prefiere al presidente de la SAF para 2023-2024: Salum desde 2022-05-01 hasta 2025-01-01 (día 01 por mes sin día).
+Duda: Alencar da Silveira Júnior (presidente del Conselho de Administración, firma los balances 2023 y 2024; cargado en la tanda anterior) queda como figura alternativa, no como gestión de este pedido.
+Duda: No se encontró la fecha en que Dower pasó a llevar el título CEO (el comunicado del club cuenta 5 años y 6 meses como CEO hasta dic-2025, es decir desde jul-2020, igual al inicio como superintendente).
+```
+
 ## Fuentes
 
 ### americamineiro-br-demonstracoes-2023

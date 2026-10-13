@@ -33,4 +33,26 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Michael Ströll', corto:'Ströll', cargo:'Gesamtverantwortlicher Geschäftsführer (CEO)', desde:'2023-09-12', hasta:null,
       fuente:'https://www.spox.com/de/sport/fussball/bundesliga/2309/News/fc-augsburg-stefan-reuter-zieht-sich-als-geschaeftsfuehrer-sport-zurueck.html', confirmada:true },
   ],
+  'koln-de': [
+    { nombre:'Werner Wolf', corto:'Wolf', cargo:'Präsident', desde:'2019-09-08', hasta:'2025-09-27',
+      fuente:'https://de.wikipedia.org/wiki/Werner_Wolf_(Manager)', confirmada:true },
+    { nombre:'Jörn Stobbe', corto:'Stobbe', cargo:'Präsident', desde:'2025-09-27', hasta:null,
+      fuente:'https://fc.de/aktuelles/news/das-ist-der-neue-fc-vorstand', confirmada:true },
+  ],
+  'hamburgersv-de': [
+    { nombre:'Marcell Jansen', corto:'Jansen', cargo:'Präsident', desde:'2021-08-07', hasta:'2025-06-21',
+      fuente:'https://www.t-online.de/sport/fussball/2-bundesliga/id_90588560/zum-zweiten-mal-ex-profi-marcell-jansen-erneut-praesident-des-hsv-e-v-.html', confirmada:true },
+    { nombre:'Henrik Köncke', corto:'Köncke', cargo:'Präsident', desde:'2025-06-21', hasta:null,
+      fuente:'https://www.hsv.de/unser-hsv/verein/die-hsv-mitgliederversammlung-im-liveticker', confirmada:true },
+  ],
+  'rbleipzig-de': [
+    { nombre:'Oliver Mintzlaff', corto:'Mintzlaff', cargo:'Vorstandsvorsitzender', desde:'2014-06-12', hasta:'2022-11-15',
+      fuente:'https://de.wikipedia.org/wiki/Oliver_Mintzlaff', confirmada:true },
+    { nombre:'Johann Plenge', corto:'Plenge', cargo:'Vorstandsvorsitzender', desde:'2022-11-15', hasta:null,
+      fuente:'https://rblive.de/news/johann-plenge-rb-leipzig-urgestein-neuer-praesident-nach-mintzlaff-3521718', confirmada:true },
+  ],
+  'monchengladbach-de': [
+    { nombre:'Rainer Bonhof', corto:'Bonhof', cargo:'Präsident', desde:'2024-03-19', hasta:null,
+      fuente:'https://www.borussia.de/news/2024-03-19-neues-praesidium-bei-borussia-rainer-bonhof-folgt-rolf-koenigs-im-amt-des-praesidenten', confirmada:true },
+  ],
 });

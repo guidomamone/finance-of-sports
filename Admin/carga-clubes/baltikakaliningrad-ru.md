@@ -246,6 +246,16 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2022: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Kirill Volzhenkin (2021-08-16 a 2023-12-11): RBC Kaliningrado 16/08/2021: nombrado ese día, tras irse Tazhutdin Kachukaev. Sport-Express 11/12/2023: el club informó su salida por voluntad propia ese día.
+Ravil Izmailov (2023-12-11 a hoy): Sport-Express y Match TV 11/12/2023: Baltika anunció su nombramiento ese día (venía de Pari NN). Sigue en 2026.
+Duda: El cierre 2023-12-31 queda en la gestión de Izmailov, que asumió 20 días antes; el ejercicio 2023 casi entero fue de Volzhenkin (campo firmo a evaluar).
+```
+
 ## Fuentes
 
 ### (general)

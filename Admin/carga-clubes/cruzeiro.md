@@ -396,6 +396,16 @@ Duda: Firmantes ejecutivos distintos del dueño: 2022 'Presidente' Gabriel R. Li
 Duda: Ronaldo siguió en el Conselho de Administração tras vender (aparece en los balances 2024 y 2025); no se carga como gestión.
 ```
 
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Ronaldo Nazário (2022-01-01 a 2024-04-29): (Tanda anterior) Dueño del 90% vía Tara Sports; Itatiaia (29-04-2024): "geria a empresa desde janeiro de 2022", compra oficializada de hecho en marzo de 2022; hasta 2024-04-29 (firma de la venta).
+SIN CONFIRMAR, no cargada: Pedro Lourenço (2024-04-29 a hoy), https://www.otempo.com.br/sports/cruzeiro/2024/6/12/venda-da-saf-do-cruzeiro-de-ronaldo-para-pedro-lourenco-e-aprova: Fechas encontradas: 29-04-2024 firma del contrato (CNN Brasil, Terra, Itatiaia) con condiciones precedentes (aprobación del CADE y concordancia de la Associação); 12-06-2024 el CADE aprobó la venta por rito sumario (O Tempo, 12-06-2024). O Tempo dice además que desde el anuncio del 29-04 Pedro Lourenço "asumió el control total del fútbol celeste" (de hecho, antes del cierre formal), pero Terra (29-04-2024) aclara que seguía Gabriel Lima como CEO de la SAF. No se encontró ninguna nota que fije el cierre formal ni la concordancia de la Associação. Se mantiene 2024-04-29 como fecha de asunción de hecho; confirmada:false porque ninguna fuente dice "asumió el día X" como dueño. Alternativa más conservadora: 2024-06-12 (aprobación del CADE).
+Duda: No hay fecha de cierre formal de la compra (CADE 12-06-2024 y concordancia de la Associação sin fecha); en cualquier fecha entre 29-04 y 12-06-2024 los cierres 2024 y 2025 caen en Lourenço y 2022 y 2023 en Ronaldo.
+Duda: AVISO firmo: el balance 2023 se aprobó/firmó el 15-05-2024, después de la firma de la venta (29-04-2024): ejercicio de Ronaldo, aprobado con Lourenço ya al mando.
+Duda: Ejecutivos distintos del dueño: Gabriel Lima CEO de la SAF en abril de 2024 (Terra); balances 2024 y 2025 firmados por Pedro Junio de Oliveira como Diretor Presidente (tanda anterior).
+```
+
 ## Fuentes
 
 ### cruzeiro-informativo-financeiro-2025

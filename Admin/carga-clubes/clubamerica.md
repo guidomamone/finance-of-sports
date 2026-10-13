@@ -228,6 +228,16 @@ real. Ver comentario largo "UTILIDAD DEL SEGMENTO NO ES RESULTADO NETO" al princ
 archivo.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Emilio Azcárraga Jean (1997-04-16 a hoy): Ninguna fuente dice 'dueño desde'. El club perteneció a Emilio Azcárraga Milmo desde 1959 (Wikipedia es, Club América); Milmo murió el 16/04/1997 (Wikipedia en) y Azcárraga Jean lo sucedió al frente de Televisa, dueña del club (Wikipedia es: presidente de Televisa 'al fallecimiento de su padre, en 1997'). Se usa el 16/04/1997 como fecha de control: confirmada=false porque la fuente da el año, y la fecha es la de la muerte del padre. Desde el 31/01/2024 el club está en Ollamani (escisión de Televisa), de la que es presidente del consejo y accionista de control (44,4 % de las acciones serie A según prensa); sigue en 2026. CONFIRMADA por decisión de Guido (2026-10-13): fecha 1997-04-16 (asumió propiedad y control al morir su padre); 2018-01-01 y 2024-01-31 darían el mismo resultado para el único cierre cargado (2025-12-31).
+Duda: Si se prefiere un hito más preciso: 2018-01-01, cuando asumió la responsabilidad directa de la división fútbol de Televisa (Wikipedia es), o 2024-01-31, escisión a Ollamani.
+Duda: Fecha del control exacto de Televisa/Ollamani sobre el club entre 1959 y 1997 no investigada.
+```
+
 ## Fuentes
 
 ### clubamerica-ollamani-2025

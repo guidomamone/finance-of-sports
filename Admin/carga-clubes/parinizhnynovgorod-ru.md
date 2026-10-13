@@ -359,6 +359,18 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2021: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+David Melik-Guseinov (2023-07-21 a 2025-09-13): Anunciado por el gobernador Nikitin el 21/07/2023 (pravda-nn.ru, Championat); venía de vicegobernador y ministro de Salud. La fuente no da el día de entrada efectiva: se usa el del anuncio. Salida: avisó que se iba en su Telegram el 13/09/2025 (pravda-nn.ru; nn.ru).
+Vitaly Karasev (2025-09-19 a hoy): RBC Nizhni Nóvgorod 19/09/2025: nombrado director general en reemplazo de Melik-Guseinov (que había anunciado la salida unos días antes). Sigue en 2026; el 11/07/2026 el club recuperó el nombre 'Nizhny Novgorod' y cambió de accionista (Andrey Artyomov), sin cambio de director general encontrado.
+SIN CONFIRMAR, no cargada: Ravil Izmailov (2021-01-19 a 2023-07-21), https://news.sportbox.ru/Vidy_sporta/Futbol/Russia/1st_division/spbnews_NI1300857_Izmajlov_stanet_generalnym_direktorom_Nizhnego_Novgoroda: Sportbox 19/01/2021: 'en los próximos días' asumirá como director general (sucede a Maxim Metlin). Se usa el día de la noticia; la fecha real de entrada no está dada: confirmada=false solo por esa razón. Otras fuentes dicen 'desde 2020' o 'desde 2021'; en mayo 2021 ya firmaba como director general. Salida: pravda-nn.ru 21/07/2023 anuncia que deja el cargo.
+Duda: Cierre 2025-12-31: Karasev asumió ~3 meses antes, casi todo el ejercicio fue de Melik-Guseinov; firmo a evaluar. Lo mismo para 2023 (Izmailov hasta julio).
+Duda: No encontré el día exacto de entrada en funciones de Izmailov (enero 2021) ni de Melik-Guseinov.
+```
+
 ## Fuentes
 
 ### (general)

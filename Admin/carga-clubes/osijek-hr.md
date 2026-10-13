@@ -143,6 +143,16 @@ Financijski prihodi(357) - Financijski rashodi(403.712).
 grossDebt = Bankovni i drugi zajmovi (corriente 0 + no corriente 11.470.126, Nota 9).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Ferenc Sakalj (2020-06-23 a 2026-02-20): Nombre correcto: Ferenc Sakalj (Szakály en húngaro), no Ivan; Ivan Meštrović fue su antecesor. Novi list 23/06/2020: comunicado del club, Meštrović deja la presidencia a su pedido y Sakalj (hasta entonces vicepresidente) es el nuevo presidente; index.hr (29/07/2020) dice que asumió 'en junio'. Se usa el 23/06/2020 (fecha del comunicado). Salida: comunicado del club, reproducido por Novi list, renuncia de común acuerdo con efecto 20/02/2026 (tras la derrota 0-2 con Hajduk según Index).
+Alexandra Végh (2026-02-20 a hoy): Asume la presidencia de la Uprava el 20/02/2026; la tabla de la Uprava del informe 2025 dice 'Predsjednica Uprave 20.02.2026.-19.07.2028'. Firmó el balance 2025 el 20/03/2026.
+Duda: Aviso para el campo firmo: el balance 2025 lo firmó Alexandra Végh (20/03/2026), que asumió después del cierre; al 31/12/2025 conducía Sakalj.
+```
+
 ## Fuentes
 
 ### osijek-hr-financijsko-izvjesce-2025

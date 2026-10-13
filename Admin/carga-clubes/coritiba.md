@@ -276,6 +276,18 @@ el detalle completo del tie-out (diferencia de R$1 vs. la suma propia,
 dentro de tolerancia).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Carlos Amodeo (2023-06-01 a 2024-07-02): CEO del Coritiba/SAF elegido por Treecorp (dueña del 90%). Máquina do Esporte (02-07-2024): salió "de común acuerdo", estaba "desde junio de 2023" (sin día: se usa 2023-06-01) y se quedó algunos días para transición. Hasta = 2024-07-02, fecha del anuncio. Otras notas lo ubican 13 meses en el cargo. Después fue CEO del Vasco (anunciado 08-07-2024).
+SIN CONFIRMAR, no cargada: Gabriel Lima (2024-07-29 a 2025-02-13), https://www.bemparana.com.br/esportes/coritiba/coritiba-contrata-o-ceo-gabriel-lima-que-foi-braco-direito-de-ronaldo-fenomeno-no-cruzeiro/: Sucedió a Amodeo: Bem Paraná (vía búsqueda, la página dio 403 al abrirla) dice que el club lo anunció el lunes 29-07-2024; Máquina do Esporte (13-02-2025) confirma "anunciado en julio del año pasado". Hasta 2025-02-13: ese día la LFU (Liga Forte União) lo nombró líder del condominio de clubes y la nota ya habla de él en pasado como CEO; la fecha exacta de su salida del Coritiba no figura en ninguna fuente (Banda B 14-06-2026 solo dice "el año pasado"). confirmada:false por desde (no pude abrir la fuente) y por hasta (aproximado).
+Duda: Gabriel Lima: fecha exacta de asunción (29-07-2024 según Bem Paraná, sin abrir) y de salida (entre 2025-01 y 2025-04; el nuevo CEO Lucas de Paula se anunció en abril de 2025).
+Duda: Banda B (14-06-2026): hoy el cargo de CEO no tiene reemplazo oficial; sus funciones las absorben André Campestrini (CFO) y William Thomas (director ejecutivo de fútbol).
+Duda: La tanda anterior cargó a Bruno Levi D'Ancona (presidente del Conselho de Administración de Treecorp); aquí se carga al CEO por el pedido.
+```
+
 ## Fuentes
 
 ### coritiba-demonstracoes-2022-2023

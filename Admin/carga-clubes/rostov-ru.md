@@ -329,6 +329,16 @@ Duda: El cierre 2025-12-31 no queda cubierto: tras Arutiunián el club tiene dir
 Duda: Cargo cargado: presidente del club (figura ejecutiva), no el director general ni el presidente del consejo.
 ```
 
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Artashés Arutiunián (2017-06-17 a 2025-10-15): Gestión ya confirmada en la tanda anterior (Sport-Express 2017-06-17; salida 2025-10-15, RIA/MK).
+Igor Goncharov (2025-10-15 a 2026-07-17): Quedó a cargo de hecho al irse el presidente: MK Rostov (15/10/2025) lo muestra como director general confirmando el despido del presidente; Vedomosti (22/11/2025) no nombra nuevo presidente y dice que el club lo conduce el director general. Es director general desde el 10/06/2025 (Sport-Express, sucedió a Vadim Rybakov), pero hasta el 15/10 el presidente era Arutiunián: por eso desde 2025-10-15. Hasta: Sport-Express (20/07/2026) informa que el consejo nombró director general a Andréi Chaika el 17/07/2026; Goncharov queda en el club en otro puesto.
+Duda: Cargo distinto entre gestiones (Presidente / Director General): decisión de Guido para este cierre.
+Duda: Presidente del consejo: Igor Sorokin (vicegobernador) según Wikipedia ru, sin fecha de asunción; el club pasó a 100 % del ministerio regional en febrero 2026 (Sports.ru).
+Duda: Chaika (director general desde 2026-07-17) queda fuera de los cierres.
+```
+
 ## Fuentes
 
 ### (general)

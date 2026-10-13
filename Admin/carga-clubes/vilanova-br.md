@@ -581,6 +581,18 @@ Duda: Cierre 2025: Hugo Jorge Bravo presidió casi todo el año; Fábio Brasil a
 Duda: La tabla de Wikipedia pt tiene filas sin nombre y notas con fechas cruzadas (2018-19, 2022-25); los nombres de esas filas los deduje de las notas/referencias.
 ```
 
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Hugo Jorge Bravo (2019-12-09 a 2025-11-28): Ya confirmada en la tanda anterior (posse 09/12/2019; Wikipedia pt).
+Fábio Brasil de Castro (2025-11-28 a hoy): Ya confirmada en la tanda anterior (posse 28/11/2025).
+SIN CONFIRMAR, no cargada: Gutemberg Veronez (2014-12-01 a 2016-10-11), https://pt.wikipedia.org/wiki/Lista_de_presidentes_do_Vila_Nova_Futebol_Clube: Wikipedia pt (lista): presidente 2014-2016, interino tras la renuncia del anterior; elegido el 01/12/2015 (posse 02/12/2015, venció la chapa de Carlos Antunes Júnior). Sagres Online: asumió "a fines de 2014" y renunció 22 meses después. El día exacto de la asunción de 2014 NO figura en ninguna fuente leída: 2014-12-01 es una estimación (día 01 por convención). Hasta = 2016-10-11, día en que se presentó a Ecival; la fecha exacta de la renuncia no se encontró (Sagres: renuncia previa al nombramiento de Ecival). confirmada=false.
+SIN CONFIRMAR, no cargada: Ecival Martins (2016-10-11 a 2019-12-09), https://sagresonline.com.br/apresentado-novo-presidente-do-vila-pede-paciencia-a-torcida-e-destaca-que-a-paz-vai-voltar/: Sagres Online: presentado como presidente el martes 11/10/2016 (nombrado por el presidente del consejo, Wilson Balzacchi, tras la renuncia de Guto, hasta elecciones del 09/11/2016); la fecha del nombramiento no figura (pudo ser 1-2 días antes). Wikipedia pt: elegido 09/11/2016 (posse 30/12/2016), nuevo mandato 2018-2019 (posse 01/01/2018; la fila no trae nombre). Hasta = 09/12/2019, posse de Hugo Jorge Bravo según la lista de Wikipedia; ninguna fuente leída afirma explícitamente que Ecival fue el inmediato anterior. confirmada=false.
+Duda: Cierre 2014: no se encontró el día de asunción de Guto Veronez; la lista de Wikipedia pt lo muestra con posse 02/12/2015 y a Rodrigo Nogueira (interino desde 18/03/2014) como anterior. Si Guto asumió después del 31/12/2014, el cierre 2014 sería de Rodrigo Nogueira.
+Duda: Cierre 2025: Hugo Jorge Bravo presidió hasta el 28/11/2025 y Fábio Brasil estaba al cierre (posible firmo).
+Duda: Cierre 2016: Guto Veronez presidió hasta octubre; Ecival estaba al cierre (posible firmo).
+```
+
 ## Fuentes
 
 ### (general)

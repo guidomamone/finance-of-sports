@@ -762,6 +762,22 @@ Duda: Quién condujo el club entre octubre y diciembre de 2015 (renuncia de Ange
 Duda: Wikipedia pt (texto) dice que Búrigo renunció en 2010 y que Angeloni volvió a su segundo mandato antes de la Série C 2010; el club dice que Angeloni 'comandaba desde 2010'. No afecta a los cierres cubiertos.
 ```
 
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Jaime Dal Farra (2015-12-08 a 2021-01-01): Aclamado el 08/12/2015 (club). Renunció el 14/05/2020 y siguió hasta el 31/12/2020: hasta = 2021-01-01 por convención. Ya confirmada en la tanda anterior.
+Vilmar Guedes (2022-06-28 a 2024-12-05): Aclamado el 28/06/2022 (Futebol Interior); la fuente no da posse, se usa la aclamación. Renunció el 05/12/2024 (ND Mais / NSC Total). Ya cargada en la tanda anterior; no vuelto a verificar.
+Pedro Paulo Canella (2025-11-26 a hoy): Posse el 26/11/2025 en la ACIC (4oito). Cargada antes; no re-leída aquí.
+SIN CONFIRMAR, no cargada: Antenor Angeloni (2010-01-01 a 2015-12-08), https://www.criciuma.com.br/noticias/o-clube/novo-presidente-e-empossado: Wikipedia pt (lista): 2010 a 2015, solo años; el club (08/12/2015) dice que comandaba desde 2010. Desde = 01/01/2010 (solo año), hasta = 08/12/2015, aclamación de Dal Farra. Para los cierres 2012-2014 no hay dudas sobre quién conducía (presentado como presidente en 2013, DC; campeón estadual 2013). confirmada=false por el día 01.
+SIN CONFIRMAR, no cargada: Anselmo Freitas (2021-01-01 a 2022-06-28), https://www.criciuma.com.br/noticias/o-clube/anselmo-freitas-e-eleito-presidente-administrativo: Wikipedia pt: electo el 17/12/2020 (no verificado en prensa); el club informa su ratificación el 23/11/2021 para el trienio 2022-2024 (única chapa, 109 votos). Ninguna fuente da el día de posse: 2021-01-01 inferido del fin de Dal Farra. Hasta = 2022-06-28, aclamación de Guedes; la fecha de su salida no se encontró (carta al Conselho por salud, NSC Total, sin fecha). confirmada=false.
+SIN CONFIRMAR, no cargada: Alexandre Farias (2024-12-05 a 2025-11-26), https://www.4oito.com.br/: Vice-presidente administrativo, interino desde la renuncia de Guedes (05/12/2024) hasta la posse de Canella (4oito). Cargada antes con fuente 4oito; no re-leída aquí.
+Duda: Anselmo Freitas: día de asunción y de salida no confirmados (2021-01-01 y 2022-06-28 son convenciones).
+Duda: Cierre 2015: Angeloni presidió casi todo el año, Dal Farra estaba al cierre (posible firmo).
+Duda: Cierre 2022: Freitas hasta ~junio, Guedes el resto. Cierre 2024: Guedes casi todo el año, Farias al cierre. Cierre 2025: Farias hasta el 26/11, Canella al cierre.
+Duda: NSC Total (nota sobre la renuncia de Guedes) dice por error que asumió en junio de 2024; las demás fuentes dicen 2022.
+Duda: Quién condujo entre octubre y diciembre de 2015 (renuncia de Angeloni - posse de Dal Farra): sin dato.
+```
+
 ## Fuentes
 
 ### (general)

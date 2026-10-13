@@ -112,6 +112,16 @@ officialTotalRevenue/officialTotalExpenses = suma verificada de revenueLines/exp
 número EXACTO del documento).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Adson José Batista (2019-01-14 a hoy): Lance: chapa "Castelo do Dragão" aclamada ~07/12/2018 para 2019/2021, posse el 14/01/2019. O Popular (2021): el Consejo de Administración lo mantuvo para 2022-2025 (posse automática el 01/01/2022). Prensa de 2025-2026 lo muestra aún presidente (Dragão Goiano, Jornal Opção). Hasta = null.
+Duda: El balance 2025 es de ACG + SAF: en la asociación (ACG) figura Valdivino José de Oliveira como Presidente; en la SAF, Adson Batista como Diretor Presidente y presidente del Consejo. Se cargó a Adson (SAF, figura pública). Decisión de Guido si prefiere Valdivino.
+Duda: No se encontró nota que confirme formalmente el mandato de Adson para 2026 (el 2022-2025 terminó); la prensa lo sigue llamando presidente.
+```
+
 ## Fuentes
 
 ### atleticogoianiense-demonstracoes-2024-2025

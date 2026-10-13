@@ -29,4 +29,10 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Dražen Vitez', corto:'Vitez', cargo:'Predsjednik Uprave', desde:'2021-03-23', hasta:null,
       fuente:'https://evarazdin.hr/sport/drazen-vitez-novi-je-predsjednik-nk-varazdin-389977/', confirmada:true },
   ],
+  'osijek-hr': [
+    { nombre:'Ferenc Sakalj', corto:'Sakalj', cargo:'Presidente', desde:'2020-06-23', hasta:'2026-02-20',
+      fuente:'https://www.novilist.hr/?p=267424', confirmada:true },
+    { nombre:'Alexandra Végh', corto:'Végh', cargo:'Presidente', desde:'2026-02-20', hasta:null,
+      fuente:'https://www.novilist.hr/?p=1629341', confirmada:true },
+  ],
 });

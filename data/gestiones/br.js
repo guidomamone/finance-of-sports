@@ -148,6 +148,8 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://ndmais.com.br/futebol/bernardo-pessi-e-eleito-o-novo-presidente-do-avai/', confirmada:true },
   ],
   'paysandu-br': [
+    { nombre:'Roger Aguilera', corto:'Aguilera', cargo:'Presidente', desde:'2025-01-01', hasta:'2025-12-22',
+      fuente:'https://www.oliberal.com/esportes/futebol/e-hora-de-sair-de-cena-mauricio-ettinger-avalia-gestao-e-se-despede-do-paysandu-1.903032', confirmada:true },
     { nombre:'Márcio Tuma', corto:'Tuma', cargo:'Presidente', desde:'2025-12-22', hasta:null,
       fuente:'https://estadodoparaonline.com/marcio-tuma-assume-a-presidencia-do-paysandu-apos-renuncia-de-aguilera/', confirmada:true },
   ],
@@ -158,7 +160,33 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://www.maisgoias.com.br/esportes/futebol/futebol-goiano/vila-nova/fabio-brasil-ira-assumir-a-presidencia-do-vila-nova-na-proxima-sexta-feira-28-11/', confirmada:true },
   ],
   'remo-br': [
+    { nombre:'Fábio Osório Bentes', corto:'Bentes', cargo:'Presidente', desde:'2018-11-10', hasta:'2023-11-12',
+      fuente:'https://dol.com.br/esporte/esporte-para/noticia-555563-fabio-bentes-confirma-quais-serao-suas-primeiras-medidas-como-novo-presidente-azulino.html', confirmada:true },
     { nombre:'Antônio Carlos Teixeira', corto:'Tonhão', cargo:'Presidente', desde:'2023-11-12', hasta:null,
       fuente:'https://www.oliberal.com/esportes/remo/tonhao-vence-a-eleicao-e-e-novo-presidente-do-remo-nos-proximos-tres-anos-veja-os-numeros-1.747125', confirmada:true },
+  ],
+  'americamineiro-br': [
+    { nombre:'Dower Alexandre de Araújo', corto:'Dower', cargo:'CEO', desde:'2020-07-31', hasta:'2025-12-17',
+      fuente:'https://www.mg.superesportes.com.br/app/noticias/futebol/america-mg/2020/07/31/noticia_america_mg,3856910/america-anuncia-dower-araujo-como-novo-superintendente-geral-do-clube.shtml', confirmada:true },
+  ],
+  'coritiba': [
+    { nombre:'Carlos Amodeo', corto:'Amodeo', cargo:'CEO', desde:'2023-06-01', hasta:'2024-07-02',
+      fuente:'https://maquinadoesporte.com.br/futebol/coritiba-anuncia-saida-de-ceo-carlos-amodeo/', confirmada:true },
+  ],
+  'vascodagama-br': [
+    { nombre:'Lucio Ferreira Barbosa', corto:'Lucio Barbosa', cargo:'Diretor Presidente', desde:'2023-07-25', hasta:'2024-06-11',
+      fuente:'https://trivela.com.br/brasil/lucio-barbosa-demissao-vasco-ceo-saf/', confirmada:true },
+  ],
+  'rbbragantino-br': [
+    { nombre:'André Rocha', corto:'Rocha', cargo:'CEO', desde:'2020-01-01', hasta:null,
+      fuente:'https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/futebol-paulista/bragantino/ceo-do-bragantino-cita-equipe-de-formula-1-como-inspiracao-para-o-clube-paulista/', confirmada:true },
+  ],
+  'ferroviaria-br': [
+    { nombre:'Carlos Alberto Salmazo', corto:'Salmazo', cargo:'Presidente', desde:'2014-08-02', hasta:'2023-01-19',
+      fuente:'https://rciararaquara.com.br/ferroviaria/apos-oito-anos-carlos-salmazo-deixa-a-presidencia-da-ferroviaria/', confirmada:true },
+  ],
+  'atleticogoianiense': [
+    { nombre:'Adson José Batista', corto:'Adson Batista', cargo:'Presidente', desde:'2019-01-14', hasta:null,
+      fuente:'https://www.lance.com.br/atletico-goianiense/adson-batista-aclamado-novo-presidente-atletico.html', confirmada:true },
   ],
 });

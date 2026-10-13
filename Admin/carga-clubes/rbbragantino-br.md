@@ -185,6 +185,18 @@ officialPAT = "Superávit líquido do exercício" impreso (144 mil = 0,144 M BRL
 revenue + expenses + netInterest = 0,144 EXACTO, dígito por dígito.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+André Rocha (2020-01-01 a hoy): Itatiaia (04-02-2024): "CEO del Red Bull Bragantino", "a la frente de la gestión del club desde 2020", balance de "cuatro años" (solo año: 2020-01-01). Times Brasil y CNN lo siguen llamando CEO en 2025-2026. Diego Cerri es el director ejecutivo/deportivo (desde junio de 2023; anunciado el jueves 29-06-2023), no el CEO según Itatiaia.
+SIN CONFIRMAR, no cargada: Thiago Scuro (2019-04-23 a 2020-01-01), https://www.folhavitoria.com.br/esportes/red-bull-e-bragantino-apresentam-parceria-e-confirmam-zago-como-tecnico/: Principal ejecutivo de Red Bull en el proyecto (CEO de Red Bull Brasil / de fútbol según Veja y Folha Vitória en 2019; "director ejecutivo" o "director deportivo y presidente del club" en la prensa de 2023). Desde = 2019-04-23: día en que presentó la alianza junto a Marquinho Chedid; no es una fecha de asunción de un cargo en la Ltda. Hasta = 2020-01-01: fecha en que Itatiaia ubica a Rocha al frente de la gestión (inferida). Scuro siguió en Red Bull Bragantino como director deportivo hasta el 30-06-2023 (comunicado del 07-06-2023), pero ya no como CEO de la gestión.
+Duda: Hay dos figuras con título de "presidente" en la Ltda: la deportiva (Scuro, luego Cerri, que en Trivela 15-12-2025 se presenta como "director deportivo-presidente") y la administrativa (André Rocha, CEO). Se cargó a Rocha desde 2020 porque Itatiaia lo llama CEO y conduce la gestión. Si Guido prefiere la figura deportiva: Scuro 2019-04-23 a 2023-06-30; Cerri desde 2023-06-29 (anuncio de Bahia Notícias del jueves 29-06-2023).
+Duda: Para 2019 no hay fuente que nombre a un CEO distinto de Scuro; el balance 2019 no trae firmantes en la transcripción.
+Duda: Marquinho Chedid (presidente del Clube Atlético Bragantino, la asociación) hoy es "presidente de honor"; no se carga porque el balance es de la Ltda.
+```
+
 ## Fuentes
 
 ### rbbragantino-br-balanco-2019

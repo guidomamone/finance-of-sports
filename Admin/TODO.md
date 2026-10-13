@@ -88,30 +88,13 @@ ni en el comentario de ningún archivo de código.
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
 
-195. GESTIONES DE LOS CLUBES YA CARGADOS QUE NO LAS TIENEN (pedido de Guido). HECHO 2026-10-13 (tanda 1): 6 subagentes Sonnet investigaron
-    los 74 clubes que faltaban; se cargaron las 67 gestiones CONFIRMADAS de 48 clubes (`data/gestiones/ru.js` y `jp.js` nuevos). Lo no
-    confirmado y las dudas, en "## Gestiones" de cada `Admin/carga-clubes/<club>.md`.
-    TANDA 2, INVESTIGADA Y SIN CARGAR (todo en `Admin/gestiones-por-pais/tanda-2026-10-13/`: los `lote-<N>.json` = lo pedido, los `resultado-<N>.json`
-    = lo que encontró cada subagente con fuente, `instrucciones.md`, `validar.js` y `cargar-gestiones.mjs`). Decisiones de Guido ya tomadas,
-    que estos resultados aplican:
-      - Brasil SAF: el EJECUTIVO (CEO o diretor-presidente), como Atlético Mineiro y Bahia (lote 7: América-MG, Coritiba, Vasco, Fortaleza,
-        RB Bragantino, Novorizontino, Cuiabá, Ferroviária, Goiás, Cruzeiro).
-      - Rusia: el DIRECTOR GENERAL donde no hay presidente (lote 8: Lokomotiv, Dynamo Moscú, Baltika, Pari NN; Rostov 2025 = Goncharov).
-      - Club América: Emilio Azcárraga Jean como Dueño (lote 8; la fecha quedó sin confirmar).
-      - Alianza Lima: UNA gestión "Concurso de Acreedores" desde el 2012-03-27 (Res. 2152-2012/CCO-INDECOPI), hasta null (lote 8).
-      - Alemania: el PRESIDENTE DE LA ASOCIACIÓN (e.V.) donde la sociedad no tuvo presidente ni portavoz (lote 10: Köln = Werner Wolf, HSV =
-        Marcell Jansen y Henrik Köncke, RB Leipzig = Mintzlaff y Plenge, Gladbach = Rolf Königs y Rainer Bonhof). Los 4 cubiertos.
-      - Lote 9: confirmar fechas de Brasil (Vila Nova, Remo, Paysandu, Ituano, Ceará, Atlético Goianiense, Amazonas, Criciúma, CRB).
-    CÓMO CARGARLA: validar: correr desde esa carpeta (rutas relativas:
-    `cd` ahí y `node validar.js 7`); ensayo de la carga: `node Admin/gestiones-por-pais/tanda-2026-10-13/cargar-gestiones.mjs
-    Admin/gestiones-por-pais/tanda-2026-10-13 --lotes 7,8,9,10`. FRENA a propósito si un club ya tiene gestiones en su archivo (Goiás,
-    Criciúma, CRB, Vila Nova, Remo, Paysandu, Cruzeiro... de la tanda 1): para esos hay que REEMPLAZAR su entrada de `data/gestiones/br.js`
-    con la de la tanda 2 (que trae también las ya confirmadas), no agregar. Solo se cargan las `confirmada: true`; mirar el resumen de cada
-    subagente en cada `resultado-<N>.json` (`dudas`) antes. Los archivos de país nuevos (mx, pe) van en `PAISES` de `js/finanzas-anios.js`, y su
-    criterio en `Admin/gestiones-por-pais/<iso>.md`; después ASSET_V, `generate-fuentes-page.js`, `audit.js` y ver la fila de gestión en el sitio.
-    QUEDA SIN FUENTE (otra tanda si Guido quiere): Goiás 2010-2013 y Ferroviária 2012-2013 (solo la firma del balance), Novorizontino,
-    Cuiabá (fecha del cambio Alessandro -> Cristiano Dresch), Pari NN 2021-2022, Once Caldas 2024-2025, Club América (fecha), Osijek ya resuelto.
-    Casos `firmo` (cambio de gestión entre el cierre y la aprobación del balance): en las `dudas` de cada resultado.
+195. GESTIONES SIN FUENTE (lo que quedó de las tandas 1 y 2, ambas cargadas: solo entran las `confirmada: true`). Otra tanda si Guido
+    quiere, con el mismo armado de `Admin/gestiones-por-pais/tanda-2026-10-13/` (`validar.js <N>` dice qué cierre queda sin gestión). Cierres
+    sin cubrir: Fortaleza, Novorizontino, Cuiabá (fecha del cambio Alessandro -> Cristiano Dresch), Ituano, Ceará 2024-2025 y Amazonas 2024
+    (ninguna confirmada); Goiás 2008-2013, 2017 y 2023-2025; Cruzeiro 2024-2025 (Pedro Lourenço sin fecha de cierre de la compra); Criciúma
+    2012-2014 y 2021; CRB 2020; Pari NN 2021-2022; Once Caldas 2024-2025; Mönchengladbach 2023 (Rolf Königs). Las dudas de cada club, en
+    "## Gestiones" de su `Admin/carga-clubes/<club>.md`; los casos `firmo` (la gestión cambió entre el cierre y la aprobación del balance),
+    ahí mismo, sin cargar.
 
 
 

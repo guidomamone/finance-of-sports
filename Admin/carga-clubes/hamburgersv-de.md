@@ -142,6 +142,16 @@ officialPAT = Jahresüberschuss impreso EXACTO (2.146.705,69 EUR), el único nú
 ejercicio que llegó sin ambigüedad en la tabla garbled.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Marcell Jansen (2021-08-07 a 2025-06-21): Segundo mandato: presidente del e.V. desde 19-1-2019, renunció a comienzos de 2021 (febrero) tras la disputa con sus vices y fue reelegido el sábado 7-8-2021 (68,8 %), según t-online/kicker/dpa. Se carga solo este tramo porque el primero no cubre ningún cierre. Terminó el 21-6-2025 en la asamblea (liveticker del HSV: el presidium saliente se despide y se elige a Köncke ese día). La fecha 7-8-2021 la dio la invitación oficial del HSV y dpa vía búsqueda; el artículo de kicker dio 403.
+Henrik Köncke (2025-06-21 a hoy): Elegido el 21-6-2025 en primera vuelta (65,71 %) según el liveticker oficial del HSV; la fuente no da fecha de asunción aparte, se usa la de la elección.
+Duda: El cierre 2025-06-30 cae 9 días después del cambio de presidente (21-6-2025): el balance lo aprobaría la gestión Köncke pero el ejercicio casi entero es de Jansen; ver si hace falta el campo firmo.
+```
+
 ## Fuentes
 
 ### hamburgersv-de-fussball-ag-jahresabschluss-2024

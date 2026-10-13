@@ -206,6 +206,15 @@ Leistungen+Gesellschafter+sonstige), EXCLUYE Rückstellungen/Rechnungsabgrenzung
 Kassenbestand und Guthaben bei Kreditinstituten.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Werner Wolf (2019-09-08 a 2025-09-27): Wikipedia: elegido presidente el 8-9-2019 (asamblea de miembros); no se encontró fecha de asunción distinta, se usa la de la elección. Salió al no presentarse en la asamblea del 27-9-2025 (la búsqueda y geissblog lo confirman; fc.de dice que el nuevo directorio fue elegido ese día).
+Jörn Stobbe (2025-09-27 a hoy): fc.de: nuevo directorio elegido el 27-9-2025 en el RheinEnergieStadion, por tres años; la fuente no da fecha de asunción aparte, se usa la de la elección. No cubre ningún cierre pedido (solo cierra la gestión de Wolf).
+```
+
 ## Fuentes
 
 ### koln-de-jahresabschluss-2024
