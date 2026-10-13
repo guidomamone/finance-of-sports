@@ -42,3 +42,5 @@ Color de marca: null — bicolor azul y amarillo (apodo Kitrinoble 'amarillo-azu
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2025 desde `Clubes/Grecia/Asteras Tripolis/Asteras_FS_2025-06-30.pdf` (sourceId `asterastripolis-gr-asteras-fs-2025-06-30`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2021 desde `Clubes/Grecia/Asteras Tripolis/Asteras_FS_2021-06-30.pdf` (sourceId `asterastripolis-gr-asteras-fs-2021-06-30`).
+
+Color de marca: #FFDE00 — amarillo (antes null por bicolor azul y amarillo). Decisión de Guido 2026-10-13: un bicolor azul y amarillo no queda en null; se elige el amarillo por el apodo "Kitrinoble" y la camiseta local amarilla (el.wikipedia, infobox: texto #FFDE00).

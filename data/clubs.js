@@ -217,7 +217,7 @@ const clubs = {
   'rubinkazan-ru': { id:'rubinkazan-ru', name:'OOO Football Club Rubin', displayName:'Rubin Kazan', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#AA2704' },
   'spartakmoscow-ru': { id:'spartakmoscow-ru', name:'AO Football Club Spartak-Moscow', displayName:'Spartak Moscow', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
   'zenit-ru': { id:'zenit-ru', name:'AO Football Club Zenit', displayName:'Zenit', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#74DAF7' },
-  'asterastripolis-gr': { id:'asterastripolis-gr', name:'A.G.S. Asteras Tripolis P.A.E.', displayName:'Asteras Tripolis', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  'asterastripolis-gr': { id:'asterastripolis-gr', name:'A.G.S. Asteras Tripolis P.A.E.', displayName:'Asteras Tripolis', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFDE00' },
   'levadiakos-gr': { id:'levadiakos-gr', name:'A.P.O. Levadiakos P.A.E.', displayName:'Levadiakos', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
   'oficrete-gr': { id:'oficrete-gr', name:'Omilos Filathlon Irakleiou P.A.E. OFI 1925', displayName:'OFI Crete', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
   'aekathens-gr': { id:'aekathens-gr', name:'Athlitiki Enosis Konstantinoupoleos P.A.E.', displayName:'AEK Athens', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FCD20F' },
