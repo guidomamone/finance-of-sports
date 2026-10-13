@@ -206,21 +206,18 @@ Object.assign(sources, {
     title:'Demonstrações contábeis individuais e consolidadas do Atlético Mineiro S.A.F., período de 14 de setembro a 31 de dezembro de 2023',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://atletico.com.br/informacoes-relatorios/',
-    note:'PDF oficial (texto nativo), descargado del Portal da Transparência SAF (atletico.com.br/institucional/portal-da-transparencia/portal-da-transparencia-saf/). Se cargó la columna CONTROLADORA (la SAF standalone), no la Consolidado (que suma 3 controladas ajenas al negocio de fútbol: un fundo de investimento imobiliário dueño de la Arena MRV, y 2 SPE de locación/eventos del estadio). Este ejercicio cubre SOLO el período 14/set-31/dic/2023 (~3,5 meses desde la constitución de la SAF), no un año completo — ver comentario de cabecera de data/atleticomineiro-br-data.js. Firmado por Bruno Muzzi como Diretor Presidente. Convertido a USD con PTAX BCB de cierre 31/12/2023 (R$4,8413), el documento no declara un tipo de cambio propio. Transcripción completa en Clubes/Brasil/Atletico Mineiro/demonstracoes-financeiras-saf-2023.md.',
   },
   'atleticomineiro-br-demonstracoes-2024': {
     id:'atleticomineiro-br-demonstracoes-2024', clubId:'atleticomineiro-br',
     title:'Demonstrações contábeis individuais e consolidadas do Atlético Mineiro S.A.F., exercício findo em 31 de dezembro de 2024',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://atletico.com.br/informacoes-relatorios/',
-    note:'PDF oficial (texto nativo). Columna CONTROLADORA. Primer ejercicio con emisión de debêntures reales (60.000 debêntures de R$1.000 nominal cada una, emitidas 25/09/2024, quirografárias, 3,50% a.a., vencimiento 25/09/2027) — sumadas a grossDebt. Firmado por Bruno Muzzi como Diretor Presidente. Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923), ya existente en data/currency-map.js. Transcripción completa en Clubes/Brasil/Atletico Mineiro/demonstracoes-financeiras-saf-2024.md.',
   },
   'atleticomineiro-br-relatorio-integrado-2025': {
     id:'atleticomineiro-br-relatorio-integrado-2025', clubId:'atleticomineiro-br',
     title:'Relatório Integrado 2025 do Atlético Mineiro S.A.F. (demonstrações financeiras + sustentabilidade + governança corporativa)',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://atletico.com.br/informacoes-relatorios/',
-    note:'A diferencia de 2023/2024 (PDFs solo-financieros), 2025 se publicó como "Relatório Integrado", un documento único y más amplio (financiero + sustentabilidad + gobernanza corporativa) que incluye las demonstrações financeiras en su propia sección (Balanço/DRE pág. 122-123, Notas explicativas de detalle pág. 168-171 del PDF). Columna CONTROLADORA. Prejuízo do exercício de R$882,109 M (casi triplica 2024), explicado principalmente por una "Perda com Valor Justo" de R$572,161 M (impairment puntual, no recurrente según la propia Nota 1) y un resultado negativo de equivalencia patrimonial de R$180,320 M. El informe del auditor (BDO) incluye 2 párrafos de Ênfase sin salvedad: transacciones con partes relacionadas (Nota 16, cesión no onerosa de ingresos de boletería/sócio torcedor a la controlada Arena Vencer) y deficiencia de capital circulante neto de R$817,991 M al cierre. Firmado por Pedro Daniel como Diretor Presidente (cambio de gestión respecto de 2023-2024, cuando firmaba Bruno Muzzi). Incluye además una cesión parcial (10%) de derechos económicos de transmisión futuros (Temporadas 2030-2074, R$98,056 M reconocidos en 2025) — ver comentario de cabecera de data/atleticomineiro-br-data.js sobre por qué se cargó como other_income y no como broadcasting. Convertido a USD con PTAX BCB de cierre 31/12/2025 (R$5,5024), ya existente en data/currency-map.js. Transcripción completa en Clubes/Brasil/Atletico Mineiro/relatorio-integrado-saf-2025.md.',
   },
 });
 

@@ -1106,3 +1106,115 @@ Elliott (fondo) subió a Scaroni a la presidencia el 21/7/2018; RedBird (fondo) 
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### acmilan-it-bilanci-relazioni-2023-24
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### acmilan-it-bilanci-relazioni-2022-23
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### acmilan-it-bilanci-relazioni-2017-18
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2017-18.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### acmilan-it-bilanci-relazioni-2021-22
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### acmilan-it-bilanci-relazioni-2019-20
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### acmilan-it-bilanci-relazioni-2024-25
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### acmilan-it-bilanci-relazioni-2020-21
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### acmilan-it-bilancio-gruppo-dic-2008
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2008.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### acmilan-it-bilancio-gruppo-dic-2009
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2009.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### acmilan-it-bilancio-gruppo-dic-2010
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2010.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### acmilan-it-bilancio-gruppo-dic-2011
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2011.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### acmilan-it-bilancio-gruppo-dic-2012
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2012.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### acmilan-it-bilancio-gruppo-dic-2013
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2013.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### acmilan-it-bilanci-relazioni-2018-19
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2018-19.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```

@@ -120,3 +120,21 @@ Transfers ya se carga NETO como revenueLine (player_sales) por política contabl
 del club ("Nettobilanzierung"), no hay ganancia/pérdida por venta de jugadores aparte que
 netear acá.
 ```
+
+## Fuentes
+
+### augsburg-de-konzernabschluss-2024
+
+_note (data/):_
+
+```text
+Extracto del Unternehmensregister alemán (HRB 21812, Amtsgericht Augsburg). Cuentas CONSOLIDADAS del grupo (FCA KGaA + F.C. Augsburg Arena Besitz und Betriebs GmbH, 91,7%). Transcripción completa en Clubes/Alemania/FC Augsburg/konzernabschluss-2023-24.md.
+```
+
+### augsburg-de-konzernabschluss-2025
+
+_note (data/):_
+
+```text
+Extracto del Unternehmensregister alemán (HRB 21812, Amtsgericht Augsburg). Cuentas CONSOLIDADAS del grupo (FCA KGaA + F.C. Augsburg Arena Besitz und Betriebs GmbH, 91,7%). Transcripción completa en Clubes/Alemania/FC Augsburg/konzernabschluss-2024-25.md.
+```

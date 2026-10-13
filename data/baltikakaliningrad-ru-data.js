@@ -139,25 +139,21 @@ Object.assign(sources, {
     id:'baltikakaliningrad-ru-bfo-2022-datos', clubId:'baltikakaliningrad-ru',
     title:'AO Football Club Baltika — отчетность 2022 в ГИР БО (bo.nalog.gov.ru), ejercicio 2022',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Baltika Kaliningrad/bfo-2022-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Baltika Kaliningrad/bfo-2022-datos.md.',
   },
   'baltikakaliningrad-ru-bfo-2023-datos': {
     id:'baltikakaliningrad-ru-bfo-2023-datos', clubId:'baltikakaliningrad-ru',
     title:'AO Football Club Baltika — отчетность 2023 в ГИР БО (bo.nalog.gov.ru), ejercicio 2023',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Baltika Kaliningrad/bfo-2023-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Baltika Kaliningrad/bfo-2023-datos.md.',
   },
   'baltikakaliningrad-ru-bfo-2024-datos': {
     id:'baltikakaliningrad-ru-bfo-2024-datos', clubId:'baltikakaliningrad-ru',
     title:'AO Football Club Baltika — отчетность 2024 в ГИР БО (bo.nalog.gov.ru), ejercicio 2024',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Baltika Kaliningrad/bfo-2024-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Baltika Kaliningrad/bfo-2024-datos.md.',
   },
   'baltikakaliningrad-ru-bfo-2025-datos': {
     id:'baltikakaliningrad-ru-bfo-2025-datos', clubId:'baltikakaliningrad-ru',
     title:'AO Football Club Baltika — отчетность 2025 в ГИР БО (bo.nalog.gov.ru), ejercicio 2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Baltika Kaliningrad/bfo-2025-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Baltika Kaliningrad/bfo-2025-datos.md.',
   },
 });
 

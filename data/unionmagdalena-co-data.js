@@ -68,7 +68,6 @@ Object.assign(sources, {
       id:'unionmagdalena-co-estados-financieros-2018', clubId:'unionmagdalena-co',
       title:'Estados Financieros (Situación Financiera, Resultado Integral, Cambios en el Patrimonio y Flujo de Efectivo), al 31 de diciembre de 2018 y 2017',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 891700992, punto de entrada "Pymes-Individuales"). PDF con texto nativo (pdftotext -layout), incluye el Estado de Situación Financiera y el Estado de Resultado Integral primarios completos, no solo notas — cada nota (24-29) reconcilia exacta contra el total impreso, sin ningún residuo. Se complementa con certificacion-ef-2018.md (PDF escaneado, OCR), que certifica la elaboración bajo NIIF-PYMES y nombra a los firmantes, sin aportar un total propio. SIIS tiene además un ejercicio 2021 sourceado para este club (dictamen del revisor fiscal) pero todavía NO transcripto ni cargado — queda pendiente para una sesión futura. Los cortes 2016/2017/2019/2020 están verificados como vacíos en SIIS (formulario presentado sin paquete de estados financieros adjunto). Transcripciones completas en Clubes/Colombia/Union Magdalena/estados-financieros-2018.md y certificacion-ef-2018.md.',
     },
 });
 

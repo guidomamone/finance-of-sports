@@ -206,6 +206,24 @@ _antes de Mario Celso Petraglia (data/gestiones/br.js):_
 Aclamado el 14/12/2019 para el cuadrienio 2020-2023; la fuente no da la fecha de posse, 01/01/2020 aproximado.
 ```
 
+## Fuentes
+
+### athleticoparanaense-br-demonstracoes-2024
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo), bajado de un mirror en static.poder360.com.br (portal de noticias) porque la URL directa con acentos en static.athletico.com.br dio 404. Auditado por BDO RCS Auditores Independentes, sin salvedades (con un párrafo de "Ênfase" sobre la controlada CAP S/A, titular del Estádio Arena da Baixada, que depende de aportes de la controladora como única fuente de caja). Se cargó la columna CONTROLADORA, no la Consolidado (que suma la CAP S/A). Transcripción completa en "Clubes/Brasil/Athletico Paranaense/demonstracoes-financeiras-2024.md". Firmado por el presidente Mario Celso Petraglia. Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923).
+```
+
+### athleticoparanaense-br-demonstracoes-2025
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo), descargado del sitio oficial athletico.com.br. Auditado por BDO RCS Auditores Independentes. Se cargó la columna CONTROLADORA, no la Consolidado. Transcripción completa en "Clubes/Brasil/Athletico Paranaense/demonstracoes-financeiras-2025.md". Firmado por el presidente Mario Celso Petraglia. 2025 fue el primer ejercicio de DÉFICIT real (R$58,134 millones) desde que hay balances de este club cargados al sitio, explicado principalmente por la caída de "Receita com venda de atletas" (de R$272,268 M en 2024 a R$180,687 M) y un resultado negativo por equivalencia patrimonial de la CAP S/A. Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024). Pendiente: ejercicios 2020-2023 confirmados como existentes en static.athletico.com.br pero con problemas de encoding de acentos en la URL — ver fuentes/Brasil/Athletico Paranaense.md.
+```
+
 ## Otros
 
 ### gestionesByClub['athleticoparanaense-br']

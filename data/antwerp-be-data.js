@@ -55,7 +55,6 @@ Object.assign(sources, {
     id:'antwerp-be-jaarrekening-2025', clubId:'antwerp-be',
     title:'Jaarrekening van Royal Antwerp Football Club NV (RAFC) voor het boekjaar van 1/7/2024 tot 30/6/2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Antwerp/jaarrekening-2025-06-30-individual.md. Nota 6.10 (desglose de Omzet por categoría/mercado geográfico) no fue completada por el club en este filing; solo se completó el sub-detalle de subsidios operativos dentro de "Andere bedrijfsopbrengsten" y el desglose de "Andere bedrijfskosten". Patrimonio neto negativo al cierre (-EUR 10,64 M); el propio Jaarverslag documenta el respaldo del accionista mayoritario y la mejora post-cierre por ventas de jugadores.',
   },
 });
 

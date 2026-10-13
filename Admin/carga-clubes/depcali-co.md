@@ -132,3 +132,13 @@ _antes de Rafael Tinoco Kipps (data/gestiones/co.js):_
 ```text
 Tinoco: la nueva junta directiva se oficializó el 19-20/11/2025 (las fuentes difieren por un día); renunció el 21/4/2026 y asumió Joaquín Losada Fina (fecha de relevo aproximada).
 ```
+
+## Fuentes
+
+### depcali-co-estados-financieros-2025
+
+_note (data/):_
+
+```text
+Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890301160 — el mismo NIT de la histórica Asociación Deportivo Cali). El PDF trae solo las notas (texto nativo, sin tabla de Estado de Resultados primaria aparte ni impuesto de renta corriente como cifra única), así que el campo tax de este ejercicio es un residuo (pretax línea por línea menos el resultado neto confirmado por la vista SIIS) — ver comentario de cabecera de data/depcali-co-data.js. El club convirtió su forma jurídica de Asociación (sin ánimo de lucro) a S.A. en 2024-2025 (IDC Network con 85% de las acciones), lo que explica el cargo grande de impuesto diferido detrás de esa pérdida neta. Transcripción completa en Clubes/Colombia/Deportivo Cali/estados-financieros-2025.md.
+```

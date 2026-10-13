@@ -125,3 +125,13 @@ ya capturado íntegro en player_sales/player_amortisation, ver comentario de cab
 Financijski prihodi(715) - Financijski rashodi(48.722).
 grossDebt = Obveze za revolving kredit - POBA (Nota 8). cash = Žiro računi (Nota 3).
 ```
+
+## Fuentes
+
+### slavenbelupo-hr-financijsko-izvjesce-2025
+
+_note (data/):_
+
+```text
+Balance auditado individual (el club no tiene subsidiarias), preparado según el Pravilnik o licenciranju i financijskoj održivosti klubova (HNS, 11/2025). Auditor: RSM Croatia d.o.o., sin salvedades. Transcripción completa en Clubes/Croacia/Slaven Belupo/financijsko-izvjesce-2025.md.
+```

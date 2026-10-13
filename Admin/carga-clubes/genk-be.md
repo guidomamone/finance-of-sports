@@ -137,3 +137,13 @@ _antes de Peter Croonen (data/gestiones/be.js):_
 ```text
 Croonen: voorzitter hasta junio de 2026; Wikipedia lo ubica 2018-2026 pero el informe del ejercicio 2017 ya lo lista como presidente.
 ```
+
+## Fuentes
+
+### genk-be-jaarrekening-2025
+
+_note (data/):_
+
+```text
+Cuentas INDIVIDUALES de la VZW (no hay consolidado disponible). Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Genk/jaarrekening-2025-06-30-individual.md. Nota 6.9 (desglose de "Andere bedrijfsopbrengsten") no fue completada por el club en este filing.
+```

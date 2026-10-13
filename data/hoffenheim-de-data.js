@@ -89,13 +89,11 @@ Object.assign(sources, {
     id:'hoffenheim-de-konzernabschluss-2024', clubId:'hoffenheim-de',
     title:'Konzernabschluss zum Geschäftsjahr vom 01.07.2023 bis zum 30.06.2024',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Konzernabschluss (cuentas consolidadas: TSG 1899 Hoffenheim Akademie GmbH, achtzehn99 Reha GmbH y la Zweckgesellschaft TSG 1899 Hoffenheim Fußball-Besitzgesellschaft mbH & Co. KG) bajado de unternehmensregister.de. 17 páginas. Transcripción completa en Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2023-24.md. La tabla de GuV de este ejercicio llegó con columnas desalineadas en la conversión PDF→Markdown; se reconstruyó cruzando el Konzernanhang/Lagebericht — ver comentario de cabecera de hoffenheim-de-data.js.',
   },
   'hoffenheim-de-konzernabschluss-2025': {
     id:'hoffenheim-de-konzernabschluss-2025', clubId:'hoffenheim-de',
     title:'Konzernabschluss zum Geschäftsjahr vom 01.07.2024 bis zum 30.06.2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Konzernabschluss (cuentas consolidadas). Bajado de unternehmensregister.de. 18 páginas. Transcripción completa en Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2024-25.md.',
   },
 });
 

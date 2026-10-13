@@ -168,3 +168,13 @@ _antes de Fabien Debecq (data/gestiones/be.js):_
 ```text
 Debecq: nuevo presidente a fines de agosto de 2012 (fundador de QNT); sigue.
 ```
+
+## Fuentes
+
+### charleroi-be-jaarrekening-2025
+
+_note (data/):_
+
+```text
+Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Banque Nationale de Belgique (BNB/NBB), esquema estatutario abreviado (Code des sociétés et des associations). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Charleroi/jaarrekening-2025-06-30-individual.md. La Nota C-cap 6.10 (desglose de Chiffre d'affaires por categoría/mercado) no fue completada por el club en este filing; "Autres produits d'exploitation" (17% del revenue) tampoco tiene desglose disponible.
+```

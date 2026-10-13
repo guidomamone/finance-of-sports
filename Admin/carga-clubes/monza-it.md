@@ -381,3 +381,27 @@ Desde el 8/7/2022 el club no tiene presidente persona: lo controla Fininvest (so
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### monza-it-bilancio-2022
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Monza/Monza-bilancio-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### monza-it-bilancio-2023
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Monza/Monza-bilancio-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### monza-it-bilancio-2024
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Monza/Monza-bilancio-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

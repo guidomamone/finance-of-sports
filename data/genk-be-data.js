@@ -50,7 +50,6 @@ Object.assign(sources, {
     id:'genk-be-jaarrekening-2025', clubId:'genk-be',
     title:'Jaarrekening van K. Racing Club Genk 322 VZW voor het boekjaar van 1/7/2024 tot 30/6/2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cuentas INDIVIDUALES de la VZW (no hay consolidado disponible). Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Genk/jaarrekening-2025-06-30-individual.md. Nota 6.9 (desglose de "Andere bedrijfsopbrengsten") no fue completada por el club en este filing.',
   },
 });
 

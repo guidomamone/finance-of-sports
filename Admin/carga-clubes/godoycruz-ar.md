@@ -123,3 +123,13 @@ _antes de Alejandro Chapini (data/gestiones/ar.js):_
 ```text
 Chapini: elegido por asamblea el 12/12/2021 (Wikipedia fecha el traspaso el 18/12/2021).
 ```
+
+## Fuentes
+
+### godoycruz-ar-estados-contables-2019-20
+
+_note (data/):_
+
+```text
+Estados Contables auditados (legalizados por el CPCE Mendoza el 14/10/2020). Transcripción completa (OCR) en Clubes/Argentina/Godoy Cruz/estados-contables-ejercicio-2019-20.md. La fila "Transporte" del Estado de Recursos y Gastos es un subtotal de página mal etiquetado, no una línea de gasto real — ver comentario de cabecera de godoycruz-ar-data.js. Tipo de cambio aproximado (no declarado por el documento).
+```

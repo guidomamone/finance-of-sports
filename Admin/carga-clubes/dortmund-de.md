@@ -107,3 +107,21 @@ _antes de Hans-Joachim Watzke (data/gestiones/de.js):_
 ```text
 Watzke: Vorsitzender der Geschäftsführung desde 2005 (solo año en la fuente, 1/1 aproximado); dejó el cargo al ser elegido presidente del e.V. el 23/11/2025.
 ```
+
+## Fuentes
+
+### dortmund-de-geschaeftsbericht-2024
+
+_note (data/):_
+
+```text
+Reporte anual oficial de BVB (cotiza en la Bolsa de Frankfurt), en inglés, auditado por EY GmbH & Co. KG. Cifras de este ejercicio tomadas de la columna comparativa "2023/2024" del reporte 2024/2025 (mismo documento fuente, ver comentario de cabecera de dortmund-de-data.js). Transcripción completa en Clubes/Alemania/Borussia Dortmund/geschaeftsbericht-2024-25.md (244 páginas).
+```
+
+### dortmund-de-geschaeftsbericht-2025
+
+_note (data/):_
+
+```text
+Reporte anual oficial de BVB, en inglés, auditado por EY GmbH & Co. KG. Transcripción completa en Clubes/Alemania/Borussia Dortmund/geschaeftsbericht-2024-25.md (244 páginas).
+```

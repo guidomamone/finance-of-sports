@@ -157,6 +157,24 @@ _antes de Daniel Levy (data/gestiones/gb.js):_
 Levy: executive chairman desde febrero de 2001 (día aproximado, no verificado en la fuente citada).
 ```
 
+## Fuentes
+
+### tottenham-gb-group-accounts-2024
+
+_note (data/):_
+
+```text
+PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Tottenham Hotspur/tottenham-hotspur-group-accounts-2023-24.md. Cuentas consolidadas del grupo. No se encontró un tipo de cambio GBP/USD de cierre declarado por el documento para todo el balance (solo exposición cualitativa a moneda extranjera en transferencias de jugadores) — fxRef apunta a FX_CLOSE, todavía sin entrada GBP@2024-06-30 (pendiente, fuera de alcance de esta sesión, mismo gotcha que arsenal-gb-data.js). Duda abierta sobre el desglose interno de "Commercial" (Sponsorship/Merchandising/Other revenue, este último con ingresos no futbolísticos del estadio) sin cifra exacta en la Nota 2 — ver comentario de cabecera de tottenham-gb-data.js.
+```
+
+### tottenham-gb-group-accounts-2025
+
+_note (data/):_
+
+```text
+PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Tottenham Hotspur/tottenham-hotspur-group-accounts-2024-25.md. Cuentas consolidadas del grupo. Mismo gotcha de fx que el ejercicio 2024: fxRef apunta a FX_CLOSE, todavía sin entrada GBP@2025-06-30 (pendiente, fuera de alcance de esta sesión). Post balance sheet: el Executive Chairman Daniel Levy dejó el club el 4/9/2025, después del cierre de este ejercicio.
+```
+
 ## Otros
 
 ### tottenhamGbPasesData

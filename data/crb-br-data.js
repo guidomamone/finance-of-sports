@@ -185,37 +185,31 @@ Object.assign(sources, {
     id:'crb-br-balanco-patrimonial-2020', clubId:'crb-br',
     title:'Clube de Regatas Brasil — balanco-patrimonial-2020 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/CRB/balanco-patrimonial-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'crb-br-balanco-patrimonial-2021': {
     id:'crb-br-balanco-patrimonial-2021', clubId:'crb-br',
     title:'Clube de Regatas Brasil — balanco-patrimonial-2021 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/CRB/balanco-patrimonial-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'crb-br-demonstracoes-contabeis-2024': {
     id:'crb-br-demonstracoes-contabeis-2024', clubId:'crb-br',
     title:'Clube de Regatas Brasil — demonstracoes-contabeis-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/CRB/demonstracoes-contabeis-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'crb-br-demonstracoes-contabeis-2025': {
     id:'crb-br-demonstracoes-contabeis-2025', clubId:'crb-br',
     title:'Clube de Regatas Brasil — demonstracoes-contabeis-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/CRB/demonstracoes-contabeis-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'crb-br-balanco-patrimonial-2022': {
     id:'crb-br-balanco-patrimonial-2022', clubId:'crb-br',
     title:'Clube de Regatas Brasil — balanco-patrimonial-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/CRB/balanco-patrimonial-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'crb-br-balanco-patrimonial-2023': {
     id:'crb-br-balanco-patrimonial-2023', clubId:'crb-br',
     title:'Clube de Regatas Brasil — balanco-patrimonial-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/CRB/balanco-patrimonial-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

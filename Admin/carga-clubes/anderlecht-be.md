@@ -121,3 +121,13 @@ Coucke: dueño y accionista mayoritario desde el 28/3/2018, sigue. Fue voorzitte
 en enero de 2021 (anunciado el 28/5/2020); Vandenhaute fue voorzitter (no ejecutivo desde 1/2023) hasta que puso su cargo a disposición el
 1/9/2025 (aceptado el 5/9/2025); Michael Verschueren es voorzitter desde mediados de noviembre de 2025 (aprobado el 16/10/2025).
 ```
+
+## Fuentes
+
+### anderlecht-be-jaarrekening-2025
+
+_note (data/):_
+
+```text
+Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Anderlecht/jaarrekening-2025-06-30-individual.md. Nota 6.10 (desglose de Omzet) y detalle numérico de "Andere bedrijfsopbrengsten" no fueron completados por el club en este filing.
+```

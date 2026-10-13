@@ -102,3 +102,13 @@ Troškovi za stjecanje registracija RA-5(-0.253899) + Prihodi od raspolaganja(2.
 Financijski prihodi PR-7(0.005573) - Financijski rashodi RA-7(-0.019059).
 POREZNI PRIHODI (RASHODI) PD.
 ```
+
+## Fuentes
+
+### varazdin-hr-financijsko-izvjesce-2025
+
+_note (data/):_
+
+```text
+Único ejercicio disponible para este club. Durante 2025 el club se transformó de asociación deportiva ("športska udruga") a sociedad anónima deportiva ("sportsko dioničko društvo", completado 2/4/2025). Auditor: DTTC Consulting i revizija d.o.o. Varaždin, opinión SIN salvedades. El informe de auditoría reemplaza una versión anterior del 27/3/2026 (se ampliaron notas, mismas cifras). PDF con capa de texto nativa, sin necesidad de OCR. Transcripción completa en Clubes/Croacia/Varaždin/financijsko-izvjesce-2025.md (y revizorsko-izvjesce-2025.md, mismo contenido financiero + informe de auditoría).
+```

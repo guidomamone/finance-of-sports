@@ -360,3 +360,43 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### dynamomakhachkala-ru-bfo-2022-datos
+
+_note (data/):_
+
+```text
+Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2022-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Dynamo Makhachkala/bfo-2022-datos.md.
+```
+
+### dynamomakhachkala-ru-bfo-2023-datos
+
+_note (data/):_
+
+```text
+Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2023-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Dynamo Makhachkala/bfo-2023-datos.md.
+```
+
+### dynamomakhachkala-ru-bfo-2024-datos
+
+_note (data/):_
+
+```text
+Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2024-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Dynamo Makhachkala/bfo-2024-datos.md.
+```
+
+### dynamomakhachkala-ru-bfo-2025-datos
+
+_note (data/):_
+
+```text
+Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2025-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Dynamo Makhachkala/bfo-2025-datos.md.
+```
+
+### dynamomakhachkala-ru-bfo-2021-datos
+
+_note (data/):_
+
+```text
+Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2021-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Más el formulario 6 (uso de fondos con fin específico: aportes y gastos del programa, sin el 6240; 6100 + 6200 − 6300 = 6400); resultado = 2400 + (6200 − 6240) − 6300. Transcripción legible: Clubes/Rusia/Dynamo Makhachkala/bfo-2021-datos.md.
+```

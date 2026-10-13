@@ -1078,3 +1078,75 @@ Hasta: el club anunció su salida el 25/11/2025 (Wikipedia en inglés). Quién l
 ```text
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (agregado por la Versión 379: el esqueleto del alta no lo traía).
 ```
+
+### fortalezaceif-co-estados-financieros-2017
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fortalezaceif-co-estados-financieros-2018
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fortalezaceif-co-estados-financieros-2019
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fortalezaceif-co-estados-financieros-2020
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fortalezaceif-co-estados-financieros-2023
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fortalezaceif-co-estados-financieros-2024
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fortalezaceif-co-estados-financieros-2025
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fortalezaceif-co-estados-financieros-2021
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fortalezaceif-co-estados-financieros-2022
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

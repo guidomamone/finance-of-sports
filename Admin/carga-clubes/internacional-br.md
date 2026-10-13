@@ -275,6 +275,24 @@ _antes de Alessandro Barcellos (data/gestiones/br.js):_
 Asumio el 01/01/2021; reelecto el 09/12/2023 para 2024-2026 (una sola gestion continua).
 ```
 
+## Fuentes
+
+### internacional-br-demonstracoes-2024
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo, sin OCR), descargado del Portal da Transparência del club (URL estática, ver fuentes/Brasil/Internacional.md). Incluye Relatório da Administração + Relatório do auditor independente + Balanços patrimoniais + Demonstrações de resultados + Notas explicativas. Ejercicio de DÉFICIT real (R$34,499 M), atribuido por la propia Memoria a las enchentes que inundaron Rio Grande do Sul en mayo de 2024 (el Beira-Rio estuvo cerrado 70 días). Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Internacional/relatorio-anual-2024.md.
+```
+
+### internacional-br-demonstracoes-2025
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo, sin OCR), mismo canal y estructura que el de 2024 (ver esa entrada). Superávit real de R$8,972 M, con crecimiento fuerte en Cotas de TV, Publicidade y Negociação de atletas frente a 2024. Convertido a USD con PTAX BCB de cierre 31/12/2025 (R$5,5024). Transcripción completa en Clubes/Brasil/Internacional/relatorio-anual-2025.md.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

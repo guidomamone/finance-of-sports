@@ -216,21 +216,18 @@ Object.assign(sources, {
       title:'Demonstrações Financeiras da SAF Botafogo, Exercícios Findos em 31 de Dezembro de 2023 e de 2022',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://botafogo.com/download/transparencia/balanco',
-      note:'PDF oficial (texto nativo), descargado del portal de transparencia oficial del club. Se cargó la columna CONTROLADORA. Transcripción completa en Clubes/Brasil/Botafogo/demonstracoes-financeiras-2023.md, cuya transcripción OCR tenía varios dígitos transpuestos/de más que no reconciliaban contra los subtotales impresos — los valores cargados fueron re-verificados contra las imágenes del PDF (páginas 25, 44, 49, 52, 55-58) antes de usarse, ver comentario de cabecera de botafogo-data.js. 2023 fue un ejercicio de DÉFICIT real (Prejuízo de R$101,095 mil), que incluye una ganancia no recurrente de R$165,915 mil por la venta de 20% de los derechos comerciales del Brasileirão a la Liga Forte União. Convertido a USD con el PTAX BCB de cierre 31/12/2023 (R$4,8413).',
     },
   'botafogo-demonstracoes-2024': {
       id:'botafogo-demonstracoes-2024', clubId:'botafogo',
       title:'Demonstrações Financeiras da SAF Botafogo, Exercícios Findos em 31 de Dezembro de 2024 e de 2023',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://botafogo.com/download/transparencia/balanco',
-      note:'PDF oficial (texto nativo), descargado del portal de transparencia oficial del club. Se cargó la columna CONTROLADORA (la SAF standalone), no la Consolidado (incluye una subsidiaria menor). Transcripción completa en Clubes/Brasil/Botafogo/demonstracoes-financeiras-2024.md. 2024 fue un ejercicio de DÉFICIT real (Prejuízo de R$299,983 mil), pese al título de Copa Libertadores y Campeonato Brasileiro de ese año — el propio balance lo atribuye a variación cambial y costos financieros de deuda en moneda extranjera (Nota 25). Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923), investigado externamente. El balance de 2025 (demonstracoes-financeiras-2025.pdf) reexpresa este mismo ejercicio con un Prejuízo distinto (R$266,817 mil, diferencia de R$33,167 mil) — ver comentario de cabecera de botafogo-data.js, no se tocó esta entrada. Existe también un balance de la associação (demonstracoes-financeiras-associacao-2023.pdf, entidad social separada, complementaria, no cargada).',
     },
   'botafogo-demonstracoes-2025': {
       id:'botafogo-demonstracoes-2025', clubId:'botafogo',
       title:'Demonstrações Financeiras da SAF Botafogo, Exercícios Findos em 31 de Dezembro de 2025 e de 2024 (Reapresentado)',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://botafogo.com/download/transparencia/balanco',
-      note:'PDF oficial (texto nativo), descargado del portal de transparencia oficial del club. Se cargó la columna CONTROLADORA. Transcripción completa en Clubes/Brasil/Botafogo/demonstracoes-financeiras-2025.md. 2025 fue un ejercicio de DÉFICIT real (Prejuízo de R$290,898 mil), con una porción no corriente de deuda financiera por primera vez desde que se carga este club (R$50,648 mil). El documento reexpresa 2024 con un Prejuízo de R$266,817 mil, distinto de los R$299,983 mil ya cargados como `botafogoFiscalYearMeta[2024]` (fuera de alcance de esta sesión, ver comentario de cabecera de botafogo-data.js). Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024).',
     },
 });
 

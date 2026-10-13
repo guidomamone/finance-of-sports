@@ -75,7 +75,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/01630402/filing-history',
     publicNote:'Cuentas individuales auditadas (Azets Audit Services, sin salvedades) de Nottingham Forest Football Club Limited, depositadas en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2024 (temporada 2023/24, 2ª temporada de retorno a la Premier League).',
-    note:'PDF con texto nativo, transcripción completa en Clubes/Inglaterra/Nottingham Forest/forest-full-accounts-2023-24.md. Cuentas individuales de la compañía, no consolidadas con Nottingham Forest Women\'s FC Limited ni Nottingham Forest Netball Club Limited. No declara tipo de cambio propio (fxRef apunta a FX_CLOSE).',
   },
   'nottinghamforest-gb-full-accounts-2025': {
     id:'nottinghamforest-gb-full-accounts-2025', clubId:'nottinghamforest-gb',
@@ -83,7 +82,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/01630402/filing-history',
     publicNote:'Cuentas individuales auditadas (Azets Audit Services, sin salvedades) de Nottingham Forest Football Club Limited, depositadas en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2025 (temporada 2024/25).',
-    note:'PDF con texto nativo, transcripción completa en Clubes/Inglaterra/Nottingham Forest/forest-full-accounts-2024-25.md. Mismo criterio de categorización que el ejercicio 2024.',
   },
 });
 

@@ -108,13 +108,11 @@ Object.assign(sources, {
     id:'eintrachtfrankfurt-de-konzernabschluss-2024', clubId:'eintrachtfrankfurt-de',
     title:'Konzernabschluss zum Geschäftsjahr vom 01.07.2023 bis zum 30.06.2024 (Unternehmensregister)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Descargado vía unternehmensregister.de. Extracto de 34 págs.: Konzernlagebericht + Konzernbilanz + Konzern-GuV + Konzernanhang. Consolidado (Konzern) — es el total oficial de este club, no existe un balance individual paralelo. Transcripción completa en Clubes/Alemania/Eintracht Frankfurt/konzernabschluss-2023-24.md.',
   },
   'eintrachtfrankfurt-de-konzernabschluss-2025': {
     id:'eintrachtfrankfurt-de-konzernabschluss-2025', clubId:'eintrachtfrankfurt-de',
     title:'Konzernabschluss zum Geschäftsjahr vom 01.07.2024 bis zum 30.06.2025 (Unternehmensregister)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Descargado vía unternehmensregister.de. Extracto de 34 págs., mismo formato que el ejercicio 2023/24. Primer año con Jahresfehlbetrag (pérdida) desde que se carga este club. Transcripción completa en Clubes/Alemania/Eintracht Frankfurt/konzernabschluss-2024-25.md.',
   },
 });
 

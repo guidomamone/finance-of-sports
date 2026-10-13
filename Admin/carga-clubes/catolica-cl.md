@@ -1136,6 +1136,136 @@ tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento siguiente): vocabulario: ninguna fila de deuda financiera (balance completo) = 0; cash escalón 0 (compuerta: documento siguiente): "Efectivo y Equivalentes al Efectivo" pág. 4
 ```
 
+## Fuentes
+
+### catolica-cl-estados-financieros-2024
+
+_note (data/):_
+
+```text
+Descargado de cruzados.cl/inversionistas/ (RUT 76.072.469-6). Balance auditado consolidado completo (Estado de Situación Financiera, Estado de Resultados por Función, Estado de Resultados Integrales, Estado de Cambios en el Patrimonio, Estado de Flujo de Efectivo y notas 1 a 30), texto nativo. Transcripción completa en Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2024.md.
+```
+
+### catolica-cl-estados-financieros-2023
+
+_note (data/):_
+
+```text
+Descargado de cruzados.cl/inversionistas/ (RUT 76.072.469-6). Mismo formato que el ejercicio 2024. Transcripción completa en Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2023.md.
+```
+
+### catolica-cl-estados-financieros-2022
+
+_note (data/):_
+
+```text
+Descargado de cruzados.cl/inversionistas/ (RUT 76.072.469-6). Mismo formato que los ejercicios 2023/2024. Transcripción completa en Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2022.md.
+```
+
+### catolica-cl-estados-financieros-2021
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-01) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### catolica-cl-estados-financieros-2025
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-01) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### catolica-cl-estados-financieros-2020
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-01) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### catolica-cl-estados-financieros-2019
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-01) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### catolica-cl-estados-financieros-2018
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-01) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### catolica-cl-estados-financieros-2010
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2010.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### catolica-cl-estados-financieros-2011
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2011.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### catolica-cl-estados-financieros-2012
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2012.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### catolica-cl-estados-financieros-2013
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2013.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### catolica-cl-estados-financieros-2014
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### catolica-cl-estados-financieros-2015
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### catolica-cl-estados-financieros-2016
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### catolica-cl-estados-financieros-2017
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
 ## Otros
 
 ### catolicaPasesData

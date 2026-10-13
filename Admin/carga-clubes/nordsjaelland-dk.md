@@ -122,3 +122,13 @@ _antes de Allan K. Pedersen (data/gestiones/dk.js):_
 ```text
 Right to Dream es el dueño (una organizacion, no una persona): se carga el formand del A/S.
 ```
+
+## Fuentes
+
+### nordsjaelland-dk-aarsrapport-2024
+
+_note (data/):_
+
+```text
+Entidad única (CVR 24 25 77 03). Auditor: Grant Thornton, Godkendt Revisionspartnerselskab, sin salvedades. El estado de resultados usa la exención del § 32 de la Årsregnskabsloven (solo reporta "Bruttofortjeneste"/Gross profit neto, sin desglose de ingresos por rubro ni de costos externos) — todo el revenue se cargó como una única línea sin desglosar. Transcripción completa en Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2024-12-31.md.
+```

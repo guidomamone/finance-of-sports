@@ -128,6 +128,24 @@ _antes de Delfí Geli (data/gestiones/es.js):_
 Geli: presidente desde 2015 (solo el año; dia 01). City Football Group y Girona Football Group (Pere Guardiola) son los accionistas: no se cargan como dueño.
 ```
 
+## Fuentes
+
+### girona-es-cuentas-anuales-2019-20
+
+_note (data/):_
+
+```text
+PDF oficial, escaneo con ruido de OCR en la transcripción. Un sub-ítem de "Otros gastos de explotación" se reconstruyó por residuo contra el subtotal impreso (probable dígito mal leído, ver comentario de cabecera de data/girona-es-data.js). Bajado vía statics-maker.llt-services.com/gir/ (mismo backend de CMS que otros clubes de LaLiga). Transcripción completa en Clubes/España/Girona FC/cuentas-anuales-2019-2020.md.
+```
+
+### girona-es-informe-auditoria-cuentas-anuales-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial, escaneo con ruido de OCR en la transcripción. "Amortización del inmovilizado" se corrigió por residuo contra RESULTADO DE EXPLOTACIÓN impreso (diferencia de exactamente EUR 3.000.000, ver comentario de cabecera de data/girona-es-data.js). Bajado vía statics-maker.llt-services.com/gir/. Transcripción completa en Clubes/España/Girona FC/informe-auditoria-cuentas-anuales-2024-2025.md.
+```
+
 ## Otros
 
 ### memberCountByClub['girona-es']

@@ -76,7 +76,6 @@ Object.assign(sources, {
     id:'osijek-hr-financijsko-izvjesce-2025', clubId:'osijek-hr',
     title:'Revidirani godišnji kombinirani financijski izvještaji za posebne namjene za 2025. godinu',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Balance auditado COMBINADO (NK Osijek s.d.d. + FM 20 d.o.o. + Škola nogometa NK Osijek, coproprietarios del estadio Opus Arena), preparado según el Pravilnik o licenciranju klubova de la HNS (11/2025). Auditor: Werkmann d.o.o., sin salvedades. El PDF es un escaneo sin capa de texto (transcripción OCR); las tablas de Rashodi y Bilanca del .md quedaron desalineadas por el OCR y se re-verificaron número por número contra imágenes del PDF antes de cargar. Transcripción completa en Clubes/Croacia/Osijek/financijsko-izvjesce-2025.md.',
   },
 });
 

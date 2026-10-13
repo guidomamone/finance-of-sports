@@ -157,6 +157,16 @@ _antes de Enrique Camacho Matamoros (data/gestiones/co.js):_
 Camacho: presidente desde 2014, tras la renuncia de Juan Carlos Saldarriaga (Noticias Caracol; solo el año: dia 01). Sigue en 2026. El accionista mayoritario es un fondo (Amber Capital, vía Blas de Lezo Inversiones, 86,61%): no es una persona, no se carga como dueño.
 ```
 
+## Fuentes
+
+### millonarios-co-estados-financieros-2025
+
+_note (data/):_
+
+```text
+Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 900430878). PDF escaneado sin capa de texto, transcripto vía OCR (Tesseract). Cifras del documento expresadas en MILES de pesos colombianos (no pesos completos, a diferencia de Envigado) — reconvertido a millones para el sitio. Sin Estado de Resultado Integral primario consolidado, solo notas (22 a 28) — la reconciliación contra "Resultado del ejercicio" (Nota 20, Patrimonio) cerró exacta de todas formas. TRM de cierre declarada por el propio documento: $3.757,50 (31/12/2025). Transcripción completa en Clubes/Colombia/Millonarios/estados-financieros-2025.md.
+```
+
 ## Otros
 
 ### gestionesByClub['millonarios-co']

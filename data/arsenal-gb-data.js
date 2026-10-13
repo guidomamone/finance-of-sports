@@ -78,7 +78,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/04250459/filing-history',
     publicNote:'Balance consolidado auditado (Deloitte LLP, sin salvedades) de Arsenal Holdings Limited, la sociedad matriz del grupo, depositado en Companies House (Reino Unido). Ejercicio cerrado el 31 de mayo de 2024 (temporada 2023/24).',
-    note:'PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2023-24.md. Cuentas consolidadas del grupo (no las individuales de The Arsenal Football Club Limited, n° 00109244). No se encontró un tipo de cambio GBP/USD propio declarado por el documento (Nota 17/18 solo cuantifica partidas puntuales en EUR/USD/AUD, no un TC de cierre para todo el balance) — fxRef apunta a FX_CLOSE, todavía sin entrada GBP@2024-05-31 (pendiente, fuera de alcance de esta sesión).',
   },
   'arsenal-gb-group-accounts-2025': {
     id:'arsenal-gb-group-accounts-2025', clubId:'arsenal-gb',
@@ -86,7 +85,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/04250459/filing-history',
     publicNote:'Balance consolidado auditado (Deloitte LLP, sin salvedades) de Arsenal Holdings Limited, la sociedad matriz del grupo, depositado en Companies House (Reino Unido). Ejercicio cerrado el 31 de mayo de 2025 (temporada 2024/25).',
-    note:'PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2024-25.md. Cuentas consolidadas del grupo. Mismo gotcha de fx que el ejercicio 2024: fxRef apunta a FX_CLOSE, todavía sin entrada GBP@2025-05-31 (pendiente, fuera de alcance de esta sesión).',
   },
 });
 

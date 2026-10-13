@@ -56,7 +56,6 @@ Object.assign(sources, {
     id:'westerlo-be-jaarrekening-2025', clubId:'westerlo-be',
     title:'Jaarrekening van KVC Westerlo BV voor het boekjaar van 1/7/2024 tot 30/6/2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Westerlo/jaarrekening-2025-06-30-individual.md. Nota 6.10 (desglose de Omzet y de subsidios dentro de Andere bedrijfsopbrengsten) no fue completada por el club en este filing. Patrimonio neto negativo al cierre (-EUR 1,85 M), mejorado desde -EUR 3,59 M el ejercicio anterior vía un aumento de capital (Inbreng de EUR 56,1 M a EUR 69,6 M).',
   },
 });
 

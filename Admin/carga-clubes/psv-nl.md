@@ -144,3 +144,21 @@ _antes de Marcel Brands (data/gestiones/nl.js):_
 ```text
 Brands: anunciado el 14/2/2022 para entrar "después de esta temporada"; 1/7/2022 aproximado.
 ```
+
+## Fuentes
+
+### psv-nl-jaarverslag-2024
+
+_note (data/):_
+
+```text
+Jaarverslag oficial consolidado de PSV N.V., descargado del canal público de la KNVB (licencia F.04). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/PSV/jaarverslag-2023-24.md.
+```
+
+### psv-nl-jaarverslag-2025
+
+_note (data/):_
+
+```text
+Jaarverslag oficial consolidado de PSV N.V., descargado del canal público de la KNVB (licencia F.04). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/PSV/jaarverslag-2024-25.md.
+```

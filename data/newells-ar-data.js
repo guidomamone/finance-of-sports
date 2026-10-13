@@ -95,7 +95,6 @@ Object.assign(sources, {
       id:'newells-ar-memoria-y-balance-2018-2019', clubId:'newells-ar',
       title:'Memoria y Balance General, Ejercicio 1°/7/2018 al 30/6/2019',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (98 páginas, capa de texto nativa, sin OCR). Recuperado vía Wayback Machine (la URL oficial viva, newellsoldboys.com.ar/uploadsarchivos/memoria_y_balance_nob.pdf, devuelve 404 hoy — el club rehízo el sitio a WordPress). SUPERÁVIT FINAL real: $208.963.563 ARS (Ordinario $205.980.660 + Extraordinario $2.982.903). Anexo V/VI de Recursos y Anexo VII/VIII de Gastos con desglose completo por rubro, verificados fila por fila contra sus propios subtotales impresos antes de cargar. Convertido a USD con $41,50 (Anexo I, lado Activo/Créditos, comprador — el mismo documento usa $43,50 vendedor del lado Pasivo). Ver data/newells-ar-data.js.',
     },
 });
 

@@ -140,6 +140,16 @@ _antes de Alberto Jerônimo Guerra Neto (data/gestiones/br.js):_
 Electo en noviembre de 2022; la fuente dice "desde enero de 2023", dia 01/01/2023 aproximado. Roman asume el 01/01/2026.
 ```
 
+## Fuentes
+
+### gremio-demonstracoes-2023-2024
+
+_note (data/):_
+
+```text
+PDF oficial (42 páginas, texto nativo), auditado por Baker Tilly Brasil RS Auditores Independentes (opinião sem ressalvas), firmado marzo de 2025, descargado directo de gremio.net/documentos/. Transcripción completa en Clubes/Brasil/Gremio/demonstracoes-contabeis-2023-2024.md. Solo se cargó el ejercicio 2024 (la columna 2023 del mismo documento está "Reapresentada" tras un cambio de norma contable, no comparable 1:1 con un balance 2023 propio). Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923), investigado externamente — el documento no declara tipo de cambio propio.
+```
+
 ## Otros
 
 ### Presupuesto al lado del balance (gremioPresupuestoOverlayByYear), en general

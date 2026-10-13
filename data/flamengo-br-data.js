@@ -150,14 +150,12 @@ Object.assign(sources, {
     title:'Relatório Anual com as Demonstrações Financeiras, Exercício Findo em 31 de Dezembro de 2024',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://images.flamengo.com.br/',
-    note:'PDF oficial (texto nativo), descargado del bucket de assets del sitio oficial (ver fuentes/Brasil/Flamengo.md para cómo se ubicó — la sección de transparencia del sitio es una SPA que no permite navegar directo, se ubicó vía la nota de prensa del club anunciando la publicación). Incluye Relatório de Gestão + Demonstrações Financeiras + parecer del auditor independiente + parecer do Conselho Fiscal. Se cargó la columna CONTROLADORA (standalone), no la Consolidado (incluye la Fla-Flu Serviços S.A.). 2024 fue un ejercicio de DÉFICIT real (R$734 mil), el segundo déficit del club desde 2014 según su propio Relatório de Gestão, atribuido a variación cambial y menor resultado de equivalencia patrimonial. Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Flamengo/relatorio-anual-demonstracoes-financeiras-2024.md.',
   },
   'flamengo-br-demonstracoes-2025': {
     id:'flamengo-br-demonstracoes-2025', clubId:'flamengo-br',
     title:'Relatório Anual com as Demonstrações Financeiras, Exercício Findo em 31 de Dezembro de 2025',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://images.flamengo.com.br/',
-    note:'PDF oficial (texto nativo), mismo canal y estructura que el de 2024 (ver esa entrada). Superávit real de R$335,665 M, impulsado por un año grande de venta de jugadores (R$503,811 M en Vendas de direitos federativos: Gerson, Wesley, Carlos Alcaraz, Matheus Gonçalves, Fabrício Bruno, entre otros) y un resultado financiero neto positivo. Convertido a USD con PTAX BCB de cierre 31/12/2025 (R$5,5024). Transcripción completa en Clubes/Brasil/Flamengo/relatorio-anual-demonstracoes-financeiras-2025.md.',
   },
 });
 

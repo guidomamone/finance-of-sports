@@ -79,7 +79,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/01989823/filing-history',
     publicNote:'Cuentas individuales auditadas de Wolverhampton Wanderers Football Club (1986) Limited, depositadas en Companies House (Reino Unido). Ejercicio cerrado el 31 de mayo de 2024 (temporada 2023/24), 12 meses.',
-    note:'PDF con texto nativo, transcripción completa en Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2023-24.md. Propiedad de Fosun International Limited (vía W.W. (1990) Limited). No declara tipo de cambio propio (fxRef apunta a FX_CLOSE).',
   },
   'wolves-gb-full-accounts-2025': {
     id:'wolves-gb-full-accounts-2025', clubId:'wolves-gb',
@@ -87,7 +86,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/01989823/filing-history',
     publicNote:'Cuentas individuales auditadas de Wolverhampton Wanderers Football Club (1986) Limited, depositadas en Companies House (Reino Unido). PERÍODO DE TRANSICIÓN DE 13 MESES (1° de junio de 2024 a 30 de junio de 2025) por un cambio de fecha de cierre de ejercicio de 31/5 a 30/6 — NO es un ejercicio normal de 12 meses, ver aviso completo en el comentario de cabecera de data/wolves-gb-data.js.',
-    note:'PDF con texto nativo, transcripción completa en Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2024-25.md. Cash at bank derivado por reconciliación de subtotales (OCR ambiguo, ver comentario de cabecera). fxRef usa GBP@2025-06-30, cotización exacta del día de cierre real.',
   },
 });
 

@@ -56,7 +56,6 @@ Object.assign(sources, {
       title:'Cuentas Anuales y Auditoría 2024-25 (Consolidadas), Ejercicio 1/7/2024 a 30/6/2025',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://www.fcbarcelona.es/es/club/transparencia/informacion-legal-institucional-y-economica',
-      note:'PDF oficial de 105 páginas. Texto nativo en casi todo el documento, PERO las páginas del balance y la cuenta de pérdidas y ganancias tienen el ToUnicode ofuscado (ver comentario largo arriba y el .md de transcripción) — se leyeron renderizando esas 2 páginas a imagen. Cuentas CONSOLIDADAS (Grupo FC Barcelona). Transcripción completa de la cuenta de resultados en Clubes/España/FC Barcelona/cuentas-anuales-y-auditoria-2024-25-cuenta-resultados.md.',
     },
 });
 

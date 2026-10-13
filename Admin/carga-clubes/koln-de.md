@@ -206,6 +206,24 @@ Leistungen+Gesellschafter+sonstige), EXCLUYE Rückstellungen/Rechnungsabgrenzung
 Kassenbestand und Guthaben bei Kreditinstituten.
 ```
 
+## Fuentes
+
+### koln-de-jahresabschluss-2024
+
+_note (data/):_
+
+```text
+Jahresabschluss INDIVIDUAL de la 1. FC Köln GmbH & Co. KGaA (HRB 37030, Amtsgericht Köln), no consolidado — no hay Konzernabschluss separado para este club en los años recientes. Descargado vía unternehmensregister.de. PDF con capa de texto nativa. Transcripción completa en Clubes/Alemania/1. FC Köln/jahresabschluss-2023-24.md.
+```
+
+### koln-de-jahresabschluss-2025
+
+_note (data/):_
+
+```text
+Jahresabschluss INDIVIDUAL de la 1. FC Köln GmbH & Co. KGaA (HRB 37030, Amtsgericht Köln), no consolidado. Descargado vía unternehmensregister.de. PDF con capa de texto nativa. Transcripción completa en Clubes/Alemania/1. FC Köln/jahresabschluss-2024-25.md.
+```
+
 ## Otros
 
 ### gestionesByClub['koln-de']

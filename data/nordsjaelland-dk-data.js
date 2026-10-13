@@ -47,7 +47,6 @@ Object.assign(sources, {
     id:'nordsjaelland-dk-aarsrapport-2024', clubId:'nordsjaelland-dk',
     title:'FC Nordsjælland A/S — Årsrapport 2024 / Annual report 2024 (01.01.2024 - 31.12.2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Entidad única (CVR 24 25 77 03). Auditor: Grant Thornton, Godkendt Revisionspartnerselskab, sin salvedades. El estado de resultados usa la exención del § 32 de la Årsregnskabsloven (solo reporta "Bruttofortjeneste"/Gross profit neto, sin desglose de ingresos por rubro ni de costos externos) — todo el revenue se cargó como una única línea sin desglosar. Transcripción completa en Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2024-12-31.md.',
   },
 });
 

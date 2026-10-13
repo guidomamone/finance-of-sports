@@ -81,3 +81,21 @@ Suma Turnover (5 líneas) = 181.559 exacto. Total = 218.918 = officialTotalReven
 ```text
 Ejercicio 2024. Fuente: Note 3 + Note 4 + Note 9. Suma = -251.022 = officialTotalExpenses.
 ```
+
+## Fuentes
+
+### fulham-gb-full-accounts-2024
+
+_note (data/):_
+
+```text
+Cuentas de la sociedad individual (no consolida, no tiene subsidiarias), depositadas en Companies House (Reino Unido). El CAPEX y financiamiento del Riverside Stand viven en Fulham Stadium Limited, compañía hermana no incluida acá. Transcripción completa en Clubes/Inglaterra/Fulham/fulham-full-accounts-2023-24.md. Ver comentario de cabecera de data/fulham-gb-data.js.
+```
+
+### fulham-gb-full-accounts-2025
+
+_note (data/):_
+
+```text
+Transcripción completa en Clubes/Inglaterra/Fulham/fulham-full-accounts-2024-25.md. "Gate Receipts" de este ejercicio tiene un valor forzado por el total (ver duda de OCR en Admin/dudas-por-club.md).
+```

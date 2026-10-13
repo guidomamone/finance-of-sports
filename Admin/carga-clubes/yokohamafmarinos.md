@@ -25,3 +25,13 @@ Abreviado "横浜FM" en las tablas del club_doc-2025.pdf.
 Millones de JPY, Ejercicio 2025. Página 8: 横浜FM 2025年度 = 7.751 (+418 vs. 2024).
 Página 9 (Sponsor): 2.871. Página 10 (Gate): 1.530.
 ```
+
+## Fuentes
+
+### yokohamafmarinos-jleague-doc-2025
+
+_note (data/):_
+
+```text
+Documento publicado por la propia J.League (no por Yokohama FM directamente), como parte de su Club Licensing System — cubre los 60 clubes de J1/J2/J3. Copia local en Clubes/Japón/_J.League (todos los clubes)/club_doc-2025.pdf (carpeta compartida por los 10 clubes de Japón cargados). Ingreso Total/Sponsor/Gate son cifras reales por club (págs. 8-10); el resto de categorías de ingreso y TODOS los costos solo se publican a nivel de división J1/J2/J3, no por club individual (ver comentario completo en data/kashimaantlers-data.js). fx:150 JPY/USD es placeholder de referencia, no declarado por el documento.
+```

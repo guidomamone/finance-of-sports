@@ -369,3 +369,27 @@ Zangrillo: presidente desde el closing de 777 Partners (15/11/2021); lo reemplaz
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### genoa-it-bilancio-31-12-2022-individual
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### genoa-it-bilancio-30-06-2025-individual
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### genoa-it-bilancio-31-12-2023-individual
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

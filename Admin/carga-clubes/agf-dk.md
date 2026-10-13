@@ -159,3 +159,13 @@ _antes de Lars Fournais (data/gestiones/dk.js):_
 ```text
 Fournais: formand en todos los informes 2014 a 2021 (consejero desde 24/10/2008); en julio de 2025 sigue figurando como formand (inderes.dk, comunicado de AGF), por eso hasta null. Primer informe: 2013/14.
 ```
+
+## Fuentes
+
+### agf-aarsrapport-2020-21
+
+_note (data/):_
+
+```text
+Cifras del Koncern (grupo consolidado: AGF A/S + AGF Esport ApS 57% + Atletion A/S/Ceres Park & Arena 100% + AGF Kvindefodbold ApS 80% + Stadion Fysioterapi ApS), no del Moderselskab (columna paralela que el documento también publica). No existe una entidad "solo fútbol" separada para AGF, a diferencia de F.C. København. Sin salvedades de auditoría. Transcripción completa en Clubes/Dinamarca/AGF/aarsrapport-2021-06-30.md.
+```

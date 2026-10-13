@@ -102,3 +102,21 @@ _antes de Steve Parish (data/gestiones/gb.js):_
 ```text
 El club sale de la administración en junio de 2010 (día 01 aproximado). Parish es chairman y cabeza del consorcio; Textor (2021-2025) y Blitzer/Harris fueron socios.
 ```
+
+## Fuentes
+
+### crystalpalace-gb-group-accounts-2024
+
+_note (data/):_
+
+```text
+Cuentas consolidadas del grupo, auditadas por RSM UK Audit LLP, depositadas en Companies House (Reino Unido). Transcripción completa en Clubes/Inglaterra/Crystal Palace/cpfc2010-group-accounts-2023-24.md. Ver comentario de cabecera de data/crystalpalace-gb-data.js.
+```
+
+### crystalpalace-gb-group-accounts-2025
+
+_note (data/):_
+
+```text
+Transcripción completa en Clubes/Inglaterra/Crystal Palace/cpfc2010-group-accounts-2024-25.md. La venta de la participación mayoritaria de John Textor (Eagle Football Holdings) a Woody Johnson completó el 24/7/2025, después del cierre de este ejercicio.
+```

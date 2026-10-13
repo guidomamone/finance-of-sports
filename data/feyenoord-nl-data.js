@@ -88,13 +88,11 @@ Object.assign(sources, {
     id:'feyenoord-nl-jaarverslag-2024', clubId:'feyenoord-nl',
     title:'Jaarverslag Feyenoord Rotterdam N.V. boekjaar 2023-2024 (1 juli 2023 - 30 juni 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jaarverslag oficial consolidado de Feyenoord Rotterdam N.V., descargado del canal público de la KNVB (licencia F.04). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/Feyenoord/jaarverslag-2023-24.md.',
   },
   'feyenoord-nl-jaarverslag-2025': {
     id:'feyenoord-nl-jaarverslag-2025', clubId:'feyenoord-nl',
     title:'Jaarverslag Feyenoord Rotterdam N.V. boekjaar 2024-2025 (1 juli 2024 - 30 juni 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jaarverslag oficial consolidado de Feyenoord Rotterdam N.V., descargado del canal público de la KNVB (licencia F.04). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/Feyenoord/jaarverslag-2024-25.md.',
   },
 });
 

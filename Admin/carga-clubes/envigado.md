@@ -127,6 +127,16 @@ Financiera, pág. 9 — no aparece una línea de obligaciones financieras no cor
 Efectivo y equivalentes al efectivo (Nota 6, pág. 9).
 ```
 
+## Fuentes
+
+### envigado-estados-financieros-2025
+
+_note (data/):_
+
+```text
+Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 900.470.848). PDF escaneado sin capa de texto, transcripto vía OCR (Tesseract). Incluye el Estado de Resultado Integral primario completo (no solo notas) — cada línea reconcilia exacta, sin ningún residuo. SIIS tiene 10 ejercicios consecutivos (2016-2025) disponibles para este club; a propósito solo se cargó 2025 esta sesión (pedido explícito: ampliar clubes, no profundizar uno). Transcripción completa en Clubes/Colombia/Envigado/estados-financieros-2025.md.
+```
+
 ## Otros
 
 ### gestionesByClub.envigado

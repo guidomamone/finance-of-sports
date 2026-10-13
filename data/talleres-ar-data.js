@@ -291,13 +291,11 @@ Object.assign(sources, {
     id:'talleres-ar-estados-contables-2024', clubId:'talleres-ar',
     title:'Estados Contables por el ejercicio finalizado el 31 de diciembre de 2024 (Club Atlético Talleres Asociación Civil)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Descargado de clubtalleres.com.ar (nota de prensa de la Asamblea, no de una sección fija de transparencia — ver fuentes/Argentina/Talleres.md). Auditado, con Informe de la Comisión Revisora de Cuentas. Expresado en moneda homogénea (RT6) a la fecha de cierre. Ejercicio CALENDARIO (1/1/2024-31/12/2024). El Anexo V (Moneda Extranjera) no declara un tipo de cambio de cierre único — ver comentario de cabecera de data/talleres-ar-data.js. Transcripción completa en Clubes/Argentina/Talleres/estados-contables-2024.md.',
   },
   'talleres-ar-estados-contables-2025': {
     id:'talleres-ar-estados-contables-2025', clubId:'talleres-ar',
     title:'Estados Contables por el ejercicio finalizado el 31 de diciembre de 2025 (Club Atlético Talleres Asociación Civil)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Descargado de clubtalleres.com.ar (nota de prensa de la Asamblea 2026 — ver fuentes/Argentina/Talleres.md). Auditado, con Informe de la Comisión Revisora de Cuentas. Expresado en moneda homogénea (RT6) a la fecha de cierre. Ejercicio CALENDARIO (1/1/2025-31/12/2025). Transcripción completa en Clubes/Argentina/Talleres/estados-contables-2025.md.',
   },
 });
 

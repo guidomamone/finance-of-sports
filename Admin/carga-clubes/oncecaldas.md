@@ -380,6 +380,40 @@ _al lado del campo `grossDebt`:_
 no verificado esta sesión, mismo alcance que 2024
 ```
 
+## Fuentes
+
+### oncecaldas-estados-financieros-2023
+
+_note (data/):_
+
+```text
+Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890.801.447-5). Único ejercicio con PÉRDIDA de los 4 cargados de este club (-$1.287,531 M). PAT confirmado en la Cuenta de Patrimonio ("Utilidad o pérdida del ejercicio"). Transcripción completa en Clubes/Colombia/Once Caldas/estados-financieros-2023.md.
+```
+
+### oncecaldas-estados-financieros-2022
+
+_note (data/):_
+
+```text
+Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890.801.447-5). PAT confirmado en la Cuenta de Patrimonio ("Utilidad o pérdida del ejercicio"). Transcripción completa en Clubes/Colombia/Once Caldas/estados-financieros-2022.md.
+```
+
+### oncecaldas-estados-financieros-2024
+
+_note (data/):_
+
+```text
+Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890.801.447-5). El dictamen del revisor fiscal 2024 es una opinión limpia sin narrar la cifra de resultado (a diferencia del de 2025) -- el PAT ($4.112,260 M COP) sale confirmado de una sola fuente (Cuenta de Patrimonio, fila "Utilidad o pérdida del ejercicio"), no triple como 2025. Transcripción completa en Clubes/Colombia/Once Caldas/estados-financieros-2024.md.
+```
+
+### oncecaldas-estados-financieros-2025
+
+_note (data/):_
+
+```text
+Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890.801.447-5). El PDF trae las notas completas a los estados financieros (34 páginas, texto real) pero NO el Estado de Situación Financiera/Estado de Resultado Integral primario como tabla aparte — el resultado del ejercicio ($9.138,546 M COP) se confirma triple: tabla de indicadores de negocio en marcha (Nota 2), narrativa del Informe del Revisor Fiscal, y la vista SIIS. La compañía sigue en proceso de reorganización empresarial (Superintendencia de Sociedades, desde agosto de 2012), aunque el ejercicio 2025 dio utilidad. Transcripción completa en Clubes/Colombia/Once Caldas/estados-financieros-2025.md.
+```
+
 ## Otros
 
 ### oncecaldasPasesData

@@ -192,3 +192,13 @@ Naessens: voorzitter desde la fundación en 2001 (solo año). Todavía se presen
 Ballière: Wikipedia lo ubica 2013-2025 y Sporza lo llama voorzitter en octubre de 2015; el ejercicio 2014 depende de la fecha del cambio, no confirmada.
 Hullebusch: voorzitter desde 2025 (solo año); no figura en el consejo del informe del ejercicio 2025, donde sigue Ballière.
 ```
+
+## Fuentes
+
+### zultewaregem-be-jaarrekening-2025
+
+_note (data/):_
+
+```text
+Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB), esquema estatutario VOL-kap. PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Zulte Waregem/jaarrekening-2025-06-30-individual.md. Nota 6.10 (desglose de Omzet por categoría/mercado geográfico) no fue completada por el club en este filing; "Andere bedrijfsopbrengsten" solo desglosa el componente de subsidios estatales, el resto queda sin especificar. Patrimonio neto negativo al cierre (-0,73 M EUR), procedimiento de alarma societaria activo, resuelto parcialmente con un aumento de capital de 7 M EUR durante el ejercicio.
+```

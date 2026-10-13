@@ -140,7 +140,6 @@ Object.assign(sources, {
       id:'river-estados-contables-2020-2021', clubId:'river',
       title:'Estados Contables (balance auditado, individual), Ejercicio N°120, 1°/9/2020 al 31/8/2021',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF individual (no consolidado, mismo criterio que Boca/Racing) presentado ante la CNV (presentación #3248465, "EECC 2021 River Plate legalizados (2).pdf", 65 páginas, legalizado/firmado), descargado el 2026-09-28 (ver fuentes/Argentina/River.md). Transcripción vía Mistral OCR (documento escaneado, ver advertencia en el propio .md) -- cifras verificadas a mano contra el PDF antes de cargar. Reemplaza el placeholder inventado que existía para este ejercicio desde la Versión 138.',
     },
   'river-estados-contables-2023-24': {
       id:'river-estados-contables-2023-24', clubId:'river',
@@ -148,7 +147,6 @@ Object.assign(sources, {
       type:'unofficial_mirror', reliability:'secondary_mirror',
       url:'https://turiver.s3.us-west-000.backblazeb2.com/original/4X/1/7/a/17ac4c09709f687d2249c3e21b8e7c5262b78116.pdf',
       publicNote:'El balance es real y trae informe de auditoría independiente, pero se consiguió en una réplica subida por la comunidad de hinchas tuRiver, no en el sitio oficial del club, que publica solo la Memoria narrativa sin estados contables.',
-      note:'PDF de 67 páginas con informe de auditoría independiente real y sellos de legalización, pero conseguido en una réplica subida por la comunidad tuRiver (turiver.com), NO desde el dominio oficial de River (riverplate.com/cariverplate.com.ar solo exponen la "Memoria" narrativa sin estados contables — ver river-data.js para el detalle de este hallazgo). El contenido en sí tiene toda la apariencia de ser el documento real y auditado; lo que no está confirmado por canal primario es la vía de distribución. Copia local en finance-of-sports/Clubes/Argentina/River/estados-contables-leads/turiver-estados-contables.pdf. Transcripción completa en Clubes/Argentina/River/estados-contables-leads/river-estados-contables-2023-24.md. Convertido a USD con $950,50, el tipo de cambio de cierre que el PROPIO balance declara en su Anexo V (Versión 32; antes se usaba $953,50, una cotización externa de Rava Bursátil/BCRA).',
     },
 });
 

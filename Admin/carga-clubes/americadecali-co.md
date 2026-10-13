@@ -165,3 +165,13 @@ _antes de Marcela Gómez Giraldo (data/gestiones/co.js):_
 ```text
 Marcela Gómez Giraldo (hija del accionista mayoritario Tulio Gómez) es la presidente y firma como representante legal; Tulio Gómez no ejerce el cargo.
 ```
+
+## Fuentes
+
+### americadecali-co-estados-financieros-2025
+
+_note (data/):_
+
+```text
+Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890305773). Texto nativo (pdftotext -layout), pero las tablas de Notas 19-25 se renderizan superpuestas/duplicadas en el PDF (no es un escaneo, es un artefacto de layout) — se reconstruyó cada nota sumando sus líneas y verificando contra el subtotal impreso en el Estado de Resultados antes de cargar, ver comentario de cabecera de data/americadecali-co-data.js. El club está formalmente "en reorganización" (Ley 1116) desde 2014-2015, pero esto no altera la estructura del Estado de Resultados. Transcripción completa en Clubes/Colombia/America de Cali/estados-financieros-2025.md.
+```

@@ -76,7 +76,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/01706358/filing-history',
     publicNote:'Balance consolidado auditado (Deloitte LLP, sin salvedades) de Tottenham Hotspur Limited, depositado en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2024 (temporada 2023/24). Las cifras del grupo incluyen la actividad del plantel masculino y del plantel femenino combinadas, tal como aclara el propio documento ("the operation of both a men\'s and a women\'s professional football club").',
-    note:'PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Tottenham Hotspur/tottenham-hotspur-group-accounts-2023-24.md. Cuentas consolidadas del grupo. No se encontró un tipo de cambio GBP/USD de cierre declarado por el documento para todo el balance (solo exposición cualitativa a moneda extranjera en transferencias de jugadores) — fxRef apunta a FX_CLOSE, todavía sin entrada GBP@2024-06-30 (pendiente, fuera de alcance de esta sesión, mismo gotcha que arsenal-gb-data.js). Duda abierta sobre el desglose interno de "Commercial" (Sponsorship/Merchandising/Other revenue, este último con ingresos no futbolísticos del estadio) sin cifra exacta en la Nota 2 — ver comentario de cabecera de tottenham-gb-data.js.',
   },
   'tottenham-gb-group-accounts-2025': {
     id:'tottenham-gb-group-accounts-2025', clubId:'tottenham-gb',
@@ -84,7 +83,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/01706358/filing-history',
     publicNote:'Balance consolidado auditado (Deloitte LLP, sin salvedades) de Tottenham Hotspur Limited, depositado en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2025 (temporada 2024/25). Las cifras del grupo incluyen la actividad del plantel masculino y del plantel femenino combinadas, tal como aclara el propio documento ("the operation of both a men\'s and a women\'s professional football club").',
-    note:'PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Tottenham Hotspur/tottenham-hotspur-group-accounts-2024-25.md. Cuentas consolidadas del grupo. Mismo gotcha de fx que el ejercicio 2024: fxRef apunta a FX_CLOSE, todavía sin entrada GBP@2025-06-30 (pendiente, fuera de alcance de esta sesión). Post balance sheet: el Executive Chairman Daniel Levy dejó el club el 4/9/2025, después del cierre de este ejercicio.',
   },
 });
 

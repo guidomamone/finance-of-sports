@@ -251,6 +251,24 @@ grossDebt = "Préstamos" (Nota 2.f, Pasivo Corriente, único renglón ese año).
 bancos.
 ```
 
+## Fuentes
+
+### river-estados-contables-2020-2021
+
+_note (data/):_
+
+```text
+PDF individual (no consolidado, mismo criterio que Boca/Racing) presentado ante la CNV (presentación #3248465, "EECC 2021 River Plate legalizados (2).pdf", 65 páginas, legalizado/firmado), descargado el 2026-09-28 (ver fuentes/Argentina/River.md). Transcripción vía Mistral OCR (documento escaneado, ver advertencia en el propio .md) -- cifras verificadas a mano contra el PDF antes de cargar. Reemplaza el placeholder inventado que existía para este ejercicio desde la Versión 138.
+```
+
+### river-estados-contables-2023-24
+
+_note (data/):_
+
+```text
+PDF de 67 páginas con informe de auditoría independiente real y sellos de legalización, pero conseguido en una réplica subida por la comunidad tuRiver (turiver.com), NO desde el dominio oficial de River (riverplate.com/cariverplate.com.ar solo exponen la "Memoria" narrativa sin estados contables — ver river-data.js para el detalle de este hallazgo). El contenido en sí tiene toda la apariencia de ser el documento real y auditado; lo que no está confirmado por canal primario es la vía de distribución. Copia local en finance-of-sports/Clubes/Argentina/River/estados-contables-leads/turiver-estados-contables.pdf. Transcripción completa en Clubes/Argentina/River/estados-contables-leads/river-estados-contables-2023-24.md. Convertido a USD con $950,50, el tipo de cambio de cierre que el PROPIO balance declara en su Anexo V (Versión 32; antes se usaba $953,50, una cotización externa de Rava Bursátil/BCRA).
+```
+
 ## Otros
 
 ### Presupuesto al lado del balance (riverPresupuestoOverlayByYear), en general

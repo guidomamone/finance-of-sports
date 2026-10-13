@@ -24,6 +24,7 @@
 //                                             línea _nota:_ arriba si se pasa (ej. de qué archivo vino).
 //   reemplazarTexto(md, viejo, nuevo)         un texto exacto por otro (el color del alta).
 //   agregarSeccion(md, titulo, lineas, nota?) un bloque en una sección del club que no es de un año ("## Gestiones").
+//   agregarFuente(md, sourceId, lineas, nota?) la nota interna de una fuente, en "## Fuentes" / "### <sourceId>"; textoDeFuente() la lee.
 // Después de cada operación, una sección o un año que quedaron vacíos se borran.
 // ============================================================================
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
@@ -159,6 +160,26 @@ export function agregarSeccion(md, titulo, lineas, nota = null) {
   let pos = finDe(L, i, RE_H2); while (pos > i + 1 && L[pos - 1].trim() === '') pos--;
   L.splice(pos, 0, '', ...(nota ? [`_${nota}:_`, ''] : []), ...fence(lineas), '');
   return limpiar(L.join('\n'));
+}
+// La nota interna de UNA fuente (lo que antes era `sources[id].note` en data/): un bloque al final de "### <sourceId>" dentro de
+// "## Fuentes" (crea las dos si faltan; "## Fuentes" va después de los años y de "## Gestiones", antes de "## Otros").
+export function agregarFuente(md, sourceId, lineas, nota = null) {
+  if (!lineas || !lineas.length) return md;
+  const L = md.replace(/\n+$/, '').split('\n');
+  let i = L.findIndex((t) => t.trim() === '## Fuentes');
+  if (i < 0) { let pos = L.findIndex((t) => /^## Otros\s*$/.test(t)); if (pos < 0) pos = L.length; L.splice(pos, 0, '## Fuentes', ''); i = pos; }
+  const f = finDe(L, i, RE_H2);
+  let j = -1; for (let k = i + 1; k < f; k++) if (L[k].trim() === `### ${sourceId}`) { j = k; break; }
+  if (j < 0) { let pos = f; while (pos > i + 1 && L[pos - 1].trim() === '') pos--; L.splice(pos, 0, '', `### ${sourceId}`, ''); j = pos + 1; }
+  let pos = finDe(L, j, RE_H2_H3); while (pos > j + 1 && L[pos - 1].trim() === '') pos--;
+  L.splice(pos, 0, '', ...(nota ? [`_${nota}:_`, ''] : []), ...fence(lineas), '');
+  return limpiar(L.join('\n'));
+}
+// El texto de "### <sourceId>" en "## Fuentes" (para quien antes leía `sources[id].note`), sin las marcas de bloque.
+export function textoDeFuente(md, sourceId) {
+  const L = md.split('\n');
+  const j = L.findIndex((t) => t.trim() === `### ${sourceId}`); if (j < 0) return '';
+  return L.slice(j + 1, finDe(L, j, RE_H2_H3)).filter((t) => !/^(```|~~~)/.test(t) && !/^_.*:_$/.test(t)).join(' ').replace(/\s+/g, ' ').trim();
 }
 // Reemplaza un texto exacto en la evidencia (ej. "brandColor AUSENTE a propósito" -> "brandColor #c8102e" al ponerle el color a un club).
 export function reemplazarTexto(md, viejo, nuevo) { return md.includes(viejo) ? md.replace(viejo, nuevo) : md; }

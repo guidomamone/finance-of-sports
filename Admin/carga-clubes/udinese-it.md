@@ -214,3 +214,19 @@ Franco Soldati, presidente del consejo (la familia Pozzo controla vía Gesapar).
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### udinese-it-bilancio-2024-25
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Udinese/Udinese-bilancio-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### udinese-it-bilancio-2021-22
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

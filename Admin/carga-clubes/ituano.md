@@ -107,6 +107,16 @@ impreso (29.239.217,10). officialTotalExpenses = "DESPESAS - FUTEBOL"
 officialPAT = "(DÉFICIT) OU SUPERÁVIT DO EXERCÍCIO" impreso.
 ```
 
+## Fuentes
+
+### ituano-relatorio-auditoria-2024
+
+_note (data/):_
+
+```text
+PDF oficial (17 páginas, texto nativo) con Balanço Patrimonial al 31/12/2024, DRE, Mutações do Patrimônio Líquido, Fluxos de Caixa y Notas Explicativas. Ituano NO es SAF, sigue siendo associação. Ejercicio 2024 cerrado en DÉFICIT de R$ 7.063.131,20. Los 4 subtotales de la DRE y el resultado final cierran exacto contra la suma de sus propias líneas, sin ninguna inconsistencia. Cifras en reales enteros con centavos (no en miles). grossDebt = las 2 líneas de Emprestimos (Notas 18 y 20), excluidas las obligaciones laborales/tributarias/proveedores. Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Ituano/relatorio-auditoria-2024.md.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

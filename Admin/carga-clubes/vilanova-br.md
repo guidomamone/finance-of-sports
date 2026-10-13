@@ -575,3 +575,75 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### vilanova-br-demonstrativo-financeiro-2025
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vilanova-br-balanco-patrimonial-2015
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/balanco-patrimonial-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vilanova-br-balanco-patrimonial-2016
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/balanco-patrimonial-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vilanova-br-balanco-patrimonial-2017
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/balanco-patrimonial-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vilanova-br-demonstrativo-financeiro-2021
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vilanova-br-demonstrativo-financeiro-2022
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vilanova-br-demonstrativo-financeiro-2023
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vilanova-br-demonstrativo-financeiro-2024
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vilanova-br-notas-explicativas-2014
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/notas-explicativas-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

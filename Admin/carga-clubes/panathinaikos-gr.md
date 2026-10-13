@@ -95,3 +95,13 @@ _antes de Giannis Alafouzos (data/gestiones/gr.js):_
 Alafouzos: dueño desde que la Alianza Panathinaikos tomó el control (julio de 2012) y presidente electo el 25/9/2012; fue presidente formal hasta el 21/4/2017
 y desde el 11/7/2022; entre medio fue el dueño y financista mientras presidían Mavrokoukoulakis y Konstantinou (ver cabecera). Sigue de dueño.
 ```
+
+## Fuentes
+
+### panathinaikos-gr-annual-fr-2025
+
+_note (data/):_
+
+```text
+Informe anual completo IFRS. PAT reconcilia EXACTO, sin residuo, línea por línea. La carpeta también tiene un "summary_IFRS_2025-06-30.md" que NO se usó -- corresponde en realidad al ejercicio 2020 (mal nombrado) y trae etiquetas de fila sin sentido, transcripción fallida descartada sin usar. Transcripción completa en Clubes/Grecia/Panathinaikos/Panathinaikos_annual_FR_2025-06-30.md.
+```

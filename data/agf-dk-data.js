@@ -65,7 +65,6 @@ Object.assign(sources, {
     id:'agf-aarsrapport-2020-21', clubId:'agf-dk',
     title:'AGF A/S — Årsrapport 2020/21 (1. juli 2020 - 30. juni 2021)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cifras del Koncern (grupo consolidado: AGF A/S + AGF Esport ApS 57% + Atletion A/S/Ceres Park & Arena 100% + AGF Kvindefodbold ApS 80% + Stadion Fysioterapi ApS), no del Moderselskab (columna paralela que el documento también publica). No existe una entidad "solo fútbol" separada para AGF, a diferencia de F.C. København. Sin salvedades de auditoría. Transcripción completa en Clubes/Dinamarca/AGF/aarsrapport-2021-06-30.md.',
   },
 });
 

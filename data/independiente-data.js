@@ -129,19 +129,16 @@ Object.assign(sources, {
       id:'independiente-memoria-y-balance-2023-24', clubId:'independiente',
       title:'Memoria y Balance (estados contables auditados), Ejercicio 1°/7/2023 al 30/6/2024',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (51 páginas, texto nativo), auditado por Dr. Walter Hugo Rivero, informe de fecha 30/09/2024. SUPERÁVIT FINAL real: $7.392.788.960 ARS. Convertido a USD con $890,50 (Nota "Activos y pasivos en moneda extranjera", único valor declarado). El Anexo D (Fútbol Profesional) desglosa el rubro más grande del club por naturaleza (entradas, TV, publicidad, plateas, jugadores, técnicos, organización de partidos); el Anexo V clasifica el resto por departamento (Fútbol Juvenil, Educación Física, Centro Educativo, etc.). "Diferencia de cambio"+RECPAM se llevan netos a netInterest, igual que el resto de los clubes.',
     },
   'independiente-estados-contables-2025-26': {
       id:'independiente-estados-contables-2025-26', clubId:'independiente',
       title:'Estados Contables (Informe de Tesorería, Estado de Situación Patrimonial y Estado de Recursos y Gastos), Ejercicio N°122, 1°/7/2025 al 30/6/2026',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (54 páginas), auditado por Dr. Walter Hugo Rivero, informe de fecha 10/09/2026. Capa de texto nativa pero con fuente subseteada sin ToUnicode en casi todas las páginas con tablas numéricas (pdftotext da basura, la carátula y algunas notas narrativas sí se leen bien) — valores extraídos renderizando cada página a imagen (300-400dpi) y leyendo visualmente, verificados subtotal por subtotal contra los impresos. SUPERÁVIT FINAL real: $1.778.079.629 ARS. El Anexo D (Fútbol Profesional por naturaleza) vive dentro del bloque de Notas y Anexos (pág. 40 del PDF), no en el índice de estados primarios. Convertido a USD con $1.500,00 (Anexo II "Activos y pasivos en moneda extranjera": el documento declara $1.450,00 para el activo en moneda extranjera y $1.500,00 para la totalidad de las líneas de deuda en USD del pasivo — se usó la de la deuda, mismo criterio que Gimnasia y Esgrima LP para un caso de múltiples cotizaciones). "Diferencia de Cambio"+RECPAM se llevan netos a netInterest, igual que el resto de los clubes.',
     },
   'independiente-memoria-2025-26': {
       id:'independiente-memoria-2025-26', clubId:'independiente',
       title:'Memoria (institucional/narrativa, sin estados contables), 122° Ejercicio Administrativo, 1°/7/2025 al 30/6/2026',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (150 páginas, texto nativo). A diferencia del 120° Ejercicio, este año la Memoria es SOLO narrativa institucional (actividades por departamento, hitos, balance social) — no incluye un solo estado contable ni Anexo numérico, esos viven enteros en el documento de Estados Contables. Se usó para confirmar presidencia (Néstor Grindetti) y para el conteo de socios: "175.796 SOCIOS Y SOCIAS EN REGISTRO" (Departamento de Socios, pág. 22).',
     },
 });
 

@@ -90,7 +90,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/00040946/filing-history',
     publicNote:'Cuentas de la sociedad del club (Manchester City Football Club Limited) sola, NO las cuentas consolidadas de City Football Group, que además controla otros clubes (Nueva York, Melbourne, Girona, entre otros) y publica su propio balance por separado.',
-    note:'PDF de 37 páginas depositado en Companies House ("Full accounts"), firmado por DocuSign y escaneado después de firmar, con capa de texto nativa (sin necesidad de OCR). Transcripción completa en Clubes/Inglaterra/Manchester City/manchester-city-full-accounts-2023-24.md. Auditor: BDO LLP. Ver el comentario de cabecera de este archivo para el detalle de la reconciliación de la fila "(Profit)/loss on disposal of property, plant and equipment" (ambigua en este ejercicio, resuelta cruzando contra el ejercicio 2024-25).',
   },
   'mancity-gb-full-accounts-2025': {
     id:'mancity-gb-full-accounts-2025', clubId:'mancity-gb',
@@ -98,7 +97,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/00040946/filing-history',
     publicNote:'Cuentas de la sociedad del club (Manchester City Football Club Limited) sola, NO las cuentas consolidadas de City Football Group, que además controla otros clubes (Nueva York, Melbourne, Girona, entre otros) y publica su propio balance por separado.',
-    note:'PDF de 39 páginas depositado en Companies House ("Full accounts"), mismo formato y auditor (BDO LLP) que el ejercicio 2023-24. Transcripción completa en Clubes/Inglaterra/Manchester City/manchester-city-full-accounts-2024-25.md.',
   },
 });
 

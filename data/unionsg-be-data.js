@@ -56,7 +56,6 @@ Object.assign(sources, {
     id:'unionsg-be-jaarrekening-2025', clubId:'unionsg-be',
     title:"Comptes annuels de la Royale Union Saint-Gilloise SRL pour l'exercice du 1/7/2024 au 30/6/2025",
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Banque Nationale de Belgique (BNB/NBB), esquema estatutario abreviado C-app (forma jurídica SRL). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2025-06-30-individual.md. Ejercicio en el que el club ganó su primer título de Pro League desde 1934/35. Dos componentes de "Autres produits d\'exploitation" y el desglose fino de "Autres charges d\'exploitation" quedaron sin poder confirmarse con certeza en esta transcripción — ver comentario de cabecera de data/unionsg-be-data.js y Admin/dudas-por-club.md.',
   },
 });
 

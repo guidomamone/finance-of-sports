@@ -991,7 +991,11 @@ export function escribir(P) {
     const metaTxt = `  ${y}: {\n    currency:${js(M.currency)}${fxTxt ? ', ' + fxTxt : ''},\n    sourceId:${js(M.sourceId)},\n    reportType:${js(M.reportType)},\n    gestionId:${M.gestionId != null ? js(M.gestionId) : 'null'},\n    profitOnPlayerSales:0, assetSales:0,\n    netInterest:${num(M.netInterest)}, tax:${num(M.tax)},\n${M.extraRows ? `    extraRows: [\n${M.extraRows.map((x) => `      {label:${js(x.label)}, value:${num(x.value)}},\n`).join('')}    ],\n` : ''}${M.incluidoEn ? `    incluidoEn:${JSON.stringify(M.incluidoEn)},\n` : ''}${M.sinDesglose ? `    sinDesglose: [\n${M.sinDesglose.map((x) => `      {renglon:${js(x.renglon)}, lado:${js(x.lado)}, importe:${num(x.importe)}, motivo:${js(x.motivo)}},\n`).join('')}    ],\n` : ''}    grossDebt:${num(M.grossDebt)}, cash:${num(M.cash)},\n    officialTotalRevenue:${num(M.officialTotalRevenue)}, officialTotalExpenses:${num(M.officialTotalExpenses)}, officialPAT:${num(M.officialPAT)},\n  },\n`;
     src = insertarEnObjeto(src, `const ${vMeta} = {`, metaTxt, dataRel);
     const S = E.source;
-    if (!(P.reemplaza && cargarSitio().sources?.[S.id])) src = insertarEnObjeto(src, 'Object.assign(sources, {', `  ${js(S.id)}: {\n    id:${js(S.id)}, clubId:${js(S.clubId)},\n    title:${js(S.title)},\n    type:${js(S.type)}, reliability:${js(S.reliability)},\n    note:${js(S.note)},\n  },\n`, dataRel);
+    // la nota INTERNA de la fuente va a la evidencia del club (to-do 209: data/ se publica), no a un campo `note` de sources{}
+    if (!(P.reemplaza && cargarSitio().sources?.[S.id])) {
+      src = insertarEnObjeto(src, 'Object.assign(sources, {', `  ${js(S.id)}: {\n    id:${js(S.id)}, clubId:${js(S.clubId)},\n    title:${js(S.title)},\n    type:${js(S.type)}, reliability:${js(S.reliability)},\n  },\n`, dataRel);
+      if (S.note) ev = EV.agregarFuente(ev, S.id, [S.note], 'note (cargar.mjs)');
+    }
     writeFileSync(dataPath, src); escritos.push(dataRel);
 
     // liga

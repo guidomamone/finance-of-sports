@@ -135,6 +135,16 @@ _antes de Nassef Sawiris (data/gestiones/gb.js):_
 NSWE compró el control el 20-21/7/2018 (fecha aproximada: anuncio del club). Xia siguió de co-chairman hasta agosto de 2019; Sawiris quedó como chairman.
 ```
 
+## Fuentes
+
+### astonvilla-gb-full-accounts-2025
+
+_note (data/):_
+
+```text
+PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Aston Villa/aston-villa-full-accounts-2024-25.md. Entidad individual, no consolidada — NO reporta activos intangibles ni compraventa de jugadores en absoluto, ver limitación documentada en el comentario de cabecera de data/astonvilla-gb-data.js y en Admin/dudas-por-club.md. El ejercicio anterior (13 meses, no comparable) no se cargó. fxRef apunta a FX_CLOSE (GBP@2025-06-30).
+```
+
 ## Otros
 
 ### astonvillaGbPasesData

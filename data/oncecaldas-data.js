@@ -234,25 +234,21 @@ Object.assign(sources, {
       id:'oncecaldas-estados-financieros-2023', clubId:'oncecaldas',
       title:'Estados Financieros (Notas) e Informe del Revisor Fiscal, al 31 de diciembre de 2023 y 2022',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890.801.447-5). Único ejercicio con PÉRDIDA de los 4 cargados de este club (-$1.287,531 M). PAT confirmado en la Cuenta de Patrimonio ("Utilidad o pérdida del ejercicio"). Transcripción completa en Clubes/Colombia/Once Caldas/estados-financieros-2023.md.',
     },
   'oncecaldas-estados-financieros-2022': {
       id:'oncecaldas-estados-financieros-2022', clubId:'oncecaldas',
       title:'Estados Financieros (Notas) e Informe del Revisor Fiscal, al 31 de diciembre de 2022 y 2021',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890.801.447-5). PAT confirmado en la Cuenta de Patrimonio ("Utilidad o pérdida del ejercicio"). Transcripción completa en Clubes/Colombia/Once Caldas/estados-financieros-2022.md.',
     },
   'oncecaldas-estados-financieros-2024': {
       id:'oncecaldas-estados-financieros-2024', clubId:'oncecaldas',
       title:'Estados Financieros (Notas) e Informe del Revisor Fiscal, al 31 de diciembre de 2024 y 2023',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890.801.447-5). El dictamen del revisor fiscal 2024 es una opinión limpia sin narrar la cifra de resultado (a diferencia del de 2025) -- el PAT ($4.112,260 M COP) sale confirmado de una sola fuente (Cuenta de Patrimonio, fila "Utilidad o pérdida del ejercicio"), no triple como 2025. Transcripción completa en Clubes/Colombia/Once Caldas/estados-financieros-2024.md.',
     },
   'oncecaldas-estados-financieros-2025': {
       id:'oncecaldas-estados-financieros-2025', clubId:'oncecaldas',
       title:'Estados Financieros (Notas) e Informe del Revisor Fiscal, al 31 de diciembre de 2025 y 2024',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890.801.447-5). El PDF trae las notas completas a los estados financieros (34 páginas, texto real) pero NO el Estado de Situación Financiera/Estado de Resultado Integral primario como tabla aparte — el resultado del ejercicio ($9.138,546 M COP) se confirma triple: tabla de indicadores de negocio en marcha (Nota 2), narrativa del Informe del Revisor Fiscal, y la vista SIIS. La compañía sigue en proceso de reorganización empresarial (Superintendencia de Sociedades, desde agosto de 2012), aunque el ejercicio 2025 dio utilidad. Transcripción completa en Clubes/Colombia/Once Caldas/estados-financieros-2025.md.',
     },
 });
 

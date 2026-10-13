@@ -134,13 +134,11 @@ Object.assign(sources, {
       id:'getafe-es-cuentas-anuales-2023-24', clubId:'getafe-es',
       title:'Informe Auditoría de Cuentas Anuales, Ejercicio finalizado a 30 de junio de 2024',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (auditado por Grupo Pél Auditores, S.L.P.), escaneo sin capa de texto. Bajado de getafecf.com/ley-de-transparencia-sad. Transcripción completa en Clubes/España/Getafe CF/cuentas-anuales-informe-auditoria-2023-2024.md. La cuenta de pérdidas y ganancias venía con etiquetas y números en bloques separados por el OCR/extracción; se reordenó verificando cada subtotal impreso antes de cargar (reconcilió exacto en todos los niveles).',
     },
   'getafe-es-cuentas-anuales-2024-25': {
       id:'getafe-es-cuentas-anuales-2024-25', clubId:'getafe-es',
       title:'Informe Auditoría de Cuentas Anuales, Ejercicio finalizado a 30 de junio de 2025',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (auditado por Grupo Pél Auditores, S.L.P.), escaneo sin capa de texto. Bajado de getafecf.com/ley-de-transparencia-sad. Transcripción completa en Clubes/España/Getafe CF/cuentas-anuales-informe-auditoria-2024-2025.md. Mismo gotcha de reordenamiento que el ejercicio 2023-24 (ver esa entrada); reconcilió exacto en todos los niveles contra el Estado de Cambios en el Patrimonio Neto.',
     },
 });
 

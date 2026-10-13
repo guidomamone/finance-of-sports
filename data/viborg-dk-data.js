@@ -53,7 +53,6 @@ Object.assign(sources, {
       id:'viborg-aarsrapport-2024', clubId:'viborg-dk',
       title:'Viborg F.F. Prof. Fodbold A/S — Årsrapport for regnskabsåret 01.07.23 - 30.06.24',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Auditado por Beierholm (Statsautoriseret Revisionspartnerselskab), sin salvedades. CVR 83 07 37 13. Tipo de cambio DKK/USD del cierre (6,9664) es una aproximación de mercado (cruce BCE EUR/DKK × EUR/USD del 28/6/2024, viernes hábil más cercano al 30/6), no declarada por el propio documento ni centralizada todavía en FX_CLOSE. Transcripción completa en "Clubes/Dinamarca/Viborg FF/aarsrapport-2024-06-30.md".',
     },
 });
 

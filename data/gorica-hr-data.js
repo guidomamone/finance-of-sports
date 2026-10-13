@@ -69,7 +69,6 @@ Object.assign(sources, {
     id:'gorica-hr-financijsko-izvjesce-2025', clubId:'gorica-hr',
     title:'Revidirani godišnji financijski izvještaji za 2025. godinu — HNK Gorica s.d.d.',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Balance auditado, preparado según el Pravilnik o licenciranju i financijskoj održivosti klubova de la HNS. HNK Gorica NO capitaliza registraciones de jugadores (expensa el costo completo al momento de la operación, mismo patrón que Hajduk Split). La transcripción tenía las tablas de Prihodi y Bilanca desalineadas por el OCR/extracción de texto; se reconstruyó el orden cruzando la aritmética de cada subtotal "Ukupno" impreso. grossDebt es un piso (lower-bound): la reconciliación completa de pasivos corrientes/no corrientes no cerró exacta con las líneas identificables en la transcripción. Transcripción completa en Clubes/Croacia/Gorica/financijsko-izvjesce-2025.md.',
   },
 });
 

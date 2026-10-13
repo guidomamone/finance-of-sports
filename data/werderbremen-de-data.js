@@ -112,19 +112,16 @@ Object.assign(sources, {
     id:'werderbremen-de-konzernabschluss-2023', clubId:'werderbremen-de',
     title:'Konzernabschluss zum Geschäftsjahr vom 01.07.2022 bis zum 30.06.2023',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Konzernabschluss (cuentas consolidadas, incluye Werder Bremen Merchandising GmbH y Werder Bremen Payment GmbH) bajado de unternehmensregister.de (registro mercantil oficial alemán). 21 páginas. Transcripción completa en Clubes/Alemania/Werder Bremen/konzernabschluss-2022-23.md.',
   },
   'werderbremen-de-konzernabschluss-2024': {
     id:'werderbremen-de-konzernabschluss-2024', clubId:'werderbremen-de',
     title:'Konzernabschluss zum Geschäftsjahr vom 01.07.2023 bis zum 30.06.2024',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Konzernabschluss (cuentas consolidadas) bajado de unternehmensregister.de. 21 páginas. Transcripción completa en Clubes/Alemania/Werder Bremen/konzernabschluss-2023-24.md.',
   },
   'werderbremen-de-konzernabschluss-2025': {
     id:'werderbremen-de-konzernabschluss-2025', clubId:'werderbremen-de',
     title:'Konzernabschluss zum Geschäftsjahr vom 01.07.2024 bis zum 30.06.2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Konzernabschluss (cuentas consolidadas) bajado de unternehmensregister.de. 20 páginas. Transcripción completa en Clubes/Alemania/Werder Bremen/konzernabschluss-2024-25.md. La tabla de GuV de este ejercicio llegó con columnas desalineadas en la conversión PDF→Markdown (ver comentario de cabecera de werderbremen-de-data.js sobre el resultado financiero/impuestos de 2025).',
   },
 });
 

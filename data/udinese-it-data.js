@@ -140,13 +140,11 @@ Object.assign(sources, {
     id:'udinese-it-bilancio-2024-25', clubId:'udinese-it',
     title:'Udinese Calcio S.p.A. — Udinese-bilancio-2024-25 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Udinese/Udinese-bilancio-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'udinese-it-bilancio-2021-22': {
     id:'udinese-it-bilancio-2021-22', clubId:'udinese-it',
     title:'Udinese Calcio S.p.A. — Udinese-bilancio-2021-22 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

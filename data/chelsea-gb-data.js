@@ -50,7 +50,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/02536231/filing-history',
     publicNote:'La venta de Chelsea FC Women a una parte relacionada (£198,7m de ganancia) ocurrió en el ejercicio anterior (2023-24), no en este.',
-    note:'Cuentas consolidadas del grupo, depositadas en Companies House (Reino Unido). Transcripción completa en Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2024-25.md. Ver comentario de cabecera de data/chelsea-gb-data.js para el detalle completo de categorización y las dudas abiertas (Cost of sales sin desglose, gap de amortización/deterioro, grossDebt).',
   },
 });
 

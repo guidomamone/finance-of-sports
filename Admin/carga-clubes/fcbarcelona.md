@@ -95,6 +95,16 @@ _antes de Joan Laporta (data/gestiones/es.js):_
 Toma de posesión el 17/3/2021 (elegido el 7/3), tras la comisión gestora de Tusquets.
 ```
 
+## Fuentes
+
+### fcbarcelona-cuentas-anuales-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial de 105 páginas. Texto nativo en casi todo el documento, PERO las páginas del balance y la cuenta de pérdidas y ganancias tienen el ToUnicode ofuscado (ver comentario largo arriba y el .md de transcripción) — se leyeron renderizando esas 2 páginas a imagen. Cuentas CONSOLIDADAS (Grupo FC Barcelona). Transcripción completa de la cuenta de resultados en Clubes/España/FC Barcelona/cuentas-anuales-y-auditoria-2024-25-cuenta-resultados.md.
+```
+
 ## Otros
 
 ### fcbarcelonaPasesData

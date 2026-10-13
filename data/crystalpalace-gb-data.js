@@ -72,7 +72,6 @@ Object.assign(sources, {
     title:'Group accounts (CPFC 2010 Limited), ejercicio cerrado 30/6/2024',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/07206409/filing-history',
-    note:'Cuentas consolidadas del grupo, auditadas por RSM UK Audit LLP, depositadas en Companies House (Reino Unido). Transcripción completa en Clubes/Inglaterra/Crystal Palace/cpfc2010-group-accounts-2023-24.md. Ver comentario de cabecera de data/crystalpalace-gb-data.js.',
   },
   'crystalpalace-gb-group-accounts-2025': {
     id:'crystalpalace-gb-group-accounts-2025', clubId:'crystalpalace-gb',
@@ -80,7 +79,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/07206409/filing-history',
     publicNote:'Temporada de la primera FA Cup de la historia del club (2024-25).',
-    note:'Transcripción completa en Clubes/Inglaterra/Crystal Palace/cpfc2010-group-accounts-2024-25.md. La venta de la participación mayoritaria de John Textor (Eagle Football Holdings) a Woody Johnson completó el 24/7/2025, después del cierre de este ejercicio.',
   },
 });
 

@@ -98,13 +98,11 @@ Object.assign(sources, {
     id:'psv-nl-jaarverslag-2024', clubId:'psv-nl',
     title:'Jaarverslag PSV N.V. boekjaar 2023-2024 (1 juli 2023 - 30 juni 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jaarverslag oficial consolidado de PSV N.V., descargado del canal público de la KNVB (licencia F.04). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/PSV/jaarverslag-2023-24.md.',
   },
   'psv-nl-jaarverslag-2025': {
     id:'psv-nl-jaarverslag-2025', clubId:'psv-nl',
     title:'Jaarverslag PSV N.V. boekjaar 2024-2025 (1 juli 2024 - 30 juni 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jaarverslag oficial consolidado de PSV N.V., descargado del canal público de la KNVB (licencia F.04). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/PSV/jaarverslag-2024-25.md.',
   },
 });
 

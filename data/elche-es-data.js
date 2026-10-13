@@ -130,13 +130,11 @@ Object.assign(sources, {
       id:'elche-es-informe-auditoria-2023-24', clubId:'elche-es',
       title:'Informe de Auditoría, Cuentas Anuales e Informe de Gestión, ejercicio terminado el 30 de junio de 2024',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF con texto nativo (no escaneo, 64 páginas, Auren Auditores SP S.L.P.), transcripción completa en Clubes/España/Elche CF/informe-auditoria-cuentas-anuales-2023-2024.md. Primera temporada de Elche en Segunda División tras el descenso de 2022/23 — el resultado positivo del ejercicio está dominado por una "ayuda al descenso" de LaLiga de 11,8 M EUR (Nota 11.7), no por la actividad futbolística ordinaria.',
     },
   'elche-es-cuentas-anuales-2024-25': {
       id:'elche-es-cuentas-anuales-2024-25', clubId:'elche-es',
       title:'Cuentas Anuales, Informe de Gestión y Presupuesto, ejercicio terminado el 30 de junio de 2025',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF con texto nativo (70 páginas), transcripción completa en Clubes/España/Elche CF/cuentas-anuales-presupuesto-gestion-2024-2025.md. La tabla "Balance de situación" perdió sus columnas de números en la extracción del PDF (quedaron solo las etiquetas de fila) — grossDebt/cash de este ejercicio se reconstruyeron cruzando la Nota 8.2.1 (pasivos financieros, céntimo exacto) y la Nota 18.3 (Ratio de deuda neta, en miles de euros para el efectivo), documentado en el comentario de cabecera de elche-es-data.js. La Cuenta de pérdidas y ganancias sí se extrajo completa y reconcilia exacta.',
     },
 });
 

@@ -151,13 +151,11 @@ Object.assign(sources, {
     id:'como-it-gruppo-pro-forma-consolidamento-2025', clubId:'como-it',
     title:'Como 1907 S.r.l. — Como-gruppo-pro-forma-consolidamento-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'como-it-fascicolo-bilancio-2024': {
     id:'como-it-fascicolo-bilancio-2024', clubId:'como-it',
     title:'Como 1907 S.r.l. — Como-fascicolo-bilancio-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Como/Como-fascicolo-bilancio-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

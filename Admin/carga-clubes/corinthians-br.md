@@ -304,6 +304,24 @@ _antes de Osmar Stábile (data/gestiones/br.js):_
 Interino desde el 26/05/2025, efectivado el 25/08/2025 (mandato hasta el 31/12/2026): una sola gestion continua.
 ```
 
+## Fuentes
+
+### corinthians-br-demonstracoes-2024
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo, layout de "publicação legal" tipo página de diário para a capa, corpo do documento com camada de texto real), descarregado do portal de transparência oficial do Clube (a URL direta do PDF leva um query string ?rand= instável entre sessões — ver fuentes/Brasil/Corinthians.md). DRE auditada SEGMENTADA em 2 blocos (Segmento futebol / Segmento clube social e esportes amadores), não consolidada — ver comentário de cabeçalho de data/corinthians-br-data.js. Déficit real de R$181.766 mil, ano com nota de incerteza sobre continuidade operacional (pedido de RCE — Regime Centralizado de Execuções — para organizar dívidas cíveis) e saldo expressivo de contingências reconhecidas de exercícios passados. Convertido a USD com PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcrição completa em Clubes/Brasil/Corinthians/demonstracoes-financeiras-2023-2024.md.
+```
+
+### corinthians-br-demonstracoes-2025
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo), mesmo canal que o de 2024. A partir deste exercício a DRE passou a ser apresentada em formato CONSOLIDADO (não mais segmentada) — ver nota explicativa do próprio documento. Prejuízo real de R$143.441 mil, ano com transição de gestão: Osmar Stábile assumiu interinamente em 28/05/2025 e foi empossado oficialmente em 25/08/2025, após deliberação do Conselho Deliberativo sobre o afastamento de Augusto Melo. Também reconheceu R$205.541 mil de ajuste de exercícios anteriores direto em déficits acumulados (nota explicativa 18). Convertido a USD com PTAX BCB de cierre 31/12/2025 (R$5,5024). Transcrição completa em Clubes/Brasil/Corinthians/demonstracoes-financeiras-2024-2025.md.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

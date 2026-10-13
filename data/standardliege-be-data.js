@@ -60,7 +60,6 @@ Object.assign(sources, {
     id:'standardliege-be-jaarrekening-2025', clubId:'standardliege-be',
     title:"Comptes annuels du Standard de Liège SA pour l'exercice du 1/7/2024 au 30/6/2025",
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Banque Nationale de Belgique (BNB/NBB), esquema estatutario abreviado C-cap (Code des sociétés et des associations). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Standard Liège/jaarrekening-2025-06-30-individual.md. La Nota C-cap 6.10 (desglose de Chiffre d\'affaires por categoría/mercado) no fue completada por el club en este filing; "Autres produits d\'exploitation" solo desglosa el componente de subsidios estatales, el resto (67% de esa línea) queda sin especificar.',
   },
 });
 

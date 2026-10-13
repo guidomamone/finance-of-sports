@@ -81,13 +81,11 @@ Object.assign(sources, {
     id:'stuttgart-de-konzernabschluss-2023', clubId:'stuttgart-de',
     title:'Konzernabschluss zum Geschäftsjahr vom 01.01.2023 bis zum 31.12.2023 (VfB Stuttgart 1893 AG, cuentas consolidadas)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Descargado del Unternehmensregister alemán. Auditado por RSM Ebner Stolz GmbH & Co. KG, sin salvedades. Ejercicio CALENDARIO confirmado por el propio título del documento (01.01.2023-31.12.2023). "Handel und Sonstiges" (revenue) mezcla merchandising con venta neta de jugadores sin desglose exacto disponible — ver comentario de cabecera de data/stuttgart-de-data.js. Transcripción completa en Clubes/Alemania/VfB Stuttgart/konzernabschluss-2023.md.',
   },
   'stuttgart-de-konzernabschluss-2024': {
     id:'stuttgart-de-konzernabschluss-2024', clubId:'stuttgart-de',
     title:'Konzernabschluss zum Geschäftsjahr vom 01.01.2024 bis zum 31.12.2024 (VfB Stuttgart 1893 AG, cuentas consolidadas)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Descargado del Unternehmensregister alemán. Auditado por RSM Ebner Stolz GmbH & Co. KG, sin salvedades. Ejercicio CALENDARIO confirmado por el propio título del documento (01.01.2024-31.12.2024). Transcripción completa en Clubes/Alemania/VfB Stuttgart/konzernabschluss-2024.md.',
   },
 });
 

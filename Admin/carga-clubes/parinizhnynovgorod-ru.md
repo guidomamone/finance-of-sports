@@ -367,3 +367,43 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### parinizhnynovgorod-ru-bfo-2021-datos
+
+_note (data/):_
+
+```text
+Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2021-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Pari Nizhny Novgorod/bfo-2021-datos.md.
+```
+
+### parinizhnynovgorod-ru-bfo-2022-datos
+
+_note (data/):_
+
+```text
+Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2022-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Pari Nizhny Novgorod/bfo-2022-datos.md.
+```
+
+### parinizhnynovgorod-ru-bfo-2023-datos
+
+_note (data/):_
+
+```text
+Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2023-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Pari Nizhny Novgorod/bfo-2023-datos.md.
+```
+
+### parinizhnynovgorod-ru-bfo-2024-datos
+
+_note (data/):_
+
+```text
+Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2024-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Pari Nizhny Novgorod/bfo-2024-datos.md.
+```
+
+### parinizhnynovgorod-ru-bfo-2025-datos
+
+_note (data/):_
+
+```text
+Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2025-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Pari Nizhny Novgorod/bfo-2025-datos.md.
+```

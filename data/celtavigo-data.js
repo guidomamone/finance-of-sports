@@ -57,7 +57,6 @@ Object.assign(sources, {
       id:'celtavigo-cuentas-anuales-individual-2024-25', clubId:'celtavigo',
       title:'Cuentas Anuales Individuales 2024-2025, Ejercicio 1/7/2024 a 30/6/2025',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial, texto nativo (sin OCR). Cuentas individuales (no consolidadas, aunque el club también publicó consolidadas por separado). Transcripción completa de la cuenta de resultados en Clubes/España/Celta de Vigo/cuentas-anuales-individual-2024-2025-cuenta-resultados.md.',
     },
 });
 

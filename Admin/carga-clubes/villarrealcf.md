@@ -72,6 +72,16 @@ sobreestima la deuda puramente financiera. cash = Efectivo y otros activos líqu
 equivalentes (Tesorería).
 ```
 
+## Fuentes
+
+### villarrealcf-estados-financieros-2023-24
+
+_note (data/):_
+
+```text
+PDF oficial (auditado por Betea España Auditores, S.L.P.), escaneo sin capa de texto (leído renderizando a imagen, re-verificado a 300 DPI para confirmar signos negativos). Conseguido vía Wayback Machine porque el dominio del club bloquea la descarga directa del PDF (403). Único ejercicio disponible del club en esta sesión. Transcripción completa de la cuenta de resultados en Clubes/España/Villarreal CF/cuentas-anuales-2023-2024-cuenta-resultados.md.
+```
+
 ## Otros
 
 ### villarrealcfPasesData

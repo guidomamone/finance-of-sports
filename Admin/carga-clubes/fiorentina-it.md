@@ -481,3 +481,43 @@ Commisso: compra oficializada el 6/6/2019; presidente hasta su muerte, el 16/1/2
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### fiorentina-it-bilancio-2024-25
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Fiorentina/Fiorentina-bilancio-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fiorentina-it-bilancio-2023-24
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Fiorentina/Fiorentina-bilancio-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fiorentina-it-bilancio-2021-22-issuu
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fiorentina-it-bilancio-2020-21-issuu
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Fiorentina/Fiorentina-bilancio-2020-21-issuu.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fiorentina-it-bilancio-consolidato-2019-issuu
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Fiorentina/Fiorentina-bilancio-consolidato-2019-issuu.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```

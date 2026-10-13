@@ -143,6 +143,24 @@ _antes de Juarez Costa Pinto (data/gestiones/br.js):_
 SIN FECHA DE POSSE: solo se encontro que figura como Presidente del Conselho Diretor en la relacion de dirigentes 2023-2024 y firma el balance 2025. 01/01/2023 es un supuesto.
 ```
 
+## Fuentes
+
+### operarioferroviario-br-demonstracoes-2024
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo), descargado del repositorio de documentos de la Federação Paranaense. Auditado por JSP Serviços (Junior Svieck Pinto, CRC/PR 058.111/O-0). Transcripción completa en Clubes/Brasil/Operario Ferroviario/demonstracoes-financeiras-2024.md. 2024 fue un ejercicio de déficit (R$246 mil). Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923).
+```
+
+### operarioferroviario-br-demonstracoes-2025
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo), descargado del portal de transparencia propio del club (CDN Fanbase). Firmado por el presidente Juarez Costa Pinto y el contador Marcos Antonio Martins (CRC PR 056385/O-5), auditado por JSP Serviços. Transcripción completa en Clubes/Brasil/Operario Ferroviario/demonstracoes-financeiras-2025.md. 2025 revirtió el déficit de 2024 con un superávit de R$52 mil, en línea con la prensa local (aRede, Ponta Grossa: receita total de R$30,3 M en 2024 a R$39,5 M en 2025). Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024).
+```
+
 ## Otros
 
 ### gestionesByClub['operarioferroviario-br']

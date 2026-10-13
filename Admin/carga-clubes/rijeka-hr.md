@@ -152,3 +152,13 @@ Financijski prihodi(173.977) - Financijski rashodi(964.164).
 grossDebt = Bankovni i drugi zajmovi (corriente 2.470.654 + no corriente 11.621.634). cash =
 Novac i novčani ekvivalenti.
 ```
+
+## Fuentes
+
+### rijeka-hr-financijsko-izvjesce-2024-kombinirani
+
+_note (data/):_
+
+```text
+Balance auditado COMBINADO (HNK Rijeka s.d.d. + Stadion Kantrida d.o.o., la sociedad que administra el estadio y vende las entradas), preparado según el Pravilnik o licenciranju i financijskoj održivosti klubova de octubre de 2024 de la HNS — combinación exigida desde esa fecha. Auditor: KPMG Croatia d.o.o. za reviziju. Dictamen limpio, sin salvedades. Se usó este informe combinado en vez del informe individual de HNK Rijeka s.d.d. a secas (también disponible en la misma carpeta) porque los ingresos de entradas/estadio se facturan a través de la subsidiaria: el individual habría subestimado el revenue real del club. Transcripción completa en Clubes/Croacia/Rijeka/financijsko-izvjesce-2024-kombinirani.md.
+```

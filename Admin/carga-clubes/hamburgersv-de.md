@@ -141,3 +141,21 @@ la fila de impuesto a las ganancias quedó ilegible en la transcripción de ambo
 officialPAT = Jahresüberschuss impreso EXACTO (2.146.705,69 EUR), el único número de este
 ejercicio que llegó sin ambigüedad en la tabla garbled.
 ```
+
+## Fuentes
+
+### hamburgersv-de-fussball-ag-jahresabschluss-2024
+
+_note (data/):_
+
+```text
+Jahresabschluss INDIVIDUAL de la Fußball AG (la sociedad que opera el fútbol profesional, distinta del Hamburger Sport-Verein e.V., club social — ver comentario de cabecera de hamburgersv-de-data.js). Bajado de unternehmensregister.de. Transcripción completa en Clubes/Alemania/Hamburger SV/fussball-ag-jahresabschluss-2023-24.md. La tabla de GuV/Bilanz llegó muy garbled en la conversión PDF→Markdown; los datos se reconstruyeron cruzando el Lagebericht ("iii) Ertragslage"), que transcribió limpio en prosa.
+```
+
+### hamburgersv-de-fussball-ag-jahresabschluss-2025
+
+_note (data/):_
+
+```text
+Jahresabschluss INDIVIDUAL de la entidad que opera el fútbol profesional — cambió de forma jurídica de "Fußball AG" a "Fußball AG & Co. KGaA" durante este ejercicio, el documento ya la nombra con la forma nueva. Bajado de unternehmensregister.de. Transcripción completa en Clubes/Alemania/Hamburger SV/fussball-ag-jahresabschluss-2024-25.md. Mismo problema de tabla garbled que el ejercicio 2023/24.
+```

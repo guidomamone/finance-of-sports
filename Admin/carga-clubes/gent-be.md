@@ -115,3 +115,13 @@ _antes de Ivan De Witte (data/gestiones/be.js):_
 De Witte: voorzitter desde 1999 (solo año). Baro compró el club el 20/7/2023 (95% de las acciones, aprobado en asamblea especial); De Witte siguió como voorzitter
 un año más y Baro pasó a presidir desde la temporada 2024-25.
 ```
+
+## Fuentes
+
+### gent-be-jaarrekening-2025
+
+_note (data/):_
+
+```text
+Cuentas INDIVIDUALES — no hay consolidado disponible para 2023/2024/2025 (sí para 2017-2022). Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Gent/jaarrekening-2025-06-30-individual.md.
+```

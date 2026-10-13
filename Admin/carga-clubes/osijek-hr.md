@@ -142,3 +142,13 @@ Osijek no amortiza pases este ejercicio (no capitaliza), ver comentario de cabec
 Financijski prihodi(357) - Financijski rashodi(403.712).
 grossDebt = Bankovni i drugi zajmovi (corriente 0 + no corriente 11.470.126, Nota 9).
 ```
+
+## Fuentes
+
+### osijek-hr-financijsko-izvjesce-2025
+
+_note (data/):_
+
+```text
+Balance auditado COMBINADO (NK Osijek s.d.d. + FM 20 d.o.o. + Škola nogometa NK Osijek, coproprietarios del estadio Opus Arena), preparado según el Pravilnik o licenciranju klubova de la HNS (11/2025). Auditor: Werkmann d.o.o., sin salvedades. El PDF es un escaneo sin capa de texto (transcripción OCR); las tablas de Rashodi y Bilanca del .md quedaron desalineadas por el OCR y se re-verificaron número por número contra imágenes del PDF antes de cargar. Transcripción completa en Clubes/Croacia/Osijek/financijsko-izvjesce-2025.md.
+```

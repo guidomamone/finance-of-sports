@@ -191,25 +191,21 @@ Object.assign(sources, {
       id:'union-memoria-y-balance-116', clubId:'union',
       title:'Memoria y Balance (Rectificativo), Ejercicio N°116 (1°/7/2021 al 30/6/2022)',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (52 páginas, escaneado sin capa de texto, transcripto vía OCR). Versión "Rectificativa" (corregida), firmada 4/3/2024. SUPERÁVIT FINAL real: $190.408.914 ARS. El Anexo IV (Gastos) SÍ tiene columnas por departamento razonablemente separables — verificado que sus 23 rubros suman exacto contra el Total de Gastos Ordinarios antes de cargar. No se encontró página de Estado de Situación Patrimonial en este escaneo — grossDebt/cash sin cargar. Convertido a USD con $124 (Anexo V, lado Activo/Créditos). Ver data/union-data.js.',
     },
   'union-memoria-y-balance-117': {
       id:'union-memoria-y-balance-117', clubId:'union',
       title:'Memoria y Balance (Rectificativo), Ejercicio N°117 (1°/7/2022 al 30/6/2023)',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (63 páginas, escaneado sin capa de texto, transcripto vía OCR). Versión "Rectificativa" (corregida), firmada 4/3/2024. SUPERÁVIT FINAL real: $893.901.287 ARS. Anexo IV verificado (24 rubros suman exacto contra el Total de Gastos Ordinarios). No se encontró página de Estado de Situación Patrimonial — grossDebt/cash sin cargar. Convertido a USD con $255 (Anexo V, lado Activo/Créditos). Ver data/union-data.js.',
     },
   'union-estados-contables-118-2023-24': {
       id:'union-estados-contables-118-2023-24', clubId:'union',
       title:'Estados Contables, Ejercicio N°118 (1°/7/2023 al 30/6/2024)',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (53 páginas, escaneado sin capa de texto, transcripto vía OCR), firmado 31/10/2024. SUPERÁVIT FINAL real: $1.166.322.977 ARS. A diferencia de 116/117, este archivo NO incluye el Anexo IV de detalle de Gastos por rubro — se cargó a nivel de las 6 categorías agregadas del Estado de Recursos y Gastos, con la excepción de "Amortizaciones" que se pudo partir en 2 cruzando contra el Anexo II (Activos Intangibles). No se encontró página de Estado de Situación Patrimonial — grossDebt/cash sin cargar. Convertido a USD con $890,50 (Anexo V, lado Activo/Créditos). Ver data/union-data.js.',
     },
   'union-memoria-y-balance-119': {
       id:'union-memoria-y-balance-119', clubId:'union',
       title:'Memoria y Balance (estados contables auditados), Ejercicio N°119, 1°/7/2024 al 30/6/2025',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (54 páginas) MIXTO: páginas 1-35 (Memoria) texto nativo, páginas 36-54 (Estados Contables reales) escaneadas sin capa de texto, transcriptas vía OCR (Tesseract, algunas páginas rotadas 90°). El Anexo V (moneda extranjera) no se pudo leer con confianza — se usó el dólar oficial vendedor BNA de cierre 30/6/2025 ($1.217,87), investigado externamente. Firmado por Luis Jorge Spahn como Presidente. DÉFICIT FINAL real: $(4.022.045.732) ARS. El Anexo IV (Gastos) no separaba limpiamente sus columnas de departamento en el OCR — se cargaron con confianza solo "Sueldos y Jornales de Fútbol" (wages_squad) y las 2 líneas de Amortizaciones (verificadas por checksum exacto), el resto de cada categoría se cargó a nivel agregado (ver comentario completo en data/union-data.js).',
     },
 });
 

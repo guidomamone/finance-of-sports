@@ -251,6 +251,24 @@ _antes de Gonzalo Belloso (data/gestiones/ar.js):_
 Belloso: proclamado en la elección del 18/12/2022; no hay una fecha de traspaso aparte, se usa la de la proclamación.
 ```
 
+## Fuentes
+
+### rosariocentral-estados-contables-2022-23
+
+_note (data/):_
+
+```text
+PDF oficial (43 páginas, texto nativo), auditado por Adler, Hasenclever y Asociados S.R.L. (Grant Thornton), informe de fecha 11/10/2023. DÉFICIT real del ejercicio: $(3.107.221.597) ARS. El Anexo IV (moneda extranjera) declara DOS cotizaciones de USD distintas en el mismo balance ($255 lado Activo, $268 lado Pasivo) — se usó $255 (coherente con "Caja y bancos"), ver duda abierta en Admin/dudas-por-club.md. Se corrigió una diferencia de $201.178.171 al verificar la suma de Gastos contra el total impreso: la fila "Préstamos" del Anexo VI se había leído con el valor equivocado por desalineación de columnas de pdftotext en una tabla muy ancha — ver comentario completo en data/rosariocentral-data.js.
+```
+
+### rosariocentral-estados-contables-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial (41 páginas, TEXTO NATIVO — a pesar de que la nota de sourcing decía "escaneo", se verificó con pdftotext -layout y tiene texto extraíble completo), auditado por Adler, Hasenclever & Asociados S.R.L. (Grant Thornton), informe de fecha 13/10/2025, Ejercicio Económico N° 136. DÉFICIT real del ejercicio: $(13.410.007.536) ARS. El Anexo IV declara USD 1.165,00 lado Activo (Caja/Bancos/Deudores por fútbol) y USD 1.215,00 lado Pasivo (Acreedores) — se usó 1.165 (lado Activo/Créditos). "Ingresos por cuotas" y "Sueldos y cargas sociales" se separaron por columna-por-sector (Institucional/Fútbol Profesional vs. resto de departamentos) — ver comentario completo en data/rosariocentral-data.js.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

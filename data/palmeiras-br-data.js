@@ -116,14 +116,12 @@ Object.assign(sources, {
     title:'Demonstrações Financeiras e Relatório dos Auditores Independentes, Exercícios Findos em 31 de Dezembro de 2024 e de 2023',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://www.palmeiras.com.br/balancetes-e-demonstrativos-financeiros/',
-    note:'PDF oficial (texto nativo), descarregado do portal de transparência oficial do Clube. DRE auditada segmentada em 4 colunas (Futebol profissional / Futebol feminino / Futebol de base / Clube social e esportes amadores) + Total — ver comentário de cabeçalho de data/palmeiras-br-data.js. Superávit real de R$198.183 mil, ano de venda grande de jogadores (Endrick para o Real Madrid, Luis Guilherme para o West Ham, entre outros — R$504.345 mil em receita bruta de Negociações com atletas). Convertido a USD com PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcrição completa em Clubes/Brasil/Palmeiras/demonstracoes-financeiras-2023-2024.md.',
   },
   'palmeiras-br-demonstracoes-2025': {
     id:'palmeiras-br-demonstracoes-2025', clubId:'palmeiras-br',
     title:'Demonstrações Financeiras e Relatório dos Auditores Independentes, Exercícios Findos em 31 de Dezembro de 2025 e de 2024',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://www.palmeiras.com.br/balancetes-e-demonstrativos-financeiros/',
-    note:'PDF oficial (texto nativo), mesmo canal que o de 2024, mesma estrutura de DRE em 4 colunas + Total. Superávit real de R$292.395 mil, novo recorde do Clube, impulsionado por Premiações (R$318.945 mil — vice-campeonato do Brasileirão e da Libertadores, participação na primeira Copa do Mundo de Clubes FIFA) e por receita bruta de Negociações de Atletas de R$602.208 mil. Convertido a USD com PTAX BCB de cierre 31/12/2025 (R$5,5024). Transcrição completa em Clubes/Brasil/Palmeiras/demonstracoes-financeiras-2024-2025.md.',
   },
 });
 

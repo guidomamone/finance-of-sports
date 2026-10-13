@@ -278,3 +278,21 @@ EXCLUYE Remuneraciones y cargas sociales, Cargas fiscales, Otros pasivos y Previ
 mismo criterio de "línea más angosta" que Boca/Vélez (club-data-mapping/referencia/formato-simplificado.md).
 cash = Caja y bancos (Estado de Situación Patrimonial, Activo Corriente).
 ```
+
+## Fuentes
+
+### talleres-ar-estados-contables-2024
+
+_note (data/):_
+
+```text
+Descargado de clubtalleres.com.ar (nota de prensa de la Asamblea, no de una sección fija de transparencia — ver fuentes/Argentina/Talleres.md). Auditado, con Informe de la Comisión Revisora de Cuentas. Expresado en moneda homogénea (RT6) a la fecha de cierre. Ejercicio CALENDARIO (1/1/2024-31/12/2024). El Anexo V (Moneda Extranjera) no declara un tipo de cambio de cierre único — ver comentario de cabecera de data/talleres-ar-data.js. Transcripción completa en Clubes/Argentina/Talleres/estados-contables-2024.md.
+```
+
+### talleres-ar-estados-contables-2025
+
+_note (data/):_
+
+```text
+Descargado de clubtalleres.com.ar (nota de prensa de la Asamblea 2026 — ver fuentes/Argentina/Talleres.md). Auditado, con Informe de la Comisión Revisora de Cuentas. Expresado en moneda homogénea (RT6) a la fecha de cierre. Ejercicio CALENDARIO (1/1/2025-31/12/2025). Transcripción completa en Clubes/Argentina/Talleres/estados-contables-2025.md.
+```

@@ -73,14 +73,12 @@ Object.assign(sources, {
     title:'Full accounts (Fulham Football Club Limited, standalone), ejercicio cerrado 30/6/2024',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/02114486/filing-history',
-    note:'Cuentas de la sociedad individual (no consolida, no tiene subsidiarias), depositadas en Companies House (Reino Unido). El CAPEX y financiamiento del Riverside Stand viven en Fulham Stadium Limited, compañía hermana no incluida acá. Transcripción completa en Clubes/Inglaterra/Fulham/fulham-full-accounts-2023-24.md. Ver comentario de cabecera de data/fulham-gb-data.js.',
   },
   'fulham-gb-full-accounts-2025': {
     id:'fulham-gb-full-accounts-2025', clubId:'fulham-gb',
     title:'Full accounts (Fulham Football Club Limited, standalone), ejercicio cerrado 30/6/2025',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/02114486/filing-history',
-    note:'Transcripción completa en Clubes/Inglaterra/Fulham/fulham-full-accounts-2024-25.md. "Gate Receipts" de este ejercicio tiene un valor forzado por el total (ver duda de OCR en Admin/dudas-por-club.md).',
   },
 });
 

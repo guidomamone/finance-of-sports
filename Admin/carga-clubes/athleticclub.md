@@ -115,6 +115,16 @@ _antes de Jon Uriarte (data/gestiones/es.js):_
 Uriarte asumió el 30/6/2022, el mismo día del cierre del ejercicio 2021/22; la derivación por cierre lo deja de Uriarte aunque ese balance lo formuló la junta de Elizegi (revisar con `firmo` si Guido lo prefiere).
 ```
 
+## Fuentes
+
+### athleticclub-cuentas-anuales-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial, texto nativo (sin OCR). Transcripción completa de la cuenta de resultados en Clubes/España/Athletic Club/cuentas-anuales-2024-2025-cuenta-resultados.md.
+```
+
 ## Otros
 
 ### athleticclubPasesData

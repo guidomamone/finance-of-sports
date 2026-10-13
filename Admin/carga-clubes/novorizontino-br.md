@@ -1062,3 +1062,115 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### novorizontino-br-demonstracoes-financeiras-2019
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### novorizontino-br-demonstracoes-financeiras-2020
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### novorizontino-br-demonstracoes-financeiras-2021
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### novorizontino-br-demonstracoes-financeiras-2024
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### novorizontino-br-demonstracoes-financeiras-2023
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### novorizontino-br-demonstracoes-financeiras-2018
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### novorizontino-br-demonstracoes-financeiras-2025
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### novorizontino-br-balanco-2010
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/balanco-2010.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### novorizontino-br-demonstracoes-financeiras-2022
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### novorizontino-br-dre-e-fluxo-de-caixa-2017
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### novorizontino-br-balanco-2016
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/balanco-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### novorizontino-br-balanco-2014-b
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/balanco-2014-b.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### novorizontino-br-balanco-2013
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/balanco-2013.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### novorizontino-br-balanco-2015
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/balanco-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

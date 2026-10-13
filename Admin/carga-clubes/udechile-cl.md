@@ -212,6 +212,32 @@ _al lado del campo `grossDebt`:_
 490,377 (corriente) + 13.817,537 (no corriente)
 ```
 
+## Fuentes
+
+### udechile-cl-estados-financieros-2024
+
+_note (data/):_
+
+```text
+Descargado de la CMF (Comisión para el Mercado Financiero de Chile), ficha de Azul Azul S.A. (RUT 76.838.140-0), pestaña "Información Financiera". Auditado por KAM Auditores Consultores Ltda. (Freddy Lizana S.), opinión sin salvedades. Cifras impresas en miles de pesos (M$); ninguna nota declara un tipo de cambio propio de cierre (solo un análisis de sensibilidad +/-10%, sin valor puntual), se usó el dólar observado SII de mercado (ver data/currency-map.js). Transcripción completa en Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2024.md.
+```
+
+### udechile-cl-estados-financieros-2023
+
+_note (data/):_
+
+```text
+Descargado de la CMF, misma ficha que el ejercicio 2024. Cifras confirmadas idénticas (sin reexpresar) contra el comparativo "2023" que trae el balance 2024. Transcripción completa en Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2023.md.
+```
+
+### udechile-cl-estados-financieros-2022
+
+_note (data/):_
+
+```text
+Descargado de la CMF, misma ficha. Cifras confirmadas idénticas (sin reexpresar) contra el comparativo "2022" que trae el balance 2023, salvo una diferencia de redondeo de 0,001 M CLP en "Ingresos varios" (1.053,975 M en el documento propio de 2022 vs. 1.053,974 M en el comparativo del documento 2023) — redondeo del propio emisor, no un error de transcripción. Transcripción completa en Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2022.md.
+```
+
 ## Otros
 
 ### udechilePasesData

@@ -173,3 +173,13 @@ _antes de Bruno Venanzi (data/gestiones/be.js):_
 ```text
 Venanzi: compró el 24/6/2015 (99,7%); acordó la venta a 777 Partners el 13/3/2022, que se cerró el 19/4/2022. Desde ahí no hay dueño persona.
 ```
+
+## Fuentes
+
+### standardliege-be-jaarrekening-2025
+
+_note (data/):_
+
+```text
+Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Banque Nationale de Belgique (BNB/NBB), esquema estatutario abreviado C-cap (Code des sociétés et des associations). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Standard Liège/jaarrekening-2025-06-30-individual.md. La Nota C-cap 6.10 (desglose de Chiffre d'affaires por categoría/mercado) no fue completada por el club en este filing; "Autres produits d'exploitation" solo desglosa el componente de subsidios estatales, el resto (67% de esa línea) queda sin especificar.
+```

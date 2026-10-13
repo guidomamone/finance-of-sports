@@ -58,7 +58,6 @@ Object.assign(sources, {
       id:'panathinaikos-gr-annual-fr-2025', clubId:'panathinaikos-gr',
       title:'Ετήσιες Οικονομικές Καταστάσεις (Annual Financial Report, IFRS), περίοδος 01.07.2024–30.06.2025',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Informe anual completo IFRS. PAT reconcilia EXACTO, sin residuo, línea por línea. La carpeta también tiene un "summary_IFRS_2025-06-30.md" que NO se usó -- corresponde en realidad al ejercicio 2020 (mal nombrado) y trae etiquetas de fila sin sentido, transcripción fallida descartada sin usar. Transcripción completa en Clubes/Grecia/Panathinaikos/Panathinaikos_annual_FR_2025-06-30.md.',
     },
 });
 

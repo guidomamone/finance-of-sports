@@ -143,3 +143,21 @@ _antes de Christian Bragarnik (data/gestiones/es.js):_
 ```text
 Bragarnik compró las acciones de José Sepulcre el 3/12/2019 (tesis de la UMH). El presidente formal es Joaquín Buitrago (desde agosto de 2019).
 ```
+
+## Fuentes
+
+### elche-es-informe-auditoria-2023-24
+
+_note (data/):_
+
+```text
+PDF con texto nativo (no escaneo, 64 páginas, Auren Auditores SP S.L.P.), transcripción completa en Clubes/España/Elche CF/informe-auditoria-cuentas-anuales-2023-2024.md. Primera temporada de Elche en Segunda División tras el descenso de 2022/23 — el resultado positivo del ejercicio está dominado por una "ayuda al descenso" de LaLiga de 11,8 M EUR (Nota 11.7), no por la actividad futbolística ordinaria.
+```
+
+### elche-es-cuentas-anuales-2024-25
+
+_note (data/):_
+
+```text
+PDF con texto nativo (70 páginas), transcripción completa en Clubes/España/Elche CF/cuentas-anuales-presupuesto-gestion-2024-2025.md. La tabla "Balance de situación" perdió sus columnas de números en la extracción del PDF (quedaron solo las etiquetas de fila) — grossDebt/cash de este ejercicio se reconstruyeron cruzando la Nota 8.2.1 (pasivos financieros, céntimo exacto) y la Nota 18.3 (Ratio de deuda neta, en miles de euros para el efectivo), documentado en el comentario de cabecera de elche-es-data.js. La Cuenta de pérdidas y ganancias sí se extrajo completa y reconcilia exacta.
+```

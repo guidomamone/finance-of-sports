@@ -124,3 +124,13 @@ _antes de Antonio Char Chaljub (data/gestiones/co.js):_
 Antonio Char asumió de nuevo a principios de 2025 (la prensa lo anunció el 18/1/2025 "desde el lunes"): 20/1/2025 es aproximada.
 Presidió antes 2016-12 a 2020-12 (reemplazado por Alejandro Arteta el 21/12/2020); ese tramo no hace falta para los años cargados.
 ```
+
+## Fuentes
+
+### junior-co-estados-financieros-2025
+
+_note (data/):_
+
+```text
+Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 900456729). Texto nativo, notas limpias con subtotales que reconcilian exacto en cada una. La Nota de Impuesto de Renta confirma la "Utilidad antes de provisión para impuesto sobre la renta" como cifra propia, lo que permitió verificar la reconstrucción completa sin ningún residuo. Transcripción completa en Clubes/Colombia/Junior de Barranquilla/estados-financieros-2025.md.
+```

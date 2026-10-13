@@ -1483,3 +1483,171 @@ Pallotta: presidente desde el 27/8/2012 (Corriere dello Sport, 30/12/2019).
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### asroma-it-bilancio-2022-consolidato
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2018
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2025
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2019
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2023
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2024
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2021
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2009
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2009.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2013
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2013.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2014
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2015
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2016
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2017
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2007
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2007.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2008
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2008.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2011-consolidato
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-consolidato.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2020
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2010
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2010.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2012
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2012.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2006
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2006.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### asroma-it-bilancio-2005
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```

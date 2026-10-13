@@ -165,6 +165,16 @@ _antes de Andy Kohlberg (data/gestiones/es.js):_
 Kohlberg: designado por el consejo el 8/9/2017; accionista mayoritario desde que Sarver le vendió su paquete en 2023.
 ```
 
+## Fuentes
+
+### rcdmallorca-es-cuentas-anuales-informe-gestion-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial (75 págs.), escaneo con ruido de OCR en la transcripción — la Cuenta de Pérdidas y Ganancias venía con las etiquetas de fila separadas de sus columnas de números (ver comentario de cabecera de data/rcdmallorca-es-data.js). Un dígito de "Importe neto de la cifra de negocios" se corrigió cruzando contra la Nota 31.1 (mejor calidad de OCR, misma tabla repetida). Bajado de rcdmallorca.es/en/ley-de-transparencia, host statics-maker.llt-services.com/mll/. Transcripción completa en Clubes/España/RCD Mallorca/cuentas-anuales-informe-gestion-2024-2025.md.
+```
+
 ## Otros
 
 ### memberCountByClub['rcdmallorca-es']

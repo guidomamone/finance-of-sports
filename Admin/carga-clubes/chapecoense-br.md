@@ -361,6 +361,24 @@ _antes de Alex Passos (data/gestiones/br.js):_
 Mandato 2024/25 (posse 11/12/2023). No se verifico si hubo reeleccion en diciembre de 2025.
 ```
 
+## Fuentes
+
+### chapecoense-br-demonstracoes-2017
+
+_note (data/):_
+
+```text
+PDF oficial standalone (un solo ejercicio, no comparativo con otros PDF ya cargados), texto nativo en todo el documento, sin páginas-imagen (a diferencia del documento 2020-2021). Se cargó la columna Controladora 2017 (año corriente), NO Consolidado ni la columna comparativa 2016. Superávit de R$4.832.261 sobre receita líquida de R$94.545.361, con Resultado Financeiro POSITIVO (+R$2.910.458, apalancado por aplicações financeiras de fondos recibidos tras la tragedia de LaMia de 2016). Sin inconsistencia de fuente (a diferencia del documento 2021): DRE y Notas explicativas reconcilian exacto entre sí. Se promovió "Custo Transf. Jogadores" (22,5% de la Nota 20 "Despesas com Pessoal") a línea propia player_amortisation en vez de dejarla enterrada en wages_squad. grossDebt = 0 ("Clube sem dívidas bancárias", Relatório da Administração). Convertido a USD con el PTAX BCB de cierre del 29/12/2017 (R$3,3080, último día hábil del año), investigado en esta sesión vía la API pública del BCB — no está en FX_CLOSE compartido todavía. Transcripción completa en Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2017.md.
+```
+
+### chapecoense-br-demonstracoes-2020-2021
+
+_note (data/):_
+
+```text
+PDF descargado de fcf.com.br (Federação Catarinense de Futebol), NO del sitio propio del club — documento comparativo 2021/2020, se cargó solo la columna 2021 (año corriente). Texto nativo en la mayoría de las páginas; el Balanço Patrimonial - Passivo y la Demonstração do Superávit/(Déficit) (págs. 6-7) son imagen dentro del PDF, releídas a 300dpi para esta carga. El documento tiene una inconsistencia interna real entre su DRE (pág. 7) y sus Notas explicativas de detalle (ver comentario de cabecera de este archivo) — documentada, no un error de transcripción. Ejercicio 2021: último balance ANTES de que el club pidiera Recuperação Judicial (24/1/2022, primer club brasileño en conseguirlo), con déficit grande y pasivo por contingencias litigiosas (en gran parte ligadas al accidente aéreo de 2016) casi sextuplicado en el año. Convertido a USD con PTAX BCB de cierre 31/12/2021 (R$5,5805), investigado en esta sesión (no está en FX_CLOSE compartido todavía). Transcripción completa en Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2020-2021.md.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

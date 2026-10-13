@@ -178,6 +178,24 @@ _antes de Khaldoon Al Mubarak (data/gestiones/gb.js):_
 Nombrado chairman el 23/9/2008 según Companies House; el club cambió de dueño el 1/9/2008. Se usa la fecha de Companies House.
 ```
 
+## Fuentes
+
+### mancity-gb-full-accounts-2024
+
+_note (data/):_
+
+```text
+PDF de 37 páginas depositado en Companies House ("Full accounts"), firmado por DocuSign y escaneado después de firmar, con capa de texto nativa (sin necesidad de OCR). Transcripción completa en Clubes/Inglaterra/Manchester City/manchester-city-full-accounts-2023-24.md. Auditor: BDO LLP. Ver el comentario de cabecera de este archivo para el detalle de la reconciliación de la fila "(Profit)/loss on disposal of property, plant and equipment" (ambigua en este ejercicio, resuelta cruzando contra el ejercicio 2024-25).
+```
+
+### mancity-gb-full-accounts-2025
+
+_note (data/):_
+
+```text
+PDF de 39 páginas depositado en Companies House ("Full accounts"), mismo formato y auditor (BDO LLP) que el ejercicio 2023-24. Transcripción completa en Clubes/Inglaterra/Manchester City/manchester-city-full-accounts-2024-25.md.
+```
+
 ## Otros
 
 ### Presupuesto al lado del balance (mancityGbPresupuestoOverlayByYear), en general

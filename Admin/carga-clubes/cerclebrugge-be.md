@@ -167,3 +167,13 @@ _antes de Frans Schotte (data/gestiones/be.js):_
 Sin dueño persona (AS Monaco compró la mayoría de la cvba el 5/5/2017). Presidentes según la lista de Wikipedia, solo año (01-01).
 Goemaere ya figura como voorzitter el 22/4/2020 (Sporza), antes del cierre del 30/6/2020. Tousseyn: la fuente da solo 2023; el ejercicio 2023 depende de ese año.
 ```
+
+## Fuentes
+
+### cerclebrugge-be-jaarrekening-2025
+
+_note (data/):_
+
+```text
+Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB), esquema estatutario VOL-inb. PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Cercle Brugge/jaarrekening-2025-06-30-individual.md. Propiedad de AS Monaco FC SAM. "Andere bedrijfsopbrengsten" (24,4 M EUR, 56% del revenue) casi no tiene desglose disponible en el documento; ver comentario de cabecera del archivo de datos y Admin/dudas-por-club.md. Nota 6.14 revela una condonación de deuda condicional de 52,8 M EUR de AS Monaco (fuera de balance) y plusvalías de transferencias de 6,6 M EUR del mercado de pases de verano 2025 (hecho posterior al cierre), ninguna de las dos cargadas en este ejercicio.
+```

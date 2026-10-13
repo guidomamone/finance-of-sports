@@ -51,7 +51,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/02529667/filing-history',
     publicNote:'Cuentas consolidadas del grupo depositadas en Companies House (Reino Unido). Incluye 2 ganancias no operativas por reorganización societaria intra-grupo (venta de una subsidiaria y sale-and-leaseback de mejoras del estadio a una sociedad hermana), registradas aparte del resultado futbolístico.',
-    note:'Transcripción completa en Clubes/Inglaterra/Newcastle United/newcastle-united-group-accounts-2024-25.md. Amanda Staveley renunció al directorio y desinvirtió su participación en julio de 2024. Ver comentario de cabecera de data/newcastle-gb-data.js para el detalle completo de categorización.',
   },
 });
 

@@ -185,6 +185,24 @@ officialPAT = "Superávit líquido do exercício" impreso (144 mil = 0,144 M BRL
 revenue + expenses + netInterest = 0,144 EXACTO, dígito por dígito.
 ```
 
+## Fuentes
+
+### rbbragantino-br-balanco-2019
+
+_note (data/):_
+
+```text
+PDF oficial recuperado vía Wayback Machine (el sitio en vivo, redbullbragantino.com.br, migró a una SPA que ya no sirve PDFs viejos, cualquier ruta devuelve el shell HTML — ver fuentes/Brasil/RB Bragantino.md). GOTCHA: PDF "Microsoft: Print To PDF" vectorial, sin capa de texto real — se transcribió con lectura visual/OCR, no extracción nativa; la tabla de Balanço patrimonial (Activo/Pasivo) salió con columnas/etiquetas parcialmente desordenadas en la transcripción y se reconstruyó cruzando subtotales impresos (ver comentario de cabecera de este archivo para el detalle). La DRE (Demonstração do resultado) es la parte confiable del documento: cierra EXACTO contra el Superávit líquido do exercício impreso (144 mil BRL, superávit real pese al Patrimônio Líquido negativo de -55.047 mil BRL heredado de años anteriores). Convertido a USD con PTAX BCB de cierre 31/12/2019 (R$4,0307 venda, investigado vía API Olinda del BCB esta sesión, todavía no está en FX_CLOSE).
+```
+
+### rbbragantino-br-balanco-2024
+
+_note (data/):_
+
+```text
+PDF oficial recuperado vía Wayback Machine (mismo gotcha del sitio en vivo que 2019, ver fuentes/Brasil/RB Bragantino.md). Auditado por BDO RCS Auditores Independentes SS, firmado 11/02/2025, con capa de texto real. La transcripción disponible cubre 5 páginas (Balanço, DRE, DRA, DMPL, DFC) pero NO las Notas explicativas (que existen en el PDF de 8-9 páginas según la prensa) — sin ellas, "Custo do departamento de futebol" (la línea de gasto más grande, 311,878 M BRL) no se pudo desglosar entre sueldos y amortización de derechos federativos de atletas, se cargó entera a wages_squad como aproximación (ver comentario de cabecera). Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923), ya en FX_CLOSE.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

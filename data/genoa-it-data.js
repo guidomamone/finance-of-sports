@@ -229,19 +229,16 @@ Object.assign(sources, {
     id:'genoa-it-bilancio-31-12-2022-individual', clubId:'genoa-it',
     title:'Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-31.12.2022-individual (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'genoa-it-bilancio-30-06-2025-individual': {
     id:'genoa-it-bilancio-30-06-2025-individual', clubId:'genoa-it',
     title:'Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-30.06.2025-individual (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'genoa-it-bilancio-31-12-2023-individual': {
     id:'genoa-it-bilancio-31-12-2023-individual', clubId:'genoa-it',
     title:'Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-31.12.2023-individual (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

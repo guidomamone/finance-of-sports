@@ -193,3 +193,13 @@ _antes de Ilija Karamatić (data/gestiones/hr.js):_
 Karamatić pasó a conducir el club en agosto de 2025 (presidente de la Skupština, tras Nenad Črnko) y quedó con el 100% el 21/10/2025: 1/8/2025 es aproximada.
 Črnko (presidente 16 años hasta agosto de 2025) no se carga: ningún año cargado cae en su gestión.
 ```
+
+## Fuentes
+
+### gorica-hr-financijsko-izvjesce-2025
+
+_note (data/):_
+
+```text
+Balance auditado, preparado según el Pravilnik o licenciranju i financijskoj održivosti klubova de la HNS. HNK Gorica NO capitaliza registraciones de jugadores (expensa el costo completo al momento de la operación, mismo patrón que Hajduk Split). La transcripción tenía las tablas de Prihodi y Bilanca desalineadas por el OCR/extracción de texto; se reconstruyó el orden cruzando la aritmética de cada subtotal "Ukupno" impreso. grossDebt es un piso (lower-bound): la reconciliación completa de pasivos corrientes/no corrientes no cerró exacta con las líneas identificables en la transcripción. Transcripción completa en Clubes/Croacia/Gorica/financijsko-izvjesce-2025.md.
+```

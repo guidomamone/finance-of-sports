@@ -88,14 +88,12 @@ Object.assign(sources, {
       title:'Demonstrações Financeiras do Volta Redonda Futebol Clube, Exercícios Findos em 31 de Dezembro de 2024 e de 2023',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://servicos.fferj.com.br/ClubesLigas/ViewTeam?alias=134',
-      note:'PDF escaneado sin capa de texto, transcripto vía OCR (Tesseract) — Clubes/Brasil/Volta Redonda/balanco-2024.md. Bajado del repositorio de la FERJ (Federação de Futebol do Estado do Rio de Janeiro), no del portal propio del club (que hoy no tiene histórico anterior a 2025). La transcripción OCR de la Nota 13.1(iii) (desglose de "Premiações, Bilheterias, Direitos Federativos e Outros") tenía un dígito mal leído; se corrigió cruzando contra la columna comparativa 2024 de demonstracoes-financeiras-2025.md (texto nativo), que sí reconcilia exacto — ver comentario de cabecera de data/voltaredonda-data.js. El resto de las cifras de 2024 reconcilia igual entre ambas fuentes.',
     },
   'voltaredonda-br-demonstracoes-2025': {
       id:'voltaredonda-br-demonstracoes-2025', clubId:'voltaredonda-br',
       title:'Demonstrações Financeiras do Volta Redonda Futebol Clube, Exercícios Findos em 31 de Dezembro de 2025 e de 2024',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://voltaco.com.br/transparency',
-      note:'PDF con texto nativo, descargado del portal propio de transparencia del club (API https://voltaco.com.br/api/documents, URLs firmadas MinIO/S3 con caducidad de 24 h). Transcripción completa en Clubes/Brasil/Volta Redonda/demonstracoes-financeiras-2025.md. Auditado por Activa Assessoria e Contabilidades Ltda., opinião com ressalvas (parecer-auditoria-externa-2025.md): la única salvedad real es depreciación del Imobilizado contabilizada solo parcialmente (sin control individual de bienes), sin impacto en las líneas de revenue/expense cargadas — no hay salvedad sobre ingresos ni gastos operativos. dre-2025.md (salida cruda del sistema contable, no auditada) reconcilia exacto contra el total de este balance (26.396.926,24 = Futebol Profissional + Administrativo del balance auditado) — mismo dato, más granular, no una fuente alternativa.',
     },
 });
 

@@ -58,7 +58,6 @@ Object.assign(sources, {
       title:'Cuentas Anuales 2024-2025 (presentadas en la Asamblea General de socios), Ejercicio 1/7/2024 a 30/6/2025',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://cdn.athletic-club.eus/txoko-utils/',
-      note:'PDF oficial, texto nativo (sin OCR). Transcripción completa de la cuenta de resultados en Clubes/España/Athletic Club/cuentas-anuales-2024-2025-cuenta-resultados.md.',
     },
 });
 

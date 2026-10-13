@@ -204,3 +204,21 @@ _antes de Markus Schütz (data/gestiones/de.js):_
 Schütz asumió el 8/7/2024, después del cierre del ejercicio 2024 (30/6/2024), pero firmó ese Konzernabschluss (Zuzenhausen, 7/10/2024, "Dr. Markus Schütz, Geschäftsführer"): firmo:[2024].
 Antes de él no había Vorsitzender (los Geschäftsführer eran Strich, Mayer y Rosen); Peter Görlich salió de la Geschäftsführung el 1/6/2021, así que no cubre ningún año cargado.
 ```
+
+## Fuentes
+
+### hoffenheim-de-konzernabschluss-2024
+
+_note (data/):_
+
+```text
+Konzernabschluss (cuentas consolidadas: TSG 1899 Hoffenheim Akademie GmbH, achtzehn99 Reha GmbH y la Zweckgesellschaft TSG 1899 Hoffenheim Fußball-Besitzgesellschaft mbH & Co. KG) bajado de unternehmensregister.de. 17 páginas. Transcripción completa en Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2023-24.md. La tabla de GuV de este ejercicio llegó con columnas desalineadas en la conversión PDF→Markdown; se reconstruyó cruzando el Konzernanhang/Lagebericht — ver comentario de cabecera de hoffenheim-de-data.js.
+```
+
+### hoffenheim-de-konzernabschluss-2025
+
+_note (data/):_
+
+```text
+Konzernabschluss (cuentas consolidadas). Bajado de unternehmensregister.de. 18 páginas. Transcripción completa en Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2024-25.md.
+```

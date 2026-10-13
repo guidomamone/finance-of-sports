@@ -143,6 +143,24 @@ AVISO: 13 meses (1/6/2024 a 30/6/2025), no 12 — ver aviso de cabecera de este 
 OJO: ejercicio de 13 meses (1/6/2024 a 30/6/2025), NO 12 — ver aviso de cabecera del archivo.
 ```
 
+## Fuentes
+
+### wolves-gb-full-accounts-2024
+
+_note (data/):_
+
+```text
+PDF con texto nativo, transcripción completa en Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2023-24.md. Propiedad de Fosun International Limited (vía W.W. (1990) Limited). No declara tipo de cambio propio (fxRef apunta a FX_CLOSE).
+```
+
+### wolves-gb-full-accounts-2025
+
+_note (data/):_
+
+```text
+PDF con texto nativo, transcripción completa en Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2024-25.md. Cash at bank derivado por reconciliación de subtotales (OCR ambiguo, ver comentario de cabecera). fxRef usa GBP@2025-06-30, cotización exacta del día de cierre real.
+```
+
 ## Otros
 
 ### gestionesByClub['wolves-gb']

@@ -153,14 +153,12 @@ Object.assign(sources, {
       title:'Estados Contables (balance auditado), Ejercicio 1°/7/2022 al 30/6/2023',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://rosariocentral.com/wp-content/uploads/2023/10/EECC-Club-Atletico-Rosario-Central-e-Informe-del-auditor-30.06.2023-Firma-FT-1-1-1.pdf',
-      note:'PDF oficial (43 páginas, texto nativo), auditado por Adler, Hasenclever y Asociados S.R.L. (Grant Thornton), informe de fecha 11/10/2023. DÉFICIT real del ejercicio: $(3.107.221.597) ARS. El Anexo IV (moneda extranjera) declara DOS cotizaciones de USD distintas en el mismo balance ($255 lado Activo, $268 lado Pasivo) — se usó $255 (coherente con "Caja y bancos"), ver duda abierta en Admin/dudas-por-club.md. Se corrigió una diferencia de $201.178.171 al verificar la suma de Gastos contra el total impreso: la fila "Préstamos" del Anexo VI se había leído con el valor equivocado por desalineación de columnas de pdftotext en una tabla muy ancha — ver comentario completo en data/rosariocentral-data.js.',
     },
   'rosariocentral-estados-contables-2024-25': {
       id:'rosariocentral-estados-contables-2024-25', clubId:'rosariocentral',
       title:'Estados Contables (balance auditado), Ejercicio 1°/7/2024 al 30/6/2025',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://rosariocentral.com/wp-content/uploads/2025/10/Balance.pdf',
-      note:'PDF oficial (41 páginas, TEXTO NATIVO — a pesar de que la nota de sourcing decía "escaneo", se verificó con pdftotext -layout y tiene texto extraíble completo), auditado por Adler, Hasenclever & Asociados S.R.L. (Grant Thornton), informe de fecha 13/10/2025, Ejercicio Económico N° 136. DÉFICIT real del ejercicio: $(13.410.007.536) ARS. El Anexo IV declara USD 1.165,00 lado Activo (Caja/Bancos/Deudores por fútbol) y USD 1.215,00 lado Pasivo (Acreedores) — se usó 1.165 (lado Activo/Créditos). "Ingresos por cuotas" y "Sueldos y cargas sociales" se separaron por columna-por-sector (Institucional/Fútbol Profesional vs. resto de departamentos) — ver comentario completo en data/rosariocentral-data.js.',
     },
 });
 

@@ -302,6 +302,56 @@ documento da un rango compra/venta, no un valor único como los Anexos de River/
 el promedio de los dos a falta de otro precedente en el sitio para este caso puntual.
 ```
 
+## Fuentes
+
+### alianzalima-pe-eeff-2019
+
+_note (data/):_
+
+```text
+EEFF auditados (NIIF) por TGS Sarrio & Asociados, dictamen sin salvedades (con párrafo de énfasis sobre el proceso concursal por insolvencia del club, ver Nota 1b). Transcripción con texto nativo (pdftotext -layout) en Clubes/Perú/Alianza Lima/estado-financiero-2019.md.
+```
+
+### alianzalima-pe-eeff-2020
+
+_note (data/):_
+
+```text
+EEFF auditados (NIIF) por TGS Sarrio & Asociados, dictamen sin salvedades (mismo párrafo de énfasis sobre el proceso concursal). Documento escaneado, transcripción OCR (Tesseract, -l spa --psm 6) en Clubes/Perú/Alianza Lima/estado-financiero-2020.md — números verificados contra el tie-out de Ingresos/Gastos/Resultado operativo del propio documento.
+```
+
+### alianzalima-pe-eeff-2021
+
+_note (data/):_
+
+```text
+EEFF auditados (NIIF) por Ropert, Sarrio y Asociados (mismo estudio, nueva razón social), dictamen sin salvedades. Transcripción con texto nativo en Clubes/Perú/Alianza Lima/estado-financiero-2021.md, columna 2021 verificada exacta contra la comparativa 2021 del EEFF 2022.
+```
+
+### alianzalima-pe-eeff-2022
+
+_note (data/):_
+
+```text
+EEFF auditados (NIIF) por Panez, Chacaliaza y Asociados. Documento escaneado, transcripción OCR en Clubes/Perú/Alianza Lima/estado-financiero-2022.md — ESTA TRANSCRIPCIÓN SOLO CUBRE LOS 4 ESTADOS PRINCIPALES, no las notas explicativas (a diferencia de 2019-2021), así que "Otros ingresos deportivos" y "Costos deportivos" quedan sin desglosar en revenueLines/expenseLines (ver comentario de cabecera de este archivo).
+```
+
+### alianzalima-pe-eeff-2023
+
+_note (data/):_
+
+```text
+EEFF auditados (NIIF). Documento escaneado de baja calidad (OCR con bastante ruido en las páginas de portada), transcripción en Clubes/Perú/Alianza Lima/estado-financiero-2023.md — igual que 2022, solo los 4 estados principales, sin notas. Deuda concursal de este ejercicio se tomó de la comparativa del EEFF 2024 (ver comentario en fiscalYearMeta[2023]).
+```
+
+### alianzalima-pe-eeff-2024
+
+_note (data/):_
+
+```text
+EEFF auditados (NIIF), publicados dentro de la Memoria Anual 2024 del club. Documento escaneado, transcripción OCR en Clubes/Perú/Alianza Lima/estado-financiero-2024.md — igual que 2022/2023, solo los 4 estados principales, sin notas.
+```
+
 ## Otros
 
 ### Meta (alianzalimaPeFiscalYearMeta), en general

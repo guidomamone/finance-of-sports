@@ -87,13 +87,11 @@ Object.assign(sources, {
       id:'girona-es-cuentas-anuales-2019-20', clubId:'girona-es',
       title:'Cuentas Anuales, Ejercicio cerrado el 30 de junio de 2020 (depósito estándar Registro Mercantil)',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial, escaneo con ruido de OCR en la transcripción. Un sub-ítem de "Otros gastos de explotación" se reconstruyó por residuo contra el subtotal impreso (probable dígito mal leído, ver comentario de cabecera de data/girona-es-data.js). Bajado vía statics-maker.llt-services.com/gir/ (mismo backend de CMS que otros clubes de LaLiga). Transcripción completa en Clubes/España/Girona FC/cuentas-anuales-2019-2020.md.',
     },
   'girona-es-informe-auditoria-cuentas-anuales-2024-25': {
       id:'girona-es-informe-auditoria-cuentas-anuales-2024-25', clubId:'girona-es',
       title:'Informe de Auditoría y Cuentas Anuales 2024-2025',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial, escaneo con ruido de OCR en la transcripción. "Amortización del inmovilizado" se corrigió por residuo contra RESULTADO DE EXPLOTACIÓN impreso (diferencia de exactamente EUR 3.000.000, ver comentario de cabecera de data/girona-es-data.js). Bajado vía statics-maker.llt-services.com/gir/. Transcripción completa en Clubes/España/Girona FC/informe-auditoria-cuentas-anuales-2024-2025.md.',
     },
 });
 

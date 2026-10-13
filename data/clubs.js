@@ -225,28 +225,24 @@ const sources = {
       id:'boca-presupuesto-2026-27', clubId:'boca',
       title:'Presupuesto Económico, Financiero y de Inversiones, Ejercicio N°123 (jul-2026 a jun-2027)',
       type:'official_budget', reliability:'primary',
-      note:'PDF subido directamente por Guido. Transcripto completo en el acordeón "Presupuesto 2026/27 (oficial)" de Finanzas.',
     },
   'boca-balance-2024-25': {
       id:'boca-balance-2024-25', clubId:'boca',
       title:'Memoria y Balance (estados contables auditados), Ejercicio Económico N°121, 1/7/2024 a 30/6/2025',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://www.bocajuniors.com.ar/club/presupuesto',
-      note:'PDF oficial (149 páginas, firmado por Comisión Directiva/Fiscalizadora, con dictamen de auditoría de Becher y Asociados S.R.L. sin salvedades, 10/09/2025), descargado del Google Drive linkeado en la página oficial del club. Cifras en moneda homogénea (reexpresadas a poder adquisitivo del 30/06/2025 según RT 6/17, Nota 2.2 del balance), no nominales del momento de cada operación. "Revenue" del sitio incluye ingresos por venta/rescisión de pases (Versión 102: igual que el propio balance los trata en su Total de Recursos, pág. 76, y que el resto de los clubes del motor genérico); "wages" es la suma real de "Remuneraciones y cargas sociales" de los 9 anexos que la desglosan por departamento (ver comentario de cabecera de data/boca-data.js).',
     },
   'boca-balance-2021-22': {
       id:'boca-balance-2021-22', clubId:'boca',
       title:'Estados Contables auditados, Ejercicio Económico N°118, 1/7/2021 a 30/6/2022',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://www.bocajuniors.com.ar/rebrand/files/EECC_30525418835_2022.pdf',
-      note:'PDF oficial (101 páginas, escaneado, sin dictamen con salvedades — Becher y Asociados S.R.L., 15/09/2022), no linkeado desde la página vigente del club: encontrado vía Wayback CDX de dominio completo sobre bocajuniors.com.ar (to-do 73, Versión 247, snapshot 2023-01-01), colgando de un directorio /rebrand/files/ sin ningún nombre obvio en el sitio vivo de hoy. Transcripto con Mistral OCR (Clubes/Argentina/Boca/eecc-30525418835-2022.md) y verificado íntegramente contra los totales impresos del propio documento (ver comentario de cabecera de data/boca-data.js).',
     },
   'boca-balance-2022-23': {
       id:'boca-balance-2022-23', clubId:'boca',
       title:'Estados Contables auditados, Ejercicio Económico N°119, 1/7/2022 a 30/6/2023',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://www.bocajuniors.com.ar/rebrand/files/balance_01_07_22_al_30_06_23_firmado.pdf',
-      note:'PDF oficial (128 páginas, escaneado, firmado, sin dictamen con salvedades — Becher y Asociados S.R.L., 08/09/2023), mismo hallazgo que 2021-22 (Wayback CDX de dominio completo, to-do 73, snapshot 2023-11-11, directorio /rebrand/files/). Transcripto con Mistral OCR (Clubes/Argentina/Boca/balance-01-07-22-al-30-06-23-firmado.md) y verificado íntegramente contra los totales impresos del propio documento.',
     },
 };
 

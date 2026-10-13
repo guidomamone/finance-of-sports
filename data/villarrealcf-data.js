@@ -46,7 +46,6 @@ Object.assign(sources, {
       title:'Estados Financieros correspondientes al ejercicio anual terminado el 30 de junio de 2024',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://web.archive.org/web/2024/https://villarrealcf.es/wp-content/uploads/2.b.ii-CCAA-Villarreal-firmadas.pdf',
-      note:'PDF oficial (auditado por Betea España Auditores, S.L.P.), escaneo sin capa de texto (leído renderizando a imagen, re-verificado a 300 DPI para confirmar signos negativos). Conseguido vía Wayback Machine porque el dominio del club bloquea la descarga directa del PDF (403). Único ejercicio disponible del club en esta sesión. Transcripción completa de la cuenta de resultados en Clubes/España/Villarreal CF/cuentas-anuales-2023-2024-cuenta-resultados.md.',
     },
 });
 

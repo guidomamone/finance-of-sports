@@ -155,3 +155,29 @@ _antes de Klaus Filbry (data/gestiones/de.js):_
 ```text
 Filbry: Vorsitzender der Geschäftsführung desde noviembre de 2012 (solo mes en la fuente, día 01 aproximado).
 ```
+
+## Fuentes
+
+### werderbremen-de-konzernabschluss-2023
+
+_note (data/):_
+
+```text
+Konzernabschluss (cuentas consolidadas, incluye Werder Bremen Merchandising GmbH y Werder Bremen Payment GmbH) bajado de unternehmensregister.de (registro mercantil oficial alemán). 21 páginas. Transcripción completa en Clubes/Alemania/Werder Bremen/konzernabschluss-2022-23.md.
+```
+
+### werderbremen-de-konzernabschluss-2024
+
+_note (data/):_
+
+```text
+Konzernabschluss (cuentas consolidadas) bajado de unternehmensregister.de. 21 páginas. Transcripción completa en Clubes/Alemania/Werder Bremen/konzernabschluss-2023-24.md.
+```
+
+### werderbremen-de-konzernabschluss-2025
+
+_note (data/):_
+
+```text
+Konzernabschluss (cuentas consolidadas) bajado de unternehmensregister.de. 20 páginas. Transcripción completa en Clubes/Alemania/Werder Bremen/konzernabschluss-2024-25.md. La tabla de GuV de este ejercicio llegó con columnas desalineadas en la conversión PDF→Markdown (ver comentario de cabecera de werderbremen-de-data.js sobre el resultado financiero/impuestos de 2025).
+```

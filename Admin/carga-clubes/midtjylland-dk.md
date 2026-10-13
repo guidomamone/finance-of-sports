@@ -89,3 +89,13 @@ _antes de Matthew Benham (data/gestiones/dk.js):_
 ```text
 Benham es el accionista mayoritario de FCM Holding desde julio de 2014 (día 01 aproximado). El chairman operativo (Rasmus Ankersen) es otro cargo y no se carga.
 ```
+
+## Fuentes
+
+### midtjylland-dk-aarsrapport-2019
+
+_note (data/):_
+
+```text
+Depositado en Erhvervsstyrelsen (registro mercantil danés). Transcripción completa en Clubes/Dinamarca/FC Midtjylland/aarsrapport-2019-06-30.md. Se eligió este ejercicio (no uno más reciente) porque los balances 2022/23-2024 reportan desde "Bruttofortjeneste" sin desglosar Revenue bruto — ver comentario de cabecera de data/midtjylland-dk-data.js.
+```

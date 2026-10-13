@@ -55,7 +55,6 @@ Object.assign(sources, {
     id:'mechelen-be-jaarrekening-2025', clubId:'mechelen-be',
     title:'Jaarrekening van Yellow-Red KV Mechelen NV voor het boekjaar van 1/7/2024 tot 30/6/2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Mechelen/jaarrekening-2025-06-30-individual.md. Nota 6.10 (desglose de Omzet por categoría/mercado geográfico) no fue completada por el club en este filing; "Andere bedrijfsopbrengsten" solo desglosa el componente de subsidios estatales, el resto queda sin especificar (ver comentario de cabecera del archivo de datos). El ejercicio incluyó un procedimiento de "alarmbelprocedure" (activo neto por debajo de la mitad del capital) resuelto con un aumento de capital de ~17M EUR vía conversión de préstamos de accionistas.',
   },
 });
 

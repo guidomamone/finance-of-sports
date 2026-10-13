@@ -387,31 +387,26 @@ Object.assign(sources, {
     id:'fiorentina-it-bilancio-2024-25', clubId:'fiorentina-it',
     title:'ACF Fiorentina S.r.l. — Fiorentina-bilancio-2024-25 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Fiorentina/Fiorentina-bilancio-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'fiorentina-it-bilancio-2023-24': {
     id:'fiorentina-it-bilancio-2023-24', clubId:'fiorentina-it',
     title:'ACF Fiorentina S.r.l. — Fiorentina-bilancio-2023-24 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Fiorentina/Fiorentina-bilancio-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'fiorentina-it-bilancio-2021-22-issuu': {
     id:'fiorentina-it-bilancio-2021-22-issuu', clubId:'fiorentina-it',
     title:'ACF Fiorentina S.r.l. — Fiorentina-bilancio-2021-22-issuu (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'fiorentina-it-bilancio-2020-21-issuu': {
     id:'fiorentina-it-bilancio-2020-21-issuu', clubId:'fiorentina-it',
     title:'ACF Fiorentina S.r.l. — Fiorentina-bilancio-2020-21-issuu (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Fiorentina/Fiorentina-bilancio-2020-21-issuu.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'fiorentina-it-bilancio-consolidato-2019-issuu': {
     id:'fiorentina-it-bilancio-consolidato-2019-issuu', clubId:'fiorentina-it',
     title:'ACF Fiorentina S.r.l. — Fiorentina-bilancio-consolidato-2019-issuu (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Fiorentina/Fiorentina-bilancio-consolidato-2019-issuu.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 

@@ -82,6 +82,16 @@ _antes de Enrique Cerezo (data/gestiones/es.js):_
 Cerezo es el presidente; Miguel Ángel Gil Marín (consejero delegado, accionista de referencia) no se carga como dueño: criterio a confirmar por Guido.
 ```
 
+## Fuentes
+
+### atleticomadrid-cuentas-anuales-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial de 96 páginas, texto nativo (sin OCR). Balance/PyG individuales (no consolidado — el club no reporta como grupo con este nivel de detalle en este documento). Transcripción completa de la cuenta de resultados en Clubes/España/Atlético de Madrid/cuentas-anuales-2024-2025-cuenta-resultados.md.
+```
+
 ## Otros
 
 ### atleticomadridPasesData

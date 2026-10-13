@@ -1398,3 +1398,187 @@ Andrea Agnelli: nombrado por el consejo el 19/5/2010; renunció el 28/11/2022 y 
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### juventus-it-annual-financial-report-2011-12
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2012-13
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2012-13.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2013-14
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2013-14.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2014-15
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2014-15.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2024-25
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2015-16
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2016-17
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2016-17.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2017-18
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2017-18.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2019-20
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2020-21
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2006-07
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2006-07.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2008-09
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2008-09.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2009-10
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2009-10.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2018-19
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2018-19.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2002-03
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2003-04
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2004-05
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2004-05.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2005-06
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2007-08
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2010-11
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2010-11.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2022-23
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-04) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2023-24
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-04) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### juventus-it-annual-financial-report-2021-22
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-04) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

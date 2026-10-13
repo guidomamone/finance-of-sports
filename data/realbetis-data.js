@@ -57,7 +57,6 @@ Object.assign(sources, {
       id:'realbetis-informe-auditoria-2024-25', clubId:'realbetis',
       title:'Informe de Auditoría, Memoria y Estado de Información No Financiera 2024-2025, Ejercicio 1/7/2024 a 30/6/2025',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial, texto nativo (sin OCR). Transcripción completa de la cuenta de resultados en Clubes/España/Real Betis/informe-auditoria-memoria-einf-2024-2025-cuenta-resultados.md.',
     },
 });
 

@@ -99,3 +99,13 @@ Ejercicio 2025. Fuente: Nota 7 "Employees" (staff costs), Strategic Report "Fina
 y Nota 12/5 (Amortisation/Impairment of players' registrations). Suma exacta a -£444.749m =
 officialTotalExpenses (sin exceptional_items, este ejercicio no tuvo ninguno).
 ```
+
+## Fuentes
+
+### newcastle-gb-group-accounts-2025
+
+_note (data/):_
+
+```text
+Transcripción completa en Clubes/Inglaterra/Newcastle United/newcastle-united-group-accounts-2024-25.md. Amanda Staveley renunció al directorio y desinvirtió su participación en julio de 2024. Ver comentario de cabecera de data/newcastle-gb-data.js para el detalle completo de categorización.
+```

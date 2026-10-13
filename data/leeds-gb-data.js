@@ -76,7 +76,6 @@ Object.assign(sources, {
     title:'Consolidated Financial Statements (Leeds United Football Club Limited), ejercicio cerrado 30/6/2024',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/06233875/filing-history',
-    note:'Cuentas consolidadas del grupo, auditadas por Gibson Booth, depositadas en Companies House (Reino Unido). Championship (no Premier League), verificado contra el propio documento y WebSearch. Transcripción completa en Clubes/Inglaterra/Leeds United/leeds-group-accounts-2023-24.md. Ver comentario de cabecera de data/leeds-gb-data.js.',
   },
   'leeds-gb-group-accounts-2025': {
     id:'leeds-gb-group-accounts-2025', clubId:'leeds-gb',
@@ -84,7 +83,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/06233875/filing-history',
     publicNote:'Campeón del Championship 2024-25 (100 puntos), ascendido a la Premier League para la temporada 2025-26 (fuera del alcance de este ejercicio).',
-    note:'Transcripción completa en Clubes/Inglaterra/Leeds United/leeds-group-accounts-2024-25.md.',
   },
 });
 

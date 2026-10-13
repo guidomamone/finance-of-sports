@@ -100,7 +100,6 @@ Object.assign(sources, {
     title:'Demonstrações Contábeis (Auditadas) para os Exercícios Findos em 31 de Dezembro de 2024 e de 2023',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://botafogofutebolsa.com.br/',
-    note:'PDF oficial (texto nativo), descargado del portal institucional de la SAF (botafogofutebolsa.com.br). DRE auditada con 8 notas de desglose (21-28) — ver comentario de cabecera de data/botafogosp-br-data.js. Prejuízo real de R$3.543.877 (2024), después de un lucro de R$906.642 en 2023. Patrimônio líquido negativo (R$-27.924.832 al cierre 2024). Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2023-2024.md. El mismo archivo fuente también cubre 2019/2020 y 2022/2023 (NO cargados en esta sesión, ver nota de alcance de cabecera).',
   },
 });
 

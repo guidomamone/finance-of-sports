@@ -210,6 +210,16 @@ López Bedoya: presidente, representante legal y máximo accionista (Supersocied
 la familia López Bedoya recuperó el club en 9/2010 (Wikipedia en inglés) y Las2orillas dice que lleva 16 años en el equipo en 2026. Desde aproximado: 2010-09-01, sin confirmar. El anuncio de venta a Group Empresarios Full CCI Dubai (11/2025) no se concretó según las fuentes.
 ```
 
+## Fuentes
+
+### deportivopereira-co-estados-financieros-2025
+
+_note (data/):_
+
+```text
+Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 901644853). PDF con texto nativo, pero cada tabla de cifras está insertada como imagen (captura de Excel) — números leídos renderizando esas páginas puntuales a PNG y leyéndolas directo, no de la transcripción .md (que solo tiene el texto narrativo). El 22/1/2026 la Superintendencia de Sociedades ordenó DE OFICIO el inicio de un proceso de reorganización empresarial (Auto 2026-01-023551) por cesación de pagos de $11.252 M (50,4% del pasivo) verificada al 31/8/2025 — el ejercicio 2025 acá cargado es el que sustenta esa decisión; el dictamen del revisor fiscal confirma incertidumbre material de negocio en marcha, sin modificar su opinión. Transcripción completa en Clubes/Colombia/Deportivo Pereira/estados-financieros-2025.md.
+```
+
 ## Otros
 
 ### gestionesByClub['deportivopereira-co']

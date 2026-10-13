@@ -122,6 +122,24 @@ _antes de Matthew Benham (data/gestiones/gb.js):_
 Benham tomó el control total en junio de 2012 (Bees United votó la transferencia); día 01 aproximado. Cliff Crown fue chairman; Benham es el dueño.
 ```
 
+## Fuentes
+
+### brentford-gb-group-accounts-2024
+
+_note (data/):_
+
+```text
+PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Brentford/brentford-group-accounts-2023-24.md. La Nota de intereses pagados imprime un total (£6.020M) que no reconcilia con el resto del documento — se usó £5.020M (suma exacta de sus 2 componentes, y el único valor que hace cerrar Loss before taxation), ver comentario de cabecera de data/brentford-gb-data.js. No se encontró un tipo de cambio GBP/USD propio declarado — fxRef apunta a FX_CLOSE (GBP@2024-06-30).
+```
+
+### brentford-gb-group-accounts-2025
+
+_note (data/):_
+
+```text
+PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Brentford/brentford-group-accounts-2024-25.md. fxRef apunta a FX_CLOSE (GBP@2025-06-30).
+```
+
 ## Otros
 
 ### brentfordGbPasesData

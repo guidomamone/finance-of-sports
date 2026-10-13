@@ -102,3 +102,21 @@ Ejercicio 2024. Suma = -203.811855 exacto = -(Cost of sales + Administrative exp
 Nota 24 "Analysis of changes in net debt": Debt due within one year 37.177167 + due after one
 year 23.120370 = 60.297537, reconcilia EXACTO con cash-grossDebt=-55.288543 impreso.
 ```
+
+## Fuentes
+
+### leeds-gb-group-accounts-2024
+
+_note (data/):_
+
+```text
+Cuentas consolidadas del grupo, auditadas por Gibson Booth, depositadas en Companies House (Reino Unido). Championship (no Premier League), verificado contra el propio documento y WebSearch. Transcripción completa en Clubes/Inglaterra/Leeds United/leeds-group-accounts-2023-24.md. Ver comentario de cabecera de data/leeds-gb-data.js.
+```
+
+### leeds-gb-group-accounts-2025
+
+_note (data/):_
+
+```text
+Transcripción completa en Clubes/Inglaterra/Leeds United/leeds-group-accounts-2024-25.md.
+```

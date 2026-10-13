@@ -60,7 +60,6 @@ Object.assign(sources, {
       title:'Cuentas Anuales 2024-2025, Ejercicio 1/7/2024 a 30/6/2025',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://www.atleticodemadrid.com/pdf/cuentas_anuales_2025.pdf',
-      note:'PDF oficial de 96 páginas, texto nativo (sin OCR). Balance/PyG individuales (no consolidado — el club no reporta como grupo con este nivel de detalle en este documento). Transcripción completa de la cuenta de resultados en Clubes/España/Atlético de Madrid/cuentas-anuales-2024-2025-cuenta-resultados.md.',
     },
 });
 

@@ -251,6 +251,16 @@ déficit real, 6,8x maior que 2024) — revenue-expenses+netInterest da EXACTO -
 diferença de redondeo.
 ```
 
+## Fuentes
+
+### sportrecife-br-demonstracoes-2025
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo), descargado del Portal de Transparência oficial del Clube (ver fuentes/Brasil/Sport Recife.md). Auditado por BDO RCS Auditores Associados Ltda., que emitió ABSTENÇÃO DE OPINIÃO (no una opinião limpia ni con ressalva: el auditor declara explícitamente que não expressa opinião) por múltiples limitações de escopo simultáneas: ausência de confirmações externas de contas correntes/aplicações/empréstimos; falta de evidência sobre créditos a receber (R$31.107 mil), contas a pagar (R$118.769 mil), obrigações sociais e trabalhistas (R$33.472 mil) e receitas a reconhecer/antecipadas (R$35.594 mil); ausência de confirmações de partes relacionadas (R$26.786 mil); ausência de revisão da vida útil do imobilizado; ausência de extratos de depósitos judiciais (R$6.169 mil); reapresentação de saldos de exercícios anteriores sem retificação completa dos comparativos (CPC 23); y una limitación específica sobre el tratamento contábil de la recompra parcial de participação em direitos de transmissão junto a la Liga Forte União (R$74.625 mil), bajo consulta técnica sin resolver ante el CFC — el mismo asunto LFU que motivó la ressalva de Fluminense 2025 (ver data/fluminense-br-data.js). El Clube está "Em Recuperação Judicial" (Lei nº 11.101/2005), con Plano homologado el 28/10/2025. Déficit do exercício de R$112.497 mil (6,8x mayor que 2024), primer patrimônio líquido negativo de su historia reciente (-R$21.707 mil) y caja reducida a R$2.388 mil (-93% interanual). Cambio de presidencia dentro del ejercicio: renuncia del então Presidente el 12/12/2025, eleição suplementar el 15/12/2025, posse de Matheus Souto Maior el 19/12/2025 (12 días antes del cierre) — no se cargó gestionesByClub por atribución ambigua, ver comentario de cabecera de data/sportrecife-br-data.js. Rebaixamento de la Série A para la Série B del Campeonato Brasileiro al cierre de la temporada esportiva 2025. Convertido a USD con PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2025 (R$5,5024) — el documento no declara un tipo de cambio propio. Transcripción completa en Clubes/Brasil/Sport Recife/demonstracoes-financeiras-2025.md.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

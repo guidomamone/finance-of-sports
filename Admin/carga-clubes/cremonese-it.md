@@ -406,3 +406,35 @@ Rossi: la lista de presidentes da solo el año de arranque (2017); 01/01 por con
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### cremonese-it-bilancio-2025
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Cremonese/Cremonese-bilancio-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### cremonese-it-bilancio-2024
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Cremonese/Cremonese-bilancio-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### cremonese-it-bilancio-2022
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Cremonese/Cremonese-bilancio-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### cremonese-it-bilancio-2023
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Cremonese/Cremonese-bilancio-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

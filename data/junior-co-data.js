@@ -78,7 +78,6 @@ Object.assign(sources, {
       id:'junior-co-estados-financieros-2025', clubId:'junior-co',
       title:'Notas a los Estados Financieros por los años terminados el 31 de diciembre de 2025 y 2024',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 900456729). Texto nativo, notas limpias con subtotales que reconcilian exacto en cada una. La Nota de Impuesto de Renta confirma la "Utilidad antes de provisión para impuesto sobre la renta" como cifra propia, lo que permitió verificar la reconstrucción completa sin ningún residuo. Transcripción completa en Clubes/Colombia/Junior de Barranquilla/estados-financieros-2025.md.',
     },
 });
 

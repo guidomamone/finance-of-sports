@@ -121,6 +121,16 @@ Primera etapa de Pérez, Calderón y Boluda: fechas de memoria, sin fuente verif
 Segunda etapa: la lista de Wikipedia da solo el año (2009); el 1/6/2009 es la fecha de proclamación y toma de posesión que recuerdo, pero no la pude contrastar en esta pasada.
 ```
 
+## Fuentes
+
+### realmadrid-informe-economico-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial de 94 páginas, texto nativo (sin necesidad de OCR), publicado en la sección de transparencia del club. Cuentas anuales CONSOLIDADAS (Grupo Real Madrid, incluye Real Madrid Estadio S.L.U. y Aparcamientos del Santiago Bernabéu S.L.). Transcripción de la cuenta de pérdidas y ganancias + Nota 4 (amortización de jugadores) + deuda/caja en Clubes/España/Real Madrid/informe-economico-2024-2025-cuenta-resultados.md.
+```
+
 ## Otros
 
 ### realmadridPasesData

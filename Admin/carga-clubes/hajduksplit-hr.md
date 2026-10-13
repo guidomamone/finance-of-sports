@@ -173,3 +173,13 @@ Financijski prihodi(0) - Financijski rashodi(810.410) + Neto tečajne razlike(78
 grossDebt = Bankovni i ostali zajmovi (corriente 5.124.513 + no corriente 0). cash = Novac i
 novčani ekvivalenti.
 ```
+
+## Fuentes
+
+### hajduksplit-hr-financijsko-izvjesce-2024
+
+_note (data/):_
+
+```text
+Balance auditado de HNK Hajduk s.d.d., preparado según el Pravilnik o licenciranju i financijskoj održivosti klubova de la HNS. Auditor: Kalibović i partneri d.o.o. Dictamen limpio, sin salvedades. El documento fuente presenta varias celdas con calidad de OCR media (dígitos truncados o perdidos); los valores afectados se reconstruyeron cruzando contra los subtotales "Ukupno" impresos (ver comentario de cabecera de data/hajduksplit-hr-data.js para el detalle de cada reconstrucción). Transcripción completa en Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2024.md.
+```

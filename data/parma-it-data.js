@@ -588,55 +588,46 @@ Object.assign(sources, {
     id:'parma-it-bilancio-31-12-2023-individual', clubId:'parma-it',
     title:'Parma Calcio 1913 S.r.l. — Parma-bilancio-31.12.2023-individual (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'parma-it-bilancio-31-12-2021-individual': {
     id:'parma-it-bilancio-31-12-2021-individual', clubId:'parma-it',
     title:'Parma Calcio 1913 S.r.l. — Parma-bilancio-31.12.2021-individual (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'parma-it-bilancio-31-12-2022-consolidato': {
     id:'parma-it-bilancio-31-12-2022-consolidato', clubId:'parma-it',
     title:'Parma Calcio 1913 S.r.l. — Parma-bilancio-31.12.2022-consolidato (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'parma-it-bilancio-31-12-2024-individual': {
     id:'parma-it-bilancio-31-12-2024-individual', clubId:'parma-it',
     title:'Parma Calcio 1913 S.r.l. — Parma-bilancio-31.12.2024-individual (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2024-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'parma-it-bilancio-31-12-2025-consolidato': {
     id:'parma-it-bilancio-31-12-2025-consolidato', clubId:'parma-it',
     title:'Parma Calcio 1913 S.r.l. — Parma-bilancio-31.12.2025-consolidato (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'parma-it-bilancio-30-06-2018': {
     id:'parma-it-bilancio-30-06-2018', clubId:'parma-it',
     title:'Parma Calcio 1913 S.r.l. — Parma-bilancio-30.06.2018 (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-30.06.2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'parma-it-bilancio-30-06-2019-individual': {
     id:'parma-it-bilancio-30-06-2019-individual', clubId:'parma-it',
     title:'Parma Calcio 1913 S.r.l. — Parma-bilancio-30.06.2019-individual (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-30.06.2019-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'parma-it-bilancio-30-06-2016-individual': {
     id:'parma-it-bilancio-30-06-2016-individual', clubId:'parma-it',
     title:'Parma Calcio 1913 S.r.l. — Parma-bilancio-30.06.2016-individual (ejercicio 2016)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-30.06.2016-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'parma-it-bilancio-30-06-2017-individual': {
     id:'parma-it-bilancio-30-06-2017-individual', clubId:'parma-it',
     title:'Parma Calcio 1913 S.r.l. — Parma-bilancio-30.06.2017-individual (ejercicio 2017)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-30.06.2017-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

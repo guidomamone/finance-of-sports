@@ -84,7 +84,6 @@ Object.assign(sources, {
     id:'rcdmallorca-es-cuentas-anuales-informe-gestion-2024-25', clubId:'rcdmallorca-es',
     title:'Cuentas Anuales e Informe de Gestión, Temporada 2024-25',
     type:'official_balance_sheet', reliability:'primary',
-    note:'PDF oficial (75 págs.), escaneo con ruido de OCR en la transcripción — la Cuenta de Pérdidas y Ganancias venía con las etiquetas de fila separadas de sus columnas de números (ver comentario de cabecera de data/rcdmallorca-es-data.js). Un dígito de "Importe neto de la cifra de negocios" se corrigió cruzando contra la Nota 31.1 (mejor calidad de OCR, misma tabla repetida). Bajado de rcdmallorca.es/en/ley-de-transparencia, host statics-maker.llt-services.com/mll/. Transcripción completa en Clubes/España/RCD Mallorca/cuentas-anuales-informe-gestion-2024-2025.md.',
   },
 });
 

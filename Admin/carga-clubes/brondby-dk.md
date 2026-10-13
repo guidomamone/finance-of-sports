@@ -165,3 +165,13 @@ _antes de Jan Bech Andersen (data/gestiones/dk.js):_
 ```text
 Cierre 31/12. Cambios por convencion (el informe 2016 trae "Jan Bech Andersen genopstiller ikke som formand" para la asamblea de 2016; Jesper Møller firma 2016 a 2018). Vuelta de Bech Andersen: asamblea del 2/4/2019 (informe 2019).
 ```
+
+## Fuentes
+
+### brondby-aarsrapport-2020
+
+_note (data/):_
+
+```text
+Descargado vía distribution.virk.dk (Erhvervsstyrelsen, CVR 83 93 34 10). Año afectado por COVID-19 (compensación estatal por pérdidas de organizador y nómina durante los cierres, ver Nota 6). Reporta bajo NIIF/IFRS, formato Totalindkomstopgørelse (distinto del formato clásico "årsregnskabsloven" de FC København/FC Midtjylland). Transcripción completa en Clubes/Dinamarca/Brøndby/aarsrapport-2020-12-31.md. No hay ejercicios más nuevos transcriptos todavía para este club.
+```

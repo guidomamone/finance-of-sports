@@ -63,6 +63,11 @@ que dice `ESTADO.md` era verdad ese día.
 - `category-map.js`, `sources-view.js`, `destacados.js`, `deflactores.js`, `site-labels.js`, `lang/en.js` y `lang/langs.js`: sin historia,
   comentarios de 1 a 3 líneas, mismo código; el criterio de los deflactores en ARQUITECTURA. Lo que queda en `data/` (17 KB de comentarios)
   es técnico y sin historia interna. ASSET_V 822.
+- `tools/mover-notas-fuentes.mjs`: el campo `note` (nota INTERNA) de las 688 fuentes de `sources{}` sale de `data/` y pasa a "## Fuentes" /
+  "### <sourceId>" del `.md` de cada club (verificado ejecutando cada archivo antes y después: solo cambian los `note`). Los 5 `note` públicos
+  de las cards de presupuesto (Boca, Racing) quedan. `cargar.mjs` escribe la nota de una fuente nueva en el `.md`; la prueba retrospectiva
+  de `alta-club.mjs` la lee de ahí (`--informe-backtest` igual antes y después). `audit.js`: `note-interna-en-data` (P2). `evidencia-club.mjs`
+  suma `agregarFuente()` y `textoDeFuente()`. ASSET_V 823.
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 

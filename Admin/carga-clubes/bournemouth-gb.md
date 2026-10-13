@@ -129,6 +129,24 @@ clasificación propia del documento, ver comentario de cabecera). cash = Cash at
 hand.
 ```
 
+## Fuentes
+
+### bournemouth-gb-full-accounts-2024
+
+_note (data/):_
+
+```text
+PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2023-24.md. No se encontró un tipo de cambio GBP/USD propio declarado por el documento — fxRef apunta a FX_CLOSE (GBP@2024-06-30).
+```
+
+### bournemouth-gb-full-accounts-2025
+
+_note (data/):_
+
+```text
+PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2024-25.md. Adopta una presentación nueva (leases/right-of-use assets) que restata levemente el comparativo 2024 — se usó SIEMPRE la presentación propia de cada ejercicio, nunca la comparativa del documento del año siguiente (ver comentario de cabecera de data/bournemouth-gb-data.js). fxRef apunta a FX_CLOSE (GBP@2025-06-30).
+```
+
 ## Otros
 
 ### bournemouthGbPasesData

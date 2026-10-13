@@ -128,3 +128,13 @@ _antes de Sihar Sitorus (data/gestiones/be.js):_
 Sitorus: dueño (Wikipedia). El 30/1/2018 entró el grupo indonesio (Belinda Siahaan, gedelegeerd bestuurder desde esa fecha, y Denderfoot NV);
 Sitorus figura en el consejo desde el 3/6/2019. La fecha de compra se toma del cambio de consejo (aproximada).
 ```
+
+## Fuentes
+
+### dender-be-jaarrekening-2025
+
+_note (data/):_
+
+```text
+Cuentas de la VZW (asociación sin fines de lucro) individual, NO consolidadas con NV Dender Foot (sociedad comercial hermana que, per nota de la propia jaarrekening, absorberá parte de la actividad desde el ejercicio 2025-26). Esquema estatutario ABREVIADO (VKT-VZW): no desglosa Omzet por categoría de ingreso, a diferencia del esquema completo de otros clubes belgas cargados. PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Dender EH/jaarrekening-2025-06-30-individual.md.
+```

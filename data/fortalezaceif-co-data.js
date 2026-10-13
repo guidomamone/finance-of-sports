@@ -866,55 +866,46 @@ Object.assign(sources, {
     id:'fortalezaceif-co-estados-financieros-2017', clubId:'fortalezaceif-co',
     title:'FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2017 (ejercicio 2017)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'fortalezaceif-co-estados-financieros-2018': {
     id:'fortalezaceif-co-estados-financieros-2018', clubId:'fortalezaceif-co',
     title:'FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2018 (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'fortalezaceif-co-estados-financieros-2019': {
     id:'fortalezaceif-co-estados-financieros-2019', clubId:'fortalezaceif-co',
     title:'FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2019 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'fortalezaceif-co-estados-financieros-2020': {
     id:'fortalezaceif-co-estados-financieros-2020', clubId:'fortalezaceif-co',
     title:'FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2020 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'fortalezaceif-co-estados-financieros-2023': {
     id:'fortalezaceif-co-estados-financieros-2023', clubId:'fortalezaceif-co',
     title:'FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'fortalezaceif-co-estados-financieros-2024': {
     id:'fortalezaceif-co-estados-financieros-2024', clubId:'fortalezaceif-co',
     title:'FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'fortalezaceif-co-estados-financieros-2025': {
     id:'fortalezaceif-co-estados-financieros-2025', clubId:'fortalezaceif-co',
     title:'FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'fortalezaceif-co-estados-financieros-2021': {
     id:'fortalezaceif-co-estados-financieros-2021', clubId:'fortalezaceif-co',
     title:'FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2021 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'fortalezaceif-co-estados-financieros-2022': {
     id:'fortalezaceif-co-estados-financieros-2022', clubId:'fortalezaceif-co',
     title:'FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

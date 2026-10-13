@@ -70,6 +70,16 @@ Peter Lim (Meriton Holdings) es el dueño; los presidentes formales (Amadeo Salv
 La fecha 24/10/2014 (traspaso de las acciones) salió de una sola nota de prensa; revisar si Guido quiere otra (la elección de la oferta fue el 17/5/2014).
 ```
 
+## Fuentes
+
+### valenciacf-cuentas-anuales-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial de 64 páginas, escaneo sin capa de texto (leído renderizando a imagen). Cuentas individuales, auditadas por Ernst & Young sin salvedades. Transcripción completa de la cuenta de resultados en Clubes/España/Valencia CF/cuentas-anuales-2024-2025-cuenta-resultados.md.
+```
+
 ## Otros
 
 ### valenciacfPasesData

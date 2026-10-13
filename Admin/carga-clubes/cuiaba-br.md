@@ -273,3 +273,35 @@ tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### cuiaba-br-balanco-financeiro-2022
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Cuiaba/balanco-financeiro-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### cuiaba-br-balanco-financeiro-2024
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Cuiaba/balanco-financeiro-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### cuiaba-br-balanco-financeiro-2025
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Cuiaba/balanco-financeiro-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### cuiaba-br-demonstracoes-financeiras-2023-auditadas
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

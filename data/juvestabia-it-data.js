@@ -66,7 +66,6 @@ Object.assign(sources, {
     id:'juvestabia-it-bilancio-2024-ifrs-sec-6k', clubId:'juvestabia-it',
     title:'Società Sportiva Juve Stabia S.r.l. — Juve Stabia-bilancio-2024-IFRS-SEC-6K (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

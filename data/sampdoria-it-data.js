@@ -314,25 +314,21 @@ Object.assign(sources, {
     id:'sampdoria-it-fascicolo-bilancio-2021', clubId:'sampdoria-it',
     title:'U.C. Sampdoria S.p.A. — Sampdoria-fascicolo-bilancio-2021 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'sampdoria-it-fascicolo-bilancio-2018': {
     id:'sampdoria-it-fascicolo-bilancio-2018', clubId:'sampdoria-it',
     title:'U.C. Sampdoria S.p.A. — Sampdoria-fascicolo-bilancio-2018 (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'sampdoria-it-fascicolo-bilancio-2019': {
     id:'sampdoria-it-fascicolo-bilancio-2019', clubId:'sampdoria-it',
     title:'U.C. Sampdoria S.p.A. — Sampdoria-fascicolo-bilancio-2019 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'sampdoria-it-fascicolo-bilancio-2020': {
     id:'sampdoria-it-fascicolo-bilancio-2020', clubId:'sampdoria-it',
     title:'U.C. Sampdoria S.p.A. — Sampdoria-fascicolo-bilancio-2020 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

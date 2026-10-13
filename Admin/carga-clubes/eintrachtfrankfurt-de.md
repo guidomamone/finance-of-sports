@@ -162,6 +162,24 @@ completo) que solo suma 24,211 de los 26,414 impresos — agregar esos sub-ítem
 implicaría una falsa completitud (mismo criterio ya aplicado a "TV-Rechte" en este archivo).
 ```
 
+## Fuentes
+
+### eintrachtfrankfurt-de-konzernabschluss-2024
+
+_note (data/):_
+
+```text
+Descargado vía unternehmensregister.de. Extracto de 34 págs.: Konzernlagebericht + Konzernbilanz + Konzern-GuV + Konzernanhang. Consolidado (Konzern) — es el total oficial de este club, no existe un balance individual paralelo. Transcripción completa en Clubes/Alemania/Eintracht Frankfurt/konzernabschluss-2023-24.md.
+```
+
+### eintrachtfrankfurt-de-konzernabschluss-2025
+
+_note (data/):_
+
+```text
+Descargado vía unternehmensregister.de. Extracto de 34 págs., mismo formato que el ejercicio 2023/24. Primer año con Jahresfehlbetrag (pérdida) desde que se carga este club. Transcripción completa en Clubes/Alemania/Eintracht Frankfurt/konzernabschluss-2024-25.md.
+```
+
 ## Otros
 
 ### gestionesByClub['eintrachtfrankfurt-de']

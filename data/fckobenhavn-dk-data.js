@@ -57,7 +57,6 @@ Object.assign(sources, {
       id:'fckobenhavn-aarsrapport-2024', clubId:'fckobenhavn-dk',
       title:'F.C. København P/S — Årsrapport for 2024 (1. januar - 31. december 2024)',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Descargado vía distribution.virk.dk (Erhvervsstyrelsen, CVR 43 95 21 61). Entidad constituida 29/03/2023 que aísla la operación de fútbol masculino profesional, distinta de la holding consolidada PARKEN Sport & Entertainment A/S (CVR 15 10 77 07, no cargada, perímetro mezclado con estadio/retail/fútbol femenino). Auditado por EY sin salvedades. Transcripción completa en Clubes/Dinamarca/FC København/aarsrapport-2024-12-31.md.',
     },
 });
 

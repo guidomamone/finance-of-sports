@@ -184,3 +184,13 @@ _antes de Philippe Van Esch (data/gestiones/be.js):_
 ```text
 Van Esch: entró como accionista (44%) en la ampliación de capital de enero de 2023 y es hoofdaandeelhouder y voorzitter.
 ```
+
+## Fuentes
+
+### mechelen-be-jaarrekening-2025
+
+_note (data/):_
+
+```text
+Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Mechelen/jaarrekening-2025-06-30-individual.md. Nota 6.10 (desglose de Omzet por categoría/mercado geográfico) no fue completada por el club en este filing; "Andere bedrijfsopbrengsten" solo desglosa el componente de subsidios estatales, el resto queda sin especificar (ver comentario de cabecera del archivo de datos). El ejercicio incluyó un procedimiento de "alarmbelprocedure" (activo neto por debajo de la mitad del capital) resuelto con un aumento de capital de ~17M EUR vía conversión de préstamos de accionistas.
+```

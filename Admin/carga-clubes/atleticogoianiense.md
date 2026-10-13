@@ -112,6 +112,16 @@ officialTotalRevenue/officialTotalExpenses = suma verificada de revenueLines/exp
 número EXACTO del documento).
 ```
 
+## Fuentes
+
+### atleticogoianiense-demonstracoes-2024-2025
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo), descargado del portal de transparencia propio del club. Se cargó la columna CONSOLIDADO (no Controladora — ver comentario de cabecera de data/atleticogoianiense-data.js: la Associação standalone reporta cifras muy chicas tras transferir el fútbol profesional a la SAF durante 2025, el Consolidado refleja el tamaño real de la operación). Transcripción completa en Clubes/Brasil/Atletico Goianiense/demonstracoes-financeiras-2024-2025.md. 2025 marcó el retorno al superávit tras un déficit de R$45.111 mil en 2024 (año de descenso a la Série B). Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024), investigado externamente.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

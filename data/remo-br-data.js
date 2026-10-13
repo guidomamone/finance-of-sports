@@ -249,43 +249,36 @@ Object.assign(sources, {
     id:'remo-br-demonstracoes-contabeis-2021', clubId:'remo-br',
     title:'Clube do Remo — demonstracoes-contabeis-2021 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/demonstracoes-contabeis-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'remo-br-demonstracoes-financeiras-2025': {
     id:'remo-br-demonstracoes-financeiras-2025', clubId:'remo-br',
     title:'Clube do Remo — demonstracoes-financeiras-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/demonstracoes-financeiras-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'remo-br-relatorio-auditor-independente-2022': {
     id:'remo-br-relatorio-auditor-independente-2022', clubId:'remo-br',
     title:'Clube do Remo — relatorio-auditor-independente-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/relatorio-auditor-independente-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'remo-br-dre-2019': {
     id:'remo-br-dre-2019', clubId:'remo-br',
     title:'Clube do Remo — dre-2019 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/dre-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'remo-br-relatorio-auditoria-2020': {
     id:'remo-br-relatorio-auditoria-2020', clubId:'remo-br',
     title:'Clube do Remo — relatorio-auditoria-2020 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/relatorio-auditoria-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'remo-br-dre-2023': {
     id:'remo-br-dre-2023', clubId:'remo-br',
     title:'Clube do Remo — dre-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/dre-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'remo-br-dre-2024': {
     id:'remo-br-dre-2024', clubId:'remo-br',
     title:'Clube do Remo — dre-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/dre-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

@@ -96,6 +96,24 @@ _antes de Chen Yansheng (data/gestiones/es.js):_
 Chen Yansheng (Rastar) tomó el control en enero de 2016 (nota del 19/1/2016) y relevó a Joan Collet.
 ```
 
+## Fuentes
+
+### espanyol-es-cuentas-anuales-gestion-auditoria-2023-24
+
+_note (data/):_
+
+```text
+PDF oficial, texto nativo (sin OCR). Auditado por TAC Tax and Auditing Consultants, S.L. Ejercicio jugado en Segunda División (Espanyol descendió de LaLiga al cierre de 2022-23, ascendió de vuelta al ganar el playoff en junio de 2024). Bajado de rcdespanyol.com/es/transparencia-compliance-canaleticoycomunicaciones. Transcripción completa en Clubes/España/RCD Espanyol/cuentas-anuales-gestion-auditoria-2023-2024.md.
+```
+
+### espanyol-es-cuentas-anuales-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial, escaneo con ruido de OCR real en la transcripción .md (varios dígitos mal leídos, incluida la sección final de impuestos/resultado, que salió ilegible). Los montos de este archivo salen de una relectura directa de la página 12 del PDF renderizada a imagen (300 DPI), no de la transcripción .md original. Bajado de rcdespanyol.com/es/transparencia-compliance-canaleticoycomunicaciones. Transcripción completa (con las cifras sin corregir) en Clubes/España/RCD Espanyol/cuentas-anuales-2024-2025.md.
+```
+
 ## Otros
 
 ### memberCountByClub['espanyol-es']

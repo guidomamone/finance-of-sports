@@ -71,7 +71,6 @@ Object.assign(sources, {
     id:'slavenbelupo-hr-financijsko-izvjesce-2025', clubId:'slavenbelupo-hr',
     title:'NK Slaven Belupo, Koprivnica — Godišnji financijski izvještaji za 2025. godinu',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Balance auditado individual (el club no tiene subsidiarias), preparado según el Pravilnik o licenciranju i financijskoj održivosti klubova (HNS, 11/2025). Auditor: RSM Croatia d.o.o., sin salvedades. Transcripción completa en Clubes/Croacia/Slaven Belupo/financijsko-izvjesce-2025.md.',
   },
 });
 

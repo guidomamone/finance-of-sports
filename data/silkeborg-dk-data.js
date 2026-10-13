@@ -64,7 +64,6 @@ Object.assign(sources, {
     id:'silkeborg-aarsrapport-2024', clubId:'silkeborg-dk',
     title:'Silkeborg IF A/S — Annual report 2024 (01.01.2024 - 31.12.2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Entidad única (CVR 26397731), sin subsidiarias consolidadas. Auditor: BDO Statsautoriseret revisionsaktieselskab, sin salvedades. Cambio de control societario el 18/12/2024 (Trivela Group V ApS compró 80% del capital), no afecta las cifras del ejercicio 2024. Transcripción completa en Clubes/Dinamarca/Silkeborg IF/aarsrapport-2024-12-31.md.',
   },
 });
 

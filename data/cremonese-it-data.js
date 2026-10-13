@@ -305,25 +305,21 @@ Object.assign(sources, {
     id:'cremonese-it-bilancio-2025', clubId:'cremonese-it',
     title:'U.S. Cremonese S.p.A. — Cremonese-bilancio-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Cremonese/Cremonese-bilancio-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'cremonese-it-bilancio-2024': {
     id:'cremonese-it-bilancio-2024', clubId:'cremonese-it',
     title:'U.S. Cremonese S.p.A. — Cremonese-bilancio-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Cremonese/Cremonese-bilancio-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'cremonese-it-bilancio-2022': {
     id:'cremonese-it-bilancio-2022', clubId:'cremonese-it',
     title:'U.S. Cremonese S.p.A. — Cremonese-bilancio-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Cremonese/Cremonese-bilancio-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'cremonese-it-bilancio-2023': {
     id:'cremonese-it-bilancio-2023', clubId:'cremonese-it',
     title:'U.S. Cremonese S.p.A. — Cremonese-bilancio-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Cremonese/Cremonese-bilancio-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

@@ -94,7 +94,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary_official',
     url:'https://find-and-update.company-information.service.gov.uk/company/00035668/filing-history',
     publicNote:'Balance auditado consolidado, depositado en Companies House (Reino Unido) por The Liverpool Football Club and Athletic Grounds Limited, sociedad n.° 00035668. El documento no separa el costo de personal por área (plantel profesional vs. resto del club), así que "Salarios del plantel" en este ejercicio refleja el costo de personal TOTAL del grupo (jugadores, cuerpo técnico y todo el resto del staff), no solo el plantel profesional.',
-    note:'Transcripción completa en Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2023-24.md (38 págs. escaneadas, con capa de texto vía pdftotext/OCR previo, ver fuentes/Inglaterra/Liverpool.md). Ejercicio cerrado el 31 de mayo (confirmado en carátula y Group Strategic Report). Auditor: Ernst & Young LLP. Controlante última: Fenway Sports Group, LLC (Nota 25).',
   },
   'liverpool-gb-group-accounts-2025': {
     id:'liverpool-gb-group-accounts-2025', clubId:'liverpool-gb',
@@ -102,7 +101,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary_official',
     url:'https://find-and-update.company-information.service.gov.uk/company/00035668/filing-history',
     publicNote:'Balance auditado consolidado, depositado en Companies House (Reino Unido) por The Liverpool Football Club and Athletic Grounds Limited, sociedad n.° 00035668. Mismo criterio de personal sin desglosar por área que el ejercicio 2023/24 (ver su nota).',
-    note:'Transcripción completa en Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2024-25.md. Ejercicio cerrado el 31 de mayo. Controlante última: Fenway Sports Group, LLC (Nota 25). Incluye "Other operating income" (12,9 M GBP) por un seguro de lucro cesante, cargado a other_income.',
   },
 });
 

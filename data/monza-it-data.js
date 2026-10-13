@@ -315,19 +315,16 @@ Object.assign(sources, {
     id:'monza-it-bilancio-2022', clubId:'monza-it',
     title:'Associazione Calcio Monza S.p.A. — Monza-bilancio-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Monza/Monza-bilancio-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'monza-it-bilancio-2023': {
     id:'monza-it-bilancio-2023', clubId:'monza-it',
     title:'Associazione Calcio Monza S.p.A. — Monza-bilancio-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Monza/Monza-bilancio-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'monza-it-bilancio-2024': {
     id:'monza-it-bilancio-2024', clubId:'monza-it',
     title:'Associazione Calcio Monza S.p.A. — Monza-bilancio-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Monza/Monza-bilancio-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

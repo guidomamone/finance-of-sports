@@ -141,3 +141,21 @@ _antes de Dennis te Kloese (data/gestiones/nl.js):_
 ```text
 Te Kloese: nombrado el 15/1/2022; deja el club el 1/7/2026.
 ```
+
+## Fuentes
+
+### feyenoord-nl-jaarverslag-2024
+
+_note (data/):_
+
+```text
+Jaarverslag oficial consolidado de Feyenoord Rotterdam N.V., descargado del canal público de la KNVB (licencia F.04). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/Feyenoord/jaarverslag-2023-24.md.
+```
+
+### feyenoord-nl-jaarverslag-2025
+
+_note (data/):_
+
+```text
+Jaarverslag oficial consolidado de Feyenoord Rotterdam N.V., descargado del canal público de la KNVB (licencia F.04). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/Feyenoord/jaarverslag-2024-25.md.
+```

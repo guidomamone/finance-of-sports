@@ -151,7 +151,6 @@ Object.assign(sources, {
     id:'banfield-ar-memoria-y-balance-2019-2020', clubId:'banfield-ar',
     title:'Memoria y Balance General, 116° Ejercicio Económico (1°/7/2019 al 30/6/2020)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'PDF oficial (58 páginas, texto nativo, sin OCR), informe del auditor (Juan Pablo Régoli, C.P.C.E.P.B.A.) del 30/9/2020, sin salvedades. URL oficial del club (clubabanfield.org/inicio/balance/CAB-MemoriaBalance2020.pdf) da 404 hoy — recuperado del snapshot de Wayback Machine de esa misma URL (ver fuentes/Argentina/Banfield.md). RESULTADO FINAL real: $80.173.576,08 ARS (superávit). Total del Activo al cierre: $1.253.147.745,78. Reporta por SECTOR/DEPARTAMENTO (Fútbol Profesional, Fútbol Amateur, Estadio, Administración Sede Social, Predio, Departamento Deportes, Instituto CAB) más 2 Anexos transversales (Impositivos y Financieros, Generales), a diferencia del desglose por naturaleza de gasto de otros clubes. No declara tipo de cambio de cierre propio (sin Anexo de moneda extranjera) — convertido con cotización de mercado (ARS@2020-06-30, FX_CLOSE). Ver data/banfield-ar-data.js para el detalle completo de categorización.',
   },
 });
 

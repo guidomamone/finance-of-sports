@@ -92,13 +92,11 @@ Object.assign(sources, {
     id:'augsburg-de-konzernabschluss-2024', clubId:'augsburg-de',
     title:'Konzernabschluss zum Geschäftsjahr vom 01.07.2023 bis zum 30.06.2024 (Fußball-Club Augsburg 1907 GmbH & Co. KGaA)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Extracto del Unternehmensregister alemán (HRB 21812, Amtsgericht Augsburg). Cuentas CONSOLIDADAS del grupo (FCA KGaA + F.C. Augsburg Arena Besitz und Betriebs GmbH, 91,7%). Transcripción completa en Clubes/Alemania/FC Augsburg/konzernabschluss-2023-24.md.',
   },
   'augsburg-de-konzernabschluss-2025': {
     id:'augsburg-de-konzernabschluss-2025', clubId:'augsburg-de',
     title:'Konzernabschluss zum Geschäftsjahr vom 01.07.2024 bis zum 30.06.2025 (Fußball-Club Augsburg 1907 GmbH & Co. KGaA)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Extracto del Unternehmensregister alemán (HRB 21812, Amtsgericht Augsburg). Cuentas CONSOLIDADAS del grupo (FCA KGaA + F.C. Augsburg Arena Besitz und Betriebs GmbH, 91,7%). Transcripción completa en Clubes/Alemania/FC Augsburg/konzernabschluss-2024-25.md.',
   },
 });
 

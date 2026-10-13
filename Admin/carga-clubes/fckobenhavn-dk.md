@@ -167,3 +167,13 @@ _antes de Henrik Møgelmose (data/gestiones/dk.js):_
 ```text
 Møgelmose: era næstformand en 2020 y formand en los informes 2023 y 2024; la fecha de asuncion (asamblea del 19/4/2021) es inferida, no hay comunicado a mano.
 ```
+
+## Fuentes
+
+### fckobenhavn-aarsrapport-2024
+
+_note (data/):_
+
+```text
+Descargado vía distribution.virk.dk (Erhvervsstyrelsen, CVR 43 95 21 61). Entidad constituida 29/03/2023 que aísla la operación de fútbol masculino profesional, distinta de la holding consolidada PARKEN Sport & Entertainment A/S (CVR 15 10 77 07, no cargada, perímetro mezclado con estadio/retail/fútbol femenino). Auditado por EY sin salvedades. Transcripción completa en Clubes/Dinamarca/FC København/aarsrapport-2024-12-31.md.
+```

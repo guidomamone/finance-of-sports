@@ -109,7 +109,6 @@ Object.assign(sources, {
       id:'godoycruz-ar-estados-contables-2019-20', clubId:'godoycruz-ar',
       title:'Estados Contables, Ejercicio N° 72 (1°/7/2019 al 30/6/2020), Club Deportivo Godoy Cruz Antonio Tomba',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Estados Contables auditados (legalizados por el CPCE Mendoza el 14/10/2020). Transcripción completa (OCR) en Clubes/Argentina/Godoy Cruz/estados-contables-ejercicio-2019-20.md. La fila "Transporte" del Estado de Recursos y Gastos es un subtotal de página mal etiquetado, no una línea de gasto real — ver comentario de cabecera de godoycruz-ar-data.js. Tipo de cambio aproximado (no declarado por el documento).',
     },
 });
 

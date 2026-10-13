@@ -57,7 +57,6 @@ Object.assign(sources, {
       title:'Cuentas Anuales e Informe de Gestión 2024-2025 (Individuales, Informe de Auditoría de EY), Ejercicio 1/7/2024 a 30/6/2025',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://www.valenciacf.com/public/Attachment/',
-      note:'PDF oficial de 64 páginas, escaneo sin capa de texto (leído renderizando a imagen). Cuentas individuales, auditadas por Ernst & Young sin salvedades. Transcripción completa de la cuenta de resultados en Clubes/España/Valencia CF/cuentas-anuales-2024-2025-cuenta-resultados.md.',
     },
 });
 

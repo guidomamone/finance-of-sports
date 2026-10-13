@@ -531,3 +531,51 @@ Setti compró el club el 23/6/2012 (único dueño desde marzo de 2013); presiden
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### hellasverona-it-bilancio-individuale-2020
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### hellasverona-it-bilancio-individuale-2023
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### hellasverona-it-bilancio-individuale-2021
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### hellasverona-it-bilancio-individuale-2022
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### hellasverona-it-bilancio-individuale-2025
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### hellasverona-it-bilancio-individuale-2024
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

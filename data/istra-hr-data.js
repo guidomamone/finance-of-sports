@@ -76,7 +76,6 @@ Object.assign(sources, {
     id:'istra-hr-financijsko-izvjesce-2025', clubId:'istra-hr',
     title:'Financijski izvještaji na dan 31. prosinca 2025. godine s izvješćem revizora (Pravilnik o licenciranju i financijskoj održivosti klubova HNS-a)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Balance auditado (NK Istra 1961 s.d.d. Pula). Auditor: Consultum Komparić d.o.o., con un párrafo de "Isticanje pitanja" (sin modificar la opinión) remitiendo a la Bilješka 22 sobre litigios judiciales en curso — no cuantificados en el balance. PDF con capa de texto nativa en la mayor parte (usado con pdftotext -layout); las páginas de detalle financiero/no-operativo y la Bilanca son escaneos, verificadas con OCR + lectura directa de la imagen. Transcripción completa en Clubes/Croacia/Istra 1961/financijsko-izvjesce-2025.md.',
   },
 });
 

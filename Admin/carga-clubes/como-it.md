@@ -333,3 +333,19 @@ presidencia (2019 o 2024); decisión de Guido 2026-10-07: desde 2019 (solo el a�
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### como-it-gruppo-pro-forma-consolidamento-2025
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### como-it-fascicolo-bilancio-2024
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Como/Como-fascicolo-bilancio-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

@@ -725,49 +725,41 @@ Object.assign(sources, {
     id:'inter-it-fascicolo-bilancio-consolidato-2021-22', clubId:'inter-it',
     title:'F.C. Internazionale Milano S.p.A. — Inter-fascicolo-bilancio-consolidato-2021-22 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'inter-it-fascicolo-bilancio-consolidato-2024-25': {
     id:'inter-it-fascicolo-bilancio-consolidato-2024-25', clubId:'inter-it',
     title:'F.C. Internazionale Milano S.p.A. — Inter-fascicolo-bilancio-consolidato-2024-25 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'inter-it-fascicolo-bilancio-consolidato-2019-20': {
     id:'inter-it-fascicolo-bilancio-consolidato-2019-20', clubId:'inter-it',
     title:'F.C. Internazionale Milano S.p.A. — Inter-fascicolo-bilancio-consolidato-2019-20 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'inter-it-fascicolo-bilancio-consolidato-2018-19': {
     id:'inter-it-fascicolo-bilancio-consolidato-2018-19', clubId:'inter-it',
     title:'F.C. Internazionale Milano S.p.A. — Inter-fascicolo-bilancio-consolidato-2018-19 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2018-19.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'inter-it-fascicolo-bilancio-consolidato-2017-18': {
     id:'inter-it-fascicolo-bilancio-consolidato-2017-18', clubId:'inter-it',
     title:'F.C. Internazionale Milano S.p.A. — Inter-fascicolo-bilancio-consolidato-2017-18 (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'inter-it-fascicolo-bilancio-consolidato-2023-24': {
     id:'inter-it-fascicolo-bilancio-consolidato-2023-24', clubId:'inter-it',
     title:'F.C. Internazionale Milano S.p.A. — Inter-fascicolo-bilancio-consolidato-2023-24 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'inter-it-fascicolo-bilancio-consolidato-2022-23': {
     id:'inter-it-fascicolo-bilancio-consolidato-2022-23', clubId:'inter-it',
     title:'F.C. Internazionale Milano S.p.A. — Inter-fascicolo-bilancio-consolidato-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'inter-it-fascicolo-bilancio-consolidato-2020-21-en': {
     id:'inter-it-fascicolo-bilancio-consolidato-2020-21-en', clubId:'inter-it',
     title:'F.C. Internazionale Milano S.p.A. — Inter-fascicolo-bilancio-consolidato-2020-21-en (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2020-21-en.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 

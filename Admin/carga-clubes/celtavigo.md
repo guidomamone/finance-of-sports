@@ -76,6 +76,16 @@ _antes de Carlos Mouriño (data/gestiones/es.js):_
 Carlos Mouriño: compró el paquete de Horacio Gómez en mayo de 2006 (dia 01 por convencion). Renunció a fines de septiembre de 2023; Marián ejerció en funciones hasta su nombramiento por el consejo el 13/12/2023.
 ```
 
+## Fuentes
+
+### celtavigo-cuentas-anuales-individual-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial, texto nativo (sin OCR). Cuentas individuales (no consolidadas, aunque el club también publicó consolidadas por separado). Transcripción completa de la cuenta de resultados en Clubes/España/Celta de Vigo/cuentas-anuales-individual-2024-2025-cuenta-resultados.md.
+```
+
 ## Otros
 
 ### celtavigoPasesData

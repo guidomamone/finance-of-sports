@@ -148,3 +148,21 @@ _antes de Merijn Zeeman (data/gestiones/nl.js):_
 ```text
 Zeeman: algemeen directeur desde el 1/12/2024 (informe 2024/25).
 ```
+
+## Fuentes
+
+### az-nl-jaarrekening-2024
+
+_note (data/):_
+
+```text
+Jaarrekening oficial consolidada de AZ Holding B.V., descargada del canal público de la KNVB (licencia F.04). Solo estados contables (sin memoria narrativa, a diferencia de Ajax/PSV/Feyenoord). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/AZ/jaarrekening-2023-24.md.
+```
+
+### az-nl-jaarrekening-2025
+
+_note (data/):_
+
+```text
+Jaarrekening oficial consolidada de AZ Holding B.V., descargada del canal público de la KNVB (licencia F.04). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/AZ/jaarrekening-2024-25.md.
+```

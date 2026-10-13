@@ -60,7 +60,6 @@ Object.assign(sources, {
     id:'zultewaregem-be-jaarrekening-2025', clubId:'zultewaregem-be',
     title:'Jaarrekening van Grensverleggend NV (SV Zulte Waregem) voor het boekjaar van 1/7/2024 tot 30/6/2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB), esquema estatutario VOL-kap. PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Zulte Waregem/jaarrekening-2025-06-30-individual.md. Nota 6.10 (desglose de Omzet por categoría/mercado geográfico) no fue completada por el club en este filing; "Andere bedrijfsopbrengsten" solo desglosa el componente de subsidios estatales, el resto queda sin especificar. Patrimonio neto negativo al cierre (-0,73 M EUR), procedimiento de alarma societaria activo, resuelto parcialmente con un aumento de capital de 7 M EUR durante el ejercicio.',
   },
 });
 

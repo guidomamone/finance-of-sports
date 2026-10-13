@@ -78,7 +78,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/08335231/filing-history',
     publicNote:'Balance consolidado auditado (BDO LLP, con énfasis de negocio en marcha) de Burnley FC Holdings Limited, la sociedad matriz del grupo (ALK Capital / Alan Pace), depositado en Companies House (Reino Unido). Ejercicio cerrado el 31 de julio de 2024 (temporada 2023/24, Premier League — recién ascendido, descendió al terminar 19°).',
-    note:'PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Burnley/burnley-fc-holdings-group-accounts-2023-24.md. Cuentas consolidadas del grupo (no las individuales de The Burnley Football & Athletic Company Limited, n° 00054222). No se encontró un tipo de cambio GBP/USD propio declarado por el documento — fxRef apunta a FX_CLOSE (GBP@2024-07-31, agregada en esta sesión, cierre BCE al 31/7/2024).',
   },
   'burnley-gb-holdings-group-accounts-2025': {
     id:'burnley-gb-holdings-group-accounts-2025', clubId:'burnley-gb',
@@ -86,7 +85,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/08335231/filing-history',
     publicNote:'Balance consolidado auditado (BDO LLP) de Burnley FC Holdings Limited. Ejercicio cerrado el 31 de julio de 2025 (temporada 2024/25, CHAMPIONSHIP — recién descendido, ascendió de nuevo terminando 2°, no Premier League como los otros 4 clubes onboardeados en esta sesión).',
-    note:'PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Burnley/burnley-fc-holdings-group-accounts-2024-25.md. Cuentas consolidadas del grupo. Mismo gotcha de fx que el ejercicio 2024: fxRef apunta a FX_CLOSE (GBP@2025-07-31, agregada en esta sesión, cierre BCE al 31/7/2025).',
   },
 });
 

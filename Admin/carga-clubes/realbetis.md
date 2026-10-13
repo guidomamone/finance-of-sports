@@ -84,6 +84,16 @@ _antes de Ángel Haro García (data/gestiones/es.js):_
 Haro: nombrado por el consejo en febrero de 2016 (nota del 4/2/2016), tras la dimisión de Ollero.
 ```
 
+## Fuentes
+
+### realbetis-informe-auditoria-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial, texto nativo (sin OCR). Transcripción completa de la cuenta de resultados en Clubes/España/Real Betis/informe-auditoria-memoria-einf-2024-2025-cuenta-resultados.md.
+```
+
 ## Otros
 
 ### realbetisPasesData

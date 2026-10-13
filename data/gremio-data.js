@@ -73,7 +73,6 @@ Object.assign(sources, {
       title:'Demonstrações Contábeis dos Exercícios Findos em 31 de Dezembro de 2024 e de 2023 (Reapresentado)',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://gremio.net/documentos/',
-      note:'PDF oficial (42 páginas, texto nativo), auditado por Baker Tilly Brasil RS Auditores Independentes (opinião sem ressalvas), firmado marzo de 2025, descargado directo de gremio.net/documentos/. Transcripción completa en Clubes/Brasil/Gremio/demonstracoes-contabeis-2023-2024.md. Solo se cargó el ejercicio 2024 (la columna 2023 del mismo documento está "Reapresentada" tras un cambio de norma contable, no comparable 1:1 con un balance 2023 propio). Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923), investigado externamente — el documento no declara tipo de cambio propio.',
     },
 });
 

@@ -82,7 +82,6 @@ Object.assign(sources, {
       id:'envigado-estados-financieros-2025', clubId:'envigado',
       title:'Estados Financieros Individuales (auditados, Grant Thornton), al 31 de diciembre de 2025 y 2024',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 900.470.848). PDF escaneado sin capa de texto, transcripto vía OCR (Tesseract). Incluye el Estado de Resultado Integral primario completo (no solo notas) — cada línea reconcilia exacta, sin ningún residuo. SIIS tiene 10 ejercicios consecutivos (2016-2025) disponibles para este club; a propósito solo se cargó 2025 esta sesión (pedido explícito: ampliar clubes, no profundizar uno). Transcripción completa en Clubes/Colombia/Envigado/estados-financieros-2025.md.',
     },
 });
 

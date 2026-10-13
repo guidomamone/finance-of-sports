@@ -128,6 +128,24 @@ grossDebt = Bank Overdraft (Nota 14). cash = "Cash at bank" (balance: Current as
 Stocks 0.100 + Debtors 11.791 + Cash = 11.891 impreso -> Cash = 0).
 ```
 
+## Fuentes
+
+### sunderland-gb-full-accounts-2024
+
+_note (data/):_
+
+```text
+PDF con texto nativo, transcripción completa en Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2023-24.md. Cuentas individuales, exenta de consolidar bajo Section 400 (Companies Act 2006). No declara tipo de cambio propio (fxRef apunta a FX_CLOSE, entrada GBP@2024-07-31 agregada en esta sesión).
+```
+
+### sunderland-gb-full-accounts-2025
+
+_note (data/):_
+
+```text
+PDF con texto nativo, transcripción completa en Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2024-25.md. La fila "Other operating income" de 2025 no aparece en el Income Statement transcripto (nil, confirmado contra Nota 5); ver comentario de cabecera de este archivo. Mismo criterio de categorización que el ejercicio 2024. fxRef apunta a FX_CLOSE, entrada GBP@2025-07-31 agregada en esta sesión.
+```
+
 ## Otros
 
 ### gestionesByClub['sunderland-gb']

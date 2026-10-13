@@ -129,3 +129,13 @@ Repurposed para "Ukupni neposlovni prihodi/rashodi" (438.955, ver comentario de
 cabecera) — SOLO para que el PAT cierre, el label real se fuerza vía extraRows abajo.
 Financijski prihodi(0.000028) - Financijski rashodi(0.087833) - Neto tečajne razlike(0).
 ```
+
+## Fuentes
+
+### istra-hr-financijsko-izvjesce-2025
+
+_note (data/):_
+
+```text
+Balance auditado (NK Istra 1961 s.d.d. Pula). Auditor: Consultum Komparić d.o.o., con un párrafo de "Isticanje pitanja" (sin modificar la opinión) remitiendo a la Bilješka 22 sobre litigios judiciales en curso — no cuantificados en el balance. PDF con capa de texto nativa en la mayor parte (usado con pdftotext -layout); las páginas de detalle financiero/no-operativo y la Bilanca son escaneos, verificadas con OCR + lectura directa de la imagen. Transcripción completa en Clubes/Croacia/Istra 1961/financijsko-izvjesce-2025.md.
+```

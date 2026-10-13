@@ -138,14 +138,12 @@ Object.assign(sources, {
     title:'Demonstrações Financeiras acompanhadas do Relatório do Auditor Independente do Esporte Clube Bahia S.A.F., em 31 de dezembro de 2024',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://esporteclubebahia.com.br/wp-content/uploads/',
-    note:'PDF oficial (texto nativo), auditado por RSM Brasil Auditores Independentes Ltda., sem ressalvas (com parágrafo de Ênfase sobre operações com partes relacionadas, Nota 7). Se cargó la SAF (Esporte Clube Bahia S.A.F.), NO la associação social (entidad jurídica separada, ver fuentes/Brasil/Bahia.md) — el documento no tiene columna Controladora/Consolidado, es un único juego de estados financieros standalone. Prejuízo do exercício de R$246,545 M (patrimônio líquido negativo de R$95,848 M al cierre), explicado por la Administração como inversión sostenida en el plantel profesional y en la estructuración de la SAF desde su constitución en 2023. Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923) — el documento no declara un tipo de cambio propio. Transcripción completa en Clubes/Brasil/Bahia/demonstracoes-financeiras-2024.md. DUDA GENUINA: el documento no separa "sócios" de "bilheteria" en ninguna nota (ver comentario de cabecera de data/bahia-br-data.js) — candidato a pregunta directa al club.',
   },
   'bahia-br-demonstracoes-2025': {
     id:'bahia-br-demonstracoes-2025', clubId:'bahia-br',
     title:'Demonstrações Financeiras acompanhadas do Relatório do Auditor Independente do Esporte Clube Bahia S.A.F., em 31 de dezembro de 2025',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://esporteclubebahia.com.br/wp-content/uploads/',
-    note:'PDF oficial (texto nativo), auditado por RSM Brasil Auditores Independentes Ltda. Se cargó la SAF, NO la associação. Prejuízo do exercício de R$154,624 M (menor que el 2024 pese a más gasto operativo, por una fuerte ganancia bruta de venda de jugadores — Receitas com negociação de direitos contratuais de R$168,944 M, Nota 21). Este balance reexpresó su columna comparativa 2024 (Nota 2.20: cambio de criterio de reconocimiento de receitas a realizar + adopción de ITG 2003(R2) para netear venta de jugadores) — el ejercicio 2024 cargado en este sitio usa la columna año corriente del balance 2024 ORIGINAL (demonstracoes-financeiras-2024.md), no esta columna comparativa reexpresada, ver comentario de cabecera de data/bahia-br-data.js. Patrimônio líquido pasó a ser POSITIVO (R$656,246 M) por la conversión de R$906,718 M de mútuos con accionistas en AFAC (Adiantamento para Futuro Aumento de Capital). Convertido a USD con PTAX BCB de cierre 31/12/2025 (R$5,5024) — el documento no declara un tipo de cambio propio. Transcripción completa en Clubes/Brasil/Bahia/demonstracoes-financeiras-2025.md. Misma duda genuina de "sócios e bilheteria" sin separar (ver 2024).',
   },
 });
 

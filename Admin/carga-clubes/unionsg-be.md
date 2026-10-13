@@ -162,3 +162,13 @@ _antes de Alex Muzio (data/gestiones/be.js):_
 Muzio: président du conseil d'administration desde el 2/7/2018 (informes de los ejercicios 2018 y 2019); el club lo compró en 2018 la sociedad de Tony Bloom
 (Wikipedia fr: Muzio 75%, Bloom 25%). Se carga como Président y no como Dueño porque el reparto del capital es de Wikipedia.
 ```
+
+## Fuentes
+
+### unionsg-be-jaarrekening-2025
+
+_note (data/):_
+
+```text
+Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Banque Nationale de Belgique (BNB/NBB), esquema estatutario abreviado C-app (forma jurídica SRL). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2025-06-30-individual.md. Ejercicio en el que el club ganó su primer título de Pro League desde 1934/35. Dos componentes de "Autres produits d'exploitation" y el desglose fino de "Autres charges d'exploitation" quedaron sin poder confirmarse con certeza en esta transcripción — ver comentario de cabecera de data/unionsg-be-data.js y Admin/dudas-por-club.md.
+```

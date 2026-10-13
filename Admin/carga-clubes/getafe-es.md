@@ -125,6 +125,24 @@ _antes de Ángel Torres Sánchez (data/gestiones/es.js):_
 Torres: las fuentes dan solo el año (2002); dia 01 por convencion.
 ```
 
+## Fuentes
+
+### getafe-es-cuentas-anuales-2023-24
+
+_note (data/):_
+
+```text
+PDF oficial (auditado por Grupo Pél Auditores, S.L.P.), escaneo sin capa de texto. Bajado de getafecf.com/ley-de-transparencia-sad. Transcripción completa en Clubes/España/Getafe CF/cuentas-anuales-informe-auditoria-2023-2024.md. La cuenta de pérdidas y ganancias venía con etiquetas y números en bloques separados por el OCR/extracción; se reordenó verificando cada subtotal impreso antes de cargar (reconcilió exacto en todos los niveles).
+```
+
+### getafe-es-cuentas-anuales-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial (auditado por Grupo Pél Auditores, S.L.P.), escaneo sin capa de texto. Bajado de getafecf.com/ley-de-transparencia-sad. Transcripción completa en Clubes/España/Getafe CF/cuentas-anuales-informe-auditoria-2024-2025.md. Mismo gotcha de reordenamiento que el ejercicio 2023-24 (ver esa entrada); reconcilió exacto en todos los niveles contra el Estado de Cambios en el Patrimonio Neto.
+```
+
 ## Otros
 
 ### memberCountByClub['getafe-es']

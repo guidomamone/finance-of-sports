@@ -178,3 +178,13 @@ _antes de Paul Gheysens (data/gestiones/be.js):_
 ```text
 Gheysens compró el club en 2015 (solo año en la fuente, 1/1 aproximado; se hizo público en marzo de 2017). Vendió a un grupo de Wouter Vandenhaute en julio de 2026 (16/7/2026 aproximado).
 ```
+
+## Fuentes
+
+### antwerp-be-jaarrekening-2025
+
+_note (data/):_
+
+```text
+Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Antwerp/jaarrekening-2025-06-30-individual.md. Nota 6.10 (desglose de Omzet por categoría/mercado geográfico) no fue completada por el club en este filing; solo se completó el sub-detalle de subsidios operativos dentro de "Andere bedrijfsopbrengsten" y el desglose de "Andere bedrijfskosten". Patrimonio neto negativo al cierre (-EUR 10,64 M); el propio Jaarverslag documenta el respaldo del accionista mayoritario y la mejora post-cierre por ventas de jugadores.
+```

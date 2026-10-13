@@ -181,6 +181,40 @@ _antes de Cristian Malaspina (data/gestiones/ar.js):_
 Malaspina: ganó el 19/12/2015 y asumió a las 72 horas.
 ```
 
+## Fuentes
+
+### argentinosjuniors-presentacion-asamblea-2015-2019
+
+_note (data/):_
+
+```text
+PDF oficial de 2 páginas (texto nativo) preparado para la asamblea del club, con las cifras COMPARATIVAS de los 5 ejercicios a la vez, EN PESOS AJUSTADOS POR INFLACIÓN (dice explícito "cifras en pesos ajustadas por inflación" en el propio título de cada cuadro) — NO son pesos nominales, a diferencia de todo el resto del sitio. Usado SOLO para el Ejercicio 2019 (el más reciente de la presentación, su columna es ~nominal ya que la restatement se hace hacia atrás desde el año más nuevo) — los ejercicios 2015 a 2018 se reemplazaron con datos reales de los balances auditados de cada año (ver las 3 fuentes de abajo y el comentario de cabecera de data/argentinosjuniors-data.js para el detalle completo del bug encontrado y corregido). El archivo "balance-2018-2019.pdf" del mismo club, a pesar del nombre, resultó ser la Memoria narrativa (sin una sola cifra contable), y no hay balance auditado real de 2018/2019 descargado — SUPERÁVIT 2019 $119.274.273 ARS sigue sin confirmar contra un documento primario propio.
+```
+
+### argentinosjuniors-balance-2015-2016
+
+_note (data/):_
+
+```text
+PDF oficial (39 páginas, escaneado sin capa de texto, transcripto vía OCR con Tesseract). Da el Ejercicio 2016 con detalle completo de Anexo IV (Recursos por rubro)/Anexo V (Gastos por rubro x departamento) y el Ejercicio 2015 como comparativo (revenue con detalle completo, gastos solo a nivel de 4 categorías agregadas — Anexo V no desglosa el año comparativo). DÉFICIT real 2016: $(24.707.096) ARS. DÉFICIT real 2015: $(67.509.882) ARS. El Anexo IV de este balance tiene un error aritmético propio de $20.000 (0,02%) entre la suma de sus líneas de "Fútbol profesional" y su propio total impreso — verificado visualmente contra la imagen de la página, no es un error de transcripción (ver comentario de cabecera de data/argentinosjuniors-data.js). Convertido a USD con $15,2 (2016)/$9,085 (2015), dólar vendedor BNA de cierre investigado externamente (la fuente no declara tipo de cambio propio).
+```
+
+### argentinosjuniors-balance-2016-2017
+
+_note (data/):_
+
+```text
+PDF oficial (45 páginas, escaneado sin capa de texto, transcripto vía OCR con Tesseract). Da el Ejercicio 2017 con detalle completo de Anexo IV/V. SUPERÁVIT real: $30.812.797 ARS. Cruzado contra la columna comparativa del balance 2017-2018 (mismo Total del Pasivo, $252.159.592, y mismos totales de Recursos/Gastos en ambos documentos). Convertido a USD con $16,8, dólar vendedor BNA de cierre investigado externamente.
+```
+
+### argentinosjuniors-balance-2017-2018
+
+_note (data/):_
+
+```text
+PDF oficial (31 páginas, escaneado sin capa de texto, transcripto vía OCR con Tesseract). Da el Ejercicio 2018 con detalle completo de Anexo IV/V. SUPERÁVIT real: $318.336.988 ARS — este documento fue el que disparó el hallazgo del bug de pesos restated (su Total de Recursos real, $610.699.504, es muy distinto de los $951.176.055 que decía la presentación de asamblea para el mismo ejercicio). Convertido a USD con $28,85, dólar vendedor BNA de cierre investigado externamente.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

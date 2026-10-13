@@ -89,13 +89,11 @@ Object.assign(sources, {
     id:'monchengladbach-de-jahresabschluss-2023', clubId:'monchengladbach-de',
     title:'Jahresabschluss zum Geschäftsjahr vom 01.01.2023 bis zum 31.12.2023',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jahresabschluss INDIVIDUAL de la Borussia VfL 1900 Mönchengladbach GmbH (HRB 5742, Amtsgericht Mönchengladbach), ejercicio CALENDARIO. Bajado de unternehmensregister.de. Transcripción completa en Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2023.md. La tabla de GuV llegó incompleta (faltan varias filas); reconstruido cruzando el Lagebericht y el Anlagenspiegel — ver comentario de cabecera de monchengladbach-de-data.js.',
   },
   'monchengladbach-de-jahresabschluss-2024': {
     id:'monchengladbach-de-jahresabschluss-2024', clubId:'monchengladbach-de',
     title:'Jahresabschluss zum Geschäftsjahr vom 01.01.2024 bis zum 31.12.2024',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jahresabschluss INDIVIDUAL, ejercicio CALENDARIO. Bajado de unternehmensregister.de. Transcripción completa en Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2024-completo.md. Existe además jahresabschluss-2024-aufsichtsratsbericht-nachtrag.md (informe del Consejo de Vigilancia, narrativo, NO se usó como fuente de datos — ver comentario de cabecera de monchengladbach-de-data.js). Mismo problema de tabla de GuV incompleta que 2023.',
   },
 });
 

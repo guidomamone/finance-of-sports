@@ -52,7 +52,6 @@ Object.assign(sources, {
     id:'anderlecht-be-jaarrekening-2025', clubId:'anderlecht-be',
     title:'Jaarrekening van Royal Sporting Club Anderlecht NV voor het boekjaar van 1/7/2024 tot 30/6/2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Anderlecht/jaarrekening-2025-06-30-individual.md. Nota 6.10 (desglose de Omzet) y detalle numérico de "Andere bedrijfsopbrengsten" no fueron completados por el club en este filing.',
   },
 });
 

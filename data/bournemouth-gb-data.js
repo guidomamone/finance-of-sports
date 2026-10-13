@@ -80,7 +80,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/06632170/filing-history',
     publicNote:'Cuentas completas auditadas de AFC Bournemouth Limited, depositadas en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2024 (temporada 2023/24, Premier League, terminó 12°).',
-    note:'PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2023-24.md. No se encontró un tipo de cambio GBP/USD propio declarado por el documento — fxRef apunta a FX_CLOSE (GBP@2024-06-30).',
   },
   'bournemouth-gb-full-accounts-2025': {
     id:'bournemouth-gb-full-accounts-2025', clubId:'bournemouth-gb',
@@ -88,7 +87,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/06632170/filing-history',
     publicNote:'Cuentas completas auditadas de AFC Bournemouth Limited. Ejercicio cerrado el 30 de junio de 2025 (temporada 2024/25, Premier League, terminó 9°).',
-    note:'PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2024-25.md. Adopta una presentación nueva (leases/right-of-use assets) que restata levemente el comparativo 2024 — se usó SIEMPRE la presentación propia de cada ejercicio, nunca la comparativa del documento del año siguiente (ver comentario de cabecera de data/bournemouth-gb-data.js). fxRef apunta a FX_CLOSE (GBP@2025-06-30).',
   },
 });
 

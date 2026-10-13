@@ -83,13 +83,11 @@ Object.assign(sources, {
     id:'dortmund-de-geschaeftsbericht-2024', clubId:'dortmund-de',
     title:'Annual Report 2023/2024 (Geschäftsbericht) — Annual Financial Statements (HGB) of Borussia Dortmund GmbH & Co. KGaA',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Reporte anual oficial de BVB (cotiza en la Bolsa de Frankfurt), en inglés, auditado por EY GmbH & Co. KG. Cifras de este ejercicio tomadas de la columna comparativa "2023/2024" del reporte 2024/2025 (mismo documento fuente, ver comentario de cabecera de dortmund-de-data.js). Transcripción completa en Clubes/Alemania/Borussia Dortmund/geschaeftsbericht-2024-25.md (244 páginas).',
   },
   'dortmund-de-geschaeftsbericht-2025': {
     id:'dortmund-de-geschaeftsbericht-2025', clubId:'dortmund-de',
     title:'Annual Report 2024/2025 (Geschäftsbericht) — Annual Financial Statements (HGB) of Borussia Dortmund GmbH & Co. KGaA',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Reporte anual oficial de BVB, en inglés, auditado por EY GmbH & Co. KG. Transcripción completa en Clubes/Alemania/Borussia Dortmund/geschaeftsbericht-2024-25.md (244 páginas).',
   },
 });
 

@@ -402,3 +402,35 @@ Lanna: nombrado el 27/12/2021; la lista da su fin como "2024" (solo el año; 01/
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### sampdoria-it-fascicolo-bilancio-2021
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sampdoria-it-fascicolo-bilancio-2018
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sampdoria-it-fascicolo-bilancio-2019
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sampdoria-it-fascicolo-bilancio-2020
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

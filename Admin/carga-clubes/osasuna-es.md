@@ -137,3 +137,21 @@ _antes de Luis Sabalza Iriarte (data/gestiones/es.js):_
 ```text
 Sabalza: presidente desde diciembre de 2014 (dia 01), reelegido sin urnas; el mandato actual corre del 22/8/2025 al 21/8/2029.
 ```
+
+## Fuentes
+
+### osasuna-es-auditoria-2021-22
+
+_note (data/):_
+
+```text
+PDF con texto nativo (Loyola Auditores, S.L.P.), transcripción completa en Clubes/España/CA Osasuna/auditoria2022.md. Varias cifras de la Nota 16.1 vinieron con coma en vez de punto de miles por un error de OCR/extracción — corregidas verificando que cerraran contra el TOTAL impreso de esa misma nota antes de cargar nada.
+```
+
+### osasuna-es-auditoria-2023-24
+
+_note (data/):_
+
+```text
+PDF con texto nativo, transcripción completa en Clubes/España/CA Osasuna/auditoria2024.md. Este ejercicio desglosa ingresos y gastos con sub-letras directo en la cara de la Cuenta de Pérdidas y Ganancias, mucho más fino que el ejercicio 2021/2022.
+```

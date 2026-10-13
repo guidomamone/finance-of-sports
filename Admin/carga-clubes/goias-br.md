@@ -1076,3 +1076,123 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### goias-br-demonstracoes-contabeis-2021
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2022-fgf-go
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2022-fgf-go.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2023
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2024
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2025
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2017-2016
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2017-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2008-2007
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2008-2007.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2009-2008
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2009-2008.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2010-2009
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2010-2009.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2011-2010
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2011-2010.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2012-2011
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2013-2012
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2015-2014
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2015-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2014-2013
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2014-2013.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2016-2015
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

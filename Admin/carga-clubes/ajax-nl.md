@@ -199,6 +199,24 @@ _antes de Menno Geelen (data/gestiones/nl.js):_
 Geelen: algemeen directeur ad interim desde el 10/5/2024; el contrato como titular rige desde el 1/7/2025 (VI, según la prensa).
 ```
 
+## Fuentes
+
+### ajax-nl-jaarverslag-2024
+
+_note (data/):_
+
+```text
+Jaarverslag oficial consolidado (IFRS) de AFC Ajax N.V., descargado del canal público de la KNVB (licencia F.04). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/Ajax/jaarverslag-2023-24.md.
+```
+
+### ajax-nl-jaarverslag-2025
+
+_note (data/):_
+
+```text
+Jaarverslag oficial consolidado (IFRS) de AFC Ajax N.V., descargado del canal público de la KNVB (licencia F.04). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/Ajax/jaarverslag-2024-25.md.
+```
+
 ## Otros
 
 ### gestionesByClub['ajax-nl']

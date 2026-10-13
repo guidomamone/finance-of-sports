@@ -70,7 +70,6 @@ Object.assign(sources, {
       id:'atlnacional-co-estados-financieros-2025', clubId:'atlnacional-co',
       title:'Notas a los Estados Financieros, 31 de diciembre de 2025 y 2024 (auditado por Baker Tilly Colombia)',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 900464187). El PDF trae solo las notas (texto nativo, sin tabla de Estado de Resultado Integral primaria aparte), pero la Nota 14 (Impuestos a las ganancias) imprime literalmente "Utilidad contable Antes de Impuestos: 7.162.607" para 2025, que reconcilia exacto contra la suma independiente Revenue-Expenses+netInterest calculada desde las notas de ingresos/gastos — sin ningún residuo. 11 registros distintos existen en SIIS bajo este NIT (probablemente un registro por ejercicio); solo se cargó el más reciente (2025) esta sesión. Transcripción completa en Clubes/Colombia/Atletico Nacional/estados-financieros-2025.md.',
     },
 });
 

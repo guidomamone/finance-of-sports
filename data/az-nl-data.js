@@ -92,13 +92,11 @@ Object.assign(sources, {
     id:'az-nl-jaarrekening-2024', clubId:'az-nl',
     title:'Jaarrekening AZ Holding B.V. boekjaar 2023-2024 (1 juli 2023 - 30 juni 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jaarrekening oficial consolidada de AZ Holding B.V., descargada del canal público de la KNVB (licencia F.04). Solo estados contables (sin memoria narrativa, a diferencia de Ajax/PSV/Feyenoord). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/AZ/jaarrekening-2023-24.md.',
   },
   'az-nl-jaarrekening-2025': {
     id:'az-nl-jaarrekening-2025', clubId:'az-nl',
     title:'Jaarrekening AZ Holding B.V. boekjaar 2024-2025 (1 juli 2024 - 30 juni 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jaarrekening oficial consolidada de AZ Holding B.V., descargada del canal público de la KNVB (licencia F.04). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/AZ/jaarrekening-2024-25.md.',
   },
 });
 

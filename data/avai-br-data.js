@@ -380,31 +380,26 @@ Object.assign(sources, {
     id:'avai-br-demonstracoes-contabeis-2025', clubId:'avai-br',
     title:'Avaí Futebol Clube — demonstracoes-contabeis-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'avai-br-demonstracoes-contabeis-2022': {
     id:'avai-br-demonstracoes-contabeis-2022', clubId:'avai-br',
     title:'Avaí Futebol Clube — demonstracoes-contabeis-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'avai-br-demonstracoes-contabeis-2023': {
     id:'avai-br-demonstracoes-contabeis-2023', clubId:'avai-br',
     title:'Avaí Futebol Clube — demonstracoes-contabeis-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'avai-br-demonstracoes-contabeis-2024': {
     id:'avai-br-demonstracoes-contabeis-2024', clubId:'avai-br',
     title:'Avaí Futebol Clube — demonstracoes-contabeis-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'avai-br-demonstracoes-contabeis-2021': {
     id:'avai-br-demonstracoes-contabeis-2021', clubId:'avai-br',
     title:'Avaí Futebol Clube — demonstracoes-contabeis-2021 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

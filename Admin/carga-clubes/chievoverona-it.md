@@ -262,3 +262,27 @@ Luca Campedelli: presidente desde septiembre de 1992 (murió su padre Luigi) has
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### chievoverona-it-bilancio-30-giugno-2014
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### chievoverona-it-bilancio-30-giugno-2016
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### chievoverona-it-bilancio-30-giugno-2015
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

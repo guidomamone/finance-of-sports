@@ -166,31 +166,26 @@ Object.assign(sources, {
     id:'spartakmoscow-ru-bfo-2021-datos', clubId:'spartakmoscow-ru',
     title:'AO Football Club Spartak-Moscow — отчетность 2021 в ГИР БО (bo.nalog.gov.ru), ejercicio 2021',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Spartak Moscow/bfo-2021-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Spartak Moscow/bfo-2021-datos.md.',
   },
   'spartakmoscow-ru-bfo-2022-datos': {
     id:'spartakmoscow-ru-bfo-2022-datos', clubId:'spartakmoscow-ru',
     title:'AO Football Club Spartak-Moscow — отчетность 2022 в ГИР БО (bo.nalog.gov.ru), ejercicio 2022',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Spartak Moscow/bfo-2022-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Spartak Moscow/bfo-2022-datos.md.',
   },
   'spartakmoscow-ru-bfo-2023-datos': {
     id:'spartakmoscow-ru-bfo-2023-datos', clubId:'spartakmoscow-ru',
     title:'AO Football Club Spartak-Moscow — отчетность 2023 в ГИР БО (bo.nalog.gov.ru), ejercicio 2023',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Spartak Moscow/bfo-2023-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Spartak Moscow/bfo-2023-datos.md.',
   },
   'spartakmoscow-ru-bfo-2024-datos': {
     id:'spartakmoscow-ru-bfo-2024-datos', clubId:'spartakmoscow-ru',
     title:'AO Football Club Spartak-Moscow — отчетность 2024 в ГИР БО (bo.nalog.gov.ru), ejercicio 2024',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Spartak Moscow/bfo-2024-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Spartak Moscow/bfo-2024-datos.md.',
   },
   'spartakmoscow-ru-bfo-2025-datos': {
     id:'spartakmoscow-ru-bfo-2025-datos', clubId:'spartakmoscow-ru',
     title:'AO Football Club Spartak-Moscow — отчетность 2025 в ГИР БО (bo.nalog.gov.ru), ejercicio 2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Spartak Moscow/bfo-2025-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Spartak Moscow/bfo-2025-datos.md.',
   },
 });
 

@@ -75,7 +75,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/00081077/filing-history',
     publicNote:'Cuentas individuales auditadas (BDO LLP, sin salvedades) de The Brighton and Hove Albion Football Club Limited, depositadas en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2024 (temporada 2023/24, séptima temporada en la Premier League, 11° puesto, primera participación europea del club — UEFA Europa League).',
-    note:'PDF con texto nativo, transcripción completa en "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2023-24.md". Cuentas individuales de la compañía, no consolidadas con Brighton & Hove Albion Women\'s Football Club Limited ni The Community Stadium Limited. No declara tipo de cambio propio (fxRef apunta a FX_CLOSE). El ejercicio 2024 fue restated (impuesto diferido) en el documento del ejercicio 2025 — se cargó con la cifra tal cual depositada en SU PROPIO documento, ver comentario de cabecera de data/brighton-gb-data.js y Admin/dudas-por-club.md.',
   },
   'brighton-gb-full-accounts-2025': {
     id:'brighton-gb-full-accounts-2025', clubId:'brighton-gb',
@@ -83,7 +82,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/00081077/filing-history',
     publicNote:'Cuentas individuales auditadas (BDO LLP, sin salvedades) de The Brighton and Hove Albion Football Club Limited, depositadas en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2025 (temporada 2024/25, octava temporada en la Premier League, 8° puesto, sin competencia europea).',
-    note:'PDF con texto nativo, transcripción completa en "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2024-25.md". Mismo criterio de categorización que el ejercicio 2024.',
   },
 });
 

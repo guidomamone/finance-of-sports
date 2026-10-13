@@ -210,14 +210,12 @@ Object.assign(sources, {
     title:'Demonstrações Financeiras, Exercícios Findos em 31 de Dezembro de 2023 e 2022',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://futebolpaulista.com.br/Repositorio/Institucional/2023/1402169_BALAN%C3%87OSPFC_2018_2.pdf',
-    note:'Formato "publicación legal" (O Estado de S. Paulo, edição de 26/4/2024) — mismo PDF, confirmado por tamaño de archivo idéntico (6.486.733 bytes), que balanco-financeiro-2023.pdf del CDN oficial do clube (cdn.saopaulofc.net). El nombre del archivo en el repositorio de la federação paulista dice "2018" pero es un número de protocolo/radicado interno, no el año fiscal (ver fuentes/Brasil/São Paulo.md) — el contenido real es el ejercicio 2023/2022. Se cargó el ejercicio 2023 (exercício corrente de este documento), con 2022 como comparativo, nunca al revés. Déficit real del ejercicio: R$62,258 milhões, pese al título de la Copa do Brasil 2023 — el propio Conselho Fiscal atribuye el déficit al aumento de gastos de fútbol profesional por encima del presupuesto aprobado. Convertido a USD con PTAX BCB de cierre 31/12/2023 (R$4,8413). Transcripción de referencia en Clubes/Brasil/São Paulo/demonstracoes-financeiras-2022-2023.md — para esta carga se re-extrajo el texto de las páginas 3, 7 y 8 del PDF con `pdftotext -layout` (preserva la grilla de columnas del formato de diario), más confiable que la transcripción .md original.',
   },
   'saopaulo-br-demonstracoes-2024': {
     id:'saopaulo-br-demonstracoes-2024', clubId:'saopaulo-br',
     title:'Demonstrações Financeiras Individuais e Consolidadas, Exercícios Findos em 31 de Dezembro de 2024 e 2023',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://futebolpaulista.com.br/Repositorio/Institucional/2024/S%C3%A3o%20Paulo.pdf',
-    note:'PDF oficial (texto nativo, paquete de firma digital Clicksign), vía el repositorio da federação paulista — no se encontró todavía un mirror directo en cdn.saopaulofc.net para este ejercicio (ver fuentes/Brasil/São Paulo.md). Se cargó el ejercicio 2024 (exercício corrente de este documento), con 2023 como comparativo. Trae columnas Individuais (Controladora) e Consolidados — Consolidado 2024 = Controladora 2024 en todas las líneas revisadas (sin diferencia material), se usó Controladora por consistencia con el resto del archivo. Déficit real grande del ejercicio: R$287,640 milhões, explicado en gran parte por un "Resultado Não Operacional" de -R$92,687 milhões (multas e parcelamentos tributarios municipais/federais, nota 14) fuera del cuerpo ordinario de Receitas/Despesas Operacionais, más una amortización de contratos de atletas profissionais mucho mayor que 2023 (R$83,123 M vs. R$51,547 M). Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/São Paulo/demonstracoes-financeiras-2023-2024.md.',
   },
 });
 

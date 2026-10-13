@@ -766,3 +766,75 @@ octubre de 2018) y 01/09/2020 (septiembre de 2020, entra la familia Krause) por 
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### parma-it-bilancio-31-12-2023-individual
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### parma-it-bilancio-31-12-2021-individual
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### parma-it-bilancio-31-12-2022-consolidato
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### parma-it-bilancio-31-12-2024-individual
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2024-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### parma-it-bilancio-31-12-2025-consolidato
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### parma-it-bilancio-30-06-2018
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-30.06.2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### parma-it-bilancio-30-06-2019-individual
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-30.06.2019-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### parma-it-bilancio-30-06-2016-individual
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-30.06.2016-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### parma-it-bilancio-30-06-2017-individual
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-30.06.2017-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

@@ -374,55 +374,46 @@ Object.assign(sources, {
     id:'vilanova-br-demonstrativo-financeiro-2025', clubId:'vilanova-br',
     title:'Vila Nova Futebol Clube — demonstrativo-financeiro-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'vilanova-br-balanco-patrimonial-2015': {
     id:'vilanova-br-balanco-patrimonial-2015', clubId:'vilanova-br',
     title:'Vila Nova Futebol Clube — balanco-patrimonial-2015 (ejercicio 2015)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/balanco-patrimonial-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'vilanova-br-balanco-patrimonial-2016': {
     id:'vilanova-br-balanco-patrimonial-2016', clubId:'vilanova-br',
     title:'Vila Nova Futebol Clube — balanco-patrimonial-2016 (ejercicio 2016)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/balanco-patrimonial-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'vilanova-br-balanco-patrimonial-2017': {
     id:'vilanova-br-balanco-patrimonial-2017', clubId:'vilanova-br',
     title:'Vila Nova Futebol Clube — balanco-patrimonial-2017 (ejercicio 2017)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/balanco-patrimonial-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'vilanova-br-demonstrativo-financeiro-2021': {
     id:'vilanova-br-demonstrativo-financeiro-2021', clubId:'vilanova-br',
     title:'Vila Nova Futebol Clube — demonstrativo-financeiro-2021 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'vilanova-br-demonstrativo-financeiro-2022': {
     id:'vilanova-br-demonstrativo-financeiro-2022', clubId:'vilanova-br',
     title:'Vila Nova Futebol Clube — demonstrativo-financeiro-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'vilanova-br-demonstrativo-financeiro-2023': {
     id:'vilanova-br-demonstrativo-financeiro-2023', clubId:'vilanova-br',
     title:'Vila Nova Futebol Clube — demonstrativo-financeiro-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'vilanova-br-demonstrativo-financeiro-2024': {
     id:'vilanova-br-demonstrativo-financeiro-2024', clubId:'vilanova-br',
     title:'Vila Nova Futebol Clube — demonstrativo-financeiro-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'vilanova-br-notas-explicativas-2014': {
     id:'vilanova-br-notas-explicativas-2014', clubId:'vilanova-br',
     title:'Vila Nova Futebol Clube — notas-explicativas-2014 (ejercicio 2014)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/notas-explicativas-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

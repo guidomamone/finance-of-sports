@@ -362,6 +362,56 @@ grossDebt = Total Pasivo (4.279,850248) − Previsiones (314,280088, Anexo III, 
 financiera). cash = Caja y Bancos (Nota 3.1).
 ```
 
+## Fuentes
+
+### gimnasiaesgrima-ar-balance-2022-2023
+
+_note (data/):_
+
+```text
+PDF oficial (28 páginas, texto nativo), publicado junto a la convocatoria a Asamblea General Ordinaria en gimnasia.org.ar (CDN de plataforma de mailing, myperfit.net). Informe de Auditoría con OPINIÓN CON SALVEDADES (cesión de derechos de TV al ex-presidente Gabriel Pellegrino sin documentación UIF; párrafo de incertidumbre por empresa en funcionamiento, sin modificar la opinión) — ver informe-auditoria-2022-2023.md. Club en concurso preventivo de acreedores desde 2017 (vigente). Comisión Directiva cambió a mediados de este ejercicio (Pellegrino → Cowen, nov/dic 2022): sin gestión asignada por esa ambigüedad. Tipo de cambio: no declara un único TC de cierre, sino varias cotizaciones por línea en su Anexo VI (USD BNA 268, USD MEP 484,69, EUR 291) — se usó 268 (BNA, la que aplica a la mayoría de la deuda en USD). Superávit/Déficit del Ejercicio real: -$750.171.524 ARS (déficit).
+```
+
+### gimnasiaesgrima-ar-balance-2023-2024
+
+_note (data/):_
+
+```text
+PDF oficial (30 páginas, texto nativo), publicado junto a la convocatoria a Asamblea General Ordinaria en gimnasia.org.ar/wp-content. Ejercicio dual: convive con gimnasiaesgrima-ar-presupuesto-2023-2024 (el presupuesto aprobado para ESTE mismo ejercicio, en la asamblea del 136° anterior), cargado como columna "Presupuesto" de comparación. Tipo de cambio de cierre declarado en Anexo VI: 932,50 (BNA, la cotización de la mayoría de la deuda en USD; MEP declaraba 1.347,96 ese mismo cierre, no usado). Superávit del Ejercicio real: $4.066.580.234 ARS.
+```
+
+### gimnasiaesgrima-ar-balance-2024-2025
+
+_note (data/):_
+
+```text
+PDF oficial (31 páginas, texto nativo), publicado junto a la convocatoria a Asamblea General Ordinaria en gimnasia.org.ar/wp-content. Ejercicio dual: convive con gimnasiaesgrima-ar-presupuesto-2024-2025 (el presupuesto aprobado para ESTE mismo ejercicio, en la asamblea del 137° anterior), cargado como columna "Presupuesto" de comparación. Tipo de cambio de cierre declarado en Anexo V: 1.215,00 (BNA; MEP declaraba 1.211,10 ese mismo cierre, prácticamente convergidas). Superávit del Ejercicio real: $4.022.179.754 ARS.
+```
+
+### gimnasiaesgrima-ar-presupuesto-2023-2024
+
+_note (data/):_
+
+```text
+PDF oficial (3 páginas, texto nativo), aprobado en la Asamblea General Ordinaria del 136° Ejercicio (2022-23), publicado junto a ese balance. Desglose mensual jul-23 a jun-24 + columna Total Período. No declara tipo de cambio propio (documento puramente en pesos): la columna "Presupuesto" de Estado de resultados usa la cotización de mercado de FX_CLOSE al 30/6/2024 (909, market_close), no el TC declarado por el balance real de este mismo ejercicio. Resultado Económico del Período presupuestado: $2.884.015.397 ARS.
+```
+
+### gimnasiaesgrima-ar-presupuesto-2024-2025
+
+_note (data/):_
+
+```text
+PDF oficial (4 páginas), aprobado en la Asamblea General Ordinaria del 137° Ejercicio (2023-24), publicado junto a ese balance. Capa de texto nativa pero con una fuente subseteada sin ToUnicode para montos/meses (pdftotext devuelve Unicode incorrecto en esas celdas, rótulos de fila sí se leen bien) — valores extraídos leyendo visualmente la página renderizada, ver nota al principio del .md transcripto. No declara tipo de cambio propio: la columna "Presupuesto" usa la cotización de mercado de FX_CLOSE al 30/6/2025 (1.203, market_close), no el TC declarado por el balance real de este mismo ejercicio. Resultado Económico del Período presupuestado: $4.168.479.311 ARS.
+```
+
+### gimnasiaesgrima-ar-presupuesto-2025-2026
+
+_note (data/):_
+
+```text
+PDF oficial (5 páginas, texto nativo), aprobado en la Asamblea General Ordinaria del 138° Ejercicio (2024-25), publicado junto a ese balance. Ejercicio 2025-2026 TODAVÍA SIN balance real (es el más reciente, cerró 30/6/2026 pero el club no publicó su balance auditado todavía) — este presupuesto es la fuente PRIMARIA de este año, no un overlay. No declara tipo de cambio propio: cotización de mercado FX_CLOSE al 30/6/2026 (1.482, dólar mayorista BCRA vía Rava, market_close). Resultado Económico del Período presupuestado: $823.433.973 ARS.
+```
+
 ## Otros
 
 ### Presupuesto al lado del balance (gimnasiaesgrimaArPresupuestoOverlayByYear), en general

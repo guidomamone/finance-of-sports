@@ -188,6 +188,24 @@ _antes de Flávio Horta Jardim (data/gestiones/br.js):_
 Transicion el 08/12/2014; reelecto (tercer mandato en noviembre de 2022, vigente hasta noviembre de 2026). Una sola gestion continua.
 ```
 
+## Fuentes
+
+### voltaredonda-br-balanco-2024
+
+_note (data/):_
+
+```text
+PDF escaneado sin capa de texto, transcripto vía OCR (Tesseract) — Clubes/Brasil/Volta Redonda/balanco-2024.md. Bajado del repositorio de la FERJ (Federação de Futebol do Estado do Rio de Janeiro), no del portal propio del club (que hoy no tiene histórico anterior a 2025). La transcripción OCR de la Nota 13.1(iii) (desglose de "Premiações, Bilheterias, Direitos Federativos e Outros") tenía un dígito mal leído; se corrigió cruzando contra la columna comparativa 2024 de demonstracoes-financeiras-2025.md (texto nativo), que sí reconcilia exacto — ver comentario de cabecera de data/voltaredonda-data.js. El resto de las cifras de 2024 reconcilia igual entre ambas fuentes.
+```
+
+### voltaredonda-br-demonstracoes-2025
+
+_note (data/):_
+
+```text
+PDF con texto nativo, descargado del portal propio de transparencia del club (API https://voltaco.com.br/api/documents, URLs firmadas MinIO/S3 con caducidad de 24 h). Transcripción completa en Clubes/Brasil/Volta Redonda/demonstracoes-financeiras-2025.md. Auditado por Activa Assessoria e Contabilidades Ltda., opinião com ressalvas (parecer-auditoria-externa-2025.md): la única salvedad real es depreciación del Imobilizado contabilizada solo parcialmente (sin control individual de bienes), sin impacto en las líneas de revenue/expense cargadas — no hay salvedad sobre ingresos ni gastos operativos. dre-2025.md (salida cruda del sistema contable, no auditada) reconcilia exacto contra el total de este balance (26.396.926,24 = Futebol Profissional + Administrativo del balance auditado) — mismo dato, más granular, no una fuente alternativa.
+```
+
 ## Otros
 
 ### gestionesByClub['voltaredonda-br']

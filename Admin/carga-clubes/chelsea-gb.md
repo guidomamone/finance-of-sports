@@ -83,3 +83,13 @@ _antes de Todd Boehly (data/gestiones/gb.js):_
 ```text
 Boehly dejó la presidencia al vender su parte a Clearlake (anuncio del 16/9/2026). Desde entonces no se carga a nadie (Clearlake es un fondo).
 ```
+
+## Fuentes
+
+### chelsea-gb-group-accounts-2025
+
+_note (data/):_
+
+```text
+Cuentas consolidadas del grupo, depositadas en Companies House (Reino Unido). Transcripción completa en Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2024-25.md. Ver comentario de cabecera de data/chelsea-gb-data.js para el detalle completo de categorización y las dudas abiertas (Cost of sales sin desglose, gap de amortización/deterioro, grossDebt).
+```

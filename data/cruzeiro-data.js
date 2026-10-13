@@ -209,25 +209,21 @@ Object.assign(sources, {
       id:'cruzeiro-informativo-financeiro-2025', clubId:'cruzeiro',
       title:'Informativo Financeiro (Demonstrações Financeiras) da SAF Cruzeiro, Exercícios Findos em 31 de Dezembro de 2025 e de 2024',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (52 páginas, texto nativo), bajado del bucket S3 propio del club (cruzeiro-website-project-documents.s3.us-east-1.amazonaws.com). Transcripción completa en Clubes/Brasil/Cruzeiro/informativo-financeiro-2025.md. 2025 fue un ejercicio de DÉFICIT real (Prejuízo de R$114,900 mil), aunque menor que el déficit de 2024 (R$169,908 mil) del mismo documento comparativo. Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024), investigado externamente. El club tiene también informativo-financeiro-2022.pdf/2023.pdf descargados pero no cargados esta sesión.',
     },
   'cruzeiro-informativo-financeiro-2024': {
       id:'cruzeiro-informativo-financeiro-2024', clubId:'cruzeiro',
       title:'Informativo Financeiro (Demonstrações Financeiras) da SAF Cruzeiro, Exercícios Findos em 31 de Dezembro de 2024 e de 2023',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial, texto nativo, documento DISTINTO del informativo-financeiro-2025 (con su propio comparativo 2023, no cargado). Transcripción completa en Clubes/Brasil/Cruzeiro/informativo-financeiro-2024.md. 2024 fue un ejercicio de DÉFICIT real (Prejuízo de R$169,908 mil), mayor que el déficit de 2025 (R$114,900 mil). Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923), ya presente en FX_CLOSE de data/currency-map.js de una carga anterior de otro club.',
     },
   'cruzeiro-informativo-financeiro-2023': {
       id:'cruzeiro-informativo-financeiro-2023', clubId:'cruzeiro',
       title:'Informativo Financeiro (Demonstrações Financeiras) da SAF Cruzeiro, Exercício Findo em 31 de Dezembro de 2023',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial, texto nativo, documento DISTINTO del informativo-financeiro-2024/2025 (con su propio comparativo del período 04/02/2022-31/12/2022, no cargado — se usó en su lugar el documento propio de 2022). Transcripción completa en Clubes/Brasil/Cruzeiro/informativo-financeiro-2023.md. 2023 fue un ejercicio de LUCRO real (R$260,116 mil), a diferencia de 2024/2025 que fueron déficit — impulsado en gran parte por un ingreso financiero extraordinario de R$181,913 mil por reducción de la deuda del Cruzeiro Associação (Plano de Recuperação Judicial homologado en agosto 2023) y por la venta de una participación del 20% en la Liga Forte União (LFU, R$192,780 mil). Convertido a USD con el PTAX BCB de cierre 29/12/2023 (R$4,8413), ya presente en FX_CLOSE.',
     },
   'cruzeiro-informativo-financeiro-2022': {
       id:'cruzeiro-informativo-financeiro-2022', clubId:'cruzeiro',
       title:'Informativo Financeiro (Demonstrações Financeiras) da SAF Cruzeiro, Período de 04 de Fevereiro a 31 de Dezembro de 2022',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial, texto nativo, primer ejercicio social de la SAF Cruzeiro (constituida 04/02/2022). Transcripción completa en Clubes/Brasil/Cruzeiro/informativo-financeiro-2022.md. 2022 fue un ejercicio de DÉFICIT real (Prejuízo de R$24,642 mil) SEGÚN EL DOCUMENTO ORIGINAL de 2022 — el documento de 2023 reexpresó este mismo período como Prejuízo de R$55,071 mil (Nota 1.4, cambio de criterio contable en la combinación de negocios del fútbol), pero este archivo carga la versión ORIGINAL, no la reexpresada (ver comentario de cabecera de este archivo para el detalle y la pregunta pendiente para Admin/dudas-por-club.md). Convertido a USD con el PTAX BCB de cierre 30/12/2022 (R$5,2177), ya presente en FX_CLOSE.',
     },
 });
 

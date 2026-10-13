@@ -1870,7 +1870,8 @@ function perimetroCargado(nota) {
 //     entidad de fútbol sola, que NO consolida ("der ikke udarbejdet koncernregnskab") -> individual.
 //   osijek-hr 2025: se cargó el informe COMBINADO (NK Osijek s.d.d. + FM 20 d.o.o. + la escuela) -> grupo.
 const VERDAD_MANUAL = { 'fckobenhavn-dk|2024': { perimetro: 'individual' }, 'osijek-hr|2025': { perimetro: 'consolidado' } };
-const notaFuente = (src) => `${src.title || ''} ${src.label || ''} ${src.note || ''}`;
+// la nota interna de la fuente vive en la evidencia del club (to-do 209), "## Fuentes" / "### <sourceId>"; `src.note` solo si quedara alguna vieja
+const notaFuente = (src) => `${src.title || ''} ${src.label || ''} ${src.note || (src.clubId && src.id ? EV.textoDeFuente(EV.leer(src.clubId), src.id) : '')}`;
 // Lo cargado en el sitio para ese club-año, en el mismo formato que las respuestas de Claude.
 function verdadCargada(club, meta, y, nota) {
   const [mm] = String(club.fiscalYearStart || '07-01').split('-').map(Number);

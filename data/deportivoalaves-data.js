@@ -58,7 +58,6 @@ Object.assign(sources, {
       title:'Informe de Auditoría, Cuentas Anuales e Informe de Gestión 2024-2025, Ejercicio 1/7/2024 a 30/6/2025',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://cms.bkndagroup.com/uploads/',
-      note:'PDF oficial (auditor Sayma Auditores/HLB), escaneo sin capa de texto (leído renderizando a imagen). Transcripción completa de la cuenta de resultados en Clubes/España/Deportivo Alavés/cuentas-anuales-2024-2025-cuenta-resultados.md.',
     },
 });
 

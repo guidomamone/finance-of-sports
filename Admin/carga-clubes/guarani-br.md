@@ -181,6 +181,24 @@ _antes de Rômulo Aleksander Moreno Amaro (data/gestiones/br.js):_
 Rômulo Amaro: interino desde el 10/10/2024 (Marconatto se aparta por salud), reelecto en diciembre de 2025 para 2026-2028.
 ```
 
+## Fuentes
+
+### guarani-br-demonstracoes-2023-2024
+
+_note (data/):_
+
+```text
+PDF con capa de texto real (formato "publicación legal", recorte de gazetasp.com.br), descargado del repositorio institucional de la Federação Paulista de Futebol. Auditado por ASSESSORA ASSESSORES E AUDITORES EIRELI EPP con opinião COM RESSALVAS (adiantamentos, bloqueios judiciais sin documentación, obligações trabalhistas/tributárias sin reconciliar, provisão de contingências sin actualizar por multas/intereses). El clube está EM RECUPERAÇÃO JUDICIAL (aprobada 27/2/2023, homologada 3/6/2024). Transcripción completa en Clubes/Brasil/Guarani/demonstracoes-financeiras-2023-2024.md. 2024 fue un ejercicio de déficit (R$412 mil). Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923).
+```
+
+### guarani-br-demonstracoes-2024-2025
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo), descargado de la sección de gobernanza del sitio propio del club (guaranifc.com.br/governanca/). Auditado por Audcorp Auditoria e Assessoria S/S (José Augusto Barbosa, CRC 1SP 120808/0-6), opinião COM RESSALVAS (obrigações trabalhistas/tributárias sin documentación completa, contingencia tributaria de 2006 no reconocida por R$6.200 mil, ajuste retroactivo de adiantamentos en desacuerdo con CPC 23). 2025 revirtió el déficit de 2024 con un superávit de R$8.077 mil, impulsado principalmente por la negociación de atletas (R$42,1 M, incl. R$6,1 M de categorías de base). Transcripción completa en Clubes/Brasil/Guarani/demonstracoes-financeiras-2024-2025.md. Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024).
+```
+
 ## Otros
 
 ### gestionesByClub['guarani-br']

@@ -121,21 +121,18 @@ Object.assign(sources, {
       title:'Relatório Anual de Demonstrações (Demonstrações Contábeis) do América Futebol Clube, exercício findo em 31 de dezembro de 2023',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://irp.cdn-website.com/05448cb5/files/uploaded/relatorio_demonstrações_2023_afc.pdf',
-      note:'PDF oficial (texto nativo), descargado del portal de transparencia oficial del club (americafc.com.br/transparencia). Se cargó la columna CONSOLIDADO (AFC + SAF, el negocio de fútbol completo), no la Controladora (el AFC social solo). Transcripción completa en Clubes/Brasil/America Mineiro/demonstracoes-financeiras-2023.md. Tipo de cambio de cierre 31/12/2023 (R$4,8413, PTAX venda BCB) investigado externamente vía API oficial del Banco Central, el documento no declara uno propio.',
     },
   'americamineiro-br-demonstracoes-2024': {
       id:'americamineiro-br-demonstracoes-2024', clubId:'americamineiro-br',
       title:'Relatório Anual de Demonstrações (Demonstrações Contábeis) do América Futebol Clube, exercício findo em 31 de dezembro de 2024',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://irp.cdn-website.com/05448cb5/files/uploaded/relatorio_demonstraçoes_financeiras_2024.pdf',
-      note:'PDF oficial (texto nativo). Columna CONSOLIDADO. El balance 2024 reexpresa (Reapresentado) su comparativo 2023 con criterios distintos al balance 2023 original (ver comentario de cabecera del archivo de datos) — NO se usó esa comparativa, se cargó 2023 desde su propio balance. La línea "Outras receitas operacionais" (R$55,2 M) no se desagrega en el balance 2024 mismo; su valor bruto sale del comparativo que sí imprime el balance 2025 (Nota 19). Transcripción completa en Clubes/Brasil/America Mineiro/demonstracoes-financeiras-2024.md. Tipo de cambio de cierre 31/12/2024 (R$6,1923, PTAX BCB), ya existente en data/currency-map.js.',
     },
   'americamineiro-br-demonstracoes-2025': {
       id:'americamineiro-br-demonstracoes-2025', clubId:'americamineiro-br',
       title:'Relatório Anual de Demonstrações (Demonstrações Contábeis) do América Futebol Clube, exercício findo em 31 de dezembro de 2025',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://irp.cdn-website.com/05448cb5/files/uploaded/Relatorio_Anual_de_Demonstracoes_2025_assinado.pdf',
-      note:'PDF oficial (texto nativo). Columna CONSOLIDADO. La portada del PDF dice "2025" pero el encabezado del sumário quedó con "2024" (typo de maqueta del propio documento, el ejercicio real ES 2025 — confirmado por las fechas del cuerpo). Las tablas de las Notas 19/20 salieron con varias filas sin rawLabel en la transcripción pdftotext -layout (números sueltos); se reconstruyeron los labels por orden, idéntico al de 2023/2024, y se confirmó sumando contra el subtotal impreso. La página 10 del PDF imprime un "Resultado operacional antes do resultado financeiro" que no reconcilia con el resto del propio documento (ver comentario de cabecera) — se usó el valor que sí reconcilia (derivado de las Notas 19/20 y confirmado por la Nota 23, segmento por segmento). Transcripción completa en Clubes/Brasil/America Mineiro/demonstracoes-financeiras-2025.md. Tipo de cambio de cierre 31/12/2025 (R$5,5024, PTAX BCB), ya existente en data/currency-map.js.',
     },
 });
 

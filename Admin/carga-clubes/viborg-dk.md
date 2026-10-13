@@ -205,3 +205,13 @@ _antes de Kim Nielsen (data/gestiones/dk.js):_
 ```text
 Cierre 30/6. Kim Nielsen firma como formand todos los informes 2012 a 2024; inicio real no documentado.
 ```
+
+## Fuentes
+
+### viborg-aarsrapport-2024
+
+_note (data/):_
+
+```text
+Auditado por Beierholm (Statsautoriseret Revisionspartnerselskab), sin salvedades. CVR 83 07 37 13. Tipo de cambio DKK/USD del cierre (6,9664) es una aproximación de mercado (cruce BCE EUR/DKK × EUR/USD del 28/6/2024, viernes hábil más cercano al 30/6), no declarada por el propio documento ni centralizada todavía en FX_CLOSE. Transcripción completa en "Clubes/Dinamarca/Viborg FF/aarsrapport-2024-06-30.md".
+```

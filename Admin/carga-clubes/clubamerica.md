@@ -228,6 +228,16 @@ real. Ver comentario largo "UTILIDAD DEL SEGMENTO NO ES RESULTADO NETO" al princ
 archivo.
 ```
 
+## Fuentes
+
+### clubamerica-ollamani-2025
+
+_note (data/):_
+
+```text
+PDF oficial de 113 páginas (texto nativo), Estados Financieros Consolidados auditados bajo IFRS del año terminado el 31/12/2025, presentados ante la Bolsa Mexicana de Valores (BMV, clave AGUILAS) y espejados en bmv.com.mx y gob.mx/cnbv. Club América NO publica balance propio: Ollamani es la controladora pública (post spin-off de Grupo Televisa, 31/01/2024) y reporta un "Segmento de Fútbol" bajo IFRS 8 que agrupa Club América (varonil y femenil) CON el Estadio Banorte — ver comentario de cabecera de data/clubamerica-data.js para el detalle completo de este límite y de por qué grossDebt/cash/officialPAT quedan en 0/0/null. Copia local en finance-of-sports/Clubes/México/Club América/reporte-financiero-ollamani-2025-auditado.pdf.
+```
+
 ## Otros
 
 ### Presupuesto al lado del balance (clubamericaPresupuestoOverlayByYear), en general

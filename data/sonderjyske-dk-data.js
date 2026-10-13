@@ -51,7 +51,6 @@ Object.assign(sources, {
     id:'sonderjyske-dk-aarsrapport-2022', clubId:'sonderjyske-dk',
     title:'Sønderjyske Fodbold A/S — Årsrapport 2021/22 (01.07.2021 - 30.06.2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Informe clase B (con algunas normas de clase C), formato "Bruttofortjeneste" que combina Nettoomsætning, vareforbrug, andre driftsindtægter Y eksterne omkostninger en una sola línea (§32 ÅRL) — más agregado que otros clubes daneses cargados (silkeborg-dk/viborg-dk/fckobenhavn-dk), que sí desglosan Revenue. Auditor: EY (Michael Anker), sin salvedades. Ejercicio de pérdida severa con pérdida de más de la mitad del capital social ("kapitaltab"); aporte de grupo de DKK 25M y carta de apoyo de liquidez de los dueños después del cierre sostienen el principio de empresa en marcha. Cambio de control societario después del cierre (Euro Steel-koncernen + Davidsen-koncernen). Transcripción completa en Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-06-30.md.',
   },
 });
 

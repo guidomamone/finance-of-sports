@@ -104,6 +104,16 @@ _antes de David Sullivan (data/gestiones/gb.js):_
 Sullivan y Gold compraron el club el 19/1/2010; Sullivan es el cabeza (Gold, co-chairman, murió en enero de 2023).
 ```
 
+## Fuentes
+
+### westham-gb-full-accounts-2025
+
+_note (data/):_
+
+```text
+PDF con texto nativo, transcripción completa en Clubes/Inglaterra/West Ham United/west-ham-united-full-accounts-2024-25.md. Cuentas individuales, subsidiaria de WH Holding Limited (no consolida, exenta bajo Section 400). No declara tipo de cambio propio (fxRef apunta a FX_CLOSE). Único ejercicio disponible (a diferencia de otros clubes ingleses de esta sesión, no había un 2do PDF transcripto).
+```
+
 ## Otros
 
 ### gestionesByClub['westham-gb']

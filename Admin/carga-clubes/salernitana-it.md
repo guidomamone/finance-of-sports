@@ -189,3 +189,19 @@ Iervolino: presidente del consejo desde el 13/1/2022 (el trust Salernitana 2021,
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### salernitana-it-bilancio-30-giugno-2022
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### salernitana-it-bilancio-30-giugno-2023-def
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2023-def.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

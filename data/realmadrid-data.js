@@ -51,7 +51,6 @@ Object.assign(sources, {
       title:'Informe Económico Real Madrid 2024-2025 (Cuentas Anuales Consolidadas + Informe de Auditoría), Ejercicio 1/7/2024 a 30/6/2025',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://www.realmadrid.com/es-ES/el-club/transparencia/informes-economicos',
-      note:'PDF oficial de 94 páginas, texto nativo (sin necesidad de OCR), publicado en la sección de transparencia del club. Cuentas anuales CONSOLIDADAS (Grupo Real Madrid, incluye Real Madrid Estadio S.L.U. y Aparcamientos del Santiago Bernabéu S.L.). Transcripción de la cuenta de pérdidas y ganancias + Nota 4 (amortización de jugadores) + deuda/caja en Clubes/España/Real Madrid/informe-economico-2024-2025-cuenta-resultados.md.',
     },
 });
 

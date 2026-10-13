@@ -64,7 +64,6 @@ Object.assign(sources, {
     id:'levante-es-cuentas-anuales-consolidadas-2024-25', clubId:'levante-es',
     title:'Cuentas Anuales Consolidadas e Informe de Gestión Consolidado, Ejercicio anual terminado el 30 de junio de 2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'PDF oficial, cuentas CONSOLIDADAS del grupo (Levante UD S.A.D. + Levante UD Nuevos Desarrollos S.L.U. + Linkshow S.L.U.). Transcripción completa en Clubes/España/Levante UD/cuentas-anuales-consolidadas-2024-2025.md. Temporada jugada en Segunda División (el ascenso a Primera se definió al final de ESTE ejercicio, vía playoff de junio de 2025, para la temporada 2025/26 — ver aviso completo en el comentario de cabecera de data/levante-es-data.js). Cargas sociales prorrateadas por aproximación al no venir separadas por sector en el documento.',
   },
 });
 

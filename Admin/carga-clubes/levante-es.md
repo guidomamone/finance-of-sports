@@ -151,6 +151,16 @@ _antes de Francisco Catalán (data/gestiones/es.js):_
 Quico Catalán: presidente desde 2010 (solo el año; dia 01) hasta el 4/9/2023.
 ```
 
+## Fuentes
+
+### levante-es-cuentas-anuales-consolidadas-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial, cuentas CONSOLIDADAS del grupo (Levante UD S.A.D. + Levante UD Nuevos Desarrollos S.L.U. + Linkshow S.L.U.). Transcripción completa en Clubes/España/Levante UD/cuentas-anuales-consolidadas-2024-2025.md. Temporada jugada en Segunda División (el ascenso a Primera se definió al final de ESTE ejercicio, vía playoff de junio de 2025, para la temporada 2025/26 — ver aviso completo en el comentario de cabecera de data/levante-es-data.js). Cargas sociales prorrateadas por aproximación al no venir separadas por sector en el documento.
+```
+
 ## Otros
 
 ### memberCountByClub['levante-es']

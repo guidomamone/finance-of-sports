@@ -114,14 +114,12 @@ Object.assign(sources, {
       title:'Demonstrações Financeiras do Operário Ferroviário Esporte Clube, Exercícios Findos em 31 de Dezembro de 2024 e de 2023',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://federacaopr.sfo3.digitaloceanspaces.com/wp-content/uploads/2025/04/30175550/Operario-2024.pdf',
-      note:'PDF oficial (texto nativo), descargado del repositorio de documentos de la Federação Paranaense. Auditado por JSP Serviços (Junior Svieck Pinto, CRC/PR 058.111/O-0). Transcripción completa en Clubes/Brasil/Operario Ferroviario/demonstracoes-financeiras-2024.md. 2024 fue un ejercicio de déficit (R$246 mil). Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923).',
     },
   'operarioferroviario-br-demonstracoes-2025': {
       id:'operarioferroviario-br-demonstracoes-2025', clubId:'operarioferroviario-br',
       title:'Demonstrações Financeiras do Operário Ferroviário Esporte Clube, Exercícios Findos em 31 de Dezembro de 2025 e de 2024',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://cdn.fanbase.com.br/fanhub/operario/docs/transparencia/dfs-operario-assinado.pdf',
-      note:'PDF oficial (texto nativo), descargado del portal de transparencia propio del club (CDN Fanbase). Firmado por el presidente Juarez Costa Pinto y el contador Marcos Antonio Martins (CRC PR 056385/O-5), auditado por JSP Serviços. Transcripción completa en Clubes/Brasil/Operario Ferroviario/demonstracoes-financeiras-2025.md. 2025 revirtió el déficit de 2024 con un superávit de R$52 mil, en línea con la prensa local (aRede, Ponta Grossa: receita total de R$30,3 M en 2024 a R$39,5 M en 2025). Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024).',
     },
 });
 

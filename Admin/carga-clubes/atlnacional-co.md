@@ -129,3 +129,13 @@ _antes de Sebastián Arango Botero (data/gestiones/co.js):_
 ```text
 Cargo: Presidente (representante legal). El dueño es la Organización Ardila Lulle, una sociedad sin dueño persona: no se carga como gestión.
 ```
+
+## Fuentes
+
+### atlnacional-co-estados-financieros-2025
+
+_note (data/):_
+
+```text
+Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 900464187). El PDF trae solo las notas (texto nativo, sin tabla de Estado de Resultado Integral primaria aparte), pero la Nota 14 (Impuestos a las ganancias) imprime literalmente "Utilidad contable Antes de Impuestos: 7.162.607" para 2025, que reconcilia exacto contra la suma independiente Revenue-Expenses+netInterest calculada desde las notas de ingresos/gastos — sin ningún residuo. 11 registros distintos existen en SIIS bajo este NIT (probablemente un registro por ejercicio); solo se cargó el más reciente (2025) esta sesión. Transcripción completa en Clubes/Colombia/Atletico Nacional/estados-financieros-2025.md.
+```

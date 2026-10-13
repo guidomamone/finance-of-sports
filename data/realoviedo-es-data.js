@@ -78,7 +78,6 @@ Object.assign(sources, {
     id:'realoviedo-es-cuentas-anuales-2024-25', clubId:'realoviedo-es',
     title:'Cuentas Anuales, Temporada 2024-25',
     type:'official_balance_sheet', reliability:'primary',
-    note:'PDF oficial (65 págs.), texto con poco ruido de OCR (a diferencia de Mallorca, cada fila y su número quedaron en la misma línea en la transcripción). Un sub-ítem ("Pérdidas, deterioro y variación de provisiones por operaciones comerciales") aparece bajo el grupo visual "Otros Gastos de explotación" pero el subtotal impreso de ese grupo no lo incluye — se cargó como línea propia, ver comentario de cabecera de data/realoviedo-es-data.js. Bajado de realoviedo.es/ley-de-transparencia, host statics-maker.llt-services.com/ovi/. Transcripción completa en Clubes/España/Real Oviedo/cuentas-anuales-2024-2025.md.',
   },
 });
 

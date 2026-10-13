@@ -67,7 +67,6 @@ Object.assign(sources, {
       id:'brondby-aarsrapport-2020', clubId:'brondby-dk',
       title:'Brøndbyernes I.F. Fodbold A/S — Årsrapport 2020 (1. januar - 31. december 2020)',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Descargado vía distribution.virk.dk (Erhvervsstyrelsen, CVR 83 93 34 10). Año afectado por COVID-19 (compensación estatal por pérdidas de organizador y nómina durante los cierres, ver Nota 6). Reporta bajo NIIF/IFRS, formato Totalindkomstopgørelse (distinto del formato clásico "årsregnskabsloven" de FC København/FC Midtjylland). Transcripción completa en Clubes/Dinamarca/Brøndby/aarsrapport-2020-12-31.md. No hay ejercicios más nuevos transcriptos todavía para este club.',
     },
 });
 

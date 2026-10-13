@@ -139,6 +139,24 @@ cada ejercicio (Strategic Report: "finishing in 11th position" en 2023/24, "fini
 position" en 2024/25).
 ```
 
+## Fuentes
+
+### brighton-gb-full-accounts-2024
+
+_note (data/):_
+
+```text
+PDF con texto nativo, transcripción completa en "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2023-24.md". Cuentas individuales de la compañía, no consolidadas con Brighton & Hove Albion Women's Football Club Limited ni The Community Stadium Limited. No declara tipo de cambio propio (fxRef apunta a FX_CLOSE). El ejercicio 2024 fue restated (impuesto diferido) en el documento del ejercicio 2025 — se cargó con la cifra tal cual depositada en SU PROPIO documento, ver comentario de cabecera de data/brighton-gb-data.js y Admin/dudas-por-club.md.
+```
+
+### brighton-gb-full-accounts-2025
+
+_note (data/):_
+
+```text
+PDF con texto nativo, transcripción completa en "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2024-25.md". Mismo criterio de categorización que el ejercicio 2024.
+```
+
 ## Otros
 
 ### Presupuesto al lado del balance (brightonGbPresupuestoOverlayByYear), en general

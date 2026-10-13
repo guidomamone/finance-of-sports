@@ -75,6 +75,16 @@ _antes de Alfonso Fernández de Trocóniz (data/gestiones/es.js):_
 Fernández de Trocóniz: presentado el 3/10/2013 (nota de LaLiga); ahí figura el apoyo de Josean Querejeta, que no se carga como dueño (criterio a confirmar).
 ```
 
+## Fuentes
+
+### deportivoalaves-cuentas-anuales-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial (auditor Sayma Auditores/HLB), escaneo sin capa de texto (leído renderizando a imagen). Transcripción completa de la cuenta de resultados en Clubes/España/Deportivo Alavés/cuentas-anuales-2024-2025-cuenta-resultados.md.
+```
+
 ## Otros
 
 ### deportivoalavesPasesData

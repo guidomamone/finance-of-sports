@@ -123,13 +123,11 @@ Object.assign(sources, {
     id:'salernitana-it-bilancio-30-giugno-2022', clubId:'salernitana-it',
     title:'U.S. Salernitana 1919 S.r.l. — Salernitana-bilancio-30-giugno-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'salernitana-it-bilancio-30-giugno-2023-def': {
     id:'salernitana-it-bilancio-30-giugno-2023-def', clubId:'salernitana-it',
     title:'U.S. Salernitana 1919 S.r.l. — Salernitana-bilancio-30-giugno-2023-def (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2023-def.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

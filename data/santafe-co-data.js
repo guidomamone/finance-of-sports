@@ -87,7 +87,6 @@ Object.assign(sources, {
       id:'santafe-co-estados-financieros-2025', clubId:'santafe-co',
       title:'Estado de Resultados Integral Separado y Notas a los Estados Financieros, al 31 de diciembre de 2025 y 2024',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 860009807). Texto nativo, incluye el Estado de Resultados Integral primario completo. El club está en proceso de reorganización (Ley 1116) ante Supersociedades; 11 registros distintos existen en SIIS bajo este NIT, solo se cargó el ejercicio más reciente (2025) esta sesión. El impuesto de renta diferido de 2025 fue un BENEFICIO neto (mayor al gasto corriente), lo que hizo que la Utilidad Neta terminara por encima de la Utilidad Operacional — ver comentario de cabecera de data/santafe-co-data.js. Transcripción completa en Clubes/Colombia/Independiente Santa Fe/estados-financieros-2025.md.',
     },
 });
 

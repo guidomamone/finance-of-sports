@@ -234,6 +234,16 @@ total 2024 sale del propio Balanço). cash = 'Caixa e Equivalentes de Caixa' (No
 netInterest = 'Receitas Financeiras' (0,675) - 'Despesas Financeiras' (19,999), Nota 25.
 ```
 
+## Fuentes
+
+### ceara-br-demonstracoes-2025
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo, pdftotext -layout), com comparativo completo 2025 x 2024 no mesmo documento. Auditoria com opinião SEM ressalva mas COM ênfase de incerteza relevante sobre continuidade operacional (Nota 2.2): prejuízo de R$85.836.550,38 em 2025 e passivo circulante excedendo o ativo circulante em R$82.483.756,21. Rebaixamento à Série B do Brasileirão ao final de 2025, após temporada na Série A/Copa do Brasil/Copa do Nordeste. Convertido a USD com PTAX BCB de cierre: 31/12/2025 (R$5,5024) e 31/12/2024 (R$6,1923) — o documento não declara tipo de cambio próprio. Transcrição completa em Clubes/Brasil/Ceara/demonstracoes-contabeis-2025.md.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

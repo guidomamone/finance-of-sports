@@ -711,49 +711,41 @@ Object.assign(sources, {
     id:'atalanta-it-bilancio-consolidato-2021', clubId:'atalanta-it',
     title:'Atalanta Bergamasca Calcio S.p.A. — Atalanta-bilancio-consolidato-2021 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'atalanta-it-bilancio-consolidato-2024': {
     id:'atalanta-it-bilancio-consolidato-2024', clubId:'atalanta-it',
     title:'Atalanta Bergamasca Calcio S.p.A. — Atalanta-bilancio-consolidato-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'atalanta-it-bilancio-consolidato-2020': {
     id:'atalanta-it-bilancio-consolidato-2020', clubId:'atalanta-it',
     title:'Atalanta Bergamasca Calcio S.p.A. — Atalanta-bilancio-consolidato-2020 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'atalanta-it-bilancio-consolidato-2025': {
     id:'atalanta-it-bilancio-consolidato-2025', clubId:'atalanta-it',
     title:'Atalanta Bergamasca Calcio S.p.A. — Atalanta-bilancio-consolidato-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'atalanta-it-bilancio-consolidato-2019': {
     id:'atalanta-it-bilancio-consolidato-2019', clubId:'atalanta-it',
     title:'Atalanta Bergamasca Calcio S.p.A. — Atalanta-bilancio-consolidato-2019 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'atalanta-it-bilancio-consolidato-2018': {
     id:'atalanta-it-bilancio-consolidato-2018', clubId:'atalanta-it',
     title:'Atalanta Bergamasca Calcio S.p.A. — Atalanta-bilancio-consolidato-2018 (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'atalanta-it-bilancio-consolidato-2023': {
     id:'atalanta-it-bilancio-consolidato-2023', clubId:'atalanta-it',
     title:'Atalanta Bergamasca Calcio S.p.A. — Atalanta-bilancio-consolidato-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'atalanta-it-bilancio-consolidato-2022': {
     id:'atalanta-it-bilancio-consolidato-2022', clubId:'atalanta-it',
     title:'Atalanta Bergamasca Calcio S.p.A. — Atalanta-bilancio-consolidato-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 

@@ -54,7 +54,6 @@ Object.assign(sources, {
     title:'Relatório dos Auditores Independentes sobre as Demonstrações Financeiras, 31 de Dezembro de 2020 e 2019',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://fgf.com.br/demonstracoes-financeiras-filiados/2020',
-    note:'PDF oficial (escaneo, sin capa de texto — la transcripción original en Clubes/Brasil/Juventude/demonstracoes-financeiras-2020.md tiene ruido de OCR; los números cargados acá salen de una relectura directa de la imagen a 300dpi de la página con la Demonstração do Déficit/Superávit, ver comentario de cabecera del archivo de datos). Auditado por Rosito & Filomena Auditores Independentes (Porto Alegre), opinião COM RESSALVA: (a) el club no deprecia/amortiza la totalidad de su activo imobilizado/intangível; (b) no aplicó la Resolução 1.292/10 (valor recuperável de activos); (c) mantiene la marca JUVENTUDE revaluada en R$6.000.000 desde 1996, práctica no aceita en Brasil. Déficit real de R$2.726.740,34, con passivo a descoberto de R$8.011.948,22 al cierre (arrastre de moratoria PROFUT de 2009-2015 + contingencias). Convertido a USD con PTAX BCB de cierre 31/12/2020 (R$5,1967, fx literal — ver comentario de cabecera). Descargado del repositorio de demonstrações financeiras de clubes filiados de la Federação Gaúcha de Futebol. Transcripción completa (con ruido de OCR sin corregir) en Clubes/Brasil/Juventude/demonstracoes-financeiras-2020.md.',
   },
 });
 

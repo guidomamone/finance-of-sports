@@ -82,14 +82,12 @@ Object.assign(sources, {
     title:'Demonstrações Financeiras do Guarani Futebol Clube — Em Recuperação Judicial, Exercícios Findos em 31 de Dezembro de 2024 e de 2023',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://futebolpaulista.com.br/Repositorio/Institucional/2024/Guarani.pdf',
-    note:'PDF con capa de texto real (formato "publicación legal", recorte de gazetasp.com.br), descargado del repositorio institucional de la Federação Paulista de Futebol. Auditado por ASSESSORA ASSESSORES E AUDITORES EIRELI EPP con opinião COM RESSALVAS (adiantamentos, bloqueios judiciais sin documentación, obligações trabalhistas/tributárias sin reconciliar, provisão de contingências sin actualizar por multas/intereses). El clube está EM RECUPERAÇÃO JUDICIAL (aprobada 27/2/2023, homologada 3/6/2024). Transcripción completa en Clubes/Brasil/Guarani/demonstracoes-financeiras-2023-2024.md. 2024 fue un ejercicio de déficit (R$412 mil). Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923).',
   },
   'guarani-br-demonstracoes-2024-2025': {
     id:'guarani-br-demonstracoes-2024-2025', clubId:'guarani-br',
     title:'Demonstrações Financeiras do Guarani Futebol Clube — Em Recuperação Judicial, Exercícios Findos em 31 de Dezembro de 2025 e de 2024',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://guaranifc.com.br/wp-content/uploads/2026/04/1-RELATORIO-DE-AUDITORIA-COM-AS-DEMONSTRACOES-FINANCEIRAS-GUARANI-2025.pdf',
-    note:'PDF oficial (texto nativo), descargado de la sección de gobernanza del sitio propio del club (guaranifc.com.br/governanca/). Auditado por Audcorp Auditoria e Assessoria S/S (José Augusto Barbosa, CRC 1SP 120808/0-6), opinião COM RESSALVAS (obrigações trabalhistas/tributárias sin documentación completa, contingencia tributaria de 2006 no reconocida por R$6.200 mil, ajuste retroactivo de adiantamentos en desacuerdo con CPC 23). 2025 revirtió el déficit de 2024 con un superávit de R$8.077 mil, impulsado principalmente por la negociación de atletas (R$42,1 M, incl. R$6,1 M de categorías de base). Transcripción completa en Clubes/Brasil/Guarani/demonstracoes-financeiras-2024-2025.md. Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024).',
   },
 });
 

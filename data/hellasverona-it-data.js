@@ -427,37 +427,31 @@ Object.assign(sources, {
     id:'hellasverona-it-bilancio-individuale-2020', clubId:'hellasverona-it',
     title:'Hellas Verona Football Club S.p.A. — Hellas-Verona-bilancio-individuale-2020 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'hellasverona-it-bilancio-individuale-2023': {
     id:'hellasverona-it-bilancio-individuale-2023', clubId:'hellasverona-it',
     title:'Hellas Verona Football Club S.p.A. — Hellas-Verona-bilancio-individuale-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'hellasverona-it-bilancio-individuale-2021': {
     id:'hellasverona-it-bilancio-individuale-2021', clubId:'hellasverona-it',
     title:'Hellas Verona Football Club S.p.A. — Hellas-Verona-bilancio-individuale-2021 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'hellasverona-it-bilancio-individuale-2022': {
     id:'hellasverona-it-bilancio-individuale-2022', clubId:'hellasverona-it',
     title:'Hellas Verona Football Club S.p.A. — Hellas-Verona-bilancio-individuale-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'hellasverona-it-bilancio-individuale-2025': {
     id:'hellasverona-it-bilancio-individuale-2025', clubId:'hellasverona-it',
     title:'Hellas Verona Football Club S.p.A. — Hellas-Verona-bilancio-individuale-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'hellasverona-it-bilancio-individuale-2024': {
     id:'hellasverona-it-bilancio-individuale-2024', clubId:'hellasverona-it',
     title:'Hellas Verona Football Club S.p.A. — Hellas-Verona-bilancio-individuale-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

@@ -111,3 +111,13 @@ _antes de Eduardo Pimentel (data/gestiones/co.js):_
 ```text
 Dueño: Eduardo Pimentel, persona con nombre (dueño y gestor del proyecto desde la fundación del club en 2002, Wikipedia; Publimetro 2024 lo llama "dueño del Boyacá Chicó"). Su hijo Nicolás Pimentel es el presidente/gerente que firma (Publimetro, 10/2024): sin fecha de inicio, queda fuera por el criterio del dueño.
 ```
+
+## Fuentes
+
+### boyacachico-co-estados-financieros-2024
+
+_note (data/):_
+
+```text
+Descargado vía SIIS (siis.ia.supersociedades.gov.co). PAT confirmado doble: Nota 15 (Patrimonio, "Resultado del Ejercicio") y Nota 21 (Utilidad antes de impuestos menos provisión de renta), coinciden a 1 centavo. La línea "Menos: Devoluciones" (21% del ingreso bruto) no se pudo atribuir a un rubro específico -- ver Admin/dudas-por-club.md. Transcripción completa en Clubes/Colombia/Boyaca Chico/estados-financieros-2024.md.
+```

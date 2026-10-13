@@ -94,13 +94,11 @@ Object.assign(sources, {
     id:'ajax-nl-jaarverslag-2024', clubId:'ajax-nl',
     title:'Jaarverslag AFC Ajax N.V. boekjaar 2023/2024 (1 juli 2023 - 30 juni 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jaarverslag oficial consolidado (IFRS) de AFC Ajax N.V., descargado del canal público de la KNVB (licencia F.04). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/Ajax/jaarverslag-2023-24.md.',
   },
   'ajax-nl-jaarverslag-2025': {
     id:'ajax-nl-jaarverslag-2025', clubId:'ajax-nl',
     title:'Jaarverslag AFC Ajax N.V. boekjaar 2024/2025 (1 juli 2024 - 30 juni 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jaarverslag oficial consolidado (IFRS) de AFC Ajax N.V., descargado del canal público de la KNVB (licencia F.04). PDF con capa de texto nativa. Transcripción completa en Clubes/Países Bajos/Ajax/jaarverslag-2024-25.md.',
   },
 });
 

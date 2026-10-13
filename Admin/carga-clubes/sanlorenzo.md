@@ -211,6 +211,64 @@ _antes de Marcelo Moretti (data/gestiones/ar.js):_
 Moretti: hasta = acefalía declarada el 16/12/2025 (licencia desde agosto de 2025 con Lopardo a cargo; Costantino transitorio desde el 22/12/2025). Sin gestiones posteriores cargadas.
 ```
 
+## Fuentes
+
+### sanlorenzo-memoria-y-balance-2011-12
+
+_note (data/):_
+
+```text
+PDF oficial (33 páginas, texto nativo, algunas páginas de Anexo rotadas 90°), auditado por Deloitte & Co. S.A. DÉFICIT real 2012: $(45.744.341) ARS. Da el Ejercicio 2012 con detalle completo de Anexo V (Recursos)/Anexo VI (Gastos, por rubro x departamento) y el Ejercicio 2011 como comparativo (revenue con detalle completo, gastos solo a las 7 categorías agregadas del Estado de Recursos y Gastos — el Anexo VI no desglosa el año comparativo). DÉFICIT real 2011: $(41.645.487) ARS. Convertido a USD con $4,4870 (2012, Anexo III, lado Caja y bancos) / $4,11 (2011, aproximación externa MENOS confiable, el Anexo III de este balance no separa claramente su columna comparativa por tipo de cambio). Ver data/sanlorenzo-data.js.
+```
+
+### sanlorenzo-memoria-y-balance-2016-17
+
+_note (data/):_
+
+```text
+PDF oficial (40 páginas, texto nativo con bastante ruido de OCR en esta copia, algunas páginas de Anexo rotadas 90°), auditado por Bertora & Asociados. SUPERÁVIT real: $436.617 ARS (ejercicio de resultado prácticamente en equilibrio, verificado). Detalle completo de Anexo V (Recursos)/Anexo VI (Gastos por rubro x departamento). Convertido a USD con $16,53 (Anexo III, Caja y bancos en USD). Ver data/sanlorenzo-data.js.
+```
+
+### sanlorenzo-memoria-y-balance-2015-16
+
+_note (data/):_
+
+```text
+PDF oficial (37 páginas, texto nativo, algunas páginas de Anexo rotadas 90°), auditado por Bertora & Asociados. SUPERÁVIT real: $33.377.884 ARS — este ejercicio tuvo un resultado financiero POSITIVO ($93.428.003, ganancia neta, no gasto). Detalle completo de Anexo V (Recursos)/Anexo VI (Gastos por rubro x departamento). Convertido a USD con $14,94 (Anexo III, Créditos del Activo Corriente en US$ — la Caja y bancos de este ejercicio solo tenía EUR, no USD). Ver data/sanlorenzo-data.js.
+```
+
+### sanlorenzo-memoria-y-balance-2014-15
+
+_note (data/):_
+
+```text
+PDF oficial (34 páginas, texto nativo, algunas páginas de Anexo rotadas 90°), auditado por Bertora & Asociados. SUPERÁVIT real: $41.968.388 ARS. Detalle completo de Anexo V (Recursos)/Anexo VI (Gastos por rubro x departamento). Convertido a USD con $8,988 (Anexo III, lado Activo/Caja — el Pasivo declara $9,088). Ver data/sanlorenzo-data.js.
+```
+
+### sanlorenzo-memoria-y-balance-2012-13
+
+_note (data/):_
+
+```text
+PDF oficial (34 páginas, texto nativo con bastantes typos de imprenta — comas en vez de puntos como separador de miles en varios números, verificado que es error tipográfico del propio documento sumando las partes contra el total impreso). Auditado por Bertora & Asociados, informe de fecha 20/12/2013, firmado por Matías Lammens como Presidente. SUPERÁVIT real: $32.929.698 ARS. Convertido a USD con $5,355 (lado Activo/Caja del Anexo de moneda extranjera — el Pasivo declara $5,388). Ver data/sanlorenzo-data.js para el detalle completo, incluye una fila "Transporte" del Anexo VI que en realidad es un subtotal de página, no un gasto real (se excluyó).
+```
+
+### sanlorenzo-memoria-y-balance-2013-14
+
+_note (data/):_
+
+```text
+PDF oficial (19 páginas, texto nativo), auditado por Bertora & Asociados, informe de fecha 14/1/2015, firmado por Matías Lammens como Presidente. SUPERÁVIT real: $76.628.874 ARS. Este documento específico NO incluye los Anexos V/VI de detalle por rubro (solo el Estado de Recursos y Gastos con 4 categorías agregadas) — se cargó con ese nivel de agregación honesto, sin inventar desglose. Convertido a USD con $8,15 (dólar oficial vendedor BNA de cierre, investigado externamente — este documento no declara su propio tipo de cambio).
+```
+
+### sanlorenzo-presupuesto-2023-24
+
+_note (data/):_
+
+```text
+PDF oficial (1 página, texto nativo pero mal extraído por pdftotext -layout, re-leído de imágenes renderizadas de la página). Presupuesto de CAJA con sección Ordinaria (operación normal) y una sección Extraordinaria de financiamiento/capital que NO se cargó (ver data/sanlorenzo-data.js y `.claude/skills/club-data-mapping/referencia/casos-por-pais-y-formato.md`). Resultado Ordinario proyectado: $5.947.747.189 ARS. Convertido a USD con $909 (dólar mayorista de cierre 30/6/2024, investigado externamente, mismo valor usado en Instituto/Independiente/Racing para la misma fecha — este documento no declara tipo de cambio propio).
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

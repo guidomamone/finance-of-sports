@@ -164,3 +164,13 @@ _antes de Gynther Kohls (data/gestiones/dk.js):_
 ```text
 Cierre 30/6. Kohls firma 2013 a 2021; Davidsen firma 2022 como formand.
 ```
+
+## Fuentes
+
+### sonderjyske-dk-aarsrapport-2022
+
+_note (data/):_
+
+```text
+Informe clase B (con algunas normas de clase C), formato "Bruttofortjeneste" que combina Nettoomsætning, vareforbrug, andre driftsindtægter Y eksterne omkostninger en una sola línea (§32 ÅRL) — más agregado que otros clubes daneses cargados (silkeborg-dk/viborg-dk/fckobenhavn-dk), que sí desglosan Revenue. Auditor: EY (Michael Anker), sin salvedades. Ejercicio de pérdida severa con pérdida de más de la mitad del capital social ("kapitaltab"); aporte de grupo de DKK 25M y carta de apoyo de liquidez de los dueños después del cierre sostienen el principio de empresa en marcha. Cambio de control societario después del cierre (Euro Steel-koncernen + Davidsen-koncernen). Transcripción completa en Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-06-30.md.
+```

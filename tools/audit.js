@@ -1108,6 +1108,10 @@ function checkFuentesPublicas(api) {
     }
     if (s.reliability !== 'primary' && !s.publicNote) sinNota++;
   }
+  // (to-do 209) la nota INTERNA de una fuente ya no vive en data/ (que se publica entero): va a "## Fuentes" del
+  // Admin/carga-clubes/<club>.md (tools/evidencia-club.mjs, agregarFuente). Un `note` que vuelva a aparecer en sources{} viaja al visitante.
+  const conNote = Object.keys(api.sources).filter((id) => 'note' in api.sources[id]);
+  if (conNote.length) add('P2', 'note-interna-en-data', `${conNote.length} fuentes con \`note\` en data/ (ej. ${conNote.slice(0, 3).join(', ')}): la nota interna va a "## Fuentes" de Admin/carga-clubes/<club>.md, no a sources{}`);
   if (sinNota) {
     add('P3', 'fuente-no-primaria-sin-nota', `${sinNota} documentos que no son fuente primaria y no tienen publicNote. El nivel solo dice "réplica" o "prensa": conviene una frase que diga por qué`);
   }

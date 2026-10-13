@@ -751,3 +751,115 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### criciuma-br-demonstrativo-financeiro-2012
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/demonstrativo-financeiro-2012.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### criciuma-br-demonstracoes-financeiras-2013
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/demonstracoes-financeiras-2013.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### criciuma-br-balanco-2019
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/balanco-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### criciuma-br-balanco-2020
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/balanco-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### criciuma-br-demonstrativo-financeiro-2021
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/demonstrativo-financeiro-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### criciuma-br-relatorio-de-balanco-2023
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/relatorio-de-balanco-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### criciuma-br-relatorio-de-balanco-2024
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/relatorio-de-balanco-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### criciuma-br-relatorio-auditoria-2025
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/relatorio-auditoria-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### criciuma-br-demonstracoes-financeiras-2022
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### criciuma-br-demonstrativo-financeiro-2014
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Criciuma/demonstrativo-financeiro-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### criciuma-br-balanco-2015
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Criciuma/balanco-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### criciuma-br-balanco-2017
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Criciuma/balanco-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### criciuma-br-balanco-2018
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Criciuma/balanco-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### criciuma-br-balanco-auditado-2016
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Criciuma/balanco-auditado-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

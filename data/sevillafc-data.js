@@ -60,7 +60,6 @@ Object.assign(sources, {
       title:'Cuentas Anuales 2024-2025, Ejercicio 1/7/2024 a 30/6/2025',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://sevillafc.es/el-club/la-entidad/accionista/jga',
-      note:'PDF oficial, escaneo sin capa de texto (leído renderizando páginas a imagen). Patrimonio Neto NEGATIVO al cierre (-122,813 M EUR) — club en situación financiera comprometida. Transcripción completa de la cuenta de resultados en Clubes/España/Sevilla FC/cuentas-anuales-2024-2025-cuenta-resultados.md.',
     },
 });
 

@@ -79,7 +79,6 @@ Object.assign(sources, {
     id:'hajduksplit-hr-financijsko-izvjesce-2024', clubId:'hajduksplit-hr',
     title:'Godišnji financijski izvještaji za posebne namjene za 2024. godinu (Financijski kriterij FO2)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Balance auditado de HNK Hajduk s.d.d., preparado según el Pravilnik o licenciranju i financijskoj održivosti klubova de la HNS. Auditor: Kalibović i partneri d.o.o. Dictamen limpio, sin salvedades. El documento fuente presenta varias celdas con calidad de OCR media (dígitos truncados o perdidos); los valores afectados se reconstruyeron cruzando contra los subtotales "Ukupno" impresos (ver comentario de cabecera de data/hajduksplit-hr-data.js para el detalle de cada reconstrucción). Transcripción completa en Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2024.md.',
   },
 });
 

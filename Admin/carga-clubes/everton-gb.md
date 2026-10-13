@@ -149,6 +149,24 @@ _antes de Farhad Moshiri (data/gestiones/gb.js):_
 Moshiri: compra del 49,9% confirmada el 27/2/2016 (la Premier la ratificó dos semanas después).
 ```
 
+## Fuentes
+
+### everton-gb-group-accounts-2024
+
+_note (data/):_
+
+```text
+PDF de 37 páginas, "Report and accounts" depositado en Companies House, entidad Everton Football Club Company, Limited n° 00036624. Transcripción completa en Clubes/Inglaterra/Everton/everton-group-accounts-2023-24.md. Ver el comentario de cabecera de data/everton-gb-data.js para el detalle completo de categorización (staff costs sin desglose por departamento, profit on player trading como línea neta, CAPEX del estadio excluido a propósito).
+```
+
+### everton-gb-group-accounts-2025
+
+_note (data/):_
+
+```text
+PDF de 44 páginas, "Report and accounts" depositado en Companies House, entidad Everton Football Club Company, Limited n° 00036624. Transcripción completa en Clubes/Inglaterra/Everton/everton-group-accounts-2024-25.md. Cambio de control societario (Moshiri -> Friedkin/Roundhouse Capital Holdings, completado 18/12/2024) ocurrido DENTRO de este ejercicio. Ver el comentario de cabecera de data/everton-gb-data.js para el detalle completo de categorización.
+```
+
 ## Otros
 
 ### Presupuesto al lado del balance (evertonGbPresupuestoOverlayByYear), en general

@@ -90,13 +90,11 @@ Object.assign(sources, {
       id:'espanyol-es-cuentas-anuales-gestion-auditoria-2023-24', clubId:'espanyol-es',
       title:'Cuentas Anuales e Informe de Gestión del Ejercicio Anual Cerrado el 30 de junio de 2024, junto con el Informe de Auditoría Independiente',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial, texto nativo (sin OCR). Auditado por TAC Tax and Auditing Consultants, S.L. Ejercicio jugado en Segunda División (Espanyol descendió de LaLiga al cierre de 2022-23, ascendió de vuelta al ganar el playoff en junio de 2024). Bajado de rcdespanyol.com/es/transparencia-compliance-canaleticoycomunicaciones. Transcripción completa en Clubes/España/RCD Espanyol/cuentas-anuales-gestion-auditoria-2023-2024.md.',
     },
   'espanyol-es-cuentas-anuales-2024-25': {
       id:'espanyol-es-cuentas-anuales-2024-25', clubId:'espanyol-es',
       title:'Cuentas Anuales del Ejercicio Económico Anual Cerrado el 30 de Junio de 2025',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial, escaneo con ruido de OCR real en la transcripción .md (varios dígitos mal leídos, incluida la sección final de impuestos/resultado, que salió ilegible). Los montos de este archivo salen de una relectura directa de la página 12 del PDF renderizada a imagen (300 DPI), no de la transcripción .md original. Bajado de rcdespanyol.com/es/transparencia-compliance-canaleticoycomunicaciones. Transcripción completa (con las cifras sin corregir) en Clubes/España/RCD Espanyol/cuentas-anuales-2024-2025.md.',
     },
 });
 

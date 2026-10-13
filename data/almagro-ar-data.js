@@ -311,37 +311,31 @@ Object.assign(sources, {
     id:'almagro-ar-balance-2018', clubId:'almagro-ar',
     title:'Balance General (auditado), Ejercicio Económico N°80, al 31/10/2018',
     type:'official_balance_sheet', reliability:'primary',
-    note:'PDF oficial (18 páginas, texto nativo). Presidente: Jorge Julián Romeo (nómina de Comisión Directiva 2016-2018 impresa en el propio balance). Cifras en moneda homogénea (ajuste por inflación, RT 6 FACPCE). Convertido a USD con $35,95, dólar mayorista BCRA de cierre al 31/10/2018 (serie Rava Bursátil) — el balance no declara Anexo de moneda extranjera propio.',
   },
   'almagro-ar-balance-2019': {
     id:'almagro-ar-balance-2019', clubId:'almagro-ar',
     title:'Balance General (auditado), Ejercicio Económico N°81, al 31/10/2019',
     type:'official_balance_sheet', reliability:'primary',
-    note:'PDF oficial (18 páginas, texto nativo). Presidente: Jorge Julián Romeo (nómina 2018-2020). Cifras en moneda homogénea. Convertido a USD con $59,67, dólar mayorista BCRA de cierre al 31/10/2019.',
   },
   'almagro-ar-balance-2020': {
     id:'almagro-ar-balance-2020', clubId:'almagro-ar',
     title:'Memoria y Balance General (auditado), Ejercicio Económico N°82, al 31/10/2020',
     type:'official_balance_sheet', reliability:'primary',
-    note:'PDF oficial (21 páginas, escaneado, transcripto con Mistral OCR y verificado a mano). Presidente: Jorge Julián Romeo (nómina 2018-2020). Único ejercicio de los 6 sin línea de "Resultado financiero" separada. Cifras en moneda homogénea. Convertido a USD con $78,32, dólar mayorista BCRA de la última rueda hábil antes del cierre (viernes 30/10/2020, el 31/10 cayó sábado).',
   },
   'almagro-ar-balance-2021': {
     id:'almagro-ar-balance-2021', clubId:'almagro-ar',
     title:'Balance General (auditado), Ejercicio Económico N°83, al 31/10/2021',
     type:'official_balance_sheet', reliability:'primary',
-    note:'PDF oficial (15 páginas, escaneado, transcripto con Mistral OCR y verificado a mano). Presidente: Jorge Julián Romeo (nómina 2018-2021 impresa para este ejercicio; el balance se firmó recién en nov/dic 2023, y su Nota 1.4 aclara que Romeo renunció el 23/10/2023 y lo firmó el nuevo presidente Julio Osvaldo Cucchi — no cambia la gestión del ejercicio 2021 en sí). "RESULTADO DEL EJERCICIO -PERDIDA-" (-6.885.940,57) es solo el resultado operativo; el oficial (PAT) es "RESULTADO FINAL -PERDIDA-" (-10.836.428,30), después del resultado financiero. Convertido a USD con $99,72, dólar mayorista BCRA de la última rueda hábil antes del cierre (viernes 29/10/2021, 30 y 31/10 cayeron sábado y domingo).',
   },
   'almagro-ar-balance-2022': {
     id:'almagro-ar-balance-2022', clubId:'almagro-ar',
     title:'Balance General (auditado), Ejercicio Económico N°84, al 31/10/2022',
     type:'official_balance_sheet', reliability:'primary',
-    note:'PDF oficial (15 páginas, escaneado, transcripto con Mistral OCR y verificado a mano). Presidente: Julio Osvaldo Cucchi (nómina 2021-2024). "RESULTADO DEL EJERCICIO -PERDIDA-" (-6.311.157,56) es solo el resultado operativo; el oficial (PAT) es "RESULTADO FINAL -PERDIDA-" (-13.483.786,33). El "Totales" impreso del Anexo IV (Gastos Específicos) trae un dígito OCR mal leído (49.206.174,97); se usó 49.200.174,97, que reconcilia exacto contra la suma real de sus líneas y contra el Estado de Resultados. Convertido a USD con $156,91, dólar mayorista BCRA de cierre al 31/10/2022.',
   },
   'almagro-ar-balance-2023': {
     id:'almagro-ar-balance-2023', clubId:'almagro-ar',
     title:'Balance General (auditado), Ejercicio Económico N°85, al 31/10/2023',
     type:'official_balance_sheet', reliability:'primary',
-    note:'PDF oficial (15 páginas, escaneado, transcripto con Mistral OCR y verificado a mano). Presidente: Julio Osvaldo Cucchi (nómina 2021-2024). OJO al leer este ejercicio: "RESULTADO DEL EJERCICIO -GANANCIA-" da +69.702.506,29 (Recursos 423.070.550,27 − Gastos 353.368.043,98), pero el resultado financiero de -72.886.626,53 lo revierte a PÉRDIDA: el oficial (PAT) es "RESULTADO FINAL -PERDIDA-" (-3.184.120,24), confirmado también contra el Estado de Evolución del Patrimonio Neto. Convertido a USD con $350, dólar mayorista BCRA de cierre al 31/10/2023.',
   },
 });
 

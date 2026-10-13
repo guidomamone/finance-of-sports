@@ -345,6 +345,24 @@ _antes de Mattheus Montenegro (data/gestiones/br.js):_
 Asume el 19/12/2025, antes del cierre: el ejercicio 2025 es suyo (y firma el balance).
 ```
 
+## Fuentes
+
+### fluminense-br-demonstracoes-2024
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo en el cuerpo de Balanço/DRE/Notas, confirmado letra por letra con pdftotext -layout; las páginas del Relatório do Auditor tienen garbles tipo OCR pese a eso, ver comentario de cabecera de data/fluminense-br-data.js), descargado del Portal da Transparência oficial del club. Auditado por BDO RCS Auditores Independentes SS Ltda., opinião SEM ressalva (limpia), aprobado por el Conselho Diretor el 30/4/2025 (fecha confirmada en texto nativo; la fecha de firma del auditor que aparece en la transcripción, "30 de abril de 2024", es casi seguro un error de OCR de "2025"). El ejercicio 2023 comparativo había sido auditado por otro auditor (sin nombrar en este documento), con ressalva sobre el reconocimiento de ingresos del contrato con la Liga Futebol Forte e incerteza de continuidade. El club declara "capital circulante negativo" y "passivo a descoberto" (patrimônio líquido negativo), con párrafo de énfasis sobre continuidade operacional que el propio informe aclara que NO modifica la opinión. Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923) — el documento no declara un tipo de cambio propio. Transcripción completa en Clubes/Brasil/Fluminense/demonstracoes-financeiras-2024.md.
+```
+
+### fluminense-br-demonstracoes-2025
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo, mismo canal que 2024), auditado por BDO RCS Auditores Independentes SS Ltda., informe firmado 30/4/2026, opinião COM RESSALVA por 3 asuntos: (1) falta de confirmación bancaria (circularização) de una cuenta sin movimiento desde 2023; (2) provisão para contingências que los propios asesores jurídicos del club consideran insuficiente en ~R$34.176 mil; (3) la Administração optó por NO reconocer el efecto contable de la recompra parcial (10%) de derechos de participação vendidos a la Liga Futebol Forte União en enero de 2025, lo que según BDO subvalúa resultado y patrimônio líquido en R$110.427 mil. Esta ressalva del punto (3) es la hipótesis más fuerte encontrada para lo que la prensa (otempo.com.br, junio 2026) describe como necesidad de "regularizar" el balance 2025 tras una advertencia de la Anresf — no confirmado en el propio documento (que no menciona a la Anresf), queda como duda genuina (ver comentario de cabecera de data/fluminense-br-data.js): es posible que exista una versión posterior, ya regularizada, no descargada todavía. Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024) — el documento no declara un tipo de cambio propio. Transcripción completa en Clubes/Brasil/Fluminense/demonstracoes-financeiras-2025.md.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

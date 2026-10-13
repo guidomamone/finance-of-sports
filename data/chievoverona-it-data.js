@@ -185,19 +185,16 @@ Object.assign(sources, {
     id:'chievoverona-it-bilancio-30-giugno-2014', clubId:'chievoverona-it',
     title:'Associazione Calcio Chievo-Verona S.r.l. — ChievoVerona-bilancio-30-giugno-2014 (ejercicio 2014)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'chievoverona-it-bilancio-30-giugno-2016': {
     id:'chievoverona-it-bilancio-30-giugno-2016', clubId:'chievoverona-it',
     title:'Associazione Calcio Chievo-Verona S.r.l. — ChievoVerona-bilancio-30-giugno-2016 (ejercicio 2016)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'chievoverona-it-bilancio-30-giugno-2015': {
     id:'chievoverona-it-bilancio-30-giugno-2015', clubId:'chievoverona-it',
     title:'Associazione Calcio Chievo-Verona S.r.l. — ChievoVerona-bilancio-30-giugno-2015 (ejercicio 2015)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

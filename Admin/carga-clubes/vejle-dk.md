@@ -155,3 +155,13 @@ _antes de Gert Eg (data/gestiones/dk.js):_
 ```text
 Sin cubrir 2012 y 2013 (los informes no marcan quien es formand). Ver tambien nota en el reporte: prensa cita a Tage Pedersen como chairman de Vejle Boldklub desde 2022.
 ```
+
+## Fuentes
+
+### vejle-dk-aarsrapport-2024
+
+_note (data/):_
+
+```text
+Sociedad profesional del fútbol de Vejle Boldklub (CVR 31 08 51 79, distinta de la asociación "VEJLE BOLDKLUB" CVR 68 04 67 18), con 65% de VB Plus ApS por el método de la participación (grupos de networking empresarial, no fútbol). El estado de resultados usa explícitamente la exención del § 32 de la Årsregnskabsloven (solo "Bruttofortjeneste"/Gross profit neto) — todo el revenue se cargó sin desglosar. Patrimonio neto negativo al cierre (-19,936 M DKK). La transcripción tenía las tablas desalineadas y el signo negativo de varios números convertido en un "7" literal; se reconstruyó cruzando la aritmética interna y 2 anclas de texto del informe de gestión (ver comentario de cabecera de data/vejle-dk-data.js). Transcripción completa en Clubes/Dinamarca/Vejle/aarsrapport-2024-12-31.md.
+```

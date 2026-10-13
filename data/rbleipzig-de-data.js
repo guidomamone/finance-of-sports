@@ -127,25 +127,21 @@ Object.assign(sources, {
     id:'rbleipzig-de-jahresabschluss-2022', clubId:'rbleipzig-de',
     title:'Jahresabschluss zum Geschäftsjahr vom 01.07.2021 bis zum 30.06.2022',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jahresabschluss (HGB) bajado de unternehmensregister.de (registro mercantil oficial alemán), auditado por EY GmbH & Co. KG. Jahresüberschuss de EUR 4.772.056,80 sobre Umsatzerlöse+Bestandsveränderungen+sonstige Erträge de EUR 346.510.706,15. El Anhang 4.1 (Umsatzerlöse) de este ejercicio SOLO desglosa 3 categorías (Spielbetrieb/Handel/Sonstigem), mismo caso que 2022/23 — sin línea propia de "Transfer- u. Leihgeschäft" (ver comentario de cabecera de rbleipzig-de-data.js). Título sportivo de la temporada: primer título en el DFB-Pokal 2022. Geschäftsführung completa este ejercicio: Oliver Mintzlaff (CEO), Florian Hopp (CFO), Johann Plenge (CSO). Transcripción completa en Clubes/Alemania/RB Leipzig/jahresabschluss-2021-22.md.',
   },
   'rbleipzig-de-jahresabschluss-2023': {
     id:'rbleipzig-de-jahresabschluss-2023', clubId:'rbleipzig-de',
     title:'Jahresabschluss zum Geschäftsjahr vom 01.07.2022 bis zum 30.06.2023',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jahresabschluss (HGB) bajado de unternehmensregister.de (registro mercantil oficial alemán), auditado por EY GmbH & Co. KG. Jahresüberschuss de EUR 5.342.033,84 sobre Umsatzerlöse+Bestandsveränderungen+sonstige Erträge de EUR 394.761.484,18. El Anhang 4.1 (Umsatzerlöse) de este ejercicio SOLO desglosa 3 categorías (Spielbetrieb/Handel/Sonstigem), a diferencia de 2023/24 y 2024/25 que agregan una 4ta ("Transfer- u. Leihgeschäft") — el propio Lagebericht dice que los ingresos por transferencias fueron menores que el año anterior, y quedaron sin línea propia dentro de "Sonstigem" (ver comentario de cabecera de rbleipzig-de-data.js). Ejercicio de transición en la Geschäftsführung: Oliver Mintzlaff (CEO) hasta el 14/11/2022, Max Eberl (Geschäftsführer Sport) desde el 1/12/2022; Florian Hopp (CFO) y Johann Plenge (CSO) constantes en los 4 ejercicios cargados de este club. Transcripción completa en Clubes/Alemania/RB Leipzig/jahresabschluss-2022-23.md.',
   },
   'rbleipzig-de-jahresabschluss-2024': {
     id:'rbleipzig-de-jahresabschluss-2024', clubId:'rbleipzig-de',
     title:'Jahresabschluss zum Geschäftsjahr vom 01.07.2023 bis zum 30.06.2024',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jahresabschluss (HGB) bajado de unternehmensregister.de (registro mercantil oficial alemán), auditado por EY GmbH & Co. KG. Cifras tomadas de la columna comparativa del Jahresabschluss 2024/2025 (mismo documento fuente, cuentas HGB nominales sin reexpresión). Transcripción completa en Clubes/Alemania/RB Leipzig/jahresabschluss-2024-25.md.',
   },
   'rbleipzig-de-jahresabschluss-2025': {
     id:'rbleipzig-de-jahresabschluss-2025', clubId:'rbleipzig-de',
     title:'Jahresabschluss zum Geschäftsjahr vom 01.07.2024 bis zum 30.06.2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jahresabschluss (HGB) bajado de unternehmensregister.de, auditado por EY GmbH & Co. KG. Transcripción completa en Clubes/Alemania/RB Leipzig/jahresabschluss-2024-25.md — la tabla del Anhang 4.1 (Umsatzerlöse por área de negocio) tenía un dígito de más en "Sonstigem" en una primera lectura (71.292 en vez de 7.292), corregido cruzando contra fuentes/Alemania/RB Leipzig.md; ver comentario de cabecera de rbleipzig-de-data.js.',
   },
 });
 

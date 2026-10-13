@@ -130,3 +130,13 @@ _antes de Kent Madsen (data/gestiones/dk.js):_
 ```text
 2012 a 2015: Kent Madsen firma como Bestyrelsesformand; 2024: Benjamin Albert Boycott figura como chairman y Lyhne como deputy chairman.
 ```
+
+## Fuentes
+
+### silkeborg-aarsrapport-2024
+
+_note (data/):_
+
+```text
+Entidad única (CVR 26397731), sin subsidiarias consolidadas. Auditor: BDO Statsautoriseret revisionsaktieselskab, sin salvedades. Cambio de control societario el 18/12/2024 (Trivela Group V ApS compró 80% del capital), no afecta las cifras del ejercicio 2024. Transcripción completa en Clubes/Dinamarca/Silkeborg IF/aarsrapport-2024-12-31.md.
+```

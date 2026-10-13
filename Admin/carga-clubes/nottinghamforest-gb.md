@@ -118,6 +118,24 @@ el Championship, confirmado por el propio Strategic Report de cada documento. El
 pero cae enteramente dentro de la temporada 2024/25 de Premier League, sin ambigüedad de liga.
 ```
 
+## Fuentes
+
+### nottinghamforest-gb-full-accounts-2024
+
+_note (data/):_
+
+```text
+PDF con texto nativo, transcripción completa en Clubes/Inglaterra/Nottingham Forest/forest-full-accounts-2023-24.md. Cuentas individuales de la compañía, no consolidadas con Nottingham Forest Women's FC Limited ni Nottingham Forest Netball Club Limited. No declara tipo de cambio propio (fxRef apunta a FX_CLOSE).
+```
+
+### nottinghamforest-gb-full-accounts-2025
+
+_note (data/):_
+
+```text
+PDF con texto nativo, transcripción completa en Clubes/Inglaterra/Nottingham Forest/forest-full-accounts-2024-25.md. Mismo criterio de categorización que el ejercicio 2024.
+```
+
 ## Otros
 
 ### gestionesByClub['nottinghamforest-gb']

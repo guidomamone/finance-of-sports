@@ -109,13 +109,11 @@ Object.assign(sources, {
       id:'osasuna-es-auditoria-2021-22', clubId:'osasuna-es',
       title:'Informe de Auditoría y Cuentas Anuales, ejercicio terminado el 30 de junio de 2022',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF con texto nativo (Loyola Auditores, S.L.P.), transcripción completa en Clubes/España/CA Osasuna/auditoria2022.md. Varias cifras de la Nota 16.1 vinieron con coma en vez de punto de miles por un error de OCR/extracción — corregidas verificando que cerraran contra el TOTAL impreso de esa misma nota antes de cargar nada.',
     },
   'osasuna-es-auditoria-2023-24': {
       id:'osasuna-es-auditoria-2023-24', clubId:'osasuna-es',
       title:'Informe de Auditoría y Cuentas Anuales, ejercicio terminado el 30 de junio de 2024',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF con texto nativo, transcripción completa en Clubes/España/CA Osasuna/auditoria2024.md. Este ejercicio desglosa ingresos y gastos con sub-letras directo en la cara de la Cuenta de Pérdidas y Ganancias, mucho más fino que el ejercicio 2021/2022.',
     },
 });
 

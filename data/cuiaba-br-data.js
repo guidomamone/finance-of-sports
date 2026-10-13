@@ -183,25 +183,21 @@ Object.assign(sources, {
     id:'cuiaba-br-balanco-financeiro-2022', clubId:'cuiaba-br',
     title:'Cuiabá Esporte Clube - Sociedade Anônima do Futebol — balanco-financeiro-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Cuiaba/balanco-financeiro-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'cuiaba-br-balanco-financeiro-2024': {
     id:'cuiaba-br-balanco-financeiro-2024', clubId:'cuiaba-br',
     title:'Cuiabá Esporte Clube - Sociedade Anônima do Futebol — balanco-financeiro-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Cuiaba/balanco-financeiro-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'cuiaba-br-balanco-financeiro-2025': {
     id:'cuiaba-br-balanco-financeiro-2025', clubId:'cuiaba-br',
     title:'Cuiabá Esporte Clube - Sociedade Anônima do Futebol — balanco-financeiro-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Cuiaba/balanco-financeiro-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'cuiaba-br-demonstracoes-financeiras-2023-auditadas': {
     id:'cuiaba-br-demonstracoes-financeiras-2023-auditadas', clubId:'cuiaba-br',
     title:'Cuiabá Esporte Clube - Sociedade Anônima do Futebol — demonstracoes-financeiras-2023-auditadas (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

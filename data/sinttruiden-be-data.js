@@ -57,7 +57,6 @@ Object.assign(sources, {
     id:'sinttruiden-be-jaarrekening-2025', clubId:'sinttruiden-be',
     title:'Jaarrekening van Koninklijke Sint-Truidense Voetbalvereniging NV (STVV) voor het boekjaar van 1/7/2024 tot 30/6/2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB), esquema estatutario VOL-kap. PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Sint-Truiden/jaarrekening-2025-06-30-individual.md. "Andere bedrijfsopbrengsten" (16,0 M EUR, 44% del revenue) solo desglosa el componente de subsidios estatales (3,3 M); el resto (12,7 M, 35% del revenue total) no tiene explicación en el documento — ver comentario de cabecera del archivo de datos y Admin/dudas-por-club.md. Accionistas (Spacenine Co. Ltd / DG Holdings LLC, grupo japonés) firmaron una comfort letter de sostén financiero.',
   },
 });
 

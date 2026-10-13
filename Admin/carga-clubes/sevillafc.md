@@ -81,6 +81,16 @@ _antes de José Castro Carmona (data/gestiones/es.js):_
 Castro: ocupó la presidencia en funciones al dimitir Del Nido Benavente (anunciado el 9/12/2013).
 ```
 
+## Fuentes
+
+### sevillafc-cuentas-anuales-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial, escaneo sin capa de texto (leído renderizando páginas a imagen). Patrimonio Neto NEGATIVO al cierre (-122,813 M EUR) — club en situación financiera comprometida. Transcripción completa de la cuenta de resultados en Clubes/España/Sevilla FC/cuentas-anuales-2024-2025-cuenta-resultados.md.
+```
+
 ## Otros
 
 ### sevillafcPasesData

@@ -66,7 +66,6 @@ Object.assign(sources, {
       id:'boyacachico-co-estados-financieros-2024', clubId:'boyacachico-co',
       title:'Estados Financieros (Notas), al 31 de diciembre de 2024 y 2023',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Descargado vía SIIS (siis.ia.supersociedades.gov.co). PAT confirmado doble: Nota 15 (Patrimonio, "Resultado del Ejercicio") y Nota 21 (Utilidad antes de impuestos menos provisión de renta), coinciden a 1 centavo. La línea "Menos: Devoluciones" (21% del ingreso bruto) no se pudo atribuir a un rubro específico -- ver Admin/dudas-por-club.md. Transcripción completa en Clubes/Colombia/Boyaca Chico/estados-financieros-2024.md.',
     },
 });
 

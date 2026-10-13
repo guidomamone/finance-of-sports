@@ -192,3 +192,21 @@ _antes de Omar Plaini (data/gestiones/ar.js):_
 ```text
 Plaini: ganó la elección del 26/2/2023; la fuente dice que asumió en marzo de 2023 (dia 01 por convencion).
 ```
+
+## Fuentes
+
+### losandes-ar-balance-ejercicio-104-2019-20
+
+_note (data/):_
+
+```text
+Transcripción OCR en Clubes/Argentina/Los Andes/balance-ejercicio-104-2019-20.md. El "Cuadro de Gastos" (pág. 6 del PDF) transcribió con columnas desalineadas en el .md — los valores cargados salen de una relectura visual de la página re-renderizada a 300dpi en esta sesión, no del .md tal cual está (ver comentario de cabecera de losandes-ar-data.js); se verificaron los 4 totales de columna y el total general contra lo impreso antes de cargar. Tipo de cambio: dólar mayorista de cierre (el documento no declara uno propio). Hay una serie completa 1993-2020/21 transcripta en la misma carpeta; con este ejercicio y el 105 ya hay 2 cargados, el resto sigue disponible para una sesión futura.
+```
+
+### losandes-ar-balance-ejercicio-105-2020-21
+
+_note (data/):_
+
+```text
+Transcripción OCR en Clubes/Argentina/Los Andes/balance-ejercicio-105-2020-21.md. El "Cuadro de Gastos" (Anexo, pág. 7-8) transcribió garbled por rotación de página no corregida — los valores cargados salen de una relectura visual de las páginas re-rotadas en esta sesión, no del .md tal cual está (ver comentario de cabecera de losandes-ar-data.js). Tipo de cambio: dólar mayorista de cierre (el documento no declara uno propio). Hay una serie completa 1993-2020/21 transcripta en la misma carpeta, con el Ejercicio 104 también cargado.
+```

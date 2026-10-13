@@ -204,6 +204,16 @@ _antes de Fábio Rios Mota (data/gestiones/br.js):_
 Interino desde octubre de 2021 (la fuente no da el dia, 01/10/2021 aproximado), efectivo en 2022, reelecto el 13/12/2025 hasta 2028. Una sola gestion continua.
 ```
 
+## Fuentes
+
+### vitoria-br-demonstracoes-2025
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo), publicado 09/07/2026 en el portal de transparencia propio del club (sección movida desde una URL vieja que daba 404 — ver fuentes/Brasil/Vitoria.md). Auditado por RSM Brasil Auditores Independentes Ltda. Se cargó la columna INDIVIDUAL/CONTROLADORA, no la Consolidado. El club reporta patrimonio neto NEGATIVO ("Passivo a descoberto") de R$300,309 millones al cierre — ver comentario de cabecera de data/vitoria-br-data.js para el detalle. Transcripción completa en "Clubes/Brasil/Vitoria/demonstracoes-financeiras-2025.md". Firmado por el presidente Fabio Rios Mota. Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024). 2024 y años anteriores: "Nenhum documento encontrado" en la sección de transparencia del club, confirmado navegando la página real.
+```
+
 ## Otros
 
 ### memberCountByClub['vitoria-br']

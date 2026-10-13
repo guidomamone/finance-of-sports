@@ -74,7 +74,6 @@ Object.assign(sources, {
     id:'millonarios-co-estados-financieros-2025', clubId:'millonarios-co',
     title:'Estados Financieros (auditados), al 31 de diciembre de 2025 y 2024',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 900430878). PDF escaneado sin capa de texto, transcripto vía OCR (Tesseract). Cifras del documento expresadas en MILES de pesos colombianos (no pesos completos, a diferencia de Envigado) — reconvertido a millones para el sitio. Sin Estado de Resultado Integral primario consolidado, solo notas (22 a 28) — la reconciliación contra "Resultado del ejercicio" (Nota 20, Patrimonio) cerró exacta de todas formas. TRM de cierre declarada por el propio documento: $3.757,50 (31/12/2025). Transcripción completa en Clubes/Colombia/Millonarios/estados-financieros-2025.md.',
   },
 });
 

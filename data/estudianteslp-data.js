@@ -233,25 +233,21 @@ Object.assign(sources, {
       id:'estudianteslp-memoria-y-balance-2021-22', clubId:'estudianteslp',
       title:'Memoria y Balance (estados contables auditados), Ejercicio 1°/7/2021 al 30/6/2022',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (92 páginas, texto nativo), auditado por Becher y Asociados S.R.L., informe de fecha 29/9/2022. SUPERÁVIT real: $574.824.674 ARS. Convertido a USD con $125,03 (Anexo IV, lado Activo/Caja — el Pasivo declara $125,23, diferencia de centavos). Ver data/estudianteslp-data.js para el detalle completo de categorización (columna "Fútbol - Exhibición y espectáculos" = wages_squad, distinto nombre que Vélez/Instituto pero mismo criterio de fondo).',
     },
   'estudianteslp-memoria-y-balance-2022-23': {
       id:'estudianteslp-memoria-y-balance-2022-23', clubId:'estudianteslp',
       title:'Memoria y Balance (estados contables auditados), Ejercicio 1°/7/2022 al 30/6/2023',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (94 páginas, texto nativo), auditado por Becher y Asociados S.R.L., informe de fecha 10/10/2023. SUPERÁVIT real: $14.074.185 ARS (mucho más chico que 2022, ver RESULTADOS FINANCIEROS/RECPAM). Convertido a USD con $256,30 (Anexo IV, lado Activo/Caja). OJO: la columna comparativa "30/06/2022" de ESTE documento reexpresa esos valores a la fecha de cierre de 2023 (moneda homogénea) — no se usó, se usa siempre el Ejercicio 2022 cargado desde SU PROPIO balance (ver club-data-mapping/SKILL.md sección 6, regla 5).',
     },
   'estudianteslp-memoria-y-balance-2024-25': {
       id:'estudianteslp-memoria-y-balance-2024-25', clubId:'estudianteslp',
       title:'Memoria y Balance (estados contables auditados), Ejercicio 1°/7/2024 al 30/6/2025',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (127 páginas, escaneado sin capa de texto, transcripto vía OCR con Tesseract — a diferencia de los 3 ejercicios anteriores del mismo club, que son texto nativo), auditado por Becher y Asociados S.R.L., informe de fecha 7/10/2025, firmado por Juan Sebastián Verón como Presidente (ejercicio completo bajo su gestión, sin ambigüedad). DÉFICIT real: $(14.277.112.789) ARS — primer déficit del club en los 4 ejercicios cargados. Estructura nueva: "Fútbol - Plantel profesional" aparece como columna separada de "Fútbol - Exhibición y espectáculos" (antes la economía de pases vivía dentro de esa 2da columna). Convertido a USD con $1.196 (Anexo de moneda extranjera, lado Activo/Caja). Ver data/estudianteslp-data.js.',
     },
   'estudianteslp-memoria-y-balance-2023-24': {
       id:'estudianteslp-memoria-y-balance-2023-24', clubId:'estudianteslp',
       title:'Memoria y Balance (estados contables auditados), Ejercicio 1°/7/2023 al 30/6/2024',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (108 páginas, texto nativo), auditado por Becher y Asociados S.R.L., informe de fecha 8/10/2024, firmado por Juan Sebastián Verón como Presidente (proclamado el 6/4/2024, ~3 meses antes del cierre de este ejercicio — Martín Gorostegui presidió la mayoría de los meses de este mismo ejercicio, ver duda abierta en Admin/dudas-por-club.md). SUPERÁVIT real: $9.565.538.179 ARS (salto grande por una venta de pases importante: "Transferencias y préstamos de jugadores" $20.177.210.830). Convertido a USD con $909,00 (mismo valor que Racing/Vélez/Instituto para la misma fecha de cierre 30/6/2024).',
     },
 });
 

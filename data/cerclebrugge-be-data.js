@@ -55,7 +55,6 @@ Object.assign(sources, {
     id:'cerclebrugge-be-jaarrekening-2025', clubId:'cerclebrugge-be',
     title:'Jaarrekening van Cercle Brugge KSV BV voor het boekjaar van 1/7/2024 tot 30/6/2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB), esquema estatutario VOL-inb. PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Cercle Brugge/jaarrekening-2025-06-30-individual.md. Propiedad de AS Monaco FC SAM. "Andere bedrijfsopbrengsten" (24,4 M EUR, 56% del revenue) casi no tiene desglose disponible en el documento; ver comentario de cabecera del archivo de datos y Admin/dudas-por-club.md. Nota 6.14 revela una condonación de deuda condicional de 52,8 M EUR de AS Monaco (fuera de balance) y plusvalías de transferencias de 6,6 M EUR del mercado de pases de verano 2025 (hecho posterior al cierre), ninguna de las dos cargadas en este ejercicio.',
   },
 });
 

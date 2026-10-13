@@ -143,3 +143,13 @@ _antes de Pol Jonckheere (data/gestiones/be.js):_
 ```text
 Jonckheere: voorzitter 2009-2011; Verhaeghe lo sucedió el 1 de febrero de 2011.
 ```
+
+## Fuentes
+
+### clubbrugge-be-jaarrekening-2025
+
+_note (data/):_
+
+```text
+Cuentas CONSOLIDADAS (grupo, IFRS), preferidas sobre la versión individual disponible para el mismo año. Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Club Brugge/jaarrekening-2025-06-30-consolidado.md.
+```

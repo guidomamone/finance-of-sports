@@ -550,49 +550,41 @@ Object.assign(sources, {
     id:'bologna-it-bilancio-consolidato-2019-20', clubId:'bologna-it',
     title:'Bologna F.C. 1909 S.p.A. — Bologna-bilancio-consolidato-2019-20 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'bologna-it-bilancio-consolidato-2020-21': {
     id:'bologna-it-bilancio-consolidato-2020-21', clubId:'bologna-it',
     title:'Bologna F.C. 1909 S.p.A. — Bologna-bilancio-consolidato-2020-21 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'bologna-it-bilancio-consolidato-2021-22': {
     id:'bologna-it-bilancio-consolidato-2021-22', clubId:'bologna-it',
     title:'Bologna F.C. 1909 S.p.A. — Bologna-bilancio-consolidato-2021-22 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'bologna-it-bilancio-consolidato-2018-19': {
     id:'bologna-it-bilancio-consolidato-2018-19', clubId:'bologna-it',
     title:'Bologna F.C. 1909 S.p.A. — Bologna-bilancio-consolidato-2018-19 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2018-19.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'bologna-it-bilancio-consolidato-2017-18': {
     id:'bologna-it-bilancio-consolidato-2017-18', clubId:'bologna-it',
     title:'Bologna F.C. 1909 S.p.A. — Bologna-bilancio-consolidato-2017-18 (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2017-18.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'bologna-it-bilancio-consolidato-2022-23': {
     id:'bologna-it-bilancio-consolidato-2022-23', clubId:'bologna-it',
     title:'Bologna F.C. 1909 S.p.A. — Bologna-bilancio-consolidato-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'bologna-it-bilancio-individuale-2023-24': {
     id:'bologna-it-bilancio-individuale-2023-24', clubId:'bologna-it',
     title:'Bologna F.C. 1909 S.p.A. — Bologna-bilancio-individuale-2023-24 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'bologna-it-bilancio-individuale-2024-25': {
     id:'bologna-it-bilancio-individuale-2024-25', clubId:'bologna-it',
     title:'Bologna F.C. 1909 S.p.A. — Bologna-bilancio-individuale-2024-25 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 

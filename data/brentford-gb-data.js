@@ -74,7 +74,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/03642327/filing-history',
     publicNote:'Balance consolidado auditado (BDO LLP) de Brentford FC Ltd, depositado en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2024 (temporada 2023/24, Premier League, terminó 16°).',
-    note:'PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Brentford/brentford-group-accounts-2023-24.md. La Nota de intereses pagados imprime un total (£6.020M) que no reconcilia con el resto del documento — se usó £5.020M (suma exacta de sus 2 componentes, y el único valor que hace cerrar Loss before taxation), ver comentario de cabecera de data/brentford-gb-data.js. No se encontró un tipo de cambio GBP/USD propio declarado — fxRef apunta a FX_CLOSE (GBP@2024-06-30).',
   },
   'brentford-gb-group-accounts-2025': {
     id:'brentford-gb-group-accounts-2025', clubId:'brentford-gb',
@@ -82,7 +81,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/03642327/filing-history',
     publicNote:'Balance consolidado auditado (BDO LLP) de Brentford FC Ltd. Ejercicio cerrado el 30 de junio de 2025 (temporada 2024/25, Premier League, terminó 10°).',
-    note:'PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Brentford/brentford-group-accounts-2024-25.md. fxRef apunta a FX_CLOSE (GBP@2025-06-30).',
   },
 });
 

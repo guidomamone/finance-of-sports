@@ -78,7 +78,6 @@ Object.assign(sources, {
     id:'dinamozagreb-hr-financijsko-izvjesce-2024', clubId:'dinamozagreb-hr',
     title:'Revidirani konsolidirani financijski izvještaji za posebne namjene za 2024. godinu',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Balance auditado CONSOLIDADO (GNK Dinamo + Dinamo trade d.o.o. + Plavi korner d.o.o., 100% controladas), preparado según el Pravilnik o licenciranju i financijskoj održivosti klubova de la HNS (Federación Croata de Fútbol). Auditor: Forvis Mazars d.o.o. Dictamen "Mišljenje s rezervom" (opinión con 3 salvedades sobre el EJERCICIO de reconocimiento de ciertas partidas entre 2023/2024, ver comentario de cabecera de data/dinamozagreb-hr-data.js) — no afecta la exactitud del ejercicio 2024 tal cual se carga acá. Transcripción completa en Clubes/Croacia/Dinamo Zagreb/financijsko-izvjesce-2024.md.',
   },
 });
 

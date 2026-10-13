@@ -182,3 +182,21 @@ tax = 10. Steuern vom Einkommen und vom Ertrag (-5.734, Lagebericht "Steuerergeb
 4.376.047,44 y el Jahresüberschuss 4.286.546,48 impresos).
 officialPAT = IV. Jahresüberschuss impreso EXACTO (4.286.546,48 EUR).
 ```
+
+## Fuentes
+
+### monchengladbach-de-jahresabschluss-2023
+
+_note (data/):_
+
+```text
+Jahresabschluss INDIVIDUAL de la Borussia VfL 1900 Mönchengladbach GmbH (HRB 5742, Amtsgericht Mönchengladbach), ejercicio CALENDARIO. Bajado de unternehmensregister.de. Transcripción completa en Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2023.md. La tabla de GuV llegó incompleta (faltan varias filas); reconstruido cruzando el Lagebericht y el Anlagenspiegel — ver comentario de cabecera de monchengladbach-de-data.js.
+```
+
+### monchengladbach-de-jahresabschluss-2024
+
+_note (data/):_
+
+```text
+Jahresabschluss INDIVIDUAL, ejercicio CALENDARIO. Bajado de unternehmensregister.de. Transcripción completa en Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2024-completo.md. Existe además jahresabschluss-2024-aufsichtsratsbericht-nachtrag.md (informe del Consejo de Vigilancia, narrativo, NO se usó como fuente de datos — ver comentario de cabecera de monchengladbach-de-data.js). Mismo problema de tabla de GuV incompleta que 2023.
+```

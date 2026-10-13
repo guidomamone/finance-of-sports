@@ -213,6 +213,24 @@ _antes de Guillermo Bameule (data/gestiones/ar.js):_
 Bameule: sigue abierta; el 27/9/2026 hubo elecciones y ganó la oposición, todavía no figura quién asumió.
 ```
 
+## Fuentes
+
+### ferrocarriloeste-ar-estados-contables-118-2021-22
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo), informe de auditoría sin salvedades (Dr. Gabriel Alejandro Warley, CPCECABA T°295 F°232, 16/9/2022). Estados contables preparados en moneda homogénea (RT6). SUPERÁVIT real: $256.901.915,58 ARS. Total del Activo al cierre: $3.693.397.732,35. No declara tipo de cambio de cierre propio (sin Anexo de moneda extranjera) — convertido con dólar mayorista de referencia BCRA (Comunicación A 3500) al 30/6/2022 ($125,215), investigado vía apis.datos.gob.ar. Ver data/ferrocarriloeste-ar-data.js para el detalle completo de categorización.
+```
+
+### ferrocarriloeste-ar-balance-119-2022-23
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo), informe de auditoría sin salvedades (Dr. Gabriel Alejandro Warley, CPCECABA T°295 F°232, 7/9/2023). Estados contables preparados en moneda homogénea (RT6). SUPERÁVIT real: $712.927.771,84 ARS, impulsado por una venta/préstamo grande de jugadores del plantel profesional ($459,755138 M, línea "Futbol Profesional Ventas y Prestamos", que no existía como línea propia en el Ej. 118). Total del Activo al cierre: $8.563.450.301,47. No declara tipo de cambio de cierre propio — convertido con dólar mayorista de referencia BCRA al 30/6/2023 ($256,675). 18.280 socios/as al 30/6/2023 (única cifra de padrón encontrada en las 2 memorias). Ver data/ferrocarriloeste-ar-data.js para el detalle completo de categorización.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

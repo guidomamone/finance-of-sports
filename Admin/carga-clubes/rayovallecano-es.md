@@ -172,6 +172,16 @@ _antes de Raúl Martín Presa (data/gestiones/es.js):_
 Martín Presa compró el club a Nueva Rumasa en 2011; su primera junta como dueño fue el 7/11/2011 (fecha aproximada de asunción).
 ```
 
+## Fuentes
+
+### rayovallecano-es-informe-auditoria-cuentas-anuales-2024-25
+
+_note (data/):_
+
+```text
+PDF oficial (50 págs., con capa de texto real, sin necesidad de OCR). OPINIÓN DE AUDITORÍA CON SALVEDADES (AUDRIA, S.L.): el auditor no pudo confirmar la valoración del derecho de uso sobre el Campo de Fútbol de Vallecas (Convenio con la Comunidad de Madrid, 5/7/2019) por no haber recibido una tasación de un experto independiente — es una salvedad de VALORACIÓN DE ACTIVO (posible derecho de concesión del estadio no reconocido o mal valorado en el Balance), no afecta directamente los ingresos/gastos operativos cargados en este archivo. La Cuenta de Pérdidas y Ganancias perdió los números de su sección financiera/impositiva en la transcripción (quedaron solo etiquetas); netInterest se reconstruyó por residuo cruzando el Resultado del Ejercicio (impreso 2 veces) contra el gasto/ingreso por impuesto de la memoria — ver comentario de cabecera de data/rayovallecano-es-data.js para el detalle completo. Encontrado por búsqueda directa del PDF, host statics-maker.llt-services.com/ray/. Transcripción completa en Clubes/España/Rayo Vallecano/informe-auditoria-cuentas-anuales-2024-2025.md.
+```
+
 ## Otros
 
 ### memberCountByClub['rayovallecano-es']

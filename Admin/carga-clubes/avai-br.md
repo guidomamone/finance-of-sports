@@ -488,3 +488,43 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### avai-br-demonstracoes-contabeis-2025
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### avai-br-demonstracoes-contabeis-2022
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### avai-br-demonstracoes-contabeis-2023
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### avai-br-demonstracoes-contabeis-2024
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### avai-br-demonstracoes-contabeis-2021
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

@@ -177,6 +177,24 @@ netInterest: Interest receivable (Nota 6, 3.162) menos Interest payable
 tal que pbt(-57.104)+tax(+13.626)=pat(-43.478).
 ```
 
+## Fuentes
+
+### liverpool-gb-group-accounts-2024
+
+_note (data/):_
+
+```text
+Transcripción completa en Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2023-24.md (38 págs. escaneadas, con capa de texto vía pdftotext/OCR previo, ver fuentes/Inglaterra/Liverpool.md). Ejercicio cerrado el 31 de mayo (confirmado en carátula y Group Strategic Report). Auditor: Ernst & Young LLP. Controlante última: Fenway Sports Group, LLC (Nota 25).
+```
+
+### liverpool-gb-group-accounts-2025
+
+_note (data/):_
+
+```text
+Transcripción completa en Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2024-25.md. Ejercicio cerrado el 31 de mayo. Controlante última: Fenway Sports Group, LLC (Nota 25). Incluye "Other operating income" (12,9 M GBP) por un seguro de lucro cesante, cargado a other_income.
+```
+
 ## Otros
 
 ### Presupuesto al lado del balance (liverpoolGbPresupuestoOverlayByYear), en general

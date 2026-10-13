@@ -68,7 +68,6 @@ Object.assign(sources, {
       title:'Demonstrações Financeiras (Relatório da Administração), Exercícios Findos em 31 de Dezembro de 2025 e de 2024',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://atleticogoianiense.com.br/up/TRANSPARENCIA-26/',
-      note:'PDF oficial (texto nativo), descargado del portal de transparencia propio del club. Se cargó la columna CONSOLIDADO (no Controladora — ver comentario de cabecera de data/atleticogoianiense-data.js: la Associação standalone reporta cifras muy chicas tras transferir el fútbol profesional a la SAF durante 2025, el Consolidado refleja el tamaño real de la operación). Transcripción completa en Clubes/Brasil/Atletico Goianiense/demonstracoes-financeiras-2024-2025.md. 2025 marcó el retorno al superávit tras un déficit de R$45.111 mil en 2024 (año de descenso a la Série B). Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024), investigado externamente.',
     },
 });
 

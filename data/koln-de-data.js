@@ -96,13 +96,11 @@ Object.assign(sources, {
     id:'koln-de-jahresabschluss-2024', clubId:'koln-de',
     title:'Jahresabschluss zum Geschäftsjahr vom 01.07.2023 bis zum 30.06.2024 (Auszug aus dem Unternehmensregister)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jahresabschluss INDIVIDUAL de la 1. FC Köln GmbH & Co. KGaA (HRB 37030, Amtsgericht Köln), no consolidado — no hay Konzernabschluss separado para este club en los años recientes. Descargado vía unternehmensregister.de. PDF con capa de texto nativa. Transcripción completa en Clubes/Alemania/1. FC Köln/jahresabschluss-2023-24.md.',
   },
   'koln-de-jahresabschluss-2025': {
     id:'koln-de-jahresabschluss-2025', clubId:'koln-de',
     title:'Jahresabschluss zum Geschäftsjahr vom 01.07.2024 bis zum 30.06.2025 (Auszug aus dem Unternehmensregister)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Jahresabschluss INDIVIDUAL de la 1. FC Köln GmbH & Co. KGaA (HRB 37030, Amtsgericht Köln), no consolidado. Descargado vía unternehmensregister.de. PDF con capa de texto nativa. Transcripción completa en Clubes/Alemania/1. FC Köln/jahresabschluss-2024-25.md.',
   },
 });
 

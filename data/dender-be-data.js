@@ -52,7 +52,6 @@ Object.assign(sources, {
     id:'dender-be-jaarrekening-2025', clubId:'dender-be',
     title:"Jaarrekening FCV Dender EH VZW voor het boekjaar van 01-07-2024 tot 30-06-2025",
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cuentas de la VZW (asociación sin fines de lucro) individual, NO consolidadas con NV Dender Foot (sociedad comercial hermana que, per nota de la propia jaarrekening, absorberá parte de la actividad desde el ejercicio 2025-26). Esquema estatutario ABREVIADO (VKT-VZW): no desglosa Omzet por categoría de ingreso, a diferencia del esquema completo de otros clubes belgas cargados. PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Dender EH/jaarrekening-2025-06-30-individual.md.',
   },
 });
 

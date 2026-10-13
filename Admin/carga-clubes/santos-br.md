@@ -250,6 +250,24 @@ hay exceptional_items que excluir, Santos no tiene ítems no operativos en esta 
 officialPAT = "(Déficit) Superávit do Exercício" impreso (-105,206 M BRL, déficit real).
 ```
 
+## Fuentes
+
+### santos-br-demonstracoes-2024
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo, assinado via DocuSign), descargado del portal de transparencia oficial del club (Balanco-Auditado-Ano-2024.pdf, mismo archivo espejado en media.santosfc.com.br y en el repositorio de la Federação Paulista de Futebol). Déficit real de R$105,206 mil, pese a un superávit operacional de R$58 M antes de resultado financeiro y provisiones judiciales — el propio Relatório da Administração atribuye la diferencia a encargos de financiamentos/empréstimos, actualización SELIC de parcelamentos PROFUT/Perse, variación cambial de contratos en moeda estrangeira y provisões para demandas judiciais. Situación de caja muy ajustada al cierre (R$170 mil en Caixa e equivalentes), documentada en el propio Relatório: déficit financeiro de R$62 M a fines de 2023, gestionado durante 2024 con antecipação de receitas de 2025 y nuevos empréstimos. Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Santos/demonstracoes-financeiras-2023-2024.md.
+```
+
+### santos-br-demonstracoes-2025
+
+_note (data/):_
+
+```text
+PDF oficial (texto nativo, assinado via DocuSign), descargado del dominio de medios del sitio oficial (Demonstracoes_Financeiras-2025-assinada.pdf, mismo archivo espejado en el repositorio de la Federação Paulista de Futebol). Segundo año consecutivo de déficit real (R$79,396 mil), algo menor que 2024, con un salto grande de Receitas com transmissões televisivas (R$156,172 M vs. R$55,480 M en 2024) y de Direitos de imagem e arena/Amortização de gastos com atletas del lado de Gastos, reflejando mayor actividad de plantel/transferencias. Caja al cierre sigue muy ajustada (R$295 mil en Caixa e equivalentes). Convertido a USD con PTAX BCB de cierre 31/12/2025 (R$5,5024). Transcripción completa en Clubes/Brasil/Santos/demonstracoes-financeiras-2024-2025.md.
+```
+
 ## Otros
 
 ### window.CLUB_GENERIC_DATA

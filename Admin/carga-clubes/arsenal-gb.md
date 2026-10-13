@@ -140,6 +140,24 @@ _antes de Stan Kroenke (data/gestiones/gb.js):_
 Kroenke pasó a ser accionista mayoritario el 11/4/2011 (62,89%); recién en 2018 compró el 100%. Dueño; el chairman operativo fue otra persona.
 ```
 
+## Fuentes
+
+### arsenal-gb-group-accounts-2024
+
+_note (data/):_
+
+```text
+PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2023-24.md. Cuentas consolidadas del grupo (no las individuales de The Arsenal Football Club Limited, n° 00109244). No se encontró un tipo de cambio GBP/USD propio declarado por el documento (Nota 17/18 solo cuantifica partidas puntuales en EUR/USD/AUD, no un TC de cierre para todo el balance) — fxRef apunta a FX_CLOSE, todavía sin entrada GBP@2024-05-31 (pendiente, fuera de alcance de esta sesión).
+```
+
+### arsenal-gb-group-accounts-2025
+
+_note (data/):_
+
+```text
+PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2024-25.md. Cuentas consolidadas del grupo. Mismo gotcha de fx que el ejercicio 2024: fxRef apunta a FX_CLOSE, todavía sin entrada GBP@2025-05-31 (pendiente, fuera de alcance de esta sesión).
+```
+
 ## Otros
 
 ### arsenalGbPasesData

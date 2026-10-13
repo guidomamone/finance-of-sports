@@ -50,7 +50,6 @@ Object.assign(sources, {
     id:'gent-be-jaarrekening-2025', clubId:'gent-be',
     title:'Jaarrekening van K.A.A. Gent NV voor het boekjaar van 1/7/2024 tot 30/6/2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cuentas INDIVIDUALES — no hay consolidado disponible para 2023/2024/2025 (sí para 2017-2022). Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Gent/jaarrekening-2025-06-30-individual.md.',
   },
 });
 

@@ -530,3 +530,83 @@ Achilleas Ntavelis: dueño y presidente (firma los balances 2022 a 2024). Hasta 
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### aellarissa-gr-ael-notes-elp-2025-06-30-a
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2025-06-30_a.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aellarissa-gr-ael-fs-elp-2024-06-30
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_FS_ELP_2024-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aellarissa-gr-ael-fs-2022-06-30
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_FS_2022-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aellarissa-gr-ael-notes-elp-2020-06-30
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2020-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aellarissa-gr-ael-notes-elp-2018-06-30
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aellarissa-gr-ael-notes-elp-2017-06-30
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2017-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aellarissa-gr-ael-notes-elp-2015-16
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aellarissa-gr-ael-notes-elp-2021-06-30
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2021-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aellarissa-gr-ael-notes-elp-2019-06-30
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aellarissa-gr-ael-fs-2023-06-30-a
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

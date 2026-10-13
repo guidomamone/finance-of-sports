@@ -131,19 +131,16 @@ Object.assign(sources, {
       id:'colocolo-cl-estados-financieros-2024', clubId:'colocolo-cl',
       title:'Estados Financieros Consolidados de Blanco y Negro S.A. y Filiales, ejercicios terminados al 31 de diciembre de 2024 y 2023',
       type:'official_balance_sheet', reliability:'primary',
-      note:'EEFF consolidados bajo IFRS, con notas completas (82+ páginas). Transcripción completa en Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2024.md. Tipo de cambio: dólar observado de cierre (el documento no declara uno propio). OJO: según fuentes/Chile/Colo-Colo (Blanco y Negro).md, este balance fue inicialmente rechazado por los accionistas en la junta de abril 2025 (por el tratamiento contable del contrato con DG Medios) y la CMF debió intervenir; el PDF cargado es el que finalmente circuló, pero conviene revisar prensa de la época antes de citar este ejercicio como definitivo sin salvedad.',
     },
   'colocolo-cl-estados-financieros-2023': {
       id:'colocolo-cl-estados-financieros-2023', clubId:'colocolo-cl',
       title:'Estados Financieros Consolidados de Blanco y Negro S.A. y Filiales, ejercicios terminados al 31 de diciembre de 2023 y 2022',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Cifras del ejercicio 2023 extraídas del comparativo del documento de 2024 (verificado idéntico contra el "año corriente" del documento propio de 2023: mismo pretax y mismo impuesto). Transcripción completa en Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2023.md.',
     },
   'colocolo-cl-estados-financieros-2022': {
       id:'colocolo-cl-estados-financieros-2022', clubId:'colocolo-cl',
       title:'Estados Financieros Consolidados de Blanco y Negro S.A. y Filiales, ejercicios terminados al 31 de diciembre de 2022 y 2021',
       type:'official_balance_sheet', reliability:'primary',
-      note:'Transcripción completa en Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2022.md.',
     },
 });
 

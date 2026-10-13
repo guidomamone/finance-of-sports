@@ -1849,3 +1849,211 @@ por convención). Los cierres de 1999, 2000 y 2001 caen en ese tramo; el hueco h
 Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 ```
+
+### lazio-it-bilancio-separato-consolidato-2006-07
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2006-07.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2008-09
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2008-09.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2009-10
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2009-10.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2019-20
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2022-23
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2021-22
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2014-15
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2014-15.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-relazione-finanziaria-annuale-2024-25
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-relazione-finanziaria-annuale-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2017-18
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2017-18.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2018-19
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2018-19.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2023-24
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2012-13
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2012-13.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2007-08
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2007-08.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2011-12
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2011-12.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2016-17
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2016-17.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-relazione-finanziaria-annuale-2025-26
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-relazione-finanziaria-annuale-2025-26.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-1998-99
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-1998-99.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### lazio-it-bilancio-1999-00
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-1999-00.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### lazio-it-bilancio-2000-01
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-2000-01.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### lazio-it-bilancio-separato-consolidato-2013-14
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2013-14.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2020-21
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2010-11
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2010-11.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-2004-05
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-2004-05.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-progetto-bilancio-2005-06-mirror-sslaziofans
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-progetto-bilancio-2005-06-mirror-sslaziofans.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-2003-04
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-2003-04.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### lazio-it-bilancio-separato-consolidato-2015-16
+
+_note (data/):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```

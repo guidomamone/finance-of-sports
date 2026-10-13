@@ -69,7 +69,6 @@ Object.assign(sources, {
     id:'clubbrugge-be-jaarrekening-2025', clubId:'clubbrugge-be',
     title:'Geconsolideerde jaarrekening van Club Brugge NV voor het boekjaar van 1/7/2024 tot 30/6/2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cuentas CONSOLIDADAS (grupo, IFRS), preferidas sobre la versión individual disponible para el mismo año. Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Club Brugge/jaarrekening-2025-06-30-consolidado.md.',
   },
 });
 

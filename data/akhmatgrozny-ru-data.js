@@ -129,25 +129,21 @@ Object.assign(sources, {
     id:'akhmatgrozny-ru-bfo-2022-datos', clubId:'akhmatgrozny-ru',
     title:'ANO Republican Football Club Akhmat — отчетность 2022 в ГИР БО (bo.nalog.gov.ru), ejercicio 2022',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2022-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Akhmat Grozny/bfo-2022-datos.md.',
   },
   'akhmatgrozny-ru-bfo-2023-datos': {
     id:'akhmatgrozny-ru-bfo-2023-datos', clubId:'akhmatgrozny-ru',
     title:'ANO Republican Football Club Akhmat — отчетность 2023 в ГИР БО (bo.nalog.gov.ru), ejercicio 2023',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2023-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Akhmat Grozny/bfo-2023-datos.md.',
   },
   'akhmatgrozny-ru-bfo-2024-datos': {
     id:'akhmatgrozny-ru-bfo-2024-datos', clubId:'akhmatgrozny-ru',
     title:'ANO Republican Football Club Akhmat — отчетность 2024 в ГИР БО (bo.nalog.gov.ru), ejercicio 2024',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2024-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Akhmat Grozny/bfo-2024-datos.md.',
   },
   'akhmatgrozny-ru-bfo-2025-datos': {
     id:'akhmatgrozny-ru-bfo-2025-datos', clubId:'akhmatgrozny-ru',
     title:'ANO Republican Football Club Akhmat — отчетность 2025 в ГИР БО (bo.nalog.gov.ru), ejercicio 2025',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2025-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Akhmat Grozny/bfo-2025-datos.md.',
   },
 });
 

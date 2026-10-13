@@ -45,7 +45,6 @@ Object.assign(sources, {
     id:'midtjylland-dk-aarsrapport-2019', clubId:'midtjylland-dk',
     title:'Årsrapport FC Midtjylland A/S, 1. juli 2018 - 30. juni 2019',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Depositado en Erhvervsstyrelsen (registro mercantil danés). Transcripción completa en Clubes/Dinamarca/FC Midtjylland/aarsrapport-2019-06-30.md. Se eligió este ejercicio (no uno más reciente) porque los balances 2022/23-2024 reportan desde "Bruttofortjeneste" sin desglosar Revenue bruto — ver comentario de cabecera de data/midtjylland-dk-data.js.',
   },
 });
 

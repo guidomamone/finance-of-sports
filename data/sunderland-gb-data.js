@@ -77,7 +77,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/00049116/filing-history',
     publicNote:'Cuentas individuales auditadas (Constantin, sin salvedades) de Sunderland Association Football Club, Limited (The), depositadas en Companies House (Reino Unido). Ejercicio cerrado el 31 de julio de 2024 (temporada 2023/24, EFL Championship).',
-    note:'PDF con texto nativo, transcripción completa en Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2023-24.md. Cuentas individuales, exenta de consolidar bajo Section 400 (Companies Act 2006). No declara tipo de cambio propio (fxRef apunta a FX_CLOSE, entrada GBP@2024-07-31 agregada en esta sesión).',
   },
   'sunderland-gb-full-accounts-2025': {
     id:'sunderland-gb-full-accounts-2025', clubId:'sunderland-gb',
@@ -85,7 +84,6 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/00049116/filing-history',
     publicNote:'Cuentas individuales auditadas (Constantin, sin salvedades) de Sunderland Association Football Club, Limited (The), depositadas en Companies House (Reino Unido). Ejercicio cerrado el 31 de julio de 2025 (temporada 2024/25, EFL Championship — el ascenso a la Premier League vía playoff ocurrió al FINAL de este ejercicio, para la temporada SIGUIENTE, 2025/26).',
-    note:'PDF con texto nativo, transcripción completa en Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2024-25.md. La fila "Other operating income" de 2025 no aparece en el Income Statement transcripto (nil, confirmado contra Nota 5); ver comentario de cabecera de este archivo. Mismo criterio de categorización que el ejercicio 2024. fxRef apunta a FX_CLOSE, entrada GBP@2025-07-31 agregada en esta sesión.',
   },
 });
 

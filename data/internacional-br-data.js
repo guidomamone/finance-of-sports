@@ -167,14 +167,12 @@ Object.assign(sources, {
     title:'Relatório do auditor independente — Demonstrações contábeis, Em 31 de dezembro de 2024',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://www.internacional.com.br/transparencia/informativos-financeiros/balancos-pareceres-auditores-independentes',
-    note:'PDF oficial (texto nativo, sin OCR), descargado del Portal da Transparência del club (URL estática, ver fuentes/Brasil/Internacional.md). Incluye Relatório da Administração + Relatório do auditor independente + Balanços patrimoniais + Demonstrações de resultados + Notas explicativas. Ejercicio de DÉFICIT real (R$34,499 M), atribuido por la propia Memoria a las enchentes que inundaron Rio Grande do Sul en mayo de 2024 (el Beira-Rio estuvo cerrado 70 días). Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Internacional/relatorio-anual-2024.md.',
   },
   'internacional-br-demonstracoes-2025': {
     id:'internacional-br-demonstracoes-2025', clubId:'internacional-br',
     title:'Relatório do auditor independente — Demonstrações contábeis, Em 31 de dezembro de 2025',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://www.internacional.com.br/transparencia/informativos-financeiros/balancos-pareceres-auditores-independentes',
-    note:'PDF oficial (texto nativo, sin OCR), mismo canal y estructura que el de 2024 (ver esa entrada). Superávit real de R$8,972 M, con crecimiento fuerte en Cotas de TV, Publicidade y Negociação de atletas frente a 2024. Convertido a USD con PTAX BCB de cierre 31/12/2025 (R$5,5024). Transcripción completa en Clubes/Brasil/Internacional/relatorio-anual-2025.md.',
   },
 });
 

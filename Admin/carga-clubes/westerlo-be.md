@@ -147,3 +147,13 @@ Wijnants: gedelegeerd bestuurder en figura de conducción del club (Wikipedia lo
 el voorzitter del consejo en los informes de 1998 a 2005 es Guido Kestens. Inicio real desconocido: desde = inicio del ejercicio 1998.
 Hasta que Ercan compró el club (anunciado el 18/6/2019).
 ```
+
+## Fuentes
+
+### westerlo-be-jaarrekening-2025
+
+_note (data/):_
+
+```text
+Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Westerlo/jaarrekening-2025-06-30-individual.md. Nota 6.10 (desglose de Omzet y de subsidios dentro de Andere bedrijfsopbrengsten) no fue completada por el club en este filing. Patrimonio neto negativo al cierre (-EUR 1,85 M), mejorado desde -EUR 3,59 M el ejercicio anterior vía un aumento de capital (Inbreng de EUR 56,1 M a EUR 69,6 M).
+```

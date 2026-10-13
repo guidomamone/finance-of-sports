@@ -335,61 +335,51 @@ Object.assign(sources, {
     id:'aellarissa-gr-ael-notes-elp-2025-06-30-a', clubId:'aellarissa-gr',
     title:'Athlitiki Enosi Larissas AEL P.A.E. — AEL_notes_ELP_2025-06-30_a (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2025-06-30_a.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'aellarissa-gr-ael-fs-elp-2024-06-30': {
     id:'aellarissa-gr-ael-fs-elp-2024-06-30', clubId:'aellarissa-gr',
     title:'Athlitiki Enosi Larissas AEL P.A.E. — AEL_FS_ELP_2024-06-30 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_FS_ELP_2024-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'aellarissa-gr-ael-fs-2022-06-30': {
     id:'aellarissa-gr-ael-fs-2022-06-30', clubId:'aellarissa-gr',
     title:'Athlitiki Enosi Larissas AEL P.A.E. — AEL_FS_2022-06-30 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_FS_2022-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'aellarissa-gr-ael-notes-elp-2020-06-30': {
     id:'aellarissa-gr-ael-notes-elp-2020-06-30', clubId:'aellarissa-gr',
     title:'Athlitiki Enosi Larissas AEL P.A.E. — AEL_notes_ELP_2020-06-30 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2020-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'aellarissa-gr-ael-notes-elp-2018-06-30': {
     id:'aellarissa-gr-ael-notes-elp-2018-06-30', clubId:'aellarissa-gr',
     title:'Athlitiki Enosi Larissas AEL P.A.E. — AEL_notes_ELP_2018-06-30 (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'aellarissa-gr-ael-notes-elp-2017-06-30': {
     id:'aellarissa-gr-ael-notes-elp-2017-06-30', clubId:'aellarissa-gr',
     title:'Athlitiki Enosi Larissas AEL P.A.E. — AEL_notes_ELP_2017-06-30 (ejercicio 2017)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2017-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'aellarissa-gr-ael-notes-elp-2015-16': {
     id:'aellarissa-gr-ael-notes-elp-2015-16', clubId:'aellarissa-gr',
     title:'Athlitiki Enosi Larissas AEL P.A.E. — AEL_notes_ELP_2015-16 (ejercicio 2016)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'aellarissa-gr-ael-notes-elp-2021-06-30': {
     id:'aellarissa-gr-ael-notes-elp-2021-06-30', clubId:'aellarissa-gr',
     title:'Athlitiki Enosi Larissas AEL P.A.E. — AEL_notes_ELP_2021-06-30 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2021-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'aellarissa-gr-ael-notes-elp-2019-06-30': {
     id:'aellarissa-gr-ael-notes-elp-2019-06-30', clubId:'aellarissa-gr',
     title:'Athlitiki Enosi Larissas AEL P.A.E. — AEL_notes_ELP_2019-06-30 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'aellarissa-gr-ael-fs-2023-06-30-a': {
     id:'aellarissa-gr-ael-fs-2023-06-30-a', clubId:'aellarissa-gr',
     title:'Athlitiki Enosi Larissas AEL P.A.E. — AEL_FS_2023-06-30_a (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
