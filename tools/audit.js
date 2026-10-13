@@ -1302,7 +1302,8 @@ function checkGestiones(api) {
   }
   const fecha = /^\d{4}-\d{2}-\d{2}$/;
   for (const [club, gs] of Object.entries(sandbox.window.CLUB_GESTIONES || {})) {
-    if (!api.clubs[club]) add('P2', 'gestion-club-inexistente', `data/gestiones: '${club}' no está en data/clubs.js`);
+    // P3 (to-do 219): las gestiones se cargan por país antes que los balances; un club sin balance todavía es esperable, no un riesgo.
+    if (!api.clubs[club]) add('P3', 'gestion-club-inexistente', `data/gestiones: '${club}' no está en data/clubs.js`);
     const orden = gs.slice().sort((a, b) => a.desde < b.desde ? -1 : 1);
     orden.forEach((g, i) => {
       const quien = `${club} · ${g.nombre || '?'}`;

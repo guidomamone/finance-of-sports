@@ -779,5 +779,10 @@
   "code": "salto-interanual",
   "match": "panserraikos-gr: revenue salta de 1.1 M USD (2023) a 7.3 M USD (2025), 6.9×",
   "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Los dos años están en euros y cargados bien. 2022-23 es Super League 2, y 2024-25 ya es Super League, primera división. El año del medio, que no está cargado, da unos 3,8 M EUR según la comparativa de 2025, así que la progresión es real. Cita: 2023: Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.md l.6 '(Ποσά σε Ευρώ)', l.19 'Σύνολο λειτουργικών εσόδων 686.723,21' + μετεγγραφές 186.319,43 + 100.000. 2025: Panserraikos_income_stmt_2025-06-30.md l.9 '(Ποσά σε Ευρώ)', l.15 Κύκλος εργασιών 4.700.403,44 (2024: 2.312.994,45), l.18 Λοιπά συνήθη έσοδα 1.501.129,12."
+ },
+ {
+  "code": "sin-salarios",
+  "match": "novorizontino-br 2010: no hay ni una línea en 'wages_squad'",
+  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): año de fundación, sin plantel profesional; la Demonstração do Resultado (Clubes/Brasil/Novorizontino/balanco-2010.md L10-15) tiene 4 renglones de gasto y ninguno de personal. Ajuste manual cero-real 'Salarios del plantel' de Guido (Admin/registros/ajustes-manuales.jsonl, balanco-2010.pdf)."
  }
 ]
