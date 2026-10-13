@@ -62,7 +62,7 @@ const asterastripolisgrFiscalYearMeta = {
       {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.012125},
       {label:'Φόροι εισοδήματος', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:null,
     officialTotalRevenue:3.538891, officialTotalExpenses:4.830991, officialPAT:-1.305075,
   },
   2020: {

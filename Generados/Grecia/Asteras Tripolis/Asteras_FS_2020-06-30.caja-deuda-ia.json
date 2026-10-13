@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2020-06-30.md",
+ "generado": "2026-10-13T13:27:07.006Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε μονάδες Ευρώ",
+ "caja": {
+  "lineas": [
+   749
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   806,
+   810
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las líneas de préstamos (Δάνεια L806 y Τραπεζικά δάνεια L810) existen pero valen 0,00 al 30.6.2020, por lo que la deuda financiera es cero. Los depósitos restringidos de 200.000 € (garantía bancaria) figuran en Λοιπές απαιτήσεις y no se incluyen en caja."
+}

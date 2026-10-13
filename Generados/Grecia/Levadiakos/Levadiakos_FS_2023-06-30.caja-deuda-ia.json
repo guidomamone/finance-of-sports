@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2023-06-30.md",
+ "generado": "2026-10-13T13:27:34.322Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Οι οικονομικές καταστάσεις παρουσιάζονται σε Ευρώ.",
+ "caja": {
+  "lineas": [
+   63
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   85
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La única línea de deuda financiera es 'Κρατικά δάνεια' (préstamos estatales, L85), con saldo 0,00 al 30/6/2023 (127.178,64 en 2022), por lo que la deuda financiera del ejercicio es cero. Los importes están en euros (unidades)."
+}

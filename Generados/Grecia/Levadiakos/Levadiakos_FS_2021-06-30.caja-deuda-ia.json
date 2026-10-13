@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.md",
+ "generado": "2026-10-13T13:27:27.383Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "σύνολο βραχυπρόθεσμων υποχρεώσεων της ανέρχεται σε ευρώ 1.405.056,48",
+ "caja": {
+  "lineas": [
+   34
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   54,
+   58
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Escala en euros con decimales, sin frase explícita de escala en el balance; se incluyen préstamos estatales (Κρατικά δάνεια, probablemente préstamo COVID) y préstamos a corto plazo; se excluyen las subvenciones estatales (L55)."
+}

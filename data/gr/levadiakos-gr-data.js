@@ -96,7 +96,7 @@ const levadiakosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.076361, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:2.256353, motivo:'Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.135539,
     officialTotalRevenue:2.550664, officialTotalExpenses:2.827374, officialPAT:-0.278066,
   },
   2020: {
@@ -115,7 +115,7 @@ const levadiakosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.015806, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:1.155648, motivo:'Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.002932,
     officialTotalRevenue:1.332709, officialTotalExpenses:1.399393, officialPAT:-0.06765,
   },
   2021: {
@@ -134,7 +134,7 @@ const levadiakosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.003081, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:0.772825, motivo:'Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.250894,
     officialTotalRevenue:1.311379, officialTotalExpenses:1.312703, officialPAT:-0.002047,
   },
   2022: {
@@ -153,7 +153,7 @@ const levadiakosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.036775, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:1.354066, motivo:'Levadiakos 2022: Κόστος πωλήσεων 1.354.066,29 sin nota que lo abra -> lump (igual que AEL)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.122828,
     officialTotalRevenue:1.968574, officialTotalExpenses:1.643803, officialPAT:0.319586,
   },
   2023: {
@@ -172,7 +172,7 @@ const levadiakosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.253444, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:3.042119, motivo:'Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.969471,
     officialTotalRevenue:3.648771, officialTotalExpenses:3.457842, officialPAT:0.166063,
   },
   2024: {
@@ -191,7 +191,7 @@ const levadiakosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.729301, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:2.303645, motivo:'Levadiakos 2024: Κόστος πωλήσεων 2.303.644,63 sin desglose -> lump'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.089506,
     officialTotalRevenue:2.77858, officialTotalExpenses:2.66115, officialPAT:0.082498,
   },
   2025: {

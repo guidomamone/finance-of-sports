@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2025-06-30.md",
+ "generado": "2026-10-13T13:27:42.535Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "ΜΕΤΑΒΟΛΗ €",
+ "caja": {
+  "lineas": [
+   570
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   585
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La línea L585 'Λοιπές μακροπρόθεσμες υποχρεώσεις' corresponde según la nota 6 (L178) a un arrendamiento financiero por la compra de un autobús, lo que se incluyó como deuda financiera. No hay préstamos bancarios explícitos. La parte corriente del leasing podría estar dentro de 'Λοιπές υποχρεώσεις' (L592), que no se incluyó por ser una partida mixta. Los importes están expresados en euros y en unidades."
+}

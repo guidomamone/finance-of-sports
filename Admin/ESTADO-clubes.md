@@ -200,7 +200,7 @@ INGLATERRA (19)
 GR (5)
   AEL Larissa       10 ejercicios (2015/2016 a 2024/2025), balance, EUR
   Asteras Tripolis  2 ejercicios (2018/2019 a 2019/2020), balance, EUR, sin deuda/caja
-  Levadiakos        7 ejercicios (2018/2019 a 2024/2025), balance, EUR, sin deuda/caja
+  Levadiakos        7 ejercicios (2018/2019 a 2024/2025), balance, EUR
   OFI Crete         7 ejercicios (2017/2018, 2018/2019, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
   Panathinaikos     1 ejercicio (2024/2025), balance, EUR
 

@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Grecia/OFI Crete/OFI_FS_2025-06-30.md",
+ "generado": "2026-10-13T13:27:52.651Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   150
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   176,
+   180,
+   181
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las líneas de préstamos (L176, L180, L181) existen pero valen 0,00 al 30/6/2025, por lo que la deuda financiera es nula. Las cifras están en euros con decimales (unidades), aunque el documento no incluye una frase explícita de escala. Las 'Λοιπές μακροπρόθεσμες υποχρεώσεις' (L177) no se incluyeron por no identificarse como préstamos."
+}

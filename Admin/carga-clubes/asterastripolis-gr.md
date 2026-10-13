@@ -132,6 +132,10 @@ Generados/Grecia/Asteras Tripolis/Asteras_FS_2019-06-30.categorias.json (escaló
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-13): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 17 + "Τραπεζικά δάνεια" pág. 17
+```
+
 ### Liga
 
 ```text
