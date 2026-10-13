@@ -1,14 +1,149 @@
 {
  "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.pdf",
- "generado": "2026-10-10T14:10:08.107Z",
+ "generado": "2026-10-13T13:07:44.553Z",
  "frena": [
   {
    "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (levadiakos-gr)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "carpetas-clubes.mjs dice levadiakos-gr y onboard.mjs --quien dice levadiakos"
   }
  ],
  "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "levadiakos-gr",
+  "year": 2021,
+  "cierre": "2021-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Κύκλος εργασιών (καθαρός)",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 0.003081,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπά συνήθη έσοδα",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.963746,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπά έσοδα και κέρδη",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.344553,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Κόστος πωλήσεων",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -0.772825,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Έξοδα διάθεσης",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.003464,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Έξοδα διοίκησης",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.243569,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Άλλα έξοδα και ζημίες",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.292845,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2021-06-30",
+   "sourceId": "levadiakos-gr-fs-2021-06-30",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.000724,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+     "value": 0.000037
+    },
+    {
+     "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+     "value": -0.000761
+    },
+    {
+     "label": "Φόρος εισοδήματος",
+     "value": 0
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Κύκλος εργασιών (καθαρός)",
+     "lado": "revenue",
+     "importe": 0.003081,
+     "motivo": "el documento no desglosa este renglón"
+    },
+    {
+     "renglon": "Κόστος πωλήσεων",
+     "lado": "expense",
+     "importe": 0.772825,
+     "motivo": "Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 1.311379,
+   "officialTotalExpenses": 1.312703,
+   "officialPAT": -0.002047
+  },
+  "source": {
+   "id": "levadiakos-gr-fs-2021-06-30",
+   "clubId": "levadiakos-gr",
+   "title": "A.P.O. Levadiakos P.A.E. — Levadiakos_FS_2021-06-30 (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.md",
  "reemplaza": false,
  "periodo": {
@@ -22,5 +157,244 @@
   "confianza": "alta",
   "anual": "temporada"
  },
- "cortadoEn": "club"
+ "clubId": "levadiakos-gr",
+ "year": 2021,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 10,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "page": 2,
+   "native": 0.003081,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.003081,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.003081
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "page": 2,
+   "native": 0.963746,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.963746,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.963746
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "page": 2,
+   "native": 0.344553,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.344553,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.344553
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "page": 2,
+   "native": 0.772825,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.772825,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump",
+   "destino": "expense",
+   "amountNative": -0.772825
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "page": 2,
+   "native": 0.003464,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.003464,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Levadiakos 2025: Έξοδα διάθεσης 34.283,63 -> admin",
+   "destino": "expense",
+   "amountNative": -0.003464
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "page": 2,
+   "native": 0.243569,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.243569,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.243569
+  },
+  {
+   "label": "Άλλα έξοδα και ζημίες",
+   "page": 2,
+   "native": 0.292845,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.292845,
+   "cat": "other_expenses",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.292845
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "page": null,
+   "native": 0.000037,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "page": null,
+   "native": -0.000761,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Φόρος εισοδήματος",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 1.31138,
+  "expSum": -1.312703,
+  "officialTotalRevenue": 1.311379,
+  "officialTotalExpenses": 1.312703,
+  "officialPAT": -0.002047,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.002047,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 1.311379
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 1.312703
+  }
+ },
+ "liga": {
+  "valor": "gr-superleague2",
+  "fuente": "roster cacheado de \"2020–21 Super League Greece 2\" (tools/club-league-reference/gr.json), coincidencia exacta \"Levadiakos\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2021-06-30) y contenido del .md (37 de 37 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Grecia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2021-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2021-06-30 = 0.8415 (Cierre BCE al 30/6/2021 (1 EUR = 1,1884 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "levadiakos-gr-fs-2021-06-30",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gr-superleague2",
+   "fuente": "roster cacheado de \"2020–21 Super League Greece 2\" (tools/club-league-reference/gr.json), coincidencia exacta \"Levadiakos\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 2,
+  "lineasIngreso": 3,
+  "lineasGasto": 4,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

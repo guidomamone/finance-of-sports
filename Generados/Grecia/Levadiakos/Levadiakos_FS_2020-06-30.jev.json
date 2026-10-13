@@ -1,0 +1,70 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2020-06-30.md",
+ "generatedAt": "2026-10-13T13:07:21.270Z",
+ "rubrosHuella": "aff681f27dd362a4a00467c9f094703862a58136",
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Άλλα έξοδα και ζημίες",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  }
+ ]
+}

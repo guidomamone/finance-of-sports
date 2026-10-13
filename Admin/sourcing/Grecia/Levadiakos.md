@@ -28,3 +28,5 @@ posible que estén con un nombre de archivo distinto al buscado, no confirmado c
 - Último chequeo: 2026-09-17.
 
 Color de marca: null — bicolor azul y verde (apodo 'Γαλαζοπράσινοι', escudo a rayas celeste/verde claro); el hex de la camiseta (#005754, en.wikipedia) es un verde azulado que no cae claro en ninguno de los dos, verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2019 desde `Clubes/Grecia/Levadiakos/Levadiakos_FS_2019-06-30.pdf` (sourceId `levadiakos-gr-fs-2019-06-30`).

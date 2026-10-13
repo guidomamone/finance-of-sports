@@ -1,73 +1,80 @@
 {
- "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2023-06-30.md",
- "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2023-06-30.pdf",
- "club": "levadiakos",
- "year": 2023,
- "generatedAt": "2026-10-10T14:46:04.092Z",
- "origen": "verificar.mjs (proceso nuevo, Versión 324)",
- "rubros": [
-  {
-   "label": "Κύκλος εργασιών (καθαρός)",
-   "lado": "revenue",
-   "page": 3,
-   "section": "estado",
-   "values": [
-    0.253444
-   ]
-  },
-  {
-   "label": "Λοιπά συνήθη έσοδα",
-   "lado": "revenue",
-   "page": 3,
-   "section": "estado",
-   "values": [
-    3.233068
-   ]
-  },
-  {
-   "label": "Λοιπά έσοδα και κέρδη",
-   "lado": "revenue",
-   "page": 3,
-   "section": "estado",
-   "values": [
-    0.162258
-   ]
-  },
-  {
-   "label": "Κόστος πωλήσεων",
-   "lado": "expense",
-   "page": 3,
-   "section": "estado",
-   "values": [
-    3.042119
-   ]
-  },
-  {
-   "label": "Έξοδα διάθεσης",
-   "lado": "expense",
-   "page": 3,
-   "section": "estado",
-   "values": [
-    0.034185
-   ]
-  },
-  {
-   "label": "Έξοδα διοίκησης",
-   "lado": "expense",
-   "page": 3,
-   "section": "estado",
-   "values": [
-    0.334887
-   ]
-  },
-  {
-   "label": "Άλλα έξοδα και ζημίες",
-   "lado": "expense",
-   "page": 3,
-   "section": "estado",
-   "values": [
-    0.046651
-   ]
-  }
- ]
+  "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2023-06-30.md",
+  "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2023-06-30.pdf",
+  "club": "levadiakos",
+  "year": 2023,
+  "generatedAt": "2026-10-13T12:59:38.454Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Κύκλος εργασιών (καθαρός)",
+      "lado": "revenue",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.253444
+      ],
+      "glosa": "Cifra de negocios (neta)"
+    },
+    {
+      "label": "Λοιπά συνήθη έσοδα",
+      "lado": "revenue",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        3.233068
+      ],
+      "glosa": "Otros ingresos ordinarios"
+    },
+    {
+      "label": "Λοιπά έσοδα και κέρδη",
+      "lado": "revenue",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.162258
+      ],
+      "glosa": "Otros ingresos y ganancias"
+    },
+    {
+      "label": "Κόστος πωλήσεων",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        3.042119
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Έξοδα διάθεσης",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.034185
+      ],
+      "glosa": "Gastos de comercialización"
+    },
+    {
+      "label": "Έξοδα διοίκησης",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.334887
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Άλλα έξοδα και ζημίες",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.046651
+      ],
+      "glosa": "Otros gastos y pérdidas"
+    }
+  ]
 }

@@ -37,6 +37,9 @@ window.RANKINGS["gr-superleague"] = {
       { id:"aellarissa-gr", revenue:3.513, reportType:"official_balance_sheet",
         sourceId:"aellarissa-gr-ael-notes-elp-2019-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.639],["Otros ingresos",0.874]] },
+      { id:"levadiakos-gr", revenue:2.903, reportType:"official_balance_sheet",
+        sourceId:"levadiakos-gr-fs-2019-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.087],["Otros ingresos",2.816]] },
     ],
   },
   2018: {
