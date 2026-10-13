@@ -17,7 +17,8 @@ Que un PDF de un club llegue solo hasta el año cargado en el sitio:
 - barato en dólares de API,
 - sin errores en los números.
 
-Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exactas para que Guido lo mire.
+Lo que no se puede resolver solo va a una **cola** de preguntas de sí o no, con su cita. La contesta un subagente (Guido no la revisa); a
+Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta de un club o la carga de un año.
 
 ## 2. Al arrancar
 
@@ -47,7 +48,7 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 6. Leer el resultado: el bloque final que pega Guido (no la terminal entera), `Generados/`, `estado.mjs` y `cola.mjs`. Mostrarlo en un solo mensaje,
    con una tabla etapa · ejercicios · qué significa la etapa · qué falta (solo lo pendiente: los cargados y descartados van en una línea
    aparte), y las decisiones numeradas con la recomendación al lado.
-7. Lo que frena se resuelve en este orden: un ajuste manual (gratis, sin preguntar); una pregunta de sí o no de la cola para Guido; si es
+7. Lo que frena se resuelve en este orden: un ajuste manual (gratis, sin preguntar); la cola, que contesta un subagente (ver "La cola" en la sección 4); si es
    un defecto de un script, una sesión del tipo b). En un caso de categoría de la cola, `descartar` se rechaza: para sacar la fila es
    `corregir --valor no_es_rubro`, y vale solo para ese documento. Un ajuste manual lo firma quien corre `tools/ajustes.mjs` (Claude si lo
    corre Claude Code, Guido si no; `--autor` lo fuerza).
@@ -78,7 +79,7 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 - **Dos caminos, no más reglas:**
   - camino limpio: reglas pocas y estrictas; si todo cierra sin interpretar nada, se carga solo;
   - camino de dudas: lo que no pasa no se "arregla" con otra regla; se le pregunta a la IA algo puntual con cita del documento, y si tampoco
-    alcanza, va a la cola humana.
+    alcanza, va a la cola.
 - **No perseguir casos sin daño.** Si un defecto no afecta ningún dato cargado ni frena nada hoy, se mide su impacto y se anota en el
   TODO como "conocido, sin daño hoy"; no se diseña un arreglo. Una regla que "siempre incluye/excluye" algo es manta corta: va como
   escalón (probar lo que dijo la IA y, solo si la compuerta no cierra, probar lo otro).
@@ -86,7 +87,13 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
   dólares de API está bien; tokens de sesión, no. Archivos grandes se leen con filtros, no enteros.
 - **Ejemplos concretos:** club, año, fila, importe, antes y después. Explicar las siglas.
 - **Páginas:** decir siempre las dos, "página N del visor (impreso M al pie)".
-- **Cola humana:** preguntas concretas de sí o no, nunca exploratorias. Decirle exactamente qué abrir: "abrí el PDF en la página N del visor; en el .md, líneas X-Y; fijate si...".
+- **La cola (Guido no la revisa).** Preguntas concretas de sí o no, con la página del visor y las líneas del .md. Las contesta un subagente
+  Sonnet, un club por vez: lee el criterio de `club-data-mapping` y los precedentes del país, abre cada caso en el .md y devuelve decisión +
+  cita + seguridad, o "no sé" con la pregunta concreta. Claude revisa contra el documento las correcciones grandes (cambio de bloque, una
+  fila que sale con `no_es_rubro`, una fila mixta) antes de aplicarlas con `cola.mjs --responder`, firmadas "Claude <fecha> (subagente
+  Sonnet)". Un "no sé" que frena el alta de un club o la carga de un año se le pregunta a Guido, de sí o no y diciéndole exactamente qué
+  abrir ("abrí el PDF en la página N del visor; en el .md, líneas X-Y; fijate si..."); si es algo que solo el club sabe, va a
+  `Admin/dudas-por-club.md`.
 - **Sin la herramienta de preguntas:** las decisiones van numeradas en el mensaje.
 - Ajuste `categoria` = MUDAR una fila de lado (salta la compuerta del lado). Para aceptar/corregir dentro del mismo lado: la cola
   (`cola.mjs --corregir-categoria`), que respeta la compuerta. Caso: Novorizontino 2024, "Premiações" es ingreso y gasto.

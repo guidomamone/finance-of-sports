@@ -133,9 +133,6 @@ ni en el comentario de ningún archivo de código.
     las 19 etiquetas de categoría (80 casos de 6 años; leyó la skill `club-data-mapping`, los precedentes griegos y cada nota del .md) y
     Claude aplicó las 18 firmes con `cola.mjs --responder` firmadas "Claude 2026-10-13 (subagente Sonnet...)"; los 22 de perfil (socios,
     otros deportes) los contestó Claude con cita (PAE de solo fútbol, L574). Entraron AEK 2016-2020. Falta:
-      - Escribir el proceso en la skill `club-or-year-onboarding` (sección 3a paso 7 y "Cola humana" de la sección 4 dicen "para Guido"):
-        mostrarle a Guido el texto antes (regla de skills). Qué contesta el subagente, con qué cita, qué hace con "no sé"
-        (`Admin/dudas-por-club.md`), y que Claude revisa contra el documento las correcciones grandes antes de aplicarlas.
       - Contestar así el resto de la cola (`node tools/cola.mjs`: unos 210 casos), de a un club por subagente.
       - AEK 2022-2025: la fila del estado "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες" mezcla la nómina (Μισθοδοσία) y la amortización de
         contratos de jugadores (Αποσβέσεις συμβολαίων ποδοσφαιριστών, 53-60%, nota 6.19; la política contable lo dice en
