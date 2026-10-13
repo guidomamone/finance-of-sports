@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 678 — To-do 211 como escalón: la respuesta a una duda cierra la otra del mismo cuadro (2026-10-13)
+
+- `verificar.mjs`: en lugar de juntar en un caso las dos dudas de un cuadro (escondía una pregunta genuina en Levadiakos 2019), las dos van
+  a la cola y una se cierra sola solo cuando Guido ya contestó la otra y esa respuesta la contesta ("¿se carga?" con "¿se deja afuera?", o
+  dos "¿se deja afuera?"). Simulado en Grecia con un lado de cada par sin respuesta: cierra 7 y 9 en las dos simulaciones, todas con la
+  respuesta que Guido había dado; Levadiakos sigue preguntando las dos. `prueba-completa`: idéntico.
+
 ## Versión 677 — Gestiones de 48 clubes (to-do 195) (2026-10-13)
 
 - 6 subagentes Sonnet investigaron las gestiones de los 74 clubes cargados que no tenían ninguna (Brasil, Rusia, Japón, Croacia, Alemania,

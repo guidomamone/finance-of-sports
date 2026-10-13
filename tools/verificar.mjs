@@ -1159,7 +1159,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         const mismaCarpeta = (c) => c.pdf.split('/').slice(0, 3).join('/') === pdf.split('/').slice(0, 3).join('/');
         const antesDelAlta = clubId && clubId !== pdf.split('/')[2] ? respuestaPorDetalle('verificar', 'duda-tema', `${pdf.split('/')[2]}|${d.tema}|${normalizarRenglon(d.renglon)}`, mismaCarpeta) : null;
         const ya = respuestaPorDetalle('verificar', 'duda-tema', det) || (antesDelAlta && antesDelAlta.resp.decision !== 'obsoleto' ? antesDelAlta : null);
-        if (ya) { notas.push(`duda de ${origen} ya contestada para el club${ya === antesDelAlta ? ' (antes de su alta)' : ''} (${d.tema}, "${d.renglon || '-'}"): ${ya.resp.decision}${ya.resp.valor ? ` ${ya.resp.valor}` : ''}, en ${ya.caso.pdf.split('/').pop()}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); contestadas.push({ origen, bloques: d.bloques || [], lineas, tema: d.tema }); continue; }
+        if (ya) { notas.push(`duda de ${origen} ya contestada para el club${ya === antesDelAlta ? ' (antes de su alta)' : ''} (${d.tema}, "${d.renglon || '-'}"): ${ya.resp.decision}${ya.resp.valor ? ` ${ya.resp.valor}` : ''}, en ${ya.caso.pdf.split('/').pop()}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); contestadas.push({ origen, bloques: d.bloques || [], lineas, tema: d.tema, resp: ya.resp, que: ya.caso.que, propuesta: ya.caso.propuesta }); continue; }
         // ESCALÓN 2 DE LAS DUDAS (Versión 346, diseño aprobado por Guido): la aritmética la confirma. Si la escalera de lecturas cerró con un
         // número impreso, ningún año vecino da distinto, el tema es de los que las sumas pueden confirmar y la propuesta de la IA es "sí" (lo que
         // extraer ya aplicó), se acepta sola. Perímetro, cuadro de otro año, fila ilegible y "otro" nunca: un perímetro equivocado cierra igual.
@@ -1180,35 +1180,41 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       pendientes.push({ origen, motivo: `duda-de-${origen}`, detalle: (d.pregunta || d.texto).slice(0, 80), que, pregunta: d.pregunta || d.texto, bloques: d.bloques || [], extra: { pagina, lineas, propuesta } });
     }
   }
-  // MISMO CUADRO, UNA SOLA PREGUNTA (to-do 211, diseño aprobado por Guido el 2026-10-13). localizar y extraer preguntaban por separado sobre
-  // el mismo cuadro y con propuestas opuestas: AEK 2016-17, cuadro 6.23 'Παροχές στο προσωπικό' (L1612-1618): "¿se carga como desglose?" (sí)
-  // y "¿se deja afuera?" (sí). En la cola de Grecia, 24 de las 59 dudas eran 12 pares así, y Guido contestó lo mismo de los dos lados. Contestar
-  // una duda no cambia lo que se carga (solo libera el caso; la de un tema se reusa en los otros años del club), así que juntarlas no cambia
-  // ningún dato. Solo entre ORÍGENES distintos (dos dudas de la misma IA son
-  // dos preguntas suyas; "mismo cuadro" se define abajo, en cuadroDe). Queda la duda con tema (su respuesta se reusa en el club); la otra va como contexto dentro del mismo caso. Si la duda
-  // con tema del mismo cuadro ya la había contestado Guido (arriba, `ya`), la otra se cierra con nota en vez de volver a la cola.
-  // MEDIDO Y DESCARTADO (HALLAZGOS-pipeline.md): cerrar sola la duda sobre un cuadro que la carga no usa se equivocaba en 6 de 26 casos
-  // de Grecia (Asteras 2020-2023: la nota por naturaleza suma un GRUPO de renglones).
-  // EL CUADRO DE UNA DUDA es el PRIMER bloque que nombra (los demás son contexto: "¿se carga b43 como desglose de b40?"). Mismo cuadro = mismo
-  // primer bloque, y que no sea un bloque del estado de resultados: casi todas las dudas de un documento lo nombran, y por ahí se juntaban
-  // preguntas distintas (Volos 2019-2022: "¿unidades?" con "¿se carga el interés de L21?", ambas sobre b1). Compartir líneas o un bloque
-  // cualquiera tampoco alcanza: medido en Grecia, 8 de 18 pares juntados así eran preguntas distintas (Asteras 2020: b37 con b42).
+  // MISMO CUADRO: LA RESPUESTA A UNA DUDA CONTESTA LA OTRA (to-do 211, escalón aprobado por Guido el 2026-10-13). localizar y extraer preguntan
+  // por separado sobre el mismo cuadro: AEK 2016-17, cuadro 6.23 'Παροχές στο προσωπικό' (L1612-1618), "¿se carga como desglose?" y "¿se deja
+  // afuera?". Las dos siguen yendo a la cola; este escalón solo CIERRA una cuando Guido ya contestó la otra y esa respuesta la contesta.
+  //   - Mismo cuadro = mismo PRIMER bloque de las dos dudas (los demás son contexto), y que no sea un bloque del estado de resultados (casi
+  //     todas lo nombran: Volos 2019-2022 juntaba "¿unidades?" con "¿se carga el interés de L21?"). Solo entre orígenes distintos.
+  //   - COMPUERTA: las dos preguntas son sobre la MISMA decisión, si el cuadro entra o no a la carga: una "¿Se carga…?" con una "¿Se deja
+  //     afuera…?" (respuestas opuestas) o dos "¿Se deja afuera…?" (la misma). Dos "¿Se carga…?" pueden ser maneras distintas de cargar el
+  //     mismo cuadro (Levadiakos 2019: "¿solo?" -> no; "¿junto con su continuación de la pág. 16?" -> sí): no se cierra ninguna.
+  //   - Medido en la cola de Grecia (59 dudas de verificar, todas contestadas): cierra 9, las 9 con la respuesta que Guido había dado; 0 perdidas.
+  //   - Contestar una duda no cambia lo que se carga (solo libera el caso), así que este escalón no cambia ningún dato.
+  // MEDIDO Y DESCARTADO (HALLAZGOS-pipeline.md): JUNTAR las dos en un caso escondía una pregunta genuina (Levadiakos), y cerrar sola la duda
+  // sobre un cuadro que la carga no usa se equivocaba en 6 de 26 (Asteras 2020-2023: la nota suma un GRUPO de renglones).
   const estadoB = new Set(F.ubicacion?.estado || []);
   const cuadroDe = (x) => { const b = (x.bloques || [])[0]; return b && !estadoB.has(b) ? b : null; };
   const mismoCuadro = (x, y) => { const c = cuadroDe(x); return !!c && c === cuadroDe(y); };
-  const juntadas = new Set();
-  for (let i = 0; i < pendientes.length; i++) {
-    if (juntadas.has(i)) continue;
-    const a = pendientes[i];
-    const yaC = contestadas.find((c) => c.origen !== a.origen && mismoCuadro(c, a));
-    if (yaC) { notas.push(`duda de ${a.origen} sobre un cuadro cuya duda de ${yaC.origen} ya contestó Guido para el club (${yaC.tema}): ${a.pregunta}`); continue; }
-    const j = pendientes.findIndex((b, k) => k > i && !juntadas.has(k) && b.origen !== a.origen && mismoCuadro(a, b));
-    if (j < 0) { caso(a.motivo, a.detalle, a.que, a.extra); continue; }
-    juntadas.add(j);
-    const b = pendientes[j];
-    const [prim, sec] = a.motivo === 'duda-tema' || b.motivo !== 'duda-tema' ? [a, b] : [b, a];
-    notas.push(`duda de ${sec.origen} juntada con la de ${prim.origen} (mismo cuadro, to-do 211): ${sec.pregunta} ||| la que queda: ${prim.pregunta}`);
-    caso(prim.motivo, prim.detalle, `${prim.que}  [La misma pregunta sobre este cuadro, desde ${sec.origen}: ${sec.pregunta}]`, prim.extra);
+  const tipoDecision = (q) => (/^¿\s*Se\s+cargan?\b/i.test(q) ? 'carga' : /^¿\s*Se\s+dejan?\s+afuera\b/i.test(q) ? 'afuera' : null);
+  const propDe = (txt) => (/^\s*no(?=[\s(.,]|$)/i.test(String(txt || '')) ? 'no' : /^\s*s[ií](?=[\s(.,]|$)/i.test(String(txt || '')) ? 'sí' : null); // sin \b: en JS la í no cuenta como letra
+  // ¿entra el cuadro a la carga, según la respuesta de Guido a esa pregunta? null si no se puede saber
+  const entra = (pregunta, resp, propuesta) => {
+    const t = tipoDecision(pregunta); if (!t || !resp) return null;
+    const v = resp.decision === 'aceptar' ? propDe(propuesta) : resp.decision === 'corregir' ? propDe(resp.valor) : null;
+    if (!v) return null;
+    return t === 'carga' ? v === 'sí' : v === 'no';
+  };
+  const respondidas = [
+    ...contestadas.map((c) => ({ origen: c.origen, bloques: c.bloques, pregunta: c.que, entra: entra(c.que, c.resp, c.propuesta) })),
+    ...pendientes.map((a) => { const r = respuestaDe(pdf, 'verificar', a.motivo, a.detalle); return r ? { origen: a.origen, bloques: a.bloques, pregunta: a.que, entra: entra(a.que, r, a.extra.propuesta) } : null; }).filter(Boolean),
+  ];
+  for (const a of pendientes) {
+    const ta = tipoDecision(a.que);
+    const otra = ta && !respuestaDe(pdf, 'verificar', a.motivo, a.detalle)
+      ? respondidas.find((x) => x.origen !== a.origen && mismoCuadro(x, a) && x.entra !== null && (ta === 'afuera' || tipoDecision(x.pregunta) === 'afuera'))
+      : null;
+    if (otra) { notas.push(`duda de ${a.origen} contestada por la respuesta de Guido sobre el mismo cuadro (${cuadroDe(a)}, to-do 211): el cuadro ${otra.entra ? 'entra' : 'queda afuera'}. "${a.pregunta}" | respondida: "${otra.pregunta.split('  (por qué')[0]}"`); continue; }
+    caso(a.motivo, a.detalle, a.que, a.extra);
   }
 
   // ESCALERA DEL RESULTADO FINAL (Versión 364, diseño aprobado por Guido el 2026-10-02). Si se cerró contra "resultado antes de impuestos"
