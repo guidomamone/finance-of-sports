@@ -35,6 +35,9 @@ window.RANKINGS["gr-superleague"] = {
   2023: {
     leagueSize: null,
     clubs: [
+      { id:"aekathens-gr", revenue:42.361, reportType:"official_balance_sheet",
+        sourceId:"aekathens-gr-aek-fs-2023-06-30",
+        mix:[["Comercial / Sponsors",9.812],["Estadio",17.833],["Televisión",5.237],["Premios por competencias",1.365],["Venta de Jugadores",4.588],["Otros ingresos",3.527]] },
       { id:"oficrete-gr", revenue:7.288, reportType:"official_balance_sheet",
         sourceId:"oficrete-gr-ofi-income-stmt-2023-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.135],["Otros ingresos",2.153]] },

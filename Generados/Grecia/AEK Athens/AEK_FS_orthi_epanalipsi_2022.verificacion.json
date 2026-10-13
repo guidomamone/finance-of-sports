@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Grecia/AEK Athens/AEK_FS_orthi_epanalipsi_2022.pdf",
  "md": "Clubes/Grecia/AEK Athens/AEK_FS_orthi_epanalipsi_2022.md",
- "generado": "2026-10-13T17:01:13.705Z",
+ "generado": "2026-10-13T17:02:59.128Z",
  "estado": "ok",
  "clubId": "aekathens-gr",
  "year": 2022,
@@ -11,7 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/AEK Athens/AEK_FS_orthi_epanalipsi_2022.pdf",
+   "campo": "categoria",
+   "valor": "other_income",
+   "linea": null,
+   "etiqueta": "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση",
+   "motivo": "Claude 2026-10-13: subsidio del organismo nacional de fútbol o del gobierno, no un premio por competencias; other_income como 2023 y 2025 y las demás 'Επιχορηγήσεις' griegas",
+   "evidencia": ".md L",
+   "autor": "Claude",
+   "fecha": "2026-10-13"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
