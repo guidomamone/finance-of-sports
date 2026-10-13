@@ -26,7 +26,13 @@
 //   COMPUERTA  la MISMA para los tres: valor = suma de las cifras de las filas propuestas x la escala; y un año vecino tiene que decir lo mismo:
 //              el AÑO ANTERIOR CARGADO (las mismas filas, en su columna del año anterior, dan lo cargado) o el DOCUMENTO SIGUIENTE (las mismas
 //              familias, en su columna del año anterior, dan este valor). Pasa si al menos uno coincide y ninguno contradice. Si no pasa, el
-//              siguiente escalón. Si ninguno pasa: null. Nunca frena.
+//              siguiente escalón. Si ninguno pasa: null. Nunca frena. (to-do 223) El DOCUMENTO ANTERIOR (la columna del año anterior de estas
+//              filas contra el año en ese documento) también confirma, pero solo a favor: un documento puede reexpresar el año anterior. Y
+//              dos números por debajo del piso de la tolerancia (1.500 unidades) coinciden solo si son el mismo número.
+//   DOS LECTURAS (to-do 223): cada propuesta se evalúa con las filas como se leen siempre y, si alguna fila (de este documento o de los
+//              vecinos) tiene una celda en una columna con forma de nota ("6.8", "6.13"), también sin esa celda. Decide la misma compuerta:
+//              pasa una sola lectura → esa; las dos con valores distintos → no decide. Caso: AEK 2019, "| Ταμειακά διαθέσιμα | 6.8 |
+//              7.935.425 | 1.650.370 |" se leía 6,8; sin la celda, 7.935.425, que confirma el documento 2020.
 //   LEER UNA FILA: el importe en valor absoluto (hay balances que imprimen el pasivo entre paréntesis: Tottenham 2023-24).
 // Respuesta de la IA guardada en Generados/<doc>.caja-deuda-ia.json.
 // Solo se leen las páginas del BALANCE: las que tienen el título (TITULO_BALANCE) o un total del activo / del pasivo, sin el título del flujo
@@ -65,6 +71,9 @@ const PAG_RE = /^---\s*pág\.\s*(\d+)\s*---/i;
 const IMPORTE_RE = /\(?-?\d{1,3}(?:[.,' ]\d{3})+(?:[.,]\d{1,2})?\)?|\(?-?\d+[.,]\d{1,2}\)?|\(?-?\b\d{1,}\b\)?/g;
 const FACTORES = [1e-6, 1e-3, 1];
 const TOL = (v) => Math.max(0.0015, Math.abs(v) * 1e-4);
+// (to-do 223) Dos números por debajo del piso de la tolerancia (0,0015 millones = 1.500 unidades) coinciden solo si son el mismo número: con
+// el piso, 6,80 (una nota leída como importe, AEK 2020) "coincidía" con 31,92 (un porcentaje de la fila de ratios del documento siguiente).
+const coincide = (a, b) => (Math.max(Math.abs(a), Math.abs(b)) < 0.0015 ? Math.abs(a - b) <= Math.max(Math.abs(a), Math.abs(b)) * 1e-4 : Math.abs(a - b) <= TOL(b));
 
 function parseNumber(raw) {
   let s = String(raw).trim().replace(/R\$|[$€£¥]/g, '').trim();
@@ -131,6 +140,28 @@ function columnasDeNotasConPunto(L) {
   return res;
 }
 
+// (to-do 223) COLUMNA CON FORMA DE NOTA, para la LECTURA B de una fila (escalera()): la primera columna con cifras después de la etiqueta,
+// al menos 2 valores, todos números de nota ("6.8", "6.13", enteros chicos) o "-", al menos uno con punto, ninguno con coma. Sin pedir orden
+// ni encabezado (AEK 2019 repite "6.9" e imprime "6.13" antes que "6.12"): acá no decide nada, solo arma la otra lectura; decide la compuerta.
+function columnasConFormaDeNota(L) {
+  const celdasDe = (l) => l.trim().replace(/^\||\|$/g, '').split('|').map((c) => c.replace(/\*\*/g, '').trim());
+  const NOTA = /^\d{1,2}(?:\.\d{1,2}){0,3}$/;
+  const res = new Map();
+  for (let a = 0; a < L.length;) {
+    if (!L[a].trim().startsWith('|')) { a++; continue; }
+    let b = a; while (b < L.length && L[b].trim().startsWith('|')) b++;
+    const rs = L.slice(a, b).map(celdasDe);
+    const col = rs.map((r) => { const iEt = r.findIndex((c) => /\p{L}{3,}/u.test(c)); if (iEt < 0) return null; const k = r.findIndex((c, j) => j > iEt && /\d/.test(c) && !/\p{L}{2,}/u.test(c)); return k < 0 ? null : k; }).filter((k) => k != null);
+    const freq = new Map(); for (const k of col) freq.set(k, (freq.get(k) || 0) + 1);
+    const c = freq.size ? [...freq].sort((x, y) => y[1] - x[1])[0][0] : null;
+    const vs = c == null ? [] : rs.map((r) => (r[c] || '').trim()).filter((v) => v && v !== '-' && !/^:?-{2,}:?$/.test(v) && !/\p{L}{2,}/u.test(v));
+    const ok = vs.length >= 2 && vs.every((v) => NOTA.test(v)) && vs.some((v) => v.includes('.'));
+    for (let k = a; k < b; k++) res.set(k, ok ? c : null);
+    a = b;
+  }
+  return res;
+}
+
 // (to-do 224) RENGLÓN DE TEXTO CON CIFRAS ("Caja      1.234 5.678"): lo mismo que /^(.*?\p{L}[^\d(]*?)\s+(CIFRAS)\s*$/u, que se usaba
 // directo y era el 95% del tiempo de `--medir` (140 de 146 s): en una línea con una letra DESPUÉS de una tira de cifras con espacios, antes de
 // fallar probaba todas las maneras de repartir esos espacios entre "dentro del número" y "separador". Acá se prueban los mismos cortes en el
@@ -155,7 +186,7 @@ function renglonDeTexto(t) {
 // Las filas de la transcripción: etiqueta + cifras (tablas markdown y renglones de texto), con su página y su línea.
 export function filasDelMd(md) {
   const L = md.split('\n'); const filas = []; let pagina = 1; const textoPag = new Map();
-  const notasAntes = columnasDeNotas(L); const notasPunto = columnasDeNotasConPunto(L);
+  const notasAntes = columnasDeNotas(L); const notasPunto = columnasDeNotasConPunto(L); const notasForma = columnasConFormaDeNota(L);
   for (let i = 0; i < L.length; i++) {
     const l = L[i]; const m = l.match(PAG_RE); if (m) { pagina = Number(m[1]); continue; }
     textoPag.set(pagina, (textoPag.get(pagina) || '') + '\n' + l);
@@ -197,6 +228,13 @@ export function filasDelMd(md) {
     const colPunto = ix0 ? notasPunto.get(i) : null;
     const sacoNota = colPunto != null && ix0.includes(colPunto);
     if (sacoNota) { const k = ix0.indexOf(colPunto); crudos = crudos.filter((_, q) => q !== k); nums = crudos.map(parseNumber).filter((n) => n !== null); }
+    // (to-do 223) LECTURA B: la fila sin la celda que cae en una columna con forma de nota (si la lectura de siempre no la sacó ya).
+    const colForma = !sacoNota && ix0 ? notasForma.get(i) : null;
+    let lecturaB = null;
+    if (colForma != null && ix0.includes(colForma)) {
+      const k = ix0.indexOf(colForma); const cb = crudos.filter((_, q) => q !== k).map(parseNumber).filter((n) => n !== null).map(Math.abs);
+      if (cb.length) lecturaB = { valor: cb[0], cifras: cb };
+    }
     const notaAntes = sacoNota || (ix0 && notasAntes.get(i) && notasAntes.get(i).some((c) => c > j0 && c < ix0[0]));
     if (!notaAntes && nums.length > 1 && Number.isInteger(nums[0]) && Math.abs(nums[0]) >= 1 && Math.abs(nums[0]) < 100 && !/[.,]/.test(String(crudos[0]))) { nums = nums.slice(1); crudos = crudos.slice(1); }
     if (!nums.length) continue;
@@ -208,7 +246,7 @@ export function filasDelMd(md) {
     const sinCodigo = etiqueta.replace(/^\s*(?:\d+\s+)?\d+(?:[.\-]\d+)*\s*(?:-\s+)?(?=\p{L})/u, '').replace(/^\s*(?:\d{1,2}|[a-z]|[ivxlc]{1,5})[.)]\s+(?=\p{L})/iu, '');
     const cd = (String(crudos[0] ?? '').match(/\s([CD])\s*$/i) || [])[1]?.toUpperCase() || null; // (Versión 423) marca de balancete
     const codigo = ((etiqueta.match(/^\s*(?:\d{1,4}\s+)?(\d+(?:\.\d+)+|\d{4,})\s/) || [])[1] || '').replace(/\./g, '') || null;
-    filas.push({ linea: i + 1, pagina, etiqueta, cd, codigo, norm: normalizar(sinCodigo), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums });
+    filas.push({ linea: i + 1, pagina, etiqueta, cd, codigo, norm: normalizar(sinCodigo), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums, ...(lecturaB && lecturaB.valor !== nums[0] ? { lecturaB } : {}) });
     }
   }
   // Páginas del balance: título o total del activo/pasivo, y sin el título del flujo de efectivo / cambios en el patrimonio.
@@ -422,7 +460,7 @@ export function compuerta(prop, ctx) {
   return base;
 }
 // La compuerta con UNA escala: la del documento (over null) o una forzada para las filas de la propuesta (over).
-function evaluar(prop, { factor, anterior = null, siguiente = null, factorSiguiente = null, cual = null }, over) {
+function evaluar(prop, { factor, anterior = null, siguiente = null, factorSiguiente = null, cual = null, anteriorDoc = null, factorAnterior = null }, over) {
   if (over == null && !factor) return { ok: false, valor: null, motivo: 'sin escala del documento' };
   const esc = over ?? factor;
   // (Versión 420) LA FAMILIA DE LA FILA: deuda nunca con una fila de caja, caja nunca con una fila de deuda financiera (el mismo filtro que
@@ -434,12 +472,24 @@ function evaluar(prop, { factor, anterior = null, siguiente = null, factorSiguie
   const chequeos = []; // [nombre, coincide, detalle]
   if (anterior != null) {
     if (prop.ninguna) chequeos.push(['año anterior', Math.abs(anterior) <= TOL(0), `cargado ${anterior}`]);
-    else if (prop.filas.every((f) => f.cifras.length > 1)) { const prev = r6(prop.filas.reduce((a, f) => a + f.cifras[1], 0) * esc); chequeos.push(['año anterior', Math.abs(prev - anterior) <= TOL(anterior), `${prev} contra ${anterior} cargado`]); }
+    else if (prop.filas.every((f) => f.cifras.length > 1)) { const prev = r6(prop.filas.reduce((a, f) => a + f.cifras[1], 0) * esc); chequeos.push(['año anterior', coincide(prev, anterior), `${prev} contra ${anterior} cargado`]); }
   }
   // (Versión 385) una fila que no está en las páginas del balance (una nota) se busca también en las notas del documento vecino.
   if (siguiente) {
     if (prop.ninguna) { const fs = siguiente.filter((x) => x.balance && prop.familias.includes(x.familia) && x.cifras.length > 1); chequeos.push(['documento siguiente', fs.every((x) => x.cifras[1] === 0), fs.length ? `${fs.map((x) => x.cifras[1]).join(' + ')} en el siguiente` : 'el siguiente tampoco tiene esas filas']); }
-    else { const fs = prop.enOtroDoc ? (prop.enOtroDoc(siguiente) || [null]) : prop.filas.map((f) => siguiente.find((x) => (x.balance || !f.balance) && x.familia === f.familia && x.cifras.length > 1)); if (fs.every(Boolean)) { const prev = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * (factorSiguiente ?? factor)); let okS = Math.abs(prev - valor) <= TOL(valor); if (!okS && over != null) { const p2 = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * over); okS = Math.abs(p2 - valor) <= TOL(valor); } /* (Versión 459) con una escala forzada, el siguiente también puede ir en esa escala */ chequeos.push(['documento siguiente', okS, `${prev} en el siguiente`]); } }
+    else { const fs = prop.enOtroDoc ? (prop.enOtroDoc(siguiente) || [null]) : prop.filas.map((f) => siguiente.find((x) => (x.balance || !f.balance) && x.familia === f.familia && x.cifras.length > 1)); if (fs.every(Boolean)) { const prev = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * (factorSiguiente ?? factor)); let okS = coincide(prev, valor); if (!okS && over != null) { const p2 = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * over); okS = coincide(p2, valor); } /* (Versión 459) con una escala forzada, el siguiente también puede ir en esa escala */ chequeos.push(['documento siguiente', okS, `${prev} en el siguiente`]); } }
+  }
+  // (to-do 223) DOCUMENTO ANTERIOR: la cifra del año anterior de la fila, contra la del año en el documento anterior (la
+  // misma fila, la misma lectura). Es el chequeo del documento siguiente, hacia atrás. AEK 2019 leído con la nota ("6.8"): su "año anterior"
+  // es 7.935.425 y el documento de 2018 tiene 1.650.370; sin la nota, 1.650.370 contra 1.650.370.
+  if (anteriorDoc && !prop.ninguna && prop.filas.every((f) => f.cifras.length > 1)) {
+    const fs = prop.enOtroDoc ? (prop.enOtroDoc(anteriorDoc) || [null]) : prop.filas.map((f) => anteriorDoc.find((x) => (x.balance || !f.balance) && x.familia === f.familia));
+    if (fs.every(Boolean)) {
+      const esteAnt = r6(prop.filas.reduce((a, f) => a + f.cifras[1], 0) * esc); const delAnt = r6(fs.reduce((a, x) => a + x.valor, 0) * (over ?? factorAnterior ?? factor));
+      // Solo suma a favor: en contra frenaba valores bien cargados (medido: Novorizontino 2023 reexpresó el año anterior, Tottenham 2025 y
+      // Fluminense 2025 cambian de escala entre documentos, Ceará 2025 y Católica 2016 encuentran otra fila).
+      if (coincide(esteAnt, delAnt)) chequeos.push(['documento anterior', true, `${esteAnt} en el anterior`]);
+    }
   }
   const malos = chequeos.filter((c) => !c[1]); const buenos = chequeos.filter((c) => c[1]);
   if (malos.length) return { ok: false, valor, motivo: `no coincide con ${malos.map((c) => `${c[0]} (${c[2]})`).join(' ni ')}` };
@@ -448,14 +498,26 @@ function evaluar(prop, { factor, anterior = null, siguiente = null, factorSiguie
 }
 
 // La escalera para un dato: cada escalón propone, la compuerta decide, y si no pasa se baja. `ia`: la respuesta de la IA (o null).
-export function escalera(filas, cual, { precedentes = [], factor = null, anterior = null, siguiente = null, factorSiguiente = null, ia = null, extraDeuda = [] } = {}) {
+const conLecturaB = (f) => (f.lecturaB ? { ...f, valor: f.lecturaB.valor, cifras: f.lecturaB.cifras, lecturaB: null } : f);
+export function escalera(filas, cual, { precedentes = [], factor = null, anterior = null, siguiente = null, factorSiguiente = null, ia = null, extraDeuda = [], anteriorDoc = null, factorAnterior = null } = {}) {
   const club = familiasDelClub(precedentes, cual);
   const propuestas = [propuestaPrecedente(filas, club), propuestaVocabulario(filas, cual, club, extraDeuda), ia ? propuestaIA(filas, ia, cual) : null];
   const intentos = [];
   for (let e = 0; e < propuestas.length; e++) {
     const p = propuestas[e];
     if (!p) { if (e < 2 || ia) intentos.push(`escalón ${e}: sin propuesta`); continue; }
-    const c = compuerta(p, { factor, anterior, siguiente, factorSiguiente, cual, referencia: precedentes[0]?.valor ?? null }); // (Versión 459) el año cargado más cercano, para la plausibilidad
+    const ctxC = { factor, anterior, siguiente, factorSiguiente, cual, referencia: precedentes[0]?.valor ?? null, anteriorDoc, factorAnterior}; // (Versión 459) el año cargado más cercano, para la plausibilidad
+    const c = compuerta(p, ctxC);
+    // (to-do 223, A/B medido el 2026-10-13 contra una compuerta con votos, descartada: ver Admin/HALLAZGOS-pipeline.md) DOS LECTURAS: si alguna fila de la propuesta o de los documentos vecinos tiene lectura B (sin la celda con
+    // forma de nota), la propuesta se evalúa también con todos los documentos leídos así (AEK 2018: su fila ya sale bien, la del documento
+    // siguiente trae la nota). La misma compuerta decide: pasa una sola → esa; las dos con valores distintos → no decide.
+    const hayB = (xs) => (xs || []).some((f) => f.lecturaB);
+    if (!p.ninguna && (hayB(p.filas) || hayB(siguiente) || hayB(anteriorDoc))) {
+      const pB = { ...p, filas: p.filas.map(conLecturaB), como: `${p.como} (sin la celda con forma de nota)` };
+      const cB = compuerta(pB, { ...ctxC, siguiente: siguiente && siguiente.map(conLecturaB), anteriorDoc: anteriorDoc && anteriorDoc.map(conLecturaB) });
+      if (c.ok && cB.ok && !coincide(c.valor, cB.valor)) { intentos.push(`escalón ${e}: pasan las dos lecturas (${c.valor} y ${cB.valor})`); continue; }
+      if (!c.ok && cB.ok) return { valor: cB.valor, escalon: e, validacion: cB.validacion, como: pB.como, filas: pB.filas.map(cita), club };
+    }
     if (c.ok) return { valor: c.valor, escalon: e, validacion: c.validacion, como: p.como, filas: p.filas.map(cita), club };
     intentos.push(`escalón ${e} (${c.valor}): ${c.motivo}`);
   }
@@ -536,7 +598,9 @@ function contexto({ d, anios, a, cual, filasDe, conocidos }) {
   const precedentes = Object.entries(conocidos[cual]).filter(([y]) => y !== a.anio).sort(([x], [y]) => Math.abs(x - a.anio) - Math.abs(y - a.anio)).slice(0, 3)
     .map(([y, v]) => { const o = anios.find((z) => z.anio === y && z.md); return o ? { anio: y, valor: v, filas: filasDe(o.md), factor: factorPorIngresos(filasDe(o.md), d.revenueLinesByYear?.[y], o.md) } : null; }).filter(Boolean);
   const sig = anios.find((o) => Number(o.anio) === Number(a.anio) + 1 && o.md);
+  const ant = anios.find((o) => Number(o.anio) === Number(a.anio) - 1 && o.md);
   return { filas, factor, precedentes, anterior: conocidos[cual][String(Number(a.anio) - 1)] ?? null, siguiente: sig ? filasDe(sig.md) : null,
+    anteriorDoc: ant ? filasDe(ant.md) : null, factorAnterior: ant ? factorPorIngresos(filasDe(ant.md), d.revenueLinesByYear?.[ant.anio], ant.md) : null,
     factorSiguiente: sig ? factorPorIngresos(filasDe(sig.md), d.revenueLinesByYear?.[sig.anio], sig.md) : null,
     extraDeuda: String(ajusteClubODoc(a.md.replace(/\.md$/i, '.pdf'), 'deuda-incluye')?.valor || '').split(';').map((t) => t.trim()).filter(Boolean) };
 }
@@ -597,7 +661,7 @@ async function medir({ club = null, detalle = false, ia = false, ejecutar = fals
     const xs = casos.filter((c) => c.cual === cual);
     console.log(`\n## ${cual === 'cash' ? 'CAJA' : 'DEUDA'}: ${JSON.stringify(res(xs))}`);
     for (const e of [0, 1, 2]) console.log(`   escalón ${e}: ${JSON.stringify(res(xs.filter((x) => x.escalon === e)))}`);
-    for (const v of ['año anterior', 'documento siguiente']) console.log(`   pasó la compuerta por ${v}: ${JSON.stringify(res(xs.filter((x) => x.validacion === v)))}`);
+    for (const v of ['año anterior', 'documento siguiente', 'documento anterior']) console.log(`   pasó la compuerta por ${v}: ${JSON.stringify(res(xs.filter((x) => x.validacion === v)))}`);
     const mal = xs.filter((x) => x.valor != null && !x.ok);
     if (mal.length) { console.log(`   DISTINTOS de lo cargado (${mal.length}):`); for (const x of mal) console.log(`     ${x.clubId} ${x.anio}: script ${x.valor} (escalón ${x.escalon}, ${x.validacion}, ${x.como}) · sitio ${x.real} · filas: ${x.filas.map((f) => `"${String(f.etiqueta).slice(0, 40)}" ${f.importe} (pág. ${f.pagina}, L${f.linea})`).join(' + ') || '(ninguna)'}`); }
     if (detalle) for (const x of xs.filter((y) => y.valor == null)) console.log(`     sin dato: ${x.clubId} ${x.anio} (sitio ${x.real}): ${x.como}`);

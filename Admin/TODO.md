@@ -132,19 +132,6 @@ ni en el comentario de ningún archivo de código.
     la carga. `node tools/audit.js` da el detalle de cada uno.
 
 
-223. COLUMNA DE NOTAS EN CAJA-DEUDA COMO ESCALERA, NO COMO REGLAS (pedido de Guido, 2026-10-13: "estás haciendo reglas que deberían ser
-    escalones"). Hoy (`c08cc9f`, to-do 221) `filasDelMd` saca la celda de una columna de notas de varios niveles ("6.8") si la columna es la
-    primera numérica, sin comas, con punto y en orden creciente: condiciones apiladas para evitar falsos positivos. Funciona (medido: 921
-    filas pierden solo la nota, `--medir` idéntico; AEK 2017 caja 1.785.822,70) pero no reconoce AEK 2019 (repite "6.9" e imprime "6.13"
-    antes que "6.12", con encabezado "σημ.") y para arreglarlo se seguían agregando condiciones (encabezado O orden, "-" no cuenta, ningún
-    nivel en 0 porque Envigado 2016 tiene la columna "DICIEMBRE 2015" toda en "0.00"): descartado sin commitear. Diseño a proponer: DOS
-    LECTURAS de cada fila (A: como antes; B: sin la celda que cae en una columna con forma de nota) y que decida la compuerta del dato (año
-    anterior / documento siguiente / plausibilidad), la misma para las dos. Problema a resolver primero: en AEK 2016 la compuerta aceptó la
-    lectura A ("6.8") porque el documento siguiente tiene la misma columna; mirar 2-3 casos y ver qué compuerta, igual para todos, rechaza A
-    (por ejemplo, que la columna "año anterior" de la fila coincida con lo leído en el documento anterior). Medir con `filasDelMd` sobre
-    todos los .md antes y después (script del scratchpad: cifras de cada fila) y `caja-deuda.mjs --medir`. Después correr AEK
-    (`--ejecutar --escribir`; la IA ya está en caché).
-
 226. AJUSTES DE PERÍMETRO QUE NO COINCIDEN CON EL DOCUMENTO (visto al medir el paso A2 de `perimetro-senales.mjs`). Ninguno cambia un
     número publicado; corregirlos con un ajuste `perimetro` del documento (`node tools/ajustes.mjs --agregar "<pdf>" perimetro --valor ...`)
     y, si el año está cargado, la línea "Perímetro" de su `Admin/carga-clubes/<clubId>.md`:

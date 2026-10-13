@@ -61,3 +61,8 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
 - 2026-10-10, to-do 199 patrón C (subtotal que suma renglones de cualquier lado, Avaí 2021): no entró. Solo no cierra Avaí (falta el signo
   del financiero según su bloque) y cambia Ferroviária 2012 (agrega una fila "Sócio torcedor" en 0). Medido en las 306 verificaciones.
   (Resuelto después como último escalón de la escalera: ver CHANGELOG, Versión 669.)
+- 2026-10-13, to-do 223, A/B de la compuerta de `caja-deuda.mjs` con dos lecturas por fila: la versión con VOTOS (año cargado 3, flujo de
+  efectivo del mismo documento 3, documento siguiente 2, documento anterior 2; hacen falta 3 y ninguno en contra) no entró. Sobre lo cargado:
+  deuda 48 -> 37 iguales, caja 106 -> 94 (el documento siguiente solo ya no alcanza) y el flujo de efectivo no sumó ningún caso. Con chequeos
+  exactos, los votos no agregan nada. Tampoco entró el documento anterior votando EN CONTRA: frenaba 7 valores bien cargados (Novorizontino
+  2023 reexpresado, Tottenham y Fluminense 2025 con otra escala, Ceará 2025 y Católica 2016 con otra fila); quedó solo a favor.

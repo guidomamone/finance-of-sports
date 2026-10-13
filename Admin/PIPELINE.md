@@ -596,7 +596,10 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [-
                    notas inequívoca antes de la cifra, la cifra es un importe (Novorizontino 2019 "| Empréstimos |  | 27 | 24 |");
                    escalón 2, sin esa evidencia, el primer entero de 1-2 dígitos se descarta como nota; y (to-do 221) una columna de notas
                    de varios niveles ("6.1", "6.8": la primera columna numérica, valores con punto, en orden creciente) se saca de la fila
-                   (AEK 2018 "| Ταμειακά διαθέσιμα | 6.8 | 1.650.369,92 |" daba caja 6,8)
+                   (AEK 2018 "| Ταμειακά διαθέσιμα | 6.8 | 1.650.369,92 |" daba caja 6,8). Lo que ese detector no reconoce (AEK 2019,
+                   notas sin orden) lo resuelven las DOS LECTURAS (to-do 223): cada propuesta se evalúa con la fila de siempre y sin la
+                   celda en una columna con forma de nota, con los vecinos leídos igual; decide la compuerta (una sola pasa → esa; las dos
+                   con valores distintos → no decide)
  PÁGINAS DEL BALANCE  título o total del balance, y no el flujo de efectivo ni los cambios en el patrimonio (una FILA con esas palabras
                       no cuenta si la página tiene el título del balance como encabezado)
  PERÍMETRO  cada página del balance es consolidado o individual por su encabezado; con ajuste `perimetro` solo cuenta ese (si el .md
@@ -611,6 +614,7 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [-
             de la nota de deuda si no hay otra fila de deuda
  ESCALÓN 2  IA (solo líneas)
  COMPUERTA (la misma para todos): la familia de la fila es la del dato y el año anterior cargado o el documento siguiente dicen lo mismo
+            (el documento anterior también confirma, solo a favor; por debajo de 1.500 unidades, coincidir es ser el mismo número)
             ── pasa → dato · no pasa → siguiente escalón · nada → null
  VECINO     lo cargado en el sitio o el documento vecino; nunca un valor aceptado en la misma corrida (Versión 502)
 ```

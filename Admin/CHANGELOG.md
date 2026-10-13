@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 687 — Caja y deuda con dos lecturas por fila (to-do 223) (2026-10-13)
+
+- `caja-deuda.mjs`: cada propuesta se evalúa con la fila de siempre y sin la celda en una columna con forma de nota ("6.8"); decide la
+  compuerta. La compuerta suma el documento anterior (solo a favor) y por debajo de 1.500 unidades coincidir es ser el mismo número (6,80
+  "coincidía" con un 31,92%). Idéntico en todo lo cargado; AEK 2019 caja 7.935.425 y 2020 ya no 6,80. A/B contra una compuerta con votos:
+  descartada (`Admin/HALLAZGOS-pipeline.md`).
+
 ## Versión 686 — Perímetro sin preguntar (to-do 225) (2026-10-13)
 
 - `perimetro-senales.mjs`, regla del club: un ejercicio publicado con un solo perímetro se carga con ese (ajuste del documento); el del club
