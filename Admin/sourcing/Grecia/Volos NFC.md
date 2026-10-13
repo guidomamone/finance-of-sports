@@ -30,3 +30,5 @@ Ninguna. Cobertura completa desde la constitución de la entidad, sin huecos.
 Color de marca: null — bicolor celeste-rojo (apodo Κυανέρυθροι, escudo azul y rojo) y la camiseta en.wikipedia es toda roja (ff0000); sin criterio de desempate, verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2019 desde `Clubes/Grecia/Volos NFC/Volos_income_stmt_2019-06-30.pdf` (sourceId `volosnfc-gr-volos-income-stmt-2019-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2020 desde `Clubes/Grecia/Volos NFC/Volos_income_stmt_2020-06-30.pdf` (sourceId `volosnfc-gr-volos-income-stmt-2020-06-30`).
