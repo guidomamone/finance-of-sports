@@ -43,6 +43,12 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   las decisiones de Guido: `Admin/PIPELINE.md`; las mejoras medidas y descartadas: `Admin/HALLAZGOS-pipeline.md`. Un dato publicado mal se
   corrige con un ajuste manual (`tools/ajustes.mjs`, escalón 0 de cada escalera) además de en `data/`, para que una corrida futura no lo deshaga.
 - Cuántos documentos hay en cada etapa y cuánto cuesta el paso siguiente: `node tools/estado.mjs` (gratis).
+- El primer año de un club se confirma sin Guido: con lo impreso (ingresos, gastos y resultado, o un total y el resultado) o, si solo
+  coincide el resultado, con una pregunta a Claude sobre las filas del estado (`tools/primer-anio-ia.mjs`, la contesta `lote.mjs --ejecutar`).
+- `caja-deuda.mjs` lee cada fila con y sin la celda con forma de nota y decide la compuerta (que también confirma con el documento anterior);
+  en deuda, si la nota de la fila muestra que la fila es solo una parte, propone la suma de la nota (y si pasan las dos, no decide).
+- De qué club y año es un PDF, y qué PDF no están cargados: `tools/quien.mjs`. El onboarding viejo (`onboard.mjs`, `prepare-onboarding.mjs`)
+  está en `tools/archivo/`.
 - "Posiblemente dentro de otro rubro": una fila en "—" porque el documento no desglosa un renglón la marca `tools/dentro-de-otro.mjs` si el
   club la tiene en todos sus otros balances desglosados; `cargar.mjs --escribir` la aplica solo. La página dice el rubro en un bocadillo
   (`js/info-tip.js`). Para un año sin precedente todavía no hay pregunta en la cola: queda en "—".
