@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Grecia/AEK Athens/AEK_Notes_IFRS_2021-06-30.pdf",
  "md": "Clubes/Grecia/AEK Athens/AEK_Notes_IFRS_2021-06-30.md",
- "generado": "2026-10-13T12:59:37.296Z",
+ "generado": "2026-10-13T16:59:59.072Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "aekathens-gr",
  "year": 2021,
  "escala": {
   "valor": "unidades",
@@ -17,17 +17,27 @@
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "26.184045 = 26.184045"
+   "detalle": "26.184045 = 26.184045",
+   "suma": 26.184045,
+   "impreso": 26.184044999999998
   },
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "26.849368 = 26.849367"
+   "detalle": "26.849368 = 26.849367",
+   "suma": 26.849367999999995,
+   "impreso": 26.849366999999997
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)"
+   "detalle": "cierra (como impresos)",
+   "dif": 9.999999937004844e-7
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 19.686393; el sitio tiene 19.686393"
   },
   {
    "nombre": "documento del año 2022",
@@ -38,11 +48,6 @@
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2020: 19.686393 en AEK_Notes_2020-06-30.pdf y 19.686393 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
   }
  ],
  "notas": [

@@ -1,118 +1,10 @@
 {
  "md": "Clubes/Grecia/AEK Athens/AEK_FS_2023-06-30.md",
- "generatedAt": "2026-10-13T13:07:20.602Z",
- "rubrosHuella": "d20ea28fda59ca39df49fd8b639c6f1bddd4f75a",
+ "generatedAt": "2026-10-13T17:01:51.861Z",
+ "rubrosHuella": "13222d5c2194bc6e796a08d972ae9b06f2f8f3c8",
  "rubros": [
   {
-   "label": "Έσοδα από εισιτήρια",
-   "lado": "revenue",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "matchday_competition",
-   "confidence": 0.99,
-   "desdeCache": true
-  },
-  {
-   "label": "Χορηγίες και διαφημίσεις",
-   "lado": "revenue",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "sponsorship_commercial",
-   "confidence": 1,
-   "desdeCache": true
-  },
-  {
-   "label": "Δικαιώματα αναμετάδοσης",
-   "lado": "revenue",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "broadcasting",
-   "confidence": 1,
-   "desdeCache": true
-  },
-  {
-   "label": "Εμπορικά",
-   "lado": "revenue",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "sponsorship_commercial",
-   "confidence": 1,
-   "desdeCache": true
-  },
-  {
-   "label": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
-   "lado": "revenue",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "competition_bonus",
-   "confidence": 0.98,
-   "desdeCache": true
-  },
-  {
    "label": "Λοιπά λειτουργικά έσοδα",
-   "lado": "revenue",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "other_income",
-   "confidence": 0.99,
-   "desdeCache": true
-  },
-  {
-   "label": "Κέρδος/ζημία από πώληση άυλων περιουσιακών στοιχείων - ποδοσφαιριστές",
-   "lado": "revenue",
-   "page": 14,
-   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
-   "choice": "player_sales",
-   "confidence": 0.68,
-   "desdeCache": true
-  },
-  {
-   "label": "Κόστος πωλήσεων / υλικών",
-   "lado": "expense",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "other_expenses",
-   "confidence": 0.53,
-   "desdeCache": true
-  },
-  {
-   "label": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
-   "lado": "expense",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "wages_squad",
-   "confidence": 0.67,
-   "desdeCache": true
-  },
-  {
-   "label": "Απομείωση και απόσβεση",
-   "lado": "expense",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "depreciation",
-   "confidence": 0.72,
-   "desdeCache": true
-  },
-  {
-   "label": "Απομείωση παγίων περιουσιακών στοιχείων",
-   "lado": "expense",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "depreciation",
-   "confidence": 0.45,
-   "desdeCache": true
-  },
-  {
-   "label": "Λοιπά λειτουργικά έξοδα",
-   "lado": "expense",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "other_expenses",
-   "confidence": 0.8,
-   "desdeCache": true
-  },
-  {
-   "label": "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση",
    "lado": "revenue",
    "page": 14,
    "section": "estado (lectura 5: hoja)",
@@ -132,7 +24,421 @@
      0
     ]
    ],
-   "tokens": 1095
+   "tokens": 1052
+  },
+  {
+   "label": "Έσοδα εισιτηρίων εγχώριων διοργανώσεων",
+   "lado": "revenue",
+   "page": 41,
+   "section": "nota que desglosa \"Έσοδα από εισιτήρια\"",
+   "choice": "matchday_competition",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "matchday_competition",
+     0.89
+    ],
+    [
+     "competition_bonus",
+     0.11
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "competition_bonus",
+     0.16
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1106
+  },
+  {
+   "label": "Έσοδα από πωλήσεις εισιτηρίων διαρκείας",
+   "lado": "revenue",
+   "page": 41,
+   "section": "nota que desglosa \"Έσοδα από εισιτήρια\"",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "top3": [
+    [
+     "season_tickets",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1107
+  },
+  {
+   "label": "Χορηγίες και διαφημίσεις",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "Εμπορικά",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "Δικαιώματα αναμετάδοσης",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Μισθοδοσία",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"",
+   "choice": "wages_squad",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "wages_squad",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Κέρδος/ζημία από πώληση άυλων περιουσιακών στοιχείων - ποδοσφαιριστές",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+   "choice": "player_sales",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "player_sales",
+     0.67
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1117
+  },
+  {
+   "label": "Αποσβέσεις συμβολαίων ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     0.99
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1107
+  },
+  {
+   "label": "Ανάλωση αθλητικού υλικού",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Κόστος πωλήσεων / υλικών\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Έξοδα φαρμακείου αθλητών",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Κόστος πωλήσεων / υλικών\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Αποσβέσεις ιδιοχρησιμοποιούμενων κτιρίων",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     0.99
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1101
+  },
+  {
+   "label": "Αποσβέσεις μεταφορικών μέσων",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
+   "choice": "depreciation",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "depreciation",
+     0.82
+    ],
+    [
+     "other_amortisation",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1078
+  },
+  {
+   "label": "Απομείωση και απόσβεση",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "depreciation",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "other_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 1081
+  },
+  {
+   "label": "Αποσβέσεις δικαιωμάτων χρήσης στοιχείων ενεργητικού",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
+   "choice": "other_amortisation",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_amortisation",
+     0.67
+    ],
+    [
+     "depreciation",
+     0.24
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 1140
+  },
+  {
+   "label": "Αποσβέσεις επίπλων & λοιπού εξοπλισμού",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
+   "choice": "depreciation",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "depreciation",
+     0.87
+    ],
+    [
+     "other_amortisation",
+     0.13
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Λοιπά λειτουργικά έξοδα",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.24
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1046
   }
  ]
 }

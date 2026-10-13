@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Grecia/AEK Athens/AEK_NOTES_IFRS_2025-06-30_a.pdf",
  "md": "Clubes/Grecia/AEK Athens/AEK_NOTES_IFRS_2025-06-30_a.md",
- "generado": "2026-10-13T12:59:36.905Z",
+ "generado": "2026-10-13T17:01:13.891Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "aekathens-gr",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -27,7 +27,8 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)"
+   "detalle": "cierra (como impresos)",
+   "dif": 9.999999992515995e-7
   },
   {
    "nombre": "lectura",
@@ -42,10 +43,12 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "escalón \"nota exacta en la lectura 5\": \"Κόστος πωλήσεων / υλικών\" (L472) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\" (L473) se abre en las 2 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5"
  ],
  "reintentar": null,
@@ -127,20 +130,36 @@
    "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Κόστος πωλήσεων / υλικών",
+   "etiqueta": "Ανάλωση αθλητικού υλικού",
    "lado": "gasto",
-   "M": 0.185069,
-   "pagina": 14,
-   "linea": 472,
-   "origen": "estado (lectura 5: hoja)"
+   "M": 0.129166,
+   "pagina": 42,
+   "linea": 1411,
+   "origen": "nota que desglosa \"Κόστος πωλήσεων / υλικών\""
   },
   {
-   "etiqueta": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
+   "etiqueta": "Έξοδα φαρμακείου αθλητών",
    "lado": "gasto",
-   "M": 42.29009,
-   "pagina": 14,
-   "linea": 473,
-   "origen": "estado (lectura 5: hoja)"
+   "M": 0.055903,
+   "pagina": 42,
+   "linea": 1412,
+   "origen": "nota que desglosa \"Κόστος πωλήσεων / υλικών\""
+  },
+  {
+   "etiqueta": "Μισθοδοσία",
+   "lado": "gasto",
+   "M": 18.505371,
+   "pagina": 42,
+   "linea": 1421,
+   "origen": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\""
+  },
+  {
+   "etiqueta": "Αποσβέσεις συμβολαίων ποδοσφαιριστών",
+   "lado": "gasto",
+   "M": 23.784719,
+   "pagina": 42,
+   "linea": 1422,
+   "origen": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\""
   },
   {
    "etiqueta": "Απομείωση και απόσβεση",

@@ -49,6 +49,9 @@ window.RANKINGS["gr-superleague"] = {
   2022: {
     leagueSize: null,
     clubs: [
+      { id:"aekathens-gr", revenue:22.872, reportType:"official_balance_sheet",
+        sourceId:"aekathens-gr-aek-fs-orthi-epanalipsi-2022",
+        mix:[["Comercial / Sponsors",9.469],["Estadio",3.868],["Televisión",5.006],["Premios por competencias",0.746],["Venta de Jugadores",0.761],["Otros ingresos",3.022]] },
       { id:"oficrete-gr", revenue:6.065, reportType:"official_balance_sheet",
         sourceId:"oficrete-gr-ofi-income-stmt-2022-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.261],["Otros ingresos",0.804]] },

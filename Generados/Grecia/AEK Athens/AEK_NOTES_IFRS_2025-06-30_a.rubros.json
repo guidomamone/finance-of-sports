@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Grecia/AEK Athens/AEK_NOTES_IFRS_2025-06-30_a.md",
   "pdf": "Clubes/Grecia/AEK Athens/AEK_NOTES_IFRS_2025-06-30_a.pdf",
-  "club": "aek-athens",
+  "club": "aekathens-gr",
   "year": 2025,
-  "generatedAt": "2026-10-13T12:59:36.905Z",
+  "generatedAt": "2026-10-13T17:01:13.891Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         11.584966
       ],
-      "glosa": "Patrocinios y publicidad"
+      "glosa": "Patrocinio y publicidad"
     },
     {
       "label": "Δικαιώματα αναμετάδοσης",
@@ -54,7 +54,7 @@
       "values": [
         2.310314
       ],
-      "glosa": "Solidaridad de la UEFA y premios en metálico"
+      "glosa": "Fondos de solidaridad y premios de la UEFA"
     },
     {
       "label": "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση",
@@ -64,7 +64,7 @@
       "values": [
         1.605765
       ],
-      "glosa": "Subvenciones del organismo nacional de fútbol o del gobierno"
+      "glosa": "Subvenciones de organismos nacionales de fútbol o del gobierno"
     },
     {
       "label": "Λοιπά λειτουργικά έσοδα",
@@ -84,27 +84,47 @@
       "values": [
         16.789387
       ],
-      "glosa": "Beneficio/Pérdida por enajenación de activos intangibles - futbolistas"
+      "glosa": "Beneficio/pérdida por enajenación de activos intangibles - futbolistas"
     },
     {
-      "label": "Κόστος πωλήσεων / υλικών",
+      "label": "Ανάλωση αθλητικού υλικού",
       "lado": "expense",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
+      "page": 42,
+      "section": "nota que desglosa \"Κόστος πωλήσεων / υλικών\"",
       "values": [
-        0.185069
+        0.129166
       ],
-      "glosa": "Coste de ventas / materiales"
+      "glosa": "Consumo de material deportivo"
     },
     {
-      "label": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
+      "label": "Έξοδα φαρμακείου αθλητών",
       "lado": "expense",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
+      "page": 42,
+      "section": "nota que desglosa \"Κόστος πωλήσεων / υλικών\"",
       "values": [
-        42.29009
+        0.055903
       ],
-      "glosa": "Retribuciones del personal deportivo y otros gastos"
+      "glosa": "Gastos médicos y farmacéuticos de deportistas"
+    },
+    {
+      "label": "Μισθοδοσία",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"",
+      "values": [
+        18.505371
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Αποσβέσεις συμβολαίων ποδοσφαιριστών",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"",
+      "values": [
+        23.784719
+      ],
+      "glosa": "Amortización de contratos de futbolistas"
     },
     {
       "label": "Απομείωση και απόσβεση",
@@ -114,7 +134,7 @@
       "values": [
         7.272638
       ],
-      "glosa": "Amortización y deterioro de valor"
+      "glosa": "Deterioro del valor y amortización"
     },
     {
       "label": "Απομείωση παγίων περιουσιακών στοιχείων",
@@ -124,7 +144,7 @@
       "values": [
         1.622381
       ],
-      "glosa": "Deterioro del valor del inmovilizado"
+      "glosa": "Deterioro de valor del inmovilizado"
     },
     {
       "label": "Λοιπά λειτουργικά έξοδα",

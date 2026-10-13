@@ -42,6 +42,15 @@ const aekathensgrRevenueLinesByYear = {
     { rawLabel:'Αλληλεγγύη UEFA και χρηματικά έπαθλα', normalizedCategory:'competition_bonus', amountNative:1.568506, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά λειτουργικά έσοδα', normalizedCategory:'other_income', amountNative:2.486238, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Έσοδα από εισπήρια', normalizedCategory:'matchday_competition', amountNative:3.723556, disclosureLevel:'aggregated' },
+    { rawLabel:'Χορηγίες και διαφημίσεις', normalizedCategory:'sponsorship_commercial', amountNative:9.107238, disclosureLevel:'aggregated' },
+    { rawLabel:'Δικαιώματα αναμετάδοσης', normalizedCategory:'broadcasting', amountNative:4.819277, disclosureLevel:'aggregated' },
+    { rawLabel:'Εμπορικά', normalizedCategory:'sponsorship_commercial', amountNative:0.008776, disclosureLevel:'aggregated' },
+    { rawLabel:'Αλληλεγγύη UEFA και χρηματικά έπαθλα', normalizedCategory:'competition_bonus', amountNative:0.717991, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά λειτουργικά έσοδα', normalizedCategory:'other_income', amountNative:2.909469, disclosureLevel:'aggregated' },
+    { rawLabel:'Κέρδος/ζημία από πώληση άυλων περιουσιακών στοιχείων - ποδοσφαιριστές', normalizedCategory:'player_sales', amountNative:0.732664, disclosureLevel:'aggregated' },
+  ],
 };
 const aekathensgrExpenseLinesByYear = {
   2016: [
@@ -165,6 +174,15 @@ const aekathensgrExpenseLinesByYear = {
     { rawLabel:'Διάφορα έξοδα', normalizedCategory:'other_expenses', amountNative:-0.244448, disclosureLevel:'aggregated' },
     { rawLabel:'Προβλέψεις για ειδικές υποθέσεις', normalizedCategory:'other_amortisation', amountNative:-0.151824, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Ανάλυση αθλητικού υλικού', normalizedCategory:'other_expenses', amountNative:-0.031738, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα φαρμακείου αθλητών', normalizedCategory:'other_expenses', amountNative:-0.053661, disclosureLevel:'aggregated' },
+    { rawLabel:'Μισθοδοσία', normalizedCategory:'wages_squad', amountNative:-7.497389, disclosureLevel:'aggregated' },
+    { rawLabel:'Αποσβέσεις συμβολαίων ποδοσφαιριστών', normalizedCategory:'player_amortisation', amountNative:-11.510856, disclosureLevel:'aggregated' },
+    { rawLabel:'Απομείωση και απόσβεση', normalizedCategory:'player_amortisation', amountNative:-3.620319, disclosureLevel:'aggregated' },
+    { rawLabel:'Απομείωση παγίων περιουσιακών στοιχείων', normalizedCategory:'depreciation', amountNative:-0.597209, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά λειτουργικά έξοδα', normalizedCategory:'other_expenses', amountNative:-8.08108, disclosureLevel:'aggregated' },
+  ],
 };
 const aekathensgrFiscalYearMeta = {
   2016: {
@@ -244,6 +262,21 @@ const aekathensgrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:19.686393, officialTotalExpenses:22.506092, officialPAT:-2.961135,
   },
+  2022: {
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'aekathens-gr-aek-fs-orthi-epanalipsi-2022',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.344334, tax:1.521888,
+    extraRows: [
+      {label:'Χρηματοοικονομικά Έξοδα', value:-0.344334},
+      {label:'Φόρος εισοδήματος', value:-0.044873},
+      {label:'Αναβαλλόμενος Φόρος', value:1.566761},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:22.018971, officialTotalExpenses:31.392252, officialPAT:-8.195726,
+  },
 };
 const aekathensgrPresupuestoOverlayByYear = {};
 
@@ -283,6 +316,11 @@ Object.assign(sources, {
   'aekathens-gr-aek-notes-2020-06-30': {
     id:'aekathens-gr-aek-notes-2020-06-30', clubId:'aekathens-gr',
     title:'Athlitiki Enosis Konstantinoupoleos P.A.E. — AEK_Notes_2020-06-30 (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'aekathens-gr-aek-fs-orthi-epanalipsi-2022': {
+    id:'aekathens-gr-aek-fs-orthi-epanalipsi-2022', clubId:'aekathens-gr',
+    title:'Athlitiki Enosis Konstantinoupoleos P.A.E. — AEK_FS_orthi_epanalipsi_2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

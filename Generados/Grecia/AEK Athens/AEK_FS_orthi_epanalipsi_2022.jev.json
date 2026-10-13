@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Grecia/AEK Athens/AEK_FS_orthi_epanalipsi_2022.md",
- "generatedAt": "2026-10-13T13:07:20.899Z",
- "rubrosHuella": "6274228750d17c3bbc0f4a0ff922e018be6e5e6b",
+ "generatedAt": "2026-10-13T17:01:52.191Z",
+ "rubrosHuella": "616e6eb951d3fefb17d75d4d01691cf6f37b8eba",
  "rubros": [
   {
    "label": "Χορηγίες και διαφημίσεις",
@@ -36,7 +36,7 @@
    "page": 14,
    "section": "estado (lectura 5: hoja)",
    "choice": "competition_bonus",
-   "confidence": 0.98,
+   "confidence": 1,
    "desdeCache": true
   },
   {
@@ -54,25 +54,34 @@
    "page": 14,
    "section": "estado (lectura 5: hoja)",
    "choice": "player_sales",
-   "confidence": 0.68,
+   "confidence": 0.64,
    "desdeCache": true
   },
   {
-   "label": "Κόστος πωλήσεων / υλικών",
+   "label": "Έξοδα φαρμακείου αθλητών",
    "lado": "expense",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "other_expenses",
-   "confidence": 0.53,
+   "page": 41,
+   "section": "nota que desglosa \"Κόστος πωλήσεων / υλικών\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.41,
    "desdeCache": true
   },
   {
-   "label": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
+   "label": "Μισθοδοσία",
    "lado": "expense",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
+   "page": 41,
+   "section": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"",
    "choice": "wages_squad",
-   "confidence": 0.67,
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Αποσβέσεις συμβολαίων ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
    "desdeCache": true
   },
   {
@@ -85,22 +94,36 @@
    "desdeCache": true
   },
   {
-   "label": "Απομείωση παγίων περιουσιακών στοιχείων",
-   "lado": "expense",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "depreciation",
-   "confidence": 0.45,
-   "desdeCache": true
-  },
-  {
    "label": "Λοιπά λειτουργικά έξοδα",
    "lado": "expense",
    "page": 14,
    "section": "estado (lectura 5: hoja)",
    "choice": "other_expenses",
-   "confidence": 0.8,
+   "confidence": 0.71,
    "desdeCache": true
+  },
+  {
+   "label": "Απομείωση παγίων περιουσιακών στοιχείων",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "depreciation",
+     0.16
+    ],
+    [
+     "player_impairment",
+     0.02
+    ]
+   ],
+   "tokens": 1107
   },
   {
    "label": "Έσοδα από εισπήρια",
@@ -123,7 +146,30 @@
      0
     ]
    ],
-   "tokens": 1036
+   "tokens": 1037
+  },
+  {
+   "label": "Ανάλυση αθλητικού υλικού",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Κόστος πωλήσεων / υλικών\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1070
   }
  ]
 }

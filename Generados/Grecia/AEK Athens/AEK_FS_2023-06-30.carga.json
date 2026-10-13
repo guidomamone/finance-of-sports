@@ -1,26 +1,10 @@
 {
  "pdf": "Clubes/Grecia/AEK Athens/AEK_FS_2023-06-30.pdf",
- "generado": "2026-10-13T13:07:31.788Z",
+ "generado": "2026-10-13T17:01:59.403Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (aekathens-gr)"
-  },
-  {
-   "etapa": "club",
-   "motivo": "carpetas-clubes.mjs dice aekathens-gr y onboard.mjs --quien dice aek-athens"
-  },
-  {
    "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Κόστος πωλήσεων / υλικών\" -> other_expenses 0.65; \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\" -> wages_squad 0.75; \"Απομείωση και απόσβεση\" -> other_expenses 0; \"Απομείωση παγίων περιουσιακών στοιχείων\" -> depreciation 0.55"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
+   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρ\" -> other_income 0.75"
   }
  ],
  "avisos": [
@@ -33,13 +17,23 @@
   "perimetro": "individual",
   "revenueLines": [
    {
-    "rawLabel": "Έσοδα από εισιτήρια",
+    "rawLabel": "Έσοδα εισιτηρίων εγχώριων διοργανώσεων",
     "normalizedCategory": "matchday_competition",
-    "amountNative": 16.411862,
+    "amountNative": 4.252186,
     "disclosureLevel": "aggregated",
-    "_pag": 14,
-    "_escalon": 1,
-    "_conf": 0.99,
+    "_pag": 41,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έσοδα από πωλήσεις εισιτηρίων διαρκείας",
+    "normalizedCategory": "season_tickets",
+    "amountNative": 12.159676,
+    "disclosureLevel": "aggregated",
+    "_pag": 41,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -48,7 +42,7 @@
     "amountNative": 9.026699,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -58,7 +52,7 @@
     "amountNative": 4.819277,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -68,7 +62,7 @@
     "amountNative": 0.003364,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -78,8 +72,8 @@
     "amountNative": 1.255977,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 1,
-    "_conf": 0.98,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -88,8 +82,8 @@
     "amountNative": 1.5,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 1,
-    "_conf": 0.99,
+    "_escalon": 2,
+    "_conf": 0.75,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -98,8 +92,8 @@
     "amountNative": 1.745793,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 1,
-    "_conf": 0.99,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -115,43 +109,93 @@
   ],
   "expenseLines": [
    {
-    "rawLabel": "Κόστος πωλήσεων / υλικών",
+    "rawLabel": "Ανάλωση αθλητικού υλικού",
     "normalizedCategory": "other_expenses",
-    "amountNative": -0.330915,
+    "amountNative": -0.298492,
     "disclosureLevel": "aggregated",
-    "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.65,
+    "_pag": 41,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
-    "normalizedCategory": "wages_squad",
-    "amountNative": -25.364542,
+    "rawLabel": "Έξοδα φαρμακείου αθλητών",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.032423,
     "disclosureLevel": "aggregated",
-    "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.75,
+    "_pag": 41,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Μισθοδοσία",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -10.744231,
+    "disclosureLevel": "aggregated",
+    "_pag": 41,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Αποσβέσεις συμβολαίων ποδοσφαιριστών",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -14.620311,
+    "disclosureLevel": "aggregated",
+    "_pag": 41,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Απομείωση και απόσβεση",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -4.284037,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía no_es_rubro con 0.7 (fila verificada: no se excluye sola): se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Απομείωση παγίων περιουσιακών στοιχείων",
+    "rawLabel": "Αποσβέσεις ιδιοχρησιμοποιούμενων κτιρίων",
     "normalizedCategory": "depreciation",
-    "amountNative": -1.502791,
+    "amountNative": -0.03699,
     "disclosureLevel": "aggregated",
-    "_pag": 14,
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αποσβέσεις μεταφορικών μέσων",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.026896,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αποσβέσεις επίπλων & λοιπού εξοπλισμού",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.08308,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αποσβέσεις δικαιωμάτων χρήσης στοιχείων ενεργητικού",
+    "normalizedCategory": "depreciation",
+    "amountNative": -1.355825,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
     "_escalon": 2,
-    "_conf": 0.55,
+    "_conf": 0.85,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -221,25 +265,40 @@
  "year": 2023,
  "ajustes": null,
  "seleccion": {
-  "filas": 16,
+  "filas": 22,
   "notasUsadas": [],
   "refM": null
  },
  "filas": [
   {
-   "label": "Έσοδα από εισιτήρια",
-   "page": 14,
-   "native": 16.411862,
+   "label": "Έσοδα εισιτηρίων εγχώριων διοργανώσεων",
+   "page": 41,
+   "native": 4.252186,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
-   "signoFijo": 16.411862,
+   "origen": "verificacion (nota que desglosa \"Έσοδα από εισιτήρια\")",
+   "signoFijo": 4.252186,
    "cat": "matchday_competition",
-   "conf": 0.99,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": 16.411862
+   "amountNative": 4.252186
+  },
+  {
+   "label": "Έσοδα από πωλήσεις εισιτηρίων διαρκείας",
+   "page": 41,
+   "native": 12.159676,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Έσοδα από εισιτήρια\")",
+   "signoFijo": 12.159676,
+   "cat": "season_tickets",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 12.159676
   },
   {
    "label": "Χορηγίες και διαφημίσεις",
@@ -250,7 +309,7 @@
    "signoFijo": 9.026699,
    "cat": "sponsorship_commercial",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -265,7 +324,7 @@
    "signoFijo": 4.819277,
    "cat": "broadcasting",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -280,7 +339,7 @@
    "signoFijo": 0.003364,
    "cat": "sponsorship_commercial",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -294,8 +353,8 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 1.255977,
    "cat": "competition_bonus",
-   "conf": 0.98,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -309,10 +368,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 1.5,
    "cat": "other_income",
-   "conf": 0.99,
-   "escalon": 1,
+   "conf": 0.75,
+   "escalon": 2,
    "fuenteCat": "categorias.json",
    "enLista": true,
+   "enCola": true,
    "destino": "revenue",
    "amountNative": 1.5
   },
@@ -324,8 +384,8 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 1.745793,
    "cat": "other_income",
-   "conf": 0.99,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -347,36 +407,66 @@
    "amountNative": 4.222185
   },
   {
-   "label": "Κόστος πωλήσεων / υλικών",
-   "page": 14,
-   "native": 0.330915,
+   "label": "Ανάλωση αθλητικού υλικού",
+   "page": 41,
+   "native": 0.298492,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
-   "signoFijo": 0.330915,
+   "origen": "verificacion (nota que desglosa \"Κόστος πωλήσεων / υλικών\")",
+   "signoFijo": 0.298492,
    "cat": "other_expenses",
-   "conf": 0.65,
-   "escalon": 2,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
-   "enCola": true,
    "destino": "expense",
-   "amountNative": -0.330915
+   "amountNative": -0.298492
   },
   {
-   "label": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
-   "page": 14,
-   "native": 25.364542,
+   "label": "Έξοδα φαρμακείου αθλητών",
+   "page": 41,
+   "native": 0.032423,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
-   "signoFijo": 25.364542,
+   "origen": "verificacion (nota que desglosa \"Κόστος πωλήσεων / υλικών\")",
+   "signoFijo": 0.032423,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-13 (subagente Sonnet; Guido no revisa la cola de categorías): Es un costo de materiales/insumos del plantel, no un sueldo. El rótulo madre 'Κόστος πωλήσεων / υλικών' tiene precedente griego exacto en Panathinaikos (other_expenses) y la fila hermana (material deportivo) ya quedó en other_expenses; mantener las dos iguales. Cita: AEK_Notes_2018-06-30.md L1457 (nota 6.16 'Κόστος πωλήσεων / υλικών'): 'Έξοδα φαρμακείου αθλητών | 47.104,55' = gastos de farmacia de los deportistas; la misma nota trae 'Ανάλυση αθλητικού υλικού' (material deportivo), ya en other_expenses con confianza 1.",
+   "destino": "expense",
+   "amountNative": -0.032423
+  },
+  {
+   "label": "Μισθοδοσία",
+   "page": 41,
+   "native": 10.744231,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\")",
+   "signoFijo": 10.744231,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-13 (subagente Sonnet; Guido no revisa la cola de categorías): Nómina de la sección de fútbol: sueldos del plantel -> wages_squad (tabla de la sección 1 de la skill). Las amortizaciones de contratos del mismo cuadro ya están separadas, así que no hay mezcla. Cita: AEK_Notes_2018-06-30.md L1473 (nota 6.17 'Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες', L1468-1473): 'Μισθοδοσία | 6.484.560,07' = nómina; la fila de abajo 'Αποσβέσεις συμβολαίων ποδοσφαιριστών' (amortización de contratos) ya va a player_amortisation.",
+   "destino": "expense",
+   "amountNative": -10.744231
+  },
+  {
+   "label": "Αποσβέσεις συμβολαίων ποδοσφαιριστών",
+   "page": 41,
+   "native": 14.620311,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\")",
+   "signoFijo": 14.620311,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
-   "enCola": true,
    "destino": "expense",
-   "amountNative": -25.364542
+   "amountNative": -14.620311
   },
   {
    "label": "Απομείωση και απόσβεση",
@@ -385,31 +475,73 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 4.284037,
-   "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía no_es_rubro con 0.7 (fila verificada: no se excluye sola): se propone la genérica de su lado",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "expense",
    "amountNative": -4.284037
   },
   {
-   "label": "Απομείωση παγίων περιουσιακών στοιχείων",
-   "page": 14,
-   "native": 1.502791,
+   "label": "Αποσβέσεις ιδιοχρησιμοποιούμενων κτιρίων",
+   "page": 42,
+   "native": 0.03699,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
-   "signoFijo": 1.502791,
+   "origen": "verificacion (nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\")",
+   "signoFijo": 0.03699,
    "cat": "depreciation",
-   "conf": 0.55,
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.03699
+  },
+  {
+   "label": "Αποσβέσεις μεταφορικών μέσων",
+   "page": 42,
+   "native": 0.026896,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\")",
+   "signoFijo": 0.026896,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.026896
+  },
+  {
+   "label": "Αποσβέσεις επίπλων & λοιπού εξοπλισμού",
+   "page": 42,
+   "native": 0.08308,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\")",
+   "signoFijo": 0.08308,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.08308
+  },
+  {
+   "label": "Αποσβέσεις δικαιωμάτων χρήσης στοιχείων ενεργητικού",
+   "page": 42,
+   "native": 1.355825,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\")",
+   "signoFijo": 1.355825,
+   "cat": "depreciation",
+   "conf": 0.85,
    "escalon": 2,
    "fuenteCat": "categorias.json",
    "enLista": true,
-   "enCola": true,
    "destino": "expense",
-   "amountNative": -1.502791
+   "amountNative": -1.355825
   },
   {
    "label": "Λοιπά λειτουργικά έξοδα",
@@ -462,8 +594,12 @@
  ],
  "signos": {
   "porTabla": {
+   "verificacion (nota que desglosa \"Έσοδα από εισιτήρια\")": "gastos con signo",
    "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
    "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))": "gastos con signo",
+   "verificacion (nota que desglosa \"Κόστος πωλήσεων / υλικών\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
@@ -545,9 +681,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
-  "lineasIngreso": 8,
-  "lineasGasto": 5,
+  "motivos": 1,
+  "lineasIngreso": 9,
+  "lineasGasto": 10,
   "metaFilas": 3,
   "excluidas": 0
  }

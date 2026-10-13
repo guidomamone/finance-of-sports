@@ -1,17 +1,8 @@
 {
  "md": "Clubes/Grecia/AEK Athens/AEK_NOTES_IFRS_2025-06-30_a.md",
- "generatedAt": "2026-10-13T13:07:20.900Z",
- "rubrosHuella": "50c2d7ed2e3806abe15ab8a27a61b3cd68bcc06c",
+ "generatedAt": "2026-10-13T17:01:52.523Z",
+ "rubrosHuella": "08095c1d173285d0d13f4b647f6a754267385ed4",
  "rubros": [
-  {
-   "label": "Έσοδα από εισιτήρια",
-   "lado": "revenue",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "matchday_competition",
-   "confidence": 0.99,
-   "desdeCache": true
-  },
   {
    "label": "Χορηγίες και διαφημίσεις",
    "lado": "revenue",
@@ -45,7 +36,7 @@
    "page": 14,
    "section": "estado (lectura 5: hoja)",
    "choice": "competition_bonus",
-   "confidence": 0.98,
+   "confidence": 1,
    "desdeCache": true
   },
   {
@@ -54,7 +45,7 @@
    "page": 14,
    "section": "estado (lectura 5: hoja)",
    "choice": "other_income",
-   "confidence": 0.99,
+   "confidence": 0.82,
    "desdeCache": true
   },
   {
@@ -72,25 +63,43 @@
    "page": 14,
    "section": "estado (lectura 5: hoja)",
    "choice": "player_sales",
-   "confidence": 0.68,
+   "confidence": 0.64,
    "desdeCache": true
   },
   {
-   "label": "Κόστος πωλήσεων / υλικών",
+   "label": "Ανάλωση αθλητικού υλικού",
    "lado": "expense",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
+   "page": 42,
+   "section": "nota que desglosa \"Κόστος πωλήσεων / υλικών\"",
    "choice": "other_expenses",
-   "confidence": 0.53,
+   "confidence": 1,
    "desdeCache": true
   },
   {
-   "label": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
+   "label": "Έξοδα φαρμακείου αθλητών",
    "lado": "expense",
-   "page": 14,
-   "section": "estado (lectura 5: hoja)",
+   "page": 42,
+   "section": "nota que desglosa \"Κόστος πωλήσεων / υλικών\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.41,
+   "desdeCache": true
+  },
+  {
+   "label": "Μισθοδοσία",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"",
    "choice": "wages_squad",
-   "confidence": 0.67,
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Αποσβέσεις συμβολαίων ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
    "desdeCache": true
   },
   {
@@ -107,8 +116,8 @@
    "lado": "expense",
    "page": 14,
    "section": "estado (lectura 5: hoja)",
-   "choice": "depreciation",
-   "confidence": 0.45,
+   "choice": "other_expenses",
+   "confidence": 0.76,
    "desdeCache": true
   },
   {
@@ -117,8 +126,31 @@
    "page": 14,
    "section": "estado (lectura 5: hoja)",
    "choice": "other_expenses",
-   "confidence": 0.8,
+   "confidence": 0.71,
    "desdeCache": true
+  },
+  {
+   "label": "Έσοδα από εισιτήρια",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1038
   }
  ]
 }

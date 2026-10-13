@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Grecia/AEK Athens/AEK_FS_2024-06-30.pdf",
  "md": "Clubes/Grecia/AEK Athens/AEK_FS_2024-06-30.md",
- "generado": "2026-10-13T12:59:36.702Z",
+ "generado": "2026-10-13T16:59:59.057Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "aekathens-gr",
  "year": 2024,
  "escala": {
   "valor": "unidades",
@@ -27,7 +27,8 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)"
+   "detalle": "cierra (como impresos)",
+   "dif": 2.1094237467877974e-15
   },
   {
    "nombre": "lectura",
@@ -47,12 +48,14 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "escalón \"nota exacta en la lectura 5\": \"Έσοδα από εισιτήρια\" (L467) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Λοιπά λειτουργικά έξοδα\" (L479) se abre en las 12 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de extraer ya contestada para el club (perimetro, \"Μισθοδοσία\"): aceptar, en AEK_oikonomikes_katastaseis.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"Μισθοδοσία\"): aceptar, en AEK_oikonomikes_katastaseis.pdf",
   "duda de extraer que no afecta la carga: Los encabezados L1452, L1466, L1479 dicen 30/8 pero los totales coinciden con el estado; parece error tipográfico."
  ],
  "reintentar": null,
@@ -70,12 +73,28 @@
  },
  "lineas": [
   {
-   "etiqueta": "Έσοδα από εισιτήρια",
+   "etiqueta": "Έσοδα εισιτηρίων εγχώριων διοργανώσεων",
    "lado": "ingreso",
-   "M": 21.603121,
-   "pagina": 14,
-   "linea": 467,
-   "origen": "estado (lectura 5: hoja)"
+   "M": 3.44656,
+   "pagina": 41,
+   "linea": 1427,
+   "origen": "nota que desglosa \"Έσοδα από εισιτήρια\""
+  },
+  {
+   "etiqueta": "Έσοδα από διεθνείς διοργανώσεις",
+   "lado": "ingreso",
+   "M": 1.872488,
+   "pagina": 41,
+   "linea": 1428,
+   "origen": "nota que desglosa \"Έσοδα από εισιτήρια\""
+  },
+  {
+   "etiqueta": "Έσοδα από πωλήσεις εισιτηρίων διαρκείας",
+   "lado": "ingreso",
+   "M": 16.284073,
+   "pagina": 41,
+   "linea": 1429,
+   "origen": "nota que desglosa \"Έσοδα από εισιτήρια\""
   },
   {
    "etiqueta": "Χορηγίες και διαφημίσεις",
@@ -166,12 +185,100 @@
    "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Λοιπά λειτουργικά έξοδα",
+   "etiqueta": "Έξοδα αγώνων",
    "lado": "gasto",
-   "M": 12.761798,
-   "pagina": 14,
-   "linea": 479,
-   "origen": "estado (lectura 5: hoja)"
+   "M": 0.906639,
+   "pagina": 42,
+   "linea": 1481,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Αμοιβές τρίτων",
+   "lado": "gasto",
+   "M": 5.608545,
+   "pagina": 42,
+   "linea": 1482,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Τηλεπικοινωνίες",
+   "lado": "gasto",
+   "M": 0.026866,
+   "pagina": 42,
+   "linea": 1483,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Μισθώματα",
+   "lado": "gasto",
+   "M": 0.199774,
+   "pagina": 42,
+   "linea": 1484,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Ασφάλιστρα",
+   "lado": "gasto",
+   "M": 0.133801,
+   "pagina": 42,
+   "linea": 1485,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Επισκευές & συντηρήσεις",
+   "lado": "gasto",
+   "M": 0.016605,
+   "pagina": 42,
+   "linea": 1486,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Διάφοροι φοροι-τελή",
+   "lado": "gasto",
+   "M": 1.328007,
+   "pagina": 42,
+   "linea": 1487,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Έξοδα μετακινήσεων",
+   "lado": "gasto",
+   "M": 1.407363,
+   "pagina": 42,
+   "linea": 1488,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Διαφημίσεις και εκδηλώσεις",
+   "lado": "gasto",
+   "M": 0.572423,
+   "pagina": 42,
+   "linea": 1489,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Συνδρομές",
+   "lado": "gasto",
+   "M": 0.024848,
+   "pagina": 42,
+   "linea": 1490,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Δωρεές - επιχορηγήσεις",
+   "lado": "gasto",
+   "M": 0.009123,
+   "pagina": 42,
+   "linea": 1491,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Διάφορα έξοδα",
+   "lado": "gasto",
+   "M": 2.527804,
+   "pagina": 42,
+   "linea": 1492,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
   }
  ],
  "signosCarga": {

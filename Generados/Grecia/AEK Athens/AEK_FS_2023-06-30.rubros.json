@@ -1,20 +1,30 @@
 {
   "md": "Clubes/Grecia/AEK Athens/AEK_FS_2023-06-30.md",
   "pdf": "Clubes/Grecia/AEK Athens/AEK_FS_2023-06-30.pdf",
-  "club": "aek-athens",
+  "club": "aekathens-gr",
   "year": 2023,
-  "generatedAt": "2026-10-13T12:59:36.619Z",
+  "generatedAt": "2026-10-13T17:01:13.874Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
-      "label": "Έσοδα από εισιτήρια",
+      "label": "Έσοδα εισιτηρίων εγχώριων διοργανώσεων",
       "lado": "revenue",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
+      "page": 41,
+      "section": "nota que desglosa \"Έσοδα από εισιτήρια\"",
       "values": [
-        16.411862
+        4.252186
       ],
-      "glosa": "Ingresos por taquilla"
+      "glosa": "Ingresos por taquilla en competiciones nacionales"
+    },
+    {
+      "label": "Έσοδα από πωλήσεις εισιτηρίων διαρκείας",
+      "lado": "revenue",
+      "page": 41,
+      "section": "nota que desglosa \"Έσοδα από εισιτήρια\"",
+      "values": [
+        12.159676
+      ],
+      "glosa": "Ingresos por venta de abonos"
     },
     {
       "label": "Χορηγίες και διαφημίσεις",
@@ -64,7 +74,7 @@
       "values": [
         1.5
       ],
-      "glosa": "Subvenciones de organismos nacionales de fútbol o del gobierno"
+      "glosa": "Subvenciones de la federación nacional o del gobierno"
     },
     {
       "label": "Λοιπά λειτουργικά έσοδα",
@@ -87,24 +97,44 @@
       "glosa": "Beneficio/pérdida por enajenación de activos intangibles - futbolistas"
     },
     {
-      "label": "Κόστος πωλήσεων / υλικών",
+      "label": "Ανάλωση αθλητικού υλικού",
       "lado": "expense",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
+      "page": 41,
+      "section": "nota que desglosa \"Κόστος πωλήσεων / υλικών\"",
       "values": [
-        0.330915
+        0.298492
       ],
-      "glosa": "Coste de ventas / materiales"
+      "glosa": "Consumo de material deportivo"
     },
     {
-      "label": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
+      "label": "Έξοδα φαρμακείου αθλητών",
       "lado": "expense",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
+      "page": 41,
+      "section": "nota que desglosa \"Κόστος πωλήσεων / υλικών\"",
       "values": [
-        25.364542
+        0.032423
       ],
-      "glosa": "Remuneraciones del personal deportivo y otros gastos"
+      "glosa": "Gastos médicos y farmacéuticos de deportistas"
+    },
+    {
+      "label": "Μισθοδοσία",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"",
+      "values": [
+        10.744231
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Αποσβέσεις συμβολαίων ποδοσφαιριστών",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"",
+      "values": [
+        14.620311
+      ],
+      "glosa": "Amortización de contratos de futbolistas"
     },
     {
       "label": "Απομείωση και απόσβεση",
@@ -114,17 +144,47 @@
       "values": [
         4.284037
       ],
-      "glosa": "Amortización y depreciación"
+      "glosa": "Amortización y deterioro del valor"
     },
     {
-      "label": "Απομείωση παγίων περιουσιακών στοιχείων",
+      "label": "Αποσβέσεις ιδιοχρησιμοποιούμενων κτιρίων",
       "lado": "expense",
-      "page": 14,
-      "section": "estado (lectura 5: hoja)",
+      "page": 42,
+      "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
       "values": [
-        1.502791
+        0.03699
       ],
-      "glosa": "Deterioro de valor del inmovilizado"
+      "glosa": "Amortización de edificios de uso propio"
+    },
+    {
+      "label": "Αποσβέσεις μεταφορικών μέσων",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
+      "values": [
+        0.026896
+      ],
+      "glosa": "Amortización de elementos de transporte"
+    },
+    {
+      "label": "Αποσβέσεις επίπλων & λοιπού εξοπλισμού",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
+      "values": [
+        0.08308
+      ],
+      "glosa": "Amortización de mobiliario y otros equipos"
+    },
+    {
+      "label": "Αποσβέσεις δικαιωμάτων χρήσης στοιχείων ενεργητικού",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
+      "values": [
+        1.355825
+      ],
+      "glosa": "Amortización de activos por derechos de uso"
     },
     {
       "label": "Λοιπά λειτουργικά έξοδα",

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Grecia/AEK Athens/AEK_oikonomikes_katastaseis.pdf",
  "md": "Clubes/Grecia/AEK Athens/AEK_oikonomikes_katastaseis.md",
- "generado": "2026-10-13T12:59:37.475Z",
+ "generado": "2026-10-13T16:56:25.968Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "aekathens-gr",
  "year": 2016,
  "escala": {
   "valor": "unidades",
@@ -17,17 +17,22 @@
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "10.0713 = 10.0713"
+   "detalle": "10.0713 = 10.0713",
+   "suma": 10.0712996,
+   "impreso": 10.0712996
   },
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "14.228647 = 14.228647"
+   "detalle": "14.228647 = 14.228647",
+   "suma": 14.228646719999997,
+   "impreso": 14.22864672
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)"
+   "detalle": "cierra (como impresos)",
+   "dif": 3.552713678800501e-15
   },
   {
    "nombre": "documento del año 2017",
@@ -37,12 +42,17 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2015: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
   "el desglose de \"Λοιπά λειτουργικά έξοδα\" (14 filas) no suma la fila: quedó la fila",
-  "duda de extraer ya contestada para el club (perimetro, \"Μισθοδοσία\"): aceptar, en AEK_oikonomikes_katastaseis.pdf"
+  "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"Μισθοδοσία\"): aceptar, en AEK_oikonomikes_katastaseis.pdf"
  ],
  "reintentar": [
   {

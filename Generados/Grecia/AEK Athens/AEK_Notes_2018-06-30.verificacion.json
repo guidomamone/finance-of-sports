@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Grecia/AEK Athens/AEK_Notes_2018-06-30.pdf",
  "md": "Clubes/Grecia/AEK Athens/AEK_Notes_2018-06-30.md",
- "generado": "2026-10-13T12:59:37.018Z",
+ "generado": "2026-10-13T16:56:25.952Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "aekathens-gr",
  "year": 2018,
  "escala": {
   "valor": "unidades",
@@ -17,17 +17,27 @@
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "24.144686 = 24.144686"
+   "detalle": "24.144686 = 24.144686",
+   "suma": 24.14468565,
+   "impreso": 24.144685649999996
   },
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "22.801188 = 22.801188"
+   "detalle": "22.801188 = 22.801188",
+   "suma": 22.80118767,
+   "impreso": 22.80118767
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)"
+   "detalle": "cierra (como impresos)",
+   "dif": 1.1102230246251565e-15
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2017 de este documento suma ingresos 13.584488; el sitio tiene 13.584489"
   },
   {
    "nombre": "documento del año 2019",
@@ -38,16 +48,11 @@
    "nombre": "documento del año 2017",
    "ok": true,
    "detalle": "ingresos de 2017: 13.584488 en AEK_FS_2016-2017.pdf y 13.584488 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
   }
  ],
  "notas": [
   "el desglose de \"Λοιπά λειτουργικά έξοδα\" (16 filas) no suma la fila: quedó la fila",
-  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en AEK_oikonomikes_katastaseis.pdf"
+  "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"-\"): aceptar, en AEK_oikonomikes_katastaseis.pdf"
  ],
  "reintentar": [
   {
