@@ -68,10 +68,9 @@ ni en el comentario de ningún archivo de código.
     del (c) hecha: lote 66 (468 documentos). Nombres legales de las altas: 24 contestados con cita (ajustes `name`). Gestiones de los clubes
     nuevos de Grecia, Rep. Checa, Portugal, Noruega, Países Bajos y Turquía cargadas (to-do 195).
     FALTA, en este orden:
-    a) GRECIA: lote 67 corrido (2026-10-13). Cargados: Asteras 2019-2020, Levadiakos 2019-2025, OFI 2018-2025, AEK 2016-2020. Falta:
-       AEK 2021-2025 (to-do 220; Asteras completo 2019-2025), Panserraikos 2023 y 2025 (categoría y perfil),
-       Volos 2019-2025 (2019-2020 categoría; 2021-2025 la pregunta del alta `reportType` y "Salarios del plantel en 0", que pide
-       `--reintentar` con una lista solo de esos años). La cola la contesta un subagente (to-do 220).
+    a) GRECIA: lote 67 corrido (2026-10-13). Cargados: Asteras 2019-2025, Levadiakos 2019-2025, OFI 2018-2025, AEK 2016-2020,
+       Panserraikos 2023 y 2025 (2024 no tiene estado de resultados), Volos 2019-2020. Falta: Volos 2021-2025 (reintento de "Salarios del
+       plantel en 0": `Admin/lotes/lote-70.txt` con `--reintentar --cargar`) y AEK 2021-2025 (to-do 220). Colores de los 8 griegos revisados.
     b) Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
        (`ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -1` para el número), `antes-de-localizar.mjs`, ensayo, Guido corre `lote.mjs --ejecutar
        --cargar`, y la cola se revisa con un Sonnet que recomienda respuestas con cita. Fichas listas para alta (`alta-club.mjs --todos`,
