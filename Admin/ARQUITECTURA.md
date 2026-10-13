@@ -672,6 +672,57 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   - El archivo NO lleva comentarios (se publica): por qué se eligió una fecha o una fuente va al
     `Admin/carga-clubes/<club>.md` del club, en "## Gestiones"; el criterio del país y las notas de un club que
     todavía no tiene balances cargados, a `Admin/gestiones-por-pais/<país>.md`.
+
+## Monedas y tipo de cambio (`data/currency-map.js`)
+
+Leer antes de tocar `toDisplayValue`, `fmtAmount` o el toggle de moneda. El criterio de qué tipo de cambio elegir para un ejercicio
+está en la skill `club-data-mapping`, `referencia/fx.md`; acá está el modelo.
+
+1. **USD es el pivote.** El toggle de CUALQUIER club es "moneda nativa del club" ↔ USD, nunca entre dos monedas no-USD (nunca ARS↔BRL
+   en vivo). Así funcionan Comparar (siempre USD) y las vistas que comparan clubes de países distintos, sin una matriz N×N.
+   `toDisplayValue(value, meta, targetCurrency)` asume este invariante: si hace falta un tercer destino que no sea `meta.currency` ni
+   'USD', se repiensa la función, no se parchea un cuarto branch. Única excepción: una moneda legado del euro (`euroFijo`, ej. ITL) se
+   pasa a EUR por su paridad fija legal, que es exacta.
+2. **`fx` (en cada `fiscalYearMeta[year]`) es el tipo de cambio que declara ESE documento** para ESE ejercicio (unidades de moneda
+   nativa por 1 USD): nunca reusado entre ejercicios o entre clubes. Dos balances del mismo año de dos clubes pueden declarar `fx`
+   distintos, y un balance y un presupuesto del mismo club y año también (fecha de cierre vs. fecha de presentación).
+3. **Límite conocido, no resuelto a propósito:** el modelo soporta UNA moneda nativa por ejercicio entero, no por línea. Si aparece un
+   documento real con algunas líneas en USD y el resto en moneda local, la extensión más simple es un campo opcional en la línea (ej.
+   `nativeCurrencyOverride: {currency:'USD', fx:null}`) que `toDisplayValue` consulte antes del `meta` del ejercicio. No se construye
+   sin un caso real.
+4. **`scale` es de la moneda, no del club.** Una moneda de valores nominales grandes (ARS, CLP, COP, ITL) se muestra en "miles de
+   millones" (`scale:1000`); las demás en millones (`scale:1`). Una moneda nueva es una entrada en `CURRENCY_META` (scale y
+   `unitSuffix`); un código sin entrada cae a `DEFAULT_CURRENCY_META` ("M <código>") y nunca rompe, pero conviene agregar la entrada.
+5. **Un club cuyo `reportingCurrency` ya es 'USD'** (ej. Ecuador, dolarizado) no tiene nada que togglear: `populateCurrencyToggle()`
+   esconde el toggle.
+
+**Procedencia del tipo de cambio (`FX_SOURCE`).** Cada `fx` declara de dónde salió en un campo, y `node tools/audit.js` lo lee (antes
+era prosa, con decenas de redacciones distintas, y no se podía contar ni chequear). Las procedencias, en el orden de preferencia de
+`fx.md`:
+- `document_close`: el balance declara su tipo de cambio de cierre (anexo de moneda extranjera). Gana siempre que exista.
+- `document_assumption`: la premisa de un presupuesto, para un ejercicio que todavía no cerró. Es aparte porque un supuesto puede
+  salir equivocado: comparar un presupuesto en USD con un balance en USD mezcla un pronóstico con un cierre.
+- `document_average`: el promedio del período que el documento declara para su estado de resultados (un flujo), distinto del de
+  cierre que usa para el balance (un stock); en Argentina la diferencia es enorme. Si un documento declara los dos, el `fx` del
+  ejercicio es el que corresponde a lo que el sitio muestra (hoy, el promedio, porque las líneas son el estado de resultados), y caja
+  y deuda quedarían convertidas con el promedio: el día que aparezca ese caso, hay que separar el fx por tipo de dato.
+- `market_close`: el documento no declara ninguno y se usó la cotización oficial de la fecha de cierre (BCRA, BNA, PTAX, BCE, TRM).
+- `market_approx`: no se consiguió la cotización exacta del día; se interpoló o se usó una de fecha cercana. Aparte de
+  `market_close` para poder separar "exacto" de "estimación razonable".
+- `placeholder`: no sale de ninguna fuente; existe para que el toggle funcione. `unknown`: cargado sin rastro de su procedencia, no
+  aceptable a largo plazo (audit.js lo lista como pendiente).
+
+**Cotizaciones de mercado (`FX_CLOSE`), una sola vez por moneda y fecha de cierre.** La regla, que no contradice "nunca reuses el fx de
+un club para otro": un `fx:` literal en el archivo del club = lo declara ESE documento (nunca se mueve a la tabla); `fxRef:
+'MONEDA@AAAA-MM-DD'` = el documento no declaraba nada y se usó la cotización pública de esa fecha, que es un dato del mercado y se
+escribe una vez en `FX_CLOSE`. Solo entran cotizaciones exactas y verificadas: una `market_approx` queda literal en el archivo del club.
+`fxMetaFor(meta)` es el ÚNICO que resuelve `fxRef` (todo lo que necesita un fx pasa por ahí). Por qué se eligió cada cotización:
+`Admin/fx-cotizaciones.md`.
+
+**Rango plausible (`FX_PLAUSIBLE_RANGE`, `checkFxSanity()`).** Un [min, max] de moneda nativa por 1 USD por moneda, solo para atrapar
+un error de carga (un `fx` invertido, como los 10 archivos de España que guardaron USD por EUR, o un orden de magnitud mal tipeado),
+nunca para validar precisión: es ancho a propósito. `checkFxSanity()` avisa por consola (warn, no error). Una moneda sin rango no se
+chequea: agregar el rango con el primer club de esa moneda.
 ## Dónde está cada cosa
 
 **La raíz del repo es el SITIO; los documentos internos viven en `Admin/`** (Versión 196). Antes

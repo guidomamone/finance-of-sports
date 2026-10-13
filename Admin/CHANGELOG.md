@@ -54,6 +54,9 @@ que dice `ESTADO.md` era verdad ese día.
   y las notas de clubes todavía sin balances (CZ, NO, PT, TR y otros), etiquetadas, a `Admin/gestiones-por-pais/<país>.md`. El formato de las
   gestiones (la cabecera de `ar.js`) pasó a `Admin/ARQUITECTURA.md`; `data/gestiones/` queda sin comentarios, mismo código. La pregunta de
   la cola por un presidente faltante y el to-do 195 apuntan ahí. `tools/evidencia-club.mjs` suma `agregarSeccion()`. ASSET_V 819.
+- `data/currency-map.js` (44 → 24 KB, 328 → 46 comentarios, mismo código): el modelo de monedas, las procedencias del tipo de cambio,
+  la regla de FX_CLOSE y el rango plausible, reescritos en `Admin/ARQUITECTURA.md` ("Monedas y tipo de cambio"); las notas de cada
+  cotización, tal cual, en `Admin/fx-cotizaciones.md`. ASSET_V 820.
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 
