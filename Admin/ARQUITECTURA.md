@@ -673,6 +673,45 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
     `Admin/carga-clubes/<club>.md` del club, en "## Gestiones"; el criterio del país y las notas de un club que
     todavía no tiene balances cargados, a `Admin/gestiones-por-pais/<país>.md`.
 
+## Ligas por ejercicio y catálogo (`data/leagues.js`, `data/club-leagues.js`)
+
+**`data/leagues.js` es el CATÁLOGO** de la taxonomía del selector: deportes, regiones, países y ligas. Nada más.
+- `SPORTS`: `active:false` es el roadmap, no una promesa de fecha (se muestran apagados). `REGIONS`: las 6 existen siempre; las que no
+  tienen clubes se muestran apagadas por el conteo real, no por un flag. `COUNTRIES` y `LEAGUES`: los de clubes cargados y los de
+  clubes que el pipeline va a dar de alta (sin su liga en el catálogo, `alta-club.mjs` frena); nunca países "próximamente".
+- Id de liga `<iso2>-<slug>` que nombra el ESCALÓN, no al organizador (`ar-primera`, no `ar-lpf`: esa categoría cambió de nombre y
+  organizador tres veces entre 2009 y hoy). `tier` = el escalón (1 = primera), lo que hace comparable un ascenso entre países; una liga
+  estadual (Paulista) no es un escalón de la pirámide: `tier:null` y `scope:'estadual'`, al final de la lista del país.
+- Nombres SIN SPONSOR ("Super League", no "Stoiximan Super League"): el nombre comercial cambia con el contrato y leería mal en
+  ejercicios viejos. Los nombres de liga y de club no se traducen; los de deporte, región y país sí (`data/lang/`).
+- `sport` es un campo del club (`clubs[id].sport`): un club no cambia de deporte.
+
+**LA REGLA: NO EXISTE NINGUNA ARISTA CLUB → LIGA SIN AÑO.** La membresía vive SOLO en `CLUB_LEAGUE_BY_YEAR` ((club, ejercicio) →
+liga): no hay ni va a haber un `clubs[id].league` con "la liga de hoy" (una segunda verdad sobre el mismo hecho, e inútil para todo
+agregado de liga, que necesita saber quiénes la integraban ESE año). Consecuencias:
+- Todo agregado de liga (promedio, ranking, "cuánto generaba LaLiga en 2023") pasa por `clubsOfLeagueYear(liga, año)`. Una función que
+  pida "los clubes de la liga L" sin año está mal planteada. `clubsOfLeague()` (sin año) es solo para NAVEGAR: su conteo es "clubes con
+  al menos un ejercicio en esta liga", nunca "los clubes de la liga".
+- En el selector un club aparece bajo CADA liga en la que tiene un ejercicio, con los años (un club que ascendió, bajo las dos).
+
+**`data/club-leagues.js`** tiene las reglas y los helpers; las filas, en `data/club-leagues/<iso2>.js`, uno por país, que se
+autoregistran con `Object.assign` y se cargan con `loadClubLeagues()` al abrir el selector (no en la primera visita). Se cargan todos
+los países juntos porque el selector necesita la tabla entera. Los helpers son síncronos: la única frontera async es `abrirModal()` de
+`js/selector.js`; un consumidor nuevo tiene que esperar `loadClubLeagues()` (con la tabla vacía los helpers devuelven listas vacías, que
+se leen como "nunca jugó en ninguna liga").
+- **`null` = todavía nadie lo verificó**, y es el valor con el que nace cada fila. No se rellena de memoria ni por deducción: se mira la
+  temporada (Wikipedia o la fuente que corresponda). `leagueAt()` devuelve null y no "la liga de hoy". `audit.js` cuenta los null.
+- **`'liga-no-catalogada'`**: SÍ se verificó, pero esa liga no está en el catálogo (ej. un único club-ejercicio de 2da división de un
+  país). Cuenta como verificada pero no agrupa bajo ninguna liga; si la liga se agrega al catálogo, el string se reemplaza por su id.
+- **La categoría al cierre del ejercicio**: un ejercicio que cruza dos torneos (Argentina: cierre 30/6, temporada feb-dic) lleva la
+  división en la que estaba el club el día del cierre. Es la misma regla que atribuye la gestión al presidente del cierre.
+- **El tamaño de la liga (`LEAGUE_SIZE_BY_YEAR`, `leagueSizeAt(liga, año)`)**: cuántos equipos jugaron esa liga ese ejercicio, siempre
+  con el año (la Primera argentina pasó de 20 a 30 equipos dentro del período cargado: un número por liga sería falso). Viaja en los
+  mismos archivos de cada país; se verifica contra la temporada y se deja escrito contra qué (en `Admin/ligas-por-pais/<iso2>.md`);
+  sin verificar, no hay entrada y el sitio no afirma nada. Un "N de M" solo con M no null y N de `clubsOfLeagueYear()` (el mismo año).
+- Las filas son ejercicios REALES; cargar un ejercicio nuevo es agregar su fila (`audit.js` avisa si falta). Por qué se verificó cada
+  fila: `Admin/ligas-por-pais/<iso2>.md` y el `.md` de cada club en `Admin/carga-clubes/`.
+
 ## Monedas y tipo de cambio (`data/currency-map.js`)
 
 Leer antes de tocar `toDisplayValue`, `fmtAmount` o el toggle de moneda. El criterio de qué tipo de cambio elegir para un ejercicio

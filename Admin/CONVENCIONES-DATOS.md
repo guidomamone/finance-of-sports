@@ -12,6 +12,16 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   nombres de rubro repetidos dentro del mismo año. Lo escriben los scripts del pipeline cuando cargan, y una carga a mano también.
   Cuando termine la mudanza, `node tools/audit.js` va a avisar si aparece un comentario en `data/`.
 
+- **IDENTIDAD DEL CLUB (`data/clubs.js`).** `clubs{}` es central porque hace falta ANTES de elegir ningún club; `sources{}`,
+  `gestionesByClub{}` y `memberCountByClub{}` se autoregistran desde el `data/<club>-data.js` de cada club. `name` es el nombre legal
+  completo; `displayName`, el corto que muestra el selector. **`brandColor`** (el círculo de iniciales; nunca escudos como imagen, por
+  derechos y hosting) es el color VERIFICADO contra la fuente del club (sitio oficial, infobox de Wikipedia del país, la クラブカラー de
+  la J.League), nunca deducido de otro club; si la fuente da solo el nombre del color, el hex sale de la paleta publicada del escudo.
+  **Puede faltar a propósito**: `brandColor:null` = se miró y no lleva color (ej. los clubes cuyo color es el blanco, que no se ve en el
+  modal), y nadie lo completa a ojo después; el campo AUSENTE = nadie lo chequeó (`audit.js`, `club-sin-color-ni-null`). Cómo se
+  resuelve el color de un club nuevo: skill `club-or-year-onboarding`, `club-nuevo.md`. De dónde salió el color de cada club: su
+  `Admin/carga-clubes/<club>.md`. El color de las iniciales no se guarda: lo decide `textoSobre()` por contraste.
+
 - DÓNDE PUEDE VIVIR UN DATO INVENTADO, Y DÓNDE NO (Versión 152, actualizada en la 155 cuando el
   único que existía se borró). El proyecto existe porque sus números son verificables, así que un
   archivo de datos de mentira es lo más peligroso que se le puede agregar. **Hoy no hay ninguno.**
