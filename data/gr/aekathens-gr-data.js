@@ -287,7 +287,7 @@ const aekathensgrFiscalYearMeta = {
       {label:'Φόρος εισοδήματος', value:0},
       {label:'Αναβαλλόμενος Φόρος', value:-0.308649},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:1.785823,
     officialTotalRevenue:13.584488, officialTotalExpenses:17.225812, officialPAT:-4.057837,
   },
   2018: {
@@ -302,7 +302,7 @@ const aekathensgrFiscalYearMeta = {
       {label:'Φόρος εισοδήματος', value:0},
       {label:'Αναβαλλόμενος Φόρος', value:0.335886},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:1.65037,
     officialTotalRevenue:24.144686, officialTotalExpenses:22.801188, officialPAT:1.5957,
   },
   2019: {
@@ -318,7 +318,7 @@ const aekathensgrFiscalYearMeta = {
       {label:'Φόρος εισοδήματος', value:-1.023407},
       {label:'Αναβαλλόμενος Φόρος', value:-0.481567},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:7.935425,
     officialTotalRevenue:36.919177, officialTotalExpenses:29.084426, officialPAT:6.243552,
   },
   2020: {
@@ -334,7 +334,7 @@ const aekathensgrFiscalYearMeta = {
       {label:'Φόρος εισοδήματος', value:-0.066412},
       {label:'Αναβαλλόμενος Φόρος', value:null},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:1.94317,
     officialTotalRevenue:19.686393, officialTotalExpenses:22.506092, officialPAT:-2.961135,
   },
   2022: {
@@ -349,7 +349,7 @@ const aekathensgrFiscalYearMeta = {
       {label:'Φόρος εισοδήματος', value:-0.044873},
       {label:'Αναβαλλόμενος Φόρος', value:1.566761},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:5.190328, cash:6.601224,
     officialTotalRevenue:22.018971, officialTotalExpenses:31.392252, officialPAT:-8.195726,
   },
   2023: {
@@ -364,7 +364,7 @@ const aekathensgrFiscalYearMeta = {
       {label:'Φόρος εισοδήματος', value:null},
       {label:'Αναβαλλόμενος Φόρος', value:0.283419},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:7.725899,
     officialTotalRevenue:38.985157, officialTotalExpenses:41.019774, officialPAT:-4.003895,
   },
   2025: {
@@ -394,7 +394,7 @@ const aekathensgrFiscalYearMeta = {
       {label:'Φόρος εισοδήματος', value:null},
       {label:'Αναβαλλόμενος Φόρος', value:0.149937},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:6.038235, cash:5.391379,
     officialTotalRevenue:26.184045, officialTotalExpenses:26.849368, officialPAT:-0.645485,
   },
 };

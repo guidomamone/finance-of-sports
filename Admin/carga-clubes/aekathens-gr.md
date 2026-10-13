@@ -127,6 +127,10 @@ Generados/Grecia/AEK Athens/AEK_FS_2023-06-30.categorias.json (escalón de cada 
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
+```
+
 ### Liga
 
 ```text
@@ -168,6 +172,10 @@ Generados/Grecia/AEK Athens/AEK_FS_orthi_epanalipsi_2022.categorias.json (escal�
 
 ```text
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-13): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-13): Claude 2026-10-13: deuda financiera = préstamos de la nota 6.16, a más de un año 1.084.606 + a menos de un año 4.105.722 (bonos 3.074.161 + Oldenburgische Landesbank 1.031.561); la parte corriente está dentro de 'Μακροπρόθεσμες Υποχρεώσεις πληρωτέες στην Επόμενη Χρήση' (14.206.003), mezclada con lo que se debe a jugadores; cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
 ```
 
 ### Liga
@@ -226,6 +234,10 @@ Generados/Grecia/AEK Athens/AEK_Notes_IFRS_2021-06-30.categorias.json (escalón 
 
 ```text
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-13): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-13): Claude 2026-10-13: deuda financiera = préstamos de la nota 6.15 (bono convertible 2.944.209 + Oldenburgische Landesbank 3.094.026), a más de un año 5.029.327 y a menos de un año 1.008.907; la parte corriente está dentro de 'Μακροπρόθεσμες Υποχρεώσεις πληρωτέες στην Επόμενη Χρήση' (7.469.001, mezclada con lo que se debe a jugadores), así que el balance solo no la separa; cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
 ```
 
 ### Liga
@@ -289,6 +301,10 @@ Generados/Grecia/AEK Athens/AEK_Notes_2020-06-30.categorias.json (escalón de ca
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
+```
+
 ### Liga
 
 ```text
@@ -346,6 +362,10 @@ Generados/Grecia/AEK Athens/AEK_Notes_2019-06-30.categorias.json (escalón de ca
 
 ```text
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 14
 ```
 
 ### Liga
@@ -406,6 +426,10 @@ Generados/Grecia/AEK Athens/AEK_Notes_2018-06-30.categorias.json (escalón de ca
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
+```
+
 ### Liga
 
 ```text
@@ -460,6 +484,10 @@ Generados/Grecia/AEK Athens/AEK_FS_2016-2017.categorias.json (escalón de cada f
 
 ```text
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 43
 ```
 
 ### Liga
