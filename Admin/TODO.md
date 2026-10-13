@@ -118,10 +118,8 @@ ni en el comentario de ningún archivo de código.
     criterio, y se mide otra vez con `Admin/mediciones/perimetro-a2-medicion.txt`. Que entre en la skill `auditoria-finance-of-sports` (eje
     `datos`, cada tanto) cuando Guido apruebe el texto; mientras, se corre a mano después de cada país nuevo.
 
-229. SUELDOS DESDE LA NOTA DE PERSONAL, COMO ESCALÓN (visto en el to-do 219, Volos 2021-2025, corregidos con ajustes `fila` y `categoria`).
-    Un estado de resultados por función ("Έξοδα διοίκησης" como único gasto operativo) no separa los sueldos, pero la nota de personal sí
-    ("Σύνολο κόστους μισθοδοσίας περιόδου"); la carga los dejaba dentro de admin_general_expense y `audit.js` avisaba `sin-salarios` (5 de 6
-    avisos eran este caso). Escalón a pensar, como "la nota de la fila" de caja-deuda: si un año queda sin wages_squad y el documento tiene
-    una nota de personal con su total, proponer partir el renglón que la contiene (compuerta: el total de la nota es menor que el renglón y
-    la cadena año contra año de la nota cierra: el año anterior de una nota es el total de la nota del documento anterior). Medir con
-    `audit.js` (`sin-salarios`) y sobre lo cargado (idéntico salvo los años que hoy no tienen wages_squad).
+229. SUELDOS DESDE LA NOTA DE PERSONAL (conocido, sin daño hoy). Un estado por función ("Έξοδα διοίκησης" único gasto operativo) no separa
+    los sueldos y la nota de personal sí ("Σύνολο κόστους μισθοδοσίας περιόδου"): Volos 2021-2025 los tenía dentro de admin_general_expense
+    (corregidos con ajustes `fila` y `categoria`). Medido el 2026-10-13: ningún otro año cargado está así (`audit.js` no marca `sin-salarios`
+    fuera de Novorizontino 2010, que es un cero real). Se diseña el escalón cuando aparezcan casos reales: después del lote 71 (Aris,
+    Atromitos, PAOK, Panetolikos tienen estado por función), mirar `sin-salarios` en `node tools/audit.js`.
