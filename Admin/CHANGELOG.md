@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 672 — Cierre del to-do 209: chequeo de comentarios en `data/` y referencias apuntadas a la evidencia (2026-10-12)
+
+- `tools/audit.js`: `comentario-interno-publicado` recorre también `data/` (con subcarpetas); chequeo nuevo `comentario-en-data-club` (P2)
+  para cualquier comentario en un `data/<club>-data.js`. Los dos dan 0.
+- Skills (`start-session`, `club-data-mapping` y 3 archivos de `referencia/`): documentar en `Admin/carga-clubes/<clubId>.md`, no en un
+  comentario del data file; el modelo de monedas, en `Admin/ARQUITECTURA.md`, "Monedas y tipo de cambio".
+- `Admin/ARQUITECTURA.md`, `Admin/dudas-por-club.md` y `tools/audit-ignore.json`: 39 referencias a "el comentario de `data/x-data.js`"
+  pasan a la evidencia del club.
+- TODO: se borra el 209; nuevos 216 (probar en vivo la primera alta con la evidencia fuera de `data/`) y 217 (organizar carpetas).
+
 ## Versión 671 — Comentarios de `data/` a `Admin/carga-clubes/`: regla, script y piloto con 4 clubes (to-do 209) (2026-10-12)
 
 - Regla en `Admin/CONVENCIONES-DATOS.md`: `data/<club>-data.js` no lleva comentarios; la evidencia de cada carga va en

@@ -101,48 +101,6 @@ ni en el comentario de ningún archivo de código.
     `Admin/ESTADO-clubes.md`). Remedir la proporción en la próxima corrida del eje `escala` y, si cambió, actualizar ese punto de la skill
     (umbral y criterio).
 
-209. COMENTARIOS INTERNOS EN `data/` — CASI TERMINADO (2026-10-13). Falta solo el paso 1 (chequeo + documentación) y el cierre.
-    CONTEXTO (el 208, ya cerrado, hizo lo mismo con `index.html` y `js/`; regla en `Admin/PANTALLA.md`, "Comentarios en lo que se
-    publica"): `data/` se publica entero y tenía ~2,8 MB de comentarios internos (historia, nombres, evidencia de cada carga). Decisión de
-    Guido: MOVERLOS TAL CUAL, nunca resumir ni borrar evidencia. Regla nueva en `Admin/CONVENCIONES-DATOS.md` (primer punto):
-    "`data/<club>-data.js` NO LLEVA COMENTARIOS"; la evidencia va a `Admin/carga-clubes/<clubId>.md` (un título por ejercicio; adentro
-    Ingresos/Gastos/Meta/Liga, tabla "| Fila | Rubro | Nota |"; además "## Cabecera", "## Gestiones", "## Fuentes" / "### <sourceId>").
-    HECHO (todo commiteado, sin push; detalle en `Admin/CHANGELOG.md`, Versión 671):
-      - 214 data files sin comentarios (`tools/mover-comentarios-data.mjs`); data/ entera 7,3 MB -> 4,5 MB, mismo código.
-      - `tools/evidencia-club.mjs`: el ÚNICO que edita esos .md (agregarTexto, quitarLineas, ponerTabla, agregarCabecera, agregarSeccion,
-        agregarFuente, textoDeFuente, textoFuenteCompleto, cabeceraDe). Lo usan cargar.mjs, dentro-de-otro.mjs, caja-deuda.mjs,
-        alta-club.mjs, cargar-lote.mjs, bfo-rusia.mjs (ninguno escribe ya comentarios en data/), carpetas-clubes.mjs y audit.js.
-      - Notas de un club en archivos compartidos (`tools/mover-comentarios-compartidos.mjs`): de data/clubs.js y data/club-leagues/ a
-        cada .md; las cabeceras de data/club-leagues/<país>.js a `Admin/ligas-por-pais/<país>.md` (--resto-ligas); data/gestiones/ a
-        "## Gestiones" de cada club y `Admin/gestiones-por-pais/<país>.md` (--gestiones). El formato de gestiones, en ARQUITECTURA.
-      - Explicaciones reescritas sin historia: currency-map.js (modelo -> `Admin/ARQUITECTURA.md` "Monedas y tipo de cambio"; notas de
-        cada cotización -> `Admin/fx-cotizaciones.md`), club-leagues.js/leagues.js (-> ARQUITECTURA "Ligas por ejercicio y catálogo"),
-        clubs.js (color de marca -> CONVENCIONES-DATOS "Identidad del club"), y los 7 chicos. Generadores: una línea "GENERADO por…".
-      - Las 688 `note` internas de sources{} -> "## Fuentes" de cada .md (`tools/mover-notas-fuentes.mjs`); los 5 `note` PÚBLICOS de las
-        cards de presupuesto (Boca, Racing) quedan. audit.js: `note-interna-en-data` (P2).
-      - REGRESIÓN ENCONTRADA Y ARREGLADA: carpetas-clubes.mjs, caja-deuda.mjs, dentro-de-otro.mjs y cargar.mjs leían la cita de la carpeta,
-        la ruta del .md o el perímetro del TEXTO de data/ (comentarios y note). Ahora leen también la evidencia; medido igual que antes.
-        LECCIÓN: antes de sacar texto de data/, buscar quién lo lee como texto (grep de readFileSync sobre data/ + regex).
-    FALTA (paso 1, con el método de Guido: un paso por vez, con un EJEMPLO real antes de cada uno; editar una skill solo mostrándole el texto
-    y con su ok):
-      a) audit.js: extender `comentario-interno-publicado` (hoy mira index.html y js/) a `data/` (debería dar 0; los 17 KB que quedan son
-         técnicos). Opcional: P2 si un data/<club>-data.js vuelve a tener comentarios.
-      b) Frases de skills que mandan a "documentar en el comentario" del data file -> apuntar a `Admin/carga-clubes/<clubId>.md`:
-         `.claude/skills/start-session-finance-of-sports-project/SKILL.md` (~línea 83: un "no cierra" sin comentario en su data file es
-         motivo para parar -> sin nota en su evidencia; Bayern tiene la suya ahí); `club-data-mapping/SKILL.md` (~172); `referencia/fx.md`
-         (~9 y ~16: "el comentario de cabecera de data/currency-map.js es lectura obligatoria" -> ARQUITECTURA "Monedas y tipo de cambio";
-         ~22; ~113: market_approx "en el comentario del código Y en el note" -> en la evidencia del club); `referencia/formato-simplificado.md`
-         (~94); `referencia/casos-por-pais-y-formato.md` (~105). Buscar más con: grep -rn -i "comentario" .claude/skills.
-      c) Referencias "ver el comentario en data/x-data.js" en `Admin/ARQUITECTURA.md`, `Admin/dudas-por-club.md` y `tools/audit-ignore.json`
-         -> el .md de evidencia (el CHANGELOG y el diario no se tocan: son historia). Buscar con: grep -rnE "comentario[^.]{0,60}data/[a-z0-9-]+-data\.js".
-      d) Cierre: `Admin/ESTADO.md` (la línea de "QUÉ SE PUBLICA" ya dice lo de los comentarios: dejarla al día), borrar este 209, entrada
-         final en CHANGELOG, ASSET_V si se toca data/ o js/ (y `node tools/generate-fuentes-page.js`). Verificar siempre con
-         `node tools/comparar-sin-comentarios.js <archivo>` (mismo código), `node tools/audit.js --quiet` y `?audit=1` en el navegador
-         (hoy: 1859 checks cierran, 3 no cierran = Bayern por redondeo, documentado en `Admin/carga-clubes/bayernmunich-de.md`).
-    PENDIENTE DE PROBAR EN VIVO: ningún lote corrió todavía con los scripts nuevos dando de alta un club Y cargando su primer año (no había
-    ninguno listo). La primera vez, mirar el resultado: el .md nuevo del club, que data/ no tenga comentarios, y el commit de cada año.
-    Si eso sale mal, `tools/evidencia-club.mjs` y la sección "Dónde queda la evidencia" de `Admin/PIPELINE.md` (etapa 8) son el lugar.
-
 210. EL ENSAYO DE `cargar-lote.mjs` PROMETE AÑOS DE CLUBES NUEVOS QUE DESPUÉS NO ENTRAN (mejora de script). Con un club que no existe,
     `cargar.mjs --desde-verificacion` frena en "el club no existe" y no mira los demás frenos (casos de la verificación pendientes, categorías
     en la cola); el ensayo los cuenta como "se escribirían". Caso: lote 67 (Grecia), el ensayo dijo 21 años y `--escribir` no escribió ninguno
@@ -172,3 +130,12 @@ ni en el comentario de ningún archivo de código.
     respuesta; en Grecia solo estaba AEL Larissa, así que Asteras, Levadiakos y OFI volvieron a preguntar "Κόστος πωλήσεων", "Έξοδα διάθεσης",
     "Αμοιβές και έξοδα προσωπικού" (21 casos). Evaluar un escalón con 1 club y mismo contexto exacto (misma nota/renglón título), que proponga
     con cita del precedente y que la compuerta de lado y de sumas decida; medir aciertos contra las respuestas de hoy.
+
+216. PRIMER ALTA DE CLUB CON LA EVIDENCIA FUERA DE `data/` (probar en vivo). Ningún lote dio todavía de alta un club nuevo Y cargó su primer
+    año con los scripts que escriben la evidencia en `Admin/carga-clubes/<clubId>.md` en vez de comentarios en `data/`. La primera vez, mirar:
+    el `.md` nuevo del club, que `data/<club>-data.js` salga sin comentarios (`node tools/audit.js` lo avisa como `comentario-en-data-club`)
+    y el commit de cada año. Si algo sale mal, el lugar es `tools/evidencia-club.mjs` y `Admin/PIPELINE.md`, "Dónde queda la evidencia" (etapa 8).
+
+217. ORGANIZAR LAS CARPETAS DEL PROYECTO (pedido de Guido). Falta definir con él qué carpetas y con qué criterio. Antes de mover nada, buscar
+    quién lee cada ruta (scripts de `tools/`, `netlify.toml`, skills, `audit.js`), y no borrar ni deduplicar PDFs de `Clubes/` sin chequear
+    las referencias del pipeline.
