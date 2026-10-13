@@ -390,7 +390,8 @@ Riesgos:
 Mitigaciones:
 - i) las filas de menos de 0,80 van a la cola de categorías (etapa 8). El primer año de un club ya no es una revisión de Guido (to-do 214):
   el caso "primer-anio" de `verificar.mjs` pide solo que ingresos, gastos y resultado coincidan con lo impreso, y no se levanta si un
-  documento vecino lo confirma o si el documento imprime los tres y lo cargado da cada uno a 0,01% o menos.
+  documento vecino lo confirma, si el documento imprime los tres y lo cargado da cada uno a 0,01% o menos, o si imprime un
+  solo total y el resultado, los dos a 0,01%, y el otro total no está impreso (queda determinado por la cuenta).
 
 ### 8 Cargar
 
@@ -545,7 +546,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 - Las dudas de la IA traen un tema de una lista fija (usar un cuadro por segmento, cuadro duplicado, cuadro de otro año, perímetro, escala,
   columna, fila ilegible, otro) y el renglón al que afectan. Una duda de tema fijo se reconoce por club + tema + renglón: si Guido ya la
   contestó en cualquier año del club, se aplica sola.
-- Qué entra: números no confirmados que no cierran, totales o resultado que no cierran, año vecino distinto, primer año sin vecino (salvo que imprima ingresos, gastos y resultado y los tres den a 0,01%), dudas de
+- Qué entra: números no confirmados que no cierran, totales o resultado que no cierran, año vecino distinto, primer año sin vecino (salvo que lo impreso lo confirme: ver etapa 7), dudas de
   localizar y de extraer que afectan la carga, y filas con categoría menor a 0,80 (etapa 8).
 - Una respuesta de categoría queda como precedente del club para los años siguientes (`Admin/registros/categorias-aprendidas.jsonl`).
 - Cómo la resuelve Guido (2026-10-05): con un subagente (Sonnet) que resume los casos; no hace falta ordenarla ni otra vista.

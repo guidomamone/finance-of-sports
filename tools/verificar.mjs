@@ -1148,9 +1148,17 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const tot214 = (n, final) => { const c = chequeos.find((x) => x.nombre === `total de ${n}`); return c?.ok === true && c.impreso != null && Math.abs(final - c.impreso) <= REL214 * Math.abs(c.impreso) ? c.impreso : null; };
     const ti214 = tot214('ingresos', suma(ing)); const tg214 = tot214('gastos', suma(gas));
     const res214 = chequeos.find((x) => x.nombre === 'resultado del ejercicio');
-    const imprime3 = ti214 != null && tg214 != null && res214?.ok === true && res214.dif != null && res214.dif <= REL214 * Math.abs(ti214);
+    const resOk214 = (base) => res214?.ok === true && res214.dif != null && res214.dif <= REL214 * Math.abs(base);
+    const imprime3 = ti214 != null && tg214 != null && resOk214(ti214);
+    // (to-do 214, escalón 2, aprobado por Guido el 2026-10-13) imprime UN total y el resultado, los dos a 0,01%, y el otro total NO está
+    // impreso: ese otro queda determinado por la cuenta. Solo la suma directa (`suma`/`impreso`), no las variantes interpretadas (un renglón
+    // como total, deducciones aparte). Medido: 7 más de los 77 aceptados (Volos 2024: ingresos 5.872.569 = impreso, sin total de gastos,
+    // resultado 383.182,45 exacto), ninguno de los 2 descartados.
+    const sinImp214 = (n) => { const c = chequeos.find((x) => x.nombre === `total de ${n}`); return c?.ok === null && /no lo imprime/.test(c.detalle || ''); };
+    const imprime1 = !imprime3 && ((ti214 != null && sinImp214('gastos') && resOk214(ti214)) || (tg214 != null && sinImp214('ingresos') && resOk214(tg214)));
     if (imprime3) chequeos.push({ nombre: 'primer año', ok: true, detalle: 'ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)' });
-    if (vecinos.includes(true) || imprime3) { /* un documento vecino, o los tres totales impresos, confirmaron las cifras: no hace falta el caso "primer año" */ } else
+    if (imprime1) chequeos.push({ nombre: 'primer año', ok: true, detalle: `${ti214 != null ? 'ingresos' : 'gastos'} y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)` });
+    if (vecinos.includes(true) || imprime3 || imprime1) { /* un documento vecino, o los tres totales impresos, confirmaron las cifras: no hace falta el caso "primer año" */ } else
     caso('primer-anio', String(year), `Primer año automático de este club${clubId ? '' : ' (club nuevo)'}: no hay año anterior cargado para comparar. Revisar que los ingresos (${r6(suma(ing))}), los gastos (${r6(suma(gas))}) y el resultado coincidan con el estado de resultados impreso.`, { pagina: estado[0]?.pagina, lineas: estado.length ? [Math.min(...estado.map((f) => f.linea)), Math.max(...estado.map((f) => f.linea))] : null });
   }
   // un total o el resultado que no cierran -> cola (salvo que Guido ya lo haya aceptado)

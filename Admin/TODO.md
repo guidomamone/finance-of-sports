@@ -98,14 +98,12 @@ ni en el comentario de ningún archivo de código.
 
 
 
-214. EL PRIMER AÑO DE UN CLUB SIN GUIDO (decisión de Guido, 2026-10-13: no lo revisa ni puede revisarlo; el plan no cuenta con él). Hecho el
-    escalón 1 (`verificar.mjs`: imprime ingresos, gastos y resultado y lo cargado da los tres a 0,01% -> sin caso; 22 de 77 aceptados).
+214. EL PRIMER AÑO DE UN CLUB SIN GUIDO (decisión de Guido, 2026-10-13: no lo revisa ni puede revisarlo; el plan no cuenta con él). Hechos los
+    escalones 1 y 2 de `verificar.mjs` (lo impreso confirma lo cargado a 0,01%: 29 de los 77 aceptados se cierran solos).
     Lo que falta, de a un escalón, cada uno medido con el script de simulación (los 115 casos "primer-anio" históricos de
     `Admin/registros/cola-revision.jsonl` contra los números de cada `.verificacion.json`: `suma`/`impreso` de los totales, `dif` del resultado)
     y con `verificar.mjs --lista` sobre lo ya cargado (tiene que dar idéntico; restaurar después la cola y `Generados/`, porque re-verificar
     años cargados levanta casos "anio-anterior" que no son trabajo real):
-      - Escalón 2: imprime UN total y el resultado, los dos a 0,01% -> sin caso (el otro total queda determinado por la cuenta). 8 de los 77
-        (Volos 2024-2025, Remo 2023-2024, Paysandu 2021, Hellas Verona 2023, Juve Stabia 2024, Novorizontino 2024).
       - Escalón 3: solo imprime el resultado (42 de los 77: Grecia, DRE de Brasil). Con el resultado exacto, lo único que se escapa son
         errores que se compensan (la misma cifra de más en los dos lados) o el documento equivocado (Roma 2011 separato). Pregunta puntual a
         la IA (Claude por API, en el pipeline) con las filas del estado y su cita: "¿falta, sobra o se repite alguna fila del estado?"; si
