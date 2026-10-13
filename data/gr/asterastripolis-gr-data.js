@@ -20,6 +20,19 @@ const asterastripolisgrRevenueLinesByYear = {
     { rawLabel:'Άλλα λειτουργικά έσοδα', normalizedCategory:'other_income', amountNative:0.000097, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά Έκτακτα και ανόργανα έσοδα', normalizedCategory:'other_income', amountNative:0.002855, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Έσοδα αγώνων', normalizedCategory:'matchday_competition', amountNative:0.072441, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα από τηλεοπτικές μεταδόσεις αγώνων', normalizedCategory:'broadcasting', amountNative:0.925, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα από παραχώρηση ποδοσφαιριστών', normalizedCategory:'player_sales', amountNative:0.2, disclosureLevel:'aggregated' },
+    { rawLabel:'Επιχορηγήσεις', normalizedCategory:'other_income', amountNative:0.430855, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα από παροχή υπηρεσιών σε τρίτους', normalizedCategory:'other_income', amountNative:1.060297, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα από συνεισφορά αλληλεγγύης και τροφεία', normalizedCategory:'player_sales', amountNative:0.035175, disclosureLevel:'aggregated' },
+    { rawLabel:'Άλλα λειτουργικά έσοδα', normalizedCategory:'other_income', amountNative:0.000102, disclosureLevel:'aggregated' },
+    { rawLabel:'Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων', normalizedCategory:'other_income', amountNative:0.000134, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα συμμετοχών και επενδύσεων', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Κέρδος από αγορά οντότητας ή τμήματος σε τιμή ευκαιρίας', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.021114, disclosureLevel:'aggregated' },
+  ],
 };
 const asterastripolisgrExpenseLinesByYear = {
   2019: [
@@ -45,6 +58,16 @@ const asterastripolisgrExpenseLinesByYear = {
     { rawLabel:'Φορολογικά πρόστιμα και προσαυξήσεις', normalizedCategory:'other_expenses', amountNative:-0.000007, disclosureLevel:'aggregated' },
     { rawLabel:'Προσαυξήσεις Εισφ. Ασφαλιστικών Ταμείων', normalizedCategory:'other_expenses', amountNative:-0.000844, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έκτακτα έξοδα', normalizedCategory:'exceptional_items', amountNative:-0.000025, disclosureLevel:'aggregated' },
+    { rawLabel:'Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)', normalizedCategory:'player_impairment', amountNative:0, disclosureLevel:'aggregated' },
+  ],
+  2022: [
+    { rawLabel:'Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)', normalizedCategory:'lump_football_operations_expense', amountNative:-3.959304, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-1.361903, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-0.027559, disclosureLevel:'aggregated' },
+    { rawLabel:'Πρόβλεψη για επισφαλείς απαιτήσεις', normalizedCategory:'other_amortisation', amountNative:-0.035, disclosureLevel:'aggregated' },
+    { rawLabel:'Φορολογικά πρόστιμα και προσαυξήσεις', normalizedCategory:'other_expenses', amountNative:-0.000004, disclosureLevel:'aggregated' },
+    { rawLabel:'Έκτακτα έξοδα από οριστικοποίηση δικαστικής αξίωσης προηγούμενης χρήσης', normalizedCategory:'exceptional_items', amountNative:-0.15, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έκτακτα έξοδα', normalizedCategory:'exceptional_items', amountNative:0, disclosureLevel:'aggregated' },
     { rawLabel:'Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)', normalizedCategory:'player_impairment', amountNative:0, disclosureLevel:'aggregated' },
   ],
 };
@@ -84,6 +107,24 @@ const asterastripolisgrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:3.435971, officialTotalExpenses:4.476491, officialPAT:-1.05236,
   },
+  2022: {
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'asterastripolis-gr-asteras-fs-2022-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.012382, tax:0,
+    extraRows: [
+      {label:'Πιστωτικοί τόκοι και συναφή έσοδα', value:0.000136},
+      {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.012518},
+      {label:'Φόροι εισοδήματος', value:0},
+    ],
+    sinDesglose: [
+      {renglon:'Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)', lado:'expense', importe:3.959304, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:2.745118, officialTotalExpenses:5.38377, officialPAT:-2.801035,
+  },
 };
 const asterastripolisgrPresupuestoOverlayByYear = {};
 
@@ -108,6 +149,11 @@ Object.assign(sources, {
   'asterastripolis-gr-asteras-fs-2020-06-30': {
     id:'asterastripolis-gr-asteras-fs-2020-06-30', clubId:'asterastripolis-gr',
     title:'A.G.S. Asteras Tripolis P.A.E. — Asteras_FS_2020-06-30 (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'asterastripolis-gr-asteras-fs-2022-06-30': {
+    id:'asterastripolis-gr-asteras-fs-2022-06-30', clubId:'asterastripolis-gr',
+    title:'A.G.S. Asteras Tripolis P.A.E. — Asteras_FS_2022-06-30 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
