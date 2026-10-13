@@ -27,9 +27,9 @@
 // deploy y lo hace Guido).
 //
 // USO:
-//   node tools/cargar-lote.mjs --lista Admin/lote-NN.txt              # ENSAYO: qué haría con cada documento (no escribe nada)
-//   node tools/cargar-lote.mjs --lista Admin/lote-NN.txt --escribir   # de verdad: altas, cargas y commits
-//   node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar --cargar # lo mismo al final del lote
+//   node tools/cargar-lote.mjs --lista Admin/lotes/lote-NN.txt              # ENSAYO: qué haría con cada documento (no escribe nada)
+//   node tools/cargar-lote.mjs --lista Admin/lotes/lote-NN.txt --escribir   # de verdad: altas, cargas y commits
+//   node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar --cargar # lo mismo al final del lote
 // ============================================================================
 import { readFileSync, writeFileSync, existsSync, unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';

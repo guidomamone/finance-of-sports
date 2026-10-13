@@ -71,11 +71,11 @@ ni en el comentario de ningún archivo de código.
     a) GRECIA (lote 67, 42 documentos con estado de resultados; los otros 87 de las carpetas son balances, notas, informes del directorio y
        del auditor, y actas: no entran). Cola contestada (81 respuestas), intereses de Volos 2021-2025 con signo (ajustes `fila`), 41
        verificaciones OK. Falta la etapa 7 (categorizar, ~US$ 1) y la carga, que corre Guido:
-       `caffeinate -i node tools/lote.mjs --lista Admin/lote-67.txt --ejecutar --cargar` (alta de AEK, Asteras, Levadiakos, OFI y
+       `caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-67.txt --ejecutar --cargar` (alta de AEK, Asteras, Levadiakos, OFI y
        Panserraikos con sus años; Volos ya tiene la verificación lista). Después: leer el resultado, la cola nueva y lo que quede.
        AEK 2025 (AEK_NOTES_IFRS_2025-06-30_a): la etapa 4 dejó 3 números sin confirmar contra el PDF. Panserraikos 2024 no pasó por verificar.
     b) Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
-       (`ls Admin/lote-*.txt | sort -V | tail -1` para el número), `antes-de-localizar.mjs`, ensayo, Guido corre `lote.mjs --ejecutar
+       (`ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -1` para el número), `antes-de-localizar.mjs`, ensayo, Guido corre `lote.mjs --ejecutar
        --cargar`, y la cola se revisa con un Sonnet que recomienda respuestas con cita. Fichas listas para alta (`alta-club.mjs --todos`,
        2026-10-10): Noruega 8, Portugal 7, Rep. Checa 7, Colombia 4, Países Bajos 4, Turquía 4, Ucrania 3, Corea 2, Suiza 2, Bélgica,
        Croacia y Dinamarca 1. Ninguna tiene todavía un año verificado: "listo para alta" es solo la ficha del club.
@@ -136,6 +136,24 @@ ni en el comentario de ningún archivo de código.
     el `.md` nuevo del club, que `data/<club>-data.js` salga sin comentarios (`node tools/audit.js` lo avisa como `comentario-en-data-club`)
     y el commit de cada año. Si algo sale mal, el lugar es `tools/evidencia-club.mjs` y `Admin/PIPELINE.md`, "Dónde queda la evidencia" (etapa 8).
 
-217. ORGANIZAR LAS CARPETAS DEL PROYECTO (pedido de Guido). Falta definir con él qué carpetas y con qué criterio. Antes de mover nada, buscar
-    quién lee cada ruta (scripts de `tools/`, `netlify.toml`, skills, `audit.js`), y no borrar ni deduplicar PDFs de `Clubes/` sin chequear
-    las referencias del pipeline.
+217. ORGANIZAR LAS CARPETAS DEL PROYECTO (pedido de Guido). Método: un paso por vez, con ejemplo real; cada paso con `git mv`, buscar la
+    ruta vieja de las dos formas (`Admin/x` y `'Admin', 'x'`) hasta dar 0 fuera de la historia, `node --check` de cada tool tocada y
+    `diff` antes/después de `audit.js`, `estado.mjs` y `lote.mjs --lista Admin/lotes/prueba-rapida.txt` (ensayo gratis). Un commit por paso.
+    Los registros que solo se agregan (`cola-revision.jsonl`, `cargar-ultimo.jsonl`) citan rutas viejas como texto: no se reescriben,
+    pero hay que confirmar que ningún script las abre. HECHO: raíz (e2.json, Business Books) y lotes (`Admin/lotes/`, los cerrados en Archive).
+    FALTA, en este orden (decidido con Guido):
+      a) `Admin/api-keys/<servicio>.env` (los 9 .env; `supabase.env` sigue trackeado a propósito: su clave es pública). 11 tools,
+         `.gitignore`, skills `club-sourcing` y `club-outreach`, PIPELINE.
+      b) Logs de gasto de API (`resultados.jsonl`/`fallidos.jsonl` de claude-api, gemini, mistral) a `Admin/registros/api/`; verificar con
+         `node tools/gasto.mjs` igual.
+      c) `Admin/mediciones/`: `tests/`, backtests (`jev/`, `categorizar-claude/`, `altas-claude/`), `informes-etapa6-italia/`, `propuestas/`.
+      d) Registros del pipeline (los .jsonl/.txt de la raíz de Admin y los 4 ocultos) a `Admin/registros/`. El paso más grande (~20 tools).
+      e) `sourcing-europa-este-scripts/` a `tools/sourcing-europa-este/`; `supabase/schema.sql` a `tools/supabase/`.
+      f) `fuentes/`: las notas internas (carpetas de país, `_indice/`, `README.md`) a `Admin/sourcing/`; en `fuentes/` quedan solo las
+         páginas públicas `<clubId>.html` (son URLs indexadas: no se mueven). ~30 archivos las citan, incluido `CLAUDE.md`.
+      g) `data/<país>/<clubId>-data.js`: el loader de `index.html` (~línea 730) arma la ruta con `clubs[clubId].country`; las ~32 tools,
+         con una función compartida. Red: `?audit=1` carga los 214 clubes y cuenta "clubes que no cargaron".
+      h) `js/`: sacar los ~78 KB de JS inline de `index.html` a archivos de `js/`, y `js/styles.css` a `css/`. Verificar en la vista
+         previa y con `?audit=1`.
+      i) `tools/` en carpetas por etapa (sourcing, transcripción, onboarding, generadores, auditoría, común): 99 archivos, 128 imports
+         entre ellos, ~248 menciones en docs y skills. Con su propio plan y ejemplo; decidir con Guido antes de empezar.

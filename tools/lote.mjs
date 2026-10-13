@@ -23,8 +23,8 @@
 // (node tools/cola.mjs). Las respuestas de Guido se toman en la próxima corrida del mismo lote.
 //
 // USO:
-//   node tools/lote.mjs --lista Admin/lote-NN.txt                 ensayo con costo
-//   caffeinate -i node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar
+//   node tools/lote.mjs --lista Admin/lotes/lote-NN.txt                 ensayo con costo
+//   caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar
 //   En la lista, "testigo <pdf>" = documento que solo sirve para verificar a otro (ver TESTIGOS abajo).
 // ============================================================================
 

@@ -32,7 +32,7 @@
 // USO:
 //   node tools/perimetro-senales.mjs --verdad Admin/tests/perimetro-verdad.tsv          # ensayo: pasos A y B sin Jev (C3 = "?")
 //   node tools/perimetro-senales.mjs --verdad Admin/tests/perimetro-verdad.tsv --jev    # con Jev (~US$ 0,0001 por documento)
-//   node tools/perimetro-senales.mjs --lista Admin/lote-NN.txt [--jev]                  # sin verdad: solo la propuesta
+//   node tools/perimetro-senales.mjs --lista Admin/lotes/lote-NN.txt [--jev]                  # sin verdad: solo la propuesta
 //   node tools/perimetro-senales.mjs --md "Clubes/Italia/AC Milan/x.md" --detalle      # un documento, con cada tabla encontrada
 // Jev: Admin/jev/.env con JEV_API_KEY=...; respuestas guardadas en Generados/_cache/jev-perimetro.jsonl (no se paga dos veces).
 // ============================================================================

@@ -11,10 +11,10 @@ Se actualiza en la misma sesión en que cambia una tool. Cómo se trabaja con el
 Los comandos:
 
 ```bash
-node tools/lote.mjs --lista Admin/lote-NN.txt                               # ensayo: qué haría y cuánto cuesta (gratis)
-caffeinate -i node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar      # de verdad (lo corre Guido)
-caffeinate -i node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar --cargar   # además escribe lo que queda listo (altas, cargas, commits)
-caffeinate -i node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar --reintentar   # camino de error (ver abajo)
+node tools/lote.mjs --lista Admin/lotes/lote-NN.txt                               # ensayo: qué haría y cuánto cuesta (gratis)
+caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar      # de verdad (lo corre Guido)
+caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar --cargar   # además escribe lo que queda listo (altas, cargas, commits)
+caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar --reintentar   # camino de error (ver abajo)
 node tools/cola.mjs                                                         # la cola humana
 node tools/estado.mjs                                                       # el tablero: cada PDF en su etapa y escalón (gratis)
 node tools/inventario-transcripciones.mjs                                   # el registro, con la etapa de cada estado (gratis)

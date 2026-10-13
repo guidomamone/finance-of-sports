@@ -34,7 +34,7 @@ Qué hay hoy:
 - `test-barridos.md` — el A/B test de barridos de sourcing (2026-09-26). La conclusión está en el skill `club-sourcing`, 0.1b. Archivado el 2026-10-06 (to-do 109).
 - `test-costo-transcripcion.md` y su carpeta `test-costo-transcripcion/` — el test de costo y calidad de transcripción (2026-09-26). El criterio está en `Admin/PIPELINE.md`, "Documentos fuente". Archivado el 2026-10-06 (to-do 109).
 - `inventario-pendiente.md` — foto del 2026-09-25 de lo que faltaba transcribir y cargar; la reemplazó `Admin/transcripciones-estado.jsonl`. Archivado el 2026-10-06 (to-do 109).
-- `lotes/` — las listas de los lotes del pipeline ya corridos (`lote-01` a `lote-13i`, 2026-10-01 a 10-04) y `juventus-etapa2.txt`. Los lotes nuevos se siguen creando en `Admin/lote-NN.txt`; al cerrarlos, vienen acá. Archivado el 2026-10-06 (to-do 109).
+- `lotes/` — las listas de los lotes del pipeline ya corridos (`lote-01` a `lote-65`) y `juventus-etapa2.txt`. Los lotes abiertos y las listas de prueba están en `Admin/lotes/`; al cerrar un lote, su lista viene acá. Archivado el 2026-10-06 (to-do 109).
 - `prompts/` — los prompts de sourcing de Italia y de las regiones (2026-10-03), ya usados. Archivado el 2026-10-06 (to-do 109).
 - `tests/` — variantes viejas de las mediciones de `Admin/tests/` (`test-proponer-carga_F_*`, `_filtro*`, `_v1_mdviejo`, `test-jev-resultados_base/_lado/_lado_ejemplos`). Las versiones vigentes siguen en `Admin/tests/`, donde las escriben las tools. Archivado el 2026-10-06 (to-do 109).
 - `medicion-caja-deuda-ia.txt` — la salida de una medición de caja y deuda con IA (2026-10-01). Archivado el 2026-10-06 (to-do 109).

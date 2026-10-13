@@ -43,7 +43,7 @@
 //   node tools/inventario-transcripciones.mjs --verificar --estado sin-verificar   # revalida solo los de ese estado
 //   node tools/inventario-transcripciones.mjs --listar revisar    # lista los PDFs en ese estado
 //   node tools/inventario-transcripciones.mjs --listar pendiente-segunda-voz --dir Clubes/Colombia
-//   node tools/inventario-transcripciones.mjs --solo Admin/lote-56.txt          # ALCANCE: recalcula solo esos PDFs (ver abajo)
+//   node tools/inventario-transcripciones.mjs --solo Admin/lotes/lote-NN.txt          # ALCANCE: recalcula solo esos PDFs (ver abajo)
 //   node tools/inventario-transcripciones.mjs --solo "Clubes/Brasil/Remo"       # ... o los de esa carpeta
 //
 // ALCANCE (--solo, Versión 640, aprobado por Guido el 2026-10-09). Recalcular el registro entero tarda ~1-2 min (12.184 PDFs; ~70 s
@@ -200,7 +200,7 @@ function runVerification(entry) {
 
 // ---------------------------------------------------------------------------
 // Se incluyen TAMBIÉN los PDFs sin ningún .md (estado 'sin-md'): el script único tools/pipeline.mjs los transcribe.
-// ALCANCE (--solo): la lista de PDFs (un archivo con una ruta por línea, como Admin/lote-NN.txt) o una carpeta.
+// ALCANCE (--solo): la lista de PDFs (un archivo con una ruta por línea, como Admin/lotes/lote-NN.txt) o una carpeta.
 const soloPdfs = !soloArg ? null
   : existsSync(resolve(root, soloArg)) && statSync(resolve(root, soloArg)).isDirectory() ? walkPdfs(resolve(root, soloArg)).sort()
   : readFileSync(resolve(root, soloArg), 'utf8').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')).map((l) => resolve(root, l)).filter((a) => existsSync(a)).sort();

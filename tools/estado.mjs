@@ -178,6 +178,6 @@ if (existsSync(ultimo)) {
   const U = readFileSync(ultimo, 'utf8').trim().split('\n').map((l) => JSON.parse(l));
   console.log(`  Última propuesta de carga (${U[0]?.lista}, ${String(U[0]?.ts).slice(0, 16).replace('T', ' ')}): ${U.filter((x) => x.carga).length} de ${U.length} cargarían. Detalle: Admin/cargar-ultimo.jsonl`);
 }
-console.log('  Cola humana: node tools/cola.mjs  ·  un lote: node tools/lote.mjs --lista Admin/lote-NN.txt');
+console.log('  Cola humana: node tools/cola.mjs  ·  un lote: node tools/lote.mjs --lista Admin/lotes/lote-NN.txt');
 console.log(`\n  Grupos de países: ${GRUPOS.map((g) => `${g.corto} ${g.nombre}`).join(' · ')}.\n  Qué tiene de propio cada grupo en cada etapa: node tools/estado.mjs --logica [grupo]`);
 console.log('');

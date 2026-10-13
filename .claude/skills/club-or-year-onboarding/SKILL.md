@@ -34,14 +34,14 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
    arranca en la etapa 3. Ensayo: `node tools/pipeline.mjs --dir "Clubes/<País>/<Club>" --max-paginas 0 --limit 0`; Guido
    corre lo mismo con `caffeinate -i` y `--ejecutar`. `--max-paginas 0` incluye los PDFs de más de 100 páginas (sin él quedan para el
    final). El costo es el del ensayo (cuenta páginas); el de `estado.mjs` es fijo por documento y subestima los PDFs largos.
-2. Armar la lista (`Admin/lote-NN.txt`). Con un club de varios años: todos los años de la etapa más baja juntos. Un documento sin
+2. Armar la lista (`Admin/lotes/lote-NN.txt`). Con un club de varios años: todos los años de la etapa más baja juntos. Un documento sin
    estado de resultados (informe del auditor, memoria sola) no va a la lista: se le propone a Guido para `Admin/documentos-descartados.txt`
-   (el lote los saltea) y entra ahí solo con su ok. Antes de crear la lista, `ls Admin/lote-*.txt | sort -V | tail -3` y tomar el
-   número siguiente; nunca reusar uno.
+   (el lote los saltea) y entra ahí solo con su ok. Antes de crear la lista, `ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -3` y tomar el
+   número siguiente; nunca reusar uno. Al cerrar un lote, su lista va a `Admin/Archive/lotes/`.
 3. Club nuevo: fijar perímetro y cierre (`node tools/ajustes.mjs`) antes del primer lote, para no pagar dos veces la localización.
    `node tools/antes-de-localizar.mjs --lista <lista>` dice qué falta (gratis).
-4. Ensayo: `node tools/lote.mjs --lista Admin/lote-NN.txt` (gratis). Decirle a Guido qué etapa toca, para qué sirve y cuánto cuesta.
-5. Guido corre `caffeinate -i node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar`, y con `--cargar` si lo que quede listo se
+4. Ensayo: `node tools/lote.mjs --lista Admin/lotes/lote-NN.txt` (gratis). Decirle a Guido qué etapa toca, para qué sirve y cuánto cuesta.
+5. Guido corre `caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar`, y con `--cargar` si lo que quede listo se
    escribe en esa misma corrida (`tools/cargar-lote.mjs`: alta del club, un commit por año; si ningún año entra, revierte el alta). Si el
    final del lote pide `--reintentar`, va con una lista que tenga SOLO los documentos que lo necesitan, y se lo digo.
 6. Leer el resultado: el bloque final que pega Guido (no la terminal entera), `Generados/`, `estado.mjs` y `cola.mjs`. Mostrarlo en un solo mensaje,
@@ -93,13 +93,13 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## 5. Lotes de prueba (medir CUALQUIER cambio de script antes y después)
 
-Lo cargado tiene que dar idéntico. Tres listas fijas, sin repetidos: `Admin/prueba-rapida.txt` (16, los casos que ya
-rompieron algo una vez), `Admin/prueba-mediana.txt` (34: la rápida + 3 años por club) y `Admin/prueba-completa.txt` (87, todos los
+Lo cargado tiene que dar idéntico. Tres listas fijas, sin repetidos: `Admin/lotes/prueba-rapida.txt` (16, los casos que ya
+rompieron algo una vez), `Admin/lotes/prueba-mediana.txt` (34: la rápida + 3 años por club) y `Admin/lotes/prueba-completa.txt` (87, todos los
 documentos de los 6 clubes).
 
 ```bash
-node tools/lote.mjs --lista Admin/prueba-completa.txt > /tmp/medir-antes.txt 2>&1     # antes del cambio
-node tools/lote.mjs --lista Admin/prueba-completa.txt > /tmp/medir-despues.txt 2>&1   # después; diff entre los dos
+node tools/lote.mjs --lista Admin/lotes/prueba-completa.txt > /tmp/medir-antes.txt 2>&1     # antes del cambio
+node tools/lote.mjs --lista Admin/lotes/prueba-completa.txt > /tmp/medir-despues.txt 2>&1   # después; diff entre los dos
 ```
 
 Además, según lo que toque: lo mismo con `--reintentar` (camino de error); `node tools/caja-deuda.mjs --medir` en TODOS los clubes (caja y deuda);
