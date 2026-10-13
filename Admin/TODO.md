@@ -68,10 +68,12 @@ ni en el comentario de ningún archivo de código.
     del (c) hecha: lote 66 (468 documentos). Nombres legales de las altas: 24 contestados con cita (ajustes `name`). Gestiones de los clubes
     nuevos de Grecia, Rep. Checa, Portugal, Noruega, Países Bajos y Turquía cargadas (to-do 195).
     FALTA, en este orden:
-    a) GRECIA: cargados Asteras 2019-2025, Levadiakos 2019-2025, OFI 2018-2025, AEK 2016-2020, Panserraikos 2023 y 2025 (2024 no tiene
-       estado de resultados), Volos 2019-2025. Falta: AEK 2021 (reintento de "Estadio en 0") y AEK 2022-2025 (to-do 220: la fila mixta).
-       Sin revisar: Aris, Atromitos, Kifisia, Panetolikos y PAOK (transcriptos, nunca en un lote), Olympiacos y Athens Kallithea (sin
-       transcribir). Colores de los 8 griegos revisados (Asteras pasó a amarillo).
+    a) GRECIA: cargados Asteras 2019-2025, Levadiakos 2019-2025, OFI 2018-2025, AEK 2016-2023 y 2025, Panserraikos 2023 y 2025 (2024 no
+       tiene estado de resultados), Volos 2019-2025. Falta AEK 2024 (lote con la etapa 7 para las filas nuevas de sus notas:
+       `Admin/lotes/lote-73.txt`). Lote 71 armado y sin correr (Olympiacos, Athens Kallithea, Aris, Atromitos, Kifisia, Panetolikos, PAOK;
+       primero `pipeline.mjs --dir "Clubes/Grecia" --ejecutar`, ~US$ 5,67). Aris: decidir perímetro (2023-2025 son consolidados).
+       Conocido, sin tocar (histórico): Panathinaikos 2025 tiene "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου" como competition_bonus;
+       en AEK 2023 y 2025 va como other_income.
     b) Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
        (`ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -1` para el número), `antes-de-localizar.mjs`, ensayo, Guido corre `lote.mjs --ejecutar
        --cargar`, y la cola se revisa con un Sonnet que recomienda respuestas con cita. Fichas listas para alta (`alta-club.mjs --todos`,
@@ -129,22 +131,6 @@ ni en el comentario de ningún archivo de código.
     revisar los casos de los cuatro primeros contra la fuente: si alguno es un error real, ese chequeo pide subir de nivel o un escalón en
     la carga. `node tools/audit.js` da el detalle de cada uno.
 
-220. LA COLA SIN GUIDO (decisión de Guido, 2026-10-13: no la revisa ni puede revisarla). Probado con AEK Athens: un subagente Sonnet contestó
-    las 19 etiquetas de categoría (80 casos de 6 años; leyó la skill `club-data-mapping`, los precedentes griegos y cada nota del .md) y
-    Claude aplicó las 18 firmes con `cola.mjs --responder` firmadas "Claude 2026-10-13 (subagente Sonnet...)"; los 22 de perfil (socios,
-    otros deportes) los contestó Claude con cita (PAE de solo fútbol, L574). Entraron AEK 2016-2020. Falta:
-      - Contestar así el resto de la cola, de a un club por subagente. Hecho Asteras (2022-2025 cargados; la solidaridad y los derechos de
-        formación van a `player_sales`, decisión de Guido, también Asteras 2020 con ajuste `categoria`). Lo que frena cargas: categoría
-        (Volos, Panserraikos, AEK 2022-2025), perfil (32) y nombre legal de altas (37). Los 97 casos `gestion` son del to-do 195.
-        Conocido, sin daño: `cargar.mjs --reemplazar` repite la línea "Cargado en el sitio…" en la nota de `Admin/sourcing/` (se restaura a mano).
-      - AEK 2022-2025: la fila del estado "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες" mezcla la nómina (Μισθοδοσία) y la amortización de
-        contratos de jugadores (Αποσβέσεις συμβολαίων ποδοσφαιριστών, 53-60%, nota 6.19; la política contable lo dice en
-        AEK_Notes_2018-06-30.md L843). Como `wages_squad` inflaría los salarios: cargar las dos filas de la nota en vez de la del estado,
-        como en 2016-2021 (ajuste manual `desglose` o un escalón de extraer.mjs que abra esa fila en su nota). 5 casos en la cola.
-      - AEK 2021: "Estadio en 0" pide `--reintentar` (lista solo con AEK_Notes_IFRS_2021-06-30.pdf). Caja y deuda de AEK:
-        `node tools/caja-deuda.mjs --club aekathens-gr --ejecutar --escribir` (~US$ 0,15).
-      - Dudas opcionales del subagente para el club (no frenan): qué activos cubre "Μισθώματα" (¿el estadio?) y qué explica el salto de
-        "Αμοιβές τρίτων" de 1,8 M (2018) a 6,8 M (2019).
 
 223. COLUMNA DE NOTAS EN CAJA-DEUDA COMO ESCALERA, NO COMO REGLAS (pedido de Guido, 2026-10-13: "estás haciendo reglas que deberían ser
     escalones"). Hoy (`c08cc9f`, to-do 221) `filasDelMd` saca la celda de una columna de notas de varios niveles ("6.8") si la columna es la

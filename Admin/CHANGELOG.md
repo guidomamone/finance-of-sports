@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 685 — Grecia casi completa, la cola sin Guido, escalones de notas y Covid (2026-10-13)
+
+- Cargados Asteras 2021-2025, Panserraikos 2023 y 2025, Volos 2019-2025 y AEK 2021-2023 y 2025; cola contestada por subagentes con cita.
+- `verificar.mjs`: si cerró la lectura 5 o 6, un renglón se abre en su nota cuando la nota lo suma al centavo, o a una unidad impresa con
+  la diferencia como "Diferencia de redondeo" (AEK: nómina y amortización de pases por separado); totales idénticos en 237 documentos.
+- `cargar.mjs`: "Estadio" en 0 en 2021 es real (Covid), sin reintento.
+- Skill de onboarding: la cola la contesta un subagente; a Guido solo lo que frena un alta o un año. Skill club-nuevo: un bicolor nunca
+  queda en null (si nada decide, orden alfabético en inglés). Colores: Panathinaikos verde, AEL Larissa bordó, Asteras amarillo.
+
 ## Versión 684 — Corridas más rápidas (to-do 224) (2026-10-13)
 
 - Medido: no hacía falta una base de datos. `cola.mjs` y `ajustes.mjs` leen su registro una vez por proceso (verificar de 237 documentos
