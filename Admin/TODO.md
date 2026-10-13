@@ -99,17 +99,6 @@ ni en el comentario de ningún archivo de código.
 
 
 
-226. AJUSTES DE PERÍMETRO QUE NO COINCIDEN CON EL DOCUMENTO (visto al medir el paso A2 de `perimetro-senales.mjs`). Ninguno cambia un
-    número publicado; corregirlos con un ajuste `perimetro` del documento (`node tools/ajustes.mjs --agregar "<pdf>" perimetro --valor ...`)
-    y, si el año está cargado, la línea "Perímetro" de su `Admin/carga-clubes/<clubId>.md`:
-    - Trabzonspor: el ajuste del club dice consolidado (se fijó mirando el documento de 2021), pero 2016 a 2020 son individuales
-      ("finansal tablolar", sin "konsolide"). El prospecto de 2025 (`trabzonspor-sportif-izahname-2025`) no es un estado del ejercicio:
-      ver si va a `Admin/registros/documentos-descartados.txt`. El club no está cargado.
-    - AS Roma 2006 y Bologna 2024 y 2025: documentos individuales ("bilancio d'esercizio", ningún título consolidado) cargados con
-      "Perímetro: consolidado", heredado del ajuste del club. Cada documento trae un solo estado, así que los números son los mismos.
-    Antes de cerrarlo, correr `node tools/perimetro-senales.mjs --lista <documentos del club> --jev` y comparar con los ajustes: si aparecen
-    otros, van acá.
-
 227. AUDITORÍA A POSTERIORI DEL PASO A2 DEL PERÍMETRO (pedido de Guido: por si la idea sale mal). A2 decide el perímetro de documentos en
     idiomas que el paso A no reconoce, con cinco criterios con peso (título 4, texto 4, auditor 1, grupo 1, portada 1; 4 puntos o más =
     consolidado). Se midió en una muestra de 75 documentos; lo que decida en clubes nuevos no lo revisa nadie. Armar el chequeo: un
