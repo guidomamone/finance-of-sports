@@ -54,6 +54,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { archivosData, idDeArchivo, rutaData } = require('./data-clubes.js');
 const { execFileSync } = require('child_process');
 const vm = require('vm');
 const { execSync } = require('child_process');
@@ -95,7 +96,7 @@ function loadEngine() {
     // cargan todos, siempre: la auditoría tiene que ver la tabla completa.
     ...fs.readdirSync(path.join(ROOT, 'data/club-leagues')).filter(f => f.endsWith('.js')).sort()
       .map(f => 'data/club-leagues/' + f),
-    ...fs.readdirSync(path.join(ROOT, 'data')).filter(f => f.endsWith('-data.js')).sort().map(f => 'data/' + f),
+    ...archivosData(),
     'js/finanzas-calc.js',
   ];
   for (const rel of files) {
@@ -157,11 +158,11 @@ const sum = lines => lines.reduce((s, l) => s + (l.amountNative || 0), 0);
 // --- E: estructura e identidad -------------------------------------------
 function checkEstructura(api) {
   for (const id of Object.keys(api.generic)) {
-    if (!api.clubs[id]) add('P1', 'archivo-sin-club', `${id}: tiene data/${id}-data.js pero no está en data/clubs.js, el sitio nunca lo muestra`);
+    if (!api.clubs[id]) add('P1', 'archivo-sin-club', `${id}: tiene ${rutaData(id)} pero no está en data/clubs.js, el sitio nunca lo muestra`);
   }
   for (const id of Object.keys(api.clubs)) {
-    if (!fs.existsSync(path.join(ROOT, 'data', `${id}-data.js`))) {
-      add('P1', 'club-sin-archivo', `${id}: está en clubs.js pero no existe data/${id}-data.js, loadClubData() va a dar 404`);
+    if (!fs.existsSync(path.join(ROOT, rutaData(id)))) {
+      add('P1', 'club-sin-archivo', `${id}: está en clubs.js pero no existe ${rutaData(id)}, loadClubData() va a dar 404`);
     }
     const cur = api.clubs[id].reportingCurrency;
     if (cur && !api.CURRENCY_META[cur]) add('P2', 'moneda-sin-meta', `${id}: reportingCurrency '${cur}' no está en CURRENCY_META, cae al fallback de currency-map.js`);
@@ -1089,15 +1090,15 @@ function checkCarpetasClubes() {
   // Y al revés: un club del sitio cuyos PDFs ninguna carpeta identifica (no cita su carpeta ni se llama igual). Sus PDFs figurarían como
   // de un club nuevo y el pipeline los procesaría aunque el ejercicio ya esté cargado.
   const resueltos = new Set(carpetas.filter(c => c.clubId).map(c => c.clubId));
-  for (const f of fs.readdirSync(path.join(ROOT, 'data')).filter(x => x.endsWith('-data.js'))) {
-    const id = f.replace(/-data\.js$/, '');
+  for (const f of archivosData()) {
+    const id = idDeArchivo(f);
     if (resueltos.has(id)) continue;
     // (to-do 209) la cita de la carpeta puede estar en la evidencia del club y no en data/: se leen los dos, como carpetas-clubes.mjs
     const ev = path.join(ROOT, 'Admin', 'carga-clubes', `${id}.md`);
-    const txt = fs.readFileSync(path.join(ROOT, 'data', f), 'utf8') + (fs.existsSync(ev) ? `\n${fs.readFileSync(ev, 'utf8')}` : '');
+    const txt = fs.readFileSync(path.join(ROOT, f), 'utf8') + (fs.existsSync(ev) ? `\n${fs.readFileSync(ev, 'utf8')}` : '');
     if (/Clubes\/[^/\n`'"]+\/_/.test(txt)) continue; // se alimenta de una carpeta de agregado (J.League)
     if (!/Clubes\//.test(txt)) continue; // club cargado solo de fuentes externas (prensa): no tiene PDFs en Clubes/
-    add('P2', 'club-sin-carpeta', `data/${f} cita Clubes/ pero ninguna carpeta de Clubes/ resuelve a '${id}' (tools/carpetas-clubes.mjs): sus PDFs se tratarían como de un club nuevo`);
+    add('P2', 'club-sin-carpeta', `${f} cita Clubes/ pero ninguna carpeta de Clubes/ resuelve a '${id}' (tools/carpetas-clubes.mjs): sus PDFs se tratarían como de un club nuevo`);
   }
 }
 
@@ -1250,8 +1251,8 @@ function checkEscala(api) {
     add('P2', 'clubid-hardcodeado', `${h.rel}:${h.line}: literal '${h.id}' en código — revisar que no sea una rama por club (${h.texto})`);
   }
 
-  const bytesData = fs.readdirSync(path.join(ROOT, 'data')).filter(f => f.endsWith('-data.js'))
-    .reduce((s, f) => s + fs.statSync(path.join(ROOT, 'data', f)).size, 0);
+  const bytesData = archivosData()
+    .reduce((s, f) => s + fs.statSync(path.join(ROOT, f)).size, 0);
   const n = Object.keys(api.generic).length;
   const porClub = Math.round(bytesData / n);
   add('P3', 'proyeccion', `data/*.js: ${(bytesData / 1024).toFixed(0)} KB en ${n} clubes (~${(porClub / 1024).toFixed(1)} KB/club). A 1000 clubes: ~${(porClub * 1000 / 1024 / 1024).toFixed(1)} MB en disco; el que se baja por visita sigue siendo 1 (lazy load), pero clubs.js se carga entero SIEMPRE (hoy ${(fs.statSync(path.join(ROOT, 'data/clubs.js')).size / 1024).toFixed(0)} KB).`);

@@ -48,6 +48,7 @@ import { resolve, dirname, basename, extname } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { derivado } from './rutas.mjs';
 import vm from 'node:vm';
+import { rutaData } from './data-clubes.js';
 
 const projectRoot = resolve(import.meta.dirname, '..');
 
@@ -229,9 +230,9 @@ function checkTieOuts(tables) {
 // rubro categorizable, son un agregado).
 // ----------------------------------------------------------------------------
 function suggestCategories(clubId, tables) {
-  const hasClubData = existsSync(resolve(projectRoot, 'data', `${clubId}-data.js`));
+  const hasClubData = existsSync(resolve(projectRoot, rutaData(clubId)));
   if (!hasClubData) {
-    return { skipped: true, reason: `data/${clubId}-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1).` };
+    return { skipped: true, reason: `${rutaData(clubId)} no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1).` };
   }
   const labels = [];
   const seen = new Set();

@@ -45,6 +45,7 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import vm from 'node:vm';
+import { archivosData, rutaData } from './data-clubes.js';
 
 const projectRoot = resolve(import.meta.dirname, '..');
 
@@ -57,8 +58,7 @@ function loadGenericData() {
   sandbox.window.window = sandbox.window;
   const ctx = vm.createContext(sandbox);
   const baseFiles = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js'];
-  const clubFiles = readdirSync(resolve(projectRoot, 'data'))
-    .filter((f) => f.endsWith('-data.js')).sort().map((f) => 'data/' + f);
+  const clubFiles = archivosData();
   for (const rel of [...baseFiles, ...clubFiles]) {
     const code = readFileSync(resolve(projectRoot, rel), 'utf8');
     vm.runInContext(code, ctx, { filename: rel });
@@ -150,15 +150,15 @@ function main() {
     console.error('Uso: node tools/suggest-category-precedent.mjs <clubDataFile> "<label1>" ["<label2>" ...] [--side revenue|expense]\n   o: node tools/suggest-category-precedent.mjs <clubDataFile> --stdin [--side revenue|expense]\n   o: node tools/suggest-category-precedent.mjs <clubDataFile> --list [--side revenue|expense]');
     process.exit(1);
   }
-  if (!existsSync(resolve(projectRoot, 'data', `${clubFile}-data.js`))) {
-    console.error(`No existe data/${clubFile}-data.js`);
+  if (!existsSync(resolve(projectRoot, rutaData(clubFile)))) {
+    console.error(`No existe ${rutaData(clubFile)}`);
     process.exit(1);
   }
 
   const generic = loadGenericData();
   const clubData = generic[clubFile];
   if (!clubData) {
-    console.error(`data/${clubFile}-data.js cargó pero no registró window.CLUB_GENERIC_DATA.${clubFile} -- revisar el nombre.`);
+    console.error(`${rutaData(clubFile)} cargó pero no registró window.CLUB_GENERIC_DATA.${clubFile} -- revisar el nombre.`);
     process.exit(1);
   }
   const precedentBySide = {

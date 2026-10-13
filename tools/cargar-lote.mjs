@@ -36,6 +36,7 @@ import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { derivado } from './rutas.mjs';
 import * as EV from './evidencia-club.mjs';
+import { rutaData } from './data-clubes.js';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARGS = process.argv.slice(2);
@@ -122,7 +123,7 @@ function ponerColor({ clubId, color, club, pais }) {
 function revertirAlta(clubId) {
   git('checkout', '-q', '--', ...SITIO.filter((x) => x !== 'fuentes' && x !== 'Admin/sourcing'), 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html');
   git('checkout', '-q', '--', 'fuentes', 'Admin/sourcing');
-  for (const f of [`data/${clubId}-data.js`, `fuentes/${clubId}.html`, EV.rutaRel(clubId)]) { try { unlinkSync(resolve(ROOT, f)); } catch { /* no estaba */ } }
+  for (const f of [rutaData(clubId), `fuentes/${clubId}.html`, EV.rutaRel(clubId)]) { try { unlinkSync(resolve(ROOT, f)); } catch { /* no estaba */ } }
 }
 
 let commits = 0; const noEscritos = [];
@@ -131,7 +132,7 @@ for (const p of plan) {
   if (p.alta) {
     const r = node('tools/alta-club.mjs', [p.xs[0].pdf, '--escribir']);
     console.log(`  alta ${p.alta.clubId}: ${ultimaLinea(r).slice(0, 200)}`);
-    if (!existsSync(resolve(ROOT, 'data', `${p.alta.clubId}-data.js`))) { for (const x of p.xs) noEscritos.push({ pdf: x.pdf, motivo: 'el alta no se escribió' }); continue; }
+    if (!existsSync(resolve(ROOT, rutaData(p.alta.clubId)))) { for (const x of p.xs) noEscritos.push({ pdf: x.pdf, motivo: 'el alta no se escribió' }); continue; }
     if (!ponerColor(p.alta)) { revertirAlta(p.alta.clubId); for (const x of p.xs) noEscritos.push({ pdf: x.pdf, motivo: 'no pude poner el color en data/clubs.js: alta revertida' }); continue; }
   }
   let escritos = 0;

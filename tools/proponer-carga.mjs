@@ -57,6 +57,7 @@ import { filasSuma, ladosPorEstructura, ladoPorPalabras, esResultado, noEsRubro 
 // Vocabulario multi-idioma y normalización (Versión 316): tools/vocabulario.mjs, el mismo de pipeline.mjs / filas-rubro.mjs / extract-table-rows.mjs.
 import { derivado, ubicar } from './rutas.mjs';
 import { normalizar, TITULO_RESULTADOS_RE, TOTAL_INICIO_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, INGRESOS_TABLA_RE, GASTOS_RE, NOTAS_COLUMNA_RE, FLUJO_O_PATRIMONIO_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE } from './vocabulario.mjs';
+import { archivosData } from './data-clubes.js';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -88,7 +89,7 @@ if (IS_MAIN && !BACKTEST && !flagVal('--pdf')) { console.error('Uso: node tools/
 export function loadSite() {
   const sandbox = { console, window: {} }; sandbox.window.window = sandbox.window;
   const ctx = vm.createContext(sandbox);
-  const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js', ...readdirSync(resolve(root, 'data')).filter((f) => f.endsWith('-data.js')).sort().map((f) => 'data/' + f)];
+  const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js', ...archivosData()];
   for (const rel of files) vm.runInContext(readFileSync(resolve(root, rel), 'utf8'), ctx, { filename: rel });
   return { generic: vm.runInContext('window.CLUB_GENERIC_DATA', ctx), clubs: vm.runInContext('typeof clubs !== "undefined" ? clubs : null', ctx) };
 }

@@ -90,6 +90,7 @@ import { clubDeRuta } from './carpetas-clubes.mjs';
 import { derivado, ubicar } from './rutas.mjs';
 import { ajusteDe } from './ajustes.mjs';
 import vm from 'node:vm';
+import { rutaData } from './data-clubes.js';
 
 const projectRoot = resolve(import.meta.dirname, '..');
 const GEMINI_CHECK_SUFFIX = '.gemini-check';
@@ -254,7 +255,7 @@ function resolveClubAndYear(pdfPath, club, year) {
 // verificado desde antes de que este flujo existiera". El criterio real tiene que ser "¿esta
 // combinación club+año YA tiene datos cargados en el sitio?", no "¿existe tal o cual archivo".
 function loadClubYearData(clubId) {
-  const dataFile = resolve(projectRoot, 'data', `${clubId}-data.js`);
+  const dataFile = resolve(projectRoot, rutaData(clubId));
   if (!existsSync(dataFile)) return null;
   const sandbox = { console, window: {} };
   sandbox.window.window = sandbox.window;
@@ -263,7 +264,7 @@ function loadClubYearData(clubId) {
     const full = resolve(projectRoot, rel);
     if (existsSync(full)) vm.runInContext(readFileSync(full, 'utf8'), ctx, { filename: rel });
   }
-  vm.runInContext(readFileSync(dataFile, 'utf8'), ctx, { filename: `data/${clubId}-data.js` });
+  vm.runInContext(readFileSync(dataFile, 'utf8'), ctx, { filename: rutaData(clubId) });
   return vm.runInContext('window.CLUB_GENERIC_DATA', ctx);
 }
 
@@ -362,7 +363,7 @@ function processOne(pdfPath, { club, year, dryRun, verbose = true, stage = 'full
   // lote (`--all`), el filtro de `needsWork` en main() ya saca los ya-cargados ANTES de llegar acá,
   // así que esto no le cambia nada a esa ruta.
   if ((stage === 'transcribe' || stage === 'full') && isAlreadyOnboarded(resolved.clubId, resolved.year)) {
-    console.log(`  Ya cargado en data/${resolved.clubId}-data.js, ejercicio ${resolved.year} -- no lo toco (ni Mistral ni Gemini).`);
+    console.log(`  Ya cargado en ${rutaData(resolved.clubId)}, ejercicio ${resolved.year} -- no lo toco (ni Mistral ni Gemini).`);
     return;
   }
 

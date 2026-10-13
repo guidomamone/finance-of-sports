@@ -40,6 +40,7 @@ import { abrirCache } from './respuestas-cache.mjs';
 import { derivado, ubicar } from './rutas.mjs';
 import { lineasAprendidas } from './memoria-categorias.mjs';
 import vm from 'node:vm';
+import { archivosData } from './data-clubes.js';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -125,7 +126,7 @@ async function pool(items, worker) {
 function loadClubData() {
   const sandbox = { console, window: {} }; sandbox.window.window = sandbox.window;
   const ctx = vm.createContext(sandbox);
-  const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js', ...readdirSync(resolve(root, 'data')).filter((f) => f.endsWith('-data.js')).sort().map((f) => 'data/' + f)];
+  const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js', ...archivosData()];
   for (const rel of files) vm.runInContext(readFileSync(resolve(root, rel), 'utf8'), ctx, { filename: rel });
   return vm.runInContext('window.CLUB_GENERIC_DATA', ctx);
 }

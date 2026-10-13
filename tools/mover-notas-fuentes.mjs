@@ -15,6 +15,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import * as EV from './evidencia-club.mjs';
+import { archivosData } from './data-clubes.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
@@ -30,7 +31,7 @@ function evaluar(rel, src) {
 }
 const desescapar = (t) => t.replace(/\\(.)/g, '$1');
 
-const archivos = ['data/clubs.js', ...fs.readdirSync(path.join(ROOT, 'data')).filter((f) => f.endsWith('-data.js')).sort().map((f) => `data/${f}`)];
+const archivos = ['data/clubs.js', ...archivosData()];
 const errores = []; const nuevos = {}; const mds = {}; let n = 0; const saltados = [];
 for (const rel of archivos) {
   const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');

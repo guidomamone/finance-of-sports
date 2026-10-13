@@ -57,6 +57,7 @@ import { derivado } from './rutas.mjs';
 import * as EV from './evidencia-club.mjs';
 import { ajusteDe, ajusteClubODoc, ajustePerimetroDe } from './ajustes.mjs';
 import { normalizar, claveFamilia, CAJA_RE, DEUDA_FINANCIERA_RE, TITULO_BALANCE_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE, FLUJO_O_PATRIMONIO_RE, esTotal } from './vocabulario.mjs';
+import { archivosData, rutaData } from './data-clubes.js';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const PAG_RE = /^---\s*pág\.\s*(\d+)\s*---/i;
@@ -412,7 +413,7 @@ export function escalera(filas, cual, { precedentes = [], factor = null, anterio
 // ---------------------------------------------------------------- el sitio y los documentos de cada año cargado
 function sitio() {
   const sb = { console, window: {} }; sb.window.window = sb.window; const ctx = vm.createContext(sb);
-  for (const f of ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js', ...readdirSync(resolve(ROOT, 'data')).filter((x) => x.endsWith('-data.js')).sort().map((x) => 'data/' + x)]) vm.runInContext(readFileSync(resolve(ROOT, f), 'utf8'), ctx);
+  for (const f of ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js', ...archivosData()]) vm.runInContext(readFileSync(resolve(ROOT, f), 'utf8'), ctx);
   return { G: vm.runInContext('window.CLUB_GENERIC_DATA', ctx), S: vm.runInContext('typeof sources !== "undefined" ? sources : {}', ctx) };
 }
 // El .md de un año cargado: la ruta que nombra su fuente (220 de los 284 años con deuda/caja la tienen).
@@ -597,7 +598,7 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
   // evidencia del club (Admin/carga-clubes/<club>.md), que entra en el snapshot para revertirse con el resto.
   const { snapshot, revertir, publicarCambios } = await import('./cargar.mjs');
   const evExtra = [EV.rutaRel(clubId)];
-  const dataPath = resolve(ROOT, `data/${clubId}-data.js`); const snap = snapshot(evExtra); const escritos = [`data/${clubId}-data.js`, EV.rutaRel(clubId)];
+  const dataPath = resolve(ROOT, rutaData(clubId)); const snap = snapshot(evExtra); const escritos = [rutaData(clubId), EV.rutaRel(clubId)];
   try {
     let t = readFileSync(dataPath, 'utf8');
     let ev = EV.leer(clubId);

@@ -41,6 +41,7 @@ import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { derivado } from './rutas.mjs';
 import * as EV from './evidencia-club.mjs';
+import { rutaData } from './data-clubes.js';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARGS = process.argv.slice(2);
@@ -215,7 +216,7 @@ for (const nombre of carpetas) {
   const revertirAlta = () => { git('checkout', '-q', '--', 'data', 'index.html', 'fuentes.html', 'sitemap.xml', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/ESTADO-clubes.md'); git('checkout', '-q', '--', 'fuentes', 'Admin/sourcing'); for (const f of String(git('ls-files', '--others', '--exclude-standard', '--', 'data', 'fuentes', 'Admin/sourcing', 'Admin/carga-clubes').stdout || '').split('\n').filter(Boolean)) if (!sinTrackAntes.has(f)) { try { unlinkSync(resolve(ROOT, f)); } catch { /* */ } } };
   if (esNuevo) {
     const r = run('node', [resolve(ROOT, 'tools/alta-club.mjs'), `${carpeta}/bfo-${aCargar[0].y}-datos.md`, '--escribir']);
-    if (!existsSync(resolve(ROOT, 'data', `${clubId}-data.js`))) { console.log(`      alta NO escrita: ${String(r.stdout + r.stderr).trim().split('\n').pop().slice(0, 200)}`); continue; }
+    if (!existsSync(resolve(ROOT, rutaData(clubId)))) { console.log(`      alta NO escrita: ${String(r.stdout + r.stderr).trim().split('\n').pop().slice(0, 200)}`); continue; }
     const p = resolve(ROOT, 'data', 'clubs.js'); const L = readFileSync(p, 'utf8').split('\n');
     const k = L.findIndex((l) => l.startsWith(`  '${clubId}': {`));
     if (k < 0 || L[k].includes('brandColor')) { console.log('      no pude poner el color: revierto'); revertirAlta(); continue; }

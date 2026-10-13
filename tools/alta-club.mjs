@@ -258,6 +258,7 @@ import { ajusteDe, ajustePerimetroDe } from './ajustes.mjs';
 import { agregarCaso, casoYRespuesta } from './cola.mjs';
 import { huellaEntradas, sha1Archivo, leerRegistro, guardarEnRegistro, resumenAltas, ESTADOS } from './altas-registro.mjs';
 import { preguntarAClaude, MODELO_DEFAULT, UMBRAL_CONFIANZA, paginas as paginasDe } from './alta-claude.mjs';
+import { archivosData, rutaData } from './data-clubes.js';
 export { resumenAltas };
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -1372,8 +1373,8 @@ function escribir(r) {
 
     // 2. data/<id>-data.js (esqueleto)
     const v = id.replace(/[^a-z0-9]/g, '');
-    const dataPath = resolve(ROOT, 'data', `${id}-data.js`);
-    if (existsSync(dataPath)) throw new Error(`ya existe data/${id}-data.js`);
+    const dataPath = resolve(ROOT, rutaData(id, { pais: val('country') }));
+    if (existsSync(dataPath)) throw new Error(`ya existe ${rutaData(id, { pais: val('country') })}`);
     const metaProp = {};
     for (const c of r.ejercicio.campos) {
       if (c.campo === 'currency') metaProp.currency = c.valor;
@@ -1384,7 +1385,7 @@ function escribir(r) {
     }
     const fuentesCampo = [...r.campos, ...r.ejercicio.campos].map((c) => `  ${c.campo.padEnd(18)} ${c.estado.padEnd(9)} ${c.valor === undefined ? '(ausente)' : JSON.stringify(c.valor)} — ${String(c.fuente || '').slice(0, 150)}`);
     ev = EV.agregarCabecera(ev, [
-      `data/${id}-data.js — ${val('name')} (${NOMBRE_PAIS_ES[val('country')] || val('country')}).`,
+      `${rutaData(id, { pais: val('country') })} — ${val('name')} (${NOMBRE_PAIS_ES[val('country')] || val('country')}).`,
       `ALTA POR SCRIPT (tools/alta-club.mjs, ${hoy}), SIN EJERCICIOS CARGADOS TODAVÍA: las estructuras del data file`,
       'nacen vacías a propósito. Los rubros, los totales oficiales y el resto del fiscalYearMeta los agrega la etapa de carga.',
       '',
@@ -1418,7 +1419,7 @@ Object.assign(sources, {
 
 memberCountByClub[${jsStr(id)}] = null;
 `;
-    writeFileSync(dataPath, esqueleto); escritos.push(`data/${id}-data.js`);
+    mkdirSync(dirname(dataPath), { recursive: true }); writeFileSync(dataPath, esqueleto); escritos.push(rutaData(id, { pais: val('country') }));
 
     // 3. data/club-leagues/<iso2>.js
     const iso = val('country').toLowerCase();
@@ -1846,7 +1847,7 @@ function cargarDatosSitio() {
   const sandbox = { console: { log() {}, warn() {}, error() {} } }; sandbox.window = sandbox; sandbox.globalThis = sandbox;
   sandbox.document = { createElement() { return {}; }, head: { appendChild() {} } };
   const ctx = vm.createContext(sandbox);
-  const files = ['data/clubs.js', 'data/currency-map.js', 'data/club-leagues.js', ...readdirSync(resolve(ROOT, 'data')).filter((f) => f.endsWith('-data.js')).sort().map((f) => 'data/' + f)];
+  const files = ['data/clubs.js', 'data/currency-map.js', 'data/club-leagues.js', ...archivosData()];
   for (const f of files) { try { vm.runInContext(readFileSync(resolve(ROOT, f), 'utf8'), ctx, { filename: f }); } catch { /* un archivo roto no frena el backtest */ } }
   return vm.runInContext('({ clubs, sources, generic: window.CLUB_GENERIC_DATA || {} })', ctx);
 }

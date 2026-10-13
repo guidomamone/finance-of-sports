@@ -88,6 +88,7 @@ import { mismaFamilia } from './vocabulario.mjs';
 import { sinMarca, mismoPadre, padreEnClub } from './padres-filas.mjs'; // en qué nota está cada fila cargada (Versión 403)
 import { abrirCache } from './respuestas-cache.mjs'; // respuestas ya pagadas (Versión 321) // familia de etiquetas del precedente (Versión 321)
 import vm from 'node:vm';
+import { archivosData } from './data-clubes.js';
 
 const root = resolve(import.meta.dirname, '..');
 const envPath = resolve(root, 'Admin', 'api-keys', 'claude-api.env');
@@ -134,7 +135,7 @@ export function loadClubData() {
   if (_data) return _data;
   const sandbox = { console, window: {} }; sandbox.window.window = sandbox.window;
   const ctx = vm.createContext(sandbox);
-  const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js', ...readdirSync(resolve(root, 'data')).filter((f) => f.endsWith('-data.js')).sort().map((f) => 'data/' + f)];
+  const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js', ...archivosData()];
   for (const rel of files) vm.runInContext(readFileSync(resolve(root, rel), 'utf8'), ctx, { filename: rel });
   _data = vm.runInContext('window.CLUB_GENERIC_DATA', ctx);
   return _data;

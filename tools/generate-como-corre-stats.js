@@ -33,6 +33,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { archivosData } = require('./data-clubes.js');
 const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -47,7 +48,7 @@ function cargar() {
   const files = [
     'data/clubs.js', 'data/category-map.js', 'data/currency-map.js',
     'data/sources-view.js', 'data/site-labels.js', 'data/leagues.js',
-    ...fs.readdirSync(path.join(ROOT, 'data')).filter(f => f.endsWith('-data.js')).sort().map(f => 'data/' + f),
+    ...archivosData(),
   ];
   for (const rel of files) vm.runInContext(fs.readFileSync(path.join(ROOT, rel), 'utf8'), ctx, { filename: rel });
   return vm.runInContext('({ clubs, sources, LEAGUES })', ctx);

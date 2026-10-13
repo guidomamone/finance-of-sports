@@ -96,6 +96,7 @@ import { readFileSync, writeFileSync, existsSync, readdirSync, statSync, unlinkS
 import { resolve, relative, join, basename, dirname } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import vm from 'node:vm';
+import { archivosData, rutaData } from './data-clubes.js';
 
 // Los módulos que se reusan leen process.argv al importarse (alta-club.mjs: --escribir activa ANOTAR_MISSES y --anio fuerza el año;
 // proponer-carga.mjs: --tabla, --limit, --club...). Las opciones de ESTE comando no son las de ellos: se les pasa un argv limpio.
@@ -159,7 +160,7 @@ export function cargarSitio(root = ROOT) {
   const ctx = vm.createContext(sandbox);
   const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js', 'data/leagues.js', 'data/club-leagues.js',
     ...readdirSync(resolve(root, 'data/club-leagues')).filter((f) => f.endsWith('.js')).sort().map((f) => 'data/club-leagues/' + f),
-    ...readdirSync(resolve(root, 'data')).filter((f) => f.endsWith('-data.js')).sort().map((f) => 'data/' + f),
+    ...archivosData(),
     // (Versión 552, to-do 149) quién condujo cada club: data/gestiones/<país>.js
     ...(existsSync(resolve(root, 'data/gestiones')) ? readdirSync(resolve(root, 'data/gestiones')).filter((f) => f.endsWith('.js')).sort().map((f) => 'data/gestiones/' + f) : [])];
   for (const f of files) vm.runInContext(readFileSync(resolve(root, f), 'utf8'), ctx, { filename: f });
@@ -312,7 +313,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   if (!cr.clubId) { return corta('club', cr.via === 'ambigua' ? `la carpeta es ambigua (${cr.fuente})` : 'el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa'); }
   const clubId = cr.clubId; P.clubId = clubId;
   const club = sitio.clubs[clubId]; const cd = sitio.generic[clubId];
-  if (!club || !cd) { return corta('club', `${clubId} no tiene data/${clubId}-data.js registrado en CLUB_GENERIC_DATA`); }
+  if (!club || !cd) { return corta('club', `${clubId} no tiene ${rutaData(clubId)} registrado en CLUB_GENERIC_DATA`); }
   const alta = analizar(pdf, sitio);
   if (alta.error) { return corta('alta', alta.error); }
   const campo = (n) => alta.ejercicio.campos.find((c) => c.campo === n) || {};
@@ -924,7 +925,7 @@ export { snapshot, revertir, runNode };
 
 export function escribir(P) {
   const E = P.ejercicio; const id = E.clubId; const y = E.year;
-  const dataRel = `data/${id}-data.js`; const dataPath = resolve(ROOT, dataRel);
+  const dataRel = rutaData(id); const dataPath = resolve(ROOT, dataRel);
   const [paisCarpeta, clubCarpeta] = P.pdf.split('/').slice(1, 3);
   const fuentesMd = `Admin/sourcing/${paisCarpeta}/${clubCarpeta}.md`;
   const extra = existsSync(resolve(ROOT, fuentesMd)) ? [fuentesMd] : [];

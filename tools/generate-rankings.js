@@ -62,6 +62,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { archivosData } = require('./data-clubes.js');
 const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -93,8 +94,7 @@ function loadEngine() {
     'data/club-leagues.js',
     ...fs.readdirSync(path.join(ROOT, 'data/club-leagues')).filter(f => f.endsWith('.js')).sort()
       .map(f => 'data/club-leagues/' + f),
-    ...fs.readdirSync(path.join(ROOT, 'data')).filter(f => f.endsWith('-data.js')).sort()
-      .map(f => 'data/' + f),
+    ...archivosData(),
     'js/finanzas-calc.js',
   ];
   for (const rel of files) {

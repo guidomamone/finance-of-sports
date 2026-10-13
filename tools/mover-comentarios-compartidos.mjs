@@ -24,6 +24,7 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 import * as EV from './evidencia-club.mjs';
+import { archivosData, idDeArchivo } from './data-clubes.js';
 
 const require = createRequire(import.meta.url);
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -31,7 +32,7 @@ const { scan, normalizar } = require('./comparar-sin-comentarios.js');
 
 const args = process.argv.slice(2);
 const ensayo = args.includes('--ensayo') ? args[args.indexOf('--ensayo') + 1] : null;
-const clubIds = new Set(fs.readdirSync(path.join(ROOT, 'data')).filter((f) => f.endsWith('-data.js')).map((f) => f.replace(/-data\.js$/, '')));
+const clubIds = new Set(archivosData().map(idDeArchivo));
 const archivos = ['data/clubs.js', ...fs.readdirSync(path.join(ROOT, 'data/club-leagues')).filter((f) => f.endsWith('.js')).sort().map((f) => `data/club-leagues/${f}`)];
 const RE_FILA = /^\s*['"]?([a-z0-9-]+)['"]?\s*:\s*\{/;
 const texto = (t) => (t.startsWith('//') ? [t.replace(/^\/\/ ?/, '')] : t.replace(/^\/\*+ ?/, '').replace(/ ?\*+\/$/, '').split('\n').map((l) => l.replace(/^\s*\* ?/, '')));

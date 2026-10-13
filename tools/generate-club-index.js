@@ -48,6 +48,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { archivosData } = require('./data-clubes.js');
 const vm = require('vm');
 const { cierreEjercicio, cierreDelClub, esCalendario } = require('./cierre-ejercicio.js');
 
@@ -77,10 +78,7 @@ function loadData() {
   const ctx = vm.createContext(sandbox);
 
   const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js',
-    ...fs.readdirSync(path.join(ROOT, 'data'))
-    .filter(f => f.endsWith('-data.js'))
-    .sort()
-    .map(f => 'data/' + f)];
+    ...archivosData()];
 
   for (const rel of files) {
     const code = fs.readFileSync(path.join(ROOT, rel), 'utf8');

@@ -30,6 +30,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
+import { archivosData, idDeArchivo, rutaData } from './data-clubes.js';
 
 const require = createRequire(import.meta.url);
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -138,7 +139,7 @@ function textoDe(t) {
 // 2. Asignar cada comentario a su ancla y armar el .md.
 // ---------------------------------------------------------------------------
 function mudar(clubId, src) {
-  const rel = `data/${clubId}-data.js`;
+  const rel = rutaData(clubId);
   const { comments, decls, mask, lineOf } = analizar(src, rel);
   const L = src.split('\n');
   const piezas = []; // { grupo:'cabecera'|'anio'|'fuentes'|'otros', anio, seccion, sub, tipo:'texto'|'fila', lineas, fila, rawLabel, orden }
@@ -278,20 +279,20 @@ const args = process.argv.slice(2);
 const ensayo = args.includes('--ensayo') ? args[args.indexOf('--ensayo') + 1] : null;
 const forzar = args.includes('--forzar');
 let ids = args.filter((a, i) => !a.startsWith('--') && args[i - 1] !== '--ensayo');
-if (args.includes('--todos')) ids = fs.readdirSync(path.join(ROOT, 'data')).filter((f) => f.endsWith('-data.js')).map((f) => f.replace(/-data\.js$/, '')).sort();
+if (args.includes('--todos')) ids = archivosData().map(idDeArchivo).sort();
 if (!ids.length) { console.error('uso: node tools/mover-comentarios-data.mjs <clubId...> | --todos [--ensayo <dir>] [--forzar]'); process.exit(2); }
 
 let mal = 0, hechos = 0, sinComentarios = 0;
 for (const id of ids) {
-  const dataPath = path.join(ROOT, 'data', `${id}-data.js`);
-  if (!fs.existsSync(dataPath)) { console.log(`MAL ${id}: no existe data/${id}-data.js`); mal++; continue; }
+  const dataPath = path.join(ROOT, rutaData(id));
+  if (!fs.existsSync(dataPath)) { console.log(`MAL ${id}: no existe ${rutaData(id)}`); mal++; continue; }
   const src = fs.readFileSync(dataPath, 'utf8');
   const mdPath = path.join(ROOT, 'Admin', 'carga-clubes', `${id}.md`);
   const r = mudar(id, src);
   if (!r.n) { sinComentarios++; continue; }
   if (!ensayo && fs.existsSync(mdPath) && !forzar) { console.log(`MAL ${id}: ya existe Admin/carga-clubes/${id}.md (usar --forzar)`); mal++; continue; }
   if (r.errores.length) { console.log(`MAL ${id}: ${r.errores.join('; ')}`); mal++; continue; }
-  const destData = ensayo ? path.join(ensayo, 'data', `${id}-data.js`) : dataPath;
+  const destData = ensayo ? path.join(ensayo, rutaData(id)) : dataPath;
   const destMd = ensayo ? path.join(ensayo, 'Admin', 'carga-clubes', `${id}.md`) : mdPath;
   fs.mkdirSync(path.dirname(destData), { recursive: true }); fs.mkdirSync(path.dirname(destMd), { recursive: true });
   fs.writeFileSync(destData, r.nuevo); fs.writeFileSync(destMd, r.mdTxt);

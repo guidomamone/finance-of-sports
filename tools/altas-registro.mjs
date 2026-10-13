@@ -41,6 +41,7 @@
 import { readFileSync, writeFileSync, existsSync, renameSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
+import { rutaData } from './data-clubes.js';
 
 const ROOT = resolve(import.meta.dirname, '..');
 export const REGISTRO = resolve(ROOT, 'Admin', 'registros', 'altas-club.jsonl');
@@ -95,7 +96,7 @@ export function resumenAltas() {
     // El registro lo escribe alta-club.mjs --todos; un club que se dio de alta por otro camino después (lote.mjs --cargar, bfo-rusia.mjs)
     // sigue figurando "listo" o "con preguntas" hasta la próxima corrida. Si su data/<id>-data.js ya existe, cuenta como "existe".
     // Caso: el resumen del 2026-10-10 mostraba a Remo y a los 16 rusos como listos para alta.
-    const e = e0.clubId && e0.estado !== 'existe' && existsSync(resolve(ROOT, 'data', `${e0.clubId}-data.js`)) ? { ...e0, estado: 'existe' } : e0;
+    const e = e0.clubId && e0.estado !== 'existe' && existsSync(resolve(ROOT, rutaData(e0.clubId))) ? { ...e0, estado: 'existe' } : e0;
     porEstado[e.estado] = (porEstado[e.estado] || 0) + 1;
     for (const p of e.preguntas || []) preguntasPorCampo[p.campo] = (preguntasPorCampo[p.campo] || 0) + 1;
     resueltasPorClaude += (e.resueltas || []).length;

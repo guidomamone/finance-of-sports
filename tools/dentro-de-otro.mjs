@@ -42,6 +42,7 @@ import { resolve } from 'node:path';
 import vm from 'node:vm';
 import { ajustesDe } from './ajustes.mjs';
 import * as EV from './evidencia-club.mjs';
+import { archivosData, rutaData } from './data-clubes.js';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const HOY = new Date().toISOString().slice(0, 10);
@@ -54,7 +55,7 @@ export function motor() {
   sb.window = sb; const ctx = vm.createContext(sb);
   const run = (f) => vm.runInContext(readFileSync(resolve(ROOT, f), 'utf8'), ctx, { filename: f });
   for (const f of ['data/lang/langs.js', 'js/i18n.js', 'data/clubs.js', 'data/club-index.js', 'data/leagues.js', 'data/club-leagues.js', 'data/category-map.js', 'data/site-labels.js', 'data/currency-map.js', 'data/sources-view.js']) run(f);
-  for (const f of readdirSync(resolve(ROOT, 'data')).filter((x) => x.endsWith('-data.js')).sort()) run('data/' + f);
+  for (const f of archivosData()) run(f);
   run('js/finanzas-calc.js');
   // Las marcas que escribió esta misma tool no cuentan: se recalculan (ver cabecera). Fuera de memoria, para que esas filas vuelvan a "—".
   for (const d of Object.values(sb.CLUB_GENERIC_DATA)) for (const m of Object.values(d.fiscalYearMeta || {})) {
@@ -139,7 +140,7 @@ export function limpiar(t) {
 // para la evidencia del club (marcarClub la escribe en Admin/carga-clubes/<club>.md).
 function escribirClub(id, porAnio) {
   const notas = {};
-  const p = resolve(ROOT, `data/${id}-data.js`); let t = limpiar(readFileSync(p, 'utf8'));
+  const p = resolve(ROOT, rutaData(id)); let t = limpiar(readFileSync(p, 'utf8'));
   const ini = t.search(/const \w+FiscalYearMeta\s*=\s*\{/); if (ini < 0) throw new Error(`${id}: no encontré <club>FiscalYearMeta`);
   for (const [y, marcas] of Object.entries(porAnio)) {
     const abreObj = t.indexOf('{', ini); const cierraObj = cierreDe(t, abreObj);
@@ -177,7 +178,7 @@ export function marcarClub(id, { M = motor(), log = () => {} } = {}) {
       (porAnio[a.y] ||= []).push(...pr[lado].map((x) => ({ ...x, en: LUMP[lado] })));
     }
   }
-  const p = resolve(ROOT, `data/${id}-data.js`); const viejo = readFileSync(p, 'utf8');
+  const p = resolve(ROOT, rutaData(id)); const viejo = readFileSync(p, 'utf8');
   const antes = [...viejo.matchAll(MARCA_RE)].length;
   const despues = Object.values(porAnio).flat().reduce((k, x) => k + x.cats.length, 0);
   if (!antes && !despues) return { cambio: false, antes, despues, lineas };
@@ -208,10 +209,10 @@ async function main() {
   const s0 = escribir ? snap(evExtra) : null; const escritos = []; let antes = 0; let despues = 0; let filas = 0;
   try {
     for (const id of ids) {
-      if (escribir) { const r = marcarClub(id, { M, log: (l) => console.log(`  ${l}`) }); antes += r.antes; despues += r.despues; filas += r.lineas.length; if (r.cambio) escritos.push(`data/${id}-data.js`, EV.rutaRel(id)); continue; }
+      if (escribir) { const r = marcarClub(id, { M, log: (l) => console.log(`  ${l}`) }); antes += r.antes; despues += r.despues; filas += r.lineas.length; if (r.cambio) escritos.push(rutaData(id), EV.rutaRel(id)); continue; }
       // ensayo: lo mismo sin tocar el archivo
       const anios = aniosDe(M, id);
-      antes += [...readFileSync(resolve(ROOT, `data/${id}-data.js`), 'utf8').matchAll(MARCA_RE)].length;
+      antes += [...readFileSync(resolve(ROOT, rutaData(id)), 'utf8').matchAll(MARCA_RE)].length;
       for (const a of anios) { const pr = propuestasDe(M, anios, a); for (const lado of Object.keys(pr)) { console.log(`  ${id} ${a.y} ${lado.padEnd(8)}: ${pr[lado].map((x) => x.fila).join(', ')}  [precedente: ${pr[lado][0].otros.join(', ')}]`); despues += pr[lado].reduce((k, x) => k + x.cats.length, 0); filas++; } }
     }
     console.log(`\nMarcas por precedente en los archivos: ${antes} hoy → ${despues} después (por categoría; una fila puede ser varias). ${filas} lado(s)-año.${escribir ? '' : ' ENSAYO: agregá --escribir.'}`);

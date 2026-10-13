@@ -76,6 +76,7 @@ import { numeroDe, norm as normTxt } from './filas-rubro.mjs';
 import { paginasConNumeros } from './paginas-con-numeros.mjs';
 import { derivado, ubicar } from './rutas.mjs';
 import { TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE } from './vocabulario.mjs';
+import { archivosData } from './data-clubes.js';
 
 const root = resolve(import.meta.dirname, '..');
 
@@ -237,7 +238,7 @@ export function cargarSitio() {
   if (SITE) return SITE;
   const sandbox = { console: { log() {}, warn() {}, error() {} }, window: {} }; sandbox.window.window = sandbox.window;
   const ctx = vm.createContext(sandbox);
-  const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js', ...readdirSync(resolve(root, 'data')).filter((f) => f.endsWith('-data.js')).sort().map((f) => 'data/' + f)];
+  const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js', ...archivosData()];
   for (const rel of files) vm.runInContext(readFileSync(resolve(root, rel), 'utf8'), ctx, { filename: rel });
   SITE = vm.runInContext('window.CLUB_GENERIC_DATA', ctx) || {};
   return SITE;

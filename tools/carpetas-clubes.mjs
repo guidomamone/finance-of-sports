@@ -32,6 +32,7 @@
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import vm from 'node:vm';
+import { archivosData, idDeArchivo, rutaData } from './data-clubes.js';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
@@ -45,11 +46,11 @@ function cargar() {
   const clubs = vm.runInContext('clubs', ctx);
   // 1. citas: "<País>/<Club>" -> Set(clubId)
   const citas = {};
-  for (const f of readdirSync(resolve(ROOT, 'data')).filter((x) => x.endsWith('-data.js'))) {
-    const id = f.replace(/-data\.js$/, '');
+  for (const f of archivosData()) {
+    const id = idDeArchivo(f);
     // la cita está en el data file o, desde el to-do 209 (data/ sin comentarios ni `note`), en la evidencia del club: se leen los dos
     const ev = resolve(ROOT, 'Admin', 'carga-clubes', `${id}.md`);
-    const txt = readFileSync(resolve(ROOT, 'data', f), 'utf8') + (existsSync(ev) ? `\n${readFileSync(ev, 'utf8')}` : '');
+    const txt = readFileSync(resolve(ROOT, f), 'utf8') + (existsSync(ev) ? `\n${readFileSync(ev, 'utf8')}` : '');
     for (const m of txt.matchAll(/Clubes\/([^/\n`'"]+)\/([^/\n`'"]+)\//g)) (citas[`${m[1]}/${m[2]}`] ??= new Set()).add(id);
   }
   // País de cada carpeta de país, deducido de las citas (solo si es inequívoco).
@@ -67,8 +68,8 @@ export function clubDeCarpeta(paisCarpeta, clubCarpeta) {
   const { clubs, citas, iso } = cargar();
   const k = `${paisCarpeta}/${clubCarpeta}`;
   const c = citas[k];
-  if (c && c.size === 1) { const id = [...c][0]; return { clubId: id, via: 'cita', fuente: `data/${id}-data.js` }; }
-  if (c && c.size > 1) return { clubId: null, via: 'ambigua', ids: [...c], fuente: `la citan ${[...c].map((i) => `data/${i}-data.js`).join(', ')}` };
+  if (c && c.size === 1) { const id = [...c][0]; return { clubId: id, via: 'cita', fuente: rutaData(id) }; }
+  if (c && c.size > 1) return { clubId: null, via: 'ambigua', ids: [...c], fuente: `la citan ${[...c].map((i) => rutaData(i)).join(', ')}` };
   const pais = iso[paisCarpeta];
   if (pais) {
     const t = norm(clubCarpeta);
