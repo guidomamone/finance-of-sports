@@ -69,7 +69,7 @@ ni en el comentario de ningún archivo de código.
     nuevos de Grecia, Rep. Checa, Portugal, Noruega, Países Bajos y Turquía cargadas (to-do 195).
     FALTA, en este orden:
     a) GRECIA: lote 67 corrido (2026-10-13). Cargados: Asteras 2019-2020, Levadiakos 2019-2025, OFI 2018-2025, AEK 2016-2020. Falta:
-       Asteras 2021 ("Estadio en 0": `--reintentar` con una lista solo de ese documento; 2022-2025 cargados), AEK 2021-2025 (to-do 220), Panserraikos 2023 y 2025 (categoría y perfil),
+       AEK 2021-2025 (to-do 220; Asteras completo 2019-2025), Panserraikos 2023 y 2025 (categoría y perfil),
        Volos 2019-2025 (2019-2020 categoría; 2021-2025 la pregunta del alta `reportType` y "Salarios del plantel en 0", que pide
        `--reintentar` con una lista solo de esos años). La cola la contesta un subagente (to-do 220).
     b) Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
