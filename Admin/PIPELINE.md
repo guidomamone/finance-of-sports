@@ -431,6 +431,8 @@ Mitigaciones:
   `tools/evidencia-club.mjs`; con `--reemplazar` saca SUS líneas de ese año (lo escrito a mano queda) y las vuelve a escribir. Si la
   auditoría da P0/P1, el `.md` se revierte junto con `data/`. `dentro-de-otro.mjs` hace lo mismo con su nota (en la meta de cada año
   marcado): como las marcas, en cada corrida saca TODAS sus notas del club y pone las de ahora.
+  `alta-club.mjs` crea el `.md` del club con su "## Cabecera" (de dónde salió cada campo, el color AUSENTE a propósito) y la liga del
+  año; `cargar-lote.mjs` / `bfo-rusia.mjs` cambian ahí el color al ponerlo, borran el `.md` si revierten el alta y lo incluyen en el commit.
 
 Riesgos:
 - i) el documento declara varios tipos de cambio;

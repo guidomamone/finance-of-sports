@@ -20,6 +20,8 @@
 //                                             bloque que queda vacío se va con su _nota:_. Lo escrito a mano no se toca: cada script
 //                                             reconoce SUS líneas por cómo empiezan. anio = null: en todos los años.
 //   ponerTabla(md, anio, seccion, filas)      reemplaza la tabla de filas de esa sección ([] la saca). filas: [{fila, rawLabel, nota}].
+//   agregarCabecera(md, lineas)               un bloque nuevo al final de "## Cabecera" (lo del club entero: alta, color).
+//   reemplazarTexto(md, viejo, nuevo)         un texto exacto por otro (el color del alta).
 // Después de cada operación, una sección o un año que quedaron vacíos se borran.
 // ============================================================================
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
@@ -134,6 +136,20 @@ export function ponerTabla(md, anio, seccion, filas) {
   return limpiar(L.join('\n'));
 }
 
+// "## Cabecera" (lo de todo el club: el alta, de dónde salió cada campo, el color): un bloque nuevo al final de esa sección. La crea, si no
+// está, antes del primer "## ".
+export function agregarCabecera(md, lineas) {
+  if (!lineas || !lineas.length) return md;
+  const L = md.replace(/\n+$/, '').split('\n');
+  let i = L.findIndex((t) => t.trim() === '## Cabecera');
+  if (i < 0) { let pos = L.findIndex((t) => RE_H2.test(t)); if (pos < 0) pos = L.length; L.splice(pos, 0, '## Cabecera', ''); i = pos; }
+  let pos = finDe(L, i, RE_H2); while (pos > i + 1 && L[pos - 1].trim() === '') pos--;
+  L.splice(pos, 0, '', ...fence(lineas), '');
+  return limpiar(L.join('\n'));
+}
+// Reemplaza un texto exacto en la evidencia (ej. "brandColor AUSENTE a propósito" -> "brandColor #c8102e" al ponerle el color a un club).
+export function reemplazarTexto(md, viejo, nuevo) { return md.includes(viejo) ? md.replace(viejo, nuevo) : md; }
+
 // secciones y años vacíos fuera; nunca más de una línea en blanco seguida; un salto al final
 function limpiar(md) {
   let L = md.split('\n');
@@ -146,5 +162,13 @@ function limpiar(md) {
       if (L.slice(k + 1, f).every((t) => t.trim() === '')) { L.splice(k, f - k); cambio = true; break; }
     }
   }
-  return L.join('\n').replace(/\n{3,}/g, '\n\n').replace(/\n*$/, '\n');
+  // una línea en blanco antes de cada título (fuera de los bloques de texto, que van tal cual)
+  const out = []; let enBloque = null;
+  for (const t of L) {
+    const f = /^(```|~~~)/.exec(t);
+    if (f) enBloque = enBloque === null ? f[1] : (t.trim() === enBloque ? null : enBloque);
+    else if (enBloque === null && /^#{1,3} /.test(t) && out.length && out[out.length - 1].trim() !== '') out.push('');
+    out.push(t);
+  }
+  return out.join('\n').replace(/\n{3,}/g, '\n\n').replace(/\n*$/, '\n');
 }

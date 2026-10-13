@@ -38,6 +38,11 @@ que dice `ESTADO.md` era verdad ese día.
   --escribir` en dos copias da el mismo código en `data/` en los 214 clubes, y las notas de los 15 clubes marcados están en su `.md`.
 - `caja-deuda.mjs`: el valor va a `data/` sin comentario y la nota de dónde salió a la meta del año en `Admin/carga-clubes/<club>.md`.
   Medido: `--medir` igual; `--club chievoverona-it --escribir` en dos copias da el mismo código y las 2 notas en el `.md`.
+- `alta-club.mjs`, `cargar-lote.mjs` y `bfo-rusia.mjs`: el alta ya no escribe comentarios en `data/clubs.js`, `data/<club>-data.js`,
+  `data/club-leagues/`, `data/leagues.js` ni `data/currency-map.js`; crea `Admin/carga-clubes/<club>.md` con la cabecera del alta y la liga.
+  El color se anota ahí al ponerlo, y el `.md` se borra si el alta se revierte y entra en el commit de cada año. Medido: ensayo del alta
+  igual (OH Leuven, FC Seoul); el alta real en dos copias da el mismo código en los 6 archivos de `data/`; color y reversión probados
+  sobre OH Leuven. `tools/evidencia-club.mjs` suma `agregarCabecera` y `reemplazarTexto`, y deja una línea en blanco antes de cada título.
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 

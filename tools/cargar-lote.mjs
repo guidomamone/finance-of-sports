@@ -35,6 +35,7 @@ import { readFileSync, writeFileSync, existsSync, unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { derivado } from './rutas.mjs';
+import * as EV from './evidencia-club.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARGS = process.argv.slice(2);
@@ -55,7 +56,7 @@ const ultimaLinea = (r) => { const ls = `${r.stdout || ''}\n${r.stderr || ''}`.s
 
 // Los archivos que toca un alta o una carga (generadores incluidos), para el commit y para revertir un alta.
 const SITIO = ['data', 'index.html', 'fuentes', 'fuentes.html', 'sitemap.xml'];
-const ADMIN = ['Admin/ajustes-manuales.jsonl', 'Admin/documentos-descartados.txt', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/categorias-aprendidas.jsonl', 'Admin/perfil-clubes.jsonl', 'Admin/cola-revision.jsonl', 'Admin/cargar-ultimo.jsonl', 'Admin/altas-club.jsonl'];
+const ADMIN = ['Admin/ajustes-manuales.jsonl', 'Admin/documentos-descartados.txt', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/categorias-aprendidas.jsonl', 'Admin/perfil-clubes.jsonl', 'Admin/cola-revision.jsonl', 'Admin/cargar-ultimo.jsonl', 'Admin/altas-club.jsonl', 'Admin/carga-clubes'];
 
 const descartados = new Set(leerLineas('Admin/documentos-descartados.txt'));
 const docs = leerLineas(LISTA).filter((d) => !descartados.has(d));
@@ -110,14 +111,18 @@ function ponerColor({ clubId, color, club, pais }) {
   const k = L.findIndex((l) => l.startsWith(`  '${clubId}': {`));
   if (k < 0 || !L[k].trimEnd().endsWith(' },') || L[k].includes('brandColor')) return false;
   L[k] = `${L[k].trimEnd().slice(0, -3)}, brandColor:${color === null ? 'null' : `'${color}'`} },`;
-  for (const n of [k - 2, k - 1]) if (n >= 0) L[n] = L[n].replace('brandColor AUSENTE a propósito', color === null ? 'brandColor:null a propósito' : `brandColor ${color}`)
-    .replace('// (nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).', `// (procedencia en fuentes/${pais}/${club}.md; tools/cargar-lote.mjs).`);
-  writeFileSync(p, L.join('\n')); return true;
+  writeFileSync(p, L.join('\n'));
+  // la nota del alta (to-do 209) está en la evidencia del club, no en data/clubs.js
+  let ev = EV.leer(clubId);
+  ev = EV.reemplazarTexto(ev, 'brandColor AUSENTE a propósito', color === null ? 'brandColor:null a propósito' : `brandColor ${color}`);
+  ev = EV.reemplazarTexto(ev, '(nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).', `(procedencia en fuentes/${pais}/${club}.md; tools/cargar-lote.mjs).`);
+  EV.guardar(clubId, ev);
+  return true;
 }
 function revertirAlta(clubId) {
   git('checkout', '-q', '--', ...SITIO.filter((x) => x !== 'fuentes'), 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html');
   git('checkout', '-q', '--', 'fuentes');
-  for (const f of [`data/${clubId}-data.js`, `fuentes/${clubId}.html`]) { try { unlinkSync(resolve(ROOT, f)); } catch { /* no estaba */ } }
+  for (const f of [`data/${clubId}-data.js`, `fuentes/${clubId}.html`, EV.rutaRel(clubId)]) { try { unlinkSync(resolve(ROOT, f)); } catch { /* no estaba */ } }
 }
 
 let commits = 0; const noEscritos = [];

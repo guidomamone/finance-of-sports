@@ -253,6 +253,7 @@ import { execFileSync } from 'node:child_process';
 import vm from 'node:vm';
 import { createHash } from 'node:crypto';
 import { clubDeCarpeta } from './carpetas-clubes.mjs';
+import * as EV from './evidencia-club.mjs';
 import { ajusteDe, ajustePerimetroDe } from './ajustes.mjs';
 import { agregarCaso, casoYRespuesta } from './cola.mjs';
 import { huellaEntradas, sha1Archivo, leerRegistro, guardarEnRegistro, resumenAltas, ESTADOS } from './altas-registro.mjs';
@@ -1317,16 +1318,17 @@ function proponerLiga(clubId, nombre, pais, anio, sitio, cierre = null) {
 // ============================================================================
 // ESCRITURA (--escribir)
 // ============================================================================
-function snapshot() {
+// `extra`: archivos de fuera de data/ que también se revierten (la evidencia del club, Admin/carga-clubes/<id>.md; si no existía, se borra).
+function snapshot(extra = []) {
   const archivos = new Map();
   const add = (p) => { if (existsSync(p) && statSync(p).isFile()) archivos.set(p, readFileSync(p)); };
   (function walk(d) { for (const e of readdirSync(d)) { const f = join(d, e); statSync(f).isDirectory() ? walk(f) : add(f); } })(resolve(ROOT, 'data'));
   for (const e of readdirSync(resolve(ROOT, 'fuentes'))) if (e.endsWith('.html')) add(resolve(ROOT, 'fuentes', e));
-  for (const f of ['index.html', 'fuentes.html', 'sitemap.xml', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html']) add(resolve(ROOT, f));
+  for (const f of ['index.html', 'fuentes.html', 'sitemap.xml', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', ...extra]) add(resolve(ROOT, f));
   return archivos;
 }
-function revertir(snap) {
-  const actual = snapshot();
+function revertir(snap, extra = []) {
+  const actual = snapshot(extra);
   let restaurados = 0; let borrados = 0;
   for (const [p, buf] of snap) if (!actual.has(p) || !actual.get(p).equals(buf)) { writeFileSync(p, buf); restaurados++; }
   for (const p of actual.keys()) if (!snap.has(p)) { unlinkSync(p); borrados++; }
@@ -1352,14 +1354,19 @@ function escribir(r) {
   const id = val('id');
   const hoy = new Date().toISOString().slice(0, 10);
   const escritos = [];
-  const snap = snapshot();
+  // (to-do 209) data/ se publica y no lleva comentarios: lo que el alta dice de dónde salió cada cosa va a la evidencia del club
+  const evExtra = [EV.rutaRel(id)];
+  const snap = snapshot(evExtra);
+  let ev = EV.leer(id);
   try {
     // 1. data/clubs.js
     const clubsPath = resolve(ROOT, 'data/clubs.js');
     let clubsJs = readFileSync(clubsPath, 'utf8');
     if (new RegExp(`['"]?${id}['"]?\\s*:\\s*\\{\\s*id:`).test(clubsJs)) throw new Error(`data/clubs.js ya tiene '${id}'`);
     const campos = [`id:${jsStr(id)}`, `name:${jsStr(val('name'))}`, `displayName:${jsStr(val('displayName'))}`, `country:${jsStr(val('country'))}`, `reportingCurrency:${jsStr(val('reportingCurrency'))}`, `fiscalYearStart:${jsStr(val('fiscalYearStart'))}`, `sport:${jsStr(val('sport'))}`];
-    const linea = `  // ${val('displayName')}: alta por tools/alta-club.mjs (${hoy}) desde ${r.documento}. brandColor AUSENTE a propósito\n  // (nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).\n  ${jsStr(id)}: { ${campos.join(', ')} },\n`;
+    const linea = `  ${jsStr(id)}: { ${campos.join(', ')} },\n`;
+    ev = EV.agregarCabecera(ev, [`${val('displayName')}: alta por tools/alta-club.mjs (${hoy}) desde ${r.documento}. brandColor AUSENTE a propósito`,
+      '(nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).']);
     clubsJs = insertarAntes(clubsJs, 'const clubs = {', /^\};$/m, linea, 'data/clubs.js');
     writeFileSync(clubsPath, clubsJs); escritos.push('data/clubs.js');
 
@@ -1375,26 +1382,21 @@ function escribir(r) {
       if (c.campo === 'sourceId') metaProp.sourceId = c.valor;
       if (c.campo === 'reportType') metaProp.reportType = c.valor;
     }
-    const fuentesCampo = [...r.campos, ...r.ejercicio.campos].map((c) => `//   ${c.campo.padEnd(18)} ${c.estado.padEnd(9)} ${c.valor === undefined ? '(ausente)' : JSON.stringify(c.valor)} — ${String(c.fuente || '').slice(0, 150)}`).join('\n');
-    const esqueleto = `// ============================================================================
-// data/${id}-data.js — ${val('name')} (${NOMBRE_PAIS_ES[val('country')] || val('country')}).
-// ALTA POR SCRIPT (tools/alta-club.mjs, ${hoy}), SIN EJERCICIOS CARGADOS TODAVÍA:
-// las estructuras de abajo están vacías a propósito. Los rubros, los totales
-// oficiales y el resto del fiscalYearMeta los agrega la etapa de carga
-// (tools/proponer-carga.mjs / sesión de onboarding), que es también la que
-// reemplaza esta cabecera por la de siempre (fuente, perímetro, categorización).
-//
-// Documento que originó el alta: ${r.documento}
-//
-// De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
-${fuentesCampo}
-//
-// FISCAL YEAR META PROPUESTO para ${r.ejercicio.anio} (NO registrado: un ejercicio con meta y
-// sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
-//   ${r.ejercicio.anio}: ${JSON.stringify(metaProp)}
-// ============================================================================
-
-const ${v}RevenueLinesByYear = {};
+    const fuentesCampo = [...r.campos, ...r.ejercicio.campos].map((c) => `  ${c.campo.padEnd(18)} ${c.estado.padEnd(9)} ${c.valor === undefined ? '(ausente)' : JSON.stringify(c.valor)} — ${String(c.fuente || '').slice(0, 150)}`);
+    ev = EV.agregarCabecera(ev, [
+      `data/${id}-data.js — ${val('name')} (${NOMBRE_PAIS_ES[val('country')] || val('country')}).`,
+      `ALTA POR SCRIPT (tools/alta-club.mjs, ${hoy}), SIN EJERCICIOS CARGADOS TODAVÍA: las estructuras del data file`,
+      'nacen vacías a propósito. Los rubros, los totales oficiales y el resto del fiscalYearMeta los agrega la etapa de carga.',
+      '',
+      `Documento que originó el alta: ${r.documento}`,
+      '',
+      'De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):',
+      ...fuentesCampo,
+      '',
+      `FISCAL YEAR META PROPUESTO para ${r.ejercicio.anio} (NO registrado: un ejercicio con meta y`,
+      'sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):',
+      `  ${r.ejercicio.anio}: ${JSON.stringify(metaProp)}`]);
+    const esqueleto = `const ${v}RevenueLinesByYear = {};
 const ${v}ExpenseLinesByYear = {};
 const ${v}FiscalYearMeta = {};
 const ${v}PresupuestoOverlayByYear = {};
@@ -1411,8 +1413,6 @@ window.CLUB_GENERIC_DATA[${jsStr(id)}] = {
   presupuestoOverlayByYear: ${v}PresupuestoOverlayByYear,
 };
 
-// Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
-// primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 Object.assign(sources, {
 });
 
@@ -1425,24 +1425,14 @@ memberCountByClub[${jsStr(id)}] = null;
     const liga = eVal('liga');
     const anio = r.ejercicio.anio;
     const ligaPath = resolve(ROOT, 'data/club-leagues', `${iso}.js`);
-    const filaLiga = `  // ${val('displayName')} (alta-club.mjs, ${hoy}): ${liga.valor ? `verificado contra ${liga.fuente}` : `SIN VERIFICAR (${liga.fuente})`}.\n  ${jsStr(id)}: { ${anio}: ${liga.valor ? jsStr(liga.valor) : 'null'} },\n`;
+    const filaLiga = `  ${jsStr(id)}: { ${anio}: ${liga.valor ? jsStr(liga.valor) : 'null'} },\n`;
+    ev = EV.agregarTexto(ev, anio, 'Liga', [`alta-club.mjs (${hoy}): ${liga.valor || 'null'}, ${liga.valor ? `verificado contra ${liga.fuente}` : `SIN VERIFICAR (${liga.fuente})`}.`]);
     if (existsSync(ligaPath)) {
       const txt = readFileSync(ligaPath, 'utf8');
       writeFileSync(ligaPath, insertarAntes(txt, 'Object.assign(window.CLUB_LEAGUE_BY_YEAR, {', /^\}\);$/m, filaLiga, `data/club-leagues/${iso}.js`));
     } else {
-      writeFileSync(ligaPath, `// ============================================================================
-// data/club-leagues/${iso}.js — en qué liga jugó cada club de ${NOMBRE_PAIS_ES[val('country')] || val('country')} en cada
-// ejercicio. Creado por tools/alta-club.mjs (${hoy}) al dar de alta el primer club del país.
-//
-// SE EDITA A MANO (o por alta-club.mjs), no lo genera ningún generador. Un archivo por
-// país (Versión 164). SE AUTOREGISTRA con Object.assign sobre la tabla que ya existe.
-//
-// LAS REGLAS (qué significa \`null\`, el criterio de "la categoría al cierre", por qué los
-// ids de liga nombran el escalón) están UNA sola vez, en la cabecera de
-// \`data/club-leagues.js\`. No se copian acá.
-// ============================================================================
-
-window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
+      // sin cabecera de comentario (to-do 209: data/ se publica); las reglas de estos archivos están en data/club-leagues.js
+      writeFileSync(ligaPath, `window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
 ${filaLiga}});
@@ -1456,7 +1446,7 @@ ${filaLiga}});
       const lp = resolve(ROOT, 'data/leagues.js');
       const lj = readFileSync(lp, 'utf8');
       const pad = `${p.iso2}: `;
-      writeFileSync(lp, insertarAntes(lj, 'const COUNTRIES = {', /^\};$/m, `  ${pad}{ name:${jsStr(p.name)}, key:'country.${p.iso2}', flag:'${p.flag}', region:'${p.region}' }, // alta-club.mjs ${hoy}\n`, 'data/leagues.js'));
+      writeFileSync(lp, insertarAntes(lj, 'const COUNTRIES = {', /^\};$/m, `  ${pad}{ name:${jsStr(p.name)}, key:'country.${p.iso2}', flag:'${p.flag}', region:'${p.region}' },\n`, 'data/leagues.js'));
       escritos.push('data/leagues.js');
       const ep = resolve(ROOT, 'data/lang/en.js');
       const ej = readFileSync(ep, 'utf8');
@@ -1472,17 +1462,18 @@ ${filaLiga}});
     let cm = readFileSync(cmPath, 'utf8'); let cmTocado = false;
     if (r.contexto.monedaNueva) {
       const m = r.contexto.monedaNueva;
-      cm = insertarAntes(cm, 'const CURRENCY_META = {', /^\};$/m, `  ${m.codigo}: { scale: ${m.scale}, unitSuffix: '${m.scale === 1000 ? 'mil M' : 'M'}' },          // ${NOMBRE_PAIS_ES[val('country')] || ''} (alta-club.mjs ${hoy})\n`, 'data/currency-map.js');
-      cm = insertarAntes(cm, 'const FX_PLAUSIBLE_RANGE = {', /^\};$/m, `  ${m.codigo}: [${m.rango.join(', ')}],${' '.repeat(Math.max(1, 9 - m.rango.join(', ').length))}// ${NOMBRE_PAIS_ES[val('country')] || ''} (alta-club.mjs ${hoy}, rango generoso de la tabla MONEDAS)\n`, 'data/currency-map.js');
+      cm = insertarAntes(cm, 'const CURRENCY_META = {', /^\};$/m, `  ${m.codigo}: { scale: ${m.scale}, unitSuffix: '${m.scale === 1000 ? 'mil M' : 'M'}' },\n`, 'data/currency-map.js');
+      cm = insertarAntes(cm, 'const FX_PLAUSIBLE_RANGE = {', /^\};$/m, `  ${m.codigo}: [${m.rango.join(', ')}],\n`, 'data/currency-map.js');
       cmTocado = true;
     }
     // 6. FX de mercado nuevo
     const fxc = r.ejercicio.campos.find((c) => c.campo === 'fxRef' && c.fxClose && c.estado === 'ok');
     if (fxc && !cm.includes(`'${fxc.valor}':`)) {
-      cm = insertarAntes(cm, 'const FX_CLOSE = {', /^\};$/m, `  '${fxc.valor}': { fx: ${fxc.fxClose.fx}, source: 'market_close', label: ${jsStr(fxc.fxClose.label)} }, // alta-club.mjs ${hoy} (tools/fx-reference/)\n`, 'data/currency-map.js');
+      cm = insertarAntes(cm, 'const FX_CLOSE = {', /^\};$/m, `  '${fxc.valor}': { fx: ${fxc.fxClose.fx}, source: 'market_close', label: ${jsStr(fxc.fxClose.label)} },\n`, 'data/currency-map.js');
       cmTocado = true;
     }
     if (cmTocado) { writeFileSync(cmPath, cm); escritos.push('data/currency-map.js'); }
+    escritos.push(EV.guardar(id, ev));
 
     // 7. ASSET_V (CLAUDE.md, "Gotchas de tooling"; audit.js lo exige como P1 `asset-v-sin-subir`
     // apenas cambia algo de data/): se sube la constante Y cada `?v=` literal de index.html, las
@@ -1511,12 +1502,12 @@ ${filaLiga}});
     const audit = runNode('tools/audit.js', ['--quiet']);
     const linea0 = (audit.out.match(/P0 \d+ · P1 \d+[^\n]*/) || [''])[0];
     if (audit.code !== 0) {
-      const rv = revertir(snap);
+      const rv = revertir(snap, evExtra);
       return { ok: false, motivo: `node tools/audit.js dio P0/P1 (${linea0}); se revirtió todo (${rv.restaurados} archivos restaurados, ${rv.borrados} borrados)`, audit: audit.out.slice(-3000), escritos };
     }
     return { ok: true, escritos, generadores: salidaGen, audit: linea0 };
   } catch (e) {
-    const rv = revertir(snap);
+    const rv = revertir(snap, evExtra);
     return { ok: false, motivo: `${e.message} — se revirtió todo (${rv.restaurados} restaurados, ${rv.borrados} borrados)`, escritos };
   }
 }
