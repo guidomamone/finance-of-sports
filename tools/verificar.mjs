@@ -1040,7 +1040,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const abrirExacta = (arr) => arr.flatMap((f) => {
       const hijas = filas.filter((h) => h.detalla_a && h.detalla_a.trim() === String(f.etiqueta).trim());
       const c = hijas.length >= 2 ? cerrarNota(Math.abs(f.M || 0), hijas, 'M', f.u || 0) : null;
-      if (!c || Math.abs(c.hojas.reduce((t, h) => t + h.valorNota, 0) - Math.abs(f.M || 0)) > 1e-9) return [f]; // al centavo, sin redondeo
+      if (!c) return [f];
+      // al centavo; o (escalón siguiente, decisión de Guido 2026-10-13) a UNA unidad impresa como máximo, con la diferencia como fila
+      // "Diferencia de redondeo" para que los totales no cambien. Caso: AEK 2024, 16.703.249 + 19.075.580 = 35.778.829 contra 35.778.830.
+      const dif = Math.abs(f.M || 0) - c.hojas.reduce((t, h) => t + h.valorNota, 0);
+      if (Math.abs(dif) > 1e-9 && Math.abs(dif) > (f.u || 0) + 1e-12) return [f];
+      if (Math.abs(dif) > 1e-9) c.hojas.push({ etiqueta: 'Diferencia de redondeo', lado: f.lado, valorNota: dif, linea: f.linea, bloque: f.bloque, tipo: 'renglon', origen: 'redondeo' });
       notas.push(`escalón "nota exacta en la lectura ${E.nivel}": "${f.etiqueta}" (L${f.linea}) se abre en las ${c.hojas.length} filas de su nota, que suman exacto el renglón`);
       return c.hojas.map((h) => ({ ...h, M: h.valorNota * (f.M < 0 ? -1 : 1), lado: f.lado, origen: `nota que desglosa "${f.etiqueta}"` }));
     });
