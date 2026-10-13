@@ -131,6 +131,27 @@ function columnasDeNotasConPunto(L) {
   return res;
 }
 
+// (to-do 224) RENGLÓN DE TEXTO CON CIFRAS ("Caja      1.234 5.678"): lo mismo que /^(.*?\p{L}[^\d(]*?)\s+(CIFRAS)\s*$/u, que se usaba
+// directo y era el 95% del tiempo de `--medir` (140 de 146 s): en una línea con una letra DESPUÉS de una tira de cifras con espacios, antes de
+// fallar probaba todas las maneras de repartir esos espacios entre "dentro del número" y "separador". Acá se prueban los mismos cortes en el
+// mismo orden (el rótulo más corto primero, como el .*? perezoso) y un corte se descarta enseguida si lo que sigue tiene un carácter que no
+// puede estar en las cifras; si pasa, la MISMA expresión de las cifras se corre sobre ese pedazo. Devuelve lo mismo que .match().
+const CIFRAS_RENGLON = /^([-(]?\d[\d.,' ]*\)?(?:\s+[-(]?\d[\d.,' ]*\)?)*)\s*$/u;
+const SOLO_CIFRAS = /^[\d.,'()\-\s]*$/u;
+function renglonDeTexto(t) {
+  let letra = -1; let corte = -1; // última letra y último dígito o "(": el rótulo (.*?\p{L}[^\d(]*?) termina en una letra seguida de nada de eso
+  for (let k = 0; k < t.length; k++) {
+    const ch = t[k];
+    if (/\s/u.test(ch) && letra > corte) {
+      let p = k; while (p < t.length && /\s/u.test(t[p])) p++;
+      const resto = t.slice(p);
+      if (/^[-(]?\d/u.test(resto) && SOLO_CIFRAS.test(resto)) { const m = resto.match(CIFRAS_RENGLON); if (m) return [t, t.slice(0, k), m[1]]; }
+    }
+    if (/\p{L}/u.test(ch)) letra = k; else if (/[\d(]/.test(ch)) corte = k;
+  }
+  return null;
+}
+
 // Las filas de la transcripción: etiqueta + cifras (tablas markdown y renglones de texto), con su página y su línea.
 export function filasDelMd(md) {
   const L = md.split('\n'); const filas = []; let pagina = 1; const textoPag = new Map();
@@ -156,7 +177,7 @@ export function filasDelMd(md) {
       [etiqueta, crudos, ixPrim, jPrim] = segmentos.shift();
     } else {
       const t = l.replace(/\*\*/g, ''); if (!/\p{L}{3,}/u.test(t) || !/\d/.test(t)) continue;
-      const mm = t.match(/^(.*?\p{L}[^\d(]*?)\s{2,}([-(\d].*)$/u) || t.match(/^(.*?\p{L}[^\d(]*?)\s+([-(]?\d[\d.,' ]*\)?(?:\s+[-(]?\d[\d.,' ]*\)?)*)\s*$/u);
+      const mm = t.match(/^(.*?\p{L}[^\d(]*?)\s{2,}([-(\d].*)$/u) || renglonDeTexto(t);
       if (!mm) continue; etiqueta = mm[1].trim(); crudos = (mm[2].match(IMPORTE_RE) || []);
     }
     const todas = [[etiqueta, crudos, ixPrim, jPrim], ...segmentos];

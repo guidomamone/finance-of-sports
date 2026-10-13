@@ -160,13 +160,9 @@ ni en el comentario de ningún archivo de código.
     (`--ejecutar --escribir`; la IA ya está en caché).
 
 224. LAS CORRIDAS SE ESTÁN VOLVIENDO LENTAS (pedido de Guido, 2026-10-13). MEDIDO: no hace falta una base de datos; el tiempo está en tres
-    puntos. HECHO (2): `cola.mjs` y `ajustes.mjs` leen su registro una vez por proceso (verificar --lista 237 documentos 36 s -> 3 s;
-    propuesta de carga de 129 documentos 206 s -> 94 s; idéntico). FALTA, de a uno, cada uno chico y commiteado antes del siguiente:
-      (1) `caja-deuda.mjs`, `filasDelMd`: la expresión de los renglones de texto ("Caja   1.234 5.678", `const mm = t.match(...)`) tiene
-          cuantificadores que se pisan (el espacio está en la clase y en el `\s+` de la repetición) y prueba millones de cortes por línea:
-          140 de los 146 s de `caja-deuda --medir`. Saltear las líneas que no terminan en cifra/punto/coma/paréntesis da idéntico (1.155.123
-          líneas, 0 distintas) pero solo ahorra 23%: hay que reescribir la expresión sin ambigüedad. Medir con una MUESTRA de .md (no los 2.800:
-          tarda 5 minutos) y después confirmar con `--medir`.
+    puntos. HECHO: (2) `cola.mjs` y `ajustes.mjs` leen su registro una vez por proceso (verificar --lista 237 documentos 36 s -> 3 s; propuesta
+    de carga de 129 documentos 206 s -> 94 s); (1) `caja-deuda.mjs` lee los renglones de texto sin la expresión que explotaba (`--medir`
+    155 s -> 17 s). Todo idéntico. FALTA:
       (3) `vocabulario.mjs`, `compilar()`: compilar las ~1.600 alternativas cuesta ~200 ms por proceso (cargar-lote lanza uno por documento).
           Agrupar bajo un solo límite de palabra los términos CONSECUTIVOS con los mismos límites (mismo orden, misma prioridad) baja la
           importación de 277 a 133 ms; falta probar equivalencia (cada expresión exportada, vieja contra nueva, sobre una muestra de etiquetas
