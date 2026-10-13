@@ -152,3 +152,26 @@ ni en el comentario de ningún archivo de código.
         `node tools/caja-deuda.mjs --club aekathens-gr --ejecutar --escribir` (~US$ 0,15).
       - Dudas opcionales del subagente para el club (no frenan): qué activos cubre "Μισθώματα" (¿el estadio?) y qué explica el salto de
         "Αμοιβές τρίτων" de 1,8 M (2018) a 6,8 M (2019).
+
+223. COLUMNA DE NOTAS EN CAJA-DEUDA COMO ESCALERA, NO COMO REGLAS (pedido de Guido, 2026-10-13: "estás haciendo reglas que deberían ser
+    escalones"). Hoy (`c08cc9f`, to-do 221) `filasDelMd` saca la celda de una columna de notas de varios niveles ("6.8") si la columna es la
+    primera numérica, sin comas, con punto y en orden creciente: condiciones apiladas para evitar falsos positivos. Funciona (medido: 921
+    filas pierden solo la nota, `--medir` idéntico; AEK 2017 caja 1.785.822,70) pero no reconoce AEK 2019 (repite "6.9" e imprime "6.13"
+    antes que "6.12", con encabezado "σημ.") y para arreglarlo se seguían agregando condiciones (encabezado O orden, "-" no cuenta, ningún
+    nivel en 0 porque Envigado 2016 tiene la columna "DICIEMBRE 2015" toda en "0.00"): descartado sin commitear. Diseño a proponer: DOS
+    LECTURAS de cada fila (A: como antes; B: sin la celda que cae en una columna con forma de nota) y que decida la compuerta del dato (año
+    anterior / documento siguiente / plausibilidad), la misma para las dos. Problema a resolver primero: en AEK 2016 la compuerta aceptó la
+    lectura A ("6.8") porque el documento siguiente tiene la misma columna; mirar 2-3 casos y ver qué compuerta, igual para todos, rechaza A
+    (por ejemplo, que la columna "año anterior" de la fila coincida con lo leído en el documento anterior). Medir con `filasDelMd` sobre
+    todos los .md antes y después (script del scratchpad: cifras de cada fila) y `caja-deuda.mjs --medir`. Después correr AEK
+    (`--ejecutar --escribir`; la IA ya está en caché).
+
+224. LAS CORRIDAS SE ESTÁN VOLVIENDO LENTAS (pedido de Guido, 2026-10-13: "¿tiene sentido armar algo más elaborado?"). Hoy todo es archivos:
+    `Admin/registros/*.jsonl` (cola-revision 5.800 líneas, transcripciones-estado 12.000, en total 22 MB), 232 MB de `Generados/`, 2.800 `.md`
+    en `Clubes/`, 218 data files que `loadSite()` evalúa con `vm` cada vez. Cada tool vuelve a leer y parsear todo (la cola se lee entera en
+    cada `respuestaDe`, `verificar.mjs --lista` sobre 237 documentos tarda minutos, `filasDelMd` sobre todos los .md más de 5 minutos).
+    Primero MEDIR dónde se va el tiempo (perfilar `lote.mjs` en ensayo, `verificar.mjs --lista`, `cola.mjs`, `cargar-lote.mjs`): sin eso no
+    se elige solución. Candidatos, de menos a más: (a) leer y parsear cada .jsonl una vez por proceso e indexarlo por pdf/clave (barato, sin
+    cambio de formato); (b) caché en disco de lo derivado con huella (sha1 del .md / del data file), como ya hacen `huellas.mjs` y la caché de
+    Jev; (c) una base SQLite (`node:sqlite` viene con Node 22) para la cola y los registros, con los .jsonl como exportación trackeada en git
+    para no perder el historial ni el diff. La skill `escala-finance-of-sports` tiene el mapa de puntos calientes: leerla antes de proponer.
