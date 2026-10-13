@@ -340,6 +340,15 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2021: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Pável Morózov (2015-01-01 a hoy): ru.wikipedia: en 2015 Morózov (dueño del holding Akron) creó la ANO 'Football Club Akron' y figura como dueño (solo año: día 01/01 por convención). Vedomosti (2023) dice que el club tiene cinco años, es decir 2018: las fuentes discrepan, no afecta a los cierres 2021 en adelante.
+Duda: No hallé que use el título de presidente: es dueño y financista; el director general es Konstantín Kliúshev.
+```
+
 ## Fuentes
 
 ### (general)

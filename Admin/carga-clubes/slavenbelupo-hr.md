@@ -126,6 +126,15 @@ Financijski prihodi(715) - Financijski rashodi(48.722).
 grossDebt = Obveze za revolving kredit - POBA (Nota 8). cash = Žiro računi (Nota 3).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Robert Markulin (2022-06-30 a hoy): Nacional.hr (30/06/2022) informa que fue elegido presidente en la asamblea electoral de ese día, sucediendo a Hrvoje Kolarić (en el cargo desde 2014); Sportklub lo confirma en la nota del 1/7/2022. Se tomó la fecha de la elección como inicio. Fue reelegido por cuatro años en junio de 2026 (HRT, 9/6/2026).
+Duda: Una búsqueda de prensa daba 2011 como primera elección de Markulin; las dos fuentes de 2022 lo contradicen y se descartó. Conviene que Guido lo mire si ya tenía otro dato.
+```
+
 ## Fuentes
 
 ### slavenbelupo-hr-financijsko-izvjesce-2025

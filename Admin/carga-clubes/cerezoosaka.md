@@ -33,6 +33,14 @@ Millones de JPY, Ejercicio 2025. Página 8: Ｃ大阪 2025年度 = 5.720 (+319 v
 Página 9 (Sponsor): 2.758. Página 10 (Gate): 1.164.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Takayuki Hioki (2025-04-01 a hoy): Anuncio del 2025-03-31 con vigencia 2025-04-01: Hiroaki Morishima pasa a 代表取締役会長 y Hioki (vicepresidente desde feb. 2025) asume la presidencia. Morishima era presidente desde dic. 2018 (no verificado el día exacto, no se cargó). Dueño: Yanmar y otros (varios accionistas, empresas).
+```
+
 ## Fuentes
 
 ### cerezoosaka-jleague-doc-2025

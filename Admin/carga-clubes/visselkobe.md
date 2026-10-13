@@ -26,6 +26,15 @@ Millones de JPY, Ejercicio 2025. Página 8: 神戸 2025年度 = 8.711 (+644 vs. 
 Página 9 (Sponsor): 3.025. Página 10 (Gate): 1.441.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Yuki Senfu (2022-06-01 a hoy): Kobe Shimbun (2022-05-27): Tokuyama deja y Senfu asume el 2022-06-01. Sigue en 2026 (comunicado de la prefectura de Hyogo, jul. 2026). El dueño es Rakuten (empresa); Hiroshi Mikitani figura como chairman/presidente del directorio, pero el criterio del proyecto manda cargar al 代表取締役社長 cuando el dueño es una empresa.
+Duda: Posible discusión de criterio: Mikitani (fundador/CEO de Rakuten) es 会長 del club. Se cargó a Senfu por regla (dueño = empresa).
+```
+
 ## Fuentes
 
 ### visselkobe-jleague-doc-2025

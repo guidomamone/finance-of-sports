@@ -130,6 +130,15 @@ cabecera) — SOLO para que el PAT cierre, el label real se fuerza vía extraRow
 Financijski prihodi(0.000028) - Financijski rashodi(0.087833) - Neto tečajne razlike(0).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Branko Devidé Vincenti (2018-07-03 a hoy): Nogometplus.net (3/7/2018) lo da como nombrado presidente tras la compra del club por el grupo Baskonia-Alavés la semana anterior; la fecha usada es la de la nota, no la de un acta. Hoy figura en el registro como presidente de la Uprava del s.d.d. (Fina, fininfo y Wikipedia). Dueño: Baskonia-Alavés Group, una empresa, por eso se carga al presidente.
+Duda: El 2018-07-03 es la fecha del artículo; la fecha exacta del acta de nombramiento no se encontró.
+```
+
 ## Fuentes
 
 ### istra-hr-financijsko-izvjesce-2025

@@ -251,6 +251,16 @@ déficit real, 6,8x maior que 2024) — revenue-expenses+netInterest da EXACTO -
 diferença de redondeo.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Matheus Souto Maior (2025-12-19 a hoy): Elegido el 15-12-2025 en elección suplementaria (795 votos) y posesionado el viernes 19-12-2025 en la Ilha do Retiro (Diario de Pernambuco). Completa el mandato de Yuri Romão hasta fin de 2026 (mandato-tampão).
+Duda: El ejercicio 2025 casi entero fue de Yuri Romão (renuncia anunciada 27-11-2025, último día 12-12-2025); hubo un hueco 12 al 19-12-2025 sin presidente titular. Los balances 2025 los aprobó Souto Maior (campo firmo no necesario: el cierre cae en su gestión).
+Duda: No se verificó que siga hoy en octubre 2026 más allá de una nota de agosto 2026.
+```
+
 ## Fuentes
 
 ### sportrecife-br-demonstracoes-2025

@@ -212,6 +212,15 @@ _al lado del campo `grossDebt`:_
 490,377 (corriente) + 13.817,537 (no corriente)
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Michael Clark Varela (2021-09-30 a 2026-04-23): Elegido por el directorio de Azul Azul tras la renuncia de Cristián Aubert como presidente. Diario Financiero da el 30/9/2021; Wikipedia en inglés y la prensa 1/10/2021 (fecha del anuncio); se usó el 30/9. Renunció el 23/4/2026 (hecho esencial a la CMF), Cecilia Pérez asumió interina. Clark controla ~63% vía un fondo (entidad), por eso no es 'dueño'.
+Duda: Discrepancia 30/9 vs 1/10/2021 (y un 21/10/2021 en el cuerpo de Wikipedia) para el inicio; no afecta ningún cierre.
+```
+
 ## Fuentes
 
 ### udechile-cl-estados-financieros-2024

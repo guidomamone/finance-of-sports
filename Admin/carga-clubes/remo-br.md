@@ -467,6 +467,17 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2019: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2019 Campeonato Brasileiro Série C" (tools/club-league-reference/br.js
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Antônio Carlos Teixeira (2023-11-12 a hoy): Elegido el domingo 12/11/2023 con 61,6% de los votos; la prensa lo muestra ejerciendo desde ese día (Romanews/O Liberal); mandato de tres años (hasta fin de 2026). No se encontró una ceremonia formal.
+SIN CONFIRMAR, no cargada: Fábio Osório Bentes (2019-01-01 a 2023-11-12), https://www.oliberal.com/esportes/remo/fabio-bentes-e-reeleito-presidente-do-clube-do-remo-1.335338: Elegido el 10/11/2018 (627 votos) para 2019/2020; la fecha de posse no se encontró: 01/01/2019 es el inicio del bienio (inferido). Reelecto el 11/12/2020 por tres años y empossado ese día (O Liberal). Hasta = 12/11/2023, día de la elección de Tonhão (la prensa dice que dejó la presidencia tras la votación).
+Duda: Cierre 2023: Bentes presidió hasta el 12/11/2023; Tonhão al cierre (posible firmo=[2022] o similar).
+Duda: Fecha exacta de posse de Bentes (2018-11 / 2019-01).
+```
+
 ## Fuentes
 
 ### (general)

@@ -185,6 +185,17 @@ Notas 22+23+24+25+26). officialPAT = 'LUCRO (PREJUÍZO) DO EXERCÍCIO' impreso
 (-3,543877 M BRL / R$-3.543.877), EXACTO contra revenue-expenses+netInterest.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Eduardo Esteves (2022-10-01 a 2025-11-17): Torcedores (24/11/2023): asumió en octubre de 2022 (era vice de Alfredo Cristóvão, que salió) -> día 01 por convención (solo mes). Reelecto el 23/11/2023 hasta noviembre de 2025. Hasta: el sitio oficial del club dice que el Conselho Deliberativo instaló a De Martin el lunes 17/11/2025.
+Alessander De Martin (2025-11-17 a hoy): Sitio oficial del club: instalado como presidente ejecutivo para el bienio 2026/2027 el 17/11/2025; Esteves queda de vice.
+Duda: El balance es de 'Botafogo Futebol S.A.' (SAF). La Wikipedia en inglés indica SAF Owner: BFC (60%), un grupo inversor; no se encontró quién preside el Conselho de Administração de Botafogo S.A. (De Martin figura como vice del consejo en 2021). Se cargó al presidente del club que la prensa presenta como tal; si Guido prefiere el presidente del consejo de la S.A. falta ese dato.
+Duda: Cierre 2024 firmado cuando Esteves aún era presidente (sin cambio entre cierre y aprobación).
+```
+
 ## Fuentes
 
 ### botafogosp-br-demonstracoes-2024

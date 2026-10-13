@@ -224,6 +224,17 @@ Financeiro Líquido, que el documento sumó dentro del "Despesas Operacionais" i
 officialPAT = "Superávit/Déficit do Exercício" impreso (−4,530791).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Marco Antônio Eberlin (2022-01-01 a 2026-01-01): GE (29-11-2021): elegido por el Conselho Deliberativo presidente 'para o quadriênio 2022-2025' (solo años: desde 2022-01-01; Jovem Pan dice que la gestión empieza en enero). Hasta 2026-01-01: Torrano asumió en enero 2026 (Band, 19-01-2026); Eberlin pasó a vicepresidente.
+SIN CONFIRMAR, no cargada: Luiz Antônio Alves Torrano (2026-01-01 a hoy), https://www.band.com.br/band-multi/campinas-e-regiao/noticias/ponte-preta-torcida-organizada-convoca-protesto-devido-a-fase-do-time-202601191443: Presidente desde enero de 2026 (Band Multi 19-01-2026 y Wikipedia pt); sin fecha exacta, día 01. En mayo 2026 consejeros pidieron en la Justicia su apartamiento inmediato (Correio da Manhã).
+Duda: Falta la fecha exacta de posse de Eberlin (enero 2022) y de Torrano (enero 2026).
+Duda: El estado del pedido judicial contra Torrano (mayo 2026) no se verificó.
+```
+
 ## Fuentes
 
 ### pontepreta-br-balanco-2021-2022

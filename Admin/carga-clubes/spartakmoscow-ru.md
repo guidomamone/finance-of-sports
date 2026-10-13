@@ -290,6 +290,16 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2021: tools/cargar.mjs 2026-10-10, SIN VERIFICAR
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Leonid Fedun (2004-01-01 a 2022-08-22): ru.wikipedia: de 2004 a 2022 dueño y presidente/presidente del consejo (solo año: día 01/01). Hasta: el 22/08/2022 Lukoil anunció la compra del 100 % del club (fecha de venta; la renuncia al cargo no tiene fecha propia).
+Alexandr Matitsin (2022-09-26 a hoy): ru.wikipedia: el 26/09/2022 el primer vicepresidente de Lukoil fue elegido presidente del consejo.
+Duda: Entre el 22/08 y el 26/09/2022 no hay cierre; la fecha de salida de Fedun es la de la venta. Dueño actual: Lukoil (empresa) por lo que se cargó al presidente del consejo.
+```
+
 ## Fuentes
 
 ### (general)

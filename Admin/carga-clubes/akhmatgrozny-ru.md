@@ -258,6 +258,16 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2022: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Magomed Daudov (2011-01-01 a 2024-05-23): ru.wikipedia: presidente 2011-2024 (solo años: inicio día 01/01 por convención). Hasta: Meduza y Novaya Gazeta (2024-05-23) informan que dejó el cargo y que lo reemplazó Ajmat Kadírov.
+Ajmat Kadírov (2024-05-23 a hoy): Meduza 2024-05-23: a los 18 años, hijo de Ramzán Kadírov, presidente del club.
+Duda: El balance 2023 se aprobó en 2024; si fue después del 23/05/2024 firmó Kadírov: avisar por firmo. Director general: Ajmed Aidamírov (sin fecha).
+```
+
 ## Fuentes
 
 ### (general)

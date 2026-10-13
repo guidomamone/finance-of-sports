@@ -384,6 +384,18 @@ EXACTO contra el documento ORIGINAL de 2022 (no la versión "Reapresentado" de -
 muestra la columna comparativa del documento 2023 — ver comentario de cabecera, Nota 1.4).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Ronaldo Nazário (2022-01-01 a 2024-04-29): Dueño del 90% de la SAF (vía Tara Sports). Itatiaia (29-04-2024) dice que 'geria a empresa desde janeiro de 2022' y que 'a oficialização da compra só ocorreu de fato em março' de 2022; otras fuentes dan firma del contrato el 8-04-2022 y confirmación del club el 14-04-2022. Se usa 2022-01-01 (inicio de gestión según Itatiaia; día 01 por mes sin día). Hasta 2024-04-29: anuncio y firma de la venta a Pedro Lourenço.
+SIN CONFIRMAR, no cargada: Pedro Lourenço (2024-04-29 a hoy), https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/futebol-mineiro/cruzeiro/pedro-lourenco-oficializa-compra-do-cruzeiro-saf-junto-a-ronaldo-veja-detalhes/: Compró el 90% de la SAF (vía BPW Sports); firma/anuncio el 29-04-2024 en la Toca da Raposa II (Itatiaia). El balance 2023 aclara que el acuerdo estaba sujeto a condiciones precedentes (CADE y concordancia de la Associação); la nota de EconomicNews (2024-06-15) habla de aprobación del CADE en junio, sin fecha de cierre formal. Por eso confirmada:false: 29-04-2024 es la firma, no necesariamente el cierre. En 2023 ya había aportado R$100 millones (20% convertido). Es el primero del Conselho de Administração en los balances 2024 y 2025 (Clubes/Brasil/Cruzeiro).
+Duda: AVISO firmo: el balance 2023 (cierre 2023-12-31) se aprobó/firmó el 15-05-2024, DESPUÉS de la venta a Lourenço (29-04-2024). El ejercicio es de la gestión Ronaldo, pero lo aprobó la gestión Lourenço.
+Duda: Firmantes ejecutivos distintos del dueño: 2022 'Presidente' Gabriel R. Lima (declaración del 05-05-2023); balance 2024 y 2025 firmados por Pedro Junio de Oliveira como 'Diretor Presidente'. Se cargó al dueño por la regla (persona con nombre). Si Guido prefiere al ejecutivo, hay que investigar sus fechas.
+Duda: Ronaldo siguió en el Conselho de Administração tras vender (aparece en los balances 2024 y 2025); no se carga como gestión.
+```
+
 ## Fuentes
 
 ### cruzeiro-informativo-financeiro-2025

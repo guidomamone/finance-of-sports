@@ -352,6 +352,16 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2021: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Gadzhi Gadzhiev (2019-01-01 a 2026-01-11): ru.wikipedia (ficha de Gadzhiev) lo da presidente de 'Majachkalá' desde 2019 (solo año: día 01 por convención) y de Dynamo 2021-2026. El club Majachkalá fue la base sobre la que se revivió Dynamo (anuncio 2021-06-29). Hasta: matchtv (2026-01-11) informa que la asamblea de fundadores abolió el cargo de presidente y le dio el título de Presidente Honorario. Fuente de la salida: https://matchtv.ru/football/matchtvnews_NI2284756_V_mahachkalinskom_Dinamo_uprazdnena_dolzhnost_prezidenta_kotoruju_zanimal_Gadzhi_Gadzhijev
+Duda: El balance 2025 se aprueba en 2026, ya sin presidente: firma el director general Shamil Gazizov (en el cargo desde verano de 2023 según Sport-Express); desde 2026-01-11 quien preside es Magomed Bagaudinov como presidente de la Asamblea General de Fundadores (sin fecha de asunción hallada). Avisar por el campo firmo.
+Duda: Gadzhiev asumió en 2019 en el club antecesor 'Majachkalá', no en la ANO 'Dynamo' actual; solo se conoce el año.
+```
+
 ## Fuentes
 
 ### (general)

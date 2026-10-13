@@ -294,6 +294,15 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2021: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Yelena Iliujina (2019-02-22 a hoy): Delovoi Peterburg (2019-02-22): quedó como presidenta interina del consejo al irse Diukov a la RFS; otras fuentes de prensa la dan como presidenta del consejo desde entonces (sin acta de confirmación). El dueño es Gazprom, por eso se cargó al presidente del consejo.
+Duda: Quien firma: presidente del directorio ejecutivo (Alexandr Medvédev hasta agosto 2025; Konstantín Ziriánov desde entonces, según Sport24/Match TV). La regla del proyecto lleva al presidente del consejo.
+```
+
 ## Fuentes
 
 ### (general)

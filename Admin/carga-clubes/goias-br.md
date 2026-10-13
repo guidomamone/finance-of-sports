@@ -1068,6 +1068,26 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 2008: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2008 Campeonato Brasileiro Série A" (tools/club-league-reference/br.js
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Sérgio Rassi (2014-01-01 a 2017-08-25): Aclamado presidente en 2014 (Diário de Goiás/Sagres: 2014-2017), reelecto en 2015; renunció el 25/08/2017 (viernes). Desde = 01/01/2014 por convención (solo año); no se encontró el mes.
+Paulo Rogério Pinheiro (2021-01-01 a 2023-12-18): Aclamado el 30/12/2020 para el trienio 2021-2023 y asumió el 1/1/2021 en lugar de Marcelo Almeida (O Popular/Futebol Interior). Hasta 2023-12-18: aclamación de Guidão el 15/12/2023 con posse prevista el 18; el sitio del club con la nota está hoy en 404.
+SIN CONFIRMAR, no cargada: Pedro Goulart (2007-01-01 a 2009-01-01), https://cleubercarlos.blogspot.com/2014/11/a-historia-secreta-do-goias-esporte.html: Blog de Cleuber Carlos (2014): 2008 fue el 'segundo año de la administración de Pedro Goulart'; Syd asumió en enero de 2009. Desde 2007-01-01 es inferido (segundo año = 2008). El mismo blog dice también 'biênio 2008/2009' para Syd (contradictorio). Fuente de baja calidad.
+SIN CONFIRMAR, no cargada: Syd de Oliveira Reis (2009-01-01 a 2010-12-31), https://diariodonordeste.verdesmares.com.br/jogada/syd-de-oliveira-e-eleito-o-novo-presidente-do-goias-1.932105: Diario do Nordeste (2008): elegido para el bienio 2009/2010; el blog dice que asumió en enero de 2009. En agosto de 2010 el Conselho pidió su renuncia y un blog dice que lo suspendió 30 días; ninguna fuente dice cuándo ni cómo terminó. Hasta 2010-12-31 es el fin del bienio, NO una fecha confirmada de salida.
+SIN CONFIRMAR, no cargada: Marcelo Gonçalves Almeida (2017-08-26 a 2021-01-01), https://www.goiasec.com.br/acervo/marcelo-almeida-e-o-novo-presidente-executivo-do-goias/: Era vice y asumió la presidencia ejecutiva tras la renuncia de Rassi: la nota del club (hoy 404) habla de 'sábado 26' sin año; el sábado 26 que sigue a la renuncia del 25/08/2017 es 26/08/2017 (inferencia mía). Ocupó el cargo hasta 2021 (PRP lo reemplaza el 1/1/2021).
+SIN CONFIRMAR, no cargada: Aroldo Guidão Filho (2023-12-18 a 2026-10-06), https://opopular.com.br/esporte/goias-aprova-mudanca-de-estatuto-e-aroldo-guid-o-assume-presidencia-ate-o-fim-do-ano-1.3445117: Aclamado presidente del Conselho de Administração el 15/12/2023 (posse prevista 18/12/2023); en agosto de 2026 un cambio de estatuto restableció la presidencia ejecutiva y quedó en ella hasta que renunció el martes 06/10/2026. La infobox de Wikipedia lo muestra como presidente. Cargo: figura relevante tras la reforma, no la presidencia ejecutiva de 2021-23.
+SIN CONFIRMAR, no cargada: Munir Calixto Júnior (2026-10-06 a hoy), https://maisgoias.com.br/esportes/apos-renuncia-guidao-goias-descarta-eleicoes-imediatas-define-novo-presidente: Vice jurídico, asume interino hasta la elección de diciembre de 2026.
+Duda: SIN COBERTURA: cierres 2011, 2012 y 2013. No se encontró quién presidía el Goiás tras Syd (2010) ni antes de Rassi (2014); el presupuesto de búsquedas web se agotó. Candidatos que cita la Tribuna do Planalto como indicados por Hailé Pinheiro (sin fechas): Rubens Brandão, Raimundo Queiroz, Pedro Goulart, Vagner Vilela, João Bosco Luz, João Gualberto, Cid de Oliveira.
+Duda: 2010: ¿quién presidió tras el pedido de renuncia/suspensión de Syd (agosto 2010)? No encontrado.
+Duda: Cierre 2017: Rassi renunció el 25/08/2017 y Almeida asumió; el balance 2017 pudo firmarse por Almeida (campo firmo no necesario si firmó el presidente al cierre).
+Duda: Cierre 2023: Paulo Rogério presidió casi todo el año; Guidão asume el 18/12/2023. Si el balance lo aprobó Guidão (2024) es lo que figura; revisar firmo=[2023] si corresponde.
+Duda: Hailé Pinheiro fue presidente del Conselho Deliberativo (figura de poder) durante todo el período; no se cargó porque no es el presidente ejecutivo.
+Duda: Gestión de Guidão: el cargo cambió de Presidente del Conselho de Administración (2023-2026) a presidente ejecutivo (agosto 2026); las fechas de posse 2023-12-18 no están confirmadas por una fuente leída (O Popular da 403 al leerla).
+```
+
 ## Fuentes
 
 ### (general)

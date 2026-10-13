@@ -162,6 +162,14 @@ completo) que solo suma 24,211 de los 26,414 impresos — agregar esos sub-ítem
 implicaría una falsa completitud (mismo criterio ya aplicado a "TV-Rechte" en este archivo).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Axel Hellmann (2021-04-01 a hoy): Wikipedia en alemán: miembro del Vorstand desde 2012 y Sprecher desde abril de 2021 (solo mes: día 01 por convención). Hessenschau y Bundesliga.com confirman que es portavoz desde 2021 y que renovó hasta 2031. Se cargó el cargo de portavoz del Vorstand, no el de Vorstandsvorsitzender, que no existe.
+```
+
 ## Fuentes
 
 ### eintrachtfrankfurt-de-konzernabschluss-2024

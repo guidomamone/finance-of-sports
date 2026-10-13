@@ -319,6 +319,16 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2021: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Artashés Arutiunián (2017-06-17 a 2025-10-15): Sport-Express 2017-06-17: nombrado presidente del club (accionista y miembro del consejo). Hasta 2025-10-15: RIA Novosti (rsport), renunció por voluntad propia (sigue como accionista y miembro del consejo).
+Duda: El cierre 2025-12-31 no queda cubierto: tras Arutiunián el club tiene director general (Ígor Goncharov desde 2025-06-10 según SE; Andréi Chaika desde 2026-07-17) y presidente del consejo Ígor Sorokin (vicegobernador de la región), cuya fecha de asunción no encontré. No cargué a nadie para 2025.
+Duda: Cargo cargado: presidente del club (figura ejecutiva), no el director general ni el presidente del consejo.
+```
+
 ## Fuentes
 
 ### (general)

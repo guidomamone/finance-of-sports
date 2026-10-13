@@ -75,4 +75,8 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Juan Carlos Trujillo Velásquez', corto:'Trujillo', cargo:'Presidente', desde:'2020-01-01', hasta:null,
       fuente:'https://www.las2orillas.co/?p=918944', confirmada:true },
   ],
+  'envigado': [
+    { nombre:'Óscar Armando Astudillo Palomino', corto:'Astudillo', cargo:'Presidente', desde:'2025-11-21', hasta:null,
+      fuente:'https://telemedellin.tv/?p=152246', confirmada:true },
+  ],
 });

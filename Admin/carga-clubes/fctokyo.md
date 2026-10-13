@@ -27,6 +27,14 @@ Millones de JPY, Ejercicio 2025. Página 8: FC東京 2025年度 = 7.210 (+221 vs
 Página 9 (Sponsor): 3.223. Página 10 (Gate): 1.439.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Shigeya Kawagishi (2022-02-01 a 2026-07-01): Soccer Magazine WEB dice que asumiría el 2022-02-01 (fecha prevista, nota previa al ingreso; MIXI toma la gestión). Reemplazó a Naoki Ohkane. El club confirma 'desde febrero de 2022'. Deja el cargo el 2026-07-01 (anuncio oficial 2026-05-28; sucesor Eisuke Shirai). Dueño: MIXI (empresa).
+```
+
 ## Fuentes
 
 ### fctokyo-jleague-doc-2025

@@ -121,6 +121,15 @@ del club ("Nettobilanzierung"), no hay ganancia/pérdida por venta de jugadores 
 netear acá.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Michael Ströll (2023-09-12 a hoy): Es Geschäftsführer desde el 22/8/2016 (b4bschwaben.de) y, según el club, Gesamtverantwortlicher (CEO) desde 2023: asumió la responsabilidad general cuando Stefan Reuter (hasta entonces Geschäftsführer Sport y cabeza) renunció el 12/9/2023 (Spox, Sky). Se usó esa fecha como inicio; el club solo dice 2023. Contrato renovado hasta el 30/6/2029. El Präsident (Markus Krapf desde 6/9/2022) es honorario y del e.V., no se cargó.
+Duda: La fecha 2023-09-12 es la renuncia de Reuter, la fecha en que Ströll asumió la responsabilidad general se infiere; el club solo dice 'desde 2023'.
+```
+
 ## Fuentes
 
 ### augsburg-de-konzernabschluss-2024

@@ -174,6 +174,14 @@ grossDebt = Bankovni i ostali zajmovi (corriente 5.124.513 + no corriente 0). ca
 novčani ekvivalenti.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Ivan Bilić (2024-04-25 a hoy): La lista oficial de presidentes de hajduk.hr da 25/4/2024 hasta hoy. La página de organización del club lo muestra como Predsjednik Uprave. Antes: Marinka Akrap (8/4/2024 a 25/4/2024, interina) y Lukša Jakobušić (30/10/2020 a 8/4/2024).
+```
+
 ## Fuentes
 
 ### hajduksplit-hr-financijsko-izvjesce-2024

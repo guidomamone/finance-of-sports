@@ -143,6 +143,15 @@ AVISO: 13 meses (1/6/2024 a 30/6/2025), no 12 — ver aviso de cabecera de este 
 OJO: ejercicio de 13 meses (1/6/2024 a 30/6/2025), NO 12 — ver aviso de cabecera del archivo.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Jeff Shi (2016-07-01 a 2025-12-19): Chairman desde la compra por Fosun en julio de 2016 (Express & Star; solo mes: dia 01); el club lo nombró Executive Chairman el 10/6/2017 (wolves.co.uk/news/club/20170611-jeff-shi-appointed-chairman). Salió el 19/12/2025, fecha del comunicado del club que nombra a Nathan Shi interino (https://www.wolves.co.uk/news/club/20251219-appointment-of-interim-executive-chairman/). Dueño: Fosun (empresa), por eso Chairman.
+Duda: El Chairman actual es Nathan Shi (interino desde 12/2025, luego permanente según un reporte de mayo 2026); no se cargó porque ningún cierre le corresponde. Si se quiere mostrar la gestión actual, falta fecha y fuente de su confirmación.
+```
+
 ## Fuentes
 
 ### wolves-gb-full-accounts-2024

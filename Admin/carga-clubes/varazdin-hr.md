@@ -103,6 +103,14 @@ Financijski prihodi PR-7(0.005573) - Financijski rashodi RA-7(-0.019059).
 POREZNI PRIHODI (RASHODI) PD.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Dražen Vitez (2021-03-23 a hoy): Elegido presidente del club en la asamblea electoral del 23/03/2021 (evarazdin.hr), sucediendo a Stjepan Cvek. Al transformarse en s.d.d. (asamblea fundacional del 2/4/2025, registro el 28/04/2025) fue elegido Predsjednik Uprave por el Consejo de Supervisión, es decir continúa sin interrupción. Se unificó en una sola gestión.
+```
+
 ## Fuentes
 
 ### varazdin-hr-financijsko-izvjesce-2025

@@ -567,6 +567,20 @@ tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por pr
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Hugo Jorge Bravo (2019-12-09 a 2025-11-28): Posse 09/12/2019 (elegido 04/12/2019); reelecto el 17/12/2021, nuevo mandato desde el 18/12/2021 (lista de Wikipedia pt). Hasta 28/11/2025, posse de Fábio Brasil.
+Fábio Brasil de Castro (2025-11-28 a hoy): Aclamado y posse el viernes 28/11/2025 (Mais Goiás, O Popular); mandato hasta 2028.
+SIN CONFIRMAR, no cargada: Gutemberg Veronez (2014-12-01 a 2016-10-10), https://pt.wikipedia.org/wiki/Lista_de_presidentes_do_Vila_Nova_Futebol_Clube: Wikipedia pt (lista): tomó posse como interino tras la renuncia de Rodrigo Nogueira (que 'perto de deixar' el 26/11/2014, GE) y fue elegido el 01/12/2015 (posse 02/12/2015). Sagres Online: asumió 'a fines de 2014' y renunció 22 meses después. Desde = 2014-12-01 estimado (solo se sabe fines de 2014, tras el 26/11/2014); hasta = 10/10/2016, fecha de la nota de GE 'Gutemberg Veronez renuncia'.
+SIN CONFIRMAR, no cargada: Ecival Martins (2016-10-10 a 2019-12-09), https://pt.wikipedia.org/wiki/Lista_de_presidentes_do_Vila_Nova_Futebol_Clube: Nombrado interino por el presidente del consejo tras la renuncia de Guto (Oct 2016), elegido el 09/11/2016 (mandato tampón; posse 30/12/2016 según la lista) y luego mandato 2018-2019 (elegido 07/12/2017, posse 01/01/2018). Desde = 2016-10-10 es la fecha de la renuncia de Guto, no la de la asunción exacta.
+Duda: Cierre 2014: la posse de Guto Veronez fue en diciembre de 2014 (después del 26/11); si el 31/12/2014 ya estaba en el cargo está cubierto; si no, sería Rodrigo Nogueira (interino desde 18/03/2014).
+Duda: Cierre 2025: Hugo Jorge Bravo presidió casi todo el año; Fábio Brasil asumió el 28/11/2025 (posible firmo).
+Duda: La tabla de Wikipedia pt tiene filas sin nombre y notas con fechas cruzadas (2018-19, 2022-25); los nombres de esas filas los deduje de las notas/referencias.
+```
+
 ## Fuentes
 
 ### (general)

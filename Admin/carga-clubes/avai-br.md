@@ -480,6 +480,16 @@ tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por pr
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Francisco José Battistotti (2016-04-16 a 2022-01-01): Wikipedia pt (lista de presidentes): 16/04/2016, tras la renuncia de Nilton Macedo Machado el 15/04/2016; NSC Total confirma 'abril de 2016'. Su mandato terminó el 31/12/2021.
+Júlio César Heerdt (2022-01-01 a 2026-01-01): Elegido el 04/12/2021; posse el sábado 01/01/2022 en el auditorio de Ressacada (NSC Total). Mandato de cuatro años; terminó el 31/12/2025 (ND Mais). Hasta 2026-01-01 por convención del proyecto.
+Bernardo Pessi (2026-01-01 a hoy): Elegido el domingo 09/11/2025 (920 votos contra 841); mandato 01/01/2026 a 31/12/2029 (ND Mais, Futebol na Web).
+```
+
 ## Fuentes
 
 ### (general)

@@ -1136,6 +1136,18 @@ tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento siguiente): vocabulario: ninguna fila de deuda financiera (balance completo) = 0; cash escalón 0 (compuerta: documento siguiente): "Efectivo y Equivalentes al Efectivo" pág. 4
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Jaime Estévez Valencia (2010-05-03 a 2014-04-16): Nombrado presidente de Cruzados SADP el 3/5/2010 tras reunión de directorio (antes, Jorge O'Ryan 2009-2010). Hasta: el día que asumió Larraín (la fuente solo dice 2014); el día de salida es inferido.
+Luis Larraín Arroyo (2014-04-16 a 2016-07-25): Asumió el 16/4/2014 y renunció el 25/7/2016 (Wikipedia en inglés; comunicado del club).
+Juan Tagle Quiroz (2016-07-25 a 2026-04-20): Asumió el 25/7/2016; reelecto abril 2025. Hasta: el 20/4/2026 es el día en que el directorio eligió a Claro; la fuente no da el día exacto de la salida de Tagle.
+Matías Claro (2026-04-20 a hoy): Oficializado el 20/4/2026 en el directorio.
+Duda: Cierre 2025: el balance se aprueba en abril 2026, cuando Tagle sale y asume Claro (20/4/2026); si firmó Claro, hace falta el campo `firmo`. Ver la memoria del ejercicio. Los apellidos completos (Estévez Valencia, Tagle Quiroz) vienen de memoria y de Wikipedia; el 'nombre' publicado puede acortarse a lo que dicen las fuentes.
+```
+
 ## Fuentes
 
 ### catolica-cl-estados-financieros-2024

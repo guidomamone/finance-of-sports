@@ -286,6 +286,20 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2021: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Andrei Priamilov (2021-10-26 a 2022-01-21): 63.ru (2021-10-26): el consejo lo eligió presidente del consejo de directores (ministro de Finanzas de Samara); reemplazó a Kíslov.
+Gabibulla Jasaev (2022-01-21 a 2025-01-10): Samaragis (2022-01-21) informa su designación como presidente del consejo; Priamilov era el anterior. Su salida no tiene noticia propia: se toma la elección de Yákovlev.
+Dmitri Yákovlev (2025-01-10 a 2026-05-20): Sportmail/RIA (2025-01-10): el consejo elegido en la asamblea del viernes 10/01 tenía a Yákovlev como único candidato a presidente; oboz.info confirma la asamblea del 10/01/2025. Hasta: elección de Simónov.
+Maksim Simónov (2026-05-20 a hoy): Sportbox (2026-05-20): la asamblea de accionistas del 20 de mayo eligió a Simónov nuevo presidente del consejo.
+Duda: La salida de Jasaev y la fecha exacta de elección de Yákovlev como presidente (10/01/2025) salen de notas de prensa, no de un acta; no hay noticia de un presidente intermedio.
+Duda: Si el balance 2025 se aprobó después del 2026-05-20, firmó Yákovlev o Simónov: avisar por firmo.
+Duda: Cargo cargado: presidente del consejo de directores (club del gobierno regional de Samara); el director general (Tarján Dzhabrailov) es otra figura.
+```
+
 ## Fuentes
 
 ### (general)

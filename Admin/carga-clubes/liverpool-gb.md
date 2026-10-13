@@ -177,6 +177,15 @@ netInterest: Interest receivable (Nota 6, 3.162) menos Interest payable
 tal que pbt(-57.104)+tax(+13.626)=pat(-43.478).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Tom Werner (2010-12-01 a hoy): Chairman del club desde el 1/12/2010 (Wikipedia y prensa: anunciado el 25/11/2010, asumió el 1/12). El dueño es Fenway Sports Group (empresa), por eso se carga el Chairman. Sin salida encontrada: hasta null.
+Duda: No verifiqué si sigue de chairman en octubre 2026 (ninguna fuente indica un cambio).
+```
+
 ## Fuentes
 
 ### liverpool-gb-group-accounts-2024

@@ -92,6 +92,15 @@ El informe no separa resultado financeiro: la única cascada que publica es
 receita - custos - despesas = superávit, sin línea financiera intermedia.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Edson Antonio Ermenegildo (1995-01-01 a hoy): Wikipedia pt: club 'presidido desde 1995 por Edson Ermenegildo' (solo año; se usa 1995-01-01). Es también el prefecto de Mirassol (reelecto octubre 2024, A Gazeta). Firma el balance 2024 como PRESIDENTE (Clubes/Brasil/Mirassol/balancopatrimonial-modelo4-anual-01-12-2024assinado.md, firma digital 28-04-2025), lo que confirma que presidía en el cierre.
+Duda: El año 1995 es de Wikipedia; otras notas de prensa dicen '30 años al mando' (coherente). Falta el día/mes de asunción.
+```
+
 ## Fuentes
 
 ### mirassol-relatorio-auditoria-2024

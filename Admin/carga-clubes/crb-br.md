@@ -281,6 +281,16 @@ tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Mário Marroquim (2021-04-01 a hoy): Aclamado el viernes 05/03/2021 (chapa única) con posse el 1 de abril de 2021 (Gazeta Web, buscador). Reelecto el 18/12/2024 para 2025-2028.
+SIN CONFIRMAR, no cargada: Marcos Barbosa (2011-01-01 a 2021-04-01), https://www.tnh1.com.br/noticia/nid/sem-oposicao-marcos-barbosa-sera-aclamado-presidente-do-crb-pela-4a-vez/: TNH1 (2015-2016): comandaba el CRB desde 2011 y fue aclamado por cuarta vez (bienio 2017/2018). Desde 01/01/2011 por convención (solo año). Hasta = 01/04/2021, día de posse de Marroquim (la nota de Gazeta Web dice que la chapa 'Avante, Galo!' tomaría posse el 1 de abril); no se leyó una fuente que diga cuándo salió Barbosa. Confirmada false por esas dos razones.
+Duda: Fecha de aclamación de Marroquim (viernes 5): el mes (marzo 2021) lo deduje por el día de la semana y la posse del 1 de abril; no leí la nota completa (Gazeta Web).
+```
+
 ## Fuentes
 
 ### (general)

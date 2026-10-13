@@ -286,6 +286,17 @@ tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Márcio Tuma (2025-12-22 a hoy): Vice, asumió el lunes 22/12/2025 al renunciar Aguilera (Estado do Pará Online, 22/12/2025). Aclamación para 2027-28 prevista el 3 de noviembre (sin confirmar).
+SIN CONFIRMAR, no cargada: Maurício Ettinger (2021-01-01 a 2025-01-01), https://www.oliberal.com/esportes/futebol/e-hora-de-sair-de-cena-mauricio-ettinger-avalia-gestao-e-se-despede-do-paysandu-1.903032: Elegido el 03/12/2020; el club preveía posse el 01/01/2021 pero Sindiclubes PA dice que la ceremonia fue el 26/01/2021: se usa 01/01 (inicio de mandato), no confirmado. Reelecto el 07/12/2022 (2023-2024). Dejó el cargo el 31/12/2024 al terminar el segundo mandato (O Liberal).
+SIN CONFIRMAR, no cargada: Roger Aguilera (2025-01-01 a 2025-12-22), https://dol.com.br/esporte/esporte-para/881668/roger-aguilera-e-eleito-presidente-do-paysandu: Elegido el 05/11/2024 (689 a 244) para 2025-2026 (DOL/Belém.com.br); el 01/01/2025 deducido del inicio del mandato, ninguna nota leída da el día de posse. Renunció el 22/12/2025.
+Duda: Cierre 2025: Aguilera presidió casi todo el año; Tuma asumió el 22/12/2025 (posible firmo).
+```
+
 ## Fuentes
 
 ### (general)

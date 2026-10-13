@@ -69,4 +69,16 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'David Sullivan', corto:'Sullivan', cargo:'Chairman', desde:'2010-01-19', hasta:null,
       fuente:'https://www.fourfourtwo.com/news/on-this-day-in-2010-david-sullivan-and-david-gold-complete-west-ham-takeover-1610971214000', confirmada:true },
   ],
+  'liverpool-gb': [
+    { nombre:'Tom Werner', corto:'Werner', cargo:'Chairman', desde:'2010-12-01', hasta:null,
+      fuente:'https://en.wikipedia.org/wiki/Tom_Werner', confirmada:true },
+  ],
+  'wolves-gb': [
+    { nombre:'Jeff Shi', corto:'Jeff Shi', cargo:'Chairman', desde:'2016-07-01', hasta:'2025-12-19',
+      fuente:'https://www.expressandstar.com/sport/football/wolverhampton-wanderers/ten-years-of-fosun-the-highs-and-lows-of-jeff-shi-at-wolves-8782815', confirmada:true },
+  ],
+  'newcastle-gb': [
+    { nombre:'Yasir Al-Rumayyan', corto:'Al-Rumayyan', cargo:'Chairman', desde:'2021-10-07', hasta:null,
+      fuente:'https://www.pif.gov.sa/en/news-and-insights/press-releases/2021/nufc/', confirmada:true },
+  ],
 });

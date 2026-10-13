@@ -7,4 +7,18 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Aníbal Mosa', corto:'Mosa', cargo:'Presidente del Directorio', desde:'2024-04-26', hasta:null,
       fuente:'https://www.emol.com/noticias/Deportes/2024/04/26/1129128/anibalmosa-alfredostohwing-colocolo-blancoynegro-presidente.html', confirmada:true },
   ],
+  'udechile-cl': [
+    { nombre:'Michael Clark Varela', corto:'Clark', cargo:'Presidente del Directorio', desde:'2021-09-30', hasta:'2026-04-23',
+      fuente:'https://www.df.cl/mercados/bolsa-monedas/tras-cinco-anos-al-mando-michael-clark-renuncia-a-la-presidencia-de-azul', confirmada:true },
+  ],
+  'catolica-cl': [
+    { nombre:'Jaime Estévez Valencia', corto:'Estévez', cargo:'Presidente del Directorio', desde:'2010-05-03', hasta:'2014-04-16',
+      fuente:'https://derecho.uc.cl/en/exalumnos/derecho-uc-en-linea/y-despues-del-grado-exalumnos-derecho-uc/8379-exalumno-de-la-facultad-asumio-presidencia-del-directorio-de-cruzados-sadp', confirmada:true },
+    { nombre:'Luis Larraín Arroyo', corto:'Larraín', cargo:'Presidente del Directorio', desde:'2014-04-16', hasta:'2016-07-25',
+      fuente:'https://en.wikipedia.org/wiki/Luis_Larra%C3%ADn_Arroyo', confirmada:true },
+    { nombre:'Juan Tagle Quiroz', corto:'Tagle', cargo:'Presidente del Directorio', desde:'2016-07-25', hasta:'2026-04-20',
+      fuente:'https://es.wikipedia.org/wiki/Cruzados_SADP', confirmada:true },
+    { nombre:'Matías Claro', corto:'Claro', cargo:'Presidente del Directorio', desde:'2026-04-20', hasta:null,
+      fuente:'https://www.biobiochile.cl/noticias/deportes/futbol/universidad-catolica/2026/04/20/fue-fundador-de-cdf-cruzados-sadp-oficializa-a-matias-claro-como-presidente-tras-adios-de-juan-tagle.shtml', confirmada:true },
+  ],
 });

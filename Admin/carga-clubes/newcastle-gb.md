@@ -100,6 +100,15 @@ y Nota 12/5 (Amortisation/Impairment of players' registrations). Suma exacta a -
 officialTotalExpenses (sin exceptional_items, este ejercicio no tuvo ninguno).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Yasir Al-Rumayyan (2021-10-07 a hoy): Non-Executive Chairman desde el cierre de la compra el 7/10/2021 (comunicado del PIF). Wikipedia en inglés dice 19/11/2021: se usó la fecha del comunicado. Dueño: PIF (Estado saudí) con PCP y RB Sports, por eso Chairman. Sigue en 2026 según prensa.
+Duda: Discrepancia de fecha entre PIF (7/10/2021) y Wikipedia (19/11/2021).
+```
+
 ## Fuentes
 
 ### newcastle-gb-group-accounts-2025

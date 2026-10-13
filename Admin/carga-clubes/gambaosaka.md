@@ -26,6 +26,14 @@ Millones de JPY, Ejercicio 2025. Página 8: Ｇ大阪 2025年度 = 8.817 (+1.594
 Página 9 (Sponsor): 2.292. Página 10 (Gate): 1.451.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Naoto Mizutani (2025-01-01 a hoy): Comunicado oficial: 2025-01-01 asume como 代表取締役 (社長執行役員) y Tadashi Ono pasa a asesor, a confirmar por directorio ese mismo día tras junta extraordinaria de dic. 2024. Mizutani lo repite en su saludo de fin de temporada 2025. Dueño: Panasonic (empresa).
+```
+
 ## Fuentes
 
 ### gambaosaka-jleague-doc-2025

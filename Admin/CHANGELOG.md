@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 677 — Gestiones de 48 clubes (to-do 195) (2026-10-13)
+
+- 6 subagentes Sonnet investigaron las gestiones de los 74 clubes cargados que no tenían ninguna (Brasil, Rusia, Japón, Croacia, Alemania,
+  Inglaterra, Colombia, Chile, México y Perú), con fuente por gestión. Se cargaron solo las confirmadas: 67 gestiones de 48 clubes; archivos
+  nuevos `data/gestiones/ru.js` y `jp.js` (en `PAISES` de `js/finanzas-anios.js`) y su criterio en `Admin/gestiones-por-pais/`. Notas, lo no
+  confirmado y las dudas, en "## Gestiones" de cada club. Quedan sin cargar los que dependen de una decisión de criterio (to-do 195). ASSET_V 827.
+
 ## Versión 676 — To-do 211: una sola pregunta por cuadro en la cola (2026-10-13)
 
 - `verificar.mjs`: dos dudas de localizar y de extraer sobre el mismo cuadro (mismo primer bloque, que no sea el estado de resultados) van

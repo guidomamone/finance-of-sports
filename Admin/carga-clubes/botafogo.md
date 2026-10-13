@@ -357,6 +357,17 @@ que no hace falta excluir nada (a diferencia de 2024/2025). officialPAT = "Preju
 exercício" impreso (-101.095, negativo real, incluye el ítem excepcional de la venta LFU).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+John Textor (2022-03-03 a 2026-04-23): Desde: 3 de marzo de 2022, firma del contrato de transferencia del control de la SAF entre el presidente Durcesio Mello y el accionista Textor (comunicado del club citado por la prensa, p. ej. gazetasp.com.br/brasil/agora-e-oficial-john-textor-assina-contrato-e-e-o-novo-dono-do/); el pre-contrato era del 24-12-2021 y la AGE que emitió acciones es del 11-03-2022. Hasta: 23-04-2026, cuando el Tribunal Arbitral de la FGV lo apartó del comando de la SAF (la fuente wiki lo dice; decisión provisoria que él intenta revertir). El 01-07-2026 fue destituido además del Conselho de Administração (mktesportivo.com/2026/07/john-textor-e-afastado-oficialmente-do-conselho-da-saf-do-botafogo/). En los balances: 2024 firma la carta como 'Presidente da SAF Botafogo' y 2025 como 'Presidente do Conselho de Administração da SAF Botafogo' (transcripciones en Clubes/Brasil/Botafogo). Es persona con nombre y controlador (vía Eagle Football Holdings), por eso se carga a él.
+Duda: Desde 2026-04-23 el comando es discutido (director general interino Durcesio Mello, luego Eduardo Iglesias; Textor intenta revertir el apartamiento por vía judicial). No se carga ninguna gestión posterior porque no hay fuente firme de quién preside hoy; ningún cierre pedido cae ahí.
+Duda: La fecha 2026-04-23 es de una decisión provisoria del tribunal arbitral; si fuera revocada habría que reabrir el hasta de Textor.
+Duda: No se encontró fuente primaria (botafogo.com.br) con la fecha del 3-mar-2022; la fecha sale de resúmenes de prensa del comunicado oficial.
+```
+
 ## Fuentes
 
 ### botafogo-demonstracoes-2023

@@ -127,6 +127,15 @@ Financiera, pág. 9 — no aparece una línea de obligaciones financieras no cor
 Efectivo y equivalentes al efectivo (Nota 6, pág. 9).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Óscar Armando Astudillo Palomino (2025-11-21 a hoy): Firma como representante legal los estados financieros 2025 (dictamen del 4/3/2026). Telemedellín lo presentó como nuevo presidente el 21/11/2025: se usó esa fecha (de presentación; la fuente no dice día de posesión). Dueño: fondo ProFútbol (55%, no persona), por eso presidente.
+Duda: La fuente no dice a quién reemplazó (Ramiro Ruiz figuraba como presidente en 2024); Wikipedia en inglés aún lista a Manuel Valero. Fecha de posesión real sin confirmar.
+```
+
 ## Fuentes
 
 ### envigado-estados-financieros-2025

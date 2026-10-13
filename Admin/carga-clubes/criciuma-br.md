@@ -743,6 +743,25 @@ tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por pr
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Jaime Dal Farra (2015-12-08 a 2021-01-01): Aclamado nuevo presidente en reunión extraordinaria del Conselho Deliberativo el martes 08/12/2015 (club). Renunció el 14/05/2020 y siguió hasta el 31/12/2020 (OCP News 15/05/2020): hasta = 2021-01-01 por convención.
+Vilmar Guedes (2022-06-28 a 2024-12-05): Aclamado la noche del martes 28/06/2022 (Futebol Interior, 30/06/2022); la fuente no da fecha de posse: se usa la de aclamación. Renunció el jueves 05/12/2024 (ND Mais).
+Alexandre Farias (2024-12-05 a 2025-11-26): Vice-presidente administrativo, asumió interinamente al renunciar Guedes (05/12/2024) y siguió hasta la asunción de Canella (4oito). Anunció su renuncia el 09/12/2024 pero permaneció hasta las elecciones.
+Pedro Paulo Canella (2025-11-26 a hoy): Posse el miércoles 26/11/2025 en la ACIC (4oito); actividades desde el 27/11/2025. Mandato de tres años.
+SIN CONFIRMAR, no cargada: Antenor Angeloni (2010-01-01 a 2015-12-08), https://www.criciuma.com.br/noticias/o-clube/novo-presidente-e-empossado: Club (08/12/2015): Dal Farra reemplaza a Angeloni, 'que comandaba el club desde 2010' y renunció formalmente (4oito: renunció en octubre de 2015). Desde = 01/01/2010 (solo año, 'inicio de 2010'); hasta = 08/12/2015 (día de la aclamación de Dal Farra; no se sabe quién lo condujo entre la renuncia de octubre y esa fecha).
+SIN CONFIRMAR, no cargada: Anselmo Freitas (2021-01-01 a 2022-06-28), https://www.criciuma.com.br/noticias/o-clube/anselmo-freitas-e-eleito-presidente-administrativo: Sucedió a Dal Farra: 4oito y OCP lo indican, pero ninguna fuente leída da el día de asunción; 2021-01-01 es inferido del fin de Dal Farra el 31/12/2020. La Wikipedia pt dice 'elegido 17/12/2020' (no verificado). Fue reelecto/ratificado el 23/11/2021 para el trienio 2022-2024 (club). Salió antes del 28/06/2022 (Guedes fue aclamado 'tras la salida de Anselmo Freitas'); hasta = día de aclamación de Guedes, no la fecha de su salida.
+Duda: Cierre 2015: Dal Farra asumió el 08/12/2015; Angeloni presidió casi todo el año (posible firmo).
+Duda: Cierre 2022: Freitas presidió hasta ~junio; Guedes el resto.
+Duda: Cierre 2024: Guedes presidió casi todo el año; el interino Farias estaba al cierre (posible firmo).
+Duda: Cierre 2025: Farias hasta el 26/11; Canella al cierre.
+Duda: Quién condujo el club entre octubre y diciembre de 2015 (renuncia de Angeloni - posse de Dal Farra): sin dato.
+Duda: Wikipedia pt (texto) dice que Búrigo renunció en 2010 y que Angeloni volvió a su segundo mandato antes de la Série C 2010; el club dice que Angeloni 'comandaba desde 2010'. No afecta a los cierres cubiertos.
+```
+
 ## Fuentes
 
 ### (general)

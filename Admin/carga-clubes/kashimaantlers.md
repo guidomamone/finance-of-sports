@@ -86,6 +86,14 @@ club_doc-2025.pdf: 鹿島 2025年度 = 8.173 (+973 vs. 2024); スポンサー収
 3.324; página 10 (Gate) 入場料収入 2025 = 1.458.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Fumiaki Koizumi (2019-08-30 a hoy): Asumió por resolución del directorio el 2019-08-30, cuando Mercari pasó a ser accionista principal (Goal Japan). Sigue siendo 代表取締役社長 en 2025 (J.League lo lista como tal en 2024; prensa de sep. 2025). El dueño es una empresa (Mercari), por eso se carga al presidente; Koizumi es además presidente del directorio de Mercari.
+```
+
 ## Fuentes
 
 ### kashimaantlers-jleague-doc-2025

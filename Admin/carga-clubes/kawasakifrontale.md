@@ -27,6 +27,15 @@ Millones de JPY, Ejercicio 2025. Página 8: 川崎Ｆ 2025年度 = 10.069 (+1.66
 Página 9 (Sponsor): 3.765. Página 10 (Gate): 1.469.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Akihiro Yoshida (2022-04-08 a hoy): Comunicado oficial: decidido en la asamblea de accionistas y directorio del 2022-04-08, de vicepresidente a 代表取締役社長, reemplazando a Yoshihiro Warashina. Aún presidente en oct. 2024 (sitio del club). No se verificó que siga en 2026 pero cubre el cierre 2025 sin cambios reportados. Dueño: Fujitsu (empresa).
+Duda: No se buscó confirmación expresa de que Yoshida siga hoy (hasta=null por falta de noticia de cambio). La búsqueda no devolvió ningún cambio de presidente en 2025.
+```
+
 ## Fuentes
 
 ### kawasakifrontale-jleague-doc-2025

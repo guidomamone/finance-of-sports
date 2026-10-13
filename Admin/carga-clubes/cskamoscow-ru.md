@@ -294,6 +294,15 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2021: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Yevgueni Giner (2001-02-20 a hoy): ru.wikipedia (ficha de Giner): el 20/02/2001 asumió como presidente y dueño de CSKA. Desde 2019 el VEB tiene el 75 % de las acciones (conversión de deuda); la ficha del club sigue listando a Giner como presidente.
+Duda: Presidente del consejo (ficha del club): Maksim Oreshkin, sin fecha. Se cargó al presidente ejecutivo, que es la figura pública del club.
+```
+
 ## Fuentes
 
 ### (general)

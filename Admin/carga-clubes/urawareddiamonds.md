@@ -30,6 +30,14 @@ Millones de JPY, Ejercicio 2025. Página 8: 浦和 2025年度 = 11.310 (+1.099 v
 Página 9 (Sponsor): 4.195. Página 10 (Gate): 2.214.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Makoto Taguchi (2023-02-01 a 2026-07-01): La fuente (nota de 2022-12-20 sobre el anuncio del club) dice que asume el 2023-02-01 en lugar de Yoichi Tachibana. Fecha anunciada como prevista; no se vio el comunicado posterior de efectivización, pero la prensa y el club lo tratan como presidente desde 2023 (visita al gobernador 2023-03-24). Deja el cargo el 2026-07-01 (anuncio del club 2026-06-12; lo reemplaza Minoru Shimizu). Dueño: Mitsubishi Motors/grupo, empresa, por eso se carga al 代表取締役社長.
+```
+
 ## Fuentes
 
 ### urawareddiamonds-jleague-doc-2025

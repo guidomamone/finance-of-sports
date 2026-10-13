@@ -321,6 +321,14 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2021: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Serguéi Galitski (2008-02-22 a hoy): ru.wikipedia dice que el club se fundó el 22/02/2008 y que su iniciador y dueño es Galitski; la ficha lo lista como presidente (el director general Vladimir Jashig es otra figura). La fecha de asunción es la de fundación del club: la fuente no da una fecha separada para el cargo de presidente.
+```
+
 ## Fuentes
 
 ### (general)

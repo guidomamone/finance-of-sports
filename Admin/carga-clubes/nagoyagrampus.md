@@ -27,6 +27,15 @@ el único de los 10 clubes objetivo con ingreso en BAJA este ejercicio).
 Página 9 (Sponsor): 2.988. Página 10 (Gate): 1.360.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Katsuhiro Shimizu (2025-04-26 a hoy): Asumió el 2025-04-26 tras la asamblea ordinaria de accionistas y directorio ese día (nota de Akasha Shinpo del mismo día; comunicado oficial 0426post-2478 del club, que dio 403 al leerlo). Había sido anunciado como 内定 el 2025-01-11. Sale Kouki Konishi (presidente desde 2017) como Executive Adviser. Dueño: Toyota y grupo (empresa).
+Duda: Konishi estuvo hasta 2025-04-26; ejercicios anteriores a esa fecha no se cargaron (solo cierre 2025).
+```
+
 ## Fuentes
 
 ### nagoyagrampus-jleague-doc-2025

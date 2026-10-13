@@ -27,6 +27,14 @@ un salto grande desde 4.198 en 2023 — el propio documento no aclara el motivo 
 no se especula acá). Página 9 (Sponsor): 2.792. Página 10 (Gate): 2.166.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Masayoshi Kubo (2025-01-01 a hoy): Comunicado oficial (2024-12-09): por resolución del directorio extraordinario, asume 代表取締役社長 el 2025-01-01, de vicepresidente; Shingo Senda (presidente desde 2020) sigue en el club. Aún presidente en dic. 2025 (visita al gobernador). Hijo del presidente del directorio/dueño Masataka Kubo, pero la figura de 社長 es la firmante.
+```
+
 ## Fuentes
 
 ### sanfreccehiroshima-jleague-doc-2025

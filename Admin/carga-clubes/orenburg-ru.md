@@ -345,6 +345,18 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 2021: tools/cargar.mjs 2026-10-10, verificado contra data/club-leagues/ru.js ya tiene la fila
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Vasili Eriómkin (2020-05-21 a 2024-12-17): Sport-Express 2020-05-21: la asamblea de fundadores lo designó presidente (reemplazó a Kiyáev). Es directivo de Gazprom dobycha Orenburg. Hasta: SE 2024-12-17, 'ocupaba el cargo desde mayo de 2020'.
+Kiril Volzhenkin (2024-12-17 a 2026-08-19): SE 2024-12-17 (club en Telegram). Hasta 2026-08-19: matchtv dice que el cargo estaba vacante desde el 19 de agosto, tras irse por acuerdo mutuo.
+Dmitri Rubashko (2026-08-24 a hoy): matchtv 2026-08-24: el club anunció su designación; ex director general de Sochi.
+Duda: Entre el 19 y el 24/08/2026 el cargo estuvo vacante.
+Duda: Club ANO financiado por Gazprom dobycha Orenburg y la región; se cargó al presidente del club (figura ejecutiva), no al director general (Nikolái Krasnikov).
+```
+
 ## Fuentes
 
 ### (general)

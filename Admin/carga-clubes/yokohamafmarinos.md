@@ -26,6 +26,14 @@ Millones de JPY, Ejercicio 2025. Página 8: 横浜FM 2025年度 = 7.751 (+418 vs
 Página 9 (Sponsor): 2.871. Página 10 (Gate): 1.530.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Akihiro Nakayama (2022-12-01 a 2026-07-01): Comunicado oficial del club (2022-11-06): Kurosawa deja el 2022-11-30 y Nakayama (hasta entonces vicepresidente) asume el 2022-12-01; figuraba como 内定/予定, y J.League y prensa lo muestran como 社長 desde entonces. Sale por fin de mandato; el relevo (Shunsuke Ashizawa) asume el 2026-07-01 (comunicado 10137 del club), por eso hasta=2026-07-01, no la fecha exacta de salida de Nakayama (probablemente 2026-06-30). Dueño: Nissan (empresa).
+```
+
 ## Fuentes
 
 ### yokohamafmarinos-jleague-doc-2025

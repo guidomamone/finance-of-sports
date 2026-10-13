@@ -179,6 +179,15 @@ grossDebt = Bankovni i ostali zajmovi (corriente 3.700.000 + no corriente 0). ca
 novčani ekvivalenti.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Velimir Zajec (2024-03-10 a 2025-09-16): Wikipedia en inglés da 10 de marzo de 2024 a 16 de septiembre de 2025 (lo sucede Zvonimir Boban); lo antecede Mirko Barišić. Dos fuentes de prensa (gnkdinamo.hr y zagreb.info, ambas con 403 al abrirlas) figuran en la búsqueda como confirmación de su elección en la asamblea de marzo de 2024; las fechas salen solo de la Wikipedia.
+Duda: Las fechas de Zajec (2024-03-10 y 2025-09-16) salen de una sola fuente (Wikipedia). La página del club no se pudo abrir (403).
+```
+
 ## Fuentes
 
 ### dinamozagreb-hr-financijsko-izvjesce-2024

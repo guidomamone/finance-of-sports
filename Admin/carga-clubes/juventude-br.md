@@ -156,6 +156,16 @@ suma expenseLines (33,40529292 M BRL). officialPAT = 'Défict do exercício' imp
 (-2,72674034 M BRL / R$-2.726.740,34), EXACTO contra revenue-expenses+netInterest.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Walter Dal Zotto Júnior (2018-01-01 a 2022-10-18): El club lo ubica como presidente 'entre 2018 e 2022' (solo años): desde = 01/01/2018 por convención. Hasta: se apartó (licencia por salud, cáncer de abril de 2022) y Pizzamiglio fue empossado el 18/10/2022; el blog del club es del 20/10/2022 y dice 'licenciados'.
+Fábio Pizzamiglio (2022-10-18 a hoy): Empossado en el Conselho Deliberativo la noche del 18/10/2022 (blog del club, mismo día). Reelecto para 2024/2025.
+Duda: Mes y día de asunción de Dal Zotto Jr. (la fuente da solo el año 2018).
+```
+
 ## Fuentes
 
 ### juventude-br-demonstracoes-2020

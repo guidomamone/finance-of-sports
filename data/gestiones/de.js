@@ -25,4 +25,12 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Klaus Filbry', corto:'Filbry', cargo:'Vorsitzender der Geschäftsführung', desde:'2012-11-01', hasta:null,
       fuente:'https://www.weser-kurier.de/werder/das-ist-werder-geschaeftsfuehrer-klaus-filbry-doc7e5xm7mngdhajibgcdj', confirmada:true },
   ],
+  'eintrachtfrankfurt-de': [
+    { nombre:'Axel Hellmann', corto:'Hellmann', cargo:'Vorstandssprecher', desde:'2021-04-01', hasta:null,
+      fuente:'https://de.wikipedia.org/wiki/Axel_Hellmann', confirmada:true },
+  ],
+  'augsburg-de': [
+    { nombre:'Michael Ströll', corto:'Ströll', cargo:'Gesamtverantwortlicher Geschäftsführer (CEO)', desde:'2023-09-12', hasta:null,
+      fuente:'https://www.spox.com/de/sport/fussball/bundesliga/2309/News/fc-augsburg-stefan-reuter-zieht-sich-als-geschaeftsfuehrer-sport-zurueck.html', confirmada:true },
+  ],
 });

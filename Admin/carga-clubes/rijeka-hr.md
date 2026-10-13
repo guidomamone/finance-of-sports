@@ -153,6 +153,15 @@ grossDebt = Bankovni i drugi zajmovi (corriente 2.470.654 + no corriente 11.621.
 Novac i novčani ekvivalenti.
 ```
 
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Damir Mišković (2012-03-20 a hoy): Wikipedia en inglés: asumió como chairman el 20 de marzo de 2012, cuando rescató al club y pasó a ser el dueño. El informe financiero auditado 2024 (nk-rijeka.hr) lo muestra como Predsjednik Uprave con mandato vigente del 27/11/2020 al 27/11/2028: es la renovación actual, no el inicio. Los accionistas son TEANNA LIMITED (70 por ciento) y la ciudad de Rijeka (30 por ciento); se cargó a Mišković porque es quien firma y a la vez la persona detrás del dueño.
+Duda: El desde 2012-03-20 es la fecha en que se hizo cargo del club (Wikipedia); el mandato formal de la Uprava actual figura desde 2020-11-27 en el informe del club. Si el sitio prefiere la fecha societaria, usar 2020-11-27.
+```
+
 ## Fuentes
 
 ### rijeka-hr-financijsko-izvjesce-2024-kombinirani
