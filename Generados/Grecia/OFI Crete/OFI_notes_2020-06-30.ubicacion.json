@@ -1,0 +1,169 @@
+{
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_notes_2020-06-30.pdf",
+ "md": "Clubes/Grecia/OFI Crete/OFI_notes_2020-06-30.md",
+ "mdSha1": "1cbb84388bd6362142df144a3f496352747bd4df",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-13T14:22:06.345Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    28,
+    49
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    138,
+    159
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    165,
+    190
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    198,
+    213
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 17,
+   "lineas": [
+    473,
+    485
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    487,
+    499
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    507,
+    519
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    529,
+    535
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    541,
+    546
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 19,
+   "lineas": [
+    556,
+    560
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    576,
+    581
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    587,
+    598
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 20,
+   "lineas": [
+    608,
+    613
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    615,
+    625
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    635,
+    639
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    643,
+    651
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b13"
+ ],
+ "notas_gastos": [
+  "b14",
+  "b16"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "No se ve en el índice ninguna frase de escala (ej. 'ποσά σε ευρώ') sobre el estado b4.",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2020",
+ "columna_anterior": "30/6/2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del estado de resultados 'ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ' (b4) están en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El índice no muestra la frase de escala; en balances griegos de pequeñas entidades suele ser en euros enteros.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados por función (b4), individual de la sociedad. b13 desglosa ingresos (nota 10), b14 desglosa gastos por naturaleza y b16 abre los gastos de personal (sueldos, cargas, árbitros, indemnizaciones). Se excluyen balance (b2, b3), activos fijos (b5-b7) y notas de cuentas a cobrar/pagar y caja (b8-b12)."
+}

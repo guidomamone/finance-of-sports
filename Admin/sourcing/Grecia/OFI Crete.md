@@ -52,3 +52,5 @@ Color de marca: null — blanco y negro (en.wikipedia, sección Colours), blanco
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2024 desde `Clubes/Grecia/OFI Crete/OFI_income_stmt_2024-06-30.pdf` (sourceId `oficrete-gr-ofi-income-stmt-2024-06-30`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2025 desde `Clubes/Grecia/OFI Crete/OFI_FS_2025-06-30.pdf` (sourceId `oficrete-gr-ofi-fs-2025-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2020 desde `Clubes/Grecia/OFI Crete/OFI_notes_2020-06-30.pdf` (sourceId `oficrete-gr-ofi-notes-2020-06-30`).

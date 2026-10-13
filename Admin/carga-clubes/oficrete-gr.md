@@ -226,6 +226,43 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/cargar.mjs (2026-10-13): gr-superleague, verificado contra roster cacheado de "2020–21 Super League Greece" (tools/club-league-reference/gr.json), coincidencia única por palabras "OFI" = "OFI Crete".
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-13) desde Clubes/Grecia/OFI Crete/OFI_notes_2020-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/OFI Crete/OFI_notes_2020-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κύκλος εργασιών (καθαρός) | pág. 9, precedente |
+| 2 | Λοιπά συνήθη έσοδα | pág. 9, precedente |
+| 3 | Λοιπά έσοδα και κέρδη | pág. 9, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κόστος πωλήσεων | pág. 9, precedente |
+| 2 | Έξοδα διοίκησης | pág. 9, precedente |
+| 3 | Έξοδα διάθεσης | pág. 9, precedente |
+| 4 | Λοιπά έξοδα και ζημίες | pág. 9, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-13): gr-superleague, verificado contra roster cacheado de "2019–20 Super League Greece" (tools/club-league-reference/gr.json), coincidencia única por palabras "OFI" = "OFI Crete".
+```
+
 ## 2019
 
 ### Ingresos
@@ -356,4 +393,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/OFI Crete/OFI_FS_2025-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### oficrete-gr-ofi-notes-2020-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/OFI Crete/OFI_notes_2020-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

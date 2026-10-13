@@ -1,0 +1,147 @@
+{
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_notes_2020-06-30.pdf",
+ "md": "Clubes/Grecia/OFI Crete/OFI_notes_2020-06-30.md",
+ "generado": "2026-10-13T14:23:44.980Z",
+ "estado": "ok",
+ "clubId": "oficrete-gr",
+ "year": 2020,
+ "escala": {
+  "valor": "no se sabe",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 2.213058; el sitio tiene 2.213058"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2020: 3.286613 en este documento y 3.286613 en OFI_income_stmt_2021-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2019: 2.213058 en OFI_income_stmt_2019-06-30.pdf y 2.213058 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en OFI_income_stmt_2024-06-30.pdf",
+  "duda de extraer que no afecta la carga: La diferencia de 2.425,00 entre L651 y L617 no es redondeo; el año anterior sí coincide."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 3.286613,
+  "gastos": 5.888327,
+  "financiero": -0.01138,
+  "impuesto": 0,
+  "resultadoImpreso": -2.613093,
+  "resultadoParaCargar": -2.613093,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "lado": "ingreso",
+   "M": 1.835448,
+   "pagina": 9,
+   "linea": 200,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 1.370515,
+   "pagina": 9,
+   "linea": 203,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.08065,
+   "pagina": 9,
+   "linea": 207,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων",
+   "lado": "gasto",
+   "M": 5.125907,
+   "pagina": 9,
+   "linea": 201,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 0.371575,
+   "pagina": 9,
+   "linea": 204,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διάθεσης",
+   "lado": "gasto",
+   "M": 0.215003,
+   "pagina": 9,
+   "linea": 205,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έξοδα και ζημίες",
+   "lado": "gasto",
+   "M": 0.175841,
+   "pagina": 9,
+   "linea": 206,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": 0,
+   "linea": 209
+  },
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.01138,
+   "linea": 210
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": 0,
+   "linea": 212
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "md": "Clubes/Grecia/OFI Crete/OFI_notes_2020-06-30.md",
+ "club": "oficrete-gr",
+ "year": 2020,
+ "generatedAt": "2026-10-13T14:22:53.896Z",
+ "rubrosHuella": "c609a3a17394191164ed4c98b4403fc6355bb147",
+ "jevHuella": "78f4479f6123d7417866b02d36b56b2f6a1b597b",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Importe neto de la cifra de negocios",
+   "page": 9,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos ordinarios",
+   "page": 9,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos y ganancias",
+   "page": 9,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Coste de ventas",
+   "page": 9,
+   "pendiente": false,
+   "ya": "lump_football_operations_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 9,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de distribución",
+   "page": 9,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Λοιπά έξοδα και ζημίες",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos y pérdidas",
+   "page": 9,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  }
+ ]
+}
