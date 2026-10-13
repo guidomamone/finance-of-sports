@@ -33,6 +33,7 @@
 // ============================================================================
 
 import { readFileSync, writeFileSync, existsSync, appendFileSync, statSync, readdirSync } from 'node:fs';
+import { pedidoPrimerAnio, respuestaGuardada, compuertaPrimerAnio } from './primer-anio-ia.mjs';
 import { createHash } from 'node:crypto';
 import { resolve, dirname, basename, join } from 'node:path';
 import { derivado } from './rutas.mjs';
@@ -1159,6 +1160,18 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     chequeos.push({ nombre: `documento del año ${year + dy}`, ok, detalle: `ingresos de ${dy === 1 ? year : year - 1}: ${r6(dy === 1 ? mio : suyo)} en ${dy === 1 ? 'este documento' : otro.pdf.split('/').pop()} y ${r6(dy === 1 ? suyo : mio)} en ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} (columna del año anterior)` });
     if (ok === false) caso('anio-vecino', String(year + dy), `Los ingresos de ${dy === 1 ? year : year - 1} no coinciden entre este documento y ${otro.pdf.split('/').pop()} (${r6(mio)} contra ${r6(suyo)}). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.`, { pagina: estado[0]?.pagina });
   }
+  let primerAnio = null; // (to-do 214, escalón 3) el pedido a Claude y su estado, para tools/primer-anio-ia.mjs
+  let primerAnio214 = null; // (to-do 214) hace falta el caso "primer año" salvo que lo confirme el escalón 3 (se decide abajo)
+  // El escalón 3 del primer año: arma el pedido con las líneas del estado y lo que se carga, y aplica la compuerta si la respuesta está guardada.
+  // `filas`: lo que se carga, con los signos de la carga (financiero e impuesto como su efecto en el resultado): se arma abajo, junto al
+  // .verificacion.json, porque esos signos salen de la lectura que cerró el resultado.
+  const escalon3_214 = (filas) => {
+    const ped = pedidoPrimerAnio(readFileSync(resolve(ROOT, md), 'utf8'), estado, filas);
+    if (!ped) return null;
+    const datos = respuestaGuardada(md, ped.clave); const g = datos ? compuertaPrimerAnio(datos, ped) : null;
+    primerAnio = { escalon: 3, estado: !datos ? 'pendiente' : g.ok ? 'confirmado' : 'alarma', clave: ped.clave, rango: ped.rango, lineasCargadas: ped.lineasCargadas, user: ped.user, ...(g && !g.ok ? { problemas: g.problemas } : {}) };
+    return g;
+  };
   if (!metaPrev) {
     chequeos.push({ nombre: 'año anterior cargado', ok: null, detalle: prev ? `el sitio no tiene ${prev}: este chequeo no se puede hacer` : 'club nuevo' });
     // (to-do 214, escalón 1, aprobado por Guido el 2026-10-13: "no quiero revisar yo el primer año del club") Lo que pedía el caso es mirar
@@ -1181,8 +1194,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const imprime1 = !imprime3 && ((ti214 != null && sinImp214('gastos') && resOk214(ti214)) || (tg214 != null && sinImp214('ingresos') && resOk214(tg214)));
     if (imprime3) chequeos.push({ nombre: 'primer año', ok: true, detalle: 'ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)' });
     if (imprime1) chequeos.push({ nombre: 'primer año', ok: true, detalle: `${ti214 != null ? 'ingresos' : 'gastos'} y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)` });
-    if (vecinos.includes(true) || imprime3 || imprime1) { /* un documento vecino, o los tres totales impresos, confirmaron las cifras: no hace falta el caso "primer año" */ } else
-    caso('primer-anio', String(year), `Primer año automático de este club${clubId ? '' : ' (club nuevo)'}: no hay año anterior cargado para comparar. Revisar que los ingresos (${r6(suma(ing))}), los gastos (${r6(suma(gas))}) y el resultado coincidan con el estado de resultados impreso.`, { pagina: estado[0]?.pagina, lineas: estado.length ? [Math.min(...estado.map((f) => f.linea)), Math.max(...estado.map((f) => f.linea))] : null });
+    // (to-do 214, escalón 3, aprobado por Guido el 2026-10-13) SOLO EL RESULTADO coincide a 0,01% (de los ingresos): con el resultado exacto,
+    // lo único que se escapa es un error que se compensa (la misma cifra en los dos lados, una fila que falta de un lado y sobra del otro).
+    // Se le pregunta a Claude con las líneas del estado y lo que se carga (tools/primer-anio-ia.mjs): sin ninguna fila marcada, no hace
+    // falta el caso; con alguna, el caso lleva la cita. Sin respuesta guardada, el caso queda como antes y el pedido queda "pendiente".
+    // El escalón 3 y el caso "primer año" se resuelven abajo, con los signos de la carga (ver escalon3_214).
+    if (!(vecinos.includes(true) || imprime3 || imprime1)) primerAnio214 = { escalon3: resOk214(suma(ing)) };
   }
   // un total o el resultado que no cierran -> cola (salvo que Guido ya lo haya aceptado)
   for (const c of chequeos.filter((x) => x.ok === false && x.nombre !== 'año anterior cargado')) caso('no-cierra', c.nombre, `${c.nombre}: ${c.detalle}. Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.`, { pagina: estado[0]?.pagina, lineas: estado.length ? [Math.min(...estado.map((f) => f.linea)), Math.max(...estado.map((f) => f.linea))] : null });
@@ -1446,6 +1463,26 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const finCarga = (f) => (porRotulo ? (signoRotulo(f) ? signoRotulo(f) * Math.abs(f.M || 0) : f.M) : sfCarga * f.M);
   const siCarga = forzado || resultadoFinal?.impuesto === 'restado' ? -1 : resultadoFinal?.impuesto === 'sumado' ? 1 : /financiero e impuesto invertidos|impuesto invertido/.test(lect) ? -1 : 1;
 
+  // (to-do 214, escalón 3, aprobado por Guido el 2026-10-13) SOLO EL RESULTADO coincide a 0,01% (de los ingresos): con el resultado exacto,
+  // lo único que se escapa es un error que se compensa (la misma cifra en los dos lados, una fila que falta de un lado y sobra del otro).
+  // Se le pregunta a Claude con las líneas del estado y lo que se carga (tools/primer-anio-ia.mjs), con los signos de la carga: sin ninguna
+  // fila marcada, no hace falta el caso; con alguna, el caso lleva la cita. Sin respuesta guardada, el caso queda como antes y el pedido queda
+  // "pendiente". MEDICIÓN (PRIMER_ANIO_SIMULAR=1): un año con el anterior ya cargado arma igual el pedido (no abre casos ni cambia chequeos).
+  const r214 = chequeos.find((x) => x.nombre === 'resultado del ejercicio');
+  const simular214 = metaPrev && process.env.PRIMER_ANIO_SIMULAR === '1' && r214?.ok === true && r214.dif != null && r214.dif <= 1e-4 * Math.abs(suma(ing));
+  if (primerAnio214 || simular214) {
+    let alarma214 = null;
+    if (primerAnio214?.escalon3 || simular214) {
+      const num = (v) => (Number.isFinite(v) ? r6(v) : 0);
+      const filas214 = [...ing.map((f) => ({ f, lado: 'ingreso' })), ...gas.map((f) => ({ f, lado: 'gasto' }))].map(({ f, lado }) => { const vuelta = f.lado && f.lado !== lado && f.M < 0; return { lado: vuelta ? f.lado : lado, etiqueta: f.etiqueta, M: num(vuelta ? -f.M : f.M), linea: f.linea ?? null }; }) // como en `lineas` del .verificacion.json: una deducción en su lado y en positivo
+        .concat(fin.map((f) => ({ lado: 'financiero', etiqueta: f.etiqueta, M: num(finCarga(f)), linea: f.linea ?? null })), imp.map((f) => ({ lado: 'impuesto', etiqueta: f.etiqueta, M: num(siCarga * f.M), linea: f.linea ?? null })));
+      const g = escalon3_214(filas214);
+      if (g?.ok && !simular214) chequeos.push({ nombre: 'primer año', ok: true, detalle: 'solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)' });
+      if (g && !g.ok) alarma214 = g.detalle;
+    }
+    if (primerAnio214 && primerAnio?.estado !== 'confirmado')
+    caso('primer-anio', String(year), `Primer año automático de este club${clubId ? '' : ' (club nuevo)'}: no hay año anterior cargado para comparar. Revisar que los ingresos (${r6(suma(ing))}), los gastos (${r6(suma(gas))}) y el resultado coincidan con el estado de resultados impreso.${alarma214 ? ` Claude (escalón 3) marcó: ${alarma214}` : ''}`, { pagina: estado[0]?.pagina, lineas: estado.length ? [Math.min(...estado.map((f) => f.linea)), Math.max(...estado.map((f) => f.linea))] : null });
+  }
   const obsoletos = cerrarObsoletos(pdf, 'verificar', vigentes);
   if (obsoletos) notas.push(`${obsoletos} caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)`);
   const yaReintentado = Number(U.indiceAmpliado === true ? 1 : U.indiceAmpliado || 0) >= VERSION_AMPLIADO; // reintentado con el índice ampliado vigente
@@ -1462,6 +1499,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // financiero / impuesto: su efecto en el resultado (ver SIGNOS ... PARA LA CARGA arriba); `signosCarga` dice qué se invirtió.
     signosCarga: { financiero: porRotulo ? 'rótulo' : sfCarga, impuesto: siCarga },
     financiero: fin.map((f) => ({ etiqueta: f.etiqueta, M: r6(finCarga(f)), linea: f.linea })), impuesto: imp.map((f) => ({ etiqueta: f.etiqueta, M: r6(siCarga * f.M), linea: f.linea })) };
+  if (primerAnio) out.primerAnio = primerAnio; // (to-do 214, escalón 3) lo lee tools/primer-anio-ia.mjs
   if (notaSubtotalLados.size) out.notaSubtotal = [...notaSubtotalLados]; // (to-do 163) la señal que se queda prendida, ver ladosCero
   if (confirmadosPorSumas.length) out.confirmadosPorSumas = confirmadosPorSumas; // (to-do 176) los lee avisarRegistro()
   writeFileSync(resolve(ROOT, derivado(md, '.verificacion.json')), JSON.stringify(out, null, 1));

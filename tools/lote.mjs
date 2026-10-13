@@ -12,6 +12,7 @@
 //   4  validar-bloques.mjs  cada número de esos bloques contra el PDF (texto propio o Gemini)         gratis / ~US$ 0,003 por página escaneada
 //   5  extraer.mjs          las filas tal cual, con escala por bloque y la columna del año anterior   IA, ~US$ 0,20 (mediana de lo gastado; hasta ~0,35 en documentos largos)
 //   6  verificar.mjs        chequeos gratis; lo que no cierra va a la cola; deja el .rubros.json     gratis
+//      + primer-anio-ia.mjs (to-do 214) el primer año de un club cuando solo coincide el resultado: Claude revisa las filas  ~US$ 0,02
 //   7  categorización de siempre: glosar-rubros.mjs, jev-categorizar.mjs, categorizar-claude.mjs (con precedente, familia y memoria)  ~US$ 0,03
 //   8  cargar.mjs --desde-verificacion   PROPUESTA (no escribe el sitio): qué cargaría y por qué frena                gratis
 // Un documento que va a la cola en la 6 sigue igual hasta la 8 (para ver todo lo que le falta de una vez), pero la 8 lo frena.
@@ -337,6 +338,21 @@ console.log('\n=== Etapa 6: verificar (gratis) ===');
 for (const [pdf, r] of verificarLista(docs.filter((d) => String(estado[d]).startsWith('extraído')), { registro, sitio, escribirRubros: true })) {
   estado[pdf] = r.error ? `verificar: ${r.error}` : r.estado === 'ok' ? 'verificado' : `verificado con ${r.cola.length} caso(s) en la cola`;
   if (!r.error) for (const c of r.chequeos) console.log(`  ${pdf.split('/').slice(2).join('/')}: ${c.ok === true ? 'ok' : c.ok === false ? 'NO' : '-'} ${c.nombre}: ${c.detalle}`);
+}
+
+// (to-do 214, escalón 3 del primer año) los documentos que verificar dejó con el pedido a Claude pendiente: se pregunta y se vuelven a
+// verificar, para que la respuesta confirme el año (o deje el caso con la cita) en esta misma corrida.
+{
+  const pend214 = docs.filter((d) => String(estado[d]).startsWith('verificado') && leerDerivado(registro.find((x) => x.pdf === d) || { md: d.replace(/\.pdf$/i, '.md') }, '.verificacion.json')?.primerAnio?.estado === 'pendiente');
+  if (pend214.length) {
+    console.log(`\n=== Etapa 6, primer año (escalón 3): ${pend214.length} documento(s) ===`);
+    writeFileSync(resolve(ROOT, 'Admin', 'registros', '.lote-primer-anio.txt'), pend214.join('\n') + '\n');
+    node('tools/primer-anio-ia.mjs', ['--lista', 'Admin/registros/.lote-primer-anio.txt', '--ejecutar']);
+    for (const [pdf, r] of verificarLista(pend214, { registro, sitio, escribirRubros: true })) {
+      estado[pdf] = r.error ? `verificar: ${r.error}` : r.estado === 'ok' ? 'verificado' : `verificado con ${r.cola.length} caso(s) en la cola`;
+      if (!r.error) for (const c of r.chequeos.filter((x) => x.nombre === 'primer año')) console.log(`  ${pdf.split('/').slice(2).join('/')}: ok primer año: ${c.detalle}`);
+    }
+  }
 }
 
 console.log('\n=== Etapa 7: categorizar (Jev y Claude, con precedente y memoria) ===');

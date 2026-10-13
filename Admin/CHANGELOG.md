@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 688 — El primer año de un club sin Guido: escalón 3 (to-do 214) (2026-10-13)
+
+- `verificar.mjs` + `tools/primer-anio-ia.mjs` (nueva): cuando del primer año solo coincide el resultado, Claude revisa las líneas del
+  estado contra lo que se carga (falta, sobra, repetida, lado equivocado, con cita); sin nada marcado no hay caso. `lote.mjs --ejecutar`
+  contesta los pedidos pendientes y vuelve a verificar. Medido con subagentes: 38 de 39 confirmados, 1 alarma legítima (Roma 2007), 8 de 8
+  errores fabricados detectados; `verificar` idéntico en `prueba-completa` salvo el primer año que ahora se confirma.
+
 ## Versión 687 — Caja y deuda con dos lecturas por fila (to-do 223) (2026-10-13)
 
 - `caja-deuda.mjs`: cada propuesta se evalúa con la fila de siempre y sin la celda en una columna con forma de nota ("6.8"); decide la

@@ -405,7 +405,14 @@ Mitigaciones:
 - i) las filas de menos de 0,80 van a la cola de categorías (etapa 8). El primer año de un club ya no es una revisión de Guido (to-do 214):
   el caso "primer-anio" de `verificar.mjs` pide solo que ingresos, gastos y resultado coincidan con lo impreso, y no se levanta si un
   documento vecino lo confirma, si el documento imprime los tres y lo cargado da cada uno a 0,01% o menos, o si imprime un
-  solo total y el resultado, los dos a 0,01%, y el otro total no está impreso (queda determinado por la cuenta).
+  solo total y el resultado, los dos a 0,01%, y el otro total no está impreso (queda determinado por la cuenta). Si solo coincide el
+  RESULTADO (escalón 3, `tools/primer-anio-ia.mjs`, ~US$ 0,02): Claude recibe las líneas del estado y lo que se carga (con los signos de la
+  carga) y dice si falta, sobra, se repite o está del lado equivocado alguna fila; sin nada marcado, no hay caso; con algo, el caso lleva la
+  cita. `verificar.mjs` deja el pedido en el `.verificacion.json` (`primerAnio.estado` = pendiente); `lote.mjs --ejecutar` lo contesta y
+  vuelve a verificar esos documentos. Medido sobre los 39 primeros años aceptados que solo cerraban por el resultado, con subagentes de la
+  sesión (`--exportar` / `--importar`; `PRIMER_ANIO_SIMULAR=1` arma el pedido aunque el año anterior ya esté cargado): 38 confirmados, 1
+  alarma legítima (Roma 2007, la quota di terzi cargada como financiero), y 8 de 8 errores fabricados detectados (fila repetida en los dos
+  lados o en el mismo, fila que falta, lado cambiado, subtotal cargado).
 
 ### 8 Cargar
 
