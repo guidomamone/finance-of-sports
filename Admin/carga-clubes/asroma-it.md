@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 AS Roma: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.pdf.
-brandColor y su procedencia: fuentes/Italia/AS Roma.md.
+brandColor y su procedencia: Admin/sourcing/Italia/AS Roma.md.
 ```
 
 _de data/club-leagues/it.js:_

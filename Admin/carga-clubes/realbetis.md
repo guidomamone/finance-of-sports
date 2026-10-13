@@ -11,7 +11,7 @@ meta. Las notas de cada fila van en una tabla con su número de fila (hay nombre
 data/realbetis-data.js — Real Betis Balompié, S.A.D., Ejercicio 2024/2025 (1/7/2024 a 30/6/2025).
 
 Un solo ejercicio (alcance de esta sesión: sumar clubes, no profundizar años; el club tenía 5
-ejercicios reales descargados, con huecos, ver fuentes/España/Real Betis.md — se eligió el más
+ejercicios reales descargados, con huecos, ver Admin/sourcing/España/Real Betis.md — se eligió el más
 reciente y más confirmado). Fuente: "Informe de Auditoría, Memoria y Estado de Información No
 Financiera 2024-2025" — ver
 Clubes/España/Real Betis/informe-auditoria-memoria-einf-2024-2025.pdf y su transcripción en

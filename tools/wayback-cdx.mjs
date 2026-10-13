@@ -14,7 +14,7 @@
 //     `[]` cuando la CDX API respondió que de verdad no hay snapshots, nunca cuando la consulta en
 //     sí falló. El llamador (una sesión de sourcing, u otro script) tiene que distinguir "consulté y
 //     no hay nada" de "la consulta falló" — con esta API eso significa: `catch` la excepción antes
-//     de escribir "0 PDFs archivados" en `fuentes/<País>/<Club>.md`.
+//     de escribir "0 PDFs archivados" en `Admin/sourcing/<País>/<Club>.md`.
 //
 // Uso como script:
 //   node tools/wayback-cdx.mjs bocajuniors.com.ar

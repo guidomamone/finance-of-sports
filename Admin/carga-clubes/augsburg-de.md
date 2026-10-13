@@ -15,7 +15,7 @@ por otra sesión). clubId = 'augsburg-de' (con guion, no 'augsburg' solo).
 
 FUENTE: Clubes/Alemania/FC Augsburg/konzernabschluss-2023-24.md y
 konzernabschluss-2024-25.md — extractos del Unternehmensregister alemán
-(bajados por sesión anterior, ver fuentes/Alemania/FC Augsburg.md), CADA
+(bajados por sesión anterior, ver Admin/sourcing/Alemania/FC Augsburg.md), CADA
 UNO es el Konzernabschluss (cuentas CONSOLIDADAS del grupo: FCA KGaA +
 F.C. Augsburg Arena Besitz und Betriebs GmbH, 91,7% participación) para su
 ejercicio 01.07-30.06. El consolidado ES el total oficial de cada

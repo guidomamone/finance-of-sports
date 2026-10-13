@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Krasnodar: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Krasnodar/bfo-2021-datos.md. brandColor:null a propósito
-(procedencia en fuentes/Rusia/Krasnodar.md; tools/bfo-rusia.mjs).
+(procedencia en Admin/sourcing/Rusia/Krasnodar.md; tools/bfo-rusia.mjs).
 ```
 
 _de data/club-leagues/ru.js:_

@@ -11,7 +11,7 @@ meta. Las notas de cada fila van en una tabla con su número de fila (hay nombre
 data/celtavigo-data.js — Real Club Celta de Vigo, S.A.D., Ejercicio 2024/2025 (1/7/2024 a 30/6/2025).
 
 Un solo ejercicio (alcance de esta sesión: sumar clubes, no profundizar años; el club tenía 4
-ejercicios reales con huecos, ver fuentes/España/Celta de Vigo.md — se eligió el más reciente).
+ejercicios reales con huecos, ver Admin/sourcing/España/Celta de Vigo.md — se eligió el más reciente).
 Fuente: "Cuentas Anuales Individuales" (se prefirieron sobre las consolidadas, también
 disponibles, para ser consistente con el resto de los clubes de esta sesión) — ver
 Clubes/España/Celta de Vigo/cuentas-anuales-individual-2024-2025.pdf y su transcripción en

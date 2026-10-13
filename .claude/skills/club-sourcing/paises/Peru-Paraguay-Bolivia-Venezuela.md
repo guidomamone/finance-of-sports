@@ -2,7 +2,7 @@
 
 Estos 4 países no tuvieron (todavía) un hallazgo de nivel "regulador que aplica a todos los clubes"
 como Chile/Colombia/Brasil — lo encontrado hasta ahora fue caso por caso, ver la ficha de cada club
-en `fuentes/<País>/<Club>.md`:
+en `Admin/sourcing/<País>/<Club>.md`:
 - **Perú**: 15 clubes chequeados en total. Patrón consistente: la enorme mayoría de los clubes de Liga 1 son **asociaciones
   civiles sin fines de lucro** (Melgar, Cienciano, Sport Boys, Cusco FC, ADT, Alianza Atlético,
   Deportivo Municipal, Comerciantes Unidos, Sport Huancayo, Binacional — todos confirmados vía SUNAT/

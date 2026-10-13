@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Akron Tolyatti: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2021-datos.md. brandColor #FF0000
-(procedencia en fuentes/Rusia/Akron Tolyatti.md; tools/bfo-rusia.mjs).
+(procedencia en Admin/sourcing/Rusia/Akron Tolyatti.md; tools/bfo-rusia.mjs).
 ```
 
 _de data/club-leagues/ru.js:_

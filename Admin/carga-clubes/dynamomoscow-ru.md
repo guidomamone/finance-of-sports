@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Dynamo Moscow: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Moscow/bfo-2021-datos.md. brandColor #0044FF
-(procedencia en fuentes/Rusia/Dynamo Moscow.md; tools/bfo-rusia.mjs).
+(procedencia en Admin/sourcing/Rusia/Dynamo Moscow.md; tools/bfo-rusia.mjs).
 ```
 
 _de data/club-leagues/ru.js:_

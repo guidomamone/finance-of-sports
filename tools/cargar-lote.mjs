@@ -55,7 +55,7 @@ const jsonDe = (salida) => { const s = String(salida || ''); const i = s.indexOf
 const ultimaLinea = (r) => { const ls = `${r.stdout || ''}\n${r.stderr || ''}`.split('\n').map((l) => l.trim()).filter(Boolean); return ls.find((l) => /^(Escrito|Alta escrita|No se escribe)/.test(l)) || ls.pop() || ''; };
 
 // Los archivos que toca un alta o una carga (generadores incluidos), para el commit y para revertir un alta.
-const SITIO = ['data', 'index.html', 'fuentes', 'fuentes.html', 'sitemap.xml'];
+const SITIO = ['data', 'index.html', 'fuentes', 'Admin/sourcing', 'fuentes.html', 'sitemap.xml'];
 const ADMIN = ['Admin/registros/ajustes-manuales.jsonl', 'Admin/registros/documentos-descartados.txt', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/registros/categorias-aprendidas.jsonl', 'Admin/registros/perfil-clubes.jsonl', 'Admin/registros/cola-revision.jsonl', 'Admin/registros/cargar-ultimo.jsonl', 'Admin/registros/altas-club.jsonl', 'Admin/carga-clubes'];
 
 const descartados = new Set(leerLineas('Admin/registros/documentos-descartados.txt'));
@@ -103,7 +103,7 @@ if (!ESCRIBIR) { console.log(`\nENSAYO: ${plan.reduce((n, p) => n + p.xs.length,
 
 // 3) De verdad.
 const sucio = String(git('status', '--porcelain', '--', ...SITIO).stdout || '').trim();
-if (sucio) { console.error(`\nNo escribo: hay cambios sin commitear en el sitio (data/, index.html o fuentes/). Commitealos o descartalos primero:\n${sucio.split('\n').slice(0, 10).join('\n')}`); process.exit(1); }
+if (sucio) { console.error(`\nNo escribo: hay cambios sin commitear en el sitio o en las notas de sourcing (data/, index.html, fuentes/ o Admin/sourcing/). Commitealos o descartalos primero:\n${sucio.split('\n').slice(0, 10).join('\n')}`); process.exit(1); }
 
 // El color de marca en la entrada del club recién escrita por alta-club.mjs (que lo deja AUSENTE a propósito).
 function ponerColor({ clubId, color, club, pais }) {
@@ -115,13 +115,13 @@ function ponerColor({ clubId, color, club, pais }) {
   // la nota del alta (to-do 209) está en la evidencia del club, no en data/clubs.js
   let ev = EV.leer(clubId);
   ev = EV.reemplazarTexto(ev, 'brandColor AUSENTE a propósito', color === null ? 'brandColor:null a propósito' : `brandColor ${color}`);
-  ev = EV.reemplazarTexto(ev, '(nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).', `(procedencia en fuentes/${pais}/${club}.md; tools/cargar-lote.mjs).`);
+  ev = EV.reemplazarTexto(ev, '(nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).', `(procedencia en Admin/sourcing/${pais}/${club}.md; tools/cargar-lote.mjs).`);
   EV.guardar(clubId, ev);
   return true;
 }
 function revertirAlta(clubId) {
-  git('checkout', '-q', '--', ...SITIO.filter((x) => x !== 'fuentes'), 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html');
-  git('checkout', '-q', '--', 'fuentes');
+  git('checkout', '-q', '--', ...SITIO.filter((x) => x !== 'fuentes' && x !== 'Admin/sourcing'), 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html');
+  git('checkout', '-q', '--', 'fuentes', 'Admin/sourcing');
   for (const f of [`data/${clubId}-data.js`, `fuentes/${clubId}.html`, EV.rutaRel(clubId)]) { try { unlinkSync(resolve(ROOT, f)); } catch { /* no estaba */ } }
 }
 

@@ -18,7 +18,7 @@ FUENTE: `Clubes/Colombia/Atletico Nacional/estados-financieros-2025.pdf`
 2024", auditado por Baker Tilly Colombia), texto nativo vía pdftotext
 -layout, transcripción completa en `estados-financieros-2025.md` en la
 misma carpeta. Bajado vía SIIS (siis.ia.supersociedades.gov.co, NIT
-900464187), ver `fuentes/Colombia/Atletico Nacional.md`.
+900464187), ver `Admin/sourcing/Colombia/Atletico Nacional.md`.
 
 OJO — este PDF (a diferencia de América de Cali) son solo las NOTAS a los
 estados financieros, no incluye el Estado de Resultado Integral primario

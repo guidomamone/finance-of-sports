@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Bologna: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2018-19.pdf.
-brandColor y su procedencia: fuentes/Italia/Bologna.md.
+brandColor y su procedencia: Admin/sourcing/Italia/Bologna.md.
 ```
 
 _de data/club-leagues/it.js:_

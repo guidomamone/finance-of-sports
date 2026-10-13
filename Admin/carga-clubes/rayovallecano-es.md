@@ -16,7 +16,7 @@ ejercicio cerrado a 30 de junio de 2025" (`Clubes/España/Rayo Vallecano/
 informe-auditoria-cuentas-anuales-2024-2025.pdf`, 50 págs., CON capa de
 texto real — pdftotext funcionó sin OCR, a diferencia de Mallorca/Oviedo).
 Encontrado por búsqueda directa (no vía la página de transparencia propia
-del club esta sesión), ver fuentes/España/Rayo Vallecano.md. Host
+del club esta sesión), ver Admin/sourcing/España/Rayo Vallecano.md. Host
 statics-maker.llt-services.com/ray/ (mismo CMS compartido).
 
 OPINIÓN DE AUDITORÍA CON SALVEDADES (AUDRIA, S.L., pág. 2 del .md): el
@@ -129,7 +129,7 @@ diseño histórico desde 1949-50, inspirado en River Plate, según Wikipedia
 en español) — mismo bucket que River/Vélez/Sevilla/Real Madrid (sección 3
 de club-or-year-onboarding/SKILL.md: "camiseta blanca con un acento fuerte,
 no se resuelve buscando más, es decisión de producto"). Ver
-fuentes/España/Rayo Vallecano.md.
+Admin/sourcing/España/Rayo Vallecano.md.
 
 gestionesByClub: Raúl Santiago Martín Presa, accionista mayoritario
 (96.166 acciones, 97,82% del capital, Nota de Fondos Propios/Accionistas)

@@ -15,7 +15,7 @@ Fuente: "Informe Auditoría de Cuentas Anuales", Grupo Pél Auditores, S.L.P.
 (`Clubes/España/Getafe CF/cuentas-anuales-informe-auditoria-2023-2024.pdf` y
 `-2024-2025.pdf`, 56-57 págs. cada uno, ambos escaneos sin capa de texto —
 transcriptos con pdftotext/OCR, ver los .md homónimos en la misma carpeta).
-Bajados de `getafecf.com/ley-de-transparencia-sad`, ver fuentes/España/Getafe CF.md.
+Bajados de `getafecf.com/ley-de-transparencia-sad`, ver Admin/sourcing/España/Getafe CF.md.
 
 Cifras en EUR MILLONES nativos (documento en euros completos, dividido por
 1.000.000 al cargar). Tipos de cambio: EUR/USD cierre BCE 30/6/2024 y

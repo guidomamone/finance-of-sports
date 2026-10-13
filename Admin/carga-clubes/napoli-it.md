@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Napoli: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Napoli/Napoli-bilancio-2025.pdf.
-brandColor y su procedencia: fuentes/Italia/Napoli.md.
+brandColor y su procedencia: Admin/sourcing/Italia/Napoli.md.
 ```
 
 _de data/club-leagues/it.js:_

@@ -15,7 +15,7 @@ cargados: 2024 y 2025 (ejercicio social = AÑO CALENDARIO completo, 1°/1 a 31/1
 en la carátula de los 2 documentos: "exercício findo em 31 de dezembro de 2024/2025";
 clubs.js fiscalYearStart:'01-01').
 
-FUENTES (2 canales, ver fuentes/Brasil/Guarani.md):
+FUENTES (2 canales, ver Admin/sourcing/Brasil/Guarani.md):
 - 2024: `demonstracoes-financeiras-2023-2024.pdf`, vía repositorio de la Federação Paulista
   (formato "publicación legal", recorte de gazetasp.com.br, con capa de texto real).
   Auditado por ASSESSORA ASSESSORES E AUDITORES EIRELI EPP (Orozimbo Benedito Brunharo,

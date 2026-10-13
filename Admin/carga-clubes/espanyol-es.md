@@ -17,7 +17,7 @@ Fuente: `Clubes/España/RCD Espanyol/cuentas-anuales-gestion-auditoria-2023-2024
 págs., escaneo con bastante ruido de OCR en la cuenta de pérdidas y
 ganancias transcripta a .md). Bajados de
 rcdespanyol.com/es/transparencia-compliance-canaleticoycomunicaciones, ver
-fuentes/España/RCD Espanyol.md.
+Admin/sourcing/España/RCD Espanyol.md.
 
 GOTCHA DE VERIFICACIÓN (2024/2025): la transcripción .md de este ejercicio
 tenía errores de OCR reales en varias cifras (algunos dígitos sueltos mal

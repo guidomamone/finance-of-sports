@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Vila Nova: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf. brandColor #F00000
-(procedencia en fuentes/Brasil/Vila Nova.md, club-or-year-onboarding/club-nuevo.md).
+(procedencia en Admin/sourcing/Brasil/Vila Nova.md, club-or-year-onboarding/club-nuevo.md).
 ```
 
 _de data/club-leagues/br.js:_

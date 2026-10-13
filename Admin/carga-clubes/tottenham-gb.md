@@ -12,7 +12,7 @@ data/tottenham-gb-data.js — Tottenham Hotspur Limited (clubId 'tottenham-gb'),
 2023/24 y 2024/25 (cerrados el 30 de junio, confirmado en la carátula de los dos documentos:
 "Annual Report and Consolidated Financial Statements, 30 June 2024/2025" — OJO, el pedido
 original de sourcing asumía 31 de mayo como Arsenal/Liverpool, pero Tottenham cierra 30/6, ya
-confirmado antes de esta sesión en fuentes/Inglaterra/Tottenham Hotspur.md).
+confirmado antes de esta sesión en Admin/sourcing/Inglaterra/Tottenham Hotspur.md).
 
 ENTIDAD LEGAL: "Tottenham Hotspur Limited" — confirmado LITERAL en la carátula de los dos PDF.
 Company Registration No. 1706358 (Companies House, UK). Cuentas CONSOLIDADAS del grupo
@@ -51,7 +51,7 @@ ejercicios):
   - "Other income" -> other_income (no cumple la definición de Revenue de IFRS 15 según el
     propio documento; no tiene nota propia que explique de qué se compone más allá de la mención
     genérica en el Strategic report).
-  DUDA GENUINA SIN RESOLVER, documentada en fuentes/Inglaterra/Tottenham Hotspur.md (no se pudo
+  DUDA GENUINA SIN RESOLVER, documentada en Admin/sourcing/Inglaterra/Tottenham Hotspur.md (no se pudo
   escribir en Admin/dudas-por-club.md en esta sesión: ese archivo está fuera de alcance del
   pedido): el Strategic report narra que "Commercial" (244,744 en 2024) incluye Sponsorship
   revenue (£144,5 M), Merchandising revenue (£36,2 M) y "Other revenue" (£64,0 M, "driven by

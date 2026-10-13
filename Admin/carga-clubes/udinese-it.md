@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Udinese: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Udinese/Udinese-bilancio-2024-25.pdf.
-brandColor y su procedencia: fuentes/Italia/Udinese.md.
+brandColor y su procedencia: Admin/sourcing/Italia/Udinese.md.
 ```
 
 _de data/club-leagues/it.js:_

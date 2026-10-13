@@ -44,7 +44,7 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 _de data/clubs.js:_
 
 ```text
-CRB: alta por tools/alta-club.mjs (2026-10-09) desde Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf. brandColor:null a propósito (procedencia en fuentes/Brasil/CRB.md).
+CRB: alta por tools/alta-club.mjs (2026-10-09) desde Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf. brandColor:null a propósito (procedencia en Admin/sourcing/Brasil/CRB.md).
 ```
 
 _de data/club-leagues/br.js:_

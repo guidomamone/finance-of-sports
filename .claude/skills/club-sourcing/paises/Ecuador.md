@@ -9,7 +9,7 @@ Orgánica del Deporte publicada 11-feb-2026, reglamento de la Superintendencia d
 23/24-jun-2026, y a agosto de 2026 solo UN club de todo el país (9 de Octubre, categoría inferior)
 había presentado documentación para INICIAR (no completar) el trámite — ningún club grande de Serie
 A lo completó todavía (Barcelona SC lo está "analizando", proceso estimado 12-18 meses). Ver
-`fuentes/Ecuador/_notas-generales.md` para la cronología completa con fuentes de prensa. Último
+`Admin/sourcing/Ecuador/_notas-generales.md` para la cronología completa con fuentes de prensa. Último
 chequeo: 2026-09-13.
 
 **Implicación práctica para sourcing**: mientras un club no complete su conversión a SAD, buscarlo en
@@ -27,7 +27,7 @@ publican voluntariamente, como sociedad civil, reportes de rendición de cuentas
 propio sitio oficial — Deportivo Cuenca colgó en agosto de 2026 un "informe presidencial" (dos PDFs
 vía links de Google Drive en una nota de prensa propia) con movimientos bancarios e impuestos
 pagados; LDU Quito tiene una sección `/transparencia/` fija con estados financieros de su club social
-consolidado (aunque mezclado con colegio/country club, ver `fuentes/Ecuador/LDU Quito.md`). Ojo: esto
+consolidado (aunque mezclado con colegio/country club, ver `Admin/sourcing/Ecuador/LDU Quito.md`). Ojo: esto
 es voluntario y poco común — la mayoría de los clubes chequeados (Barcelona SC, Emelec,
 Independiente del Valle, Aucas, Delfín SC, Universidad Católica, El Nacional, Macará, Mushuc Runa,
 Técnico Universitario, Orense SC) NO tienen ninguna sección equivalente — pero vale la pena revisar

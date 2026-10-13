@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Avai: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf. brandColor #0040CF
-(procedencia en fuentes/Brasil/Avai.md, club-or-year-onboarding/club-nuevo.md).
+(procedencia en Admin/sourcing/Brasil/Avai.md, club-or-year-onboarding/club-nuevo.md).
 ```
 
 _de data/club-leagues/br.js:_

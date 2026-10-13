@@ -2,7 +2,7 @@
 
 Sudáfrica, Egipto, Marruecos y Nigeria chequeados, cada uno con varios ángulos genuinos — 0 PDFs
 reales conseguidos, pero cada dead-end quedó documentado a fondo (ver
-`fuentes/<País>/_notas-generales.md` de cada uno) para que una sesión futura no repita el camino.
+`Admin/sourcing/<País>/_notas-generales.md` de cada uno) para que una sesión futura no repita el camino.
 Último chequeo: 2026-09-13.
 
 - **Sudáfrica — dead-end ESTRUCTURAL (no reintentar sin un dato nuevo)**: los clubes de la PSL están

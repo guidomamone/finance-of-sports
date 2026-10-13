@@ -13,7 +13,7 @@ fuente que Kashima Antlers (data/kashimaantlers-data.js) — ver ESE archivo
 para la metodología completa. Acá solo el detalle específico de FC Tokyo.
 
 Abreviado "FC東京" en las tablas del club_doc-2025.pdf (ojo con el gotcha de
-ancho de caracteres documentado en fuentes/Japón/_notas-generales.md: otros
+ancho de caracteres documentado en Admin/sourcing/Japón/_notas-generales.md: otros
 años pueden abreviar "ＦＣ東京" con caracteres de ancho completo).
 ============================================================================
 ```

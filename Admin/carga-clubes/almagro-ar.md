@@ -143,7 +143,7 @@ hay violeta/lila en ningún lado. Con 3 colores sin un orden de predominancia de
 por el club/liga (a diferencia de los casos bicolor de club-or-year-onboarding sección
 3), y sin theme-color del sitio oficial ni hex confiable en agregadores (footylogos no
 lista a Almagro, teamcolorcodes no tiene el club), se dejó brandColor:null — resultado
-cerrado, no pendiente. Ver fuentes/Argentina/Almagro.md para el detalle de la búsqueda.
+cerrado, no pendiente. Ver Admin/sourcing/Argentina/Almagro.md para el detalle de la búsqueda.
 ============================================================================
 ```
 

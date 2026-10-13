@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Cuiaba: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Cuiaba/balanco-financeiro-2022.pdf. brandColor #006030
-(procedencia en fuentes/Brasil/Cuiaba.md, club-or-year-onboarding/club-nuevo.md).
+(procedencia en Admin/sourcing/Brasil/Cuiaba.md, club-or-year-onboarding/club-nuevo.md).
 ```
 
 _de data/club-leagues/br.js:_

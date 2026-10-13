@@ -14,7 +14,7 @@ Envigado, misma sesión). Ejercicios 2022, 2023, 2024 y 2025 = REALES.
 
 EJERCICIO 2023 agregado el 2026-09-28 (5/5 de la misma ronda de
 onboardings de prueba, sustituto de Ecuador/LDU Quito — ver to-do en
-`fuentes/Ecuador/LDU Quito.md`, ya decidido en 2026-09-25: el único
+`Admin/sourcing/Ecuador/LDU Quito.md`, ya decidido en 2026-09-25: el único
 documento de resultados de ese club consolida escuela y country club, CERO
 líneas de fútbol, no se carga). `tools/suggest-category-precedent.mjs`
 sugirió EXACTO los 11 rubros de ingreso consultados (11/11, con 3 años de
@@ -91,7 +91,7 @@ sección 6, punto 3: no confiar en un rótulo/número sin cruzarlo). En vez
 de eso: PAT confirmado (Utilidad del Ejercicio, $4.112,260 M, de la
 Cuenta de Patrimonio — único ejercicio SIN segunda fuente independiente
 que lo repita: el dictamen del revisor fiscal 2024 no narra la cifra como
-sí lo hace el de 2025, ver `fuentes/Colombia/Once Caldas.md`) menos
+sí lo hace el de 2025, ver `Admin/sourcing/Colombia/Once Caldas.md`) menos
 pretax calculado línea por línea (Ingresos - Costo Ventas - Gastos Admin
 - Gastos Ventas + netInterest = $6.515,947 M) = tax -$2.403,687 M —
 absorbe impuesto corriente + diferido + extraordinarios + diversos no
@@ -110,7 +110,7 @@ páginas, "ESTADOS FINANCIEROS Al 31 de diciembre de 2025 y 2024 e Informe
 del Revisor Fiscal", texto real vía pdftotext -layout, NIT 890.801.447-5),
 transcripción completa en `estados-financieros-2025.md` en la misma
 carpeta. Bajado vía SIIS (siis.ia.supersociedades.gov.co), ver
-`fuentes/Colombia/Once Caldas.md`.
+`Admin/sourcing/Colombia/Once Caldas.md`.
 
 OJO — este PDF (a pesar del nombre "estados-financieros") son las NOTAS a
 los estados financieros (desglose rubro por rubro), NO incluye una tabla
@@ -153,7 +153,7 @@ la tabla de indicadores de negocio en marcha de la Nota 2 dice
 literalmente "Año 2025: $9.138.546" como "resultado del ejercicio"; (2) el
 Informe del Revisor Fiscal narra "la Compañía generó utilidades por
 $9.138 millones"; (3) coincide con la cifra "Ganancia" que muestra la
-vista SIIS ($9.138.546 M, ver fuentes/Colombia/Once Caldas.md). officialPAT
+vista SIIS ($9.138.546 M, ver Admin/sourcing/Colombia/Once Caldas.md). officialPAT
 = 9.138,546 M COP, altísima confianza.
 
 PERO: sumando Ingresos - Costo Ventas - Gastos Admin - Gastos Ventas +
@@ -171,7 +171,7 @@ diferido reconocido de $232,682 M en 2025 vs. un pasivo de $195,091 M en
 2024, un swing de ~$427,7 M, tampoco alcanza para cerrar toda la
 diferencia). Ante la imposibilidad de reconciliar el detalle completo con
 el documento descargado (que no trae el Estado de Resultados Integral
-primario, solo notas — ver fuentes/Colombia/Once Caldas.md para el
+primario, solo notas — ver Admin/sourcing/Colombia/Once Caldas.md para el
 pendiente de re-descargar el radicado correcto), se resolvió el ÚNICO
 campo sin fuente directa (`tax`, en fiscalYearMeta) como RESIDUO: pretax
 (calculado línea por línea desde las Notas 20-27, cada una con su propio
@@ -187,7 +187,7 @@ _de data/clubs.js:_
 
 ```text
 Colombia: ejercicio fiscal es año calendario (1-ene a 31-dic), moneda nativa COP (ver
-data/currency-map.js y fuentes/Colombia/*.md sobre el tipo de cambio TRM usado).
+data/currency-map.js y Admin/sourcing/Colombia/*.md sobre el tipo de cambio TRM usado).
 `brandColor:null` (no ausente): se miró y NO lleva color, el que lo identifica es el blanco.
 ```
 
@@ -239,7 +239,7 @@ implícito de ~$359 M de beneficio no está separado explícito en las notas des
 _al lado del campo `grossDebt`:_
 
 ```text
-no se cargó (el documento no trae el Estado de Situación Financiera primario en este PDF, solo notas — ver fuentes/Colombia/Once Caldas.md)
+no se cargó (el documento no trae el Estado de Situación Financiera primario en este PDF, solo notas — ver Admin/sourcing/Colombia/Once Caldas.md)
 ```
 
 ## 2024

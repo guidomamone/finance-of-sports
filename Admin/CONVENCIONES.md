@@ -35,12 +35,12 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   - **El número de Versión se decide al MERGEAR, no al escribir.** Las dos ramas van a querer el
     mismo. El que mergea segundo renumera su entrada; el conflicto al final de `Admin/CHANGELOG.md`
     es esperable y mecánico.
-  - **Un archivo GENERADO no se mergea a mano: se regenera.** Si hay conflicto en `fuentes/README.md`,
+  - **Un archivo GENERADO no se mergea a mano: se regenera.** Si hay conflicto en `Admin/sourcing/README.md`,
     `fuentes.html`, `sitemap.xml`, `data/club-index.js`, `data/rankings/*.js` o
     `Admin/ESTADO-clubes.md` (el bloque CLUB-INDEX, aparte de `Admin/ESTADO.md` desde la Versión 239),
     tomá cualquiera de los dos lados, mergeá, y corré el generador que
     corresponda. Resolverlos línea por línea es cómo se mete un dato que ningún documento respalda.
-  - **Un país por sesión de sourcing.** `fuentes/_indice/<País>.md` y `fuentes/<País>/` son de un
+  - **Un país por sesión de sourcing.** `Admin/sourcing/_indice/<País>.md` y `Admin/sourcing/<País>/` son de un
     solo país a propósito (ver el porqué en `CLAUDE.md`): dos sesiones en países distintos no
     comparten un solo archivo y no pueden conflictuar.
 

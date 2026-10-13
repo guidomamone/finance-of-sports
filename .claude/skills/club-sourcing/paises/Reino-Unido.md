@@ -131,4 +131,4 @@ United y otros cotizantes en EE.UU., el canal es EDGAR (20-F), no Companies Hous
 - **FCA: el mismo ejercicio puede tener dos documentos** (reenvío; Leicestershire 2025): queda el de
   mayor `docId`.
 - Estado: Premier, Championship y gran parte de League One/Two cubiertos con 5 ejercicios; detalle y
-  pendientes en `fuentes/Inglaterra/_notas-generales.md` sección 6.
+  pendientes en `Admin/sourcing/Inglaterra/_notas-generales.md` sección 6.

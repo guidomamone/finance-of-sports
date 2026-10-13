@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Rubin Kazan: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2021-datos.md. brandColor #AA2704
-(procedencia en fuentes/Rusia/Rubin Kazan.md; tools/bfo-rusia.mjs).
+(procedencia en Admin/sourcing/Rusia/Rubin Kazan.md; tools/bfo-rusia.mjs).
 ```
 
 _de data/club-leagues/ru.js:_

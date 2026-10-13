@@ -12,8 +12,8 @@ siempre contra el archivo real.
 ## Leer un PDF fuente: texto nativo vs. imagen, y cómo enderezar un escaneo torcido
 
 Probá `pdftotext -layout archivo.pdf -` primero: si devuelve texto real, es MUCHO más barato que renderizar páginas como imagen. Si
-da vacío o basura, es un escaneo puro (el registro por documento de Racing está en `fuentes/Argentina/Racing.md`, índice en
-`fuentes/_indice/Argentina.md`). En volumen el default no arranca acá: es `tools/mistral-ocr-transcribe.mjs` y
+da vacío o basura, es un escaneo puro (el registro por documento de Racing está en `Admin/sourcing/Argentina/Racing.md`, índice en
+`Admin/sourcing/_indice/Argentina.md`). En volumen el default no arranca acá: es `tools/mistral-ocr-transcribe.mjs` y
 `tools/gemini-transcribe.mjs` desde la terminal de Guido (ver `Admin/PIPELINE.md`, "Documentos fuente"). Lo de esta sección y de la
 de "PDF escaneado sin capa de texto" (más abajo) es para cuando una página puntual cae en una sesión.
 

@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Paysandu: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Paysandu/dre-2021.pdf. brandColor:null a propósito
-(procedencia en fuentes/Brasil/Paysandu.md, club-or-year-onboarding/club-nuevo.md).
+(procedencia en Admin/sourcing/Brasil/Paysandu.md, club-or-year-onboarding/club-nuevo.md).
 ```
 
 _de data/club-leagues/br.js:_

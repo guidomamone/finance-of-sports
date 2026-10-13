@@ -15,7 +15,7 @@ Botafogo/Cruzeiro/Coritiba (mismo país, ya SAF). 2 ejercicios cargados: 2024 y 
 ejercicio social = AÑO CALENDARIO completo (1°/1 a 31/12), mismo criterio que
 Grêmio/Botafogo (fiscalYearStart:'01-01').
 
-FUENTES (ver fuentes/Brasil/Volta Redonda.md para cómo se consiguieron, incluye 2 gotchas de
+FUENTES (ver Admin/sourcing/Brasil/Volta Redonda.md para cómo se consiguieron, incluye 2 gotchas de
 portal encadenados):
 - 2024: `balanco-2024.pdf` (27 págs., bajado del repositorio de la FERJ — Federação de Futebol
   do Estado do Rio de Janeiro —, NO del portal propio del club). Es un ESCANEO sin capa de
@@ -148,7 +148,7 @@ cidade"), con camisa titular "predominantemente listrada em preto e amarelo" (a 
 negro/amarillo, blanco como color terciario) — sin una fuente que declare cuál de los 2 colores
 de la franja predomina, es el mismo caso "franja a rayas de 2 colores sin desempate confiable"
 de club-or-year-onboarding SKILL.md sección 3 (ahí para bicolores en partes iguales), así que
-queda en null en vez de adivinar. Ver fuentes/Brasil/Volta Redonda.md.
+queda en null en vez de adivinar. Ver Admin/sourcing/Brasil/Volta Redonda.md.
 ============================================================================
 ```
 

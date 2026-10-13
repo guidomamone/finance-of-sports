@@ -1,0 +1,51 @@
+# Fulham
+
+**Ángulos**: regulador/país (Companies House): agotado hasta 5 ejercicios — descarga automatizada con `tools/companies-house-fetch.mjs` · sitio oficial: no intentado (no hace falta, el registro cubre) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
+
+- **Deporte**: Fútbol
+- **Liga / competencia**: Premier League (Inglaterra, 1ª división)
+- **Entidad legal**: Fulham Football Club Limited — Companies House n° **02114486**
+- **Canal**: Companies House (Reino Unido). Procedimiento completo, gotchas y por qué este canal es
+  el mejor del proyecto: `Admin/sourcing/Inglaterra/_notas-generales.md`.
+
+## Qué se bajó (sesión 2026-09-16)
+
+Cuentas completas de la sociedad (`Full accounts`), ejercicio cerrado el 30 de junio. No se encontró
+una holding separada del grupo (existe `FULHAM HOLDINGS LIMITED` n° 12521416, vehículo de Shahid Khan,
+pero no presenta cuentas de grupo con esta actividad) — mismo patrón que Manchester City/Aston
+Villa/West Ham, que también presentan `Full accounts` de la sociedad operativa sola.
+
+- `Clubes/Inglaterra/Fulham/fulham-full-accounts-2024-25.pdf` — 31 páginas, cerrado 30/6/2025.
+- `Clubes/Inglaterra/Fulham/fulham-full-accounts-2023-24.pdf` — 31 páginas, cerrado 30/6/2024.
+
+## Serie disponible sin bajar
+
+**20 ejercicios**, de 30/6/2006 a 30/6/2025.
+
+## Verificación hecha en esta sesión
+
+OCR de la página con el índice del PDF 2024/25: `INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF
+FULHAM FOOTBALL CLUB LIMITED`. Entidad confirmada, no asumida.
+
+- Último chequeo: 2026-09-16.
+- **CARGADO al sitio (2026-09-25)**: ejercicios 2023-24 y 2024-25, `data/fulham-gb-data.js`
+  (clubId `fulham-gb`). Premier League los 2 ejercicios. Cuentas STANDALONE (no de grupo): el
+  CAPEX/financiamiento del Riverside Stand vive en una compañía hermana, fuera de este documento.
+  "Gate Receipts" 2025 tiene un valor forzado por el total (posible error de OCR, ver
+  `Admin/dudas-por-club.md`).
+
+<!-- ing-sourcing -->
+## Ejercicios en disco (sesión 2026-10-03, serie de 5)
+
+Todos en `Clubes/Inglaterra/Fulham/` (los PDF no se trackean; son escaneos, hay que transcribirlos con OCR antes de cargar).
+
+- `fulham-full-accounts-2024-25.pdf`
+- `fulham-full-accounts-2023-24.pdf`
+- `fulham-full-accounts-2022-23.pdf`
+- `fulham-full-accounts-2021-22.pdf`
+- `fulham-full-accounts-2020-21.pdf`
+<!-- /ing-sourcing -->
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 3 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2022-2023, 2023-2024, 2024-2025; `wf-src-*`: 0 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

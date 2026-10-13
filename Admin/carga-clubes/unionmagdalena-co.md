@@ -11,7 +11,7 @@ meta. Las notas de cada fila van en una tabla con su número de fila (hay nombre
 data/unionmagdalena-co-data.js — Unión Magdalena S.A. (Santa Marta, Colombia).
 Tercer club colombiano cargado en finance-of-sports (junto con Once Caldas y
 Envigado). Ejercicio 2018 = REAL, único ejercicio cargado esta sesión: SIIS
-tiene además un ejercicio 2021 sourceado (ver fuentes/Colombia/Union
+tiene además un ejercicio 2021 sourceado (ver Admin/sourcing/Colombia/Union
 Magdalena.md) pero SIN transcribir/cargar todavía — queda pendiente para
 una sesión futura. Los cortes 2016/2017/2019/2020 están verificados como
 vacíos en SIIS (la sociedad no adjuntó el paquete esos años), no son huecos

@@ -19,7 +19,7 @@ el ejercicio 2025 cargado acá es exactamente el que sustenta esa decisión. El
 dictamen del revisor fiscal (`dictamen-revisor-fiscal-2025.md`) confirma una
 "Incertidumbre material relacionada con negocio en marcha" (sin modificar su
 opinión) y el proceso de reorganización radicado el 25/11/2025. Ver
-fuentes/Colombia/Deportivo Pereira.md.
+Admin/sourcing/Colombia/Deportivo Pereira.md.
 
 FUENTE PRINCIPAL: `Clubes/Colombia/Deportivo Pereira/estados-financieros-2025.md`
 (33 páginas, "Revelaciones Estados Financieros de Propósito General bajo NIIF

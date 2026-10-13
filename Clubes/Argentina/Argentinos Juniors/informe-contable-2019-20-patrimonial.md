@@ -2,7 +2,7 @@
 
 Fuente: noticia oficial `argentinosjuniors.com.ar/noticias/institucional/informe-contable/`
 (29/10/2020), imagen `i.ibb.co/NyhkqSZ/1b.jpg` subida por el propio club. Recuperada 2026-09-27
-(ver `fuentes/Argentina/Argentinos Juniors.md` para el detalle de por qué un `curl` simple daba
+(ver `Admin/sourcing/Argentina/Argentinos Juniors.md` para el detalle de por qué un `curl` simple daba
 cuerpo vacío — faltaba User-Agent/Referer, no era un bloqueo de red). 640x455px.
 
 # ESTADOS DE SITUACIÓN PATRIMONIAL COMPARATIVOS (cifras expresadas en pesos ajustadas por inflación)

@@ -20,7 +20,7 @@ no chocar visualmente con el club carioca en el dropdown).
 1 ejercicio cargado: 2024 (ejercicio social = AÑO CALENDARIO, 1°/1 a 31/12 —
 "DEMONSTRAÇÃO DO RESULTADO PARA OS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2024 E DE
 2023"). Fuente: Demonstrações Contábeis auditadas, descargadas de
-botafogofutebolsa.com.br (ver fuentes/Brasil/Botafogo-SP.md — el archivo también
+botafogofutebolsa.com.br (ver Admin/sourcing/Brasil/Botafogo-SP.md — el archivo también
 incluye 2019/2020 y 2022/2023, NO cargados en esta sesión, ver nota de alcance al
 final). Transcripción completa (texto nativo, pdftotext -layout) en
 Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2023-2024.md (1542 líneas).
@@ -155,7 +155,7 @@ verificable en ninguna fuente chequeada (infobox de Wikipedia solo da los 2 colo
 kit —branco/preto—, no el vermelho; sitio oficial y agregadores no dieron un hex
 confiable en la familia esperada). Ambiguo -> null (club-or-year-onboarding sección 3).
 
-ALCANCE DE ESTA SESIÓN: el archivo fuente de Botafogo-SP (ver fuentes/Brasil/
+ALCANCE DE ESTA SESIÓN: el archivo fuente de Botafogo-SP (ver Admin/sourcing/Brasil/
 Botafogo-SP.md) también tiene demonstracoes-financeiras-2019-2020.md y
 demonstracoes-contabeis-2022-2023.md, con los ejercicios 2019, 2020, 2022 y 2023 — NO
 cargados acá (esta sesión cargó solo 2024, el club era nuevo). Quedan como trabajo

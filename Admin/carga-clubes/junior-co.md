@@ -19,7 +19,7 @@ FUENTE: `Clubes/Colombia/Junior de Barranquilla/estados-financieros-2025.pdf`
 31 de diciembre de 2025 y 2024"), texto nativo vía pdftotext -layout,
 transcripción completa en `estados-financieros-2025.md` en la misma
 carpeta. Bajado vía SIIS (siis.ia.supersociedades.gov.co, NIT 900456729),
-ver `fuentes/Colombia/Junior de Barranquilla.md`.
+ver `Admin/sourcing/Colombia/Junior de Barranquilla.md`.
 
 Cifras del documento "expresadas en miles de pesos colombianos" (confirmado
 en el encabezado de página). Acá se guardan divididas por 1.000, en

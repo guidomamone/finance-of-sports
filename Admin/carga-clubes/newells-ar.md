@@ -14,7 +14,7 @@ nuevos llevan el país al final). 1 ejercicio cargado: 2019 (Ejercicio 1°/7/201
 PDF + transcripción en
 Clubes/Argentina/Newells Old Boys/memoria-y-balance-2018-2019.{pdf,md} (98 páginas, capa de
 texto NATIVA — sin OCR, confirmado con pdftotext antes de transcribir). Ver
-fuentes/Argentina/Newells Old Boys.md para cómo se encontró el PDF (recuperado de Wayback
+Admin/sourcing/Argentina/Newells Old Boys.md para cómo se encontró el PDF (recuperado de Wayback
 Machine, la URL oficial viva devuelve 404 hoy).
 
 El segundo PDF de la carpeta (resumen-anual-actividades-2012-2013.pdf) es narrativo, sin

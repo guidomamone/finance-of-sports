@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Torino: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Torino/Torino-bilancio-2024.pdf.
-brandColor y su procedencia: fuentes/Italia/Torino.md.
+brandColor y su procedencia: Admin/sourcing/Italia/Torino.md.
 ```
 
 _de data/club-leagues/it.js:_

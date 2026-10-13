@@ -11,7 +11,7 @@ meta. Las notas de cada fila van en una tabla con su número de fila (hay nombre
 data/vejle-dk-data.js — VB Alliancen A/S (CVR 31 08 51 79), Vejle, Dinamarca
 (la sociedad profesional de Vejle Boldklub, distinta de "VEJLE BOLDKLUB" a
 secas, CVR 68 04 67 18, que es la asociación sin fines de lucro dueña del
-resto del club — ver fuentes/Dinamarca/Vejle.md). clubId 'vejle-dk' (sufijo
+resto del club — ver Admin/sourcing/Dinamarca/Vejle.md). clubId 'vejle-dk' (sufijo
 de país, misma convención que fckobenhavn-dk/silkeborg-dk/agf-dk/randers-dk).
 Ejercicio fiscal 2024 (año CALENDARIO, 1° de enero a 31 de diciembre de 2024,
 `fiscalYearStart:'01-01'`).

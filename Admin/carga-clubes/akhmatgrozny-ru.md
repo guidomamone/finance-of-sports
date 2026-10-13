@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Akhmat Grozny: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2022-datos.md. brandColor #00782F
-(procedencia en fuentes/Rusia/Akhmat Grozny.md; tools/bfo-rusia.mjs).
+(procedencia en Admin/sourcing/Rusia/Akhmat Grozny.md; tools/bfo-rusia.mjs).
 ```
 
 _de data/club-leagues/ru.js:_

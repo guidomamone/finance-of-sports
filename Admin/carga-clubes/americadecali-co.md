@@ -21,7 +21,7 @@ Situación Financiera + Estado Individual de Resultados y Otros Resultados
 Integrales + notas), texto nativo vía pdftotext -layout, transcripción
 completa en `estados-financieros-2025.md` en la misma carpeta. Bajado vía
 SIIS (siis.ia.supersociedades.gov.co, NIT 890305773), ver
-`fuentes/Colombia/America de Cali.md`.
+`Admin/sourcing/Colombia/America de Cali.md`.
 
 OJO — el club está formalmente "en reorganización" (Ley 1116) desde
 2014-2015. Esto no cambió la estructura del Estado de Resultados (sigue

@@ -13,7 +13,7 @@ data/realoviedo-es-data.js — Real Oviedo, S.A.D. Ejercicio 2024/2025
 
 Fuente: "Cuentas Anuales, Temporada 2024-25" (`Clubes/España/Real Oviedo/
 cuentas-anuales-2024-2025.pdf`, 65 págs.). Bajado de
-`realoviedo.es/ley-de-transparencia`, ver fuentes/España/Real Oviedo.md.
+`realoviedo.es/ley-de-transparencia`, ver Admin/sourcing/España/Real Oviedo.md.
 Host statics-maker.llt-services.com/ovi/ (mismo CMS compartido que
 Mallorca/Girona/Getafe/etc.).
 
@@ -103,7 +103,7 @@ club como "Azul y Blanco" con el azul en PANTONE 286C — hex convertido de
 ese Pantone (fuentes de conversión: crispedge.com, icolorpalette.com,
 coinciden en #0032A0/#0033A0). Azul domina sobre blanco en la identidad
 (nombre popular "los azules", equipación histórica). Ver
-fuentes/España/Real Oviedo.md.
+Admin/sourcing/España/Real Oviedo.md.
 
 gestionesByClub: no se encontró un nombre de Presidente identificable en la
 transcripción (menciona el cargo "Presidente — Consejero Delegado" sin

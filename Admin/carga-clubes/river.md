@@ -11,7 +11,7 @@ meta. Las notas de cada fila van en una tabla con su número de fila (hay nombre
 data/river-data.js — River Plate: Brito (2021-actual) y D'Onofrio (2013-2021).
 
 Ejercicios 2021 y 2024 = REALES. Ejercicio 2025 SIGUE SIENDO PLACEHOLDER: no hay documento
-oficial cargado todavía (ver fuentes/Argentina/River.md).
+oficial cargado todavía (ver Admin/sourcing/Argentina/River.md).
 
 Ejercicio 2024 (gestión Brito): balance auditado real vía réplica de tuRiver.com — ver
 comentario largo antes de riverRevenueLinesByYear[2024] más abajo.
@@ -258,7 +258,7 @@ bancos.
 _note (data/):_
 
 ```text
-PDF individual (no consolidado, mismo criterio que Boca/Racing) presentado ante la CNV (presentación #3248465, "EECC 2021 River Plate legalizados (2).pdf", 65 páginas, legalizado/firmado), descargado el 2026-09-28 (ver fuentes/Argentina/River.md). Transcripción vía Mistral OCR (documento escaneado, ver advertencia en el propio .md) -- cifras verificadas a mano contra el PDF antes de cargar. Reemplaza el placeholder inventado que existía para este ejercicio desde la Versión 138.
+PDF individual (no consolidado, mismo criterio que Boca/Racing) presentado ante la CNV (presentación #3248465, "EECC 2021 River Plate legalizados (2).pdf", 65 páginas, legalizado/firmado), descargado el 2026-09-28 (ver Admin/sourcing/Argentina/River.md). Transcripción vía Mistral OCR (documento escaneado, ver advertencia en el propio .md) -- cifras verificadas a mano contra el PDF antes de cargar. Reemplaza el placeholder inventado que existía para este ejercicio desde la Versión 138.
 ```
 
 ### river-estados-contables-2023-24

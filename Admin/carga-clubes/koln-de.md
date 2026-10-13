@@ -19,7 +19,7 @@ FUENTE: `Clubes/Alemania/1. FC Köln/jahresabschluss-2023-24.md` y
 INDIVIDUALES, no consolidados — no hay Konzernabschluss separado para este
 club en los años recientes), bajados de unternehmensregister.de. Los PDF
 SÍ tienen capa de texto nativa (`pdftotext -layout` funciona limpio, no fue
-necesario OCR). Ver fuentes/Alemania/1. FC Köln.md para el detalle de
+necesario OCR). Ver Admin/sourcing/Alemania/1. FC Köln.md para el detalle de
 sourcing.
 
 Ejercicio 2023/2024 (01.07.2023-30.06.2024, cierra 30/6/2024) → clave 2024.

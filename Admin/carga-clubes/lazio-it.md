@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Lazio: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.pdf.
-brandColor y su procedencia: fuentes/Italia/Lazio.md.
+brandColor y su procedencia: Admin/sourcing/Italia/Lazio.md.
 ```
 
 _de data/club-leagues/it.js:_

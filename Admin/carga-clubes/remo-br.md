@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Remo: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Remo/demonstracoes-contabeis-2021.pdf. brandColor #111533
-(procedencia en fuentes/Brasil/Remo.md; tools/cargar-lote.mjs).
+(procedencia en Admin/sourcing/Brasil/Remo.md; tools/cargar-lote.mjs).
 ```
 
 _de data/club-leagues/br.js:_

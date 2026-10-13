@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Hellas Verona: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2020.pdf.
-brandColor y su procedencia: fuentes/Italia/Hellas Verona.md.
+brandColor y su procedencia: Admin/sourcing/Italia/Hellas Verona.md.
 ```
 
 _de data/club-leagues/it.js:_

@@ -30,7 +30,7 @@ permanentes. Esto es el procedimiento.
 | 4 | `.claude/skills/club-data-mapping` | si cargás o categorizás datos de un club A MANO, fuera del pipeline, o revisás la cola de categorías (el SKILL.md indica qué archivo de `referencia/` abrir) |
 | 5 | `.claude/skills/club-or-year-onboarding` | si onboardeás clubes o tocás el pipeline (trae su propio arranque) |
 | 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía |
-| 7 | `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca |
+| 7 | `Admin/sourcing/README.md` (índice de países) → `Admin/sourcing/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca |
 
 **Lo que NO hace falta leer para trabajar**, y conviene no abrir por las dudas:
 
@@ -91,7 +91,7 @@ grande), desgloses que se contradicen con su propia fila, catch-all dominante, r
 Corre en menos de un segundo y sale con código 1 si hay P0 o P1. Lo que importa es que siga en 0 P0 y
 0 P1; el conteo de P2 y P3 sube y baja con cada sesión. **También chequea que los 4 generadores estén
 al día** (`checkGenerados()`, P1): rankings, `fuentes.html` y sus páginas de club, el índice de clubes
-y el índice de `fuentes/README.md`. Si tocaste `js/` o `data/` y subiste `ASSET_V`, hay que regenerar
+y el índice de `Admin/sourcing/README.md`. Si tocaste `js/` o `data/` y subiste `ASSET_V`, hay que regenerar
 `fuentes.html` y sus páginas de club, porque ese generador LEE `ASSET_V` de `index.html`.
 
 Para una auditoría DE RUTINA (no la verificación de un cambio puntual: el chequeo periódico de que
@@ -177,14 +177,14 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
   un ejercicio. `--check` avisa si quedó viejo (y `audit.js` lo corre solo, como P1), `--print`
   imprime los rankings para verificarlos contra la fuente. Es lo que alimenta la pestaña Ligas.
 - `node tools/generate-fuentes-index.js` — regenera, desde los propios
-  `fuentes/_indice/<País>.md`, la sección "Índice de países" de `fuentes/README.md`: la línea de
+  `Admin/sourcing/_indice/<País>.md`, la sección "Índice de países" de `Admin/sourcing/README.md`: la línea de
   cada país con sus 3 números (clubes trackeados, cuántos con documento, chequeo más antiguo) y el
   párrafo de totales. Corrélo después de CUALQUIER sesión de sourcing, en vez de actualizar la línea
   del país a mano. `--check` avisa si quedó vieja; `--debug` imprime la clasificación club por club.
   **Lo que hay que saber antes de usarlo**: "con documento encontrado" no es un campo, es prosa libre
   del agente de sourcing, así que se infiere con dos listas de regex (señales de SÍ / señales de NO).
   Cuando una línea matchea señales de los dos lados o de ninguno, el script ABORTA en vez de
-  adivinar, y la decisión se toma a mano leyendo el `fuentes/<País>/<Club>.md` y se escribe en
+  adivinar, y la decisión se toma a mano leyendo el `Admin/sourcing/<País>/<Club>.md` y se escribe en
   `OVERRIDES`, adentro del script, con el motivo de cada decisión. Si
   aborta, no es un bug: es el diseño.
 

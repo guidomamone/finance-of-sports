@@ -18,7 +18,7 @@ clubs{}/CLUB_GENERIC_DATA/gestionesByClub/memberCountByClub, nunca notación de 
 2 ejercicios cargados: 2024 y 2025 (ejercicio social = AÑO CALENDARIO, 1°/1 a 31/12 — clubs.js,
 fiscalYearStart:'01-01', mismo criterio que Botafogo/Grêmio). Fuente: "Relatório Anual com as
 Demonstrações Financeiras" de cada año, descargados de images.flamengo.com.br (bucket de assets
-del sitio oficial, ver fuentes/Brasil/Flamengo.md). Cada PDF trae Relatório de Gestão +
+del sitio oficial, ver Admin/sourcing/Brasil/Flamengo.md). Cada PDF trae Relatório de Gestão +
 Demonstrações Financeiras + parecer del auditor independiente + parecer del Conselho Fiscal — PDF
 con texto nativo, transcripción completa en
 Clubes/Brasil/Flamengo/relatorio-anual-demonstracoes-financeiras-{2024,2025}.md.
@@ -191,7 +191,7 @@ _de data/clubs.js:_
 ```text
 5 clubes nuevos (Versión 219, 2do batch de PDF transcriptos pendientes, sesión 2026-09-24):
 mismo motor genérico, mismo país/moneda. `brandColor:null` en RB Bragantino: camiseta titular
-blanca dominante, mismo criterio que River/Vélez/Once Caldas — ver `fuentes/Brasil/<Club>.md`
+blanca dominante, mismo criterio que River/Vélez/Once Caldas — ver `Admin/sourcing/Brasil/<Club>.md`
 para el detalle de cada investigación de color.
 ```
 
@@ -323,7 +323,7 @@ Baptista asume el 01/01/2025 y firma las demostraciones financieras 2024 (cerrad
 _note (data/):_
 
 ```text
-PDF oficial (texto nativo), descargado del bucket de assets del sitio oficial (ver fuentes/Brasil/Flamengo.md para cómo se ubicó — la sección de transparencia del sitio es una SPA que no permite navegar directo, se ubicó vía la nota de prensa del club anunciando la publicación). Incluye Relatório de Gestão + Demonstrações Financeiras + parecer del auditor independiente + parecer do Conselho Fiscal. Se cargó la columna CONTROLADORA (standalone), no la Consolidado (incluye la Fla-Flu Serviços S.A.). 2024 fue un ejercicio de DÉFICIT real (R$734 mil), el segundo déficit del club desde 2014 según su propio Relatório de Gestão, atribuido a variación cambial y menor resultado de equivalencia patrimonial. Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Flamengo/relatorio-anual-demonstracoes-financeiras-2024.md.
+PDF oficial (texto nativo), descargado del bucket de assets del sitio oficial (ver Admin/sourcing/Brasil/Flamengo.md para cómo se ubicó — la sección de transparencia del sitio es una SPA que no permite navegar directo, se ubicó vía la nota de prensa del club anunciando la publicación). Incluye Relatório de Gestão + Demonstrações Financeiras + parecer del auditor independiente + parecer do Conselho Fiscal. Se cargó la columna CONTROLADORA (standalone), no la Consolidado (incluye la Fla-Flu Serviços S.A.). 2024 fue un ejercicio de DÉFICIT real (R$734 mil), el segundo déficit del club desde 2014 según su propio Relatório de Gestão, atribuido a variación cambial y menor resultado de equivalencia patrimonial. Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Flamengo/relatorio-anual-demonstracoes-financeiras-2024.md.
 ```
 
 ### flamengo-br-demonstracoes-2025

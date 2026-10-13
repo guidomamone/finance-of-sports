@@ -11,7 +11,7 @@ meta. Las notas de cada fila van en una tabla con su número de fila (hay nombre
 data/botafogo-data.js — Botafogo Sociedade Anônima do Futebol (SAF), Rio de Janeiro, Brasil.
 El club tiene DOS entidades reales: la SAF (Botafogo Futebol S.A., el negocio de fútbol
 profesional, convertida en 2022) y a associação "Botafogo de Futebol e Regatas" (club social sin
-fines de lucro, entidad separada). Se cargó la SAF (ver fuentes/Brasil/_notas-generales.md y
+fines de lucro, entidad separada). Se cargó la SAF (ver Admin/sourcing/Brasil/_notas-generales.md y
 Botafogo.md: "la SAF sigue siendo la entidad principal a cargar" — es el negocio de fútbol). 3
 ejercicios cargados: 2023, 2024, 2025 (ejercicio social = AÑO CALENDARIO completo, 1°/1 a
 31/12/<año> — ver clubs.js, fiscalYearStart:'01-01', mismo criterio que Grêmio/isCalendarYearClub()).

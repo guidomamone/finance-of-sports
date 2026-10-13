@@ -18,7 +18,7 @@ FUENTE: `Clubes/Colombia/Independiente Santa Fe/estados-financieros-2025.pdf`
 nativo vía pdftotext -layout, transcripción completa en
 `estados-financieros-2025.md` en la misma carpeta. Bajado vía SIIS
 (siis.ia.supersociedades.gov.co, NIT 860009807), ver
-`fuentes/Colombia/Independiente Santa Fe.md`.
+`Admin/sourcing/Colombia/Independiente Santa Fe.md`.
 
 OJO — el club está "en reorganización" ante Supersociedades (Ley 1116).
 

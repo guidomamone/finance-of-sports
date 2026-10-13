@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Sampdoria: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf.
-brandColor y su procedencia: fuentes/Italia/Sampdoria.md.
+brandColor y su procedencia: Admin/sourcing/Italia/Sampdoria.md.
 ```
 
 _de data/club-leagues/it.js:_

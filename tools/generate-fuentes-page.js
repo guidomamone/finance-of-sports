@@ -43,7 +43,7 @@ const { esCalendario } = require('./cierre-ejercicio.js');
 const ROOT = path.resolve(__dirname, '..');
 const SALIDA_INDICE = path.join(ROOT, 'fuentes.html');
 // Las páginas por club viven en `fuentes/`, al lado de las notas internas de sourcing, que
-// están un nivel más abajo (`fuentes/<País>/<Club>.md`). No pueden colisionar: acá se escribe
+// están un nivel más abajo (`Admin/sourcing/<País>/<Club>.md`). No pueden colisionar: acá se escribe
 // `fuentes/<clubId>.html` y esos son siempre archivos, nunca carpetas de país.
 const DIR_CLUBES = path.join(ROOT, 'fuentes');
 const SALIDA_SITEMAP = path.join(ROOT, 'sitemap.xml');

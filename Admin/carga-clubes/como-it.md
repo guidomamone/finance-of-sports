@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Como: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf.
-brandColor y su procedencia: fuentes/Italia/Como.md.
+brandColor y su procedencia: Admin/sourcing/Italia/Como.md.
 ```
 
 _de data/club-leagues/it.js:_

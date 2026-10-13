@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Monza: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Monza/Monza-bilancio-2022.pdf.
-brandColor y su procedencia: fuentes/Italia/Monza.md.
+brandColor y su procedencia: Admin/sourcing/Italia/Monza.md.
 ```
 
 _de data/club-leagues/it.js:_

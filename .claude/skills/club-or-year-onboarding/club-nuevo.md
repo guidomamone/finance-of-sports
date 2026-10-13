@@ -65,7 +65,7 @@ están `textoSobre()` (cambia el TEXTO, no el color del club) y el aro interno d
 claros; si aun así no se lleva, va a `null`. Un club sin `brandColor` y sin `null` lo marca
 `node tools/audit.js` (`club-sin-color-ni-null`, P3).
 
-**La procedencia del color se anota en `fuentes/<País>/<Club>.md`, NO en `data/clubs.js`**:
+**La procedencia del color se anota en `Admin/sourcing/<País>/<Club>.md`, NO en `data/clubs.js`**:
 ese archivo es eager y se baja en CADA pageview, y `fuentes/` no se publica. Con una línea
 alcanza: `Color de marca: #XXXXXX — <fuente>, verificado AAAA-MM-DD`.
 

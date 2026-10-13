@@ -18,7 +18,7 @@ clubs{}/CLUB_GENERIC_DATA/gestionesByClub/memberCountByClub, nunca notación de 
 fiscalYearStart:'01-01', confirmado leyendo la carátula de CADA balance: "Exercícios findos em 31
 de dezembro de 2024 e 2023" / "...de 2025 e 2024"). Fuente: "Demonstrações Financeiras" oficiales
 del Clube, descargadas de corinthians.com.br/clube/transparencia/demonstracoes-financeiras-e-
-balancetes-patrimoniais (ver fuentes/Brasil/Corinthians.md — las URLs de PDF de ese portal llevan
+balancetes-patrimoniais (ver Admin/sourcing/Brasil/Corinthians.md — las URLs de PDF de ese portal llevan
 un query string `?rand=` inestable entre sesiones, no confiar en el link directo sin re-visitar la
 página). 2024 se cargó del documento demonstracoes-financeiras-2023-2024.pdf (SU PROPIO año
 corriente, no la columna comparativa de 2025 — club-data-mapping sección 6.5); 2025 del documento
@@ -218,7 +218,7 @@ _de data/clubs.js:_
 10 clubes nuevos (Versión 220, 3er batch de PDF transcriptos pendientes, sesión 2026-09-24):
 mismo motor genérico, mismo país/moneda. `brandColor:null` en Bahia (tricolor en partes
 iguales, sin predominancia declarada por ninguna fuente) y São Paulo (camiseta titular blanca
-dominante, mismo criterio que RB Bragantino) — ver `fuentes/Brasil/<Club>.md` para el detalle.
+dominante, mismo criterio que RB Bragantino) — ver `Admin/sourcing/Brasil/<Club>.md` para el detalle.
 ```
 
 _de data/club-leagues/br.js:_
@@ -311,7 +311,7 @@ Interino desde el 26/05/2025, efectivado el 25/08/2025 (mandato hasta el 31/12/2
 _note (data/):_
 
 ```text
-PDF oficial (texto nativo, layout de "publicação legal" tipo página de diário para a capa, corpo do documento com camada de texto real), descarregado do portal de transparência oficial do Clube (a URL direta do PDF leva um query string ?rand= instável entre sessões — ver fuentes/Brasil/Corinthians.md). DRE auditada SEGMENTADA em 2 blocos (Segmento futebol / Segmento clube social e esportes amadores), não consolidada — ver comentário de cabeçalho de data/corinthians-br-data.js. Déficit real de R$181.766 mil, ano com nota de incerteza sobre continuidade operacional (pedido de RCE — Regime Centralizado de Execuções — para organizar dívidas cíveis) e saldo expressivo de contingências reconhecidas de exercícios passados. Convertido a USD com PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcrição completa em Clubes/Brasil/Corinthians/demonstracoes-financeiras-2023-2024.md.
+PDF oficial (texto nativo, layout de "publicação legal" tipo página de diário para a capa, corpo do documento com camada de texto real), descarregado do portal de transparência oficial do Clube (a URL direta do PDF leva um query string ?rand= instável entre sessões — ver Admin/sourcing/Brasil/Corinthians.md). DRE auditada SEGMENTADA em 2 blocos (Segmento futebol / Segmento clube social e esportes amadores), não consolidada — ver comentário de cabeçalho de data/corinthians-br-data.js. Déficit real de R$181.766 mil, ano com nota de incerteza sobre continuidade operacional (pedido de RCE — Regime Centralizado de Execuções — para organizar dívidas cíveis) e saldo expressivo de contingências reconhecidas de exercícios passados. Convertido a USD com PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcrição completa em Clubes/Brasil/Corinthians/demonstracoes-financeiras-2023-2024.md.
 ```
 
 ### corinthians-br-demonstracoes-2025

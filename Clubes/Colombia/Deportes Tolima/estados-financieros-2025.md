@@ -2,7 +2,7 @@
 
 Transcripción vía pdftotext -layout (PDF con capa de texto real, confirmado: ~172KB de texto en 53 páginas). Cifras del documento en MILES de pesos colombianos (confirmado en el propio texto, pág. 5: "presentada en miles de pesos y fue redondeada a la unidad de mil mas cercana"). Como Once Caldas, este PDF son las NOTAS a los estados financieros, NO incluye una tabla de Estado de Situación Financiera/Estado de Resultado Integral aparte.
 
-NO CARGADO al sitio esta sesión — ver fuentes/Colombia/Deportes Tolima.md para el detalle de por qué (3 cifras de resultado neto 2025 en conflicto, sin poder reconciliar con el documento disponible).
+NO CARGADO al sitio esta sesión — ver Admin/sourcing/Colombia/Deportes Tolima.md para el detalle de por qué (3 cifras de resultado neto 2025 en conflicto, sin poder reconciliar con el documento disponible).
 
                                           CLUB DEPORTES TOLIMA S.A.
 

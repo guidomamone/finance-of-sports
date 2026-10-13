@@ -18,9 +18,9 @@ transparencia.fortaleza1918.com.br/portal-saf/ (portal oficial de transparência
 texto nativo, transcripción completa en
 Clubes/Brasil/Fortaleza/demonstracoes-contabeis-saf-2025.md. Se cargó SOLO el ejercicio 2025 —
 el club tiene DOS entidades con transparencia separada (SAF y associação, ver
-fuentes/Brasil/Fortaleza.md), y esta SAF es la que corresponde al negocio de fútbol. NO se usaron
+Admin/sourcing/Brasil/Fortaleza.md), y esta SAF es la que corresponde al negocio de fútbol. NO se usaron
 balancete-anual-saf-2024.md/-2025.md (exports de software contable "Fortes Contábil", sin parecer
-de auditor ni notas explicativas — calidad insuficiente, ver fuentes/Brasil/Fortaleza.md).
+de auditor ni notas explicativas — calidad insuficiente, ver Admin/sourcing/Brasil/Fortaleza.md).
 
 COLUMNA ÚNICA, NO HAY CONTROLADORA/CONSOLIDADO QUE ELEGIR (a diferencia de Botafogo/Atlético
 Mineiro): la Nota 1 ("Contexto operacional") no menciona ninguna controlada/subsidiária de la SAF
@@ -204,7 +204,7 @@ check (sí de officialPAT, vía operatingProfit). officialPAT = 'Prejuízo do ex
 _note (data/):_
 
 ```text
-PDF oficial (texto nativo), descargado del portal de transparência da SAF. Se cargó la SAF (Fortaleza EC SAF), NO la associação (Fortaleza Esporte Clube) — son 2 entidades separadas con transparencia propia, ver fuentes/Brasil/Fortaleza.md. El documento no tiene columna Controladora/Consolidado (la SAF no tiene subsidiárias propias a diferencia de Botafogo/Atlético Mineiro) — una sola columna de cifras por año. El informe del auditor (BDO) incluye un párrafo de énfasis sobre incerteza de continuidade operacional (prejuízo de R$120,141 M en 2025, passivo circulante excede o ativo circulante en R$166,807 M), sin salvedad en la opinión. Convertido a USD con PTAX BCB de cierre 31/12/2025 (R$5,5024), el documento no declara un tipo de cambio propio. NO se cargaron balancete-anual-saf-2024.pdf/-2025.pdf (exports de software contable sin parecer de auditor) ni ningún documento de la associação. Transcripción completa en Clubes/Brasil/Fortaleza/demonstracoes-contabeis-saf-2025.md.
+PDF oficial (texto nativo), descargado del portal de transparência da SAF. Se cargó la SAF (Fortaleza EC SAF), NO la associação (Fortaleza Esporte Clube) — son 2 entidades separadas con transparencia propia, ver Admin/sourcing/Brasil/Fortaleza.md. El documento no tiene columna Controladora/Consolidado (la SAF no tiene subsidiárias propias a diferencia de Botafogo/Atlético Mineiro) — una sola columna de cifras por año. El informe del auditor (BDO) incluye un párrafo de énfasis sobre incerteza de continuidade operacional (prejuízo de R$120,141 M en 2025, passivo circulante excede o ativo circulante en R$166,807 M), sin salvedad en la opinión. Convertido a USD con PTAX BCB de cierre 31/12/2025 (R$5,5024), el documento no declara un tipo de cambio propio. NO se cargaron balancete-anual-saf-2024.pdf/-2025.pdf (exports de software contable sin parecer de auditor) ni ningún documento de la associação. Transcripción completa en Clubes/Brasil/Fortaleza/demonstracoes-contabeis-saf-2025.md.
 ```
 
 ## Otros

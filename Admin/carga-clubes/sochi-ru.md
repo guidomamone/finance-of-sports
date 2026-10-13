@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Sochi: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2021-datos.md. brandColor #0044A8
-(procedencia en fuentes/Rusia/Sochi.md; tools/bfo-rusia.mjs).
+(procedencia en Admin/sourcing/Rusia/Sochi.md; tools/bfo-rusia.mjs).
 ```
 
 _de data/club-leagues/ru.js:_

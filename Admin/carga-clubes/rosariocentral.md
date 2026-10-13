@@ -13,7 +13,7 @@ ejercicios cargados: 2022/2023 (1°/7/2022 al 30/6/2023) y 2024/2025 (1°/7/2024
 comentario propio más abajo), ambos balances auditados reales (Grant Thornton / Adler, Hasenclever
 y Asociados S.R.L.), ambos texto nativo. PDF + transcripción en
 Clubes/Argentina/Rosario Central/estados-contables-2022-2023.{pdf,md} y
-estados-contables-2024-2025.{pdf,md}. Falta el ejercicio 2023/2024 (ver fuentes/Argentina/Rosario
+estados-contables-2024-2025.{pdf,md}. Falta el ejercicio 2023/2024 (ver Admin/sourcing/Argentina/Rosario
 Central.md).
 
 Estructura del documento (Anexo V "Recursos" / Anexo VI "Gastos"): cada rubro tiene una fila
@@ -53,7 +53,7 @@ donde asume a mitad de año cae bajo la gestión nueva).
 EJERCICIO 2024/2025 (1°/7/2024 al 30/6/2025), agregado en sesión posterior. Balance auditado real
 (Grant Thornton / Adler, Hasenclever & Asociados S.R.L., informe 13/10/2025). PDF + transcripción en
 Clubes/Argentina/Rosario Central/estados-contables-2024-2025.{pdf,md} (41 págs, TEXTO NATIVO —
-la nota vieja de fuentes/Argentina/Rosario Central.md que decía "escaneo sin capa de texto" estaba
+la nota vieja de Admin/sourcing/Argentina/Rosario Central.md que decía "escaneo sin capa de texto" estaba
 mal, corregida).
 
 Estructura del documento (Anexo V "Recursos" / Anexo VI "Gastos"): esta vez agrupa en SOLO 6

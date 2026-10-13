@@ -12,7 +12,7 @@ data/girona-es-data.js — Girona Futbol Club, S.A.D. Ejercicios 2019/2020
 (1/7/2019 a 30/6/2020) y 2024/2025 (1/7/2024 a 30/6/2025).
 
 AÑOS NO CONSECUTIVOS a propósito: son los 2 únicos ejercicios reales
-descargados en esta sesión (ver fuentes/España/Girona FC.md), con un hueco
+descargados en esta sesión (ver Admin/sourcing/España/Girona FC.md), con un hueco
 grande en el medio (2020-21 a 2023-24 pendientes). El ejercicio 2019/2020
 (Segunda División, ver data/club-leagues/es.js) muestra a Girona recién
 descendido de LaLiga con un revenue de apenas EUR 27 M; el 2024/2025

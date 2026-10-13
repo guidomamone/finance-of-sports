@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Pari Nizhny Novgorod: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2021-datos.md. brandColor #5BB8F8
-(procedencia en fuentes/Rusia/Pari Nizhny Novgorod.md; tools/bfo-rusia.mjs).
+(procedencia en Admin/sourcing/Rusia/Pari Nizhny Novgorod.md; tools/bfo-rusia.mjs).
 ```
 
 _de data/club-leagues/ru.js:_

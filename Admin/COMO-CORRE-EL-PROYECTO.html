@@ -251,7 +251,7 @@
       <tbody>
         <tr><td class="mono">Admin/CHANGELOG.md</td><td>Qué cambió en cada versión, en pocas líneas — 224 entradas. Para "¿cuándo se cargó tal cosa?". La diferencia con el de abajo es qué contesta cada uno: éste contesta QUÉ y CUÁNDO, el otro POR QUÉ.</td><td class="num">368 KB</td></tr>
         <tr><td class="mono">Admin/finance-of-sports-project.md</td><td><strong>El diario del proyecto.</strong> El razonamiento completo de las decisiones que lo ameritan (no todas las versiones tienen entrada propia): qué se probó, qué se descartó y por qué. Sirve para reconstruir el "por qué" de algo viejo, no para trabajar.</td><td class="num">505 KB</td></tr>
-        <tr><td class="mono">fuentes/README.md<br>+ fuentes/</td><td>Qué se buscó para cada club, qué se encontró y qué no. Tres niveles: un índice de 44 países, un índice por país con una línea por club, y 615 archivos de club, uno por club.</td><td class="num">4,4 MB</td></tr>
+        <tr><td class="mono">Admin/sourcing/README.md<br>+ fuentes/</td><td>Qué se buscó para cada club, qué se encontró y qué no. Tres niveles: un índice de 44 países, un índice por país con una línea por club, y 615 archivos de club, uno por club.</td><td class="num">4,4 MB</td></tr>
         <tr><td class="mono">Admin/Archive/</td><td>Documentos que cumplieron su función entera y pasaron a ser historia: el plan de remediación de escala (7 de 8 puntos hechos) y la versión escrita a mano de "qué es real por club", congelada el día que esa sección empezó a generarse. Cada uno con su banner de versión.</td><td class="num">2 docs<br>84 KB</td></tr>
         <tr><td class="mono">Admin/dudas-por-club.md</td><td>Las preguntas que quedaron abiertas de verdad, para escribirles a los clubes. No es una lista de pendientes: es una lista de cosas que el documento no aclara.</td><td class="num">141 KB</td></tr>
         <tr><td class="mono">Clubes/</td><td>El PDF de cada documento fuente y su transcripción completa a texto, uno al lado del otro. No es sólo de los 161 clubes cargados: crece con cada club que <code>club-sourcing</code> encuentra, cargado o no — hoy 372 carpetas de club en 35 países. Los <code>.pdf</code> están en <code>.gitignore</code> por peso (11 GB en disco); lo que viaja al repo son ~1.766 <code>.md</code>.</td><td class="num">~150 MB<br>trackeados</td></tr>
@@ -311,7 +311,7 @@
       <text x="470" y="140" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">club-or-year-onboarding — 9 KB</text>
       <text x="470" y="156" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".6">si tocás datos de un club</text>
 
-      <text x="470" y="182" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">fuentes/README + índice — 10 KB</text>
+      <text x="470" y="182" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">Admin/sourcing/README + índice — 10 KB</text>
       <text x="470" y="198" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".6">antes de salir a buscar PDFs</text>
 
       <text x="470" y="228" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".62">CHANGELOG y el diario NO están</text>
@@ -950,7 +950,7 @@ node tools/bfo-rusia.mjs --club Krasnodar --escribir [--reemplazar]
       <tr><td class="mono">generate-club-index.js</td><td>La sección "QUÉ ES REAL POR CLUB", en <code>Admin/ESTADO-clubes.md</code> (no en <code>ESTADO.md</code>, para no acercarse al umbral de 60 KB que usa <code>audit.js</code>).</td><td>Después de onboardear un club.</td></tr>
       <tr><td class="mono">generate-fuentes-page.js</td><td><code>fuentes.html</code> + las 161 páginas <code>fuentes/&lt;clubId&gt;.html</code> + <code>sitemap.xml</code>. Borra solo la página de un club que deje de existir.</td><td>Después de cargar una fuente nueva, o de subir <code>ASSET_V</code> (lee esa constante de <code>index.html</code>).</td></tr>
       <tr><td class="mono">generate-rankings.js</td><td><code>data/rankings/&lt;liga&gt;.js</code>, uno por liga (22 archivos), con el motor real.</td><td>Después de cargar un club o un ejercicio nuevo.</td></tr>
-      <tr><td class="mono">generate-fuentes-index.js</td><td>La sección "Índice de países" de <code>fuentes/README.md</code> (44 países, sus 3 números cada uno).</td><td>Después de una sesión de sourcing.</td></tr>
+      <tr><td class="mono">generate-fuentes-index.js</td><td>La sección "Índice de países" de <code>Admin/sourcing/README.md</code> (44 países, sus 3 números cada uno).</td><td>Después de una sesión de sourcing.</td></tr>
       <tr><td class="mono">generate-como-corre-stats.js</td><td>El bloque de números de la cabecera de <strong>este mismo documento</strong> (clubes, países, ligas, documentos fuente) — sin esto, se atrasan con cada tanda de onboarding.</td><td>Después de cargar un club, o antes de releer este documento.</td></tr>
     </tbody>
   </table></div>

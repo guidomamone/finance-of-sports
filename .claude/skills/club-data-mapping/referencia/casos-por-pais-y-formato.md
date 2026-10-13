@@ -49,7 +49,7 @@ el dato correcto.**
 **Caso A: la liga publica un renglón por club (los 10 de la J.League).** El informe de gestión da el INGRESO de cada club y 3
 líneas de desglose; su estructura de costos solo existe a nivel división. Entonces: `officialTotalRevenue` con el número y
 `officialTotalExpenses: null` + `officialPAT: null`. Sin gastos publicados no hay resultado que cargar, y pedirle el PAT a estos
-ejercicios es pedir un número que no existe en ninguna fuente (`fuentes/Japón/_notas-generales.md` documenta que el desglose por
+ejercicios es pedir un número que no existe en ninguna fuente (`Admin/sourcing/Japón/_notas-generales.md` documenta que el desglose por
 club no está publicado en ningún lado; lo que queda son 2 preguntas abiertas en `Admin/dudas-por-club.md`, no trabajo de mapeo).
 
 **Caso B: la controladora reporta un SEGMENTO, no el club (Club América dentro de Ollamani).** Un segmento IFRS 8 informa

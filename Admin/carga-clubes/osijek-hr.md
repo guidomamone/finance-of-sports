@@ -121,7 +121,7 @@ Memoria narrativa sin balance; Belgrano: ídem; Palestino: solo un estado financ
 intermedio de 6 meses, sin P&L anual) y se reemplazaron por otros 3 (Botafogo-SP, Juventude,
 Amazonas). Las 3 preguntas quedaron en Admin/dudas-por-club.md. brandColor: Wikipedia del
 idioma del país primero (identidad), hex después (footylogos/teamcolorcodes/wikitext de kit
-template) — ver el detalle por club en `fuentes/<País>/<Club>.md`.
+template) — ver el detalle por club en `Admin/sourcing/<País>/<Club>.md`.
 ```
 
 _de data/club-leagues/hr.js:_

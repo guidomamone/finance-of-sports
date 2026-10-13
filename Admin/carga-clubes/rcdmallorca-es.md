@@ -14,7 +14,7 @@ data/rcdmallorca-es-data.js — Real Club Deportivo Mallorca, S.A.D. Ejercicio
 Fuente: "Cuentas Anuales e Informe de Gestión, Temporada 2024-25"
 (`Clubes/España/RCD Mallorca/cuentas-anuales-informe-gestion-2024-2025.pdf`,
 75 págs.). Bajado de `rcdmallorca.es/en/ley-de-transparencia`, ver
-fuentes/España/RCD Mallorca.md. Host statics-maker.llt-services.com/mll/
+Admin/sourcing/España/RCD Mallorca.md. Host statics-maker.llt-services.com/mll/
 (mismo CMS compartido que Girona/Getafe/Elche/etc.).
 
 GOTCHA DE TRANSCRIPCIÓN (mismo patrón que Getafe/Osasuna, ver esos archivos):
@@ -110,7 +110,7 @@ activos líquidos" del Balance (Activo Corriente, pág. 6).
 brandColor: '#E20613' (rojo), Wikipedia en español confirma rojo como color
 predominante de la camiseta (negro es secundario, en pantalón/medias desde
 1933) — hex verificado en teamcolorcodes.com/rcd-mallorca-colors/ (PANTONE
-2035 C). Ver fuentes/España/RCD Mallorca.md.
+2035 C). Ver Admin/sourcing/España/RCD Mallorca.md.
 
 gestionesByClub: no se confirmó con certeza quién preside el club durante
 este ejercicio en el propio documento (no hay una portada con nombre de

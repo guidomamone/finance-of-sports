@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Rostov: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Rostov/bfo-2021-datos.md. brandColor #FFDD00
-(procedencia en fuentes/Rusia/Rostov.md; tools/bfo-rusia.mjs).
+(procedencia en Admin/sourcing/Rusia/Rostov.md; tools/bfo-rusia.mjs).
 ```
 
 _de data/club-leagues/ru.js:_

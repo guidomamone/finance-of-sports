@@ -10,7 +10,7 @@ meta. Las notas de cada fila van en una tabla con su número de fila (hay nombre
 ============================================================================
 data/villarrealcf-data.js — Villarreal C.F., S.A.D., Ejercicio 2023/2024 (1/7/2023 a 30/6/2024).
 
-Único ejercicio disponible en el archivo descargado (1 solo PDF, ver fuentes/España/Villarreal
+Único ejercicio disponible en el archivo descargado (1 solo PDF, ver Admin/sourcing/España/Villarreal
 CF.md — la búsqueda de esta sesión solo confirmó este año, el 2021-22 quedó pendiente por caída
 temporal de Wayback Machine). Fuente: "Estados Financieros correspondientes al ejercicio anual
 terminado el 30 de junio de 2024", conseguido vía Wayback Machine (villarrealcf.es bloquea la

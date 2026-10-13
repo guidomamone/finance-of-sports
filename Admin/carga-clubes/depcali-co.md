@@ -19,7 +19,7 @@ páginas, "Notas a los Estados Financieros, al 31 de diciembre de 2025 y
 `estados-financieros-2025.md` en la misma carpeta. Bajado vía SIIS
 (siis.ia.supersociedades.gov.co, NIT 890301160 — el mismo NIT de la
 histórica "Asociación Deportivo Cali"), ver
-`fuentes/Colombia/Deportivo Cali.md`.
+`Admin/sourcing/Colombia/Deportivo Cali.md`.
 
 OJO — CONVERSIÓN SOCIETARIA: el club pasó de "Asociación Deportivo Cali"
 (entidad sin ánimo de lucro, régimen tributario especial al 20%) a "Club

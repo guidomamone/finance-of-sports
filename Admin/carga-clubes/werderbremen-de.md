@@ -12,7 +12,7 @@ data/werderbremen-de-data.js — SV Werder Bremen GmbH & Co. KGaA (Alemania, Bun
 
 3 ejercicios REALES, los 3 Konzernabschluss (cuentas CONSOLIDADAS del grupo, incluye Werder
 Bremen Merchandising GmbH y Werder Bremen Payment GmbH), bajados de unternehmensregister.de
-(registro mercantil oficial alemán — ver fuentes/Alemania/Werder Bremen.md). Transcripciones
+(registro mercantil oficial alemán — ver Admin/sourcing/Alemania/Werder Bremen.md). Transcripciones
 completas en Clubes/Alemania/Werder Bremen/konzernabschluss-<ejercicio>.md.
 
 Ejercicio fiscal: 01/07 al 30/06 (confirmado en cada documento: "Konzernabschluss zum

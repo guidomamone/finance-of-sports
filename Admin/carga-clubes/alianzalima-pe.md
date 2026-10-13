@@ -92,7 +92,7 @@ PENDIENTE para una sesión futura: re-OCRear las páginas de Notas de estado-fin
 -2023.md y -2024.md (Notas "Otros ingresos"/"Costos deportivos", equivalentes a las Notas 14-16 que
 SÍ están transcriptas en 2019/2020/2021) para poder separar esas 2 líneas lump en las mismas
 categorías finas que ya se usan en 2019-2021. Documentado también en
-fuentes/Perú/Alianza Lima.md.
+Admin/sourcing/Perú/Alianza Lima.md.
 ============================================================================
 ```
 

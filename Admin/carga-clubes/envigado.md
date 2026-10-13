@@ -12,7 +12,7 @@ data/envigado-data.js — Envigado Fútbol Club S.A. (Envigado, Colombia).
 Segundo club colombiano cargado en finance-of-sports (junto con Once
 Caldas, misma sesión). Ejercicio 2025 = REAL, único ejercicio cargado a
 propósito: SIIS tiene 10 ejercicios consecutivos (2016-2025) disponibles
-para este club (ver fuentes/Colombia/Envigado.md), pero el pedido
+para este club (ver Admin/sourcing/Colombia/Envigado.md), pero el pedido
 explícito de esta sesión fue "widen clubs, not deepen one club" — solo se
 bajó y cargó 2025, los otros 9 años quedan pendientes a propósito para una
 sesión futura.
@@ -23,7 +23,7 @@ membrete Grant Thornton, NIT 900.470.848). Es un PDF ESCANEADO sin capa de
 texto (`pdftotext`/`pdffonts` no devuelven nada) — transcripto vía OCR
 (Tesseract, `pdftoppm -r 300` + `tesseract -l spa --psm 6`, página por
 página), transcripción completa en `estados-financieros-2025.md` en la
-misma carpeta. Bajado vía SIIS, ver `fuentes/Colombia/Envigado.md`.
+misma carpeta. Bajado vía SIIS, ver `Admin/sourcing/Colombia/Envigado.md`.
 
 A DIFERENCIA de Once Caldas/Deportes Tolima, este PDF SÍ incluye el Estado
 de Resultado Integral PRIMARIO completo (págs. 9-10 del documento), no

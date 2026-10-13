@@ -13,7 +13,7 @@ Dinamarca cargado al sitio (PAÍS NUEVO, DKK MONEDA NUEVA — ver data/currency-
 ejercicio: 2024 (año calendario, 1° de enero a 31 de diciembre de 2024).
 
 ENTIDAD LEGAL — OJO, DOS entidades distintas existen para este club (ver
-fuentes/Dinamarca/FC København.md y fuentes/Dinamarca/_notas-generales.md):
+Admin/sourcing/Dinamarca/FC København.md y Admin/sourcing/Dinamarca/_notas-generales.md):
   1. PARKEN Sport & Entertainment A/S (CVR 15 10 77 07): la holding histórica que cotiza en
      Nasdaq Copenhagen, CONSOLIDADO que mezcla el fútbol masculino con el estadio Parken,
      retail/eventos y (desde 2024) el fútbol femenino. Perímetro mezclado, no se usó acá.

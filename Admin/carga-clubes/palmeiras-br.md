@@ -19,7 +19,7 @@ memberCountByClub).
 fiscalYearStart:'01-01', confirmado leyendo la carátula de CADA balance: "BALANÇOS PATRIMONIAIS EM
 31 DE DEZEMBRO DE 2024 E 2023" / "...DE 2025 E DE 2024"). Fuente: "Demonstrações Financeiras e
 Relatório dos Auditores Independentes" oficiales, descargadas de
-palmeiras.com.br/balancetes-e-demonstrativos-financeiros/ (ver fuentes/Brasil/Palmeiras.md). 2024
+palmeiras.com.br/balancetes-e-demonstrativos-financeiros/ (ver Admin/sourcing/Brasil/Palmeiras.md). 2024
 se cargó del documento demonstracoes-financeiras-2023-2024.pdf (SU PROPIO año corriente, no la
 columna comparativa de 2025 — club-data-mapping sección 6.5); 2025 del documento
 demonstracoes-financeiras-2024-2025.pdf (ídem). Transcripciones completas en

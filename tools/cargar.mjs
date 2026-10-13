@@ -57,7 +57,7 @@
 //     filas del paso 4), grossDebt y cash en null (no se leen mecánicamente todavía: "sin dato no es cero"), y los tres official*.
 //  9. `sources`: la entrada nueva, con `note` INTERNA (lleva la ruta del .md: es la cita que usa carpetas-clubes.mjs) y SIN publicNote
 //     (audit.js checkFuentesPublicas: las salvedades públicas las deriva sourceCaveats() de los campos). Y una línea en
-//     fuentes/<País>/<Club>.md si ese archivo existe.
+//     Admin/sourcing/<País>/<Club>.md si ese archivo existe.
 //
 // --escribir (solo si no quedó NINGÚN motivo para frenar): inserta el año en las tres estructuras del data/<club>-data.js y en sources{},
 // la fila de liga en data/club-leagues/<iso2>.js, la cotización de mercado nueva en FX_CLOSE si hace falta, la línea de fuentes/, sube
@@ -926,7 +926,7 @@ export function escribir(P) {
   const E = P.ejercicio; const id = E.clubId; const y = E.year;
   const dataRel = `data/${id}-data.js`; const dataPath = resolve(ROOT, dataRel);
   const [paisCarpeta, clubCarpeta] = P.pdf.split('/').slice(1, 3);
-  const fuentesMd = `fuentes/${paisCarpeta}/${clubCarpeta}.md`;
+  const fuentesMd = `Admin/sourcing/${paisCarpeta}/${clubCarpeta}.md`;
   const extra = existsSync(resolve(ROOT, fuentesMd)) ? [fuentesMd] : [];
   // (to-do 209) la evidencia de carga (cabecera del año, nota de cada fila, ajustes, liga) va a Admin/carga-clubes/<clubId>.md: entra en
   // el snapshot para que un P0/P1 de la auditoría también lo revierta (y lo borre si lo creó esta carga).
@@ -1030,7 +1030,7 @@ export function escribir(P) {
       }
     }
     escritos.push(EV.guardar(id, ev));
-    // fuentes/<País>/<Club>.md (interno, no se publica)
+    // Admin/sourcing/<País>/<Club>.md (interno, no se publica)
     if (extra.length) { appendFileSync(resolve(ROOT, fuentesMd), `\n- Cargado en el sitio por tools/cargar.mjs (${HOY}): ejercicio ${y} desde \`${P.pdf}\` (sourceId \`${E.source.id}\`).\n`); escritos.push(fuentesMd); }
     // (Versión 518, to-do 140(i) paso 3) "POSIBLEMENTE DENTRO DE OTRO RUBRO": la misma escalera de tools/dentro-de-otro.mjs, sobre el club
     // entero y con el año recién escrito: el año nuevo nace con sus marcas y un año viejo gana o pierde las suyas si este año le cambia el

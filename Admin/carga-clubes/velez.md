@@ -21,7 +21,7 @@ transcripciones en
 Clubes/Argentina/Velez Sarsfield/balance-general-{2025,2024,2023,2022,2021,2020,2019,2018,2017,2016,2015}.{pdf,md}.
 El club no tiene (hasta donde se relevó) ejercicios previos a 2015 cargados en su archivo
 institucional (velez.com.ar/elclubesdelossocios/memorias-estados-contables, ver
-fuentes/README.md) — si aparece uno nuevo ahí en el futuro, o se publica el Ejercicio 2026,
+Admin/sourcing/README.md) — si aparece uno nuevo ahí en el futuro, o se publica el Ejercicio 2026,
 ese sería el próximo candidato natural.
 
 SOBRE EL OCR DE 2023/2017/2016/2015 (Versiones 90-93): esos 4 PDF no tienen capa de texto

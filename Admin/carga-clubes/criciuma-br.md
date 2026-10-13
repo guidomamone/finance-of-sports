@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Criciuma: alta por tools/alta-club.mjs (2026-10-09) desde Clubes/Brasil/Criciuma/demonstrativo-financeiro-2012.pdf. brandColor:null a propósito:
-tricolor amarillo, negro y blanco, mismo criterio que Fortaleza (procedencia en fuentes/Brasil/Criciuma.md).
+tricolor amarillo, negro y blanco, mismo criterio que Fortaleza (procedencia en Admin/sourcing/Brasil/Criciuma.md).
 ```
 
 _de data/club-leagues/br.js:_

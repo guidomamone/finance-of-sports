@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Orenburg: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Orenburg/bfo-2021-datos.md. brandColor #0000FF
-(procedencia en fuentes/Rusia/Orenburg.md; tools/bfo-rusia.mjs).
+(procedencia en Admin/sourcing/Rusia/Orenburg.md; tools/bfo-rusia.mjs).
 ```
 
 _de data/club-leagues/ru.js:_

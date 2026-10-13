@@ -10,13 +10,13 @@ meta. Las notas de cada fila van en una tabla con su número de fila (hay nombre
 ============================================================================
 data/rbbragantino-br-data.js — Red Bull Bragantino Futebol Ltda. (Bragança Paulista-SP, Brasil).
 CASO ATÍPICO: es una Sociedade Empresária Limitada (Ltda), NO una SAF ni una associação — ver
-fuentes/Brasil/RB Bragantino.md. Publica demonstrações financeiras auditadas (BDO) por ser
+Admin/sourcing/Brasil/RB Bragantino.md. Publica demonstrações financeiras auditadas (BDO) por ser
 "sociedade de grande porte" (Lei 11.638/2007), no por mandato de la Lei do SAF. 2 ejercicios
 cargados: 2019 y 2024 (ejercicio social = AÑO CALENDARIO completo, 1°/1 a 31/12, mismo criterio
 que Botafogo/Operário Ferroviário/Grêmio, clubs.js fiscalYearStart:'01-01').
 
 FUENTES (los 2 vía Wayback Machine — el sitio oficial migró a una SPA que ya no sirve los PDFs
-viejos en vivo, ver fuentes/Brasil/RB Bragantino.md):
+viejos en vivo, ver Admin/sourcing/Brasil/RB Bragantino.md):
 - 2019: `balanco-2019.pdf` ("Balanço patrimonial — Em 31 de dezembro de 2019 e 2018").
   GOTCHA DE TOOLING: PDF "Microsoft: Print To PDF" vectorial (curvas), sin fuentes embebidas y
   sin capa de texto real (pdftotext/pdffonts/pdfimages devuelven vacío) — se transcribió con
@@ -145,7 +145,7 @@ brandColor: null. El club se rebrandeó de "preto e branco" (negro y blanco, col
 plantilla Info/Clube de futebol: corpo1=FFFFFF, calções1=FF0000, meias1=FFFFFF) es CAMISETA BLANCA
 con acento rojo solo en el short — mismo caso "camiseta blanca con acento fuerte" de
 club-or-year-onboarding sección 3 (River/Vélez/Sevilla/Real Madrid/Valencia/Once Caldas): blanco
-domina la prenda principal, no se fuerza un color. Ver fuentes/Brasil/RB Bragantino.md para el
+domina la prenda principal, no se fuerza un color. Ver Admin/sourcing/Brasil/RB Bragantino.md para el
 detalle completo de la investigación (colores originales, kit actual, fuente del infobox).
 ============================================================================
 ```
@@ -192,7 +192,7 @@ revenue + expenses + netInterest = 0,144 EXACTO, dígito por dígito.
 _note (data/):_
 
 ```text
-PDF oficial recuperado vía Wayback Machine (el sitio en vivo, redbullbragantino.com.br, migró a una SPA que ya no sirve PDFs viejos, cualquier ruta devuelve el shell HTML — ver fuentes/Brasil/RB Bragantino.md). GOTCHA: PDF "Microsoft: Print To PDF" vectorial, sin capa de texto real — se transcribió con lectura visual/OCR, no extracción nativa; la tabla de Balanço patrimonial (Activo/Pasivo) salió con columnas/etiquetas parcialmente desordenadas en la transcripción y se reconstruyó cruzando subtotales impresos (ver comentario de cabecera de este archivo para el detalle). La DRE (Demonstração do resultado) es la parte confiable del documento: cierra EXACTO contra el Superávit líquido do exercício impreso (144 mil BRL, superávit real pese al Patrimônio Líquido negativo de -55.047 mil BRL heredado de años anteriores). Convertido a USD con PTAX BCB de cierre 31/12/2019 (R$4,0307 venda, investigado vía API Olinda del BCB esta sesión, todavía no está en FX_CLOSE).
+PDF oficial recuperado vía Wayback Machine (el sitio en vivo, redbullbragantino.com.br, migró a una SPA que ya no sirve PDFs viejos, cualquier ruta devuelve el shell HTML — ver Admin/sourcing/Brasil/RB Bragantino.md). GOTCHA: PDF "Microsoft: Print To PDF" vectorial, sin capa de texto real — se transcribió con lectura visual/OCR, no extracción nativa; la tabla de Balanço patrimonial (Activo/Pasivo) salió con columnas/etiquetas parcialmente desordenadas en la transcripción y se reconstruyó cruzando subtotales impresos (ver comentario de cabecera de este archivo para el detalle). La DRE (Demonstração do resultado) es la parte confiable del documento: cierra EXACTO contra el Superávit líquido do exercício impreso (144 mil BRL, superávit real pese al Patrimônio Líquido negativo de -55.047 mil BRL heredado de años anteriores). Convertido a USD con PTAX BCB de cierre 31/12/2019 (R$4,0307 venda, investigado vía API Olinda del BCB esta sesión, todavía no está en FX_CLOSE).
 ```
 
 ### rbbragantino-br-balanco-2024
@@ -200,7 +200,7 @@ PDF oficial recuperado vía Wayback Machine (el sitio en vivo, redbullbragantino
 _note (data/):_
 
 ```text
-PDF oficial recuperado vía Wayback Machine (mismo gotcha del sitio en vivo que 2019, ver fuentes/Brasil/RB Bragantino.md). Auditado por BDO RCS Auditores Independentes SS, firmado 11/02/2025, con capa de texto real. La transcripción disponible cubre 5 páginas (Balanço, DRE, DRA, DMPL, DFC) pero NO las Notas explicativas (que existen en el PDF de 8-9 páginas según la prensa) — sin ellas, "Custo do departamento de futebol" (la línea de gasto más grande, 311,878 M BRL) no se pudo desglosar entre sueldos y amortización de derechos federativos de atletas, se cargó entera a wages_squad como aproximación (ver comentario de cabecera). Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923), ya en FX_CLOSE.
+PDF oficial recuperado vía Wayback Machine (mismo gotcha del sitio en vivo que 2019, ver Admin/sourcing/Brasil/RB Bragantino.md). Auditado por BDO RCS Auditores Independentes SS, firmado 11/02/2025, con capa de texto real. La transcripción disponible cubre 5 páginas (Balanço, DRE, DRA, DMPL, DFC) pero NO las Notas explicativas (que existen en el PDF de 8-9 páginas según la prensa) — sin ellas, "Custo do departamento de futebol" (la línea de gasto más grande, 311,878 M BRL) no se pudo desglosar entre sueldos y amortización de derechos federativos de atletas, se cargó entera a wages_squad como aproximación (ver comentario de cabecera). Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923), ya en FX_CLOSE.
 ```
 
 ## Otros

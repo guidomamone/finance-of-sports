@@ -65,7 +65,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   tramo que falta. Los ejercicios de Lazio en liras (ITL) llevan su tipo de cambio de cierre y la paridad fija a euro para mostrarse en EUR.
   La etiqueta y la gestión de cada ejercicio salen de su propio cierre, aunque el club haya cambiado la fecha de cierre. Un documento que no
   es del dominio (un artículo de prensa) va a `Admin/registros/documentos-descartados.txt`. Sin transcribir: rugby, tenis y entes italianos; ver
-  `fuentes/Italia/_notas-generales.md`. Las federaciones entran al sitio.
+  `Admin/sourcing/Italia/_notas-generales.md`. Las federaciones entran al sitio.
 
 ### Finanzas multi-año
 
@@ -97,8 +97,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 
 - SITIO: estático puro (HTML + CSS + JS, Chart.js por CDN), sin backend, sin build step, servido desde la raíz. Deploy continuo en
   Netlify al pushear a `main` del repo de GitHub. Dominio propio: **financeofsports.com**.
-- QUÉ SE PUBLICA: Netlify publica la raíz, pero `netlify.toml` borra del artefacto de deploy lo interno (`Admin/`, `CLAUDE.md`,
-  `fuentes/**/*.md`, `auditorias/`, `Prototyping/`, `tools/` y `Generados/`); todo se trackea, así que el respaldo en GitHub es completo. Se publican
+- QUÉ SE PUBLICA: Netlify publica la raíz, pero `netlify.toml` borra del artefacto de deploy lo interno (`Admin/`, con las notas de
+  sourcing de `Admin/sourcing/`; `CLAUDE.md`, `auditorias/`, `Prototyping/`, `tools/` y `Generados/`); todo se trackea, así que el respaldo en GitHub es completo. Se publican
   las páginas `fuentes/<clubId>.html`, `data/`, `js/` y las transcripciones `Clubes/**/*.md`: estas últimas se publican A PROPÓSITO (decisión
   de Guido; `netlify.toml` no las borra). Los PDFs no se trackean (`.gitignore`). Un documento interno nuevo va adentro de `Admin/`;
   `node tools/audit.js` caza el que quede suelto en la raíz (`doc-interno-no-excluido`).

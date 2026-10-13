@@ -15,7 +15,7 @@ fiscalYearStart:'01-01', mismo criterio que Botafogo/Grêmio).
 Fuente: "Relatório Anual de Demonstrações" (Demonstrações Contábeis) do América Futebol Clube,
 auditado por RSM Brasil Auditores Independentes, un documento por ejercicio, descargado del portal
 de transparencia oficial (americafc.com.br/transparencia, links reales bajo
-irp.cdn-website.com/05448cb5/files/uploaded/ — ver fuentes/Brasil/America Mineiro.md). PDF con
+irp.cdn-website.com/05448cb5/files/uploaded/ — ver Admin/sourcing/Brasil/America Mineiro.md). PDF con
 texto nativo (pdftotext funciona), no son escaneos. Transcripción completa en
 Clubes/Brasil/America Mineiro/demonstracoes-financeiras-<año>.md.
 
@@ -188,7 +188,7 @@ _de data/clubs.js:_
 3 clubes nuevos (Versión 217, onboarding en paralelo de 10 PDF transcriptos pendientes): mismo
 motor genérico, mismo país/moneda que los de arriba. `brandColor:null` en 2 de los 3 no es
 ausencia: se investigó y quedó ambiguo (bicolor sin predominancia clara declarada por ninguna
-fuente) — ver `fuentes/Brasil/<Club>.md` para el detalle de cada investigación.
+fuente) — ver `Admin/sourcing/Brasil/<Club>.md` para el detalle de cada investigación.
 ```
 
 _de data/club-leagues/br.js:_

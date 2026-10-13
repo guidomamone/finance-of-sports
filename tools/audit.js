@@ -615,8 +615,8 @@ function checkParrafoNetlifyDuplicado() {
 // referencias en 31 archivos. Esa verificación se hizo con un script de una sola
 // corrida, y una sola referencia olvidada manda a una sesión futura a un archivo que
 // no está, sin que nada se queje. No es hipotético: este chequeo, la primera vez que
-// corrió, encontró 44 archivos (`fuentes/_indice/<País>.md`, uno por país) que
-// seguían linkeando el viejo fuentes-por-club.md, renombrado a `fuentes/README.md` dos
+// corrió, encontró 44 archivos (`Admin/sourcing/_indice/<País>.md`, uno por país) que
+// seguían linkeando el viejo fuentes-por-club.md, renombrado a `Admin/sourcing/README.md` dos
 // versiones antes. El barrido a mano no los había mirado.
 //
 // QUÉ MIRA. Solo archivos VIVOS: los que una sesión lee para saber qué hacer. Quedan
@@ -647,7 +647,7 @@ function archivosVivos() {
   };
   const js = n => n.endsWith('.js');
   return [
-    'CLAUDE.md', 'index.html', 'netlify.toml', 'fuentes/README.md',
+    'CLAUDE.md', 'index.html', 'netlify.toml', 'Admin/sourcing/README.md',
     ...dir('js', js), ...dir('tools', n => js(n) || n.endsWith('.json')),
     ...dir('data', js), ...dir('data/lang', js),
     ...dir('data/club-leagues', js), ...dir('data/rankings', js),
@@ -655,7 +655,7 @@ function archivosVivos() {
     // Admin/ menos los dos históricos. Archive/ no entra: es una subcarpeta.
     ...dir('Admin', n => n.endsWith('.md') || n.endsWith('.html'))
       .filter(f => !/CHANGELOG\.md$|finance-of-sports-project\.md$/.test(f)),
-    ...dir('fuentes/_indice', n => n.endsWith('.md')),
+    ...dir('Admin/sourcing/_indice', n => n.endsWith('.md')),
   ].filter(hay);
 }
 
@@ -760,7 +760,7 @@ const GENERADORES = [
   ['generate-rankings.js',      'data/rankings/',                      'rankings-desfasado'],
   ['generate-fuentes-page.js',  'fuentes.html y las 41 páginas de club', 'fuentes-desfasada'],
   ['generate-club-index.js',    'la sección generada de Admin/ESTADO.md',    'club-index-desfasado'],
-  ['generate-fuentes-index.js', 'el índice de fuentes/README.md',    'fuentes-indice-desfasado'],
+  ['generate-fuentes-index.js', 'el índice de Admin/sourcing/README.md',    'fuentes-indice-desfasado'],
 ];
 function checkGenerados() {
   for (const [script, que, code] of GENERADORES) {
@@ -929,7 +929,7 @@ function checkClubIds(api) {
 // cuando el club que colisiona YA ESTÁ CARGADO en clubs{}. Para entonces renombrar el
 // viejo cuesta tres cosas (el archivo data/<id>-data.js, el clubId y el prefijo de cada
 // sourceId) y encima ya se transcribió el documento del club nuevo. Esto mira el escalón
-// anterior: los clubes que alguien está SOURCEANDO, que viven en fuentes/_indice/<País>.md
+// anterior: los clubes que alguien está SOURCEANDO, que viven en Admin/sourcing/_indice/<País>.md
 // desde la Versión 158, y avisa el día que uno de ellos empieza a amenazar a un id pelado.
 //
 // QUÉ SE REPORTA Y QUÉ NO, que es la parte que se midió antes de escribirlo:
@@ -944,9 +944,9 @@ function checkClubIds(api) {
 //   - Los pares entre dos clubes trackeados (ninguno cargado) van en UNA línea agregada,
 //     no una por par: no obligan a nada hoy, y desde la Versión 129 un club nuevo ya nace
 //     con el país en el id.
-const INDICE_FUENTES = path.join(ROOT, 'fuentes/_indice');
+const INDICE_FUENTES = path.join(ROOT, 'Admin/sourcing/_indice');
 
-// `clubs{}` guarda el país como código ISO ('AR'), y `fuentes/_indice/` lo nombra completo
+// `clubs{}` guarda el país como código ISO ('AR'), y `Admin/sourcing/_indice/` lo nombra completo
 // ('Argentina.md'), así que hay que traducir para poder compararlos. Es el mismo mapa que
 // tiene tools/generate-fuentes-page.js. Si un club tiene un código que no está acá, se usa
 // el código tal cual: no va a coincidir con ningún índice, o sea que el chequeo se calla en
@@ -1059,7 +1059,7 @@ function checkCarpetasClubes() {
     }
     for (const k of Object.keys(porNombre).sort()) {
       if (porNombre[k].length < 2) continue;
-      add('P2', 'carpeta-club-duplicada', `Clubes/${pais}/: ${porNombre[k].map(c => `"${c}"`).join(' y ')} son carpetas distintas que normalizan al mismo nombre. O es el mismo club transcripto dos veces con dos grafías, y sus documentos quedaron partidos entre las dos, o son dos clubes distintos que hay que desambiguar en el nombre de la carpeta (REGLA 3 de fuentes/README.md)`);
+      add('P2', 'carpeta-club-duplicada', `Clubes/${pais}/: ${porNombre[k].map(c => `"${c}"`).join(' y ')} son carpetas distintas que normalizan al mismo nombre. O es el mismo club transcripto dos veces con dos grafías, y sus documentos quedaron partidos entre las dos, o son dos clubes distintos que hay que desambiguar en el nombre de la carpeta (REGLA 3 de Admin/sourcing/README.md)`);
     }
   }
 

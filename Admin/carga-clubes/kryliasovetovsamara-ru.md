@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Krylia Sovetov Samara: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Krylia Sovetov Samara/bfo-2021-datos.md. brandColor #80C0FE
-(procedencia en fuentes/Rusia/Krylia Sovetov Samara.md; tools/bfo-rusia.mjs).
+(procedencia en Admin/sourcing/Rusia/Krylia Sovetov Samara.md; tools/bfo-rusia.mjs).
 ```
 
 _de data/club-leagues/ru.js:_

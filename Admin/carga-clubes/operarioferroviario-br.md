@@ -14,7 +14,7 @@ Lei Pelé + licenciamento de la Federação Paranaense. 2 ejercicios cargados: 2
 (ejercicio social = AÑO CALENDARIO completo, 1°/1 a 31/12, mismo criterio que Botafogo/Grêmio,
 clubs.js fiscalYearStart:'01-01').
 
-FUENTES (2 canales oficiales distintos, ver fuentes/Brasil/Operario Ferroviario.md):
+FUENTES (2 canales oficiales distintos, ver Admin/sourcing/Brasil/Operario Ferroviario.md):
 - 2025: `demonstracoes-financeiras-2025.pdf` (19 págs.), del sitio propio (CDN Fanbase),
   firmado por el presidente Juarez Costa Pinto y el contador Marcos Antonio Martins
   (CRC PR 056385/O-5), auditado por JSP Serviços (Junior Svieck Pinto, CRC/PR 058.111/O-0).

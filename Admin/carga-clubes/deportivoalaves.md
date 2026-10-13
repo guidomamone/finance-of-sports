@@ -11,7 +11,7 @@ meta. Las notas de cada fila van en una tabla con su número de fila (hay nombre
 data/deportivoalaves-data.js — Deportivo Alavés, S.A.D., Ejercicio 2024/2025 (1/7/2024 a 30/6/2025).
 
 Un solo ejercicio (alcance de esta sesión: sumar clubes, no profundizar años; el club tenía 9
-ejercicios reales consecutivos disponibles 2016-17 a 2024-25, ver fuentes/España/Deportivo
+ejercicios reales consecutivos disponibles 2016-17 a 2024-25, ver Admin/sourcing/España/Deportivo
 Alavés.md — se eligió el más reciente). Fuente: "Informe de Auditoría, Cuentas Anuales e Informe
 de Gestión" (auditor Sayma Auditores/HLB) — ver
 Clubes/España/Deportivo Alavés/cuentas-anuales-2024-2025.pdf y su transcripción en

@@ -16,7 +16,7 @@ mismo tipo de entidad que Banfield/Vélez/Racing — NO una SAF. 2 EJERCICIOS CA
 Fuentes: Estados Contables oficiales completos (Estado de Situación Patrimonial + Estado de
 Recursos y Gastos + Anexos A-G), ambos con informe de auditoría (Dr. Gabriel Alejandro Warley,
 CPCECABA T°295 F°232) SIN salvedades, descargados de ferrocarriloeste.org.ar (ver
-fuentes/Argentina/Ferro Carril Oeste.md). PDF con texto nativo, transcripción completa en
+Admin/sourcing/Argentina/Ferro Carril Oeste.md). PDF con texto nativo, transcripción completa en
 Clubes/Argentina/Ferro Carril Oeste/estados-contables-ejercicio-118-2021-22.md (Ej. 118) y
 balance-ejercicio-119-2022-23.md (Ej. 119). Preparados en MONEDA HOMOGÉNEA (RT6, reexpresados por
 inflación a la fecha de cierre de CADA balance) — se usó siempre la columna "año corriente" de

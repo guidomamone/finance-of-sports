@@ -51,7 +51,7 @@ diferencia de "Empréstimos e financiamentos" entre columnas es enorme: 465,387 
 Controladora pero 11,211 M en Consolidado — exactamente el tipo de mezcla de perímetros que
 club-data-mapping SKILL.md pide evitar. Mismo criterio aplicado a los 3 ejercicios por igual.
 
-DUDA DE SOURCING RESUELTA (ver fuentes/Brasil/Atletico Mineiro.md, que especulaba sobre una
+DUDA DE SOURCING RESUELTA (ver Admin/sourcing/Brasil/Atletico Mineiro.md, que especulaba sobre una
 posible relación con la CVM vía debêntures): la relación con la CVM que aparece en el documento
 es por DOS vías, ninguna es una oferta pública de la propia SAF: (1) el AVM FII (fondo
 inmobiliario dueño de la Arena, ver arriba) está registrado ante la CVM como fundo de

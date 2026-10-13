@@ -16,7 +16,7 @@ ENTIDAD LEGAL: "Arsenal Holdings Limited" — confirmado LITERAL en la carátula
 ("ARSENAL HOLDINGS LIMITED"), no "plc" como decía el pedido original. Company Registration No.
 4250459 (Companies House, UK). Es la HOLDING/matriz del grupo; la sociedad operativa del club en
 sí es "The Arsenal Football Club Limited" (n° 00109244, cuentas individuales separadas, no
-cargadas acá) — ya estaba anotado así en fuentes/Inglaterra/Arsenal.md antes de esta sesión.
+cargadas acá) — ya estaba anotado así en Admin/sourcing/Inglaterra/Arsenal.md antes de esta sesión.
 Cuentas CONSOLIDADAS del grupo ("Group turnover"/"Consolidated Profit and Loss Account"), no
 individuales.
 

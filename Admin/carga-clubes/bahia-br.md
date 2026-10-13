@@ -12,7 +12,7 @@ data/bahia-br-data.js — Esporte Clube Bahia S.A.F. (Sociedade Anônima do Fute
 Salvador/Camaçari-BA, Brasil ("Tricolor Baiano"/"Esquadrão de Aço"). 2 ejercicios cargados:
 2024 y 2025.
 
-DOS ENTIDADES SEPARADAS, MISMO CLUB (ver fuentes/Brasil/Bahia.md): la SAF (Esporte Clube Bahia
+DOS ENTIDADES SEPARADAS, MISMO CLUB (ver Admin/sourcing/Brasil/Bahia.md): la SAF (Esporte Clube Bahia
 S.A.F., constituída 27/02/2023 junto al City Football Group, el negocio de fútbol profesional
 desde entonces) y a associação (Esporte Clube Bahia, entidad social civil sin fines de lucro,
 dueña del patrimonio histórico/marca/títulos). Se cargó SOLO la SAF — los 3 PDFs de la
@@ -185,7 +185,7 @@ Gestión: Raul Aguirre Zegarra firma como "Presidente" AMBOS balances (2024, fir
 2025, firmado en 2026) — mismo presidente confirmado por firma en la propia fuente primaria los 2
 ejercicios, sin cambio de gestión entre 2024 y 2025.
 
-brandColor: NO SE PUDO RESOLVER CON CONFIANZA — ver fuentes/Brasil/Bahia.md para el detalle
+brandColor: NO SE PUDO RESOLVER CON CONFIANZA — ver Admin/sourcing/Brasil/Bahia.md para el detalle
 completo. Bahia es tricolor EN PARTES IGUALES (azul, vermelho, branco — "Tricolor Baiano"), y
 Wikipedia en portugués no declara predominancia de ninguno de los 3 sobre los otros 2 (cada color
 tiene su propio origen: azul de la Associação Atlética da Bahia, blanco del Clube Bahiano de Tênis,
@@ -261,7 +261,7 @@ SAF controlada por City Football Group (sociedad, sin dueño persona). Raul Agui
 _note (data/):_
 
 ```text
-PDF oficial (texto nativo), auditado por RSM Brasil Auditores Independentes Ltda., sem ressalvas (com parágrafo de Ênfase sobre operações com partes relacionadas, Nota 7). Se cargó la SAF (Esporte Clube Bahia S.A.F.), NO la associação social (entidad jurídica separada, ver fuentes/Brasil/Bahia.md) — el documento no tiene columna Controladora/Consolidado, es un único juego de estados financieros standalone. Prejuízo do exercício de R$246,545 M (patrimônio líquido negativo de R$95,848 M al cierre), explicado por la Administração como inversión sostenida en el plantel profesional y en la estructuración de la SAF desde su constitución en 2023. Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923) — el documento no declara un tipo de cambio propio. Transcripción completa en Clubes/Brasil/Bahia/demonstracoes-financeiras-2024.md. DUDA GENUINA: el documento no separa "sócios" de "bilheteria" en ninguna nota (ver comentario de cabecera de data/bahia-br-data.js) — candidato a pregunta directa al club.
+PDF oficial (texto nativo), auditado por RSM Brasil Auditores Independentes Ltda., sem ressalvas (com parágrafo de Ênfase sobre operações com partes relacionadas, Nota 7). Se cargó la SAF (Esporte Clube Bahia S.A.F.), NO la associação social (entidad jurídica separada, ver Admin/sourcing/Brasil/Bahia.md) — el documento no tiene columna Controladora/Consolidado, es un único juego de estados financieros standalone. Prejuízo do exercício de R$246,545 M (patrimônio líquido negativo de R$95,848 M al cierre), explicado por la Administração como inversión sostenida en el plantel profesional y en la estructuración de la SAF desde su constitución en 2023. Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923) — el documento no declara un tipo de cambio propio. Transcripción completa en Clubes/Brasil/Bahia/demonstracoes-financeiras-2024.md. DUDA GENUINA: el documento no separa "sócios" de "bilheteria" en ninguna nota (ver comentario de cabecera de data/bahia-br-data.js) — candidato a pregunta directa al club.
 ```
 
 ### bahia-br-demonstracoes-2025

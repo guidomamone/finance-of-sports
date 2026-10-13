@@ -19,7 +19,7 @@ te ahorra repetir un intento que ya se probó y descartó, y te da el ángulo qu
 similares.
 
 **Esto es solo sourcing** (encontrar el documento y guardarlo en `Clubes/<País>/<Club>/`, documentar
-en `fuentes/<País>/<Club>.md`). Categorizar lo que ya se encontró es otro skill (`club-data-mapping`).
+en `Admin/sourcing/<País>/<Club>.md`). Categorizar lo que ya se encontró es otro skill (`club-data-mapping`).
 Cómo estructurar la sesión de onboarding completa (una vez que ya hay un PDF elegido) es
 `club-or-year-onboarding`.
 
@@ -34,21 +34,21 @@ Cómo estructurar la sesión de onboarding completa (una vez que ya hay un PDF e
   la copia archivada de esa MISMA URL en Wayback Machine (usar la CDX API de archive.org para
   encontrar snapshots) antes de descartar el club: sigue siendo el documento del club, solo que
   servido por archive.org en vez de en vivo.
-- **Antes de anotar "no se encontró nada", seguí la REGLA 2 de `fuentes/README.md`** (ya
+- **Antes de anotar "no se encontró nada", seguí la REGLA 2 de `Admin/sourcing/README.md`** (ya
   documentada ahí, no se repite acá): registrar CADA intento con el detalle de qué se probó, la URL/
-  portal exacto, y por qué falló; nunca alcanza con "no se encontró". Ver `fuentes/Uruguay/
+  portal exacto, y por qué falló; nunca alcanza con "no se encontró". Ver `Admin/sourcing/Uruguay/
   _notas-generales.md` como ejemplo del nivel de detalle esperado.
 - **Guardar los hallazgos**: PDFs en `Clubes/<País>/<Club>/` (mismo nivel que `Clubes/Argentina/`),
-  documentación en `fuentes/<País>/<Club>.md`, con su línea en el índice de su país
-  (`fuentes/_indice/<País>.md`); la convención de carpetas está en `Admin/PIPELINE.md`, sección
+  documentación en `Admin/sourcing/<País>/<Club>.md`, con su línea en el índice de su país
+  (`Admin/sourcing/_indice/<País>.md`); la convención de carpetas está en `Admin/PIPELINE.md`, sección
   "Documentos fuente". **Trabajá siempre sobre el archivo de TU país**: es lo que permite que dos
-  sesiones de sourcing corran en paralelo sin pisarse. `fuentes/README.md` (el índice de países) se
+  sesiones de sourcing corran en paralelo sin pisarse. `Admin/sourcing/README.md` (el índice de países) se
   toca solo al terminar, y solo si cambiaron los números de ese país (se regenera con
   `node tools/generate-fuentes-index.js`).
 - **Si el hallazgo es un video (presentación en YouTube en vez de PDF) o una nota de prensa,
   guardar la URL EXACTA, no solo el título.** Un título alcanza para que Guido reconozca el
   documento, pero no para que una sesión futura lo abra sin volver a buscarlo (caso: el video del
-  105° Ejercicio de Banfield en `fuentes/Argentina/Banfield.md`, que hizo falta para `club-outreach`).
+  105° Ejercicio de Banfield en `Admin/sourcing/Argentina/Banfield.md`, que hizo falta para `club-outreach`).
 - **Si en el camino de buscar un documento aparece un email de contacto del club** (prensa@,
   secretaría@, relaciones institucionales: en el sitio oficial, una nota de prensa, un formulario de
   contacto) y guardarlo no cuesta nada extra, anotarlo en `Admin/outreach/contactos.json` (`email`,
@@ -113,7 +113,7 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
    **Portal sin link de descarga directo (botón dispara un flujo JS con token, no una URL fija)**:
    `grep` los bundles JS que carga la página buscando el endpoint real detrás del botón; suele ser
    un token temporario (`GetValetKey`/similar) + un segundo endpoint que lo consume. Con eso se baja
-   el archivo con `curl` puro, sin sesión ni login (ver `fuentes/Argentina/River.md` para un caso
+   el archivo con `curl` puro, sin sesión ni login (ver `Admin/sourcing/Argentina/River.md` para un caso
    completo, reusable para cualquier portal con esta forma).
 2. **El canal país/regulador ya documentado en este skill** (ver el índice de países más abajo), si
    existe uno para ese país. Consultarlo es SIEMPRE prioritario a seguir adivinando en el sitio del
@@ -126,7 +126,7 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
    **Si el club emitió deuda pública alguna vez (obligaciones negociables/bonos)**, sumar el
    organismo de valores del país (CNV en Argentina, CVM en Brasil, CNMV en España, SEC en EE.UU.,
    etc.): es un canal distinto del registro de asociaciones civiles/sociedades, con su propio
-   régimen de disclosure, a veces más completo (ver `fuentes/Argentina/River.md`).
+   régimen de disclosure, a veces más completo (ver `Admin/sourcing/Argentina/River.md`).
 
    **En Europa, el canal suele ser la licencia nacional de la federación, más que un registro**:
    PZPN (Polonia, criterio F.01), HNS, FRF, FSS, NSBiH, LFF, FFM, FFA o MLSZ hacen que el club
@@ -190,7 +190,7 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
     agregador (rankings, cálculos "a ojo") sin documento fuente detrás: eso es opinión de un
     tercero, no un lead, mismo criterio que ya excluye a la prensa como fuente en sí.
 
-    **Cómo se marca en `fuentes/<País>/<Club>.md`**: nunca como hallazgo cerrado. Una línea así:
+    **Cómo se marca en `Admin/sourcing/<País>/<Club>.md`**: nunca como hallazgo cerrado. Una línea así:
 
         **Lead sin verificar (agregador)**: <sitio/URL> dice tener el balance <ejercicio> — <qué
         dice concretamente>. Fuente NO oficial, pendiente de verificar contra <documento original /
@@ -276,13 +276,13 @@ solo la primera vez.
 
 ### 0.2 Dejar registro rápido de qué ya se probó, sin tener que leer la prosa completa
 
-Saber si YA se probó tal ángulo en tal club exigiría leer entero `fuentes/<País>/<Club>.md`, que es
+Saber si YA se probó tal ángulo en tal club exigiría leer entero `Admin/sourcing/<País>/<Club>.md`, que es
 prosa libre, y la prosa libre se puede leer mal: los encabezados varían (`## Chequeo <fecha>`,
 `## Lo nuevo (<fecha>)`, bullets sueltos con "ENCONTRADO <fecha>"), así que un chequeo automático que
 busque un encabezado literal clasifica mal clubes ya tocados. El costo de leer mal no es solo
 confusión: es tiempo y tokens re-buscando algo que ya estaba resuelto.
 
-**La convención: una línea `**Ángulos**` al PRINCIPIO de cada `fuentes/<País>/<Club>.md`, justo
+**La convención: una línea `**Ángulos**` al PRINCIPIO de cada `Admin/sourcing/<País>/<Club>.md`, justo
 debajo del título**, con el estado de cada familia de la escalera de 0.1 que aplique a ese club. Es
 una convención de escritura, no una herramienta ni una base de datos nueva (el proyecto es
 deliberadamente estático de punta a punta). Formato, una familia por segmento separado con `·`:
@@ -305,7 +305,7 @@ sesión nueva lee primero, antes de decidir por dónde seguir.
 club EXISTENTE sin ella la gana la próxima vez que una sesión lo toque (lo lee a fondo o le agrega
 algo).
 
-**Esta línea no toca el formato de `fuentes/_indice/<País>.md`.** Ese archivo SÍ lo parsea
+**Esta línea no toca el formato de `Admin/sourcing/_indice/<País>.md`.** Ese archivo SÍ lo parsea
 `tools/generate-fuentes-index.js` con una regex sobre el texto libre de cada línea
 (`SENAL_SI`/`SENAL_NO` adentro del script): cualquier cambio ahí hay que probarlo con `--debug`
 antes de tocar nada. La línea `**Ángulos**` vive en el archivo de club, que ese script no abre, así
@@ -344,14 +344,14 @@ reales, no un árbol de decisión: la mayoría de los clubes caen limpio en uno 
   Guido, no una tarea de sourcing.** River/IGJ (clave fiscal AFIP nivel 2+, con costo), Marruecos/
   OMPIC, Austria/Firmenbuch, Francia/INPI (captcha+cuenta), Países Bajos/KvK (pago por documento): un
   agente no puede crear una cuenta ni pagar. Documentar el canal exacto y los pasos (como hace
-  `fuentes/Argentina/River.md`) y PARAR ahí: no es un dead-end de sourcing, es una decisión de
+  `Admin/sourcing/Argentina/River.md`) y PARAR ahí: no es un dead-end de sourcing, es una decisión de
   costo/tiempo que le toca a Guido, y no se resuelve insistiendo desde una sesión.
 - **Lead real pero que necesita mucho trabajo sostenido en UN club → sesión dedicada aparte, no
   adentro de un barrido de país.** Jamaica (portal de pago por documento certificado, browser
   dedicado), Colombia/SIIS con el histórico completo de Envigado: cuando destrabar un club exige un
   procedimiento de varios pasos que no cabe en el tiempo de un barrido de decenas de clubes, marcarlo
   explícitamente como candidato a sesión propia (en la nota del club y en
-  `fuentes/<País>/_notas-generales.md`; los pendientes de sourcing de un país no van a `Admin/TODO.md`)
+  `Admin/sourcing/<País>/_notas-generales.md`; los pendientes de sourcing de un país no van a `Admin/TODO.md`)
   en vez de hacerlo a medias adentro de una sesión que tiene otro objetivo.
 
 ## Gotchas de tooling (no de ningún portal)
@@ -426,7 +426,7 @@ archivo del país/región que estés buscando; no hace falta leer los demás.
 Cada país vive en su propio archivo bajo `paises/`, no en una sección de este `SKILL.md`. Actualizar
 el archivo del país correspondiente la primera vez que produzca un hallazgo real de metodología (un
 regulador que aplica a todos los clubes de ese país, un gotcha de navegación que costó descubrir);
-no hace falta una entrada por cada club individual, eso vive en `fuentes/<País>/<Club>.md`. Si un
+no hace falta una entrada por cada club individual, eso vive en `Admin/sourcing/<País>/<Club>.md`. Si un
 ángulo ya documentado ahí como "bloqueado" se destraba (ej. Uruguay consigue un pedido de acceso a
 información pública), actualizar ese archivo en vez de dejarlo diciendo que sigue bloqueado.
 
@@ -450,9 +450,9 @@ tres cosas:
   encontró Y" se convierte en el hecho seco ("País: hallazgo, verificado fecha"). El PROCESO de cómo
   se llegó a un hallazgo (qué se probó y falló antes) solo vale la pena conservarlo si es un patrón
   repetible en OTRO club del mismo país; si es anecdótico de un club puntual, va al archivo de ese
-  club (`fuentes/<País>/<Club>.md`), no acá. Un enumerado largo de "qué clubes puntuales quedaron
+  club (`Admin/sourcing/<País>/<Club>.md`), no acá. Un enumerado largo de "qué clubes puntuales quedaron
   cubiertos" tampoco va acá completo: un conteo (`X de Y clubes`) alcanza, el detalle club por club
-  ya vive en `fuentes/_indice/<País>.md`.
+  ya vive en `Admin/sourcing/_indice/<País>.md`.
 - **Va a `Admin/CHANGELOG.md` o `Admin/Archive/`**: decisiones tomadas una vez que ya están cerradas
   y no van a volver a discutirse, bugs de tooling ya resueltos que no van a repetirse en otro país.
   Antes de archivar algo, sacarle lo que todavía sirve como criterio.

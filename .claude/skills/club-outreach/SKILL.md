@@ -67,7 +67,7 @@ el video y no traía las cifras; nunca simular que no se buscó.
 **Redactar** (una sesión de Claude Code, con el Write tool):
 
 - Leer las preguntas pendientes del club en `Admin/dudas-por-club.md` y/o el motivo de la escalada en
-  `fuentes/<País>/<Club>.md`.
+  `Admin/sourcing/<País>/<Club>.md`.
 - **Contacto**: si el club ya tiene entrada en `Admin/outreach/contactos.json`, usar ese email. Si
   no, buscarlo en ese mismo momento (sitio oficial, nota de prensa, formulario de contacto: mismos
   canales que usa `club-sourcing`) y guardarlo recién ahí, en `contactos.json`, con `email`,

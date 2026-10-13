@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Atalanta: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2021.pdf.
-brandColor y su procedencia: fuentes/Italia/Atalanta.md.
+brandColor y su procedencia: Admin/sourcing/Italia/Atalanta.md.
 ```
 
 _de data/club-leagues/it.js:_

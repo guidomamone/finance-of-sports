@@ -41,7 +41,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
       documento, no promoviendo el relleno;
   (6) **NO QUEDA EN EL REPO MÁS ALLÁ DE LA SESIÓN QUE LO NECESITA** (condición nueva, Versión 155,
       y la que faltaba). Netlify publica la raíz, y `netlify.toml` solo borra del deploy lo
-      interno (`Admin/`, `CLAUDE.md`, `fuentes/**/*.md`, `auditorias/`, `Prototyping/`, `tools/` y `Generados/`). Todo lo demás
+      interno (`Admin/`, con las notas de sourcing; `CLAUDE.md`, `auditorias/`, `Prototyping/`, `tools/` y `Generados/`). Todo lo demás
       que está trackeado es alcanzable por URL en `financeofsports.com`: la raíz, `data/`, `js/`, `fuentes/*.html` y las
       transcripciones de `Clubes/`. El relleno de los prototipos estuvo servido públicamente tres días sin
       que nadie se diera cuenta. Tenía su franja roja y nadie estaba linkeado a él, pero un sitio
@@ -244,14 +244,14 @@ mantengamos esa info pero no subamos info incompleta"): **no se cargó nada al s
 presupuesto — ni el año calendario tal cual (rompería el modelo de datos), ni una mitad de temporada
 sola (sería un ejercicio incompleto, y el sitio no tiene forma de marcar "esto es solo 6 meses" sin
 que se lea como un ejercicio completo raro). El documento y el hallazgo quedan documentados en
-`fuentes/Argentina/Instituto.md` (ver el índice en `fuentes/_indice/Argentina.md`) para que si en el
+`Admin/sourcing/Argentina/Instituto.md` (ver el índice en `Admin/sourcing/_indice/Argentina.md`) para que si en el
 futuro aparece el Presupuesto 2024 o 2026 del mismo club, se pueda completar una de las 2 temporadas
 y recién ahí cargarla.
 
 **Balances parciales (de menos de 12 meses), to-do 190, Versión 631.** La misma regla vale para un BALANCE de menos de 12 meses (un cambio de
 fecha de cierre, un semestral): no se carga solo. Va a `Admin/registros/documentos-parciales.txt` (no a `documentos-descartados.txt`, que es para lo que no
 sirve), con lo que cubre y el tramo que falta; `lote.mjs` lo saltea y `tools/estado.mjs` lo lista en cada corrida con lo que falta, y la ficha del club
-en `fuentes/<País>/<Club>.md` dice qué tramo buscar. CÓMO SE JUNTAN DOS TRAMOS cuando aparece el que falta: (1) tienen que ser el mismo perímetro
+en `Admin/sourcing/<País>/<Club>.md` dice qué tramo buscar. CÓMO SE JUNTAN DOS TRAMOS cuando aparece el que falta: (1) tienen que ser el mismo perímetro
 (individual o consolidado), la misma moneda y tramos contiguos que sumen exactamente 12 meses del ejercicio que se quiere armar; (2) ingresos y
 gastos se suman rubro por rubro en moneda local, y el resultado tiene que dar la suma de los dos resultados impresos; (3) el ejercicio queda con
 el cierre del SEGUNDO tramo (su `cierre`/`fxRef`, su caja y su deuda, que son saldos a esa fecha); (4) `publicNote` dice de qué documento sale cada

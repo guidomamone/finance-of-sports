@@ -14,7 +14,7 @@
 //                  Arreglo: las páginas con esas imágenes se rasterizan (pdftoppm) y se reemplazan por su foto en una copia
 //                  (`usable`); el resto del documento queda igual (texto y numeración intactos).
 //   truncado       el archivo se cortó (sin startxref/trailer y sin páginas recuperables: descarga incompleta, PEC Zwolle).
-//                  NO se puede arreglar desde acá: el veredicto trae `motivo` y `fuente` (el link de fuentes/<País>/<Club>.md) para volver a bajarlo.
+//                  NO se puede arreglar desde acá: el veredicto trae `motivo` y `fuente` (el link de Admin/sourcing/<País>/<Club>.md) para volver a bajarlo.
 //   no-es-pdf      la cabecera no es %PDF (un HTML de error guardado como .pdf).
 // ============================================================================
 
@@ -33,12 +33,12 @@ function qpdfOk(cmdArgs) { // qpdf devuelve 3 = éxito con advertencias; 2 = err
   try { execFileSync('qpdf', cmdArgs, { stdio: 'ignore' }); return true; } catch (e) { return e.status === 3; }
 }
 
-// El link de donde se bajó el documento, si fuentes/<País>/<Club>.md lo tiene (para el veredicto `truncado`).
+// El link de donde se bajó el documento, si Admin/sourcing/<País>/<Club>.md lo tiene (para el veredicto `truncado`).
 function fuenteDe(pdf) {
   const rel = pdf.replace(root + '/', '').split('/'); // Clubes/<País>/<Club>/<archivo>.pdf
   if (rel[0] !== 'Clubes' || rel.length < 4) return null;
-  const f = join(root, 'fuentes', rel[1], `${rel[2]}.md`);
-  return existsSync(f) ? `fuentes/${rel[1]}/${rel[2]}.md (buscá el link de "${basename(pdf)}")` : null;
+  const f = join(root, 'Admin', 'sourcing', rel[1], `${rel[2]}.md`);
+  return existsSync(f) ? `Admin/sourcing/${rel[1]}/${rel[2]}.md (buscá el link de "${basename(pdf)}")` : null;
 }
 
 export function diagnosticar(pdfArg, { reparar = false } = {}) {

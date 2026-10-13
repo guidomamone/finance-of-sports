@@ -129,18 +129,18 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   (`rawLabel`, "Formato del club") NUNCA se traducen — sería inventar un dato
   que el documento no dice; los buckets de "Formato simplificado" (ver
   data/site-labels.js) sí, porque son categorías que inventó el sitio.
-- fuentes/README.md: ÍNDICE DE PAÍSES (desde la sesión 2026-09-20; antes era
+- Admin/sourcing/README.md: ÍNDICE DE PAÍSES (desde la sesión 2026-09-20; antes era
   una línea por club, y antes de la 2026-09-13 tenía todo el contenido inline —
   cada nivel dejó de escalar a su turno). Una línea por país con cuántos clubes
   trackea, cuántos tienen documento encontrado y la fecha del chequeo más viejo,
-  linkeando a `fuentes/_indice/<País>.md`, que tiene una línea por club, que a su
-  vez linkea a `fuentes/<País>/<Club>.md`, donde vive el contenido real (links a
+  linkeando a `Admin/sourcing/_indice/<País>.md`, que tiene una línea por club, que a su
+  vez linkea a `Admin/sourcing/<País>/<Club>.md`, donde vive el contenido real (links a
   documentos oficiales, notas de prensa, qué se probó y qué falta). Revisar el
   índice del país antes de asumir que no hay fuentes nuevas para un club. El
   archivo por país es además lo que permite sourcear dos países en paralelo sin
   conflictos de merge. Su sección "Índice de países" (la línea de cada país
   con sus 3 números) la GENERA `node tools/generate-fuentes-index.js` desde
-  los propios `fuentes/_indice/<País>.md` — no se edita a mano. "Cuántos
+  los propios `Admin/sourcing/_indice/<País>.md` — no se edita a mano. "Cuántos
   clubes con documento encontrado" no es un campo estructurado, es prosa
   libre que escribe el agente de sourcing, así que el script la infiere con
   dos listas de regex (señales de sí / señales de no); si una línea matchea
@@ -150,7 +150,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   la clasificación club por club.
 - fuentes.html + fuentes/<clubId>.html (41, una por club) + sitemap.xml: el
   listado PÚBLICO de documentos fuente del sitio (distinto de
-  `fuentes/README.md`, que es el índice INTERNO de sourcing por país) —
+  `Admin/sourcing/README.md`, que es el índice INTERNO de sourcing por país) —
   columnas País, Equipo, Fuente y Notas. En Notas va `publicNote` (escrita
   para un lector) más las salvedades que deriva `sourceCaveats()`; NUNCA
   `note`, que es la nota interna que una sesión le deja a la siguiente —
@@ -788,7 +788,7 @@ finance-of-sports/
 │   ├── outreach/                               cola de mails a clubes, ver más abajo
 │   └── Archive/                               cerrado y congelado, con banner de versión
 ├── auditorias/  Prototyping/                  internas también, con su propia línea en netlify.toml
-└── fuentes/README.md                          el índice de países del sourcing (era fuentes-por-club.md)
+└── Admin/sourcing/README.md                          el índice de países del sourcing (era fuentes-por-club.md)
 ```
 
 **Un documento nuevo va en `Admin/` y listo** — no hay que tocar `netlify.toml` ni el `.gitignore`.
@@ -829,7 +829,7 @@ completo está en `Admin/CONVENCIONES.md`.
   los propios datos. Corrélo después de onboardear un club, NO edites esa sección
   a mano. `--check` avisa si quedó desactualizada.
 - `tools/generate-fuentes-index.js` (Versión 175): regenera la sección "Índice de
-  países" de `fuentes/README.md` desde los `fuentes/_indice/<País>.md`. Corrélo
+  países" de `Admin/sourcing/README.md` desde los `Admin/sourcing/_indice/<País>.md`. Corrélo
   después de una sesión de sourcing, NO edites esas líneas a mano. `--check` avisa
   si quedó vieja, `--debug` muestra la clasificación club por club. Cuando no puede
   decidir si un club tiene documento (la prosa matchea señales de los dos lados, o
@@ -876,8 +876,8 @@ completo está en `Admin/CONVENCIONES.md`.
 - `.claude/skills/`: los skills propios del proyecto (uno por tarea; los lista CLAUDE.md). Se autodescubren cuando
   la sesión abre directo en `finance-of-sports/`; ver CLAUDE.md para el caso en
   que no.
-- LAS NOTAS INTERNAS DE SOURCING (`fuentes/<País>/<Club>.md`, 610, y
-  `fuentes/_indice/<País>.md`, 44) SÍ SE TRACKEAN — esta línea decía lo contrario hasta la
+- LAS NOTAS INTERNAS DE SOURCING (`Admin/sourcing/<País>/<Club>.md`, 610, y
+  `Admin/sourcing/_indice/<País>.md`, 44) SÍ SE TRACKEAN — esta línea decía lo contrario hasta la
   Versión 204 y ya no era cierto: hubo una regla en `.gitignore` (`fuentes/**/*.md`) desde la
   Versión 167, pero Guido la revirtió 6 versiones después (Versión 173, "si pierdo la mac
   pierdo semanas de trabajo") junto con TODO el destrackeo, a favor del mecanismo único que
@@ -885,8 +885,8 @@ completo está en `Admin/CONVENCIONES.md`.
   interno del ARTEFACTO DE DEPLOY antes de publicar, ver más abajo en "Dónde está cada cosa".
   Los 131 `fuentes/<clubId>.html` generados son la excepción a propósito: SÍ son parte del
   sitio y siguen viajando en el deploy.
-- `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` (una
-  línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
+- `Admin/sourcing/README.md` (índice de países) → `Admin/sourcing/_indice/<País>.md` (una
+  línea por club) → `Admin/sourcing/<País>/<Club>.md`: qué se buscó, qué se encontró y
   qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44
   países, 571 clubes trackeados, 370 con documento encontrado (de los cuales 131
   están cargados al sitio). Esos números y las 44 líneas de país NO se escriben a

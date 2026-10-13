@@ -76,7 +76,7 @@ const PAGINAS = (() => { try { return JSON.parse(readFileSync(resolve(ROOT, 'Adm
 const usdTranscribir = (pdf) => (PAGINAS[pdf]?.n ? PAGINAS[pdf].n * USD_POR_PAGINA_SIN_MD : 0.20);
 const ETAPAS = [
   ['1. CONSEGUIR EL PDF (el sourcing no pasa por este registro: acá solo aparecen los PDFs que llegaron rotos)', [
-    ['e1-roto', 'El archivo no es un PDF o está cortado', 'Volver a bajarlo (el link está en fuentes/<País>/<Club>.md).', 'a mano', 0],
+    ['e1-roto', 'El archivo no es un PDF o está cortado', 'Volver a bajarlo (el link está en Admin/sourcing/<País>/<Club>.md).', 'a mano', 0],
   ]],
   ['2. TRANSCRIBIR Y VALIDAR LA TRANSCRIPCIÓN', [
     ['e2-sin-md', 'Solo PDF, sin transcripción (escalón 0)', 'Transcribir (Mistral) y validar.', 'pipeline.mjs --ejecutar', usdTranscribir],

@@ -46,7 +46,7 @@ _de data/clubs.js:_
 
 ```text
 AC Milan: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.pdf.
-brandColor y su procedencia: fuentes/Italia/AC Milan.md.
+brandColor y su procedencia: Admin/sourcing/Italia/AC Milan.md.
 ```
 
 _de data/club-leagues/it.js:_

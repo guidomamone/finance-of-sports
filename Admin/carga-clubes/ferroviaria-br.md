@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Ferroviaria: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Ferroviaria/balanco-2010.pdf. brandColor #58141E
-(procedencia en fuentes/Brasil/Ferroviaria.md, club-or-year-onboarding/club-nuevo.md).
+(procedencia en Admin/sourcing/Brasil/Ferroviaria.md, club-or-year-onboarding/club-nuevo.md).
 ```
 
 _de data/club-leagues/br.js:_

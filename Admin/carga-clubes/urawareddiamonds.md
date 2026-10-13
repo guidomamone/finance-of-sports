@@ -16,7 +16,7 @@ placeholder). Acá solo el detalle específico de Urawa.
 
 Urawa abreviado "浦和" en las tablas del club_doc-2025.pdf. Es el club de
 MAYOR ingreso de la liga en 2025 (113 億円/¥11.310M, el primero en superar
-los ¥10.000M junto con Kawasaki Frontale — ver fuentes/Japón/Urawa Red
+los ¥10.000M junto con Kawasaki Frontale — ver Admin/sourcing/Japón/Urawa Red
 Diamonds.md).
 ============================================================================
 ```

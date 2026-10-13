@@ -9,7 +9,7 @@ Superintendencia de Sociedades.
 endpoints abiertos (sin login, sin API key, sin captcha), así que todo el flujo se scriptea con
 `curl` — mucho más rápido que navegar la SPA a clicks (ese procedimiento por browser sigue
 funcionando si los endpoints cambian, ver más abajo). El detalle completo, con los cuerpos de
-request, está en `fuentes/Colombia/_notas-generales.md`; el resumen:
+request, está en `Admin/sourcing/Colombia/_notas-generales.md`; el resumen:
 
 1. **Buscar / enumerar**: `POST siis.ia.supersociedades.gov.co/siis_backend/api/v1/qr/siis_empresas/_search`
    acepta query DSL de Elasticsearch completo, agregaciones incluidas. Ya no hace falta el NIT: se
@@ -63,7 +63,7 @@ corporación). Ver el archivo de cada club.
 - El sitio a veces entra en mantenimiento ("Estamos actualizando SIIS...") por minutos — reintentar
   más tarde, no es un dead-end permanente.
 - **18 de los 20 clubes de la Categoría Primera A cubiertos** (detalle club por club en
-  `fuentes/_indice/Colombia.md`). **Ya NO hace falta googlear el NIT**: con la API se busca por
+  `Admin/sourcing/_indice/Colombia.md`). **Ya NO hace falta googlear el NIT**: con la API se busca por
   nombre, o se lista la liga entera agregando por CIIU. Los 2 que faltan no son falta de búsqueda,
   tienen causa societaria documentada en su archivo — **Independiente Medellín** (la S.A. figura en
   liquidación y opera una corporación, fuera del perímetro de Supersociedades) y **Deportivo Pasto**

@@ -11,7 +11,7 @@ meta. Las notas de cada fila van en una tabla con su número de fila (hay nombre
 data/gimnasiaesgrima-ar-data.js — Club de Gimnasia y Esgrima La Plata (Asociación Civil, "el
 Lobo"). Club nuevo, primeros ejercicios cargados: 2023/2024/2025 (balances reales, 136°/137°/138°
 Ejercicio) + 2026 (presupuesto standalone, todavía sin balance real). Ver
-fuentes/Argentina/Gimnasia y Esgrima LP.md para cómo se encontraron los 9 documentos (2 hosts
+Admin/sourcing/Argentina/Gimnasia y Esgrima LP.md para cómo se encontraron los 9 documentos (2 hosts
 distintos: CDN de mailing para el 136°, wp-content del sitio para 137°/138°).
 
 ARQUITECTURA DEL EJERCICIO DUAL (Presupuesto Y Balance a la vez, ver club-or-year-onboarding

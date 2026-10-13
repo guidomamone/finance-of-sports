@@ -851,7 +851,7 @@ Texto movido sin cambios.
   color es desde la Versión 179 un paso del onboarding de cada club nuevo
   (`club-or-year-onboarding/club-nuevo.md`, sección "Color de marca"), no una barrida que se repite. Desde la
   Versión 180 los 39 hexes tienen su PROCEDENCIA escrita, una línea por club en
-  `fuentes/<País>/<Club>.md` ("Color de marca: `#XXXXXX` — <fuente>, verificado
+  `Admin/sourcing/<País>/<Club>.md` ("Color de marca: `#XXXXXX` — <fuente>, verificado
   <fecha>"), el mismo formato con el que la anota un club nuevo: 5 del sitio oficial
   del club, 20 de la tabla por liga de footylogos, 9 de logotyp.us (los japoneses),
   2 de teamcolorcodes, 1 del infobox de ja.wikipedia (Cerezo), 1 sin re-verificar

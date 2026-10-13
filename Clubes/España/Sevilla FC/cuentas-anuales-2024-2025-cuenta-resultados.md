@@ -1,7 +1,7 @@
 # Sevilla Fútbol Club, S.A.D. — Cuentas Anuales 2024-2025, Cuenta de Pérdidas y Ganancias
 
 `pdftotext` no extrae texto de este PDF (páginas 6+ dan 1 char cada una, es un escaneo/imagen sin
-capa de texto — confirma lo ya anotado en fuentes/España/Sevilla FC.md). Se leyó renderizando páginas
+capa de texto — confirma lo ya anotado en Admin/sourcing/España/Sevilla FC.md). Se leyó renderizando páginas
 a imagen (`pdftoppm -r 150`) y usando el Read tool. Cifras en miles de euros. Página impresa 3 =
 Cuenta de Pérdidas y Ganancias, páginas impresas 1-2 = Balance de Situación (ver índice interno del
 documento).

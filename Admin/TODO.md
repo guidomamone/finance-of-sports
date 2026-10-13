@@ -15,7 +15,7 @@ ni en el comentario de ningún archivo de código.
 - **Un punto resuelto se BORRA de acá.** Su historia ya queda en `Admin/CHANGELOG.md` y, si
   ameritaba el porqué, en `Admin/finance-of-sports-project.md`. Antes se dejaban marcados como
   "RESUELTO" y la lista terminó con la mitad de los puntos siendo cosas ya hechas.
-- **Los pendientes de sourcing de un país no van acá**: viven en `fuentes/<País>/_notas-generales.md` (decisión de Guido, 2026-09-14, reafirmada el 2026-10-04). La lista de lo sacado el 2026-09-14 está en `Admin/Archive/todo-sacados-2026-09-14.md`.
+- **Los pendientes de sourcing de un país no van acá**: viven en `Admin/sourcing/<País>/_notas-generales.md` (decisión de Guido, 2026-09-14, reafirmada el 2026-10-04). La lista de lo sacado el 2026-09-14 está en `Admin/Archive/todo-sacados-2026-09-14.md`.
 
 ---
 
@@ -27,7 +27,7 @@ ni en el comentario de ningún archivo de código.
     Toros) y básquet (Titanes) con balance propio de sociedad anónima. Decidir antes de transcribir.
     También el béisbol de México (ex to-dos 50 y 144): **`DIABLOS` en la BMV — explicado, 2026-09-29, decisión sigue pendiente de Guido**: Diablos Rojos del México es un equipo de BÉISBOL (Liga Mexicana de Béisbol, no fútbol) que cotiza en la Bolsa Mexicana de Valores desde diciembre 2024 y reporta trimestralmente — mismo patrón "Ollamani" (disclosure vía mercado de valores en vez de FOI) que ya rindió para otros casos. Por qué quedó pausado: abre LIGA nueva (LMB) Y DEPORTE nuevo (béisbol, no fútbol) — un cambio de alcance real, no una fuente más del mismo tipo de club. Dato para la decisión: el sitio YA tiene contenido de otro deporte en `Clubes/` sin cargar al sitio todavía (Green Bay Packers/NFL, Atlanta Braves/MLB, MSG Sports/NBA-NHL — piloto de prueba de Firecrawl, to-do 75, no una decisión de producto de sumar otros deportes). Si en algún momento se decide onboardear alguno de esos, DIABLOS encajaría en el mismo movimiento de alcance; si no, se puede seguir ignorando sin costo (no hay ninguna transcripción ni sourcing hecho todavía de DIABLOS). Sin acción hasta que Guido decida.
         (Aclaración 2026-10-04: desde el 2026-10-03 Diablos Rojos SÍ está sourceado, 4 ejercicios FY2022-FY2025: ver
-        `fuentes/México/Diablos Rojos del México.md`. Lo que sigue pendiente es la decisión de abrir béisbol.)
+        `Admin/sourcing/México/Diablos Rojos del México.md`. Lo que sigue pendiente es la decisión de abrir béisbol.)
 
 51. PROCESO DE EMAIL A CLUBES — EN CONSTRUCCIÓN, ETAPA 1. El envío queda afuera de cualquier sesión
     de chat: Resend + subdominio propio + una cola de archivos que Guido revisa, con el envío
@@ -145,9 +145,9 @@ ni en el comentario de ningún archivo de código.
     `schema.sql` a `tools/supabase/`) logs de gasto de API (`Admin/registros/api/`),
     mediciones (`Admin/mediciones/`) registros del pipeline (`Admin/registros/`; la evidencia de `Admin/carga-clubes/` cita la ruta nueva) y
     los scripts de sourcing de Europa del Este (`tools/sourcing-europa-este/`). `Admin/` quedó en los documentos y 9 carpetas.
+    Las notas de sourcing (`<País>/<Club>.md`, `_indice/`, `README.md`) en `Admin/sourcing/`; `fuentes/` quedó solo con las páginas públicas.
+    `cargar-lote.mjs` y `bfo-rusia.mjs` exigen, commitean y revierten `Admin/sourcing` junto con `fuentes`.
     FALTA, en este orden (decidido con Guido):
-      f) `fuentes/`: las notas internas (carpetas de país, `_indice/`, `README.md`) a `Admin/sourcing/`; en `fuentes/` quedan solo las
-         páginas públicas `<clubId>.html` (son URLs indexadas: no se mueven). ~30 archivos las citan, incluido `CLAUDE.md`.
       g) `data/<país>/<clubId>-data.js`: el loader de `index.html` (~línea 730) arma la ruta con `clubs[clubId].country`; las ~32 tools,
          con una función compartida. Red: `?audit=1` carga los 214 clubes y cuenta "clubes que no cargaron".
       h) `js/`: sacar los ~78 KB de JS inline de `index.html` a archivos de `js/`, y `js/styles.css` a `css/`. Verificar en la vista

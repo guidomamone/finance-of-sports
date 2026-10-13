@@ -24,7 +24,7 @@ S.A.B. de C.V., que cotiza en la Bolsa Mexicana de Valores (BMV) desde el 20/02/
 AGUILAS. Al ser una Sociedad Anónima Bursátil regulada por la CNBV, Ollamani está obligada a
 publicar Estados Financieros Consolidados auditados bajo IFRS, trimestrales y anuales — de ahí
 sale el dato, NO de un balance propio de Club América (que como entidad deportiva dentro del
-grupo no publica sus propios estados financieros separados). Ver fuentes/México/Club América.md
+grupo no publica sus propios estados financieros separados). Ver Admin/sourcing/México/Club América.md
 para el detalle completo de la investigación de sourcing.
 
 Fuente cargada: 'reporte-financiero-ollamani-2025-auditado.pdf' (Reporte Financiero BMV,
@@ -128,7 +128,7 @@ ALCANCE DE ESTA CARGA: SOLO el Ejercicio 2025 (año calendario completo, 1/1/202
 El PDF de 2024 ('reporte-financiero-ollamani-2024-auditado.pdf', también en Clubes/México/Club
 América/) cubre el período inicial de la compañía (1/2/2024 al 31/12/2024, 11 meses, no un año
 completo — el spin-off ocurrió el 31/01/2024), por eso se decidió NO cargarlo en esta sesión (ver
-fuentes/México/Club América.md): un ejercicio de 11 meses no es directamente comparable a uno de
+Admin/sourcing/México/Club América.md): un ejercicio de 11 meses no es directamente comparable a uno de
 12, y esta carga se limitó a pedido explícito a "el ejercicio más reciente y completo". Queda
 pendiente para una sesión futura si se quiere sumar como 2do punto de la serie histórica.
 

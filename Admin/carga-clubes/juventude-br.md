@@ -18,7 +18,7 @@ criterio que el resto de los clubes de Brasil).
 Auditores Independentes sobre as Demonstrações Financeiras" (Rosito & Filomena
 Auditores Independentes, Porto Alegre, opinião COM RESSALVA — ver salvedades abajo),
 descargado del repositorio de la Federação Gaúcha de Futebol
-(fgf.com.br/demonstracoes-financeiras-filiados, ver fuentes/Brasil/Juventude.md).
+(fgf.com.br/demonstracoes-financeiras-filiados, ver Admin/sourcing/Brasil/Juventude.md).
 Transcripción completa en Clubes/Brasil/Juventude/demonstracoes-financeiras-2020.md.
 
 NOTA DE TOOLING IMPORTANTE: el PDF fuente es un ESCANEO (generado con fotocopiadora

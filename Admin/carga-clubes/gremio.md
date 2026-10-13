@@ -10,7 +10,7 @@ meta. Las notas de cada fila van en una tabla con su número de fila (hay nombre
 ============================================================================
 data/gremio-data.js — Grêmio Foot-Ball Porto Alegrense (Porto Alegre, RS, Brasil).
 NO es SAF (sigue como associação/clube social tradicional, sin desmembrar el fútbol profissional
-en una Sociedade Anônima do Futebol) — ver fuentes/Brasil/Gremio.md. 1 ejercicio cargado: 2024
+en una Sociedade Anônima do Futebol) — ver Admin/sourcing/Brasil/Gremio.md. 1 ejercicio cargado: 2024
 (ejercicio social = ANO CALENDÁRIO completo, 1°/1/2024 a 31/12/2024, a diferencia de los clubes
 argentinos ya cargados en el sitio, que cierran a mitad de año — ver clubs.js,
 fiscalYearStart:'01-01', y el comentario de `isCalendarYearClub()` en js/finanzas-calc.js, que

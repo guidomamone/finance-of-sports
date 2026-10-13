@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Sassuolo: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.pdf.
-brandColor y su procedencia: fuentes/Italia/Sassuolo.md.
+brandColor y su procedencia: Admin/sourcing/Italia/Sassuolo.md.
 ```
 
 _de data/club-leagues/it.js:_

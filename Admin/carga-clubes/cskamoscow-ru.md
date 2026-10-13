@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 CSKA Moscow: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/CSKA Moscow/bfo-2021-datos.md. brandColor #EB2F2D
-(procedencia en fuentes/Rusia/CSKA Moscow.md; tools/bfo-rusia.mjs).
+(procedencia en Admin/sourcing/Rusia/CSKA Moscow.md; tools/bfo-rusia.mjs).
 ```
 
 _de data/club-leagues/ru.js:_

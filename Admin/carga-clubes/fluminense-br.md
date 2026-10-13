@@ -21,7 +21,7 @@ gestionesByClub/memberCountByClub).
 fiscalYearStart:'01-01', mismo criterio que Botafogo/Flamengo/Grêmio). Fuente: "Demonstrações
 Financeiras" de cada año, descargadas de transparenciafluminense.com.br/public/ (Portal da
 Transparência oficial del club, sección "Demonstrações Financeiras a partir de 2010" — ver
-fuentes/Brasil/Fluminense.md). Transcripción completa en
+Admin/sourcing/Brasil/Fluminense.md). Transcripción completa en
 Clubes/Brasil/Fluminense/demonstracoes-financeiras-{2024,2025}.md.
 
 CALIDAD DE LA TRANSCRIPCIÓN (hallazgo real de esta sesión, no asumir "texto nativo = sin errores"):
@@ -193,7 +193,7 @@ balanço", sin un valor numérico impreso en un Anexo dedicado, a diferencia de 
 River) — PTAX de cierre BCB, referenciado a FX_CLOSE (ya existían las 2 entradas antes de esta
 sesión, usadas también por Botafogo/Flamengo): BRL@2024-12-31 (6,1923) y BRL@2025-12-31 (5,5024).
 
-AUDITOR (hallazgo de esta sesión, corrige la duda abierta en fuentes/Brasil/Fluminense.md): BDO RCS
+AUDITOR (hallazgo de esta sesión, corrige la duda abierta en Admin/sourcing/Brasil/Fluminense.md): BDO RCS
 Auditores Independentes SS Ltda. firmó AMBOS ejercicios (2024 Y 2025) — la mención de prensa a
 Mazars corresponde, según el propio informe 2024 ("Outros assuntos"), al auditor del ejercicio 2023
 COMPARATIVO (auditado por "outros auditores independentes", sin nombrar, con opinião com ressalva

@@ -32,7 +32,7 @@ para 2016 todavía, así que ese año NO se cargó (solo existe como comparativo
 
 FUENTE: "Demonstrações Financeiras da Controladora e Consolidado em conjunto com as Notas
 Explicativas, findas em 31/12/2021 e 31/12/2020" — descargado de fcf.com.br (Federação
-Catarinense de Futebol), NO del sitio propio del club (ver fuentes/Brasil/Chapecoense.md). Es un
+Catarinense de Futebol), NO del sitio propio del club (ver Admin/sourcing/Brasil/Chapecoense.md). Es un
 documento comparativo 2021/2020 (a diferencia de los otros 2 PDF ya descargados de Chapecoense,
 2016 y 2017, que son standalone de un solo año cada uno). Transcripción completa en
 Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2020-2021.md (1768 líneas). Texto nativo en

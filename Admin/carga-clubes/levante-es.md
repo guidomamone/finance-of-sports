@@ -31,7 +31,7 @@ altas de jugadores con "Importe variable desembolsado por ascenso a Primera Divi
 propio ejercicio 2024/25, confirmando que el ascenso se pagó/gatilló DURANTE este ejercicio, no
 antes. Se cargó `es-segunda` en data/club-leagues/es.js para 2025, NO `es-laliga` — mismo patrón
 exacto que Sunderland en Inglaterra (ascenso vía playoff al FINAL del ejercicio cargado, para la
-temporada SIGUIENTE). Documentado también en fuentes/España/Levante UD.md.
+temporada SIGUIENTE). Documentado también en Admin/sourcing/España/Levante UD.md.
 ============================================================================
 
 Cifras originales en MILES de euros (formato español, "Datos expresados en miles de euros"),

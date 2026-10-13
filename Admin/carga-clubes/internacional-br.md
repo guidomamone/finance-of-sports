@@ -18,7 +18,7 @@ clubs{}/CLUB_GENERIC_DATA/gestionesByClub/memberCountByClub, nunca notación de 
 2 ejercicios cargados: 2024 y 2025 (ejercicio social = AÑO CALENDARIO, 1°/1 a 31/12 — clubs.js,
 fiscalYearStart:'01-01', mismo criterio que Flamengo/Botafogo/Grêmio). Fuente:
 "Relatório do auditor independente / Demonstrações contábeis" de cada año, descargados de
-static.internacional.com.br (URLs estáticas, ver fuentes/Brasil/Internacional.md). PDF con texto
+static.internacional.com.br (URLs estáticas, ver Admin/sourcing/Brasil/Internacional.md). PDF con texto
 nativo (sin OCR), transcripción completa en
 Clubes/Brasil/Internacional/relatorio-anual-{2024,2025}.md.
 
@@ -282,7 +282,7 @@ Asumio el 01/01/2021; reelecto el 09/12/2023 para 2024-2026 (una sola gestion co
 _note (data/):_
 
 ```text
-PDF oficial (texto nativo, sin OCR), descargado del Portal da Transparência del club (URL estática, ver fuentes/Brasil/Internacional.md). Incluye Relatório da Administração + Relatório do auditor independente + Balanços patrimoniais + Demonstrações de resultados + Notas explicativas. Ejercicio de DÉFICIT real (R$34,499 M), atribuido por la propia Memoria a las enchentes que inundaron Rio Grande do Sul en mayo de 2024 (el Beira-Rio estuvo cerrado 70 días). Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Internacional/relatorio-anual-2024.md.
+PDF oficial (texto nativo, sin OCR), descargado del Portal da Transparência del club (URL estática, ver Admin/sourcing/Brasil/Internacional.md). Incluye Relatório da Administração + Relatório do auditor independente + Balanços patrimoniais + Demonstrações de resultados + Notas explicativas. Ejercicio de DÉFICIT real (R$34,499 M), atribuido por la propia Memoria a las enchentes que inundaron Rio Grande do Sul en mayo de 2024 (el Beira-Rio estuvo cerrado 70 días). Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Internacional/relatorio-anual-2024.md.
 ```
 
 ### internacional-br-demonstracoes-2025

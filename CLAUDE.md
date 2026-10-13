@@ -4,7 +4,7 @@ Este es un proyecto SEPARADO del sitio profesional de Guido (`Guidomamone-pm`, r
 código ni decisiones de deploy. Son dos repos hermanos dentro de `Claude/Projects/`; si hay dudas al arrancar, chequeá `pwd` y el
 remote antes de editar o commitear. Repo: `guidomamone/finance-of-sports`; dominio: `financeofsports.com`.
 
-**`netlify.toml` define qué se publica.** Netlify publica la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY lo interno: la carpeta `Admin/` entera, `CLAUDE.md`, las notas `fuentes/**/*.md`, `auditorias/`, `Prototyping/`, `tools/` y `Generados/`. Todo se trackea (el respaldo en GitHub está completo) y lo interno no se publica. Se publican, a propósito, las páginas `fuentes/<clubId>.html` y las transcripciones `Clubes/**/*.md`. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba.
+**`netlify.toml` define qué se publica.** Netlify publica la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY lo interno: la carpeta `Admin/` entera (con las notas de sourcing de `Admin/sourcing/`), `CLAUDE.md`, `auditorias/`, `Prototyping/`, `tools/` y `Generados/`. Todo se trackea (el respaldo en GitHub está completo) y lo interno no se publica. Se publican, a propósito, las páginas `fuentes/<clubId>.html` y las transcripciones `Clubes/**/*.md`. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba.
 
 **DÓNDE PONER UN DOCUMENTO NUEVO.** Si es interno (cualquier cosa escrita para Guido o para una sesión futura: estado, reglas, notas,
 planes) va adentro de `Admin/`. Si lo dejás suelto en la raíz, se publica: `node tools/audit.js` lo caza (`doc-interno-no-excluido`).
@@ -24,7 +24,7 @@ sirve y llevalo a donde se lee: una regla a `Admin/CONVENCIONES.md` (proceso), `
   las tools del pipeline: ahí `club-or-year-onboarding`, que trae su propio arranque. Las demás: `club-sourcing` (buscar documentos),
   `club-data-mapping` (categorizar, revisar la cola de categorías o cargar a mano; el criterio está en su SKILL.md y los casos de tipo de cambio, formato simplificado, PDFs difíciles y casos por país en `referencia/`, que su índice dice cuándo abrir), `club-outreach` (mails a clubes),
   `auditoria-finance-of-sports` y `escala-finance-of-sports`.
-- Mirá si hay algo nuevo en `fuentes/README.md`: Guido deja ahí links a documentos antes de que se carguen. Si algo de ahí no figura
+- Mirá si hay algo nuevo en `Admin/sourcing/README.md`: Guido deja ahí links a documentos antes de que se carguen. Si algo de ahí no figura
   como cargado en `Admin/ESTADO-clubes.md`, es trabajo pendiente.
 - Una pregunta genuina sobre un documento, que no se puede responder con la fuente ni con los criterios de las skills, va a
   `Admin/dudas-por-club.md` (la lista que Guido usa para escribirles a los clubes). No se asume un criterio.

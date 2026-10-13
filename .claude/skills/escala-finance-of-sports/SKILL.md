@@ -44,12 +44,12 @@ cambia; este criterio es lo que no cambia):
 3. **¿Es un archivo único con "una sección por club", mantenido a mano?** Es el patrón que hay que
    buscar en cualquier lado nuevo: si hace falta scrollear o repasar entero para actualizar UN club,
    no escala aunque hoy pese poco. El síntoma no es el tamaño en KB, es el proceso de mantenerlo.
-   Ejemplo: el índice de sourcing es un índice de países (`fuentes/README.md`) con el detalle de cada
-   club en `fuentes/_indice/<País>.md`, justamente por esto.
+   Ejemplo: el índice de sourcing es un índice de países (`Admin/sourcing/README.md`) con el detalle de cada
+   club en `Admin/sourcing/_indice/<País>.md`, justamente por esto.
 
 Y una anti-pregunta, para no gastar tiempo donde no hace falta: **¿esto vive en disco pero se sirve
 de a uno por visita o por sesión?** (`data/<club>-data.js`, `Clubes/<País>/<Club>/`, el detalle de
-`fuentes/<País>/<Club>.md`). Si la respuesta es sí, el peso TOTAL en disco no es un cuello aunque sea
+`Admin/sourcing/<País>/<Club>.md`). Si la respuesta es sí, el peso TOTAL en disco no es un cuello aunque sea
 grande: un directorio de mil carpetas no es más lento de abrir que uno de cuarenta, y el sitio nunca
 baja más de un archivo de club por visita.
 
@@ -71,7 +71,7 @@ node tools/audit.js                            # grupo `escala`: proyeccion y ar
 
 | Qué | Cómo se mide | Estado y regla |
 |---|---|---|
-| `fuentes/README.md` (índice de sourcing) | `wc -c fuentes/README.md`; `ls fuentes/_indice \| wc -l` | Es un índice de PAÍSES. El detalle línea por club vive en `fuentes/_indice/<País>.md`. Es el patrón a copiar para cualquier documento "una sección por club": partir por país y dejar un índice |
+| `Admin/sourcing/README.md` (índice de sourcing) | `wc -c Admin/sourcing/README.md`; `ls Admin/sourcing/_indice \| wc -l` | Es un índice de PAÍSES. El detalle línea por club vive en `Admin/sourcing/_indice/<País>.md`. Es el patrón a copiar para cualquier documento "una sección por club": partir por país y dejar un índice |
 | `fuentes.html` y `fuentes/<clubId>.html` | `wc -c fuentes.html`; `ls fuentes/*.html \| wc -l` | `fuentes.html` es un índice de links (una fila por club) y cada página de club crece solo con los documentos de SU club; `sitemap.xml` las lista. Se partió por CLUB y no por país porque es la unidad que el visitante busca y la que puede rankear sola en un buscador |
 | `Admin/ESTADO.md` y `Admin/ESTADO-clubes.md` | `wc -c Admin/ESTADO.md Admin/ESTADO-clubes.md` | El bloque `CLUB-INDEX`, que crece por club, es generado y vive en su propio archivo; `Admin/ESTADO.md` es el snapshot en prosa y no crece por club. El umbral de `checkEscala()` aplica a cada uno por separado. Mismo mecanismo que sacó el comentario interno de `index.html`: bloque generado a archivo propio, puntero de una línea donde vivía |
 | `index.html` | `wc -c index.html`, contra el umbral de `checkEscala()` | Sin crecimiento por club: crece por FEATURES (selector, i18n, mezcla). No hay número de clubes que lo dispare. Vigilar el umbral, pero anotarlo para el eje `codigo`, no para este mapa |
@@ -176,7 +176,7 @@ Lo que enseñó resolver `club-leagues.js`, para aplicarlo a los otros dos:
   inequívoco (P2) y marca cualquier club nuevo sin país (P2). No requiere más trabajo salvo
   mantenerlo. Es el modelo a copiar para el resto de esta lista: un chequeo automático que avisa en
   el momento en que migrar deja de ser prematuro, en vez de migrar todo por las dudas.
-  `checkColisionSourcing()` lo adelanta al sourcing: lee los `fuentes/_indice/<País>.md` y avisa (P3)
+  `checkColisionSourcing()` lo adelanta al sourcing: lee los `Admin/sourcing/_indice/<País>.md` y avisa (P3)
   cuando un club que alguien está SOURCEANDO coincide con un id pelado ya cargado, o sea antes de
   transcribir nada.
   LO QUE SE MIDIÓ Y CONVIENE NO REDESCUBRIR: la comparación EXACTA de nombres entre países da muy

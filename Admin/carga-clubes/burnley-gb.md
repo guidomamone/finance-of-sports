@@ -15,7 +15,7 @@ ENTIDAD LEGAL: "Burnley FC Holdings Limited" (Companies House n° 08335231), la 
 ALK Capital (Alan Pace) que presenta cuentas CONSOLIDADAS del grupo — NO "The Burnley Football &
 Athletic Company Limited" (n° 00054222), la sociedad operativa histórica que presenta cuentas
 individuales sin consolidar. Mismo criterio que Arsenal/Everton/etc.: preferir la entidad que
-consolida (ver fuentes/Inglaterra/Burnley.md).
+consolida (ver Admin/sourcing/Inglaterra/Burnley.md).
 
 CIERRE DE EJERCICIO: 31 de JULIO, no 31 de mayo (Arsenal/Liverpool) ni 30 de junio (Man
 City/Everton/Tottenham/Bournemouth/Aston Villa/Brentford/Brighton) — confirmado en la carátula y

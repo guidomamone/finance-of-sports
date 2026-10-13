@@ -15,7 +15,7 @@ documentos: "Balanços Patrimoniais em 31/12/<ano> e 31/12/<ano-1>"; clubs.js
 fiscalYearStart:'01-01').
 
 FUENTES (3 documentos, serie continua, todos del repositorio institucional de la Federação
-Paulista de Futebol — ver fuentes/Brasil/Ponte Preta.md):
+Paulista de Futebol — ver Admin/sourcing/Brasil/Ponte Preta.md):
 - `balanco-2021-2022.pdf` -> ejercicio 2022 (año corriente de ESE documento).
 - `balanco-2022-2023.pdf` -> ejercicio 2023.
 - `balanco-2023-2024.pdf` -> ejercicio 2024.

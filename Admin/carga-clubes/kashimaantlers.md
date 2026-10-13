@@ -10,7 +10,7 @@ meta. Las notas de cada fila van en una tabla con su número de fila (hay nombre
 ============================================================================
 data/kashimaantlers-data.js — Kashima Antlers (鹿島アントラーズ), primer club de
 Japón cargado al sitio (sesión 2026-09-13, junto con otros 9 clubes de
-J.League: ver fuentes/Japón/_notas-generales.md para la metodología
+J.League: ver Admin/sourcing/Japón/_notas-generales.md para la metodología
 completa y el gotcha de fondo, resumido acá).
 
 FUENTE: "クラブ経営情報開示資料" (Club Management Information Disclosure
@@ -21,7 +21,7 @@ Edición 2025 (`Clubes/Japón/_J.League (todos los clubes)/club_doc-2025.pdf`,
 tablas.
 
 ALCANCE REAL DEL DOCUMENTO — CORRECCIÓN a lo que asumían las notas de
-sourcing iniciales (fuentes/Japón/_notas-generales.md decía "ingreso por 7-8
+sourcing iniciales (Admin/sourcing/Japón/_notas-generales.md decía "ingreso por 7-8
 categorías por club"; verificado en esta sesión de mapeo que NO es así para
 la edición 2025 ni para ediciones anteriores revisadas como muestra —
 2018): el documento SOLO desglosa 3 cifras por club, cada una para 3
@@ -36,7 +36,7 @@ confirmado con grep de texto extraído sobre las ediciones 2025 y 2018
 (ninguna fila con esas categorías aparece en las tablas "por club", solo en
 el Apéndice de totales/promedios de J1/J2/J3). Esto es MÁS restrictivo que
 lo que decía la nota de sourcing original (que hablaba de un desglose de 7-8
-categorías por club) — corregido en fuentes/Japón/_notas-generales.md en
+categorías por club) — corregido en Admin/sourcing/Japón/_notas-generales.md en
 esta misma sesión.
 
 Consecuencia para la carga de datos: revenueLines tiene 3 líneas reales
@@ -68,7 +68,7 @@ _de data/clubs.js:_
 ```text
 Japón (J.League), sesión 2026-09-13: 10 clubes, todos con Ejercicio 2025 (temporada calendario
 ene-dic 2025, la convención estándar de J.League — ninguno de estos 10 está en la lista de 7
-clubes con cierre marzo/junio del club_doc-2025.pdf, ver fuentes/Japón/_notas-generales.md).
+clubes con cierre marzo/junio del club_doc-2025.pdf, ver Admin/sourcing/Japón/_notas-generales.md).
 reportingCurrency:'JPY' — ver data/currency-map.js para el CURRENCY_META nuevo. displayName usa
 el nombre corto habitual en español/inglés (el que ya usan medios deportivos hispanohablantes),
 name lleva el nombre oficial completo en inglés.

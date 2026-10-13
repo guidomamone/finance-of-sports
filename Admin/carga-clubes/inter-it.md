@@ -45,7 +45,7 @@ _de data/clubs.js:_
 
 ```text
 Inter: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.pdf.
-brandColor y su procedencia: fuentes/Italia/Inter.md.
+brandColor y su procedencia: Admin/sourcing/Italia/Inter.md.
 ```
 
 _de data/club-leagues/it.js:_

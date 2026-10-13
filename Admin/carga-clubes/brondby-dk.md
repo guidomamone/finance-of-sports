@@ -11,7 +11,7 @@ meta. Las notas de cada fila van en una tabla con su número de fila (hay nombre
 data/brondby-dk-data.js — Brøndbyernes I.F. Fodbold A/S (clubId 'brondby-dk'). Un solo ejercicio:
 2020 (año calendario, 1° de enero a 31 de diciembre de 2020 — el archivo más reciente
 transcripto para este club, no hay años más nuevos disponibles todavía, ver
-fuentes/Dinamarca/Brøndby.md).
+Admin/sourcing/Dinamarca/Brøndby.md).
 
 ENTIDAD LEGAL: Brøndbyernes I.F. Fodbold A/S, CVR 83 93 34 10, Brøndby Stadion 30, 2605 Brøndby.
 

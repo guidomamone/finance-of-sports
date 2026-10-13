@@ -12,14 +12,14 @@ abajo). Último chequeo: 2026-09-13.
   (espejados en bmv.com.mx y gob.mx/cnbv). Ollamani reporta bajo IFRS 8 un "Segmento de Fútbol" (Club
   América + Estadio Banorte) con ingresos y utilidad propios, aunque SIN balance separado por
   segmento — es fútbol mezclado con ingresos de estadio, no un balance puro del club. Dos ejercicios
-  ya descargados (2024 y 2025) en `Clubes/México/Club América/`, ver `fuentes/México/Club América.md`
+  ya descargados (2024 y 2025) en `Clubes/México/Club América/`, ver `Admin/sourcing/México/Club América.md`
   para el detalle completo y las dudas de mapeo pendientes.
   - **Implicación para el resto de Liga MX**: el supuesto de partida ("Liga MX = todo privado, sin
     disclosure") ya no se puede asumir ciegamente — antes de descartar un club nuevo de Liga MX, vale
     la pena chequear si su grupo controlador tiene ALGUNA otra pata que cotice en BMV/CNBV (ej. FEMSA
     para Monterrey/Tigres, aunque no confirmado si desglosan fútbol como segmento). Cruz Azul (dueño:
     una cooperativa cementera, no una S.A.) SÍ tiene auditoría externa confirmada por prensa pero sin
-    disclosure público encontrado — ver `fuentes/México/Cruz Azul.md`.
+    disclosure público encontrado — ver `Admin/sourcing/México/Cruz Azul.md`.
 - **Costa Rica — mismo patrón que Uruguay, pero con un regulador que ACTIVAMENTE prohíbe publicar**:
   Alajuelense, Saprissa y Herediano sí producen estados financieros auditados reales (Saprissa
   confirmado auditado por Grant Thornton), pero la Federación Costarricense de Fútbol (FEDEFUT)
@@ -27,7 +27,7 @@ abajo). Último chequeo: 2026-09-13.
   GARANTIZA CONFIDENCIALIDAD por el mismo reglamento (art. 12) — el regulador deportivo es lo opuesto
   a un CMF: exige y blinda, no exige y publica. El Registro Nacional de Costa Rica solo certifica
   personería jurídica, no es un repositorio de balances. Tres ángulos agotados (sitio oficial,
-  prensa, FEDEFUT) — ver `fuentes/Costa Rica/_notas-generales.md` antes de reintentar igual.
+  prensa, FEDEFUT) — ver `Admin/sourcing/Costa Rica/_notas-generales.md` antes de reintentar igual.
 - **Honduras, Panamá, Guatemala — reguladores de valores reales, pero sin ningún club registrado**:
   los tres países tienen bolsa/superintendencia de valores con padrón público de emisores (BCV/CNBS
   en Honduras, SMV en Panamá, BVNSA en Guatemala) — se revisó el listado completo de Panamá y
@@ -42,7 +42,7 @@ abajo). Último chequeo: 2026-09-13.
   financieros depositados (vs. solo actos societarios) por una limitación de TOOLING (browser
   compartido con otra tarea en paralelo, pestañas cerrándose solas) — no un bloqueo real del sitio.
   Waterhouse FC Limited ya confirmado como entidad registrada candidata. Retomar con browser dedicado
-  o pagando la tarifa en JMD por el documento certificado — ver `fuentes/Jamaica/_notas-generales.md`.
+  o pagando la tarifa en JMD por el documento certificado — ver `Admin/sourcing/Jamaica/_notas-generales.md`.
 - **MLS (Estados Unidos/Canadá) — dead-end estructural confirmado para el FÚTBOL, no reintentar**
   (pero ojo: esto NO es la conclusión sobre EE.UU. en general — ver `paises/Estados-Unidos.md`, donde la SEC sí
   resultó un canal real para básquet, hockey y béisbol): la liga opera

@@ -1,18 +1,18 @@
 #!/usr/bin/env node
 // ============================================================================
 // tools/generate-fuentes-index.js — genera, desde los propios
-// `fuentes/_indice/<País>.md`, la sección "Índice de países" de
-// `fuentes/README.md` (la lista de países con sus tres números, más el
+// `Admin/sourcing/_indice/<País>.md`, la sección "Índice de países" de
+// `Admin/sourcing/README.md` (la lista de países con sus tres números, más el
 // párrafo de totales que la encabeza).
 //
 // EL PROBLEMA QUE RESUELVE: desde el split del 2026-09-20 (REGLA 4 de
-// `fuentes/README.md`), el detalle línea-por-club vive en un archivo por país
+// `Admin/sourcing/README.md`), el detalle línea-por-club vive en un archivo por país
 // y acá quedó solo el índice. Los tres números de cada línea de país —clubes
 // trackeados, cuántos con documento, chequeo más antiguo— se escribieron UNA
 // vez, con un script de un solo uso, y desde entonces se mantenían a mano: o
 // sea, una copia derivada de otro archivo, mantenida por una persona. Es la
 // misma fuga que `generate-club-index.js` cerró para Admin/ESTADO.md. Cada sesión de
-// sourcing toca `fuentes/_indice/<País>.md`, y actualizar la línea del país acá
+// sourcing toca `Admin/sourcing/_indice/<País>.md`, y actualizar la línea del país acá
 // es un paso aparte que se puede olvidar sin que nada se rompa visiblemente.
 //
 // CÓMO LO RESUELVE: el índice deja de ser prosa paralela y pasa a ser una VISTA
@@ -54,13 +54,13 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const INDICE_DIR = path.join(ROOT, 'fuentes/_indice');
-const DESTINO = path.join(ROOT, 'fuentes/README.md');
+const INDICE_DIR = path.join(ROOT, 'Admin/sourcing/_indice');
+const DESTINO = path.join(ROOT, 'Admin/sourcing/README.md');
 
 // ---------------------------------------------------------------------------
 // EL CRITERIO DE "CON DOCUMENTO ENCONTRADO"
 //
-// Definición (la que está escrita en `fuentes/README.md`; no cambiarla sin
+// Definición (la que está escrita en `Admin/sourcing/README.md`; no cambiarla sin
 // avisarle a Guido): existe al menos un documento financiero identificado y
 // ACCESIBLE con cifras de ese club — propio, o un agregado de liga con desglose
 // club por club, como la DNCG francesa — aunque todavía no esté cargado al
@@ -229,7 +229,7 @@ const OVERRIDES = {
 };
 
 // ---------------------------------------------------------------------------
-// Parseo de un `fuentes/_indice/<País>.md`.
+// Parseo de un `Admin/sourcing/_indice/<País>.md`.
 //
 // Una línea de club es `- [Nombre](link) — estado libre`. El link va entre `<>`
 // cuando el path tiene espacios o paréntesis. Se EXCLUYEN las líneas cuyo texto
@@ -286,8 +286,8 @@ function clasificar(club) {
 // ---------------------------------------------------------------------------
 function linkPais(pais) {
   // RELATIVO A `fuentes/`, no a la raíz: el destino de este generador es
-  // `fuentes/README.md`, o sea que vive en la misma carpeta que `_indice/`.
-  // Hasta la Versión 198 decía `fuentes/_indice/...` —correcto cuando el índice
+  // `Admin/sourcing/README.md`, o sea que vive en la misma carpeta que `_indice/`.
+  // Hasta la Versión 198 decía `Admin/sourcing/_indice/...` —correcto cuando el índice
   // era el viejo fuentes-por-club.md en la raíz, roto desde que la 196 lo movió acá
   // adentro, porque resolvía a `fuentes/fuentes/_indice/...`. Lo encontró
   // `checkRutasMuertas()` de tools/audit.js, que resuelve los links Markdown
@@ -346,7 +346,7 @@ function main() {
     console.error(
       `\nNO PUEDO CLASIFICAR ${ambiguas.length} línea${ambiguas.length === 1 ? '' : 's'}, ` +
       `y no las voy a adivinar.\n\n` +
-      `Leé el estado completo de cada club en su \`fuentes/<País>/<Club>.md\`, decidí si tiene o no\n` +
+      `Leé el estado completo de cada club en su \`Admin/sourcing/<País>/<Club>.md\`, decidí si tiene o no\n` +
       `un documento accesible con cifras propias (o un agregado con desglose club por club), y\n` +
       `agregá la decisión a OVERRIDES en este mismo script, con el motivo escrito.\n`);
     for (const a of ambiguas) {
@@ -385,7 +385,7 @@ function main() {
     console.log(`\n${paises.length} países, ${totalClubes} clubes, ${totalDoc} con documento.`);
   }
 
-  // --- Reemplazo dentro de `fuentes/README.md` ---------------------------
+  // --- Reemplazo dentro de `Admin/sourcing/README.md` ---------------------------
   //
   // No se usan marcadores tipo CLUB-INDEX:START/END como en
   // `generate-club-index.js`: agregarlos habría sido la primera diferencia
@@ -397,7 +397,7 @@ function main() {
   const original = fs.readFileSync(DESTINO, 'utf8');
   const iSec = original.indexOf('\n## Índice de países\n');
   if (iSec === -1) {
-    console.error('ERROR: no encontré el heading "## Índice de países" en fuentes/README.md.');
+    console.error('ERROR: no encontré el heading "## Índice de países" en Admin/sourcing/README.md.');
     process.exit(1);
   }
   const jSec = original.indexOf('\n---\n', iSec);
@@ -430,16 +430,16 @@ function main() {
   const nuevo = original.slice(0, iSec) + seccion + original.slice(jSec);
 
   if (nuevo === original) {
-    console.log(`fuentes/README.md ya está al día (${paises.length} países, ${totalClubes} clubes, ${totalDoc} con documento).`);
+    console.log(`Admin/sourcing/README.md ya está al día (${paises.length} países, ${totalClubes} clubes, ${totalDoc} con documento).`);
     return;
   }
   if (check) {
-    console.error('fuentes/README.md quedó DESACTUALIZADO respecto de los fuentes/_indice/<País>.md. Corré: node tools/generate-fuentes-index.js');
+    console.error('Admin/sourcing/README.md quedó DESACTUALIZADO respecto de los Admin/sourcing/_indice/<País>.md. Corré: node tools/generate-fuentes-index.js');
     process.exit(1);
   }
 
   fs.writeFileSync(DESTINO, nuevo, 'utf8');
-  console.log(`fuentes/README.md actualizado: ${paises.length} países, ${totalClubes} clubes, ${totalDoc} con documento.`);
+  console.log(`Admin/sourcing/README.md actualizado: ${paises.length} países, ${totalClubes} clubes, ${totalDoc} con documento.`);
 }
 
 main();

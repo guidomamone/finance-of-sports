@@ -3,14 +3,14 @@
 Este archivo es para anotar preguntas puntuales que quedaron SIN respuesta clara después de leer los
 documentos oficiales de un club — cosas que valdría la pena preguntarle directo al club (prensa,
 área de socios, o quien corresponda) en vez de asumir o inventar un criterio. Complementa a
-`fuentes/README.md` (que es sobre DÓNDE está cada documento) y a los comentarios de cada
+`Admin/sourcing/README.md` (que es sobre DÓNDE está cada documento) y a los comentarios de cada
 `data/<club>-data.js` (que son sobre CÓMO se categorizó cada línea puntual) — acá van específicamente
 las preguntas abiertas, para no perderlas sueltas en el medio de un comentario de código.
 
 Cómo se agrega algo acá: una sección por club, una línea por pregunta, con el formato:
 
 - **[tema de la pregunta]**: [la pregunta concreta, con la cita/página/documento exacto de donde
-  salió la duda] — a quién preguntarle: [contacto, si ya se investigó uno en `fuentes/README.md`].
+  salió la duda] — a quién preguntarle: [contacto, si ya se investigó uno en `Admin/sourcing/README.md`].
 
 Antes de agregar una pregunta acá, primero intentar resolverla con lo que ya está disponible (el
 propio documento, otro ejercicio del mismo club, o los criterios ya documentados en
@@ -161,7 +161,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   escaneo de Wayback Machine haya recortado esa página, o que estas versiones "Rectificativas" solo
   incluyan los estados que efectivamente rectifican). Por eso Deuda Neta/Caja quedaron sin cargar
   para esos 3 ejercicios (si sí están para 2025). Vale pedirle al club (o reintentar directo en
-  clubaunion.com.ar cuando el sitio esté online, ver `fuentes/README.md`) una copia completa que
+  clubaunion.com.ar cuando el sitio esté online, ver `Admin/sourcing/README.md`) una copia completa que
   incluya el Balance General de esos 3 años.
 - **to-do 43 (unificar "derechos de formación/mecanismo de solidaridad" a `player_sales`), sesión
   2026-09-26: mismo caso que Estudiantes LP, no se encontró línea equivalente.** El to-do lista a
@@ -251,7 +251,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
 
 - **El resultado neto (utilidad) del Ejercicio 2025 tiene 3 cifras distintas, sin poder reconciliar
   ninguna con confianza**: (1) la vista SIIS resume "Resultado del ejercicio $359,205 M" (ver
-  `fuentes/Colombia/Deportes Tolima.md`); (2) el propio documento (`estados-financieros-2025.pdf`,
+  `Admin/sourcing/Colombia/Deportes Tolima.md`); (2) el propio documento (`estados-financieros-2025.pdf`,
   Nota 18(3), tabla "RESUMEN ESTADOS DE RESULTADOS AÑO 2011 A 2025 — UTILIDADES NETAS DE LOS
   EJERCICIOS NIFF") da $914.330.454 PESOS COMPLETOS para 2025 (= $914,330454 M, verificado que esta
   tabla usa pesos completos y no miles, cruzando la magnitud de varios años contra lo esperable —
@@ -365,7 +365,7 @@ porque no hay ningún archivo de club todavía donde ponerlas.
   estado, con ingresos combinados de USD 1.154 M en FY2026. Falta chequear si la nota de segmentos
   los desglosa; si no lo hace, ¿se carga el bundle aclarando la mezcla (como se hizo con Club América
   dentro de Ollamani), se carga como una entidad sola llamada "MSG Sports", o no se carga? Ver
-  `fuentes/Estados Unidos/New York Knicks.md`.
+  `Admin/sourcing/Estados Unidos/New York Knicks.md`.
 - **Atlanta Braves: ¿consolidado o solo el segmento de béisbol?**: Atlanta Braves Holdings reporta
   dos segmentos, el club y el desarrollo inmobiliario The Battery Atlanta. El total consolidado 2025
   es USD 732,5 M. ¿Se muestra el consolidado (que incluye ingresos que no son deporte) o solo el
@@ -378,7 +378,7 @@ porque no hay ningún archivo de club todavía donde ponerlas.
 
 ## Japón — J.League y sus 10 clubes (la misma pregunta, a los dos lados)
 
-Contexto (verificado con 3 fuentes independientes, ver `fuentes/Japón/_notas-generales.md`): el
+Contexto (verificado con 3 fuentes independientes, ver `Admin/sourcing/Japón/_notas-generales.md`): el
 disclosure oficial de la liga (`club_doc-<AÑO>.pdf`) publica **3 cifras por club** — 売上高 (ingreso
 total), スポンサー収入 (sponsors) y 入場料収入 (entradas) — y nada más. Las otras 6 categorías de
 ingreso (Ｊリーグ配分金 distribución de liga, 移籍補償金等収入 transferencias, 物販収入
@@ -433,7 +433,7 @@ preguntarle: prensa deportiva navarra, o directo al club vía su área de socios
 explícitamente que la "Borussia VfL 1900 Mönchengladbach GmbH" es la operadora de la
 Lizenzspielermannschaft — el fútbol profesional, no otra unidad de negocio. La prensa que la
 describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
-`fuentes/Alemania/Borussia Mönchengladbach.md`.)*
+`Admin/sourcing/Alemania/Borussia Mönchengladbach.md`.)*
 
 ## FK Austria Wien (sourcing de Austria, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
 
@@ -441,7 +441,7 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   intento roto de 2019/20 (link muerto, sin snapshot en Wayback Machine). No se pudo confirmar si
   existe un archivo histórico en algún otro lado — a quién preguntarle: directo al club (prensa o
   área de socios/accionistas), ya que la Firmenbuch confirma que la FK Austria Wien AG sí deposita
-  cuentas pero el documento está bloqueado por login+pago (ver `fuentes/Austria/Austria Wien.md`).
+  cuentas pero el documento está bloqueado por login+pago (ver `Admin/sourcing/Austria/Austria Wien.md`).
 
 ## OH Leuven (sourcing de Bélgica, sesión 2026-09-17, no bloqueó la elección de entidad pero queda sin confirmar)
 
@@ -506,7 +506,7 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
 
 - **¿Vale la pena pagar Scribd para 2 ejercicios?**: se identificaron los ejercicios 2024 y 2025 del
   club, pero están alojados en Scribd, que exige cuenta/login para descargar (URLs exactas en
-  `fuentes/Croacia/Lokomotiva.md`). Si Guido quiere pagar/crear la cuenta él mismo, ahí están los
+  `Admin/sourcing/Croacia/Lokomotiva.md`). Si Guido quiere pagar/crear la cuenta él mismo, ahí están los
   links; si no, el club queda sin datos por ahora.
 
 ## FC København (sourcing de Dinamarca, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
@@ -720,7 +720,7 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
 Yatırım ve Futbol İşletmeciliği A.Ş., payları 2005 yılında halka arz edilmiş olup..." — salió a
 bolsa en 2005. La entidad operativa (Futbol A.Ş.) se constituyó el 21 de abril de 2004 en Trabzon.
 De paso se completó la serie completa 2015/16-2024/25, así que el hueco que motivaba la pregunta ya
-no existe. Ver `fuentes/Turquía/Trabzonspor.md`.)*
+no existe. Ver `Admin/sourcing/Turquía/Trabzonspor.md`.)*
 
 ## Polissya (sourcing de Ucrania, sesión 2026-09-18, no bloqueó la descarga pero queda sin confirmar)
 
@@ -890,7 +890,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   "Fútbol Amateur - Derechos" ($4,55M) se cargaron a `player_sales` con confianza razonable pero no
   total — **vale preguntarle al club si son solidarity payments FIFA/derechos de formación puros o
   otra cosa**. No se encontró cantidad de socios en el documento. Pendiente además (ya anotado en
-  `fuentes/Argentina/Banfield.md`): el 105° Ejercicio (2024-25) solo existe en video de YouTube, y la
+  `Admin/sourcing/Argentina/Banfield.md`): el 105° Ejercicio (2024-25) solo existe en video de YouTube, y la
   numeración de ejercicios entre el 116° y el 105° es inconsistente entre los 2 documentos del club.
 - **Gimnasia y Esgrima LP (`gimnasiaesgrima-ar`)**, Ejercicios 2023-24 y 2024-25: "Incremento Valor
   Jugadores FP" ($2.900,94M en 2024; $2.051,11M en 2025), fila nueva desde 2024 sin sub-ítems ni nota
@@ -976,7 +976,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
     Reforzaría la hipótesis de que la línea "Outras receitas atividades esportivas" 2025 incluye algo
     más que Timemania pura (quizás una porción de la cesión de derechos de transmisión de la Nota 26a,
     o un ajuste puntual) — no se pudo confirmar en el documento disponible. Mantener la pregunta.
-- **CVM / debêntures**: resuelto en gran parte (ver la evidencia en `Admin/carga-clubes/atleticomineiro-br.md` y `fuentes/Brasil/Atletico Mineiro.md`) — la SAF emitió 60.000
+- **CVM / debêntures**: resuelto en gran parte (ver la evidencia en `Admin/carga-clubes/atleticomineiro-br.md` y `Admin/sourcing/Brasil/Atletico Mineiro.md`) — la SAF emitió 60.000
   debêntures reales (R$60M nominal) el 25/09/2024, quirografárias, 3,50% a.a., vencimiento 25/09/2027.
   Lo que NO se confirmó en el documento es bajo qué instrução CVM exacta se hizo la oferta
   (probablemente Instrução CVM 476, oferta restrita a investidores profissionais, pero es una
@@ -1049,7 +1049,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   Red Bull).
 - **2019: la tabla del Passivo (circulante/não circulante) se reconstruyó por orden de impresión
   cruzando contra los subtotales**, no confirmando cada rubro contra su propio rótulo — el PDF
-  original era vectorial sin capa de texto real (ver la evidencia en `Admin/carga-clubes/rbbragantino-br.md` y el gotcha en `fuentes/Brasil/RB Bragantino.md`). El DRE (de donde
+  original era vectorial sin capa de texto real (ver la evidencia en `Admin/carga-clubes/rbbragantino-br.md` y el gotcha en `Admin/sourcing/Brasil/RB Bragantino.md`). El DRE (de donde
   sale el tie-out de Revenue/Expenses/PAT) sí cerró exacto, así que el riesgo queda acotado a
   `grossDebt`/`cash` de ESE año puntual, no a los ingresos/gastos. Si en el futuro aparece una copia
   más legible del PDF de 2019, vale la pena re-verificar esas 2 cifras.
@@ -1170,7 +1170,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   entidad SOCIAL separada de la SAF, dueña de solo el 30% de las acciones de la SAF por equivalencia
   patrimonial) — NO el balance de la SAF. Por eso esta sesión cargó un solo ejercicio (2023, auditado,
   de `demonstracoes-contabeis-2023.md`) en vez de los 2 planeados. **Falta re-sourcear el balance
-  2024 real de la SAF** (la URL oficial sigue bloqueada por Cloudflare, ver `fuentes/Brasil/Vasco da
+  2024 real de la SAF** (la URL oficial sigue bloqueada por Cloudflare, ver `Admin/sourcing/Brasil/Vasco da
   Gama.md`) o esperar a que se publique un 2025 auditado.
 - La línea "PECLD" de Gastos generales y administrativas del ejercicio 2023 salió con OCR degradado
   ("PECLD 20 (3.229)") — se reconstruyó por reconciliación como un crédito de +0,020 M (no el -3,229
@@ -1261,7 +1261,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 ## Colo-Colo (Blanco y Negro) — onboarding de Chile, sesión 2026-09-25, no bloqueó la carga
 
 - **¿Qué cambió en el balance 2024 entre el rechazo de la junta de abril 2025 y la versión que
-  finalmente circuló?**: según `fuentes/Chile/Colo-Colo (Blanco y Negro).md`, los accionistas
+  finalmente circuló?**: según `Admin/sourcing/Chile/Colo-Colo (Blanco y Negro).md`, los accionistas
   rechazaron inicialmente el balance por el tratamiento contable del contrato con DG Medios, y la
   CMF debió intervenir antes de que se aprobara una versión. Se cargó el PDF que finalmente circuló
   (el único disponible), pero no se confirmó contra prensa de la época si el rechazo implicó un
@@ -1328,7 +1328,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   de fútbol, y dónde?
 - **¿Por qué el club social consolida educación + country club pero NO fútbol, si legalmente LDU
   Quito sigue siendo una asociación civil (ninguna S.A.D.P. ecuatoriana está operativa todavía, ver
-  `fuentes/Ecuador/_notas-generales.md`)?** Si el club social y el "dueño" del fútbol profesional son
+  `Admin/sourcing/Ecuador/_notas-generales.md`)?** Si el club social y el "dueño" del fútbol profesional son
   la misma persona jurídica hoy (no puede haber una S.A.D.P. separada si la figura no existe aún en
   Ecuador), ¿por qué el fútbol se reporta aparte con solo un saldo intercompany? ¿Hay una fundación o
   comisión con estados contables propios que sí se puedan conseguir?
@@ -1607,7 +1607,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 Pedido de Guido: elegir 20 transcripciones ya hechas y sin cargar, sin orden particular, y
 onboardearlas. De los 20 elegidos al azar, 3 resultaron dead-ends sin estados contables reales
 (Temperley: solo Memoria narrativa institucional, sin un solo monto de Recursos/Gastos, confirmado
-también en `fuentes/Argentina/Temperley.md` de una sesión de sourcing anterior; Belgrano: mismo
+también en `Admin/sourcing/Argentina/Temperley.md` de una sesión de sourcing anterior; Belgrano: mismo
 caso, solo Memoria, el PAT agregado se menciona en prosa pero sin ningún desglose por rubro;
 Palestino: el documento es un estado financiero INTERMEDIO de 6 meses con comparativo, sin el
 Estado de Resultados del ejercicio anual 2018 completo) y se reemplazaron por otros 3 (Botafogo-SP,
@@ -1716,7 +1716,7 @@ tienen 2023/24 y 2024/25 (que separan "Transfer- u. Leihgeschäft" aparte).
 **Amazonas (Brasil)**: el documento fuente (`balanco-patrimonial-2024.md`) no tiene ninguna nota que
 permita desglosar "Receita de Atividades Esportivas" ni "Custo das atividades Esportivas" — quedaron
 como `lump_football_operations`/`lump_football_operations_expense` enteros. Preguntarle al club si
-existe una versión con notas explicativas. Además, `fuentes/Brasil/Amazonas.md` decía hasta esta
+existe una versión con notas explicativas. Además, `Admin/sourcing/Brasil/Amazonas.md` decía hasta esta
 sesión que estos documentos "no tienen estado de resultados" — eso es cierto para
 `balancos-2022-2023.pdf` (mala calidad de OCR, ya excluido) pero FALSO para `balanco-patrimonial-
 2024.pdf`, que sí trae una DRE completa que reconcilia exacto — corregido en esta sesión.
@@ -1846,7 +1846,7 @@ General Ordinaria 2026" (institutoacc.com.ar, publicada 25/09/2026, asamblea 17/
 directo al Orden del Día del ejercicio cerrado el 30 de junio de **2026** — el 2024-25 no aparece
 mencionado en ningún punto, ni en esta convocatoria ni en ninguna encontrada antes. ¿Qué pasó con
 ese ejercicio: nunca se llevó a asamblea, se saltó a propósito, o se va a tratar retroactivamente
-en algún momento no anunciado? Ver `fuentes/Argentina/Instituto.md`, Chequeo 2026-09-26. A quién
+en algún momento no anunciado? Ver `Admin/sourcing/Argentina/Instituto.md`, Chequeo 2026-09-26. A quién
 preguntarle: WhatsApp 3512 209813 (L-V 9-21hs) o asamblea@institutoacc.com.ar (mail habilitado
 para consultas de la asamblea, según la propia convocatoria).
 
@@ -1875,7 +1875,7 @@ ejercicio irregular set-2024/dic-2025 de ~16 meses, cubriendo lo que hubiera sid
 completo? ¿un ejercicio normal set-2025/dic-2025 que implicaría un Ejercicio 124 corto no
 encontrado?). El acta de asamblea que lo aprueba está adjunta a la misma presentación
 (`acta-asamblea-estados-contables-cierre-2025-12-31.pdf`) y debería aclararlo. Ver
-`fuentes/Argentina/River.md` para el detalle completo del hallazgo. Responderla en la sesión que
+`Admin/sourcing/Argentina/River.md` para el detalle completo del hallazgo. Responderla en la sesión que
 transcriba estos documentos, antes de mapear el ejercicio a `river-data.js` — no asumir el período
 sin leerlo.
 

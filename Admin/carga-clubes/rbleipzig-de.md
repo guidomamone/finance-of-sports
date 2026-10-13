@@ -52,11 +52,11 @@ TRAMPA DE TRANSCRIPCIÓN ENCONTRADA Y CORREGIDA (relevante para cualquier sesió
 retranscriba este documento): una primera lectura de jahresabschluss-2024-25.md pág. 8 leyó
 "Sonstigem" 2024/25 como 71.292 (con un "1" de más), lo que hacía sumar 518.952 en vez de 454.952
 — no reconciliaba contra el Umsatzerlöse total de la GuV (línea 1, pág. 5, SIEMPRE confiable). El
-valor correcto es 7.292 (SIN el "1"), confirmado cruzando contra `fuentes/Alemania/RB Leipzig.md`
+valor correcto es 7.292 (SIN el "1"), confirmado cruzando contra `Admin/sourcing/Alemania/RB Leipzig.md`
 (que ya lo tenía anotado correcto desde el sourcing original) — con 7.292 la suma cierra EXACTO.
 Moraleja de club-data-mapping/referencia/leer-pdf.md aplicada al revés: acá SÍ había una fila que
 "no explicaba la diferencia" de otra fila, sino un dígito de más en la propia transcripción —
-conviene cruzar contra fuentes/<País>/<Club>.md antes de asumir que el documento fuente está mal.
+conviene cruzar contra Admin/sourcing/<País>/<Club>.md antes de asumir que el documento fuente está mal.
 
 Categorización (ambos ejercicios, mismo criterio): Spielbetrieb es un bolsón amplio que el propio
 Anhang 4.1 dice que incluye "Erträge aus Sponsoringverträgen, Erträge aus Einnahmen des laufenden
@@ -182,5 +182,5 @@ Jahresabschluss (HGB) bajado de unternehmensregister.de (registro mercantil ofic
 _note (data/):_
 
 ```text
-Jahresabschluss (HGB) bajado de unternehmensregister.de, auditado por EY GmbH & Co. KG. Transcripción completa en Clubes/Alemania/RB Leipzig/jahresabschluss-2024-25.md — la tabla del Anhang 4.1 (Umsatzerlöse por área de negocio) tenía un dígito de más en "Sonstigem" en una primera lectura (71.292 en vez de 7.292), corregido cruzando contra fuentes/Alemania/RB Leipzig.md; ver comentario de cabecera de rbleipzig-de-data.js.
+Jahresabschluss (HGB) bajado de unternehmensregister.de, auditado por EY GmbH & Co. KG. Transcripción completa en Clubes/Alemania/RB Leipzig/jahresabschluss-2024-25.md — la tabla del Anhang 4.1 (Umsatzerlöse por área de negocio) tenía un dígito de más en "Sonstigem" en una primera lectura (71.292 en vez de 7.292), corregido cruzando contra Admin/sourcing/Alemania/RB Leipzig.md; ver comentario de cabecera de rbleipzig-de-data.js.
 ```
