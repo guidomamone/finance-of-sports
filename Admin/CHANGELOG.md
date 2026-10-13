@@ -21,6 +21,8 @@ que dice `ESTADO.md` era verdad ese día.
   compuerta. La compuerta suma el documento anterior (solo a favor) y por debajo de 1.500 unidades coincidir es ser el mismo número (6,80
   "coincidía" con un 31,92%). Idéntico en todo lo cargado; AEK 2019 caja 7.935.425 y 2020 ya no 6,80. A/B contra una compuerta con votos:
   descartada (`Admin/HALLAZGOS-pipeline.md`).
+- `caja-deuda.mjs`: una celda con "%" no es un importe (la fila de ratios de AEK daba 52,44 como año anterior). Idéntico en lo cargado; AEK
+  queda con caja 2017-2020 (1.785.823 · 1.650.370 · 7.935.425 · 1.943.170).
 
 ## Versión 686 — Perímetro sin preguntar (to-do 225) (2026-10-13)
 

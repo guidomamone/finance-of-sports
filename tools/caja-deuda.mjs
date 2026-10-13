@@ -203,7 +203,10 @@ export function filasDelMd(md) {
       // (.md L217) se leía como deuda 0,9 y corría la columna del año anterior un lugar (caja 2024 rechazada). La marca C/D de un balancete
       // va DESPUÉS del importe ("1.234 D"), así que no entra acá.
       const esRefNota = (c) => /^\p{L}{1,2}\s?\.?\s?\d{1,3}(?:\.\d{1,2})?$/u.test(c);
-      const esTexto = (c) => /\p{L}{3,}/u.test(c); const esCifra = (c) => /\d/.test(c) && !/\p{L}{2,}/u.test(c) && !esRefNota(c);
+      // (to-do 223) una celda que termina en "%" es un porcentaje, nunca un importe. Caso: AEK 2019, la fila de ratios "| Άμεση ρευστότητα |
+      // Ταμειακά διαθέσιμα | 7.935.424,59 | 52,44% |" (L161) daba 52,44 como "año anterior" de la caja, y la compuerta de 2018 la encontraba
+      // antes que la fila del balance.
+      const esTexto = (c) => /\p{L}{3,}/u.test(c); const esCifra = (c) => /\d/.test(c) && !/\p{L}{2,}/u.test(c) && !esRefNota(c) && !/%\s*$/.test(c);
       for (let j = iEt; j < celdas.length; j++) { if (!esTexto(celdas[j])) continue; let k = j + 1; const cs = []; const ix = []; while (k < celdas.length && !esTexto(celdas[k])) { if (esCifra(celdas[k])) { cs.push(celdas[k]); ix.push(k); } k++; } segmentos.push([celdas[j], cs, ix, j]); j = k - 1; }
       [etiqueta, crudos, ixPrim, jPrim] = segmentos.shift();
     } else {

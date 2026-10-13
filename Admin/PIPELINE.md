@@ -591,7 +591,7 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [-
 `data/`, sin comentario; de dónde salió, en la meta del año en `Admin/carga-clubes/<club>.md`).
 
 ```
- LECTURA DE FILAS  una sola referencia a nota; activo y pasivo en la misma fila = dos filas; sin código de cuenta ni numeración
+ LECTURA DE FILAS  una sola referencia a nota; una celda con "%" no es un importe; activo y pasivo en la misma fila = dos filas; sin código de cuenta ni numeración
                    ("4)", "a)") para el diccionario. La referencia a nota es una escalera: escalón 1, si la tabla tiene una columna de
                    notas inequívoca antes de la cifra, la cifra es un importe (Novorizontino 2019 "| Empréstimos |  | 27 | 24 |");
                    escalón 2, sin esa evidencia, el primer entero de 1-2 dígitos se descarta como nota; y (to-do 221) una columna de notas
