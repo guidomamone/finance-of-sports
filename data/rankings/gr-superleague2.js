@@ -52,6 +52,14 @@ window.RANKINGS["gr-superleague2"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.018],["Otros ingresos",1.475]] },
     ],
   },
+  2018: {
+    leagueSize: null,
+    clubs: [
+      { id:"oficrete-gr", revenue:0.851, reportType:"official_balance_sheet",
+        sourceId:"oficrete-gr-ofi-income-stmt-2018-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.615],["Otros ingresos",0.236]] },
+    ],
+  },
   2016: {
     leagueSize: null,
     clubs: [
