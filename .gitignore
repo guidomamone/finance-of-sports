@@ -11,7 +11,7 @@
 # club (esa sigue siendo la de Mistral, sin sufijo), es un chequeo de una sola vez. Si coinciden, no
 # aporta nada más allá de la verificación ya hecha; si no coinciden, queda de evidencia hasta que se
 # resuelva a mano, pero tampoco entonces hace falta publicarlo -- documentar la resolución (qué
-# número era el correcto y por qué) va al lugar de siempre, un comentario en data/<club>-data.js.
+# número era el correcto y por qué) va al lugar de siempre, la evidencia del club en Admin/carga-clubes/<clubId>.md.
 *.gemini-check.md
 
 # Source PDFs stay local only (large scans, not needed to serve the site —
