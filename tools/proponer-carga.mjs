@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/proponer-carga.mjs — etapa 5 del pipeline, versión 1: MIDE si un script puede reconstruir un ejercicio a partir del
-// .md, antes de dejarle escribir nada (to-do 108, decisión de Guido 2026-09-30). No escribe ningún archivo del sitio.
+// tools/proponer-carga.mjs — nació como el test de la carga por script (to-do 108, 2026-09-30: --backtest y --pdf, abajo). Hoy además
+// es módulo: loadSite() lo usan cargar.mjs, lote.mjs, verificar.mjs y cola.mjs; parseNumber() verificar.mjs; seleccionarFilas() y
+// briefingFor() cargar.mjs (briefingFor, solo sin --desde-verificacion). No escribe ningún archivo del sitio.
 //
 //   --backtest   toma los ejercicios YA CARGADOS que tienen su .md, arma "qué habría propuesto el script" usando SOLO lo que
 //                había antes (el precedente de categorías sale de los OTROS años del mismo club) y lo compara con lo que hay en
@@ -81,7 +82,8 @@ const VENTANAS_LIBRES = args.includes('--ventanas-libres'); // ver findExpansion
 const SIN_MISTRAL_NUEVO = args.includes('--sin-mistral-nuevo');
 const SOLO_PRINCIPALES = args.includes('--ancla-solo-principales'); // ver selectAncla()
 const concurrency = Number(flagVal('--concurrencia') || 4);
-// Importado como módulo (tools/cargar.mjs, la etapa 6, usa seleccionarFilas() y briefingFor()) no se corre nada: solo como comando.
+// Importado como módulo (cargar.mjs, etapa 8: seleccionarFilas() y briefingFor(); lote.mjs, verificar.mjs y cola.mjs: loadSite();
+// verificar.mjs: parseNumber()) no se corre nada: solo como comando.
 const IS_MAIN = import.meta.url === `file://${process.argv[1]}`;
 if (IS_MAIN && !BACKTEST && !flagVal('--pdf')) { console.error('Uso: node tools/proponer-carga.mjs --backtest [--limit N]   o   --pdf <ruta> [--club id]'); process.exit(1); }
 
@@ -473,8 +475,8 @@ function expandRow(row, lado, pool, excluded, used, depth, trail) {
     const cl = lado || ladoPorPalabras(c.label); // la hija hereda el lado del ancla (la estructura le gana a las palabras en el test de lado)
     const sub = esResultadoPuro(c.label) ? null : expandRow(c, cl, pool, excluded, used, depth + 1, [...trail, hit.u.idx]);
     if (sub && !noSeAbre(c.label)) out.push(...sub);
-    // `section`: el título de la tabla de donde sale la fila. Desde la Versión 321 la etapa 3 del pipeline categoriza ESTAS filas (no las
-    // de su propia lista), y Jev / Claude usan la sección como contexto.
+    // `section`: el título de la tabla de donde sale la fila (Jev / Claude la usan como contexto si se categorizan estas filas; el lote
+    // categoriza las de verificar.mjs, no estas).
     else out.push({ label: c.label, page: hit.u.page, section: hit.u.section || '', native: c.M, tside: cl, origen: `nota ${hit.u.idx} (ancla ${trail.join('>')})` });
   }
   return out;
@@ -529,7 +531,7 @@ function selectAncla(pts, pool) {
       // "abría" en la tabla de NIIF 15 por momento de reconocimiento (2 filas), que suma lo mismo y no sirve para categorizar.
       if (!exp || exp.length <= s.n) { if (exp) for (const id of [...used]) if (!usedAntes.has(id)) used.delete(id); continue; }
       nExpandidas++;
-      // `ancla`: el renglón del estado que se abrió (lo usa tools/cargar.mjs: si la etapa 3 del pipeline categorizó ese renglón y no las
+      // `ancla`: el renglón del estado que se abrió (lo usa tools/cargar.mjs: si la categorización tiene ese renglón y no las
       // filas de su nota, puede volver a cargarlo entero en vez de dejar el detalle sin categoría).
       exp.forEach((x) => { x.ancla ??= { label: s.label, native: s.M, tside: lado, page: t.page, section: t.section || '' }; });
       for (let k = pos(s.i) - s.n; k <= pos(s.i); k++) covered.add(t.nums[k].i);
@@ -611,7 +613,7 @@ function selectPrecedente(pool, statementRaw, clubData, year) {
 
 // ---------------------------------------------------------------- la propuesta
 // QUÉ FILAS Y MONTOS (sin Jev ni ninguna API): la parte de propose() que decide qué filas del documento serían los rubros del ejercicio,
-// con su importe en MILLONES de moneda nativa y su lado. La usa también tools/cargar.mjs (etapa 6), que pone la categoría desde el
+// con su importe en MILLONES de moneda nativa y su lado. La usa también tools/cargar.mjs (etapa 8, solo sin --desde-verificacion), que pone la categoría desde el
 // `.categorias.json` del pipeline en vez de preguntarle a Jev. Devuelve además los candidatos a total impreso (`totalCands`), el total de
 // ingresos y el resultado del ejercicio detectados por etiqueta, y las tablas preparadas (`pts`, para buscar subtotales impresos).
 export function seleccionarFilas({ briefing, mdText, clubData, year }) {

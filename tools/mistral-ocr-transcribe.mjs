@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 // Transcribe PDFs a .md usando Mistral OCR (motor de extracción de documentos, no un chat genérico --
 // por eso no tiene el filtro de "RECITATION" que bloquea ~26% de los documentos con Gemini, ver
-// Admin/registros/api/gemini-fallidos.jsonl). DEFAULT del pipeline desde la Versión 244 (ver CLAUDE.md, "Cada PDF
-// nuevo"): corré esto primero con --all; gemini-transcribe.mjs --redo-mistral-scanned es la SEGUNDA
-// pasada, para lo que esto marque como escaneo. `--retry-gemini-failures` de acá abajo es un camino
+// Admin/registros/api/gemini-fallidos.jsonl). Motor de transcripción del pipeline: lo llama
+// tools/resolver-inventario.mjs (etapa 2, vía pipeline.mjs), un PDF por vez; la segunda voz la decide el resolver
+// (Admin/PIPELINE.md, "Documentos fuente"). --all y --retry-gemini-failures quedan para uso suelto. `--retry-gemini-failures` de acá abajo es un camino
 // de recuperación aparte (para un lote que corrió Gemini primero y quedó con rechazos RECITATION),
 // no el flujo normal.
 //
@@ -55,7 +55,7 @@ function readEnvKey() {
 }
 
 function isScanned(pdfPath) {
-  // Mismo chequeo que ya usa el proyecto para decidir OCR (CLAUDE.md, "Cada PDF nuevo"): si
+  // Mismo chequeo que ya usa el proyecto para decidir OCR (Admin/PIPELINE.md, "Documentos fuente"): si
   // pdftotext no devuelve texto real de las primeras páginas, es un escaneo. Barato (recorta a 2
   // páginas) -- sirve para marcar en la salida cuáles conviene revisar con más cuidado, dado que
   // el único fallo de calidad real que encontramos con Mistral fue en un escaneo rotado/dañado.

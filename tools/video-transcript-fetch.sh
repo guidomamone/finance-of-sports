@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Baja la transcripción automática de un video de YouTube (asamblea/presentación filmada) para poder
-# grepear cifras habladas que nunca se publicaron como PDF — ver Admin/CHANGELOG.md, to-do 77.
+# grepear cifras habladas que nunca se publicaron como PDF — ver Admin/Archive/CHANGELOG-v010-v299.md, Versión 270 (to-do 77).
 #
 # Gratis, sin API de pago: usa yt-dlp (herramienta open-source, no la API oficial de YouTube) para
 # bajar el subtítulo auto-generado. Necesita el flag --extractor-args "youtube:player_client=android"

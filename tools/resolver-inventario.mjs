@@ -18,12 +18,11 @@
 // FLUJO POR DOCUMENTO
 //   PDF con texto:  páginas con dudas (gratis) -> Claude solo esas -> se reemplazan -> revalida
 //                   con tools/verify-numbers.mjs -> listo / revisar.
-//   Escaneo:        Gemini (todo el documento, barato) como segunda voz
-//                     - Gemini rechaza por RECITATION -> Claude transcribe el documento entero como segunda voz
-//                       y los desacuerdos se desempatan con Gemini página por página (una página sola
-//                       suele pasar el filtro); si Gemini también rechaza esa página, gana Claude y la
-//                       página queda anotada como "reserva" (solo una IA la validó: al onboardear, cerrar
-//                       esa página con el chequeo de sumas).
+//   Escaneo:        Gemini solo en las páginas con números que los chequeos gratis dejan dudosas (por tramos), como
+//                   segunda voz
+//                     - Gemini rechaza por RECITATION -> Gemini página por página (una página sola suele pasar el
+//                       filtro) y Claude solo en las que rechace; si nadie más valida una página, gana Claude y la
+//                       página queda anotada como "reserva" (al onboardear, cerrarla con el chequeo de sumas).
 //                     - Gemini responde -> páginas donde canónica y Gemini difieren -> Claude solo esas.
 //   .md sin marcas de página (no se puede trabajar por página): se re-hace entero con Mistral.
 //
@@ -415,8 +414,9 @@ function patchToMajority(cands, best) {
   return { body, parches: [...map].map(([a, b]) => `${a}->${b}`) };
 }
 
-// PASO 2 (gratis): ARITMÉTICA DEL DOCUMENTO. Entre versiones distintas de una página gana la que hace cerrar más sumas
-// contra los totales impresos (tools/prepare-onboarding.mjs: cierres exactos menos fallos). Comprobado a mano en
+// PASO 2 (gratis): ARITMÉTICA DEL DOCUMENTO. Entre versiones distintas de una página gana la que deja más celdas respaldadas por
+// sumas (sumScore(), abajo). tieScore() es el puntaje anterior (cierres exactos menos fallos de prepare-onboarding.mjs): ya no lo
+// llama nadie, queda para el to-do 218. Comprobado a mano en
 // Argentinos Juniors: 425.204.023 + 233.796.753 - 275.518.976 = 383.481.800 decidía cuál de las lecturas era la correcta.
 function tieScore(body) {
   const tmp = mkdtempSync(join(tmpdir(), 'tie-'));

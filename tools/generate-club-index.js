@@ -27,9 +27,9 @@
 //
 // QUÉ NO HACE, A PROPÓSITO: no intenta resumir el "por qué" de cada club (qué
 // supuesto se tomó, qué salvedad tiene una cifra, qué quedó sin cargar). Eso NO
-// es derivable de los datos y sigue viviendo donde siempre debió: el comentario
-// de cabecera del `data/<país>/<club>-data.js`, que es lo que el índice linkea. El
-// índice contesta "qué hay"; el archivo del club contesta "por qué".
+// es derivable de los datos y vive en la evidencia de carga de cada club,
+// `Admin/carga-clubes/<clubId>.md`. El índice contesta "qué hay"; la evidencia
+// contesta "por qué".
 //
 // USO:
 //   node tools/generate-club-index.js           reescribe la sección en Admin/ESTADO-clubes.md

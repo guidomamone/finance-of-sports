@@ -5,7 +5,7 @@
 //
 // POR QUÉ (Versión 324; proceso completo en Admin/PIPELINE.md): la selección por palabras clave
 // (proponer-carga.mjs seleccionarFilas) reproduce los ingresos de producción en 7-11% de los años ya cargados; el test por página
-// (localizar-extraer.mjs) llegó a 42% de ingresos y 69% de gastos, pero Guido descartó elegir páginas enteras ("el estado de resultados puede
+// (tools/archivo/localizar-extraer.mjs) llegó a 42% de ingresos y 69% de gastos, pero Guido descartó elegir páginas enteras ("el estado de resultados puede
 // arrancar por la mitad de la página"). Acá la IA ve el ÍNDICE DE BLOQUES (tools/indice-bloques.mjs: una ficha por tabla o bloque de texto con
 // cifras) y elige bloques.
 //

@@ -17,7 +17,7 @@
 //     el backtest de categorizar-claude (Admin/mediciones/test-categorizar-claude.md): Claude >= 0,90 acertó 98,5%.
 //   - EJEMPLOS para Jev y para Claude (los "rubros parecidos de otros clubes"): lo aprendido con >= 0,80 (94,3% en el backtest).
 //   - LO CARGADO EN EL SITIO SIEMPRE GANA: si producción ya tiene ese (club, lado, rubro), se usa producción y lo aprendido se ignora. Cuando
-//     un ejercicio se carga (etapa 6), su versión curada pasa a mandar sola.
+//     un ejercicio se carga (etapa 8), su versión curada pasa a mandar sola.
 //   - Los BACKTESTS no lo usan (medirían con respuestas de Claude sobre esos mismos rubros: fuga).
 //
 // USO:

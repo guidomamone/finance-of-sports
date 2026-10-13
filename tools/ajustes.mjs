@@ -52,7 +52,7 @@
 //                     compuerta 'moneda' de cargar.mjs. Hace falta además el tipo de cambio de ese cierre en FX_CLOSE (data/currency-map.js).
 //                     Caso: Lazio 1998-99, 1999-00 y 2000-01 en liras.
 //   fx                (Versión 373) el tipo de cambio de cierre, en moneda por 1 USD: escalón 0 de la escalera del tipo de cambio
-//                     (tools/alta-club.mjs proponerFx, que también usa cargar.mjs). Sin caso todavía.
+//                     (tools/alta-club.mjs proponerFx, que también usa cargar.mjs). Casos: AC Milan 2021-22 y 2022-23.
 //   fila              (Versión 368) una fila del resultado que la extracción no trajo, o trajo mal: etiqueta, lado (ingreso, gasto,
 //                     financiero, impuesto), valor TAL CUAL impreso (con su signo: un costo financiero en negativo), línea del .md y,
 //                     opcional, `reemplaza` = la etiqueta de la fila extraída que sale (TODAS las que se llaman así), o `reemplazaLinea` =
@@ -168,7 +168,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     // (Versión 425) deuda-incluye = términos extra (separados por ';') para el diccionario de deuda de caja-deuda.mjs, para un documento o todo
     // el club. Caso: Novorizontino, el préstamo de su controlante I-9 Sports figura como "Débitos com partes relacionadas" / "Partes relacionadas".
     if (campo === 'deuda-incluye' && !flag('--valor')) { console.error('deuda-incluye necesita --valor "término; término"'); process.exit(1); }
-    if (!['perimetro', 'deuda-incluye', 'name'].includes(campo) && pdf.endsWith('/')) { console.error('solo `perimetro` se fija para la carpeta de un club'); process.exit(1); }
+    if (!['perimetro', 'deuda-incluye', 'name'].includes(campo) && pdf.endsWith('/')) { console.error('solo `perimetro`, `deuda-incluye` y `name` se fijan para la carpeta de un club'); process.exit(1); }
     if (['resultado-final', 'fila', 'fx', 'cero-real', 'desglose'].includes(campo) && !flag('--valor')) { console.error(`${campo} necesita --valor (el número tal cual está impreso)`); process.exit(1); }
     if (campo === 'fila' && (!flag('--etiqueta') || !LADOS.includes(flag('--lado')))) { console.error(`fila necesita --etiqueta y --lado (${LADOS.join(', ')})`); process.exit(1); }
     if (flag('--reemplaza-linea') !== null && !/^\d+$/.test(flag('--reemplaza-linea') || '')) { console.error('--reemplaza-linea necesita el número de línea del .md'); process.exit(1); }

@@ -5,7 +5,7 @@
 //
 // POR QUÉ (Versión 324; proceso en Admin/PIPELINE.md). La IA COPIA Y ETIQUETA; no suma, no convierte, no
 // categoriza (eso lo hace un script en verificar.mjs: un LLM no sirve para verificar aritmética, FinVerBench, arXiv 2605.29586; y la categoría
-// es la etapa 7). Desgloses anidados y cuadros por segmento (Versión 335): ver la regla de detalla_a en SYSTEM. Lecciones del test por página (localizar-extraer.mjs) ya incorporadas:
+// es la etapa 7). Desgloses anidados y cuadros por segmento (Versión 335): ver la regla de detalla_a en SYSTEM. Lecciones del test por página (tools/archivo/localizar-extraer.mjs) ya incorporadas:
 //   - ESCALA POR BLOQUE, no por documento: en 1. FC Köln la nota de ingresos está en miles y el estado en euros con céntimos; con una escala
 //     por documento la suma salía mil veces chica.
 //   - LÍNEA DEL .md de cada fila (las líneas se le pasan numeradas): la cola humana dice "mirá la línea 412 del .md" sin buscar.

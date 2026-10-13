@@ -3,7 +3,7 @@
 //
 // Por qué existe: antes, cada tool armaba `data/${id}-data.js` a mano o listaba `data/` buscando `*-data.js` (~70 lugares en 26 tools).
 // Con los data files en carpetas por país (`data/<país>/<clubId>-data.js`, país = código ISO de `clubs.js` en minúscula, igual que
-// `data/club-leagues/` y `data/gestiones/`), esa ruta vive SOLO acá. El sitio arma la misma ruta en `loadClubData()` de `index.html`.
+// `data/club-leagues/` y `data/gestiones/`), esa ruta vive SOLO acá. El sitio arma la misma ruta en `loadClubData()` de `js/principal.js`.
 //
 // USO (CommonJS y ESM):
 //   const { rutaData, archivosData, idDeArchivo } = require('./data-clubes.js');

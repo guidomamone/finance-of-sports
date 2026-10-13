@@ -4,6 +4,10 @@
 // del pipeline de onboarding de una sola vez, ANTES de abrir una sesión de
 // Claude, y deja UN solo archivo de briefing compacto.
 //
+// HOY: ya no es un paso del pipeline (Versión 529). Lo llaman briefingFor() de proponer-carga.mjs (cargar.mjs sin
+// --desde-verificacion, y --backtest / --pdf) y las etapas viejas de onboard.mjs. Para archivarlo (to-do 218), briefingFor()
+// tiene que dejar de depender de él.
+//
 // PENSADO PARA CORRER DESDE TU TERMINAL (Guido), no desde una sesión de
 // Claude -- mismo criterio que la transcripción (CLAUDE.md "Cada PDF nuevo",
 // Versiones 244-248): sacar de Claude cualquier paso 100% mecánico. Podés

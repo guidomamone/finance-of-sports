@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/audit.js — auditoría determinista del proyecto entero, en Node.
 //
-// EL PROBLEMA QUE RESUELVE: `auditAll()` (index.html, Versión 118) verifica que
+// EL PROBLEMA QUE RESUELVE: `auditAll()` (js/principal.js; nació en index.html, Versión 118) verifica que
 // cada ejercicio CIERRE contra el total que su propio documento imprime. Es la
 // verificación más importante del sitio, pero solo ve una clase de error: la
 // suma que no da. No ve al ejercicio que no tiene ningún total oficial contra
@@ -742,7 +742,7 @@ function checkRutasMuertas() {
 }
 
 // --- D19: TODO LO GENERADO, AL DÍA (Versión 183) ---------------------------
-// El proyecto tiene 4 generadores y los 4 dependen de que alguien se acuerde de
+// El proyecto tiene 5 generadores (estos 4 tienen --check; el quinto es generate-como-corre-stats.js) y dependen de que alguien se acuerde de
 // correrlos. "Acordate" ya falló antes acá (ver `checkDeployInterno`), y esta
 // sesión encontró el caso más silencioso de todos: `generate-fuentes-page.js`
 // LEE `ASSET_V` de index.html y lo escribe en las 42 páginas de fuentes, así que
@@ -755,12 +755,12 @@ function checkRutasMuertas() {
 //
 // P1 y no P2: lo que queda desfasado está PUBLICADO. Un `data/rankings/` viejo
 // publica el ingreso de un club con el balance del año pasado; una página de
-// fuentes vieja pide un asset que ya no existe; una sección generada de Admin/ESTADO.md
-// vieja le miente a la próxima sesión sobre qué hay cargado.
+// fuentes vieja pide un asset que ya no existe; un Admin/ESTADO-clubes.md
+// viejo le miente a la próxima sesión sobre qué hay cargado.
 const GENERADORES = [
   ['generate-rankings.js',      'data/rankings/',                      'rankings-desfasado'],
-  ['generate-fuentes-page.js',  'fuentes.html y las 41 páginas de club', 'fuentes-desfasada'],
-  ['generate-club-index.js',    'la sección generada de Admin/ESTADO.md',    'club-index-desfasado'],
+  ['generate-fuentes-page.js',  'fuentes.html y sus páginas de club', 'fuentes-desfasada'],
+  ['generate-club-index.js',    'Admin/ESTADO-clubes.md (generado)',         'club-index-desfasado'],
   ['generate-fuentes-index.js', 'el índice de Admin/sourcing/README.md',    'fuentes-indice-desfasado'],
 ];
 function checkGenerados() {
@@ -1228,7 +1228,7 @@ function checkEscala(api) {
   const hits = [];
   for (const rel of archivos) {
     // Los comentarios HTML se blanquean ANTES de buscar (Versión 129, falso positivo
-    // real): el comentario de cabecera de index.html son 50 KB de prosa donde nombrar
+    // real): el comentario de cabecera de index.html eran 50 KB de prosa donde nombrar
     // `racing` o `boca` es lo normal, y cada mención se reportaba como si fuera una
     // rama por club en el código. Se reemplaza por líneas vacías, no se borra, para
     // que los números de línea que se reportan sigan siendo los del archivo.
@@ -1368,8 +1368,9 @@ function checkHigiene(api) {
   // hasta la Versión 152, cuando ese archivo se borró). Sin esto el chequeo
   // miraba 3 archivos fijos y las claves nuevas del selector y de la comparación no
   // se contaban, o sea que el chequeo pasaba mientras el visitante veía castellano.
-  // REGLA: todo archivo de `js/` que llame a `t()` va en esta lista.
-  for (const rel of ['js/finanzas-render.js', 'js/finanzas-calc.js', 'js/finanzas-anios.js', 'js/finanzas-multi.js', 'js/selector.js', 'js/liga.js', 'index.html']) { // (Versión 515) + js/liga.js, que llamaba a t() y no estaba; (Versión 535) + los dos archivos del to-do 147
+  // Hoy se leen TODOS los `js/*.js` más index.html, así un archivo nuevo de js/ (js/principal.js, js/cuenta.js) no queda afuera. Salvo
+  // js/i18n.js: es el motor de t() y sus `t('clave', ...)` son ejemplos de su cabecera, no claves del sitio.
+  for (const rel of [...fs.readdirSync(path.join(ROOT, 'js')).filter(f => f.endsWith('.js') && f !== 'i18n.js').sort().map(f => 'js/' + f), 'index.html']) { // (Versión 515) + js/liga.js, que llamaba a t() y no estaba; (Versión 535) + los dos archivos del to-do 147
     const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');
     // Una clave que termina en "." no es una clave sino un PREFIJO de clave dinámica
     // (`t('fx.source.' + meta.fxSource, ...)`): el valor real se arma en runtime y no se

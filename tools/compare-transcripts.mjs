@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // ============================================================================
 // tools/compare-transcripts.mjs — compara DOS transcripciones independientes
-// del MISMO PDF (Mistral vs Gemini, corridas en paralelo por
-// tools/onboard.mjs) para decidir si coinciden en los NÚMEROS antes de
+// del MISMO PDF (dos motores independientes; la llama inventario-transcripciones.mjs, desde
+// pipeline.mjs, y las etapas viejas de onboard.mjs) para decidir si coinciden en los NÚMEROS antes de
 // confiar el resto del pipeline mecánico a un solo motor de OCR.
 //
 // Por qué comparar por RUBRO en vez de diff de texto plano: dos
@@ -39,7 +39,7 @@
 // del contenido real. Cuando Claude corrige la celda que estaba mal (contra
 // el PDF, nunca a ciegas) en el .md CANÓNICO, deja al principio del archivo
 // una línea "DISCREPANCIA MISTRAL/GEMINI RESUELTA (ver tools/compare-
-// transcripts.mjs), <fecha>, <qué cambió y por qué>" -- tools/onboard.mjs
+// transcripts.mjs), <fecha>, <qué cambió y por qué>" -- onboard.mjs (etapas viejas)
 // busca ese texto y, si está, lo dice al confirmar el match. Es una
 // convención para que cualquiera que lea el .md sepa que ese match no es
 // casualidad de que las 2 IAs acertaron solas, no un mecanismo que bloquee

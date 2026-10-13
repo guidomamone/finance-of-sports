@@ -3,7 +3,7 @@
 // tools/indice-bloques.mjs — ETAPA 3a del proceso nuevo (localizar): el ÍNDICE DE BLOQUES de una transcripción. Gratis, sin IA.
 //
 // POR QUÉ EXISTE (Versión 324, diseño acordado con Guido el 2026-10-01; ver Admin/PIPELINE.md). El test
-// localizar-extraer.mjs elegía PÁGINAS enteras, y Guido lo descartó con razón: "a veces el estado de resultados puede arrancar por la mitad de
+// tools/archivo/localizar-extraer.mjs elegía PÁGINAS enteras, y Guido lo descartó con razón: "a veces el estado de resultados puede arrancar por la mitad de
 // la página". Una página puede tener el final del balance y el comienzo del resultado, y un estado puede seguir en la página siguiente.
 // Entonces se localiza por BLOQUE: cada tabla de la transcripción (y cada bloque de texto con cifras que no quedó como tabla) es una unidad,
 // con una FICHA corta que es lo único que ve la IA de localizar (tools/localizar.mjs):

@@ -7,7 +7,7 @@
 //
 // Si la fecha pedida no tiene cotización (fin de semana/feriado), devuelve la
 // del día hábil anterior más cercano -- mismo criterio que ya usa el proyecto
-// a mano (ver el comentario de ARS@2020-10-31/2021-10-31 en data/currency-map.js:
+// a mano (ver el `label` de ARS@2020-10-31/2021-10-31 en data/currency-map.js:
 // "última rueda hábil antes del cierre").
 //
 // Si la fecha/moneda no está en la serie local (no se corrió

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/pipeline.mjs — EL comando único, de punta a punta (pedido de Guido, 2026-09-29):
+// tools/pipeline.mjs — la ETAPA 2 (transcribir y validar); hasta la Versión 528 era el comando único de punta a punta
+// (pedido de Guido, 2026-09-29):
 //
 //     node tools/pipeline.mjs --ejecutar
 //
@@ -62,8 +63,6 @@ tomarCandado('pipeline.mjs', { lista: listFile || dirFilter || null, modo: EXECU
 const concurrency = flagVal('--concurrencia') || '4';
 // Tope de páginas por documento (0 = sin tope). Un informe anual de 230 páginas (Borussia Dortmund) cuesta unas 10 veces
 // más que un balance de 25 y se lleva el tiempo de toda la corrida: por defecto quedan para el final, listados aparte.
-// --solo-preparar también implica sin etapa 5: su promesa es "sin API". BUG encontrado el 2026-09-30 (Versión 321): solo filtraba QUÉ documentos
-// se tomaban, pero después de prepararlos la etapa 5 corría igual y mandaba a Jev y a Claude todo lo re-preparado.
 // PROCESO VIEJO, RETIRADO (Versión 529, to-do 142(c), aprobado por Guido el 2026-10-05): esta tool hacía además la preparación para Jev
 // (prepare-onboarding.mjs, la lista de rubros, la marca listo-para-jev / sin-rubros) y la categorización con Jev y Claude. El proceso nuevo
 // cargó 6 clubes enteros sin eso: la lista de rubros y la marca las pone verificar.mjs (etapa 6) y la categorización es la etapa 7 del lote.

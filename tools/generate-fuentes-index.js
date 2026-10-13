@@ -285,11 +285,9 @@ function clasificar(club) {
 // Armado de la línea de país, en el formato EXACTO del archivo de hoy.
 // ---------------------------------------------------------------------------
 function linkPais(pais) {
-  // RELATIVO A `fuentes/`, no a la raíz: el destino de este generador es
-  // `Admin/sourcing/README.md`, o sea que vive en la misma carpeta que `_indice/`.
-  // Hasta la Versión 198 decía `Admin/sourcing/_indice/...` —correcto cuando el índice
-  // era el viejo fuentes-por-club.md en la raíz, roto desde que la 196 lo movió acá
-  // adentro, porque resolvía a `fuentes/fuentes/_indice/...`. Lo encontró
+  // RELATIVO A LA CARPETA DEL DESTINO (`Admin/sourcing/README.md`), no a la raíz: el README vive en la
+  // misma carpeta que `_indice/`. Un link con la ruta desde la raíz se rompe, porque Markdown resuelve
+  // desde la carpeta del archivo (pasó cuando el índice se mudó de la raíz a `fuentes/`). Lo encontró
   // `checkRutasMuertas()` de tools/audit.js, que resuelve los links Markdown
   // desde la carpeta del archivo que los contiene.
   const rel = `_indice/${pais}.md`;

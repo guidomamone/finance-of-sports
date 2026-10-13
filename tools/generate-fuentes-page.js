@@ -43,9 +43,8 @@ const { esCalendario } = require('./cierre-ejercicio.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const SALIDA_INDICE = path.join(ROOT, 'fuentes.html');
-// Las páginas por club viven en `fuentes/`, al lado de las notas internas de sourcing, que
-// están un nivel más abajo (`Admin/sourcing/<País>/<Club>.md`). No pueden colisionar: acá se escribe
-// `fuentes/<clubId>.html` y esos son siempre archivos, nunca carpetas de país.
+// Las páginas por club viven en `fuentes/<clubId>.html`. Las notas internas de sourcing no están ahí
+// (viven en `Admin/sourcing/<País>/`), así que en `fuentes/` no hay nada con qué colisionar.
 const DIR_CLUBES = path.join(ROOT, 'fuentes');
 const SALIDA_SITEMAP = path.join(ROOT, 'sitemap.xml');
 const BASE_URL = 'https://financeofsports.com';
@@ -402,8 +401,8 @@ function main() {
 
   if (!fs.existsSync(DIR_CLUBES)) fs.mkdirSync(DIR_CLUBES, { recursive: true });
 
-  // Qué `.html` hay hoy en fuentes/ (solo el nivel de arriba: las subcarpetas son las
-  // notas de sourcing por país y no se tocan nunca).
+  // Qué `.html` hay hoy en fuentes/ (solo el nivel de arriba; si alguna vez hay subcarpetas,
+  // no se tocan).
   const enDisco = fs.readdirSync(DIR_CLUBES, { withFileTypes: true })
     .filter(d => d.isFile() && d.name.endsWith('.html'))
     .map(d => d.name);

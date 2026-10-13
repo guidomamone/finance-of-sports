@@ -26,8 +26,8 @@
 //           resuelta por los escalones 0-1 cuando la hay, para que Claude vea la estructura del estado;
 //         - para cada rubro pendiente, 6 ejemplos parecidos de OTROS clubes (misma búsqueda por palabras que Jev).
 //       Salida en JSON estricto (structured outputs): categoría + confianza + motivo corto, por rubro.
-//   (3) Lo que Claude tampoco deja con confianza alta -> se frena (lo resuelve una sesión o va a
-//       Admin/dudas-por-club.md). No se inventa.
+//   (3) Lo que Claude tampoco deja con confianza alta -> se frena y va a la cola humana (cola.mjs; la escribe
+//       cargar.mjs). No se inventa.
 //
 // ---------------------------------------------------------------------------------------------------------
 // NÚMEROS MEDIDOS (backtest del 2026-09-30, detalle en Admin/mediciones/test-categorizar-claude.md)
@@ -69,7 +69,7 @@
 //   node tools/categorizar-claude.mjs --informe [--etiqueta _x]
 //   node tools/categorizar-claude.mjs --listos [--limit 10] [--dry-run] [--lista Admin/mi-piloto.txt]
 //   Extras: --modelo (default claude-opus-5-5), --esfuerzo low|medium|high (default low; Haiku no lo usa),
-//           --concurrencia 4, --semilla 7, --umbral-jev 0.9, --jev-jsonl <ruta>, --muestra-estratificada N
+//           --concurrencia 4, --semilla 7, --umbral-jev 0.9, --jev-jsonl <ruta>
 //
 // COSTO: cada llamada queda en Admin/registros/api/claude-api.jsonl (mismo archivo que las tools de transcripción,
 // lo suma tools/gasto.mjs) con `tarea: "categorizar"`, sin campo `md` a propósito: inventario-transcripciones.mjs

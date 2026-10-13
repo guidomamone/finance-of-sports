@@ -1,7 +1,7 @@
 // ============================================================================
 // tools/carpetas-clubes.mjs — la ÚNICA regla de "¿a qué club del sitio corresponde esta carpeta de Clubes/<País>/<Club>/?".
-// La usan tools/onboard.mjs (--quien, --dry-run, y con eso inventario-transcripciones.mjs y pipeline.mjs), tools/alta-club.mjs y
-// tools/audit.js (que falla con P1 si la regla deja de ser inequívoca).
+// La usan tools/onboard.mjs (--quien, --dry-run, y con eso inventario-transcripciones.mjs y pipeline.mjs), alta-club.mjs, cargar.mjs,
+// verificar.mjs, padres-filas.mjs, memoria-categorias.mjs y audit.js (que falla con P1 si la regla deja de ser inequívoca).
 //
 // POR QUÉ EXISTE (2026-09-30): onboard.mjs adivinaba el club comparando el NOMBRE de la carpeta con el nombre de cada club de
 // data/clubs.js, por substring y sin mirar el país. Resultado medido:

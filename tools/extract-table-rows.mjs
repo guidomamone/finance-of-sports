@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// PROTOTIPO para to-do 98, paso 4. No integrado a ningún flujo todavía.
+// Tablas de un .md a JSON (nació para el to-do 98, paso 4). Lo llaman compare-transcripts.mjs y prepare-onboarding.mjs.
 //
 // Lee un .md transcripto (Mistral/Gemini) y saca SOLO las filas de sus tablas
 // Markdown a JSON compacto: {page, section, columns, rows:[{rawLabel,values,bold}]}.
@@ -159,7 +159,8 @@ function etiquetaEnSegundaColumna({ columns, rows }) {
 // con encabezados "Označení | TEXT | čís. řád.") no tenía nada relevante en su sección ni en sus columnas, pero sus FILAS son "Tržby...",
 // "Náklady...". Si al menos 3 etiquetas de fila tienen una palabra de ingresos/gastos/resultado, se marca `filasDeResultados`. NO cambia
 // `likelyRelevant`: probado así, balances y notas se volvían relevantes y los rubros explotaban (Real Madrid 32 -> 253, Polissya 0 -> 200).
-// tools/pipeline.mjs lo usa SOLO junto con un título de estado de resultados en el texto de la misma página.
+// Hoy no lo lee ninguna tool (lo usaba pipeline.mjs, junto con un título de estado de resultados en la misma página, cuando armaba la
+// lista de rubros).
 function filasRelevantes(rows) {
   let n = 0;
   for (const r of rows) { const l = normalizeText(r.rawLabel); if (RELEVANTE_RE.test(l)) n++; if (n >= 3) return true; }

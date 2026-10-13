@@ -54,9 +54,9 @@
 //     club cuando el documento es del mismo tipo (ver perimetroHeredado()); si no se puede, frena.
 //  8. fiscalYearMeta: currency, fx/fxSource o fxRef, sourceId, reportType, gestionId null (club-data-mapping §7: no se inventa una
 //     gestión), profitOnPlayerSales 0 y assetSales 0 (van como líneas si el documento las trae en el estado), netInterest y tax (de las
-//     filas del paso 4), grossDebt y cash en null (no se leen mecánicamente todavía: "sin dato no es cero"), y los tres official*.
-//  9. `sources`: la entrada nueva, con `note` INTERNA (lleva la ruta del .md: es la cita que usa carpetas-clubes.mjs) y SIN publicNote
-//     (audit.js checkFuentesPublicas: las salvedades públicas las deriva sourceCaveats() de los campos). Y una línea en
+//     filas del paso 4), grossDebt y cash en null (los completa después `caja-deuda.mjs --club`: "sin dato no es cero"), y los tres official*.
+//  9. `sources`: la entrada nueva, SIN `note` ni publicNote (la nota interna, con la ruta del .md que cita carpetas-clubes.mjs, va a
+//     "## Fuentes" de Admin/carga-clubes/<club>.md; audit.js checkFuentesPublicas: las salvedades públicas las deriva sourceCaveats() de los campos). Y una línea en
 //     Admin/sourcing/<País>/<Club>.md si ese archivo existe.
 //
 // --escribir (solo si no quedó NINGÚN motivo para frenar): inserta el año en las tres estructuras del data/<país>/<club>-data.js y en sources{},
@@ -849,7 +849,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
 
 // ============================================================================
 // EDICIÓN DE ARCHIVOS JS: se busca el bloque por su apertura y se cierra por conteo de llaves (saltando strings y comentarios), nunca con
-// una regex sobre el archivo entero (los data files tienen comentarios con llaves y strings con comillas escapadas).
+// una regex sobre el archivo entero (los data files viejos tenían comentarios con llaves; hay strings con comillas escapadas).
 // ============================================================================
 function cierreDe(src, abre) {
   let d = 0;
@@ -864,7 +864,7 @@ function cierreDe(src, abre) {
   return -1;
 }
 function insertarEnObjeto(src, apertura, texto, archivo) {
-  // la apertura se busca al PRINCIPIO de una línea (Versión 391): el esqueleto de alta-club.mjs tiene un comentario que nombra
+  // la apertura se busca al PRINCIPIO de una línea (Versión 391): el esqueleto de alta-club.mjs tenía un comentario que nombraba
   // "Object.assign(sources, {" y la búsqueda caía ahí (caso: Goiás 2021, "no pude cerrar el bloque"). Todas las aperturas son sentencias de primer nivel.
   const a = src.search(new RegExp('^' + apertura.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'm')); if (a < 0) throw new Error(`${archivo}: no encontré "${apertura}"`);
   const abre = src.indexOf('{', a + apertura.length - 1); const cierra = cierreDe(src, abre);

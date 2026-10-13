@@ -64,11 +64,10 @@
 //      RELEVANTE o en INGRESOS/GASTOS puede volver "relevantes" tablas de notas y de balance y multiplicar los rubros (una regla probada en la
 //      Versión 312 llevó Real Madrid de 32 a 253 rubros: eso es un error, no una mejora).
 //
-// QUIÉN LO USA: tools/pipeline.mjs (título de estado de resultados, flujo/patrimonio, lado de la tabla, totales), tools/extract-table-rows.mjs
-// (relevancia de una tabla y de sus filas), tools/filas-rubro.mjs (lado por palabras, resultados, subtotales, columna de notas) y
-// tools/proponer-carga.mjs (título de estado, totales de ingresos, resultado del ejercicio). tools/chequeos-gratis.mjs recibe `normalizar`
-// a través de filas-rubro.mjs (su `norm`); sus ACTIVO_RE / PASIVO_RE todavía son propios (ver TOTAL_ACTIVO / TOTAL_PASIVO acá, listos para
-// reemplazarlos).
+// QUIÉN LO USA: extract-table-rows.mjs (relevancia de una tabla y de sus filas), filas-rubro.mjs (lado, resultados, subtotales,
+// columna de notas), proponer-carga.mjs y cargar.mjs (título de estado, totales, resultado, financiero, impuestos), caja-deuda.mjs
+// (caja, deuda, títulos de balance), chequeos-gratis.mjs (TOTAL_ACTIVO / TOTAL_PASIVO); solo normalizar() / familia:
+// categorizar-claude, cola, memoria-categorias, padres-filas y respuestas-cache.
 // ============================================================================
 
 // ---------------------------------------------------------------- normalización (la ÚNICA del pipeline)
@@ -521,8 +520,8 @@ export const VOCABULARIO = {
     ru: ['остаток на начало', 'сальдо на начало'], uk: ['залишок на початок'], bg: ['начално салдо', 'салдо в началото'],
   },
 
-  // ---- Títulos de BALANCE (situación patrimonial). No los usa ninguna tool todavía para excluir tablas (proponer-carga.mjs tiene su propia
-  // NO_PL_RE, más amplia): quedan acá para la próxima.
+  // ---- Títulos de BALANCE (situación patrimonial). Los usa caja-deuda.mjs para encontrar el balance; para excluir tablas no
+  // (proponer-carga.mjs tiene su propia NO_PL_RE, más amplia).
   TITULO_BALANCE: {
     es: ['balance general', 'estado de situacion*', 'balance de situacion'], pt: ['balanco patrimonial', 'demonstracao da posicao financeira', 'balanco'],
     en: ['balance sheet*', 'statement* of financial position'], de: ['bilanz'], fr: ['bilan'], it: ['stato patrimoniale'], nl: ['balans'],
@@ -610,7 +609,7 @@ export function terminos(concepto, idiomas = null) {
 
 // ---------------------------------------------------------------- regex listas para las tools (sobre texto YA normalizado con normalizar())
 const T = terminos;
-// Estado de resultados por sección + columnas (pipeline.mjs isStatement, proponer-carga.mjs). El TITULO_SOLO va anclado al texto entero.
+// Estado de resultados por sección + columnas (proponer-carga.mjs). El TITULO_SOLO va anclado al texto entero.
 export const TITULO_RESULTADOS_RE = new RegExp(`${compilar(T('TITULO_RESULTADOS')).source}|${compilar(T('TITULO_SOLO'), 'entero').source}`, 'u');
 // INGRESOS_RE: lado de una fila y de una tabla (incluye INGRESOS_FILA, como el REV_W de antes). INGRESOS_TABLA_RE: solo las palabras que
 // pueden decir el lado de una tabla entera o volverla relevante.

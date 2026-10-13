@@ -130,7 +130,7 @@ const TOOLS = {
   ],
   '6': [['verificar.mjs', 'chequeos gratis; lo que no cierra va a la cola']],
   '7': [['glosar-rubros.mjs, jev-categorizar.mjs, categorizar-claude.mjs', 'precedente, Jev y Claude']],
-  '8': [['cargar.mjs', 'propuesta y escritura del año'], ['alta-club.mjs', 'club nuevo'], ['caja-deuda.mjs', 'caja y deuda, con el club ya publicado']],
+  '8': [['cargar.mjs', 'propuesta y escritura del año'], ['alta-club.mjs', 'club nuevo'], ['cargar-lote.mjs', 'la etapa 8 de una lista: altas, cargas y un commit por año'], ['caja-deuda.mjs', 'caja y deuda, con el club ya publicado']],
 };
 const ETAPA_R = new Map(R.map((e) => [e.pdf, etapaDe(e)]));
 const clave = (e) => ETAPA_R.get(e.pdf).clave;

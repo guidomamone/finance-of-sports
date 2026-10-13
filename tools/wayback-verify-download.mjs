@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Descarga + chequeo de integridad para capturas de Wayback Machine — to-do 79 (Admin/TODO.md).
+// Descarga + chequeo de integridad para capturas de Wayback Machine — to-do 79 (cerrado: Admin/Archive/CHANGELOG-v010-v299.md, Versión 252).
 //
 // El gotcha (encontrado en la sesión del 2026-09-26, ver .claude/skills/club-sourcing/SKILL.md
 // sección 0.1, familia 3): una captura de Wayback puede truncarse a EXACTAMENTE 1.048.576 bytes
@@ -18,7 +18,7 @@
 //      conocido.
 //   3. Corre `pdfinfo` sobre el archivo (si es un PDF) y confirma que reporta `Pages:` sin error.
 //      (Se lee el stdout de pdfinfo como string de Node, no se pipea a `grep` — evita el gotcha de
-//      CLAUDE.md donde bytes NUL en la metadata hacen que `grep` deje de hacer matching línea por
+//      Admin/PIPELINE.md ("Trampas de PDF y de grep") donde bytes NUL en la metadata hacen que `grep` deje de hacer matching línea por
 //      línea.)
 //   4. Confirma que el archivo termina en `%%EOF` (los últimos bytes, allowing whitespace/EOL).
 //   Si CUALQUIER chequeo falla, el script NUNCA deja el archivo corrupto en su lugar final en

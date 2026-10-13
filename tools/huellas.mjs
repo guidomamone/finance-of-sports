@@ -2,7 +2,7 @@
 // tools/huellas.mjs — "¿este resultado sigue correspondiendo a su entrada?" para la cadena de la categorización:
 //
 //     <md>.rubros.json  ->  <md>.jev.json  ->  <md>.categorias.json
-//     (pipeline.mjs)       (jev-categorizar)    (categorizar-claude)
+//     (verificar.mjs)      (jev-categorizar)    (categorizar-claude)
 //
 // POR QUÉ EXISTE (bug real, 2026-09-30, piloto C): cada etapa decidía si tenía trabajo mirando SOLO si su archivo de salida
 // existía. Esa tarde se regeneraron 438 `.rubros.json` (lado ingreso/gasto y columna de importes corregidos), pero sus `.jev.json`

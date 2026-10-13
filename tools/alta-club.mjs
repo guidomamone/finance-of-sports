@@ -15,7 +15,7 @@
 //   1. Resuelve si el club YA EXISTE en el sitio con la regla ÚNICA del proyecto,
 //      `clubDeCarpeta()` de tools/carpetas-clubes.mjs (la misma que usan onboard.mjs,
 //      inventario-transcripciones.mjs, pipeline.mjs y audit.js): (a) algún
-//      `data/<país>/<id>-data.js` cita la carpeta `Clubes/<País>/<Club>/` -> ese club; (b) si
+//      `data/<país>/<id>-data.js` o su evidencia (`Admin/carga-clubes/<id>.md`) cita la carpeta `Clubes/<País>/<Club>/` -> ese club; (b) si
 //      no, el nombre de la carpeta es IGUAL al de un club del mismo país; (c) si no,
 //      club nuevo. Hasta la Versión 309 este script tenía su propia regla (citas +
 //      `onboard.mjs --quien` + desempate por país) y onboard.mjs otra: se reemplazó
@@ -179,11 +179,11 @@
 // ----------------------------------------------------------------------------
 // Sale del commit que agregó Panathinaikos (839fea7) y del skill de onboarding §3:
 //   - `data/clubs.js`: la línea del club en `clubs{}` (única cosa centralizada).
-//   - `data/<país>/<id>-data.js`: el ESQUELETO, con la cabecera de comentario de siempre y
-//     todas las estructuras vacías (sin ejercicios: los rubros los carga la etapa de
-//     carga, `tools/proponer-carga.mjs`). El `fiscalYearMeta` propuesto va ADENTRO
-//     DE UN COMENTARIO, no registrado: un ejercicio con meta y sin rubros se vería
-//     en el sitio como un año en cero, y "sin dato no es cero".
+//   - `data/<país>/<id>-data.js`: el ESQUELETO, sin comentarios (data/ se publica), con
+//     todas las estructuras vacías (sin ejercicios: los rubros los carga `tools/cargar.mjs`).
+//     La cabecera y el `fiscalYearMeta` propuesto van a la evidencia del club
+//     (`Admin/carga-clubes/<id>.md`), no registrados: un ejercicio con meta y sin rubros se
+//     vería en el sitio como un año en cero, y "sin dato no es cero".
 //   - `data/club-leagues/<iso2>.js`: la fila (club, año) -> liga (o `null`). Si el
 //     país no tenía archivo, lo crea con la cabecera estándar.
 //   - PAÍS NUEVO: su entrada en `COUNTRIES` (`data/leagues.js`) y su nombre en
@@ -843,14 +843,14 @@ export function analizar(docArg, sitio, ov = {}) {
   const [paisCarpeta, clubCarpeta] = partes;
   r.carpeta = `Clubes/${paisCarpeta}/${clubCarpeta}/`;
   if (clubCarpeta.startsWith('_')) { r.error = `"${clubCarpeta}" es una carpeta de agregado (empieza con "_"), no un club`; return r; }
-  if (!r.md) { r.error = 'no hay .md: transcribir primero (tools/onboard.mjs --transcribe-only o mistral-ocr-transcribe.mjs)'; return r; }
+  if (!r.md) { r.error = 'no hay .md: transcribir primero (node tools/pipeline.mjs, etapa 2)'; return r; }
   const md = readFileSync(mdPath, 'utf8');
   const mdNorm = norm(md);
   const pais = PAISES[paisCarpeta];
 
   // ---------------------------------------------------------------- ¿ya existe?
   // UNA sola regla en todo el proyecto (tools/carpetas-clubes.mjs, 2026-09-30): cita en algún
-  // data/<país>/<id>-data.js -> ese club; si no, nombre IGUAL a un club del mismo país; si no, club nuevo.
+  // data/<país>/<id>-data.js o en su evidencia (Admin/carga-clubes/<id>.md) -> ese club; si no, nombre IGUAL a un club del mismo país; si no, club nuevo.
   // Hasta la Versión 309 este script tenía su propia versión (mapa de citas + `onboard.mjs --quien` +
   // desempate por país) y onboard.mjs otra distinta: dos reglas que podían dar respuestas distintas
   // para la misma carpeta. Ahora las dos (y audit.js, que vigila que la regla sea inequívoca) usan esta.

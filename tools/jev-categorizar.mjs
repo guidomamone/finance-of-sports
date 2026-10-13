@@ -14,7 +14,7 @@
 //                una integración automática aceptaría sin que nadie lo mire). Deja Admin/mediciones/test-jev-resultados.md.
 //                Muestra aleatoria (semilla fija) repartida entre categorías y clubes.
 //
-//   --listos     La etapa de producción: toma los `<md>.rubros.json` que dejó tools/pipeline.mjs (documentos `listo-para-jev`)
+//   --listos     La etapa de producción: toma los `<md>.rubros.json` que dejó tools/verificar.mjs (documentos `listo-para-jev`)
 //                y deja al lado de cada uno `<md>.jev.json` con la categoría sugerida y la confianza de cada rubro.
 //                No hay "verdad" contra qué comparar: sirve para mirar qué tan seguro está Jev en documentos nuevos.
 //
@@ -227,7 +227,7 @@ async function listos() {
   const ledger = existsSync(resolve(root, 'Admin', 'registros', 'transcripciones-estado.jsonl')) ? readFileSync(resolve(root, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l)) : [];
   // Trabajo = documentos `listo-para-jev` cuyo .jev.json falta o se hizo sobre OTRA lista de rubros (huella distinta, ver tools/huellas.mjs:
   // antes se miraba solo si el archivo existía, y 438 listas re-preparadas quedaron con categorías de la versión vieja).
-  // `--lista <archivo>`: solo esos PDFs (lo usa pipeline.mjs para que la etapa 5 toque SOLO los documentos de la corrida).
+  // `--lista <archivo>`: solo esos PDFs (lo usa lote.mjs para que la etapa 7 toque SOLO los documentos del lote).
   const lista = flagVal('--lista') ? leerLista(resolve(root, flagVal('--lista'))) : null;
   let docs = ledger.filter((e) => e.jev === 'listo-para-jev' && (!lista || lista.has(e.pdf)) && existsSync(resolve(root, derivado(e.md, '.rubros.json'))) && !jevAlDia(resolve(root, e.md)));
   if (limit > 0) docs = docs.slice(0, limit);

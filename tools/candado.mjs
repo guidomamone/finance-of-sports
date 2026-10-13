@@ -14,7 +14,8 @@
 // candado). El candado que queda es el de un proceso muerto, y la corrida siguiente lo reemplaza con el aviso de que ese proceso se cortó.
 //
 // QUIÉN LO TOMA. lote.mjs (siempre, también en el ensayo: reescribe el registro), pipeline.mjs (siempre, por lo mismo) y cargar.mjs solo con
-// --escribir (la propuesta la corre el lote como hija mientras tiene el candado). Ninguna de las tres llama a otra que lo tome.
+// --escribir (la propuesta la corre el lote como hija mientras tiene el candado). La única que llama a otra que lo toma es lote.mjs --cargar (cargar-lote.mjs ->
+// cargar.mjs --escribir): suelta el suyo antes (soltarCandado).
 // ============================================================================
 
 import { readFileSync, writeFileSync, unlinkSync } from 'node:fs';

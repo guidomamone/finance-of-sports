@@ -57,7 +57,7 @@
 // segunda fuente independiente día por día (BCE cruzado, SNB fin de mes, ČNB) —
 // ver el comentario de cada entrada para las diferencias esperables.
 //
-// ARQUITECTURA (ver to-do 91, Admin/TODO.md): esta serie completa NUNCA va a
+// ARQUITECTURA (to-do 91, ya cerrado): esta serie completa NUNCA va a
 // `data/currency-map.js` — ese archivo es eager, se baja en cada pageview del
 // sitio, y `FX_CLOSE` tiene que seguir siendo la lista CURADA y chica de
 // cotizaciones que algún club realmente usa. La serie completa vive acá, en

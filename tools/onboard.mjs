@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 // ============================================================================
+// HOY: de esta tool solo siguen vivos `--quien <pdf>` (lo llaman cargar.mjs, chequeos-gratis.mjs y proponer-carga.mjs) y
+// `--all --dry-run` (inventario-transcripciones.mjs). El pipeline es pipeline.mjs (etapa 2) + lote.mjs (3 a 8) + cargar.mjs /
+// cargar-lote.mjs; las etapas de abajo (transcribir, comparar, onboardear) no las usa nadie: to-do 218.
+//
 // tools/onboard.mjs — el UN comando que corre TODO el pipeline, pensado para
 // que Guido lo pegue en su terminal y no tenga que tocar nada more. Encadena:
 //   1. tools/mistral-ocr-transcribe.mjs        -- transcribe con Mistral

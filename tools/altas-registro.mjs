@@ -2,7 +2,7 @@
 // tools/altas-registro.mjs — el REGISTRO DE ALTAS: `Admin/registros/altas-club.jsonl`, una línea por carpeta de
 // club (`Clubes/<País>/<Club>/`) con qué haría falta para darlo de alta. Lo escribe SOLO
 // tools/alta-club.mjs (cada corrida actualiza las líneas de las carpetas que analizó); lo leen
-// `alta-club.mjs --resumen` / `--dudas` y, a futuro, `pipeline.mjs --resumen` (con `resumenAltas()`).
+// `alta-club.mjs --resumen` / `--dudas` y `pipeline.mjs --resumen` (con `resumenAltas()`).
 //
 // POR QUÉ EXISTE (pedido de Guido, 2026-09-30: "que se haga por script, porque las IA se olvidan"):
 // hasta ahora el resultado de alta-club.mjs vivía en la terminal y en un informe escrito a mano
@@ -22,7 +22,7 @@
 //     <moneda>-usd.json` de la moneda del país, `tools/club-league-reference/<iso2>.json` y
 //     `data/club-leagues/<iso2>.js` (liga);
 //   - la resolución de la regla carpeta -> club (tools/carpetas-clubes.mjs): si mañana algún
-//     data/<país>/<id>-data.js empieza a citar la carpeta, la línea pasa a `existe` sin que nadie lo pida;
+//     data/<país>/<id>-data.js o su evidencia (Admin/carga-clubes/<id>.md) empieza a citar la carpeta, la línea pasa a `existe` sin que nadie lo pida;
 //   - sha1 de tools/alta-club.mjs y tools/alta-claude.mjs: si cambian las reglas, se recalcula todo
 //     (son ~20 s para 200 carpetas, 0 llamadas a API).
 //

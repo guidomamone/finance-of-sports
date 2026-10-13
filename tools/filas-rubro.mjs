@@ -1,6 +1,6 @@
 // ============================================================================
 // tools/filas-rubro.mjs — funciones GRATIS (sin API, sin tokens) que limpian y ordenan las filas de una tabla ANTES de mandarlas a Jev.
-// Lo usan tools/pipeline.mjs (etapa 3, al armar `<md>.rubros.json`) y tools/proponer-carga.mjs (el backtest).
+// Lo usan tools/proponer-carga.mjs (el lado de cada fila) y tools/chequeos-gratis.mjs (numeroDe, norm).
 //
 // Por qué existe (piloto de 9 documentos, 2026-09-30, y análisis de los 14.246 rubros de la corrida de 50): Jev no era el problema, lo era lo que
 // se le mandaba.
@@ -19,7 +19,7 @@
 //                                          Desde el test del 2026-09-30 combina estructura > posición > palabras (ver más abajo los números).
 //   ladoPorPalabras(etiqueta)           -> lado por las palabras de la etiqueta (impuestos = gasto; deducciones de la receita = ingreso).
 //   esResultado(etiqueta)               -> la etiqueta es un resultado/margen en cualquier parte ("Profit/(loss) before...", "Gewinn vor Steuern").
-//   columnaDeImportes(cols, filas, año) -> la columna de importes, sin confundirla con la de "Notas" (para que pipeline.mjs la adopte).
+//   columnaDeImportes(cols, filas, año) -> la columna de importes, sin confundirla con la de "Notas" (hoy no la usa ninguna tool).
 //   REV_W / EXP_W                       -> palabras de ingreso / gasto en 29 idiomas (INGRESOS_RE / GASTOS_RE de tools/vocabulario.mjs).
 //   norm(t)                             -> la normalización ÚNICA del pipeline (normalizar() de tools/vocabulario.mjs; la usa también chequeos-gratis).
 //
@@ -168,9 +168,9 @@ export function ladosPorEstructura(filas, orden = ['estructura', 'posicion', 'pa
   return filas.map((_, i) => { for (const o of orden) { const s = reglas[o](i); if (s) return s; } return null; });
 }
 
-// Columna de IMPORTES de una tabla del briefing (para que tools/pipeline.mjs la use en vez de "la primera columna con números en el 40% de
-// las filas", que en Alverca y Fluminense es la columna "Notas" -> 9, 15, "7/8" leído 78, "17.2.3"...). No se usa todavía desde pipeline.mjs
-// (esta sesión no podía editarlo): ver Admin/mediciones/test-eleccion-tabla.md, "Lo que queda sin resolver".
+// Columna de IMPORTES de una tabla del briefing (en vez de "la primera columna con números en el 40% de las filas", que en Alverca y
+// Fluminense es la columna "Notas" -> 9, 15, "7/8" leído 78, "17.2.3"...). No la usa ninguna tool: pipeline.mjs ya no arma la lista de
+// rubros. Ver Admin/mediciones/test-eleccion-tabla.md, "Lo que queda sin resolver".
 //   1. si un encabezado dice el año del ejercicio (2024, 2023/24, 30/06/2024), esa columna;
 //   2. si no, la primera columna con números en el 40% de las filas cuyo encabezado NO es de notas y cuyos valores no son todos enteros chicos.
 export function columnaDeImportes(columns, rows, year) {

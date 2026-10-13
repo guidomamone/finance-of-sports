@@ -10,7 +10,7 @@
 //
 // USO:
 //   node tools/glosar-rubros.mjs <ruta/al/archivo.rubros.json> [...]      glosa esos documentos (los que ya la tienen se saltean)
-//   node tools/glosar-rubros.mjs --listos                                  glosa todos los `.rubros.json` sin glosa cuyo `.jev.json` todavía no existe
+//   node tools/glosar-rubros.mjs --listos [--lista <archivo>]              glosa los `.rubros.json` de Generados/ sin glosa (con --lista, solo esos PDFs)
 // Necesita Admin/api-keys/gemini.env (el mismo de gemini-transcribe.mjs).
 // ============================================================================
 

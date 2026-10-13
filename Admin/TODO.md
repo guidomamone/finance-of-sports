@@ -137,12 +137,15 @@ ni en el comentario de ningún archivo de código.
     y el commit de cada año. Si algo sale mal, el lugar es `tools/evidencia-club.mjs` y `Admin/PIPELINE.md`, "Dónde queda la evidencia" (etapa 8).
 
 218. SACAR LAS ETAPAS VIEJAS DE `tools/onboard.mjs` Y ARCHIVAR `tools/prepare-onboarding.mjs` (limpieza de código). `onboard.mjs` era el comando
-    único del pipeline anterior a `lote.mjs`; hoy solo viven dos funciones suyas: `--quien` (qué club y año es un PDF; lo llama
-    `cargar.mjs`) y `--all --dry-run` (qué está cargado; lo llama `inventario-transcripciones.mjs`). Las etapas transcribir / comparar con
-    Gemini / onboardear (`--transcribe-only`, `--check-only`, la etapa `onboard`) ya no las usa nadie y son las únicas que llaman a
-    `prepare-onboarding.mjs` (más un `statSync` de su fecha en `proponer-carga.mjs`, ~línea 701). Separar las dos funciones vivas (en
-    `onboard.mjs` o en una tool chica nueva), borrar las etapas viejas, archivar `prepare-onboarding.mjs` en `tools/archivo/` y medir que
-    el registro salga idéntico (`node tools/estado.mjs --actualizar` antes y después, `diff` de `Admin/registros/transcripciones-estado.jsonl`)
-    y que `cargar.mjs` resuelva igual cada PDF (ensayo de `cargar-lote.mjs` y de `lote.mjs --lista Admin/lotes/prueba-completa.txt`).
+    único del pipeline anterior a `lote.mjs`; hoy solo viven dos funciones suyas: `--quien` (qué club y año es un PDF; lo llaman
+    `cargar.mjs`, `chequeos-gratis.mjs` -desde la etapa 2- y `proponer-carga.mjs`) y `--all --dry-run` (qué está cargado; lo llama
+    `inventario-transcripciones.mjs`). Las etapas transcribir / comparar con Gemini / onboardear (`--transcribe-only`, `--check-only`, la
+    etapa `onboard`) ya no las usa nadie. `prepare-onboarding.mjs` todavía tiene dos usuarios además de esas etapas: `briefingFor()` de
+    `proponer-carga.mjs` (lo usa `cargar.mjs` solo SIN `--desde-verificacion`, que el lote y `cargar-lote` siempre pasan; y `--backtest` /
+    `--pdf`) y `tieScore()` de `resolver-inventario.mjs`, que ya nadie llama (código muerto). Orden: (a) borrar `tieScore()`; (b) decidir
+    con Guido si el camino de `cargar.mjs` sin `--desde-verificacion` y el backtest de `proponer-carga.mjs` siguen haciendo falta, y si no,
+    sacarlos; (c) separar `--quien` y `--all --dry-run` (en `onboard.mjs` o en una tool chica nueva) y borrar las etapas viejas; (d) archivar
+    `prepare-onboarding.mjs` en `tools/archivo/`. Medir antes y después: `node tools/estado.mjs --actualizar` y `diff` de
+    `Admin/registros/transcripciones-estado.jsonl`; ensayos de `cargar-lote.mjs` y de `lote.mjs --lista Admin/lotes/prueba-completa.txt`.
     `suggest-category-precedent.mjs`, `sum-check.mjs`, `extract-table-rows.mjs` y `compare-transcripts.mjs` NO se archivan: las usan la skill
-    `club-data-mapping` y `inventario-transcripciones.mjs`.
+    `club-data-mapping` e `inventario-transcripciones.mjs`.
