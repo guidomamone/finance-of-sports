@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 686 — Perímetro sin preguntar (to-do 225) (2026-10-13)
+
+- `perimetro-senales.mjs`, regla del club: un ejercicio publicado con un solo perímetro se carga con ese (ajuste del documento); el del club
+  sale de los votos o del único perímetro de la serie; sin votos y con los dos (Aris), uno por documento. Frena solo si los votos chocan.
+  Regla escrita en `Admin/CONVENCIONES-DATOS.md`.
+- Paso A2 (Claude) para documentos en idiomas que el paso A no reconoce: cinco criterios con peso (título 4, texto 4, auditor 1, grupo 1,
+  portada 1; 4 o más consolidado, 0 a 2 individual) y cola si la tabla trae columnas de los dos perímetros. Medido en 75 documentos de 15
+  clubes con subagentes de la sesión (`--exportar-a2`), sin API: 46 bien, 0 errores de A2.
+- To-dos nuevos 226 (ajustes de perímetro que no coinciden con el documento) y 227 (auditoría a posteriori de A2).
+
 ## Versión 685 — Grecia casi completa, la cola sin Guido, escalones de notas y Covid (2026-10-13)
 
 - Cargados Asteras 2021-2025, Panserraikos 2023 y 2025, Volos 2019-2025 y AEK 2021-2023 y 2025; cola contestada por subagentes con cita.

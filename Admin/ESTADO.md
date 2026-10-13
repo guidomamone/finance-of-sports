@@ -58,7 +58,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   `verificar.mjs` y la categorización es la etapa 7 del lote.
 - Perímetro del club por señales (`tools/perimetro-senales.mjs`): antes de la compuerta de la etapa 3, `lote.mjs` fija solo el ajuste
   `perimetro` de un club nuevo cuando sus documentos coinciden (tablas de cada perímetro y voto con Jev); si la serie cambia de perímetro,
-  frena y decide Guido. Reconoce títulos en italiano e inglés; en otros idiomas no decide (frena).
+  no frena: un ejercicio con un solo perímetro se carga con ese (regla en `Admin/CONVENCIONES-DATOS.md`). Reconoce títulos en italiano e
+  inglés; en otros idiomas decide el paso A2 (Claude, cinco criterios con peso). Frena solo si los votos de dos ejercicios chocan.
 - Qué hay cargado de cada club (ejercicios, tipo de documento, moneda, deuda y caja): `Admin/ESTADO-clubes.md`, generado por
   `node tools/generate-club-index.js`. El detalle de cada año (fuente, qué es real y qué no) está en la evidencia del club, `Admin/carga-clubes/<clubId>.md`.
 - Brasil, Italia y Rusia se cargaron por el pipeline (Rusia por su camino propio); en los documentos italianos viejos quedan ajustes

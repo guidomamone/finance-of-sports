@@ -114,16 +114,24 @@ Mitigaciones:
 ```
  PASO A (gratis)  por documento: ¿qué estados trae COMO TABLA? (fila del total de ingresos + el título de arriba que nombra un perímetro;
                   un "Conto economico" hereda el de su sección; "Financial statements at..." sin perímetro = individual)
-                  solo uno → ese (si no hay un título del otro perímetro con tabla) · los dos → PASO B · nada → no decide
+                  solo uno → ese (si no hay un título del otro perímetro con tabla) · los dos → PASO B · nada → PASO A2
+ PASO A2 (Claude) solo si el paso A no encontró ninguna tabla (otro idioma: griego, noruego...): la portada y los títulos del documento
+                  con su línea y su primer texto → Claude ubica el estado de resultados y vota cinco criterios ("¿esto dice consolidado?"),
+                  cada sí con su línea: título del estado o de su sección 4 · texto del estado 4 · auditor 1 · grupo 1 · portada 1.
+                  Compuerta: la línea citada existe en lo mandado. 4 o más → consolidado · 0 a 2 → individual · 3 → cola; columnas o
+                  estados de los dos perímetros → cola. Solo al ejecutar (~US$ 0,02 por documento; caché Generados/_cache/claude-perimetro.jsonl).
+                  Medición: Admin/mediciones/perimetro-a2-medicion.txt (75 documentos, 15 clubes); --exportar-a2 arma los pedidos para medir
+                  sin API (los contestan subagentes de la sesión y se agregan a la caché)
  PASO B (voto)    C1 consolidado ≥ 5% sobre individual (año o anterior) · C2 crecimientos distintos en ≥ 15 puntos (fusión) ·
                   C3 Jev: ¿una controlada hace negocio del fútbol? ── 2-3 → consolidado · 0 → individual · 1 o sin respuesta → no decide
- CLUB             fija el ajuste del club (autor "perimetro-senales") si los votos coinciden y ningún ejercicio tiene SOLO el otro
-                  perímetro; si no (cambio de perímetro en la serie, Parma), frena como siempre y decide Guido
+ CLUB             la regla de Admin/CONVENCIONES-DATOS.md ("qué perímetro se carga cuando la serie cambia"): un ejercicio con un solo
+                  perímetro lleva ese (ajuste del documento si no es el del club); el del club sale de los votos o, sin votos, del único
+                  perímetro de la serie; sin votos y con los dos en la serie (Aris), uno por documento. Frena solo si los votos no coinciden
 ```
 
-  En el ensayo no pregunta a Jev ni escribe: dice qué fijaría. Medido contra `Admin/mediciones/perimetro-verdad.tsv` (12 clubes italianos +
+  En el ensayo no pregunta a Jev ni a Claude ni escribe: dice qué fijaría. Medido contra `Admin/mediciones/perimetro-verdad.tsv` (12 clubes italianos +
   Juventus y Novorizontino de control): 77 bien, 0 mal, 23 sin decidir; sobre los 517 documentos cargados no propone nada distinto de lo
-  cargado (fuera de Italia no decide: reconoce títulos en italiano e inglés). Lote 14: de 29 documentos frenados a 0.
+  cargado. Lote 14: de 29 documentos frenados a 0. Con A2, la verdad da 91 bien, 0 mal, 9 sin decidir (Admin/mediciones/perimetro-a2-verdad.txt).
 
 - f) **Escalera** (es el reintento del camino de error):
 

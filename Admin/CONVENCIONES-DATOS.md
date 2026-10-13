@@ -301,3 +301,19 @@ UN COMPARATIVO REEXPRESADO NO ES LA TRANSCRIPCIÓN DEL AÑO (Versión 610, Saler
 primer nivel de la columna de ese año en el documento del año siguiente, sin sub-filas, si cierra con el resultado impreso. Hay que dejar escrito en `.filas.json` (`observaciones`) de dónde sale, y en
 `Admin/dudas-por-club.md` la pregunta al club por una copia legible. El comparativo puede estar reclasificado entre rubros de costos (Salernitana: servicios externos y otros gastos, misma suma).
 
+
+## REGLA: qué perímetro (individual o consolidado) se carga cuando la serie de un club cambia de perímetro
+
+Se decide por ejercicio, sin preguntar, y la aplica `tools/perimetro-senales.mjs` antes de localizar (escribe ajustes `perimetro`):
+
+1. **Un ejercicio que el club publicó con un solo perímetro se carga con ese**, porque no hay otro. Si no es el del club, lleva un ajuste
+   de ese documento. Casos: Parma (individual) con 2022 y 2025 solo consolidados; Fiorentina 2019 solo consolidado; Lazio en liras (club
+   consolidado) con 1998-99 a 2000-01 solo individuales.
+2. **El perímetro del club** sale de los ejercicios que traen los dos estados (el voto de `perimetro-senales.mjs`: si las controladas
+   hacen negocio del fútbol del club, consolidado; si no, individual). Sin ningún ejercicio con los dos, es el único perímetro de todos
+   los ejercicios, si hay uno solo.
+3. **Si ningún ejercicio trae los dos y la serie tiene de los dos perímetros**, no hay perímetro del club: cada documento lleva el suyo.
+   Caso: Aris, individual en 2019 y 2021 (ELP de la sociedad, filial de otra) y solo consolidado en 2023 a 2025.
+
+Lo único que frena es que dos ejercicios que traen los dos estados voten distinto. El perímetro de cada ejercicio queda en la evidencia
+del club (`Admin/carga-clubes/<clubId>.md`); la página muestra el documento fuente de cada año.

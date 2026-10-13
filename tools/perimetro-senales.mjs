@@ -18,9 +18,12 @@
 //                   "separato", "individual"...). Títulos sin perímetro ("Fatti di rilievo...") se saltean.
 //                     solo tablas consolidadas, y ningún título individual de estado en el documento → consolidado
 //                     solo tablas individuales (o sin etiqueta), y ningún título consolidado de estado     → individual
-//                     sin tablas de total de ingresos                                                       → cola
+//                     sin tablas de total de ingresos                                                       → PASO A2
 //                     tablas de los dos                                                                     → PASO B
 //                     (un título del otro perímetro sin su tabla —por ejemplo la tabla no se reconoció— → cola, no decide)
+//  PASO A2 (Claude) El paso A reconoce italiano e inglés. Sin ninguna tabla reconocida (Aris, en griego), Claude ubica el estado de
+//                   resultados y vota cinco criterios con peso (título 4, texto del estado 4, auditor 1, grupo 1, portada 1), cada sí con su
+//                   línea: 4 o más → consolidado · 0 a 2 → individual · 3 → cola; con columnas o estados de los dos perímetros → cola. Pago: solo con --jev / al ejecutar.
 //  PASO B (voto)    Tres criterios, uno por voto:
 //                     C1 (gratis) los ingresos consolidados superan a los individuales en 5% o más, en el año o en el anterior
 //                        (las controladas tienen negocio propio: Roma, Lazio). Escala: miles vs unidades se normaliza.
@@ -33,7 +36,10 @@
 //   node tools/perimetro-senales.mjs --verdad Admin/mediciones/perimetro-verdad.tsv          # ensayo: pasos A y B sin Jev (C3 = "?")
 //   node tools/perimetro-senales.mjs --verdad Admin/mediciones/perimetro-verdad.tsv --jev    # con Jev (~US$ 0,0001 por documento)
 //   node tools/perimetro-senales.mjs --lista Admin/lotes/lote-NN.txt [--jev]                  # sin verdad: solo la propuesta
+//   node tools/perimetro-senales.mjs --lista Admin/mediciones/perimetro-a2-lista.txt --jev   # medición del paso A2 (clubes con ajuste, otro idioma)
 //   node tools/perimetro-senales.mjs --md "Clubes/Italia/AC Milan/x.md" --detalle      # un documento, con cada tabla encontrada
+//   node tools/perimetro-senales.mjs --md "Clubes/Grecia/Aris/x.md" --ver-a2           # el texto que recibiría Claude en A2 (gratis)
+//   node tools/perimetro-senales.mjs --lista <txt> --exportar-a2 <carpeta>             # los pedidos de A2 sin caché, para contestarlos sin API
 // Jev: Admin/api-keys/jev.env con JEV_API_KEY=...; respuestas guardadas en Generados/_cache/jev-perimetro.jsonl (no se paga dos veces).
 // ============================================================================
 import { readFileSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
@@ -104,6 +110,19 @@ function perimetroDeLinea(lineas, i) {
   return { per: null, titulo: null };
 }
 
+// Títulos con perímetro y una tabla con números debajo, aunque no se haya reconocido el total de ingresos de esa tabla. Cuenta solo si entre
+// el título y el siguiente (hasta 60 líneas) hay 5 o más filas de tabla con números: Monza 2022 tiene un título "Bilancio consolidato" que es
+// un párrafo sobre el consolidado de Fininvest, sin tabla. Devuelve esas filas (la usa también el paso A2, para mostrarle a Claude la tabla).
+function filasConNumeros(lineas, k) {
+  const filas = [];
+  for (let j = k + 1; j < Math.min(lineas.length, k + 61); j++) {
+    const x = lineas[j];
+    if (esTitulo(x, lineas[j - 1], lineas[j + 1]) && !x.trim().startsWith('|')) break; // la tabla tiene que ser de ESTE título, no del siguiente
+    if (x.trim().startsWith('|') && x.split('|').some((c) => numeroCelda(c) !== null)) filas.push(j);
+  }
+  return filas;
+}
+
 export function tablasDeIngresos(md) {
   const lineas = md.split('\n');
   const out = [];
@@ -120,18 +139,7 @@ export function tablasDeIngresos(md) {
     const { per, titulo } = perimetroDeLinea(lineas, i);
     out.push({ linea: i + 1, rango: hit[0], etiqueta: etiqueta.slice(0, 60), actual: nums[0], anterior: nums.length > 1 ? nums[1] : null, per, titulo });
   });
-  // Títulos con perímetro y una tabla con números debajo, aunque no se haya reconocido el total de ingresos de esa tabla. Cuenta solo si entre
-  // el título y el siguiente (hasta 60 líneas) hay 5 o más filas de tabla con números: Monza 2022 tiene un título "Bilancio consolidato" que es
-  // un párrafo sobre el consolidado de Fininvest, sin tabla.
-  const conTabla = (k) => {
-    let n = 0;
-    for (let j = k + 1; j < Math.min(lineas.length, k + 61); j++) {
-      const x = lineas[j];
-      if (esTitulo(x, lineas[j - 1], lineas[j + 1]) && !x.trim().startsWith('|')) break; // la tabla tiene que ser de ESTE título, no del siguiente
-      if (x.trim().startsWith('|') && x.split('|').some((c) => numeroCelda(c) !== null)) n++;
-    }
-    return n >= 5;
-  };
+  const conTabla = (k) => filasConNumeros(lineas, k).length >= 5;
   const titulos = { consolidado: 0, individual: 0 };
   lineas.forEach((l, k) => {
     // No hace falta que diga "conto economico": un resumen con perímetro también prueba que esos números existen (AS Roma 2025: el
@@ -221,6 +229,115 @@ async function preguntarJev(texto) {
   return { error: 'reintentos agotados' };
 }
 
+// ---------------------------------------------------------------- PASO A2: Claude, cuando el paso A no reconoce el idioma
+// El paso A reconoce títulos y totales en italiano e inglés. En otro idioma (Aris, en griego: "ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ
+// ΚΑΤΑΣΤΑΣΕΙΣ" arriba de "I. Κατάσταση Αποτελεσμάτων") no encuentra ninguna tabla. En vez de sumar palabras de cada idioma, una llamada a
+// Claude con lo que el documento dice de sí mismo: la portada (primeras líneas), los TÍTULOS con su número de línea y su primer texto y, en
+// los que tienen una tabla con números debajo, los primeros renglones de la tabla.
+// Claude ubica el estado de resultados y contesta CINCO criterios de sí o no ("¿esto dice que el estado es consolidado?"), cada sí con la
+// línea que lo dice. Los criterios no valen lo mismo (PESOS_A2): lo que nombra o describe el estado mismo pesa más que lo que puede hablar de
+// otra cosa (el grupo dueño del club, un membrete).
+//   titulo   (4) el título del estado, o el título o el texto de introducción de su sección (Aris: "ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ
+//                ΚΑΤΑΣΤΑΣΕΙΣ")
+//   texto    (4) el texto entre el título y la tabla, o el que explica cómo se presentan las cifras del estado (Rapid Wien: "Die
+//                konsolidierte Gewinn- und Verlustrechnung..."; 2019-20, en las explicaciones: "Bei allen Finanzdaten ... konsolidierte")
+//   auditor  (1) el informe del auditor es sobre estados consolidados
+//   grupo    (1) una sección sobre la estructura del grupo o las controladas que se consolidan (puede ser del grupo dueño: Aris 2021, nota 17)
+//   portada  (1) la portada o el encabezado (puede ser un membrete de una sola sociedad: Ferroviária, "CONSOLIDADO")
+// COMPUERTA (la misma para todos los criterios): un sí cuenta solo si su línea es una de las que se le mandaron (titulo: un título arriba de
+// la tabla del estado, o el texto debajo de uno de esos títulos; texto, auditor y grupo: un texto o título de los mandados; portada: la
+// portada). El estado tiene que ser un título con tabla.
+//   puntos >= UMBRAL_A2_CONS (4) → consolidado · <= UMBRAL_A2_IND (2) → individual · 3 → cola. Las tres pistas débiles suman 3 como
+//   máximo: sin el título o el texto del estado nunca sale consolidado (OB 2021: auditor + grupo, con los pesos 2 y 1 y umbral 3, salía
+//   consolidado y es individual). Medido en Admin/mediciones/perimetro-a2-medicion.txt (75 documentos de 15 clubes fuera de Italia): 46 bien,
+//   0 errores de A2 (los 2 que no coinciden son de Trabzonspor, donde el ajuste del club está mal: to-do 226).
+// Si Claude dice que el documento trae además un estado de resultados del otro perímetro, o que la tabla del estado trae columnas de los
+// dos (OB: "Koncern" y "Moderselskab" en la misma tabla) → cola: no hay totales reconocidos para el paso B, y el perímetro del club decide. Los pesos y umbrales se ajustan midiendo (Admin/mediciones/perimetro-a2-*.txt), nunca por un caso suelto.
+// Respuestas guardadas en Generados/_cache/claude-perimetro.jsonl (no se paga dos veces). ~US$ 0,02 por documento (Opus, esfuerzo bajo).
+export const PESOS_A2 = { titulo: 4, texto: 4, auditor: 1, grupo: 1, portada: 1 };
+export const UMBRAL_A2_CONS = 4;
+export const UMBRAL_A2_IND = 2;
+const CACHE_A2 = resolve(ROOT, 'Generados', '_cache', 'claude-perimetro.jsonl');
+let cacheA2 = null;
+function titulosDelDocumento(lineas) {
+  const out = [];
+  lineas.forEach((l, k) => {
+    if (!esTitulo(l, lineas[k - 1], lineas[k + 1]) || l.trim().startsWith('|')) return; // "--- pág. N ---" cuenta: Novorizontino 2017 cuelga su tabla de ahí
+    const filas = filasConNumeros(lineas, k);
+    const tabla = filas.length >= 5
+      ? filas.slice(0, 4).map((j) => limpiar(lineas[j].split('|').slice(1, -1).find((c) => /\p{L}{3}/u.test(c)) || '').slice(0, 60)).filter(Boolean)
+      : null;
+    // El texto debajo del título (tres líneas como máximo, sin imágenes, hasta la tabla o el título siguiente): Rapid 2019-20 dice el perímetro en la
+    // introducción de la sección ("Bei allen Finanzdaten handelt es sich ... um die konsolidierte Betrachtung") y el auditor en un párrafo.
+    const texto = [];
+    for (let j = k + 1; j < Math.min(lineas.length, tabla ? filas[0] : k + 40) && texto.length < 3; j++) {
+      if (!lineas[j].trim().startsWith('|') && esTitulo(lineas[j], lineas[j - 1], lineas[j + 1])) break;
+      const x = limpiar(lineas[j]); if (x && !lineas[j].trim().startsWith('|') && !/^-+\s*pág/i.test(x) && !/^!\[/.test(x)) texto.push({ linea: j + 1, texto: x.slice(0, 200) });
+    }
+    out.push({ linea: k + 1, titulo: limpiar(l).slice(0, 100), tabla, texto, inicioTabla: tabla ? filas[0] + 1 : null });
+  });
+  return out;
+}
+function portadaDelDocumento(lineas) {
+  const out = [];
+  for (let k = 0; k < lineas.length && out.length < 15; k++) { const x = limpiar(lineas[k]); if (x && !lineas[k].trim().startsWith('|') && !/^-+\s*pág/i.test(x) && !/^!\[/.test(x)) out.push({ linea: k + 1, texto: x.slice(0, 150) }); }
+  return out;
+}
+const textoA2 = (tit, portada) => `PORTADA (primeras líneas):\n${portada.map((p) => `L${p.linea}: ${p.texto}`).join('\n')}\n\nTÍTULOS:\n`
+  + tit.slice(0, 400).map((t) => `L${t.linea}: ${t.titulo}${t.tabla ? `  [tabla: ${t.tabla.join(' / ')}]` : ''}${t.texto.length ? `\n    texto${t.tabla ? ' antes de la tabla' : ''}: ${t.texto.map((x) => `L${x.linea}: ${x.texto}`).join(' | ')}` : ''}`).join('\n');
+const CRITERIO = { type: 'object', additionalProperties: false, required: ['si', 'linea'], properties: { si: { type: 'boolean' }, linea: { type: ['integer', 'null'] } } };
+const ESQUEMA_A2 = {
+  type: 'object', additionalProperties: false, required: ['linea_estado', 'linea_otro_estado', 'columnas_de_los_dos', 'criterios'],
+  properties: {
+    linea_estado: { type: ['integer', 'null'] }, linea_otro_estado: { type: ['integer', 'null'] }, columnas_de_los_dos: { type: 'boolean' },
+    criterios: { type: 'object', additionalProperties: false, required: Object.keys(PESOS_A2), properties: Object.fromEntries(Object.keys(PESOS_A2).map((k) => [k, CRITERIO])) },
+  },
+};
+const SISTEMA_A2 = `Recibís la portada (primeras líneas) y los títulos de un documento contable de un club de fútbol (transcripción a Markdown), en orden, con su número de línea. Debajo de cada título va su primer texto; a los títulos que tienen una tabla con números debajo se les agregan los primeros renglones de esa tabla (y el texto es el que hay entre el título y la tabla).
+1. linea_estado: la línea del título del ESTADO DE RESULTADOS (cuenta de pérdidas y ganancias, income statement) del ejercicio; tiene que ser un título con tabla. null si no hay ninguno. No cuentes notas, resúmenes ni tablas de la memoria.
+2. linea_otro_estado: si el documento trae además OTRO estado de resultados de distinto perímetro (uno del grupo y otro de la sociedad sola), la línea de su título; si no, null.
+3. columnas_de_los_dos: true si la tabla del estado de linea_estado trae columnas de los dos perímetros a la vez (por ejemplo "grupo" y "sociedad", "Koncern" y "Moderselskab", "consolidado" e "individual"); si no, false.
+4. criterios: para cada uno, si=true solo si esa parte del documento dice que el estado de linea_estado es CONSOLIDADO (incluye a la sociedad y a sus controladas: el grupo), con la línea exacta que lo dice; si=false (y linea null) si no lo dice o no existe.
+   - titulo: el título del estado, o el título o el texto de introducción de su sección (más arriba), dice consolidado / del grupo.
+   - texto: el texto entre el título del estado y su tabla, o el texto que explica cómo se presentan las cifras de ese estado, dice consolidado / del grupo.
+   - auditor: el informe del auditor (un título o un texto suyo) dice que auditó estados consolidados.
+   - grupo: hay una sección sobre la estructura del grupo o las controladas que entran en la consolidación de ESTA sociedad (no la del grupo dueño del que la sociedad es filial).
+   - portada: la portada o el encabezado dice consolidado.
+   La palabra "consolidado" sola en un membrete de una sola sociedad (un sistema contable que junta sus centros de costo) no prueba un estado consolidado: contala solo en portada.`;
+async function pasoA2(mdRel, lineas) {
+  const tit = titulosDelDocumento(lineas);
+  if (!tit.some((t) => t.tabla)) return { motivo: 'ningún título con tabla' };
+  const portada = portadaDelDocumento(lineas);
+  const user = textoA2(tit, portada);
+  const clave = createHash('sha1').update(JSON.stringify([SISTEMA_A2, user])).digest('hex');
+  if (!cacheA2) { cacheA2 = new Map(); if (existsSync(CACHE_A2)) for (const l of readFileSync(CACHE_A2, 'utf8').split('\n')) { if (!l.trim()) continue; try { const j = JSON.parse(l); cacheA2.set(j.clave, j); } catch { /* línea rota */ } } }
+  let datos = cacheA2.get(clave)?.datos;
+  if (!datos) {
+    const { llamarClaude } = await import('./claude-llamada.mjs');
+    const r = await llamarClaude({ system: SISTEMA_A2, user, schema: ESQUEMA_A2, tarea: 'perimetro-a2', pdf: mdRel.replace(/\.md$/, '.pdf'), maxTokens: 2000 });
+    if (r.error) return { error: r.error };
+    datos = r.datos;
+    mkdirSync(dirname(CACHE_A2), { recursive: true }); appendFileSync(CACHE_A2, JSON.stringify({ clave, md: mdRel, datos }) + '\n'); cacheA2.set(clave, { datos });
+  }
+  // La compuerta.
+  const est = tit.find((t) => t.tabla && t.linea === datos.linea_estado);
+  if (!est) return { motivo: datos.linea_estado == null ? 'Claude no encontró ningún estado de resultados' : `L${datos.linea_estado} no es un título con tabla` };
+  // El otro estado cuenta aunque su tabla no se haya reconocido (FC Groningen 2024-25: el individual de la Beheer B.V. sin tabla marcada).
+  const otro = tit.find((t) => t.linea === datos.linea_otro_estado && t.linea !== est.linea);
+  const titulosArriba = new Set(tit.filter((t) => t.linea <= est.linea).flatMap((t) => [t.linea, ...(t.linea < est.linea ? t.texto.map((x) => x.linea) : [])]));
+  const enviadas = new Set([...tit.map((t) => t.linea), ...tit.flatMap((t) => t.texto.map((x) => x.linea)), ...portada.map((p) => p.linea)]);
+  const textos = new Set(tit.flatMap((t) => t.texto.map((x) => x.linea)));
+  const valida = { titulo: (l) => titulosArriba.has(l), texto: (l) => textos.has(l), auditor: (l) => enviadas.has(l), grupo: (l) => enviadas.has(l), portada: (l) => portada.some((p) => p.linea === l) };
+  const votos = {}; let puntos = 0;
+  for (const [k, peso] of Object.entries(PESOS_A2)) {
+    const c = datos.criterios?.[k] || {};
+    const si = !!c.si && c.linea != null && valida[k](c.linea);
+    votos[k] = { si, linea: c.linea ?? null, rechazado: !!c.si && !si };
+    if (si) puntos += peso;
+  }
+  return { estado: est.linea, otro: otro?.linea ?? null, columnasDeLosDos: !!datos.columnas_de_los_dos, votos, puntos };
+}
+
 // ---------------------------------------------------------------- la propuesta de un documento
 export async function proponer(mdRel, { jev = false } = {}) {
   const md = readFileSync(resolve(ROOT, mdRel), 'utf8');
@@ -228,7 +345,21 @@ export async function proponer(mdRel, { jev = false } = {}) {
   const cons = tablas.filter((t) => t.per === 'consolidado');
   const ind = tablas.filter((t) => t.per !== 'consolidado'); // sin etiqueta cuenta como individual (el estado de una sola entidad)
   const r = { md: mdRel, tablas, titulos, pasoA: null, c1: null, c2: null, c3: null, propuesta: null, motivo: '' };
-  if (!tablas.length) { r.pasoA = 'sin-tablas'; r.motivo = 'no encontré ninguna tabla con el total de ingresos'; return r; }
+  if (!tablas.length) {
+    r.pasoA = 'sin-tablas'; r.motivo = 'no encontré ninguna tabla con el total de ingresos';
+    // PASO A2 (Claude; pago, así que solo al ejecutar: en el ensayo queda pendiente).
+    if (!jev) { r.a2 = { pendiente: true }; return r; }
+    const a = await pasoA2(mdRel, md.split('\n')); r.a2 = a;
+    if (a.error) { r.motivo += `; A2 falló (${a.error})`; return r; }
+    if (a.estado == null) { r.motivo += `; A2: ${a.motivo}`; return r; }
+    const v = Object.entries(a.votos).map(([k, x]) => `${k} ${x.si ? `sí L${x.linea}` : x.rechazado ? `rechazado L${x.linea}` : 'no'}`).join(', ');
+    if (a.otro != null || a.columnasDeLosDos) { r.pasoA = 'a2-los-dos'; r.motivo = `A2 (Claude): estado L${a.estado} ${a.otro != null ? `y otro de distinto perímetro L${a.otro}` : 'con columnas de los dos perímetros'}, sin totales reconocidos para votar`; return r; }
+    const base = `A2 (Claude) estado L${a.estado}, ${a.puntos} de 10 puntos (${v})`;
+    if (a.puntos >= UMBRAL_A2_CONS) { r.pasoA = 'solo-consolidado'; r.propuesta = 'consolidado'; r.motivo = base; }
+    else if (a.puntos <= UMBRAL_A2_IND) { r.pasoA = 'solo-individual'; r.propuesta = 'individual'; r.motivo = base; }
+    else r.motivo = `${base}: a la cola`;
+    return r;
+  }
   if (cons.length && !ind.length) {
     if (titulos.individual) { r.pasoA = 'dudoso'; r.motivo = `solo tablas consolidadas, pero hay ${titulos.individual} título(s) de estado individual sin tabla reconocida`; return r; }
     r.pasoA = 'solo-consolidado'; r.propuesta = 'consolidado'; r.motivo = `solo tablas consolidadas (${cons.length})`; return r;
@@ -271,16 +402,22 @@ export async function proponer(mdRel, { jev = false } = {}) {
 }
 
 // ---------------------------------------------------------------- LA REGLA DEL CLUB (lo que usa el pipeline)
-// El ajuste `perimetro` se fija por CLUB (Admin/registros/ajustes-manuales.jsonl), pero la propuesta es por documento. Se miran TODOS los .md del club
-// (no solo los de la lista), agrupados por ejercicio (cierre del registro):
-//   - de cada ejercicio, qué perímetros HAY: "solo uno" (paso A) o los dos (dos documentos del mismo cierre, o uno con los dos);
+// La propuesta es por documento; el ajuste `perimetro` (Admin/registros/ajustes-manuales.jsonl) puede ser del CLUB (la carpeta) o de UN documento.
+// Se miran TODOS los .md del club (no solo los de la lista), agrupados por ejercicio (cierre del registro):
+//   - de cada ejercicio, qué perímetros HAY: "solo uno" (paso A o A2) o los dos (dos documentos del mismo cierre, o uno con los dos);
 //   - los votos: lo que eligió el paso B en los documentos que traen los dos.
-// Se fija solo si: los votos coinciden entre sí, y ningún ejercicio tiene SOLO el otro perímetro. Sin votos, vale el perímetro único de
-// todos los ejercicios. Si algún ejercicio tiene solo el otro perímetro (un cambio de perímetro en la serie: Parma, individual 2018-2024 y
-// solo consolidado 2022 y 2025), NO se fija: frena la compuerta de siempre y Guido decide. Un documento que no decide (cola) no cuenta.
-//   ejecutar = true: pregunta a Jev lo que haga falta y ESCRIBE el ajuste del club (autor "perimetro-senales").
-//   ejecutar = false (ensayo): sin Jev ni escritura; dice qué fijaría, o que lo decide Jev al ejecutar.
+// LA REGLA (Admin/CONVENCIONES-DATOS.md, "Perímetro"; es la que Guido aplicó caso por caso: Parma, Fiorentina 2019, Lazio en liras):
+//   1. Un ejercicio que se publicó con UN solo perímetro se carga con ese: no hay otro. Si no es el del club, ajuste de cada documento de
+//      ese ejercicio (Parma, individual, con 2022 y 2025 solo consolidados).
+//   2. El perímetro del CLUB es el de los votos (los ejercicios que traen los dos). Sin votos, el único perímetro de todos los ejercicios.
+//   3. Sin votos y con ejercicios de los dos perímetros (Aris: individual en 2019 y 2021, solo consolidado en 2023-2025), no hay perímetro
+//      del club: cada documento lleva el suyo.
+//   Frena (decide Guido) solo si los votos no coinciden entre sí. Un documento que no decide (cola) no cuenta, y si su ejercicio no tiene
+//   otro documento que decida, sigue frenando en la compuerta.
+//   ejecutar = true: pregunta a Jev y a Claude lo que haga falta y ESCRIBE los ajustes (autor "perimetro-senales").
+//   ejecutar = false (ensayo): sin API ni escritura; dice qué fijaría, o que se decide al ejecutar.
 // faltaPerimetro(pdf): la compuerta (antes-de-localizar.mjs) dice que ese documento frena por perímetro; solo se miran esos clubes.
+// Devuelve, por club: { carpeta, valor (del club o null), porDocumento: [{ pdf, valor }], escrito, pendienteJev, detalle }.
 export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false, faltaPerimetro, descartados = new Set() }) {
   const { ajustePerimetroDe, agregarAjuste } = await import('./ajustes.mjs');
   const carpeta = (pdf) => pdf.split('/').slice(0, 3).join('/') + '/';
@@ -296,24 +433,29 @@ export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false,
       const set = porCierre.get(k) || new Set();
       if (r.pasoA === 'solo-individual') set.add('individual');
       else if (r.pasoA === 'solo-consolidado') set.add('consolidado');
-      else if (r.pasoA === 'los-dos') { set.add('individual'); set.add('consolidado'); if (r.propuesta) votos.set(e.md, r.propuesta); else if (r.c3?.voto === null) pendJev++; }
+      else if (r.pasoA === 'los-dos' || r.pasoA === 'a2-los-dos') { set.add('individual'); set.add('consolidado'); if (r.propuesta) votos.set(e.md, r.propuesta); else if (r.c3?.voto === null) pendJev++; }
+      else if (r.a2?.pendiente) pendJev++;
       porCierre.set(k, set);
     }
     const valoresVoto = [...new Set(votos.values())];
     const unicos = [...porCierre.entries()].filter(([, s]) => s.size === 1).map(([k, s]) => [k, [...s][0]]);
     const valoresUnicos = [...new Set(unicos.map(([, v]) => v))];
-    let valor = null; let porque = '';
-    if (valoresVoto.length > 1) porque = `los documentos que traen los dos estados no eligen lo mismo (${[...votos].map(([m, v]) => `${m.split('/').pop()}: ${v}`).join('; ')})`;
-    else if (valoresVoto.length === 1 && valoresUnicos.some((v) => v !== valoresVoto[0])) porque = `los votos dan ${valoresVoto[0]}, pero hay ejercicios con solo el otro perímetro (${unicos.filter(([, v]) => v !== valoresVoto[0]).map(([k]) => k).join(', ')})`;
-    else if (!valoresVoto.length && valoresUnicos.length > 1) porque = `hay ejercicios con solo individual (${unicos.filter(([, v]) => v === 'individual').map(([k]) => k).join(', ')}) y con solo consolidado (${unicos.filter(([, v]) => v === 'consolidado').map(([k]) => k).join(', ')})`;
-    else if (valoresVoto.length === 1) valor = valoresVoto[0];
-    else if (valoresUnicos.length === 1) valor = valoresUnicos[0];
-    else porque = 'ningún documento del club decide';
     const evidencia = `${votos.size} documento(s) con los dos estados votan ${valoresVoto.join('/') || '—'}; ${unicos.length} ejercicio(s) con un solo perímetro (${valoresUnicos.join('/') || '—'}); ${props.length} documento(s) mirados`;
-    if (!valor && pendJev && !ejecutar) { out.push({ carpeta: c, valor: null, pendienteJev: true, detalle: `${porque || 'sin decidir'}; ${pendJev} documento(s) esperan el voto de Jev (se pregunta al ejecutar)` }); continue; }
-    if (!valor) { out.push({ carpeta: c, valor: null, detalle: porque }); continue; }
-    if (ejecutar) agregarAjuste({ pdf: c, campo: 'perimetro', valor, motivo: `perimetro-senales.mjs: ${evidencia}`, autor: 'perimetro-senales' });
-    out.push({ carpeta: c, valor, escrito: ejecutar, detalle: evidencia });
+    if (valoresVoto.length > 1) { out.push({ carpeta: c, valor: null, porDocumento: [], detalle: `los documentos que traen los dos estados no eligen lo mismo (${[...votos].map(([m, v]) => `${m.split('/').pop()}: ${v}`).join('; ')})` }); continue; }
+    // 2. El perímetro del club.
+    const valor = valoresVoto[0] || (valoresUnicos.length === 1 ? valoresUnicos[0] : null);
+    // 1 y 3. Los ejercicios con un solo perímetro distinto del club (o todos, si no hay perímetro del club): ajuste de cada documento.
+    const porDocumento = [];
+    // Solo los documentos que propusieron ese perímetro: uno del mismo ejercicio que no decidió (Parma 2023 consolidato, sin tablas reconocidas)
+    // no recibe un ajuste que no le corresponde; sigue frenando en la compuerta.
+    for (const [k, v] of unicos) if (v !== valor) for (const { e } of props.filter(({ e, r }) => (e.periodo?.cierre || e.md) === k && r.propuesta === v)) porDocumento.push({ pdf: e.pdf, valor: v, cierre: k });
+    if (!valor && !porDocumento.length && pendJev && !ejecutar) { out.push({ carpeta: c, valor: null, porDocumento, pendienteJev: true, detalle: `${evidencia}; ${pendJev} documento(s) se deciden al ejecutar (Jev o Claude)` }); continue; }
+    if (!valor && !porDocumento.length) { out.push({ carpeta: c, valor: null, porDocumento, detalle: 'ningún documento del club decide' }); continue; }
+    if (ejecutar) {
+      if (valor) agregarAjuste({ pdf: c, campo: 'perimetro', valor, motivo: `perimetro-senales.mjs: ${evidencia}`, autor: 'perimetro-senales' });
+      for (const d of porDocumento) agregarAjuste({ pdf: d.pdf, campo: 'perimetro', valor: d.valor, motivo: `perimetro-senales.mjs: el ejercicio ${d.cierre} se publicó solo ${d.valor}${valor ? ` (el club es ${valor})` : ' (el club no tiene un perímetro único)'}; ${evidencia}`, autor: 'perimetro-senales' });
+    }
+    out.push({ carpeta: c, valor, porDocumento, escrito: ejecutar, detalle: `${evidencia}${porDocumento.length ? `; por documento: ${porDocumento.map((d) => `${d.pdf.split('/').pop()} ${d.valor}`).join(', ')}` : ''}` });
   }
   return out;
 }
@@ -332,9 +474,33 @@ async function main() {
   let items = [];
   if (verdadF) items = readFileSync(resolve(ROOT, verdadF), 'utf8').split('\n').filter((l) => l.trim() && !l.startsWith('#')).map((l) => { const [md, per] = l.split('\t'); return { md, verdad: per }; });
   else if (listaF) items = readFileSync(resolve(ROOT, listaF), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')).map((p) => ({ md: p.replace(/\.pdf$/i, '.md') }));
+  else if (mdF && args.includes('--ver-a2')) { const L = readFileSync(resolve(ROOT, mdF), 'utf8').split('\n'); console.log(textoA2(titulosDelDocumento(L), portadaDelDocumento(L))); return; } // lo que recibiría Claude en A2, sin llamarlo
   else if (mdF) items = [{ md: mdF }];
   else { console.error('Uso: --verdad <tsv> | --lista <txt> | --md <archivo.md>  [--jev] [--detalle]  (ver la cabecera)'); process.exit(1); }
 
+  // --exportar-a2 <carpeta>: para medir A2 sin API. Por cada documento que pasaría por A2 y no está en caché, escribe <n>.txt con el texto
+  // que recibiría Claude y pedidos.jsonl con { n, md, clave }. Las respuestas ({ clave, md, datos } por línea) se agregan a
+  // Generados/_cache/claude-perimetro.jsonl y la corrida con --jev las toma de ahí. La instrucción (SISTEMA_A2) va en sistema.txt.
+  const exportarF = flagVal('--exportar-a2');
+  if (exportarF) {
+    const dir = resolve(ROOT, exportarF); mkdirSync(dir, { recursive: true });
+    const { writeFileSync } = await import('node:fs');
+    writeFileSync(resolve(dir, 'sistema.txt'), SISTEMA_A2);
+    if (!cacheA2) { cacheA2 = new Map(); if (existsSync(CACHE_A2)) for (const l of readFileSync(CACHE_A2, 'utf8').split('\n')) { if (!l.trim()) continue; try { const j = JSON.parse(l); cacheA2.set(j.clave, j); } catch { /* línea rota */ } } }
+    const pedidos = []; let n = 0;
+    for (const it of items) {
+      if (!existsSync(resolve(ROOT, it.md))) continue;
+      const md = readFileSync(resolve(ROOT, it.md), 'utf8');
+      if (tablasDeIngresos(md).tablas.length) continue; // el paso A decide: no pasa por A2
+      const L = md.split('\n'); const tit = titulosDelDocumento(L);
+      if (!tit.some((t) => t.tabla)) continue;
+      const user = textoA2(tit, portadaDelDocumento(L)); const clave = createHash('sha1').update(JSON.stringify([SISTEMA_A2, user])).digest('hex');
+      if (cacheA2.has(clave)) continue;
+      n++; writeFileSync(resolve(dir, `${n}.txt`), user); pedidos.push({ n, md: it.md, clave });
+    }
+    writeFileSync(resolve(dir, 'pedidos.jsonl'), pedidos.map((x) => JSON.stringify(x)).join('\n') + '\n');
+    console.log(`${pedidos.length} pedido(s) en ${exportarF}`); return;
+  }
   const res = { bien: 0, mal: 0, cola: 0 }; const malos = [];
   for (const it of items) {
     if (!existsSync(resolve(ROOT, it.md))) { console.log(`FALTA .md    ${it.md}`); res.cola++; continue; }

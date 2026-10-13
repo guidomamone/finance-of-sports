@@ -39,7 +39,7 @@ const carpetaClub = (pdf) => pdf.split('/').slice(0, 3).join('/') + '/';
 
 // Devuelve null si el documento puede localizarse, { falta: 'cierre' | 'perimetro', detalle, comando } si frena, o { aviso } si no se pudo
 // analizar (no frena).
-// previsto: Map carpeta del club -> perímetro que perimetro-senales.mjs fijaría al ejecutar (solo en el ensayo; al ejecutar ya está escrito como
+// previsto: Map carpeta del club (o pdf, cuando el ajuste es de un documento) -> perímetro que perimetro-senales.mjs fijaría al ejecutar (solo en el ensayo; al ejecutar ya está escrito como
 // ajuste y lo toma ajustePerimetroDe).
 export function faltaAntesDeLocalizar(pdf, { registro, todos = false, previsto = null }) {
   const sitio = sitioCargar();
@@ -53,7 +53,7 @@ export function faltaAntesDeLocalizar(pdf, { registro, todos = false, previsto =
       comando: `node tools/ajustes.mjs --agregar "${pdf}" cierre --valor ${cv?.cierre || 'AAAA-MM-DD'} --motivo "..."` };
   }
   // PERÍMETRO
-  if (ajustePerimetroDe(pdf) || previsto?.has(carpetaClub(pdf))) return null;
+  if (ajustePerimetroDe(pdf) || previsto?.has(pdf) || previsto?.has(carpetaClub(pdf))) return null;
   let alta; try { alta = analizar(pdf, sitio); } catch (err) { return { aviso: `no se pudo analizar el documento (${err.message}); no frena` }; }
   if (alta?.error) return { aviso: `alta-club: ${alta.error}; no frena` };
   const perC = alta.ejercicio.campos.find((c) => c.campo === 'perimetro') || {};
@@ -76,8 +76,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   // (perimetro-senales.mjs) el escalón que fija el perímetro del club cuando sus documentos coinciden: acá en modo ensayo (sin Jev ni escritura).
   const { fijarPerimetroDeClubes } = await import('./perimetro-senales.mjs');
   const PS = await fijarPerimetroDeClubes(docs, { registro, faltaPerimetro: (p) => faltaAntesDeLocalizar(p, { registro, todos: A.includes('--todos') })?.falta === 'perimetro' });
-  const previsto = new Map(PS.filter((x) => x.valor || x.pendienteJev).map((x) => [x.carpeta, x.valor || '?']));
-  for (const x of PS) console.log(`  perímetro ${x.carpeta}: ${x.valor ? `se fija ${x.valor} al ejecutar el lote (${x.detalle})` : x.pendienteJev ? `lo decide Jev al ejecutar el lote (${x.detalle})` : `no se fija solo: ${x.detalle}`}`);
+  const previsto = new Map([...PS.filter((x) => x.valor || x.pendienteJev).map((x) => [x.carpeta, x.valor || '?']), ...PS.flatMap((x) => x.porDocumento.map((d) => [d.pdf, d.valor]))]);
+  for (const x of PS) console.log(`  perímetro ${x.carpeta}: ${x.valor || x.porDocumento.length ? `se fija al ejecutar el lote: ${x.valor || 'sin perímetro del club, uno por documento'} (${x.detalle})` : x.pendienteJev ? `se decide al ejecutar el lote (${x.detalle})` : `no se fija solo: ${x.detalle}`}`);
   let n = 0;
   for (const pdf of docs) { const f = faltaAntesDeLocalizar(pdf, { registro, todos: A.includes('--todos'), previsto }); if (!f) continue; if (f.aviso) { console.log(`  aviso: ${pdf}: ${f.aviso}`); continue; } n++; console.log(`  FALTA ${f.falta}: ${pdf}\n     ${f.detalle}\n     ${f.comando}`); }
   console.log(`${n} de ${docs.length} documento(s) frenarían antes de localizar.`);

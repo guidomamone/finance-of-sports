@@ -124,8 +124,8 @@ console.log(`\n=== Etapas 3-5: localizar, validar, extraer (${EJECUTAR ? 'DE VER
 // fijaría. Caso: lote 14, 12 clubes italianos nuevos, 29 documentos frenados por perímetro.
 const { fijarPerimetroDeClubes } = await import('./perimetro-senales.mjs');
 const PS = await fijarPerimetroDeClubes(docs, { registro, ejecutar: EJECUTAR, descartados, faltaPerimetro: (p) => faltaAntesDeLocalizar(p, { registro })?.falta === 'perimetro' });
-const previstoPerimetro = EJECUTAR ? null : new Map(PS.filter((x) => x.valor || x.pendienteJev).map((x) => [x.carpeta, x.valor || '?']));
-for (const x of PS) console.log(`  perímetro ${x.carpeta}: ${x.valor ? `${x.escrito ? 'fijado' : 'se fija al ejecutar'}: ${x.valor} (${x.detalle})` : x.pendienteJev ? `lo decide Jev al ejecutar (${x.detalle})` : `no se fija solo: ${x.detalle}`}`);
+const previstoPerimetro = EJECUTAR ? null : new Map([...PS.filter((x) => x.valor || x.pendienteJev).map((x) => [x.carpeta, x.valor || '?']), ...PS.flatMap((x) => x.porDocumento.map((d) => [d.pdf, d.valor]))]);
+for (const x of PS) console.log(`  perímetro ${x.carpeta}: ${x.valor || x.porDocumento.length ? `${x.escrito ? 'fijado' : 'se fija al ejecutar'}: ${x.valor || 'sin perímetro del club, uno por documento'} (${x.detalle})` : x.pendienteJev ? `se decide al ejecutar, con Jev o Claude (${x.detalle})` : `no se fija solo: ${x.detalle}`}`);
 // PROPUESTAS FRESCAS ANTES DE REINTENTAR (Versión 643, to-do 196, ok de Guido el 2026-10-09). Qué reintentar por "categoría en 0" sale de la
 // propuesta guardada (<doc>.carga.json), que solo se escribe cuando corre el lote. Si después el club se dio de alta fuera del lote, la propuesta
 // guardada sigue diciendo "el club no existe" y no menciona los ceros: --reintentar decía "sin desgloses que reintentar" (Vila Nova 2021-2024 y

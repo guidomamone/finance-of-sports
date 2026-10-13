@@ -71,7 +71,7 @@ ni en el comentario de ningún archivo de código.
     a) GRECIA: cargados Asteras 2019-2025, Levadiakos 2019-2025, OFI 2018-2025, AEK 2016-2023 y 2025, Panserraikos 2023 y 2025 (2024 no
        tiene estado de resultados), Volos 2019-2025. Falta AEK 2024 (lote con la etapa 7 para las filas nuevas de sus notas:
        `Admin/lotes/lote-73.txt`). Lote 71 armado y sin correr (Olympiacos, Athens Kallithea, Aris, Atromitos, Kifisia, Panetolikos, PAOK;
-       primero `pipeline.mjs --dir "Clubes/Grecia" --ejecutar`, ~US$ 5,67). Aris: decidir perímetro (2023-2025 son consolidados).
+       primero `pipeline.mjs --dir "Clubes/Grecia" --ejecutar`, ~US$ 5,67). Aris: el perímetro lo decide el lote solo (A2 + la regla de la serie: 2019 y 2021 individuales, 2022-2025 consolidados).
        Conocido, sin tocar (histórico): Panathinaikos 2025 tiene "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου" como competition_bonus;
        en AEK 2023 y 2025 va como other_income.
     b) Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
@@ -145,10 +145,21 @@ ni en el comentario de ningún archivo de código.
     todos los .md antes y después (script del scratchpad: cifras de cada fila) y `caja-deuda.mjs --medir`. Después correr AEK
     (`--ejecutar --escribir`; la IA ya está en caché).
 
-225. PERÍMETRO SIN PREGUNTAR (pedido de Guido, 2026-10-13: que casos como Aris se resuelvan solos, sin pensar una regla nueva ni
-    preguntarle). Aris publica estados CONSOLIDADOS en 2023-2025 e individuales (ELP) en 2019 y 2021; `antes-de-localizar.mjs` frena por
-    perímetro y hoy se fija a mano con `ajustes.mjs --agregar "<carpeta del club>/" perimetro`. Hace falta una regla escrita (en
-    `Admin/CONVENCIONES-DATOS.md` y aplicada por `antes-de-localizar.mjs` / `perimetro-senales.mjs` como escalón) que decida sola qué
-    perímetro se carga cuando un club publica consolidado, individual o los dos según el año, con el precedente de lo ya cargado (Roma
-    consolidado; Asteras, AEK, PAOK individuales: PAOK es filial de DIMERA, que es la que consolida). Medir sobre los clubes con ajuste
-    `perimetro` en `Admin/registros/ajustes-manuales.jsonl`: la regla tiene que dar lo mismo que cada ajuste ya fijado.
+226. AJUSTES DE PERÍMETRO QUE NO COINCIDEN CON EL DOCUMENTO (visto al medir el paso A2 de `perimetro-senales.mjs`). Ninguno cambia un
+    número publicado; corregirlos con un ajuste `perimetro` del documento (`node tools/ajustes.mjs --agregar "<pdf>" perimetro --valor ...`)
+    y, si el año está cargado, la línea "Perímetro" de su `Admin/carga-clubes/<clubId>.md`:
+    - Trabzonspor: el ajuste del club dice consolidado (se fijó mirando el documento de 2021), pero 2016 a 2020 son individuales
+      ("finansal tablolar", sin "konsolide"). El prospecto de 2025 (`trabzonspor-sportif-izahname-2025`) no es un estado del ejercicio:
+      ver si va a `Admin/registros/documentos-descartados.txt`. El club no está cargado.
+    - AS Roma 2006 y Bologna 2024 y 2025: documentos individuales ("bilancio d'esercizio", ningún título consolidado) cargados con
+      "Perímetro: consolidado", heredado del ajuste del club. Cada documento trae un solo estado, así que los números son los mismos.
+    Antes de cerrarlo, correr `node tools/perimetro-senales.mjs --lista <documentos del club> --jev` y comparar con los ajustes: si aparecen
+    otros, van acá.
+
+227. AUDITORÍA A POSTERIORI DEL PASO A2 DEL PERÍMETRO (pedido de Guido: por si la idea sale mal). A2 decide el perímetro de documentos en
+    idiomas que el paso A no reconoce, con cinco criterios con peso (título 4, texto 4, auditor 1, grupo 1, portada 1; 4 puntos o más =
+    consolidado). Se midió en una muestra de 75 documentos; lo que decida en clubes nuevos no lo revisa nadie. Armar el chequeo: un
+    subagente toma los documentos que pasaron por A2 (`Generados/_cache/claude-perimetro.jsonl`) y cuyo ajuste firmó `perimetro-senales`,
+    los abre y dice si el estado cargado es del grupo o de la sociedad sola, con cita; un error sube el umbral, cambia un peso o agrega un
+    criterio, y se mide otra vez con `Admin/mediciones/perimetro-a2-medicion.txt`. Que entre en la skill `auditoria-finance-of-sports` (eje
+    `datos`, cada tanto) cuando Guido apruebe el texto; mientras, se corre a mano después de cada país nuevo.
