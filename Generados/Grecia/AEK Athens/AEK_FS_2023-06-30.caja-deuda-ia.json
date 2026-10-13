@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/AEK Athens/AEK_FS_2023-06-30.md",
+ "generado": "2026-10-13T19:10:07.073Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   434
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   445
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los préstamos bancarios a largo plazo (L445) son '-' al 30/6/2023. Sin embargo, la nota 6.31 indica un préstamo bancario total de 1.084.606 €, aparentemente incluido en L453 'Μακροπρόθεσμες Υποχρεώσεις πληρωτέες στην Επόμενη Χρήση' (14,6 M), una línea que mezcla otras deudas (probablemente contratos de jugadores), por lo que no la incluí. Los pasivos por arrendamiento (L446, L452) quedan excluidos."
+}

@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/AEK Athens/AEK_Notes_IFRS_2021-06-30.md",
+ "generado": "2026-10-13T19:09:55.811Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   425
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   436
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se toma como deuda financiera el préstamo a largo plazo (L436, 5.029.327, ligado a la prenda sobre el contrato de TV con Piraeus Bank). La línea L445 (7.469.001) agrupa sobre todo obligaciones por contratos de jugadores; la tabla de liquidez muestra unos 1.008.907 de préstamos bancarios a corto plazo que no figuran por separado en el balance, por lo que la deuda corriente queda dudosa y no se incluye."
+}
