@@ -58,7 +58,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   `perimetro` de un club nuevo cuando sus documentos coinciden (tablas de cada perímetro y voto con Jev); si la serie cambia de perímetro,
   frena y decide Guido. Reconoce títulos en italiano e inglés; en otros idiomas no decide (frena).
 - Qué hay cargado de cada club (ejercicios, tipo de documento, moneda, deuda y caja): `Admin/ESTADO-clubes.md`, generado por
-  `node tools/generate-club-index.js`. El detalle de cada año (fuente, qué es real y qué no) está en la cabecera de `data/<país>/<club>-data.js`.
+  `node tools/generate-club-index.js`. El detalle de cada año (fuente, qué es real y qué no) está en la evidencia del club, `Admin/carga-clubes/<clubId>.md`.
 - Brasil, Italia y Rusia se cargaron por el pipeline (Rusia por su camino propio); en los documentos italianos viejos quedan ajustes
   manuales donde el script no da idéntico, y dos ejercicios (Lazio 2012-13, AS Roma 2021) llevan el ajuste `no-recargar` porque lo publicado
   es más detallado que lo que lee el script. Un ejercicio de menos de 12 meses no se carga: queda en `Admin/registros/documentos-parciales.txt` con el
@@ -99,7 +99,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   Netlify al pushear a `main` del repo de GitHub. Dominio propio: **financeofsports.com**.
 - QUÉ SE PUBLICA: Netlify publica la raíz, pero `netlify.toml` borra del artefacto de deploy lo interno (`Admin/`, con las notas de
   sourcing de `Admin/sourcing/`; `CLAUDE.md`, `auditorias/`, `Prototyping/`, `tools/` y `Generados/`); todo se trackea, así que el respaldo en GitHub es completo. Se publican
-  las páginas `fuentes/<clubId>.html`, `data/`, `js/` y las transcripciones `Clubes/**/*.md`: estas últimas se publican A PROPÓSITO (decisión
+  las páginas `fuentes/<clubId>.html`, `data/`, `js/`, `css/` y las transcripciones `Clubes/**/*.md`: estas últimas se publican A PROPÓSITO (decisión
   de Guido; `netlify.toml` no las borra). Los PDFs no se trackean (`.gitignore`). Un documento interno nuevo va adentro de `Admin/`;
   `node tools/audit.js` caza el que quede suelto en la raíz (`doc-interno-no-excluido`).
   Los comentarios de `index.html` y `js/` también viajan al visitante: solo el porqué técnico, sin historia interna (regla en
@@ -119,6 +119,20 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   nuevos nacen con el país en el `clubId` (ej. `corinthians-br`, `millonarios-co`); `tools/audit.js` lo chequea (`clubid-sin-pais`).
 - DATOS: cuántos clubes, de qué países y qué ejercicios tiene cada uno: `Admin/ESTADO-clubes.md` (generado). Solo cuentan los clubes
   con al menos un ejercicio REAL (balance o presupuesto oficial).
+
+### Dónde vive cada cosa
+
+- Raíz: las páginas del sitio (`index.html`, `fuentes.html`, `privacidad.html`, `terminos.html`, `sitemap.xml`), `netlify.toml` y `CLAUDE.md`.
+- `data/`: lo que el sitio carga. Un archivo por club en `data/<país>/<clubId>-data.js` (país = código ISO en minúscula); los
+  compartidos (`clubs.js`, `leagues.js`, …) sueltos; `club-leagues/`, `gestiones/`, `rankings/` y `lang/`. Las tools arman la ruta de un
+  club solo con `tools/data-clubes.js`.
+- `js/` (el script principal es `js/principal.js`) y `css/styles.css`. `fuentes/`: solo las páginas públicas `<clubId>.html`.
+- `Clubes/<País>/<Club>/`: los PDFs y sus transcripciones `.md`. `Generados/`: lo que las tools derivan de cada documento.
+- `Admin/`: los documentos internos sueltos (este, TODO, CONVENCIONES, PIPELINE, …) y `api-keys/` (las claves, gitignoreadas salvo la
+  pública de Supabase), `registros/` (los registros del pipeline; `registros/api/`, el gasto de cada API), `lotes/` (las listas abiertas y
+  las de prueba), `mediciones/` (tests, backtests y propuestas medidas), `sourcing/` (las notas de sourcing; `sourcing/README.md` es donde
+  Guido deja links), `carga-clubes/` (la evidencia de cada club), `ligas-por-pais/`, `gestiones-por-pais/`, `outreach/` y `Archive/`.
+- `tools/`: las tools, sueltas; las que ya no se usan, en `tools/archivo/` (su README dice por qué).
 
 ---
 

@@ -15,6 +15,24 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 673 — Carpetas ordenadas (to-do 217) y tools obsoletas archivadas (2026-10-13)
+
+- Raíz: se borra `e2.json` (salida de prueba commiteada por error) y `Business Books/` sale del proyecto.
+- `Admin/` pasa de 101 entradas sueltas a los documentos y 10 carpetas: `api-keys/` (las 9 claves; una regla en `.gitignore`, `supabase.env`
+  sigue trackeado), `registros/` (los registros del pipeline y `registros/api/`, el gasto de cada API), `lotes/` (los cerrados, 14 a 65, a
+  `Archive/lotes/`), `mediciones/` (tests, backtests, informes, propuestas) y `sourcing/` (las notas de `fuentes/`). Los scripts de sourcing
+  de Europa del Este a `tools/sourcing-europa-este/`; `schema.sql` de Supabase a `tools/supabase/`.
+- `fuentes/` queda solo con las páginas públicas; `cargar-lote.mjs` y `bfo-rusia.mjs` exigen, commitean y revierten `Admin/sourcing` junto
+  con `fuentes`. El archivo de links de Guido pasa a `Admin/sourcing/README.md` (`CLAUDE.md` al día).
+- `data/`: los 214 data files de club en `data/<país>/<clubId>-data.js`; `tools/data-clubes.js` es el único lugar de las tools que arma esa
+  ruta (23 tools lo usan) y `loadClubData()` la arma con `clubs[clubId].country`. ASSET_V 824.
+- El script principal de `index.html` a `js/principal.js` (el mismo código, byte por byte) y el CSS a `css/styles.css`. ASSET_V 825.
+- Tools: no se mueven (decisión de Guido). A `tools/archivo/`: las 3 mudanzas del to-do 209, `revisar-reservas`, `tablas-sesion` y
+  `estado-desde-md`. To-do 218: sacar las etapas viejas de `onboard.mjs` y archivar `prepare-onboarding.mjs`.
+- Cada paso, verificado con la misma batería antes y después (`audit.js`, los generadores con `--check`, `estado.mjs`, ensayos de `lote.mjs`
+  con `prueba-completa` y de `cargar-lote.mjs`, `dentro-de-otro`, `carpetas-clubes`, `cola`, `gasto`) y, en los que tocan el sitio,
+  `?audit=1` (214 clubes cargan, 1859 checks cierran, 3 no: Bayern, igual que antes) y el texto de las 6 secciones.
+
 ## Versión 672 — Cierre del to-do 209: chequeo de comentarios en `data/` y referencias apuntadas a la evidencia (2026-10-12)
 
 - `tools/audit.js`: `comentario-interno-publicado` recorre también `data/` (con subcarpetas); chequeo nuevo `comentario-en-data-club` (P2)

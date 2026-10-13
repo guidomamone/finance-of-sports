@@ -136,23 +136,6 @@ ni en el comentario de ningún archivo de código.
     el `.md` nuevo del club, que `data/<país>/<club>-data.js` salga sin comentarios (`node tools/audit.js` lo avisa como `comentario-en-data-club`)
     y el commit de cada año. Si algo sale mal, el lugar es `tools/evidencia-club.mjs` y `Admin/PIPELINE.md`, "Dónde queda la evidencia" (etapa 8).
 
-217. ORGANIZAR LAS CARPETAS DEL PROYECTO (pedido de Guido). Método: un paso por vez, con ejemplo real; cada paso con `git mv`, buscar la
-    ruta vieja de las dos formas (`Admin/x` y `'Admin', 'x'`) hasta dar 0 fuera de la historia, y además las armadas con una
-    variable (`grep -rnE "'Admin',\s*[a-zA-Z_\[\$]|\`Admin/\$\{" tools`: así se escapaba `resolver-inventario.mjs`, `LOGDIR[engine]`), `node --check` de cada tool tocada y
-    `diff` antes/después de `audit.js`, `estado.mjs` y `lote.mjs --lista Admin/lotes/prueba-rapida.txt` (ensayo gratis). Un commit por paso.
-    Los registros que solo se agregan (`cola-revision.jsonl`, `cargar-ultimo.jsonl`) citan rutas viejas como texto: no se reescriben,
-    pero hay que confirmar que ningún script las abre. HECHO: raíz (e2.json, Business Books), lotes (`Admin/lotes/`, los cerrados en Archive), claves (`Admin/api-keys/`,
-    `schema.sql` a `tools/supabase/`) logs de gasto de API (`Admin/registros/api/`),
-    mediciones (`Admin/mediciones/`) registros del pipeline (`Admin/registros/`; la evidencia de `Admin/carga-clubes/` cita la ruta nueva) y
-    los scripts de sourcing de Europa del Este (`tools/sourcing-europa-este/`). `Admin/` quedó en los documentos y 10 carpetas (con `sourcing/`).
-    Las notas de sourcing (`<País>/<Club>.md`, `_indice/`, `README.md`) en `Admin/sourcing/`; `fuentes/` quedó solo con las páginas públicas.
-    `cargar-lote.mjs` y `bfo-rusia.mjs` exigen, commitean y revierten `Admin/sourcing` junto con `fuentes`.
-    Los data files de club en `data/<país>/<clubId>-data.js`; la ruta vive solo en `tools/data-clubes.js` (tools) y `loadClubData()` (sitio).
-    El script principal de `index.html` en `js/principal.js` (Mixpanel y `ASSET_V` siguen inline a propósito) y el CSS en `css/styles.css`.
-    FALTA, en este orden (decidido con Guido):
-      i) `tools/` en carpetas por etapa (sourcing, transcripción, onboarding, generadores, auditoría, común): 99 archivos, 128 imports
-         entre ellos, ~248 menciones en docs y skills. Con su propio plan y ejemplo; decidir con Guido antes de empezar.
-
 218. SACAR LAS ETAPAS VIEJAS DE `tools/onboard.mjs` Y ARCHIVAR `tools/prepare-onboarding.mjs` (limpieza de código). `onboard.mjs` era el comando
     único del pipeline anterior a `lote.mjs`; hoy solo viven dos funciones suyas: `--quien` (qué club y año es un PDF; lo llama
     `cargar.mjs`) y `--all --dry-run` (qué está cargado; lo llama `inventario-transcripciones.mjs`). Las etapas transcribir / comparar con
