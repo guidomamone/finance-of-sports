@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2021-06-30.pdf",
  "md": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2021-06-30.md",
- "generado": "2026-10-13T12:59:37.769Z",
+ "generado": "2026-10-13T16:37:28.060Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "asterastripolis-gr",
  "year": 2021,
  "escala": {
   "valor": "unidades",
@@ -27,7 +27,13 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)"
+   "detalle": "cierra (como impresos)",
+   "dif": 3.885780586188048e-16
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 3.435971; el sitio tiene 3.428284"
   },
   {
    "nombre": "documento del año 2022",
@@ -38,18 +44,17 @@
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2020: 3.435971 en Asteras_FS_2020-06-30.pdf y 3.435971 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
   }
  ],
  "notas": [
-  "la nota de \"Λοιπά έσοδα και κέρδη\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento"
+  "la nota de \"Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Λοιπά έσοδα και κέρδη\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar que no afecta la carga: La nota 5.4.21 muestra ingresos de partidos 0,00 en 2020-21 (partidos sin público por pandemia) y 180.623,76 en 2019-20; no hay otro cuadro que abra ingresos de estadio.",
+  "duda de extraer que no afecta la carga: Ninguna tabla transcripta contiene un renglón de estadio; lo más cercano es 'Έσοδα αγώνων' (L1366), ingresos por partidos, con 0,00 en 2021.",
+  "duda de extraer decidida por las sumas (to-do 222): sí, el cuadro b37 (4.803.264,52) es la suma de L768 + L772 + L773. \"¿Se cargan los renglones de gastos por naturaleza de b37 (L1425-L1432) como desglose conjunto de Κόστος πωλήσεων, Έξοδα διοίκησης y Έξοδα διάθεσης, sin asignarlos a un renglón único?\""
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 5.039553,
@@ -109,6 +114,14 @@
    "pagina": 30,
    "linea": 1382,
    "origen": "nota que desglosa \"Λοιπά συνήθη έσοδα\""
+  },
+  {
+   "etiqueta": "Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 18,
+   "linea": 776,
+   "origen": "estado"
   },
   {
    "etiqueta": "Έσοδα συμμετοχών και επενδύσεων",
@@ -181,6 +194,14 @@
    "pagina": 31,
    "linea": 1450,
    "origen": "nota que desglosa \"Λοιπά έξοδα και ζημιές\""
+  },
+  {
+   "etiqueta": "Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 18,
+   "linea": 775,
+   "origen": "estado"
   }
  ],
  "signosCarga": {

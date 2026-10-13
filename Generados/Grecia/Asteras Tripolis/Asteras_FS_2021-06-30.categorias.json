@@ -1,23 +1,23 @@
 {
  "md": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2021-06-30.md",
- "club": "asteras-tripolis",
+ "club": "asterastripolis-gr",
  "year": 2021,
- "generatedAt": "2026-10-10T14:09:57.113Z",
- "rubrosHuella": "f9237903397d776eef18f9e683ef50ca75159a41",
- "jevHuella": "4654c80db803491445eee66dd1229208a827db87",
+ "generatedAt": "2026-10-13T16:37:43.629Z",
+ "rubrosHuella": "a18ca1ae78147c79737d33dc244dba8086e17ce5",
+ "jevHuella": "2f1699f400780e9fa6b07284da4d720069f793af",
  "modelo": "claude-opus-5-5",
- "costUsd": 0.010752,
+ "costUsd": 0,
  "rubros": [
   {
    "label": "Έσοδα από τηλεοπτικές μεταδόσεις αγώνων",
    "lado": "revenue",
    "section": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\"",
-   "glosa": "Ingresos por retransmisiones televisivas de partidos",
+   "glosa": "Ingresos por retransmisiones televisivas",
    "page": 30,
    "pendiente": false,
    "ya": "broadcasting",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "broadcasting",
    "confianza": 1
   },
@@ -29,14 +29,10 @@
    "page": 30,
    "pendiente": false,
    "ya": "player_sales",
-   "escalon": 2,
-   "confCache": 0.7,
-   "motivo": "cesión/traspaso de futbolistas es ingreso por pases",
-   "jev": "other_income",
-   "jevConf": 0.47,
-   "desdeCache": true,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "player_sales",
-   "confianza": 0.7
+   "confianza": 1
   },
   {
    "label": "Επιχορηγήσεις",
@@ -46,28 +42,23 @@
    "page": 30,
    "pendiente": false,
    "ya": "other_income",
-   "escalon": 2,
-   "confCache": 0.85,
-   "motivo": "subvenciones van a otros ingresos en otros clubes",
-   "jev": "other_income",
-   "jevConf": 0.89,
-   "desdeCache": true,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
-   "confianza": 0.85
+   "confianza": 1
   },
   {
    "label": "Αποζημίωση ειδικού σκοπού αθλητικών σωματείων",
    "lado": "revenue",
    "section": "nota que desglosa \"Λοιπά συνήθη έσοδα\"",
-   "glosa": "Compensación con fines especiales para clubes deportivos",
+   "glosa": "Compensación con fines específicos para entidades deportivas",
    "page": 30,
-   "pendiente": true,
-   "jev": "other_income",
-   "jevConf": 0.76,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
-   "confianza": 0.6,
-   "motivo": "Compensación estatal especial a clubes deportivos, similar a subvenciones vecinas en other_income"
+   "confianza": 1
   },
   {
    "label": "Έσοδα από παροχή υπηρεσιών σε τρίτους",
@@ -77,28 +68,36 @@
    "page": 30,
    "pendiente": false,
    "ya": "other_income",
-   "escalon": 2,
-   "confCache": 0.75,
-   "motivo": "prestación de servicios genérica, como atleticomadrid",
-   "jev": "other_income",
-   "jevConf": 0.89,
-   "desdeCache": true,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
-   "confianza": 0.75
+   "confianza": 1
   },
   {
    "label": "Έσοδα από συνεισφορά αλληλεγγύης και τροφεία",
    "lado": "revenue",
    "section": "nota que desglosa \"Λοιπά συνήθη έσοδα\"",
-   "glosa": "Ingresos por contribución de solidaridad y derechos de formación",
+   "glosa": "Ingresos por mecanismo de solidaridad y derechos de formación",
    "page": 30,
-   "pendiente": true,
-   "jev": "member_dues",
-   "jevConf": 0.57,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "player_sales",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "player_sales",
-   "confianza": 0.6,
-   "motivo": "Solidaridad y formación; ejemplos de otros clubes lo mapean a player_sales, aunque podría ser youth_football"
+   "confianza": 1
+  },
+  {
+   "label": "Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Resultados por enajenación de activos no corrientes",
+   "page": 18,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_income",
+   "confianza": 1
   },
   {
    "label": "Έσοδα συμμετοχών και επενδύσεων",
@@ -108,8 +107,8 @@
    "page": 18,
    "pendiente": false,
    "ya": "other_income",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
    "confianza": 1
   },
@@ -117,14 +116,14 @@
    "label": "Κέρδος από αγορά οντότητας ή τμήματος σε τιμή ευκαιρίας",
    "lado": "revenue",
    "section": "estado",
-   "glosa": "Ganancia por compra en condiciones muy ventajosas de una entidad o segmento",
+   "glosa": "Ganancia por compra en condiciones muy ventajosas de entidad o división",
    "page": 18,
    "pendiente": false,
    "ya": "other_income",
-   "escalon": 1,
-   "jevConf": 0.92,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
-   "confianza": 0.92
+   "confianza": 1
   },
   {
    "label": "Λοιπά έσοδα και κέρδη",
@@ -134,23 +133,23 @@
    "page": 18,
    "pendiente": false,
    "ya": "other_income",
-   "escalon": 1,
-   "jevConf": 0.99,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
-   "confianza": 0.99
+   "confianza": 1
   },
   {
    "label": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
    "lado": "expense",
    "section": "estado",
-   "glosa": "Coste de ventas (Costes operativos de la sección de fútbol)",
+   "glosa": "Coste de ventas (Coste de explotación del área de fútbol)",
    "page": 18,
    "pendiente": false,
    "ya": "lump_football_operations_expense",
-   "escalon": 1,
-   "jevConf": 0.93,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "lump_football_operations_expense",
-   "confianza": 0.93
+   "confianza": 1
   },
   {
    "label": "Έξοδα διοίκησης",
@@ -160,8 +159,8 @@
    "page": 18,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
    "confianza": 1
   },
@@ -173,14 +172,10 @@
    "page": 18,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 2,
-   "confCache": 0.85,
-   "motivo": "Gastos de comercialización son costos no deportivos; otros clubes los mandan a administración.",
-   "jev": "admin_general_expense",
-   "jevConf": 0.48,
-   "desdeCache": true,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
-   "confianza": 0.85
+   "confianza": 1
   },
   {
    "label": "Πρόβλεψη για επισφαλείς απαιτήσεις",
@@ -190,31 +185,23 @@
    "page": 31,
    "pendiente": false,
    "ya": "other_amortisation",
-   "escalon": 2,
-   "confCache": 0.6,
-   "motivo": "previsiones van a otras amortizaciones según criterio",
-   "jev": "other_expenses",
-   "jevConf": 0.84,
-   "desdeCache": true,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_amortisation",
-   "confianza": 0.6
+   "confianza": 1
   },
   {
    "label": "Φορολογικά πρόστιμα και προσαυξήσεις",
    "lado": "expense",
    "section": "nota que desglosa \"Λοιπά έξοδα και ζημιές\"",
-   "glosa": "Sanciones y recargos tributarios",
+   "glosa": "Sanciones y recargos fiscales",
    "page": 31,
    "pendiente": false,
    "ya": "other_expenses",
-   "escalon": 2,
-   "confCache": 0.65,
-   "motivo": "multas y sanciones a otros gastos como otros clubes",
-   "jev": "admin_general_expense",
-   "jevConf": 0.44,
-   "desdeCache": true,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_expenses",
-   "confianza": 0.65
+   "confianza": 1
   },
   {
    "label": "Λοιπά έκτακτα έξοδα",
@@ -224,14 +211,23 @@
    "page": 31,
    "pendiente": false,
    "ya": "exceptional_items",
-   "escalon": 2,
-   "confCache": 0.7,
-   "motivo": "gastos extraordinarios, como instituto",
-   "jev": "exceptional_items",
-   "jevConf": 0.82,
-   "desdeCache": true,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "exceptional_items",
-   "confianza": 0.7
+   "confianza": 1
+  },
+  {
+   "label": "Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Deterioro del valor de activos (importe neto)",
+   "page": 18,
+   "pendiente": false,
+   "ya": "player_impairment",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "player_impairment",
+   "confianza": 1
   }
  ]
 }

@@ -234,6 +234,53 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/cargar.mjs (2026-10-13): gr-superleague, verificado contra roster cacheado de "2021–22 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Asteras Tripolis".
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-13) desde Clubes/Grecia/Asteras Tripolis/Asteras_FS_2021-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Asteras Tripolis/Asteras_FS_2021-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Έσοδα από τηλεοπτικές μεταδόσεις αγώνων | pág. 30, precedente |
+| 2 | Έσοδα από παραχώρηση ποδοσφαιριστών | pág. 30, precedente |
+| 3 | Επιχορηγήσεις | pág. 30, precedente |
+| 4 | Αποζημίωση ειδικού σκοπού αθλητικών σωματείων | pág. 30, precedente |
+| 5 | Έσοδα από παροχή υπηρεσιών σε τρίτους | pág. 30, precedente |
+| 6 | Έσοδα από συνεισφορά αλληλεγγύης και τροφεία | pág. 30, precedente |
+| 7 | Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων | pág. 18, precedente |
+| 8 | Έσοδα συμμετοχών και επενδύσεων | pág. 18, precedente |
+| 9 | Κέρδος από αγορά οντότητας ή τμήματος σε τιμή ευκαιρίας | pág. 18, precedente |
+| 10 | Λοιπά έσοδα και κέρδη | pág. 18, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος) | pág. 18, precedente |
+| 2 | Έξοδα διοίκησης | pág. 18, precedente |
+| 3 | Έξοδα διάθεσης | pág. 18, precedente |
+| 4 | Πρόβλεψη για επισφαλείς απαιτήσεις | pág. 31, precedente |
+| 5 | Φορολογικά πρόστιμα και προσαυξήσεις | pág. 31, precedente |
+| 6 | Λοιπά έκτακτα έξοδα | pág. 31, precedente |
+| 7 | Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό) | pág. 18, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-13): gr-superleague, verificado contra roster cacheado de "2020–21 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Asteras Tripolis".
+```
+
 ## 2020
 
 ### Ingresos
@@ -378,4 +425,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/Asteras Tripolis/Asteras_FS_2025-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### asterastripolis-gr-asteras-fs-2021-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/Asteras Tripolis/Asteras_FS_2021-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

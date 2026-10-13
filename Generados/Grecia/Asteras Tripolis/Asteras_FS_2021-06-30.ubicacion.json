@@ -3,7 +3,8 @@
  "md": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2021-06-30.md",
  "mdSha1": "f5a961fecb2f3bcaf27b0d47f011e411adc9df1d",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-10T13:44:42.807Z",
+ "generado": "2026-10-13T16:36:36.897Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -400,17 +401,16 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro 5.5 'Ανάλυση Αμοιβών Προσωπικού' (b45), ya que el gasto de personal está en la nota 5.4.25 (b37)?",
+   "pregunta": "¿Se acepta que no hay renglón de 'Estadio' en el ejercicio 2020-21 porque 'Έσοδα αγώνων' (ingresos de partidos) es 0,00 en la nota 5.4.21 (b33)?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Αμοιβές και έξοδα προσωπικού",
-   "texto": "b45 abre remuneraciones por categoría de personal con cantidad de empleados; podría duplicar el renglón de personal de b37.",
+   "renglon": "Έσοδα αγώνων",
+   "texto": "La nota 5.4.21 muestra ingresos de partidos 0,00 en 2020-21 (partidos sin público por pandemia) y 180.623,76 en 2019-20; no hay otro cuadro que abra ingresos de estadio.",
    "bloques": [
-    "b45",
-    "b37"
+    "b33"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   }
  ],
- "observaciones": "Estado de resultados por función, individual de la ΠΑΕ (b17), en euros. Notas 5.4.21-5.4.30 desglosan ingresos y gastos. b12-b14 y b42-b44 (destino del resultado, duplicados) y b23/b32 (devengos de balance) excluidos."
+ "observaciones": "Solo hay estados individuales de la PAE (no hay consolidado). Estado de resultados por función en b17 (pág. 18). Ingresos de estadio = 'Έσοδα αγώνων' en b33, importe 0 en el ejercicio. Se excluyen indicadores (b4-b11), distribución de resultados (b12-b14, b42-b44), balance y sus notas, cuadro de personal (b45) y compromisos (b46)."
 }

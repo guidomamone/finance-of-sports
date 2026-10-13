@@ -1,26 +1,10 @@
 {
  "pdf": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2021-06-30.pdf",
- "generado": "2026-10-13T13:07:41.090Z",
- "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (asterastripolis-gr)"
-  },
-  {
-   "etapa": "club",
-   "motivo": "carpetas-clubes.mjs dice asterastripolis-gr y onboard.mjs --quien dice asteras-tripolis"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Αποζημίωση ειδικού σκοπού αθλητικών σωμα\" -> other_income 0.6; \"Έσοδα από συνεισφορά αλληλεγγύης και τρο\" -> player_sales 0.6"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-13T16:37:43.971Z",
+ "frena": [],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-09: Revisión del alta (Claude, 2026-10-09): la sociedad no pertenece a grupo consolidado (notas 5.9 y 5.10); las 6 menciones de 'consolidado' son esas notas)"
+  "perímetro: individual (ajuste manual del club, 2026-10-09: Revisión del alta (Claude, 2026-10-09): la sociedad no pertenece a grupo consolidado (notas 5.9 y 5.10); las 6 menciones de 'consolidado' son esas notas)",
+  "categorías en 0 aun después del reintento (se carga así): Estadio"
  ],
  "ejercicio": {
   "clubId": "asterastripolis-gr",
@@ -34,7 +18,7 @@
     "amountNative": 0.95,
     "disclosureLevel": "aggregated",
     "_pag": 30,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -54,8 +38,8 @@
     "amountNative": 0.360137,
     "disclosureLevel": "aggregated",
     "_pag": 30,
-    "_escalon": 2,
-    "_conf": 0.85,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -64,9 +48,9 @@
     "amountNative": 1.571428,
     "disclosureLevel": "aggregated",
     "_pag": 30,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Έσοδα από παροχή υπηρεσιών σε τρίτους",
@@ -84,8 +68,18 @@
     "amountNative": 0.102521,
     "disclosureLevel": "aggregated",
     "_pag": 30,
-    "_escalon": 2,
-    "_conf": 0.6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -94,7 +88,7 @@
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -104,8 +98,8 @@
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 1,
-    "_conf": 0.92,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -114,8 +108,8 @@
     "amountNative": 0.00232,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 1,
-    "_conf": 0.99,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    }
   ],
@@ -126,8 +120,8 @@
     "amountNative": -3.448209,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 1,
-    "_conf": 0.93,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -136,7 +130,7 @@
     "amountNative": -1.334813,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -146,8 +140,8 @@
     "amountNative": -0.020243,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.85,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -176,6 +170,16 @@
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 31,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)",
+    "normalizedCategory": "player_impairment",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
     "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "respuesta de Guido en la cola"
@@ -245,7 +249,7 @@
  "year": 2021,
  "ajustes": null,
  "seleccion": {
-  "filas": 18,
+  "filas": 20,
   "notasUsadas": [],
   "refM": null
  },
@@ -259,7 +263,7 @@
    "signoFijo": 0.95,
    "cat": "broadcasting",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -289,8 +293,8 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
    "signoFijo": 0.360137,
    "cat": "other_income",
-   "conf": 0.85,
-   "escalon": 2,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -304,11 +308,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
    "signoFijo": 1.571428,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-13 (subagente Sonnet): compensación de propósito especial a asociaciones deportivas, fila de la nota 5.4.22 Λοιπά συνήθη έσοδα (Asteras_FS_2021-06-30.md L1379); tipo subsidio, como las Επιχορηγήσεις de Asteras 2019-2020 (other_income)",
    "destino": "revenue",
    "amountNative": 1.571428
   },
@@ -336,13 +340,28 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
    "signoFijo": 0.102521,
    "cat": "player_sales",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Guido 2026-10-13: player_sales (mecanismo de solidaridad y derechos de formación por jugadores formados en el club, como compraventa de jugadores; skill club-data-mapping, derechos de formación -> player_sales). Asteras_FS_2021-06-30.md L1382",
    "destino": "revenue",
    "amountNative": 0.102521
+  },
+  {
+   "label": "Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+   "page": 18,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
   },
   {
    "label": "Έσοδα συμμετοχών και επενδύσεων",
@@ -353,7 +372,7 @@
    "signoFijo": 0,
    "cat": "other_income",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -367,8 +386,8 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0,
    "cat": "other_income",
-   "conf": 0.92,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -382,8 +401,8 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.00232,
    "cat": "other_income",
-   "conf": 0.99,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -397,8 +416,8 @@
    "origen": "verificacion (estado)",
    "signoFijo": 3.448209,
    "cat": "lump_football_operations_expense",
-   "conf": 0.93,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -413,7 +432,7 @@
    "signoFijo": 1.334813,
    "cat": "admin_general_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -427,8 +446,8 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.020243,
    "cat": "admin_general_expense",
-   "conf": 0.85,
-   "escalon": 2,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -483,6 +502,22 @@
    "amountNative": 0
   },
   {
+   "label": "Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)",
+   "page": 18,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "player_impairment",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Asteras 2019: Απομειώσεις (L898) en 0,00; sin efecto en plata, mismo criterio que svalutazioni -> player_impairment",
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
    "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
    "page": null,
    "native": 0,
@@ -514,12 +549,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "tax"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
   }
  ],
  "signos": {
@@ -608,10 +637,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 4,
-  "lineasIngreso": 9,
-  "lineasGasto": 6,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 10,
+  "lineasGasto": 7,
   "metaFilas": 3,
   "excluidas": 0
  }

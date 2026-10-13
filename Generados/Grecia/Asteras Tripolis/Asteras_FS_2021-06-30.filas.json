@@ -3,7 +3,7 @@
  "md": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2021-06-30.md",
  "mdSha1": "f5a961fecb2f3bcaf27b0d47f011e411adc9df1d",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-10T13:45:32.405Z",
+ "generado": "2026-10-13T16:37:27.992Z",
  "ubicacion": {
   "estado": [
    "b17"
@@ -31,7 +31,7 @@
   {
    "bloque": "b33",
    "escala": "unidades",
-   "evidencia": "Importes con decimales coincidentes con el estado (L1370 = L767)"
+   "evidencia": "Importes con decimales consistentes con el estado (L1370 = L767)"
   },
   {
    "bloque": "b34",
@@ -46,12 +46,12 @@
   {
    "bloque": "b36",
    "escala": "unidades",
-   "evidencia": "Mismo formato que el estado"
+   "evidencia": "Coincide con L782"
   },
   {
    "bloque": "b39",
    "escala": "unidades",
-   "evidencia": "Mismo formato que el estado"
+   "evidencia": "Coincide con L776"
   },
   {
    "bloque": "b37",
@@ -71,7 +71,7 @@
   {
    "bloque": "b41",
    "escala": "unidades",
-   "evidencia": "Mismo formato que el estado"
+   "evidencia": "Coincide con L785"
   }
  ],
  "filas": [
@@ -162,7 +162,7 @@
    "actual": "0,00",
    "anterior": "0,00",
    "tipo": "renglon",
-   "lado": "otro",
+   "lado": "gasto",
    "detalla_a": null
   },
   {
@@ -172,7 +172,7 @@
    "actual": "0,00",
    "anterior": "0,00",
    "tipo": "renglon",
-   "lado": "otro",
+   "lado": "ingreso",
    "detalla_a": null
   },
   {
@@ -462,7 +462,7 @@
    "actual": "0,00",
    "anterior": "0,00",
    "tipo": "renglon",
-   "lado": "otro",
+   "lado": "ingreso",
    "detalla_a": "Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων"
   },
   {
@@ -472,7 +472,7 @@
    "actual": "0,00",
    "anterior": "0,00",
    "tipo": "subtotal",
-   "lado": "otro",
+   "lado": "ingreso",
    "detalla_a": "Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων"
   },
   {
@@ -725,11 +725,31 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se cargan las partidas por naturaleza de la nota b37 (L1425-L1433) como desglose conjunto de Κόστος πωλήσεων, Έξοδα διοίκησης y Έξοδα διάθεσης, sin asignarlas a un único renglón del estado?",
+   "pregunta": "¿Se confirma que el documento no tiene ninguna fila de 'Estadio' en los bloques b17, b33-b41 (L762-L1496)?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "",
-   "texto": "La nota b37 clasifica gastos por naturaleza que suman los tres renglones funcionales del estado (L768, L772, L773); no hay un único renglón al que detallen, por eso detalla_a quedó null.",
+   "texto": "Ninguna tabla transcripta contiene un renglón de estadio; lo más cercano es 'Έσοδα αγώνων' (L1366), ingresos por partidos, con 0,00 en 2021.",
+   "bloques": [
+    "b17",
+    "b33",
+    "b34",
+    "b35",
+    "b36",
+    "b37",
+    "b38",
+    "b39",
+    "b40",
+    "b41"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se cargan los renglones de gastos por naturaleza de b37 (L1425-L1432) como desglose conjunto de Κόστος πωλήσεων, Έξοδα διοίκησης y Έξοδα διάθεσης, sin asignarlos a un renglón único?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+   "texto": "El total de b37 (L1433, 4.803.264,52) suma tres renglones del estado, por lo que detalla_a queda null en esas filas.",
    "bloques": [
     "b37",
     "b17"
@@ -737,5 +757,5 @@
    "afecta_carga": true
   }
  ],
- "observaciones": "Estado de resultados en euros con decimales. El estado no imprime total de ingresos ni de gastos. L771 es un subtotal sin etiqueta (resultado bruto más otros ingresos ordinarios). Las notas cuadran con el estado. En b37 la distribución por categoría (L1435-L1437) repite los importes del estado en positivo."
+ "observaciones": "Estado en unidades de euro (L763). No hay total de ingresos ni de gastos impresos en el estado. La nota b37 tiene doble presentación (por naturaleza L1425-L1433 y por función L1435-L1438); ambas con total 4.803.264,52. No se encontró ningún renglón de estadio en las tablas transcriptas."
 }
