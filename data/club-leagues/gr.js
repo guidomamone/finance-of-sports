@@ -8,5 +8,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'oficrete-gr': { 2018: 'gr-superleague2', 2019: 'gr-superleague', 2021: 'gr-superleague', 2022: 'gr-superleague', 2023: 'gr-superleague', 2024: 'gr-superleague', 2025: 'gr-superleague', 2020: 'gr-superleague' },
   'aekathens-gr': { 2016: 'gr-superleague', 2017: 'gr-superleague', 2018: 'gr-superleague', 2019: 'gr-superleague', 2020: 'gr-superleague' },
   'panserraikos-gr': { 2023: 'gr-superleague2', 2025: 'gr-superleague' },
-  'volosnfc-gr': { 2019: 'gr-superleague2', 2020: 'gr-superleague', 2021: 'gr-superleague' },
+  'volosnfc-gr': { 2019: 'gr-superleague2', 2020: 'gr-superleague', 2021: 'gr-superleague', 2022: null },
 });

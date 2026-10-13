@@ -13,6 +13,10 @@ const volosnfcgrRevenueLinesByYear = {
     { rawLabel:'Κύκλος εργασιών', normalizedCategory:'lump_football_operations', amountNative:2.177347, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:0.879813, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Κύκλος εργασιών', normalizedCategory:'lump_football_operations', amountNative:3.574025, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:0.631156, disclosureLevel:'aggregated' },
+  ],
 };
 const volosnfcgrExpenseLinesByYear = {
   2019: [
@@ -32,6 +36,10 @@ const volosnfcgrExpenseLinesByYear = {
   2021: [
     { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-2.739218, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.001935, disclosureLevel:'aggregated' },
+  ],
+  2022: [
+    { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-4.080745, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.003871, disclosureLevel:'aggregated' },
   ],
 };
 const volosnfcgrFiscalYearMeta = {
@@ -87,6 +95,24 @@ const volosnfcgrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:3.05716, officialTotalExpenses:2.741153, officialPAT:0.28758,
   },
+  2022: {
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'volosnfc-gr-volos-income-stmt-2022-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.007586, tax:-0.027855,
+    extraRows: [
+      {label:'Πιστωτικοί τόκοι και συναφή έσοδα', value:0.000099},
+      {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.007685},
+      {label:'Φόροι εισοδήματος', value:-0.027855},
+    ],
+    sinDesglose: [
+      {renglon:'Κύκλος εργασιών', lado:'revenue', importe:3.574025, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:4.205181, officialTotalExpenses:4.084616, officialPAT:0.085124,
+  },
 };
 const volosnfcgrPresupuestoOverlayByYear = {};
 
@@ -116,6 +142,11 @@ Object.assign(sources, {
   'volosnfc-gr-volos-income-stmt-2021-06-30': {
     id:'volosnfc-gr-volos-income-stmt-2021-06-30', clubId:'volosnfc-gr',
     title:'Volos N.P.S. P.A.E. — Volos_income_stmt_2021-06-30 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'volosnfc-gr-volos-income-stmt-2022-06-30': {
+    id:'volosnfc-gr-volos-income-stmt-2022-06-30', clubId:'volosnfc-gr',
+    title:'Volos N.P.S. P.A.E. — Volos_income_stmt_2022-06-30 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
