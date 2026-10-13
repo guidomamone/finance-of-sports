@@ -333,6 +333,10 @@ Mitigaciones:
  MISMO CUADRO (to-do 211) Guido ya contestó la duda del otro origen sobre el mismo cuadro (mismo primer bloque, que no sea el
             estado) y las dos son sobre si el cuadro entra ("¿se carga?" con "¿se deja afuera?", o dos "¿se deja afuera?") ── sí ──► se
             cierra con la respuesta implícita, con nota (dos "¿se carga…?" pueden ser maneras distintas de cargar: van las dos)
+ NATURALEZA (to-do 222) "¿Se carga <cuadro> como desglose conjunto / por naturaleza / transversal…?": el total del cuadro (fila total
+            o subtotal; menos sus filas de otro lado) contra todas las combinaciones de renglones del estado de ese lado más el financiero
+            del mismo signo, exacto a media unidad por fila. UNA combinación y propuesta "sí" ──► sí; NINGUNA y la carga no usa el cuadro
+            ──► no; si no, cola. Medido: 7 de 7 respuestas iguales (Asteras 2020-2025, Levadiakos 2020, OFI 2020)
  COLA HUMANA (escala, perímetro, cuadro de otro año, fila ilegible, "otro" y las propuestas "no" siempre llegan: medido el 2026-10-09,
             un tercio de esas dudas terminó corregido, así que son preguntas legítimas)
 ```

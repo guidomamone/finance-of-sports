@@ -1199,6 +1199,37 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     }
     return null;
   };
+  // (to-do 222, escalón aprobado por Guido el 2026-10-13) CUADRO POR NATURALEZA: "¿Se carga <cuadro> como desglose conjunto / por naturaleza /
+  // transversal…?" lo decide una cuenta, no una persona. Hasta acá siempre se contestó así a mano (Asteras 2020-2025, OFI 2020 y 2025, Levadiakos
+  // 2020). El cuadro es el PRIMER bloque de la duda (no del estado); su total es su fila de total o subtotal de un lado (si hay varias, todas con
+  // el mismo importe: Asteras imprime "Σύνολο" bajo el cuadro y bajo su "Κατανομή ανά κατηγορία"); a ese total se le restan sus filas de otro
+  // lado. Se prueban TODAS las combinaciones de renglones del estado de ese lado, más las filas del financiero del mismo signo (AEL 2023: el
+  // cuadro 2.745.139,63 = costo de ventas + administración + comercialización + intereses 7.608,42). COMPUERTA, exacto a media unidad por fila:
+  //   - UNA sola combinación da el total y la propuesta de la IA es "sí": sí (Asteras 2020: 4.444.615,37 = L862 + L866 + L867);
+  //   - NINGUNA da y la carga no usa filas de ese cuadro: no (OFI 2020 gastos: 5.716.721,43 sin los intereses; ninguna combinación);
+  //   - si no, a la cola. Solo esa forma de pregunta: "¿Se carga la nota 30 solo como detalle alternativo, sin reemplazar…?" (Cuiabá 2022) es
+  //     otra pregunta, donde "sí" quiere decir que NO entra.
+  // Medido en las 17 dudas de esta forma de Generados/: decide 14; las 7 contestadas, con la misma respuesta; 0 distintas.
+  const cuadroNaturaleza = (d) => {
+    if (!/^¿\s*Se\s+cargan?\b[^?]*\bcomo\s+(?:un\s+)?(?:desglose|detalle)\s+(?:conjunto|por\s+naturaleza|transversal)/i.test(d.pregunta || '')) return null;
+    const C = (d.bloques || [])[0]; const est = new Set(U.estado || []); if (!C || est.has(C)) return null;
+    const num = (f) => Math.abs(parseNumber(f.actual) ?? NaN); const sg = (f) => Math.sign(parseNumber(f.actual) || 0);
+    const filasC = (F.filas || []).filter((f) => f.bloque === C);
+    const tots = filasC.filter((f) => (f.tipo === 'total' || f.tipo === 'subtotal') && (f.lado === 'ingreso' || f.lado === 'gasto'));
+    if (!tots.length) return null;
+    const lado = tots[0].lado; const T = num(tots[0]);
+    if (!isFinite(T) || tots.some((f) => f.lado !== lado || Math.abs(num(f) - T) > 0.01)) return null;
+    const otros = filasC.filter((f) => f.tipo === 'renglon' && f.lado !== lado && isFinite(num(f)));
+    const P = T - otros.reduce((a, f) => a + num(f), 0);
+    const cand = (F.filas || []).filter((f) => est.has(f.bloque) && f.tipo === 'renglon' && (f.lado === lado || (f.lado === 'financiero' && sg(f) === (lado === 'gasto' ? -1 : 1)))).map((f) => ({ f, v: num(f) })).filter((x) => isFinite(x.v) && x.v > 0);
+    if (!cand.length || cand.length > 14) return null;
+    const dec = (String(tots[0].actual).split(/[.,]/).pop() || '').length; const u = dec > 0 && dec <= 2 ? 10 ** -dec : 1;
+    const dan = [];
+    for (let m = 1; m < (1 << cand.length); m++) { let s = 0; let k = 0; for (let i = 0; i < cand.length; i++) if ((m >> i) & 1) { s += cand[i].v; k++; } if (Math.abs(s - P) <= 0.5 * u * (k + 1 + otros.length)) dan.push(m); }
+    if (dan.length === 1 && d.propuesta === 'sí') return { decision: 'sí', porque: `el cuadro ${C} (${String(tots[0].actual)}) es la suma de ${cand.filter((x, i) => (dan[0] >> i) & 1).map((x) => `L${x.f.linea}`).join(' + ')}` };
+    if (!dan.length && ![...ing, ...gas].some((f) => f.bloque === C)) return { decision: 'no', porque: `el cuadro ${C} (${String(tots[0].actual)}) no es la suma de ningún grupo de renglones del estado, y la carga no usa sus filas` };
+    return null;
+  };
   const pendientes = []; const contestadas = []; // (to-do 211) las dudas que irían a la cola se juntan por cuadro antes de escribirlas (abajo)
   for (const [origen, lista] of [['localizar', U.dudas || []], ['extraer', F.dudas || []]]) {
     for (const d of lista.map(dudaComoObjeto)) {
@@ -1255,6 +1286,8 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         pendientes.push({ origen, motivo: 'duda-tema', detalle: det, que, pregunta: d.pregunta || d.texto, bloques: d.bloques || [], extra: { pagina, lineas, propuesta } });
         continue;
       }
+      const cn = cuadroNaturaleza(d);
+      if (cn) { notas.push(`duda de ${origen} decidida por las sumas (to-do 222): ${cn.decision}, ${cn.porque}. "${d.pregunta}"`); continue; }
       pendientes.push({ origen, motivo: `duda-de-${origen}`, detalle: (d.pregunta || d.texto).slice(0, 80), que, pregunta: d.pregunta || d.texto, bloques: d.bloques || [], extra: { pagina, lineas, propuesta } });
     }
   }

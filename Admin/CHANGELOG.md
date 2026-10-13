@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 683 — OFI 2020 y escalón de las dudas de cuadro por naturaleza (2026-10-13)
+
+- Lote 68: OFI 2020 desde el anexo (`OFI_notes_2020`, que trae la cuenta de resultados; no estaba en el lote 67).
+- To-do 222: `verificar.mjs` decide sola la duda "¿se carga el cuadro como desglose conjunto/por naturaleza/transversal?" con una cuenta
+  (una combinación exacta de renglones del estado -> sí; ninguna y la carga no usa el cuadro -> no). 7 de 7 respuestas iguales; 210
+  documentos idénticos.
+- To-do 221: `caja-deuda.mjs` tomó el número de nota como caja en AEK (revertido; barrido sin otros casos).
+
 ## Versión 682 — Lote 67 (Grecia), gestiones tanda 2, primer año y cola sin Guido, limpieza de la carga (2026-10-13)
 
 - Lote 67: Asteras 2019-2020, Levadiakos 2019-2025, OFI 2018-2025 (sin 2020) y AEK 2016-2020, con sus altas; caja y deuda de los tres
