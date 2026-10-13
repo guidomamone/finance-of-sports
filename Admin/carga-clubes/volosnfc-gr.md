@@ -96,7 +96,8 @@ Generados/Grecia/Volos NFC/Volos_income_stmt_2024-06-30.categorias.json (escaló
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Έξοδα διοίκησης | pág. 1, Jev 1 |
+| 1 | Έξοδα διοίκησης (sin el costo de personal de la nota 13) | pág. 1, precedente |
+| 2 | Σύνολο κόστους μισθοδοσίας περιόδου | pág. 1, precedente |
 
 ### Meta
 
@@ -105,14 +106,12 @@ Generados/Grecia/Volos NFC/Volos_income_stmt_2024-06-30.categorias.json (escaló
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-10): fila = 5.104,81. Interés cobrado: suma al resultado. El estado imprime cobrado y pagado sin signo y la carga sumaba los dos como costo (2024: 2 × 5.104,81 de diferencia con el resultado impreso). Revisión de la cola de Grecia.
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-10): fila = -5.967,01. Interés pagado: resta del resultado (ver el ajuste del interés cobrado del mismo documento).
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-13): reportType = official_balance_sheet. Claude 2026-10-13: el documento es el estado de resultados anual de la PAE ('Β. 2,1 ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ', una columna, sin comparativo) y su resultado del período cierra exacto en verificar.mjs
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-13): fila = 2.533.828,84. Claude 2026-10-13 (to-do 219): el estado es por función y 'Έξοδα διοίκησης' (5.379.127,72) es el único gasto operativo; la nota 13 de Volos_notes_2024-06-30 abre el costo de personal (2.845.298,88), que va aparte a wages_squad. Queda 5.379.127,72 - 2.845.298,88.
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-13): fila = 2.845.298,88. Claude 2026-10-13 (to-do 219): costo total de personal de la nota 13 (sueldos, cargas sociales y beneficios), dentro de 'Έξοδα διοίκησης'.
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-13): categoria = wages_squad. Claude 2026-10-13 (to-do 219): sueldos y cargas sociales del personal (club-data-mapping: 'Sueldos del Personal, Cargas Sociales' -> wages_squad)
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-13): categoria = admin_general_expense. Claude 2026-10-13 (to-do 219): gastos de administración sin el personal
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-13): null, SIN VERIFICAR (coincidencia NO exacta en los rosters cacheados: "Volos" en 2023–24 Super League Greece | "Niki Volos" en 2023–24 Super League Greece 2).
 ```
 
 ## 2023
