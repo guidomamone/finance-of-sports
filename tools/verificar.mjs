@@ -747,7 +747,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const ajuste = (arr, total, nombre, lineaTotal) => {
       if (total == null || !isFinite(total)) { ch.push({ nombre: `total de ${nombre}`, ok: null, detalle: 'el documento no lo imprime' }); return arr; }
       const sm = suma(arr); const tolRed = Math.max(TOL, 0.5 * arr.reduce((a, f) => a + (f.u || 0), 0));
-      if (cerca(sm, total)) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `${r6(sm)} = ${r6(total)}` }); return arr; }
+      if (cerca(sm, total)) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `${r6(sm)} = ${r6(total)}`, suma: sm, impreso: total }); return arr; } // suma/impreso: los usa el escalón del primer año (to-do 214)
       // Un total que es UNA fila (un total de verdad, o desde la lectura 2 también un renglón: la fila de la línea que extraer marcó como total),
       // con otras líneas del mismo lado fuera de ese total. Nottingham Forest: "Turnover" + "Profit on disposal" aparte.
       const filaTotal = estado.find((f) => f.tipo !== 'renglon' && cerca(Math.abs(f.M || 0), total)) || (nivel >= 2 ? estado.find((f) => (lineaTotal != null && f.linea === lineaTotal) || (f.tipo === 'renglon' && cerca(Math.abs(f.M || 0), total))) : null);
@@ -788,7 +788,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // resultado: ingresos - gastos + financiero + impuesto, probando los signos de financiero e impuesto (cada documento los imprime a su manera)
     let objetivo = resFinal; let conImp = true; let nombreRes = 'resultado del ejercicio';
     if ((objetivo == null || !isFinite(objetivo)) && nivel >= 1 && filaAntes) { objetivo = filaAntes.M; conImp = false; nombreRes = 'resultado antes de impuestos'; }
-    let okRes = null; let lect = null; let exactoRes = false;
+    let okRes = null; let lect = null; let exactoRes = false; let difRes = null; // difRes: lo usa el escalón del primer año (to-do 214)
     if (objetivo != null && isFinite(objetivo)) {
       // (to-do 155, escalón 1, aprobado por Guido el 2026-10-07) ESCALERA DE LA COMPUERTA DEL RESULTADO: primero las 4 combinaciones de signo
       // pidiendo el resultado EXACTO (media unidad impresa por fila, como la lectura 5); solo si ninguna es exacta, la tolerancia de siempre
@@ -802,7 +802,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         for (const [sf, si, nm] of COMBOS) {
           if (!conImp && si === -1) continue;
           const pat = patDe(sf, si);
-          if (exacto ? Math.abs(Math.abs(pat) - Math.abs(objetivo)) <= tol5 : cerca(Math.abs(pat), Math.abs(objetivo))) { okRes = true; lect = nm; exactoRes = exacto; break; }
+          if (exacto ? Math.abs(Math.abs(pat) - Math.abs(objetivo)) <= tol5 : cerca(Math.abs(pat), Math.abs(objetivo))) { okRes = true; difRes = Math.abs(Math.abs(pat) - Math.abs(objetivo)); lect = nm; exactoRes = exacto; break; }
         }
         if (okRes) break;
         // (to-do 212, escalón 2, aprobado por Guido el 2026-10-13) EL SIGNO DE CADA FILA DEL FINANCIERO POR SU RÓTULO, entre los signos en
@@ -813,13 +813,13 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         if (exacto && finL.some((f) => signoRotulo(f)) && Math.abs(conSignoRotulo(finL) - conSigno(finL)) > 1e-9) {
           for (const si of conImp ? [1, -1] : [1]) {
             const pat = suma(ing) - suma(gas) + conSignoRotulo(finL) + (conImp ? si * conSigno(imp) : 0);
-            if (Math.abs(Math.abs(pat) - Math.abs(objetivo)) <= tol5) { okRes = true; lect = si === 1 ? 'financiero por rótulo' : 'financiero por rótulo, impuesto invertido'; exactoRes = true; break; }
+            if (Math.abs(Math.abs(pat) - Math.abs(objetivo)) <= tol5) { okRes = true; difRes = Math.abs(Math.abs(pat) - Math.abs(objetivo)); lect = si === 1 ? 'financiero por rótulo' : 'financiero por rótulo, impuesto invertido'; exactoRes = true; break; }
           }
           if (okRes) break;
         }
       }
       if (!okRes) okRes = false;
-      ch.push({ nombre: nombreRes, ok: okRes, detalle: okRes ? `cierra (${lect})` : `ingresos ${r6(suma(ing))} - gastos ${r6(suma(gas))} ± financiero ${r6(conSigno(fin))}${conImp ? ` ± impuesto ${r6(conSigno(imp))}` : ''} no da el impreso ${r6(objetivo)}` });
+      ch.push({ nombre: nombreRes, ok: okRes, detalle: okRes ? `cierra (${lect})` : `ingresos ${r6(suma(ing))} - gastos ${r6(suma(gas))} ± financiero ${r6(conSigno(fin))}${conImp ? ` ± impuesto ${r6(conSigno(imp))}` : ''} no da el impreso ${r6(objetivo)}`, dif: difRes });
     } else ch.push({ nombre: 'resultado del ejercicio', ok: null, detalle: 'extraer.mjs no encontró el resultado impreso' });
     const okTot = ch.filter((c) => c.nombre.startsWith('total')).map((c) => c.ok);
     const cierra = okRes === true ? !okTot.includes(false) : okRes === null && okTot.includes(true) && !okTot.includes(false);
@@ -1138,7 +1138,19 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   }
   if (!metaPrev) {
     chequeos.push({ nombre: 'año anterior cargado', ok: null, detalle: prev ? `el sitio no tiene ${prev}: este chequeo no se puede hacer` : 'club nuevo' });
-    if (vecinos.includes(true)) { /* un documento vecino confirmó las cifras: no hace falta el caso "primer año" */ } else
+    // (to-do 214, escalón 1, aprobado por Guido el 2026-10-13: "no quiero revisar yo el primer año del club") Lo que pedía el caso es mirar
+    // que ingresos, gastos y resultado coincidan con lo impreso. Si el documento imprime los TRES y lo que se carga (las filas finales,
+    // después de los ajustes) da cada uno a 0,01% o menos (los redondeos de las notas en miles; la tolerancia de siempre, `cerca`, deja pasar
+    // hasta 1% en un club chico: Novorizontino 2010, gastos 163.946 contra 165.637), el caso no hace falta. Si falta alguno impreso o uno no
+    // da, a la cola como antes. Medido sobre los 115 "primer-anio" que pasaron por la cola: ninguno terminó en una corrección; cierra 24 de
+    // los 77 aceptados (Parma 2018: ingresos 11.457.715 contra 11.457.714, gastos 33.744.261 contra 33.744.262) y ninguno de los 2 descartados.
+    const REL214 = 1e-4;
+    const tot214 = (n, final) => { const c = chequeos.find((x) => x.nombre === `total de ${n}`); return c?.ok === true && c.impreso != null && Math.abs(final - c.impreso) <= REL214 * Math.abs(c.impreso) ? c.impreso : null; };
+    const ti214 = tot214('ingresos', suma(ing)); const tg214 = tot214('gastos', suma(gas));
+    const res214 = chequeos.find((x) => x.nombre === 'resultado del ejercicio');
+    const imprime3 = ti214 != null && tg214 != null && res214?.ok === true && res214.dif != null && res214.dif <= REL214 * Math.abs(ti214);
+    if (imprime3) chequeos.push({ nombre: 'primer año', ok: true, detalle: 'ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)' });
+    if (vecinos.includes(true) || imprime3) { /* un documento vecino, o los tres totales impresos, confirmaron las cifras: no hace falta el caso "primer año" */ } else
     caso('primer-anio', String(year), `Primer año automático de este club${clubId ? '' : ' (club nuevo)'}: no hay año anterior cargado para comparar. Revisar que los ingresos (${r6(suma(ing))}), los gastos (${r6(suma(gas))}) y el resultado coincidan con el estado de resultados impreso.`, { pagina: estado[0]?.pagina, lineas: estado.length ? [Math.min(...estado.map((f) => f.linea)), Math.max(...estado.map((f) => f.linea))] : null });
   }
   // un total o el resultado que no cierran -> cola (salvo que Guido ya lo haya aceptado)
