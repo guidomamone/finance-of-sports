@@ -7,7 +7,7 @@
 // son del grupo dueño del club, no un estado del club). Y donde el documento trae los dos, nadie le dice a Guido cuál conviene.
 //
 // DÓNDE SE USA (Versión 561, aprobado por Guido el 2026-10-06): lote.mjs y antes-de-localizar.mjs llaman a fijarPerimetroDeClubes() (abajo)
-// antes de la compuerta del perímetro. Medido contra Admin/tests/perimetro-verdad.tsv: 77 bien, 0 mal, 23 sin decidir. Cualquier cambio acá
+// antes de la compuerta del perímetro. Medido contra Admin/mediciones/perimetro-verdad.tsv: 77 bien, 0 mal, 23 sin decidir. Cualquier cambio acá
 // se mide otra vez con esa verdad (--verdad ... --jev) y tiene que seguir en 0 mal.
 //
 // LA ESCALERA (solo propone; lo que no se decide va a la cola humana):
@@ -30,8 +30,8 @@
 //                   2 o 3 votos → consolidado · 0 → individual · 1 → cola.
 //
 // USO:
-//   node tools/perimetro-senales.mjs --verdad Admin/tests/perimetro-verdad.tsv          # ensayo: pasos A y B sin Jev (C3 = "?")
-//   node tools/perimetro-senales.mjs --verdad Admin/tests/perimetro-verdad.tsv --jev    # con Jev (~US$ 0,0001 por documento)
+//   node tools/perimetro-senales.mjs --verdad Admin/mediciones/perimetro-verdad.tsv          # ensayo: pasos A y B sin Jev (C3 = "?")
+//   node tools/perimetro-senales.mjs --verdad Admin/mediciones/perimetro-verdad.tsv --jev    # con Jev (~US$ 0,0001 por documento)
 //   node tools/perimetro-senales.mjs --lista Admin/lotes/lote-NN.txt [--jev]                  # sin verdad: solo la propuesta
 //   node tools/perimetro-senales.mjs --md "Clubes/Italia/AC Milan/x.md" --detalle      # un documento, con cada tabla encontrada
 // Jev: Admin/api-keys/jev.env con JEV_API_KEY=...; respuestas guardadas en Generados/_cache/jev-perimetro.jsonl (no se paga dos veces).

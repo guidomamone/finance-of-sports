@@ -14,7 +14,7 @@
 //
 // CÓMO SE USA (y con qué cuidado, porque un error de Claude se propagaría):
 //   - PRECEDENTE del mismo club (escalón 0, gratis, sin Jev ni Claude): solo lo aprendido con confianza >= 0,90 (MIN_PRECEDENTE). Medido en
-//     el backtest de categorizar-claude (Admin/tests/test-categorizar-claude.md): Claude >= 0,90 acertó 98,5%.
+//     el backtest de categorizar-claude (Admin/mediciones/test-categorizar-claude.md): Claude >= 0,90 acertó 98,5%.
 //   - EJEMPLOS para Jev y para Claude (los "rubros parecidos de otros clubes"): lo aprendido con >= 0,80 (94,3% en el backtest).
 //   - LO CARGADO EN EL SITIO SIEMPRE GANA: si producción ya tiene ese (club, lado, rubro), se usa producción y lo aprendido se ignora. Cuando
 //     un ejercicio se carga (etapa 6), su versión curada pasa a mandar sola.

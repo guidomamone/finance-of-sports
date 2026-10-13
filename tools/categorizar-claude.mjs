@@ -14,7 +14,7 @@
 //       del mismo lado (ingreso/gasto), siempre con la misma categoría -> se copia. Gratis, sin API.
 //       Es el "tier 0" del to-do 98 (tools/suggest-category-precedent.mjs hace lo mismo como consulta a mano).
 //   (1) Jev (tools/jev-categorizar.mjs) con confianza >= 0,90 -> se acepta. Backtest sobre 3.975 rubros ya
-//       cargados (Admin/tests/test-jev-resultados_lado_ej_otrosclubes.md): 94,4% de acierto en esa banda, que cubre
+//       cargados (Admin/mediciones/test-jev-resultados_lado_ej_otrosclubes.md): 94,4% de acierto en esa banda, que cubre
 //       ~69% de los rubros. Jev cuesta casi nada, pero ve un rubro por vez y sin las convenciones del club.
 //   (2) El resto -> Claude (este archivo). Una llamada por documento, con:
 //         - la lista de categorías de data/category-map.js con su lado y su descripción completa (el comentario
@@ -30,7 +30,7 @@
 //       Admin/dudas-por-club.md). No se inventa.
 //
 // ---------------------------------------------------------------------------------------------------------
-// NÚMEROS MEDIDOS (backtest del 2026-09-30, detalle en Admin/tests/test-categorizar-claude.md)
+// NÚMEROS MEDIDOS (backtest del 2026-09-30, detalle en Admin/mediciones/test-categorizar-claude.md)
 //   Sobre los 1.217 rubros que Jev deja < 0,90 (de 3.975; 224 club-años), Opus 5.5, esfuerzo low, con contexto del club:
 //     - acierto 76,6% (Jev en esos mismos rubros: 57,1%). Por confianza de Claude: >= 0,90 -> 98,5% (132 rubros);
 //       0,80-0,90 -> 94,3% (296); 0,60-0,80 -> 75,2% (488); < 0,60 -> 51,8% (301). La confianza SÍ separa.
@@ -47,7 +47,7 @@
 // MODOS
 //
 //   --backtest   ¿Cuánto acierta Claude en lo que Jev deja < 0,90? Toma las filas de un backtest de Jev
-//                (por defecto Admin/jev/backtest_lado_ej_otrosclubes.jsonl: una línea por rubro único de un club
+//                (por defecto Admin/mediciones/backtests/jev/backtest_lado_ej_otrosclubes.jsonl: una línea por rubro único de un club
 //                ya cargado, con `truth` = la categoría de producción y `confidence` = la de Jev), se queda con
 //                las < 0,90, les asigna el club-año donde aparecen (el ejercicio más reciente del club que tiene
 //                ese texto) y manda una llamada por club-año.
@@ -92,7 +92,7 @@ import vm from 'node:vm';
 const root = resolve(import.meta.dirname, '..');
 const envPath = resolve(root, 'Admin', 'api-keys', 'claude-api.env');
 const costLogPath = resolve(root, 'Admin', 'registros', 'api', 'claude-api.jsonl');
-const outDir = resolve(root, 'Admin', 'categorizar-claude');
+const outDir = resolve(root, 'Admin', 'mediciones', 'backtests', 'categorizar-claude');
 
 // Precios por millón de tokens (skill claude-api, tabla cacheada 2026-09-25). La escritura de caché cuesta 1,25x la
 // entrada y la lectura 0,1x. Los tokens de "thinking" se cobran como salida (vienen dentro de output_tokens).
@@ -576,7 +576,7 @@ if (isMain) {
     conc: Number(flagVal('--concurrencia') || 4),
     seed: Number(flagVal('--semilla') || 7),
     umbral: Number(flagVal('--umbral-jev') || 0.9),
-    jevJsonl: flagVal('--jev-jsonl') || 'Admin/jev/backtest_lado_ej_otrosclubes.jsonl',
+    jevJsonl: flagVal('--jev-jsonl') || 'Admin/mediciones/backtests/jev/backtest_lado_ej_otrosclubes.jsonl',
     tag: flagVal('--etiqueta') || '',
     sinClub: args.includes('--sin-club'),
     dry: args.includes('--dry-run'),

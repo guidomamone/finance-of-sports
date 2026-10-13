@@ -173,7 +173,7 @@ categorización, "E6 (selección)" = `proponer-carga.mjs`, que hasta hoy era un 
 - `tools/cargar.mjs` (nuevo): la etapa 6. Propuesta por defecto, `--escribir` con reversión, `--lista`, `--salida`, `--comparar`.
 - `tools/proponer-carga.mjs`: exporta `seleccionarFilas()`, `briefingFor()`, `loadSite()`, `parseNumber()` (el CLI no cambia y no corre al
   importarse); marca el `ancla` de cada fila abierta en una nota; `esNoPL()` (punto 4.3). OJO: esto último cambia lo que mide
-  `--backtest` respecto de `Admin/tests/test-eleccion-tabla.md` (no se volvió a medir: cuesta Jev).
+  `--backtest` respecto de `Admin/mediciones/test-eleccion-tabla.md` (no se volvió a medir: cuesta Jev).
 - `tools/periodo.mjs`: temporadas "AAAA-AA" (punto 4.7a).
 
 ## 6. Decisiones para Guido

@@ -121,7 +121,7 @@ Mitigaciones:
                   perímetro; si no (cambio de perímetro en la serie, Parma), frena como siempre y decide Guido
 ```
 
-  En el ensayo no pregunta a Jev ni escribe: dice qué fijaría. Medido contra `Admin/tests/perimetro-verdad.tsv` (12 clubes italianos +
+  En el ensayo no pregunta a Jev ni escribe: dice qué fijaría. Medido contra `Admin/mediciones/perimetro-verdad.tsv` (12 clubes italianos +
   Juventus y Novorizontino de control): 77 bien, 0 mal, 23 sin decidir; sobre los 517 documentos cargados no propone nada distinto de lo
   cargado (fuera de Italia no decide: reconoce títulos en italiano e inglés). Lote 14: de 29 documentos frenados a 0.
 

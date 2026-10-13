@@ -2,7 +2,7 @@
 // tools/respuestas-cache.mjs — MEMORIA DE RESPUESTAS PAGAS de la categorización (Jev y Claude por API), por (club, lado, rubro). Gratis: solo
 // lee y agrega líneas a un archivo.
 //
-// POR QUÉ EXISTE (Versión 321, 2026-09-30). Dos problemas medidos en el test de la etapa 6 (Admin/tests/test-cargar.md):
+// POR QUÉ EXISTE (Versión 321, 2026-09-30). Dos problemas medidos en el test de la etapa 6 (Admin/mediciones/test-cargar.md):
 //   1. PAGAR DOS VECES LO MISMO. La categorización de un documento se invalida entera cuando cambia su lista de rubros (huellas,
 //      tools/huellas.mjs), y cada arreglo de la preparación (etapa 3: qué filas, qué escala, qué tablas) cambia las listas de cientos de
 //      documentos a la vez. Sin memoria, cada arreglo volvía a mandar a Jev y a Claude las MISMAS filas que ya habían contestado (~US$ 0,04 por

@@ -1,11 +1,11 @@
 # Test de categorización con Claude (escalón 2, lo que Jev deja < 0,90)
 
 Generado el 2026-09-30 con `tools/categorizar-claude.mjs --backtest`. Gasto total del test: **US$ 5,62** (314 llamadas, 0 errores, todo
-registrado en `Admin/registros/api/claude-api.jsonl` con `tarea: "categorizar"`). Resultados por rubro: `Admin/categorizar-claude/backtest_*.jsonl`.
+registrado en `Admin/registros/api/claude-api.jsonl` con `tarea: "categorizar"`). Resultados por rubro: `Admin/mediciones/backtests/categorizar-claude/backtest_*.jsonl`.
 
 ## Qué se midió
 
-- **Rubros**: los 1.217 de 3.975 que Jev dejó con confianza < 0,90 en `Admin/jev/backtest_lado_ej_otrosclubes.jsonl` (lado conocido, ejemplos
+- **Rubros**: los 1.217 de 3.975 que Jev dejó con confianza < 0,90 en `Admin/mediciones/backtests/jev/backtest_lado_ej_otrosclubes.jsonl` (lado conocido, ejemplos
   solo de otros clubes). "Verdad" = la categoría de producción.
 - **Agrupación**: cada rubro se asignó al ejercicio más reciente del club que lo tiene; 224 club-años, una llamada por club-año con todos
   sus pendientes juntos.

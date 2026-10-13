@@ -4,14 +4,14 @@
 //
 // Corre en tu terminal, 0 tokens de Claude Code. Jev es una IA barata y de volumen (~$42 por MIL MILLONES de tokens de entrada):
 // para cada rubro (texto tal cual figura en el balance) devuelve la categoría del sitio (data/category-map.js), su confianza
-// y las probabilidades por categoría. NO decide nada por sí sola: solo escribe resultados (Admin/jev/).
+// y las probabilidades por categoría. NO decide nada por sí sola: solo escribe resultados (Admin/mediciones/backtests/jev/).
 //
 // DOS MODOS:
 //
 //   --backtest   ¿Es CONFIABLE Jev? (to-do 99). Toma rubros de ejercicios YA CARGADOS en el sitio, cuya categoría real ya
 //                decidió una sesión con criterio humano, se los pregunta a Jev SIN mostrarle esa respuesta, y compara.
 //                Lo que importa no es el acierto promedio: es si hay errores con confianza ALTA (el caso peligroso, el que
-//                una integración automática aceptaría sin que nadie lo mire). Deja Admin/tests/test-jev-resultados.md.
+//                una integración automática aceptaría sin que nadie lo mire). Deja Admin/mediciones/test-jev-resultados.md.
 //                Muestra aleatoria (semilla fija) repartida entre categorías y clubes.
 //
 //   --listos     La etapa de producción: toma los `<md>.rubros.json` que dejó tools/pipeline.mjs (documentos `listo-para-jev`)
@@ -184,7 +184,7 @@ async function backtest() {
   }
   console.log(`Muestra: ${pool_.length} rubros. ${DRY ? '(dry-run, no llamo a Jev)' : ''}`);
   if (DRY) return;
-  const key = readKey(); const outPath = resolve(root, 'Admin', 'jev', `backtest${tag}.jsonl`); const rows = [];
+  const key = readKey(); const outPath = resolve(root, 'Admin', 'mediciones', 'backtests', 'jev', `backtest${tag}.jsonl`); const rows = [];
   const retrieve = K_EXAMPLES ? makeRetriever([...uniq.values()].filter((x) => !x.conflict)) : null;
   await pool(pool_, async (x) => {
     const r = await askJev(key, { label: x.label, club: x.club, side: x.side, examples: retrieve ? retrieve(x) : null });
@@ -216,9 +216,9 @@ function report(rows, errors) {
   for (const r of rows) { (byTruth[r.truth] ||= { n: 0, ok: 0 }); byTruth[r.truth].n++; if (ok(r)) byTruth[r.truth].ok++; }
   lines.push('', '## Acierto por categoría real', '', '| Categoría | Rubros | Aciertos |', '|---|---|---|');
   for (const [k, v] of Object.entries(byTruth).sort((a, b) => b[1].n - a[1].n)) lines.push(`| ${k} | ${v.n} | ${v.ok} |`);
-  writeFileSync(resolve(root, 'Admin', 'tests', `test-jev-resultados${tag}.md`), lines.join('\n') + '\n');
+  writeFileSync(resolve(root, 'Admin', 'mediciones', `test-jev-resultados${tag}.md`), lines.join('\n') + '\n');
   console.log(lines.slice(0, 14).join('\n'));
-  console.log(`\nErrores con confianza ≥ 0,70: ${bad.length}. Informe completo en Admin/tests/test-jev-resultados${tag}.md`);
+  console.log(`\nErrores con confianza ≥ 0,70: ${bad.length}. Informe completo en Admin/mediciones/test-jev-resultados${tag}.md`);
 }
 
 // ---------------------------------------------------------------- LISTOS

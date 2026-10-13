@@ -142,9 +142,9 @@ ni en el comentario de ningún archivo de código.
     `diff` antes/después de `audit.js`, `estado.mjs` y `lote.mjs --lista Admin/lotes/prueba-rapida.txt` (ensayo gratis). Un commit por paso.
     Los registros que solo se agregan (`cola-revision.jsonl`, `cargar-ultimo.jsonl`) citan rutas viejas como texto: no se reescriben,
     pero hay que confirmar que ningún script las abre. HECHO: raíz (e2.json, Business Books), lotes (`Admin/lotes/`, los cerrados en Archive), claves (`Admin/api-keys/`,
-    `schema.sql` a `tools/supabase/`) y logs de gasto de API (`Admin/registros/api/`).
+    `schema.sql` a `tools/supabase/`) logs de gasto de API (`Admin/registros/api/`) y
+    mediciones (`Admin/mediciones/`).
     FALTA, en este orden (decidido con Guido):
-      c) `Admin/mediciones/`: `tests/`, backtests (`jev/`, `categorizar-claude/`, `altas-claude/`), `informes-etapa6-italia/`, `propuestas/`.
       d) Registros del pipeline (los .jsonl/.txt de la raíz de Admin y los 4 ocultos) a `Admin/registros/`. El paso más grande (~20 tools).
       e) `sourcing-europa-este-scripts/` a `tools/sourcing-europa-este/`.
       f) `fuentes/`: las notas internas (carpetas de país, `_indice/`, `README.md`) a `Admin/sourcing/`; en `fuentes/` quedan solo las

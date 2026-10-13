@@ -30,7 +30,7 @@
 //     Todo en MILLONES de moneda nativa (convención del sitio, club-data-mapping/referencia/fx.md).
 //  4. CATEGORÍA DE CADA FILA: la del `.categorias.json` del pipeline (escalón 0 precedente del club, 1 Jev >= 0,90, 2 Claude >= 0,80). Si
 //     la fila no está en esa lista (hasta la Versión 320 la etapa 3 del pipeline y la selección de filas de acá NO elegían las mismas filas:
-//     Admin/tests/test-cargar.md 4.1; desde la 321 la etapa 3 prepara exactamente esta selección, así que esto pasa solo con listas viejas),
+//     Admin/mediciones/test-cargar.md 4.1; desde la 321 la etapa 3 prepara exactamente esta selección, así que esto pasa solo con listas viejas),
 //     se prueba el precedente del mismo club, exacto o por familia de etiquetas (precedenteFamilia(), gratis). Lo que queda sin categoría o con confianza baja
 //     NO se carga; si eso es más del --max-sin-categoria (default 5%) del dinero de su lado, frena.
 //       - `no_es_rubro` no se carga como línea. Los resultados financieros (intereses, diferencias de cambio, participaciones) y el impuesto
@@ -66,7 +66,7 @@
 // (mismo mecanismo que alta-club.mjs). Este script solo NO commitea (el commit por año lo hace tools/cargar-lote.mjs). No toca `.claude/skills/`, `Admin/TODO.md` ni `CHANGELOG.md`.
 //
 // ----------------------------------------------------------------------------
-// MEDIDO (2026-09-30, informe completo en Admin/tests/test-cargar.md)
+// MEDIDO (2026-09-30, informe completo en Admin/mediciones/test-cargar.md)
 // ----------------------------------------------------------------------------
 // Backtest de 18 ejercicios ya cargados (8 países, año borrado en un worktree y reconstruido con las etapas 3-5 reales): 1 carga (Alianza
 // Lima 2023, idéntico a producción, audit.js 0 P0/P1 al escribir) y 17 frenan, TODOS con algo mal en la propuesta o un dato faltante: el
@@ -88,7 +88,7 @@
 //   node tools/cargar.mjs --lista <x> --comparar <raíz de otro checkout>
 //        BACKTEST: compara cada propuesta contra el MISMO ejercicio cargado en otro checkout (producción). Se corre en un worktree donde se
 //        BORRÓ ese año del data file (si no, frena por "ya cargado") y se rehicieron las etapas 3-5 del pipeline sobre esos documentos.
-//        Mide totales (ingresos / gastos / resultado), % del dinero en la categoría correcta, fx y liga. Ver Admin/tests/test-cargar.md.
+//        Mide totales (ingresos / gastos / resultado), % del dinero en la categoría correcta, fx y liga. Ver Admin/mediciones/test-cargar.md.
 //   Extras: --max-sin-categoria 0.05, --umbral-claude 0.8, --json (con --lista: JSON en vez de una línea)
 // ============================================================================
 
@@ -339,7 +339,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     const listaAnios = Object.entries(her.porAnio).map(([y, v]) => `${y} ${v}`).join(', ') || 'ninguno';
     // Se hereda SOLO el consolidado: si el club siempre se cargó consolidado y el documento trae el consolidado (solo o junto al
     // individual), es el mismo perímetro. Heredar "individual" de un documento que trae los dos no alcanza: la selección de filas no sabe
-    // elegir las columnas individuales (Bayern cargaba las dos, ver Admin/tests/test-eleccion-tabla.md).
+    // elegir las columnas individuales (Bayern cargaba las dos, ver Admin/mediciones/test-eleccion-tabla.md).
     const cerc = perimetroCercano(her, year);
     if (cerc?.perimetro === 'consolidado' && (docTipo === 'consolidado' || docTipo === 'ambos')) { perimetro = 'consolidado'; P.avisos.push(`perímetro heredado del año cargado más cercano (${cerc.anio}, consolidado); el documento trae el consolidado${docTipo === 'ambos' ? ' (y también el individual: revisar que no se hayan cargado filas de los dos)' : ''}. Años cargados: ${listaAnios}`); }
     else {

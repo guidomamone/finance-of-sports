@@ -36,7 +36,7 @@ Qué hay hoy:
 - `inventario-pendiente.md` — foto del 2026-09-25 de lo que faltaba transcribir y cargar; la reemplazó `Admin/transcripciones-estado.jsonl`. Archivado el 2026-10-06 (to-do 109).
 - `lotes/` — las listas de los lotes del pipeline ya corridos (`lote-01` a `lote-65`) y `juventus-etapa2.txt`. Los lotes abiertos y las listas de prueba están en `Admin/lotes/`; al cerrar un lote, su lista viene acá. Archivado el 2026-10-06 (to-do 109).
 - `prompts/` — los prompts de sourcing de Italia y de las regiones (2026-10-03), ya usados. Archivado el 2026-10-06 (to-do 109).
-- `tests/` — variantes viejas de las mediciones de `Admin/tests/` (`test-proponer-carga_F_*`, `_filtro*`, `_v1_mdviejo`, `test-jev-resultados_base/_lado/_lado_ejemplos`). Las versiones vigentes siguen en `Admin/tests/`, donde las escriben las tools. Archivado el 2026-10-06 (to-do 109).
+- `tests/` — variantes viejas de las mediciones de `Admin/mediciones/` (antes `Admin/tests/`) (`test-proponer-carga_F_*`, `_filtro*`, `_v1_mdviejo`, `test-jev-resultados_base/_lado/_lado_ejemplos`). Las versiones vigentes siguen en `Admin/mediciones/`, donde las escriben las tools. Archivado el 2026-10-06 (to-do 109).
 - `medicion-caja-deuda-ia.txt` — la salida de una medición de caja y deuda con IA (2026-10-01). Archivado el 2026-10-06 (to-do 109).
 - `auditoria-pipeline-2026-10-02.md` — la auditoría del pipeline del 2026-10-02; sus propuestas pasaron al TODO y a `Admin/PIPELINE.md`. Archivado el 2026-10-06 (to-do 109).
 - `selector-merge-a-produccion.md` — era `Prototyping/Selector/MERGE-A-PRODUCCION.md`: cómo se llevó el prototipo 4 del selector a producción. Archivado el 2026-10-06 (to-do 109).

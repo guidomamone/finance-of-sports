@@ -179,7 +179,7 @@ export const GRUPOS = [
     id: 'asia', corto: 'ASI', nombre: 'Asia', paises: ['Japón', 'Corea del Sur', 'China'],
     marco: 'Japón: documento agregado de la J.League (todos los clubes). Corea: informes de auditoría K-IFRS.',
     logica: {
-      3: ['Japón: 14 documentos y ninguno con estado de resultados reconocido (Admin/tests/test-vocabulario.md).'],
+      3: ['Japón: 14 documentos y ninguno con estado de resultados reconocido (Admin/mediciones/test-vocabulario.md).'],
     },
   },
   {

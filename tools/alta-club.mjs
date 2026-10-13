@@ -240,11 +240,11 @@
 //   node tools/alta-club.mjs --resumen      conteo por estado + los listo-para-alta
 //   node tools/alta-club.mjs --dudas        candidatas a Admin/dudas-por-club.md (NO escribe ahí)
 //   node tools/alta-club.mjs --backtest-claude [--limit 5] [--saltear N]
-//        las mismas preguntas a clubes YA cargados, contra lo cargado (Admin/altas-claude/)
+//        las mismas preguntas a clubes YA cargados, contra lo cargado (Admin/mediciones/backtests/altas-claude/)
 //   node tools/alta-club.mjs --informe-backtest   recalcula el acierto del backtest, gratis
 //
 // Sin --claude / --backtest-claude: 0 llamadas a APIs ni a internet, todo sale de
-// archivos locales. Con --claude: ~US$ 0,05-0,09 por club (medido, Admin/tests/test-altas-claude.md).
+// archivos locales. Con --claude: ~US$ 0,05-0,09 por club (medido, Admin/mediciones/test-altas-claude.md).
 // ============================================================================
 
 import { readFileSync, writeFileSync, existsSync, readdirSync, statSync, unlinkSync, mkdirSync, appendFileSync } from 'node:fs';
@@ -1608,7 +1608,7 @@ function mdsDeCarpeta(paisCarpeta, clubCarpeta) {
 }
 
 // Orden de preferencia del documento BASE de una carpeta (mismo criterio que la prueba de
-// Admin/tests/test-alta-club.md, ahora por script): primero los que son un estado contable anual por el
+// Admin/mediciones/test-alta-club.md, ahora por script): primero los que son un estado contable anual por el
 // nombre (no presupuesto/acta/intermedio), después los de transcripción `listo`/`cargado` antes que los
 // `revisar`/`pendiente-segunda-voz`, y dentro de eso el ejercicio más reciente.
 function candidatosBase(mds) {
@@ -1688,7 +1688,7 @@ function analizarCarpeta(paisCarpeta, clubCarpeta, sitio, previo, docForzado = n
     if (!r) r = x;
     // Un documento que no sirve de base (no es un balance anual, o no se le puede sacar el ejercicio)
     // se cambia por el siguiente candidato: "usar otro documento de la misma carpeta" era la respuesta
-    // más frecuente a esas preguntas en la prueba de Admin/tests/test-alta-club.md.
+    // más frecuente a esas preguntas en la prueba de Admin/mediciones/test-alta-club.md.
     const malBase = x.error || (x.preguntas || []).some((p) => ['reportType', 'anio', 'cierre', 'fiscalYearStart'].includes(p.campo));
     if (!malBase) { r = x; break; }
   }
@@ -1891,11 +1891,11 @@ function aciertoBacktest(tipo, valor, v) {
   return valor === v;
 }
 
-// Recalcula el acierto de todo Admin/altas-claude/backtest.jsonl con la verdad ACTUAL (gratis, sin API):
+// Recalcula el acierto de todo Admin/mediciones/backtests/altas-claude/backtest.jsonl con la verdad ACTUAL (gratis, sin API):
 // así un arreglo de la heurística de la verdad no obliga a volver a pagar las llamadas.
 function modoInformeBacktest() {
   const datos = cargarDatosSitio();
-  const p = resolve(ROOT, 'Admin/altas-claude/backtest.jsonl');
+  const p = resolve(ROOT, 'Admin/mediciones/backtests/altas-claude/backtest.jsonl');
   const filas = readFileSync(p, 'utf8').trim().split('\n').map((l) => JSON.parse(l));
   const vistos = new Map(); for (const f of filas) vistos.set(`${f.md}|${f.modelo}`, f); // la última corrida de cada documento
   const por = {}; let citas = 0; let citasOk = 0; let costo = 0; const malas = [];
@@ -1945,7 +1945,7 @@ async function modoBacktest() {
   for (const c of cand.sort((a, b) => (b.citaDoc - a.citaDoc) || sha1(a.md).localeCompare(sha1(b.md)))) if (!porPais.has(c.country)) porPais.set(c.country, c);
   const saltear = Number(flagVal('--saltear') || 0);
   const sel = [...porPais.values()].sort((a, b) => sha1(a.md).localeCompare(sha1(b.md))).slice(saltear, saltear + (LIMITE ?? 5));
-  const outDir = resolve(ROOT, 'Admin/altas-claude'); mkdirSync(outDir, { recursive: true });
+  const outDir = resolve(ROOT, 'Admin/mediciones/backtests/altas-claude'); mkdirSync(outDir, { recursive: true });
   const outPath = resolve(outDir, 'backtest.jsonl');
   let costo = 0;
   for (const c of sel) {
@@ -1969,7 +1969,7 @@ async function modoBacktest() {
     console.log(`${c.clubId} ${c.y} (${c.md}) $${(res.costUsd || 0).toFixed(4)}${res.error ? ' ERROR ' + res.error : ''}`);
     for (const f of filas) console.log(`   ${f.tipo.padEnd(10)} ${f.resuelta ? 'RESUELTA ' : 'abierta  '} ${f.acierto === null ? '  ?' : f.acierto ? ' ok' : 'MAL'}  claude=${JSON.stringify(f.valor)} cargado=${JSON.stringify(f.verdad)}${f.resuelta ? '' : '  (' + f.motivoNoResuelta + ')'}`);
   }
-  console.log(`\nCosto de esta corrida: US$ ${costo.toFixed(3)}. Detalle en Admin/altas-claude/backtest.jsonl (se agrega, no se pisa).`);
+  console.log(`\nCosto de esta corrida: US$ ${costo.toFixed(3)}. Detalle en Admin/mediciones/backtests/altas-claude/backtest.jsonl (se agrega, no se pisa).`);
 }
 
 // ============================================================================
