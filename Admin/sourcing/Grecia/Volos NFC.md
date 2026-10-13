@@ -36,3 +36,5 @@ Color de marca: null — bicolor celeste-rojo (apodo Κυανέρυθροι, esc
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2021 desde `Clubes/Grecia/Volos NFC/Volos_income_stmt_2021-06-30.pdf` (sourceId `volosnfc-gr-volos-income-stmt-2021-06-30`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2022 desde `Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.pdf` (sourceId `volosnfc-gr-volos-income-stmt-2022-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2023 desde `Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.pdf` (sourceId `volosnfc-gr-volos-income-stmt-2023-06-30`).

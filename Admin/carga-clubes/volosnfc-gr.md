@@ -41,6 +41,43 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2019: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2019-06-30","sourceId":"volosnfc-gr-volos-income-stmt-2019-06-30"}
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-13) desde Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κύκλος εργασιών | pág. 1, Jev 1 |
+| 2 | Λοιπά συνήθη έσοδα | pág. 1, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Έξοδα διοίκησης | pág. 1, Jev 1 |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2023-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae periodo; el estado cubre la temporada 2022-2023 y el balance de la misma serie cierra al 30/6
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-10): fila = 63,73. Interés cobrado: suma al resultado. El estado imprime cobrado y pagado sin signo y la carga sumaba los dos como costo (2024: 2 × 5.104,81 de diferencia con el resultado impreso). Revisión de la cola de Grecia.
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-10): fila = -7464,46. Interés pagado: resta del resultado (ver el ajuste del interés cobrado del mismo documento).
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-13): reportType = official_balance_sheet. Claude 2026-10-13: el documento es el estado de resultados anual de la PAE ('Β. 2,1 ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ', una columna, sin comparativo) y su resultado del período cierra exacto en verificar.mjs
+tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-13): null, SIN VERIFICAR (coincidencia NO exacta en los rosters cacheados: "Volos" en 2022–23 Super League Greece | "Niki Volos" en 2022–23 Super League Greece 2).
+```
+
 ## 2022
 
 ### Ingresos
@@ -225,4 +262,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### volosnfc-gr-volos-income-stmt-2023-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
