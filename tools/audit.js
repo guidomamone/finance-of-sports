@@ -536,16 +536,24 @@ function checkDeployInterno() {
   }
 }
 
-// --- Comentarios internos en lo que se publica (to-do 208) -------------------
-// Todo comentario de index.html y js/ viaja al visitante. La regla (Admin/PANTALLA.md, "Comentarios en lo que se publica") deja solo el
-// porqué técnico: nada de nombres, "Versión N", "to-do N", fechas ni contadores de clubes. Un hallazgo por archivo, con el total y el
-// primer caso; la lista completa sale con --json.
+// --- Comentarios internos en lo que se publica (to-do 208 y 209) -------------
+// Todo comentario de index.html, js/ y data/ viaja al visitante. La regla (Admin/PANTALLA.md, "Comentarios en lo que se publica") deja
+// solo el porqué técnico: nada de nombres, "Versión N", "to-do N", fechas ni contadores de clubes. Un hallazgo por archivo, con el total y
+// el primer caso; la lista completa sale con --json. Además, un data/<club>-data.js no lleva NINGÚN comentario (Admin/CONVENCIONES-DATOS.md):
+// la evidencia de cada carga va a Admin/carga-clubes/<club>.md, y una nota de evidencia puede no tener nada que la regex reconozca.
 const COMENTARIO_INTERNO = /\bGuido\b|\bVersi[oó]n(es)? \d+|\bto-do \d+|(?<!@)\b20\d\d-\d\d-\d\d\b|\b\d{2,} clubes\b/i;
 function checkComentariosPublicados() {
   const { comentarios, publicados } = require('./comparar-sin-comentarios.js');
-  for (const rel of publicados()) {
+  const jsDe = dir => fs.readdirSync(path.join(ROOT, dir), { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))
+    .flatMap(e => e.isDirectory() ? jsDe(dir + '/' + e.name) : e.name.endsWith('.js') ? [dir + '/' + e.name] : []);
+  for (const rel of [...publicados(), ...jsDe('data')]) {
     const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');
-    const malos = comentarios(rel, src).filter(c => COMENTARIO_INTERNO.test(c.text));
+    const todos = comentarios(rel, src);
+    if (/^data\/[^/]+-data\.js$/.test(rel) && todos.length) {
+      add('P2', 'comentario-en-data-club',
+        `${rel}: ${todos.length} comentarios (el primero en la línea ${todos[0].line}). Un data/<club>-data.js no lleva comentarios: la nota va a Admin/carga-clubes/<club>.md (regla: Admin/CONVENCIONES-DATOS.md)`);
+    }
+    const malos = todos.filter(c => COMENTARIO_INTERNO.test(c.text));
     if (!malos.length) continue;
     const primero = malos[0].text.match(COMENTARIO_INTERNO)[0];
     add('P2', 'comentario-interno-publicado',
