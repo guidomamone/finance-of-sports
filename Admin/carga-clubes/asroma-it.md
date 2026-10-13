@@ -1641,7 +1641,7 @@ Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/
 _note (data/):_
 
 ```text
-Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2006.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2006.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual (corregido el 2026-10-13, to-do 226: el documento trae solo el estado de la sociedad; antes decía consolidado, heredado del ajuste del club).
 ```
 
 ### asroma-it-bilancio-2005

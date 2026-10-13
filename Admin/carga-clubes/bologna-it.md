@@ -764,7 +764,7 @@ Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/
 _note (data/):_
 
 ```text
-Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual (corregido el 2026-10-13, to-do 226: el documento trae solo el estado de la sociedad; antes decía consolidado, heredado del ajuste del club).
 ```
 
 ### bologna-it-bilancio-individuale-2024-25
@@ -772,5 +772,5 @@ Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/
 _note (data/):_
 
 ```text
-Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual (corregido el 2026-10-13, to-do 226: el documento trae solo el estado de la sociedad; antes decía consolidado, heredado del ajuste del club).
 ```
