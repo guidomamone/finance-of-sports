@@ -60,3 +60,5 @@ Color de marca: #FCD20F — amarillo y negro (en.wikipedia: camisetas casi siemp
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2022 desde `Clubes/Grecia/AEK Athens/AEK_FS_orthi_epanalipsi_2022.pdf` (sourceId `aekathens-gr-aek-fs-orthi-epanalipsi-2022`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2023 desde `Clubes/Grecia/AEK Athens/AEK_FS_2023-06-30.pdf` (sourceId `aekathens-gr-aek-fs-2023-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2025 desde `Clubes/Grecia/AEK Athens/AEK_NOTES_IFRS_2025-06-30_a.pdf` (sourceId `aekathens-gr-aek-notes-ifrs-2025-06-30-a`).
