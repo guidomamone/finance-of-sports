@@ -1028,6 +1028,24 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const sinNumero = !E && E0.ch.every((c) => c.ok === null) && !filaAntes;
   if (!E) E = E0;
   let ing = E.ing; let gas = E.gas; chequeos.push(...E.ch);
+  // (to-do 220, escalón aprobado por Guido el 2026-10-13) LA NOTA EXACTA TAMBIÉN EN LAS LECTURAS 5 Y 6. Esas lecturas (pensadas para los
+  // balancetes) leen solo los renglones del estado y nunca abren notas. Si cerraron el resultado, un renglón se reemplaza igual por las filas
+  // de la nota que extraer.mjs marcó como su desglose (detalla_a) cuando esas filas suman el renglón AL CENTAVO (cerrarNota() y además
+  // diferencia cero: con la media unidad por fila de cerrarNota, el redondeo corría los totales de 42 documentos). Totales y resultado no
+  // cambian; solo el detalle. Medido: 22 documentos ganan detalle (Roma 2006-2022, AC Milan, Avaí, Ferroviária, Remo, Vila Nova, AEK
+  // 2022-2025), 0 con totales distintos; los ya cargados no cambian hasta que se recarguen (decisión de Guido 2026-10-13). Caso:
+  // AEK 2023, "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες" 25.364.542 (L481) = Μισθοδοσία 10.744.231 + Αποσβέσεις συμβολαίων ποδοσφαιριστών
+  // 14.620.311 (nota 6.19, L1462-1463): la nómina y la amortización de pases dejan de cargarse juntas como salarios, como en 2016-2021.
+  if (E.cierra && E.nivel >= 5) {
+    const abrirExacta = (arr) => arr.flatMap((f) => {
+      const hijas = filas.filter((h) => h.detalla_a && h.detalla_a.trim() === String(f.etiqueta).trim());
+      const c = hijas.length >= 2 ? cerrarNota(Math.abs(f.M || 0), hijas, 'M', f.u || 0) : null;
+      if (!c || Math.abs(c.hojas.reduce((t, h) => t + h.valorNota, 0) - Math.abs(f.M || 0)) > 1e-9) return [f]; // al centavo, sin redondeo
+      notas.push(`escalón "nota exacta en la lectura ${E.nivel}": "${f.etiqueta}" (L${f.linea}) se abre en las ${c.hojas.length} filas de su nota, que suman exacto el renglón`);
+      return c.hojas.map((h) => ({ ...h, M: h.valorNota * (f.M < 0 ? -1 : 1), lado: f.lado, origen: `nota que desglosa "${f.etiqueta}"` }));
+    });
+    ing = abrirExacta(ing); gas = abrirExacta(gas);
+  }
   if (resCerca) notas.push(`resultado impreso fuera de los bloques (escalón 2): "${resCerca.texto}" (L${resCerca.linea}); ${E.okRes ? 'cierra exacto' : 'no cierra exacto: no se usa para confirmar'}`);
   if (escalonSubRep) notas.push(...notasSubRep, 'escalón "subtotal repetido": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba');
   if (escalonD) fin.splice(0, fin.length, ...finD);

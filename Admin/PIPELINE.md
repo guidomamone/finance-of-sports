@@ -244,6 +244,8 @@ Mitigaciones:
             compuerta que la 4; solo si cambia algún signo (to-do 200; caso Criciúma 2022, "Outras receitas Operacionais" 32.222 dentro de
             los gastos impresos entre paréntesis)
  LECTURA 5  solo las hojas, con signo (C/D de balancetes); sin totales; compuerta: resultado impreso exacto (Versión 414)
+            (to-do 220) si la 5 o la 6 cerraron, un renglón cuya nota (detalla_a) suma el renglón al centavo se abre en esa nota
+            (AEK 2022-2025: nómina y amortización de pases por separado); totales y resultado no cambian
  LECTURA 6  la 5 + los renglones sin lado, según su signo (Versión 434)
  ESCALÓN    si NINGUNA lectura cerró el RESULTADO: la 5 otra vez + los ajustes `fila` del financiero sin `reemplaza` (la 5 solo suma
             los que reemplazan); misma compuerta que la 5 (Versión 581, to-do 156 B; caso Inter 2024-25). No corre si el resultado ya
