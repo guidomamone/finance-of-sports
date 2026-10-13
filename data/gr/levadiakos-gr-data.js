@@ -9,6 +9,11 @@ const levadiakosgrRevenueLinesByYear = {
     { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:1.247265, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.069638, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Κύκλος εργασιών (καθαρός)', normalizedCategory:'lump_football_operations', amountNative:0.003081, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:0.963746, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.344553, disclosureLevel:'aggregated' },
+  ],
 };
 const levadiakosgrExpenseLinesByYear = {
   2019: [
@@ -22,6 +27,12 @@ const levadiakosgrExpenseLinesByYear = {
     { rawLabel:'Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-0.033282, disclosureLevel:'aggregated' },
     { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.193974, disclosureLevel:'aggregated' },
     { rawLabel:'Άλλα έξοδα και ζημίες', normalizedCategory:'other_expenses', amountNative:-0.01649, disclosureLevel:'aggregated' },
+  ],
+  2021: [
+    { rawLabel:'Κόστος πωλήσεων', normalizedCategory:'lump_football_operations_expense', amountNative:-0.772825, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-0.003464, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.243569, disclosureLevel:'aggregated' },
+    { rawLabel:'Άλλα έξοδα και ζημίες', normalizedCategory:'other_expenses', amountNative:-0.292845, disclosureLevel:'aggregated' },
   ],
 };
 const levadiakosgrFiscalYearMeta = {
@@ -63,6 +74,25 @@ const levadiakosgrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:1.332709, officialTotalExpenses:1.399393, officialPAT:-0.06765,
   },
+  2021: {
+    currency:'EUR', fxRef:'EUR@2021-06-30',
+    sourceId:'levadiakos-gr-fs-2021-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.000724, tax:0,
+    extraRows: [
+      {label:'Πιστωτικοί τόκοι και συναφή έσοδα', value:0.000037},
+      {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.000761},
+      {label:'Φόρος εισοδήματος', value:0},
+    ],
+    sinDesglose: [
+      {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.003081, motivo:'el documento no desglosa este renglón'},
+      {renglon:'Κόστος πωλήσεων', lado:'expense', importe:0.772825, motivo:'Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:1.311379, officialTotalExpenses:1.312703, officialPAT:-0.002047,
+  },
 };
 const levadiakosgrPresupuestoOverlayByYear = {};
 
@@ -87,6 +117,11 @@ Object.assign(sources, {
   'levadiakos-gr-fs-2020-06-30': {
     id:'levadiakos-gr-fs-2020-06-30', clubId:'levadiakos-gr',
     title:'A.P.O. Levadiakos P.A.E. — Levadiakos_FS_2020-06-30 (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'levadiakos-gr-fs-2021-06-30': {
+    id:'levadiakos-gr-fs-2021-06-30', clubId:'levadiakos-gr',
+    title:'A.P.O. Levadiakos P.A.E. — Levadiakos_FS_2021-06-30 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

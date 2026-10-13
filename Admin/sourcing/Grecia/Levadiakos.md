@@ -32,3 +32,5 @@ Color de marca: null — bicolor azul y verde (apodo 'Γαλαζοπράσινο
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2019 desde `Clubes/Grecia/Levadiakos/Levadiakos_FS_2019-06-30.pdf` (sourceId `levadiakos-gr-fs-2019-06-30`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2020 desde `Clubes/Grecia/Levadiakos/Levadiakos_FS_2020-06-30.pdf` (sourceId `levadiakos-gr-fs-2020-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2021 desde `Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.pdf` (sourceId `levadiakos-gr-fs-2021-06-30`).

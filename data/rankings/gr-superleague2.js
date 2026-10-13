@@ -33,6 +33,14 @@ window.RANKINGS["gr-superleague2"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.148],["Otros ingresos",0.275]] },
     ],
   },
+  2021: {
+    leagueSize: null,
+    clubs: [
+      { id:"levadiakos-gr", revenue:1.558, reportType:"official_balance_sheet",
+        sourceId:"levadiakos-gr-fs-2021-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.004],["Otros ingresos",1.555]] },
+    ],
+  },
   2020: {
     leagueSize: null,
     clubs: [
