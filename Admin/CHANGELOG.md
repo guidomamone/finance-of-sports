@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 690 — Deuda: la nota de la fila (to-do 228) (2026-10-13)
+
+- `caja-deuda.mjs`: si la deuda propuesta es una fila con su nota y la nota muestra que es solo una parte (AEK: el largo plazo, con la parte
+  corriente dentro de otro renglón), se propone la suma de los totales de la nota por la misma compuerta; si pasan las dos con valores
+  distintos, no decide. Medido: AEK 2021 deja de leer 5.029.327 (queda vacío), AEK 2022 lee 5.190.328 (lo cargado); el resto idéntico.
+
 ## Versión 689 — Limpieza: `onboard.mjs` y `prepare-onboarding.mjs` archivados (to-do 218) (2026-10-13)
 
 - `tools/quien.mjs` (nueva) con las dos funciones vivas de `onboard.mjs`, mismo código: `--quien` (club y año de un PDF; cargar.mjs,

@@ -620,6 +620,10 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [-
             dos filas, a cada lado del total del pasivo no corriente); las filas de la nota de efectivo si la caja es una parte; el total
             de la nota de deuda si no hay otra fila de deuda
  ESCALÓN 2  IA (solo líneas)
+ LA NOTA DE LA FILA (deuda, to-do 228): si la propuesta es una fila del balance con su nota ("6.15") y la nota muestra que es solo una
+            parte (la fila es uno de los totales de la nota, o la diferencia está impresa), se propone la suma de los totales de la nota
+            (tablas con columna del año y del anterior; un total es la fila que suma las de arriba). Misma compuerta: pasa una sola → esa;
+            pasan las dos con valores distintos → no decide (AEK 2021: la fila 5.029.327 es el largo plazo, la nota da 6.038.235)
  COMPUERTA (la misma para todos): la familia de la fila es la del dato y el año anterior cargado o el documento siguiente dicen lo mismo
             (el documento anterior también confirma, solo a favor; por debajo de 1.500 unidades, coincidir es ser el mismo número)
             ── pasa → dato · no pasa → siguiente escalón · nada → null

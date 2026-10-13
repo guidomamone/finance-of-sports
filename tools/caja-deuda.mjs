@@ -162,6 +162,40 @@ function columnasConFormaDeNota(L) {
   return res;
 }
 
+// (to-do 228) LA NOTA DE UNA FILA DEL BALANCE ("6.15"), para el escalón "la nota de la fila" (escalera()). Busca el título de la nota (un
+// encabezado que empieza con ese número) y, en sus tablas con columnas de AÑO (el encabezado trae el año), el TOTAL de cada tabla: la última
+// fila que suma las de arriba (se reconoce por los números, no por la palabra "total"; "-" cuenta como 0). Devuelve { linea, valor, anterior,
+// totales, numeros } en unidades del documento: valor/anterior = la suma de los totales de las tablas en la columna del año y del anterior;
+// numeros = todas las cifras de la nota (para ver si la diferencia con la fila está impresa). null si no la encuentra.
+function notaDeFila(L, ref) {
+  const esTit = (l) => /^\s*#/.test(l) || /^\s*\*\*[^|]+\*\*\s*$/.test(l);
+  const numTit = (l) => (l.replace(/[#*]/g, '').trim().match(/^(\d{1,2}(?:\.\d{1,2}){0,3})[.)]?(?:\s|$)/) || [])[1] || null;
+  const ini = L.findIndex((l) => esTit(l) && numTit(l) === ref);
+  if (ini < 0) return null;
+  let fin = ini + 1; while (fin < L.length && fin - ini < 150 && !(esTit(L[fin]) && numTit(L[fin]) && numTit(L[fin]) !== ref)) fin++;
+  const celdas = (l) => l.trim().replace(/^\||\|$/g, '').split('|').map((c) => c.replace(/\*\*/g, '').trim());
+  const num = (c) => { const t = (c || '').trim(); if (!t || /^[-–—]$|^\(\s*\)$/.test(t)) return 0; const v = parseNumber(t); return v == null ? null : Math.abs(v); };
+  const totales = []; const numeros = new Set(); let valor = 0; let anterior = 0; let hay = false;
+  for (let a = ini + 1; a < fin;) {
+    if (!L[a].trim().startsWith('|')) { a++; continue; }
+    let b = a; while (b < fin && L[b].trim().startsWith('|')) b++;
+    const rs = L.slice(a, b).map(celdas).filter((r) => !r.every((c) => /^:?-{2,}:?$/.test(c) || !c));
+    for (const r of rs) for (const c of r) { const v = num(c); if (v) numeros.add(v); }
+    const enc = rs[0] || []; const anios = enc.map((c, k) => [k, Number(((c.match(/(?:19|20)\d{2}/g) || []).pop()) || 0)]).filter(([, y]) => y);
+    // Una columna del año y otra del año ANTERIOR (AEK 2023: la tabla de vencimientos tiene todas las columnas "30/6/2023" y no cuenta).
+    const yMax = anios.length ? Math.max(...anios.map(([, y]) => y)) : 0;
+    const colAct = anios.find(([, y]) => y === yMax); const colAnt = anios.find(([, y]) => y === yMax - 1);
+    if (colAct && colAnt) {
+      const [kAct] = colAct; const [kAnt] = colAnt;
+      const tot = (k) => { let suma = 0; let n = 0; let t = null; for (const r of rs.slice(1)) { const v = num(r[k]); if (v == null) continue; if (n >= 1 && Math.abs(v - suma) <= 1) { t = v; suma = 0; n = 0; continue; } /* una sola fila arriba también: AEK 2023, "Τοκοχρεωλυτικά δάνεια" y su "Σύνολο" */ suma += v; n++; } return t; };
+      const tA = tot(kAct); const tP = tot(kAnt);
+      if (tA != null || tP != null) { totales.push(tA ?? 0); valor += tA ?? 0; anterior += tP ?? 0; hay = true; }
+    }
+    a = b;
+  }
+  return hay ? { linea: ini + 1, valor, anterior, totales, numeros } : null;
+}
+
 // (to-do 224) RENGLÓN DE TEXTO CON CIFRAS ("Caja      1.234 5.678"): lo mismo que /^(.*?\p{L}[^\d(]*?)\s+(CIFRAS)\s*$/u, que se usaba
 // directo y era el 95% del tiempo de `--medir` (140 de 146 s): en una línea con una letra DESPUÉS de una tira de cifras con espacios, antes de
 // fallar probaba todas las maneras de repartir esos espacios entre "dentro del número" y "separador". Acá se prueban los mismos cortes en el
@@ -249,7 +283,10 @@ export function filasDelMd(md) {
     const sinCodigo = etiqueta.replace(/^\s*(?:\d+\s+)?\d+(?:[.\-]\d+)*\s*(?:-\s+)?(?=\p{L})/u, '').replace(/^\s*(?:\d{1,2}|[a-z]|[ivxlc]{1,5})[.)]\s+(?=\p{L})/iu, '');
     const cd = (String(crudos[0] ?? '').match(/\s([CD])\s*$/i) || [])[1]?.toUpperCase() || null; // (Versión 423) marca de balancete
     const codigo = ((etiqueta.match(/^\s*(?:\d{1,4}\s+)?(\d+(?:\.\d+)+|\d{4,})\s/) || [])[1] || '').replace(/\./g, '') || null;
-    filas.push({ linea: i + 1, pagina, etiqueta, cd, codigo, norm: normalizar(sinCodigo), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums, ...(lecturaB && lecturaB.valor !== nums[0] ? { lecturaB } : {}) });
+    // (to-do 228) el número de nota de la fila (la celda de la columna de notas, "6.15") y lo que dice su nota.
+    const celdaNota = ix0 && (colPunto ?? colForma) != null ? (l.trim().replace(/^\||\|$/g, '').split('|')[colPunto ?? colForma] || '').replace(/\*\*/g, '').trim() : null;
+    const nota = celdaNota && /^\d{1,2}(?:\.\d{1,2}){1,3}$/.test(celdaNota) ? notaDeFila(L, celdaNota) : null;
+    filas.push({ linea: i + 1, pagina, etiqueta, cd, codigo, norm: normalizar(sinCodigo), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums, ...(lecturaB && lecturaB.valor !== nums[0] ? { lecturaB } : {}), ...(nota ? { nota } : {}) });
     }
   }
   // Páginas del balance: título o total del activo/pasivo, y sin el título del flujo de efectivo / cambios en el patrimonio.
@@ -501,6 +538,18 @@ function evaluar(prop, { factor, anterior = null, siguiente = null, factorSiguie
 }
 
 // La escalera para un dato: cada escalón propone, la compuerta decide, y si no pasa se baja. `ia`: la respuesta de la IA (o null).
+// (to-do 228) La propuesta "la nota de la fila": una fila sintética con la suma de los totales de la nota (año y anterior). Solo si la nota
+// muestra que la fila es una parte: la fila es uno de sus totales, o la diferencia está impresa en la nota. En el documento vecino se arma
+// igual desde la fila de la misma familia que tenga nota.
+function propuestaNota(f) {
+  const n = f.nota; const v = f.valor;
+  if (!n || !(n.valor > v + 1)) return null;
+  const parte = n.totales.some((t) => Math.abs(t - v) <= 1) || [...n.numeros].some((x) => Math.abs(x - (n.valor - v)) <= 1);
+  if (!parte) return null;
+  const sintetica = (x) => ({ ...x, etiqueta: `${x.etiqueta} (nota L${x.nota.linea})`, linea: x.nota.linea, valor: x.nota.valor, cifras: [x.nota.valor, x.nota.anterior], lecturaB: null });
+  return { escalon: f.escalon, filas: [sintetica(f)], como: `la nota de la fila "${f.etiqueta}" (L${n.linea}): suma de sus totales ${n.totales.join(' + ')}`,
+    enOtroDoc: (doc) => { const x = doc.find((y) => y.balance && y.familia === f.familia && y.nota); return x ? [sintetica(x)] : null; } };
+}
 const conLecturaB = (f) => (f.lecturaB ? { ...f, valor: f.lecturaB.valor, cifras: f.lecturaB.cifras, lecturaB: null } : f);
 export function escalera(filas, cual, { precedentes = [], factor = null, anterior = null, siguiente = null, factorSiguiente = null, ia = null, extraDeuda = [], anteriorDoc = null, factorAnterior = null } = {}) {
   const club = familiasDelClub(precedentes, cual);
@@ -515,13 +564,33 @@ export function escalera(filas, cual, { precedentes = [], factor = null, anterio
     // forma de nota), la propuesta se evalúa también con todos los documentos leídos así (AEK 2018: su fila ya sale bien, la del documento
     // siguiente trae la nota). La misma compuerta decide: pasa una sola → esa; las dos con valores distintos → no decide.
     const hayB = (xs) => (xs || []).some((f) => f.lecturaB);
+    let elegida = c.ok ? { p, c, ctx: ctxC } : null; let lecturaSinNota = null;
     if (!p.ninguna && (hayB(p.filas) || hayB(siguiente) || hayB(anteriorDoc))) {
       const pB = { ...p, filas: p.filas.map(conLecturaB), como: `${p.como} (sin la celda con forma de nota)` };
-      const cB = compuerta(pB, { ...ctxC, siguiente: siguiente && siguiente.map(conLecturaB), anteriorDoc: anteriorDoc && anteriorDoc.map(conLecturaB) });
+      const ctxB = { ...ctxC, siguiente: siguiente && siguiente.map(conLecturaB), anteriorDoc: anteriorDoc && anteriorDoc.map(conLecturaB) };
+      if (hayB(p.filas)) lecturaSinNota = { p: pB, ctx: ctxB };
+      const cB = compuerta(pB, ctxB);
       if (c.ok && cB.ok && !coincide(c.valor, cB.valor)) { intentos.push(`escalón ${e}: pasan las dos lecturas (${c.valor} y ${cB.valor})`); continue; }
-      if (!c.ok && cB.ok) return { valor: cB.valor, escalon: e, validacion: cB.validacion, como: pB.como, filas: pB.filas.map(cita), club };
+      if (!c.ok && cB.ok) elegida = { p: pB, c: cB, ctx: ctxB };
     }
-    if (c.ok) return { valor: c.valor, escalon: e, validacion: c.validacion, como: p.como, filas: p.filas.map(cita), club };
+    // (to-do 228, aprobado por Guido el 2026-10-13) LA NOTA DE LA FILA, en deuda: si la propuesta (la lectura que pasó, o la de siempre si no
+    // pasó ninguna) es UNA fila del balance con su nota, y la nota muestra que la fila es solo una parte (la fila es uno de los totales de la
+    // nota, o la diferencia con la suma de los totales está impresa en la nota), se propone la suma de los totales de la nota y pasa por la
+    // misma compuerta (en el documento vecino, la misma cuenta con su columna del año anterior). Pasa una sola → esa; pasan las dos con
+    // valores distintos → no decide (un vacío es mejor que una deuda corta). Caso: AEK 2021, "Μακροπρόθεσμες Δανειακές Υποχρεώσεις"
+    // 5.029.327 es solo el largo plazo; la nota 6.15 da 6.038.235 (la parte a menos de un año, 1.008.907, va dentro de "Μακροπρόθεσμες
+    // Υποχρεώσεις πληρωτέες στην Επόμενη Χρήση").
+    // Sin ninguna lectura que pase, la base es la fila sin la celda de la nota si la tiene (la de siempre leería la nota "6.15" como importe).
+    const base = elegida || lecturaSinNota || { p, c, ctx: ctxC };
+    if (cual === 'deuda' && !base.p.ninguna && base.p.filas.length === 1 && base.p.filas[0].nota) {
+      const pN = propuestaNota(base.p.filas[0]);
+      if (pN) {
+        const cN = compuerta(pN, base.ctx);
+        if (elegida && cN.ok && !coincide(elegida.c.valor, cN.valor)) return { valor: null, escalon: null, como: intentos.concat(`escalón ${e}: la fila "${base.p.filas[0].etiqueta}" (${elegida.c.valor}) y su nota (${cN.valor}) pasan las dos: la nota dice que la fila es solo una parte; no decide`).join('; '), club };
+        if (!elegida && cN.ok) elegida = { p: pN, c: cN, ctx: base.ctx };
+      }
+    }
+    if (elegida) return { valor: elegida.c.valor, escalon: e, validacion: elegida.c.validacion, como: elegida.p.como, filas: elegida.p.filas.map(cita), club };
     intentos.push(`escalón ${e} (${c.valor}): ${c.motivo}`);
   }
   return { valor: null, escalon: null, como: intentos.join('; '), club };

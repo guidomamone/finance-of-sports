@@ -125,11 +125,3 @@ ni en el comentario de ningún archivo de código.
     los abre y dice si el estado cargado es del grupo o de la sociedad sola, con cita; un error sube el umbral, cambia un peso o agrega un
     criterio, y se mide otra vez con `Admin/mediciones/perimetro-a2-medicion.txt`. Que entre en la skill `auditoria-finance-of-sports` (eje
     `datos`, cada tanto) cuando Guido apruebe el texto; mientras, se corre a mano después de cada país nuevo.
-
-228. DEUDA SIN SU PARTE CORRIENTE CUANDO EL BALANCE LA ESCONDE EN OTRO RENGLÓN (visto en AEK 2021 y 2022, corregido con ajustes `deuda`).
-    El balance trae "Μακροπρόθεσμες Δανειακές Υποχρεώσεις" (préstamos a más de un año) y la parte a menos de un año va dentro de
-    "Μακροπρόθεσμες Υποχρεώσεις πληρωτέες στην Επόμενη Χρήση", mezclada con lo que se debe a jugadores; la nota de préstamos (6.15 / 6.16)
-    sí abre las dos. `caja-deuda.mjs` (la IA) eligió solo la fila de largo plazo y la compuerta lo aceptó, porque esa fila es coherente año
-    contra año: 5.029.327 en vez de 6.038.235 (2021) y 1.084.606 en vez de 5.190.328 (2022). Pensar un escalón que lea la nota de préstamos
-    cuando el balance no separa la parte corriente (y una compuerta que lo note: el total de la nota contra la fila del balance). Mirar antes
-    los otros clubes griegos (Olympiacos, PAOK, Panathinaikos) y `caja-deuda.mjs --medir` para ver cuántos casos hay.
