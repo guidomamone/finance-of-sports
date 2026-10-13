@@ -32,7 +32,8 @@
 // USO:
 //   node tools/dentro-de-otro.mjs --medir                        backtest en los años completos (no escribe)
 //   node tools/dentro-de-otro.mjs --todos | --club <id>          ENSAYO: lista lo que marcaría
-//   node tools/dentro-de-otro.mjs --todos | --club <id> --escribir   lo escribe en data/<club>-data.js (con comentario), sube ASSET_V,
+//   node tools/dentro-de-otro.mjs --todos | --club <id> --escribir   lo escribe en data/<club>-data.js (la marca) y en
+//                                                                Admin/carga-clubes/<club>.md (su nota, en la meta del año), sube ASSET_V,
 //                                                                corre los generadores y audit.js; si da P0/P1, revierte todo.
 // ============================================================================
 
@@ -40,6 +41,7 @@ import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import vm from 'node:vm';
 import { ajustesDe } from './ajustes.mjs';
+import * as EV from './evidencia-club.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const HOY = new Date().toISOString().slice(0, 10);
@@ -133,7 +135,10 @@ export function limpiar(t) {
   return t;
 }
 
+// La marca va al data file SIN comentario (to-do 209: data/ se publica); la nota que explica de dónde sale cada marca la devuelve, por año,
+// para la evidencia del club (marcarClub la escribe en Admin/carga-clubes/<club>.md).
 function escribirClub(id, porAnio) {
+  const notas = {};
   const p = resolve(ROOT, `data/${id}-data.js`); let t = limpiar(readFileSync(p, 'utf8'));
   const ini = t.search(/const \w+FiscalYearMeta\s*=\s*\{/); if (ini < 0) throw new Error(`${id}: no encontré <club>FiscalYearMeta`);
   for (const [y, marcas] of Object.entries(porAnio)) {
@@ -148,14 +153,15 @@ function escribirClub(id, porAnio) {
       const nuevos = pares.filter((x) => !new RegExp(`\\b${x.split(':')[0]}\\s*:`).test(bloque.slice(a0, a1)));
       if (!nuevos.length) continue;
       bloque = bloque.slice(0, a1).replace(/\s*$/, '') + `, ${nuevos.join(', ')} ` + bloque.slice(a1);
-      bloque = bloque.replace(/(\n(\s*)(?=[^\n]*\bincluidoEn\s*:))/, `\n$2${nota}$1`);
     } else {
       const sangria = (/\n(\s+)\S/.exec(bloque) || [, '    '])[1];
-      bloque = bloque.replace(/^\{[^\n]*\n/, (x) => `${x}${sangria}${nota}\n${sangria}incluidoEn:{ ${pares.join(', ')} },\n`);
+      bloque = bloque.replace(/^\{[^\n]*\n/, (x) => `${x}${sangria}incluidoEn:{ ${pares.join(', ')} },\n`);
     }
+    notas[y] = nota.replace(/^\/\/ /, '');
     t = t.slice(0, abre) + bloque + t.slice(cierra);
   }
   writeFileSync(p, t);
+  return notas;
 }
 
 // LO QUE USA tools/cargar.mjs (Versión 518, paso 3): recalcula y escribe las marcas de UN club con el motor sobre lo que hay en disco
@@ -175,8 +181,13 @@ export function marcarClub(id, { M = motor(), log = () => {} } = {}) {
   const antes = [...viejo.matchAll(MARCA_RE)].length;
   const despues = Object.values(porAnio).flat().reduce((k, x) => k + x.cats.length, 0);
   if (!antes && !despues) return { cambio: false, antes, despues, lineas };
-  escribirClub(id, porAnio);
-  const cambio = readFileSync(p, 'utf8') !== viejo;
+  const notas = escribirClub(id, porAnio);
+  // la evidencia: saca TODAS las notas de esta tool en el club (como las marcas: se recalculan) y pone las de ahora en la meta de cada año
+  const ev0 = EV.leer(id);
+  let ev = EV.quitarLineas(ev0, null, 'Meta', [/^tools\/dentro-de-otro\.mjs \(/]);
+  for (const [y, nota] of Object.entries(notas)) ev = EV.agregarTexto(ev, y, 'Meta', [nota]);
+  if (ev !== ev0) EV.guardar(id, ev);
+  const cambio = readFileSync(p, 'utf8') !== viejo || ev !== ev0;
   for (const l of lineas) log(l);
   return { cambio, antes, despues, lineas };
 }
@@ -192,10 +203,12 @@ async function main() {
   const escribir = A.includes('--escribir');
   let snap = null; let revertir = null; let publicarCambios = null;
   if (escribir) ({ snapshot: snap, revertir, publicarCambios } = await import('./cargar.mjs'));
-  const s0 = escribir ? snap() : null; const escritos = []; let antes = 0; let despues = 0; let filas = 0;
+  // (to-do 209) las evidencias de Admin/carga-clubes/ entran en el snapshot: un P0/P1 también las revierte
+  const evExtra = escribir ? ids.map((id) => EV.rutaRel(id)) : [];
+  const s0 = escribir ? snap(evExtra) : null; const escritos = []; let antes = 0; let despues = 0; let filas = 0;
   try {
     for (const id of ids) {
-      if (escribir) { const r = marcarClub(id, { M, log: (l) => console.log(`  ${l}`) }); antes += r.antes; despues += r.despues; filas += r.lineas.length; if (r.cambio) escritos.push(`data/${id}-data.js`); continue; }
+      if (escribir) { const r = marcarClub(id, { M, log: (l) => console.log(`  ${l}`) }); antes += r.antes; despues += r.despues; filas += r.lineas.length; if (r.cambio) escritos.push(`data/${id}-data.js`, EV.rutaRel(id)); continue; }
       // ensayo: lo mismo sin tocar el archivo
       const anios = aniosDe(M, id);
       antes += [...readFileSync(resolve(ROOT, `data/${id}-data.js`), 'utf8').matchAll(MARCA_RE)].length;
@@ -204,9 +217,9 @@ async function main() {
     console.log(`\nMarcas por precedente en los archivos: ${antes} hoy → ${despues} después (por categoría; una fila puede ser varias). ${filas} lado(s)-año.${escribir ? '' : ' ENSAYO: agregá --escribir.'}`);
     if (!escribir) return;
     if (!escritos.length) { console.log('Nada cambió: no se escribe ni se publica.'); return; }
-    const r = publicarCambios(s0, [], escritos);
+    const r = publicarCambios(s0, evExtra, escritos);
     console.log(r.ok ? `Escrito: ${r.escritos.join(', ')} · ${r.audit}` : `NO se escribió: ${r.motivo}`);
-  } catch (err) { if (escribir) { const rv = revertir(s0, []); console.log(`NO se escribió: ${err.message} (se revirtió: ${rv.restaurados} restaurados)`); } else throw err; }
+  } catch (err) { if (escribir) { const rv = revertir(s0, evExtra); console.log(`NO se escribió: ${err.message} (se revirtió: ${rv.restaurados} restaurados)`); } else throw err; }
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) main();

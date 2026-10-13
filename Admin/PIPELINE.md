@@ -429,7 +429,8 @@ Mitigaciones:
   `Admin/carga-clubes/<clubId>.md`, en la sección del año, la cabecera "cargado por… tie-out", la tabla de filas con la página y el
   escalón de cada categoría, los ajustes manuales y la nota de meta, y de dónde salió la liga. Lo edita solo a través de
   `tools/evidencia-club.mjs`; con `--reemplazar` saca SUS líneas de ese año (lo escrito a mano queda) y las vuelve a escribir. Si la
-  auditoría da P0/P1, el `.md` se revierte junto con `data/`.
+  auditoría da P0/P1, el `.md` se revierte junto con `data/`. `dentro-de-otro.mjs` hace lo mismo con su nota (en la meta de cada año
+  marcado): como las marcas, en cada corrida saca TODAS sus notas del club y pone las de ahora.
 
 Riesgos:
 - i) el documento declara varios tipos de cambio;

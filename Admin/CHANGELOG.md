@@ -33,6 +33,9 @@ que dice `ESTADO.md` era verdad ese día.
   `data/currency-map.js`: la cabecera del año, la tabla de filas, los ajustes, la nota de meta y la liga van al `.md` (que entra en el
   snapshot y se revierte con P0/P1). Medido: `lote.mjs` y las propuestas de `cargar.mjs` sobre `prueba-completa` iguales antes y después;
   recargar Udinese 2025 en una copia deja el mismo código en `data/` que el script viejo.
+- `dentro-de-otro.mjs`: la marca va a `data/` sin comentario y su nota a la meta del año en `Admin/carga-clubes/<club>.md` (saca las suyas
+  de todos los años y las vuelve a poner; el `.md` entra en el snapshot). Medido: `--medir` y el ensayo `--todos` iguales; `--todos
+  --escribir` en dos copias da el mismo código en `data/` en los 214 clubes, y las notas de los 15 clubes marcados están en su `.md`.
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 
