@@ -42,7 +42,7 @@ import { tomarCandado, soltarCandado } from './candado.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
 const { verificarLista } = await import('./verificar.mjs');
 const { ajusteDe, ajustePerimetroDe } = await import('./ajustes.mjs');
-const { loadSite } = await import('./proponer-carga.mjs');
+const { loadSite } = await import('./datos-sitio.mjs');
 const { faltaAntesDeLocalizar } = await import('./antes-de-localizar.mjs');
 const { cacheAlDia } = await import('./cache-al-dia.mjs');
 const { gastoPorDocumento, lineasGasto } = await import('./gasto-doc.mjs');

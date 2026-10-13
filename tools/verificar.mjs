@@ -44,7 +44,7 @@ import { norm as normNum } from './verify-numbers.mjs';
 import { ajusteDe, ajustesDe } from './ajustes.mjs';
 import { FIN_INGRESO_RE, FIN_GASTO_RE, INGRESOS_RE, GASTOS_RE, normalizar } from './vocabulario.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
-const { loadSite, parseNumber } = await import('./proponer-carga.mjs');
+const { loadSite, parseNumber } = await import('./datos-sitio.mjs');
 process.argv = argvAntes;
 
 const ROOT = resolve(import.meta.dirname, '..');

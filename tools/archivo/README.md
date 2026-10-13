@@ -14,3 +14,6 @@ Sus `import` relativos (`./rutas.mjs`, etc.) ya no resuelven desde esta carpeta:
 - `tablas-sesion.mjs` — las tablas de arranque de una sesión de Italia y del TODO (2026-10-08). No la usaba ningún proceso.
 - `estado-desde-md.mjs` — armar a mano las filas del estado de resultados desde una tabla del `.md` (Lazio 2007-08 y 2011-12, 2026-10-08).
   Hecho para el formato de Lazio; si vuelve a hacer falta para otro documento viejo, devolverla a `tools/` y revisar la salida fila por fila.
+- `proponer-carga.mjs` — la carga por selección de filas por palabras (seleccionarFilas, briefingFor con prepare-onboarding.mjs) y su
+  backtest (`--backtest`, `--pdf`, to-do 108). Lo reemplazó la carga desde la verificación (`cargar.mjs`, etapa 8); se archivó en el to-do 218.
+  Sus dos utilidades vivas, `loadSite()` y `parseNumber()`, están en `tools/datos-sitio.mjs`.

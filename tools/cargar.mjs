@@ -25,8 +25,8 @@
 //  2. CLUB Y AÑO: el club sale de tools/carpetas-clubes.mjs (la única regla del proyecto) y tiene que existir; el año, del mismo análisis
 //     que usa el alta (`analizar()` de tools/alta-club.mjs: nombre del archivo confirmado por las fechas de cierre del contenido) y de
 //     `onboard.mjs --quien` (el que usa el registro): si no coinciden, frena. Si el club ya tiene ese año en su fiscalYearMeta, frena.
-//  3. FILAS Y MONTOS: `seleccionarFilas()` de tools/proponer-carga.mjs con la estrategia ganadora del test (ancla-listas: cada línea del
-//     estado de resultados se abre en la nota o la lista que la desglosa) y la escala por plausibilidad contra los años ya cargados del club.
+//  3. FILAS Y MONTOS: las de la verificación (Generados/.../<doc>.verificacion.json, etapa 6), con el signo y el lado que decidió
+//     verificar.mjs. Hasta el to-do 218 había además una selección por palabras (proponer-carga.mjs, archivada).
 //     Todo en MILLONES de moneda nativa (convención del sitio, club-data-mapping/referencia/fx.md).
 //  4. CATEGORÍA DE CADA FILA: la del `.categorias.json` del pipeline (escalón 0 precedente del club, 1 Jev >= 0,90, 2 Claude >= 0,80). Si
 //     la fila no está en esa lista (hasta la Versión 320 la etapa 3 del pipeline y la selección de filas de acá NO elegían las mismas filas:
@@ -80,7 +80,7 @@
 //   node tools/cargar.mjs "<pdf>"                         propuesta en JSON (qué escribiría y por qué frena)
 //        OJO: la propuesta no toca el sitio (data/*.js), pero SÍ escribe, a propósito: en Admin/registros/cola-revision.jsonl (las preguntas de
 //        categoría para Guido, y cierra las ya contestadas para otro año del club), en Admin/registros/categorias-aprendidas.jsonl (copia como
-//        precedente del club las respuestas que Guido ya dio en la cola) y el <doc>.briefing.json de Generados/. Así le hace preguntas el
+//        precedente del club las respuestas que Guido ya dio en la cola). Así le hace preguntas el
 //        lote a Guido (lote.mjs, etapa 8). Un ensayo de una sesión deja esos cambios en git status: revisarlos antes de commitear.
 //   node tools/cargar.mjs "<pdf>" --escribir              escribe si no frena; revierte si audit.js da P0/P1
 //   node tools/cargar.mjs --lista Admin/mi-lista.txt      una línea por documento (carga / frena y por qué)
@@ -103,7 +103,6 @@ import { archivosData, rutaData } from './data-clubes.js';
 const ARGS = process.argv.slice(2);
 process.argv = process.argv.slice(0, 2);
 const { analizar } = await import('./alta-club.mjs');
-const { seleccionarFilas, briefingFor } = await import('./proponer-carga.mjs');
 const { categoriasAlDia } = await import('./huellas.mjs');
 const { precedenteFamilia } = await import('./categorizar-claude.mjs');
 const { clubDeRuta } = await import('./carpetas-clubes.mjs');
@@ -139,11 +138,11 @@ const COMPARAR = flagVal('--comparar');
 const JSON_OUT = ARGS.includes('--json');
 const MAX_SIN_CAT = flagVal('--max-sin-categoria') !== null ? Number(flagVal('--max-sin-categoria')) : 0.05;
 const UMBRAL_CLAUDE = flagVal('--umbral-claude') !== null ? Number(flagVal('--umbral-claude')) : 0.8;
-// --desde-verificacion (Versión 324, proceso nuevo; Admin/PIPELINE.md): las filas salen de
-// Generados/.../<doc>.verificacion.json (localizar -> validar -> extraer -> verificar), no de seleccionarFilas() (selección por palabras).
-// Solo se usa si la verificación quedó en estado 'ok' (sin casos pendientes en la cola humana). SIN PROBAR DE PUNTA A PUNTA todavía: la
-// primera corrida real es el primer lote de 5 documentos (HANDOFF).
-const DESDE_VERIFICACION = ARGS.includes('--desde-verificacion');
+// LAS FILAS SALEN DE LA VERIFICACIÓN (Versión 324): Generados/.../<doc>.verificacion.json (localizar -> validar -> extraer -> verificar), y
+// solo si quedó en estado 'ok' (sin casos pendientes en la cola humana). Hasta el to-do 218 había otro camino, sin --desde-verificacion: la
+// selección de filas por palabras de proponer-carga.mjs (seleccionarFilas + briefingFor, que corría prepare-onboarding.mjs). Ningún proceso
+// lo usaba (el lote y cargar-lote siempre pasan el flag) y se sacó con el ok de Guido (2026-10-13); proponer-carga.mjs está en tools/archivo/.
+// El flag se sigue aceptando y no cambia nada.
 const CON_VALOR = new Set(['--lista', '--salida', '--comparar', '--max-sin-categoria', '--umbral-claude']);
 const DOCS = ARGS.filter((a, i) => !a.startsWith('--') && !CON_VALOR.has(ARGS[i - 1]));
 const TOL = 0.01; // la de audit.js checkTieOuts(): |calculado - oficial| >= 0,01 es P0 `no-cierra`
@@ -238,7 +237,7 @@ const frenaTieOut = (P) => (P.frena || []).some((f) => String(f.etapa).startsWit
 const noRubroVerificadas = (P) => (P.filas || []).filter((f) => f.destino === 'excluida' && f.cat === 'no_es_rubro' && f.escalon === 2 && String(f.origen || '').startsWith('verificacion') && f.ladoDoc);
 export async function proponerConEscalera(pdfArg, opts = {}) {
   const P0 = await proponer(pdfArg, opts);
-  if (!DESDE_VERIFICACION || !frenaTieOut(P0) || !noRubroVerificadas(P0).length) return P0;
+  if (!frenaTieOut(P0) || !noRubroVerificadas(P0).length) return P0;
   const P1 = await proponer(pdfArg, { ...opts, incluirNoRubro: true, escribirCola: false });
   const nombres = noRubroVerificadas(P0).map((f) => `"${f.label}"`).join(', ');
   if (frenaTieOut(P1)) { P0.avisos.push(`escalón 1 de "no es rubro" probado (incluir ${nombres}): tampoco cierra; queda excluida`); return P0; }
@@ -389,13 +388,13 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
 
   // ---- 3. filas y montos
   let sf;
-  if (DESDE_VERIFICACION) {
+  {
     const pv = resolve(ROOT, derivado(e.md, '.verificacion.json', { crear: false }));
     if (!existsSync(pv)) { return corta('filas', 'no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)'); }
     const VV = JSON.parse(readFileSync(pv, 'utf8'));
     if (VV.estado !== 'ok') { return corta('filas', `la verificación tiene ${VV.cola.length} caso(s) pendientes en la cola humana (node tools/cola.mjs)`); }
     P.ajustes = VV.ajustes || null; // ajustes manuales que aplicó verificar.mjs (Versión 366): se escriben como comentario en la meta del año
-    // Mismo formato que seleccionarFilas(): {label, page, section, native, tside, origen}. Ingresos y gastos en positivo (los signos los decide
+    // Formato de cada fila: {label, page, section, native, tside, origen}. Ingresos y gastos en positivo (los signos los decide
     // el paso 5 de abajo); financiero e impuesto con su signo impreso y su destino ya decidido por extraer.mjs (no por palabras).
     const raw = [
       // signoFijo (Versión 338): el signo que ya decidió verificar.mjs (positivo = suma a su lado; negativo = lo reduce, como "Feriado Legal
@@ -407,10 +406,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     ];
     const totalCands = [VV.totales.ingresos ? { label: 'total de ingresos (verificado)', M: VV.totales.ingresos, page: null, how: 'etiqueta' } : null, VV.totales.gastos ? { label: 'total de gastos (verificado)', M: VV.totales.gastos, page: null, how: 'etiqueta' } : null].filter(Boolean);
     sf = { ok: true, raw, totalCands, docResult: VV.totales.resultadoParaCargar ?? VV.totales.resultadoImpreso, pts: null, extra: { notasUsadas: [] }, refM: null };
-  } else try {
-    const briefing = await briefingFor(clubId, year, e.md);
-    sf = seleccionarFilas({ briefing, mdText: readFileSync(mdAbs, 'utf8'), clubData: cd, year });
-  } catch (err) { return corta('filas', `seleccionarFilas() falló: ${err.message}`); }
+  }
   if (!sf.ok) { return corta('filas', sf.motivo); }
   P.seleccion = { filas: sf.raw.length, notasUsadas: sf.extra?.notasUsadas || [], refM: sf.refM };
 
@@ -621,7 +617,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // (Versión 511) INCLUIDO EN: ajustes `incluye` del documento -> fiscalYearMeta.incluidoEn ({ member_dues: 'matchday_competition' }, o
   // { member_dues: { en: 'other_income', posible: true } } si no está confirmado). Lo lee la vista simplificada (js/finanzas-calc.js bucketize).
   const incluidoEn = Object.fromEntries(ajustesDe(pdf).filter((a) => a.campo === 'incluye' && a.valor && a.categoria).map((a) => [a.valor, a.posible ? { en: a.categoria, posible: true } : a.categoria]));
-  if (DESDE_VERIFICACION) {
+  {
     const conCat = filas.filter((f) => (f.destino === 'revenue' || f.destino === 'expense') && f.cat);
     const suma = (cats) => conCat.filter((f) => cats.includes(f.cat)).reduce((a, f) => a + Math.abs(f.native || 0), 0);
     const yaReintentado = (() => { try { const v = JSON.parse(readFileSync(resolve(ROOT, derivado(e.md, '.ubicacion.json', { crear: false })), 'utf8')).indiceAmpliado; return Number(v === true ? 1 : v || 0) >= VERSION_AMPLIADO; } catch { return false; } })();
@@ -695,8 +691,8 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // Y dos para el resultado financiero y el impuesto: como sus gastos vecinos, o por las palabras de la etiqueta (gasto/pérdida -> negativo).
   const signoPorPalabras = (f) => (GASTOS_RE.test(norm(f.label)) || /aufwend|expense|cost|charge|gasto|despesa|omkostning|kostnad|udgift|verlust|loss|perdida|negativ/.test(norm(f.label)) || f.destino === 'tax' ? -Math.abs(f.native) : Math.abs(f.native));
   const lecturasGasto = [
-    // Con --desde-verificacion, cada fila trae el signo que verificó verificar.mjs: un gasto es −M (M negativo = reduce el gasto).
-    ...(DESDE_VERIFICACION ? [{ nombre: 'signos de la verificación', v: (f) => (f.signoFijo !== undefined ? -f.signoFijo : (conSigno.get(tablaDe(f)) ? f.native : -f.native)) }] : []),
+    // Cada fila trae el signo que verificó verificar.mjs: un gasto es −M (M negativo = reduce el gasto).
+    { nombre: 'signos de la verificación', v: (f) => (f.signoFijo !== undefined ? -f.signoFijo : (conSigno.get(tablaDe(f)) ? f.native : -f.native)) },
     { nombre: 'gastos por tabla', v: (f) => (conSigno.get(tablaDe(f)) ? f.native : -f.native) },
     { nombre: 'gastos todos negativos', v: (f) => -Math.abs(f.native) },
   ];

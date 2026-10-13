@@ -175,7 +175,7 @@ export async function cerrarCargados() {
       try {
         const md = c.md || e?.md; const p = md ? resolve(ROOT, derivado(md, '.carga.json', { crear: false })) : null;
         const k = p && existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null;
-        if (k?.clubId && k?.year) { sitio ??= (await import('./proponer-carga.mjs')).loadSite(); if (sitio.generic?.[k.clubId]?.fiscalYearMeta?.[k.year]) donde = `${k.clubId} ${k.year}`; }
+        if (k?.clubId && k?.year) { sitio ??= (await import('./datos-sitio.mjs')).loadSite(); if (sitio.generic?.[k.clubId]?.fiscalYearMeta?.[k.year]) donde = `${k.clubId} ${k.year}`; }
       } catch { /* sin propuesta de carga legible: no se cierra */ }
     }
     if (!donde) continue;
