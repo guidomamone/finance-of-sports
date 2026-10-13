@@ -30,3 +30,5 @@ Ninguna. Serie completa y sin ambigüedad societaria — el caso más limpio del
 Color de marca: null — bicolor azul y amarillo (apodo Kitrinoble 'amarillo-azules'; camiseta amarilla pero escudo predominantemente azul), sin criterio de desempate, verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2019 desde `Clubes/Grecia/Asteras Tripolis/Asteras_FS_2019-06-30.pdf` (sourceId `asterastripolis-gr-asteras-fs-2019-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2020 desde `Clubes/Grecia/Asteras Tripolis/Asteras_FS_2020-06-30.pdf` (sourceId `asterastripolis-gr-asteras-fs-2020-06-30`).

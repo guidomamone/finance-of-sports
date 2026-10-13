@@ -20,6 +20,9 @@ window.RANKINGS["gr-superleague"] = {
   2020: {
     leagueSize: null,
     clubs: [
+      { id:"asterastripolis-gr", revenue:3.839, reportType:"official_balance_sheet",
+        sourceId:"asterastripolis-gr-asteras-fs-2020-06-30",
+        mix:[["Estadio",0.202],["Televisión",0.957],["Venta de Jugadores",0.773],["Otros ingresos",1.906]] },
       { id:"aellarissa-gr", revenue:3.128, reportType:"official_balance_sheet",
         sourceId:"aellarissa-gr-ael-notes-elp-2020-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.429],["Otros ingresos",0.699]] },
