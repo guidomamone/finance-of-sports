@@ -132,7 +132,8 @@ for (const p of plan) {
   if (p.alta) {
     const r = node('tools/alta-club.mjs', [p.xs[0].pdf, '--escribir']);
     console.log(`  alta ${p.alta.clubId}: ${ultimaLinea(r).slice(0, 200)}`);
-    if (!existsSync(resolve(ROOT, rutaData(p.alta.clubId)))) { for (const x of p.xs) noEscritos.push({ pdf: x.pdf, motivo: 'el alta no se escribió' }); continue; }
+    // revertir también acá: alta-club.mjs puede haber escrito clubs.js y los generadores aunque falte el data file (lote 67)
+    if (!existsSync(resolve(ROOT, rutaData(p.alta.clubId)))) { revertirAlta(p.alta.clubId); for (const x of p.xs) noEscritos.push({ pdf: x.pdf, motivo: 'el alta no se escribió: alta revertida' }); continue; }
     if (!ponerColor(p.alta)) { revertirAlta(p.alta.clubId); for (const x of p.xs) noEscritos.push({ pdf: x.pdf, motivo: 'no pude poner el color en data/clubs.js: alta revertida' }); continue; }
   }
   let escritos = 0;

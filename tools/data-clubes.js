@@ -20,10 +20,14 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
 
-let paises = null;
+// Se relee si clubs.js cambió desde la última lectura: en una misma corrida, `cargar-lote.mjs` da de alta varios clubes (alta-club.mjs
+// los agrega a clubs.js en otro proceso) y pregunta por su ruta después. Con el caché de la primera lectura, el segundo club nuevo de un
+// lote no tenía país, su ruta salía plana y el lote concluía "el alta no se escribió" (lote 67: Levadiakos y OFI).
+let paises = null, mtimeLeido = 0;
 function paisDe(clubId) {
-  if (!paises) {
-    paises = {};
+  const mtime = fs.statSync(path.join(DATA, 'clubs.js')).mtimeMs;
+  if (!paises || mtime !== mtimeLeido) {
+    paises = {}; mtimeLeido = mtime;
     const s = fs.readFileSync(path.join(DATA, 'clubs.js'), 'utf8');
     for (const m of s.matchAll(/\bid:\s*'([a-z0-9-]+)'[^\n]*?\bcountry:\s*'([A-Z]{2})'/g)) paises[m[1]] = m[2].toLowerCase();
   }
