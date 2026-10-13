@@ -41,6 +41,43 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2018: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2018-06-30","sourceId":"oficrete-gr-ofi-income-stmt-2018-06-30"}
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-13) desde Clubes/Grecia/OFI Crete/OFI_income_stmt_2019-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/OFI Crete/OFI_income_stmt_2019-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κύκλος εργασιών (καθαρός) | pág. 1, Jev 0.99 |
+| 2 | Λοιπά συνήθη έσοδα | pág. 1, Jev 1 |
+| 3 | Λοιπά έσοδα και κέρδη | pág. 1, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κόστος πωλήσεων | pág. 1, precedente |
+| 2 | Έξοδα διοίκησης | pág. 1, Jev 1 |
+| 3 | Έξοδα διάθεσης | pág. 1, Jev 1 |
+| 4 | Λοιπά έξοδα και ζημίες | pág. 1, Jev 0.95 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-13): gr-superleague, verificado contra roster cacheado de "2018–19 Super League Greece" (tools/club-league-reference/gr.json), coincidencia única por palabras "OFI" = "OFI Crete".
+```
+
 ## 2018
 
 ### Ingresos
@@ -86,4 +123,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/OFI Crete/OFI_income_stmt_2018-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### oficrete-gr-ofi-income-stmt-2019-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/OFI Crete/OFI_income_stmt_2019-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

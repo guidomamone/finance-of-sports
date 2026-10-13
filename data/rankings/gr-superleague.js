@@ -51,6 +51,9 @@ window.RANKINGS["gr-superleague"] = {
       { id:"levadiakos-gr", revenue:2.903, reportType:"official_balance_sheet",
         sourceId:"levadiakos-gr-fs-2019-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.087],["Otros ingresos",2.816]] },
+      { id:"oficrete-gr", revenue:2.518, reportType:"official_balance_sheet",
+        sourceId:"oficrete-gr-ofi-income-stmt-2019-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.593],["Otros ingresos",0.925]] },
     ],
   },
   2018: {

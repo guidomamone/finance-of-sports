@@ -40,3 +40,5 @@ en liquidación (ΓΕΜΗ 123562027000).
 Color de marca: null — blanco y negro (en.wikipedia, sección Colours), blanco como color de identidad, verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2018 desde `Clubes/Grecia/OFI Crete/OFI_income_stmt_2018-06-30.pdf` (sourceId `oficrete-gr-ofi-income-stmt-2018-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2019 desde `Clubes/Grecia/OFI Crete/OFI_income_stmt_2019-06-30.pdf` (sourceId `oficrete-gr-ofi-income-stmt-2019-06-30`).
