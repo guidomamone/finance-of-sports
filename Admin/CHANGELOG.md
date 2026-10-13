@@ -23,6 +23,7 @@ que dice `ESTADO.md` era verdad ese día.
   escribe un club si el código sin comentarios no da idéntico o si alguna línea no llegó al `.md`.
 - Piloto: Udinese, Gimnasia y Esgrima, Racing y Anderlecht (1.248 comentarios; Racing 181 → 112 KB). `auditAll()` igual que antes. ASSET_V 810.
 - Lote 1: Argentina, Chile, Perú y México (22 clubes, 4.053 comentarios). ASSET_V 811.
+- Lote 2: Brasil (42 clubes, 9.544 comentarios). ASSET_V 812.
 
 ## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 

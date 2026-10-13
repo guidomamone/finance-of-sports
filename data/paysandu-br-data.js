@@ -1,163 +1,122 @@
-// ============================================================================
-// data/paysandu-br-data.js — Paysandu Sport Club (Brasil).
-// ALTA POR SCRIPT (tools/alta-club.mjs, 2026-10-10), SIN EJERCICIOS CARGADOS TODAVÍA:
-// las estructuras de abajo están vacías a propósito. Los rubros, los totales
-// oficiales y el resto del fiscalYearMeta los agrega la etapa de carga
-// (tools/proponer-carga.mjs / sesión de onboarding), que es también la que
-// reemplaza esta cabecera por la de siempre (fuente, perímetro, categorización).
-//
-// Documento que originó el alta: Clubes/Brasil/Paysandu/dre-2021.pdf
-//
-// De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
-//   id                 ok        "paysandu-br" — slug de "Paysandu" + '-br' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
-//   name               ok        "Paysandu Sport Club" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): razón social tal como la dice el documento, si
-//   displayName        ok        "Paysandu" — nombre de la carpeta del club en Clubes/
-//   country            ok        "BR" — carpeta de país "Brasil" (tabla PAISES)
-//   reportingCurrency  ok        "BRL" — moneda de curso legal de Brasil
-//   fiscalYearStart    ok        "01-01" — cierre del ejercicio: los demás .md del club (4 de 4 documentos cierran en el mes 12); este documento no alcanza solo
-//   sport              ok        "futbol" — el .md nombra el fútbol 3 veces y ningún otro deporte más que eso
-//   brandColor         pendiente (ausente) — la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)
-//   anio               ok        2021 — nombre del archivo (misma regla que onboard.mjs --quien)
-//   cierre             ok        "2021-12-31" — año del ejercicio + mes de cierre (los demás .md del club (4 de 4 documentos cierran en el mes 12); este documento no alcanza solo)
-//   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
-//   perimetro          ok        "individual" — el .md no presenta estados consolidados (0 menciones de "consolidado")
-//   currency           ok        "BRL" — moneda de curso legal de Brasil (tabla PAISES de alta-club.mjs)
-//   fxRef              ok        "BRL@2021-12-31" — el documento no declara tipo de cambio; FX_CLOSE ya tiene BRL@2021-12-31 = 5.5805 (PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2021)
-//   sourceId           ok        "paysandu-br-dre-2021" — clubId + nombre del archivo en slug
-//   liga               ok        "br-serieC" — roster cacheado de "2021 Campeonato Brasileiro Série C" (tools/club-league-reference/br.json), coincidencia exacta "Paysandu"
-//
-// FISCAL YEAR META PROPUESTO para 2021 (NO registrado: un ejercicio con meta y
-// sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
-//   2021: {"reportType":"official_balance_sheet","currency":"BRL","fxRef":"BRL@2021-12-31","sourceId":"paysandu-br-dre-2021"}
-// ============================================================================
-
 const paysandubrRevenueLinesByYear = {
-  // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Paysandu/dre-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Brasil/Paysandu/dre-2021.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2021: [
-    { rawLabel:'Futebol Profissional', normalizedCategory:'lump_football_operations', amountNative:10.868442, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
-    { rawLabel:'Futebol de Base', normalizedCategory:'youth_football', amountNative:0.91543, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Esportes Olímpicos', normalizedCategory:'other_sports', amountNative:0.260353, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Sócio Torcedor', normalizedCategory:'member_dues', amountNative:1.176437, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Sócio Proprietário', normalizedCategory:'member_dues', amountNative:0.32084, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.97
-    { rawLabel:'Doações', normalizedCategory:'other_income', amountNative:3.43231, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Royalties e Franquias', normalizedCategory:'sponsorship_commercial', amountNative:1.753659, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.8
-    { rawLabel:'Outras receita', normalizedCategory:'other_income', amountNative:0.272893, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
-    { rawLabel:'Aluguel', normalizedCategory:'other_income', amountNative:0.21745, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Receita com Gratuidades', normalizedCategory:'other_income', amountNative:3.182285, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Recuperação de Receitas', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
-    { rawLabel:'(-) Deduções da Receita do Futebol', normalizedCategory:'other_income', amountNative:-0.423691, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.96
-    { rawLabel:'Lojas Lobo', normalizedCategory:'sponsorship_commercial', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
-    { rawLabel:'(-) Deduções da Receita de Venda', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
+    { rawLabel:'Futebol Profissional', normalizedCategory:'lump_football_operations', amountNative:10.868442, disclosureLevel:'aggregated' },
+    { rawLabel:'Futebol de Base', normalizedCategory:'youth_football', amountNative:0.91543, disclosureLevel:'aggregated' },
+    { rawLabel:'Esportes Olímpicos', normalizedCategory:'other_sports', amountNative:0.260353, disclosureLevel:'aggregated' },
+    { rawLabel:'Sócio Torcedor', normalizedCategory:'member_dues', amountNative:1.176437, disclosureLevel:'aggregated' },
+    { rawLabel:'Sócio Proprietário', normalizedCategory:'member_dues', amountNative:0.32084, disclosureLevel:'aggregated' },
+    { rawLabel:'Doações', normalizedCategory:'other_income', amountNative:3.43231, disclosureLevel:'aggregated' },
+    { rawLabel:'Royalties e Franquias', normalizedCategory:'sponsorship_commercial', amountNative:1.753659, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras receita', normalizedCategory:'other_income', amountNative:0.272893, disclosureLevel:'aggregated' },
+    { rawLabel:'Aluguel', normalizedCategory:'other_income', amountNative:0.21745, disclosureLevel:'aggregated' },
+    { rawLabel:'Receita com Gratuidades', normalizedCategory:'other_income', amountNative:3.182285, disclosureLevel:'aggregated' },
+    { rawLabel:'Recuperação de Receitas', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'(-) Deduções da Receita do Futebol', normalizedCategory:'other_income', amountNative:-0.423691, disclosureLevel:'aggregated' },
+    { rawLabel:'Lojas Lobo', normalizedCategory:'sponsorship_commercial', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'(-) Deduções da Receita de Venda', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
   ],
-  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Paysandu/dre-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Brasil/Paysandu/dre-2023.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2023: [
-    { rawLabel:'Futebol Profissional', normalizedCategory:'lump_football_operations', amountNative:20.164819, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
-    { rawLabel:'Futebol de Base', normalizedCategory:'youth_football', amountNative:0.0055, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Esportes Olímpicos', normalizedCategory:'other_sports', amountNative:0.843745, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Sócio Torcedor', normalizedCategory:'member_dues', amountNative:3.659352, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Sócio Proprietário', normalizedCategory:'member_dues', amountNative:0.500273, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.97
-    { rawLabel:'Doações', normalizedCategory:'other_income', amountNative:1.683667, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Royalties e Franquias', normalizedCategory:'sponsorship_commercial', amountNative:3.191832, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.8
-    { rawLabel:'Patrocínio', normalizedCategory:'sponsorship_commercial', amountNative:8.11171, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Remissão de dívida', normalizedCategory:'other_income', amountNative:0.934741, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Time Mania', normalizedCategory:'other_income', amountNative:0.671711, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Outras receita', normalizedCategory:'other_income', amountNative:0.135599, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
-    { rawLabel:'Aluguel', normalizedCategory:'other_income', amountNative:0.2507, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Receita com Gratuidades', normalizedCategory:'other_income', amountNative:5.360617, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'(-) Deduções da Receitas', normalizedCategory:'other_income', amountNative:-0.44134, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
+    { rawLabel:'Futebol Profissional', normalizedCategory:'lump_football_operations', amountNative:20.164819, disclosureLevel:'aggregated' },
+    { rawLabel:'Futebol de Base', normalizedCategory:'youth_football', amountNative:0.0055, disclosureLevel:'aggregated' },
+    { rawLabel:'Esportes Olímpicos', normalizedCategory:'other_sports', amountNative:0.843745, disclosureLevel:'aggregated' },
+    { rawLabel:'Sócio Torcedor', normalizedCategory:'member_dues', amountNative:3.659352, disclosureLevel:'aggregated' },
+    { rawLabel:'Sócio Proprietário', normalizedCategory:'member_dues', amountNative:0.500273, disclosureLevel:'aggregated' },
+    { rawLabel:'Doações', normalizedCategory:'other_income', amountNative:1.683667, disclosureLevel:'aggregated' },
+    { rawLabel:'Royalties e Franquias', normalizedCategory:'sponsorship_commercial', amountNative:3.191832, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínio', normalizedCategory:'sponsorship_commercial', amountNative:8.11171, disclosureLevel:'aggregated' },
+    { rawLabel:'Remissão de dívida', normalizedCategory:'other_income', amountNative:0.934741, disclosureLevel:'aggregated' },
+    { rawLabel:'Time Mania', normalizedCategory:'other_income', amountNative:0.671711, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras receita', normalizedCategory:'other_income', amountNative:0.135599, disclosureLevel:'aggregated' },
+    { rawLabel:'Aluguel', normalizedCategory:'other_income', amountNative:0.2507, disclosureLevel:'aggregated' },
+    { rawLabel:'Receita com Gratuidades', normalizedCategory:'other_income', amountNative:5.360617, disclosureLevel:'aggregated' },
+    { rawLabel:'(-) Deduções da Receitas', normalizedCategory:'other_income', amountNative:-0.44134, disclosureLevel:'aggregated' },
   ],
-  // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Paysandu/dre-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Brasil/Paysandu/dre-2024.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2024: [
-    { rawLabel:'Futebol Profissional', normalizedCategory:'lump_football_operations', amountNative:36.24425, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
-    { rawLabel:'Futebol de Base', normalizedCategory:'youth_football', amountNative:0.066421, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Esportes Olímpicos', normalizedCategory:'other_sports', amountNative:0.643097, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Sócio Torcedor', normalizedCategory:'member_dues', amountNative:4.795875, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Sócio Proprietário', normalizedCategory:'member_dues', amountNative:0.40789, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.97
-    { rawLabel:'Doações', normalizedCategory:'other_income', amountNative:0.791431, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Royalties e Franquias', normalizedCategory:'sponsorship_commercial', amountNative:2.118088, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.8
-    { rawLabel:'Patrocínio', normalizedCategory:'sponsorship_commercial', amountNative:6.897866, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Remissão de dívida', normalizedCategory:'other_income', amountNative:0.04488, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Time Mania', normalizedCategory:'other_income', amountNative:0.572851, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Outras receita', normalizedCategory:'other_income', amountNative:3.598358, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
-    { rawLabel:'Aluguel', normalizedCategory:'other_income', amountNative:0.704981, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Receita com Gratuidades', normalizedCategory:'other_income', amountNative:6.965004, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'(-) Deduções da Receitas', normalizedCategory:'other_income', amountNative:0.6456, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
+    { rawLabel:'Futebol Profissional', normalizedCategory:'lump_football_operations', amountNative:36.24425, disclosureLevel:'aggregated' },
+    { rawLabel:'Futebol de Base', normalizedCategory:'youth_football', amountNative:0.066421, disclosureLevel:'aggregated' },
+    { rawLabel:'Esportes Olímpicos', normalizedCategory:'other_sports', amountNative:0.643097, disclosureLevel:'aggregated' },
+    { rawLabel:'Sócio Torcedor', normalizedCategory:'member_dues', amountNative:4.795875, disclosureLevel:'aggregated' },
+    { rawLabel:'Sócio Proprietário', normalizedCategory:'member_dues', amountNative:0.40789, disclosureLevel:'aggregated' },
+    { rawLabel:'Doações', normalizedCategory:'other_income', amountNative:0.791431, disclosureLevel:'aggregated' },
+    { rawLabel:'Royalties e Franquias', normalizedCategory:'sponsorship_commercial', amountNative:2.118088, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínio', normalizedCategory:'sponsorship_commercial', amountNative:6.897866, disclosureLevel:'aggregated' },
+    { rawLabel:'Remissão de dívida', normalizedCategory:'other_income', amountNative:0.04488, disclosureLevel:'aggregated' },
+    { rawLabel:'Time Mania', normalizedCategory:'other_income', amountNative:0.572851, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras receita', normalizedCategory:'other_income', amountNative:3.598358, disclosureLevel:'aggregated' },
+    { rawLabel:'Aluguel', normalizedCategory:'other_income', amountNative:0.704981, disclosureLevel:'aggregated' },
+    { rawLabel:'Receita com Gratuidades', normalizedCategory:'other_income', amountNative:6.965004, disclosureLevel:'aggregated' },
+    { rawLabel:'(-) Deduções da Receitas', normalizedCategory:'other_income', amountNative:0.6456, disclosureLevel:'aggregated' },
   ],
-  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Paysandu/dre-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Brasil/Paysandu/dre-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2025: [
-    { rawLabel:'FUTEBOL PROFISSIONAL', normalizedCategory:'lump_football_operations', amountNative:46.737042, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'FUTEBOL DE BASE', normalizedCategory:'youth_football', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'ESPORTES OLIMPICOS', normalizedCategory:'other_sports', amountNative:0.600196, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'SOCIO TORCEDOR', normalizedCategory:'member_dues', amountNative:4.707208, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'SOCIO PROPRIETARIO', normalizedCategory:'member_dues', amountNative:0.586628, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'DOACOES', normalizedCategory:'other_income', amountNative:2.562082, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'ROYALTIES E FRANQUIAS', normalizedCategory:'sponsorship_commercial', amountNative:3.513687, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'PATROCINIO', normalizedCategory:'sponsorship_commercial', amountNative:10.155971, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'REMISSAO DE DIVIDA', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'TIMEMANIA', normalizedCategory:'other_income', amountNative:0.819318, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'OUTRAS RECEITAS', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'ALUGUEL', normalizedCategory:'other_income', amountNative:0.389368, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'RECEITA COM GRATUIDADES', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'(-) DEDUCOES DE RECEITAS', normalizedCategory:'other_income', amountNative:-0.491022, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'FUTEBOL PROFISSIONAL', normalizedCategory:'lump_football_operations', amountNative:46.737042, disclosureLevel:'aggregated' },
+    { rawLabel:'FUTEBOL DE BASE', normalizedCategory:'youth_football', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'ESPORTES OLIMPICOS', normalizedCategory:'other_sports', amountNative:0.600196, disclosureLevel:'aggregated' },
+    { rawLabel:'SOCIO TORCEDOR', normalizedCategory:'member_dues', amountNative:4.707208, disclosureLevel:'aggregated' },
+    { rawLabel:'SOCIO PROPRIETARIO', normalizedCategory:'member_dues', amountNative:0.586628, disclosureLevel:'aggregated' },
+    { rawLabel:'DOACOES', normalizedCategory:'other_income', amountNative:2.562082, disclosureLevel:'aggregated' },
+    { rawLabel:'ROYALTIES E FRANQUIAS', normalizedCategory:'sponsorship_commercial', amountNative:3.513687, disclosureLevel:'aggregated' },
+    { rawLabel:'PATROCINIO', normalizedCategory:'sponsorship_commercial', amountNative:10.155971, disclosureLevel:'aggregated' },
+    { rawLabel:'REMISSAO DE DIVIDA', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'TIMEMANIA', normalizedCategory:'other_income', amountNative:0.819318, disclosureLevel:'aggregated' },
+    { rawLabel:'OUTRAS RECEITAS', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'ALUGUEL', normalizedCategory:'other_income', amountNative:0.389368, disclosureLevel:'aggregated' },
+    { rawLabel:'RECEITA COM GRATUIDADES', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'(-) DEDUCOES DE RECEITAS', normalizedCategory:'other_income', amountNative:-0.491022, disclosureLevel:'aggregated' },
   ],
 };
 const paysandubrExpenseLinesByYear = {
-  2021: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Custo com Pessoal', normalizedCategory:'wages_squad', amountNative:-10.35281, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.91
-    { rawLabel:'CMV', normalizedCategory:'admin_general_expense', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Custo com Pessoal', normalizedCategory:'wages_squad', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.91
-    { rawLabel:'Despesa com Pessoal', normalizedCategory:'admin_general_expense', amountNative:-2.142472, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Gerais e Administrativas', normalizedCategory:'admin_general_expense', amountNative:-5.802959, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Despesas com Gratuidades', normalizedCategory:'other_expenses', amountNative:-3.182285, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Depreciação/Amortização', normalizedCategory:'depreciation', amountNative:-0.287647, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Perdas Constituídas', normalizedCategory:'other_expenses', amountNative:-0.005, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'PECLD', normalizedCategory:'other_expenses', amountNative:-1.911802, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.003463, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Gerais e Administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.033061, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Depreciação/Amortização', normalizedCategory:'depreciation', amountNative:-0.00088, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'PECLD', normalizedCategory:'other_expenses', amountNative:-0.090646, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Outras Despesas com Vendas', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
+  2021: [
+    { rawLabel:'Custo com Pessoal', normalizedCategory:'wages_squad', amountNative:-10.35281, disclosureLevel:'aggregated' },
+    { rawLabel:'CMV', normalizedCategory:'admin_general_expense', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Custo com Pessoal', normalizedCategory:'wages_squad', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesa com Pessoal', normalizedCategory:'admin_general_expense', amountNative:-2.142472, disclosureLevel:'aggregated' },
+    { rawLabel:'Gerais e Administrativas', normalizedCategory:'admin_general_expense', amountNative:-5.802959, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas com Gratuidades', normalizedCategory:'other_expenses', amountNative:-3.182285, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciação/Amortização', normalizedCategory:'depreciation', amountNative:-0.287647, disclosureLevel:'aggregated' },
+    { rawLabel:'Perdas Constituídas', normalizedCategory:'other_expenses', amountNative:-0.005, disclosureLevel:'aggregated' },
+    { rawLabel:'PECLD', normalizedCategory:'other_expenses', amountNative:-1.911802, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.003463, disclosureLevel:'aggregated' },
+    { rawLabel:'Gerais e Administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.033061, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciação/Amortização', normalizedCategory:'depreciation', amountNative:-0.00088, disclosureLevel:'aggregated' },
+    { rawLabel:'PECLD', normalizedCategory:'other_expenses', amountNative:-0.090646, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras Despesas com Vendas', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
   ],
-  2023: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Custo com Pessoal', normalizedCategory:'wages_squad', amountNative:-18.173344, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.91
-    { rawLabel:'Despesa com Pessoal', normalizedCategory:'admin_general_expense', amountNative:-3.446076, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Gerais e Administrativas', normalizedCategory:'admin_general_expense', amountNative:-16.862975, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Despesas com Gratuidades (i)', normalizedCategory:'other_expenses', amountNative:-5.360617, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Depreciação/Amortização', normalizedCategory:'depreciation', amountNative:-0.49864, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Perdas Constituídas (ii)', normalizedCategory:'other_expenses', amountNative:-0.005171, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'PECLD', normalizedCategory:'other_expenses', amountNative:-2.459373, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.043202, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+  2023: [
+    { rawLabel:'Custo com Pessoal', normalizedCategory:'wages_squad', amountNative:-18.173344, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesa com Pessoal', normalizedCategory:'admin_general_expense', amountNative:-3.446076, disclosureLevel:'aggregated' },
+    { rawLabel:'Gerais e Administrativas', normalizedCategory:'admin_general_expense', amountNative:-16.862975, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas com Gratuidades (i)', normalizedCategory:'other_expenses', amountNative:-5.360617, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciação/Amortização', normalizedCategory:'depreciation', amountNative:-0.49864, disclosureLevel:'aggregated' },
+    { rawLabel:'Perdas Constituídas (ii)', normalizedCategory:'other_expenses', amountNative:-0.005171, disclosureLevel:'aggregated' },
+    { rawLabel:'PECLD', normalizedCategory:'other_expenses', amountNative:-2.459373, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.043202, disclosureLevel:'aggregated' },
   ],
-  2024: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Custo com Pessoal', normalizedCategory:'wages_squad', amountNative:-26.060176, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.91
-    { rawLabel:'Custos Gerais', normalizedCategory:'admin_general_expense', amountNative:-7.541134, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.96
-    { rawLabel:'Despesa com Pessoal', normalizedCategory:'admin_general_expense', amountNative:-2.607389, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Gerais e Administrativas', normalizedCategory:'admin_general_expense', amountNative:-19.854492, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Despesas com Gratuidades', normalizedCategory:'other_expenses', amountNative:-6.965004, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Depreciação/Amortização', normalizedCategory:'depreciation', amountNative:-4.075733, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Perdas Constituídas', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'PECLD', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.177444, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+  2024: [
+    { rawLabel:'Custo com Pessoal', normalizedCategory:'wages_squad', amountNative:-26.060176, disclosureLevel:'aggregated' },
+    { rawLabel:'Custos Gerais', normalizedCategory:'admin_general_expense', amountNative:-7.541134, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesa com Pessoal', normalizedCategory:'admin_general_expense', amountNative:-2.607389, disclosureLevel:'aggregated' },
+    { rawLabel:'Gerais e Administrativas', normalizedCategory:'admin_general_expense', amountNative:-19.854492, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas com Gratuidades', normalizedCategory:'other_expenses', amountNative:-6.965004, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciação/Amortização', normalizedCategory:'depreciation', amountNative:-4.075733, disclosureLevel:'aggregated' },
+    { rawLabel:'Perdas Constituídas', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'PECLD', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.177444, disclosureLevel:'aggregated' },
   ],
-  2025: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'CUSTOS COM PESSOAL', normalizedCategory:'wages_squad', amountNative:-30.443508, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'CUSTOS GERAIS', normalizedCategory:'admin_general_expense', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'DESPESAS COM PESSOAL', normalizedCategory:'admin_general_expense', amountNative:-6.496625, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'GERAIS E ADMINISTRATIVAS', normalizedCategory:'admin_general_expense', amountNative:-29.23796, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'DESPESAS COM GRATUIDADE I', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'DEPRECIACAO/AMORTIZACAO', normalizedCategory:'depreciation', amountNative:-3.991902, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'PERDAS CONSTITUIDAS II', normalizedCategory:'other_expenses', amountNative:-0.087793, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
-    { rawLabel:'PERDAS DE CAPITAL', normalizedCategory:'other_expenses', amountNative:-0.005696, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'PECLD', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'DESPESAS TRIBUTARIAS', normalizedCategory:'admin_general_expense', amountNative:-0.032934, disclosureLevel:'aggregated' }, // pág. 1, precedente
+  2025: [
+    { rawLabel:'CUSTOS COM PESSOAL', normalizedCategory:'wages_squad', amountNative:-30.443508, disclosureLevel:'aggregated' },
+    { rawLabel:'CUSTOS GERAIS', normalizedCategory:'admin_general_expense', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'DESPESAS COM PESSOAL', normalizedCategory:'admin_general_expense', amountNative:-6.496625, disclosureLevel:'aggregated' },
+    { rawLabel:'GERAIS E ADMINISTRATIVAS', normalizedCategory:'admin_general_expense', amountNative:-29.23796, disclosureLevel:'aggregated' },
+    { rawLabel:'DESPESAS COM GRATUIDADE I', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'DEPRECIACAO/AMORTIZACAO', normalizedCategory:'depreciation', amountNative:-3.991902, disclosureLevel:'aggregated' },
+    { rawLabel:'PERDAS CONSTITUIDAS II', normalizedCategory:'other_expenses', amountNative:-0.087793, disclosureLevel:'aggregated' },
+    { rawLabel:'PERDAS DE CAPITAL', normalizedCategory:'other_expenses', amountNative:-0.005696, disclosureLevel:'aggregated' },
+    { rawLabel:'PECLD', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'DESPESAS TRIBUTARIAS', normalizedCategory:'admin_general_expense', amountNative:-0.032934, disclosureLevel:'aggregated' },
   ],
 };
 const paysandubrFiscalYearMeta = {
-  2021: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2021: {
     currency:'BRL', fxRef:'BRL@2021-12-31',
     sourceId:'paysandu-br-dre-2021',
     reportType:'official_balance_sheet',
@@ -168,15 +127,13 @@ const paysandubrFiscalYearMeta = {
       {label:'Receitas financeiras', value:0.000095},
       {label:'Despesas financeiras', value:-0.179393},
     ],
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
     sinDesglose: [
       {renglon:'Futebol Profissional', lado:'revenue', importe:10.868442, motivo:'el documento no desglosa este renglón'},
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:21.976408, officialTotalExpenses:23.813025, officialPAT:-2.015915,
   },
-  // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2023-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae 2022-12-31 (el primer año del encabezado 'Exercícios findos em 31 de dezembro 2022 e 2023'); el ejercicio del documento cierra el 2023-12-31
-  2023: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2023: {
     currency:'BRL', fxRef:'BRL@2023-12-31',
     sourceId:'paysandu-br-dre-2023',
     reportType:'official_balance_sheet',
@@ -187,17 +144,13 @@ const paysandubrFiscalYearMeta = {
       {label:'Receitas financeiras', value:0.009504},
       {label:'Despesas financeiras', value:-0.770205},
     ],
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
     sinDesglose: [
       {renglon:'Futebol Profissional', lado:'revenue', importe:20.164819, motivo:'el documento no desglosa este renglón'},
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:45.072926, officialTotalExpenses:46.849398, officialPAT:-2.537173,
   },
-  // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2024-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae 2023-12-31; el ejercicio del documento cierra el 2024-12-31
-  // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: el renglon 'Despesas Operacionais da Atividade Desportiva' 33.680.062 (L33) es el subtotal de L34-L41 y la extraccion lo sumaba ademas de sus componentes (gastos 101.003.244 en vez de ~67,3M). Se saca el subtotal y quedan los componentes. Resultado impreso: 64.496.592 - 33.601.309,54 - 33.680.062 = -2.784.779,54 (L42); -2.784.779,54 - 1.100.953,60 = -3.885.733,14 (L46).
-  // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Onboarding to-do 165 (Claude, 2026-10-09): el documento imprime 'Perdas de Capital' (41.810, L39) pero no la suma: el subtotal L33 es 33.680.062 = sus renglones sin ella (33.721.872 - 41.810), y el resultado operacional (-2.784.779,54, L41) y el del ejercicio (-3.885.733,14, L45) cierran sin ella. Se carga lo que el documento suma
-  2024: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2024: {
     currency:'BRL', fxRef:'BRL@2024-12-31',
     sourceId:'paysandu-br-dre-2024',
     reportType:'official_balance_sheet',
@@ -208,15 +161,13 @@ const paysandubrFiscalYearMeta = {
       {label:'Receitas financeiras', value:-0.054695},
       {label:'Despesas financeiras', value:-1.046259},
     ],
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
     sinDesglose: [
       {renglon:'Futebol Profissional', lado:'revenue', importe:36.24425, motivo:'el documento no desglosa este renglón'},
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:64.496592, officialTotalExpenses:67.281372, officialPAT:-3.885733,
   },
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): resultado-final = -2.175.575,20. Onboarding to-do 165 (Claude, 2026-10-09): este DRE de 2025 imprime con signos de balancete (receitas negativas, custos positivos), así que el déficit sale como '2.175.575,20' positivo (L8 y L45). La cuenta: 69.580.477,67 - 30.443.507,96 - 39.852.911,20 - 1.459.633,71 = -2.175.575,20; dre-2024 (formato normal) imprime 2024 como déficit -3.885.733,14 y este documento lo trae como 3.885.733,14
-  2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+  2025: {
     currency:'BRL', fxRef:'BRL@2025-12-31',
     sourceId:'paysandu-br-dre-2025',
     reportType:'official_balance_sheet',
@@ -228,7 +179,6 @@ const paysandubrFiscalYearMeta = {
       {label:'DESPESAS FINANCEIRAS', value:1.478759},
       {label:'Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)', value:-2.919267},
     ],
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
     sinDesglose: [
       {renglon:'FUTEBOL PROFISSIONAL', lado:'revenue', importe:46.737042, motivo:'el documento no desglosa este renglón'},
     ],
@@ -250,8 +200,6 @@ window.CLUB_GENERIC_DATA['paysandu-br'] = {
   presupuestoOverlayByYear: paysandubrPresupuestoOverlayByYear,
 };
 
-// Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
-// primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 Object.assign(sources, {
   'paysandu-br-dre-2021': {
     id:'paysandu-br-dre-2021', clubId:'paysandu-br',

@@ -1,131 +1,3 @@
-// ============================================================================
-// data/athleticoparanaense-br-data.js — Club Athletico Paranaense (Curitiba, Paraná, Brasil). Sigue
-// siendo ASSOCIAÇÃO (NO se convirtió a SAF), pero publica "Demonstrações Financeiras" auditadas
-// (BDO RCS Auditores Independentes) todos los años, buena cobertura histórica. clubId CON GUIÓN
-// desde el arranque: 'athleticoparanaense-br' (mismo criterio que banfield-ar), bracket notation en
-// clubs/gestionesByClub/memberCountByClub/CLUB_GENERIC_DATA. 2 ejercicios cargados: 2024 y 2025
-// (ejercicio social = AÑO CALENDARIO completo, 1°/1 a 31/12, clubs.js fiscalYearStart:'01-01', mismo
-// criterio que Botafogo/Operário Ferroviário/Grêmio).
-//
-// FUENTES: demonstracoes-financeiras-2024.md (bajado de un mirror en static.poder360.com.br — la URL
-// directa a static.athletico.com.br con acentos dio 404) y demonstracoes-financeiras-2025.md (bajado
-// del sitio oficial athletico.com.br). Los 2 PDF con texto nativo. Transcripción completa en
-// Clubes/Brasil/Athletico Paranaense/demonstracoes-financeiras-<año>.md. Firmados por el presidente
-// Mario Celso Petraglia (mismo presidente los 2 años).
-//
-// COLUMNA USADA: CONTROLADORA (el club standalone) en TODAS las líneas, NO Consolidado (que suma la
-// CAP S/A, la sociedad titular del estadio Arena da Baixada — el propio informe del auditor hace una
-// "Ênfase" explícita sobre esa controlada: recibe aportes de la controladora como única fuente de
-// caja) — mismo criterio que Botafogo/Operário Ferroviário: un solo perímetro de consolidación, sin
-// mezclar.
-//
-// ESCALA: documentos "Em milhares de Reais" (miles de reales), formato numérico brasileño ("." =
-// separador de miles). Transcribir el dígito tal cual con "." como punto decimal de JS YA da
-// millones de BRL nativos directo (ej. el documento imprime "261.283" = 261.283 miles de reales =
-// R$261,283 millones; en este archivo amountNative:261.283) — no hace falta dividir por 1.000 de
-// nuevo, esa división YA está hecha por el propio formato numérico del documento. Mismo resultado
-// final que "dividir por 1.000" de Botafogo/Operário, pero sin el paso intermedio.
-//
-// ESTRUCTURA REAL DEL DOCUMENTO (clave para no duplicar plata leyendo el código de abajo): la DRE es
-// una cascada de 7 bloques, cada uno con su propio subtotal impreso:
-//   Receita operacional líquida (Nota 18)
-//   − Custo das atividades sociais e esportivas (Nota 19, incluye TODO el costo del plantel: sueldos,
-//     derecho de imagen, viajes, gastos administrativos del plantel, amortización de pases)
-//   = Resultado Bruto
-//   − Despesa com pessoal (Nota 20, personal NO deportivo) − Depreciação/amortizações (Nota 20) −
-//     Despesas das atividades em geral (Nota 20)
-//   + Outras despesas/receitas (Nota 21: venta de jugadores NETA de sus costos de transacción — ver
-//     desglose abajo, ítem separado de la Nota 19)
-//   − Resultado de equivalência patrimonial (línea suelta de la DRE, resultado de la participación en
-//     la CAP S/A por el método de la participación — no operativo/no recurrente)
-//   = Resultado operacional
-//   + Resultado não operacional (Nota 22: donaciones, juicios ganados/perdidos, partidas atípicas)
-//   + Resultado financeiro (Nota 23)
-//   = Superávit/Déficit líquido do exercício
-//
-// CATEGORIZACIÓN (idéntica entre 2024 y 2025, mismos rubros los 2 años):
-// - Nota 18 (Receita operacional líquida): 'Televisionamento' -> broadcasting; 'Premiações e
-//   participações' (de TV/torneo, NO de venta de entradas) -> competition_bonus; 'Bilheteria' ->
-//   matchday_competition; 'Camarote' (palcos, venta por temporada) -> season_tickets, mismo criterio
-//   que "palcos" de Boca; 'Associados (sócio furacão)' -> member_dues (programa de socios, no
-//   sponsor); 'Loterias' -> other_income; 'Receitas Arena'/'Lanchonetes'/'Choperia' -> stadium_other
-//   (concesiones DENTRO del estadio — la fila nombra el estadio/complejo explícitamente, cumple el
-//   criterio conservador de club-data-mapping sección 1); 'Publicidade'/'OTT - Rede furacão'/'Loja
-//   oficial'/'E-commerce'/'Patrocínios' -> sponsorship_commercial (comercial/merchandising/medios
-//   propios); 'Escolas de futebol' -> youth_football; 'Outras receitas operacionais' -> other_income;
-//   '(-) Impostos e deduções da receita' -> other_income (línea negativa, contra-revenue, mismo
-//   criterio que 'Deduções sobre a receita' de Botafogo).
-// - Nota 19 (Custos): 'Custo Mercadoria Vendida <canal>' (Escola/Loja/E-Commerce/Lanchonetes/
-//   Choperia/Camarotes) -> admin_general_expense (costo de mercadería, mismo criterio que 'Custo
-//   venda de mercadoria' de Botafogo); 'Custo das Operações de Jogos' -> match_organisation_expense;
-//   'Custo das Operações de Eventos'/'Custo de Transmissão' (solo 2025) -> admin_general_expense
-//   (costo de eventos no futbolísticos/producción, no organización de partido); 'Salários, encargos e
-//   benefícios'/'Direito de Imagem' (del plantel) -> wages_squad; 'Gastos com viagens' ->
-//   match_organisation_expense; 'Gastos Administrativos' (del plantel) -> admin_general_expense;
-//   'Amortizações de atletas' -> player_amortisation.
-// - Nota 20 (Despesas operacionais, personal/depreciación/generales NO deportivos): 'Salários'/
-//   'Premiações'/'Rescisões'/'Encargos sobre folha'/'Benefícios sociais sobre folha'/'Outros gastos
-//   com pessoal' -> admin_general_expense (personal administrativo, distinto del plantel de la Nota
-//   19); 'Depreciação' -> depreciation; 'Amortização' (intangibles generales, no jugadores) ->
-//   other_amortisation; 'Despesas administrativas'/'Despesas gerais'/'Despesas tributárias'
-//   (impuestos, club-data-mapping/referencia/casos-por-pais-y-formato.md)/'Tecnologia da informação' -> admin_general_expense.
-// - Nota 21 (Outras despesas/receitas — venta de jugadores): 'Receita com venda de atletas'/'Receita
-//   com transações com atletas' (préstamos) -> player_sales (ingreso). 'Despesas com transações de
-//   atletas' se desglosa en la Nota 21.2 en 6 conceptos (Repasse de Direitos Econômicos, Comissões,
-//   Despesas Diversas, Intermediação, Empréstimos Atletas, Mecanismo de Solidariedade) -> TODOS
-//   other_expenses (comisiones/intermediación de la operación, no el cargo contable de amortización
-//   en sí — mismo criterio que Racing/Botafogo: `player_amortisation` es SOLO el cargo contable).
-//   'Baixa de direitos federativos' (derecognición del intangible del jugador transferido, cargo
-//   contable real) -> player_amortisation, mismo criterio que 'Baixa de atletas' de Botafogo.
-//   'Outras despesas com atletas' -> other_expenses.
-// - Nota 22 (Resultado não operacional) + 'Resultado de equivalência patrimonial' (línea suelta de la
-//   DRE): TODAS sus líneas -> exceptional_items. Es la sección de la propia DRE explícitamente
-//   separada de "Resultado operacional" (no operativo/no recurrente por definición del propio
-//   documento) — mismo criterio que 'Resultado de equivalência patrimonial' de Botafogo. Incluye
-//   'Doações/bonificações'/'Receitas judiciais'/'Outras receitas não operacionais' (ingreso) y
-//   'Despesas judiciais'/'Despesas indedutíveis'/'Outras despesas não operacionais' (gasto).
-// - Nota 23 (Resultado financeiro): NO se carga como línea — va íntegro a netInterest en
-//   fiscalYearMeta (club-data-mapping sección 2), aunque el documento use un neto que ya mezcla
-//   intereses y variação cambial (mismo tratamiento).
-//
-// VERIFICACIÓN (Node, antes de cargar; ver también el reporte de la sesión):
-// - 2024: revenueLines suma EXACTO 548,101 M BRL. expenseLines suma EXACTO -536,256 M BRL.
-//   revenue + expenses + netInterest(11,586) = 23,431 M BRL vs. Superávit líquido impreso (23,439) —
-//   diferencia de 0,008 M BRL (~R$8.000 sobre R$23,4 millones, ~0,03%), redondeo acumulado de ~40
-//   líneas del propio documento, no error de carga (mismo tipo de diferencia que Racing 2026/27 y
-//   Operário Ferroviario 2024/25, ambos documentados como redondeo aceptable).
-// - 2025: revenueLines suma EXACTO 448,979 M BRL. expenseLines suma EXACTO -524,148 M BRL.
-//   revenue + expenses + netInterest(17,039) = -58,130 M BRL vs. Déficit líquido impreso (-58,134) —
-//   diferencia de 0,004 M BRL, mismo tipo de redondeo aceptable. 2025 fue el primer año de DÉFICIT
-//   real desde que hay balances cargados de este club (el propio "Resultado de equivalência
-//   patrimonial" y la caída de "Receita com venda de atletas" de 272,268 a 180,687 M explican la
-//   mayor parte de la caída).
-// - officialTotalExpenses de este archivo = |expenses + nonCash| del motor genérico (wages +
-//   otherExpenses + amortizaciones/depreciación), EXCLUYENDO exceptional_items (que el motor suma
-//   aparte, en operatingProfit) — mismo criterio que Botafogo. officialTotalRevenue = suma COMPLETA
-//   de revenueLines (el motor genérico suma revenue sin excluir ninguna categoría, a diferencia de
-//   expenses). officialPAT = Superávit/Déficit líquido impreso (incluye todo).
-//
-// grossDebt = 'Empréstimos e financiamentos' Controladora, circulante + não circulante (Nota 13) —
-// línea angosta de deuda financiera real, separada de Fornecedores/Contas a pagar/Obrigações
-// sociais e fiscais/Parcelamentos fiscais en el propio Balanço, mismo criterio que Boca/Vélez
-// (club-data-mapping/referencia/formato-simplificado.md, "grossDebt"). Es chica porque la deuda real del club vive mayormente en la CAP S/A
-// (Consolidado), no en la Controladora. cash = 'Disponibilidades' Controladora (Nota 5).
-//
-// FX: ningún documento declara tipo de cambio propio (Nota "Conversão de operações em moeda
-// estrangeira" solo dice que se usa "a taxa de câmbio da data de fechamento do balanço", sin
-// declarar el número) — se usó PTAX de cierre del BCB vía fxRef, ya cargado en FX_CLOSE:
-// BRL@2024-12-31 (6,1923) y BRL@2025-12-31 (5,5024).
-//
-// Gestión: Mario Celso Petraglia firma como Presidente los 2 ejercicios (2024 y 2025), pero no se
-// encontró en ninguno de los 2 documentos una fecha de elección/mandato que confirme con la
-// profundidad que exige club-data-mapping SKILL.md sección 7 — gestionId 'sinconfirmar' los 2 años,
-// mismo criterio que Botafogo/Operário Ferroviário.
-//
-// Socios: no se encontró una cifra de "sócio furacão" en ninguno de los 2 documentos (solo el monto
-// en R$ de esa línea de ingreso) — memberCountByClub null.
-// ============================================================================
-
 const athleticoparanaenseBrRevenueLinesByYear = {
   2024: [
     { rawLabel:'Televisionamento', normalizedCategory:'broadcasting', amountNative:30.365, disclosureLevel:'detailed' },
@@ -178,7 +50,6 @@ const athleticoparanaenseBrRevenueLinesByYear = {
 
 const athleticoparanaenseBrExpenseLinesByYear = {
   2024: [
-    // Nota 19 — Custos (Atividades comerciais: custo de mercadoria; Custos Com Atletas)
     { rawLabel:'Custo Mercadoria Vendida Escola Oficial', normalizedCategory:'admin_general_expense', amountNative:-1.388, disclosureLevel:'detailed' },
     { rawLabel:'Custo Mercadoria Vendida Loja', normalizedCategory:'admin_general_expense', amountNative:-8.749, disclosureLevel:'detailed' },
     { rawLabel:'Custo Mercadoria Vendida E-Commerce', normalizedCategory:'admin_general_expense', amountNative:-1.448, disclosureLevel:'detailed' },
@@ -192,7 +63,6 @@ const athleticoparanaenseBrExpenseLinesByYear = {
     { rawLabel:'Gastos com viagens (Custos Com Atletas)', normalizedCategory:'match_organisation_expense', amountNative:-18.838, disclosureLevel:'detailed' },
     { rawLabel:'Gastos Administrativos (Custos Com Atletas)', normalizedCategory:'admin_general_expense', amountNative:-10.048, disclosureLevel:'detailed' },
     { rawLabel:'Amortizações de atletas (Custos Com Atletas)', normalizedCategory:'player_amortisation', amountNative:-44.127, disclosureLevel:'detailed' },
-    // Nota 20 — Despesas operacionais (personal/depreciación/generales NO deportivos)
     { rawLabel:'Salários (Despesas com pessoal)', normalizedCategory:'admin_general_expense', amountNative:-26.998, disclosureLevel:'detailed' },
     { rawLabel:'Premiações (Despesas com pessoal)', normalizedCategory:'admin_general_expense', amountNative:-0.894, disclosureLevel:'detailed' },
     { rawLabel:'Rescisões (Despesas com pessoal)', normalizedCategory:'admin_general_expense', amountNative:-0.003, disclosureLevel:'detailed' },
@@ -205,7 +75,6 @@ const athleticoparanaenseBrExpenseLinesByYear = {
     { rawLabel:'Despesas gerais', normalizedCategory:'admin_general_expense', amountNative:-10.583, disclosureLevel:'detailed' },
     { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-9.329, disclosureLevel:'detailed' },
     { rawLabel:'Tecnologia da informação', normalizedCategory:'admin_general_expense', amountNative:-7.543, disclosureLevel:'detailed' },
-    // Nota 21.2 — Despesas com transações de atletas (comisiones/intermediación, NO amortización)
     { rawLabel:'Repasse de Direitos Econômicos', normalizedCategory:'other_expenses', amountNative:-32.347, disclosureLevel:'detailed' },
     { rawLabel:'Comissões Sobre Transações Atletas', normalizedCategory:'other_expenses', amountNative:-14.737, disclosureLevel:'detailed' },
     { rawLabel:'Despesas Diversas Referente a Direitos Atletas', normalizedCategory:'other_expenses', amountNative:-14.286, disclosureLevel:'detailed' },
@@ -214,8 +83,6 @@ const athleticoparanaenseBrExpenseLinesByYear = {
     { rawLabel:'Mecanismo de Solidariedade (pago)', normalizedCategory:'other_expenses', amountNative:-2.186, disclosureLevel:'detailed' },
     { rawLabel:'Baixa de direitos federativos', normalizedCategory:'player_amortisation', amountNative:-19.326, disclosureLevel:'detailed' },
     { rawLabel:'Outras despesas com atletas', normalizedCategory:'other_expenses', amountNative:-0.701, disclosureLevel:'detailed' },
-    // Resultado não operacional (Nota 22) + Resultado de equivalência patrimonial — no operativo/no
-    // recurrente por la propia estructura de la DRE, ver comentario de cabecera.
     { rawLabel:'Despesas judiciais', normalizedCategory:'exceptional_items', amountNative:-3.117, disclosureLevel:'detailed' },
     { rawLabel:'Despesas indedutíveis', normalizedCategory:'exceptional_items', amountNative:-0.447, disclosureLevel:'detailed' },
     { rawLabel:'Outras despesas não operacionais', normalizedCategory:'exceptional_items', amountNative:-16.249, disclosureLevel:'detailed' },
@@ -269,18 +136,9 @@ const athleticoparanaenseBrFiscalYearMeta = {
     sourceId:'athleticoparanaense-br-demonstracoes-2024',
     reportType:'official_balance_sheet',
     gestionId:'sinconfirmar',
-    // grossDebt = 'Empréstimos e financiamentos' Controladora, circulante (0,356) + não circulante
-    // (0,162), Nota 13. cash = 'Disponibilidades' Controladora, Nota 5.
     grossDebt:0.518, cash:128.443,
     profitOnPlayerSales:0, assetSales:0,
-    // netInterest = 'Resultado financeiro' (Nota 23), Controladora, ya neto de intereses + variação
-    // cambial (el documento no los separa en 2 campos, se carga el neto tal cual lo reporta).
     netInterest:11.586, tax:0,
-    // officialTotalRevenue = suma COMPLETA de revenueLines (548,101 M BRL) — el motor genérico
-    // (computeYearGeneric) suma `revenue` sin excluir ninguna categoría. officialTotalExpenses =
-    // 451,166 M BRL = |expenses + nonCash| del motor (wages + otherExpenses + amortizaciones/
-    // depreciación), EXCLUYENDO exceptional_items (el motor lo suma aparte, en operatingProfit) —
-    // mismo criterio que Botafogo. officialPAT = 'Superávit líquido' impreso (23,439), incluye todo.
     officialTotalRevenue:548.101, officialTotalExpenses:451.166, officialPAT:23.439,
   },
   2025: {
@@ -288,15 +146,9 @@ const athleticoparanaenseBrFiscalYearMeta = {
     sourceId:'athleticoparanaense-br-demonstracoes-2025',
     reportType:'official_balance_sheet',
     gestionId:'sinconfirmar',
-    // grossDebt = 'Empréstimos e financiamentos' Controladora, circulante (0,130) + não circulante
-    // (0), Nota 13. cash = 'Disponibilidades' Controladora, Nota 5.
     grossDebt:0.130, cash:48.268,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:17.039, tax:0,
-    // 2025 fue DÉFICIT real (-58,134 M BRL) — primer año de pérdida desde que hay balances de este
-    // club cargados. officialTotalRevenue = 448,979 M BRL (suma completa). officialTotalExpenses =
-    // 467,574 M BRL (excl. exceptional_items, mismo criterio que 2024). officialPAT = 'Déficit
-    // líquido' impreso (-58,134).
     officialTotalRevenue:448.979, officialTotalExpenses:467.574, officialPAT:-58.134,
   },
 };
@@ -333,11 +185,7 @@ Object.assign(sources, {
 });
 
 gestionesByClub['athleticoparanaense-br'] = {
-  // Mario Celso Petraglia firma como Presidente los 2 ejercicios cargados (2024 y 2025), pero
-  // ningún documento confirma fecha de elección/mandato con la profundidad que exige
-  // club-data-mapping SKILL.md sección 7 — entrada mínima para que el selector "Por gestión" no
-  // rompa, mismo criterio que Botafogo/Operário Ferroviário.
   sinconfirmar: { nombre:'Gestión sin confirmar en detalle (firma 2024-2025: Mario Celso Petraglia, Presidente)', firstYear:2024, lastYear:2025 },
 };
 
-memberCountByClub['athleticoparanaense-br'] = null; // no se encontró una cifra de "sócio furacão" en ninguno de los 2 documentos
+memberCountByClub['athleticoparanaense-br'] = null;
