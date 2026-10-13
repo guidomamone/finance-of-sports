@@ -152,3 +152,12 @@ ni en el comentario de ningún archivo de código.
         `node tools/caja-deuda.mjs --club aekathens-gr --ejecutar --escribir` (~US$ 0,15).
       - Dudas opcionales del subagente para el club (no frenan): qué activos cubre "Μισθώματα" (¿el estadio?) y qué explica el salto de
         "Αμοιβές τρίτων" de 1,8 M (2018) a 6,8 M (2019).
+
+221. CAJA-DEUDA LEE LA COLUMNA DE NOTAS COMO IMPORTE (defecto de `tools/caja-deuda.mjs`, escalón 2). AEK 2016 y 2018: la IA tomó "6.8" (el
+    número de nota del renglón "Ταμειακά διαθέσιμα και ισοδύναμα | 6.8 | 1.650.369,92 | 1.785.822,70", AEK_Notes_2018-06-30.md L446) como
+    caja = 6,8 EUR, y la compuerta "documento siguiente" lo aceptó porque el documento siguiente tiene la misma columna de notas y la IA
+    leyó lo mismo. Se escribió y se revirtió sin commitear (2026-10-13); AEK no tiene caja ni deuda cargadas. Barrido de todo el sitio
+    (caja o deuda < 1/10.000 de los ingresos): solo Nottingham Forest 2024 (caja 0,029 M = "29" en £000, real). Diseño a proponer como
+    escalón, con el método de la skill: una cifra que es el contenido de la columna de notas del renglón (encabezado `NOTAS_COLUMNA_RE` de
+    vocabulario.mjs, "Σημ.", "Notes", "Nota") no es un importe; medir con `caja-deuda.mjs --medir` en todos los clubes. Después, volver a
+    correr AEK (`--ejecutar --escribir`, ~US$ 0,28): la caja real es 1.785.822,70 (2017) y 1.650.369,92 (2018).
