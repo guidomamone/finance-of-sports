@@ -96,11 +96,6 @@ ni en el comentario de ningún archivo de código.
 
 
 
-210. EL ENSAYO DE `cargar-lote.mjs` PROMETE AÑOS DE CLUBES NUEVOS QUE DESPUÉS NO ENTRAN (mejora de script). Con un club que no existe,
-    `cargar.mjs --desde-verificacion` frena en "el club no existe" y no mira los demás frenos (casos de la verificación pendientes, categorías
-    en la cola); el ensayo los cuenta como "se escribirían". Caso: lote 67 (Grecia), el ensayo dijo 21 años y `--escribir` no escribió ninguno
-    (alta hecha y revertida 5 veces). Escalón posible: en el ensayo, para un club nuevo, evaluar el resto de los frenos como si el club existiera.
-
 211. DUDAS CONTRADICTORIAS SOBRE EL MISMO CUADRO (mejora de script, cola). localizar y extraer preguntan por separado sobre el mismo cuadro y con
     propuestas opuestas: AEK 2016-2025, "¿se carga 'Παροχές στο προσωπικό' como desglose?" (sí) y "¿se deja afuera?" (sí). Además verificar ya
     deja afuera solo una nota que no suma ningún renglón: esas dudas no cambian la carga. Evaluar: (a) juntar las dudas por cuadro (bloque y

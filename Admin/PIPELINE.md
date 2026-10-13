@@ -421,7 +421,11 @@ Mitigaciones:
 - En el lote es propuesta; con `lote.mjs --ejecutar --cargar` (o `node tools/cargar-lote.mjs --lista <lista> [--escribir]`) lo que quedó
   "listo para cargar" se escribe solo (Versión 642): alta del club nuevo si el registro de altas lo da listo y `Admin/registros/altas-revision.jsonl`
   tiene su color, `cargar.mjs --escribir` con su auditoría, y un commit por año (el alta en el del primer año). Si ningún año de un club
-  nuevo escribe, el alta se revierte. Exige `data/`, `index.html` y `fuentes/` sin cambios al empezar. Sin push.
+  nuevo escribe, el alta se revierte. Exige `data/`, `index.html`, `fuentes/` y `Admin/sourcing/` sin cambios al empezar. Sin push.
+- Club nuevo en el ENSAYO (to-do 210): sin `--escribir`, `cargar.mjs` no corta en "el club no existe": si la ficha del alta (`analizar()`)
+  tiene id, país, moneda e inicio del ejercicio sin preguntas, anota el freno `club` y evalúa el resto con un club provisional armado de esa
+  ficha. Así el ensayo de `cargar-lote.mjs` muestra los frenos reales (categorías y perfil en la cola, tie-outs, fx) y escribe sus preguntas
+  en la cola antes del alta, igual que con un club existente. Con `--escribir` corta como siempre.
 - Escribir: `cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año; después `caja-deuda.mjs --club <id> [--ejecutar] --escribir`.
   Las marcas "Posiblemente dentro de otro rubro" las pone `--escribir` solo (no hay un paso más). Para un club cargado a mano o corregido
   fuera de `cargar.mjs`: `node tools/dentro-de-otro.mjs --club <id> [--escribir]`.

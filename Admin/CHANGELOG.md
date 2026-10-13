@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 675 — To-do 210: el ensayo evalúa los clubes nuevos con un club provisional (2026-10-13)
+
+- `cargar.mjs`: sin `--escribir`, un club que no existe ya no corta el análisis si su ficha de alta está completa: anota el freno `club`
+  y sigue con un club provisional armado de la ficha. Lote 67 (Grecia): el ensayo de `cargar-lote.mjs` pasa de "21 años se escribirían"
+  (y ninguno entraba) a 10, con 11 frenados por filas que esperan categoría en la cola. `prueba-completa`: idéntico. Las preguntas de los
+  clubes nuevos se escriben en la cola desde el ensayo (decisión de Guido). Se borra el 210.
+
 ## Versión 674 — To-do 207: "otros negocios del club" remedido (2026-10-13)
 
 - 214 clubes: 29 con plata en `education` u `other_sports` (13,6 %), 15 solo en `education` (7 %); sin aceleración. Informe en

@@ -310,9 +310,31 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
 
   // ---- 2. club y año
   const cr = clubDeRuta(pdf);
-  if (!cr.clubId) { return corta('club', cr.via === 'ambigua' ? `la carpeta es ambigua (${cr.fuente})` : 'el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa'); }
-  const clubId = cr.clubId; P.clubId = clubId;
-  const club = sitio.clubs[clubId]; const cd = sitio.generic[clubId];
+  const MSG_ALTA = 'el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa';
+  // (to-do 210) CLUB NUEVO EN EL ENSAYO: antes se cortaba acá y el ensayo de cargar-lote.mjs contaba el año como "se escribiría con alta"
+  // sin haber mirado ningún freno de abajo (categorías en la cola, perfil, tie-outs, fx, fuente). Caso: lote 67 (Grecia), el ensayo prometía
+  // 21 años y --escribir no escribió ninguno (alta hecha y revertida 5 veces). Ahora, SOLO sin --escribir y con la ficha del alta completa
+  // (id, país, moneda e inicio del ejercicio sin preguntas, de analizar()), se anota el freno `club` y se sigue con un CLUB PROVISIONAL
+  // armado de esa ficha, sin ejercicios cargados: los frenos de abajo se evalúan igual que para un club existente. Con --escribir nunca se
+  // usa (sigue cortando): lo que se escribe no cambia. Una carpeta ambigua o una ficha con preguntas cortan como siempre.
+  let provisional = null;
+  if (!cr.clubId) {
+    if (cr.via === 'ambigua') return corta('club', `la carpeta es ambigua (${cr.fuente})`);
+    if (ESCRIBIR) return corta('club', MSG_ALTA);
+    const a0 = analizar(pdf, sitio);
+    const v = (n) => a0.campos.find((c) => c.campo === n) || {};
+    const faltan = ['id', 'country', 'reportingCurrency', 'fiscalYearStart'].filter((n) => v(n).estado === 'pregunta' || v(n).valor == null);
+    if (a0.error || faltan.length) return corta('club', `${MSG_ALTA}${a0.error ? ` (${a0.error})` : `; la ficha del alta tiene preguntas en ${faltan.join(', ')}`}`);
+    frena('club', `${MSG_ALTA}; el resto se evaluó con un club provisional armado de la ficha del alta (${v('id').valor})`);
+    provisional = {
+      id: v('id').valor,
+      club: { id: v('id').valor, name: v('name').valor, displayName: v('displayName').valor, country: v('country').valor,
+        reportingCurrency: v('reportingCurrency').valor, fiscalYearStart: v('fiscalYearStart').valor, sport: v('sport').valor || 'futbol' },
+      cd: { fiscalYearMeta: {}, revenueLinesByYear: {}, expenseLinesByYear: {} },
+    };
+  }
+  const clubId = cr.clubId || provisional.id; P.clubId = clubId;
+  const club = provisional ? provisional.club : sitio.clubs[clubId]; const cd = provisional ? provisional.cd : sitio.generic[clubId];
   if (!club || !cd) { return corta('club', `${clubId} no tiene ${rutaData(clubId)} registrado en CLUB_GENERIC_DATA`); }
   const alta = analizar(pdf, sitio);
   if (alta.error) { return corta('alta', alta.error); }
