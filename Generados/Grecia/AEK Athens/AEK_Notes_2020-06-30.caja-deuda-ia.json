@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/AEK Athens/AEK_Notes_2020-06-30.md",
+ "generado": "2026-10-13T14:21:01.412Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   456
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Los préstamos bancarios a largo plazo (L467) figuran en cero y la tabla de liquidez muestra también préstamos de corto plazo en cero, por eso marqué que no hay deuda financiera. Excluí L476 (porción corriente de otras obligaciones de largo plazo, nota 6.13, 7.557.737) porque no aparece como deuda bancaria y la tabla de liquidez no la trata como préstamo; en el ejercicio 2019 incluso incluía pasivos por arrendamiento. También excluí los pasivos por arrendamiento NIIF 16 (L468 y L475)."
+}

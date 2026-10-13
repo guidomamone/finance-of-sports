@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/AEK Athens/AEK_FS_2016-2017.md",
+ "generado": "2026-10-13T14:20:46.768Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   1635
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1637,
+   1643
+  ],
+  "ninguna": false
+ },
+ "observaciones": "No se incluyó el balance principal; se usó la nota 6.24 (clasificación de activos y pasivos financieros al 30/6/2017). La línea L1644 (porción corriente de obligaciones a largo plazo) podría incluir deuda financiera, pero no se tomó por ser ambigua."
+}

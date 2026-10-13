@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/AEK Athens/AEK_Notes_2019-06-30.md",
+ "generado": "2026-10-13T14:20:54.245Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   451
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   462,
+   469
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Al 30/6/2019 los préstamos (L462) y el arrendamiento financiero (L469) figuran en cero ('-'); la nota 6.30 confirma que el endeudamiento bancario es nulo. La línea L470 corresponde a contratos de jugadores, no a deuda financiera."
+}
