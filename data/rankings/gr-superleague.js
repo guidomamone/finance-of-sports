@@ -20,6 +20,14 @@ window.RANKINGS["gr-superleague"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.275],["Otros ingresos",3.689]] },
     ],
   },
+  2022: {
+    leagueSize: null,
+    clubs: [
+      { id:"oficrete-gr", revenue:6.065, reportType:"official_balance_sheet",
+        sourceId:"oficrete-gr-ofi-income-stmt-2022-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.261],["Otros ingresos",0.804]] },
+    ],
+  },
   2021: {
     leagueSize: null,
     clubs: [

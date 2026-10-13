@@ -14,6 +14,11 @@ const oficretegrRevenueLinesByYear = {
     { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:1.675372, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:1.692773, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Κύκλος εργασιών (καθαρός)', normalizedCategory:'lump_football_operations', amountNative:5.064441, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:0.451177, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.323081, disclosureLevel:'aggregated' },
+  ],
 };
 const oficretegrExpenseLinesByYear = {
   2018: [
@@ -33,6 +38,12 @@ const oficretegrExpenseLinesByYear = {
     { rawLabel:'Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-0.287954, disclosureLevel:'aggregated' },
     { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.364203, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έξοδα και ζημίες', normalizedCategory:'other_expenses', amountNative:-0.396806, disclosureLevel:'aggregated' },
+  ],
+  2022: [
+    { rawLabel:'Κόστος πωλήσεων', normalizedCategory:'lump_football_operations_expense', amountNative:-7.325795, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-0.446556, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.403304, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έξοδα και ζημίες', normalizedCategory:'other_expenses', amountNative:-0.061514, disclosureLevel:'aggregated' },
   ],
 };
 const oficretegrFiscalYearMeta = {
@@ -93,6 +104,25 @@ const oficretegrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:6.060872, officialTotalExpenses:6.678115, officialPAT:-0.623572,
   },
+  2022: {
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'oficrete-gr-ofi-income-stmt-2022-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.01537, tax:0,
+    extraRows: [
+      {label:'Πιστωτικοί τόκοι και συναφή έσοδα', value:0},
+      {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.01537},
+      {label:'Φόροι εισοδήματος', value:0},
+    ],
+    sinDesglose: [
+      {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:5.064441, motivo:'el documento no desglosa este renglón'},
+      {renglon:'Κόστος πωλήσεων', lado:'expense', importe:7.325795, motivo:'OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:5.838699, officialTotalExpenses:8.237169, officialPAT:-2.41384,
+  },
 };
 const oficretegrPresupuestoOverlayByYear = {};
 
@@ -122,6 +152,11 @@ Object.assign(sources, {
   'oficrete-gr-ofi-income-stmt-2021-06-30': {
     id:'oficrete-gr-ofi-income-stmt-2021-06-30', clubId:'oficrete-gr',
     title:'Omilos Filathlon Irakleiou P.A.E. OFI 1925 — OFI_income_stmt_2021-06-30 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'oficrete-gr-ofi-income-stmt-2022-06-30': {
+    id:'oficrete-gr-ofi-income-stmt-2022-06-30', clubId:'oficrete-gr',
+    title:'Omilos Filathlon Irakleiou P.A.E. OFI 1925 — OFI_income_stmt_2022-06-30 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
