@@ -46,3 +46,5 @@ confirmados como `PDF document` real, tamaños entre 293 KB y 9,9 MB.
 - Último chequeo: 2026-09-17.
 
 Color de marca: #FCD20F — amarillo y negro (en.wikipedia: camisetas casi siempre amarillas/doradas, short negro); hex del amarillo de logotyp.us; coincide con el escudo (amarillo), verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-13): ejercicio 2016 desde `Clubes/Grecia/AEK Athens/AEK_oikonomikes_katastaseis.pdf` (sourceId `aekathens-gr-aek-oikonomikes-katastaseis`).

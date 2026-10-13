@@ -97,4 +97,12 @@ window.RANKINGS["gr-superleague"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.147],["Otros ingresos",0.387]] },
     ],
   },
+  2016: {
+    leagueSize: null,
+    clubs: [
+      { id:"aekathens-gr", revenue:11.181, reportType:"official_balance_sheet",
+        sourceId:"aekathens-gr-aek-oikonomikes-katastaseis",
+        mix:[["Comercial / Sponsors",3.607],["Estadio",3.046],["Televisión",1.924],["Premios por competencias",0.385],["Otros ingresos",2.218]] },
+    ],
+  },
 };
