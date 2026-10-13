@@ -69,6 +69,9 @@ window.RANKINGS["gr-superleague"] = {
   2021: {
     leagueSize: null,
     clubs: [
+      { id:"aekathens-gr", revenue:31.116, reportType:"official_balance_sheet",
+        sourceId:"aekathens-gr-aek-notes-ifrs-2021-06-30",
+        mix:[["Comercial / Sponsors",10.269],["Televisión",3.69],["Premios por competencias",8.772],["Otros ingresos",8.385]] },
       { id:"oficrete-gr", revenue:7.202, reportType:"official_balance_sheet",
         sourceId:"oficrete-gr-ofi-income-stmt-2021-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",3.2],["Otros ingresos",4.003]] },
