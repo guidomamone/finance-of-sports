@@ -159,12 +159,15 @@ ni en el comentario de ningún archivo de código.
     todos los .md antes y después (script del scratchpad: cifras de cada fila) y `caja-deuda.mjs --medir`. Después correr AEK
     (`--ejecutar --escribir`; la IA ya está en caché).
 
-224. LAS CORRIDAS SE ESTÁN VOLVIENDO LENTAS (pedido de Guido, 2026-10-13: "¿tiene sentido armar algo más elaborado?"). Hoy todo es archivos:
-    `Admin/registros/*.jsonl` (cola-revision 5.800 líneas, transcripciones-estado 12.000, en total 22 MB), 232 MB de `Generados/`, 2.800 `.md`
-    en `Clubes/`, 218 data files que `loadSite()` evalúa con `vm` cada vez. Cada tool vuelve a leer y parsear todo (la cola se lee entera en
-    cada `respuestaDe`, `verificar.mjs --lista` sobre 237 documentos tarda minutos, `filasDelMd` sobre todos los .md más de 5 minutos).
-    Primero MEDIR dónde se va el tiempo (perfilar `lote.mjs` en ensayo, `verificar.mjs --lista`, `cola.mjs`, `cargar-lote.mjs`): sin eso no
-    se elige solución. Candidatos, de menos a más: (a) leer y parsear cada .jsonl una vez por proceso e indexarlo por pdf/clave (barato, sin
-    cambio de formato); (b) caché en disco de lo derivado con huella (sha1 del .md / del data file), como ya hacen `huellas.mjs` y la caché de
-    Jev; (c) una base SQLite (`node:sqlite` viene con Node 22) para la cola y los registros, con los .jsonl como exportación trackeada en git
-    para no perder el historial ni el diff. La skill `escala-finance-of-sports` tiene el mapa de puntos calientes: leerla antes de proponer.
+224. LAS CORRIDAS SE ESTÁN VOLVIENDO LENTAS (pedido de Guido, 2026-10-13). MEDIDO: no hace falta una base de datos; el tiempo está en tres
+    puntos. HECHO (2): `cola.mjs` y `ajustes.mjs` leen su registro una vez por proceso (verificar --lista 237 documentos 36 s -> 3 s;
+    propuesta de carga de 129 documentos 206 s -> 94 s; idéntico). FALTA, de a uno, cada uno chico y commiteado antes del siguiente:
+      (1) `caja-deuda.mjs`, `filasDelMd`: la expresión de los renglones de texto ("Caja   1.234 5.678", `const mm = t.match(...)`) tiene
+          cuantificadores que se pisan (el espacio está en la clase y en el `\s+` de la repetición) y prueba millones de cortes por línea:
+          140 de los 146 s de `caja-deuda --medir`. Saltear las líneas que no terminan en cifra/punto/coma/paréntesis da idéntico (1.155.123
+          líneas, 0 distintas) pero solo ahorra 23%: hay que reescribir la expresión sin ambigüedad. Medir con una MUESTRA de .md (no los 2.800:
+          tarda 5 minutos) y después confirmar con `--medir`.
+      (3) `vocabulario.mjs`, `compilar()`: compilar las ~1.600 alternativas cuesta ~200 ms por proceso (cargar-lote lanza uno por documento).
+          Agrupar bajo un solo límite de palabra los términos CONSECUTIVOS con los mismos límites (mismo orden, misma prioridad) baja la
+          importación de 277 a 133 ms; falta probar equivalencia (cada expresión exportada, vieja contra nueva, sobre una muestra de etiquetas
+          y líneas) y ojo con términos objeto `{re}` con un `|` suelto adentro.
