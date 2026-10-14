@@ -36,3 +36,5 @@ confirmados como `PDF document` real, tamaños entre 139 KB y 1,48 MB.
   no confirmado como hueco real.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2016 desde `Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.pdf` (sourceId `atromitos-gr-notes-2015-16`).

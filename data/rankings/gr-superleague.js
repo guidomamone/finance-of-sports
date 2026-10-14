@@ -192,6 +192,9 @@ window.RANKINGS["gr-superleague"] = {
       { id:"aekathens-gr", revenue:11.181, reportType:"official_balance_sheet",
         sourceId:"aekathens-gr-aek-oikonomikes-katastaseis",
         mix:[["Comercial / Sponsors",3.607],["Estadio",3.046],["Televisión",1.924],["Premios por competencias",0.385],["Otros ingresos",2.218]] },
+      { id:"atromitos-gr", revenue:5.776, reportType:"official_balance_sheet",
+        sourceId:"atromitos-gr-notes-2015-16",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",4.679],["Otros ingresos",1.097]] },
     ],
   },
 };

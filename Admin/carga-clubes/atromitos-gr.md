@@ -4,6 +4,43 @@ Lo que antes iba como comentario en el data file del club, `data/<país>/atromit
 COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y meta. Las notas de cada fila van en una tabla con su número de
 fila (hay nombres de rubro repetidos en un mismo año).
 
+## Cabecera
+
+```text
+Atromitos: alta por tools/alta-club.mjs (2026-10-14) desde Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.pdf. brandColor #173A75
+(procedencia en Admin/sourcing/Grecia/Atromitos.md; tools/cargar-lote.mjs).
+```
+
+```text
+data/gr/atromitos-gr-data.js — A.P.S. Atromitos Athinon 1923 P.A.E. (Grecia).
+ALTA POR SCRIPT (tools/alta-club.mjs, 2026-10-14), SIN EJERCICIOS CARGADOS TODAVÍA: las estructuras del data file
+nacen vacías a propósito. Los rubros, los totales oficiales y el resto del fiscalYearMeta los agrega la etapa de carga.
+
+Documento que originó el alta: Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.pdf
+
+De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
+  id                 ok        "atromitos-gr" — slug de "Atromitos" + '-gr' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
+  name               ok        "A.P.S. Atromitos Athinon 1923 P.A.E." — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): Revisión del alta (Claude, 2026-10-14, subagente Sonnet revisado): razón so
+  displayName        ok        "Atromitos" — nombre de la carpeta del club en Clubes/
+  country            ok        "GR" — carpeta de país "Grecia" (tabla PAISES)
+  reportingCurrency  ok        "EUR" — moneda de curso legal de Grecia
+  fiscalYearStart    ok        "07-01" — cierre del ejercicio: contenido del .md (59 de 59 fechas de fin de mes caen en el mes 6)
+  sport              ok        "futbol" — el .md nombra el fútbol 23 veces y ningún otro deporte más que eso
+  brandColor         pendiente (ausente) — la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)
+  anio               ok        2016 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
+  cierre             ok        "2016-06-30" — año del ejercicio + mes de cierre (contenido del .md (59 de 59 fechas de fin de mes caen en el mes 6))
+  reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
+  perimetro          ok        "individual" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-13): Claude 2026-10-13: PAE sin grupo: las 6-8 menciones de 'consolidado' son el
+  currency           ok        "EUR" — moneda de curso legal de Grecia (tabla PAISES de alta-club.mjs)
+  fxRef              ok        "EUR@2016-06-30" — el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2016-06-30 = 0.900739 (Tipo de referencia del Banco Central Europeo al 2016-06-30)
+  sourceId           ok        "atromitos-gr-notes-2015-16" — clubId + nombre del archivo en slug
+  liga               ok        "gr-superleague" — roster cacheado de "2015–16 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Atromitos"
+
+FISCAL YEAR META PROPUESTO para 2016 (NO registrado: un ejercicio con meta y
+sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
+  2016: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2016-06-30","sourceId":"atromitos-gr-notes-2015-16"}
+```
+
 ## Gestiones
 
 _investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-14; to-do 231:_
@@ -15,4 +52,50 @@ Decidido por Guido (2026-10-14), presidente que firma y no el dueño; era duda: 
 Duda: Venta 2025: en junio de 2025 se acordo la venta de ~94% a Chagia Hasin (aprobada por la EEA); la wikipedia griega dice que el trato fracaso por falta de garantia bancaria. No se verifico el estado actual de la propiedad en 2026; no cambia al presidente que firma.
 Duda: Fecha exacta de asuncion de Spanos en 2005 no confirmada (mayo segun el sitio del club, junio segun la pagina del presidente; anuncio 31/5/2005). Solo afecta el 'desde'; el cierre 2016 queda cubierto igual.
 Duda: No se pudo abrir sdna.gr (403); la fecha 10/11/2017 sale de sport-fm y es consistente con las otras notas de prensa encontradas (naftemporiki, metrosport, cityview), que no se abrieron.
+```
+
+## 2016
+
+### Ingresos
+
+```text
+2016: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Atromitos/Atromitos_notes_2015-16.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κύκλος εργασιών (καθαρός) | pág. 8, Jev 1 |
+| 2 | Λοιπά συνήθη έσοδα | pág. 8, Jev 1 |
+| 3 | Λοιπά έσοδα και κέρδη | pág. 8, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κόστος πωλήσεων | pág. 8, precedente |
+| 2 | Έξοδα διοίκησης | pág. 8, Jev 1 |
+| 3 | Λοιπά έξοδα και ζημίες | pág. 8, Jev 0.95 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+alta-club.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2015–16 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Atromitos".
+```
+
+## Fuentes
+
+### atromitos-gr-notes-2015-16
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
