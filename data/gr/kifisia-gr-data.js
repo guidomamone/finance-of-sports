@@ -20,6 +20,11 @@ const kifisiagrRevenueLinesByYear = {
     { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'broadcasting', amountNative:0.0425, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.185802, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Κύκλος εργασιών (καθαρός)', normalizedCategory:'lump_football_operations', amountNative:0.396935, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:0.0775, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.000767, disclosureLevel:'aggregated' },
+  ],
 };
 const kifisiagrExpenseLinesByYear = {
   2024: [
@@ -49,6 +54,16 @@ const kifisiagrExpenseLinesByYear = {
     { rawLabel:'ΦΟΡΟΙ - ΤΕΛΗ', normalizedCategory:'admin_general_expense', amountNative:-0.017135, disclosureLevel:'aggregated' },
     { rawLabel:'ΔΙΑΦΟΡΑ ΕΞΟΔΑ', normalizedCategory:'other_expenses', amountNative:-0.296953, disclosureLevel:'aggregated' },
     { rawLabel:'ΛΟΙΠΑ ΕΚΤΑΚΤΑ & ΑΝΟΡΓ.ΕΞΟΔΑ', normalizedCategory:'exceptional_items', amountNative:-0.002383, disclosureLevel:'aggregated' },
+  ],
+  2022: [
+    { rawLabel:'Αγορές εμπορευμάτων και υλικών', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Παροχές σε εργαζόμενους', normalizedCategory:'wages_squad', amountNative:-0.418349, disclosureLevel:'aggregated' },
+    { rawLabel:'Αποσβέσεις', normalizedCategory:'depreciation', amountNative:-0.004741, disclosureLevel:'aggregated' },
+    { rawLabel:'ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΤΡΙΤΩΝ', normalizedCategory:'admin_general_expense', amountNative:-0.119817, disclosureLevel:'aggregated' },
+    { rawLabel:'ΠΑΡΟΧΕΣ ΤΡΙΤΩΝ', normalizedCategory:'admin_general_expense', amountNative:-0.088497, disclosureLevel:'aggregated' },
+    { rawLabel:'ΦΟΡΟΙ - ΤΕΛΗ', normalizedCategory:'admin_general_expense', amountNative:-0.071219, disclosureLevel:'aggregated' },
+    { rawLabel:'ΔΙΑΦΟΡΑ ΕΞΟΔΑ', normalizedCategory:'other_expenses', amountNative:-0.219801, disclosureLevel:'aggregated' },
+    { rawLabel:'ΛΟΙΠΑ ΕΚΤΑΚΤΑ & ΑΝΟΡΓ.ΕΞΟΔΑ', normalizedCategory:'exceptional_items', amountNative:-0.003327, disclosureLevel:'aggregated' },
   ],
 };
 const kifisiagrFiscalYearMeta = {
@@ -98,6 +113,25 @@ const kifisiagrFiscalYearMeta = {
     grossDebt:null, cash:0.044708,
     officialTotalRevenue:0.838352, officialTotalExpenses:1.08432, officialPAT:-0.246402,
   },
+  2022: {
+    incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' } },
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'kifisia-gr-notes-2022-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.000738, tax:-0.000917,
+    extraRows: [
+      {label:'Πιστωτικοί τόκοι και συναφή έσοδα', value:0},
+      {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.000738},
+      {label:'Φόροι εισοδήματος', value:-0.000917},
+    ],
+    sinDesglose: [
+      {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.396935, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.475202, officialTotalExpenses:0.925751, officialPAT:-0.452204,
+  },
 };
 const kifisiagrPresupuestoOverlayByYear = {};
 
@@ -128,6 +162,12 @@ Object.assign(sources, {
     id:'kifisia-gr-notes-2023-06-30', clubId:'kifisia-gr',
     title:'Kifisia - Athlitiki Enosis P.A.E. — Kifisia_notes_2023-06-30 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
+  },
+  'kifisia-gr-notes-2022-06-30': {
+    id:'kifisia-gr-notes-2022-06-30', clubId:'kifisia-gr',
+    title:'Kifisia - Athlitiki Enosis P.A.E. — Kifisia_notes_2022-06-30 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+    publicNote:'Primer ejercicio de la sociedad: del 09/08/2021 al 30/06/2022 (11 meses).',
   },
 });
 

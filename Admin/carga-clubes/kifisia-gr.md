@@ -136,11 +136,11 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2025): Comercial / Sponsors, Estadio, Televisión
+tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2025): Comercial / Sponsors, Estadio, Televisión
 ```
 
 ### Liga
@@ -199,6 +199,43 @@ tools/cargar.mjs (2026-10-14): null, SIN VERIFICAR (no aparece en los rosters ca
 No se carga: el ejercicio va del 9/8/2021 al 30/6/2022 (primer ejercicio de la ΠΑΕ, unos 10,7 meses); está en
 `Admin/registros/documentos-parciales.txt` (decisión de Guido, 2026-10-14). `cargar-lote` lo había escrito igual (to-do 232 j) y se sacó a mano.
 
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Kifisia/Kifisia_notes_2022-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Kifisia/Kifisia_notes_2022-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κύκλος εργασιών (καθαρός) | pág. 15, Jev 0.99 |
+| 2 | Λοιπά συνήθη έσοδα | pág. 15, Jev 1 |
+| 3 | Λοιπά έσοδα και κέρδη | pág. 15, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Αγορές εμπορευμάτων και υλικών | pág. 15, precedente |
+| 2 | Παροχές σε εργαζόμενους | pág. 15, precedente |
+| 3 | Αποσβέσεις | pág. 15, precedente |
+| 4 | ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΤΡΙΤΩΝ | pág. 30, precedente |
+| 5 | ΠΑΡΟΧΕΣ ΤΡΙΤΩΝ | pág. 30, precedente |
+| 6 | ΦΟΡΟΙ - ΤΕΛΗ | pág. 30, Jev 0.98 |
+| 7 | ΔΙΑΦΟΡΑ ΕΞΟΔΑ | pág. 30, Jev 0.97 |
+| 8 | ΛΟΙΠΑ ΕΚΤΑΚΤΑ & ΑΝΟΡΓ.ΕΞΟΔΑ | pág. 30, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2025): Comercial / Sponsors, Estadio, Televisión
+```
+
 ## Fuentes
 
 ### kifisia-gr-notes-2024-06-30
@@ -223,4 +260,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### kifisia-gr-notes-2022-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Kifisia/Kifisia_notes_2022-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
