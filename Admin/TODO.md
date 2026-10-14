@@ -80,6 +80,10 @@ ni en el comentario de ningún archivo de código.
     i) `periodo.mjs` dio a Kifisia 2022 como ejercicio de 12 meses (confianza media, sin evidencia) y el documento dice "περιόδου
        9/8/2021 - 30/06/2022" en la portada (L47, L93, L261): primer ejercicio de la sociedad, unos 10,7 meses. Un período de menos de 12
        meses tiene que salir como parcial (Admin/registros/documentos-parciales.txt) o a la cola, no como anual.
+    t) Caja y deuda en Grecia: `tools/vocabulario.mjs` (CAJA / DEUDA_FINANCIERA, escalón 1 de `caja-deuda.mjs`) no tiene ningún término
+       griego, así que en los 6 clubes nuevos del lote 71 (43 años, 86 datos) los escalones 0 y 1 no proponen nada y todo cae al escalón 2
+       (IA, ~US$ 1,23). Agregar "Ταμειακά διαθέσιμα και ισοδύναμα" (caja) y "Δάνεια" / "Τραπεζικά δάνεια" / "Βραχυπρόθεσμα / Μακροπρόθεσμα
+       δάνεια" (deuda), medido con `caja-deuda.mjs --medir` en los griegos ya cargados antes de entrar.
     k) Una respuesta "no" de la cola a una duda de importe ("¿se carga X del estado y no Y de la nota?", Olympiacos 2023 caso 446850a)
        no cambia nada: la verificación siguió con el importe del estado y hubo que agregar un ajuste `fila` a mano. Que esa respuesta
        aplique sola el importe de la nota (es lo que la pregunta ofrece), con la misma compuerta de cierre.
