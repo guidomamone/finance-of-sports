@@ -548,6 +548,8 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 ### Perfil de cada club
 
 - Archivo `Admin/registros/perfil-clubes.jsonl`, se lee con `node tools/perfil-clubes.mjs [clubId]`.
+- Una respuesta de perfil en la cola (`corregir --valor sí|no`) se guarda en el perfil en el momento y cierra los casos iguales
+  (mismo club y campo) de los otros años, pendientes (to-do 232 r).
 - Dos datos por club: ¿tiene socios que pagan cuota?, ¿tiene otros deportes en sus estados financieros? Sí, no o no se sabe, con evidencia.
 - Hoy: los 66 clubes sudamericanos (armado por un subagente con lo cargado y las transcripciones). Socios: 49 sí, 11 no, 6 no se sabe.
   Otros deportes: 31 sí, 25 no, 10 no se sabe. Criterio aceptado por Guido: "clube social e esportes amadores" que además nombra básquet,

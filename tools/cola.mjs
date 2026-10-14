@@ -244,6 +244,19 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     }
     appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision, valor: flag('--valor'), nota: flag('--nota') }) + '\n');
     console.log(`Respuesta guardada para ${id}: ${decision}${flag('--valor') ? ` (${flag('--valor')})` : ''}. La toma la próxima corrida de la etapa que mandó el caso.`);
+    // PERFIL: UNA RESPUESTA VALE PARA TODO EL CLUB (to-do 232 r). El perfil (socios, otros deportes) es del club, pero la respuesta llegaba
+    // al perfil recién cuando cargar.mjs volvía a correr ESE documento, y los casos de los otros años seguían abiertos (Olympiacos: 10+10
+    // contestados de a uno; OFI Crete: 5+5 pendientes). Al contestar `corregir --valor sí|no`, se guarda en el perfil en el momento (la misma
+    // lectura de sí/no que cargar.mjs) y la compuerta cierra como `obsoleto` SOLO los otros casos pendientes con el mismo motivo y el mismo
+    // detalle (`<clubId>:<campo>`), con cerrarResueltoPorClub(). Con el perfil ya sabido, cargar.mjs no los vuelve a levantar.
+    const c0 = casos.get(id); const v = decision === 'corregir' ? (/^s[ií]/i.test(flag('--valor')) ? true : /^no/i.test(flag('--valor')) ? false : undefined) : undefined;
+    if (c0.motivo === 'perfil' && v !== undefined) {
+      const [clubId, campo] = String(c0.detalle).split(':');
+      const { guardarPerfil } = await import('./perfil-clubes.mjs');
+      guardarPerfil(clubId, campo, v, `respuesta ${id} en la cola (${flag('--nota') || 'sin nota'})`);
+      let n = 0; for (const c of casos.values()) if (c.motivo === 'perfil' && c.detalle === c0.detalle && c.id !== id && cerrarResueltoPorClub(c.pdf, c.etapa, c.motivo, c.detalle, c0)) n++;
+      console.log(`Perfil de ${clubId}: ${campo} = ${v ? 'sí' : 'no'} (Admin/registros/perfil-clubes.jsonl).${n ? ` Cerré ${n} caso(s) iguales de otros años del club.` : ''}`);
+    }
     process.exit(0);
   }
   const cerradosPorCarga = await cerrarCargados();

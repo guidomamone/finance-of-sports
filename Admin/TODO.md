@@ -78,9 +78,6 @@ ni en el comentario de ningún archivo de código.
     p) Color y liga de un club griego nuevo: `lookup-brand-color.js` no tiene la liga griega cacheada y `data/club-leagues` (caché gr.json)
        solo traía 2023-24 para Kifisia. Cachear las dos ligas griegas (Super League y Super League 2) por temporada con las tools que ya
        existen (`fetch-brand-color-reference.mjs`, la de ligas) antes del próximo club griego.
-    r) Una respuesta de perfil (socios, otros deportes) se guarda para todos los años del club, pero los casos ya abiertos de los otros
-       documentos del mismo club siguen abiertos: Olympiacos dejó 18 casos repetidos después de contestar el de 2025. Al responder uno,
-       cerrar los iguales del mismo club.
     s) Sueldos escondidos en "Αμοιβές τρίτων" (PAOK: 42 M en el cuadro de fútbol contra 9,2 M de costo de personal en la nota 17). Un
        chequeo de `audit.js` que compare `wages_squad` con el total de la nota de personal y con la cantidad de futbolistas, para que
        un caso así aparezca solo y no dependa de que un subagente lo note (relacionado con el to-do 229).
