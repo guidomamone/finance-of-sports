@@ -22,7 +22,8 @@ node tools/inventario-transcripciones.mjs --solo <lista|carpeta>          # solo
 node tools/gasto-doc.mjs --lista <lista> --desde <ISO> [--hasta <ISO>]       # lo gastado por documento en una corrida pasada
 ```
 
-`lote.mjs` corre las etapas 3 a 8 sobre una lista chica.
+`lote.mjs` corre las etapas 3 a 8 sobre una lista chica. Avisa (sin frenar) si un documento de la lista está también en otra `Admin/lotes/lote-*.txt`
+(to-do 232 g): una lista cerrada va a `Admin/Archive/lotes/`.
 - El registro (`Admin/registros/transcripciones-estado.jsonl`) se recalcula entero en ~1 min (12.184 PDFs, sobre todo `quien.mjs --pendientes` para saber
   qué está cargado). `pipeline.mjs` con `--lista`/`--dir` y `lote.mjs` recalculan solo su lista (`--solo`, ~1 s) y copian las demás
   líneas; el recálculo entero queda para `estado.mjs --actualizar` y las corridas sin alcance. Medido: el registro sale idéntico.

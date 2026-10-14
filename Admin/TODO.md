@@ -40,9 +40,6 @@ ni en el comentario de ningún archivo de código.
        Código: `tools/quien.mjs` `quien()` (L70-L81: sin cita en un data file, `clubId = normalize(folder)`); la comparación que frena
        está en `tools/cargar.mjs` (L345, "carpetas-clubes.mjs dice ... y quien.mjs --quien dice ..."). Para un club sin data file, usar el
        id que propone `carpetas-clubes.mjs` / el registro de altas (con el sufijo de país) en vez del nombre de la carpeta.
-    g) `lote-71.txt` siguió listando los 10 documentos de Olympiacos después de pasarlos al lote 74, y la segunda corrida los pagó de nuevo
-       en el 71 (sin daño: el 74 queda en caché). Que `lote.mjs` avise cuando un documento de la lista está también en otra lista activa
-       de `Admin/lotes/`.
     h) La categoría se decide por ETIQUETA, y en los estados griegos por función la misma etiqueta aparece en dos notas con sentido
        distinto: PAOK "Αποσβέσεις" en el cuadro del departamento de fútbol (91-96% amortización de pases, `player_amortisation`) y en los
        de administración y venta (bienes y software, 0,2-0,3 M por año, `depreciation`); Olympiacos 2025 "Εισφορές κοινωνικής ασφάλισης"

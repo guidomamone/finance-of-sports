@@ -29,7 +29,7 @@
 //   En la lista, "testigo <pdf>" = documento que solo sirve para verificar a otro (ver TESTIGOS abajo).
 // ============================================================================
 
-import { readFileSync, writeFileSync, existsSync, copyFileSync, unlinkSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, copyFileSync, unlinkSync, statSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { tmpdir } from 'node:os';
 import { spawnSync } from 'node:child_process';
@@ -93,6 +93,18 @@ const descartados = new Set((existsSync(resolve(ROOT, 'Admin', 'registros', 'doc
 // PARCIALES (to-do 190, Versión 631): los balances de menos de 12 meses (Admin/registros/documentos-parciales.txt) tampoco entran: falta el otro tramo.
 const parciales = new Set((existsSync(resolve(ROOT, 'Admin', 'registros', 'documentos-parciales.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'documentos-parciales.txt'), 'utf8') : '').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')));
 const docs = lineas.map((l) => l.replace(/^testigo\s+/i, '')).filter((d) => { if (descartados.has(d)) { console.log(`  ${d}: descartado (Admin/registros/documentos-descartados.txt)`); return false; } if (parciales.has(d)) { console.log(`  ${d}: parcial, menos de 12 meses (Admin/registros/documentos-parciales.txt)`); return false; } return true; });
+// EN OTRA LISTA ACTIVA (to-do 232 g). lote-71.txt siguió listando los 10 documentos de Olympiacos después de pasarlos al lote 74 y la
+// segunda corrida del 71 los pagó de nuevo. Aviso (no frena: a veces se repite a propósito): un documento de esta lista que también está
+// en otra Admin/lotes/lote-*.txt. Las prueba-*.txt repiten documentos por diseño y no cuentan; los testigos tampoco, de ningún lado.
+{
+  const sinTestigo = (f) => readFileSync(f, 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#') && !/^testigo\s+/i.test(l));
+  const propia = resolve(ROOT, LISTA); const mios = new Set(docs.filter((d) => !testigos.has(d)));
+  for (const f of readdirSync(resolve(ROOT, 'Admin', 'lotes')).filter((f) => /^lote-.*\.txt$/.test(f)).sort()) {
+    const otra = resolve(ROOT, 'Admin', 'lotes', f); if (otra === propia) continue;
+    const comunes = sinTestigo(otra).filter((d) => mios.has(d));
+    if (comunes.length) console.log(`OJO: ${comunes.length} documento(s) de esta lista están también en otra lista activa, Admin/lotes/${f} (${comunes.slice(0, 3).map((d) => d.split('/').pop()).join(', ')}${comunes.length > 3 ? `, … y ${comunes.length - 3} más` : ''}). Si ya se corrieron allá, sacalos de una de las dos o archivá la lista cerrada (Admin/Archive/lotes/).`);
+  }
+}
 if (docs.length > 10) console.log(`OJO: ${docs.length} documentos. El proceso nuevo se refina de a 5 (pedido de Guido).`);
 const ajustesTodos = (() => { let cache = null; return () => (cache ??= (existsSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return {}; } }) : [])); })();
 const leerRegistro = () => readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
