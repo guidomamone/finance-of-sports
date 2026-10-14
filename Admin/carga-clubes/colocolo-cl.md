@@ -100,8 +100,8 @@ de abril de 2024 (su 3er período) y es quien preside al cierre del ejercicio
 usa el sitio, ver cabecera de data/club-leagues.js).
 
 grossDebt/cash: NO se cargaron (no se revisó el Estado de Situación Financiera
-completo en esta sesión, fuera de alcance — quedan en 0, mismo criterio que
-Once Caldas cuando el balance/deuda no se sourceó).
+completo en esta sesión). Se habían dejado en 0 (convención vieja); el 2026-10-14 pasaron a null (sin dato no es
+cero: el sitio mostraba "Deuda 0 / Caja 0"). Los completa tools/caja-deuda.mjs.
 ============================================================================
 ```
 
