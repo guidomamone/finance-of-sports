@@ -88,3 +88,7 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   que cargaban pasaban a la cola (~60 preguntas, 34 en Fortaleza 2017, cuyas notas son "Total Gastos de Administración" y "Total Gastos
   de Ventas", sin categoría en el .categorias.json). Quedó "dos renglones de categoría CONOCIDA y distinta": 79 idénticos, cambia solo PAOK.
   Además `mismoPadre()` (tools/padres-filas.mjs) no veía letras griegas ni cirílicas y daba "misma nota" a cualquier par de títulos griegos.
+- **Colores y ligas de Grecia (to-do 232 p, 2026-10-14)**: las ligas ya estaban cacheadas (`tools/club-league-reference/gr.json`: Super
+  League y Super League 2, 2016-2025). Los colores no se pueden cachear: footylogos.com/color-codes trae solo 9 ligas (Bundesliga,
+  Eredivisie, LaLiga, Liga MX, Liga Profesional Argentina, Ligue 1, Premier League, Serie A, Brasileirão A) y ningún club griego. El color
+  de un club griego sigue el proceso a mano de `club-or-year-onboarding/club-nuevo.md`.
