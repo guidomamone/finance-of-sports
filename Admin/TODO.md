@@ -123,10 +123,6 @@ ni en el comentario de ningún archivo de código.
        Código: (1) `cargar.mjs` L306-L308 (sin `.categorias.json` o desactualizado frena; una fila nueva sin rubro no) y
        `tools/huellas.mjs` `categoriasAlDia` (L45). (2) `caja-deuda.mjs` `columnasConFormaDeNota` (L146) y la lectura B en `filasDelMd`;
        medir con `--medir --club aekathens-gr --detalle`.
-    y) Una carga A MANO (`cargar.mjs "<pdf>" --desde-verificacion --escribir`) también escribe `Admin/sourcing/<País>/<Club>.md` ("Cargado en
-       el sitio por tools/cargar.mjs ...") y la sesión del 2026-10-14 no lo incluyó en los commits de 8 años (se commiteó después). Que
-       `cargar.mjs --escribir` imprima al final la lista de archivos que tocó (la misma que commitea `cargar-lote.mjs`: SITIO + ADMIN), para
-       pegarla en el `git add`.
 
 233. JEV EN OTRAS ETAPAS DEL PIPELINE (pedido de Guido, 2026-10-14). Jev (typesafe.ai, `tools/jev-categorizar.mjs`) cuesta ~US$ 42 por MIL
     MILLONES de tokens de entrada y hoy solo categoriza (etapa 7). Ver, etapa por etapa, si puede hacer lo que hoy hace Claude Opus o un

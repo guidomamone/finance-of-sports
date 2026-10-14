@@ -95,8 +95,10 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync, statSync, unlinkSync, appendFileSync } from 'node:fs';
 import { resolve, relative, join, basename, dirname } from 'node:path';
 import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import vm from 'node:vm';
 import { archivosData, rutaData } from './data-clubes.js';
+import { TOCA_UNA_CARGA } from './rutas.mjs';
 
 // Los módulos que se reusan leen process.argv al importarse (alta-club.mjs: --escribir activa ANOTAR_MISSES y --anio fuerza el año;
 // proponer-carga.mjs: --tabla, --limit, --club...). Las opciones de ESTE comando no son las de ellos: se les pasa un argv limpio.
@@ -1095,6 +1097,33 @@ function comparar(P, prod) {
   };
 }
 
+// QUÉ TOCÓ UNA CARGA A MANO (to-do 232 y). AEK 2024 se cargó con `--escribir` y su `Admin/sourcing/Grecia/AEK Athens.md` quedó fuera de
+// los commits de esa sesión: la línea "Escrito (...)" lo nombraba, pero sale debajo del JSON entero, separada por comas y sin lo que tocan
+// los generadores (fuentes/*.html, ESTADO-clubes.md...) ni los registros (cola, categorías aprendidas). Al final se imprime un `git add`
+// listo para pegar con lo que CAMBIÓ en esta corrida dentro de lo que commitea cargar-lote.mjs (TOCA_UNA_CARGA de tools/rutas.mjs): se
+// compara `git status` + contenido antes y después, así un archivo que ya estaba modificado antes no entra si la carga no lo tocó. Una
+// carpeta con más de 10 archivos cambiados (fuentes/: se regeneran todas las páginas) va como carpeta. Por stderr: cargar-lote.mjs lee el
+// JSON de stdout.
+function cambiadosEnGit() {
+  const { SITIO, ADMIN } = TOCA_UNA_CARGA;
+  let out = '';
+  try { out = execFileSync('git', ['status', '--porcelain', '-z', '--untracked-files=all', '--', ...SITIO, ...ADMIN], { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 }); } catch { return new Map(); }
+  const m = new Map();
+  for (const e of out.split('\0').filter(Boolean)) {
+    const f = e.slice(3); const p = resolve(ROOT, f);
+    m.set(f, existsSync(p) ? createHash('sha1').update(readFileSync(p)).digest('hex') : 'borrado');
+  }
+  return m;
+}
+function lineaGitAdd(antes, despues) {
+  const tocados = [...despues].filter(([f, h]) => antes.get(f) !== h).map(([f]) => f).sort();
+  if (!tocados.length) return 'Archivos que tocó esta carga: ninguno según git.';
+  const porCarpeta = new Map();
+  for (const f of tocados) { const d = dirname(f); porCarpeta.set(d, [...(porCarpeta.get(d) || []), f]); }
+  const rutas = [...porCarpeta].flatMap(([d, fs]) => (fs.length > 10 && d !== '.' ? [`${d}/`] : fs));
+  return `\nArchivos que tocó esta carga (${tocados.length}), para el commit:\ngit add -- ${rutas.map((f) => `"${f}"`).join(' ')}`;
+}
+
 // ============================================================================
 // CLI
 // ============================================================================
@@ -1105,6 +1134,7 @@ async function main() {
   // CANDADO (to-do 164): con --escribir, un solo proceso a la vez escribiendo el registro y el sitio (tools/candado.mjs). La propuesta no lo
   // toma: el lote la corre como hija mientras tiene el candado.
   if (ESCRIBIR) { const { tomarCandado } = await import('./candado.mjs'); tomarCandado('cargar.mjs', { lista: docs[0], modo: '--escribir' }); }
+  const antesDeEscribir = ESCRIBIR ? cambiadosEnGit() : null;
   const sitio = cargarSitio(); const registro = leerRegistro();
   const prod = COMPARAR ? cargarSitio(resolve(COMPARAR)) : null;
   const salidas = [];
@@ -1141,6 +1171,7 @@ async function main() {
     if (P.frena.length) { console.error(`\nNo se escribe nada: ${P.frena.length} motivo(s) para frenar.`); process.exit(1); }
     const r = escribir(P);
     console.error(r.ok ? `\nEscrito (${r.escritos.join(', ')}). Auditoría: ${r.audit}. No se commiteó nada.` : `\nREVERTIDO: ${r.motivo}\n${r.audit || ''}`);
+    if (r.ok) console.error(lineaGitAdd(antesDeEscribir, cambiadosEnGit()));
     process.exit(r.ok ? 0 : 1);
   }
 }

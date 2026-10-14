@@ -470,6 +470,7 @@ Mitigaciones:
   ficha. Así el ensayo de `cargar-lote.mjs` muestra los frenos reales (categorías y perfil en la cola, tie-outs, fx) y escribe sus preguntas
   en la cola antes del alta, igual que con un club existente. Con `--escribir` corta como siempre.
 - Escribir: `cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año; después `caja-deuda.mjs --club <id> [--ejecutar] --escribir`.
+  Al final imprime el `git add` de lo que tocó esa corrida (generadores y registros incluidos; to-do 232 y): se pega tal cual en el commit.
   Las marcas "Posiblemente dentro de otro rubro" las pone `--escribir` solo (no hay un paso más). Para un club cargado a mano o corregido
   fuera de `cargar.mjs`: `node tools/dentro-de-otro.mjs --club <id> [--escribir]`.
 - Dónde queda la evidencia: `data/<país>/<club>-data.js` no lleva comentarios (se publica). `cargar.mjs --escribir` deja en

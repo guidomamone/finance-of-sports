@@ -35,7 +35,7 @@
 import { readFileSync, writeFileSync, existsSync, unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
-import { derivado } from './rutas.mjs';
+import { derivado, TOCA_UNA_CARGA } from './rutas.mjs';
 import * as EV from './evidencia-club.mjs';
 import { rutaData } from './data-clubes.js';
 
@@ -57,8 +57,7 @@ const jsonDe = (salida) => { const s = String(salida || ''); const i = s.indexOf
 const ultimaLinea = (r) => { const ls = `${r.stdout || ''}\n${r.stderr || ''}`.split('\n').map((l) => l.trim()).filter(Boolean); return ls.find((l) => /^(Escrito|Alta escrita|No se escribe)/.test(l)) || ls.pop() || ''; };
 
 // Los archivos que toca un alta o una carga (generadores incluidos), para el commit y para revertir un alta.
-const SITIO = ['data', 'index.html', 'fuentes', 'Admin/sourcing', 'fuentes.html', 'sitemap.xml'];
-const ADMIN = ['Admin/registros/ajustes-manuales.jsonl', 'Admin/registros/documentos-descartados.txt', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/registros/categorias-aprendidas.jsonl', 'Admin/registros/perfil-clubes.jsonl', 'Admin/registros/cola-revision.jsonl', 'Admin/registros/cargar-ultimo.jsonl', 'Admin/registros/altas-club.jsonl', 'Admin/carga-clubes'];
+const { SITIO, ADMIN } = TOCA_UNA_CARGA; // tools/rutas.mjs: la misma lista imprime cargar.mjs --escribir
 
 const descartados = new Set(leerLineas('Admin/registros/documentos-descartados.txt'));
 // PARCIALES (to-do 232 j): un balance de menos de 12 meses no se carga solo (regla de los 12 meses, Admin/CONVENCIONES-DATOS.md). lote.mjs
