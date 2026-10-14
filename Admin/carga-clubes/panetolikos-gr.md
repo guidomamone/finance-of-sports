@@ -51,6 +51,48 @@ Decidido por Guido (2026-10-14), presidente que firma y no el dueño; era duda: 
 Duda: El nombre de pila en Sport24 aparece como 'Makis' en el cuerpo y 'Gerasimos' en el comunicado del club; los balances y la web del club dicen Gerasimos Belevonis. Makis es un diminutivo; ertsports (3/6/2026) trata a un 'Makis Belevonis' (director técnico saliente) como otra persona que el presidente Gerasimos.
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Έσοδα από εισιτήρια | pág. 29, Jev 1 |
+| 2 | Έσοδα από μεταγραφές | pág. 29, Jev 0.99 |
+| 3 | Λοιπά συνήθη έσοδα | pág. 15, Jev 1 |
+| 4 | Λοιπά έσοδα και κέρδη | pág. 15, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κόστος πωλήσεων | pág. 15, precedente |
+| 2 | Έξοδα διοίκησης | pág. 15, Jev 1 |
+| 3 | Έξοδα διάθεσης | pág. 15, precedente |
+| 4 | Διάφορα έξοδα | pág. 29, Jev 0.94 |
+| 5 | Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις | pág. 29, precedente |
+| 6 | Έξοδα προηγούμενων χρήσεων | pág. 29, Claude 0.8 |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): incluye = broadcasting. Claude 2026-10-14 (lote 75 resuelto sin API, pedido de Guido): el documento no abre 'Λοιπά συνήθη έσοδα' (L96 del informe de gestión solo da el total); los derechos de TV están adentro, junto con otros ingresos. Misma categoría que 2017-2022 ya cargados (other_income)
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2024–25 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Panetolikos".
+```
+
 ## 2024
 
 ### Ingresos
@@ -170,7 +212,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024): Estadio, Venta de Jugadores
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Estadio, Venta de Jugadores
 ```
 
 ### Liga
@@ -212,7 +254,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024): Estadio
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Estadio
 ```
 
 ### Liga
@@ -253,7 +295,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024): Estadio, Venta de Jugadores
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Estadio, Venta de Jugadores
 ```
 
 ### Liga
@@ -294,7 +336,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024): Estadio, Venta de Jugadores
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Estadio, Venta de Jugadores
 ```
 
 ### Liga
@@ -335,7 +377,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024): Estadio, Venta de Jugadores
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Estadio, Venta de Jugadores
 ```
 
 ### Liga
@@ -400,4 +442,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Panetolikos/Panetolikos_FS_2024-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### panetolikos-gr-fs-2025-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
