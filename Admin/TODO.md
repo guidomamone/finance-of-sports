@@ -190,6 +190,12 @@ ni en el comentario de ningún archivo de código.
     `wages_squad` y la nota de personal da un total que cabe dentro de una fila global de gasto, partir esa fila en `wages_squad` (el total
     de la nota) + el resto en su categoría, con la compuerta de que el resto no quede negativo. Mirar antes cómo se resolvió Volos
     (ajustes `fila` y `categoria` en `Admin/registros/ajustes-manuales.jsonl`) y el criterio de `club-data-mapping` para filas mixtas.
+    ORDEN (Guido, 2026-10-14): va DESPUÉS del 233 (Jev en caja y deuda), montado sobre ese escalón: el total de personal aparece de tres
+    formas en los casos conocidos (Panetolikos: tabla "Παροχές σε εργαζόμενους" con fila "Σύνολο"; Volos: en OTRO documento, Volos_notes;
+    PAOK: sin total único, "Αμοιβές προσωπικού" por cuadro de función), así que un escalón de vocabulario serían reglas apiladas. Diseño
+    acordado: dato "personal" (staffCost en fiscalYearMeta) en caja-deuda.mjs con una pregunta puntual a la IA barata (número y línea),
+    leyendo también los otros documentos del mismo año, y la compuerta de siempre (impreso en la línea, confirmado por el documento
+    vecino); encima, el escalón del 229 en cargar.mjs y el chequeo del 232 s en audit.js.
 
 230. AHORRAR EN LAS ETAPAS 3 A 5 (pedido de Guido, 2026-10-14: el lote 71 de Grecia estima ~US$ 17 para localizar y extraer 45 documentos).
     Mirar dónde se va la plata (`node tools/gasto.mjs` y `Admin/registros/api/claude-api.jsonl` por tarea y por documento: localizar,
