@@ -17,6 +17,10 @@ presidente que firma el balance. Cuando la fuente da solo el año o el mes, el d
 Presidentes formales de Panathinaikos mientras Alafouzos seguía de dueño (Wikipedia, List of Panathinaikos
 F.C. presidents): Mavrokoukoulakis 21/4/2017 al 29/9/2017, Konstantinou 29/9/2017 al 25/2/2019, Mavrokoukoulakis
 25/2/2019 al 11/7/2022. Quedan fuera por el criterio del dueño; los balances 2017 a 2022 los firman ellos.
+Dueño persona que NO conduce (decidido por Guido el 2026-10-14, tanda de gestiones del lote 71): si el dueño o mayor accionista dejó la
+presidencia y el directorio y ninguna fuente dice que siga conduciendo, se carga al presidente que firma, no al dueño. Casos: Atromitos
+(Spanos dueño, Betsis presidente desde 2017), Panetolikos (Kostoulas accionista, Belevonis presidente desde 2017) y Aris (Karipidis del
+Lazaros, "dueño fantasma" sin cargo desde 2018: se cargan los presidentes formales). Panathinaikos queda como está: Alafouzos conduce.
 ============================================================================
 ```
 

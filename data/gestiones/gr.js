@@ -39,4 +39,28 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Giorgos Spyridopoulos', corto:'Spyridopoulos', cargo:'Presidente', desde:'2024-07-01', hasta:null, firmo:[2024],
       fuente:'https://en.wikipedia.org/wiki/Volos_F.C.', confirmada:true },
   ],
+  'aris-gr': [
+    { nombre:'Theodoros Karipidis', corto:'Karipidis', cargo:'Presidente', desde:'2018-11-28', hasta:'2022-02-11',
+      fuente:'https://www.news247.gr/athlitika/to-engrafo-pou-apodeikniei-oti-o-karipidis-tou-lazarou-den-einai-proedros-tis-pae-aris/', confirmada:true },
+    { nombre:'Irini Karipidou', corto:'Karipidou', cargo:'Presidente', desde:'2022-02-11', hasta:null,
+      fuente:'https://www.voria.gr/article/pae-aris-proedros-ke-diefthinousa-simvoulos-i-irini-karipidou', confirmada:true },
+  ],
+  'atromitos-gr': [
+    { nombre:'Georgios Spanos', corto:'Spanos', cargo:'Presidente', desde:'2005-05-01', hasta:'2017-11-10',
+      fuente:'https://www.atromitosfc.gr/club/', confirmada:true },
+    { nombre:'Vasilios Betsis', corto:'Betsis', cargo:'Presidente', desde:'2017-11-10', hasta:null,
+      fuente:'https://www.sport-fm.gr/article/podosfairo/superleague1/episimo-neos-proedros-tou-atromitou-sti-thesi-tou-giwrgou-spanou-o-basilis-mpetsis/3475450', confirmada:true },
+  ],
+  'kifisia-gr': [
+    { nombre:'Christos Pritsas', corto:'Pritsas', cargo:'Presidente', desde:'2018-01-01', hasta:null,
+      fuente:'https://www.mononews.gr/business/sports-business/pos-o-christos-pritsas-metetrepse-tin-kifisia-se-dynami-tis-super-league-kai-michani-chrimatos', confirmada:true },
+  ],
+  'panetolikos-gr': [
+    { nombre:'Gerasimos Belevonis', corto:'Belevonis', cargo:'Presidente', desde:'2017-01-19', hasta:null,
+      fuente:'https://www.sport24.gr/football/paraitithike-o-kostoylas-proedros-o-mpelevonis.8501646.html', confirmada:true },
+  ],
+  'paok-gr': [
+    { nombre:'Ivan Savvidis', corto:'Savvidis', cargo:'Presidente', desde:'2012-08-10', hasta:null,
+      fuente:'https://en.wikipedia.org/wiki/Ivan_Savvidis', confirmada:true },
+  ],
 });
