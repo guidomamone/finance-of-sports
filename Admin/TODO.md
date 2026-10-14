@@ -26,9 +26,6 @@ ni en el comentario de ningún archivo de código.
     b) Gestiones de un club nuevo: cada año frena con un caso "cargar · gestion" y la tanda de subagentes se arma a mano
        (`Admin/gestiones-por-pais/tanda-2026-10-14/lote-N.json` con clubId y cierres). Un script que arme los `lote-N.json` desde los casos
        `gestion` pendientes de la cola, y que cargue el `resultado-N.json` validado y conteste esos casos, ahorra el armado en cada país.
-    c) Perfil (socios / otros deportes) por club: en Grecia todas las ΠΑΕ (sociedades anónimas de fútbol) dieron "no" y "no", y la cola lo
-       volvió a preguntar club por club (Kifisia, Panetolikos, PAOK, Olympiacos). Escalón por forma jurídica: si el documento dice ΠΑΕ /
-       Ποδοσφαιρική Ανώνυμη Εταιρεία (con la línea citada), proponer "no" y "no"; la compuerta es la cita, y lo que no la tiene sigue a la cola.
     d) La cola pregunta la MISMA etiqueta una vez por año: PAOK dejó 78 casos de categoría para 8 ejercicios, casi todos repetidos
        ("Αμοιβές τρίτων", "Παροχές τρίτων"...). Agrupar por club + etiqueta: una respuesta vale para los años en que la fila es la misma
        (mismo lado, misma nota), y un año distinto vuelve a preguntar.

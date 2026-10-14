@@ -112,7 +112,7 @@ const { clubDeRuta } = await import('./carpetas-clubes.mjs');
 const { derivado } = await import('./rutas.mjs');
 const { marcarClub } = await import('./dentro-de-otro.mjs'); // (Versión 518) "Posiblemente dentro de otro rubro", ver escribir()
 const EV = await import('./evidencia-club.mjs'); // (to-do 209) la evidencia de carga va a Admin/carga-clubes/<clubId>.md, no a data/
-const { agregarCaso, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub, respuestasDonde } = await import('./cola.mjs');
+const { agregarCaso, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub, respuestasDonde, cerrarPerfilSabido } = await import('./cola.mjs');
 const agregarCasoCola = agregarCaso; // (Versión 462) proponer() usa su propio agregarCaso (puede no escribir)
 const { perfilDe, guardarPerfil } = await import('./perfil-clubes.mjs');
 const { ajusteDe, ajustesDe, ajustePerimetroDe } = await import('./ajustes.mjs');
@@ -656,6 +656,20 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
         // (Versión 511) ajuste `incluye`: la categoría está dentro de otra línea (el documento las junta): no es un 0 a revisar ni una pregunta.
         if (catsIng.every((c) => incluidoEn[c]) && catsGas.every((c) => incluidoEn[c])) { P.avisos.push(`"${nombre}" da 0 porque está incluida en otra línea (ajuste manual \`incluye\`)`); continue; }
         let tiene = perfil[campo]; if (tiene === undefined || tiene === null) tiene = respPerfil(campo);
+        // (to-do 232 c, aprobado por Guido el 2026-10-14) FORMA JURÍDICA: una ΠΑΕ (Ποδοσφαιρική Ανώνυμη Εταιρεία) es por ley una sociedad solo de
+        // fútbol, con accionistas y no socios; las 12 griegas contestadas en la cola dieron "no" y "no". UNA compuerta: la forma está en la
+        // PORTADA del documento (hasta la pág. 3 del visor), y esa línea es la cita (la portada nombra a quien presenta el balance; no se busca el
+        // nombre del club porque está en griego y el del sitio en latín). Solo ΠΑΕ: la SAF brasileña no sirve (Cuiabá y Ferroviária tienen
+        // socios) y Italia ya está contestada. Sin la cita, sigue a la cola. Caso: Athens Kallithea (balance del municipio) no la tiene.
+        if (tiene === undefined || tiene === null) {
+          const cita = citaPAE(readFileSync(resolve(ROOT, e.md), 'utf8'));
+          if (cita) {
+            const ev = `forma jurídica ΠΑΕ en la portada: ${e.md} L${cita.linea} "${cita.texto}" (cargar.mjs, to-do 232 c)`;
+            guardarPerfil(clubId, campo, false, ev, 'forma-juridica'); perfil[campo] = false; tiene = false;
+            cerrarPerfilSabido(`${clubId}:${campo}`, `resuelto por la forma jurídica: ${ev}`);
+            P.avisos.push(`"${nombre}" en 0: real (${clubId} es una ΠΑΕ, sin ${campo === 'socios' ? 'socios' : 'otros deportes'}; ${e.md} L${cita.linea})`);
+          }
+        }
         if (tiene === true) ceros.push({ categoria: nombre });
         else if (tiene === undefined || tiene === null) {
           agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'perfil', detalle: `${clubId}:${campo}`, que: `${pregunta}  (por qué: en ${year} "${nombre}" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)`, propuesta: 'responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)' });
@@ -1120,6 +1134,14 @@ function comparar(P, prod) {
     fxIgual: pm.fxRef ? pm.fxRef === E.fiscalYearMeta.fxRef : pm.fx != null ? (E.fiscalYearMeta.fx != null ? Math.abs(E.fiscalYearMeta.fx / pm.fx - 1) < 0.005 : false) : null,
     ligaIgual: ligaProd === undefined ? null : ligaProd === (P.liga?.valor ?? null),
   };
+}
+
+// ΠΑΕ EN LA PORTADA (to-do 232 c): la primera línea, hasta la pág. 3 del visor, con la forma jurídica griega de sociedad de fútbol.
+const PAE_RE = /(?<![\p{L}])(?:Π\.\s?Α\.\s?Ε\.?|ΠΑΕ|ΠΟΔΟΣΦΑΙΡΙΚ\p{L}*\s+ΑΝΩΝΥΜ\p{L}*\s+ΕΤΑΙΡ\p{L}*|Ποδοσφαιρικ\p{L}*\s+Ανώνυμ\p{L}*\s+Εταιρ\p{L}*)(?![\p{L}])/u;
+function citaPAE(md) {
+  const L = md.split('\n'); let fin = L.findIndex((l) => /^---\s*p[aá]g\.\s*4\s*---/i.test(l)); if (fin < 0) fin = Math.min(L.length, 200);
+  for (let i = 0; i < fin; i++) if (PAE_RE.test(L[i])) return { linea: i + 1, texto: L[i].replace(/[*#|]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 160) };
+  return null;
 }
 
 // QUÉ TOCÓ UNA CARGA A MANO (to-do 232 y). AEK 2024 se cargó con `--escribir` y su `Admin/sourcing/Grecia/AEK Athens.md` quedó fuera de

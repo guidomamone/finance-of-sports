@@ -208,6 +208,17 @@ export function cerrarResueltoPorClub(pdf, etapa, motivo, detalle, casoOrigen) {
   return true;
 }
 
+// PERFIL YA SABIDO (to-do 232 c): cuando el perfil de un club se decide sin una respuesta de la cola (por la forma jurídica, con su cita), los
+// casos de perfil pendientes de ese club y campo se cierran con decision 'obsoleto' y la nota dice de dónde salió. Solo casos pendientes.
+export function cerrarPerfilSabido(detalle, nota) {
+  const { casos, resp, cerrado } = leer(); let n = 0;
+  for (const c of casos.values()) {
+    if (c.motivo !== 'perfil' || c.detalle !== detalle || resp.has(c.id) || cerrado.get(c.id)) continue;
+    appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id: c.id, ts: new Date().toISOString(), decision: 'obsoleto', nota }) + '\n'); n++;
+  }
+  return n;
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
   // --corregir-categoria (Versión 332): Guido fija la categoría de UNA fila de un documento aunque la categorización no haya tenido dudas (UC
