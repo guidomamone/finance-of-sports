@@ -201,7 +201,7 @@ const arisgrFiscalYearMeta = {
       {label:'Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)', value:-0.000009},
       {label:'Φορολογικά έσοδα (δαπάνες)', value:null},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:1.914323,
     officialTotalRevenue:15.191313, officialTotalExpenses:16.457028, officialPAT:-1.507598,
   },
   2024: {
@@ -215,7 +215,7 @@ const arisgrFiscalYearMeta = {
       {label:'Χρηματοοικονομικά έξοδα/δαπάνες', value:-0.275484},
       {label:'Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)', value:null},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:1.709531,
     officialTotalRevenue:16.354681, officialTotalExpenses:14.977997, officialPAT:1.101201,
   },
   2025: {
@@ -229,7 +229,7 @@ const arisgrFiscalYearMeta = {
       {label:'Χρηματοοικονομικά έξοδα/δαπάνες', value:-0.194341},
       {label:'Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)', value:-0.117785},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:1.227561,
     officialTotalRevenue:19.708542, officialTotalExpenses:18.734483, officialPAT:0.661933,
   },
   2022: {
@@ -243,7 +243,7 @@ const arisgrFiscalYearMeta = {
       {label:'Χρηματοοικονομικά έξοδα/δαπάνες', value:-0.014299},
       {label:'Φορολογικά έσοδα (δαπάνες)', value:null},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.240696,
     officialTotalRevenue:11.396014, officialTotalExpenses:12.753084, officialPAT:-1.371368,
   },
 };

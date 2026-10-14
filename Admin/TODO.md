@@ -91,6 +91,12 @@ ni en el comentario de ningún archivo de código.
     u) `perimetro-senales.mjs --auditar-a2 <carpeta>` escribe `instruccion.txt` y `pedidos.jsonl` EN la carpeta que recibe, y el nombre
        invita a pasarle la del club: con `Clubes/Grecia/Aris` los dejó al lado de los PDFs, que se publican (se movieron a mano). Que
        rechace una ruta bajo `Clubes/` o que escriba siempre en una carpeta de trabajo fija (scratch o `Admin/mediciones/`).
+    v) `caja-deuda.mjs`, escalón 2 (IA): en los balances griegos lee la columna de NOTA como importe. Olympiacos 2017 L306 "Ταμειακά
+       διαθέσιμα και ισοδύναμα | 24. | 1.820.725,55 | ...": propuso 24 (0,000024 M) y la compuerta lo rechazó; igual con la nota 7 de Aris,
+       Atromitos y Kifisia (0,000007). Resultado de la corrida del 2026-10-14 (US$ 2,29): 22 datos de 86; Atromitos y Kifisia, ninguno. La
+       compuerta funcionó (no entró ningún número de nota), pero se pierde casi todo. Que el pedido (o el script, antes de la compuerta)
+       descarte la columna de nota ("Σημ.", un entero corto o "24.") y lea la del ejercicio; también Olympiacos tiene 4 columnas (grupo y
+       sociedad, dos años). Volver a correr los 6 clubes después.
     k) Una respuesta "no" de la cola a una duda de importe ("¿se carga X del estado y no Y de la nota?", Olympiacos 2023 caso 446850a)
        no cambia nada: la verificación siguió con el importe del estado y hubo que agregar un ajuste `fila` a mano. Que esa respuesta
        aplique sola el importe de la nota (es lo que la pregunta ofrece), con la misma compuerta de cierre.

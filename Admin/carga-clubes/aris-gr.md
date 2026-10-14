@@ -115,6 +115,10 @@ Generados/Grecia/Aris/Aris_FS_2025-06-30.categorias.json (escalón de cada fila 
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento anterior): "Μετρητά και ταμειακά ισοδύναμα" pág. 13
+```
+
 ### Liga
 
 ```text
@@ -180,6 +184,10 @@ Generados/Grecia/Aris/Aris_FS_2024-06-30.categorias.json (escalón de cada fila 
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Μετρητά και ταμειακά ισοδύναμα" pág. 13
+```
+
 ### Liga
 
 ```text
@@ -230,6 +238,10 @@ Generados/Grecia/Aris/Aris_FS_2023-06-30.categorias.json (escalón de cada fila 
 ```text
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-14): perimetro = consolidado. perimetro-senales.mjs: el ejercicio 2023-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Μετρητά και ταμειακά ισοδύναμα" pág. 13
 ```
 
 ### Liga
@@ -284,6 +296,10 @@ Generados/Grecia/Aris/Aris_FS_audited_art47_2022-06-30.categorias.json (escalón
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-14): perimetro = consolidado. perimetro-senales.mjs: el ejercicio 2022-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): filas-a-mano. Claude 2026-10-14 (to-do 231 6b, pedido de Guido: resolver con tokens de sesión y que una corrida futura del pipeline llegue a lo mismo): .ubicacion.json y .filas.json armados a mano desde el .md (estado b3 L433-455, notas b15 y b16), mismo formato que Aris 2023
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Μετρητά και ταμειακά ισοδύναμα" pág. 12
 ```
 
 ### Liga

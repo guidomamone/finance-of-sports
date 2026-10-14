@@ -298,7 +298,7 @@ const paokgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:33.922723, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:2.986246,
     officialTotalRevenue:46.679287, officialTotalExpenses:51.784655, officialPAT:-5.277826,
   },
   2020: {
@@ -318,7 +318,7 @@ const paokgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:17.768593, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος', lado:'expense', importe:43.188601, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:4.668372,
     officialTotalRevenue:25.205029, officialTotalExpenses:51.976862, officialPAT:-26.904651,
   },
   2021: {
@@ -337,7 +337,7 @@ const paokgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:38.661362, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:2.357038,
     officialTotalRevenue:52.889098, officialTotalExpenses:52.19925, officialPAT:-3.764593,
   },
   2022: {
@@ -356,7 +356,7 @@ const paokgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:32.627236, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:1.002627,
     officialTotalRevenue:47.939685, officialTotalExpenses:57.539053, officialPAT:-13.439141,
   },
   2023: {
@@ -371,7 +371,7 @@ const paokgrFiscalYearMeta = {
       {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.558923},
       {label:'Φόροι εισοδήματος', value:null},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:12.4, cash:0.817897,
     officialTotalRevenue:29.105102, officialTotalExpenses:50.411992, officialPAT:-22.455138,
   },
   2024: {
@@ -386,7 +386,7 @@ const paokgrFiscalYearMeta = {
       {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.83565},
       {label:'Φόροι εισοδήματος', value:null},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:3.8, cash:2.946882,
     officialTotalRevenue:46.377395, officialTotalExpenses:61.560715, officialPAT:-16.590795,
   },
   2025: {
@@ -401,7 +401,7 @@ const paokgrFiscalYearMeta = {
       {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.502677},
       {label:'Φόροι εισοδήματος', value:null},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:3.659016,
     officialTotalRevenue:73.325268, officialTotalExpenses:72.175465, officialPAT:0.05163,
   },
 };
