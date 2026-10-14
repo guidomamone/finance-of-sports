@@ -645,7 +645,8 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [-
                    celda en una columna con forma de nota, con los vecinos leídos igual; decide la compuerta (una sola pasa → esa; las dos
                    con valores distintos → no decide). Una tabla con los dos perímetros lado a lado (encabezado "Όμιλος | Εταιρεία", Group /
                    Company, Konzern / Gesellschaft...) da las cifras de cada uno por separado y se toman las del ajuste `perimetro` (to-do 232 w:
-                   Olympiacos 2016-2025). La columna con forma de nota se juzga sin el encabezado del bloque (to-do 232 x:
+                   Olympiacos 2016-2025). Una fila con una cifra de forma imposible ("13.950,790,99", OCR) no se usa (to-do 232 ac). Filas
+                   propuestas que suman 0 no pasan la compuerta: un 0 sale solo por "ninguna fila" (la trampa del cero). La columna con forma de nota se juzga sin el encabezado del bloque (to-do 232 x:
                    AEK 2025 transcribió "σημ." como "Α/Υ" y la columna dejaba de reconocerse). Escalón 1b, EN MEDICIÓN (to-do 233 + 232 t, solo con --jev): Jev propone la fila de caja (opción cerrada entre las filas del balance) y las de
                    deuda (sí/no por fila), antes de la IA cara; decide la misma compuerta. (to-do 232 v) Una celda que no puede ser importe en ningún formato tampoco es
                    cifra: entero con punto final ("24.") o dos o más puntos con grupos de menos de 3 cifras ("7.1.3"); Grecia: Olympiacos

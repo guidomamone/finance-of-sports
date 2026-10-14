@@ -86,6 +86,11 @@ ni en el comentario de ningún archivo de código.
        vencimientos L180 imprime "Δανεισμός 675.223,80"), los 10 japoneses y Club América (1 cada uno). Evidencias que dicen "no se
        cargaron": clubamerica, coritiba, fortaleza-br, gremio, hamburgersv-de, independiente, istra-hr, midtjylland-dk, nagoyagrampus,
        racing, sportrecife-br.
+    ad) CIFRAS CON FORMA IMPOSIBLE EN TODO EL PIPELINE (2026-10-14, al medir Jev): 1.960 números con dos separadores distintos y el último
+       repetido o el de miles después del decimal, en 118 transcripciones (Valencia "1.244,197,13" L8499, Rayo Vallecano "32.444,508,40" L662,
+       Espanyol 2025 "13.950,790,99" L361): errores del OCR. caja-deuda.mjs ya no usa esas filas (232 ac). Falta: (1) medir si alguna llegó a
+       un dato publicado (extraer/verificar las leen con parseNumber; la verificación de sumas debería atraparlas, no está medido); (2) que la
+       validación gratis de la etapa 2 (inventario-transcripciones.mjs) las marque como cifras a revisar, para re-leer esas páginas.
 
 233. JEV EN OTRAS ETAPAS DEL PIPELINE (pedido de Guido, 2026-10-14). Jev (typesafe.ai, `tools/jev-categorizar.mjs`) cuesta ~US$ 42 por MIL
     MILLONES de tokens de entrada y hoy solo categoriza (etapa 7). Ver, etapa por etapa, si puede hacer lo que hoy hace Claude Opus o un

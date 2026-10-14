@@ -254,6 +254,11 @@ function columnasDePerimetro(L) {
   return res;
 }
 
+const formaImposible = (c) => {
+  const t = String(c).replace(/[^\d.,]/g, ''); if (!(t.includes('.') && t.includes(','))) return false;
+  const ultimo = Math.max(t.lastIndexOf('.'), t.lastIndexOf(',')); const sep = t[ultimo]; const otro = sep === '.' ? ',' : '.';
+  return t.split(sep).length - 1 > 1 || t.indexOf(otro) > ultimo;
+};
 export function filasDelMd(md) {
   const L = md.split('\n'); const filas = []; let pagina = 1; const textoPag = new Map();
   const notasAntes = columnasDeNotas(L); const notasPunto = columnasDeNotasConPunto(L); const notasForma = columnasConFormaDeNota(L); const colsPer = columnasDePerimetro(L);
@@ -291,6 +296,12 @@ export function filasDelMd(md) {
     }
     const todas = [[etiqueta, crudos, ixPrim, jPrim], ...segmentos];
     for (const [et0, cr0, ix0, j0] of todas) { const etiqueta = et0; let crudos = cr0;
+    // (to-do 232 ac, aprobado por Guido el 2026-10-14) UNA CIFRA CON FORMA IMPOSIBLE invalida la fila entera (no se saca solo esa celda: correría
+    // las columnas y el año anterior se leería como el actual). Forma imposible = dos separadores distintos y el último repetido ("13.950,790,99")
+    // o el de miles después del decimal: un error del OCR. Caso: Espanyol 2025 L361, "Efectivo y otros activos líquidos equivalentes
+    // 13.950,790,99 | 3.174.782,30" se leía 13.950,79 y la columna del año anterior confirmaba la caja (Jev la eligió bien). La fila de abajo,
+    // "Tesorería 13.950.790,99", está bien leída. Medido: 1.960 cifras así en 118 transcripciones.
+    if ((cr0 || []).some(formaImposible)) continue;
     let nums = crudos.map(parseNumber).filter((n) => n !== null);
     // Referencia a nota: un entero chico (1-2 dígitos, sin separador) al principio, seguido de más cifras.
     // (Versión 383: un 0 no es un número de nota. Fortaleza 2023 "Caja | 0 | 2.152" se leía 2.152, la columna del año anterior.)
