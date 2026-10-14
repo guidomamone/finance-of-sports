@@ -27,6 +27,9 @@ window.RANKINGS["gr-superleague"] = {
   2024: {
     leagueSize: null,
     clubs: [
+      { id:"olympiacos-gr", revenue:71.972, reportType:"official_balance_sheet",
+        sourceId:"olympiacos-gr-pae-olympiacos-consolidated-ifrs-fs-2024-06-30",
+        mix:[["Comercial / Sponsors",14.08],["Estadio",9.908],["Televisión",8.807],["Premios por competencias",21.285],["Venta de Jugadores",15.769],["Otros ingresos",2.123]] },
       { id:"oficrete-gr", revenue:6.648, reportType:"official_balance_sheet",
         sourceId:"oficrete-gr-ofi-income-stmt-2024-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",4.304],["Otros ingresos",2.344]] },
