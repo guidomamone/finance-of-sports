@@ -3,7 +3,7 @@
   "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.pdf",
   "club": "paok",
   "year": 2025,
-  "generatedAt": "2026-10-14T05:24:01.216Z",
+  "generatedAt": "2026-10-14T05:54:38.287Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         7.073307
       ],
-      "glosa": "Ingresos por taquilla y abonos"
+      "glosa": "Ingresos por entradas y abonos"
     },
     {
       "label": "Έσοδα από τηλεοπτικά δικαιώματα",
@@ -84,7 +84,7 @@
       "values": [
         31.772701
       ],
-      "glosa": "Resultados por enajenación de activos no corrientes"
+      "glosa": "Resultado por enajenación de activos no corrientes"
     },
     {
       "label": "Λοιπά έσοδα και κέρδη",
@@ -114,7 +114,7 @@
       "values": [
         41.978664
       ],
-      "glosa": "Honorarios de terceros"
+      "glosa": "Honorarios y servicios de terceros"
     },
     {
       "label": "Παροχές τρίτων",
@@ -124,7 +124,7 @@
       "values": [
         1.530316
       ],
-      "glosa": "Servicios prestados por terceros"
+      "glosa": "Servicios exteriores"
     },
     {
       "label": "Φόροι-Τέλη",
@@ -134,7 +134,7 @@
       "values": [
         0.153366
       ],
-      "glosa": "Impuestos y tasas"
+      "glosa": "Tributos y tasas"
     },
     {
       "label": "Διάφορα έξοδα",
@@ -164,7 +164,7 @@
       "values": [
         0.425513
       ],
-      "glosa": "Compras de consumibles"
+      "glosa": "Aprovisionamientos de material consumible"
     },
     {
       "label": "Αμοιβές προσωπικού",
@@ -184,7 +184,7 @@
       "values": [
         0.586344
       ],
-      "glosa": "Honorarios de terceros"
+      "glosa": "Honorarios y servicios de terceros"
     },
     {
       "label": "Παροχές τρίτων",
@@ -194,7 +194,7 @@
       "values": [
         0.284778
       ],
-      "glosa": "Servicios prestados por terceros"
+      "glosa": "Servicios exteriores"
     },
     {
       "label": "Φόροι-Τέλη",
@@ -204,7 +204,7 @@
       "values": [
         0.253822
       ],
-      "glosa": "Impuestos y tasas"
+      "glosa": "Tributos y tasas"
     },
     {
       "label": "Διάφορα έξοδα",
@@ -254,7 +254,7 @@
       "values": [
         0.356617
       ],
-      "glosa": "Honorarios de terceros"
+      "glosa": "Honorarios y servicios de terceros"
     },
     {
       "label": "Παροχές τρίτων",
@@ -264,7 +264,7 @@
       "values": [
         0.08044
       ],
-      "glosa": "Servicios prestados por terceros"
+      "glosa": "Servicios exteriores"
     },
     {
       "label": "Φόροι-Τέλη",
@@ -274,7 +274,7 @@
       "values": [
         0.097378
       ],
-      "glosa": "Impuestos y tasas"
+      "glosa": "Tributos y tasas"
     },
     {
       "label": "Διάφορα έξοδα",
@@ -324,7 +324,7 @@
       "values": [
         0.311915
       ],
-      "glosa": "Multas y recargos fiscales"
+      "glosa": "Sanciones y recargos fiscales"
     },
     {
       "label": "Λοιπά έκτακτα έξοδα",

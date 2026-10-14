@@ -3,7 +3,7 @@
   "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2016-17.pdf",
   "club": "paok",
   "year": 2017,
-  "generatedAt": "2026-10-14T05:24:01.106Z",
+  "generatedAt": "2026-10-14T05:54:38.175Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         3.606321
       ],
-      "glosa": "Ingresos por taquilla y abonos"
+      "glosa": "Ingresos por entradas y abonos"
     },
     {
       "label": "Έσοδα από τηλεοπτικά δικαιώματα",
@@ -24,7 +24,7 @@
       "values": [
         2.286571
       ],
-      "glosa": "Ingresos por derechos de retransmisión"
+      "glosa": "Ingresos por derechos de televisión"
     },
     {
       "label": "Έσοδα από παραχωρήσεις ποδοσφαιριστών",
@@ -34,7 +34,7 @@
       "values": [
         6.203
       ],
-      "glosa": "Ingresos por cesión de jugadores"
+      "glosa": "Ingresos por cesiones y traspasos de futbolistas"
     },
     {
       "label": "Έσοδα από επιχορηγήσεις",
@@ -84,7 +84,7 @@
       "values": [
         6.040966
       ],
-      "glosa": "Resultado por enajenación de activos no corrientes"
+      "glosa": "Resultados por enajenación de activos no corrientes"
     },
     {
       "label": "Λοιπά έκτακτα έσοδα",
@@ -114,7 +114,7 @@
       "values": [
         0.12
       ],
-      "glosa": "Reversión de provisiones"
+      "glosa": "Ingresos por reversión de provisiones"
     },
     {
       "label": "Αμοιβές προσωπικού",
@@ -134,7 +134,7 @@
       "values": [
         17.780205
       ],
-      "glosa": "Honorarios de profesionales independientes"
+      "glosa": "Servicios de profesionales independientes"
     },
     {
       "label": "Παροχές τρίτων",
@@ -154,7 +154,7 @@
       "values": [
         0.180134
       ],
-      "glosa": "Tributos y tasas"
+      "glosa": "Impuestos y tasas"
     },
     {
       "label": "Διάφορα έξοδα",
@@ -204,7 +204,7 @@
       "values": [
         0.60892
       ],
-      "glosa": "Honorarios de profesionales independientes"
+      "glosa": "Servicios de profesionales independientes"
     },
     {
       "label": "Παροχές τρίτων",
@@ -224,7 +224,7 @@
       "values": [
         0.309907
       ],
-      "glosa": "Tributos y tasas"
+      "glosa": "Impuestos y tasas"
     },
     {
       "label": "Διάφορα έξοδα",
@@ -274,7 +274,7 @@
       "values": [
         0.119882
       ],
-      "glosa": "Honorarios de profesionales independientes"
+      "glosa": "Servicios de profesionales independientes"
     },
     {
       "label": "Παροχές τρίτων",
@@ -294,7 +294,7 @@
       "values": [
         0.118499
       ],
-      "glosa": "Tributos y tasas"
+      "glosa": "Impuestos y tasas"
     },
     {
       "label": "Διάφορα έξοδα",
@@ -344,7 +344,7 @@
       "values": [
         0.03146
       ],
-      "glosa": "Sanciones y recargos tributarios"
+      "glosa": "Sanciones y recargos fiscales"
     },
     {
       "label": "Λοιπά έκτακτα έξοδα",

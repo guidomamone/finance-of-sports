@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.pdf",
- "generado": "2026-10-14T05:33:28.230Z",
+ "generado": "2026-10-14T06:03:23.160Z",
  "frena": [
   {
    "etapa": "club",
@@ -9,15 +9,11 @@
   {
    "etapa": "club",
    "motivo": "carpetas-clubes.mjs dice paok-gr y quien.mjs --quien dice paok"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "20 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Αμοιβές τρίτων\" -> other_expenses 0.45; \"Παροχές τρίτων\" -> other_expenses 0.4; \"Διάφορα έξοδα\" -> other_expenses 0.75; \"Αποσβέσεις\" -> player_amortisation 0.5; \"Αγορές Αναλωσίμων\" -> other_expenses 0.55"
   }
  ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-13: Claude 2026-10-13: PAOK PAE es filial de DIMERA Ltd, que es la que consolida (PAOK_FS_2024-06-30.md L1217-1219, nota 21); los estados de la PAE son individuales (8 menciones de consolidado contra 53-59 de individual))",
-  "gastos: ningún total impreso igual a la suma de las líneas (-52.292302); queda la suma, verificada por el resultado del ejercicio"
+  "gastos: ningún total impreso igual a la suma de las líneas (-52.19925); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "paok-gr",
@@ -99,23 +95,23 @@
    },
    {
     "rawLabel": "Αμοιβές τρίτων",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "wages_squad",
     "amountNative": -28.534692,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Παροχές τρίτων",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.95427,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Φόροι-Τέλη",
@@ -133,9 +129,9 @@
     "amountNative": -2.143979,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Αποσβέσεις",
@@ -143,9 +139,9 @@
     "amountNative": -8.265771,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Αγορές Αναλωσίμων",
@@ -153,9 +149,9 @@
     "amountNative": -0.505828,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Αμοιβές προσωπικού",
@@ -169,23 +165,23 @@
    },
    {
     "rawLabel": "Αμοιβές τρίτων",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "wages_squad",
     "amountNative": -0.721302,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Παροχές τρίτων",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.212978,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Φόροι-Τέλη",
@@ -203,9 +199,9 @@
     "amountNative": -1.081488,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Αποσβέσεις",
@@ -213,9 +209,9 @@
     "amountNative": -0.239093,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Λοιπές Προβλέψεις",
@@ -223,9 +219,9 @@
     "amountNative": -0.396867,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Αμοιβές προσωπικού",
@@ -239,23 +235,23 @@
    },
    {
     "rawLabel": "Αμοιβές τρίτων",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "wages_squad",
     "amountNative": -0.166538,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Παροχές τρίτων",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.099982,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Φόροι-Τέλη",
@@ -273,9 +269,9 @@
     "amountNative": -0.967568,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Αποσβέσεις",
@@ -283,9 +279,9 @@
     "amountNative": -0.038272,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Λοιπές Προβλέψεις",
@@ -293,9 +289,9 @@
     "amountNative": -0.156599,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Πρόστιμα αθλητικών φορέων",
@@ -303,19 +299,19 @@
     "amountNative": -0.04385,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Φορολογικά Πρόστιμα & προσαυξήσεις",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.004303,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Λοιπά έκτακτα έξοδα",
@@ -329,13 +325,13 @@
    },
    {
     "rawLabel": "Φόροι και προσαυξήσεις προηγ. Χρήσεων",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "exceptional_items",
     "amountNative": -0.093052,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Λοιπά έξοδα προηγ. Χρήσεων",
@@ -343,9 +339,9 @@
     "amountNative": -0.054942,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Προβλέψεις για έκτακτους κινδύνους",
@@ -353,9 +349,9 @@
     "amountNative": -0.027834,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -393,13 +389,13 @@
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 52.889098,
-   "officialTotalExpenses": 52.292302,
+   "officialTotalExpenses": 52.19925,
    "officialPAT": -3.764593
   },
   "source": {
    "id": "paok-gr-fs-2021-06-30",
    "clubId": "paok-gr",
-   "title": "PAOK — PAOK_FS_2021-06-30 (ejercicio 2021)",
+   "title": "Panthessalonikeios Athlitikos Omilos Konstantinoupoliton P.A.E. — PAOK_FS_2021-06-30 (ejercicio 2021)",
    "type": "official_balance_sheet",
    "reliability": "primary",
    "note": "Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
@@ -540,12 +536,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\")",
    "signoFijo": 28.534692,
-   "cat": "other_expenses",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (decisión de Guido): Αμοιβές τρίτων del departamento de fútbol (PAOK_FS_2025-06-30.md L1109: 41,98 M€) contra 9,25 M€ de costo de personal para 265 personas con 80 futbolistas (nota 17, L1193-L1215): los contratos de jugadores y técnicos están en esta línea. Pregunta al club en Admin/dudas-por-club.md",
    "destino": "expense",
    "amountNative": -28.534692
   },
@@ -556,12 +552,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\")",
    "signoFijo": 0.95427,
-   "cat": "other_expenses",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Precedente griego aceptado por Guido: 'Παροχές τρίτων' -> admin_general_expense (AEL 2020/2022/2024/2025, Asteras 2019). El documento no dice nada distinto y la duda del pipeline con 'organización de partidos' no tiene respaldo en el texto. Mismo criterio en todos los ejercicios con caso. [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1024: |  Παροχές τρίτων | 954.270,49 | 778.797,87  |]",
    "destino": "expense",
    "amountNative": -0.95427
   },
@@ -588,11 +584,11 @@
    "origen": "verificacion (nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\")",
    "signoFijo": 2.143979,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Gastos diversos del cuadro de costos por naturaleza; el documento no los abre. Catch-all other_expenses (skill sección 1). Mismo criterio en todos los ejercicios con caso. [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1026: |  Διάφορα έξοδα | 2.143.979,09 | 2.804.361,99  |]",
    "destino": "expense",
    "amountNative": -2.143979
   },
@@ -604,11 +600,11 @@
    "origen": "verificacion (nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\")",
    "signoFijo": 8.265771,
    "cat": "player_amortisation",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): La fila del departamento de fútbol es casi toda amortización de derechos de futbolistas: cuadra con la nota 6.2 'Εγγραφές ποδοσφαιριστών' (amortización del período / fila de fútbol: 2017 3,03/3,33 M; 2019 5,59/5,95; 2021 7,94/8,27; 2022 6,68/7,01; 2023 4,91/5,25; 2024 6,68/7,03; 2025 6,80/7,19), es decir 91-96%; el resto es material/software no separable. player_amortisation es el bucket correcto. Aparte: las filas 'Αποσβέσεις' de Έξοδα Διοίκησης y Διάθεσης (0,2-0,3 M por año) son de bienes tangibles/software, no de pases, y hoy salen también como player_amortisation (ver resumen). [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1027: |  Αποσβέσεις | 8.265.771,19 | 9.377.664,45  |]",
    "destino": "expense",
    "amountNative": -8.265771
   },
@@ -620,11 +616,11 @@
    "origen": "verificacion (nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\")",
    "signoFijo": 0.505828,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Compras de consumibles del departamento de fútbol; el documento no las abre. other_expenses por defecto (skill sección 1). Mismo criterio en todos los ejercicios con caso. [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1028: |  Αγορές Αναλωσίμων | 505.827,77 | 234.692,75  |]",
    "destino": "expense",
    "amountNative": -0.505828
   },
@@ -650,12 +646,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Έξοδα διοίκησης\")",
    "signoFijo": 0.721302,
-   "cat": "other_expenses",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (decisión de Guido): Αμοιβές τρίτων del departamento de fútbol (PAOK_FS_2025-06-30.md L1109: 41,98 M€) contra 9,25 M€ de costo de personal para 265 personas con 80 futbolistas (nota 17, L1193-L1215): los contratos de jugadores y técnicos están en esta línea. Pregunta al club en Admin/dudas-por-club.md",
    "destino": "expense",
    "amountNative": -0.721302
   },
@@ -666,12 +662,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Έξοδα διοίκησης\")",
    "signoFijo": 0.212978,
-   "cat": "other_expenses",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Precedente griego aceptado por Guido: 'Παροχές τρίτων' -> admin_general_expense (AEL 2020/2022/2024/2025, Asteras 2019). El documento no dice nada distinto y la duda del pipeline con 'organización de partidos' no tiene respaldo en el texto. Mismo criterio en todos los ejercicios con caso. [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1024: |  Παροχές τρίτων | 954.270,49 | 778.797,87  |]",
    "destino": "expense",
    "amountNative": -0.212978
   },
@@ -698,11 +694,11 @@
    "origen": "verificacion (nota que desglosa \"Έξοδα διοίκησης\")",
    "signoFijo": 1.081488,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Gastos diversos del cuadro de costos por naturaleza; el documento no los abre. Catch-all other_expenses (skill sección 1). Mismo criterio en todos los ejercicios con caso. [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1026: |  Διάφορα έξοδα | 2.143.979,09 | 2.804.361,99  |]",
    "destino": "expense",
    "amountNative": -1.081488
   },
@@ -714,11 +710,11 @@
    "origen": "verificacion (nota que desglosa \"Έξοδα διοίκησης\")",
    "signoFijo": 0.239093,
    "cat": "player_amortisation",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): La fila del departamento de fútbol es casi toda amortización de derechos de futbolistas: cuadra con la nota 6.2 'Εγγραφές ποδοσφαιριστών' (amortización del período / fila de fútbol: 2017 3,03/3,33 M; 2019 5,59/5,95; 2021 7,94/8,27; 2022 6,68/7,01; 2023 4,91/5,25; 2024 6,68/7,03; 2025 6,80/7,19), es decir 91-96%; el resto es material/software no separable. player_amortisation es el bucket correcto. Aparte: las filas 'Αποσβέσεις' de Έξοδα Διοίκησης y Διάθεσης (0,2-0,3 M por año) son de bienes tangibles/software, no de pases, y hoy salen también como player_amortisation (ver resumen). [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1027: |  Αποσβέσεις | 8.265.771,19 | 9.377.664,45  |]",
    "destino": "expense",
    "amountNative": -0.239093
   },
@@ -730,11 +726,11 @@
    "origen": "verificacion (nota que desglosa \"Έξοδα διοίκησης\")",
    "signoFijo": 0.396867,
    "cat": "other_amortisation",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Previsiones -> other_amortisation (skill sección 1; precedentes AEK 'Προβλέψεις επισφαλειών / ειδικών υποθέσεων' y Asteras 'Πρόβλεψη για επισφαλείς'). El importe del caso es el de la fila 'Λοιπές Προβλέψεις' del cuadro Έξοδα Διοίκησης (en el de fútbol es 0). [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1045: |  Λοιπές Προβλέψεις | 396.867,47 | 65.640,73  |]",
    "destino": "expense",
    "amountNative": -0.396867
   },
@@ -760,12 +756,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Έξοδα διάθεσης\")",
    "signoFijo": 0.166538,
-   "cat": "other_expenses",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (decisión de Guido): Αμοιβές τρίτων del departamento de fútbol (PAOK_FS_2025-06-30.md L1109: 41,98 M€) contra 9,25 M€ de costo de personal para 265 personas con 80 futbolistas (nota 17, L1193-L1215): los contratos de jugadores y técnicos están en esta línea. Pregunta al club en Admin/dudas-por-club.md",
    "destino": "expense",
    "amountNative": -0.166538
   },
@@ -776,12 +772,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Έξοδα διάθεσης\")",
    "signoFijo": 0.099982,
-   "cat": "other_expenses",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Precedente griego aceptado por Guido: 'Παροχές τρίτων' -> admin_general_expense (AEL 2020/2022/2024/2025, Asteras 2019). El documento no dice nada distinto y la duda del pipeline con 'organización de partidos' no tiene respaldo en el texto. Mismo criterio en todos los ejercicios con caso. [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1024: |  Παροχές τρίτων | 954.270,49 | 778.797,87  |]",
    "destino": "expense",
    "amountNative": -0.099982
   },
@@ -808,11 +804,11 @@
    "origen": "verificacion (nota que desglosa \"Έξοδα διάθεσης\")",
    "signoFijo": 0.967568,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Gastos diversos del cuadro de costos por naturaleza; el documento no los abre. Catch-all other_expenses (skill sección 1). Mismo criterio en todos los ejercicios con caso. [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1026: |  Διάφορα έξοδα | 2.143.979,09 | 2.804.361,99  |]",
    "destino": "expense",
    "amountNative": -0.967568
   },
@@ -824,11 +820,11 @@
    "origen": "verificacion (nota que desglosa \"Έξοδα διάθεσης\")",
    "signoFijo": 0.038272,
    "cat": "player_amortisation",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): La fila del departamento de fútbol es casi toda amortización de derechos de futbolistas: cuadra con la nota 6.2 'Εγγραφές ποδοσφαιριστών' (amortización del período / fila de fútbol: 2017 3,03/3,33 M; 2019 5,59/5,95; 2021 7,94/8,27; 2022 6,68/7,01; 2023 4,91/5,25; 2024 6,68/7,03; 2025 6,80/7,19), es decir 91-96%; el resto es material/software no separable. player_amortisation es el bucket correcto. Aparte: las filas 'Αποσβέσεις' de Έξοδα Διοίκησης y Διάθεσης (0,2-0,3 M por año) son de bienes tangibles/software, no de pases, y hoy salen también como player_amortisation (ver resumen). [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1027: |  Αποσβέσεις | 8.265.771,19 | 9.377.664,45  |]",
    "destino": "expense",
    "amountNative": -0.038272
   },
@@ -840,11 +836,11 @@
    "origen": "verificacion (nota que desglosa \"Έξοδα διάθεσης\")",
    "signoFijo": 0.156599,
    "cat": "other_amortisation",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Previsiones -> other_amortisation (skill sección 1; precedentes AEK 'Προβλέψεις επισφαλειών / ειδικών υποθέσεων' y Asteras 'Πρόβλεψη για επισφαλείς'). El importe del caso es el de la fila 'Λοιπές Προβλέψεις' del cuadro Έξοδα Διοίκησης (en el de fútbol es 0). [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1045: |  Λοιπές Προβλέψεις | 396.867,47 | 65.640,73  |]",
    "destino": "expense",
    "amountNative": -0.156599
   },
@@ -856,11 +852,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")",
    "signoFijo": 0.04385,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Multas de organismos deportivos, en 'Λοιπά Έξοδα'. Sin categoría específica: other_expenses, igual que el precedente de multas (Asteras 2019 'Φορολογικά πρόστιμα' -> other_expenses). Mismo criterio en todos los ejercicios con caso. [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1068: |  Πρόστιμα αθλητικών φορέων | 43.850,00 | 376.902,77  |]",
    "destino": "expense",
    "amountNative": -0.04385
   },
@@ -871,12 +867,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")",
    "signoFijo": 0.004303,
-   "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Rubro idéntico al de Asteras 2019 ('Φορολογικά πρόστιμα και προσαυξήσεις' -> other_expenses, aceptado por Guido): una multa o recargo fiscal no es un impuesto corriente (esos, 'Φόροι-Τέλη', van a admin_general_expense). Mismo criterio en todos los ejercicios con caso. [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1069: |  Φορολογικά Πρόστιμα & προσαυξήσεις | 4.302,80 | 7.612,76  |]",
    "destino": "expense",
    "amountNative": -0.004303
   },
@@ -903,12 +899,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")",
    "signoFijo": 0.093052,
-   "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Es gasto de ejercicios anteriores, no recurrente, en el mismo cuadro 'Λοιπά Έξοδα' que 'Λοιπά έξοδα προηγ. Χρήσεων' (exceptional_items): se trata igual que su vecina por ser partida de períodos previos. Alternativa: admin_general_expense (por ser impuestos). Mismo criterio en todos los ejercicios con caso. [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1071: |  Φόροι και προσαυξήσεις προηγ. Χρήσεων | 93.051,98 | 0,00  |]",
    "destino": "expense",
    "amountNative": -0.093052
   },
@@ -920,11 +916,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")",
    "signoFijo": 0.054942,
    "cat": "exceptional_items",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Gastos de ejercicios anteriores, no recurrentes: exceptional_items. Mismo criterio en todos los ejercicios con caso. [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1072: |  Λοιπά έξοδα προηγ. Χρήσεων | 54.942,33 | 21.097,75  |]",
    "destino": "expense",
    "amountNative": -0.054942
   },
@@ -936,11 +932,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")",
    "signoFijo": 0.027834,
    "cat": "other_amortisation",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Previsión para riesgos extraordinarios -> other_amortisation (skill sección 1: previsiones). Solo aparece en 2021. [Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md L1073: |  Προβλέψεις για έκτακτους κινδύνους | 27.834,21 | 0,00  |]",
    "destino": "expense",
    "amountNative": -0.027834
   },
@@ -992,9 +988,9 @@
  },
  "totales": {
   "revSum": 52.8891,
-  "expSum": -52.292302,
+  "expSum": -52.19925,
   "officialTotalRevenue": 52.889098,
-  "officialTotalExpenses": 52.292302,
+  "officialTotalExpenses": 52.19925,
   "officialPAT": -3.764593,
   "verificacion": {
    "pat": "impreso",
@@ -1062,7 +1058,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 2,
   "lineasIngreso": 6,
   "lineasGasto": 27,
   "metaFilas": 3,
