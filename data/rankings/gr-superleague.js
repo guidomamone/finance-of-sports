@@ -103,6 +103,9 @@ window.RANKINGS["gr-superleague"] = {
       { id:"aellarissa-gr", revenue:5.132, reportType:"official_balance_sheet",
         sourceId:"aellarissa-gr-ael-notes-elp-2021-06-30",
         mix:[["Comercial / Sponsors",0.048],["Fútbol profesional (sin desglosar por la fuente)",2.457],["Otros ingresos",2.627]] },
+      { id:"atromitos-gr", revenue:4.444, reportType:"official_balance_sheet",
+        sourceId:"atromitos-gr-notes-2021-06-30",
+        mix:[["Comercial / Sponsors",2.037],["Televisión",0.434],["Premios por competencias",0.966],["Venta de Jugadores",0.585],["Otras secciones deportivas",0.396],["Otros ingresos",0.027]] },
       { id:"volosnfc-gr", revenue:3.633, reportType:"official_balance_sheet",
         sourceId:"volosnfc-gr-volos-income-stmt-2021-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.587],["Otros ingresos",1.046]] },
@@ -201,7 +204,7 @@ window.RANKINGS["gr-superleague"] = {
       { id:"atromitos-gr", revenue:5.776, reportType:"official_balance_sheet",
         sourceId:"atromitos-gr-notes-2015-16",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",4.679],["Otros ingresos",1.097]],
-        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Otras secciones deportivas","Fútbol profesional (sin desglosar por la fuente)",1]] },
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Otras secciones deportivas","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
 };

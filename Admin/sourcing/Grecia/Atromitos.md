@@ -42,3 +42,5 @@ confirmados como `PDF document` real, tamaños entre 139 KB y 1,48 MB.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2019 desde `Clubes/Grecia/Atromitos/Atromitos_FS_2019-06-30.pdf` (sourceId `atromitos-gr-fs-2019-06-30`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2020 desde `Clubes/Grecia/Atromitos/Atromitos_notes_2020-06-30.pdf` (sourceId `atromitos-gr-notes-2020-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2021 desde `Clubes/Grecia/Atromitos/Atromitos_notes_2021-06-30.pdf` (sourceId `atromitos-gr-notes-2021-06-30`).
