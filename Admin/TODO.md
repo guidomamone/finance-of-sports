@@ -70,6 +70,9 @@ ni en el comentario de ningún archivo de código.
        de ingresos en NO en cada corrida. El ajuste tendría que poder decir "fuera del total impreso" para que ese chequeo lo descuente.
        El ajuste está en `Admin/registros/ajustes-manuales.jsonl` (Kifisia_notes_2025, campo `fila`); el chequeo es el "total de ingresos"
        de `verificar.mjs`.
+       CONOCIDO, SIN DAÑO HOY (medido el 2026-10-14): de 103 documentos con ajuste `fila` y verificación, 7 tienen un total en NO (Kifisia
+       2025, Aris 2024, Criciúma 2022, Lazio 2007-08, AS Roma 2012 y 2018, Como 2025); ninguno frena (estado ok o año ya cargado). Se
+       retoma si uno frena una carga.
     o) `alta-club.mjs` no encontró el nombre legal de ninguno de los 6 clubes griegos del lote 71 (puso el de la carpeta): los documentos
        lo dicen en "Επωνυμία: ..." o en la portada como "ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ <nombre>". Escalón por esas frases, con la cita.
        Código: `nombreLegal(md, displayName)` en `tools/alta-club.mjs` (L726). Las respuestas correctas para medir están en los ajustes
