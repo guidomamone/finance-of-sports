@@ -94,6 +94,10 @@ ni en el comentario de ningún archivo de código.
        `cargar.mjs` la deja como "sin categoría" (aviso, no se carga). AEK 2024: tres filas de 1 euro (Κόστος πωλήσεων, Αμοιβές
        ποδοσφαιρικού, Απομείωση παγίων). Conocido, sin daño hoy (el tie-out tolera la unidad); el redondeo de los TOTALES sí se carga
        (`cargar.mjs` L774, other_income / other_expenses). Si se arregla: la misma categoría por lado que el de los totales.
+    aa) Casos de perfil que nadie va a contestar ni cerrar: OFI Crete (10), Levadiakos (2) y Paysandu (2) son de años YA cargados con el
+       ingreso como renglón sin desglosar (lump_), donde `cargar.mjs` ya no hace la pregunta; `cola.mjs` `cerrarCargados()` no cierra
+       'cargar · perfil' a propósito (sirve para los años que vienen). Quedan en la cola como pendientes. Escalón posible: un caso de perfil
+       cuya etapa ya no lo levanta (el año cargado y la última corrida de cargar sin ese caso) pasa a obsoleto, igual que los de verificar.
 
 233. JEV EN OTRAS ETAPAS DEL PIPELINE (pedido de Guido, 2026-10-14). Jev (typesafe.ai, `tools/jev-categorizar.mjs`) cuesta ~US$ 42 por MIL
     MILLONES de tokens de entrada y hoy solo categoriza (etapa 7). Ver, etapa por etapa, si puede hacer lo que hoy hace Claude Opus o un
