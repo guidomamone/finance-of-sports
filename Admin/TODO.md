@@ -96,6 +96,10 @@ ni en el comentario de ningún archivo de código.
     categoría: sirve para elegir entre opciones cerradas (qué fila es caja, si es grupo o sociedad, si hay socios). Empezar por la etapa
     con respuesta cerrada y verdad conocida: caja y deuda (los años ya cargados de `caja-deuda.mjs --medir`) o el perímetro (los ajustes
     `perimetro` ya decididos y auditados, ver `--auditar-a2`).
+    HECHO: caja y deuda (escalón 1b de caja-deuda.mjs, 2026-10-14). Lo que enseñó la medición: Jev elige bien la fila, pero destapó dos
+    agujeros de la compuerta que también afectaban a los otros escalones (la trampa del cero y las cifras con forma imposible del OCR), y
+    errores del sitio (Colo-Colo 0/0, PAOK 2021, Panetolikos 2022: 232 ab). Siguen: el dato "personal" (229 + 232 s), perimetro-a2,
+    localizar, período y cierre, nombre legal, perfil y la primera mirada a la cola.
 
 130. OTROS DEPORTES Y CLUBES POLIDEPORTIVOS: ¿ENTRAN AL SITIO, Y CON QUÉ ESQUEMA? (Sudamérica y México). Minas Tênis Clube/Náutico,
     Paulistano, Praia Clube y Pinheiros publican un balance que consolida todos los deportes (cuotas,
