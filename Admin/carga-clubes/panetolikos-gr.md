@@ -219,6 +219,10 @@ tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por pr
 tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 2 (compuerta: año anterior): "Δάνεια" pág. 19 + "Τραπεζικά δάνεια" pág. 19
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 1b (compuerta: año anterior): "Δανεισμός" pág. 5 + "Δάνεια" pág. 19 + "Τραπεζικά δάνεια" pág. 19
+```
+
 ### Liga
 
 ```text
