@@ -36,3 +36,5 @@ Super League para tener ejercicios anteriores a buscar.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2022 desde `Clubes/Grecia/Kifisia/Kifisia_notes_2022-06-30.pdf` (sourceId `kifisia-gr-notes-2022-06-30`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2024 desde `Clubes/Grecia/Kifisia/Kifisia_notes_2024-06-30.pdf` (sourceId `kifisia-gr-notes-2024-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2025 desde `Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.pdf` (sourceId `kifisia-gr-notes-2025-06-30`).

@@ -50,6 +50,53 @@ Christos Pritsas (2018-01-01 a hoy): Dueño y presidente. Mononews dice que 'des
 Duda: El 'desde' 2018 sale de una sola fuente de prensa (Mononews: 'desde 2018 asumió'), sin mes ni día; como presidente de la PAE consta documentalmente solo desde la asamblea del 6/9/2021. No afecta a ningún cierre (todos son posteriores a 2021). Wikipedia en griego e inglés lo listan como presidente sin fecha.
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Kifisia/Kifisia_notes_2025-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Έσοδα εισιτηρίων | pág. 12, Jev 1 |
+| 2 | Χορηγίες και διαφήμιση | pág. 12, Jev 1 |
+| 3 | Δικαιώματα αναμετάδοσης | pág. 12, Jev 1 |
+| 4 | Εμπορικές δραστηριότητες | pág. 12, Jev 0.93 |
+| 5 | Επίδομα μηχανισμού αλληλεγγύης και χρηματικά έπαθλα UEFA | pág. 12, Jev 1 |
+| 6 | Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση | pág. 12, precedente |
+| 7 | Άλλα λειτουργικά έσοδα | pág. 12, Jev 0.98 |
+| 8 | λοιπά έσοδα /έξοδα μεταγραφών | pág. 12, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κόστος πωλήσεων /υλικών | pág. 12, precedente |
+| 2 | Αμοιβές έμμισθου προσωπικού (μικτά ποσά) | pág. 26, Claude 0.8 |
+| 3 | Κοινωνικές επιβαρύνσεις (εργοδοτικές εισφορές) | pág. 26, precedente |
+| 4 | Παρεπόμενες παροχές | pág. 26, precedente |
+| 5 | Απόσβεση και απομείωση ενσώματων παγίων στοιχείων ενεργητικού | pág. 12, Jev 0.98 |
+| 6 | Απόσβεση και απομείωση λοιπών άυλων στοιχείων (εξαιρουμένων ποδοσφαιριστών) | pág. 12, Jev 0.97 |
+| 7 | Λοιπά λειτουργικά έξοδα | pág. 12, Claude 0.85 |
+| 8 | Απόσβεση εγγραφών παικτών και απομείωση εγγραφών παικτών | pág. 12, Jev 0.95 |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): cierre = 2025-06-30. Claude 2026-10-14: el ejercicio va del 01/07/2024 al 30/06/2025 (estado de resultados de ese período); periodo.mjs no lo detectó
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): fila = 60.000,00. Claude 2026-10-14 (cola del lote 71, subagente Sonnet + revisión): la fila de L421 (otros ingresos de transferencias, 60.000) no la trajo la extracción; con ella el resultado cierra: 1.180.270,79 - 2.213.233,40 + 60.000 - 1.116,45 - 1.000 = -975.079,06 (L427)
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2025 (gr-superleague, gr-superleague2): puede haber jugado otra división).
+```
+
 ## 2024
 
 ### Ingresos
@@ -147,4 +194,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Kifisia/Kifisia_notes_2024-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### kifisia-gr-notes-2025-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
