@@ -455,6 +455,10 @@ Mitigaciones:
  PRESIDENTES      (Versión 552) data/gestiones/<país>.js tiene una gestión confirmada que cubre el cierre ─► si no, caso `gestion` en la
                   cola (no frena; lo contesta el subagente con nombre, desde, hasta y fuente; trae como pista el firmante del .md) ─►
                   "descartar" = club sin presidente persona (SAF, sociedad anónima), no se vuelve a preguntar
+                  Las tandas: `node tools/gestiones-tanda.mjs --armar [--escribir]` cierra los casos ya cubiertos y arma
+                  `Admin/gestiones-por-pais/tanda-<fecha>/` (un lote por club, un subagente por lote); `--validar <carpeta>`; `--cargar
+                  <carpeta> [--escribir]` suma las confirmadas a data/gestiones (misma gestión = mismo corto y mismo desde), publica y
+                  contesta los casos cubiertos (to-do 232 b). Solo tandas armadas por --armar (tanda.json).
  PERÍODO CORTO    menos de 12 meses ─► la columna del año anterior sin importes (primer ejercicio de una sociedad nueva) → se carga
                   como el año con publicNote (Volos 2019, Kifisia 2022; Admin/CONVENCIONES-DATOS.md) ─► con importes → frena (parcial)
  ETIQUETA REPETIDA la misma etiqueta (mismo lado) bajo dos renglones de categoría conocida y distinta (PAOK "Αποσβέσεις" en fútbol y en
