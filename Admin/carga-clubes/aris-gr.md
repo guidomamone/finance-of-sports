@@ -41,6 +41,19 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2019: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2019-06-30","sourceId":"aris-gr-fs-notes-elp-2019-06-30"}
 ```
 
+## Perímetro
+
+_auditoría de lo que decidió A2 (perimetro-senales.mjs --auditar-a2, subagente Sonnet revisado por Claude, 2026-10-14; to-do 227):_
+
+```text
+Los 7 documentos coinciden con lo decidido: 2019 y 2021 individuales (anexos ΕΛΠ: notes_ELP_2019 L1596-1600, la sociedad no pertenece a un
+grupo; notes_ELP_2021 L1159, eximida de consolidar por Ν.4308/2014 arts. 31 y 33), 2022-2025 consolidados (formato UEFA art. 47, incluye a
+la controlada ARIS EMPORIKI: art47_2022 L158, L429, L660-662; FS_2023 L98, L478; FS_2024 L179, L476; FS_2025 L178, L461).
+Peso de la controlada (inferencia, ningún documento da las dos cifras): la columna 2020/21 del consolidado 2022 (7.157.356, L441) es el
+turnover individual ΕΛΠ 2021 (6.862.349,83) más 295.006, la línea "Εμπορικά έσοδα" (L438): ~4% de los ingresos; en el resultado 2020/21,
+-992.465 consolidado contra -1.011.020 individual (~2%). La serie mezcla perímetros con poca distorsión; cada año lleva el suyo.
+```
+
 ## Gestiones
 
 _investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-14; to-do 231:_
