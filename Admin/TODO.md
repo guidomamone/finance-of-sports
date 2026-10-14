@@ -93,15 +93,6 @@ ni en el comentario de ningún archivo de código.
        MIL MILLONES de tokens de entrada, la IA barata que ya usa la etapa 7), así no hace falta griego ni ningún otro idioma: a Jev se le
        pasan las filas del balance y elige cuál es caja y cuáles son deuda financiera; la compuerta es la misma de hoy (el número tiene que
        estar impreso en esa línea). Medir con `caja-deuda.mjs --medir` sobre los años ya cargados, errores con confianza alta primero.
-    w) `caja-deuda.mjs` lee la PRIMERA cifra de la fila aunque el balance traiga columnas de grupo y de sociedad en la misma tabla:
-       Olympiacos (perímetro individual) "| Ταμειακά διαθέσιμα | 24 | Όμιλος año | Όμιλος anterior | Εταιρεία año | Εταιρεία anterior |"
-       publicó la caja del grupo en 2022-2025 (16.552.985 contra 16.455.274 de la sociedad en 2022), y la compuerta la confirmó porque el
-       documento vecino tiene la misma estructura. Se corrigió con ajustes `caja` de la columna Εταιρεία (los 10 años). Escalón: cuando el
-       encabezado de la tabla nombra los dos perímetros (Όμιλος / Εταιρεία, Group / Company, Consolidado / Individual), leer las columnas
-       del perímetro del club (el mismo criterio que usa localizar para el estado de resultados). La deuda de Olympiacos sigue vacía.
-       Hoy el perímetro en `caja-deuda.mjs` es POR PÁGINA (L331, "PERÍMETRO DE CADA PÁGINA DEL BALANCE"), no por columna. Medir con
-       `node tools/caja-deuda.mjs --medir` (todos los clubes: tiene que dar idéntico; la base del 2026-10-14 es caja 132 iguales / 3
-       distintos, deuda 50 / 7) y con los 10 ajustes `caja` de Olympiacos como respuesta esperada.
     z) "Diferencia de redondeo" DENTRO de una nota se pierde: `verificar.mjs` (L1049) la agrega como hoja sin página y sin categoría, y
        `cargar.mjs` la deja como "sin categoría" (aviso, no se carga). AEK 2024: tres filas de 1 euro (Κόστος πωλήσεων, Αμοιβές
        ποδοσφαιρικού, Απομείωση παγίων). Conocido, sin daño hoy (el tie-out tolera la unidad); el redondeo de los TOTALES sí se carga

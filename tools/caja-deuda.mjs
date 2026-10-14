@@ -223,9 +223,36 @@ function renglonDeTexto(t) {
 }
 
 // Las filas de la transcripción: etiqueta + cifras (tablas markdown y renglones de texto), con su página y su línea.
+// (to-do 232 w) COLUMNAS DE CADA PERÍMETRO EN UNA MISMA TABLA. Olympiacos (perímetro individual) imprime el balance con el grupo y la sociedad
+// lado a lado: "| Ενεργητικό | Σημ. | Όμιλος |  | Εταιρεία |  |" y la fila "| Ταμειακά διαθέσιμα | 24 | 16.552.985,49 | 9.109.940,66 |
+// 16.455.274,23 | 9.028.002,56 |" (2022, L309): se leía la primera cifra (la del grupo) y los 10 años tuvieron que ir por ajuste `caja` a mano.
+// El ENCABEZADO de la tabla (las filas antes del primer separador "| --- |") nombra un perímetro por columna; cada uno abarca su columna y las
+// vacías de su derecha. Solo si nombra LOS DOS: devuelve, por línea del bloque, Map(columna -> 'consolidado' | 'individual').
+const PER_CONSOLIDADO_RE = /^(?:ομιλοσ|group|the group|consolidated|consolidado|consolidata|consolidato|konzern|gruppo|groupe|grupo)$/;
+const PER_INDIVIDUAL_RE = /^(?:εταιρεια|company|the company|separate|parent|parent company|individual|controladora|gesellschaft|societa|societe|sociedad|empresa)$/;
+function columnasDePerimetro(L) {
+  const celdasDe = (l) => l.trim().replace(/^\||\|$/g, '').split('|').map((c) => c.replace(/\*\*/g, '').trim());
+  const res = new Map();
+  for (let a = 0; a < L.length;) {
+    if (!L[a].trim().startsWith('|')) { a++; continue; }
+    let b = a; while (b < L.length && L[b].trim().startsWith('|')) b++;
+    const rs = L.slice(a, b).map(celdasDe);
+    const sep = rs.findIndex((r) => r.every((x) => !x || /^:?-{2,}:?$/.test(x)));
+    const mapa = new Map();
+    for (const r of rs.slice(0, Math.max(0, sep))) {
+      let actual = null;
+      r.forEach((c, j) => { const n = normalizar(c); if (PER_CONSOLIDADO_RE.test(n)) actual = 'consolidado'; else if (PER_INDIVIDUAL_RE.test(n)) actual = 'individual'; else if (c) actual = null; if (actual && j > 0) mapa.set(j, actual); });
+    }
+    const vals = new Set(mapa.values());
+    if (vals.has('consolidado') && vals.has('individual')) for (let k = a; k < b; k++) res.set(k, mapa);
+    a = b;
+  }
+  return res;
+}
+
 export function filasDelMd(md) {
   const L = md.split('\n'); const filas = []; let pagina = 1; const textoPag = new Map();
-  const notasAntes = columnasDeNotas(L); const notasPunto = columnasDeNotasConPunto(L); const notasForma = columnasConFormaDeNota(L);
+  const notasAntes = columnasDeNotas(L); const notasPunto = columnasDeNotasConPunto(L); const notasForma = columnasConFormaDeNota(L); const colsPer = columnasDePerimetro(L);
   for (let i = 0; i < L.length; i++) {
     const l = L[i]; const m = l.match(PAG_RE); if (m) { pagina = Number(m[1]); continue; }
     textoPag.set(pagina, (textoPag.get(pagina) || '') + '\n' + l);
@@ -296,7 +323,11 @@ export function filasDelMd(md) {
     // (to-do 228) el número de nota de la fila (la celda de la columna de notas, "6.15") y lo que dice su nota.
     const celdaNota = ix0 && (colPunto ?? colForma) != null ? (l.trim().replace(/^\||\|$/g, '').split('|')[colPunto ?? colForma] || '').replace(/\*\*/g, '').trim() : null;
     const nota = celdaNota && /^\d{1,2}(?:\.\d{1,2}){1,3}$/.test(celdaNota) ? notaDeFila(L, celdaNota) : null;
-    filas.push({ linea: i + 1, pagina, etiqueta, cd, codigo, norm: normalizar(sinCodigo), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums, ...(lecturaB && lecturaB.valor !== nums[0] ? { lecturaB } : {}), ...(nota ? { nota } : {}) });
+    // (to-do 232 w) con columnas de perímetro: las cifras de cada uno, por separado. UNA compuerta: las cifras de la fila que caen en columnas
+    // de perímetro se reparten en dos grupos del mismo largo (lo demás, la nota, no cuenta). conPerimetro() elige la del ajuste `perimetro`.
+    let porPerimetro = null; const mp = ix0 ? colsPer.get(i) : null;
+    if (mp) { const g = { consolidado: [], individual: [] }; ix0.forEach((k, q) => { const per = mp.get(k); const v = parseNumber(cr0[q]); if (per && v !== null) g[per].push(Math.abs(v)); }); if (g.consolidado.length && g.consolidado.length === g.individual.length) porPerimetro = g; }
+    filas.push({ linea: i + 1, pagina, etiqueta, cd, codigo, norm: normalizar(sinCodigo), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums, ...(lecturaB && lecturaB.valor !== nums[0] ? { lecturaB } : {}), ...(nota ? { nota } : {}), ...(porPerimetro ? { porPerimetro } : {}) });
     }
   }
   // Páginas del balance: título o total del activo/pasivo, y sin el título del flujo de efectivo / cambios en el patrimonio.
@@ -690,8 +721,11 @@ const aniosDe = (d, S) => Object.entries(d.fiscalYearMeta || {}).map(([y, m]) =>
 // (Versión 454) con ajuste `perimetro` (del documento o del club) y páginas de balance de ese perímetro en el .md, las filas del balance del
 // OTRO perímetro dejan de contar como balance (para todos los escalones y para los precedentes). Sin ajuste, o si el .md no marca ese
 // perímetro en ninguna página, como antes.
-const conPerimetro = (filas, md) => {
+const conPerimetro = (filas0, md) => {
   const aj = ajustePerimetroDe(md.replace(/\.md$/i, '.pdf'))?.valor;
+  // (to-do 232 w) una fila con las cifras de los dos perímetros en columnas: se queda con las del perímetro del club (sin la lectura B, que
+  // era sobre la fila entera).
+  const filas = aj ? filas0.map((f) => (f.porPerimetro?.[aj] ? { ...f, valor: f.porPerimetro[aj][0], cifras: f.porPerimetro[aj], lecturaB: undefined, perimetroColumna: aj } : f)) : filas0;
   if (!aj || !filas.some((f) => f.balance && f.perimetro === aj)) return filas;
   // Si el .md trae LOS DOS perímetros, solo cuentan las páginas MARCADAS con el del ajuste: las de balance sin marca (resúmenes del balance
   // dentro del informe de gestión, Juventus 2021-22 págs. 19-20 y 36-37, con las cifras consolidadas) también quedan afuera; si no, la
