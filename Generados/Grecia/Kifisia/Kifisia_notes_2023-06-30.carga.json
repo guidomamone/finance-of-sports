@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.pdf",
- "generado": "2026-10-14T05:33:26.177Z",
+ "generado": "2026-10-14T06:03:21.764Z",
  "frena": [
   {
    "etapa": "club",
@@ -9,18 +9,6 @@
   {
    "etapa": "club",
    "motivo": "carpetas-clubes.mjs dice kifisia-gr y quien.mjs --quien dice kifisia"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Παροχές σε εργαζόμενους\" -> wages_squad 0.6; \"Αποσβέσεις\" -> depreciation 0.55; \"ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΤΡΙΤΩΝ\" -> admin_general_expense 0.55; \"ΠΑΡΟΧΕΣ ΤΡΙΤΩΝ\" -> admin_general_expense 0.5; \"ΛΟΙΠΑ ΕΚΤΑΚΤΑ & ΑΝΟΡΓ.ΕΞΟΔΑ\" -> exceptional_items 0.75"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   },
   {
    "etapa": "reintento",
@@ -84,9 +72,9 @@
     "amountNative": -0.54265,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Αποσβέσεις",
@@ -94,9 +82,9 @@
     "amountNative": -0.009344,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΤΡΙΤΩΝ",
@@ -104,9 +92,9 @@
     "amountNative": -0.093384,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "ΠΑΡΟΧΕΣ ΤΡΙΤΩΝ",
@@ -114,9 +102,9 @@
     "amountNative": -0.122472,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "ΦΟΡΟΙ - ΤΕΛΗ",
@@ -144,9 +132,9 @@
     "amountNative": -0.002383,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -178,7 +166,7 @@
   "source": {
    "id": "kifisia-gr-notes-2023-06-30",
    "clubId": "kifisia-gr",
-   "title": "Kifisia — Kifisia_notes_2023-06-30 (ejercicio 2023)",
+   "title": "Kifisia - Athlitiki Enosis P.A.E. — Kifisia_notes_2023-06-30 (ejercicio 2023)",
    "type": "official_balance_sheet",
    "reliability": "primary",
    "note": "Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
@@ -274,11 +262,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 0.54265,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Nómina total de la PAE (sueldos y cargas, coincide con ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΠΡΟΣΩΠΙΚΟΥ de la nota 12) sin separar plantel de administración: wages_squad, igual que Volos Παροχές σε εργαζόμενους y AEL Αμοιβές και έξοδα προσωπικού. [Kifisia_notes_2023-06-30.md L486: Παροχές σε εργαζόμενους (542.650,46) = ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΠΡΟΣΩΠΙΚΟΥ de la nota 12]",
    "destino": "expense",
    "amountNative": -0.54265
   },
@@ -290,11 +278,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 0.009344,
    "cat": "depreciation",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Depreciación de bienes tangibles: la nota 6.1 la abre por terreno/edificio/equipo (nota de movimientos de tangibles) y el club no adquirió jugadores, así que no hay amortización de pases. depreciation, igual que AEL (aceptado por Guido). [Kifisia_notes_2023-06-30.md L487: Αποσβέσεις (9.343,64)]",
    "destino": "expense",
    "amountNative": -0.009344
   },
@@ -306,11 +294,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημίες\")",
    "signoFijo": 0.093384,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Honorarios y gastos de terceros sin desglose: admin_general_expense, mismo criterio que AEL Αμοιβές και έξοδα τρίτων (aceptado por Guido) y Asteras. [Kifisia_notes_2023-06-30.md L1017: ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΤΡΙΤΩΝ (nota 12)]",
    "destino": "expense",
    "amountNative": -0.093384
   },
@@ -322,11 +310,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημίες\")",
    "signoFijo": 0.122472,
    "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Servicios de terceros (suministros, servicios) sin desglose: admin_general_expense, igual que AEL y Asteras Παροχές τρίτων (aceptado por Guido, Asteras 2019). [Kifisia_notes_2023-06-30.md L1018: ΠΑΡΟΧΕΣ ΤΡΙΤΩΝ (nota 12)]",
    "destino": "expense",
    "amountNative": -0.122472
   },
@@ -368,11 +356,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημίες\")",
    "signoFijo": 0.002383,
    "cat": "exceptional_items",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Gastos extraordinarios e inorgánicos: exceptional_items, precedente Asteras 2019 Λοιπά έκτακτα έξοδα (aceptado). [Kifisia_notes_2023-06-30.md L1023: ΛΟΙΠΑ ΕΚΤΑΚΤΑ & ΑΝΟΡΓ.ΕΞΟΔΑ (2.382,88)]",
    "destino": "expense",
    "amountNative": -0.002383
   },
@@ -492,7 +480,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 6,
+  "motivos": 3,
   "lineasIngreso": 4,
   "lineasGasto": 7,
   "metaFilas": 2,

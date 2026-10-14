@@ -32,3 +32,5 @@ Ninguna. Cobertura completa desde la constitución de la entidad — el club es 
 Super League para tener ejercicios anteriores a buscar.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2022 desde `Clubes/Grecia/Kifisia/Kifisia_notes_2022-06-30.pdf` (sourceId `kifisia-gr-notes-2022-06-30`).

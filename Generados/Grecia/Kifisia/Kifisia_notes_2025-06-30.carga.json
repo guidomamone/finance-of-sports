@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.pdf",
- "generado": "2026-10-14T05:33:26.475Z",
+ "generado": "2026-10-14T06:03:21.925Z",
  "frena": [
   {
    "etapa": "club",
@@ -9,18 +9,6 @@
   {
    "etapa": "club",
    "motivo": "carpetas-clubes.mjs dice kifisia-gr y quien.mjs --quien dice kifisia"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρ\" -> other_income 0.75; \"λοιπά έσοδα /έξοδα μεταγραφών\" -> player_sales 0.55; \"Κόστος πωλήσεων /υλικών\" -> other_expenses 0.75; \"Κοινωνικές επιβαρύνσεις (εργοδοτικές εισ\" -> wages_squad 0.78; \"Παρεπόμενες παροχές\" -> wages_squad 0.72"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -88,9 +76,9 @@
     "amountNative": 0.244238,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Άλλα λειτουργικά έσοδα",
@@ -108,9 +96,9 @@
     "amountNative": 0.06,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -120,9 +108,9 @@
     "amountNative": -0.006609,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Αμοιβές έμμισθου προσωπικού (μικτά ποσά)",
@@ -140,9 +128,9 @@
     "amountNative": -0.125079,
     "disclosureLevel": "aggregated",
     "_pag": 26,
-    "_escalon": 2,
-    "_conf": 0.78,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Παρεπόμενες παροχές",
@@ -150,9 +138,9 @@
     "amountNative": -0.03,
     "disclosureLevel": "aggregated",
     "_pag": 26,
-    "_escalon": 2,
-    "_conf": 0.72,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Απόσβεση και απομείωση ενσώματων παγίων στοιχείων ενεργητικού",
@@ -224,7 +212,7 @@
   "source": {
    "id": "kifisia-gr-notes-2025-06-30",
    "clubId": "kifisia-gr",
-   "title": "Kifisia — Kifisia_notes_2025-06-30 (ejercicio 2025)",
+   "title": "Kifisia - Athlitiki Enosis P.A.E. — Kifisia_notes_2025-06-30 (ejercicio 2025)",
    "type": "official_balance_sheet",
    "reliability": "primary",
    "note": "Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
@@ -356,11 +344,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.244238,
    "cat": "other_income",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Subsidio del organismo nacional de fútbol o del gobierno, no premio ni TV: other_income. Precedente AEK Athens 2023 y 2025 (misma etiqueta, aceptado) y las filas griegas de Επιχορηγήσεις. [Kifisia_notes_2025-06-30.md L408: Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση | 244.238,42]",
    "destino": "revenue",
    "amountNative": 0.244238
   },
@@ -387,11 +375,11 @@
    "origen": "verificacion (ajuste manual)",
    "signoFijo": 0.06,
    "cat": "player_sales",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): El propio informe de gestión (L220) dice que son ingresos por transferencias de futbolistas por 60.000, y L420 (ganancia/pérdida por disposición) está en 0: player_sales. Va en la sección Εγγραφές ποδοσφαιριστών del estado, fuera del total de ingresos (1.180.270,79); el total del informe (L216), 1.240.270,79, lo incluye. [Kifisia_notes_2025-06-30.md L421: λοιπά έσοδα /έξοδα μεταγραφών | 60.000,00; L220: \"έσοδα από μεταγραφές ποδοσφαιριστών ποσού 60.000,00 ευρώ\"]",
    "destino": "revenue",
    "amountNative": 0.06
   },
@@ -403,11 +391,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.006609,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Costo de materiales (nota 12 L957), no el costo de todo el fútbol (los sueldos y terceros van aparte): other_expenses, precedente exacto AEK y Panathinaikos Κόστος πωλήσεων / υλικών (no lump, a diferencia del Κόστος πωλήσεων por función de AEL/Levadiakos). [Kifisia_notes_2025-06-30.md L412: Κόστος πωλήσεων /υλικών | 6.609,03]",
    "destino": "expense",
    "amountNative": -0.006609
   },
@@ -434,11 +422,11 @@
    "origen": "verificacion (nota que desglosa \"Δαπάνες παροχών προς εργαζόμενους (ποδοσφαιριστών και λοιπών εργαζομένων)\")",
    "signoFijo": 0.125079,
    "cat": "wages_squad",
-   "conf": 0.78,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Cargas sociales: van con el sueldo, nunca categoría propia (skill sección 1); wages_squad. Precedente Panserraikos y Volos. [Kifisia_notes_2025-06-30.md L994: Κοινωνικές επιβαρύνσεις (εργοδοτικές εισφορές) | 125.079,40 (nota 17, abre Δαπάνες παροχών προς εργαζόμενους 956.995,64 de L958)]",
    "destino": "expense",
    "amountNative": -0.125079
   },
@@ -450,11 +438,11 @@
    "origen": "verificacion (nota que desglosa \"Δαπάνες παροχών προς εργαζόμενους (ποδοσφαιριστών και λοιπών εργαζομένων)\")",
    "signoFijo": 0.03,
    "cat": "wages_squad",
-   "conf": 0.72,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Beneficios accesorios al personal, parte de la nota de beneficios a empleados (suma 801.916,24+125.079,40+30.000 = 956.995,64): wages_squad con el resto de la nómina. [Kifisia_notes_2025-06-30.md L996: Παρεπόμενες παροχές | 30.000,00 (nota 17, forma parte del total 956.995,64)]",
    "destino": "expense",
    "amountNative": -0.03
   },
@@ -628,7 +616,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
+  "motivos": 2,
   "lineasIngreso": 8,
   "lineasGasto": 8,
   "metaFilas": 2,
