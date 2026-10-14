@@ -88,6 +88,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024): Comercial / Sponsors, Televisión, Premios por competencias
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 2 (compuerta: documento anterior): "Δάνεια" pág. 9 + "Τραπεζικά δάνεια" pág. 9 + "Βραχυπρόθεσμο μέρος μακροπρόθεσμων δανείων" pág. 9; cash escalón 2 (compuerta: documento anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 8
+```
+
 ### Liga
 
 ```text
@@ -128,6 +132,10 @@ Generados/Grecia/Atromitos/Atromitos_FS_2024-06-30.categorias.json (escalón de 
 ```text
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 9 + "Τραπεζικά δάνεια" pág. 9 + "Βραχυπρόθεσμο μέρος μακροπρόθεσμων δανείων" pág. 9; cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 8
 ```
 
 ### Liga
@@ -173,6 +181,10 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 8 + "Τραπεζικά δάνεια" pág. 8 + "Βραχυπρόθεσμο μέρος μακροπρόθεσμων δανείων" pág. 8; cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7
+```
+
 ### Liga
 
 ```text
@@ -213,6 +225,10 @@ Generados/Grecia/Atromitos/Atromitos_FS_2022-06-30.categorias.json (escalón de 
 ```text
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 8 + "Τραπεζικά δάνεια" pág. 8 + "Βραχυπρόθεσμο μέρος μακροπρόθεσμων δανείων" pág. 8; cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7
 ```
 
 ### Liga
@@ -257,6 +273,10 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 8 + "Τραπεζικά δάνεια" pág. 8; cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7
+```
+
 ### Liga
 
 ```text
@@ -297,6 +317,10 @@ Generados/Grecia/Atromitos/Atromitos_notes_2020-06-30.categorias.json (escalón 
 ```text
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 8 + "Τραπεζικά δάνεια" pág. 8; cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7
 ```
 
 ### Liga
@@ -340,6 +364,10 @@ Generados/Grecia/Atromitos/Atromitos_FS_2019-06-30.categorias.json (escalón de 
 ```text
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 9 + "Τραπεζικά δάνεια" pág. 9; cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 8
 ```
 
 ### Liga

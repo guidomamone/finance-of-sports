@@ -317,7 +317,7 @@ const olympiacosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Έξοδα ποδοσφαιρικού τμήματος', lado:'expense', importe:2.160603, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:2.14963,
     officialTotalRevenue:72.874652, officialTotalExpenses:79.439512, officialPAT:-8.669249,
   },
   2017: {
@@ -335,7 +335,7 @@ const olympiacosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Έξοδα ποδοσφαιρικού τμήματος', lado:'expense', importe:2.369267, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:1.65159,
     officialTotalRevenue:78.84317, officialTotalExpenses:81.680409, officialPAT:-1.143244,
   },
   2018: {
@@ -353,7 +353,7 @@ const olympiacosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Έξοδα ποδοσφαιρικού τμήματος', lado:'expense', importe:2.233096, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:4.946224,
     officialTotalRevenue:83.355529, officialTotalExpenses:84.814061, officialPAT:-8.035094,
   },
   2020: {
@@ -371,7 +371,7 @@ const olympiacosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Έξοδα ποδοσφαιρικού τμήματος', lado:'expense', importe:1.616227, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:9.856505,
     officialTotalRevenue:82.455128, officialTotalExpenses:74.532757, officialPAT:2.730384,
   },
   2022: {
@@ -389,7 +389,7 @@ const olympiacosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Έξοδα ποδοσφαιρικού τμήματος', lado:'expense', importe:2.212968, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:16.552985,
+    grossDebt:null, cash:16.455274,
     officialTotalRevenue:66.767951, officialTotalExpenses:79.104794, officialPAT:-10.872817,
   },
   2024: {
@@ -407,7 +407,7 @@ const olympiacosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Έξοδα ποδοσφαιρικού τμήματος', lado:'expense', importe:3.328292, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:19.656661,
+    grossDebt:null, cash:19.623731,
     officialTotalRevenue:67.199889, officialTotalExpenses:95.349628, officialPAT:-29.44371,
   },
   2025: {
@@ -425,7 +425,7 @@ const olympiacosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Έξοδα ποδοσφαιρικού τμήματος', lado:'expense', importe:3.100562, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:7.649641,
+    grossDebt:null, cash:7.559117,
     officialTotalRevenue:105.5449, officialTotalExpenses:101.214979, officialPAT:2.444729,
   },
   2019: {
@@ -443,7 +443,7 @@ const olympiacosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Έξοδα ποδοσφαιρικού τμήματος', lado:'expense', importe:2.075481, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:3.123061,
     officialTotalRevenue:61.041351, officialTotalExpenses:65.583839, officialPAT:-2.163231,
   },
   2021: {
@@ -461,7 +461,7 @@ const olympiacosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Έξοδα ποδοσφαιρικού τμήματος', lado:'expense', importe:1.635039, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:9.028003,
     officialTotalRevenue:81.410639, officialTotalExpenses:73.764878, officialPAT:4.228104,
   },
   2023: {
@@ -479,7 +479,7 @@ const olympiacosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Έξοδα ποδοσφαιρικού τμήματος', lado:'expense', importe:2.87206, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:9.366977,
+    grossDebt:null, cash:9.303114,
     officialTotalRevenue:51.101124, officialTotalExpenses:79.34409, officialPAT:-22.635895,
   },
 };

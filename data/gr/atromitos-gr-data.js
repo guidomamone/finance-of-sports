@@ -156,7 +156,7 @@ const atromitosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:5.233558, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría \'Fútbol profesional (sin desglosar por la fuente)\'.'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2.86172, cash:0.037404,
     officialTotalRevenue:3.763073, officialTotalExpenses:5.576322, officialPAT:-1.948985,
   },
   2020: {
@@ -174,7 +174,7 @@ const atromitosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:5.065443, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2020-06-30.md: Κόστος πωλήσεων 5.065.443 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría \'Fútbol profesional (sin desglosar por la fuente)\'.'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1.252979, cash:0.275174,
     officialTotalRevenue:4.112661, officialTotalExpenses:5.397464, officialPAT:-1.471737,
   },
   2021: {
@@ -192,7 +192,7 @@ const atromitosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:5.66824, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría \'Fútbol profesional (sin desglosar por la fuente)\'.'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1.780686, cash:0.120113,
     officialTotalRevenue:3.739776, officialTotalExpenses:5.929399, officialPAT:-2.277513,
   },
   2022: {
@@ -210,7 +210,7 @@ const atromitosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:6.766095, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_FS_2022-06-30.md: Κόστος πωλήσεων 6.766.094,58 (visto en 2023 L243 como comparativo; estado de resultados por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría \'Fútbol profesional (sin desglosar por la fuente)\'.'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:5.435877, cash:0.049776,
     officialTotalRevenue:4.323011, officialTotalExpenses:7.162324, officialPAT:-2.986765,
   },
   2023: {
@@ -227,7 +227,7 @@ const atromitosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:6.612663, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría \'Fútbol profesional (sin desglosar por la fuente)\'.'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:6.915224, cash:0.04637,
     officialTotalRevenue:4.972875, officialTotalExpenses:7.272031, officialPAT:-2.661063,
   },
   2024: {
@@ -244,7 +244,7 @@ const atromitosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:6.619201, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría \'Fútbol profesional (sin desglosar por la fuente)\'.'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:7.950943, cash:0.028118,
     officialTotalRevenue:4.830076, officialTotalExpenses:7.31119, officialPAT:-3.131251,
   },
   2025: {
@@ -263,7 +263,7 @@ const atromitosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:6.283402, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:6.312663, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría \'Fútbol profesional (sin desglosar por la fuente)\'.'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:5.525265, cash:0.013885,
     officialTotalRevenue:8.079741, officialTotalExpenses:6.965137, officialPAT:0.093541,
   },
 };

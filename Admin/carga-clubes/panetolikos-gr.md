@@ -215,6 +215,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Estadio, Venta de Jugadores
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 2 (compuerta: año anterior): "Δάνεια" pág. 19 + "Τραπεζικά δάνεια" pág. 19
+```
+
 ### Liga
 
 ```text

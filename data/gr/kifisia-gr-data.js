@@ -67,7 +67,7 @@ const kifisiagrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:3.012039, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.037523,
     officialTotalRevenue:4.830808, officialTotalExpenses:4.024961, officialPAT:0.791242,
   },
   2025: {
@@ -81,7 +81,7 @@ const kifisiagrFiscalYearMeta = {
       {label:'Χρηματοοικονομικά έσοδα / (έξοδα)', value:-0.001116},
       {label:'Φορολογικά έσοδα / (δαπάνες)', value:-0.001},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.017209,
     officialTotalRevenue:1.240271, officialTotalExpenses:2.213233, officialPAT:-0.975079,
   },
   2023: {
@@ -95,7 +95,7 @@ const kifisiagrFiscalYearMeta = {
       {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.000434},
       {label:'Φόροι εισοδήματος', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.044708,
     officialTotalRevenue:0.838352, officialTotalExpenses:1.08432, officialPAT:-0.246402,
   },
 };

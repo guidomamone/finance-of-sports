@@ -91,6 +91,10 @@ Generados/Grecia/Kifisia/Kifisia_notes_2025-06-30.categorias.json (escalón de c
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 10
+```
+
 ### Liga
 
 ```text
@@ -135,6 +139,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2025): Comercial / Sponsors, Estadio, Televisión
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
+```
+
 ### Liga
 
 ```text
@@ -174,6 +182,10 @@ Generados/Grecia/Kifisia/Kifisia_notes_2023-06-30.categorias.json (escalón de c
 ```text
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): categoria = broadcasting. Claude 2026-10-14 (lote 75 resuelto sin API, pedido de Guido): la nota de ingresos abre 'Λοιπά συνήθη έσοδα' (42.500,00, L483) en una sola fila, 'Τηλεοπτικά δικαιώματα' 42.500,00 (L1004)
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 12
 ```
 
 ### Liga

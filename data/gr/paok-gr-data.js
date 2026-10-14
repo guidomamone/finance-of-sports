@@ -298,7 +298,7 @@ const paokgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:33.922723, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:2.986246,
+    grossDebt:8.9, cash:2.986246,
     officialTotalRevenue:46.679287, officialTotalExpenses:51.784655, officialPAT:-5.277826,
   },
   2020: {
@@ -318,7 +318,7 @@ const paokgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:17.768593, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος', lado:'expense', importe:43.188601, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:4.668372,
+    grossDebt:8.9, cash:4.668372,
     officialTotalRevenue:25.205029, officialTotalExpenses:51.976862, officialPAT:-26.904651,
   },
   2021: {
@@ -337,7 +337,7 @@ const paokgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:38.661362, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:2.357038,
+    grossDebt:0, cash:2.357038,
     officialTotalRevenue:52.889098, officialTotalExpenses:52.19925, officialPAT:-3.764593,
   },
   2022: {
@@ -356,7 +356,7 @@ const paokgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:32.627236, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:1.002627,
+    grossDebt:8.9, cash:1.002627,
     officialTotalRevenue:47.939685, officialTotalExpenses:57.539053, officialPAT:-13.439141,
   },
   2023: {

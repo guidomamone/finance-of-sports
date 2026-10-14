@@ -107,7 +107,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 11
+tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-14): Claude 2026-10-14: perímetro individual (ajuste del club) = columna Εταιρεία del balance; caja-deuda.mjs leía la primera cifra, la del grupo (Όμιλος) — to-do 232 w
 ```
 
 ### Liga
@@ -171,7 +171,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 11
+tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-14): Claude 2026-10-14: perímetro individual (ajuste del club) = columna Εταιρεία del balance; caja-deuda.mjs leía la primera cifra, la del grupo (Όμιλος) — to-do 232 w
 ```
 
 ### Liga
@@ -234,7 +234,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 11
+tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-14): Claude 2026-10-14: perímetro individual (ajuste del club) = columna Εταιρεία del balance; caja-deuda.mjs leía la primera cifra, la del grupo (Όμιλος) — to-do 232 w
 ```
 
 ### Liga
@@ -295,7 +295,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 11
+tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-14): Claude 2026-10-14: perímetro individual (ajuste del club) = columna Εταιρεία del balance; caja-deuda.mjs leía la primera cifra, la del grupo (Όμιλος) — to-do 232 w
 ```
 
 ### Liga
@@ -356,6 +356,10 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-14): Claude 2026-10-14: perímetro individual (ajuste del club) = columna Εταιρεία del balance; caja-deuda.mjs leía la primera cifra, la del grupo (Όμιλος) — to-do 232 w
+```
+
 ### Liga
 
 ```text
@@ -410,6 +414,10 @@ Generados/Grecia/Olympiacos/PAE_Olympiacos_FS_2020-06-30.categorias.json (escal�
 ```text
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-14): Claude 2026-10-14: perímetro individual (ajuste del club) = columna Εταιρεία del balance; caja-deuda.mjs leía la primera cifra, la del grupo (Όμιλος) — to-do 232 w
 ```
 
 ### Liga
@@ -467,6 +475,10 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-14): Claude 2026-10-14: perímetro individual (ajuste del club) = columna Εταιρεία del balance; caja-deuda.mjs leía la primera cifra, la del grupo (Όμιλος) — to-do 232 w
+```
+
 ### Liga
 
 ```text
@@ -520,6 +532,10 @@ Generados/Grecia/Olympiacos/PAE_Olympiacos_FS_2018-06-30.categorias.json (escal�
 ```text
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-14): Claude 2026-10-14: perímetro individual (ajuste del club) = columna Εταιρεία del balance; caja-deuda.mjs leía la primera cifra, la del grupo (Όμιλος) — to-do 232 w
 ```
 
 ### Liga
@@ -576,6 +592,10 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-14): Claude 2026-10-14: perímetro individual (ajuste del club) = columna Εταιρεία del balance; caja-deuda.mjs leía la primera cifra, la del grupo (Όμιλος) — to-do 232 w
+```
+
 ### Liga
 
 ```text
@@ -629,6 +649,10 @@ Generados/Grecia/Olympiacos/PAE_Olympiacos_Chrimatooikonomikes_katastaseis_2016-
 ```text
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-14): Claude 2026-10-14: perímetro individual (ajuste del club) = columna Εταιρεία del balance; caja-deuda.mjs leía la primera cifra, la del grupo (Όμιλος) — to-do 232 w
 ```
 
 ### Liga

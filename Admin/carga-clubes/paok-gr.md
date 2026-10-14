@@ -316,6 +316,10 @@ tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por pr
 tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 14
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 0 (compuerta: documento siguiente): "Δάνεια" pág. 15
+```
+
 ### Liga
 
 ```text
@@ -387,6 +391,10 @@ tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por pr
 tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 15
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 0 (compuerta: documento anterior): "Δάνεια" pág. 15
+```
+
 ### Liga
 
 ```text
@@ -431,6 +439,10 @@ tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por pr
 
 ```text
 tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 15
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 0 (compuerta: documento siguiente): "Δάνεια" pág. 16
 ```
 
 ### Liga
@@ -489,6 +501,10 @@ tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por pr
 
 ```text
 tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 14
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 0 (compuerta: documento siguiente): "Δάνεια" pág. 15
 ```
 
 ### Liga
