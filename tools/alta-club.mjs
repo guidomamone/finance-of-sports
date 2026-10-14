@@ -1759,11 +1759,25 @@ async function modoTodos() {
   const solo = flagVal('--solo');
   if (solo) carpetas = carpetas.filter((c) => `${c.pais}/${c.carpeta}`.includes(solo));
   const previo = leerRegistro();
+  // SIN DOCUMENTO QUE SIRVA (to-do 232 a). Athens Kallithea (su único documento es el balance del municipio, descartado) y Catania
+  // (su único documento está en una de las dos listas) salían "listo-para-alta". Escalón antes de la huella, con UNA compuerta: TODOS los .md de la carpeta
+  // están en Admin/registros/documentos-descartados.txt o documentos-parciales.txt (la misma lectura que cargar-lote.mjs, 232 j). Si
+  // pasa, la carpeta no se analiza y queda `faltan-datos` con la lista (no se borra: un parcial espera el otro tramo). Una carpeta con
+  // ALGÚN documento en esas listas (Atromitos, 1 de 24) no cambia. La huella guardada lleva el prefijo `sin-doc-util:` para que, si un
+  // documento sale de la lista, la corrida siguiente no la dé por "sin cambios" y la analice.
+  const leerLineas = (f) => (existsSync(resolve(ROOT, f)) ? readFileSync(resolve(ROOT, f), 'utf8').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')) : []);
+  const fueraDeCarga = new Set([...leerLineas('Admin/registros/documentos-descartados.txt'), ...leerLineas('Admin/registros/documentos-parciales.txt')].map((d) => d.replace(/\.(pdf|md)$/i, '')));
   const nuevas = []; const tareas = []; let sinCambio = 0;
   for (const c of carpetas) {
     const k = `Clubes/${c.pais}/${c.carpeta}/`;
     const p = previo.get(k);
-    const { huella } = huellaCarpeta(c.pais, c.carpeta, mdsDeCarpeta(c.pais, c.carpeta), null);
+    const mds = mdsDeCarpeta(c.pais, c.carpeta);
+    const { huella, detalle: entradas } = huellaCarpeta(c.pais, c.carpeta, mds, null);
+    if (mds.length && mds.every((m) => fueraDeCarga.has(m.replace(/\.md$/i, '')))) {
+      if (p && p.huella === `sin-doc-util:${huella}` && !FORZAR) { sinCambio++; continue; }
+      nuevas.push({ carpeta: k, pais: c.pais, club: c.carpeta, fecha: new Date().toISOString(), huella: `sin-doc-util:${huella}`, entradas, clubId: null, estado: 'faltan-datos', documento: null, detalle: `todos sus documentos están descartados o son parciales (Admin/registros/documentos-descartados.txt / documentos-parciales.txt): ${mds.join('; ')}`, preguntas: [], pendientes: [], resueltas: [], claude: null });
+      continue;
+    }
     // Sin cambios de huella: la línea sigue valiendo. Solo se rehace si se pide Claude y a esa carpeta
     // todavía le quedan preguntas de documento sin preguntar.
     const faltaClaude = CLAUDE && p && (p.preguntas || []).some((q) => q.clase === 'documento' && !q.claude) || (CLAUDE && p && (p.pendientes || []).some((q) => q.campo === 'name') && !p.claude);

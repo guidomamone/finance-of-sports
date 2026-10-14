@@ -23,11 +23,6 @@ ni en el comentario de ningún archivo de código.
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
-    a) `alta-club.mjs` no mira `Admin/registros/documentos-descartados.txt`: `--todos` da a `athenskallithea-gr` como "listo para alta"
-       aunque su único documento (el balance del municipio de Kallithea) está descartado. Un club cuyos documentos están todos descartados
-       no tendría que figurar como alta.
-       Mismo arreglo que el 232 j en `cargar-lote.mjs` (leer `documentos-descartados.txt` y `documentos-parciales.txt` con `leerLineas`):
-       en `alta-club.mjs --todos`, una carpeta cuyos .md son todos de documentos de esas listas queda fuera del registro de altas.
     b) Gestiones de un club nuevo: cada año frena con un caso "cargar · gestion" y la tanda de subagentes se arma a mano
        (`Admin/gestiones-por-pais/tanda-2026-10-14/lote-N.json` con clubId y cierres). Un script que arme los `lote-N.json` desde los casos
        `gestion` pendientes de la cola, y que cargue el `resultado-N.json` validado y conteste esos casos, ahorra el armado en cada país.
