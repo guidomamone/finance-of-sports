@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.pdf",
  "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.md",
- "generado": "2026-10-14T05:54:38.006Z",
+ "generado": "2026-10-14T06:15:23.617Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "kifisia-gr",
  "year": 2023,
  "escala": {
   "valor": "unidades",
@@ -11,7 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.pdf",
+   "campo": "categoria",
+   "valor": "broadcasting",
+   "linea": null,
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "motivo": "Claude 2026-10-14 (lote 75 resuelto sin API, pedido de Guido): la nota de ingresos abre 'Λοιπά συνήθη έσοδα' (42.500,00, L483) en una sola fila, 'Τηλεοπτικά δικαιώματα' 42.500,00 (L1004)",
+   "evidencia": "Kifisia_notes_2023-06-30.md L483, L1004",
+   "autor": "Claude",
+   "fecha": "2026-10-14"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -48,14 +60,14 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "escalón \"nota exacta en la lectura 5\": \"Κύκλος εργασιών (καθαρός)\" (L482) se abre en las 2 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 5\": \"Λοιπά έξοδα και ζημίες\" (L488) se abre en las 5 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Kifisia_notes_2025-06-30.pdf"
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en Kifisia_notes_2025-06-30.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

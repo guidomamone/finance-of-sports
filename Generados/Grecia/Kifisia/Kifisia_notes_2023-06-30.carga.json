@@ -1,15 +1,7 @@
 {
  "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.pdf",
- "generado": "2026-10-14T06:03:21.764Z",
+ "generado": "2026-10-14T06:12:03.417Z",
  "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (kifisia-gr)"
-  },
-  {
-   "etapa": "club",
-   "motivo": "carpetas-clubes.mjs dice kifisia-gr y quien.mjs --quien dice kifisia"
-  },
   {
    "etapa": "reintento",
    "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
@@ -480,7 +472,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 4,
   "lineasGasto": 7,
   "metaFilas": 2,

@@ -131,10 +131,55 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2025): Comercial / Sponsors, Estadio, Televisión
+```
+
 ### Liga
 
 ```text
 tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2023–24 Super League Greece" (tools/club-league-reference/gr.json), coincidencia única por palabras "A.E. Kifisia" = "Kifisia".
+```
+
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Kifisia/Kifisia_notes_2023-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Έσοδα εισιτηρίων | pág. 28, Jev 1 |
+| 2 | Χορηγίες και διαφήμιση | pág. 28, Jev 1 |
+| 3 | Λοιπά συνήθη έσοδα | pág. 14, precedente |
+| 4 | Λοιπά έσοδα και κέρδη | pág. 14, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Παροχές σε εργαζόμενους | pág. 14, precedente |
+| 2 | Αποσβέσεις | pág. 14, precedente |
+| 3 | ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΤΡΙΤΩΝ | pág. 28, precedente |
+| 4 | ΠΑΡΟΧΕΣ ΤΡΙΤΩΝ | pág. 28, precedente |
+| 5 | ΦΟΡΟΙ - ΤΕΛΗ | pág. 28, Jev 0.98 |
+| 6 | ΔΙΑΦΟΡΑ ΕΞΟΔΑ | pág. 28, Jev 0.97 |
+| 7 | ΛΟΙΠΑ ΕΚΤΑΚΤΑ & ΑΝΟΡΓ.ΕΞΟΔΑ | pág. 28, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): categoria = broadcasting. Claude 2026-10-14 (lote 75 resuelto sin API, pedido de Guido): la nota de ingresos abre 'Λοιπά συνήθη έσοδα' (42.500,00, L483) en una sola fila, 'Τηλεοπτικά δικαιώματα' 42.500,00 (L1004)
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2023 (gr-superleague, gr-superleague2): puede haber jugado otra división).
 ```
 
 ## 2022
@@ -158,4 +203,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### kifisia-gr-notes-2023-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

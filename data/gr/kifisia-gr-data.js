@@ -14,6 +14,12 @@ const kifisiagrRevenueLinesByYear = {
     { rawLabel:'Άλλα λειτουργικά έσοδα', normalizedCategory:'other_income', amountNative:0.002643, disclosureLevel:'aggregated' },
     { rawLabel:'λοιπά έσοδα /έξοδα μεταγραφών', normalizedCategory:'player_sales', amountNative:0.06, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Έσοδα εισιτηρίων', normalizedCategory:'matchday_competition', amountNative:0.034558, disclosureLevel:'aggregated' },
+    { rawLabel:'Χορηγίες και διαφήμιση', normalizedCategory:'sponsorship_commercial', amountNative:0.575492, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'broadcasting', amountNative:0.0425, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.185802, disclosureLevel:'aggregated' },
+  ],
 };
 const kifisiagrExpenseLinesByYear = {
   2024: [
@@ -35,9 +41,19 @@ const kifisiagrExpenseLinesByYear = {
     { rawLabel:'Λοιπά λειτουργικά έξοδα', normalizedCategory:'other_expenses', amountNative:-1.20541, disclosureLevel:'aggregated' },
     { rawLabel:'Απόσβεση εγγραφών παικτών και απομείωση εγγραφών παικτών', normalizedCategory:'player_amortisation', amountNative:0, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Παροχές σε εργαζόμενους', normalizedCategory:'wages_squad', amountNative:-0.54265, disclosureLevel:'aggregated' },
+    { rawLabel:'Αποσβέσεις', normalizedCategory:'depreciation', amountNative:-0.009344, disclosureLevel:'aggregated' },
+    { rawLabel:'ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΤΡΙΤΩΝ', normalizedCategory:'admin_general_expense', amountNative:-0.093384, disclosureLevel:'aggregated' },
+    { rawLabel:'ΠΑΡΟΧΕΣ ΤΡΙΤΩΝ', normalizedCategory:'admin_general_expense', amountNative:-0.122472, disclosureLevel:'aggregated' },
+    { rawLabel:'ΦΟΡΟΙ - ΤΕΛΗ', normalizedCategory:'admin_general_expense', amountNative:-0.017135, disclosureLevel:'aggregated' },
+    { rawLabel:'ΔΙΑΦΟΡΑ ΕΞΟΔΑ', normalizedCategory:'other_expenses', amountNative:-0.296953, disclosureLevel:'aggregated' },
+    { rawLabel:'ΛΟΙΠΑ ΕΚΤΑΚΤΑ & ΑΝΟΡΓ.ΕΞΟΔΑ', normalizedCategory:'exceptional_items', amountNative:-0.002383, disclosureLevel:'aggregated' },
+  ],
 };
 const kifisiagrFiscalYearMeta = {
   2024: {
+    incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' } },
     currency:'EUR', fxRef:'EUR@2024-06-30',
     sourceId:'kifisia-gr-notes-2024-06-30',
     reportType:'official_balance_sheet',
@@ -68,6 +84,20 @@ const kifisiagrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:1.240271, officialTotalExpenses:2.213233, officialPAT:-0.975079,
   },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'kifisia-gr-notes-2023-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.000434, tax:0,
+    extraRows: [
+      {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.000434},
+      {label:'Φόροι εισοδήματος', value:0},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.838352, officialTotalExpenses:1.08432, officialPAT:-0.246402,
+  },
 };
 const kifisiagrPresupuestoOverlayByYear = {};
 
@@ -92,6 +122,11 @@ Object.assign(sources, {
   'kifisia-gr-notes-2025-06-30': {
     id:'kifisia-gr-notes-2025-06-30', clubId:'kifisia-gr',
     title:'Kifisia - Athlitiki Enosis P.A.E. — Kifisia_notes_2025-06-30 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'kifisia-gr-notes-2023-06-30': {
+    id:'kifisia-gr-notes-2023-06-30', clubId:'kifisia-gr',
+    title:'Kifisia - Athlitiki Enosis P.A.E. — Kifisia_notes_2023-06-30 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

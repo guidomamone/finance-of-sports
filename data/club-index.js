@@ -123,7 +123,7 @@ window.CLUB_INDEX = {
   "juvestabia-it": {"n":"Juve Stabia","c":"IT","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "kashimaantlers": {"n":"Kashima Antlers","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "kawasakifrontale": {"n":"Kawasaki Frontale","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
-  "kifisia-gr": {"n":"Kifisia","c":"GR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
+  "kifisia-gr": {"n":"Kifisia","c":"GR","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "koln-de": {"n":"1. FC Köln","c":"DE","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "krasnodar-ru": {"n":"Krasnodar","c":"RU","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "kryliasovetovsamara-ru": {"n":"Krylia Sovetov Samara","c":"RU","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
