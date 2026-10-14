@@ -42,3 +42,5 @@ confirmados como `PDF document` real, tamaños entre 165 KB y 2,3 MB.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2019 desde `Clubes/Grecia/Aris/Aris_FS_notes_ELP_2019-06-30.pdf` (sourceId `aris-gr-fs-notes-elp-2019-06-30`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2021 desde `Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.pdf` (sourceId `aris-gr-fs-notes-elp-2021-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2023 desde `Clubes/Grecia/Aris/Aris_FS_2023-06-30.pdf` (sourceId `aris-gr-fs-2023-06-30`).

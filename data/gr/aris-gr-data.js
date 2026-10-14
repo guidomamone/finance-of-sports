@@ -10,6 +10,15 @@ const arisgrRevenueLinesByYear = {
     { rawLabel:'Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων (Πωλήσεις Ποδοσφαιριστών)', normalizedCategory:'player_sales', amountNative:1.07127, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.682348, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Έσοδα από εισιτήρια', normalizedCategory:'matchday_competition', amountNative:1.742726, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα χορηγιών και διαφημίσεων', normalizedCategory:'sponsorship_commercial', amountNative:2.420877, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα δικαιωμάτων μεταδόσεων', normalizedCategory:'broadcasting', amountNative:3.2, disclosureLevel:'aggregated' },
+    { rawLabel:'Εμπορικά έσοδα', normalizedCategory:'sponsorship_commercial', amountNative:1.224047, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα από UEFA αλληλεγγύη και χρηματικά έπαθλα', normalizedCategory:'competition_bonus', amountNative:1.167326, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά λειτουργικά έσοδα', normalizedCategory:'other_income', amountNative:2.970337, disclosureLevel:'aggregated' },
+    { rawLabel:'Κέρδος από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)', normalizedCategory:'player_sales', amountNative:2.466, disclosureLevel:'aggregated' },
+  ],
 };
 const arisgrExpenseLinesByYear = {
   2019: [
@@ -27,6 +36,23 @@ const arisgrExpenseLinesByYear = {
     { rawLabel:'Φορολογικά πρόστιμα και προσαυξήσεις', normalizedCategory:'other_expenses', amountNative:-0.077241, disclosureLevel:'aggregated' },
     { rawLabel:'Έκτακτα και ανόργανα έξοδα', normalizedCategory:'exceptional_items', amountNative:-1.271669, disclosureLevel:'aggregated' },
     { rawLabel:'Προβλέψεις για έκτακτους κινδύνους', normalizedCategory:'other_amortisation', amountNative:-1.386906, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Κόστος πωλήσεων / υλικών / μη διανεμηθέντα', normalizedCategory:'other_expenses', amountNative:-0.262718, disclosureLevel:'aggregated' },
+    { rawLabel:'Αμοιβές ποδοσφαιρικού', normalizedCategory:'wages_squad', amountNative:-8.416861, disclosureLevel:'aggregated' },
+    { rawLabel:'Εισφορές ποδοσφαιρικού', normalizedCategory:'wages_squad', amountNative:-0.180345, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπές παροχές ποδοσφαιρικού', normalizedCategory:'wages_squad', amountNative:-0.023528, disclosureLevel:'aggregated' },
+    { rawLabel:'Αμοιβές προσωπικού', normalizedCategory:'admin_general_expense', amountNative:-0.078922, disclosureLevel:'aggregated' },
+    { rawLabel:'Εισφορές & λοιπές παροχές προσωπικού', normalizedCategory:'admin_general_expense', amountNative:-0.127303, disclosureLevel:'aggregated' },
+    { rawLabel:'Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού', normalizedCategory:'depreciation', amountNative:-0.210141, disclosureLevel:'aggregated' },
+    { rawLabel:'Απόσβεση λοιπών άυλων στοιχείων του ενεργητικού (εξαιρούνται οι εγγραφές ποδοσφαιριστών)', normalizedCategory:'other_amortisation', amountNative:-0.012, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα τέλεσης αγώνων', normalizedCategory:'match_organisation_expense', amountNative:-0.53, disclosureLevel:'aggregated' },
+    { rawLabel:'Κόστη χορηγιών και διαφημίσεων', normalizedCategory:'admin_general_expense', amountNative:-0.453405, disclosureLevel:'aggregated' },
+    { rawLabel:'Εμπορικές δαπάνες', normalizedCategory:'admin_general_expense', amountNative:-0.535728, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα εγκαταστάσεων', normalizedCategory:'admin_general_expense', amountNative:-0.736294, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έξοδα ποδοσφαιρικού & Λοιπά λειτουργικά Έξοδα (ταξίδια, ποσοστά Ε.Π.Ο. επί συμβολαίων, παράβολα, λοιπά λειτουργικά, κλπ)', normalizedCategory:'other_expenses', amountNative:-1.39867, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά Λειτουργικά Έξοδα & Προβλέψεις για έκτακτα και ανόργανα έξοδα', normalizedCategory:'other_expenses', amountNative:-1.849292, disclosureLevel:'aggregated' },
+    { rawLabel:'Απόσβεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)', normalizedCategory:'player_amortisation', amountNative:-1.641821, disclosureLevel:'aggregated' },
   ],
 };
 const arisgrFiscalYearMeta = {
@@ -68,6 +94,21 @@ const arisgrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:8.615968, officialTotalExpenses:8.336467, officialPAT:-1.01102,
   },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'aris-gr-fs-2023-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.241882, tax:0,
+    extraRows: [
+      {label:'Χρηματοοικονομικά έξοδα/δαπάνες', value:-0.241873},
+      {label:'Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)', value:-0.000009},
+      {label:'Φορολογικά έσοδα (δαπάνες)', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:15.191313, officialTotalExpenses:16.457028, officialPAT:-1.507598,
+  },
 };
 const arisgrPresupuestoOverlayByYear = {};
 
@@ -92,6 +133,11 @@ Object.assign(sources, {
   'aris-gr-fs-notes-elp-2021-06-30': {
     id:'aris-gr-fs-notes-elp-2021-06-30', clubId:'aris-gr',
     title:'Athlitikos Syllogos Thessalonikis O Aris P.A.E. — Aris_FS_notes_ELP_2021-06-30 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'aris-gr-fs-2023-06-30': {
+    id:'aris-gr-fs-2023-06-30', clubId:'aris-gr',
+    title:'Athlitikos Syllogos Thessalonikis O Aris P.A.E. — Aris_FS_2023-06-30 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

@@ -53,6 +53,58 @@ Duda: Fecha exacta en que Karipidis del Anestis asumió la presidencia: no se en
 Duda: Ejercicio 2022 (30/6/2022) no está en cierres de este lote, pero queda cubierto por Irini Karipidou.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Aris/Aris_FS_2023-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Aris/Aris_FS_2023-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Έσοδα από εισιτήρια | pág. 12, Jev 0.99 |
+| 2 | Έσοδα χορηγιών και διαφημίσεων | pág. 12, Jev 1 |
+| 3 | Έσοδα δικαιωμάτων μεταδόσεων | pág. 12, Jev 1 |
+| 4 | Εμπορικά έσοδα | pág. 12, Jev 1 |
+| 5 | Έσοδα από UEFA αλληλεγγύη και χρηματικά έπαθλα | pág. 12, precedente |
+| 6 | Λοιπά λειτουργικά έσοδα | pág. 12, Jev 0.99 |
+| 7 | Κέρδος από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών) | pág. 12, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κόστος πωλήσεων / υλικών / μη διανεμηθέντα | pág. 12, Claude 0.8 |
+| 2 | Αμοιβές ποδοσφαιρικού | pág. 28, Jev 1 |
+| 3 | Εισφορές ποδοσφαιρικού | pág. 28, Jev 0.99 |
+| 4 | Λοιπές παροχές ποδοσφαιρικού | pág. 28, Jev 0.97 |
+| 5 | Αμοιβές προσωπικού | pág. 28, Jev 0.99 |
+| 6 | Εισφορές & λοιπές παροχές προσωπικού | pág. 28, Jev 0.97 |
+| 7 | Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού | pág. 12, Jev 1 |
+| 8 | Απόσβεση λοιπών άυλων στοιχείων του ενεργητικού (εξαιρούνται οι εγγραφές ποδοσφαιριστών) | pág. 12, Jev 0.92 |
+| 9 | Έξοδα τέλεσης αγώνων | pág. 29, Jev 1 |
+| 10 | Κόστη χορηγιών και διαφημίσεων | pág. 29, precedente |
+| 11 | Εμπορικές δαπάνες | pág. 29, Jev 0.94 |
+| 12 | Έξοδα εγκαταστάσεων | pág. 29, precedente |
+| 13 | Λοιπά έξοδα ποδοσφαιρικού & Λοιπά λειτουργικά Έξοδα (ταξίδια, ποσοστά Ε.Π.Ο. επί συμβολαίων, παράβολα, λοιπά λειτουργικά, κλπ) | pág. 29, precedente |
+| 14 | Λοιπά Λειτουργικά Έξοδα & Προβλέψεις για έκτακτα και ανόργανα έξοδα | pág. 29, precedente |
+| 15 | Απόσβεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών) | pág. 12, Jev 1 |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-14): perimetro = consolidado. perimetro-senales.mjs: el ejercicio 2023-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2022–23 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Aris".
+```
+
 ## 2021
 
 ### Ingresos
@@ -150,4 +202,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aris-gr-fs-2023-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Aris/Aris_FS_2023-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
