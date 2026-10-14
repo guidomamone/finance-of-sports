@@ -80,6 +80,16 @@ const olympiacosgrRevenueLinesByYear = {
     { rawLabel:'Αξία πώλησης ποδοσφαιριστών', normalizedCategory:'player_sales', amountNative:21.734948, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έσοδα κατά την πώληση', normalizedCategory:'player_sales', amountNative:1.345, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Χορηγίες και διαφημίσεις', normalizedCategory:'sponsorship_commercial', amountNative:16.708713, disclosureLevel:'aggregated' },
+    { rawLabel:'Δικαιώματα αναμετάδοσης', normalizedCategory:'broadcasting', amountNative:5.375303, disclosureLevel:'aggregated' },
+    { rawLabel:'Εμπορικά', normalizedCategory:'sponsorship_commercial', amountNative:0.607517, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα από UEFA', normalizedCategory:'competition_bonus', amountNative:39.228897, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά λειτουργικά έσοδα', normalizedCategory:'other_income', amountNative:3.147211, disclosureLevel:'aggregated' },
+    { rawLabel:'Αξία πώλησης ποδοσφαιριστών', normalizedCategory:'player_sales', amountNative:21.544414, disclosureLevel:'aggregated' },
+    { rawLabel:'Αναπόσβεστο κόστος ποδοσφαιριστών', normalizedCategory:'player_sales', amountNative:-2.632665, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών', normalizedCategory:'player_sales', amountNative:-2.56875, disclosureLevel:'aggregated' },
+  ],
 };
 const olympiacosgrExpenseLinesByYear = {
   2016: [
@@ -240,6 +250,26 @@ const olympiacosgrExpenseLinesByYear = {
     { rawLabel:'Αναπόσβεστο κόστος ποδοσφαιριστών', normalizedCategory:'player_amortisation', amountNative:-8.949571, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών', normalizedCategory:'other_expenses', amountNative:-1.52, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Μισθοί και δόσεις συμβολαίων', normalizedCategory:'wages_squad', amountNative:-17.268408, disclosureLevel:'aggregated' },
+    { rawLabel:'Εισφορέσκονωνικής ασφάλισης', normalizedCategory:'wages_squad', amountNative:-0.138673, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπές παροχές', normalizedCategory:'wages_squad', amountNative:-9.294223, disclosureLevel:'aggregated' },
+    { rawLabel:'Diferencia de redondeo', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Ημερομίσθια και μισθοί', normalizedCategory:'admin_general_expense', amountNative:-8.401708, disclosureLevel:'aggregated' },
+    { rawLabel:'Εισφορέσκονωνικής ασφάλισης', normalizedCategory:'wages_squad', amountNative:-0.799156, disclosureLevel:'aggregated' },
+    { rawLabel:'Πρόβλεψη αποζημίωσης προσωπικού', normalizedCategory:'admin_general_expense', amountNative:-0.068402, disclosureLevel:'aggregated' },
+    { rawLabel:'Απόσβεση ενσώματων ακινητοποιήσεων', normalizedCategory:'depreciation', amountNative:-0.231382, disclosureLevel:'aggregated' },
+    { rawLabel:'Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων', normalizedCategory:'depreciation', amountNative:-0.487802, disclosureLevel:'aggregated' },
+    { rawLabel:'Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)', normalizedCategory:'other_amortisation', amountNative:-0.026387, disclosureLevel:'aggregated' },
+    { rawLabel:'Απόσβεση δικαιωμάτων ποδοσφαιριστών', normalizedCategory:'player_amortisation', amountNative:-7.812512, disclosureLevel:'aggregated' },
+    { rawLabel:'Απομείωση δικαιωμάτων ποδοσφαιριστών', normalizedCategory:'player_impairment', amountNative:-0.649855, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα αγώνων', normalizedCategory:'match_organisation_expense', amountNative:-1.666076, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα χορηγιών και διαφημίσεων', normalizedCategory:'admin_general_expense', amountNative:-1.104848, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα ακινήτων & εγκαταστάσεων', normalizedCategory:'admin_general_expense', amountNative:-4.466739, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά μη λειτουργικά έξοδα', normalizedCategory:'other_expenses', amountNative:-0.093312, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα ποδοσφαιρικού τμήματος', normalizedCategory:'lump_football_operations_expense', amountNative:-1.635039, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά λειτουργικά έξοδα', normalizedCategory:'other_expenses', amountNative:-19.620355, disclosureLevel:'aggregated' },
+  ],
 };
 const olympiacosgrFiscalYearMeta = {
   2016: {
@@ -386,6 +416,24 @@ const olympiacosgrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:61.041351, officialTotalExpenses:65.583839, officialPAT:-2.163231,
   },
+  2021: {
+    currency:'EUR', fxRef:'EUR@2021-06-30',
+    sourceId:'olympiacos-gr-pae-olympiacos-fs-2021-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.21787, tax:-2.199789,
+    extraRows: [
+      {label:'Χρηματοοικονομικά έσοδα', value:0.50743},
+      {label:'Χρηματοοικονομικά έξοδα', value:-1.7253},
+      {label:'Φόρος εισοδήματος', value:-2.199789},
+    ],
+    sinDesglose: [
+      {renglon:'Έξοδα ποδοσφαιρικού τμήματος', lado:'expense', importe:1.635039, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:81.410639, officialTotalExpenses:73.764878, officialPAT:4.228104,
+  },
 };
 const olympiacosgrPresupuestoOverlayByYear = {};
 
@@ -440,6 +488,11 @@ Object.assign(sources, {
   'olympiacos-gr-pae-olympiacos-fs-2019-06-30': {
     id:'olympiacos-gr-pae-olympiacos-fs-2019-06-30', clubId:'olympiacos-gr',
     title:'Olympiakos Syndesmos Filathlon Peiraios P.A.E. — PAE_Olympiacos_FS_2019-06-30 (ejercicio 2019)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'olympiacos-gr-pae-olympiacos-fs-2021-06-30': {
+    id:'olympiacos-gr-pae-olympiacos-fs-2021-06-30', clubId:'olympiacos-gr',
+    title:'Olympiakos Syndesmos Filathlon Peiraios P.A.E. — PAE_Olympiacos_FS_2021-06-30 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

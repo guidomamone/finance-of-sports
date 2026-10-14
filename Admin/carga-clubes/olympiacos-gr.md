@@ -229,6 +229,64 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2021–22 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Olympiacos".
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2021-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Olympiacos/PAE_Olympiacos_FS_2021-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Χορηγίες και διαφημίσεις | pág. 9, Jev 1 |
+| 2 | Δικαιώματα αναμετάδοσης | pág. 9, Jev 1 |
+| 3 | Εμπορικά | pág. 9, Jev 1 |
+| 4 | Έσοδα από UEFA | pág. 9, precedente |
+| 5 | Λοιπά λειτουργικά έσοδα | pág. 9, Jev 0.99 |
+| 6 | Αξία πώλησης ποδοσφαιριστών | pág. 38, Jev 1 |
+| 7 | Αναπόσβεστο κόστος ποδοσφαιριστών | pág. 38, precedente |
+| 8 | Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών | pág. 38, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Μισθοί και δόσεις συμβολαίων | pág. 36, Jev 1 |
+| 2 | Εισφορέσκονωνικής ασφάλισης | pág. 36, Claude 0.93 |
+| 3 | Λοιπές παροχές | pág. 36, Claude 0.8 |
+| 4 | Diferencia de redondeo | pág. ?, precedente |
+| 5 | Ημερομίσθια και μισθοί | pág. 36, precedente |
+| 6 | Εισφορέσκονωνικής ασφάλισης | pág. 36, Claude 0.93 |
+| 7 | Πρόβλεψη αποζημίωσης προσωπικού | pág. 36, precedente |
+| 8 | Απόσβεση ενσώματων ακινητοποιήσεων | pág. 37, Jev 1 |
+| 9 | Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων | pág. 37, precedente |
+| 10 | Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών) | pág. 37, precedente |
+| 11 | Απόσβεση δικαιωμάτων ποδοσφαιριστών | pág. 37, Jev 1 |
+| 12 | Απομείωση δικαιωμάτων ποδοσφαιριστών | pág. 37, precedente |
+| 13 | Έξοδα αγώνων | pág. 38, Jev 0.96 |
+| 14 | Έξοδα χορηγιών και διαφημίσεων | pág. 38, precedente |
+| 15 | Έξοδα ακινήτων & εγκαταστάσεων | pág. 38, Jev 0.93 |
+| 16 | Λοιπά μη λειτουργικά έξοδα | pág. 38, Jev 0.96 |
+| 17 | Έξοδα ποδοσφαιρικού τμήματος | pág. 38, Jev 0.94 |
+| 18 | Λοιπά λειτουργικά έξοδα | pág. 38, Claude 0.85 |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): categoria = player_sales. Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): categoria = player_sales. Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2020–21 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Olympiacos".
+```
+
 ## 2020
 
 ### Ingresos
@@ -568,4 +626,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2019-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### olympiacos-gr-pae-olympiacos-fs-2021-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2021-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

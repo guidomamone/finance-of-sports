@@ -119,6 +119,9 @@ window.RANKINGS["gr-superleague"] = {
   2021: {
     leagueSize: null,
     clubs: [
+      { id:"olympiacos-gr", revenue:96.745, reportType:"official_balance_sheet",
+        sourceId:"olympiacos-gr-pae-olympiacos-fs-2021-06-30",
+        mix:[["Comercial / Sponsors",20.578],["Televisión",6.388],["Premios por competencias",46.618],["Venta de Jugadores",19.421],["Otros ingresos",3.74]] },
       { id:"paok-gr", revenue:62.851, reportType:"official_balance_sheet",
         sourceId:"paok-gr-fs-2021-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",45.943],["Otros ingresos",16.908]],
