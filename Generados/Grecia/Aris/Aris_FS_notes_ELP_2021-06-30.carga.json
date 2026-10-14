@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.pdf",
- "generado": "2026-10-14T05:33:24.983Z",
+ "generado": "2026-10-14T06:03:20.816Z",
  "frena": [
   {
    "etapa": "club",
@@ -9,10 +9,6 @@
   {
    "etapa": "club",
    "motivo": "carpetas-clubes.mjs dice aris-gr y quien.mjs --quien dice aris"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Φορολογικά πρόστιμα και προσαυξήσεις\" -> admin_general_expense 0.55; \"Έκτακτα και ανόργανα έξοδα\" -> exceptional_items 0.75; \"Προβλέψεις για έκτακτους κινδύνους\" -> other_amortisation 0.5"
   }
  ],
  "avisos": [
@@ -89,13 +85,13 @@
    },
    {
     "rawLabel": "Φορολογικά πρόστιμα και προσαυξήσεις",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.077241,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Έκτακτα και ανόργανα έξοδα",
@@ -103,9 +99,9 @@
     "amountNative": -1.271669,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Προβλέψεις για έκτακτους κινδύνους",
@@ -113,9 +109,9 @@
     "amountNative": -1.386906,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -165,7 +161,7 @@
   "source": {
    "id": "aris-gr-fs-notes-elp-2021-06-30",
    "clubId": "aris-gr",
-   "title": "Aris — Aris_FS_notes_ELP_2021-06-30 (ejercicio 2021)",
+   "title": "Athlitikos Syllogos Thessalonikis O Aris P.A.E. — Aris_FS_notes_ELP_2021-06-30 (ejercicio 2021)",
    "type": "official_balance_sheet",
    "reliability": "primary",
    "note": "Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
@@ -301,12 +297,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα, προβλέψεις και ζημιές\")",
    "signoFijo": 0.077241,
-   "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Multa tributaria: precedente griego Asteras 2019 con el mismo rótulo -> other_expenses. admin_general_expense es para tributos y tasas ordinarios, no para multas, y además daría una categoría distinta a la misma línea en 2019. [Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md L2169 'Φορολογικά πρόστιμα και προσαυξήσεις | 77.240,66' (nota 10.3 Λοιπά Έξοδα και ζημίες, pág. 39)]",
    "destino": "expense",
    "amountNative": -0.077241
   },
@@ -318,11 +314,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα, προβλέψεις και ζημιές\")",
    "signoFijo": 1.271669,
    "cat": "exceptional_items",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Rubro extraordinario del propio documento: precedente Asteras 'Λοιπά έκτακτα έξοδα' -> exceptional_items. Está dentro de 'Λοιπά Έξοδα και ζημίες', fuera del costo operativo. [Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md L2170 'Έκτακτα και ανόργανα έξοδα | 1.271.669,13' (nota 10.3; en 2020 vale 64.577)]",
    "destino": "expense",
    "amountNative": -1.271669
   },
@@ -334,11 +330,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα, προβλέψεις και ζημιές\")",
    "signoFijo": 1.386906,
    "cat": "other_amortisation",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Provisión (no pago en efectivo): skill §1 manda previsiones a other_amortisation; precedente AEK 'Προβλέψεις για ειδικές υποθέσεις' y Asteras 'Πρόβλεψη για επισφαλείς απαιτήσεις' -> other_amortisation. [Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md L2171 'Προβλέψεις για έκτακτους κινδύνους | 1.386.905,52'; L2346 provisión de €1.080.108 por demandas de ex futbolistas e intermediarios de la antigua ΠΑΕ]",
    "destino": "expense",
    "amountNative": -1.386906
   },
@@ -456,7 +452,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 2,
   "lineasIngreso": 3,
   "lineasGasto": 6,
   "metaFilas": 3,

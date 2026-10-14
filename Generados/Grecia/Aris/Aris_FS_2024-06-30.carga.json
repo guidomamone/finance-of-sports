@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/Aris/Aris_FS_2024-06-30.pdf",
- "generado": "2026-10-14T05:33:24.565Z",
+ "generado": "2026-10-14T06:03:20.522Z",
  "frena": [
   {
    "etapa": "club",
@@ -9,10 +9,6 @@
   {
    "etapa": "club",
    "motivo": "carpetas-clubes.mjs dice aris-gr y quien.mjs --quien dice aris"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "10 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Λοιπό προσωπικό-ημερομίσθια & μισθοί\" -> admin_general_expense 0.75; \"Λοιπό προσωπικό-εισφορές κοινωνικής ασφά\" -> admin_general_expense 0.75; \"Δαπάνες παροχών προς λοιπό προσωπικό\" -> admin_general_expense 0.72; \"Αμοιβές Manager\" -> other_expenses 0.75; \"Αθλητρικό υλικό\" -> other_expenses 0.7"
   }
  ],
  "avisos": [
@@ -172,9 +168,9 @@
     "amountNative": -0.0325,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Λοιπό προσωπικό-εισφορές κοινωνικής ασφάλισης",
@@ -182,9 +178,9 @@
     "amountNative": -0.0051,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Δαπάνες παροχών προς λοιπό προσωπικό",
@@ -192,9 +188,9 @@
     "amountNative": -0.005748,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.72,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού",
@@ -262,9 +258,9 @@
     "amountNative": -0.489843,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Αθλητρικό υλικό",
@@ -272,9 +268,9 @@
     "amountNative": -0.398642,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Δικαστικά έξοδα",
@@ -288,23 +284,23 @@
    },
    {
     "rawLabel": "Παράβολα συμμετοχής σε διοργανώσεις & επικύρωσης συμβολαίων",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.034766,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Ποσοστά προς απόδοση σε φορείς",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.408691,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Πρόστιμα – Προσαυξήσεις ρυθμίσεων",
@@ -312,9 +308,9 @@
     "amountNative": -0.363556,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Ασφάλιστρα ποδοσφαιριστών",
@@ -322,9 +318,9 @@
     "amountNative": -0.037233,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Αμοιβές & παροχές τρίτων",
@@ -332,9 +328,9 @@
     "amountNative": -1.387849,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Λοιποί φόροι & τέλη",
@@ -386,7 +382,7 @@
   "source": {
    "id": "aris-gr-fs-2024-06-30",
    "clubId": "aris-gr",
-   "title": "Aris — Aris_FS_2024-06-30 (ejercicio 2024)",
+   "title": "Athlitikos Syllogos Thessalonikis O Aris P.A.E. — Aris_FS_2024-06-30 (ejercicio 2024)",
    "type": "official_balance_sheet",
    "reliability": "primary",
    "note": "Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Aris/Aris_FS_2024-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
@@ -672,11 +668,11 @@
    "origen": "verificacion (nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\")",
    "signoFijo": 0.0325,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Personal no deportivo (administrativo): sector admin, las cargas y prestaciones van con su sueldo (skill §1). Los tres renglones 'Λοιπό προσωπικό' deben quedar juntos; los del plantel y cuerpo técnico ya están en wages_squad. [Clubes/Grecia/Aris/Aris_FS_2024-06-30.md L1391: 'Λοιπό προσωπικό-ημερομίσθια & μισθοί | -32.500' (nota 9, pág. 28; el .md marca ese bloque como personal 'Διοικητικό και Λοιπό Προσωπικό', L1373)]",
    "destino": "expense",
    "amountNative": -0.0325
   },
@@ -688,11 +684,11 @@
    "origen": "verificacion (nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\")",
    "signoFijo": 0.0051,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Cargas sociales del resto del personal: van con el sueldo de su sector (admin), igual que el renglón anterior. [Clubes/Grecia/Aris/Aris_FS_2024-06-30.md L1392: 'Λοιπό προσωπικό-εισφορές κοινωνικής ασφάλισης | -5.100']",
    "destino": "expense",
    "amountNative": -0.0051
   },
@@ -704,11 +700,11 @@
    "origen": "verificacion (nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\")",
    "signoFijo": 0.005748,
    "cat": "admin_general_expense",
-   "conf": 0.72,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Prestaciones al resto del personal, mismo sector que sus sueldos (admin). Coherente con b50138e y 0b4275e. [Clubes/Grecia/Aris/Aris_FS_2024-06-30.md L1393: 'Δαπάνες παροχών προς λοιπό προσωπικό | -5.748']",
    "destino": "expense",
    "amountNative": -0.005748
   },
@@ -812,11 +808,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα (συμπεριλαμβανομένων των προβλέψεων)\" > desglose de \"Λοιπά Λειτουργικά Έξοδα\")",
    "signoFijo": 0.489843,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): El propio documento dice que es lo pagado a intermediarios/agentes (mismo monto que la nota de Διαμεσολαβητών), comisión de transferencias; no hay categoría propia, va a other_expenses. [Clubes/Grecia/Aris/Aris_FS_2024-06-30.md L1440 'Αμοιβές Manager | -489.843' y L1588 'Αμοιβές Διαμεσολαβητών ... ανήλθαν στο ποσό των € 489.843']",
    "destino": "expense",
    "amountNative": -0.489843
   },
@@ -828,11 +824,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα (συμπεριλαμβανομένων των προβλέψεων)\" > desglose de \"Λοιπά Λειτουργικά Έξοδα\")",
    "signoFijo": 0.398642,
    "cat": "other_expenses",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Material deportivo sin categoría propia: other_expenses por defecto (skill §1). Alternativa admin descartada: no es un gasto de oficina ni de tributos. [Clubes/Grecia/Aris/Aris_FS_2024-06-30.md L1441: 'Αθλητρικό υλικό | -398.642']",
    "destino": "expense",
    "amountNative": -0.398642
   },
@@ -858,12 +854,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα (συμπεριλαμβανομένων των προβλέψεων)\" > desglose de \"Λοιπά Λειτουργικά Έξοδα\")",
    "signoFijo": 0.034766,
-   "cat": "match_organisation_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Son tasas de inscripción a torneos y de ratificación de contratos ante la federación; no son costo de organizar partidos (policía, estadio, árbitros). En 2023 el mismo concepto está dentro de una línea ya decidida como other_expenses (categorias-aprendidas aris-gr 2023); se mantiene ese criterio. [Clubes/Grecia/Aris/Aris_FS_2024-06-30.md L1443 'Παράβολα συμμετοχής σε διοργανώσεις & επικύρωσης συμβολαίων | -34.766'; Aris_FS_2023-06-30.md L926 'Λοιπά έξοδα ποδοσφαιρικού & Λοιπά λειτουργικά Έξοδα (ταξίδια, ποσοστά Ε.Π.Ο. επί συμβολαίων, παράβολα, ...)']",
    "destino": "expense",
    "amountNative": -0.034766
   },
@@ -874,12 +870,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα (συμπεριλαμβανομένων των προβλέψεων)\" > desglose de \"Λοιπά Λειτουργικά Έξοδα\")",
    "signoFijo": 0.408691,
-   "cat": "match_organisation_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Porcentajes a la federación y entes deportivos sobre contratos (cuota del 2023 decidida como other_expenses), no sobre recaudación de partidos. Confianza de la propuesta era 0.5; con el precedente de 2023 va a other_expenses. Podría preguntarse al club el detalle, pero no cambia la categoría. [Clubes/Grecia/Aris/Aris_FS_2024-06-30.md L1444 'Ποσοστά προς απόδοση σε φορείς | -408.691'; Aris_FS_2023-06-30.md L926 'ποσοστά Ε.Π.Ο. επί συμβολαίων']",
    "destino": "expense",
    "amountNative": -0.408691
   },
@@ -891,11 +887,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα (συμπεριλαμβανομένων των προβλέψεων)\" > desglose de \"Λοιπά Λειτουργικά Έξοδα\")",
    "signoFijo": 0.363556,
    "cat": "other_expenses",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Multas y recargos por regularizaciones: other_expenses; precedente griego Asteras 'Φορολογικά πρόστιμα και προσαυξήσεις' -> other_expenses (categorias-aprendidas asterastripolis-gr 2019). [Clubes/Grecia/Aris/Aris_FS_2024-06-30.md L1445 'Πρόστιμα – Προσαυξήσεις ρυθμίσεων | -363.556']",
    "destino": "expense",
    "amountNative": -0.363556
   },
@@ -907,11 +903,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα (συμπεριλαμβανομένων των προβλέψεων)\" > desglose de \"Λοιπά Λειτουργικά Έξοδα\")",
    "signoFijo": 0.037233,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Primas de seguros: skill §1 manda seguros a admin_general_expense. No es salario del plantel (es una prima a aseguradora). [Clubes/Grecia/Aris/Aris_FS_2024-06-30.md L1446 'Ασφάλιστρα ποδοσφαιριστών | -37.233']",
    "destino": "expense",
    "amountNative": -0.037233
   },
@@ -923,11 +919,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα (συμπεριλαμβανομένων των προβλέψεων)\" > desglose de \"Λοιπά Λειτουργικά Έξοδα\")",
    "signoFijo": 1.387849,
    "cat": "admin_general_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Honorarios y servicios de terceros: precedente griego exacto, 'Αμοιβές και έξοδα τρίτων' y 'Παροχές τρίτων' -> admin_general_expense en AEL Larissa y Asteras (categorias-aprendidas). [Clubes/Grecia/Aris/Aris_FS_2024-06-30.md L1447 'Αμοιβές & παροχές τρίτων | -1.387.849']",
    "destino": "expense",
    "amountNative": -1.387849
   },
@@ -1071,7 +1067,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 2,
   "lineasIngreso": 7,
   "lineasGasto": 26,
   "metaFilas": 2,

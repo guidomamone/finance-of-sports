@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/Aris/Aris_FS_2025-06-30.pdf",
- "generado": "2026-10-14T05:33:24.759Z",
+ "generado": "2026-10-14T06:03:20.621Z",
  "frena": [
   {
    "etapa": "club",
@@ -12,10 +12,7 @@
   }
  ],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del documento, 2026-10-14: perimetro-senales.mjs: el ejercicio 2025-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados)",
-  "materialidad: \"Λοιπό προσωπικό-ημερομίσθια & μισθοί\" va como admin_general_expense con 0.75 (las dudas de gastos suman 0.54% de su lado)",
-  "materialidad: \"Λοιπό προσωπικό-εισφορές κοινωνικής ασφάλισης\" va como admin_general_expense con 0.75 (las dudas de gastos suman 0.54% de su lado)",
-  "materialidad: \"Δαπάνες παροχών προς λοιπό προσωπικό\" va como admin_general_expense con 0.72 (las dudas de gastos suman 0.54% de su lado)"
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-14: perimetro-senales.mjs: el ejercicio 2025-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados)"
  ],
  "ejercicio": {
   "clubId": "aris-gr",
@@ -161,9 +158,9 @@
     "amountNative": -0.07835,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": "materialidad",
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.54% (≤ 1%) y esta tiene 0.75"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Λοιπό προσωπικό-εισφορές κοινωνικής ασφάλισης",
@@ -171,9 +168,9 @@
     "amountNative": -0.01077,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": "materialidad",
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.54% (≤ 1%) y esta tiene 0.75"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Δαπάνες παροχών προς λοιπό προσωπικό",
@@ -181,9 +178,9 @@
     "amountNative": -0.011745,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": "materialidad",
-    "_conf": 0.72,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.54% (≤ 1%) y esta tiene 0.72"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού",
@@ -304,7 +301,7 @@
   "source": {
    "id": "aris-gr-fs-2025-06-30",
    "clubId": "aris-gr",
-   "title": "Aris — Aris_FS_2025-06-30 (ejercicio 2025)",
+   "title": "Athlitikos Syllogos Thessalonikis O Aris P.A.E. — Aris_FS_2025-06-30 (ejercicio 2025)",
    "type": "official_balance_sheet",
    "reliability": "primary",
    "note": "Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Aris/Aris_FS_2025-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
@@ -547,11 +544,11 @@
    "origen": "verificacion (nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\")",
    "signoFijo": 0.07835,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.54% (≤ 1%) y esta tiene 0.75",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Personal no deportivo (administrativo): sector admin, las cargas y prestaciones van con su sueldo (skill §1). Los tres renglones 'Λοιπό προσωπικό' deben quedar juntos; los del plantel y cuerpo técnico ya están en wages_squad. [Clubes/Grecia/Aris/Aris_FS_2024-06-30.md L1391: 'Λοιπό προσωπικό-ημερομίσθια & μισθοί | -32.500' (nota 9, pág. 28; el .md marca ese bloque como personal 'Διοικητικό και Λοιπό Προσωπικό', L1373)]",
    "destino": "expense",
    "amountNative": -0.07835
   },
@@ -563,11 +560,11 @@
    "origen": "verificacion (nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\")",
    "signoFijo": 0.01077,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.54% (≤ 1%) y esta tiene 0.75",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Cargas sociales del resto del personal: van con el sueldo de su sector (admin), igual que el renglón anterior. [Clubes/Grecia/Aris/Aris_FS_2024-06-30.md L1392: 'Λοιπό προσωπικό-εισφορές κοινωνικής ασφάλισης | -5.100']",
    "destino": "expense",
    "amountNative": -0.01077
   },
@@ -579,11 +576,11 @@
    "origen": "verificacion (nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\")",
    "signoFijo": 0.011745,
    "cat": "admin_general_expense",
-   "conf": 0.72,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.54% (≤ 1%) y esta tiene 0.72",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Prestaciones al resto del personal, mismo sector que sus sueldos (admin). Coherente con b50138e y 0b4275e. [Clubes/Grecia/Aris/Aris_FS_2024-06-30.md L1393: 'Δαπάνες παροχών προς λοιπό προσωπικό | -5.748']",
    "destino": "expense",
    "amountNative": -0.011745
   },

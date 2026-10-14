@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2019-06-30.pdf",
- "generado": "2026-10-14T05:33:24.860Z",
+ "generado": "2026-10-14T06:03:20.718Z",
  "frena": [
   {
    "etapa": "club",
@@ -9,10 +9,6 @@
   {
    "etapa": "club",
    "motivo": "carpetas-clubes.mjs dice aris-gr y quien.mjs --quien dice aris"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Προσαυξήσεις εισφορών ασφαλιστικών εισφο\" -> other_expenses 0.55; \"Φορολογικά πρόστιμα και προσαυξήσεις προ\" -> exceptional_items 0.45"
   }
  ],
  "avisos": [
@@ -112,19 +108,19 @@
     "amountNative": -0.009993,
     "disclosureLevel": "aggregated",
     "_pag": 34,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Φορολογικά πρόστιμα και προσαυξήσεις προηγούμενων χρήσεων",
-    "normalizedCategory": "exceptional_items",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.002081,
     "disclosureLevel": "aggregated",
     "_pag": 34,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -174,7 +170,7 @@
   "source": {
    "id": "aris-gr-fs-notes-elp-2019-06-30",
    "clubId": "aris-gr",
-   "title": "Aris — Aris_FS_notes_ELP_2019-06-30 (ejercicio 2019)",
+   "title": "Athlitikos Syllogos Thessalonikis O Aris P.A.E. — Aris_FS_notes_ELP_2019-06-30 (ejercicio 2019)",
    "type": "official_balance_sheet",
    "reliability": "primary",
    "note": "Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Aris/Aris_FS_notes_ELP_2019-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
@@ -330,7 +326,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "precedente del país: 1 clubes (Asteras Tripolis), nota:λοιπα εξοδα και ζημιεσ · Asteras 2019: multas fiscales 981,33 -> other_expenses (precedente multas)",
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Multa tributaria: precedente griego Asteras 2019 con el mismo rótulo -> other_expenses. admin_general_expense es para tributos y tasas ordinarios, no para multas, y además daría una categoría distinta a la misma línea en 2019. [Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md L2169 'Φορολογικά πρόστιμα και προσαυξήσεις | 77.240,66' (nota 10.3 Λοιπά Έξοδα και ζημίες, pág. 39)]",
    "destino": "expense",
    "amountNative": -0.032558
   },
@@ -342,11 +338,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")",
    "signoFijo": 0.009993,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Recargos por cotizaciones sociales atrasadas: es un recargo/multa, no un sueldo; other_expenses como las demás multas y recargos. [Clubes/Grecia/Aris/Aris_FS_notes_ELP_2019-06-30.md L1515 'Προσαυξήσεις εισφορών ασφαλιστικών εισφορών | 9.992,91' (nota 10.3 Λοιπά Έξοδα και ζημίες, pág. 34)]",
    "destino": "expense",
    "amountNative": -0.009993
   },
@@ -357,12 +353,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")",
    "signoFijo": 0.002081,
-   "cat": "exceptional_items",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Es la misma multa tributaria de L1514 pero de ejercicios anteriores; por consistencia con Asteras (multas -> other_expenses) y con la fila hermana va a other_expenses. exceptional_items es para previsiones desafectadas, condonaciones y quiebras (skill §1), no para multas. Monto de 2 mil euros: no mueve nada. [Clubes/Grecia/Aris/Aris_FS_notes_ELP_2019-06-30.md L1518 'Φορολογικά πρόστιμα και προσαυξήσεις προηγούμενων χρήσεων | 2.080,85' (nota 10.3, bajo L1514 'Φορολογικά πρόστιμα και προσαυξήσεις | 32.557,96')]",
    "destino": "expense",
    "amountNative": -0.002081
   },
@@ -410,7 +406,7 @@
  },
  "totales": {
   "revSum": 4.243212,
-  "expSum": -4.429898,
+  "expSum": -4.431979,
   "officialTotalRevenue": 4.243212,
   "officialTotalExpenses": 4.431979,
   "officialPAT": -0.217148,
@@ -485,7 +481,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 2,
   "lineasIngreso": 4,
   "lineasGasto": 6,
   "metaFilas": 3,

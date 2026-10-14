@@ -38,3 +38,5 @@ confirmados como `PDF document` real, tamaños entre 165 KB y 2,3 MB.
 - No se investigó la entidad predecesora en liquidación (ΓΕΜΗ 123384606000) por historia anterior.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2019 desde `Clubes/Grecia/Aris/Aris_FS_notes_ELP_2019-06-30.pdf` (sourceId `aris-gr-fs-notes-elp-2019-06-30`).
