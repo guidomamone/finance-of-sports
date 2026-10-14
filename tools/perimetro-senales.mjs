@@ -44,12 +44,25 @@
 // Jev: Admin/api-keys/jev.env con JEV_API_KEY=...; respuestas guardadas en Generados/_cache/jev-perimetro.jsonl (no se paga dos veces).
 // ============================================================================
 import { readFileSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
-import { resolve, dirname } from 'node:path';
+import { resolve, dirname, relative, isAbsolute, sep } from 'node:path';
 import { createHash } from 'node:crypto';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
 const flagVal = (f) => { const i = args.indexOf(f); return i >= 0 ? args[i + 1] : null; };
+// --auditar-a2 y --exportar-a2 escriben en la carpeta que reciben (to-do 232 u): con `--auditar-a2 Clubes/Grecia/Aris` los pedidos
+// quedaron al lado de los PDFs, en lo que se publica. Antes de escribir, la carpeta tiene que estar fuera del repo (scratch) o dentro
+// de una carpeta que netlify.toml borra del deploy (`rm -rf X || true`, la misma lectura que checkDeployInterno() de audit.js; así no
+// hay una segunda lista que mantener). Si no, frena sin escribir nada.
+function carpetaDeTrabajo(flag, ruta) {
+  const dir = resolve(ROOT, ruta); const rel = relative(ROOT, dir);
+  if (rel.startsWith('..') || isAbsolute(rel)) return dir;
+  const toml = existsSync(resolve(ROOT, 'netlify.toml')) ? readFileSync(resolve(ROOT, 'netlify.toml'), 'utf8') : '';
+  const borradas = new Set([...toml.matchAll(/rm -rf ([^\n|]+?)\s*\|\|\s*true/g)].flatMap((m) => m[1].trim().split(/\s+/).map((d) => d.replace(/\/$/, ''))));
+  if (rel && borradas.has(rel.split(sep)[0])) return dir;
+  console.error(`${flag} ${ruta}: esa carpeta se publica en el sitio (netlify.toml no la saca del deploy). Usá una carpeta interna, por ejemplo Admin/mediciones/<nombre>, o una fuera del repo. No se escribió nada.`);
+  process.exit(1);
+}
 const USE_JEV = args.includes('--jev');
 const DETALLE = args.includes('--detalle');
 
@@ -490,7 +503,7 @@ async function main() {
       if (vistos.has(md) || !existsSync(resolve(ROOT, md))) continue; vistos.add(md);
       pedidos.push({ n: pedidos.length + 1, md, decidido: a.valor, ajuste: a.pdf, fecha: a.fecha });
     }
-    const dir = resolve(ROOT, auditarF); mkdirSync(dir, { recursive: true });
+    const dir = carpetaDeTrabajo('--auditar-a2', auditarF); mkdirSync(dir, { recursive: true });
     writeFileSync(resolve(dir, 'instruccion.txt'), `Para cada pedido de pedidos.jsonl: abrí el .md (md) con grep/sed por partes, ubicá el estado de resultados del ejercicio y decidí si es CONSOLIDADO (incluye a la sociedad y a sus controladas) o INDIVIDUAL (la sociedad sola). El pipeline decidió "decidido". Escribí <n>.json con {"perimetro": "consolidado"|"individual"|"no sé", "coincide": true|false, "cita": "línea del .md y qué dice", "explicacion": "una o dos oraciones"}. No edites nada del repositorio.`);
     writeFileSync(resolve(dir, 'pedidos.jsonl'), pedidos.map((p) => JSON.stringify(p)).join('\n') + (pedidos.length ? '\n' : ''));
     console.log(`${pedidos.length} documento(s) decididos por A2 para auditar en ${auditarF}${pedidos.length ? ' (instruccion.txt + pedidos.jsonl)' : ''}.`); return;
@@ -508,7 +521,7 @@ async function main() {
   // Generados/_cache/claude-perimetro.jsonl y la corrida con --jev las toma de ahí. La instrucción (SISTEMA_A2) va en sistema.txt.
   const exportarF = flagVal('--exportar-a2');
   if (exportarF) {
-    const dir = resolve(ROOT, exportarF); mkdirSync(dir, { recursive: true });
+    const dir = carpetaDeTrabajo('--exportar-a2', exportarF); mkdirSync(dir, { recursive: true });
     const { writeFileSync } = await import('node:fs');
     writeFileSync(resolve(dir, 'sistema.txt'), SISTEMA_A2);
     if (!cacheA2) { cacheA2 = new Map(); if (existsSync(CACHE_A2)) for (const l of readFileSync(CACHE_A2, 'utf8').split('\n')) { if (!l.trim()) continue; try { const j = JSON.parse(l); cacheA2.set(j.clave, j); } catch { /* línea rota */ } } }

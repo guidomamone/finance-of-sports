@@ -110,9 +110,6 @@ ni en el comentario de ningún archivo de código.
        MIL MILLONES de tokens de entrada, la IA barata que ya usa la etapa 7), así no hace falta griego ni ningún otro idioma: a Jev se le
        pasan las filas del balance y elige cuál es caja y cuáles son deuda financiera; la compuerta es la misma de hoy (el número tiene que
        estar impreso en esa línea). Medir con `caja-deuda.mjs --medir` sobre los años ya cargados, errores con confianza alta primero.
-    u) `perimetro-senales.mjs --auditar-a2 <carpeta>` escribe `instruccion.txt` y `pedidos.jsonl` EN la carpeta que recibe, y el nombre
-       invita a pasarle la del club: con `Clubes/Grecia/Aris` los dejó al lado de los PDFs, que se publican (se movieron a mano). Que
-       rechace una ruta bajo `Clubes/` o que escriba siempre en una carpeta de trabajo fija (scratch o `Admin/mediciones/`).
     w) `caja-deuda.mjs` lee la PRIMERA cifra de la fila aunque el balance traiga columnas de grupo y de sociedad en la misma tabla:
        Olympiacos (perímetro individual) "| Ταμειακά διαθέσιμα | 24 | Όμιλος año | Όμιλος anterior | Εταιρεία año | Εταιρεία anterior |"
        publicó la caja del grupo en 2022-2025 (16.552.985 contra 16.455.274 de la sociedad en 2022), y la compuerta la confirmó porque el

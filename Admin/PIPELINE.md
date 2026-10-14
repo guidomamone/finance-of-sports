@@ -124,7 +124,9 @@ Mitigaciones:
                   sin API (los contestan subagentes de la sesión y se agregan a la caché)
                   Auditoría a posteriori (to-do 227): los ajustes que escribe la regla del club nombran en su `evidencia` los
                   documentos que decidió A2; `--auditar-a2 <carpeta>` arma un pedido por documento para un subagente (grupo o
-                  sociedad sola, con cita). Se corre después de cada país nuevo
+                  sociedad sola, con cita). Se corre después de cada país nuevo. La carpeta de `--auditar-a2` y la de
+                  `--exportar-a2` tienen que estar fuera del repo o dentro de una que netlify.toml no publica (Admin/mediciones/...);
+                  si no, frenan sin escribir
  PASO B (voto)    C1 consolidado ≥ 5% sobre individual (año o anterior) · C2 crecimientos distintos en ≥ 15 puntos (fusión) ·
                   C3 Jev: ¿una controlada hace negocio del fútbol? ── 2-3 → consolidado · 0 → individual · 1 o sin respuesta → no decide
  CLUB             la regla de Admin/CONVENCIONES-DATOS.md ("qué perímetro se carga cuando la serie cambia"): un ejercicio con un solo
