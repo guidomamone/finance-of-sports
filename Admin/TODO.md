@@ -86,6 +86,31 @@ ni en el comentario de ningún archivo de código.
     j) `cargar-lote.mjs` no mira `documentos-parciales.txt` ni `documentos-descartados.txt`: carga todo lo que tiene `.carga.json` listo en
        la carpeta del club, aunque `lote.mjs` lo haya salteado. Pasó con Kifisia 2022 (marcado parcial antes de la corrida, escrito igual en
        be8e6849b; se sacó a mano). Es un bug que publica datos: cargar-lote tiene que leer las dos listas, igual que lote.mjs.
+    k) Una respuesta "no" de la cola a una duda de importe ("¿se carga X del estado y no Y de la nota?", Olympiacos 2023 caso 446850a)
+       no cambia nada: la verificación siguió con el importe del estado y hubo que agregar un ajuste `fila` a mano. Que esa respuesta
+       aplique sola el importe de la nota (es lo que la pregunta ofrece), con la misma compuerta de cierre.
+    l) Desglose de un renglón NETO del estado: en Olympiacos el estado NIIF imprime solo "Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών" y
+       la nota lo abre en venta bruta menos costos; extraer marcó los costos como `gasto` y la carga los puso como gasto en 2023 y como
+       ingreso negativo en 2021, 2022, 2024 y 2025 (hubo que fijarlo con ajustes `categoria`). Si el renglón que la nota desglosa es de
+       ingreso, sus filas de costo van como ingreso negativo, siempre.
+    m) El chequeo contra el año vecino marca como error un cambio de presentación: Olympiacos 2020 da 82,46 M en su documento (bruto) y
+       74,81 M en la columna anterior del de 2021 (neto); la diferencia son exactamente las filas de costo de la venta (7,65 M). Escalón:
+       si la diferencia es igual a la suma de filas que el otro documento netea, es "presentación distinta", no un NO.
+    n) Un ajuste `fila` que suma una fila fuera del total impreso (Kifisia 2025: 60.000 de transferencias, L421) deja el chequeo del total
+       de ingresos en NO en cada corrida. El ajuste tendría que poder decir "fuera del total impreso" para que ese chequeo lo descuente.
+    o) `alta-club.mjs` no encontró el nombre legal de ninguno de los 6 clubes griegos del lote 71 (puso el de la carpeta): los documentos
+       lo dicen en "Επωνυμία: ..." o en la portada como "ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ <nombre>". Escalón por esas frases, con la cita.
+    p) Color y liga de un club griego nuevo: `lookup-brand-color.js` no tiene la liga griega cacheada y `data/club-leagues` (caché gr.json)
+       solo traía 2023-24 para Kifisia. Cachear las dos ligas griegas (Super League y Super League 2) por temporada con las tools que ya
+       existen (`fetch-brand-color-reference.mjs`, la de ligas) antes del próximo club griego.
+    q) Documentos transcriptos que nunca entran a un lote: Aris 2022 y Atromitos 2017 quedaron afuera de `lote-71.txt` sin que nada avise.
+       Que `lote.mjs` (o `antes-de-localizar.mjs`) avise cuando un club de la lista tiene otros documentos transcriptos sin localizar.
+    r) Una respuesta de perfil (socios, otros deportes) se guarda para todos los años del club, pero los casos ya abiertos de los otros
+       documentos del mismo club siguen abiertos: Olympiacos dejó 18 casos repetidos después de contestar el de 2025. Al responder uno,
+       cerrar los iguales del mismo club.
+    s) Sueldos escondidos en "Αμοιβές τρίτων" (PAOK: 42 M en el cuadro de fútbol contra 9,2 M de costo de personal en la nota 17). Un
+       chequeo de `audit.js` que compare `wages_squad` con el total de la nota de personal y con la cantidad de futbolistas, para que
+       un caso así aparezca solo y no dependa de que un subagente lo note (relacionado con el to-do 229).
 
 130. OTROS DEPORTES Y CLUBES POLIDEPORTIVOS: ¿ENTRAN AL SITIO, Y CON QUÉ ESQUEMA? (Sudamérica y México). Minas Tênis Clube/Náutico,
     Paulistano, Praia Clube y Pinheiros publican un balance que consolida todos los deportes (cuotas,
