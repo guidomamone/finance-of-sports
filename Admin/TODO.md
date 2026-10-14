@@ -47,9 +47,6 @@ ni en el comentario de ningún archivo de código.
          modificado sin commitear desde la sesión del 2026-10-13 (re-verificación con la lectura nueva de verificar.mjs: la nota exacta y la
          'Diferencia de redondeo' de 1 euro). Correr `caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-73.txt --ejecutar --cargar`
          (etapa 7 para las filas nuevas de sus notas), contestar la cola y commitear ese .json con el resultado.
-      6b. Documentos de Grecia transcriptos que no entraron a ningún lote (`node tools/estado.mjs --dir "Clubes/Grecia/<Club>"`, etapa 3
-         "sin localizar"): Aris 2022 (`Aris_FS_audited_art47_2022-06-30`, formato art. 47 ΕΠΟ) y Atromitos 2017 (`Atromitos_audit_2016-17`,
-         solo informe del auditor: ver si trae estados o va a descartados). Armar el lote siguiente con ellos.
       7. Archivar `lote-71.txt`, `lote-73.txt` y `lote-74.txt` en `Admin/Archive/lotes/` y pasar a la letra b) del to-do 165.
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
