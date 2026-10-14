@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2021-06-30.pdf",
  "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2021-06-30.md",
- "generado": "2026-10-14T05:24:00.677Z",
- "estado": "cola",
+ "generado": "2026-10-14T05:54:37.738Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2021,
  "escala": {
@@ -11,11 +11,31 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "53dd950",
-  "7df1188"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2021-06-30.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Αναπόσβεστο κόστος ποδοσφαιριστών",
+   "motivo": "Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)",
+   "evidencia": "estado de resultados, renglón neto de venta de jugadores; nota de la venta",
+   "autor": "Claude",
+   "fecha": "2026-10-14"
+  },
+  {
+   "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2021-06-30.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+   "motivo": "Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)",
+   "evidencia": "estado de resultados, renglón neto de venta de jugadores; nota de la venta",
+   "autor": "Claude",
+   "fecha": "2026-10-14"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",

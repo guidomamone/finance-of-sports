@@ -3,7 +3,7 @@
   "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2018-06-30.pdf",
   "club": "olympiacos",
   "year": 2018,
-  "generatedAt": "2026-10-14T05:24:00.622Z",
+  "generatedAt": "2026-10-14T05:54:37.690Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -74,7 +74,7 @@
       "values": [
         27.199775
       ],
-      "glosa": "Ingresos por traspaso de jugadores / rescisión de contratos"
+      "glosa": "Ingresos por venta de futbolistas / rescisión de contratos"
     },
     {
       "label": "Μισθοί και δόσεις συμβολαίων",
@@ -84,7 +84,7 @@
       "values": [
         18.359229
       ],
-      "glosa": "Sueldos y primas contractuales"
+      "glosa": "Sueldos y pagos aplazados de contratos"
     },
     {
       "label": "Εισφορές κοινωνικής ασφάλισης",
@@ -104,7 +104,7 @@
       "values": [
         1.355758
       ],
-      "glosa": "Otras prestaciones"
+      "glosa": "Otras prestaciones sociales"
     },
     {
       "label": "Ημερομίσθια και μισθοί",
@@ -154,7 +154,7 @@
       "values": [
         0.008891
       ],
-      "glosa": "Amortización de otros activos intangibles (excluidos jugadores)"
+      "glosa": "Amortización de otros activos intangibles (excepto futbolistas)"
     },
     {
       "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών",
@@ -164,7 +164,7 @@
       "values": [
         12.830663
       ],
-      "glosa": "Amortización de derechos federativos de jugadores"
+      "glosa": "Amortización de derechos de futbolistas"
     },
     {
       "label": "Απόομειωση δικαιωμάτων ποδοσφαιριστών",
@@ -174,7 +174,7 @@
       "values": [
         0.819873
       ],
-      "glosa": "Deterioro de valor de derechos federativos de jugadores"
+      "glosa": "Deterioro de valor de derechos de futbolistas"
     },
     {
       "label": "Έξοδα αγώνων",
@@ -224,7 +224,7 @@
       "values": [
         2.233096
       ],
-      "glosa": "Gastos del departamento de fútbol"
+      "glosa": "Gastos de la sección de fútbol"
     },
     {
       "label": "Λοιπά λειτουργικά έξοδα",
@@ -244,7 +244,7 @@
       "values": [
         7.353522
       ],
-      "glosa": "Coste no amortizado de jugadores"
+      "glosa": "Coste pendiente de amortización de futbolistas"
     },
     {
       "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
@@ -254,7 +254,7 @@
       "values": [
         0.34
       ],
-      "glosa": "Otros costes directos de traspaso de jugadores"
+      "glosa": "Otros costes directos de traspaso de futbolistas"
     }
   ]
 }

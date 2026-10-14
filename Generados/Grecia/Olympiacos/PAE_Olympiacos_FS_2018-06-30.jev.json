@@ -1,0 +1,237 @@
+{
+ "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2018-06-30.md",
+ "generatedAt": "2026-10-14T06:03:01.831Z",
+ "rubrosHuella": "714178055a0cf41221ddbe3e0365f598db146ef8",
+ "rubros": [
+  {
+   "label": "Έσοδα από εισιτήρια",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Χορηγίες και διαφημίσεις",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Δικαιώματα αναμετάδοσης",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Εμπορικά",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα από UEFA",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά λειτουργικά έσοδα",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα από πωλήσεις ποδοσφαιριστών / λύσεις συμβολαίων",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Μισθοί και δόσεις συμβολαίων",
+   "lado": "expense",
+   "page": 37,
+   "section": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Εισφορές κοινωνικής ασφάλισης",
+   "lado": "expense",
+   "page": 37,
+   "section": "nota que desglosa \"Δαπάνη παροχών λοιπών εργαζομένων\"",
+   "choice": "wages_squad",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπές παροχές",
+   "lado": "expense",
+   "page": 37,
+   "section": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\"",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Ημερομίσθια και μισθοί",
+   "lado": "expense",
+   "page": 37,
+   "section": "nota que desglosa \"Δαπάνη παροχών λοιπών εργαζομένων\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Πρόβλεψη αποζημίωσης προσωπικού",
+   "lado": "expense",
+   "page": 37,
+   "section": "nota que desglosa \"Δαπάνη παροχών λοιπών εργαζομένων\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Απόσβεση ενσώματων περιουσιακών στοιχείων",
+   "lado": "expense",
+   "page": 37,
+   "section": "nota que desglosa \"Απόσβεση και απομείωση λοιπών ενσώματων & ασώματων ακινητοποιήσεων\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)",
+   "lado": "expense",
+   "page": 37,
+   "section": "nota que desglosa \"Απόσβεση και απομείωση λοιπών ενσώματων & ασώματων ακινητοποιήσεων\"",
+   "choice": "other_amortisation",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 38,
+   "section": "nota que desglosa \"Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα αγώνων",
+   "lado": "expense",
+   "page": 38,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα χορηγιών και διαφημίσεων",
+   "lado": "expense",
+   "page": 38,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+   "lado": "expense",
+   "page": 38,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Έκτακτα έξοδα",
+   "lado": "expense",
+   "page": 38,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "exceptional_items",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα ποδοσφαιρικού τμήματος",
+   "lado": "expense",
+   "page": 38,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά λειτουργικά έξοδα",
+   "lado": "expense",
+   "page": 38,
+   "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Αναπόσβεστο κόστος ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 39,
+   "section": "nota que desglosa \"Δαπάνες πώλησης/λύσεις συμβολαίων ποδοσφαιριστών\"",
+   "choice": "player_amortisation",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 39,
+   "section": "nota que desglosa \"Δαπάνες πώλησης/λύσεις συμβολαίων ποδοσφαιριστών\"",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Απόομειωση δικαιωμάτων ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 38,
+   "section": "nota que desglosa \"Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση\"",
+   "choice": "player_impairment",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "player_impairment",
+     0.77
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1104
+  }
+ ]
+}

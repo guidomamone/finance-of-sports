@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.pdf",
  "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.md",
- "generado": "2026-10-14T05:24:00.583Z",
- "estado": "cola",
+ "generado": "2026-10-14T05:54:37.639Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2023,
  "escala": {
@@ -11,12 +11,31 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "bd0d900",
-  "a2ec50a",
-  "446850a"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Αναπόσβεστο κόστος Ποδοσφαιριστών",
+   "motivo": "Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)",
+   "evidencia": "estado de resultados, renglón neto de venta de jugadores; nota de la venta",
+   "autor": "Claude",
+   "fecha": "2026-10-14"
+  },
+  {
+   "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+   "motivo": "Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)",
+   "evidencia": "estado de resultados, renglón neto de venta de jugadores; nota de la venta",
+   "autor": "Claude",
+   "fecha": "2026-10-14"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -55,6 +74,7 @@
  "notas": [
   "la nota de \"Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Λοιπά λειτουργικά έξοδα\" no suma el renglón (20.069966 contra 20.096966, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Λοιπά λειτουργικά έξοδα\"): aceptar, en PAE_Olympiacos_FS_2022-06-30.pdf",
   "duda de extraer que no afecta la carga: L236 tiene paréntesis y separadores dañados por OCR ('0,00)', '(59.740.86)'), además sin nota."
  ],
  "reintentar": [

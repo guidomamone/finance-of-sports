@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.pdf",
  "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.md",
- "generado": "2026-10-14T05:24:00.698Z",
- "estado": "cola",
+ "generado": "2026-10-14T05:54:37.756Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2022,
  "escala": {
@@ -11,11 +11,31 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "e1668aa",
-  "86aa047"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Αναπόσβεστο κόστος ποδοσφαιριστών",
+   "motivo": "Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)",
+   "evidencia": "estado de resultados, renglón neto de venta de jugadores; nota de la venta",
+   "autor": "Claude",
+   "fecha": "2026-10-14"
+  },
+  {
+   "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+   "motivo": "Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)",
+   "evidencia": "estado de resultados, renglón neto de venta de jugadores; nota de la venta",
+   "autor": "Claude",
+   "fecha": "2026-10-14"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -62,7 +82,9 @@
   "escalón \"nota exacta en la lectura 5\": \"Δαπάνη παροχών λοιπών Εργαζομένων\" (L230) se abre en las 3 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 5\": \"Λοιπά λειτουργικά έξοδα\" (L234) se abre en las 6 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en PAE_Olympiacos_FS_2022-06-30.pdf",
   "duda de localizar que no afecta la carga: Las cifras 2020-2021 fueron reexpresadas por el cambio de ΔΛΠ 19 (b24-b26).",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων\"): aceptar, en PAE_Olympiacos_FS_2022-06-30.pdf",
   "duda de extraer que no afecta la carga: Diferencia de redondeo de 0,01 entre estado y nota."
  ],
  "reintentar": [

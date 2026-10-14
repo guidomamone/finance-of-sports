@@ -223,6 +223,7 @@ const clubs = {
   'aekathens-gr': { id:'aekathens-gr', name:'Athlitiki Enosis Konstantinoupoleos P.A.E.', displayName:'AEK Athens', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FCD20F' },
   'panserraikos-gr': { id:'panserraikos-gr', name:'Mousikogymnastikos Syllogos Panserraikos P.A.E.', displayName:'Panserraikos', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FF0000' },
   'volosnfc-gr': { id:'volosnfc-gr', name:'Volos N.P.S. P.A.E.', displayName:'Volos NFC', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  'olympiacos-gr': { id:'olympiacos-gr', name:'Olympiakos Syndesmos Filathlon Peiraios P.A.E.', displayName:'Olympiacos', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E21E26' },
 };
 
 // Source: de dónde sale cada número; `reliability` es lo que distingue dato oficial, de prensa o placeholder.

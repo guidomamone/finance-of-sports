@@ -1,15 +1,7 @@
 {
  "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.pdf",
- "generado": "2026-10-14T05:33:23.890Z",
+ "generado": "2026-10-14T06:03:20.043Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (olympiacos-gr)"
@@ -19,14 +11,325 @@
    "motivo": "carpetas-clubes.mjs dice olympiacos-gr y quien.mjs --quien dice olympiacos"
   },
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-14: Claude 2026-10-14 (cola del perímetro, lote 71): cada documento trae el estado con columnas Όμιλος (grupo) y Εταιρεία (sociedad). Paso B: C1 no (el grupo factura a lo sumo 2,3% más: 2016 60.374.148 contra 59.006.651; 2025 67.218.916 contra 67.062.049), C2 no (crecen igual: 2025 +27,8% los dos), C3 sí (la controlada Θρύλος Α.Ε., 83,58%, hace merchandising). 1 de 3 = cola; criterio de OB: la sociedad tiene la actividad del fútbol y el grupo agrega poco -> individual (como AEK y Asteras))"
+  "perímetro: individual (ajuste manual del club, 2026-10-14: Claude 2026-10-14 (cola del perímetro, lote 71): cada documento trae el estado con columnas Όμιλος (grupo) y Εταιρεία (sociedad). Paso B: C1 no (el grupo factura a lo sumo 2,3% más: 2016 60.374.148 contra 59.006.651; 2025 67.218.916 contra 67.062.049), C2 no (crecen igual: 2025 +27,8% los dos), C3 sí (la controlada Θρύλος Α.Ε., 83,58%, hace merchandising). 1 de 3 = cola; criterio de OB: la sociedad tiene la actividad del fútbol y el grupo agrega poco -> individual (como AEK y Asteras))",
+  "materialidad: \"Λοιπά έσοδα κατά την πώληση\" va como player_sales con 0.6 (las dudas de ingresos suman 0.05% de su lado)",
+  "materialidad: \"Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων\" va como depreciation con 0.75 (las dudas de gastos suman 0.97% de su lado)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "olympiacos-gr",
+  "year": 2022,
+  "cierre": "2022-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Έσοδα από εισιτήρια",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 5.171556,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Χορηγίες και διαφημίσεις",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 12.866631,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Δικαιώματα αναμετάδοσης",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 2.621353,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Εμπορικά",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 12.604103,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έσοδα από UEFA",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 15.170022,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Λοιπά λειτουργικά έσοδα",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.925792,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αξία πώλησης ποδοσφαιριστών",
+    "normalizedCategory": "player_sales",
+    "amountNative": 19.672278,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπά έσοδα κατά την πώληση",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.040323,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": "materialidad",
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.05% (≤ 1%) y esta tiene 0.6"
+   },
+   {
+    "rawLabel": "Αναπόσβεστο κόστος ποδοσφαιριστών",
+    "normalizedCategory": "player_sales",
+    "amountNative": -2.197325,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-14): Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)"
+   },
+   {
+    "rawLabel": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+    "normalizedCategory": "player_sales",
+    "amountNative": -1.106781,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-14): Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Μισθοί και δόσεις συμβολαίων",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -25.199529,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Εισφορές κοινωνικής ασφάλισης",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.169791,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπές παροχές",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -6.203083,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ημερομίσθια και μισθοί",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -7.8865,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Εισφορές κοινωνικής ασφάλισης",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.00927,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Πρόβλεψη αποζημίωσης προσωπικού",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.038717,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.763476,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": "materialidad",
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.97% (≤ 1%) y esta tiene 0.75"
+   },
+   {
+    "rawLabel": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -13.495967,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Πρόβλεψη επισφαλών πελατών",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.059741,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έξοδα αγώνων",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -2.541255,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έξοδα χορηγιών και διαφημίσεων",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.421195,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Έξοδα ακινήτων & εγκαταστάσεων",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -5.303279,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπά μη λειτουργικά έξοδα",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.265879,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έξοδα ποδοσφαιρικού τμήματος",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -2.212968,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 1,
+    "_conf": 0.94,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπά λειτουργικά έξοδα",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -12.534144,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2022-06-30",
+   "sourceId": "olympiacos-gr-pae-olympiacos-fs-2022-06-30",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -1.355312,
+   "tax": 2.819339,
+   "extraRows": [
+    {
+     "label": "Χρηματοοικονομικά έσοδα",
+     "value": 0.735396
+    },
+    {
+     "label": "Χρηματοοικονομικά έξοδα",
+     "value": -2.090708
+    },
+    {
+     "label": "Φόρος εισοδήματος",
+     "value": 2.819339
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Έξοδα ποδοσφαιρικού τμήματος",
+     "lado": "expense",
+     "importe": 2.212968,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 66.767951,
+   "officialTotalExpenses": 79.104794,
+   "officialPAT": -10.872817
+  },
+  "source": {
+   "id": "olympiacos-gr-pae-olympiacos-fs-2022-06-30",
+   "clubId": "olympiacos-gr",
+   "title": "Olympiakos Syndesmos Filathlon Peiraios P.A.E. — PAE_Olympiacos_FS_2022-06-30 (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.md",
  "reemplaza": false,
  "periodo": {
@@ -39,5 +342,545 @@
  },
  "clubId": "olympiacos-gr",
  "year": 2022,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Αναπόσβεστο κόστος ποδοσφαιριστών",
+   "motivo": "Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)",
+   "evidencia": "estado de resultados, renglón neto de venta de jugadores; nota de la venta",
+   "autor": "Claude",
+   "fecha": "2026-10-14"
+  },
+  {
+   "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+   "motivo": "Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)",
+   "evidencia": "estado de resultados, renglón neto de venta de jugadores; nota de la venta",
+   "autor": "Claude",
+   "fecha": "2026-10-14"
+  }
+ ],
+ "seleccion": {
+  "filas": 28,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Έσοδα από εισιτήρια",
+   "page": 9,
+   "native": 5.171556,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 5.171556,
+   "cat": "matchday_competition",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.171556
+  },
+  {
+   "label": "Χορηγίες και διαφημίσεις",
+   "page": 9,
+   "native": 12.866631,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 12.866631,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 12.866631
+  },
+  {
+   "label": "Δικαιώματα αναμετάδοσης",
+   "page": 9,
+   "native": 2.621353,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.621353,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.621353
+  },
+  {
+   "label": "Εμπορικά",
+   "page": 9,
+   "native": 12.604103,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 12.604103,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 12.604103
+  },
+  {
+   "label": "Έσοδα από UEFA",
+   "page": 9,
+   "native": 15.170022,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 15.170022,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Fila propia de pagos de UEFA por participación (montos fijos y variables por desempeño, L1079), separada de entradas y TV: competition_bonus según la tabla de la skill. Precedente griego: AEK, Panathinaikos y Aris (guido) cargan \"Αλληλεγγύη UEFA και χρηματικά έπαθλα\" en competition_bonus; la skill manda broadcasting para UEFA solo en Italia, donde cada club abre la parte televisiva. [Clubes/Grecia/Olympiacos/PAE_Olympiacos_IFRS_FS_2025-06-30.md L225 (Έσοδα από UEFA 20.056.857,02 como fila propia) y L1077-L1079 (política contable)]",
+   "destino": "revenue",
+   "amountNative": 15.170022
+  },
+  {
+   "label": "Λοιπά λειτουργικά έσοδα",
+   "page": 9,
+   "native": 1.925792,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.925792,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.925792
+  },
+  {
+   "label": "Αξία πώλησης ποδοσφαιριστών",
+   "page": 42,
+   "native": 19.672278,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\")",
+   "signoFijo": 19.672278,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 19.672278
+  },
+  {
+   "label": "Λοιπά έσοδα κατά την πώληση",
+   "page": 42,
+   "native": 0.040323,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\")",
+   "signoFijo": 0.040323,
+   "cat": "player_sales",
+   "conf": 0.6,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.05% (≤ 1%) y esta tiene 0.6",
+   "enLista": true,
+   "enCola": false,
+   "destino": "revenue",
+   "amountNative": 0.040323
+  },
+  {
+   "label": "Αναπόσβεστο κόστος ποδοσφαιριστών",
+   "page": 42,
+   "native": 2.197325,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\")",
+   "signoFijo": -2.197325,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-14): Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": -2.197325
+  },
+  {
+   "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+   "page": 42,
+   "native": 1.106781,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\")",
+   "signoFijo": -1.106781,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-14): Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": -1.106781
+  },
+  {
+   "label": "Μισθοί και δόσεις συμβολαίων",
+   "page": 40,
+   "native": 25.199529,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\")",
+   "signoFijo": 25.199529,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -25.199529
+  },
+  {
+   "label": "Εισφορές κοινωνικής ασφάλισης",
+   "page": 40,
+   "native": 0.169791,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\")",
+   "signoFijo": 0.169791,
+   "cat": "wages_squad",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.169791
+  },
+  {
+   "label": "Λοιπές παροχές",
+   "page": 40,
+   "native": 6.203083,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\")",
+   "signoFijo": 6.203083,
+   "cat": "wages_squad",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.203083
+  },
+  {
+   "label": "Ημερομίσθια και μισθοί",
+   "page": 40,
+   "native": 7.8865,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\")",
+   "signoFijo": 7.8865,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Es la nómina de los otros empleados, en una nota aparte de la de ποδοσφαιριστές (L1098-L1109): no es plantel. Como el documento separa los dos grupos, va a admin_general_expense (criterio de la skill, \"el resto del personal\" sigue su sector; mismo patrón que Fortaleza, hallazgo 6 de la auditoría). Es lo que ya cargó la categorización de 2016. [Clubes/Grecia/Olympiacos/PAE_Olympiacos_IFRS_FS_2025-06-30.md L1112-L1121 (nota \"Δαπάνη παροχών λοιπών εργαζομένων\": Ημερομίσθια και μισθοί 10.587.412,57 Εταιρεία)]",
+   "destino": "expense",
+   "amountNative": -7.8865
+  },
+  {
+   "label": "Εισφορές κοινωνικής ασφάλισης",
+   "page": 40,
+   "native": 1.00927,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\")",
+   "signoFijo": 1.00927,
+   "cat": "wages_squad",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.00927
+  },
+  {
+   "label": "Πρόβλεψη αποζημίωσης προσωπικού",
+   "page": 40,
+   "native": 0.038717,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\")",
+   "signoFijo": 0.038717,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Provisión por indemnizaciones del personal que no es jugador, dentro de la nota de otros empleados: admin_general_expense, igual que el resto de esa nota y que lo cargado en 2016. [Clubes/Grecia/Olympiacos/PAE_Olympiacos_IFRS_FS_2025-06-30.md L1121 (51.657,00 Εταιρεία)]",
+   "destino": "expense",
+   "amountNative": -0.038717
+  },
+  {
+   "label": "Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων",
+   "page": 9,
+   "native": 0.763476,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.763476,
+   "cat": "depreciation",
+   "conf": 0.75,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.97% (≤ 1%) y esta tiene 0.75",
+   "enLista": true,
+   "enCola": false,
+   "destino": "expense",
+   "amountNative": -0.763476
+  },
+  {
+   "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
+   "page": 9,
+   "native": 13.495967,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 13.495967,
+   "cat": "player_amortisation",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -13.495967
+  },
+  {
+   "label": "Πρόβλεψη επισφαλών πελατών",
+   "page": 9,
+   "native": 0.059741,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.059741,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.059741
+  },
+  {
+   "label": "Έξοδα αγώνων",
+   "page": 42,
+   "native": 2.541255,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα\")",
+   "signoFijo": 2.541255,
+   "cat": "match_organisation_expense",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.541255
+  },
+  {
+   "label": "Έξοδα χορηγιών και διαφημίσεων",
+   "page": 42,
+   "native": 1.421195,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα\")",
+   "signoFijo": 1.421195,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Gasto de patrocinios y publicidad (comercial, no deportivo): admin_general_expense. Precedente griego de Guido: Aris \"Κόστη χορηγιών και διαφημίσεων\" (2023 y 2025) y AEK \"Διαφημίσεις και εκδηλώσεις\" en admin_general_expense. [Clubes/Grecia/Olympiacos/PAE_Olympiacos_IFRS_FS_2025-06-30.md L1173 (1.429.874,70 Εταιρεία)]",
+   "destino": "expense",
+   "amountNative": -1.421195
+  },
+  {
+   "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+   "page": 42,
+   "native": 5.303279,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα\")",
+   "signoFijo": 5.303279,
+   "cat": "admin_general_expense",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.303279
+  },
+  {
+   "label": "Λοιπά μη λειτουργικά έξοδα",
+   "page": 42,
+   "native": 0.265879,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα\")",
+   "signoFijo": 0.265879,
+   "cat": "other_expenses",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.265879
+  },
+  {
+   "label": "Έξοδα ποδοσφαιρικού τμήματος",
+   "page": 42,
+   "native": 2.212968,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα\")",
+   "signoFijo": 2.212968,
+   "cat": "lump_football_operations_expense",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.212968
+  },
+  {
+   "label": "Λοιπά λειτουργικά έξοδα",
+   "page": 42,
+   "native": 12.534144,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα\")",
+   "signoFijo": 12.534144,
+   "cat": "other_expenses",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -12.534144
+  },
+  {
+   "label": "Χρηματοοικονομικά έσοδα",
+   "page": null,
+   "native": 0.735396,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Χρηματοοικονομικά έξοδα",
+   "page": null,
+   "native": -2.090708,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Φόρος εισοδήματος",
+   "page": null,
+   "native": 2.819339,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 66.767952,
+  "expSum": -79.104794,
+  "officialTotalRevenue": 66.767951,
+  "officialTotalExpenses": 79.104794,
+  "officialPAT": -10.872817,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -10.872817,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 66.767951
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 79.104794
+  }
+ },
+ "liga": {
+  "valor": "gr-superleague",
+  "fuente": "roster cacheado de \"2021–22 Super League Greece\" (tools/club-league-reference/gr.json), coincidencia exacta \"Olympiacos\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2022-06-30) y contenido del .md (338 de 350 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-14)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Grecia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2022-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2022-06-30 = 0.9627 (Cierre BCE al 30/6/2022 (1 EUR = 1,0387 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "olympiacos-gr-pae-olympiacos-fs-2022-06-30",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gr-superleague",
+   "fuente": "roster cacheado de \"2021–22 Super League Greece\" (tools/club-league-reference/gr.json), coincidencia exacta \"Olympiacos\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 4,
+  "lineasIngreso": 10,
+  "lineasGasto": 15,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

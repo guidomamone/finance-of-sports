@@ -3,7 +3,7 @@
   "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_IFRS_FS_2025-06-30.pdf",
   "club": "olympiacos",
   "year": 2025,
-  "generatedAt": "2026-10-14T05:24:00.702Z",
+  "generatedAt": "2026-10-14T05:54:37.773Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -84,7 +84,7 @@
       "values": [
         -3.968487
       ],
-      "glosa": "Coste neto contable de futbolistas traspasados"
+      "glosa": "Valor neto contable de futbolistas traspasados"
     },
     {
       "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
@@ -104,7 +104,7 @@
       "values": [
         30.419345
       ],
-      "glosa": "Sueldos y primas contractuales"
+      "glosa": "Sueldos y primas de contratos"
     },
     {
       "label": "Εισφορές κοινωνικής ασφάλισης",
@@ -124,7 +124,7 @@
       "values": [
         13.444917
       ],
-      "glosa": "Otras prestaciones sociales"
+      "glosa": "Otras retribuciones al personal"
     },
     {
       "label": "Ημερομίσθια και μισθοί",
@@ -144,7 +144,7 @@
       "values": [
         2.166897
       ],
-      "glosa": "Sueldos y salarios de empleados del artículo 47 del Reglamento de Licencias"
+      "glosa": "Sueldos y salarios del personal (artículo 47 del Reglamento de Licencias)"
     },
     {
       "label": "Εισφορές κοινωνικής ασφάλισης",
@@ -164,7 +164,7 @@
       "values": [
         0.014679
       ],
-      "glosa": "Cotizaciones a la seguridad social de empleados del artículo 47 del Reglamento de Licencias"
+      "glosa": "Cotizaciones a la seguridad social del personal (artículo 47 del Reglamento de Licencias)"
     },
     {
       "label": "Πρόβλεψη αποζημίωσης Προσωπικού",
@@ -174,7 +174,7 @@
       "values": [
         0.051657
       ],
-      "glosa": "Provisión para indemnizaciones por cese del personal"
+      "glosa": "Provisión para indemnizaciones del personal"
     },
     {
       "label": "Απόσβεση ενσώματων ακινητοποιήσεων",
@@ -214,7 +214,7 @@
       "values": [
         13.506551
       ],
-      "glosa": "Amortización y deterioro del valor de derechos federativos de futbolistas"
+      "glosa": "Amortización y deterioro de derechos federativos de futbolistas"
     },
     {
       "label": "Πρόβλεψη επισφαλών πελατών",
@@ -224,7 +224,7 @@
       "values": [
         0.142924
       ],
-      "glosa": "Provisión por deterioro de créditos comerciales y deudores dudosos"
+      "glosa": "Provisión para insolvencias de clientes"
     },
     {
       "label": "Έξοδα αγώνων",
@@ -234,7 +234,7 @@
       "values": [
         5.221055
       ],
-      "glosa": "Gastos de partidos"
+      "glosa": "Gastos de organización de partidos"
     },
     {
       "label": "Έξοδα χορηγιών και διαφημίσεων",
@@ -264,7 +264,7 @@
       "values": [
         0.163839
       ],
-      "glosa": "Otros gastos no operativos"
+      "glosa": "Otros gastos no de explotación"
     },
     {
       "label": "Έξοδα ποδοσφαιρικού τμήματος",
@@ -284,7 +284,7 @@
       "values": [
         0.410088
       ],
-      "glosa": "Honorarios de intermediarios y agentes"
+      "glosa": "Honorarios de intermediarios"
     },
     {
       "label": "Λοιπά λειτουργικά έξοδα",

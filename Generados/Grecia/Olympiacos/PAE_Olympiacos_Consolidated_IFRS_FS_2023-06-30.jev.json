@@ -1,0 +1,228 @@
+{
+ "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.md",
+ "generatedAt": "2026-10-14T06:03:01.149Z",
+ "rubrosHuella": "5c6c9ef3e86323480194958175c169d594f72837",
+ "rubros": [
+  {
+   "label": "Έσοδα από εισιτήρια",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Χορηγίες και διαφημίσεις",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Δικαιώματα αναμετάδοσης",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Εμπορικά",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα από UEFA",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά λειτουργικά έσοδα",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Αξία πώλησης ποδοσφαιριστών",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Αναπόσβεστο κόστος Ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 37,
+   "section": "nota que desglosa \"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\"",
+   "choice": "player_amortisation",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 37,
+   "section": "nota que desglosa \"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\"",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Μισθοί και δόσεις συμβολαίων",
+   "lado": "expense",
+   "page": 35,
+   "section": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Εισφορές κοινωνικής ασφάλισης",
+   "lado": "expense",
+   "page": 35,
+   "section": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\"",
+   "choice": "wages_squad",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπές παροχές",
+   "lado": "expense",
+   "page": 35,
+   "section": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\"",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Ημερομίσθια και μισθοί",
+   "lado": "expense",
+   "page": 35,
+   "section": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Ημερομίσθια και μισθοί εργαζομένων άρθρου 47 Κανονισμού Αδειοδότησης",
+   "lado": "expense",
+   "page": 35,
+   "section": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Εισφορές κοινωνικής ασφάλισης εργαζομένων άρθρου 47 Κανονισμού Αδειοδότησης",
+   "lado": "expense",
+   "page": 35,
+   "section": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\"",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Πρόβλεψη αποζημίωσης Προσωπικού",
+   "lado": "expense",
+   "page": 35,
+   "section": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Απόσβεση ενσώματων ακινητοποιήσεων",
+   "lado": "expense",
+   "page": 36,
+   "section": "nota que desglosa \"Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων",
+   "lado": "expense",
+   "page": 36,
+   "section": "nota que desglosa \"Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων\"",
+   "choice": "depreciation",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)",
+   "lado": "expense",
+   "page": 36,
+   "section": "nota que desglosa \"Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων\"",
+   "choice": "other_amortisation",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Πρόβλεψη επισφαλών πελατών",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά λειτουργικά έξοδα",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Κόστος πωλήσεων εμπορευμάτων",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1035
+  }
+ ]
+}

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2020-06-30.pdf",
   "club": "olympiacos",
   "year": 2020,
-  "generatedAt": "2026-10-14T05:24:00.657Z",
+  "generatedAt": "2026-10-14T05:54:37.722Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -74,7 +74,7 @@
       "values": [
         23.2525
       ],
-      "glosa": "Ingresos por traspaso de futbolistas"
+      "glosa": "Valor de venta de futbolistas"
     },
     {
       "label": "Λοιπά έσοδα κατά την πώληση",
@@ -84,7 +84,7 @@
       "values": [
         0.05
       ],
-      "glosa": "Otros ingresos por enajenación"
+      "glosa": "Otros ingresos por venta"
     },
     {
       "label": "Μισθοί και δόσεις συμβολαίων",
@@ -114,7 +114,7 @@
       "values": [
         5.722637
       ],
-      "glosa": "Otras retribuciones al personal"
+      "glosa": "Otras prestaciones sociales"
     },
     {
       "label": "Ημερομίσθια και μισθοί",
@@ -164,7 +164,7 @@
       "values": [
         0.449045
       ],
-      "glosa": "Amortización de activos por derecho de uso"
+      "glosa": "Amortización de activos por derechos de uso"
     },
     {
       "label": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)",
@@ -174,7 +174,7 @@
       "values": [
         0.028923
       ],
-      "glosa": "Amortización de otro inmovilizado intangible (excluidos futbolistas)"
+      "glosa": "Amortización de otros activos intangibles (excluidos futbolistas)"
     },
     {
       "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
@@ -184,7 +184,7 @@
       "values": [
         8.92115
       ],
-      "glosa": "Amortización y deterioro de derechos de futbolistas"
+      "glosa": "Amortización y deterioro de derechos federativos"
     },
     {
       "label": "Έξοδα αγώνων",
@@ -234,7 +234,7 @@
       "values": [
         1.616227
       ],
-      "glosa": "Gastos de la sección deportiva"
+      "glosa": "Gastos del departamento de fútbol"
     },
     {
       "label": "Λοιπά λειτουργικά έξοδα",
@@ -254,7 +254,7 @@
       "values": [
         7.535065
       ],
-      "glosa": "Valor neto contable de futbolistas traspasados"
+      "glosa": "Coste no amortizado de futbolistas"
     },
     {
       "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.pdf",
   "club": "olympiacos",
   "year": 2022,
-  "generatedAt": "2026-10-14T05:24:00.699Z",
+  "generatedAt": "2026-10-14T05:54:37.756Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -74,7 +74,7 @@
       "values": [
         19.672278
       ],
-      "glosa": "Ingresos por venta de futbolistas"
+      "glosa": "Ingresos por venta de jugadores"
     },
     {
       "label": "Λοιπά έσοδα κατά την πώληση",
@@ -84,7 +84,7 @@
       "values": [
         0.040323
       ],
-      "glosa": "Otros ingresos por venta"
+      "glosa": "Otros ingresos por ventas"
     },
     {
       "label": "Αναπόσβεστο κόστος ποδοσφαιριστών",
@@ -94,7 +94,7 @@
       "values": [
         -2.197325
       ],
-      "glosa": "Coste no amortizado de futbolistas"
+      "glosa": "Coste no amortizado de jugadores"
     },
     {
       "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
@@ -104,7 +104,7 @@
       "values": [
         -1.106781
       ],
-      "glosa": "Otros costes directos de traspaso de futbolistas"
+      "glosa": "Otros costes directos de traspaso de jugadores"
     },
     {
       "label": "Μισθοί και δόσεις συμβολαίων",
@@ -134,7 +134,7 @@
       "values": [
         6.203083
       ],
-      "glosa": "Otras prestaciones"
+      "glosa": "Otras retribuciones"
     },
     {
       "label": "Ημερομίσθια και μισθοί",
@@ -174,7 +174,7 @@
       "values": [
         0.763476
       ],
-      "glosa": "Amortización y deterioro del inmovilizado material, intangible y activos por derecho de uso"
+      "glosa": "Amortización y deterioro del inmovilizado material, intangible y derechos de uso de activos"
     },
     {
       "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
@@ -184,7 +184,7 @@
       "values": [
         13.495967
       ],
-      "glosa": "Amortización y deterioro de derechos de futbolistas"
+      "glosa": "Amortización y deterioro de derechos federativos de jugadores"
     },
     {
       "label": "Πρόβλεψη επισφαλών πελατών",
@@ -234,7 +234,7 @@
       "values": [
         0.265879
       ],
-      "glosa": "Otros gastos no de explotación"
+      "glosa": "Otros gastos no operativos"
     },
     {
       "label": "Έξοδα ποδοσφαιρικού τμήματος",

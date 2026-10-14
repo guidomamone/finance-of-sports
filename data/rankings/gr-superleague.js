@@ -151,6 +151,9 @@ window.RANKINGS["gr-superleague"] = {
   2016: {
     leagueSize: null,
     clubs: [
+      { id:"olympiacos-gr", revenue:80.905, reportType:"official_balance_sheet",
+        sourceId:"olympiacos-gr-pae-olympiacos-chrimatooikonomikes-katastaseis-2016-06-30",
+        mix:[["Comercial / Sponsors",12.96],["Estadio",7.091],["Televisión",7.152],["Premios por competencias",37.751],["Venta de Jugadores",15.396],["Otros ingresos",0.555]] },
       { id:"aekathens-gr", revenue:11.181, reportType:"official_balance_sheet",
         sourceId:"aekathens-gr-aek-oikonomikes-katastaseis",
         mix:[["Comercial / Sponsors",3.607],["Estadio",3.046],["Televisión",1.924],["Premios por competencias",0.385],["Otros ingresos",2.218]] },
