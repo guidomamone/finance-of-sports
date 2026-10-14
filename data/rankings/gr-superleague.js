@@ -66,6 +66,9 @@ window.RANKINGS["gr-superleague"] = {
   2023: {
     leagueSize: null,
     clubs: [
+      { id:"olympiacos-gr", revenue:55.527, reportType:"official_balance_sheet",
+        sourceId:"olympiacos-gr-pae-olympiacos-consolidated-ifrs-fs-2023-06-30",
+        mix:[["Comercial / Sponsors",17.675],["Estadio",6.917],["Televisión",7.939],["Premios por competencias",13.248],["Venta de Jugadores",5.898],["Otros ingresos",3.851]] },
       { id:"aekathens-gr", revenue:42.361, reportType:"official_balance_sheet",
         sourceId:"aekathens-gr-aek-fs-2023-06-30",
         mix:[["Comercial / Sponsors",9.812],["Estadio",17.833],["Televisión",5.237],["Premios por competencias",1.365],["Venta de Jugadores",4.588],["Otros ingresos",3.527]] },

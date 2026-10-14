@@ -172,6 +172,65 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2023–24 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Olympiacos".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Έσοδα από εισιτήρια | pág. 9, Jev 0.99 |
+| 2 | Χορηγίες και διαφημίσεις | pág. 9, Jev 1 |
+| 3 | Δικαιώματα αναμετάδοσης | pág. 9, Jev 1 |
+| 4 | Εμπορικά | pág. 9, Jev 1 |
+| 5 | Έσοδα από UEFA | pág. 9, precedente |
+| 6 | Λοιπά λειτουργικά έσοδα | pág. 9, Jev 0.99 |
+| 7 | Αξία πώλησης ποδοσφαιριστών | pág. 37, Jev 1 |
+| 8 | Αναπόσβεστο κόστος Ποδοσφαιριστών | pág. 37, precedente |
+| 9 | Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών | pág. 37, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Μισθοί και δόσεις συμβολαίων | pág. 35, Jev 1 |
+| 2 | Εισφορές κοινωνικής ασφάλισης | pág. 35, Claude 0.85 |
+| 3 | Λοιπές παροχές | pág. 35, Claude 0.8 |
+| 4 | Ημερομίσθια και μισθοί | pág. 35, precedente |
+| 5 | Ημερομίσθια και μισθοί εργαζομένων άρθρου 47 Κανονισμού Αδειοδότησης | pág. 35, precedente |
+| 6 | Εισφορές κοινωνικής ασφάλισης | pág. 35, Claude 0.85 |
+| 7 | Εισφορές κοινωνικής ασφάλισης εργαζομένων άρθρου 47 Κανονισμού Αδειοδότησης | pág. 35, precedente |
+| 8 | Πρόβλεψη αποζημίωσης Προσωπικού | pág. 35, precedente |
+| 9 | Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων | pág. 9, precedente |
+| 10 | Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση | pág. 9, Claude 0.8 |
+| 11 | Έξοδα αγώνων | pág. 37, precedente |
+| 12 | Έξοδα χορηγιών και διαφημίσεων | pág. 37, precedente |
+| 13 | Έξοδα ακινήτων & εγκαταστάσεων | pág. 37, precedente |
+| 14 | Λοιπά μη λειτουργικά έξοδα | pág. 37, precedente |
+| 15 | Έξοδα ποδοσφαιρικού τμήματος | pág. 37, precedente |
+| 16 | Αμοιβές διαμεσολαβητών | pág. 37, precedente |
+| 17 | Λοιπά λειτουργικά έξοδα | pág. 37, Claude 0.8 |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): categoria = player_sales. Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): categoria = player_sales. Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): fila = (20.069.966,03). Claude 2026-10-14 (cola del lote 71, caso 446850a): el estado imprime 20.096.966,03 (L237, error de tipeo) y la nota 20.069.966,03 (L1201); con el de la nota el resultado operativo impreso -28.242.966,49 cierra exacto y el resultado final -22.635.895,15 también
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2022–23 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Olympiacos".
+```
+
 ## 2022
 
 ### Ingresos
@@ -634,4 +693,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2021-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### olympiacos-gr-pae-olympiacos-consolidated-ifrs-fs-2023-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
