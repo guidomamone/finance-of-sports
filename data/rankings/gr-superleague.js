@@ -106,6 +106,9 @@ window.RANKINGS["gr-superleague"] = {
   2021: {
     leagueSize: null,
     clubs: [
+      { id:"paok-gr", revenue:62.851, reportType:"official_balance_sheet",
+        sourceId:"paok-gr-fs-2021-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",45.943],["Otros ingresos",16.908]] },
       { id:"aekathens-gr", revenue:31.116, reportType:"official_balance_sheet",
         sourceId:"aekathens-gr-aek-notes-ifrs-2021-06-30",
         mix:[["Comercial / Sponsors",10.269],["Televisión",3.69],["Premios por competencias",8.772],["Otros ingresos",8.385]] },

@@ -24,6 +24,14 @@ const paokgrRevenueLinesByYear = {
     { rawLabel:'Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων', normalizedCategory:'other_income', amountNative:3.566975, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.528165, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Κύκλος εργασιών', normalizedCategory:'lump_football_operations', amountNative:38.661362, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:0.28173, disclosureLevel:'aggregated' },
+    { rawLabel:'Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων', normalizedCategory:'other_income', amountNative:13.497294, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έκτακτα έσοδα', normalizedCategory:'other_income', amountNative:0.395293, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα προηγούμενων χρήσεων', normalizedCategory:'other_income', amountNative:0.003609, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα από αναστροφή προβλέψεων', normalizedCategory:'other_income', amountNative:0.049812, disclosureLevel:'aggregated' },
+  ],
 };
 const paokgrExpenseLinesByYear = {
   2017: [
@@ -76,6 +84,35 @@ const paokgrExpenseLinesByYear = {
     { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-4.528406, disclosureLevel:'aggregated' },
     { rawLabel:'Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-2.482523, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-1.777332, disclosureLevel:'aggregated' },
+  ],
+  2021: [
+    { rawLabel:'Αμοιβές προσωπικού', normalizedCategory:'wages_squad', amountNative:-4.660522, disclosureLevel:'aggregated' },
+    { rawLabel:'Αμοιβές τρίτων', normalizedCategory:'wages_squad', amountNative:-28.534692, disclosureLevel:'aggregated' },
+    { rawLabel:'Παροχές τρίτων', normalizedCategory:'admin_general_expense', amountNative:-0.95427, disclosureLevel:'aggregated' },
+    { rawLabel:'Φόροι-Τέλη', normalizedCategory:'admin_general_expense', amountNative:-0.081052, disclosureLevel:'aggregated' },
+    { rawLabel:'Διάφορα έξοδα', normalizedCategory:'other_expenses', amountNative:-2.143979, disclosureLevel:'aggregated' },
+    { rawLabel:'Αποσβέσεις', normalizedCategory:'player_amortisation', amountNative:-8.265771, disclosureLevel:'aggregated' },
+    { rawLabel:'Αγορές Αναλωσίμων', normalizedCategory:'other_expenses', amountNative:-0.505828, disclosureLevel:'aggregated' },
+    { rawLabel:'Αμοιβές προσωπικού', normalizedCategory:'wages_squad', amountNative:-1.731749, disclosureLevel:'aggregated' },
+    { rawLabel:'Αμοιβές τρίτων', normalizedCategory:'wages_squad', amountNative:-0.721302, disclosureLevel:'aggregated' },
+    { rawLabel:'Παροχές τρίτων', normalizedCategory:'admin_general_expense', amountNative:-0.212978, disclosureLevel:'aggregated' },
+    { rawLabel:'Φόροι-Τέλη', normalizedCategory:'admin_general_expense', amountNative:-0.289906, disclosureLevel:'aggregated' },
+    { rawLabel:'Διάφορα έξοδα', normalizedCategory:'other_expenses', amountNative:-1.081488, disclosureLevel:'aggregated' },
+    { rawLabel:'Αποσβέσεις', normalizedCategory:'player_amortisation', amountNative:-0.239093, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπές Προβλέψεις', normalizedCategory:'other_amortisation', amountNative:-0.396867, disclosureLevel:'aggregated' },
+    { rawLabel:'Αμοιβές προσωπικού', normalizedCategory:'wages_squad', amountNative:-0.783857, disclosureLevel:'aggregated' },
+    { rawLabel:'Αμοιβές τρίτων', normalizedCategory:'wages_squad', amountNative:-0.166538, disclosureLevel:'aggregated' },
+    { rawLabel:'Παροχές τρίτων', normalizedCategory:'admin_general_expense', amountNative:-0.099982, disclosureLevel:'aggregated' },
+    { rawLabel:'Φόροι-Τέλη', normalizedCategory:'admin_general_expense', amountNative:-0.09095, disclosureLevel:'aggregated' },
+    { rawLabel:'Διάφορα έξοδα', normalizedCategory:'other_expenses', amountNative:-0.967568, disclosureLevel:'aggregated' },
+    { rawLabel:'Αποσβέσεις', normalizedCategory:'player_amortisation', amountNative:-0.038272, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπές Προβλέψεις', normalizedCategory:'other_amortisation', amountNative:-0.156599, disclosureLevel:'aggregated' },
+    { rawLabel:'Πρόστιμα αθλητικών φορέων', normalizedCategory:'other_expenses', amountNative:-0.04385, disclosureLevel:'aggregated' },
+    { rawLabel:'Φορολογικά Πρόστιμα & προσαυξήσεις', normalizedCategory:'other_expenses', amountNative:-0.004303, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έκτακτα έξοδα', normalizedCategory:'exceptional_items', amountNative:-4.19334, disclosureLevel:'aggregated' },
+    { rawLabel:'Φόροι και προσαυξήσεις προηγ. Χρήσεων', normalizedCategory:'exceptional_items', amountNative:-0.093052, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έξοδα προηγ. Χρήσεων', normalizedCategory:'exceptional_items', amountNative:-0.054942, disclosureLevel:'aggregated' },
+    { rawLabel:'Προβλέψεις για έκτακτους κινδύνους', normalizedCategory:'other_amortisation', amountNative:-0.027834, disclosureLevel:'aggregated' },
   ],
 };
 const paokgrFiscalYearMeta = {
@@ -132,6 +169,24 @@ const paokgrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:25.205029, officialTotalExpenses:51.976862, officialPAT:-26.904651,
   },
+  2021: {
+    currency:'EUR', fxRef:'EUR@2021-06-30',
+    sourceId:'paok-gr-fs-2021-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.113106, tax:0,
+    extraRows: [
+      {label:'Πιστωτικοί τόκοι και συναφή έσοδα', value:0.014311},
+      {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.127417},
+      {label:'Φόροι εισοδήματος', value:0},
+    ],
+    sinDesglose: [
+      {renglon:'Κύκλος εργασιών', lado:'revenue', importe:38.661362, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:52.889098, officialTotalExpenses:52.19925, officialPAT:-3.764593,
+  },
 };
 const paokgrPresupuestoOverlayByYear = {};
 
@@ -161,6 +216,11 @@ Object.assign(sources, {
   'paok-gr-fs-2020-06-30': {
     id:'paok-gr-fs-2020-06-30', clubId:'paok-gr',
     title:'Panthessalonikeios Athlitikos Omilos Konstantinoupoliton P.A.E. — PAOK_FS_2020-06-30 (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'paok-gr-fs-2021-06-30': {
+    id:'paok-gr-fs-2021-06-30', clubId:'paok-gr',
+    title:'Panthessalonikeios Athlitikos Omilos Konstantinoupoliton P.A.E. — PAOK_FS_2021-06-30 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
