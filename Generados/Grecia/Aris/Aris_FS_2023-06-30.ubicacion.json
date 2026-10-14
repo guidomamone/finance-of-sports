@@ -1,0 +1,159 @@
+{
+ "pdf": "Clubes/Grecia/Aris/Aris_FS_2023-06-30.pdf",
+ "md": "Clubes/Grecia/Aris/Aris_FS_2023-06-30.md",
+ "mdSha1": "8f9179c1eabfde17ca6584307e1f0596d1831cdb",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T03:50:49.586Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    40,
+    62
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    170,
+    177
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    272,
+    277
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    291,
+    313
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 13,
+   "lineas": [
+    329,
+    363
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    379,
+    394
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    410,
+    420
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    438,
+    442
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    555,
+    563
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 24,
+   "lineas": [
+    737,
+    754
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 25,
+   "lineas": [
+    770,
+    792
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 26,
+   "lineas": [
+    818,
+    841
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 28,
+   "lineas": [
+    889,
+    893
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 28,
+   "lineas": [
+    897,
+    904
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 29,
+   "lineas": [
+    920,
+    928
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b14",
+  "b15"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/06/2023",
+ "columna_anterior": "30/06/2022",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado de resultados b4 como consolidado, aunque las notas hablan de 'la Εταιρεία' (sociedad)?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El título dice 'ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ' (consolidadas) y no hay otro estado individual en el índice.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados consolidado en b4 (pág. 12), en euros. Notas de gastos: b14 (gastos de personal) y b15 (otros gastos operativos). b8 es conciliación ΕΛΠ/EPO, no se elige. No hay nota que desglose ingresos."
+}

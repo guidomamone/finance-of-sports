@@ -1,0 +1,237 @@
+{
+ "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2024-06-30.pdf",
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2024-06-30.md",
+ "mdSha1": "9bf67fd35bc1f236fed4e9152dd90e1e499c6f22",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T04:09:27.235Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    28,
+    54
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    112,
+    124
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    254,
+    262
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    289,
+    300
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    323,
+    325
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    432,
+    484
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    497,
+    513
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 23,
+   "lineas": [
+    789,
+    802
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 24,
+   "lineas": [
+    817,
+    830
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 24,
+   "lineas": [
+    836,
+    845
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 25,
+   "lineas": [
+    858,
+    861
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 25,
+   "lineas": [
+    869,
+    873
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 25,
+   "lineas": [
+    879,
+    883
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 25,
+   "lineas": [
+    889,
+    893
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    899,
+    903
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 27,
+   "lineas": [
+    949,
+    952
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    960,
+    965
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 28,
+   "lineas": [
+    982,
+    987
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    993,
+    998
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    1006,
+    1009
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    1015,
+    1020
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 29,
+   "lineas": [
+    1035,
+    1041
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 29,
+   "lineas": [
+    1059,
+    1062
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    1066,
+    1072
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 30,
+   "lineas": [
+    1099,
+    1110
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 32,
+   "lineas": [
+    1154,
+    1156
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b7"
+ ],
+ "notas_ingresos": [
+  "b21"
+ ],
+ "notas_gastos": [
+  "b22",
+  "b24"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "No hay indicación de miles; los cuadros de notas usan '€' en encabezados (ej. b4 '01.07- 30.06.2024 €') y el texto cita importes en euros exactos (€ 11.566).",
+ "moneda": "EUR",
+ "columna_ejercicio": "01.07-30.06.2024",
+ "columna_anterior": "01.07-30.06.2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ) en b7, pág. 15. Notas: b21 desglosa Κύκλος εργασιών (nota 9), b22 Λοιπά έξοδα και ζημίες (nota 10), b24 Παροχές σε εργαζόμενους. Se excluyen balance, evolución del patrimonio, activo fijo, partes relacionadas e indicadores."
+}

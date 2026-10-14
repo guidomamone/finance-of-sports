@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md",
+ "clave": "0781881a5e929efdf7bfaf381a75629d28386c02",
+ "generado": "2026-10-14T04:18:13.011Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "La carga coincide con el estado. Las tres filas tomadas de la nota (0,077241 + 1,271669 + 1,386906 = 2,735816) reemplazan al renglón L921 «Λοιπά έξοδα, προβλέψεις και ζημιές» (2.735.815,31). No se cargaron subtotales (L918, L924, L927, L929), y los lados y signos son correctos. El resultado es -1,011020, igual al impreso."
+ }
+}

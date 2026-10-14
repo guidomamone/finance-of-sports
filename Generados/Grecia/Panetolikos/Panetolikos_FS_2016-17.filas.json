@@ -1,0 +1,201 @@
+{
+ "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2016-17.pdf",
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2016-17.md",
+ "mdSha1": "07b70c9cb417aac8bdf01b8fffc64d39a353da63",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T04:06:44.993Z",
+ "ubicacion": {
+  "estado": [
+   "b10"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b26"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "L474: ποσά σε €"
+  },
+  {
+   "bloque": "b26",
+   "escala": "unidades",
+   "evidencia": "L685-L688: importes con decimales en euros (no se indica escala explícita)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b10",
+   "linea": 475,
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "actual": "712.062,00",
+   "anterior": "1.217.632,78",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 476,
+   "etiqueta": "Κόστος πωλήσεων",
+   "actual": "3.807.845,53",
+   "anterior": "3.440.127,88",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 477,
+   "etiqueta": "Μικτό αποτέλεσμα",
+   "actual": "-3.095.783,53",
+   "anterior": "-2.222.495,10",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 478,
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "actual": "2.575.264,55",
+   "anterior": "2.368.934,26",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 479,
+   "etiqueta": "",
+   "actual": "-520.518,98",
+   "anterior": "146.439,16",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 480,
+   "etiqueta": "Έξοδα διοίκησης",
+   "actual": "-385.560,52",
+   "anterior": "-368.008,07",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 481,
+   "etiqueta": "Έξοδα διάθεσης",
+   "actual": "-35.003,55",
+   "anterior": "-86.051,57",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 482,
+   "etiqueta": "Λοιπά έξοδα και ζημιές",
+   "actual": "-58.673,30",
+   "anterior": "-62.507,99",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 483,
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "actual": "30.629,09",
+   "anterior": "213,50",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 484,
+   "etiqueta": "Αποτελέσματα προ τόκων και φόρων",
+   "actual": "-969.127,26",
+   "anterior": "-369.914,97",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 485,
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "actual": "1.261,59",
+   "anterior": "231,71",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 486,
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "-5.758,93",
+   "anterior": "-5.953,37",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 487,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "-973.624,60",
+   "anterior": "-375.636,63",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 488,
+   "etiqueta": "Φόροι εισοδήματος",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 489,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "-973.624,60",
+   "anterior": "-375.636,63",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 489,
+  "actual": "-973.624,60",
+  "anterior": "-375.636,63"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Παροχές σε εργαζόμενους' (L685-L688) porque no desglosa un renglón identificable del estado (los gastos de personal están repartidos entre costo de ventas y gastos de administración/venta)?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El cuadro de beneficios a empleados (L685-L688, total 1.276.902,81) no corresponde a un único renglón del estado por función de L475-L489.",
+   "bloques": [
+    "b26"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado por función en euros. El subtotal L479 no tiene etiqueta. Gastos impresos con signos inconsistentes: Κόστος πωλήσεων positivo (L476) y demás gastos negativos. No hay total de ingresos ni de gastos impreso. La nota b26 (beneficios a empleados) se dejó afuera por no mapear a un renglón concreto; ver duda."
+}

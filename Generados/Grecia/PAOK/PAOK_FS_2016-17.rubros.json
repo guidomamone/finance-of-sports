@@ -1,421 +1,370 @@
 {
- "md": "Clubes/Grecia/PAOK/PAOK_FS_2016-17.md",
- "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2016-17.pdf",
- "club": "paok",
- "year": 2017,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T22:03:04.055Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 39,
-  "notasUsadas": [
-   "24",
-   "25"
+  "md": "Clubes/Grecia/PAOK/PAOK_FS_2016-17.md",
+  "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2016-17.pdf",
+  "club": "paok",
+  "year": 2017,
+  "generatedAt": "2026-10-14T04:18:22.613Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Έσοδα από εισιτήρια-συνδρομές",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Κύκλος εργασιών\"",
+      "values": [
+        3.606321
+      ],
+      "glosa": "Ingresos por taquillas y abonos"
+    },
+    {
+      "label": "Έσοδα από τηλεοπτικά δικαιώματα",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Κύκλος εργασιών\"",
+      "values": [
+        2.286571
+      ],
+      "glosa": "Ingresos por derechos de televisión"
+    },
+    {
+      "label": "Έσοδα από παραχωρήσεις ποδοσφαιριστών",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Κύκλος εργασιών\"",
+      "values": [
+        6.203
+      ],
+      "glosa": "Ingresos por cesiones y traspasos de futbolistas"
+    },
+    {
+      "label": "Έσοδα από επιχορηγήσεις",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Κύκλος εργασιών\"",
+      "values": [
+        7.696539
+      ],
+      "glosa": "Ingresos por subvenciones"
+    },
+    {
+      "label": "Έσοδα από χορηγίες-διαφημίσεις",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Κύκλος εργασιών\"",
+      "values": [
+        5.007688
+      ],
+      "glosa": "Ingresos por patrocinios y publicidad"
+    },
+    {
+      "label": "Ενοίκια Έσοδα",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Λοιπά συνήθη έσοδα\"",
+      "values": [
+        0.166959
+      ],
+      "glosa": "Ingresos por arrendamientos"
+    },
+    {
+      "label": "Λοιπά Έσοδα πάροχης Υπηρεσιών",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Λοιπά συνήθη έσοδα\"",
+      "values": [
+        0.028102
+      ],
+      "glosa": "Otros ingresos por prestación de servicios"
+    },
+    {
+      "label": "Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        6.040966
+      ],
+      "glosa": "Resultado por enajenación de activos no corrientes"
+    },
+    {
+      "label": "Λοιπά έκτακτα έσοδα",
+      "lado": "revenue",
+      "page": 23,
+      "section": "nota que desglosa \"Λοιπά έσοδα και κέρδη\"",
+      "values": [
+        0.376465
+      ],
+      "glosa": "Otros ingresos extraordinarios"
+    },
+    {
+      "label": "Έσοδα προηγούμενων χρήσεων",
+      "lado": "revenue",
+      "page": 23,
+      "section": "nota que desglosa \"Λοιπά έσοδα και κέρδη\"",
+      "values": [
+        0.001158
+      ],
+      "glosa": "Ingresos de ejercicios anteriores"
+    },
+    {
+      "label": "Έσοδα από αναστροφή προβλέψεων",
+      "lado": "revenue",
+      "page": 23,
+      "section": "nota que desglosa \"Λοιπά έσοδα και κέρδη\"",
+      "values": [
+        0.12
+      ],
+      "glosa": "Ingresos por reversión de provisiones"
+    },
+    {
+      "label": "Αμοιβές προσωπικού",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\"",
+      "values": [
+        2.978032
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Αμοιβές τρίτων",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\"",
+      "values": [
+        17.780205
+      ],
+      "glosa": "Servicios de profesionales independientes"
+    },
+    {
+      "label": "Παροχές τρίτων",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\"",
+      "values": [
+        0.841465
+      ],
+      "glosa": "Servicios exteriores"
+    },
+    {
+      "label": "Φόροι-Τέλη",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\"",
+      "values": [
+        0.180134
+      ],
+      "glosa": "Tributos y tasas"
+    },
+    {
+      "label": "Διάφορα έξοδα",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\"",
+      "values": [
+        3.245942
+      ],
+      "glosa": "Gastos diversos"
+    },
+    {
+      "label": "Αποσβέσεις",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\"",
+      "values": [
+        3.329712
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Αγορές Αναλωσίμων",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\"",
+      "values": [
+        0.757996
+      ],
+      "glosa": "Compras de consumibles"
+    },
+    {
+      "label": "Αμοιβές προσωπικού",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Έξοδα διοίκησης\"",
+      "values": [
+        1.358423
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Αμοιβές τρίτων",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Έξοδα διοίκησης\"",
+      "values": [
+        0.60892
+      ],
+      "glosa": "Servicios de profesionales independientes"
+    },
+    {
+      "label": "Παροχές τρίτων",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Έξοδα διοίκησης\"",
+      "values": [
+        0.348409
+      ],
+      "glosa": "Servicios exteriores"
+    },
+    {
+      "label": "Φόροι-Τέλη",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Έξοδα διοίκησης\"",
+      "values": [
+        0.309907
+      ],
+      "glosa": "Tributos y tasas"
+    },
+    {
+      "label": "Διάφορα έξοδα",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Έξοδα διοίκησης\"",
+      "values": [
+        0.987638
+      ],
+      "glosa": "Gastos diversos"
+    },
+    {
+      "label": "Αποσβέσεις",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Έξοδα διοίκησης\"",
+      "values": [
+        0.210917
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Λοιπές Προβλέψεις",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Έξοδα διοίκησης\"",
+      "values": [
+        0.119776
+      ],
+      "glosa": "Otras provisiones"
+    },
+    {
+      "label": "Αμοιβές προσωπικού",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Έξοδα διάθεσης\"",
+      "values": [
+        0.684527
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Αμοιβές τρίτων",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Έξοδα διάθεσης\"",
+      "values": [
+        0.119882
+      ],
+      "glosa": "Servicios de profesionales independientes"
+    },
+    {
+      "label": "Παροχές τρίτων",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Έξοδα διάθεσης\"",
+      "values": [
+        0.0931
+      ],
+      "glosa": "Servicios exteriores"
+    },
+    {
+      "label": "Φόροι-Τέλη",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Έξοδα διάθεσης\"",
+      "values": [
+        0.118499
+      ],
+      "glosa": "Tributos y tasas"
+    },
+    {
+      "label": "Διάφορα έξοδα",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Έξοδα διάθεσης\"",
+      "values": [
+        1.333431
+      ],
+      "glosa": "Gastos diversos"
+    },
+    {
+      "label": "Αποσβέσεις",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Έξοδα διάθεσης\"",
+      "values": [
+        0.028145
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Λοιπές Προβλέψεις",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Έξοδα διάθεσης\"",
+      "values": [
+        0.037444
+      ],
+      "glosa": "Otras provisiones"
+    },
+    {
+      "label": "Πρόστιμα αθλητικών φορέων",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Λοιπά έξοδα και ζημιές\"",
+      "values": [
+        0.810432
+      ],
+      "glosa": "Sanciones de organismos deportivos"
+    },
+    {
+      "label": "Φορολογικά Πρόστιμα & προσαυξήσεις",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Λοιπά έξοδα και ζημιές\"",
+      "values": [
+        0.03146
+      ],
+      "glosa": "Sanciones tributarias y recargos"
+    },
+    {
+      "label": "Λοιπά έκτακτα έξοδα",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Λοιπά έξοδα και ζημιές\"",
+      "values": [
+        0.354914
+      ],
+      "glosa": "Otros gastos extraordinarios"
+    },
+    {
+      "label": "Λοιπά έξοδα προηγ.Χρήσεων",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Λοιπά έξοδα και ζημιές\"",
+      "values": [
+        0.057285
+      ],
+      "glosa": "Otros gastos de ejercicios anteriores"
+    }
   ]
- },
- "ladoConocido": 34,
- "rubros": [
-  {
-   "label": "Κύκλος εργασιών",
-   "lado": "revenue",
-   "page": 7,
-   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
-   "values": [
-    24800.1202
-   ],
-   "origen": "estado 5"
-  },
-  {
-   "label": "Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος",
-   "lado": "expense",
-   "page": 7,
-   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
-   "values": [
-    -29113.48613
-   ],
-   "origen": "estado 5"
-  },
-  {
-   "label": "Λοιπά συνήθη έσοδα",
-   "lado": "revenue",
-   "page": 7,
-   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
-   "values": [
-    195.06144
-   ],
-   "origen": "estado 5"
-  },
-  {
-   "label": "Αμοιβές προσωπικού",
-   "lado": "expense",
-   "page": 23,
-   "section": "#### Έξοδα Διοίκησης",
-   "values": [
-    1358.42278
-   ],
-   "origen": "nota 24 (ancla 5)",
-   "ancla": "Έξοδα διοίκησης"
-  },
-  {
-   "label": "Έξοδα διοίκησης",
-   "lado": "expense",
-   "page": 7,
-   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
-   "values": [
-    -3943.9896
-   ],
-   "origen": "renglón del estado abierto en una nota",
-   "esAncla": true
-  },
-  {
-   "label": "Αμοιβές τρίτων",
-   "lado": "expense",
-   "page": 23,
-   "section": "#### Έξοδα Διοίκησης",
-   "values": [
-    608.9196
-   ],
-   "origen": "nota 24 (ancla 5)",
-   "ancla": "Έξοδα διοίκησης"
-  },
-  {
-   "label": "Παροχές τρίτων",
-   "lado": "expense",
-   "page": 23,
-   "section": "#### Έξοδα Διοίκησης",
-   "values": [
-    348.40887
-   ],
-   "origen": "nota 24 (ancla 5)",
-   "ancla": "Έξοδα διοίκησης"
-  },
-  {
-   "label": "Φόροι-Τέλη",
-   "lado": "expense",
-   "page": 23,
-   "section": "#### Έξοδα Διοίκησης",
-   "values": [
-    309.90728
-   ],
-   "origen": "nota 24 (ancla 5)",
-   "ancla": "Έξοδα διοίκησης"
-  },
-  {
-   "label": "Διάφορα έξοδα",
-   "lado": "expense",
-   "page": 23,
-   "section": "#### Έξοδα Διοίκησης",
-   "values": [
-    987.63829
-   ],
-   "origen": "nota 24 (ancla 5)",
-   "ancla": "Έξοδα διοίκησης"
-  },
-  {
-   "label": "Αποσβέσεις",
-   "lado": "expense",
-   "page": 23,
-   "section": "#### Έξοδα Διοίκησης",
-   "values": [
-    210.91715
-   ],
-   "origen": "nota 24 (ancla 5)",
-   "ancla": "Έξοδα διοίκησης"
-  },
-  {
-   "label": "Λοιπές Προβλέψεις",
-   "lado": "expense",
-   "page": 23,
-   "section": "#### Έξοδα Διοίκησης",
-   "values": [
-    119.77563
-   ],
-   "origen": "nota 24 (ancla 5)",
-   "ancla": "Έξοδα διοίκησης"
-  },
-  {
-   "label": "Αμοιβές προσωπικού",
-   "lado": "expense",
-   "page": 23,
-   "section": "#### Έξοδα Διάθεσης",
-   "values": [
-    684.52747
-   ],
-   "origen": "nota 25 (ancla 5)",
-   "ancla": "Έξοδα διάθεσης"
-  },
-  {
-   "label": "Έξοδα διάθεσης",
-   "lado": "expense",
-   "page": 7,
-   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
-   "values": [
-    -2415.02861
-   ],
-   "origen": "renglón del estado abierto en una nota",
-   "esAncla": true
-  },
-  {
-   "label": "Αμοιβές τρίτων",
-   "lado": "expense",
-   "page": 23,
-   "section": "#### Έξοδα Διάθεσης",
-   "values": [
-    119.88194
-   ],
-   "origen": "nota 25 (ancla 5)",
-   "ancla": "Έξοδα διάθεσης"
-  },
-  {
-   "label": "Παροχές τρίτων",
-   "lado": "expense",
-   "page": 23,
-   "section": "#### Έξοδα Διάθεσης",
-   "values": [
-    93.09974
-   ],
-   "origen": "nota 25 (ancla 5)",
-   "ancla": "Έξοδα διάθεσης"
-  },
-  {
-   "label": "Φόροι-Τέλη",
-   "lado": "expense",
-   "page": 23,
-   "section": "#### Έξοδα Διάθεσης",
-   "values": [
-    118.49916
-   ],
-   "origen": "nota 25 (ancla 5)",
-   "ancla": "Έξοδα διάθεσης"
-  },
-  {
-   "label": "Διάφορα έξοδα",
-   "lado": "expense",
-   "page": 23,
-   "section": "#### Έξοδα Διάθεσης",
-   "values": [
-    1333.4309
-   ],
-   "origen": "nota 25 (ancla 5)",
-   "ancla": "Έξοδα διάθεσης"
-  },
-  {
-   "label": "Αποσβέσεις",
-   "lado": "expense",
-   "page": 23,
-   "section": "#### Έξοδα Διάθεσης",
-   "values": [
-    28.14491
-   ],
-   "origen": "nota 25 (ancla 5)",
-   "ancla": "Έξοδα διάθεσης"
-  },
-  {
-   "label": "Λοιπές Προβλέψεις",
-   "lado": "expense",
-   "page": 23,
-   "section": "#### Έξοδα Διάθεσης",
-   "values": [
-    37.44449
-   ],
-   "origen": "nota 25 (ancla 5)",
-   "ancla": "Έξοδα διάθεσης"
-  },
-  {
-   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
-   "lado": "revenue",
-   "page": 7,
-   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
-   "values": [
-    20.15726
-   ],
-   "origen": "estado 5"
-  },
-  {
-   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
-   "lado": "expense",
-   "page": 7,
-   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
-   "values": [
-    -173.4076
-   ],
-   "origen": "estado 5"
-  },
-  {
-   "label": "Υπόλοιπα 1/7/2015",
-   "lado": null,
-   "page": 8,
-   "section": "PAOK FE",
-   "values": [
-    57479.5434
-   ],
-   "origen": "estado 6"
-  },
-  {
-   "label": "Μεταβολές στοιχείων στην περίοδο",
-   "lado": null,
-   "page": 8,
-   "section": "PAOK FE",
-   "values": [
-    6034.995
-   ],
-   "origen": "estado 6"
-  },
-  {
-   "label": "Υπόλοιπα 1/7/2016",
-   "lado": null,
-   "page": 8,
-   "section": "PAOK FE",
-   "values": [
-    63514.5384
-   ],
-   "origen": "estado 6"
-  },
-  {
-   "label": "Μεταβολές στοιχείων στην περίοδο",
-   "lado": null,
-   "page": 8,
-   "section": "PAOK FE",
-   "values": [
-    13710
-   ],
-   "origen": "estado 6"
-  },
-  {
-   "label": "Κόστος τρέχουσας υπηρεσίας",
-   "lado": "expense",
-   "page": 20,
-   "section": "Τα ποσά, τα οποία έχουν καταχωριστεί στην κατάσταση αποτελεσμάτων αναλύονται παρακάτω:",
-   "values": [
-    0.025693
-   ],
-   "origen": "estado 14"
-  },
-  {
-   "label": "Χρηματοοικονομικό κόστος",
-   "lado": "expense",
-   "page": 20,
-   "section": "Τα ποσά, τα οποία έχουν καταχωριστεί στην κατάσταση αποτελεσμάτων αναλύονται παρακάτω:",
-   "values": [
-    0.002319
-   ],
-   "origen": "estado 14"
-  },
-  {
-   "label": "Κόστος προϋπηρεσίας",
-   "lado": "expense",
-   "page": 20,
-   "section": "Τα ποσά, τα οποία έχουν καταχωριστεί στην κατάσταση αποτελεσμάτων αναλύονται παρακάτω:",
-   "values": [
-    0.007122
-   ],
-   "origen": "estado 14"
-  },
-  {
-   "label": "Πρόστιμα αθλητικών φορέων",
-   "lado": "expense",
-   "page": 24,
-   "section": "PAOK FE",
-   "values": [
-    0.810432
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Φορολογικά Πρόστιμα & προσαυξήσεις",
-   "lado": "expense",
-   "page": 24,
-   "section": "PAOK FE",
-   "values": [
-    0.03146
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Λοιπά έκτακτα έξοδα",
-   "lado": "expense",
-   "page": 24,
-   "section": "PAOK FE",
-   "values": [
-    0.354914
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Λοιπά έξοδα προηγ.Χρήσεων",
-   "lado": "expense",
-   "page": 24,
-   "section": "PAOK FE",
-   "values": [
-    0.057285
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Λοιπά έκτακτα έσοδα",
-   "lado": "revenue",
-   "page": 23,
-   "section": "#### Λοιπά Έσοδα / Σύνολο",
-   "values": [
-    376.46492
-   ],
-   "origen": "estado 26"
-  },
-  {
-   "label": "Έσοδα προηγούμενων χρήσεων",
-   "lado": "revenue",
-   "page": 23,
-   "section": "#### Λοιπά Έσοδα / Σύνολο",
-   "values": [
-    1.15843
-   ],
-   "origen": "estado 26"
-  },
-  {
-   "label": "Έσοδα από αναστροφή προβλέψεων",
-   "lado": "revenue",
-   "page": 23,
-   "section": "#### Λοιπά Έσοδα / Σύνολο",
-   "values": [
-    120
-   ],
-   "origen": "estado 26"
-  },
-  {
-   "label": "Αμοιβές προσωπικού",
-   "lado": "expense",
-   "page": 22,
-   "section": "",
-   "values": [
-    2978.03194
-   ],
-   "origen": "estado 22"
-  },
-  {
-   "label": "Αμοιβές τρίτων",
-   "lado": "expense",
-   "page": 22,
-   "section": "",
-   "values": [
-    17780.20507
-   ],
-   "origen": "estado 22"
-  },
-  {
-   "label": "Παροχές τρίτων",
-   "lado": "expense",
-   "page": 22,
-   "section": "",
-   "values": [
-    841.46535
-   ],
-   "origen": "estado 22"
-  }
- ]
 }

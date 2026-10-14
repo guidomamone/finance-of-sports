@@ -1,244 +1,100 @@
 {
- "md": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md",
- "pdf": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.pdf",
- "club": "aris",
- "year": 2021,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T22:02:02.487Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 22,
-  "notasUsadas": [
-   "20"
+  "md": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md",
+  "pdf": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.pdf",
+  "club": "aris",
+  "year": 2021,
+  "generatedAt": "2026-10-14T04:18:22.545Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Κύκλος εργασιών (καθαρός)",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        6.86235
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων (Πωλήσεις Ποδοσφαιριστών)",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        1.07127
+      ],
+      "glosa": "Resultados por enajenación de activos no corrientes (Ventas de futbolistas)"
+    },
+    {
+      "label": "Λοιπά έσοδα και κέρδη",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.682348
+      ],
+      "glosa": "Otros ingresos y ganancias"
+    },
+    {
+      "label": "Κόστος πωλήσεων (Έξοδα ποδοσφαιρικού τμήματος)",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        6.267535
+      ],
+      "glosa": "Coste de ventas (Gastos del departamento de fútbol)"
+    },
+    {
+      "label": "Έξοδα διοίκησης",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.485331
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Έξοδα διάθεσης",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.119454
+      ],
+      "glosa": "Gastos de comercialización"
+    },
+    {
+      "label": "Φορολογικά πρόστιμα και προσαυξήσεις",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Λοιπά έξοδα, προβλέψεις και ζημιές\"",
+      "values": [
+        0.077241
+      ],
+      "glosa": "Multas y recargos fiscales"
+    },
+    {
+      "label": "Έκτακτα και ανόργανα έξοδα",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Λοιπά έξοδα, προβλέψεις και ζημιές\"",
+      "values": [
+        1.271669
+      ],
+      "glosa": "Gastos extraordinarios y atípicos"
+    },
+    {
+      "label": "Προβλέψεις για έκτακτους κινδύνους",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Λοιπά έξοδα, προβλέψεις και ζημιές\"",
+      "values": [
+        1.386906
+      ],
+      "glosa": "Provisiones para riesgos extraordinarios"
+    }
   ]
- },
- "ladoConocido": 19,
- "rubros": [
-  {
-   "label": "Υπόλοιπο την 30.06.2018",
-   "lado": null,
-   "page": 17,
-   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΗΣ ΚΑΘΑΡΗΣ ΘΕΣΗΣ",
-   "values": [
-    1890
-   ],
-   "origen": "estado 10"
-  },
-  {
-   "label": "Υπόλοιπο την 30.06.2019",
-   "lado": null,
-   "page": 17,
-   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΗΣ ΚΑΘΑΡΗΣ ΘΕΣΗΣ",
-   "values": [
-    1890
-   ],
-   "origen": "estado 10"
-  },
-  {
-   "label": "Αύξηση Μετοχικού Κεφαλαίου",
-   "lado": null,
-   "page": 17,
-   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΗΣ ΚΑΘΑΡΗΣ ΘΕΣΗΣ",
-   "values": [
-    999.9
-   ],
-   "origen": "estado 10"
-  },
-  {
-   "label": "Αμοιβές και έξοδα προσωπικού",
-   "lado": "expense",
-   "page": 38,
-   "section": "### 10.2 Έξοδα",
-   "values": [
-    4.240698
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Αμοιβές και έξοδα τρίτων",
-   "lado": "expense",
-   "page": 38,
-   "section": "### 10.2 Έξοδα",
-   "values": [
-    0.644516
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Παροχές τρίτων",
-   "lado": "expense",
-   "page": 38,
-   "section": "### 10.2 Έξοδα",
-   "values": [
-    0.226037
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Φόροι-Τέλη",
-   "lado": "expense",
-   "page": 38,
-   "section": "### 10.2 Έξοδα",
-   "values": [
-    0.060823
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Διάφορα Έξοδα",
-   "lado": "expense",
-   "page": 38,
-   "section": "### 10.2 Έξοδα",
-   "values": [
-    0.896071
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Τόκοι και συναφή έξοδα",
-   "lado": "expense",
-   "page": 38,
-   "section": "### 10.2 Έξοδα",
-   "values": [
-    0.019022
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Αποσβέσεις παγίων",
-   "lado": "expense",
-   "page": 38,
-   "section": "### 10.2 Έξοδα",
-   "values": [
-    0.804175
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Κόστος Πωλήσεων",
-   "lado": "expense",
-   "page": 39,
-   "section": "Π.Α.Ε. ΑΡΗΣ / [LOGO] / ARIS F.C.",
-   "values": [
-    6267.53542
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Έξοδα Διοίκησης",
-   "lado": "expense",
-   "page": 39,
-   "section": "Π.Α.Ε. ΑΡΗΣ / [LOGO] / ARIS F.C.",
-   "values": [
-    485.33082
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Έξοδα Διάθεσης",
-   "lado": "expense",
-   "page": 39,
-   "section": "Π.Α.Ε. ΑΡΗΣ / [LOGO] / ARIS F.C.",
-   "values": [
-    119.4537
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Χρηματοοικονομική Λειτουργία (Χρεωστικοί Τόκοι)",
-   "lado": "expense",
-   "page": 39,
-   "section": "Π.Α.Ε. ΑΡΗΣ / [LOGO] / ARIS F.C.",
-   "values": [
-    19.02178
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Μισθοί και Ημερομίσθια",
-   "lado": "expense",
-   "page": 40,
-   "section": "Η εταιρεία σε σχέση με το απασχολούμενο προσωπικό επιβαρύνθηκε με τα εξής ποσά:",
-   "values": [
-    3.728547
-   ],
-   "origen": "estado 33"
-  },
-  {
-   "label": "Κοινωνικές Επιβαρύνσεις",
-   "lado": "expense",
-   "page": 40,
-   "section": "Η εταιρεία σε σχέση με το απασχολούμενο προσωπικό επιβαρύνθηκε με τα εξής ποσά:",
-   "values": [
-    0.168999
-   ],
-   "origen": "estado 33"
-  },
-  {
-   "label": "Λοιπές Παροχές",
-   "lado": "expense",
-   "page": 40,
-   "section": "Η εταιρεία σε σχέση με το απασχολούμενο προσωπικό επιβαρύνθηκε με τα εξής ποσά:",
-   "values": [
-    0.052001
-   ],
-   "origen": "estado 33"
-  },
-  {
-   "label": "Αποζημίωση Απόλυσης και πρόωρης λύσης συμβολαίων",
-   "lado": "expense",
-   "page": 40,
-   "section": "Η εταιρεία σε σχέση με το απασχολούμενο προσωπικό επιβαρύνθηκε με τα εξής ποσά:",
-   "values": [
-    0.291152
-   ],
-   "origen": "estado 33"
-  },
-  {
-   "label": "Φορολογικά πρόστιμα και προσαυξήσεις",
-   "lado": "expense",
-   "page": 39,
-   "section": "### 10.3 Λοιπά Έξοδα και ζημίες",
-   "values": [
-    77.24066
-   ],
-   "origen": "estado 29"
-  },
-  {
-   "label": "Έκτακτα και ανόργανα έξοδα",
-   "lado": "expense",
-   "page": 39,
-   "section": "### 10.3 Λοιπά Έξοδα και ζημίες",
-   "values": [
-    1271.66913
-   ],
-   "origen": "estado 29"
-  },
-  {
-   "label": "Προβλέψεις για έκτακτους κινδύνους",
-   "lado": "expense",
-   "page": 39,
-   "section": "### 10.3 Λοιπά Έξοδα και ζημίες",
-   "values": [
-    1386.90552
-   ],
-   "origen": "estado 29"
-  },
-  {
-   "label": "Έκτακτα και ανόργανα έσοδα",
-   "lado": "revenue",
-   "page": 39,
-   "section": "### 10.5 Λοιπά έσοδα και κέρδη",
-   "values": [
-    682.34835
-   ],
-   "origen": "estado 31"
-  }
- ]
 }

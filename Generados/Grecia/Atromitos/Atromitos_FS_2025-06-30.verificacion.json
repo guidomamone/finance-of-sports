@@ -1,0 +1,163 @@
+{
+ "pdf": "Clubes/Grecia/Atromitos/Atromitos_FS_2025-06-30.pdf",
+ "md": "Clubes/Grecia/Atromitos/Atromitos_FS_2025-06-30.md",
+ "generado": "2026-10-14T04:17:55.624Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "55d7eee"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.2343238370581275e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2024: 4.830076 en Atromitos_FS_2024-06-30.pdf y 4.830076 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Κύκλος εργασιών (καθαρός)\" no suma el renglón (5.356125 contra 6.283402, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Λοιπά συνήθη έσοδα\" no suma el renglón (2.712419 contra 1.785142, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Λοιπά έσοδα και κέρδη\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: Es un detalle de operaciones con ETEKA, no un desglose de renglones del estado.",
+  "duda de extraer que no afecta la carga: L920+L922 suman 1.139.533,69 (L865) y L923 repite L866, por lo que es desglose de b21.",
+  "duda de extraer que no afecta la carga: L858 coincide con L245 en ambos años."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Κύκλος εργασιών (καθαρός)",
+   "suma": 5.356125,
+   "objetivo": 6.283402
+  },
+  {
+   "renglon": "Λοιπά συνήθη έσοδα",
+   "suma": 2.712419,
+   "objetivo": 1.785142
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Κύκλος εργασιών (καθαρός)",
+   "suma": 5.356125,
+   "objetivo": 6.283402
+  },
+  {
+   "renglon": "Λοιπά συνήθη έσοδα",
+   "suma": 2.712419,
+   "objetivo": 1.785142
+  }
+ ],
+ "totales": {
+  "ingresos": 8.079741,
+  "gastos": 6.965137,
+  "financiero": -1.021063,
+  "impuesto": 0,
+  "resultadoImpreso": 0.093541,
+  "resultadoParaCargar": 0.093541,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "lado": "ingreso",
+   "M": 6.283402,
+   "pagina": 10,
+   "linea": 237,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 1.785142,
+   "pagina": 10,
+   "linea": 240,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.011197,
+   "pagina": 10,
+   "linea": 245,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων",
+   "lado": "gasto",
+   "M": 6.312663,
+   "pagina": 10,
+   "linea": 238,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 0.533264,
+   "pagina": 10,
+   "linea": 243,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά έξοδα και ζημίες",
+   "lado": "gasto",
+   "M": 0.119211,
+   "pagina": 10,
+   "linea": 244,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -1.021063,
+   "linea": 248
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": 0,
+   "linea": 250
+  }
+ ]
+}

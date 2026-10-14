@@ -1,0 +1,217 @@
+{
+ "pdf": "Clubes/Grecia/Atromitos/Atromitos_FS_2019-06-30.pdf",
+ "md": "Clubes/Grecia/Atromitos/Atromitos_FS_2019-06-30.md",
+ "mdSha1": "08916e13496d7cd3005ab67bda4253bcc83965b4",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T03:56:00.009Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    38,
+    74
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    163,
+    191
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    195,
+    231
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    237,
+    256
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    262,
+    275
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 19,
+   "lineas": [
+    543,
+    573
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 20,
+   "lineas": [
+    591,
+    618
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 21,
+   "lineas": [
+    650,
+    654
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 21,
+   "lineas": [
+    658,
+    661
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 22,
+   "lineas": [
+    671,
+    678
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    684,
+    689
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    701,
+    706
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 23,
+   "lineas": [
+    742,
+    746
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 24,
+   "lineas": [
+    756,
+    763
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 24,
+   "lineas": [
+    769,
+    777
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    787,
+    811
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 26,
+   "lineas": [
+    819,
+    833
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 27,
+   "lineas": [
+    863,
+    870
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 27,
+   "lineas": [
+    874,
+    884
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    922,
+    939
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 29,
+   "lineas": [
+    945,
+    949
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 30,
+   "lineas": [
+    1002,
+    1011
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b16"
+ ],
+ "notas_gastos": [
+  "b17",
+  "b19"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala sobre el estado (b4); los estados griegos bajo ΕΛΠ suelen expresarse en euros (unidades).",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2019",
+ "columna_anterior": "30/6/2018",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El estado de resultados (b4, pág. 10) está expresado en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No se ve ninguna leyenda de escala arriba del estado b4.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados por función individual de la sociedad (b4). La nota 11 abre los ingresos (b16) y los gastos por naturaleza (b17). b19 detalla los gastos de personal. Se excluyen: balance, patrimonio, activo fijo, saldos patrimoniales y partes vinculadas."
+}

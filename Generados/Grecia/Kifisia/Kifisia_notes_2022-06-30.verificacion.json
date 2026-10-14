@@ -1,0 +1,192 @@
+{
+ "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2022-06-30.pdf",
+ "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2022-06-30.md",
+ "generado": "2026-10-14T04:17:55.798Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "f4e001f"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "0.475202 = 0.474435",
+   "suma": 0.47520156999999996,
+   "impreso": 0.47443462
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "0.925751 = 0.925751",
+   "suma": 0.9257512599999999,
+   "impreso": 0.92575126
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.1102230246251565e-16
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 0.475202 en este documento y 0.475202 en Kifisia_notes_2023-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Κύκλος εργασιών (καθαρός)\" no suma el renglón (0.397702 contra 0.396935, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar que no afecta la carga: b9 parece un resumen del informe de gestión que mezcla balance y resultado, ya contenido en b13."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Κύκλος εργασιών (καθαρός)",
+   "suma": 0.397702,
+   "objetivo": 0.396935
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Κύκλος εργασιών (καθαρός)",
+   "suma": 0.397702,
+   "objetivo": 0.396935
+  }
+ ],
+ "totales": {
+  "ingresos": 0.475202,
+  "gastos": 0.925751,
+  "financiero": -0.000738,
+  "impuesto": -0.000917,
+  "resultadoImpreso": -0.452204,
+  "resultadoParaCargar": -0.452204,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "lado": "ingreso",
+   "M": 0.396935,
+   "pagina": 15,
+   "linea": 525,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 0.0775,
+   "pagina": 15,
+   "linea": 526,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.000767,
+   "pagina": 15,
+   "linea": 536,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Αγορές εμπορευμάτων και υλικών",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 15,
+   "linea": 528,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Παροχές σε εργαζόμενους",
+   "lado": "gasto",
+   "M": 0.418349,
+   "pagina": 15,
+   "linea": 529,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Αποσβέσεις",
+   "lado": "gasto",
+   "M": 0.004741,
+   "pagina": 15,
+   "linea": 530,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΤΡΙΤΩΝ",
+   "lado": "gasto",
+   "M": 0.119817,
+   "pagina": 30,
+   "linea": 1081,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημίες\""
+  },
+  {
+   "etiqueta": "ΠΑΡΟΧΕΣ ΤΡΙΤΩΝ",
+   "lado": "gasto",
+   "M": 0.088497,
+   "pagina": 30,
+   "linea": 1082,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημίες\""
+  },
+  {
+   "etiqueta": "ΦΟΡΟΙ - ΤΕΛΗ",
+   "lado": "gasto",
+   "M": 0.071219,
+   "pagina": 30,
+   "linea": 1083,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημίες\""
+  },
+  {
+   "etiqueta": "ΔΙΑΦΟΡΑ ΕΞΟΔΑ",
+   "lado": "gasto",
+   "M": 0.219801,
+   "pagina": 30,
+   "linea": 1084,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημίες\""
+  },
+  {
+   "etiqueta": "ΛΟΙΠΑ ΕΚΤΑΚΤΑ & ΑΝΟΡΓ.ΕΞΟΔΑ",
+   "lado": "gasto",
+   "M": 0.003327,
+   "pagina": 30,
+   "linea": 1087,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημίες\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": 0,
+   "linea": 534
+  },
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.000738,
+   "linea": 535
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": -0.000917,
+   "linea": 538
+  }
+ ]
+}

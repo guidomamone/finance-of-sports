@@ -1,0 +1,236 @@
+{
+ "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2015-16.pdf",
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2015-16.md",
+ "mdSha1": "fd495d2b4534a95cf632e6a12ec95b0e4f404bb7",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T04:06:16.354Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    25,
+    31
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    39,
+    45
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    100,
+    106
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    137,
+    142
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    182,
+    209
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    215,
+    225
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 7,
+   "lineas": [
+    233,
+    240
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 7,
+   "lineas": [
+    244,
+    260
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 8,
+   "lineas": [
+    266,
+    288
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    319,
+    330
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    520,
+    524
+   ],
+   "tipo": "texto"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    540,
+    545
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    549,
+    552
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    556,
+    560
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    566,
+    572
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    578,
+    582
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    590,
+    595
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 15,
+   "lineas": [
+    599,
+    602
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 15,
+   "lineas": [
+    608,
+    618
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 15,
+   "lineas": [
+    624,
+    635
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 16,
+   "lineas": [
+    652,
+    664
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 17,
+   "lineas": [
+    670,
+    676
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 19,
+   "lineas": [
+    697,
+    706
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 20,
+   "lineas": [
+    712,
+    716
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 22,
+   "lineas": [
+    765,
+    789
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "ποσά σε € (b20, cuadros del balance con importes con decimales)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30.06.2016",
+ "columna_anterior": "30.06.2015",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Falta en el PDF la página con la Κατάσταση Αποτελεσμάτων (estado de resultados) entre el balance (pág. 14-15) y el anexo (pág. 16)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice salta del balance (b12-b19) y la evolución del patrimonio (b20) al anexo (b21) sin ningún bloque de cuenta de resultados; puede que la página no se haya transcrito.",
+   "bloques": [
+    "b19",
+    "b20",
+    "b21"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de la P.A.E. Panaitolikos bajo ELP, ejercicio 01.07.2015-30.06.2016. Los bloques con cifras son ratios (b3), riesgo de liquidez (b4), detalle de activo fijo y de jugadores (b5-b9, b25), balance (b12-b19), evolución del patrimonio (b10, b20) y anexo (b21-b24). No aparece ningún bloque de estado de resultados ni notas que desglosen ingresos o gastos. La memoria (b3) menciona una pérdida después de impuestos de € 375.636,63 en 2016."
+}

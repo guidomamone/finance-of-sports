@@ -1,0 +1,242 @@
+{
+ "pdf": "Clubes/Grecia/Atromitos/Atromitos_FS_2025-06-30.pdf",
+ "md": "Clubes/Grecia/Atromitos/Atromitos_FS_2025-06-30.md",
+ "mdSha1": "ef4d8784666c56d741c4e8f30e69beb11b9b76ea",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T03:59:32.394Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    40,
+    77
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    166,
+    192
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    196,
+    229
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    235,
+    251
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    257,
+    270
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 19,
+   "lineas": [
+    562,
+    592
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 20,
+   "lineas": [
+    610,
+    633
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 21,
+   "lineas": [
+    663,
+    669
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 21,
+   "lineas": [
+    675,
+    679
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    683,
+    687
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 21,
+   "lineas": [
+    693,
+    698
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    708,
+    713
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    725,
+    730
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 23,
+   "lineas": [
+    748,
+    758
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 23,
+   "lineas": [
+    774,
+    778
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 23,
+   "lineas": [
+    784,
+    790
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 24,
+   "lineas": [
+    802,
+    809
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 24,
+   "lineas": [
+    813,
+    823
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    829,
+    845
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 25,
+   "lineas": [
+    851,
+    859
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    863,
+    877
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 26,
+   "lineas": [
+    907,
+    914
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 26,
+   "lineas": [
+    918,
+    927
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 27,
+   "lineas": [
+    961,
+    966
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 27,
+   "lineas": [
+    974,
+    987
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b19",
+  "b20"
+ ],
+ "notas_gastos": [
+  "b21",
+  "b23"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con decimales en euros (ej. '800.000,00', '€ 73.722,92'); no hay indicación de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2025",
+ "columna_anterior": "30/6/2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de transacciones con partes vinculadas (b25)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Es un detalle de operaciones con ETEKA, no un desglose de renglones del estado.",
+   "bloques": [
+    "b25"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados por función en b4 (pág. 10), cuentas individuales (nota 23: no hay consolidados). Nota 11 desglosa ingresos (b19, continúa en b20 con ingresos financieros y extraordinarios) y gastos (b21); b23 desglosa gastos de personal. b20 no muestra encabezado de años pero continúa b19 con las mismas columnas."
+}

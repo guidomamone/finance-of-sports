@@ -1,0 +1,443 @@
+{
+ "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2024-06-30.pdf",
+ "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2024-06-30.md",
+ "mdSha1": "2f5dcba2e8f8d3af89a27d54e8ffac26e71e62b0",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T04:05:29.861Z",
+ "ubicacion": {
+  "estado": [
+   "b11"
+  ],
+  "notas_ingresos": [
+   "b22"
+  ],
+  "notas_gastos": [
+   "b23",
+   "b24"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b11",
+   "escala": "unidades",
+   "evidencia": "No hay frase de escala; los importes van en euros con dos decimales (ej. 3.012.038,62, L494)"
+  },
+  {
+   "bloque": "b22",
+   "escala": "unidades",
+   "evidencia": "No hay frase de escala; importes con céntimos (ej. 84.468,44, L1006)"
+  },
+  {
+   "bloque": "b23",
+   "escala": "unidades",
+   "evidencia": "No hay frase de escala; importes con céntimos (ej. 757.093,55, L1029)"
+  },
+  {
+   "bloque": "b24",
+   "escala": "unidades",
+   "evidencia": "No hay frase de escala; importes con céntimos (ej. 590.478,75, L1061)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b11",
+   "linea": 494,
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "actual": "3.012.038,62",
+   "anterior": "610.049,59",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 495,
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "actual": "1.807.637,21",
+   "anterior": "42.500,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 496,
+   "etiqueta": "Σύνολο εσόδων",
+   "actual": "4.819.675,83",
+   "anterior": "652.549,59",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 497,
+   "etiqueta": "Αγορές εμπορευμάτων και υλικών",
+   "actual": "(1.353,23)",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 498,
+   "etiqueta": "Παροχές σε εργαζόμενους",
+   "actual": "(757.093,55)",
+   "anterior": "(542.650,46)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 499,
+   "etiqueta": "Αποσβέσεις",
+   "actual": "(27.160,14)",
+   "anterior": "(9.343,64)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 500,
+   "etiqueta": "Λοιπά έξοδα και ζημίες",
+   "actual": "(3.239.353,86)",
+   "anterior": "(532.325,83)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 501,
+   "etiqueta": "Σύνολο εξόδων",
+   "actual": "(4.024.960,78)",
+   "anterior": "(1.084.319,93)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 502,
+   "etiqueta": "Αποτελέσματα προ τόκων και φόρων",
+   "actual": "794.715,05",
+   "anterior": "(431.770,34)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 503,
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 504,
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "(949,48)",
+   "anterior": "(434,25)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 505,
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "actual": "11.132,32",
+   "anterior": "185.802,21",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 506,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "804.897,89",
+   "anterior": "(246.402,38)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 507,
+   "etiqueta": "Φόροι εισοδήματος",
+   "actual": "(13.655,45)",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 508,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "791.242,44",
+   "anterior": "(246.402,38)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 1006,
+   "etiqueta": "Έσοδα εισιτηρίων",
+   "actual": "84.468,44",
+   "anterior": "34.557,94",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Κύκλος εργασιών (καθαρός)"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1007,
+   "etiqueta": "Τηλεοπτικά δικαιώματα",
+   "actual": "1.362.068,97",
+   "anterior": "42.500,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Κύκλος εργασιών (καθαρός)"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1008,
+   "etiqueta": "Χορηγίες και διαφήμιση",
+   "actual": "1.744.028,23",
+   "anterior": "575.491,65",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Κύκλος εργασιών (καθαρός)"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1010,
+   "etiqueta": "Επιχορήγηση από ΠΑΜΕ ΣΤΟΙΧΗΜΑ",
+   "actual": "1.502.820,00",
+   "anterior": "185.802,21",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Λοιπά συνήθη έσοδα"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1011,
+   "etiqueta": "Επιχορήγηση από ΕΠΟ από συμμετοχή σε κύπελλο Ελλάδος",
+   "actual": "12.162,16",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Λοιπά συνήθη έσοδα"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1012,
+   "etiqueta": "Λοιπά έσοδα από παροχή υπηρεσιών σε τρίτους",
+   "actual": "112.004,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Λοιπά συνήθη έσοδα"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1013,
+   "etiqueta": "Εκτακτα και ανόργανα έσοδα",
+   "actual": "13.256,35",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Λοιπά έσοδα και κέρδη"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1014,
+   "etiqueta": "Σύνολο",
+   "actual": "4.830.808,15",
+   "anterior": "838.351,80",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1029,
+   "etiqueta": "ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΠΡΟΣΩΠΙΚΟΥ",
+   "actual": "757.093,55",
+   "anterior": "542.650,46",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Παροχές σε εργαζόμενους"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1030,
+   "etiqueta": "ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΤΡΙΤΩΝ",
+   "actual": "496.597,14",
+   "anterior": "93.383,76",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά έξοδα και ζημίες"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1031,
+   "etiqueta": "ΠΑΡΟΧΕΣ ΤΡΙΤΩΝ",
+   "actual": "2.115.419,21",
+   "anterior": "122.471,98",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά έξοδα και ζημίες"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1032,
+   "etiqueta": "ΦΟΡΟΙ - ΤΕΛΗ",
+   "actual": "76.914,28",
+   "anterior": "17.134,69",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά έξοδα και ζημίες"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1033,
+   "etiqueta": "ΔΙΑΦΟΡΑ ΕΞΟΔΑ",
+   "actual": "550.423,23",
+   "anterior": "296.952,52",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά έξοδα και ζημίες"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1034,
+   "etiqueta": "ΤΟΚΟΙ ΚΑΙ ΣΥΝΑΦΗ ΕΞΟΔΑ",
+   "actual": "949,48",
+   "anterior": "434,25",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Χρεωστικοί τόκοι και συναφή έξοδα"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1035,
+   "etiqueta": "ΑΠΟΣΒΕΣΕΙΣ ΠΕΡΙΟΔΟΥ",
+   "actual": "27.160,14",
+   "anterior": "9.343,64",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Αποσβέσεις"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1036,
+   "etiqueta": "ΛΟΙΠΑ ΕΚΤΑΚΤΑ & ΑΝΟΡΓ.ΕΞΟΔΑ",
+   "actual": "1.353,23",
+   "anterior": "2.382,88",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Αγορές εμπορευμάτων και υλικών"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1037,
+   "etiqueta": "Σύνολο",
+   "actual": "4.025.910,26",
+   "anterior": "1.084.754,18",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b24",
+   "linea": 1061,
+   "etiqueta": "Αμοιβές έμμισθου προσωπικού (μικτά ποσά)",
+   "actual": "590.478,75",
+   "anterior": "442.867,84",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΠΡΟΣΩΠΙΚΟΥ"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1062,
+   "etiqueta": "Κοινωνικές επιβαρύνσεις (εργοδοτικές εισφορές)",
+   "actual": "124.914,80",
+   "anterior": "99.782,62",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΠΡΟΣΩΠΙΚΟΥ"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1064,
+   "etiqueta": "Παρεπόμενες παροχές",
+   "actual": "41.700,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΠΡΟΣΩΠΙΚΟΥ"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1065,
+   "etiqueta": "Σύνολο",
+   "actual": "757.093,55",
+   "anterior": "542.650,46",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΠΡΟΣΩΠΙΚΟΥ"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 496,
+  "actual": "4.819.675,83"
+ },
+ "total_gastos": {
+  "linea": 501,
+  "actual": "(4.024.960,78)"
+ },
+ "resultado": {
+  "linea": 508,
+  "actual": "791.242,44",
+  "anterior": "(246.402,38)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se mantiene la asignación de las filas de la nota de ingresos (L1006-L1013) a 'Κύκλος εργασιών (καθαρός)', 'Λοιπά συνήθη έσοδα' y 'Λοιπά έσοδα και κέρδη' tal como se propuso, aunque los subtotales no cuadran con el estado?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Κύκλος εργασιών (καθαρός)",
+   "texto": "La nota (total 4.830.808,15, L1014) suma los tres renglones del estado (L494, L495, L505) pero sus partidas no reproducen 3.012.038,62 / 1.807.637,21 / 11.132,32, así que el mapeo fila a renglón es incierto.",
+   "bloques": [
+    "b22",
+    "b11"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se asigna 'ΛΟΙΠΑ ΕΚΤΑΚΤΑ & ΑΝΟΡΓ.ΕΞΟΔΑ' (L1036, 1.353,23) como desglose de 'Αγορές εμπορευμάτων και υλικών' (L497)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Αγορές εμπορευμάτων και υλικών",
+   "texto": "Coincide el importe 1.353,23 pero la etiqueta no corresponde y el año anterior difiere (2.382,88 vs 0).",
+   "bloques": [
+    "b23",
+    "b11"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Filas con importe vacío en el ejercicio actual (L1009, L1063) omitidas. La nota de gastos b23 incluye intereses (L1034), por eso su total 4.025.910,26 = Σύνολο εξόδων + 949,48. Las partidas L1030-L1033 suman exactamente 3.239.353,86 (Λοιπά έξοδα και ζημίες)."
+}

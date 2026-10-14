@@ -1,0 +1,186 @@
+{
+ "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.pdf",
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md",
+ "generado": "2026-10-14T04:17:56.033Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "b8f6e32"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 8.881784197001252e-16
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 4.751314 en este documento y 4.751314 en Panetolikos_FS_2024-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 2.982884 en Panetolikos_FS_2022-06-30.pdf y 2.982884 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 4.751314,
+  "gastos": 7.621847,
+  "financiero": -0.005245,
+  "impuesto": 0,
+  "resultadoImpreso": -2.875778,
+  "resultadoParaCargar": -2.875778,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Έσοδα από εισιτήρια",
+   "lado": "ingreso",
+   "M": 0.300214,
+   "pagina": 31,
+   "linea": 1103,
+   "origen": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\""
+  },
+  {
+   "etiqueta": "Έσοδα από μεταγραφές",
+   "lado": "ingreso",
+   "M": 0.1425,
+   "pagina": 31,
+   "linea": 1104,
+   "origen": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\""
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα",
+   "lado": "ingreso",
+   "M": 0.001698,
+   "pagina": 31,
+   "linea": 1105,
+   "origen": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\""
+  },
+  {
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 4.254506,
+   "pagina": 17,
+   "linea": 550,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.052396,
+   "pagina": 17,
+   "linea": 555,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων",
+   "lado": "gasto",
+   "M": 6.807271,
+   "pagina": 17,
+   "linea": 548,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 0.570216,
+   "pagina": 17,
+   "linea": 552,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διάθεσης",
+   "lado": "gasto",
+   "M": 0.088709,
+   "pagina": 17,
+   "linea": 553,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Παροχές τρίτων",
+   "lado": "gasto",
+   "M": 0.018375,
+   "pagina": 31,
+   "linea": 1114,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημίες\""
+  },
+  {
+   "etiqueta": "Φόροι και τέλη",
+   "lado": "gasto",
+   "M": 0.0008,
+   "pagina": 31,
+   "linea": 1115,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημίες\""
+  },
+  {
+   "etiqueta": "Διάφορα έξοδα",
+   "lado": "gasto",
+   "M": 0.046825,
+   "pagina": 31,
+   "linea": 1116,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημίες\""
+  },
+  {
+   "etiqueta": "Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις",
+   "lado": "gasto",
+   "M": 0.089651,
+   "pagina": 31,
+   "linea": 1117,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημίες\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": 0.006931,
+   "linea": 557
+  },
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.012176,
+   "linea": 558
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": 0,
+   "linea": 560
+  }
+ ]
+}

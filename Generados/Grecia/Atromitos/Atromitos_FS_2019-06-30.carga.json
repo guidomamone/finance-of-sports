@@ -1,0 +1,38 @@
+{
+ "pdf": "Clubes/Grecia/Atromitos/Atromitos_FS_2019-06-30.pdf",
+ "generado": "2026-10-14T04:26:27.931Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (atromitos-gr)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "carpetas-clubes.mjs dice atromitos-gr y quien.mjs --quien dice atromitos"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-13: Claude 2026-10-13: PAE sin grupo: las 6-8 menciones de 'consolidado' son el texto genérico de las notas (mismo patrón que AEK y Asteras), contra 24-46 de individual)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Grecia/Atromitos/Atromitos_FS_2019-06-30.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2019-06-30",
+  "evidencia": {
+   "pagina": 2,
+   "texto": "1 Ιουλίου 2018 έως 30 Ιουνίου 2019"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "atromitos-gr",
+ "year": 2019,
+ "cortadoEn": "filas"
+}

@@ -1,0 +1,159 @@
+{
+ "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2020-06-30.pdf",
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2020-06-30.md",
+ "generado": "2026-10-14T04:17:56.208Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2020,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "92c99de",
+  "c667331",
+  "4b32bd6",
+  "805d5e1"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 7.105427357601002e-15
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2020: 25.205029 en este documento y 25.205029 en PAOK_FS_2021-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2019: 46.679287 en PAOK_FS_2019-06-30.pdf y 46.679287 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: Son desgloses por naturaleza transversales a los gastos por función ya cargados; cargarlos duplicaría importes."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 25.205029,
+  "gastos": 51.976862,
+  "financiero": -0.132817,
+  "impuesto": 0,
+  "resultadoImpreso": -26.904651,
+  "resultadoParaCargar": -26.904651,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών",
+   "lado": "ingreso",
+   "M": 17.768593,
+   "pagina": 17,
+   "linea": 446,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 3.341295,
+   "pagina": 17,
+   "linea": 449,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+   "lado": "ingreso",
+   "M": 3.566975,
+   "pagina": 17,
+   "linea": 454,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.528165,
+   "pagina": 17,
+   "linea": 455,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος",
+   "lado": "gasto",
+   "M": 43.188601,
+   "pagina": 17,
+   "linea": 447,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 4.528406,
+   "pagina": 17,
+   "linea": 451,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διάθεσης",
+   "lado": "gasto",
+   "M": 2.482523,
+   "pagina": 17,
+   "linea": 452,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έξοδα και ζημιές",
+   "lado": "gasto",
+   "M": 1.777332,
+   "pagina": 17,
+   "linea": 453,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": 0.057784,
+   "linea": 457
+  },
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.190601,
+   "linea": 458
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": 0,
+   "linea": 460
+  }
+ ]
+}

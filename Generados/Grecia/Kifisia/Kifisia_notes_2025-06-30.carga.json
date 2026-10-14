@@ -1,0 +1,35 @@
+{
+ "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.pdf",
+ "generado": "2026-10-14T04:26:29.119Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (kifisia-gr)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "carpetas-clubes.mjs dice kifisia-gr y quien.mjs --quien dice kifisia"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 4 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-13: Claude 2026-10-13: PAE sin grupo: las 6-8 menciones de 'consolidado' son el texto genérico de las notas (mismo patrón que AEK y Asteras), contra 24-46 de individual)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-14): Claude 2026-10-14: el ejercicio va del 01/07/2024 al 30/06/2025 (estado de resultados de ese período); periodo.mjs no lo detectó"
+ },
+ "clubId": "kifisia-gr",
+ "year": 2025,
+ "cortadoEn": "filas"
+}

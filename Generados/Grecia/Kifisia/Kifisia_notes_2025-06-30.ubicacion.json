@@ -1,0 +1,233 @@
+{
+ "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.pdf",
+ "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.md",
+ "mdSha1": "2329c318f21ce5ba75754cd281f84cfa10f55f46",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T04:05:35.252Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    12,
+    19
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    38,
+    72
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    111,
+    120
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    124,
+    133
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    150,
+    158
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    239,
+    271
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    323,
+    353
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    365,
+    387
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    400,
+    427
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    440,
+    450
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    463,
+    481
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 15,
+   "lineas": [
+    500,
+    504
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    508,
+    516
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    786,
+    798
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    800,
+    812
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 23,
+   "lineas": [
+    833,
+    837
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    843,
+    849
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    855,
+    859
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    900,
+    904
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    910,
+    917
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    930,
+    934
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    940,
+    949
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 25,
+   "lineas": [
+    955,
+    962
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 26,
+   "lineas": [
+    991,
+    997
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b9"
+ ],
+ "notas_ingresos": [
+  "b22"
+ ],
+ "notas_gastos": [
+  "b23",
+  "b24"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase sobre la escala en el estado de resultados (b9); probablemente en euros (unidades).",
+ "moneda": "EUR",
+ "columna_ejercicio": "01/07/2024 έως 30/06/2025",
+ "columna_anterior": "01/07/2023 έως 30/06/2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del estado de resultados (b9) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No se ve ninguna frase de escala sobre b9; la sociedad es una ΠΑΕ que presenta estados individuales según las normas griegas, normalmente en euros.",
+   "bloques": [
+    "b9"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estados individuales de ΠΑΕ ΚΗΦΙΣΙΑ. b9 es la Κατάσταση Αποτελεσμάτων. b22 desglosa los ingresos (nota 11). b23 desglosa los gastos (nota 12). b24 abre los gastos de personal (nota 17). b6 parece ser un resumen del balance, por lo que se excluye."
+}

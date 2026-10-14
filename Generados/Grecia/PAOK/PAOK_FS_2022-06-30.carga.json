@@ -1,0 +1,39 @@
+{
+ "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2022-06-30.pdf",
+ "generado": "2026-10-14T04:26:30.488Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (paok-gr)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "carpetas-clubes.mjs dice paok-gr y quien.mjs --quien dice paok"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-13: Claude 2026-10-13: PAOK PAE es filial de DIMERA Ltd, que es la que consolida (PAOK_FS_2024-06-30.md L1217-1219, nota 21); los estados de la PAE son individuales (8 menciones de consolidado contra 53-59 de individual))"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2022-06-30.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-06-30",
+  "evidencia": {
+   "pagina": 6,
+   "texto": "|  Αριθμοδείκτης | Τύπος | 30.06.2022 | 30.06.2021 Αναπροσ.  |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "temporada"
+ },
+ "clubId": "paok-gr",
+ "year": 2022,
+ "cortadoEn": "filas"
+}

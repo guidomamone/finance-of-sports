@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2019-06-30.md",
+ "clave": "415d460829e9da0475152514cc9ebd7ca5aacc01",
+ "generado": "2026-10-14T04:18:09.226Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado es correcto. Las tres filas de nota (L1514, L1515, L1518) suman 0,044632 y reemplazan a 'Λοιπά έξοδα και ζημιές' (L588, -44.631,72). Los subtotales no están cargados. Los renglones vacíos o en cero no faltan. El resultado reconstruido es -0,217148, igual al impreso."
+ }
+}

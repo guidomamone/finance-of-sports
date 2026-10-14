@@ -1,0 +1,217 @@
+{
+ "pdf": "Clubes/Grecia/Atromitos/Atromitos_notes_2021-06-30.pdf",
+ "md": "Clubes/Grecia/Atromitos/Atromitos_notes_2021-06-30.md",
+ "mdSha1": "75ff0c9b234c5c5bd15794b431ae4d3fedb437f8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T04:02:17.366Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    38,
+    74
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    160,
+    187
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    191,
+    225
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    231,
+    247
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    253,
+    266
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    529,
+    553
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    571,
+    594
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    624,
+    630
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    636,
+    640
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    648,
+    653
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    659,
+    665
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    671,
+    676
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    692,
+    697
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    713,
+    721
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    739,
+    743
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    749,
+    756
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 22,
+   "lineas": [
+    762,
+    769
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    779,
+    804
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    812,
+    826
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 25,
+   "lineas": [
+    856,
+    863
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    867,
+    877
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 27,
+   "lineas": [
+    919,
+    944
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b18"
+ ],
+ "notas_gastos": [
+  "b19",
+  "b21"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala; los estados griegos de este tipo suelen presentarse en euros (unidades).",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2021",
+ "columna_anterior": "30/6/2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del estado de resultados (b4) están expresados en euros enteros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No aparece en el índice ninguna leyenda 'σε ευρώ' o 'σε χιλιάδες ευρώ' sobre la tabla b4.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales (ΑΕ), estado de resultados por función en b4. b18 desglosa ingresos (nota 11), b19 gastos por naturaleza y b21 gastos de personal. Se excluyen balance (b2, b3), patrimonio (b5), activo fijo (b6, b7), notas de balance (b8-b17) y partes vinculadas (b22). El encabezado de b3 repite 30/6/2020 por error, pero no afecta a la carga."
+}

@@ -1,0 +1,199 @@
+{
+ "pdf": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.pdf",
+ "md": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md",
+ "generado": "2026-10-14T04:18:22.545Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2021,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2021-06-30 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-14"
+  }
+ ],
+ "cola": [
+  "5b7e75d"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 9.99999905104687e-9
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Κύκλος εργασιών (καθαρός)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων (Πωλήσεις Ποδοσφαιριστών)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Λοιπά έσοδα και κέρδη\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se cargan como nota de gastos tanto el cuadro de gastos por naturaleza 'Έξοδα' (b28) como el cuadro por función 'Ανάλυση Εξόδων' (b29)?",
+  "duda de extraer que no afecta la carga: La columna 30/6/2020 de b34 tiene un ',00' duplicado (L2257-L2259), probable error de tipeo; se transcribieron tal cual.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 8.615968,
+  "gastos": 9.608135,
+  "financiero": -0.018852,
+  "impuesto": 0,
+  "resultadoImpreso": -1.01102,
+  "resultadoParaCargar": -1.01102,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "lado": "ingreso",
+   "M": 6.86235,
+   "pagina": 16,
+   "linea": 916,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων (Πωλήσεις Ποδοσφαιριστών)",
+   "lado": "ingreso",
+   "M": 1.07127,
+   "pagina": 16,
+   "linea": 922,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.682348,
+   "pagina": 16,
+   "linea": 923,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων (Έξοδα ποδοσφαιρικού τμήματος)",
+   "lado": "gasto",
+   "M": 6.267535,
+   "pagina": 16,
+   "linea": 917,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 0.485331,
+   "pagina": 16,
+   "linea": 919,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διάθεσης",
+   "lado": "gasto",
+   "M": 0.119454,
+   "pagina": 16,
+   "linea": 920,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Φορολογικά πρόστιμα και προσαυξήσεις",
+   "lado": "gasto",
+   "M": 0.077241,
+   "pagina": 39,
+   "linea": 2169,
+   "origen": "nota que desglosa \"Λοιπά έξοδα, προβλέψεις και ζημιές\""
+  },
+  {
+   "etiqueta": "Έκτακτα και ανόργανα έξοδα",
+   "lado": "gasto",
+   "M": 1.271669,
+   "pagina": 39,
+   "linea": 2170,
+   "origen": "nota que desglosa \"Λοιπά έξοδα, προβλέψεις και ζημιές\""
+  },
+  {
+   "etiqueta": "Προβλέψεις για έκτακτους κινδύνους",
+   "lado": "gasto",
+   "M": 1.386906,
+   "pagina": 39,
+   "linea": 2171,
+   "origen": "nota que desglosa \"Λοιπά έξοδα, προβλέψεις και ζημιές\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": 0.000169,
+   "linea": 925
+  },
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.019022,
+   "linea": 926
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": null,
+   "linea": 928
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "0781881a5e929efdf7bfaf381a75629d28386c02",
+  "rango": [
+   913,
+   932
+  ],
+  "lineasCargadas": [
+   916,
+   922,
+   923,
+   917,
+   919,
+   920,
+   2169,
+   2170,
+   2171,
+   925,
+   926,
+   928
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 913 a 932 del .md):\nL914: |   | **Σημ.** | **30.06.2021** | **30.06.2020**  |\nL915: | --- | --- | --- | --- |\nL916: |  Κύκλος εργασιών (καθαρός) | **10.1** | 6.862.349,83 | 5.301.060,00  |\nL917: |  Κόστος πωλήσεων (Έξοδα ποδοσφαιρικού τμήματος) | **10.2** | (6.267.535,42) | (4.738.968,00)  |\nL918: |  **Μικτό αποτέλεσμα** |  | **594.814,41** | **562.092,00**  |\nL919: |  Έξοδα διοίκησης | **10.2** | (485.330,82) | (366.965,00)  |\nL920: |  Έξοδα διάθεσης | **10.2** | (119.453,70) | (90.321,00)  |\nL921: |  Λοιπά έξοδα, προβλέψεις και ζημιές | **10.3** | (2.735.815,31) | (1.165.071,00)  |\nL922: |  Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων (Πωλήσεις Ποδοσφαιριστών) | **10.4** | 1.071.269,74 | 1.075.000,00  |\nL923: |  Λοιπά έσοδα και κέρδη | **10.5** | 682.348,35 | 29.420,00  |\nL924: |  **Αποτελέσματα προ τόκων και φόρων** |  | **(992.167,34)** | **44.155,00**  |\nL925: |  Πιστωτικοί τόκοι και συναφή έσοδα |  | 169,28 | -  |\nL926: |  Χρεωστικοί τόκοι και συναφή έξοδα | **10.2** | (19.021,78) | (10.867,00)  |\nL927: |  **Αποτέλεσμα προ φόρων** |  | **(1.011.019,84)** | **33.288,00**  |\nL928: |  Φόροι εισοδήματος |  | - | -  |\nL929: |  **Αποτέλεσμα περιόδου μετά από φόρους** |  | **(1.011.019,84)** | **33.288,00**  |\nL931: ΜΕΓΑΣ ΧΟΡΗΓΟΣ\nL932: **NetBet**\n\nLO QUE SE CARGA:\n- ingreso · \"Κύκλος εργασιών (καθαρός)\" · 6.86235 · L916\n- ingreso · \"Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων (Πωλήσεις Ποδοσφαιριστών)\" · 1.07127 · L922\n- ingreso · \"Λοιπά έσοδα και κέρδη\" · 0.682348 · L923\n- gasto · \"Κόστος πωλήσεων (Έξοδα ποδοσφαιρικού τμήματος)\" · 6.267535 · L917\n- gasto · \"Έξοδα διοίκησης\" · 0.485331 · L919\n- gasto · \"Έξοδα διάθεσης\" · 0.119454 · L920\n- gasto · \"Φορολογικά πρόστιμα και προσαυξήσεις\" · 0.077241 · L2169 (de una nota)\n- gasto · \"Έκτακτα και ανόργανα έξοδα\" · 1.271669 · L2170 (de una nota)\n- gasto · \"Προβλέψεις για έκτακτους κινδύνους\" · 1.386906 · L2171 (de una nota)\n- financiero · \"Πιστωτικοί τόκοι και συναφή έσοδα\" · 0.000169 · L925\n- financiero · \"Χρεωστικοί τόκοι και συναφή έξοδα\" · -0.019022 · L926\n- impuesto · \"Φόροι εισοδήματος\" · 0 · L928"
+ }
+}

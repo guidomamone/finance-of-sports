@@ -1,0 +1,233 @@
+{
+ "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.pdf",
+ "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.md",
+ "mdSha1": "d7b3c2d79142cd3fd5e28f87b4622f8a0c6a4900",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T04:04:03.646Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    10,
+    16
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    43,
+    79
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    122,
+    131
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    146,
+    154
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    220,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    241,
+    273
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    306,
+    310
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    406,
+    434
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    443,
+    469
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 14,
+   "lineas": [
+    480,
+    496
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    508,
+    516
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    528,
+    550
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 17,
+   "lineas": [
+    575,
+    583
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 25,
+   "lineas": [
+    867,
+    879
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    893,
+    898
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    904,
+    907
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 26,
+   "lineas": [
+    920,
+    924
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 27,
+   "lineas": [
+    963,
+    966
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 27,
+   "lineas": [
+    972,
+    977
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 27,
+   "lineas": [
+    983,
+    988
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    1001,
+    1008
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 28,
+   "lineas": [
+    1014,
+    1024
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 29,
+   "lineas": [
+    1053,
+    1059
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 30,
+   "lineas": [
+    1134,
+    1142
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b10"
+ ],
+ "notas_ingresos": [
+  "b21"
+ ],
+ "notas_gastos": [
+  "b22",
+  "b23"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "No se ve indicación de escala en el índice; estados griegos de PAE pequeñas suelen presentarse en euros (unidades).",
+ "moneda": "EUR",
+ "columna_ejercicio": "01/07/2022 έως 30/06/2023",
+ "columna_anterior": "9/8/2021 έως 30/06/2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de la Κατάσταση Αποτελεσμάτων (b10) están en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El índice no muestra ninguna frase de escala sobre el estado de resultados.",
+   "bloques": [
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estados individuales de la ΠΑΕ ΚΗΦΙΣΙΑΣ. Estado de resultados por naturaleza en b10. b21 desglosa ingresos (entradas, TV, patrocinio, subvención ΠΑΜΕ ΣΤΟΙΧΗΜΑ); b22 desglosa gastos; b23 desglosa gastos de personal. El ejercicio anterior es un período irregular (9/8/2021-30/06/2022)."
+}

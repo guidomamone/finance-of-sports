@@ -1,0 +1,225 @@
+{
+ "pdf": "Clubes/Grecia/Atromitos/Atromitos_FS_2023-06-30.pdf",
+ "md": "Clubes/Grecia/Atromitos/Atromitos_FS_2023-06-30.md",
+ "mdSha1": "f2354fabfe058dda1850fc420dee00f973d55933",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T03:57:46.105Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    40,
+    77
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    165,
+    192
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    196,
+    233
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    239,
+    255
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    261,
+    280
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    543,
+    569
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    587,
+    615
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    645,
+    651
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    657,
+    661
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    669,
+    674
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    680,
+    686
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    692,
+    697
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    713,
+    718
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    734,
+    744
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    766,
+    770
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    776,
+    783
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 22,
+   "lineas": [
+    789,
+    797
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    807,
+    834
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    842,
+    856
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    882,
+    889
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    897,
+    906
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 26,
+   "lineas": [
+    938,
+    943
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 26,
+   "lineas": [
+    951,
+    972
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b18"
+ ],
+ "notas_gastos": [
+  "b19",
+  "b21"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna leyenda de escala; en Grecia (ELP) suele presentarse en euros (la nota 24 cita importes como € 66.477,92).",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2023",
+ "columna_anterior": "30/6/2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El estado de resultados (b4) está expresado en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No aparece una leyenda de escala en las líneas sobre b4; la nota 24 usa importes en euros con decimales.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estados individuales de la SAE (no hay consolidado). b4 es la cuenta de resultados por función. b18 desglosa los ingresos (servicios: entradas, TV, etc., y extraordinarios) y b19 los gastos por naturaleza. b21 abre los gastos de personal. Se excluyen: el balance (b2-b3), el cuadro de patrimonio (b5), el activo fijo (b6-b7), los saldos (b8-b17), la nota del consejo (b22) y las partes vinculadas (b23)."
+}

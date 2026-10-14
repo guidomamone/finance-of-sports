@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.md",
+ "clave": "9c709446ba8769a7db835ef979992720c8e35ffe",
+ "generado": "2026-10-14T04:18:16.437Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Se cargan todos los renglones con importe de la columna 30/6/2016. Los subtotales (L217, L219, L227, L230, L232) quedan excluidos, como corresponde. Los renglones en cero (L220, L222-L224) no hacen falta. Los lados son correctos y el resultado da -0,501714 M, igual al impreso."
+ }
+}

@@ -1,0 +1,228 @@
+{
+ "pdf": "Clubes/Grecia/Atromitos/Atromitos_FS_2022-06-30.pdf",
+ "md": "Clubes/Grecia/Atromitos/Atromitos_FS_2022-06-30.md",
+ "mdSha1": "656d6ca17f0ea02e876ce6088826e23d52c7dc90",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T03:56:56.889Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    40,
+    77
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    163,
+    194
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    198,
+    235
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    241,
+    260
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    266,
+    279
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    542,
+    565
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    583,
+    606
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    636,
+    642
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    648,
+    652
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    660,
+    664
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    670,
+    676
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    682,
+    687
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    703,
+    708
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    724,
+    734
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    757,
+    761
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    767,
+    774
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 22,
+   "lineas": [
+    780,
+    788
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    798,
+    826
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    834,
+    848
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 25,
+   "lineas": [
+    878,
+    885
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    889,
+    898
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 26,
+   "lineas": [
+    936,
+    961
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b18"
+ ],
+ "notas_gastos": [
+  "b19",
+  "b21"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna leyenda de escala; los estados griegos según ΕΛΠ suelen presentarse en euros (unidades).",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2022",
+ "columna_anterior": "30/6/2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de la Κατάσταση Αποτελεσμάτων (b4) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No se ve ninguna leyenda de escala en el índice sobre el bloque b4.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de transacciones con partes vinculadas (b22)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Son operaciones con partes vinculadas, no un desglose de categorías del estado de resultados.",
+   "bloques": [
+    "b22"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados por función individual (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ) en b4. La nota 11 desglosa los ingresos (b18) y los gastos (b19). El cuadro b21 abre los gastos de personal. b10 (ingresos devengados) es una partida de balance y no se elige."
+}

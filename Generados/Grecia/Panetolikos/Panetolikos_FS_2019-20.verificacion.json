@@ -1,0 +1,144 @@
+{
+ "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2019-20.pdf",
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2019-20.md",
+ "generado": "2026-10-14T04:17:55.992Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2020,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "0940bec"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 4.440892098500626e-16
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2020: 3.64616 en este documento y 3.64616 en Panetolikos_FS_2021-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de extraer confirmada por las sumas (columna, \"-\"): ¿En el cuadro 'Παροχές σε εργαζόμενους' (L773-L778) el primer importe de cada fila (ej. 662.155,68) corresponde a 30.06.2020 y el segundo a 30.06.2019?",
+  "duda de extraer que no afecta la carga: El estado es por función (L525) y ningún renglón coincide con el total 1.401.016,51 de L778."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 3.64616,
+  "gastos": 5.041563,
+  "financiero": -0.005408,
+  "impuesto": 0,
+  "resultadoImpreso": -1.400811,
+  "resultadoParaCargar": -1.400811,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "lado": "ingreso",
+   "M": 1.111543,
+   "pagina": 15,
+   "linea": 528,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 2.521303,
+   "pagina": 15,
+   "linea": 531,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.013314,
+   "pagina": 15,
+   "linea": 536,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων",
+   "lado": "gasto",
+   "M": 4.428104,
+   "pagina": 15,
+   "linea": 529,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 0.555211,
+   "pagina": 15,
+   "linea": 533,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διάθεσης",
+   "lado": "gasto",
+   "M": 0.029052,
+   "pagina": 15,
+   "linea": 534,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έξοδα και ζημιές",
+   "lado": "gasto",
+   "M": 0.029196,
+   "pagina": 15,
+   "linea": 535,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": 0.000761,
+   "linea": 538
+  },
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.006169,
+   "linea": 539
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": 0,
+   "linea": 541
+  }
+ ]
+}

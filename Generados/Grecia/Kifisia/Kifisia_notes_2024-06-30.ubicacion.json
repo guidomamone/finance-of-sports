@@ -1,0 +1,241 @@
+{
+ "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2024-06-30.pdf",
+ "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2024-06-30.md",
+ "mdSha1": "2f5dcba2e8f8d3af89a27d54e8ffac26e71e62b0",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T04:04:48.401Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    10,
+    16
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    43,
+    78
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    121,
+    130
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    141,
+    152
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    167,
+    175
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    241,
+    263
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    272,
+    297
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    330,
+    334
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    418,
+    446
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 14,
+   "lineas": [
+    455,
+    481
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    492,
+    508
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    520,
+    532
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 17,
+   "lineas": [
+    543,
+    565
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 18,
+   "lineas": [
+    590,
+    598
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    865,
+    877
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 26,
+   "lineas": [
+    898,
+    903
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 26,
+   "lineas": [
+    909,
+    917
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    923,
+    927
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 27,
+   "lineas": [
+    966,
+    969
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    982,
+    987
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    993,
+    998
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 28,
+   "lineas": [
+    1004,
+    1014
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 29,
+   "lineas": [
+    1027,
+    1037
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    1059,
+    1065
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 31,
+   "lineas": [
+    1143,
+    1153
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b11"
+ ],
+ "notas_ingresos": [
+  "b22"
+ ],
+ "notas_gastos": [
+  "b23",
+  "b24"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala; las cuentas griegas de pequeñas entidades suelen presentarse en euros (unidades).",
+ "moneda": "EUR",
+ "columna_ejercicio": "01/07/2023 έως 30/06/2024",
+ "columna_anterior": "01/07/2022 έως 30/06/2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de la ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ (b11) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No se ve en el índice ninguna leyenda de escala sobre el estado de resultados (b11).",
+   "bloques": [
+    "b11"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de la ΠΑΕ ΚΗΦΙΣΙΑ, ejercicio 01/07/2023-30/06/2024. b11 es el estado de resultados por naturaleza. b22 (nota 11) desglosa los ingresos: entradas, derechos de TV, patrocinio y extraordinarios. b23 desglosa los gastos y b24 (nota 17) abre los gastos de personal. Se excluyen el balance (b9, b10), el estado de cambios en el patrimonio (b12), el flujo de efectivo (b13), el activo fijo (b15), las notas de activo y pasivo, los indicadores y los cuadros de accionistas y del consejo."
+}

@@ -1,0 +1,194 @@
+{
+ "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2024-06-30.pdf",
+ "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2024-06-30.md",
+ "generado": "2026-10-14T04:17:55.874Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "no se sabe",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "01c5a44"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 3.3306690738754696e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 0.838352 en Kifisia_notes_2023-06-30.pdf y 0.838352 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Κύκλος εργασιών (καθαρός)\" no suma el renglón (3.190566 contra 3.012039, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Λοιπά συνήθη έσοδα\" no suma el renglón (1.626986 contra 1.807637, sumando sus renglones): quedó el renglón del estado",
+  "escalón \"nota exacta en la lectura 5\": \"Λοιπά έξοδα και ζημίες\" (L500) se abre en las 4 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar de escala confirmada por otro documento del club (to-do 213): Kifisia_notes_2025-06-30.md L218 imprime 4.024.960,78 con su moneda; la carga usó unidades",
+  "duda de extraer que no afecta la carga: Coincide el importe 1.353,23 pero la etiqueta no corresponde y el año anterior difiere (2.382,88 vs 0)."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Κύκλος εργασιών (καθαρός)",
+   "suma": 3.190566,
+   "objetivo": 3.012039
+  },
+  {
+   "renglon": "Λοιπά συνήθη έσοδα",
+   "suma": 1.626986,
+   "objetivo": 1.807637
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Κύκλος εργασιών (καθαρός)",
+   "suma": 3.190566,
+   "objetivo": 3.012039
+  },
+  {
+   "renglon": "Λοιπά συνήθη έσοδα",
+   "suma": 1.626986,
+   "objetivo": 1.807637
+  }
+ ],
+ "totales": {
+  "ingresos": 4.830808,
+  "gastos": 4.024961,
+  "financiero": -0.000949,
+  "impuesto": -0.013655,
+  "resultadoImpreso": 0.791242,
+  "resultadoParaCargar": 0.791242,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "lado": "ingreso",
+   "M": 3.012039,
+   "pagina": 15,
+   "linea": 494,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 1.807637,
+   "pagina": 15,
+   "linea": 495,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.011132,
+   "pagina": 15,
+   "linea": 505,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Αγορές εμπορευμάτων και υλικών",
+   "lado": "gasto",
+   "M": 0.001353,
+   "pagina": 15,
+   "linea": 497,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Παροχές σε εργαζόμενους",
+   "lado": "gasto",
+   "M": 0.757094,
+   "pagina": 15,
+   "linea": 498,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Αποσβέσεις",
+   "lado": "gasto",
+   "M": 0.02716,
+   "pagina": 15,
+   "linea": 499,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΤΡΙΤΩΝ",
+   "lado": "gasto",
+   "M": 0.496597,
+   "pagina": 29,
+   "linea": 1030,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημίες\""
+  },
+  {
+   "etiqueta": "ΠΑΡΟΧΕΣ ΤΡΙΤΩΝ",
+   "lado": "gasto",
+   "M": 2.115419,
+   "pagina": 29,
+   "linea": 1031,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημίες\""
+  },
+  {
+   "etiqueta": "ΦΟΡΟΙ - ΤΕΛΗ",
+   "lado": "gasto",
+   "M": 0.076914,
+   "pagina": 29,
+   "linea": 1032,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημίες\""
+  },
+  {
+   "etiqueta": "ΔΙΑΦΟΡΑ ΕΞΟΔΑ",
+   "lado": "gasto",
+   "M": 0.550423,
+   "pagina": 29,
+   "linea": 1033,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημίες\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.000949,
+   "linea": 504
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": -0.013655,
+   "linea": 507
+  }
+ ]
+}

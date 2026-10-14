@@ -1,0 +1,265 @@
+{
+ "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2022-06-30.pdf",
+ "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2022-06-30.md",
+ "mdSha1": "097f3a320b4b3cf798386159bd1abe7271dda898",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T04:03:04.990Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    15
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    43,
+    79
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    120,
+    129
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    133,
+    142
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    159,
+    169
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 5,
+   "lineas": [
+    175,
+    183
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    261,
+    266
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    268,
+    271
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    281,
+    314
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    347,
+    351
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    447,
+    475
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    485,
+    511
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    523,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    551,
+    556
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 17,
+   "lineas": [
+    568,
+    590
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    615,
+    625
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 19,
+   "lineas": [
+    638,
+    646
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    914,
+    926
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 27,
+   "lineas": [
+    952,
+    957
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 27,
+   "lineas": [
+    963,
+    966
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 27,
+   "lineas": [
+    972,
+    973
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 28,
+   "lineas": [
+    983,
+    986
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 28,
+   "lineas": [
+    1018,
+    1021
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    1035,
+    1040
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1046,
+    1051
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 29,
+   "lineas": [
+    1057,
+    1064
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 30,
+   "lineas": [
+    1078,
+    1088
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 30,
+   "lineas": [
+    1110,
+    1116
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b13"
+ ],
+ "notas_ingresos": [
+  "b26"
+ ],
+ "notas_gastos": [
+  "b27",
+  "b28"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con decimales en euros (ej. 'ΤΑΜΕΙΟ 55.096,38'); no se indica 'en miles'.",
+ "moneda": "EUR",
+ "columna_ejercicio": "9/8/2021 εως 30/06/2022",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de la memoria de gestión (b9, pág. 9), que repite cifras resumidas del resultado y del balance?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Καθαρά αποτελέσματα χρήσεως προ φόρων",
+   "texto": "b9 parece un resumen del informe de gestión que mezcla balance y resultado, ya contenido en b13.",
+   "bloques": [
+    "b9"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Primer ejercicio de la sociedad (9/8/2021-30/06/2022, período irregular de unos 11 meses), sin columna comparativa. Estado de resultados por naturaleza en b13 (individual). Nota 11 (b26) desglosa ingresos (taquilla, TV, patrocinio, subvención PAME Stoixima); nota 12 (b27) desglosa gastos; nota 17 (b28) desglosa gastos de personal."
+}

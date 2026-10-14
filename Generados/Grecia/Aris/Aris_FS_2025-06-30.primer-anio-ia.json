@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_FS_2025-06-30.md",
+ "clave": "85bfa79f0d641f4c9f8d0c7b8244904d582f3e91",
+ "generado": "2026-10-14T04:18:03.957Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "No encontré problemas. Los gastos de personal de la nota (L1422-L1432) suman 8,553748 y reemplazan exactamente a L481. Los otros gastos operativos de la nota (L1473-L1477) suman 6,356695; con el ajuste de redondeo de -0,000001 dan los 6,356694 de L484. No se cargaron subtotales (L479, L485, L490, L497, L501) y los renglones en cero no faltan."
+ }
+}

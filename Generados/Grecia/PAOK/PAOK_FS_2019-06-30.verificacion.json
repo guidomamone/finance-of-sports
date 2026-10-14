@@ -1,0 +1,264 @@
+{
+ "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2019-06-30.pdf",
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2019-06-30.md",
+ "generado": "2026-10-14T04:17:56.174Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2019,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "0388b5c",
+  "a8deae5",
+  "0388b5c",
+  "0388b5c",
+  "0388b5c"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.000000254298584e-8
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 46.679287 en este documento y 46.679287 en PAOK_FS_2020-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Κύκλος εργασιών\" no suma el renglón (33.985578 contra 33.922723, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro de gastos de personal (L1123-L1127) por ser un desglose transversal de partidas ya incluidas en otras notas?"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Κύκλος εργασιών",
+   "suma": 33.985578,
+   "objetivo": 33.922723
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Κύκλος εργασιών",
+   "suma": 33.985578,
+   "objetivo": 33.922723
+  }
+ ],
+ "totales": {
+  "ingresos": 46.679287,
+  "gastos": 51.784655,
+  "financiero": -0.172458,
+  "impuesto": 0,
+  "resultadoImpreso": -5.277826,
+  "resultadoParaCargar": -5.277826,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών",
+   "lado": "ingreso",
+   "M": 33.922723,
+   "pagina": 16,
+   "linea": 423,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 0.283655,
+   "pagina": 16,
+   "linea": 426,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+   "lado": "ingreso",
+   "M": 9.992336,
+   "pagina": 16,
+   "linea": 431,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 2.480573,
+   "pagina": 16,
+   "linea": 432,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Αμοιβές προσωπικού",
+   "lado": "gasto",
+   "M": 3.902159,
+   "pagina": 30,
+   "linea": 1003,
+   "origen": "nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\""
+  },
+  {
+   "etiqueta": "Αμοιβές τρίτων",
+   "lado": "gasto",
+   "M": 27.2064,
+   "pagina": 30,
+   "linea": 1004,
+   "origen": "nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\""
+  },
+  {
+   "etiqueta": "Παροχές τρίτων",
+   "lado": "gasto",
+   "M": 0.992365,
+   "pagina": 30,
+   "linea": 1005,
+   "origen": "nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\""
+  },
+  {
+   "etiqueta": "Φόροι-Τέλη",
+   "lado": "gasto",
+   "M": 0.188225,
+   "pagina": 30,
+   "linea": 1006,
+   "origen": "nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\""
+  },
+  {
+   "etiqueta": "Διάφορα έξοδα",
+   "lado": "gasto",
+   "M": 3.96633,
+   "pagina": 30,
+   "linea": 1007,
+   "origen": "nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\""
+  },
+  {
+   "etiqueta": "Αποσβέσεις",
+   "lado": "gasto",
+   "M": 5.946594,
+   "pagina": 30,
+   "linea": 1008,
+   "origen": "nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\""
+  },
+  {
+   "etiqueta": "Αγορές Αναλωσίμων",
+   "lado": "gasto",
+   "M": 0.520419,
+   "pagina": 30,
+   "linea": 1009,
+   "origen": "nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\""
+  },
+  {
+   "etiqueta": "Αμοιβές προσωπικού",
+   "lado": "gasto",
+   "M": 1.447252,
+   "pagina": 30,
+   "linea": 1014,
+   "origen": "nota que desglosa \"Έξοδα διοίκησης\""
+  },
+  {
+   "etiqueta": "Αμοιβές τρίτων",
+   "lado": "gasto",
+   "M": 0.848495,
+   "pagina": 30,
+   "linea": 1015,
+   "origen": "nota que desglosa \"Έξοδα διοίκησης\""
+  },
+  {
+   "etiqueta": "Παροχές τρίτων",
+   "lado": "gasto",
+   "M": 0.393115,
+   "pagina": 30,
+   "linea": 1016,
+   "origen": "nota que desglosa \"Έξοδα διοίκησης\""
+  },
+  {
+   "etiqueta": "Φόροι-Τέλη",
+   "lado": "gasto",
+   "M": 0.458273,
+   "pagina": 30,
+   "linea": 1017,
+   "origen": "nota que desglosa \"Έξοδα διοίκησης\""
+  },
+  {
+   "etiqueta": "Διάφορα έξοδα",
+   "lado": "gasto",
+   "M": 1.44743,
+   "pagina": 30,
+   "linea": 1018,
+   "origen": "nota que desglosa \"Έξοδα διοίκησης\""
+  },
+  {
+   "etiqueta": "Αποσβέσεις",
+   "lado": "gasto",
+   "M": 0.244356,
+   "pagina": 30,
+   "linea": 1019,
+   "origen": "nota que desglosa \"Έξοδα διοίκησης\""
+  },
+  {
+   "etiqueta": "Λοιπές Προβλέψεις",
+   "lado": "gasto",
+   "M": 0.025219,
+   "pagina": 30,
+   "linea": 1020,
+   "origen": "nota que desglosa \"Έξοδα διοίκησης\""
+  },
+  {
+   "etiqueta": "Έξοδα διάθεσης",
+   "lado": "gasto",
+   "M": 2.997523,
+   "pagina": 16,
+   "linea": 429,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έξοδα και ζημιές",
+   "lado": "gasto",
+   "M": 1.2005,
+   "pagina": 16,
+   "linea": 430,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": 0.025076,
+   "linea": 434
+  },
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.197534,
+   "linea": 435
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": 0,
+   "linea": 437
+  }
+ ]
+}

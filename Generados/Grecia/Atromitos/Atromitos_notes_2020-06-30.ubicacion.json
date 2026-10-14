@@ -1,0 +1,209 @@
+{
+ "pdf": "Clubes/Grecia/Atromitos/Atromitos_notes_2020-06-30.pdf",
+ "md": "Clubes/Grecia/Atromitos/Atromitos_notes_2020-06-30.md",
+ "mdSha1": "b6175df7fa1cf904aa3e9cfd836106dc6a58fb4d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T04:01:20.733Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    38,
+    74
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    160,
+    188
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    192,
+    231
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    237,
+    256
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    262,
+    275
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    538,
+    563
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    581,
+    609
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    639,
+    645
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    651,
+    655
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    663,
+    668
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    674,
+    680
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    686,
+    691
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    707,
+    712
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    740,
+    744
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    754,
+    761
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    767,
+    775
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    785,
+    809
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 24,
+   "lineas": [
+    817,
+    831
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 25,
+   "lineas": [
+    861,
+    868
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 25,
+   "lineas": [
+    872,
+    882
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 27,
+   "lineas": [
+    924,
+    949
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b17"
+ ],
+ "notas_gastos": [
+  "b18",
+  "b20"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra frase de escala (probablemente unidades de euro, típico de balances griegos bajo ΕΛΠ).",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2020",
+ "columna_anterior": "30/6/2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del estado de resultados (b4) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No se ve ninguna leyenda de escala sobre el estado de resultados ni sobre las notas.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de la ΠΑΕ Atromitos bajo ΕΛΠ. b4 es la cuenta de resultados por función; b17 desglosa ingresos (nota 11), b18 los gastos por naturaleza y b20 los gastos de personal. Se excluyen el balance, la evolución del patrimonio neto, el activo fijo, los saldos y las partes vinculadas."
+}

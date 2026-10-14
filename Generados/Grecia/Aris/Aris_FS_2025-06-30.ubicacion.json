@@ -1,0 +1,176 @@
+{
+ "pdf": "Clubes/Grecia/Aris/Aris_FS_2025-06-30.pdf",
+ "md": "Clubes/Grecia/Aris/Aris_FS_2025-06-30.md",
+ "mdSha1": "62dddc592cbf67ef162cb4284afcabe6e123b521",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T03:52:15.688Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    78,
+    100
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    280,
+    287
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 12,
+   "lineas": [
+    470,
+    501
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    535,
+    577
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    611,
+    633
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    667,
+    683
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    719,
+    722
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    860,
+    867
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 24,
+   "lineas": [
+    1151,
+    1185
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 25,
+   "lineas": [
+    1224,
+    1258
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 26,
+   "lineas": [
+    1305,
+    1331
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 28,
+   "lineas": [
+    1401,
+    1406
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 28,
+   "lineas": [
+    1412,
+    1416
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 28,
+   "lineas": [
+    1420,
+    1434
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 29,
+   "lineas": [
+    1471,
+    1478
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 29,
+   "lineas": [
+    1480,
+    1491
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 31,
+   "lineas": [
+    1575,
+    1580
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b14",
+  "b15",
+  "b16"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Κατάσταση Εισοδήματος (ποσά σε €) / Ποσά σε €",
+ "moneda": "EUR",
+ "columna_ejercicio": "30.06.2025",
+ "columna_anterior": "30.06.2024",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado b3 (cuentas según reglamento de la Ε.Π.Ο., de la sociedad) como el perímetro habitual del club aunque el documento no lo rotule como consolidado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento parece individual de la sociedad (menciona 'Η Εταιρεία') y no aparece estado consolidado; el club usa consolidado en años anteriores.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados en b3 (pág. 12), en euros. Notas de gastos: b14 gastos de personal, b15 gastos operativos (nota 10) y b16 desglose de 'Λοιπά Λειτουργικά Έξοδα' de b15. No se ve nota de ingresos. b7 es conciliación ΕΛΠ vs reglamento ΕΠΟ, no se elige. Solo aparece un perímetro (sociedad)."
+}

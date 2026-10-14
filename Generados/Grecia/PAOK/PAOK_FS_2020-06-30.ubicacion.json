@@ -1,0 +1,311 @@
+{
+ "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2020-06-30.pdf",
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2020-06-30.md",
+ "mdSha1": "8e868b9bb9d83de77b0aaf4466c38e30e3cc0500",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T04:12:25.412Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    36,
+    55
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    63,
+    79
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    126,
+    135
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 15,
+   "lineas": [
+    369,
+    393
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    397,
+    414
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    422,
+    434
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 17,
+   "lineas": [
+    444,
+    461
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    471,
+    480
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 26,
+   "lineas": [
+    764,
+    791
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 27,
+   "lineas": [
+    805,
+    828
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 28,
+   "lineas": [
+    858,
+    863
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 28,
+   "lineas": [
+    869,
+    876
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 29,
+   "lineas": [
+    902,
+    908
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 29,
+   "lineas": [
+    912,
+    917
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 29,
+   "lineas": [
+    921,
+    929
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 29,
+   "lineas": [
+    933,
+    937
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 30,
+   "lineas": [
+    949,
+    952
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 30,
+   "lineas": [
+    956,
+    960
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 31,
+   "lineas": [
+    1002,
+    1007
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 31,
+   "lineas": [
+    1015,
+    1024
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 32,
+   "lineas": [
+    1043,
+    1052
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 32,
+   "lineas": [
+    1065,
+    1074
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 32,
+   "lineas": [
+    1087,
+    1096
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 32,
+   "lineas": [
+    1104,
+    1108
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 32,
+   "lineas": [
+    1117,
+    1123
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 33,
+   "lineas": [
+    1155,
+    1160
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 33,
+   "lineas": [
+    1164,
+    1170
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 34,
+   "lineas": [
+    1206,
+    1209
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 35,
+   "lineas": [
+    1221,
+    1230
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 35,
+   "lineas": [
+    1246,
+    1251
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 38,
+   "lineas": [
+    1347,
+    1351
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b7"
+ ],
+ "notas_ingresos": [
+  "b20",
+  "b24"
+ ],
+ "notas_gastos": [
+  "b21",
+  "b22",
+  "b23",
+  "b25",
+  "b27",
+  "b14"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Los importes se imprimen con céntimos (ej. 8.900.000,00; 3.622.504,21), es decir en euros.",
+ "moneda": "EUR",
+ "columna_ejercicio": "1/7/2019-30/06/2020",
+ "columna_anterior": "1/7/2018-30/06/2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los cuadros b21, b22 y b23 (pág. 32) como desglose del costo del departamento de fútbol, de gastos de administración y de gastos de distribución respectivamente?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος",
+   "texto": "Los tres cuadros de la nota 11 tienen las etiquetas separadas de los importes y no se ve a qué renglón del estado b7 corresponde cada uno.",
+   "bloques": [
+    "b21",
+    "b22",
+    "b23",
+    "b7"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de costo de personal b27 si sus importes ya están incluidos en b21-b23?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El cuadro de personal puede solapar las líneas de sueldos de los cuadros por función; sirve como desglose de categoría pero no debe sumarse dos veces.",
+   "bloques": [
+    "b27",
+    "b21",
+    "b22",
+    "b23"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual de PAOK FE (no hay consolidado; se menciona que consolida en un grupo superior). Estado de resultados por función en b7 (pág. 17). Nota 11: ingresos b20, gastos por función b21-b23, otros ingresos b24, otros gastos b25. b14 detalla costo de beneficios a empleados (pequeño). Excluidos balance, patrimonio, activos fijos, provisiones, partes vinculadas y arrendamientos."
+}

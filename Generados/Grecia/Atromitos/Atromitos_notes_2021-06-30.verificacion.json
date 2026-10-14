@@ -1,0 +1,196 @@
+{
+ "pdf": "Clubes/Grecia/Atromitos/Atromitos_notes_2021-06-30.pdf",
+ "md": "Clubes/Grecia/Atromitos/Atromitos_notes_2021-06-30.md",
+ "generado": "2026-10-14T04:17:55.773Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2021,
+ "escala": {
+  "valor": "no se sabe",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 8.881784197001252e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 3.739776 en este documento y 3.739776 en Atromitos_FS_2022-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2020: 4.112661 en Atromitos_notes_2020-06-30.pdf y 4.112661 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "escalón \"nota exacta en la lectura 5\": \"Κύκλος εργασιών (καθαρός)\" (L233) se abre en las 4 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Λοιπά συνήθη έσοδα\" (L236) se abre en las 4 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar de escala confirmada por otro documento del club (to-do 213): Atromitos_board_report_2021-06-30.md L83 imprime 2.572.890,78 con su moneda; la carga usó unidades",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Αμοιβές και έξοδα προσωπικού\"): ¿Se trata el cuadro de personal de b21 (L869-L877) como desglose de los renglones de la nota de gastos b19 y no como gasto adicional?",
+  "duda de extraer que no afecta la carga: El total de b19 coincide con 5.668.240,36+238.058,66+87.891,25 pero la nota no indica a qué renglón del estado va cada gasto, por eso detalla_a quedó null salvo intereses."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 3.739776,
+  "gastos": 5.929399,
+  "financiero": -0.08789,
+  "impuesto": 0,
+  "resultadoImpreso": -2.277513,
+  "resultadoParaCargar": -2.277513,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Από τηλεοπτικά δικαιώματα",
+   "lado": "ingreso",
+   "M": 0.365,
+   "pagina": 23,
+   "linea": 783,
+   "origen": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\""
+  },
+  {
+   "etiqueta": "Από παραχώρηση ποδ/στών στο εσωτερικό-εξωτερικό",
+   "lado": "ingreso",
+   "M": 0.492266,
+   "pagina": 23,
+   "linea": 784,
+   "origen": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\""
+  },
+  {
+   "etiqueta": "Από χορηγίες-διαφήμιση",
+   "lado": "ingreso",
+   "M": 1.714093,
+   "pagina": 23,
+   "linea": 785,
+   "origen": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\""
+  },
+  {
+   "etiqueta": "Κέρδη από πωλήσεις παγίων",
+   "lado": "ingreso",
+   "M": 0.001532,
+   "pagina": 23,
+   "linea": 787,
+   "origen": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\""
+  },
+  {
+   "etiqueta": "Επιχορήγηση από Super League-ΕΠΟ",
+   "lado": "ingreso",
+   "M": 0.009653,
+   "pagina": 23,
+   "linea": 790,
+   "origen": "nota que desglosa \"Λοιπά συνήθη έσοδα\""
+  },
+  {
+   "etiqueta": "Επιχορήγηση από UEFA Ακαδημιών",
+   "lado": "ingreso",
+   "M": 0.33311,
+   "pagina": 23,
+   "linea": 792,
+   "origen": "nota que desglosa \"Λοιπά συνήθη έσοδα\""
+  },
+  {
+   "etiqueta": "Έσοδα από ΕΠΟ - Κύπελλο Ελλάδος",
+   "lado": "ingreso",
+   "M": 0.803089,
+   "pagina": 23,
+   "linea": 797,
+   "origen": "nota que desglosa \"Λοιπά συνήθη έσοδα\""
+  },
+  {
+   "etiqueta": "Ενοίκια Κυλικείου",
+   "lado": "ingreso",
+   "M": 0.0088,
+   "pagina": 23,
+   "linea": 798,
+   "origen": "nota que desglosa \"Λοιπά συνήθη έσοδα\""
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.012234,
+   "pagina": 9,
+   "linea": 241,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων",
+   "lado": "gasto",
+   "M": 5.66824,
+   "pagina": 9,
+   "linea": 234,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 0.238059,
+   "pagina": 9,
+   "linea": 239,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά έξοδα και ζημίες",
+   "lado": "gasto",
+   "M": 0.0231,
+   "pagina": 9,
+   "linea": 240,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": 0.000001,
+   "linea": 243
+  },
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.087891,
+   "linea": 244
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": 0,
+   "linea": 246
+  }
+ ]
+}

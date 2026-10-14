@@ -1,0 +1,187 @@
+{
+ "pdf": "Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.pdf",
+ "md": "Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.md",
+ "generado": "2026-10-14T04:18:22.586Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2016,
+ "escala": {
+  "valor": "no se sabe",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 7.771561172376096e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Κύκλος εργασιών (καθαρός)\" no suma el renglón (4.214279 contra 4.214679, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Λοιπά συνήθη έσοδα\" no suma el renglón (0.878568 contra 0.878168, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar de escala confirmada por otro documento del club (to-do 213): Atromitos_board_report_2015-16.md L17 imprime 4.214.678,56 con su moneda; la carga usó unidades",
+  "duda de extraer que no afecta la carga: La suma de L738-L742 da 4.214.278,56, 400 menos que L215; L218 (878.167,82) es 400 menos que L749+L754 (878.567,82), parece una reclasificación o error tipográfico compensado.",
+  "duda de extraer que no afecta la carga: El cuadro de gastos por naturaleza (L766-L780) desglosa en conjunto L216, L221 y L229, no un renglón concreto.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Κύκλος εργασιών (καθαρός)",
+   "suma": 4.214279,
+   "objetivo": 4.214679
+  },
+  {
+   "renglon": "Λοιπά συνήθη έσοδα",
+   "suma": 0.878568,
+   "objetivo": 0.878168
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Κύκλος εργασιών (καθαρός)",
+   "suma": 4.214279,
+   "objetivo": 4.214679
+  },
+  {
+   "renglon": "Λοιπά συνήθη έσοδα",
+   "suma": 0.878568,
+   "objetivo": 0.878168
+  }
+ ],
+ "totales": {
+  "ingresos": 5.202798,
+  "gastos": 5.703653,
+  "financiero": -0.000859,
+  "impuesto": 0,
+  "resultadoImpreso": -0.501714,
+  "resultadoParaCargar": -0.501714,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "lado": "ingreso",
+   "M": 4.214679,
+   "pagina": 8,
+   "linea": 215,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 0.878168,
+   "pagina": 8,
+   "linea": 218,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.109951,
+   "pagina": 8,
+   "linea": 226,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων",
+   "lado": "gasto",
+   "M": 4.938658,
+   "pagina": 8,
+   "linea": 216,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 0.653858,
+   "pagina": 8,
+   "linea": 221,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά έξοδα και ζημίες",
+   "lado": "gasto",
+   "M": 0.111137,
+   "pagina": 8,
+   "linea": 225,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": 0.016146,
+   "linea": 228
+  },
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.017005,
+   "linea": 229
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": 0,
+   "linea": 231
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "9c709446ba8769a7db835ef979992720c8e35ffe",
+  "rango": [
+   212,
+   235
+  ],
+  "lineasCargadas": [
+   215,
+   218,
+   226,
+   216,
+   221,
+   225,
+   228,
+   229,
+   231
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 212 a 235 del .md):\nL213: |   | Σημ. | 30/6/2016 | 30/6/2015  |\nL214: | --- | --- | --- | --- |\nL215: |  Κύκλος εργασιών (καθαρός) | 11 | 4.214.678,56 | 3.539.335,62  |\nL216: |  Κόστος πωλήσεων |  | -4.938.658,29 | -3.501.461,78  |\nL217: |  **Μικτό Αποτέλεσμα** |  | **-723.979,73** | **37.873,84**  |\nL218: |  Λοιπά συνήθη έσοδα | 11 | **878.167,82** | 369.864,98  |\nL219: |   |  | **154.188,09** | **407.738,82**  |\nL220: |  Έξοδα διάθεσης |  | 0,00 | 0,00  |\nL221: |  Έξοδα διοίκησης |  | -653.858,01 | -460.228,00  |\nL222: |  Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό) |  | 0,00 | 0,00  |\nL223: |  Κέρδη και ζημίες από διάθεση μη κυκλοφορούντων στοιχείων |  | 0,00 | 0,00  |\nL224: |  Κέρδη και ζημίες από επιμέτρηση στην εύλογη αξία |  | 0,00 | 0,00  |\nL225: |  Λοιπά έξοδα και ζημίες |  | -111.136,79 | -218.223,72  |\nL226: |  Λοιπά έσοδα και κέρδη |  | 109.951,46 | 221.654,52  |\nL227: |  **Αποτέλεσμα προ τόκων και φόρων** |  | **-500.855,25** | **-49.058,38**  |\nL228: |  Πιστωτικοί τόκοι και συναφή έσοδα | 11 | 16.145,87 | 93,37  |\nL229: |  Χρεωστικοί τόκοι και συναφή έξοδα | 11 | -17.004,93 | -10.100,96  |\nL230: |  **Αποτέλεσμα προ φόρων** |  | **-501.714,31** | **-59.065,97**  |\nL231: |  Φόροι εισοδήματος |  | 0,00 | 0,00  |\nL232: |  **Αποτέλεσμα περιόδου μετά από φόρους** |  | **-501.714,31** | **-59.065,97**  |\nL234: --- pág. 9 ---\n\nLO QUE SE CARGA:\n- ingreso · \"Κύκλος εργασιών (καθαρός)\" · 4.214679 · L215\n- ingreso · \"Λοιπά συνήθη έσοδα\" · 0.878168 · L218\n- ingreso · \"Λοιπά έσοδα και κέρδη\" · 0.109951 · L226\n- gasto · \"Κόστος πωλήσεων\" · 4.938658 · L216\n- gasto · \"Έξοδα διοίκησης\" · 0.653858 · L221\n- gasto · \"Λοιπά έξοδα και ζημίες\" · 0.111137 · L225\n- financiero · \"Πιστωτικοί τόκοι και συναφή έσοδα\" · 0.016146 · L228\n- financiero · \"Χρεωστικοί τόκοι και συναφή έξοδα\" · -0.017005 · L229\n- impuesto · \"Φόροι εισοδήματος\" · 0 · L231"
+ }
+}

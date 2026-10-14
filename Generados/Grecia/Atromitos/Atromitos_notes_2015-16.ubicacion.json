@@ -1,0 +1,201 @@
+{
+ "pdf": "Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.pdf",
+ "md": "Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.md",
+ "mdSha1": "71f718a0ec343ab162de04c3332411e891d48a80",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T04:00:20.834Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    38,
+    75
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    136,
+    166
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    170,
+    207
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    213,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    238,
+    251
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    516,
+    548
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    568,
+    595
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    625,
+    629
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 20,
+   "lineas": [
+    639,
+    646
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    652,
+    657
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    669,
+    673
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 21,
+   "lineas": [
+    707,
+    711
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    721,
+    729
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    735,
+    758
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 23,
+   "lineas": [
+    766,
+    780
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 24,
+   "lineas": [
+    814,
+    821
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 24,
+   "lineas": [
+    825,
+    834
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 24,
+   "lineas": [
+    844,
+    848
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 25,
+   "lineas": [
+    882,
+    887
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 27,
+   "lineas": [
+    937,
+    949
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b14"
+ ],
+ "notas_gastos": [
+  "b15",
+  "b17"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala; estados griegos de este tipo suelen estar en euros (unidades).",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2016",
+ "columna_anterior": "30/6/2015",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del estado de resultados (b4) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No aparece en el índice ninguna leyenda de escala sobre la tabla b4.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales bajo Ε.Λ.Π. de Atromitos al 30/06/2016. Estado de resultados por función en b4. La nota 11 desglosa los ingresos (b14) y los gastos por naturaleza (b15). b17 detalla los gastos de personal. Se excluyen balance, patrimonio, activos fijos, deudas, honorarios de auditoría y conciliación de primera aplicación."
+}

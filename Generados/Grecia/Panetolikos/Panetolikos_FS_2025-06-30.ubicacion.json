@@ -1,0 +1,265 @@
+{
+ "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.pdf",
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md",
+ "mdSha1": "31361a6a5a4e89925ffd9a0e895eff231e0b0e56",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T04:09:59.174Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    28,
+    54
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    113,
+    125
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    231,
+    235
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    258,
+    266
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    293,
+    304
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    327,
+    329
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    432,
+    485
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    498,
+    514
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 23,
+   "lineas": [
+    790,
+    803
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 24,
+   "lineas": [
+    818,
+    831
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 24,
+   "lineas": [
+    837,
+    846
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 25,
+   "lineas": [
+    859,
+    862
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 25,
+   "lineas": [
+    870,
+    874
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 25,
+   "lineas": [
+    880,
+    884
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    890,
+    894
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    900,
+    904
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    950,
+    953
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 27,
+   "lineas": [
+    961,
+    964
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    981,
+    986
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    992,
+    997
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    1003,
+    1006
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 28,
+   "lineas": [
+    1010,
+    1013
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 29,
+   "lineas": [
+    1028,
+    1032
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    1038,
+    1045
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1063,
+    1066
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 30,
+   "lineas": [
+    1079,
+    1085
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 31,
+   "lineas": [
+    1112,
+    1123
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 32,
+   "lineas": [
+    1158,
+    1160
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b8"
+ ],
+ "notas_ingresos": [
+  "b23"
+ ],
+ "notas_gastos": [
+  "b24",
+  "b26"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con céntimos en euros (ej. 'ζημιές € 1.426.638,75'); encabezados de notas con '€'",
+ "moneda": "EUR",
+ "columna_ejercicio": "01.07-30.06.2025",
+ "columna_anterior": "01.07-30.06.2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que el estado de resultados (b8) está en euros sin redondeo a miles?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El índice no muestra una frase de escala sobre b8; se infiere de los importes con céntimos en la página 4.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estados individuales de la ΠΑΕ Panetolikos (normas contables griegas). b8 es la cuenta de resultados. b23 abre el renglón 'Κύκλος εργασιών' en entradas y traspasos. b24 abre 'Λοιπά έξοδα και ζημίες'. b26 es el desglose de los gastos de personal. b5 y b27 son las partes vinculadas (b27 duplica b5) y no se cargan. b2 son indicadores, b4 la evolución del patrimonio y b7 el balance."
+}

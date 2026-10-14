@@ -1,0 +1,346 @@
+{
+ "pdf": "Clubes/Grecia/Aris/Aris_FS_2025-06-30.pdf",
+ "md": "Clubes/Grecia/Aris/Aris_FS_2025-06-30.md",
+ "generado": "2026-10-14T04:18:22.504Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/Aris/Aris_FS_2025-06-30.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2025-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Grecia/Aris/Aris_FS_2025-06-30.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-14"
+  }
+ ],
+ "cola": [
+  "52c8736",
+  "6af7360"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 3.9968028886505635e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": false,
+   "detalle": "ingresos de 2024: 20.804681 en Aris_FS_2024-06-30.pdf y 16.354681 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "escalón \"nota exacta en la lectura 5\": \"Σύνολο Δαπανών παροχών προς υπαλλήλους\" (L481) se abre en las 9 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Λοιπά λειτουργικά έξοδα\" (L484) se abre en las 6 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: El documento parece individual de la sociedad (menciona 'Η Εταιρεία') y no aparece estado consolidado; el club usa consolidado en años anteriores.",
+  "duda de extraer que no afecta la carga: L1491 imprime 4.053.466 sin signo menos, mientras que todas las partidas y el renglón L1477 son negativos (-4.053.466).",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 19.708542,
+  "gastos": 18.734483,
+  "financiero": -0.312126,
+  "impuesto": 0,
+  "resultadoImpreso": 0.661933,
+  "resultadoParaCargar": 0.661933,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Έσοδα από εισιτήρια",
+   "lado": "ingreso",
+   "M": 1.771757,
+   "pagina": 12,
+   "linea": 473,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Έσοδα χορηγιών και διαφημίσεων",
+   "lado": "ingreso",
+   "M": 4.83965,
+   "pagina": 12,
+   "linea": 474,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Έσοδα δικαιωμάτων μεταδοσεων",
+   "lado": "ingreso",
+   "M": 3.449996,
+   "pagina": 12,
+   "linea": 475,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Έσοδα από UEFA αλληλεγγύη και χρηματικά έπαθλα",
+   "lado": "ingreso",
+   "M": 1.36674,
+   "pagina": 12,
+   "linea": 477,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά λειτουργικά έσοδα",
+   "lado": "ingreso",
+   "M": 3.083932,
+   "pagina": 12,
+   "linea": 478,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Κέρδος από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)",
+   "lado": "ingreso",
+   "M": 5.196467,
+   "pagina": 12,
+   "linea": 488,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων / υλικών / μη διανεμηθέντα",
+   "lado": "gasto",
+   "M": 0.069195,
+   "pagina": 12,
+   "linea": 480,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ποδοσφαιριστές-ημερομίσθια & μισθοί",
+   "lado": "gasto",
+   "M": 7.893951,
+   "pagina": 28,
+   "linea": 1422,
+   "origen": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\""
+  },
+  {
+   "etiqueta": "Ποδοσφαιριστές-εισφορές κοινωνικής ασφάλισης",
+   "lado": "gasto",
+   "M": 0.22381,
+   "pagina": 28,
+   "linea": 1423,
+   "origen": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\""
+  },
+  {
+   "etiqueta": "Δαπάνες παροχών προς ποδοσφαιριστές",
+   "lado": "gasto",
+   "M": 0.044242,
+   "pagina": 28,
+   "linea": 1424,
+   "origen": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\""
+  },
+  {
+   "etiqueta": "Τεχνικό προσωπικό-ημερομίσθια & μισθοί",
+   "lado": "gasto",
+   "M": 0.23224,
+   "pagina": 28,
+   "linea": 1426,
+   "origen": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\""
+  },
+  {
+   "etiqueta": "Τεχνικό προσωπικό-εισφορές κοινωνικής ασφάλισης",
+   "lado": "gasto",
+   "M": 0.03085,
+   "pagina": 28,
+   "linea": 1427,
+   "origen": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\""
+  },
+  {
+   "etiqueta": "Δαπάνες παροχών προς τεχνικό προσωπικό",
+   "lado": "gasto",
+   "M": 0.02779,
+   "pagina": 28,
+   "linea": 1428,
+   "origen": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\""
+  },
+  {
+   "etiqueta": "Λοιπό προσωπικό-ημερομίσθια & μισθοί",
+   "lado": "gasto",
+   "M": 0.07835,
+   "pagina": 28,
+   "linea": 1430,
+   "origen": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\""
+  },
+  {
+   "etiqueta": "Λοιπό προσωπικό-εισφορές κοινωνικής ασφάλισης",
+   "lado": "gasto",
+   "M": 0.01077,
+   "pagina": 28,
+   "linea": 1431,
+   "origen": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\""
+  },
+  {
+   "etiqueta": "Δαπάνες παροχών προς λοιπό προσωπικό",
+   "lado": "gasto",
+   "M": 0.011745,
+   "pagina": 28,
+   "linea": 1432,
+   "origen": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\""
+  },
+  {
+   "etiqueta": "Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού",
+   "lado": "gasto",
+   "M": 0.283346,
+   "pagina": 12,
+   "linea": 482,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Απόσβεση λοιπών άυλων στοιχείων του ενεργητικού (εξαιρούνται οι εγγραφές ποδοσφαιριστών)",
+   "lado": "gasto",
+   "M": 0.012,
+   "pagina": 12,
+   "linea": 483,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Έξοδα τέλεσης αγώνων",
+   "lado": "gasto",
+   "M": 0.747961,
+   "pagina": 29,
+   "linea": 1473,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Κόστη χορηγιών και διαφημίσεων",
+   "lado": "gasto",
+   "M": 0.149914,
+   "pagina": 29,
+   "linea": 1474,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Εμπορικές δαπάνες",
+   "lado": "gasto",
+   "M": 0.164486,
+   "pagina": 29,
+   "linea": 1475,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Έξοδα εγκαταστάσεων",
+   "lado": "gasto",
+   "M": 1.240868,
+   "pagina": 29,
+   "linea": 1476,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Λοιπά Λειτουργικά Έξοδα",
+   "lado": "gasto",
+   "M": 4.053466,
+   "pagina": 29,
+   "linea": 1477,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "gasto",
+   "M": -0.000001,
+   "linea": 484,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Απόσβεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)",
+   "lado": "gasto",
+   "M": 3.4595,
+   "pagina": 12,
+   "linea": 486,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Χρηματοοικονομικά έξοδα/δαπάνες",
+   "M": -0.194341,
+   "linea": 495
+  },
+  {
+   "etiqueta": "Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)",
+   "M": -0.117785,
+   "linea": 496
+  }
+ ],
+ "impuesto": [],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "85bfa79f0d641f4c9f8d0c7b8244904d582f3e91",
+  "rango": [
+   470,
+   504
+  ],
+  "lineasCargadas": [
+   473,
+   474,
+   475,
+   477,
+   478,
+   488,
+   480,
+   1422,
+   1423,
+   1424,
+   1426,
+   1427,
+   1428,
+   1430,
+   1431,
+   1432,
+   482,
+   483,
+   1473,
+   1474,
+   1475,
+   1476,
+   1477,
+   484,
+   486,
+   495,
+   496
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 470 a 504 del .md):\nL470: |  Κατάσταση Εισοδήματος (ποσά σε €) | 30.06.2025 | 30.06.2024  |\nL471: | --- | --- | --- |\nL472: |  **Ποσά σε €** |  |   |\nL473: |  Έσοδα από εισιτήρια | 1.771.757 | 1.194.851  |\nL474: |  Έσοδα χορηγιών και διαφημίσεων | 4.839.650 | 3.868.454  |\nL475: |  Έσοδα δικαιωμάτων μεταδοσεων | 3.449.996 | 3.300.006  |\nL476: |  Εμπορικά έσοδα | - | 763.000  |\nL477: |  Έσοδα από UEFA αλληλεγγύη και χρηματικά έπαθλα | 1.366.740 | 1.154.207  |\nL478: |  Λοιπά λειτουργικά έσοδα | 3.083.932 | 1.821.663  |\nL479: |  **Σύνολο Εσόδων** | **14.512.075** | **12.102.181**  |\nL480: |  Κόστος πωλήσεων / υλικών / μη διανεμηθέντα | -69.195 | -23.793  |\nL481: |  Σύνολο Δαπανών παροχών προς υπαλλήλους | -8.553.748 | -7.188.186  |\nL482: |  Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού | -283.346 | -219.443  |\nL483: |  Απόσβεση λοιπών άυλων στοιχείων του ενεργητικού (εξαιρούνται οι εγγραφές ποδοσφαιριστών) | -12.000 | -12.000  |\nL484: |  Λοιπά λειτουργικά έξοδα | -6.356.694 | -5.753.409  |\nL485: |  **Σύνολο λειτουργικών εξόδων** | **-15.274.983** | **-13.196.831**  |\nL486: |  Απόσβεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών) | -3.459.500 | -1.781.165  |\nL487: |  Απομείωση άυλων περιουσιακών στοιχείων (εγγραφές παικτών) | - | -  |\nL488: |  Κέρδος από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών) | 5.196.467 | 4.252.500  |\nL489: |  Ζημία από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών) | - | -  |\nL490: |  **Καθαρό αποτέλεσμα από την διακίνηση παικτών** | **1.736.967** | **2.471.335**  |\nL491: |  Κέρδη/(ζημίες) από διάθεση παγίων ενσώματων στοιχείων του ενεργητικού | - | -  |\nL492: |  Κέρδη/(ζημίες) από διάθεση λοιπών άυλων παγίων στοιχείων του ενεργητικού | - | -  |\nL493: |  **Κέρδη/(ζημίες) από διάθεση πάγιων στοιχείων του ενεργητικού** | **-** | **-**  |\nL494: |  Χρηματοοικονομικά έσοδα | - | -  |\nL495: |  Χρηματοοικονομικά έξοδα/δαπάνες | -194.341 | -275.484  |\nL496: |  Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες) | -117.785 | -  |\nL497: |  **Καθαρό σύνολο χρηματοοικονομικών εσόδων (δαπάνες)** | **-312.126** | **-275.484**  |\nL498: |  Λοιπά Έσοδα και κέρδη | - | -  |\nL499: |  Λοιπά Έξοδα και ζημίες | - | -  |\nL500: |  Φορολογικά έσοδα (δαπάνες) | - | -  |\nL501: |  **Κέρδη/(ζημίες) μετά από φόρους** | **661.933** | **1.101.201**  |\nL503: Οι συνημμένες επεξηγηματικές σημειώσεις αποτελούν αναπόσπαστο μέρος αυτών των οικονομικών καταστάσεων.\n\nLO QUE SE CARGA:\n- ingreso · \"Έσοδα από εισιτήρια\" · 1.771757 · L473\n- ingreso · \"Έσοδα χορηγιών και διαφημίσεων\" · 4.83965 · L474\n- ingreso · \"Έσοδα δικαιωμάτων μεταδοσεων\" · 3.449996 · L475\n- ingreso · \"Έσοδα από UEFA αλληλεγγύη και χρηματικά έπαθλα\" · 1.36674 · L477\n- ingreso · \"Λοιπά λειτουργικά έσοδα\" · 3.083932 · L478\n- ingreso · \"Κέρδος από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)\" · 5.196467 · L488\n- gasto · \"Κόστος πωλήσεων / υλικών / μη διανεμηθέντα\" · 0.069195 · L480\n- gasto · \"Ποδοσφαιριστές-ημερομίσθια & μισθοί\" · 7.893951 · L1422 (de una nota)\n- gasto · \"Ποδοσφαιριστές-εισφορές κοινωνικής ασφάλισης\" · 0.22381 · L1423 (de una nota)\n- gasto · \"Δαπάνες παροχών προς ποδοσφαιριστές\" · 0.044242 · L1424 (de una nota)\n- gasto · \"Τεχνικό προσωπικό-ημερομίσθια & μισθοί\" · 0.23224 · L1426 (de una nota)\n- gasto · \"Τεχνικό προσωπικό-εισφορές κοινωνικής ασφάλισης\" · 0.03085 · L1427 (de una nota)\n- gasto · \"Δαπάνες παροχών προς τεχνικό προσωπικό\" · 0.02779 · L1428 (de una nota)\n- gasto · \"Λοιπό προσωπικό-ημερομίσθια & μισθοί\" · 0.07835 · L1430 (de una nota)\n- gasto · \"Λοιπό προσωπικό-εισφορές κοινωνικής ασφάλισης\" · 0.01077 · L1431 (de una nota)\n- gasto · \"Δαπάνες παροχών προς λοιπό προσωπικό\" · 0.011745 · L1432 (de una nota)\n- gasto · \"Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού\" · 0.283346 · L482\n- gasto · \"Απόσβεση λοιπών άυλων στοιχείων του ενεργητικού (εξαιρούνται οι εγγραφές ποδοσφαιριστών)\" · 0.012 · L483\n- gasto · \"Έξοδα τέλεσης αγώνων\" · 0.747961 · L1473 (de una nota)\n- gasto · \"Κόστη χορηγιών και διαφημίσεων\" · 0.149914 · L1474 (de una nota)\n- gasto · \"Εμπορικές δαπάνες\" · 0.164486 · L1475 (de una nota)\n- gasto · \"Έξοδα εγκαταστάσεων\" · 1.240868 · L1476 (de una nota)\n- gasto · \"Λοιπά Λειτουργικά Έξοδα\" · 4.053466 · L1477 (de una nota)\n- gasto · \"Diferencia de redondeo\" · -0.000001 · L484\n- gasto · \"Απόσβεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)\" · 3.4595 · L486\n- financiero · \"Χρηματοοικονομικά έξοδα/δαπάνες\" · -0.194341 · L495\n- financiero · \"Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)\" · -0.117785 · L496"
+ }
+}
