@@ -4,6 +4,9 @@ window.RANKINGS["gr-superleague"] = {
   2025: {
     leagueSize: null,
     clubs: [
+      { id:"olympiacos-gr", revenue:123.705, reportType:"official_balance_sheet",
+        sourceId:"olympiacos-gr-pae-olympiacos-ifrs-fs-2025-06-30",
+        mix:[["Comercial / Sponsors",27.53],["Estadio",15.907],["Televisión",9.73],["Premios por competencias",23.508],["Venta de Jugadores",45.104],["Otros ingresos",1.925]] },
       { id:"panathinaikos-gr", revenue:67.512, reportType:"official_balance_sheet",
         sourceId:"panathinaikos-gr-annual-fr-2025",
         mix:[["Comercial / Sponsors",23.125],["Estadio",22.65],["Televisión",6.322],["Premios por competencias",14.774],["Otros ingresos",0.64]] },
