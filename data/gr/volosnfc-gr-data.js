@@ -213,6 +213,7 @@ Object.assign(sources, {
     id:'volosnfc-gr-volos-income-stmt-2019-06-30', clubId:'volosnfc-gr',
     title:'Volos N.P.S. P.A.E. — Volos_income_stmt_2019-06-30 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
+    publicNote:'Primer ejercicio de la sociedad: del 24/07/2018 al 30/06/2019 (11 meses).',
   },
   'volosnfc-gr-volos-income-stmt-2020-06-30': {
     id:'volosnfc-gr-volos-income-stmt-2020-06-30', clubId:'volosnfc-gr',
