@@ -52,29 +52,6 @@ ni en el comentario de ningún archivo de código.
     i) `periodo.mjs` dio a Kifisia 2022 como ejercicio de 12 meses (confianza media, sin evidencia) y el documento dice "περιόδου
        9/8/2021 - 30/06/2022" en la portada (L47, L93, L261): primer ejercicio de la sociedad, unos 10,7 meses. Un período de menos de 12
        meses tiene que salir como parcial (Admin/registros/documentos-parciales.txt) o a la cola, no como anual.
-    t) Caja y deuda en Grecia: `tools/vocabulario.mjs` (CAJA / DEUDA_FINANCIERA, escalón 1 de `caja-deuda.mjs`) no tiene ningún término
-       griego, así que en los 6 clubes nuevos del lote 71 (43 años, 86 datos) los escalones 0 y 1 no proponen nada y todo cae al escalón 2
-       (IA, ~US$ 1,23). Agregar "Ταμειακά διαθέσιμα και ισοδύναμα" (caja) y "Δάνεια" / "Τραπεζικά δάνεια" / "Βραχυπρόθεσμα / Μακροπρόθεσμα
-       δάνεια" (deuda), medido con `caja-deuda.mjs --medir` en los griegos ya cargados antes de entrar.
-       Antes que el vocabulario por idioma (pedido de Guido, 2026-10-14): ver si este escalón lo puede hacer Jev (typesafe.ai, ~US$ 42 por
-       MIL MILLONES de tokens de entrada, la IA barata que ya usa la etapa 7), así no hace falta griego ni ningún otro idioma: a Jev se le
-       pasan las filas del balance y elige cuál es caja y cuáles son deuda financiera; la compuerta es la misma de hoy (el número tiene que
-       estar impreso en esa línea). Medir con `caja-deuda.mjs --medir` sobre los años ya cargados, errores con confianza alta primero.
-    u) `perimetro-senales.mjs --auditar-a2 <carpeta>` escribe `instruccion.txt` y `pedidos.jsonl` EN la carpeta que recibe, y el nombre
-       invita a pasarle la del club: con `Clubes/Grecia/Aris` los dejó al lado de los PDFs, que se publican (se movieron a mano). Que
-       rechace una ruta bajo `Clubes/` o que escriba siempre en una carpeta de trabajo fija (scratch o `Admin/mediciones/`).
-    w) `caja-deuda.mjs` lee la PRIMERA cifra de la fila aunque el balance traiga columnas de grupo y de sociedad en la misma tabla:
-       Olympiacos (perímetro individual) "| Ταμειακά διαθέσιμα | 24 | Όμιλος año | Όμιλος anterior | Εταιρεία año | Εταιρεία anterior |"
-       publicó la caja del grupo en 2022-2025 (16.552.985 contra 16.455.274 de la sociedad en 2022), y la compuerta la confirmó porque el
-       documento vecino tiene la misma estructura. Se corrigió con ajustes `caja` de la columna Εταιρεία (los 10 años). Escalón: cuando el
-       encabezado de la tabla nombra los dos perímetros (Όμιλος / Εταιρεία, Group / Company, Consolidado / Individual), leer las columnas
-       del perímetro del club (el mismo criterio que usa localizar para el estado de resultados). La deuda de Olympiacos sigue vacía.
-    x) AEK 2024 (lote 73), dos cosas que salieron cargándolo a mano: (1) `cargar.mjs` dejó AFUERA EN SILENCIO una fila sin categoría
-       ("Έσοδα από διεθνείς διοργανώσεις", 1.872.488, L1428: la verificación nueva abrió las entradas en su nota y el `.categorias.json` era
-       del día anterior); el único aviso fue el tie-out del resultado. Una fila verificada sin categoría tiene que frenar con su nombre (o
-       marcar el `.categorias.json` como desactualizado), no desaparecer. (2) `caja-deuda.mjs` escalón 0 leyó la caja como 0,000007 en
-       "| Ταμειακά διαθέσιμα και ισοδύναμα | 6.9 | 6.320.395 | 7.725.899 |" (L430): la nota "6.9" de un solo nivel, que la lectura B
-       tendría que sacar. Se cargó con un ajuste `caja`. Ver por qué la lectura B no entró en esta fila.
     k) Una respuesta "no" de la cola a una duda de importe ("¿se carga X del estado y no Y de la nota?", Olympiacos 2023 caso 446850a)
        no cambia nada: la verificación siguió con el importe del estado y hubo que agregar un ajuste `fila` a mano. Que esa respuesta
        aplique sola el importe de la nota (es lo que la pregunta ofrece), con la misma compuerta de cierre.
@@ -100,6 +77,29 @@ ni en el comentario de ningún archivo de código.
     s) Sueldos escondidos en "Αμοιβές τρίτων" (PAOK: 42 M en el cuadro de fútbol contra 9,2 M de costo de personal en la nota 17). Un
        chequeo de `audit.js` que compare `wages_squad` con el total de la nota de personal y con la cantidad de futbolistas, para que
        un caso así aparezca solo y no dependa de que un subagente lo note (relacionado con el to-do 229).
+    t) Caja y deuda en Grecia: `tools/vocabulario.mjs` (CAJA / DEUDA_FINANCIERA, escalón 1 de `caja-deuda.mjs`) no tiene ningún término
+       griego, así que en los 6 clubes nuevos del lote 71 (43 años, 86 datos) los escalones 0 y 1 no proponen nada y todo cae al escalón 2
+       (IA, ~US$ 1,23). Agregar "Ταμειακά διαθέσιμα και ισοδύναμα" (caja) y "Δάνεια" / "Τραπεζικά δάνεια" / "Βραχυπρόθεσμα / Μακροπρόθεσμα
+       δάνεια" (deuda), medido con `caja-deuda.mjs --medir` en los griegos ya cargados antes de entrar.
+       Antes que el vocabulario por idioma (pedido de Guido, 2026-10-14): ver si este escalón lo puede hacer Jev (typesafe.ai, ~US$ 42 por
+       MIL MILLONES de tokens de entrada, la IA barata que ya usa la etapa 7), así no hace falta griego ni ningún otro idioma: a Jev se le
+       pasan las filas del balance y elige cuál es caja y cuáles son deuda financiera; la compuerta es la misma de hoy (el número tiene que
+       estar impreso en esa línea). Medir con `caja-deuda.mjs --medir` sobre los años ya cargados, errores con confianza alta primero.
+    u) `perimetro-senales.mjs --auditar-a2 <carpeta>` escribe `instruccion.txt` y `pedidos.jsonl` EN la carpeta que recibe, y el nombre
+       invita a pasarle la del club: con `Clubes/Grecia/Aris` los dejó al lado de los PDFs, que se publican (se movieron a mano). Que
+       rechace una ruta bajo `Clubes/` o que escriba siempre en una carpeta de trabajo fija (scratch o `Admin/mediciones/`).
+    w) `caja-deuda.mjs` lee la PRIMERA cifra de la fila aunque el balance traiga columnas de grupo y de sociedad en la misma tabla:
+       Olympiacos (perímetro individual) "| Ταμειακά διαθέσιμα | 24 | Όμιλος año | Όμιλος anterior | Εταιρεία año | Εταιρεία anterior |"
+       publicó la caja del grupo en 2022-2025 (16.552.985 contra 16.455.274 de la sociedad en 2022), y la compuerta la confirmó porque el
+       documento vecino tiene la misma estructura. Se corrigió con ajustes `caja` de la columna Εταιρεία (los 10 años). Escalón: cuando el
+       encabezado de la tabla nombra los dos perímetros (Όμιλος / Εταιρεία, Group / Company, Consolidado / Individual), leer las columnas
+       del perímetro del club (el mismo criterio que usa localizar para el estado de resultados). La deuda de Olympiacos sigue vacía.
+    x) AEK 2024 (lote 73), dos cosas que salieron cargándolo a mano: (1) `cargar.mjs` dejó AFUERA EN SILENCIO una fila sin categoría
+       ("Έσοδα από διεθνείς διοργανώσεις", 1.872.488, L1428: la verificación nueva abrió las entradas en su nota y el `.categorias.json` era
+       del día anterior); el único aviso fue el tie-out del resultado. Una fila verificada sin categoría tiene que frenar con su nombre (o
+       marcar el `.categorias.json` como desactualizado), no desaparecer. (2) `caja-deuda.mjs` escalón 0 leyó la caja como 0,000007 en
+       "| Ταμειακά διαθέσιμα και ισοδύναμα | 6.9 | 6.320.395 | 7.725.899 |" (L430): la nota "6.9" de un solo nivel, que la lectura B
+       tendría que sacar. Se cargó con un ajuste `caja`. Ver por qué la lectura B no entró en esta fila.
 
 233. JEV EN OTRAS ETAPAS DEL PIPELINE (pedido de Guido, 2026-10-14). Jev (typesafe.ai, `tools/jev-categorizar.mjs`) cuesta ~US$ 42 por MIL
     MILLONES de tokens de entrada y hoy solo categoriza (etapa 7). Ver, etapa por etapa, si puede hacer lo que hoy hace Claude Opus o un
@@ -171,7 +171,7 @@ ni en el comentario de ningún archivo de código.
        Sarpsborg 08. Las preguntas de la revisión del alta siguen en Admin/registros/altas-revision.jsonl.
     d) Rusia: las tablas de otros ingresos y gastos que no suman el código del formulario (Krasnodar, Krylia 2021-2025, Rostov 2025, Rubin
        2022-2025: la nota en bruto, el formulario en neto). Sin daño hoy: esos años quedan con el renglón entero.
-    Mejoras de script vistas en Grecia: to-dos 210-215 y 232.
+    Mejoras de script vistas en Grecia: to-do 232.
 
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
