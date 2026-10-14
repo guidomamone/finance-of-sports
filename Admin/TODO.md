@@ -84,10 +84,6 @@ ni en el comentario de ningún archivo de código.
     p) Color y liga de un club griego nuevo: `lookup-brand-color.js` no tiene la liga griega cacheada y `data/club-leagues` (caché gr.json)
        solo traía 2023-24 para Kifisia. Cachear las dos ligas griegas (Super League y Super League 2) por temporada con las tools que ya
        existen (`fetch-brand-color-reference.mjs`, la de ligas) antes del próximo club griego.
-    q) Documentos transcriptos que nunca entran a un lote: Aris 2022 y Atromitos 2017 quedaron afuera de `lote-71.txt` sin que nada avise.
-       Que `lote.mjs` (o `antes-de-localizar.mjs`) avise cuando un club de la lista tiene otros documentos transcriptos sin localizar.
-       `node tools/estado.mjs --dir "Clubes/<País>/<Club>"` ya lo muestra (etapa 3, "Transcripción validada, sin localizar"): el aviso
-       puede salir de ahí.
     r) Una respuesta de perfil (socios, otros deportes) se guarda para todos los años del club, pero los casos ya abiertos de los otros
        documentos del mismo club siguen abiertos: Olympiacos dejó 18 casos repetidos después de contestar el de 2025. Al responder uno,
        cerrar los iguales del mismo club.

@@ -76,3 +76,7 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
 - **Ruido de extraer entre corridas** (2026-10-14, misma medición): con el código de hoy, rehacer extraer sobre los mismos 34 documentos
   cambió la carga en 6 (Goiás 2013, Novorizontino 2013, UC 2010, Fortaleza 2019, 2021 y 2025) y el 3,5% de las etiquetas. Cualquier
   medición de "lo cargado idéntico" que rehace extraer tiene que compararse contra este piso, no contra cero.
+- **Aviso de un año que queda fuera del lote (to-do 232 q, 2026-10-14)**: sin compuerta avisaba 24 documentos en el lote 71 (informes del
+  auditor y del directorio de años que la lista ya cubre); con la del ejercicio no cubierto, 2 (los dos con el cierre mal leído por
+  `periodo.mjs`: el acta de Aris del 2021-01-30 y el informe del directorio 2015-16 de Atromitos). No avisa un documento sin cierre
+  identificado (Atromitos_audit_2016-17, confianza baja): un escalón para esos (el año del nombre del archivo, por ejemplo) no se midió.

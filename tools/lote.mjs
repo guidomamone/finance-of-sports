@@ -38,6 +38,7 @@ import { validar } from './validar-bloques.mjs';
 import { extraer, estimarExtraerSinBloques } from './extraer.mjs';
 import { pendientes } from './cola.mjs';
 import { derivado } from './rutas.mjs';
+import { etapaDe } from './etapa-doc.mjs';
 import { paginasARearmar, rearmar } from './texto-propio-a-md.mjs';
 import { tomarCandado, soltarCandado } from './candado.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
@@ -109,6 +110,21 @@ if (docs.length > 10) console.log(`OJO: ${docs.length} documentos. El proceso nu
 const ajustesTodos = (() => { let cache = null; return () => (cache ??= (existsSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return {}; } }) : [])); })();
 const leerRegistro = () => readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
 let registro = leerRegistro();
+// UN AÑO DEL CLUB QUE QUEDA AFUERA (to-do 232 q). Aris 2022 (Aris_FS_audited_art47_2022-06-30) quedó fuera de lote-71.txt, con los
+// demás años de Aris adentro, y nada lo avisó. Aviso (no frena), de la etapa de etapa-doc.mjs (la misma que muestra estado.mjs): un
+// documento de un club de la lista, fuera de la lista y "sin localizar" (e3-localizar). UNA compuerta: su ejercicio (periodo.cierre del
+// registro) está identificado y no es el de ningún documento de la lista ni de uno ya cargado del club. Sin ella avisaba 24 en el
+// lote 71 (informes del auditor y del directorio de años que la lista ya cubre); con ella, 2. Un documento sin cierre identificado no
+// avisa (Atromitos_audit_2016-17: Admin/HALLAZGOS-pipeline.md).
+{
+  const club = (p) => p.split('/').slice(0, 3).join('/');
+  const enLista = new Set(docs); const clubes = new Set(docs.map(club));
+  const cubiertos = new Set(registro.filter((e) => clubes.has(club(e.pdf)) && (enLista.has(e.pdf) || e.cargado || e.estado === 'cargado') && e.periodo?.cierre).map((e) => `${club(e.pdf)}|${e.periodo.cierre}`));
+  for (const e of registro) {
+    if (!clubes.has(club(e.pdf)) || enLista.has(e.pdf) || !e.periodo?.cierre || cubiertos.has(`${club(e.pdf)}|${e.periodo.cierre}`)) continue;
+    if (etapaDe(e).clave === 'e3-localizar') console.log(`OJO: ${e.pdf} está transcripto y sin localizar, y su ejercicio (${e.periodo.cierre}) no está en esta lista: sumalo o descartalo (Admin/registros/documentos-descartados.txt).`);
+  }
+}
 // (Versión 521, to-do 140(c)) DUPLICADOS: el mismo PDF que otro (misma huella, inventario-transcripciones.mjs) no se procesa: se procesa el otro.
 for (let i = docs.length - 1; i >= 0; i--) { const e = registro.find((x) => x.pdf === docs[i]); if (e && e.estado === 'duplicado') { console.log(`  ${docs[i]}: duplicado de ${e.duplicadoDe} (misma huella): se saltea`); docs.splice(i, 1); } }
 // silencioso: para las tools que se llaman solo por su efecto y imprimen un resumen de TODO el proyecto (inventario-transcripciones.mjs
