@@ -79,6 +79,10 @@ Generados/Grecia/AEK Athens/AEK_NOTES_IFRS_2025-06-30_a.categorias.json (escaló
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
+```
+
 ### Liga
 
 ```text

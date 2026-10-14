@@ -414,7 +414,7 @@ const aekathensgrFiscalYearMeta = {
       {label:'Χρηματοοικονομικά Έξοδα', value:-2.282193},
       {label:'Αναβαλλόμενος Φόρος', value:0.056295},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:3.525741,
     officialTotalRevenue:55.355432, officialTotalExpenses:64.479413, officialPAT:-11.349878,
   },
   2021: {
