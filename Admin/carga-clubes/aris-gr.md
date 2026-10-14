@@ -53,6 +53,46 @@ Duda: Fecha exacta en que Karipidis del Anestis asumió la presidencia: no se en
 Duda: Ejercicio 2022 (30/6/2022) no está en cierres de este lote, pero queda cubierto por Irini Karipidou.
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κύκλος εργασιών (καθαρός) | pág. 16, Jev 1 |
+| 2 | Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων (Πωλήσεις Ποδοσφαιριστών) | pág. 16, Jev 0.98 |
+| 3 | Λοιπά έσοδα και κέρδη | pág. 16, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κόστος πωλήσεων (Έξοδα ποδοσφαιρικού τμήματος) | pág. 16, Claude 0.8 |
+| 2 | Έξοδα διοίκησης | pág. 16, Jev 1 |
+| 3 | Έξοδα διάθεσης | pág. 16, Jev 1 |
+| 4 | Φορολογικά πρόστιμα και προσαυξήσεις | pág. 39, precedente |
+| 5 | Έκτακτα και ανόργανα έξοδα | pág. 39, precedente |
+| 6 | Προβλέψεις για έκτακτους κινδύνους | pág. 39, precedente |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-14): perimetro = individual. perimetro-senales.mjs: el ejercicio 2021-06-30 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2020–21 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Aris".
+```
+
 ## 2019
 
 ### Ingresos
@@ -102,4 +142,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Aris/Aris_FS_notes_ELP_2019-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aris-gr-fs-notes-elp-2021-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
