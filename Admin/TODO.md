@@ -84,6 +84,10 @@ ni en el comentario de ningún archivo de código.
        griego, así que en los 6 clubes nuevos del lote 71 (43 años, 86 datos) los escalones 0 y 1 no proponen nada y todo cae al escalón 2
        (IA, ~US$ 1,23). Agregar "Ταμειακά διαθέσιμα και ισοδύναμα" (caja) y "Δάνεια" / "Τραπεζικά δάνεια" / "Βραχυπρόθεσμα / Μακροπρόθεσμα
        δάνεια" (deuda), medido con `caja-deuda.mjs --medir` en los griegos ya cargados antes de entrar.
+       Antes que el vocabulario por idioma (pedido de Guido, 2026-10-14): ver si este escalón lo puede hacer Jev (typesafe.ai, ~US$ 42 por
+       MIL MILLONES de tokens de entrada, la IA barata que ya usa la etapa 7), así no hace falta griego ni ningún otro idioma: a Jev se le
+       pasan las filas del balance y elige cuál es caja y cuáles son deuda financiera; la compuerta es la misma de hoy (el número tiene que
+       estar impreso en esa línea). Medir con `caja-deuda.mjs --medir` sobre los años ya cargados, errores con confianza alta primero.
     k) Una respuesta "no" de la cola a una duda de importe ("¿se carga X del estado y no Y de la nota?", Olympiacos 2023 caso 446850a)
        no cambia nada: la verificación siguió con el importe del estado y hubo que agregar un ajuste `fila` a mano. Que esa respuesta
        aplique sola el importe de la nota (es lo que la pregunta ofrece), con la misma compuerta de cierre.
@@ -109,6 +113,14 @@ ni en el comentario de ningún archivo de código.
     s) Sueldos escondidos en "Αμοιβές τρίτων" (PAOK: 42 M en el cuadro de fútbol contra 9,2 M de costo de personal en la nota 17). Un
        chequeo de `audit.js` que compare `wages_squad` con el total de la nota de personal y con la cantidad de futbolistas, para que
        un caso así aparezca solo y no dependa de que un subagente lo note (relacionado con el to-do 229).
+
+233. JEV EN OTRAS ETAPAS DEL PIPELINE (pedido de Guido, 2026-10-14). Jev (typesafe.ai, `tools/jev-categorizar.mjs`) cuesta ~US$ 42 por MIL
+    MILLONES de tokens de entrada y hoy solo categoriza (etapa 7). Ver, etapa por etapa, si puede hacer lo que hoy hace Claude Opus o un
+    escalón de reglas por idioma, como escalón barato antes de la IA cara (nunca reemplazando una compuerta): caja y deuda (232 t),
+    `perimetro-a2` (le pasa hasta ~42.000 tokens a Opus para una respuesta corta, 20% del gasto de API en Grecia), localizar (elegir los
+    bloques del estado y las notas del índice de bloques), el período y el cierre (232 i), el nombre legal del alta (232 o), las preguntas
+    de perfil (socios / otros deportes, 232 c) y una primera mirada a los casos de la cola. Cada una se mide como Jev en la etapa 7
+    (`--backtest`): contra lo ya decidido, contando los errores con confianza ALTA, antes de entrar como escalón.
 
 130. OTROS DEPORTES Y CLUBES POLIDEPORTIVOS: ¿ENTRAN AL SITIO, Y CON QUÉ ESQUEMA? (Sudamérica y México). Minas Tênis Clube/Náutico,
     Paulistano, Praia Clube y Pinheiros publican un balance que consolida todos los deportes (cuotas,
