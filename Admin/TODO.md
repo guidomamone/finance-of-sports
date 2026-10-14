@@ -49,6 +49,29 @@ ni en el comentario de ningún archivo de código.
          (etapa 7 para las filas nuevas de sus notas), contestar la cola y commitear ese .json con el resultado.
       7. Archivar `lote-71.txt`, `lote-73.txt` y `lote-74.txt` en `Admin/Archive/lotes/` y pasar a la letra b) del to-do 165.
 
+232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
+    letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
+    a) `alta-club.mjs` no mira `Admin/registros/documentos-descartados.txt`: `--todos` da a `athenskallithea-gr` como "listo para alta"
+       aunque su único documento (el balance del municipio de Kallithea) está descartado. Un club cuyos documentos están todos descartados
+       no tendría que figurar como alta.
+    b) Gestiones de un club nuevo: cada año frena con un caso "cargar · gestion" y la tanda de subagentes se arma a mano
+       (`Admin/gestiones-por-pais/tanda-2026-10-14/lote-N.json` con clubId y cierres). Un script que arme los `lote-N.json` desde los casos
+       `gestion` pendientes de la cola, y que cargue el `resultado-N.json` validado y conteste esos casos, ahorra el armado en cada país.
+    c) Perfil (socios / otros deportes) por club: en Grecia todas las ΠΑΕ (sociedades anónimas de fútbol) dieron "no" y "no", y la cola lo
+       volvió a preguntar club por club (Kifisia, Panetolikos, PAOK, Olympiacos). Escalón por forma jurídica: si el documento dice ΠΑΕ /
+       Ποδοσφαιρική Ανώνυμη Εταιρεία (con la línea citada), proponer "no" y "no"; la compuerta es la cita, y lo que no la tiene sigue a la cola.
+    d) La cola pregunta la MISMA etiqueta una vez por año: PAOK dejó 78 casos de categoría para 8 ejercicios, casi todos repetidos
+       ("Αμοιβές τρίτων", "Παροχές τρίτων"...). Agrupar por club + etiqueta: una respuesta vale para los años en que la fila es la misma
+       (mismo lado, misma nota), y un año distinto vuelve a preguntar.
+    e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
+       Grecia fue el 20% del gasto de API. Mirar qué texto le hace falta de verdad (to-do 230 lo deja como tercer cambio).
+    f) Un club nuevo frena con "[club] carpetas-clubes.mjs dice paok-gr y quien.mjs --quien dice paok": para un club que todavía no tiene
+       data file, `quien.mjs` cae al nombre de la carpeta sin el sufijo de país. Es ruido mientras el alta no se hace, pero suma un motivo
+       falso a cada año frenado.
+    g) `lote-71.txt` siguió listando los 10 documentos de Olympiacos después de pasarlos al lote 74, y la segunda corrida los pagó de nuevo
+       en el 71 (sin daño: el 74 queda en caché). Que `lote.mjs` avise cuando un documento de la lista está también en otra lista activa
+       de `Admin/lotes/`.
+
 130. OTROS DEPORTES Y CLUBES POLIDEPORTIVOS: ¿ENTRAN AL SITIO, Y CON QUÉ ESQUEMA? (Sudamérica y México). Minas Tênis Clube/Náutico,
     Paulistano, Praia Clube y Pinheiros publican un balance que consolida todos los deportes (cuotas,
     escuelas, Lei de Incentivo): no encaja con las categorías de fútbol. Colombia sumó béisbol (Caimanes,
