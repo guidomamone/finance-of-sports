@@ -236,6 +236,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2025): Comercial / Sponsors, Estadio, Televisión
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
+```
+
 ## Fuentes
 
 ### kifisia-gr-notes-2024-06-30

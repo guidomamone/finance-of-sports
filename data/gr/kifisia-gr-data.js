@@ -129,7 +129,7 @@ const kifisiagrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.396935, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.06047,
     officialTotalRevenue:0.475202, officialTotalExpenses:0.925751, officialPAT:-0.452204,
   },
 };
