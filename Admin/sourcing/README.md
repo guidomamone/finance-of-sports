@@ -86,7 +86,7 @@ la línea de ese país acá solo si cambió alguno de sus números.
 ## Índice de países
 
 Un archivo por país en `Admin/sourcing/_indice/<País>.md`, con una línea por club. Hoy: **81 países,
-1282 clubes trackeados, 975 con documento encontrado.**
+1283 clubes trackeados, 975 con documento encontrado.**
 
 "Con documento" = existe al menos un documento financiero identificado y accesible con cifras de
 ese club — propio, o un agregado de liga con desglose club por club, como la DNCG francesa —
@@ -131,7 +131,7 @@ aunque todavía no esté cargado al sitio. No cuenta un documento confirmado per
 - [Francia](_indice/Francia.md) — 20 clubes, 20 con documento — Chequeo más antiguo: 2026-09-17
 - [Gales](_indice/Gales.md) — 9 clubes, 6 con documento — Chequeo más antiguo: 2026-10-03
 - [Georgia](_indice/Georgia.md) — 4 clubes, 3 con documento — Chequeo más antiguo: 2026-10-03
-- [Grecia](_indice/Grecia.md) — 14 clubes, 14 con documento — Chequeo más antiguo: 2026-09-17
+- [Grecia](_indice/Grecia.md) — 15 clubes, 14 con documento — Chequeo más antiguo: 2026-09-17
 - [Guatemala](_indice/Guatemala.md) — 2 clubes, 0 con documento — Chequeo más antiguo: 2026-09-13
 - [Honduras](_indice/Honduras.md) — 2 clubes, 0 con documento — Chequeo más antiguo: 2026-09-13
 - [Hungria](_indice/Hungria.md) — 14 clubes, 14 con documento — Chequeo más antiguo: 2026-10-03

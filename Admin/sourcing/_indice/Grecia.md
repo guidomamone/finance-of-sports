@@ -28,4 +28,5 @@ sección 20 del skill de sourcing.
 - [Volos NFC](<../Grecia/Volos NFC.md>) — 7 ejercicios 2018/19-2024/25 (toda su vida), sin cargar aún — Último chequeo: 2026-09-17
 - [Panserraikos](<../Grecia/Panserraikos.md>) — 5 ejercicios 2020/21-2024/25 (refundación tras liquidación, ver duda de perímetro en dudas-por-club.md), sin cargar aún — Último chequeo: 2026-09-17
 - [Kifisia](<../Grecia/Kifisia.md>) — 4 ejercicios 2021/22-2024/25 (toda su vida), sin cargar aún — Último chequeo: 2026-09-17
+- [Athens Kallithea](<../Grecia/Athens Kallithea.md>) — sin documento del club (el PDF que había era el balance del municipio, descartado) — Último chequeo: 2026-10-14
 - [Notas generales de Grecia](<../Grecia/_notas-generales.md>)

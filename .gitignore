@@ -71,6 +71,9 @@ Clubes/**/*.png
 # Los archivos SIGUEN EXISTIENDO en la máquina de Guido y se usan igual para
 # extraer datos; lo único que cambia es que no viajan al repo. Decisión de Guido.
 Clubes/Argentina/River/estados-contables-leads/
+# Documento que no es del club (CLAUDE.md: se guarda pero no se trackea): el balance 2020 del municipio de Kallithea,
+# bajado como si fuera de Athens Kallithea (descartado, Admin/registros/documentos-descartados.txt).
+Clubes/Grecia/Athens Kallithea/
 
 # Los resúmenes de libros que Guido usa como base de conocimiento. Quedan LOCALES
 # a propósito: este repo es público y deploya a Netlify, así que commitearlos los
@@ -145,3 +148,7 @@ Generados/**
 Admin/registros/.lote-lista-actual.txt
 Admin/registros/.lote-primer-anio.txt
 Admin/registros/.candado.lock
+
+# Los Generados del balance del municipio de Kallithea (ver "Documento que no es del club", arriba): va acá, después del
+# !Generados/**/*.json que los volvería a incluir.
+Generados/Grecia/Athens Kallithea/**

@@ -134,6 +134,7 @@ const SENAL_NO = [
 // que se pueda borrar).
 // ---------------------------------------------------------------------------
 const OVERRIDES = {
+  'Grecia|Athens Kallithea': { doc: false, motivo: 'el único PDF era el balance del municipio de Kallithea (descartado); falta el de la ΠΑΕ' },
   'Inglaterra|Fleetwood Town': { doc: true, motivo: 'grupo Jaymel con P&L 2015/16-2023/24 (perímetro a verificar)' },
   'Inglaterra|Notts County': { doc: false, motivo: 'balances sin cuenta de resultados (sociedad pequeña), dead-end real' },
   'Escocia|Queen of the South': { doc: false, motivo: 'balances sin cuenta de resultados (s.444), dead-end real' },
