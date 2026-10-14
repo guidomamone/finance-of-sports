@@ -56,9 +56,6 @@ ni en el comentario de ningún archivo de código.
        Los ajustes que lo fijaron: `categoria` player_sales en Olympiacos 2021-2025 (`Admin/registros/ajustes-manuales.jsonl`); el
        criterio es el de la skill `club-data-mapping` sección 3 ("reflejá cómo lo presenta cada club": 2016-2020 el estado imprime bruto).
        Ojo: el escalón tiene que respetar eso (si el ESTADO imprime ingreso y gasto por separado, quedan separados).
-    m) El chequeo contra el año vecino marca como error un cambio de presentación: Olympiacos 2020 da 82,46 M en su documento (bruto) y
-       74,81 M en la columna anterior del de 2021 (neto); la diferencia son exactamente las filas de costo de la venta (7,65 M). Escalón:
-       si la diferencia es igual a la suma de filas que el otro documento netea, es "presentación distinta", no un NO.
     n) Un ajuste `fila` que suma una fila fuera del total impreso (Kifisia 2025: 60.000 de transferencias, L421) deja el chequeo del total
        de ingresos en NO en cada corrida. El ajuste tendría que poder decir "fuera del total impreso" para que ese chequeo lo descuente.
        El ajuste está en `Admin/registros/ajustes-manuales.jsonl` (Kifisia_notes_2025, campo `fila`); el chequeo es el "total de ingresos"

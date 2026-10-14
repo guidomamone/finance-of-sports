@@ -299,6 +299,9 @@ Mitigaciones:
             Versión 611, ESCALÓN "columna anterior con signo": al decidir si un total es la suma de sus renglones, la columna del año anterior también acepta la suma con el signo impreso
             (como la lectura 4 para la columna actual). Cambian solo el chequeo del año vecino y "año anterior cargado" de AC Milan 2017-18 y 2018-19 y Lazio 2015-16 y 2016-17: los
             totales que se cargan, idénticos; los 4 pasan de cola a ok
+            To-do 232 m, ESCALÓN "presentación distinta": si el año vecino da distinto y la diferencia es exactamente UNA fila de gasto (no un
+            total) de uno de los dos documentos, el chequeo queda sin decidir (uno la netea), sin casos en la cola. Olympiacos 2020/2021,
+            Cuiabá 2022/2023; medido en los 112 casos de año vecino de la cola: 5 aciertos, 0 errores
  ESCALÓN    si la lectura que ganó (0-4) deja un renglón de ingresos de 20% o más del total dentro de un grupo de 3 renglones o
             menos: la misma lectura con la nota del subtotal abierta (sin esperar a la categoría en 0 del reintento); compuerta: cierra
             igual (Versión 587, to-do 175; caso Cremonese 2024)

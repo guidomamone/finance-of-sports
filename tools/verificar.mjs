@@ -1158,6 +1158,19 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     if (otroRegimen) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no` }); continue; }
     if (sinColumna) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} no trae la columna del año anterior` }); continue; }
     chequeos.push({ nombre: `documento del año ${year + dy}`, ok, detalle: `ingresos de ${dy === 1 ? year : year - 1}: ${r6(dy === 1 ? mio : suyo)} en ${dy === 1 ? 'este documento' : otro.pdf.split('/').pop()} y ${r6(dy === 1 ? suyo : mio)} en ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} (columna del año anterior)` });
+    // (to-do 232 m, aprobado por Guido el 2026-10-14) PRESENTACIÓN DISTINTA: la diferencia es exactamente UNA fila de GASTO (no un total) de
+    // uno de los dos documentos: uno la presenta y el otro la netea. Casos: Olympiacos 2020 (82,46 M bruto) contra la columna anterior de 2021
+    // (74,81 M neto): "Δαπάνες πώλησης/λύσεις συμβολαίων ποδοσφαιριστών" 7.645.064,67; Cuiabá 2022 y 2023, "(-) Deduções das receitas" (bruto
+    // contra neto). Medido sobre los 112 casos de año vecino de la cola: 5 aciertos, 0 errores; con "una fila cualquiera" entraban 3 descartados
+    // (UC 2009, Juventus 2005 x2) por coincidir con una fila de TOTAL. Se lee como en la medición: las cifras tal cual de los dos .filas.json, en
+    // unidades, miles o millones.
+    if (ok === false) {
+      const dif = Math.abs(mio - suyo); const TOT = /^\s*(?:total|totale|σύνολο|συνολο|subtotal|sub-total|ingresos de actividades|receita l)/i;
+      const filasDoc = (m) => { try { return JSON.parse(readFileSync(resolve(ROOT, derivado(m, '.filas.json', { crear: false })), 'utf8')).filas || []; } catch { return []; } };
+      const neteada = dif > 0 && [...filasDoc(md), ...filasDoc(otro.md)].filter((f) => f.lado === 'gasto' && !TOT.test(f.etiqueta || ''))
+        .flatMap((f) => [f.actual, f.anterior].map((x) => ({ f, v: Math.abs(parseNumber(x) ?? 0) }))).find(({ v }) => v && [1e6, 1e3, 1].some((e) => Math.abs(v / e - dif) <= Math.max(2e-6, dif * 1e-7)));
+      if (neteada) { chequeos[chequeos.length - 1] = { ...chequeos[chequeos.length - 1], ok: null, detalle: `presentación distinta: ingresos de ${dy === 1 ? year : year - 1} ${r6(mio)} y ${r6(suyo)}; la diferencia es exactamente "${neteada.f.etiqueta}" (${neteada.f.lado}, ${neteada.f.actual}), que uno de los dos documentos netea` }; vecinos[vecinos.length - 1] = null; continue; }
+    }
     if (ok === false) caso('anio-vecino', String(year + dy), `Los ingresos de ${dy === 1 ? year : year - 1} no coinciden entre este documento y ${otro.pdf.split('/').pop()} (${r6(mio)} contra ${r6(suyo)}). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.`, { pagina: estado[0]?.pagina });
   }
   let primerAnio = null; // (to-do 214, escalón 3) el pedido a Claude y su estado, para tools/primer-anio-ia.mjs
