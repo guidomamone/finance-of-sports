@@ -99,6 +99,7 @@ import { createHash } from 'node:crypto';
 import vm from 'node:vm';
 import { archivosData, rutaData } from './data-clubes.js';
 import { TOCA_UNA_CARGA } from './rutas.mjs';
+import { parseNumber } from './datos-sitio.mjs';
 
 // Los módulos que se reusan leen process.argv al importarse (alta-club.mjs: --escribir activa ANOTAR_MISSES y --anio fuerza el año;
 // proponer-carga.mjs: --tabla, --limit, --club...). Las opciones de ESTE comando no son las de ellos: se les pasa un argv limpio.
@@ -300,7 +301,20 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   P.periodo = per;
   if (!per) frena('periodo', 'el registro no tiene `periodo` (tools/periodo.mjs) para este documento');
   else {
-    if (per.tipo !== 'anual') frena('periodo', `el documento cubre un período ${per.tipo}${per.meses ? ` de ${per.meses} meses` : ''}${per.cierre ? ` al ${per.cierre}` : ''}: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)`);
+    // PRIMER EJERCICIO DE UNA SOCIEDAD NUEVA (decisión de Guido, 2026-10-14; Admin/CONVENCIONES-DATOS.md, "Balances parciales"). Un período
+    // de menos de 12 meses es parcial (falta el otro tramo) SALVO que no haya otro tramo: la sociedad no existía antes, y como la liga no se
+    // juega todos los meses, el período contiene la temporada entera. UNA compuerta, del propio documento: la columna del año anterior no tiene
+    // ningún importe distinto de cero (o no existe) en las filas extraídas. Casos: Kifisia 2022 (09/08/2021 – 30/06/2022, sin columna) y Volos
+    // 2019 (24/07/2018 – 30/06/2019, plantilla griega con la columna 2017-2018 toda en 0,00) se cargan; Atalanta 2022 (semestral, 147 importes
+    // del año anterior) sigue parcial. Se carga con una publicNote en la fuente.
+    let primero = null;
+    if (per.tipo !== 'anual' && per.meses && per.meses < 12 && e.md) {
+      const fp = resolve(ROOT, derivado(e.md, '.filas.json', { crear: false }));
+      const fs = existsSync(fp) ? (JSON.parse(readFileSync(fp, 'utf8')).filas || []) : [];
+      if (fs.length && fs.every((x) => x.anterior == null || String(x.anterior).trim() === '' || parseNumber(x.anterior) === 0)) primero = { meses: per.meses, inicio: per.inicio || null, cierre: per.cierre || null };
+    }
+    if (primero) { P.primerEjercicio = primero; P.avisos.push(`primer ejercicio de la sociedad (${per.meses} meses${per.inicio ? `, desde ${per.inicio}` : ''}): la columna del año anterior no tiene importes; se carga como el año, con nota pública`); }
+    else if (per.tipo !== 'anual') frena('periodo', `el documento cubre un período ${per.tipo}${per.meses ? ` de ${per.meses} meses` : ''}${per.cierre ? ` al ${per.cierre}` : ''}: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)`);
     if (per.nombreNoCoincide) frena('periodo', `el nombre del archivo dice otro cierre que el contenido (${per.cierre || '?'}): confirmar qué ejercicio es antes de cargarlo`);
   }
   if (!e.md || !existsSync(resolve(ROOT, e.md))) { return corta('registro', 'no hay .md en disco'); }
@@ -1029,7 +1043,9 @@ export function escribir(P) {
     const S = E.source;
     // la nota INTERNA de la fuente va a la evidencia del club (to-do 209: data/ se publica), no a un campo `note` de sources{}
     if (!(P.reemplaza && cargarSitio().sources?.[S.id])) {
-      src = insertarEnObjeto(src, 'Object.assign(sources, {', `  ${js(S.id)}: {\n    id:${js(S.id)}, clubId:${js(S.clubId)},\n    title:${js(S.title)},\n    type:${js(S.type)}, reliability:${js(S.reliability)},\n  },\n`, dataRel);
+      const dmy = (f) => f.split('-').reverse().join('/');
+      const notaPrimero = P.primerEjercicio ? `Primer ejercicio de la sociedad: ${P.primerEjercicio.inicio && P.primerEjercicio.cierre ? `del ${dmy(P.primerEjercicio.inicio)} al ${dmy(P.primerEjercicio.cierre)} ` : ''}(${P.primerEjercicio.meses} meses).` : null;
+      src = insertarEnObjeto(src, 'Object.assign(sources, {', `  ${js(S.id)}: {\n    id:${js(S.id)}, clubId:${js(S.clubId)},\n    title:${js(S.title)},\n    type:${js(S.type)}, reliability:${js(S.reliability)},\n${notaPrimero ? `    publicNote:${js(notaPrimero)},\n` : ''}  },\n`, dataRel);
       if (S.note) ev = EV.agregarFuente(ev, S.id, [S.note], 'note (cargar.mjs)');
     }
     writeFileSync(dataPath, src); escritos.push(dataRel);

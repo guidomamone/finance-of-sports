@@ -259,6 +259,13 @@ tramo y sus fechas. Si alguna de esas condiciones no se cumple (perímetro o mon
 quedan como parciales. Si un tramo es parte de un ejercicio cuyo balance anual completo existe (Juve Stabia: semestral al 31/12/2024 del ejercicio
 2024-25), lo que se busca es ese balance anual, no el otro semestre.
 
+**Primer ejercicio de una sociedad nueva (decisión de Guido, 2026-10-14).** Un período de menos de 12 meses SIN otro tramo posible se carga como el
+año: es el primer ejercicio de una sociedad que antes no existía (una ΠΑΕ recién constituida) y, como la liga no se juega todos los meses, contiene
+la temporada entera del club. La señal sale del propio documento: la columna del año anterior no tiene ningún importe distinto de cero (o no
+existe). Casos: Kifisia 2022 (09/08/2021 – 30/06/2022, sin columna) y Volos 2019 (24/07/2018 – 30/06/2019, la plantilla griega imprime la
+columna 2017-2018 toda en 0,00). Un cambio de cierre o un semestral siempre tienen importes del año anterior y siguen siendo parciales. La
+fuente lleva `publicNote` "Primer ejercicio de la sociedad: del ... al ... (N meses)". Lo aplica `tools/cargar.mjs` (sin cola).
+
 **Nota aparte encontrada en el mismo documento** (no una regla, un dato suelto para no perder): la
 última columna mensual del PDF de Instituto dice "dic-24" en vez de "dic-25" — es un typo del propio
 documento (todas las demás 11 columnas van ene-25 a nov-25, y el total anual solo cierra si esa

@@ -452,6 +452,8 @@ Mitigaciones:
  PRESIDENTES      (Versión 552) data/gestiones/<país>.js tiene una gestión confirmada que cubre el cierre ─► si no, caso `gestion` en la
                   cola (no frena; lo contesta el subagente con nombre, desde, hasta y fuente; trae como pista el firmante del .md) ─►
                   "descartar" = club sin presidente persona (SAF, sociedad anónima), no se vuelve a preguntar
+ PERÍODO CORTO    menos de 12 meses ─► la columna del año anterior sin importes (primer ejercicio de una sociedad nueva) → se carga
+                  como el año con publicNote (Volos 2019, Kifisia 2022; Admin/CONVENCIONES-DATOS.md) ─► con importes → frena (parcial)
  SIN CATEGORÍA    fila impresa (con página) que no está en el .categorias.json y nada categorizó ─► frena con su nombre (to-do 232 x;
                   AEK 2024) ─► las demás sin categoría aceptable: más del 5% del dinero del lado frena, menos es aviso y no se cargan
  CATEGORÍAS EN 0  ajuste `cero-real` ─► salarios / TV / estadio, o socios / otros deportes según el perfil ─► reintento (una vez) ─► aviso

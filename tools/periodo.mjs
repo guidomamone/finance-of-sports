@@ -185,7 +185,7 @@ export function periodoDe(mdText, nombreArchivo = '') {
     const delEjercicio = cand ? rangos.filter(({ b }) => dia(b) <= dia(cand.b) && dia(b) > dia(cand.b) - 365) : [];
     if (cand && delEjercicio.length === 1) {
       const n = Math.max(1, Math.round((dia(cand.b) - dia(cand.a) + 1) / 30.44));
-      res = { tipo: n >= 12 ? 'otro' : tipoDeMeses(n), meses: n, cierre: iso(cand.b), evidencia: { pagina: cand.l.pagina, texto: cand.l.texto.slice(0, 200) }, confianza: 'alta' };
+      res = { tipo: n >= 12 ? 'otro' : tipoDeMeses(n), meses: n, inicio: iso(cand.a), cierre: iso(cand.b), evidencia: { pagina: cand.l.pagina, texto: cand.l.texto.slice(0, 200) }, confianza: 'alta' };
     }
   }
   // cierre más citado en los títulos (para el anual y para completar). COMPUERTA (Versión 369): un cierre no puede ser de más de 2 años
