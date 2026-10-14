@@ -47,6 +47,9 @@ ni en el comentario de ningún archivo de código.
          modificado sin commitear desde la sesión del 2026-10-13 (re-verificación con la lectura nueva de verificar.mjs: la nota exacta y la
          'Diferencia de redondeo' de 1 euro). Correr `caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-73.txt --ejecutar --cargar`
          (etapa 7 para las filas nuevas de sus notas), contestar la cola y commitear ese .json con el resultado.
+      6b. Documentos de Grecia transcriptos que no entraron a ningún lote (`node tools/estado.mjs --dir "Clubes/Grecia/<Club>"`, etapa 3
+         "sin localizar"): Aris 2022 (`Aris_FS_audited_art47_2022-06-30`, formato art. 47 ΕΠΟ) y Atromitos 2017 (`Atromitos_audit_2016-17`,
+         solo informe del auditor: ver si trae estados o va a descartados). Armar el lote siguiente con ellos.
       7. Archivar `lote-71.txt`, `lote-73.txt` y `lote-74.txt` en `Admin/Archive/lotes/` y pasar a la letra b) del to-do 165.
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
@@ -77,6 +80,9 @@ ni en el comentario de ningún archivo de código.
        en la nota de jugadores (L1105, `wages_squad`) y en la de otros empleados (L1119, `admin_general_expense`). La segunda hereda la
        categoría de la primera y no hay forma de corregir una sola fila (`cola.mjs --corregir-categoria` va por etiqueta). Escalón: la
        categoría por etiqueta + `detalla_a` (la fila del estado que desglosa) cuando la misma etiqueta cae bajo dos renglones distintos.
+    i) `periodo.mjs` dio a Kifisia 2022 como ejercicio de 12 meses (confianza media, sin evidencia) y el documento dice "περιόδου
+       9/8/2021 - 30/06/2022" en la portada (L47, L93, L261): primer ejercicio de la sociedad, unos 10,7 meses. Un período de menos de 12
+       meses tiene que salir como parcial (Admin/registros/documentos-parciales.txt) o a la cola, no como anual.
 
 130. OTROS DEPORTES Y CLUBES POLIDEPORTIVOS: ¿ENTRAN AL SITIO, Y CON QUÉ ESQUEMA? (Sudamérica y México). Minas Tênis Clube/Náutico,
     Paulistano, Praia Clube y Pinheiros publican un balance que consolida todos los deportes (cuotas,
