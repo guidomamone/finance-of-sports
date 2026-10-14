@@ -80,3 +80,7 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   auditor y del directorio de años que la lista ya cubre); con la del ejercicio no cubierto, 2 (los dos con el cierre mal leído por
   `periodo.mjs`: el acta de Aris del 2021-01-30 y el informe del directorio 2015-16 de Atromitos). No avisa un documento sin cierre
   identificado (Atromitos_audit_2016-17, confianza baja): un escalón para esos (el año del nombre del archivo, por ejemplo) no se midió.
+- **Período corto en `periodo.mjs` (to-do 232 i, 2026-10-14)**: la primera versión del escalón 2b (rango con inicio que no es día 1 y
+  menos de 12 meses) cambiaba 30 documentos de 2.713, la mayoría fechas sueltas de un título ("31/12/2023 31/12/2023"); exigir un
+  separador de rango los bajó a 9, y exigir que sea el único rango del ejercicio sacó a Lazio 2003-04 (tramos de gestión A y B, cargado
+  como anual) y a la memoria 2020-21 de Barcelona. Quedaron 7, todos períodos cortos de verdad.

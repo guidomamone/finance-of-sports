@@ -51,6 +51,8 @@ Riesgos:
 
 Mitigaciones:
 - i) las fuentes no oficiales se guardan sin publicar; el año se lee del contenido (`periodo.mjs`), no del nombre;
+  un primer ejercicio corto (rango en los títulos que no empieza el día 1, único y de menos de 12 meses) sale como período corto, no
+  anual (to-do 232 i: Kifisia 2022 "09/08/2021 – 30/06/2022");
 - ii) duplicados por huella (Versión 521): `inventario-transcripciones.mjs` guarda el sha1 de cada PDF (cacheado por tamaño y fecha) y de
   cada grupo de PDFs idénticos deja uno (el cargado, si no el que tiene .md, si no el que no se llama como un anexo, si no la primera
   ruta); los demás quedan en el estado `duplicado` (`duplicadoDe`). `pipeline.mjs` no los transcribe (elige por estado) y `lote.mjs` los

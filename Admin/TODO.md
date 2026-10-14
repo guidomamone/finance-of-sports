@@ -44,13 +44,6 @@ ni en el comentario de ningún archivo de código.
        elige `cargar.mjs` ("CATEGORÍA DE CADA FILA", cabecera L31) desde `.categorias.json` por `label`. Medir con
        `node tools/lote.mjs --lista Admin/lotes/prueba-completa.txt` antes y después (lo cargado de los otros clubes, idéntico) y ver PAOK
        y Olympiacos 2025: hoy `audit.js` marca `linea-duplicada` P3 en esas filas (92 hallazgos en los griegos nuevos).
-    i) `periodo.mjs` dio a Kifisia 2022 como ejercicio de 12 meses (confianza media, sin evidencia) y el documento dice "περιόδου
-       9/8/2021 - 30/06/2022" en la portada (L47, L93, L261): primer ejercicio de la sociedad, unos 10,7 meses. Un período de menos de 12
-       meses tiene que salir como parcial (Admin/registros/documentos-parciales.txt) o a la cola, no como anual.
-       Código: `tools/periodo.mjs` (tipo y meses del período; "12 para anual por defecto") y el `periodo` que guarda en
-       `Admin/registros/transcripciones-estado.jsonl` (Kifisia 2022 quedó `{"tipo":"anual","meses":12,"evidencia":null,"confianza":"media"}`).
-       Caso para medir: el título "περιόδου 9/8/2021 - 30/06/2022" tiene las dos fechas; un período con fecha de inicio que no es el día
-       siguiente al cierre anterior es corto.
     k) Una respuesta "no" de la cola a una duda de importe ("¿se carga X del estado y no Y de la nota?", Olympiacos 2023 caso 446850a)
        no cambia nada: la verificación siguió con el importe del estado y hubo que agregar un ajuste `fila` a mano. Que esa respuesta
        aplique sola el importe de la nota (es lo que la pregunta ofrece), con la misma compuerta de cierre.

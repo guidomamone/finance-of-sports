@@ -25,6 +25,7 @@
 //      "sechs Monate", "9M", "H1", "1T", "Q3"), en ~15 idiomas. Número en cifras o en palabras.
 //   2. Rango de fechas explícito ("del 1 de enero al 30 de junio de 2019", "01.01.2019 - 30.09.2019", "1 July 2018 to 31 December 2018"):
 //      los meses salen de la diferencia.
+//   2b. Rango que no empieza el día 1, único en los títulos y de menos de 12 meses: primer ejercicio corto ("09/08/2021 – 30/06/2022").
 //   3. Palabra de período intermedio SIN meses ("interim", "ara dönem", "Zwischenbericht", "delårsrapport", "полугодие", "中期"): 'intermedio'.
 //   4. Nada de lo anterior: 'anual' (lo normal en este proyecto), con el cierre = la fecha de fin de mes más citada en los títulos.
 //   Fecha de cierre, escalera (Versión 369): escalón 0 la más citada en los títulos; escalón 1 los encabezados de columna de las tablas
@@ -85,6 +86,9 @@ const ABREV_RE = /(?:^|[^\p{L}\d])(q[1-4]|[1-4]t|[1-4]q|h[12]|[1-2]s|9m|6m|3m|[1
 const INTERMEDIO_RE = /interim (financial|report|accounts|statements|condensed|consolidated)|condensed (consolidated )?interim|half[- ]year(ly)? (report|financial|accounts|results)|quarterly (report|financial)|(estados?|informacion|informe) (financier[oa]s?|contables?) (intermedi|trimestral|semestral)|periodo intermedio|periodos intermedios|informe (trimestral|semestral)|demonstrac(oes|ao) (financeiras? |contabeis )?(intermediarias|intercalares|trimestrais|semestrais)|informacoes trimestrais|relatorio (trimestral|semestral)|ara (hesap )?donem|zwischen(bericht|abschluss)|halbjahres(finanz)?bericht|quartals(bericht|abschluss)|delarsrapport|halvarsrapport|kvartalsrapport|halfjaar(bericht|verslag|cijfers)|kwartaal(bericht|cijfers)|relazione (finanziaria )?semestrale|resoconto intermedio|bilancio semestrale|rapport (financier )?semestriel|comptes semestriels|промежуточн[а-я]* (финансов|отчет|бухгалтер)|отчет за (1|i|первый) (квартал|полугодие)|проміжн[а-я]* (фінансов|звіт)|pololetni (zprava|uzaverka)|mezitimni|sprawozdanie (polroczne|kwartalne|srodroczne)|polugodisnj|tromjesecn|ενδιαμεσ|中期報告|四半期報告|半期報告|중간|분기보고|반기보고/;
 const TRIM_POR_PALABRA = [[/bimestr/, 2], [/trimestr|quarter|quartal|kvartal|kwartaal|квартал|ctvrtlet|kwartal|tromjesec|τριμην|四半期|분기/, 3], [/cuatrimestr/, 4], [/semestr|halbjahr|halvar|полугод|пiврiч|піврічч|pololet|polrocz|polugodi|εξαμην|半期|中間|반기/, 6]];
 
+// Lo que une las dos fechas de un rango ("09/08/2021 – 30/06/2022", "24 Ιουλίου 2018 - 30 Ιουνίου 2019", "vom 31.07.2014 bis zum 31.12.2014",
+// "za období 04.04.2007 – 31.12.2007", "3 novembre 2003 – 30 giugno 2004"). Sobre el texto normalizado (norm).
+const RANGO_SEP_RE = /^\s*(?:-|–|—|εως|bis(?: zum| zu)?|az|to|till|until|al|a|au|tot|do|ate)\s*$/u;
 function tipoDeMeses(m) {
   return { 1: 'mensual', 2: 'bimestral', 3: 'trimestral', 4: 'cuatrimestral', 6: 'semestral', 9: 'nueve-meses', 12: 'anual' }[m] || 'otro';
 }
@@ -92,10 +96,10 @@ function tipoDeMeses(m) {
 // Fechas de una línea: "31 Ağustos 2019", "August 31, 2019", "31.08.2019", "31/08/2019", "2019-08-31". Devuelve [{a, m, d}].
 function fechasDe(linea) {
   const t = norm(linea); const out = [];
-  for (const x of t.matchAll(/(?<!\d)(\d{1,2})[./-](\d{1,2})[./-](\d{4})(?!\d)/g)) { const d = +x[1], m = +x[2]; if (m >= 1 && m <= 12 && d >= 1 && d <= 31) out.push({ a: +x[3], m, d, i: x.index }); }
-  for (const x of t.matchAll(/(?<!\d)(\d{4})-(\d{2})-(\d{2})(?!\d)/g)) out.push({ a: +x[1], m: +x[2], d: +x[3], i: x.index });
-  for (const x of t.matchAll(new RegExp(`(?<!\\d)(\\d{1,2})\\.?\\s*(?:de\\s+)?(${MES_RE})\\.?,?\\s*(?:de\\s+|del\\s+)?(\\d{4})`, 'gu'))) out.push({ a: +x[3], m: MES_DE.get(x[2]), d: +x[1], i: x.index });
-  for (const x of t.matchAll(new RegExp(`(${MES_RE})\\.?\\s+(\\d{1,2}),?\\s+(\\d{4})`, 'gu'))) out.push({ a: +x[3], m: MES_DE.get(x[1]), d: +x[2], i: x.index });
+  for (const x of t.matchAll(/(?<!\d)(\d{1,2})[./-](\d{1,2})[./-](\d{4})(?!\d)/g)) { const d = +x[1], m = +x[2]; if (m >= 1 && m <= 12 && d >= 1 && d <= 31) out.push({ a: +x[3], m, d, i: x.index, fin: x.index + x[0].length }); }
+  for (const x of t.matchAll(/(?<!\d)(\d{4})-(\d{2})-(\d{2})(?!\d)/g)) out.push({ a: +x[1], m: +x[2], d: +x[3], i: x.index, fin: x.index + x[0].length });
+  for (const x of t.matchAll(new RegExp(`(?<!\\d)(\\d{1,2})\\.?\\s*(?:de\\s+)?(${MES_RE})\\.?,?\\s*(?:de\\s+|del\\s+)?(\\d{4})`, 'gu'))) out.push({ a: +x[3], m: MES_DE.get(x[2]), d: +x[1], i: x.index, fin: x.index + x[0].length });
+  for (const x of t.matchAll(new RegExp(`(${MES_RE})\\.?\\s+(\\d{1,2}),?\\s+(\\d{4})`, 'gu'))) out.push({ a: +x[3], m: MES_DE.get(x[1]), d: +x[2], i: x.index, fin: x.index + x[0].length });
   return out.sort((p, q) => p.i - q.i);
 }
 const iso = (f) => `${f.a}-${String(f.m).padStart(2, '0')}-${String(f.d).padStart(2, '0')}`;
@@ -157,6 +161,32 @@ export function periodoDe(mdText, nombreArchivo = '') {
       }
     }
     if (res) break;
+  }
+  // 2b. (to-do 232 i) RANGO QUE NO EMPIEZA EL DÍA 1: el primer ejercicio de una sociedad recién constituida. Kifisia 2022 dice "09/08/2021 –
+  // 30/06/2022" (L93) y el paso 2 lo ignoraba (exige inicio el día 1): salía anual por descarte, 12 meses, y había que anotarlo a mano en
+  // Admin/registros/documentos-parciales.txt. Solo si el paso 2 no decidió, con UNA compuerta: inicio anterior al fin (fin de mes) y MENOS de
+  // 12 meses entre los dos, y es el ÚNICO rango de ese ejercicio en los títulos. "Rango" = dos fechas unidas SOLO por un separador
+  // (RANGO_SEP_RE: sin él, medido sobre los 2.713 .md, entraban fechas sueltas de un título: "31/12/2023 31/12/2023"). "Único": un
+  // ejercicio anual partido en tramos de gestión no es un período corto (Lazio 2003-04 "A) periodo 1° luglio 2003 - 3 novembre 2003" y
+  // "B) periodo 3 novembre 2003 – 30 giugno 2004"; Barcelona memoria 2020-21, los dos tramos de junta en una línea).
+  // Un rango de 12 meses o más ("30/06/2021 – 30/06/2022") no decide aquí: sigue la escalera como siempre. Medido sobre los 2.713 .md:
+  // cambian 7 (Kifisia 2022, Panserraikos 2021, Volos 2019 x3, Dukla 2007, RB Leipzig 2014), todos períodos cortos de verdad.
+  if (!res) {
+    const dia = (f) => Date.UTC(f.a, f.m - 1, f.d) / 864e5;
+    const rangos = []; // todos los rangos de los títulos (cualquier día de inicio), sin repetir
+    for (const l of lineas) {
+      const tx = l.texto.replace(/(\d)\s*[°º]/g, '$1'); const fs = fechasDe(tx); // "1° luglio 2003" (Lazio 2003-04, el tramo A)
+      for (let i = 0; i + 1 < fs.length; i++) {
+        const a = fs[i]; const b = fs[i + 1];
+        if (dia(b) > dia(a) && RANGO_SEP_RE.test(norm(tx).slice(a.fin, b.i)) && !rangos.some((r) => iso(r.a) === iso(a) && iso(r.b) === iso(b))) rangos.push({ a, b, l });
+      }
+    }
+    const cand = rangos.find(({ a, b }) => a.d !== 1 && finDeMes(b) && dia(b) - dia(a) + 1 < 365);
+    const delEjercicio = cand ? rangos.filter(({ b }) => dia(b) <= dia(cand.b) && dia(b) > dia(cand.b) - 365) : [];
+    if (cand && delEjercicio.length === 1) {
+      const n = Math.max(1, Math.round((dia(cand.b) - dia(cand.a) + 1) / 30.44));
+      res = { tipo: n >= 12 ? 'otro' : tipoDeMeses(n), meses: n, cierre: iso(cand.b), evidencia: { pagina: cand.l.pagina, texto: cand.l.texto.slice(0, 200) }, confianza: 'alta' };
+    }
   }
   // cierre más citado en los títulos (para el anual y para completar). COMPUERTA (Versión 369): un cierre no puede ser de más de 2 años
   // después de hoy. Caso real: Fortaleza CEIF 2022, "La duración legal del Club es definida hasta el 31 de diciembre del 2050" (L28) ganaba
