@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Grecia/Aris/Aris_FS_2024-06-30.md",
- "generatedAt": "2026-10-14T04:25:22.287Z",
- "rubrosHuella": "f3368654550a99654a2cca1878ac06bfaa895b64",
+ "generatedAt": "2026-10-14T05:33:03.019Z",
+ "rubrosHuella": "868014228b9c338e71019aa2ca0f9afbb3622da5",
  "rubros": [
   {
    "label": "Έσοδα από εισιτήρια",
@@ -76,27 +76,31 @@
    "desdeCache": true
   },
   {
-   "label": "Έσοδα από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)",
-   "lado": "revenue",
-   "page": 12,
-   "section": "estado",
-   "choice": "player_sales",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "player_sales",
-     0.99
-    ],
-    [
-     "other_income",
-     0.01
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1112
+   "label": "Ποδοσφαιριστές-ημερομίσθια & μισθοί",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ποδοσφαιριστές-εισφορές κοινωνικής ασφάλισης",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Δαπάνες παροχών προς ποδοσφαιριστές",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
+   "choice": "wages_squad",
+   "confidence": 0.51,
+   "desdeCache": true
   },
   {
    "label": "Τεχνικό προσωπικό-ημερομίσθια & μισθοί",
@@ -105,21 +109,25 @@
    "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
    "choice": "wages_squad",
    "confidence": 0.99,
-   "top3": [
-    [
-     "wages_squad",
-     0.99
-    ],
-    [
-     "admin_general_expense",
-     0.01
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1097
+   "desdeCache": true
+  },
+  {
+   "label": "Τεχνικό προσωπικό-εισφορές κοινωνικής ασφάλισης",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
+   "choice": "wages_squad",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Δαπάνες παροχών προς τεχνικό προσωπικό",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
+   "choice": "wages_squad",
+   "confidence": 0.85,
+   "desdeCache": true
   },
   {
    "label": "Λοιπό προσωπικό-ημερομίσθια & μισθοί",
@@ -128,21 +136,25 @@
    "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
    "choice": "admin_general_expense",
    "confidence": 0.74,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.76
-    ],
-    [
-     "youth_other_sports_expense",
-     0.15
-    ],
-    [
-     "wages_squad",
-     0.05
-    ]
-   ],
-   "tokens": 1106
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπό προσωπικό-εισφορές κοινωνικής ασφάλισης",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Δαπάνες παροχών προς λοιπό προσωπικό",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "desdeCache": true
   },
   {
    "label": "Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού",
@@ -287,190 +299,6 @@
    "choice": "player_amortisation",
    "confidence": 1,
    "desdeCache": true
-  },
-  {
-   "label": "Δαπάνες παροχών προς τεχνικό προσωπικό",
-   "lado": "expense",
-   "page": 28,
-   "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
-   "choice": "wages_squad",
-   "confidence": 0.85,
-   "top3": [
-    [
-     "wages_squad",
-     0.86
-    ],
-    [
-     "other_expenses",
-     0.1
-    ],
-    [
-     "admin_general_expense",
-     0.03
-    ]
-   ],
-   "tokens": 1075
-  },
-  {
-   "label": "Δαπάνες παροχών προς ποδοσφαιριστές",
-   "lado": "expense",
-   "page": 28,
-   "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
-   "choice": "wages_squad",
-   "confidence": 0.51,
-   "top3": [
-    [
-     "wages_squad",
-     0.55
-    ],
-    [
-     "other_expenses",
-     0.4
-    ],
-    [
-     "admin_general_expense",
-     0.02
-    ]
-   ],
-   "tokens": 1071
-  },
-  {
-   "label": "Τεχνικό προσωπικό-εισφορές κοινωνικής ασφάλισης",
-   "lado": "expense",
-   "page": 28,
-   "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
-   "choice": "wages_squad",
-   "confidence": 0.79,
-   "top3": [
-    [
-     "wages_squad",
-     0.81
-    ],
-    [
-     "admin_general_expense",
-     0.14
-    ],
-    [
-     "other_expenses",
-     0.03
-    ]
-   ],
-   "tokens": 1083
-  },
-  {
-   "label": "Ποδοσφαιριστές-εισφορές κοινωνικής ασφάλισης",
-   "lado": "expense",
-   "page": 28,
-   "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
-   "choice": "wages_squad",
-   "confidence": 1,
-   "top3": [
-    [
-     "wages_squad",
-     1
-    ],
-    [
-     "player_amortisation",
-     0
-    ],
-    [
-     "player_impairment",
-     0
-    ]
-   ],
-   "tokens": 1082
-  },
-  {
-   "label": "Ποδοσφαιριστές-ημερομίσθια & μισθοί",
-   "lado": "expense",
-   "page": 28,
-   "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
-   "choice": "wages_squad",
-   "confidence": 1,
-   "top3": [
-    [
-     "wages_squad",
-     1
-    ],
-    [
-     "player_amortisation",
-     0
-    ],
-    [
-     "player_impairment",
-     0
-    ]
-   ],
-   "tokens": 1084
-  },
-  {
-   "label": "Λοιπό προσωπικό-εισφορές κοινωνικής ασφάλισης",
-   "lado": "expense",
-   "page": 28,
-   "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
-   "choice": "admin_general_expense",
-   "confidence": 0.59,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.62
-    ],
-    [
-     "youth_other_sports_expense",
-     0.22
-    ],
-    [
-     "wages_squad",
-     0.1
-    ]
-   ],
-   "tokens": 1120
-  },
-  {
-   "label": "Δαπάνες παροχών προς λοιπό προσωπικό",
-   "lado": "expense",
-   "page": 28,
-   "section": "nota que desglosa \"Σύνολο Δαπανών παροχών προς υπαλλήλους\"",
-   "choice": "admin_general_expense",
-   "confidence": 0.85,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.86
-    ],
-    [
-     "other_expenses",
-     0.09
-    ],
-    [
-     "wages_squad",
-     0.05
-    ]
-   ],
-   "tokens": 1110
-  },
-  {
-   "label": "Απομείωση/λοιπές μειώσεις διάθεσης άυλων περιουσιακών στοιχείων (εγγραφές παικτών)",
-   "lado": "expense",
-   "page": 12,
-   "section": "estado",
-   "choice": "player_impairment",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "player_impairment",
-     0.99
-    ],
-    [
-     "player_amortisation",
-     0.01
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1162
   }
  ]
 }

@@ -1,0 +1,250 @@
+{
+  "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.md",
+  "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.pdf",
+  "club": "olympiacos",
+  "year": 2023,
+  "generatedAt": "2026-10-14T05:24:00.584Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Έσοδα από εισιτήρια",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        6.365335
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Χορηγίες και διαφημίσεις",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        15.018186
+      ],
+      "glosa": "Patrocinios y publicidad"
+    },
+    {
+      "label": "Δικαιώματα αναμετάδοσης",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        7.305992
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Εμπορικά",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        1.247905
+      ],
+      "glosa": "Ingresos comerciales"
+    },
+    {
+      "label": "Έσοδα από UEFA",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        12.191898
+      ],
+      "glosa": "Ingresos de la UEFA"
+    },
+    {
+      "label": "Λοιπά λειτουργικά έσοδα",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        3.54401
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Αξία πώλησης ποδοσφαιριστών",
+      "lado": "revenue",
+      "page": 37,
+      "section": "nota que desglosa \"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\"",
+      "values": [
+        16.509336
+      ],
+      "glosa": "Valor de venta de futbolistas"
+    },
+    {
+      "label": "Αναπόσβεστο κόστος Ποδοσφαιριστών",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\"",
+      "values": [
+        10.433318
+      ],
+      "glosa": "Coste no amortizado de futbolistas"
+    },
+    {
+      "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\"",
+      "values": [
+        0.648219
+      ],
+      "glosa": "Otros costes directos de traspaso de futbolistas"
+    },
+    {
+      "label": "Κόστος πωλήσεων εμπορευμάτων",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Coste de ventas de mercaderías"
+    },
+    {
+      "label": "Μισθοί και δόσεις συμβολαίων",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\"",
+      "values": [
+        23.927832
+      ],
+      "glosa": "Sueldos y plazos contractuales"
+    },
+    {
+      "label": "Εισφορές κοινωνικής ασφάλισης",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\"",
+      "values": [
+        0.192577
+      ],
+      "glosa": "Cotizaciones a la seguridad social"
+    },
+    {
+      "label": "Λοιπές παροχές",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\"",
+      "values": [
+        10.959345
+      ],
+      "glosa": "Otras prestaciones"
+    },
+    {
+      "label": "Ημερομίσθια και μισθοί",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\"",
+      "values": [
+        5.998403
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Ημερομίσθια και μισθοί εργαζομένων άρθρου 47 Κανονισμού Αδειοδότησης",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\"",
+      "values": [
+        1.988569
+      ],
+      "glosa": "Sueldos y salarios de empleados del artículo 47 del Reglamento de Licencias"
+    },
+    {
+      "label": "Εισφορές κοινωνικής ασφάλισης",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\"",
+      "values": [
+        1.040968
+      ],
+      "glosa": "Cotizaciones a la seguridad social"
+    },
+    {
+      "label": "Εισφορές κοινωνικής ασφάλισης εργαζομένων άρθρου 47 Κανονισμού Αδειοδότησης",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\"",
+      "values": [
+        0.017719
+      ],
+      "glosa": "Cotizaciones a la seguridad social de empleados del artículo 47 del Reglamento de Licencias"
+    },
+    {
+      "label": "Πρόβλεψη αποζημίωσης Προσωπικού",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\"",
+      "values": [
+        0.049923
+      ],
+      "glosa": "Provisión para indemnizaciones del personal"
+    },
+    {
+      "label": "Απόσβεση ενσώματων ακινητοποιήσεων",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων\"",
+      "values": [
+        0.284254
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων\"",
+      "values": [
+        0.487802
+      ],
+      "glosa": "Amortización de activos por derecho de uso"
+    },
+    {
+      "label": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων\"",
+      "values": [
+        0.030163
+      ],
+      "glosa": "Amortización de otros activos intangibles (excluidos futbolistas)"
+    },
+    {
+      "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        14.296571
+      ],
+      "glosa": "Amortización y deterioro de derechos de futbolistas"
+    },
+    {
+      "label": "Πρόβλεψη επισφαλών πελατών",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Provisión para insolvencias de clientes"
+    },
+    {
+      "label": "Λοιπά λειτουργικά έξοδα",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        20.096966
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

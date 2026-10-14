@@ -1,0 +1,327 @@
+{
+ "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2020-06-30.pdf",
+ "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2020-06-30.md",
+ "generado": "2026-10-14T05:24:00.657Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2020,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "a045e3d",
+  "615eeee"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.021405182655144e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": false,
+   "detalle": "ingresos de 2020: 82.455128 en este documento y 74.810063 en PAE_Olympiacos_FS_2021-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2019: 61.041351 en PAE_Olympiacos_FS_2019-06-30.pdf y 61.041351 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "el desglose de \"Λοιπά λειτουργικά έξοδα\" (7 filas) no suma la fila: quedó la fila",
+  "escalón \"nota exacta en la lectura 5\": \"Έσοδα από πωλήσεις ποδοσφαιριστών / λύσεις συμβολαίων\" (L232) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Δαπάνη παροχών ποδοσφαιριστών\" (L226) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Δαπάνη παροχών λοιπών εργαζομένων\" (L227) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Απόσβεση και απομείωση λοιπών ενσώματων & ασώματων ακινητοποιήσεων\" (L228) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Λοιπά λειτουργικά έξοδα\" (L230) se abre en las 6 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Δαπάνες πώλησης/λύσεις συμβολαίων ποδοσφαιριστών\" (L233) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de extraer que no afecta la carga: Los bloques b24-b27 no muestran '(ποσά σε €)' pero sus totales coinciden exactamente con el estado en € (L227-L230)."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Λοιπά λειτουργικά έξοδα",
+   "suma": 27.682786,
+   "objetivo": 17.20333
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Λοιπά λειτουργικά έξοδα",
+   "suma": 27.682786,
+   "objetivo": 17.20333
+  }
+ ],
+ "totales": {
+  "ingresos": 82.455128,
+  "gastos": 74.833166,
+  "financiero": -1.056556,
+  "impuesto": -3.835022,
+  "resultadoImpreso": 2.730384,
+  "resultadoParaCargar": 2.730384,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Έσοδα από εισιτήρια",
+   "lado": "ingreso",
+   "M": 5.714093,
+   "pagina": 9,
+   "linea": 218,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Χορηγίες και διαφημίσεις",
+   "lado": "ingreso",
+   "M": 10.657746,
+   "pagina": 9,
+   "linea": 219,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Δικαιώματα αναμετάδοσης",
+   "lado": "ingreso",
+   "M": 4.871515,
+   "pagina": 9,
+   "linea": 220,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Εμπορικά",
+   "lado": "ingreso",
+   "M": 0.805846,
+   "pagina": 9,
+   "linea": 221,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Έσοδα από UEFA",
+   "lado": "ingreso",
+   "M": 36.535617,
+   "pagina": 9,
+   "linea": 222,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά λειτουργικά έσοδα",
+   "lado": "ingreso",
+   "M": 0.567811,
+   "pagina": 9,
+   "linea": 223,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Αξία πώλησης ποδοσφαιριστών",
+   "lado": "ingreso",
+   "M": 23.2525,
+   "pagina": 42,
+   "linea": 1344,
+   "origen": "nota que desglosa \"Έσοδα από πωλήσεις ποδοσφαιριστών / λύσεις συμβολαίων\""
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα κατά την πώληση",
+   "lado": "ingreso",
+   "M": 0.05,
+   "pagina": 42,
+   "linea": 1345,
+   "origen": "nota que desglosa \"Έσοδα από πωλήσεις ποδοσφαιριστών / λύσεις συμβολαίων\""
+  },
+  {
+   "etiqueta": "Μισθοί και δόσεις συμβολαίων",
+   "lado": "gasto",
+   "M": 15.877127,
+   "pagina": 40,
+   "linea": 1263,
+   "origen": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\""
+  },
+  {
+   "etiqueta": "Εισφορεκκοινωνικής ασφάλισης",
+   "lado": "gasto",
+   "M": 0.14064,
+   "pagina": 40,
+   "linea": 1264,
+   "origen": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\""
+  },
+  {
+   "etiqueta": "Λοιπές παροχές",
+   "lado": "gasto",
+   "M": 5.722637,
+   "pagina": 40,
+   "linea": 1265,
+   "origen": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\""
+  },
+  {
+   "etiqueta": "Ημερομίσθια και μισθοί",
+   "lado": "gasto",
+   "M": 7.050278,
+   "pagina": 40,
+   "linea": 1274,
+   "origen": "nota que desglosa \"Δαπάνη παροχών λοιπών εργαζομένων\""
+  },
+  {
+   "etiqueta": "Εισφορεκκοινωνικής ασφάλισης",
+   "lado": "gasto",
+   "M": 1.006096,
+   "pagina": 40,
+   "linea": 1275,
+   "origen": "nota que desglosa \"Δαπάνη παροχών λοιπών εργαζομένων\""
+  },
+  {
+   "etiqueta": "Πρόβλεψη αποζημίωσης προσωπικού",
+   "lado": "gasto",
+   "M": 0.082446,
+   "pagina": 40,
+   "linea": 1276,
+   "origen": "nota que desglosa \"Δαπάνη παροχών λοιπών εργαζομένων\""
+  },
+  {
+   "etiqueta": "Απόσβεση ενσώματων περιουσιακών στοιχείων",
+   "lado": "gasto",
+   "M": 0.226973,
+   "pagina": 40,
+   "linea": 1285,
+   "origen": "nota que desglosa \"Απόσβεση και απομείωση λοιπών ενσώματων & ασώματων ακινητοποιήσεων\""
+  },
+  {
+   "etiqueta": "Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων",
+   "lado": "gasto",
+   "M": 0.449045,
+   "pagina": 40,
+   "linea": 1286,
+   "origen": "nota que desglosa \"Απόσβεση και απομείωση λοιπών ενσώματων & ασώματων ακινητοποιήσεων\""
+  },
+  {
+   "etiqueta": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)",
+   "lado": "gasto",
+   "M": 0.028923,
+   "pagina": 40,
+   "linea": 1287,
+   "origen": "nota que desglosa \"Απόσβεση και απομείωση λοιπών ενσώματων & ασώματων ακινητοποιήσεων\""
+  },
+  {
+   "etiqueta": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
+   "lado": "gasto",
+   "M": 8.92115,
+   "pagina": 9,
+   "linea": 229,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Έξοδα αγώνων",
+   "lado": "gasto",
+   "M": 1.920609,
+   "pagina": 41,
+   "linea": 1317,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Έξοδα χορηγιών και διαφημίσεων",
+   "lado": "gasto",
+   "M": 2.640273,
+   "pagina": 41,
+   "linea": 1318,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Έξοδα ακινήτων & εγκαταστάσεων",
+   "lado": "gasto",
+   "M": 4.001938,
+   "pagina": 41,
+   "linea": 1319,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Έκτακτα έξοδα",
+   "lado": "gasto",
+   "M": 0.300409,
+   "pagina": 41,
+   "linea": 1320,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Έξοδα ποδοσφαιρικού τμήματος",
+   "lado": "gasto",
+   "M": 1.616227,
+   "pagina": 41,
+   "linea": 1321,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Λοιπά λειτουργικά έξοδα",
+   "lado": "gasto",
+   "M": 17.20333,
+   "pagina": 41,
+   "linea": 1322,
+   "origen": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\""
+  },
+  {
+   "etiqueta": "Αναπόσβεστο κόστος ποδοσφαιριστών",
+   "lado": "gasto",
+   "M": 7.535065,
+   "pagina": 42,
+   "linea": 1347,
+   "origen": "nota que desglosa \"Δαπάνες πώλησης/λύσεις συμβολαίων ποδοσφαιριστών\""
+  },
+  {
+   "etiqueta": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+   "lado": "gasto",
+   "M": 0.11,
+   "pagina": 42,
+   "linea": 1348,
+   "origen": "nota que desglosa \"Δαπάνες πώλησης/λύσεις συμβολαίων ποδοσφαιριστών\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Χρηματοοικονομικά έσοδα",
+   "M": 0.628557,
+   "linea": 235
+  },
+  {
+   "etiqueta": "Χρηματοοικονομικά έξοδα",
+   "M": -1.685112,
+   "linea": 236
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόρος εισοδήματος",
+   "M": -3.835022,
+   "linea": 239
+  }
+ ]
+}

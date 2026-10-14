@@ -3,7 +3,7 @@
   "pdf": "Clubes/Grecia/Aris/Aris_FS_2025-06-30.pdf",
   "club": "aris",
   "year": 2025,
-  "generatedAt": "2026-10-14T04:18:22.505Z",
+  "generatedAt": "2026-10-14T05:24:00.752Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         4.83965
       ],
-      "glosa": "Ingresos por patrocinios y publicidad"
+      "glosa": "Ingresos por patrocinio y publicidad"
     },
     {
       "label": "Έσοδα δικαιωμάτων μεταδοσεων",
@@ -64,7 +64,7 @@
       "values": [
         5.196467
       ],
-      "glosa": "Beneficio por enajenación de activos intangibles (derechos de jugadores)"
+      "glosa": "Beneficio por enajenación de activos intangibles (derechos federativos de jugadores)"
     },
     {
       "label": "Κόστος πωλήσεων / υλικών / μη διανεμηθέντα",
@@ -94,7 +94,7 @@
       "values": [
         0.22381
       ],
-      "glosa": "Futbolistas - cotizaciones a la seguridad social"
+      "glosa": "Futbolistas - cargas sociales"
     },
     {
       "label": "Δαπάνες παροχών προς ποδοσφαιριστές",
@@ -104,7 +104,7 @@
       "values": [
         0.044242
       ],
-      "glosa": "Gastos por prestaciones a futbolistas"
+      "glosa": "Gastos por beneficios a futbolistas"
     },
     {
       "label": "Τεχνικό προσωπικό-ημερομίσθια & μισθοί",
@@ -114,7 +114,7 @@
       "values": [
         0.23224
       ],
-      "glosa": "Personal técnico - sueldos y salarios"
+      "glosa": "Cuerpo técnico - sueldos y salarios"
     },
     {
       "label": "Τεχνικό προσωπικό-εισφορές κοινωνικής ασφάλισης",
@@ -124,7 +124,7 @@
       "values": [
         0.03085
       ],
-      "glosa": "Personal técnico - cotizaciones a la seguridad social"
+      "glosa": "Cuerpo técnico - cargas sociales"
     },
     {
       "label": "Δαπάνες παροχών προς τεχνικό προσωπικό",
@@ -134,7 +134,7 @@
       "values": [
         0.02779
       ],
-      "glosa": "Gastos por prestaciones al personal técnico"
+      "glosa": "Gastos por beneficios al cuerpo técnico"
     },
     {
       "label": "Λοιπό προσωπικό-ημερομίσθια & μισθοί",
@@ -154,7 +154,7 @@
       "values": [
         0.01077
       ],
-      "glosa": "Otro personal - cotizaciones a la seguridad social"
+      "glosa": "Otro personal - cargas sociales"
     },
     {
       "label": "Δαπάνες παροχών προς λοιπό προσωπικό",
@@ -164,7 +164,7 @@
       "values": [
         0.011745
       ],
-      "glosa": "Gastos por prestaciones a otro personal"
+      "glosa": "Gastos por beneficios a otro personal"
     },
     {
       "label": "Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού",
@@ -184,7 +184,7 @@
       "values": [
         0.012
       ],
-      "glosa": "Amortización de otros activos intangibles (excluidos los derechos de futbolistas)"
+      "glosa": "Amortización de otros activos intangibles (excluidos derechos federativos de jugadores)"
     },
     {
       "label": "Έξοδα τέλεσης αγώνων",
@@ -253,7 +253,7 @@
       "values": [
         3.4595
       ],
-      "glosa": "Amortización de activos intangibles (derechos de jugadores)"
+      "glosa": "Amortización de activos intangibles (derechos federativos de jugadores)"
     }
   ]
 }

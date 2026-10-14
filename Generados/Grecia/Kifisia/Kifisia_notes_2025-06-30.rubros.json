@@ -2,8 +2,8 @@
   "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.md",
   "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.pdf",
   "club": "kifisia",
-  "year": null,
-  "generatedAt": "2026-10-14T04:17:55.948Z",
+  "year": 2025,
+  "generatedAt": "2026-10-14T05:24:00.970Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         0.3608
       ],
-      "glosa": "Mecanismo de solidaridad y premios económicos de la UEFA"
+      "glosa": "Mecanismos de solidaridad y premios de la UEFA"
     },
     {
       "label": "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση",
@@ -64,7 +64,7 @@
       "values": [
         0.244238
       ],
-      "glosa": "Subvenciones de organismos nacionales de fútbol o del gobierno"
+      "glosa": "Subvenciones de la federación nacional de fútbol o del gobierno"
     },
     {
       "label": "Άλλα λειτουργικά έσοδα",
@@ -77,6 +77,16 @@
       "glosa": "Otros ingresos de explotación"
     },
     {
+      "label": "λοιπά έσοδα /έξοδα μεταγραφών",
+      "lado": "revenue",
+      "page": 12,
+      "section": "ajuste manual",
+      "values": [
+        0.06
+      ],
+      "glosa": "Otros ingresos / gastos por transferencias"
+    },
+    {
       "label": "Κόστος πωλήσεων /υλικών",
       "lado": "expense",
       "page": 12,
@@ -84,7 +94,7 @@
       "values": [
         0.006609
       ],
-      "glosa": "Coste de ventas / materiales"
+      "glosa": "Coste de ventas / aprovisionamientos"
     },
     {
       "label": "Αμοιβές έμμισθου προσωπικού (μικτά ποσά)",
@@ -104,7 +114,7 @@
       "values": [
         0.125079
       ],
-      "glosa": "Cargas sociales (contribuciones patronales)"
+      "glosa": "Cargas sociales (cotizaciones patronales)"
     },
     {
       "label": "Παρεπόμενες παροχές",
@@ -114,7 +124,7 @@
       "values": [
         0.03
       ],
-      "glosa": "Prestaciones complementarias"
+      "glosa": "Prestaciones y retribuciones complementarias"
     },
     {
       "label": "Απόσβεση και απομείωση ενσώματων παγίων στοιχείων ενεργητικού",
@@ -154,7 +164,7 @@
       "values": [
         0
       ],
-      "glosa": "Amortización y deterioro de los derechos federativos de jugadores"
+      "glosa": "Amortización y deterioro de derechos federativos de jugadores"
     }
   ]
 }

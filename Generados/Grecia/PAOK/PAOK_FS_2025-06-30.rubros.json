@@ -3,7 +3,7 @@
   "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.pdf",
   "club": "paok",
   "year": 2025,
-  "generatedAt": "2026-10-14T04:17:56.303Z",
+  "generatedAt": "2026-10-14T05:24:01.216Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         7.073307
       ],
-      "glosa": "Ingresos por entradas y abonos"
+      "glosa": "Ingresos por taquilla y abonos"
     },
     {
       "label": "Έσοδα από τηλεοπτικά δικαιώματα",
@@ -24,7 +24,7 @@
       "values": [
         3.18977
       ],
-      "glosa": "Ingresos por derechos de televisión"
+      "glosa": "Ingresos por derechos audiovisuales"
     },
     {
       "label": "Έσοδα από παραχωρήσεις ποδοσφαιριστών",
@@ -34,7 +34,7 @@
       "values": [
         1.369898
       ],
-      "glosa": "Ingresos por cesiones de futbolistas"
+      "glosa": "Ingresos por cesión de futbolistas"
     },
     {
       "label": "Έσοδα από επιχορηγήσεις",
@@ -54,7 +54,7 @@
       "values": [
         12.663195
       ],
-      "glosa": "Ingresos por patrocinios y publicidad"
+      "glosa": "Ingresos por patrocinio y publicidad"
     },
     {
       "label": "Ενοίκια Έσοδα",
@@ -84,7 +84,7 @@
       "values": [
         31.772701
       ],
-      "glosa": "Pérdidas y ganancias por enajenación de activos no corrientes"
+      "glosa": "Resultados por enajenación de activos no corrientes"
     },
     {
       "label": "Λοιπά έσοδα και κέρδη",
@@ -114,7 +114,7 @@
       "values": [
         41.978664
       ],
-      "glosa": "Honorarios y servicios de terceros"
+      "glosa": "Honorarios de terceros"
     },
     {
       "label": "Παροχές τρίτων",
@@ -184,7 +184,7 @@
       "values": [
         0.586344
       ],
-      "glosa": "Honorarios y servicios de terceros"
+      "glosa": "Honorarios de terceros"
     },
     {
       "label": "Παροχές τρίτων",
@@ -254,7 +254,7 @@
       "values": [
         0.356617
       ],
-      "glosa": "Honorarios y servicios de terceros"
+      "glosa": "Honorarios de terceros"
     },
     {
       "label": "Παροχές τρίτων",
@@ -324,7 +324,7 @@
       "values": [
         0.311915
       ],
-      "glosa": "Sanciones fiscales y recargos"
+      "glosa": "Multas y recargos fiscales"
     },
     {
       "label": "Λοιπά έκτακτα έξοδα",

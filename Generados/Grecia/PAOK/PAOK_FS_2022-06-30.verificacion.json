@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2022-06-30.pdf",
  "md": "Clubes/Grecia/PAOK/PAOK_FS_2022-06-30.md",
- "generado": "2026-10-14T04:17:56.253Z",
- "estado": "cola",
+ "generado": "2026-10-14T05:24:01.168Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2022,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "119123b",
-  "1fc72ac",
-  "67263f1"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -52,6 +48,7 @@
  ],
  "notas": [
   "la nota de \"Κύκλος εργασιών\" no suma el renglón (32.724172 contra 32.627236, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer ya contestada para el club (perimetro, \"Κύκλος εργασιών\"): aceptar, en PAOK_FS_2024-06-30.pdf",
   "duda de extraer que no afecta la carga: L1250-L1251 aparecen en b37 y b38; se cargaron solo desde b37.",
   "duda de extraer que no afecta la carga: La tabla no tiene encabezado, pero su Σύνολο 4.343.395,60 (L1261) coincide con L437."
  ],

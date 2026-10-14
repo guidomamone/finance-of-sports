@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2024-06-30.pdf",
  "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2024-06-30.md",
- "generado": "2026-10-14T04:17:55.874Z",
- "estado": "cola",
+ "generado": "2026-10-14T05:24:00.953Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "01c5a44"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -38,6 +36,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 4.830808 en este documento y 4.830808 en Kifisia_notes_2025-06-30.pdf (columna del año anterior)"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 0.838352 en Kifisia_notes_2023-06-30.pdf y 0.838352 en este documento (columna del año anterior)"
@@ -53,7 +56,7 @@
   "la nota de \"Λοιπά συνήθη έσοδα\" no suma el renglón (1.626986 contra 1.807637, sumando sus renglones): quedó el renglón del estado",
   "escalón \"nota exacta en la lectura 5\": \"Λοιπά έξοδα και ζημίες\" (L500) se abre en las 4 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de localizar de escala confirmada por otro documento del club (to-do 213): Kifisia_notes_2025-06-30.md L218 imprime 4.024.960,78 con su moneda; la carga usó unidades",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Kifisia_notes_2025-06-30.pdf",
   "duda de extraer que no afecta la carga: Coincide el importe 1.353,23 pero la etiqueta no corresponde y el año anterior difiere (2.382,88 vs 0)."
  ],
  "reintentar": [

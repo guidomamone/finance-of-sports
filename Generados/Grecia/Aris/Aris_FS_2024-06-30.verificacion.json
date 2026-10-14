@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/Aris/Aris_FS_2024-06-30.pdf",
  "md": "Clubes/Grecia/Aris/Aris_FS_2024-06-30.md",
- "generado": "2026-10-14T04:43:40.040Z",
- "estado": "cola",
+ "generado": "2026-10-14T05:24:00.736Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -51,10 +51,7 @@
    "fecha": "2026-10-14"
   }
  ],
- "cola": [
-  "9654cf8",
-  "d22e203"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -91,8 +88,7 @@
  "notas": [
   "ajuste manual: sale la fila \"L496\" (2026-10-14, Claude 2026-10-14 (cola del lote 71, subagente Sonnet + revisión): L496 (4.450.000) y L497 (-195.000) son el detalle de 'Κέρδος από την διάθεση...' 4.252.500 (L498); el neto de transferencias L499 (2.471.335) = -1.781.165 + 4.252.500. Cargarlas además del Κέρδος duplicaba: ingresos 2024 quedan 16,354681 (columna 2024 de Aris_FS_2025.md))",
   "ajuste manual: sale la fila \"L497\" (2026-10-14, Claude 2026-10-14: ver el ajuste de L496; el deterioro es parte del Κέρδος de L498)",
-  "duda de localizar que no afecta la carga: El título de pág. 12 dice 'ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ' (consolidadas), pero las notas se refieren a la sociedad y no se ve otro perímetro.",
-  "3 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar que no afecta la carga: El título de pág. 12 dice 'ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ' (consolidadas), pero las notas se refieren a la sociedad y no se ve otro perímetro."
  ],
  "reintentar": null,
  "reintentado": false,

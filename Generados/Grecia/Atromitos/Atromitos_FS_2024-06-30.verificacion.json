@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/Atromitos/Atromitos_FS_2024-06-30.pdf",
  "md": "Clubes/Grecia/Atromitos/Atromitos_FS_2024-06-30.md",
- "generado": "2026-10-14T04:17:55.612Z",
- "estado": "cola",
+ "generado": "2026-10-14T05:24:00.846Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "1b269fe",
-  "71990ab"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -59,6 +56,7 @@
   "escalón \"nota exacta en la lectura 5\": \"Λοιπά συνήθη έσοδα\" (L243) se abre en las 3 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 5\": \"Λοιπά έσοδα και κέρδη\" (L249) se abre en las 2 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Atromitos_FS_2024-06-30.pdf",
   "duda de extraer que no afecta la carga: El documento lo suma dentro del subtotal de servicios que coincide con la facturación del estado (L843).",
   "duda de extraer que no afecta la carga: El cuadro de personal b22 mezcla tres renglones de b20; personal suma 1.157.770,88 coincidiendo con L873."
  ],

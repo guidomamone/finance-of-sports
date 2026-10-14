@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.pdf",
  "md": "Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.md",
- "generado": "2026-10-14T04:18:22.586Z",
+ "generado": "2026-10-14T05:24:00.878Z",
  "estado": "ok",
  "clubId": null,
  "year": 2016,
@@ -50,10 +50,9 @@
   "la nota de \"Κύκλος εργασιών (καθαρός)\" no suma el renglón (4.214279 contra 4.214679, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Λοιπά συνήθη έσοδα\" no suma el renglón (0.878568 contra 0.878168, sumando sus renglones): quedó el renglón del estado",
   "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de localizar de escala confirmada por otro documento del club (to-do 213): Atromitos_board_report_2015-16.md L17 imprime 4.214.678,56 con su moneda; la carga usó unidades",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Atromitos_FS_2024-06-30.pdf",
   "duda de extraer que no afecta la carga: La suma de L738-L742 da 4.214.278,56, 400 menos que L215; L218 (878.167,82) es 400 menos que L749+L754 (878.567,82), parece una reclasificación o error tipográfico compensado.",
-  "duda de extraer que no afecta la carga: El cuadro de gastos por naturaleza (L766-L780) desglosa en conjunto L216, L221 y L229, no un renglón concreto.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: El cuadro de gastos por naturaleza (L766-L780) desglosa en conjunto L216, L221 y L229, no un renglón concreto."
  ],
  "reintentar": [
   {

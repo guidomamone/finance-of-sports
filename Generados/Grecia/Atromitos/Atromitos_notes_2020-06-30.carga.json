@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/Atromitos/Atromitos_notes_2020-06-30.pdf",
- "generado": "2026-10-14T04:26:28.575Z",
+ "generado": "2026-10-14T05:33:25.783Z",
  "frena": [
   {
    "etapa": "club",
@@ -9,19 +9,10 @@
   {
    "etapa": "club",
    "motivo": "carpetas-clubes.mjs dice atromitos-gr y quien.mjs --quien dice atromitos"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Επιχορήγηση από Super League-ΕΠΟ\" -> broadcasting 0.5; \"Επιχορήγηση από UEFA Ακαδημιών\" -> youth_football 0.6; \"Ενοίκια Κυλικείου\" -> other_income 0.65; \"Κόστος πωλήσεων\" -> lump_football_operations_expense 0.55"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-13: Claude 2026-10-13: PAE sin grupo: las 6-8 menciones de 'consolidado' son el texto genérico de las notas (mismo patrón que AEK y Asteras), contra 24-46 de individual)",
-  "gestión: ningún presidente confirmado cubre 2020 (cierre 2020-06-30); pregunta en la cola (no frena)"
+  "perímetro: individual (ajuste manual del club, 2026-10-13: Claude 2026-10-13: PAE sin grupo: las 6-8 menciones de 'consolidado' son el texto genérico de las notas (mismo patrón que AEK y Asteras), contra 24-46 de individual)"
  ],
  "ejercicio": {
   "clubId": "atromitos-gr",
@@ -61,13 +52,13 @@
    },
    {
     "rawLabel": "Επιχορήγηση από Super League-ΕΠΟ",
-    "normalizedCategory": "broadcasting",
+    "normalizedCategory": "competition_bonus",
     "amountNative": 0.263893,
     "disclosureLevel": "aggregated",
     "_pag": 23,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Επιχορήγηση από συμμετοχή UEFA",
@@ -85,9 +76,9 @@
     "amountNative": 0.349805,
     "disclosureLevel": "aggregated",
     "_pag": 23,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Έσοδα από ΕΠΟ - Κύπελλο Ελλάδος",
@@ -105,9 +96,9 @@
     "amountNative": 0.0208,
     "disclosureLevel": "aggregated",
     "_pag": 23,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Λοιπά έσοδα και κέρδη",
@@ -127,9 +118,9 @@
     "amountNative": -5.065443,
     "disclosureLevel": "aggregated",
     "_pag": 9,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Έξοδα διοίκησης",
@@ -181,7 +172,7 @@
      "renglon": "Κόστος πωλήσεων",
      "lado": "expense",
      "importe": 5.065443,
-     "motivo": "el documento no desglosa este renglón"
+     "motivo": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2020-06-30.md: Κόστος πωλήσεων 5.065.443 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
     }
    ],
    "grossDebt": null,
@@ -273,12 +264,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
    "signoFijo": 0.263893,
-   "cat": "broadcasting",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Atromitos_notes_2020-06-30.md L795 (263.892,74) bajo subvenciones; subvención de liga/federación, no TV (la TV es 'Από τηλεοπτικά δικαιώματα'). Precedente Panathinaikos: competition_bonus.",
    "destino": "revenue",
    "amountNative": 0.263893
   },
@@ -305,11 +296,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
    "signoFijo": 0.349805,
    "cat": "youth_football",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Atromitos_notes_2020-06-30.md L797 (349.805,00): subvención UEFA Academias, línea de subvenciones, ligada al programa de formación (en 2022 FS L805 'Χορηγίες ΟΠΑΠ για τμήματα υποδομής' sección de infantiles). Criterio: youth_football = fútbol juvenil. Alternativa competition_bonus (solidaridad UEFA) descartada porque el rótulo nombra Academias.",
    "destino": "revenue",
    "amountNative": 0.349805
   },
@@ -336,11 +327,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
    "signoFijo": 0.0208,
    "cat": "other_income",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2020-06-30.md L803 'Ενοίκια Κυλικείου' (alquiler de cantina) 20.800,00, bajo 'Έσοδα παρεπόμενων ασχολιών'. El rótulo no nombra el estadio: criterio conservador de SKILL.md (stadium_other solo si nombra estadio) -> other_income.",
    "destino": "revenue",
    "amountNative": 0.0208
   },
@@ -367,11 +358,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 5.065443,
    "cat": "lump_football_operations_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2020-06-30.md: Κόστος πωλήσεων 5.065.443 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'.",
    "destino": "expense",
    "amountNative": -5.065443
   },
@@ -525,7 +516,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 2,
   "lineasIngreso": 9,
   "lineasGasto": 3,
   "metaFilas": 3,

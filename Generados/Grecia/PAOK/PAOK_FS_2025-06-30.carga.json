@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.pdf",
- "generado": "2026-10-14T04:26:30.843Z",
+ "generado": "2026-10-14T05:33:29.187Z",
  "frena": [
   {
    "etapa": "club",
@@ -11,14 +11,420 @@
    "motivo": "carpetas-clubes.mjs dice paok-gr y quien.mjs --quien dice paok"
   },
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "20 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Έσοδα από εισιτήρια-συνδρομές\" -> matchday_competition 0.75; \"Αμοιβές τρίτων\" -> other_expenses 0.45; \"Παροχές τρίτων\" -> other_expenses 0.4; \"Διάφορα έξοδα\" -> other_expenses 0.75; \"Αποσβέσεις\" -> player_amortisation 0.5"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-13: Claude 2026-10-13: PAOK PAE es filial de DIMERA Ltd, que es la que consolida (PAOK_FS_2024-06-30.md L1217-1219, nota 21); los estados de la PAE son individuales (8 menciones de consolidado contra 53-59 de individual))"
+  "perímetro: individual (ajuste manual del club, 2026-10-13: Claude 2026-10-13: PAOK PAE es filial de DIMERA Ltd, que es la que consolida (PAOK_FS_2024-06-30.md L1217-1219, nota 21); los estados de la PAE son individuales (8 menciones de consolidado contra 53-59 de individual))",
+  "gastos: ningún total impreso igual a la suma de las líneas (-72.202038); queda la suma, verificada por el resultado del ejercicio"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "paok-gr",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Έσοδα από εισιτήρια-συνδρομές",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 7.073307,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έσοδα από τηλεοπτικά δικαιώματα",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 3.18977,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έσοδα από παραχωρήσεις ποδοσφαιριστών",
+    "normalizedCategory": "player_sales",
+    "amountNative": 1.369898,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έσοδα από επιχορηγήσεις",
+    "normalizedCategory": "other_income",
+    "amountNative": 15.679149,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έσοδα από χορηγίες-διαφημίσεις",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 12.663195,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ενοίκια Έσοδα",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.18865,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπά Έσοδα πάροχης Υπηρεσιών",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.294302,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+    "normalizedCategory": "other_income",
+    "amountNative": 31.772701,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπά έσοδα και κέρδη",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.094295,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Αμοιβές προσωπικού",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -4.98334,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αμοιβές τρίτων",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -41.978664,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 2,
+    "_conf": 0.45,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Παροχές τρίτων",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.530316,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 2,
+    "_conf": 0.4,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Φόροι-Τέλη",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.153366,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Διάφορα έξοδα",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -5.879699,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αποσβέσεις",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -7.190106,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αγορές Αναλωσίμων",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.425513,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αμοιβές προσωπικού",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -2.289615,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αμοιβές τρίτων",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.586344,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.45,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Παροχές τρίτων",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.284778,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.4,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Φόροι-Τέλη",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.253822,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Διάφορα έξοδα",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.352036,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αποσβέσεις",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.224474,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπές Προβλέψεις",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -0.042673,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αμοιβές προσωπικού",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.8902,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αμοιβές τρίτων",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.356617,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.45,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Παροχές τρίτων",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.08044,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.4,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Φόροι-Τέλη",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.097378,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Διάφορα έξοδα",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.716463,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Αποσβέσεις",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.058809,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπές Προβλέψεις",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -0.141441,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Πρόστιμα αθλητικών φορέων",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.347456,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Φορολογικά Πρόστιμα & προσαυξήσεις",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.311915,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπά έκτακτα έξοδα",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.583675,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Φόροι και προσαυξήσεις προηγ. Χρήσεων",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.026573,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπά έξοδα προηγ. Χρήσεων",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.002262,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2025-06-30",
+   "sourceId": "paok-gr-fs-2025-06-30",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.485662,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+     "value": 0.017015
+    },
+    {
+     "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+     "value": -0.502677
+    },
+    {
+     "label": "Φόροι εισοδήματος",
+     "value": null
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 73.325268,
+   "officialTotalExpenses": 72.202038,
+   "officialPAT": 0.05163
+  },
+  "source": {
+   "id": "paok-gr-fs-2025-06-30",
+   "clubId": "paok-gr",
+   "title": "PAOK — PAOK_FS_2025-06-30 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.md",
  "reemplaza": false,
  "periodo": {
@@ -35,5 +441,682 @@
  },
  "clubId": "paok-gr",
  "year": 2025,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 38,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Έσοδα από εισιτήρια-συνδρομές",
+   "page": 36,
+   "native": 7.073307,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Κύκλος εργασιών\")",
+   "signoFijo": 7.073307,
+   "cat": "matchday_competition",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 7.073307
+  },
+  {
+   "label": "Έσοδα από τηλεοπτικά δικαιώματα",
+   "page": 36,
+   "native": 3.18977,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Κύκλος εργασιών\")",
+   "signoFijo": 3.18977,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.18977
+  },
+  {
+   "label": "Έσοδα από παραχωρήσεις ποδοσφαιριστών",
+   "page": 36,
+   "native": 1.369898,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Κύκλος εργασιών\")",
+   "signoFijo": 1.369898,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.369898
+  },
+  {
+   "label": "Έσοδα από επιχορηγήσεις",
+   "page": 36,
+   "native": 15.679149,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Κύκλος εργασιών\")",
+   "signoFijo": 15.679149,
+   "cat": "other_income",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 15.679149
+  },
+  {
+   "label": "Έσοδα από χορηγίες-διαφημίσεις",
+   "page": 36,
+   "native": 12.663195,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Κύκλος εργασιών\")",
+   "signoFijo": 12.663195,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 12.663195
+  },
+  {
+   "label": "Ενοίκια Έσοδα",
+   "page": 36,
+   "native": 0.18865,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
+   "signoFijo": 0.18865,
+   "cat": "other_income",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.18865
+  },
+  {
+   "label": "Λοιπά Έσοδα πάροχης Υπηρεσιών",
+   "page": 36,
+   "native": 0.294302,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
+   "signoFijo": 0.294302,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.294302
+  },
+  {
+   "label": "Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+   "page": 18,
+   "native": 31.772701,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 31.772701,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 31.772701
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "page": 18,
+   "native": 1.094295,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.094295,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.094295
+  },
+  {
+   "label": "Αμοιβές προσωπικού",
+   "page": 36,
+   "native": 4.98334,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\")",
+   "signoFijo": 4.98334,
+   "cat": "wages_squad",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.98334
+  },
+  {
+   "label": "Αμοιβές τρίτων",
+   "page": 36,
+   "native": 41.978664,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\")",
+   "signoFijo": 41.978664,
+   "cat": "other_expenses",
+   "conf": 0.45,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -41.978664
+  },
+  {
+   "label": "Παροχές τρίτων",
+   "page": 36,
+   "native": 1.530316,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\")",
+   "signoFijo": 1.530316,
+   "cat": "other_expenses",
+   "conf": 0.4,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.530316
+  },
+  {
+   "label": "Φόροι-Τέλη",
+   "page": 36,
+   "native": 0.153366,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\")",
+   "signoFijo": 0.153366,
+   "cat": "admin_general_expense",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.153366
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "page": 36,
+   "native": 5.879699,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\")",
+   "signoFijo": 5.879699,
+   "cat": "other_expenses",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -5.879699
+  },
+  {
+   "label": "Αποσβέσεις",
+   "page": 36,
+   "native": 7.190106,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\")",
+   "signoFijo": 7.190106,
+   "cat": "player_amortisation",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -7.190106
+  },
+  {
+   "label": "Αγορές Αναλωσίμων",
+   "page": 36,
+   "native": 0.425513,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\")",
+   "signoFijo": 0.425513,
+   "cat": "other_expenses",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.425513
+  },
+  {
+   "label": "Αμοιβές προσωπικού",
+   "page": 37,
+   "native": 2.289615,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Έξοδα διοίκησης\")",
+   "signoFijo": 2.289615,
+   "cat": "wages_squad",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.289615
+  },
+  {
+   "label": "Αμοιβές τρίτων",
+   "page": 37,
+   "native": 0.586344,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Έξοδα διοίκησης\")",
+   "signoFijo": 0.586344,
+   "cat": "other_expenses",
+   "conf": 0.45,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.586344
+  },
+  {
+   "label": "Παροχές τρίτων",
+   "page": 37,
+   "native": 0.284778,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Έξοδα διοίκησης\")",
+   "signoFijo": 0.284778,
+   "cat": "other_expenses",
+   "conf": 0.4,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.284778
+  },
+  {
+   "label": "Φόροι-Τέλη",
+   "page": 37,
+   "native": 0.253822,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Έξοδα διοίκησης\")",
+   "signoFijo": 0.253822,
+   "cat": "admin_general_expense",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.253822
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "page": 37,
+   "native": 1.352036,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Έξοδα διοίκησης\")",
+   "signoFijo": 1.352036,
+   "cat": "other_expenses",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.352036
+  },
+  {
+   "label": "Αποσβέσεις",
+   "page": 37,
+   "native": 0.224474,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Έξοδα διοίκησης\")",
+   "signoFijo": 0.224474,
+   "cat": "player_amortisation",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.224474
+  },
+  {
+   "label": "Λοιπές Προβλέψεις",
+   "page": 37,
+   "native": 0.042673,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Έξοδα διοίκησης\")",
+   "signoFijo": 0.042673,
+   "cat": "other_amortisation",
+   "conf": 0.7,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.042673
+  },
+  {
+   "label": "Αμοιβές προσωπικού",
+   "page": 37,
+   "native": 1.8902,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Έξοδα διάθεσης\")",
+   "signoFijo": 1.8902,
+   "cat": "wages_squad",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.8902
+  },
+  {
+   "label": "Αμοιβές τρίτων",
+   "page": 37,
+   "native": 0.356617,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Έξοδα διάθεσης\")",
+   "signoFijo": 0.356617,
+   "cat": "other_expenses",
+   "conf": 0.45,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.356617
+  },
+  {
+   "label": "Παροχές τρίτων",
+   "page": 37,
+   "native": 0.08044,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Έξοδα διάθεσης\")",
+   "signoFijo": 0.08044,
+   "cat": "other_expenses",
+   "conf": 0.4,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.08044
+  },
+  {
+   "label": "Φόροι-Τέλη",
+   "page": 37,
+   "native": 0.097378,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Έξοδα διάθεσης\")",
+   "signoFijo": 0.097378,
+   "cat": "admin_general_expense",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.097378
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "page": 37,
+   "native": 1.716463,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Έξοδα διάθεσης\")",
+   "signoFijo": 1.716463,
+   "cat": "other_expenses",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.716463
+  },
+  {
+   "label": "Αποσβέσεις",
+   "page": 37,
+   "native": 0.058809,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Έξοδα διάθεσης\")",
+   "signoFijo": 0.058809,
+   "cat": "player_amortisation",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.058809
+  },
+  {
+   "label": "Λοιπές Προβλέψεις",
+   "page": 37,
+   "native": 0.141441,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Έξοδα διάθεσης\")",
+   "signoFijo": 0.141441,
+   "cat": "other_amortisation",
+   "conf": 0.7,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.141441
+  },
+  {
+   "label": "Πρόστιμα αθλητικών φορέων",
+   "page": 37,
+   "native": 0.347456,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")",
+   "signoFijo": 0.347456,
+   "cat": "other_expenses",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.347456
+  },
+  {
+   "label": "Φορολογικά Πρόστιμα & προσαυξήσεις",
+   "page": 37,
+   "native": 0.311915,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")",
+   "signoFijo": 0.311915,
+   "cat": "admin_general_expense",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.311915
+  },
+  {
+   "label": "Λοιπά έκτακτα έξοδα",
+   "page": 37,
+   "native": 0.583675,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")",
+   "signoFijo": 0.583675,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Asteras Tripolis), nota:λοιπα εξοδα και ζημιεσ · Asteras 2019: Λοιπά έκτακτα έξοδα 130,86 -> exceptional_items",
+   "destino": "expense",
+   "amountNative": -0.583675
+  },
+  {
+   "label": "Φόροι και προσαυξήσεις προηγ. Χρήσεων",
+   "page": 37,
+   "native": 0.026573,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")",
+   "signoFijo": 0.026573,
+   "cat": "admin_general_expense",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.026573
+  },
+  {
+   "label": "Λοιπά έξοδα προηγ. Χρήσεων",
+   "page": 37,
+   "native": 0.002262,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")",
+   "signoFijo": 0.002262,
+   "cat": "exceptional_items",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.002262
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "page": null,
+   "native": 0.017015,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "page": null,
+   "native": -0.502677,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Φόροι εισοδήματος",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Κύκλος εργασιών\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")": "gastos con signo",
+   "verificacion (estado)": "gastos con signo",
+   "verificacion (nota que desglosa \"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Έξοδα διοίκησης\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Έξοδα διάθεσης\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημιές\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 73.325267,
+  "expSum": -72.202038,
+  "officialTotalRevenue": 73.325268,
+  "officialTotalExpenses": 72.202038,
+  "officialPAT": 0.05163,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.05163,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 73.325268
+  }
+ },
+ "liga": {
+  "valor": "gr-superleague",
+  "fuente": "roster cacheado de \"2024–25 Super League Greece\" (tools/club-league-reference/gr.json), coincidencia exacta \"PAOK\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2025-06-30) y contenido del .md (108 de 108 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-13)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Grecia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "paok-gr-fs-2025-06-30",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gr-superleague",
+   "fuente": "roster cacheado de \"2024–25 Super League Greece\" (tools/club-league-reference/gr.json), coincidencia exacta \"PAOK\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 5,
+  "lineasIngreso": 9,
+  "lineasGasto": 26,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

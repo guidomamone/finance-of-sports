@@ -1,0 +1,269 @@
+{
+  "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2021-06-30.md",
+  "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2021-06-30.pdf",
+  "club": "olympiacos",
+  "year": 2021,
+  "generatedAt": "2026-10-14T05:24:00.677Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Χορηγίες και διαφημίσεις",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        16.708713
+      ],
+      "glosa": "Patrocinios y publicidad"
+    },
+    {
+      "label": "Δικαιώματα αναμετάδοσης",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        5.375303
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Εμπορικά",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.607517
+      ],
+      "glosa": "Ingresos comerciales"
+    },
+    {
+      "label": "Έσοδα από UEFA",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        39.228897
+      ],
+      "glosa": "Ingresos de la UEFA"
+    },
+    {
+      "label": "Λοιπά λειτουργικά έσοδα",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.147211
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Αξία πώλησης ποδοσφαιριστών",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Κέρδος / (Ζημία) από πωλήσεις ποδοσφαιριστών\"",
+      "values": [
+        21.544414
+      ],
+      "glosa": "Valor de venta de futbolistas"
+    },
+    {
+      "label": "Αναπόσβεστο κόστος ποδοσφαιριστών",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Κέρδος / (Ζημία) από πωλήσεις ποδοσφαιριστών\"",
+      "values": [
+        -2.632665
+      ],
+      "glosa": "Coste no amortizado de futbolistas"
+    },
+    {
+      "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Κέρδος / (Ζημία) από πωλήσεις ποδοσφαιριστών\"",
+      "values": [
+        -2.56875
+      ],
+      "glosa": "Otros costes directos de traspaso de futbolistas"
+    },
+    {
+      "label": "Μισθοί και δόσεις συμβολαίων",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\"",
+      "values": [
+        17.268408
+      ],
+      "glosa": "Sueldos y plazos de contratos"
+    },
+    {
+      "label": "Εισφορέσκονωνικής ασφάλισης",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\"",
+      "values": [
+        0.138673
+      ],
+      "glosa": "Cotizaciones a la seguridad social"
+    },
+    {
+      "label": "Λοιπές παροχές",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\"",
+      "values": [
+        9.294223
+      ],
+      "glosa": "Otras prestaciones"
+    },
+    {
+      "label": "Diferencia de redondeo",
+      "lado": "expense",
+      "section": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\"",
+      "values": [
+        0
+      ],
+      "glosa": "Diferencia de redondeo"
+    },
+    {
+      "label": "Ημερομίσθια και μισθοί",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\"",
+      "values": [
+        8.401708
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Εισφορέσκονωνικής ασφάλισης",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\"",
+      "values": [
+        0.799156
+      ],
+      "glosa": "Cotizaciones a la seguridad social"
+    },
+    {
+      "label": "Πρόβλεψη αποζημίωσης προσωπικού",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\"",
+      "values": [
+        0.068402
+      ],
+      "glosa": "Provisión para indemnizaciones al personal"
+    },
+    {
+      "label": "Απόσβεση ενσώματων ακινητοποιήσεων",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων\"",
+      "values": [
+        0.231382
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων\"",
+      "values": [
+        0.487802
+      ],
+      "glosa": "Amortización de activos por derecho de uso"
+    },
+    {
+      "label": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων\"",
+      "values": [
+        0.026387
+      ],
+      "glosa": "Amortización de otros activos intangibles (excluidos futbolistas)"
+    },
+    {
+      "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση\"",
+      "values": [
+        7.812512
+      ],
+      "glosa": "Amortización de derechos de futbolistas"
+    },
+    {
+      "label": "Απομείωση δικαιωμάτων ποδοσφαιριστών",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση\"",
+      "values": [
+        0.649855
+      ],
+      "glosa": "Deterioro de derechos de futbolistas"
+    },
+    {
+      "label": "Έξοδα αγώνων",
+      "lado": "expense",
+      "page": 38,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        1.666076
+      ],
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Έξοδα χορηγιών και διαφημίσεων",
+      "lado": "expense",
+      "page": 38,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        1.104848
+      ],
+      "glosa": "Gastos de patrocinio y publicidad"
+    },
+    {
+      "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+      "lado": "expense",
+      "page": 38,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        4.466739
+      ],
+      "glosa": "Gastos de inmuebles e instalaciones"
+    },
+    {
+      "label": "Λοιπά μη λειτουργικά έξοδα",
+      "lado": "expense",
+      "page": 38,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        0.093312
+      ],
+      "glosa": "Otros gastos no operativos"
+    },
+    {
+      "label": "Έξοδα ποδοσφαιρικού τμήματος",
+      "lado": "expense",
+      "page": 38,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        1.635039
+      ],
+      "glosa": "Gastos del departamento de fútbol"
+    },
+    {
+      "label": "Λοιπά λειτουργικά έξοδα",
+      "lado": "expense",
+      "page": 38,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        19.620355
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

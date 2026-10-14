@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.pdf",
- "generado": "2026-10-14T04:26:28.467Z",
+ "generado": "2026-10-14T05:33:25.681Z",
  "frena": [
   {
    "etapa": "club",
@@ -9,15 +9,10 @@
   {
    "etapa": "club",
    "motivo": "carpetas-clubes.mjs dice atromitos-gr y quien.mjs --quien dice atromitos"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Κόστος πωλήσεων\" -> lump_football_operations_expense 0.55"
   }
  ],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-13: Claude 2026-10-13: PAE sin grupo: las 6-8 menciones de 'consolidado' son el texto genérico de las notas (mismo patrón que AEK y Asteras), contra 24-46 de individual)",
-  "gestión: ningún presidente confirmado cubre 2016 (cierre 2016-06-30); pregunta en la cola (no frena)"
+  "perímetro: individual (ajuste manual del club, 2026-10-13: Claude 2026-10-13: PAE sin grupo: las 6-8 menciones de 'consolidado' son el texto genérico de las notas (mismo patrón que AEK y Asteras), contra 24-46 de individual)"
  ],
  "ejercicio": {
   "clubId": "atromitos-gr",
@@ -63,9 +58,9 @@
     "amountNative": -4.938658,
     "disclosureLevel": "aggregated",
     "_pag": 8,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Έξοδα διοίκησης",
@@ -123,7 +118,7 @@
      "renglon": "Κόστος πωλήσεων",
      "lado": "expense",
      "importe": 4.938658,
-     "motivo": "el documento no desglosa este renglón"
+     "motivo": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2015-16.md: Κόστος πωλήσεων 4.938.658 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
     }
    ],
    "grossDebt": null,
@@ -216,11 +211,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 4.938658,
    "cat": "lump_football_operations_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2015-16.md: Κόστος πωλήσεων 4.938.658 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'.",
    "destino": "expense",
    "amountNative": -4.938658
   },
@@ -372,7 +367,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 2,
   "lineasIngreso": 3,
   "lineasGasto": 3,
   "metaFilas": 3,

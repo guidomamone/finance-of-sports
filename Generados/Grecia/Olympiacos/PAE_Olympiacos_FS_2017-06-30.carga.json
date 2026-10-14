@@ -1,0 +1,47 @@
+{
+ "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2017-06-30.pdf",
+ "generado": "2026-10-14T05:33:22.924Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (olympiacos-gr)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "carpetas-clubes.mjs dice olympiacos-gr y quien.mjs --quien dice olympiacos"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-14: Claude 2026-10-14 (cola del perímetro, lote 71): cada documento trae el estado con columnas Όμιλος (grupo) y Εταιρεία (sociedad). Paso B: C1 no (el grupo factura a lo sumo 2,3% más: 2016 60.374.148 contra 59.006.651; 2025 67.218.916 contra 67.062.049), C2 no (crecen igual: 2025 +27,8% los dos), C3 sí (la controlada Θρύλος Α.Ε., 83,58%, hace merchandising). 1 de 3 = cola; criterio de OB: la sociedad tiene la actividad del fútbol y el grupo agrega poco -> individual (como AEK y Asteras))"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2017-06-30.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2017-06-30",
+  "evidencia": {
+   "pagina": 11,
+   "texto": "|   |   |  30/6/2017 | 30/6/2016 | 30/6/2017 | 30/6/2016  |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "temporada"
+ },
+ "clubId": "olympiacos-gr",
+ "year": 2017,
+ "cortadoEn": "filas"
+}

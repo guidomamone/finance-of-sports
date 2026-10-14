@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.pdf",
  "md": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md",
- "generado": "2026-10-14T04:18:22.545Z",
- "estado": "cola",
+ "generado": "2026-10-14T05:24:00.785Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2021,
  "escala": {
@@ -23,9 +23,7 @@
    "fecha": "2026-10-14"
   }
  ],
- "cola": [
-  "5b7e75d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -59,8 +57,7 @@
   "la nota de \"Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων (Πωλήσεις Ποδοσφαιριστών)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Λοιπά έσοδα και κέρδη\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se cargan como nota de gastos tanto el cuadro de gastos por naturaleza 'Έξοδα' (b28) como el cuadro por función 'Ανάλυση Εξόδων' (b29)?",
-  "duda de extraer que no afecta la carga: La columna 30/6/2020 de b34 tiene un ',00' duplicado (L2257-L2259), probable error de tipeo; se transcribieron tal cual.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: La columna 30/6/2020 de b34 tiene un ',00' duplicado (L2257-L2259), probable error de tipeo; se transcribieron tal cual."
  ],
  "reintentar": null,
  "reintentado": false,

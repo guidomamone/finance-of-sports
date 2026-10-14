@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/Atromitos/Atromitos_FS_2022-06-30.pdf",
- "generado": "2026-10-14T04:26:28.034Z",
+ "generado": "2026-10-14T05:33:25.264Z",
  "frena": [
   {
    "etapa": "club",
@@ -9,24 +9,10 @@
   {
    "etapa": "club",
    "motivo": "carpetas-clubes.mjs dice atromitos-gr y quien.mjs --quien dice atromitos"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Επιχορήγηση από Super League-ΕΠΟ\" -> broadcasting 0.5; \"Κόστος πωλήσεων\" -> lump_football_operations_expense 0.55"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-13: Claude 2026-10-13: PAE sin grupo: las 6-8 menciones de 'consolidado' son el texto genérico de las notas (mismo patrón que AEK y Asteras), contra 24-46 de individual)",
-  "materialidad: \"Ενοίκια Κυλικείου\" va como other_income con 0.65 (las dudas de ingresos suman 0.60% de su lado)",
-  "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-06-30); pregunta en la cola (no frena)"
+  "perímetro: individual (ajuste manual del club, 2026-10-13: Claude 2026-10-13: PAE sin grupo: las 6-8 menciones de 'consolidado' son el texto genérico de las notas (mismo patrón que AEK y Asteras), contra 24-46 de individual)"
  ],
  "ejercicio": {
   "clubId": "atromitos-gr",
@@ -76,13 +62,13 @@
    },
    {
     "rawLabel": "Επιχορήγηση από Super League-ΕΠΟ",
-    "normalizedCategory": "broadcasting",
+    "normalizedCategory": "competition_bonus",
     "amountNative": 0.009653,
     "disclosureLevel": "aggregated",
     "_pag": 23,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Έσοδα από ΕΠΟ και Έσοδα από Κύπελλο Ελλάδος",
@@ -100,9 +86,9 @@
     "amountNative": 0.016409,
     "disclosureLevel": "aggregated",
     "_pag": 23,
-    "_escalon": "materialidad",
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.60% (≤ 1%) y esta tiene 0.65"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Λοιπά έκτακτα και ανόργανα",
@@ -132,9 +118,9 @@
     "amountNative": -6.766095,
     "disclosureLevel": "aggregated",
     "_pag": 9,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Έξοδα διοίκησης",
@@ -186,7 +172,7 @@
      "renglon": "Κόστος πωλήσεων",
      "lado": "expense",
      "importe": 6.766095,
-     "motivo": "el documento no desglosa este renglón"
+     "motivo": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_FS_2022-06-30.md: Κόστος πωλήσεων 6.766.094,58 (visto en 2023 L243 como comparativo; estado de resultados por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
     }
    ],
    "grossDebt": null,
@@ -293,12 +279,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
    "signoFijo": 0.009653,
-   "cat": "broadcasting",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Atromitos_FS_2022-06-30.md L809 imprime 'Επιχορήγηση από Super League-ΕΠΟ' bajo 'ΕΣΟΔΑ ΕΠΙΧΟΡΗΓΗΣΕΩΝ', aparte de 'Από τηλεοπτικά δικαιώματα' (L802, 365.000). Es subvención de liga/federación, no TV: precedente Panathinaikos (Admin/carga-clubes/panathinaikos-gr.md L35-37; panathinaikos-gr-data.js L8) la carga como competition_bonus. Monto 9.652,51 (2022).",
    "destino": "revenue",
    "amountNative": 0.009653
   },
@@ -325,11 +311,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά συνήθη έσοδα\")",
    "signoFijo": 0.016409,
    "cat": "other_income",
-   "conf": 0.65,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.60% (≤ 1%) y esta tiene 0.65",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md L798 'Ενοίκια Κυλικείου' 8.800,00: alquiler de cantina sin nombrar estadio -> other_income.",
    "destino": "revenue",
    "amountNative": 0.016409
   },
@@ -371,11 +357,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 6.766095,
    "cat": "lump_football_operations_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_FS_2022-06-30.md: Κόστος πωλήσεων 6.766.094,58 (visto en 2023 L243 como comparativo; estado de resultados por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'.",
    "destino": "expense",
    "amountNative": -6.766095
   },
@@ -530,7 +516,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
+  "motivos": 2,
   "lineasIngreso": 9,
   "lineasGasto": 3,
   "metaFilas": 3,

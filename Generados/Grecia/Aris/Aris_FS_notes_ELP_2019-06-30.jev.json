@@ -1,0 +1,139 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2019-06-30.md",
+ "generatedAt": "2026-10-14T05:33:03.475Z",
+ "rubrosHuella": "f51b2f540e86a71308f6de65c78de6e4a7393367",
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Κέρδη και ζημίες από διάθεση μη κυκλοφορούντων στοιχείων (Πωλήσεις Ποδοσφαιριστών)",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Κόστος πωλήσεων (Έξοδα ποδοσφαιρικού τμήματος)",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Φορολογικά πρόστιμα και προσαυξήσεις",
+   "lado": "expense",
+   "page": 34,
+   "section": "nota que desglosa \"Λοιπά έξοδα και ζημιές\"",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "Φορολογικά πρόστιμα και προσαυξήσεις προηγούμενων χρήσεων",
+   "lado": "expense",
+   "page": 34,
+   "section": "nota que desglosa \"Λοιπά έξοδα και ζημιές\"",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "exceptional_items",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1107
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Προσαυξήσεις εισφορών ασφαλιστικών εισφορών",
+   "lado": "expense",
+   "page": 34,
+   "section": "nota que desglosa \"Λοιπά έξοδα και ζημιές\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.47000000000000003
+    ],
+    [
+     "lump_football_operations_expense",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1111
+  }
+ ]
+}

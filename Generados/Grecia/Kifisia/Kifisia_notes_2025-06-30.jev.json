@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.md",
- "generatedAt": "2026-10-14T04:25:25.606Z",
- "rubrosHuella": "58a36b808fb0b0d9559efd620685fac22b8602a6",
+ "generatedAt": "2026-10-14T05:33:03.814Z",
+ "rubrosHuella": "3ff4fa2abeba455885e7cd7f05e99901c546b86a",
  "rubros": [
   {
    "label": "Έσοδα εισιτηρίων",
@@ -76,6 +76,33 @@
    "desdeCache": true
   },
   {
+   "label": "Αμοιβές έμμισθου προσωπικού (μικτά ποσά)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Δαπάνες παροχών προς εργαζόμενους (ποδοσφαιριστών και λοιπών εργαζομένων)\"",
+   "choice": "wages_squad",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Κοινωνικές επιβαρύνσεις (εργοδοτικές εισφορές)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Δαπάνες παροχών προς εργαζόμενους (ποδοσφαιριστών και λοιπών εργαζομένων)\"",
+   "choice": "wages_squad",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Παρεπόμενες παροχές",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Δαπάνες παροχών προς εργαζόμενους (ποδοσφαιριστών και λοιπών εργαζομένων)\"",
+   "choice": "wages_squad",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
    "label": "Απόσβεση και απομείωση ενσώματων παγίων στοιχείων ενεργητικού",
    "lado": "expense",
    "page": 12,
@@ -103,96 +130,36 @@
    "desdeCache": true
   },
   {
-   "label": "Παρεπόμενες παροχές",
-   "lado": "expense",
-   "page": 26,
-   "section": "nota que desglosa \"Δαπάνες παροχών προς εργαζόμενους (ποδοσφαιριστών και λοιπών εργαζομένων)\"",
-   "choice": "wages_squad",
-   "confidence": 0.67,
-   "top3": [
-    [
-     "wages_squad",
-     0.7
-    ],
-    [
-     "other_expenses",
-     0.28
-    ],
-    [
-     "lump_football_operations_expense",
-     0.02
-    ]
-   ],
-   "tokens": 888
-  },
-  {
    "label": "Απόσβεση εγγραφών παικτών και απομείωση εγγραφών παικτών",
    "lado": "expense",
    "page": 12,
    "section": "estado",
    "choice": "player_amortisation",
    "confidence": 0.95,
-   "top3": [
-    [
-     "player_amortisation",
-     0.95
-    ],
-    [
-     "player_impairment",
-     0.05
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1127
+   "desdeCache": true
   },
   {
-   "label": "Κοινωνικές επιβαρύνσεις (εργοδοτικές εισφορές)",
-   "lado": "expense",
-   "page": 26,
-   "section": "nota que desglosa \"Δαπάνες παροχών προς εργαζόμενους (ποδοσφαιριστών και λοιπών εργαζομένων)\"",
-   "choice": "wages_squad",
-   "confidence": 0.66,
+   "label": "λοιπά έσοδα /έξοδα μεταγραφών",
+   "lado": "revenue",
+   "page": 12,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 0.52,
    "top3": [
     [
-     "wages_squad",
-     0.6900000000000001
+     "other_income",
+     0.55
     ],
     [
-     "other_expenses",
-     0.17
+     "player_sales",
+     0.3
     ],
     [
-     "admin_general_expense",
-     0.11
+     "lump_football_operations",
+     0.15
     ]
    ],
-   "tokens": 1122
-  },
-  {
-   "label": "Αμοιβές έμμισθου προσωπικού (μικτά ποσά)",
-   "lado": "expense",
-   "page": 26,
-   "section": "nota que desglosa \"Δαπάνες παροχών προς εργαζόμενους (ποδοσφαιριστών και λοιπών εργαζομένων)\"",
-   "choice": "wages_squad",
-   "confidence": 0.55,
-   "top3": [
-    [
-     "wages_squad",
-     0.59
-    ],
-    [
-     "admin_general_expense",
-     0.26
-    ],
-    [
-     "other_expenses",
-     0.1
-    ]
-   ],
-   "tokens": 1141
+   "tokens": 1069
   }
  ]
 }

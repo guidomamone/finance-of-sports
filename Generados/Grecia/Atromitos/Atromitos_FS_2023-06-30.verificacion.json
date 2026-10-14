@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/Atromitos/Atromitos_FS_2023-06-30.pdf",
  "md": "Clubes/Grecia/Atromitos/Atromitos_FS_2023-06-30.md",
- "generado": "2026-10-14T04:17:55.540Z",
- "estado": "cola",
+ "generado": "2026-10-14T05:24:00.830Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2023,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "996ea57"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -58,6 +56,7 @@
   "escalón \"nota exacta en la lectura 5\": \"Κύκλος εργασιών (καθαρός)\" (L241) se abre en las 5 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 5\": \"Λοιπά συνήθη έσοδα\" (L244) se abre en las 4 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Atromitos_FS_2024-06-30.pdf",
   "duda de extraer que no afecta la carga: La nota b19 clasifica gastos por naturaleza y su total (L856) cubre varios renglones del estado (L242, L247, L252) sin desglosar cuál va a cuál.",
   "duda de extraer que no afecta la carga: El total de gastos de b19 (L856) no incluye los -214.128,50 de L248 y ninguna nota lo desglosa.",
   "duda de extraer que no afecta la carga: El total de b21 (L906) es igual a la suma de L844+L845+L853 de b19, así que es detalle de filas ya cargadas."

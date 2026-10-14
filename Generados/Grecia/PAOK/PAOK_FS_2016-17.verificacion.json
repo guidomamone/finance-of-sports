@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2016-17.pdf",
  "md": "Clubes/Grecia/PAOK/PAOK_FS_2016-17.md",
- "generado": "2026-10-14T04:18:22.613Z",
- "estado": "cola",
+ "generado": "2026-10-14T05:24:01.106Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2017,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "ccadf99",
-  "6433e4a",
-  "2b2287d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -46,8 +42,7 @@
   }
  ],
  "notas": [
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro de gastos de personal (L891-L894, total 4.640.338,37)?",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro de gastos de personal (L891-L894, total 4.640.338,37)?"
  ],
  "reintentar": null,
  "reintentado": false,

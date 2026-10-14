@@ -3,7 +3,7 @@
   "pdf": "Clubes/Grecia/Aris/Aris_FS_2024-06-30.pdf",
   "club": "aris",
   "year": 2024,
-  "generatedAt": "2026-10-14T04:17:55.302Z",
+  "generatedAt": "2026-10-14T05:24:00.736Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         3.868454
       ],
-      "glosa": "Ingresos por patrocinio y publicidad"
+      "glosa": "Ingresos por patrocinios y publicidad"
     },
     {
       "label": "Έσοδα δικαιωμάτων μεταδόσεων",
@@ -54,7 +54,7 @@
       "values": [
         1.154207
       ],
-      "glosa": "Ingresos de la UEFA por solidaridad y premios"
+      "glosa": "Ingresos por solidaridad y premios de la UEFA"
     },
     {
       "label": "Λοιπά λειτουργικά έσοδα",
@@ -67,16 +67,6 @@
       "glosa": "Otros ingresos de explotación"
     },
     {
-      "label": "Έσοδα από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)",
-      "lado": "revenue",
-      "page": 12,
-      "section": "estado",
-      "values": [
-        4.45
-      ],
-      "glosa": "Ingresos por enajenación de activos intangibles (derechos federativos de futbolistas)"
-    },
-    {
       "label": "Κέρδος από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)",
       "lado": "revenue",
       "page": 12,
@@ -84,7 +74,7 @@
       "values": [
         4.2525
       ],
-      "glosa": "Beneficio por enajenación de activos intangibles (derechos federativos de futbolistas)"
+      "glosa": "Beneficio por enajenación de inmovilizado intangible (derechos federativos de futbolistas)"
     },
     {
       "label": "Κόστος πωλήσεων / υλικών / μη διανεμηθέντα",
@@ -104,7 +94,7 @@
       "values": [
         6.715962
       ],
-      "glosa": "Futbolistas - sueldos y salarios"
+      "glosa": "Futbolistas - Sueldos y salarios"
     },
     {
       "label": "Ποδοσφαιριστές-εισφορές κοινωνικής ασφάλισης",
@@ -114,7 +104,7 @@
       "values": [
         0.196209
       ],
-      "glosa": "Futbolistas - cargas sociales"
+      "glosa": "Futbolistas - Cargas sociales"
     },
     {
       "label": "Δαπάνες παροχών προς ποδοσφαιριστές",
@@ -124,7 +114,7 @@
       "values": [
         0.065917
       ],
-      "glosa": "Gastos por otras prestaciones a futbolistas"
+      "glosa": "Gastos por retribuciones y prestaciones a futbolistas"
     },
     {
       "label": "Τεχνικό προσωπικό-ημερομίσθια & μισθοί",
@@ -134,7 +124,7 @@
       "values": [
         0.13155
       ],
-      "glosa": "Cuerpo técnico - sueldos y salarios"
+      "glosa": "Personal técnico - Sueldos y salarios"
     },
     {
       "label": "Τεχνικό προσωπικό-εισφορές κοινωνικής ασφάλισης",
@@ -144,7 +134,7 @@
       "values": [
         0.0164
       ],
-      "glosa": "Cuerpo técnico - cargas sociales"
+      "glosa": "Personal técnico - Cargas sociales"
     },
     {
       "label": "Δαπάνες παροχών προς τεχνικό προσωπικό",
@@ -154,7 +144,7 @@
       "values": [
         0.0188
       ],
-      "glosa": "Gastos por otras prestaciones al cuerpo técnico"
+      "glosa": "Gastos por retribuciones y prestaciones al personal técnico"
     },
     {
       "label": "Λοιπό προσωπικό-ημερομίσθια & μισθοί",
@@ -164,7 +154,7 @@
       "values": [
         0.0325
       ],
-      "glosa": "Resto del personal - sueldos y salarios"
+      "glosa": "Resto de personal - Sueldos y salarios"
     },
     {
       "label": "Λοιπό προσωπικό-εισφορές κοινωνικής ασφάλισης",
@@ -174,7 +164,7 @@
       "values": [
         0.0051
       ],
-      "glosa": "Resto del personal - cargas sociales"
+      "glosa": "Resto de personal - Cargas sociales"
     },
     {
       "label": "Δαπάνες παροχών προς λοιπό προσωπικό",
@@ -184,7 +174,7 @@
       "values": [
         0.005748
       ],
-      "glosa": "Gastos por otras prestaciones al resto del personal"
+      "glosa": "Gastos por retribuciones y prestaciones al resto de personal"
     },
     {
       "label": "Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού",
@@ -204,7 +194,7 @@
       "values": [
         0.012
       ],
-      "glosa": "Amortización de otros activos intangibles (excluidos derechos federativos de futbolistas)"
+      "glosa": "Amortización de otro inmovilizado intangible (excluidos derechos federativos de futbolistas)"
     },
     {
       "label": "Έξοδα τέλεσης αγώνων",
@@ -214,7 +204,7 @@
       "values": [
         0.770716
       ],
-      "glosa": "Gastos de organización de partidos"
+      "glosa": "Gastos de celebración de partidos"
     },
     {
       "label": "Κόστη χορηγιών και διαφημίσεων",
@@ -274,7 +264,7 @@
       "values": [
         0.057176
       ],
-      "glosa": "Gastos legales y procesales"
+      "glosa": "Gastos judiciales"
     },
     {
       "label": "Παράβολα συμμετοχής σε διοργανώσεις & επικύρωσης συμβολαίων",
@@ -284,7 +274,7 @@
       "values": [
         0.034766
       ],
-      "glosa": "Tasas de participación en competiciones y registro de contratos"
+      "glosa": "Tasas de participación en competiciones y validación de contratos"
     },
     {
       "label": "Ποσοστά προς απόδοση σε φορείς",
@@ -294,7 +284,7 @@
       "values": [
         0.408691
       ],
-      "glosa": "Porcentajes a liquidar a entidades deportivas"
+      "glosa": "Porcentajes a liquidar a organismos"
     },
     {
       "label": "Πρόστιμα – Προσαυξήσεις ρυθμίσεων",
@@ -304,7 +294,7 @@
       "values": [
         0.363556
       ],
-      "glosa": "Multas y recargos"
+      "glosa": "Multas y recargos por regularizaciones"
     },
     {
       "label": "Ασφάλιστρα ποδοσφαιριστών",
@@ -324,7 +314,7 @@
       "values": [
         1.387849
       ],
-      "glosa": "Servicios y honorarios de terceros"
+      "glosa": "Honorarios y servicios de terceros"
     },
     {
       "label": "Λοιποί φόροι & τέλη",
@@ -344,17 +334,7 @@
       "values": [
         1.781165
       ],
-      "glosa": "Amortización de activos intangibles (derechos federativos de futbolistas)"
-    },
-    {
-      "label": "Απομείωση/λοιπές μειώσεις διάθεσης άυλων περιουσιακών στοιχείων (εγγραφές παικτών)",
-      "lado": "expense",
-      "page": 12,
-      "section": "estado",
-      "values": [
-        0.195
-      ],
-      "glosa": "Deterioro / otras bajas de activos intangibles (derechos federativos de futbolistas)"
+      "glosa": "Amortización de inmovilizado intangible (derechos federativos de futbolistas)"
     }
   ]
 }

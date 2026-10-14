@@ -1,0 +1,710 @@
+{
+ "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_Chrimatooikonomikes_katastaseis_2016-06-30.pdf",
+ "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_Chrimatooikonomikes_katastaseis_2016-06-30.md",
+ "mdSha1": "bf13f360fa40d773badef29bb3383c1fcec28e20",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-14T04:56:25.793Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b19",
+   "b20"
+  ],
+  "notas_gastos": [
+   "b14",
+   "b15",
+   "b16",
+   "b17",
+   "b18",
+   "b21",
+   "b22"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L203: (ποσά σε €)"
+  },
+  {
+   "bloque": "b19",
+   "escala": "unidades",
+   "evidencia": "L1343: (ποσά σε €)"
+  },
+  {
+   "bloque": "b20",
+   "escala": "unidades",
+   "evidencia": "L1358: (ποσά σε €)"
+  },
+  {
+   "bloque": "b14",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación en el bloque; importes con decimales coinciden con b3 en €"
+  },
+  {
+   "bloque": "b15",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación en el bloque; importes coinciden con b3 en €"
+  },
+  {
+   "bloque": "b16",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación en el bloque; importes coinciden con b3 en €"
+  },
+  {
+   "bloque": "b17",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación en el bloque; importes coinciden con b3 en €"
+  },
+  {
+   "bloque": "b18",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación en el bloque; importes coinciden con b3 en €"
+  },
+  {
+   "bloque": "b21",
+   "escala": "unidades",
+   "evidencia": "L1370: (ποσά σε €)"
+  },
+  {
+   "bloque": "b22",
+   "escala": "unidades",
+   "evidencia": "L1394: (ποσά σε €)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 209,
+   "etiqueta": "Έσοδα από εισιτήρια",
+   "actual": "6.387.525,83",
+   "anterior": "8.049.974,83",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 210,
+   "etiqueta": "Χορηγίες και διαφημίσεις",
+   "actual": "10.754.916,79",
+   "anterior": "6.874.270,88",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 211,
+   "etiqueta": "Δικαιώματα αναμετάδοσης",
+   "actual": "6.441.873,59",
+   "anterior": "6.087.244,88",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 212,
+   "etiqueta": "Εμπορικά",
+   "actual": "918.619,64",
+   "anterior": "1.109.862,96",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 213,
+   "etiqueta": "Έσοδα από UEFA",
+   "actual": "34.003.783,00",
+   "anterior": "26.884.739,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 214,
+   "etiqueta": "Λοιπά λειτουργικά έσοδα",
+   "actual": "499.932,89",
+   "anterior": "808.087,79",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 215,
+   "etiqueta": "Σύνολο λειτουργικών Εσόδων",
+   "actual": "59.006.651,74",
+   "anterior": "49.814.180,34",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 216,
+   "etiqueta": "Κόστος πωλήσεων εμπορευμάτων",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 217,
+   "etiqueta": "Δαπάνη παροχών ποδοσφαιριστών",
+   "actual": "(28.742.068,54)",
+   "anterior": "(29.634.035,81)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 218,
+   "etiqueta": "Δαπάνη παροχών λοιπών εργαζομένων",
+   "actual": "(8.633.927,33)",
+   "anterior": "(9.827.472,70)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 219,
+   "etiqueta": "Απόσβεση και απομείωση λοιπών ενσώματων & ασώματων ακινητοποιήσεων",
+   "actual": "(321.015,34)",
+   "anterior": "(277.401,72)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 220,
+   "etiqueta": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
+   "actual": "(10.316.668,27)",
+   "anterior": "(11.063.032,72)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 221,
+   "etiqueta": "Λοιπά λειτουργικά έξοδα",
+   "actual": "(25.836.341,95)",
+   "anterior": "(22.537.559,59)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 222,
+   "etiqueta": "Σύνολο λειτουργικών εξόδων",
+   "actual": "(73.850.021,43)",
+   "anterior": "(73.339.502,54)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 223,
+   "etiqueta": "Έσοδα από πωλήσεις ποδοσφαιριστών",
+   "actual": "13.868.000,00",
+   "anterior": "29.865.136,10",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 224,
+   "etiqueta": "Δαπάνες πώλησης/λύσεις συμβολαίων ποδοσφαιριστών",
+   "actual": "(5.935.211,56)",
+   "anterior": "(7.283.144,57)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 225,
+   "etiqueta": "Κέρδος από πωλήσεις ποδοσφαιριστών",
+   "actual": "7.932.788,44",
+   "anterior": "22.581.991,53",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 226,
+   "etiqueta": "Χρηματοοικονομικά έσοδα",
+   "actual": "1.189.249,18",
+   "anterior": "791.386,01",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 227,
+   "etiqueta": "Χρηματοοικονομικά έξοδα",
+   "actual": "(709.333,59)",
+   "anterior": "(1.154.271,00)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 228,
+   "etiqueta": "Χρηματοοικονομικά έσοδα / (έξοδα)",
+   "actual": "479.915,59",
+   "anterior": "(362.884,99)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 229,
+   "etiqueta": "Ζημία χρήσεως πρό φόρων",
+   "actual": "(6.430.665,66)",
+   "anterior": "(1.306.215,66)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 230,
+   "etiqueta": "Φόρος εισοδήματος",
+   "actual": "(2.238.582,98)",
+   "anterior": "(882.000,00)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 231,
+   "etiqueta": "Ζημία χρήσεως μετά από φόρους",
+   "actual": "(8.669.248,64)",
+   "anterior": "(2.188.215,66)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 1348,
+   "etiqueta": "Αξία πώλησης ποδοσφαιριστών",
+   "actual": "13.868.000,00",
+   "anterior": "29.865.136,10",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Έσοδα από πωλήσεις ποδοσφαιριστών"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1350,
+   "etiqueta": "Αναπόσβεστο κόστος ποδοσφαιριστών",
+   "actual": "(4.350.211,56)",
+   "anterior": "(3.571.963,05)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Δαπάνες πώλησης/λύσεις συμβολαίων ποδοσφαιριστών"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1351,
+   "etiqueta": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+   "actual": "(1.585.000,00)",
+   "anterior": "(3.711.181,52)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Δαπάνες πώλησης/λύσεις συμβολαίων ποδοσφαιριστών"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1352,
+   "etiqueta": "Κέρδος από πωλήσεις ποδοσφαιριστών",
+   "actual": "7.932.788,44",
+   "anterior": "22.581.991,53",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": "Κέρδος από πωλήσεις ποδοσφαιριστών"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1363,
+   "etiqueta": "Τόκοι τραπεζικών καταθέσεων",
+   "actual": "68,90",
+   "anterior": "2.626,94",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά έσοδα"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1364,
+   "etiqueta": "Τόκοι έσοδα από Ομάδες",
+   "actual": "111.001,89",
+   "anterior": "469.956,91",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά έσοδα"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1365,
+   "etiqueta": "Λοιπά χρηματοοικονομικά έσοδα",
+   "actual": "1.078.178,39",
+   "anterior": "318.802,16",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά έσοδα"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1366,
+   "etiqueta": "Σύνολο χρηματοοικονομικών εσόδων",
+   "actual": "1.189.249,18",
+   "anterior": "791.386,01",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά έσοδα"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1270,
+   "etiqueta": "Μισθοί και δόσεις συμβολαίων",
+   "actual": "(22.910.778,62)",
+   "anterior": "(20.997.881,52)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Δαπάνη παροχών ποδοσφαιριστών"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1271,
+   "etiqueta": "Εισφορές κοινωνικής ασφάλισης",
+   "actual": "(113.409,70)",
+   "anterior": "(111.524,20)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Δαπάνη παροχών ποδοσφαιριστών"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1272,
+   "etiqueta": "Λοιπές παροχές",
+   "actual": "(5.717.880,22)",
+   "anterior": "(8.524.630,09)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Δαπάνη παροχών ποδοσφαιριστών"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1273,
+   "etiqueta": "Σύνολο δαπανών παροχών προς ποδοσφαιριστών",
+   "actual": "(28.742.068,54)",
+   "anterior": "(29.634.035,81)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Δαπάνη παροχών ποδοσφαιριστών"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1280,
+   "etiqueta": "Ημερομίσθια και μισθοί",
+   "actual": "(7.459.767,46)",
+   "anterior": "(8.824.748,99)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Δαπάνη παροχών λοιπών εργαζομένων"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1281,
+   "etiqueta": "Εισφορές κοινωνικής ασφάλισης",
+   "actual": "(1.067.856,87)",
+   "anterior": "(975.287,71)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Δαπάνη παροχών λοιπών εργαζομένων"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1282,
+   "etiqueta": "Πρόβλεψη αποζημίωσης προσωπικού",
+   "actual": "(106.303,00)",
+   "anterior": "(27.436,00)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Δαπάνη παροχών λοιπών εργαζομένων"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1283,
+   "etiqueta": "Σύνολο δαπανών παροχών προς λοιπούς εργαζομένους",
+   "actual": "(8.633.927,33)",
+   "anterior": "(9.827.472,70)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Δαπάνη παροχών λοιπών εργαζομένων"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1290,
+   "etiqueta": "Απόσβεση ενσώματων περιουσιακών στοιχείων",
+   "actual": "(316.770,99)",
+   "anterior": "(264.366,86)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Απόσβεση και απομείωση λοιπών ενσώματων & ασώματων ακινητοποιήσεων"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1291,
+   "etiqueta": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εξαιρούνται οι εγγραφές ποδοσφαιριστών)",
+   "actual": "(4.244,35)",
+   "anterior": "(13.034,86)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Απόσβεση και απομείωση λοιπών ενσώματων & ασώματων ακινητοποιήσεων"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1292,
+   "etiqueta": "Σύνολο αποσβέσεων και απομειώσεων",
+   "actual": "(321.015,34)",
+   "anterior": "(277.401,72)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Απόσβεση και απομείωση λοιπών ενσώματων & ασώματων ακινητοποιήσεων"
+  },
+  {
+   "bloque": "b17",
+   "linea": 1299,
+   "etiqueta": "Απόσβεση δικαιωμάτων ποδοσφαιριστών",
+   "actual": "(10.097.539,36)",
+   "anterior": "(8.871.041,26)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση"
+  },
+  {
+   "bloque": "b17",
+   "linea": 1300,
+   "etiqueta": "Απομείωση δικαιωμάτων ποδοσφαιριστών",
+   "actual": "(219.128,91)",
+   "anterior": "(2.191.991,46)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση"
+  },
+  {
+   "bloque": "b17",
+   "linea": 1301,
+   "etiqueta": "Σύνολο αποσβέσεων και απομειώσεων",
+   "actual": "(10.316.668,27)",
+   "anterior": "(11.063.032,72)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1320,
+   "etiqueta": "Έξοδα αγώνων",
+   "actual": "(2.345.940,75)",
+   "anterior": "(2.262.922,02)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1321,
+   "etiqueta": "Έξοδα χορηγιών και διαφημίσεων",
+   "actual": "(3.930.767,65)",
+   "anterior": "(4.238.001,31)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1322,
+   "etiqueta": "Έξοδα ακινήτων & εγκαταστάσεων",
+   "actual": "(5.798.468,97)",
+   "anterior": "(4.863.121,72)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1323,
+   "etiqueta": "Έκτακτα Έξοδα",
+   "actual": "(345.721,36)",
+   "anterior": "(168.400,00)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1324,
+   "etiqueta": "Έξοδα ποδοσφαιρικού τμήματος",
+   "actual": "(2.160.603,24)",
+   "anterior": "(2.930.473,87)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1325,
+   "etiqueta": "Λοιπά λειτουργικά έξοδα",
+   "actual": "(11.254.839,98)",
+   "anterior": "(8.074.640,68)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1326,
+   "etiqueta": "Σύνολο λοιπών λειτουργικών εξόδων",
+   "actual": "(25.836.341,95)",
+   "anterior": "(22.537.559,60)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1375,
+   "etiqueta": "Τόκοι τραπεζών και δανείων",
+   "actual": "(390.414,95)",
+   "anterior": "(141.495,00)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά έξοδα"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1376,
+   "etiqueta": "Προμήθειες Εγγυητικών Επιστολών",
+   "actual": "(43.171,04)",
+   "anterior": "(35.340,00)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά έξοδα"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1377,
+   "etiqueta": "Τόκοι έξοδα προς Ομάδες",
+   "actual": "0,00",
+   "anterior": "(46.670,00)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά έξοδα"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1378,
+   "etiqueta": "Λοιπά χρηματοοικονομικά έξοδα",
+   "actual": "(275.747,60)",
+   "anterior": "(930.766,00)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά έξοδα"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1379,
+   "etiqueta": "Σύνολο χρηματοοικονομικών εξόδων",
+   "actual": "(709.333,59)",
+   "anterior": "(1.154.271,00)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά έξοδα"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1397,
+   "etiqueta": "Τρέχων φόρος",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Φόρος εισοδήματος"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1398,
+   "etiqueta": "Αναβαλλόμενος φόρος",
+   "actual": "(2.238.582,98)",
+   "anterior": "(882.000,00)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Φόρος εισοδήματος"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1399,
+   "etiqueta": "Σύνολο Φόρων Εισοδήματος",
+   "actual": "(2.238.582,98)",
+   "anterior": "(882.000,00)",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Φόρος εισοδήματος"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 215,
+  "actual": "59.006.651,74"
+ },
+ "total_gastos": {
+  "linea": 222,
+  "actual": "(73.850.021,43)"
+ },
+ "resultado": {
+  "linea": 231,
+  "actual": "(8.669.248,64)",
+  "anterior": "(2.188.215,66)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se toman los importes de las notas b14-b18 como expresados en euros (unidades), igual que el estado, aunque el bloque no lo indique?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Los bloques b14-b18 no traen la leyenda (ποσά σε €), pero sus totales coinciden exactamente con b3 (L217-L221).",
+   "bloques": [
+    "b14",
+    "b15",
+    "b16",
+    "b17",
+    "b18"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Se tomó la columna Εταιρεία. Diferencias de 0,01 en el año anterior entre L221 (22.537.559,59) y L1326 (22.537.559,60) son redondeo. En L1290 el importe del Grupo tiene tres decimales, no afecta a la columna Εταιρεία."
+}

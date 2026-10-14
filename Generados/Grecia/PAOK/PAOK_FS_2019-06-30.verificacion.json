@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2019-06-30.pdf",
  "md": "Clubes/Grecia/PAOK/PAOK_FS_2019-06-30.md",
- "generado": "2026-10-14T04:17:56.174Z",
- "estado": "cola",
+ "generado": "2026-10-14T05:24:01.122Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2019,
  "escala": {
@@ -12,13 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "0388b5c",
-  "a8deae5",
-  "0388b5c",
-  "0388b5c",
-  "0388b5c"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -49,6 +43,10 @@
  ],
  "notas": [
   "la nota de \"Κύκλος εργασιών\" no suma el renglón (33.985578 contra 33.922723, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar ya contestada para el club (fila-ilegible, \"-\"): aceptar, en PAOK_FS_2020-06-30.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Έξοδα διάθεσης\"): aceptar, en PAOK_FS_2020-06-30.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Λοιπά έσοδα και κέρδη\"): aceptar, en PAOK_FS_2020-06-30.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Λοιπά έξοδα και ζημιές\"): aceptar, en PAOK_FS_2020-06-30.pdf",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro de gastos de personal (L1123-L1127) por ser un desglose transversal de partidas ya incluidas en otras notas?"
  ],
  "reintentar": [

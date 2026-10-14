@@ -3,7 +3,7 @@
   "pdf": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2019-06-30.pdf",
   "club": "aris",
   "year": 2019,
-  "generatedAt": "2026-10-14T04:18:22.528Z",
+  "generatedAt": "2026-10-14T05:24:00.768Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         3.871541
       ],
-      "glosa": "Importe neto de la cifra de negocios"
+      "glosa": "Cifra de negocios (neta)"
     },
     {
       "label": "Λοιπά συνήθη έσοδα",
@@ -34,7 +34,7 @@
       "values": [
         0.3
       ],
-      "glosa": "Resultados por enajenación de activos no corrientes (Venta de futbolistas)"
+      "glosa": "Ganancias y pérdidas por enajenación de activos no corrientes (Ventas de futbolistas)"
     },
     {
       "label": "Λοιπά έσοδα και κέρδη",
@@ -74,7 +74,7 @@
       "values": [
         0.07626
       ],
-      "glosa": "Gastos de comercialización"
+      "glosa": "Gastos de distribución"
     },
     {
       "label": "Φορολογικά πρόστιμα και προσαυξήσεις",
@@ -84,7 +84,7 @@
       "values": [
         0.032558
       ],
-      "glosa": "Multas y recargos fiscales"
+      "glosa": "Sanciones y recargos fiscales"
     },
     {
       "label": "Προσαυξήσεις εισφορών ασφαλιστικών εισφορών",
@@ -94,7 +94,7 @@
       "values": [
         0.009993
       ],
-      "glosa": "Recargos sobre cuotas de la seguridad social"
+      "glosa": "Recargos sobre cotizaciones a la seguridad social"
     },
     {
       "label": "Φορολογικά πρόστιμα και προσαυξήσεις προηγούμενων χρήσεων",
@@ -104,7 +104,7 @@
       "values": [
         0.002081
       ],
-      "glosa": "Multas y recargos fiscales de ejercicios anteriores"
+      "glosa": "Sanciones y recargos fiscales de ejercicios anteriores"
     }
   ]
 }

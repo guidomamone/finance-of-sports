@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2019-06-30.pdf",
  "md": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2019-06-30.md",
- "generado": "2026-10-14T04:18:22.528Z",
- "estado": "cola",
+ "generado": "2026-10-14T05:24:00.768Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2019,
  "escala": {
@@ -23,9 +23,7 @@
    "fecha": "2026-10-14"
   }
  ],
- "cola": [
-  "ca96496"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -58,8 +56,7 @@
   "la nota de \"Κύκλος εργασιών (καθαρός)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Κέρδη και ζημίες από διάθεση μη κυκλοφορούντων στοιχείων (Πωλήσεις Ποδοσφαιριστών)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Λοιπά έσοδα και κέρδη\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "duda de extraer que no afecta la carga: b35 y b36 son un mismo cuadro partido por salto de página; su Σύνολο repite el de b34 y los renglones repiten los del estado.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: b35 y b36 son un mismo cuadro partido por salto de página; su Σύνολο repite el de b34 y los renglones repiten los del estado."
  ],
  "reintentar": null,
  "reintentado": false,

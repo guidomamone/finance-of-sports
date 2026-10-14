@@ -1,0 +1,302 @@
+{
+ "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.pdf",
+ "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.md",
+ "generado": "2026-10-14T05:24:00.583Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "bd0d900",
+  "a2ec50a",
+  "446850a"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": false,
+   "detalle": "las líneas suman 51.101124 y el total impreso dice 45.673325"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "79.37109 = 79.33409",
+   "suma": 79.37109038,
+   "impreso": 79.33409035999999
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 51.101124 - gastos 79.37109 ± financiero -1.462856 ± impuesto 7.069927 no da el impreso -22.635895",
+   "dif": null
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 51.101124 en este documento y 50.234124 en PAE_Olympiacos_Consolidated_IFRS_FS_2024-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 66.767951 en PAE_Olympiacos_FS_2022-06-30.pdf y 66.767951 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Λοιπά λειτουργικά έξοδα\" no suma el renglón (20.069966 contra 20.096966, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer que no afecta la carga: L236 tiene paréntesis y separadores dañados por OCR ('0,00)', '(59.740.86)'), además sin nota."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Λοιπά λειτουργικά έξοδα",
+   "suma": 20.069966,
+   "objetivo": 20.096966
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Λοιπά λειτουργικά έξοδα",
+   "suma": 20.069966,
+   "objetivo": 20.096966
+  }
+ ],
+ "totales": {
+  "ingresos": 51.101124,
+  "gastos": 79.37109,
+  "financiero": -1.462856,
+  "impuesto": 7.069927,
+  "resultadoImpreso": -22.635895,
+  "resultadoParaCargar": -22.635895,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Έσοδα από εισιτήρια",
+   "lado": "ingreso",
+   "M": 6.365335,
+   "pagina": 9,
+   "linea": 224,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Χορηγίες και διαφημίσεις",
+   "lado": "ingreso",
+   "M": 15.018186,
+   "pagina": 9,
+   "linea": 225,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Δικαιώματα αναμετάδοσης",
+   "lado": "ingreso",
+   "M": 7.305992,
+   "pagina": 9,
+   "linea": 226,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Εμπορικά",
+   "lado": "ingreso",
+   "M": 1.247905,
+   "pagina": 9,
+   "linea": 227,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έσοδα από UEFA",
+   "lado": "ingreso",
+   "M": 12.191898,
+   "pagina": 9,
+   "linea": 228,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά λειτουργικά έσοδα",
+   "lado": "ingreso",
+   "M": 3.54401,
+   "pagina": 9,
+   "linea": 229,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Αξία πώλησης ποδοσφαιριστών",
+   "lado": "ingreso",
+   "M": 16.509336,
+   "pagina": 37,
+   "linea": 1214,
+   "origen": "nota que desglosa \"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\""
+  },
+  {
+   "etiqueta": "Αναπόσβεστο κόστος Ποδοσφαιριστών",
+   "lado": "gasto",
+   "M": 10.433318,
+   "pagina": 37,
+   "linea": 1217,
+   "origen": "nota que desglosa \"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\""
+  },
+  {
+   "etiqueta": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+   "lado": "gasto",
+   "M": 0.648219,
+   "pagina": 37,
+   "linea": 1218,
+   "origen": "nota que desglosa \"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\""
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων εμπορευμάτων",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 9,
+   "linea": 231,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Μισθοί και δόσεις συμβολαίων",
+   "lado": "gasto",
+   "M": 23.927832,
+   "pagina": 35,
+   "linea": 1127,
+   "origen": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\""
+  },
+  {
+   "etiqueta": "Εισφορές κοινωνικής ασφάλισης",
+   "lado": "gasto",
+   "M": 0.192577,
+   "pagina": 35,
+   "linea": 1128,
+   "origen": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\""
+  },
+  {
+   "etiqueta": "Λοιπές παροχές",
+   "lado": "gasto",
+   "M": 10.959345,
+   "pagina": 35,
+   "linea": 1129,
+   "origen": "nota que desglosa \"Δαπάνη παροχών ποδοσφαιριστών\""
+  },
+  {
+   "etiqueta": "Ημερομίσθια και μισθοί",
+   "lado": "gasto",
+   "M": 5.998403,
+   "pagina": 35,
+   "linea": 1137,
+   "origen": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\""
+  },
+  {
+   "etiqueta": "Ημερομίσθια και μισθοί εργαζομένων άρθρου 47 Κανονισμού Αδειοδότησης",
+   "lado": "gasto",
+   "M": 1.988569,
+   "pagina": 35,
+   "linea": 1138,
+   "origen": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\""
+  },
+  {
+   "etiqueta": "Εισφορές κοινωνικής ασφάλισης",
+   "lado": "gasto",
+   "M": 1.040968,
+   "pagina": 35,
+   "linea": 1139,
+   "origen": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\""
+  },
+  {
+   "etiqueta": "Εισφορές κοινωνικής ασφάλισης εργαζομένων άρθρου 47 Κανονισμού Αδειοδότησης",
+   "lado": "gasto",
+   "M": 0.017719,
+   "pagina": 35,
+   "linea": 1140,
+   "origen": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\""
+  },
+  {
+   "etiqueta": "Πρόβλεψη αποζημίωσης Προσωπικού",
+   "lado": "gasto",
+   "M": 0.049923,
+   "pagina": 35,
+   "linea": 1141,
+   "origen": "nota que desglosa \"Δαπάνη παροχών λοιπών Εργαζομένων\""
+  },
+  {
+   "etiqueta": "Απόσβεση ενσώματων ακινητοποιήσεων",
+   "lado": "gasto",
+   "M": 0.284254,
+   "pagina": 36,
+   "linea": 1161,
+   "origen": "nota que desglosa \"Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων\""
+  },
+  {
+   "etiqueta": "Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων",
+   "lado": "gasto",
+   "M": 0.487802,
+   "pagina": 36,
+   "linea": 1162,
+   "origen": "nota que desglosa \"Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων\""
+  },
+  {
+   "etiqueta": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)",
+   "lado": "gasto",
+   "M": 0.030163,
+   "pagina": 36,
+   "linea": 1163,
+   "origen": "nota que desglosa \"Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων\""
+  },
+  {
+   "etiqueta": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
+   "lado": "gasto",
+   "M": 14.296571,
+   "pagina": 9,
+   "linea": 235,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Πρόβλεψη επισφαλών πελατών",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 9,
+   "linea": 236,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά λειτουργικά έξοδα",
+   "lado": "gasto",
+   "M": 20.096966,
+   "pagina": 9,
+   "linea": 237,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Χρηματοοικονομικά έσοδα",
+   "M": 0.482419,
+   "linea": 241
+  },
+  {
+   "etiqueta": "Χρηματοοικονομικά έξοδα",
+   "M": -1.945275,
+   "linea": 242
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόρος εισοδήματος",
+   "M": 7.069927,
+   "linea": 245
+  }
+ ]
+}

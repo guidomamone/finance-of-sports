@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/Aris/Aris_FS_2023-06-30.pdf",
- "generado": "2026-10-14T04:26:27.252Z",
+ "generado": "2026-10-14T05:33:24.454Z",
  "frena": [
   {
    "etapa": "club",
@@ -9,23 +9,10 @@
   {
    "etapa": "club",
    "motivo": "carpetas-clubes.mjs dice aris-gr y quien.mjs --quien dice aris"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Έσοδα από UEFA αλληλεγγύη και χρηματικά \" -> competition_bonus 0.75; \"Κόστη χορηγιών και διαφημίσεων\" -> admin_general_expense 0.6; \"Έξοδα εγκαταστάσεων\" -> admin_general_expense 0.55; \"Λοιπά έξοδα ποδοσφαιρικού & Λοιπά λειτου\" -> other_expenses 0.6; \"Λοιπά Λειτουργικά Έξοδα & Προβλέψεις για\" -> other_expenses 0.65"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del documento, 2026-10-14: perimetro-senales.mjs: el ejercicio 2023-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados)",
-  "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-06-30); pregunta en la cola (no frena)"
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-14: perimetro-senales.mjs: el ejercicio 2023-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados)"
  ],
  "ejercicio": {
   "clubId": "aris-gr",
@@ -79,9 +66,9 @@
     "amountNative": 1.167326,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Λοιπά λειτουργικά έσοδα",
@@ -201,9 +188,9 @@
     "amountNative": -0.453405,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Εμπορικές δαπάνες",
@@ -221,9 +208,9 @@
     "amountNative": -0.736294,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Λοιπά έξοδα ποδοσφαιρικού & Λοιπά λειτουργικά Έξοδα (ταξίδια, ποσοστά Ε.Π.Ο. επί συμβολαίων, παράβολα, λοιπά λειτουργικά, κλπ)",
@@ -231,9 +218,9 @@
     "amountNative": -1.39867,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Λοιπά Λειτουργικά Έξοδα & Προβλέψεις για έκτακτα και ανόργανα έξοδα",
@@ -241,9 +228,9 @@
     "amountNative": -1.849292,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Απόσβεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)",
@@ -396,11 +383,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 1.167326,
    "cat": "competition_bonus",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Aris_FS_2023 L297 (p.12): 'Έσοδα από UEFA αλληλεγγύη και χρηματικά έπαθλα' 1.167.326. Precedente: AEK y Panathinaikos cargan 'Αλληλεγγύη UEFA και χρηματικά έπαθλα' como competition_bonus; el 2024 de Aris ya está como competition_bonus.",
    "destino": "revenue",
    "amountNative": 1.167326
   },
@@ -577,11 +564,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα (συμπεριλαμβανομένων των προβλέψεων)\")",
    "signoFijo": 0.453405,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Aris_FS_2023 L923 (nota 10, p.29): 'Κόστη χορηγιών και διαφημίσεων' -453.405, costo de patrocinio/publicidad (no deportivo). Mismo rótulo en Aris 2024 está como admin_general_expense; criterio: costos no deportivos = admin_general_expense.",
    "destino": "expense",
    "amountNative": -0.453405
   },
@@ -608,11 +595,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα (συμπεριλαμβανομένων των προβλέψεων)\")",
    "signoFijo": 0.736294,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Aris_FS_2023 L925 (p.29): 'Έξοδα εγκαταστάσεων' -736.294, gastos de instalaciones; el 2024 de Aris lo tiene como admin_general_expense (mantenimiento de estadio/sede = no deportivo).",
    "destino": "expense",
    "amountNative": -0.736294
   },
@@ -624,11 +611,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα (συμπεριλαμβανομένων των προβλέψεων)\")",
    "signoFijo": 1.39867,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Aris_FS_2023 L926 (p.29): 'Λοιπά έξοδα ποδοσφαιρικού & Λοιπά λειτουργικά' -1.398.670 (viajes, % EPO, tasas, otros): mezcla sin una categoría propia; criterio: catch-all = other_expenses.",
    "destino": "expense",
    "amountNative": -1.39867
   },
@@ -640,11 +627,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά λειτουργικά έξοδα (συμπεριλαμβανομένων των προβλέψεων)\")",
    "signoFijo": 1.849292,
    "cat": "other_expenses",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Aris_FS_2023 L927 (p.29): 'Λοιπά Λειτουργικά Έξοδα & Προβλέψεις για έκτακτα και ανόργανα έξοδα' -1.849.292: otros/previsiones extraordinarios sin desglose; other_expenses (catch-all).",
    "destino": "expense",
    "amountNative": -1.849292
   },
@@ -783,7 +770,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
+  "motivos": 2,
   "lineasIngreso": 7,
   "lineasGasto": 15,
   "metaFilas": 3,

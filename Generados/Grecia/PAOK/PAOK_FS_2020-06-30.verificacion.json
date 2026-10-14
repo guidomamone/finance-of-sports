@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2020-06-30.pdf",
  "md": "Clubes/Grecia/PAOK/PAOK_FS_2020-06-30.md",
- "generado": "2026-10-14T04:17:56.208Z",
- "estado": "cola",
+ "generado": "2026-10-14T05:24:01.138Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2020,
  "escala": {
@@ -12,12 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "92c99de",
-  "c667331",
-  "4b32bd6",
-  "805d5e1"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -52,6 +47,7 @@
   }
  ],
  "notas": [
+  "duda de extraer ya contestada para el club (fila-ilegible, \"-\"): aceptar, en PAOK_FS_2020-06-30.pdf",
   "duda de extraer que no afecta la carga: Son desgloses por naturaleza transversales a los gastos por función ya cargados; cargarlos duplicaría importes."
  ],
  "reintentar": null,

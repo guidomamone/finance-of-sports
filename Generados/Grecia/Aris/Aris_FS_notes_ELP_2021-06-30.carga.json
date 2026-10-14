@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.pdf",
- "generado": "2026-10-14T04:26:27.826Z",
+ "generado": "2026-10-14T05:33:24.983Z",
  "frena": [
   {
    "etapa": "club",
@@ -11,14 +11,166 @@
    "motivo": "carpetas-clubes.mjs dice aris-gr y quien.mjs --quien dice aris"
   },
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Φορολογικά πρόστιμα και προσαυξήσεις\" -> admin_general_expense 0.55; \"Έκτακτα και ανόργανα έξοδα\" -> exceptional_items 0.75; \"Προβλέψεις για έκτακτους κινδύνους\" -> other_amortisation 0.5"
   }
  ],
  "avisos": [
-  "perímetro: individual (ajuste manual del documento, 2026-10-14: perimetro-senales.mjs: el ejercicio 2021-06-30 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados)"
+  "perímetro: individual (ajuste manual del documento, 2026-10-14: perimetro-senales.mjs: el ejercicio 2021-06-30 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados)",
+  "gastos: ningún total impreso igual a la suma de las líneas (-8.336467); queda la suma, verificada por el resultado del ejercicio"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "aris-gr",
+  "year": 2021,
+  "cierre": "2021-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Κύκλος εργασιών (καθαρός)",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 6.86235,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων (Πωλήσεις Ποδοσφαιριστών)",
+    "normalizedCategory": "player_sales",
+    "amountNative": 1.07127,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Λοιπά έσοδα και κέρδη",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.682348,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Κόστος πωλήσεων (Έξοδα ποδοσφαιρικού τμήματος)",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -6.267535,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έξοδα διοίκησης",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.485331,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έξοδα διάθεσης",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.119454,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Φορολογικά πρόστιμα και προσαυξήσεις",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.077241,
+    "disclosureLevel": "aggregated",
+    "_pag": 39,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Έκτακτα και ανόργανα έξοδα",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -1.271669,
+    "disclosureLevel": "aggregated",
+    "_pag": 39,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Προβλέψεις για έκτακτους κινδύνους",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -1.386906,
+    "disclosureLevel": "aggregated",
+    "_pag": 39,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2021-06-30",
+   "sourceId": "aris-gr-fs-notes-elp-2021-06-30",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.018853,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+     "value": 0.000169
+    },
+    {
+     "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+     "value": -0.019022
+    },
+    {
+     "label": "Φόροι εισοδήματος",
+     "value": null
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Κύκλος εργασιών (καθαρός)",
+     "lado": "revenue",
+     "importe": 6.86235,
+     "motivo": "el documento no desglosa este renglón"
+    },
+    {
+     "renglon": "Κόστος πωλήσεων (Έξοδα ποδοσφαιρικού τμήματος)",
+     "lado": "expense",
+     "importe": 6.267535,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 8.615968,
+   "officialTotalExpenses": 8.336467,
+   "officialPAT": -1.01102
+  },
+  "source": {
+   "id": "aris-gr-fs-notes-elp-2021-06-30",
+   "clubId": "aris-gr",
+   "title": "Aris — Aris_FS_notes_ELP_2021-06-30 (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md",
  "reemplaza": false,
  "periodo": {
@@ -34,5 +186,280 @@
  },
  "clubId": "aris-gr",
  "year": 2021,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2021-06-30 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-14"
+  }
+ ],
+ "seleccion": {
+  "filas": 12,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "page": 16,
+   "native": 6.86235,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.86235,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.86235
+  },
+  {
+   "label": "Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων (Πωλήσεις Ποδοσφαιριστών)",
+   "page": 16,
+   "native": 1.07127,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.07127,
+   "cat": "player_sales",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.07127
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "page": 16,
+   "native": 0.682348,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.682348,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.682348
+  },
+  {
+   "label": "Κόστος πωλήσεων (Έξοδα ποδοσφαιρικού τμήματος)",
+   "page": 16,
+   "native": 6.267535,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.267535,
+   "cat": "lump_football_operations_expense",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.267535
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "page": 16,
+   "native": 0.485331,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.485331,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.485331
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "page": 16,
+   "native": 0.119454,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.119454,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.119454
+  },
+  {
+   "label": "Φορολογικά πρόστιμα και προσαυξήσεις",
+   "page": 39,
+   "native": 0.077241,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα, προβλέψεις και ζημιές\")",
+   "signoFijo": 0.077241,
+   "cat": "admin_general_expense",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.077241
+  },
+  {
+   "label": "Έκτακτα και ανόργανα έξοδα",
+   "page": 39,
+   "native": 1.271669,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα, προβλέψεις και ζημιές\")",
+   "signoFijo": 1.271669,
+   "cat": "exceptional_items",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.271669
+  },
+  {
+   "label": "Προβλέψεις για έκτακτους κινδύνους",
+   "page": 39,
+   "native": 1.386906,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα, προβλέψεις και ζημιές\")",
+   "signoFijo": 1.386906,
+   "cat": "other_amortisation",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.386906
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "page": null,
+   "native": 0.000169,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "page": null,
+   "native": -0.019022,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Φόροι εισοδήματος",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Λοιπά έξοδα, προβλέψεις και ζημιές\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 8.615968,
+  "expSum": -8.336467,
+  "officialTotalRevenue": 8.615968,
+  "officialTotalExpenses": 8.336467,
+  "officialPAT": -1.01102,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -1.01102,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 8.615968
+  }
+ },
+ "liga": {
+  "valor": "gr-superleague",
+  "fuente": "roster cacheado de \"2020–21 Super League Greece\" (tools/club-league-reference/gr.json), coincidencia exacta \"Aris\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2021-06-30) y contenido del .md (117 de 120 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-14)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Grecia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2021-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2021-06-30 = 0.8415 (Cierre BCE al 30/6/2021 (1 EUR = 1,1884 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "aris-gr-fs-notes-elp-2021-06-30",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gr-superleague",
+   "fuente": "roster cacheado de \"2020–21 Super League Greece\" (tools/club-league-reference/gr.json), coincidencia exacta \"Aris\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 3,
+  "lineasIngreso": 3,
+  "lineasGasto": 6,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

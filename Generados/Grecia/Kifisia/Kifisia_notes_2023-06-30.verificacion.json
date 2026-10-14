@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.pdf",
  "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.md",
- "generado": "2026-10-14T04:17:55.835Z",
- "estado": "cola",
+ "generado": "2026-10-14T05:24:00.938Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2023,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "b8c2210"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -56,7 +54,8 @@
  "notas": [
   "escalón \"nota exacta en la lectura 5\": \"Κύκλος εργασιών (καθαρός)\" (L482) se abre en las 2 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 5\": \"Λοιπά έξοδα και ζημίες\" (L488) se abre en las 5 filas de su nota, que suman exacto el renglón",
-  "la lectura base no cerraba; cerró con la lectura 5"
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Kifisia_notes_2025-06-30.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

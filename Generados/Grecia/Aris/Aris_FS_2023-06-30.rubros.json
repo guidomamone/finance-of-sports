@@ -3,7 +3,7 @@
   "pdf": "Clubes/Grecia/Aris/Aris_FS_2023-06-30.pdf",
   "club": "aris",
   "year": 2023,
-  "generatedAt": "2026-10-14T04:17:55.233Z",
+  "generatedAt": "2026-10-14T05:24:00.720Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         1.167326
       ],
-      "glosa": "Ingresos por solidaridad y premios de la UEFA"
+      "glosa": "Ingresos de la UEFA por solidaridad y premios"
     },
     {
       "label": "Λοιπά λειτουργικά έσοδα",
@@ -84,7 +84,7 @@
       "values": [
         0.262718
       ],
-      "glosa": "Coste de ventas / aprovisionamientos / no distribuidos"
+      "glosa": "Coste de ventas / materiales / no distribuidos"
     },
     {
       "label": "Αμοιβές ποδοσφαιρικού",
@@ -114,7 +114,7 @@
       "values": [
         0.023528
       ],
-      "glosa": "Otras prestaciones del personal deportivo"
+      "glosa": "Otras retribuciones del personal deportivo"
     },
     {
       "label": "Αμοιβές προσωπικού",
@@ -124,7 +124,7 @@
       "values": [
         0.078922
       ],
-      "glosa": "Retribuciones del personal no deportivo"
+      "glosa": "Retribuciones del personal"
     },
     {
       "label": "Εισφορές & λοιπές παροχές προσωπικού",
@@ -134,7 +134,7 @@
       "values": [
         0.127303
       ],
-      "glosa": "Cargas sociales y otras prestaciones del personal no deportivo"
+      "glosa": "Cargas sociales y otras retribuciones del personal"
     },
     {
       "label": "Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού",
@@ -154,7 +154,7 @@
       "values": [
         0.012
       ],
-      "glosa": "Amortización de otros activos intangibles (excluidos derechos federativos de futbolistas)"
+      "glosa": "Amortización de otros activos intangibles (excluidos los derechos federativos de jugadores)"
     },
     {
       "label": "Έξοδα τέλεσης αγώνων",
@@ -174,7 +174,7 @@
       "values": [
         0.453405
       ],
-      "glosa": "Costes de patrocinio y publicidad"
+      "glosa": "Gastos de patrocinio y publicidad"
     },
     {
       "label": "Εμπορικές δαπάνες",
@@ -204,7 +204,7 @@
       "values": [
         1.39867
       ],
-      "glosa": "Otros gastos deportivos y otros gastos de explotación (viajes, comisiones federativas sobre contratos, tasas, otros gastos operativos, etc.)"
+      "glosa": "Otros gastos deportivos y otros gastos de explotación (desplazamientos, porcentajes federativos sobre contratos, tasas, otros operativos, etc.)"
     },
     {
       "label": "Λοιπά Λειτουργικά Έξοδα & Προβλέψεις για έκτακτα και ανόργανα έξοδα",
