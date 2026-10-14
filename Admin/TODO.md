@@ -21,30 +21,6 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-231. EMPEZAR LA PRÓXIMA SESIÓN ACÁ: CERRAR GRECIA (lotes 71, 73 y 74). Estado al 2026-10-14:
-    - Lote 71 (`Admin/lotes/lote-71.txt`: Aris, Atromitos, Kifisia, Panetolikos, PAOK, Athens Kallithea; Olympiacos se pasó al 74) CORRIDO
-      con `--ejecutar --cargar` (~US$ 7,79): ningún año cargado, todos frenaron en la cola. La cola ya está CONTESTADA (71 respuestas de
-      subagentes Sonnet, revisadas; commit 9f4fc79fc): Aris 2024 sin el detalle duplicado del Κέρδος (ajustes `fila` L496-L497), Kifisia
-      2025 con la fila de transferencias de L421 (+60.000), Super League-ΕΠΟ de Atromitos como competition_bonus.
-    - LO QUE FALTA, en este orden:
-      1. GESTIONES de Aris, Atromitos, Panetolikos, PAOK y Kifisia (quién presidía cada ejercicio): no hay ninguna en `data/gestiones/gr.js`
-         y los casos "cargar · gestion" de la cola frenan cada año. Armar una tanda con subagentes que buscan con fuente, como
-         `Admin/gestiones-por-pais/tanda-2026-10-13/` (to-do 195), cargarla y responder esos casos.
-      2. ATHENS KALLITHEA: `Clubes/Grecia/Athens Kallithea/Ισολογισμός-2020.pdf` es el balance del MUNICIPIO ("ΔΗΜΟΣ ΚΑΛΛΙΘΕΑΣ", .md L4),
-         no del club. Proponerle a Guido mandarlo a `Admin/registros/documentos-descartados.txt` (y destrackear su .md, CLAUDE.md: no es
-         del dominio del club) y anotar en `Admin/sourcing/Grecia/` que falta el balance de la ΠΑΕ. Sus 4 casos de la cola siguen sin
-         responder a propósito.
-      3. Volver a correr el lote 71 (lo pagado está en caché, casi gratis): `caffeinate -i node tools/lote.mjs --lista
-         Admin/lotes/lote-71.txt --ejecutar --cargar`. Contestar la cola nueva que aparezca (subagente por club) y revisar la ficha de cada
-         alta (nombre legal, tipo de documento, cierre; skill club-or-year-onboarding, "Club nuevo").
-      4. OLYMPIACOS (`Admin/lotes/lote-74.txt`, 10 documentos, ensayo ~US$ 3,93): perímetro ya fijado (ajuste del club individual: columnas
-         Όμιλος/Εταιρεία, el grupo agrega a lo sumo 2,3%; criterio de OB). Preguntarle a Guido si ya corrió `caffeinate -i node
-         tools/lote.mjs --lista Admin/lotes/lote-74.txt --ejecutar --cargar`; si no, que lo corra; después, la cola igual que el 71.
-      5. Con los años cargados: caja y deuda (`node tools/caja-deuda.mjs --club <id>` ensayo; `--ejecutar --escribir` lo corre Guido),
-         `node tools/audit.js` (mirar `sin-salarios`: Panetolikos tiene sueldos dentro de tres líneas por función, ver to-do 229) y
-         `node tools/perimetro-senales.mjs --auditar-a2 <carpeta>` (to-do 227 hecho: revisar con un subagente lo que decidió A2 en Aris).
-      7. Archivar `lote-71.txt`, `lote-73.txt` y `lote-74.txt` en `Admin/Archive/lotes/` y pasar a la letra b) del to-do 165.
-
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
     a) `alta-club.mjs` no mira `Admin/registros/documentos-descartados.txt`: `--todos` da a `athenskallithea-gr` como "listo para alta"
@@ -180,11 +156,13 @@ ni en el comentario de ningún archivo de código.
     del (c) hecha: lote 66 (468 documentos). Nombres legales de las altas: 24 contestados con cita (ajustes `name`). Gestiones de los clubes
     nuevos de Grecia, Rep. Checa, Portugal, Noruega, Países Bajos y Turquía cargadas (to-do 195).
     FALTA, en este orden:
-    a) GRECIA: cargados Asteras 2019-2025, Levadiakos 2019-2025, OFI 2018-2025, AEK 2016-2023 y 2025, Panserraikos 2023 y 2025 (2024 no tiene
-       estado de resultados), Volos 2019-2025. Lo que falta (AEK 2024, Aris, Atromitos, Kifisia, Panetolikos, PAOK, Olympiacos, Athens Kallithea):
-       to-do 231. Conocido, sin tocar (histórico): Panathinaikos 2025 tiene "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου" como
-       competition_bonus; en AEK 2023 y 2025 va como other_income.
-    b) Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
+    a) GRECIA: HECHA (lotes 66-75, cerrada el 2026-10-14). En el sitio: Olympiacos y AEK 2016-2025, PAOK 2017 y 2019-2025, Atromitos 2016 y
+       2019-2025, Panetolikos 2017-2018 y 2020-2025, Aris 2019 y 2021-2025, Kifisia 2023-2025, Asteras, Levadiakos y Volos 2019-2025, OFI
+       2018-2025, Panserraikos 2023 y 2025, AEL y Panathinaikos. Sin documento: Athens Kallithea (el PDF era del municipio), PAOK 2018,
+       Atromitos 2017-2018, Panetolikos 2019, Aris 2020 (fichas de `Admin/sourcing/Grecia/`). Kifisia 2022 es parcial. Caja y deuda: 50 de 86
+       datos de los clubes del lote 71; el resto espera a los to-dos 232 w y 232 t. Conocido, sin tocar (histórico): Panathinaikos 2025 tiene
+       "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου" como competition_bonus; en AEK 2023 y 2025 va como other_income.
+    b) SIGUIENTE. Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
        (`ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -1` para el número), `antes-de-localizar.mjs`, ensayo, Guido corre `lote.mjs --ejecutar
        --cargar`, y la cola se revisa con un Sonnet que recomienda respuestas con cita. Fichas listas para alta (`alta-club.mjs --todos`,
        2026-10-10): Noruega 8, Portugal 7, Rep. Checa 7, Colombia 4, Países Bajos 4, Turquía 4, Ucrania 3, Corea 2, Suiza 2, Bélgica,
@@ -193,7 +171,7 @@ ni en el comentario de ningún archivo de código.
        Sarpsborg 08. Las preguntas de la revisión del alta siguen en Admin/registros/altas-revision.jsonl.
     d) Rusia: las tablas de otros ingresos y gastos que no suman el código del formulario (Krasnodar, Krylia 2021-2025, Rostov 2025, Rubin
        2022-2025: la nota en bruto, el formulario en neto). Sin daño hoy: esos años quedan con el renglón entero.
-    Mejoras de script vistas en Grecia: to-dos 210-215.
+    Mejoras de script vistas en Grecia: to-dos 210-215 y 232.
 
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.

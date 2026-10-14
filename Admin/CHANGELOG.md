@@ -15,6 +15,20 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 694 — Grecia cerrada; escalones de cargar-lote y caja-deuda (2026-10-14)
+
+- Gestiones de Aris, Atromitos, Kifisia, Panetolikos, PAOK y Olympiacos (tanda `Admin/gestiones-por-pais/tanda-2026-10-14/`); criterio
+  griego nuevo: dueño que no conduce -> el presidente que firma.
+- Lote 71 vuelto a correr con su cola contestada: altas de Olympiacos, PAOK, Aris, Atromitos, Panetolikos y Kifisia (36 años); después, a
+  mano o con tokens de sesión, Olympiacos 2019/2021/2023, Kifisia 2023, Panetolikos 2023-2025 (lote 75 sin API), Aris 2022 (filas armadas
+  a mano, `filas-a-mano`) y AEK 2024. Venta de jugadores de Olympiacos como la presenta cada documento (bruto 2016-2020, neto 2021-2025).
+  PAOK: "Αμοιβές τρίτων" del fútbol a wages_squad, con la pregunta al club. Athens Kallithea (balance del municipio), Atromitos 2017 (solo
+  auditor) descartados; Kifisia 2022 parcial.
+- `cargar-lote.mjs` saltea los documentos parciales (Kifisia 2022 se había publicado; se sacó). `caja-deuda.mjs`: una celda que no puede ser
+  importe ("24.", "7.1.3") es nota (medido idéntico; +28 datos). Caja de Olympiacos corregida a la de la sociedad (ajustes `caja`).
+- To-do 230: la "salida corta" de extraer se midió y no entró (HALLAZGOS). To-dos nuevos 232 (mejoras de script vistas en Grecia) y 233
+  (Jev en otras etapas). To-do 231 cerrado; listas de los lotes 71, 73, 74 y 75 archivadas.
+
 ## Versión 693 — Grecia: lote 71 corrido y su cola contestada (2026-10-14)
 
 - Transcripción de los 37 documentos de Grecia que faltaban (US$ 8,21) y lote 71 con `--ejecutar --cargar` (US$ 7,79): Aris decidió su
