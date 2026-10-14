@@ -95,3 +95,9 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
 - **Trampa del cero en caja-deuda (2026-10-14)**: con la compuerta nueva (filas que suman 0 no pasan), --medir sin Jev ni IA baja deuda
   de 56 a 53 iguales: los tres "iguales" eran ceros publicados que salían de filas en 0 (Once Caldas 2022-2023, PAOK 2021). El de PAOK 2021
   era un error del sitio (deuda 0; el préstamo de 8,9 M pasó a corto plazo, L431), y con la IA guardada la compuerta propone 8,9.
+- **Achicar el texto de perimetro-a2 (to-do 232 e, 2026-10-14, US$ 4,64)**: un solo renglón de texto debajo de los títulos sin tabla y la
+  portada sin la advertencia de OCR (−27% de texto; Olympiacos 2018 de 101.226 a 72.326 caracteres). Medido en
+  Admin/mediciones/perimetro-a2-medicion.txt contra el resultado anterior: 7 decisiones correctas ("individual") pasan a cola (Avaí 2021 y
+  2024, PAOK 2023 y 2025, Sandefjord 2010, Novorizontino 2025, OB 2021: Claude señala como estado una línea que no es un título con tabla)
+  y 2 de la cola pasan a "consolidado" en FC Groningen, que es individual (error). No entra; salida en
+  Admin/mediciones/perimetro-a2-medicion-recorte-232e.txt. El contexto alrededor de los títulos le sirve a Claude para ubicar el estado.
