@@ -17,6 +17,15 @@ const olympiacosgrRevenueLinesByYear = {
     { rawLabel:'Λοιπά λειτουργικά έσοδα', normalizedCategory:'other_income', amountNative:0.601068, disclosureLevel:'aggregated' },
     { rawLabel:'Έσοδα από πωλήσεις ποδοσφαιριστών / λύσεις συμβολαίων', normalizedCategory:'player_sales', amountNative:46.435375, disclosureLevel:'aggregated' },
   ],
+  2018: [
+    { rawLabel:'Έσοδα από εισιτήρια', normalizedCategory:'matchday_competition', amountNative:5.715773, disclosureLevel:'aggregated' },
+    { rawLabel:'Χορηγίες και διαφημίσεις', normalizedCategory:'sponsorship_commercial', amountNative:12.608807, disclosureLevel:'aggregated' },
+    { rawLabel:'Δικαιώματα αναμετάδοσης', normalizedCategory:'broadcasting', amountNative:4.848, disclosureLevel:'aggregated' },
+    { rawLabel:'Εμπορικά', normalizedCategory:'sponsorship_commercial', amountNative:0.633355, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα από UEFA', normalizedCategory:'competition_bonus', amountNative:31.5185, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά λειτουργικά έσοδα', normalizedCategory:'other_income', amountNative:0.831318, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα από πωλήσεις ποδοσφαιριστών / λύσεις συμβολαίων', normalizedCategory:'player_sales', amountNative:27.199775, disclosureLevel:'aggregated' },
+  ],
 };
 const olympiacosgrExpenseLinesByYear = {
   2016: [
@@ -58,6 +67,26 @@ const olympiacosgrExpenseLinesByYear = {
     { rawLabel:'Αναπόσβεστο κόστος ποδοσφαιριστών', normalizedCategory:'player_amortisation', amountNative:-6.278466, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών', normalizedCategory:'other_expenses', amountNative:-2.840973, disclosureLevel:'aggregated' },
   ],
+  2018: [
+    { rawLabel:'Μισθοί και δόσεις συμβολαίων', normalizedCategory:'wages_squad', amountNative:-18.359229, disclosureLevel:'aggregated' },
+    { rawLabel:'Εισφορές κοινωνικής ασφάλισης', normalizedCategory:'wages_squad', amountNative:-0.10913, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπές παροχές', normalizedCategory:'wages_squad', amountNative:-1.355758, disclosureLevel:'aggregated' },
+    { rawLabel:'Ημερομίσθια και μισθοί', normalizedCategory:'admin_general_expense', amountNative:-8.740063, disclosureLevel:'aggregated' },
+    { rawLabel:'Εισφορές κοινωνικής ασφάλισης', normalizedCategory:'wages_squad', amountNative:-1.062745, disclosureLevel:'aggregated' },
+    { rawLabel:'Πρόβλεψη αποζημίωσης προσωπικού', normalizedCategory:'admin_general_expense', amountNative:-0.074566, disclosureLevel:'aggregated' },
+    { rawLabel:'Απόσβεση ενσώματων περιουσιακών στοιχείων', normalizedCategory:'depreciation', amountNative:-0.225643, disclosureLevel:'aggregated' },
+    { rawLabel:'Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)', normalizedCategory:'other_amortisation', amountNative:-0.008891, disclosureLevel:'aggregated' },
+    { rawLabel:'Απόσβεση δικαιωμάτων ποδοσφαιριστών', normalizedCategory:'player_amortisation', amountNative:-12.830663, disclosureLevel:'aggregated' },
+    { rawLabel:'Απόομειωση δικαιωμάτων ποδοσφαιριστών', normalizedCategory:'player_impairment', amountNative:-0.819873, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα αγώνων', normalizedCategory:'match_organisation_expense', amountNative:-2.638995, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα χορηγιών και διαφημίσεων', normalizedCategory:'admin_general_expense', amountNative:-3.681201, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα ακινήτων & εγκαταστάσεων', normalizedCategory:'admin_general_expense', amountNative:-5.821794, disclosureLevel:'aggregated' },
+    { rawLabel:'Έκτακτα έξοδα', normalizedCategory:'exceptional_items', amountNative:-0.480811, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα ποδοσφαιρικού τμήματος', normalizedCategory:'lump_football_operations_expense', amountNative:-2.233096, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά λειτουργικά έξοδα', normalizedCategory:'other_expenses', amountNative:-19.158892, disclosureLevel:'aggregated' },
+    { rawLabel:'Αναπόσβεστο κόστος ποδοσφαιριστών', normalizedCategory:'player_amortisation', amountNative:-7.353522, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών', normalizedCategory:'other_expenses', amountNative:-0.34, disclosureLevel:'aggregated' },
+  ],
 };
 const olympiacosgrFiscalYearMeta = {
   2016: {
@@ -96,6 +125,24 @@ const olympiacosgrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:78.84317, officialTotalExpenses:81.680409, officialPAT:-1.143244,
   },
+  2018: {
+    currency:'EUR', fxRef:'EUR@2018-06-30',
+    sourceId:'olympiacos-gr-pae-olympiacos-fs-2018-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.393569, tax:-5.702182,
+    extraRows: [
+      {label:'Χρηματοοικονομικά έσοδα', value:0.210298},
+      {label:'Χρηματοοικονομικά έξοδα', value:-0.603867},
+      {label:'Φόρος εισοδήματος', value:-5.702182},
+    ],
+    sinDesglose: [
+      {renglon:'Έξοδα ποδοσφαιρικού τμήματος', lado:'expense', importe:2.233096, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:83.355529, officialTotalExpenses:84.814061, officialPAT:-8.035094,
+  },
 };
 const olympiacosgrPresupuestoOverlayByYear = {};
 
@@ -120,6 +167,11 @@ Object.assign(sources, {
   'olympiacos-gr-pae-olympiacos-fs-2017-06-30': {
     id:'olympiacos-gr-pae-olympiacos-fs-2017-06-30', clubId:'olympiacos-gr',
     title:'Olympiakos Syndesmos Filathlon Peiraios P.A.E. — PAE_Olympiacos_FS_2017-06-30 (ejercicio 2017)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'olympiacos-gr-pae-olympiacos-fs-2018-06-30': {
+    id:'olympiacos-gr-pae-olympiacos-fs-2018-06-30', clubId:'olympiacos-gr',
+    title:'Olympiakos Syndesmos Filathlon Peiraios P.A.E. — PAE_Olympiacos_FS_2018-06-30 (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

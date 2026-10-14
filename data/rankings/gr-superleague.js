@@ -129,6 +129,9 @@ window.RANKINGS["gr-superleague"] = {
   2018: {
     leagueSize: null,
     clubs: [
+      { id:"olympiacos-gr", revenue:97.176, reportType:"official_balance_sheet",
+        sourceId:"olympiacos-gr-pae-olympiacos-fs-2018-06-30",
+        mix:[["Comercial / Sponsors",15.438],["Estadio",6.663],["Televisión",5.652],["Premios por competencias",36.744],["Venta de Jugadores",31.71],["Otros ingresos",0.969]] },
       { id:"aekathens-gr", revenue:28.148, reportType:"official_balance_sheet",
         sourceId:"aekathens-gr-aek-notes-2018-06-30",
         mix:[["Comercial / Sponsors",6.483],["Estadio",4.991],["Televisión",2.982],["Premios por competencias",10.517],["Otros ingresos",3.174]] },

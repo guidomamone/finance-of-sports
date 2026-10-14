@@ -51,6 +51,61 @@ Duda: Día exacto de asunción de Marinakis en 2010 (prensa: 18/6/2010; las fuen
 Duda: Días exactos de la renuncia de Marinakis (nov 2017) y de su regreso (feb 2021) no encontrados. Si Guido prefiere cargar al presidente formal que firma (Moralis, nov 2017 a feb 2021) en vez del dueño, los cierres 2018, 2019 y 2020 (y 2017 si firma) cambiarían; decisión de criterio, no de datos.
 ```
 
+## 2018
+
+### Ingresos
+
+```text
+2018: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2018-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Olympiacos/PAE_Olympiacos_FS_2018-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Έσοδα από εισιτήρια | pág. 9, Jev 0.99 |
+| 2 | Χορηγίες και διαφημίσεις | pág. 9, Jev 1 |
+| 3 | Δικαιώματα αναμετάδοσης | pág. 9, Jev 1 |
+| 4 | Εμπορικά | pág. 9, Jev 1 |
+| 5 | Έσοδα από UEFA | pág. 9, precedente |
+| 6 | Λοιπά λειτουργικά έσοδα | pág. 9, Jev 0.99 |
+| 7 | Έσοδα από πωλήσεις ποδοσφαιριστών / λύσεις συμβολαίων | pág. 9, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Μισθοί και δόσεις συμβολαίων | pág. 37, Jev 1 |
+| 2 | Εισφορές κοινωνικής ασφάλισης | pág. 37, Claude 0.85 |
+| 3 | Λοιπές παροχές | pág. 37, Claude 0.8 |
+| 4 | Ημερομίσθια και μισθοί | pág. 37, precedente |
+| 5 | Εισφορές κοινωνικής ασφάλισης | pág. 37, Claude 0.85 |
+| 6 | Πρόβλεψη αποζημίωσης προσωπικού | pág. 37, precedente |
+| 7 | Απόσβεση ενσώματων περιουσιακών στοιχείων | pág. 37, Jev 1 |
+| 8 | Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών) | pág. 37, precedente |
+| 9 | Απόσβεση δικαιωμάτων ποδοσφαιριστών | pág. 38, Jev 1 |
+| 10 | Απόομειωση δικαιωμάτων ποδοσφαιριστών | pág. 38, precedente |
+| 11 | Έξοδα αγώνων | pág. 38, Jev 0.96 |
+| 12 | Έξοδα χορηγιών και διαφημίσεων | pág. 38, precedente |
+| 13 | Έξοδα ακινήτων & εγκαταστάσεων | pág. 38, Jev 0.93 |
+| 14 | Έκτακτα έξοδα | pág. 38, Jev 0.94 |
+| 15 | Έξοδα ποδοσφαιρικού τμήματος | pág. 38, Jev 0.94 |
+| 16 | Λοιπά λειτουργικά έξοδα | pág. 38, Claude 0.85 |
+| 17 | Αναπόσβεστο κόστος ποδοσφαιριστών | pág. 39, Jev 0.92 |
+| 18 | Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών | pág. 39, Claude 0.8 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2017–18 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Olympiacos".
+```
+
 ## 2017
 
 ### Ingresos
@@ -176,4 +231,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2017-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### olympiacos-gr-pae-olympiacos-fs-2018-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2018-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
