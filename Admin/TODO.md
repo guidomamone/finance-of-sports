@@ -21,6 +21,34 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
+231. EMPEZAR LA PRÓXIMA SESIÓN ACÁ: CERRAR GRECIA (lotes 71, 73 y 74). Estado al 2026-10-14:
+    - Lote 71 (`Admin/lotes/lote-71.txt`: Aris, Atromitos, Kifisia, Panetolikos, PAOK, Athens Kallithea; Olympiacos se pasó al 74) CORRIDO
+      con `--ejecutar --cargar` (~US$ 7,79): ningún año cargado, todos frenaron en la cola. La cola ya está CONTESTADA (71 respuestas de
+      subagentes Sonnet, revisadas; commit 9f4fc79fc): Aris 2024 sin el detalle duplicado del Κέρδος (ajustes `fila` L496-L497), Kifisia
+      2025 con la fila de transferencias de L421 (+60.000), Super League-ΕΠΟ de Atromitos como competition_bonus.
+    - LO QUE FALTA, en este orden:
+      1. GESTIONES de Aris, Atromitos, Panetolikos, PAOK y Kifisia (quién presidía cada ejercicio): no hay ninguna en `data/gestiones/gr.js`
+         y los casos "cargar · gestion" de la cola frenan cada año. Armar una tanda con subagentes que buscan con fuente, como
+         `Admin/gestiones-por-pais/tanda-2026-10-13/` (to-do 195), cargarla y responder esos casos.
+      2. ATHENS KALLITHEA: `Clubes/Grecia/Athens Kallithea/Ισολογισμός-2020.pdf` es el balance del MUNICIPIO ("ΔΗΜΟΣ ΚΑΛΛΙΘΕΑΣ", .md L4),
+         no del club. Proponerle a Guido mandarlo a `Admin/registros/documentos-descartados.txt` (y destrackear su .md, CLAUDE.md: no es
+         del dominio del club) y anotar en `Admin/sourcing/Grecia/` que falta el balance de la ΠΑΕ. Sus 4 casos de la cola siguen sin
+         responder a propósito.
+      3. Volver a correr el lote 71 (lo pagado está en caché, casi gratis): `caffeinate -i node tools/lote.mjs --lista
+         Admin/lotes/lote-71.txt --ejecutar --cargar`. Contestar la cola nueva que aparezca (subagente por club) y revisar la ficha de cada
+         alta (nombre legal, tipo de documento, cierre; skill club-or-year-onboarding, "Club nuevo").
+      4. OLYMPIACOS (`Admin/lotes/lote-74.txt`, 10 documentos, ensayo ~US$ 3,93): perímetro ya fijado (ajuste del club individual: columnas
+         Όμιλος/Εταιρεία, el grupo agrega a lo sumo 2,3%; criterio de OB). Preguntarle a Guido si ya corrió `caffeinate -i node
+         tools/lote.mjs --lista Admin/lotes/lote-74.txt --ejecutar --cargar`; si no, que lo corra; después, la cola igual que el 71.
+      5. Con los años cargados: caja y deuda (`node tools/caja-deuda.mjs --club <id>` ensayo; `--ejecutar --escribir` lo corre Guido),
+         `node tools/audit.js` (mirar `sin-salarios`: Panetolikos tiene sueldos dentro de tres líneas por función, ver to-do 229) y
+         `node tools/perimetro-senales.mjs --auditar-a2 <carpeta>` (to-do 227 hecho: revisar con un subagente lo que decidió A2 en Aris).
+      6. AEK 2024 (`Admin/lotes/lote-73.txt`): sigue sin cargar. Su `Generados/Grecia/AEK Athens/AEK_FS_2024-06-30.verificacion.json` quedó
+         modificado sin commitear desde la sesión del 2026-10-13 (re-verificación con la lectura nueva de verificar.mjs: la nota exacta y la
+         'Diferencia de redondeo' de 1 euro). Correr `caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-73.txt --ejecutar --cargar`
+         (etapa 7 para las filas nuevas de sus notas), contestar la cola y commitear ese .json con el resultado.
+      7. Archivar `lote-71.txt`, `lote-73.txt` y `lote-74.txt` en `Admin/Archive/lotes/` y pasar a la letra b) del to-do 165.
+
 130. OTROS DEPORTES Y CLUBES POLIDEPORTIVOS: ¿ENTRAN AL SITIO, Y CON QUÉ ESQUEMA? (Sudamérica y México). Minas Tênis Clube/Náutico,
     Paulistano, Praia Clube y Pinheiros publican un balance que consolida todos los deportes (cuotas,
     escuelas, Lei de Incentivo): no encaja con las categorías de fútbol. Colombia sumó béisbol (Caimanes,
@@ -68,12 +96,10 @@ ni en el comentario de ningún archivo de código.
     del (c) hecha: lote 66 (468 documentos). Nombres legales de las altas: 24 contestados con cita (ajustes `name`). Gestiones de los clubes
     nuevos de Grecia, Rep. Checa, Portugal, Noruega, Países Bajos y Turquía cargadas (to-do 195).
     FALTA, en este orden:
-    a) GRECIA: cargados Asteras 2019-2025, Levadiakos 2019-2025, OFI 2018-2025, AEK 2016-2023 y 2025, Panserraikos 2023 y 2025 (2024 no
-       tiene estado de resultados), Volos 2019-2025. Falta AEK 2024 (lote con la etapa 7 para las filas nuevas de sus notas:
-       `Admin/lotes/lote-73.txt`). Lote 71 armado y sin correr (Olympiacos, Athens Kallithea, Aris, Atromitos, Kifisia, Panetolikos, PAOK;
-       primero `pipeline.mjs --dir "Clubes/Grecia" --ejecutar`, ~US$ 5,67). Aris: el perímetro lo decide el lote solo (A2 + la regla de la serie: 2019 y 2021 individuales, 2022-2025 consolidados).
-       Conocido, sin tocar (histórico): Panathinaikos 2025 tiene "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου" como competition_bonus;
-       en AEK 2023 y 2025 va como other_income.
+    a) GRECIA: cargados Asteras 2019-2025, Levadiakos 2019-2025, OFI 2018-2025, AEK 2016-2023 y 2025, Panserraikos 2023 y 2025 (2024 no tiene
+       estado de resultados), Volos 2019-2025. Lo que falta (AEK 2024, Aris, Atromitos, Kifisia, Panetolikos, PAOK, Olympiacos, Athens Kallithea):
+       to-do 231. Conocido, sin tocar (histórico): Panathinaikos 2025 tiene "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου" como
+       competition_bonus; en AEK 2023 y 2025 va como other_income.
     b) Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
        (`ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -1` para el número), `antes-de-localizar.mjs`, ensayo, Guido corre `lote.mjs --ejecutar
        --cargar`, y la cola se revisa con un Sonnet que recomienda respuestas con cita. Fichas listas para alta (`alta-club.mjs --todos`,

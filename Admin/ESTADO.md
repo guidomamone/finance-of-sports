@@ -68,6 +68,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   inglés; en otros idiomas decide el paso A2 (Claude, cinco criterios con peso). Frena solo si los votos de dos ejercicios chocan.
 - Qué hay cargado de cada club (ejercicios, tipo de documento, moneda, deuda y caja): `Admin/ESTADO-clubes.md`, generado por
   `node tools/generate-club-index.js`. El detalle de cada año (fuente, qué es real y qué no) está en la evidencia del club, `Admin/carga-clubes/<clubId>.md`.
+- Grecia está a medias: lo cargado y lo que falta, en el to-do 231 de `Admin/TODO.md`.
 - Brasil, Italia y Rusia se cargaron por el pipeline (Rusia por su camino propio); en los documentos italianos viejos quedan ajustes
   manuales donde el script no da idéntico, y dos ejercicios (Lazio 2012-13, AS Roma 2021) llevan el ajuste `no-recargar` porque lo publicado
   es más detallado que lo que lee el script. Un ejercicio de menos de 12 meses no se carga: queda en `Admin/registros/documentos-parciales.txt` con el

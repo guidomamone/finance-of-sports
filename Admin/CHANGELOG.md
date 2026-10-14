@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 693 — Grecia: lote 71 corrido y su cola contestada (2026-10-14)
+
+- Transcripción de los 37 documentos de Grecia que faltaban (US$ 8,21) y lote 71 con `--ejecutar --cargar` (US$ 7,79): Aris decidió su
+  perímetro solo (A2: 2019 y 2021 individuales, 2022-2025 consolidados); ningún año cargado, todo frenó en la cola.
+- Cola contestada por subagentes Sonnet (71 respuestas) y revisada: Aris 2024 sin el detalle duplicado del Κέρδος, Kifisia 2025 con la
+  fila de transferencias; Kifisia 2025 con su cierre. Olympiacos: perímetro individual (cola: 1 de 3 criterios), pasa al lote 74.
+- To-dos nuevos 230 (ahorrar en las etapas 3 a 5) y 231 (lo que falta para cerrar Grecia: empezar la próxima sesión por ahí).
+
 ## Versión 692 — Perímetro: ajustes por documento y auditoría de A2 (to-dos 226 y 227) (2026-10-13)
 
 - Ajustes `perimetro` individuales para Trabzonspor 2016-2020, Roma 2006 y Bologna 2024-2025 (el ajuste del club no coincidía con el
