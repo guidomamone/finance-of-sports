@@ -48,3 +48,5 @@ confirmados como `PDF document` real, tamaños entre 165 KB y 2,3 MB.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2024 desde `Clubes/Grecia/Aris/Aris_FS_2024-06-30.pdf` (sourceId `aris-gr-fs-2024-06-30`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2025 desde `Clubes/Grecia/Aris/Aris_FS_2025-06-30.pdf` (sourceId `aris-gr-fs-2025-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2022 desde `Clubes/Grecia/Aris/Aris_FS_audited_art47_2022-06-30.pdf` (sourceId `aris-gr-fs-audited-art47-2022-06-30`).
