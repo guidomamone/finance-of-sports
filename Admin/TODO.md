@@ -83,6 +83,9 @@ ni en el comentario de ningún archivo de código.
     i) `periodo.mjs` dio a Kifisia 2022 como ejercicio de 12 meses (confianza media, sin evidencia) y el documento dice "περιόδου
        9/8/2021 - 30/06/2022" en la portada (L47, L93, L261): primer ejercicio de la sociedad, unos 10,7 meses. Un período de menos de 12
        meses tiene que salir como parcial (Admin/registros/documentos-parciales.txt) o a la cola, no como anual.
+    j) `cargar-lote.mjs` no mira `documentos-parciales.txt` ni `documentos-descartados.txt`: carga todo lo que tiene `.carga.json` listo en
+       la carpeta del club, aunque `lote.mjs` lo haya salteado. Pasó con Kifisia 2022 (marcado parcial antes de la corrida, escrito igual en
+       be8e6849b; se sacó a mano). Es un bug que publica datos: cargar-lote tiene que leer las dos listas, igual que lote.mjs.
 
 130. OTROS DEPORTES Y CLUBES POLIDEPORTIVOS: ¿ENTRAN AL SITIO, Y CON QUÉ ESQUEMA? (Sudamérica y México). Minas Tênis Clube/Náutico,
     Paulistano, Praia Clube y Pinheiros publican un balance que consolida todos los deportes (cuotas,
