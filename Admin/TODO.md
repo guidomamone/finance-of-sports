@@ -88,6 +88,9 @@ ni en el comentario de ningún archivo de código.
        MIL MILLONES de tokens de entrada, la IA barata que ya usa la etapa 7), así no hace falta griego ni ningún otro idioma: a Jev se le
        pasan las filas del balance y elige cuál es caja y cuáles son deuda financiera; la compuerta es la misma de hoy (el número tiene que
        estar impreso en esa línea). Medir con `caja-deuda.mjs --medir` sobre los años ya cargados, errores con confianza alta primero.
+    u) `perimetro-senales.mjs --auditar-a2 <carpeta>` escribe `instruccion.txt` y `pedidos.jsonl` EN la carpeta que recibe, y el nombre
+       invita a pasarle la del club: con `Clubes/Grecia/Aris` los dejó al lado de los PDFs, que se publican (se movieron a mano). Que
+       rechace una ruta bajo `Clubes/` o que escriba siempre en una carpeta de trabajo fija (scratch o `Admin/mediciones/`).
     k) Una respuesta "no" de la cola a una duda de importe ("¿se carga X del estado y no Y de la nota?", Olympiacos 2023 caso 446850a)
        no cambia nada: la verificación siguió con el importe del estado y hubo que agregar un ajuste `fila` a mano. Que esa respuesta
        aplique sola el importe de la nota (es lo que la pregunta ofrece), con la misma compuerta de cierre.
