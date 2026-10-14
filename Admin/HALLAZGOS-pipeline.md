@@ -84,3 +84,7 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   menos de 12 meses) cambiaba 30 documentos de 2.713, la mayoría fechas sueltas de un título ("31/12/2023 31/12/2023"); exigir un
   separador de rango los bajó a 9, y exigir que sea el único rango del ejercicio sacó a Lazio 2003-04 (tramos de gestión A y B, cargado
   como anual) y a la memoria 2020-21 de Barcelona. Quedaron 7, todos períodos cortos de verdad.
+- **Etiqueta repetida bajo dos renglones (to-do 232 h, 2026-10-14)**: con "renglones distintos" a secas, 9 documentos de prueba-completa
+  que cargaban pasaban a la cola (~60 preguntas, 34 en Fortaleza 2017, cuyas notas son "Total Gastos de Administración" y "Total Gastos
+  de Ventas", sin categoría en el .categorias.json). Quedó "dos renglones de categoría CONOCIDA y distinta": 79 idénticos, cambia solo PAOK.
+  Además `mismoPadre()` (tools/padres-filas.mjs) no veía letras griegas ni cirílicas y daba "misma nota" a cualquier par de títulos griegos.

@@ -457,6 +457,8 @@ Mitigaciones:
                   "descartar" = club sin presidente persona (SAF, sociedad anónima), no se vuelve a preguntar
  PERÍODO CORTO    menos de 12 meses ─► la columna del año anterior sin importes (primer ejercicio de una sociedad nueva) → se carga
                   como el año con publicNote (Volos 2019, Kifisia 2022; Admin/CONVENCIONES-DATOS.md) ─► con importes → frena (parcial)
+ ETIQUETA REPETIDA la misma etiqueta (mismo lado) bajo dos renglones de categoría conocida y distinta (PAOK "Αποσβέσεις" en fútbol y en
+                  administración) ─► solo el precedente con la misma nota ─► si no, a la cola con la clave "etiqueta@renglón" (to-do 232 h)
  SIN CATEGORÍA    fila impresa (con página) que no está en el .categorias.json y nada categorizó ─► frena con su nombre (to-do 232 x;
                   AEK 2024) ─► las demás sin categoría aceptable: más del 5% del dinero del lado frena, menos es aviso y no se cargan
  CATEGORÍAS EN 0  ajuste `cero-real` ─► salarios / TV / estadio, o socios / otros deportes según el perfil ─► reintento (una vez) ─► aviso

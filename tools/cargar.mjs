@@ -553,9 +553,32 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     return null;
   };
   const aprendidasYa = existsSync(ARCHIVO_APRENDIDAS) ? readFileSync(ARCHIVO_APRENDIDAS, 'utf8') : '';
+  // LA MISMA ETIQUETA BAJO DOS RENGLONES (to-do 232 h, aprobado por Guido el 2026-10-14). La categoría se decide por etiqueta, y en un estado
+  // por función la misma etiqueta cae en dos notas con sentido distinto: PAOK "Αποσβέσεις" en el cuadro de fútbol (amortización de pases) y
+  // en los de administración y ventas (bienes y software, 0,2-0,3 M por año), que heredaba player_amortisation; Olympiacos 2025 "Εισφορές
+  // κοινωνικής ασφάλισης" en la nota de jugadores y en la de otros empleados. Medido: 227 etiquetas en 81 documentos. UNA compuerta: la
+  // etiqueta (del mismo lado) aparece bajo dos o más renglones distintos del documento (el estado cuenta como uno). Para esas filas la
+  // categoría por etiqueta (.categorias.json, y el precedente sin contexto, que se arma con lo publicado y puede traer el error) no decide:
+  // solo el precedente del club con la MISMA nota; si no hay, a la cola con la clave "etiqueta@renglón" y la categoría por etiqueta como
+  // propuesta, así se contesta (o se corrige) una sola de las dos.
+  const padresPor = new Map();
+  for (const r of raw) { const k = `${norm(r.label)}|${r.tside || ''}`; const pd = padreDe(r.origen) || 'estado'; if (!padresPor.has(k)) padresPor.set(k, []); const ps = padresPor.get(k); if (!ps.some((x) => mismoPadre(x, pd))) ps.push(pd); }
+  // "Distintos" = renglones de CATEGORÍA distinta (la del renglón del estado en el .categorias.json): bajo "Gastos de administración" y
+  // "Gastos de ventas" (Fortaleza 2017, los dos admin_general_expense) la etiqueta significa lo mismo y no se pregunta; bajo la nota del
+  // departamento de fútbol y la de administración (PAOK), no. Medido en prueba-completa + PAOK: sin esto, 9 documentos que cargaban
+  // pasaban a la cola con ~60 preguntas (34 solo en Fortaleza 2017). Un renglón sin categoría conocida (un "Total ..." que no está en el
+  // .categorias.json) no cuenta: hacen falta dos categorías conocidas y distintas.
+  const catPadre = (pd, lado) => (pd === 'estado' ? 'estado' : (catDe(pd, lado).cat || null));
+  const repetida = (r) => { const ps = padresPor.get(`${norm(r.label)}|${r.tside || ''}`) || []; return ps.length > 1 && new Set(ps.map((pd) => catPadre(pd, r.tside)).filter(Boolean)).size > 1; };
   const enCola = [];
   const filas = raw.map((r) => {
     const f = { label: r.label, page: r.page, native: r.native, ladoDoc: r.tside || null, origen: r.origen, ...(r.signoFijo !== undefined ? { signoFijo: r.signoFijo } : {}), ...catDe(r.label, r.tside, String(r.origen || '').startsWith('verificacion'), padreDe(r.origen)) };
+    if (repetida(r)) {
+      const pd = padreDe(r.origen) || 'estado';
+      const p = precedenteFamilia(lineasClub, clubId, r.tside || null, r.label, { padre: pd });
+      if (p?.via === 'exacto-con-contexto' && !delOtroLado(p.cat, r.tside)) Object.assign(f, { cat: p.cat, conf: 1, escalon: 0, fuenteCat: `precedente del club con la misma nota ("${pd}"): la etiqueta está bajo renglones de categoría distinta`, enLista: true });
+      else Object.assign(f, { conf: 0, escalon: 2, fuenteCat: `la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (${f.cat || 'ninguna'}) no decide para la fila de "${pd}"`, enLista: true, ...(f.cat ? {} : { cat: r.tside === 'revenue' ? 'other_income' : 'other_expenses' }) });
+    }
     // COMPUERTA DEL LADO (Versión 374, aprobada por Guido el 2026-10-02): la respuesta de Guido se aplica solo si su categoría es del MISMO
     // lado que la fila en el documento. Hasta la 373 se aplicaba por etiqueta en todos los años del club: en Fortaleza CEIF, "Auxilio de
     // transporte" es gasto en 2020 y 2023 (nómina) e ingreso en 2021-2024 (de la Dimayor), y "Comisiones" es gasto en 2024 e ingreso en 2025.
@@ -570,8 +593,9 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       Object.assign(f, { cat: ajCat.valor, conf: 1, escalon: 0, fuenteCat: `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${ajCat.fecha}): ${ajCat.motivo}`, enLista: true, ladoRechazado: false });
       if (r.tside && ladoDeCat(ajCat.valor) !== r.tside) { f.signoFijo = f.signoFijo !== undefined ? -f.signoFijo : -Math.abs(f.native); f.ladoDoc = ladoDeCat(ajCat.valor); }
     }
-    let rg = (r.catAjuste || ajCat) ? null : respuestaCat(r.label, norm(r.label), padreDe(r.origen), r.tside, { familia: !aceptable(f) }); let claveCola = norm(r.label);
-    if (!ajCat && ((rg?.cat && r.tside && ladoDeCat(rg.cat) && ladoDeCat(rg.cat) !== r.tside) || (f.ladoRechazado && !rg))) { claveCola = `${norm(r.label)}|${r.tside}`; rg = respuestaCat(r.label, claveCola, padreDe(r.origen), r.tside, { familia: !aceptable(f) }); }
+    const claveBase = repetida(r) ? `${norm(r.label)}@${norm(padreDe(r.origen) || 'estado')}` : norm(r.label); // (to-do 232 h) una pregunta por renglón
+    let rg = (r.catAjuste || ajCat) ? null : respuestaCat(r.label, claveBase, padreDe(r.origen), r.tside, { familia: !aceptable(f) && !repetida(r) }); let claveCola = claveBase;
+    if (!ajCat && ((rg?.cat && r.tside && ladoDeCat(rg.cat) && ladoDeCat(rg.cat) !== r.tside) || (f.ladoRechazado && !rg))) { claveCola = `${claveBase}|${r.tside}`; rg = respuestaCat(r.label, claveCola, padreDe(r.origen), r.tside, { familia: !aceptable(f) }); }
     if (rg?.cat) {
       Object.assign(f, { cat: rg.cat, conf: 1, escalon: 0, fuenteCat: 'respuesta de Guido en la cola', enLista: true, notaGuido: rg.nota });
       const lado = ladoDeCat(rg.cat);

@@ -28,16 +28,6 @@ ni en el comentario de ningún archivo de código.
        `gestion` pendientes de la cola, y que cargue el `resultado-N.json` validado y conteste esos casos, ahorra el armado en cada país.
     e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
        Grecia fue el 20% del gasto de API. Mirar qué texto le hace falta de verdad (to-do 230 lo deja como tercer cambio).
-    h) La categoría se decide por ETIQUETA, y en los estados griegos por función la misma etiqueta aparece en dos notas con sentido
-       distinto: PAOK "Αποσβέσεις" en el cuadro del departamento de fútbol (91-96% amortización de pases, `player_amortisation`) y en los
-       de administración y venta (bienes y software, 0,2-0,3 M por año, `depreciation`); Olympiacos 2025 "Εισφορές κοινωνικής ασφάλισης"
-       en la nota de jugadores (L1105, `wages_squad`) y en la de otros empleados (L1119, `admin_general_expense`). La segunda hereda la
-       categoría de la primera y no hay forma de corregir una sola fila (`cola.mjs --corregir-categoria` va por etiqueta). Escalón: la
-       categoría por etiqueta + `detalla_a` (la fila del estado que desglosa) cuando la misma etiqueta cae bajo dos renglones distintos.
-       Dónde: los rubros por etiqueta salen de `verificar.mjs --rubros` (`<md>.rubros.json`, con `section`) y la categoría de cada fila la
-       elige `cargar.mjs` ("CATEGORÍA DE CADA FILA", cabecera L31) desde `.categorias.json` por `label`. Medir con
-       `node tools/lote.mjs --lista Admin/lotes/prueba-completa.txt` antes y después (lo cargado de los otros clubes, idéntico) y ver PAOK
-       y Olympiacos 2025: hoy `audit.js` marca `linea-duplicada` P3 en esas filas (92 hallazgos en los griegos nuevos).
     k) Una respuesta "no" de la cola a una duda de importe ("¿se carga X del estado y no Y de la nota?", Olympiacos 2023 caso 446850a)
        no cambia nada: la verificación siguió con el importe del estado y hubo que agregar un ajuste `fila` a mano. Que esa respuesta
        aplique sola el importe de la nota (es lo que la pregunta ofrece), con la misma compuerta de cierre.

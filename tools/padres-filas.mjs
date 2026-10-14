@@ -29,8 +29,12 @@ export const sinMarca = (s) => normalizar(String(s || '')).replace(/\s*\((?:[a-z
 // largas en Fortaleza). Se sacan palabras genéricas (gastos, despesas, total, ingresos, nota...) y se compara por raíz de 5 letras: comparten
 // al menos una -> misma nota. "(-) Despesas com futebol profissional e amador" y "Custo com futebol" comparten "futeb"; con "Despesas
 // administrativas e gerais" no comparten nada. 'estado' solo es igual a 'estado'.
-const GENERICAS = new Set(['gasto', 'gastos', 'despesa', 'despesas', 'custo', 'custos', 'costo', 'costos', 'total', 'totales', 'ingreso', 'ingresos', 'receita', 'receitas', 'liquida', 'liquidas', 'nota', 'notas', 'otros', 'otras', 'outros', 'outras', 'siguiente', 'detalle', 'conformados', 'diciembre', 'dezembro', 'terminados', 'anos', 'años', 'actividades', 'atividades', 'ordinarias', 'operacion', 'operacionales', 'operacionais', 'expenses', 'income', 'revenue', 'other', 'costs']);
-const raices = (t) => new Set(sinMarca(t).normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/[^a-z]+/).filter((w) => w.length > 3 && !GENERICAS.has(w)).map((w) => w.slice(0, 5)));
+const GENERICAS = new Set(['gasto', 'gastos', 'despesa', 'despesas', 'custo', 'custos', 'costo', 'costos', 'total', 'totales', 'ingreso', 'ingresos', 'receita', 'receitas', 'liquida', 'liquidas', 'nota', 'notas', 'otros', 'otras', 'outros', 'outras', 'siguiente', 'detalle', 'conformados', 'diciembre', 'dezembro', 'terminados', 'anos', 'años', 'actividades', 'atividades', 'ordinarias', 'operacion', 'operacionales', 'operacionais', 'expenses', 'income', 'revenue', 'other', 'costs',
+  'εξοδα', 'εσοδα', 'κοστοσ', 'συνολο', 'λοιπα', 'λοιπεσ', 'σημειωση', 'расходы', 'доходы', 'итого', 'прочие']); // (to-do 232 h) griego y cirílico, normalizados
+// (to-do 232 h) también letras GRIEGAS y CIRÍLICAS: con [a-z] un título griego no dejaba ninguna raíz y "sin raíces" da "misma nota", así
+// que en PAOK la nota del departamento de fútbol ("Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος") y la de administración ("Έξοδα διοίκησης")
+// eran la misma. El texto latino se parte igual que antes.
+const raices = (t) => new Set(sinMarca(t).normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/[^a-z\u03b1-\u03c9\u0430-\u044f\u0451]+/).filter((w) => w.length > 3 && !GENERICAS.has(w)).map((w) => w.slice(0, 5)));
 export const mismoPadre = (a, b) => {
   if (a == null || b == null) return false;
   if (sinMarca(a) === sinMarca(b)) return true;
