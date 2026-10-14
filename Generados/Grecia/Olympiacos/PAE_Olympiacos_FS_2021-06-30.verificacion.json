@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2021-06-30.pdf",
  "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2021-06-30.md",
- "generado": "2026-10-14T05:54:37.738Z",
+ "generado": "2026-10-14T06:11:18.079Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "olympiacos-gr",
  "year": 2021,
  "escala": {
   "valor": "unidades",
@@ -59,6 +59,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2020 de este documento suma ingresos 74.810063; el sitio tiene 82.455128"
+  },
+  {
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2021: 81.410639 en este documento y 81.410639 en PAE_Olympiacos_FS_2022-06-30.pdf (columna del año anterior)"
@@ -67,11 +72,6 @@
    "nombre": "documento del año 2020",
    "ok": false,
    "detalle": "ingresos de 2020: 82.455128 en PAE_Olympiacos_FS_2020-06-30.pdf y 74.810063 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
   }
  ],
  "notas": [

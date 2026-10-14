@@ -186,6 +186,9 @@ window.RANKINGS["gr-superleague"] = {
   2019: {
     leagueSize: null,
     clubs: [
+      { id:"olympiacos-gr", revenue:69.465, reportType:"official_balance_sheet",
+        sourceId:"olympiacos-gr-pae-olympiacos-fs-2019-06-30",
+        mix:[["Comercial / Sponsors",17.034],["Estadio",4.897],["Televisión",6.548],["Premios por competencias",14.113],["Venta de Jugadores",26.265],["Otros ingresos",0.608]] },
       { id:"paok-gr", revenue:53.121, reportType:"official_balance_sheet",
         sourceId:"paok-gr-fs-2019-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",38.604],["Otros ingresos",14.517]],
