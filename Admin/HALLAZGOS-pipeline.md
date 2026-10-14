@@ -66,3 +66,13 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   deuda 48 -> 37 iguales, caja 106 -> 94 (el documento siguiente solo ya no alcanza) y el flujo de efectivo no sumó ningún caso. Con chequeos
   exactos, los votos no agregan nada. Tampoco entró el documento anterior votando EN CONTRA: frenaba 7 valores bien cargados (Novorizontino
   2023 reexpresado, Tottenham y Fluminense 2025 con otra escala, Ceará 2025 y Católica 2016 con otra fila); quedó solo a favor.
+- **extraer.mjs, "salida corta"** (to-do 230, 2026-10-14; no entró): la IA devuelve `etiqueta: null` cuando es la primera celda de su línea y
+  `detalla_linea` en vez de copiar la etiqueta, y el script las completa desde el .md. Medido sobre `prueba-mediana.txt` (34 documentos):
+  US$ 5,82 → 4,84 (−17%; salida 258.827 → 210.037 tokens, menos que el −33% del conteo, porque la IA siguió escribiendo más etiquetas de
+  las previstas). Pero la carga cambió en 17 de 34 documentos: las etiquetas difieren en el 15,2% de las filas (contra 3,5% entre dos
+  corridas con el código de hoy). 220 de esas filas son de Universidad Católica, cuyas tablas están transcriptas como TEXTO, sin `|`: la
+  "primera celda" era la línea entera con los números, y la compuerta (que tenga letras) la dejaba pasar. El resto (129, 5,6%) son
+  etiquetas que la IA escribe distinto cuando no tiene que copiarlas. El código medido quedó afuera del repo.
+- **Ruido de extraer entre corridas** (2026-10-14, misma medición): con el código de hoy, rehacer extraer sobre los mismos 34 documentos
+  cambió la carga en 6 (Goiás 2013, Novorizontino 2013, UC 2010, Fortaleza 2019, 2021 y 2025) y el 3,5% de las etiquetas. Cualquier
+  medición de "lo cargado idéntico" que rehace extraer tiene que compararse contra este piso, no contra cero.
