@@ -79,6 +79,13 @@ ni en el comentario de ningún archivo de código.
        ingreso como renglón sin desglosar (lump_), donde `cargar.mjs` ya no hace la pregunta; `cola.mjs` `cerrarCargados()` no cierra
        'cargar · perfil' a propósito (sirve para los años que vienen). Quedan en la cola como pendientes. Escalón posible: un caso de perfil
        cuya etapa ya no lo levanta (el año cargado y la última corrida de cargar sin ese caso) pasa a obsoleto, igual que los de verificar.
+    ab) DEUDA Y CAJA EN 0 DE LA CONVENCIÓN VIEJA ("0 = no se cargó"; hoy null = sin dato). Colo-Colo 2022-2024 se corrigió (2026-10-14,
+       lo encontró la medición de Jev). Quedan años con `grossDebt:0, cash:0` para revisar UNO POR UNO contra su evidencia
+       (Admin/carga-clubes/<club>.md) y su documento, porque alguno puede ser real o un presupuesto: Once Caldas (4), Racing (3), Boca,
+       Mirassol, Boyacá Chicó, FC København, Brøndby, Midtjylland, Panetolikos (2021; 2022 tiene deuda 0 por filas en 0 y su cuadro de
+       vencimientos L180 imprime "Δανεισμός 675.223,80"), los 10 japoneses y Club América (1 cada uno). Evidencias que dicen "no se
+       cargaron": clubamerica, coritiba, fortaleza-br, gremio, hamburgersv-de, independiente, istra-hr, midtjylland-dk, nagoyagrampus,
+       racing, sportrecife-br.
 
 233. JEV EN OTRAS ETAPAS DEL PIPELINE (pedido de Guido, 2026-10-14). Jev (typesafe.ai, `tools/jev-categorizar.mjs`) cuesta ~US$ 42 por MIL
     MILLONES de tokens de entrada y hoy solo categoriza (etapa 7). Ver, etapa por etapa, si puede hacer lo que hoy hace Claude Opus o un
