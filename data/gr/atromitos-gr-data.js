@@ -4,12 +4,29 @@ const atromitosgrRevenueLinesByYear = {
     { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:0.878168, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.109951, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Από εισιτήρια αγώνων', normalizedCategory:'matchday_competition', amountNative:0.155532, disclosureLevel:'aggregated' },
+    { rawLabel:'Από τηλεοπτικά δικαιώματα', normalizedCategory:'broadcasting', amountNative:2.352325, disclosureLevel:'aggregated' },
+    { rawLabel:'Από χορηγίες-διαφήμιση', normalizedCategory:'sponsorship_commercial', amountNative:0.234735, disclosureLevel:'aggregated' },
+    { rawLabel:'Επιχορήγηση από Super League-ΕΠΟ', normalizedCategory:'competition_bonus', amountNative:0.201512, disclosureLevel:'aggregated' },
+    { rawLabel:'Επιχορήγηση από συμμετοχή UEFA', normalizedCategory:'competition_bonus', amountNative:0.377719, disclosureLevel:'aggregated' },
+    { rawLabel:'Επιχορήγηση από UEFA Ακαδημιών', normalizedCategory:'youth_football', amountNative:0.331917, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα από αποζημιώσεις', normalizedCategory:'other_income', amountNative:0.001588, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα από ΕΠΟ - Κύπελλο Ελλάδος', normalizedCategory:'competition_bonus', amountNative:0.064189, disclosureLevel:'aggregated' },
+    { rawLabel:'Ενοίκια Κυλικείου', normalizedCategory:'other_income', amountNative:0.024, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.019555, disclosureLevel:'aggregated' },
+  ],
 };
 const atromitosgrExpenseLinesByYear = {
   2016: [
     { rawLabel:'Κόστος πωλήσεων', normalizedCategory:'lump_football_operations_expense', amountNative:-4.938658, disclosureLevel:'aggregated' },
     { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.653858, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έξοδα και ζημίες', normalizedCategory:'other_expenses', amountNative:-0.111137, disclosureLevel:'aggregated' },
+  ],
+  2019: [
+    { rawLabel:'Κόστος πωλήσεων', normalizedCategory:'lump_football_operations_expense', amountNative:-5.233558, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.304293, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έξοδα και ζημίες', normalizedCategory:'other_expenses', amountNative:-0.038471, disclosureLevel:'aggregated' },
   ],
 };
 const atromitosgrFiscalYearMeta = {
@@ -32,6 +49,24 @@ const atromitosgrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:5.202798, officialTotalExpenses:5.703653, officialPAT:-0.501714,
   },
+  2019: {
+    currency:'EUR', fxRef:'EUR@2019-06-30',
+    sourceId:'atromitos-gr-fs-2019-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.135736, tax:0,
+    extraRows: [
+      {label:'Πιστωτικοί τόκοι και συναφή έσοδα', value:0.000001},
+      {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.135737},
+      {label:'Φόροι εισοδήματος', value:0},
+    ],
+    sinDesglose: [
+      {renglon:'Κόστος πωλήσεων', lado:'expense', importe:5.233558, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría \'Fútbol profesional (sin desglosar por la fuente)\'.'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:3.763073, officialTotalExpenses:5.576322, officialPAT:-1.948985,
+  },
 };
 const atromitosgrPresupuestoOverlayByYear = {};
 
@@ -51,6 +86,11 @@ Object.assign(sources, {
   'atromitos-gr-notes-2015-16': {
     id:'atromitos-gr-notes-2015-16', clubId:'atromitos-gr',
     title:'A.P.S. Atromitos Athinon 1923 P.A.E. — Atromitos_notes_2015-16 (ejercicio 2016)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'atromitos-gr-fs-2019-06-30': {
+    id:'atromitos-gr-fs-2019-06-30', clubId:'atromitos-gr',
+    title:'A.P.S. Atromitos Athinon 1923 P.A.E. — Atromitos_FS_2019-06-30 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
