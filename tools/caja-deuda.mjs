@@ -46,6 +46,9 @@
 //   node tools/caja-deuda.mjs --medir [--club <clubId>] [--detalle] [--escalas]                         MEDICIÓN sobre los años ya cargados (ver abajo)
 //   node tools/caja-deuda.mjs --medir --ia [--ejecutar]                                       ...con el escalón 2 (sin --ejecutar: ensayo; con: API)
 //   node tools/caja-deuda.mjs --medir --jev [--ejecutar]                                      ...con el escalón 1b, Jev (sin --ejecutar: ensayo con cota alta)
+//   node tools/caja-deuda.mjs --personal --medir [--ejecutar]                                 el dato "personal" (staffCost) contra Admin/mediciones/personal-verdad.tsv
+//   node tools/caja-deuda.mjs --personal --club <id> [--ejecutar] [--escribir]                completarlo en un club publicado
+//   node tools/caja-deuda.mjs --personal --ver-candidatos --club <id> --anio <AAAA>           las filas de total que recibiría Jev (gratis)
 //   node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]                       COMPLETAR un club ya publicado (ver abajo)
 //
 // --club (Versión 356, decisión de Guido 2026-10-01: "dos scripts"; caja y deuda NO van en el lote, se completan con el club ya en el sitio):
@@ -69,6 +72,7 @@ import * as EV from './evidencia-club.mjs';
 import { ajusteDe, ajusteClubODoc, ajustePerimetroDe } from './ajustes.mjs';
 import { normalizar, claveFamilia, CAJA_RE, DEUDA_FINANCIERA_RE, TITULO_BALANCE_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE, FLUJO_O_PATRIMONIO_RE, esTotal } from './vocabulario.mjs';
 import { archivosData, rutaData } from './data-clubes.js';
+import { cierrePorVecinos } from './cierre-vecinos.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const PAG_RE = /^---\s*pág\.\s*(\d+)\s*---/i;
@@ -958,8 +962,147 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
   } catch (err) { const rv = revertir(snap, evExtra); console.log(`NO se escribió: ${err.message} (se revirtió: ${rv.restaurados} restaurados)`); return { propuestas, error: err.message }; }
 }
 
+// ============================================================================
+// EL DATO "PERSONAL" (to-do 229 + 232 s, diseño aprobado por Guido el 2026-10-14): fiscalYearMeta.staffCost, el TOTAL del costo de personal
+// del ejercicio (sueldos + cargas sociales + otros beneficios). Interno (el sitio no lo muestra): lo usan cargar.mjs para separar los sueldos
+// de una fila global (229) y audit.js para avisar sueldos escondidos (232 s). Modo aparte (--personal), así caja y deuda no se tocan.
+//   CANDIDATOS  las filas de TOTAL (esTotal, de vocabulario.mjs, ya multilingüe) de TODAS las tablas de TODOS los documentos del club con
+//               el mismo cierre (Volos lo trae en Volos_notes, no en el estado), cada una con su tabla: el texto de arriba, el encabezado y
+//               las primeras filas. Sin reglas por idioma.
+//   ESCALÓN 1b  Jev elige UNA (opción cerrada, o "ninguna"). Sin IA cara: si no pasa, queda sin dato.
+//   COMPUERTA   la cifra impresa x la escala de su documento, distinta de 0, y un vecino que coincide: la fila que Jev eligió en el año
+//               SIGUIENTE trae este valor en su columna del año anterior, o staffCost ya cargado del año anterior es la columna del año
+//               anterior de esta fila. En contra, cualquiera de los dos. El año ANTERIOR por Jev solo suma a favor (puede reexpresar).
+//   Casos: Panetolikos 2022 "Σύνολο" de "Παροχές σε εργαζόμενους" 1.566.222,00 (L1470); Volos 2022 "Σύνολο κόστους μισθοδοσίας
+//   περιόδου" 2.262.043,33 (Volos_notes_2022). PAOK no tiene una fila total (Αμοιβές προσωπικού por cuadro de función): sin dato.
+// ============================================================================
+const CACHE_JEV_P = resolve(ROOT, 'Generados', '_cache', 'jev-personal.jsonl');
+function candidatosPersonal(md) {
+  const txt = readFileSync(resolve(ROOT, md), 'utf8'); const L = txt.split('\n');
+  const porLinea = new Map(filasDelMd(txt).map((f) => [f.linea, f]));
+  const celdas = (l) => l.trim().replace(/^\||\|$/g, '').split('|').map((c) => c.replace(/\*\*/g, '').trim());
+  const out = [];
+  for (let a = 0; a < L.length;) {
+    if (!L[a].trim().startsWith('|')) { a++; continue; }
+    let b = a; while (b < L.length && L[b].trim().startsWith('|')) b++;
+    const enc = celdas(L[a]).filter((c) => c && !/^:?-+:?$/.test(c) && /\p{L}/u.test(c)).join(' / ');
+    const arriba = []; for (let k = a - 1; k >= 0 && arriba.length < 2 && a - k < 6; k--) { const t = L[k].trim(); if (t && !t.startsWith('|') && !/^-+\s*p[aá]g/i.test(t) && !/^!\[/.test(t)) arriba.unshift(t.replace(/[#*>]/g, '').trim().slice(0, 160)); }
+    const primeras = []; for (let k = a; k < b && primeras.length < 3; k++) { const f = porLinea.get(k + 1); if (f && !esTotal(f.etiqueta)) primeras.push(String(f.etiqueta).slice(0, 50)); }
+    for (let k = a; k < b; k++) {
+      const f = porLinea.get(k + 1);
+      if (f && esTotal(f.etiqueta) && f.cifras.length) out.push({ md, linea: k + 1, etiqueta: f.etiqueta, cifras: f.cifras, contexto: [arriba.join(' '), enc && `encabezado: ${enc}`, primeras.length && `filas: ${primeras.join(' / ')}`].filter(Boolean).join(' · ').slice(0, 300) });
+    }
+    a = b;
+  }
+  return out;
+}
+async function jevPersonal(cands, ejecutar) {
+  if (!cands.length) return { error: 'sin filas de total' };
+  const cs = cands.slice(0, 150);
+  const criteria = { ...Object.fromEntries(cs.map((c, i) => [`c${i}`, `${c.md.split('/').pop()} L${c.linea}: ${String(c.etiqueta).slice(0, 80)} | ${c.cifras.slice(0, 2).join(' | ')} (${c.contexto})`])), ninguna: 'Ninguna de estas filas es el total del costo de personal del ejercicio' };
+  const body = { state: 'Filas de TOTAL de las tablas de los documentos contables de UN ejercicio de un club de fútbol, cada una con su tabla (texto de arriba, encabezado, primeras filas). Cifras: del ejercicio | del anterior.', model: 'jev-latest',
+    questions: { personal: { type: 'choice', instructions: '¿Cuál es el TOTAL del costo de personal del ejercicio: sueldos y salarios + cargas sociales + otros beneficios, de todo el personal (jugadores y empleados)? No es: una parte (solo cargas sociales, solo un sector), una provisión, una cantidad de empleados. Si ninguna fila lo es, elegí "ninguna".', criteria } } };
+  const r = await pedirJev(body, CACHE_JEV_P, ejecutar, (a) => (a.personal?.choice ? { eleccion: a.personal.choice, conf: a.personal.confidence } : null));
+  if (r.datos) { const i = /^c\d+$/.test(r.datos.eleccion) ? Number(r.datos.eleccion.slice(1)) : null; r.fila = i != null ? cs[i] : null; }
+  return r;
+}
+// El cierre de un documento: el de periodo.mjs o, si no lo leyó, el deducido de sus vecinos (cierre-vecinos.mjs, el mismo de cargar.mjs y
+// verificar.mjs): Volos_notes_2022 no trae la fecha legible y su total de personal está ahí.
+function cierreDeMd(md, reg) { const pdf = md.replace(/\.md$/i, '.pdf'); const e = reg.get(pdf); return e?.periodo?.cierre || cierrePorVecinos(pdf, [...reg.values()])?.cierre || null; }
+async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
+  const anios = aniosDe(d, S).filter((x) => x.md); const filasDe = filasCache();
+  const carpeta = (md) => md.split('/').slice(0, 3).join('/') + '/';
+  const porAnio = new Map(); let usd = 0; let ensayos = 0;
+  for (const a of anios) {
+    const cierre = cierreDeMd(a.md, reg);
+    const mds = [a.md, ...[...reg.values()].filter((e) => e.md && e.md !== a.md && e.pdf.startsWith(carpeta(a.md)) && cierre && cierreDeMd(e.md, reg) === cierre && existsSync(resolve(ROOT, e.md))).map((e) => e.md)];
+    const cands = mds.flatMap(candidatosPersonal);
+    const r = await jevPersonal(cands, ejecutar);
+    if (r.ensayo) { usd += r.usd; ensayos++; }
+    else usd += r.costo || 0;
+    const fila = r.fila || null;
+    const factor = fila ? (factorPorIngresos(filasDe(fila.md), d.revenueLinesByYear?.[a.anio], fila.md) ?? factorPorIngresos(filasDe(a.md), d.revenueLinesByYear?.[a.anio], a.md)) : null;
+    porAnio.set(a.anio, { a, fila, factor, jev: r, ndocs: mds.length, ncands: cands.length });
+  }
+  const res = [];
+  for (const [anio, x] of porAnio) {
+    const base = { clubId, anio, real: x.a.m.staffCost ?? null };
+    if (!x.fila) { res.push({ ...base, valor: null, como: x.jev.ensayo ? `ensayo Jev (~US$ ${x.jev.usd.toFixed(4)})` : x.jev.error || `Jev: ninguna (${x.ncands} filas de total en ${x.ndocs} doc.)` }); continue; }
+    if (!x.factor) { res.push({ ...base, valor: null, como: 'sin escala del documento' }); continue; }
+    const valor = r6(x.fila.cifras[0] * x.factor); const ant = x.fila.cifras.length > 1 ? r6(x.fila.cifras[1] * x.factor) : null;
+    const cita = `${x.fila.md.split('/').pop()} L${x.fila.linea} "${String(x.fila.etiqueta).slice(0, 50)}"`;
+    if (valor === 0) { res.push({ ...base, valor: null, como: `${cita}: suma 0` }); continue; }
+    const chequeos = [];
+    const sig = porAnio.get(String(Number(anio) + 1)); if (sig?.fila && sig.factor && sig.fila.cifras.length > 1) chequeos.push(['documento siguiente', coincide(r6(sig.fila.cifras[1] * sig.factor), valor)]);
+    const prevM = porAnio.get(String(Number(anio) - 1))?.a.m.staffCost; if (prevM != null && ant != null) chequeos.push(['año anterior', coincide(prevM, ant)]);
+    const antD = porAnio.get(String(Number(anio) - 1)); if (antD?.fila && antD.factor && ant != null && coincide(r6(antD.fila.cifras[0] * antD.factor), ant)) chequeos.push(['documento anterior', true]);
+    const malos = chequeos.filter((c) => !c[1]); const buenos = chequeos.filter((c) => c[1]);
+    if (malos.length || !buenos.length) { res.push({ ...base, valor: null, como: `${cita} (${valor}): ${malos.length ? `no coincide con ${malos.map((c) => c[0]).join(' ni ')}` : 'ningún vecino para comparar'}` }); continue; }
+    res.push({ ...base, valor, validacion: buenos[0][0], como: `Jev (confianza ${x.jev.datos?.conf ?? '?'}): ${cita}`, fila: x.fila });
+  }
+  return { res, usd, ensayos };
+}
+function registroDocs() {
+  const m = new Map();
+  for (const l of readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').split('\n')) { if (!l.trim()) continue; try { const e = JSON.parse(l); m.set(e.pdf, e); } catch { /* línea rota */ } }
+  return m;
+}
+// --personal --medir: contra la verdad conocida (Admin/mediciones/personal-verdad.tsv: clubId, año, valor en millones, de dónde sale).
+async function medirPersonal({ ejecutar = false, club = null }) {
+  const { G, S } = sitio(); const reg = registroDocs();
+  const verdad = readFileSync(resolve(ROOT, 'Admin', 'mediciones', 'personal-verdad.tsv'), 'utf8').split('\n').filter((l) => l.trim() && !l.startsWith('#')).map((l) => l.split('\t'));
+  const clubes = [...new Set(verdad.map((v) => v[0]))].filter((c) => !club || c === club);
+  let usd = 0; let ensayos = 0; const t = { iguales: 0, distintos: 0, sinDato: 0 };
+  for (const c of clubes) {
+    const r = await personalDelClub(c, G[c], S, { ejecutar, reg }); usd += r.usd; ensayos += r.ensayos;
+    for (const x of r.res) {
+      const v = verdad.find((y) => y[0] === c && y[1] === x.anio); if (!v) continue;
+      const real = Number(v[2]); const ok = x.valor != null && coincide(x.valor, real);
+      if (x.valor == null) t.sinDato++; else if (ok) t.iguales++; else t.distintos++;
+      console.log(`  ${c} ${x.anio}: ${x.valor ?? 'sin dato'} · verdad ${real} ${x.valor == null ? '' : ok ? 'IGUAL' : 'DISTINTO'} · ${x.como}`);
+    }
+  }
+  console.log(`\nPERSONAL: ${JSON.stringify(t)}${ensayos ? ` · JEV (ENSAYO): ${ensayos} pedido(s), ~US$ ${usd.toFixed(3)} (cota alta); agregá --ejecutar` : ` · Jev US$ ${usd.toFixed(4)}`}`);
+}
+// --personal --club <id> [--ejecutar] [--escribir]: completa staffCost donde el año no lo tiene (nunca pisa uno cargado).
+async function completarPersonal(clubId, { ejecutar = false, escribir = false }) {
+  const { G, S } = sitio(); const d = G[clubId]; if (!d) { console.log(`no existe ${clubId}`); return; }
+  const r = await personalDelClub(clubId, d, S, { ejecutar, reg: registroDocs() });
+  const nuevos = r.res.filter((x) => x.valor != null && x.real == null);
+  for (const x of r.res) console.log(`  ${x.anio} personal: ${x.valor ?? 'null'}${x.real != null ? ` (ya cargado: ${x.real})` : ''}  (${x.validacion ? `compuerta: ${x.validacion}; ` : ''}${x.como})`);
+  console.log(`\n${clubId}: ${nuevos.length} dato(s) para completar.${r.ensayos ? ` Jev en ensayo: ~US$ ${r.usd.toFixed(3)}; agregá --ejecutar.` : ''}`);
+  if (!escribir || !nuevos.length) return;
+  const { snapshot, revertir, publicarCambios } = await import('./cargar.mjs');
+  const dataRel = rutaData(clubId); const dataPath = resolve(ROOT, dataRel); const evRel = EV.rutaRel(clubId);
+  const snap = snapshot([evRel]); const escritos = [dataRel, evRel];
+  try {
+    let t = readFileSync(dataPath, 'utf8'); let ev = EV.leer(clubId);
+    const abreObj = t.indexOf('FiscalYearMeta = {'); const cierraObj = cierreDe(t, t.indexOf('{', abreObj));
+    for (const x of nuevos) {
+      const m = new RegExp(`\\n(\\s*)['"]?${x.anio}['"]?\\s*:\\s*\\{`).exec(t.slice(abreObj, cierraObj)); if (!m) throw new Error(`no encontré el año ${x.anio}`);
+      const abre = abreObj + m.index + m[0].length - 1; const cierra = cierreDe(t, abre); let bloque = t.slice(abre, cierra);
+      if (/\bstaffCost\s*:/.test(bloque)) continue;
+      if (!/\bcash\s*:\s*[^,\n]+,/.test(bloque)) throw new Error(`${x.anio}: no encontré cash: para poner staffCost al lado`);
+      bloque = bloque.replace(/(\bcash\s*:\s*[^,\n]+,)/, `$1 staffCost:${r6(x.valor)},`);
+      ev = EV.agregarTexto(ev, x.anio, 'Meta', [`tools/caja-deuda.mjs --personal (${HOY}): staffCost ${r6(x.valor)} (compuerta: ${x.validacion}): ${x.como}`]);
+      t = t.slice(0, abre) + bloque + t.slice(cierra);
+    }
+    writeFileSync(dataPath, t); EV.guardar(clubId, ev);
+    const pr = publicarCambios(snap, [evRel], escritos);
+    console.log(pr.ok ? `Escrito: ${pr.escritos.join(', ')} · ${pr.audit}` : `NO se escribió: ${pr.motivo}`);
+  } catch (err) { const rv = revertir(snap, [evRel]); console.log(`NO se escribió: ${err.message} (se revirtió: ${rv.restaurados} restaurados)`); }
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
+  if (A.includes('--personal') && A.includes('--ver-candidatos')) { // lo que recibiría Jev para un año, sin llamarlo
+    const { G, S } = sitio(); const reg = registroDocs(); const a = aniosDe(G[flag('--club')], S).find((x) => x.anio === flag('--anio'));
+    const cierre = cierreDeMd(a.md, reg); const car = a.md.split('/').slice(0, 3).join('/') + '/';
+    const mds = [a.md, ...[...reg.values()].filter((e) => e.md && e.md !== a.md && e.pdf.startsWith(car) && cierre && cierreDeMd(e.md, reg) === cierre && existsSync(resolve(ROOT, e.md))).map((e) => e.md)];
+    for (const c of mds.flatMap(candidatosPersonal)) console.log(`${c.md.split('/').pop()} L${c.linea}: ${String(c.etiqueta).slice(0, 60)} | ${c.cifras.slice(0, 2).join(' | ')}  (${c.contexto.slice(0, 120)})`);
+    process.exit(0);
+  }
+  if (A.includes('--personal')) { if (A.includes('--medir')) await medirPersonal({ ejecutar: A.includes('--ejecutar'), club: flag('--club') }); else if (flag('--club')) await completarPersonal(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir') }); process.exit(0); }
   if (A.includes('--medir')) { await medir({ club: flag('--club'), detalle: A.includes('--detalle'), ia: A.includes('--ia'), jev: A.includes('--jev'), escalas: A.includes('--escalas'), ejecutar: A.includes('--ejecutar') }); process.exit(0); }
   if (flag('--club')) { const r = await completarClub(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir') }); process.exit(r.error ? 1 : 0); }
   console.error('Uso: node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]  |  --medir [--club x] [--ia [--ejecutar]] [--detalle]'); process.exit(1);
