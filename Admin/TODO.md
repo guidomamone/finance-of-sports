@@ -98,10 +98,6 @@ ni en el comentario de ningún archivo de código.
        Hoy el perímetro en `caja-deuda.mjs` es POR PÁGINA (L331, "PERÍMETRO DE CADA PÁGINA DEL BALANCE"), no por columna. Medir con
        `node tools/caja-deuda.mjs --medir` (todos los clubes: tiene que dar idéntico; la base del 2026-10-14 es caja 132 iguales / 3
        distintos, deuda 50 / 7) y con los 10 ajustes `caja` de Olympiacos como respuesta esperada.
-    x) AEK 2024 (lote 73): `caja-deuda.mjs` escalón 0 leyó la caja como 0,000007 en
-       "| Ταμειακά διαθέσιμα και ισοδύναμα | 6.9 | 6.320.395 | 7.725.899 |" (L430): la nota "6.9" de un solo nivel, que la lectura B
-       tendría que sacar. Se cargó con un ajuste `caja`. Ver por qué la lectura B no entró en esta fila.
-       Código: `caja-deuda.mjs` `columnasConFormaDeNota` (L146) y la lectura B en `filasDelMd`; medir con `--medir --club aekathens-gr --detalle`.
     z) "Diferencia de redondeo" DENTRO de una nota se pierde: `verificar.mjs` (L1049) la agrega como hoja sin página y sin categoría, y
        `cargar.mjs` la deja como "sin categoría" (aviso, no se carga). AEK 2024: tres filas de 1 euro (Κόστος πωλήσεων, Αμοιβές
        ποδοσφαιρικού, Απομείωση παγίων). Conocido, sin daño hoy (el tie-out tolera la unidad); el redondeo de los TOTALES sí se carga

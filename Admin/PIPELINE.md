@@ -625,7 +625,8 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [-
                    (AEK 2018 "| Ταμειακά διαθέσιμα | 6.8 | 1.650.369,92 |" daba caja 6,8). Lo que ese detector no reconoce (AEK 2019,
                    notas sin orden) lo resuelven las DOS LECTURAS (to-do 223): cada propuesta se evalúa con la fila de siempre y sin la
                    celda en una columna con forma de nota, con los vecinos leídos igual; decide la compuerta (una sola pasa → esa; las dos
-                   con valores distintos → no decide). (to-do 232 v) Una celda que no puede ser importe en ningún formato tampoco es
+                   con valores distintos → no decide). La columna con forma de nota se juzga sin el encabezado del bloque (to-do 232 x:
+                   AEK 2025 transcribió "σημ." como "Α/Υ" y la columna dejaba de reconocerse). (to-do 232 v) Una celda que no puede ser importe en ningún formato tampoco es
                    cifra: entero con punto final ("24.") o dos o más puntos con grupos de menos de 3 cifras ("7.1.3"); Grecia: Olympiacos
                    2017 "| Ταμειακά διαθέσιμα | 24. | 1.820.725,55 |", Aris 2019 "| ... | 7.1.3 | 420.500,00 |"
  PÁGINAS DEL BALANCE  título o total del balance, y no el flujo de efectivo ni los cambios en el patrimonio (una FILA con esas palabras

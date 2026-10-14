@@ -154,7 +154,12 @@ function columnasConFormaDeNota(L) {
     const col = rs.map((r) => { const iEt = r.findIndex((c) => /\p{L}{3,}/u.test(c)); if (iEt < 0) return null; const k = r.findIndex((c, j) => j > iEt && /\d/.test(c) && !/\p{L}{2,}/u.test(c)); return k < 0 ? null : k; }).filter((k) => k != null);
     const freq = new Map(); for (const k of col) freq.set(k, (freq.get(k) || 0) + 1);
     const c = freq.size ? [...freq].sort((x, y) => y[1] - x[1])[0][0] : null;
-    const vs = c == null ? [] : rs.map((r) => (r[c] || '').trim()).filter((v) => v && v !== '-' && !/^:?-{2,}:?$/.test(v) && !/\p{L}{2,}/u.test(v));
+    // (to-do 232 x) el ENCABEZADO del bloque (las filas antes del primer separador "| --- |") es un título de columna, nunca una nota: no
+    // cuenta para la compuerta. Caso: AEK 2025 (AEK_NOTES_IFRS_2025-06-30_a.md L412) transcribió el título "σημ." como "Α/Υ" (letras
+    // separadas por la barra), que no tiene forma de nota; la columna dejaba de reconocerse, la caja se leía 6,9 EUR (la nota "6.9") y
+    // 2024 quedaba sin dato porque su documento siguiente no confirmaba la lectura sin la nota.
+    const sep = rs.findIndex((r) => r.every((x) => !x || /^:?-{2,}:?$/.test(x)));
+    const vs = c == null ? [] : rs.filter((_, q) => q > sep).map((r) => (r[c] || '').trim()).filter((v) => v && v !== '-' && !/^:?-{2,}:?$/.test(v) && !/\p{L}{2,}/u.test(v));
     const ok = vs.length >= 2 && vs.every((v) => NOTA.test(v)) && vs.some((v) => v.includes('.'));
     for (let k = a; k < b; k++) res.set(k, ok ? c : null);
     a = b;
