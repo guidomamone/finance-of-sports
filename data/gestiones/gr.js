@@ -63,4 +63,8 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Ivan Savvidis', corto:'Savvidis', cargo:'Presidente', desde:'2012-08-10', hasta:null,
       fuente:'https://en.wikipedia.org/wiki/Ivan_Savvidis', confirmada:true },
   ],
+  'olympiacos-gr': [
+    { nombre:'Evangelos Marinakis', corto:'Marinakis', cargo:'Presidente', desde:'2010-06-01', hasta:null,
+      fuente:'https://el.wikipedia.org/wiki/Ευάγγελος_Μαρινάκης', confirmada:true },
+  ],
 });
