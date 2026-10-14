@@ -190,7 +190,10 @@ ni en el comentario de ningún archivo de código.
     los sueldos y la nota de personal sí ("Σύνολο κόστους μισθοδοσίας περιόδου"): Volos 2021-2025 los tenía dentro de admin_general_expense
     (corregidos con ajustes `fila` y `categoria`). Medido el 2026-10-13: ningún otro año cargado está así (`audit.js` no marca `sin-salarios`
     fuera de Novorizontino 2010, que es un cero real). Se diseña el escalón cuando aparezcan casos reales: después del lote 71 (Aris,
-    Atromitos, PAOK, Panetolikos tienen estado por función), mirar `sin-salarios` en `node tools/audit.js`.
+    Atromitos, PAOK, Panetolikos tienen estado por función), mirar `sin-salarios` en `node tools/audit.js`. CASO REAL (lote 71, 2026-10-14):
+    Panetolikos 2017-2025 tiene los sueldos dentro de "Κόστος πωλήσεων" (`lump_football_operations_expense`), así que `sin-salarios` no lo
+    marca, pero la nota de personal da el total de cada año ("Σύνολο", Παροχές σε εργαζόμενους): 2022 1.566.222,00 (L1470), 2023
+    1.716.651,78 (L1159), 2024 1.850.317,43 (L1073), 2025 1.959.575,41 (L1086), 2021 1.288.534,97 (L1436). Ya se puede diseñar el escalón.
 
 230. AHORRAR EN LAS ETAPAS 3 A 5 (pedido de Guido, 2026-10-14: el lote 71 de Grecia estima ~US$ 17 para localizar y extraer 45 documentos).
     Mirar dónde se va la plata (`node tools/gasto.mjs` y `Admin/registros/api/claude-api.jsonl` por tarea y por documento: localizar,

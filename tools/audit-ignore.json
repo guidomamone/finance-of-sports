@@ -784,5 +784,35 @@
   "code": "sin-salarios",
   "match": "novorizontino-br 2010: no hay ni una línea en 'wages_squad'",
   "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): año de fundación, sin plantel profesional; la Demonstração do Resultado (Clubes/Brasil/Novorizontino/balanco-2010.md L10-15) tiene 4 renglones de gasto y ninguno de personal. Ajuste manual cero-real 'Salarios del plantel' de Guido (Admin/registros/ajustes-manuales.jsonl, balanco-2010.pdf)."
+ },
+ {
+  "code": "signo-invertido",
+  "match": "olympiacos-gr 2021 ingreso",
+  "motivo": "VERIFICADO contra la fuente (Claude 2026-10-14, decisión de Guido en la cola del lote 71): desde 2021 (NIIF) el estado de Olympiacos imprime solo el neto de la venta de jugadores (\"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\") y la nota lo abre en venta bruta menos estos costos; van como player_sales negativo (ajustes categoria en Admin/registros/ajustes-manuales.jsonl). 2016-2020 el estado imprime bruto y quedan como gasto."
+ },
+ {
+  "code": "signo-invertido",
+  "match": "olympiacos-gr 2022 ingreso",
+  "motivo": "VERIFICADO contra la fuente (Claude 2026-10-14, decisión de Guido en la cola del lote 71): desde 2021 (NIIF) el estado de Olympiacos imprime solo el neto de la venta de jugadores (\"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\") y la nota lo abre en venta bruta menos estos costos; van como player_sales negativo (ajustes categoria en Admin/registros/ajustes-manuales.jsonl). 2016-2020 el estado imprime bruto y quedan como gasto."
+ },
+ {
+  "code": "signo-invertido",
+  "match": "olympiacos-gr 2023 ingreso",
+  "motivo": "VERIFICADO contra la fuente (Claude 2026-10-14, decisión de Guido en la cola del lote 71): desde 2021 (NIIF) el estado de Olympiacos imprime solo el neto de la venta de jugadores (\"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\") y la nota lo abre en venta bruta menos estos costos; van como player_sales negativo (ajustes categoria en Admin/registros/ajustes-manuales.jsonl). 2016-2020 el estado imprime bruto y quedan como gasto."
+ },
+ {
+  "code": "signo-invertido",
+  "match": "olympiacos-gr 2024 ingreso",
+  "motivo": "VERIFICADO contra la fuente (Claude 2026-10-14, decisión de Guido en la cola del lote 71): desde 2021 (NIIF) el estado de Olympiacos imprime solo el neto de la venta de jugadores (\"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\") y la nota lo abre en venta bruta menos estos costos; van como player_sales negativo (ajustes categoria en Admin/registros/ajustes-manuales.jsonl). 2016-2020 el estado imprime bruto y quedan como gasto."
+ },
+ {
+  "code": "signo-invertido",
+  "match": "olympiacos-gr 2025 ingreso",
+  "motivo": "VERIFICADO contra la fuente (Claude 2026-10-14, decisión de Guido en la cola del lote 71): desde 2021 (NIIF) el estado de Olympiacos imprime solo el neto de la venta de jugadores (\"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\") y la nota lo abre en venta bruta menos estos costos; van como player_sales negativo (ajustes categoria en Admin/registros/ajustes-manuales.jsonl). 2016-2020 el estado imprime bruto y quedan como gasto."
+ },
+ {
+  "code": "salto-interanual",
+  "match": "kifisia-gr: revenue salta de",
+  "motivo": "VERIFICADO contra la fuente (Claude 2026-10-14): Kifisia subió a la Super League en 2023-24; Kifisia_notes_2024-06-30.md L1006-L1012: TV 1.362.068,97 y subsidio de ΠΑΜΕ ΣΤΟΙΧΗΜΑ 1.502.820,00 (en 2022-23, en la Super League 2, eran 42.500 y 185.802,21: Kifisia_notes_2023-06-30.md L1004, L1007). El salto es real."
  }
 ]
