@@ -25,6 +25,13 @@ const panetolikosgrRevenueLinesByYear = {
     { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:2.674408, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.083695, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Έσοδα από εισιτήρια', normalizedCategory:'matchday_competition', amountNative:0.300214, disclosureLevel:'aggregated' },
+    { rawLabel:'Έσοδα από μεταγραφές', normalizedCategory:'player_sales', amountNative:0.1425, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έσοδα', normalizedCategory:'other_income', amountNative:0.001698, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:4.254506, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.052396, disclosureLevel:'aggregated' },
+  ],
 };
 const panetolikosgrExpenseLinesByYear = {
   2017: [
@@ -56,6 +63,15 @@ const panetolikosgrExpenseLinesByYear = {
     { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.451573, disclosureLevel:'aggregated' },
     { rawLabel:'Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-0.092175, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.314804, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Κόστος πωλήσεων', normalizedCategory:'lump_football_operations_expense', amountNative:-6.807271, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.570216, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-0.088709, disclosureLevel:'aggregated' },
+    { rawLabel:'Παροχές τρίτων', normalizedCategory:'admin_general_expense', amountNative:-0.018375, disclosureLevel:'aggregated' },
+    { rawLabel:'Φόροι και τέλη', normalizedCategory:'admin_general_expense', amountNative:-0.0008, disclosureLevel:'aggregated' },
+    { rawLabel:'Διάφορα έξοδα', normalizedCategory:'other_expenses', amountNative:-0.046825, disclosureLevel:'aggregated' },
+    { rawLabel:'Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις', normalizedCategory:'other_expenses', amountNative:-0.089651, disclosureLevel:'aggregated' },
   ],
 };
 const panetolikosgrFiscalYearMeta = {
@@ -154,6 +170,25 @@ const panetolikosgrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:2.982884, officialTotalExpenses:6.039569, officialPAT:-3.077233,
   },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'panetolikos-gr-fs-2023-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.005245, tax:0,
+    extraRows: [
+      {label:'Πιστωτικοί τόκοι και συναφή έσοδα', value:0.006931},
+      {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.012176},
+      {label:'Φόροι εισοδήματος', value:0},
+    ],
+    incluidoEn:{"broadcasting":{"en":"other_income","posible":true}},
+    sinDesglose: [
+      {renglon:'Κόστος πωλήσεων', lado:'expense', importe:6.807271, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.716.651,78 € (L1159) de sueldos totales, repartidos sin dato entre las líneas por función. [Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md L548 (pág. 17) "Κόστος πωλήσεων | -6.807.271,34". Nota de personal: L1152-1159, "Σύνολο" 1.716.651,78]'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:4.751314, officialTotalExpenses:7.621847, officialPAT:-2.875778,
+  },
 };
 const panetolikosgrPresupuestoOverlayByYear = {};
 
@@ -193,6 +228,11 @@ Object.assign(sources, {
   'panetolikos-gr-fs-2022-06-30': {
     id:'panetolikos-gr-fs-2022-06-30', clubId:'panetolikos-gr',
     title:'Panaitolikos G.F.S. P.A.E. — Panetolikos_FS_2022-06-30 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'panetolikos-gr-fs-2023-06-30': {
+    id:'panetolikos-gr-fs-2023-06-30', clubId:'panetolikos-gr',
+    title:'Panaitolikos G.F.S. P.A.E. — Panetolikos_FS_2023-06-30 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

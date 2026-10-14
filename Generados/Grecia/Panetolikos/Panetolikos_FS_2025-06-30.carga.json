@@ -1,15 +1,7 @@
 {
  "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.pdf",
- "generado": "2026-10-14T06:03:22.718Z",
+ "generado": "2026-10-14T06:12:03.768Z",
  "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (panetolikos-gr)"
-  },
-  {
-   "etapa": "club",
-   "motivo": "carpetas-clubes.mjs dice panetolikos-gr y quien.mjs --quien dice panetolikos"
-  },
   {
    "etapa": "reintento",
    "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
@@ -471,7 +463,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 4,
   "lineasGasto": 6,
   "metaFilas": 3,

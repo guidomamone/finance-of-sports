@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.pdf",
  "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md",
- "generado": "2026-10-14T05:54:38.129Z",
+ "generado": "2026-10-14T06:15:24.470Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "panetolikos-gr",
  "year": 2023,
  "escala": {
   "valor": "unidades",
@@ -11,7 +11,20 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "Claude 2026-10-14 (lote 75 resuelto sin API, pedido de Guido): el documento no abre 'Λοιπά συνήθη έσοδα' (L96 del informe de gestión solo da el total); los derechos de TV están adentro, junto con otros ingresos. Misma categoría que 2017-2022 ya cargados (other_income)",
+   "evidencia": "Panetolikos_FS_2023-06-30.md, estado de resultados (Λοιπά συνήθη έσοδα) y nota 9 (Κύκλος εργασιών sin TV)",
+   "autor": "Claude",
+   "fecha": "2026-10-14"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -31,6 +44,11 @@
    "dif": 8.881784197001252e-16
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 2.982884; el sitio tiene 2.982884"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": true,
    "detalle": "ingresos de 2023: 4.751314 en este documento y 4.751314 en Panetolikos_FS_2024-06-30.pdf (columna del año anterior)"
@@ -39,11 +57,6 @@
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2022: 2.982884 en Panetolikos_FS_2022-06-30.pdf y 2.982884 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
   }
  ],
  "notas": [],

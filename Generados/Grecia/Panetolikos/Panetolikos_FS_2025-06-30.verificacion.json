@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.pdf",
  "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md",
- "generado": "2026-10-14T05:54:38.159Z",
+ "generado": "2026-10-14T06:15:26.208Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "panetolikos-gr",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -11,7 +11,20 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "Claude 2026-10-14 (lote 75 resuelto sin API, pedido de Guido): el documento no abre 'Λοιπά συνήθη έσοδα' (L96 del informe de gestión solo da el total); los derechos de TV están adentro, junto con otros ingresos. Misma categoría que 2017-2022 ya cargados (other_income)",
+   "evidencia": "Panetolikos_FS_2025-06-30.md, estado de resultados (Λοιπά συνήθη έσοδα) y nota 9 (Κύκλος εργασιών sin TV)",
+   "autor": "Claude",
+   "fecha": "2026-10-14"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -38,11 +51,11 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [
-  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Panetolikos_FS_2025-06-30.pdf"
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en Panetolikos_FS_2025-06-30.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
