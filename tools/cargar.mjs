@@ -658,6 +658,14 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     else if (ceros.length) P.avisos.push(`categorías en 0 aun después del reintento (se carga así): ${ceros.map((c) => c.categoria).join(', ')}`);
   }
   const suma = (arr) => arr.reduce((a, x) => a + Math.abs(x.native || 0), 0);
+  // UNA FILA QUE NADIE MIRÓ (to-do 232 x(1)). Una fila sin categoría aceptable que pesa menos del tope (MAX_SIN_CAT) es aviso y no se carga.
+  // Eso vale para una fila que la categorización MIRÓ y no decidió; no para una que nunca vio: AEK 2024, la verificación abrió las entradas en
+  // su nota ("Έσοδα από διεθνείς διοργανώσεις", 1,87 M, pág. 41) después de la etapa 5, el .categorias.json era del día anterior, y la fila
+  // se cayó con un aviso (3,2% de los ingresos); solo frenó el tie-out del resultado, sin decir qué fila faltaba. Escalón antes del tope,
+  // con UNA compuerta: la fila está impresa en el documento (tiene página), no está en el .categorias.json y nada le dio categoría
+  // (precedente, cola, ajuste) -> frena con su nombre. Las "Diferencia de redondeo" de una nota (verificar.mjs, sin página) no entran.
+  const nuncaVistas = filas.filter((f) => f.destino === 'sin-categoria' && !f.enLista && !f.cat && f.page != null);
+  if (nuncaVistas.length) frena('categorizacion', `${nuncaVistas.length} fila(s) impresa(s) que no están en el .categorias.json (la verificación las abrió después de categorizar): ${nuncaVistas.slice(0, 4).map((f) => `"${f.label.slice(0, 50)}" ${r6(f.native)} (pág. ${f.page})`).join('; ')}. Volver a correr la etapa 5 o categorizarlas en la cola (node tools/cola.mjs --corregir-categoria)`);
   for (const side of ['revenue', 'expense']) {
     const delLado = filas.filter((f) => f.destino === side || ((f.destino === 'sin-categoria' || f.destino === 'confianza-baja') && (f.ladoDoc || ladoDeCat(f.cat) || 'revenue') === side));
     const sin = delLado.filter((f) => f.destino !== side);

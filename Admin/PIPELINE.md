@@ -450,6 +450,8 @@ Mitigaciones:
  PRESIDENTES      (Versión 552) data/gestiones/<país>.js tiene una gestión confirmada que cubre el cierre ─► si no, caso `gestion` en la
                   cola (no frena; lo contesta el subagente con nombre, desde, hasta y fuente; trae como pista el firmante del .md) ─►
                   "descartar" = club sin presidente persona (SAF, sociedad anónima), no se vuelve a preguntar
+ SIN CATEGORÍA    fila impresa (con página) que no está en el .categorias.json y nada categorizó ─► frena con su nombre (to-do 232 x;
+                  AEK 2024) ─► las demás sin categoría aceptable: más del 5% del dinero del lado frena, menos es aviso y no se cargan
  CATEGORÍAS EN 0  ajuste `cero-real` ─► salarios / TV / estadio, o socios / otros deportes según el perfil ─► reintento (una vez) ─► aviso
  LO QUE CERRÓ EN LA ETAPA 6 (Versiones 375-378): financiero e impuesto con el signo con que cerró; una fila verificada con lado no se mueve
                   por palabras ni se excluye sola por "no es rubro" dudoso
