@@ -85,6 +85,71 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-13): gr-superleague, verificado contra roster cacheado de "2024–25 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "AEK Athens".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/AEK Athens/AEK_FS_2024-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/AEK Athens/AEK_FS_2024-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Έσοδα εισιτηρίων εγχώριων διοργανώσεων | pág. 41, precedente |
+| 2 | Έσοδα από διεθνείς διοργανώσεις | pág. 41, precedente |
+| 3 | Έσοδα από πωλήσεις εισιτηρίων διαρκείας | pág. 41, precedente |
+| 4 | Χορηγίες και διαφημίσεις | pág. 14, Jev 1 |
+| 5 | Δικαιώματα αναμετάδοσης | pág. 14, Jev 1 |
+| 6 | Εμπορικά | pág. 14, Jev 1 |
+| 7 | Αλληλεγγύη UEFA και χρηματικά έπαθλα | pág. 14, Jev 0.98 |
+| 8 | Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση | pág. 14, precedente |
+| 9 | Λοιπά λειτουργικά έσοδα | pág. 14, Jev 0.99 |
+| 10 | Κέρδος/ζημία από πώληση άυλων περιουσιακών στοιχείων - ποδοσφαιριστές | pág. 14, Claude 0.8 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ανάλωση αθλητικού υλικού | pág. 41, precedente |
+| 2 | Έξοδα φαρμακείου αθλητών | pág. 41, precedente |
+| 3 | Μισθοδοσία | pág. 42, precedente |
+| 4 | Αποσβέσεις συμβολαίων ποδοσφαιριστών | pág. 42, precedente |
+| 5 | Απομείωση και απόσβεση | pág. 14, precedente |
+| 6 | Αποσβέσεις ιδιοχρησιμοποιούμενων κτιρίων | pág. 42, precedente |
+| 7 | Αποσβέσεις μεταφορικών μεσών | pág. 42, precedente |
+| 8 | Αποσβέσεις επιπλών & λοιπού εξοπλισμού | pág. 42, precedente |
+| 9 | Αποσβέσεις λογισμικού | pág. 42, precedente |
+| 10 | Αποσβέσεις δικαιωμάτων χρήσης στοιχείων ενεργητικού | pág. 42, precedente |
+| 11 | Έξοδα αγώνων | pág. 42, precedente |
+| 12 | Αμοιβές τρίτων | pág. 42, precedente |
+| 13 | Τηλεπικοινωνίες | pág. 42, precedente |
+| 14 | Μισθώματα | pág. 42, precedente |
+| 15 | Ασφάλιστρα | pág. 42, precedente |
+| 16 | Επισκευές & συντηρήσεις | pág. 42, precedente |
+| 17 | Διάφοροι φοροι-τελή | pág. 42, precedente |
+| 18 | Έξοδα μετακινήσεων | pág. 42, precedente |
+| 19 | Διαφημίσεις και εκδηλώσεις | pág. 42, precedente |
+| 20 | Συνδρομές | pág. 42, precedente |
+| 21 | Δωρεές - επιχορηγήσεις | pág. 42, precedente |
+| 22 | Διάφορα έξοδα | pág. 42, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-14): Claude 2026-10-14 (AEK 2024 con tokens de sesión): el balance L430 da 6.320.395 (y 7.725.899 el año anterior, igual al 2023 cargado); el flujo de efectivo L546 confirma 6.320.395. caja-deuda.mjs escalón 0 leía 0,000007 (to-do 232 x)
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2023–24 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "AEK Athens".
+```
+
 ## 2023
 
 ### Ingresos
@@ -623,4 +688,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-13) desde la transcripción Clubes/Grecia/AEK Athens/AEK_Notes_IFRS_2021-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aekathens-gr-aek-fs-2024-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/AEK Athens/AEK_FS_2024-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

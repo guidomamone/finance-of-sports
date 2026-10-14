@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Grecia/AEK Athens/AEK_FS_2024-06-30.pdf",
  "md": "Clubes/Grecia/AEK Athens/AEK_FS_2024-06-30.md",
- "generado": "2026-10-13T16:59:59.057Z",
+ "generado": "2026-10-14T12:49:36.479Z",
  "estado": "ok",
  "clubId": "aekathens-gr",
  "year": 2024,
@@ -36,6 +36,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 38.985157; el sitio tiene 38.985157"
+  },
+  {
    "nombre": "documento del año 2025",
    "ok": true,
    "detalle": "ingresos de 2024: 58.768559 en este documento y 58.768559 en AEK_NOTES_IFRS_2025-06-30_a.pdf (columna del año anterior)"
@@ -44,15 +49,13 @@
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 38.985157 en AEK_FS_2023-06-30.pdf y 38.985157 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "escalón \"nota exacta en la lectura 5\": \"Έσοδα από εισιτήρια\" (L467) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Κόστος πωλήσεων / υλικών\" (L475) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\" (L476) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Απομείωση παγίων περιουσιακών στοιχείων\" (L478) se abre en las 6 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 5\": \"Λοιπά λειτουργικά έξοδα\" (L479) se abre en las 12 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"Μισθοδοσία\"): aceptar, en AEK_oikonomikes_katastaseis.pdf",
@@ -153,20 +156,50 @@
    "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Κόστος πωλήσεων / υλικών",
+   "etiqueta": "Ανάλωση αθλητικού υλικού",
    "lado": "gasto",
-   "M": 0.218712,
-   "pagina": 14,
-   "linea": 475,
-   "origen": "estado (lectura 5: hoja)"
+   "M": 0.175752,
+   "pagina": 41,
+   "linea": 1438,
+   "origen": "nota que desglosa \"Κόστος πωλήσεων / υλικών\""
   },
   {
-   "etiqueta": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
+   "etiqueta": "Έξοδα φαρμακείου αθλητών",
    "lado": "gasto",
-   "M": 35.77883,
-   "pagina": 14,
+   "M": 0.042961,
+   "pagina": 41,
+   "linea": 1439,
+   "origen": "nota que desglosa \"Κόστος πωλήσεων / υλικών\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "gasto",
+   "M": -0.000001,
+   "linea": 475,
+   "origen": "nota que desglosa \"Κόστος πωλήσεων / υλικών\""
+  },
+  {
+   "etiqueta": "Μισθοδοσία",
+   "lado": "gasto",
+   "M": 16.703249,
+   "pagina": 42,
+   "linea": 1454,
+   "origen": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\""
+  },
+  {
+   "etiqueta": "Αποσβέσεις συμβολαίων ποδοσφαιριστών",
+   "lado": "gasto",
+   "M": 19.07558,
+   "pagina": 42,
+   "linea": 1455,
+   "origen": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "gasto",
+   "M": 0.000001,
    "linea": 476,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\""
   },
   {
    "etiqueta": "Απομείωση και απόσβεση",
@@ -177,12 +210,51 @@
    "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Απομείωση παγίων περιουσιακών στοιχείων",
+   "etiqueta": "Αποσβέσεις ιδιοχρησιμοποιούμενων κτιρίων",
    "lado": "gasto",
-   "M": 1.548923,
-   "pagina": 14,
+   "M": 0.033769,
+   "pagina": 42,
+   "linea": 1468,
+   "origen": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\""
+  },
+  {
+   "etiqueta": "Αποσβέσεις μεταφορικών μεσών",
+   "lado": "gasto",
+   "M": 0.028285,
+   "pagina": 42,
+   "linea": 1469,
+   "origen": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\""
+  },
+  {
+   "etiqueta": "Αποσβέσεις επιπλών & λοιπού εξοπλισμού",
+   "lado": "gasto",
+   "M": 0.093809,
+   "pagina": 42,
+   "linea": 1470,
+   "origen": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\""
+  },
+  {
+   "etiqueta": "Αποσβέσεις λογισμικού",
+   "lado": "gasto",
+   "M": 0.003887,
+   "pagina": 42,
+   "linea": 1471,
+   "origen": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\""
+  },
+  {
+   "etiqueta": "Αποσβέσεις δικαιωμάτων χρήσης στοιχείων ενεργητικού",
+   "lado": "gasto",
+   "M": 1.389172,
+   "pagina": 42,
+   "linea": 1472,
+   "origen": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "gasto",
+   "M": 0.000001,
    "linea": 478,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\""
   },
   {
    "etiqueta": "Έξοδα αγώνων",

@@ -43,10 +43,6 @@ ni en el comentario de ningún archivo de código.
       5. Con los años cargados: caja y deuda (`node tools/caja-deuda.mjs --club <id>` ensayo; `--ejecutar --escribir` lo corre Guido),
          `node tools/audit.js` (mirar `sin-salarios`: Panetolikos tiene sueldos dentro de tres líneas por función, ver to-do 229) y
          `node tools/perimetro-senales.mjs --auditar-a2 <carpeta>` (to-do 227 hecho: revisar con un subagente lo que decidió A2 en Aris).
-      6. AEK 2024 (`Admin/lotes/lote-73.txt`): sigue sin cargar. Su `Generados/Grecia/AEK Athens/AEK_FS_2024-06-30.verificacion.json` quedó
-         modificado sin commitear desde la sesión del 2026-10-13 (re-verificación con la lectura nueva de verificar.mjs: la nota exacta y la
-         'Diferencia de redondeo' de 1 euro). Correr `caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-73.txt --ejecutar --cargar`
-         (etapa 7 para las filas nuevas de sus notas), contestar la cola y commitear ese .json con el resultado.
       7. Archivar `lote-71.txt`, `lote-73.txt` y `lote-74.txt` en `Admin/Archive/lotes/` y pasar a la letra b) del to-do 165.
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
@@ -97,6 +93,12 @@ ni en el comentario de ningún archivo de código.
        documento vecino tiene la misma estructura. Se corrigió con ajustes `caja` de la columna Εταιρεία (los 10 años). Escalón: cuando el
        encabezado de la tabla nombra los dos perímetros (Όμιλος / Εταιρεία, Group / Company, Consolidado / Individual), leer las columnas
        del perímetro del club (el mismo criterio que usa localizar para el estado de resultados). La deuda de Olympiacos sigue vacía.
+    x) AEK 2024 (lote 73), dos cosas que salieron cargándolo a mano: (1) `cargar.mjs` dejó AFUERA EN SILENCIO una fila sin categoría
+       ("Έσοδα από διεθνείς διοργανώσεις", 1.872.488, L1428: la verificación nueva abrió las entradas en su nota y el `.categorias.json` era
+       del día anterior); el único aviso fue el tie-out del resultado. Una fila verificada sin categoría tiene que frenar con su nombre (o
+       marcar el `.categorias.json` como desactualizado), no desaparecer. (2) `caja-deuda.mjs` escalón 0 leyó la caja como 0,000007 en
+       "| Ταμειακά διαθέσιμα και ισοδύναμα | 6.9 | 6.320.395 | 7.725.899 |" (L430): la nota "6.9" de un solo nivel, que la lectura B
+       tendría que sacar. Se cargó con un ajuste `caja`. Ver por qué la lectura B no entró en esta fila.
     k) Una respuesta "no" de la cola a una duda de importe ("¿se carga X del estado y no Y de la nota?", Olympiacos 2023 caso 446850a)
        no cambia nada: la verificación siguió con el importe del estado y hubo que agregar un ajuste `fila` a mano. Que esa respuesta
        aplique sola el importe de la nota (es lo que la pregunta ofrece), con la misma compuerta de cierre.
