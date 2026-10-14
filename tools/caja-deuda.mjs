@@ -21,6 +21,9 @@
 //   ESCALÓN 1  vocabulario (vocabulario.mjs CAJA / DEUDA_FINANCIERA): se PROPONEN las filas del balance con esos nombres (una sola por
 //              familia). "Ninguna fila" es una propuesta para la deuda (= 0, decisión de Guido) si el balance está completo (tiene su total del
 //              pasivo) y el club usa filas de deuda financiera en otros años.
+//   ESCALÓN 1b Jev (to-do 233 + 232 t; solo con --jev, EN MEDICIÓN): una llamada barata por documento; la caja como opción cerrada entre las
+//              filas del balance y la deuda como sí/no por fila. Solo propone filas; decide la misma compuerta. Respuestas en
+//              Generados/_cache/jev-caja-deuda.jsonl.
 //   ESCALÓN 2  IA (Claude, ~US$ 0,03 por documento, una llamada para caja y deuda, solo si 0 y 1 no pasaron): PROPONE números de línea del
 //              balance. Nada más (ni importes, ni escala, ni "no hay").
 //   COMPUERTA  la MISMA para los tres: valor = suma de las cifras de las filas propuestas x la escala; y un año vecino tiene que decir lo mismo:
@@ -42,6 +45,7 @@
 // USO:
 //   node tools/caja-deuda.mjs --medir [--club <clubId>] [--detalle] [--escalas]                         MEDICIÓN sobre los años ya cargados (ver abajo)
 //   node tools/caja-deuda.mjs --medir --ia [--ejecutar]                                       ...con el escalón 2 (sin --ejecutar: ensayo; con: API)
+//   node tools/caja-deuda.mjs --medir --jev [--ejecutar]                                      ...con el escalón 1b, Jev (sin --ejecutar: ensayo con cota alta)
 //   node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]                       COMPLETAR un club ya publicado (ver abajo)
 //
 // --club (Versión 356, decisión de Guido 2026-10-01: "dos scripts"; caja y deuda NO van en el lote, se completan con el club ya en el sitio):
@@ -507,6 +511,57 @@ function propuestaIA(filas, ia, cual) {
   return { escalon: 2, filas: elegidas, como: 'IA' };
 }
 
+// ESCALÓN 1b (to-do 233 + 232 t, aprobado por Guido el 2026-10-14): JEV, la IA barata (typesafe.ai, ~US$ 42 por mil millones de tokens), antes
+// de la IA cara y sin reglas por idioma (los griegos del lote 71 no tenían vocabulario: todo caía en Claude). Una llamada por documento: la caja
+// es una pregunta de opción cerrada entre las filas del balance ("L430: Ταμειακά διαθέσιμα και ισοδύναμα | 6320395 | 7725899", o "ninguna"); la
+// deuda, una pregunta sí/no por fila. Como la IA de hoy, solo PROPONE filas (ni importes ni escala) y decide la MISMA compuerta. Sin total del
+// balance (esTotal) en la deuda: el vocabulario tampoco los toma.
+function propuestaJev(filas, jev, cual) {
+  const porLinea = (n) => filas.find((f) => f.linea === n && f.balance);
+  if (cual === 'cash') { const n = Number(String(jev.caja || '').replace(/^L/, '')); const f = n ? porLinea(n) : null; return f ? { escalon: '1b', filas: [f], como: `Jev (confianza ${jev.cajaConf ?? '?'})` } : null; }
+  const fs = (jev.deuda || []).map(porLinea).filter((f) => f && !esTotal(f.etiqueta));
+  return fs.length ? { escalon: '1b', filas: dedupe(fs), como: `Jev (${fs.length} fila(s) de deuda)` } : null;
+}
+const CACHE_JEV = resolve(ROOT, 'Generados', '_cache', 'jev-caja-deuda.jsonl');
+let cacheJev = null; let claveJev = null;
+async function jevDe(filas, ejecutar) {
+  const bal = dedupe(filas.filter((f) => f.balance)).filter((f, i, xs) => xs.findIndex((g) => g.linea === f.linea) === i).slice(0, 120);
+  if (!bal.length) return { error: 'sin filas del balance' };
+  const texto = (f) => `${String(f.etiqueta).slice(0, 120)} | ${f.cifras.join(' | ')}`;
+  const state = `Filas del balance (estado de situación financiera) de un club de fútbol, tal cual las leyó el sistema (etiqueta | cifras del año | del año anterior):\n${bal.map((f) => `L${f.linea}: ${texto(f)}`).join('\n')}`;
+  const questions = {
+    caja: { type: 'choice', instructions: '¿Cuál de estas filas es el EFECTIVO Y EQUIVALENTES (caja y bancos, disponibilidades)? Si ninguna, elegí "ninguna".', criteria: { ...Object.fromEntries(bal.map((f) => [`L${f.linea}`, texto(f)])), ninguna: 'Ninguna fila es efectivo y equivalentes' } },
+    ...Object.fromEntries(bal.map((f) => [`d${f.linea}`, { type: 'choice', instructions: `¿La fila L${f.linea} ("${String(f.etiqueta).slice(0, 120)}") es DEUDA FINANCIERA: préstamos, créditos bancarios, bonos u obligaciones financieras (corrientes o no corrientes)? No lo son: proveedores, impuestos, sueldos, ingresos diferidos, provisiones, arrendamientos, totales.`, criteria: { si: 'Es deuda financiera', no: 'No es deuda financiera' } }])),
+  };
+  const body = { state, model: 'jev-latest', questions };
+  const { createHash } = await import('node:crypto');
+  const clave = createHash('sha1').update(JSON.stringify(body)).digest('hex');
+  if (!cacheJev) { cacheJev = new Map(); if (existsSync(CACHE_JEV)) for (const l of readFileSync(CACHE_JEV, 'utf8').split('\n')) { if (!l.trim()) continue; try { const j = JSON.parse(l); cacheJev.set(j.clave, j); } catch { /* línea rota */ } } }
+  if (cacheJev.has(clave)) return { datos: cacheJev.get(clave).datos, cache: true };
+  // Costo estimado: el estado se procesa una vez por pregunta (por las dudas, la cota alta).
+  const tokens = Math.ceil(JSON.stringify(body).length / 4) * (1 + Object.keys(questions).length);
+  if (!ejecutar) return { ensayo: true, usd: tokens * 42e-9 };
+  if (!claveJev) { const env = resolve(ROOT, 'Admin', 'api-keys', 'jev.env'); const line = existsSync(env) ? readFileSync(env, 'utf8').split('\n').find((l) => l.startsWith('JEV_API_KEY=')) : null; if (!line) return { error: `falta ${env} con JEV_API_KEY=...` }; claveJev = line.slice(12).trim(); }
+  for (let intento = 0; intento < 4; intento++) {
+    let res;
+    try { res = await fetch('https://api.typesafe.ai/v1/systemone', { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${claveJev}` }, body: JSON.stringify(body) }); }
+    catch { await new Promise((r) => setTimeout(r, 2000 * (intento + 1))); continue; }
+    if (res.ok) {
+      const j = await res.json(); const a = j.answers || {};
+      if (!a.caja?.choice) return { error: `Jev sin answers.caja: ${JSON.stringify(j).slice(0, 160)}` };
+      const datos = { caja: a.caja.choice, cajaConf: a.caja.confidence, deuda: bal.filter((f) => a[`d${f.linea}`]?.choice === 'si').map((f) => f.linea) };
+      const usd = (j.usage?.input_tokens ?? tokens) * 42e-9;
+      const { mkdirSync, appendFileSync } = await import('node:fs');
+      mkdirSync(resolve(ROOT, 'Generados', '_cache'), { recursive: true }); appendFileSync(CACHE_JEV, JSON.stringify({ clave, datos, usd }) + '\n'); cacheJev.set(clave, { datos });
+      return { datos, costo: usd };
+    }
+    const txt = (await res.text()).slice(0, 160);
+    if (res.status === 429 || res.status >= 500) { await new Promise((r) => setTimeout(r, 3000 * (intento + 1))); continue; }
+    return { error: `Jev HTTP ${res.status}: ${txt}` };
+  }
+  return { error: 'Jev: reintentos agotados' };
+}
+
 // LA COMPUERTA, la misma para los tres escalones.
 // (Versión 418) las cifras del documento SIGUIENTE se pasan a millones con la escala de ESE documento (factorSiguiente), no con la de este;
 // si no se conoce (su año no está cargado), la de este, como antes. Caso: Novorizontino 2021 (en miles): caja 0,952 contra 951.927 del 2022
@@ -592,13 +647,15 @@ function propuestaNota(f) {
     enOtroDoc: (doc) => { const x = doc.find((y) => y.balance && y.familia === f.familia && y.nota); return x ? [sintetica(x)] : null; } };
 }
 const conLecturaB = (f) => (f.lecturaB ? { ...f, valor: f.lecturaB.valor, cifras: f.lecturaB.cifras, lecturaB: null } : f);
-export function escalera(filas, cual, { precedentes = [], factor = null, anterior = null, siguiente = null, factorSiguiente = null, ia = null, extraDeuda = [], anteriorDoc = null, factorAnterior = null } = {}) {
+export function escalera(filas, cual, { precedentes = [], factor = null, anterior = null, siguiente = null, factorSiguiente = null, ia = null, jev = null, extraDeuda = [], anteriorDoc = null, factorAnterior = null } = {}) {
   const club = familiasDelClub(precedentes, cual);
-  const propuestas = [propuestaPrecedente(filas, club), propuestaVocabulario(filas, cual, club, extraDeuda), ia ? propuestaIA(filas, ia, cual) : null];
+  // (to-do 233 / 232 t) escalón 1b, Jev, entre el vocabulario y la IA cara: solo si se le pasó su respuesta (--jev).
+  const ESC = [0, 1, '1b', 2];
+  const propuestas = [propuestaPrecedente(filas, club), propuestaVocabulario(filas, cual, club, extraDeuda), jev ? propuestaJev(filas, jev, cual) : null, ia ? propuestaIA(filas, ia, cual) : null];
   const intentos = [];
-  for (let e = 0; e < propuestas.length; e++) {
-    const p = propuestas[e];
-    if (!p) { if (e < 2 || ia) intentos.push(`escalón ${e}: sin propuesta`); continue; }
+  for (let i = 0; i < propuestas.length; i++) {
+    const e = ESC[i]; const p = propuestas[i];
+    if (!p) { if (i < 2 || (e === '1b' && jev) || (e === 2 && ia)) intentos.push(`escalón ${e}: sin propuesta`); continue; }
     const ctxC = { factor, anterior, siguiente, factorSiguiente, cual, referencia: precedentes[0]?.valor ?? null, anteriorDoc, factorAnterior}; // (Versión 459) el año cargado más cercano, para la plausibilidad
     const c = compuerta(p, ctxC);
     // (to-do 223, A/B medido el 2026-10-13 contra una compuerta con votos, descartada: ver Admin/HALLAZGOS-pipeline.md) DOS LECTURAS: si alguna fila de la propuesta o de los documentos vecinos tiene lectura B (sin la celda con
@@ -741,7 +798,7 @@ async function iaDe(md, filas, club) {
   return porIA({ md, mdText: readFileSync(resolve(ROOT, md), 'utf8'), filas, criterioDeuda: criterioDeudaDe(club?.familias || []), ejecutar: iaDe.ejecutar });
 }
 
-async function medir({ club = null, detalle = false, ia = false, ejecutar = false, escalas = false } = {}) {
+async function medir({ club = null, detalle = false, ia = false, jev = false, ejecutar = false, escalas = false } = {}) {
   const { G, S } = sitio(); iaDe.ejecutar = ejecutar;
   const casos = [];
   for (const [clubId, d] of Object.entries(G)) {
@@ -756,6 +813,20 @@ async function medir({ club = null, detalle = false, ia = false, ejecutar = fals
       const ctx = contexto({ d, anios, a, cual, filasDe, conocidos });
       casos.push({ clubId, anio: a.anio, cual, real, ctx, md: a.md, ...escalera(ctx.filas, cual === 'cash' ? 'cash' : 'deuda', ctx) });
     }
+  }
+  // Escalón 1b (Jev): solo para lo que quedó null, una llamada (o la respuesta guardada) por documento, de a 6.
+  if (jev) {
+    const porMd = new Map(); for (const c of casos.filter((x) => x.valor == null)) porMd.set(c.md, [...(porMd.get(c.md) || []), c]);
+    let usd = 0; let ensayos = 0; let errores = 0;
+    const uno = async ([md, cs]) => {
+      const r = await jevDe(cs[0].ctx.filas, ejecutar);
+      if (r.ensayo) { usd += r.usd; ensayos++; return; }
+      if (r.error) { errores++; return; }
+      usd += r.costo || 0;
+      for (const c of cs) { c.ctx = { ...c.ctx, jev: r.datos }; Object.assign(c, escalera(c.ctx.filas, c.cual === 'cash' ? 'cash' : 'deuda', c.ctx)); }
+    };
+    const cola = [...porMd]; await Promise.all(Array.from({ length: 6 }, async () => { while (cola.length) await uno(cola.shift()); }));
+    console.log(ensayos ? `\nJEV (ENSAYO): ${ensayos} documentos sin respuesta guardada, ~US$ ${usd.toFixed(3)} (cota alta). Agregá --ejecutar (lo corre Guido).` : `\nJEV: US$ ${usd.toFixed(4)}${errores ? `, ${errores} error(es)` : ''} (las respuestas guardadas no se vuelven a pagar)`);
   }
   // Escalón 2: solo para lo que quedó null, una llamada (o la respuesta guardada) por documento, de a 6.
   if (ia) {
@@ -776,7 +847,7 @@ async function medir({ club = null, detalle = false, ia = false, ejecutar = fals
   for (const cual of ['grossDebt', 'cash']) {
     const xs = casos.filter((c) => c.cual === cual);
     console.log(`\n## ${cual === 'cash' ? 'CAJA' : 'DEUDA'}: ${JSON.stringify(res(xs))}`);
-    for (const e of [0, 1, 2]) console.log(`   escalón ${e}: ${JSON.stringify(res(xs.filter((x) => x.escalon === e)))}`);
+    for (const e of [0, 1, '1b', 2]) console.log(`   escalón ${e}: ${JSON.stringify(res(xs.filter((x) => x.escalon === e)))}`);
     for (const v of ['año anterior', 'documento siguiente', 'documento anterior']) console.log(`   pasó la compuerta por ${v}: ${JSON.stringify(res(xs.filter((x) => x.validacion === v)))}`);
     const mal = xs.filter((x) => x.valor != null && !x.ok);
     if (mal.length) { console.log(`   DISTINTOS de lo cargado (${mal.length}):`); for (const x of mal) console.log(`     ${x.clubId} ${x.anio}: script ${x.valor} (escalón ${x.escalon}, ${x.validacion}, ${x.como}) · sitio ${x.real} · filas: ${x.filas.map((f) => `"${String(f.etiqueta).slice(0, 40)}" ${f.importe} (pág. ${f.pagina}, L${f.linea})`).join(' + ') || '(ninguna)'}`); }
@@ -858,7 +929,7 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
-  if (A.includes('--medir')) { await medir({ club: flag('--club'), detalle: A.includes('--detalle'), ia: A.includes('--ia'), escalas: A.includes('--escalas'), ejecutar: A.includes('--ejecutar') }); process.exit(0); }
+  if (A.includes('--medir')) { await medir({ club: flag('--club'), detalle: A.includes('--detalle'), ia: A.includes('--ia'), jev: A.includes('--jev'), escalas: A.includes('--escalas'), ejecutar: A.includes('--ejecutar') }); process.exit(0); }
   if (flag('--club')) { const r = await completarClub(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir') }); process.exit(r.error ? 1 : 0); }
   console.error('Uso: node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]  |  --medir [--club x] [--ia [--ejecutar]] [--detalle]'); process.exit(1);
 }
