@@ -79,6 +79,9 @@ window.RANKINGS["gr-superleague"] = {
       { id:"oficrete-gr", revenue:6.065, reportType:"official_balance_sheet",
         sourceId:"oficrete-gr-ofi-income-stmt-2022-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.261],["Otros ingresos",0.804]] },
+      { id:"atromitos-gr", revenue:4.491, reportType:"official_balance_sheet",
+        sourceId:"atromitos-gr-fs-2022-06-30",
+        mix:[["Comercial / Sponsors",2.64],["Estadio",0.116],["Televisión",0.379],["Premios por competencias",0.83],["Venta de Jugadores",0.332],["Otros ingresos",0.193]] },
       { id:"asterastripolis-gr", revenue:2.851, reportType:"official_balance_sheet",
         sourceId:"asterastripolis-gr-asteras-fs-2022-06-30",
         mix:[["Estadio",0.075],["Televisión",0.961],["Venta de Jugadores",0.244],["Otros ingresos",1.571]] },
@@ -204,7 +207,7 @@ window.RANKINGS["gr-superleague"] = {
       { id:"atromitos-gr", revenue:5.776, reportType:"official_balance_sheet",
         sourceId:"atromitos-gr-notes-2015-16",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",4.679],["Otros ingresos",1.097]],
-        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Otras secciones deportivas","Fútbol profesional (sin desglosar por la fuente)",1]] },
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
 };
