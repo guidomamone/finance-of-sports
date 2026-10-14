@@ -83,9 +83,6 @@ ni en el comentario de ningún archivo de código.
     i) `periodo.mjs` dio a Kifisia 2022 como ejercicio de 12 meses (confianza media, sin evidencia) y el documento dice "περιόδου
        9/8/2021 - 30/06/2022" en la portada (L47, L93, L261): primer ejercicio de la sociedad, unos 10,7 meses. Un período de menos de 12
        meses tiene que salir como parcial (Admin/registros/documentos-parciales.txt) o a la cola, no como anual.
-    j) `cargar-lote.mjs` no mira `documentos-parciales.txt` ni `documentos-descartados.txt`: carga todo lo que tiene `.carga.json` listo en
-       la carpeta del club, aunque `lote.mjs` lo haya salteado. Pasó con Kifisia 2022 (marcado parcial antes de la corrida, escrito igual en
-       be8e6849b; se sacó a mano). Es un bug que publica datos: cargar-lote tiene que leer las dos listas, igual que lote.mjs.
     k) Una respuesta "no" de la cola a una duda de importe ("¿se carga X del estado y no Y de la nota?", Olympiacos 2023 caso 446850a)
        no cambia nada: la verificación siguió con el importe del estado y hubo que agregar un ajuste `fila` a mano. Que esa respuesta
        aplique sola el importe de la nota (es lo que la pregunta ofrece), con la misma compuerta de cierre.

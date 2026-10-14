@@ -10,7 +10,8 @@
 // eligió la revisión del alta (Admin/registros/altas-revision.jsonl) y `cargar.mjs --escribir` corre la auditoría y revierte solo si da P0/P1.
 //
 // LA ESCALERA DE CADA DOCUMENTO (gratis salvo lo que ya hace cargar.mjs, que es gratis):
-//   0. descartado (Admin/registros/documentos-descartados.txt) o el año ya está en el sitio      -> no se toca
+//   0. descartado (Admin/registros/documentos-descartados.txt), parcial (Admin/registros/documentos-parciales.txt) o el año ya está en el
+//      sitio                                                                             -> no se toca
 //   1. el ensayo de cargar.mjs (--desde-verificacion) frena por algo que no es el club  -> queda frenado, con su primer motivo
 //   2. frena SOLO por el club (club nuevo)                                              -> candidato con alta
 //   3. no frena                                                                         -> candidato
@@ -60,7 +61,11 @@ const SITIO = ['data', 'index.html', 'fuentes', 'Admin/sourcing', 'fuentes.html'
 const ADMIN = ['Admin/registros/ajustes-manuales.jsonl', 'Admin/registros/documentos-descartados.txt', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/registros/categorias-aprendidas.jsonl', 'Admin/registros/perfil-clubes.jsonl', 'Admin/registros/cola-revision.jsonl', 'Admin/registros/cargar-ultimo.jsonl', 'Admin/registros/altas-club.jsonl', 'Admin/carga-clubes'];
 
 const descartados = new Set(leerLineas('Admin/registros/documentos-descartados.txt'));
-const docs = leerLineas(LISTA).filter((d) => !descartados.has(d));
+// PARCIALES (to-do 232 j): un balance de menos de 12 meses no se carga solo (regla de los 12 meses, Admin/CONVENCIONES-DATOS.md). lote.mjs
+// ya lo salteaba al empezar, pero acá se leía la lista entera: si el documento tenía un .carga.json de una corrida anterior, se escribía
+// igual. Caso: Kifisia 2022 (9/8/2021-30/6/2022), marcado parcial antes del lote 71 y publicado por la corrida (be8e6849b; se sacó a mano).
+const parciales = new Set(leerLineas('Admin/registros/documentos-parciales.txt'));
+const docs = leerLineas(LISTA).filter((d) => !descartados.has(d) && !parciales.has(d));
 const altas = new Map(leerJsonl('Admin/registros/altas-club.jsonl').map((o) => [o.carpeta, o]));
 const revision = new Map(leerJsonl('Admin/registros/altas-revision.jsonl').map((o) => [o.clubId, o]));
 
