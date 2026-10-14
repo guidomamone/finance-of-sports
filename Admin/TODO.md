@@ -71,6 +71,11 @@ ni en el comentario de ningún archivo de código.
        Código: `nombreLegal(md, displayName)` en `tools/alta-club.mjs` (L726). Las respuestas correctas para medir están en los ajustes
        `name` del 2026-10-14 (Olympiacos L484, PAOK L5-7, Aris L137, Atromitos L280, Panetolikos L5, Kifisia L496 de sus .md más nuevos) y
        en AEK, Asteras, Levadiakos, OFI, Panserraikos y Volos (ajustes `name` anteriores).
+       CONOCIDO, SIN DAÑO HOY (Guido, 2026-10-14): el nombre pendiente no frena el alta y la revisión del alta (subagente) lo resuelve con
+       cita. Pasa con CUALQUIER alfabeto no latino, no solo griego: nombreLegal() busca tokens latinos del displayName y FORMAS solo trae
+       formas latinas (falta ООО / АО / ПАО / 株式会社...). Carpetas afectadas: Ucrania, Bulgaria, Serbia (en parte), Kazajistán, Macedonia
+       del Norte, Armenia, Georgia, Japón, Corea, China y Chipre (Rusia no pasa por alta-club.mjs). Los nombres se transliteran a mano
+       ("Olympiakos Syndesmos Filathlon Peiraios P.A.E."): un escalón por script no daría idéntico.
     p) Color y liga de un club griego nuevo: `lookup-brand-color.js` no tiene la liga griega cacheada y `data/club-leagues` (caché gr.json)
        solo traía 2023-24 para Kifisia. Cachear las dos ligas griegas (Super League y Super League 2) por temporada con las tools que ya
        existen (`fetch-brand-color-reference.mjs`, la de ligas) antes del próximo club griego.
