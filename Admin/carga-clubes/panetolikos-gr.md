@@ -51,6 +51,43 @@ Decidido por Guido (2026-10-14), presidente que firma y no el dueño; era duda: 
 Duda: El nombre de pila en Sport24 aparece como 'Makis' en el cuerpo y 'Gerasimos' en el comunicado del club; los balances y la web del club dicen Gerasimos Belevonis. Makis es un diminutivo; ertsports (3/6/2026) trata a un 'Makis Belevonis' (director técnico saliente) como otra persona que el presidente Gerasimos.
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Panetolikos/Panetolikos_FS_2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Panetolikos/Panetolikos_FS_2019-20.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κύκλος εργασιών (καθαρός) | pág. 15, Jev 1 |
+| 2 | Λοιπά συνήθη έσοδα | pág. 15, Jev 1 |
+| 3 | Λοιπά έσοδα και κέρδη | pág. 15, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κόστος πωλήσεων | pág. 15, precedente |
+| 2 | Έξοδα διοίκησης | pág. 15, Jev 1 |
+| 3 | Έξοδα διάθεσης | pág. 15, precedente |
+| 4 | Λοιπά έξοδα και ζημιές | pág. 15, Jev 0.95 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2019–20 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Panetolikos".
+```
+
 ## 2018
 
 ### Ingresos
@@ -141,4 +178,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Panetolikos/Panetolikos_FS_2017-18.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### panetolikos-gr-fs-2019-20
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Panetolikos/Panetolikos_FS_2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
