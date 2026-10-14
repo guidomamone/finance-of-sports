@@ -50,6 +50,70 @@ Ivan Savvidis (2012-08-10 a hoy): Dueño persona que conduce (Wikipedia: adquiri
 Duda: No se encontró fuente con la fecha formal en que Savvidis asumió la presidencia de la PAE (desde = fecha de adquisición del 10/8/2012). Un cambio de gestión de por medio (Wikipedia en inglés lo sigue listando como presidente) no se halló; los .md no nombran al presidente del directorio, solo a los vicepresidentes que firman.
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/PAOK/PAOK_FS_2025-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Έσοδα από εισιτήρια-συνδρομές | pág. 36, precedente |
+| 2 | Έσοδα από τηλεοπτικά δικαιώματα | pág. 36, Jev 1 |
+| 3 | Έσοδα από παραχωρήσεις ποδοσφαιριστών | pág. 36, Jev 1 |
+| 4 | Έσοδα από επιχορηγήσεις | pág. 36, Jev 0.95 |
+| 5 | Έσοδα από χορηγίες-διαφημίσεις | pág. 36, Jev 1 |
+| 6 | Ενοίκια Έσοδα | pág. 36, Claude 0.85 |
+| 7 | Λοιπά Έσοδα πάροχης Υπηρεσιών | pág. 36, Jev 0.99 |
+| 8 | Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων | pág. 18, Jev 0.99 |
+| 9 | Λοιπά έσοδα και κέρδη | pág. 18, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Αμοιβές προσωπικού | pág. 36, Claude 0.8 |
+| 2 | Αμοιβές τρίτων | pág. 36, precedente |
+| 3 | Παροχές τρίτων | pág. 36, precedente |
+| 4 | Φόροι-Τέλη | pág. 36, Claude 0.8 |
+| 5 | Διάφορα έξοδα | pág. 36, precedente |
+| 6 | Αποσβέσεις | pág. 36, precedente |
+| 7 | Αγορές Αναλωσίμων | pág. 36, precedente |
+| 8 | Αμοιβές προσωπικού | pág. 37, Claude 0.8 |
+| 9 | Αμοιβές τρίτων | pág. 37, precedente |
+| 10 | Παροχές τρίτων | pág. 37, precedente |
+| 11 | Φόροι-Τέλη | pág. 37, Claude 0.8 |
+| 12 | Διάφορα έξοδα | pág. 37, precedente |
+| 13 | Αποσβέσεις | pág. 37, precedente |
+| 14 | Λοιπές Προβλέψεις | pág. 37, precedente |
+| 15 | Αμοιβές προσωπικού | pág. 37, Claude 0.8 |
+| 16 | Αμοιβές τρίτων | pág. 37, precedente |
+| 17 | Παροχές τρίτων | pág. 37, precedente |
+| 18 | Φόροι-Τέλη | pág. 37, Claude 0.8 |
+| 19 | Διάφορα έξοδα | pág. 37, precedente |
+| 20 | Αποσβέσεις | pág. 37, precedente |
+| 21 | Λοιπές Προβλέψεις | pág. 37, precedente |
+| 22 | Πρόστιμα αθλητικών φορέων | pág. 37, precedente |
+| 23 | Φορολογικά Πρόστιμα & προσαυξήσεις | pág. 37, precedente |
+| 24 | Λοιπά έκτακτα έξοδα | pág. 37, precedente |
+| 25 | Φόροι και προσαυξήσεις προηγ. Χρήσεων | pág. 37, precedente |
+| 26 | Λοιπά έξοδα προηγ. Χρήσεων | pág. 37, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2024–25 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "PAOK".
+```
+
 ## 2024
 
 ### Ingresos
@@ -233,7 +297,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2017, 2023, 2024): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2017, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
 ```
 
 ### Liga
@@ -300,7 +364,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2017, 2023, 2024): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2017, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
 ```
 
 ### Liga
@@ -342,7 +406,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2017, 2019, 2021, 2022, 2023, 2024): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación)
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2017, 2019, 2021, 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación)
 ```
 
 ### Liga
@@ -396,7 +460,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2017, 2023, 2024): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2017, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
 ```
 
 ### Liga
@@ -526,4 +590,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/PAOK/PAOK_FS_2024-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### paok-gr-fs-2025-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
