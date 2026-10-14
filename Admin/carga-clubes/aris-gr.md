@@ -225,6 +225,60 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2022–23 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Aris".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Aris/Aris_FS_audited_art47_2022-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Aris/Aris_FS_audited_art47_2022-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Έσοδα από εισιτήρια | pág. 11, precedente |
+| 2 | Έσοδα χορηγιών και διαφημίσεων | pág. 11, precedente |
+| 3 | Έσοδα δικαιωμάτων μεταδόσεων | pág. 11, precedente |
+| 4 | Εμπορικά έσοδα | pág. 11, precedente |
+| 5 | Έσοδα από UEFA αλληλεγγύη και χρηματικά έπαθλα | pág. 11, precedente |
+| 6 | Λοιπά λειτουργικά έσοδα | pág. 11, precedente |
+| 7 | Κέρδος από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών) | pág. 11, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κόστος πωλήσεων / υλικών / μη διανεμηθέντα | pág. 11, precedente |
+| 2 | Αμοιβές ποδοσφαιρικού | pág. 25, precedente |
+| 3 | Εισφορές ποδοσφαιρικού | pág. 25, precedente |
+| 4 | Λοιπές παροχές ποδοσφαιρικού | pág. 25, precedente |
+| 5 | Αμοιβές προσωπικού | pág. 25, precedente |
+| 6 | Εισφορές & λοιπές παροχές προσωπικού | pág. 25, precedente |
+| 7 | Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού | pág. 11, precedente |
+| 8 | Απόσβεση λοιπών άυλων στοιχείων του ενεργητικού (εξαιρούνται οι εγγραφές ποδοσφαιριστών) | pág. 11, precedente |
+| 9 | Έξοδα τέλεσης αγώνων | pág. 25, precedente |
+| 10 | Κόστη χορηγιών και διαφημίσεων | pág. 25, precedente |
+| 11 | Εμπορικές δαπάνες | pág. 25, precedente |
+| 12 | Έξοδα εγκαταστάσεων | pág. 25, precedente |
+| 13 | Λοιπά έξοδα ποδοσφαιρικού & Λοιπά λειτουργικά Έξοδα (ταξίδια, ποσοστά ΕΠΟ επι συμβολαίων, παράβολα, λοιπά λειτουργικά, κλπ) | pág. 25, precedente |
+| 14 | Λοιπά Λειτουργικά Έξοδα & Προβλέψεις για έκτακτα και ανόργανα έξοδα | pág. 25, precedente |
+| 15 | Diferencia de redondeo | pág. ?, precedente |
+| 16 | Απόσβεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών) | pág. 11, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-14): perimetro = consolidado. perimetro-senales.mjs: el ejercicio 2022-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): filas-a-mano. Claude 2026-10-14 (to-do 231 6b, pedido de Guido: resolver con tokens de sesión y que una corrida futura del pipeline llegue a lo mismo): .ubicacion.json y .filas.json armados a mano desde el .md (estado b3 L433-455, notas b15 y b16), mismo formato que Aris 2023
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2021–22 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Aris".
+```
+
 ## 2021
 
 ### Ingresos
@@ -260,7 +314,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Organización de partidos
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Organización de partidos
 ```
 
 ### Liga
@@ -305,7 +359,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación), Organización de partidos
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación), Organización de partidos
 ```
 
 ### Liga
@@ -354,4 +408,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Aris/Aris_FS_2025-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### aris-gr-fs-audited-art47-2022-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Aris/Aris_FS_audited_art47_2022-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

@@ -1,0 +1,51 @@
+{
+ "pdf": "Clubes/Grecia/Aris/Aris_FS_audited_art47_2022-06-30.pdf",
+ "md": "Clubes/Grecia/Aris/Aris_FS_audited_art47_2022-06-30.md",
+ "mdSha1": "664f1149efb1e9fd7a23410b6b5ecaad262d6ad4",
+ "modelo": "a mano (Claude Code, sesión 2026-10-14)",
+ "generado": "2026-10-14T06:19:31.739Z",
+ "bloques": {
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    433,
+    455
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    1243,
+    1250
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    1256,
+    1264
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b15",
+  "b16"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε € (L433)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30.06.2022",
+ "columna_anterior": "30.06.2021",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Armado a mano (to-do 231 6b, pedido de Guido: sin API). Estado de resultados consolidado formato UEFA en b3 (pág. 11 del visor), mismo formato que Aris 2023-2025. Notas de gastos: b15 (personal) y b16 (otros gastos operativos). No hay nota que desglose ingresos."
+}
