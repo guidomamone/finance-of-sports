@@ -192,6 +192,9 @@ window.RANKINGS["gr-superleague"] = {
       { id:"aellarissa-gr", revenue:3.964, reportType:"official_balance_sheet",
         sourceId:"aellarissa-gr-ael-notes-elp-2018-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",3.16],["Otros ingresos",0.803]] },
+      { id:"panetolikos-gr", revenue:2.925, reportType:"official_balance_sheet",
+        sourceId:"panetolikos-gr-fs-2017-18",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.44],["Otros ingresos",2.485]] },
     ],
   },
   2017: {
