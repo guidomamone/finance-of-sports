@@ -54,6 +54,46 @@ Duda: Fecha exacta de asuncion de Spanos en 2005 no confirmada (mayo segun el si
 Duda: No se pudo abrir sdna.gr (403); la fecha 10/11/2017 sale de sport-fm y es consistente con las otras notas de prensa encontradas (naftemporiki, metrosport, cityview), que no se abrieron.
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Atromitos/Atromitos_FS_2025-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Atromitos/Atromitos_FS_2025-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κύκλος εργασιών (καθαρός) | pág. 10, Jev 1 |
+| 2 | Λοιπά συνήθη έσοδα | pág. 10, Jev 1 |
+| 3 | Λοιπά έσοδα και κέρδη | pág. 10, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κόστος πωλήσεων | pág. 10, precedente |
+| 2 | Έξοδα διοίκησης | pág. 10, Jev 1 |
+| 3 | Λοιπά έξοδα και ζημίες | pág. 10, Jev 0.95 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024): Comercial / Sponsors, Televisión, Premios por competencias
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2024–25 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Atromitos".
+```
+
 ## 2024
 
 ### Ingresos
@@ -404,4 +444,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Atromitos/Atromitos_FS_2024-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### atromitos-gr-fs-2025-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Atromitos/Atromitos_FS_2025-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

@@ -72,6 +72,11 @@ const atromitosgrRevenueLinesByYear = {
     { rawLabel:'Λοιπά έκτακτα και ανόργανα', normalizedCategory:'other_income', amountNative:0.074992, disclosureLevel:'aggregated' },
     { rawLabel:'Ληφθείσες αποζημιώσεις', normalizedCategory:'other_income', amountNative:0.00247, disclosureLevel:'aggregated' },
   ],
+  2025: [
+    { rawLabel:'Κύκλος εργασιών (καθαρός)', normalizedCategory:'lump_football_operations', amountNative:6.283402, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:1.785142, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.011197, disclosureLevel:'aggregated' },
+  ],
 };
 const atromitosgrExpenseLinesByYear = {
   2016: [
@@ -108,6 +113,11 @@ const atromitosgrExpenseLinesByYear = {
     { rawLabel:'Κόστος πωλήσεων', normalizedCategory:'lump_football_operations_expense', amountNative:-6.619201, disclosureLevel:'aggregated' },
     { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.490468, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έξοδα και ζημίες', normalizedCategory:'other_expenses', amountNative:-0.201521, disclosureLevel:'aggregated' },
+  ],
+  2025: [
+    { rawLabel:'Κόστος πωλήσεων', normalizedCategory:'lump_football_operations_expense', amountNative:-6.312663, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.533264, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έξοδα και ζημίες', normalizedCategory:'other_expenses', amountNative:-0.119211, disclosureLevel:'aggregated' },
   ],
 };
 const atromitosgrFiscalYearMeta = {
@@ -237,6 +247,25 @@ const atromitosgrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:4.830076, officialTotalExpenses:7.31119, officialPAT:-3.131251,
   },
+  2025: {
+    incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, competition_bonus:{ en:'lump_football_operations', posible:true, por:'precedente' } },
+    currency:'EUR', fxRef:'EUR@2025-06-30',
+    sourceId:'atromitos-gr-fs-2025-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.021063, tax:0,
+    extraRows: [
+      {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-1.021063},
+      {label:'Φόροι εισοδήματος', value:0},
+    ],
+    sinDesglose: [
+      {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:6.283402, motivo:'el documento no desglosa este renglón'},
+      {renglon:'Κόστος πωλήσεων', lado:'expense', importe:6.312663, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría \'Fútbol profesional (sin desglosar por la fuente)\'.'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:8.079741, officialTotalExpenses:6.965137, officialPAT:0.093541,
+  },
 };
 const atromitosgrPresupuestoOverlayByYear = {};
 
@@ -286,6 +315,11 @@ Object.assign(sources, {
   'atromitos-gr-fs-2024-06-30': {
     id:'atromitos-gr-fs-2024-06-30', clubId:'atromitos-gr',
     title:'A.P.S. Atromitos Athinon 1923 P.A.E. — Atromitos_FS_2024-06-30 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'atromitos-gr-fs-2025-06-30': {
+    id:'atromitos-gr-fs-2025-06-30', clubId:'atromitos-gr',
+    title:'A.P.S. Atromitos Athinon 1923 P.A.E. — Atromitos_FS_2025-06-30 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
