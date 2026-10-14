@@ -344,7 +344,8 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   const year = alta.ejercicio.anio ?? (per?.cierreDeducido ? Number(per.cierre.slice(0, 4)) : null); P.year = year;
   const q = quien(pdf);
   if (q.year && Number(q.year) !== Number(year)) frena('año', `alta-club.mjs dice ejercicio ${year} y quien.mjs --quien (el que usa el registro) dice ${q.year}`);
-  if (q.clubId && q.clubId !== clubId) frena('club', `carpetas-clubes.mjs dice ${clubId} y quien.mjs --quien dice ${q.clubId}`);
+  if (q.clubId && !q.clubDeCarpeta && q.clubId !== clubId) frena('club', // clubDeCarpeta: sin cita, el id de quien es el nombre de la carpeta (to-do 232 f)
+    `carpetas-clubes.mjs dice ${clubId} y quien.mjs --quien dice ${q.clubId}`);
   if (!year) { return corta('año', 'no se pudo determinar el año del ejercicio'); }
   if ((cd.fiscalYearMeta || {})[year]) { if (P.reemplaza) P.avisos.push(`${clubId} ${year} ya cargado: se reemplaza`); else frena('año', `${clubId} ya tiene el ejercicio ${year} cargado`); }
   // (Versión 637) ajuste manual `no-recargar`: lo publicado de ese año no lo reproduce una corrida nueva y es mejor que ella (Lazio 2012-13, Roma 2021: el

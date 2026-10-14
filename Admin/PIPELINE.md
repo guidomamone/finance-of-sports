@@ -473,6 +473,8 @@ Mitigaciones:
   en la cola antes del alta, igual que con un club existente. Con `--escribir` corta como siempre.
 - Escribir: `cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año; después `caja-deuda.mjs --club <id> [--ejecutar] --escribir`.
   Al final imprime el `git add` de lo que tocó esa corrida (generadores y registros incluidos; to-do 232 y): se pega tal cual en el commit.
+  El club de `quien.mjs` se compara con el del alta solo si salió de `carpetas-clubes.mjs`: sin cita (club sin alta) `quien` usa el nombre
+  de la carpeta y lo marca `clubDeCarpeta` (to-do 232 f).
   Las marcas "Posiblemente dentro de otro rubro" las pone `--escribir` solo (no hay un paso más). Para un club cargado a mano o corregido
   fuera de `cargar.mjs`: `node tools/dentro-de-otro.mjs --club <id> [--escribir]`.
 - Dónde queda la evidencia: `data/<país>/<club>-data.js` no lleva comentarios (se publica). `cargar.mjs --escribir` deja en

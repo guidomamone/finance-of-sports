@@ -34,12 +34,6 @@ ni en el comentario de ningún archivo de código.
        (mismo lado, misma nota), y un año distinto vuelve a preguntar.
     e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
        Grecia fue el 20% del gasto de API. Mirar qué texto le hace falta de verdad (to-do 230 lo deja como tercer cambio).
-    f) Un club nuevo frena con "[club] carpetas-clubes.mjs dice paok-gr y quien.mjs --quien dice paok": para un club que todavía no tiene
-       data file, `quien.mjs` cae al nombre de la carpeta sin el sufijo de país. Es ruido mientras el alta no se hace, pero suma un motivo
-       falso a cada año frenado.
-       Código: `tools/quien.mjs` `quien()` (L70-L81: sin cita en un data file, `clubId = normalize(folder)`); la comparación que frena
-       está en `tools/cargar.mjs` (L345, "carpetas-clubes.mjs dice ... y quien.mjs --quien dice ..."). Para un club sin data file, usar el
-       id que propone `carpetas-clubes.mjs` / el registro de altas (con el sufijo de país) en vez del nombre de la carpeta.
     h) La categoría se decide por ETIQUETA, y en los estados griegos por función la misma etiqueta aparece en dos notas con sentido
        distinto: PAOK "Αποσβέσεις" en el cuadro del departamento de fútbol (91-96% amortización de pases, `player_amortisation`) y en los
        de administración y venta (bienes y software, 0,2-0,3 M por año, `depreciation`); Olympiacos 2025 "Εισφορές κοινωνικής ασφάλισης"

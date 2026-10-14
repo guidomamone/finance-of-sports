@@ -68,7 +68,10 @@ function findPdfsUnder(dir) {
 }
 
 export function quien(pdfPath, club = null, year = null) {
-  let clubId = club;
+  // clubDeCarpeta (to-do 232 f): el club NO salió de carpetas-clubes.mjs (sin cita en un data file ni nombre igual en el sitio) y el id es
+  // el nombre de la carpeta normalizado ("paok" para un club todavía sin alta). Ese id no es información sobre el club: cargar.mjs no lo
+  // compara con el del alta (frenaba los 40 años de los 7 griegos nuevos con "carpetas-clubes.mjs dice paok-gr y quien.mjs dice paok").
+  let clubId = club; let clubDeCarpeta = false;
   if (!clubId) {
     // Versión 309: el club sale de tools/carpetas-clubes.mjs (la cita en data/<país>/<id>-data.js, y si no, nombre IGUAL dentro del mismo país),
     // no de guessClubId() por substring y sin país. Esa regla vieja no reconocía 17 clubes del sitio (Racing, Botafogo, Gent...) y asignaba
@@ -78,7 +81,7 @@ export function quien(pdfPath, club = null, year = null) {
     const r = clubDeRuta(pdfPath);
     if (r.clubId) clubId = r.clubId;
     else if (r.via === 'ambigua' && !String(folder).startsWith('_')) return { error: `"${folder}" es ambigua: ${r.fuente} -- pasá --club explícito, no adivino.` };
-    else clubId = normalize(folder || 'club-nuevo').replace(/\s+/g, '-') || 'club-nuevo';
+    else { clubId = normalize(folder || 'club-nuevo').replace(/\s+/g, '-') || 'club-nuevo'; clubDeCarpeta = true; }
   }
   let resolvedYear = year;
   if (!resolvedYear) {
@@ -87,7 +90,7 @@ export function quien(pdfPath, club = null, year = null) {
     resolvedYear = ajAnio ? Number(ajAnio.valor) : guessYear(basename(pdfPath));
     if (!resolvedYear) return { error: 'No pude adivinar el año del nombre del archivo -- pasá --year explícito.' };
   }
-  return { clubId, year: resolvedYear };
+  return clubDeCarpeta ? { clubId, year: resolvedYear, clubDeCarpeta } : { clubId, year: resolvedYear };
 }
 
 // "¿Esta combinación club+año YA tiene datos cargados en el sitio?" (no "¿existe tal o cual archivo?").
