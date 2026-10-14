@@ -53,6 +53,71 @@ Duda: Fecha exacta en que Karipidis del Anestis asumió la presidencia: no se en
 Duda: Ejercicio 2022 (30/6/2022) no está en cierres de este lote, pero queda cubierto por Irini Karipidou.
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Aris/Aris_FS_2024-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Aris/Aris_FS_2024-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Έσοδα από εισιτήρια | pág. 12, Jev 0.99 |
+| 2 | Έσοδα χορηγιών και διαφημίσεων | pág. 12, Jev 1 |
+| 3 | Έσοδα δικαιωμάτων μεταδόσεων | pág. 12, Jev 1 |
+| 4 | Εμπορικά έσοδα | pág. 12, Jev 1 |
+| 5 | Έσοδα από UEFA αλληλεγγύη και χρηματικά έπαθλα | pág. 12, precedente |
+| 6 | Λοιπά λειτουργικά έσοδα | pág. 12, Jev 0.99 |
+| 7 | Κέρδος από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών) | pág. 12, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κόστος πωλήσεων / υλικών / μη διανεμηθέντα | pág. 12, Claude 0.8 |
+| 2 | Ποδοσφαιριστές-ημερομίσθια & μισθοί | pág. 28, Jev 1 |
+| 3 | Ποδοσφαιριστές-εισφορές κοινωνικής ασφάλισης | pág. 28, Jev 1 |
+| 4 | Δαπάνες παροχών προς ποδοσφαιριστές | pág. 28, Claude 0.85 |
+| 5 | Τεχνικό προσωπικό-ημερομίσθια & μισθοί | pág. 28, Jev 0.99 |
+| 6 | Τεχνικό προσωπικό-εισφορές κοινωνικής ασφάλισης | pág. 28, Claude 0.9 |
+| 7 | Δαπάνες παροχών προς τεχνικό προσωπικό | pág. 28, Claude 0.85 |
+| 8 | Λοιπό προσωπικό-ημερομίσθια & μισθοί | pág. 28, precedente |
+| 9 | Λοιπό προσωπικό-εισφορές κοινωνικής ασφάλισης | pág. 28, precedente |
+| 10 | Δαπάνες παροχών προς λοιπό προσωπικό | pág. 28, precedente |
+| 11 | Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού | pág. 12, Jev 1 |
+| 12 | Απόσβεση λοιπών άυλων στοιχείων του ενεργητικού (εξαιρούνται οι εγγραφές ποδοσφαιριστών) | pág. 12, Jev 0.92 |
+| 13 | Έξοδα τέλεσης αγώνων | pág. 29, Jev 1 |
+| 14 | Κόστη χορηγιών και διαφημίσεων | pág. 29, precedente |
+| 15 | Εμπορικές δαπάνες | pág. 29, Jev 0.94 |
+| 16 | Έξοδα εγκαταστάσεων | pág. 29, precedente |
+| 17 | Αμοιβές Manager | pág. 29, precedente |
+| 18 | Αθλητρικό υλικό | pág. 29, precedente |
+| 19 | Δικαστικά έξοδα | pág. 29, Claude 0.8 |
+| 20 | Παράβολα συμμετοχής σε διοργανώσεις & επικύρωσης συμβολαίων | pág. 29, precedente |
+| 21 | Ποσοστά προς απόδοση σε φορείς | pág. 29, precedente |
+| 22 | Πρόστιμα – Προσαυξήσεις ρυθμίσεων | pág. 29, precedente |
+| 23 | Ασφάλιστρα ποδοσφαιριστών | pág. 29, precedente |
+| 24 | Αμοιβές & παροχές τρίτων | pág. 29, precedente |
+| 25 | Λοιποί φόροι & τέλη | pág. 29, Claude 0.85 |
+| 26 | Απόσβεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών) | pág. 12, Jev 1 |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-14): perimetro = consolidado. perimetro-senales.mjs: el ejercicio 2024-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual/consolidado); 13 documento(s) mirados
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): fila = 0. Claude 2026-10-14 (cola del lote 71, subagente Sonnet + revisión): L496 (4.450.000) y L497 (-195.000) son el detalle de 'Κέρδος από την διάθεση...' 4.252.500 (L498); el neto de transferencias L499 (2.471.335) = -1.781.165 + 4.252.500. Cargarlas además del Κέρδος duplicaba: ingresos 2024 quedan 16,354681 (columna 2024 de Aris_FS_2025.md)
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): fila = 0. Claude 2026-10-14: ver el ajuste de L496; el deterioro es parte del Κέρδος de L498
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2023–24 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Aris".
+```
+
 ## 2023
 
 ### Ingresos
@@ -139,6 +204,10 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024): Comercial / Sponsors, Estadio, Televisión, Premios por competencias, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Organización de partidos
+```
+
 ### Liga
 
 ```text
@@ -180,6 +249,10 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024): Comercial / Sponsors, Estadio, Televisión, Premios por competencias, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación), Organización de partidos
+```
+
 ### Liga
 
 ```text
@@ -210,4 +283,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Aris/Aris_FS_2023-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### aris-gr-fs-2024-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Aris/Aris_FS_2024-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
