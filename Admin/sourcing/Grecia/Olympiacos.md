@@ -32,3 +32,5 @@ adicional a lo que ya cubre GEMI.
 - Último chequeo: 2026-09-17.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2016 desde `Clubes/Grecia/Olympiacos/PAE_Olympiacos_Chrimatooikonomikes_katastaseis_2016-06-30.pdf` (sourceId `olympiacos-gr-pae-olympiacos-chrimatooikonomikes-katastaseis-2016-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2017 desde `Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2017-06-30.pdf` (sourceId `olympiacos-gr-pae-olympiacos-fs-2017-06-30`).
