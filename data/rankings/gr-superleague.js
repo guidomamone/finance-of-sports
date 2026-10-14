@@ -55,6 +55,9 @@ window.RANKINGS["gr-superleague"] = {
   2022: {
     leagueSize: null,
     clubs: [
+      { id:"olympiacos-gr", revenue:69.355, reportType:"official_balance_sheet",
+        sourceId:"olympiacos-gr-pae-olympiacos-fs-2022-06-30",
+        mix:[["Comercial / Sponsors",26.458],["Estadio",5.372],["Televisión",2.723],["Premios por competencias",15.758],["Venta de Jugadores",17.044],["Otros ingresos",2]] },
       { id:"aekathens-gr", revenue:22.872, reportType:"official_balance_sheet",
         sourceId:"aekathens-gr-aek-fs-orthi-epanalipsi-2022",
         mix:[["Comercial / Sponsors",9.469],["Estadio",3.868],["Televisión",5.006],["Premios por competencias",0.746],["Venta de Jugadores",0.761],["Otros ingresos",3.022]] },
