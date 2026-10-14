@@ -89,6 +89,9 @@ window.RANKINGS["gr-superleague"] = {
   2020: {
     leagueSize: null,
     clubs: [
+      { id:"olympiacos-gr", revenue:92.335, reportType:"official_balance_sheet",
+        sourceId:"olympiacos-gr-pae-olympiacos-fs-2020-06-30",
+        mix:[["Comercial / Sponsors",12.837],["Estadio",6.399],["Televisión",5.455],["Premios por competencias",40.913],["Venta de Jugadores",26.095],["Otros ingresos",0.636]] },
       { id:"aekathens-gr", revenue:22.045, reportType:"official_balance_sheet",
         sourceId:"aekathens-gr-aek-notes-2020-06-30",
         mix:[["Comercial / Sponsors",11.922],["Estadio",3.986],["Televisión",1.597],["Premios por competencias",1.756],["Otros ingresos",2.784]] },

@@ -36,3 +36,5 @@ adicional a lo que ya cubre GEMI.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2017 desde `Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2017-06-30.pdf` (sourceId `olympiacos-gr-pae-olympiacos-fs-2017-06-30`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2018 desde `Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2018-06-30.pdf` (sourceId `olympiacos-gr-pae-olympiacos-fs-2018-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2020 desde `Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2020-06-30.pdf` (sourceId `olympiacos-gr-pae-olympiacos-fs-2020-06-30`).
