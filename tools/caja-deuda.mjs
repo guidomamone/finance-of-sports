@@ -605,6 +605,12 @@ function evaluar(prop, { factor, anterior = null, siguiente = null, factorSiguie
   const otraFamilia = (prop.filas || []).find((f) => (cual === 'deuda' ? CAJA_RE : cual === 'cash' ? DEUDA_FINANCIERA_RE : null)?.test(f.norm || ''));
   if (otraFamilia) return { ok: false, valor: null, motivo: `la fila "${otraFamilia.etiqueta}" es de ${cual === 'deuda' ? 'caja' : 'deuda'}, no de ${cual === 'deuda' ? 'deuda' : 'caja'}` };
   const valor = prop.ninguna ? 0 : r6(prop.filas.reduce((a, f) => a + f.valor, 0) * esc);
+  // (aprobado por Guido el 2026-10-14) LA TRAMPA DEL CERO: filas propuestas que suman 0 no prueban nada, porque el vecino también da 0 y
+  // "coincide". Casos (medición de Jev en todos los clubes): Köln 2024, Jev propuso una sola fila de deuda en 0 (sitio 37,86 M); Panetolikos
+  // 2022, la IA propuso "Δάνεια" + "Τραπεζικά δάνεια" en 0 y se publicó deuda 0, mientras su cuadro de vencimientos (L180) imprime "Δανεισμός
+  // 675.223,80". Para todos los escalones: no pasa y la propuesta baja al siguiente. Un 0 de verdad sale solo por "ninguna fila de deuda"
+  // (prop.ninguna, escalón 1: balance completo con su total del pasivo y el club sin otras filas de deuda).
+  if (!prop.ninguna && valor === 0) return { ok: false, valor, motivo: 'las filas propuestas suman 0 (un cero sale solo por "ninguna fila")' };
   const chequeos = []; // [nombre, coincide, detalle]
   if (anterior != null) {
     if (prop.ninguna) chequeos.push(['año anterior', Math.abs(anterior) <= TOL(0), `cargado ${anterior}`]);

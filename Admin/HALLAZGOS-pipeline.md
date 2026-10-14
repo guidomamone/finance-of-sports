@@ -92,3 +92,6 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   League y Super League 2, 2016-2025). Los colores no se pueden cachear: footylogos.com/color-codes trae solo 9 ligas (Bundesliga,
   Eredivisie, LaLiga, Liga MX, Liga Profesional Argentina, Ligue 1, Premier League, Serie A, Brasileirão A) y ningún club griego. El color
   de un club griego sigue el proceso a mano de `club-or-year-onboarding/club-nuevo.md`.
+- **Trampa del cero en caja-deuda (2026-10-14)**: con la compuerta nueva (filas que suman 0 no pasan), --medir sin Jev ni IA baja deuda
+  de 56 a 53 iguales: los tres "iguales" eran ceros publicados que salían de filas en 0 (Once Caldas 2022-2023, PAOK 2021). El de PAOK 2021
+  era un error del sitio (deuda 0; el préstamo de 8,9 M pasó a corto plazo, L431), y con la IA guardada la compuerta propone 8,9.
