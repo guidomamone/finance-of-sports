@@ -560,6 +560,8 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 - Sin perfil ni respuesta: si la portada del documento (hasta la pág. 3) dice ΠΑΕ / Ποδοσφαιρική Ανώνυμη Εταιρεία, `cargar.mjs` guarda
   "no" y "no" con esa línea como cita (fuente `forma-juridica`) y cierra los casos de perfil del club (to-do 232 c). Solo ΠΑΕ: la SAF
   brasileña no sirve (Cuiabá y Ferroviária tienen socios).
+- Una respuesta de categoría en la cola (aceptar o corregir, salvo `no_es_rubro`) cierra los casos pendientes del mismo club con la misma
+  etiqueta en otros años; `cargar.mjs` aplica la respuesta solo si la fila está en la misma nota y, si no, el caso se reabre (to-do 232 d).
 - Una respuesta de perfil en la cola (`corregir --valor sí|no`) se guarda en el perfil en el momento y cierra los casos iguales
   (mismo club y campo) de los otros años, pendientes (to-do 232 r).
 - Dos datos por club: ¿tiene socios que pagan cuota?, ¿tiene otros deportes en sus estados financieros? Sí, no o no se sabe, con evidencia.

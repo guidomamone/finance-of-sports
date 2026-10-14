@@ -260,6 +260,17 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     // contestados de a uno; OFI Crete: 5+5 pendientes). Al contestar `corregir --valor sí|no`, se guarda en el perfil en el momento (la misma
     // lectura de sí/no que cargar.mjs) y la compuerta cierra como `obsoleto` SOLO los otros casos pendientes con el mismo motivo y el mismo
     // detalle (`<clubId>:<campo>`), con cerrarResueltoPorClub(). Con el perfil ya sabido, cargar.mjs no los vuelve a levantar.
+    // CATEGORÍA: UNA RESPUESTA CIERRA LOS OTROS AÑOS PENDIENTES DEL CLUB (to-do 232 d, aprobado por Guido el 2026-10-14). Un lote levanta los
+    // casos de todos los años antes de que nadie conteste (PAOK: 70 casos para 13 etiquetas), y la respuesta de otro documento del club ya la
+    // toma cargar.mjs (respuestaCat, Versiones 344 y 403, con la compuerta de la MISMA NOTA). Al contestar uno, la compuerta cierra como
+    // `obsoleto` solo los pendientes de la MISMA carpeta y el MISMO detalle (etiqueta, o etiqueta|lado). La nota no se mira acá: si en un año
+    // la fila está en otra nota, cargar.mjs no aplica la respuesta, vuelve a levantar el caso y agregarCaso() lo reabre. Medido en la cola: de
+    // 264 grupos club+etiqueta con 2+ respuestas, 260 dieron la misma categoría. `no_es_rubro` vale solo para su documento: no cierra otros.
+    if (casos.get(id).etapa === 'cargar' && casos.get(id).motivo === 'categoria' && (decision === 'aceptar' || (decision === 'corregir' && flag('--valor') !== 'no_es_rubro'))) {
+      const o = casos.get(id); const carpeta = o.pdf.split('/').slice(0, -1).join('/'); let n = 0;
+      for (const c of casos.values()) if (c.id !== id && c.etapa === 'cargar' && c.motivo === 'categoria' && c.detalle === o.detalle && c.pdf.split('/').slice(0, -1).join('/') === carpeta && cerrarResueltoPorClub(c.pdf, c.etapa, c.motivo, c.detalle, o)) n++;
+      if (n) console.log(`Cerré ${n} caso(s) de la misma etiqueta en otros años del club (cargar.mjs los reabre si en ese año la fila está en otra nota).`);
+    }
     const c0 = casos.get(id); const v = decision === 'corregir' ? (/^s[ií]/i.test(flag('--valor')) ? true : /^no/i.test(flag('--valor')) ? false : undefined) : undefined;
     if (c0.motivo === 'perfil' && v !== undefined) {
       const [clubId, campo] = String(c0.detalle).split(':');

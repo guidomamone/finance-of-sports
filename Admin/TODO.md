@@ -26,9 +26,6 @@ ni en el comentario de ningún archivo de código.
     b) Gestiones de un club nuevo: cada año frena con un caso "cargar · gestion" y la tanda de subagentes se arma a mano
        (`Admin/gestiones-por-pais/tanda-2026-10-14/lote-N.json` con clubId y cierres). Un script que arme los `lote-N.json` desde los casos
        `gestion` pendientes de la cola, y que cargue el `resultado-N.json` validado y conteste esos casos, ahorra el armado en cada país.
-    d) La cola pregunta la MISMA etiqueta una vez por año: PAOK dejó 78 casos de categoría para 8 ejercicios, casi todos repetidos
-       ("Αμοιβές τρίτων", "Παροχές τρίτων"...). Agrupar por club + etiqueta: una respuesta vale para los años en que la fila es la misma
-       (mismo lado, misma nota), y un año distinto vuelve a preguntar.
     e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
        Grecia fue el 20% del gasto de API. Mirar qué texto le hace falta de verdad (to-do 230 lo deja como tercer cambio).
     h) La categoría se decide por ETIQUETA, y en los estados griegos por función la misma etiqueta aparece en dos notas con sentido
