@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Grecia/Atromitos/Atromitos_FS_2023-06-30.md",
+ "generado": "2026-10-14T12:38:31.536Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "το συνολικό ποσό € 15.445,13 εμφανίζεται στον ισολογισμό ως υποχρέωση της εταιρείας",
+ "caja": {
+  "lineas": [
+   189
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   216,
+   222,
+   223
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no declara la escala explícitamente; los importes con decimales en euros indican unidades. L216 son préstamos de partes vinculadas. L223 (12.500) corresponde según la nota 10.1.1 a la porción corriente de la ayuda estatal reembolsable; se incluyó por su rótulo, aunque podría excluirse. Se excluyó L218 (subvenciones estatales no corrientes)."
+}

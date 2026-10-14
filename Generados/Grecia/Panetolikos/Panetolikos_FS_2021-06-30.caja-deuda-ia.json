@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2021-06-30.md",
+ "generado": "2026-10-14T12:38:56.011Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Ποσά σε ΕΥΡΩ)",
+ "caja": {
+  "lineas": [
+   727
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   760
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Δάνεια (L760) es 0,00 al 30.06.2021; la empresa declara no tener endeudamiento bancario. La tabla de riesgos etiqueta como 'Δανεισμός' los 15.711,01 de 'Λοιπές μακροπρόθεσμες υποχρεώσεις' (L761), cuya naturaleza no está clara, por lo que se excluyeron."
+}

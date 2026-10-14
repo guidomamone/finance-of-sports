@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2022-06-30.md",
+ "generado": "2026-10-14T12:37:26.749Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   365
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   398,
+   404
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La deuda es un préstamo convertible en bonos (8,9 M€) presentado como no corriente al 30/6/2022; la línea corriente L404 está en cero ese año."
+}

@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2020-06-30.md",
+ "generado": "2026-10-14T12:37:19.228Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "€",
+ "caja": {
+  "lineas": [
+   390
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   422
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance en euros con decimales (unidades); la evidencia '€' proviene de la nota de arrendamientos (L1246), ya que el balance no indica la escala explícitamente. Deuda: préstamo convertible de 8,9M (L422). Además, la línea 'Λοιπές υποχρεώσεις' (L429) incluye préstamos de la matriz Dimera por 4M más intereses (4,67M en total, L1005), pero no se incluyó por ser una línea mixta."
+}

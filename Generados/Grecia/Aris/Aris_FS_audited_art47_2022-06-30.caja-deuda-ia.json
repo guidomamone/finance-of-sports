@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_FS_audited_art47_2022-06-30.md",
+ "generado": "2026-10-14T12:37:52.829Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   493
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   512
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Solo aparece deuda bancaria no corriente (L512); la línea de partes relacionadas (L513) es cero en 2022. No hay porción corriente de préstamos separada en el balance."
+}

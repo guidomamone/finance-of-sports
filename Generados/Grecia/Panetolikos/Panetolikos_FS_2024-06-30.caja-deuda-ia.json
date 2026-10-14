@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2024-06-30.md",
+ "generado": "2026-10-14T12:39:08.339Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   453
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Montos en euros con decimales (unidades), sin frase explícita de escala. No hay préstamos bancarios en el balance; 'Λοιπές μακροπρόθεσμες υποχρεώσεις' (L472) corresponde a acuerdos de pago con la administración tributaria y la seguridad social (nota 4), no a deuda financiera."
+}

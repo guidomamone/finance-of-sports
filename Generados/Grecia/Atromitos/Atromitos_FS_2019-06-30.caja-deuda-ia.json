@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/Atromitos/Atromitos_FS_2019-06-30.md",
+ "generado": "2026-10-14T12:38:15.665Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Το ποσό € 2.861.720,18 αφορά σε δανεισμό από μέτοχο μακροπρόθεσμης λήξης.",
+ "caja": {
+  "lineas": [
+   188
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   216,
+   221
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los importes del balance están en euros con decimales (unidades); no aparece una frase explícita de escala en la cabecera, así que la evidencia se tomó de una nota que expresa los importes en €. Los préstamos a largo plazo (L216) corresponden, según la nota 10.1.1, a un préstamo del accionista y no a deuda bancaria; se incluyen como deuda financiera, pero son dudosos. Los préstamos bancarios corrientes (L221) son 0 en 2019."
+}

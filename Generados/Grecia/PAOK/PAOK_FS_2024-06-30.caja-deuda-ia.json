@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2024-06-30.md",
+ "generado": "2026-10-14T12:37:34.470Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   385
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   418
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las líneas de pasivo corriente parecen truncadas (faltan líneas antes de L424: el total 18.764.920,88 no cuadra con las partidas listadas), por lo que podría existir deuda bancaria corriente no visible; Δάνεια no corrientes corresponden a bonos (DIMERA LTD)."
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md",
+ "generado": "2026-10-14T12:39:04.409Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "01.07- 30.06.2023 €",
+ "caja": {
+  "lineas": [
+   501
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance (L480-L532) no presenta préstamos bancarios ni financieros; los pasivos son comerciales, fiscales, de seguridad social (las 'Λοιπές μακροπρόθεσμες υποχρεώσεις' son arreglos con la administración tributaria y la seguridad social según L852) y otros. Hay intereses deudores menores en resultados. Montos expresados en euros con decimales (unidades); el balance no tiene una frase explícita de escala."
+}

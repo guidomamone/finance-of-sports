@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_FS_2024-06-30.md",
+ "generado": "2026-10-14T12:37:58.359Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   541
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   554,
+   562
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda no corriente (L562) es cero ('-') al 30/06/2024; 'Τραπεζικά και άλλα δάνεια' corriente puede incluir préstamos no bancarios."
+}

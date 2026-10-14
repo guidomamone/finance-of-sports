@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md",
+ "generado": "2026-10-14T12:37:23.339Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   395
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   419,
+   431
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance en euros con decimales (unidades). La deuda financiera es el préstamo de 8,9 M€: no corriente 0 en 2021 (L419) y reclasificado a corriente (L431). La frase de escala proviene de una nota (L1206) y no del encabezado del balance."
+}

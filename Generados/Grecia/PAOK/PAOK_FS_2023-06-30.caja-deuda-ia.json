@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2023-06-30.md",
+ "generado": "2026-10-14T12:37:30.299Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   360
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   392
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La deuda financiera es el préstamo obligacionario (convertible y nuevo) clasificado íntegramente como no corriente (L392); no hay préstamos corrientes. Los intereses devengados con partes vinculadas (258.089,88 €) están dentro de otras obligaciones corrientes y no se incluyeron."
+}

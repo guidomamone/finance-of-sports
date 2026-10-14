@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_FS_2023-06-30.md",
+ "generado": "2026-10-14T12:37:55.389Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   332
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   345,
+   353
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La deuda no corriente (L353) es cero en 2023; se incluye igual por ser la línea de préstamos a largo plazo."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.md",
+ "generado": "2026-10-14T12:37:37.468Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   381
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   411,
+   414
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Al 30/6/2025 el préstamo no corriente (L411) es nulo y solo queda el préstamo corriente de 1.200.000 € (L414); se incluyen ambas líneas."
+}

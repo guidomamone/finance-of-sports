@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2017-06-30.md",
+ "generado": "2026-10-14T12:36:31.421Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(ποσά σε €)",
+ "caja": {
+  "lineas": [
+   306
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   331,
+   332,
+   341,
+   342
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se toma la columna del Grupo (Όμιλος) al 30/6/2017. Las 'Λοιπές χρηματοοικονομικές υποχρεώσεις' (nota 17, junto a los préstamos) se incluyen como deuda financiera, aunque su naturaleza exacta debería confirmarse en la nota 17. La línea L331 de préstamos no corrientes vale 0 en 2017."
+}

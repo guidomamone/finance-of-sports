@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2020-06-30.md",
+ "generado": "2026-10-14T12:36:41.764Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(ποσά σε €)",
+ "caja": {
+  "lineas": [
+   308
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   331,
+   332,
+   341
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa la columna Όμιλος (consolidado) 30/6/2020. La deuda incluye préstamos (L331) y otras obligaciones financieras de la nota 17, no corrientes (L332) y corrientes (L341). Se excluyen los pasivos por arrendamientos IFRS 16 (L333, L342); la naturaleza de 'Λοιπές χρηματοοικονομικές υποχρεώσεις' convendría verificarla en la nota 17."
+}

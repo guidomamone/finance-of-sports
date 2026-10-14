@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_FS_2025-06-30.md",
+ "generado": "2026-10-14T12:38:00.971Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Κατάσταση Οικονομικής Θέσης (ποσά σε €)",
+ "caja": {
+  "lineas": [
+   539
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   552,
+   560
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Préstamos bancarios y otros solo corrientes (3.323.148 €); la línea no corriente (L560) figura en cero."
+}

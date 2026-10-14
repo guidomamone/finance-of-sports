@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/Atromitos/Atromitos_notes_2020-06-30.md",
+ "generado": "2026-10-14T12:38:19.662Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Το ποσό € 1.252.979,15 αφορά σε δανεισμό από τρίτο (συνδεδεμένα μέρη), μακροπρόθεσμης λήξης.",
+ "caja": {
+  "lineas": [
+   185
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   215,
+   221
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los préstamos no corrientes (L215) son de partes vinculadas, no bancarios; la línea de préstamos bancarios corrientes (L221) es 0. La escala no se declara explícitamente: las cifras con decimales y la nota en € indican unidades."
+}

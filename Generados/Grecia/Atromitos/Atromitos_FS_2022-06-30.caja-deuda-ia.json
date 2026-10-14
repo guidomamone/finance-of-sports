@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Grecia/Atromitos/Atromitos_FS_2022-06-30.md",
+ "generado": "2026-10-14T12:38:27.339Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   191
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   218,
+   224,
+   225
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Montos en euros con decimales (unidades), sin frase explícita de escala en el balance. Las líneas 218 y 225 corresponden a préstamos de partes vinculadas (λοιπά δάνεια) y la 224 a préstamos bancarios. Se excluyen las subvenciones estatales reembolsables (L220, 87.500, y la porción corriente de 12.500, que la nota 10.1.1 incluye en el total de 5.523.377,24) y la deuda refinanciada con EFKA (L219)."
+}
