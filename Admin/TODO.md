@@ -49,6 +49,9 @@ ni en el comentario de ningún archivo de código.
        aplique sola el importe de la nota (es lo que la pregunta ofrece), con la misma compuerta de cierre.
        Dónde: las respuestas las lee `verificar.mjs` con `respuestaDe(pdf, 'verificar', motivo, detalle)` (L190, L1360); el caso es
        `duda-tema` de extraer. El ajuste que se puso a mano: `fila` de Olympiacos 2023 L237 en `Admin/registros/ajustes-manuales.jsonl`.
+       CONOCIDO, SIN DAÑO HOY (Guido, 2026-10-14): en toda la cola, de 17 dudas "¿se carga X y no Y?", 4 contestadas "no" y solo esta es
+       de importe (las otras tres son de qué cuadro cargar); entró con el ajuste. Aplicarla sola pide que la duda traiga los dos importes con
+       su línea en forma estructurada, o sea cambiar el prompt pago de extraer (y su caché). Se retoma si se repite.
     l) Desglose de un renglón NETO del estado: en Olympiacos el estado NIIF imprime solo "Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών" y
        la nota lo abre en venta bruta menos costos; extraer marcó los costos como `gasto` y la carga los puso como gasto en 2023 y como
        ingreso negativo en 2021, 2022, 2024 y 2025 (hubo que fijarlo con ajustes `categoria`). Si el renglón que la nota desglosa es de
