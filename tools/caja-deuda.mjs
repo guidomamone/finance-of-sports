@@ -21,7 +21,7 @@
 //   ESCALÓN 1  vocabulario (vocabulario.mjs CAJA / DEUDA_FINANCIERA): se PROPONEN las filas del balance con esos nombres (una sola por
 //              familia). "Ninguna fila" es una propuesta para la deuda (= 0, decisión de Guido) si el balance está completo (tiene su total del
 //              pasivo) y el club usa filas de deuda financiera en otros años.
-//   ESCALÓN 1b Jev (to-do 233 + 232 t; solo con --jev, EN MEDICIÓN): una llamada barata por documento; la caja como opción cerrada entre las
+//   ESCALÓN 1b Jev (to-do 233 + 232 t; fijo en --club desde el 2026-10-14, en --medir con --jev): una llamada barata por documento; la caja como opción cerrada entre las
 //              filas del balance y la deuda como sí/no por fila. Solo propone filas; decide la misma compuerta. Respuestas en
 //              Generados/_cache/jev-caja-deuda.jsonl.
 //   ESCALÓN 2  IA (Claude, ~US$ 0,03 por documento, una llamada para caja y deuda, solo si 0 y 1 no pasaron): PROPONE números de línea del
@@ -898,12 +898,21 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
       if (aj && ctx.factor) { res[k] = { ctx, valor: r6(Math.abs(parseNumber(aj.valor)) * ctx.factor), escalon: 0, validacion: 'ajuste manual', como: `ajuste manual (${aj.fecha}): ${aj.motivo}`, filas: [] }; continue; }
       res[k] = { ctx, ...escalera(ctx.filas, k === 'cash' ? 'cash' : 'deuda', ctx) };
     }
-    const sinDato = faltan.filter((k) => res[k].valor == null);
+    // ESCALÓN 1b, Jev (to-do 233 + 232 t; entró el 2026-10-14 tras medirlo en todos los clubes: caja 9 de 9 iguales, deuda 5 de 7 y los 2
+    // distintos eran errores del sitio, PAOK 2021 y Panetolikos 2022; US$ 0,11 en total). Antes de la IA cara; sin --ejecutar, ensayo.
+    let sinDato = faltan.filter((k) => res[k].valor == null);
+    if (sinDato.length) {
+      const j = await jevDe(filasDe(a.md), ejecutar);
+      if (j.ensayo) { usd += j.usd; for (const k of sinDato) res[k].como += ` · escalón 1b: ensayo (~US$ ${j.usd.toFixed(4)})`; }
+      else if (j.error) { for (const k of sinDato) res[k].como += ` · escalón 1b: ${j.error}`; }
+      else { usd += j.costo || 0; for (const k of sinDato) { const ctx = { ...res[k].ctx, jev: j.datos }; res[k] = { ctx, ...escalera(ctx.filas, k === 'cash' ? 'cash' : 'deuda', ctx) }; } }
+      sinDato = faltan.filter((k) => res[k].valor == null);
+    }
     if (sinDato.length) {
       const r = await iaDe(a.md, filasDe(a.md), res.grossDebt?.club);
       if (r.ensayo) { usd += r.usd; for (const k of sinDato) res[k].como += ` · escalón 2: ensayo (~US$ ${r.usd.toFixed(3)})`; }
       else if (r.error) { for (const k of sinDato) res[k].como += ` · escalón 2: ${r.error}`; }
-      else { usd += r.costo || 0; for (const k of sinDato) res[k] = { ctx: res[k].ctx, ...escalera(res[k].ctx.filas, k === 'cash' ? 'cash' : 'deuda', { ...res[k].ctx, ia: r.datos }) }; }
+      else { usd += r.costo || 0; for (const k of sinDato) res[k] = { ctx: res[k].ctx, ...escalera(res[k].ctx.filas, k === 'cash' ? 'cash' : 'deuda', { ...res[k].ctx, ia: r.datos }) }; } // ctx ya trae jev
     }
     // (Versión 502, aprobado por Guido el 2026-10-05) un valor completado en esta corrida YA NO cuenta como cargado para el año siguiente: un
     // vecino es lo cargado en el sitio o el documento vecino, nunca una propuesta que nadie confirmó (si no, un error se encadena: Fortaleza
