@@ -33,3 +33,5 @@ llega a onboardear este club.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2017 desde `Clubes/Grecia/PAOK/PAOK_FS_2016-17.pdf` (sourceId `paok-gr-fs-2016-17`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2019 desde `Clubes/Grecia/PAOK/PAOK_FS_2019-06-30.pdf` (sourceId `paok-gr-fs-2019-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2020 desde `Clubes/Grecia/PAOK/PAOK_FS_2020-06-30.pdf` (sourceId `paok-gr-fs-2020-06-30`).

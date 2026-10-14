@@ -18,6 +18,12 @@ const paokgrRevenueLinesByYear = {
     { rawLabel:'Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων', normalizedCategory:'other_income', amountNative:9.992336, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:2.480573, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Κύκλος εργασιών', normalizedCategory:'lump_football_operations', amountNative:17.768593, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά συνήθη έσοδα', normalizedCategory:'other_income', amountNative:3.341295, disclosureLevel:'aggregated' },
+    { rawLabel:'Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων', normalizedCategory:'other_income', amountNative:3.566975, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.528165, disclosureLevel:'aggregated' },
+  ],
 };
 const paokgrExpenseLinesByYear = {
   2017: [
@@ -65,6 +71,12 @@ const paokgrExpenseLinesByYear = {
     { rawLabel:'Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-2.997523, disclosureLevel:'aggregated' },
     { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-1.2005, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος', normalizedCategory:'lump_football_operations_expense', amountNative:-43.188601, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-4.528406, disclosureLevel:'aggregated' },
+    { rawLabel:'Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-2.482523, disclosureLevel:'aggregated' },
+    { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-1.777332, disclosureLevel:'aggregated' },
+  ],
 };
 const paokgrFiscalYearMeta = {
   2017: {
@@ -100,6 +112,26 @@ const paokgrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:46.679287, officialTotalExpenses:51.784655, officialPAT:-5.277826,
   },
+  2020: {
+    incluidoEn:{ player_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, player_impairment:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, depreciation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, other_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
+    currency:'EUR', fxRef:'EUR@2020-06-30',
+    sourceId:'paok-gr-fs-2020-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.132817, tax:0,
+    extraRows: [
+      {label:'Πιστωτικοί τόκοι και συναφή έσοδα', value:0.057784},
+      {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.190601},
+      {label:'Φόροι εισοδήματος', value:0},
+    ],
+    sinDesglose: [
+      {renglon:'Κύκλος εργασιών', lado:'revenue', importe:17.768593, motivo:'el documento no desglosa este renglón'},
+      {renglon:'Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος', lado:'expense', importe:43.188601, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:25.205029, officialTotalExpenses:51.976862, officialPAT:-26.904651,
+  },
 };
 const paokgrPresupuestoOverlayByYear = {};
 
@@ -124,6 +156,11 @@ Object.assign(sources, {
   'paok-gr-fs-2019-06-30': {
     id:'paok-gr-fs-2019-06-30', clubId:'paok-gr',
     title:'Panthessalonikeios Athlitikos Omilos Konstantinoupoliton P.A.E. — PAOK_FS_2019-06-30 (ejercicio 2019)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'paok-gr-fs-2020-06-30': {
+    id:'paok-gr-fs-2020-06-30', clubId:'paok-gr',
+    title:'Panthessalonikeios Athlitikos Omilos Konstantinoupoliton P.A.E. — PAOK_FS_2020-06-30 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

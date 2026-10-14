@@ -50,6 +50,48 @@ Ivan Savvidis (2012-08-10 a hoy): Dueño persona que conduce (Wikipedia: adquiri
 Duda: No se encontró fuente con la fecha formal en que Savvidis asumió la presidencia de la PAE (desde = fecha de adquisición del 10/8/2012). Un cambio de gestión de por medio (Wikipedia en inglés lo sigue listando como presidente) no se halló; los .md no nombran al presidente del directorio, solo a los vicepresidentes que firman.
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/PAOK/PAOK_FS_2020-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/PAOK/PAOK_FS_2020-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κύκλος εργασιών | pág. 17, Jev 1 |
+| 2 | Λοιπά συνήθη έσοδα | pág. 17, Jev 0.99 |
+| 3 | Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων | pág. 17, Jev 0.99 |
+| 4 | Λοιπά έσοδα και κέρδη | pág. 17, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος | pág. 17, Claude 0.8 |
+| 2 | Έξοδα διοίκησης | pág. 17, Jev 1 |
+| 3 | Έξοδα διάθεσης | pág. 17, Jev 1 |
+| 4 | Λοιπά έξοδα και ζημιές | pág. 17, Jev 0.95 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2017, 2019): Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación)
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2019–20 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "PAOK".
+```
+
 ## 2019
 
 ### Ingresos
@@ -181,4 +223,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/PAOK/PAOK_FS_2019-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### paok-gr-fs-2020-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/PAOK/PAOK_FS_2020-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
