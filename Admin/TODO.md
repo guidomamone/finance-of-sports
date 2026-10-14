@@ -53,6 +53,9 @@ ni en el comentario de ningún archivo de código.
        Los ajustes que lo fijaron: `categoria` player_sales en Olympiacos 2021-2025 (`Admin/registros/ajustes-manuales.jsonl`); el
        criterio es el de la skill `club-data-mapping` sección 3 ("reflejá cómo lo presenta cada club": 2016-2020 el estado imprime bruto).
        Ojo: el escalón tiene que respetar eso (si el ESTADO imprime ingreso y gasto por separado, quedan separados).
+       CONOCIDO, SIN DAÑO HOY (Guido, 2026-10-14): verificar.mjs ya pone del lado del ingreso las hijas de un renglón de ingreso (1.683 de
+       1.685 en todos los documentos, 67 en negativo) y cargar.mjs pregunta si la categoría contradice ese lado. Única excepción hoy: Ceará
+       2025 "Perdas na venda de ativos" (0,356 M) como gasto bajo "Outras receitas, líquidas" (el neto es el mismo).
     n) Un ajuste `fila` que suma una fila fuera del total impreso (Kifisia 2025: 60.000 de transferencias, L421) deja el chequeo del total
        de ingresos en NO en cada corrida. El ajuste tendría que poder decir "fuera del total impreso" para que ese chequeo lo descuente.
        El ajuste está en `Admin/registros/ajustes-manuales.jsonl` (Kifisia_notes_2025, campo `fila`); el chequeo es el "total de ingresos"
