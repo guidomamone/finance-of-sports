@@ -395,6 +395,10 @@ tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguien
 tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 0 (compuerta: documento anterior): "Δάνεια" pág. 15
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 1b (compuerta: año anterior): "Δάνεια" pág. 15 + "Βραχυπρόθεσμο μέρος μακροπροθέσμων δανείων" pág. 16
+```
+
 ### Liga
 
 ```text

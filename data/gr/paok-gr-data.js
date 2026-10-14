@@ -337,7 +337,7 @@ const paokgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:38.661362, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:0, cash:2.357038,
+    grossDebt:8.9, cash:2.357038,
     officialTotalRevenue:52.889098, officialTotalExpenses:52.19925, officialPAT:-3.764593,
   },
   2022: {
