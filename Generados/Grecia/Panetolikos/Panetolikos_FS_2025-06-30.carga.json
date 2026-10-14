@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.pdf",
- "generado": "2026-10-14T05:33:27.564Z",
+ "generado": "2026-10-14T06:03:22.718Z",
  "frena": [
   {
    "etapa": "club",
@@ -9,18 +9,6 @@
   {
    "etapa": "club",
    "motivo": "carpetas-clubes.mjs dice panetolikos-gr y quien.mjs --quien dice panetolikos"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Κόστος πωλήσεων\" -> lump_football_operations_expense 0.6; \"Έξοδα διάθεσης\" -> admin_general_expense 0.65; \"Φορολογικά και ασφαλιστικά πρόστιμα & πρ\" -> admin_general_expense 0.5"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   },
   {
    "etapa": "reintento",
@@ -85,9 +73,9 @@
     "amountNative": -6.274037,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Έξοδα διοίκησης",
@@ -105,9 +93,9 @@
     "amountNative": -0.075774,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Διάφορα έξοδα",
@@ -121,13 +109,13 @@
    },
    {
     "rawLabel": "Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.073712,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Έξοδα προηγούμενων χρήσεων",
@@ -169,7 +157,7 @@
      "renglon": "Κόστος πωλήσεων",
      "lado": "expense",
      "importe": 6.274037,
-     "motivo": "el documento no desglosa este renglón"
+     "motivo": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) \"Κόστος πωλήσεων | -6.274.036,89\". Nota de personal: L1079-1086, \"Σύνολο\" 1.959.575,41]"
     }
    ],
    "grossDebt": null,
@@ -181,7 +169,7 @@
   "source": {
    "id": "panetolikos-gr-fs-2025-06-30",
    "clubId": "panetolikos-gr",
-   "title": "Panetolikos — Panetolikos_FS_2025-06-30 (ejercicio 2025)",
+   "title": "Panaitolikos G.F.S. P.A.E. — Panetolikos_FS_2025-06-30 (ejercicio 2025)",
    "type": "official_balance_sheet",
    "reliability": "primary",
    "note": "Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
@@ -277,11 +265,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 6.274037,
    "cat": "lump_football_operations_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) \"Κόστος πωλήσεων | -6.274.036,89\". Nota de personal: L1079-1086, \"Σύνολο\" 1.959.575,41]",
    "destino": "expense",
    "amountNative": -6.274037
   },
@@ -308,11 +296,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.075774,
    "cat": "admin_general_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Έξοδα διάθεσης es el costo de venta/comercialización (importe chico); sin otra categoría mejor, va a administración y generales. Precedente: AEL Larissa 2016 y 2017, misma línea -> admin_general_expense. [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L506 (pág. 15) \"Έξοδα διάθεσης | -75.774,47\"]",
    "destino": "expense",
    "amountNative": -0.075774
   },
@@ -338,12 +326,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημίες\")",
    "signoFijo": 0.073712,
-   "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Multas y recargos: other_expenses, igual criterio que 2023 y 2024 (precedente Asteras 2019). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L1043 (pág. 29) \"Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις | 73.711,83\"]",
    "destino": "expense",
    "amountNative": -0.073712
   },
@@ -483,7 +471,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 6,
+  "motivos": 3,
   "lineasIngreso": 4,
   "lineasGasto": 6,
   "metaFilas": 3,

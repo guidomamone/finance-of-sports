@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2017-18.pdf",
- "generado": "2026-10-14T05:33:26.748Z",
+ "generado": "2026-10-14T06:03:22.100Z",
  "frena": [
   {
    "etapa": "club",
@@ -128,7 +128,7 @@
      "renglon": "Κόστος πωλήσεων",
      "lado": "expense",
      "importe": 3.850553,
-     "motivo": "precedente del país: 1 clubes (Levadiakos), titulo:κατασταση αποτελεσματων κατα λειτουργια · Levadiakos 2024: Κόστος πωλήσεων 2.303.644,63 sin desglose -> lump"
+     "motivo": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) \"Κόστος πωλήσεων | -6.274.036,89\". Nota de personal: L1079-1086, \"Σύνολο\" 1.959.575,41]"
     }
    ],
    "grossDebt": null,
@@ -140,7 +140,7 @@
   "source": {
    "id": "panetolikos-gr-fs-2017-18",
    "clubId": "panetolikos-gr",
-   "title": "Panetolikos — Panetolikos_FS_2017-18 (ejercicio 2018)",
+   "title": "Panaitolikos G.F.S. P.A.E. — Panetolikos_FS_2017-18 (ejercicio 2018)",
    "type": "official_balance_sheet",
    "reliability": "primary",
    "note": "Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Panetolikos/Panetolikos_FS_2017-18.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
@@ -225,7 +225,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "precedente del país: 1 clubes (Levadiakos), titulo:κατασταση αποτελεσματων κατα λειτουργια · Levadiakos 2024: Κόστος πωλήσεων 2.303.644,63 sin desglose -> lump",
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) \"Κόστος πωλήσεων | -6.274.036,89\". Nota de personal: L1079-1086, \"Σύνολο\" 1.959.575,41]",
    "destino": "expense",
    "amountNative": -3.850553
   },
@@ -256,7 +256,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "precedente del país: 1 clubes (Levadiakos), titulo:κατασταση αποτελεσματων κατα λειτουργια · Levadiakos 2024: Έξοδα διάθεσης 22.975,98 -> admin",
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Έξοδα διάθεσης es el costo de venta/comercialización (importe chico); sin otra categoría mejor, va a administración y generales. Precedente: AEL Larissa 2016 y 2017, misma línea -> admin_general_expense. [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L506 (pág. 15) \"Έξοδα διάθεσης | -75.774,47\"]",
    "destino": "expense",
    "amountNative": -0.045497
   },

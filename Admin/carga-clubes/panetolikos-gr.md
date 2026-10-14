@@ -4,6 +4,43 @@ Lo que antes iba como comentario en el data file del club, `data/<país>/panetol
 COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y meta. Las notas de cada fila van en una tabla con su número de
 fila (hay nombres de rubro repetidos en un mismo año).
 
+## Cabecera
+
+```text
+Panetolikos: alta por tools/alta-club.mjs (2026-10-14) desde Clubes/Grecia/Panetolikos/Panetolikos_FS_2016-17.pdf. brandColor #F7D417
+(procedencia en Admin/sourcing/Grecia/Panetolikos.md; tools/cargar-lote.mjs).
+```
+
+```text
+data/gr/panetolikos-gr-data.js — Panaitolikos G.F.S. P.A.E. (Grecia).
+ALTA POR SCRIPT (tools/alta-club.mjs, 2026-10-14), SIN EJERCICIOS CARGADOS TODAVÍA: las estructuras del data file
+nacen vacías a propósito. Los rubros, los totales oficiales y el resto del fiscalYearMeta los agrega la etapa de carga.
+
+Documento que originó el alta: Clubes/Grecia/Panetolikos/Panetolikos_FS_2016-17.pdf
+
+De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
+  id                 ok        "panetolikos-gr" — slug de "Panetolikos" + '-gr' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
+  name               ok        "Panaitolikos G.F.S. P.A.E." — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): Revisión del alta (Claude, 2026-10-14, subagente Sonnet revisado): razón so
+  displayName        ok        "Panetolikos" — nombre de la carpeta del club en Clubes/
+  country            ok        "GR" — carpeta de país "Grecia" (tabla PAISES)
+  reportingCurrency  ok        "EUR" — moneda de curso legal de Grecia
+  fiscalYearStart    ok        "07-01" — cierre del ejercicio: contenido del .md (49 de 65 fechas de fin de mes caen en el mes 6)
+  sport              ok        "futbol" — el .md nombra el fútbol 14 veces y ningún otro deporte más que eso
+  brandColor         pendiente (ausente) — la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)
+  anio               ok        2017 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
+  cierre             ok        "2017-06-30" — año del ejercicio + mes de cierre (contenido del .md (49 de 65 fechas de fin de mes caen en el mes 6))
+  reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
+  perimetro          ok        "individual" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-13): Claude 2026-10-13: PAE sin grupo: las 6-8 menciones de 'consolidado' son el
+  currency           ok        "EUR" — moneda de curso legal de Grecia (tabla PAISES de alta-club.mjs)
+  fxRef              ok        "EUR@2017-06-30" — el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2017-06-30 = 0.876271 (Tipo de referencia del Banco Central Europeo al 2017-06-30)
+  sourceId           ok        "panetolikos-gr-fs-2016-17" — clubId + nombre del archivo en slug
+  liga               ok        "gr-superleague" — roster cacheado de "2016–17 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Panetolikos"
+
+FISCAL YEAR META PROPUESTO para 2017 (NO registrado: un ejercicio con meta y
+sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
+  2017: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2017-06-30","sourceId":"panetolikos-gr-fs-2016-17"}
+```
+
 ## Gestiones
 
 _investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-14; to-do 231:_
@@ -12,4 +49,51 @@ _investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-14; to-d
 Gerasimos Belevonis (2017-01-19 a hoy): Sport24 del 19/1/2017: el directorio se reunió ese día, Kostoulas (mayor accionista) renunció a la presidencia y asumió quien era vicepresidente y director ejecutivo, Belevonis (el cuerpo de la nota lo llama 'Makis'; el comunicado de la PAE citado dice Gerasimos). Sigue hoy: panetolikos.gr/dioikisi/ lo lista como Πρόεδρος, con Kostoulas como Μεγαλομέτοχος y Thomas Spyrou de vicepresidente; ertsports.gr (3/6/2026) lo nombra presidente. Los balances lo muestran firmando como 'Ο Πρόεδρος του Δ.Σ. & Δ/νων Σύμβουλος' en todos los ejercicios cargados: Panetolikos_FS_2016-17.md:56-63 y 712-715 (firmado Agrinio 31.12.2017), Panetolikos_FS_2017-18.md:403-406 (31.12.2018) y 761-764, Panetolikos_FS_2019-20.md:416-419, Panetolikos_FS_2021-06-30.md:527-530, Panetolikos_FS_2022-06-30.md:527-530, Panetolikos_FS_2023-06-30.md:349-351, Panetolikos_FS_2024-06-30.md:323-325, Panetolikos_FS_2025-06-30.md:327-329. Vicepresidente que cofirma: Thomas Spyrou. Fecha exacta (no convención de día 01). Kostoulas (dueño, no cargado): sigue de mayor accionista y aporta los aumentos de capital (Panetolikos_FS_2016-17.md:159, Panetolikos_FS_2017-18.md:162, Panetolikos_FS_2019-20.md:406); el balance 2015-16 (Panetolikos_FS_2015-16.md:66-70, firmado 31-10-2016) lo muestra aun de presidente. Ninguna firma cambia entre cierre y aprobación en los ejercicios de este lote (no hace falta `firmo`).
 Decidido por Guido (2026-10-14), presidente que firma y no el dueño; era duda: Fotis Kostoulas sigue de mayor accionista y financia el club, y la prensa lo trata como el dueño; si Guido prefiere cargar al dueño persona como en AEK o Panathinaikos, habria que reemplazar a Belevonis por Kostoulas (que no renunció a la propiedad, solo a la presidencia). Se cargó a Belevonis porque Kostoulas dejó el cargo formalmente el 19/1/2017 y la fuente no dice que siga conduciendo.
 Duda: El nombre de pila en Sport24 aparece como 'Makis' en el cuerpo y 'Gerasimos' en el comunicado del club; los balances y la web del club dicen Gerasimos Belevonis. Makis es un diminutivo; ertsports (3/6/2026) trata a un 'Makis Belevonis' (director técnico saliente) como otra persona que el presidente Gerasimos.
+```
+
+## 2017
+
+### Ingresos
+
+```text
+2017: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Panetolikos/Panetolikos_FS_2016-17.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Grecia/Panetolikos/Panetolikos_FS_2016-17.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κύκλος εργασιών (καθαρός) | pág. 13, Jev 1 |
+| 2 | Λοιπά συνήθη έσοδα | pág. 13, Jev 1 |
+| 3 | Λοιπά έσοδα και κέρδη | pág. 13, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Κόστος πωλήσεων | pág. 13, precedente |
+| 2 | Έξοδα διοίκησης | pág. 13, Jev 1 |
+| 3 | Έξοδα διάθεσης | pág. 13, precedente |
+| 4 | Λοιπά έξοδα και ζημιές | pág. 13, Jev 0.95 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+alta-club.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2016–17 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Panetolikos".
+```
+
+## Fuentes
+
+### panetolikos-gr-fs-2016-17
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Panetolikos/Panetolikos_FS_2016-17.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

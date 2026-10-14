@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.pdf",
- "generado": "2026-10-14T05:33:27.241Z",
+ "generado": "2026-10-14T06:03:22.511Z",
  "frena": [
   {
    "etapa": "club",
@@ -9,18 +9,6 @@
   {
    "etapa": "club",
    "motivo": "carpetas-clubes.mjs dice panetolikos-gr y quien.mjs --quien dice panetolikos"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Κόστος πωλήσεων\" -> lump_football_operations_expense 0.6; \"Έξοδα διάθεσης\" -> admin_general_expense 0.65; \"Παροχές τρίτων\" -> admin_general_expense 0.6; \"Φορολογικά και ασφαλιστικά πρόστιμα & πρ\" -> admin_general_expense 0.5"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   },
   {
    "etapa": "reintento",
@@ -94,9 +82,9 @@
     "amountNative": -6.807271,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Έξοδα διοίκησης",
@@ -114,9 +102,9 @@
     "amountNative": -0.088709,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Παροχές τρίτων",
@@ -124,9 +112,9 @@
     "amountNative": -0.018375,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Φόροι και τέλη",
@@ -150,13 +138,13 @@
    },
    {
     "rawLabel": "Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.089651,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -188,7 +176,7 @@
      "renglon": "Κόστος πωλήσεων",
      "lado": "expense",
      "importe": 6.807271,
-     "motivo": "el documento no desglosa este renglón"
+     "motivo": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.716.651,78 € (L1159) de sueldos totales, repartidos sin dato entre las líneas por función. [Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md L548 (pág. 17) \"Κόστος πωλήσεων | -6.807.271,34\". Nota de personal: L1152-1159, \"Σύνολο\" 1.716.651,78]"
     }
    ],
    "grossDebt": null,
@@ -200,7 +188,7 @@
   "source": {
    "id": "panetolikos-gr-fs-2023-06-30",
    "clubId": "panetolikos-gr",
-   "title": "Panetolikos — Panetolikos_FS_2023-06-30 (ejercicio 2023)",
+   "title": "Panaitolikos G.F.S. P.A.E. — Panetolikos_FS_2023-06-30 (ejercicio 2023)",
    "type": "official_balance_sheet",
    "reliability": "primary",
    "note": "Cargado por tools/cargar.mjs (2026-10-14) desde la transcripción Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
@@ -311,11 +299,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 6.807271,
    "cat": "lump_football_operations_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.716.651,78 € (L1159) de sueldos totales, repartidos sin dato entre las líneas por función. [Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md L548 (pág. 17) \"Κόστος πωλήσεων | -6.807.271,34\". Nota de personal: L1152-1159, \"Σύνολο\" 1.716.651,78]",
    "destino": "expense",
    "amountNative": -6.807271
   },
@@ -342,11 +330,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.088709,
    "cat": "admin_general_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Έξοδα διάθεσης es el costo de venta/comercialización (importe chico); sin otra categoría mejor, va a administración y generales. Precedente: AEL Larissa 2016 y 2017, misma línea -> admin_general_expense. [Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md L553 (pág. 17) \"Έξοδα διάθεσης | -88.709,20\"]",
    "destino": "expense",
    "amountNative": -0.088709
   },
@@ -358,11 +346,11 @@
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημίες\")",
    "signoFijo": 0.018375,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Servicios de terceros dentro de Λοιπά έξοδα και ζημίες; es un gasto general. Precedente: AEL Larissa 2020 y 2025 y Asteras 2019, \"Παροχές τρίτων\" -> admin_general_expense. [Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md L1114 (nota 11, pág. 31) \"Παροχές τρίτων | 18.374,87\" dentro de \"Λοιπά έξοδα και ζημίες\" (L1111-1119)]",
    "destino": "expense",
    "amountNative": -0.018375
   },
@@ -403,12 +391,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Λοιπά έξοδα και ζημίες\")",
    "signoFijo": 0.089651,
-   "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Son multas y recargos tributarios y de seguridad social, no un tributo operativo: precedente de Asteras 2019, \"Φορολογικά πρόστιμα και προσαυξήσεις\" -> other_expenses (respuesta de Guido). Corrige la propuesta admin_general_expense; el criterio de impuestos/tasas -> admin no cubre multas. Mismo tratamiento en 2024 y 2025. [Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md L1117 (nota 11, pág. 31) \"Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις | 89.651,23\"]",
    "destino": "expense",
    "amountNative": -0.089651
   },
@@ -538,7 +526,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 6,
+  "motivos": 3,
   "lineasIngreso": 5,
   "lineasGasto": 7,
   "metaFilas": 3,
