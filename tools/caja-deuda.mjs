@@ -534,7 +534,7 @@ function propuestaJev(filas, jev, cual) {
   return fs.length ? { escalon: '1b', filas: dedupe(fs), como: `Jev (${fs.length} fila(s) de deuda)` } : null;
 }
 const CACHE_JEV = resolve(ROOT, 'Generados', '_cache', 'jev-caja-deuda.jsonl');
-let cacheJev = null; let claveJev = null;
+let claveJev = null;
 async function jevDe(filas, ejecutar) {
   const bal = dedupe(filas.filter((f) => f.balance)).filter((f, i, xs) => xs.findIndex((g) => g.linea === f.linea) === i).slice(0, 120);
   if (!bal.length) return { error: 'sin filas del balance' };
@@ -545,12 +545,18 @@ async function jevDe(filas, ejecutar) {
     ...Object.fromEntries(bal.map((f) => [`d${f.linea}`, { type: 'choice', instructions: `¿La fila L${f.linea} ("${String(f.etiqueta).slice(0, 120)}") es DEUDA FINANCIERA: préstamos, créditos bancarios, bonos u obligaciones financieras (corrientes o no corrientes)? No lo son: proveedores, impuestos, sueldos, ingresos diferidos, provisiones, arrendamientos, totales.`, criteria: { si: 'Es deuda financiera', no: 'No es deuda financiera' } }])),
   };
   const body = { state, model: 'jev-latest', questions };
+  return pedirJev(body, CACHE_JEV, ejecutar, (a) => (a.caja?.choice ? { caja: a.caja.choice, cajaConf: a.caja.confidence, deuda: bal.filter((f) => a[`d${f.linea}`]?.choice === 'si').map((f) => f.linea) } : null));
+}
+// UNA LLAMADA A JEV con caché por (cuerpo del pedido) en `archivo`: { datos } | { ensayo, usd } | { error }. `extraer(answers)` arma los datos
+// (null = respuesta inválida, no se guarda). Costo estimado del ensayo: el estado una vez por pregunta (cota alta).
+const cachesJev = new Map();
+async function pedirJev(body, archivo, ejecutar, extraer) {
   const { createHash } = await import('node:crypto');
   const clave = createHash('sha1').update(JSON.stringify(body)).digest('hex');
-  if (!cacheJev) { cacheJev = new Map(); if (existsSync(CACHE_JEV)) for (const l of readFileSync(CACHE_JEV, 'utf8').split('\n')) { if (!l.trim()) continue; try { const j = JSON.parse(l); cacheJev.set(j.clave, j); } catch { /* línea rota */ } } }
-  if (cacheJev.has(clave)) return { datos: cacheJev.get(clave).datos, cache: true };
-  // Costo estimado: el estado se procesa una vez por pregunta (por las dudas, la cota alta).
-  const tokens = Math.ceil(JSON.stringify(body).length / 4) * (1 + Object.keys(questions).length);
+  if (!cachesJev.has(archivo)) { const m = new Map(); if (existsSync(archivo)) for (const l of readFileSync(archivo, 'utf8').split('\n')) { if (!l.trim()) continue; try { const j = JSON.parse(l); m.set(j.clave, j); } catch { /* línea rota */ } } cachesJev.set(archivo, m); }
+  const cache = cachesJev.get(archivo);
+  if (cache.has(clave)) return { datos: cache.get(clave).datos, cache: true };
+  const tokens = Math.ceil(JSON.stringify(body).length / 4) * (1 + Object.keys(body.questions).length);
   if (!ejecutar) return { ensayo: true, usd: tokens * 42e-9 };
   if (!claveJev) { const env = resolve(ROOT, 'Admin', 'api-keys', 'jev.env'); const line = existsSync(env) ? readFileSync(env, 'utf8').split('\n').find((l) => l.startsWith('JEV_API_KEY=')) : null; if (!line) return { error: `falta ${env} con JEV_API_KEY=...` }; claveJev = line.slice(12).trim(); }
   for (let intento = 0; intento < 4; intento++) {
@@ -558,12 +564,11 @@ async function jevDe(filas, ejecutar) {
     try { res = await fetch('https://api.typesafe.ai/v1/systemone', { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${claveJev}` }, body: JSON.stringify(body) }); }
     catch { await new Promise((r) => setTimeout(r, 2000 * (intento + 1))); continue; }
     if (res.ok) {
-      const j = await res.json(); const a = j.answers || {};
-      if (!a.caja?.choice) return { error: `Jev sin answers.caja: ${JSON.stringify(j).slice(0, 160)}` };
-      const datos = { caja: a.caja.choice, cajaConf: a.caja.confidence, deuda: bal.filter((f) => a[`d${f.linea}`]?.choice === 'si').map((f) => f.linea) };
+      const j = await res.json(); const datos = extraer(j.answers || {});
+      if (!datos) return { error: `Jev sin respuesta: ${JSON.stringify(j).slice(0, 160)}` };
       const usd = (j.usage?.input_tokens ?? tokens) * 42e-9;
       const { mkdirSync, appendFileSync } = await import('node:fs');
-      mkdirSync(resolve(ROOT, 'Generados', '_cache'), { recursive: true }); appendFileSync(CACHE_JEV, JSON.stringify({ clave, datos, usd }) + '\n'); cacheJev.set(clave, { datos });
+      mkdirSync(resolve(ROOT, 'Generados', '_cache'), { recursive: true }); appendFileSync(archivo, JSON.stringify({ clave, datos, usd }) + '\n'); cache.set(clave, { datos });
       return { datos, costo: usd };
     }
     const txt = (await res.text()).slice(0, 160);
