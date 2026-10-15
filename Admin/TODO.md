@@ -21,74 +21,13 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-ORDEN (2026-10-15): primero las altas
-de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (232 e, 233, 230) y lo que espera una decisión de Guido (130,
-183, 51).
-
-238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
-   sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
-   (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
-   `sin-verificar`. `duplicado` y `no-es-pdf` no son intermedios (se revisan solo para confirmar que están bien marcados). Cuántos hay
-   en cada uno: el resumen final de `node tools/pipeline.mjs` o `node tools/estado.mjs` (gratis); el 2026-10-15 eran 565 listo, 399
-   pendiente-segunda-voz, 355 revisar, 259 listo-para-jev, 220 sin-rubros, 38 sin-tablas y 1 sin-verificar, sobre 11.029 a trabajar.
-   Cómo: por país y por estado, el escalón que corresponde de la etapa 2 (`pipeline.mjs --lista`) y después lotes; lo que no se puede
-   cargar (sin estado de resultados, parcial) va a `documentos-descartados.txt` o `documentos-parciales.txt` con su ok, para que deje de
-   contar como frenado.
-
-237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
-    a) `periodo.mjs` tomó la FECHA DE FIRMA como cierre: Alverca 2022-23 quedó con cierre 2023-09-29 ("Alverca, 29 de Setembro de 2023",
-       relatorio-contas-2022-23.md L75 y L108) cuando el documento dice "Período findo em 30 de Junho de 2023" (L87) y las columnas
-       "30/06/2023 | 30/06/2022" (L93). Se resolvió con un ajuste `cierre`. Escalón posible: una fecha precedida por un nombre de lugar
-       ("<Ciudad>, <día> de <mes> de <año>") es la firma, no el cierre; y el "período findo em" o la fecha de las columnas del estado manda.
-    b) Un renglón del estado que JUNTA amortización de pases y depreciación ("Gastos/reversões de depreciação e amortização", notas 4 y 5)
-       va entero a una sola categoría. Moreirense 2022: pases 1.031.142,16 (L720) + depreciación 89.555,61 (L691) = 1.120.697,77 (L498);
-       2025: 612.126 (L944) + 291.735 (L895) = 903.861 (L530). Se cargó entero como player_amortisation (la parte mayor, como PAOK).
-       Escalón posible: si las notas que el renglón cita dan cada parte y suman exacto el renglón, abrirlo en dos filas con su categoría.
-    c) El perfil (socios, otros deportes) es por club, pero un mismo club publica como entidades distintas: Rio Ave 2014-15 es el club
-       asociación (cuotas 217.671,75 y futsal), 2015-16 a 2022-23 la SDUQ y 2023-24 en adelante la SAD. Se contestó "no" (SDUQ/SAD); no
-       cambia nada hoy porque 2014-15 trae las cifras. Pensar si el perfil va por entidad o por ejercicio.
-    d) `cargar-lote.mjs`: cuando un año de un club nuevo no se escribe y el alta se revierte, quedan los archivos NUEVOS del alta sin
-       borrar (Alverca: data/pt/alverca-pt-data.js y data/club-leagues/pt.js, sin trackear). El alta siguiente de la misma corrida (Rio Ave
-       2018, que estaba listo) frena por "cambios sin commitear en el sitio" y también se revierte. Se borraron a mano y Rio Ave 2018 entró.
-       El revertir tiene que borrar lo que el alta creó, no solo restaurar lo que existía.
-    e) La banda de `audit.js` (ingresos entre 0,2 y 2.000 M USD, P0 `escala-implausible`) frena a un club real de tercera división:
-       Alverca 2022, 152.299,54 € (≈ US$ 0,16 M), verificado y silenciado en audit-ignore.json. Escalón posible: que la banda tenga en
-       cuenta la liga del año (data/club-leagues) o que, con el resultado impreso cerrando, baje a aviso.
-    f) Una respuesta de la cola con una categoría del OTRO lado cambia el signo de la fila en vez de mudarla sin cambiar su efecto (como hace
-       el ajuste `categoria`): Nacional 2024, "Correções relativas a períodos anteriores" (ingreso 229.792, L793) contestada
-       exceptional_items quedó como gasto −0,229792 y el resultado no cerraba por 0,459584 (el doble). Se arregló con un ajuste `categoria`.
-    g) El aviso "Estadio en 0" pide que las TRES categorías del estadio (matchday_competition, stadium_other, season_tickets) tengan
-       ajuste `incluye`; con la de entradas alcanza para decir que el estadio está dentro de otra línea. Moreirense 2022 y 2025 llevan los
-       tres ajustes.
-    h) Formato portugués (SNC): la venta de jugadores viene en "Outros rendimentos" como "Rendimentos em investimentos não financeiros", con
-       una nota al pie que lo dice ("Inclui ... alienação de direitos desportivos de jogadores"). La categorización la puso en other_income
-       con confianza alta y no fue a la cola: Moreirense 2022 (4,10 M) y 2025 (8,00 M) se publicaron mal y se corrigieron con ajustes
-       `categoria`. Además, el ajuste compara la etiqueta con el asterisco de la nota ("...financeiros*") aunque la carga lo muestra sin él.
-       Escalón posible: leer la nota al pie de la fila (como "la nota de la fila" de caja-deuda) antes de categorizar.
-    i) En la lectura 5 de `verificar.mjs`, un ajuste `fila` con `reemplaza` no alcanza una fila que entra DESPUÉS, al abrir un renglón con
-       su nota ("nota exacta en la lectura 5"); y los ajustes `fila` sin `reemplaza` no entran. Vitória 2022 SAD: las cinco sub-rubricas de
-       "Prestação de serviços" (nota 16, L1905-1909) no llegaban a la carga (TV 6,92 M en 0) y, con `reemplaza "Prestação de serviços"`, la
-       fila madre no salía (ingresos 34,02 contra 23,49). Se resolvió reemplazando el renglón del ESTADO ("Vendas e serviços prestados", L590)
-       por sus seis partes. Escalón posible: aplicar `reemplaza` también a las filas que abre la nota, y avisar cuando un ajuste no entra.
-    j) Un ajuste `fila` que corrige el OCR de un renglón del estado (Alverca 2024, "Outros rendimentos" 522.591,60 -> 622.591,65) deja de
-       abrirse con su nota: la venta de jugadores (581.500, nota 17.2.3) quedaba en other_income dentro del renglón. Se resolvió con una
-       fila por línea de la nota. Escalón posible: que el renglón corregido por ajuste siga pasando por la apertura con su nota.
-    k) Cuando el .md pierde TODOS los signos de una tabla escaneada (Rio Ave 2024, pág. 14), los intereses obtenidos se suman como costo
-       (financiero 0,317495 en vez del neto −0,085703) y las reversiones de imparidad sin "-" quedan como gasto. Se resolvió con ajustes
-       `fila` mirando la imagen. Escalón posible: que la lectura con signos pruebe el financiero por etiqueta ("obtidos"/"suportados").
-    l) `cargar.mjs` toma el valor ABSOLUTO de un ajuste `fila` de gasto con valor negativo (una reversión), aunque `verificar.mjs` cierra con
-       el signo: Rio Ave 2024, reversiones de imparidad −4,89 y −2.500,00 como gasto; verificar cerraba y la carga quedaba 5.011 € arriba en
-       gastos (tie-out). Se pasaron al lado del ingreso con valor positivo (mismo efecto). Escalón posible: que cargar respete el signo del
-       ajuste como lo hace la lectura "signo del documento" (to-do 200). Además, el chequeo del año vecino compara con documentos que están en
-       documentos-descartados.txt (Vitória 2021 contra el 2021-22 de la asociación; Rio Ave 2016 contra el 2014-15): tendría que saltearlos.
-
-232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
-    letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
-    e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
-       Grecia fue el 20% del gasto de API. Mirar qué texto le hace falta de verdad (to-do 230 lo deja como tercer cambio).
-       PROBADO Y DESCARTADO (2026-10-14): recortar los textos debajo de los títulos sin tabla pierde 7 decisiones y mete 2 errores
-       (Admin/HALLAZGOS-pipeline.md). Lo que queda por probar: que Jev haga una primera pasada barata (to-do 233) o achicar solo la parte
-       de las notas que viene DESPUÉS del estado de resultados.
+ORDEN (pedido de Guido, 2026-10-15), en este orden y sin saltear:
+1. Terminar de cargar Portugal (165 b0: confirmar altas, lote 77 y los que sigan hasta que no quede nada de Portugal por cargar).
+2. Mejoras de script: 237 y los cambios sin commitear de 165 b2 (`lote.mjs`, `fetch-club-league-reference.mjs`), medidos antes de
+   commitear.
+3. 238 (llevar a 0 los estados intermedios), que incluye Estonia y Bélgica (165 b1: ya transcriptas, falta validarlas y cargarlas).
+Después: el resto de las altas de países nuevos (165 c) y las gestiones (195); al final el ahorro de API (232, 233, 230) y lo que
+espera una decisión de Guido (130, 183, 51).
 
 165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (decisión de Guido, 2026-10-07; estado al 2026-10-10). Un país por vez, con el pipeline
     (skill club-or-year-onboarding; club nuevo: revisión del alta en Admin/registros/altas-revision.jsonl: nombre, color, perímetro, cierres y ligas).
@@ -142,6 +81,71 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
     c) Perímetro en pregunta (decide el `name` ya registrado): Molde, Vålerenga, Go Ahead Eagles, Basel, Pardubice, Aalesund, Fredrikstad,
        Sarpsborg 08. Las preguntas de la revisión del alta siguen en Admin/registros/altas-revision.jsonl.
     Mejoras de script vistas en Grecia: to-do 232.
+
+237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
+    a) `periodo.mjs` tomó la FECHA DE FIRMA como cierre: Alverca 2022-23 quedó con cierre 2023-09-29 ("Alverca, 29 de Setembro de 2023",
+       relatorio-contas-2022-23.md L75 y L108) cuando el documento dice "Período findo em 30 de Junho de 2023" (L87) y las columnas
+       "30/06/2023 | 30/06/2022" (L93). Se resolvió con un ajuste `cierre`. Escalón posible: una fecha precedida por un nombre de lugar
+       ("<Ciudad>, <día> de <mes> de <año>") es la firma, no el cierre; y el "período findo em" o la fecha de las columnas del estado manda.
+    b) Un renglón del estado que JUNTA amortización de pases y depreciación ("Gastos/reversões de depreciação e amortização", notas 4 y 5)
+       va entero a una sola categoría. Moreirense 2022: pases 1.031.142,16 (L720) + depreciación 89.555,61 (L691) = 1.120.697,77 (L498);
+       2025: 612.126 (L944) + 291.735 (L895) = 903.861 (L530). Se cargó entero como player_amortisation (la parte mayor, como PAOK).
+       Escalón posible: si las notas que el renglón cita dan cada parte y suman exacto el renglón, abrirlo en dos filas con su categoría.
+    c) El perfil (socios, otros deportes) es por club, pero un mismo club publica como entidades distintas: Rio Ave 2014-15 es el club
+       asociación (cuotas 217.671,75 y futsal), 2015-16 a 2022-23 la SDUQ y 2023-24 en adelante la SAD. Se contestó "no" (SDUQ/SAD); no
+       cambia nada hoy porque 2014-15 trae las cifras. Pensar si el perfil va por entidad o por ejercicio.
+    d) `cargar-lote.mjs`: cuando un año de un club nuevo no se escribe y el alta se revierte, quedan los archivos NUEVOS del alta sin
+       borrar (Alverca: data/pt/alverca-pt-data.js y data/club-leagues/pt.js, sin trackear). El alta siguiente de la misma corrida (Rio Ave
+       2018, que estaba listo) frena por "cambios sin commitear en el sitio" y también se revierte. Se borraron a mano y Rio Ave 2018 entró.
+       El revertir tiene que borrar lo que el alta creó, no solo restaurar lo que existía.
+    e) La banda de `audit.js` (ingresos entre 0,2 y 2.000 M USD, P0 `escala-implausible`) frena a un club real de tercera división:
+       Alverca 2022, 152.299,54 € (≈ US$ 0,16 M), verificado y silenciado en audit-ignore.json. Escalón posible: que la banda tenga en
+       cuenta la liga del año (data/club-leagues) o que, con el resultado impreso cerrando, baje a aviso.
+    f) Una respuesta de la cola con una categoría del OTRO lado cambia el signo de la fila en vez de mudarla sin cambiar su efecto (como hace
+       el ajuste `categoria`): Nacional 2024, "Correções relativas a períodos anteriores" (ingreso 229.792, L793) contestada
+       exceptional_items quedó como gasto −0,229792 y el resultado no cerraba por 0,459584 (el doble). Se arregló con un ajuste `categoria`.
+    g) El aviso "Estadio en 0" pide que las TRES categorías del estadio (matchday_competition, stadium_other, season_tickets) tengan
+       ajuste `incluye`; con la de entradas alcanza para decir que el estadio está dentro de otra línea. Moreirense 2022 y 2025 llevan los
+       tres ajustes.
+    h) Formato portugués (SNC): la venta de jugadores viene en "Outros rendimentos" como "Rendimentos em investimentos não financeiros", con
+       una nota al pie que lo dice ("Inclui ... alienação de direitos desportivos de jogadores"). La categorización la puso en other_income
+       con confianza alta y no fue a la cola: Moreirense 2022 (4,10 M) y 2025 (8,00 M) se publicaron mal y se corrigieron con ajustes
+       `categoria`. Además, el ajuste compara la etiqueta con el asterisco de la nota ("...financeiros*") aunque la carga lo muestra sin él.
+       Escalón posible: leer la nota al pie de la fila (como "la nota de la fila" de caja-deuda) antes de categorizar.
+    i) En la lectura 5 de `verificar.mjs`, un ajuste `fila` con `reemplaza` no alcanza una fila que entra DESPUÉS, al abrir un renglón con
+       su nota ("nota exacta en la lectura 5"); y los ajustes `fila` sin `reemplaza` no entran. Vitória 2022 SAD: las cinco sub-rubricas de
+       "Prestação de serviços" (nota 16, L1905-1909) no llegaban a la carga (TV 6,92 M en 0) y, con `reemplaza "Prestação de serviços"`, la
+       fila madre no salía (ingresos 34,02 contra 23,49). Se resolvió reemplazando el renglón del ESTADO ("Vendas e serviços prestados", L590)
+       por sus seis partes. Escalón posible: aplicar `reemplaza` también a las filas que abre la nota, y avisar cuando un ajuste no entra.
+    j) Un ajuste `fila` que corrige el OCR de un renglón del estado (Alverca 2024, "Outros rendimentos" 522.591,60 -> 622.591,65) deja de
+       abrirse con su nota: la venta de jugadores (581.500, nota 17.2.3) quedaba en other_income dentro del renglón. Se resolvió con una
+       fila por línea de la nota. Escalón posible: que el renglón corregido por ajuste siga pasando por la apertura con su nota.
+    k) Cuando el .md pierde TODOS los signos de una tabla escaneada (Rio Ave 2024, pág. 14), los intereses obtenidos se suman como costo
+       (financiero 0,317495 en vez del neto −0,085703) y las reversiones de imparidad sin "-" quedan como gasto. Se resolvió con ajustes
+       `fila` mirando la imagen. Escalón posible: que la lectura con signos pruebe el financiero por etiqueta ("obtidos"/"suportados").
+    l) `cargar.mjs` toma el valor ABSOLUTO de un ajuste `fila` de gasto con valor negativo (una reversión), aunque `verificar.mjs` cierra con
+       el signo: Rio Ave 2024, reversiones de imparidad −4,89 y −2.500,00 como gasto; verificar cerraba y la carga quedaba 5.011 € arriba en
+       gastos (tie-out). Se pasaron al lado del ingreso con valor positivo (mismo efecto). Escalón posible: que cargar respete el signo del
+       ajuste como lo hace la lectura "signo del documento" (to-do 200). Además, el chequeo del año vecino compara con documentos que están en
+       documentos-descartados.txt (Vitória 2021 contra el 2021-22 de la asociación; Rio Ave 2016 contra el 2014-15): tendría que saltearlos.
+
+238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
+   sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
+   (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
+   `sin-verificar`. `duplicado` y `no-es-pdf` no son intermedios (se revisan solo para confirmar que están bien marcados). Cuántos hay
+   en cada uno: el resumen final de `node tools/pipeline.mjs` o `node tools/estado.mjs` (gratis); el 2026-10-15 eran 565 listo, 399
+   pendiente-segunda-voz, 355 revisar, 259 listo-para-jev, 220 sin-rubros, 38 sin-tablas y 1 sin-verificar, sobre 11.029 a trabajar.
+   Cómo: por país y por estado, el escalón que corresponde de la etapa 2 (`pipeline.mjs --lista`) y después lotes; lo que no se puede
+   cargar (sin estado de resultados, parcial) va a `documentos-descartados.txt` o `documentos-parciales.txt` con su ok, para que deje de
+   contar como frenado.
+
+232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
+    letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
+    e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
+       Grecia fue el 20% del gasto de API. Mirar qué texto le hace falta de verdad (to-do 230 lo deja como tercer cambio).
+       PROBADO Y DESCARTADO (2026-10-14): recortar los textos debajo de los títulos sin tabla pierde 7 decisiones y mete 2 errores
+       (Admin/HALLAZGOS-pipeline.md). Lo que queda por probar: que Jev haga una primera pasada barata (to-do 233) o achicar solo la parte
+       de las notas que viene DESPUÉS del estado de resultados.
 
 195. GESTIONES SIN FUENTE (solo entran las `confirmada: true`). Una tanda nueva se arma sola desde los casos de la cola con
     `node tools/gestiones-tanda.mjs --armar --escribir` (la última, tanda-2026-10-14-2, cargó 12). Siguen sin cubrir:
