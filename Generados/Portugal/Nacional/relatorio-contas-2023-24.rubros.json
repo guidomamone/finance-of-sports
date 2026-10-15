@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf",
   "club": "nacional-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T13:48:32.029Z",
+  "generatedAt": "2026-10-15T13:58:17.374Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -104,7 +104,7 @@
       "values": [
         0.229792
       ],
-      "glosa": "Correcciones relativas a ejercicios anteriores"
+      "glosa": "Ajustes de ejercicios anteriores"
     },
     {
       "label": "Excesso da estimativa para impostos",
@@ -114,7 +114,7 @@
       "values": [
         0.000604
       ],
-      "glosa": "Exceso de la provisión para impuestos"
+      "glosa": "Exceso de estimación para impuestos"
     },
     {
       "label": "Comparticipação tarifa residente",
@@ -124,7 +124,7 @@
       "values": [
         0.242545
       ],
-      "glosa": "Cofinanciación tarifa de residente"
+      "glosa": "Subvención por tarifa de residente"
     },
     {
       "label": "Outros não especificados",
@@ -174,7 +174,7 @@
       "values": [
         0.032889
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Serviços bancários",
@@ -254,7 +254,7 @@
       "values": [
         0.010002
       ],
-      "glosa": "Comunicación"
+      "glosa": "Comunicaciones"
     },
     {
       "label": "Contencioso e notariado",
@@ -264,7 +264,7 @@
       "values": [
         0.015487
       ],
-      "glosa": "Contencioso y notaría"
+      "glosa": "Gastos jurídicos y notariales"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -274,7 +274,7 @@
       "values": [
         0.005309
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Outros serviços",
@@ -294,7 +294,7 @@
       "values": [
         0.1212
       ],
-      "glosa": "Remuneraciones de los órganos de gobierno"
+      "glosa": "Remuneraciones de órganos de gobierno"
     },
     {
       "label": "Remunerações do Pessoal - Funcionários",
@@ -334,7 +334,7 @@
       "values": [
         0.028785
       ],
-      "glosa": "Cargas sociales s/remun. - Órganos de gobierno"
+      "glosa": "Cargas sociales s/remun. - órganos de gobierno"
     },
     {
       "label": "Enc. s/rem.-pessoal - Funcionários",
@@ -344,7 +344,7 @@
       "values": [
         0.058185
       ],
-      "glosa": "Cargas sociales s/remun. - Empleados"
+      "glosa": "Cargas sociales s/remun. - personal - Empleados"
     },
     {
       "label": "Enc. s/rem.-pessoal - Treinadores",
@@ -354,7 +354,7 @@
       "values": [
         0.039516
       ],
-      "glosa": "Cargas sociales s/remun. - Entrenadores"
+      "glosa": "Cargas sociales s/remun. - personal - Entrenadores"
     },
     {
       "label": "Enc. s/rem.-pessoal - Jogadores",
@@ -364,7 +364,7 @@
       "values": [
         0.041713
       ],
-      "glosa": "Cargas sociales s/remun. - Jugadores"
+      "glosa": "Cargas sociales s/remun. - personal - Jugadores"
     },
     {
       "label": "Seg.ac.trb - pessoal",
@@ -374,7 +374,7 @@
       "values": [
         0.00018
       ],
-      "glosa": "Seguros de accidentes de trabajo - Personal"
+      "glosa": "Seguro de acc. de trab. - personal"
     },
     {
       "label": "Seg.ac.trb - Jogadores",
@@ -384,7 +384,7 @@
       "values": [
         0.125546
       ],
-      "glosa": "Seguros de accidentes de trabajo - Jugadores"
+      "glosa": "Seguro de acc. de trab. - Jugadores"
     },
     {
       "label": "Outros Custos com Pessoal - Jogadores",
@@ -424,7 +424,7 @@
       "values": [
         0.422414
       ],
-      "glosa": "Provisiones (aumentos/reducciones)"
+      "glosa": "Provisiones (dotaciones/reversiones)"
     },
     {
       "label": "Encargos com descontos de letras",
@@ -444,7 +444,7 @@
       "values": [
         0.016971
       ],
-      "glosa": "Correcciones relativas a ejercicios anteriores"
+      "glosa": "Ajustes de ejercicios anteriores"
     },
     {
       "label": "Quotizações",
@@ -474,7 +474,7 @@
       "values": [
         0.012307
       ],
-      "glosa": "Costas judiciales, tribunales, etc."
+      "glosa": "Costas procesales, tribunales, etc."
     },
     {
       "label": "Outros não especificados",

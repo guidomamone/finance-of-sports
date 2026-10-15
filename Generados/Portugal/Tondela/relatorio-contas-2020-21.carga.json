@@ -1,28 +1,17 @@
 {
  "pdf": "Clubes/Portugal/Tondela/relatorio-contas-2020-21.pdf",
- "generado": "2026-10-15T13:55:42.319Z",
+ "generado": "2026-10-15T14:05:17.659Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (tondela-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "7 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Diferenças de câmbio favoráveis\" -> other_expenses 0; \"Correções relativas a períodos anteriore\" -> other_income 0; \"Juros Obtidos\" -> other_expenses 0; \"Mecanismo de solidariedade\" -> player_sales 0.75; \"Outros\" -> other_income 0"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: Guido 2026-10-15: el club es la SAD (relatorio-contas-2020-21, cuentas individuales); el documento del Clube Desportivo de Tondela (asociación) va a documentos-descartados)",
   "\"Estadio\" en 0 en 2021: real (partidos a puertas cerradas por el Covid)",
-  "gastos: ningún total impreso igual a la suma de las líneas (-6.277162); queda la suma, verificada por el resultado del ejercicio"
+  "2 fila(s) con categoría de un lado y el documento del otro: \"Diferenças de câmbio favoráveis\" -> other_income; \"Juros Obtidos\" -> other_income",
+  "gastos: ningún total impreso igual a la suma de las líneas (-6.277065); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "tondela-pt",
@@ -91,14 +80,34 @@
     "_fuenteCat": "categorias.json"
    },
    {
+    "rawLabel": "Diferenças de câmbio favoráveis",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.000049,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
     "rawLabel": "Correções relativas a períodos anteriores",
     "normalizedCategory": "other_income",
     "amountNative": 0.002329,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Juros Obtidos",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.000048,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mecanismo de solidariedade",
@@ -106,9 +115,9 @@
     "amountNative": 0.050743,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -116,32 +125,12 @@
     "amountNative": 0.085376,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
-   {
-    "rawLabel": "Diferenças de câmbio favoráveis",
-    "normalizedCategory": "other_expenses",
-    "amountNative": -0.000049,
-    "disclosureLevel": "aggregated",
-    "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía no_es_rubro con 0.6 (fila verificada: no se excluye sola): se propone la genérica de su lado"
-   },
-   {
-    "rawLabel": "Juros Obtidos",
-    "normalizedCategory": "other_expenses",
-    "amountNative": -0.000048,
-    "disclosureLevel": "aggregated",
-    "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía no_es_rubro con 0.7 (fila verificada: no se excluye sola): se propone la genérica de su lado"
-   },
    {
     "rawLabel": "Custo das mercadorias vendidas e matérias consumidas",
     "normalizedCategory": "other_expenses",
@@ -428,9 +417,9 @@
     "amountNative": -0.2314,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Impostos",
@@ -534,13 +523,13 @@
    },
    {
     "rawLabel": "Gastos/reversões de depreciação e de amortização",
-    "normalizedCategory": "depreciation",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -0.312453,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -566,7 +555,7 @@
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 5.067334,
-   "officialTotalExpenses": 6.277162,
+   "officialTotalExpenses": 6.277065,
    "officialPAT": -1.273265
   },
   "source": {
@@ -705,15 +694,16 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.000049,
-   "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía no_es_rubro con 0.6 (fila verificada: no se excluye sola): se propone la genérica de su lado",
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
-   "destino": "expense",
-   "amountNative": -0.000049
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ingreso, nota 16.1 Outros rendimentos (L1176); no es financiero",
+   "destino": "revenue",
+   "ladoContradictorio": true,
+   "amountNative": 0.000049
   },
   {
    "label": "Correções relativas a períodos anteriores",
@@ -723,12 +713,12 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.002329,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ingreso, nota 16.1 (L1177)",
    "destino": "revenue",
    "amountNative": 0.002329
   },
@@ -739,15 +729,16 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.000048,
-   "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía no_es_rubro con 0.7 (fila verificada: no se excluye sola): se propone la genérica de su lado",
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
-   "destino": "expense",
-   "amountNative": -0.000048
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ingreso, nota 16.1 Outros rendimentos (L1178); no figura como financiero",
+   "destino": "revenue",
+   "ladoContradictorio": true,
+   "amountNative": 0.000048
   },
   {
    "label": "Mecanismo de solidariedade",
@@ -757,11 +748,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.050743,
    "cat": "player_sales",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): criterio de Portugal, Mecanismo de Solidariedade a player_sales (L1179)",
    "destino": "revenue",
    "amountNative": 0.050743
   },
@@ -773,12 +764,12 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.085376,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ingreso, nota 16.1 (L1181)",
    "destino": "revenue",
    "amountNative": 0.085376
   },
@@ -1214,11 +1205,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.2314,
    "cat": "wages_squad",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): nota 15.1 de personal (L1164), sin separar jugadores y staff",
    "destino": "expense",
    "amountNative": -0.2314
   },
@@ -1380,12 +1371,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0.312453,
-   "cat": "depreciation",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15: notas 4 y 5: amortización de derechos de jugadores 298.167,48 + depreciación de tangibles 14.285,50 = 312.452,98 (L407); entero a la parte mayor, como Moreirense y PAOK (to-do 237 b)",
    "destino": "expense",
    "amountNative": -0.312453
   },
@@ -1415,7 +1406,7 @@
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
-   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Gastos com o pessoal\")": "gastos sin signo (se invierten)",
@@ -1425,10 +1416,10 @@
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 5.067238,
-  "expSum": -6.277162,
+  "revSum": 5.067335,
+  "expSum": -6.277065,
   "officialTotalRevenue": 5.067334,
-  "officialTotalExpenses": 6.277162,
+  "officialTotalExpenses": 6.277065,
   "officialPAT": -1.273265,
   "verificacion": {
    "pat": "impreso",
@@ -1496,9 +1487,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
-  "lineasIngreso": 9,
-  "lineasGasto": 42,
+  "motivos": 1,
+  "lineasIngreso": 11,
+  "lineasGasto": 40,
   "metaFilas": 2,
   "excluidas": 0
  }

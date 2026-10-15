@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2022-23.pdf",
  "md": "Clubes/Portugal/Moreirense/relatorio-contas-2022-23.md",
- "generado": "2026-10-15T13:48:31.992Z",
+ "generado": "2026-10-15T13:58:17.362Z",
  "estado": "ok",
  "clubId": "moreirense-pt",
  "year": 2023,
@@ -122,6 +122,7 @@
  ],
  "notas": [
   "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "escalón \"renglón grande sin abrir\": \"Imparidade de dívidas a receber (perdas/reversões)\" (L476) era el 36% de los ingresos; la misma lectura cierra con la nota del subtotal abierta",
   "la lectura base no cerraba; cerró con la lectura 3",
   "duda de localizar confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"Outros gastos\"): ¿La tabla 'Outros gastos' (b33), con encabezado '2022 | 2021', corresponde en realidad a JUN.23 / JUN.22 y se carga su primera columna como ejercicio 2022/23?",
   "duda de extraer que no afecta la carga: Los encabezados de L978 dicen 2022/2021 pero los totales de L987 coinciden con JUN.23/JUN.22 del estado (L479), parece error de rótulo.",
@@ -481,5 +482,8 @@
    "M": -0.016745,
    "linea": 484
   }
+ ],
+ "notaSubtotal": [
+  "ingreso"
  ]
 }

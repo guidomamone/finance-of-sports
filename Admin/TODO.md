@@ -71,6 +71,10 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
        gastos (tie-out). Se pasaron al lado del ingreso con valor positivo (mismo efecto). Escalón posible: que cargar respete el signo del
        ajuste como lo hace la lectura "signo del documento" (to-do 200). Además, el chequeo del año vecino compara con documentos que están en
        documentos-descartados.txt (Vitória 2021 contra el 2021-22 de la asociación; Rio Ave 2016 contra el 2014-15): tendría que saltearlos.
+    m) `alta-club.mjs` (perímetro, "dos entidades distintas" en la carpeta) cuenta como hermanos los .md de documentos que están en
+       documentos-descartados.txt: Tondela 2021 frena el alta ("con-preguntas") porque ve relatorio-contas-clube-2021.md (la asociación,
+       descartada con ok de Guido) aunque el perímetro esté fijado con un ajuste. El ajuste solo gana si el NOMBRE del archivo dice el
+       perímetro (caso Parma). Escalón propuesto: sacar de `hermanos` los documentos descartados (la misma lista que ya saltea lote.mjs).
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.

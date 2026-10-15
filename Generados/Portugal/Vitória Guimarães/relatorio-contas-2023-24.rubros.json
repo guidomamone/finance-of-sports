@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2023-24.pdf",
   "club": "vitoriaguimaraes-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T13:48:32.134Z",
+  "generatedAt": "2026-10-15T13:58:17.459Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -164,7 +164,7 @@
       "values": [
         0.025789
       ],
-      "glosa": "Beneficios en inventarios"
+      "glosa": "Ganancias en existencias"
     },
     {
       "label": "Rendimentos e ganhos em investimentos",
@@ -174,7 +174,7 @@
       "values": [
         6.941963
       ],
-      "glosa": "Ingresos y beneficios en inversiones"
+      "glosa": "Ingresos y ganancias en inversiones"
     },
     {
       "label": "Outros",
@@ -194,7 +194,7 @@
       "values": [
         0.479517
       ],
-      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y materias consumidas"
     },
     {
       "label": "Trabalhos especializados",
@@ -254,7 +254,7 @@
       "values": [
         0.268797
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Despesas com Provas",
@@ -274,7 +274,7 @@
       "values": [
         0.197784
       ],
-      "glosa": "Prospección y cesiones"
+      "glosa": "Prospección; Préstamos/Cesiones;"
     },
     {
       "label": "Ferramentas, utensílios desgaste rápido",
@@ -284,7 +284,7 @@
       "values": [
         0.020264
       ],
-      "glosa": "Herramientas y utensilios de desgaste rápido"
+      "glosa": "Herramientas y utensilios de rápido desgaste"
     },
     {
       "label": "Livros documentação técnica",
@@ -384,7 +384,7 @@
       "values": [
         0.009749
       ],
-      "glosa": "Transportes de mercancías"
+      "glosa": "Transporte de mercancías"
     },
     {
       "label": "Rendas e alugueres",
@@ -414,7 +414,7 @@
       "values": [
         0.078963
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Contencioso e notariado",
@@ -464,7 +464,7 @@
       "values": [
         0.794272
       ],
-      "glosa": "Personal del VSC al servicio de la SAD"
+      "glosa": "Personal de VSC al servicio de la SAD"
     },
     {
       "label": "Remuneração Administração",
@@ -544,7 +544,7 @@
       "values": [
         0.091402
       ],
-      "glosa": "Deterioro de créditos comerciales a cobrar"
+      "glosa": "Deterioro de créditos por cobrar"
     },
     {
       "label": "Imparidade de inventarios",
@@ -564,7 +564,7 @@
       "values": [
         0.057515
       ],
-      "glosa": "Provisiones (aumentos/reducciones)"
+      "glosa": "Provisiones (dotaciones/reversiones)"
     },
     {
       "label": "Impostos",
@@ -634,7 +634,7 @@
       "values": [
         0.383865
       ],
-      "glosa": "Multas"
+      "glosa": "Multas y sanciones"
     },
     {
       "label": "Outros",
@@ -674,7 +674,7 @@
       "values": [
         0.039946
       ],
-      "glosa": "Mobiliario y equipos de oficina"
+      "glosa": "Equipos para procesos de información y mobiliario"
     },
     {
       "label": "Outros ativos fixos tangíveis",

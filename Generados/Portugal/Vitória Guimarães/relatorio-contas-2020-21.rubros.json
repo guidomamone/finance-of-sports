@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2020-21.pdf",
   "club": "vitoriaguimaraes-pt",
   "year": 2021,
-  "generatedAt": "2026-10-15T13:48:32.117Z",
+  "generatedAt": "2026-10-15T13:58:17.454Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -94,7 +94,7 @@
       "values": [
         0.77065
       ],
-      "glosa": "Ingresos accesorios"
+      "glosa": "Ingresos suplementarios"
     },
     {
       "label": "Descontos pronto pagamento obtidos",
@@ -124,7 +124,7 @@
       "values": [
         16.70097
       ],
-      "glosa": "Ingresos y ganancias en inversiones"
+      "glosa": "Rendimientos y ganancias en inversiones"
     },
     {
       "label": "Outros",
@@ -204,7 +204,7 @@
       "values": [
         0.297706
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Despesas com Provas",
@@ -224,7 +224,7 @@
       "values": [
         0.346502
       ],
-      "glosa": "Prospección y préstamos / cesiones"
+      "glosa": "Prospección y cesiones"
     },
     {
       "label": "Ferramentas, utensílios desgaste rápido",
@@ -234,7 +234,7 @@
       "values": [
         0.033411
       ],
-      "glosa": "Herramientas y utensilios de rápido desgaste"
+      "glosa": "Herramientas y utensilios de desgaste rápido"
     },
     {
       "label": "Livros documentação técnica",
@@ -374,7 +374,7 @@
       "values": [
         0.081477
       ],
-      "glosa": "Contencioso y notariado"
+      "glosa": "Gastos contenciosos y notariales"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -494,7 +494,7 @@
       "values": [
         0.048048
       ],
-      "glosa": "Deterioro de inventarios"
+      "glosa": "Deterioro de existencias"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -504,7 +504,7 @@
       "values": [
         0.36676
       ],
-      "glosa": "Provisiones (aumentos/reducciones)"
+      "glosa": "Provisiones (dotaciones/reversiones)"
     },
     {
       "label": "Impostos",
@@ -554,7 +554,7 @@
       "values": [
         0.0405
       ],
-      "glosa": "Donativos"
+      "glosa": "Donaciones"
     },
     {
       "label": "Quotizações",
@@ -594,7 +594,7 @@
       "values": [
         6.815353
       ],
-      "glosa": "Gastos/reversiones de amortización y depreciación"
+      "glosa": "Gastos/reversiones por amortización y depreciación"
     }
   ]
 }

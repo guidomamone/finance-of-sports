@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Tondela/relatorio-contas-2020-21.pdf",
   "club": "tondela",
   "year": 2021,
-  "generatedAt": "2026-10-15T13:48:32.100Z",
+  "generatedAt": "2026-10-15T13:58:17.436Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -124,7 +124,7 @@
       "values": [
         0.053899
       ],
-      "glosa": "Coste de las mercancías vendidas y materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y materiales consumidos"
     },
     {
       "label": "Subcontratos",
@@ -194,7 +194,7 @@
       "values": [
         0.021955
       ],
-      "glosa": "Reparación y conservación"
+      "glosa": "Reparaciones y conservación"
     },
     {
       "label": "Serviços bancários",
@@ -234,7 +234,7 @@
       "values": [
         0.000125
       ],
-      "glosa": "Artículos para obsequio"
+      "glosa": "Artículos de regalo"
     },
     {
       "label": "Electricidade",
@@ -314,7 +314,7 @@
       "values": [
         0.007612
       ],
-      "glosa": "Primas de seguros"
+      "glosa": "Seguros"
     },
     {
       "label": "Contencioso e Notariado",
@@ -324,7 +324,7 @@
       "values": [
         0.001057
       ],
-      "glosa": "Gastos notariales y contenciosos"
+      "glosa": "Gastos contenciosos y notariales"
     },
     {
       "label": "Despesas de Representação",
@@ -344,7 +344,7 @@
       "values": [
         0.008661
       ],
-      "glosa": "Limpieza y confort"
+      "glosa": "Limpieza y mantenimiento"
     },
     {
       "label": "Outros Serviços",
@@ -394,7 +394,7 @@
       "values": [
         0.290444
       ],
-      "glosa": "Seguros de accidentes laborales y enfermedades profesionales"
+      "glosa": "Seguros de accidentes de trabajo y enfermedades profesionales"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -444,7 +444,7 @@
       "values": [
         0.008
       ],
-      "glosa": "Donaciones"
+      "glosa": "Donativos"
     },
     {
       "label": "Quotizações",
@@ -474,7 +474,7 @@
       "values": [
         0.000436
       ],
-      "glosa": "Gastos no debidamente documentados"
+      "glosa": "Gastos no documentados debidamente"
     },
     {
       "label": "Diferenças de câmbio desfavoráveis",
@@ -514,7 +514,7 @@
       "values": [
         0.312453
       ],
-      "glosa": "Dotaciones y reversiones por amortización y deterioro"
+      "glosa": "Gastos/reversiones de amortización y depreciación"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2023-24.pdf",
   "club": "moreirense-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T13:48:32.009Z",
+  "generatedAt": "2026-10-15T13:58:17.367Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -94,7 +94,7 @@
       "values": [
         0.001012
       ],
-      "glosa": "Coste de las mercancías vendidas y materiales consumidos"
+      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
     },
     {
       "label": "6221 Trabalhos especializados",
@@ -134,7 +134,7 @@
       "values": [
         0.118557
       ],
-      "glosa": "6226 Conservación y reparación"
+      "glosa": "6226 Reparaciones y conservación"
     },
     {
       "label": "6231 Ferramentas e utensílios de desgaste rápido",
@@ -224,7 +224,7 @@
       "values": [
         0.00905
       ],
-      "glosa": "6262 Comunicaciones"
+      "glosa": "6262 Comunicación"
     },
     {
       "label": "6263 Seguros",
@@ -274,7 +274,7 @@
       "values": [
         0.321272
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales sobre las remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho e doenças profissionais",
@@ -324,7 +324,7 @@
       "values": [
         1.157787
       ],
-      "glosa": "Gastos/reversiones por amortización y depreciación"
+      "glosa": "Gastos/reversiones de amortización y depreciación"
     }
   ]
 }
