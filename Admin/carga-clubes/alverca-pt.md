@@ -41,6 +41,64 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2022: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2022-06-30","sourceId":"alverca-pt-relatorio-contas-2021-22"}
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Alverca/relatorio-contas-2024-25.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Alverca/relatorio-contas-2024-25.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas e serviços prestados | pág. 11, precedente |
+| 2 | Subsídios à exploração | pág. 11, precedente |
+| 3 | Indemnização FIFA - AL Wasl | pág. 29, precedente |
+| 4 | Alienações direitos de inscrição desportiva | pág. 29, Claude 0.85 |
+| 5 | Correcções relativas a períodos anteriores | pág. 29, precedente |
+| 6 | Recuperação de encargos | pág. 29, Jev 1 |
+| 7 | Outros não especificados | pág. 29, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Serviços Especializados | pág. 24, Jev 0.97 |
+| 2 | Materiais | pág. 24, Jev 0.93 |
+| 3 | Energia e Fluidos | pág. 24, Jev 1 |
+| 4 | Deslocações e Estadas | pág. 24, Jev 1 |
+| 5 | Serviços Diversos | pág. 24, precedente |
+| 6 | Remunerações dos Órgãos Sociais | pág. 25, Jev 1 |
+| 7 | Remuneração do Pessoal | pág. 25, Claude 0.85 |
+| 8 | Encargos sobre remunerações | pág. 25, Jev 0.98 |
+| 9 | Seguros de Acidentes de Trabalho | pág. 25, Jev 0.93 |
+| 10 | Indemnizações | pág. 25, precedente |
+| 11 | Outros Gastos com Pessoal | pág. 25, precedente |
+| 12 | Imparidade de dívidas a receber (perdas/reversões) | pág. 11, Jev 0.97 |
+| 13 | Impostos | pág. 29, Jev 0.96 |
+| 14 | Quotizações | pág. 29, precedente |
+| 15 | Correcções relativas a períodos anteriores | pág. 29, Jev 1 |
+| 16 | Donativos | pág. 29, Jev 0.99 |
+| 17 | Multas e penalidades | pág. 29, Jev 0.98 |
+| 18 | Juros de mora e compensatórios | pág. 29, Jev 0.98 |
+| 19 | Despesas não devidamente documentadas | pág. 29, precedente |
+| 20 | Gastos/reversões de depreciação e de amortização | pág. 11, precedente |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2025-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2025-06-30
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-15): pt-ligaportugal2, verificado contra roster cacheado de "2024–25 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Alverca".
+```
+
 ## 2024
 
 ### Ingresos
@@ -201,4 +259,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Alverca/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### alverca-pt-relatorio-contas-2024-25
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Alverca/relatorio-contas-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

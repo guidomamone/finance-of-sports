@@ -1,6 +1,14 @@
 // GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["pt-ligaportugal2"] = {
+  2025: {
+    leagueSize: null,
+    clubs: [
+      { id:"alverca-pt", revenue:2.414, reportType:"official_balance_sheet",
+        sourceId:"alverca-pt-relatorio-contas-2024-25",
+        mix:[["Venta de Jugadores",1.199],["Fútbol profesional (sin desglosar por la fuente)",0.747],["Otros ingresos",0.468]] },
+    ],
+  },
   2024: {
     leagueSize: null,
     clubs: [

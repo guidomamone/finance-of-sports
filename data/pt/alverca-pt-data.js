@@ -23,6 +23,15 @@ const alvercaptRevenueLinesByYear = {
     { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:0.0005, disclosureLevel:'aggregated' },
     { rawLabel:'Outros não especificados', normalizedCategory:'other_income', amountNative:0.012335, disclosureLevel:'aggregated' },
   ],
+  2025: [
+    { rawLabel:'Vendas e serviços prestados', normalizedCategory:'lump_football_operations', amountNative:0.637398, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.386886, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnização FIFA - AL Wasl', normalizedCategory:'player_sales', amountNative:0.25383, disclosureLevel:'aggregated' },
+    { rawLabel:'Alienações direitos de inscrição desportiva', normalizedCategory:'player_sales', amountNative:0.76957, disclosureLevel:'aggregated' },
+    { rawLabel:'Correcções relativas a períodos anteriores', normalizedCategory:'other_income', amountNative:0.000185, disclosureLevel:'aggregated' },
+    { rawLabel:'Recuperação de encargos', normalizedCategory:'other_income', amountNative:0.001171, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros não especificados', normalizedCategory:'other_income', amountNative:0.010993, disclosureLevel:'aggregated' },
+  ],
 };
 const alvercaptExpenseLinesByYear = {
   2022: [
@@ -47,6 +56,28 @@ const alvercaptExpenseLinesByYear = {
     { rawLabel:'Gastos com o pessoal', normalizedCategory:'wages_squad', amountNative:-2.437682, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.019459, disclosureLevel:'aggregated' },
     { rawLabel:'Outros gastos', normalizedCategory:'other_expenses', amountNative:-0.347029, disclosureLevel:'aggregated' },
+  ],
+  2025: [
+    { rawLabel:'Serviços Especializados', normalizedCategory:'admin_general_expense', amountNative:-1.003233, disclosureLevel:'aggregated' },
+    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.12885, disclosureLevel:'aggregated' },
+    { rawLabel:'Energia e Fluidos', normalizedCategory:'admin_general_expense', amountNative:-0.01259, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e Estadas', normalizedCategory:'match_organisation_expense', amountNative:-0.360564, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços Diversos', normalizedCategory:'other_expenses', amountNative:-0.389304, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações dos Órgãos Sociais', normalizedCategory:'admin_general_expense', amountNative:-0.015713, disclosureLevel:'aggregated' },
+    { rawLabel:'Remuneração do Pessoal', normalizedCategory:'wages_squad', amountNative:-4.827742, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre remunerações', normalizedCategory:'wages_squad', amountNative:-0.445686, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros de Acidentes de Trabalho', normalizedCategory:'admin_general_expense', amountNative:-0.414698, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações', normalizedCategory:'wages_squad', amountNative:-0.121127, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Gastos com Pessoal', normalizedCategory:'wages_squad', amountNative:-0.314632, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de dívidas a receber (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:-0.025756, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.00257, disclosureLevel:'aggregated' },
+    { rawLabel:'Quotizações', normalizedCategory:'admin_general_expense', amountNative:-0.000932, disclosureLevel:'aggregated' },
+    { rawLabel:'Correcções relativas a períodos anteriores', normalizedCategory:'exceptional_items', amountNative:-0.012093, disclosureLevel:'aggregated' },
+    { rawLabel:'Donativos', normalizedCategory:'other_expenses', amountNative:-0.0005, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas e penalidades', normalizedCategory:'other_expenses', amountNative:-0.017274, disclosureLevel:'aggregated' },
+    { rawLabel:'Juros de mora e compensatórios', normalizedCategory:'other_expenses', amountNative:-0.000398, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas não devidamente documentadas', normalizedCategory:'other_expenses', amountNative:-0.004078, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.034553, disclosureLevel:'aggregated' },
   ],
 };
 const alvercaptFiscalYearMeta = {
@@ -101,6 +132,23 @@ const alvercaptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0.754874, officialTotalExpenses:3.975531, officialPAT:-3.230497,
   },
+  2025: {
+    currency:'EUR', fxRef:'EUR@2025-06-30',
+    sourceId:'alverca-pt-relatorio-contas-2024-25',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0, tax:-0.006919,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:0},
+      {label:'Imposto sobre o rendimento do período', value:-0.006919},
+    ],
+    sinDesglose: [
+      {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.637398, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:2.060033, officialTotalExpenses:8.1202, officialPAT:-6.079177,
+  },
 };
 const alvercaptPresupuestoOverlayByYear = {};
 
@@ -130,6 +178,11 @@ Object.assign(sources, {
   'alverca-pt-relatorio-contas-2023-24': {
     id:'alverca-pt-relatorio-contas-2023-24', clubId:'alverca-pt',
     title:'Futebol Clube de Alverca - Futebol SAD — relatorio-contas-2023-24 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'alverca-pt-relatorio-contas-2024-25': {
+    id:'alverca-pt-relatorio-contas-2024-25', clubId:'alverca-pt',
+    title:'Futebol Clube de Alverca - Futebol SAD — relatorio-contas-2024-25 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
