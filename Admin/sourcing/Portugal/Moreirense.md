@@ -31,3 +31,5 @@ Ninguna sobre el canal. Serie completa desde el primer ejercicio publicado por e
 - Último chequeo: 2026-09-17.
 
 Color de marca: #008000 — infobox de en.wikipedia (kit local: mangas verdes, cuerpo blanco; camiseta verde y blanca axadrezada según pt.wikipedia; el otro color es blanco, gana el verde), verificado 2026-10-09.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2022 desde `Clubes/Portugal/Moreirense/relatorio-contas-2021-22.pdf` (sourceId `moreirense-pt-relatorio-contas-2021-22`).

@@ -1,6 +1,15 @@
 // GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["pt-primeiraliga"] = {
+  2022: {
+    leagueSize: null,
+    clubs: [
+      { id:"moreirense-pt", revenue:9.9, reportType:"official_balance_sheet",
+        sourceId:"moreirense-pt-relatorio-contas-2021-22",
+        mix:[["Comercial / Sponsors",0.002],["Televisión",3.739],["Otros ingresos",6.159]],
+        incluidos:[["Estadio","Otros ingresos",1]] },
+    ],
+  },
   2018: {
     leagueSize: null,
     clubs: [
