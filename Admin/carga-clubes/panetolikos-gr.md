@@ -197,7 +197,7 @@ tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado
 ### Ingresos
 
 ```text
-2022: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Panetolikos/Panetolikos_FS_2022-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2022: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Grecia/Panetolikos/Panetolikos_FS_2022-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Grecia/Panetolikos/Panetolikos_FS_2022-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -211,17 +211,13 @@ Generados/Grecia/Panetolikos/Panetolikos_FS_2022-06-30.categorias.json (escalón
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Κόστος πωλήσεων | pág. 17, precedente |
-| 2 | Έξοδα διοίκησης | pág. 17, Jev 1 |
-| 3 | Έξοδα διάθεσης | pág. 17, precedente |
-| 4 | Λοιπά έξοδα και ζημιές | pág. 17, Jev 0.95 |
+| 1 | Έξοδα διοίκησης | pág. 17, Jev 1 |
+| 2 | Έξοδα διάθεσης | pág. 17, precedente |
+| 3 | Λοιπά έξοδα και ζημιές | pág. 17, Jev 0.95 |
+| 4 | Κόστος πωλήσεων (sin el costo de personal) | pág. 17, precedente |
+| 5 | Σύνολο — Παροχές σε εργαζόμενους | pág. 17, precedente |
 
 ### Meta
-
-```text
-tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
-```
 
 ```text
 tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 2 (compuerta: año anterior): "Δάνεια" pág. 19 + "Τραπεζικά δάνεια" pág. 19
@@ -236,13 +232,15 @@ tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.566222 (compuerta: doc
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Estadio, Venta de Jugadores
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-15): fila = 3.614.795,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2022-06-30.md L1471) está dentro de "Κόστος πωλήσεων": queda 5.181.017,00 - 1.566.222,00
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-15): fila = 1.566.222,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2022-06-30.md L1471) está dentro de "Κόστος πωλήσεων": el costo de personal va aparte
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-15): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2022-06-30.md L1471) está dentro de "Κόστος πωλήσεων": costo de personal -> wages_squad
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2021–22 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Panetolikos".
+tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Estadio, Venta de Jugadores
 ```
 
 ## 2021

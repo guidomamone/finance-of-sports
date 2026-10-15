@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2022-06-30.pdf",
  "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2022-06-30.md",
- "generado": "2026-10-14T05:54:38.114Z",
+ "generado": "2026-10-15T02:33:03.893Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "panetolikos-gr",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -11,7 +11,45 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2022-06-30.pdf",
+   "campo": "fila",
+   "valor": "3.614.795,00",
+   "linea": 663,
+   "etiqueta": "Κόστος πωλήσεων (sin el costo de personal)",
+   "lado": "gasto",
+   "reemplaza": "Κόστος πωλήσεων",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2022-06-30.md L1471) está dentro de \"Κόστος πωλήσεων\": queda 5.181.017,00 - 1.566.222,00",
+   "evidencia": "Panetolikos_FS_2022-06-30.md L1471",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2022-06-30.pdf",
+   "campo": "fila",
+   "valor": "1.566.222,00",
+   "linea": 663,
+   "etiqueta": "Σύνολο — Παροχές σε εργαζόμενους",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2022-06-30.md L1471) está dentro de \"Κόστος πωλήσεων\": el costo de personal va aparte",
+   "evidencia": "Panetolikos_FS_2022-06-30.md L1471",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2022-06-30.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Σύνολο — Παροχές σε εργαζόμενους",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2022-06-30.md L1471) está dentro de \"Κόστος πωλήσεων\": costo de personal -> wages_squad",
+   "evidencia": "Panetolikos_FS_2022-06-30.md L1471",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-15"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -28,7 +66,12 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 4.440892098500626e-16
+   "dif": 1.6000000035987227e-7
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 4.480318; el sitio tiene 4.480318"
   },
   {
    "nombre": "documento del año 2023",
@@ -39,15 +82,12 @@
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2021: 4.480318 en Panetolikos_FS_2021-06-30.pdf y 4.480318 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
   }
  ],
  "notas": [
   "la nota de \"Κύκλος εργασιών (καθαρός)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"Κόστος πωλήσεων (sin el costo de personal)\" (gasto) 3.614.795,00, en lugar de \"Κόστος πωλήσεων\" (2026-10-15, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2022-06-30.md L1471) está dentro de \"Κόστος πωλήσεων\": queda 5.181.017,00 - 1.566.222,00)",
+  "ajuste manual: fila \"Σύνολο — Παροχές σε εργαζόμενους\" (gasto) 1.566.222,00 (2026-10-15, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2022-06-30.md L1471) está dentro de \"Κόστος πωλήσεων\": el costo de personal va aparte)",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Κύκλος εργασιών (καθαρός)\"): ¿Se deja afuera de la carga el desglose por 'Γεωγραφικές αγορές' (L1488-L1492) por ser una segunda apertura del mismo Κύκλος εργασιών ya desglosado por actividad?",
   "duda de extraer que no afecta la carga: L1486-L1487 parecen tener la etiqueta Σύνολο desplazada; el importe no cambia."
  ],
@@ -90,14 +130,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Κόστος πωλήσεων",
-   "lado": "gasto",
-   "M": 5.181017,
-   "pagina": 17,
-   "linea": 663,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Έξοδα διοίκησης",
    "lado": "gasto",
    "M": 0.451573,
@@ -120,6 +152,22 @@
    "pagina": 17,
    "linea": 669,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων (sin el costo de personal)",
+   "lado": "gasto",
+   "M": 3.614795,
+   "pagina": 17,
+   "linea": 663,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Σύνολο — Παροχές σε εργαζόμενους",
+   "lado": "gasto",
+   "M": 1.566222,
+   "pagina": 17,
+   "linea": 663,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

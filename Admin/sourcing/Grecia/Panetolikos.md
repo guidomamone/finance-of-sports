@@ -47,3 +47,5 @@ a que el club sí depositó religiosamente todos los demás años de la serie �
 - Cargado en el sitio por tools/cargar.mjs (2026-10-14): ejercicio 2025 desde `Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.pdf` (sourceId `panetolikos-gr-fs-2025-06-30`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2021 desde `Clubes/Grecia/Panetolikos/Panetolikos_FS_2021-06-30.pdf` (sourceId `panetolikos-gr-fs-2021-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2022 desde `Clubes/Grecia/Panetolikos/Panetolikos_FS_2022-06-30.pdf` (sourceId `panetolikos-gr-fs-2022-06-30`).
