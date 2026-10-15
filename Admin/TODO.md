@@ -28,8 +28,7 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
 236. REVISAR EL PIPELINE DESPUÉS DE LOS CAMBIOS DEL 232 Y EL 234 (pedido de Guido, 2026-10-15). Muchos escalones nuevos en pocos días
     (`cargar.mjs`: etiqueta repetida por renglón y categoría del renglón por sus filas; `caja-deuda.mjs`: Jev, columnas por perímetro,
     cifras con forma imposible; `periodo.mjs`, `verificar.mjs`, `gestiones-tanda.mjs`...). Revisión de punta a punta: (1) el ensayo de
-    `cargar.mjs --desde-verificacion --reemplazar` en todos los documentos con .categorias.json (el arnés de la medición del 234 corre en ~6
-    min con la cola en una copia, COLA_ARCHIVO) y que lo cargado dé idéntico salvo preguntas nuevas explicadas; (2) los lotes de prueba y
+    `cargar.mjs` en todos los documentos (`tools/medir-cargar.mjs`, ~6 min, con la cola en una copia) y que lo cargado dé idéntico salvo preguntas nuevas explicadas; (2) los lotes de prueba y
     `caja-deuda.mjs --medir` en todos los clubes; (3) que `Admin/PIPELINE.md` y la skill club-or-year-onboarding describan los escalones
     como son hoy, sin reglas apiladas ni duplicadas.
 
