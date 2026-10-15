@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.md",
- "generado": "2026-10-15T06:24:32.309Z",
+ "generado": "2026-10-15T12:42:56.511Z",
  "estado": "ok",
  "clubId": null,
  "year": 2024,
@@ -46,8 +46,7 @@
   "duda de localizar que no afecta la carga: b29 muestra movimientos de saldos de provisiones de una sola fila; el gasto ya está en el estado.",
   "duda de extraer que no afecta la carga: El encabezado L764 dice '30-jun-24 13 meses', pero los totales L771-L772 coinciden con el estado (L131), lo que sugiere una errata.",
   "duda de extraer que no afecta la carga: El cuadro L807-L817 tiene varias columnas; la de imputación a resultados es la que coincide con el estado (L132).",
-  "duda de extraer que no afecta la carga: Hay una diferencia de 1 euro en L142, atribuible a redondeo.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Hay una diferencia de 1 euro en L142, atribuible a redondeo."
  ],
  "reintentar": null,
  "reintentado": false,

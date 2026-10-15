@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf",
   "club": "nacional",
   "year": 2024,
-  "generatedAt": "2026-10-15T06:24:32.310Z",
+  "generatedAt": "2026-10-15T12:42:56.512Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         0.5
       ],
-      "glosa": "Derechos de televisión"
+      "glosa": "Derechos audiovisuales"
     },
     {
       "label": "DRJD",
@@ -104,7 +104,7 @@
       "values": [
         0.229792
       ],
-      "glosa": "Ajustes de ejercicios anteriores"
+      "glosa": "Correcciones relativas a ejercicios anteriores"
     },
     {
       "label": "Excesso da estimativa para impostos",
@@ -114,7 +114,7 @@
       "values": [
         0.000604
       ],
-      "glosa": "Exceso de estimación para impuestos"
+      "glosa": "Exceso de provisión para impuestos"
     },
     {
       "label": "Comparticipação tarifa residente",
@@ -124,7 +124,7 @@
       "values": [
         0.242545
       ],
-      "glosa": "Bonificación tarifa de residente"
+      "glosa": "Subvención tarifa de residente"
     },
     {
       "label": "Outros não especificados",
@@ -174,7 +174,7 @@
       "values": [
         0.032889
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Reparaciones y conservación"
     },
     {
       "label": "Serviços bancários",
@@ -264,7 +264,7 @@
       "values": [
         0.015487
       ],
-      "glosa": "Gastos procesales y notariales"
+      "glosa": "Gastos contenciosos y notariales"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -294,7 +294,7 @@
       "values": [
         0.1212
       ],
-      "glosa": "Retribuciones a órganos de administración"
+      "glosa": "Retribuciones de los órganos de gobierno"
     },
     {
       "label": "Remunerações do Pessoal - Funcionários",
@@ -304,7 +304,7 @@
       "values": [
         0.309052
       ],
-      "glosa": "Gastos de personal - Empleados"
+      "glosa": "Remuneraciones del personal - Empleados"
     },
     {
       "label": "Remunerações do Pessoal - Jogadores",
@@ -314,7 +314,7 @@
       "values": [
         1.474667
       ],
-      "glosa": "Gastos de personal - Jugadores"
+      "glosa": "Remuneraciones del personal - Jugadores"
     },
     {
       "label": "Remunerações do Pessoal - Treinadores",
@@ -324,7 +324,7 @@
       "values": [
         0.20989
       ],
-      "glosa": "Gastos de personal - Entrenadores"
+      "glosa": "Remuneraciones del personal - Entrenadores"
     },
     {
       "label": "Enc. s/rem.-orgãos sociais",
@@ -334,7 +334,7 @@
       "values": [
         0.028785
       ],
-      "glosa": "Cargas sociales s/ remun. - Órganos de administración"
+      "glosa": "Cargas sociales s/remuneraciones - Órganos de gobierno"
     },
     {
       "label": "Enc. s/rem.-pessoal - Funcionários",
@@ -344,7 +344,7 @@
       "values": [
         0.058185
       ],
-      "glosa": "Cargas sociales s/ remun. - Empleados"
+      "glosa": "Cargas sociales s/remuneraciones - Empleados"
     },
     {
       "label": "Enc. s/rem.-pessoal - Treinadores",
@@ -354,7 +354,7 @@
       "values": [
         0.039516
       ],
-      "glosa": "Cargas sociales s/ remun. - Entrenadores"
+      "glosa": "Cargas sociales s/remuneraciones - Entrenadores"
     },
     {
       "label": "Enc. s/rem.-pessoal - Jogadores",
@@ -364,7 +364,7 @@
       "values": [
         0.041713
       ],
-      "glosa": "Cargas sociales s/ remun. - Jugadores"
+      "glosa": "Cargas sociales s/remuneraciones - Jugadores"
     },
     {
       "label": "Seg.ac.trb - pessoal",
@@ -444,7 +444,7 @@
       "values": [
         0.016971
       ],
-      "glosa": "Ajustes de ejercicios anteriores"
+      "glosa": "Correcciones relativas a ejercicios anteriores"
     },
     {
       "label": "Quotizações",
@@ -494,7 +494,7 @@
       "values": [
         0.08125
       ],
-      "glosa": "Dotaciones/reversiones de amortización y deterioro"
+      "glosa": "Dotaciones/reversiones de amortización y depreciación"
     }
   ]
 }
