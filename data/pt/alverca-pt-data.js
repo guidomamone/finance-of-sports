@@ -4,6 +4,11 @@ const alvercaptRevenueLinesByYear = {
     { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.037669, disclosureLevel:'aggregated' },
     { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:0.02106, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Vendas e serviços prestados', normalizedCategory:'lump_football_operations', amountNative:0.063878, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios a exploração', normalizedCategory:'other_income', amountNative:0.054882, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:0.708548, disclosureLevel:'aggregated' },
+  ],
 };
 const alvercaptExpenseLinesByYear = {
   2022: [
@@ -12,6 +17,12 @@ const alvercaptExpenseLinesByYear = {
     { rawLabel:'Provisões (aumentos/reduções)', normalizedCategory:'admin_general_expense', amountNative:0, disclosureLevel:'aggregated' },
     { rawLabel:'Outros gastos', normalizedCategory:'other_expenses', amountNative:-0.041037, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos / reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.031442, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Fornecimentos e serviços externos', normalizedCategory:'admin_general_expense', amountNative:-1.441895, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos com o pessoal', normalizedCategory:'wages_squad', amountNative:-2.57562, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos', normalizedCategory:'other_expenses', amountNative:-0.038684, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.020295, disclosureLevel:'aggregated' },
   ],
 };
 const alvercaptFiscalYearMeta = {
@@ -32,6 +43,23 @@ const alvercaptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0.1523, officialTotalExpenses:2.550781, officialPAT:-2.416477,
   },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'alverca-pt-relatorio-contas-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.000029, tax:-0.007798,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.000029},
+      {label:'Imposto sobre o rendimento do período', value:-0.007798},
+    ],
+    sinDesglose: [
+      {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.063878, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.827308, officialTotalExpenses:4.076494, officialPAT:-3.257014,
+  },
 };
 const alvercaptPresupuestoOverlayByYear = {};
 
@@ -51,6 +79,11 @@ Object.assign(sources, {
   'alverca-pt-relatorio-contas-2021-22': {
     id:'alverca-pt-relatorio-contas-2021-22', clubId:'alverca-pt',
     title:'Futebol Clube de Alverca - Futebol SAD — relatorio-contas-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'alverca-pt-relatorio-contas-2022-23': {
+    id:'alverca-pt-relatorio-contas-2022-23', clubId:'alverca-pt',
+    title:'Futebol Clube de Alverca - Futebol SAD — relatorio-contas-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

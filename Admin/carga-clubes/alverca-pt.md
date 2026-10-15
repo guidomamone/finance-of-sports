@@ -41,6 +41,44 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2022: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2022-06-30","sourceId":"alverca-pt-relatorio-contas-2021-22"}
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Alverca/relatorio-contas-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Alverca/relatorio-contas-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas e serviços prestados | pág. 2, Jev 0.91 |
+| 2 | Subsídios a exploração | pág. 2, Jev 0.99 |
+| 3 | Outros rendimentos | pág. 2, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Fornecimentos e serviços externos | pág. 2, Jev 0.92 |
+| 2 | Gastos com o pessoal | pág. 2, precedente |
+| 3 | Outros gastos | pág. 2, Jev 1 |
+| 4 | Gastos/reversões de depreciação e de amortização | pág. 2, Claude 0.85 |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2023-06-30. Claude 2026-10-15 (lote 76): el registro dedujo 2023-09-29, que es la fecha de firma ('Alverca, 29 de Setembro de 2023', L75 y L108); el documento dice 'Período findo em 30 de Junho de 2023' (L87)
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-15): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2023 (pt-primeiraliga, pt-ligaportugal2): puede haber jugado otra división).
+```
+
 ## 2022
 
 ### Ingresos
@@ -87,4 +125,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Alverca/relatorio-contas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### alverca-pt-relatorio-contas-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Alverca/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

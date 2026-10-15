@@ -10,7 +10,7 @@ window.CLUB_INDEX = {
   "akrontolyatti-ru": {"n":"Akron Tolyatti","c":"RU","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "alianzalima-pe": {"n":"Alianza Lima","c":"PE","q":"full","y":6,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
   "almagro-ar": {"n":"Almagro","c":"AR","q":"full","y":6,"last":2023,"yrs":[[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
-  "alverca-pt": {"n":"Alverca","c":"PT","q":"full","y":1,"last":2022,"yrs":[[2022,"official_balance_sheet"]]},
+  "alverca-pt": {"n":"Alverca","c":"PT","q":"full","y":2,"last":2023,"yrs":[[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "amazonas-br": {"n":"Amazonas","c":"BR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "americadecali-co": {"n":"América de Cali","c":"CO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "americamineiro-br": {"n":"América Mineiro","c":"BR","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
