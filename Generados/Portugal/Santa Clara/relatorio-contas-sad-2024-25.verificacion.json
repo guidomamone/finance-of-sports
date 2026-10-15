@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.md",
- "generado": "2026-10-15T23:14:24.286Z",
- "estado": "cola",
+ "generado": "2026-10-15T23:18:26.402Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -303,9 +303,7 @@
    "fecha": "2026-10-15"
   }
  ],
- "cola": [
-  "306c291"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -350,8 +348,7 @@
   "duda de localizar que no afecta la carga: El cuadro de subsídios desglosa por origen (Estado/otras entidades), no por categoría de ingreso.",
   "duda de extraer que no afecta la carga: L1027 no tiene etiqueta; 6 270 606 parece ser total sin Merchandising (servicios+diversos), y L1028 el total general.",
   "duda de extraer que no afecta la carga: El total L1028 coincide con el estado L331 en ambos años, salvo redondeo.",
-  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"Custo das mercadorias vendidas e das matérias consumidas\"): ¿En b20 (L990-L994) la columna anterior tomada es 'Mercadorias Per. Anterior' (p.ej. 141.744,67) y no el total anterior, que está corrido?",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"Custo das mercadorias vendidas e das matérias consumidas\"): ¿En b20 (L990-L994) la columna anterior tomada es 'Mercadorias Per. Anterior' (p.ej. 141.744,67) y no el total anterior, que está corrido?"
  ],
  "reintentar": [
   {
@@ -1032,6 +1029,10 @@
   {
    "linea": 1021,
    "numero": "339 215"
+  },
+  {
+   "linea": 1542,
+   "numero": "40 646"
   },
   {
    "linea": 1548,
