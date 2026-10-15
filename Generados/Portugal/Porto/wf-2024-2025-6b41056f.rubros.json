@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf",
   "club": "porto",
   "year": 2025,
-  "generatedAt": "2026-10-15T22:54:26.355Z",
+  "generatedAt": "2026-10-15T23:04:21.426Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,7 +44,7 @@
       "values": [
         7.102
       ],
-      "glosa": "Ingresos de taquilla"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "Receita de lugares anuais",
@@ -54,7 +54,7 @@
       "values": [
         6.485
       ],
-      "glosa": "Ingresos por abonos anuales"
+      "glosa": "Ingresos por abonos"
     },
     {
       "label": "Outras receitas desportivas",
@@ -94,7 +94,7 @@
       "values": [
         10.553
       ],
-      "glosa": "Hospitalidad corporativa"
+      "glosa": "Corporate Hospitality"
     },
     {
       "label": "Outras prestações de serviços",
@@ -203,7 +203,7 @@
       "values": [
         3.247
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Vigilância e segurança",
@@ -372,7 +372,7 @@
       "values": [
         10.375
       ],
-      "glosa": "Depreciaciones y amortizaciones, excluyendo derechos de jugadores"
+      "glosa": "Amortizaciones y depreciaciones, excluyendo derechos federativos de jugadores"
     },
     {
       "label": "Provisões e perdas por imparidade excluindo passes de jogadores",
@@ -382,7 +382,7 @@
       "values": [
         -0.851
       ],
-      "glosa": "Provisiones y pérdidas por deterioro, excluyendo derechos de jugadores"
+      "glosa": "Provisiones y pérdidas por deterioro, excluyendo derechos federativos de jugadores"
     },
     {
       "label": "Outros custos",
@@ -402,7 +402,7 @@
       "values": [
         31.036
       ],
-      "glosa": "Amortizaciones de derechos de jugadores"
+      "glosa": "Amortización de derechos federativos de jugadores"
     },
     {
       "label": "Perdas por imparidade com passes de jogadores",
@@ -412,7 +412,7 @@
       "values": [
         3.341
       ],
-      "glosa": "Pérdidas por deterioro de derechos de jugadores"
+      "glosa": "Pérdidas por deterioro de derechos federativos de jugadores"
     },
     {
       "label": "Custos com alienações de passes de jogadores (ii)",
@@ -422,7 +422,7 @@
       "values": [
         62.006
       ],
-      "glosa": "Gastos por enajenación de derechos de jugadores (ii)"
+      "glosa": "Gastos por enajenación de derechos federativos de jugadores (ii)"
     },
     {
       "label": "Custos com empréstimos de jogadores",

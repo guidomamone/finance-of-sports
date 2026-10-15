@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
   "club": "santa-clara",
   "year": 2025,
-  "generatedAt": "2026-10-15T22:54:35.580Z",
+  "generatedAt": "2026-10-15T23:04:21.470Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.520033
       ],
-      "glosa": "Venta de entradas"
+      "glosa": "Entradas para partidos"
     },
     {
       "label": "Apostas Desportivas e Placard",
@@ -34,7 +34,7 @@
       "values": [
         0.339215
       ],
-      "glosa": "Apuestas deportivas y quinielas"
+      "glosa": "Apuestas deportivas y Placard"
     },
     {
       "label": "Publicidade",
@@ -64,7 +64,7 @@
       "values": [
         3.6
       ],
-      "glosa": "Derechos de televisión"
+      "glosa": "Derechos televisivos"
     },
     {
       "label": "Cedência por empréstimo de Direitos Desportivos",
@@ -134,7 +134,7 @@
       "values": [
         0.012021
       ],
-      "glosa": "Correcciones relativas a periodos anteriores"
+      "glosa": "Correcciones relativas a ejercicios anteriores"
     },
     {
       "label": "Outros",
@@ -154,7 +154,7 @@
       "values": [
         0.033375
       ],
-      "glosa": "Intereses y otros rendimientos similares"
+      "glosa": "Intereses y otros ingresos financieros similares"
     },
     {
       "label": "Custo das mercadorias vendidas e das matérias consumidas",
@@ -164,7 +164,7 @@
       "values": [
         0.378448
       ],
-      "glosa": "Coste de las mercancías vendidas y materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
     },
     {
       "label": "Subcontratos",
@@ -254,7 +254,7 @@
       "values": [
         0.076196
       ],
-      "glosa": "Herramientas y utensilios de desgaste rápido"
+      "glosa": "Herramientas y útiles de desgaste rápido"
     },
     {
       "label": "Livros e documentação técnica",
@@ -284,7 +284,7 @@
       "values": [
         0.000035
       ],
-      "glosa": "Artículos para regalo"
+      "glosa": "Artículos para obsequio"
     },
     {
       "label": "Outros",
@@ -374,7 +374,7 @@
       "values": [
         0.566195
       ],
-      "glosa": "Rentas y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Comunicação",
@@ -404,7 +404,7 @@
       "values": [
         0.07307
       ],
-      "glosa": "Gastos contenciosos y notariales"
+      "glosa": "Servicios contenciosos y notariales"
     },
     {
       "label": "Despesas de representação",
@@ -434,7 +434,7 @@
       "values": [
         0.280628
       ],
-      "glosa": "Retribuciones de los órganos de administración"
+      "glosa": "Remuneraciones de los órganos sociales"
     },
     {
       "label": "Remunerações do pessoal",
@@ -504,7 +504,7 @@
       "values": [
         0.471404
       ],
-      "glosa": "Provisiones (aumentos/reducciones)"
+      "glosa": "Provisiones (dotaciones/reversiones)"
     },
     {
       "label": "Outros gastos",

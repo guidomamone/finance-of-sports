@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.md",
- "generado": "2026-10-15T22:54:35.580Z",
- "estado": "cola",
+ "generado": "2026-10-15T23:04:21.470Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "08659b5",
-  "9d7e465"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -56,8 +53,7 @@
   "línea 345: 289 445,53 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (28844553) el resultado daría -41.796249 y no cierra)",
   "duda de localizar que no afecta la carga: b34 tiene una sola actividad (CAE 93120) y repite CMVMC 378.447,62 y gastos de personal.",
   "duda de extraer que no afecta la carga: La fila L994 tiene 5 valores para 6 columnas; 107.466,20 coincide con el estado (L333).",
-  "duda de extraer que no afecta la carga: El total impreso en L1551 difiere en 200 € de la suma de filas y del renglón L339; las filas sí cuadran salvo redondeo.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: El total impreso en L1551 difiere en 200 € de la suma de filas y del renglón L339; las filas sí cuadran salvo redondeo."
  ],
  "reintentar": null,
  "reintentado": true,

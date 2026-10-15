@@ -1,28 +1,527 @@
 {
  "pdf": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf",
- "generado": "2026-10-15T22:55:30.639Z",
+ "generado": "2026-10-15T23:06:34.689Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (porto-pt)"
   },
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "9 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Corporate Hospitality\" -> sponsorship_commercial 0.55; \"Diferencia de redondeo\" -> other_income 0; \"Outros proveitos com jogadores\" -> player_sales 0.6; \"Custo das vendas\" -> admin_general_expense 0.6; \"Outros fornecimentos e serviços\" -> other_expenses 0.75"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 8 ejercicio(s) con un solo perímetro (consolidado); 9 documento(s) mirados)"
+  "perímetro: consolidado (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 8 ejercicio(s) con un solo perímetro (consolidado); 9 documento(s) mirados)",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "porto-pt",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Vendas",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 11.09,
+    "disclosureLevel": "aggregated",
+    "_pag": 117,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Prémios competições UEFA",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 17.179,
+    "disclosureLevel": "aggregated",
+    "_pag": 152,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Prémios competições FIFA",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 17.047,
+    "disclosureLevel": "aggregated",
+    "_pag": 152,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Receita de bilheteira",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 7.102,
+    "disclosureLevel": "aggregated",
+    "_pag": 152,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Receita de lugares anuais",
+    "normalizedCategory": "season_tickets",
+    "amountNative": 6.485,
+    "disclosureLevel": "aggregated",
+    "_pag": 152,
+    "_escalon": 2,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outras receitas desportivas",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.246,
+    "disclosureLevel": "aggregated",
+    "_pag": 152,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Publicidade",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 19.579,
+    "disclosureLevel": "aggregated",
+    "_pag": 152,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Direitos de transmissões",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 42.926,
+    "disclosureLevel": "aggregated",
+    "_pag": 152,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Corporate Hospitality",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 10.553,
+    "disclosureLevel": "aggregated",
+    "_pag": 152,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outras prestações de serviços",
+    "normalizedCategory": "other_income",
+    "amountNative": 12.484,
+    "disclosureLevel": "aggregated",
+    "_pag": 152,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diferencia de redondeo",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.001,
+    "disclosureLevel": "aggregated",
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+   },
+   {
+    "rawLabel": "Outros proveitos",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.849,
+    "disclosureLevel": "aggregated",
+    "_pag": 117,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proveitos com alienações de passes de jogadores (i)",
+    "normalizedCategory": "player_sales",
+    "amountNative": 154.949,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proveitos com empréstimos de jogadores",
+    "normalizedCategory": "player_sales",
+    "amountNative": 11.554,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros proveitos com jogadores",
+    "normalizedCategory": "player_sales",
+    "amountNative": 4.999,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Custo das vendas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -6.849,
+    "disclosureLevel": "aggregated",
+    "_pag": 117,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Trabalhos especializados",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -8.824,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subcontratos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -6.563,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Direitos de imagem de atletas",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -3.838,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Rendas e alugueres",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.247,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Vigilância e segurança",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -2.61,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Despesas de organização",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -2.577,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Honorários",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.124,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Publicidade e propaganda",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.865,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Serviços de catering",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -1.863,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Material desportivo",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.766,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Comunicação",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.457,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Conservação e reparação",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.38,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Seguros",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.302,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Limpeza, higiene e conforto",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.198,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Combustíveis",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.867,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Eletricidade",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.774,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Despesas de representação",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.202,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros fornecimentos e serviços",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -4.278,
+    "disclosureLevel": "aggregated",
+    "_pag": 153,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diferencia de redondeo",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0.001,
+    "disclosureLevel": "aggregated",
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Custos com o pessoal",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -81.939,
+    "disclosureLevel": "aggregated",
+    "_pag": 117,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Depreciações e Amortizações, excluindo passes de jogadores",
+    "normalizedCategory": "depreciation",
+    "amountNative": -10.375,
+    "disclosureLevel": "aggregated",
+    "_pag": 117,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Provisões e perdas por imparidade excluindo passes de jogadores",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": 0.851,
+    "disclosureLevel": "aggregated",
+    "_pag": 117,
+    "_escalon": 2,
+    "_conf": 0.65,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros custos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -2.053,
+    "disclosureLevel": "aggregated",
+    "_pag": 117,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortizações de passes de jogadores",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -31.036,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Perdas por imparidade com passes de jogadores",
+    "normalizedCategory": "player_impairment",
+    "amountNative": -3.341,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Custos com alienações de passes de jogadores (ii)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -62.006,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 2,
+    "_conf": 0.65,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Custos com empréstimos de jogadores",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -5.784,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 2,
+    "_conf": 0.65,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros custos com jogadores",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -3.276,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diferencia de redondeo",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.001,
+    "disclosureLevel": "aggregated",
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2025-06-30",
+   "sourceId": "porto-pt-wf-2024-2025-6b41056f",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -23.518,
+   "tax": -3.993,
+   "extraRows": [
+    {
+     "label": "Custos e perdas financeiras",
+     "value": -27.717
+    },
+    {
+     "label": "Proveitos e ganhos financeiros",
+     "value": 4.059
+    },
+    {
+     "label": "Resultados relativos a investimentos",
+     "value": 0.14
+    },
+    {
+     "label": "Imposto sobre o rendimento",
+     "value": -3.993
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 321.043,
+   "officialTotalExpenses": 252.543,
+   "officialPAT": 40.988
+  },
+  "source": {
+   "id": "porto-pt-wf-2024-2025-6b41056f",
+   "clubId": "porto-pt",
+   "title": "Futebol Clube do Porto — wf-2024-2025-6b41056f (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Porto/wf-2024-2025-6b41056f.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.md",
  "reemplaza": false,
  "periodo": {
@@ -35,5 +534,845 @@
  },
  "clubId": "porto-pt",
  "year": 2025,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)",
+   "evidencia": ".md L187 (30 de junho de 2025)",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
+ "seleccion": {
+  "filas": 49,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Vendas",
+   "page": 117,
+   "native": 11.09,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 11.09,
+   "cat": "sponsorship_commercial",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 11.09
+  },
+  {
+   "label": "Prémios competições UEFA",
+   "page": 152,
+   "native": 17.179,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Prestações de serviços\")",
+   "signoFijo": 17.179,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 17.179
+  },
+  {
+   "label": "Prémios competições FIFA",
+   "page": 152,
+   "native": 17.047,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Prestações de serviços\")",
+   "signoFijo": 17.047,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 17.047
+  },
+  {
+   "label": "Receita de bilheteira",
+   "page": 152,
+   "native": 7.102,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Prestações de serviços\")",
+   "signoFijo": 7.102,
+   "cat": "matchday_competition",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.102
+  },
+  {
+   "label": "Receita de lugares anuais",
+   "page": 152,
+   "native": 6.485,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Prestações de serviços\")",
+   "signoFijo": 6.485,
+   "cat": "season_tickets",
+   "conf": 0.93,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.485
+  },
+  {
+   "label": "Outras receitas desportivas",
+   "page": 152,
+   "native": 2.246,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Prestações de serviços\")",
+   "signoFijo": 2.246,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.246
+  },
+  {
+   "label": "Publicidade",
+   "page": 152,
+   "native": 19.579,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Prestações de serviços\")",
+   "signoFijo": 19.579,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 19.579
+  },
+  {
+   "label": "Direitos de transmissões",
+   "page": 152,
+   "native": 42.926,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Prestações de serviços\")",
+   "signoFijo": 42.926,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 42.926
+  },
+  {
+   "label": "Corporate Hospitality",
+   "page": 152,
+   "native": 10.553,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Prestações de serviços\")",
+   "signoFijo": 10.553,
+   "cat": "sponsorship_commercial",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 10.553
+  },
+  {
+   "label": "Outras prestações de serviços",
+   "page": 152,
+   "native": 12.484,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Prestações de serviços\")",
+   "signoFijo": 12.484,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 12.484
+  },
+  {
+   "label": "Diferencia de redondeo",
+   "native": 0.001,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Prestações de serviços\")",
+   "signoFijo": 0.001,
+   "cat": "other_income",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "enLista": true,
+   "ladoRechazado": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 0.001
+  },
+  {
+   "label": "Outros proveitos",
+   "page": 117,
+   "native": 2.849,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.849,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.849
+  },
+  {
+   "label": "Proveitos com alienações de passes de jogadores (i)",
+   "page": 156,
+   "native": 154.949,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Proveitos com transações de passes de jogadores\")",
+   "signoFijo": 154.949,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 154.949
+  },
+  {
+   "label": "Proveitos com empréstimos de jogadores",
+   "page": 156,
+   "native": 11.554,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Proveitos com transações de passes de jogadores\")",
+   "signoFijo": 11.554,
+   "cat": "player_sales",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 11.554
+  },
+  {
+   "label": "Outros proveitos com jogadores",
+   "page": 156,
+   "native": 4.999,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Proveitos com transações de passes de jogadores\")",
+   "signoFijo": 4.999,
+   "cat": "player_sales",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 4.999
+  },
+  {
+   "label": "Custo das vendas",
+   "page": 117,
+   "native": 6.849,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 6.849,
+   "cat": "admin_general_expense",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -6.849
+  },
+  {
+   "label": "Trabalhos especializados",
+   "page": 153,
+   "native": 8.824,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 8.824,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -8.824
+  },
+  {
+   "label": "Subcontratos",
+   "page": 153,
+   "native": 6.563,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 6.563,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.563
+  },
+  {
+   "label": "Direitos de imagem de atletas",
+   "page": 153,
+   "native": 3.838,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 3.838,
+   "cat": "wages_squad",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.838
+  },
+  {
+   "label": "Rendas e alugueres",
+   "page": 153,
+   "native": 3.247,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 3.247,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 2 clubes (Nacional, Rio Ave), nota:fornecimentos e servicos externos · Claude 2026-10-15 (subagente Sonnet, seguridad media-alta): alquiler genérico, sin mención del estadio [relatorio-contas-2017-18.md L1185]",
+   "destino": "expense",
+   "amountNative": -3.247
+  },
+  {
+   "label": "Vigilância e segurança",
+   "page": 153,
+   "native": 2.61,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 2.61,
+   "cat": "match_organisation_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.61
+  },
+  {
+   "label": "Despesas de organização",
+   "page": 153,
+   "native": 2.577,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 2.577,
+   "cat": "match_organisation_expense",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.577
+  },
+  {
+   "label": "Honorários",
+   "page": 153,
+   "native": 2.124,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 2.124,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.124
+  },
+  {
+   "label": "Publicidade e propaganda",
+   "page": 153,
+   "native": 1.865,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 1.865,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.865
+  },
+  {
+   "label": "Serviços de catering",
+   "page": 153,
+   "native": 1.863,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 1.863,
+   "cat": "match_organisation_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.863
+  },
+  {
+   "label": "Material desportivo",
+   "page": 153,
+   "native": 1.766,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 1.766,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.766
+  },
+  {
+   "label": "Comunicação",
+   "page": 153,
+   "native": 1.457,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 1.457,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.457
+  },
+  {
+   "label": "Conservação e reparação",
+   "page": 153,
+   "native": 1.38,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 1.38,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.38
+  },
+  {
+   "label": "Seguros",
+   "page": 153,
+   "native": 1.302,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 1.302,
+   "cat": "admin_general_expense",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.302
+  },
+  {
+   "label": "Limpeza, higiene e conforto",
+   "page": 153,
+   "native": 1.198,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 1.198,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.198
+  },
+  {
+   "label": "Combustíveis",
+   "page": 153,
+   "native": 0.867,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.867,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.867
+  },
+  {
+   "label": "Eletricidade",
+   "page": 153,
+   "native": 0.774,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.774,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.774
+  },
+  {
+   "label": "Despesas de representação",
+   "page": 153,
+   "native": 0.202,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.202,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.202
+  },
+  {
+   "label": "Outros fornecimentos e serviços",
+   "page": 153,
+   "native": 4.278,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 4.278,
+   "cat": "other_expenses",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -4.278
+  },
+  {
+   "label": "Diferencia de redondeo",
+   "native": 0.001,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": -0.001,
+   "cat": "other_expenses",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0.001
+  },
+  {
+   "label": "Custos com o pessoal",
+   "page": 117,
+   "native": 81.939,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 81.939,
+   "cat": "wages_squad",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -81.939
+  },
+  {
+   "label": "Depreciações e Amortizações, excluindo passes de jogadores",
+   "page": 117,
+   "native": 10.375,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 10.375,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -10.375
+  },
+  {
+   "label": "Provisões e perdas por imparidade excluindo passes de jogadores",
+   "page": 117,
+   "native": 0.851,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": -0.851,
+   "cat": "other_amortisation",
+   "conf": 0.65,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": 0.851
+  },
+  {
+   "label": "Outros custos",
+   "page": 117,
+   "native": 2.053,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.053,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.053
+  },
+  {
+   "label": "Amortizações de passes de jogadores",
+   "page": 156,
+   "native": 31.036,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Amortizações e perdas por imparidade com passes de jogadores\")",
+   "signoFijo": 31.036,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -31.036
+  },
+  {
+   "label": "Perdas por imparidade com passes de jogadores",
+   "page": 156,
+   "native": 3.341,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Amortizações e perdas por imparidade com passes de jogadores\")",
+   "signoFijo": 3.341,
+   "cat": "player_impairment",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.341
+  },
+  {
+   "label": "Custos com alienações de passes de jogadores (ii)",
+   "page": 156,
+   "native": 62.006,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custos com transações de passes de jogadores\")",
+   "signoFijo": 62.006,
+   "cat": "other_expenses",
+   "conf": 0.65,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -62.006
+  },
+  {
+   "label": "Custos com empréstimos de jogadores",
+   "page": 156,
+   "native": 5.784,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custos com transações de passes de jogadores\")",
+   "signoFijo": 5.784,
+   "cat": "other_expenses",
+   "conf": 0.65,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -5.784
+  },
+  {
+   "label": "Outros custos com jogadores",
+   "page": 156,
+   "native": 3.276,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custos com transações de passes de jogadores\")",
+   "signoFijo": 3.276,
+   "cat": "other_expenses",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -3.276
+  },
+  {
+   "label": "Diferencia de redondeo",
+   "native": 0.001,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custos com transações de passes de jogadores\")",
+   "signoFijo": 0.001,
+   "cat": "other_expenses",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.001
+  },
+  {
+   "label": "Custos e perdas financeiras",
+   "page": null,
+   "native": -27.717,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Proveitos e ganhos financeiros",
+   "page": null,
+   "native": 4.059,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Resultados relativos a investimentos",
+   "page": null,
+   "native": 0.14,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposto sobre o rendimento",
+   "page": null,
+   "native": -3.993,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Prestações de serviços\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Proveitos com transações de passes de jogadores\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Amortizações e perdas por imparidade com passes de jogadores\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Custos com transações de passes de jogadores\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 321.043,
+  "expSum": -252.543,
+  "officialTotalRevenue": 321.043,
+  "officialTotalExpenses": 252.543,
+  "officialPAT": 40.988,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 40.988,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 321.043
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 252.543
+  }
+ },
+ "liga": {
+  "valor": "pt-primeiraliga",
+  "fuente": "roster cacheado de \"2024–25 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Porto\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-15)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Portugal (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "porto-pt-wf-2024-2025-6b41056f",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "pt-primeiraliga",
+   "fuente": "roster cacheado de \"2024–25 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Porto\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 4,
+  "lineasIngreso": 15,
+  "lineasGasto": 30,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
 }
