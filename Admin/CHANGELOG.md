@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 698 — Cifras imposibles del OCR, deuda y caja sin dato en pantalla, medir-cargar (2026-10-15)
+
+- 232 ad: medido que ninguna de las 2.242 cifras con forma imposible ("13.950,790,99") de 155 transcripciones llegó a un dato publicado.
+  `chequeos-gratis.mjs`: una cifra así no se valida gratis (el texto del PDF compara solo dígitos y la tolerancia de 3 cifras la dejaba
+  pasar; Ceará 2019 pág. 36); `formaImposible` compartida en `verify-numbers.mjs` (también la usa `caja-deuda.mjs`). Medido: 32 páginas
+  más a la validación paga en esas transcripciones; en `--prueba`, 1 página más y el mismo recall (1168/1168). Solo hacia adelante.
+- 235: deuda o caja sin dato se muestra "—" y sin las dos no hay deuda neta, en la ficha, el KPI, el multiaño, Comparar gestiones y el
+  selector (`deudaNoDesglosada()` y `filaDeuda()`); textos del aviso en castellano e inglés. Argentinos 2019 mostraba caja 0 y deuda
+  neta igual a la bruta. Un 0 impreso de uno solo sigue (Sunderland 2024). ASSET_V 962. `auditAll()`: 2.114 cierran, 3 de Bayern por
+  redondeo (ya documentados).
+- `tools/medir-cargar.mjs`: el ensayo de `cargar.mjs` en todos los documentos con la cola en una copia, y la comparación antes/después.
+- To-do 236 nuevo: revisar el pipeline de punta a punta después de los cambios del 232 y el 234.
+
 ## Versión 697 — PAOK y Olympiacos rehechos con la pregunta por renglón; deuda y caja 0/0 a null (2026-10-15)
 
 - To-do 234. PAOK 2017 y 2019-2025: personal, honorarios y servicios de terceros de administración y comercialización a
