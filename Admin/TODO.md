@@ -66,6 +66,11 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
     k) Cuando el .md pierde TODOS los signos de una tabla escaneada (Rio Ave 2024, pág. 14), los intereses obtenidos se suman como costo
        (financiero 0,317495 en vez del neto −0,085703) y las reversiones de imparidad sin "-" quedan como gasto. Se resolvió con ajustes
        `fila` mirando la imagen. Escalón posible: que la lectura con signos pruebe el financiero por etiqueta ("obtidos"/"suportados").
+    l) `cargar.mjs` toma el valor ABSOLUTO de un ajuste `fila` de gasto con valor negativo (una reversión), aunque `verificar.mjs` cierra con
+       el signo: Rio Ave 2024, reversiones de imparidad −4,89 y −2.500,00 como gasto; verificar cerraba y la carga quedaba 5.011 € arriba en
+       gastos (tie-out). Se pasaron al lado del ingreso con valor positivo (mismo efecto). Escalón posible: que cargar respete el signo del
+       ajuste como lo hace la lectura "signo del documento" (to-do 200). Además, el chequeo del año vecino compara con documentos que están en
+       documentos-descartados.txt (Vitória 2021 contra el 2021-22 de la asociación; Rio Ave 2016 contra el 2014-15): tendría que saltearlos.
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
