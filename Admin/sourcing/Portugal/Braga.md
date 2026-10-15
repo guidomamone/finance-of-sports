@@ -35,3 +35,5 @@ de tamaño pero `file` lo identifica como "gzip compressed data", no como PDF).
 Buscar 2017/18 y 2018/19 en Wayback (no intentado esta sesión) antes de darlos por perdidos.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2025 desde `Clubes/Portugal/Braga/relatorio-contas-2024-25.pdf` (sourceId `braga-pt-relatorio-contas-2024-25`).

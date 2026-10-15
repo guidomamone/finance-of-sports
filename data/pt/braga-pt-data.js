@@ -1,0 +1,116 @@
+const bragaptRevenueLinesByYear = {
+  2025: [
+    { rawLabel:'Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:1.19394, disclosureLevel:'aggregated' },
+    { rawLabel:'Receita de bilheteira', normalizedCategory:'matchday_competition', amountNative:1.062466, disclosureLevel:'aggregated' },
+    { rawLabel:'Pacotes corporate', normalizedCategory:'sponsorship_commercial', amountNative:2.286882, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos de transmissões', normalizedCategory:'broadcasting', amountNative:9.1, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade / Patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:4.18104, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.283877, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.164543, disclosureLevel:'aggregated' },
+    { rawLabel:'Participação em competições europeias', normalizedCategory:'competition_bonus', amountNative:14.192677, disclosureLevel:'aggregated' },
+    { rawLabel:'Participação em competições nacionais', normalizedCategory:'competition_bonus', amountNative:0.842216, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendimentos com alienações de direitos de atletas', normalizedCategory:'player_sales', amountNative:27.09799, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros ganhos com operações de atletas', normalizedCategory:'player_sales', amountNative:4.18714, disclosureLevel:'aggregated' },
+    { rawLabel:'Empréstimo de atletas', normalizedCategory:'player_sales', amountNative:2.2, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência de atletas a seleções nacionais', normalizedCategory:'other_income', amountNative:0.080498, disclosureLevel:'aggregated' },
+    { rawLabel:'Mecanismo de solidariedade e direitos de formação', normalizedCategory:'player_sales', amountNative:1.263757, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas de apostas desportivas', normalizedCategory:'other_income', amountNative:0.441942, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações', normalizedCategory:'other_income', amountNative:0.010252, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.745238, disclosureLevel:'aggregated' },
+  ],
+};
+const bragaptExpenseLinesByYear = {
+  2025: [
+    { rawLabel:'Custo das mercadorias vendidas e das matérias consumidas', normalizedCategory:'other_expenses', amountNative:-0.758423, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-3.900126, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos com aquisição de atletas', normalizedCategory:'other_expenses', amountNative:-2.468651, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas com provas', normalizedCategory:'match_organisation_expense', amountNative:-0.762718, disclosureLevel:'aggregated' },
+    { rawLabel:'Inscrições e registos', normalizedCategory:'match_organisation_expense', amountNative:-0.174559, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e segurança', normalizedCategory:'match_organisation_expense', amountNative:-1.293754, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.879732, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e reparação', normalizedCategory:'admin_general_expense', amountNative:-0.141546, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços bancários', normalizedCategory:'admin_general_expense', amountNative:-0.063312, disclosureLevel:'aggregated' },
+    { rawLabel:'Ferramentas e utensílios de desgaste rápido', normalizedCategory:'admin_general_expense', amountNative:-0.198868, disclosureLevel:'aggregated' },
+    { rawLabel:'Equipamento e material desportivo', normalizedCategory:'other_expenses', amountNative:-1.100142, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.168469, disclosureLevel:'aggregated' },
+    { rawLabel:'Eletricidade', normalizedCategory:'admin_general_expense', amountNative:-0.706616, disclosureLevel:'aggregated' },
+    { rawLabel:'Combustíveis', normalizedCategory:'admin_general_expense', amountNative:-0.332853, disclosureLevel:'aggregated' },
+    { rawLabel:'Água', normalizedCategory:'admin_general_expense', amountNative:-0.088743, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e estadas', normalizedCategory:'match_organisation_expense', amountNative:-3.386198, disclosureLevel:'aggregated' },
+    { rawLabel:'Corporate (catering)', normalizedCategory:'match_organisation_expense', amountNative:-0.819648, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas / Direitos Exploração', normalizedCategory:'admin_general_expense', amountNative:-1.159767, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.310728, disclosureLevel:'aggregated' },
+    { rawLabel:'Royalties', normalizedCategory:'other_expenses', amountNative:-0.24, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.092591, disclosureLevel:'aggregated' },
+    { rawLabel:'Contencioso e notariado', normalizedCategory:'admin_general_expense', amountNative:-0.031189, disclosureLevel:'aggregated' },
+    { rawLabel:'Limpeza, higiene e conforto', normalizedCategory:'admin_general_expense', amountNative:-0.230989, disclosureLevel:'aggregated' },
+    { rawLabel:'Pessoal do SCB ao serviço da SAD', normalizedCategory:'admin_general_expense', amountNative:-0.418301, disclosureLevel:'aggregated' },
+    { rawLabel:'Remuneração da Comissão Executiva', normalizedCategory:'admin_general_expense', amountNative:-0.596936, disclosureLevel:'aggregated' },
+    { rawLabel:'Senhas de presença', normalizedCategory:'admin_general_expense', amountNative:-0.078, disclosureLevel:'aggregated' },
+    { rawLabel:'Atletas', normalizedCategory:'wages_squad', amountNative:-17.726319, disclosureLevel:'aggregated' },
+    { rawLabel:'Treinadores', normalizedCategory:'wages_squad', amountNative:-2.608256, disclosureLevel:'aggregated' },
+    { rawLabel:'Staff Geral', normalizedCategory:'wages_squad', amountNative:-4.183834, disclosureLevel:'aggregated' },
+    { rawLabel:'Prémios de assinatura', normalizedCategory:'wages_squad', amountNative:-3.189072, disclosureLevel:'aggregated' },
+    { rawLabel:'Prémios de desempenho', normalizedCategory:'wages_squad', amountNative:-1.916341, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações', normalizedCategory:'wages_squad', amountNative:-1.314696, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos com remunerações', normalizedCategory:'wages_squad', amountNative:-3.037915, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros de acidentes de trabalho', normalizedCategory:'admin_general_expense', amountNative:-3.314453, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Gastos', normalizedCategory:'other_expenses', amountNative:-1.50406, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de dívidas a receber (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:0.026352, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de inventários (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisões (aumentos/reduções)', normalizedCategory:'admin_general_expense', amountNative:-1.960219, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.022167, disclosureLevel:'aggregated' },
+    { rawLabel:'Abates', normalizedCategory:'exceptional_items', amountNative:-0.152639, disclosureLevel:'aggregated' },
+    { rawLabel:'Empréstimo de atletas', normalizedCategory:'player_amortisation', amountNative:-0.525175, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos de formação e mecanismo de solidariedade', normalizedCategory:'other_expenses', amountNative:-0.710607, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas / Penalidades desportivas', normalizedCategory:'other_expenses', amountNative:-0.19293, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.437376, disclosureLevel:'aggregated' },
+    { rawLabel:'Edifícios e outras construções', normalizedCategory:'depreciation', amountNative:-1.668637, disclosureLevel:'aggregated' },
+    { rawLabel:'Equipamento básico', normalizedCategory:'depreciation', amountNative:-0.661579, disclosureLevel:'aggregated' },
+    { rawLabel:'Equipamento de transporte', normalizedCategory:'depreciation', amountNative:-0.285526, disclosureLevel:'aggregated' },
+    { rawLabel:'Equipamento administrativo', normalizedCategory:'depreciation', amountNative:-0.05106, disclosureLevel:'aggregated' },
+    { rawLabel:'Plantel', normalizedCategory:'player_amortisation', amountNative:-12.707851, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos de superfície', normalizedCategory:'other_amortisation', amountNative:-0.005708, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros ativos intangíveis', normalizedCategory:'other_amortisation', amountNative:-0.026255, disclosureLevel:'aggregated' },
+  ],
+};
+const bragaptFiscalYearMeta = {
+  2025: {
+    currency:'EUR', fxRef:'EUR@2025-06-30',
+    sourceId:'braga-pt-relatorio-contas-2024-25',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.681116, tax:-0.059557,
+    extraRows: [
+      {label:'Juros e rendimentos similares obtidos', value:0.379501},
+      {label:'Juros e gastos similares suportados', value:-2.060617},
+      {label:'Imposto sobre o rendimento do período', value:-0.059557},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:69.334458, officialTotalExpenses:78.426543, officialPAT:-10.9854,
+  },
+};
+const bragaptPresupuestoOverlayByYear = {};
+
+const bragaptPasesData = [];
+const bragaptResultadosData = {};
+const bragaptTitulosData = [];
+
+window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
+window.CLUB_GENERIC_DATA['braga-pt'] = {
+  revenueLinesByYear: bragaptRevenueLinesByYear, expenseLinesByYear: bragaptExpenseLinesByYear,
+  fiscalYearMeta: bragaptFiscalYearMeta, pasesData: bragaptPasesData,
+  resultadosData: bragaptResultadosData, titulosData: bragaptTitulosData,
+  presupuestoOverlayByYear: bragaptPresupuestoOverlayByYear,
+};
+
+Object.assign(sources, {
+  'braga-pt-relatorio-contas-2024-25': {
+    id:'braga-pt-relatorio-contas-2024-25', clubId:'braga-pt',
+    title:'Sporting Clube de Braga – Futebol, SAD — relatorio-contas-2024-25 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+});
+
+memberCountByClub['braga-pt'] = null;
