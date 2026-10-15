@@ -55,7 +55,7 @@ Duda: No se encontró fuente con la fecha formal en que Savvidis asumió la pres
 ### Ingresos
 
 ```text
-2025: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2025: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Grecia/PAOK/PAOK_FS_2025-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -75,24 +75,24 @@ Generados/Grecia/PAOK/PAOK_FS_2025-06-30.categorias.json (escalón de cada fila 
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Αμοιβές προσωπικού | pág. 36, Claude 0.8 |
+| 1 | Αμοιβές προσωπικού | pág. 36, precedente |
 | 2 | Αμοιβές τρίτων | pág. 36, precedente |
 | 3 | Παροχές τρίτων | pág. 36, precedente |
-| 4 | Φόροι-Τέλη | pág. 36, Claude 0.8 |
+| 4 | Φόροι-Τέλη | pág. 36, precedente |
 | 5 | Διάφορα έξοδα | pág. 36, precedente |
 | 6 | Αποσβέσεις | pág. 36, precedente |
 | 7 | Αγορές Αναλωσίμων | pág. 36, precedente |
-| 8 | Αμοιβές προσωπικού | pág. 37, Claude 0.8 |
+| 8 | Αμοιβές προσωπικού | pág. 37, precedente |
 | 9 | Αμοιβές τρίτων | pág. 37, precedente |
 | 10 | Παροχές τρίτων | pág. 37, precedente |
-| 11 | Φόροι-Τέλη | pág. 37, Claude 0.8 |
+| 11 | Φόροι-Τέλη | pág. 37, precedente |
 | 12 | Διάφορα έξοδα | pág. 37, precedente |
 | 13 | Αποσβέσεις | pág. 37, precedente |
 | 14 | Λοιπές Προβλέψεις | pág. 37, precedente |
-| 15 | Αμοιβές προσωπικού | pág. 37, Claude 0.8 |
+| 15 | Αμοιβές προσωπικού | pág. 37, precedente |
 | 16 | Αμοιβές τρίτων | pág. 37, precedente |
 | 17 | Παροχές τρίτων | pág. 37, precedente |
-| 18 | Φόροι-Τέλη | pág. 37, Claude 0.8 |
+| 18 | Φόροι-Τέλη | pág. 37, precedente |
 | 19 | Διάφορα έξοδα | pág. 37, precedente |
 | 20 | Αποσβέσεις | pág. 37, precedente |
 | 21 | Λοιπές Προβλέψεις | pág. 37, precedente |
@@ -105,17 +105,11 @@ Generados/Grecia/PAOK/PAOK_FS_2025-06-30.categorias.json (escalón de cada fila 
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-```text
 tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 16
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2024–25 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "PAOK".
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## 2024
