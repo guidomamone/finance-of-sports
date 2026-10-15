@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf",
   "club": "nacional-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T13:36:53.928Z",
+  "generatedAt": "2026-10-15T13:48:32.029Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -104,7 +104,7 @@
       "values": [
         0.229792
       ],
-      "glosa": "Ajustes de ejercicios anteriores"
+      "glosa": "Correcciones relativas a ejercicios anteriores"
     },
     {
       "label": "Excesso da estimativa para impostos",
@@ -114,7 +114,7 @@
       "values": [
         0.000604
       ],
-      "glosa": "Exceso de estimación para impuestos"
+      "glosa": "Exceso de la provisión para impuestos"
     },
     {
       "label": "Comparticipação tarifa residente",
@@ -124,7 +124,7 @@
       "values": [
         0.242545
       ],
-      "glosa": "Subvención por tarifa de residente"
+      "glosa": "Cofinanciación tarifa de residente"
     },
     {
       "label": "Outros não especificados",
@@ -174,7 +174,7 @@
       "values": [
         0.032889
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Serviços bancários",
@@ -244,7 +244,7 @@
       "values": [
         0.12
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Comunicação",
@@ -254,7 +254,7 @@
       "values": [
         0.010002
       ],
-      "glosa": "Comunicaciones"
+      "glosa": "Comunicación"
     },
     {
       "label": "Contencioso e notariado",
@@ -294,7 +294,7 @@
       "values": [
         0.1212
       ],
-      "glosa": "Remuneraciones de los órganos sociales"
+      "glosa": "Remuneraciones de los órganos de gobierno"
     },
     {
       "label": "Remunerações do Pessoal - Funcionários",
@@ -334,7 +334,7 @@
       "values": [
         0.028785
       ],
-      "glosa": "Cargas sociales s/remun. - Órganos sociales"
+      "glosa": "Cargas sociales s/remun. - Órganos de gobierno"
     },
     {
       "label": "Enc. s/rem.-pessoal - Funcionários",
@@ -374,7 +374,7 @@
       "values": [
         0.00018
       ],
-      "glosa": "Seguro de accidentes de trabajo - Personal"
+      "glosa": "Seguros de accidentes de trabajo - Personal"
     },
     {
       "label": "Seg.ac.trb - Jogadores",
@@ -384,7 +384,7 @@
       "values": [
         0.125546
       ],
-      "glosa": "Seguro de accidentes de trabajo - Jugadores"
+      "glosa": "Seguros de accidentes de trabajo - Jugadores"
     },
     {
       "label": "Outros Custos com Pessoal - Jogadores",
@@ -424,7 +424,7 @@
       "values": [
         0.422414
       ],
-      "glosa": "Provisiones (dotaciones/reversiones)"
+      "glosa": "Provisiones (aumentos/reducciones)"
     },
     {
       "label": "Encargos com descontos de letras",
@@ -434,7 +434,7 @@
       "values": [
         0.01081
       ],
-      "glosa": "Gastos por descuento de efectos comerciales"
+      "glosa": "Gastos por descuento de efectos"
     },
     {
       "label": "Correções relativas a períodos anteriores",
@@ -444,7 +444,7 @@
       "values": [
         0.016971
       ],
-      "glosa": "Ajustes de ejercicios anteriores"
+      "glosa": "Correcciones relativas a ejercicios anteriores"
     },
     {
       "label": "Quotizações",
@@ -474,7 +474,7 @@
       "values": [
         0.012307
       ],
-      "glosa": "Costas judiciales, tribunal, etc."
+      "glosa": "Costas judiciales, tribunales, etc."
     },
     {
       "label": "Outros não especificados",
@@ -494,7 +494,7 @@
       "values": [
         0.08125
       ],
-      "glosa": "Gastos/reversiones por amortización y deterioro de valor"
+      "glosa": "Gastos/reversiones de amortización y depreciación"
     }
   ]
 }

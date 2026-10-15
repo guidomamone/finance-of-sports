@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2021-22.pdf",
   "club": "moreirense-pt",
   "year": 2022,
-  "generatedAt": "2026-10-15T13:36:53.881Z",
+  "generatedAt": "2026-10-15T13:48:31.988Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -64,7 +64,7 @@
       "values": [
         4.10405
       ],
-      "glosa": "Rendimientos de inversiones no financieras"
+      "glosa": "Ingresos de inversiones no financieras"
     },
     {
       "label": "Outros",
@@ -124,7 +124,7 @@
       "values": [
         0.079031
       ],
-      "glosa": "6226 Reparaciones y conservación"
+      "glosa": "6226 Conservación y reparación"
     },
     {
       "label": "6231 Ferramentas e utensílios de desgaste rápido",
@@ -134,7 +134,7 @@
       "values": [
         0.014752
       ],
-      "glosa": "6231 Herramientas y utensilios de desgaste rápido"
+      "glosa": "6231 Herramientas y útiles de desgaste rápido"
     },
     {
       "label": "6233 Material de escritório",
@@ -214,7 +214,7 @@
       "values": [
         0.086358
       ],
-      "glosa": "6261 Arrendamientos y cánones"
+      "glosa": "6261 Rentas y alquileres"
     },
     {
       "label": "6262 Comunicação",
@@ -224,7 +224,7 @@
       "values": [
         0.007415
       ],
-      "glosa": "6262 Comunicaciones"
+      "glosa": "6262 Comunicación"
     },
     {
       "label": "6263 Seguros",
@@ -234,7 +234,7 @@
       "values": [
         0.001746
       ],
-      "glosa": "6263 Primas de seguros"
+      "glosa": "6263 Seguros"
     },
     {
       "label": "6265 Contencioso e notariado",
@@ -244,7 +244,7 @@
       "values": [
         0.004648
       ],
-      "glosa": "6265 Gastos jurídicos y notariales"
+      "glosa": "6265 Contencioso y notariado"
     },
     {
       "label": "6267 Limpeza, higiene e conforto",
@@ -254,7 +254,7 @@
       "values": [
         0.003511
       ],
-      "glosa": "6267 Limpieza, higiene y confort"
+      "glosa": "6267 Limpieza, higiene y mantenimiento"
     },
     {
       "label": "6268 Outros serviços",
@@ -294,7 +294,7 @@
       "values": [
         0.274648
       ],
-      "glosa": "Cargas sociales"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho e doenças profissionais",
@@ -324,7 +324,7 @@
       "values": [
         0
       ],
-      "glosa": "Deterioro de deudores comerciales (pérdidas/reversiones)"
+      "glosa": "Deterioro de cuentas por cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -354,7 +354,7 @@
       "values": [
         0.000023
       ],
-      "glosa": "Descuentos sobre ventas por pronto pago concedidos"
+      "glosa": "Descuentos por pronto pago concedidos"
     },
     {
       "label": "Outros",
@@ -374,7 +374,7 @@
       "values": [
         1.120698
       ],
-      "glosa": "Dotaciones/reversiones de amortización y depreciación"
+      "glosa": "Gastos/reversiones de amortización y depreciación"
     }
   ]
 }

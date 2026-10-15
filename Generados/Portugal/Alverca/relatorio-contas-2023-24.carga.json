@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
- "generado": "2026-10-15T13:44:42.154Z",
- "frena": [],
+ "generado": "2026-10-15T13:55:40.901Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "alverca-pt ya tiene el ejercicio 2024 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['alverca-pt-relatorio-contas-2023-24'] ya existe"
+  }
+ ],
  "avisos": [],
  "ejercicio": {
   "clubId": "alverca-pt",
@@ -664,8 +677,8 @@
  },
  "liga": {
   "valor": null,
-  "fuente": "no aparece en los rosters cacheados de 2024 (pt-primeiraliga, pt-ligaportugal2): puede haber jugado otra división",
-  "estado": "pendiente",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe",
   "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
  },
  "procedencia": {
@@ -711,8 +724,8 @@
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 8,
   "lineasGasto": 8,
   "metaFilas": 2,

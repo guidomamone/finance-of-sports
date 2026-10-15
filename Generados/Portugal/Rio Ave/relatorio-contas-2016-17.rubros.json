@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.pdf",
   "club": "rioave-pt",
   "year": 2017,
-  "generatedAt": "2026-10-15T13:36:53.966Z",
+  "generatedAt": "2026-10-15T13:48:32.056Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         0.000102
       ],
-      "glosa": "Beneficio de explotación"
+      "glosa": "Resultado de explotación"
     },
     {
       "label": "Comparticipações da UEFA",
@@ -64,7 +64,7 @@
       "values": [
         0.128748
       ],
-      "glosa": "Participaciones de la UEFA"
+      "glosa": "Aportaciones de la UEFA"
     },
     {
       "label": "Subsídio Deslocação",
@@ -74,7 +74,7 @@
       "values": [
         0.002857
       ],
-      "glosa": "Subsidio por desplazamiento"
+      "glosa": "Subsidio por desplazamientos"
     },
     {
       "label": "Royalties",
@@ -144,7 +144,7 @@
       "values": [
         0.021094
       ],
-      "glosa": "Subcontratación"
+      "glosa": "Subcontratos"
     },
     {
       "label": "Trabalhos especializados",
@@ -234,7 +234,7 @@
       "values": [
         0.001048
       ],
-      "glosa": "Artículos de regalo"
+      "glosa": "Artículos de regalo y promoción"
     },
     {
       "label": "Equipamento Desportivo",
@@ -254,7 +254,7 @@
       "values": [
         0.033408
       ],
-      "glosa": "Medicamentos y artículos de salud"
+      "glosa": "Medicamentos y artículos sanitarios"
     },
     {
       "label": "Outros materiais",
@@ -384,7 +384,7 @@
       "values": [
         0.344845
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes no trabalho e doenças profissionais",
@@ -394,7 +394,7 @@
       "values": [
         0.385281
       ],
-      "glosa": "Seguros de accidentes de trabajo y enfermedades profesionales"
+      "glosa": "Seguros de accidentes laborales y enfermedades profesionales"
     },
     {
       "label": "Mecanismo de Solidariedade",
@@ -434,7 +434,7 @@
       "values": [
         0.095207
       ],
-      "glosa": "Cuotas/inscripciones"
+      "glosa": "Cuotas e inscripciones"
     },
     {
       "label": "Impostos",
@@ -474,7 +474,7 @@
       "values": [
         0.088813
       ],
-      "glosa": "Otros gastos de financiación"
+      "glosa": "Otros gastos financieros"
     },
     {
       "label": "Edifícios e outras construções",

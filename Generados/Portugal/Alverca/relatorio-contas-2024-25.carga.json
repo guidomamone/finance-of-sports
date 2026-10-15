@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2024-25.pdf",
- "generado": "2026-10-15T13:44:42.226Z",
- "frena": [],
+ "generado": "2026-10-15T13:55:40.977Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "alverca-pt ya tiene el ejercicio 2025 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['alverca-pt-relatorio-contas-2024-25'] ya existe"
+  }
+ ],
  "avisos": [
   "gastos: ningún total impreso igual a la suma de las líneas (-8.1202); queda la suma, verificada por el resultado del ejercicio"
  ],
@@ -59,7 +72,7 @@
     "_pag": 29,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (categorias.json decía exceptional_items)"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía exceptional_items)"
    },
    {
     "rawLabel": "Recuperação de encargos",
@@ -428,7 +441,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (categorias.json decía exceptional_items)",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía exceptional_items)",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.000185
@@ -827,8 +840,8 @@
  },
  "liga": {
   "valor": "pt-ligaportugal2",
-  "fuente": "roster cacheado de \"2024–25 Liga Portugal 2\" (tools/club-league-reference/pt.json), coincidencia exacta \"Alverca\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -868,13 +881,13 @@
   },
   "liga": {
    "valor": "pt-ligaportugal2",
-   "fuente": "roster cacheado de \"2024–25 Liga Portugal 2\" (tools/club-league-reference/pt.json), coincidencia exacta \"Alverca\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 7,
   "lineasGasto": 20,
   "metaFilas": 2,

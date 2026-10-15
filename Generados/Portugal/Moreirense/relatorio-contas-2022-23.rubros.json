@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2022-23.pdf",
   "club": "moreirense-pt",
   "year": 2023,
-  "generatedAt": "2026-10-15T13:36:53.887Z",
+  "generatedAt": "2026-10-15T13:48:31.992Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.55
       ],
-      "glosa": "Derechos de televisión"
+      "glosa": "Derechos televisivos"
     },
     {
       "label": "Outros",
@@ -54,7 +54,7 @@
       "values": [
         0.368712
       ],
-      "glosa": "Juegos sociales (Placard / online)"
+      "glosa": "Juegos sociales (placard / online)"
     },
     {
       "label": "Rendimentos suplementares",
@@ -84,7 +84,7 @@
       "values": [
         2.059345
       ],
-      "glosa": "Ingresos de inversiones no financieras a)"
+      "glosa": "Rendimientos de inversiones no financieras a)"
     },
     {
       "label": "Outros",
@@ -104,7 +104,7 @@
       "values": [
         2.55
       ],
-      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
+      "glosa": "Deterioro de cuentas por cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -114,7 +114,7 @@
       "values": [
         0.02775
       ],
-      "glosa": "Provisiones (dotaciones/reversiones)"
+      "glosa": "Provisiones (aumentos/disminuciones)"
     },
     {
       "label": "Custo das mercadorias vendidas e das matérias consumidas",
@@ -264,7 +264,7 @@
       "values": [
         0.000013
       ],
-      "glosa": "6252 Transportes de personal"
+      "glosa": "6252 Transporte de personal"
     },
     {
       "label": "6261 Rendas e alugueres",
@@ -274,7 +274,7 @@
       "values": [
         0.083948
       ],
-      "glosa": "6261 Arrendamientos y alquileres"
+      "glosa": "6261 Rentas y alquileres"
     },
     {
       "label": "6262 Comunicação",
@@ -284,7 +284,7 @@
       "values": [
         0.0073
       ],
-      "glosa": "6262 Comunicación"
+      "glosa": "6262 Comunicaciones"
     },
     {
       "label": "6263 Seguros",
@@ -304,7 +304,7 @@
       "values": [
         0.000648
       ],
-      "glosa": "6265 Gastos jurídicos y notariales"
+      "glosa": "6265 Contencioso y notariado"
     },
     {
       "label": "6267 Limpeza, higiene e conforto",
@@ -314,7 +314,7 @@
       "values": [
         0.003971
       ],
-      "glosa": "6267 Limpieza, higiene y mantenimiento"
+      "glosa": "6267 Limpieza, higiene y confort"
     },
     {
       "label": "6268 Outros serviços",
@@ -344,7 +344,7 @@
       "values": [
         0.208471
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho e doenças profissionais",
@@ -414,7 +414,7 @@
       "values": [
         0.735805
       ],
-      "glosa": "Gastos/reversiones de amortización y depreciación"
+      "glosa": "Gastos/reversiones por depreciación y amortización"
     }
   ]
 }

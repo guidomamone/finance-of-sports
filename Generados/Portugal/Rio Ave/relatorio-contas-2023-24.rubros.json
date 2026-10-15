@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
   "club": "rioave-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T13:36:53.996Z",
+  "generatedAt": "2026-10-15T13:48:32.079Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.424068
       ],
-      "glosa": "Derechos televisivos"
+      "glosa": "Derechos de televisión"
     },
     {
       "label": "Patrocínio e Publicidade",
@@ -64,7 +64,7 @@
       "values": [
         0.010925
       ],
-      "glosa": "Royalties"
+      "glosa": "Cánones"
     },
     {
       "label": "Participação nas Competições Nacionais",
@@ -104,7 +104,7 @@
       "values": [
         4.574284
       ],
-      "glosa": "Venta de derechos deportivos"
+      "glosa": "Venta de derechos federativos"
     },
     {
       "label": "Indemnizações AT",
@@ -114,7 +114,7 @@
       "values": [
         0.030629
       ],
-      "glosa": "Indemnizaciones AT"
+      "glosa": "Indemnizaciones por accidentes de trabajo"
     },
     {
       "label": "Mecanismo de Solidariedade",
@@ -137,6 +137,26 @@
       "glosa": "Otros"
     },
     {
+      "label": "Imparidade de dívidas a receber (perdas/reversões)",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        0.000005
+      ],
+      "glosa": "Deterioro de créditos comerciales a cobrar (pérdidas/reversiones)"
+    },
+    {
+      "label": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        0.0025
+      ],
+      "glosa": "Deterioro de inversiones no amortizables (pérdidas/reversiones)"
+    },
+    {
       "label": "Subcontratos",
       "lado": "expense",
       "page": 35,
@@ -144,7 +164,7 @@
       "values": [
         0.11082
       ],
-      "glosa": "Subcontratos"
+      "glosa": "Subcontratación"
     },
     {
       "label": "Trabalhos especializados",
@@ -184,7 +204,7 @@
       "values": [
         0.074912
       ],
-      "glosa": "Gastos por honorarios a agentes deportivos"
+      "glosa": "Honorarios a agentes deportivos"
     },
     {
       "label": "Outras Comissões",
@@ -204,7 +224,7 @@
       "values": [
         0.102485
       ],
-      "glosa": "Reparación y conservación"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Outros serviços especializados",
@@ -254,7 +274,7 @@
       "values": [
         0.004338
       ],
-      "glosa": "Artículos de regalo"
+      "glosa": "Artículos para regalo"
     },
     {
       "label": "Equipamento Desportivo",
@@ -334,7 +354,7 @@
       "values": [
         0.035781
       ],
-      "glosa": "Rentas y alquileres"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Comunicação",
@@ -364,7 +384,7 @@
       "values": [
         0.087239
       ],
-      "glosa": "Limpieza, higiene y bienestar"
+      "glosa": "Limpieza, higiene y confort"
     },
     {
       "label": "Outros serviços diversos",
@@ -404,7 +424,7 @@
       "values": [
         0.793731
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales sobre salarios"
     },
     {
       "label": "Seguros de acidentes no trabalho e doenças profissionais",
@@ -444,7 +464,7 @@
       "values": [
         0.692048
       ],
-      "glosa": "Provisiones (aumentos/reducciones)"
+      "glosa": "Provisiones (dotaciones/reversiones)"
     },
     {
       "label": "Quotizações/Inscrições",
@@ -494,7 +514,7 @@
       "values": [
         1.023133
       ],
-      "glosa": "Bajas de activo"
+      "glosa": "Bajas de inmovilizado"
     },
     {
       "label": "Donativos",
@@ -535,26 +555,6 @@
         1.457063
       ],
       "glosa": "Inmovilizado intangible"
-    },
-    {
-      "label": "Imparidade de dívidas a receber (perdas/reversões)",
-      "lado": "expense",
-      "page": 14,
-      "section": "ajuste manual",
-      "values": [
-        0.000005
-      ],
-      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
-    },
-    {
-      "label": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
-      "lado": "expense",
-      "page": 14,
-      "section": "ajuste manual",
-      "values": [
-        0.0025
-      ],
-      "glosa": "Deterioro de inversiones no amortizables (pérdidas/reversiones)"
     }
   ]
 }

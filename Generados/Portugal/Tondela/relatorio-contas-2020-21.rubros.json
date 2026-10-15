@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Tondela/relatorio-contas-2020-21.pdf",
   "club": "tondela",
   "year": 2021,
-  "generatedAt": "2026-10-15T13:36:59.163Z",
+  "generatedAt": "2026-10-15T13:48:32.100Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -124,7 +124,7 @@
       "values": [
         0.053899
       ],
-      "glosa": "Coste de las mercancías vendidas y materiales consumidos"
+      "glosa": "Coste de las mercancías vendidas y materias consumidas"
     },
     {
       "label": "Subcontratos",
@@ -134,7 +134,7 @@
       "values": [
         0.1233
       ],
-      "glosa": "Subcontratación"
+      "glosa": "Subcontratos"
     },
     {
       "label": "Serviços especializados",
@@ -214,7 +214,7 @@
       "values": [
         0.006732
       ],
-      "glosa": "Herramientas y utillaje"
+      "glosa": "Herramientas y utensilios"
     },
     {
       "label": "Material de escritório",
@@ -234,7 +234,7 @@
       "values": [
         0.000125
       ],
-      "glosa": "Artículos para regalo"
+      "glosa": "Artículos para obsequio"
     },
     {
       "label": "Electricidade",
@@ -314,7 +314,7 @@
       "values": [
         0.007612
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Contencioso e Notariado",
@@ -324,7 +324,7 @@
       "values": [
         0.001057
       ],
-      "glosa": "Servicios jurídicos y notariales"
+      "glosa": "Gastos notariales y contenciosos"
     },
     {
       "label": "Despesas de Representação",
@@ -344,7 +344,7 @@
       "values": [
         0.008661
       ],
-      "glosa": "Limpieza y mantenimiento"
+      "glosa": "Limpieza y confort"
     },
     {
       "label": "Outros Serviços",
@@ -384,7 +384,7 @@
       "values": [
         0.330418
       ],
-      "glosa": "Cargas sociales"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho e doenças profissionais",
@@ -394,7 +394,7 @@
       "values": [
         0.290444
       ],
-      "glosa": "Seguros de accidentes de trabajo y enfermedades profesionales"
+      "glosa": "Seguros de accidentes laborales y enfermedades profesionales"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -514,7 +514,7 @@
       "values": [
         0.312453
       ],
-      "glosa": "Gastos/reversiones de amortización y depreciación"
+      "glosa": "Dotaciones y reversiones por amortización y deterioro"
     }
   ]
 }

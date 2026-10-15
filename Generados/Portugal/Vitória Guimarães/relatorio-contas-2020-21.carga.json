@@ -1,10 +1,18 @@
 {
  "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2020-21.pdf",
- "generado": "2026-10-15T13:44:43.643Z",
+ "generado": "2026-10-15T13:55:42.501Z",
  "frena": [
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Quotização e Camarotes\" -> matchday_competition 0.6"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "vitoriaguimaraes-pt ya tiene el ejercicio 2021 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['vitoriaguimaraes-pt-relatorio-contas-2020-21'] ya existe"
   }
  ],
  "avisos": [
@@ -43,9 +51,9 @@
     "amountNative": 0.786351,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Patrocínios",
@@ -717,11 +725,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 0.786351,
    "cat": "matchday_competition",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15: palcos y cuotas del estadio (cuadro de la pág. 18, L350-358); misma categoría que 'Bilheteira/ Quotização/ Pack sócio' en 2022 SAD",
    "destino": "revenue",
    "amountNative": 0.786351
   },
@@ -1655,8 +1663,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2020–21 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia única por palabras \"Vitória de Guimarães\" = \"Vitória Guimarães\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1696,13 +1704,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2020–21 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia única por palabras \"Vitória de Guimarães\" = \"Vitória Guimarães\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 1,
+  "motivos": 3,
   "lineasIngreso": 13,
   "lineasGasto": 46,
   "metaFilas": 3,

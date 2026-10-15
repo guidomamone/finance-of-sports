@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
- "generado": "2026-10-15T13:44:43.302Z",
+ "generado": "2026-10-15T13:55:42.039Z",
  "frena": [
   {
    "etapa": "registro",
@@ -16,11 +16,11 @@
   },
   {
    "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 11.373891 + gastos -16.773055 + netInterest -0.085703 + tax 0 = -5.484867 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -5.863188)"
+   "motivo": "resultado: ingresos 11.376396 + gastos -16.77055 + netInterest -0.085703 + tax 0 = -5.479857 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -5.863188)"
   },
   {
    "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -15.749922 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
+   "motivo": "gastos: las filas suman -15.747417 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
   }
  ],
  "avisos": [
@@ -161,6 +161,26 @@
     "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Imparidade de dívidas a receber (perdas/reversões)",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.000005,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.0025,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -553,26 +573,6 @@
     "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "respuesta de Guido en la cola"
-   },
-   {
-    "rawLabel": "Imparidade de dívidas a receber (perdas/reversões)",
-    "normalizedCategory": "other_expenses",
-    "amountNative": -0.000005,
-    "disclosureLevel": "aggregated",
-    "_pag": 14,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
-   },
-   {
-    "rawLabel": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
-    "normalizedCategory": "other_expenses",
-    "amountNative": -0.0025,
-    "disclosureLevel": "aggregated",
-    "_pag": 14,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -587,7 +587,7 @@
    "tax": 0,
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 11.373892,
+   "officialTotalRevenue": 11.376397,
    "officialTotalExpenses": null,
    "officialPAT": null
   },
@@ -626,26 +626,26 @@
   {
    "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
    "campo": "fila",
-   "valor": "-4,89",
+   "valor": "4,89",
    "linea": 351,
    "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
-   "lado": "gasto",
+   "lado": "ingreso",
    "reemplaza": "Imparidade de dívidas a receber (perdas/reversões)",
-   "motivo": "Claude 2026-10-15 (lote 76, subagente Sonnet, revisado en la imagen): en el PDF el renglón va SIN signo menos (reversión) mientras los gastos llevan '-'; el .md perdió todos los signos. Con las dos reversiones el EBITDA da el impreso -3.942.721,65 y el resultado -5.863.187,66",
-   "evidencia": "pág. 14 del visor (impreso 2 al pie), .md L351",
+   "motivo": "Claude 2026-10-15 (lote 76): reversión de imparidad (en el PDF sin signo menos, pág. 14 del visor). Pasa al lado del ingreso con valor positivo porque cargar.mjs toma el valor absoluto de un ajuste fila de gasto negativo (verificar sí cerraba con -X como gasto): el efecto en el resultado es el mismo (to-do 237 l)",
+   "evidencia": ".md L351",
    "autor": "Claude",
    "fecha": "2026-10-15"
   },
   {
    "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
    "campo": "fila",
-   "valor": "-2.500,00",
+   "valor": "2.500,00",
    "linea": 353,
    "etiqueta": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
-   "lado": "gasto",
+   "lado": "ingreso",
    "reemplaza": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
-   "motivo": "Claude 2026-10-15 (lote 76, subagente Sonnet, revisado en la imagen): en el PDF va SIN signo menos (reversión); como gasto daba 5.000 de diferencia en el EBITDA impreso -3.942.721,65",
-   "evidencia": "pág. 14 del visor (impreso 2 al pie), .md L353",
+   "motivo": "Claude 2026-10-15 (lote 76): reversión de imparidad (en el PDF sin signo menos, pág. 14 del visor). Pasa al lado del ingreso con valor positivo porque cargar.mjs toma el valor absoluto de un ajuste fila de gasto negativo (verificar sí cerraba con -X como gasto): el efecto en el resultado es el mismo (to-do 237 l)",
+   "evidencia": ".md L353",
    "autor": "Claude",
    "fecha": "2026-10-15"
   },
@@ -876,6 +876,38 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.544219
+  },
+  {
+   "label": "Imparidade de dívidas a receber (perdas/reversões)",
+   "page": 14,
+   "native": 0.000005,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.000005,
+   "cat": "other_income",
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "notaGuido": "Claude 2026-10-15: reversión de imparidad del lado del ingreso (ajuste fila, to-do 237 l); genérica de su lado",
+   "destino": "revenue",
+   "amountNative": 0.000005
+  },
+  {
+   "label": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
+   "page": 14,
+   "native": 0.0025,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.0025,
+   "cat": "other_income",
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "notaGuido": "Claude 2026-10-15: reversión de imparidad del lado del ingreso (ajuste fila, to-do 237 l); genérica de su lado",
+   "destino": "revenue",
+   "amountNative": 0.0025
   },
   {
    "label": "Subcontratos",
@@ -1491,37 +1523,6 @@
    "amountNative": -1.457063
   },
   {
-   "label": "Imparidade de dívidas a receber (perdas/reversões)",
-   "page": 14,
-   "native": 0.000005,
-   "ladoDoc": "expense",
-   "origen": "verificacion (ajuste manual)",
-   "signoFijo": 0.000005,
-   "cat": "other_expenses",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
-   "enLista": true,
-   "destino": "expense",
-   "amountNative": -0.000005
-  },
-  {
-   "label": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
-   "page": 14,
-   "native": 0.0025,
-   "ladoDoc": "expense",
-   "origen": "verificacion (ajuste manual)",
-   "signoFijo": 0.0025,
-   "cat": "other_expenses",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media; revisado por Claude): mismo renglón, importe 0 [relatorio-contas-2019-20.md L84]",
-   "destino": "expense",
-   "amountNative": -0.0025
-  },
-  {
    "label": "Juros e rendimentos similares obtidos",
    "page": null,
    "native": 0.115896,
@@ -1549,20 +1550,20 @@
    "verificacion (nota que desglosa \"Vendas e prestações de serviços\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")": "gastos con signo",
+   "verificacion (ajuste manual)": "gastos con signo",
    "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Comissões\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Gastos com o pessoal\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Outros gastos e perdas\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Gastos / reversões de depreciação e de amortização\")": "gastos sin signo (se invierten)",
-   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
  },
  "totales": {
-  "revSum": 11.373891,
-  "expSum": -15.749922,
-  "officialTotalRevenue": 11.373892,
+  "revSum": 11.376396,
+  "expSum": -15.747417,
+  "officialTotalRevenue": 11.376397,
   "officialTotalExpenses": null,
   "officialPAT": null,
   "verificacion": {
@@ -1571,7 +1572,7 @@
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
-   "M": 11.373892
+   "M": 11.376397
   }
  },
  "liga": {
@@ -1624,8 +1625,8 @@
  "resumen": {
   "carga": false,
   "motivos": 5,
-  "lineasIngreso": 13,
-  "lineasGasto": 41,
+  "lineasIngreso": 15,
+  "lineasGasto": 39,
   "metaFilas": 2,
   "excluidas": 0
  }

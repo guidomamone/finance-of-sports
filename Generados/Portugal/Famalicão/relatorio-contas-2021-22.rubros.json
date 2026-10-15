@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.md",
   "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.pdf",
-  "club": "famalicao",
+  "club": "famalicao-pt",
   "year": 2022,
-  "generatedAt": "2026-10-15T13:36:53.861Z",
+  "generatedAt": "2026-10-15T13:48:31.970Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.17565
       ],
-      "glosa": "Entradas"
+      "glosa": "Taquilla"
     },
     {
       "label": "Competições",
@@ -144,7 +144,7 @@
       "values": [
         0.125474
       ],
-      "glosa": "Energía y fluidos"
+      "glosa": "Energía y suministros"
     },
     {
       "label": "Deslocações, estadas e transportes",
@@ -174,7 +174,7 @@
       "values": [
         0.035165
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Outros",
@@ -254,7 +254,7 @@
       "values": [
         0.00041
       ],
-      "glosa": "Deterioro de cuentas por cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -264,7 +264,7 @@
       "values": [
         0.0351
       ],
-      "glosa": "Provisiones (aumentos/disminuciones)"
+      "glosa": "Provisiones (aumentos/reducciones)"
     },
     {
       "label": "Impostos",
@@ -294,7 +294,7 @@
       "values": [
         0.087186
       ],
-      "glosa": "Gastos y pérdidas en inversiones no financieras"
+      "glosa": "Gastos y pérdidas en inv. no financieros"
     },
     {
       "label": "Outros gastos e perdas",

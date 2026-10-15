@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
  "md": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.md",
- "generado": "2026-10-15T13:36:53.923Z",
+ "generado": "2026-10-15T13:48:32.025Z",
  "estado": "ok",
  "clubId": "moreirense-pt",
  "year": 2025,
@@ -90,14 +90,14 @@
    "dif": 0.0000020000000020559128
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 6.811909; el sitio tiene 6.811909"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": true,
    "detalle": "ingresos de 2024: 6.81191 en relatorio-contas-2023-24.pdf y 6.811909 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [

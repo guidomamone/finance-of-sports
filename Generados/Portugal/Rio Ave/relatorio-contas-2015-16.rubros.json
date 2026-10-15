@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2015-16.pdf",
   "club": "rioave-pt",
   "year": 2016,
-  "generatedAt": "2026-10-15T13:36:53.941Z",
+  "generatedAt": "2026-10-15T13:48:32.038Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         0.001051
       ],
-      "glosa": "Otros ingresos de explotación"
+      "glosa": "Otros beneficios de explotación"
     },
     {
       "label": "Comparticipaçoes da UEFA",
@@ -134,7 +134,7 @@
       "values": [
         0.084607
       ],
-      "glosa": "Indemnizaciones AT"
+      "glosa": "Indemnizaciones por accidentes laborales"
     },
     {
       "label": "Outros",
@@ -244,7 +244,7 @@
       "values": [
         0.001283
       ],
-      "glosa": "Artículos para regalo"
+      "glosa": "Artículos para obsequio"
     },
     {
       "label": "Equipamento Desportivo",
@@ -264,7 +264,7 @@
       "values": [
         0.018759
       ],
-      "glosa": "Medicamentos y material sanitario"
+      "glosa": "Medicamentos y artículos de salud"
     },
     {
       "label": "Outros materiais",
@@ -354,7 +354,7 @@
       "values": [
         0.016504
       ],
-      "glosa": "Limpieza, higiene y mantenimiento"
+      "glosa": "Limpieza, higiene y confort"
     },
     {
       "label": "Outros serviços diversos",
@@ -394,7 +394,7 @@
       "values": [
         0.318634
       ],
-      "glosa": "Seguros de accidentes laborales y enfermedades profesionales"
+      "glosa": "Seguros de accidentes de trabajo y enfermedades profesionales"
     },
     {
       "label": "Outros gastos",
@@ -414,7 +414,7 @@
       "values": [
         0.012912
       ],
-      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos por cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Quotizações/Inscrições",
@@ -494,7 +494,7 @@
       "values": [
         0.016948
       ],
-      "glosa": "Otros gastos financieros"
+      "glosa": "Otros gastos de financiación"
     },
     {
       "label": "Edifícios e outras construções",
@@ -544,7 +544,7 @@
       "values": [
         0.000141
       ],
-      "glosa": "Otros activos fijos tangibles"
+      "glosa": "Otro inmovilizado material"
     },
     {
       "label": "Outros Direitos (Passes dos jogadores)",
@@ -564,7 +564,7 @@
       "values": [
         0.000496
       ],
-      "glosa": "Otros activos intangibles"
+      "glosa": "Otro inmovilizado intangible"
     }
   ]
 }

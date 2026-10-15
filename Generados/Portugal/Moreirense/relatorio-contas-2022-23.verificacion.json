@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2022-23.pdf",
  "md": "Clubes/Portugal/Moreirense/relatorio-contas-2022-23.md",
- "generado": "2026-10-15T13:36:53.887Z",
+ "generado": "2026-10-15T13:48:31.992Z",
  "estado": "ok",
  "clubId": "moreirense-pt",
  "year": 2023,
@@ -41,6 +41,42 @@
    "etiqueta": "Provisões (aumentos/reduções)",
    "motivo": "Claude 2026-10-15 (lote 76, subagente Sonnet): reducción de provisiones (+27.750): desafectación a exceptional_items aunque sea ingreso (club-data-mapping, CONVENCIONES-DATOS 'INGRESO EXTRAORDINARIO')",
    "evidencia": "relatorio-contas-2022-23.md L477",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2022-23.pdf",
+   "campo": "incluye",
+   "valor": "matchday_competition",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "Claude 2026-10-15 (lote 76): la nota de réditos solo abre 'Direitos Televisivos' y 'Outros' dentro de 'Prestação de serviços'; no hay línea de bilheteira ni del estadio, que muy probablemente están en 'Outros' (mismo criterio que Moreirense 2022 y 2025; las tres categorías del estadio, to-do 237 g)",
+   "evidencia": "relatorio-contas-2022-23.md L727",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2022-23.pdf",
+   "campo": "incluye",
+   "valor": "stadium_other",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "Claude 2026-10-15 (lote 76): la nota de réditos solo abre 'Direitos Televisivos' y 'Outros' dentro de 'Prestação de serviços'; no hay línea de bilheteira ni del estadio, que muy probablemente están en 'Outros' (mismo criterio que Moreirense 2022 y 2025; las tres categorías del estadio, to-do 237 g)",
+   "evidencia": "relatorio-contas-2022-23.md L727",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2022-23.pdf",
+   "campo": "incluye",
+   "valor": "season_tickets",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "Claude 2026-10-15 (lote 76): la nota de réditos solo abre 'Direitos Televisivos' y 'Outros' dentro de 'Prestação de serviços'; no hay línea de bilheteira ni del estadio, que muy probablemente están en 'Outros' (mismo criterio que Moreirense 2022 y 2025; las tres categorías del estadio, to-do 237 g)",
+   "evidencia": "relatorio-contas-2022-23.md L727",
    "autor": "Claude",
    "fecha": "2026-10-15"
   }
@@ -86,7 +122,6 @@
  ],
  "notas": [
   "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "escalón \"renglón grande sin abrir\": \"Imparidade de dívidas a receber (perdas/reversões)\" (L476) era el 36% de los ingresos; la misma lectura cierra con la nota del subtotal abierta",
   "la lectura base no cerraba; cerró con la lectura 3",
   "duda de localizar confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"Outros gastos\"): ¿La tabla 'Outros gastos' (b33), con encabezado '2022 | 2021', corresponde en realidad a JUN.23 / JUN.22 y se carga su primera columna como ejercicio 2022/23?",
   "duda de extraer que no afecta la carga: Los encabezados de L978 dicen 2022/2021 pero los totales de L987 coinciden con JUN.23/JUN.22 del estado (L479), parece error de rótulo.",
@@ -446,8 +481,5 @@
    "M": -0.016745,
    "linea": 484
   }
- ],
- "notaSubtotal": [
-  "ingreso"
  ]
 }

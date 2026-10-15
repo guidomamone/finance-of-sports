@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2018-19.pdf",
   "club": "rioave-pt",
   "year": 2019,
-  "generatedAt": "2026-10-15T13:36:53.977Z",
+  "generatedAt": "2026-10-15T13:48:32.064Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -124,7 +124,7 @@
       "values": [
         0.094853
       ],
-      "glosa": "Indemnizaciones por accidentes de trabajo"
+      "glosa": "Indemnizaciones AT"
     },
     {
       "label": "Mecanismo de Solidariedade",
@@ -164,7 +164,7 @@
       "values": [
         0.041076
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontratos"
     },
     {
       "label": "Trabalhos especializados",
@@ -204,7 +204,7 @@
       "values": [
         0.933614
       ],
-      "glosa": "Gastos por honorarios de agentes deportivos"
+      "glosa": "Gastos por honorarios a agentes deportivos"
     },
     {
       "label": "Outros serviços especializados",
@@ -224,7 +224,7 @@
       "values": [
         0.070493
       ],
-      "glosa": "Reparaciones y conservación"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Outros serviços especializados",
@@ -274,7 +274,7 @@
       "values": [
         0.051733
       ],
-      "glosa": "Medicamentos y material sanitario"
+      "glosa": "Medicamentos y artículos sanitarios"
     },
     {
       "label": "Outros materiais",
@@ -474,7 +474,7 @@
       "values": [
         0.146552
       ],
-      "glosa": "Multas y sanciones"
+      "glosa": "Multas y penalizaciones"
     },
     {
       "label": "Abates",
@@ -504,7 +504,7 @@
       "values": [
         0.183974
       ],
-      "glosa": "Inmovilizado material"
+      "glosa": "Activos fijos tangibles"
     },
     {
       "label": "Ativos intangíveis",
@@ -514,7 +514,7 @@
       "values": [
         3.145308
       ],
-      "glosa": "Inmovilizado intangible"
+      "glosa": "Activos intangibles"
     }
   ]
 }

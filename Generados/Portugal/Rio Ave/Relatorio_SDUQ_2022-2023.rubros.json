@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/Relatorio_SDUQ_2022-2023.pdf",
   "club": "rioave-pt",
   "year": 2023,
-  "generatedAt": "2026-10-15T13:36:53.934Z",
+  "generatedAt": "2026-10-15T13:48:32.033Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -324,7 +324,7 @@
       "values": [
         0.068989
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Comunicação",
@@ -344,7 +344,7 @@
       "values": [
         0.028898
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -414,7 +414,7 @@
       "values": [
         0.835385
       ],
-      "glosa": "Seguros de accidentes laborales y enfermedades profesionales"
+      "glosa": "Seguros de accidentes de trabajo y enfermedades profesionales"
     },
     {
       "label": "Mecanismo de Solidariedade",
@@ -444,7 +444,7 @@
       "values": [
         0.072165
       ],
-      "glosa": "Deterioro de créditos a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Quotizações/Inscrições",
@@ -484,7 +484,7 @@
       "values": [
         2.151169
       ],
-      "glosa": "Bajas de activos"
+      "glosa": "Bajas de inmovilizado"
     },
     {
       "label": "Outros Gastos e Perdas",
@@ -504,7 +504,7 @@
       "values": [
         0.367201
       ],
-      "glosa": "Activos fijos tangibles"
+      "glosa": "Inmovilizado material"
     },
     {
       "label": "Ativos intangíveis",
@@ -514,7 +514,7 @@
       "values": [
         0.974172
       ],
-      "glosa": "Activos intangibles"
+      "glosa": "Inmovilizado intangible"
     }
   ]
 }

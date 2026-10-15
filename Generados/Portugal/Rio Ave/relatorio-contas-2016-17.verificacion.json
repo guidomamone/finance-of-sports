@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.pdf",
  "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.md",
- "generado": "2026-10-15T13:36:53.966Z",
+ "generado": "2026-10-15T13:48:32.055Z",
  "estado": "ok",
  "clubId": "rioave-pt",
  "year": 2017,
@@ -42,6 +42,11 @@
    "dif": 3.552713678800501e-15
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2016 de este documento suma ingresos 6.920547; el sitio tiene 6.920546"
+  },
+  {
    "nombre": "documento del año 2018",
    "ok": true,
    "detalle": "ingresos de 2017: 25.701485 en este documento y 25.701485 en relatorio-contas-2017-18.pdf (columna del año anterior)"
@@ -50,11 +55,6 @@
    "nombre": "documento del año 2016",
    "ok": true,
    "detalle": "ingresos de 2016: 6.920547 en relatorio-contas-2015-16.pdf y 6.920547 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
   }
  ],
  "notas": [

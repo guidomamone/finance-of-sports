@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/Moreirense/relatorio-contas-2023-24.md",
- "generado": "2026-10-15T13:36:53.905Z",
+ "generado": "2026-10-15T13:48:32.009Z",
  "estado": "ok",
  "clubId": "moreirense-pt",
  "year": 2024,
@@ -21,6 +21,42 @@
    "evidencia": "relatorio-contas-2023-24.pdf pág. 1 del visor (OCR/texto)",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2023-24.pdf",
+   "campo": "incluye",
+   "valor": "matchday_competition",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "Claude 2026-10-15 (lote 76): la nota de réditos solo abre 'Direitos Televisivos' y 'Outros' dentro de 'Prestação de serviços'; no hay línea de bilheteira ni del estadio, que muy probablemente están en 'Outros' (mismo criterio que Moreirense 2022 y 2025; las tres categorías del estadio, to-do 237 g)",
+   "evidencia": "relatorio-contas-2023-24.md L903",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2023-24.pdf",
+   "campo": "incluye",
+   "valor": "stadium_other",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "Claude 2026-10-15 (lote 76): la nota de réditos solo abre 'Direitos Televisivos' y 'Outros' dentro de 'Prestação de serviços'; no hay línea de bilheteira ni del estadio, que muy probablemente están en 'Outros' (mismo criterio que Moreirense 2022 y 2025; las tres categorías del estadio, to-do 237 g)",
+   "evidencia": "relatorio-contas-2023-24.md L903",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2023-24.pdf",
+   "campo": "incluye",
+   "valor": "season_tickets",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "Claude 2026-10-15 (lote 76): la nota de réditos solo abre 'Direitos Televisivos' y 'Outros' dentro de 'Prestação de serviços'; no hay línea de bilheteira ni del estadio, que muy probablemente están en 'Outros' (mismo criterio que Moreirense 2022 y 2025; las tres categorías del estadio, to-do 237 g)",
+   "evidencia": "relatorio-contas-2023-24.md L903",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
   }
  ],
  "cola": [],
@@ -42,6 +78,11 @@
    "dif": 0
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 4.498906; el sitio tiene 4.498905"
+  },
+  {
    "nombre": "documento del año 2025",
    "ok": true,
    "detalle": "ingresos de 2024: 6.81191 en este documento y 6.811909 en relatorio-contas-2024-25.pdf (columna del año anterior)"
@@ -50,11 +91,6 @@
    "nombre": "documento del año 2023",
    "ok": false,
    "detalle": "ingresos de 2023: 7.076656 en relatorio-contas-2022-23.pdf y 4.498906 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [

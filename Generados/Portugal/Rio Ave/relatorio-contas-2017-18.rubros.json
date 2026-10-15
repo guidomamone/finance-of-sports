@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2017-18.pdf",
   "club": "rioave-pt",
   "year": 2018,
-  "generatedAt": "2026-10-15T13:36:53.972Z",
+  "generatedAt": "2026-10-15T13:48:32.060Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         0.000102
       ],
-      "glosa": "Otros ingresos de explotación"
+      "glosa": "Otros beneficios de explotación"
     },
     {
       "label": "Subsídios à Exploração",
@@ -134,7 +134,7 @@
       "values": [
         0.014033
       ],
-      "glosa": "Indemnizaciones AT"
+      "glosa": "Indemnizaciones por accidentes de trabajo"
     },
     {
       "label": "Outros",
@@ -164,7 +164,7 @@
       "values": [
         0.087766
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontratación"
     },
     {
       "label": "Trabalhos especializados",
@@ -204,7 +204,7 @@
       "values": [
         0.50836
       ],
-      "glosa": "Honorarios de agentes deportivos"
+      "glosa": "Gastos por honorarios de agentes deportivos"
     },
     {
       "label": "Outros serviços especializados",
@@ -224,7 +224,7 @@
       "values": [
         0.08747
       ],
-      "glosa": "Reparación y conservación"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Outros serviços especializados",
@@ -264,7 +264,7 @@
       "values": [
         0.02182
       ],
-      "glosa": "Artículos para obsequio"
+      "glosa": "Artículos para regalo"
     },
     {
       "label": "Equipamento Desportivo",
@@ -364,7 +364,7 @@
       "values": [
         0.009893
       ],
-      "glosa": "Primas de seguros"
+      "glosa": "Seguros"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -414,7 +414,7 @@
       "values": [
         0.381574
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes no trabalho e doenças profissionais",
@@ -444,7 +444,7 @@
       "values": [
         0.001599
       ],
-      "glosa": "Deterioro de cuentas por cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos por cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Quotizações/Inscrições",
@@ -524,7 +524,7 @@
       "values": [
         0
       ],
-      "glosa": "Otros gastos de financiación"
+      "glosa": "Otros gastos financieros"
     },
     {
       "label": "Ativos fixos tangíveis",

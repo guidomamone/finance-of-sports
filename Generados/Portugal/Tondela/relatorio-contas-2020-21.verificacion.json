@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Tondela/relatorio-contas-2020-21.pdf",
  "md": "Clubes/Portugal/Tondela/relatorio-contas-2020-21.md",
- "generado": "2026-10-15T13:36:59.162Z",
- "estado": "cola",
+ "generado": "2026-10-15T13:48:32.100Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2021,
  "escala": {
@@ -23,9 +23,7 @@
    "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "e62542a"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -57,11 +55,11 @@
  "notas": [
   "la nota de \"Custo das mercadorias vendidas e matérias consumidas\" no suma el renglón (0.072617 contra 0.053899, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Comissões\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en relatorio-contas-2020-21.pdf",
   "duda de localizar que no afecta la carga: b23 reparte el mismo total de ventas por mercado y no abre categorías de ingreso.",
   "duda de extraer que no afecta la carga: El total de la nota 16.1 (L1182) difiere en 0,56 € del estado (L404); diferencia menor, probablemente error de transcripción o tipeo.",
   "duda de extraer que no afecta la carga: Discrepancia de 90 000 € en el año anterior entre L1107 y L1146; el total FSE 2020 de b24 (L1126: 2 162 334,69) tampoco coincide con el estado (L397: 2 162 325,59).",
-  "duda de extraer que no afecta la carga: El cuadro b16 no tiene columnas por año; su total 53 898,80 coincide con el ejercicio 2021 del estado (L396).",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: El cuadro b16 no tiene columnas por año; su total 53 898,80 coincide con el ejercicio 2021 del estado (L396)."
  ],
  "reintentar": [
   {

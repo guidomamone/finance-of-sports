@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2015-16.pdf",
- "generado": "2026-10-15T13:44:42.838Z",
- "frena": [],
+ "generado": "2026-10-15T13:55:41.569Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "rioave-pt ya tiene el ejercicio 2016 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['rioave-pt-relatorio-contas-2015-16'] ya existe"
+  }
+ ],
  "avisos": [
   "materialidad: \"Alienação de Jogadores (valor líquido)\" va como player_amortisation con 0.75 (las dudas de gastos suman 0.09% de su lado)"
  ],
@@ -1559,8 +1572,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2015–16 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Rio Ave\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1600,13 +1613,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2015–16 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Rio Ave\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 14,
   "lineasGasto": 42,
   "metaFilas": 2,

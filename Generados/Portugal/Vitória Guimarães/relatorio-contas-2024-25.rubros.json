@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.pdf",
   "club": "vitoriaguimaraes-pt",
   "year": 2025,
-  "generatedAt": "2026-10-15T13:36:54.177Z",
+  "generatedAt": "2026-10-15T13:48:32.139Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         6.922619
       ],
-      "glosa": "Derechos audiovisuales"
+      "glosa": "Derechos televisivos"
     },
     {
       "label": "Mecanismo Solidariedade",
@@ -114,7 +114,7 @@
       "values": [
         0.396508
       ],
-      "glosa": "Otros ingresos accesorios"
+      "glosa": "Otros ingresos suplementarios"
     },
     {
       "label": "Compensação Financeira",
@@ -144,7 +144,7 @@
       "values": [
         0.061201
       ],
-      "glosa": "Descuentos sobre compras por pronto pago obtenidos"
+      "glosa": "Descuentos por pronto pago obtenidos"
     },
     {
       "label": "Ganhos em inventarios",
@@ -154,7 +154,7 @@
       "values": [
         0.002821
       ],
-      "glosa": "Beneficios en existencias"
+      "glosa": "Ganancias en existencias"
     },
     {
       "label": "Rendimentos e ganhos em investimentos",
@@ -244,7 +244,7 @@
       "values": [
         0.295054
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Despesas com Provas",
@@ -264,7 +264,7 @@
       "values": [
         0.290975
       ],
-      "glosa": "Prospección; Préstamos / Cesiones;"
+      "glosa": "Ojeo y cesiones"
     },
     {
       "label": "Ferramentas, utensílios desgaste rápido",
@@ -294,7 +294,7 @@
       "values": [
         0.011091
       ],
-      "glosa": "Artículos para obsequios"
+      "glosa": "Artículos para regalo"
     },
     {
       "label": "Material Desportivo",
@@ -344,7 +344,7 @@
       "values": [
         0.041756
       ],
-      "glosa": "Otros suministros"
+      "glosa": "Otros fluidos"
     },
     {
       "label": "Deslocações e estadas",
@@ -364,7 +364,7 @@
       "values": [
         0.00125
       ],
-      "glosa": "Transportes de mercancías"
+      "glosa": "Transporte de mercancías"
     },
     {
       "label": "Rendas e alugueres",
@@ -404,7 +404,7 @@
       "values": [
         0.093599
       ],
-      "glosa": "Gastos contenciosos y de notaría"
+      "glosa": "Gastos contenciosos y notariales"
     },
     {
       "label": "Despesas de Representação",
@@ -444,7 +444,7 @@
       "values": [
         0.823973
       ],
-      "glosa": "Personal del VSC al servicio de la SAD"
+      "glosa": "Personal de VSC al servicio de la SAD"
     },
     {
       "label": "Remuneração Administração",
@@ -454,7 +454,7 @@
       "values": [
         0.289398
       ],
-      "glosa": "Retribución del consejo de administración"
+      "glosa": "Remuneración del Consejo de Administración"
     },
     {
       "label": "Remuneração pessoal administrativo",
@@ -544,7 +544,7 @@
       "values": [
         0
       ],
-      "glosa": "Provisiones (dotaciones / reversiones)"
+      "glosa": "Provisiones (dotaciones/reversiones)"
     },
     {
       "label": "Impostos",
@@ -564,7 +564,7 @@
       "values": [
         0
       ],
-      "glosa": "Descuentos sobre ventas por pronto pago concedidos"
+      "glosa": "Descuentos por pronto pago concedidos"
     },
     {
       "label": "Gastos, perdas em investimento não financeiros",
@@ -654,7 +654,7 @@
       "values": [
         0.039119
       ],
-      "glosa": "Equipamiento de oficina"
+      "glosa": "Equipos de oficina y administrativos"
     },
     {
       "label": "Outros ativos fixos tangíveis",
@@ -664,7 +664,7 @@
       "values": [
         0.53571
       ],
-      "glosa": "Otro inmovilizado material"
+      "glosa": "Otros activos fijos tangibles"
     },
     {
       "label": "Passes jogadores",
