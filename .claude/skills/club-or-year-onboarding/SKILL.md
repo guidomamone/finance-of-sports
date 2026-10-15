@@ -82,8 +82,9 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
   - camino limpio: reglas pocas y estrictas; si todo cierra sin interpretar nada, se carga solo;
   - camino de dudas: lo que no pasa no se "arregla" con otra regla; se le pregunta a la IA algo puntual con cita del documento, y si tampoco
     alcanza, va a la cola.
-- **No perseguir casos sin daño.** Si un defecto no afecta ningún dato cargado ni frena nada hoy, se mide su impacto y se anota en el
-  TODO como "conocido, sin daño hoy"; no se diseña un arreglo. Una regla que "siempre incluye/excluye" algo es manta corta: va como
+- **No perseguir casos sin daño.** Si un defecto no afecta ningún dato cargado ni frena nada hoy, se mide su impacto y se anota en
+  `Admin/HALLAZGOS-pipeline.md`, sección "Conocido, sin daño hoy", con la condición para retomarlo; no va al TODO y no se diseña un
+  arreglo. Si la condición se cumple, vuelve al TODO. Una regla que "siempre incluye/excluye" algo es manta corta: va como
   escalón (probar lo que dijo la IA y, solo si la compuerta no cierra, probar lo otro).
 - **Arreglar en los scripts, nunca a mano.** Lo que se repite va a un script de `tools/` con un ensayo que estime el costo. Gastar
   dólares de API está bien; tokens de sesión, no. Archivos grandes se leen con filtros, no enteros.
