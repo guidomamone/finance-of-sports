@@ -42,7 +42,7 @@ const boyacachicocoFiscalYearMeta = {
     netInterest:-257.027005,
     tax:-381.268512,
     profitOnPlayerSales:0, assetSales:0,
-    grossDebt:0, cash:0,
+    grossDebt:null, cash:null,
     officialTotalRevenue:8264.587487, officialTotalExpenses:6918.221877, officialPAT:708.070093,
   },
 };

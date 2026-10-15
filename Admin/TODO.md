@@ -21,18 +21,19 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-ORDEN (2026-10-15): primero lo que corrige datos publicados (232 ab, 232 ad), después el script que limpia la cola (232 aa), las altas
+ORDEN (2026-10-15): primero lo que corrige datos publicados (232 ad, 235), después el script que limpia la cola (232 aa), las altas
 de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (232 e, 233, 230) y lo que espera una decisión de Guido (130,
 183, 51). Las letras del 232 marcadas "conocido, sin daño hoy" (k, l, n, o, z) no se trabajan salvo que algo cambie.
 
+235. CAJA O DEUDA SIN DATO SE VE COMO 0 (2026-10-15, al cerrar el 232 ab). `computeYearGeneric()` escribe `meta.grossDebt || 0` y
+    `meta.cash || 0`, y `deudaNoDesglosada()` (js/finanzas-render.js L256) solo reconoce "sin dato" cuando los DOS son 0. Un año con uno
+    cargado y el otro en null muestra el otro como 0: Argentinos 2019 ("Caja 0"; la presentación de asamblea solo trae el total del pasivo),
+    Panetolikos 2022 y Asteras 2019, entre 49 años con uno de los dos en null (`grep -rnE "grossDebt:[0-9.]+, cash:null|grossDebt:null,
+    cash:[0-9.]+" data`). Un 0 real impreso existe (Sunderland 2024, "Cash at bank" 0, y deudas en 0 de Panetolikos 2021 o Man City):
+    hay que distinguir null de 0 en el motor y mostrar "sin dato" en la fila que falta. Toca js/ (Admin/PANTALLA.md).
+
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
-    ab) DEUDA Y CAJA EN 0 DE LA CONVENCIÓN VIEJA ("0 = no se cargó"; hoy null = sin dato). Colo-Colo 2022-2024 se corrigió (2026-10-14,
-       lo encontró la medición de Jev). Quedan años con `grossDebt:0, cash:0` para revisar UNO POR UNO contra su evidencia
-       (Admin/carga-clubes/<club>.md) y su documento, porque alguno puede ser real o un presupuesto: Once Caldas (4), Racing (3), Boca,
-       Mirassol, Boyacá Chicó, FC København, Brøndby, Midtjylland, Panetolikos 2021 (2022 y PAOK 2021 ya corregidos), los 10 japoneses y Club América (1 cada uno). Evidencias que dicen "no se
-       cargaron": clubamerica, coritiba, fortaleza-br, gremio, hamburgersv-de, independiente, istra-hr, midtjylland-dk, nagoyagrampus,
-       racing, sportrecife-br.
     ad) CIFRAS CON FORMA IMPOSIBLE EN TODO EL PIPELINE (2026-10-14, al medir Jev): 1.960 números con dos separadores distintos y el último
        repetido o el de miles después del decimal, en 118 transcripciones (Valencia "1.244,197,13" L8499, Rayo Vallecano "32.444,508,40" L662,
        Espanyol 2025 "13.950,790,99" L361): errores del OCR. caja-deuda.mjs ya no usa esas filas (232 ac). Falta: (1) medir si alguna llegó a

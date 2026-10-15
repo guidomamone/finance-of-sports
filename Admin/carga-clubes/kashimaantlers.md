@@ -112,3 +112,5 @@ Documento publicado por la propia J.League (no por Kashima directamente), como p
 Sin desglose de costos por club en esta fuente (ver comentario de cabecera) — deliberadamente
 vacío, no se inventa ni se usa el promedio divisional como si fuera de Kashima.
 ```
+
+2026-10-15 (to-do 232 ab): 2025 (deuda y caja): de 0 a null. Estaban en 0 por la convención vieja ("0 = no se cargó"); sin dato no es cero. Los completa tools/caja-deuda.mjs si el documento los trae.

@@ -290,3 +290,5 @@ rompan. Ver comentario de cabecera de este archivo.
 Sin cifra de socios/membresía citable encontrada (Club América es de propiedad corporativa, no
 tiene un padrón de socios tradicional al estilo de los clubes argentinos de este sitio).
 ```
+
+2026-10-15 (to-do 232 ab): 2025 (deuda y caja): de 0 a null. Estaban en 0 por la convención vieja ("0 = no se cargó"); sin dato no es cero. Los completa tools/caja-deuda.mjs si el documento los trae.

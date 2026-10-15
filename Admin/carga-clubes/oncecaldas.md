@@ -447,3 +447,5 @@ gestión" de Finanzas tenga al menos 1 opción y no rompa (ver club-data-mapping
 neutra en vez de dejar el objeto vacío, que sí rompía el selector para cualquier club sin ninguna
 entrada).
 ```
+
+2026-10-15 (to-do 232 ab): 2023 (deuda y caja), 2022 (deuda y caja), 2024 (deuda y caja), 2025 (deuda y caja): de 0 a null. Estaban en 0 por la convención vieja ("0 = no se cargó"); sin dato no es cero. Los completa tools/caja-deuda.mjs si el documento los trae.

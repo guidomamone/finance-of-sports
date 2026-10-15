@@ -237,3 +237,5 @@ Admin/dudas-por-club.md) — por eso el Ejercicio 2015 (30/6/2015) quedó sin ge
 ```text
 AFA, 2026 (cobertura de prensa)
 ```
+
+2026-10-15 (to-do 232 ab): 2019 (caja): de 0 a null. Estaban en 0 por la convención vieja ("0 = no se cargó"); sin dato no es cero. Los completa tools/caja-deuda.mjs si el documento los trae.

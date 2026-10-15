@@ -17,7 +17,7 @@ const clubamericaFiscalYearMeta = {
     sourceId:'clubamerica-ollamani-2025',
     reportType:'official_balance_sheet',
     gestionId:'ollamani',
-    grossDebt:0, cash:0,
+    grossDebt:null, cash:null,
     profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
     officialTotalRevenue:2795.643,
     officialTotalExpenses:2751.732,

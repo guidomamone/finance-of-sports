@@ -197,7 +197,7 @@ const argentinosJuniorsFiscalYearMeta = {
     incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, player_impairment:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, depreciation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, other_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'ARS', fxRef:'ARS@2019-06-30', sourceId:'argentinosjuniors-presentacion-asamblea-2015-2019',
     reportType:'official_balance_sheet', gestionId:'malaspina',
-    grossDebt:247.566408, cash:0,
+    grossDebt:247.566408, cash:null,
     profitOnPlayerSales:0, assetSales:0, netInterest:54.110381, tax:0,
     officialTotalRevenue:1160.957398, officialTotalExpenses:1095.793506, officialPAT:119.274273,
   },

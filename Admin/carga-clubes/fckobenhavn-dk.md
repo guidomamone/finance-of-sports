@@ -177,3 +177,5 @@ _note (data/):_
 ```text
 Descargado vía distribution.virk.dk (Erhvervsstyrelsen, CVR 43 95 21 61). Entidad constituida 29/03/2023 que aísla la operación de fútbol masculino profesional, distinta de la holding consolidada PARKEN Sport & Entertainment A/S (CVR 15 10 77 07, no cargada, perímetro mezclado con estadio/retail/fútbol femenino). Auditado por EY sin salvedades. Transcripción completa en Clubes/Dinamarca/FC København/aarsrapport-2024-12-31.md.
 ```
+
+2026-10-15 (to-do 232 ab): 2024 (deuda y caja): de 0 a null. Estaban en 0 por la convención vieja ("0 = no se cargó"); sin dato no es cero. Los completa tools/caja-deuda.mjs si el documento los trae.

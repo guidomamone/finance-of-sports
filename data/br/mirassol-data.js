@@ -17,7 +17,7 @@ const mirassolFiscalYearMeta = {
     sourceId:'mirassol-relatorio-auditoria-2024',
     reportType:'official_balance_sheet',
     gestionId:'sinconfirmar',
-    grossDebt:0, cash:0,
+    grossDebt:null, cash:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:0, tax:0,
     officialTotalRevenue:59.339448, officialTotalExpenses:55.195834, officialPAT:4.143614,

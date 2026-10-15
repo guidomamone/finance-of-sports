@@ -327,3 +327,5 @@ necesitar, y borrarlo acá no lo documenta mejor. `finanzasGestiones:['riquelme'
 haciendo falta, porque gestionesByClub.boca conserva ameal/angelici para Mercado de Pases y
 Resultados. Cualquier club sin estos 2 campos (el resto) muestra TODOS sus años/gestiones.
 ```
+
+2026-10-15 (to-do 232 ab): 2027 (deuda y caja): de 0 a null. Estaban en 0 por la convención vieja ("0 = no se cargó"); sin dato no es cero. Los completa tools/caja-deuda.mjs si el documento los trae.

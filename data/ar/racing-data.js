@@ -576,7 +576,7 @@ const racingFiscalYearMeta = {
     sourceId:'racing-presupuesto-2018-19',
     reportType:'official_budget',
     gestionId:'blanco',
-    grossDebt:0, cash:0, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
+    grossDebt:null, cash:null, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
     officialTotalRevenue:1616.026650, officialTotalExpenses:1756.652573,
   },
   2020: {
@@ -616,7 +616,7 @@ const racingFiscalYearMeta = {
     sourceId:'racing-presupuesto-2025-26',
     reportType:'official_budget',
     gestionId:'milito',
-    grossDebt:0, cash:0, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
+    grossDebt:null, cash:null, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
     officialTotalRevenue:123297.209473, officialTotalExpenses:126860.457441,
   },
   2027: {
@@ -624,7 +624,7 @@ const racingFiscalYearMeta = {
     sourceId:'racing-presupuesto-2026-27',
     reportType:'official_budget',
     gestionId:'milito',
-    grossDebt:0, cash:0, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
+    grossDebt:null, cash:null, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
     officialTotalRevenue:143118.482343, officialTotalExpenses:142071.747998,
   },
 };

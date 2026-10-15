@@ -175,3 +175,5 @@ _note (data/):_
 ```text
 Descargado vía distribution.virk.dk (Erhvervsstyrelsen, CVR 83 93 34 10). Año afectado por COVID-19 (compensación estatal por pérdidas de organizador y nómina durante los cierres, ver Nota 6). Reporta bajo NIIF/IFRS, formato Totalindkomstopgørelse (distinto del formato clásico "årsregnskabsloven" de FC København/FC Midtjylland). Transcripción completa en Clubes/Dinamarca/Brøndby/aarsrapport-2020-12-31.md. No hay ejercicios más nuevos transcriptos todavía para este club.
 ```
+
+2026-10-15 (to-do 232 ab): 2020 (deuda y caja): de 0 a null. Estaban en 0 por la convención vieja ("0 = no se cargó"); sin dato no es cero. Los completa tools/caja-deuda.mjs si el documento los trae.

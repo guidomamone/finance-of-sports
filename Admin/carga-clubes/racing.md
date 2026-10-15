@@ -1392,3 +1392,5 @@ gestión", no la fecha exacta en que asumió (2013). Pasó de 2024 a 2020 en la 
 (balance2019-20.pdf), de 2020 a 2018 en la Versión 63 (presupuesto2017-18.pdf), y de 2018 a
 2014 en la Versión 67 (presupuesto2013-14.pdf, su primer presupuesto como Presidente).
 ```
+
+2026-10-15 (to-do 232 ab): 2019 (deuda y caja), 2026 (deuda y caja), 2027 (deuda y caja): de 0 a null. Estaban en 0 por la convención vieja ("0 = no se cargó"); sin dato no es cero. Los completa tools/caja-deuda.mjs si el documento los trae.

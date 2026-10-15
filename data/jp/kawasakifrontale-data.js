@@ -16,7 +16,7 @@ const kawasakifrontaleFiscalYearMeta = {
     sourceId:'kawasakifrontale-jleague-doc-2025',
     reportType:'official_balance_sheet',
     gestionId:'temporada2025',
-    grossDebt:0, cash:0, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
+    grossDebt:null, cash:null, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
     officialTotalRevenue:10069, officialTotalExpenses:null, officialPAT:null,
   },
 };

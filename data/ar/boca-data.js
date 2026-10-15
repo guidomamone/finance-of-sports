@@ -559,7 +559,7 @@ const bocaFiscalYearMeta = {
     extraRows:[{label:'Resultados financieros y por tenencia (incluye RECPAM)', value:711.737276}],
     officialTotalRevenue:237614.566642, officialTotalExpenses:202744.841714, officialPAT:35581.462204 },
   2027: { currency:'ARS', fx:1660, fxSource:'document_assumption', sourceId:'boca-presupuesto-2026-27', reportType:'official_budget', gestionId:'riquelme',
-    grossDebt:0, cash:0, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
+    grossDebt:null, cash:null, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
     officialTotalRevenue:239392.104, officialTotalExpenses:235989.861, officialPAT:3402.243 },
 };
 
