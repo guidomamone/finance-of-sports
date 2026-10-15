@@ -41,3 +41,5 @@ Color de marca: #008000 — infobox de en.wikipedia (kit local: mangas verdes, c
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2025 desde `Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf` (sourceId `moreirense-pt-relatorio-contas-2024-25`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2025 desde `Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf` (sourceId `moreirense-pt-relatorio-contas-2024-25`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2023 desde `Clubes/Portugal/Moreirense/relatorio-contas-2022-23.pdf` (sourceId `moreirense-pt-relatorio-contas-2022-23`).

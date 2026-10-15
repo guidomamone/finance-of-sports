@@ -17,6 +17,15 @@ window.RANKINGS["pt-ligaportugal2"] = {
         mix:[["Comercial / Sponsors",0.315],["Estadio",0.052],["Televisión",0.536],["Premios por competencias",0.452],["Venta de Jugadores",0.001],["Otros ingresos",1.751]] },
     ],
   },
+  2023: {
+    leagueSize: null,
+    clubs: [
+      { id:"moreirense-pt", revenue:4.889, reportType:"official_balance_sheet",
+        sourceId:"moreirense-pt-relatorio-contas-2022-23",
+        mix:[["Comercial / Sponsors",0.001],["Televisión",0.598],["Premios por competencias",0.002],["Venta de Jugadores",2.238],["Otros ingresos",2.05]],
+        incluidos:[["Estadio","Otros ingresos",1]] },
+    ],
+  },
   2022: {
     leagueSize: null,
     clubs: [
