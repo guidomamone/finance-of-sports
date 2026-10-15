@@ -45,8 +45,8 @@ espera una decisión de Guido (130, 183, 51).
     b0) PORTUGAL, EN CURSO. En el sitio, del lote 76 (archivado): Alverca 2022-2025, Famalicão 2022, Moreirense 2022-2025, Nacional
        2024, Rio Ave 2016-2020 y 2022-2025, Tondela 2021 y Vitória Guimarães 2021, 2022, 2024 y 2025. Qué entidad se carga cuando el
        fútbol está en una SAD: regla en Admin/CONVENCIONES-DATOS.md. Transcripción del resto (etapa 2):
-       `pipeline.mjs --lista Admin/lotes/transcribir-portugal.txt` (155 PDFs; los que no sirven ya están en documentos-descartados).
-       Después: el lote siguiente con solo los documentos que traen estado de resultados. Altas: borradores de 27 clubes (nombre legal,
+       hecha y commiteada (todos en "transcripción validada, sin localizar"; los que no sirven ya están en documentos-descartados).
+       Falta: el lote siguiente con solo los documentos que traen estado de resultados. Altas: borradores de 27 clubes (nombre legal,
        cierres, color, liga por temporada) en Admin/registros/altas-borrador-portugal.jsonl: confirmar el nombre contra cada .md, elegir los
        colores marcados "PREGUNTA" o aproximados (Torreense, Oliveirense, Felgueiras, Braga, Santa Clara, Estoril, Marítimo, Casa Pia, Chaves,
        Paços, Arouca) y pasarlos a altas-revision.jsonl. Estrela da Amadora 2023-24 es semestral (a documentos-parciales); Gil Vicente 2024-25
