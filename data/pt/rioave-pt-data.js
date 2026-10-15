@@ -80,6 +80,21 @@ const rioaveptRevenueLinesByYear = {
     { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.018295, disclosureLevel:'aggregated' },
     { rawLabel:'Outros Rendimentos Similares', normalizedCategory:'other_income', amountNative:1.040888, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Bilheteira', normalizedCategory:'matchday_competition', amountNative:0.111014, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos Televisivos', normalizedCategory:'broadcasting', amountNative:5.15, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínio e Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:0.404394, disclosureLevel:'aggregated' },
+    { rawLabel:'Atividades Comerciais', normalizedCategory:'sponsorship_commercial', amountNative:0.126578, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à Exploração', normalizedCategory:'other_income', amountNative:0.020483, disclosureLevel:'aggregated' },
+    { rawLabel:'Participação nas Competições Nacionais', normalizedCategory:'competition_bonus', amountNative:0.043974, disclosureLevel:'aggregated' },
+    { rawLabel:'Apostas Desportivas', normalizedCategory:'other_income', amountNative:0.409721, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência de Jogadores', normalizedCategory:'player_sales', amountNative:1.1282, disclosureLevel:'aggregated' },
+    { rawLabel:'Venda de Direitos Desportivos', normalizedCategory:'player_sales', amountNative:0.05, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações AT', normalizedCategory:'other_income', amountNative:0.045991, disclosureLevel:'aggregated' },
+    { rawLabel:'Mecanismo de Solidariedade', normalizedCategory:'player_sales', amountNative:0.044466, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.063814, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Rendimentos Similares', normalizedCategory:'other_income', amountNative:0.116475, disclosureLevel:'aggregated' },
+  ],
 };
 const rioaveptExpenseLinesByYear = {
   2018: [
@@ -285,6 +300,46 @@ const rioaveptExpenseLinesByYear = {
     { rawLabel:'Ativos fixos tangíveis', normalizedCategory:'depreciation', amountNative:-0.29808, disclosureLevel:'aggregated' },
     { rawLabel:'Ativos intangíveis', normalizedCategory:'player_amortisation', amountNative:-2.5751, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Subcontratos', normalizedCategory:'admin_general_expense', amountNative:-0.065498, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-0.203561, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.137885, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.289477, disclosureLevel:'aggregated' },
+    { rawLabel:'Comissões', normalizedCategory:'other_expenses', amountNative:-0.180161, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e reparação', normalizedCategory:'admin_general_expense', amountNative:-0.092294, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros serviços especializados', normalizedCategory:'other_expenses', amountNative:-0.084558, disclosureLevel:'aggregated' },
+    { rawLabel:'Ferramentas e utensílios de desgaste rápido', normalizedCategory:'admin_general_expense', amountNative:-0.001511, disclosureLevel:'aggregated' },
+    { rawLabel:'Livros e Documentação Técnica', normalizedCategory:'admin_general_expense', amountNative:-0.023965, disclosureLevel:'aggregated' },
+    { rawLabel:'Material de escritório', normalizedCategory:'admin_general_expense', amountNative:-0.028487, disclosureLevel:'aggregated' },
+    { rawLabel:'Artigos para oferta', normalizedCategory:'admin_general_expense', amountNative:-0.001553, disclosureLevel:'aggregated' },
+    { rawLabel:'Equipamento Desportivo', normalizedCategory:'other_expenses', amountNative:-0.246025, disclosureLevel:'aggregated' },
+    { rawLabel:'Medicamentos e Artigos de Saúde', normalizedCategory:'admin_general_expense', amountNative:-0.038862, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros materiais', normalizedCategory:'admin_general_expense', amountNative:-0.014687, disclosureLevel:'aggregated' },
+    { rawLabel:'Electricidade', normalizedCategory:'admin_general_expense', amountNative:-0.020665, disclosureLevel:'aggregated' },
+    { rawLabel:'Combustíveis', normalizedCategory:'admin_general_expense', amountNative:-0.060601, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras energias e fluidos', normalizedCategory:'admin_general_expense', amountNative:-0.013237, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e estadas', normalizedCategory:'match_organisation_expense', amountNative:-0.490975, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.068989, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.018382, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.028898, disclosureLevel:'aggregated' },
+    { rawLabel:'Limpeza, higiene e conforto', normalizedCategory:'admin_general_expense', amountNative:-0.078805, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros serviços diversos', normalizedCategory:'other_expenses', amountNative:-0.081992, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações do pessoal', normalizedCategory:'wages_squad', amountNative:-6.856924, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações da gerência', normalizedCategory:'admin_general_expense', amountNative:-0.005985, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações', normalizedCategory:'wages_squad', amountNative:-0.432783, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos s/ remunerações', normalizedCategory:'wages_squad', amountNative:-0.668285, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros de acidentes no trabalho e doenças profissionais', normalizedCategory:'admin_general_expense', amountNative:-0.835385, disclosureLevel:'aggregated' },
+    { rawLabel:'Mecanismo de Solidariedade', normalizedCategory:'other_expenses', amountNative:-0.030343, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos', normalizedCategory:'other_expenses', amountNative:-0.224059, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de dívidas a receber (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:-0.072165, disclosureLevel:'aggregated' },
+    { rawLabel:'Quotizações/Inscrições', normalizedCategory:'match_organisation_expense', amountNative:-0.17763, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.020491, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas e Penalidades', normalizedCategory:'other_expenses', amountNative:-0.03645, disclosureLevel:'aggregated' },
+    { rawLabel:'Abates', normalizedCategory:'exceptional_items', amountNative:-2.151169, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Gastos e Perdas', normalizedCategory:'other_expenses', amountNative:-0.039386, disclosureLevel:'aggregated' },
+    { rawLabel:'Ativos fixos tangíveis', normalizedCategory:'depreciation', amountNative:-0.367201, disclosureLevel:'aggregated' },
+    { rawLabel:'Ativos intangíveis', normalizedCategory:'player_amortisation', amountNative:-0.974172, disclosureLevel:'aggregated' },
+  ],
 };
 const rioaveptFiscalYearMeta = {
   2018: {
@@ -358,6 +413,16 @@ const rioaveptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:6.836575, officialTotalExpenses:11.7439, officialPAT:-6.058969,
   },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'rioave-pt-relatorio-sduq-2022-2023',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.357169, tax:0,
+    grossDebt:null, cash:null,
+    officialTotalRevenue:7.715111, officialTotalExpenses:13.012327, officialPAT:-7.805557,
+  },
 };
 const rioaveptPresupuestoOverlayByYear = {};
 
@@ -397,6 +462,11 @@ Object.assign(sources, {
   'rioave-pt-relatorio-contas-2021-22': {
     id:'rioave-pt-relatorio-contas-2021-22', clubId:'rioave-pt',
     title:'Rio Ave Futebol Clube – Futebol SAD — relatorio-contas-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'rioave-pt-relatorio-sduq-2022-2023': {
+    id:'rioave-pt-relatorio-sduq-2022-2023', clubId:'rioave-pt',
+    title:'Rio Ave Futebol Clube – Futebol SAD — Relatorio_SDUQ_2022-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

@@ -10,6 +10,14 @@ window.RANKINGS["pt-primeiraliga"] = {
         incluidos:[["Estadio","Otros ingresos",1]] },
     ],
   },
+  2023: {
+    leagueSize: null,
+    clubs: [
+      { id:"rioave-pt", revenue:8.383, reportType:"official_balance_sheet",
+        sourceId:"rioave-pt-relatorio-sduq-2022-2023",
+        mix:[["Comercial / Sponsors",0.577],["Estadio",0.121],["Televisión",5.596],["Premios por competencias",0.048],["Venta de Jugadores",1.329],["Otros ingresos",0.713]] },
+    ],
+  },
   2022: {
     leagueSize: null,
     clubs: [
