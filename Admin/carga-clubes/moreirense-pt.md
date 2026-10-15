@@ -41,6 +41,71 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2022: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2022-06-30","sourceId":"moreirense-pt-relatorio-contas-2021-22"}
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Moreirense/relatorio-contas-2024-25.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Moreirense/relatorio-contas-2024-25.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas | pág. 23, precedente |
+| 2 | Direitos Televisivos | pág. 23, Jev 1 |
+| 3 | Outros | pág. 23, precedente |
+| 4 | Federação Portuguesa Futebol | pág. 24, precedente |
+| 5 | Jogos sociais (placard/on line) | pág. 24, precedente |
+| 6 | Rendimentos suplementares | pág. 29, Jev 0.99 |
+| 7 | Descontos de pronto pagamento obtidos | pág. 29, Jev 1 |
+| 8 | Rendimentos em investimentos não financeiros | pág. 29, Jev 1 |
+| 9 | Outros | pág. 29, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 14, precedente |
+| 2 | 6221 Trabalhos especializados | pág. 29, Jev 0.98 |
+| 3 | 6223 Vigilância e segurança | pág. 29, Jev 0.91 |
+| 4 | 6224 Honorários | pág. 29, Jev 0.99 |
+| 5 | 6226 Conservação e reparação | pág. 29, Jev 0.99 |
+| 6 | 6231 Ferramentas e utensílios de desgaste rápido | pág. 29, precedente |
+| 7 | 6233 Material de escritório | pág. 29, Jev 1 |
+| 8 | 6238 Outros | pág. 29, Jev 0.91 |
+| 9 | 6241 Eletricidade | pág. 29, Jev 0.99 |
+| 10 | 6242 Combustíveis | pág. 29, Jev 0.99 |
+| 11 | 6243 Água | pág. 29, Jev 0.99 |
+| 12 | 625 Deslocações, estadas e transportes | pág. 29, Jev 0.98 |
+| 13 | 6261 Rendas e alugueres | pág. 29, precedente |
+| 14 | 6262 Comunicação | pág. 29, Jev 1 |
+| 15 | 6263 Seguros | pág. 29, Claude 0.8 |
+| 16 | 6267 Limpeza, higiene e conforto | pág. 29, Jev 0.98 |
+| 17 | 6268 Outros serviços | pág. 29, precedente |
+| 18 | Remunerações do pessoal | pág. 28, precedente |
+| 19 | Encargos sobre remunerações | pág. 28, precedente |
+| 20 | Seguros de acidentes de trabalho e doenças profissionais | pág. 28, precedente |
+| 21 | Outros gastos com pessoal | pág. 28, Jev 0.9 |
+| 22 | Impostos | pág. 29, Jev 1 |
+| 23 | Diferenças de câmbio desfavoráveis | pág. 29, Jev 0.91 |
+| 24 | Gastos em investimentos não financeiros | pág. 29, precedente |
+| 25 | Outros | pág. 29, Jev 0.98 |
+| 26 | Gastos/reversões de depreciação e amortização | pág. 14, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Moreirense".
+```
+
 ## 2022
 
 ### Ingresos
@@ -117,4 +182,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Moreirense/relatorio-contas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### moreirense-pt-relatorio-contas-2024-25
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Moreirense/relatorio-contas-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
