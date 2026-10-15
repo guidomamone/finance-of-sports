@@ -106,7 +106,6 @@ const docs = lineas.map((l) => l.replace(/^testigo\s+/i, '')).filter((d) => { if
     if (comunes.length) console.log(`OJO: ${comunes.length} documento(s) de esta lista están también en otra lista activa, Admin/lotes/${f} (${comunes.slice(0, 3).map((d) => d.split('/').pop()).join(', ')}${comunes.length > 3 ? `, … y ${comunes.length - 3} más` : ''}). Si ya se corrieron allá, sacalos de una de las dos o archivá la lista cerrada (Admin/Archive/lotes/).`);
   }
 }
-if (docs.length > 10) console.log(`OJO: ${docs.length} documentos. El proceso nuevo se refina de a 5 (pedido de Guido).`);
 const ajustesTodos = (() => { let cache = null; return () => (cache ??= (existsSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return {}; } }) : [])); })();
 const leerRegistro = () => readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
 let registro = leerRegistro();
