@@ -25,6 +25,14 @@ ORDEN (2026-10-15): primero lo que corrige datos publicados (232 ad, 235), despu
 de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (232 e, 233, 230) y lo que espera una decisión de Guido (130,
 183, 51). Las letras del 232 marcadas "conocido, sin daño hoy" (k, l, n, o, z) no se trabajan salvo que algo cambie.
 
+236. REVISAR EL PIPELINE DESPUÉS DE LOS CAMBIOS DEL 232 Y EL 234 (pedido de Guido, 2026-10-15). Muchos escalones nuevos en pocos días
+    (`cargar.mjs`: etiqueta repetida por renglón y categoría del renglón por sus filas; `caja-deuda.mjs`: Jev, columnas por perímetro,
+    cifras con forma imposible; `periodo.mjs`, `verificar.mjs`, `gestiones-tanda.mjs`...). Revisión de punta a punta: (1) el ensayo de
+    `cargar.mjs --desde-verificacion --reemplazar` en todos los documentos con .categorias.json (el arnés de la medición del 234 corre en ~6
+    min con la cola en una copia, COLA_ARCHIVO) y que lo cargado dé idéntico salvo preguntas nuevas explicadas; (2) los lotes de prueba y
+    `caja-deuda.mjs --medir` en todos los clubes; (3) que `Admin/PIPELINE.md` y la skill club-or-year-onboarding describan los escalones
+    como son hoy, sin reglas apiladas ni duplicadas.
+
 235. CAJA O DEUDA SIN DATO SE VE COMO 0 (2026-10-15, al cerrar el 232 ab). `computeYearGeneric()` escribe `meta.grossDebt || 0` y
     `meta.cash || 0`, y `deudaNoDesglosada()` (js/finanzas-render.js L256) solo reconoce "sin dato" cuando los DOS son 0. Un año con uno
     cargado y el otro en null muestra el otro como 0: Argentinos 2019 ("Caja 0"; la presentación de asamblea solo trae el total del pasivo),
