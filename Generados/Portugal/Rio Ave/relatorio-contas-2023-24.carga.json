@@ -1,30 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
- "generado": "2026-10-15T13:55:42.039Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 cerró, pero la etapa 4 dejó hasta 4 número(s) sin confirmar (Generados/Portugal/Rio Ave/relatorio-contas-2023-24.validacion.json, \"noConfirmados\"; ver to-do 160)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "1 fila(s) impresa(s) que no están en el .categorias.json (la verificación las abrió después de categorizar): \"Alienações\" 0.383333 (pág. 37). Volver a correr la etapa 5 o categorizarlas en la cola (node tools/cola.mjs --corregir-categoria)"
-  },
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 11.376396 + gastos -16.77055 + netInterest -0.085703 + tax 0 = -5.479857 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -5.863188)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -15.747417 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  }
- ],
+ "generado": "2026-10-15T14:05:17.394Z",
+ "frena": [],
  "avisos": [
-  "gastos: 1 fila(s) sin categoría aceptable (2.2% del dinero del lado): \"Alienações\" (no está en categorias.json)"
+  "gastos: ningún total impreso igual a la suma de las líneas (-16.13075); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "rioave-pt",
@@ -40,7 +19,7 @@
     "_pag": 35,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Direitos Televisivos",
@@ -50,7 +29,7 @@
     "_pag": 35,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Patrocínio e Publicidade",
@@ -60,7 +39,7 @@
     "_pag": 35,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Atividades Comerciais",
@@ -70,7 +49,7 @@
     "_pag": 35,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Subsídios à Exploração",
@@ -80,7 +59,7 @@
     "_pag": 14,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Royalties",
@@ -90,7 +69,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Participação nas Competições Nacionais",
@@ -100,7 +79,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Apostas Desportivas",
@@ -110,7 +89,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Cedência de Jogadores",
@@ -120,7 +99,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Venda de Direitos Desportivos",
@@ -130,7 +109,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Indemnizações AT",
@@ -140,7 +119,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Mecanismo de Solidariedade",
@@ -150,7 +129,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Outros",
@@ -160,7 +139,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Imparidade de dívidas a receber (perdas/reversões)",
@@ -202,7 +181,7 @@
     "_pag": 35,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Vigilância e segurança",
@@ -212,7 +191,7 @@
     "_pag": 35,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Honorários",
@@ -222,7 +201,7 @@
     "_pag": 35,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Gastos honorários a agentes desportivos",
@@ -252,7 +231,7 @@
     "_pag": 35,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Outros serviços especializados",
@@ -272,7 +251,7 @@
     "_pag": 35,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Livros e Documentação Técnica",
@@ -282,7 +261,7 @@
     "_pag": 35,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Material de escritório",
@@ -292,7 +271,7 @@
     "_pag": 35,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Artigos para oferta",
@@ -322,7 +301,7 @@
     "_pag": 35,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Outros materiais",
@@ -342,7 +321,7 @@
     "_pag": 35,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Combustíveis",
@@ -352,7 +331,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Outras energias e fluidos",
@@ -372,7 +351,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Rendas e alugueres",
@@ -392,7 +371,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Seguros",
@@ -402,7 +381,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Limpeza, higiene e conforto",
@@ -412,7 +391,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Outros serviços diversos",
@@ -422,7 +401,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Remunerações do pessoal",
@@ -472,7 +451,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía player_sales)"
    },
    {
     "rawLabel": "Outros gastos",
@@ -482,7 +461,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Provisões (aumentos/reduções)",
@@ -492,7 +471,7 @@
     "_pag": 14,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Quotizações/Inscrições",
@@ -512,7 +491,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Multas e Penalidades",
@@ -522,7 +501,17 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Alienações",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.383333,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Abates",
@@ -542,7 +531,7 @@
     "_pag": 38,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Outros Gastos e Perdas",
@@ -552,7 +541,7 @@
     "_pag": 38,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Ativos fixos tangíveis",
@@ -562,7 +551,7 @@
     "_pag": 38,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Ativos intangíveis",
@@ -585,11 +574,21 @@
    "assetSales": 0,
    "netInterest": -0.085703,
    "tax": 0,
+   "extraRows": [
+    {
+     "label": "Juros e rendimentos similares obtidos",
+     "value": 0.115896
+    },
+    {
+     "label": "Juros e gastos similares suportados",
+     "value": -0.201599
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 11.376397,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalExpenses": 16.13075,
+   "officialPAT": -5.863188
   },
   "source": {
    "id": "rioave-pt-relatorio-contas-2023-24",
@@ -597,7 +596,7 @@
    "title": "Rio Ave Futebol Clube – Futebol SAD — relatorio-contas-2023-24 (ejercicio 2024)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.md; categorías del pipeline (Jev/Claude). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.md",
@@ -674,6 +673,46 @@
    "evidencia": "pág. 14 del visor (impreso 2 al pie), .md L360",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
+   "campo": "confirmado",
+   "valor": "692 047,70",
+   "linea": 352,
+   "motivo": "Claude 2026-10-15 (lote 76): confirmado mirando la imagen de la página 14 del visor (impreso 2 al pie), escaneo sin texto propio; además el EBITDA y el resultado impresos cierran con estos importes",
+   "evidencia": "pág. 14 del visor, .md L352",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
+   "campo": "confirmado",
+   "valor": "2 500,00",
+   "linea": 353,
+   "motivo": "Claude 2026-10-15 (lote 76): confirmado mirando la imagen de la página 14 del visor (impreso 2 al pie), escaneo sin texto propio; además el EBITDA y el resultado impresos cierran con estos importes",
+   "evidencia": "pág. 14 del visor, .md L353",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
+   "campo": "confirmado",
+   "valor": "5 539 966,65",
+   "linea": 354,
+   "motivo": "Claude 2026-10-15 (lote 76): confirmado mirando la imagen de la página 14 del visor (impreso 2 al pie), escaneo sin texto propio; además el EBITDA y el resultado impresos cierran con estos importes",
+   "evidencia": "pág. 14 del visor, .md L354",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
+   "campo": "confirmado",
+   "valor": "1 798 760,09",
+   "linea": 355,
+   "motivo": "Claude 2026-10-15 (lote 76): confirmado mirando la imagen de la página 14 del visor (impreso 2 al pie), escaneo sin texto propio; además el EBITDA y el resultado impresos cierran con estos importes",
+   "evidencia": "pág. 14 del visor, .md L355",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
   }
  ],
  "seleccion": {
@@ -692,7 +731,7 @@
    "cat": "matchday_competition",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.118581
@@ -707,7 +746,7 @@
    "cat": "broadcasting",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.424068
@@ -722,7 +761,7 @@
    "cat": "sponsorship_commercial",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 5.15
@@ -737,7 +776,7 @@
    "cat": "sponsorship_commercial",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.131782
@@ -752,7 +791,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.009494
@@ -767,7 +806,7 @@
    "cat": "sponsorship_commercial",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.010925
@@ -782,7 +821,7 @@
    "cat": "competition_bonus",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.038887
@@ -797,7 +836,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.287354
@@ -812,7 +851,7 @@
    "cat": "player_sales",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.0078
@@ -827,7 +866,7 @@
    "cat": "player_sales",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 4.574284
@@ -842,7 +881,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.030629
@@ -857,7 +896,7 @@
    "cat": "player_sales",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.045868
@@ -872,7 +911,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.544219
@@ -885,10 +924,10 @@
    "origen": "verificacion (ajuste manual)",
    "signoFijo": 0.000005,
    "cat": "other_income",
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
    "conf": 1,
    "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
    "notaGuido": "Claude 2026-10-15: reversión de imparidad del lado del ingreso (ajuste fila, to-do 237 l); genérica de su lado",
    "destino": "revenue",
    "amountNative": 0.000005
@@ -901,10 +940,10 @@
    "origen": "verificacion (ajuste manual)",
    "signoFijo": 0.0025,
    "cat": "other_income",
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
    "conf": 1,
    "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
    "notaGuido": "Claude 2026-10-15: reversión de imparidad del lado del ingreso (ajuste fila, to-do 237 l); genérica de su lado",
    "destino": "revenue",
    "amountNative": 0.0025
@@ -935,7 +974,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.37411
@@ -950,7 +989,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.151015
@@ -965,7 +1004,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.307874
@@ -1012,7 +1051,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.102485
@@ -1043,7 +1082,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.006491
@@ -1058,7 +1097,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.027072
@@ -1073,7 +1112,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.019825
@@ -1120,7 +1159,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.032669
@@ -1151,7 +1190,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.041511
@@ -1166,7 +1205,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.063635
@@ -1197,7 +1236,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.570079
@@ -1228,7 +1267,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.023848
@@ -1243,7 +1282,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.036999
@@ -1258,7 +1297,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.087239
@@ -1273,7 +1312,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.080094
@@ -1352,7 +1391,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía player_sales)",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.01
@@ -1367,7 +1406,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.332538
@@ -1382,7 +1421,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.692048
@@ -1413,7 +1452,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.007352
@@ -1428,7 +1467,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.132295
@@ -1440,10 +1479,13 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Outros gastos e perdas\")",
    "signoFijo": 0.383333,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "player_amortisation",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.383333
   },
   {
    "label": "Abates",
@@ -1471,7 +1513,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.00015
@@ -1486,7 +1528,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.083144
@@ -1501,7 +1543,7 @@
    "cat": "depreciation",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.3777
@@ -1558,16 +1600,24 @@
    "verificacion (nota que desglosa \"Gastos / reversões de depreciação e de amortização\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
   "revSum": 11.376396,
-  "expSum": -15.747417,
+  "expSum": -16.13075,
   "officialTotalRevenue": 11.376397,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
+  "officialTotalExpenses": 16.13075,
+  "officialPAT": -5.863188,
   "verificacion": {
-   "ingresos": "impreso"
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -5.863188,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
   },
   "revImpreso": {
    "label": "total de ingresos (verificado)",
@@ -1623,10 +1673,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 5,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 15,
-  "lineasGasto": 39,
+  "lineasGasto": 40,
   "metaFilas": 2,
   "excluidas": 0
  }

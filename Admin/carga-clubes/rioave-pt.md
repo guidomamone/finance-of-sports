@@ -129,6 +129,99 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Rio Ave".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Rio Ave/relatorio-contas-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bilheteira | pág. 35, precedente |
+| 2 | Direitos Televisivos | pág. 35, precedente |
+| 3 | Patrocínio e Publicidade | pág. 35, precedente |
+| 4 | Atividades Comerciais | pág. 35, precedente |
+| 5 | Subsídios à Exploração | pág. 14, precedente |
+| 6 | Royalties | pág. 37, precedente |
+| 7 | Participação nas Competições Nacionais | pág. 37, precedente |
+| 8 | Apostas Desportivas | pág. 37, precedente |
+| 9 | Cedência de Jogadores | pág. 37, precedente |
+| 10 | Venda de Direitos Desportivos | pág. 37, precedente |
+| 11 | Indemnizações AT | pág. 37, precedente |
+| 12 | Mecanismo de Solidariedade | pág. 37, precedente |
+| 13 | Outros | pág. 37, precedente |
+| 14 | Imparidade de dívidas a receber (perdas/reversões) | pág. 14, precedente |
+| 15 | Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões) | pág. 14, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subcontratos | pág. 35, precedente |
+| 2 | Trabalhos especializados | pág. 35, precedente |
+| 3 | Vigilância e segurança | pág. 35, precedente |
+| 4 | Honorários | pág. 35, precedente |
+| 5 | Gastos honorários a agentes desportivos | pág. 36, precedente |
+| 6 | Outras Comissões | pág. 36, precedente |
+| 7 | Conservação e reparação | pág. 35, precedente |
+| 8 | Outros serviços especializados | pág. 35, precedente |
+| 9 | Ferramentas e utensílios de desgaste rápido | pág. 35, precedente |
+| 10 | Livros e Documentação Técnica | pág. 35, precedente |
+| 11 | Material de escritório | pág. 35, precedente |
+| 12 | Artigos para oferta | pág. 35, precedente |
+| 13 | Equipamento Desportivo | pág. 35, precedente |
+| 14 | Medicamentos e Artigos de Saúde | pág. 35, precedente |
+| 15 | Outros materiais | pág. 35, precedente |
+| 16 | Eletricidade | pág. 35, precedente |
+| 17 | Combustíveis | pág. 36, precedente |
+| 18 | Outras energias e fluidos | pág. 36, precedente |
+| 19 | Deslocações e estadas | pág. 36, precedente |
+| 20 | Rendas e alugueres | pág. 36, precedente |
+| 21 | Comunicação | pág. 36, precedente |
+| 22 | Seguros | pág. 36, precedente |
+| 23 | Limpeza, higiene e conforto | pág. 36, precedente |
+| 24 | Outros serviços diversos | pág. 36, precedente |
+| 25 | Remunerações do pessoal | pág. 36, precedente |
+| 26 | Indemnizações | pág. 36, precedente |
+| 27 | Encargos s/ remunerações | pág. 36, precedente |
+| 28 | Seguros de acidentes no trabalho e doenças profissionais | pág. 36, precedente |
+| 29 | Mecanismo de Solidariedade | pág. 36, precedente |
+| 30 | Outros gastos | pág. 36, precedente |
+| 31 | Provisões (aumentos/reduções) | pág. 14, precedente |
+| 32 | Quotizações/Inscrições | pág. 37, precedente |
+| 33 | Impostos | pág. 37, precedente |
+| 34 | Multas e Penalidades | pág. 37, precedente |
+| 35 | Alienações | pág. 37, Claude 0.8 |
+| 36 | Abates | pág. 38, precedente |
+| 37 | Donativos | pág. 38, precedente |
+| 38 | Outros Gastos e Perdas | pág. 38, precedente |
+| 39 | Ativos fixos tangíveis | pág. 38, precedente |
+| 40 | Ativos intangíveis | pág. 38, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2024-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2024-06-30
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 4,89. Claude 2026-10-15 (lote 76): reversión de imparidad (en el PDF sin signo menos, pág. 14 del visor). Pasa al lado del ingreso con valor positivo porque cargar.mjs toma el valor absoluto de un ajuste fila de gasto negativo (verificar sí cerraba con -X como gasto): el efecto en el resultado es el mismo (to-do 237 l)
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 2.500,00. Claude 2026-10-15 (lote 76): reversión de imparidad (en el PDF sin signo menos, pág. 14 del visor). Pasa al lado del ingreso con valor positivo porque cargar.mjs toma el valor absoluto de un ajuste fila de gasto negativo (verificar sí cerraba con -X como gasto): el efecto en el resultado es el mismo (to-do 237 l)
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 115.896,16. Claude 2026-10-15 (lote 76, revisado en la imagen de la pág. 14): el .md perdió los signos y la lectura sumaba los intereses obtenidos como costo (financiero 0,317495 en vez del neto -0,085703); con los dos el resultado da el impreso -5.863.187,66
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = -201.599,08. Claude 2026-10-15 (lote 76, revisado en la imagen de la pág. 14): el .md perdió los signos y la lectura sumaba los intereses obtenidos como costo (financiero 0,317495 en vez del neto -0,085703); con los dos el resultado da el impreso -5.863.187,66
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): confirmado = 692 047,70. Claude 2026-10-15 (lote 76): confirmado mirando la imagen de la página 14 del visor (impreso 2 al pie), escaneo sin texto propio; además el EBITDA y el resultado impresos cierran con estos importes
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): confirmado = 2 500,00. Claude 2026-10-15 (lote 76): confirmado mirando la imagen de la página 14 del visor (impreso 2 al pie), escaneo sin texto propio; además el EBITDA y el resultado impresos cierran con estos importes
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): confirmado = 5 539 966,65. Claude 2026-10-15 (lote 76): confirmado mirando la imagen de la página 14 del visor (impreso 2 al pie), escaneo sin texto propio; además el EBITDA y el resultado impresos cierran con estos importes
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): confirmado = 1 798 760,09. Claude 2026-10-15 (lote 76): confirmado mirando la imagen de la página 14 del visor (impreso 2 al pie), escaneo sin texto propio; además el EBITDA y el resultado impresos cierran con estos importes
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2023–24 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Rio Ave".
+```
+
 ## 2023
 
 ### Ingresos
@@ -773,4 +866,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Rio Ave/relatorio-contas-2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### rioave-pt-relatorio-contas-2023-24
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

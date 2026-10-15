@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2015-16.pdf",
   "club": "rioave-pt",
   "year": 2016,
-  "generatedAt": "2026-10-15T13:48:32.038Z",
+  "generatedAt": "2026-10-15T13:58:17.384Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         0.001051
       ],
-      "glosa": "Otros beneficios de explotación"
+      "glosa": "Otros ingresos de explotación"
     },
     {
       "label": "Comparticipaçoes da UEFA",
@@ -64,7 +64,7 @@
       "values": [
         0.040561
       ],
-      "glosa": "Participaciones de la UEFA"
+      "glosa": "Contribuciones de la UEFA"
     },
     {
       "label": "Subsidio Deslocações ás Ilhas",
@@ -124,7 +124,7 @@
       "values": [
         1.736
       ],
-      "glosa": "Venta de derechos deportivos"
+      "glosa": "Venta de derechos federativos"
     },
     {
       "label": "Indemnizações AT",
@@ -134,7 +134,7 @@
       "values": [
         0.084607
       ],
-      "glosa": "Indemnizaciones por accidentes laborales"
+      "glosa": "Indemnizaciones AT"
     },
     {
       "label": "Outros",
@@ -154,7 +154,7 @@
       "values": [
         0.013154
       ],
-      "glosa": "Subcontratos"
+      "glosa": "Subcontratación"
     },
     {
       "label": "Trabalhos especializados",
@@ -204,7 +204,7 @@
       "values": [
         0.077844
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Reparaciones y conservación"
     },
     {
       "label": "Outros serviços especializados",
@@ -244,7 +244,7 @@
       "values": [
         0.001283
       ],
-      "glosa": "Artículos para obsequio"
+      "glosa": "Artículos promocionales y obsequios"
     },
     {
       "label": "Equipamento Desportivo",
@@ -254,7 +254,7 @@
       "values": [
         0.10041
       ],
-      "glosa": "Equipamiento deportivo"
+      "glosa": "Material deportivo"
     },
     {
       "label": "Medicamentos e Artigos de Saúde",
@@ -264,7 +264,7 @@
       "values": [
         0.018759
       ],
-      "glosa": "Medicamentos y artículos de salud"
+      "glosa": "Medicamentos y productos sanitarios"
     },
     {
       "label": "Outros materiais",
@@ -344,7 +344,7 @@
       "values": [
         0.006676
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -354,7 +354,7 @@
       "values": [
         0.016504
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Outros serviços diversos",
@@ -374,7 +374,7 @@
       "values": [
         3.652311
       ],
-      "glosa": "Remuneraciones del personal"
+      "glosa": "Sueldos y salarios"
     },
     {
       "label": "Encargos s/ remunerações",
@@ -384,7 +384,7 @@
       "values": [
         0.302835
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales"
     },
     {
       "label": "Seguros de acidentes no trabalho e doenças profissionais",
@@ -414,7 +414,7 @@
       "values": [
         0.012912
       ],
-      "glosa": "Deterioro de créditos por cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos a cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Quotizações/Inscrições",
@@ -494,7 +494,7 @@
       "values": [
         0.016948
       ],
-      "glosa": "Otros gastos de financiación"
+      "glosa": "Otros gastos financieros"
     },
     {
       "label": "Edifícios e outras construções",
@@ -514,7 +514,7 @@
       "values": [
         0.001265
       ],
-      "glosa": "Equipamiento básico"
+      "glosa": "Instalaciones técnicas y maquinaria"
     },
     {
       "label": "Equipamento de Transporte",
@@ -534,7 +534,7 @@
       "values": [
         0.001091
       ],
-      "glosa": "Equipamiento administrativo"
+      "glosa": "Mobiliario y equipos de oficina"
     },
     {
       "label": "Outros Ativos Fixos Tangíveis",
@@ -544,7 +544,7 @@
       "values": [
         0.000141
       ],
-      "glosa": "Otro inmovilizado material"
+      "glosa": "Otros activos fijos materiales"
     },
     {
       "label": "Outros Direitos (Passes dos jogadores)",
@@ -564,7 +564,7 @@
       "values": [
         0.000496
       ],
-      "glosa": "Otro inmovilizado intangible"
+      "glosa": "Otros activos intangibles"
     }
   ]
 }

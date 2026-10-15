@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2024-25.pdf",
   "club": "rioave-pt",
   "year": 2025,
-  "generatedAt": "2026-10-15T13:48:32.097Z",
+  "generatedAt": "2026-10-15T13:58:17.433Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         0.105715
       ],
-      "glosa": "**Total de ventas**"
+      "glosa": "**Total Ventas**"
     },
     {
       "label": "Bilheteira",
@@ -74,7 +74,7 @@
       "values": [
         0.019266
       ],
-      "glosa": "Subvenciones a la explotación, contribuciones de la UEFA y premios en metálico"
+      "glosa": "Subvenciones a la explotación, contribuciones de la UEFA y premios monetarios"
     },
     {
       "label": "Royalties",
@@ -84,7 +84,7 @@
       "values": [
         0.011
       ],
-      "glosa": "Regalías"
+      "glosa": "Royalties"
     },
     {
       "label": "Competições UEFA- Solidariedade",
@@ -174,7 +174,7 @@
       "values": [
         0.298021
       ],
-      "glosa": "Subcontratos"
+      "glosa": "Subcontratas"
     },
     {
       "label": "Trabalhos especializados",
@@ -234,7 +234,7 @@
       "values": [
         0.104822
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Outros serviços especializados",
@@ -284,7 +284,7 @@
       "values": [
         0.000842
       ],
-      "glosa": "Artículos para obsequio"
+      "glosa": "Artículos para regalo promocional"
     },
     {
       "label": "Equipamento Desportivo",
@@ -304,7 +304,7 @@
       "values": [
         0.032353
       ],
-      "glosa": "Medicamentos y artículos sanitarios"
+      "glosa": "Medicamentos y material sanitario"
     },
     {
       "label": "Outros materiais",
@@ -364,7 +364,7 @@
       "values": [
         0.293495
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Comunicação",
@@ -374,7 +374,7 @@
       "values": [
         0.016909
       ],
-      "glosa": "Comunicación"
+      "glosa": "Comunicaciones"
     },
     {
       "label": "Seguros",
@@ -394,7 +394,7 @@
       "values": [
         0.026647
       ],
-      "glosa": "Contencioso y notaría"
+      "glosa": "Gastos contenciosos y notariales"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -444,7 +444,7 @@
       "values": [
         1.186123
       ],
-      "glosa": "Cargas sobre remuneraciones"
+      "glosa": "Cargas sociales sobre salarios"
     },
     {
       "label": "Seguros de acidentes no trabalho e doenças profissionais",
@@ -494,7 +494,7 @@
       "values": [
         0.000018
       ],
-      "glosa": "Deterioro de créditos comerciales a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -504,7 +504,7 @@
       "values": [
         0
       ],
-      "glosa": "Provisiones (aumentos/reducciones)"
+      "glosa": "Provisiones (dotaciones/reversiones)"
     },
     {
       "label": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
@@ -524,7 +524,7 @@
       "values": [
         0.307305
       ],
-      "glosa": "Cuotas/Inscripciones"
+      "glosa": "Cuotas e inscripciones"
     },
     {
       "label": "Impostos",
@@ -574,7 +574,7 @@
       "values": [
         0.391118
       ],
-      "glosa": "Activos fijos tangibles"
+      "glosa": "Inmovilizado material"
     },
     {
       "label": "Ativos intangíveis",
@@ -584,7 +584,7 @@
       "values": [
         4.274854
       ],
-      "glosa": "Activos intangibles"
+      "glosa": "Inmovilizado intangible"
     }
   ]
 }

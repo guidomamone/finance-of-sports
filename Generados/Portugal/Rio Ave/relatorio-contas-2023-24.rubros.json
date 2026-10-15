@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
   "club": "rioave-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T13:48:32.079Z",
+  "generatedAt": "2026-10-15T13:58:17.414Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -64,7 +64,7 @@
       "values": [
         0.010925
       ],
-      "glosa": "Cánones"
+      "glosa": "Royalties"
     },
     {
       "label": "Participação nas Competições Nacionais",
@@ -104,7 +104,7 @@
       "values": [
         4.574284
       ],
-      "glosa": "Venta de derechos federativos"
+      "glosa": "Venta de derechos deportivos"
     },
     {
       "label": "Indemnizações AT",
@@ -114,7 +114,7 @@
       "values": [
         0.030629
       ],
-      "glosa": "Indemnizaciones por accidentes de trabajo"
+      "glosa": "Indemnizaciones AT"
     },
     {
       "label": "Mecanismo de Solidariedade",
@@ -144,7 +144,7 @@
       "values": [
         0.000005
       ],
-      "glosa": "Deterioro de créditos comerciales a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
     },
     {
       "label": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
@@ -164,7 +164,7 @@
       "values": [
         0.11082
       ],
-      "glosa": "Subcontratación"
+      "glosa": "Subcontratos"
     },
     {
       "label": "Trabalhos especializados",
@@ -204,7 +204,7 @@
       "values": [
         0.074912
       ],
-      "glosa": "Honorarios a agentes deportivos"
+      "glosa": "Gastos por honorarios de agentes deportivos"
     },
     {
       "label": "Outras Comissões",
@@ -224,7 +224,7 @@
       "values": [
         0.102485
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Reparación y conservación"
     },
     {
       "label": "Outros serviços especializados",
@@ -244,7 +244,7 @@
       "values": [
         0.006491
       ],
-      "glosa": "Herramientas y utensilios de desgaste rápido"
+      "glosa": "Herramientas y útiles de desgaste rápido"
     },
     {
       "label": "Livros e Documentação Técnica",
@@ -274,7 +274,7 @@
       "values": [
         0.004338
       ],
-      "glosa": "Artículos para regalo"
+      "glosa": "Artículos promocionales y de regalo"
     },
     {
       "label": "Equipamento Desportivo",
@@ -294,7 +294,7 @@
       "values": [
         0.032669
       ],
-      "glosa": "Medicamentos y artículos sanitarios"
+      "glosa": "Medicamentos y material sanitario"
     },
     {
       "label": "Outros materiais",
@@ -384,7 +384,7 @@
       "values": [
         0.087239
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Outros serviços diversos",
@@ -514,7 +514,7 @@
       "values": [
         1.023133
       ],
-      "glosa": "Bajas de inmovilizado"
+      "glosa": "Bajas de activo"
     },
     {
       "label": "Donativos",

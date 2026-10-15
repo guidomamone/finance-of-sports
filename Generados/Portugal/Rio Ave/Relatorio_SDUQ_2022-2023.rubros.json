@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/Relatorio_SDUQ_2022-2023.pdf",
   "club": "rioave-pt",
   "year": 2023,
-  "generatedAt": "2026-10-15T13:48:32.033Z",
+  "generatedAt": "2026-10-15T13:58:17.379Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -104,7 +104,7 @@
       "values": [
         0.045991
       ],
-      "glosa": "Indemnizaciones por accidentes de trabajo"
+      "glosa": "Indemnizaciones AT"
     },
     {
       "label": "Mecanismo de Solidariedade",
@@ -144,7 +144,7 @@
       "values": [
         0.065498
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontratos"
     },
     {
       "label": "Trabalhos especializados",
@@ -194,7 +194,7 @@
       "values": [
         0.092294
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Outros serviços especializados",
@@ -324,7 +324,7 @@
       "values": [
         0.068989
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Comunicação",
@@ -334,7 +334,7 @@
       "values": [
         0.018382
       ],
-      "glosa": "Comunicaciones"
+      "glosa": "Comunicación"
     },
     {
       "label": "Seguros",
@@ -344,7 +344,7 @@
       "values": [
         0.028898
       ],
-      "glosa": "Primas de seguros"
+      "glosa": "Seguros"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -404,7 +404,7 @@
       "values": [
         0.668285
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes no trabalho e doenças profissionais",
@@ -444,7 +444,7 @@
       "values": [
         0.072165
       ],
-      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de cuentas por cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Quotizações/Inscrições",
@@ -454,7 +454,7 @@
       "values": [
         0.17763
       ],
-      "glosa": "Cuotas e inscripciones"
+      "glosa": "Cuotas/Inscripciones"
     },
     {
       "label": "Impostos",
@@ -484,7 +484,7 @@
       "values": [
         2.151169
       ],
-      "glosa": "Bajas de inmovilizado"
+      "glosa": "Bajas"
     },
     {
       "label": "Outros Gastos e Perdas",
@@ -504,7 +504,7 @@
       "values": [
         0.367201
       ],
-      "glosa": "Inmovilizado material"
+      "glosa": "Activos fijos tangibles"
     },
     {
       "label": "Ativos intangíveis",
@@ -514,7 +514,7 @@
       "values": [
         0.974172
       ],
-      "glosa": "Inmovilizado intangible"
+      "glosa": "Activos intangibles"
     }
   ]
 }

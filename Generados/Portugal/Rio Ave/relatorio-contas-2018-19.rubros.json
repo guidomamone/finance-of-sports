@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2018-19.pdf",
   "club": "rioave-pt",
   "year": 2019,
-  "generatedAt": "2026-10-15T13:48:32.064Z",
+  "generatedAt": "2026-10-15T13:58:17.398Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         4.2
       ],
-      "glosa": "Derechos de televisión"
+      "glosa": "Derechos audiovisuales"
     },
     {
       "label": "Patrocínio e Publicidade",
@@ -64,7 +64,7 @@
       "values": [
         0.008
       ],
-      "glosa": "Royalties"
+      "glosa": "Cánones"
     },
     {
       "label": "Participação nas Competições Europeias",
@@ -114,7 +114,7 @@
       "values": [
         11.8678
       ],
-      "glosa": "Venta de derechos deportivos"
+      "glosa": "Venta de derechos federativos"
     },
     {
       "label": "Indemnizações AT",
@@ -124,7 +124,7 @@
       "values": [
         0.094853
       ],
-      "glosa": "Indemnizaciones AT"
+      "glosa": "Indemnizaciones por accidentes de trabajo"
     },
     {
       "label": "Mecanismo de Solidariedade",
@@ -164,7 +164,7 @@
       "values": [
         0.041076
       ],
-      "glosa": "Subcontratos"
+      "glosa": "Subcontratas"
     },
     {
       "label": "Trabalhos especializados",
@@ -204,7 +204,7 @@
       "values": [
         0.933614
       ],
-      "glosa": "Gastos por honorarios a agentes deportivos"
+      "glosa": "Gastos por honorarios de agentes deportivos"
     },
     {
       "label": "Outros serviços especializados",
@@ -224,7 +224,7 @@
       "values": [
         0.070493
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Reparaciones y conservación"
     },
     {
       "label": "Outros serviços especializados",
@@ -264,7 +264,7 @@
       "values": [
         0.150738
       ],
-      "glosa": "Equipamiento deportivo"
+      "glosa": "Material deportivo"
     },
     {
       "label": "Medicamentos e Artigos de Saúde",
@@ -274,7 +274,7 @@
       "values": [
         0.051733
       ],
-      "glosa": "Medicamentos y artículos sanitarios"
+      "glosa": "Medicamentos y artículos de salud"
     },
     {
       "label": "Outros materiais",
@@ -354,7 +354,7 @@
       "values": [
         0.014925
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -434,7 +434,7 @@
       "values": [
         0
       ],
-      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
     },
     {
       "label": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
@@ -454,7 +454,7 @@
       "values": [
         0.17868
       ],
-      "glosa": "Cuotas/Inscripciones"
+      "glosa": "Cuotas e inscripciones"
     },
     {
       "label": "Impostos",
@@ -474,7 +474,7 @@
       "values": [
         0.146552
       ],
-      "glosa": "Multas y penalizaciones"
+      "glosa": "Multas y sanciones"
     },
     {
       "label": "Abates",
@@ -504,7 +504,7 @@
       "values": [
         0.183974
       ],
-      "glosa": "Activos fijos tangibles"
+      "glosa": "Inmovilizado material"
     },
     {
       "label": "Ativos intangíveis",
@@ -514,7 +514,7 @@
       "values": [
         3.145308
       ],
-      "glosa": "Activos intangibles"
+      "glosa": "Inmovilizado intangible"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.md",
- "generado": "2026-10-15T13:48:32.079Z",
+ "generado": "2026-10-15T13:58:17.414Z",
  "estado": "ok",
  "clubId": "rioave-pt",
  "year": 2024,
@@ -71,6 +71,46 @@
    "reemplaza": "Juros e gastos similares suportados",
    "motivo": "Claude 2026-10-15 (lote 76, revisado en la imagen de la pág. 14): el .md perdió los signos y la lectura sumaba los intereses obtenidos como costo (financiero 0,317495 en vez del neto -0,085703); con los dos el resultado da el impreso -5.863.187,66",
    "evidencia": "pág. 14 del visor (impreso 2 al pie), .md L360",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
+   "campo": "confirmado",
+   "valor": "692 047,70",
+   "linea": 352,
+   "motivo": "Claude 2026-10-15 (lote 76): confirmado mirando la imagen de la página 14 del visor (impreso 2 al pie), escaneo sin texto propio; además el EBITDA y el resultado impresos cierran con estos importes",
+   "evidencia": "pág. 14 del visor, .md L352",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
+   "campo": "confirmado",
+   "valor": "2 500,00",
+   "linea": 353,
+   "motivo": "Claude 2026-10-15 (lote 76): confirmado mirando la imagen de la página 14 del visor (impreso 2 al pie), escaneo sin texto propio; además el EBITDA y el resultado impresos cierran con estos importes",
+   "evidencia": "pág. 14 del visor, .md L353",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
+   "campo": "confirmado",
+   "valor": "5 539 966,65",
+   "linea": 354,
+   "motivo": "Claude 2026-10-15 (lote 76): confirmado mirando la imagen de la página 14 del visor (impreso 2 al pie), escaneo sin texto propio; además el EBITDA y el resultado impresos cierran con estos importes",
+   "evidencia": "pág. 14 del visor, .md L354",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
+   "campo": "confirmado",
+   "valor": "1 798 760,09",
+   "linea": 355,
+   "motivo": "Claude 2026-10-15 (lote 76): confirmado mirando la imagen de la página 14 del visor (impreso 2 al pie), escaneo sin texto propio; además el EBITDA y el resultado impresos cierran con estos importes",
+   "evidencia": "pág. 14 del visor, .md L355",
    "autor": "Claude",
    "fecha": "2026-10-15"
   }

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2021-22.pdf",
   "club": "rioave-pt",
   "year": 2022,
-  "generatedAt": "2026-10-15T13:48:32.072Z",
+  "generatedAt": "2026-10-15T13:58:17.406Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         1.04
       ],
-      "glosa": "Derechos audiovisuales"
+      "glosa": "Derechos de televisión"
     },
     {
       "label": "Patrocinio e Publicidade",
@@ -194,7 +194,7 @@
       "values": [
         0.076119
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Outros serviços especializados",
@@ -244,7 +244,7 @@
       "values": [
         0.00375
       ],
-      "glosa": "Artículos para obsequio"
+      "glosa": "Artículos para regalo"
     },
     {
       "label": "Equipamento Desportivo",
@@ -264,7 +264,7 @@
       "values": [
         0.029259
       ],
-      "glosa": "Medicamentos y artículos sanitarios"
+      "glosa": "Medicamentos y artículos de salud"
     },
     {
       "label": "Outros materiais",
@@ -454,7 +454,7 @@
       "values": [
         0.008114
       ],
-      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
+      "glosa": "Deterioro de deudores comerciales (pérdidas/reversiones)"
     },
     {
       "label": "Quotizações/Inscrições",
@@ -464,7 +464,7 @@
       "values": [
         0.072496
       ],
-      "glosa": "Cuotas e inscripciones"
+      "glosa": "Cuotas/Inscripciones"
     },
     {
       "label": "Impostos",
@@ -494,7 +494,7 @@
       "values": [
         0.005853
       ],
-      "glosa": "Multas fiscales"
+      "glosa": "Sanciones fiscales"
     },
     {
       "label": "Abates",
@@ -504,7 +504,7 @@
       "values": [
         1.048789
       ],
-      "glosa": "Bajas de activo"
+      "glosa": "Bajas de activos"
     },
     {
       "label": "Donativos",
@@ -534,7 +534,7 @@
       "values": [
         0.29808
       ],
-      "glosa": "Inmovilizado material"
+      "glosa": "Activos fijos tangibles"
     },
     {
       "label": "Ativos intangíveis",
@@ -544,7 +544,7 @@
       "values": [
         2.5751
       ],
-      "glosa": "Inmovilizado intangible"
+      "glosa": "Activos intangibles"
     }
   ]
 }
