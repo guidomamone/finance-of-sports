@@ -1,0 +1,305 @@
+{
+ "pdf": "Clubes/Portugal/Estrela da Amadora/relatorio-contas-2021-22.pdf",
+ "md": "Clubes/Portugal/Estrela da Amadora/relatorio-contas-2021-22.md",
+ "mdSha1": "60f6cf47f88caefda365a2167de74f74e1ef6815",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T19:08:26.600Z",
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    183,
+    197
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    199,
+    216
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    241,
+    255
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    329,
+    337
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    600,
+    612
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    616,
+    624
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    646,
+    655
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    659,
+    667
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    681,
+    687
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    727,
+    733
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 18,
+   "lineas": [
+    757,
+    763
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    767,
+    779
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    785,
+    791
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 18,
+   "lineas": [
+    793,
+    798
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 19,
+   "lineas": [
+    822,
+    829
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 19,
+   "lineas": [
+    833,
+    840
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 19,
+   "lineas": [
+    844,
+    846
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    862,
+    866
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    874,
+    885
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 20,
+   "lineas": [
+    908,
+    920
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 20,
+   "lineas": [
+    928,
+    932
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    946,
+    952
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 21,
+   "lineas": [
+    970,
+    996
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 21,
+   "lineas": [
+    1002,
+    1010
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 22,
+   "lineas": [
+    1029,
+    1033
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 22,
+   "lineas": [
+    1039,
+    1045
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 22,
+   "lineas": [
+    1055,
+    1059
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 23,
+   "lineas": [
+    1077,
+    1089
+   ],
+   "tipo": "texto"
+  },
+  "b29": {
+   "pagina": 23,
+   "lineas": [
+    1100,
+    1104
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b21",
+  "b22",
+  "b27"
+ ],
+ "notas_gastos": [
+  "b23",
+  "b24",
+  "b25",
+  "b26"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra frase de escala; las notas citan importes en euros con decimales (ej. 194.440,20 euros), probablemente unidades.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Periodos: junho 22 / 2021",
+ "columna_anterior": "Periodos: junho 21 / 2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el detalle 'DETALHE - Rendimentos em Investimentos não Financeiros' (b28), que lista transferencias por jugador y otros apoios?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Rendimentos em Investimentos não Financeiros",
+   "texto": "Es un detalle por jugador/concepto de un renglón ya abierto en la nota 27 (b27).",
+   "bloques": [
+    "b28"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Las columnas '2021' y '2020' de las notas 19 a 27 corresponden a los ejercicios jun-22 y jun-21 del estado de resultados?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "Las notas rotulan las columnas con el año de inicio de la temporada (2021 = 2021/22), igual que el estado 'junho 22 / 2021'.",
+   "bloques": [
+    "b21",
+    "b22",
+    "b23",
+    "b24",
+    "b25",
+    "b26",
+    "b27"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Los importes del estado de resultados (b3) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No se ve en el índice una frase que indique la escala del estado.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados por naturezas individual (modelo reducido) en b3, pág. 7. Notas: rédito (b21), subsidios (b22), FSE (b23), personal (b24), depreciaciones (b25), otros gastos (b26), otros rendimentos (b27, título dice 'Outros gastos' por error). Columnas de notas rotuladas 2021/2020 = temporadas 2021/22 y 2020/21."
+}

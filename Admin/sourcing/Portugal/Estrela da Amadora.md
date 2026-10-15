@@ -30,3 +30,5 @@ un club recién profesionalizado).
 Encontrar el PDF de 2024/25 (existe, fue aprobado en asamblea, falta la URL exacta).
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2023 desde `Clubes/Portugal/Estrela da Amadora/relatorio-contas-2022-23.pdf` (sourceId `estreladaamadora-pt-relatorio-contas-2022-23`).

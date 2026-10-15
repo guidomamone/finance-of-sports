@@ -24,6 +24,9 @@ window.RANKINGS["pt-ligaportugal2"] = {
         sourceId:"moreirense-pt-relatorio-contas-2022-23",
         mix:[["Comercial / Sponsors",0.001],["Televisión",0.598],["Premios por competencias",0.002],["Venta de Jugadores",2.238],["Otros ingresos",2.05]],
         incluidos:[["Estadio","Otros ingresos",1]] },
+      { id:"estreladaamadora-pt", revenue:2.05, reportType:"official_balance_sheet",
+        sourceId:"estreladaamadora-pt-relatorio-contas-2022-23",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.17],["Otros ingresos",0.88]] },
     ],
   },
   2022: {

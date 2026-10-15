@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Portugal/Estrela da Amadora/relatorio-contas-2022-23.md",
+  "pdf": "Clubes/Portugal/Estrela da Amadora/relatorio-contas-2022-23.pdf",
+  "club": "estrela-da-amadora",
+  "year": 2023,
+  "generatedAt": "2026-10-15T21:55:00.882Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Vendas e serviços prestados",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        1.07693
+      ],
+      "glosa": "Ventas y prestación de servicios"
+    },
+    {
+      "label": "Subsídios à exploração",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Outros rendimentos",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.809546
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Fornecimentos e serviços externos",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        1.908991
+      ],
+      "glosa": "Servicios exteriores"
+    },
+    {
+      "label": "Gastos com pessoal",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        2.849796
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Imparidade de dívidas a receber (perdas/reversões)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
+    },
+    {
+      "label": "Outros gastos",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.003577
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Gastos/reversões de depreciação e de amortização",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.022908
+      ],
+      "glosa": "Gastos/reversiones de amortización y depreciación"
+    }
+  ]
+}

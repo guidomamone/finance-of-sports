@@ -1,0 +1,52 @@
+{
+ "pdf": "Clubes/Portugal/Estrela da Amadora/relatorio-contas-2022-23.pdf",
+ "md": "Clubes/Portugal/Estrela da Amadora/relatorio-contas-2022-23.md",
+ "mdSha1": "9567cdd0c7650ad05336b70354cd10abd0de43ef",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T19:10:14.463Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    139,
+    173
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    207,
+    223
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con decimales de céntimos (ej. 1 076 929,81), sin indicación de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "junho 23",
+ "columna_anterior": "junho 22",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se toma la columna 'junho 23' (con subencabezado '2022') como la del ejercicio que cierra el 30-06-2023?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado muestra 'junho 23' sobre '2022' y 'junho 22' sobre '2021'; el subencabezado parece indicar el año de inicio de la temporada.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo se transcribieron balance (b1) y demostração de resultados individual (b2). Las notas referidas (19, 21-27) no aparecen en el índice con cifras, por lo que no hay desgloses que elegir. No hay estado consolidado; el balance es individual."
+}

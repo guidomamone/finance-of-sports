@@ -1,0 +1,174 @@
+{
+ "pdf": "Clubes/Portugal/Estrela da Amadora/relatorio-contas-2022-23.pdf",
+ "md": "Clubes/Portugal/Estrela da Amadora/relatorio-contas-2022-23.md",
+ "mdSha1": "9567cdd0c7650ad05336b70354cd10abd0de43ef",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T19:10:34.225Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con decimales en cêntimos (ej. L211: 1 076 929,81), por lo que están en euros (unidades)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 211,
+   "etiqueta": "Vendas e serviços prestados",
+   "actual": "1 076 929,81",
+   "anterior": "976 144,80",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 212,
+   "etiqueta": "Subsídios à exploração",
+   "actual": "0,00",
+   "anterior": "137 603,65",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 213,
+   "etiqueta": "Fornecimentos e serviços externos",
+   "actual": "-1 908 990,95",
+   "anterior": "-729 886,74",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 214,
+   "etiqueta": "Gastos com pessoal",
+   "actual": "-2 849 796,24",
+   "anterior": "-1 171 402,74",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 215,
+   "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
+   "actual": "0,00",
+   "anterior": "-7 299,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 216,
+   "etiqueta": "Outros rendimentos",
+   "actual": "809 546,10",
+   "anterior": "475 881,47",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 217,
+   "etiqueta": "Outros gastos",
+   "actual": "-3 576,85",
+   "anterior": "-94 600,79",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 218,
+   "etiqueta": "Resultado antes de depreciações, gastos de financiamento e impostos",
+   "actual": "-2 875 888,13",
+   "anterior": "-413 559,35",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 219,
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "actual": "-22 907,63",
+   "anterior": "-23 131,18",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 220,
+   "etiqueta": "Resultado operacional (antes de gastos de financiamento e impostos)",
+   "actual": "-2 898 795,76",
+   "anterior": "-436 690,53",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 221,
+   "etiqueta": "Resultado antes de impostos",
+   "actual": "-2 898 795,76",
+   "anterior": "-436 690,53",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 222,
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "actual": "-6 942,94",
+   "anterior": "-13 410,26",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 223,
+   "etiqueta": "Resultado líquido do período",
+   "actual": "-2 905 738,70",
+   "anterior": "-450 100,79",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 223,
+  "actual": "-2 905 738,70",
+  "anterior": "-450 100,79"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se toma la columna 'junho 23' (que en L210 aparece rotulada '2022') como el ejercicio cerrado el 30-06-2023?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "L209 rotula las columnas 'junho 23'/'junho 22' pero L210 las rotula '2022'/'2021', probablemente por el inicio de la temporada 2022/23.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados por naturaleza (SNC). No hay notas de desglose provistas. No se imprimen totales de ingresos ni de gastos. Sin resultados financieros: el resultado operacional coincide con el resultado antes de impuestos."
+}

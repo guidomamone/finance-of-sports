@@ -1,0 +1,139 @@
+{
+ "pdf": "Clubes/Portugal/Estrela da Amadora/relatorio-contas-2022-23.pdf",
+ "md": "Clubes/Portugal/Estrela da Amadora/relatorio-contas-2022-23.md",
+ "generado": "2026-10-15T21:55:00.882Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 4.440892098500626e-16
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 1.58963 en relatorio-contas-2021-22.pdf y 1.58963 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Se toma la columna 'junho 23' (con subencabezado '2022') como la del ejercicio que cierra el 30-06-2023?",
+  "duda de extraer que no afecta la carga: L209 rotula las columnas 'junho 23'/'junho 22' pero L210 las rotula '2022'/'2021', probablemente por el inicio de la temporada 2022/23."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1.886476,
+  "gastos": 4.785272,
+  "financiero": 0,
+  "impuesto": -0.006943,
+  "resultadoImpreso": -2.905739,
+  "resultadoParaCargar": -2.905739,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Vendas e serviços prestados",
+   "lado": "ingreso",
+   "M": 1.07693,
+   "pagina": 6,
+   "linea": 211,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 6,
+   "linea": 212,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros rendimentos",
+   "lado": "ingreso",
+   "M": 0.809546,
+   "pagina": 6,
+   "linea": 216,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fornecimentos e serviços externos",
+   "lado": "gasto",
+   "M": 1.908991,
+   "pagina": 6,
+   "linea": 213,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos com pessoal",
+   "lado": "gasto",
+   "M": 2.849796,
+   "pagina": 6,
+   "linea": 214,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 6,
+   "linea": 215,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros gastos",
+   "lado": "gasto",
+   "M": 0.003577,
+   "pagina": 6,
+   "linea": 217,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "lado": "gasto",
+   "M": 0.022908,
+   "pagina": 6,
+   "linea": 219,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": -0.006943,
+   "linea": 222
+  }
+ ]
+}
