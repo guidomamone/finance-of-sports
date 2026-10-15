@@ -47,6 +47,14 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   coincide el resultado, con una pregunta a Claude sobre las filas del estado (`tools/primer-anio-ia.mjs`, la contesta `lote.mjs --ejecutar`).
 - `caja-deuda.mjs` lee cada fila con y sin la celda con forma de nota y decide la compuerta (que también confirma con el documento anterior);
   en deuda, si la nota de la fila muestra que la fila es solo una parte, propone la suma de la nota (y si pasan las dos, no decide).
+  Antes de la IA cara prueba Jev (escalón 1b, fijo en `--club`: elige la fila de caja y las de deuda sin reglas por idioma). La compuerta
+  no acepta filas que suman 0 (un 0 sale solo por "ninguna fila de deuda") ni filas con una cifra de forma imposible del OCR; en una tabla
+  con grupo y sociedad lado a lado lee las columnas del perímetro del club.
+- Costo de personal del ejercicio (`staffCost`, interno, no se muestra): `caja-deuda.mjs --personal` (Jev elige la fila de total entre los
+  documentos del mismo cierre, con la compuerta del vecino). `--partir` lo separa de una fila global de gasto como ajustes, y `audit.js`
+  avisa `sueldos-escondidos` si `wages_squad` queda por debajo de la mitad. Cargado en Volos y Panetolikos.
+- Gestiones (quién condujo cada club): `tools/gestiones-tanda.mjs` arma la tanda de subagentes desde los casos de la cola, la valida y la
+  carga (contesta los casos cubiertos). Hay una tanda armada sin correr: `Admin/gestiones-por-pais/tanda-2026-10-14-2/`.
 - De qué club y año es un PDF, y qué PDF no están cargados: `tools/quien.mjs`. El onboarding viejo (`onboard.mjs`, `prepare-onboarding.mjs`)
   está en `tools/archivo/`.
 - "Posiblemente dentro de otro rubro": una fila en "—" porque el documento no desglosa un renglón la marca `tools/dentro-de-otro.mjs` si el
@@ -73,7 +81,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 - Brasil, Italia y Rusia se cargaron por el pipeline (Rusia por su camino propio); en los documentos italianos viejos quedan ajustes
   manuales donde el script no da idéntico, y dos ejercicios (Lazio 2012-13, AS Roma 2021) llevan el ajuste `no-recargar` porque lo publicado
   es más detallado que lo que lee el script. Un ejercicio de menos de 12 meses no se carga: queda en `Admin/registros/documentos-parciales.txt` con el
-  tramo que falta. Los ejercicios de Lazio en liras (ITL) llevan su tipo de cambio de cierre y la paridad fija a euro para mostrarse en EUR.
+  tramo que falta; salvo el primer ejercicio de una sociedad nueva (sin importes del año anterior), que se carga con una nota pública
+  (Volos 2019, Kifisia 2022). Los ejercicios de Lazio en liras (ITL) llevan su tipo de cambio de cierre y la paridad fija a euro para mostrarse en EUR.
   La etiqueta y la gestión de cada ejercicio salen de su propio cierre, aunque el club haya cambiado la fecha de cierre. Un documento que no
   es del dominio (un artículo de prensa) va a `Admin/registros/documentos-descartados.txt`. Sin transcribir: rugby, tenis y entes italianos; ver
   `Admin/sourcing/Italia/_notas-generales.md`. Las federaciones entran al sitio.

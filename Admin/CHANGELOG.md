@@ -15,6 +15,22 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 695 — Mejoras de script del to-do 232, Jev en caja y deuda, dato "personal" (2026-10-14/15)
+
+- Arreglos chicos: `perimetro-senales.mjs` no escribe en carpetas que se publican; `alta-club.mjs --todos` deja en faltan-datos una carpeta
+  con todo descartado o parcial; `cargar.mjs --escribir` imprime el `git add`; `lote.mjs` avisa un documento en dos listas activas y un año
+  del club que queda afuera; `quien.mjs` marca `clubDeCarpeta`; una respuesta de perfil o de categoría cierra los casos iguales del club;
+  perfil por forma jurídica ΠΑΕ con la cita de la portada; `cargar.mjs` frena con su nombre una fila impresa sin categorizar.
+- Escalones: `periodo.mjs` detecta un primer ejercicio corto; el primer ejercicio de una sociedad nueva se carga (Kifisia 2022, nota en Volos
+  2019); `verificar.mjs` reconoce una presentación distinta en el año vecino; una etiqueta bajo dos renglones de categoría distinta se decide
+  por renglón (`mismoPadre` lee griego y cirílico).
+- `caja-deuda.mjs`: columnas de nota sin el encabezado, columnas por perímetro (Olympiacos), trampa del cero, cifras con forma imposible,
+  Jev como escalón 1b. Errores del sitio corregidos: Colo-Colo 2022-2024 (0/0 -> null), PAOK 2021 y Panetolikos 2022 (deuda), AEK 2025 (caja).
+- Dato "personal" (`staffCost`, `--personal`, `--partir`) y chequeo `sueldos-escondidos` en `audit.js`; Panetolikos 2021-2025 con los
+  sueldos separados de "Κόστος πωλήσεων". `cargar.mjs --reemplazar` conserva `staffCost`.
+- `tools/gestiones-tanda.mjs` (61 casos ya cubiertos cerrados, tanda de 10 clubes armada). Medidos y descartados: recortar el texto de
+  perimetro-a2; los colores griegos (footylogos no tiene la liga). Lotes 66 y 67 archivados. To-dos nuevos: 232 z, aa, ab, ac, ad.
+
 ## Versión 694 — Grecia cerrada; escalones de cargar-lote y caja-deuda (2026-10-14)
 
 - Gestiones de Aris, Atromitos, Kifisia, Panetolikos, PAOK y Olympiacos (tanda `Admin/gestiones-por-pais/tanda-2026-10-14/`); criterio
