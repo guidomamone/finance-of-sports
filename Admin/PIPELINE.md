@@ -649,7 +649,11 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [-
                    propuestas que suman 0 no pasan la compuerta: un 0 sale solo por "ninguna fila" (la trampa del cero). La columna con forma de nota se juzga sin el encabezado del bloque (to-do 232 x:
                    AEK 2025 transcribió "σημ." como "Α/Υ" y la columna dejaba de reconocerse). Escalón 1b (to-do 233 + 232 t): Jev propone la fila de caja (opción cerrada entre las filas del balance) y las de deuda (sí/no por fila),
                    antes de la IA cara; decide la misma compuerta. Fijo en --club; medido en todos los clubes: caja 9 de 9, deuda 5 de 7 (los 2
-                   distintos, errores del sitio), US$ 0,11. (to-do 232 v) Una celda que no puede ser importe en ningún formato tampoco es
+                   distintos, errores del sitio), US$ 0,11.
+ PERSONAL         (to-do 229 + 232 s) `caja-deuda.mjs --personal`: staffCost (costo de personal del ejercicio, interno) = la fila de total que
+                  Jev elige entre las de todos los documentos del mismo cierre, con la compuerta del vecino (medido: 9 de 9 en Volos y
+                  Panetolikos). `--partir` propone ajustes para separarlo de una fila global de gasto cuando el año no tiene wages_squad y
+                  hay UNA sola fila global >= staffCost; se aplican con verificar.mjs + cargar.mjs --reemplazar (que conserva staffCost). (to-do 232 v) Una celda que no puede ser importe en ningún formato tampoco es
                    cifra: entero con punto final ("24.") o dos o más puntos con grupos de menos de 3 cifras ("7.1.3"); Grecia: Olympiacos
                    2017 "| Ταμειακά διαθέσιμα | 24. | 1.820.725,55 |", Aris 2019 "| ... | 7.1.3 | 420.500,00 |"
  PÁGINAS DEL BALANCE  título o total del balance, y no el flujo de efectivo ni los cambios en el patrimonio (una FILA con esas palabras

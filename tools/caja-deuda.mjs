@@ -49,6 +49,8 @@
 //   node tools/caja-deuda.mjs --personal --medir [--ejecutar]                                 el dato "personal" (staffCost) contra Admin/mediciones/personal-verdad.tsv
 //   node tools/caja-deuda.mjs --personal --club <id> [--ejecutar] [--escribir]                completarlo en un club publicado
 //   node tools/caja-deuda.mjs --personal --ver-candidatos --club <id> --anio <AAAA>           las filas de total que recibiría Jev (gratis)
+//   node tools/caja-deuda.mjs --personal --club <id> --partir [--escribir]                    (229) ajustes que separan staffCost de la fila global
+//        de gasto; después verificar.mjs + cargar.mjs --reemplazar --escribir por año
 //   node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]                       COMPLETAR un club ya publicado (ver abajo)
 //
 // --club (Versión 356, decisión de Guido 2026-10-01: "dos scripts"; caja y deuda NO van en el lote, se completan con el club ya en el sitio):
@@ -990,7 +992,7 @@ function candidatosPersonal(md) {
     const primeras = []; for (let k = a; k < b && primeras.length < 3; k++) { const f = porLinea.get(k + 1); if (f && !esTotal(f.etiqueta)) primeras.push(String(f.etiqueta).slice(0, 50)); }
     for (let k = a; k < b; k++) {
       const f = porLinea.get(k + 1);
-      if (f && esTotal(f.etiqueta) && f.cifras.length) out.push({ md, linea: k + 1, etiqueta: f.etiqueta, cifras: f.cifras, contexto: [arriba.join(' '), enc && `encabezado: ${enc}`, primeras.length && `filas: ${primeras.join(' / ')}`].filter(Boolean).join(' · ').slice(0, 300) });
+      if (f && esTotal(f.etiqueta) && f.cifras.length) out.push({ md, linea: k + 1, etiqueta: f.etiqueta, cifras: f.cifras, tabla: (celdas(L[a]).find((c) => /\p{L}{3,}/u.test(c)) || '').slice(0, 80), contexto: [arriba.join(' '), enc && `encabezado: ${enc}`, primeras.length && `filas: ${primeras.join(' / ')}`].filter(Boolean).join(' · ').slice(0, 300) });
     }
     a = b;
   }
@@ -1038,9 +1040,42 @@ async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
     const antD = porAnio.get(String(Number(anio) - 1)); if (antD?.fila && antD.factor && ant != null && coincide(r6(antD.fila.cifras[0] * antD.factor), ant)) chequeos.push(['documento anterior', true]);
     const malos = chequeos.filter((c) => !c[1]); const buenos = chequeos.filter((c) => c[1]);
     if (malos.length || !buenos.length) { res.push({ ...base, valor: null, como: `${cita} (${valor}): ${malos.length ? `no coincide con ${malos.map((c) => c[0]).join(' ni ')}` : 'ningún vecino para comparar'}` }); continue; }
-    res.push({ ...base, valor, validacion: buenos[0][0], como: `Jev (confianza ${x.jev.datos?.conf ?? '?'}): ${cita}`, fila: x.fila });
+    res.push({ ...base, valor, validacion: buenos[0][0], como: `Jev (confianza ${x.jev.datos?.conf ?? '?'}): ${cita}`, fila: x.fila, factor: x.factor, md: x.a.md });
   }
   return { res, usd, ensayos };
+}
+// PARTIR LA FILA GLOBAL (to-do 229, paso 2, aprobado por Guido el 2026-10-14): lo que se hizo a mano con Volos 2021-2025, como AJUSTES (fila +
+// categoria) que después aplica cargar.mjs --reemplazar (el único que escribe filas). UNA compuerta: el año tiene staffCost confirmado por la
+// compuerta del vecino, NO tiene ninguna fila wages_squad, y tiene UNA SOLA fila global de gasto (lump_*_expense o admin_general_expense)
+// de monto >= staffCost (el resto no queda negativo). Esa fila pasa a valer el resto; una fila nueva = staffCost va a wages_squad con la cita.
+// Dos o ninguna fila global: no decide (lo dice). Caso: Panetolikos 2022, "Κόστος πωλήσεων" 5,18 M -> 3,61 M + "Σύνολο — Παροχές σε
+// εργαζόμενους" 1,566222 M (wages_squad, Panetolikos_FS_2022 L1471). Volos ya tiene wages_squad (sus ajustes a mano): no se parte.
+async function partirFilaGlobal(clubId, d, res, { escribir }) {
+  const fmt = (x) => { const [e, c] = Math.abs(x).toFixed(2).split('.'); return `${e.replace(/\B(?=(\d{3})+(?!\d))/g, '.')},${c}`; };
+  const ajustesTxt = readFileSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl'), 'utf8');
+  const cmds = [];
+  for (const x of res.filter((y) => y.valor != null && (y.real == null || coincide(y.real, y.valor)))) {
+    const ls = (d.expenseLinesByYear || {})[x.anio] || [];
+    if (ls.some((l) => l.normalizedCategory === 'wages_squad')) { console.log(`  ${x.anio} partir: ya tiene wages_squad; no se parte`); continue; }
+    const glob = ls.filter((l) => (/^lump_.*_expense$/.test(l.normalizedCategory) || l.normalizedCategory === 'admin_general_expense') && Math.abs(l.amountNative) >= x.valor);
+    if (glob.length !== 1) { console.log(`  ${x.anio} partir: ${glob.length} filas globales de gasto >= staffCost (${x.valor}); no decide`); continue; }
+    const g = glob[0]; const pdf = x.md.replace(/\.md$/i, '.pdf');
+    const v = (() => { try { return JSON.parse(readFileSync(resolve(ROOT, derivado(x.md, '.verificacion.json', { crear: false })), 'utf8')); } catch { return null; } })();
+    const lin = (v?.lineas || []).find((l) => String(l.etiqueta).trim() === String(g.rawLabel).trim())?.linea ?? null;
+    const resto = Math.abs(g.amountNative) / x.factor - x.fila.cifras[0];
+    const etiq = /\s/.test(String(x.fila.etiqueta).trim()) || !x.fila.tabla ? String(x.fila.etiqueta).trim() : `${String(x.fila.etiqueta).trim()} — ${x.fila.tabla}`;
+    const cita = `${x.fila.md.split('/').pop()} L${x.fila.linea}`;
+    if (ajustesTxt.includes(`"pdf":${JSON.stringify(pdf)}`) && ajustesTxt.includes(`"etiqueta":${JSON.stringify(etiq)}`)) { console.log(`  ${x.anio} partir: ya tiene los ajustes`); continue; }
+    console.log(`  ${x.anio} partir: "${g.rawLabel}" ${fmt(Math.abs(g.amountNative) / x.factor)} -> ${fmt(resto)} + "${etiq}" ${fmt(x.fila.cifras[0])} (wages_squad, ${cita})`);
+    const mot = `caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, ${cita}) está dentro de "${g.rawLabel}"`;
+    cmds.push([pdf, 'fila', '--valor', fmt(resto), '--etiqueta', `${g.rawLabel} (sin el costo de personal)`, '--lado', 'gasto', '--reemplaza', g.rawLabel, ...(lin ? ['--linea', String(lin)] : []), '--motivo', `${mot}: queda ${fmt(Math.abs(g.amountNative) / x.factor)} - ${fmt(x.fila.cifras[0])}`, '--evidencia', cita]);
+    cmds.push([pdf, 'fila', '--valor', fmt(x.fila.cifras[0]), '--etiqueta', etiq, '--lado', 'gasto', ...(lin ? ['--linea', String(lin)] : []), '--motivo', `${mot}: el costo de personal va aparte`, '--evidencia', cita]);
+    cmds.push([pdf, 'categoria', '--valor', 'wages_squad', '--etiqueta', etiq, '--motivo', `${mot}: costo de personal -> wages_squad`, '--evidencia', cita]);
+  }
+  if (!escribir || !cmds.length) { if (cmds.length) console.log(`\n${cmds.length / 3} año(s) para partir. Agregá --escribir (escribe los ajustes; después: node tools/cargar.mjs "<pdf>" --desde-verificacion --reemplazar --escribir por año).`); return; }
+  const { execFileSync } = await import('node:child_process');
+  for (const c of cmds) execFileSync('node', [resolve(ROOT, 'tools/ajustes.mjs'), '--agregar', ...c, '--autor', 'caja-deuda --personal'], { cwd: ROOT, stdio: 'inherit' });
+  console.log(`\nEscritos ${cmds.length} ajustes. Ahora, por año: node tools/cargar.mjs "<pdf>" --desde-verificacion --reemplazar --escribir`);
 }
 function registroDocs() {
   const m = new Map();
@@ -1065,12 +1100,13 @@ async function medirPersonal({ ejecutar = false, club = null }) {
   console.log(`\nPERSONAL: ${JSON.stringify(t)}${ensayos ? ` · JEV (ENSAYO): ${ensayos} pedido(s), ~US$ ${usd.toFixed(3)} (cota alta); agregá --ejecutar` : ` · Jev US$ ${usd.toFixed(4)}`}`);
 }
 // --personal --club <id> [--ejecutar] [--escribir]: completa staffCost donde el año no lo tiene (nunca pisa uno cargado).
-async function completarPersonal(clubId, { ejecutar = false, escribir = false }) {
+async function completarPersonal(clubId, { ejecutar = false, escribir = false, partir = false }) {
   const { G, S } = sitio(); const d = G[clubId]; if (!d) { console.log(`no existe ${clubId}`); return; }
   const r = await personalDelClub(clubId, d, S, { ejecutar, reg: registroDocs() });
   const nuevos = r.res.filter((x) => x.valor != null && x.real == null);
   for (const x of r.res) console.log(`  ${x.anio} personal: ${x.valor ?? 'null'}${x.real != null ? ` (ya cargado: ${x.real})` : ''}  (${x.validacion ? `compuerta: ${x.validacion}; ` : ''}${x.como})`);
   console.log(`\n${clubId}: ${nuevos.length} dato(s) para completar.${r.ensayos ? ` Jev en ensayo: ~US$ ${r.usd.toFixed(3)}; agregá --ejecutar.` : ''}`);
+  if (partir) return partirFilaGlobal(clubId, d, r.res, { escribir });
   if (!escribir || !nuevos.length) return;
   const { snapshot, revertir, publicarCambios } = await import('./cargar.mjs');
   const dataRel = rutaData(clubId); const dataPath = resolve(ROOT, dataRel); const evRel = EV.rutaRel(clubId);
@@ -1102,7 +1138,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     for (const c of mds.flatMap(candidatosPersonal)) console.log(`${c.md.split('/').pop()} L${c.linea}: ${String(c.etiqueta).slice(0, 60)} | ${c.cifras.slice(0, 2).join(' | ')}  (${c.contexto.slice(0, 120)})`);
     process.exit(0);
   }
-  if (A.includes('--personal')) { if (A.includes('--medir')) await medirPersonal({ ejecutar: A.includes('--ejecutar'), club: flag('--club') }); else if (flag('--club')) await completarPersonal(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir') }); process.exit(0); }
+  if (A.includes('--personal')) { if (A.includes('--medir')) await medirPersonal({ ejecutar: A.includes('--ejecutar'), club: flag('--club') }); else if (flag('--club')) await completarPersonal(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir'), partir: A.includes('--partir') }); process.exit(0); }
   if (A.includes('--medir')) { await medir({ club: flag('--club'), detalle: A.includes('--detalle'), ia: A.includes('--ia'), jev: A.includes('--jev'), escalas: A.includes('--escalas'), ejecutar: A.includes('--ejecutar') }); process.exit(0); }
   if (flag('--club')) { const r = await completarClub(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir') }); process.exit(r.error ? 1 : 0); }
   console.error('Uso: node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]  |  --medir [--club x] [--ia [--ejecutar]] [--detalle]'); process.exit(1);
