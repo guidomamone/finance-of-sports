@@ -41,6 +41,90 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2018: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2018-06-30","sourceId":"rioave-pt-relatorio-contas-2017-18"}
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Rio Ave/relatorio-contas-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Rio Ave/relatorio-contas-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bilheteira | pág. 36, Jev 1 |
+| 2 | Direitos Televisivos | pág. 36, Jev 1 |
+| 3 | Patrocinio e Publicidade | pág. 36, Jev 1 |
+| 4 | Atividades Comerciais | pág. 36, Jev 0.91 |
+| 5 | Subsídios à Exploração | pág. 14, Jev 0.99 |
+| 6 | Participação nas Competições Nacionais | pág. 38, Jev 1 |
+| 7 | Apostas Desportivas | pág. 38, Jev 0.95 |
+| 8 | Cedência de Jogadores | pág. 38, Jev 0.99 |
+| 9 | Venda de Direitos Desportivos | pág. 38, Jev 1 |
+| 10 | Indemnizações AT | pág. 38, Jev 1 |
+| 11 | Mecanismo de Solidariedade | pág. 38, precedente |
+| 12 | Outros | pág. 38, Jev 0.99 |
+| 13 | Outros Rendimentos Similares | pág. 38, Jev 0.97 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subcontratos | pág. 36, precedente |
+| 2 | Trabalhos especializados | pág. 36, Jev 0.95 |
+| 3 | Vigilância e segurança | pág. 36, Jev 0.91 |
+| 4 | Honorários | pág. 36, Jev 0.99 |
+| 5 | Comissões | pág. 36, precedente |
+| 6 | Conservação e reparação | pág. 36, Jev 0.96 |
+| 7 | Outros serviços especializados | pág. 36, precedente |
+| 8 | Ferramentas e utensílios de desgaste rápido | pág. 36, Claude 0.8 |
+| 9 | Livros e Documentação Técnica | pág. 36, Jev 0.99 |
+| 10 | Material de escritório | pág. 36, Jev 1 |
+| 11 | Artigos para oferta | pág. 36, precedente |
+| 12 | Equipamento Desportivo | pág. 36, precedente |
+| 13 | Medicamentos e Artigos de Saúde | pág. 36, Jev 0.99 |
+| 14 | Outros materiais | pág. 37, precedente |
+| 15 | Electricidade | pág. 37, Jev 0.99 |
+| 16 | Combustíveis | pág. 37, Jev 0.99 |
+| 17 | Outras energias e fluidos | pág. 37, precedente |
+| 18 | Deslocações e estadas | pág. 37, Jev 0.95 |
+| 19 | Rendas e alugueres | pág. 37, precedente |
+| 20 | Comunicação | pág. 37, Jev 1 |
+| 21 | Seguros | pág. 37, Jev 0.9 |
+| 22 | Limpeza, higiene e conforto | pág. 37, Jev 0.99 |
+| 23 | Outros serviços diversos | pág. 37, Jev 0.98 |
+| 24 | Remunerações do pessoal | pág. 37, precedente |
+| 25 | Remunerações da gerência | pág. 37, Jev 1 |
+| 26 | Indemnizações | pág. 37, precedente |
+| 27 | Encargos s/ remunerações | pág. 37, precedente |
+| 28 | Seguros de acidentes no trabalho e doenças profissionais | pág. 37, precedente |
+| 29 | Gastos Cedencias temporárias jogadores | pág. 37, precedente |
+| 30 | Mecanismo de Solidariedade | pág. 37, Jev 0.9 |
+| 31 | Outros gastos | pág. 37, Jev 0.99 |
+| 32 | Imparidade de dívidas a receber (perdas/reversões) | pág. 14, Jev 0.96 |
+| 33 | Quotizações/Inscrições | pág. 39, precedente |
+| 34 | Impostos | pág. 39, Jev 0.93 |
+| 35 | Multas e Penalidades | pág. 39, Jev 0.98 |
+| 36 | Multas Fiscais | pág. 39, precedente |
+| 37 | Abates | pág. 39, precedente |
+| 38 | Donativos | pág. 39, Jev 0.98 |
+| 39 | Outros Gastos e Perdas | pág. 39, Jev 0.97 |
+| 40 | Ativos fixos tangíveis | pág. 39, Jev 0.96 |
+| 41 | Ativos intangíveis | pág. 39, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2022-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2022-06-30
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-15): pt-ligaportugal2, verificado contra roster cacheado de "2021–22 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Rio Ave".
+```
+
 ## 2020
 
 ### Ingresos
@@ -403,4 +487,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Rio Ave/relatorio-contas-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### rioave-pt-relatorio-contas-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Rio Ave/relatorio-contas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

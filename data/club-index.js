@@ -179,7 +179,7 @@ window.CLUB_INDEX = {
   "realoviedo-es": {"n":"Real Oviedo","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "remo-br": {"n":"Remo","c":"BR","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
   "rijeka-hr": {"n":"Rijeka","c":"HR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
-  "rioave-pt": {"n":"Rio Ave","c":"PT","q":"full","y":4,"last":2020,"yrs":[[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"]]},
+  "rioave-pt": {"n":"Rio Ave","c":"PT","q":"full","y":5,"last":2022,"yrs":[[2022,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"]]},
   "river": {"n":"River Plate","c":"AR","q":"mixed","y":2,"last":2024,"yrs":[[2024,"unofficial_mirror"],[2021,"official_balance_sheet"]]},
   "rosariocentral": {"n":"Rosario Central","c":"AR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "rostov-ru": {"n":"Rostov","c":"RU","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},

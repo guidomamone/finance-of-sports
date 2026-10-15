@@ -35,3 +35,5 @@ Color de marca: #007700 — pt.wikipedia, colores del club (cor_fundo1: camiseta
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2019 desde `Clubes/Portugal/Rio Ave/relatorio-contas-2018-19.pdf` (sourceId `rioave-pt-relatorio-contas-2018-19`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2020 desde `Clubes/Portugal/Rio Ave/relatorio-contas-2019-20.pdf` (sourceId `rioave-pt-relatorio-contas-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2022 desde `Clubes/Portugal/Rio Ave/relatorio-contas-2021-22.pdf` (sourceId `rioave-pt-relatorio-contas-2021-22`).
