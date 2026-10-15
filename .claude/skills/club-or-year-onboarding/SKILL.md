@@ -35,7 +35,7 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
    arranca en la etapa 3. Ensayo: `node tools/pipeline.mjs --dir "Clubes/<País>/<Club>" --max-paginas 0 --limit 0`; Guido
    corre lo mismo con `caffeinate -i` y `--ejecutar`. `--max-paginas 0` incluye los PDFs de más de 100 páginas (sin él quedan para el
    final). El costo es el del ensayo (cuenta páginas); el de `estado.mjs` es fijo por documento y subestima los PDFs largos.
-2. Armar la lista (`Admin/lotes/lote-NN.txt`). Con un club de varios años: todos los años de la etapa más baja juntos. Un documento sin
+2. Armar la lista (`Admin/lotes/lote-NN.txt`). Club nuevo (alta): un solo ejercicio en el lote, el más reciente que traiga estado de resultados completo. Cuando el alta esté hecha y la cola de ese año contestada, el resto de los años va en el lote siguiente, donde las respuestas del primero ya sirven de precedente y no se repiten las preguntas. Club que ya está en el sitio: todos los años de la etapa más baja juntos. Un documento sin
    estado de resultados (informe del auditor, memoria sola) no va a la lista: se le propone a Guido para `Admin/registros/documentos-descartados.txt`
    (el lote los saltea) y entra ahí solo con su ok. Un balance de menos de 12 meses (le falta el otro tramo del ejercicio) tampoco va a
    la lista: va a `Admin/registros/documentos-parciales.txt` con lo que cubre y lo que falta, también con su ok. Antes de crear la lista, `ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -3` y tomar el
