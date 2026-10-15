@@ -122,7 +122,7 @@ Generados/Portugal/Moreirense/relatorio-contas-2021-22.categorias.json (escalón
 | 3 | Outros | pág. 20, precedente |
 | 4 | Subsídios à exploração | pág. 14, Jev 0.99 |
 | 5 | Rendimentos suplementares | pág. 25, Jev 0.99 |
-| 6 | Rendimentos em investimentos não financeiros | pág. 25, Jev 1 |
+| 6 | Rendimentos em investimentos não financeiros | pág. 25, precedente |
 | 7 | Outros | pág. 25, precedente |
 
 ### Gastos

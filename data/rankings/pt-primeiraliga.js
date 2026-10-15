@@ -15,7 +15,7 @@ window.RANKINGS["pt-primeiraliga"] = {
     clubs: [
       { id:"moreirense-pt", revenue:9.9, reportType:"official_balance_sheet",
         sourceId:"moreirense-pt-relatorio-contas-2021-22",
-        mix:[["Comercial / Sponsors",0.002],["Televisión",3.739],["Otros ingresos",6.159]],
+        mix:[["Comercial / Sponsors",0.002],["Televisión",3.739],["Venta de Jugadores",4.263],["Otros ingresos",1.896]],
         incluidos:[["Estadio","Otros ingresos",1]] },
     ],
   },
