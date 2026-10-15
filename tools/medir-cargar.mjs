@@ -84,7 +84,7 @@ function contraSitio(f) {
     if (!ym || !d.sourceId || ym.sourceId !== d.sourceId) continue; // no publicado, o publicado con otra fuente
     if ((d.frena || []).length) { frenados.push(`${d.pdf} (${d.clubId} ${d.year}): ${d.frenaMotivos.join(' | ')}`); continue; }
     comparados++;
-    const pub = {}; for (const l of [...(club.revenueLines?.[d.year] || []), ...(club.expenseLines?.[d.year] || [])]) pub[l.normalizedCategory] = (pub[l.normalizedCategory] || 0) + l.amountNative;
+    const pub = {}; for (const l of [...(club.revenueLinesByYear?.[d.year] || []), ...(club.expenseLinesByYear?.[d.year] || [])]) pub[l.normalizedCategory] = (pub[l.normalizedCategory] || 0) + l.amountNative;
     const ens = {}; for (const x of d.filas || []) if (x[3] === 'revenue' || x[3] === 'expense') ens[x[2]] = (ens[x[2]] || 0) + (x[6] || 0);
     const difs = [...new Set([...Object.keys(pub), ...Object.keys(ens)])].filter((k) => Math.abs((pub[k] || 0) - (ens[k] || 0)) > 0.001).map((k) => `${k} ${(pub[k] || 0).toFixed(6)} -> ${(ens[k] || 0).toFixed(6)}`);
     if (difs.length) distintos.push(`${d.pdf} (${d.clubId} ${d.year}): ${difs.join('; ')}`); else iguales++;

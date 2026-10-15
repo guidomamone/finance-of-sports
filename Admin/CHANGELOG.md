@@ -15,6 +15,23 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 699 — Tie-out con el redondeo impreso; medición del pipeline (to-do 236) (2026-10-15)
+
+- `toleranciaTieOut()` (js/finanzas-calc.js), la usan verifyTieOuts y audit.js: n renglones x media unidad impresa, mínimo 0,01. Los 3 "no
+  cierra" de Bayern por 0,1 desaparecen y se sacan de audit-ignore.json; ningún otro chequeo cambia (auditAll: 2.117 cierran, 0 no). ASSET_V 963.
+- `tools/medir-cargar.mjs --contra-sitio`. Medido: 360 de 375 años publicados con el mismo documento se reproducen exacto; distintos Goiás
+  2017 (protegido con un ajuste `categoria`: "Despesa com pessoal" de la nota del fútbol a wages_squad), Fortaleza CEIF 2020 ("Sena", decisión
+  de criterio) y Parma 2016 (0,001); 12 frenan por motivos conocidos. Registro de Grecia regenerado (21 años figuraban como no cargados).
+- Revisión de PIPELINE.md y la skill contra el código (subagente, solo lectura): Estadio en 0 eximido en 2021 por el código y no por el
+  documento; 7a/7b se aplican antes de materialidad (el documento dice después) y la etiqueta exacta del mismo club vale para todas las filas;
+  "etiqueta repetida" descrita dos veces (etapa 7 y escaleras chicas); la skill pide fijar el perímetro a mano y el lote ya lo fija por
+  señales (y la Decisión 7 choca con CONVENCIONES-DATOS); caja-deuda: el escalón 1b Jev está en "lectura de filas", falta en la escalera,
+  y también cuesta API (skill y cabecera de caja-deuda.mjs dicen que solo el 2); el ajuste manual no pasa por la compuerta y la trampa del
+  cero sí (en todos los escalones); la cascada de chequeos-gratis.mjs no está descrita; listo-para-jev con 1-4 rubros pide el resultado
+  cerrado; reglas de propagación de la cola en tres lugares; contadores fijos (12.184 PDFs, 21 monedas, 241 años, perfiles); la cabecera de
+  cargar.mjs dice que un total que cierra por redondeo frena (no frena) y que el escalón B pide 2 clubes (pide 1); la skill no menciona
+  documentos-parciales.txt. Bug: gestiones-tanda.mjs no lee los casos "club:año". Nada de esto se corrigió: espera el ok de Guido (to-do 236).
+
 ## Versión 698 — Cifras imposibles del OCR, deuda y caja sin dato en pantalla, medir-cargar (2026-10-15)
 
 - 232 ad: medido que ninguna de las 2.242 cifras con forma imposible ("13.950,790,99") de 155 transcripciones llegó a un dato publicado.
