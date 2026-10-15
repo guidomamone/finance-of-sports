@@ -165,7 +165,7 @@ Generados/Portugal/Vitória Guimarães/relatorio-contas-2023-24.categorias.json 
 | 14 | Cedencia Jogadores | pág. 56, Jev 1 |
 | 15 | Descontos pronto pagamento obtidos | pág. 56, Jev 1 |
 | 16 | Ganhos em inventarios | pág. 56, Jev 0.98 |
-| 17 | Rendimentos e ganhos em investimentos | pág. 56, Jev 1 |
+| 17 | Rendimentos e ganhos em investimentos | pág. 56, precedente |
 | 18 | Outros | pág. 56, precedente |
 
 ### Gastos

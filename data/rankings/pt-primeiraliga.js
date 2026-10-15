@@ -21,7 +21,7 @@ window.RANKINGS["pt-primeiraliga"] = {
     clubs: [
       { id:"vitoriaguimaraes-pt", revenue:23.426, reportType:"official_balance_sheet",
         sourceId:"vitoriaguimaraes-pt-relatorio-contas-2023-24",
-        mix:[["Comercial / Sponsors",3.18],["Estadio",1.928],["Televisión",7.414],["Premios por competencias",1.027],["Venta de Jugadores",1.74],["Otros ingresos",8.136]] },
+        mix:[["Comercial / Sponsors",3.18],["Estadio",1.928],["Televisión",7.414],["Premios por competencias",1.027],["Venta de Jugadores",9.175],["Otros ingresos",0.701]] },
     ],
   },
   2023: {
