@@ -1,0 +1,33 @@
+{
+ "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.pdf",
+ "generado": "2026-10-15T06:32:26.798Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (famalicao-pt)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-06-30",
+  "evidencia": {
+   "pagina": 5,
+   "texto": "|   | 30-06-2022 | 30-06-2021  |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "temporada"
+ },
+ "clubId": "famalicao-pt",
+ "year": 2022,
+ "cortadoEn": "filas"
+}

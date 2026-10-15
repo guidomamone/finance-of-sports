@@ -1,0 +1,184 @@
+{
+ "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2021-22.pdf",
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2021-22.md",
+ "mdSha1": "8804151f02ac7eaf5a6e24647f458a8c9f76dc70",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T05:37:48.236Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con dos decimales (ej. 93.570,42) sugieren euros en unidades"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 95,
+   "etiqueta": "Vendas e serviços prestados",
+   "actual": "93.570,42",
+   "anterior": "14.065,04",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 96,
+   "etiqueta": "Subsídios à exploração",
+   "actual": "37.669,00",
+   "anterior": "1.000,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 97,
+   "etiqueta": "Fornecimentos e serviços externos",
+   "actual": "-580.142,50",
+   "anterior": "-171.023,98",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 98,
+   "etiqueta": "Gastos com pessoal",
+   "actual": "-1.898.159,36",
+   "anterior": "-837.410,66",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 99,
+   "etiqueta": "Provisões (aumentos/reduções)",
+   "actual": "0,00",
+   "anterior": "-30.000,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 100,
+   "etiqueta": "Outros rendimentos",
+   "actual": "21.060,12",
+   "anterior": "140.237,21",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 101,
+   "etiqueta": "Outros gastos",
+   "actual": "-41.036,61",
+   "anterior": "-10.589,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 102,
+   "etiqueta": "Resultado antes de depreciações, gastos de financiamento e impostos",
+   "actual": "-2.367.038,93",
+   "anterior": "-893.721,39",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 103,
+   "etiqueta": "Gastos / reversões de depreciação e de amortização",
+   "actual": "-31.442,17",
+   "anterior": "-9.999,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 104,
+   "etiqueta": "Resultado operacional (antes de gastos de financiamento e impostos)",
+   "actual": "-2.398.481,10",
+   "anterior": "-903.720,39",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 105,
+   "etiqueta": "Gastos de financiamento (líquidos)",
+   "actual": "-11.537,48",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 106,
+   "etiqueta": "Resultado antes de impostos",
+   "actual": "-2.410.018,58",
+   "anterior": "-903.720,39",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 107,
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "actual": "-6.458,11",
+   "anterior": "-477,96",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 108,
+   "etiqueta": "Resultado líquido do período",
+   "actual": "-2.416.476,69",
+   "anterior": "-904.198,35",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 108,
+  "actual": "-2.416.476,69",
+  "anterior": "-904.198,35"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que los importes del estado (L95-L108) están en euros sin escala (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b3 no imprime la escala; los dos decimales sugieren unidades (L93).",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados por naturaleza, sin notas de desglose. No hay totales de ingresos ni gastos impresos. La columna '2021' corresponde al período cerrado el 30-06-2022 según lo indicado."
+}

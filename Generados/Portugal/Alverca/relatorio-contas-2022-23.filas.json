@@ -1,0 +1,162 @@
+{
+ "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf",
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.md",
+ "mdSha1": "0b686defb94b00a4cc2bb49cea926f8fbc4eeae1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T05:38:19.057Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L89: Unidade Monetária, euro"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 94,
+   "etiqueta": "Vendas e serviços prestados",
+   "actual": "63.877,53",
+   "anterior": "93.570,42",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 95,
+   "etiqueta": "Subsídios a exploração",
+   "actual": "54.881,93",
+   "anterior": "37.669,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 96,
+   "etiqueta": "Fornecimentos e serviços externos",
+   "actual": "(1.441.895,21)",
+   "anterior": "(580.142,50)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 97,
+   "etiqueta": "Gastos com o pessoal",
+   "actual": "(2.575.619,76)",
+   "anterior": "(1.898.159,36)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 98,
+   "etiqueta": "Outros rendimentos",
+   "actual": "708.548,25",
+   "anterior": "21.060,12",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 99,
+   "etiqueta": "Outros gastos",
+   "actual": "(38.683,83)",
+   "anterior": "(52.574,09)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 100,
+   "etiqueta": "Resultado antes de depreciações, gastos de financiamentos e impostos",
+   "actual": "(3.228.891,09)",
+   "anterior": "(2.378.576,41)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 101,
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "actual": "(20.295,45)",
+   "anterior": "(31.442,17)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 102,
+   "etiqueta": "Resultado operacional (antes de gastos de financiamento e impostos)",
+   "actual": "(3.249.186,54)",
+   "anterior": "(2.410.018,58)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 103,
+   "etiqueta": "Juros e gastos similares suportados",
+   "actual": "(28,58)",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 104,
+   "etiqueta": "Resultado antes de impostos",
+   "actual": "(3.249.215,12)",
+   "anterior": "(2.410.018,58)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 105,
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "actual": "(7.798,48)",
+   "anterior": "(6.458,11)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 106,
+   "etiqueta": "Resultado líquido do período",
+   "actual": "(3.257.013,60)",
+   "anterior": "(2.416.476,69)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 106,
+  "actual": "(3.257.013,60)",
+  "anterior": "(2.416.476,69)"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados por naturaleza en euros (unidades). No se imprimen totales de ingresos ni de gastos; se resuelven sumando. No hay notas de desglose."
+}

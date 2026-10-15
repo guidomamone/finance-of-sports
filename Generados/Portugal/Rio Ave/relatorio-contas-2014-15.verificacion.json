@@ -1,0 +1,277 @@
+{
+ "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2014-15.pdf",
+ "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2014-15.md",
+ "generado": "2026-10-15T06:24:32.341Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2015,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2014-15.pdf",
+   "campo": "cierre",
+   "valor": "2015-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2015-06-30",
+   "evidencia": "relatorio-contas-2014-15.md L243 (PERÍODO FINDO EM 30 DE JUNHO DE 2015)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "193c8cd",
+  "755e2ca"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "0.827038 = 0.827038",
+   "suma": 0.8270377099999999,
+   "impreso": 0.8270377099999999
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "0.756744 = 0.763822",
+   "suma": 0.7567443899999999,
+   "impreso": 0.7638224499999999
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 6.938893903907228e-18
+  },
+  {
+   "nombre": "documento del año 2016",
+   "ok": false,
+   "detalle": "ingresos de 2015: 0.827038 en este documento y 6.954742 en relatorio-contas-2015-16.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Imparidade de dívidas a receber (perdas/reversões)\" no suma el renglón (0 contra 0.033945, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar confirmada por las sumas aunque un año vecino da distinto (escalón 2b; usar-cuadro-por-segmento, \"-\"): ¿Se usa la columna 'G e r a l' de las Contas de Exploração (b5, b6) como desglose de los renglones del estado de resultados b4?",
+  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"-\"): ¿Se cargan de las notas b5/b6 solo los importes de la columna 'G e r a l' (L304/L362), dejando afuera 'Dep. Juvenil' y 'Dep. Futsal'?",
+  "duda de extraer que no afecta la carga: L387 247.150,70 + L400 123,86 = 247.274,56 de L263, y L269 no tiene importe en 2015.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Imparidade de dívidas a receber (perdas/reversões)",
+   "suma": 0,
+   "objetivo": 0.033945
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Imparidade de dívidas a receber (perdas/reversões)",
+   "suma": 0,
+   "objetivo": 0.033945
+  }
+ ],
+ "totales": {
+  "ingresos": 0.827038,
+  "gastos": 0.756744,
+  "financiero": -0.007078,
+  "impuesto": -0.003193,
+  "resultadoImpreso": 0.060022,
+  "resultadoParaCargar": 0.060022,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "**VENDAS**",
+   "lado": "ingreso",
+   "M": 0.028877,
+   "pagina": 14,
+   "linea": 365,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\""
+  },
+  {
+   "etiqueta": "**PRESTAÇÕES DE SERVIÇOS**",
+   "lado": "ingreso",
+   "M": 0.267856,
+   "pagina": 14,
+   "linea": 367,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\""
+  },
+  {
+   "etiqueta": "EOEP - Autarquia",
+   "lado": "ingreso",
+   "M": 0.17162,
+   "pagina": 14,
+   "linea": 381,
+   "origen": "nota que desglosa \"Subsídios à Exploração\""
+  },
+  {
+   "etiqueta": "AFP / FPF / LIGA",
+   "lado": "ingreso",
+   "M": 0.009355,
+   "pagina": 14,
+   "linea": 382,
+   "origen": "nota que desglosa \"Subsídios à Exploração\""
+  },
+  {
+   "etiqueta": "Subsídios de outros",
+   "lado": "ingreso",
+   "M": 0.102054,
+   "pagina": 14,
+   "linea": 383,
+   "origen": "nota que desglosa \"Subsídios à Exploração\""
+  },
+  {
+   "etiqueta": "**OUTROS RENDIMENTOS E GANHOS**",
+   "lado": "ingreso",
+   "M": 0.247151,
+   "pagina": 14,
+   "linea": 387,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "**RENDIMENTOS E GANHOS DE FINANCIAMENTOS**",
+   "lado": "financiero",
+   "M": 0.000124,
+   "pagina": 14,
+   "linea": 400,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "gasto",
+   "M": 0.026292,
+   "pagina": 11,
+   "linea": 255,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fornecimentos e serviços externos",
+   "lado": "gasto",
+   "M": 0.253651,
+   "pagina": 11,
+   "linea": 256,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos com o pessoal",
+   "lado": "gasto",
+   "M": 0.083757,
+   "pagina": 11,
+   "linea": 257,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": "gasto",
+   "M": 0.033945,
+   "pagina": 11,
+   "linea": 259,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "IVA, IMI, IUC, Selo, Taxas . . .",
+   "lado": "gasto",
+   "M": 0.006181,
+   "pagina": 13,
+   "linea": 343,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Correcções relat. exerc. anteriores",
+   "lado": "gasto",
+   "M": 0.011269,
+   "pagina": 13,
+   "linea": 344,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "LIGA / AFP / FPF - inscrições,quotas, etc.",
+   "lado": "gasto",
+   "M": 0.012331,
+   "pagina": 13,
+   "linea": 345,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Diversos",
+   "lado": "gasto",
+   "M": 0.031658,
+   "pagina": 13,
+   "linea": 346,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Gastos / reversões de depreciação e de amortização",
+   "lado": "gasto",
+   "M": 0.29766,
+   "pagina": 11,
+   "linea": 266,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e gastos similares suportados",
+   "M": -0.007078,
+   "linea": 270
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": -0.003193,
+   "linea": 272
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "5b1876ee8eff984f169947491d0581cb7b2ebe67",
+  "rango": [
+   247,
+   276
+  ],
+  "lineasCargadas": [
+   365,
+   367,
+   381,
+   382,
+   383,
+   387,
+   400,
+   255,
+   256,
+   257,
+   259,
+   343,
+   344,
+   345,
+   346,
+   266,
+   270,
+   272
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 247 a 276 del .md):\nL247: |  RENDIMENTOS E GASTOS | NOTAS | Períodos  |   |\nL248: | --- | --- | --- | --- |\nL249: |   |   |  01/07/2014 a 30/06/2015 | 01/07/2013 a 30/06/2014  |\nL250: |  Vendas e prestações de serviços | 11.1 | 296.733,30 € | 317.490,59 €  |\nL251: |  Subsídios à Exploração | 11.1 | 283.029,85 € | 354.837,40 €  |\nL252: |  Ganhos/perdas imputadas de subsidiárias, associadas e empreend. conjuntos |  |  |   |\nL253: |  Variação nos inventários da produção |  |  |   |\nL254: |  Trabalhos para a própria entidade |  |  |   |\nL255: |  Custo das mercadorias vendidas e das matérias consumidas | 10 | -26.292,06 € | -43.979,76 €  |\nL256: |  Fornecimentos e serviços externos | 17.2 | -253.651,49 € | -566.123,86 €  |\nL257: |  Gastos com o pessoal | 16.1 | -83.757,21 € | -215.149,00 €  |\nL258: |  Imparidade de inventários (perdas/reversões) |  |  |   |\nL259: |  Imparidade de dívidas a receber (perdas/reversões) | 9 | -33.945,05 € | 615,00 €  |\nL260: |  Provisões (aumentos/reduções) |  |  |   |\nL261: |  Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões) |  |  |   |\nL262: |  Aumentos/reduções de justo valor |  |  |   |\nL263: |  Outros rendimentos e ganhos | 11.2 | 247.274,56 € | 623.005,98 €  |\nL264: |  Outros gastos e perdas | 17.5 | -61.438,11 € | -90.354,02 €  |\nL265: |  *Resultado antes de depreciações, gastos de financiamentos e impostos* |  | 367.953,79 € | 380.342,33 €  |\nL266: |  Gastos / reversões de depreciação e de amortização | 17.3 | -297.660,47 € | -344.430,46 €  |\nL267: |  Imparidade de investimentos depreciáveis / amortizáveis (perdas / reversões) |  |  |   |\nL268: |  *Resultado operacional (antes de gastos de financiamento e impostos)* |  | 70.293,32 € | 35.911,87 €  |\nL269: |  Juros e rendimentos similares obtidos | 11.2 |  | 859,61 €  |\nL270: |  Juros e gastos similares suportados | 17.4 | -7.078,06 € | -14.587,52 €  |\nL271: |  *Resultados antes de impostos* |  | 63.215,26 € | 22.183,96 €  |\nL272: |  Imposto sobre o rendimento do período | 19 | -3.192,80 € | -1.869,30 €  |\nL273: |  Resultado líquido do período | 14 | 60.022,46 € | 20.314,66 €  |\nL274: |  Resultado das actividades descontinuadas (líquido de impostos) incluído no resultado líquido do período |  |  |   |\nL275: |  Resultado líquido do período atribuível a: (2) |  |  |   |\nL276: |  Detentores do capital da empresa-mãe |  |  |   |\n\nLO QUE SE CARGA:\n- ingreso · \"**VENDAS**\" · 0.028877 · L365 (de una nota)\n- ingreso · \"**PRESTAÇÕES DE SERVIÇOS**\" · 0.267856 · L367 (de una nota)\n- ingreso · \"EOEP - Autarquia\" · 0.17162 · L381 (de una nota)\n- ingreso · \"AFP / FPF / LIGA\" · 0.009355 · L382 (de una nota)\n- ingreso · \"Subsídios de outros\" · 0.102054 · L383 (de una nota)\n- ingreso · \"**OUTROS RENDIMENTOS E GANHOS**\" · 0.247151 · L387 (de una nota)\n- ingreso · \"**RENDIMENTOS E GANHOS DE FINANCIAMENTOS**\" · 0.000124 · L400 (de una nota)\n- gasto · \"Custo das mercadorias vendidas e das matérias consumidas\" · 0.026292 · L255\n- gasto · \"Fornecimentos e serviços externos\" · 0.253651 · L256\n- gasto · \"Gastos com o pessoal\" · 0.083757 · L257\n- gasto · \"Imparidade de dívidas a receber (perdas/reversões)\" · 0.033945 · L259\n- gasto · \"IVA, IMI, IUC, Selo, Taxas . . .\" · 0.006181 · L343 (de una nota)\n- gasto · \"Correcções relat. exerc. anteriores\" · 0.011269 · L344 (de una nota)\n- gasto · \"LIGA / AFP / FPF - inscrições,quotas, etc.\" · 0.012331 · L345 (de una nota)\n- gasto · \"Diversos\" · 0.031658 · L346 (de una nota)\n- gasto · \"Gastos / reversões de depreciação e de amortização\" · 0.29766 · L266\n- financiero · \"Juros e gastos similares suportados\" · -0.007078 · L270\n- impuesto · \"Imposto sobre o rendimento do período\" · -0.003193 · L272"
+ }
+}

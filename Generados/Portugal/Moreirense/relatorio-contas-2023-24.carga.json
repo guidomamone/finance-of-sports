@@ -1,0 +1,37 @@
+{
+ "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2023-24.pdf",
+ "generado": "2026-10-15T06:32:27.253Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (moreirense-pt)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Portugal/Moreirense/relatorio-contas-2023-24.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2024-06-30",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-09): Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2024-06-30"
+ },
+ "clubId": "moreirense-pt",
+ "year": 2024,
+ "cortadoEn": "filas"
+}

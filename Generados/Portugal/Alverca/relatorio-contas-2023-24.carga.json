@@ -1,0 +1,33 @@
+{
+ "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
+ "generado": "2026-10-15T06:32:26.659Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (alverca-pt)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 9 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2024-06-30",
+  "evidencia": {
+   "pagina": 9,
+   "texto": "| RUBRICAS | NOTAS | 30/06/2024 | 30/06/2023 |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "temporada"
+ },
+ "clubId": "alverca-pt",
+ "year": 2024,
+ "cortadoEn": "filas"
+}

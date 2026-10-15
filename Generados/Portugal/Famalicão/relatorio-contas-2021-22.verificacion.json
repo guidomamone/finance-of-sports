@@ -1,0 +1,329 @@
+{
+ "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.pdf",
+ "md": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.md",
+ "generado": "2026-10-15T06:24:11.357Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "8949b02",
+  "e007d6f",
+  "7929a06"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.004579209999992173
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b1 y b2 son cuadros resumen del relatório de gestão que reagrupan renglones del estado b10 y de sus notas.",
+  "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"Vendas e serviços prestados\"): ¿Se cargan solo las columnas 'Total' de la nota de vendas (L1216-L1226) y no las de Mercado Interno/Externo?",
+  "duda de extraer que no afecta la carga: La diferencia 312,03 es la pérdida en subsidiárias (L1327) que en el estado se presenta en L531; solo afecta año anterior."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 10.86323,
+  "gastos": 18.145301,
+  "financiero": -2.067547,
+  "impuesto": -0.057691,
+  "resultadoImpreso": -9.40273,
+  "resultadoParaCargar": -9.40273,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Vendas de mercadorias",
+   "lado": "ingreso",
+   "M": 0.154177,
+   "pagina": 32,
+   "linea": 1216,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Ingressos",
+   "lado": "ingreso",
+   "M": 0.17565,
+   "pagina": 32,
+   "linea": 1218,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Competições",
+   "lado": "ingreso",
+   "M": 0.15935,
+   "pagina": 32,
+   "linea": 1219,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Publicidade",
+   "lado": "ingreso",
+   "M": 0.389362,
+   "pagina": 32,
+   "linea": 1220,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Patrocinios",
+   "lado": "ingreso",
+   "M": 0.267143,
+   "pagina": 32,
+   "linea": 1221,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Direitos Clube",
+   "lado": "ingreso",
+   "M": 3.6,
+   "pagina": 32,
+   "linea": 1222,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Apostas desportivas",
+   "lado": "ingreso",
+   "M": 0.347894,
+   "pagina": 32,
+   "linea": 1223,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Outras receitas desportivas",
+   "lado": "ingreso",
+   "M": 0.460113,
+   "pagina": 32,
+   "linea": 1224,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0.167736,
+   "pagina": 18,
+   "linea": 530,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros rendimentos",
+   "lado": "ingreso",
+   "M": 5.141805,
+   "pagina": 18,
+   "linea": 537,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custo das mercadorias vendidas",
+   "lado": "gasto",
+   "M": 0.109644,
+   "pagina": 18,
+   "linea": 532,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Serviços especializados",
+   "lado": "gasto",
+   "M": 1.028339,
+   "pagina": 33,
+   "linea": 1266,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Materiais",
+   "lado": "gasto",
+   "M": 0.724745,
+   "pagina": 33,
+   "linea": 1267,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Energia e fluidos",
+   "lado": "gasto",
+   "M": 0.125474,
+   "pagina": 33,
+   "linea": 1268,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Deslocações, estadas e transportes",
+   "lado": "gasto",
+   "M": 0.469293,
+   "pagina": 33,
+   "linea": 1269,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Rendas e alugueres",
+   "lado": "gasto",
+   "M": 0.521427,
+   "pagina": 33,
+   "linea": 1271,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\""
+  },
+  {
+   "etiqueta": "Limpeza, Higiene e conforto",
+   "lado": "gasto",
+   "M": 0.035165,
+   "pagina": 33,
+   "linea": 1272,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.0759,
+   "pagina": 33,
+   "linea": 1273,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\""
+  },
+  {
+   "etiqueta": "Remunerações do pessoal",
+   "lado": "gasto",
+   "M": 10.029738,
+   "pagina": 34,
+   "linea": 1299,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Indemnizações",
+   "lado": "gasto",
+   "M": 1.010529,
+   "pagina": 34,
+   "linea": 1300,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Encargos sobre remunerações",
+   "lado": "gasto",
+   "M": 0.831429,
+   "pagina": 34,
+   "linea": 1301,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 1.120376,
+   "pagina": 34,
+   "linea": 1302,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Gastos de ação social",
+   "lado": "gasto",
+   "M": 0.076881,
+   "pagina": 34,
+   "linea": 1303,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Outros gastos com pessoal",
+   "lado": "gasto",
+   "M": 0.502903,
+   "pagina": 34,
+   "linea": 1304,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": "gasto",
+   "M": 0.00041,
+   "pagina": 18,
+   "linea": 535,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Provisões (aumentos/reduções)",
+   "lado": "gasto",
+   "M": 0.0351,
+   "pagina": 18,
+   "linea": 536,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos",
+   "lado": "gasto",
+   "M": 0.006895,
+   "pagina": 34,
+   "linea": 1325,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Descontos de pronto pagamento concedidos",
+   "lado": "gasto",
+   "M": 0.00003,
+   "pagina": 34,
+   "linea": 1326,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Gastos e perdas em inv. não financeiros",
+   "lado": "gasto",
+   "M": 0.087186,
+   "pagina": 34,
+   "linea": 1328,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Outros gastos e perdas",
+   "lado": "gasto",
+   "M": 0.119427,
+   "pagina": 34,
+   "linea": 1329,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "lado": "gasto",
+   "M": 1.23441,
+   "pagina": 18,
+   "linea": 540,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e gastos similares suportados",
+   "M": -2.067547,
+   "linea": 542
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": -0.057691,
+   "linea": 544
+  }
+ ]
+}

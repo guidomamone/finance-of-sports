@@ -1,0 +1,290 @@
+{
+ "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.pdf",
+ "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.md",
+ "mdSha1": "83d9b5bcf18973972874943383484951f4cbe151",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T06:04:55.373Z",
+ "bloques": {
+  "b1": {
+   "pagina": 11,
+   "lineas": [
+    248,
+    282
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 12,
+   "lineas": [
+    307,
+    358
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    385,
+    427
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    445,
+    465
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    488,
+    509
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 20,
+   "lineas": [
+    670,
+    677
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 26,
+   "lineas": [
+    900,
+    905
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 27,
+   "lineas": [
+    920,
+    942
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 27,
+   "lineas": [
+    945,
+    967
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 28,
+   "lineas": [
+    983,
+    1014
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 29,
+   "lineas": [
+    1032,
+    1038
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 29,
+   "lineas": [
+    1046,
+    1053
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 29,
+   "lineas": [
+    1061,
+    1067
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 30,
+   "lineas": [
+    1085,
+    1097
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 30,
+   "lineas": [
+    1109,
+    1119
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 31,
+   "lineas": [
+    1147,
+    1157
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 32,
+   "lineas": [
+    1173,
+    1177
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 32,
+   "lineas": [
+    1185,
+    1193
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 32,
+   "lineas": [
+    1197,
+    1204
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 33,
+   "lineas": [
+    1220,
+    1229
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 33,
+   "lineas": [
+    1235,
+    1243
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 33,
+   "lineas": [
+    1249,
+    1259
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 34,
+   "lineas": [
+    1275,
+    1280
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 34,
+   "lineas": [
+    1288,
+    1312
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 35,
+   "lineas": [
+    1328,
+    1337
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 35,
+   "lineas": [
+    1343,
+    1347
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 35,
+   "lineas": [
+    1355,
+    1361
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 36,
+   "lineas": [
+    1377,
+    1386
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 36,
+   "lineas": [
+    1394,
+    1404
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 36,
+   "lineas": [
+    1412,
+    1423
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 37,
+   "lineas": [
+    1439,
+    1443
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 37,
+   "lineas": [
+    1455,
+    1477
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b22",
+  "b23",
+  "b28"
+ ],
+ "notas_gastos": [
+  "b24",
+  "b25",
+  "b29",
+  "b30",
+  "b31"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes en euros con céntimos en el estado (ej. 3 747 893,02 €); notas '(Valores em euros)'",
+ "moneda": "EUR",
+ "columna_ejercicio": "ÉPOCA 16-17",
+ "columna_anterior": "ÉPOCA 15-16",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado individual de Rio Ave F.C. – Futebol SDUQ (demostración de resultados por naturalezas, b1). Gastos impresos en positivo; se restan. b27 es movimiento de imparidad (saldo), no desglose de gasto; b32 es conciliación de impuesto, excluida."
+}

@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2014-15.md",
+ "clave": "5b1876ee8eff984f169947491d0581cb7b2ebe67",
+ "generado": "2026-10-15T06:24:27.244Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "No encontré problemas. Las notas que se cargan reemplazan bien a sus renglones del estado: ventas más prestaciones suman 296.733 (L250), los subsidios suman 283.030 (L251) y los cuatro conceptos de otros gastos suman 61.439 (L264). Los otros rendimentos de la nota (247.151) más los rendimentos de financiamientos (124) dan 247.275, que coincide con L263. La línea de intereses obtenidos (L269) está vacía en 2015, así que esos 124 no se cargan dos veces."
+ }
+}

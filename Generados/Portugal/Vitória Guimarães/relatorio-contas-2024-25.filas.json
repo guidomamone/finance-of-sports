@@ -1,0 +1,1236 @@
+{
+ "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.pdf",
+ "md": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.md",
+ "mdSha1": "75e3e61ab5586ed18ba72d32a7a8a15e81b6f039",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T06:22:40.852Z",
+ "ubicacion": {
+  "estado": [
+   "b9"
+  ],
+  "notas_ingresos": [
+   "b41",
+   "b42",
+   "b43",
+   "b47",
+   "b48"
+  ],
+  "notas_gastos": [
+   "b22",
+   "b44",
+   "b46",
+   "b49",
+   "b50",
+   "b51",
+   "b52",
+   "b53"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "Importes con céntimos y símbolo €, ej. '22 584 986,98 €' (L728)"
+  },
+  {
+   "bloque": "b41",
+   "escala": "unidades",
+   "evidencia": "'947 278,68 €' (L1808)"
+  },
+  {
+   "bloque": "b42",
+   "escala": "unidades",
+   "evidencia": "'2 438 222,32 €' (L1818)"
+  },
+  {
+   "bloque": "b43",
+   "escala": "unidades",
+   "evidencia": "'17 110,90 €' (L1834)"
+  },
+  {
+   "bloque": "b47",
+   "escala": "unidades",
+   "evidencia": "'1 849 702,19 €' (L1969)"
+  },
+  {
+   "bloque": "b48",
+   "escala": "unidades",
+   "evidencia": "'48 890,48 €' (L1982)"
+  },
+  {
+   "bloque": "b22",
+   "escala": "unidades",
+   "evidencia": "'699 182,03 €' (L1396)"
+  },
+  {
+   "bloque": "b44",
+   "escala": "unidades",
+   "evidencia": "'10 032 689,77 €' (L1892)"
+  },
+  {
+   "bloque": "b46",
+   "escala": "unidades",
+   "evidencia": "'20 526 757,64 €' (L1947)"
+  },
+  {
+   "bloque": "b49",
+   "escala": "unidades",
+   "evidencia": "'1 520 697,27 €' (L2007)"
+  },
+  {
+   "bloque": "b50",
+   "escala": "unidades",
+   "evidencia": "'727 999,74 €' (L2035)"
+  },
+  {
+   "bloque": "b51",
+   "escala": "unidades",
+   "evidencia": "'4 813 431,72 €' (L2043)"
+  },
+  {
+   "bloque": "b52",
+   "escala": "unidades",
+   "evidencia": "'-58 483,75 €' (L2052)"
+  },
+  {
+   "bloque": "b53",
+   "escala": "unidades",
+   "evidencia": "'-5 006 964,58 €' (L2079)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b9",
+   "linea": 728,
+   "etiqueta": "Vendas e serviços prestados",
+   "actual": "22 584 986,98 €",
+   "anterior": "12 900 964,71 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 729,
+   "etiqueta": "Subsidios à exploração",
+   "actual": "48 543,76 €",
+   "anterior": "106 373,03 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 730,
+   "etiqueta": "Custo das mercadorias vendidas e das matérias consumidas",
+   "actual": "-654 101,94 €",
+   "anterior": "-479 516,97 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 731,
+   "etiqueta": "Fornecimentos e serviços externos",
+   "actual": "-10 032 689,77 €",
+   "anterior": "-7 628 895,82 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 732,
+   "etiqueta": "Gastos com o pessoal",
+   "actual": "-20 526 757,64 €",
+   "anterior": "-16 946 060,23 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 733,
+   "etiqueta": "Imparidade de dívidas a receber",
+   "actual": "-58 483,75 €",
+   "anterior": "-91 401,80 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 734,
+   "etiqueta": "Imparidade de inventarios",
+   "actual": "",
+   "anterior": "-74 070,93 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 735,
+   "etiqueta": "Provisões (aumentos/reduções)",
+   "actual": "",
+   "anterior": "-57 515,46 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 736,
+   "etiqueta": "Outros rendimentos e ganhos",
+   "actual": "28 817 436,63 €",
+   "anterior": "8 865 536,48 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 737,
+   "etiqueta": "Outros gastos e perdas",
+   "actual": "-1 520 697,27 €",
+   "anterior": "-2 863 468,66 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 738,
+   "etiqueta": "Resultado antes de depreciações, gastos de financiamento e impostos",
+   "actual": "18 658 237,00 €",
+   "anterior": "-6 268 055,65 €",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 739,
+   "etiqueta": "Gastos/reversões de depreciação e amortização",
+   "actual": "-5 541 431,46 €",
+   "anterior": "-4 672 920,66 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 740,
+   "etiqueta": "Resultado operacional (antes de gastos de financiamento e impostos)",
+   "actual": "13 116 805,54 €",
+   "anterior": "-10 940 976,31 €",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 741,
+   "etiqueta": "Juros e rendimentos similares obtidos",
+   "actual": "3 702,31 €",
+   "anterior": "47 844,89 €",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 742,
+   "etiqueta": "Juros e gastos similares suportados",
+   "actual": "-5 006 964,58 €",
+   "anterior": "-3 741 936,06 €",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 743,
+   "etiqueta": "Resultado antes de impostos",
+   "actual": "8 113 543,27 €",
+   "anterior": "-14 635 067,48 €",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 744,
+   "etiqueta": "Imposto sobre o rendimentos do período",
+   "actual": "-503 223,98 €",
+   "anterior": "-88 399,71 €",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 745,
+   "etiqueta": "Resultado líquido do período",
+   "actual": "7 610 319,29 €",
+   "anterior": "-14 723 467,19 €",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b41",
+   "linea": 1808,
+   "etiqueta": "Venda de mercadorias",
+   "actual": "947 278,68 €",
+   "anterior": "962 232,70 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e serviços prestados"
+  },
+  {
+   "bloque": "b41",
+   "linea": 1809,
+   "etiqueta": "Prestação de serviços",
+   "actual": "21 637 708,30 €",
+   "anterior": "11 938 732,01 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e serviços prestados"
+  },
+  {
+   "bloque": "b41",
+   "linea": 1810,
+   "etiqueta": "Total",
+   "actual": "22 584 986,98 €",
+   "anterior": "12 900 964,71 €",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e serviços prestados"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1818,
+   "etiqueta": "Bilheteira/Quotização/Pack Socio",
+   "actual": "2 438 222,32 €",
+   "anterior": "1 800 042,92 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Prestação de serviços"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1819,
+   "etiqueta": "Premios competições nacionais e UEFA",
+   "actual": "9 720 482,37 €",
+   "anterior": "959 332,30 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Prestação de serviços"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1820,
+   "etiqueta": "Publicidade/Patrocinios",
+   "actual": "2 009 296,05 €",
+   "anterior": "2 007 125,53 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Prestação de serviços"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1821,
+   "etiqueta": "Direitos Televisivos",
+   "actual": "6 922 619,04 €",
+   "anterior": "6 922 619,12 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Prestação de serviços"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1822,
+   "etiqueta": "Mecanismo Solidariedade",
+   "actual": "516 935,63 €",
+   "anterior": "202 357,13 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Prestação de serviços"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1823,
+   "etiqueta": "Outros",
+   "actual": "30 152,89 €",
+   "anterior": "47 255,01 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Prestação de serviços"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1824,
+   "etiqueta": "Total",
+   "actual": "21 637 708,30 €",
+   "anterior": "11 938 732,01 €",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Prestação de serviços"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1834,
+   "etiqueta": "Federação Portuguesa de Futebol",
+   "actual": "17 110,90 €",
+   "anterior": "21 515,70 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Subsidios à exploração"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1836,
+   "etiqueta": "Liga Portuguesa Futebol",
+   "actual": "",
+   "anterior": "29 957,89 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Subsidios à exploração"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1837,
+   "etiqueta": "Outras Entidades (IEFP)",
+   "actual": "31 432,86 €",
+   "anterior": "54 899,44 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Subsidios à exploração"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1838,
+   "etiqueta": "Total",
+   "actual": "48 543,76 €",
+   "anterior": "106 373,03 €",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Subsidios à exploração"
+  },
+  {
+   "bloque": "b47",
+   "linea": 1969,
+   "etiqueta": "Rendimentos suplementares",
+   "actual": "1 849 702,19 €",
+   "anterior": "1 856 420,79 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos e ganhos"
+  },
+  {
+   "bloque": "b47",
+   "linea": 1970,
+   "etiqueta": "Descontos pronto pagamento obtidos",
+   "actual": "61 200,54 €",
+   "anterior": "403,93 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos e ganhos"
+  },
+  {
+   "bloque": "b47",
+   "linea": 1971,
+   "etiqueta": "Ganhos em inventarios",
+   "actual": "2 821,37 €",
+   "anterior": "25 788,51 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos e ganhos"
+  },
+  {
+   "bloque": "b47",
+   "linea": 1972,
+   "etiqueta": "Rendimentos e ganhos em investimentos",
+   "actual": "26 837 199,30 €",
+   "anterior": "6 941 963,42 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos e ganhos"
+  },
+  {
+   "bloque": "b47",
+   "linea": 1973,
+   "etiqueta": "Outros",
+   "actual": "66 513,23 €",
+   "anterior": "40 959,83 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos e ganhos"
+  },
+  {
+   "bloque": "b47",
+   "linea": 1974,
+   "etiqueta": "Total",
+   "actual": "28 817 436,63 €",
+   "anterior": "8 865 536,48 €",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos e ganhos"
+  },
+  {
+   "bloque": "b48",
+   "linea": 1982,
+   "etiqueta": "Seguros - indemnizações",
+   "actual": "48 890,48 €",
+   "anterior": "40 528,24 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Rendimentos suplementares"
+  },
+  {
+   "bloque": "b48",
+   "linea": 1983,
+   "etiqueta": "Outros rendimentos Suplementares",
+   "actual": "396 507,89 €",
+   "anterior": "393 420,54 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Rendimentos suplementares"
+  },
+  {
+   "bloque": "b48",
+   "linea": 1984,
+   "etiqueta": "Compensação Financeira",
+   "actual": "1 396 328,82 €",
+   "anterior": "1 291 657,01 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Rendimentos suplementares"
+  },
+  {
+   "bloque": "b48",
+   "linea": 1985,
+   "etiqueta": "Cedencia Jogadores",
+   "actual": "7 975,00 €",
+   "anterior": "130 815,00 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Rendimentos suplementares"
+  },
+  {
+   "bloque": "b48",
+   "linea": 1986,
+   "etiqueta": "Total",
+   "actual": "1 849 702,19 €",
+   "anterior": "1 856 420,79 €",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Rendimentos suplementares"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1395,
+   "etiqueta": "Inventários no início do período",
+   "actual": "280 389,15 €",
+   "anterior": "361 782,21 €",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1396,
+   "etiqueta": "Compras",
+   "actual": "699 182,03 €",
+   "anterior": "398 123,91 €",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1397,
+   "etiqueta": "Inventários no fim do período",
+   "actual": "325 469,24 €",
+   "anterior": "280 389,15 €",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1398,
+   "etiqueta": "Custo das mercadorias vendidas e das matérias consumidas",
+   "actual": "-654 101,94 €",
+   "anterior": "-479 516,97 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1860,
+   "etiqueta": "Serviços Especializados",
+   "actual": "5 663 439,45 €",
+   "anterior": "3 534 904,95 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1861,
+   "etiqueta": "Trabalhos especializados",
+   "actual": "1 029 563,67 €",
+   "anterior": "823 031,08 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1862,
+   "etiqueta": "Publicidade e propaganda",
+   "actual": "19 623,80 €",
+   "anterior": "20 055,80 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1863,
+   "etiqueta": "Vigilância e segurança",
+   "actual": "92 432,23 €",
+   "anterior": "91 788,14 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1864,
+   "etiqueta": "Honorários",
+   "actual": "665 756,74 €",
+   "anterior": "563 049,45 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1865,
+   "etiqueta": "Comissões",
+   "actual": "3 397,43 €",
+   "anterior": "62 018,22 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1866,
+   "etiqueta": "Conservação e reparação",
+   "actual": "295 053,51 €",
+   "anterior": "268 796,62 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1867,
+   "etiqueta": "Despesas com Provas",
+   "actual": "3 266 637,03 €",
+   "anterior": "1 508 381,54 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1868,
+   "etiqueta": "Prospecção; Empréstimos;",
+   "actual": "290 975,04 €",
+   "anterior": "197 784,10 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1869,
+   "etiqueta": "Materiais",
+   "actual": "522 627,92 €",
+   "anterior": "737 029,63 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1870,
+   "etiqueta": "Ferramentas, utensílios desgaste rápido",
+   "actual": "45 178,26 €",
+   "anterior": "20 264,19 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1871,
+   "etiqueta": "Livros documentação técnica",
+   "actual": "",
+   "anterior": "145,57 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1872,
+   "etiqueta": "Material de escritório",
+   "actual": "38 796,69 €",
+   "anterior": "47 581,10 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1873,
+   "etiqueta": "Artigos para oferta",
+   "actual": "11 091,15 €",
+   "anterior": "21 625,11 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1874,
+   "etiqueta": "Material Desportivo",
+   "actual": "427 561,82 €",
+   "anterior": "647 413,66 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1875,
+   "etiqueta": "Energia e fluidos",
+   "actual": "318 365,12 €",
+   "anterior": "324 537,38 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1876,
+   "etiqueta": "Eletricidade",
+   "actual": "143 051,33 €",
+   "anterior": "147 560,24 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1877,
+   "etiqueta": "Combustíveis",
+   "actual": "77 415,20 €",
+   "anterior": "71 810,23 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1878,
+   "etiqueta": "Água",
+   "actual": "56 142,91 €",
+   "anterior": "54 858,96 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1879,
+   "etiqueta": "Outros Fluidos",
+   "actual": "41 755,68 €",
+   "anterior": "50 307,95 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1880,
+   "etiqueta": "Deslocações, estadas",
+   "actual": "1 186 211,16 €",
+   "anterior": "1 060 628,89 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1881,
+   "etiqueta": "Deslocações e estadas",
+   "actual": "1 184 961,16 €",
+   "anterior": "1 050 880,36 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1882,
+   "etiqueta": "Transportes de mercadorias",
+   "actual": "1 250,00 €",
+   "anterior": "9 748,53 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1883,
+   "etiqueta": "Serviços diversos",
+   "actual": "2 342 046,12 €",
+   "anterior": "1 971 794,97 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1884,
+   "etiqueta": "Rendas e alugueres",
+   "actual": "748 773,43 €",
+   "anterior": "728 017,94 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1885,
+   "etiqueta": "Comunicação",
+   "actual": "51 768,52 €",
+   "anterior": "49 047,36 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1886,
+   "etiqueta": "Seguros",
+   "actual": "67 193,60 €",
+   "anterior": "78 962,84 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1887,
+   "etiqueta": "Contencioso e notariado",
+   "actual": "93 598,53 €",
+   "anterior": "46 155,37 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1888,
+   "etiqueta": "Despesas de Representação",
+   "actual": "5 234,48 €",
+   "anterior": "784,29 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1889,
+   "etiqueta": "Limpeza, higiene e conforto",
+   "actual": "150 640,12 €",
+   "anterior": "144 674,39 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1890,
+   "etiqueta": "Outros serviços",
+   "actual": "400 864,46 €",
+   "anterior": "129 880,90 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1891,
+   "etiqueta": "Pessoal VSC ao serviço SAD",
+   "actual": "823 972,98 €",
+   "anterior": "794 271,88 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1892,
+   "etiqueta": "Total",
+   "actual": "10 032 689,77 €",
+   "anterior": "7 628 895,82 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1940,
+   "etiqueta": "Remuneração Administração",
+   "actual": "289 398,35 €",
+   "anterior": "213 836,61 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1941,
+   "etiqueta": "Remuneração pessoal administrativo",
+   "actual": "2 690 020,92 €",
+   "anterior": "2 134 076,71 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1942,
+   "etiqueta": "Remuneração treinadores",
+   "actual": "2 823 605,53 €",
+   "anterior": "1 992 877,73 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1943,
+   "etiqueta": "Remuneração jogadores",
+   "actual": "11 028 524,24 €",
+   "anterior": "9 350 769,97 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1944,
+   "etiqueta": "Encargos com remunerações",
+   "actual": "1 478 051,70 €",
+   "anterior": "1 273 703,22 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1945,
+   "etiqueta": "Seguro acidentes trabalho",
+   "actual": "1 689 047,28 €",
+   "anterior": "1 490 286,77 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1946,
+   "etiqueta": "Outros gastos pessoal",
+   "actual": "528 109,62 €",
+   "anterior": "490 509,22 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1947,
+   "etiqueta": "Total",
+   "actual": "20 526 757,64 €",
+   "anterior": "16 946 060,23 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1998,
+   "etiqueta": "Impostos",
+   "actual": "52 682,81 €",
+   "anterior": "52 829,56 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1999,
+   "etiqueta": "Descontos pronto pagamento concedidos",
+   "actual": "0,31 €",
+   "anterior": "391 826,11 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2000,
+   "etiqueta": "Gastos, perdas em investimento não financeiros",
+   "actual": "700 190,83 €",
+   "anterior": "1 698 703,24 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2001,
+   "etiqueta": "Outros",
+   "actual": "767 823,32 €",
+   "anterior": "720 109,75 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2002,
+   "etiqueta": "Correções relativas a exercicios anteriores",
+   "actual": "132 392,82 €",
+   "anterior": "15 202,00 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2003,
+   "etiqueta": "Donativos",
+   "actual": "58 774,00 €",
+   "anterior": "63 000,00 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2004,
+   "etiqueta": "Quotizações (liga)",
+   "actual": "58 967,73 €",
+   "anterior": "50 794,64 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2005,
+   "etiqueta": "Multas",
+   "actual": "313 004,34 €",
+   "anterior": "383 865,05 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2006,
+   "etiqueta": "Outros",
+   "actual": "204 684,43 €",
+   "anterior": "207 248,06 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2007,
+   "etiqueta": "Total",
+   "actual": "1 520 697,27 €",
+   "anterior": "2 863 468,66 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2031,
+   "etiqueta": "Equipamento básico",
+   "actual": "149 766,37 €",
+   "anterior": "134 271,85 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos/reversões de depreciação e amortização"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2032,
+   "etiqueta": "Equipamento de transporte",
+   "actual": "3 404,29 €",
+   "anterior": "822,10 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos/reversões de depreciação e amortização"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2033,
+   "etiqueta": "Equipamento administrativo",
+   "actual": "39 118,60 €",
+   "anterior": "39 946,13 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos/reversões de depreciação e amortização"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2034,
+   "etiqueta": "Outros ativos fixos tangíveis",
+   "actual": "535 710,48 €",
+   "anterior": "506 897,26 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos/reversões de depreciação e amortização"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2035,
+   "etiqueta": "Total",
+   "actual": "727 999,74 €",
+   "anterior": "681 937,34 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos/reversões de depreciação e amortização"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2042,
+   "etiqueta": "Passes jogadores",
+   "actual": "4 813 431,72 €",
+   "anterior": "3 990 983,32 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos/reversões de depreciação e amortização"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2043,
+   "etiqueta": "Total",
+   "actual": "4 813 431,72 €",
+   "anterior": "3 990 983,32 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos/reversões de depreciação e amortização"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2052,
+   "etiqueta": "Imparidade de dívidas a receber",
+   "actual": "-58 483,75 €",
+   "anterior": "-91 401,80 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Imparidade de dívidas a receber"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2054,
+   "etiqueta": "Imparidades de inventários",
+   "actual": "",
+   "anterior": "-74 070,93 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Imparidade de inventarios"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2078,
+   "etiqueta": "Ativos financeiros",
+   "actual": "3 702,31 €",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Juros e rendimentos similares obtidos"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2079,
+   "etiqueta": "Passivos financeiros",
+   "actual": "-5 006 964,58 €",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Juros e gastos similares suportados"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 745,
+  "actual": "7 610 319,29 €",
+  "anterior": "-14 723 467,19 €"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se trata 'Outros' (L2001, 767 823,32 €) como subtotal de L2002-L2006 en la nota de Outros gastos e perdas?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Outros gastos e perdas",
+   "texto": "L2002-L2006 suman 767 823,32 €, igual a L2001, por lo que parece un encabezado-subtotal sin negrita; sumarlo junto duplicaría.",
+   "bloques": [
+    "b49"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se cargan las filas de b22 (inventario inicial, compras, final) como desglose del costo de mercaderías?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
+   "texto": "L1395-L1397 son una reconciliación de inventarios, no partidas de gasto sumables; se extraen con lado otro.",
+   "bloques": [
+    "b22"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja la nota de intereses b53 sin año anterior porque solo trae columna 30/06/25 (L2075)?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Juros e gastos similares suportados",
+   "texto": "La tabla L2075-L2080 solo muestra 2025; se cargan importes de las columnas de rendimientos y gastos de juros.",
+   "bloques": [
+    "b53"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en euros con céntimos. No se imprime total de ingresos ni de gastos. Notas b50 y b51 suman 5 541 431,46 €, igual al renglón de depreciación. Nota de imparidades b52: se omitió el total L2055. 'Resultado por ação básico' (L746) no extraído por no ser importe monetario."
+}

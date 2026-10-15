@@ -1,0 +1,36 @@
+{
+ "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2024-25.pdf",
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2024-25.md",
+ "mdSha1": "fe3629fbafa05807d086ae94df918cab091b0a8d",
+ "modo": "escaneo",
+ "motivoModo": "el PDF no trae texto usable (0 números, 0 caracteres/pág): escaneo o texto roto",
+ "generado": "2026-10-15T05:43:05.376Z",
+ "fuentes": {
+  "11": "gemini",
+  "21": "gemini",
+  "24": "gemini",
+  "25": "gemini",
+  "29": "gemini"
+ },
+ "confirmados": 111,
+ "noConfirmados": [
+  {
+   "bloque": "b16",
+   "pagina": 24,
+   "linea": 992,
+   "numero": "231,60",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Serviços Especializados | 1 003 232,65 € | 73[ilegible] 231,60 € | 267 001 € | 36% |"
+  },
+  {
+   "bloque": "b17",
+   "pagina": 25,
+   "linea": 1015,
+   "numero": "1 899 121,38",
+   "segundaLeyo": "189912135",
+   "sinSegunda": false,
+   "texto": "| Remuneração do Pessoal | 4 827 742,17 € | 1 899 121,38 € | 2 928 621 € | 154% |"
+  }
+ ]
+}

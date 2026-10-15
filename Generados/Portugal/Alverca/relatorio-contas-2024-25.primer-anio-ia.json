@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2024-25.md",
+ "clave": "afc135f005ec9f8157b3707532c5493a1f0ce16d",
+ "generado": "2026-10-15T06:24:17.443Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Todos los renglones con importe del ejercicio 30/06/2025 están cargados. FSE (L396), gastos con el personal (L397), otros rendimientos (L403) y otros gastos (L404) se reemplazan por sus aperturas de nota, sin cargar también el renglón total. Los subtotales (L405, L407, L409, L411) no se cargan. El renglón de juros (L408) está en cero."
+ }
+}

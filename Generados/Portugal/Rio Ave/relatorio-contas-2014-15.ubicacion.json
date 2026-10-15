@@ -1,0 +1,89 @@
+{
+ "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2014-15.pdf",
+ "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2014-15.md",
+ "mdSha1": "3588a5a6a971c8ef8a9724c353135d1191b46d4e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T06:00:19.404Z",
+ "bloques": {
+  "b1": {
+   "pagina": 7,
+   "lineas": [
+    121,
+    123
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    133,
+    135
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 10,
+   "lineas": [
+    169,
+    233
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    247,
+    278
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 13,
+   "lineas": [
+    304,
+    350
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    362,
+    403
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b6"
+ ],
+ "notas_gastos": [
+  "b5"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Unidade monetária (1); resultado líquido de 60.022,46 € en el texto",
+ "moneda": "EUR",
+ "columna_ejercicio": "Períodos 2015 (30-06-2015)",
+ "columna_anterior": "Períodos 2014 (30-06-2014)",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa la columna 'G e r a l' de las Contas de Exploração (b5, b6) como desglose de los renglones del estado de resultados b4?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "",
+   "texto": "Los cuadros tienen columnas Geral, Dep. Juvenil y Dep. Futsal; Geral parece el total del club (Totais gastos 763.822,45, ingresos 827.037,71) y las otras, subconjuntos.",
+   "bloques": [
+    "b5",
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados por naturezas individual del Rio Ave F.C. en b4 (pág. 11). b5 y b6 son contas de exploração del ejercicio 2014/15 que abren gastos e ingresos; usar columna Geral. b1-b3 se excluyen (series históricas y balance)."
+}

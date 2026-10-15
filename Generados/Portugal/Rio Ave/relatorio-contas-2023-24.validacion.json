@@ -1,0 +1,54 @@
+{
+ "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
+ "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.md",
+ "mdSha1": "d8e6c4a2a963eee161218e982c71ae69feebbceb",
+ "modo": "escaneo",
+ "motivoModo": "el PDF no trae texto usable (0 números, 0 caracteres/pág): escaneo o texto roto",
+ "generado": "2026-10-15T06:14:50.986Z",
+ "fuentes": {
+  "14": "gemini",
+  "35": "gemini",
+  "36": "gemini",
+  "37": "gemini",
+  "38": "gemini"
+ },
+ "confirmados": 192,
+ "noConfirmados": [
+  {
+   "bloque": "b10",
+   "pagina": 14,
+   "linea": 352,
+   "numero": "692 047,70",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Provisões (aumentos/reduções) | 15 | 692 047,70 | -  |"
+  },
+  {
+   "bloque": "b10",
+   "pagina": 14,
+   "linea": 353,
+   "numero": "2 500,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões) | 21 | 2 500,00 | -  |"
+  },
+  {
+   "bloque": "b10",
+   "pagina": 14,
+   "linea": 354,
+   "numero": "5 539 966,65",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Outros rendimentos e ganhos | 22 | 5 539 966,65 | 1 902 641,20  |"
+  },
+  {
+   "bloque": "b10",
+   "pagina": 14,
+   "linea": 355,
+   "numero": "1 798 760,09",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Outros gastos e perdas | 23 | 1 798 760,09 | 2 425 126,96  |"
+  }
+ ]
+}

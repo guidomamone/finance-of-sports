@@ -1,0 +1,35 @@
+{
+ "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.pdf",
+ "generado": "2026-10-15T06:32:29.157Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (vitoriaguimaraes-pt)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-09: Revisión del alta (Claude, 2026-10-09): criterio del proyecto: entidad individual cuando el documento trae individual y consolidado (2021-22 trae los dos))"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "evidencia": {
+   "pagina": 24,
+   "texto": "|   |   |  30-06-2025 | 30-06-2024  |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "temporada"
+ },
+ "clubId": "vitoriaguimaraes-pt",
+ "year": 2025,
+ "cortadoEn": "filas"
+}

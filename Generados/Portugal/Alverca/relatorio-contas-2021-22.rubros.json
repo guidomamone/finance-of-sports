@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Portugal/Alverca/relatorio-contas-2021-22.md",
+  "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2021-22.pdf",
+  "club": "alverca",
+  "year": 2022,
+  "generatedAt": "2026-10-15T06:24:11.170Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Vendas e serviços prestados",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.09357
+      ],
+      "glosa": "Ventas y prestaciones de servicios"
+    },
+    {
+      "label": "Subsídios à exploração",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.037669
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Outros rendimentos",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.02106
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Fornecimentos e serviços externos",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.580143
+      ],
+      "glosa": "Suministros y servicios exteriores"
+    },
+    {
+      "label": "Gastos com pessoal",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        1.898159
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Provisões (aumentos/reduções)",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Provisiones (aumentos/reducciones)"
+    },
+    {
+      "label": "Outros gastos",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.041037
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Gastos / reversões de depreciação e de amortização",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.031442
+      ],
+      "glosa": "Gastos / reversiones por amortización y depreciación"
+    }
+  ]
+}

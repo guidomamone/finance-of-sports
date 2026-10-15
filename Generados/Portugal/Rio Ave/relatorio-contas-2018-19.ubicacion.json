@@ -1,0 +1,312 @@
+{
+ "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2018-19.pdf",
+ "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2018-19.md",
+ "mdSha1": "760968cf59d9a0b8c7b3e874a495ba230937f7cb",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T06:09:00.215Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    45
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    51,
+    68
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    77,
+    100
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    113,
+    146
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    310,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    529,
+    535
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    546,
+    551
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    555,
+    564
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    568,
+    577
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 19,
+   "lineas": [
+    588,
+    593
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    599,
+    606
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    610,
+    618
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 20,
+   "lineas": [
+    629,
+    635
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    641,
+    649
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    655,
+    663
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    674,
+    681
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 21,
+   "lineas": [
+    691,
+    698
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 22,
+   "lineas": [
+    719,
+    730
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 23,
+   "lineas": [
+    741,
+    760
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 23,
+   "lineas": [
+    766,
+    774
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 24,
+   "lineas": [
+    785,
+    795
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 24,
+   "lineas": [
+    801,
+    811
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 24,
+   "lineas": [
+    817,
+    821
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 25,
+   "lineas": [
+    832,
+    857
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 25,
+   "lineas": [
+    859,
+    864
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 26,
+   "lineas": [
+    877,
+    885
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 26,
+   "lineas": [
+    891,
+    896
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 26,
+   "lineas": [
+    902,
+    907
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 27,
+   "lineas": [
+    918,
+    930
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 27,
+   "lineas": [
+    936,
+    945
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 28,
+   "lineas": [
+    956,
+    963
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 28,
+   "lineas": [
+    969,
+    975
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 29,
+   "lineas": [
+    988,
+    1006
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b22",
+  "b23",
+  "b29"
+ ],
+ "notas_gastos": [
+  "b24",
+  "b25",
+  "b26",
+  "b28",
+  "b30",
+  "b31",
+  "b32"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Las tablas del documento indican '(Euro)' / '(Euros)' sin indicación de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "2019 (Período, 30.06.2019)",
+ "columna_anterior": "2018 (Período, 30.06.2018)",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Están expresados en euros (unidades) los importes de la Demonstração de Resultados (b2)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El encabezado de b2 no muestra la unidad; las notas y el balance dicen '(Euro)'.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de Rio Ave Futebol Clube-Futebol SDUQ, Lda.; no hay consolidado. b25 (honorarios de agentes) desglosa trabajos especializados de FSE (b24). b33 es una conciliación de IRC y no se elige."
+}

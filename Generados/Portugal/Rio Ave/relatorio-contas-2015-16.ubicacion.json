@@ -1,0 +1,322 @@
+{
+ "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2015-16.pdf",
+ "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2015-16.md",
+ "mdSha1": "2d33006d5d7fa9ca3c3657bfd47bfadd47e313f1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T06:01:46.575Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    45,
+    80
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    103,
+    154
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    178,
+    220
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    237,
+    256
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    281,
+    301
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    473,
+    480
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 17,
+   "lineas": [
+    718,
+    723
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    743,
+    763
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    769,
+    788
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 19,
+   "lineas": [
+    808,
+    822
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    826,
+    840
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    848,
+    854
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    862,
+    869
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    887,
+    893
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    899,
+    911
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    934,
+    944
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 22,
+   "lineas": [
+    974,
+    983
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 22,
+   "lineas": [
+    991,
+    995
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 22,
+   "lineas": [
+    1003,
+    1011
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 23,
+   "lineas": [
+    1025,
+    1032
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 23,
+   "lineas": [
+    1040,
+    1047
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 23,
+   "lineas": [
+    1055,
+    1063
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 24,
+   "lineas": [
+    1081,
+    1091
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 24,
+   "lineas": [
+    1099,
+    1104
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 24,
+   "lineas": [
+    1112,
+    1136
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 25,
+   "lineas": [
+    1155,
+    1164
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 25,
+   "lineas": [
+    1170,
+    1174
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 25,
+   "lineas": [
+    1182,
+    1188
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 26,
+   "lineas": [
+    1209,
+    1218
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 26,
+   "lineas": [
+    1224,
+    1234
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 26,
+   "lineas": [
+    1242,
+    1253
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 27,
+   "lineas": [
+    1272,
+    1276
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 27,
+   "lineas": [
+    1286,
+    1305
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b23",
+  "b24",
+  "b29"
+ ],
+ "notas_gastos": [
+  "b25",
+  "b26",
+  "b30",
+  "b31",
+  "b32"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con céntimos y símbolo € en el estado; notas indican '(Valores em euros)'",
+ "moneda": "EUR",
+ "columna_ejercicio": "ÉPOCA 15-16",
+ "columna_anterior": "14-15",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de movimiento de imparidades de clientes (b28), ya que es un movimiento de saldo y no un desglose del gasto?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Imparidade de dívidas a receber (perdas/reversões)",
+   "texto": "b28 es un movimiento de saldo de imparidad; el gasto del ejercicio ya figura en una fila del estado.",
+   "bloques": [
+    "b28"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se cargan como desglose las subfilas de 'Vendas e prestações de serviços' del estado (bilheteira, patrocínio, direitos de transmissão, atividades comerciais, outros lucros) sin sumarlas otra vez al total?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Vendas e prestações de serviços",
+   "texto": "En b1 las subfilas suman el total de 3.719.348,66 y no deben sumarse dos veces.",
+   "bloques": [
+    "b1",
+    "b23"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados por naturezas individual de Rio Ave FC SDUQ (b1), con importes en euros con signo positivo y gastos sin signo negativo. Las notas 15 (b23), 16 (b24), 20 (b29), 17 (b25), 18 (b26), 21 (b30), 22 (b31) y 23 (b32) desglosan los renglones del estado. El IRC (b33) es una conciliación fiscal y quedó excluido."
+}

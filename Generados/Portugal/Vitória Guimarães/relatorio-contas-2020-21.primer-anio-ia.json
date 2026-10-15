@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2020-21.md",
+ "clave": "871300d3e06945acfd81ccc285eb6436f7c9fdd2",
+ "generado": "2026-10-15T06:24:32.263Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Sin problemas. Todos los renglones con importe del ejercicio 2021 están cargados, ya sea directamente o abiertos por las notas: ventas (L580), subsidios (L581), FSE (L583), personal (L584) y otros ingresos y gastos (L588, L589). No hay subtotales cargados ni importes duplicados, y los lados son correctos. Los ingresos financieros (L593) van en 0."
+ }
+}

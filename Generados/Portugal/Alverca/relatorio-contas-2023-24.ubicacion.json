@@ -1,0 +1,194 @@
+{
+ "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.md",
+ "mdSha1": "5dc7633085baa1b3eb8e758dd0adb4ef13569f08",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T05:38:24.791Z",
+ "bloques": {
+  "b1": {
+   "pagina": 9,
+   "lineas": [
+    216,
+    251
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    275,
+    289
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 17,
+   "lineas": [
+    506,
+    510
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 17,
+   "lineas": [
+    526,
+    533
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 18,
+   "lineas": [
+    553,
+    557
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 18,
+   "lineas": [
+    563,
+    567
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 19,
+   "lineas": [
+    598,
+    604
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 20,
+   "lineas": [
+    623,
+    630
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 20,
+   "lineas": [
+    636,
+    642
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    677,
+    680
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    702,
+    711
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    731,
+    740
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 23,
+   "lineas": [
+    756,
+    760
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 23,
+   "lineas": [
+    768,
+    771
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 24,
+   "lineas": [
+    783,
+    790
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 24,
+   "lineas": [
+    806,
+    813
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 25,
+   "lineas": [
+    825,
+    833
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 27,
+   "lineas": [
+    901,
+    910
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    924,
+    942
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b10"
+ ],
+ "notas_gastos": [
+  "b16",
+  "b17",
+  "b19"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Unidade Monetária: euro",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/06/2024",
+ "columna_anterior": "30/06/2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el cuadro 'Outros gastos/Outros rendimentos' (b19) como desglose tanto de Outros gastos como de Outros rendimentos del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Outros rendimentos",
+   "texto": "El índice solo muestra la parte de Outros gastos; hay que confirmar que también abre Outros rendimentos.",
+   "bloques": [
+    "b19"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual por naturezas (b2) en euros. b10 desglosa ventas y servicios prestados; b16 FSE; b17 gastos de personal; b19 otros gastos/rendimientos. b15 son intereses por instrumento financiero, no se elige. Se excluyen balance, caja, partes relacionadas, activos fijos, impuestos y entes públicos."
+}

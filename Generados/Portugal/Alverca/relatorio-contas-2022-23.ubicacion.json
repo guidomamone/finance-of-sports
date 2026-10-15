@@ -1,0 +1,60 @@
+{
+ "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf",
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.md",
+ "mdSha1": "0b686defb94b00a4cc2bb49cea926f8fbc4eeae1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T05:37:55.402Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    15,
+    51
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    55,
+    73
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    91,
+    106
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Unidade Monetária, euro",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/06/2023",
+ "columna_anterior": "30/06/2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la 'Demonstração individual dos resultados' del período findo em 30 de Junho de 2023 (b3) como el ejercicio pedido que cierra el 2023-09-29?",
+   "propuesta": "sí",
+   "tema": "cuadro-de-otro-anio",
+   "renglon": "",
+   "texto": "El documento (relatorio-contas-2022-23) cierra el 30/06/2023 y no el 29/09/2023; parece la misma temporada 2022-23.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento individual de la SAD: balance (b1), información complementaria sin cifras relevantes (b2) y estado de resultados por naturalezas (b3), en euros. No hay notas de desglose de ingresos ni gastos. El encabezado de b3 dice solo 'PERIODOS'; se asume columnas 30/06/2023 y 30/06/2022 como en el balance."
+}

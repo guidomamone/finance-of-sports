@@ -1,0 +1,196 @@
+{
+ "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2024-25.pdf",
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2024-25.md",
+ "mdSha1": "fe3629fbafa05807d086ae94df918cab091b0a8d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T05:41:30.631Z",
+ "bloques": {
+  "b1": {
+   "pagina": 10,
+   "lineas": [
+    316,
+    353
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 11,
+   "lineas": [
+    387,
+    411
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 17,
+   "lineas": [
+    663,
+    667
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 17,
+   "lineas": [
+    687,
+    692
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 18,
+   "lineas": [
+    719,
+    723
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 18,
+   "lineas": [
+    729,
+    733
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 19,
+   "lineas": [
+    764,
+    770
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 20,
+   "lineas": [
+    782,
+    789
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 20,
+   "lineas": [
+    795,
+    802
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    845,
+    848
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    880,
+    889
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 23,
+   "lineas": [
+    918,
+    927
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 23,
+   "lineas": [
+    937,
+    941
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 24,
+   "lineas": [
+    958,
+    961
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 24,
+   "lineas": [
+    967,
+    974
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 24,
+   "lineas": [
+    990,
+    997
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 25,
+   "lineas": [
+    1012,
+    1020
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 28,
+   "lineas": [
+    1115,
+    1126
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 29,
+   "lineas": [
+    1150,
+    1170
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b10",
+  "b19",
+  "b15"
+ ],
+ "notas_gastos": [
+  "b16",
+  "b17",
+  "b19"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Unidade Monetária: euro",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/06/2025",
+ "columna_anterior": "30/06/2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El encabezado 'PERÍODOS' del estado b2 tiene la columna 30/06/2025 primero y 30/06/2024 después?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado de b2 no muestra las fechas de las columnas.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados individual de la SAD (b2, pág. 11). Notas: b10 rédito (prestações de serviços), b16 FSE, b17 gastos con pessoal, b19 outros gastos y outros rendimentos (incluye alienação de direitos de inscrição desportiva), b15 juros. Excluidos balance, activos, impuestos, partes relacionadas y estado."
+}

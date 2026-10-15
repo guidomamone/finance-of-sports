@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.md",
+ "clave": "43b20c5dcccebe843dcd9dd3bbf501d5779e0a9d",
+ "generado": "2026-10-15T06:24:21.308Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Los renglones del estado están cubiertos, la mayoría con su apertura de notas. Vendas (L131) = 0,04823+0,294408+0,5 = 0,842638. Subsídios (L132) = 0,875+0,005088 = 0,880088. Outros rendimentos (L136) suma 1,407889. FSE (L133), Pessoal (L134) y Outros gastos (L137) también coinciden con sus partes. Provisões, depreciações, juros e imposto se cargan directo del estado. Los subtotales no se cargaron."
+ }
+}

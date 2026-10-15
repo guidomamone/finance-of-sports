@@ -1,0 +1,361 @@
+{
+ "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2024-25.pdf",
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2024-25.md",
+ "generado": "2026-10-15T06:24:32.285Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2024-25.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2025-06-30",
+   "evidencia": "relatorio-contas-2024-25.pdf pág. 6 del visor (OCR/texto)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "e102d42",
+  "04ab7ee"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": false,
+   "detalle": "ingresos de 2024: 0.654874 en relatorio-contas-2023-24.pdf y 0.754874 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Vendas e serviços prestados\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"-\"): ¿El encabezado 'PERÍODOS' del estado b2 tiene la columna 30/06/2025 primero y 30/06/2024 después?",
+  "duda de extraer que no afecta la carga: L1163 no tiene importe en la columna 30/06/2025; el total L1170 cuadra sin él.",
+  "duda de extraer que no afecta la carga: L992 año anterior ilegible; el actual se lee bien y el total L997 está impreso.",
+  "duda de extraer que no afecta la carga: L1014 año anterior ilegible; solo afecta la columna comparativa.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 2.060033,
+  "gastos": 8.132291,
+  "financiero": 0,
+  "impuesto": -0.006919,
+  "resultadoImpreso": -6.079177,
+  "resultadoParaCargar": -6.079177,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Vendas e serviços prestados",
+   "lado": "ingreso",
+   "M": 0.637398,
+   "pagina": 11,
+   "linea": 390,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0.386886,
+   "pagina": 11,
+   "linea": 391,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Indemnização FIFA - AL Wasl",
+   "lado": "ingreso",
+   "M": 0.25383,
+   "pagina": 29,
+   "linea": 1164,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Alienações direitos de inscrição desportiva",
+   "lado": "ingreso",
+   "M": 0.76957,
+   "pagina": 29,
+   "linea": 1165,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Correcções relativas a períodos anteriores",
+   "lado": "ingreso",
+   "M": 0.000185,
+   "pagina": 29,
+   "linea": 1166,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Recuperação de encargos",
+   "lado": "ingreso",
+   "M": 0.001171,
+   "pagina": 29,
+   "linea": 1167,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Outros não especificados",
+   "lado": "ingreso",
+   "M": 0.010993,
+   "pagina": 29,
+   "linea": 1169,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Serviços Especializados",
+   "lado": "gasto",
+   "M": 1.003233,
+   "pagina": 24,
+   "linea": 992,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Materiais",
+   "lado": "gasto",
+   "M": 0.12885,
+   "pagina": 24,
+   "linea": 993,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Energia e Fluidos",
+   "lado": "gasto",
+   "M": 0.01259,
+   "pagina": 24,
+   "linea": 994,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Deslocações e Estadas",
+   "lado": "gasto",
+   "M": 0.360564,
+   "pagina": 24,
+   "linea": 995,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Serviços Diversos",
+   "lado": "gasto",
+   "M": 0.389304,
+   "pagina": 24,
+   "linea": 996,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Remunerações dos Órgãos Sociais",
+   "lado": "gasto",
+   "M": 0.015713,
+   "pagina": 25,
+   "linea": 1014,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Remuneração do Pessoal",
+   "lado": "gasto",
+   "M": 4.827742,
+   "pagina": 25,
+   "linea": 1015,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Encargos sobre remunerações",
+   "lado": "gasto",
+   "M": 0.445686,
+   "pagina": 25,
+   "linea": 1016,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Seguros de Acidentes de Trabalho",
+   "lado": "gasto",
+   "M": 0.414698,
+   "pagina": 25,
+   "linea": 1017,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Indemnizações",
+   "lado": "gasto",
+   "M": 0.121127,
+   "pagina": 25,
+   "linea": 1018,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Outros Gastos com Pessoal",
+   "lado": "gasto",
+   "M": 0.314632,
+   "pagina": 25,
+   "linea": 1019,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": "gasto",
+   "M": 0.025756,
+   "pagina": 11,
+   "linea": 399,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos",
+   "lado": "gasto",
+   "M": 0.00257,
+   "pagina": 29,
+   "linea": 1153,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Quotizações",
+   "lado": "gasto",
+   "M": 0.000932,
+   "pagina": 29,
+   "linea": 1154,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Correcções relativas a períodos anteriores",
+   "lado": "gasto",
+   "M": 0.012093,
+   "pagina": 29,
+   "linea": 1155,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Donativos",
+   "lado": "gasto",
+   "M": 0.0005,
+   "pagina": 29,
+   "linea": 1156,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Multas e penalidades",
+   "lado": "gasto",
+   "M": 0.017274,
+   "pagina": 29,
+   "linea": 1157,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Juros de mora e compensatórios",
+   "lado": "gasto",
+   "M": 0.000398,
+   "pagina": 29,
+   "linea": 1158,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Despesas não devidamente documentadas",
+   "lado": "gasto",
+   "M": 0.004078,
+   "pagina": 29,
+   "linea": 1159,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "lado": "gasto",
+   "M": 0.034553,
+   "pagina": 11,
+   "linea": 406,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e gastos similares suportados",
+   "M": 0,
+   "linea": 408
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": -0.006919,
+   "linea": 410
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "afc135f005ec9f8157b3707532c5493a1f0ce16d",
+  "rango": [
+   387,
+   414
+  ],
+  "lineasCargadas": [
+   390,
+   391,
+   1164,
+   1165,
+   1166,
+   1167,
+   1169,
+   992,
+   993,
+   994,
+   995,
+   996,
+   1014,
+   1015,
+   1016,
+   1017,
+   1018,
+   1019,
+   399,
+   1153,
+   1154,
+   1155,
+   1156,
+   1157,
+   1158,
+   1159,
+   406,
+   408,
+   410
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 387 a 414 del .md):\nL387: |  RENDIMENTOS E GASTOS | NOTAS | PERÍODOS  |   |\nL388: | --- | --- | --- | --- |\nL389: |   |   |  30/06/2025 | 30/06/2024  |\nL390: |  Vendas e serviços prestados | 9 | 637 397,79 | 69 051,01  |\nL391: |  Subsídios à exploração | 15 | 386 886,50 | 63 231,00  |\nL392: |  Ganhós/perdas imputados de subsidiárias, associadas e empreendimentos conjuntos |  |  |   |\nL393: |  Variação nos inventários da produção |  |  |   |\nL394: |  Trabalhos para a própria entidade |  |  |   |\nL395: |  Custos das mercadorias vendidas e das matérias consumidas |  |  |   |\nL396: |  Fornecimentos e serviços externos | 12 | (1 894 540,02) | (1 171 360,47)  |\nL397: |  Gastos com o pessoal | 13 | (6 139 597,39) | (2 437 682,09)  |\nL398: |  Imparidade de inventários (perdas/reversões) |  |  |   |\nL399: |  Imparidade de dívidas a receber (perdas/reversões) |  | (25 756,00) | 0,00  |\nL400: |  Provisões (aumentos/reduções) |  |  |   |\nL401: |  Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões) |  |  |   |\nL402: |  Aumentos/reduções de justo valor |  |  |   |\nL403: |  Outros rendimentos | 17.2.3 | 1 035 748,79 | 622 591,65  |\nL404: |  Outros gastos | 17.2.3 | (37 844,31) | (347 028,99)  |\nL405: |  **Resultado antes de depreciações, gastos de financiamentos e impostos** |  | **(6 037 704,64)** | **(3 201 197,89)**  |\nL406: |  Gastos/reversões de depreciação e de amortização | 7/8 | (34 553,46) | (19 469,29)  |\nL407: |  **Resultado operacional (antes de gastos de financiamento e impostos)** |  | **(6 072 258,10)** | **(3 220 667,18)**  |\nL408: |  Juros e gastos similares suportados | 11.3 | 0,00 | 0,00  |\nL409: |  **Resultado antes de impostos** |  | **(6 072 258,10)** | **(3 220 667,18)**  |\nL410: |  Imposto sobre o rendimento do período | 10/17.1 | (6 918,54) | (9 830,27)  |\nL411: |  **Resultado líquido do período** |  | **(6 079 176,64)** | **(3 230 497,45)**  |\nL413: Alverca do Ribatejo, 24 de Novembro de 2025\n\nLO QUE SE CARGA:\n- ingreso · \"Vendas e serviços prestados\" · 0.637398 · L390\n- ingreso · \"Subsídios à exploração\" · 0.386886 · L391\n- ingreso · \"Indemnização FIFA - AL Wasl\" · 0.25383 · L1164 (de una nota)\n- ingreso · \"Alienações direitos de inscrição desportiva\" · 0.76957 · L1165 (de una nota)\n- ingreso · \"Correcções relativas a períodos anteriores\" · 0.000185 · L1166 (de una nota)\n- ingreso · \"Recuperação de encargos\" · 0.001171 · L1167 (de una nota)\n- ingreso · \"Outros não especificados\" · 0.010993 · L1169 (de una nota)\n- gasto · \"Serviços Especializados\" · 1.003233 · L992 (de una nota)\n- gasto · \"Materiais\" · 0.12885 · L993 (de una nota)\n- gasto · \"Energia e Fluidos\" · 0.01259 · L994 (de una nota)\n- gasto · \"Deslocações e Estadas\" · 0.360564 · L995 (de una nota)\n- gasto · \"Serviços Diversos\" · 0.389304 · L996 (de una nota)\n- gasto · \"Remunerações dos Órgãos Sociais\" · 0.015713 · L1014 (de una nota)\n- gasto · \"Remuneração do Pessoal\" · 4.827742 · L1015 (de una nota)\n- gasto · \"Encargos sobre remunerações\" · 0.445686 · L1016 (de una nota)\n- gasto · \"Seguros de Acidentes de Trabalho\" · 0.414698 · L1017 (de una nota)\n- gasto · \"Indemnizações\" · 0.121127 · L1018 (de una nota)\n- gasto · \"Outros Gastos com Pessoal\" · 0.314632 · L1019 (de una nota)\n- gasto · \"Imparidade de dívidas a receber (perdas/reversões)\" · 0.025756 · L399\n- gasto · \"Impostos\" · 0.00257 · L1153 (de una nota)\n- gasto · \"Quotizações\" · 0.000932 · L1154 (de una nota)\n- gasto · \"Correcções relativas a períodos anteriores\" · 0.012093 · L1155 (de una nota)\n- gasto · \"Donativos\" · 0.0005 · L1156 (de una nota)\n- gasto · \"Multas e penalidades\" · 0.017274 · L1157 (de una nota)\n- gasto · \"Juros de mora e compensatórios\" · 0.000398 · L1158 (de una nota)\n- gasto · \"Despesas não devidamente documentadas\" · 0.004078 · L1159 (de una nota)\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 0.034553 · L406\n- financiero · \"Juros e gastos similares suportados\" · 0 · L408\n- impuesto · \"Imposto sobre o rendimento do período\" · -0.006919 · L410"
+ }
+}

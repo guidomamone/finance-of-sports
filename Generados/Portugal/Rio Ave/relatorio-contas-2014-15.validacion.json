@@ -1,0 +1,142 @@
+{
+ "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2014-15.pdf",
+ "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2014-15.md",
+ "mdSha1": "3588a5a6a971c8ef8a9724c353135d1191b46d4e",
+ "modo": "digital",
+ "motivoModo": "4 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 6002266 vs 6002246, 125836439 vs 100836439, 2218396 vs 1218326; 33 números del .md no están en el PDF (tolerancia 10); el .md solo tiene el 82% de los números del PDF (mínimo 85%): incompleto",
+ "generado": "2026-10-15T06:00:19.495Z",
+ "fuentes": {
+  "11": "pdftotext",
+  "13": "pdftotext",
+  "14": "pdftotext"
+ },
+ "confirmados": 143,
+ "noConfirmados": [
+  {
+   "bloque": "b4",
+   "pagina": 11,
+   "linea": 249,
+   "numero": "2014",
+   "segundaLeyo": "2015",
+   "sinSegunda": false,
+   "texto": "|   |   |  01/07/2014 a 30/06/2015 | 01/07/2013 a 30/06/2014  |"
+  },
+  {
+   "bloque": "b4",
+   "pagina": 11,
+   "linea": 249,
+   "numero": "2013",
+   "segundaLeyo": "2015",
+   "sinSegunda": false,
+   "texto": "|   |   |  01/07/2014 a 30/06/2015 | 01/07/2013 a 30/06/2014  |"
+  },
+  {
+   "bloque": "b4",
+   "pagina": 11,
+   "linea": 249,
+   "numero": "2014",
+   "segundaLeyo": "2015",
+   "sinSegunda": false,
+   "texto": "|   |   |  01/07/2014 a 30/06/2015 | 01/07/2013 a 30/06/2014  |"
+  },
+  {
+   "bloque": "b4",
+   "pagina": 11,
+   "linea": 256,
+   "numero": "566.123,86",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Fornecimentos e serviços externos | 17.2 | -253.651,49 € | -566.123,86 €  |"
+  },
+  {
+   "bloque": "b4",
+   "pagina": 11,
+   "linea": 271,
+   "numero": "22.183,96",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  *Resultados antes de impostos* |  | 63.215,26 € | 22.183,96 €  |"
+  },
+  {
+   "bloque": "b4",
+   "pagina": 11,
+   "linea": 273,
+   "numero": "20.314,66",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Resultado líquido do período | 14 | 60.022,46 € | 20.314,66 €  |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 14,
+   "linea": 380,
+   "numero": "114.482,15",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **SUBSIDIOS À EXPLORAÇÃO** | **283.029,85** | **125.000,00** | **114.482,15**  |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 14,
+   "linea": 402,
+   "numero": "31,21",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Outros rendimentos | 31,21 |  |   |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 14,
+   "linea": 403,
+   "numero": "118.055,34",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  *Totais: ...* | **827.037,71** | **130.800,00** | **118.055,34**  |"
+  },
+  {
+   "bloque": "b5",
+   "pagina": 13,
+   "linea": 312,
+   "numero": "757,63",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Trabalhos especializados | 757,63 |  |   |"
+  },
+  {
+   "bloque": "b5",
+   "pagina": 13,
+   "linea": 331,
+   "numero": "5.145,44",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Custos com o pessoal** | **83.757,21** | **29.431,29** | **5.145,44**  |"
+  },
+  {
+   "bloque": "b5",
+   "pagina": 13,
+   "linea": 342,
+   "numero": "61.438,11",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Outros gastos e perdas** | **61.438,11** | **1.460,26** | **11.312,96**  |"
+  },
+  {
+   "bloque": "b5",
+   "pagina": 13,
+   "linea": 342,
+   "numero": "11.312,96",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Outros gastos e perdas** | **61.438,11** | **1.460,26** | **11.312,96**  |"
+  },
+  {
+   "bloque": "b5",
+   "pagina": 13,
+   "linea": 350,
+   "numero": "64.842,79",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  *Totais: . . .* | **763.822,45** | **64.842,79** | **108.784,56**  |"
+  }
+ ]
+}

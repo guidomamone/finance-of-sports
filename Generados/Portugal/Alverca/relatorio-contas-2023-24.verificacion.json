@@ -1,0 +1,230 @@
+{
+ "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.md",
+ "generado": "2026-10-15T06:24:11.283Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "5fac5c7",
+  "8ba19f6",
+  "17afbb6",
+  "4d16265",
+  "8bb3356",
+  "111c43a",
+  "ddde891",
+  "34a3653",
+  "ca7e690"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.00000942000000092591
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": false,
+   "detalle": "ingresos de 2024: 0.654874 en este documento y 0.754874 en relatorio-contas-2024-25.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 0.827308 en relatorio-contas-2022-23.pdf y 0.825306 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Vendas e serviços prestados\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Outros rendimentos\" no suma el renglón (0.622592 contra 0.522592, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Gastos com o pessoal\" no suma el renglón (2.439681 contra 2.437682, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Outros gastos\" no suma el renglón (0.347029 contra 0.247029, sumando sus renglones): quedó el renglón del estado",
+  "línea 282: 247.028,99 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (34702899) el resultado daría -37.686358 y no cierra)",
+  "línea 284: 19.459,29 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (1946929) el resultado daría -5.157958 y no cierra)"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Outros rendimentos",
+   "suma": 0.622592,
+   "objetivo": 0.522592
+  },
+  {
+   "renglon": "Gastos com o pessoal",
+   "suma": 2.439681,
+   "objetivo": 2.437682
+  },
+  {
+   "renglon": "Outros gastos",
+   "suma": 0.347029,
+   "objetivo": 0.247029
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Outros rendimentos",
+   "suma": 0.622592,
+   "objetivo": 0.522592
+  },
+  {
+   "renglon": "Gastos com o pessoal",
+   "suma": 2.439681,
+   "objetivo": 2.437682
+  },
+  {
+   "renglon": "Outros gastos",
+   "suma": 0.347029,
+   "objetivo": 0.247029
+  }
+ ],
+ "totales": {
+  "ingresos": 0.654874,
+  "gastos": 3.875531,
+  "financiero": 0,
+  "impuesto": -0.00983,
+  "resultadoImpreso": -3.230497,
+  "resultadoParaCargar": -3.230497,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Vendas e serviços prestados",
+   "lado": "ingreso",
+   "M": 0.069051,
+   "pagina": 10,
+   "linea": 277,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0.063231,
+   "pagina": 10,
+   "linea": 278,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros rendimentos",
+   "lado": "ingreso",
+   "M": 0.522592,
+   "pagina": 10,
+   "linea": 281,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Serviços Especializados",
+   "lado": "gasto",
+   "M": 0.736232,
+   "pagina": 24,
+   "linea": 808,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Materiais",
+   "lado": "gasto",
+   "M": 0.067239,
+   "pagina": 24,
+   "linea": 809,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Energia e Fluidos",
+   "lado": "gasto",
+   "M": 0.007643,
+   "pagina": 24,
+   "linea": 810,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Deslocações e Estadas",
+   "lado": "gasto",
+   "M": 0.14016,
+   "pagina": 24,
+   "linea": 811,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Serviços Diversos",
+   "lado": "gasto",
+   "M": 0.220087,
+   "pagina": 24,
+   "linea": 812,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Gastos com o pessoal",
+   "lado": "gasto",
+   "M": 2.437682,
+   "pagina": 10,
+   "linea": 280,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros gastos",
+   "lado": "gasto",
+   "M": 0.247029,
+   "pagina": 10,
+   "linea": 282,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "lado": "gasto",
+   "M": 0.019459,
+   "pagina": 10,
+   "linea": 284,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e gastos similares suportados",
+   "M": 0,
+   "linea": 286
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": -0.00983,
+   "linea": 288
+  }
+ ],
+ "confirmadosPorSumas": [
+  {
+   "linea": 282,
+   "numero": "247.028,99"
+  },
+  {
+   "linea": 284,
+   "numero": "19.459,29"
+  }
+ ]
+}

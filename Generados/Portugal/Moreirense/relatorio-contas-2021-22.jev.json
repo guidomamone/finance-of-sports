@@ -1,0 +1,714 @@
+{
+ "md": "Clubes/Portugal/Moreirense/relatorio-contas-2021-22.md",
+ "generatedAt": "2026-10-15T06:31:26.200Z",
+ "rubrosHuella": "66e834fff9171ee6b806c91a3bf0c091e2b92af8",
+ "rubros": [
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Direitos Televisivos",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Rendimentos suplementares",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "6221 Trabalhos especializados",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"622 Serviços especializados\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 910
+  },
+  {
+   "label": "6223 Vigilância e segurança",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"622 Serviços especializados\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Rendimentos em investimentos não financeiros",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1084
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Vendas",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.42
+    ],
+    [
+     "other_income",
+     0.29
+    ],
+    [
+     "lump_football_operations",
+     0.23
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "6224 Honorários",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"622 Serviços especializados\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "6231 Ferramentas e utensílios de desgaste rápido",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"623 Materiais\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "6226 Conservação e reparação",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"622 Serviços especializados\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "6233 Material de escritório",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"623 Materiais\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "6241 Electricidade",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"624 Energia e fluidos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 889
+  },
+  {
+   "label": "6242 Combustíveis",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"624 Energia e fluidos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1111
+  },
+  {
+   "label": "6243 Água",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"624 Energia e fluidos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "6238 Outros",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"623 Materiais\"",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "6253 Transportes de mercadorias",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"625 Deslocações, estadas e transportes\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "match_organisation_expense",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Remunerações do pessoal",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "6261 Rendas e alugueres",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"626 Serviços diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Encargos sobre remunerações",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguros de acidentes de trabalho e doenças profissionais",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros gastos com pessoal",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "6251 Deslocações e estadas",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"625 Deslocações, estadas e transportes\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 979
+  },
+  {
+   "label": "6263 Seguros",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"626 Serviços diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "6262 Comunicação",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"626 Serviços diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Gastos/reversões de depreciação e amortização",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "6265 Contencioso e notariado",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"626 Serviços diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "6267 Limpeza, higiene e conforto",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"626 Serviços diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "6268 Outros serviços",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"626 Serviços diversos\"",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.24
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "player_impairment",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1081
+  },
+  {
+   "label": "Indemnizações",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "wages_squad",
+     0.2
+    ]
+   ],
+   "tokens": 974
+  },
+  {
+   "label": "Descontos de pronto pagamento concedidos",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Provisões (aumentos/reduções)",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1072
+  }
+ ]
+}

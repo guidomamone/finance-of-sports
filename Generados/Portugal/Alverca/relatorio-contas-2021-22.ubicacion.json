@@ -1,0 +1,60 @@
+{
+ "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2021-22.pdf",
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2021-22.md",
+ "mdSha1": "8804151f02ac7eaf5a6e24647f458a8c9f76dc70",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T05:37:20.605Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    16,
+    51
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    55,
+    73
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    93,
+    108
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "'Unidade Monetária: euro' en el balance (b1, pág. 1); la demonstração de resultados (b3) no indica la escala, se asume la misma.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2021",
+ "columna_anterior": "2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿La columna '2021' de la Demonstração de resultados (b3) corresponde al ejercicio cerrado el 30-06-2022?",
+   "propuesta": "sí",
+   "tema": "cuadro-de-otro-anio",
+   "renglon": "",
+   "texto": "El documento es el relatório 2021-22 y el balance es al 30-06-2022, pero b3 tiene columnas '2021 | 2020', que podrían ser el nombre de la temporada o un ejercicio anterior.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo hay un estado de resultados por naturalezas (b3), individual de la SAD. b1 es el balance individual y b2 es información complementaria sin desgloses; no hay notas que abran ingresos o gastos."
+}
