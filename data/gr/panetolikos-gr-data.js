@@ -186,7 +186,7 @@ const panetolikosgrFiscalYearMeta = {
       {renglon:'Αγορές τρίτων χωρών', lado:'revenue', importe:0.004192, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad media): Es el resto del Κύκλος εργασιών (604.192 = 600.000 + 4.192), clasificado por el documento como prestación de servicios sin más detalle y sin entradas (covid); no hay forma de saber qué servicio es. Queda como fútbol sin desglosar, igual que el Κύκλος εργασιών de 2020 y 2022 (lump_football_operations). Importe chico (4 mil euros). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2021-06-30.md L1471 (pág. 35) "Αγορές τρίτων χωρών | 4.192,00 | 6.880,00"; L1465 "Παροχή υπηρεσιών Σύνολο | 604.192,00"; L1475 "στην τρέχουσα χρήση δεν εκδόθηκαν εισιτήρια λόγω covid"]'},
       {renglon:'Κόστος πωλήσεων (sin el costo de personal)', lado:'expense', importe:3.210043, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:0, cash:0.339471,
+    grossDebt:0, cash:0.339471, staffCost:1.288535,
     officialTotalRevenue:4.480318, officialTotalExpenses:4.820124, officialPAT:-0.344261,
   },
   2022: {
@@ -206,7 +206,7 @@ const panetolikosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.224781, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων (sin el costo de personal)', lado:'expense', importe:3.614795, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:0.675224, cash:null,
+    grossDebt:0.675224, cash:null, staffCost:1.566222,
     officialTotalRevenue:2.982884, officialTotalExpenses:6.039569, officialPAT:-3.077233,
   },
   2023: {
@@ -225,7 +225,7 @@ const panetolikosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων (sin el costo de personal)', lado:'expense', importe:5.090619, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:null, staffCost:1.716652,
     officialTotalRevenue:4.751314, officialTotalExpenses:7.621847, officialPAT:-2.875778,
   },
   2024: {
@@ -244,7 +244,7 @@ const panetolikosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων (sin el costo de personal)', lado:'expense', importe:4.869717, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:null, staffCost:1.850317,
     officialTotalRevenue:4.854132, officialTotalExpenses:7.537969, officialPAT:-2.700977,
   },
   2025: {
@@ -263,7 +263,7 @@ const panetolikosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων (sin el costo de personal)', lado:'expense', importe:4.314462, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:null, staffCost:1.959575,
     officialTotalRevenue:5.792984, officialTotalExpenses:7.05356, officialPAT:-1.426639,
   },
 };

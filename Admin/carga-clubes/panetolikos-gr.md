@@ -95,6 +95,10 @@ incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con ot
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.959575 (compuerta: documento anterior): Jev (confianza 0.75): Panetolikos_FS_2025-06-30.md L1085 "Σύνολο"
+```
+
 ## 2024
 
 ### Ingresos
@@ -138,6 +142,10 @@ tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.850317 (compuerta: doc
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.850317 (compuerta: documento siguiente): Jev (confianza 0.73): Panetolikos_FS_2024-06-30.md L1072 "Σύνολο"
 ```
 
 ## 2023
@@ -184,6 +192,10 @@ tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.716652 (compuerta: doc
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.716652 (compuerta: documento siguiente): Jev (confianza 0.74): Panetolikos_FS_2023-06-30.md L1158 "Σύνολο"
 ```
 
 ## 2022
@@ -237,6 +249,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Estadio, Venta de Jugadores
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.566222 (compuerta: documento siguiente): Jev (confianza 0.9): Panetolikos_FS_2022-06-30.md L1471 "Σύνολο"
+```
+
 ## 2021
 
 ### Ingresos
@@ -283,6 +299,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Estadio
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.288535 (compuerta: documento siguiente): Jev (confianza 0.92): Panetolikos_FS_2021-06-30.md L1437 "Σύνολο"
 ```
 
 ## 2020
