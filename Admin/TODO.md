@@ -135,6 +135,18 @@ llegue acá.
        ajuste como lo hace la lectura "signo del documento" (to-do 200). Además, el chequeo del año vecino compara con documentos que están en
        documentos-descartados.txt (Vitória 2021 contra el 2021-22 de la asociación; Rio Ave 2016 contra el 2014-15): tendría que saltearlos.
 
+    m) LA COLA SE LLENA DE PREGUNTAS REPETIDAS (lote 77: 617 casos de Portugal en 145 documentos; pedido de Guido: "son muuuchas
+       preguntas en cola"). Medido: de 298 preguntas de categoría, solo 156 son de club + etiqueta distinta (casi la mitad repite la
+       misma etiqueta del mismo club en otro año: "Bilheteira e Bilhetes de Época" de Sporting sale en 7 años con la misma propuesta).
+       Escalón posible: preguntar UNA vez por club + etiqueta + categoría propuesta y aplicar la respuesta a todos los años del lote
+       (hoy el precedente del club recién existe cuando el primer año se carga, y en un club nuevo ninguno está cargado). Compuerta: la
+       misma, pero el precedente vale desde la respuesta y no desde la carga. A medir con la cola actual de Portugal.
+    n) "Outros" Y ETIQUETAS GENÉRICAS CON CONFIANZA 0 (23 preguntas en Portugal). Si la fila genérica cae dentro de un bloque con nombre
+       (p. ej. "Outros" bajo "Rendimentos suplementares"), el bloque decide la categoría; hoy sale 0 y va a la cola. A diseñar con 2-3
+       casos reales.
+    o) VERIFICAR (186 casos en Portugal): 64 dudas de extraer, 39 dudas de tema (escala, cuadro), 32 que no cierran, 24 de localizar,
+       14 de año vecino, 10 de primer año. Mirar antes de diseñar si las dudas de escala ("¿en euros y no en miles?") y las filas
+       informativas debajo del total se repiten por club y se pueden contestar una vez por club, como en m).
 238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
    sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
    (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
