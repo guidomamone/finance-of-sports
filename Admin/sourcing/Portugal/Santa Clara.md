@@ -27,3 +27,5 @@ Confirmar si los "Relatório de gestão e contas" (sin sufijo SAD) son del CD Sa
 convendría cruzarlos para ver si alguno tiene series más largas.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2025 desde `Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf` (sourceId `santaclara-pt-relatorio-contas-sad-2024-25`).

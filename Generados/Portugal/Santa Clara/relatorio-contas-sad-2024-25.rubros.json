@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
   "club": "santa-clara",
   "year": 2025,
-  "generatedAt": "2026-10-15T23:18:26.402Z",
+  "generatedAt": "2026-10-15T23:22:48.880Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.520033
       ],
-      "glosa": "Venta de entradas y taquilla"
+      "glosa": "Entradas para partidos"
     },
     {
       "label": "Apostas Desportivas e Placard",
@@ -74,7 +74,7 @@
       "values": [
         0.347472
       ],
-      "glosa": "Cesión por préstamo de derechos deportivos"
+      "glosa": "Cesión temporal de derechos deportivos"
     },
     {
       "label": "Diversos",
@@ -104,7 +104,7 @@
       "values": [
         0.000001
       ],
-      "glosa": "Descuentos por pronto pago obtenidos"
+      "glosa": "Descuentos sobre compras por pronto pago obtenidos"
     },
     {
       "label": "Alienação de Ativos Intangíveis",
@@ -148,9 +148,9 @@
     },
     {
       "label": "Juros e Outros Rendimentos Similares",
-      "lado": "expense",
+      "lado": "revenue",
       "page": 35,
-      "section": "nota que desglosa \"Outros rendimentos\"",
+      "section": "ajuste manual",
       "values": [
         0.033375
       ],
@@ -164,7 +164,7 @@
       "values": [
         0.378448
       ],
-      "glosa": "Coste de las mercancías vendidas y materiales consumidos"
+      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
     },
     {
       "label": "Subcontratos",
@@ -174,7 +174,7 @@
       "values": [
         0.284963
       ],
-      "glosa": "Subcontratos"
+      "glosa": "Subcontratas"
     },
     {
       "label": "Trabalhos especializados",
@@ -284,7 +284,7 @@
       "values": [
         0.000035
       ],
-      "glosa": "Artículos promocionales y de regalo"
+      "glosa": "Artículos de regalo"
     },
     {
       "label": "Outros",
@@ -354,7 +354,7 @@
       "values": [
         0.017719
       ],
-      "glosa": "Transporte de personal"
+      "glosa": "Transportes de personal"
     },
     {
       "label": "Transportes de mercadorias",
@@ -364,7 +364,7 @@
       "values": [
         0.002744
       ],
-      "glosa": "Transporte de mercancías"
+      "glosa": "Transportes de mercancías"
     },
     {
       "label": "Rendas e alugueres",
@@ -374,7 +374,7 @@
       "values": [
         0.566195
       ],
-      "glosa": "Rentas y alquileres"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Comunicação",
@@ -404,7 +404,7 @@
       "values": [
         0.07307
       ],
-      "glosa": "Servicios contenciosos y notariales"
+      "glosa": "Gastos notariales y contenciosos"
     },
     {
       "label": "Despesas de representação",
@@ -424,7 +424,7 @@
       "values": [
         0.030451
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Remunerações dos órgãos sociais",
@@ -434,7 +434,7 @@
       "values": [
         0.280628
       ],
-      "glosa": "Retribuciones de los órganos de gobierno"
+      "glosa": "Remuneraciones de los órganos de gobierno"
     },
     {
       "label": "Remunerações do pessoal",
@@ -444,7 +444,7 @@
       "values": [
         11.611976
       ],
-      "glosa": "Retribuciones del personal"
+      "glosa": "Remuneraciones del personal"
     },
     {
       "label": "Indemnizações",
@@ -474,7 +474,7 @@
       "values": [
         0.942493
       ],
-      "glosa": "Seguros de accidentes laborales y enfermedades profesionales"
+      "glosa": "Seguros de accidentes de trabajo y enfermedades profesionales"
     },
     {
       "label": "Outros gastos com o pessoal, dos quais:",
@@ -494,7 +494,7 @@
       "values": [
         0.236995
       ],
-      "glosa": "Deterioro de créditos comerciales a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos y cuentas a cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/ Reduções)",
@@ -504,7 +504,7 @@
       "values": [
         0.471404
       ],
-      "glosa": "Provisiones (aumentos/reducciones)"
+      "glosa": "Provisiones (dotaciones/reversiones)"
     },
     {
       "label": "IMI",
@@ -514,7 +514,7 @@
       "values": [
         0.003043
       ],
-      "glosa": "IMI (Impuesto sobre Bienes Inmuebles)"
+      "glosa": "IMI (Impuesto Municipal sobre Inmuebles)"
     },
     {
       "label": "IUC",
@@ -524,7 +524,7 @@
       "values": [
         0.000555
       ],
-      "glosa": "IUC (Impuesto sobre Vehículos de Tracción Mecánica)"
+      "glosa": "IUC (Impuesto Único de Circulación)"
     },
     {
       "label": "Imposto de Selo",
@@ -534,7 +534,7 @@
       "values": [
         0.056836
       ],
-      "glosa": "Impuesto de timbre"
+      "glosa": "Impuesto de Actos Jurídicos Documentados (Timbre)"
     },
     {
       "label": "Taxas",
@@ -554,7 +554,7 @@
       "values": [
         0.000001
       ],
-      "glosa": "Descuentos por pronto pago concedidos"
+      "glosa": "Descuentos por pronto pago"
     },
     {
       "label": "Jogadores",
@@ -594,7 +594,7 @@
       "values": [
         0.053782
       ],
-      "glosa": "Cuotas"
+      "glosa": "Cuotas de socios"
     },
     {
       "label": "Diferença de câmbio desfavoráveis",
@@ -624,7 +624,7 @@
       "values": [
         0.157836
       ],
-      "glosa": "Gastos no justificados documentalmente"
+      "glosa": "Gastos no debidamente documentados"
     },
     {
       "label": "Juros de Mora e compensatórios",
@@ -654,7 +654,7 @@
       "values": [
         1.397239
       ],
-      "glosa": "Dotaciones/reversiones por amortización y depreciación"
+      "glosa": "Dotaciones/reversiones de amortización y depreciación"
     },
     {
       "label": "Imparidade de ativos depreciáveis/amortizáveis (perdas/reversões)",
@@ -664,7 +664,7 @@
       "values": [
         0.011195
       ],
-      "glosa": "Deterioro de activos depreciables/amortizables (pérdidas/reversiones)"
+      "glosa": "Deterioro de activos amortizables (pérdidas/reversiones)"
     }
   ]
 }

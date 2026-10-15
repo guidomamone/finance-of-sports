@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.md",
- "generado": "2026-10-15T23:18:26.402Z",
+ "generado": "2026-10-15T23:22:48.880Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -301,6 +301,19 @@
    "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "fila",
+   "valor": "33.375,18",
+   "linea": 1041,
+   "etiqueta": "Juros e Outros Rendimentos Similares",
+   "lado": "ingreso",
+   "reemplaza": "Juros e Outros Rendimentos Similares",
+   "motivo": "La fila está dentro de la nota 10.2 'Outros Rendimentos' (suma 838.396,78, igual al renglón del estado), pero la extracción la puso como gasto (-33.375). Es ingreso: sin ella los ingresos suman 8.623.474 y el resultado da -13.307.895 en vez de -13.241.139 (diferencia 2 x 33.375).",
+   "evidencia": "relatorio-contas-sad-2024-25.md L1030-1042 (nota 10.2), L338 (Outros rendimentos 838 396,78 en el estado)",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
   }
  ],
  "cola": [],
@@ -339,6 +352,7 @@
  ],
  "notas": [
   "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (0.633981 contra 0.378448, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"Juros e Outros Rendimentos Similares\" (ingreso) 33.375,18, en lugar de \"Juros e Outros Rendimentos Similares\" (2026-10-15, La fila está dentro de la nota 10.2 'Outros Rendimentos' (suma 838.396,78, igual al renglón del estado), pero la extracción la puso como gasto (-33.375). Es ingreso: sin ella los ingresos suman 8.623.474 y el resultado da -13.307.895 en vez de -13.241.139 (diferencia 2 x 33.375).)",
   "línea 336: 236 995,04 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (23659504) el resultado daría -36.663651 y no cierra)",
   "línea 337: 471 404,17 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (47146417) el resultado daría -59.916155 y no cierra)",
   "línea 342: 11 194,68 no está en el segunda lectura; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
@@ -490,11 +504,11 @@
   },
   {
    "etiqueta": "Juros e Outros Rendimentos Similares",
-   "lado": "financiero",
+   "lado": "ingreso",
    "M": 0.033375,
    "pagina": 35,
    "linea": 1041,
-   "origen": "nota que desglosa \"Outros rendimentos\""
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Custo das mercadorias vendidas e das matérias consumidas",
