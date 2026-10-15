@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.md",
- "generado": "2026-10-15T13:36:53.995Z",
+ "generado": "2026-10-15T13:47:25.539Z",
  "estado": "ok",
  "clubId": "rioave-pt",
  "year": 2024,
@@ -25,26 +25,26 @@
   {
    "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
    "campo": "fila",
-   "valor": "-4,89",
+   "valor": "4,89",
    "linea": 351,
    "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
-   "lado": "gasto",
+   "lado": "ingreso",
    "reemplaza": "Imparidade de dívidas a receber (perdas/reversões)",
-   "motivo": "Claude 2026-10-15 (lote 76, subagente Sonnet, revisado en la imagen): en el PDF el renglón va SIN signo menos (reversión) mientras los gastos llevan '-'; el .md perdió todos los signos. Con las dos reversiones el EBITDA da el impreso -3.942.721,65 y el resultado -5.863.187,66",
-   "evidencia": "pág. 14 del visor (impreso 2 al pie), .md L351",
+   "motivo": "Claude 2026-10-15 (lote 76): reversión de imparidad (en el PDF sin signo menos, pág. 14 del visor). Pasa al lado del ingreso con valor positivo porque cargar.mjs toma el valor absoluto de un ajuste fila de gasto negativo (verificar sí cerraba con -X como gasto): el efecto en el resultado es el mismo (to-do 237 l)",
+   "evidencia": ".md L351",
    "autor": "Claude",
    "fecha": "2026-10-15"
   },
   {
    "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
    "campo": "fila",
-   "valor": "-2.500,00",
+   "valor": "2.500,00",
    "linea": 353,
    "etiqueta": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
-   "lado": "gasto",
+   "lado": "ingreso",
    "reemplaza": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
-   "motivo": "Claude 2026-10-15 (lote 76, subagente Sonnet, revisado en la imagen): en el PDF va SIN signo menos (reversión); como gasto daba 5.000 de diferencia en el EBITDA impreso -3.942.721,65",
-   "evidencia": "pág. 14 del visor (impreso 2 al pie), .md L353",
+   "motivo": "Claude 2026-10-15 (lote 76): reversión de imparidad (en el PDF sin signo menos, pág. 14 del visor). Pasa al lado del ingreso con valor positivo porque cargar.mjs toma el valor absoluto de un ajuste fila de gasto negativo (verificar sí cerraba con -X como gasto): el efecto en el resultado es el mismo (to-do 237 l)",
+   "evidencia": ".md L353",
    "autor": "Claude",
    "fecha": "2026-10-15"
   },
@@ -91,7 +91,7 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 0.0050097799999990755
+   "dif": 8.881784197001252e-16
   },
   {
    "nombre": "año anterior cargado",
@@ -111,10 +111,11 @@
  ],
  "notas": [
   "la nota de \"Subsídios à Exploração\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "ajuste manual: fila \"Imparidade de dívidas a receber (perdas/reversões)\" (gasto) -4,89, en lugar de \"Imparidade de dívidas a receber (perdas/reversões)\" (2026-10-15, Claude 2026-10-15 (lote 76, subagente Sonnet, revisado en la imagen): en el PDF el renglón va SIN signo menos (reversión) mientras los gastos llevan '-'; el .md perdió todos los signos. Con las dos reversiones el EBITDA da el impreso -3.942.721,65 y el resultado -5.863.187,66)",
-  "ajuste manual: fila \"Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)\" (gasto) -2.500,00, en lugar de \"Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)\" (2026-10-15, Claude 2026-10-15 (lote 76, subagente Sonnet, revisado en la imagen): en el PDF va SIN signo menos (reversión); como gasto daba 5.000 de diferencia en el EBITDA impreso -3.942.721,65)",
+  "ajuste manual: fila \"Imparidade de dívidas a receber (perdas/reversões)\" (ingreso) 4,89, en lugar de \"Imparidade de dívidas a receber (perdas/reversões)\" (2026-10-15, Claude 2026-10-15 (lote 76): reversión de imparidad (en el PDF sin signo menos, pág. 14 del visor). Pasa al lado del ingreso con valor positivo porque cargar.mjs toma el valor absoluto de un ajuste fila de gasto negativo (verificar sí cerraba con -X como gasto): el efecto en el resultado es el mismo (to-do 237 l))",
+  "ajuste manual: fila \"Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)\" (ingreso) 2.500,00, en lugar de \"Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)\" (2026-10-15, Claude 2026-10-15 (lote 76): reversión de imparidad (en el PDF sin signo menos, pág. 14 del visor). Pasa al lado del ingreso con valor positivo porque cargar.mjs toma el valor absoluto de un ajuste fila de gasto negativo (verificar sí cerraba con -X como gasto): el efecto en el resultado es el mismo (to-do 237 l))",
   "ajuste manual: fila \"Juros e rendimentos similares obtidos\" (financiero) 115.896,16, en lugar de \"Juros e rendimentos similares obtidos\" (2026-10-15, Claude 2026-10-15 (lote 76, revisado en la imagen de la pág. 14): el .md perdió los signos y la lectura sumaba los intereses obtenidos como costo (financiero 0,317495 en vez del neto -0,085703); con los dos el resultado da el impreso -5.863.187,66)",
   "ajuste manual: fila \"Juros e gastos similares suportados\" (financiero) -201.599,08, en lugar de \"Juros e gastos similares suportados\" (2026-10-15, Claude 2026-10-15 (lote 76, revisado en la imagen de la pág. 14): el .md perdió los signos y la lectura sumaba los intereses obtenidos como costo (financiero 0,317495 en vez del neto -0,085703); con los dos el resultado da el impreso -5.863.187,66)",
+  "línea 352: 692 047,70 no está en el segunda lectura; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
   "duda de localizar que no afecta la carga: Los cuadros de gestión de pág. 7-10 tienen tres épocas y reagrupan rubros ya desglosados en las notas 17-25.",
   "duda de extraer ya contestada para el club (antes de su alta) (fila-ilegible, \"Vendas e prestações de serviços\"): aceptar, en relatorio-contas-2023-24.pdf",
   "duda de extraer que no afecta la carga: L1292 tiene la celda 2024 vacía; se cargó con actual vacío.",
@@ -124,8 +125,8 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 11.373892,
-  "gastos": 17.156387,
+  "ingresos": 11.376397,
+  "gastos": 17.153882,
   "financiero": -0.085703,
   "impuesto": 0,
   "resultadoImpreso": -5.863188,
@@ -237,6 +238,22 @@
    "pagina": 37,
    "linea": 1347,
    "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": "ingreso",
+   "M": 0.000005,
+   "pagina": 14,
+   "linea": 351,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
+   "lado": "ingreso",
+   "M": 0.0025,
+   "pagina": 14,
+   "linea": 353,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Subcontratos",
@@ -557,22 +574,6 @@
    "pagina": 38,
    "linea": 1389,
    "origen": "nota que desglosa \"Gastos / reversões de depreciação e de amortização\""
-  },
-  {
-   "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
-   "lado": "gasto",
-   "M": 0.000005,
-   "pagina": 14,
-   "linea": 351,
-   "origen": "ajuste manual"
-  },
-  {
-   "etiqueta": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
-   "lado": "gasto",
-   "M": 0.0025,
-   "pagina": 14,
-   "linea": 353,
-   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

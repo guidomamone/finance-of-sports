@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2020-21.pdf",
  "md": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2020-21.md",
- "generado": "2026-10-15T13:14:09.534Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T13:36:54.061Z",
+ "estado": "ok",
+ "clubId": "vitoriaguimaraes-pt",
  "year": 2021,
  "escala": {
   "valor": "unidades",
@@ -23,10 +23,7 @@
    "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "4744a25",
-  "cc8ee99"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -52,7 +49,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",

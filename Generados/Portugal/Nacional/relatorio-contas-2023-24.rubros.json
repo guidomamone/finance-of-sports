@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf",
   "club": "nacional-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T13:14:09.490Z",
+  "generatedAt": "2026-10-15T13:36:53.928Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         0.5
       ],
-      "glosa": "Derechos audiovisuales"
+      "glosa": "Derechos de televisión"
     },
     {
       "label": "DRJD",
@@ -84,7 +84,7 @@
       "values": [
         0.422276
       ],
-      "glosa": "Premios Federación Portuguesa de Fútbol"
+      "glosa": "Premios de la Federación Portuguesa de Fútbol"
     },
     {
       "label": "Prémios - Mecanismo de Solidariedade",
@@ -104,7 +104,7 @@
       "values": [
         0.229792
       ],
-      "glosa": "Correcciones relativas a ejercicios anteriores"
+      "glosa": "Ajustes de ejercicios anteriores"
     },
     {
       "label": "Excesso da estimativa para impostos",
@@ -124,7 +124,7 @@
       "values": [
         0.242545
       ],
-      "glosa": "Subvención tarifa de residentes"
+      "glosa": "Subvención por tarifa de residente"
     },
     {
       "label": "Outros não especificados",
@@ -174,7 +174,7 @@
       "values": [
         0.032889
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Serviços bancários",
@@ -294,7 +294,7 @@
       "values": [
         0.1212
       ],
-      "glosa": "Remuneraciones de los órganos de gobierno"
+      "glosa": "Remuneraciones de los órganos sociales"
     },
     {
       "label": "Remunerações do Pessoal - Funcionários",
@@ -334,7 +334,7 @@
       "values": [
         0.028785
       ],
-      "glosa": "Cargas sociales s/remun. - Órganos de gobierno"
+      "glosa": "Cargas sociales s/remun. - Órganos sociales"
     },
     {
       "label": "Enc. s/rem.-pessoal - Funcionários",
@@ -374,7 +374,7 @@
       "values": [
         0.00018
       ],
-      "glosa": "Seguro de acc. de trabajo - Personal"
+      "glosa": "Seguro de accidentes de trabajo - Personal"
     },
     {
       "label": "Seg.ac.trb - Jogadores",
@@ -384,7 +384,7 @@
       "values": [
         0.125546
       ],
-      "glosa": "Seguro de acc. de trabajo - Jugadores"
+      "glosa": "Seguro de accidentes de trabajo - Jugadores"
     },
     {
       "label": "Outros Custos com Pessoal - Jogadores",
@@ -424,7 +424,7 @@
       "values": [
         0.422414
       ],
-      "glosa": "Provisiones (aumentos/disminuciones)"
+      "glosa": "Provisiones (dotaciones/reversiones)"
     },
     {
       "label": "Encargos com descontos de letras",
@@ -434,7 +434,7 @@
       "values": [
         0.01081
       ],
-      "glosa": "Gastos por descuento de efectos"
+      "glosa": "Gastos por descuento de efectos comerciales"
     },
     {
       "label": "Correções relativas a períodos anteriores",
@@ -444,7 +444,7 @@
       "values": [
         0.016971
       ],
-      "glosa": "Correcciones relativas a ejercicios anteriores"
+      "glosa": "Ajustes de ejercicios anteriores"
     },
     {
       "label": "Quotizações",
@@ -474,7 +474,7 @@
       "values": [
         0.012307
       ],
-      "glosa": "Costas judiciales, tribunales, etc."
+      "glosa": "Costas judiciales, tribunal, etc."
     },
     {
       "label": "Outros não especificados",
@@ -494,7 +494,7 @@
       "values": [
         0.08125
       ],
-      "glosa": "Gastos/reversiones de amortización y depreciación"
+      "glosa": "Gastos/reversiones por amortización y deterioro de valor"
     }
   ]
 }

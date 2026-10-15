@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2023-24.md",
   "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2023-24.pdf",
-  "club": "vitoria-guimaraes",
+  "club": "vitoriaguimaraes-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T13:14:09.544Z",
+  "generatedAt": "2026-10-15T13:36:54.084Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         1.800043
       ],
-      "glosa": "Taquilla / Cuotas / Abonos de socios"
+      "glosa": "Taquilla/Cuotas/Abonos de socios"
     },
     {
       "label": "Premios competições nacionais e UEFA",
@@ -34,7 +34,7 @@
       "values": [
         0.959332
       ],
-      "glosa": "Premios por competiciones nacionales y UEFA"
+      "glosa": "Premios de competiciones nacionales y UEFA"
     },
     {
       "label": "Publicidade/Patrocínios",
@@ -44,7 +44,7 @@
       "values": [
         2.007126
       ],
-      "glosa": "Publicidad / Patrocinios"
+      "glosa": "Publicidad/Patrocinios"
     },
     {
       "label": "Direitos Televisivos",
@@ -54,7 +54,7 @@
       "values": [
         6.922619
       ],
-      "glosa": "Derechos audiovisuales"
+      "glosa": "Derechos televisivos"
     },
     {
       "label": "Mecanismo Solidariedade",
@@ -114,7 +114,7 @@
       "values": [
         0.040528
       ],
-      "glosa": "Seguros - indemnizaciones"
+      "glosa": "Seguros – indemnizaciones"
     },
     {
       "label": "Outros rendimentos Suplementares",
@@ -124,7 +124,7 @@
       "values": [
         0.393421
       ],
-      "glosa": "Otros ingresos accesorios"
+      "glosa": "Otros ingresos suplementarios"
     },
     {
       "label": "Compensação Financeira",
@@ -164,7 +164,7 @@
       "values": [
         0.025789
       ],
-      "glosa": "Beneficios por valoración de existencias"
+      "glosa": "Beneficios en existencias"
     },
     {
       "label": "Rendimentos e ganhos em investimentos",
@@ -174,7 +174,7 @@
       "values": [
         6.941963
       ],
-      "glosa": "Ingresos y ganancias de inversiones"
+      "glosa": "Ingresos y ganancias en inversiones"
     },
     {
       "label": "Outros",
@@ -194,7 +194,7 @@
       "values": [
         0.479517
       ],
-      "glosa": "Coste de ventas y materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y materias consumidas"
     },
     {
       "label": "Trabalhos especializados",
@@ -204,7 +204,7 @@
       "values": [
         0.823031
       ],
-      "glosa": "Servicios y trabajos especializados"
+      "glosa": "Trabajos especializados"
     },
     {
       "label": "Publicidade e propaganda",
@@ -234,7 +234,7 @@
       "values": [
         0.563049
       ],
-      "glosa": "Honorarios profesionales"
+      "glosa": "Honorarios"
     },
     {
       "label": "Comissões",
@@ -264,7 +264,7 @@
       "values": [
         1.508382
       ],
-      "glosa": "Gastos de competición"
+      "glosa": "Gastos de competiciones"
     },
     {
       "label": "Prospecção; Empréstimos;",
@@ -274,7 +274,7 @@
       "values": [
         0.197784
       ],
-      "glosa": "Prospección y préstamos"
+      "glosa": "Prospección y cesiones"
     },
     {
       "label": "Ferramentas, utensílios desgaste rápido",
@@ -314,7 +314,7 @@
       "values": [
         0.021625
       ],
-      "glosa": "Artículos promocionales y de regalo"
+      "glosa": "Artículos para regalo"
     },
     {
       "label": "Material Desportivo",
@@ -364,7 +364,7 @@
       "values": [
         0.050308
       ],
-      "glosa": "Otros fluidos y suministros"
+      "glosa": "Otros suministros"
     },
     {
       "label": "Deslocações e estadas",
@@ -384,7 +384,7 @@
       "values": [
         0.009749
       ],
-      "glosa": "Transportes de mercancías"
+      "glosa": "Transporte de mercancías"
     },
     {
       "label": "Rendas e alugueres",
@@ -414,7 +414,7 @@
       "values": [
         0.078963
       ],
-      "glosa": "Primas de seguros"
+      "glosa": "Seguros"
     },
     {
       "label": "Contencioso e notariado",
@@ -424,7 +424,7 @@
       "values": [
         0.046155
       ],
-      "glosa": "Gastos notariales y contenciosos"
+      "glosa": "Gastos contenciosos y notariales"
     },
     {
       "label": "Despesas de Representação",
@@ -444,7 +444,7 @@
       "values": [
         0.144674
       ],
-      "glosa": "Limpieza e higiene"
+      "glosa": "Limpieza, higiene y confort"
     },
     {
       "label": "Outros serviços",
@@ -454,7 +454,7 @@
       "values": [
         0.129881
       ],
-      "glosa": "Otros servicios exteriores"
+      "glosa": "Otros servicios"
     },
     {
       "label": "Pessoal VSC ao serviço SAD",
@@ -464,7 +464,7 @@
       "values": [
         0.794272
       ],
-      "glosa": "Personal de VSC al servicio de la SAD"
+      "glosa": "Personal del VSC al servicio de la SAD"
     },
     {
       "label": "Remuneração Administração",
@@ -474,7 +474,7 @@
       "values": [
         0.213837
       ],
-      "glosa": "Remuneración del Consejo de Administración"
+      "glosa": "Remuneración de la administración"
     },
     {
       "label": "Remuneração pessoal administrativo",
@@ -544,7 +544,7 @@
       "values": [
         0.091402
       ],
-      "glosa": "Pérdidas por deterioro de créditos comerciales"
+      "glosa": "Deterioro de créditos a cobrar"
     },
     {
       "label": "Imparidade de inventarios",
@@ -564,7 +564,7 @@
       "values": [
         0.057515
       ],
-      "glosa": "Provisiones (dotaciones / excesos)"
+      "glosa": "Provisiones (dotaciones/reversiones)"
     },
     {
       "label": "Impostos",
@@ -634,7 +634,7 @@
       "values": [
         0.383865
       ],
-      "glosa": "Multas y sanciones"
+      "glosa": "Multas"
     },
     {
       "label": "Outros",
@@ -654,7 +654,7 @@
       "values": [
         0.134272
       ],
-      "glosa": "Instalaciones técnicas y maquinaria"
+      "glosa": "Instalaciones técnicas y equipamiento"
     },
     {
       "label": "Equipamento de transporte",
@@ -674,7 +674,7 @@
       "values": [
         0.039946
       ],
-      "glosa": "Mobiliario y equipos de oficina"
+      "glosa": "Equipamiento administrativo"
     },
     {
       "label": "Outros ativos fixos tangíveis",

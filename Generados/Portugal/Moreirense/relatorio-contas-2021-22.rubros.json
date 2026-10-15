@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2021-22.pdf",
   "club": "moreirense-pt",
   "year": 2022,
-  "generatedAt": "2026-10-15T13:14:09.475Z",
+  "generatedAt": "2026-10-15T13:36:53.881Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -84,7 +84,7 @@
       "values": [
         0.001102
       ],
-      "glosa": "Coste de las mercancías vendidas y materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
     },
     {
       "label": "6221 Trabalhos especializados",
@@ -134,7 +134,7 @@
       "values": [
         0.014752
       ],
-      "glosa": "6231 Herramientas y útiles de desgaste rápido"
+      "glosa": "6231 Herramientas y utensilios de desgaste rápido"
     },
     {
       "label": "6233 Material de escritório",
@@ -214,7 +214,7 @@
       "values": [
         0.086358
       ],
-      "glosa": "6261 Arrendamientos y alquileres"
+      "glosa": "6261 Arrendamientos y cánones"
     },
     {
       "label": "6262 Comunicação",
@@ -244,7 +244,7 @@
       "values": [
         0.004648
       ],
-      "glosa": "6265 Gastos contenciosos y notariales"
+      "glosa": "6265 Gastos jurídicos y notariales"
     },
     {
       "label": "6267 Limpeza, higiene e conforto",
@@ -324,7 +324,7 @@
       "values": [
         0
       ],
-      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de deudores comerciales (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -354,7 +354,7 @@
       "values": [
         0.000023
       ],
-      "glosa": "Descuentos sobre ventas por pronto pago"
+      "glosa": "Descuentos sobre ventas por pronto pago concedidos"
     },
     {
       "label": "Outros",
@@ -374,7 +374,7 @@
       "values": [
         1.120698
       ],
-      "glosa": "Gastos/reversiones de amortización y depreciación"
+      "glosa": "Dotaciones/reversiones de amortización y depreciación"
     }
   ]
 }

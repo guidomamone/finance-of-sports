@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2020-21.md",
   "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2020-21.pdf",
-  "club": "vitoria-guimaraes",
+  "club": "vitoriaguimaraes-pt",
   "year": 2021,
-  "generatedAt": "2026-10-15T13:14:09.534Z",
+  "generatedAt": "2026-10-15T13:36:54.061Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         0.786351
       ],
-      "glosa": "Cuotas de socios y palcos"
+      "glosa": "Cuotas y palcos"
     },
     {
       "label": "Patrocínios",
@@ -114,7 +114,7 @@
       "values": [
         0.005147
       ],
-      "glosa": "Beneficios en existencias"
+      "glosa": "Ganancias en existencias"
     },
     {
       "label": "Rendimentos e ganhos em investimentos",
@@ -124,7 +124,7 @@
       "values": [
         16.70097
       ],
-      "glosa": "Ingresos y beneficios en inversiones"
+      "glosa": "Ingresos y ganancias en inversiones"
     },
     {
       "label": "Outros",
@@ -204,7 +204,7 @@
       "values": [
         0.297706
       ],
-      "glosa": "Reparaciones y conservación"
+      "glosa": "Reparación y conservación"
     },
     {
       "label": "Despesas com Provas",
@@ -224,7 +224,7 @@
       "values": [
         0.346502
       ],
-      "glosa": "Prospección y cesiones"
+      "glosa": "Prospección; Cesiones;"
     },
     {
       "label": "Ferramentas, utensílios desgaste rápido",
@@ -264,7 +264,7 @@
       "values": [
         0.003199
       ],
-      "glosa": "Artículos para obsequios"
+      "glosa": "Artículos para obsequio"
     },
     {
       "label": "Material Desportivo",
@@ -364,7 +364,7 @@
       "values": [
         0.064854
       ],
-      "glosa": "Primas de seguros"
+      "glosa": "Seguros"
     },
     {
       "label": "Contencioso e notariado",
@@ -414,7 +414,7 @@
       "values": [
         0.193527
       ],
-      "glosa": "Retribución del órgano de administración"
+      "glosa": "Remuneración de la administración"
     },
     {
       "label": "Remuneração pessoal administrativo",
@@ -424,7 +424,7 @@
       "values": [
         1.260493
       ],
-      "glosa": "Retribución del personal administrativo"
+      "glosa": "Remuneración del personal administrativo"
     },
     {
       "label": "Remuneração treinadores",
@@ -434,7 +434,7 @@
       "values": [
         1.636457
       ],
-      "glosa": "Retribución del cuerpo técnico"
+      "glosa": "Remuneración de entrenadores"
     },
     {
       "label": "Remuneração jogadores",
@@ -444,7 +444,7 @@
       "values": [
         13.861653
       ],
-      "glosa": "Retribución de futbolistas"
+      "glosa": "Remuneración de jugadores"
     },
     {
       "label": "Encargos com remunerações",
@@ -454,7 +454,7 @@
       "values": [
         1.279127
       ],
-      "glosa": "Cargas sociales"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguro acidentes trabalho",
@@ -484,7 +484,7 @@
       "values": [
         0.068216
       ],
-      "glosa": "Deterioro de créditos comerciales"
+      "glosa": "Deterioro de créditos comerciales a cobrar"
     },
     {
       "label": "Imparidade de invantários",
@@ -504,7 +504,7 @@
       "values": [
         0.36676
       ],
-      "glosa": "Provisiones (dotaciones/reversiones)"
+      "glosa": "Provisiones (aumentos/reducciones)"
     },
     {
       "label": "Impostos",
@@ -574,7 +574,7 @@
       "values": [
         0.115358
       ],
-      "glosa": "Multas y sanciones"
+      "glosa": "Multas"
     },
     {
       "label": "Outros",
@@ -594,7 +594,7 @@
       "values": [
         6.815353
       ],
-      "glosa": "Gastos y reversiones por amortización y depreciación"
+      "glosa": "Gastos/reversiones de amortización y depreciación"
     }
   ]
 }

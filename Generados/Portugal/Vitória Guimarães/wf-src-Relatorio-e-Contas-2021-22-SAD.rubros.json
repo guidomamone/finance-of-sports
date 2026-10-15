@@ -1,31 +1,11 @@
 {
   "md": "Clubes/Portugal/Vitória Guimarães/wf-src-Relatorio-e-Contas-2021-22-SAD.md",
   "pdf": "Clubes/Portugal/Vitória Guimarães/wf-src-Relatorio-e-Contas-2021-22-SAD.pdf",
-  "club": "vitoria-guimaraes",
+  "club": "vitoriaguimaraes-pt",
   "year": 2022,
-  "generatedAt": "2026-10-15T13:14:09.588Z",
+  "generatedAt": "2026-10-15T13:36:54.214Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
-    {
-      "label": "Venda de mercadorias",
-      "lado": "revenue",
-      "page": 77,
-      "section": "nota que desglosa \"Vendas e serviços prestados\"",
-      "values": [
-        0.753358
-      ],
-      "glosa": "Venta de mercaderías"
-    },
-    {
-      "label": "Prestação de serviços",
-      "lado": "revenue",
-      "page": 77,
-      "section": "nota que desglosa \"Vendas e serviços prestados\"",
-      "values": [
-        10.531656
-      ],
-      "glosa": "Prestación de servicios"
-    },
     {
       "label": "Federação Portuguesa de Futebol",
       "lado": "revenue",
@@ -84,7 +64,7 @@
       "values": [
         0.014724
       ],
-      "glosa": "Beneficios en existencias"
+      "glosa": "Ganancias en existencias"
     },
     {
       "label": "Rendimentos e ganhos em investimentos",
@@ -94,7 +74,7 @@
       "values": [
         10.496408
       ],
-      "glosa": "Ingresos y ganancias de inversiones"
+      "glosa": "Ingresos y ganancias en inversiones"
     },
     {
       "label": "Outros",
@@ -107,6 +87,66 @@
       "glosa": "Otros"
     },
     {
+      "label": "Bilheteira/ Quotização/ Pack sócio",
+      "lado": "revenue",
+      "page": 77,
+      "section": "ajuste manual",
+      "values": [
+        1.275428
+      ],
+      "glosa": "Taquilla / Cuotas / Abonos"
+    },
+    {
+      "label": "Prémios competições nacionais e UEFA",
+      "lado": "revenue",
+      "page": 77,
+      "section": "ajuste manual",
+      "values": [
+        0.743008
+      ],
+      "glosa": "Premios por competiciones nacionales y UEFA"
+    },
+    {
+      "label": "Publicidade/ patrocínios",
+      "lado": "revenue",
+      "page": 77,
+      "section": "ajuste manual",
+      "values": [
+        1.52977
+      ],
+      "glosa": "Publicidad / patrocinios"
+    },
+    {
+      "label": "Direitos televisivos",
+      "lado": "revenue",
+      "page": 77,
+      "section": "ajuste manual",
+      "values": [
+        6.922619
+      ],
+      "glosa": "Derechos audiovisuales"
+    },
+    {
+      "label": "Outros",
+      "lado": "revenue",
+      "page": 77,
+      "section": "ajuste manual",
+      "values": [
+        0.060831
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Venda de mercadorias",
+      "lado": "revenue",
+      "page": 77,
+      "section": "ajuste manual",
+      "values": [
+        0.753358
+      ],
+      "glosa": "Venta de mercaderías"
+    },
+    {
       "label": "Custo de mercadorias vendidas e das matérias consumidas",
       "lado": "expense",
       "page": 25,
@@ -114,7 +154,7 @@
       "values": [
         0.542627
       ],
-      "glosa": "Coste de las mercancías vendidas y materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
     },
     {
       "label": "Trabalhos especializados",
@@ -154,7 +194,7 @@
       "values": [
         0.391842
       ],
-      "glosa": "Honorarios"
+      "glosa": "Honorarios profesionales"
     },
     {
       "label": "Comissões",
@@ -174,7 +214,7 @@
       "values": [
         0.284172
       ],
-      "glosa": "Reparación y conservación"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Despesas com Provas",
@@ -184,7 +224,7 @@
       "values": [
         0.741349
       ],
-      "glosa": "Gastos de competiciones"
+      "glosa": "Gastos de competición"
     },
     {
       "label": "Prospeção; Empréstimos;",
@@ -194,7 +234,7 @@
       "values": [
         0.139758
       ],
-      "glosa": "Ojeo y cesiones"
+      "glosa": "Ojeo y scouting; Cesiones;"
     },
     {
       "label": "Ferramentas, utensílios desgaste rápido",
@@ -204,7 +244,7 @@
       "values": [
         0.016837
       ],
-      "glosa": "Herramientas y utensilios de desgaste rápido"
+      "glosa": "Herramientas y útiles de desgaste rápido"
     },
     {
       "label": "Material de escritório",
@@ -224,7 +264,7 @@
       "values": [
         0.007369
       ],
-      "glosa": "Artículos de regalo"
+      "glosa": "Artículos para regalo"
     },
     {
       "label": "Material Desportivo",
@@ -274,7 +314,7 @@
       "values": [
         0.041437
       ],
-      "glosa": "Otros fluidos"
+      "glosa": "Otros suministros"
     },
     {
       "label": "Deslocações e estadas",
@@ -304,7 +344,7 @@
       "values": [
         0.737463
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Comunicação",
@@ -334,7 +374,7 @@
       "values": [
         0.046269
       ],
-      "glosa": "Gastos jurídicos y notariales"
+      "glosa": "Servicios jurídicos y notariales"
     },
     {
       "label": "Despesas de representação",
@@ -354,7 +394,7 @@
       "values": [
         0.095264
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Outros serviços",
@@ -404,7 +444,7 @@
       "values": [
         1.390895
       ],
-      "glosa": "Remuneración de entrenadores"
+      "glosa": "Remuneración del cuerpo técnico"
     },
     {
       "label": "Remuneração jogadores",
@@ -484,7 +524,7 @@
       "values": [
         0.956617
       ],
-      "glosa": "Provisiones (aumentos/reducciones)"
+      "glosa": "Provisiones (dotaciones/reversiones)"
     },
     {
       "label": "Impostos",
@@ -514,7 +554,7 @@
       "values": [
         0.225943
       ],
-      "glosa": "Correcciones relativas a ejercicios anteriores"
+      "glosa": "Ajustes de ejercicios anteriores"
     },
     {
       "label": "Donativos",
@@ -564,7 +604,7 @@
       "values": [
         7.769947
       ],
-      "glosa": "Gastos/reversiones de amortización y depreciación"
+      "glosa": "Dotaciones/reversiones de amortización y depreciación"
     }
   ]
 }

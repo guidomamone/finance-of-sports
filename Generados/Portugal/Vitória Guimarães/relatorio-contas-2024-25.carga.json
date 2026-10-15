@@ -1,10 +1,18 @@
 {
  "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.pdf",
- "generado": "2026-10-15T13:19:56.019Z",
+ "generado": "2026-10-15T13:44:43.828Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (vitoriaguimaraes-pt)"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "vitoriaguimaraes-pt ya tiene el ejercicio 2025 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['vitoriaguimaraes-pt-relatorio-contas-2024-25'] ya existe"
   }
  ],
  "avisos": [
@@ -867,8 +875,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): 'Outros' de la prestación de servicios [relatorio-contas-2024-25.md L1823]",
+   "notaGuido": "Claude 2026-10-15 (lote 76): otros de Prestação de serviços (nota 16, L1909)",
    "destino": "revenue",
    "amountNative": 0.030153
   },
@@ -1022,8 +1029,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): 'Outros' de la prestación de servicios [relatorio-contas-2024-25.md L1823]",
+   "notaGuido": "Claude 2026-10-15 (lote 76): otros de Prestação de serviços (nota 16, L1909)",
    "destino": "revenue",
    "amountNative": 0.066513
   },
@@ -1866,8 +1872,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2024–25 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia única por palabras \"Vitória de Guimarães\" = \"Vitória Guimarães\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1907,13 +1913,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2024–25 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia única por palabras \"Vitória de Guimarães\" = \"Vitória Guimarães\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 1,
+  "motivos": 3,
   "lineasIngreso": 17,
   "lineasGasto": 50,
   "metaFilas": 3,

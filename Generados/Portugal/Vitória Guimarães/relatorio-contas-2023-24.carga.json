@@ -1,10 +1,18 @@
 {
  "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2023-24.pdf",
- "generado": "2026-10-15T13:19:55.912Z",
+ "generado": "2026-10-15T13:44:43.736Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (vitoriaguimaraes-pt)"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "vitoriaguimaraes-pt ya tiene el ejercicio 2024 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['vitoriaguimaraes-pt-relatorio-contas-2023-24'] ya existe"
   }
  ],
  "avisos": [
@@ -179,13 +187,13 @@
    },
    {
     "rawLabel": "Rendimentos e ganhos em investimentos",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "player_sales",
     "amountNative": 6.941963,
     "disclosureLevel": "aggregated",
     "_pag": 56,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): la nota dice que 'inclui rendimentos relativos a alienação de direitos econômicos e desportivos de jogadores' (L2009: André Amaro, Daniel Silva, Safira; mais-valias 6.827.218,38 €). Formato SNC (to-do 237 h), mismo criterio que 2022 SAD y 2025"
    },
    {
     "rawLabel": "Outros",
@@ -771,6 +779,17 @@
    "evidencia": "relatorio-contas-2023-24.pdf pág. 26 del visor (OCR/texto)",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2023-24.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Rendimentos e ganhos em investimentos",
+   "motivo": "Claude 2026-10-15 (lote 76): la nota dice que 'inclui rendimentos relativos a alienação de direitos econômicos e desportivos de jogadores' (L2009: André Amaro, Daniel Silva, Safira; mais-valias 6.827.218,38 €). Formato SNC (to-do 237 h), mismo criterio que 2022 SAD y 2025",
+   "evidencia": "relatorio-contas-2023-24.md L2005, L2009",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
   }
  ],
  "seleccion": {
@@ -882,8 +901,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): 'Outros' de la prestación de servicios [relatorio-contas-2024-25.md L1823]",
+   "notaGuido": "Claude 2026-10-15 (lote 76): otros de Prestação de serviços (nota 16, L1909)",
    "destino": "revenue",
    "amountNative": 0.047255
   },
@@ -1032,11 +1050,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 6.941963,
-   "cat": "other_income",
+   "cat": "player_sales",
    "conf": 1,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): la nota dice que 'inclui rendimentos relativos a alienação de direitos econômicos e desportivos de jogadores' (L2009: André Amaro, Daniel Silva, Safira; mais-valias 6.827.218,38 €). Formato SNC (to-do 237 h), mismo criterio que 2022 SAD y 2025",
    "enLista": true,
+   "ladoRechazado": false,
    "destino": "revenue",
    "amountNative": 6.941963
   },
@@ -1052,8 +1071,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): 'Outros' de la prestación de servicios [relatorio-contas-2024-25.md L1823]",
+   "notaGuido": "Claude 2026-10-15 (lote 76): otros de Prestação de serviços (nota 16, L1909)",
    "destino": "revenue",
    "amountNative": 0.04096
   },
@@ -1911,8 +1929,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2023–24 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia única por palabras \"Vitória de Guimarães\" = \"Vitória Guimarães\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1952,13 +1970,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2023–24 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia única por palabras \"Vitória de Guimarães\" = \"Vitória Guimarães\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 1,
+  "motivos": 3,
   "lineasIngreso": 18,
   "lineasGasto": 51,
   "metaFilas": 3,

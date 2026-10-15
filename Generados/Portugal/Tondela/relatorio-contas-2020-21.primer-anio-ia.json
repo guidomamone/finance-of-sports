@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Tondela/relatorio-contas-2020-21.md",
+ "clave": "96f8765b65eddc8a80a84108046a95cb450563a3",
+ "generado": "2026-10-15T13:36:59.111Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Sin problemas detectados. Todos los renglones con importe del ejercicio 2020/2021 están cargados, ya sea directamente o reemplazados por el desglose de sus notas: L391 (nota 13), L397 (nota 14), L398 (nota 15) y L404/L405 (nota 16). No se cargaron subtotales (L406, L409, L412, L414) ni importes del ejercicio anterior. Los lados están bien asignados."
+ }
+}

@@ -1,30 +1,24 @@
 {
  "pdf": "Clubes/Portugal/Vitória Guimarães/wf-src-Relatorio-e-Contas-2021-22-SAD.pdf",
- "generado": "2026-10-15T13:19:56.143Z",
+ "generado": "2026-10-15T13:44:43.933Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (vitoriaguimaraes-pt)"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
   },
   {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+   "etapa": "año",
+   "motivo": "vitoriaguimaraes-pt ya tiene el ejercicio 2022 cargado"
   },
   {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 12.751338 + gastos -35.301827 + netInterest -1.636092 + tax -0.074767 = -24.261348 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -13.729694)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "ingresos: las filas suman 12.751338 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -35.075884 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
+   "etapa": "fuente",
+   "motivo": "sources['vitoriaguimaraes-pt-wf-src-relatorio-e-contas-2021-22-sad'] ya existe"
   }
  ],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-09: Revisión del alta (Claude, 2026-10-09): criterio del proyecto: entidad individual cuando el documento trae individual y consolidado (2021-22 trae los dos))"
+  "perímetro: individual (ajuste manual del club, 2026-10-09: Revisión del alta (Claude, 2026-10-09): criterio del proyecto: entidad individual cuando el documento trae individual y consolidado (2021-22 trae los dos))",
+  "ingresos: ningún total impreso igual a la suma de las líneas (23.282994); queda la suma, verificada por el resultado del ejercicio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-35.075884); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "vitoriaguimaraes-pt",
@@ -32,16 +26,6 @@
   "cierre": "2022-06-30",
   "perimetro": "individual",
   "revenueLines": [
-   {
-    "rawLabel": "Venda de mercadorias",
-    "normalizedCategory": "sponsorship_commercial",
-    "amountNative": 0.753358,
-    "disclosureLevel": "aggregated",
-    "_pag": 77,
-    "_escalon": 1,
-    "_conf": 0.98,
-    "_fuenteCat": "categorias.json"
-   },
    {
     "rawLabel": "Federação Portuguesa de Futebol",
     "normalizedCategory": "other_income",
@@ -68,8 +52,8 @@
     "amountNative": 0.035287,
     "disclosureLevel": "aggregated",
     "_pag": 78,
-    "_escalon": 1,
-    "_conf": 0.96,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -88,7 +72,7 @@
     "amountNative": 0.000038,
     "disclosureLevel": "aggregated",
     "_pag": 82,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -98,8 +82,8 @@
     "amountNative": 0.014724,
     "disclosureLevel": "aggregated",
     "_pag": 82,
-    "_escalon": 1,
-    "_conf": 0.98,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -123,6 +107,66 @@
     "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): residual de prestación de servicios y de otros rendimientos"
    },
    {
+    "rawLabel": "Bilheteira/ Quotização/ Pack sócio",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 1.275428,
+    "disclosureLevel": "aggregated",
+    "_pag": 77,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): taquilla, cuotas y pack de socio que paga el club (como 2025)"
+   },
+   {
+    "rawLabel": "Prémios competições nacionais e UEFA",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.743008,
+    "disclosureLevel": "aggregated",
+    "_pag": 77,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): premios de competiciones"
+   },
+   {
+    "rawLabel": "Publicidade/ patrocínios",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.52977,
+    "disclosureLevel": "aggregated",
+    "_pag": 77,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): publicidad y patrocinios"
+   },
+   {
+    "rawLabel": "Direitos televisivos",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 6.922619,
+    "disclosureLevel": "aggregated",
+    "_pag": 77,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): derechos de TV"
+   },
+   {
+    "rawLabel": "Outros",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.060831,
+    "disclosureLevel": "aggregated",
+    "_pag": 77,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): residual de prestación de servicios y de otros rendimientos"
+   },
+   {
+    "rawLabel": "Venda de mercadorias",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.753358,
+    "disclosureLevel": "aggregated",
+    "_pag": 77,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
     "rawLabel": "Outros",
     "normalizedCategory": "other_income",
     "amountNative": -0.209964,
@@ -140,8 +184,8 @@
     "amountNative": -0.542627,
     "disclosureLevel": "aggregated",
     "_pag": 25,
-    "_escalon": 1,
-    "_conf": 0.95,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -150,8 +194,8 @@
     "amountNative": -0.588671,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
-    "_conf": 0.95,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -160,7 +204,7 @@
     "amountNative": -0.005985,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -170,8 +214,8 @@
     "amountNative": -0.056104,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
-    "_conf": 0.92,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -180,7 +224,7 @@
     "amountNative": -0.391842,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -200,8 +244,8 @@
     "amountNative": -0.284172,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
-    "_conf": 0.93,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -210,7 +254,7 @@
     "amountNative": -0.741349,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -230,8 +274,8 @@
     "amountNative": -0.016837,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
-    "_conf": 0.92,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -240,7 +284,7 @@
     "amountNative": -0.040002,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -252,7 +296,7 @@
     "_pag": 79,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Material Desportivo",
@@ -270,8 +314,8 @@
     "amountNative": -0.143199,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
-    "_conf": 0.99,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -280,7 +324,7 @@
     "amountNative": -0.067575,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -290,8 +334,8 @@
     "amountNative": -0.041454,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
-    "_conf": 0.97,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -310,8 +354,8 @@
     "amountNative": -0.93091,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
-    "_conf": 0.95,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -332,7 +376,7 @@
     "_pag": 79,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Comunicação",
@@ -340,7 +384,7 @@
     "amountNative": -0.062269,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -350,8 +394,8 @@
     "amountNative": -0.060844,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
-    "_conf": 0.91,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -360,8 +404,8 @@
     "amountNative": -0.046269,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
-    "_conf": 0.99,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -370,8 +414,8 @@
     "amountNative": -0.032045,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
-    "_conf": 0.99,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -380,8 +424,8 @@
     "amountNative": -0.095264,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 1,
-    "_conf": 0.99,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -392,7 +436,7 @@
     "_pag": 79,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Pessoal VSC ao serviço SAD",
@@ -410,7 +454,7 @@
     "amountNative": -0.192217,
     "disclosureLevel": "aggregated",
     "_pag": 81,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -420,8 +464,8 @@
     "amountNative": -1.181238,
     "disclosureLevel": "aggregated",
     "_pag": 81,
-    "_escalon": 1,
-    "_conf": 0.99,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -430,8 +474,8 @@
     "amountNative": -1.390895,
     "disclosureLevel": "aggregated",
     "_pag": 81,
-    "_escalon": 2,
-    "_conf": 0.85,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -440,7 +484,7 @@
     "amountNative": -12.774688,
     "disclosureLevel": "aggregated",
     "_pag": 81,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -510,8 +554,8 @@
     "amountNative": -0.956617,
     "disclosureLevel": "aggregated",
     "_pag": 25,
-    "_escalon": 1,
-    "_conf": 0.9,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -520,8 +564,8 @@
     "amountNative": -0.011416,
     "disclosureLevel": "aggregated",
     "_pag": 83,
-    "_escalon": 1,
-    "_conf": 0.99,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -530,8 +574,8 @@
     "amountNative": -0.18736,
     "disclosureLevel": "aggregated",
     "_pag": 83,
-    "_escalon": 1,
-    "_conf": 0.96,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -540,8 +584,8 @@
     "amountNative": -0.225943,
     "disclosureLevel": "aggregated",
     "_pag": 83,
-    "_escalon": 2,
-    "_conf": 0.8,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -550,7 +594,7 @@
     "amountNative": -0.0367,
     "disclosureLevel": "aggregated",
     "_pag": 83,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -581,7 +625,7 @@
     "disclosureLevel": "aggregated",
     "_pag": 25,
     "_escalon": 1,
-    "_conf": 0.91,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    }
   ],
@@ -595,11 +639,25 @@
    "assetSales": 0,
    "netInterest": -1.636092,
    "tax": -0.074767,
+   "extraRows": [
+    {
+     "label": "Juros e rendimentos similares obtidos",
+     "value": 0.002916
+    },
+    {
+     "label": "Juros e gastos similares suportados",
+     "value": -1.639008
+    },
+    {
+     "label": "Imposto sobre o rendimento do período",
+     "value": -0.074767
+    }
+   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalRevenue": 23.282994,
+   "officialTotalExpenses": 35.075884,
+   "officialPAT": -13.729694
   },
   "source": {
    "id": "vitoriaguimaraes-pt-wf-src-relatorio-e-contas-2021-22-sad",
@@ -679,9 +737,9 @@
    "linea": 1908,
    "etiqueta": "Direitos televisivos",
    "lado": "ingreso",
-   "reemplaza": null,
-   "motivo": "Claude 2026-10-15 (lote 76): la nota 16 abre 'Prestação de serviços' (10 531 656,06, L1896) en cinco sub-rubricas (L1905-1909) que la extracción no abrió; sin el desglose, la TV (6,92 M) quedaba como otros ingresos",
-   "evidencia": "wf-src-Relatorio-e-Contas-2021-22-SAD.md L1908",
+   "reemplaza": "Vendas e serviços prestados",
+   "motivo": "Claude 2026-10-15 (lote 76): 'Vendas e serviços prestados' del estado (11 285 014,14, L590) se reemplaza por sus seis partes de la nota 16: Venda de mercadorias (L1895) y las cinco sub-rubricas de Prestação de serviços (L1905-1909). Reemplazar 'Prestação de serviços' no alcanzaba: en la lectura 5 entra después, al abrir el renglón con su nota",
+   "evidencia": "wf-src-Relatorio-e-Contas-2021-22-SAD.md L590, L1895, L1905-1909",
    "autor": "Claude",
    "fecha": "2026-10-15"
   },
@@ -785,44 +843,27 @@
    "evidencia": "wf-src-Relatorio-e-Contas-2021-22-SAD.md L2170",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Vitória Guimarães/wf-src-Relatorio-e-Contas-2021-22-SAD.pdf",
+   "campo": "fila",
+   "valor": "753 358,08",
+   "linea": 1895,
+   "etiqueta": "Venda de mercadorias",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-15 (lote 76): 'Vendas e serviços prestados' del estado (11 285 014,14, L590) se reemplaza por sus seis partes de la nota 16: Venda de mercadorias (L1895) y las cinco sub-rubricas de Prestação de serviços (L1905-1909). Reemplazar 'Prestação de serviços' no alcanzaba: en la lectura 5 entra después, al abrir el renglón con su nota",
+   "evidencia": "wf-src-Relatorio-e-Contas-2021-22-SAD.md L1895",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
   }
  ],
  "seleccion": {
-  "filas": 59,
+  "filas": 63,
   "notasUsadas": [],
   "refM": null
  },
  "filas": [
-  {
-   "label": "Venda de mercadorias",
-   "page": 77,
-   "native": 0.753358,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
-   "signoFijo": 0.753358,
-   "cat": "sponsorship_commercial",
-   "conf": 0.98,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 0.753358
-  },
-  {
-   "label": "Prestação de serviços",
-   "page": 77,
-   "native": 10.531656,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
-   "signoFijo": 10.531656,
-   "cat": "no_es_rubro",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta; revisado por Claude): 'Prestação de serviços' es el total de la nota 16 (L1903-1911); la reemplazan sus cinco sub-rubricas con ajustes 'fila' (L1905-1909), cada una con su categoría [wf-src-Relatorio-e-Contas-2021-22-SAD.md L1896, L1905-1911]",
-   "destino": "excluida"
-  },
   {
    "label": "Federação Portuguesa de Futebol",
    "page": 78,
@@ -863,8 +904,8 @@
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.035287,
    "cat": "other_income",
-   "conf": 0.96,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -894,7 +935,7 @@
    "signoFijo": 0.000038,
    "cat": "other_income",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -908,8 +949,8 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 0.014724,
    "cat": "other_income",
-   "conf": 0.98,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -948,6 +989,101 @@
    "amountNative": 0.046998
   },
   {
+   "label": "Bilheteira/ Quotização/ Pack sócio",
+   "page": 77,
+   "native": 1.275428,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1.275428,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): taquilla, cuotas y pack de socio que paga el club (como 2025)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 1.275428
+  },
+  {
+   "label": "Prémios competições nacionais e UEFA",
+   "page": 77,
+   "native": 0.743008,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.743008,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): premios de competiciones",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 0.743008
+  },
+  {
+   "label": "Publicidade/ patrocínios",
+   "page": 77,
+   "native": 1.52977,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1.52977,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): publicidad y patrocinios",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 1.52977
+  },
+  {
+   "label": "Direitos televisivos",
+   "page": 77,
+   "native": 6.922619,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 6.922619,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): derechos de TV",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 6.922619
+  },
+  {
+   "label": "Outros",
+   "page": 77,
+   "native": 0.060831,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.060831,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): residual de prestación de servicios y de otros rendimientos",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 0.060831
+  },
+  {
+   "label": "Venda de mercadorias",
+   "page": 77,
+   "native": 0.753358,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.753358,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.753358
+  },
+  {
    "label": "Custo de mercadorias vendidas e das matérias consumidas",
    "page": 25,
    "native": 0.542627,
@@ -955,8 +1091,8 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 0.542627,
    "cat": "other_expenses",
-   "conf": 0.95,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -970,8 +1106,8 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.588671,
    "cat": "admin_general_expense",
-   "conf": 0.95,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -986,7 +1122,7 @@
    "signoFijo": 0.005985,
    "cat": "admin_general_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1000,8 +1136,8 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.056104,
    "cat": "match_organisation_expense",
-   "conf": 0.92,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1016,7 +1152,7 @@
    "signoFijo": 0.391842,
    "cat": "admin_general_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1046,8 +1182,8 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.284172,
    "cat": "admin_general_expense",
-   "conf": 0.93,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1062,7 +1198,7 @@
    "signoFijo": 0.741349,
    "cat": "match_organisation_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1092,8 +1228,8 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.016837,
    "cat": "admin_general_expense",
-   "conf": 0.92,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1108,7 +1244,7 @@
    "signoFijo": 0.040002,
    "cat": "admin_general_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1124,9 +1260,8 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "categorias.json",
    "enLista": true,
-   "notaGuido": "precedente del país: 1 clubes (Rio Ave), nota:fornecimentos e servicos externos · Claude 2026-10-15 (subagente Sonnet, seguridad media): regalos [relatorio-contas-2017-18.md L1177]",
    "destino": "expense",
    "amountNative": -0.007369
   },
@@ -1154,8 +1289,8 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.143199,
    "cat": "admin_general_expense",
-   "conf": 0.99,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1170,7 +1305,7 @@
    "signoFijo": 0.067575,
    "cat": "admin_general_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1184,8 +1319,8 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.041454,
    "cat": "admin_general_expense",
-   "conf": 0.97,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1215,8 +1350,8 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.93091,
    "cat": "match_organisation_expense",
-   "conf": 0.95,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1248,9 +1383,8 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "categorias.json",
    "enLista": true,
-   "notaGuido": "precedente del país: 2 clubes (Nacional, Rio Ave), nota:fornecimentos e servicos externos · Claude 2026-10-15 (subagente Sonnet, seguridad media-alta): alquiler genérico, sin mención del estadio [relatorio-contas-2017-18.md L1185]",
    "destino": "expense",
    "amountNative": -0.737463
   },
@@ -1263,7 +1397,7 @@
    "signoFijo": 0.062269,
    "cat": "admin_general_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1277,8 +1411,8 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.060844,
    "cat": "admin_general_expense",
-   "conf": 0.91,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1292,8 +1426,8 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.046269,
    "cat": "admin_general_expense",
-   "conf": 0.99,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1307,8 +1441,8 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.032045,
    "cat": "admin_general_expense",
-   "conf": 0.99,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1322,8 +1456,8 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.095264,
    "cat": "admin_general_expense",
-   "conf": 0.99,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1339,9 +1473,8 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "categorias.json",
    "enLista": true,
-   "notaGuido": "precedente del país: 1 clubes (Nacional), nota:fornecimentos e servicos externos · Claude 2026-10-15 (subagente Sonnet, seguridad media): residual de servicios [relatorio-contas-2023-24.md L853]",
    "destino": "expense",
    "amountNative": -0.062201
   },
@@ -1370,7 +1503,7 @@
    "signoFijo": 0.192217,
    "cat": "admin_general_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1384,8 +1517,8 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 1.181238,
    "cat": "admin_general_expense",
-   "conf": 0.99,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1399,8 +1532,8 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 1.390895,
    "cat": "wages_squad",
-   "conf": 0.85,
-   "escalon": 2,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1415,7 +1548,7 @@
    "signoFijo": 12.774688,
    "cat": "wages_squad",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1525,8 +1658,8 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 0.956617,
    "cat": "admin_general_expense",
-   "conf": 0.9,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1540,8 +1673,8 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos e perdas\")",
    "signoFijo": 0.011416,
    "cat": "admin_general_expense",
-   "conf": 0.99,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1555,8 +1688,8 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos e perdas\")",
    "signoFijo": 0.18736,
    "cat": "other_expenses",
-   "conf": 0.96,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1570,8 +1703,8 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos e perdas\")",
    "signoFijo": 0.225943,
    "cat": "exceptional_items",
-   "conf": 0.8,
-   "escalon": 2,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1586,7 +1719,7 @@
    "signoFijo": 0.0367,
    "cat": "other_expenses",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1648,7 +1781,7 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 7.769947,
    "cat": "depreciation",
-   "conf": 0.91,
+   "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
@@ -1689,21 +1822,11 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
-   "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
    "verificacion (nota que desglosa \"Subsídios à exploração\")": "gastos con signo",
    "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")": "gastos con signo",
+   "verificacion (ajuste manual)": "gastos con signo",
    "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Gastos com o pessoal\")": "gastos sin signo (se invierten)",
@@ -1711,20 +1834,30 @@
    "verificacion (nota que desglosa \"Outros gastos e perdas\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 12.751338,
+  "revSum": 23.282994,
   "expSum": -35.075884,
-  "officialTotalRevenue": null,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
-  "verificacion": {}
+  "officialTotalRevenue": 23.282994,
+  "officialTotalExpenses": 35.075884,
+  "officialPAT": -13.729694,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "por-resultado",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -13.729694,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  }
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2021–22 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia única por palabras \"Vitória de Guimarães\" = \"Vitória Guimarães\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1764,16 +1897,16 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2021–22 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia única por palabras \"Vitória de Guimarães\" = \"Vitória Guimarães\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
-  "lineasIngreso": 10,
+  "motivos": 3,
+  "lineasIngreso": 15,
   "lineasGasto": 45,
   "metaFilas": 3,
-  "excluidas": 1
+  "excluidas": 0
  }
 }
