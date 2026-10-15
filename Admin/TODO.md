@@ -150,6 +150,13 @@ llegue acá.
     p) LA ETAPA 8 PREGUNTA EL PERÍMETRO AUNQUE HAYA AJUSTE MANUAL DEL CLUB (lote 78: Benfica 2019 y Boavista 2024 llegaron a la cola con
        "¿se carga CONSOLIDADO?" teniendo el ajuste `perimetro` del club, y en Boavista la propuesta era la contraria al ajuste). El ajuste
        es el escalón 0: si existe, la pregunta no debería abrirse.
+    q) SPORTING 1999-2010: LA SUMA DEL SISTEMA CUENTA DOS VECES LOS SUBTOTALES (cola del lote 77: 29 casos "no cierra" y "primer año" de
+       Sporting; el estado impreso cierra exacto en todos los años, pero verificar.mjs suma los subtotales (B)/(D) y los renglones sin rótulo
+       como si fueran filas, y suma el resultado financiero en vez de netearlo). Las respuestas del subagente están sin aplicar en
+       Admin/registros/cola-borradores/sporting-1999-2010.jsonl. Mirar 2-3 años antes de diseñar el escalón.
+    r) EL COPY DE LA TERMINAL QUEDÓ VIEJO (pedido de Guido, 2026-10-15). "(DE VERDAD)", "ENSAYO", los "OJO:" y la mayoría de los mensajes
+       de pipeline.mjs y lote.mjs no terminan de explicar qué está pasando ni qué tiene que hacer Guido. Repasar la salida de las dos
+       tools con un lote real y proponerle el texto nuevo (solo salida, no lógica) antes de tocarlo.
 238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
    sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
    (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
