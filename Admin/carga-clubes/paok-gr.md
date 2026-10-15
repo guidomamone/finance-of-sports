@@ -460,7 +460,7 @@ tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado
 ### Ingresos
 
 ```text
-2019: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/PAOK/PAOK_FS_2019-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2019: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Grecia/PAOK/PAOK_FS_2019-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Grecia/PAOK/PAOK_FS_2019-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -475,17 +475,17 @@ Generados/Grecia/PAOK/PAOK_FS_2019-06-30.categorias.json (escalón de cada fila 
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Αμοιβές προσωπικού | pág. 30, Claude 0.8 |
+| 1 | Αμοιβές προσωπικού | pág. 30, precedente |
 | 2 | Αμοιβές τρίτων | pág. 30, precedente |
 | 3 | Παροχές τρίτων | pág. 30, precedente |
-| 4 | Φόροι-Τέλη | pág. 30, Claude 0.8 |
+| 4 | Φόροι-Τέλη | pág. 30, precedente |
 | 5 | Διάφορα έξοδα | pág. 30, precedente |
 | 6 | Αποσβέσεις | pág. 30, precedente |
 | 7 | Αγορές Αναλωσίμων | pág. 30, precedente |
-| 8 | Αμοιβές προσωπικού | pág. 30, Claude 0.8 |
+| 8 | Αμοιβές προσωπικού | pág. 30, precedente |
 | 9 | Αμοιβές τρίτων | pág. 30, precedente |
 | 10 | Παροχές τρίτων | pág. 30, precedente |
-| 11 | Φόροι-Τέλη | pág. 30, Claude 0.8 |
+| 11 | Φόροι-Τέλη | pág. 30, precedente |
 | 12 | Διάφορα έξοδα | pág. 30, precedente |
 | 13 | Αποσβέσεις | pág. 30, precedente |
 | 14 | Λοιπές Προβλέψεις | pág. 30, precedente |
@@ -493,11 +493,6 @@ Generados/Grecia/PAOK/PAOK_FS_2019-06-30.categorias.json (escalón de cada fila 
 | 16 | Λοιπά έξοδα και ζημιές | pág. 16, Jev 0.95 |
 
 ### Meta
-
-```text
-tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
-```
 
 ```text
 tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 14
@@ -508,13 +503,12 @@ tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 0 (compuerta: documento si
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2017, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2018–19 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "PAOK".
+tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2017, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
 ```
 
 ## 2017
