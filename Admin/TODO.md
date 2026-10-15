@@ -44,6 +44,12 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
     e) La banda de `audit.js` (ingresos entre 0,2 y 2.000 M USD, P0 `escala-implausible`) frena a un club real de tercera división:
        Alverca 2022, 152.299,54 € (≈ US$ 0,16 M), verificado y silenciado en audit-ignore.json. Escalón posible: que la banda tenga en
        cuenta la liga del año (data/club-leagues) o que, con el resultado impreso cerrando, baje a aviso.
+    f) Una respuesta de la cola con una categoría del OTRO lado cambia el signo de la fila en vez de mudarla sin cambiar su efecto (como hace
+       el ajuste `categoria`): Nacional 2024, "Correções relativas a períodos anteriores" (ingreso 229.792, L793) contestada
+       exceptional_items quedó como gasto −0,229792 y el resultado no cerraba por 0,459584 (el doble). Se arregló con un ajuste `categoria`.
+    g) El aviso "Estadio en 0" pide que las TRES categorías del estadio (matchday_competition, stadium_other, season_tickets) tengan
+       ajuste `incluye`; con la de entradas alcanza para decir que el estadio está dentro de otra línea. Moreirense 2022 y 2025 llevan los
+       tres ajustes.
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
