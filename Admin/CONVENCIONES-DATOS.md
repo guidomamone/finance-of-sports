@@ -324,3 +324,18 @@ Se decide por ejercicio, sin preguntar, y la aplica `tools/perimetro-senales.mjs
 
 Lo único que frena es que dos ejercicios que traen los dos estados voten distinto. El perímetro de cada ejercicio queda en la evidencia
 del club (`Admin/carga-clubes/<clubId>.md`); la página muestra el documento fuente de cada año.
+
+## REGLA: qué entidad se carga cuando el fútbol está en una sociedad aparte (club asociación y SAD/SDUQ/SAF/AS)
+
+Decisión de Guido (2026-10-15, Portugal). En muchos países el fútbol profesional está en una sociedad (SAD o SDUQ en Portugal) y el club
+asociación es dueño de parte de ella y lleva lo demás. No se generaliza la entidad de hoy al pasado: cada ejercicio se mira solo.
+
+1. **Un solo documento del ejercicio: se carga**, sea del club o de la sociedad. Puede ser que ese año el fútbol estuviera en el club
+   (antes de la SAD, o después de un cambio de dueño).
+2. **Dos documentos del mismo ejercicio (club y sociedad): se carga el que tiene el fútbol** (la sociedad) y el otro va a
+   `Admin/registros/documentos-descartados.txt`. Casos: Tondela 2021, Vitória Guimarães 2022, Marítimo 2021-2025.
+3. **Excepción a 1: no distorsionar el poderío económico del club.** Si el único documento es del club y el PROPIO documento dice que ese
+   año el fútbol estaba en una sociedad que no consolida (una participada o subsidiaria con cuentas individuales del club), no se carga:
+   el sitio mostraría un club grande facturando lo de sus modalidades. Va a descartados con la cita. Casos: Porto 2019-20 (la FC Porto
+   SAD es subsidiaria, cuentas individuales del club), Braga 2020-21 (la Braga SAD es "associada", el club no consolida), Rio Ave 2014-15
+   (el fútbol pasó a la SDUQ en 2013). Si el documento del club es CONSOLIDADO con la sociedad, trae el fútbol y sí se carga.
