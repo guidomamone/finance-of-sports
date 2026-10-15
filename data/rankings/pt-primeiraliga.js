@@ -60,6 +60,9 @@ window.RANKINGS["pt-primeiraliga"] = {
       { id:"vitoriaguimaraes-pt", revenue:33.145, reportType:"official_balance_sheet",
         sourceId:"vitoriaguimaraes-pt-relatorio-contas-2020-21",
         mix:[["Comercial / Sponsors",1.776],["Estadio",0.934],["Televisión",8.318],["Premios por competencias",0.26],["Venta de Jugadores",19.847],["Otros ingresos",2.009]] },
+      { id:"tondela-pt", revenue:6.022, reportType:"official_balance_sheet",
+        sourceId:"tondela-pt-relatorio-contas-2020-21",
+        mix:[["Comercial / Sponsors",1.058],["Televisión",4.159],["Premios por competencias",0.64],["Venta de Jugadores",0.06],["Otros ingresos",0.104]] },
     ],
   },
   2020: {

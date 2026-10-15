@@ -45,3 +45,5 @@ pena escribirle directo al club — ninguna otra vía (prensa, Wayback, arquivo.
 - Último chequeo: 2026-09-17.
 
 Color de marca: null — ambiguo, sin desempate (criterio de Guido: elegir y contarle, no preguntar); verde y amarillo ("auriverdes"), camiseta local amarilla (#FFDD00 en el kit de en.wikipedia) a rayas verticales amarillas y verdes; escudo verde con amarillo; ningún desempate aplica, verificado 2026-10-09., verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2021 desde `Clubes/Portugal/Tondela/relatorio-contas-2020-21.pdf` (sourceId `tondela-pt-relatorio-contas-2020-21`).
