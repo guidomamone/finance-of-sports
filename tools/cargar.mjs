@@ -132,7 +132,7 @@ const ESCRIBIR = ARGS.includes('--escribir');
 // --reemplazar (Versión 358, paso 4 del plan aprobado por Guido): rehace con el script un ejercicio YA cargado (UC 2022-2024, cargados a mano:
 // "Servicios de Seguridad" dentro de gastos de administración). "Ya cargado", "la fuente ya existe" y "sin .categorias.json" (Jev y Claude
 // nunca corrieron sobre años cargados a mano) pasan de frenar a aviso; todo lo demás frena igual (en particular, una fila sin categoría). Al
-// escribir, borra los bloques del año y escribe los nuevos, y CONSERVA lo que el script no genera: grossDebt/cash (si el script no los trae),
+// escribir, borra los bloques del año y escribe los nuevos, y CONSERVA lo que el script no genera: grossDebt/cash/staffCost (si el script no los trae),
 // gestionId, la fuente existente y los `items` de una línea (nombres de jugadores vendidos) por etiqueta.
 const REEMPLAZAR = ARGS.includes('--reemplazar');
 const LISTA = flagVal('--lista');
@@ -1045,6 +1045,9 @@ export function escribir(P) {
       const M0 = E.fiscalYearMeta;
       if (M0.grossDebt == null && vm0.grossDebt != null) M0.grossDebt = vm0.grossDebt;
       if (M0.cash == null && vm0.cash != null) M0.cash = vm0.cash;
+      // (to-do 229) staffCost, el costo de personal que completa caja-deuda.mjs --personal: también se conserva (se perdía al rehacer
+      // Panetolikos 2021-2025 con los sueldos separados).
+      if (M0.staffCost == null && vm0.staffCost != null) M0.staffCost = vm0.staffCost;
       if (M0.gestionId == null && vm0.gestionId != null) M0.gestionId = vm0.gestionId;
       for (const v of [vRev, vExp, vMeta]) {
         const ini = src.indexOf(`const ${v} = {`); if (ini < 0) throw new Error(`${dataRel}: no encontré const ${v}`);
@@ -1076,7 +1079,7 @@ export function escribir(P) {
     ev = EV.agregarTexto(ev, y, 'Meta', [...ajTxt, `tools/cargar.mjs (${HOY}). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.`,
       ...(M.incluidoEn ? ['incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.'] : []),
       ...(M.sinDesglose ? ['sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.'] : [])]);
-    const metaTxt = `  ${y}: {\n    currency:${js(M.currency)}${fxTxt ? ', ' + fxTxt : ''},\n    sourceId:${js(M.sourceId)},\n    reportType:${js(M.reportType)},\n    gestionId:${M.gestionId != null ? js(M.gestionId) : 'null'},\n    profitOnPlayerSales:0, assetSales:0,\n    netInterest:${num(M.netInterest)}, tax:${num(M.tax)},\n${M.extraRows ? `    extraRows: [\n${M.extraRows.map((x) => `      {label:${js(x.label)}, value:${num(x.value)}},\n`).join('')}    ],\n` : ''}${M.incluidoEn ? `    incluidoEn:${JSON.stringify(M.incluidoEn)},\n` : ''}${M.sinDesglose ? `    sinDesglose: [\n${M.sinDesglose.map((x) => `      {renglon:${js(x.renglon)}, lado:${js(x.lado)}, importe:${num(x.importe)}, motivo:${js(x.motivo)}},\n`).join('')}    ],\n` : ''}    grossDebt:${num(M.grossDebt)}, cash:${num(M.cash)},\n    officialTotalRevenue:${num(M.officialTotalRevenue)}, officialTotalExpenses:${num(M.officialTotalExpenses)}, officialPAT:${num(M.officialPAT)},\n  },\n`;
+    const metaTxt = `  ${y}: {\n    currency:${js(M.currency)}${fxTxt ? ', ' + fxTxt : ''},\n    sourceId:${js(M.sourceId)},\n    reportType:${js(M.reportType)},\n    gestionId:${M.gestionId != null ? js(M.gestionId) : 'null'},\n    profitOnPlayerSales:0, assetSales:0,\n    netInterest:${num(M.netInterest)}, tax:${num(M.tax)},\n${M.extraRows ? `    extraRows: [\n${M.extraRows.map((x) => `      {label:${js(x.label)}, value:${num(x.value)}},\n`).join('')}    ],\n` : ''}${M.incluidoEn ? `    incluidoEn:${JSON.stringify(M.incluidoEn)},\n` : ''}${M.sinDesglose ? `    sinDesglose: [\n${M.sinDesglose.map((x) => `      {renglon:${js(x.renglon)}, lado:${js(x.lado)}, importe:${num(x.importe)}, motivo:${js(x.motivo)}},\n`).join('')}    ],\n` : ''}    grossDebt:${num(M.grossDebt)}, cash:${num(M.cash)},${M.staffCost != null ? ` staffCost:${num(M.staffCost)},` : ''}\n    officialTotalRevenue:${num(M.officialTotalRevenue)}, officialTotalExpenses:${num(M.officialTotalExpenses)}, officialPAT:${num(M.officialPAT)},\n  },\n`;
     src = insertarEnObjeto(src, `const ${vMeta} = {`, metaTxt, dataRel);
     const S = E.source;
     // la nota INTERNA de la fuente va a la evidencia del club (to-do 209: data/ se publica), no a un campo `note` de sources{}
