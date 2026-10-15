@@ -55,6 +55,17 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
        con confianza alta y no fue a la cola: Moreirense 2022 (4,10 M) y 2025 (8,00 M) se publicaron mal y se corrigieron con ajustes
        `categoria`. Además, el ajuste compara la etiqueta con el asterisco de la nota ("...financeiros*") aunque la carga lo muestra sin él.
        Escalón posible: leer la nota al pie de la fila (como "la nota de la fila" de caja-deuda) antes de categorizar.
+    i) En la lectura 5 de `verificar.mjs`, un ajuste `fila` con `reemplaza` no alcanza una fila que entra DESPUÉS, al abrir un renglón con
+       su nota ("nota exacta en la lectura 5"); y los ajustes `fila` sin `reemplaza` no entran. Vitória 2022 SAD: las cinco sub-rubricas de
+       "Prestação de serviços" (nota 16, L1905-1909) no llegaban a la carga (TV 6,92 M en 0) y, con `reemplaza "Prestação de serviços"`, la
+       fila madre no salía (ingresos 34,02 contra 23,49). Se resolvió reemplazando el renglón del ESTADO ("Vendas e serviços prestados", L590)
+       por sus seis partes. Escalón posible: aplicar `reemplaza` también a las filas que abre la nota, y avisar cuando un ajuste no entra.
+    j) Un ajuste `fila` que corrige el OCR de un renglón del estado (Alverca 2024, "Outros rendimentos" 522.591,60 -> 622.591,65) deja de
+       abrirse con su nota: la venta de jugadores (581.500, nota 17.2.3) quedaba en other_income dentro del renglón. Se resolvió con una
+       fila por línea de la nota. Escalón posible: que el renglón corregido por ajuste siga pasando por la apertura con su nota.
+    k) Cuando el .md pierde TODOS los signos de una tabla escaneada (Rio Ave 2024, pág. 14), los intereses obtenidos se suman como costo
+       (financiero 0,317495 en vez del neto −0,085703) y las reversiones de imparidad sin "-" quedan como gasto. Se resolvió con ajustes
+       `fila` mirando la imagen. Escalón posible: que la lectura con signos pruebe el financiero por etiqueta ("obtidos"/"suportados").
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
