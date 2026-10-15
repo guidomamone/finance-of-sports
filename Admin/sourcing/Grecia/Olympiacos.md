@@ -68,3 +68,5 @@ adicional a lo que ya cubre GEMI.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2022 desde `Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.pdf` (sourceId `olympiacos-gr-pae-olympiacos-fs-2022-06-30`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2023 desde `Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.pdf` (sourceId `olympiacos-gr-pae-olympiacos-consolidated-ifrs-fs-2023-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2024 desde `Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2024-06-30.pdf` (sourceId `olympiacos-gr-pae-olympiacos-consolidated-ifrs-fs-2024-06-30`).
