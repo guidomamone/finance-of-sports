@@ -37,6 +37,13 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
     c) El perfil (socios, otros deportes) es por club, pero un mismo club publica como entidades distintas: Rio Ave 2014-15 es el club
        asociación (cuotas 217.671,75 y futsal), 2015-16 a 2022-23 la SDUQ y 2023-24 en adelante la SAD. Se contestó "no" (SDUQ/SAD); no
        cambia nada hoy porque 2014-15 trae las cifras. Pensar si el perfil va por entidad o por ejercicio.
+    d) `cargar-lote.mjs`: cuando un año de un club nuevo no se escribe y el alta se revierte, quedan los archivos NUEVOS del alta sin
+       borrar (Alverca: data/pt/alverca-pt-data.js y data/club-leagues/pt.js, sin trackear). El alta siguiente de la misma corrida (Rio Ave
+       2018, que estaba listo) frena por "cambios sin commitear en el sitio" y también se revierte. Se borraron a mano y Rio Ave 2018 entró.
+       El revertir tiene que borrar lo que el alta creó, no solo restaurar lo que existía.
+    e) La banda de `audit.js` (ingresos entre 0,2 y 2.000 M USD, P0 `escala-implausible`) frena a un club real de tercera división:
+       Alverca 2022, 152.299,54 € (≈ US$ 0,16 M), verificado y silenciado en audit-ignore.json. Escalón posible: que la banda tenga en
+       cuenta la liga del año (data/club-leagues) o que, con el resultado impreso cerrando, baje a aviso.
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
