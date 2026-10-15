@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.pdf",
   "club": "famalicao",
   "year": 2022,
-  "generatedAt": "2026-10-15T06:24:11.358Z",
+  "generatedAt": "2026-10-15T12:42:56.467Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.17565
       ],
-      "glosa": "Taquilla"
+      "glosa": "Venta de entradas"
     },
     {
       "label": "Competições",
@@ -144,7 +144,7 @@
       "values": [
         0.125474
       ],
-      "glosa": "Energía y suministros"
+      "glosa": "Energía y fluidos"
     },
     {
       "label": "Deslocações, estadas e transportes",
@@ -164,7 +164,7 @@
       "values": [
         0.521427
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Limpeza, Higiene e conforto",
@@ -214,7 +214,7 @@
       "values": [
         0.831429
       ],
-      "glosa": "Cargas sociales"
+      "glosa": "Cargas sobre remuneraciones"
     },
     {
       "label": "Seguros",
@@ -254,7 +254,7 @@
       "values": [
         0.00041
       ],
-      "glosa": "Deterioro de créditos a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos por cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
   "club": "moreirense",
   "year": 2025,
-  "generatedAt": "2026-10-15T06:24:11.435Z",
+  "generatedAt": "2026-10-15T12:42:56.495Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         0.340311
       ],
-      "glosa": "Juegos sociales (placard/en línea)"
+      "glosa": "Juegos sociales (placard/online)"
     },
     {
       "label": "Rendimentos suplementares",
@@ -74,7 +74,7 @@
       "values": [
         0.000194
       ],
-      "glosa": "Descuentos sobre compras por pronto pago"
+      "glosa": "Descuentos por pronto pago obtenidos"
     },
     {
       "label": "Rendimentos em investimentos não financeiros*",
@@ -84,7 +84,7 @@
       "values": [
         8.002412
       ],
-      "glosa": "Ingresos de inversiones no financieras*"
+      "glosa": "Ingresos en inversiones no financieras*"
     },
     {
       "label": "Outros",
@@ -104,7 +104,7 @@
       "values": [
         0.017388
       ],
-      "glosa": "Consumo de mercaderías y de materias consumibles"
+      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
     },
     {
       "label": "6221 Trabalhos especializados",
@@ -134,7 +134,7 @@
       "values": [
         0.230303
       ],
-      "glosa": "6224 Honorarios profesionales"
+      "glosa": "6224 Honorarios"
     },
     {
       "label": "6226 Conservação e reparação",
@@ -144,7 +144,7 @@
       "values": [
         0.132447
       ],
-      "glosa": "6226 Reparaciones y conservación"
+      "glosa": "6226 Conservación y reparación"
     },
     {
       "label": "6231 Ferramentas e utensílios de desgaste rápido",
@@ -214,7 +214,7 @@
       "values": [
         0.28246
       ],
-      "glosa": "625 Desplazamientos, dietas y transportes"
+      "glosa": "625 Desplazamientos, estancias y transportes"
     },
     {
       "label": "6261 Rendas e alugueres",
@@ -244,7 +244,7 @@
       "values": [
         0.003274
       ],
-      "glosa": "6263 Primas de seguros"
+      "glosa": "6263 Seguros"
     },
     {
       "label": "6267 Limpeza, higiene e conforto",
@@ -254,7 +254,7 @@
       "values": [
         0.015791
       ],
-      "glosa": "6267 Limpieza, higiene y mantenimiento"
+      "glosa": "6267 Limpieza, higiene y bienestar"
     },
     {
       "label": "6268 Outros serviços",
@@ -264,7 +264,7 @@
       "values": [
         0.100605
       ],
-      "glosa": "6268 Otros servicios exteriores"
+      "glosa": "6268 Otros servicios"
     },
     {
       "label": "Remunerações do pessoal",
@@ -274,7 +274,7 @@
       "values": [
         4.636673
       ],
-      "glosa": "Sueldos y salarios"
+      "glosa": "Remuneraciones del personal"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -284,7 +284,7 @@
       "values": [
         0.337528
       ],
-      "glosa": "Cargas sociales"
+      "glosa": "Cargas sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho e doenças profissionais",
@@ -294,7 +294,7 @@
       "values": [
         0.554513
       ],
-      "glosa": "Seguros de accidentes laborales y enfermedades profesionales"
+      "glosa": "Seguros de accidentes de trabajo y enfermedades profesionales"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -334,7 +334,7 @@
       "values": [
         0.0045
       ],
-      "glosa": "Pérdidas de inversiones no financieras"
+      "glosa": "Gastos en inversiones no financieras"
     },
     {
       "label": "Outros",
@@ -354,7 +354,7 @@
       "values": [
         0.903861
       ],
-      "glosa": "Dotaciones/reversiones por depreciación y amortización"
+      "glosa": "Gastos/reversiones de amortización y depreciación"
     }
   ]
 }

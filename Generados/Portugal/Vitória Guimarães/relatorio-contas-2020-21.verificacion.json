@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2020-21.pdf",
  "md": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2020-21.md",
- "generado": "2026-10-15T06:24:32.357Z",
+ "generado": "2026-10-15T12:42:56.657Z",
  "estado": "cola",
  "clubId": null,
  "year": 2021,
@@ -67,8 +67,7 @@
   "la nota de \"Custo de mercadorias vendidas e das matérias consumidas\" no suma el renglón (1.551093 contra 0.497677, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Imparidade de dívidas a receber\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"Vendas e serviços prestados\"): ¿Se cargan ambos desgloses de 'Vendas e serviços prestados' (b27 L1477-L1479 y b3 L352-L358) como alternativos, priorizando b3 por ser más detallado?",
-  "duda de extraer que no afecta la carga: Celdas de 30-06-2021 vacías en L1911-L1912.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Celdas de 30-06-2021 vacías en L1911-L1912."
  ],
  "reintentar": [
   {

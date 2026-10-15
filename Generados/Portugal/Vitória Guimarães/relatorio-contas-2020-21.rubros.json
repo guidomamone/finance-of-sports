@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2020-21.pdf",
   "club": "vitoria-guimaraes",
   "year": 2021,
-  "generatedAt": "2026-10-15T06:24:32.357Z",
+  "generatedAt": "2026-10-15T12:42:56.658Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -114,7 +114,7 @@
       "values": [
         0.005147
       ],
-      "glosa": "Ganancias en existencias"
+      "glosa": "Ganancias en inventarios"
     },
     {
       "label": "Rendimentos e ganhos em investimentos",
@@ -124,7 +124,7 @@
       "values": [
         16.70097
       ],
-      "glosa": "Ingresos y ganancias en inversiones"
+      "glosa": "Ingresos y beneficios en inversiones"
     },
     {
       "label": "Outros",
@@ -144,7 +144,7 @@
       "values": [
         0.497677
       ],
-      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y materias consumidas"
     },
     {
       "label": "Trabalhos especializados",
@@ -234,7 +234,7 @@
       "values": [
         0.033411
       ],
-      "glosa": "Herramientas y útiles de rápido desgaste"
+      "glosa": "Herramientas y útiles de desgaste rápido"
     },
     {
       "label": "Livros documentação técnica",
@@ -264,7 +264,7 @@
       "values": [
         0.003199
       ],
-      "glosa": "Artículos para regalo"
+      "glosa": "Artículos de regalo"
     },
     {
       "label": "Material Desportivo",
@@ -374,7 +374,7 @@
       "values": [
         0.081477
       ],
-      "glosa": "Contencioso y notaría"
+      "glosa": "Gastos contenciosos y notariales"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -404,7 +404,7 @@
       "values": [
         0.664164
       ],
-      "glosa": "Personal del VSC al servicio de la SAD"
+      "glosa": "Personal de VSC al servicio de la SAD"
     },
     {
       "label": "Remuneração Administração",
@@ -484,7 +484,7 @@
       "values": [
         0.068216
       ],
-      "glosa": "Deterioro de cuentas a cobrar"
+      "glosa": "Deterioro de créditos a cobrar"
     },
     {
       "label": "Imparidade de invantários",
@@ -594,7 +594,7 @@
       "values": [
         6.815353
       ],
-      "glosa": "Gastos/reversiones de amortización y depreciación"
+      "glosa": "Gastos/reversiones de depreciación y amortización"
     }
   ]
 }

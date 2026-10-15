@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2022-23.pdf",
   "club": "moreirense",
   "year": 2023,
-  "generatedAt": "2026-10-15T06:24:11.400Z",
+  "generatedAt": "2026-10-15T12:42:56.488Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         0.368712
       ],
-      "glosa": "Juegos sociales (Placard / en línea)"
+      "glosa": "Juegos sociales (Placard / online)"
     },
     {
       "label": "Rendimentos suplementares",
@@ -104,7 +104,7 @@
       "values": [
         2.55
       ],
-      "glosa": "Deterioro de créditos por cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de cuentas por cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -114,7 +114,7 @@
       "values": [
         0.02775
       ],
-      "glosa": "Provisiones (dotaciones/reversiones)"
+      "glosa": "Provisiones (aumentos/reducciones)"
     },
     {
       "label": "Custo das mercadorias vendidas e das matérias consumidas",
@@ -124,7 +124,7 @@
       "values": [
         0.000765
       ],
-      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y materias consumidas"
     },
     {
       "label": "6221 Trabalhos especializados",
@@ -164,7 +164,7 @@
       "values": [
         0.100964
       ],
-      "glosa": "6226 Conservación y reparación"
+      "glosa": "6226 Reparación y conservación"
     },
     {
       "label": "6228 Outros",
@@ -184,7 +184,7 @@
       "values": [
         0.009938
       ],
-      "glosa": "6231 Herramientas y útiles de desgaste rápido"
+      "glosa": "6231 Herramientas y útiles de rápido desgaste"
     },
     {
       "label": "6233 Material de escritório",
@@ -264,7 +264,7 @@
       "values": [
         0.000013
       ],
-      "glosa": "6252 Transportes de personal"
+      "glosa": "6252 Transporte de personal"
     },
     {
       "label": "6261 Rendas e alugueres",
@@ -304,7 +304,7 @@
       "values": [
         0.000648
       ],
-      "glosa": "6265 Gastos contenciosos y notariales"
+      "glosa": "6265 Contencioso y notaría"
     },
     {
       "label": "6267 Limpeza, higiene e conforto",
@@ -344,7 +344,7 @@
       "values": [
         0.208471
       ],
-      "glosa": "Cargas sociales sobre salarios"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho e doenças profissionais",

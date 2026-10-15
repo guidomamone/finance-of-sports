@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
- "generado": "2026-10-15T06:32:27.325Z",
+ "generado": "2026-10-15T12:51:12.282Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (moreirense-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "14 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Vendas\" -> sponsorship_commercial 0.6; \"Outros\" -> other_income 0; \"Federação Portuguesa Futebol\" -> competition_bonus 0.55; \"Jogos sociais (placard/on line)\" -> other_income 0.5; \"Outros\" -> other_income 0"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   },
   {
    "etapa": "reintento",
@@ -36,9 +24,9 @@
     "amountNative": 0.017864,
     "disclosureLevel": "aggregated",
     "_pag": 23,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Direitos Televisivos",
@@ -56,9 +44,9 @@
     "amountNative": 1.434865,
     "disclosureLevel": "aggregated",
     "_pag": 23,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Federação Portuguesa Futebol",
@@ -66,9 +54,9 @@
     "amountNative": 0.444661,
     "disclosureLevel": "aggregated",
     "_pag": 24,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Jogos sociais (placard/on line)",
@@ -76,9 +64,9 @@
     "amountNative": 0.340311,
     "disclosureLevel": "aggregated",
     "_pag": 24,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Rendimentos suplementares",
@@ -116,9 +104,9 @@
     "amountNative": 0.528485,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -128,9 +116,9 @@
     "amountNative": -0.017388,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "6221 Trabalhos especializados",
@@ -178,9 +166,9 @@
     "amountNative": -0.011938,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "6233 Material de escritório",
@@ -248,9 +236,9 @@
     "amountNative": -0.06909,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "6262 Comunicação",
@@ -288,9 +276,9 @@
     "amountNative": -0.100605,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Remunerações do pessoal",
@@ -298,9 +286,9 @@
     "amountNative": -4.636673,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Encargos sobre remunerações",
@@ -308,9 +296,9 @@
     "amountNative": -0.337528,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Seguros de acidentes de trabalho e doenças profissionais",
@@ -318,9 +306,9 @@
     "amountNative": -0.554513,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos com pessoal",
@@ -358,9 +346,9 @@
     "amountNative": -0.0045,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -374,13 +362,13 @@
    },
    {
     "rawLabel": "Gastos/reversões de depreciação e amortização",
-    "normalizedCategory": "depreciation",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -0.903861,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -439,11 +427,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 0.017864,
    "cat": "sponsorship_commercial",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): venta de mercadería [relatorio-contas-2024-25.md L1009]",
    "destino": "revenue",
    "amountNative": 0.017864
   },
@@ -470,12 +458,12 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 1.434865,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): prestación de servicios 'Outros', sin desglose [relatorio-contas-2024-25.md L1012]",
    "destino": "revenue",
    "amountNative": 1.434865
   },
@@ -487,11 +475,11 @@
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.444661,
    "cat": "competition_bonus",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad baja): 'Subsídios relacionados com resultados ... Federação Portuguesa Futebol 444 661': provisorio, el documento no dice qué paga [relatorio-contas-2024-25.md L1072]",
    "destino": "revenue",
    "amountNative": 0.444661
   },
@@ -503,11 +491,11 @@
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.340311,
    "cat": "other_income",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): subsidio de explotación por juegos sociales (Placard) [relatorio-contas-2024-25.md L1073]",
    "destino": "revenue",
    "amountNative": 0.340311
   },
@@ -564,12 +552,12 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 0.528485,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): prestación de servicios 'Outros', sin desglose [relatorio-contas-2024-25.md L1012]",
    "destino": "revenue",
    "amountNative": 0.528485
   },
@@ -581,11 +569,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.017388,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): costo de mercaderías [relatorio-contas-2024-25.md L1000]",
    "destino": "expense",
    "amountNative": -0.017388
   },
@@ -657,11 +645,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"623 Materiais\")",
    "signoFijo": 0.011938,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): materiales [relatorio-contas-2024-25.md L1400]",
    "destino": "expense",
    "amountNative": -0.011938
   },
@@ -763,11 +751,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"626 Serviços diversos\")",
    "signoFijo": 0.06909,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): alquiler genérico [relatorio-contas-2024-25.md L1410]",
    "destino": "expense",
    "amountNative": -0.06909
   },
@@ -824,11 +812,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"626 Serviços diversos\")",
    "signoFijo": 0.100605,
    "cat": "other_expenses",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): residual de servicios [relatorio-contas-2024-25.md L1414]",
    "destino": "expense",
    "amountNative": -0.100605
   },
@@ -840,11 +828,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 4.636673,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): sueldos de la SAD [relatorio-contas-2024-25.md L1328]",
    "destino": "expense",
    "amountNative": -4.636673
   },
@@ -856,11 +844,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.337528,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): cargas sociales con el sueldo [relatorio-contas-2024-25.md L1329]",
    "destino": "expense",
    "amountNative": -0.337528
   },
@@ -872,11 +860,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.554513,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): seguros y ART a admin_general_expense [relatorio-contas-2024-25.md L1330]",
    "destino": "expense",
    "amountNative": -0.554513
   },
@@ -933,11 +921,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos e perdas\")",
    "signoFijo": 0.0045,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): dentro de 23.4 Outros gastos [relatorio-contas-2024-25.md L1439]",
    "destino": "expense",
    "amountNative": -0.0045
   },
@@ -963,12 +951,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0.903861,
-   "cat": "depreciation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media; revisado por Claude): la fila (notas 7 y 8) suma amortización de pases 612.126 (L944) y depreciación 291.735 (L895) = 903.861 (L530): va a la parte mayor, como PAOK; separarla es el to-do 237 b [relatorio-contas-2024-25.md L530, L895, L944]",
    "destino": "expense",
    "amountNative": -0.903861
   },
@@ -1084,7 +1072,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
+  "motivos": 2,
   "lineasIngreso": 9,
   "lineasGasto": 26,
   "metaFilas": 1,
