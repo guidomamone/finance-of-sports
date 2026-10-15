@@ -157,6 +157,9 @@ llegue acá.
        Sporting; el estado impreso cierra exacto en todos los años, pero verificar.mjs suma los subtotales (B)/(D) y los renglones sin rótulo
        como si fueran filas, y suma el resultado financiero en vez de netearlo). Las respuestas del subagente están sin aplicar en
        Admin/registros/cola-borradores/sporting-1999-2010.jsonl. Mirar 2-3 años antes de diseñar el escalón.
+       Mismo defecto en Benfica 2006-07 (lote 80): las hojas del estado cierran exacto contra el resultado impreso 15.274.429 (ingresos
+       83.285.522, gastos 60.733.874, financiero −7.238.563, impuesto 38.656; relatorio-contas-2006-07.md L902-941), pero la suma del
+       sistema da 223,57 M y 261,82 M (subtotales, (A)-(G) y las notas b18/b20 sumadas como filas). Casos bad0149, 900ec6c y 7c675ce.
     r) EL COPY DE LA TERMINAL QUEDÓ VIEJO (pedido de Guido, 2026-10-15). "(DE VERDAD)", "ENSAYO", los "OJO:" y la mayoría de los mensajes
        de pipeline.mjs y lote.mjs no terminan de explicar qué está pasando ni qué tiene que hacer Guido. Repasar la salida de las dos
        tools con un lote real y proponerle el texto nuevo (solo salida, no lógica) antes de tocarlo.
