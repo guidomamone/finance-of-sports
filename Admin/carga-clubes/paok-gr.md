@@ -410,7 +410,7 @@ tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado
 ### Ingresos
 
 ```text
-2020: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/PAOK/PAOK_FS_2020-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2020: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Grecia/PAOK/PAOK_FS_2020-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Grecia/PAOK/PAOK_FS_2020-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -433,11 +433,6 @@ Generados/Grecia/PAOK/PAOK_FS_2020-06-30.categorias.json (escalón de cada fila 
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
-```
-
-```text
 tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 15
 ```
 
@@ -446,13 +441,12 @@ tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 0 (compuerta: documento si
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2017, 2019, 2021, 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación)
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2019–20 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "PAOK".
+tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2017, 2019, 2021, 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación)
 ```
 
 ## 2019
