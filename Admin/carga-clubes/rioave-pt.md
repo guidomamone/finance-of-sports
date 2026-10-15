@@ -41,6 +41,94 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2018: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2018-06-30","sourceId":"rioave-pt-relatorio-contas-2017-18"}
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Rio Ave/relatorio-contas-2024-25.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Rio Ave/relatorio-contas-2024-25.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Total Vendas | pág. 36, precedente |
+| 2 | Bilheteira | pág. 36, Jev 1 |
+| 3 | Direitos Televisivos | pág. 36, Jev 1 |
+| 4 | Patrocínio e Publicidade | pág. 36, Jev 1 |
+| 5 | Atividades Comerciais | pág. 36, Jev 0.91 |
+| 6 | Outros Rendimentos de Exploração | pág. 36, Jev 0.99 |
+| 7 | Subsidios à Exploração contribuições da UEFA e prémios monetários | pág. 11, precedente |
+| 8 | Royalties | pág. 38, Jev 0.92 |
+| 9 | Competições UEFA- Solidariedade | pág. 38, Jev 0.95 |
+| 10 | Participação nas Competições Nacionais | pág. 38, Jev 1 |
+| 11 | Apostas Desportivas | pág. 38, Jev 0.95 |
+| 12 | Cedência de Jogadores | pág. 38, Jev 0.99 |
+| 13 | Venda de Direitos Desportivos | pág. 38, Jev 1 |
+| 14 | Mecanismo de Solidariedade | pág. 38, precedente |
+| 15 | Outros | pág. 38, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 11, precedente |
+| 2 | Subcontratos | pág. 36, precedente |
+| 3 | Trabalhos especializados | pág. 36, Jev 0.95 |
+| 4 | Vigilância e segurança | pág. 36, Jev 0.91 |
+| 5 | Honorários | pág. 36, Jev 0.99 |
+| 6 | Gastos honorários a agentes desportivos | pág. 37, precedente |
+| 7 | Outras Comissões | pág. 37, precedente |
+| 8 | Conservação e reparação | pág. 36, Jev 0.96 |
+| 9 | Outros serviços especializados | pág. 36, precedente |
+| 10 | Ferramentas e utensílios de desgaste rápido | pág. 36, Claude 0.8 |
+| 11 | Livros e Documentação Técnica | pág. 36, Jev 0.99 |
+| 12 | Material de escritório | pág. 36, Jev 1 |
+| 13 | Artigos para oferta | pág. 36, precedente |
+| 14 | Equipamento Desportivo | pág. 36, precedente |
+| 15 | Medicamentos e Artigos de Saúde | pág. 36, Jev 0.99 |
+| 16 | Outros materiais | pág. 37, precedente |
+| 17 | Eletricidade | pág. 37, Jev 1 |
+| 18 | Combustíveis | pág. 37, Jev 0.99 |
+| 19 | Outras energias e fluidos | pág. 37, precedente |
+| 20 | Deslocações e estadas | pág. 37, Jev 0.95 |
+| 21 | Rendas e alugueres | pág. 37, precedente |
+| 22 | Comunicação | pág. 37, Jev 1 |
+| 23 | Seguros | pág. 37, Jev 0.9 |
+| 24 | Contencioso e Notariado | pág. 37, Jev 0.97 |
+| 25 | Limpeza, higiene e conforto | pág. 37, Jev 0.99 |
+| 26 | Outros serviços diversos | pág. 37, Jev 0.98 |
+| 27 | Remunerações do pessoal | pág. 37, precedente |
+| 28 | Indemnizações | pág. 37, precedente |
+| 29 | Encargos s/ remunerações | pág. 37, precedente |
+| 30 | Seguros de acidentes no trabalho e doenças profissionais | pág. 37, precedente |
+| 31 | Gastas cedências temporárias jogadores | pág. 37, precedente |
+| 32 | Mecanismo de Solidariedade | pág. 37, Jev 0.9 |
+| 33 | Outros gastos | pág. 37, Jev 0.99 |
+| 34 | Imparidade de dívidas a receber (perdas/reversões) | pág. 11, Jev 0.96 |
+| 35 | Provisões (aumentos/reduções) | pág. 11, Jev 0.92 |
+| 36 | Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões) | pág. 11, precedente |
+| 37 | Quotizações/Inscrições | pág. 39, precedente |
+| 38 | Impostos | pág. 39, Jev 0.93 |
+| 39 | Multas e Penalidades | pág. 39, Jev 0.98 |
+| 40 | Abates e Alienações | pág. 39, precedente |
+| 41 | Outros Gastos e Perdas | pág. 39, Jev 0.97 |
+| 42 | Ativos fixos tangíveis | pág. 39, Jev 0.96 |
+| 43 | Ativos intangíveis | pág. 39, precedente |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2025-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2025-06-30
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Rio Ave".
+```
+
 ## 2023
 
 ### Ingresos
@@ -583,4 +671,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Rio Ave/Relatorio_SDUQ_2022-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### rioave-pt-relatorio-contas-2024-25
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Rio Ave/relatorio-contas-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

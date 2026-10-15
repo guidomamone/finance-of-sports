@@ -8,6 +8,9 @@ window.RANKINGS["pt-primeiraliga"] = {
         sourceId:"moreirense-pt-relatorio-contas-2024-25",
         mix:[["Comercial / Sponsors",0.021],["Televisión",4.219],["Premios por competencias",0.521],["Venta de Jugadores",9.379],["Otros ingresos",2.938]],
         incluidos:[["Estadio","Otros ingresos",1]] },
+      { id:"rioave-pt", revenue:9.252, reportType:"official_balance_sheet",
+        sourceId:"rioave-pt-relatorio-contas-2024-25",
+        mix:[["Comercial / Sponsors",0.453],["Estadio",0.231],["Televisión",5.909],["Premios por competencias",0.904],["Venta de Jugadores",1.093],["Otros ingresos",0.662]] },
     ],
   },
   2023: {
