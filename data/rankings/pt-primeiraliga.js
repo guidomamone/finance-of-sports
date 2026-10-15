@@ -4,6 +4,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2025: {
     leagueSize: null,
     clubs: [
+      { id:"vitoriaguimaraes-pt", revenue:60.304, reportType:"official_balance_sheet",
+        sourceId:"vitoriaguimaraes-pt-relatorio-contas-2024-25",
+        mix:[["Comercial / Sponsors",3.465],["Estadio",2.858],["Televisión",8.114],["Premios por competencias",11.393],["Venta de Jugadores",33.707],["Otros ingresos",0.767]] },
       { id:"moreirense-pt", revenue:17.079, reportType:"official_balance_sheet",
         sourceId:"moreirense-pt-relatorio-contas-2024-25",
         mix:[["Comercial / Sponsors",0.021],["Televisión",4.219],["Premios por competencias",0.521],["Venta de Jugadores",9.379],["Otros ingresos",2.938]],

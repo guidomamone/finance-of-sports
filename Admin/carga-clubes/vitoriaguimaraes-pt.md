@@ -41,6 +41,103 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2024: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2024-06-30","sourceId":"vitoriaguimaraes-pt-relatorio-contas-2023-24"}
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Vitória Guimarães/relatorio-contas-2024-25.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Venda de mercadorias | pág. 50, Jev 0.98 |
+| 2 | Bilheteira/Quotização/Pack Socio | pág. 50, precedente |
+| 3 | Premios competições nacionais e UEFA | pág. 50, Jev 1 |
+| 4 | Publicidade/Patrocinios | pág. 50, Jev 1 |
+| 5 | Direitos Televisivos | pág. 50, Jev 1 |
+| 6 | Mecanismo Solidariedade | pág. 50, Jev 0.92 |
+| 7 | Outros | pág. 50, precedente |
+| 8 | Federação Portuguesa de Futebol | pág. 50, precedente |
+| 9 | Outras Entidades (IEFP) | pág. 50, Claude 0.8 |
+| 10 | Seguros - indemnizações | pág. 53, Jev 1 |
+| 11 | Outros rendimentos Suplementares | pág. 53, Jev 0.99 |
+| 12 | Compensação Financeira | pág. 53, precedente |
+| 13 | Cedencia Jogadores | pág. 53, Jev 1 |
+| 14 | Descontos pronto pagamento obtidos | pág. 53, Jev 1 |
+| 15 | Ganhos em inventarios | pág. 53, Jev 0.98 |
+| 16 | Rendimentos e ganhos em investimentos | pág. 53, precedente |
+| 17 | Outros | pág. 53, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 25, Claude 0.8 |
+| 2 | Trabalhos especializados | pág. 51, Jev 0.95 |
+| 3 | Publicidade e propaganda | pág. 51, Jev 1 |
+| 4 | Vigilância e segurança | pág. 51, Jev 0.92 |
+| 5 | Honorários | pág. 51, Jev 1 |
+| 6 | Comissões | pág. 51, precedente |
+| 7 | Conservação e reparação | pág. 51, Jev 0.93 |
+| 8 | Despesas com Provas | pág. 51, Jev 1 |
+| 9 | Prospecção; Empréstimos; | pág. 51, precedente |
+| 10 | Ferramentas, utensílios desgaste rápido | pág. 51, Jev 0.92 |
+| 11 | Material de escritório | pág. 51, Jev 1 |
+| 12 | Artigos para oferta | pág. 51, precedente |
+| 13 | Material Desportivo | pág. 51, precedente |
+| 14 | Eletricidade | pág. 51, Jev 0.99 |
+| 15 | Combustíveis | pág. 51, Jev 1 |
+| 16 | Água | pág. 51, Jev 0.97 |
+| 17 | Outros Fluidos | pág. 51, precedente |
+| 18 | Deslocações e estadas | pág. 51, Jev 0.95 |
+| 19 | Transportes de mercadorias | pág. 51, precedente |
+| 20 | Rendas e alugueres | pág. 51, precedente |
+| 21 | Comunicação | pág. 51, Jev 1 |
+| 22 | Seguros | pág. 51, Jev 0.91 |
+| 23 | Contencioso e notariado | pág. 51, Jev 0.99 |
+| 24 | Despesas de Representação | pág. 51, Jev 0.99 |
+| 25 | Limpeza, higiene e conforto | pág. 51, Jev 0.99 |
+| 26 | Outros serviços | pág. 51, precedente |
+| 27 | Pessoal VSC ao serviço SAD | pág. 51, precedente |
+| 28 | Remuneração Administração | pág. 52, Jev 1 |
+| 29 | Remuneração pessoal administrativo | pág. 52, Jev 0.99 |
+| 30 | Remuneração treinadores | pág. 52, Claude 0.85 |
+| 31 | Remuneração jogadores | pág. 52, Jev 1 |
+| 32 | Encargos com remunerações | pág. 52, precedente |
+| 33 | Seguro acidentes trabalho | pág. 52, precedente |
+| 34 | Outros gastos pessoal | pág. 52, precedente |
+| 35 | Imparidade de dívidas a receber | pág. 25, Jev 1 |
+| 36 | Imparidade de inventarios | pág. 25, Jev 1 |
+| 37 | Provisões (aumentos/reduções) | pág. 25, Jev 0.9 |
+| 38 | Impostos | pág. 53, Jev 0.99 |
+| 39 | Descontos pronto pagamento concedidos | pág. 53, Jev 0.99 |
+| 40 | Gastos, perdas em investimento não financeiros | pág. 53, Jev 0.96 |
+| 41 | Correções relativas a exercicios anteriores | pág. 53, Claude 0.8 |
+| 42 | Donativos | pág. 53, Jev 1 |
+| 43 | Quotizações (liga) | pág. 53, precedente |
+| 44 | Multas | pág. 53, precedente |
+| 45 | Outros | pág. 53, Jev 1 |
+| 46 | Equipamento básico | pág. 54, Jev 0.91 |
+| 47 | Equipamento de transporte | pág. 54, Claude 0.9 |
+| 48 | Equipamento administrativo | pág. 54, Claude 0.9 |
+| 49 | Outros ativos fixos tangíveis | pág. 54, Claude 0.9 |
+| 50 | Passes jogadores | pág. 54, Jev 0.98 |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): categoria = player_sales. Claude 2026-10-15 (lote 76): la nota 19 dice que 'inclui rendimentos relativos a alienação de direitos económicos e desportivos de jogadores' (L1976; mais-valias 26.074.589 €); el informe de gestión, mais-valias de 27,5 M por Jota Silva, Alberto Costa, Kaio César y Manu Silva (L128). Formato SNC (to-do 237 h), mismo criterio que la SAD 2021-22
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia única por palabras "Vitória de Guimarães" = "Vitória Guimarães".
+```
+
 ## 2024
 
 ### Ingresos
@@ -148,4 +245,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Vitória Guimarães/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vitoriaguimaraes-pt-relatorio-contas-2024-25
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
