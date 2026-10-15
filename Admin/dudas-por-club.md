@@ -1919,6 +1919,13 @@ sin leerlo.
   de personal para 265 personas, 80 de ellas futbolistas. ¿Los contratos de jugadores y cuerpo técnico se pagan como honorarios a terceros
   (y están en esa línea)? Se cargó como wages_squad (decisión de Guido, 2026-10-14) a la espera de esta respuesta; si no, va a other_expenses.
 
+## Rio Ave (onboarding de Portugal, lote 76, sesión 2026-10-15: no frena la carga)
+
+- **¿Cómo se repartieron los ingresos de 2016-17?** El estado de resultados (relatorio-contas-2016-17.md L252-255) da TV 2.230.000 y
+  patrocínio 1.021.832,90 (bilheteira 456.302,97, comerciais 39.757,15); la nota 22 (L1253-1256) da TV 3.230.000 y patrocínio 68.767,72
+  (bilheteira 404.422,90, comerciais 44.600). Los dos suman 3.747.893,02; la nota mueve 1.000.000 de patrocínio a TV también en la
+  columna de 2015-16. Se cargó el reparto del estado (sigue la serie del club: 2017-18 TV 2.200.000, estado y nota iguales).
+
 ## Gestiones sin fecha confirmada (tanda Admin/gestiones-por-pais/tanda-2026-10-14-2, sesión 2026-10-15: no frena ninguna carga)
 
 Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso está en el `resultado-N.json` de la tanda (notas y dudas).

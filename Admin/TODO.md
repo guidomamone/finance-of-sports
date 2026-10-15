@@ -25,6 +25,12 @@ ORDEN (2026-10-15): primero las altas
 de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (232 e, 233, 230) y lo que espera una decisión de Guido (130,
 183, 51).
 
+237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
+    a) `periodo.mjs` tomó la FECHA DE FIRMA como cierre: Alverca 2022-23 quedó con cierre 2023-09-29 ("Alverca, 29 de Setembro de 2023",
+       relatorio-contas-2022-23.md L75 y L108) cuando el documento dice "Período findo em 30 de Junho de 2023" (L87) y las columnas
+       "30/06/2023 | 30/06/2022" (L93). Se resolvió con un ajuste `cierre`. Escalón posible: una fecha precedida por un nombre de lugar
+       ("<Ciudad>, <día> de <mes> de <año>") es la firma, no el cierre; y el "período findo em" o la fecha de las columnas del estado manda.
+
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
     e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
