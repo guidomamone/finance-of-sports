@@ -87,6 +87,10 @@ incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con ot
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.959575 (compuerta: documento anterior): Jev (confianza 0.75): Panetolikos_FS_2025-06-30.md L1085 "Σύνολο"
+```
+
 ### Liga
 
 ```text
@@ -128,6 +132,10 @@ Generados/Grecia/Panetolikos/Panetolikos_FS_2024-06-30.categorias.json (escalón
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.850317 (compuerta: documento siguiente): Jev (confianza 0.73): Panetolikos_FS_2024-06-30.md L1072 "Σύνολο"
 ```
 
 ### Liga
@@ -172,6 +180,10 @@ Generados/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.categorias.json (escalón
 tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.716652 (compuerta: documento siguiente): Jev (confianza 0.74): Panetolikos_FS_2023-06-30.md L1158 "Σύνολο"
 ```
 
 ### Liga
@@ -223,6 +235,10 @@ tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 2 (compuerta: año anterio
 tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 1b (compuerta: año anterior): "Δανεισμός" pág. 5 + "Δάνεια" pág. 19 + "Τραπεζικά δάνεια" pág. 19
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.566222 (compuerta: documento siguiente): Jev (confianza 0.9): Panetolikos_FS_2022-06-30.md L1471 "Σύνολο"
+```
+
 ### Liga
 
 ```text
@@ -267,6 +283,10 @@ tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por pr
 
 ```text
 tools/caja-deuda.mjs (2026-10-14): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 19; cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 18
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.288535 (compuerta: documento siguiente): Jev (confianza 0.92): Panetolikos_FS_2021-06-30.md L1437 "Σύνολο"
 ```
 
 ### Liga

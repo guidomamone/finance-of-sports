@@ -181,7 +181,7 @@ const panetolikosgrFiscalYearMeta = {
       {renglon:'Αγορές τρίτων χωρών', lado:'revenue', importe:0.004192, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad media): Es el resto del Κύκλος εργασιών (604.192 = 600.000 + 4.192), clasificado por el documento como prestación de servicios sin más detalle y sin entradas (covid); no hay forma de saber qué servicio es. Queda como fútbol sin desglosar, igual que el Κύκλος εργασιών de 2020 y 2022 (lump_football_operations). Importe chico (4 mil euros). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2021-06-30.md L1471 (pág. 35) "Αγορές τρίτων χωρών | 4.192,00 | 6.880,00"; L1465 "Παροχή υπηρεσιών Σύνολο | 604.192,00"; L1475 "στην τρέχουσα χρήση δεν εκδόθηκαν εισιτήρια λόγω covid"]'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:4.498578, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) "Κόστος πωλήσεων | -6.274.036,89". Nota de personal: L1079-1086, "Σύνολο" 1.959.575,41]'},
     ],
-    grossDebt:0, cash:0.339471,
+    grossDebt:0, cash:0.339471, staffCost:1.288535,
     officialTotalRevenue:4.480318, officialTotalExpenses:4.820124, officialPAT:-0.344261,
   },
   2022: {
@@ -201,7 +201,7 @@ const panetolikosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.224781, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:5.181017, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da un total de 1.566.222,00 € (L1470), pero no se sabe qué parte está en Κόστος πωλήσεων y qué parte en Έξοδα διοίκησης. [Clubes/Grecia/Panetolikos/Panetolikos_FS_2022-06-30.md L663 (pág. 17) "Κόστος πωλήσεων | 5.181.017,16". Nota de personal: L1463-1470, "Σύνολο" 1.566.222,00]'},
     ],
-    grossDebt:0.675224, cash:null,
+    grossDebt:0.675224, cash:null, staffCost:1.566222,
     officialTotalRevenue:2.982884, officialTotalExpenses:6.039569, officialPAT:-3.077233,
   },
   2023: {
@@ -220,7 +220,7 @@ const panetolikosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:6.807271, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.716.651,78 € (L1159) de sueldos totales, repartidos sin dato entre las líneas por función. [Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md L548 (pág. 17) "Κόστος πωλήσεων | -6.807.271,34". Nota de personal: L1152-1159, "Σύνολο" 1.716.651,78]'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:null, staffCost:1.716652,
     officialTotalRevenue:4.751314, officialTotalExpenses:7.621847, officialPAT:-2.875778,
   },
   2024: {
@@ -239,7 +239,7 @@ const panetolikosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:6.720034, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.850.317,43 € (L1073). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2024-06-30.md L500 (pág. 15) "Κόστος πωλήσεων | -6.720.033,91". Nota de personal: L1066-1073, "Σύνολο" 1.850.317,43]'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:null, staffCost:1.850317,
     officialTotalRevenue:4.854132, officialTotalExpenses:7.537969, officialPAT:-2.700977,
   },
   2025: {
@@ -258,7 +258,7 @@ const panetolikosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:6.274037, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) "Κόστος πωλήσεων | -6.274.036,89". Nota de personal: L1079-1086, "Σύνολο" 1.959.575,41]'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:null, staffCost:1.959575,
     officialTotalRevenue:5.792984, officialTotalExpenses:7.05356, officialPAT:-1.426639,
   },
 };
