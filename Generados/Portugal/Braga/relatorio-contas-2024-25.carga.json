@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Braga/relatorio-contas-2024-25.pdf",
- "generado": "2026-10-15T23:06:35.171Z",
+ "generado": "2026-10-15T23:16:33.043Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (braga-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "8 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros ganhos com operações de atletas\" -> player_sales 0.75; \"Cedência de atletas a seleções nacionais\" -> other_income 0.55; \"Mecanismo de solidariedade e direitos de\" -> player_sales 0.6; \"Rendas / Direitos Exploração\" -> admin_general_expense 0.6; \"Staff Geral\" -> admin_general_expense 0.6"
   }
  ],
  "avisos": [
@@ -128,9 +124,9 @@
     "amountNative": 4.18714,
     "disclosureLevel": "aggregated",
     "_pag": 131,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Empréstimo de atletas",
@@ -148,9 +144,9 @@
     "amountNative": 0.080498,
     "disclosureLevel": "aggregated",
     "_pag": 131,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mecanismo de solidariedade e direitos de formação",
@@ -158,9 +154,9 @@
     "amountNative": 1.263757,
     "disclosureLevel": "aggregated",
     "_pag": 131,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Receitas de apostas desportivas",
@@ -370,9 +366,9 @@
     "amountNative": -1.159767,
     "disclosureLevel": "aggregated",
     "_pag": 127,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Comunicação",
@@ -476,13 +472,13 @@
    },
    {
     "rawLabel": "Staff Geral",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "wages_squad",
     "amountNative": -4.183834,
     "disclosureLevel": "aggregated",
     "_pag": 129,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Prémios de assinatura",
@@ -490,9 +486,9 @@
     "amountNative": -3.189072,
     "disclosureLevel": "aggregated",
     "_pag": 129,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Prémios de desempenho",
@@ -610,9 +606,9 @@
     "amountNative": -0.710607,
     "disclosureLevel": "aggregated",
     "_pag": 134,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Multas / Penalidades desportivas",
@@ -690,9 +686,9 @@
     "amountNative": -0.005708,
     "disclosureLevel": "aggregated",
     "_pag": 135,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros ativos intangíveis",
@@ -927,11 +923,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 4.18714,
    "cat": "player_sales",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): sell-on fees y objetivos por ventas de jugadores. [relatorio-contas-2024-25.md L3575, L3616]",
    "destino": "revenue",
    "amountNative": 4.18714
   },
@@ -958,11 +954,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.080498,
    "cat": "other_income",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): compensación FIFA por jugadores en selecciones (Euro 2024), other_income. [relatorio-contas-2024-25.md L3618]",
    "destino": "revenue",
    "amountNative": 0.080498
   },
@@ -974,11 +970,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 1.263757,
    "cat": "player_sales",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): compensación por formación y solidaridad cobrados, player_sales como Nacional/Rio Ave/Tondela/Sporting. [relatorio-contas-2024-25.md L3620]",
    "destino": "revenue",
    "amountNative": 1.263757
   },
@@ -1292,11 +1288,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\")",
    "signoFijo": 1.159767,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): alquileres varios (vehículos, locales, Cidade Desportiva, estadio), admin_general_expense como Nacional/Tondela/Rio Ave; fila mixta sin categoría de estadio en gastos. [relatorio-contas-2024-25.md L3499]",
    "destino": "expense",
    "amountNative": -1.159767
   },
@@ -1458,12 +1454,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 4.183834,
-   "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): staff de los equipos (principal, B, sub-23, formación), dentro de Remuneração do pessoal; como Vitória 'pessoal apoio ao futebol profissional'. [relatorio-contas-2024-25.md L3556]",
    "destino": "expense",
    "amountNative": -4.183834
   },
@@ -1475,11 +1471,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 3.189072,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): bono de firma a atletas condicionado a permanencia, remuneración. [relatorio-contas-2024-25.md L3536]",
    "destino": "expense",
    "amountNative": -3.189072
   },
@@ -1661,11 +1657,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.710607,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): formación y solidaridad pagados y no capitalizados, other_expenses como Sporting 2025. [relatorio-contas-2024-25.md L3654]",
    "destino": "expense",
    "amountNative": -0.710607
   },
@@ -1782,11 +1778,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos/reversões de depreciação e de amortização\")",
    "signoFijo": 0.005708,
    "cat": "other_amortisation",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): amortización de derecho de superficie (intangible no plantel). [relatorio-contas-2024-25.md L3684]",
    "destino": "expense",
    "amountNative": -0.005708
   },
@@ -1929,7 +1925,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 17,
   "lineasGasto": 51,
   "metaFilas": 3,

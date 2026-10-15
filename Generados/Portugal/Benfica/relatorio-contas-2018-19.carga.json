@@ -1,26 +1,15 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2018-19.pdf",
- "generado": "2026-10-15T23:06:35.664Z",
+ "generado": "2026-10-15T23:16:33.351Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (benfica-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "12 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Rendas de espaço\" -> other_income 0.6; \"Corporate\" -> matchday_competition 0.55; \"Competições nacionais\" -> matchday_competition 0.65; \"Outros rendimentos\" -> player_sales 0.5; \"Outros fornecimentos e serviços\" -> other_expenses 0.7"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 2: 2009-2019 traen consolidado e individual lado a lado y las controladas (Benfica Estádio, Benfica TV) hacen negocio del fútbol del club (estadio, canal))",
+  "gastos: ningún total impreso igual a la suma de las líneas (-217.366); queda la suma, verificada por el resultado del ejercicio",
   "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo",
   "gestión: ningún presidente confirmado cubre 2019 (cierre 2019-06-30); pregunta en la cola (no frena)"
  ],
@@ -76,9 +65,9 @@
     "amountNative": 3.805,
     "disclosureLevel": "aggregated",
     "_pag": 140,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Royalties",
@@ -102,13 +91,13 @@
    },
    {
     "rawLabel": "Corporate",
-    "normalizedCategory": "matchday_competition",
+    "normalizedCategory": "stadium_other",
     "amountNative": 10.672,
     "disclosureLevel": "aggregated",
     "_pag": 140,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Bilhetes de época",
@@ -126,9 +115,9 @@
     "amountNative": 4.95,
     "disclosureLevel": "aggregated",
     "_pag": 140,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Competições europeias",
@@ -156,9 +145,9 @@
     "amountNative": 15.194,
     "disclosureLevel": "aggregated",
     "_pag": 145,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Resultado relativo a investimentos em participadas",
@@ -278,9 +267,9 @@
     "amountNative": -10.837,
     "disclosureLevel": "aggregated",
     "_pag": 141,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Remunerações fixas",
@@ -328,9 +317,9 @@
     "amountNative": -3.029,
     "disclosureLevel": "aggregated",
     "_pag": 142,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Benefícios pós-emprego",
@@ -338,9 +327,9 @@
     "amountNative": -0.074,
     "disclosureLevel": "aggregated",
     "_pag": 142,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Encargos sobre remunerações",
@@ -348,9 +337,9 @@
     "amountNative": -6.337,
     "disclosureLevel": "aggregated",
     "_pag": 142,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Seguros de acidentes de trabalho",
@@ -368,9 +357,9 @@
     "amountNative": -1.49,
     "disclosureLevel": "aggregated",
     "_pag": 142,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Edifícios e outras construções",
@@ -454,13 +443,13 @@
    },
    {
     "rawLabel": "Calena comercial",
-    "normalizedCategory": "other_amortisation",
+    "normalizedCategory": "depreciation",
     "amountNative": -0.249,
     "disclosureLevel": "aggregated",
     "_pag": 144,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Provisões/Imparidades ^{2)}",
@@ -468,9 +457,9 @@
     "amountNative": 0.445,
     "disclosureLevel": "aggregated",
     "_pag": 90,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos e perdas operacionais ^{3)}",
@@ -484,13 +473,13 @@
    },
    {
     "rawLabel": "Perdas com alienações de direitos de atletas (menos-valias)",
-    "normalizedCategory": "player_amortisation",
+    "normalizedCategory": "exceptional_items",
     "amountNative": -4.422,
     "disclosureLevel": "aggregated",
     "_pag": 145,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos associados a alienações de direitos de atletas (comissões)",
@@ -580,7 +569,7 @@
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 259.842,
-   "officialTotalExpenses": 221.788,
+   "officialTotalExpenses": 217.366,
    "officialPAT": 29.39
   },
   "source": {
@@ -679,11 +668,11 @@
    "origen": "verificacion (nota que desglosa \"Atividades comerciais\")",
    "signoFijo": 3.805,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): alquiler genérico sin decir qué se alquila, other_income. [relatorio-contas-2018-19.md L4708]",
    "destino": "revenue",
    "amountNative": 3.805
   },
@@ -724,12 +713,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Receitas de jogos\")",
    "signoFijo": 10.672,
-   "cat": "matchday_competition",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "stadium_other",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): 'A rubrica de corporate refere-se às receitas provenientes de camarotes e executive seats'; palcos van a stadium_other, como Sporting 'Camarotes'. [relatorio-contas-2018-19.md L4733]",
    "destino": "revenue",
    "amountNative": 10.672
   },
@@ -756,11 +745,11 @@
    "origen": "verificacion (nota que desglosa \"Receitas de jogos\")",
    "signoFijo": 4.95,
    "cat": "matchday_competition",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): entradas de competencias nacionales dentro de Receitas de jogos. [relatorio-contas-2018-19.md L4715]",
    "destino": "revenue",
    "amountNative": 4.95
   },
@@ -802,11 +791,11 @@
    "origen": "verificacion (nota que desglosa \"Rendimentos com transações de direitos de atletas\")",
    "signoFijo": 15.194,
    "cat": "player_sales",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Outros rendimentos com transações de direitos de atletas (cesiones, solidaridad, formación), player_sales como Famalicão. [relatorio-contas-2018-19.md L4898, L781]",
    "destino": "revenue",
    "amountNative": 15.194
   },
@@ -983,11 +972,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 10.837,
    "cat": "other_expenses",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): residuo de FSE nota 22. [relatorio-contas-2018-19.md L4759]",
    "destino": "expense",
    "amountNative": -10.837
   },
@@ -1059,11 +1048,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
    "signoFijo": 3.029,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): indemnizaciones dentro de Gastos com pessoal, como Sporting/Moreirense. [relatorio-contas-2018-19.md L4804]",
    "destino": "expense",
    "amountNative": -3.029
   },
@@ -1075,11 +1064,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
    "signoFijo": 0.074,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): parte de Gastos com pessoal. [relatorio-contas-2018-19.md L4805]",
    "destino": "expense",
    "amountNative": -0.074
   },
@@ -1091,11 +1080,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
    "signoFijo": 6.337,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): cargas sociales van con el sueldo. [relatorio-contas-2018-19.md L4806]",
    "destino": "expense",
    "amountNative": -6.337
   },
@@ -1122,11 +1111,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
    "signoFijo": 1.49,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): residuo de la nota 23 de personal. [relatorio-contas-2018-19.md L4808]",
    "destino": "expense",
    "amountNative": -1.49
   },
@@ -1257,12 +1246,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Depreciações/Amortizações ^{1)}\")",
    "signoFijo": 0.249,
-   "cat": "other_amortisation",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): bajo 'Depreciações de propriedades de investimento' (inmueble), no intangibles. [relatorio-contas-2018-19.md L4873-4875]",
    "destino": "expense",
    "amountNative": -0.249
   },
@@ -1274,11 +1263,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": -0.445,
    "cat": "other_amortisation",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (revisado): línea neta de provisiones e imparidades (constitución y reversión juntas): other_amortisation, mismo criterio que Porto 2025 y Sporting; reemplaza la respuesta anterior. [relatorio-contas-2018-19.md L2702]",
    "destino": "expense",
    "amountNative": 0.445
   },
@@ -1304,12 +1293,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos com transações de direitos de atletas\")",
    "signoFijo": 4.422,
-   "cat": "player_amortisation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet) (revisado por Claude): pérdida contable en la venta de jugadores, no amortización; precedente del sitio: 'minusvalenze da cessione diritti' (Italia) en exceptional_items. [relatorio-contas-2018-19.md L4901]",
    "destino": "expense",
    "amountNative": -4.422
   },
@@ -1456,14 +1445,14 @@
  },
  "totales": {
   "revSum": 259.842,
-  "expSum": -221.788,
+  "expSum": -217.366,
   "officialTotalRevenue": 259.842,
-  "officialTotalExpenses": 221.788,
+  "officialTotalExpenses": 217.366,
   "officialPAT": 29.39,
   "verificacion": {
    "pat": "impreso",
    "ingresos": "impreso",
-   "gastos": "impreso"
+   "gastos": "por-resultado"
   },
   "patImpreso": {
    "label": "resultado detectado por proponer-carga",
@@ -1475,11 +1464,6 @@
    "label": "total de ingresos (verificado)",
    "pag": null,
    "M": 259.842
-  },
-  "expImpreso": {
-   "label": "total de gastos (verificado)",
-   "pag": null,
-   "M": 221.788
   }
  },
  "liga": {
@@ -1536,7 +1520,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 1,
   "lineasIngreso": 14,
   "lineasGasto": 38,
   "metaFilas": 3,

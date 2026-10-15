@@ -1,10 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.md",
- "mdSha1": "540ab2472ef5072823207dbfb0ef49ba0f10fd8e",
+ "mdSha1": "9ade195435756b1cd2b9a043636fe018c48fdb30",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-15T22:51:59.095Z",
- "indiceAmpliado": 2,
+ "generado": "2026-10-15T23:13:04.445Z",
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -342,27 +341,28 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga el cuadro de inventarios b20 como cálculo (Inventários iniciais + Compras − Inventários finais = 378.447,62) y no como suma de filas?",
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Informação por CAE' (b34), que solo repite totales de vendas, serviços, FSE y pessoal ya abiertos en otras notas?",
    "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
-   "texto": "b20 no es aditivo: sumar inicial 158.077,30 + compras 348.137,05 + final 127.766,73 da 633.981, de ahí el descuadre; el resultado impreso es 378.447,62 y coincide con el estado.",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "",
+   "texto": "Tiene una sola actividad CAE 93120 y sus importes coinciden con renglones del estado y de las notas 10, 15 y 17.",
    "bloques": [
-    "b20"
+    "b34",
+    "b35"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   },
   {
-   "pregunta": "¿Se deja afuera el cuadro por CAE b34, que repite importes ya presentes en el estado y en las notas?",
+   "pregunta": "¿Se deja afuera el detalle de subsídios (b25) porque el renglón 'Subsídios à exploração' es una sola fila del estado?",
    "propuesta": "sí",
-   "tema": "cuadro-duplicado",
-   "renglon": "",
-   "texto": "b34 tiene una sola actividad (CAE 93120) y repite CMVMC 378.447,62 y gastos de personal.",
+   "tema": "otro",
+   "renglon": "Subsídios à exploração",
+   "texto": "El cuadro de subsídios desglosa por origen (Estado/otras entidades), no por categoría de ingreso.",
    "bloques": [
-    "b34"
+    "b25"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Estado individual de la SAD (b7). El CMVMC se abre en b20 (cálculo de inventarios): solo la fila Compras es un componente con signo positivo y los inventarios final e inicial ajustan el importe; no deben sumarse todas las filas. La diferencia de 1 € en Outros gastos (b37) es redondeo. b20 trae columnas del ejercicio anterior con encabezado mal alineado."
+ "observaciones": "Estado de resultados por naturezas individual de la SAD (b7), en euros. Notas: rédito (b21), outros rendimentos (b22), CMVMC (b20), pessoal (b33), FSE (b36), outros gastos (b37). Comparativo 2024 reexpresado. Se excluyen balance, flujos, patrimonio, activos fijos, provisiones, impuestos e instrumentos financieros."
 }

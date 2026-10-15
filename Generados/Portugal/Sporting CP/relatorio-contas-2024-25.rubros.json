@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2024-25.md",
   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2024-25.pdf",
-  "club": "sporting-cp",
+  "club": "sportingcp-pt",
   "year": 2025,
-  "generatedAt": "2026-10-15T23:04:21.368Z",
+  "generatedAt": "2026-10-15T23:14:10.553Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         28.8
       ],
-      "glosa": "Derechos audiovisuales - Competiciones nacionales"
+      "glosa": "Derechos de televisión - Competiciones nacionales"
     },
     {
       "label": "Outros direitos televisivos",
@@ -64,7 +64,7 @@
       "values": [
         0.666
       ],
-      "glosa": "Otros derechos audiovisuales"
+      "glosa": "Otros derechos de televisión"
     },
     {
       "label": "Outros",
@@ -144,7 +144,7 @@
       "values": [
         2.512
       ],
-      "glosa": "Asientos Business"
+      "glosa": "Asientos VIP"
     },
     {
       "label": "Outros",
@@ -234,7 +234,7 @@
       "values": [
         1.143
       ],
-      "glosa": "Vigilancia y seguridad"
+      "glosa": "Vigilancia"
     },
     {
       "label": "Limpeza",
@@ -294,7 +294,7 @@
       "values": [
         6.386
       ],
-      "glosa": "Organización, desplazamientos y estancias para partidos"
+      "glosa": "Organización, desplazamientos y alojamiento de partidos"
     },
     {
       "label": "Trabalhos especializados",
@@ -334,7 +334,7 @@
       "values": [
         2.274
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "*Royalties* (nota27)",
@@ -344,7 +344,7 @@
       "values": [
         3.16
       ],
-      "glosa": "*Royalties* (nota 27)"
+      "glosa": "Regalías (nota 27)"
     },
     {
       "label": "Aquisição de jogadores",
@@ -404,7 +404,7 @@
       "values": [
         0.364
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Reparaciones y conservación"
     },
     {
       "label": "Equipamentos Desportivos",
@@ -434,7 +434,7 @@
       "values": [
         1.719
       ],
-      "glosa": "Retribución de los órganos de gobierno"
+      "glosa": "Retribución de los órganos sociales"
     },
     {
       "label": "Remuneração do pessoal",
@@ -444,7 +444,7 @@
       "values": [
         64.297
       ],
-      "glosa": "Remuneración del personal"
+      "glosa": "Retribución del personal"
     },
     {
       "label": "Encargos com remunerações",
@@ -454,7 +454,7 @@
       "values": [
         7
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales sobre retribuciones"
     },
     {
       "label": "Seguros",
@@ -474,7 +474,7 @@
       "values": [
         9.092
       ],
-      "glosa": "Primas por rendimiento y logros deportivos"
+      "glosa": "Primas por rendimiento y desempeño deportivo"
     },
     {
       "label": "Indemnizações",
@@ -504,7 +504,7 @@
       "values": [
         7.235
       ],
-      "glosa": "Depreciaciones y amortizaciones excluyendo plantilla"
+      "glosa": "Amortizaciones excluyendo plantilla deportiva"
     },
     {
       "label": "Provisões para outros riscos e encargos (Nota 20)",
@@ -564,7 +564,7 @@
       "values": [
         0.629
       ],
-      "glosa": "Cuotas de socios"
+      "glosa": "Cuotas"
     },
     {
       "label": "Prospecção de mercado",

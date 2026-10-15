@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2018-19.pdf",
   "club": "benfica",
   "year": 2019,
-  "generatedAt": "2026-10-15T23:04:21.492Z",
+  "generatedAt": "2026-10-15T23:14:10.693Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         43.525
       ],
-      "glosa": "Ingresos por derechos de televisión"
+      "glosa": "Ingresos por retransmisión televisiva"
     },
     {
       "label": "Outras receitas",
@@ -84,7 +84,7 @@
       "values": [
         10.672
       ],
-      "glosa": "Hospitality y corporativo"
+      "glosa": "Corporate / Hospitalidad"
     },
     {
       "label": "Bilhetes de época",
@@ -94,7 +94,7 @@
       "values": [
         7.699
       ],
-      "glosa": "Abonos"
+      "glosa": "Abonos de temporada"
     },
     {
       "label": "Competições nacionais",
@@ -124,7 +124,7 @@
       "values": [
         76.157
       ],
-      "glosa": "Beneficios por enajenación de derechos federativos (plusvalías)"
+      "glosa": "Beneficios por enajenación de derechos de futbolistas (plusvalías)"
     },
     {
       "label": "Outros rendimentos",
@@ -134,7 +134,7 @@
       "values": [
         15.194
       ],
-      "glosa": "Otros ingresos"
+      "glosa": "Otros rendimientos"
     },
     {
       "label": "Resultado relativo a investimentos em participadas",
@@ -144,7 +144,7 @@
       "values": [
         2.787
       ],
-      "glosa": "Resultado de inversiones en participadas"
+      "glosa": "Resultado de participaciones en empresas asociadas"
     },
     {
       "label": "Trabalhos especializados",
@@ -154,7 +154,7 @@
       "values": [
         13.73
       ],
-      "glosa": "Servicios profesionales especializados"
+      "glosa": "Trabajos especializados"
     },
     {
       "label": "Deslocações e estadas",
@@ -184,7 +184,7 @@
       "values": [
         2.966
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Reparación y conservación"
     },
     {
       "label": "Serviços de catering/softdrink",
@@ -194,7 +194,7 @@
       "values": [
         2.852
       ],
-      "glosa": "Servicios de catering / bebidas"
+      "glosa": "Servicios de catering y bebidas"
     },
     {
       "label": "Rendas e aluguéis",
@@ -204,7 +204,7 @@
       "values": [
         2.393
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Equipamento desportivo",
@@ -224,7 +224,7 @@
       "values": [
         2.118
       ],
-      "glosa": "Subcontratos"
+      "glosa": "Subcontratas"
     },
     {
       "label": "Vigilância e segurança",
@@ -244,7 +244,7 @@
       "values": [
         2.003
       ],
-      "glosa": "Honorarios"
+      "glosa": "Honorarios profesionales"
     },
     {
       "label": "Outros fornecimentos e serviços",
@@ -254,7 +254,7 @@
       "values": [
         10.837
       ],
-      "glosa": "Otros aprovisionamientos y servicios"
+      "glosa": "Otros servicios exteriores y suministros"
     },
     {
       "label": "Remunerações fixas",
@@ -264,7 +264,7 @@
       "values": [
         0.574
       ],
-      "glosa": "Remuneraciones fijas"
+      "glosa": "Retribuciones fijas"
     },
     {
       "label": "Remunerações variáveis",
@@ -274,7 +274,7 @@
       "values": [
         0.108
       ],
-      "glosa": "Remuneraciones variables"
+      "glosa": "Retribuciones variables"
     },
     {
       "label": "Remunerações fixas",
@@ -284,7 +284,7 @@
       "values": [
         62.207
       ],
-      "glosa": "Remuneraciones fijas"
+      "glosa": "Retribuciones fijas"
     },
     {
       "label": "Remunerações variáveis",
@@ -294,7 +294,7 @@
       "values": [
         17.023
       ],
-      "glosa": "Remuneraciones variables"
+      "glosa": "Retribuciones variables"
     },
     {
       "label": "Indemnizações",
@@ -314,7 +314,7 @@
       "values": [
         0.074
       ],
-      "glosa": "Beneficios post-empleo"
+      "glosa": "Retribuciones post-empleo"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -324,7 +324,7 @@
       "values": [
         6.337
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -364,7 +364,7 @@
       "values": [
         1.509
       ],
-      "glosa": "Instalaciones y maquinaria"
+      "glosa": "Instalaciones técnicas y maquinaria"
     },
     {
       "label": "Equipamento de transporte",
@@ -384,7 +384,7 @@
       "values": [
         1.528
       ],
-      "glosa": "Mobiliario y equipos de oficina"
+      "glosa": "Equipos para procesos de información y oficina"
     },
     {
       "label": "Outros ativos tangíveis",
@@ -404,7 +404,7 @@
       "values": [
         1.52
       ],
-      "glosa": "Derecho de uso de marca"
+      "glosa": "Derechos de uso de marca"
     },
     {
       "label": "Programas de computador",
@@ -424,7 +424,7 @@
       "values": [
         0.25
       ],
-      "glosa": "Derechos de televisión"
+      "glosa": "Derechos de retransmisión televisiva"
     },
     {
       "label": "Calena comercial",
@@ -444,7 +444,7 @@
       "values": [
         -0.445
       ],
-      "glosa": "Provisiones / Deterioros de valor ^{2)}"
+      "glosa": "Provisiones / Pérdidas por deterioro ^{2)}"
     },
     {
       "label": "Outros gastos e perdas operacionais ^{3)}",
@@ -464,7 +464,7 @@
       "values": [
         4.422
       ],
-      "glosa": "Pérdidas por enajenación de derechos federativos (minusvalías)"
+      "glosa": "Pérdidas por enajenación de derechos de futbolistas (minusvalías)"
     },
     {
       "label": "Gastos associados a alienações de direitos de atletas (comissões)",
@@ -474,7 +474,7 @@
       "values": [
         9.674
       ],
-      "glosa": "Gastos asociados a enajenaciones de derechos federativos (comisiones)"
+      "glosa": "Gastos asociados a la enajenación de derechos de futbolistas (comisiones)"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -484,7 +484,7 @@
       "values": [
         0.03
       ],
-      "glosa": "Bajas de derechos federativos"
+      "glosa": "Bajas de derechos de futbolistas"
     },
     {
       "label": "Outros gastos",
@@ -504,7 +504,7 @@
       "values": [
         33.343
       ],
-      "glosa": "Amortizaciones de derechos federativos"
+      "glosa": "Amortización de derechos de futbolistas"
     },
     {
       "label": "Perdas de imparidade",
@@ -514,7 +514,7 @@
       "values": [
         3.555
       ],
-      "glosa": "Pérdidas por deterioro de valor"
+      "glosa": "Pérdidas por deterioro"
     },
     {
       "label": "Reversões de imparidade",
@@ -524,7 +524,7 @@
       "values": [
         -0.731
       ],
-      "glosa": "Reversiones del deterioro de valor"
+      "glosa": "Reversiones del deterioro"
     }
   ]
 }

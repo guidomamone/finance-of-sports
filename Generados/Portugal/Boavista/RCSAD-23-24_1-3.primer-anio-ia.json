@@ -1,13 +1,13 @@
 {
  "md": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.md",
- "clave": "1cf60adb3d33915a1a2bef881e4a63fd5847b996",
- "generado": "2026-10-15T22:48:04.393Z",
+ "clave": "e3b5dccea263a572d2a713b8fb0c3e646f45dc61",
+ "generado": "2026-10-15T23:14:24.257Z",
  "fuente": "API",
  "datos": {
   "faltan": [],
   "sobran": [],
   "repetidas": [],
   "lado_equivocado": [],
-  "observacion": "Todos los renglones del ejercicio 2023/2024 están cargados una sola vez, del lado correcto, y no se cargaron subtotales. El impuesto de L595 es positivo (1 649 760,57): es un ingreso por impuesto, y lo cargado lo trata así porque el resultado cuadra en (6 669 277,75). La línea L598, de actividades descontinuadas, está vacía."
+  "observacion": "Sin problemas. Las tres partes de L584 (Bilhetes e Camarotes, Direitos Televisivos, Publicidade) suman 4,424268 y reemplazan correctamente a Vendas e serviços prestados. Los subtotales L590, L592, L594 y L596 no se cargan. El impuesto positivo (L595) es un ingreso por impuesto. Lo cargado reproduce el resultado líquido de -6,669278."
  }
 }

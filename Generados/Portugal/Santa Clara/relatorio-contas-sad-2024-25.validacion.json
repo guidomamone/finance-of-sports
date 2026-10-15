@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.md",
- "mdSha1": "540ab2472ef5072823207dbfb0ef49ba0f10fd8e",
+ "mdSha1": "9ade195435756b1cd2b9a043636fe018c48fdb30",
  "modo": "escaneo",
  "motivoModo": "el PDF no trae texto usable (0 números, 0 caracteres/pág): escaneo o texto roto",
- "generado": "2026-10-15T22:51:59.136Z",
+ "generado": "2026-10-15T23:13:04.496Z",
  "fuentes": {
   "18": "guardada",
   "34": "guardada",
@@ -13,7 +13,7 @@
   "45": "guardada",
   "47": "guardada"
  },
- "confirmados": 156,
+ "confirmados": 158,
  "noConfirmados": [
   {
    "bloque": "b7",
@@ -72,6 +72,24 @@
   {
    "bloque": "b7",
    "pagina": 18,
+   "linea": 336,
+   "numero": "236 995,04",
+   "segundaLeyo": "23659504",
+   "sinSegunda": false,
+   "texto": "| Imparidade de dívidas a receber (perdas/reversões) | 14 | -236 995,04 € | -202 269,85 € |"
+  },
+  {
+   "bloque": "b7",
+   "pagina": 18,
+   "linea": 336,
+   "numero": "202 269,85",
+   "segundaLeyo": "20226585",
+   "sinSegunda": false,
+   "texto": "| Imparidade de dívidas a receber (perdas/reversões) | 14 | -236 995,04 € | -202 269,85 € |"
+  },
+  {
+   "bloque": "b7",
+   "pagina": 18,
    "linea": 337,
    "numero": "471 404,17",
    "segundaLeyo": "47146417",
@@ -90,47 +108,38 @@
   {
    "bloque": "b7",
    "pagina": 18,
-   "linea": 340,
-   "numero": "13 195 308,65",
+   "linea": 339,
+   "numero": "618 741,86",
    "segundaLeyo": null,
    "sinSegunda": false,
-   "texto": "| **Resultado antes de depreciações, gastos de financiamento e impostos** | | **-13 195 308,65 €** | **-10 400 123,28 €** |"
+   "texto": "| Outros gastos | 17 | -517 774,75 € | -618 741,86 € |"
   },
   {
    "bloque": "b7",
    "pagina": 18,
    "linea": 340,
-   "numero": "10 400 123,28",
-   "segundaLeyo": null,
+   "numero": "13 195 708,65",
+   "segundaLeyo": "1319570965",
    "sinSegunda": false,
-   "texto": "| **Resultado antes de depreciações, gastos de financiamento e impostos** | | **-13 195 308,65 €** | **-10 400 123,28 €** |"
+   "texto": "| **Resultado antes de depreciações, gastos de financiamento e impostos** | | **-13 195 708,65 €** | **-10 400 123,16 €** |"
   },
   {
    "bloque": "b7",
    "pagina": 18,
    "linea": 342,
-   "numero": "11 194,64",
+   "numero": "11 194,68",
    "segundaLeyo": null,
    "sinSegunda": false,
-   "texto": "| Imparidade de ativos depreciáveis/amortizáveis (perdas/reversões) | | -11 194,64 € | - € |"
+   "texto": "| Imparidade de ativos depreciáveis/amortizáveis (perdas/reversões) | | -11 194,68 € | - € |"
   },
   {
    "bloque": "b7",
    "pagina": 18,
    "linea": 343,
-   "numero": "14 606 742,04",
+   "numero": "14 604 142,08",
    "segundaLeyo": null,
    "sinSegunda": false,
-   "texto": "| **Resultado operacional (antes de gastos de financiamento e impostos)** | | **-14 606 742,04 €** | **-11 598 311,49 €** |"
-  },
-  {
-   "bloque": "b7",
-   "pagina": 18,
-   "linea": 343,
-   "numero": "11 598 311,49",
-   "segundaLeyo": "1159831145",
-   "sinSegunda": false,
-   "texto": "| **Resultado operacional (antes de gastos de financiamento e impostos)** | | **-14 606 742,04 €** | **-11 598 311,49 €** |"
+   "texto": "| **Resultado operacional (antes de gastos de financiamento e impostos)** | | **-14 604 142,08 €** | **-11 598 311,45 €** |"
   },
   {
    "bloque": "b7",
@@ -145,19 +154,10 @@
    "bloque": "b7",
    "pagina": 18,
    "linea": 346,
-   "numero": "14 893 187,61",
+   "numero": "14 893 587,61",
    "segundaLeyo": null,
    "sinSegunda": false,
-   "texto": "| **Resultado antes de impostos** | | **-14 893 187,61 €** | **-11 746 614,46 €** |"
-  },
-  {
-   "bloque": "b7",
-   "pagina": 18,
-   "linea": 346,
-   "numero": "11 746 614,46",
-   "segundaLeyo": "1174661442",
-   "sinSegunda": false,
-   "texto": "| **Resultado antes de impostos** | | **-14 893 187,61 €** | **-11 746 614,46 €** |"
+   "texto": "| **Resultado antes de impostos** | | **-14 893 587,61 €** | **-11 746 614,42 €** |"
   },
   {
    "bloque": "b7",
@@ -196,15 +196,6 @@
    "texto": "|  Apostas Desportivas e Placard | 339 215 € | 452 717 €  |"
   },
   {
-   "bloque": "b21",
-   "pagina": 35,
-   "linea": 1027,
-   "numero": "1 831 588",
-   "segundaLeyo": "1831508",
-   "sinSegunda": false,
-   "texto": "|   | **6 270 606 €** | **1 831 588 €**  |"
-  },
-  {
    "bloque": "b37",
    "pagina": 47,
    "linea": 1536,
@@ -239,15 +230,6 @@
    "segundaLeyo": "157636",
    "sinSegunda": false,
    "texto": "| Gastos não devidamente documentados | 157 836 € | 63 600 € |"
-  },
-  {
-   "bloque": "b37",
-   "pagina": 47,
-   "linea": 1551,
-   "numero": "517 975",
-   "segundaLeyo": "517775",
-   "sinSegunda": false,
-   "texto": "| **Total** | 517 975 € | 618 742 € |"
   }
  ]
 }

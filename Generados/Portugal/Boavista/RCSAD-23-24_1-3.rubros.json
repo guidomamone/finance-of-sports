@@ -3,19 +3,9 @@
   "pdf": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf",
   "club": "boavista",
   "year": 2024,
-  "generatedAt": "2026-10-15T23:04:21.510Z",
+  "generatedAt": "2026-10-15T23:14:24.310Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
-    {
-      "label": "Vendas e serviços prestados",
-      "lado": "revenue",
-      "page": 14,
-      "section": "estado",
-      "values": [
-        4.424268
-      ],
-      "glosa": "Ventas y prestaciones de servicios"
-    },
     {
       "label": "Subsídios à exploração",
       "lado": "revenue",
@@ -37,6 +27,36 @@
       "glosa": "Otros ingresos"
     },
     {
+      "label": "Bilhetes e Camarotes",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        0.507075
+      ],
+      "glosa": "Entradas y palcos"
+    },
+    {
+      "label": "Direitos Televisivos",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        3.463889
+      ],
+      "glosa": "Derechos televisivos"
+    },
+    {
+      "label": "Publicidade",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        0.453304
+      ],
+      "glosa": "Publicidad"
+    },
+    {
       "label": "Fornecimentos e serviços externos",
       "lado": "expense",
       "page": 14,
@@ -44,7 +64,7 @@
       "values": [
         3.886821
       ],
-      "glosa": "Suministros y servicios exteriores"
+      "glosa": "Servicios exteriores"
     },
     {
       "label": "Gastos com o pessoal",
@@ -74,7 +94,7 @@
       "values": [
         2.200963
       ],
-      "glosa": "Gastos/reversiones de amortización y depreciación"
+      "glosa": "Dotaciones/reversiones por amortización y depreciación"
     }
   ]
 }

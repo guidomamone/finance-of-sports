@@ -1,14 +1,18 @@
 {
  "pdf": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf",
- "generado": "2026-10-15T23:06:36.170Z",
+ "generado": "2026-10-15T23:16:33.661Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (boavista-pt)"
   },
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Vendas e serviços prestados\" -> lump_football_operations 0.6"
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -21,16 +25,6 @@
   "cierre": "2024-06-30",
   "perimetro": "individual",
   "revenueLines": [
-   {
-    "rawLabel": "Vendas e serviços prestados",
-    "normalizedCategory": "lump_football_operations",
-    "amountNative": 4.424268,
-    "disclosureLevel": "aggregated",
-    "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
-   },
    {
     "rawLabel": "Subsídios à exploração",
     "normalizedCategory": "other_income",
@@ -49,6 +43,36 @@
     "_pag": 14,
     "_escalon": 1,
     "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bilhetes e Camarotes",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.507075,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Direitos Televisivos",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 3.463889,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Publicidade",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.453304,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    }
   ],
@@ -114,14 +138,6 @@
      "value": 1.649761
     }
    ],
-   "sinDesglose": [
-    {
-     "renglon": "Vendas e serviços prestados",
-     "lado": "revenue",
-     "importe": 4.424268,
-     "motivo": "el documento no desglosa este renglón"
-    }
-   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 9.926602,
@@ -153,29 +169,53 @@
  },
  "clubId": "boavista-pt",
  "year": 2024,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf",
+   "campo": "fila",
+   "valor": "507 074,99",
+   "linea": 584,
+   "etiqueta": "Bilhetes e Camarotes",
+   "lado": "ingreso",
+   "reemplaza": "Vendas e serviços prestados",
+   "motivo": "El estado trae las ventas en un renglón; la nota 22 (en la parte 2 del PDF, que el lote no lee) lo desglosa.",
+   "evidencia": "nota 22.2 'Rédito' en la parte 2 del informe (RCSAD-23-24_2-3.md L1146-1149, pág. del visor de esa parte); suman 4 424 268,14, igual a Vendas e serviços prestados del estado (RCSAD-23-24_1-3.md L584)",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf",
+   "campo": "fila",
+   "valor": "3 463 888,92",
+   "linea": 584,
+   "etiqueta": "Direitos Televisivos",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Desglose de Vendas e serviços prestados, nota 22.",
+   "evidencia": "nota 22.2 'Rédito' en la parte 2 del informe (RCSAD-23-24_2-3.md L1146-1149, pág. del visor de esa parte); suman 4 424 268,14, igual a Vendas e serviços prestados del estado (RCSAD-23-24_1-3.md L584)",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf",
+   "campo": "fila",
+   "valor": "453 304,23",
+   "linea": 584,
+   "etiqueta": "Publicidade",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Desglose de Vendas e serviços prestados, nota 22.",
+   "evidencia": "nota 22.2 'Rédito' en la parte 2 del informe (RCSAD-23-24_2-3.md L1146-1149, pág. del visor de esa parte); suman 4 424 268,14, igual a Vendas e serviços prestados del estado (RCSAD-23-24_1-3.md L584)",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
  "seleccion": {
-  "filas": 9,
+  "filas": 11,
   "notasUsadas": [],
   "refM": null
  },
  "filas": [
-  {
-   "label": "Vendas e serviços prestados",
-   "page": 14,
-   "native": 4.424268,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 4.424268,
-   "cat": "lump_football_operations",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "enCola": true,
-   "destino": "revenue",
-   "amountNative": 4.424268
-  },
   {
    "label": "Subsídios à exploração",
    "page": 14,
@@ -205,6 +245,51 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 5.282976
+  },
+  {
+   "label": "Bilhetes e Camarotes",
+   "page": 14,
+   "native": 0.507075,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.507075,
+   "cat": "matchday_competition",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.507075
+  },
+  {
+   "label": "Direitos Televisivos",
+   "page": 14,
+   "native": 3.463889,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 3.463889,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.463889
+  },
+  {
+   "label": "Publicidade",
+   "page": 14,
+   "native": 0.453304,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.453304,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.453304
   },
   {
    "label": "Fornecimentos e serviços externos",
@@ -292,6 +377,7 @@
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos con signo",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
@@ -373,8 +459,8 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
-  "lineasIngreso": 3,
+  "motivos": 3,
+  "lineasIngreso": 5,
   "lineasGasto": 4,
   "metaFilas": 2,
   "excluidas": 0

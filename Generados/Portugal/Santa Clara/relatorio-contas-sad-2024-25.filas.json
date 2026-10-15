@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.md",
- "mdSha1": "540ab2472ef5072823207dbfb0ef49ba0f10fd8e",
+ "mdSha1": "9ade195435756b1cd2b9a043636fe018c48fdb30",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-15T22:53:11.455Z",
+ "generado": "2026-10-15T23:14:10.467Z",
  "ubicacion": {
   "estado": [
    "b7"
@@ -23,37 +23,37 @@
   {
    "bloque": "b7",
    "escala": "unidades",
-   "evidencia": "Importes con céntimos y '€' (ej. '6 658 978,90 €')"
+   "evidencia": "Importes con céntimos y símbolo €, ej. '6 658 978,90 €' (L331)"
   },
   {
    "bloque": "b21",
    "escala": "unidades",
-   "evidencia": "Importes en '€' sin decimales (ej. '388 372 €')"
+   "evidencia": "Importes en € sin decimales, total '6 658 979 €' (L1028) coincide con estado"
   },
   {
    "bloque": "b22",
    "escala": "unidades",
-   "evidencia": "Total 838.396,78 igual al estado"
+   "evidencia": "Total 838.396,78 (L1042) igual al estado"
   },
   {
    "bloque": "b20",
    "escala": "unidades",
-   "evidencia": "378.447,62 igual al estado"
+   "evidencia": "378.447,62 (L994) igual al estado"
   },
   {
    "bloque": "b33",
    "escala": "unidades",
-   "evidencia": "16.165.189,26 igual al estado"
+   "evidencia": "16.165.189,26 (L1363) igual al estado"
   },
   {
    "bloque": "b36",
    "escala": "unidades",
-   "evidencia": "Total 4.082.748,19 igual al estado"
+   "evidencia": "Total 4.082.748,19 (L1485) igual al estado"
   },
   {
    "bloque": "b37",
    "escala": "unidades",
-   "evidencia": "Importes en '€' (ej. '3 043 €')"
+   "evidencia": "Total 517 775 € (L1551) ≈ estado"
   }
  ],
  "filas": [
@@ -111,8 +111,8 @@
    "bloque": "b7",
    "linea": 336,
    "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
-   "actual": "-236 595,04 €",
-   "anterior": "-202 265,85 €",
+   "actual": "-236 995,04 €",
+   "anterior": "-202 269,85 €",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
@@ -142,7 +142,7 @@
    "linea": 339,
    "etiqueta": "Outros gastos",
    "actual": "-517 774,75 €",
-   "anterior": "-618 741,98 €",
+   "anterior": "-618 741,86 €",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
@@ -151,8 +151,8 @@
    "bloque": "b7",
    "linea": 340,
    "etiqueta": "Resultado antes de depreciações, gastos de financiamento e impostos",
-   "actual": "-13 195 308,65 €",
-   "anterior": "-10 400 123,28 €",
+   "actual": "-13 195 708,65 €",
+   "anterior": "-10 400 123,16 €",
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
@@ -171,7 +171,7 @@
    "bloque": "b7",
    "linea": 342,
    "etiqueta": "Imparidade de ativos depreciáveis/amortizáveis (perdas/reversões)",
-   "actual": "-11 194,64 €",
+   "actual": "-11 194,68 €",
    "anterior": "- €",
    "tipo": "renglon",
    "lado": "gasto",
@@ -181,8 +181,8 @@
    "bloque": "b7",
    "linea": 343,
    "etiqueta": "Resultado operacional (antes de gastos de financiamento e impostos)",
-   "actual": "-14 606 742,04 €",
-   "anterior": "-11 598 311,49 €",
+   "actual": "-14 604 142,08 €",
+   "anterior": "-11 598 311,45 €",
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
@@ -211,8 +211,8 @@
    "bloque": "b7",
    "linea": 346,
    "etiqueta": "Resultado antes de impostos",
-   "actual": "-14 893 187,61 €",
-   "anterior": "-11 746 614,46 €",
+   "actual": "-14 893 587,61 €",
+   "anterior": "-11 746 614,42 €",
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
@@ -322,7 +322,7 @@
    "linea": 1027,
    "etiqueta": "",
    "actual": "6 270 606 €",
-   "anterior": "1 831 588 €",
+   "anterior": "1 831 508 €",
    "tipo": "subtotal",
    "lado": "ingreso",
    "detalla_a": "Vendas e serviços prestados"
@@ -333,7 +333,7 @@
    "etiqueta": "",
    "actual": "6 658 979 €",
    "anterior": "2 006 030 €",
-   "tipo": "total",
+   "tipo": "subtotal",
    "lado": "ingreso",
    "detalla_a": "Vendas e serviços prestados"
   },
@@ -403,9 +403,49 @@
    "etiqueta": "Total",
    "actual": "838.396,78",
    "anterior": "2.612.800,40",
-   "tipo": "total",
+   "tipo": "subtotal",
    "lado": "ingreso",
    "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b20",
+   "linea": 990,
+   "etiqueta": "Inventários iniciais",
+   "actual": "158.077,30",
+   "anterior": "141.744,67",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 991,
+   "etiqueta": "Compras",
+   "actual": "348.137,05",
+   "anterior": "123.798,83",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 992,
+   "etiqueta": "Reclassificação e regularização de inventários",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 993,
+   "etiqueta": "Inventários finais",
+   "actual": "127.766,73",
+   "anterior": "158.077,30",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
   },
   {
    "bloque": "b20",
@@ -413,7 +453,7 @@
    "etiqueta": "Custo das mercadorias vendidas e matérias consumidas",
    "actual": "378.447,62",
    "anterior": "107.466,20",
-   "tipo": "renglon",
+   "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
   },
@@ -423,7 +463,7 @@
    "etiqueta": "Gastos com o pessoal",
    "actual": "16.165.189,26",
    "anterior": "12.132.898,09",
-   "tipo": "total",
+   "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "Gastos com o pessoal"
   },
@@ -823,7 +863,7 @@
    "etiqueta": "Total",
    "actual": "4.082.748,19",
    "anterior": "2.917.723,52",
-   "tipo": "total",
+   "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "Fornecimentos e serviços externos"
   },
@@ -954,7 +994,7 @@
    "actual": "6 905 €",
    "anterior": "7 787 €",
    "tipo": "renglon",
-   "lado": "gasto",
+   "lado": "financiero",
    "detalla_a": "Outros gastos"
   },
   {
@@ -971,9 +1011,9 @@
    "bloque": "b37",
    "linea": 1551,
    "etiqueta": "Total",
-   "actual": "517 975 €",
+   "actual": "517 775 €",
    "anterior": "618 742 €",
-   "tipo": "total",
+   "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "Outros gastos"
   }
@@ -987,40 +1027,39 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se dejan afuera de la carga los movimientos de inventario de b20 (Inventários iniciais, Compras, Reclassificação, Inventários finais, L990-L993) y se carga solo la fila 'Custo das mercadorias vendidas e matérias consumidas' (L994)?",
+   "pregunta": "¿Se carga la fila sin etiqueta de L1027 (6 270 606 €) como subtotal de Prestação de Serviços dentro de 'Vendas e serviços prestados'?",
    "propuesta": "sí",
    "tema": "otro",
+   "renglon": "Vendas e serviços prestados",
+   "texto": "L1027 no tiene etiqueta; 6 270 606 parece ser total sin Merchandising (servicios+diversos), y L1028 el total general.",
+   "bloques": [
+    "b21"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Las columnas de b21 rotuladas 30/06/2025 y 30/06/2024 corresponden a 'PERÍODO jun/25' y 'PERÍODO jun/24 (Reexpresso)'?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Vendas e serviços prestados",
+   "texto": "El total L1028 coincide con el estado L331 en ambos años, salvo redondeo.",
+   "bloques": [
+    "b21",
+    "b7"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿En b20 (L990-L994) la columna anterior tomada es 'Mercadorias Per. Anterior' (p.ej. 141.744,67) y no el total anterior, que está corrido?",
+   "propuesta": "sí",
+   "tema": "columna",
    "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
-   "texto": "Son movimientos de cálculo (iniciais + compras - finais) sin signo impreso; sumarlos da 633.981 y no el renglón 378.448 (L990-L994).",
+   "texto": "El encabezado de L987 fusiona columnas y el Total Per. Anterior muestra 0,00; se tomó la cuarta columna que cuadra con 107.466,20.",
    "bloques": [
     "b20"
    ],
    "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se toma 107.466,20 (L994) como año anterior del costo de mercaderías, aunque la fila tiene una columna menos que el encabezado?",
-   "propuesta": "sí",
-   "tema": "columna",
-   "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
-   "texto": "La fila L994 tiene 5 valores para 6 columnas; 107.466,20 coincide con el estado (L333).",
-   "bloques": [
-    "b20",
-    "b7"
-   ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se considera errata el 'Total' 517 975 € de Outros Gastos (L1551), dado que las filas suman 517 776 y el estado dice 517 774,75?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Outros gastos",
-   "texto": "El total impreso en L1551 difiere en 200 € de la suma de filas y del renglón L339; las filas sí cuadran salvo redondeo.",
-   "bloques": [
-    "b37",
-    "b7"
-   ],
-   "afecta_carga": false
   }
  ],
- "observaciones": "Todo en euros (unidades). b21: L1027 subtotal sin etiqueta (servicios+diversos) y L1028 total sin etiqueta. b33: L1363 es el total del desglose. b36: subtotales por categoría con detalle debajo. b37: suma de filas 517.776 vs renglón 517.774,75 (redondeo)."
+ "observaciones": "Escala en unidades (euros) en todos los bloques. El estado no imprime total de ingresos ni de gastos. En b33 la L1363 repite el total del renglón del estado y se marcó subtotal. En b36 las líneas en negrita son subtotales de grupo y sus partidas detallan a ese grupo. En b37 hay líneas de encabezado sin importe (Impostos Diretos, Outros, etc.) omitidas; la línea 'Juros e Outros Rendimentos Similares' en b22 y diferencias de cambio/juros de mora en b37 se marcaron financiero aunque el estado las incluye en Outros rendimentos/Outros gastos."
 }

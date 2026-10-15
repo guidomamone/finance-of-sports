@@ -1,26 +1,16 @@
 {
  "pdf": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf",
- "generado": "2026-10-15T23:06:34.689Z",
+ "generado": "2026-10-15T23:16:32.700Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (porto-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "9 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Corporate Hospitality\" -> sponsorship_commercial 0.55; \"Diferencia de redondeo\" -> other_income 0; \"Outros proveitos com jogadores\" -> player_sales 0.6; \"Custo das vendas\" -> admin_general_expense 0.6; \"Outros fornecimentos e serviços\" -> other_expenses 0.75"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 8 ejercicio(s) con un solo perímetro (consolidado); 9 documento(s) mirados)",
+  "\"Cuotas sociales\" en 0: real, por ajuste manual (2026-10-15, Documento de FC Porto SAD (consolidado de la SAD, no del club): la SAD no cobra cuotas; las cuotas son del club asociación (perfil de porto-pt = sí por los consolidados del club 2016-2023).)",
+  "\"Otras secciones deportivas\" en 0: real, por ajuste manual (2026-10-15, Documento de FC Porto SAD: solo la modalidad fútbol; las modalidades son del club asociación.)",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -111,13 +101,13 @@
    },
    {
     "rawLabel": "Corporate Hospitality",
-    "normalizedCategory": "sponsorship_commercial",
+    "normalizedCategory": "stadium_other",
     "amountNative": 10.553,
     "disclosureLevel": "aggregated",
     "_pag": 152,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outras prestações de serviços",
@@ -134,9 +124,9 @@
     "normalizedCategory": "other_income",
     "amountNative": 0.001,
     "disclosureLevel": "aggregated",
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros proveitos",
@@ -174,21 +164,21 @@
     "amountNative": 4.999,
     "disclosureLevel": "aggregated",
     "_pag": 156,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
    {
     "rawLabel": "Custo das vendas",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -6.849,
     "disclosureLevel": "aggregated",
     "_pag": 117,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Trabalhos especializados",
@@ -366,9 +356,9 @@
     "amountNative": -4.278,
     "disclosureLevel": "aggregated",
     "_pag": 153,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Diferencia de redondeo",
@@ -405,9 +395,9 @@
     "amountNative": 0.851,
     "disclosureLevel": "aggregated",
     "_pag": 117,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros custos",
@@ -441,13 +431,13 @@
    },
    {
     "rawLabel": "Custos com alienações de passes de jogadores (ii)",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -62.006,
     "disclosureLevel": "aggregated",
     "_pag": 156,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Custos com empréstimos de jogadores",
@@ -455,9 +445,9 @@
     "amountNative": -5.784,
     "disclosureLevel": "aggregated",
     "_pag": 156,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros custos com jogadores",
@@ -465,9 +455,9 @@
     "amountNative": -3.276,
     "disclosureLevel": "aggregated",
     "_pag": 156,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Diferencia de redondeo",
@@ -542,6 +532,26 @@
    "linea": null,
    "motivo": "periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)",
    "evidencia": ".md L187 (30 de junho de 2025)",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf",
+   "campo": "cero-real",
+   "valor": "Cuotas sociales",
+   "linea": null,
+   "motivo": "Documento de FC Porto SAD (consolidado de la SAD, no del club): la SAD no cobra cuotas; las cuotas son del club asociación (perfil de porto-pt = sí por los consolidados del club 2016-2023).",
+   "evidencia": "wf-2024-2025-6b41056f.md L7545-7553 (prestaciones de servicios sin cuotas), objeto social L792",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf",
+   "campo": "cero-real",
+   "valor": "Otras secciones deportivas",
+   "linea": null,
+   "motivo": "Documento de FC Porto SAD: solo la modalidad fútbol; las modalidades son del club asociación.",
+   "evidencia": "wf-2024-2025-6b41056f.md L792, L7836 (Segmento A modalidade de futebol)",
    "autor": "Claude",
    "fecha": "2026-10-15"
   }
@@ -679,12 +689,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Prestações de serviços\")",
    "signoFijo": 10.553,
-   "cat": "sponsorship_commercial",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "stadium_other",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): palcos y lugares VIP del estadio, como Sporting 'Camarotes' y Benfica 'Corporate'. [wf-2024-2025-6b41056f.md L7568]",
    "destino": "revenue",
    "amountNative": 10.553
   },
@@ -710,12 +720,12 @@
    "origen": "verificacion (nota que desglosa \"Prestações de serviços\")",
    "signoFijo": 0.001,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): redondeo de centésimas.",
    "destino": "revenue",
    "amountNative": 0.001
   },
@@ -772,11 +782,11 @@
    "origen": "verificacion (nota que desglosa \"Proveitos com transações de passes de jogadores\")",
    "signoFijo": 4.999,
    "cat": "player_sales",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): nota 28 de pases: solidaridad no reclamada + acuerdos con agentes; fila mixta en una línea. [wf-2024-2025-6b41056f.md L7719]",
    "destino": "revenue",
    "amountNative": 4.999
   },
@@ -787,12 +797,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 6.849,
-   "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): costo de mercadería vendida, other_expenses como Sporting 2025 (Guido), Moreirense, Vitória, Rio Ave. [wf-2024-2025-6b41056f.md L5376]",
    "destino": "expense",
    "amountNative": -6.849
   },
@@ -1060,11 +1070,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 4.278,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): residuo de FSE. [wf-2024-2025-6b41056f.md L7605]",
    "destino": "expense",
    "amountNative": -4.278
   },
@@ -1120,11 +1130,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": -0.851,
    "cat": "other_amortisation",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): provisiones netas (constitución y reversión en una línea; 2024 fue gasto), other_amortisation como Sporting. [wf-2024-2025-6b41056f.md L5380]",
    "destino": "expense",
    "amountNative": 0.851
   },
@@ -1180,12 +1190,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Custos com transações de passes de jogadores\")",
    "signoFijo": 62.006,
-   "cat": "other_expenses",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): valor contable de los pases dados de baja más costos de la venta (154.949 − 62.006 = plusvalía); como Rio Ave 'Abates e Alienações' (Guido). [wf-2024-2025-6b41056f.md L7704, L7713]",
    "destino": "expense",
    "amountNative": -62.006
   },
@@ -1197,11 +1207,11 @@
    "origen": "verificacion (nota que desglosa \"Custos com transações de passes de jogadores\")",
    "signoFijo": 5.784,
    "cat": "other_expenses",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): costos de préstamos de jugadores, other_expenses como Sporting 'Cedência de jogadores'. [wf-2024-2025-6b41056f.md L7717]",
    "destino": "expense",
    "amountNative": -5.784
   },
@@ -1213,11 +1223,11 @@
    "origen": "verificacion (nota que desglosa \"Custos com transações de passes de jogadores\")",
    "signoFijo": 3.276,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): comisiones e indemnizaciones de la nota 28. [wf-2024-2025-6b41056f.md L7721]",
    "destino": "expense",
    "amountNative": -3.276
   },
@@ -1369,7 +1379,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 1,
   "lineasIngreso": 15,
   "lineasGasto": 30,
   "metaFilas": 4,

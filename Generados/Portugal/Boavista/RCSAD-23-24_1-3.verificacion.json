@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf",
  "md": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.md",
- "generado": "2026-10-15T23:04:21.510Z",
+ "generado": "2026-10-15T23:14:24.309Z",
  "estado": "ok",
  "clubId": null,
  "year": 2024,
@@ -11,7 +11,47 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf",
+   "campo": "fila",
+   "valor": "507 074,99",
+   "linea": 584,
+   "etiqueta": "Bilhetes e Camarotes",
+   "lado": "ingreso",
+   "reemplaza": "Vendas e serviços prestados",
+   "motivo": "El estado trae las ventas en un renglón; la nota 22 (en la parte 2 del PDF, que el lote no lee) lo desglosa.",
+   "evidencia": "nota 22.2 'Rédito' en la parte 2 del informe (RCSAD-23-24_2-3.md L1146-1149, pág. del visor de esa parte); suman 4 424 268,14, igual a Vendas e serviços prestados del estado (RCSAD-23-24_1-3.md L584)",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf",
+   "campo": "fila",
+   "valor": "3 463 888,92",
+   "linea": 584,
+   "etiqueta": "Direitos Televisivos",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Desglose de Vendas e serviços prestados, nota 22.",
+   "evidencia": "nota 22.2 'Rédito' en la parte 2 del informe (RCSAD-23-24_2-3.md L1146-1149, pág. del visor de esa parte); suman 4 424 268,14, igual a Vendas e serviços prestados del estado (RCSAD-23-24_1-3.md L584)",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf",
+   "campo": "fila",
+   "valor": "453 304,23",
+   "linea": 584,
+   "etiqueta": "Publicidade",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Desglose de Vendas e serviços prestados, nota 22.",
+   "evidencia": "nota 22.2 'Rédito' en la parte 2 del informe (RCSAD-23-24_2-3.md L1146-1149, pág. del visor de esa parte); suman 4 424 268,14, igual a Vendas e serviços prestados del estado (RCSAD-23-24_1-3.md L584)",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -42,7 +82,11 @@
   }
  ],
  "notas": [
-  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en RCSAD-23-24_1-3.pdf"
+  "ajuste manual: fila \"Bilhetes e Camarotes\" (ingreso) 507 074,99, en lugar de \"Vendas e serviços prestados\" (2026-10-15, El estado trae las ventas en un renglón; la nota 22 (en la parte 2 del PDF, que el lote no lee) lo desglosa.)",
+  "ajuste manual: fila \"Direitos Televisivos\" (ingreso) 3 463 888,92 (2026-10-15, Desglose de Vendas e serviços prestados, nota 22.)",
+  "ajuste manual: fila \"Publicidade\" (ingreso) 453 304,23 (2026-10-15, Desglose de Vendas e serviços prestados, nota 22.)",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en RCSAD-23-24_1-3.pdf",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -59,14 +103,6 @@
  },
  "lineas": [
   {
-   "etiqueta": "Vendas e serviços prestados",
-   "lado": "ingreso",
-   "M": 4.424268,
-   "pagina": 14,
-   "linea": 584,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Subsídios à exploração",
    "lado": "ingreso",
    "M": 0.219358,
@@ -81,6 +117,30 @@
    "pagina": 14,
    "linea": 588,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Bilhetes e Camarotes",
+   "lado": "ingreso",
+   "M": 0.507075,
+   "pagina": 14,
+   "linea": 584,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Direitos Televisivos",
+   "lado": "ingreso",
+   "M": 3.463889,
+   "pagina": 14,
+   "linea": 584,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Publicidade",
+   "lado": "ingreso",
+   "M": 0.453304,
+   "pagina": 14,
+   "linea": 584,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Fornecimentos e serviços externos",
@@ -136,15 +196,17 @@
  "primerAnio": {
   "escalon": 3,
   "estado": "confirmado",
-  "clave": "1cf60adb3d33915a1a2bef881e4a63fd5847b996",
+  "clave": "e3b5dccea263a572d2a713b8fb0c3e646f45dc61",
   "rango": [
    581,
    599
   ],
   "lineasCargadas": [
-   584,
    585,
    588,
+   584,
+   584,
+   584,
    586,
    587,
    589,
@@ -152,6 +214,6 @@
    593,
    595
   ],
-  "user": "ESTADO DE RESULTADOS (líneas 581 a 599 del .md):\nL581: |  Rendimentos e Gastos | Notas | Períodos  |   |\nL582: | --- | --- | --- | --- |\nL583: |   |   |  2023 / 2024 | 2022 / 2023  |\nL584: |  Vendas e serviços prestados | 22 | 4 424 268,14 | 4 381 907,20  |\nL585: |  Subsídios à exploração | 24 | 219 357,91 | 167 592,00  |\nL586: |  Fornecimentos e serviços externos | 32 | (3 886 821,10) | (3 682 602,27)  |\nL587: |  Gastos com o pessoal | 30 | (10 608 357,65) | (10 896 141,03)  |\nL588: |  Outros rendimentos | 25 / 32 | 5 282 975,74 | 1 558 871,12  |\nL589: |  Outros gastos | 25 / 32 | (618 005,71) | (2 006 729,13)  |\nL590: |  **Resultado antes de depreciações, gastos de financiamento e impostos** |  | **(5 186 582,67)** | **(10 477 102,11)**  |\nL591: |  Gastos/reversões de depreciação e de amortização | 8 / 9 / 32 | (2 200 962,59) | (2 369 649,13)  |\nL592: |  **Resultado operacional (antes de gastos de financiamento e impostos)** |  | **(7 387 545,26)** | **(12 846 751,24)**  |\nL593: |  Juros e gastos similares suportados | 32 | (931 493,06) | (620 118,75)  |\nL594: |  **Resultado antes de impostos** |  | **(8 319 038,32)** | **(13 466 869,99)**  |\nL595: |  Imposto sobre o rendimento do período | 27 | 1 649 760,57 | (18 544,50)  |\nL596: |  **Resultado líquido do período** |  | **(6 669 277,75)** | **(13 485 414,49)**  |\nL598: |  Resultado das actividades descontinuadas (líquido de impostos) incluído no resultado líquido do período |  |  |   |\nL599: | --- | --- | --- | --- |\n\nLO QUE SE CARGA:\n- ingreso · \"Vendas e serviços prestados\" · 4.424268 · L584\n- ingreso · \"Subsídios à exploração\" · 0.219358 · L585\n- ingreso · \"Outros rendimentos\" · 5.282976 · L588\n- gasto · \"Fornecimentos e serviços externos\" · 3.886821 · L586\n- gasto · \"Gastos com o pessoal\" · 10.608358 · L587\n- gasto · \"Outros gastos\" · 0.618006 · L589\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 2.200963 · L591\n- financiero · \"Juros e gastos similares suportados\" · -0.931493 · L593\n- impuesto · \"Imposto sobre o rendimento do período\" · 1.649761 · L595"
+  "user": "ESTADO DE RESULTADOS (líneas 581 a 599 del .md):\nL581: |  Rendimentos e Gastos | Notas | Períodos  |   |\nL582: | --- | --- | --- | --- |\nL583: |   |   |  2023 / 2024 | 2022 / 2023  |\nL584: |  Vendas e serviços prestados | 22 | 4 424 268,14 | 4 381 907,20  |\nL585: |  Subsídios à exploração | 24 | 219 357,91 | 167 592,00  |\nL586: |  Fornecimentos e serviços externos | 32 | (3 886 821,10) | (3 682 602,27)  |\nL587: |  Gastos com o pessoal | 30 | (10 608 357,65) | (10 896 141,03)  |\nL588: |  Outros rendimentos | 25 / 32 | 5 282 975,74 | 1 558 871,12  |\nL589: |  Outros gastos | 25 / 32 | (618 005,71) | (2 006 729,13)  |\nL590: |  **Resultado antes de depreciações, gastos de financiamento e impostos** |  | **(5 186 582,67)** | **(10 477 102,11)**  |\nL591: |  Gastos/reversões de depreciação e de amortização | 8 / 9 / 32 | (2 200 962,59) | (2 369 649,13)  |\nL592: |  **Resultado operacional (antes de gastos de financiamento e impostos)** |  | **(7 387 545,26)** | **(12 846 751,24)**  |\nL593: |  Juros e gastos similares suportados | 32 | (931 493,06) | (620 118,75)  |\nL594: |  **Resultado antes de impostos** |  | **(8 319 038,32)** | **(13 466 869,99)**  |\nL595: |  Imposto sobre o rendimento do período | 27 | 1 649 760,57 | (18 544,50)  |\nL596: |  **Resultado líquido do período** |  | **(6 669 277,75)** | **(13 485 414,49)**  |\nL598: |  Resultado das actividades descontinuadas (líquido de impostos) incluído no resultado líquido do período |  |  |   |\nL599: | --- | --- | --- | --- |\n\nLO QUE SE CARGA:\n- ingreso · \"Subsídios à exploração\" · 0.219358 · L585\n- ingreso · \"Outros rendimentos\" · 5.282976 · L588\n- ingreso · \"Bilhetes e Camarotes\" · 0.507075 · L584\n- ingreso · \"Direitos Televisivos\" · 3.463889 · L584\n- ingreso · \"Publicidade\" · 0.453304 · L584\n- gasto · \"Fornecimentos e serviços externos\" · 3.886821 · L586\n- gasto · \"Gastos com o pessoal\" · 10.608358 · L587\n- gasto · \"Outros gastos\" · 0.618006 · L589\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 2.200963 · L591\n- financiero · \"Juros e gastos similares suportados\" · -0.931493 · L593\n- impuesto · \"Imposto sobre o rendimento do período\" · 1.649761 · L595"
  }
 }

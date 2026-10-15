@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.md",
- "generado": "2026-10-15T23:04:21.470Z",
- "estado": "ok",
+ "generado": "2026-10-15T23:14:24.286Z",
+ "estado": "cola",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -11,8 +11,301 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [],
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "6 658 978,90",
+   "linea": 331,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "900 000,00",
+   "linea": 332,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "107 466,20",
+   "linea": 333,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "4 082 748,19",
+   "linea": 334,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "16 165 189,26",
+   "linea": 335,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "12 132 898,09",
+   "linea": 335,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "236 995,04",
+   "linea": 336,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "202 269,85",
+   "linea": 336,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "471 404,17",
+   "linea": 337,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "838 396,78",
+   "linea": 338,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "618 741,86",
+   "linea": 339,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "13 195 708,65",
+   "linea": 340,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "10 400 123,16",
+   "linea": 340,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "11 194,68",
+   "linea": 342,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "14 604 142,08",
+   "linea": 343,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "11 598 311,45",
+   "linea": 343,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "289 445,53",
+   "linea": 345,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "14 893 587,61",
+   "linea": 346,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "11 746 614,42",
+   "linea": 346,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "1 848 329,06",
+   "linea": 347,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "13 241 139,22",
+   "linea": 348,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "9 898 285,36",
+   "linea": 348,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "339 215",
+   "linea": 1021,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "1 831 508",
+   "linea": 1027,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "14 820",
+   "linea": 1536,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "40 646",
+   "linea": 1542,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "181 499",
+   "linea": 1542,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "157 836",
+   "linea": 1548,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf",
+   "campo": "confirmado",
+   "valor": "517 775",
+   "linea": 1551,
+   "motivo": "Escaneo: la segunda lectura no confirmó el número; revisado contra la imagen (300 dpi), la aritmética del estado y las notas (subagente Sonnet, revisado por Claude). Las cifras mal leídas se corrigieron en el .md.",
+   "evidencia": "Estado de resultados p18: las dos columnas cierran al céntimo con el resultado líquido oficial (-13 241 139,22 / -9 898 285,36, también en la aplicación de resultados p44 y el balance); notas 10, 11, 12, 15, 17 y nota de gastos p47 coinciden",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
+ "cola": [
+  "306c291"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -28,7 +321,7 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 0.00039814000000326644
+   "dif": 0.000003149999992402286
   },
   {
    "nombre": "documento del año 2024",
@@ -47,26 +340,37 @@
   }
  ],
  "notas": [
-  "la nota de \"Outros gastos\" no suma el renglón (0.517776 contra 0.517775, sumando sus renglones): quedó el renglón del estado",
-  "línea 337: 471 404,17 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (47146417) el resultado daría -59.915754 y no cierra)",
-  "línea 342: valor corregido por Guido (11594,68)",
-  "línea 345: 289 445,53 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (28844553) el resultado daría -41.796249 y no cierra)",
-  "duda de localizar que no afecta la carga: b34 tiene una sola actividad (CAE 93120) y repite CMVMC 378.447,62 y gastos de personal.",
-  "duda de extraer que no afecta la carga: La fila L994 tiene 5 valores para 6 columnas; 107.466,20 coincide con el estado (L333).",
-  "duda de extraer que no afecta la carga: El total impreso en L1551 difiere en 200 € de la suma de filas y del renglón L339; las filas sí cuadran salvo redondeo."
+  "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (0.633981 contra 0.378448, sumando sus renglones): quedó el renglón del estado",
+  "línea 336: 236 995,04 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (23659504) el resultado daría -36.663651 y no cierra)",
+  "línea 337: 471 404,17 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (47146417) el resultado daría -59.916155 y no cierra)",
+  "línea 342: 11 194,68 no está en el segunda lectura; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 345: 289 445,53 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (28844553) el resultado daría -41.79625 y no cierra)",
+  "línea 1548: 157 836 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (157636) el resultado daría -13.240942 y no cierra)",
+  "duda de localizar que no afecta la carga: Tiene una sola actividad CAE 93120 y sus importes coinciden con renglones del estado y de las notas 10, 15 y 17.",
+  "duda de localizar que no afecta la carga: El cuadro de subsídios desglosa por origen (Estado/otras entidades), no por categoría de ingreso.",
+  "duda de extraer que no afecta la carga: L1027 no tiene etiqueta; 6 270 606 parece ser total sin Merchandising (servicios+diversos), y L1028 el total general.",
+  "duda de extraer que no afecta la carga: El total L1028 coincide con el estado L331 en ambos años, salvo redondeo.",
+  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"Custo das mercadorias vendidas e das matérias consumidas\"): ¿En b20 (L990-L994) la columna anterior tomada es 'Mercadorias Per. Anterior' (p.ej. 141.744,67) y no el total anterior, que está corrido?",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
- "reintentar": null,
- "reintentado": true,
+ "reintentar": [
+  {
+   "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
+   "suma": 0.633981,
+   "objetivo": 0.378448
+  }
+ ],
+ "reintentado": false,
  "faltasDesglose": [
   {
-   "renglon": "Outros gastos",
-   "suma": 0.517776,
-   "objetivo": 0.517775
+   "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
+   "suma": 0.633981,
+   "objetivo": 0.378448
   }
  ],
  "totales": {
   "ingresos": 8.656848,
-  "gastos": 23.260992,
+  "gastos": 23.260994,
   "financiero": -0.289446,
   "impuesto": 1.652448,
   "resultadoImpreso": -13.241139,
@@ -462,7 +766,7 @@
   {
    "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
    "lado": "gasto",
-   "M": 0.236595,
+   "M": 0.236995,
    "pagina": 18,
    "linea": 336,
    "origen": "estado"
@@ -476,12 +780,116 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Outros gastos",
+   "etiqueta": "IMI",
    "lado": "gasto",
-   "M": 0.517775,
-   "pagina": 18,
-   "linea": 339,
-   "origen": "estado"
+   "M": 0.003043,
+   "pagina": 47,
+   "linea": 1531,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "IUC",
+   "lado": "gasto",
+   "M": 0.000555,
+   "pagina": 47,
+   "linea": 1533,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Imposto de Selo",
+   "lado": "gasto",
+   "M": 0.056836,
+   "pagina": 47,
+   "linea": 1534,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Taxas",
+   "lado": "gasto",
+   "M": 0.007956,
+   "pagina": 47,
+   "linea": 1536,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Desconto Pronto Pagamento",
+   "lado": "gasto",
+   "M": 0.000001,
+   "pagina": 47,
+   "linea": 1537,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Jogadores",
+   "lado": "gasto",
+   "M": 0.041335,
+   "pagina": 47,
+   "linea": 1540,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Correções Relativas a períodos anteriores",
+   "lado": "gasto",
+   "M": 0.040646,
+   "pagina": 47,
+   "linea": 1542,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Donativos",
+   "lado": "gasto",
+   "M": 0.07822,
+   "pagina": 47,
+   "linea": 1543,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Quotizações",
+   "lado": "gasto",
+   "M": 0.053782,
+   "pagina": 47,
+   "linea": 1544,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Diferença de câmbio desfavoráveis",
+   "lado": "financiero",
+   "M": 0.000972,
+   "pagina": 47,
+   "linea": 1546,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Multas e penalidades",
+   "lado": "gasto",
+   "M": 0.065239,
+   "pagina": 47,
+   "linea": 1547,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Gastos não devidamente documentados",
+   "lado": "gasto",
+   "M": 0.157836,
+   "pagina": 47,
+   "linea": 1548,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Juros de Mora e compensatórios",
+   "lado": "financiero",
+   "M": 0.006905,
+   "pagina": 47,
+   "linea": 1549,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.00445,
+   "pagina": 47,
+   "linea": 1550,
+   "origen": "nota que desglosa \"Outros gastos\""
   },
   {
    "etiqueta": "Gastos/reversões de depreciação e de amortização",
@@ -494,7 +902,7 @@
   {
    "etiqueta": "Imparidade de ativos depreciáveis/amortizáveis (perdas/reversões)",
    "lado": "gasto",
-   "M": 0.011595,
+   "M": 0.011195,
    "pagina": 18,
    "linea": 342,
    "origen": "estado"
@@ -526,7 +934,7 @@
  "primerAnio": {
   "escalon": 3,
   "estado": "confirmado",
-  "clave": "465fe0c1c31bc57d42fbe7a2bd7596fb8e0692c4",
+  "clave": "39b7f60c2e4622e5f3a53d839d3d570fe8d5a75f",
   "rango": [
    328,
    351
@@ -582,19 +990,40 @@
    1369,
    336,
    337,
-   339,
+   1531,
+   1533,
+   1534,
+   1536,
+   1537,
+   1540,
+   1542,
+   1543,
+   1544,
+   1546,
+   1547,
+   1548,
+   1549,
+   1550,
    341,
    342,
    344,
    345,
    347
   ],
-  "user": "ESTADO DE RESULTADOS (líneas 328 a 351 del .md):\nL329: | RENDIMENTOS E GASTOS | Notas | PERÍODO jun/25 | PERÍODO jun/24 (Reexpresso) |\nL330: | :--- | :---: | :---: | :---: |\nL331: | Vendas e serviços prestados | 10 | 6 658 978,90 € | 2 006 029,93 € |\nL332: | Subsídios à exploração | 12 | 1 159 474,70 € | 900 000,00 € |\nL333: | Custo das mercadorias vendidas e das matérias consumidas | 9 | -378 447,62 € | -107 466,20 € |\nL334: | Fornecimentos e serviços externos | 17 | -4 082 748,19 € | -2 917 723,52 € |\nL335: | Gastos com o pessoal | 15 | -16 165 189,26 € | -12 132 898,09 € |\nL336: | Imparidade de dívidas a receber (perdas/reversões) | 14 | -236 595,04 € | -202 265,85 € |\nL337: | Provisões (aumentos/ Reduções) | 11 | -471 404,17 € | 60 146,03 € |\nL338: | Outros rendimentos | 10 | 838 396,78 € | 2 612 800,40 € |\nL339: | Outros gastos | 17 | -517 774,75 € | -618 741,98 € |\nL340: | **Resultado antes de depreciações, gastos de financiamento e impostos** | | **-13 195 308,65 €** | **-10 400 123,28 €** |\nL341: | Gastos/reversões de depreciação e de amortização | 6;7 | -1 397 238,75 € | -1 198 188,29 € |\nL342: | Imparidade de ativos depreciáveis/amortizáveis (perdas/reversões) | | -11 194,64 € | - € |\nL343: | **Resultado operacional (antes de gastos de financiamento e impostos)** | | **-14 606 742,04 €** | **-11 598 311,49 €** |\nL344: | Juros e rendimentos similares obtidos | 10 | - € | - € |\nL345: | Juros e gastos similares suportados | 8 | -289 445,53 € | -148 302,97 € |\nL346: | **Resultado antes de impostos** | | **-14 893 187,61 €** | **-11 746 614,46 €** |\nL347: | Imposto sobre o rendimento do período | 13 | 1 652 448,39 € | 1 848 329,06 € |\nL348: | **Resultado líquido do período** | | **-13 241 139,22 €** | **-9 898 285,36 €** |\nL350: --- pág. 19 ---\n\nLO QUE SE CARGA:\n- ingreso · \"Merchandising\" · 0.388372 · L1018 (de una nota)\n- ingreso · \"Ingressos para Jogos\" · 0.520033 · L1020 (de una nota)\n- ingreso · \"Apostas Desportivas e Placard\" · 0.339215 · L1021 (de una nota)\n- ingreso · \"Publicidade\" · 1.224859 · L1022 (de una nota)\n- ingreso · \"Prémio Participação\" · 0.237526 · L1023 (de una nota)\n- ingreso · \"Direitos Televisivos\" · 3.6 · L1024 (de una nota)\n- ingreso · \"Cedência por empréstimo de Direitos Desportivos\" · 0.347472 · L1025 (de una nota)\n- ingreso · \"Diversos\" · 0.0015 · L1026 (de una nota)\n- ingreso · \"Subsídios à exploração\" · 1.159475 · L332\n- ingreso · \"Descontos de Pronto Pagamentos Obridos\" · 0.000001 · L1036 (de una nota)\n- ingreso · \"Alienação de Ativos Intangíveis\" · 0.582477 · L1037 (de una nota)\n- ingreso · \"Alienação de Ativos Tangíveis\" · 0.000862 · L1038 (de una nota)\n- ingreso · \"Correções Relativas a Períodos Anteriores\" · 0.012021 · L1039 (de una nota)\n- ingreso · \"Outros\" · 0.209661 · L1040 (de una nota)\n- ingreso · \"Juros e Outros Rendimentos Similares\" · 0.033375 · L1041 (de una nota)\n- gasto · \"Custo das mercadorias vendidas e das matérias consumidas\" · 0.378448 · L333\n- gasto · \"Subcontratos\" · 0.284963 · L1452 (de una nota)\n- gasto · \"Trabalhos especializados\" · 0.618158 · L1454 (de una nota)\n- gasto · \"Publicidade e propaganda\" · 0.006161 · L1455 (de una nota)\n- gasto · \"Vigilância e segurança\" · 0.154296 · L1456 (de una nota)\n- gasto · \"Honorários\" · 0.001 · L1457 (de una nota)\n- gasto · \"Comissões\" · 0.139428 · L1458 (de una nota)\n- gasto · \"Conservação e reparação\" · 0.120247 · L1459 (de una nota)\n- gasto · \"Outros\" · 0.243097 · L1460 (de una nota)\n- gasto · \"Ferramentas e utensílios de desgaste rápido\" · 0.076196 · L1462 (de una nota)\n- gasto · \"Livros e documentação técnica\" · 0.0005 · L1463 (de una nota)\n- gasto · \"Material de escritório\" · 0.006673 · L1464 (de una nota)\n- gasto · \"Artigos para oferta\" · 0.000035 · L1465 (de una nota)\n- gasto · \"Outros\" · 0.013852 · L1466 (de una nota)\n- gasto · \"Eletricidade\" · 0.019026 · L1468 (de una nota)\n- gasto · \"Combustíveis\" · 0.020799 · L1469 (de una nota)\n- gasto · \"Água\" · 0.008422 · L1470 (de una nota)\n- gasto · \"Outros\" · 0.002041 · L1471 (de una nota)\n- gasto · \"Deslocações e estadas\" · 1.563734 · L1473 (de una nota)\n- gasto · \"Transportes de pessoal\" · 0.017719 · L1474 (de una nota)\n- gasto · \"Transportes de mercadorias\" · 0.002744 · L1475 (de una nota)\n- gasto · \"Rendas e alugueres\" · 0.566195 · L1478 (de una nota)\n- gasto · \"Comunicação\" · 0.03961 · L1479 (de una nota)\n- gasto · \"Seguros\" · 0.010418 · L1480 (de una nota)\n- gasto · \"Contencioso e notariado\" · 0.07307 · L1481 (de una nota)\n- gasto · \"Despesas de representação\" · 0.063915 · L1482 (de una nota)\n- gasto · \"Limpeza, higiene e conforto\" · 0.030451 · L1483 (de una nota)\n- gasto · \"Remunerações dos órgãos sociais\" · 0.280628 · L1364 (de una nota)\n- gasto · \"Remunerações do pessoal\" · 11.611976 · L1365 (de una nota)\n- gasto · \"Indemnizações\" · 0.362835 · L1366 (de una nota)\n- gasto · \"Encargos sobre as remunerações\" · 1.282908 · L1367 (de una nota)\n- gasto · \"Seguros de acidentes no trabalho e doenças profissionais\" · 0.942493 · L1368 (de una nota)\n- gasto · \"Outros gastos com o pessoal, dos quais:\" · 1.684349 · L1369 (de una nota)\n- gasto · \"Imparidade de dívidas a receber (perdas/reversões)\" · 0.236595 · L336\n- gasto · \"Provisões (aumentos/ Reduções)\" · 0.471404 · L337\n- gasto · \"Outros gastos\" · 0.517775 · L339\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 1.397239 · L341\n- gasto · \"Imparidade de ativos depreciáveis/amortizáveis (perdas/reversões)\" · 0.011595 · L342\n- financiero · \"Juros e rendimentos similares obtidos\" · 0 · L344\n- financiero · \"Juros e gastos similares suportados\" · -0.289446 · L345\n- impuesto · \"Imposto sobre o rendimento do período\" · 1.652448 · L347"
+  "user": "ESTADO DE RESULTADOS (líneas 328 a 351 del .md):\nL329: | RENDIMENTOS E GASTOS | Notas | PERÍODO jun/25 | PERÍODO jun/24 (Reexpresso) |\nL330: | :--- | :---: | :---: | :---: |\nL331: | Vendas e serviços prestados | 10 | 6 658 978,90 € | 2 006 029,93 € |\nL332: | Subsídios à exploração | 12 | 1 159 474,70 € | 900 000,00 € |\nL333: | Custo das mercadorias vendidas e das matérias consumidas | 9 | -378 447,62 € | -107 466,20 € |\nL334: | Fornecimentos e serviços externos | 17 | -4 082 748,19 € | -2 917 723,52 € |\nL335: | Gastos com o pessoal | 15 | -16 165 189,26 € | -12 132 898,09 € |\nL336: | Imparidade de dívidas a receber (perdas/reversões) | 14 | -236 995,04 € | -202 269,85 € |\nL337: | Provisões (aumentos/ Reduções) | 11 | -471 404,17 € | 60 146,03 € |\nL338: | Outros rendimentos | 10 | 838 396,78 € | 2 612 800,40 € |\nL339: | Outros gastos | 17 | -517 774,75 € | -618 741,86 € |\nL340: | **Resultado antes de depreciações, gastos de financiamento e impostos** | | **-13 195 708,65 €** | **-10 400 123,16 €** |\nL341: | Gastos/reversões de depreciação e de amortização | 6;7 | -1 397 238,75 € | -1 198 188,29 € |\nL342: | Imparidade de ativos depreciáveis/amortizáveis (perdas/reversões) | | -11 194,68 € | - € |\nL343: | **Resultado operacional (antes de gastos de financiamento e impostos)** | | **-14 604 142,08 €** | **-11 598 311,45 €** |\nL344: | Juros e rendimentos similares obtidos | 10 | - € | - € |\nL345: | Juros e gastos similares suportados | 8 | -289 445,53 € | -148 302,97 € |\nL346: | **Resultado antes de impostos** | | **-14 893 587,61 €** | **-11 746 614,42 €** |\nL347: | Imposto sobre o rendimento do período | 13 | 1 652 448,39 € | 1 848 329,06 € |\nL348: | **Resultado líquido do período** | | **-13 241 139,22 €** | **-9 898 285,36 €** |\nL350: --- pág. 19 ---\n\nLO QUE SE CARGA:\n- ingreso · \"Merchandising\" · 0.388372 · L1018 (de una nota)\n- ingreso · \"Ingressos para Jogos\" · 0.520033 · L1020 (de una nota)\n- ingreso · \"Apostas Desportivas e Placard\" · 0.339215 · L1021 (de una nota)\n- ingreso · \"Publicidade\" · 1.224859 · L1022 (de una nota)\n- ingreso · \"Prémio Participação\" · 0.237526 · L1023 (de una nota)\n- ingreso · \"Direitos Televisivos\" · 3.6 · L1024 (de una nota)\n- ingreso · \"Cedência por empréstimo de Direitos Desportivos\" · 0.347472 · L1025 (de una nota)\n- ingreso · \"Diversos\" · 0.0015 · L1026 (de una nota)\n- ingreso · \"Subsídios à exploração\" · 1.159475 · L332\n- ingreso · \"Descontos de Pronto Pagamentos Obridos\" · 0.000001 · L1036 (de una nota)\n- ingreso · \"Alienação de Ativos Intangíveis\" · 0.582477 · L1037 (de una nota)\n- ingreso · \"Alienação de Ativos Tangíveis\" · 0.000862 · L1038 (de una nota)\n- ingreso · \"Correções Relativas a Períodos Anteriores\" · 0.012021 · L1039 (de una nota)\n- ingreso · \"Outros\" · 0.209661 · L1040 (de una nota)\n- ingreso · \"Juros e Outros Rendimentos Similares\" · 0.033375 · L1041 (de una nota)\n- gasto · \"Custo das mercadorias vendidas e das matérias consumidas\" · 0.378448 · L333\n- gasto · \"Subcontratos\" · 0.284963 · L1452 (de una nota)\n- gasto · \"Trabalhos especializados\" · 0.618158 · L1454 (de una nota)\n- gasto · \"Publicidade e propaganda\" · 0.006161 · L1455 (de una nota)\n- gasto · \"Vigilância e segurança\" · 0.154296 · L1456 (de una nota)\n- gasto · \"Honorários\" · 0.001 · L1457 (de una nota)\n- gasto · \"Comissões\" · 0.139428 · L1458 (de una nota)\n- gasto · \"Conservação e reparação\" · 0.120247 · L1459 (de una nota)\n- gasto · \"Outros\" · 0.243097 · L1460 (de una nota)\n- gasto · \"Ferramentas e utensílios de desgaste rápido\" · 0.076196 · L1462 (de una nota)\n- gasto · \"Livros e documentação técnica\" · 0.0005 · L1463 (de una nota)\n- gasto · \"Material de escritório\" · 0.006673 · L1464 (de una nota)\n- gasto · \"Artigos para oferta\" · 0.000035 · L1465 (de una nota)\n- gasto · \"Outros\" · 0.013852 · L1466 (de una nota)\n- gasto · \"Eletricidade\" · 0.019026 · L1468 (de una nota)\n- gasto · \"Combustíveis\" · 0.020799 · L1469 (de una nota)\n- gasto · \"Água\" · 0.008422 · L1470 (de una nota)\n- gasto · \"Outros\" · 0.002041 · L1471 (de una nota)\n- gasto · \"Deslocações e estadas\" · 1.563734 · L1473 (de una nota)\n- gasto · \"Transportes de pessoal\" · 0.017719 · L1474 (de una nota)\n- gasto · \"Transportes de mercadorias\" · 0.002744 · L1475 (de una nota)\n- gasto · \"Rendas e alugueres\" · 0.566195 · L1478 (de una nota)\n- gasto · \"Comunicação\" · 0.03961 · L1479 (de una nota)\n- gasto · \"Seguros\" · 0.010418 · L1480 (de una nota)\n- gasto · \"Contencioso e notariado\" · 0.07307 · L1481 (de una nota)\n- gasto · \"Despesas de representação\" · 0.063915 · L1482 (de una nota)\n- gasto · \"Limpeza, higiene e conforto\" · 0.030451 · L1483 (de una nota)\n- gasto · \"Remunerações dos órgãos sociais\" · 0.280628 · L1364 (de una nota)\n- gasto · \"Remunerações do pessoal\" · 11.611976 · L1365 (de una nota)\n- gasto · \"Indemnizações\" · 0.362835 · L1366 (de una nota)\n- gasto · \"Encargos sobre as remunerações\" · 1.282908 · L1367 (de una nota)\n- gasto · \"Seguros de acidentes no trabalho e doenças profissionais\" · 0.942493 · L1368 (de una nota)\n- gasto · \"Outros gastos com o pessoal, dos quais:\" · 1.684349 · L1369 (de una nota)\n- gasto · \"Imparidade de dívidas a receber (perdas/reversões)\" · 0.236995 · L336\n- gasto · \"Provisões (aumentos/ Reduções)\" · 0.471404 · L337\n- gasto · \"IMI\" · 0.003043 · L1531 (de una nota)\n- gasto · \"IUC\" · 0.000555 · L1533 (de una nota)\n- gasto · \"Imposto de Selo\" · 0.056836 · L1534 (de una nota)\n- gasto · \"Taxas\" · 0.007956 · L1536 (de una nota)\n- gasto · \"Desconto Pronto Pagamento\" · 0.000001 · L1537 (de una nota)\n- gasto · \"Jogadores\" · 0.041335 · L1540 (de una nota)\n- gasto · \"Correções Relativas a períodos anteriores\" · 0.040646 · L1542 (de una nota)\n- gasto · \"Donativos\" · 0.07822 · L1543 (de una nota)\n- gasto · \"Quotizações\" · 0.053782 · L1544 (de una nota)\n- gasto · \"Diferença de câmbio desfavoráveis\" · 0.000972 · L1546 (de una nota)\n- gasto · \"Multas e penalidades\" · 0.065239 · L1547 (de una nota)\n- gasto · \"Gastos não devidamente documentados\" · 0.157836 · L1548 (de una nota)\n- gasto · \"Juros de Mora e compensatórios\" · 0.006905 · L1549 (de una nota)\n- gasto · \"Outros\" · 0.00445 · L1550 (de una nota)\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 1.397239 · L341\n- gasto · \"Imparidade de ativos depreciáveis/amortizáveis (perdas/reversões)\" · 0.011195 · L342\n- financiero · \"Juros e rendimentos similares obtidos\" · 0 · L344\n- financiero · \"Juros e gastos similares suportados\" · -0.289446 · L345\n- impuesto · \"Imposto sobre o rendimento do período\" · 1.652448 · L347"
  },
  "confirmadosPorSumas": [
   {
+   "linea": 336,
+   "numero": "236 995,04"
+  },
+  {
    "linea": 337,
    "numero": "471 404,17"
+  },
+  {
+   "linea": 342,
+   "numero": "11 194,68"
   },
   {
    "linea": 345,
@@ -603,6 +1032,10 @@
   {
    "linea": 1021,
    "numero": "339 215"
+  },
+  {
+   "linea": 1548,
+   "numero": "157 836"
   }
  ]
 }

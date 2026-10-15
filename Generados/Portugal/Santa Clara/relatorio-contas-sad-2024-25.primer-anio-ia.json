@@ -1,13 +1,13 @@
 {
  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.md",
- "clave": "465fe0c1c31bc57d42fbe7a2bd7596fb8e0692c4",
- "generado": "2026-10-15T22:54:35.536Z",
+ "clave": "39b7f60c2e4622e5f3a53d839d3d570fe8d5a75f",
+ "generado": "2026-10-15T23:14:19.587Z",
  "fuente": "API",
  "datos": {
   "faltan": [],
   "sobran": [],
   "repetidas": [],
   "lado_equivocado": [],
-  "observacion": "Las aperturas por nota coinciden con sus renglones: ventas y servicios (6,658977 frente a 6,658979), otros ingresos (0,838397), FSE (4,08275) y gastos de personal (16,165189). La deterioración de L342 se cargó como 0,011595, pero el estado muestra 11 194,64 € (0,011195). La diferencia es de 0,0004, posiblemente un error de tipeo, y no encaja en ninguna de las cuatro categorías. No se detectan renglones faltantes, sobrantes, repetidos ni en el lado equivocado."
+  "observacion": "Sin problemas. Las aperturas de nota sustituyen correctamente a sus renglones del estado. Sus sumas coinciden con los importes impresos: ventas y servicios, 6,659 (L331); otros ingresos, 0,838 (L338), que incluye intereses obtenidos mientras L344 está en cero; FSE, 4,083 (L334); personal, 16,165 (L335); otros gastos, 0,518 (L339). Los subtotales no se cargaron."
  }
 }

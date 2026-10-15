@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf",
  "md": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.md",
- "generado": "2026-10-15T23:04:21.424Z",
+ "generado": "2026-10-15T23:14:10.618Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -19,6 +19,26 @@
    "linea": null,
    "motivo": "periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)",
    "evidencia": ".md L187 (30 de junho de 2025)",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf",
+   "campo": "cero-real",
+   "valor": "Cuotas sociales",
+   "linea": null,
+   "motivo": "Documento de FC Porto SAD (consolidado de la SAD, no del club): la SAD no cobra cuotas; las cuotas son del club asociación (perfil de porto-pt = sí por los consolidados del club 2016-2023).",
+   "evidencia": "wf-2024-2025-6b41056f.md L7545-7553 (prestaciones de servicios sin cuotas), objeto social L792",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf",
+   "campo": "cero-real",
+   "valor": "Otras secciones deportivas",
+   "linea": null,
+   "motivo": "Documento de FC Porto SAD: solo la modalidad fútbol; las modalidades son del club asociación.",
+   "evidencia": "wf-2024-2025-6b41056f.md L792, L7836 (Segmento A modalidade de futebol)",
    "autor": "Claude",
    "fecha": "2026-10-15"
   }
