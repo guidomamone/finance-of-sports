@@ -280,6 +280,26 @@
   }
 
 
+  // TOLERANCIA DEL TIE-OUT: la suma de n renglones redondeados a la unidad impresa puede diferir del total impreso hasta n x media
+  // unidad sin que nadie se haya equivocado. Bayern publica en millones con un decimal: 6 renglones de ingresos dan hasta ±0,3 (2024:
+  // calculado 908,2 contra 908,1 impreso). La unidad sale de las propias cifras (la que tiene más decimales manda); con 3 o más
+  // decimales la tolerancia queda en 0,01, la de siempre. La usan verifyTieOuts() (js/principal.js) y tools/audit.js.
+  function toleranciaTieOut(montos, oficial){
+    const decimales = (x) => { const s = String(Math.abs(x)); const i = s.indexOf('.'); return i < 0 ? 0 : s.length - i - 1; };
+    const cifras = montos.concat([oficial]).filter((v) => typeof v === 'number' && v !== 0);
+    if(!cifras.length) return 0.01;
+    const unidad = Math.pow(10, -Math.max.apply(null, cifras.map(decimales)));
+    return Math.max(0.01, montos.length * unidad / 2 + 1e-9);
+  }
+  // Los montos que suma cada chequeo, para toleranciaTieOut(): los renglones de su lado y, en el resultado, también las filas del meta.
+  function montosTieOut(c, que){
+    const ing = (c.revenueLines || []).map((l) => l.amountNative), gas = (c.expenseLines || []).map((l) => l.amountNative);
+    if(que === 'revenue') return ing;
+    if(que === 'expenses') return gas;
+    const m = c.meta || {};
+    return ing.concat(gas, [m.netInterest, m.tax, m.profitOnPlayerSales, m.assetSales].filter((v) => typeof v === 'number' && v !== 0));
+  }
+
   // Aviso de deuda o caja sin dato: Admin/PANTALLA.md, "Deuda y caja sin dato".
   // `t()` local: mismo one-liner que js/finanzas-render.js y js/selector.js.
   function t(key, es){ return (window.I18N && window.I18N.t) ? window.I18N.t(key, es) : es; }

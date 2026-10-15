@@ -365,19 +365,19 @@
         if(y.officialTotalRevenue == null && y.officialTotalExpenses == null && y.officialPAT == null) return;
         const computed = computeYearGeneric(clubId, year);
         if(y.officialTotalRevenue != null){
-          checks.push({ club:clubId, year, label:'Revenue', computed: computed.revenue, official: y.officialTotalRevenue });
+          checks.push({ club:clubId, year, label:'Revenue', computed: computed.revenue, official: y.officialTotalRevenue, tol: toleranciaTieOut(montosTieOut(computed, 'revenue'), y.officialTotalRevenue) });
         }
         if(y.officialTotalExpenses != null){
-          checks.push({ club:clubId, year, label:'Expenses (incl. no-efectivo)', computed: Math.abs(computed.expenses + computed.nonCash), official: Math.abs(y.officialTotalExpenses) });
+          checks.push({ club:clubId, year, label:'Expenses (incl. no-efectivo)', computed: Math.abs(computed.expenses + computed.nonCash), official: Math.abs(y.officialTotalExpenses), tol: toleranciaTieOut(montosTieOut(computed, 'expenses'), y.officialTotalExpenses) });
         }
         if(y.officialPAT != null){
-          checks.push({ club:clubId, year, label:'Resultado neto (PAT)', computed: computed.pat, official: y.officialPAT });
+          checks.push({ club:clubId, year, label:'Resultado neto (PAT)', computed: computed.pat, official: y.officialPAT, tol: toleranciaTieOut(montosTieOut(computed, 'pat'), y.officialPAT) });
         }
       });
     });
     checks.filter(c => c.official !== null && (!onlyClub || c.club === onlyClub)).forEach(c => {
       const delta = +(c.computed - c.official).toFixed(3);
-      const ok = Math.abs(delta) < 0.01;
+      const ok = Math.abs(delta) < c.tol; // redondeo de la unidad impresa: toleranciaTieOut() (js/finanzas-calc.js)
       console[ok ? 'log' : 'error'](`[verificación] ${c.club} ${c.year} ${c.label}: calculado ${c.computed} vs. oficial ${c.official} -> ${ok ? 'OK, cierra' : 'NO CIERRA, diferencia de ' + delta}`);
     });
   }

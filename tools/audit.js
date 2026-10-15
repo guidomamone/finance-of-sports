@@ -109,7 +109,7 @@ function loadEngine() {
   // `const`/`function` de un script de vm quedan en el scope léxico del contexto,
   // no como propiedades del global: se leen evaluando una expresión ahí adentro.
   return vm.runInContext(`({
-    computeYearGeneric, toDisplayValue, bucketize, yearMetaFor,
+    computeYearGeneric, toDisplayValue, bucketize, yearMetaFor, toleranciaTieOut, montosTieOut,
     REVENUE_CATEGORIES, EXPENSE_CATEGORIES,
     REVENUE_BUCKETS: GENERIC_SIMPLIFIED_REVENUE_BUCKETS,
     EXPENSE_BUCKETS: GENERIC_SIMPLIFIED_EXPENSE_BUCKETS,
@@ -205,15 +205,15 @@ function checkTieOuts(api) {
     }
     conCheck++;
     const c = api.computeYearGeneric(clubId, year);
-    const cmp = (label, computed, official) => {
+    const cmp = (label, computed, official, que) => {
       const delta = +(computed - official).toFixed(3);
-      if (Math.abs(delta) >= 0.01) {
+      if (Math.abs(delta) >= api.toleranciaTieOut(api.montosTieOut(c, que), official)) { // redondeo de la unidad impresa (js/finanzas-calc.js)
         add('P0', 'no-cierra', `${ref(clubId, year)} ${label}: calculado ${computed} vs. oficial ${official} (diferencia ${delta})`);
       }
     };
-    if (ym.officialTotalRevenue != null) cmp('Revenue', c.revenue, ym.officialTotalRevenue);
-    if (ym.officialTotalExpenses != null) cmp('Expenses', Math.abs(c.expenses + c.nonCash), Math.abs(ym.officialTotalExpenses));
-    if (ym.officialPAT != null) cmp('PAT', c.pat, ym.officialPAT);
+    if (ym.officialTotalRevenue != null) cmp('Revenue', c.revenue, ym.officialTotalRevenue, 'revenue');
+    if (ym.officialTotalExpenses != null) cmp('Expenses', Math.abs(c.expenses + c.nonCash), Math.abs(ym.officialTotalExpenses), 'expenses');
+    if (ym.officialPAT != null) cmp('PAT', c.pat, ym.officialPAT, 'pat');
 
     // OJO CON LA CONDICIÓN, Y POR QUÉ NO ALCANZA CON "es un balance y no tiene PAT" (to-do 20(a),
     // 2026-09-20). Este chequeo tiraba 11 hallazgos y 10 eran de la misma clase y no eran

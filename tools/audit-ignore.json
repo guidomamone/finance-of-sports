@@ -136,21 +136,6 @@
   "motivo": "VERIFICADO (onboarding de Deportivo Pereira, 2026-09-25). Devolución real de ventas/servicios, línea negativa impresa por el propio documento como contra-revenue — mismo tratamiento que las deducciones fiscales ya aceptadas de otros clubes."
  },
  {
-  "code": "no-cierra",
-  "match": "bayernmunich-de 2024 Revenue",
-  "motivo": "VERIFICADO (onboarding de Bayern Munich, 2026-09-25). La fuente (comunicado oficial \"Jahresabschluss der Saison\", no el Geschäftsbericht completo con Anhang) redondea cada una de las 6 líneas de revenue a 1 decimal (100.000 €) — sumarlas puede diferir hasta ±0,1 M€ del total, también redondeado a 1 decimal. Ver la evidencia en Admin/carga-clubes/bayernmunich-de.md."
- },
- {
-  "code": "no-cierra",
-  "match": "bayernmunich-de 2025 Revenue",
-  "motivo": "Mismo caso que 2024 de este club (ver entrada arriba) — redondeo a 1 decimal de la fuente."
- },
- {
-  "code": "no-cierra",
-  "match": "bayernmunich-de 2025 PAT",
-  "motivo": "VERIFICADO (onboarding de Bayern Munich, 2026-09-25). netInterest/tax se reconstruyeron como residuales a partir de EBITDA/EBT/Jahresüberschuss ya redondeados a 1 decimal en la fuente (no hay Finanzergebnis/Steuern impresos como línea propia) — el redondeo acumulado da ±0,1 M€. Ver la evidencia en Admin/carga-clubes/bayernmunich-de.md y Admin/dudas-por-club.md."
- },
- {
   "code": "catchall-dominante",
   "match": "bayernmunich-de 2024 Gastos",
   "motivo": "VERIFICADO (onboarding de Bayern Munich, 2026-09-25). La fuente (comunicado oficial, no el Geschäftsbericht completo) da solo 2 líneas de gasto sin más desglose (\"Betriebliche Aufwendungen\" y \"Materialaufwand\"), ninguna de las 2 mapea a una categoría específica de la taxonomía del sitio — van a \"Otros gastos\" por falta de detalle en la fuente, no por error de categorización. Ver la evidencia en Admin/carga-clubes/bayernmunich-de.md."

@@ -319,3 +319,5 @@ _note (data/):_
 ```text
 Comunicado oficial anual del club (fcbayern.com, Direktion Medien und Kommunikation), 7 páginas. Transcripción completa en Clubes/Alemania/Bayern Munich/jahresabschluss-2024-25.md.
 ```
+
+2026-10-15: las 3 diferencias de 0,1 por redondeo (ingresos 2024 y 2025, resultado 2025) ya no se marcan: el tie-out tolera n renglones x media unidad impresa (toleranciaTieOut, js/finanzas-calc.js), así que sus entradas de tools/audit-ignore.json se sacaron.

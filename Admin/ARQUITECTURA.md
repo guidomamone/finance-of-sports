@@ -249,6 +249,9 @@ MODELO DE DATOS: UN SOLO MOTOR GENÉRICO PARA TODOS LOS CLUBES (desde la Versió
   `fiscalYearMeta[year]` — agregar un club o ejercicio nuevo con total conocido
   significa sumar esos 3 campos en su propio data/<país>/<club>-data.js, no tocar esta
   función.
+  Tolerancia: `toleranciaTieOut()` (js/finanzas-calc.js), la misma en `tools/audit.js`: n renglones x media unidad
+  impresa (la unidad sale de las cifras), nunca menos de 0,01. Un documento en millones con un decimal (Bayern) no da un
+  "no cierra" por redondeo; uno en unidades o miles queda en 0,01. Un redondeo NO se silencia en audit-ignore.json.
 
 
 ## Finanzas para cualquier club: arquitectura que escriben `cargar.mjs` y `alta-club.mjs`
