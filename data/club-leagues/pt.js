@@ -12,4 +12,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'sportingcp-pt': { 2025: 'pt-primeiraliga' },
   'porto-pt': { 2025: 'pt-primeiraliga' },
   'braga-pt': { 2025: 'pt-primeiraliga' },
+  'benfica-pt': { 2019: 'pt-primeiraliga' },
 });

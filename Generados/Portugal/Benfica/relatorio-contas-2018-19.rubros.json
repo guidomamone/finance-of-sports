@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2018-19.pdf",
   "club": "benfica",
   "year": 2019,
-  "generatedAt": "2026-10-15T23:14:10.693Z",
+  "generatedAt": "2026-10-15T23:18:26.424Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         43.525
       ],
-      "glosa": "Ingresos por retransmisión televisiva"
+      "glosa": "Ingresos por derechos de televisión"
     },
     {
       "label": "Outras receitas",
@@ -84,7 +84,7 @@
       "values": [
         10.672
       ],
-      "glosa": "Corporate / Hospitalidad"
+      "glosa": "Corporate"
     },
     {
       "label": "Bilhetes de época",
@@ -124,7 +124,7 @@
       "values": [
         76.157
       ],
-      "glosa": "Beneficios por enajenación de derechos de futbolistas (plusvalías)"
+      "glosa": "Beneficios por enajenación de derechos de deportistas (plusvalías)"
     },
     {
       "label": "Outros rendimentos",
@@ -144,7 +144,7 @@
       "values": [
         2.787
       ],
-      "glosa": "Resultado de participaciones en empresas asociadas"
+      "glosa": "Resultado procedente de inversiones en empresas participadas"
     },
     {
       "label": "Trabalhos especializados",
@@ -184,7 +184,7 @@
       "values": [
         2.966
       ],
-      "glosa": "Reparación y conservación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Serviços de catering/softdrink",
@@ -194,7 +194,7 @@
       "values": [
         2.852
       ],
-      "glosa": "Servicios de catering y bebidas"
+      "glosa": "Servicios de catering/bebidas"
     },
     {
       "label": "Rendas e aluguéis",
@@ -224,7 +224,7 @@
       "values": [
         2.118
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontrataciones"
     },
     {
       "label": "Vigilância e segurança",
@@ -244,7 +244,7 @@
       "values": [
         2.003
       ],
-      "glosa": "Honorarios profesionales"
+      "glosa": "Honorarios"
     },
     {
       "label": "Outros fornecimentos e serviços",
@@ -254,7 +254,7 @@
       "values": [
         10.837
       ],
-      "glosa": "Otros servicios exteriores y suministros"
+      "glosa": "Otros suministros y servicios exteriores"
     },
     {
       "label": "Remunerações fixas",
@@ -314,7 +314,7 @@
       "values": [
         0.074
       ],
-      "glosa": "Retribuciones post-empleo"
+      "glosa": "Prestaciones post-empleo"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -324,7 +324,7 @@
       "values": [
         6.337
       ],
-      "glosa": "Cargas sociales"
+      "glosa": "Cargas sociales sobre retribuciones"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -384,7 +384,7 @@
       "values": [
         1.528
       ],
-      "glosa": "Equipos para procesos de información y oficina"
+      "glosa": "Mobiliario y equipos de oficina"
     },
     {
       "label": "Outros ativos tangíveis",
@@ -404,7 +404,7 @@
       "values": [
         1.52
       ],
-      "glosa": "Derechos de uso de marca"
+      "glosa": "Derecho de uso de marca"
     },
     {
       "label": "Programas de computador",
@@ -424,7 +424,7 @@
       "values": [
         0.25
       ],
-      "glosa": "Derechos de retransmisión televisiva"
+      "glosa": "Derechos de televisión"
     },
     {
       "label": "Calena comercial",
@@ -444,7 +444,7 @@
       "values": [
         -0.445
       ],
-      "glosa": "Provisiones / Pérdidas por deterioro ^{2)}"
+      "glosa": "Provisiones / Deterioros ^{2)}"
     },
     {
       "label": "Outros gastos e perdas operacionais ^{3)}",
@@ -464,7 +464,7 @@
       "values": [
         4.422
       ],
-      "glosa": "Pérdidas por enajenación de derechos de futbolistas (minusvalías)"
+      "glosa": "Pérdidas por enajenación de derechos de deportistas (minusvalías)"
     },
     {
       "label": "Gastos associados a alienações de direitos de atletas (comissões)",
@@ -474,7 +474,7 @@
       "values": [
         9.674
       ],
-      "glosa": "Gastos asociados a la enajenación de derechos de futbolistas (comisiones)"
+      "glosa": "Gastos asociados a enajenaciones de derechos de deportistas (comisiones)"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -484,7 +484,7 @@
       "values": [
         0.03
       ],
-      "glosa": "Bajas de derechos de futbolistas"
+      "glosa": "Bajas de derechos de deportistas"
     },
     {
       "label": "Outros gastos",
@@ -504,7 +504,7 @@
       "values": [
         33.343
       ],
-      "glosa": "Amortización de derechos de futbolistas"
+      "glosa": "Amortizaciones de derechos de deportistas"
     },
     {
       "label": "Perdas de imparidade",
@@ -514,7 +514,7 @@
       "values": [
         3.555
       ],
-      "glosa": "Pérdidas por deterioro"
+      "glosa": "Pérdidas por deterioro de valor"
     },
     {
       "label": "Reversões de imparidade",
@@ -524,7 +524,7 @@
       "values": [
         -0.731
       ],
-      "glosa": "Reversiones del deterioro"
+      "glosa": "Reversiones del deterioro de valor"
     }
   ]
 }
