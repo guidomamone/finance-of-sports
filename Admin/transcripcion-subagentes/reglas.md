@@ -4,6 +4,8 @@ Proyecto en /Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports. Ha
 lote.mjs ni inventario-transcripciones.mjs, y no toques Admin/ ni ningún otro archivo que no sea tu .md.
 
 - Salida: el mismo nombre del PDF con .md, al lado del PDF (archivo nuevo).
+- Archivos intermedios (partes del .md, imágenes): solo en una subcarpeta propia del scratchpad con el nombre del club y el año
+  (`<scratchpad>/<club>-<año>/`). Hay otros subagentes trabajando en paralelo con nombres como part1.md: en la carpeta común se pisan.
 - Fuente: `pdftotext -f N -l N -layout "<pdf>" -` página por página (N = 1..páginas). Si una página no trae texto (es una imagen),
   renderizala con `pdftoppm -r 150 -f N -l N -png "<pdf>" <scratchpad>/<nombre>-pN`, leé la imagen con la herramienta Read y transcribila igual
   (con sus totales confirmados); "[página sin texto]" solo si la página está realmente en blanco.

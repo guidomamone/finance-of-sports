@@ -119,9 +119,8 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
        se carga). Sin documento: Benfica 2010-11, Porto SAD 2019-20, Braga SAD 2017-18 a 2018-19 y 2020-21, AVS 2021-22.
     b1) ESTONIA Y BÉLGICA POR SUBAGENTES (decisión de Guido, 2026-10-15: usar el límite semanal de la suscripción en vez de API para
        transcribir países 100% digitales). Estonia: los 66 .md hechos (commit "Estonia: 66 transcripciones"). Falta: (1) correr
-       `pipeline.mjs --lista` sobre los PDFs de Estonia (solo hace la validación gratis, ya tienen .md) y después el lote; (2) Bélgica:
-       47 de 61 .md hechos y commiteados; faltan los 14 más largos (31-57 págs.): Beerschot 2019-correction, 2020 a 2025; RWDM 2022 y
-       2025; Lommel SK 2024 y 2025; Union Saint-Gilloise (los 3 wf-*.pdf). El comparador da "no" en las páginas imagen del informe del
+       `pipeline.mjs --lista` sobre los PDFs de Estonia (solo hace la validación gratis, ya tienen .md) y después el lote; (2) Bélgica: los
+       61 .md hechos y commiteados; falta lo mismo que Estonia (`pipeline.mjs --lista` y el lote). El comparador da "no" en las páginas imagen del informe del
        comisario (no tienen texto): se toman como buenas si sus totales coinciden con el balance. Para notar al cargar Bélgica:
        Patro Eisden 2024 sin "correction" trae al final el informe del revisor de otra entidad (Patro Eisden Jeugd VZW); el informe del
        comisario de Lierse SK 2023 habla de la vzw Lierse Kempenzonen (confirmar la entidad de cada carpeta); Patro Eisden 2017 y 2020
