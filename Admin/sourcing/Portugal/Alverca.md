@@ -31,3 +31,5 @@ Color de marca: #0000FF — infobox de Wikipedia (kit camiseta local, azul con l
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2022 desde `Clubes/Portugal/Alverca/relatorio-contas-2021-22.pdf` (sourceId `alverca-pt-relatorio-contas-2021-22`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2023 desde `Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf` (sourceId `alverca-pt-relatorio-contas-2022-23`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2023 desde `Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf` (sourceId `alverca-pt-relatorio-contas-2022-23`).

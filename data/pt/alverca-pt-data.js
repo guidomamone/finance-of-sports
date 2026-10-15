@@ -7,7 +7,11 @@ const alvercaptRevenueLinesByYear = {
   2023: [
     { rawLabel:'Vendas e serviços prestados', normalizedCategory:'lump_football_operations', amountNative:0.063878, disclosureLevel:'aggregated' },
     { rawLabel:'Subsídios a exploração', normalizedCategory:'other_income', amountNative:0.054882, disclosureLevel:'aggregated' },
-    { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:0.708548, disclosureLevel:'aggregated' },
+    { rawLabel:'Descontos de pronto pagamento obtidos', normalizedCategory:'other_income', amountNative:0.000011, disclosureLevel:'aggregated' },
+    { rawLabel:'Alienações diretas de inscrição desportiva', normalizedCategory:'player_sales', amountNative:0.694021, disclosureLevel:'aggregated' },
+    { rawLabel:'Correções relativas a períodos anteriores (rendimentos)', normalizedCategory:'other_income', amountNative:0.003093, disclosureLevel:'aggregated' },
+    { rawLabel:'Recuperação de encargos', normalizedCategory:'other_income', amountNative:0.002949, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros não especificados', normalizedCategory:'other_income', amountNative:0.008474, disclosureLevel:'aggregated' },
   ],
 };
 const alvercaptExpenseLinesByYear = {

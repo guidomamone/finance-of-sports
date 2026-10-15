@@ -54,7 +54,11 @@ Generados/Portugal/Alverca/relatorio-contas-2022-23.categorias.json (escalón de
 |---|---|---|
 | 1 | Vendas e serviços prestados | pág. 2, Jev 0.91 |
 | 2 | Subsídios a exploração | pág. 2, Jev 0.99 |
-| 3 | Outros rendimentos | pág. 2, Jev 0.99 |
+| 3 | Descontos de pronto pagamento obtidos | pág. 2, precedente |
+| 4 | Alienações diretas de inscrição desportiva | pág. 2, precedente |
+| 5 | Correções relativas a períodos anteriores (rendimentos) | pág. 2, precedente |
+| 6 | Recuperação de encargos | pág. 2, precedente |
+| 7 | Outros não especificados | pág. 2, precedente |
 
 ### Gastos
 
@@ -69,14 +73,15 @@ Generados/Portugal/Alverca/relatorio-contas-2022-23.categorias.json (escalón de
 
 ```text
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2023-06-30. Claude 2026-10-15 (lote 76): el registro dedujo 2023-09-29, que es la fecha de firma ('Alverca, 29 de Setembro de 2023', L75 y L108); el documento dice 'Período findo em 30 de Junho de 2023' (L87)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 0. Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 11,09. Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 694.020,93. Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 3.093,05. Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 2.949,02. Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 8.474,16. Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): categoria = player_sales. Claude 2026-10-15 (pedido de Guido): venta de derechos de inscripción de jugadores (nota 17.2.3 del 2023-24, L937, columna 2023)
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-15): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2023 (pt-primeiraliga, pt-ligaportugal2): puede haber jugado otra división).
 ```
 
 ## 2022
