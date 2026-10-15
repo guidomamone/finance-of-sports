@@ -21,16 +21,12 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-ORDEN (2026-10-15): primero el script que limpia la cola (232 aa), las altas
+ORDEN (2026-10-15): primero las altas
 de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (232 e, 233, 230) y lo que espera una decisión de Guido (130,
 183, 51). Las letras del 232 marcadas "conocido, sin daño hoy" (k, l, n, o, z) no se trabajan salvo que algo cambie.
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
-    aa) Casos de perfil que nadie va a contestar ni cerrar: OFI Crete (10), Levadiakos (2) y Paysandu (2) son de años YA cargados con el
-       ingreso como renglón sin desglosar (lump_), donde `cargar.mjs` ya no hace la pregunta; `cola.mjs` `cerrarCargados()` no cierra
-       'cargar · perfil' a propósito (sirve para los años que vienen). Quedan en la cola como pendientes. Escalón posible: un caso de perfil
-       cuya etapa ya no lo levanta (el año cargado y la última corrida de cargar sin ese caso) pasa a obsoleto, igual que los de verificar.
     e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
        Grecia fue el 20% del gasto de API. Mirar qué texto le hace falta de verdad (to-do 230 lo deja como tercer cambio).
        PROBADO Y DESCARTADO (2026-10-14): recortar los textos debajo de los títulos sin tabla pierde 7 decisiones y mete 2 errores

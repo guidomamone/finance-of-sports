@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 701 — 232 aa: perfil de OFI, Levadiakos y Paysandu (2026-10-15)
+
+- Los 14 casos de perfil de años ya cargados se cerraron contestándolos (subagente Sonnet, citas verificadas), no con un escalón de script:
+  la pregunta es del club y `cargar.mjs` ya no la levanta para años con el ingreso sin desglosar. OFI y Levadiakos: ΠΑΕ, socios no y
+  otros deportes no; Paysandu: socios sí (Sócio Torcedor y Proprietário) y otros deportes sí (Esportes Olímpicos). Ningún dato publicado cambia.
+
 ## Versión 700 — To-do 236 cerrado: pipeline revisado (2026-10-15)
 
 - a) `cargar.mjs --reemplazar`: escalón 1, `data/` (el repo local) ya tiene el año aunque el registro esté viejo. Medido en 570 documentos:
