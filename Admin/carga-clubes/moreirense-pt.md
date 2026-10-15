@@ -59,7 +59,7 @@ Generados/Portugal/Moreirense/relatorio-contas-2024-25.categorias.json (escalón
 | 5 | Jogos sociais (placard/on line) | pág. 24, precedente |
 | 6 | Rendimentos suplementares | pág. 29, Jev 0.99 |
 | 7 | Descontos de pronto pagamento obtidos | pág. 29, Jev 1 |
-| 8 | Rendimentos em investimentos não financeiros | pág. 29, Jev 1 |
+| 8 | Rendimentos em investimentos não financeiros | pág. 29, precedente |
 | 9 | Outros | pág. 29, precedente |
 
 ### Gastos

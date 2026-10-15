@@ -16,7 +16,7 @@ const moreirenseptRevenueLinesByYear = {
     { rawLabel:'Jogos sociais (placard/on line)', normalizedCategory:'other_income', amountNative:0.340311, disclosureLevel:'aggregated' },
     { rawLabel:'Rendimentos suplementares', normalizedCategory:'other_income', amountNative:0.202712, disclosureLevel:'aggregated' },
     { rawLabel:'Descontos de pronto pagamento obtidos', normalizedCategory:'other_income', amountNative:0.000194, disclosureLevel:'aggregated' },
-    { rawLabel:'Rendimentos em investimentos não financeiros', normalizedCategory:'other_income', amountNative:8.002412, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendimentos em investimentos não financeiros', normalizedCategory:'player_sales', amountNative:8.002412, disclosureLevel:'aggregated' },
     { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.528485, disclosureLevel:'aggregated' },
   ],
 };
