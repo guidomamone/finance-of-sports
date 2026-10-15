@@ -41,6 +41,61 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2022: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2022-06-30","sourceId":"alverca-pt-relatorio-contas-2021-22"}
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Alverca/relatorio-contas-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Alverca/relatorio-contas-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas e serviços prestados | pág. 10, precedente |
+| 2 | Subsídios à exploração | pág. 10, precedente |
+| 3 | Rendimentos Suplementares | pág. 28, precedente |
+| 4 | Descontos de pronto pagamento obtidos | pág. 28, precedente |
+| 5 | Alienações diretas de inscrição desportiva | pág. 28, precedente |
+| 6 | Correções relativas a períodos anteriores (rendimentos) | pág. 28, precedente |
+| 7 | Outros rendimentos | pág. 28, precedente |
+| 8 | Outros não especificados | pág. 28, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Serviços Especializados | pág. 24, Jev 0.97 |
+| 2 | Materiais | pág. 24, Jev 0.93 |
+| 3 | Energia e Fluidos | pág. 24, Jev 1 |
+| 4 | Deslocações e Estadas | pág. 24, Jev 1 |
+| 5 | Serviços Diversos | pág. 24, precedente |
+| 6 | Gastos com o pessoal | pág. 10, precedente |
+| 7 | Gastos/reversões de depreciação e de amortização | pág. 10, precedente |
+| 8 | Outros gastos | pág. 10, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 0. Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 347.028,99. Claude 2026-10-15 (lote 76, subagente Sonnet, revisado en la imagen): el OCR leyó 247.028,99; el PDF dice (347.028,99), igual al total de la nota 17.2.3 (L933) y a la columna 2024 del documento 2024-25
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 24.153,57. Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 0,01. Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 581.500,00. Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 4.102,68. Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 500,00. Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 12.335,39. Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): categoria = player_sales. Claude 2026-10-15 (lote 76): venta de derechos de inscripción de jugadores (nota 17.2.3, L937); en 2024-25 la misma fila ya va a player_sales
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-15): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2024 (pt-primeiraliga, pt-ligaportugal2): puede haber jugado otra división).
+```
+
 ## 2023
 
 ### Ingresos
@@ -138,4 +193,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Alverca/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### alverca-pt-relatorio-contas-2023-24
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Alverca/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

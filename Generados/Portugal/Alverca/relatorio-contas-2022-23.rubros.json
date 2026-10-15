@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf",
   "club": "alverca-pt",
   "year": 2023,
-  "generatedAt": "2026-10-15T13:14:09.368Z",
+  "generatedAt": "2026-10-15T13:36:53.778Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         0.063878
       ],
-      "glosa": "Ventas y prestaciones de servicios"
+      "glosa": "Ventas y prestación de servicios"
     },
     {
       "label": "Subsídios a exploração",
@@ -27,14 +27,54 @@
       "glosa": "Subvenciones a la explotación"
     },
     {
-      "label": "Outros rendimentos",
+      "label": "Descontos de pronto pagamento obtidos",
       "lado": "revenue",
       "page": 2,
-      "section": "estado",
+      "section": "ajuste manual",
       "values": [
-        0.708548
+        0.000011
       ],
-      "glosa": "Otros ingresos"
+      "glosa": "Descuentos por pronto pago obtenidos"
+    },
+    {
+      "label": "Alienações diretas de inscrição desportiva",
+      "lado": "revenue",
+      "page": 2,
+      "section": "ajuste manual",
+      "values": [
+        0.694021
+      ],
+      "glosa": "Enajenaciones directas de derechos federativos"
+    },
+    {
+      "label": "Correções relativas a períodos anteriores (rendimentos)",
+      "lado": "revenue",
+      "page": 2,
+      "section": "ajuste manual",
+      "values": [
+        0.003093
+      ],
+      "glosa": "Correcciones relativas a ejercicios anteriores (ingresos)"
+    },
+    {
+      "label": "Recuperação de encargos",
+      "lado": "revenue",
+      "page": 2,
+      "section": "ajuste manual",
+      "values": [
+        0.002949
+      ],
+      "glosa": "Recuperación de gastos"
+    },
+    {
+      "label": "Outros não especificados",
+      "lado": "revenue",
+      "page": 2,
+      "section": "ajuste manual",
+      "values": [
+        0.008474
+      ],
+      "glosa": "Otros no especificados"
     },
     {
       "label": "Fornecimentos e serviços externos",
@@ -74,7 +114,7 @@
       "values": [
         0.020295
       ],
-      "glosa": "Gastos/reversiones por amortización y depreciación"
+      "glosa": "Gastos/reversiones de amortización y depreciación"
     }
   ]
 }

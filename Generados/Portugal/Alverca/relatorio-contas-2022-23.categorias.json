@@ -1,10 +1,10 @@
 {
  "md": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.md",
- "club": "alverca",
+ "club": "alverca-pt",
  "year": 2023,
- "generatedAt": "2026-10-15T12:50:42.850Z",
- "rubrosHuella": "5c131a89d8bee3c23d6f996e923c4204825969b1",
- "jevHuella": "73ffa435143359ce9e63a220052f8231ed4e92f2",
+ "generatedAt": "2026-10-15T13:44:35.002Z",
+ "rubrosHuella": "051bc4de4652563b88b378f771251c5a5d71d9ba",
+ "jevHuella": "44331befe7cb0da78a69a9fbcbd13dac645adee1",
  "modelo": "claude-opus-5-5",
  "costUsd": 0,
  "rubros": [
@@ -12,14 +12,14 @@
    "label": "Vendas e serviços prestados",
    "lado": "revenue",
    "section": "estado",
-   "glosa": "Ventas y prestaciones de servicios",
+   "glosa": "Ventas y prestación de servicios",
    "page": 2,
    "pendiente": false,
    "ya": "lump_football_operations",
-   "escalon": 1,
-   "jevConf": 0.91,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "lump_football_operations",
-   "confianza": 0.91
+   "confianza": 1
   },
   {
    "label": "Subsídios a exploração",
@@ -29,23 +29,75 @@
    "page": 2,
    "pendiente": false,
    "ya": "other_income",
-   "escalon": 1,
-   "jevConf": 0.99,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
-   "confianza": 0.99
+   "confianza": 1
   },
   {
-   "label": "Outros rendimentos",
+   "label": "Descontos de pronto pagamento obtidos",
    "lado": "revenue",
-   "section": "estado",
-   "glosa": "Otros ingresos",
+   "section": "ajuste manual",
+   "glosa": "Descuentos por pronto pago obtenidos",
    "page": 2,
    "pendiente": false,
    "ya": "other_income",
    "escalon": 1,
-   "jevConf": 0.99,
+   "jevConf": 1,
    "categoria": "other_income",
-   "confianza": 0.99
+   "confianza": 1
+  },
+  {
+   "label": "Alienações diretas de inscrição desportiva",
+   "lado": "revenue",
+   "section": "ajuste manual",
+   "glosa": "Enajenaciones directas de derechos federativos",
+   "page": 2,
+   "pendiente": false,
+   "ya": "player_sales",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "player_sales",
+   "confianza": 1
+  },
+  {
+   "label": "Correções relativas a períodos anteriores (rendimentos)",
+   "lado": "revenue",
+   "section": "ajuste manual",
+   "glosa": "Correcciones relativas a ejercicios anteriores (ingresos)",
+   "page": 2,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Recuperação de encargos",
+   "lado": "revenue",
+   "section": "ajuste manual",
+   "glosa": "Recuperación de gastos",
+   "page": 2,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Outros não especificados",
+   "lado": "revenue",
+   "section": "ajuste manual",
+   "glosa": "Otros no especificados",
+   "page": 2,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "other_income",
+   "confianza": 1
   },
   {
    "label": "Fornecimentos e serviços externos",
@@ -55,10 +107,10 @@
    "page": 2,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 0.92,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
-   "confianza": 0.92
+   "confianza": 1
   },
   {
    "label": "Gastos com o pessoal",
@@ -72,7 +124,7 @@
    "confCache": 0.75,
    "motivo": "Gastos de personal totales sin desglose; en club de fútbol dominan sueldos del plantel",
    "jev": "wages_squad",
-   "jevConf": 0.63,
+   "jevConf": 0.77,
    "desdeCache": true,
    "categoria": "wages_squad",
    "confianza": 0.75
@@ -85,8 +137,8 @@
    "page": 2,
    "pendiente": false,
    "ya": "other_expenses",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_expenses",
    "confianza": 1
   },
@@ -94,18 +146,14 @@
    "label": "Gastos/reversões de depreciação e de amortização",
    "lado": "expense",
    "section": "estado",
-   "glosa": "Gastos/reversiones de depreciación y amortización",
+   "glosa": "Gastos/reversiones de amortización y depreciación",
    "page": 2,
    "pendiente": false,
    "ya": "depreciation",
-   "escalon": 2,
-   "confCache": 0.85,
-   "motivo": "Depreciación y amortización conjunta; ejemplos de otros clubes van a depreciation",
-   "jev": "depreciation",
-   "jevConf": 0.89,
-   "desdeCache": true,
+   "escalon": 0,
+   "precedenteDe": "sitio:familia",
    "categoria": "depreciation",
-   "confianza": 0.85
+   "confianza": 1
   }
  ]
 }

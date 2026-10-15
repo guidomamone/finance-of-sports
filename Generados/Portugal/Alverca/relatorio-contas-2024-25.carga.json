@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2024-25.pdf",
- "generado": "2026-10-15T13:19:54.254Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Indemnização FIFA - AL Wasl\" -> player_sales 0.45; \"Correcções relativas a períodos anterior\" -> other_income 0; \"Serviços Diversos\" -> other_expenses 0.6; \"Outros Gastos com Pessoal\" -> wages_squad 0.5; \"Despesas não devidamente documentadas\" -> other_expenses 0.7"
-  }
- ],
+ "generado": "2026-10-15T13:44:42.226Z",
+ "frena": [],
  "avisos": [
   "gastos: ningún total impreso igual a la suma de las líneas (-8.1202); queda la suma, verificada por el resultado del ejercicio"
  ],
@@ -42,9 +37,9 @@
     "amountNative": 0.25383,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Alienações direitos de inscrição desportiva",
@@ -62,9 +57,9 @@
     "amountNative": 0.000185,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, familia (categorias.json decía exceptional_items)"
    },
    {
     "rawLabel": "Recuperação de encargos",
@@ -134,9 +129,9 @@
     "amountNative": -0.389304,
     "disclosureLevel": "aggregated",
     "_pag": 24,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Remunerações dos Órgãos Sociais",
@@ -194,9 +189,9 @@
     "amountNative": -0.314632,
     "disclosureLevel": "aggregated",
     "_pag": 25,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Imparidade de dívidas a receber (perdas/reversões)",
@@ -274,9 +269,9 @@
     "amountNative": -0.004078,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos/reversões de depreciação e de amortização",
@@ -400,11 +395,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.25383,
    "cat": "player_sales",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): indemnización FIFA por transferencia, en Outros rendimentos junto a la alienação (2024-25 L1164)",
    "destino": "revenue",
    "amountNative": 0.25383
   },
@@ -431,12 +426,10 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.000185,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, familia (categorias.json decía exceptional_items)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "revenue",
    "amountNative": 0.000185
   },
@@ -538,11 +531,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.389304,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): mismo renglón de FSE (2024-25 L996, nota 12)",
    "destino": "expense",
    "amountNative": -0.389304
   },
@@ -630,11 +623,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.314632,
    "cat": "wages_squad",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): desglose de Gastos com o pessoal, nota 13 (2024-25 L1019)",
    "destino": "expense",
    "amountNative": -0.314632
   },
@@ -752,11 +745,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.004078,
    "cat": "other_expenses",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): gasto residual en Outros gastos (2024-25 L1159)",
    "destino": "expense",
    "amountNative": -0.004078
   },
@@ -880,8 +873,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 7,
   "lineasGasto": 20,
   "metaFilas": 2,

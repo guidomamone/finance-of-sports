@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.md",
- "generatedAt": "2026-10-15T12:50:36.456Z",
- "rubrosHuella": "5c131a89d8bee3c23d6f996e923c4204825969b1",
+ "generatedAt": "2026-10-15T13:44:27.717Z",
+ "rubrosHuella": "051bc4de4652563b88b378f771251c5a5d71d9ba",
  "rubros": [
   {
    "label": "Vendas e serviços prestados",
@@ -9,7 +9,7 @@
    "page": 2,
    "section": "estado",
    "choice": "lump_football_operations",
-   "confidence": 0.91,
+   "confidence": 0.92,
    "desdeCache": true
   },
   {
@@ -22,21 +22,21 @@
    "desdeCache": true
   },
   {
-   "label": "Outros rendimentos",
+   "label": "Recuperação de encargos",
    "lado": "revenue",
    "page": 2,
-   "section": "estado",
+   "section": "ajuste manual",
    "choice": "other_income",
-   "confidence": 0.99,
+   "confidence": 1,
    "desdeCache": true
   },
   {
-   "label": "Fornecimentos e serviços externos",
-   "lado": "expense",
+   "label": "Outros não especificados",
+   "lado": "revenue",
    "page": 2,
-   "section": "estado",
-   "choice": "admin_general_expense",
-   "confidence": 0.92,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 1,
    "desdeCache": true
   },
   {
@@ -45,7 +45,7 @@
    "page": 2,
    "section": "estado",
    "choice": "wages_squad",
-   "confidence": 0.63,
+   "confidence": 0.77,
    "desdeCache": true
   },
   {
@@ -63,8 +63,100 @@
    "page": 2,
    "section": "estado",
    "choice": "depreciation",
-   "confidence": 0.89,
+   "confidence": 0.86,
    "desdeCache": true
+  },
+  {
+   "label": "Alienações diretas de inscrição desportiva",
+   "lado": "revenue",
+   "page": 2,
+   "section": "ajuste manual",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Descontos de pronto pagamento obtidos",
+   "lado": "revenue",
+   "page": 2,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Correções relativas a períodos anteriores (rendimentos)",
+   "lado": "revenue",
+   "page": 2,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1087
   }
  ]
 }

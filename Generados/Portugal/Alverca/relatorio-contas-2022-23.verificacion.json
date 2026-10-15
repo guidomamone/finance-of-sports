@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf",
  "md": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.md",
- "generado": "2026-10-15T13:14:09.368Z",
+ "generado": "2026-10-15T13:36:53.778Z",
  "estado": "ok",
  "clubId": "alverca-pt",
  "year": 2023,
@@ -19,6 +19,95 @@
    "linea": null,
    "motivo": "Claude 2026-10-15 (lote 76): el registro dedujo 2023-09-29, que es la fecha de firma ('Alverca, 29 de Setembro de 2023', L75 y L108); el documento dice 'Período findo em 30 de Junho de 2023' (L87)",
    "evidencia": "relatorio-contas-2022-23.md L75, L87, L108",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 98,
+   "etiqueta": "Outros rendimentos",
+   "lado": "ingreso",
+   "reemplaza": "Outros rendimentos",
+   "motivo": "Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income",
+   "evidencia": "relatorio-contas-2023-24.md L935-L941 (columna 2023); relatorio-contas-2022-23.md L98",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf",
+   "campo": "fila",
+   "valor": "11,09",
+   "linea": 98,
+   "etiqueta": "Descontos de pronto pagamento obtidos",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income",
+   "evidencia": "relatorio-contas-2023-24.md L935-L941 (columna 2023); relatorio-contas-2022-23.md L98",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf",
+   "campo": "fila",
+   "valor": "694.020,93",
+   "linea": 98,
+   "etiqueta": "Alienações diretas de inscrição desportiva",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income",
+   "evidencia": "relatorio-contas-2023-24.md L935-L941 (columna 2023); relatorio-contas-2022-23.md L98",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf",
+   "campo": "fila",
+   "valor": "3.093,05",
+   "linea": 98,
+   "etiqueta": "Correções relativas a períodos anteriores (rendimentos)",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income",
+   "evidencia": "relatorio-contas-2023-24.md L935-L941 (columna 2023); relatorio-contas-2022-23.md L98",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf",
+   "campo": "fila",
+   "valor": "2.949,02",
+   "linea": 98,
+   "etiqueta": "Recuperação de encargos",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income",
+   "evidencia": "relatorio-contas-2023-24.md L935-L941 (columna 2023); relatorio-contas-2022-23.md L98",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf",
+   "campo": "fila",
+   "valor": "8.474,16",
+   "linea": 98,
+   "etiqueta": "Outros não especificados",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income",
+   "evidencia": "relatorio-contas-2023-24.md L935-L941 (columna 2023); relatorio-contas-2022-23.md L98",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Alienações diretas de inscrição desportiva",
+   "motivo": "Claude 2026-10-15 (pedido de Guido): venta de derechos de inscripción de jugadores (nota 17.2.3 del 2023-24, L937, columna 2023)",
+   "evidencia": "relatorio-contas-2023-24.md L937",
    "autor": "Claude",
    "fecha": "2026-10-15"
   }
@@ -58,6 +147,12 @@
   }
  ],
  "notas": [
+  "ajuste manual: sale la fila \"Outros rendimentos\" (2026-10-15, Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income)",
+  "ajuste manual: fila \"Descontos de pronto pagamento obtidos\" (ingreso) 11,09 (2026-10-15, Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income)",
+  "ajuste manual: fila \"Alienações diretas de inscrição desportiva\" (ingreso) 694.020,93 (2026-10-15, Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income)",
+  "ajuste manual: fila \"Correções relativas a períodos anteriores (rendimentos)\" (ingreso) 3.093,05 (2026-10-15, Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income)",
+  "ajuste manual: fila \"Recuperação de encargos\" (ingreso) 2.949,02 (2026-10-15, Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income)",
+  "ajuste manual: fila \"Outros não especificados\" (ingreso) 8.474,16 (2026-10-15, Guido 2026-10-15 (pedido) / Claude: el documento 2022-23 solo trae 'Outros rendimentos' 708.548,25 agregado (L98); la nota 17.2.3 del documento 2023-24 (L935-L941, columna 30/06/2023, pág. 28 del visor) lo abre en filas que suman exacto 708.548,25, con la venta de jugadores (694.020,93) que quedaba en other_income)",
   "duda de localizar ya contestada para el club (antes de su alta) (cuadro-de-otro-anio, \"-\"): aceptar, en relatorio-contas-2022-23.pdf"
  ],
  "reintentar": null,
@@ -91,12 +186,44 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Outros rendimentos",
+   "etiqueta": "Descontos de pronto pagamento obtidos",
    "lado": "ingreso",
-   "M": 0.708548,
+   "M": 0.000011,
    "pagina": 2,
    "linea": 98,
-   "origen": "estado"
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Alienações diretas de inscrição desportiva",
+   "lado": "ingreso",
+   "M": 0.694021,
+   "pagina": 2,
+   "linea": 98,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Correções relativas a períodos anteriores (rendimentos)",
+   "lado": "ingreso",
+   "M": 0.003093,
+   "pagina": 2,
+   "linea": 98,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Recuperação de encargos",
+   "lado": "ingreso",
+   "M": 0.002949,
+   "pagina": 2,
+   "linea": 98,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Outros não especificados",
+   "lado": "ingreso",
+   "M": 0.008474,
+   "pagina": 2,
+   "linea": 98,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Fornecimentos e serviços externos",
