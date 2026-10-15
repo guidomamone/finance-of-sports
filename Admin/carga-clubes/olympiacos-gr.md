@@ -365,7 +365,7 @@ tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado
 ### Ingresos
 
 ```text
-2020: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2020-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2020: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2020-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Grecia/Olympiacos/PAE_Olympiacos_FS_2020-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -378,17 +378,17 @@ Generados/Grecia/Olympiacos/PAE_Olympiacos_FS_2020-06-30.categorias.json (escal�
 | 5 | Έσοδα από UEFA | pág. 9, precedente |
 | 6 | Λοιπά λειτουργικά έσοδα | pág. 9, Jev 0.99 |
 | 7 | Αξία πώλησης ποδοσφαιριστών | pág. 42, Jev 1 |
-| 8 | Λοιπά έσοδα κατά την πώληση | pág. 42, ? 0.6 |
+| 8 | Λοιπά έσοδα κατά την πώληση | pág. 42, precedente |
 
 ### Gastos
 
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Μισθοί και δόσεις συμβολαίων | pág. 40, Jev 1 |
-| 2 | Εισφορεκκοινωνικής ασφάλισης | pág. 40, Claude 0.93 |
+| 2 | Εισφορεκκοινωνικής ασφάλισης | pág. 40, precedente |
 | 3 | Λοιπές παροχές | pág. 40, Claude 0.8 |
 | 4 | Ημερομίσθια και μισθοί | pág. 40, precedente |
-| 5 | Εισφορεκκοινωνικής ασφάλισης | pág. 40, Claude 0.93 |
+| 5 | Εισφορεκκοινωνικής ασφάλισης | pág. 40, precedente |
 | 6 | Πρόβλεψη αποζημίωσης προσωπικού | pág. 40, precedente |
 | 7 | Απόσβεση ενσώματων περιουσιακών στοιχείων | pág. 40, Jev 1 |
 | 8 | Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων | pág. 40, precedente |
@@ -406,18 +406,12 @@ Generados/Grecia/Olympiacos/PAE_Olympiacos_FS_2020-06-30.categorias.json (escal�
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
-```
-
-```text
 tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-14): Claude 2026-10-14: perímetro individual (ajuste del club) = columna Εταιρεία del balance; caja-deuda.mjs leía la primera cifra, la del grupo (Όμιλος) — to-do 232 w
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2019–20 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Olympiacos".
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
 ## 2019
