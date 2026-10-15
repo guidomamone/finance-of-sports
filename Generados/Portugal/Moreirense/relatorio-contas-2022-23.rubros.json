@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Moreirense/relatorio-contas-2022-23.md",
   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2022-23.pdf",
-  "club": "moreirense",
+  "club": "moreirense-pt",
   "year": 2023,
-  "generatedAt": "2026-10-15T12:42:56.488Z",
+  "generatedAt": "2026-10-15T13:14:09.479Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         0.368712
       ],
-      "glosa": "Juegos sociales (Placard / online)"
+      "glosa": "Juegos sociales (apuestas / en línea)"
     },
     {
       "label": "Rendimentos suplementares",
@@ -104,7 +104,7 @@
       "values": [
         2.55
       ],
-      "glosa": "Deterioro de cuentas por cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -124,7 +124,7 @@
       "values": [
         0.000765
       ],
-      "glosa": "Coste de las mercancías vendidas y materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
     },
     {
       "label": "6221 Trabalhos especializados",
@@ -164,7 +164,7 @@
       "values": [
         0.100964
       ],
-      "glosa": "6226 Reparación y conservación"
+      "glosa": "6226 Conservación y reparación"
     },
     {
       "label": "6228 Outros",
@@ -184,7 +184,7 @@
       "values": [
         0.009938
       ],
-      "glosa": "6231 Herramientas y útiles de rápido desgaste"
+      "glosa": "6231 Herramientas y utensilios de desgaste rápido"
     },
     {
       "label": "6233 Material de escritório",
@@ -264,7 +264,7 @@
       "values": [
         0.000013
       ],
-      "glosa": "6252 Transporte de personal"
+      "glosa": "6252 Transportes de personal"
     },
     {
       "label": "6261 Rendas e alugueres",
@@ -304,7 +304,7 @@
       "values": [
         0.000648
       ],
-      "glosa": "6265 Contencioso y notaría"
+      "glosa": "6265 Contencioso y notariado"
     },
     {
       "label": "6267 Limpeza, higiene e conforto",
@@ -314,7 +314,7 @@
       "values": [
         0.003971
       ],
-      "glosa": "6267 Limpieza, higiene y confort"
+      "glosa": "6267 Limpieza, higiene y mantenimiento"
     },
     {
       "label": "6268 Outros serviços",
@@ -344,7 +344,7 @@
       "values": [
         0.208471
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales"
     },
     {
       "label": "Seguros de acidentes de trabalho e doenças profissionais",

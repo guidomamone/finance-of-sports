@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.md",
   "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf",
-  "club": "nacional",
+  "club": "nacional-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T12:42:56.512Z",
+  "generatedAt": "2026-10-15T13:14:09.490Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -114,7 +114,7 @@
       "values": [
         0.000604
       ],
-      "glosa": "Exceso de provisión para impuestos"
+      "glosa": "Exceso de estimación para impuestos"
     },
     {
       "label": "Comparticipação tarifa residente",
@@ -124,7 +124,7 @@
       "values": [
         0.242545
       ],
-      "glosa": "Subvención tarifa de residente"
+      "glosa": "Subvención tarifa de residentes"
     },
     {
       "label": "Outros não especificados",
@@ -174,7 +174,7 @@
       "values": [
         0.032889
       ],
-      "glosa": "Reparaciones y conservación"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Serviços bancários",
@@ -244,7 +244,7 @@
       "values": [
         0.12
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Comunicação",
@@ -264,7 +264,7 @@
       "values": [
         0.015487
       ],
-      "glosa": "Gastos contenciosos y notariales"
+      "glosa": "Contencioso y notaría"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -274,7 +274,7 @@
       "values": [
         0.005309
       ],
-      "glosa": "Limpieza, higiene y mantenimiento"
+      "glosa": "Limpieza, higiene y confort"
     },
     {
       "label": "Outros serviços",
@@ -294,7 +294,7 @@
       "values": [
         0.1212
       ],
-      "glosa": "Retribuciones de los órganos de gobierno"
+      "glosa": "Remuneraciones de los órganos de gobierno"
     },
     {
       "label": "Remunerações do Pessoal - Funcionários",
@@ -334,7 +334,7 @@
       "values": [
         0.028785
       ],
-      "glosa": "Cargas sociales s/remuneraciones - Órganos de gobierno"
+      "glosa": "Cargas sociales s/remun. - Órganos de gobierno"
     },
     {
       "label": "Enc. s/rem.-pessoal - Funcionários",
@@ -344,7 +344,7 @@
       "values": [
         0.058185
       ],
-      "glosa": "Cargas sociales s/remuneraciones - Empleados"
+      "glosa": "Cargas sociales s/remun. - Empleados"
     },
     {
       "label": "Enc. s/rem.-pessoal - Treinadores",
@@ -354,7 +354,7 @@
       "values": [
         0.039516
       ],
-      "glosa": "Cargas sociales s/remuneraciones - Entrenadores"
+      "glosa": "Cargas sociales s/remun. - Entrenadores"
     },
     {
       "label": "Enc. s/rem.-pessoal - Jogadores",
@@ -364,7 +364,7 @@
       "values": [
         0.041713
       ],
-      "glosa": "Cargas sociales s/remuneraciones - Jugadores"
+      "glosa": "Cargas sociales s/remun. - Jugadores"
     },
     {
       "label": "Seg.ac.trb - pessoal",
@@ -374,7 +374,7 @@
       "values": [
         0.00018
       ],
-      "glosa": "Seguro de accidentes de trabajo - Personal"
+      "glosa": "Seguro de acc. de trabajo - Personal"
     },
     {
       "label": "Seg.ac.trb - Jogadores",
@@ -384,7 +384,7 @@
       "values": [
         0.125546
       ],
-      "glosa": "Seguro de accidentes de trabajo - Jugadores"
+      "glosa": "Seguro de acc. de trabajo - Jugadores"
     },
     {
       "label": "Outros Custos com Pessoal - Jogadores",
@@ -424,7 +424,7 @@
       "values": [
         0.422414
       ],
-      "glosa": "Provisiones (dotaciones/reversiones)"
+      "glosa": "Provisiones (aumentos/disminuciones)"
     },
     {
       "label": "Encargos com descontos de letras",
@@ -494,7 +494,7 @@
       "values": [
         0.08125
       ],
-      "glosa": "Dotaciones/reversiones de amortización y depreciación"
+      "glosa": "Gastos/reversiones de amortización y depreciación"
     }
   ]
 }

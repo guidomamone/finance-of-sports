@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.md",
- "generado": "2026-10-15T12:42:56.635Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T13:21:37.426Z",
+ "estado": "ok",
+ "clubId": "rioave-pt",
  "year": 2024,
  "escala": {
   "valor": "unidades",
@@ -21,16 +21,61 @@
    "evidencia": "relatorio-contas-2023-24.pdf pág. 1 del visor (OCR/texto)",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
+   "campo": "fila",
+   "valor": "-4,89",
+   "linea": 351,
+   "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": "gasto",
+   "reemplaza": "Imparidade de dívidas a receber (perdas/reversões)",
+   "motivo": "Claude 2026-10-15 (lote 76, subagente Sonnet, revisado en la imagen): en el PDF el renglón va SIN signo menos (reversión) mientras los gastos llevan '-'; el .md perdió todos los signos. Con las dos reversiones el EBITDA da el impreso -3.942.721,65 y el resultado -5.863.187,66",
+   "evidencia": "pág. 14 del visor (impreso 2 al pie), .md L351",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
+   "campo": "fila",
+   "valor": "-2.500,00",
+   "linea": 353,
+   "etiqueta": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
+   "lado": "gasto",
+   "reemplaza": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
+   "motivo": "Claude 2026-10-15 (lote 76, subagente Sonnet, revisado en la imagen): en el PDF va SIN signo menos (reversión); como gasto daba 5.000 de diferencia en el EBITDA impreso -3.942.721,65",
+   "evidencia": "pág. 14 del visor (impreso 2 al pie), .md L353",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
+   "campo": "fila",
+   "valor": "115.896,16",
+   "linea": 359,
+   "etiqueta": "Juros e rendimentos similares obtidos",
+   "lado": "financiero",
+   "reemplaza": "Juros e rendimentos similares obtidos",
+   "motivo": "Claude 2026-10-15 (lote 76, revisado en la imagen de la pág. 14): el .md perdió los signos y la lectura sumaba los intereses obtenidos como costo (financiero 0,317495 en vez del neto -0,085703); con los dos el resultado da el impreso -5.863.187,66",
+   "evidencia": "pág. 14 del visor (impreso 2 al pie), .md L359",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
+   "campo": "fila",
+   "valor": "-201.599,08",
+   "linea": 360,
+   "etiqueta": "Juros e gastos similares suportados",
+   "lado": "financiero",
+   "reemplaza": "Juros e gastos similares suportados",
+   "motivo": "Claude 2026-10-15 (lote 76, revisado en la imagen de la pág. 14): el .md perdió los signos y la lectura sumaba los intereses obtenidos como costo (financiero 0,317495 en vez del neto -0,085703); con los dos el resultado da el impreso -5.863.187,66",
+   "evidencia": "pág. 14 del visor (impreso 2 al pie), .md L360",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
   }
  ],
- "cola": [
-  "4f4c049",
-  "4732741",
-  "8823e93",
-  "db10077",
-  "38a4d42",
-  "aebd8c7"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -44,9 +89,14 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 11.373892 - gastos 17.156387 ± financiero 0.317495 ± impuesto 0 no da el impreso -5.863188",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.0050097799999990755
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 7.715111; el sitio tiene 7.71511"
   },
   {
    "nombre": "documento del año 2025",
@@ -57,18 +107,19 @@
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 7.715111 en Relatorio_SDUQ_2022-2023.pdf y 7.715111 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
   }
  ],
  "notas": [
   "la nota de \"Subsídios à Exploração\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"Imparidade de dívidas a receber (perdas/reversões)\" (gasto) -4,89, en lugar de \"Imparidade de dívidas a receber (perdas/reversões)\" (2026-10-15, Claude 2026-10-15 (lote 76, subagente Sonnet, revisado en la imagen): en el PDF el renglón va SIN signo menos (reversión) mientras los gastos llevan '-'; el .md perdió todos los signos. Con las dos reversiones el EBITDA da el impreso -3.942.721,65 y el resultado -5.863.187,66)",
+  "ajuste manual: fila \"Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)\" (gasto) -2.500,00, en lugar de \"Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)\" (2026-10-15, Claude 2026-10-15 (lote 76, subagente Sonnet, revisado en la imagen): en el PDF va SIN signo menos (reversión); como gasto daba 5.000 de diferencia en el EBITDA impreso -3.942.721,65)",
+  "ajuste manual: fila \"Juros e rendimentos similares obtidos\" (financiero) 115.896,16, en lugar de \"Juros e rendimentos similares obtidos\" (2026-10-15, Claude 2026-10-15 (lote 76, revisado en la imagen de la pág. 14): el .md perdió los signos y la lectura sumaba los intereses obtenidos como costo (financiero 0,317495 en vez del neto -0,085703); con los dos el resultado da el impreso -5.863.187,66)",
+  "ajuste manual: fila \"Juros e gastos similares suportados\" (financiero) -201.599,08, en lugar de \"Juros e gastos similares suportados\" (2026-10-15, Claude 2026-10-15 (lote 76, revisado en la imagen de la pág. 14): el .md perdió los signos y la lectura sumaba los intereses obtenidos como costo (financiero 0,317495 en vez del neto -0,085703); con los dos el resultado da el impreso -5.863.187,66)",
   "duda de localizar que no afecta la carga: Los cuadros de gestión de pág. 7-10 tienen tres épocas y reagrupan rubros ya desglosados en las notas 17-25.",
+  "duda de extraer ya contestada para el club (antes de su alta) (fila-ilegible, \"Vendas e prestações de serviços\"): aceptar, en relatorio-contas-2023-24.pdf",
   "duda de extraer que no afecta la carga: L1292 tiene la celda 2024 vacía; se cargó con actual vacío.",
-  "duda de extraer que no afecta la carga: b38 es un cuadro de movimiento de saldo (saldo inicial y final no son resultado); L1329 dice 4,86 vs 4,89 en L351, diferencia de céntimos."
+  "duda de extraer que no afecta la carga: b38 es un cuadro de movimiento de saldo (saldo inicial y final no son resultado); L1329 dice 4,86 vs 4,89 en L351, diferencia de céntimos.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -76,12 +127,12 @@
  "totales": {
   "ingresos": 11.373892,
   "gastos": 17.156387,
-  "financiero": 0.317495,
+  "financiero": -0.085703,
   "impuesto": 0,
   "resultadoImpreso": -5.863188,
   "resultadoParaCargar": -5.863188,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -429,27 +480,11 @@
    "origen": "nota que desglosa \"Gastos com o pessoal\""
   },
   {
-   "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
-   "lado": "gasto",
-   "M": 0.000005,
-   "pagina": 14,
-   "linea": 351,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Provisões (aumentos/reduções)",
    "lado": "gasto",
    "M": 0.692048,
    "pagina": 14,
    "linea": 352,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
-   "lado": "gasto",
-   "M": 0.0025,
-   "pagina": 14,
-   "linea": 353,
    "origen": "estado"
   },
   {
@@ -523,6 +558,22 @@
    "pagina": 38,
    "linea": 1389,
    "origen": "nota que desglosa \"Gastos / reversões de depreciação e de amortização\""
+  },
+  {
+   "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": "gasto",
+   "M": 0.000005,
+   "pagina": 14,
+   "linea": 351,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
+   "lado": "gasto",
+   "M": 0.0025,
+   "pagina": 14,
+   "linea": 353,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
@@ -537,9 +588,15 @@
   },
   {
    "etiqueta": "Juros e gastos similares suportados",
-   "M": 0.201599,
+   "M": -0.201599,
    "linea": 360
   }
  ],
- "impuesto": []
+ "impuesto": [],
+ "confirmadosPorSumas": [
+  {
+   "linea": 352,
+   "numero": "692 047,70"
+  }
+ ]
 }

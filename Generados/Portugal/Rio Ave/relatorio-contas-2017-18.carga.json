@@ -1,10 +1,18 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2017-18.pdf",
- "generado": "2026-10-15T12:51:12.782Z",
+ "generado": "2026-10-15T13:19:55.131Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (rioave-pt)"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "rioave-pt ya tiene el ejercicio 2018 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['rioave-pt-relatorio-contas-2017-18'] ya existe"
   }
  ],
  "avisos": [
@@ -536,7 +544,7 @@
     "_pag": 34,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía no_es_rubro)"
    },
    {
     "rawLabel": "Ativos fixos tangíveis",
@@ -1414,10 +1422,8 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto (categorias.json decía no_es_rubro)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): 0,17 € dentro de 'Outros gastos' (nota 21): se respeta cómo lo presenta el estado, como Rio Ave 2016-17; sacarla rompería la suma de la nota [relatorio-contas-2017-18.md L1289]",
    "destino": "expense",
    "amountNative": 0
   },
@@ -1514,8 +1520,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2017–18 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Rio Ave\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1555,13 +1561,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2017–18 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Rio Ave\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 1,
+  "motivos": 3,
   "lineasIngreso": 15,
   "lineasGasto": 39,
   "metaFilas": 2,

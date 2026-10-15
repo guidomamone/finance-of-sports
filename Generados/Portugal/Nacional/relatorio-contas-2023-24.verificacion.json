@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.md",
- "generado": "2026-10-15T12:42:56.511Z",
+ "generado": "2026-10-15T13:14:09.489Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "nacional-pt",
  "year": 2024,
  "escala": {
   "valor": "unidades",
@@ -11,7 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf",
+   "campo": "categoria",
+   "valor": "exceptional_items",
+   "linea": null,
+   "etiqueta": "Correções relativas a períodos anteriores",
+   "motivo": "Claude 2026-10-15 (lote 76): corrección de ejercicios anteriores; el ingreso (229.792, L793) y el gasto (16.971, L908) a exceptional_items, como el ingreso extraordinario de CONVENCIONES-DATOS. El ajuste muda el ingreso de lado sin cambiar su efecto; la respuesta de la cola lo cambiaba de signo (to-do 237 f)",
+   "evidencia": "relatorio-contas-2023-24.md L793, L908",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -33,7 +45,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",

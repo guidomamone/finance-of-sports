@@ -1,14 +1,18 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/Relatorio_SDUQ_2022-2023.pdf",
- "generado": "2026-10-15T12:51:12.453Z",
+ "generado": "2026-10-15T13:19:54.890Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (rioave-pt)"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
   },
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Mecanismo de Solidariedade\" -> other_income 0; \"Comissões\" -> other_expenses 0.55"
+   "etapa": "año",
+   "motivo": "rioave-pt ya tiene el ejercicio 2023 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['rioave-pt-relatorio-sduq-2022-2023'] ya existe"
   }
  ],
  "avisos": [
@@ -122,13 +126,13 @@
    },
    {
     "rawLabel": "Mecanismo de Solidariedade",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "player_sales",
     "amountNative": 0.044466,
     "disclosureLevel": "aggregated",
     "_pag": 33,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Outros",
@@ -198,9 +202,9 @@
     "amountNative": -0.180161,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Conservação e reparação",
@@ -738,13 +742,11 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 0.044466,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "revenue",
    "amountNative": 0.044466
   },
@@ -847,11 +849,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.180161,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): comisiones, como 2018 [Relatorio_SDUQ_2022-2023.md L1038]",
    "destino": "expense",
    "amountNative": -0.180161
   },
@@ -1413,8 +1415,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2022–23 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Rio Ave\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1454,13 +1456,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2022–23 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Rio Ave\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 3,
   "lineasIngreso": 13,
   "lineasGasto": 38,
   "metaFilas": 1,

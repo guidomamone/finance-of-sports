@@ -1,10 +1,18 @@
 {
  "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2021-22.pdf",
- "generado": "2026-10-15T12:51:11.559Z",
+ "generado": "2026-10-15T13:19:53.935Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (alverca-pt)"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "alverca-pt ya tiene el ejercicio 2022 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['alverca-pt-relatorio-contas-2021-22'] ya existe"
   }
  ],
  "avisos": [],
@@ -339,8 +347,8 @@
  },
  "liga": {
   "valor": null,
-  "fuente": "no aparece en los rosters cacheados de 2022 (pt-primeiraliga, pt-ligaportugal2): puede haber jugado otra división",
-  "estado": "pendiente",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe",
   "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
  },
  "procedencia": {
@@ -387,7 +395,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 1,
+  "motivos": 3,
   "lineasIngreso": 3,
   "lineasGasto": 5,
   "metaFilas": 2,

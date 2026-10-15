@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.pdf",
  "md": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.md",
- "generado": "2026-10-15T12:42:56.466Z",
- "estado": "cola",
+ "generado": "2026-10-15T13:14:09.457Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2022,
  "escala": {
@@ -11,12 +11,20 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "8949b02",
-  "e007d6f",
-  "7929a06"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Outros rendimentos",
+   "motivo": "Claude 2026-10-15 (lote 76): la nota 25 dice que el saldo 'reflete, essencialmente, a mais-valia na alienação dos direitos desportivos e económicos de três jogadores' (L1317); el único otro concepto nombrado es un subsidio de 1.204 € (L1315). Formato SNC (to-do 237 h)",
+   "evidencia": "relatorio-contas-2021-22.md L537, L1315-1317",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",

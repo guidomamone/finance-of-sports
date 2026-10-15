@@ -1,26 +1,23 @@
 {
  "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf",
- "generado": "2026-10-15T12:51:12.378Z",
+ "generado": "2026-10-15T13:19:54.827Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (nacional-pt)"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
   },
   {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 2.900823 + gastos -4.491194 + netInterest -0.003882 + tax 0.162097 = -1.432156 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -0.972572)"
+   "etapa": "año",
+   "motivo": "nacional-pt ya tiene el ejercicio 2024 cargado"
   },
   {
-   "etapa": "tie-out",
-   "motivo": "ingresos: las filas suman 2.900823 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -4.244431 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
+   "etapa": "fuente",
+   "motivo": "sources['nacional-pt-relatorio-contas-2023-24'] ya existe"
   }
  ],
  "avisos": [
-  "1 fila(s) con categoría de un lado y el documento del otro: \"Correções relativas a períodos anteriore\" -> exceptional_items"
+  "ingresos: ningún total impreso igual a la suma de las líneas (2.900823); queda la suma, verificada por el resultado del ejercicio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-4.244431); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "nacional-pt",
@@ -146,19 +143,19 @@
     "_pag": 21,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    }
   ],
   "expenseLines": [
    {
     "rawLabel": "Correções relativas a períodos anteriores",
     "normalizedCategory": "exceptional_items",
-    "amountNative": -0.229792,
+    "amountNative": 0.229792,
     "disclosureLevel": "aggregated",
     "_pag": 21,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): corrección de ejercicios anteriores; el ingreso (229.792, L793) y el gasto (16.971, L908) a exceptional_items, como el ingreso extraordinario de CONVENCIONES-DATOS. El ajuste muda el ingreso de lado sin cambiar su efecto; la respuesta de la cola lo cambiaba de signo (to-do 237 f)"
    },
    {
     "rawLabel": "Trabalhos especializados",
@@ -458,7 +455,7 @@
     "_pag": 24,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía no_es_rubro)"
    },
    {
     "rawLabel": "Correções relativas a períodos anteriores",
@@ -468,7 +465,7 @@
     "_pag": 24,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): corrección de ejercicios anteriores; el ingreso (229.792, L793) y el gasto (16.971, L908) a exceptional_items, como el ingreso extraordinario de CONVENCIONES-DATOS. El ajuste muda el ingreso de lado sin cambiar su efecto; la respuesta de la cola lo cambiaba de signo (to-do 237 f)"
    },
    {
     "rawLabel": "Quotizações",
@@ -531,16 +528,26 @@
    "assetSales": 0,
    "netInterest": -0.003882,
    "tax": 0.162097,
+   "extraRows": [
+    {
+     "label": "Juros e gastos similares suportados",
+     "value": -0.003882
+    },
+    {
+     "label": "Imposto sobre rendimento do período",
+     "value": 0.162097
+    }
+   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalRevenue": 2.900823,
+   "officialTotalExpenses": 4.244431,
+   "officialPAT": -0.972572
   },
   "source": {
    "id": "nacional-pt-relatorio-contas-2023-24",
    "clubId": "nacional-pt",
-   "title": "Clube Desportivo Nacional, SAD — relatorio-contas-2023-24 (ejercicio 2024)",
+   "title": "Clube Desportivo Nacional, Futebol SAD — relatorio-contas-2023-24 (ejercicio 2024)",
    "type": "official_balance_sheet",
    "reliability": "primary",
    "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Nacional/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
@@ -558,7 +565,19 @@
  },
  "clubId": "nacional-pt",
  "year": 2024,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf",
+   "campo": "categoria",
+   "valor": "exceptional_items",
+   "linea": null,
+   "etiqueta": "Correções relativas a períodos anteriores",
+   "motivo": "Claude 2026-10-15 (lote 76): corrección de ejercicios anteriores; el ingreso (229.792, L793) y el gasto (16.971, L908) a exceptional_items, como el ingreso extraordinario de CONVENCIONES-DATOS. El ajuste muda el ingreso de lado sin cambiar su efecto; la respuesta de la cola lo cambiaba de signo (to-do 237 f)",
+   "evidencia": "relatorio-contas-2023-24.md L793, L908",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
  "seleccion": {
   "filas": 51,
   "notasUsadas": [],
@@ -708,19 +727,17 @@
    "label": "Correções relativas a períodos anteriores",
    "page": 21,
    "native": 0.229792,
-   "ladoDoc": "revenue",
+   "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
-   "signoFijo": 0.229792,
+   "signoFijo": -0.229792,
    "cat": "exceptional_items",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): corrección de ejercicios anteriores; el ingreso (229.792, L793) y el gasto (16.971, L908) a exceptional_items, como el ingreso extraordinario de CONVENCIONES-DATOS. El ajuste muda el ingreso de lado sin cambiar su efecto; la respuesta de la cola lo cambiaba de signo (to-do 237 f)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media-alta; revisado por Claude): corrección de ejercicios anteriores, ingreso: el ingreso extraordinario va a exceptional_items (CONVENCIONES-DATOS) [relatorio-contas-2023-24.md L793]",
+   "ladoRechazado": false,
    "destino": "expense",
-   "ladoContradictorio": true,
-   "amountNative": -0.229792
+   "amountNative": 0.229792
   },
   {
    "label": "Excesso da estimativa para impostos",
@@ -763,10 +780,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): residual de ingresos [relatorio-contas-2023-24.md L798]",
    "destino": "revenue",
    "amountNative": 0.037125
   },
@@ -1223,10 +1238,8 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía no_es_rubro)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): la SAD lo imputa a Outros gastos (total 81.732) y así lo presenta el estado [relatorio-contas-2023-24.md L905]",
    "destino": "expense",
    "amountNative": -0.01081
   },
@@ -1240,9 +1253,9 @@
    "cat": "exceptional_items",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): corrección de ejercicios anteriores; el ingreso (229.792, L793) y el gasto (16.971, L908) a exceptional_items, como el ingreso extraordinario de CONVENCIONES-DATOS. El ajuste muda el ingreso de lado sin cambiar su efecto; la respuesta de la cola lo cambiaba de signo (to-do 237 f)",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): corrección de ejercicios anteriores, gasto; precedente Vitória Guimarães [relatorio-contas-2023-24.md L908]",
+   "ladoRechazado": false,
    "destino": "expense",
    "amountNative": -0.016971
   },
@@ -1359,20 +1372,30 @@
    "verificacion (nota que desglosa \"Outros gastos\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
   "revSum": 2.900823,
   "expSum": -4.244431,
-  "officialTotalRevenue": null,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
-  "verificacion": {}
+  "officialTotalRevenue": 2.900823,
+  "officialTotalExpenses": 4.244431,
+  "officialPAT": -0.972572,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "por-resultado",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.972572,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  }
  },
  "liga": {
   "valor": "pt-ligaportugal2",
-  "fuente": "roster cacheado de \"2023–24 Liga Portugal 2\" (tools/club-league-reference/pt.json), coincidencia exacta \"Nacional\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1412,13 +1435,13 @@
   },
   "liga": {
    "valor": "pt-ligaportugal2",
-   "fuente": "roster cacheado de \"2023–24 Liga Portugal 2\" (tools/club-league-reference/pt.json), coincidencia exacta \"Nacional\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 3,
   "lineasIngreso": 12,
   "lineasGasto": 37,
   "metaFilas": 2,

@@ -1,115 +1,19 @@
 {
  "md": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.md",
- "generatedAt": "2026-10-15T06:31:24.168Z",
- "rubrosHuella": "2a73bbc4b10b925e0baa6e284c0d8f5b1075f2a5",
+ "generatedAt": "2026-10-15T13:19:46.585Z",
+ "rubrosHuella": "fe13d38159a95c04683a3944c145203ed7a83b01",
  "rubros": [
-  {
-   "label": "Deslocações e Estadas",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "choice": "match_organisation_expense",
-   "confidence": 0.9,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.91
-    ],
-    [
-     "admin_general_expense",
-     0.07
-    ],
-    [
-     "other_expenses",
-     0.02
-    ]
-   ],
-   "tokens": 948
-  },
-  {
-   "label": "Gastos com o pessoal",
-   "lado": "expense",
-   "page": 10,
-   "section": "estado",
-   "choice": "wages_squad",
-   "confidence": 0.63,
-   "desdeCache": true
-  },
-  {
-   "label": "Outros gastos",
-   "lado": "expense",
-   "page": 10,
-   "section": "estado",
-   "choice": "other_expenses",
-   "confidence": 1,
-   "desdeCache": true
-  },
-  {
-   "label": "Gastos/reversões de depreciação e de amortização",
-   "lado": "expense",
-   "page": 10,
-   "section": "estado",
-   "choice": "depreciation",
-   "confidence": 0.89,
-   "desdeCache": true
-  },
-  {
-   "label": "Materiais",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "choice": "admin_general_expense",
-   "confidence": 0.97,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.97
-    ],
-    [
-     "other_expenses",
-     0.03
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1001
-  },
-  {
-   "label": "Energia e Fluidos",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "choice": "admin_general_expense",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.99
-    ],
-    [
-     "other_expenses",
-     0.01
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1045
-  },
   {
    "label": "Vendas e serviços prestados",
    "lado": "revenue",
    "page": 10,
    "section": "estado",
    "choice": "lump_football_operations",
-   "confidence": 0.91,
+   "confidence": 0.92,
    "top3": [
     [
      "lump_football_operations",
-     0.92
+     0.93
     ],
     [
      "sponsorship_commercial",
@@ -117,36 +21,13 @@
     ],
     [
      "other_income",
-     0.03
-    ]
-   ],
-   "tokens": 1057
-  },
-  {
-   "label": "Outros rendimentos",
-   "lado": "revenue",
-   "page": 10,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "other_income",
-     0.99
-    ],
-    [
-     "lump_football_operations",
      0.01
-    ],
-    [
-     "member_dues",
-     0
     ]
    ],
-   "tokens": 1007
+   "tokens": 1040
   },
   {
-   "label": "Serviços Especializados",
+   "label": "Energia e Fluidos",
    "lado": "expense",
    "page": 24,
    "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
@@ -166,30 +47,53 @@
      0
     ]
    ],
-   "tokens": 1010
+   "tokens": 1048
   },
   {
-   "label": "Serviços Diversos",
+   "label": "Outros rendimentos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Deslocações e Estadas",
    "lado": "expense",
    "page": 24,
    "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "choice": "other_expenses",
-   "confidence": 0.72,
+   "choice": "match_organisation_expense",
+   "confidence": 1,
    "top3": [
     [
-     "other_expenses",
-     0.74
-    ],
-    [
-     "admin_general_expense",
-     0.26
+     "match_organisation_expense",
+     1
     ],
     [
      "wages_squad",
      0
+    ],
+    [
+     "player_amortisation",
+     0
     ]
    ],
-   "tokens": 1005
+   "tokens": 1042
   },
   {
    "label": "Subsídios à exploração",
@@ -212,7 +116,145 @@
      0
     ]
    ],
-   "tokens": 1073
+   "tokens": 1062
+  },
+  {
+   "label": "Serviços Especializados",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Serviços Diversos",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Materiais",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9400000000000001
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "depreciation",
+     0.87
+    ],
+    [
+     "player_amortisation",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "wages_squad",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Outros gastos",
+   "lado": "expense",
+   "page": 10,
+   "section": "ajuste manual",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1008
   }
  ]
 }

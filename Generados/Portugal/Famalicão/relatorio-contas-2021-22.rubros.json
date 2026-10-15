@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.pdf",
   "club": "famalicao",
   "year": 2022,
-  "generatedAt": "2026-10-15T12:42:56.467Z",
+  "generatedAt": "2026-10-15T13:14:09.457Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.17565
       ],
-      "glosa": "Venta de entradas"
+      "glosa": "Taquilla"
     },
     {
       "label": "Competições",
@@ -144,7 +144,7 @@
       "values": [
         0.125474
       ],
-      "glosa": "Energía y fluidos"
+      "glosa": "Energía y suministros"
     },
     {
       "label": "Deslocações, estadas e transportes",
@@ -164,7 +164,7 @@
       "values": [
         0.521427
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Limpeza, Higiene e conforto",
@@ -174,7 +174,7 @@
       "values": [
         0.035165
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Outros",
@@ -194,7 +194,7 @@
       "values": [
         10.029738
       ],
-      "glosa": "Remuneraciones del personal"
+      "glosa": "Sueldos y salarios"
     },
     {
       "label": "Indemnizações",
@@ -214,7 +214,7 @@
       "values": [
         0.831429
       ],
-      "glosa": "Cargas sobre remuneraciones"
+      "glosa": "Cargas sociales"
     },
     {
       "label": "Seguros",
@@ -224,7 +224,7 @@
       "values": [
         1.120376
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Gastos de ação social",
@@ -254,7 +254,7 @@
       "values": [
         0.00041
       ],
-      "glosa": "Deterioro de créditos por cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -274,7 +274,7 @@
       "values": [
         0.006895
       ],
-      "glosa": "Impuestos"
+      "glosa": "Tributos"
     },
     {
       "label": "Descontos de pronto pagamento concedidos",
@@ -314,7 +314,7 @@
       "values": [
         1.23441
       ],
-      "glosa": "Gastos/reversiones de amortización y depreciación"
+      "glosa": "Dotaciones y reversiones por amortización"
     }
   ]
 }

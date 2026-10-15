@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.md",
   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
-  "club": "alverca",
+  "club": "alverca-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T12:42:56.444Z",
+  "generatedAt": "2026-10-15T13:14:09.388Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         0.069051
       ],
-      "glosa": "Ventas y prestación de servicios"
+      "glosa": "Ventas y prestaciones de servicios"
     },
     {
       "label": "Subsídios à exploração",
@@ -30,9 +30,9 @@
       "label": "Outros rendimentos",
       "lado": "revenue",
       "page": 10,
-      "section": "estado",
+      "section": "ajuste manual",
       "values": [
-        0.522592
+        0.622592
       ],
       "glosa": "Otros ingresos"
     },
@@ -97,16 +97,6 @@
       "glosa": "Gastos de personal"
     },
     {
-      "label": "Outros gastos",
-      "lado": "expense",
-      "page": 10,
-      "section": "estado",
-      "values": [
-        0.247029
-      ],
-      "glosa": "Otros gastos"
-    },
-    {
       "label": "Gastos/reversões de depreciação e de amortização",
       "lado": "expense",
       "page": 10,
@@ -114,7 +104,17 @@
       "values": [
         0.019459
       ],
-      "glosa": "Gastos/reversiones de depreciación y amortización"
+      "glosa": "Gastos/reversiones de amortización y depreciación"
+    },
+    {
+      "label": "Outros gastos",
+      "lado": "expense",
+      "page": 10,
+      "section": "ajuste manual",
+      "values": [
+        0.347029
+      ],
+      "glosa": "Otros gastos"
     }
   ]
 }

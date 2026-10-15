@@ -1,14 +1,18 @@
 {
  "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf",
- "generado": "2026-10-15T12:51:11.704Z",
+ "generado": "2026-10-15T13:19:54.113Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (alverca-pt)"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
   },
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Gastos com o pessoal\" -> wages_squad 0.75"
+   "etapa": "año",
+   "motivo": "alverca-pt ya tiene el ejercicio 2023 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['alverca-pt-relatorio-contas-2022-23'] ya existe"
   }
  ],
  "avisos": [],
@@ -66,9 +70,9 @@
     "amountNative": -2.57562,
     "disclosureLevel": "aggregated",
     "_pag": 2,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos",
@@ -232,11 +236,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 2.57562,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (lote 76): único renglón de personal del estado condensado de la SAD ('Gastos com o pessoal (2.575.619,76)', relatorio-contas-2022-23.md L97); misma categoría que 2022 ('Gastos com pessoal' wages_squad), el estado no separa plantel de administración",
    "destino": "expense",
    "amountNative": -2.57562
   },
@@ -330,8 +334,8 @@
  },
  "liga": {
   "valor": null,
-  "fuente": "no aparece en los rosters cacheados de 2023 (pt-primeiraliga, pt-ligaportugal2): puede haber jugado otra división",
-  "estado": "pendiente",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe",
   "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
  },
  "procedencia": {
@@ -378,7 +382,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 3,
   "lineasIngreso": 3,
   "lineasGasto": 4,
   "metaFilas": 2,

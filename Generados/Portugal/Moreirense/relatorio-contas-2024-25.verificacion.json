@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
  "md": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.md",
- "generado": "2026-10-15T12:42:56.495Z",
+ "generado": "2026-10-15T13:14:09.486Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "moreirense-pt",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -11,7 +11,66 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
+   "campo": "incluye",
+   "valor": "matchday_competition",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "Claude 2026-10-15 (lote 76): la nota de réditos solo abre 'Direitos Televisivos' y 'Outros' dentro de 'Prestação de serviços'; no hay línea de bilheteira, que muy probablemente está en 'Outros'. No se paga un reintento: el documento no trae ese desglose",
+   "evidencia": "relatorio-contas-2024-25.md L1010",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
+   "campo": "incluye",
+   "valor": "season_tickets",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "Claude 2026-10-15 (lote 76): como matchday_competition, los ingresos del estadio no se desglosan y quedan en 'Prestação de serviços: Outros'",
+   "evidencia": "relatorio-contas-2024-25.md L1010",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
+   "campo": "incluye",
+   "valor": "stadium_other",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "Claude 2026-10-15 (lote 76): como matchday_competition, los ingresos del estadio no se desglosan y quedan en 'Prestação de serviços: Outros'",
+   "evidencia": "relatorio-contas-2024-25.md L1010",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Rendimentos em investimentos não financeiros",
+   "motivo": "Claude 2026-10-15 (lote 76): la nota de Outros rendimentos dice que el renglón es la venta de derechos de jugadores (L1423 y L1430 'Inclui 5.682.412 euros relativos à alienação de direitos desportivos de jogadores e 2.320.000 euros relativos a ganhos com direitos desportivos'); se había cargado como other_income",
+   "evidencia": "relatorio-contas-2024-25.md L1423",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Rendimentos em investimentos não financeiros*",
+   "motivo": "Claude 2026-10-15 (lote 76): la nota dice 'Inclui 5.682.412 euros relativos à alienação de direitos desportivos de jogadores e 2.320.000 euros relativos a ganhos com direitos desportivos' (L1430); la etiqueta lleva el asterisco de la nota",
+   "evidencia": "relatorio-contas-2024-25.md L1423, L1430",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -38,7 +97,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [

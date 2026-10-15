@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2015-16.pdf",
  "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2015-16.md",
- "generado": "2026-10-15T12:42:56.547Z",
+ "generado": "2026-10-15T13:14:09.498Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "rioave-pt",
  "year": 2016,
  "escala": {
   "valor": "unidades",
@@ -25,11 +25,7 @@
  ],
  "cola": [
   "d8dc82f",
-  "8a2d73d",
-  "b31f0a6",
-  "6e11b07",
-  "83796b0",
-  "1e96549"
+  "8a2d73d"
  ],
  "chequeos": [
   {
@@ -61,7 +57,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2015: este chequeo no se puede hacer"
   }
  ],
  "notas": [

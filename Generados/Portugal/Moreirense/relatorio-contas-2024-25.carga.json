@@ -1,14 +1,18 @@
 {
  "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
- "generado": "2026-10-15T12:51:12.282Z",
+ "generado": "2026-10-15T13:19:54.748Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (moreirense-pt)"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
   },
   {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+   "etapa": "año",
+   "motivo": "moreirense-pt ya tiene el ejercicio 2025 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['moreirense-pt-relatorio-contas-2024-25'] ya existe"
   }
  ],
  "avisos": [],
@@ -46,7 +50,7 @@
     "_pag": 23,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Federação Portuguesa Futebol",
@@ -90,13 +94,13 @@
    },
    {
     "rawLabel": "Rendimentos em investimentos não financeiros",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "player_sales",
     "amountNative": 8.002412,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): la nota dice 'Inclui 5.682.412 euros relativos à alienação de direitos desportivos de jogadores e 2.320.000 euros relativos a ganhos com direitos desportivos' (L1430); la etiqueta lleva el asterisco de la nota"
    },
    {
     "rawLabel": "Outros",
@@ -106,7 +110,7 @@
     "_pag": 29,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
    }
   ],
   "expenseLines": [
@@ -381,6 +385,20 @@
    "assetSales": 0,
    "netInterest": 0,
    "tax": -0.350186,
+   "incluidoEn": {
+    "matchday_competition": {
+     "en": "other_income",
+     "posible": true
+    },
+    "season_tickets": {
+     "en": "other_income",
+     "posible": true
+    },
+    "stadium_other": {
+     "en": "other_income",
+     "posible": true
+    }
+   },
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 14.571504,
@@ -412,7 +430,66 @@
  },
  "clubId": "moreirense-pt",
  "year": 2025,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
+   "campo": "incluye",
+   "valor": "matchday_competition",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "Claude 2026-10-15 (lote 76): la nota de réditos solo abre 'Direitos Televisivos' y 'Outros' dentro de 'Prestação de serviços'; no hay línea de bilheteira, que muy probablemente está en 'Outros'. No se paga un reintento: el documento no trae ese desglose",
+   "evidencia": "relatorio-contas-2024-25.md L1010",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
+   "campo": "incluye",
+   "valor": "season_tickets",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "Claude 2026-10-15 (lote 76): como matchday_competition, los ingresos del estadio no se desglosan y quedan en 'Prestação de serviços: Outros'",
+   "evidencia": "relatorio-contas-2024-25.md L1010",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
+   "campo": "incluye",
+   "valor": "stadium_other",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "Claude 2026-10-15 (lote 76): como matchday_competition, los ingresos del estadio no se desglosan y quedan en 'Prestação de serviços: Outros'",
+   "evidencia": "relatorio-contas-2024-25.md L1010",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Rendimentos em investimentos não financeiros",
+   "motivo": "Claude 2026-10-15 (lote 76): la nota de Outros rendimentos dice que el renglón es la venta de derechos de jugadores (L1423 y L1430 'Inclui 5.682.412 euros relativos à alienação de direitos desportivos de jogadores e 2.320.000 euros relativos a ganhos com direitos desportivos'); se había cargado como other_income",
+   "evidencia": "relatorio-contas-2024-25.md L1423",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Rendimentos em investimentos não financeiros*",
+   "motivo": "Claude 2026-10-15 (lote 76): la nota dice 'Inclui 5.682.412 euros relativos à alienação de direitos desportivos de jogadores e 2.320.000 euros relativos a ganhos com direitos desportivos' (L1430); la etiqueta lleva el asterisco de la nota",
+   "evidencia": "relatorio-contas-2024-25.md L1423, L1430",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
  "seleccion": {
   "filas": 36,
   "notasUsadas": [],
@@ -460,10 +537,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): prestación de servicios 'Outros', sin desglose [relatorio-contas-2024-25.md L1012]",
    "destino": "revenue",
    "amountNative": 1.434865
   },
@@ -536,11 +611,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 8.002412,
-   "cat": "other_income",
+   "cat": "player_sales",
    "conf": 1,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): la nota dice 'Inclui 5.682.412 euros relativos à alienação de direitos desportivos de jogadores e 2.320.000 euros relativos a ganhos com direitos desportivos' (L1430); la etiqueta lleva el asterisco de la nota",
    "enLista": true,
+   "ladoRechazado": false,
    "destino": "revenue",
    "amountNative": 8.002412
   },
@@ -554,10 +630,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): prestación de servicios 'Outros', sin desglose [relatorio-contas-2024-25.md L1012]",
    "destino": "revenue",
    "amountNative": 0.528485
   },
@@ -972,12 +1046,6 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
@@ -1025,8 +1093,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2024–25 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Moreirense\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1066,13 +1134,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2024–25 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Moreirense\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 3,
   "lineasIngreso": 9,
   "lineasGasto": 26,
   "metaFilas": 1,

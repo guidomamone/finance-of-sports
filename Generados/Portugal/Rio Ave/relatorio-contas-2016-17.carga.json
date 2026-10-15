@@ -1,14 +1,18 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.pdf",
- "generado": "2026-10-15T12:51:12.667Z",
+ "generado": "2026-10-15T13:19:55.045Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (rioave-pt)"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
   },
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Comissões\" -> other_expenses 0.55; \"Quotizações/inacrições\" -> admin_general_expense 0.55"
+   "etapa": "año",
+   "motivo": "rioave-pt ya tiene el ejercicio 2017 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['rioave-pt-relatorio-contas-2016-17'] ya existe"
   }
  ],
  "avisos": [
@@ -198,9 +202,9 @@
     "amountNative": -8.72277,
     "disclosureLevel": "aggregated",
     "_pag": 34,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Conservação e reparação",
@@ -444,13 +448,13 @@
    },
    {
     "rawLabel": "Quotizações/inacrições",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "match_organisation_expense",
     "amountNative": -0.095207,
     "disclosureLevel": "aggregated",
     "_pag": 36,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Impostos",
@@ -490,7 +494,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía no_es_rubro)"
    },
    {
     "rawLabel": "Edifícios e outras construções",
@@ -893,11 +897,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 8.72277,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): 'Comissões 8 722 769,78' es una fila de la nota 17 FSE (total 10 073 012,63), no un subtotal; el año de ventas récord (Venda de Direitos Desportivos 20 990 675,25): comisiones de intermediarios [relatorio-contas-2016-17.md L1294, L1312, L1386]",
    "destino": "expense",
    "amountNative": -8.72277
   },
@@ -1278,12 +1282,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.095207,
-   "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta; revisado por Claude): cuotas e inscripciones a Liga/FPF, como Rio Ave 2018 [relatorio-contas-2016-17.md L1396]",
    "destino": "expense",
    "amountNative": -0.095207
   },
@@ -1342,10 +1346,8 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto (categorias.json decía no_es_rubro)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): 0,17 € dentro de 'Outros gastos' (nota 21): se respeta cómo lo presenta el estado, como Rio Ave 2016-17; sacarla rompería la suma de la nota [relatorio-contas-2017-18.md L1289]",
    "destino": "expense",
    "amountNative": -0.088813
   },
@@ -1522,8 +1524,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2016–17 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Rio Ave\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1563,13 +1565,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2016–17 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Rio Ave\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 3,
   "lineasIngreso": 13,
   "lineasGasto": 41,
   "metaFilas": 2,

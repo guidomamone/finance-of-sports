@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Moreirense/relatorio-contas-2021-22.md",
   "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2021-22.pdf",
-  "club": "moreirense",
+  "club": "moreirense-pt",
   "year": 2022,
-  "generatedAt": "2026-10-15T12:42:56.470Z",
+  "generatedAt": "2026-10-15T13:14:09.475Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -64,7 +64,7 @@
       "values": [
         4.10405
       ],
-      "glosa": "Ingresos de inversiones no financieras"
+      "glosa": "Rendimientos de inversiones no financieras"
     },
     {
       "label": "Outros",
@@ -124,7 +124,7 @@
       "values": [
         0.079031
       ],
-      "glosa": "6226 Conservación y reparación"
+      "glosa": "6226 Reparaciones y conservación"
     },
     {
       "label": "6231 Ferramentas e utensílios de desgaste rápido",
@@ -134,7 +134,7 @@
       "values": [
         0.014752
       ],
-      "glosa": "6231 Herramientas y utensilios de desgaste rápido"
+      "glosa": "6231 Herramientas y útiles de desgaste rápido"
     },
     {
       "label": "6233 Material de escritório",
@@ -234,7 +234,7 @@
       "values": [
         0.001746
       ],
-      "glosa": "6263 Seguros"
+      "glosa": "6263 Primas de seguros"
     },
     {
       "label": "6265 Contencioso e notariado",
@@ -244,7 +244,7 @@
       "values": [
         0.004648
       ],
-      "glosa": "6265 Contencioso y notariado"
+      "glosa": "6265 Gastos contenciosos y notariales"
     },
     {
       "label": "6267 Limpeza, higiene e conforto",
@@ -294,7 +294,7 @@
       "values": [
         0.274648
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales"
     },
     {
       "label": "Seguros de acidentes de trabalho e doenças profissionais",
@@ -324,7 +324,7 @@
       "values": [
         0
       ],
-      "glosa": "Deterioro de cuentas por cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -354,7 +354,7 @@
       "values": [
         0.000023
       ],
-      "glosa": "Descuentos por pronto pago concedidos"
+      "glosa": "Descuentos sobre ventas por pronto pago"
     },
     {
       "label": "Outros",
@@ -374,7 +374,7 @@
       "values": [
         1.120698
       ],
-      "glosa": "Gastos/reversiones por amortización y depreciación"
+      "glosa": "Gastos/reversiones de amortización y depreciación"
     }
   ]
 }

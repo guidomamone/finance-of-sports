@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.pdf",
  "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.md",
- "generado": "2026-10-15T12:42:56.552Z",
+ "generado": "2026-10-15T13:14:09.503Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "rioave-pt",
  "year": 2017,
  "escala": {
   "valor": "unidades",
@@ -54,12 +54,12 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "el desglose de \"Outros gastos\" (9 filas) no suma la fila: quedó la fila",
-  "duda de extraer ya contestada para el club (perimetro, \"Outros gastos\"): aceptar, en relatorio-contas-2016-17.pdf"
+  "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"Outros gastos\"): aceptar, en relatorio-contas-2016-17.pdf"
  ],
  "reintentar": [
   {

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2018-19.pdf",
  "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2018-19.md",
- "generado": "2026-10-15T12:42:56.585Z",
+ "generado": "2026-10-15T13:14:09.511Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "rioave-pt",
  "year": 2019,
  "escala": {
   "valor": "unidades",
@@ -42,6 +42,11 @@
    "dif": 0.00023599999999657228
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2018 de este documento suma ingresos 7.939189; el sitio tiene 7.939188"
+  },
+  {
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2019: 18.648544 en este documento y 18.648544 en relatorio-contas-2019-20.pdf (columna del año anterior)"
@@ -50,17 +55,12 @@
    "nombre": "documento del año 2018",
    "ok": true,
    "detalle": "ingresos de 2018: 7.939188 en relatorio-contas-2017-18.pdf y 7.939189 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
   }
  ],
  "notas": [
   "la nota de \"Subsídios à Exploração\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "el desglose de \"Outros gastos\" (8 filas) no suma la fila: quedó la fila",
-  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en relatorio-contas-2019-20.pdf",
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2019-20.pdf",
   "duda de extraer que no afecta la carga: En L59 figura 116 positivo y en b28 L906/L907 116 y total 116, mientras en 2018 la nota muestra 1.599 positivo con total -1.599: signos inconsistentes.",
   "duda de extraer que no afecta la carga: b2, b29 y b30 no indican escala; las notas con (Euros) coinciden exactamente con el estado."
  ],

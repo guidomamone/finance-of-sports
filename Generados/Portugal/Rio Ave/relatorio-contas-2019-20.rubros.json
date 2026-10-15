@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2019-20.md",
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2019-20.pdf",
-  "club": "rio-ave",
+  "club": "rioave-pt",
   "year": 2020,
-  "generatedAt": "2026-10-15T12:42:56.602Z",
+  "generatedAt": "2026-10-15T13:14:09.514Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -84,7 +84,7 @@
       "values": [
         0.008
       ],
-      "glosa": "Regalías"
+      "glosa": "Royalties"
     },
     {
       "label": "Participação nas Competições Europeias",
@@ -164,7 +164,7 @@
       "values": [
         0.049384
       ],
-      "glosa": "Subcontratos"
+      "glosa": "Subcontratas"
     },
     {
       "label": "Trabalhos especializados",
@@ -224,7 +224,7 @@
       "values": [
         0.068681
       ],
-      "glosa": "Reparación y conservación"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Outros serviços especializados",
@@ -274,7 +274,7 @@
       "values": [
         0.044242
       ],
-      "glosa": "Medicamentos y artículos de salud"
+      "glosa": "Medicamentos y artículos sanitarios"
     },
     {
       "label": "Outros materiais",
@@ -344,7 +344,7 @@
       "values": [
         0.018529
       ],
-      "glosa": "Comunicaciones"
+      "glosa": "Comunicación"
     },
     {
       "label": "Seguros",
@@ -354,7 +354,7 @@
       "values": [
         0.02381
       ],
-      "glosa": "Primas de seguros"
+      "glosa": "Seguros"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -474,7 +474,7 @@
       "values": [
         0.075
       ],
-      "glosa": "Bajas de inmovilizado"
+      "glosa": "Bajas de activo"
     },
     {
       "label": "Donativos",
@@ -504,7 +504,7 @@
       "values": [
         0.228752
       ],
-      "glosa": "Inmovilizado material"
+      "glosa": "Activos fijos tangibles"
     },
     {
       "label": "Ativos intangíveis",
@@ -514,7 +514,7 @@
       "values": [
         1.238707
       ],
-      "glosa": "Inmovilizado intangible"
+      "glosa": "Activos intangibles"
     }
   ]
 }

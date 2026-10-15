@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.md",
- "generado": "2026-10-15T12:42:56.444Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T13:23:48.555Z",
+ "estado": "ok",
+ "clubId": "alverca-pt",
  "year": 2024,
  "escala": {
   "valor": "unidades",
@@ -11,18 +11,124 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "5fac5c7",
-  "8ba19f6",
-  "17afbb6",
-  "4d16265",
-  "8bb3356",
-  "111c43a",
-  "ddde891",
-  "34a3653",
-  "ca7e690"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 281,
+   "etiqueta": "Outros rendimentos",
+   "lado": "ingreso",
+   "reemplaza": "Outros rendimentos",
+   "motivo": "Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income",
+   "evidencia": "relatorio-contas-2023-24.md L935-L941; estado L281",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
+   "campo": "fila",
+   "valor": "347.028,99",
+   "linea": 282,
+   "etiqueta": "Outros gastos",
+   "lado": "gasto",
+   "reemplaza": "Outros gastos",
+   "motivo": "Claude 2026-10-15 (lote 76, subagente Sonnet, revisado en la imagen): el OCR leyó 247.028,99; el PDF dice (347.028,99), igual al total de la nota 17.2.3 (L933) y a la columna 2024 del documento 2024-25",
+   "evidencia": "pág. 10 del visor, .md L282; nota L927-L933",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
+   "campo": "fila",
+   "valor": "24.153,57",
+   "linea": 935,
+   "etiqueta": "Rendimentos Suplementares",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income",
+   "evidencia": "relatorio-contas-2023-24.md L935-L941; estado L281",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
+   "campo": "fila",
+   "valor": "0,01",
+   "linea": 936,
+   "etiqueta": "Descontos de pronto pagamento obtidos",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income",
+   "evidencia": "relatorio-contas-2023-24.md L935-L941; estado L281",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
+   "campo": "fila",
+   "valor": "581.500,00",
+   "linea": 937,
+   "etiqueta": "Alienações diretas de inscrição desportiva",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income",
+   "evidencia": "relatorio-contas-2023-24.md L935-L941; estado L281",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
+   "campo": "fila",
+   "valor": "4.102,68",
+   "linea": 938,
+   "etiqueta": "Correções relativas a períodos anteriores (rendimentos)",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income",
+   "evidencia": "relatorio-contas-2023-24.md L935-L941; estado L281",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
+   "campo": "fila",
+   "valor": "500,00",
+   "linea": 940,
+   "etiqueta": "Outros rendimentos (nota 17.2.3)",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income",
+   "evidencia": "relatorio-contas-2023-24.md L935-L941; estado L281",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
+   "campo": "fila",
+   "valor": "12.335,39",
+   "linea": 941,
+   "etiqueta": "Outros não especificados",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income",
+   "evidencia": "relatorio-contas-2023-24.md L935-L941; estado L281",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Alienações diretas de inscrição desportiva",
+   "motivo": "Claude 2026-10-15 (lote 76): venta de derechos de inscripción de jugadores (nota 17.2.3, L937); en 2024-25 la misma fila ya va a player_sales",
+   "evidencia": "relatorio-contas-2023-24.md L937",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -38,22 +144,22 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 0.00000942000000092591
+   "dif": 0.000009470000000622036
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 0.825306; el sitio tiene 0.827308"
   },
   {
    "nombre": "documento del año 2025",
-   "ok": false,
-   "detalle": "ingresos de 2024: 0.654874 en este documento y 0.754874 en relatorio-contas-2024-25.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2024: 0.754874 en este documento y 0.754874 en relatorio-contas-2024-25.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 0.827308 en relatorio-contas-2022-23.pdf y 0.825306 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
   }
  ],
  "notas": [
@@ -61,7 +167,14 @@
   "la nota de \"Outros rendimentos\" no suma el renglón (0.622592 contra 0.522592, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Gastos com o pessoal\" no suma el renglón (2.439681 contra 2.437682, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Outros gastos\" no suma el renglón (0.347029 contra 0.247029, sumando sus renglones): quedó el renglón del estado",
-  "línea 282: 247.028,99 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (34702899) el resultado daría -37.686358 y no cierra)",
+  "ajuste manual: sale la fila \"Outros rendimentos\" (2026-10-15, Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income)",
+  "ajuste manual: fila \"Outros gastos\" (gasto) 347.028,99, en lugar de \"Outros gastos\" (2026-10-15, Claude 2026-10-15 (lote 76, subagente Sonnet, revisado en la imagen): el OCR leyó 247.028,99; el PDF dice (347.028,99), igual al total de la nota 17.2.3 (L933) y a la columna 2024 del documento 2024-25)",
+  "ajuste manual: fila \"Rendimentos Suplementares\" (ingreso) 24.153,57 (2026-10-15, Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income)",
+  "ajuste manual: fila \"Descontos de pronto pagamento obtidos\" (ingreso) 0,01 (2026-10-15, Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income)",
+  "ajuste manual: fila \"Alienações diretas de inscrição desportiva\" (ingreso) 581.500,00 (2026-10-15, Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income)",
+  "ajuste manual: fila \"Correções relativas a períodos anteriores (rendimentos)\" (ingreso) 4.102,68 (2026-10-15, Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income)",
+  "ajuste manual: fila \"Outros rendimentos (nota 17.2.3)\" (ingreso) 500,00 (2026-10-15, Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income)",
+  "ajuste manual: fila \"Outros não especificados\" (ingreso) 12.335,39 (2026-10-15, Claude 2026-10-15 (lote 76): 'Outros rendimentos' del estado (622.591,65 tras corregir el OCR de L281) se abre con las filas de la nota 17.2.3 (L935-L941, pág. 28 del visor), que suman exacto; la fila del estado con el OCR corregido no se abría sola y la venta de jugadores (581.500) quedaba en other_income)",
   "línea 284: 19.459,29 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (1946929) el resultado daría -5.157958 y no cierra)"
  ],
  "reintentar": [
@@ -100,8 +213,8 @@
   }
  ],
  "totales": {
-  "ingresos": 0.654874,
-  "gastos": 3.875531,
+  "ingresos": 0.754874,
+  "gastos": 3.975531,
   "financiero": 0,
   "impuesto": -0.00983,
   "resultadoImpreso": -3.230497,
@@ -127,12 +240,52 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Outros rendimentos",
+   "etiqueta": "Rendimentos Suplementares",
    "lado": "ingreso",
-   "M": 0.522592,
-   "pagina": 10,
-   "linea": 281,
-   "origen": "estado"
+   "M": 0.024154,
+   "pagina": 28,
+   "linea": 935,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Descontos de pronto pagamento obtidos",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 28,
+   "linea": 936,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Alienações diretas de inscrição desportiva",
+   "lado": "ingreso",
+   "M": 0.5815,
+   "pagina": 28,
+   "linea": 937,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Correções relativas a períodos anteriores (rendimentos)",
+   "lado": "ingreso",
+   "M": 0.004103,
+   "pagina": 28,
+   "linea": 938,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Outros rendimentos (nota 17.2.3)",
+   "lado": "ingreso",
+   "M": 0.0005,
+   "pagina": 28,
+   "linea": 940,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Outros não especificados",
+   "lado": "ingreso",
+   "M": 0.012335,
+   "pagina": 28,
+   "linea": 941,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Serviços Especializados",
@@ -183,20 +336,20 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Outros gastos",
-   "lado": "gasto",
-   "M": 0.247029,
-   "pagina": 10,
-   "linea": 282,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Gastos/reversões de depreciação e de amortização",
    "lado": "gasto",
    "M": 0.019459,
    "pagina": 10,
    "linea": 284,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros gastos",
+   "lado": "gasto",
+   "M": 0.347029,
+   "pagina": 10,
+   "linea": 282,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
@@ -219,12 +372,20 @@
  ],
  "confirmadosPorSumas": [
   {
-   "linea": 282,
-   "numero": "247.028,99"
+   "linea": 280,
+   "numero": "2.437.682,09"
   },
   {
    "linea": 284,
    "numero": "19.459,29"
+  },
+  {
+   "linea": 808,
+   "numero": "736 232"
+  },
+  {
+   "linea": 812,
+   "numero": "220 087"
   }
  ]
 }

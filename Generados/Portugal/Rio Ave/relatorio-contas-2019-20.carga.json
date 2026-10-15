@@ -1,18 +1,21 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2019-20.pdf",
- "generado": "2026-10-15T12:51:12.975Z",
+ "generado": "2026-10-15T13:19:55.290Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (rioave-pt)"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
   },
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Imparidade de investimentos não depreciá\" -> player_impairment 0.55"
+   "etapa": "año",
+   "motivo": "rioave-pt ya tiene el ejercicio 2020 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['rioave-pt-relatorio-contas-2019-20'] ya existe"
   }
  ],
  "avisos": [
-  "materialidad: \"Outras Comissões\" va como other_expenses con 0.6 (las dudas de gastos suman 0.10% de su lado)",
   "gastos: ningún total impreso igual a la suma de las líneas (-11.142127); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
@@ -229,9 +232,9 @@
     "amountNative": -0.011443,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": "materialidad",
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.10% (≤ 1%) y esta tiene 0.6"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Conservação e reparação",
@@ -445,13 +448,13 @@
    },
    {
     "rawLabel": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
-    "normalizedCategory": "player_impairment",
+    "normalizedCategory": "other_expenses",
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 3,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Quotizações/Inscrições",
@@ -913,11 +916,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Comissões\")",
    "signoFijo": 0.011443,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.10% (≤ 1%) y esta tiene 0.6",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): detalle de Comissões [relatorio-contas-2024-25.md L1495]",
    "destino": "expense",
    "amountNative": -0.011443
   },
@@ -1252,12 +1255,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0,
-   "cat": "player_impairment",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media; revisado por Claude): mismo renglón, importe 0 [relatorio-contas-2019-20.md L84]",
    "destino": "expense",
    "amountNative": 0
   },
@@ -1458,8 +1461,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2019–20 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Rio Ave\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1499,13 +1502,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2019–20 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Rio Ave\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 3,
   "lineasIngreso": 15,
   "lineasGasto": 36,
   "metaFilas": 3,
