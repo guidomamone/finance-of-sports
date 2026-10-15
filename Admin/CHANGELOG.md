@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 696 — Tanda de gestiones de la cola (2026-10-15)
+
+- `tanda-2026-10-14-2` corrida con 10 subagentes y cargada con `tools/gestiones-tanda.mjs`: 12 gestiones confirmadas (Criciúma, Ferroviária,
+  Goiás, Paysandu, Vila Nova, Fortaleza CEIF, Volos), 22 casos de la cola contestados. Barato (Fortaleza CEIF) termina el 2024-12-31 y
+  Freitas (Criciúma) empieza el 2021-01-01, para que ningún cierre tenga dos presidentes. Sin cubrir (a dudas-por-club): CRB 2020, Cuiabá
+  2022-2025, Vila Nova 2014, Ferroviária 2010-2013 y 2023, Goiás 2010-2013 y 2017, OFI 2018.
+
 ## Versión 695 — Mejoras de script del to-do 232, Jev en caja y deuda, dato "personal" (2026-10-14/15)
 
 - Arreglos chicos: `perimetro-senales.mjs` no escribe en carpetas que se publican; `alta-club.mjs --todos` deja en faltan-datos una carpeta

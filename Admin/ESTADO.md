@@ -54,7 +54,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   documentos del mismo cierre, con la compuerta del vecino). `--partir` lo separa de una fila global de gasto como ajustes, y `audit.js`
   avisa `sueldos-escondidos` si `wages_squad` queda por debajo de la mitad. Cargado en Volos y Panetolikos.
 - Gestiones (quién condujo cada club): `tools/gestiones-tanda.mjs` arma la tanda de subagentes desde los casos de la cola, la valida y la
-  carga (contesta los casos cubiertos). Hay una tanda armada sin correr: `Admin/gestiones-por-pais/tanda-2026-10-14-2/`.
+  carga (contesta los casos cubiertos). Los cierres que ni los balances ni la web resuelven están en `Admin/dudas-por-club.md`
+  ("Gestiones sin fecha confirmada") y siguen como casos en la cola.
 - De qué club y año es un PDF, y qué PDF no están cargados: `tools/quien.mjs`. El onboarding viejo (`onboard.mjs`, `prepare-onboarding.mjs`)
   está en `tools/archivo/`.
 - "Posiblemente dentro de otro rubro": una fila en "—" porque el documento no desglosa un renglón la marca `tools/dentro-de-otro.mjs` si el
