@@ -101,3 +101,50 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   2024, PAOK 2023 y 2025, Sandefjord 2010, Novorizontino 2025, OB 2021: Claude señala como estado una línea que no es un título con tabla)
   y 2 de la cola pasan a "consolidado" en FC Groningen, que es individual (error). No entra; salida en
   Admin/mediciones/perimetro-a2-medicion-recorte-232e.txt. El contexto alrededor de los títulos le sirve a Claude para ubicar el estado.
+
+## Conocido, sin daño hoy (no se trabaja salvo que algo cambie)
+
+Defectos medidos que hoy no afectan ningún dato publicado ni frenan nada. Cada uno dice cuándo se retoma; si pasa, vuelve a `Admin/TODO.md`.
+Salieron del TODO el 2026-10-15 (pedido de Guido: hacían ruido en la lista).
+
+- 232 k) Una respuesta "no" de la cola a una duda de importe ("¿se carga X del estado y no Y de la nota?", Olympiacos 2023 caso 446850a)
+  no cambia nada: la verificación siguió con el importe del estado y hubo que agregar un ajuste `fila` a mano. Que esa respuesta
+  aplique sola el importe de la nota (es lo que la pregunta ofrece), con la misma compuerta de cierre.
+  Dónde: las respuestas las lee `verificar.mjs` con `respuestaDe(pdf, 'verificar', motivo, detalle)` (L190, L1360); el caso es
+  `duda-tema` de extraer. El ajuste que se puso a mano: `fila` de Olympiacos 2023 L237 en `Admin/registros/ajustes-manuales.jsonl`.
+  CONOCIDO, SIN DAÑO HOY (Guido, 2026-10-14): en toda la cola, de 17 dudas "¿se carga X y no Y?", 4 contestadas "no" y solo esta es
+  de importe (las otras tres son de qué cuadro cargar); entró con el ajuste. Aplicarla sola pide que la duda traiga los dos importes con
+  su línea en forma estructurada, o sea cambiar el prompt pago de extraer (y su caché). Se retoma si se repite.
+- 232 l) Desglose de un renglón NETO del estado: en Olympiacos el estado NIIF imprime solo "Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών" y
+  la nota lo abre en venta bruta menos costos; extraer marcó los costos como `gasto` y la carga los puso como gasto en 2023 y como
+  ingreso negativo en 2021, 2022, 2024 y 2025 (hubo que fijarlo con ajustes `categoria`). Si el renglón que la nota desglosa es de
+  ingreso, sus filas de costo van como ingreso negativo, siempre.
+  Los ajustes que lo fijaron: `categoria` player_sales en Olympiacos 2021-2025 (`Admin/registros/ajustes-manuales.jsonl`); el
+  criterio es el de la skill `club-data-mapping` sección 3 ("reflejá cómo lo presenta cada club": 2016-2020 el estado imprime bruto).
+  Ojo: el escalón tiene que respetar eso (si el ESTADO imprime ingreso y gasto por separado, quedan separados).
+  CONOCIDO, SIN DAÑO HOY (Guido, 2026-10-14): verificar.mjs ya pone del lado del ingreso las hijas de un renglón de ingreso (1.683 de
+  1.685 en todos los documentos, 67 en negativo) y cargar.mjs pregunta si la categoría contradice ese lado. Única excepción hoy: Ceará
+  2025 "Perdas na venda de ativos" (0,356 M) como gasto bajo "Outras receitas, líquidas" (el neto es el mismo).
+- 232 n) Un ajuste `fila` que suma una fila fuera del total impreso (Kifisia 2025: 60.000 de transferencias, L421) deja el chequeo del total
+  de ingresos en NO en cada corrida. El ajuste tendría que poder decir "fuera del total impreso" para que ese chequeo lo descuente.
+  El ajuste está en `Admin/registros/ajustes-manuales.jsonl` (Kifisia_notes_2025, campo `fila`); el chequeo es el "total de ingresos"
+  de `verificar.mjs`.
+  CONOCIDO, SIN DAÑO HOY (medido el 2026-10-14): de 103 documentos con ajuste `fila` y verificación, 7 tienen un total en NO (Kifisia
+  2025, Aris 2024, Criciúma 2022, Lazio 2007-08, AS Roma 2012 y 2018, Como 2025); ninguno frena (estado ok o año ya cargado). Se
+  retoma si uno frena una carga.
+- 232 o) `alta-club.mjs` no encontró el nombre legal de ninguno de los 6 clubes griegos del lote 71 (puso el de la carpeta): los documentos
+  lo dicen en "Επωνυμία: ..." o en la portada como "ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ <nombre>". Escalón por esas frases, con la cita.
+  Código: `nombreLegal(md, displayName)` en `tools/alta-club.mjs` (L726). Las respuestas correctas para medir están en los ajustes
+  `name` del 2026-10-14 (Olympiacos L484, PAOK L5-7, Aris L137, Atromitos L280, Panetolikos L5, Kifisia L496 de sus .md más nuevos) y
+  en AEK, Asteras, Levadiakos, OFI, Panserraikos y Volos (ajustes `name` anteriores).
+  CONOCIDO, SIN DAÑO HOY (Guido, 2026-10-14): el nombre pendiente no frena el alta y la revisión del alta (subagente) lo resuelve con
+  cita. Pasa con CUALQUIER alfabeto no latino, no solo griego: nombreLegal() busca tokens latinos del displayName y FORMAS solo trae
+  formas latinas (falta ООО / АО / ПАО / 株式会社...). Carpetas afectadas: Ucrania, Bulgaria, Serbia (en parte), Kazajistán, Macedonia
+  del Norte, Armenia, Georgia, Japón, Corea, China y Chipre (Rusia no pasa por alta-club.mjs). Los nombres se transliteran a mano
+  ("Olympiakos Syndesmos Filathlon Peiraios P.A.E."): un escalón por script no daría idéntico.
+- 232 z) "Diferencia de redondeo" DENTRO de una nota se pierde: `verificar.mjs` (L1049) la agrega como hoja sin página y sin categoría, y
+  `cargar.mjs` la deja como "sin categoría" (aviso, no se carga). AEK 2024: tres filas de 1 euro (Κόστος πωλήσεων, Αμοιβές
+  ποδοσφαιρικού, Απομείωση παγίων). Conocido, sin daño hoy (el tie-out tolera la unidad); el redondeo de los TOTALES sí se carga
+  (`cargar.mjs` L774, other_income / other_expenses). Si se arregla: la misma categoría por lado que el de los totales.
+- 165 d) Rusia: las tablas de otros ingresos y gastos que no suman el código del formulario (Krasnodar, Krylia 2021-2025, Rostov 2025, Rubin
+  2022-2025: la nota en bruto, el formulario en neto). Sin daño hoy: esos años quedan con el renglón entero.
