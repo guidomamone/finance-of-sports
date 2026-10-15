@@ -38,15 +38,18 @@ const HOY = new Date().toISOString().slice(0, 10);
 const { cargarSitio, snapshot, revertir, publicarCambios } = await import('./cargar.mjs');
 
 const cubre = (gs, cierre) => (gs || []).some((g) => g.confirmada && ((g.desde && g.desde <= cierre && (!g.hasta || g.hasta >= cierre)) || (g.firmo || []).includes(Number(cierre.slice(0, 4)))));
+// El club de un caso de gestión: cargar.mjs escribe el detalle como "<clubId>" el primer caso del club y "<clubId>:<año>" los siguientes
+// (L957, cuando ya hubo una respuesta). Sin esto la tanda no encontraba el club de esos casos y los dejaba como estaban (to-do 236 b).
+const clubDeCaso = (c) => String(c.detalle || '').split(':')[0];
 const cierreDe = (c) => (String(c.que || '').match(/\(cierre (\d{4}-\d{2}-\d{2})\)/) || [])[1] || null;
 const responder = (id, decision, nota) => appendFileSync(COLA, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision, nota }) + '\n');
 
 function armar() {
   const sitio = cargarSitio(); const gest = sitio.gestiones || {};
-  const casos = pendientes().filter((c) => c.etapa === 'cargar' && c.motivo === 'gestion' && (!flag('--club') || c.detalle === flag('--club')));
+  const casos = pendientes().filter((c) => c.etapa === 'cargar' && c.motivo === 'gestion' && (!flag('--club') || clubDeCaso(c) === flag('--club')));
   const yaCubiertos = []; const porClub = new Map();
   for (const c of casos) {
-    const id = c.detalle; const club = Array.isArray(sitio.clubs) ? sitio.clubs.find((x) => x.id === id) : sitio.clubs[id]; const cierre = cierreDe(c);
+    const id = clubDeCaso(c); const club = Array.isArray(sitio.clubs) ? sitio.clubs.find((x) => x.id === id) : sitio.clubs[id]; const cierre = cierreDe(c);
     if (!club || !cierre) { console.log(`  ${id}: caso ${c.id} sin club en data/clubs.js o sin cierre en la pregunta; queda como está`); continue; }
     const iso = String(club.country || '').toLowerCase();
     if (flag('--pais') && iso !== flag('--pais').toLowerCase()) continue;
@@ -214,7 +217,7 @@ function cargar(dir) {
   // Los casos de la cola cuyo cierre quedó cubierto se contestan; los demás siguen pendientes.
   const gest = cargarSitio().gestiones || {}; let contestados = 0;
   for (const c of pendientes().filter((x) => x.etapa === 'cargar' && x.motivo === 'gestion')) {
-    const cierre = cierreDe(c); if (cierre && cubre(gest[c.detalle], cierre)) { responder(c.id, 'aceptar', `cargada en data/gestiones (${rel}, tools/gestiones-tanda.mjs, ${HOY})`); contestados++; }
+    const cierre = cierreDe(c); if (cierre && cubre(gest[clubDeCaso(c)], cierre)) { responder(c.id, 'aceptar', `cargada en data/gestiones (${rel}, tools/gestiones-tanda.mjs, ${HOY})`); contestados++; }
   }
   console.log(`Cola: ${contestados} caso(s) de gestión contestados (su cierre quedó cubierto).`);
   console.log(`Para el commit: git add -- data/gestiones Admin/carga-clubes index.html fuentes fuentes.html Admin/ESTADO-clubes.md Admin/COMO-CORRE-EL-PROYECTO.html Admin/registros/cola-revision.jsonl "${rel}"`);
