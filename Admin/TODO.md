@@ -50,6 +50,11 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
     g) El aviso "Estadio en 0" pide que las TRES categorías del estadio (matchday_competition, stadium_other, season_tickets) tengan
        ajuste `incluye`; con la de entradas alcanza para decir que el estadio está dentro de otra línea. Moreirense 2022 y 2025 llevan los
        tres ajustes.
+    h) Formato portugués (SNC): la venta de jugadores viene en "Outros rendimentos" como "Rendimentos em investimentos não financeiros", con
+       una nota al pie que lo dice ("Inclui ... alienação de direitos desportivos de jogadores"). La categorización la puso en other_income
+       con confianza alta y no fue a la cola: Moreirense 2022 (4,10 M) y 2025 (8,00 M) se publicaron mal y se corrigieron con ajustes
+       `categoria`. Además, el ajuste compara la etiqueta con el asterisco de la nota ("...financeiros*") aunque la carga lo muestra sin él.
+       Escalón posible: leer la nota al pie de la fila (como "la nota de la fila" de caja-deuda) antes de categorizar.
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
