@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.pdf",
  "md": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.md",
- "generado": "2026-10-15T12:42:56.807Z",
+ "generado": "2026-10-15T13:14:09.563Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -11,7 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Rendimentos e ganhos em investimentos",
+   "motivo": "Claude 2026-10-15 (lote 76): la nota 19 dice que 'inclui rendimentos relativos a alienação de direitos económicos e desportivos de jogadores' (L1976; mais-valias 26.074.589 €); el informe de gestión, mais-valias de 27,5 M por Jota Silva, Alberto Costa, Kaio César y Manu Silva (L128). Formato SNC (to-do 237 h), mismo criterio que la SAD 2021-22",
+   "evidencia": "relatorio-contas-2024-25.md L1972, L1976",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2023-24.md",
- "generado": "2026-10-15T12:42:56.798Z",
- "estado": "cola",
+ "generado": "2026-10-15T13:14:09.544Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -23,10 +23,7 @@
    "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "066db7c",
-  "696cfaa"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -58,6 +55,7 @@
  "notas": [
   "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (1.040295 contra 0.479517, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Imparidade de dividas a receber\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
   "duda de extraer que no afecta la carga: 681 937,34 + 3 990 983,32 = 4 672 920,66 €, igual a L766; se cargan como dos desgloses parciales.",
   "duda de extraer que no afecta la carga: Son movimientos de inventario (lado otro) que explican el costo, no partidas de resultado."
  ],

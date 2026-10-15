@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2021-22.pdf",
  "md": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2021-22.md",
- "generado": "2026-10-15T12:42:56.722Z",
+ "generado": "2026-10-15T13:14:09.540Z",
  "estado": "cola",
  "clubId": null,
  "year": 2022,
@@ -26,7 +26,6 @@
  "cola": [
   "2445b7e",
   "3e80d57",
-  "3cc05b3",
   "4294dbd",
   "a1b7946",
   "33faea1",
@@ -66,6 +65,7 @@
   "la nota de \"Outros rendimentos e ganhos\" no suma el renglón (0.390948 contra 0.387918, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Custo de mercadorias vendidas e das matérias consumidas\" no suma el renglón (0.040763 contra 0.008861, sumando sus renglones): quedó el renglón del estado",
   "el desglose de \"Outros\" (6 filas) no suma la fila: quedó la fila",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
   "duda de localizar que no afecta la carga: Son cuadros de gestión con columnas de presupuesto y agrupaciones distintas al estado oficial b15.",
   "duda de extraer que no afecta la carga: El total 2021 de la nota (L2561, 3 115 762,23 €) no coincide con el estado (L1356, -54 807,09 €); la diferencia es MEP; para 2022 no afecta.",
   "duda de extraer que no afecta la carga: La suma da 920 153,41 €, coincide; el cuadro b48 se titula erróneamente 'Ativos intangíveis' (L2578) pero son tangíveis."

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2020-21.pdf",
   "club": "vitoria-guimaraes",
   "year": 2021,
-  "generatedAt": "2026-10-15T12:42:56.658Z",
+  "generatedAt": "2026-10-15T13:14:09.534Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -114,7 +114,7 @@
       "values": [
         0.005147
       ],
-      "glosa": "Ganancias en inventarios"
+      "glosa": "Beneficios en existencias"
     },
     {
       "label": "Rendimentos e ganhos em investimentos",
@@ -144,7 +144,7 @@
       "values": [
         0.497677
       ],
-      "glosa": "Coste de las mercancías vendidas y materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
     },
     {
       "label": "Trabalhos especializados",
@@ -204,7 +204,7 @@
       "values": [
         0.297706
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Reparaciones y conservación"
     },
     {
       "label": "Despesas com Provas",
@@ -234,7 +234,7 @@
       "values": [
         0.033411
       ],
-      "glosa": "Herramientas y útiles de desgaste rápido"
+      "glosa": "Herramientas y utensilios de desgaste rápido"
     },
     {
       "label": "Livros documentação técnica",
@@ -264,7 +264,7 @@
       "values": [
         0.003199
       ],
-      "glosa": "Artículos de regalo"
+      "glosa": "Artículos para obsequios"
     },
     {
       "label": "Material Desportivo",
@@ -364,7 +364,7 @@
       "values": [
         0.064854
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Contencioso e notariado",
@@ -374,7 +374,7 @@
       "values": [
         0.081477
       ],
-      "glosa": "Gastos contenciosos y notariales"
+      "glosa": "Servicios jurídicos y notariales"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -384,7 +384,7 @@
       "values": [
         0.101705
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Outros serviços",
@@ -404,7 +404,7 @@
       "values": [
         0.664164
       ],
-      "glosa": "Personal de VSC al servicio de la SAD"
+      "glosa": "Personal del VSC al servicio de la SAD"
     },
     {
       "label": "Remuneração Administração",
@@ -414,7 +414,7 @@
       "values": [
         0.193527
       ],
-      "glosa": "Remuneración de la administración"
+      "glosa": "Retribución del órgano de administración"
     },
     {
       "label": "Remuneração pessoal administrativo",
@@ -424,7 +424,7 @@
       "values": [
         1.260493
       ],
-      "glosa": "Remuneración del personal administrativo"
+      "glosa": "Retribución del personal administrativo"
     },
     {
       "label": "Remuneração treinadores",
@@ -434,7 +434,7 @@
       "values": [
         1.636457
       ],
-      "glosa": "Remuneración de entrenadores"
+      "glosa": "Retribución del cuerpo técnico"
     },
     {
       "label": "Remuneração jogadores",
@@ -444,7 +444,7 @@
       "values": [
         13.861653
       ],
-      "glosa": "Remuneración de jugadores"
+      "glosa": "Retribución de futbolistas"
     },
     {
       "label": "Encargos com remunerações",
@@ -454,7 +454,7 @@
       "values": [
         1.279127
       ],
-      "glosa": "Cargas sobre remuneraciones"
+      "glosa": "Cargas sociales"
     },
     {
       "label": "Seguro acidentes trabalho",
@@ -484,7 +484,7 @@
       "values": [
         0.068216
       ],
-      "glosa": "Deterioro de créditos a cobrar"
+      "glosa": "Deterioro de créditos comerciales"
     },
     {
       "label": "Imparidade de invantários",
@@ -504,7 +504,7 @@
       "values": [
         0.36676
       ],
-      "glosa": "Provisiones (aumentos/reducciones)"
+      "glosa": "Provisiones (dotaciones/reversiones)"
     },
     {
       "label": "Impostos",
@@ -574,7 +574,7 @@
       "values": [
         0.115358
       ],
-      "glosa": "Multas"
+      "glosa": "Multas y sanciones"
     },
     {
       "label": "Outros",
@@ -594,7 +594,7 @@
       "values": [
         6.815353
       ],
-      "glosa": "Gastos/reversiones de depreciación y amortización"
+      "glosa": "Gastos y reversiones por amortización y depreciación"
     }
   ]
 }

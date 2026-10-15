@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.pdf",
   "club": "vitoria-guimaraes",
   "year": 2025,
-  "generatedAt": "2026-10-15T12:42:56.807Z",
+  "generatedAt": "2026-10-15T13:14:09.563Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         2.438222
       ],
-      "glosa": "Taquilla / Cuotas / Abonos de socios"
+      "glosa": "Taquilla / Cuotas de socios / Abonos"
     },
     {
       "label": "Premios competições nacionais e UEFA",
@@ -34,7 +34,7 @@
       "values": [
         9.720482
       ],
-      "glosa": "Premios de competiciones nacionales y UEFA"
+      "glosa": "Premios por competiciones nacionales y UEFA"
     },
     {
       "label": "Publicidade/Patrocinios",
@@ -54,7 +54,7 @@
       "values": [
         6.922619
       ],
-      "glosa": "Derechos de televisión"
+      "glosa": "Derechos audiovisuales"
     },
     {
       "label": "Mecanismo Solidariedade",
@@ -154,7 +154,7 @@
       "values": [
         0.002821
       ],
-      "glosa": "Ganancias en existencias"
+      "glosa": "Beneficios en existencias"
     },
     {
       "label": "Rendimentos e ganhos em investimentos",
@@ -164,7 +164,7 @@
       "values": [
         26.837199
       ],
-      "glosa": "Ingresos y ganancias en inversiones"
+      "glosa": "Ingresos y ganancias de inversiones"
     },
     {
       "label": "Outros",
@@ -184,7 +184,7 @@
       "values": [
         0.654102
       ],
-      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y materias consumidas"
     },
     {
       "label": "Trabalhos especializados",
@@ -244,7 +244,7 @@
       "values": [
         0.295054
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Despesas com Provas",
@@ -254,7 +254,7 @@
       "values": [
         3.266637
       ],
-      "glosa": "Gastos de competiciones"
+      "glosa": "Gastos por competiciones"
     },
     {
       "label": "Prospecção; Empréstimos;",
@@ -264,7 +264,7 @@
       "values": [
         0.290975
       ],
-      "glosa": "Prospección; Préstamos;"
+      "glosa": "Prospección y cesiones"
     },
     {
       "label": "Ferramentas, utensílios desgaste rápido",
@@ -274,7 +274,7 @@
       "values": [
         0.045178
       ],
-      "glosa": "Herramientas y utensilios de desgaste rápido"
+      "glosa": "Herramientas y útiles de desgaste rápido"
     },
     {
       "label": "Material de escritório",
@@ -294,7 +294,7 @@
       "values": [
         0.011091
       ],
-      "glosa": "Artículos para obsequio"
+      "glosa": "Artículos para regalo"
     },
     {
       "label": "Material Desportivo",
@@ -404,7 +404,7 @@
       "values": [
         0.093599
       ],
-      "glosa": "Servicios contenciosos y notariales"
+      "glosa": "Gastos jurídicos y notariales"
     },
     {
       "label": "Despesas de Representação",
@@ -424,7 +424,7 @@
       "values": [
         0.15064
       ],
-      "glosa": "Limpieza, higiene y mantenimiento"
+      "glosa": "Limpieza, higiene y acondicionamiento"
     },
     {
       "label": "Outros serviços",
@@ -444,7 +444,7 @@
       "values": [
         0.823973
       ],
-      "glosa": "Personal VSC al servicio de la SAD"
+      "glosa": "Personal del VSC al servicio de la SAD"
     },
     {
       "label": "Remuneração Administração",
@@ -454,7 +454,7 @@
       "values": [
         0.289398
       ],
-      "glosa": "Remuneración de la administración"
+      "glosa": "Retribución del Consejo de Administración"
     },
     {
       "label": "Remuneração pessoal administrativo",
@@ -524,7 +524,7 @@
       "values": [
         0.058484
       ],
-      "glosa": "Deterioro de créditos comerciales a cobrar"
+      "glosa": "Deterioro de créditos a cobrar"
     },
     {
       "label": "Imparidade de inventarios",
@@ -544,7 +544,7 @@
       "values": [
         0
       ],
-      "glosa": "Provisiones (dotaciones/reversiones)"
+      "glosa": "Provisiones (aumentos/disminuciones)"
     },
     {
       "label": "Impostos",
@@ -604,7 +604,7 @@
       "values": [
         0.058968
       ],
-      "glosa": "Cuotas de afiliación (liga)"
+      "glosa": "Cuotas (Liga)"
     },
     {
       "label": "Multas",
@@ -634,7 +634,7 @@
       "values": [
         0.149766
       ],
-      "glosa": "Equipamiento básico"
+      "glosa": "Instalaciones técnicas y maquinaria"
     },
     {
       "label": "Equipamento de transporte",
@@ -654,7 +654,7 @@
       "values": [
         0.039119
       ],
-      "glosa": "Equipamiento administrativo"
+      "glosa": "Equipos de oficina"
     },
     {
       "label": "Outros ativos fixos tangíveis",
@@ -664,7 +664,7 @@
       "values": [
         0.53571
       ],
-      "glosa": "Otros activos fijos tangibles"
+      "glosa": "Otro inmovilizado material"
     },
     {
       "label": "Passes jogadores",

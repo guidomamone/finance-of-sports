@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.pdf",
- "generado": "2026-10-15T12:51:13.872Z",
+ "generado": "2026-10-15T13:19:56.019Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (vitoriaguimaraes-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "16 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Bilheteira/Quotização/Pack Socio\" -> matchday_competition 0.55; \"Outros\" -> other_income 0; \"Federação Portuguesa de Futebol\" -> competition_bonus 0.5; \"Compensação Financeira\" -> player_sales 0.5; \"Outros\" -> other_income 0"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -45,9 +33,9 @@
     "amountNative": 2.438222,
     "disclosureLevel": "aggregated",
     "_pag": 50,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Premios competições nacionais e UEFA",
@@ -95,19 +83,19 @@
     "amountNative": 0.030153,
     "disclosureLevel": "aggregated",
     "_pag": 50,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Federação Portuguesa de Futebol",
-    "normalizedCategory": "competition_bonus",
+    "normalizedCategory": "other_income",
     "amountNative": 0.017111,
     "disclosureLevel": "aggregated",
     "_pag": 50,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outras Entidades (IEFP)",
@@ -145,9 +133,9 @@
     "amountNative": 1.396329,
     "disclosureLevel": "aggregated",
     "_pag": 53,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Cedencia Jogadores",
@@ -181,13 +169,13 @@
    },
    {
     "rawLabel": "Rendimentos e ganhos em investimentos",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "player_sales",
     "amountNative": 26.837199,
     "disclosureLevel": "aggregated",
     "_pag": 53,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): la nota 19 dice que 'inclui rendimentos relativos a alienação de direitos económicos e desportivos de jogadores' (L1976; mais-valias 26.074.589 €); el informe de gestión, mais-valias de 27,5 M por Jota Silva, Alberto Costa, Kaio César y Manu Silva (L128). Formato SNC (to-do 237 h), mismo criterio que la SAD 2021-22"
    },
    {
     "rawLabel": "Outros",
@@ -195,9 +183,9 @@
     "amountNative": 0.066513,
     "disclosureLevel": "aggregated",
     "_pag": 53,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -257,9 +245,9 @@
     "amountNative": -0.003397,
     "disclosureLevel": "aggregated",
     "_pag": 51,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Conservação e reparação",
@@ -287,9 +275,9 @@
     "amountNative": -0.290975,
     "disclosureLevel": "aggregated",
     "_pag": 51,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Ferramentas, utensílios desgaste rápido",
@@ -327,9 +315,9 @@
     "amountNative": -0.427562,
     "disclosureLevel": "aggregated",
     "_pag": 51,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Eletricidade",
@@ -367,9 +355,9 @@
     "amountNative": -0.041756,
     "disclosureLevel": "aggregated",
     "_pag": 51,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Deslocações e estadas",
@@ -387,9 +375,9 @@
     "amountNative": -0.00125,
     "disclosureLevel": "aggregated",
     "_pag": 51,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Rendas e alugueres",
@@ -467,9 +455,9 @@
     "amountNative": -0.823973,
     "disclosureLevel": "aggregated",
     "_pag": 51,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Remuneração Administração",
@@ -517,9 +505,9 @@
     "amountNative": -1.478052,
     "disclosureLevel": "aggregated",
     "_pag": 52,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Seguro acidentes trabalho",
@@ -527,9 +515,9 @@
     "amountNative": -1.689047,
     "disclosureLevel": "aggregated",
     "_pag": 52,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos pessoal",
@@ -537,9 +525,9 @@
     "amountNative": -0.52811,
     "disclosureLevel": "aggregated",
     "_pag": 52,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Imparidade de dívidas a receber",
@@ -627,9 +615,9 @@
     "amountNative": -0.058968,
     "disclosureLevel": "aggregated",
     "_pag": 53,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Multas",
@@ -637,9 +625,9 @@
     "amountNative": -0.313004,
     "disclosureLevel": "aggregated",
     "_pag": 53,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -757,7 +745,19 @@
  },
  "clubId": "vitoriaguimaraes-pt",
  "year": 2025,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Rendimentos e ganhos em investimentos",
+   "motivo": "Claude 2026-10-15 (lote 76): la nota 19 dice que 'inclui rendimentos relativos a alienação de direitos económicos e desportivos de jogadores' (L1976; mais-valias 26.074.589 €); el informe de gestión, mais-valias de 27,5 M por Jota Silva, Alberto Costa, Kaio César y Manu Silva (L128). Formato SNC (to-do 237 h), mismo criterio que la SAD 2021-22",
+   "evidencia": "relatorio-contas-2024-25.md L1972, L1976",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
  "seleccion": {
   "filas": 70,
   "notasUsadas": [],
@@ -787,11 +787,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de serviços\")",
    "signoFijo": 2.438222,
    "cat": "matchday_competition",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): taquilla, cuotas y pack de socio (estos dos los paga el Vitória Sport Clube) [relatorio-contas-2024-25.md L1818, L2108-2112]",
    "destino": "revenue",
    "amountNative": 2.438222
   },
@@ -863,12 +863,12 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de serviços\")",
    "signoFijo": 0.030153,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): 'Outros' de la prestación de servicios [relatorio-contas-2024-25.md L1823]",
    "destino": "revenue",
    "amountNative": 0.030153
   },
@@ -879,12 +879,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Subsidios à exploração\")",
    "signoFijo": 0.017111,
-   "cat": "competition_bonus",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media-alta; revisado por Claude): fila de la nota de Subsídios [relatorio-contas-2024-25.md L1832-1834]",
    "destino": "revenue",
    "amountNative": 0.017111
   },
@@ -941,11 +941,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\" > desglose de \"Rendimentos suplementares\")",
    "signoFijo": 1.396329,
    "cat": "player_sales",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): 'corresponde a verbas recebidas de atletas que já foram alienados noutros exercícios' [relatorio-contas-2024-25.md L1984, L1988]",
    "destino": "revenue",
    "amountNative": 1.396329
   },
@@ -1001,11 +1001,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 26.837199,
-   "cat": "other_income",
+   "cat": "player_sales",
    "conf": 1,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-15): Claude 2026-10-15 (lote 76): la nota 19 dice que 'inclui rendimentos relativos a alienação de direitos económicos e desportivos de jogadores' (L1976; mais-valias 26.074.589 €); el informe de gestión, mais-valias de 27,5 M por Jota Silva, Alberto Costa, Kaio César y Manu Silva (L128). Formato SNC (to-do 237 h), mismo criterio que la SAD 2021-22",
    "enLista": true,
+   "ladoRechazado": false,
    "destino": "revenue",
    "amountNative": 26.837199
   },
@@ -1017,12 +1018,12 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 0.066513,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): 'Outros' de la prestación de servicios [relatorio-contas-2024-25.md L1823]",
    "destino": "revenue",
    "amountNative": 0.066513
   },
@@ -1109,11 +1110,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.003397,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media-alta): comisiones [wf-src-Relatorio-e-Contas-2021-22-SAD.md L1953]",
    "destino": "expense",
    "amountNative": -0.003397
   },
@@ -1155,11 +1156,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.290975,
    "cat": "other_expenses",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): scouting y préstamos dentro de Serviços Especializados [wf-src-Relatorio-e-Contas-2021-22-SAD.md L1955]",
    "destino": "expense",
    "amountNative": -0.290975
   },
@@ -1217,11 +1218,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.427562,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): material deportivo [wf-src-Relatorio-e-Contas-2021-22-SAD.md L1962]",
    "destino": "expense",
    "amountNative": -0.427562
   },
@@ -1278,11 +1279,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.041756,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): energía, fluidos y transporte [wf-src-Relatorio-e-Contas-2021-22-SAD.md L1969, L1975]",
    "destino": "expense",
    "amountNative": -0.041756
   },
@@ -1309,11 +1310,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.00125,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): energía, fluidos y transporte [wf-src-Relatorio-e-Contas-2021-22-SAD.md L1969, L1975]",
    "destino": "expense",
    "amountNative": -0.00125
   },
@@ -1432,11 +1433,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.823973,
    "cat": "admin_general_expense",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): personal del Vitória Sport Clube al servicio de la SAD, dentro de FSE [wf-src-Relatorio-e-Contas-2021-22-SAD.md L1986, L2252-2253; relatorio-contas-2024-25.md L1891]",
    "destino": "expense",
    "amountNative": -0.823973
   },
@@ -1508,11 +1509,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 1.478052,
    "cat": "wages_squad",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media-alta): cargas sociales con el sueldo [wf-src-Relatorio-e-Contas-2021-22-SAD.md L2044]",
    "destino": "expense",
    "amountNative": -1.478052
   },
@@ -1524,11 +1525,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 1.689047,
    "cat": "admin_general_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): seguro de accidentes de trabajo, precedente portugués [wf-src-Relatorio-e-Contas-2021-22-SAD.md L2045]",
    "destino": "expense",
    "amountNative": -1.689047
   },
@@ -1540,11 +1541,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.52811,
    "cat": "other_expenses",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media): tratamientos médicos y contratos de formación, no separables [wf-src-Relatorio-e-Contas-2021-22-SAD.md L2051]",
    "destino": "expense",
    "amountNative": -0.52811
   },
@@ -1676,11 +1677,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos e perdas\")",
    "signoFijo": 0.058968,
    "cat": "match_organisation_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): cuota a la Liga [relatorio-contas-2024-25.md L2004]",
    "destino": "expense",
    "amountNative": -0.058968
   },
@@ -1692,11 +1693,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos e perdas\")",
    "signoFijo": 0.313004,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad alta): multas disciplinarias [wf-src-Relatorio-e-Contas-2021-22-SAD.md L2114]",
    "destino": "expense",
    "amountNative": -0.313004
   },
@@ -1912,7 +1913,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 1,
   "lineasIngreso": 17,
   "lineasGasto": 50,
   "metaFilas": 3,
