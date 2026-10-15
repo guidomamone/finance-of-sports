@@ -25,7 +25,7 @@ node tools/gasto-doc.mjs --lista <lista> --desde <ISO> [--hasta <ISO>]       # l
 `lote.mjs` corre las etapas 3 a 8 sobre una lista chica. Avisa (sin frenar) si un documento de la lista está también en otra `Admin/lotes/lote-*.txt`
 (to-do 232 g): una lista cerrada va a `Admin/Archive/lotes/`. También avisa un documento de un club de la lista que está sin localizar y cuyo ejercicio
 no cubre ni la lista ni un año cargado (to-do 232 q): se suma a la lista o va a `documentos-descartados.txt`.
-- El registro (`Admin/registros/transcripciones-estado.jsonl`) se recalcula entero en ~1 min (12.184 PDFs, sobre todo `quien.mjs --pendientes` para saber
+- El registro (`Admin/registros/transcripciones-estado.jsonl`) se recalcula entero en ~1 min (todos los PDFs de Clubes/, sobre todo `quien.mjs --pendientes` para saber
   qué está cargado). `pipeline.mjs` con `--lista`/`--dir` y `lote.mjs` recalculan solo su lista (`--solo`, ~1 s) y copian las demás
   líneas; el recálculo entero queda para `estado.mjs --actualizar` y las corridas sin alcance. Medido: el registro sale idéntico.
 - Un solo proceso a la vez escribiendo el registro: `lote.mjs` y `pipeline.mjs` (también en ensayo) y `cargar.mjs --escribir` toman el
@@ -63,18 +63,20 @@ Mitigaciones:
 - a) PDF digital (tiene texto propio): Mistral transcribe; el texto propio del PDF queda como segunda fuente gratis para la etapa 4.
 - b) PDF escaneado: Mistral lo marca como escaneo; no hay segunda fuente gratis.
 - c) PDF con texto roto (letras sin sentido en vez del texto real): se detecta solo y se trata como escaneo.
-- c2) Una cifra con forma imposible ("6.571,340,66": dos separadores distintos y el último repetido, error del OCR) no se valida gratis
-  con nada (`chequeos-gratis.mjs`, to-do 232 ad): su página queda dudosa y la relee la validación paga. La misma función
-  (`formaImposible`, en `verify-numbers.mjs`) hace que `caja-deuda.mjs` no lea esa fila. Lo ya transcripto no se relee: medido, ninguna
-  llegó a un dato publicado.
+- c2) **Validación gratis antes de pagar** (`chequeos-gratis.mjs`, la usa `resolver-inventario.mjs` en el escalón 1a): cada página es
+  `prosa` (no se valida), `validada-gratis` (todas sus cifras respaldadas por el texto del PDF, las sumas de sus tablas, la columna del año
+  anterior ya cargado o el balance; tolera hasta 3 sin respaldo si el PDF tiene texto) o `dudosa`. Solo las dudosas van a Claude / Gemini.
+  Escalón 0 de esa cascada (to-do 232 ad): una cifra con forma imposible ("6.571,340,66", error del OCR) no se respalda con nada y su
+  página queda dudosa. La misma función (`formaImposible`, en `verify-numbers.mjs`) hace que `caja-deuda.mjs` no lea esa fila. Lo ya
+  transcripto no se relee: medido, ninguna llegó a un dato publicado.
 - d) **Escalera** (escalón 1 construido; el 2 todavía no):
 
 ```
  ESCALÓN 0  la transcripción que hay ──────── ¿localizar encuentra el estado de resultados? sí → sigue
  ESCALÓN 1  si no, la transcripción no es de Mistral y el PDF tiene páginas interiores en imagen
             → re-transcribir con Mistral y volver a localizar (con --reintentar) ── ¿lo encuentra? sí → sigue
- ESCALÓN 1a (Versión 433) el inventario dice "revisar" → resolver-inventario.mjs (las VOCES): Claude solo en las páginas con cifras que
-            no coinciden con el texto del PDF; ignora las dudas en prosa ── compuerta: el inventario queda "listo" → sigue
+ ESCALÓN 1a (Versión 433) el inventario dice "revisar" → resolver-inventario.mjs (las VOCES): Claude solo en las páginas `dudosa`
+            de la validación gratis (c2); ignora las dudas en prosa ── compuerta: el inventario queda "listo" → sigue
             (Versión 443) por página: una página con la misma huella que en la última validación "listo" se reusa, no se paga otra vez
             (Versión 463) "sin verificar" (el .md cambió): primero la validación gratis del inventario; si queda "revisar", el resolver
  ESCALÓN 1b (Versión 395, camino de error) PDF digital, la etapa 4 dice que el .md no coincide con el texto propio y la verificación no
@@ -368,7 +370,9 @@ Mitigaciones:
 ```
 - g) Sin fecha de cierre detectada: se deduce si el documento anterior y el siguiente del club cierran el mismo día (con aviso).
 - h) **Compuerta del registro** (deja el documento "listo" para categorizar): exige confirmados solo los números de los bloques que usa la
-  lectura que cerró (las filas que se cargan); un número de una nota que no se carga no frena (Versión 457).
+  lectura que cerró (las filas que se cargan); un número de una nota que no se carga no frena (Versión 457). Marca `listo-para-jev`:
+  5 rubros o más, o de 1 a 4 si la etapa 6 cerró contra el resultado impreso (no forzado por ajuste; un DRE de una página, Remo 2019,
+  to-do 203); si no, `sin-rubros`.
 - Tool: `verificar.mjs` (gratis, sin IA: un modelo de lenguaje no sirve para verificar sumas).
 
 Riesgos:
@@ -387,22 +391,29 @@ Mitigaciones:
   "sin lado en el documento: entra como gasto por su signo, impreso en negativo"):
 
 ```
- ESCALÓN 0  ajuste manual · respuesta de Guido en la cola para esa fila ──────── gana siempre
+ ESCALÓN 0  ajuste manual · respuesta de la cola para esa fila, o la de otro documento del club con la misma etiqueta (si se sabe la
+            nota de las dos filas, tiene que ser la misma; Versiones 344 y 403) ──────── gana siempre, en cualquier fila
+ ETIQUETA REPETIDA (to-do 232 h y 234) la misma etiqueta (mismo lado) bajo dos o más renglones de categoría distinta del documento
+            (PAOK "Αποσβέσεις" en fútbol y en administración; Olympiacos "Εισφορές" de jugadores y de otros empleados): el precedente sin
+            contexto y la respuesta por etiqueta no deciden; solo el precedente del club con la misma nota, o la cola con la clave
+            "etiqueta@renglón". Renglones distintos = títulos distintos (no palabras en común). Categoría del renglón: la propia ─► si no,
+            la de sus otras filas si son 2 o más y todas coinciden
  ESCALÓN 1  precedente exacto CON CONTEXTO (misma etiqueta y mismo renglón que desglosa)
  ESCALÓN 2  precedente exacto (misma etiqueta en el club, una sola categoría)
  ESCALÓN 3  precedente por familia de palabras
  ESCALÓN 4  Jev con confianza >= 0,90
  ESCALÓN 5a ¿Claude ya respondió esto? (caché: carpeta + lado + etiqueta + nota, Versión 404)
  ESCALÓN 5b Claude por API con confianza >= 0,80
- ESCALÓN 6  materialidad: las dudas de un lado suman ≤ 1% de ese lado → las de confianza >= 0,60 se cargan con aviso (Versión 386)
- ESCALÓN 7a (to-do 152) una fila que iba a la cola toma la respuesta de Guido de OTRO AÑO del club con la misma etiqueta salvo la marca
+ ESCALÓN 6a (to-do 152) una fila que iba a la cola toma la respuesta de OTRO AÑO del club con la misma etiqueta salvo la marca
             de lista ("b) oneri sociali" = "oneri sociali"; claveFamilia igual, sin tolerancia de letras). Compuertas: mismo lado, misma
             nota (o una es el renglón del estado y la otra su hoja en la nota) y una sola categoría entre las respuestas
- ESCALÓN 7b (to-do 152) si no: la respuesta de OTROS CLUBES DEL MISMO PAÍS. Compuertas: misma etiqueta (claveFamilia), mismo lado, mismo
+ ESCALÓN 6b (to-do 152) si no: la respuesta de OTROS CLUBES DEL MISMO PAÍS. Compuertas: misma etiqueta (claveFamilia), mismo lado, mismo
             contexto (la nota que la abre o, en el estado, el renglón título de arriba: contextoFila() de padres-filas.mjs), respondida
             en al menos 1 club (to-do 215: con 1 decide 59 y acierta 59), todos con la misma categoría. La carga lo dice: "precedente del país: N clubes (...)"
+ ESCALÓN 7  materialidad, sobre lo que todavía iba a la cola: las dudas de un lado suman ≤ 1% de ese lado → las de confianza >= 0,60 se
+            cargan con aviso (Versión 386)
  SACAR UNA FILA (to-do 205): una respuesta `descartar` o `corregir --valor no_es_rubro` vale solo para SU documento; la de otro año
-            del club (respuesta del club, 7a) o de otros clubes (7b) no decide y la fila sigue por los escalones
+            del club (respuesta del club, 6a) o de otros clubes (6b) no decide y la fila sigue por los escalones
  "NO ES RUBRO" de la IA en una fila verificada con lado: se excluye; si la carga no cierra, se prueba incluirla (a la cola);
             gana la que cierra (Versión 462)
  COMPUERTA DEL LADO en todos los escalones (Versiones 374 y 377): la categoría tiene que ser del lado de la fila en el documento; si no,
@@ -411,7 +422,8 @@ Mitigaciones:
 ```
 
   Si la misma etiqueta tiene categorías distintas en el club, el precedente sin contexto no decide y se baja de escalón: "Remuneraciones"
-  dentro del costo de ventas (sueldos del plantel) no se confunde con "Remuneración" dentro de gastos de administración.
+  dentro del costo de ventas (sueldos del plantel) no se confunde con "Remuneración" dentro de gastos de administración. Dentro de un
+  mismo documento, ver ETIQUETA REPETIDA arriba.
 - Tools: `glosar-rubros.mjs`, `jev-categorizar.mjs`, `categorizar-claude.mjs`, `memoria-categorias.mjs`. ~US$ 0,03 por documento.
 
 Riesgos:
@@ -465,14 +477,11 @@ Mitigaciones:
                   contesta los casos cubiertos (to-do 232 b). Solo tandas armadas por --armar (tanda.json).
  PERÍODO CORTO    menos de 12 meses ─► la columna del año anterior sin importes (primer ejercicio de una sociedad nueva) → se carga
                   como el año con publicNote (Volos 2019, Kifisia 2022; Admin/CONVENCIONES-DATOS.md) ─► con importes → frena (parcial)
- ETIQUETA REPETIDA la misma etiqueta (mismo lado) bajo dos renglones de categoría conocida y distinta (PAOK "Αποσβέσεις" en fútbol y en
-                  administración) ─► solo el precedente con la misma nota ─► si no, a la cola con la clave "etiqueta@renglón" (to-do 232 h)
-                  Renglones distintos = títulos distintos (no palabras en común: "Δαπάνη παροχών ποδοσφαιριστών" y "... λοιπών
-                  εργαζομένων" de Olympiacos). Categoría del renglón: la propia ─► si no, la de sus otras filas si son 2 o más y todas
-                  coinciden (to-do 234; medido en 570 documentos: 25 preguntas nuevas en 11, 20 de ellas las de Olympiacos 2016-2025)
+ ETIQUETA REPETIDA se decide por renglón: ver la escalera de la etapa 7 (to-do 232 h y 234)
  SIN CATEGORÍA    fila impresa (con página) que no está en el .categorias.json y nada categorizó ─► frena con su nombre (to-do 232 x;
                   AEK 2024) ─► las demás sin categoría aceptable: más del 5% del dinero del lado frena, menos es aviso y no se cargan
- CATEGORÍAS EN 0  ajuste `cero-real` ─► salarios / TV / estadio, o socios / otros deportes según el perfil ─► reintento (una vez) ─► aviso
+ CATEGORÍAS EN 0  ajuste `cero-real` ─► Estadio en 0 en el ejercicio 2021: real (puertas cerradas por el Covid; decisión de Guido del
+                  2026-10-13) ─► salarios / TV / estadio, o socios / otros deportes según el perfil ─► reintento (una vez) ─► aviso
  LO QUE CERRÓ EN LA ETAPA 6 (Versiones 375-378): financiero e impuesto con el signo con que cerró; una fila verificada con lado no se mueve
                   por palabras ni se excluye sola por "no es rubro" dudoso
  "NO ES RUBRO"    (fila verificada con lado, dicho por la IA) excluirla ─► si la carga no cierra, incluirla (a la cola) ─► gana la que
@@ -510,7 +519,7 @@ Mitigaciones:
 
 Riesgos:
 - i) el documento declara varios tipos de cambio;
-- ii) el documento no declara y la moneda no está en el archivo de series (hoy hay 21).
+- ii) el documento no declara y la moneda no está en el archivo de series (cuáles hay: `node tools/audit.js --fx`).
 
 Mitigaciones:
 - i) si están en una tabla con una fecha por columna, gana la fecha más nueva; si no (frase, años sueltos, activo y pasivo), a la cola;
@@ -527,7 +536,7 @@ errores"). Un documento se marca para reintentar por dos motivos:
 
 - a) **Un desglose no suma** (una nota, o un cuadro que abre una fila de una nota). Lo detecta la etapa 6.
 - b) **Una categoría da 0 cuando debería tener número.** Lo detecta la etapa 8 (ahí ya hay categorías):
-  - salarios del plantel, televisión o estadio en 0: siempre (en 241 años cargados, salarios nunca es 0, televisión 2%, estadio 1%);
+  - salarios del plantel, televisión o estadio en 0: siempre, salvo Estadio en 2021 (Covid, ver CATEGORÍAS EN 0);
   - cuotas sociales en 0: solo si el perfil del club dice que tiene socios;
   - otras secciones deportivas en 0: solo si el perfil dice que tiene otros deportes (básquet, vóley, futsal...);
   - educación nunca dispara;
@@ -573,14 +582,11 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 - Sin perfil ni respuesta: si la portada del documento (hasta la pág. 3) dice ΠΑΕ / Ποδοσφαιρική Ανώνυμη Εταιρεία, `cargar.mjs` guarda
   "no" y "no" con esa línea como cita (fuente `forma-juridica`) y cierra los casos de perfil del club (to-do 232 c). Solo ΠΑΕ: la SAF
   brasileña no sirve (Cuiabá y Ferroviária tienen socios).
-- Una respuesta de categoría en la cola (aceptar o corregir, salvo `no_es_rubro`) cierra los casos pendientes del mismo club con la misma
-  etiqueta en otros años; `cargar.mjs` aplica la respuesta solo si la fila está en la misma nota y, si no, el caso se reabre (to-do 232 d).
 - Una respuesta de perfil en la cola (`corregir --valor sí|no`) se guarda en el perfil en el momento y cierra los casos iguales
   (mismo club y campo) de los otros años, pendientes (to-do 232 r).
 - Dos datos por club: ¿tiene socios que pagan cuota?, ¿tiene otros deportes en sus estados financieros? Sí, no o no se sabe, con evidencia.
-- Hoy: los 66 clubes sudamericanos (armado por un subagente con lo cargado y las transcripciones). Socios: 49 sí, 11 no, 6 no se sabe.
-  Otros deportes: 31 sí, 25 no, 10 no se sabe. Criterio aceptado por Guido: "clube social e esportes amadores" que además nombra básquet,
-  vóley, futsal o remo cuenta como otros deportes.
+- Cuántos clubes tienen perfil y qué dice cada uno: `node tools/perfil-clubes.mjs`. Criterio aceptado por Guido: "clube social e esportes
+  amadores" que además nombra básquet, vóley, futsal o remo cuenta como otros deportes.
 - Si un club no está o dice "no se sabe" y la categoría da 0: pregunta de sí o no en la cola. Guido contesta o manda un agente a buscar; la
   respuesta queda en el perfil para todos los años del club.
 
@@ -596,8 +602,14 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 ### Cola humana
 
 - Archivo: `Admin/registros/cola-revision.jsonl`. Se lee con `node tools/cola.mjs`.
-- Una duda por tema (escala, perímetro, cuadro duplicado...) contestada para el club vale para todos sus años, también si se contestó antes
-  del alta del club (la clave llevaba el nombre de la carpeta y ahora lleva el id del sitio; to-do 153).
+- QUÉ ALCANZA UNA RESPUESTA (el único lugar donde está escrito; la etapa 7 y el perfil remiten acá):
+  - una duda por tema (escala, perímetro, cuadro duplicado...) se reconoce por club + tema + renglón: contestada en cualquier año del club
+    vale para todos sus años, también si se contestó antes del alta (la clave lleva el id del sitio; to-do 153);
+  - una de perfil (`corregir --valor sí|no`) se guarda en el perfil y cierra los casos iguales de los otros años (to-do 232 r);
+  - una de categoría (aceptar o corregir, salvo `no_es_rubro`) cierra los casos pendientes del club con la misma etiqueta en otros años
+    (to-do 232 d), queda como precedente del club (`Admin/registros/categorias-aprendidas.jsonl`) y `cargar.mjs` la aplica en otro
+    documento solo si la fila está en la misma nota (si no, el caso se reabre);
+  - sacar una fila (`no_es_rubro`) vale solo para su documento (to-do 205).
 - Cada caso es una **pregunta de sí o no**, con la propuesta del sistema, la página del visor y la impresa, y las líneas del .md.
 - Guido contesta con `node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club --nota "..."`.
   En un caso de categoría, `descartar` se rechaza (to-do 205: parecía "descarto la pregunta" y sacaba la fila): para sacar la fila,
@@ -609,12 +621,12 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
   años que ya están en el sitio: ya no frenan nada. Nunca los de categoría (pueden tocar un dato publicado) ni los de perfil (son del club).
   Si una etapa vuelve a levantar uno, se reabre y no se vuelve a cerrar solo.
 - Las dudas de la IA traen un tema de una lista fija (usar un cuadro por segmento, cuadro duplicado, cuadro de otro año, perímetro, escala,
-  columna, fila ilegible, otro) y el renglón al que afectan. Una duda de tema fijo se reconoce por club + tema + renglón: si Guido ya la
-  contestó en cualquier año del club, se aplica sola.
+  columna, fila ilegible, otro) y el renglón al que afectan (alcance: arriba).
 - Qué entra: números no confirmados que no cierran, totales o resultado que no cierran, año vecino distinto, primer año sin vecino (salvo que lo impreso lo confirme: ver etapa 7), dudas de
   localizar y de extraer que afectan la carga, y filas con categoría menor a 0,80 (etapa 8).
-- Una respuesta de categoría queda como precedente del club para los años siguientes (`Admin/registros/categorias-aprendidas.jsonl`).
-- Cómo la resuelve Guido (2026-10-05): con un subagente (Sonnet) que resume los casos; no hace falta ordenarla ni otra vista.
+- Quién la contesta (decisión de Guido del 2026-10-13): un subagente Sonnet con cita del documento y del criterio de `club-data-mapping`,
+  firmado "Claude"; Claude revisa contra el documento las correcciones grandes antes de aplicarlas. A Guido solo lo que el subagente no
+  puede decidir y frena un alta o un año; lo que solo el club sabe, a `Admin/dudas-por-club.md` (skill `club-or-year-onboarding`).
 
 ---
 
@@ -638,8 +650,10 @@ sección Rusia de `Admin/COMO-CORRE-EL-PROYECTO.html`; el detalle de cada escal�
 ## Caja y deuda (`tools/caja-deuda.mjs`)
 
 Comando aparte, con el club ya publicado: completa `cash` y `grossDebt` de cada año cargado donde el sitio tiene null (nunca pisa un valor
-cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [--detalle]` (gratis). Escribir: `--escribir` (el valor en
-`data/`, sin comentario; de dónde salió, en la meta del año en `Admin/carga-clubes/<club>.md`).
+cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir [--club <id>] [--detalle] [--escalas]` (gratis); `--medir --jev` y
+`--medir --ia` (escalones 1b y 2; sin `--ejecutar`, ensayo); `--personal --medir` (staffCost contra `Admin/mediciones/personal-verdad.tsv`).
+Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentario; de dónde salió, en la meta del año en
+`Admin/carga-clubes/<club>.md`). Cuestan API los escalones 1b (Jev, centavos por club) y 2 (IA): esa corrida la hace Guido.
 
 ```
  LECTURA DE FILAS  una sola referencia a nota; una celda con "%" no es un importe; activo y pasivo en la misma fila = dos filas; sin código de cuenta ni numeración
@@ -652,17 +666,14 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [-
                    celda en una columna con forma de nota, con los vecinos leídos igual; decide la compuerta (una sola pasa → esa; las dos
                    con valores distintos → no decide). Una tabla con los dos perímetros lado a lado (encabezado "Όμιλος | Εταιρεία", Group /
                    Company, Konzern / Gesellschaft...) da las cifras de cada uno por separado y se toman las del ajuste `perimetro` (to-do 232 w:
-                   Olympiacos 2016-2025). Una fila con una cifra de forma imposible ("13.950,790,99", OCR) no se usa (to-do 232 ac). Filas
-                   propuestas que suman 0 no pasan la compuerta: un 0 sale solo por "ninguna fila" (la trampa del cero). La columna con forma de nota se juzga sin el encabezado del bloque (to-do 232 x:
-                   AEK 2025 transcribió "σημ." como "Α/Υ" y la columna dejaba de reconocerse). Escalón 1b (to-do 233 + 232 t): Jev propone la fila de caja (opción cerrada entre las filas del balance) y las de deuda (sí/no por fila),
-                   antes de la IA cara; decide la misma compuerta. Fijo en --club; medido en todos los clubes: caja 9 de 9, deuda 5 de 7 (los 2
-                   distintos, errores del sitio), US$ 0,11.
+                   Olympiacos 2016-2025). Una fila con una cifra de forma imposible ("13.950,790,99", OCR) no se usa (to-do 232 ac). La columna con forma de nota se juzga sin el encabezado del bloque (to-do 232 x:
+                   AEK 2025 transcribió "σημ." como "Α/Υ" y la columna dejaba de reconocerse). (to-do 232 v) Una celda que no puede ser
+                   importe en ningún formato tampoco es cifra: entero con punto final ("24.") o dos o más puntos con grupos de menos de 3
+                   cifras ("7.1.3"); Grecia: Olympiacos 2017 "| Ταμειακά διαθέσιμα | 24. | 1.820.725,55 |", Aris 2019 "| ... | 7.1.3 | 420.500,00 |".
  PERSONAL         (to-do 229 + 232 s) `caja-deuda.mjs --personal`: staffCost (costo de personal del ejercicio, interno) = la fila de total que
                   Jev elige entre las de todos los documentos del mismo cierre, con la compuerta del vecino (medido: 9 de 9 en Volos y
                   Panetolikos). `--partir` propone ajustes para separarlo de una fila global de gasto cuando el año no tiene wages_squad y
-                  hay UNA sola fila global >= staffCost; se aplican con verificar.mjs + cargar.mjs --reemplazar (que conserva staffCost). (to-do 232 v) Una celda que no puede ser importe en ningún formato tampoco es
-                   cifra: entero con punto final ("24.") o dos o más puntos con grupos de menos de 3 cifras ("7.1.3"); Grecia: Olympiacos
-                   2017 "| Ταμειακά διαθέσιμα | 24. | 1.820.725,55 |", Aris 2019 "| ... | 7.1.3 | 420.500,00 |"
+                  hay UNA sola fila global >= staffCost; se aplican con verificar.mjs + cargar.mjs --reemplazar (que conserva staffCost).
  PÁGINAS DEL BALANCE  título o total del balance, y no el flujo de efectivo ni los cambios en el patrimonio (una FILA con esas palabras
                       no cuenta si la página tiene el título del balance como encabezado)
  PERÍMETRO  cada página del balance es consolidado o individual por su encabezado; con ajuste `perimetro` solo cuenta ese (si el .md
@@ -670,18 +681,24 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [-
  ESCALA     una por documento (la del estado de resultados contra lo cargado); la del vecino, con SU escala; en la compuerta, si
             el valor no es plausible (1/100 a 100 veces el año cargado más cercano) o no pasa, se prueban las otras escalas y se
             acepta si UNA sola da ok y plausible
- ESCALÓN 0  ajuste manual `caja` / `deuda` del año · precedente del club (las familias que suman lo cargado en el año más cercano)
+ AJUSTE MANUAL `caja` / `deuda` del año (Versiones 419 y 495): el número tal cual impreso, gana sobre la escalera y NO pasa por la
+            compuerta (es una decisión de Guido)
+ ESCALÓN 0  precedente del club (las familias que suman lo cargado en el año más cercano)
  ESCALÓN 1  diccionario (vocabulario.mjs) + términos del club o del documento (ajuste `deuda-incluye`); jerarquía de balancete: padre e
             hija no se suman; cuenta D no es deuda. Además propone: deuda corriente + no corriente de la misma etiqueta (exactamente
             dos filas, a cada lado del total del pasivo no corriente); las filas de la nota de efectivo si la caja es una parte; el total
             de la nota de deuda si no hay otra fila de deuda
+ ESCALÓN 1b Jev (to-do 233 + 232 t, fijo en --club): propone la fila de caja (opción cerrada entre las filas del balance) y las de
+            deuda (sí/no por fila), antes de la IA cara; medido en todos los clubes: caja 9 de 9, deuda 5 de 7 (los 2 distintos, errores
+            del sitio)
  ESCALÓN 2  IA (solo líneas)
  LA NOTA DE LA FILA (deuda, to-do 228): si la propuesta es una fila del balance con su nota ("6.15") y la nota muestra que es solo una
             parte (la fila es uno de los totales de la nota, o la diferencia está impresa), se propone la suma de los totales de la nota
             (tablas con columna del año y del anterior; un total es la fila que suma las de arriba). Misma compuerta: pasa una sola → esa;
             pasan las dos con valores distintos → no decide (AEK 2021: la fila 5.029.327 es el largo plazo, la nota da 6.038.235)
  COMPUERTA (la misma para todos): la familia de la fila es la del dato y el año anterior cargado o el documento siguiente dicen lo mismo
-            (el documento anterior también confirma, solo a favor; por debajo de 1.500 unidades, coincidir es ser el mismo número)
+            (el documento anterior también confirma, solo a favor; por debajo de 1.500 unidades, coincidir es ser el mismo número).
+            Filas propuestas que suman 0 no pasan, en ningún escalón: un 0 sale solo por "ninguna fila" (la trampa del cero)
             ── pasa → dato · no pasa → siguiente escalón · nada → null
  VECINO     lo cargado en el sitio o el documento vecino; nunca un valor aceptado en la misma corrida (Versión 502)
 ```
@@ -704,9 +721,9 @@ Los pendientes están en `auditorias/2026-10-04-clubes-pipeline.md` .
    En el mismo directorio y con el mismo script (`--deflactores`) viven los deflactores del PBI de EE.UU. y de la zona euro, la otra
    mitad de la cuenta: el tipo de cambio lleva cada cierre a USD de ese año y el deflactor lo lleva a USD de hoy (Finanzas, "Valores
    ajustados por inflación"). De esos dos archivos se genera `data/deflactores.js`; se corre una vez por año.
-7. Perímetro: cuando un documento trae los dos estados (individual y consolidado), se carga el **individual**, salvo que una controlada
-   concentre ingresos del club (por ejemplo, el marketing): eso se mira en el `.md` antes de fijar el ajuste `perimetro` del club. Se fija
-   antes del primer lote. Casos: Boca, Racing, Panathinaikos, Juventus.
+7. Perímetro: lo decide `perimetro-senales.mjs` antes de localizar (lote.mjs; ver la etapa 3, PASO A y PASO B) con la regla de
+   `Admin/CONVENCIONES-DATOS.md` ("qué perímetro se carga cuando la serie cambia"). Un ajuste `perimetro` a mano solo para lo que el lote
+   frena e imprime. Casos de la regla: Boca, Racing, Panathinaikos, Juventus, Aris.
 
 
 ---

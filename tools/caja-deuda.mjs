@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // ============================================================================
 // tools/caja-deuda.mjs — CAJA y DEUDA del balance (fiscalYearMeta.cash y .grossDebt), con el club ya publicado (no va en el lote). Gratis
-// salvo el escalón 2 (IA). NUNCA FRENA.
+// salvo los escalones 1b (Jev, centavos por club) y 2 (IA). NUNCA FRENA.
 //
 // POR QUÉ (Versión 352, plan aprobado por Guido el 2026-10-01: "enrich the process para tener caja y debt, pero que no tenerlo NO FRENE").
 // cargar.mjs escribía grossDebt y cash en null ("sin dato no es cero"), así que todo año cargado por el script quedaba sin el cuadro "Deuda
