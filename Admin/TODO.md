@@ -21,25 +21,9 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-ORDEN (2026-10-15): primero la revisión del pipeline (236), después el script que limpia la cola (232 aa), las altas
+ORDEN (2026-10-15): primero el script que limpia la cola (232 aa), las altas
 de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (232 e, 233, 230) y lo que espera una decisión de Guido (130,
 183, 51). Las letras del 232 marcadas "conocido, sin daño hoy" (k, l, n, o, z) no se trabajan salvo que algo cambie.
-
-236. REVISAR EL PIPELINE DESPUÉS DE LOS CAMBIOS DEL 232 Y EL 234 (pedido de Guido, 2026-10-15). MEDIDO el 2026-10-15: el ensayo de
-    `cargar.mjs` reproduce exacto 360 de 375 años publicados con el mismo documento (`tools/medir-cargar.mjs --contra-sitio`); `caja-deuda.mjs
-    --medir` y los lotes de prueba idénticos al inicio de la sesión. Goiás 2017 protegido con un ajuste. FALTA, cada punto con el ok de Guido
-    (no se toca el pipeline sin su autorización):
-    a) `cargar.mjs --reemplazar` confía en el registro (`cargado` de transcripciones-estado.jsonl), que queda viejo después de cargar: frenaban
-       21 años griegos y AEK 2016 todavía frena. Propuesta: que decida con el sitio (fiscalYearMeta), que ya consulta en la L364.
-    b) `gestiones-tanda.mjs` no encuentra los casos de la cola con detalle "club:año" (cargar.mjs L945 los escribe así desde el segundo caso
-       de un club): usar el club antes de los dos puntos en armar(), --club y L217.
-    c) Fortaleza CEIF 2020 "Sena" (21,9 M COP) bajo Gastos de Administración: publicada como admin; la respuesta de 2017 (aporte sobre la
-       nómina) la manda a wages_squad. Decisión de criterio.
-    d) PIPELINE.md y la skill club-or-year-onboarding contra el código (revisión de un subagente, 15 puntos): Estadio en 0 en 2021 (Covid) no
-       está; el orden de 7a/7b contra materialidad; "etiqueta repetida" dicha dos veces; perímetro que el lote ya fija solo (skill y
-       Decisión 7); escalón 1b Jev de caja-deuda y su costo; ajuste manual y trampa del cero fuera de la compuerta; la cascada de
-       chequeos-gratis sin describir; marca listo-para-jev de 1-4 rubros; reglas de la cola duplicadas; contadores fijos; cabeceras de
-       cargar.mjs (redondeo, escalón B) que contradicen al código. El detalle, en el CHANGELOG 699.
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.

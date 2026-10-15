@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 700 — To-do 236 cerrado: pipeline revisado (2026-10-15)
+
+- a) `cargar.mjs --reemplazar`: escalón 1, `data/` (el repo local) ya tiene el año aunque el registro esté viejo. Medido en 570 documentos:
+  AEK 2016 pasa; nada más cambia; 361 de 375 años publicados se reproducen exacto.
+- b) `gestiones-tanda.mjs` lee el club de los casos "club:año".
+- c) Fortaleza CEIF 2020 recargado: "Sena" (21,881 M COP, Gastos Laborales de administración) a wages_squad como el resto de su bloque y
+  la respuesta de 2017; mismo resultado. Goiás 2017: ajuste `categoria` para "Despesa com pessoal" (lo publicado no cambia).
+- d) PIPELINE.md, la skill club-or-year-onboarding (texto aprobado por Guido) y las cabeceras de `cargar.mjs` y `caja-deuda.mjs` al día con
+  el código (los puntos de la Versión 699). Quedan en PIPELINE.md las notas de medición históricas dentro de los escalones de la etapa 6.
+
 ## Versión 699 — Tie-out con el redondeo impreso; medición del pipeline (to-do 236) (2026-10-15)
 
 - `toleranciaTieOut()` (js/finanzas-calc.js), la usan verifyTieOuts y audit.js: n renglones x media unidad impresa, mínimo 0,01. Los 3 "no

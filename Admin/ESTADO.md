@@ -49,7 +49,9 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   empleados) se pregunta y se contesta por renglón (`cargar.mjs`, clave "etiqueta@renglón"); la categoría del renglón, si no la tiene, sale
   de sus otras filas. Deuda y caja sin dato son null en todo el sitio (no queda ningún 0/0 de la convención vieja) y se muestran "—";
   sin las dos no hay deuda neta. Una cifra con forma imposible del OCR no se valida gratis en la etapa 2. Para medir un cambio de
-  `cargar.mjs` en todos los documentos: `tools/medir-cargar.mjs`.
+  `cargar.mjs` en todos los documentos: `tools/medir-cargar.mjs` (`--contra-sitio`: ¿el ensayo reproduce lo publicado?). `--reemplazar`
+  reconoce un año cargado por `data/` aunque el registro esté viejo. El tie-out tolera el redondeo de la unidad impresa
+  (`toleranciaTieOut()`, n renglones x media unidad): un redondeo no se silencia en `audit-ignore.json`.
 - `caja-deuda.mjs` lee cada fila con y sin la celda con forma de nota y decide la compuerta (que también confirma con el documento anterior);
   en deuda, si la nota de la fila muestra que la fila es solo una parte, propone la suma de la nota (y si pasan las dos, no decide).
   Antes de la IA cara prueba Jev (escalón 1b, fijo en `--club`: elige la fila de caja y las de deuda sin reglas por idioma). La compuerta
