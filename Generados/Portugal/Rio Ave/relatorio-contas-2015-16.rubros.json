@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2015-16.pdf",
   "club": "rioave-pt",
   "year": 2016,
-  "generatedAt": "2026-10-15T13:14:09.499Z",
+  "generatedAt": "2026-10-15T13:36:53.941Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         0.232789
       ],
-      "glosa": "Ingresos de taquilla"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "patrocínio e publicidade",
@@ -64,7 +64,7 @@
       "values": [
         0.040561
       ],
-      "glosa": "Compensaciones de la UEFA"
+      "glosa": "Participaciones de la UEFA"
     },
     {
       "label": "Subsidio Deslocações ás Ilhas",
@@ -74,7 +74,7 @@
       "values": [
         0.002533
       ],
-      "glosa": "Subvenciones por desplazamientos a las islas"
+      "glosa": "Subvención por desplazamientos a las islas"
     },
     {
       "label": "Royalties",
@@ -84,7 +84,7 @@
       "values": [
         0.004
       ],
-      "glosa": "Cánones y regalías"
+      "glosa": "Royalties"
     },
     {
       "label": "Participação nas Competições Europeias",
@@ -134,7 +134,7 @@
       "values": [
         0.084607
       ],
-      "glosa": "Indemnizaciones por accidentes de trabajo"
+      "glosa": "Indemnizaciones AT"
     },
     {
       "label": "Outros",
@@ -154,7 +154,7 @@
       "values": [
         0.013154
       ],
-      "glosa": "Subcontratación"
+      "glosa": "Subcontratos"
     },
     {
       "label": "Trabalhos especializados",
@@ -244,7 +244,7 @@
       "values": [
         0.001283
       ],
-      "glosa": "Artículos para obsequio"
+      "glosa": "Artículos para regalo"
     },
     {
       "label": "Equipamento Desportivo",
@@ -254,7 +254,7 @@
       "values": [
         0.10041
       ],
-      "glosa": "Material deportivo"
+      "glosa": "Equipamiento deportivo"
     },
     {
       "label": "Medicamentos e Artigos de Saúde",
@@ -264,7 +264,7 @@
       "values": [
         0.018759
       ],
-      "glosa": "Medicamentos y artículos sanitarios"
+      "glosa": "Medicamentos y material sanitario"
     },
     {
       "label": "Outros materiais",
@@ -354,7 +354,7 @@
       "values": [
         0.016504
       ],
-      "glosa": "Limpieza, higiene y acondicionamiento"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Outros serviços diversos",
@@ -394,7 +394,7 @@
       "values": [
         0.318634
       ],
-      "glosa": "Seguros de accidentes de trabajo y enfermedades profesionales"
+      "glosa": "Seguros de accidentes laborales y enfermedades profesionales"
     },
     {
       "label": "Outros gastos",
@@ -414,7 +414,7 @@
       "values": [
         0.012912
       ],
-      "glosa": "Deterioro de créditos a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Quotizações/Inscrições",
@@ -514,7 +514,7 @@
       "values": [
         0.001265
       ],
-      "glosa": "Instalaciones y equipamiento técnico"
+      "glosa": "Equipamiento básico"
     },
     {
       "label": "Equipamento de Transporte",
@@ -534,7 +534,7 @@
       "values": [
         0.001091
       ],
-      "glosa": "Equipamiento de oficina"
+      "glosa": "Equipamiento administrativo"
     },
     {
       "label": "Outros Ativos Fixos Tangíveis",

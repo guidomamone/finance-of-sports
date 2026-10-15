@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.md",
- "generado": "2026-10-15T13:21:37.426Z",
+ "generado": "2026-10-15T13:36:53.995Z",
  "estado": "ok",
  "clubId": "rioave-pt",
  "year": 2024,
@@ -118,8 +118,7 @@
   "duda de localizar que no afecta la carga: Los cuadros de gestión de pág. 7-10 tienen tres épocas y reagrupan rubros ya desglosados en las notas 17-25.",
   "duda de extraer ya contestada para el club (antes de su alta) (fila-ilegible, \"Vendas e prestações de serviços\"): aceptar, en relatorio-contas-2023-24.pdf",
   "duda de extraer que no afecta la carga: L1292 tiene la celda 2024 vacía; se cargó con actual vacío.",
-  "duda de extraer que no afecta la carga: b38 es un cuadro de movimiento de saldo (saldo inicial y final no son resultado); L1329 dice 4,86 vs 4,89 en L351, diferencia de céntimos.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: b38 es un cuadro de movimiento de saldo (saldo inicial y final no son resultado); L1329 dice 4,86 vs 4,89 en L351, diferencia de céntimos."
  ],
  "reintentar": null,
  "reintentado": false,

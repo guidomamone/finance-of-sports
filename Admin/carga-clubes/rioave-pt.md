@@ -623,6 +623,92 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2016–17 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Rio Ave".
 ```
 
+## 2016
+
+### Ingresos
+
+```text
+2016: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Rio Ave/relatorio-contas-2015-16.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Rio Ave/relatorio-contas-2015-16.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | receitos de bilheteira | pág. 2, Jev 1 |
+| 2 | patrocínio e publicidade | pág. 2, Jev 1 |
+| 3 | direitos de transmissão | pág. 2, Jev 1 |
+| 4 | atividades comerciais | pág. 2, Jev 1 |
+| 5 | outros lucros de exploração | pág. 2, Jev 1 |
+| 6 | Comparticipaçoes da UEFA | pág. 24, precedente |
+| 7 | Subsidio Deslocações ás Ilhas | pág. 24, Jev 0.99 |
+| 8 | Royalties | pág. 26, precedente |
+| 9 | Participação nas Competições Europeias | pág. 26, precedente |
+| 10 | Participação nas Competições Nacionais | pág. 26, precedente |
+| 11 | Cedencia de Jogadores | pág. 26, precedente |
+| 12 | Venda de Direitos Desportivos | pág. 26, precedente |
+| 13 | Indemnizações AT | pág. 26, precedente |
+| 14 | Outros | pág. 26, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subcontratos | pág. 24, precedente |
+| 2 | Trabalhos especializados | pág. 24, precedente |
+| 3 | Vigilância e segurança | pág. 24, precedente |
+| 4 | Honorários | pág. 24, precedente |
+| 5 | Comissões | pág. 24, precedente |
+| 6 | Conservação e reparação | pág. 24, precedente |
+| 7 | Outros serviços especializados | pág. 24, precedente |
+| 8 | Livros e Documentação Técnica | pág. 24, precedente |
+| 9 | Material de escritório | pág. 24, precedente |
+| 10 | Artigos para oferta | pág. 24, precedente |
+| 11 | Equipamento Desportivo | pág. 24, precedente |
+| 12 | Medicamentos e Artigos de Saúde | pág. 24, precedente |
+| 13 | Outros materiais | pág. 24, precedente |
+| 14 | Electricidade | pág. 24, precedente |
+| 15 | Combustíveis | pág. 24, precedente |
+| 16 | Outras energias e fluidos | pág. 24, precedente |
+| 17 | Deslocações e estadas | pág. 24, precedente |
+| 18 | Rendas e alugueres | pág. 24, precedente |
+| 19 | Comunicação | pág. 24, precedente |
+| 20 | Seguros | pág. 24, precedente |
+| 21 | Limpeza, higiene e conforto | pág. 24, precedente |
+| 22 | Outros serviços diversos | pág. 24, precedente |
+| 23 | Remunerações do pessoal | pág. 25, precedente |
+| 24 | Encargos s/ remunerações | pág. 25, precedente |
+| 25 | Seguros de acidentes no trabalho e doenças profissionais | pág. 25, precedente |
+| 26 | Outros gastos | pág. 25, precedente |
+| 27 | Imparidade de dívidas a receber (perdas/reversões) | pág. 2, precedente |
+| 28 | Quotizações/Inscrições | pág. 26, precedente |
+| 29 | Impostos | pág. 26, precedente |
+| 30 | Multas e Penalidades | pág. 26, precedente |
+| 31 | Alienação de Jogadores (valor líquido) | pág. 26, ? 0.75 |
+| 32 | Donativos | pág. 26, precedente |
+| 33 | Outros Gastos e Perdas | pág. 26, precedente |
+| 34 | Outros Juros | pág. 26, precedente |
+| 35 | Outros Gastos de Financiamento | pág. 26, precedente |
+| 36 | Edifícios e outras construções | pág. 26, precedente |
+| 37 | Equipamento Básico | pág. 26, precedente |
+| 38 | Equipamento de Transporte | pág. 26, precedente |
+| 39 | Equipamento Administrativo | pág. 26, precedente |
+| 40 | Outros Ativos Fixos Tangíveis | pág. 26, precedente |
+| 41 | Outros Direitos (Passes dos jogadores) | pág. 26, precedente |
+| 42 | Outros Ativos Intangíveis | pág. 26, precedente |
+
+### Meta
+
+```text
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2016-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2016-06-30
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2015–16 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Rio Ave".
+```
+
 ## Fuentes
 
 ### rioave-pt-relatorio-contas-2017-18
@@ -679,4 +765,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Rio Ave/relatorio-contas-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### rioave-pt-relatorio-contas-2015-16
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Rio Ave/relatorio-contas-2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

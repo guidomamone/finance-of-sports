@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2019-20.pdf",
   "club": "rioave-pt",
   "year": 2020,
-  "generatedAt": "2026-10-15T13:14:09.514Z",
+  "generatedAt": "2026-10-15T13:36:53.982Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         0.000483
       ],
-      "glosa": "Beneficios de explotación"
+      "glosa": "Beneficio de explotación"
     },
     {
       "label": "Subsídios do Estado e outros entes públicos",
@@ -64,7 +64,7 @@
       "values": [
         0.070292
       ],
-      "glosa": "Subvenciones del Estado y otros entes públicos"
+      "glosa": "Subvenciones del Estado y otras entidades públicas"
     },
     {
       "label": "Subsídios de outras entidades",
@@ -164,7 +164,7 @@
       "values": [
         0.049384
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontratación"
     },
     {
       "label": "Trabalhos especializados",
@@ -274,7 +274,7 @@
       "values": [
         0.044242
       ],
-      "glosa": "Medicamentos y artículos sanitarios"
+      "glosa": "Medicamentos y artículos de salud"
     },
     {
       "label": "Outros materiais",
@@ -334,7 +334,7 @@
       "values": [
         0.041364
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Rentas y alquileres"
     },
     {
       "label": "Comunicação",
@@ -344,7 +344,7 @@
       "values": [
         0.018529
       ],
-      "glosa": "Comunicación"
+      "glosa": "Comunicaciones"
     },
     {
       "label": "Seguros",
@@ -364,7 +364,7 @@
       "values": [
         0.04921
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Outros serviços diversos",
@@ -404,7 +404,7 @@
       "values": [
         0.58389
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes no trabalho e doenças profissionais",
@@ -444,7 +444,7 @@
       "values": [
         0.105713
       ],
-      "glosa": "Cuotas/Inscripciones"
+      "glosa": "Cuotas e inscripciones"
     },
     {
       "label": "Impostos",
@@ -474,7 +474,7 @@
       "values": [
         0.075
       ],
-      "glosa": "Bajas de activo"
+      "glosa": "Bajas de activos"
     },
     {
       "label": "Donativos",
@@ -504,7 +504,7 @@
       "values": [
         0.228752
       ],
-      "glosa": "Activos fijos tangibles"
+      "glosa": "Inmovilizado material"
     },
     {
       "label": "Ativos intangíveis",
@@ -514,7 +514,7 @@
       "values": [
         1.238707
       ],
-      "glosa": "Activos intangibles"
+      "glosa": "Inmovilizado intangible"
     }
   ]
 }

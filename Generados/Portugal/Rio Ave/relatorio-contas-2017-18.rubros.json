@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2017-18.pdf",
   "club": "rioave-pt",
   "year": 2018,
-  "generatedAt": "2026-10-15T13:14:09.508Z",
+  "generatedAt": "2026-10-15T13:36:53.972Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         0.000102
       ],
-      "glosa": "Otros beneficios de explotación"
+      "glosa": "Otros ingresos de explotación"
     },
     {
       "label": "Subsídios à Exploração",
@@ -74,7 +74,7 @@
       "values": [
         0.002
       ],
-      "glosa": "Royalties"
+      "glosa": "Cánones"
     },
     {
       "label": "Participação nas Competições Europeias",
@@ -164,7 +164,7 @@
       "values": [
         0.087766
       ],
-      "glosa": "Subcontratos"
+      "glosa": "Subcontratas"
     },
     {
       "label": "Trabalhos especializados",
@@ -204,7 +204,7 @@
       "values": [
         0.50836
       ],
-      "glosa": "Gastos por honorarios de agentes deportivos"
+      "glosa": "Honorarios de agentes deportivos"
     },
     {
       "label": "Outros serviços especializados",
@@ -224,7 +224,7 @@
       "values": [
         0.08747
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Reparación y conservación"
     },
     {
       "label": "Outros serviços especializados",
@@ -264,7 +264,7 @@
       "values": [
         0.02182
       ],
-      "glosa": "Artículos de regalo"
+      "glosa": "Artículos para obsequio"
     },
     {
       "label": "Equipamento Desportivo",
@@ -274,7 +274,7 @@
       "values": [
         0.073413
       ],
-      "glosa": "Equipamiento deportivo"
+      "glosa": "Material deportivo"
     },
     {
       "label": "Medicamentos e Artigos de Saúde",
@@ -284,7 +284,7 @@
       "values": [
         0.055591
       ],
-      "glosa": "Medicamentos y material sanitario"
+      "glosa": "Medicamentos y artículos de salud"
     },
     {
       "label": "Outros materiais",
@@ -364,7 +364,7 @@
       "values": [
         0.009893
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -454,7 +454,7 @@
       "values": [
         0.122144
       ],
-      "glosa": "Cuotas/Inscripciones"
+      "glosa": "Cuotas e inscripciones"
     },
     {
       "label": "Impostos",
@@ -474,7 +474,7 @@
       "values": [
         0.042792
       ],
-      "glosa": "Multas y penalizaciones"
+      "glosa": "Multas y sanciones"
     },
     {
       "label": "Abates",
@@ -484,7 +484,7 @@
       "values": [
         0.063833
       ],
-      "glosa": "Bajas de activos"
+      "glosa": "Bajas de activo"
     },
     {
       "label": "Donativos",
@@ -534,7 +534,7 @@
       "values": [
         0.163561
       ],
-      "glosa": "Activos fijos tangibles"
+      "glosa": "Inmovilizado material"
     },
     {
       "label": "Ativos intangíveis",
@@ -544,7 +544,7 @@
       "values": [
         1.256375
       ],
-      "glosa": "Activos intangibles"
+      "glosa": "Inmovilizado intangible"
     }
   ]
 }
