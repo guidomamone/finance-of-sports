@@ -147,6 +147,9 @@ llegue acá.
     o) VERIFICAR (186 casos en Portugal): 64 dudas de extraer, 39 dudas de tema (escala, cuadro), 32 que no cierran, 24 de localizar,
        14 de año vecino, 10 de primer año. Mirar antes de diseñar si las dudas de escala ("¿en euros y no en miles?") y las filas
        informativas debajo del total se repiten por club y se pueden contestar una vez por club, como en m).
+    p) LA ETAPA 8 PREGUNTA EL PERÍMETRO AUNQUE HAYA AJUSTE MANUAL DEL CLUB (lote 78: Benfica 2019 y Boavista 2024 llegaron a la cola con
+       "¿se carga CONSOLIDADO?" teniendo el ajuste `perimetro` del club, y en Boavista la propuesta era la contraria al ajuste). El ajuste
+       es el escalón 0: si existe, la pregunta no debería abrirse.
 238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
    sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
    (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
