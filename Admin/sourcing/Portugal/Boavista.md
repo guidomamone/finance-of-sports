@@ -13,3 +13,5 @@
 
 - Relatório e Contas 2023/24 de la SAD, partido en 3 PDF (`RCSAD-23-24_1-3`, `_2-3`, `_3-3`): unir las tres partes antes de transcribir. Otras temporadas no aparecen en el CDX de `boavistafc.pt`.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2024 desde `Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf` (sourceId `boavista-pt-rcsad-23-24-1-3`).

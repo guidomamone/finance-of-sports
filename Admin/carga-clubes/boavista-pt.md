@@ -1,0 +1,93 @@
+# boavista-pt — evidencia de carga
+
+Lo que antes iba como comentario en el data file del club, `data/<país>/boavista-pt-data.js` (la regla: `Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA
+COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y meta. Las notas de cada fila van en una tabla con su número de
+fila (hay nombres de rubro repetidos en un mismo año).
+
+## Cabecera
+
+```text
+Boavista: alta por tools/alta-club.mjs (2026-10-15) desde Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf. brandColor #000000
+(procedencia en Admin/sourcing/Portugal/Boavista.md; tools/cargar-lote.mjs).
+```
+
+```text
+data/pt/boavista-pt-data.js — Boavista Futebol Clube, Futebol, SAD (Portugal).
+ALTA POR SCRIPT (tools/alta-club.mjs, 2026-10-15), SIN EJERCICIOS CARGADOS TODAVÍA: las estructuras del data file
+nacen vacías a propósito. Los rubros, los totales oficiales y el resto del fiscalYearMeta los agrega la etapa de carga.
+
+Documento que originó el alta: Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf
+
+De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
+  id                 ok        "boavista-pt" — slug de "Boavista" + '-pt' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
+  name               ok        "Boavista Futebol Clube, Futebol, SAD" — respuesta de Guido en la cola (4ea2e8f)
+  displayName        ok        "Boavista" — nombre de la carpeta del club en Clubes/
+  country            ok        "PT" — carpeta de país "Portugal" (tabla PAISES)
+  reportingCurrency  ok        "EUR" — moneda de curso legal de Portugal
+  fiscalYearStart    ok        "07-01" — cierre del ejercicio: contenido del .md (5 de 7 fechas de fin de mes caen en el mes 6)
+  sport              ok        "futbol" — el .md nombra el fútbol 79 veces y ningún otro deporte más que eso
+  brandColor         pendiente (ausente) — la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)
+  anio               ok        2024 — contenido del .md (año más nuevo con fecha de cierre)
+  cierre             ok        "2024-06-30" — año del ejercicio + mes de cierre (contenido del .md (5 de 7 fechas de fin de mes caen en el mes 6))
+  reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
+  perimetro          ok        "individual" — ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y 
+  currency           ok        "EUR" — moneda de curso legal de Portugal (tabla PAISES de alta-club.mjs)
+  fxRef              ok        "EUR@2024-06-30" — el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2024-06-30 = 0.9337 (Cierre BCE al 30/6/2024 (1 EUR = 1,071 USD))
+  sourceId           ok        "boavista-pt-rcsad-23-24-1-3" — clubId + nombre del archivo en slug
+  liga               ok        "pt-primeiraliga" — roster cacheado de "2023–24 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Boavista"
+
+FISCAL YEAR META PROPUESTO para 2024 (NO registrado: un ejercicio con meta y
+sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
+  2024: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2024-06-30","sourceId":"boavista-pt-rcsad-23-24-1-3"}
+```
+
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Boavista/RCSAD-23-24_1-3.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Boavista/RCSAD-23-24_1-3.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subsídios à exploração | pág. 14, Jev 0.98 |
+| 2 | Outros rendimentos | pág. 14, Jev 0.98 |
+| 3 | Bilhetes e Camarotes | pág. 14, Jev 0.99 |
+| 4 | Direitos Televisivos | pág. 14, Jev 1 |
+| 5 | Publicidade | pág. 14, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Fornecimentos e serviços externos | pág. 14, Jev 1 |
+| 2 | Gastos com o pessoal | pág. 14, Jev 0.91 |
+| 3 | Outros gastos | pág. 14, Jev 1 |
+| 4 | Gastos/reversões de depreciação e de amortização | pág. 14, Jev 0.93 |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 507 074,99. El estado trae las ventas en un renglón; la nota 22 (en la parte 2 del PDF, que el lote no lee) lo desglosa.
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 3 463 888,92. Desglose de Vendas e serviços prestados, nota 22.
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 453 304,23. Desglose de Vendas e serviços prestados, nota 22.
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2023–24 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Boavista".
+```
+
+## Fuentes
+
+### boavista-pt-rcsad-23-24-1-3
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Boavista/RCSAD-23-24_1-3.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
