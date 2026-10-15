@@ -15,6 +15,20 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 697 — PAOK y Olympiacos rehechos con la pregunta por renglón (2026-10-15)
+
+- To-do 234. PAOK 2017 y 2019-2025: personal, honorarios y servicios de terceros de administración y comercialización a
+  admin_general_expense (antes wages_squad), y sus amortizaciones (0,24-0,28 M por año) a depreciation (antes player_amortisation); 18 casos
+  de la cola de 2017 contestados por subagente Sonnet, los otros años los cerró la familia. 2020 sin cambios (sin desglose).
+- Olympiacos 2016-2025: las cargas sociales de los otros empleados (0,8-1,23 M por año) a admin_general_expense; wages_squad queda igual al
+  total impreso del cuadro de jugadores. Mismo resultado neto en los 18 años, auditoría P0 0 / P1 0.
+- `cargar.mjs`, etiqueta repetida: los renglones se separan por título exacto (no por palabras en común, que juntaban "Δαπάνη παροχών
+  ποδοσφαιριστών" con "... λοιπών εργαζομένων") y la categoría del renglón tiene un escalón nuevo (la de sus otras filas, si coinciden).
+  Medido con el ensayo de cargar en 570 documentos: 25 preguntas nuevas en 11, nada cambia sin pregunta. Además de Olympiacos, pregunta
+  Ferroviária 2016 ("Alimentação" y "Serviços Prestados por Terceiros" en costos operativos y en administración) si se recarga.
+- El registro de transcripciones tenía los años de PAOK como no cargados (`--reemplazar` no se activaba): regenerado con
+  `inventario-transcripciones.mjs --solo`.
+
 ## Versión 696 — Tanda de gestiones de la cola (2026-10-15)
 
 - `tanda-2026-10-14-2` corrida con 10 subagentes y cargada con `tools/gestiones-tanda.mjs`: 12 gestiones confirmadas (Criciúma, Ferroviária,

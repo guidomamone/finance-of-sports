@@ -21,16 +21,9 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-ORDEN (2026-10-15): primero lo que corrige datos publicados (234, 232 ab, 232 ad), después el script que limpia la cola (232 aa), las altas
+ORDEN (2026-10-15): primero lo que corrige datos publicados (232 ab, 232 ad), después el script que limpia la cola (232 aa), las altas
 de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (232 e, 233, 230) y lo que espera una decisión de Guido (130,
 183, 51). Las letras del 232 marcadas "conocido, sin daño hoy" (k, l, n, o, z) no se trabajan salvo que algo cambie.
-
-234. REHACER PAOK (2017, 2019-2025) Y OLYMPIACOS 2025 CON LA PREGUNTA POR RENGLÓN (2026-10-15). Desde el 232 h, una etiqueta bajo dos
-    renglones de categoría distinta se decide por renglón: PAOK publica como amortización de pases la amortización de bienes de
-    administración y ventas ("Αποσβέσεις", 0,2-0,3 M por año) y Olympiacos 2025 "Εισφορές κοινωνικής ασφάλισης" de otros empleados. Pasos:
-    `cargar.mjs "<pdf>" --desde-verificacion --reemplazar` en ensayo levanta los casos "etiqueta@renglón" (PAOK: 12-18 por año; el 232 d cierra
-    los iguales de otros años al contestar uno), la cola la contesta un subagente (criterio de club-data-mapping), y después --escribir, un
-    commit por año. Ojo: "Αμοιβές τρίτων" del cuadro de fútbol de PAOK ya va a wages_squad con pregunta al club (CHANGELOG 694).
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
