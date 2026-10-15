@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.pdf",
- "generado": "2026-10-15T13:19:54.381Z",
+ "generado": "2026-10-15T13:44:42.295Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (famalicao-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "6 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Competições\" -> competition_bonus 0.7; \"Direitos Clube\" -> broadcasting 0.55; \"Custo das mercadorias vendidas\" -> admin_general_expense 0.5; \"Seguros\" -> admin_general_expense 0.55; \"Gastos de ação social\" -> admin_general_expense 0.4"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [],
@@ -52,9 +40,9 @@
     "amountNative": 0.15935,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Publicidade",
@@ -82,9 +70,9 @@
     "amountNative": 3.6,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Apostas desportivas",
@@ -134,9 +122,9 @@
     "amountNative": -0.109644,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Serviços especializados",
@@ -244,29 +232,29 @@
     "amountNative": -1.120376,
     "disclosureLevel": "aggregated",
     "_pag": 34,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos de ação social",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "wages_squad",
     "amountNative": -0.076881,
     "disclosureLevel": "aggregated",
     "_pag": 34,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos com pessoal",
-    "normalizedCategory": "wages_squad",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -0.502903,
     "disclosureLevel": "aggregated",
     "_pag": 34,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Imparidade de dívidas a receber (perdas/reversões)",
@@ -447,11 +435,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestações de serviços\")",
    "signoFijo": 0.15935,
    "cat": "competition_bonus",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ingreso por competiciones dentro de ventas y servicios (L1219)",
    "destino": "revenue",
    "amountNative": 0.15935
   },
@@ -493,11 +481,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestações de serviços\")",
    "signoFijo": 3.6,
    "cat": "broadcasting",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): cesión de derechos audiovisuales a Sport TV (L1228)",
    "destino": "revenue",
    "amountNative": 3.6
   },
@@ -570,11 +558,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.109644,
    "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): costo de la mercadería vendida, nota 22 (L1246-1256)",
    "destino": "expense",
    "amountNative": -0.109644
   },
@@ -740,11 +728,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 1.120376,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): seguros dentro de la nota de personal; criterio de Portugal, seguros a admin_general_expense (L1302)",
    "destino": "expense",
    "amountNative": -1.120376
   },
@@ -755,12 +743,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.076881,
-   "cat": "admin_general_expense",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): 'despesas hospitalares e exames médicos suportados com os atletas' (L1307)",
    "destino": "expense",
    "amountNative": -0.076881
   },
@@ -771,12 +759,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.502903,
-   "cat": "wages_squad",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): 'valores pagos pela cedência temporária de jogadores' por Olympiacos, Tombense y Granada (L1309); precedente cedências temporárias -> player_amortisation",
    "destino": "expense",
    "amountNative": -0.502903
   },
@@ -998,7 +986,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 1,
   "lineasIngreso": 10,
   "lineasGasto": 21,
   "metaFilas": 2,

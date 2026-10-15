@@ -22,3 +22,5 @@ especiales.
 Ninguna. Serie completa desde el primer ejercicio publicado por el club.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2022 desde `Clubes/Portugal/Famalicão/relatorio-contas-2021-22.pdf` (sourceId `famalicao-pt-relatorio-contas-2021-22`).
