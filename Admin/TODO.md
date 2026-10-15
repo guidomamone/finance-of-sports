@@ -109,8 +109,13 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
        se carga). Sin documento: Benfica 2010-11, Porto SAD 2019-20, Braga SAD 2017-18 a 2018-19 y 2020-21, AVS 2021-22.
     b1) ESTONIA Y BÉLGICA POR SUBAGENTES (decisión de Guido, 2026-10-15: usar el límite semanal de la suscripción en vez de API para
        transcribir países 100% digitales). Estonia: los 66 .md hechos (commit "Estonia: 66 transcripciones"). Falta: (1) correr
-       `pipeline.mjs --lista` sobre los PDFs de Estonia (solo hace la validación gratis, ya tienen .md) y después el lote; (2) Bélgica: 61
-       PDFs digitales, mismo procedimiento. Cómo: un subagente Sonnet por documento, en tandas de ~8, con las reglas de
+       `pipeline.mjs --lista` sobre los PDFs de Estonia (solo hace la validación gratis, ya tienen .md) y después el lote; (2) Bélgica:
+       47 de 61 .md hechos y commiteados; faltan los 14 más largos (31-57 págs.): Beerschot 2019-correction, 2020 a 2025; RWDM 2022 y
+       2025; Lommel SK 2024 y 2025; Union Saint-Gilloise (los 3 wf-*.pdf). El comparador da "no" en las páginas imagen del informe del
+       comisario (no tienen texto): se toman como buenas si sus totales coinciden con el balance. Para notar al cargar Bélgica:
+       Patro Eisden 2024 sin "correction" trae al final el informe del revisor de otra entidad (Patro Eisden Jeugd VZW); el informe del
+       comisario de Lierse SK 2023 habla de la vzw Lierse Kempenzonen (confirmar la entidad de cada carpeta); Patro Eisden 2017 y 2020
+       traen el pasivo del año anterior descuadrado en el propio PDF. Cómo: un subagente Sonnet por documento, en tandas de ~8, con las reglas de
        `Admin/transcripcion-subagentes/reglas.md` (formato, columnas, cifras partidas, páginas imagen) y los dos chequeos
        (`check-transcripcion-fidelidad.js` y `Admin/transcripcion-subagentes/comparar-numeros.mjs`); ~110.000 tokens por documento de ~20 págs.
        Para notar al verificar Estonia: Laagri 2023 es un primer ejercicio de menos de un año (constituido el 09.01.2023); Flora 2025 pág. 29
