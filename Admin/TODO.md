@@ -30,6 +30,13 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
        relatorio-contas-2022-23.md L75 y L108) cuando el documento dice "Período findo em 30 de Junho de 2023" (L87) y las columnas
        "30/06/2023 | 30/06/2022" (L93). Se resolvió con un ajuste `cierre`. Escalón posible: una fecha precedida por un nombre de lugar
        ("<Ciudad>, <día> de <mes> de <año>") es la firma, no el cierre; y el "período findo em" o la fecha de las columnas del estado manda.
+    b) Un renglón del estado que JUNTA amortización de pases y depreciación ("Gastos/reversões de depreciação e amortização", notas 4 y 5)
+       va entero a una sola categoría. Moreirense 2022: pases 1.031.142,16 (L720) + depreciación 89.555,61 (L691) = 1.120.697,77 (L498);
+       2025: 612.126 (L944) + 291.735 (L895) = 903.861 (L530). Se cargó entero como player_amortisation (la parte mayor, como PAOK).
+       Escalón posible: si las notas que el renglón cita dan cada parte y suman exacto el renglón, abrirlo en dos filas con su categoría.
+    c) El perfil (socios, otros deportes) es por club, pero un mismo club publica como entidades distintas: Rio Ave 2014-15 es el club
+       asociación (cuotas 217.671,75 y futsal), 2015-16 a 2022-23 la SDUQ y 2023-24 en adelante la SAD. Se contestó "no" (SDUQ/SAD); no
+       cambia nada hoy porque 2014-15 trae las cifras. Pensar si el perfil va por entidad o por ejercicio.
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
