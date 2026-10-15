@@ -15,6 +15,21 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 703 — Portugal, lote 76 cerrado: 24 años en el sitio; regla de entidad cuando el fútbol está en una SAD (2026-10-15)
+
+- Nuevos en el sitio: Alverca 2024-2025, Famalicão 2022 (alta), Moreirense 2023-2024, Rio Ave 2016 y 2024, Tondela 2021 (alta) y
+  Vitória Guimarães 2021, 2022, 2024 y 2025 (alta). Recargados: Alverca 2023 (venta de jugadores 694.020,93 abierta con la nota del
+  documento 2023-24) y Vitória Guimarães 2024 (venta de jugadores a player_sales). Lote 76 archivado.
+- Correcciones por ajuste: Alverca 2024, dos cifras del estado mal leídas por el OCR (Outros rendimentos y Outros gastos, 100.000 de
+  diferencia) y "Outros rendimentos" abierto con su nota; Rio Ave 2024, reversiones de imparidad sin signo y financiero neto (el .md
+  perdió los signos); Moreirense 2023, reversiones de imparidad y provisiones fuera de ingresos; Vitória Guimarães 2022 SAD, "Vendas e
+  serviços prestados" reemplazado por sus seis partes de la nota 16.
+- `alta-club.mjs` (to-do 237 m): los documentos descartados o parciales no cuentan como hermanos del documento base (medido: de 844
+  carpetas cambia solo Tondela). To-do 237 i-l: mejoras vistas en las corridas.
+- Regla nueva en CONVENCIONES-DATOS: qué entidad se carga cuando el fútbol está en una sociedad aparte (decisión de Guido). 42
+  documentos de Portugal a documentos-descartados (otra entidad, duplicados, versiones previas a la asamblea, comunicados, presupuestos).
+  Lista de transcripción del resto de Portugal: Admin/lotes/transcribir-portugal.txt.
+
 ## Versión 702 — Portugal, lote 76: primeros 12 años en el sitio (2026-10-15)
 
 - Altas: Rio Ave (2017-2020, 2022, 2023, 2025), Alverca (2022-2023), Nacional (2024), Moreirense (2022, 2025). Colas de verificación,

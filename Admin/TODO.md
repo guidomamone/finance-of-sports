@@ -93,14 +93,16 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
        datos de los clubes del lote 71 al cerrar Grecia; después, con las columnas por perímetro y Jev en caja-deuda.mjs, se sumaron
        Olympiacos (caja 2016-2025), AEK 2025 (caja), PAOK 2021 y Panetolikos 2022 (deuda). Conocido, sin tocar (histórico): Panathinaikos 2025 tiene
        "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου" como competition_bonus; en AEK 2023 y 2025 va como other_income.
-    b0) PORTUGAL, EN CURSO (lote 76, 2026-10-15). En el sitio: Rio Ave 2017-2020, 2022, 2023, 2025; Alverca 2022-2023; Nacional 2024;
-       Moreirense 2022 y 2025. Falta del lote 76: Famalicão 2022 y Vitória Guimarães 2022 SAD (cola contestada y ajustes nuevos: hace
-       falta correr el lote otra vez); Vitória Guimarães 2025 (cola contestada; falta el color en la revisión del alta, y mirar la venta de
-       jugadores en "Rendimentos e ganhos em investimentos", formato SNC); los que no cierran en la etapa 6: Alverca 2024-2025, Moreirense
-       2023-2024, Rio Ave 2015 (es del club asociación, 2014-15, y pide rearmar la transcripción con --reintentar), 2016 y 2024, Vitória
-       Guimarães 2021, 2022 y 2024 (dos entidades: los relatorio-contas-* y el de la SAD no coinciden); Tondela 2020-2021 (decisión de
-       Guido: cargar la SAD y descartar el relatório del club asociación). Sin transcribir: el resto de Portugal (Benfica, Porto,
-       Sporting, Braga, Marítimo y más, ~200 PDFs): `pipeline.mjs --dir "Clubes/Portugal"`. Mejoras de script vistas: to-do 237.
+    b0) PORTUGAL, EN CURSO. En el sitio, del lote 76 (archivado): Alverca 2022-2025, Famalicão 2022, Moreirense 2022-2025, Nacional
+       2024, Rio Ave 2016-2020 y 2022-2025, Tondela 2021 y Vitória Guimarães 2021, 2022, 2024 y 2025. Qué entidad se carga cuando el
+       fútbol está en una SAD: regla en Admin/CONVENCIONES-DATOS.md. Transcripción del resto (etapa 2):
+       `pipeline.mjs --lista Admin/lotes/transcribir-portugal.txt` (155 PDFs; los que no sirven ya están en documentos-descartados).
+       Después: el lote siguiente con solo los documentos que traen estado de resultados. A tener en cuenta al armarlo: Boavista 2023-24
+       viene partido en 3 PDFs (RCSAD-23-24_1-3/2-3/3-3); Sporting 1999 y 2000 están en escudos, con páginas rotadas, y el nombre del
+       archivo va un año antes del ejercicio (cierres 31/07/2000 y 31/07/2001); Sporting 2003-04 es de 11 meses (cambio de cierre) y se
+       carga igual (Guido); Chaves 2023-24 trae dos versiones del club; Chaves 2023-25, União de Leiria 2024-25 y Feirense solo tienen el
+       documento del club: aplicar el punto 3 de la regla (si el propio documento dice que el fútbol está en una SAD que no consolida, no
+       se carga). Sin documento: Benfica 2010-11, Porto SAD 2019-20, Braga SAD 2017-18 a 2018-19 y 2020-21, AVS 2021-22.
     b) SIGUIENTE. Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
        (`ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -1` para el número), `antes-de-localizar.mjs`, ensayo, Guido corre `lote.mjs --ejecutar
        --cargar`, y la cola se revisa con un Sonnet que recomienda respuestas con cita. Fichas listas para alta (`alta-club.mjs --todos`,
