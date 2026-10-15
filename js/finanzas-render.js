@@ -251,15 +251,25 @@
 
 
   // Los nombres "...Generic" quedaron de cuando coexistían con un motor solo para Boca, que ya no existe.
-  // ¿El documento de ESTE ejercicio desglosa deuda y caja? Deuda bruta = Caja = 0 en un documento oficial es un documento que no la
-  // publica, no una deuda cero (Admin/PANTALLA.md, "Deuda y caja en 0/0"). computeYearGeneric() escribe `meta.grossDebt || 0`, así
-  // que null y cero llegan iguales. Placeholder/pending_official quedan afuera: tienen su propio banner. Vive acá, compartida por el
-  // KPI y por la tabla de deuda, para que los dos no se contradigan.
+  // ¿El documento de ESTE ejercicio informa deuda Y caja? Sin uno de los dos (null en el dato) la deuda neta no se puede calcular:
+  // computeYearGeneric() escribe `meta.grossDebt || 0`, así que una caja sin dato restaba 0 y la deuda neta salía igual a la bruta
+  // (Argentinos 2019). Deuda bruta = Caja = 0 en un documento oficial tampoco es una deuda cero: es la convención vieja de "no se
+  // cargó" (Admin/PANTALLA.md, "Deuda y caja sin dato"). Un 0 impreso de uno solo de los dos sí es real (Sunderland 2024, caja 0).
+  // Placeholder/pending_official quedan afuera: tienen su propio banner. Vive acá, compartida por el KPI, la tabla de deuda, el
+  // multiaño y Comparar gestiones, para que no se contradigan.
   function deudaNoDesglosada(c){
     if(!c) return false;
-    const rt = (c.meta || {}).reportType;
-    if(rt === 'placeholder' || rt === 'pending_official') return false;
-    return c.grossDebt === 0 && c.cash === 0;
+    const m = c.meta || {};
+    if(m.reportType === 'placeholder' || m.reportType === 'pending_official') return false;
+    return m.grossDebt == null || m.cash == null || (c.grossDebt === 0 && c.cash === 0);
+  }
+  // El valor de una fila de la tabla de deuda: "—" si ese dato no está en el documento (null), no un 0.
+  function filaDeuda(c, campo){
+    if(!c) return null;
+    if(campo === 'netDebt') return deudaNoDesglosada(c) ? null : c.netDebt;
+    const m = c.meta || {};
+    if(m[campo] == null || (c.grossDebt === 0 && c.cash === 0)) return null;
+    return c[campo];
   }
 
 
@@ -270,13 +280,13 @@
     const prevMeta = prev ? yearMetaFor(prev.clubId, prev.year) : null;
     const rows = [
       {label:'Salarios / Ingresos', curTxt:(cur.wagesToTurnover*100).toFixed(0)+'%', prevTxt: prev ? (prev.wagesToTurnover*100).toFixed(0)+'%' : '—'},
-      {label:'Deuda bruta', cur:cur.grossDebt, prev: prev ? prev.grossDebt : null, bold:true},
-      {label:'Caja', cur:cur.cash, prev: prev ? prev.cash : null},
-      {label:'Deuda neta', cur:cur.netDebt, prev: prev ? prev.netDebt : null, bold:true, shade:true},
+      {label:'Deuda bruta', cur:filaDeuda(cur, 'grossDebt'), prev:filaDeuda(prev, 'grossDebt'), bold:true},
+      {label:'Caja', cur:filaDeuda(cur, 'cash'), prev:filaDeuda(prev, 'cash')},
+      {label:'Deuda neta', cur:filaDeuda(cur, 'netDebt'), prev:filaDeuda(prev, 'netDebt'), bold:true, shade:true},
     ];
     document.querySelector('#'+containerId+' tbody').innerHTML = rows.map(r => {
       const trCls = [r.bold?'pl-bold':'', r.shade?'pl-shade':''].join(' ');
-      const curVal = r.curTxt !== undefined ? r.curTxt : fmtDisplay(toDisplayValue(r.cur, curMeta, currentCurrency));
+      const curVal = r.curTxt !== undefined ? r.curTxt : (r.cur !== null ? fmtDisplay(toDisplayValue(r.cur, curMeta, currentCurrency)) : '—');
       const prevVal = r.prevTxt !== undefined ? r.prevTxt : (r.prev !== null ? fmtDisplay(toDisplayValue(r.prev, prevMeta, currentCurrency)) : '—');
       return `<tr class="${trCls}"><td>${tLabel(r.label)}</td><td>${curVal}</td><td>${prevVal}</td></tr>`;
     }).join('');
@@ -893,14 +903,15 @@
     document.querySelector('#compareTable tbody').innerHTML = rows.map(r => {
       const [label, va, vb, type] = r;
       const isMoney = type === 'money' || type === 'money-inv';
-      const fa = isMoney ? fmtAmount(va, 'USD') : va;
-      const fb = isMoney ? fmtAmount(vb, 'USD') : vb;
+      const fa = va == null ? '—' : isMoney ? fmtAmount(va, 'USD') : va;
+      const fb = vb == null ? '—' : isMoney ? fmtAmount(vb, 'USD') : vb;
       if(type === 'text'){
         return `<tr><td>${label}</td><td>${fa}</td><td>${fb}</td></tr>`;
       }
       const lowerBetter = type === 'num-inv' || type === 'money-inv';
-      const aBetter = lowerBetter ? va < vb : va > vb;
-      const bBetter = lowerBetter ? vb < va : vb > va;
+      const ambos = va != null && vb != null;
+      const aBetter = ambos && (lowerBetter ? va < vb : va > vb);
+      const bBetter = ambos && (lowerBetter ? vb < va : vb > va);
       return `<tr><td>${label}</td><td class="${aBetter?'better':''}">${fa}</td><td class="${bBetter?'better':''}">${fb}</td></tr>`;
     }).join('');
   }

@@ -1453,9 +1453,9 @@ window.CLUB_SELECTOR = (function(){
     var meta = window.yearMetaFor(id, year);
     var f = facReal(year);
     var usd = function(v){ return window.toDisplayValue(v, meta, 'USD') * f; };
-    // Mismo test que usa el sitio para "la fuente no informa deuda ni caja": los dos
-    // en null, o los dos en CERO exacto (así lo escriben los presupuestos).
-    var sinDeuda = (c.meta.grossDebt == null && c.meta.cash == null)
+    // Mismo test que deudaNoDesglosada() (js/finanzas-render.js): sin deuda O sin caja (null) no hay
+    // deuda neta; los dos en CERO exacto es la convención vieja de "no se cargó".
+    var sinDeuda = c.meta.grossDebt == null || c.meta.cash == null
                 || (c.meta.grossDebt === 0 && c.meta.cash === 0);
     // Y LO MISMO PARA LOS GASTOS: un club con ingresos y sin estructura de costos (la J.League publica solo el ingreso de cada club)
     // diría "Gastos 0,0" y un resultado igual a los ingresos, que no es un dato incompleto sino uno FALSO. El resultado cae con los

@@ -532,7 +532,9 @@ const FIN_MULTI_DEBT = (function(){
       const v = x => toDisplayValue(x, meta, currentCurrency) * f;
       return { y, presu, sinDeuda,
         wr: c && c.revenue ? c.wagesToTurnover * 100 : null,
-        gd: sinDeuda ? null : v(c.grossDebt), ca: sinDeuda ? null : v(c.cash), nd: sinDeuda ? null : v(c.netDebt) };
+        // fila por fila (filaDeuda, js/finanzas-render.js): la deuda conocida se muestra aunque falte la caja; la neta, solo con las dos.
+        gd: presu || filaDeuda(c, 'grossDebt') == null ? null : v(c.grossDebt), ca: presu || filaDeuda(c, 'cash') == null ? null : v(c.cash),
+        nd: sinDeuda ? null : v(c.netDebt) };
     });
     const cols = [];
     datos.forEach((d, i) => { if(i && d.y - datos[i - 1].y > 1) cols.push({ gap:true }); cols.push({ d }); });
@@ -582,7 +584,7 @@ const FIN_MULTI_DEBT = (function(){
     const sin = datos.filter(d => d.sinDeuda).map(d => lab(d.y));
     const nota = document.getElementById('finanzasDebtNote');
     if(nota) nota.textContent = sin.length
-      ? t('finanzas.debt.multi.note', '— = el documento de ese ejercicio no informa deuda ni caja ({a}). No es una deuda de cero: es un dato que no está.').replace('{a}', sin.join(', '))
+      ? t('finanzas.debt.multi.note', '— = el documento de ese ejercicio no informa deuda y caja ({a}). No es un cero: es un dato que no está, y sin los dos no hay deuda neta.').replace('{a}', sin.join(', '))
       : '';
   }
   return { render };

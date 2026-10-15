@@ -452,9 +452,12 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   `node tools/generate-rankings.js` (los rankings hornean el nombre de cada fila; si no se corre, `audit.js` lo marca P1). Nada más:
   ningún dato cambia (`season_tickets` es la misma categoría en los dos escenarios), `INICIO_INGRESOS_BUCKETS` conserva los colores
   de "Abonos" y de las filas viejas, y `data/site-labels.js` / `data/lang/en.js` conservan sus claves i18n.
-- DEUDA Y CAJA EN 0/0 EN UN DOCUMENTO OFICIAL: casi seguro es que ese documento no las desglosa (un presupuesto económico, por
-  ejemplo), no que el club no tenga deuda. `debtDisclosureNote()` (`js/finanzas-calc.js`) avisa debajo de la ficha de deuda; el
-  placeholder no lo necesita porque ya tiene su propio banner. Un mensaje traducible que lleva datos adentro se arma con `{a}`/`{b}`
+- DEUDA Y CAJA SIN DATO: sin dato es null en `data/` (el 0/0 de la convención vieja ya no queda; si aparece, se lee igual: no se
+  cargó). Un dato null se muestra "—", nunca 0, y sin deuda O sin caja no hay deuda neta ("Sin dato"): `deudaNoDesglosada()` y
+  `filaDeuda()` (`js/finanzas-render.js`), las usan la ficha, el KPI, el multiaño, Comparar gestiones y el selector (to-do 235; caso:
+  Argentinos 2019 mostraba caja 0 y deuda neta = deuda bruta). Un 0 IMPRESO de uno solo de los dos es real y se muestra (Sunderland
+  2024, caja 0). `debtDisclosureNote()` (`js/finanzas-calc.js`) avisa debajo de la ficha de deuda; el placeholder no lo necesita
+  porque ya tiene su propio banner. Un mensaje traducible que lleva datos adentro se arma con `{a}`/`{b}`
   sobre una sola clave de `t()`, nunca concatenando pedazos traducidos: eso congela el orden de palabras del castellano.
 
 - UN TEXTO QUE ESCRIBE JS NO LLEVA `data-i18n` (Versión 530, bug real: to-do 146). `I18N.apply()` guarda como "castellano original" lo que

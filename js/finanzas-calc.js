@@ -280,14 +280,14 @@
   }
 
 
-  // Aviso de deuda y caja en 0/0 en un documento oficial: Admin/PANTALLA.md, "Deuda y caja en 0/0 en un documento oficial".
+  // Aviso de deuda o caja sin dato: Admin/PANTALLA.md, "Deuda y caja sin dato".
   // `t()` local: mismo one-liner que js/finanzas-render.js y js/selector.js.
   function t(key, es){ return (window.I18N && window.I18N.t) ? window.I18N.t(key, es) : es; }
   function fillNote(s, a, b){ return s.replace('{a}', a).replace('{b}', b); }
 
   function debtDisclosureNote(curUndisclosed, curLabel, prevUndisclosed, prevLabel){
-    const both = t('finanzas.debt.note.both', '⚠️ Ni el documento de {a} ni el de {b} desglosan deuda ni caja en su resumen, el $0 que ves en esas columnas NO significa que la deuda sea cero, es un dato no disponible todavía.');
-    const one  = t('finanzas.debt.note.one',  '⚠️ El documento de {a} no desglosa deuda ni caja en su resumen, el $0 que ves en esa columna NO significa que la deuda sea cero, es un dato no disponible todavía.');
+    const both = t('finanzas.debt.note.both', '⚠️ Ni el documento de {a} ni el de {b} informan deuda y caja: donde ves "—" el dato no está disponible, no es cero, y sin los dos no hay deuda neta.');
+    const one  = t('finanzas.debt.note.one',  '⚠️ El documento de {a} no informa deuda y caja: donde ves "—" el dato no está disponible, no es cero, y sin los dos no hay deuda neta.');
     if(curUndisclosed && prevUndisclosed) return fillNote(both, curLabel, prevLabel);
     if(curUndisclosed) return fillNote(one, curLabel, '');
     if(prevUndisclosed) return fillNote(one, prevLabel, '');
@@ -376,7 +376,7 @@
       revenue: toDisplayValue(computed.revenue, meta, 'USD'),
       expenses: Math.abs(toDisplayValue(computed.expenses, meta, 'USD')),
       pat: toDisplayValue(computed.pat, meta, 'USD'),
-      netDebt: toDisplayValue(computed.netDebt, meta, 'USD'),
+      netDebt: deudaNoDesglosada(computed) ? null : toDisplayValue(computed.netDebt, meta, 'USD'),
     };
   }
 
