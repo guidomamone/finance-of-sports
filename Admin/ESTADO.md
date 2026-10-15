@@ -85,7 +85,13 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 - Transcripción con subagentes (sin API, con el límite de la suscripción): para PDFs digitales, un subagente Sonnet por documento sigue
   `Admin/transcripcion-subagentes/reglas.md` y se controla con `check-transcripcion-fidelidad.js` y
   `Admin/transcripcion-subagentes/comparar-numeros.mjs` (números del .md contra el texto del PDF). Después el pipeline sigue igual
-  (`pipeline.mjs --lista` valida gratis y el lote localiza).
+  (`pipeline.mjs --lista` valida gratis y el lote localiza). Transcriptos así y esperando validación: Estonia, Bélgica, Suiza y parte
+  de Turquía (Beşiktaş); el detalle, en el TODO 165 b1. Las páginas imagen (informes del auditor) se leen del render: el comparador no
+  las puede cotejar y se aceptan si sus totales coinciden con el balance.
+- Un club nuevo entra al lote con un solo ejercicio; el resto de sus años, después del alta y de contestar su cola (skill
+  `club-or-year-onboarding`), para que las respuestas del primero sirvan de precedente. Las respuestas grandes de la cola que todavía
+  no se aplicaron quedan en `Admin/registros/cola-borradores/`.
+- El plan para Guido (solo lo pendiente, corto) vive en el panel Plan de la app; el detalle, en `Admin/TODO.md`.
 - Club asociación o sociedad (SAD/SDUQ): se elige entidad solo cuando hay dos documentos del mismo ejercicio; el de la otra va a
   `documentos-descartados.txt`, y entonces `alta-club.mjs` y el lote dejan de verlo. Un documento único del club que no trae el fútbol (la
   SAD no consolida) no se carga. Regla en `Admin/CONVENCIONES-DATOS.md`.

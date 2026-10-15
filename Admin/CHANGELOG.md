@@ -15,6 +15,20 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 705 — Portugal transcripto y lote 77; Bélgica, Suiza y Beşiktaş transcriptos por subagentes (2026-10-15)
+
+- Portugal: 159 transcripciones (etapa 2) validadas; 26 altas confirmadas contra los .md por subagentes Sonnet (nombre legal, color) en
+  altas-revision; 18 cierres y el perímetro de Benfica (consolidado 2009-2019) y Boavista como ajustes; descartados y parciales con el
+  ok de Guido (Feirense, Chaves club, União de Leiria 2024-25, Gil Vicente consolidado 2025, Boavista partes 2-3, Estrela 2023-24).
+- Lote 77 (144 documentos, ~US$ 55): cargó Estrela da Amadora 2022-23 (alta); 617 casos de Portugal en la cola. Contestados por
+  subagentes la cola de Sporting, Porto, Braga y Santa Clara y 47 nombres legales de altas (Portugal y otros 11 países). Lote 78
+  (Benfica 2018-19 y Boavista) frenó en 5 casos, ya contestados; lote 79 listo para reintentar.
+- Transcripción por subagentes: Bélgica (61), Suiza (42: St. Gallen, FC St. Gallen, Aarau, Thun, Luzern, Grasshopper, Basel, Young
+  Boys) y Beşiktaş (13). Regla nueva en reglas.md: cada subagente usa su propia subcarpeta del scratchpad.
+- Skill club-or-year-onboarding: un club nuevo entra al lote con un solo ejercicio. TODO: orden de Guido arriba de todo, 237 m-r
+  (preguntas repetidas en la cola, perímetro con ajuste, subtotales de Sporting, copy de la terminal) y 238 (estados intermedios).
+- lote.mjs: se saca el aviso viejo "el proceso nuevo se refina de a 5".
+
 ## Versión 704 — Estonia transcripta con subagentes; altas de Portugal en borrador (2026-10-15)
 
 - Estonia: 66 informes anuales (10 clubes, 2019-2025) transcriptos por subagentes Sonnet desde pdftotext, con el chequeo de fidelidad y
