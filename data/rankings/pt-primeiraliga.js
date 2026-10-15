@@ -4,6 +4,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2025: {
     leagueSize: null,
     clubs: [
+      { id:"porto-pt", revenue:376.281, reportType:"official_balance_sheet",
+        sourceId:"porto-pt-wf-2024-2025-6b41056f",
+        mix:[["Comercial / Sponsors",35.946],["Estadio",28.293],["Televisión",50.312],["Premios por competencias",40.115],["Venta de Jugadores",201.01],["Otros ingresos",20.605]] },
       { id:"sportingcp-pt", revenue:310.571, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2024-25",
         mix:[["Comercial / Sponsors",42.689],["Estadio",27.631],["Televisión",34.536],["Premios por competencias",57.411],["Venta de Jugadores",136.932],["Otros ingresos",11.372]] },

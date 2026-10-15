@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf",
   "club": "porto",
   "year": 2025,
-  "generatedAt": "2026-10-15T23:14:10.618Z",
+  "generatedAt": "2026-10-15T23:18:26.359Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         17.179
       ],
-      "glosa": "Premios de competiciones UEFA"
+      "glosa": "Premios por competiciones UEFA"
     },
     {
       "label": "Prémios competições FIFA",
@@ -34,7 +34,7 @@
       "values": [
         17.047
       ],
-      "glosa": "Premios de competiciones FIFA"
+      "glosa": "Premios por competiciones FIFA"
     },
     {
       "label": "Receita de bilheteira",
@@ -54,7 +54,7 @@
       "values": [
         6.485
       ],
-      "glosa": "Ingresos por abonos anuales"
+      "glosa": "Ingresos por abonos"
     },
     {
       "label": "Outras receitas desportivas",
@@ -133,7 +133,7 @@
       "values": [
         154.949
       ],
-      "glosa": "Ingresos por enajenación de derechos de jugadores (i)"
+      "glosa": "Ingresos por enajenación de derechos federativos (i)"
     },
     {
       "label": "Proveitos com empréstimos de jogadores",
@@ -183,7 +183,7 @@
       "values": [
         6.563
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontratos"
     },
     {
       "label": "Direitos de imagem de atletas",
@@ -203,7 +203,7 @@
       "values": [
         3.247
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Vigilância e segurança",
@@ -283,7 +283,7 @@
       "values": [
         1.38
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Reparaciones y conservación"
     },
     {
       "label": "Seguros",
@@ -293,7 +293,7 @@
       "values": [
         1.302
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -303,7 +303,7 @@
       "values": [
         1.198
       ],
-      "glosa": "Limpieza, higiene y mantenimiento"
+      "glosa": "Limpieza, higiene y confort"
     },
     {
       "label": "Combustíveis",
@@ -372,7 +372,7 @@
       "values": [
         10.375
       ],
-      "glosa": "Amortizaciones y depreciaciones, excluidos derechos de jugadores"
+      "glosa": "Amortizaciones y depreciaciones, excluyendo derechos federativos"
     },
     {
       "label": "Provisões e perdas por imparidade excluindo passes de jogadores",
@@ -382,7 +382,7 @@
       "values": [
         -0.851
       ],
-      "glosa": "Provisiones y pérdidas por deterioro, excluidos derechos de jugadores"
+      "glosa": "Provisiones y pérdidas por deterioro, excluyendo derechos federativos"
     },
     {
       "label": "Outros custos",
@@ -402,7 +402,7 @@
       "values": [
         31.036
       ],
-      "glosa": "Amortizaciones de derechos de jugadores"
+      "glosa": "Amortizaciones de derechos federativos"
     },
     {
       "label": "Perdas por imparidade com passes de jogadores",
@@ -412,7 +412,7 @@
       "values": [
         3.341
       ],
-      "glosa": "Pérdidas por deterioro de derechos de jugadores"
+      "glosa": "Pérdidas por deterioro de derechos federativos"
     },
     {
       "label": "Custos com alienações de passes de jogadores (ii)",
@@ -422,7 +422,7 @@
       "values": [
         62.006
       ],
-      "glosa": "Gastos por enajenación de derechos de jugadores (ii)"
+      "glosa": "Gastos por enajenación de derechos federativos (ii)"
     },
     {
       "label": "Custos com empréstimos de jogadores",
