@@ -604,8 +604,8 @@ tools/caja-deuda.mjs (2026-10-05): cash escalón 0 (compuerta: ajuste manual): a
 ### Ingresos
 
 ```text
-2020: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-Generados/Colombia/Fortaleza CEIF/estados-financieros-2020.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+2020: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Fortaleza CEIF/estados-financieros-2020.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
 | Fila | Rubro | Nota |
@@ -619,7 +619,7 @@ Generados/Colombia/Fortaleza CEIF/estados-financieros-2020.categorias.json (esca
 | 7 | Auxilio Hotelero | pág. 22, precedente |
 | 8 | Auxilio Arbitraje | pág. 22, Jev 0.91 |
 | 9 | Convenio Entre Clubes | pág. 22, Jev 0.96 |
-| 10 | Auxilio Transporte | pág. 22, ajuste manual (auditoría 2026-10-04, hallazgo 12: auxilio de la Dimayor, como 2020) |
+| 10 | Auxilio Transporte | pág. 22, precedente |
 | 11 | Comercio Al Por Mayor Y Al Por Menor | pág. 21, Jev 0.98 |
 | 12 | Alquiler Deportivo | pág. 28, precedente |
 | 13 | Subsidio Nomina Gobierno Nal | pág. 28, Jev 0.99 |
@@ -629,116 +629,148 @@ Generados/Colombia/Fortaleza CEIF/estados-financieros-2020.categorias.json (esca
 
 ### Gastos
 
-```text
-tools/cargar.mjs (2026-10-03)
-```
-
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Total Costo de Ventas | pág. 23, precedente |
-| 2 | Sueldos | pág. 23, precedente |
-| 3 | Bonificaciones | pág. 23, precedente |
-| 4 | Cesantías | pág. 23, precedente |
-| 5 | Prima De Servicios | pág. 23, precedente |
-| 6 | Fondos Pensión | pág. 23, precedente |
-| 7 | Vacaciones | pág. 23, precedente |
-| 8 | Aportes Cajas De Compensación Familiar | pág. 23, precedente |
-| 9 | Auxilio De Transporte | pág. 23, precedente |
-| 10 | Aportes A Administradoras De Riesgos Profesionales | pág. 23, precedente |
-| 11 | Indemnizaciones Laborales | pág. 23, precedente |
-| 12 | Intereses Sobre Cesantías | pág. 23, precedente |
-| 13 | Dotación De Personal | pág. 23, precedente |
-| 14 | Aportes A Entidades Promotoras De Salud | pág. 24, precedente |
-| 15 | Medico Y Ambulancias | pág. 24, precedente |
-| 16 | Logística De Partidos | pág. 24, Jev 0.99 |
-| 17 | Alojamiento Y Manutención | pág. 24, Jev 0.98 |
-| 18 | Arbitraje Art 383 | pág. 24, Jev 0.93 |
-| 19 | Transporte De Pasajeros | pág. 24, precedente |
-| 20 | Elementos De Aseo Y Cafetería | pág. 24, Jev 0.99 |
-| 21 | Multas Partidos Dimayor | pág. 24, precedente |
-| 22 | Derechos Deportivos | pág. 24, precedente |
-| 23 | Pasajes Aéreos | pág. 24, precedente |
-| 24 | Combustible | pág. 24, precedente |
-| 25 | Elementos Papelería | pág. 24, Jev 0.99 |
-| 26 | Peajes | pág. 24, precedente |
-| 27 | Parqueadero | pág. 24, precedente |
-| 28 | Transportes Fletes Y Acarreos | pág. 24, Jev 0.94 |
-| 29 | Sueldos (administración) | pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo) |
-| 30 | Bonificaciones (administración) | pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo) |
-| 31 | Fondos Pensión (administración) | pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo) |
-| 32 | Prima De Servicios (administración) | pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo) |
-| 33 | Cesantías (administración) | pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo) |
-| 34 | Sena | pág. 25, Claude 0.8 |
-| 35 | Vacaciones (administración) | pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo) |
-| 36 | Aportes Cajas De Compensación Familiar (administración) | pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo) |
-| 37 | Aportes Administradoras De Riesgos Profe | pág. 25, Claude 0.8 |
-| 38 | Auxilio De Transporte (administración) | pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo) |
-| 39 | Intereses Sobre Cesantías (administración) | pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo) |
-| 40 | Aportes A Entidades Promotoras De Salud (administración) | pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo) |
-| 41 | Horas Extras Y Recargos | pág. 25, Claude 0.8 |
-| 42 | Dotación Y Suministro A Trabajadores | pág. 25, Claude 0.8 |
-| 43 | Aporte I.C.B.F. | pág. 25, Claude 0.8 |
-| 44 | Asesoría Financiera | pág. 25, Jev 0.91 |
-| 45 | Asesoría Jurídica | pág. 25, Jev 1 |
-| 46 | Asesoría Técnica | pág. 25, precedente |
-| 47 | Gravamen Al Movimiento Financiero | pág. 25, Jev 0.96 |
-| 48 | Impuesto Al Consumo | pág. 25, Jev 0.99 |
-| 49 | Industria Y Comercio | pág. 25, Claude 0.9 |
-| 50 | De Vehículos | pág. 25, Jev 0.93 |
-| 51 | Construcciones Y Edificaciones | pág. 25, precedente |
-| 52 | Terrenos | pág. 25, precedente |
-| 53 | Maquinaria Y Equipo | pág. 25, precedente |
-| 54 | Flota Y Equipo De Transporte | pág. 25, precedente |
-| 55 | Cumplimiento | pág. 25, Claude 0.8 |
-| 56 | Responsabilidad Civil Y Extracontractual | pág. 25, Claude 0.85 |
-| 57 | Aseo Y Vigilancia | pág. 25, precedente |
-| 58 | Propaganda Y Publicidad | pág. 26, Jev 1 |
-| 59 | Energía Eléctrica | pág. 26, Jev 0.99 |
-| 60 | Servicios Digitación | pág. 26, Claude 0.8 |
-| 61 | Transporte fletes Y Acarreos | pág. 26, Jev 0.92 |
-| 62 | Teléfono | pág. 26, Jev 1 |
-| 63 | Tv Cable | pág. 26, Jev 1 |
-| 64 | Acueducto Y Alcantarillado | pág. 26, Jev 1 |
-| 65 | Asistencia Técnica | pág. 26, precedente |
-| 66 | Gas | pág. 26, Jev 1 |
-| 67 | Procesamiento Electrónico De Datos | pág. 26, Jev 0.95 |
-| 68 | Correo portes Y Telegramas | pág. 26, Jev 1 |
-| 69 | Registro Mercantil | pág. 26, Jev 1 |
-| 70 | Tramites Y Licencias | pág. 26, Claude 0.8 |
-| 71 | Notariales | pág. 26, Jev 1 |
-| 72 | Reparaciones Locativas | pág. 26, Jev 1 |
-| 73 | Construcciones Y Edificaciones | pág. 26, precedente |
-| 74 | Maquinaria Y Equipo | pág. 26, precedente |
-| 75 | Flota Y Equipo De Transporte | pág. 26, precedente |
-| 76 | Equipo De Computación Y Comunicación | pág. 26, Jev 0.99 |
-| 77 | Equipo Medico-Científico | pág. 26, precedente |
-| 78 | Terrenos | pág. 26, precedente |
-| 79 | Pasajes Aéreos | pág. 26, precedente |
-| 80 | Pasajes Terrestres | pág. 26, precedente |
-| 81 | Mejoras A Propiedades Ajenas | pág. 26, precedente |
-| 82 | Flota Y Equipo De Transporte | pág. 26, precedente |
-| 83 | Equipo De Computación Y Comunicación | pág. 26, Jev 0.99 |
-| 84 | Maquinaria Y Equipo | pág. 26, precedente |
-| 85 | Intangibles | pág. 26, precedente |
-| 86 | Licencias | pág. 26, precedente |
-| 87 | Comisiones | pág. 26, precedente |
-| 88 | Elementos De Aseo Y Cafetería | pág. 26, Jev 0.99 |
-| 89 | Combustibles Y Lubricantes | pág. 26, Jev 1 |
-| 90 | Libros Suscripciones Periódicos Y Revistas | pág. 26, Jev 1 |
-| 91 | Taxis Y Buses | pág. 26, Jev 0.92 |
-| 92 | Útiles Papelería Y Fotocopias | pág. 27, Jev 1 |
-| 93 | Parqueaderos | pág. 27, Jev 1 |
-| 94 | Gastos No Deducibles | pág. 27, Jev 0.99 |
-| 95 | Multas sanciones Y Litigios | pág. 27, Jev 0.96 |
-| 96 | Impuestos Asumidos | pág. 27, precedente |
-| 97 | Ajuste Al Peso | pág. 27, precedente |
+| 2 | Aportes A Administradoras De Riesgos Profesionales | pág. 23, precedente |
+| 3 | Indemnizaciones Laborales | pág. 23, precedente |
+| 4 | Dotación De Personal | pág. 23, precedente |
+| 5 | Medico Y Ambulancias | pág. 24, precedente |
+| 6 | Logística De Partidos | pág. 24, Jev 0.99 |
+| 7 | Alojamiento Y Manutención | pág. 24, Jev 0.98 |
+| 8 | Arbitraje Art 383 | pág. 24, Jev 0.93 |
+| 9 | Transporte De Pasajeros | pág. 24, precedente |
+| 10 | Elementos De Aseo Y Cafetería | pág. 24, Jev 0.99 |
+| 11 | Multas Partidos Dimayor | pág. 24, precedente |
+| 12 | Derechos Deportivos | pág. 24, precedente |
+| 13 | Pasajes Aéreos | pág. 24, precedente |
+| 14 | Combustible | pág. 24, precedente |
+| 15 | Elementos Papelería | pág. 24, Jev 0.99 |
+| 16 | Peajes | pág. 24, precedente |
+| 17 | Parqueadero | pág. 24, precedente |
+| 18 | Transportes Fletes Y Acarreos | pág. 24, Jev 0.94 |
+| 19 | Sena | pág. 25, precedente |
+| 20 | Aportes Administradoras De Riesgos Profe | pág. 25, Claude 0.8 |
+| 21 | Horas Extras Y Recargos | pág. 25, Claude 0.8 |
+| 22 | Dotación Y Suministro A Trabajadores | pág. 25, Claude 0.8 |
+| 23 | Aporte I.C.B.F. | pág. 25, Claude 0.8 |
+| 24 | Asesoría Financiera | pág. 25, Jev 0.91 |
+| 25 | Asesoría Jurídica | pág. 25, Jev 1 |
+| 26 | Asesoría Técnica | pág. 25, precedente |
+| 27 | Gravamen Al Movimiento Financiero | pág. 25, Jev 0.96 |
+| 28 | Impuesto Al Consumo | pág. 25, Jev 0.99 |
+| 29 | Industria Y Comercio | pág. 25, Claude 0.9 |
+| 30 | De Vehículos | pág. 25, Jev 0.93 |
+| 31 | Construcciones Y Edificaciones | pág. 25, precedente |
+| 32 | Terrenos | pág. 25, precedente |
+| 33 | Maquinaria Y Equipo | pág. 25, precedente |
+| 34 | Flota Y Equipo De Transporte | pág. 25, precedente |
+| 35 | Cumplimiento | pág. 25, Claude 0.8 |
+| 36 | Responsabilidad Civil Y Extracontractual | pág. 25, Claude 0.85 |
+| 37 | Aseo Y Vigilancia | pág. 25, precedente |
+| 38 | Propaganda Y Publicidad | pág. 26, Jev 1 |
+| 39 | Energía Eléctrica | pág. 26, Jev 0.99 |
+| 40 | Servicios Digitación | pág. 26, Claude 0.8 |
+| 41 | Transporte fletes Y Acarreos | pág. 26, Jev 0.92 |
+| 42 | Teléfono | pág. 26, Jev 1 |
+| 43 | Tv Cable | pág. 26, Jev 1 |
+| 44 | Acueducto Y Alcantarillado | pág. 26, Jev 1 |
+| 45 | Asistencia Técnica | pág. 26, precedente |
+| 46 | Gas | pág. 26, Jev 1 |
+| 47 | Procesamiento Electrónico De Datos | pág. 26, Jev 0.95 |
+| 48 | Correo portes Y Telegramas | pág. 26, Jev 1 |
+| 49 | Registro Mercantil | pág. 26, Jev 1 |
+| 50 | Tramites Y Licencias | pág. 26, Claude 0.8 |
+| 51 | Notariales | pág. 26, Jev 1 |
+| 52 | Reparaciones Locativas | pág. 26, Jev 1 |
+| 53 | Construcciones Y Edificaciones | pág. 26, precedente |
+| 54 | Maquinaria Y Equipo | pág. 26, precedente |
+| 55 | Flota Y Equipo De Transporte | pág. 26, precedente |
+| 56 | Equipo De Computación Y Comunicación | pág. 26, Jev 0.99 |
+| 57 | Equipo Medico-Científico | pág. 26, precedente |
+| 58 | Terrenos | pág. 26, precedente |
+| 59 | Pasajes Aéreos | pág. 26, precedente |
+| 60 | Pasajes Terrestres | pág. 26, precedente |
+| 61 | Mejoras A Propiedades Ajenas | pág. 26, precedente |
+| 62 | Flota Y Equipo De Transporte | pág. 26, precedente |
+| 63 | Equipo De Computación Y Comunicación | pág. 26, Jev 0.99 |
+| 64 | Maquinaria Y Equipo | pág. 26, precedente |
+| 65 | Intangibles | pág. 26, precedente |
+| 66 | Licencias | pág. 26, precedente |
+| 67 | Comisiones | pág. 26, precedente |
+| 68 | Elementos De Aseo Y Cafetería | pág. 26, Jev 0.99 |
+| 69 | Combustibles Y Lubricantes | pág. 26, Jev 1 |
+| 70 | Libros Suscripciones Periódicos Y Revistas | pág. 26, Jev 1 |
+| 71 | Taxis Y Buses | pág. 26, Jev 0.92 |
+| 72 | Útiles Papelería Y Fotocopias | pág. 27, Jev 1 |
+| 73 | Parqueaderos | pág. 27, Jev 1 |
+| 74 | Gastos No Deducibles | pág. 27, Jev 0.99 |
+| 75 | Multas sanciones Y Litigios | pág. 27, Jev 0.96 |
+| 76 | Impuestos Asumidos | pág. 27, precedente |
+| 77 | Ajuste Al Peso | pág. 27, precedente |
+| 78 | Sueldos | pág. ?, precedente |
+| 79 | Sueldos (administración) | pág. ?, precedente |
+| 80 | Bonificaciones | pág. ?, precedente |
+| 81 | Bonificaciones (administración) | pág. ?, precedente |
+| 82 | Fondos Pensión | pág. ?, precedente |
+| 83 | Fondos Pensión (administración) | pág. ?, precedente |
+| 84 | Prima De Servicios | pág. ?, precedente |
+| 85 | Prima De Servicios (administración) | pág. ?, precedente |
+| 86 | Cesantías | pág. ?, precedente |
+| 87 | Cesantías (administración) | pág. ?, precedente |
+| 88 | Vacaciones | pág. ?, precedente |
+| 89 | Vacaciones (administración) | pág. ?, precedente |
+| 90 | Aportes Cajas De Compensación Familiar | pág. ?, precedente |
+| 91 | Aportes Cajas De Compensación Familiar (administración) | pág. ?, precedente |
+| 92 | Auxilio De Transporte | pág. ?, precedente |
+| 93 | Auxilio De Transporte (administración) | pág. ?, precedente |
+| 94 | Intereses Sobre Cesantías | pág. ?, precedente |
+| 95 | Intereses Sobre Cesantías (administración) | pág. ?, precedente |
+| 96 | Aportes A Entidades Promotoras De Salud | pág. ?, precedente |
+| 97 | Aportes A Entidades Promotoras De Salud (administración) | pág. ?, precedente |
 
 ### Meta
 
 ```text
-2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
-tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-05): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Bancos 148.882 + Caja 2.483 (nota de efectivo; el cuadro de instrumentos financieros del documento 2021 imprime 151.365 para 2020)
+```
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = competition_bonus. Guido 2026-10-03: coherencia entre años; 'Auxilio hotelero' de los ingresos de actividades ordinarias va como premios de competencia (2019, 2023, 2024 y 2025 ya lo eran).
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 727.972. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 257.425. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): categoria = admin_general_expense. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 101.481. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 29.900. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): categoria = admin_general_expense. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 89.424. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 29.598. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): categoria = admin_general_expense. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 71.693. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 24.177. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): categoria = admin_general_expense. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 67.456. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 23.265. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): categoria = admin_general_expense. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 31.713. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 11.833. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): categoria = admin_general_expense. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 30.797. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 10.930. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): categoria = admin_general_expense. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 29.944. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 4.501. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): categoria = admin_general_expense. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 6.876. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 2.788. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): categoria = admin_general_expense. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 404. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): fila = 1.630. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): categoria = admin_general_expense. Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): caja = 151,365. Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Bancos 148.882 + Caja 2.483 (nota de efectivo; el cuadro de instrumentos financieros del documento 2021 imprime 151.365 para 2020)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-05): categoria = competition_bonus. Auditoría 2026-10-04 (to-do 138), hallazgo 12: los auxilios de la Dimayor (arbitraje, transporte, hotelero) van a competition_bonus en todos los años, como el ajuste de Guido de 2020
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ### Liga
@@ -882,10 +914,13 @@ tools/cargar.mjs (2026-10-02)
 2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): fila = (103,918). Nota de gastos financieros (bancarios 31.728 + comisiones 12.692 + intereses 266 + diferencial cambiario 59.233) con el total rotulado 'Total Otros Ingresos' en el PDF, como en 2017: es un costo. Con el signo bien, el impuesto calculado da 40.604 y el documento imprime 'Impuesto de Renta y Complementarios 40,612' (L448).
 2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra por ajuste manual; las dudas de localizar y extraer no vuelven a la cola.
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
-tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Televisión, Premios por competencias, Venta de Jugadores
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 tools/caja-deuda.mjs (2026-10-02): cash escalón 0 (compuerta: año anterior): "Bancos" pág. 8 + "Cajas" pág. 8
 tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento siguiente): "Total Prestamos y Sobregiros Bancarios" pág. 11
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Televisión, Premios por competencias, Venta de Jugadores
 ```
 
 ### Liga
@@ -1052,8 +1087,11 @@ tools/cargar.mjs (2026-10-04)
 2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 70,183. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
 2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 1,600. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
 tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
-tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Televisión, Premios por competencias, Venta de Jugadores
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Televisión, Premios por competencias, Venta de Jugadores
 ```
 
 ### Liga

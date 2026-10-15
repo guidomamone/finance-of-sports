@@ -46,3 +46,5 @@
 **Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
 
 Estados financieros en disco ahora: 9 ejercicios (2017-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2020 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf` (sourceId `fortalezaceif-co-estados-financieros-2020`).
