@@ -63,9 +63,6 @@ ni en el comentario de ningún archivo de código.
        formas latinas (falta ООО / АО / ПАО / 株式会社...). Carpetas afectadas: Ucrania, Bulgaria, Serbia (en parte), Kazajistán, Macedonia
        del Norte, Armenia, Georgia, Japón, Corea, China y Chipre (Rusia no pasa por alta-club.mjs). Los nombres se transliteran a mano
        ("Olympiakos Syndesmos Filathlon Peiraios P.A.E."): un escalón por script no daría idéntico.
-    s) Sueldos escondidos en "Αμοιβές τρίτων" (PAOK: 42 M en el cuadro de fútbol contra 9,2 M de costo de personal en la nota 17). Un
-       chequeo de `audit.js` que compare `wages_squad` con el total de la nota de personal y con la cantidad de futbolistas, para que
-       un caso así aparezca solo y no dependa de que un subagente lo note (relacionado con el to-do 229).
     z) "Diferencia de redondeo" DENTRO de una nota se pierde: `verificar.mjs` (L1049) la agrega como hoja sin página y sin categoría, y
        `cargar.mjs` la deja como "sin categoría" (aviso, no se carga). AEK 2024: tres filas de 1 euro (Κόστος πωλήσεων, Αμοιβές
        ποδοσφαιρικού, Απομείωση παγίων). Conocido, sin daño hoy (el tie-out tolera la unidad); el redondeo de los TOTALES sí se carga
@@ -181,26 +178,6 @@ ni en el comentario de ningún archivo de código.
 
 
 
-
-229. SUELDOS DESDE LA NOTA DE PERSONAL (conocido, sin daño hoy). Un estado por función ("Έξοδα διοίκησης" único gasto operativo) no separa
-    los sueldos y la nota de personal sí ("Σύνολο κόστους μισθοδοσίας περιόδου"): Volos 2021-2025 los tenía dentro de admin_general_expense
-    (corregidos con ajustes `fila` y `categoria`). Medido el 2026-10-13: ningún otro año cargado está así (`audit.js` no marca `sin-salarios`
-    fuera de Novorizontino 2010, que es un cero real). Se diseña el escalón cuando aparezcan casos reales: después del lote 71 (Aris,
-    Atromitos, PAOK, Panetolikos tienen estado por función), mirar `sin-salarios` en `node tools/audit.js`. CASO REAL (lote 71, 2026-10-14):
-    Panetolikos 2017-2025 tiene los sueldos dentro de "Κόστος πωλήσεων" (`lump_football_operations_expense`), así que `sin-salarios` no lo
-    marca, pero la nota de personal da el total de cada año ("Σύνολο", Παροχές σε εργαζόμενους): 2022 1.566.222,00 (L1470), 2023
-    1.716.651,78 (L1159), 2024 1.850.317,43 (L1073), 2025 1.959.575,41 (L1086), 2021 1.288.534,97 (L1436). Ya se puede diseñar el escalón.
-    Para diseñarlo: los .md son `Clubes/Grecia/Panetolikos/Panetolikos_FS_<año>.md` (2017, 2018 y 2020 todavía sin la línea de la nota:
-    buscar "Παροχές σε εργαζόμενους" o "Σύνολο"); la fila global es "Κόστος πωλήσεων" del estado. Escalera posible: si el club no tiene
-    `wages_squad` y la nota de personal da un total que cabe dentro de una fila global de gasto, partir esa fila en `wages_squad` (el total
-    de la nota) + el resto en su categoría, con la compuerta de que el resto no quede negativo. Mirar antes cómo se resolvió Volos
-    (ajustes `fila` y `categoria` en `Admin/registros/ajustes-manuales.jsonl`) y el criterio de `club-data-mapping` para filas mixtas.
-    ORDEN (Guido, 2026-10-14): va DESPUÉS del 233 (Jev en caja y deuda), montado sobre ese escalón: el total de personal aparece de tres
-    formas en los casos conocidos (Panetolikos: tabla "Παροχές σε εργαζόμενους" con fila "Σύνολο"; Volos: en OTRO documento, Volos_notes;
-    PAOK: sin total único, "Αμοιβές προσωπικού" por cuadro de función), así que un escalón de vocabulario serían reglas apiladas. Diseño
-    acordado: dato "personal" (staffCost en fiscalYearMeta) en caja-deuda.mjs con una pregunta puntual a la IA barata (número y línea),
-    leyendo también los otros documentos del mismo año, y la compuerta de siempre (impreso en la línea, confirmado por el documento
-    vecino); encima, el escalón del 229 en cargar.mjs y el chequeo del 232 s en audit.js.
 
 230. AHORRAR EN LAS ETAPAS 3 A 5 (pedido de Guido, 2026-10-14: el lote 71 de Grecia estima ~US$ 17 para localizar y extraer 45 documentos).
     Mirar dónde se va la plata (`node tools/gasto.mjs` y `Admin/registros/api/claude-api.jsonl` por tarea y por documento: localizar,
