@@ -160,6 +160,10 @@ llegue acá.
     r) EL COPY DE LA TERMINAL QUEDÓ VIEJO (pedido de Guido, 2026-10-15). "(DE VERDAD)", "ENSAYO", los "OJO:" y la mayoría de los mensajes
        de pipeline.mjs y lote.mjs no terminan de explicar qué está pasando ni qué tiene que hacer Guido. Repasar la salida de las dos
        tools con un lote real y proponerle el texto nuevo (solo salida, no lógica) antes de tocarlo.
+    s) --reintentar VUELVE A LOCALIZAR Y ABRE PREGUNTAS NUEVAS (lote 79, 2026-10-15: con la cola ya contestada, Porto, Santa Clara y
+       Benfica 2018-19 se volvieron a localizar y extraer, se pagó de nuevo (US$ 1,46) y salieron 5 dudas nuevas de localizar y extraer;
+       Sporting 2024-25 frena solo por "faltan-datos" en el registro de altas: correr `node tools/alta-club.mjs --todos`). Un reintento
+       por "cola contestada" debería volver a verificar sin pagar localizar/extraer.
 238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
    sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
    (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
