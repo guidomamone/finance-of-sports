@@ -451,7 +451,9 @@ Mitigaciones:
   también los compartidos (`data/currency-map.js` con el tipo de cambio nuevo): en las altas italianas quedó afuera y se commiteó suelto.
   `alta-club.mjs --todos` (el registro `Admin/registros/altas-club.jsonl`): una carpeta cuyos `.md` están TODOS en `documentos-descartados.txt`
   o `documentos-parciales.txt` no se analiza y queda `faltan-datos` con la lista (to-do 232 a: Athens Kallithea, Catania); si un documento
-  sale de la lista, la corrida siguiente la vuelve a analizar.
+  sale de la lista, la corrida siguiente la vuelve a analizar. Los documentos de esas dos listas tampoco cuentan como "hermanos" del
+  documento base (cierre del club, "dos entidades del mismo ejercicio"): descartar el relatório de la otra entidad alcanza para que el
+  perímetro deje de preguntar (to-do 237 m, Tondela 2021).
   El tipo de documento (`reportType`) del alta: escalón 0 el ajuste; si no, el `.md` tiene que tener un estado contable con 10+ filas de 2+
   montos; escalón 1 (to-do 202): un estado de resultados corto de una columna vale si la primera página trae su título y el ejercicio anual
   (período impreso de 12 meses, o "Demonstração do Resultado do Exercício") con 5+ filas con monto. Si no, pregunta.

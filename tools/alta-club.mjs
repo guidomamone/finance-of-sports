@@ -881,13 +881,20 @@ export function analizar(docArg, sitio, ov = {}) {
   else if (cierreTxt && ((cierreTxt.n >= 3 && cierreTxt.share >= 0.6) || (cierreTxt.n >= 2 && cierreTxt.share === 1))) { mesCierre = cierreTxt.mes; fuenteCierre = `contenido del .md (${cierreTxt.n} de ${cierreTxt.total} fechas de fin de mes caen en el mes ${cierreTxt.mes})`; if (cierreNom && cierreNom.mes !== cierreTxt.mes) { estadoCierre = 'pregunta'; preguntaCierre = `El nombre del archivo dice cierre ${cierreNom.fecha}, pero el contenido cierra en el mes ${cierreTxt.mes}. ¿Cuál es el cierre de este ejercicio?`; } }
 
   // El resto de los .md del club, para ver si el cierre cambió en el tiempo.
+  // (to-do 237 m) Sin los documentos que están en documentos-descartados.txt o documentos-parciales.txt (la misma lista que saltea
+  // lote.mjs y que `--todos` usa para `faltan-datos`): un documento descartado no es un hermano. Caso: Tondela 2021, el relatório del
+  // Clube Desportivo de Tondela (asociación, descartado con ok de Guido) hacía preguntar "dos entidades" aunque el perímetro estuviera fijado.
   const dirClub = resolve(ROOT, 'Clubes', paisCarpeta, clubCarpeta);
+  const fueraDeCargaHermanos = new Set(['Admin/registros/documentos-descartados.txt', 'Admin/registros/documentos-parciales.txt']
+    .flatMap((f) => (existsSync(resolve(ROOT, f)) ? readFileSync(resolve(ROOT, f), 'utf8').split('\n') : []))
+    .map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')).map((d) => d.replace(/\.(pdf|md)$/i, '')));
   const hermanos = [];
   (function walk(d) {
     for (const e of readdirSync(d)) {
       const f = join(d, e);
       if (statSync(f).isDirectory()) { walk(f); continue; }
       if (!/\.md$/i.test(e) || /\.(previo-[a-z]+|gemini-check|claude-check|mistral-redo|t-[a-z]+)\.md$/i.test(e) || /^readme/i.test(e)) continue;
+      if (fueraDeCargaHermanos.has(rel(f).replace(/\.md$/i, ''))) continue;
       hermanos.push(f);
     }
   })(dirClub);
