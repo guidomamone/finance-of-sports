@@ -27,3 +27,5 @@ SAD recién constituida en una categoría inferior, no un error de descarga.
 - Último chequeo: 2026-09-17.
 
 Color de marca: #0000FF — infobox de Wikipedia (kit camiseta local, azul con lista vertical roja; colores principales azul y rojo; pt.wikipedia), verificado 2026-10-09. Ojo: es el azul saturado de la plantilla; el escudo (dorado con ondas azules) tiene un azul más oscuro, misma familia.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2022 desde `Clubes/Portugal/Alverca/relatorio-contas-2021-22.pdf` (sourceId `alverca-pt-relatorio-contas-2021-22`).

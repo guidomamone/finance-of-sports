@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf",
  "md": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.md",
- "generado": "2026-10-15T06:24:11.187Z",
- "estado": "cola",
+ "generado": "2026-10-15T12:42:56.411Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2023,
  "escala": {
@@ -11,10 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "7b1ce6f"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf",
+   "campo": "cierre",
+   "valor": "2023-06-30",
+   "linea": null,
+   "motivo": "Claude 2026-10-15 (lote 76): el registro dedujo 2023-09-29, que es la fecha de firma ('Alverca, 29 de Setembro de 2023', L75 y L108); el documento dice 'Período findo em 30 de Junho de 2023' (L87)",
+   "evidencia": "relatorio-contas-2022-23.md L75, L87, L108",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -48,7 +57,9 @@
    "detalle": "club nuevo"
   }
  ],
- "notas": [],
+ "notas": [
+  "duda de localizar ya contestada para el club (cuadro-de-otro-anio, \"-\"): aceptar, en relatorio-contas-2022-23.pdf"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,

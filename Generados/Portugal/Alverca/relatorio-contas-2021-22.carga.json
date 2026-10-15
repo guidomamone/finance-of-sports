@@ -1,26 +1,145 @@
 {
  "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2021-22.pdf",
- "generado": "2026-10-15T06:32:26.515Z",
+ "generado": "2026-10-15T12:51:11.559Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (alverca-pt)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "alverca-pt",
+  "year": 2022,
+  "cierre": "2022-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Vendas e serviços prestados",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 0.09357,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subsídios à exploração",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.037669,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros rendimentos",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.02106,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Fornecimentos e serviços externos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.580143,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos com pessoal",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.898159,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Provisões (aumentos/reduções)",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros gastos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.041037,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos / reversões de depreciação e de amortização",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.031442,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2022-06-30",
+   "sourceId": "alverca-pt-relatorio-contas-2021-22",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.011537,
+   "tax": -0.006458,
+   "extraRows": [
+    {
+     "label": "Gastos de financiamento (líquidos)",
+     "value": -0.011537
+    },
+    {
+     "label": "Imposto sobre o rendimento do período",
+     "value": -0.006458
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Vendas e serviços prestados",
+     "lado": "revenue",
+     "importe": 0.09357,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 0.1523,
+   "officialTotalExpenses": 2.550781,
+   "officialPAT": -2.416477
+  },
+  "source": {
+   "id": "alverca-pt-relatorio-contas-2021-22",
+   "clubId": "alverca-pt",
+   "title": "Futebol Clube de Alverca - Futebol SAD — relatorio-contas-2021-22 (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Alverca/relatorio-contas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Portugal/Alverca/relatorio-contas-2021-22.md",
  "reemplaza": false,
  "periodo": {
@@ -33,5 +152,245 @@
  },
  "clubId": "alverca-pt",
  "year": 2022,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 10,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Vendas e serviços prestados",
+   "page": 2,
+   "native": 0.09357,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.09357,
+   "cat": "lump_football_operations",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.09357
+  },
+  {
+   "label": "Subsídios à exploração",
+   "page": 2,
+   "native": 0.037669,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.037669,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.037669
+  },
+  {
+   "label": "Outros rendimentos",
+   "page": 2,
+   "native": 0.02106,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.02106,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.02106
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "page": 2,
+   "native": 0.580143,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.580143,
+   "cat": "admin_general_expense",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.580143
+  },
+  {
+   "label": "Gastos com pessoal",
+   "page": 2,
+   "native": 1.898159,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.898159,
+   "cat": "wages_squad",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.898159
+  },
+  {
+   "label": "Provisões (aumentos/reduções)",
+   "page": 2,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "admin_general_expense",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Outros gastos",
+   "page": 2,
+   "native": 0.041037,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.041037,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.041037
+  },
+  {
+   "label": "Gastos / reversões de depreciação e de amortização",
+   "page": 2,
+   "native": 0.031442,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.031442,
+   "cat": "depreciation",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.031442
+  },
+  {
+   "label": "Gastos de financiamento (líquidos)",
+   "page": null,
+   "native": -0.011537,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposto sobre o rendimento do período",
+   "page": null,
+   "native": -0.006458,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 0.152299,
+  "expSum": -2.550781,
+  "officialTotalRevenue": 0.1523,
+  "officialTotalExpenses": 2.550781,
+  "officialPAT": -2.416477,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -2.416477,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 0.1523
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 2.550781
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no aparece en los rosters cacheados de 2022 (pt-primeiraliga, pt-ligaportugal2): puede haber jugado otra división",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (5 de 5 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Portugal (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2022-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2022-06-30 = 0.9627 (Cierre BCE al 30/6/2022 (1 EUR = 1,0387 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "alverca-pt-relatorio-contas-2021-22",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "no aparece en los rosters cacheados de 2022 (pt-primeiraliga, pt-ligaportugal2): puede haber jugado otra división",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 3,
+  "lineasGasto": 5,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
 }

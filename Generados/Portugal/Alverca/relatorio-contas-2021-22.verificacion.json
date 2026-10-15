@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2021-22.pdf",
  "md": "Clubes/Portugal/Alverca/relatorio-contas-2021-22.md",
- "generado": "2026-10-15T06:24:11.170Z",
- "estado": "cola",
+ "generado": "2026-10-15T12:42:56.389Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2022,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "f6856b0",
-  "e810d58"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -44,7 +41,10 @@
    "detalle": "club nuevo"
   }
  ],
- "notas": [],
+ "notas": [
+  "duda de localizar ya contestada para el club (cuadro-de-otro-anio, \"-\"): aceptar, en relatorio-contas-2022-23.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en relatorio-contas-2021-22.pdf"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,

@@ -1,0 +1,121 @@
+{
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2021-22.md",
+ "generatedAt": "2026-10-15T12:50:36.456Z",
+ "rubrosHuella": "491e5a60f65ad83b05e8e3c427ed29c4b2f76c07",
+ "rubros": [
+  {
+   "label": "Vendas e serviços prestados",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros rendimentos",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros gastos",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos com pessoal",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "wages_squad",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Gastos / reversões de depreciação e de amortização",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "depreciation",
+     0.98
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Provisões (aumentos/reduções)",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1072
+  }
+ ]
+}

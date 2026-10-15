@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2024-25.pdf",
  "md": "Clubes/Portugal/Alverca/relatorio-contas-2024-25.md",
- "generado": "2026-10-15T06:24:32.285Z",
+ "generado": "2026-10-15T12:42:56.449Z",
  "estado": "cola",
  "clubId": null,
  "year": 2025,
@@ -65,8 +65,7 @@
   "duda de localizar confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"-\"): ¿El encabezado 'PERÍODOS' del estado b2 tiene la columna 30/06/2025 primero y 30/06/2024 después?",
   "duda de extraer que no afecta la carga: L1163 no tiene importe en la columna 30/06/2025; el total L1170 cuadra sin él.",
   "duda de extraer que no afecta la carga: L992 año anterior ilegible; el actual se lee bien y el total L997 está impreso.",
-  "duda de extraer que no afecta la carga: L1014 año anterior ilegible; solo afecta la columna comparativa.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L1014 año anterior ilegible; solo afecta la columna comparativa."
  ],
  "reintentar": null,
  "reintentado": false,

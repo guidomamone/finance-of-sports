@@ -1,0 +1,70 @@
+{
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.md",
+ "generatedAt": "2026-10-15T12:50:36.456Z",
+ "rubrosHuella": "5c131a89d8bee3c23d6f996e923c4204825969b1",
+ "rubros": [
+  {
+   "label": "Vendas e serviços prestados",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Subsídios a exploração",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros rendimentos",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros gastos",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.89,
+   "desdeCache": true
+  }
+ ]
+}
