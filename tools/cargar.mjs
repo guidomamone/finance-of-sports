@@ -42,8 +42,8 @@
 //  6. TOTALES Y TIE-OUT (club-data-mapping §6, "precisión antes que velocidad"): se buscan en el documento (tablas preparadas de
 //     proponer-carga, año del ejercicio) un total impreso igual a la suma de las líneas de ingresos, otro igual a la de gastos (sin
 //     `exceptional_items`: es lo que compara audit.js, |expenses + nonCash|) y el resultado del ejercicio igual a ingresos + gastos +
-//     netInterest + tax. La tolerancia es la de audit.js (0,01 millones): un total que solo cierra por redondeo también FRENA (audit.js
-//     daría P0 `no-cierra`), con la diferencia a la vista. Sin total de ingresos que cierre, frena. Gastos o resultado impresos que no
+//     netInterest + tax. Un total que solo cierra por redondeo no frena: se agrega la línea "Diferencia de redondeo"
+//     por la diferencia (other_income / other_expenses, ver L852) y el aviso lo dice. Sin total de ingresos que cierre, frena. Gastos o resultado impresos que no
 //     cierran, frena; que no se encuentran, quedan en null con aviso (el sitio acepta un club-año con solo el total de ingresos, decisión
 //     de Guido).
 //  7. TIPO DE CAMBIO, LIGA, REPORTTYPE, SOURCEID: los mismos campos que calcula el alta (`analizar()` de tools/alta-club.mjs): fx declarado
@@ -288,7 +288,10 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   const reemplaza = REEMPLAZAR && e.cargado;
   if (e.cargado && !REEMPLAZAR) frena('registro', 'el registro dice que el ejercicio ya está cargado en el sitio');
   if (reemplaza) P.avisos.push('--reemplazar: rehace un ejercicio ya cargado');
-  if (e.jev !== 'listo-para-jev' && !reemplaza) frena('registro', `todavía no se puede categorizar: ${porQueNoListo(e)}`);
+  // Los frenos que dependen de "no es un reemplazo" quedan marcados: si más abajo data/ dice que el año ya está cargado (escalón 1 de
+  // --reemplazar, ver "¿ESTÁ CARGADO?"), se sacan.
+  const frenosSinReemplazo = [];
+  if (e.jev !== 'listo-para-jev' && !reemplaza) { frena('registro', `todavía no se puede categorizar: ${porQueNoListo(e)}`); frenosSinReemplazo.push(P.frena.at(-1)); }
   P.reemplaza = reemplaza;
   // El período se recalcula con tools/periodo.mjs sobre el .md actual: el del registro puede ser de una versión anterior de periodo.mjs
   // (el arreglo de las temporadas "2009-10" del 2026-09-30 cambió 165 marcas `nombreNoCoincide`). Si difiere del registro, se avisa.
@@ -320,7 +323,8 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   if (!e.md || !existsSync(resolve(ROOT, e.md))) { return corta('registro', 'no hay .md en disco'); }
   const mdAbs = resolve(ROOT, e.md);
   const catPath = resolve(ROOT, derivado(e.md, '.categorias.json', { crear: false }));
-  if (!existsSync(catPath)) { if (P.reemplaza) P.avisos.push('sin .categorias.json (año cargado a mano): cada fila sale de la escalera de categorías; una fila sin categoría frena igual'); else frena('categorizacion', 'no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)'); }
+  const AVISO_SIN_CAT = 'sin .categorias.json (año cargado a mano): cada fila sale de la escalera de categorías; una fila sin categoría frena igual';
+  if (!existsSync(catPath)) { if (P.reemplaza) P.avisos.push(AVISO_SIN_CAT); else { frena('categorizacion', 'no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)'); frenosSinReemplazo.push(P.frena.at(-1)); } }
   else if (!categoriasAlDia(mdAbs)) frena('categorizacion', 'el .categorias.json NO está al día con su .rubros.json / .jev.json (huellas, tools/huellas.mjs): hay que volver a correr la etapa 5');
 
   // ---- 2. club y año
@@ -361,6 +365,14 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   if (q.clubId && !q.clubDeCarpeta && q.clubId !== clubId) frena('club', // clubDeCarpeta: sin cita, el id de quien es el nombre de la carpeta (to-do 232 f)
     `carpetas-clubes.mjs dice ${clubId} y quien.mjs --quien dice ${q.clubId}`);
   if (!year) { return corta('año', 'no se pudo determinar el año del ejercicio'); }
+  // ¿ESTÁ CARGADO? (to-do 236 a, ok de Guido el 2026-10-15) Escalón 0: el registro (`cargado` de transcripciones-estado.jsonl). Escalón 1:
+  // data/ (el repo local, no el sitio deployado) ya tiene el año. El registro queda viejo después de cargar hasta que alguien corre el
+  // inventario: con --reemplazar frenaban 21 años griegos ya publicados ("ya tiene el ejercicio cargado").
+  if ((cd.fiscalYearMeta || {})[year] && REEMPLAZAR && !P.reemplaza) {
+    P.reemplaza = true; P.frena = P.frena.filter((f) => !frenosSinReemplazo.includes(f));
+    P.avisos.push('--reemplazar: el registro no lo daba por cargado, pero data/ tiene el año (registro desactualizado: tools/inventario-transcripciones.mjs)');
+    if (!existsSync(catPath)) P.avisos.push(AVISO_SIN_CAT);
+  }
   if ((cd.fiscalYearMeta || {})[year]) { if (P.reemplaza) P.avisos.push(`${clubId} ${year} ya cargado: se reemplaza`); else frena('año', `${clubId} ya tiene el ejercicio ${year} cargado`); }
   // (Versión 637) ajuste manual `no-recargar`: lo publicado de ese año no lo reproduce una corrida nueva y es mejor que ella (Lazio 2012-13, Roma 2021: el
   // desglose de las notas en miles, que el script no abre). `--reemplazar` frena; para recargar de verdad hay que anular el ajuste a conciencia.
@@ -520,7 +532,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // volvieron a preguntarlo. Medido sobre las respuestas existentes: con 2 clubes decide 34 y acierta 34; con 1, decide 59 y acierta 59.
     // Una respuesta que saca la fila (descartar) no decide desde otro club (sacaFila, abajo).
     // Compuertas: misma etiqueta (claveFamilia), mismo lado, mismo CONTEXTO (contextoFila(): la nota que la abre o, en el estado, el renglón
-    // título de arriba), respondida en al menos 2 clubes y todos con la misma categoría. Caso: "c) trattamento di fine rapporto" bajo
+    // título de arriba), respondida en al menos 1 club (to-do 215) y todos con la misma categoría. Caso: "c) trattamento di fine rapporto" bajo
     // "per il personale" (wages_squad en varios clubes); "altri costi" no se generaliza porque cada club lo tiene bajo otro título.
     if (!resp && familia && lado) {
       const ctx = contextoFila(P.md, label, lado);
