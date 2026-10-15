@@ -9,4 +9,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'famalicao-pt': { 2022: 'pt-primeiraliga' },
   'tondela-pt': { 2021: 'pt-primeiraliga' },
   'estreladaamadora-pt': { 2023: 'pt-ligaportugal2' },
+  'sportingcp-pt': { 2025: 'pt-primeiraliga' },
 });

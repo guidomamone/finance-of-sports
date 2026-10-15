@@ -40,3 +40,5 @@ separado (algunos ejercicios recientes los exponen sueltos) y las versiones ESEF
 ejercicios más nuevos (no bajadas, se priorizó el PDF legible).
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2025 desde `Clubes/Portugal/Sporting CP/relatorio-contas-2024-25.pdf` (sourceId `sportingcp-pt-relatorio-contas-2024-25`).

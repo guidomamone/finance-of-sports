@@ -4,6 +4,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2025: {
     leagueSize: null,
     clubs: [
+      { id:"sportingcp-pt", revenue:310.571, reportType:"official_balance_sheet",
+        sourceId:"sportingcp-pt-relatorio-contas-2024-25",
+        mix:[["Comercial / Sponsors",42.689],["Estadio",27.631],["Televisión",34.536],["Premios por competencias",57.411],["Venta de Jugadores",136.932],["Otros ingresos",11.372]] },
       { id:"vitoriaguimaraes-pt", revenue:60.304, reportType:"official_balance_sheet",
         sourceId:"vitoriaguimaraes-pt-relatorio-contas-2024-25",
         mix:[["Comercial / Sponsors",3.465],["Estadio",2.858],["Televisión",8.114],["Premios por competencias",11.393],["Venta de Jugadores",33.707],["Otros ingresos",0.767]] },
