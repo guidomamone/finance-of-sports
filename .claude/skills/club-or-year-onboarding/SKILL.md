@@ -31,16 +31,18 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
 
 ### a) Correr clubes
 
-1. La etapa 2 (transcribir con Mistral y validar) la hace `tools/pipeline.mjs`, no el lote: `lote.mjs` saltea los PDFs sin `.md` y
+1. La etapa 2 (transcribir con Mistral y validar el inventario: primero la validación gratis, y solo las páginas dudosas se pagan) la hace `tools/pipeline.mjs`, no el lote: `lote.mjs` saltea los PDFs sin `.md` y
    arranca en la etapa 3. Ensayo: `node tools/pipeline.mjs --dir "Clubes/<País>/<Club>" --max-paginas 0 --limit 0`; Guido
    corre lo mismo con `caffeinate -i` y `--ejecutar`. `--max-paginas 0` incluye los PDFs de más de 100 páginas (sin él quedan para el
    final). El costo es el del ensayo (cuenta páginas); el de `estado.mjs` es fijo por documento y subestima los PDFs largos.
 2. Armar la lista (`Admin/lotes/lote-NN.txt`). Con un club de varios años: todos los años de la etapa más baja juntos. Un documento sin
    estado de resultados (informe del auditor, memoria sola) no va a la lista: se le propone a Guido para `Admin/registros/documentos-descartados.txt`
-   (el lote los saltea) y entra ahí solo con su ok. Antes de crear la lista, `ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -3` y tomar el
+   (el lote los saltea) y entra ahí solo con su ok. Un balance de menos de 12 meses (le falta el otro tramo del ejercicio) tampoco va a
+   la lista: va a `Admin/registros/documentos-parciales.txt` con lo que cubre y lo que falta, también con su ok. Antes de crear la lista, `ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -3` y tomar el
    número siguiente; nunca reusar uno. Al cerrar un lote, su lista va a `Admin/Archive/lotes/`.
-3. Club nuevo: fijar perímetro y cierre (`node tools/ajustes.mjs`) antes del primer lote, para no pagar dos veces la localización.
-   `node tools/antes-de-localizar.mjs --lista <lista>` dice qué falta (gratis).
+3. Club nuevo: el lote fija el perímetro solo (`perimetro-senales.mjs`, con la regla de `Admin/CONVENCIONES-DATOS.md`) y deduce el
+   cierre de los documentos vecinos. `node tools/antes-de-localizar.mjs --lista <lista>` dice qué falta (gratis). Un ajuste a mano
+   (`node tools/ajustes.mjs`) solo para lo que el lote frena e imprime, antes de localizar, para no pagar dos veces la localización.
 4. Ensayo: `node tools/lote.mjs --lista Admin/lotes/lote-NN.txt` (gratis). Decirle a Guido qué etapa toca, para qué sirve y cuánto cuesta.
 5. Guido corre `caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar`, y con `--cargar` si lo que quede listo se
    escribe en esa misma corrida (`tools/cargar-lote.mjs`: alta del club, un commit por año; si ningún año entra, revierte el alta). Si el
@@ -54,7 +56,7 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
    corre Claude Code, Guido si no; `--autor` lo fuerza).
 8. Escribir: lo que el lote dejó listo entra con `--cargar`. Lo que no, a mano: `node tools/cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año (club nuevo: `alta-club.mjs` en el mismo
    commit que su primer año). Después caja y deuda: `node tools/caja-deuda.mjs --club <id>` (ensayo); `--ejecutar --escribir` lo corre
-   Guido, porque su escalón 2 usa IA.
+   Guido, porque sus escalones 1b (Jev) y 2 (IA) usan API.
    Club nuevo: antes de cargar su primer año, un subagente Sonnet revisa contra el documento lo que propuso el alta (nombre legal, tipo
    de documento y fecha de cierre); lo que esté mal se corrige con un ajuste (`name`, `reportType`, `cierre`). Si el nombre legal quedó
    como pregunta en la cola (la portada y lo más frecuente no coinciden), el subagente propone la respuesta con cita del documento. Se
