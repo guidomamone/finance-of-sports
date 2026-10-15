@@ -19,6 +19,14 @@ window.RANKINGS["pt-primeiraliga"] = {
         incluidos:[["Estadio","Otros ingresos",1]] },
     ],
   },
+  2019: {
+    leagueSize: null,
+    clubs: [
+      { id:"rioave-pt", revenue:21.222, reportType:"official_balance_sheet",
+        sourceId:"rioave-pt-relatorio-contas-2018-19",
+        mix:[["Comercial / Sponsors",1.336],["Estadio",0.344],["Televisión",4.78],["Premios por competencias",0.436],["Venta de Jugadores",13.605],["Otros ingresos",0.722]] },
+    ],
+  },
   2018: {
     leagueSize: null,
     clubs: [

@@ -41,6 +41,87 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2018: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2018-06-30","sourceId":"rioave-pt-relatorio-contas-2017-18"}
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Rio Ave/relatorio-contas-2018-19.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Rio Ave/relatorio-contas-2018-19.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bilheteira | pág. 24, Jev 1 |
+| 2 | Direitos Televisivos | pág. 24, Jev 1 |
+| 3 | Patrocínio e Publicidade | pág. 24, Jev 1 |
+| 4 | Atividades Comerciais | pág. 24, Jev 0.91 |
+| 5 | Subsídios à Exploração | pág. 2, Jev 0.99 |
+| 6 | Royalties | pág. 27, Jev 0.92 |
+| 7 | Participação nas Competições Europeias | pág. 27, Jev 1 |
+| 8 | Participação nas Competições Nacionais | pág. 27, Jev 1 |
+| 9 | Apostas Desportivas | pág. 27, Jev 0.95 |
+| 10 | Cedência de Jogadores | pág. 27, Jev 0.99 |
+| 11 | Venda de Direitos Desportivos | pág. 27, Jev 1 |
+| 12 | Indemnizações AT | pág. 27, Jev 1 |
+| 13 | Mecanismo de Solidariedade | pág. 27, Jev 0.92 |
+| 14 | Outros | pág. 27, Jev 0.99 |
+| 15 | Outros Rendimentos Similares | pág. 27, Jev 0.97 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subcontratos | pág. 25, precedente |
+| 2 | Trabalhos especializados | pág. 25, Jev 0.95 |
+| 3 | Vigilância e segurança | pág. 25, Jev 0.91 |
+| 4 | Honorários | pág. 25, Jev 0.99 |
+| 5 | Gastos honorários a agentes desportivos | pág. 25, precedente |
+| 6 | Outros serviços especializados | pág. 25, precedente |
+| 7 | Conservação e reparação | pág. 25, Jev 0.96 |
+| 8 | Outros serviços especializados | pág. 25, precedente |
+| 9 | Livros e Documentação Técnica | pág. 25, Jev 0.99 |
+| 10 | Material de escritório | pág. 25, Jev 1 |
+| 11 | Equipamento Desportivo | pág. 25, precedente |
+| 12 | Medicamentos e Artigos de Saúde | pág. 25, Jev 0.99 |
+| 13 | Outros materiais | pág. 25, precedente |
+| 14 | Electricidade | pág. 25, Jev 0.99 |
+| 15 | Combustíveis | pág. 25, Jev 0.99 |
+| 16 | Outras energias e fluidos | pág. 25, precedente |
+| 17 | Deslocações e estadas | pág. 25, Jev 0.95 |
+| 18 | Rendas e alugueres | pág. 25, precedente |
+| 19 | Comunicação | pág. 25, Jev 1 |
+| 20 | Seguros | pág. 25, Jev 0.9 |
+| 21 | Limpeza, higiene e conforto | pág. 25, Jev 0.99 |
+| 22 | Outros serviços diversos | pág. 25, Jev 0.98 |
+| 23 | Remunerações do pessoal | pág. 26, precedente |
+| 24 | Indemnizações | pág. 26, precedente |
+| 25 | Encargos s/ remunerações | pág. 26, precedente |
+| 26 | Seguros de acidentes no trabalho e doenças profissionais | pág. 26, precedente |
+| 27 | Outros gastos | pág. 26, Jev 0.99 |
+| 28 | Imparidade de dívidas a receber (perdas/reversões) | pág. 2, Jev 0.96 |
+| 29 | Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões) | pág. 2, precedente |
+| 30 | Quotizações/Inscrições | pág. 27, precedente |
+| 31 | Impostos | pág. 27, Jev 0.93 |
+| 32 | Multas e Penalidades | pág. 27, Jev 0.98 |
+| 33 | Abates | pág. 27, precedente |
+| 34 | Outros Gastos e Perdas | pág. 27, Jev 0.97 |
+| 35 | Ativos fixos tangíveis | pág. 28, Jev 0.96 |
+| 36 | Ativos intangíveis | pág. 28, precedente |
+
+### Meta
+
+```text
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2019-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2019-06-30
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2018–19 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Rio Ave".
+```
+
 ## 2018
 
 ### Ingresos
@@ -225,4 +306,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### rioave-pt-relatorio-contas-2018-19
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Rio Ave/relatorio-contas-2018-19.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
