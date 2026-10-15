@@ -113,6 +113,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-15): staffCost 2.845299 (compuerta: documento anterior): Jev (confianza 0.95): Volos_notes_2024-06-30.md L187 "Σύνολο κόστους μισθοδοσίας περιόδου"
+```
+
 ## 2023
 
 ### Ingresos
@@ -147,6 +151,10 @@ Generados/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.categorias.json (escaló
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-13): categoria = admin_general_expense. Claude 2026-10-13 (to-do 219): gastos de administración sin el personal
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-15): staffCost 2.519034 (compuerta: documento siguiente): Jev (confianza 0.93): Volos_notes_2023-06-30.md L167 "Σύνολο κόστους μισθοδοσίας περιόδου"
 ```
 
 ## 2022
@@ -186,6 +194,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-15): staffCost 2.262043 (compuerta: documento siguiente): Jev (confianza 0.95): Volos_notes_2022-06-30.md L167 "Σύνολο κόστους μισθοδοσίας περιόδου"
+```
+
 ## 2021
 
 ### Ingresos
@@ -221,6 +233,10 @@ Generados/Grecia/Volos NFC/Volos_income_stmt_2021-06-30.categorias.json (escaló
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-13): categoria = admin_general_expense. Claude 2026-10-13 (to-do 219): gastos de administración sin el personal
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.168861 (compuerta: documento siguiente): Jev (confianza 0.77): Volos_notes_2021-06-30.md L189 "Σύνολο κόστους μισθοδοσίας περιόδου"
 ```
 
 ## 2020
