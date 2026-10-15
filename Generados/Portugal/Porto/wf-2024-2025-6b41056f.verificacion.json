@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf",
  "md": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.md",
- "generado": "2026-10-15T23:18:26.359Z",
+ "generado": "2026-10-15T23:22:48.834Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "porto-pt",
  "year": 2025,
  "escala": {
   "valor": "miles",
@@ -74,7 +74,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -87,7 +87,7 @@
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: b8 (pág. 35) reagrupa Vendas+Prestações+Outros proveitos (149.540) que ya abre la nota 25 (b135).",
   "duda de extraer que no afecta la carga: L7743 (−23.658) excluye resultados de investimentos y L7709 es una métrica informativa; no corresponden a renglones del estado.",
-  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en wf-2024-2025-6b41056f.pdf"
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-2024-2025-6b41056f.pdf"
  ],
  "reintentar": null,
  "reintentado": true,

@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Benfica/relatorio-contas-2018-19.md",
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2018-19.pdf",
-  "club": "benfica",
+  "club": "benfica-pt",
   "year": 2019,
-  "generatedAt": "2026-10-15T23:18:26.424Z",
+  "generatedAt": "2026-10-15T23:22:48.901Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         43.525
       ],
-      "glosa": "Ingresos por derechos de televisión"
+      "glosa": "Ingresos de televisión"
     },
     {
       "label": "Outras receitas",
@@ -64,7 +64,7 @@
       "values": [
         1.952
       ],
-      "glosa": "Royalties"
+      "glosa": "Regalías"
     },
     {
       "label": "Outras receitas",
@@ -84,7 +84,7 @@
       "values": [
         10.672
       ],
-      "glosa": "Corporate"
+      "glosa": "Servicios corporativos"
     },
     {
       "label": "Bilhetes de época",
@@ -144,7 +144,7 @@
       "values": [
         2.787
       ],
-      "glosa": "Resultado procedente de inversiones en empresas participadas"
+      "glosa": "Resultado de inversiones en entidades participadas"
     },
     {
       "label": "Trabalhos especializados",
@@ -164,7 +164,7 @@
       "values": [
         7.468
       ],
-      "glosa": "Desplazamientos y estancias"
+      "glosa": "Viajes y estancias"
     },
     {
       "label": "Licença marca Benfica",
@@ -174,7 +174,7 @@
       "values": [
         6.109
       ],
-      "glosa": "Licencia de marca Benfica"
+      "glosa": "Licencia de la marca Benfica"
     },
     {
       "label": "Conservação e reparação",
@@ -184,7 +184,7 @@
       "values": [
         2.966
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Reparación y conservación"
     },
     {
       "label": "Serviços de catering/softdrink",
@@ -204,7 +204,7 @@
       "values": [
         2.393
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Equipamento desportivo",
@@ -224,7 +224,7 @@
       "values": [
         2.118
       ],
-      "glosa": "Subcontrataciones"
+      "glosa": "Subcontratos"
     },
     {
       "label": "Vigilância e segurança",
@@ -254,7 +254,7 @@
       "values": [
         10.837
       ],
-      "glosa": "Otros suministros y servicios exteriores"
+      "glosa": "Otros suministros y servicios"
     },
     {
       "label": "Remunerações fixas",
@@ -314,7 +314,7 @@
       "values": [
         0.074
       ],
-      "glosa": "Prestaciones post-empleo"
+      "glosa": "Retribuciones post-empleo"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -324,7 +324,7 @@
       "values": [
         6.337
       ],
-      "glosa": "Cargas sociales sobre retribuciones"
+      "glosa": "Cargas sociales sobre salarios"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -394,7 +394,7 @@
       "values": [
         0.046
       ],
-      "glosa": "Otro inmovilizado material"
+      "glosa": "Otros activos tangibles"
     },
     {
       "label": "Direito de utilização da marca",
@@ -444,7 +444,7 @@
       "values": [
         -0.445
       ],
-      "glosa": "Provisiones / Deterioros ^{2)}"
+      "glosa": "Provisiones / Pérdidas por deterioro ^{2)}"
     },
     {
       "label": "Outros gastos e perdas operacionais ^{3)}",
@@ -474,7 +474,7 @@
       "values": [
         9.674
       ],
-      "glosa": "Gastos asociados a enajenaciones de derechos de deportistas (comisiones)"
+      "glosa": "Gastos asociados a la enajenación de derechos de deportistas (comisiones)"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -514,7 +514,7 @@
       "values": [
         3.555
       ],
-      "glosa": "Pérdidas por deterioro de valor"
+      "glosa": "Pérdidas por deterioro"
     },
     {
       "label": "Reversões de imparidade",
@@ -524,7 +524,7 @@
       "values": [
         -0.731
       ],
-      "glosa": "Reversiones del deterioro de valor"
+      "glosa": "Reversiones del deterioro"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Braga/relatorio-contas-2024-25.pdf",
  "md": "Clubes/Portugal/Braga/relatorio-contas-2024-25.md",
- "generado": "2026-10-15T23:18:26.381Z",
+ "generado": "2026-10-15T23:22:48.855Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "braga-pt",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -43,13 +43,13 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"Imparidade de inventários (perdas/reversões)\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
   "la lectura base no cerraba; cerró con la lectura 4",
-  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en relatorio-contas-2024-25.pdf"
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2024-25.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

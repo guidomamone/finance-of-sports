@@ -1,10 +1,18 @@
 {
  "pdf": "Clubes/Portugal/Braga/relatorio-contas-2024-25.pdf",
- "generado": "2026-10-15T23:20:39.460Z",
+ "generado": "2026-10-15T23:24:51.685Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (braga-pt)"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "braga-pt ya tiene el ejercicio 2025 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['braga-pt-relatorio-contas-2024-25'] ya existe"
   }
  ],
  "avisos": [
@@ -76,7 +84,7 @@
     "_pag": 125,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Subsídios à exploração",
@@ -186,7 +194,7 @@
     "_pag": 131,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
    }
   ],
   "expenseLines": [
@@ -508,7 +516,7 @@
     "_pag": 129,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)"
    },
    {
     "rawLabel": "Encargos com remunerações",
@@ -598,7 +606,7 @@
     "_pag": 134,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía player_sales)"
    },
    {
     "rawLabel": "Direitos de formação e mecanismo de solidariedade",
@@ -848,10 +856,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): 'Outros' 17 828 dentro de Prestação de serviços (ingreso); sin categoría específica. [relatorio-contas-2016-17.md L2066: Outros | 17 828 | 603]",
    "destino": "revenue",
    "amountNative": 0.283877
   },
@@ -1018,10 +1024,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): 'Outros' 17 828 dentro de Prestação de serviços (ingreso); sin categoría específica. [relatorio-contas-2016-17.md L2066: Outros | 17 828 | 603]",
    "destino": "revenue",
    "amountNative": 0.745238
   },
@@ -1504,10 +1508,8 @@
    "cat": "wages_squad",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "precedente del país: 2 clubes (Moreirense, Rio Ave), nota:gastos com o pessoal · Claude 2026-10-15 (subagente Sonnet, seguridad alta): indemnizaciones dentro de gastos de personal; precedentes Fortaleza, Avaí, Lazio [relatorio-contas-2017-18.md L1217]",
    "destino": "expense",
    "amountNative": -1.314696
   },
@@ -1642,10 +1644,8 @@
    "cat": "player_amortisation",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía player_sales)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Gasto (Outros gastos): cesión temporal de atletas que Braga recibe (Horta, Velazquez, etc.); costo de adquirir derechos de jugadores, bucket Compra de jugadores (espejo del ingreso Empréstimo de atletas = player_sales). [relatorio-contas-2016-17.md L2714: Empréstimo de atletas | 858 000 | 50 000]",
    "destino": "expense",
    "amountNative": -0.525175
   },
@@ -1878,8 +1878,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2024–25 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Braga\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1919,13 +1919,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2024–25 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Braga\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 1,
+  "motivos": 3,
   "lineasIngreso": 17,
   "lineasGasto": 51,
   "metaFilas": 3,

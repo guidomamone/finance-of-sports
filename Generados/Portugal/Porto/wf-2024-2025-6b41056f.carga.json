@@ -1,10 +1,18 @@
 {
  "pdf": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf",
- "generado": "2026-10-15T23:20:39.111Z",
+ "generado": "2026-10-15T23:24:51.480Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (porto-pt)"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "porto-pt ya tiene el ejercicio 2025 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['porto-pt-wf-2024-2025-6b41056f'] ya existe"
   }
  ],
  "avisos": [
@@ -126,7 +134,7 @@
     "disclosureLevel": "aggregated",
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Outros proveitos",
@@ -722,10 +730,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): redondeo de centésimas.",
    "destino": "revenue",
    "amountNative": 0.001
   },
@@ -1332,8 +1338,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2024–25 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Porto\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1373,13 +1379,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2024–25 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Porto\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 1,
+  "motivos": 3,
   "lineasIngreso": 15,
   "lineasGasto": 30,
   "metaFilas": 4,

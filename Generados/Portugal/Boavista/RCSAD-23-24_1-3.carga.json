@@ -1,10 +1,14 @@
 {
  "pdf": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf",
- "generado": "2026-10-15T23:20:40.201Z",
+ "generado": "2026-10-15T23:24:52.160Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (boavista-pt)"
+   "etapa": "año",
+   "motivo": "boavista-pt ya tiene el ejercicio 2024 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['boavista-pt-rcsad-23-24-1-3'] ya existe"
   }
  ],
  "avisos": [
@@ -404,8 +408,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2023–24 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Boavista\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -445,13 +449,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2023–24 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Boavista\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 1,
+  "motivos": 2,
   "lineasIngreso": 5,
   "lineasGasto": 4,
   "metaFilas": 2,

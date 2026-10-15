@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2018-19.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2018-19.md",
- "generado": "2026-10-15T23:18:26.424Z",
+ "generado": "2026-10-15T23:22:48.901Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "benfica-pt",
  "year": 2019,
  "escala": {
   "valor": "miles",
@@ -38,7 +38,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -58,7 +58,7 @@
   "escalón \"nota exacta en la lectura 6\": \"Gastos com transações de direitos de atletas\" (L2707) se abre en las 4 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 6\": \"Amortizações e perdas de imparidade de direitos de atletas\" (L2709) se abre en las 3 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 6",
-  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en relatorio-contas-2018-19.pdf"
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2018-19.pdf"
  ],
  "reintentar": null,
  "reintentado": true,

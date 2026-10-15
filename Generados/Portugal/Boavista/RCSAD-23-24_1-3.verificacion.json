@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf",
  "md": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.md",
- "generado": "2026-10-15T23:18:26.443Z",
+ "generado": "2026-10-15T23:22:48.920Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "boavista-pt",
  "year": 2024,
  "escala": {
   "valor": "unidades",
@@ -73,7 +73,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -85,7 +85,7 @@
   "ajuste manual: fila \"Bilhetes e Camarotes\" (ingreso) 507 074,99, en lugar de \"Vendas e serviços prestados\" (2026-10-15, El estado trae las ventas en un renglón; la nota 22 (en la parte 2 del PDF, que el lote no lee) lo desglosa.)",
   "ajuste manual: fila \"Direitos Televisivos\" (ingreso) 3 463 888,92 (2026-10-15, Desglose de Vendas e serviços prestados, nota 22.)",
   "ajuste manual: fila \"Publicidade\" (ingreso) 453 304,23 (2026-10-15, Desglose de Vendas e serviços prestados, nota 22.)",
-  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en RCSAD-23-24_1-3.pdf"
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en RCSAD-23-24_1-3.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
