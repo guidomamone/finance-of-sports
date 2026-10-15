@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 702 — Portugal, lote 76: primeros 12 años en el sitio (2026-10-15)
+
+- Altas: Rio Ave (2017-2020, 2022, 2023, 2025), Alverca (2022-2023), Nacional (2024), Moreirense (2022, 2025). Colas de verificación,
+  categorías y perfil contestadas por subagentes Sonnet (~200 casos), correcciones grandes revisadas contra el documento.
+- Correcciones por ajuste: Moreirense 2022/2025 y Vitória Guimarães 2022 SAD, la venta de jugadores del formato SNC ("Rendimentos em
+  investimentos não financeiros" / "e ganhos em investimentos") a player_sales; Famalicão 2022 "Outros rendimentos" (plusvalía de tres
+  jugadores) a player_sales; Nacional 2024 "Correções relativas a períodos anteriores" (la respuesta de la cola cambiaba el signo);
+  Moreirense, el estadio dentro de "Outros" (`incluye`); Alverca 2022-23, el cierre (había tomado la fecha de firma); Vitória Guimarães
+  2022 SAD, "Prestação de serviços" abierta en sus cinco sub-rubricas (TV 6,92 M). Alverca 2022 (152.299,54 €, tercera división)
+  silenciado como verificado en audit-ignore.json. Rio Ave 2016-17 con el reparto del estado; pregunta al club en dudas-por-club.
+- To-do 237 (mejoras de script del lote 76, a-h). Los "conocido, sin daño hoy" pasaron del TODO a HALLAZGOS-pipeline.md (regla de la
+  skill de onboarding cambiada con el ok de Guido). Memoria revisada: 16 -> 12.
+
 ## Versión 701 — 232 aa: perfil de OFI, Levadiakos y Paysandu (2026-10-15)
 
 - Los 14 casos de perfil de años ya cargados se cerraron contestándolos (subagente Sonnet, citas verificadas), no con un escalón de script:

@@ -77,6 +77,14 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
        datos de los clubes del lote 71 al cerrar Grecia; después, con las columnas por perímetro y Jev en caja-deuda.mjs, se sumaron
        Olympiacos (caja 2016-2025), AEK 2025 (caja), PAOK 2021 y Panetolikos 2022 (deuda). Conocido, sin tocar (histórico): Panathinaikos 2025 tiene
        "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου" como competition_bonus; en AEK 2023 y 2025 va como other_income.
+    b0) PORTUGAL, EN CURSO (lote 76, 2026-10-15). En el sitio: Rio Ave 2017-2020, 2022, 2023, 2025; Alverca 2022-2023; Nacional 2024;
+       Moreirense 2022 y 2025. Falta del lote 76: Famalicão 2022 y Vitória Guimarães 2022 SAD (cola contestada y ajustes nuevos: hace
+       falta correr el lote otra vez); Vitória Guimarães 2025 (cola contestada; falta el color en la revisión del alta, y mirar la venta de
+       jugadores en "Rendimentos e ganhos em investimentos", formato SNC); los que no cierran en la etapa 6: Alverca 2024-2025, Moreirense
+       2023-2024, Rio Ave 2015 (es del club asociación, 2014-15, y pide rearmar la transcripción con --reintentar), 2016 y 2024, Vitória
+       Guimarães 2021, 2022 y 2024 (dos entidades: los relatorio-contas-* y el de la SAD no coinciden); Tondela 2020-2021 (decisión de
+       Guido: cargar la SAD y descartar el relatório del club asociación). Sin transcribir: el resto de Portugal (Benfica, Porto,
+       Sporting, Braga, Marítimo y más, ~200 PDFs): `pipeline.mjs --dir "Clubes/Portugal"`. Mejoras de script vistas: to-do 237.
     b) SIGUIENTE. Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
        (`ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -1` para el número), `antes-de-localizar.mjs`, ensayo, Guido corre `lote.mjs --ejecutar
        --cargar`, y la cola se revisa con un Sonnet que recomienda respuestas con cita. Fichas listas para alta (`alta-club.mjs --todos`,
