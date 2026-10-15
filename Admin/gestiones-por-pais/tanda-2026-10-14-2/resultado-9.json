@@ -1,0 +1,15 @@
+{
+  "criterioPais": { "GR": "En OFI Crete se carga el dueño y presidente Michalis Bousis (asumió el 10/10/2018, ya cargado en data/gestiones/gr.js). El único cierre de este lote (30/6/2018) es anterior y cae en una administración provisoria judicial sin presidente identificado: no se carga ninguna gestión." },
+  "clubes": {
+    "oficrete-gr": {
+      "gestiones": [],
+      "notas": {},
+      "cubre": {},
+      "dudas": [
+        "Cierre 2018-06-30 sin cubrir: Fotis Tsalos renunció como presidente a fines de 2017 (efsyn lo llama 'el entonces presidente'; in.gr 11/1/2018 dice que renunció junto a otros directores) y el Juzgado de Primera Instancia de Heraklion designó el 11/1/2018 una administración provisoria de 7 miembros (Zervakis, Apostolakis, Fasomitakis, Aletras, Markoulakis, Kontopyrakis, Gournièzakis; https://www.in.gr/2018/01/11/sports/football/me-7meli-dioikisi-prwtodikeioy-i-pae-ofi/ y https://www.cretalive.gr/sports/nea-prosorini-dioikisi-stin-pae-ofi). Ninguna fuente consultada nombra a un presidente de ese cuerpo (cretalive 26/1/2018 los lista a todos como miembros); un reporte de prensa dice que seguirían hasta fin de temporada. No hay persona con cargo de presidente confirmable al 30/6/2018, así que no se publica gestión.",
+        "Corroboración en documentos: Clubes/Grecia/OFI Crete/OFI_board_report_2018-06-30.md:182-188 lo firma el 3/12/2018 'Georgios Samaras, Primer Vicepresidente del Directorio' (ya bajo Bousis, presidente desde el 10/10/2018); no nombra al presidente del ejercicio ni sirve para el 30/6/2018. Si la gestión cambió entre el cierre (30/6/2018) y la aprobación (3/12/2018): sí, pasó de la administración judicial a Bousis.",
+        "Pendiente de Guido: confirmar en ΓΕΜΗ o actas del tribunal quién presidía la administración provisoria en 2018, o decidir si el cierre 2018 queda sin gestión."
+      ]
+    }
+  }
+}

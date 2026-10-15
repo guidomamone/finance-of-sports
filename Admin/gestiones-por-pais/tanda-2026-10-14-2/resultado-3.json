@@ -1,0 +1,29 @@
+{
+  "criterioPais": { "BR": "En Cuiabá (SAF controlada por la familia Dresch) se cargó el Presidente del club, no el dueño, porque los dos hermanos Dresch son socios y la prensa distingue presidente (Alessandro hasta 2023, Cristiano después). Las fechas de traspaso no figuran en ninguna fuente hallada, por eso las gestiones quedan sin confirmar." },
+  "clubes": {
+    "cuiaba-br": {
+      "gestiones": [
+        { "nombre": "Alessandro Dresch", "corto": "Dresch", "cargo": "Presidente", "desde": "2022-01-01", "hasta": "2023-12-12",
+          "fuente": "https://exame.com/esporte/clube-empresa-raiz-divida-zero-e-olho-do-dono-como-o-cuiaba-conseguiu-seu-1o-lucro-da-historia/", "confirmada": false },
+        { "nombre": "Cristiano Luiz Dresch", "corto": "Dresch", "cargo": "Presidente", "desde": "2023-12-12", "hasta": null,
+          "fuente": "https://placar.com.br/brasileirao/presidente-do-cuiaba-explica-sucesso-na-elite-criatividade-e-pes-no-chao/", "confirmada": false }
+      ],
+      "notas": {
+        "Alessandro Dresch": "Exame (2023-06-10) lo nombra presidente y a su hermano Cristiano vicepresidente; la fuente no da fecha de asuncion (desde 2022-01-01 es un placeholder, sin dato) ni de salida. El balance 2022 (balanco-financeiro-2022.md:49 y :134) lo firma Alessandro Dresch como Socio-Administrador (marzo de 2023). hasta 2023-12-12 es el primer dia en que la prensa ya llama presidente a Cristiano (Placar), no una fecha de salida real.",
+        "Cristiano Luiz Dresch": "Placar (2023-12-12) ya lo llama presidente; la prensa de 2024-2025 (Petit, cobros a Corinthians y Santos, CBN Cuiaba 2025-01-29) tambien. No hay fuente con la fecha de asuncion (desde es la del primer articulo hallado). Firma como Socio-Administrador los balances 2023 (balanco-patrimonial-2023.md:50 y :136; demonstracoes-financeiras-2023-auditadas.md:874, aprobadas 2024-04-26), 2024 (balanco-financeiro-2024.md:43 y :127, 2025-04-29) y 2025 (balanco-financeiro-2025.md:166-169)."
+      },
+      "cubre": {
+        "2022-12-31": "Alessandro Dresch",
+        "2023-12-31": "Cristiano Luiz Dresch",
+        "2024-12-31": "Cristiano Luiz Dresch",
+        "2025-12-31": "Cristiano Luiz Dresch"
+      },
+      "dudas": [
+        "No se encontro la fecha en que Cristiano Dresch paso a presidente en lugar de Alessandro (entre junio de 2023, cuando Exame aun nombra presidente a Alessandro, y diciembre de 2023, cuando Placar ya llama presidente a Cristiano). Ninguna fuente la da; por eso ambas gestiones son confirmada:false.",
+        "Cierre 2023-12-31: queda con Cristiano solo por la fecha del articulo de Placar (2023-12-12); el cambio pudo ser antes o despues dentro de 2023. Preguntarle al club.",
+        "Fecha de asuncion de Alessandro como presidente: no hallada (el club es SAF desde 2021-12-13 segun balanco-financeiro-2022.md:477; el 2022-01-01 es un supuesto).",
+        "El sitio oficial del club (cuiabaesporteclube.com.br/o-clube/2/diretoria) no cargo (conexion rechazada); su texto, citado por buscador, dice que Cristiano es Asistente Juridico desde 2023, lo que no se pudo contrastar."
+      ]
+    }
+  }
+}

@@ -315,6 +315,16 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-13): gr-superleague2, verificado contra roster cacheado de "2018–19 Football League (Greece)" (tools/club-league-reference/gr.json), coincidencia única por palabras "Volos" = "Volos NFC".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-14-2/resultado-10.json, tools/gestiones-tanda.mjs, 2026-10-15):_
+
+```text
+Giorgos Spyridopoulos (2017-06-02 a 2020-07-24): Primera gestión (la segunda, desde 2024-07-01, ya está cargada en data/gestiones/gr.js con este mismo nombre). desde 2017-06-02: Sportsup (2/6/2017) lo presenta como presidente del N.P.S. Volos en la presentación pública del club; la fecha exacta de asunción no figura, se usa la de la presentación (aproximada). hasta 2020-07-24: renunció el 20/7/2020 (Fosonline, https://www.fosonline.gr/podosfairo/superleague/article/102056/volos-paraitithike-o-proedros-tis-pae-giorgos-spyridopoylos) y Beos asumió el 24/7/2020 (Ethnos, la fuente de la gestión de Beos): se corta el día en que entra Beos, sin hueco. Magnesia News dice que siguió hasta julio de 2020 (no se pudo abrir, 403). Corroboración: Volos_balance_2019-06-30.md:33 y Volos_notes_2019-06-30.md:241 lo muestran firmando como Δ. Σύμβουλος (director ejecutivo), Volos_notes_2020-06-30.md:213 lo mismo; los informes del directorio (Volos_board_report_2019-06-30.md y 2020, última página) traen 'Ο ΠΡΟΕΔΡΟΣ / Ο ΔΙΕΥΘΥΝΩΝ ΣΥΜΒΟΥΛΟΣ' sin nombres. Los balances se firman el 10/11/2019 y el 16/11/2020: el de 2019 todavía con él; el de 2020 ya con Beos de presidente (desde 24/7/2020), así que el cierre 2020-06-30 es de la gestión de Spyridopoulos pero lo aprobó la de Beos.
+Duda: Fecha exacta de asunción en 2017 (el sitio da solo la presentación del 2/6/2017).
+Duda: Quién firmó el balance al 30/6/2020 (16/11/2020) como Δ. Σύμβουλος: el nombre del firmante no figura en Volos_balance_2020-06-30.md; Volos_notes_2020-06-30.md:213 trae Spyridopoulos.
+```
+
 ## Fuentes
 
 ### volosnfc-gr-volos-income-stmt-2019-06-30

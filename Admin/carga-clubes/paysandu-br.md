@@ -307,6 +307,14 @@ Duda: Cierre 2025: Aguilera presidió casi todo el año; Tuma asumió el 22/12/2
 Duda: Posse de Ettinger 2021: sin día en las fuentes; O Liberal dice "2020".
 ```
 
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-14-2/resultado-6.json, tools/gestiones-tanda.mjs, 2026-10-15):_
+
+```text
+Carlos Maurício Carpes Ettinger (2021-01-02 a 2025-01-01): Electo el 2020-12-03 para 2021-2022 y reelecto para 2023-2024. La fuente (sitio oficial del club, nota del 2021-01-18) dice que la posse formal fue el 2 de enero de 2021 (toma efectiva del mando el 17 y segunda posse estatutaria el 26 de enero); desde=2021-01-02. El hasta=2025-01-01 no está en esa misma página: viene de O Liberal (2025-01-05, https://www.oliberal.com/esportes/futebol/e-hora-de-sair-de-cena-mauricio-ettinger-avalia-gestao-e-se-despede-do-paysandu-1.903032), que dice que su segundo mandato terminó el 31 de diciembre de 2024 y que Roger Aguilera asumió el 1 de enero de 2025; es la convención de los otros clubes de Brasil (hasta = fecha de asunción del sucesor). Wikipedia pt solo da años (2021-2025), por eso no se usó. Documentos: balanco-2021.md:43-44 (y notas-explicativas-2021.md:850) firma Ettinger como Presidente; balanco-2023.md:41 y dre-2023.md:57-59 igual (la firma digital de dre-2023.md:55 tiene un sello de fecha 2022.11.28 que no cuadra con un balance 2023, probablemente un metadato heredado de otro documento); balanco-2024.md:38-40 y dre-2024.md:58-60 firma como 'Representante Legal'. relatorio-administrativo-2025.md:70-72 confirma que Aguilera fue electo en 2024 y que luego renunció (Tuma asumió), consistente con que Ettinger cerró 2024.
+Duda: El balance 2024 (cierre 2024-12-31) lo firma Ettinger sin fecha legible; si se aprobó en 2025 ya estaba Aguilera en la presidencia, pero la firma es de Ettinger como representante legal. No hay campo 'firmo' pedido: se deja como aviso.
+Duda: La fuente de desde (sitio del club) no menciona la fecha de salida; esa sale de O Liberal. Si Guido exige una sola URL que diga ambas fechas, no la encontré (Wikipedia solo da años).
+```
+
 ## Fuentes
 
 ### (general)

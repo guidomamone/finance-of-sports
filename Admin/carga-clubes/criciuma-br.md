@@ -778,6 +778,15 @@ Duda: NSC Total (nota sobre la renuncia de Guedes) dice por error que asumió en
 Duda: Quién condujo entre octubre y diciembre de 2015 (renuncia de Angeloni - posse de Dal Farra): sin dato.
 ```
 
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-14-2/resultado-2.json, tools/gestiones-tanda.mjs, 2026-10-15):_
+
+```text
+Antenor Angeloni (2010-01-01 a 2015-11-30): Presidente 2010-2015 según la lista oficial de presidentes del club (criciumaec.com.br/diretoria: '32 Antenor Angeloni 2010-2015'). La fuente (ND Mais, 2015-09-20) dice que asumió en 2010 y que dejaría el cargo el 30/11/2015: 'desde' es año solo (01-01) y 'hasta' es la fecha anunciada, no la efectiva (Jaime Dal Farra fue aclamado el 08/12/2015 según criciuma.com.br/sala-de-imprensa/novo-presidente-e-empossado, que no se publica como gestión por no estar en los cierres). Los balances 2012 y 2013 (demonstrativo-financeiro-2012.md:36-37; demonstracoes-financeiras-2013.md:32-33) van dirigidos al Vice Presidente Financeiro Ailton Schuelter y no traen firma de presidente; el 2014 tampoco. Los tres cierres caen en el medio de la gestión, sin cambio entre cierre y aprobación.
+Anselmo Freitas (2021-01-01 a 2022-06-02): Presidente 2021-2022 según la lista oficial del club ('34 Anselmo Freitas 2021-2022'). Engeplus (2022-06-02) dice que asumió en diciembre de 2020 tras la salida de Jaime Dal Farra, sin día (otra fuente de prensa habla de enero de 2021): 'desde' 2020-12-01 es mes solo; el cierre 2021-12-31 queda adentro en cualquiera de las dos. 'hasta' 2022-06-02 es la fecha de la nota que informa su renuncia ('na manhã desta quinta-feira (2)'). Firma el balance 2021 como PRESIDENTE (demonstrativo-financeiro-2021.md:969, y firma digital en la línea 188). Cambio de gestión posterior al cierre: Vilmar Guedes asumió en 2022, después de la aprobación. Ajuste de Guido (2026-10-15): desde 2020-12-01 -> 2021-01-01 (la fuente da solo el mes; otra dice enero de 2021; Dal Farra ya está cargado hasta el 2021-01-01 y el cierre 2020 quedaba con dos presidentes).
+Duda: Fecha exacta de asunción de Angeloni (2010; una nota de radio habla del 01/03/2010 pero no pude verificarla en la página) y de su salida (anunciada 30/11/2015, sucesor aclamado 08/12/2015).
+Duda: Fecha exacta de asunción de Anselmo Freitas: diciembre de 2020 (Engeplus) vs enero de 2021 (otra fuente, interino tras Dal Farra); no afecta el cierre 2021.
+```
+
 ## Fuentes
 
 ### (general)

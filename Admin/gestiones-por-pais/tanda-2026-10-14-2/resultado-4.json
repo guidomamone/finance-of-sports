@@ -1,0 +1,40 @@
+{
+  "criterioPais": { "BR": "En Ferroviária (sociedad anónima, hoy SAF) se cargó la figura ejecutiva que firma las demostraciones financieras como Presidente o Diretor Presidente, no el presidente del Conselho de Administração ni el dueño; así firma cada balance." },
+  "clubes": {
+    "ferroviaria-br": {
+      "gestiones": [
+        {
+          "nombre": "Welson Alves Ferreira Júnior",
+          "corto": "Welson Júnior",
+          "cargo": "Presidente",
+          "desde": "2010-01-01",
+          "hasta": "2014-01-01",
+          "fuente": "https://jornaldeararaquara.com.br/juninho-continua-e-valqurio-sai/",
+          "confirmada": false
+        },
+        {
+          "nombre": "Júlio César Carneiro",
+          "corto": "Carneiro",
+          "cargo": "Diretor Presidente",
+          "desde": "2024-04-26",
+          "hasta": null,
+          "fuente": "https://rciararaquara.com.br/juliano-malara-deixa-a-ferroviaria-acionistas-escolhem-julio-carneiro-para-a-direcao-executiva/",
+          "confirmada": true
+        }
+      ],
+      "notas": {
+        "Welson Alves Ferreira Júnior": "Firma como Presidente los balances de 2012 (balanco-2012.md:151-152) y 2013 (balanco-2013-a.md:266-268); el de 2010 (balanco-2010.md) solo trae el informe del auditor, sin firma de la dirección. La nota de Jornal de Araraquara (21/06/2013) lo confirma en la presidencia de la AFE/Ferroviária S.A. 'por mais 2 anos' pero sin fechas de inicio ni fin. El período 2010 a 2014 sale de un perfil de prensa que no pude abrir ni verificar, y no encontré una fuente con día de asunción ni de salida. 'desde' y 'hasta' son aproximaciones por año (día 01, mes 01), y el 'hasta' contradice el 'mais 2 anos' de junio de 2013 (podría llegar a mediados de 2015). Por eso confirmada:false.",
+        "Júlio César Carneiro": "Firma como Diretor Presidente los balances de 2023 (demonstracoes-financeiras-2023-fpf.md:1135-1138), 2024 (demonstracoes-financeiras-2024.md:1031-1034) y 2025 (demonstracoes-financeiras-2025.md:1021-1024). RCI Araraquara (26/04/2024) dice que el Conselho decidió el día 19 (mes no explícito) sacar a Juliano Malara de la dirección ejecutiva y que Carneiro 'já assumiu as funções': la fecha de asunción exacta no figura, 2024-04-26 es la de publicación (a más tardar). El comunicado oficial del club del 26/11/2025 (https://ferroviariasaf.com/2025/11/26/comunicado-oficial/) confirma que sigue como Diretor-Presidente, por eso hasta:null. El balance de 2023 (cierre 2023-12-31) se firmó en 2024, probablemente después de su asunción, pero al cierre él no estaba en el cargo (ver dudas)."
+      },
+      "cubre": {
+        "2024-12-31": "Júlio César Carneiro",
+        "2025-12-31": "Júlio César Carneiro"
+      },
+      "dudas": [
+        "Cierres 2010, 2012 y 2013: Welson Alves Ferreira Júnior firma 2012 y 2013 como Presidente (balanco-2012.md:151, balanco-2013-a.md:268) y un perfil de prensa lo ubica 2010-2014, pero no hay fuente web con fechas de asunción y salida; 2010 no tiene firma de la dirección. Falta una fuente con fechas (prensa de Araraquara de 2010 y 2014, o el acta del Conselho).",
+        "Cierre 2023-12-31: no hay gestión confirmada. A fin de 2023 Juliano Malara se presentaba como presidente pero era uno de tres directores ejecutivos de la SAF; la nota de RCI de 26/04/2024 dice que Filippo Bertolucci es, según el estatuto, el 'presidente de fato' de la sociedad (Presidente del Conselho de Administración, cargo que dejó el 26/11/2025). Su fecha de asunción (diciembre de 2022 según un resultado de búsqueda, sin fuente primaria) no está verificada. Hay que decidir si la figura de 2023 es Bertolucci (presidente del Conselho) o Malara (director ejecutivo), y ninguna de las dos tiene fechas confirmadas. Carneiro asumió en 2024, después del cierre.",
+        "Fecha exacta de asunción de Carneiro: entre el 19 y el 26 de abril de 2024 según RCI Araraquara; no figura el día. No afecta a los cierres 2024 y 2025."
+      ]
+    }
+  }
+}

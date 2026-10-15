@@ -40,8 +40,10 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://www.elheraldo.co/deportes/2018/11/15/el-calvario-que-duro-13-anos-566242/', confirmada:false },
   ],
   'fortalezaceif-co': [
-    { nombre:'Carlos Alberto Barato Méndez', corto:'Barato', cargo:'Presidente', desde:'2015-01-01', hasta:'2025-11-25',
+    { nombre:'Carlos Alberto Barato Méndez', corto:'Barato', cargo:'Presidente', desde:'2015-01-01', hasta:'2024-12-31',
       fuente:'https://www.winsports.co/futbol-colombiano/noticias/feliz-cumpleanos-amix-fortaleza-celebra-12-anos-de-historia-68898', confirmada:true },
+    { nombre:'Carlos Francisco Serrano Mogollón', corto:'Serrano', cargo:'Presidente', desde:'2025-01-01', hasta:null,
+      fuente:'https://es.wikipedia.org/wiki/Fortaleza_CEIF', confirmada:true },
   ],
   'aguilasdoradas-co': [
     { nombre:'José Fernando Salazar Olano', corto:'Salazar', cargo:'Dueño', desde:'2008-07-16', hasta:null,

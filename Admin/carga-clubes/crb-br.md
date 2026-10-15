@@ -299,6 +299,15 @@ SIN CONFIRMAR, no cargada: Marcos Barbosa (2011-01-01 a 2021-04-01), https://www
 Duda: Gazeta Web y Jornal de Alagoas discrepan sobre la duración del primer mandato de Marroquim (2022 vs 2024); no afecta quién conducía.
 ```
 
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-14-2/resultado-1.json, tools/gestiones-tanda.mjs, 2026-10-15):_
+
+```text
+Mário Marroquim (2021-04-01 a hoy): Gazeta Web: aclamado chapa única el 05/03/2021, posse el 01/04/2021 (fecha de asunción confirmada). Firma el balanço 2020 y 2021 como Presidente (balanco-patrimonial-2020.md:69, balanco-patrimonial-2021.md:69). Ya figura en data/gestiones/br.js con la misma fecha; falta agregar a Barbosa.
+SIN CONFIRMAR, no cargada: Marcos Barbosa (2011-01-01 a 2021-04-01), https://www.gazetaweb.com/blogs/arivaldo-maia/227348: Gazeta Web dice que presidió el CRB 'entre 2011 y este início de 2021' (solo años, sin día de salida); desde 2011-01-01 es solo año, y hasta 2021-04-01 es el día de la posse de su sucesor, no una salida confirmada. TNH1 (18/12/2018, tnh1.com.br/noticia/nid/barbosa-comenta-sobre-reforcos-negociacoes-marca-propria-e-sucessao-ouca/) lo muestra reconducido por dos años (2019-2020) tras el Conselho del 17/12/2018. Que siguiera al 31/12/2020 es inferencia: ninguna fuente lo dice. IMPORTANTE: el balanço 2020 (Clubes/Brasil/CRB/balanco-patrimonial-2020.md:69) lo firma Mário Marroquim como Presidente, es decir, el balance se aprobó/firmó ya bajo la nueva gestión; no contradice que al cierre 2020 condujera Barbosa.
+Duda: No encontré fuente con fecha de salida de Marcos Barbosa ni de asunción original (2011). Su mandato bianual 2019-2020 terminaba presumiblemente el 31/12/2020, y la posse de Marroquim fue el 01/04/2021: no pude confirmar si hubo prórroga (pandemia) o interino entre ambas fechas. Por eso la gestión de Barbosa va confirmada:false y el cierre 2020-12-31 queda sin cobertura confirmada.
+Duda: Qué fuente buscar: acta del Conselho Deliberativo del CRB o prensa alagoana (Tribuna Hoje, Gazeta de Alagoas) de dic-2020 a mar-2021 sobre el calendario electoral.
+```
+
 ## Fuentes
 
 ### (general)

@@ -1918,3 +1918,22 @@ sin leerlo.
   L1109; 32.213.945,18 en 2023-24), contra 4.983.339,90 de "Αμοιβές προσωπικού" (L1108). La nota 17 (L1193-L1215) da 9.248.501,86 € de costo
   de personal para 265 personas, 80 de ellas futbolistas. ¿Los contratos de jugadores y cuerpo técnico se pagan como honorarios a terceros
   (y están en esa línea)? Se cargó como wages_squad (decisión de Guido, 2026-10-14) a la espera de esta respuesta; si no, va a other_expenses.
+
+## Gestiones sin fecha confirmada (tanda Admin/gestiones-por-pais/tanda-2026-10-14-2, sesión 2026-10-15: no frena ninguna carga)
+
+Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso está en el `resultado-N.json` de la tanda (notas y dudas).
+- **CRB, quién presidía al 31/12/2020**: Marcos Barbosa presidió "entre 2011 y este início de 2021" (Gazeta Web); Mário Marroquim asumió el
+  1/4/2021 y ya firma el balance 2020 (balanco-patrimonial-2020.md:69). ¿Hasta cuándo siguió Barbosa, hubo prórroga o un interino entre
+  el 1/1 y el 1/4/2021? — a quién preguntarle: Conselho Deliberativo del CRB.
+- **Cuiabá, cuándo pasó la presidencia de Alessandro Dresch a Cristiano Dresch**: en junio de 2023 la prensa nombra presidente a Alessandro
+  y en diciembre a Cristiano; el balance 2022 lo firma Alessandro y los de 2023-2025 Cristiano, como "Sócio-Administrador". ¿Fechas de las
+  dos gestiones? (cierres 2022-2025).
+- **Vila Nova, quién presidía al 31/12/2014**: Rodrigo Nogueira era interino desde el 18/3/2014 y Gutemberg Veronez asumió "a fines de
+  2014"; las notas explicativas 2014 las firma como Presidente Joás Abrantes (notas-explicativas-2014.md:128-130), que habría renunciado
+  en marzo.
+- **Ferroviária 2023 (SAF), quién conducía**: Juliano Malara se presentaba como presidente pero era uno de tres directores ejecutivos;
+  el presidente del Consejo de Administración era Filippo Bertolucci (desde dic-2022 según una fuente secundaria). Además es una
+  pregunta de criterio: en una SAF, ¿se carga al presidente del consejo o al director-presidente? Ferroviária 2010-2013 (Welson Alves
+  Ferreira Júnior, fechas "2010 a 2014" sin fuente abrible) queda igual sin confirmar.
+- **OFI Crete 2018**: al 30/6/2018 el club estaba bajo una administración provisoria de 7 miembros (juzgado de Heraklion, 11/1/2018) sin
+  presidente nombrado; queda sin gestión (decisión de Guido, 2026-10-15) salvo que el ΓΕΜΗ diga quién la presidía.

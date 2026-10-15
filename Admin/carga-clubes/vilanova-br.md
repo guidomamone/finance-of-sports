@@ -593,6 +593,16 @@ Duda: Cierre 2025: Hugo Jorge Bravo presidió hasta el 28/11/2025 y Fábio Brasi
 Duda: Cierre 2016: Guto Veronez presidió hasta octubre; Ecival estaba al cierre (posible firmo).
 ```
 
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-14-2/resultado-7.json, tools/gestiones-tanda.mjs, 2026-10-15):_
+
+```text
+Gutemberg Veronez Netto (2014-12-01 a 2016-10-10): Sagres Online dice que asumió 'no fim de 2014' y renunció 22 meses después, en 2016 (renuncia el 10/10/2016 según la nota de Globo Esporte citada en Wikipedia): por eso desde = 2014-12-01 (día 01 inventado, mes deducido de la cuenta de 22 meses). La tabla de Wikipedia pone su posse el 02/12/2015, que contradice a la prensa; en ambos casos preside al 31/12/2015. Firma el balance 2015 como 'GUTEMBERB VERONEZ NETTO, Presidente' (balanco-patrimonial-2015.md:128-131).
+Ecival Miguel da Silva Martins (2016-10-11 a 2019-12-09): Segundo vicepresidente, nombrado por el Conselho Deliberativo tras la renuncia de Veronez (10/10/2016) y presentado el 11/10/2016 (desde = 2016-10-11); elegido para mandato tampón el 09/11/2016 y reelegido para 2018-2019 (Wikipedia da posse 30/12/2016 y 01/01/2018). Hasta = posse de Hugo Jorge Bravo, 09/12/2019 (Wikipedia; Esporte Goiano: aclamado el 04/12/2019, sin fecha de posse). Firma los balances 2016 y 2017 (balanco-patrimonial-2016.md:125-128; balanco-patrimonial-2017.md:157-160).
+Duda: Cierre 2014-12-31 sin cubrir: Rodrigo Nogueira asumió como interino el 18/03/2014 tras la renuncia de Joás Abrantes (Wikipedia, citando Globo Esporte 18/03/2014) y en noviembre 2014 estaba 'perto de deixar a presidência' (Globo Esporte 26/11/2014), pero no encontré el día en que asumió Veronez (solo 'fim de 2014'). Además notas-explicativas-2014.md:128-130 lo firma Joás Araujo Abrantes como Presidente, con fecha 31/12/2014 y 05/01/2015, lo que contradice que ya no fuera presidente. Hace falta una fuente con la fecha de relevo de dic-2014.
+Duda: El mes de asunción de Veronez (2014-12) es una deducción de 'fim de 2014' + 22 meses; no hay una nota que dé la fecha exacta. No afecta al cierre 2015.
+Duda: Ecival desde: la prensa lo nombró el 10-11/10/2016 por el Conselho; Wikipedia anota posse 30/12/2016 tras la elección del 09/11/2016. Los cierres 2016 y 2017 caen en la gestión de Ecival con cualquiera de las dos fechas.
+```
+
 ## Fuentes
 
 ### (general)

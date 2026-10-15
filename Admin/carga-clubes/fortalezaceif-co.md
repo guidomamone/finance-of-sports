@@ -1071,6 +1071,13 @@ Barato: fundador de CEIF, presidente y representante legal (firma las certificac
 Hasta: el club anunció su salida el 25/11/2025 (Wikipedia en inglés). Quién lo sucedió no se pudo confirmar: el ejercicio 2025 queda sin cubrir.
 ```
 
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-14-2/resultado-8.json, tools/gestiones-tanda.mjs, 2026-10-15):_
+
+```text
+Carlos Francisco Serrano Mogollón (2025-01-01 a hoy): Wikipedia (sección Presidentes) lo lista desde el 1 de enero de 2025 (presente), sucediendo a Carlos Barato (1/8/2017 al 31/12/2024); El Espectador (25/11/2025) dice que Barato presidió 'hasta enero de este año'. Ex gerente deportivo del club. El balance 2025 lo firma como Representante Legal, C.C. 79.979.660, en Clubes/Colombia/Fortaleza CEIF/certificacion-ef-2025.md:24-26 (certificación del 12/3/2026) y estados-financieros-2025.md:1467-1469; ya firmaba la certificación 2024 (certificacion-ef-2024.md:24-26). Sin cambio de gestión entre el cierre y la aprobación.
+Duda: data/gestiones/co.js (fuera de mi alcance, no editado) tiene a Carlos Alberto Barato Méndez como presidente 2015-01-01 a 2025-11-25 (Win Sports solo dice 2015 como cambio de administración; el 25/11/2025 es la fecha del anuncio de su desvinculación total). Contradice a Wikipedia y a la firma de Serrano como representante legal desde el balance 2024: conviene revisar esa gestión y que termine el 2024-12-31. Nombre de Serrano: la prensa lo llama Francisco Serrano; el nombre completo sale del balance.
+```
+
 ## Fuentes
 
 ### (general)

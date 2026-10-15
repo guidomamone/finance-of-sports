@@ -34,6 +34,8 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://en.wikipedia.org/wiki/Panserraikos_F.C.', confirmada:true },
   ],
   'volosnfc-gr': [
+    { nombre:'Giorgos Spyridopoulos', corto:'Spyridopoulos', cargo:'Presidente', desde:'2017-06-02', hasta:'2020-07-24',
+      fuente:'https://sportsup.gr/2017/06/02/aftos-ine-o-giorgos-spiridopoulos-o-proedros-tou-n-p-s-volos/', confirmada:true },
     { nombre:'Achilleas Beos', corto:'Beos', cargo:'Presidente', desde:'2020-07-24', hasta:'2024-07-01',
       fuente:'https://www.ethnos.gr/sports/article/116868/oaxilleasmpeosepestrepsestopodosfairoanalambaneithnproedriatoyboloy', confirmada:true },
     { nombre:'Giorgos Spyridopoulos', corto:'Spyridopoulos', cargo:'Presidente', desde:'2024-07-01', hasta:null, firmo:[2024],
