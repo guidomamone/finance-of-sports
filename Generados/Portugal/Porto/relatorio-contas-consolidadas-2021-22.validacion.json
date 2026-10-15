@@ -1,0 +1,20 @@
+{
+ "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2021-22.pdf",
+ "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2021-22.md",
+ "mdSha1": "128dd2d94606e4db0d9af7dab917e49776cbca6d",
+ "modo": "digital",
+ "motivoModo": "16 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 64892000 vs 64832000, 101715309 vs 101715909, 205419726 vs 205419126; 87 números del .md no están en el PDF (tolerancia 69)",
+ "generado": "2026-10-15T20:34:53.474Z",
+ "fuentes": {
+  "35": "pdftotext",
+  "76": "pdftotext",
+  "95": "pdftotext",
+  "96": "pdftotext",
+  "97": "pdftotext",
+  "98": "pdftotext",
+  "99": "pdftotext",
+  "101": "pdftotext"
+ },
+ "confirmados": 272,
+ "noConfirmados": []
+}

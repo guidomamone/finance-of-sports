@@ -1,0 +1,700 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2019-20.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2019-20.md",
+ "generado": "2026-10-15T21:55:08.835Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2020,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "9583f7c"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.003000000000026759
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2020: 175.474 en este documento y 175.474 en relatorio-contas-2020-21.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2019: 151.63 en relatorio-contas-2018-19.pdf y 151.629 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Comissões\" (5 filas) no suma la fila: quedó la fila",
+  "duda de extraer que no afecta la carga: b38 repite L4574-L4575 de b37; se cargaron una sola vez desde b37."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Comissões",
+   "suma": 1.731,
+   "objetivo": 12.456
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Comissões",
+   "suma": 1.731,
+   "objetivo": 12.456
+  }
+ ],
+ "totales": {
+  "ingresos": 175.474,
+  "gastos": 148.254,
+  "financiero": -15.401,
+  "impuesto": 0.705,
+  "resultadoImpreso": 12.521,
+  "resultadoParaCargar": 12.521,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "M": 4.189,
+   "pagina": 129,
+   "linea": 4435,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\""
+  },
+  {
+   "etiqueta": "Contrato de transmissão de direitos televisivos com a NOS",
+   "lado": "ingreso",
+   "M": 19.765,
+   "pagina": 129,
+   "linea": 4450,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Direitos Televisivos\""
+  },
+  {
+   "etiqueta": "Market Pool da Liga Europa",
+   "lado": "ingreso",
+   "M": 1.004,
+   "pagina": 129,
+   "linea": 4452,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Direitos Televisivos\""
+  },
+  {
+   "etiqueta": "Bilhetes de época (Gamebox)",
+   "lado": "ingreso",
+   "M": 4.414,
+   "pagina": 130,
+   "linea": 4470,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\""
+  },
+  {
+   "etiqueta": "Bilheteira Liga Nacional",
+   "lado": "ingreso",
+   "M": 1.541,
+   "pagina": 130,
+   "linea": 4471,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\""
+  },
+  {
+   "etiqueta": "Bilheteira Liga UEFA",
+   "lado": "ingreso",
+   "M": 0.294,
+   "pagina": 130,
+   "linea": 4472,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\""
+  },
+  {
+   "etiqueta": "Bilheteira Supertaça",
+   "lado": "ingreso",
+   "M": 0.133,
+   "pagina": 130,
+   "linea": 4473,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\""
+  },
+  {
+   "etiqueta": "Bilheteira Taça de Portugal",
+   "lado": "ingreso",
+   "M": 0.016,
+   "pagina": 130,
+   "linea": 4474,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\""
+  },
+  {
+   "etiqueta": "Bilheteira Jogos particulares",
+   "lado": "ingreso",
+   "M": 0.169,
+   "pagina": 130,
+   "linea": 4475,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\""
+  },
+  {
+   "etiqueta": "Bilheteira Taça da Liga",
+   "lado": "ingreso",
+   "M": 0.012,
+   "pagina": 130,
+   "linea": 4476,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\""
+  },
+  {
+   "etiqueta": "Camarotes",
+   "lado": "ingreso",
+   "M": 4.344,
+   "pagina": 130,
+   "linea": 4477,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\""
+  },
+  {
+   "etiqueta": "Business Seats",
+   "lado": "ingreso",
+   "M": 0.905,
+   "pagina": 130,
+   "linea": 4478,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\""
+  },
+  {
+   "etiqueta": "Lugares de Leão e VIP",
+   "lado": "ingreso",
+   "M": 0.651,
+   "pagina": 130,
+   "linea": 4479,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "ingreso",
+   "M": 0.032,
+   "pagina": 130,
+   "linea": 4480,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\""
+  },
+  {
+   "etiqueta": "Patrocínios e Publicidade",
+   "lado": "ingreso",
+   "M": 13.573,
+   "pagina": 129,
+   "linea": 4439,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "ingreso",
+   "M": 4.98,
+   "pagina": 129,
+   "linea": 4440,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\""
+  },
+  {
+   "etiqueta": "Apuramento para a fase de grupos da Liga Europa",
+   "lado": "ingreso",
+   "M": 5.706,
+   "pagina": 131,
+   "linea": 4515,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\" > desglose de \"Participação nas Competições Europeias\""
+  },
+  {
+   "etiqueta": "Performance desportiva na fase de grupos da Liga Europa",
+   "lado": "ingreso",
+   "M": 2.28,
+   "pagina": 131,
+   "linea": 4517,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\" > desglose de \"Participação nas Competições Europeias\""
+  },
+  {
+   "etiqueta": "Passagem às eliminatórias subsequentes da Liga Europa",
+   "lado": "ingreso",
+   "M": 1,
+   "pagina": 131,
+   "linea": 4518,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\" > desglose de \"Participação nas Competições Europeias\""
+  },
+  {
+   "etiqueta": "Outros prémios",
+   "lado": "ingreso",
+   "M": 0.105,
+   "pagina": 131,
+   "linea": 4519,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\" > desglose de \"Participação nas Competições Europeias\""
+  },
+  {
+   "etiqueta": "Participação nas Competições Nacionais",
+   "lado": "ingreso",
+   "M": 0.211,
+   "pagina": 130,
+   "linea": 4494,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Participação em Competições Particulares",
+   "lado": "ingreso",
+   "M": 0.543,
+   "pagina": 130,
+   "linea": 4495,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Cedência de jogadores",
+   "lado": "ingreso",
+   "M": 1.09,
+   "pagina": 130,
+   "linea": 4497,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0.385,
+   "pagina": 130,
+   "linea": 4498,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Recuperação de custos",
+   "lado": "ingreso",
+   "M": 0.013,
+   "pagina": 130,
+   "linea": 4499,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "ingreso",
+   "M": 1.173,
+   "pagina": 130,
+   "linea": 4500,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Venda de direitos desportivos deduzido do valor líquido contabilístico",
+   "lado": "ingreso",
+   "M": 104.151,
+   "pagina": 137,
+   "linea": 4738,
+   "origen": "nota que desglosa \"Rendimentos com transacções de jogadores\""
+  },
+  {
+   "etiqueta": "Mecanismo de solidariedade/Compensação por formação",
+   "lado": "ingreso",
+   "M": 2.795,
+   "pagina": 137,
+   "linea": 4739,
+   "origen": "nota que desglosa \"Rendimentos com transacções de jogadores\""
+  },
+  {
+   "etiqueta": "Custo das mercadorias vendidas",
+   "lado": "gasto",
+   "M": 2.407,
+   "pagina": 98,
+   "linea": 3463,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Patrocínios e publicidade (nota 27)",
+   "lado": "gasto",
+   "M": 0.647,
+   "pagina": 132,
+   "linea": 4567,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\""
+  },
+  {
+   "etiqueta": "Manutenções",
+   "lado": "gasto",
+   "M": 0.748,
+   "pagina": 132,
+   "linea": 4568,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\""
+  },
+  {
+   "etiqueta": "Vigilância",
+   "lado": "gasto",
+   "M": 0.765,
+   "pagina": 132,
+   "linea": 4569,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\""
+  },
+  {
+   "etiqueta": "Limpeza",
+   "lado": "gasto",
+   "M": 0.329,
+   "pagina": 132,
+   "linea": 4570,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\""
+  },
+  {
+   "etiqueta": "Refeições",
+   "lado": "gasto",
+   "M": 1.737,
+   "pagina": 132,
+   "linea": 4571,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\""
+  },
+  {
+   "etiqueta": "Assistência aos jogos",
+   "lado": "gasto",
+   "M": 1.424,
+   "pagina": 132,
+   "linea": 4572,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\""
+  },
+  {
+   "etiqueta": "Electricidade",
+   "lado": "gasto",
+   "M": 0.884,
+   "pagina": 132,
+   "linea": 4573,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 1.758,
+   "pagina": 132,
+   "linea": 4574,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\""
+  },
+  {
+   "etiqueta": "Organização, deslocações e estadias de jogos",
+   "lado": "gasto",
+   "M": 3.529,
+   "pagina": 131,
+   "linea": 4535,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Aquisição de jogadores",
+   "lado": "gasto",
+   "M": 1.148,
+   "pagina": 132,
+   "linea": 4579,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Comissões\""
+  },
+  {
+   "etiqueta": "Cedência de jogadores",
+   "lado": "gasto",
+   "M": 0.405,
+   "pagina": 132,
+   "linea": 4581,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Comissões\""
+  },
+  {
+   "etiqueta": "Outras comissões",
+   "lado": "gasto",
+   "M": 0.178,
+   "pagina": 132,
+   "linea": 4582,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Comissões\""
+  },
+  {
+   "etiqueta": "Honorários",
+   "lado": "gasto",
+   "M": 1.671,
+   "pagina": 131,
+   "linea": 4537,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Trabalhos especializados",
+   "lado": "gasto",
+   "M": 3.439,
+   "pagina": 131,
+   "linea": 4538,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Equipamentos desportivos",
+   "lado": "gasto",
+   "M": 0.837,
+   "pagina": 131,
+   "linea": 4539,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Combustíveis",
+   "lado": "gasto",
+   "M": 0.588,
+   "pagina": 131,
+   "linea": 4540,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Publicidade e Propaganda",
+   "lado": "gasto",
+   "M": 1.196,
+   "pagina": 131,
+   "linea": 4541,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Rendas e alugueres",
+   "lado": "gasto",
+   "M": 0.681,
+   "pagina": 131,
+   "linea": 4542,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Conservação e reparação",
+   "lado": "gasto",
+   "M": 0.273,
+   "pagina": 131,
+   "linea": 4543,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 0.426,
+   "pagina": 131,
+   "linea": 4544,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 1.425,
+   "pagina": 131,
+   "linea": 4545,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Remuneração dos órgãos sociais",
+   "lado": "gasto",
+   "M": 0.391,
+   "pagina": 134,
+   "linea": 4625,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Remuneração do pessoal",
+   "lado": "gasto",
+   "M": 44.093,
+   "pagina": 134,
+   "linea": 4626,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Prémios de desempenho e de performance desportiva",
+   "lado": "gasto",
+   "M": 0.79,
+   "pagina": 134,
+   "linea": 4627,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Indemnizações",
+   "lado": "gasto",
+   "M": 7.119,
+   "pagina": 134,
+   "linea": 4628,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Encargos com remunerações",
+   "lado": "gasto",
+   "M": 3.758,
+   "pagina": 134,
+   "linea": 4629,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Gastos com benefícios pós-emprego (Nota 29)",
+   "lado": "gasto",
+   "M": 0.61,
+   "pagina": 134,
+   "linea": 4630,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 3.2,
+   "pagina": 134,
+   "linea": 4631,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.581,
+   "pagina": 134,
+   "linea": 4632,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Depreciações e amortizações excluindo plantel",
+   "lado": "gasto",
+   "M": 5.424,
+   "pagina": 98,
+   "linea": 3466,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Imparidade de clientes (Nota 15)",
+   "lado": "gasto",
+   "M": -0.107,
+   "pagina": 135,
+   "linea": 4673,
+   "origen": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\""
+  },
+  {
+   "etiqueta": "Imparidade de inventários",
+   "lado": "gasto",
+   "M": 0.228,
+   "pagina": 135,
+   "linea": 4674,
+   "origen": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\""
+  },
+  {
+   "etiqueta": "Provisões para outros riscos e encargos (Nota 20)",
+   "lado": "gasto",
+   "M": 9.038,
+   "pagina": 135,
+   "linea": 4675,
+   "origen": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\""
+  },
+  {
+   "etiqueta": "Cedência de jogadores de terceiros",
+   "lado": "gasto",
+   "M": 2,
+   "pagina": 136,
+   "linea": 4695,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Quotizações",
+   "lado": "gasto",
+   "M": 0.451,
+   "pagina": 136,
+   "linea": 4696,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Impostos",
+   "lado": "gasto",
+   "M": 0.215,
+   "pagina": 136,
+   "linea": 4697,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Multas e penalidades",
+   "lado": "gasto",
+   "M": 0.229,
+   "pagina": 136,
+   "linea": 4698,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Prospecção de mercado",
+   "lado": "gasto",
+   "M": 0.199,
+   "pagina": 136,
+   "linea": 4699,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Direitos de imagem",
+   "lado": "gasto",
+   "M": 0.5,
+   "pagina": 136,
+   "linea": 4700,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 2.214,
+   "pagina": 136,
+   "linea": 4701,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Amortizações do exercício - Futebol profissional (Nota 12)",
+   "lado": "gasto",
+   "M": 21.144,
+   "pagina": 136,
+   "linea": 4712,
+   "origen": "nota que desglosa \"Amortizações e perdas de imparidade do plantel\""
+  },
+  {
+   "etiqueta": "Perdas por imparidade - Futebol profissional (Nota 12)",
+   "lado": "gasto",
+   "M": 1.569,
+   "pagina": 136,
+   "linea": 4713,
+   "origen": "nota que desglosa \"Amortizações e perdas de imparidade do plantel\""
+  },
+  {
+   "etiqueta": "Percentagem dos direitos económicos/mais-valias",
+   "lado": "gasto",
+   "M": 1.243,
+   "pagina": 137,
+   "linea": 4742,
+   "origen": "nota que desglosa \"Gastos com transacções de jogadores\""
+  },
+  {
+   "etiqueta": "Comissões",
+   "lado": "gasto",
+   "M": 12.456,
+   "pagina": 137,
+   "linea": 4743,
+   "origen": "nota que desglosa \"Gastos com transacções de jogadores\""
+  },
+  {
+   "etiqueta": "Mecanismo de solidariedade/Compensação por formação",
+   "lado": "gasto",
+   "M": 2.519,
+   "pagina": 137,
+   "linea": 4744,
+   "origen": "nota que desglosa \"Gastos com transacções de jogadores\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 1.895,
+   "pagina": 137,
+   "linea": 4745,
+   "origen": "nota que desglosa \"Gastos com transacções de jogadores\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Resultados financeiros",
+   "M": -15.401,
+   "linea": 3476
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento",
+   "M": 0.705,
+   "linea": 3478
+  }
+ ]
+}

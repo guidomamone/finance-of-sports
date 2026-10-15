@@ -1,0 +1,41 @@
+{
+ "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.pdf",
+ "generado": "2026-10-15T22:34:45.442Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (portimonense-pt)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "evidencia": {
+   "pagina": 61,
+   "texto": "|   | 30-06-2025 | 30-06-2024  |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "temporada"
+ },
+ "clubId": "portimonense-pt",
+ "year": 2025,
+ "cortadoEn": "filas"
+}

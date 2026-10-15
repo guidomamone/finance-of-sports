@@ -1,0 +1,252 @@
+{
+ "pdf": "Clubes/Portugal/Academico Viseu/wf-2024-2025-efe7ad0a.pdf",
+ "md": "Clubes/Portugal/Academico Viseu/wf-2024-2025-efe7ad0a.md",
+ "mdSha1": "50d76efb0e7cd722f0ec91a22b698beb5491f581",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T18:05:23.673Z",
+ "bloques": {
+  "b1": {
+   "pagina": 9,
+   "lineas": [
+    209,
+    247
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    268,
+    287
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    308,
+    330
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    348,
+    375
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    444,
+    449
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    468,
+    479
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    483,
+    498
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    510,
+    528
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    532,
+    536
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    564,
+    574
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 18,
+   "lineas": [
+    610,
+    619
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    629,
+    639
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    653,
+    658
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    670,
+    674
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    686,
+    692
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    714,
+    738
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 24,
+   "lineas": [
+    836,
+    841
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 25,
+   "lineas": [
+    851,
+    860
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 25,
+   "lineas": [
+    876,
+    879
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 26,
+   "lineas": [
+    889,
+    904
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 26,
+   "lineas": [
+    912,
+    923
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 27,
+   "lineas": [
+    937,
+    947
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 27,
+   "lineas": [
+    953,
+    959
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 28,
+   "lineas": [
+    987,
+    994
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1014,
+    1033
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 29,
+   "lineas": [
+    1039,
+    1052
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b16"
+ ],
+ "notas_gastos": [
+  "b14",
+  "b15",
+  "b24",
+  "b25",
+  "b26"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "No se ve indicación de escala sobre el estado; las notas muestran importes con decimales en euros (ej. 'inventários ... 21.474,04€'), lo que sugiere unidades.",
+ "moneda": "EUR",
+ "columna_ejercicio": "PERÍODOS 2024/2025 (30/06/2025)",
+ "columna_anterior": "PERÍODOS 2023/2024 (30/06/2024)",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Están los importes de la Demonstração dos resultados (b2) expresados en euros, en unidades (con céntimos)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El índice no muestra la frase de escala sobre b2; las notas usan euros con decimales.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados por naturalezas individual de la SAD (b2). Notas: rédito y otros rendimientos (b16), gastos de financiamiento (b14), coste de mercaderías (b15), gastos de personal (b24), FSE (b25), otros gastos (b26). Excluidos balance, flujos, patrimonio, partes relacionadas, contratos y activos fijos. b6 (transacciones con partes relacionadas) no desglosa categorías, se excluye."
+}

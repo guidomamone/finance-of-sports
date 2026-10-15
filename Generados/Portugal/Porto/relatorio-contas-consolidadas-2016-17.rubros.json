@@ -1,0 +1,660 @@
+{
+  "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2016-17.md",
+  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2016-17.pdf",
+  "club": "porto",
+  "year": 2017,
+  "generatedAt": "2026-10-15T21:55:02.706Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Vendas",
+      "lado": "revenue",
+      "page": 92,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        5.174725
+      ],
+      "glosa": "Ventas"
+    },
+    {
+      "label": "Receitas associativas",
+      "lado": "revenue",
+      "page": 92,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        4.691018
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Prémios competições europeias",
+      "lado": "revenue",
+      "page": 92,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        30.836672
+      ],
+      "glosa": "Premios por competiciones europeas"
+    },
+    {
+      "label": "Receita de bilheteira",
+      "lado": "revenue",
+      "page": 92,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        4.986611
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Receita de lugares anuais",
+      "lado": "revenue",
+      "page": 92,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        2.724476
+      ],
+      "glosa": "Ingresos por abonos anuales"
+    },
+    {
+      "label": "Outras receitas desportivas",
+      "lado": "revenue",
+      "page": 92,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        1.887595
+      ],
+      "glosa": "Otros ingresos deportivos"
+    },
+    {
+      "label": "Publicidade",
+      "lado": "revenue",
+      "page": 92,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        15.383069
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Direitos de transmissões televisivas",
+      "lado": "revenue",
+      "page": 92,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        23.932417
+      ],
+      "glosa": "Derechos de retransmisión televisiva"
+    },
+    {
+      "label": "Corporate Hospitality",
+      "lado": "revenue",
+      "page": 92,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        8.259
+      ],
+      "glosa": "Hospitalidad corporativa"
+    },
+    {
+      "label": "Outros",
+      "lado": "revenue",
+      "page": 92,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        4.20169
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Subsídios à exploração",
+      "lado": "revenue",
+      "page": 36,
+      "section": "estado",
+      "values": [
+        0.036823
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Rendimentos de propriedades de investimento",
+      "lado": "revenue",
+      "page": 94,
+      "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+      "values": [
+        0.082323
+      ],
+      "glosa": "Rendimientos de inversiones inmobiliarias"
+    },
+    {
+      "label": "Imputação de subsídios para o investimento",
+      "lado": "revenue",
+      "page": 94,
+      "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+      "values": [
+        0.064341
+      ],
+      "glosa": "Imputación de subvenciones para inversión"
+    },
+    {
+      "label": "Outros rendimentos suplementares",
+      "lado": "revenue",
+      "page": 94,
+      "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+      "values": [
+        0.023538
+      ],
+      "glosa": "Otros ingresos accesorios"
+    },
+    {
+      "label": "Correções relativas a exercícios anteriores",
+      "lado": "revenue",
+      "page": 94,
+      "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+      "values": [
+        0.002629
+      ],
+      "glosa": "Correcciones relativas a ejercicios anteriores"
+    },
+    {
+      "label": "Reembolsos de sinistros",
+      "lado": "revenue",
+      "page": 94,
+      "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+      "values": [
+        0.506301
+      ],
+      "glosa": "Indemnizaciones por siniestros"
+    },
+    {
+      "label": "Reembolsos de impostos",
+      "lado": "revenue",
+      "page": 94,
+      "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+      "values": [
+        0.019996
+      ],
+      "glosa": "Devoluciones de impuestos"
+    },
+    {
+      "label": "Outros rendimentos e ganhos",
+      "lado": "revenue",
+      "page": 94,
+      "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+      "values": [
+        0.745309
+      ],
+      "glosa": "Otros ingresos y ganancias"
+    },
+    {
+      "label": "Proveitos com alienações de passes de jogadores",
+      "lado": "revenue",
+      "page": 96,
+      "section": "nota que desglosa \"Proveitos com transações de passes de jogadores\"",
+      "values": [
+        57.670146
+      ],
+      "glosa": "Ingresos por traspaso de derechos de jugadores"
+    },
+    {
+      "label": "Proveitos com empréstimos de jogadores",
+      "lado": "revenue",
+      "page": 96,
+      "section": "nota que desglosa \"Proveitos com transações de passes de jogadores\"",
+      "values": [
+        5.988363
+      ],
+      "glosa": "Ingresos por cesiones de jugadores"
+    },
+    {
+      "label": "Outros proveitos com jogadores",
+      "lado": "revenue",
+      "page": 96,
+      "section": "nota que desglosa \"Proveitos com transações de passes de jogadores\"",
+      "values": [
+        1.159763
+      ],
+      "glosa": "Otros ingresos relacionados con jugadores"
+    },
+    {
+      "label": "Custo das mercadorias vendidas e das matérias consumidas",
+      "lado": "expense",
+      "page": 36,
+      "section": "estado",
+      "values": [
+        3.321726
+      ],
+      "glosa": "Coste de las mercancías vendidas y materiales consumidos"
+    },
+    {
+      "label": "Trabalhos Especializados",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        8.435525
+      ],
+      "glosa": "Trabajos especializados"
+    },
+    {
+      "label": "Subcontratos",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        2.352745
+      ],
+      "glosa": "Subcontratación"
+    },
+    {
+      "label": "Rendas e Alugueres",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        2.094111
+      ],
+      "glosa": "Arrendamientos y cánones"
+    },
+    {
+      "label": "Direitos de imagem de atletas",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        5.340498
+      ],
+      "glosa": "Derechos de imagen de deportistas"
+    },
+    {
+      "label": "Vigilância e Segurança",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.878642
+      ],
+      "glosa": "Vigilancia y seguridad"
+    },
+    {
+      "label": "Conservação e reparação",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.905044
+      ],
+      "glosa": "Conservación y reparación"
+    },
+    {
+      "label": "Publicidade e propaganda",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.627987
+      ],
+      "glosa": "Publicidad y propaganda"
+    },
+    {
+      "label": "Despesas de organização",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.70751
+      ],
+      "glosa": "Gastos de organización"
+    },
+    {
+      "label": "Seguros",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.583172
+      ],
+      "glosa": "Seguros"
+    },
+    {
+      "label": "Honorários",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.608577
+      ],
+      "glosa": "Honorarios"
+    },
+    {
+      "label": "Material Desportivo",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.007554
+      ],
+      "glosa": "Material deportivo"
+    },
+    {
+      "label": "Comunicação",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.849101
+      ],
+      "glosa": "Comunicaciones"
+    },
+    {
+      "label": "Despesas de representação",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.620569
+      ],
+      "glosa": "Gastos de representación"
+    },
+    {
+      "label": "Limpeza, higiene e conforto",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.842235
+      ],
+      "glosa": "Limpieza, higiene y mantenimiento"
+    },
+    {
+      "label": "Relvados",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.227944
+      ],
+      "glosa": "Céspedes y terrenos de juego"
+    },
+    {
+      "label": "Energia e Fluídos",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.628533
+      ],
+      "glosa": "Energía y fluidos"
+    },
+    {
+      "label": "Outros fornecimentos e serviços",
+      "lado": "expense",
+      "page": 93,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        2.859464
+      ],
+      "glosa": "Otros aprovisionamientos y servicios exteriores"
+    },
+    {
+      "label": "Remunerações dos Órgãos Sociais",
+      "lado": "expense",
+      "page": 94,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        1.979606
+      ],
+      "glosa": "Remuneraciones del Órgano de Administración"
+    },
+    {
+      "label": "Remunerações de atletas e equipas técnicas",
+      "lado": "expense",
+      "page": 94,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        57.610709
+      ],
+      "glosa": "Remuneraciones de deportistas y cuerpo técnico"
+    },
+    {
+      "label": "Remunerações do pessoal",
+      "lado": "expense",
+      "page": 94,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        8.436009
+      ],
+      "glosa": "Remuneraciones del personal"
+    },
+    {
+      "label": "Benefícios pós-emprego",
+      "lado": "expense",
+      "page": 94,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.024017
+      ],
+      "glosa": "Retribuciones post-empleo"
+    },
+    {
+      "label": "Indemnizações",
+      "lado": "expense",
+      "page": 94,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.687291
+      ],
+      "glosa": "Indemnizaciones"
+    },
+    {
+      "label": "Encargos sobre remunerações",
+      "lado": "expense",
+      "page": 94,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        5.711596
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Seguros de acidentes de trabalho e doenças profissionais",
+      "lado": "expense",
+      "page": 94,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        3.188055
+      ],
+      "glosa": "Seguros de accidentes de trabajo y enfermedades profesionales"
+    },
+    {
+      "label": "Outros gastos com pessoal",
+      "lado": "expense",
+      "page": 94,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        1.221411
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Imparidade de inventários (perdas / reversões)",
+      "lado": "expense",
+      "page": 36,
+      "section": "estado",
+      "values": [
+        0.014008
+      ],
+      "glosa": "Deterioro de existencias (pérdidas / reversiones)"
+    },
+    {
+      "label": "Imparidade de dívidas a receber (perdas / reversões)",
+      "lado": "expense",
+      "page": 36,
+      "section": "estado",
+      "values": [
+        0.006366
+      ],
+      "glosa": "Deterioro de créditos comerciales (pérdidas / reversiones)"
+    },
+    {
+      "label": "Dívidas incobráveis",
+      "lado": "expense",
+      "page": 95,
+      "section": "nota que desglosa \"Outros gastos e perdas\"",
+      "values": [
+        0.067749
+      ],
+      "glosa": "Créditos incobrables"
+    },
+    {
+      "label": "Correções relativas a exercícios anteriores",
+      "lado": "expense",
+      "page": 95,
+      "section": "nota que desglosa \"Outros gastos e perdas\"",
+      "values": [
+        0.042421
+      ],
+      "glosa": "Correcciones relativas a ejercicios anteriores"
+    },
+    {
+      "label": "Impostos",
+      "lado": "expense",
+      "page": 95,
+      "section": "nota que desglosa \"Outros gastos e perdas\"",
+      "values": [
+        0.468327
+      ],
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Penalizações Desportivas",
+      "lado": "expense",
+      "page": 95,
+      "section": "nota que desglosa \"Outros gastos e perdas\"",
+      "values": [
+        0.227124
+      ],
+      "glosa": "Sanciones deportivas"
+    },
+    {
+      "label": "Multas/Dívidas Fiscais e não fiscais",
+      "lado": "expense",
+      "page": 95,
+      "section": "nota que desglosa \"Outros gastos e perdas\"",
+      "values": [
+        0.651553
+      ],
+      "glosa": "Multas y deudas fiscales y no fiscales"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 95,
+      "section": "nota que desglosa \"Outros gastos e perdas\"",
+      "values": [
+        0.715757
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Ativos fixos tangíveis (Nota 8)",
+      "lado": "expense",
+      "page": 95,
+      "section": "nota que desglosa \"Gastos / reversões de depreciação e de amortização\"",
+      "values": [
+        5.12419
+      ],
+      "glosa": "Inmovilizado material (Nota 8)"
+    },
+    {
+      "label": "Propriedades de investimento (Nota 9)",
+      "lado": "expense",
+      "page": 95,
+      "section": "nota que desglosa \"Gastos / reversões de depreciação e de amortização\"",
+      "values": [
+        0.057589
+      ],
+      "glosa": "Inversiones inmobiliarias (Nota 9)"
+    },
+    {
+      "label": "Outros ativos intangíveis (Nota 11)",
+      "lado": "expense",
+      "page": 95,
+      "section": "nota que desglosa \"Gastos / reversões de depreciação e de amortização\"",
+      "values": [
+        0.025086
+      ],
+      "glosa": "Otro inmovilizado intangible (Nota 11)"
+    },
+    {
+      "label": "Goodwill (Nota 12)",
+      "lado": "expense",
+      "page": 95,
+      "section": "nota que desglosa \"Gastos / reversões de depreciação e de amortização\"",
+      "values": [
+        0.156749
+      ],
+      "glosa": "Fondo de comercio (Nota 12)"
+    },
+    {
+      "label": "Amortizações de passes de jogadores (Nota 10)",
+      "lado": "expense",
+      "page": 96,
+      "section": "nota que desglosa \"Amortizações e perdas de imparidade com passes de jogadores\"",
+      "values": [
+        36.314903
+      ],
+      "glosa": "Amortizaciones de derechos federativos de jugadores (Nota 10)"
+    },
+    {
+      "label": "Perdas por imparidade com passes de jogadores (Nota 10)",
+      "lado": "expense",
+      "page": 96,
+      "section": "nota que desglosa \"Amortizações e perdas de imparidade com passes de jogadores\"",
+      "values": [
+        0.465744
+      ],
+      "glosa": "Pérdidas por deterioro de derechos federativos de jugadores (Nota 10)"
+    },
+    {
+      "label": "Custos com alienações de passes de jogadores (Nota 10)",
+      "lado": "expense",
+      "page": 96,
+      "section": "nota que desglosa \"Custos com transações de passes de jogadores\"",
+      "values": [
+        19.947849
+      ],
+      "glosa": "Costes por enajenación de derechos federativos de jugadores (Nota 10)"
+    },
+    {
+      "label": "Custos com empréstimos de jogadores",
+      "lado": "expense",
+      "page": 96,
+      "section": "nota que desglosa \"Custos com transações de passes de jogadores\"",
+      "values": [
+        0.914267
+      ],
+      "glosa": "Costes por cesiones de jugadores"
+    },
+    {
+      "label": "Outros custos com jogadores",
+      "lado": "expense",
+      "page": 96,
+      "section": "nota que desglosa \"Custos com transações de passes de jogadores\"",
+      "values": [
+        2.664979
+      ],
+      "glosa": "Otros costes relacionados con jugadores"
+    },
+    {
+      "label": "Resultados relativos a investimentos",
+      "lado": "expense",
+      "page": 36,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+      "values": [
+        0.113397
+      ],
+      "glosa": "Resultados procedentes de inversiones"
+    }
+  ]
+}

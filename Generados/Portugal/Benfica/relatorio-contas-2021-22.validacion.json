@@ -1,0 +1,50 @@
+{
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.pdf",
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.md",
+ "mdSha1": "d47c5d89676ca0f01196ff0fe769d93476cabd9b",
+ "modo": "digital",
+ "motivoModo": "2 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 20161384 vs 20161394, 20160618 vs 20160278",
+ "generado": "2026-10-15T18:27:15.312Z",
+ "fuentes": {
+  "114": "pdftotext",
+  "150": "pdftotext",
+  "151": "pdftotext",
+  "152": "pdftotext",
+  "153": "pdftotext",
+  "154": "pdftotext",
+  "155": "pdftotext",
+  "157": "pdftotext",
+  "158": "pdftotext",
+  "159": "pdftotext"
+ },
+ "confirmados": 188,
+ "noConfirmados": [
+  {
+   "bloque": "b116",
+   "pagina": 154,
+   "linea": 5409,
+   "numero": "30.04",
+   "segundaLeyo": "3006",
+   "sinSegunda": false,
+   "texto": "|   | 30.04.22 | 30.04.21  |"
+  },
+  {
+   "bloque": "b116",
+   "pagina": 154,
+   "linea": 5409,
+   "numero": "30.04",
+   "segundaLeyo": "3006",
+   "sinSegunda": false,
+   "texto": "|   | 30.04.22 | 30.04.21  |"
+  },
+  {
+   "bloque": "b115",
+   "pagina": 153,
+   "linea": 5390,
+   "numero": "8.244",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | **8.280** | **8.244**  |"
+  }
+ ]
+}

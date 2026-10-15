@@ -1,0 +1,125 @@
+{
+ "pdf": "Clubes/Portugal/Paços de Ferreira/contas_2425.pdf",
+ "md": "Clubes/Portugal/Paços de Ferreira/contas_2425.md",
+ "mdSha1": "485ec9ed92069269a90e2dd9ea3ac59d5e62ddba",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T20:13:18.450Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    16,
+    32
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    54,
+    91
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 12,
+   "lineas": [
+    261,
+    271
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    282,
+    289
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    300,
+    310
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    323,
+    333
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    344,
+    373
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 17,
+   "lineas": [
+    386,
+    396
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    413,
+    419
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    423,
+    429
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b3",
+  "b4",
+  "b5"
+ ],
+ "notas_gastos": [
+  "b6",
+  "b7",
+  "b8"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Los importes del informe se expresan en euros con decimales (ej. 1.548.119,68€); el índice no muestra una leyenda de escala sobre el estado.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Períodos: 30/06/2025",
+ "columna_anterior": "Períodos: 30/06/2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga los cuadros de financiamientos obtidos (b9, b10)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Son detalles de deuda del balance y no desglosan renglones del estado de resultados.",
+   "bloques": [
+    "b9",
+    "b10"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Hay un solo estado de resultados, individual de la SDUQ (b1). Las notas del informe de gestión abren sus renglones: Vendas e serviços prestados (b3), Subsídios à exploração (b4), Outros rendimentos (b5), Gastos com pessoal (b6), FSE (b7) y Outros gastos (b8). b2 es el balance."
+}

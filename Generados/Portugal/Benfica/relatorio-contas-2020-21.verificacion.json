@@ -1,0 +1,489 @@
+{
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2020-21.pdf",
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2020-21.md",
+ "generado": "2026-10-15T21:55:00.141Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2021,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "9eefe90"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 3.552713678800501e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 194.047 en este documento y 194.047 en relatorio-contas-2021-22.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "escalón \"nota exacta en la lectura 5\": \"Direitos de televisão\" (L3135) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Atividades comerciais\" (L3136) se abre en las 4 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Receitas de jogos\" (L3137) se abre en las 4 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Rendimentos com transações de direitos de atletas\" (L3148) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Fornecimentos e serviços externos\" (L3140) se abre en las 9 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Gastos com pessoal\" (L3141) se abre en las 9 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Depreciações/Amortizações ^{(1)}\" (L3142) se abre en las 8 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Gastos com transações de direitos de atletas\" (L3149) se abre en las 4 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Amortizações e perdas de imparidade de direitos de atletas\" (L3151) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: El encabezado de b95 parece un error de transcripción de las fechas de cierre.",
+  "duda de localizar que no afecta la carga: b96 reagrupa las mismas cifras de b95 en otra presentación.",
+  "duda de extraer confirmada por las sumas (columna, \"Rendimentos com transações de direitos de atletas\"): ¿Se cargan las filas de b95 (L4833-L4842) como del ejercicio 30.06.21 aunque los encabezados digan '20.04.21' y '30.04.20'?",
+  "duda de extraer que no afecta la carga: Ningún bloque imprime la escala; por magnitud parecen miles de euros."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 194.047,
+  "gastos": 219.164,
+  "financiero": -8.904,
+  "impuesto": 16.641,
+  "resultadoImpreso": -17.38,
+  "resultadoParaCargar": -17.38,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Receitas de televisão",
+   "lado": "ingreso",
+   "M": 55.015,
+   "pagina": 132,
+   "linea": 4656,
+   "origen": "nota que desglosa \"Direitos de televisão\""
+  },
+  {
+   "etiqueta": "Prémios da UEFA",
+   "lado": "ingreso",
+   "M": 10.169,
+   "pagina": 132,
+   "linea": 4657,
+   "origen": "nota que desglosa \"Direitos de televisão\""
+  },
+  {
+   "etiqueta": "Outras receitas",
+   "lado": "ingreso",
+   "M": 0.502,
+   "pagina": 132,
+   "linea": 4658,
+   "origen": "nota que desglosa \"Direitos de televisão\""
+  },
+  {
+   "etiqueta": "Patrocinadores",
+   "lado": "ingreso",
+   "M": 18.906,
+   "pagina": 132,
+   "linea": 4661,
+   "origen": "nota que desglosa \"Atividades comerciais\""
+  },
+  {
+   "etiqueta": "Rendas de espaço",
+   "lado": "ingreso",
+   "M": 2.977,
+   "pagina": 132,
+   "linea": 4662,
+   "origen": "nota que desglosa \"Atividades comerciais\""
+  },
+  {
+   "etiqueta": "*Royalties*",
+   "lado": "ingreso",
+   "M": 1.76,
+   "pagina": 132,
+   "linea": 4663,
+   "origen": "nota que desglosa \"Atividades comerciais\""
+  },
+  {
+   "etiqueta": "Outras receitas",
+   "lado": "ingreso",
+   "M": 4.243,
+   "pagina": 132,
+   "linea": 4664,
+   "origen": "nota que desglosa \"Atividades comerciais\""
+  },
+  {
+   "etiqueta": "*Corporate*",
+   "lado": "ingreso",
+   "M": 0.056,
+   "pagina": 132,
+   "linea": 4667,
+   "origen": "nota que desglosa \"Receitas de jogos\""
+  },
+  {
+   "etiqueta": "Competições nacionais",
+   "lado": "ingreso",
+   "M": 0.311,
+   "pagina": 132,
+   "linea": 4669,
+   "origen": "nota que desglosa \"Receitas de jogos\""
+  },
+  {
+   "etiqueta": "Competições europeias",
+   "lado": "ingreso",
+   "M": 0.088,
+   "pagina": 132,
+   "linea": 4670,
+   "origen": "nota que desglosa \"Receitas de jogos\""
+  },
+  {
+   "etiqueta": "Outras receitas",
+   "lado": "ingreso",
+   "M": 0.004,
+   "pagina": 132,
+   "linea": 4671,
+   "origen": "nota que desglosa \"Receitas de jogos\""
+  },
+  {
+   "etiqueta": "Ganhos com alienações de direitos de atletas (mais-valias)",
+   "lado": "ingreso",
+   "M": 88.085,
+   "pagina": 136,
+   "linea": 4833,
+   "origen": "nota que desglosa \"Rendimentos com transações de direitos de atletas\""
+  },
+  {
+   "etiqueta": "Outros rendimentos",
+   "lado": "ingreso",
+   "M": 11.931,
+   "pagina": 136,
+   "linea": 4834,
+   "origen": "nota que desglosa \"Rendimentos com transações de direitos de atletas\""
+  },
+  {
+   "etiqueta": "Gestão operacional do estádio",
+   "lado": "gasto",
+   "M": 12.164,
+   "pagina": 133,
+   "linea": 4712,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Trabalhos especializados",
+   "lado": "gasto",
+   "M": 10.138,
+   "pagina": 133,
+   "linea": 4713,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Licença marca Benfica",
+   "lado": "gasto",
+   "M": 4.277,
+   "pagina": 133,
+   "linea": 4714,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Gestão operacional do canal BTV",
+   "lado": "gasto",
+   "M": 3.811,
+   "pagina": 133,
+   "linea": 4715,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Deslocações e estadas",
+   "lado": "gasto",
+   "M": 3.259,
+   "pagina": 133,
+   "linea": 4716,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Equipamento desportivo",
+   "lado": "gasto",
+   "M": 1.733,
+   "pagina": 133,
+   "linea": 4717,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Honorários",
+   "lado": "gasto",
+   "M": 1.341,
+   "pagina": 133,
+   "linea": 4718,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Vigilância e segurança",
+   "lado": "gasto",
+   "M": 1.323,
+   "pagina": 133,
+   "linea": 4719,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Outros fornecimentos e serviços",
+   "lado": "gasto",
+   "M": 8.16,
+   "pagina": 133,
+   "linea": 4720,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Remunerações fixas",
+   "lado": "gasto",
+   "M": 0.552,
+   "pagina": 134,
+   "linea": 4750,
+   "origen": "nota que desglosa \"Gastos com pessoal\""
+  },
+  {
+   "etiqueta": "Remunerações variáveis",
+   "lado": "gasto",
+   "M": 0.096,
+   "pagina": 134,
+   "linea": 4751,
+   "origen": "nota que desglosa \"Gastos com pessoal\""
+  },
+  {
+   "etiqueta": "Remunerações fixas",
+   "lado": "gasto",
+   "M": 75.829,
+   "pagina": 134,
+   "linea": 4753,
+   "origen": "nota que desglosa \"Gastos com pessoal\""
+  },
+  {
+   "etiqueta": "Remunerações variáveis",
+   "lado": "gasto",
+   "M": 4.114,
+   "pagina": 134,
+   "linea": 4754,
+   "origen": "nota que desglosa \"Gastos com pessoal\""
+  },
+  {
+   "etiqueta": "Indemnizações",
+   "lado": "gasto",
+   "M": 4.701,
+   "pagina": 134,
+   "linea": 4755,
+   "origen": "nota que desglosa \"Gastos com pessoal\""
+  },
+  {
+   "etiqueta": "Benefícios pós-emprego",
+   "lado": "gasto",
+   "M": 0.025,
+   "pagina": 134,
+   "linea": 4756,
+   "origen": "nota que desglosa \"Gastos com pessoal\""
+  },
+  {
+   "etiqueta": "Encargos sobre remunerações",
+   "lado": "gasto",
+   "M": 6.326,
+   "pagina": 134,
+   "linea": 4757,
+   "origen": "nota que desglosa \"Gastos com pessoal\""
+  },
+  {
+   "etiqueta": "Seguros de acidentes de trabalho",
+   "lado": "gasto",
+   "M": 3.892,
+   "pagina": 134,
+   "linea": 4758,
+   "origen": "nota que desglosa \"Gastos com pessoal\""
+  },
+  {
+   "etiqueta": "Outros gastos com pessoal",
+   "lado": "gasto",
+   "M": 1.526,
+   "pagina": 134,
+   "linea": 4759,
+   "origen": "nota que desglosa \"Gastos com pessoal\""
+  },
+  {
+   "etiqueta": "Edifícios e outras construções",
+   "lado": "gasto",
+   "M": 1.069,
+   "pagina": 135,
+   "linea": 4798,
+   "origen": "nota que desglosa \"Depreciações/Amortizações ^{(1)}\""
+  },
+  {
+   "etiqueta": "Equipamento básico",
+   "lado": "gasto",
+   "M": 0.427,
+   "pagina": 135,
+   "linea": 4799,
+   "origen": "nota que desglosa \"Depreciações/Amortizações ^{(1)}\""
+  },
+  {
+   "etiqueta": "Equipamento de transporte",
+   "lado": "gasto",
+   "M": 0.123,
+   "pagina": 135,
+   "linea": 4800,
+   "origen": "nota que desglosa \"Depreciações/Amortizações ^{(1)}\""
+  },
+  {
+   "etiqueta": "Equipamento administrativo",
+   "lado": "gasto",
+   "M": 0.498,
+   "pagina": 135,
+   "linea": 4801,
+   "origen": "nota que desglosa \"Depreciações/Amortizações ^{(1)}\""
+  },
+  {
+   "etiqueta": "Outros ativos tangíveis",
+   "lado": "gasto",
+   "M": 0.001,
+   "pagina": 135,
+   "linea": 4802,
+   "origen": "nota que desglosa \"Depreciações/Amortizações ^{(1)}\""
+  },
+  {
+   "etiqueta": "Direitos de uso",
+   "lado": "gasto",
+   "M": 3.611,
+   "pagina": 135,
+   "linea": 4803,
+   "origen": "nota que desglosa \"Depreciações/Amortizações ^{(1)}\""
+  },
+  {
+   "etiqueta": "Direito de utilização da marca",
+   "lado": "gasto",
+   "M": 1.52,
+   "pagina": 135,
+   "linea": 4806,
+   "origen": "nota que desglosa \"Depreciações/Amortizações ^{(1)}\""
+  },
+  {
+   "etiqueta": "Programas de computador",
+   "lado": "gasto",
+   "M": 1.017,
+   "pagina": 135,
+   "linea": 4807,
+   "origen": "nota que desglosa \"Depreciações/Amortizações ^{(1)}\""
+  },
+  {
+   "etiqueta": "Provisões/Imparidades ^{(2)}",
+   "lado": "gasto",
+   "M": 1.42,
+   "pagina": 96,
+   "linea": 3143,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Outros gastos e perdas operacionais ^{(3)}",
+   "lado": "gasto",
+   "M": 1.514,
+   "pagina": 96,
+   "linea": 3144,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Perdas com alienações de direitos de atletas (menos-valias)",
+   "lado": "gasto",
+   "M": 0.23,
+   "pagina": 136,
+   "linea": 4837,
+   "origen": "nota que desglosa \"Gastos com transações de direitos de atletas\""
+  },
+  {
+   "etiqueta": "Gastos associados a alienações de direitos de atletas (comissões)",
+   "lado": "gasto",
+   "M": 5.987,
+   "pagina": 136,
+   "linea": 4838,
+   "origen": "nota que desglosa \"Gastos com transações de direitos de atletas\""
+  },
+  {
+   "etiqueta": "Abates de direitos de atletas",
+   "lado": "gasto",
+   "M": 0.47,
+   "pagina": 136,
+   "linea": 4839,
+   "origen": "nota que desglosa \"Gastos com transações de direitos de atletas\""
+  },
+  {
+   "etiqueta": "Outros gastos",
+   "lado": "gasto",
+   "M": 5.771,
+   "pagina": 136,
+   "linea": 4840,
+   "origen": "nota que desglosa \"Gastos com transações de direitos de atletas\""
+  },
+  {
+   "etiqueta": "Amortizações de direitos de atletas",
+   "lado": "gasto",
+   "M": 47.104,
+   "pagina": 139,
+   "linea": 4949,
+   "origen": "nota que desglosa \"Amortizações e perdas de imparidade de direitos de atletas\""
+  },
+  {
+   "etiqueta": "Reforços de imparidade",
+   "lado": "gasto",
+   "M": 5.818,
+   "pagina": 139,
+   "linea": 4951,
+   "origen": "nota que desglosa \"Amortizações e perdas de imparidade de direitos de atletas\""
+  },
+  {
+   "etiqueta": "Reversões de imparidade",
+   "lado": "gasto",
+   "M": -0.683,
+   "pagina": 139,
+   "linea": 4952,
+   "origen": "nota que desglosa \"Amortizações e perdas de imparidade de direitos de atletas\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Rendimentos e ganhos financeiros",
+   "M": 9.876,
+   "linea": 3154
+  },
+  {
+   "etiqueta": "Gastos e perdas financeiros",
+   "M": -18.78,
+   "linea": 3155
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento",
+   "M": 16.641,
+   "linea": 3158
+  }
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "pdf": "Clubes/Portugal/Paços de Ferreira/contas21_22.pdf",
+ "md": "Clubes/Portugal/Paços de Ferreira/contas21_22.md",
+ "mdSha1": "33a905254c88f0a957d1ae2831f64411ed60c5bf",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T20:10:08.502Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    47
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    59,
+    76
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    88,
+    117
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    130,
+    140
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 4,
+   "lineas": [
+    144,
+    154
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    310,
+    319
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    325,
+    334
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    336,
+    343
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    355,
+    365
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    375,
+    407
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 17,
+   "lineas": [
+    413,
+    420
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 17,
+   "lineas": [
+    422,
+    427
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    443,
+    445
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    459,
+    467
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    477,
+    485
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    493,
+    497
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 21,
+   "lineas": [
+    505,
+    516
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b6",
+  "b7",
+  "b8"
+ ],
+ "notas_gastos": [
+  "b9",
+  "b10",
+  "b11",
+  "b12"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Los textos citan importes en euros con céntimos (ej. 'Os restantes Proveitos cifraram-se nos valores de 2.207.821,99 €'); no se ve indicación de miles.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Períodos 30/06/2022",
+ "columna_anterior": "Períodos 30/06/2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "b2 es la Demonstração dos Resultados por natureza 2021/22 (individual, SDUQ). Notas: b6 vendas e serviços prestados, b7 outros rendimentos, b8 subsídios à exploração, b9 gastos com pessoal, b10 FSE, b11 outros gastos, b12 gastos financeiros. Excluidos balance (b1), flujos (b3), cambios en patrimonio (b4, b5), ratios (b14) y financiamientos (b15, b16)."
+}

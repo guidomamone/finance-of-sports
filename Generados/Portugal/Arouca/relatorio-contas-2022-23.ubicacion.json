@@ -1,0 +1,263 @@
+{
+ "pdf": "Clubes/Portugal/Arouca/relatorio-contas-2022-23.pdf",
+ "md": "Clubes/Portugal/Arouca/relatorio-contas-2022-23.md",
+ "mdSha1": "b817ce25ae573c7a99ef4f03d20b690141e91594",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T18:17:24.066Z",
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    102,
+    105
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    180,
+    199
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    228,
+    243
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    270,
+    296
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    548,
+    551
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    588,
+    602
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 17,
+   "lineas": [
+    619,
+    633
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    657,
+    670
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    674,
+    687
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 22,
+   "lineas": [
+    822,
+    827
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    843,
+    848
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 23,
+   "lineas": [
+    868,
+    871
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 23,
+   "lineas": [
+    877,
+    883
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 24,
+   "lineas": [
+    912,
+    918
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 24,
+   "lineas": [
+    922,
+    928
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    949,
+    954
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 25,
+   "lineas": [
+    962,
+    972
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    1004,
+    1009
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 27,
+   "lineas": [
+    1047,
+    1055
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 27,
+   "lineas": [
+    1065,
+    1071
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 27,
+   "lineas": [
+    1075,
+    1078
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 28,
+   "lineas": [
+    1101,
+    1128
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 29,
+   "lineas": [
+    1157,
+    1165
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    1173,
+    1183
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 30,
+   "lineas": [
+    1210,
+    1216
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 31,
+   "lineas": [
+    1261,
+    1263
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 33,
+   "lineas": [
+    1306,
+    1326
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 34,
+   "lineas": [
+    1345,
+    1365
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 35,
+   "lineas": [
+    1382,
+    1425
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b24",
+  "b25"
+ ],
+ "notas_gastos": [
+  "b19",
+  "b22",
+  "b23"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Montantes expressos em EURO",
+ "moneda": "EUR",
+ "columna_ejercicio": "PERÍODOS 2022-23",
+ "columna_anterior": "PERÍODOS 2021/22",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual por naturezas en b2 (18 filas, parece completo en un bloque). Notas: b24 prestação de serviços, b25 outros rendimentos e ganhos, b19 gastos com pessoal, b22 FSE, b23 outros gastos. Se excluyen balance, intangibles/AFT, diferimientos (b20, b21), patrimonio y flujos."
+}

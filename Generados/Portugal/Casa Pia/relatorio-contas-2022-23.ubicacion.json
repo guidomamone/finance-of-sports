@@ -1,0 +1,263 @@
+{
+ "pdf": "Clubes/Portugal/Casa Pia/relatorio-contas-2022-23.pdf",
+ "md": "Clubes/Portugal/Casa Pia/relatorio-contas-2022-23.md",
+ "mdSha1": "283f9ae4790948def409081d91997f676760d7e2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T18:45:56.546Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    34,
+    36
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    38,
+    40
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    46,
+    48
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 2,
+   "lineas": [
+    57,
+    64
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 2,
+   "lineas": [
+    68,
+    73
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    208,
+    239
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    263,
+    279
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    305,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    320,
+    331
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    355,
+    381
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    480,
+    484
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    494,
+    498
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    551,
+    563
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    573,
+    583
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 17,
+   "lineas": [
+    635,
+    639
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    651,
+    660
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 18,
+   "lineas": [
+    662,
+    671
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    695,
+    704
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    712,
+    717
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 20,
+   "lineas": [
+    749,
+    769
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 21,
+   "lineas": [
+    797,
+    809
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 21,
+   "lineas": [
+    813,
+    821
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 22,
+   "lineas": [
+    837,
+    842
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 22,
+   "lineas": [
+    850,
+    870
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 23,
+   "lineas": [
+    882,
+    890
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 23,
+   "lineas": [
+    908,
+    918
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 24,
+   "lineas": [
+    934,
+    948
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 25,
+   "lineas": [
+    968,
+    978
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 25,
+   "lineas": [
+    988,
+    998
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b7"
+ ],
+ "notas_ingresos": [
+  "b18",
+  "b19"
+ ],
+ "notas_gastos": [
+  "b27",
+  "b28",
+  "b29"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de la demonstração dos resultados: 'Euros'",
+ "moneda": "EUR",
+ "columna_ejercicio": "30.06.2023",
+ "columna_anterior": "30.06.2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados por naturezas de Casa Pia Atlético Clube - Futebol SDUQ Lda (b7, pág. 9), individual, en euros. Notas: rédito por categoría (b18), subsidios à exploração (b19), FSE (b27), gastos com pessoal (b28), outros gastos (b29). Se excluyen balance, cambios en el patrimonio, flujos, activos intangibles/fijos, impuesto y saldos de terceros."
+}

@@ -1,0 +1,321 @@
+{
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.pdf",
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.md",
+ "mdSha1": "4901edc5091778bdc6bbc84ac5cc356e12f9f925",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T18:24:58.186Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    21
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 14,
+   "lineas": [
+    354,
+    362
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 14,
+   "lineas": [
+    364,
+    375
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    381,
+    393
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    407,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 18,
+   "lineas": [
+    492,
+    511
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 28,
+   "lineas": [
+    796,
+    840
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 29,
+   "lineas": [
+    850,
+    885
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 30,
+   "lineas": [
+    899,
+    941
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 31,
+   "lineas": [
+    955,
+    969
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 31,
+   "lineas": [
+    977,
+    987
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 34,
+   "lineas": [
+    1118,
+    1144
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 35,
+   "lineas": [
+    1164,
+    1167
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 35,
+   "lineas": [
+    1177,
+    1184
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 35,
+   "lineas": [
+    1196,
+    1205
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 37,
+   "lineas": [
+    1281,
+    1284
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 38,
+   "lineas": [
+    1312,
+    1318
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 38,
+   "lineas": [
+    1328,
+    1339
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 39,
+   "lineas": [
+    1351,
+    1363
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 39,
+   "lineas": [
+    1367,
+    1381
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 40,
+   "lineas": [
+    1413,
+    1417
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 41,
+   "lineas": [
+    1453,
+    1469
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 42,
+   "lineas": [
+    1483,
+    1518
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 43,
+   "lineas": [
+    1532,
+    1536
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 50,
+   "lineas": [
+    1716,
+    1719
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 50,
+   "lineas": [
+    1723,
+    1726
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 50,
+   "lineas": [
+    1730,
+    1734
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 51,
+   "lineas": [
+    1744,
+    1761
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 54,
+   "lineas": [
+    1866,
+    1873
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 57,
+   "lineas": [
+    1998,
+    2002
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 57,
+   "lineas": [
+    2073,
+    2077
+   ],
+   "tipo": "texto"
+  },
+  "b32": {
+   "pagina": 58,
+   "lineas": [
+    2089,
+    2098
+   ],
+   "tipo": "texto"
+  },
+  "b33": {
+   "pagina": 58,
+   "lineas": [
+    2102,
+    2107
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b9"
+ ],
+ "notas_ingresos": [
+  "b18",
+  "b19",
+  "b20"
+ ],
+ "notas_gastos": [
+  "b19",
+  "b20"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "valores em euros",
+ "moneda": "EUR",
+ "columna_ejercicio": "2006/2007",
+ "columna_anterior": "2005/2006",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga la tabla 'Proveitos Competições Europeias' (b6, pág. 18) del relatório de gestão?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Prestação de serviços",
+   "texto": "Desglosa ingresos de competiciones europeas en premios y TV, que la nota 44 (b18) no abre en ese detalle.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro resumen reclasificado del relatório de gestão (b2-b5) por repetir la DR por naturezas (b9)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "Son cuadros de análisis en miles de euros con reclasificación de gestión, no el estado oficial.",
+   "bloques": [
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas individuales de Sport Lisboa e Benfica - Futebol, SAD. Estado elegido: DR por naturezas (b9, pág. 30). La DR por funciones (b10) y su anexo (b11) son presentaciones alternativas, no se eligen. Nota 44 (b18) desglosa prestaciones de servicios; notas 45 y 46 (b19, b20) desglosan resultados financieros y extraordinarios (costos y proventos)."
+}

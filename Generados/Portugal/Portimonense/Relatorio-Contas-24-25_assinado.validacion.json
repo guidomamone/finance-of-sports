@@ -1,0 +1,37 @@
+{
+ "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.pdf",
+ "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.md",
+ "mdSha1": "f74ba0bbfd49995dbdabbaa0712e142bac77d872",
+ "modo": "escaneo",
+ "motivoModo": "el PDF no trae texto usable (0 números, 0 caracteres/pág): escaneo o texto roto",
+ "generado": "2026-10-15T20:27:35.291Z",
+ "fuentes": {
+  "49": "gemini",
+  "65": "gemini",
+  "66": "gemini",
+  "69": "gemini",
+  "70": "gemini",
+  "71": "gemini"
+ },
+ "confirmados": 124,
+ "noConfirmados": [
+  {
+   "bloque": "b33",
+   "pagina": 69,
+   "linea": 2245,
+   "numero": "629 860,43",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Encargos sobre remunerações | 629 860,43  |"
+  },
+  {
+   "bloque": "b34",
+   "pagina": 70,
+   "linea": 2285,
+   "numero": "116 111,51",
+   "segundaLeyo": "11511151",
+   "sinSegunda": false,
+   "texto": "|  Combustíveis | 116 111,51 | 123 307,59  |"
+  }
+ ]
+}

@@ -1,0 +1,383 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2009-10.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2009-10.md",
+ "generado": "2026-10-15T21:55:08.473Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": null,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2009-10.pdf",
+   "campo": "cierre",
+   "valor": "2010-06-30",
+   "linea": null,
+   "motivo": "periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)",
+   "evidencia": ".md L3887 certificação legal das contas, 30 de junho de 2010",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
+ "cola": [
+  "ba25fcc",
+  "84f5c6a",
+  "c48dce9"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "34.195 = 34.195",
+   "suma": 34.195,
+   "impreso": 34.195
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": false,
+   "detalle": "las líneas suman 56.463 y el total impreso dice 41.429"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 34.195 - gastos 56.463 ± financiero -2.925 ± impuesto 1.609 no da el impreso -26.461",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b2 es la versión analítica del relatório de gestão; el estado financiero oficial es b56 (pág. 60).",
+  "duda de localizar que no afecta la carga: Desglosan saldos y operaciones por contraparte, no por categoría de ingreso/gasto."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 34.195,
+  "gastos": 56.463,
+  "financiero": -2.925,
+  "impuesto": 1.609,
+  "resultadoImpreso": -26.461,
+  "resultadoParaCargar": -26.461,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Quotizações",
+   "lado": "ingreso",
+   "M": 4.29,
+   "pagina": 70,
+   "linea": 2582,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Direitos televisivos",
+   "lado": "ingreso",
+   "M": 9.274,
+   "pagina": 70,
+   "linea": 2583,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Bilheteira e bilhetes de época",
+   "lado": "ingreso",
+   "M": 8.577,
+   "pagina": 70,
+   "linea": 2584,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Patrocínios e publicidade",
+   "lado": "ingreso",
+   "M": 5.932,
+   "pagina": 70,
+   "linea": 2585,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Merchandising e licenciamento",
+   "lado": "ingreso",
+   "M": 0.105,
+   "pagina": 70,
+   "linea": 2586,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Serviços directos",
+   "lado": "ingreso",
+   "M": 0.923,
+   "pagina": 70,
+   "linea": 2587,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Outras",
+   "lado": "ingreso",
+   "M": 0.029,
+   "pagina": 70,
+   "linea": 2588,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Outros Proveitos operacionais",
+   "lado": "ingreso",
+   "M": 5.065,
+   "pagina": 60,
+   "linea": 2096,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subcontratos",
+   "lado": "gasto",
+   "M": 9.8,
+   "pagina": 71,
+   "linea": 2618,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Trabalhos especializados",
+   "lado": "gasto",
+   "M": 0.561,
+   "pagina": 71,
+   "linea": 2619,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Organização de jogos",
+   "lado": "gasto",
+   "M": 0.986,
+   "pagina": 71,
+   "linea": 2620,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Deslocações e estadas",
+   "lado": "gasto",
+   "M": 1.054,
+   "pagina": 71,
+   "linea": 2621,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Honorários",
+   "lado": "gasto",
+   "M": 1.611,
+   "pagina": 71,
+   "linea": 2622,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Comissões",
+   "lado": "gasto",
+   "M": 0.193,
+   "pagina": 71,
+   "linea": 2623,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 0.179,
+   "pagina": 71,
+   "linea": 2624,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Equipamentos desportivos",
+   "lado": "gasto",
+   "M": 0.367,
+   "pagina": 71,
+   "linea": 2625,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Publicidade e propaganda",
+   "lado": "gasto",
+   "M": 0.249,
+   "pagina": 71,
+   "linea": 2626,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Outros FSE",
+   "lado": "gasto",
+   "M": 0.605,
+   "pagina": 71,
+   "linea": 2627,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Remunerações Órgãos Sociais",
+   "lado": "gasto",
+   "M": 0.373,
+   "pagina": 72,
+   "linea": 2650,
+   "origen": "nota que desglosa \"Custos com o pessoal\""
+  },
+  {
+   "etiqueta": "Remuneração do Pessoal",
+   "lado": "gasto",
+   "M": 20.151,
+   "pagina": 72,
+   "linea": 2651,
+   "origen": "nota que desglosa \"Custos com o pessoal\""
+  },
+  {
+   "etiqueta": "Encargos com remunerações",
+   "lado": "gasto",
+   "M": 1.002,
+   "pagina": 72,
+   "linea": 2652,
+   "origen": "nota que desglosa \"Custos com o pessoal\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 0.868,
+   "pagina": 72,
+   "linea": 2653,
+   "origen": "nota que desglosa \"Custos com o pessoal\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.764,
+   "pagina": 72,
+   "linea": 2654,
+   "origen": "nota que desglosa \"Custos com o pessoal\""
+  },
+  {
+   "etiqueta": "Amortizações excluindo depreciação do plantel",
+   "lado": "gasto",
+   "M": 0.09,
+   "pagina": 60,
+   "linea": 2101,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ajustamentos de dívidas a receber",
+   "lado": "gasto",
+   "M": 0.444,
+   "pagina": 72,
+   "linea": 2667,
+   "origen": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\""
+  },
+  {
+   "etiqueta": "Provisão para complemento de Pensões de Reforma",
+   "lado": "gasto",
+   "M": 0.047,
+   "pagina": 72,
+   "linea": 2668,
+   "origen": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\""
+  },
+  {
+   "etiqueta": "Outras provisões para riscos e encargos",
+   "lado": "gasto",
+   "M": 0.351,
+   "pagina": 72,
+   "linea": 2669,
+   "origen": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\""
+  },
+  {
+   "etiqueta": "Cedência de jogadores de terceiros",
+   "lado": "gasto",
+   "M": 0.551,
+   "pagina": 73,
+   "linea": 2685,
+   "origen": "nota que desglosa \"Outros custos operacionais\""
+  },
+  {
+   "etiqueta": "Quotizações",
+   "lado": "gasto",
+   "M": 0.108,
+   "pagina": 73,
+   "linea": 2686,
+   "origen": "nota que desglosa \"Outros custos operacionais\""
+  },
+  {
+   "etiqueta": "Imposto de selo",
+   "lado": "gasto",
+   "M": 0.104,
+   "pagina": 73,
+   "linea": 2687,
+   "origen": "nota que desglosa \"Outros custos operacionais\""
+  },
+  {
+   "etiqueta": "Multas e outras penalidades",
+   "lado": "gasto",
+   "M": 0.263,
+   "pagina": 73,
+   "linea": 2688,
+   "origen": "nota que desglosa \"Outros custos operacionais\""
+  },
+  {
+   "etiqueta": "Prospecção de mercado",
+   "lado": "gasto",
+   "M": 0.33,
+   "pagina": 73,
+   "linea": 2690,
+   "origen": "nota que desglosa \"Outros custos operacionais\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.378,
+   "pagina": 73,
+   "linea": 2691,
+   "origen": "nota que desglosa \"Outros custos operacionais\""
+  },
+  {
+   "etiqueta": "Amortizações do exercício - Futebol profissional",
+   "lado": "gasto",
+   "M": 13.618,
+   "pagina": 73,
+   "linea": 2700,
+   "origen": "nota que desglosa \"Amortizações e perdas de imparidade com passes de jogadores\""
+  },
+  {
+   "etiqueta": "Perdas por imparidade - Futebol profissional",
+   "lado": "gasto",
+   "M": 1.416,
+   "pagina": 73,
+   "linea": 2701,
+   "origen": "nota que desglosa \"Amortizações e perdas de imparidade com passes de jogadores\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Custos e perdas financeiros",
+   "M": -3.297,
+   "linea": 2110
+  },
+  {
+   "etiqueta": "Proveitos e ganhos financeiros",
+   "M": 0.372,
+   "linea": 2111
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Impostos diferidos",
+   "M": 1.565,
+   "linea": 2114
+  },
+  {
+   "etiqueta": "Imposto sobre o rendimento",
+   "M": 0.044,
+   "linea": 2115
+  }
+ ]
+}

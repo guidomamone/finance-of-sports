@@ -1,0 +1,270 @@
+{
+ "pdf": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.pdf",
+ "md": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.md",
+ "mdSha1": "5e43acdd627e62c10cf409fbc892bdd1f90ed4b2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T18:23:50.705Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    29,
+    32
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    72,
+    106
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    121,
+    137
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    156,
+    186
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    203,
+    219
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    400,
+    407
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    413,
+    431
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    442,
+    460
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    466,
+    484
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    495,
+    513
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    519,
+    529
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 13,
+   "lineas": [
+    535,
+    541
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    556,
+    564
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    570,
+    574
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    580,
+    585
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    598,
+    606
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    612,
+    620
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 15,
+   "lineas": [
+    626,
+    631
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 16,
+   "lineas": [
+    646,
+    653
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 16,
+   "lineas": [
+    659,
+    664
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 16,
+   "lineas": [
+    668,
+    675
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 17,
+   "lineas": [
+    690,
+    721
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    725,
+    732
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 18,
+   "lineas": [
+    747,
+    761
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 18,
+   "lineas": [
+    767,
+    775
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 19,
+   "lineas": [
+    790,
+    816
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 19,
+   "lineas": [
+    822,
+    825
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 20,
+   "lineas": [
+    840,
+    846
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b20",
+  "b21",
+  "b27",
+  "b28"
+ ],
+ "notas_gastos": [
+  "b22",
+  "b23",
+  "b24",
+  "b25"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Montantes expressos em euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30-06-2025",
+ "columna_anterior": "30-06-2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga la nota 19 'Impostos' (b26), por ser principalmente una conciliación del imposto sobre o rendimento?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Imposto sobre o rendimento do período",
+   "texto": "b26 abre imposto corrente y diferido pero incluye taxa e derrama; es conciliación fiscal.",
+   "bloques": [
+    "b26"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado individual de la SDUQ (DR por naturezas, b3). Notas: 15 vendas e serviços (b20) con descripción de rendimentos (b21); 16 FSE (b22) y su detalle de trabajos especializados (b23); 17 gastos pessoal (b24); 18 outros gastos (b25); 20 subsídios (b27); 21 outros rendimentos (b28). Encabezados de b21 y b23 parecen ser la primera fila de datos (Patrocínios, Bilhetes)."
+}

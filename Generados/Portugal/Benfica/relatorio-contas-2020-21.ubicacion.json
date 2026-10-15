@@ -1,0 +1,932 @@
+{
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2020-21.pdf",
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2020-21.md",
+ "mdSha1": "0d2f371b488cf54310d65f13e71a10983c8412bf",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T18:26:03.493Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    39,
+    58
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 28,
+   "lineas": [
+    621,
+    630
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 29,
+   "lineas": [
+    660,
+    669
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 30,
+   "lineas": [
+    689,
+    703
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 32,
+   "lineas": [
+    763,
+    771
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 34,
+   "lineas": [
+    812,
+    825
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 36,
+   "lineas": [
+    869,
+    883
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 36,
+   "lineas": [
+    891,
+    900
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 43,
+   "lineas": [
+    1084,
+    1101
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 45,
+   "lineas": [
+    1167,
+    1186
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 50,
+   "lineas": [
+    1335,
+    1352
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 51,
+   "lineas": [
+    1376,
+    1395
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 52,
+   "lineas": [
+    1432,
+    1439
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 53,
+   "lineas": [
+    1480,
+    1483
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 53,
+   "lineas": [
+    1489,
+    1492
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 55,
+   "lineas": [
+    1568,
+    1575
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 56,
+   "lineas": [
+    1614,
+    1624
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 57,
+   "lineas": [
+    1652,
+    1670
+   ],
+   "tipo": "texto"
+  },
+  "b19": {
+   "pagina": 57,
+   "lineas": [
+    1682,
+    1686
+   ],
+   "tipo": "texto"
+  },
+  "b20": {
+   "pagina": 57,
+   "lineas": [
+    1692,
+    1697
+   ],
+   "tipo": "texto"
+  },
+  "b21": {
+   "pagina": 58,
+   "lineas": [
+    1710,
+    1716
+   ],
+   "tipo": "texto"
+  },
+  "b22": {
+   "pagina": 59,
+   "lineas": [
+    1771,
+    1776
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 59,
+   "lineas": [
+    1782,
+    1787
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 63,
+   "lineas": [
+    1992,
+    1998
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 64,
+   "lineas": [
+    2030,
+    2033
+   ],
+   "tipo": "texto"
+  },
+  "b26": {
+   "pagina": 65,
+   "lineas": [
+    2093,
+    2096
+   ],
+   "tipo": "texto"
+  },
+  "b27": {
+   "pagina": 68,
+   "lineas": [
+    2280,
+    2285
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 81,
+   "lineas": [
+    2725,
+    2730
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 84,
+   "lineas": [
+    2860,
+    2869
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 85,
+   "lineas": [
+    2879,
+    2889
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 86,
+   "lineas": [
+    2900,
+    2914
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 87,
+   "lineas": [
+    2924,
+    2939
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 88,
+   "lineas": [
+    2949,
+    2955
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 89,
+   "lineas": [
+    2965,
+    2973
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 90,
+   "lineas": [
+    2983,
+    2999
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 91,
+   "lineas": [
+    3009,
+    3020
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 92,
+   "lineas": [
+    3030,
+    3041
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 93,
+   "lineas": [
+    3051,
+    3062
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 95,
+   "lineas": [
+    3081,
+    3117
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 96,
+   "lineas": [
+    3132,
+    3161
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 97,
+   "lineas": [
+    3183,
+    3188
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 97,
+   "lineas": [
+    3196,
+    3208
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 98,
+   "lineas": [
+    3224,
+    3258
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 100,
+   "lineas": [
+    3329,
+    3332
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 101,
+   "lineas": [
+    3341,
+    3344
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 101,
+   "lineas": [
+    3350,
+    3353
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 101,
+   "lineas": [
+    3359,
+    3365
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 102,
+   "lineas": [
+    3388,
+    3394
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 114,
+   "lineas": [
+    3841,
+    3852
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 114,
+   "lineas": [
+    3854,
+    3864
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 115,
+   "lineas": [
+    3875,
+    3886
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 115,
+   "lineas": [
+    3888,
+    3898
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 116,
+   "lineas": [
+    3922,
+    3926
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 116,
+   "lineas": [
+    3928,
+    3933
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 116,
+   "lineas": [
+    3937,
+    3941
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 116,
+   "lineas": [
+    3943,
+    3948
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 118,
+   "lineas": [
+    3994,
+    3999
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 119,
+   "lineas": [
+    4025,
+    4031
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 119,
+   "lineas": [
+    4033,
+    4039
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 119,
+   "lineas": [
+    4043,
+    4049
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 119,
+   "lineas": [
+    4051,
+    4057
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 120,
+   "lineas": [
+    4076,
+    4092
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 120,
+   "lineas": [
+    4104,
+    4107
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 120,
+   "lineas": [
+    4111,
+    4114
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 121,
+   "lineas": [
+    4126,
+    4137
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 121,
+   "lineas": [
+    4141,
+    4152
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 121,
+   "lineas": [
+    4160,
+    4171
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 122,
+   "lineas": [
+    4198,
+    4204
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 122,
+   "lineas": [
+    4208,
+    4212
+   ],
+   "tipo": "tabla"
+  },
+  "b70": {
+   "pagina": 123,
+   "lineas": [
+    4225,
+    4231
+   ],
+   "tipo": "tabla"
+  },
+  "b71": {
+   "pagina": 123,
+   "lineas": [
+    4243,
+    4248
+   ],
+   "tipo": "tabla"
+  },
+  "b72": {
+   "pagina": 123,
+   "lineas": [
+    4258,
+    4269
+   ],
+   "tipo": "tabla"
+  },
+  "b73": {
+   "pagina": 124,
+   "lineas": [
+    4286,
+    4298
+   ],
+   "tipo": "tabla"
+  },
+  "b74": {
+   "pagina": 125,
+   "lineas": [
+    4325,
+    4329
+   ],
+   "tipo": "tabla"
+  },
+  "b75": {
+   "pagina": 125,
+   "lineas": [
+    4337,
+    4341
+   ],
+   "tipo": "tabla"
+  },
+  "b76": {
+   "pagina": 125,
+   "lineas": [
+    4343,
+    4347
+   ],
+   "tipo": "tabla"
+  },
+  "b77": {
+   "pagina": 126,
+   "lineas": [
+    4361,
+    4365
+   ],
+   "tipo": "tabla"
+  },
+  "b78": {
+   "pagina": 126,
+   "lineas": [
+    4373,
+    4384
+   ],
+   "tipo": "tabla"
+  },
+  "b79": {
+   "pagina": 126,
+   "lineas": [
+    4388,
+    4397
+   ],
+   "tipo": "tabla"
+  },
+  "b80": {
+   "pagina": 127,
+   "lineas": [
+    4413,
+    4424
+   ],
+   "tipo": "tabla"
+  },
+  "b81": {
+   "pagina": 128,
+   "lineas": [
+    4446,
+    4468
+   ],
+   "tipo": "tabla"
+  },
+  "b82": {
+   "pagina": 128,
+   "lineas": [
+    4476,
+    4485
+   ],
+   "tipo": "tabla"
+  },
+  "b83": {
+   "pagina": 129,
+   "lineas": [
+    4501,
+    4515
+   ],
+   "tipo": "tabla"
+  },
+  "b84": {
+   "pagina": 129,
+   "lineas": [
+    4525,
+    4539
+   ],
+   "tipo": "tabla"
+  },
+  "b85": {
+   "pagina": 130,
+   "lineas": [
+    4561,
+    4566
+   ],
+   "tipo": "tabla"
+  },
+  "b86": {
+   "pagina": 130,
+   "lineas": [
+    4574,
+    4589
+   ],
+   "tipo": "tabla"
+  },
+  "b87": {
+   "pagina": 131,
+   "lineas": [
+    4602,
+    4607
+   ],
+   "tipo": "tabla"
+  },
+  "b88": {
+   "pagina": 131,
+   "lineas": [
+    4623,
+    4628
+   ],
+   "tipo": "tabla"
+  },
+  "b89": {
+   "pagina": 131,
+   "lineas": [
+    4632,
+    4637
+   ],
+   "tipo": "tabla"
+  },
+  "b90": {
+   "pagina": 132,
+   "lineas": [
+    4653,
+    4673
+   ],
+   "tipo": "tabla"
+  },
+  "b91": {
+   "pagina": 133,
+   "lineas": [
+    4709,
+    4721
+   ],
+   "tipo": "tabla"
+  },
+  "b92": {
+   "pagina": 134,
+   "lineas": [
+    4746,
+    4760
+   ],
+   "tipo": "tabla"
+  },
+  "b93": {
+   "pagina": 135,
+   "lineas": [
+    4781,
+    4787
+   ],
+   "tipo": "tabla"
+  },
+  "b94": {
+   "pagina": 135,
+   "lineas": [
+    4795,
+    4809
+   ],
+   "tipo": "tabla"
+  },
+  "b95": {
+   "pagina": 136,
+   "lineas": [
+    4830,
+    4842
+   ],
+   "tipo": "tabla"
+  },
+  "b96": {
+   "pagina": 137,
+   "lineas": [
+    4871,
+    4880
+   ],
+   "tipo": "tabla"
+  },
+  "b97": {
+   "pagina": 137,
+   "lineas": [
+    4888,
+    4898
+   ],
+   "tipo": "tabla"
+  },
+  "b98": {
+   "pagina": 139,
+   "lineas": [
+    4946,
+    4953
+   ],
+   "tipo": "tabla"
+  },
+  "b99": {
+   "pagina": 140,
+   "lineas": [
+    4974,
+    4980
+   ],
+   "tipo": "tabla"
+  },
+  "b100": {
+   "pagina": 140,
+   "lineas": [
+    4994,
+    5000
+   ],
+   "tipo": "tabla"
+  },
+  "b101": {
+   "pagina": 141,
+   "lineas": [
+    5018,
+    5023
+   ],
+   "tipo": "tabla"
+  },
+  "b102": {
+   "pagina": 141,
+   "lineas": [
+    5031,
+    5054
+   ],
+   "tipo": "tabla"
+  },
+  "b103": {
+   "pagina": 144,
+   "lineas": [
+    5138,
+    5141
+   ],
+   "tipo": "tabla"
+  },
+  "b104": {
+   "pagina": 144,
+   "lineas": [
+    5151,
+    5154
+   ],
+   "tipo": "tabla"
+  },
+  "b105": {
+   "pagina": 145,
+   "lineas": [
+    5176,
+    5181
+   ],
+   "tipo": "tabla"
+  },
+  "b106": {
+   "pagina": 146,
+   "lineas": [
+    5214,
+    5226
+   ],
+   "tipo": "tabla"
+  },
+  "b107": {
+   "pagina": 146,
+   "lineas": [
+    5230,
+    5242
+   ],
+   "tipo": "tabla"
+  },
+  "b108": {
+   "pagina": 158,
+   "lineas": [
+    5595,
+    5598
+   ],
+   "tipo": "tabla"
+  },
+  "b109": {
+   "pagina": 158,
+   "lineas": [
+    5602,
+    5604
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b40"
+ ],
+ "notas_ingresos": [
+  "b90",
+  "b95",
+  "b97",
+  "b99"
+ ],
+ "notas_gastos": [
+  "b91",
+  "b92",
+  "b94",
+  "b98",
+  "b100",
+  "b101"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "valores em milhares de euros (pág. 97, debajo de los estados financieros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30.06.21",
+ "columna_anterior": "30.06.20",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Las columnas '20.04.21' y '30.04.20' del cuadro de la nota 21 (b95) corresponden a 30.06.21 y 30.06.20?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado de b95 parece un error de transcripción de las fechas de cierre.",
+   "bloques": [
+    "b95"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro b96 por repetir el resultado con transacciones de direitos de atletas ya abierto en b95?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "RESULTADO COM TRANSAÇÕES DE DIREITOS DE ATLETAS",
+   "texto": "b96 reagrupa las mismas cifras de b95 en otra presentación.",
+   "bloques": [
+    "b96",
+    "b95"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas individuales de Benfica SAD (no hay consolidado en el índice). Estado de resultados en b40 (pág. 96). Notas: 17 rendimentos operacionais (b90), 18 FSE (b91), 19 pessoal (b92), 20 depreciações (b94), 21 transações direitos atletas (b95, b97), 22 amortizações/imparidade atletas (b98), 23-24 financeiros (b99, b100), 25 imposto (b101). Cuadros del relatório de gestão (b2-b4) son duplicados y se excluyen."
+}

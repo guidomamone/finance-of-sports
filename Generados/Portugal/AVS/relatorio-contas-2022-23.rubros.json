@@ -1,0 +1,200 @@
+{
+  "md": "Clubes/Portugal/AVS/relatorio-contas-2022-23.md",
+  "pdf": "Clubes/Portugal/AVS/relatorio-contas-2022-23.pdf",
+  "club": "avs",
+  "year": 2023,
+  "generatedAt": "2026-10-15T21:56:50.015Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Atividades Operacionais",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        1.173315
+      ],
+      "glosa": "Actividades de explotación"
+    },
+    {
+      "label": "Receitas de Televisão",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.405
+      ],
+      "glosa": "Ingresos por televisión"
+    },
+    {
+      "label": "Receitas da Formação",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.0419
+      ],
+      "glosa": "Ingresos por formación"
+    },
+    {
+      "label": "Subsidios à exploração",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.2074
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Outros rendimentos",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.018144
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Serviços Especializados",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.601024
+      ],
+      "glosa": "Servicios especializados"
+    },
+    {
+      "label": "Materiais",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.106726
+      ],
+      "glosa": "Materiales"
+    },
+    {
+      "label": "Energia e Fluidos",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.058604
+      ],
+      "glosa": "Energía y fluidos"
+    },
+    {
+      "label": "Deslocações Estadas e Transportes",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.264742
+      ],
+      "glosa": "Desplazamientos, estancias y transportes"
+    },
+    {
+      "label": "Serviços Diversos",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.216322
+      ],
+      "glosa": "Servicios diversos"
+    },
+    {
+      "label": "Remunerações do pessoal",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        1.592087
+      ],
+      "glosa": "Remuneraciones del personal"
+    },
+    {
+      "label": "Encargos sobre Remunerações",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.164473
+      ],
+      "glosa": "Cargas sociales sobre remuneraciones"
+    },
+    {
+      "label": "Indemnizações",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.090421
+      ],
+      "glosa": "Indemnizaciones"
+    },
+    {
+      "label": "Seguro Ac. Trab. e Doenças Prof.",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.11337
+      ],
+      "glosa": "Seguro de accidentes de trabajo y enfermedades profesionales"
+    },
+    {
+      "label": "Gastos com ação social",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.073023
+      ],
+      "glosa": "Gastos de acción social"
+    },
+    {
+      "label": "Outros gastos com Pessoal",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.053338
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Impostos",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Outros gastos\"",
+      "values": [
+        0.001176
+      ],
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Outros gastos\"",
+      "values": [
+        0.254759
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Gastos/reversões de depreciação e de amortização",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.018262
+      ],
+      "glosa": "Gastos/reversiones de depreciación y amortización"
+    }
+  ]
+}

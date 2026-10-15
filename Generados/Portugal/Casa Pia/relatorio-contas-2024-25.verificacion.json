@@ -1,0 +1,337 @@
+{
+ "pdf": "Clubes/Portugal/Casa Pia/relatorio-contas-2024-25.pdf",
+ "md": "Clubes/Portugal/Casa Pia/relatorio-contas-2024-25.md",
+ "generado": "2026-10-15T21:55:00.734Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.000001000000002981255
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2024: 20.118681 en relatorio-contas-2023-24.pdf y 20.118681 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Subsídios à exploração\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "el desglose de \"Outros rendimentos\" (5 filas) no suma la fila: quedó la fila",
+  "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (0.208691 contra 0.083811, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Fornecimentos e serviços externos\" no suma el renglón (3.819895 contra 3.819986, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer confirmada por las sumas (columna, \"Custo das mercadorias vendidas e das matérias consumidas\"): ¿Se carga el cuadro de b14 (L917-L927) tomando las filas de 2025 (L917-L921) como actual y las de 2024 (L923-L927) como anterior?"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Outros rendimentos",
+   "suma": 23.232539,
+   "objetivo": 0.656869
+  },
+  {
+   "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
+   "suma": 0.208691,
+   "objetivo": 0.083811
+  },
+  {
+   "renglon": "Fornecimentos e serviços externos",
+   "suma": 3.819895,
+   "objetivo": 3.819986
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Outros rendimentos",
+   "suma": 23.232539,
+   "objetivo": 0.656869
+  },
+  {
+   "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
+   "suma": 0.208691,
+   "objetivo": 0.083811
+  },
+  {
+   "renglon": "Fornecimentos e serviços externos",
+   "suma": 3.819895,
+   "objetivo": 3.819986
+  }
+ ],
+ "totales": {
+  "ingresos": 30.718537,
+  "gastos": 30.623995,
+  "financiero": -0.026893,
+  "impuesto": -0.048394,
+  "resultadoImpreso": 0.019256,
+  "resultadoParaCargar": 0.019256,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Vendas:",
+   "lado": "ingreso",
+   "M": 0.05356,
+   "pagina": 29,
+   "linea": 1120,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Bilheteira",
+   "lado": "ingreso",
+   "M": 0.262439,
+   "pagina": 29,
+   "linea": 1123,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Patrocínios, publicidade e corporate",
+   "lado": "ingreso",
+   "M": 0.557069,
+   "pagina": 29,
+   "linea": 1124,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Receitas IV, Premios de participação Competições",
+   "lado": "ingreso",
+   "M": 3.629792,
+   "pagina": 29,
+   "linea": 1125,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Lucros jogos Online e Placard",
+   "lado": "ingreso",
+   "M": 0.348881,
+   "pagina": 29,
+   "linea": 1126,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Serviços Scouting",
+   "lado": "ingreso",
+   "M": 0.0105,
+   "pagina": 29,
+   "linea": 1127,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Cedência direitos desportivos",
+   "lado": "ingreso",
+   "M": 2.618628,
+   "pagina": 29,
+   "linea": 1128,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0.005129,
+   "pagina": 12,
+   "linea": 383,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Correções relativas a exercícios anteriores",
+   "lado": "ingreso",
+   "M": 0.000938,
+   "pagina": 31,
+   "linea": 1214,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Acordo de gestão",
+   "lado": "ingreso",
+   "M": 12.85698,
+   "pagina": 31,
+   "linea": 1215,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Alienações - ativos intangíveis",
+   "lado": "ingreso",
+   "M": 9.717752,
+   "pagina": 31,
+   "linea": 1216,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Outros rendimentos",
+   "lado": "ingreso",
+   "M": 0.656869,
+   "pagina": 31,
+   "linea": 1217,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "gasto",
+   "M": 0.083811,
+   "pagina": 12,
+   "linea": 384,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fornecimentos e serviços externos",
+   "lado": "gasto",
+   "M": 3.819986,
+   "pagina": 12,
+   "linea": 385,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Remunerações dos orgão sociais",
+   "lado": "gasto",
+   "M": 0.086492,
+   "pagina": 30,
+   "linea": 1186,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Remunerações do pessoal",
+   "lado": "gasto",
+   "M": 7.320722,
+   "pagina": 30,
+   "linea": 1187,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Encargos sobre remunerações",
+   "lado": "gasto",
+   "M": 0.617218,
+   "pagina": 30,
+   "linea": 1188,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 0.575659,
+   "pagina": 30,
+   "linea": 1189,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Equipamentos",
+   "lado": "gasto",
+   "M": 0.072393,
+   "pagina": 30,
+   "linea": 1190,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Correções relativas a exercícios anteriores",
+   "lado": "gasto",
+   "M": 0.038398,
+   "pagina": 32,
+   "linea": 1238,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Quotizações",
+   "lado": "gasto",
+   "M": 0.151071,
+   "pagina": 32,
+   "linea": 1240,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Multas",
+   "lado": "gasto",
+   "M": 0.153802,
+   "pagina": 32,
+   "linea": 1241,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Gastos não devidamente documentados",
+   "lado": "gasto",
+   "M": 0.004373,
+   "pagina": 32,
+   "linea": 1242,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Acordo de gestão",
+   "lado": "gasto",
+   "M": 16.808584,
+   "pagina": 32,
+   "linea": 1243,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Outros n/ aceites fiscalmente",
+   "lado": "gasto",
+   "M": 0.218858,
+   "pagina": 32,
+   "linea": 1244,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "lado": "gasto",
+   "M": 0.672628,
+   "pagina": 12,
+   "linea": 390,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Imparidade de investimentos depreciáveis/amortizáveis (perdas/reversões)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 12,
+   "linea": 391,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e rendimentos similares obtidos",
+   "M": 0.081241,
+   "linea": 393
+  },
+  {
+   "etiqueta": "Juros e gastos similares suportados",
+   "M": -0.108134,
+   "linea": 394
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento",
+   "M": -0.048394,
+   "linea": 396
+  }
+ ]
+}

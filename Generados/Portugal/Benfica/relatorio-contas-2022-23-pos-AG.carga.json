@@ -1,0 +1,41 @@
+{
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.pdf",
+ "generado": "2026-10-15T22:34:36.130Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (benfica-pt)"
+  },
+  {
+   "etapa": "alta:fx",
+   "motivo": "El documento declara un tipo de cambio con el dólar (1.0866 (línea 5326: \"|  Dólar americano | 1,0866 | 1,0387  |\") | 1.0387 (línea 5326: \"|  Dólar americano | 1,0866 | 1,0387  |\")). En EUR el número solo no dice el sentido: el sitio guarda \"EUR por 1 USD\" (~0.7-1.15); si el documento escribió \"USD por 1 EUR\" hay que invertirlo. ¿Cuál es el de CIERRE y en qué sentido está?"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "benfica-pt",
+ "year": 2023,
+ "cortadoEn": "filas"
+}

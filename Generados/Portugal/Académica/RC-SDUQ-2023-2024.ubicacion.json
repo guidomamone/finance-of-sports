@@ -1,0 +1,264 @@
+{
+ "pdf": "Clubes/Portugal/Académica/RC-SDUQ-2023-2024.pdf",
+ "md": "Clubes/Portugal/Académica/RC-SDUQ-2023-2024.md",
+ "mdSha1": "0057d78abae8eaad4e616e295de9c6692d1f43d0",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T18:14:04.886Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    28,
+    70
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    90,
+    110
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    140,
+    157
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    181,
+    191
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    211,
+    221
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    398,
+    401
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    467,
+    473
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    479,
+    483
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    493,
+    497
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    511,
+    513
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    515,
+    518
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    534,
+    543
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    547,
+    556
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 17,
+   "lineas": [
+    578,
+    584
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 17,
+   "lineas": [
+    590,
+    598
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    616,
+    625
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 18,
+   "lineas": [
+    631,
+    641
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 18,
+   "lineas": [
+    647,
+    664
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    676,
+    681
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 19,
+   "lineas": [
+    691,
+    696
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 19,
+   "lineas": [
+    702,
+    707
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    717,
+    720
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    726,
+    730
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 20,
+   "lineas": [
+    736,
+    755
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 21,
+   "lineas": [
+    767,
+    772
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 21,
+   "lineas": [
+    778,
+    784
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b23",
+  "b26"
+ ],
+ "notas_gastos": [
+  "b20",
+  "b21",
+  "b24",
+  "b25"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Euro)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Época 2023/2024",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El estado de resultados b3 tiene una segunda columna con la época 2022/2023 aunque el encabezado solo muestre 'Época 2023/2024'?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado de b3 tiene una columna vacía y 34 importes en 16 filas, lo que sugiere dos columnas de importes.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de reexpresión de 2022/2023 (b9: FSE, Gastos c/ Pessoal, Outros Gastos)?",
+   "propuesta": "sí",
+   "tema": "cuadro-de-otro-anio",
+   "renglon": "",
+   "texto": "b9 corresponde a ajustes de las DF 2022/2023 (nota 6), no al ejercicio pedido.",
+   "bloques": [
+    "b9",
+    "b8"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Solo hay estados individuales (sin consolidado). Estado de resultados por naturezas en b3 (pág. 4), en euros. Notas: vendas e serviços (b23), outros rendimentos (b26), gastos financiamento (b20), pessoal (b21), FSE (b24), outros gastos (b25). En las notas el orden de columnas es 2022-2023 y luego 2023-2024."
+}

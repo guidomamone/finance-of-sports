@@ -1,0 +1,18 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2003-04.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2003-04.md",
+ "mdSha1": "cf01764780cfb5c4c3322c7e7067ee5dc5234c3c",
+ "modo": "digital",
+ "motivoModo": "24 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 27208 vs 27209, 1528 vs 1728, 3981 vs 7981; 134 números del .md no están en el PDF (tolerancia 16)",
+ "generado": "2026-10-15T21:09:52.349Z",
+ "fuentes": {
+  "7": "pdftotext",
+  "15": "gemini",
+  "19": "pdftotext"
+ },
+ "hibridas": [
+  15
+ ],
+ "confirmados": 127,
+ "noConfirmados": []
+}

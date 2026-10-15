@@ -1,0 +1,307 @@
+{
+ "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2022-23.pdf",
+ "md": "Clubes/Portugal/Famalicão/relatorio-contas-2022-23.md",
+ "mdSha1": "046ce327ad71421273daa6f61a870b843365aa84",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T19:16:51.589Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    111,
+    119
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    140,
+    145
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    155,
+    159
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    174,
+    179
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    279,
+    285
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    310,
+    319
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    387,
+    429
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    455,
+    473
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    498,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    559,
+    570
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 17,
+   "lineas": [
+    582,
+    593
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    689,
+    695
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 24,
+   "lineas": [
+    869,
+    873
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 24,
+   "lineas": [
+    883,
+    900
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    922,
+    933
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    941,
+    946
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 25,
+   "lineas": [
+    954,
+    962
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    977,
+    983
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    991,
+    1002
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 26,
+   "lineas": [
+    1012,
+    1021
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 27,
+   "lineas": [
+    1038,
+    1046
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 27,
+   "lineas": [
+    1068,
+    1074
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 28,
+   "lineas": [
+    1095,
+    1100
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 28,
+   "lineas": [
+    1110,
+    1113
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1140,
+    1153
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 29,
+   "lineas": [
+    1165,
+    1172
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 30,
+   "lineas": [
+    1189,
+    1200
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 30,
+   "lineas": [
+    1212,
+    1220
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 31,
+   "lineas": [
+    1248,
+    1254
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 31,
+   "lineas": [
+    1262,
+    1267
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 31,
+   "lineas": [
+    1269,
+    1278
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 32,
+   "lineas": [
+    1307,
+    1311
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 32,
+   "lineas": [
+    1323,
+    1325
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b8"
+ ],
+ "notas_ingresos": [
+  "b25"
+ ],
+ "notas_gastos": [
+  "b26",
+  "b27",
+  "b28",
+  "b29"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30-Jun-23",
+ "columna_anterior": "30-Jun-22",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de rendimentos del relatório de gestão (b1), que reagrupa ingresos incluyendo alienações de jugadores no abiertas en notas visibles?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Alienações e cedências (jogadores)",
+   "texto": "b1 abre ingresos en TV, publicidad, alienaciones, subsidios y merchandising, desglose que la nota 20 (b25) quizás no tiene igual.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo hay estados individuales de la SAD. Estado de resultados en b8 (pág. 15). Nota 20 ventas y servicios (b25), CMV (b26), FSE (b27), personal (b28), otros gastos (b29). b1/b2 son cuadros resumen del informe de gestión; b2 repite renglones del estado. b30/b31 conciliación de impuestos, excluidos."
+}

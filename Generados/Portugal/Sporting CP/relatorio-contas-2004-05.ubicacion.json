@@ -1,0 +1,231 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.md",
+ "mdSha1": "7ece77bd8a0b2a6ce91b2ff89b2452fc6c6d1e83",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T21:10:54.927Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    84,
+    109
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    172,
+    176
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    182,
+    186
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    230,
+    237
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 17,
+   "lineas": [
+    346,
+    390
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 18,
+   "lineas": [
+    400,
+    429
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 23,
+   "lineas": [
+    527,
+    530
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 24,
+   "lineas": [
+    542,
+    546
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 24,
+   "lineas": [
+    556,
+    566
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 25,
+   "lineas": [
+    574,
+    593
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 25,
+   "lineas": [
+    597,
+    604
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 26,
+   "lineas": [
+    610,
+    613
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 26,
+   "lineas": [
+    623,
+    627
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 27,
+   "lineas": [
+    654,
+    656
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 28,
+   "lineas": [
+    664,
+    671
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 28,
+   "lineas": [
+    675,
+    678
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 28,
+   "lineas": [
+    682,
+    688
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 29,
+   "lineas": [
+    696,
+    704
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 29,
+   "lineas": [
+    712,
+    716
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 32,
+   "lineas": [
+    752,
+    791
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 33,
+   "lineas": [
+    801,
+    806
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 34,
+   "lineas": [
+    813,
+    833
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b1",
+  "b17",
+  "b18"
+ ],
+ "notas_gastos": [
+  "b17",
+  "b18"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30 JUN 05 (12 meses)",
+ "columna_anterior": "30 JUN 04 (11 meses)",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el cuadro resumen de gestión 'Resultados a 30 JUN 05' (pág. 5, b1) para abrir los proveitos del estado en Bilheteira, Bilhetes Época, Direitos TV, Quotização, Patrocínios, Royalties y Particip. UEFA?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Prestações de Serviços",
+   "texto": "b1 es un mapa del informe de gestión (presupuesto vs. real) pero es el único desglose de ingresos por categoría; no hay nota del anexo que lo abra.",
+   "bloques": [
+    "b1",
+    "b6"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga la Demonstração dos Resultados por Funções (b22)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "Es otra presentación del mismo resultado; se carga la DR por naturaleza (b6).",
+   "bloques": [
+    "b22"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado individual de la Sporting SAD por naturaleza en b6 (pág. 18). Notas 45 (financieros, b17) y 46 (extraordinarios, b18) desglosan renglones. El año anterior tiene solo 11 meses. b1 es columna 'Resultados a 30 JUN 05 (12 meses)', no la de Orçamento."
+}

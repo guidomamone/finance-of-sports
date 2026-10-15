@@ -1,0 +1,250 @@
+{
+  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2005-06.md",
+  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2005-06.pdf",
+  "club": "sporting-cp",
+  "year": null,
+  "generatedAt": "2026-10-15T21:55:08.312Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Prestações de Serviços",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        27.81
+      ],
+      "glosa": "Prestación de servicios"
+    },
+    {
+      "label": "Subsídios à Exploração",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Proveitos Suplementares",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        4.54
+      ],
+      "glosa": "Ingresos suplementarios"
+    },
+    {
+      "label": "Outros Proveitos e Ganhos Operacionais",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        6.838
+      ],
+      "glosa": "Otros ingresos y ganancias de explotación"
+    },
+    {
+      "label": "(D)",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        39.479
+      ],
+      "glosa": "(D)"
+    },
+    {
+      "label": "G. Imobilizações",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.013
+      ],
+      "glosa": "Ganancias por inmovilizado"
+    },
+    {
+      "label": "Benef. Contratuais",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.233
+      ],
+      "glosa": "Beneficios contractuales"
+    },
+    {
+      "label": "Corr Ex Anteriores",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.379
+      ],
+      "glosa": "Correcciones de ejercicios anteriores"
+    },
+    {
+      "label": "O. P. Extraordinár.",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.109
+      ],
+      "glosa": "Otros ingresos extraordinarios"
+    },
+    {
+      "label": "(F)",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        40.213
+      ],
+      "glosa": "(F)"
+    },
+    {
+      "label": "Fornecimentos e Serviços Externos",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        8.011
+      ],
+      "glosa": "Suministros y servicios exteriores"
+    },
+    {
+      "label": "Remunerações",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        16.728
+      ],
+      "glosa": "Remuneraciones"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0.754
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Amortizações de Imob. Corpóreas e Incorpó",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        9.012
+      ],
+      "glosa": "Amortizaciones de inmovilizado material e intangible"
+    },
+    {
+      "label": "Provisões",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Provisiones"
+    },
+    {
+      "label": "Impostos",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0.117
+      ],
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Outros Custos e Perdas Operacionais",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        1.191
+      ],
+      "glosa": "Otros gastos y pérdidas de explotación"
+    },
+    {
+      "label": "(C)",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        37.718
+      ],
+      "glosa": "(C)"
+    },
+    {
+      "label": "Donativos",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+      "values": [
+        0.002
+      ],
+      "glosa": "Donativos"
+    },
+    {
+      "label": "Multas e Penalid.",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+      "values": [
+        0.12
+      ],
+      "glosa": "Multas y sanciones"
+    },
+    {
+      "label": "Corr Ex Anteriores",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+      "values": [
+        0.102
+      ],
+      "glosa": "Correcciones de ejercicios anteriores"
+    },
+    {
+      "label": "O. C. Extraordinár.",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+      "values": [
+        1.945
+      ],
+      "glosa": "Otros gastos extraordinarios"
+    },
+    {
+      "label": "(E)",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        39.888
+      ],
+      "glosa": "(E)"
+    },
+    {
+      "label": "(G)",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        39.9
+      ],
+      "glosa": "(G)"
+    }
+  ]
+}

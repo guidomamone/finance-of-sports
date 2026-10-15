@@ -1,0 +1,274 @@
+{
+ "md": "Clubes/Portugal/Casa Pia/relatorio-contas-2024-25.md",
+ "generatedAt": "2026-10-15T22:31:05.222Z",
+ "rubrosHuella": "8c8c87daf596aab25a7c4ba1d980481cd325d26d",
+ "rubros": [
+  {
+   "label": "Vendas:",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteira",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínios, publicidade e corporate",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Lucros jogos Online e Placard",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços Scouting",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Cedência direitos desportivos",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Correções relativas a exercícios anteriores",
+   "lado": "expense",
+   "page": 32,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Acordo de gestão",
+   "lado": "expense",
+   "page": 32,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Alienações - ativos intangíveis",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros rendimentos",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Remunerações dos orgão sociais",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Remunerações do pessoal",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Encargos sobre remunerações",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipamentos",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Quotizações",
+   "lado": "expense",
+   "page": 32,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Multas",
+   "lado": "expense",
+   "page": 32,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos não devidamente documentados",
+   "lado": "expense",
+   "page": 32,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros n/ aceites fiscalmente",
+   "lado": "expense",
+   "page": 32,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Imparidade de investimentos depreciáveis/amortizáveis (perdas/reversões)",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "exceptional_items",
+     0.07
+    ],
+    [
+     "player_impairment",
+     0.06
+    ]
+   ],
+   "tokens": 1110
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Receitas IV, Premios de participação Competições",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "choice": "competition_bonus",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "competition_bonus",
+     0.83
+    ],
+    [
+     "broadcasting",
+     0.17
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1069
+  }
+ ]
+}

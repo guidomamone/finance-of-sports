@@ -1,0 +1,364 @@
+{
+ "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.pdf",
+ "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.md",
+ "generado": "2026-10-15T21:56:50.283Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2021,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "0364347",
+  "809586c",
+  "25b2359",
+  "180be84"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.000002000000012714054
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": false,
+   "detalle": "ingresos de 2021: 268.328651 en este documento y 254.198742 en relatorio-contas-consolidadas-2021-22.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Outros rendimentos e ganhos\" (11 filas) no suma la fila: quedó la fila",
+  "duda de extraer que no afecta la carga: El total 2 400 778 coincide con el estado consolidado L904, pese al encabezado de entidad en L2771.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Outros rendimentos e ganhos",
+   "suma": 3.306911,
+   "objetivo": 0.362613
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Outros rendimentos e ganhos",
+   "suma": 3.306911,
+   "objetivo": 0.362613
+  }
+ ],
+ "totales": {
+  "ingresos": 268.328651,
+  "gastos": 216.500203,
+  "financiero": -20.089387,
+  "impuesto": -1.284922,
+  "resultadoImpreso": 30.454137,
+  "resultadoParaCargar": 30.454137,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Vendas e serviços prestados",
+   "lado": "ingreso",
+   "M": 152.41446,
+   "pagina": 36,
+   "linea": 887,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0.029729,
+   "pagina": 36,
+   "linea": 888,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Rendimentos de propriedades de investimento",
+   "lado": "ingreso",
+   "M": 0.247895,
+   "pagina": 99,
+   "linea": 2675,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Imputação de subsídios para o investimento",
+   "lado": "ingreso",
+   "M": 0.078516,
+   "pagina": 99,
+   "linea": 2676,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Outros rendimentos suplementares",
+   "lado": "ingreso",
+   "M": 0.010146,
+   "pagina": 99,
+   "linea": 2677,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Correções relativas a exercícios anteriores",
+   "lado": "ingreso",
+   "M": 0.003002,
+   "pagina": 99,
+   "linea": 2678,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Reembolsos de sinistros",
+   "lado": "ingreso",
+   "M": 1.496914,
+   "pagina": 99,
+   "linea": 2679,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Reembolsos de impostos",
+   "lado": "ingreso",
+   "M": 0.050992,
+   "pagina": 99,
+   "linea": 2680,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Transferências de atletas de outras modalidades",
+   "lado": "ingreso",
+   "M": 0.72,
+   "pagina": 99,
+   "linea": 2681,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Mais-valias",
+   "lado": "ingreso",
+   "M": 0.336833,
+   "pagina": 99,
+   "linea": 2682,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Outros rendimentos e ganhos",
+   "lado": "ingreso",
+   "M": 0.362613,
+   "pagina": 99,
+   "linea": 2683,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Proveitos com alienações de passes de jogadores",
+   "lado": "ingreso",
+   "M": 102.889181,
+   "pagina": 100,
+   "linea": 2721,
+   "origen": "nota que desglosa \"Proveitos com transações de passes de jogadores de futebol\""
+  },
+  {
+   "etiqueta": "Proveitos com empréstimos de jogadores",
+   "lado": "ingreso",
+   "M": 5.30199,
+   "pagina": 100,
+   "linea": 2722,
+   "origen": "nota que desglosa \"Proveitos com transações de passes de jogadores de futebol\""
+  },
+  {
+   "etiqueta": "Outros proveitos com jogadores",
+   "lado": "ingreso",
+   "M": 4.38638,
+   "pagina": 100,
+   "linea": 2723,
+   "origen": "nota que desglosa \"Proveitos com transações de passes de jogadores de futebol\""
+  },
+  {
+   "etiqueta": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "gasto",
+   "M": 3.648411,
+   "pagina": 36,
+   "linea": 889,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fornecimentos e serviços externos",
+   "lado": "gasto",
+   "M": 37.671574,
+   "pagina": 36,
+   "linea": 890,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos com o pessoal",
+   "lado": "gasto",
+   "M": 100.091415,
+   "pagina": 36,
+   "linea": 891,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Imparidade de inventários (perdas / reversões)",
+   "lado": "gasto",
+   "M": 0.275455,
+   "pagina": 36,
+   "linea": 892,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Imparidade de dívidas a receber (perdas / reversões)",
+   "lado": "gasto",
+   "M": 0.335689,
+   "pagina": 36,
+   "linea": 893,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros gastos e perdas",
+   "lado": "gasto",
+   "M": 1.275737,
+   "pagina": 36,
+   "linea": 895,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos / reversões de depreciação e de amortização",
+   "lado": "gasto",
+   "M": 5.554148,
+   "pagina": 36,
+   "linea": 897,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortizações de passes de jogadores (Nota 10)",
+   "lado": "gasto",
+   "M": 29.843687,
+   "pagina": 100,
+   "linea": 2717,
+   "origen": "nota que desglosa \"Amortizações e perdas de imparidade com passes de jogadores de futebol\""
+  },
+  {
+   "etiqueta": "Perdas por imparidade com passes de jogadores (Nota 10)",
+   "lado": "gasto",
+   "M": 0.01879,
+   "pagina": 100,
+   "linea": 2718,
+   "origen": "nota que desglosa \"Amortizações e perdas de imparidade com passes de jogadores de futebol\""
+  },
+  {
+   "etiqueta": "Custos com alienações de passes de jogadores (Nota 10)",
+   "lado": "gasto",
+   "M": 30.725022,
+   "pagina": 100,
+   "linea": 2726,
+   "origen": "nota que desglosa \"Custos com transações de passes de jogadores de futebol\""
+  },
+  {
+   "etiqueta": "Custos com empréstimos de jogadores",
+   "lado": "gasto",
+   "M": 1.094487,
+   "pagina": 100,
+   "linea": 2727,
+   "origen": "nota que desglosa \"Custos com transações de passes de jogadores de futebol\""
+  },
+  {
+   "etiqueta": "Outros custos com jogadores",
+   "lado": "gasto",
+   "M": 5.965788,
+   "pagina": 100,
+   "linea": 2728,
+   "origen": "nota que desglosa \"Custos com transações de passes de jogadores de futebol\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e rendimentos similares obtidos",
+   "M": 2.400778,
+   "linea": 904
+  },
+  {
+   "etiqueta": "Juros e gastos similares suportados",
+   "M": -22.433797,
+   "linea": 905
+  },
+  {
+   "etiqueta": "Resultados relativos a investimentos",
+   "M": -0.056368,
+   "linea": 906
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": -1.284922,
+   "linea": 908
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "48e1791d8ad3b72449503ddf8dd49597ff1fec36",
+  "rango": [
+   884,
+   914
+  ],
+  "lineasCargadas": [
+   887,
+   888,
+   2675,
+   2676,
+   2677,
+   2678,
+   2679,
+   2680,
+   2681,
+   2682,
+   2683,
+   2721,
+   2722,
+   2723,
+   889,
+   890,
+   891,
+   892,
+   893,
+   895,
+   897,
+   2717,
+   2718,
+   2726,
+   2727,
+   2728,
+   904,
+   905,
+   906,
+   908
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 884 a 914 del .md):\nL885: |  RENDIMENTOS E GASTOS | Notas | 30 junho 2021 | 30 junho 2020  |\nL886: | --- | --- | --- | --- |\nL887: |  Vendas e serviços prestados | 27 | 152 414 460 | 88 770 411  |\nL888: |  Subsídios à exploração |  | 29 729 | 49 493  |\nL889: |  Custo das mercadorias vendidas e das matérias consumidas | 16 | (3 648 411) | (3 210 005)  |\nL890: |  Fornecimentos e serviços externos | 28 | (37 671 574) | (42 642 424)  |\nL891: |  Gastos com o pessoal | 29 | (100 091 415) | (90 279 442)  |\nL892: |  Imparidade de inventários (perdas / reversões) | 16 | (275 455) | (395 646)  |\nL893: |  Imparidade de dívidas a receber (perdas / reversões) | 14 | (335 689) | (610 972)  |\nL894: |  Outros rendimentos e ganhos | 30 | 3 306 911 | 1 118 478  |\nL895: |  Outros gastos e perdas | 31 | (1 275 737) | (1 233 043)  |\nL896: |  **Resultado antes de (i) resultados com transações de passes de jogadores, (ii) depreciações, (iii) gastos de financiamento e (iv) impostos** |  | 12 452 818 | (48 433 150)  |\nL897: |  Gastos / reversões de depreciação e de amortização | 32 | (5 554 148) | (5 720 628)  |\nL898: |  **Resultado operacional excluindo resultados com transações de passes de** |  | 6 898 670 | (54 153 778)  |\nL899: |  Amortizações e perdas de imparidade com passes de jogadores de futebol | 33 | (29 862 477) | (45 086 368)  |\nL900: |  Proveitos com transações de passes de jogadores de futebol | 33 | 112 577 551 | 24 133 379  |\nL901: |  Custos com transações de passes de jogadores de futebol | 33 | (37 785 297) | (23 582 237)  |\nL902: |  **Resultados com transações de passes de jogadores** |  | 44 929 777 | (44 535 226)  |\nL903: |  **Resultado operacional (antes de gastos de financiamento e impostos)** |  | 51 828 447 | (98 689 004)  |\nL904: |  Juros e rendimentos similares obtidos | 34 | 2 400 778 | 2 230 964  |\nL905: |  Juros e gastos similares suportados | 34 | (22 433 797) | (19 857 980)  |\nL906: |  Resultados relativos a investimentos | 35 | (56 368) | 1 012 892  |\nL907: |  **Resultado antes de impostos** |  | 31 739 059 | (115 303 128)  |\nL908: |  Imposto sobre o rendimento do período | 17 | (1 284 922) | (677 394)  |\nL909: |  **Resultado líquido do período** |  | 30 454 137 | (115 980 522)  |\nL910: |  Resultados atribuível aos associados do Clube |  | 30 366 956 | (116 328 959)  |\nL911: |  Interesses sem controlo |  | 87 181 | 348 437  |\nL913: Relatório e Contas Consolidado 2020/2021\n\nLO QUE SE CARGA:\n- ingreso · \"Vendas e serviços prestados\" · 152.41446 · L887\n- ingreso · \"Subsídios à exploração\" · 0.029729 · L888\n- ingreso · \"Rendimentos de propriedades de investimento\" · 0.247895 · L2675 (de una nota)\n- ingreso · \"Imputação de subsídios para o investimento\" · 0.078516 · L2676 (de una nota)\n- ingreso · \"Outros rendimentos suplementares\" · 0.010146 · L2677 (de una nota)\n- ingreso · \"Correções relativas a exercícios anteriores\" · 0.003002 · L2678 (de una nota)\n- ingreso · \"Reembolsos de sinistros\" · 1.496914 · L2679 (de una nota)\n- ingreso · \"Reembolsos de impostos\" · 0.050992 · L2680 (de una nota)\n- ingreso · \"Transferências de atletas de outras modalidades\" · 0.72 · L2681 (de una nota)\n- ingreso · \"Mais-valias\" · 0.336833 · L2682 (de una nota)\n- ingreso · \"Outros rendimentos e ganhos\" · 0.362613 · L2683 (de una nota)\n- ingreso · \"Proveitos com alienações de passes de jogadores\" · 102.889181 · L2721 (de una nota)\n- ingreso · \"Proveitos com empréstimos de jogadores\" · 5.30199 · L2722 (de una nota)\n- ingreso · \"Outros proveitos com jogadores\" · 4.38638 · L2723 (de una nota)\n- gasto · \"Custo das mercadorias vendidas e das matérias consumidas\" · 3.648411 · L889\n- gasto · \"Fornecimentos e serviços externos\" · 37.671574 · L890\n- gasto · \"Gastos com o pessoal\" · 100.091415 · L891\n- gasto · \"Imparidade de inventários (perdas / reversões)\" · 0.275455 · L892\n- gasto · \"Imparidade de dívidas a receber (perdas / reversões)\" · 0.335689 · L893\n- gasto · \"Outros gastos e perdas\" · 1.275737 · L895\n- gasto · \"Gastos / reversões de depreciação e de amortização\" · 5.554148 · L897\n- gasto · \"Amortizações de passes de jogadores (Nota 10)\" · 29.843687 · L2717 (de una nota)\n- gasto · \"Perdas por imparidade com passes de jogadores (Nota 10)\" · 0.01879 · L2718 (de una nota)\n- gasto · \"Custos com alienações de passes de jogadores (Nota 10)\" · 30.725022 · L2726 (de una nota)\n- gasto · \"Custos com empréstimos de jogadores\" · 1.094487 · L2727 (de una nota)\n- gasto · \"Outros custos com jogadores\" · 5.965788 · L2728 (de una nota)\n- financiero · \"Juros e rendimentos similares obtidos\" · 2.400778 · L904\n- financiero · \"Juros e gastos similares suportados\" · -22.433797 · L905\n- financiero · \"Resultados relativos a investimentos\" · -0.056368 · L906\n- impuesto · \"Imposto sobre o rendimento do período\" · -1.284922 · L908"
+ }
+}

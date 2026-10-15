@@ -1,0 +1,608 @@
+{
+ "pdf": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.pdf",
+ "md": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.md",
+ "mdSha1": "cd469e2142a9382c4646e6fe3ebbf6af6870cb8d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T18:23:44.668Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b20"
+  ],
+  "notas_gastos": [
+   "b21",
+   "b22",
+   "b23"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L214: (Montantes expressos em euros)"
+  },
+  {
+   "bloque": "b20",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; importes con decimales coinciden con el estado en euros"
+  },
+  {
+   "bloque": "b21",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; total 541.033,08 coincide con el estado en euros"
+  },
+  {
+   "bloque": "b22",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; total 932.099,69 coincide con el estado en euros"
+  },
+  {
+   "bloque": "b23",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; total 81.861,41 coincide con el estado en euros"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 218,
+   "etiqueta": "Vendas e serviços prestados",
+   "actual": "1.288.499,18",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 219,
+   "etiqueta": "Fornecimentos e serviços externos",
+   "actual": "(541.033,08)",
+   "anterior": "(3.187,01)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 220,
+   "etiqueta": "Gastos com o pessoal",
+   "actual": "(932.099,69)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 221,
+   "etiqueta": "Outros gastos",
+   "actual": "(81.861,41)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 222,
+   "etiqueta": "Resultado antes de depreciações, gastos de financiamento e impostos",
+   "actual": "(266.494,64)",
+   "anterior": "(3.187,01)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 223,
+   "etiqueta": "Gastos / reversões de depreciação e de amortização",
+   "actual": "(123.999,48)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 224,
+   "etiqueta": "Resultado operacional (antes de gastos de financiamento e impostos)",
+   "actual": "(390.494,12)",
+   "anterior": "(3.187,01)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 225,
+   "etiqueta": "Juros e gastos similares suportados",
+   "actual": "(10,11)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 226,
+   "etiqueta": "Resultado antes de imposto",
+   "actual": "(390.504,23)",
+   "anterior": "(3.187,01)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 227,
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 228,
+   "etiqueta": "Resultado líquido do período",
+   "actual": "(390.504,23)",
+   "anterior": "(3.187,01)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 766,
+   "etiqueta": "Vendas",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e serviços prestados"
+  },
+  {
+   "bloque": "b20",
+   "linea": 767,
+   "etiqueta": "Prestação de serviços",
+   "actual": "1.288.499,18",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e serviços prestados"
+  },
+  {
+   "bloque": "b20",
+   "linea": 768,
+   "etiqueta": "",
+   "actual": "1.288.499,18",
+   "anterior": "0,00",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e serviços prestados"
+  },
+  {
+   "bloque": "b21",
+   "linea": 785,
+   "etiqueta": "Subcontratos",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 787,
+   "etiqueta": "Trabalhos especializados",
+   "actual": "146.079,89",
+   "anterior": "1.000,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 788,
+   "etiqueta": "Publicidade e propaganda",
+   "actual": "10.046,20",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 789,
+   "etiqueta": "Vigilância e segurança",
+   "actual": "107.390,89",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 790,
+   "etiqueta": "Conservação e reparação",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 791,
+   "etiqueta": "Honorários",
+   "actual": "40.035,71",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 792,
+   "etiqueta": "Serviços bancários",
+   "actual": "884,44",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 793,
+   "etiqueta": "Comissões",
+   "actual": "3,51",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 794,
+   "etiqueta": "Outros serviços especializados",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 796,
+   "etiqueta": "Ferramentas e utensílios de desgaste rápido",
+   "actual": "9.121,02",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 797,
+   "etiqueta": "Livros e documentação técnica",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 798,
+   "etiqueta": "Material de escritório",
+   "actual": "301,23",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 800,
+   "etiqueta": "Eletricidade",
+   "actual": "1.857,20",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 801,
+   "etiqueta": "Água",
+   "actual": "1.135,96",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 802,
+   "etiqueta": "Combustíveis",
+   "actual": "1.012,57",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 804,
+   "etiqueta": "Deslocações e estadias",
+   "actual": "180.412,79",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 805,
+   "etiqueta": "Transportes de mercadorias",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 806,
+   "etiqueta": "Transportes de pessoal",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 808,
+   "etiqueta": "Rendas e alugueres",
+   "actual": "31.714,93",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 809,
+   "etiqueta": "Comunicação",
+   "actual": "1.874,10",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 810,
+   "etiqueta": "Seguros",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 811,
+   "etiqueta": "Contechisioso e notariado",
+   "actual": "300,00",
+   "anterior": "2.187,01",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 812,
+   "etiqueta": "Despesas de representação",
+   "actual": "103,49",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 813,
+   "etiqueta": "Limpeza, higiene e conforto",
+   "actual": "75,44",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 814,
+   "etiqueta": "Outros",
+   "actual": "8.683,71",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 815,
+   "etiqueta": "",
+   "actual": "541.033,08",
+   "anterior": "3.187,01",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b22",
+   "linea": 836,
+   "etiqueta": "Órgãos sociais e outros colaboradores",
+   "actual": "66.042,23",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 837,
+   "etiqueta": "Remunerações Plantel e Equipa Técnica",
+   "actual": "703.895,30",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 838,
+   "etiqueta": "",
+   "actual": "769.937,53",
+   "anterior": "0,00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 840,
+   "etiqueta": "Indemnizações",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 841,
+   "etiqueta": "Encargos sobre remunerações",
+   "actual": "63.015,12",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 842,
+   "etiqueta": "Seguros",
+   "actual": "68.498,98",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 843,
+   "etiqueta": "Custos de ação social",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 844,
+   "etiqueta": "Outros",
+   "actual": "30.648,06",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 845,
+   "etiqueta": "",
+   "actual": "162.162,16",
+   "anterior": "0,00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 846,
+   "etiqueta": "",
+   "actual": "932.099,69",
+   "anterior": "0,00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b23",
+   "linea": 857,
+   "etiqueta": "Impostos",
+   "actual": "953,32",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b23",
+   "linea": 858,
+   "etiqueta": "Taxas",
+   "actual": "500,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b23",
+   "linea": 859,
+   "etiqueta": "Menos valias de ativos intangíveis",
+   "actual": "80.000,02",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b23",
+   "linea": 860,
+   "etiqueta": "Outros gastos e perdas",
+   "actual": "408,07",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b23",
+   "linea": 861,
+   "etiqueta": "Total",
+   "actual": "81.861,41",
+   "anterior": "0,00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 228,
+  "actual": "(390.504,23)",
+  "anterior": "(3.187,01)"
+ },
+ "dudas": [],
+ "observaciones": "Estado en euros; las notas no indican escala pero sus totales coinciden exactamente con el estado. No hay total de ingresos ni de gastos impreso. En b20 se tomó la columna Total de cada año (desglose por mercado, no por segmento). L847 (número médio colaboradores) no es importe y se omitió. Etiqueta de la nota b21 ('Fornecimento e serviços externos') difiere levemente del estado; detalla_a usa la del estado."
+}

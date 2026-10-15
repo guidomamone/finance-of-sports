@@ -1,0 +1,562 @@
+{
+ "pdf": "Clubes/Portugal/Arouca/relatorio-contas-2023-24.pdf",
+ "md": "Clubes/Portugal/Arouca/relatorio-contas-2023-24.md",
+ "mdSha1": "14f399eb613ffffaea488c466b8c50938109a6d1",
+ "modo": "digital",
+ "motivoModo": "36 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 21358822 vs 21358422, 510208471 vs 510708471, 1852250 vs 5850250; 240 números del .md no están en el PDF (tolerancia 21); el .md solo tiene el 57% de los números del PDF (mínimo 85%): incompleto",
+ "generado": "2026-10-15T18:19:06.154Z",
+ "fuentes": {
+  "8": "gemini",
+  "32": "pdftotext",
+  "34": "pdftotext",
+  "35": "pdftotext",
+  "36": "pdftotext"
+ },
+ "hibridas": [
+  8
+ ],
+ "confirmados": 85,
+ "noConfirmados": [
+  {
+   "bloque": "b2",
+   "pagina": 8,
+   "linea": 241,
+   "numero": "63 000,00",
+   "segundaLeyo": "8300000",
+   "sinSegunda": false,
+   "texto": "| Provisões (aumentos/reduções) | 17 | (63 000,00) | |"
+  },
+  {
+   "bloque": "b30",
+   "pagina": 35,
+   "linea": 1473,
+   "numero": "132 787,64",
+   "segundaLeyo": "13274764",
+   "sinSegunda": false,
+   "texto": "|  Receitas de Bilheteira | 132 787,64 | 57 986,60  |"
+  },
+  {
+   "bloque": "b30",
+   "pagina": 35,
+   "linea": 1475,
+   "numero": "4 950 000,00",
+   "segundaLeyo": "490000000",
+   "sinSegunda": false,
+   "texto": "|  Transmissões Televisivas | 4 950 000,00 | 4 900 000,00  |"
+  },
+  {
+   "bloque": "b30",
+   "pagina": 35,
+   "linea": 1476,
+   "numero": "593 000,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Ced. Temporária atletas | 593 000,00 | 375 857,82  |"
+  },
+  {
+   "bloque": "b30",
+   "pagina": 35,
+   "linea": 1476,
+   "numero": "375 857,82",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Ced. Temporária atletas | 593 000,00 | 375 857,82  |"
+  },
+  {
+   "bloque": "b30",
+   "pagina": 35,
+   "linea": 1480,
+   "numero": "7 540 909,14",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Total** | **7 540 909,14** | **6 450 507,24**  |"
+  },
+  {
+   "bloque": "b31",
+   "pagina": 36,
+   "linea": 1510,
+   "numero": "478,77",
+   "segundaLeyo": "47477",
+   "sinSegunda": false,
+   "texto": "|  Descontos pp obtidos | 1 030,61 | 478,77  |"
+  },
+  {
+   "bloque": "b31",
+   "pagina": 36,
+   "linea": 1511,
+   "numero": "17 750,53",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Rend. Suplementares | 0,00 | 17 750,53  |"
+  },
+  {
+   "bloque": "b31",
+   "pagina": 36,
+   "linea": 1512,
+   "numero": "6 862 424,89",
+   "segundaLeyo": "686242449",
+   "sinSegunda": false,
+   "texto": "|  Al. ativos intangíveis-Passes atletas | 6 862 424,89 | 2 198 750,00  |"
+  },
+  {
+   "bloque": "b31",
+   "pagina": 36,
+   "linea": 1513,
+   "numero": "17 000,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Benefícios de penalidades contratuais | 317 715,82 | 17 000,00  |"
+  },
+  {
+   "bloque": "b31",
+   "pagina": 36,
+   "linea": 1515,
+   "numero": "7 347 142,08",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Total** | **7 347 142,08** | **2 324 652,39**  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 32,
+   "linea": 1321,
+   "numero": "60 894,82",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Remun. Órgãos sociais | 60 894,82 | 60 788,44  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 32,
+   "linea": 1321,
+   "numero": "60 788,44",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Remun. Órgãos sociais | 60 894,82 | 60 788,44  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 32,
+   "linea": 1322,
+   "numero": "4 264 710,71",
+   "segundaLeyo": "426471077",
+   "sinSegunda": false,
+   "texto": "|  Remunerações pessoal | 5 699 920,54 | 4 264 710,71  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 32,
+   "linea": 1323,
+   "numero": "484 762,98",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Indemnizações | 484 762,98 | 72 000,00  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 32,
+   "linea": 1323,
+   "numero": "72 000,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Indemnizações | 484 762,98 | 72 000,00  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 32,
+   "linea": 1324,
+   "numero": "92 248,87",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Encargos s/ remunerações | 92 248,87 | 176 854,05  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 32,
+   "linea": 1324,
+   "numero": "176 854,05",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Encargos s/ remunerações | 92 248,87 | 176 854,05  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 32,
+   "linea": 1325,
+   "numero": "540 589,06",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Seg. Acidentes de Trabalho | 735 511,50 | 540 589,06  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 32,
+   "linea": 1326,
+   "numero": "73 763,72",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Outros Gastos c/ Pessoal | 73 763,72 | 52 892,11  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 32,
+   "linea": 1326,
+   "numero": "52 892,11",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Outros Gastos c/ Pessoal | 73 763,72 | 52 892,11  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 32,
+   "linea": 1327,
+   "numero": "7 147 102,43",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Total** | **7 147 102,43** | **5 167 834,37**  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 32,
+   "linea": 1327,
+   "numero": "5 167 834,37",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Total** | **7 147 102,43** | **5 167 834,37**  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1398,
+   "numero": "2023",
+   "segundaLeyo": "2024",
+   "sinSegunda": false,
+   "texto": "|  Rubrica | 30-06-2024 | 30-06-2023  |",
+   "propuesta": "anio-encabezado"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1400,
+   "numero": "4 342,89",
+   "segundaLeyo": "434249",
+   "sinSegunda": false,
+   "texto": "|  Subcontratos | 4 825,00 | 4 342,89  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1401,
+   "numero": "165 083,13",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Trabalhos Especializados | 488 953,40 | 165 083,13  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1402,
+   "numero": "28 267,10",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Publicidade e propaganda | 1 904,00 | 28 267,10  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1405,
+   "numero": "27 250,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Comissões | 27 250,00 | 853 543,00  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1405,
+   "numero": "853 543,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Comissões | 27 250,00 | 853 543,00  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1407,
+   "numero": "6 871,93",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Serviços Bancários | 6 871,93 | 6 356,78  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1408,
+   "numero": "650,00",
+   "segundaLeyo": "25000",
+   "sinSegunda": false,
+   "texto": "|  Out. Serv. Especializados | 650,00 | 59 606,86  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1409,
+   "numero": "9 377,79",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Ferr. Ut. Desgaste Rápido | 9 377,79 | 14 980,59  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1409,
+   "numero": "14 980,59",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Ferr. Ut. Desgaste Rápido | 9 377,79 | 14 980,59  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1411,
+   "numero": "12 383,68",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Material de Escritório | 12 383,68 | 5 120,47  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1411,
+   "numero": "5 120,47",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Material de Escritório | 12 383,68 | 5 120,47  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1412,
+   "numero": "28 785,17",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Artigos Oferta | 28 785,17 | 12 429,98  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1412,
+   "numero": "12 429,98",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Artigos Oferta | 28 785,17 | 12 429,98  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1414,
+   "numero": "31 389,91",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Combustíveis | 31 389,91 | 12 942,25  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1414,
+   "numero": "12 942,25",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Combustíveis | 31 389,91 | 12 942,25  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1415,
+   "numero": "512,60",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Água | 512,60 | 400,18  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1415,
+   "numero": "400,18",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Água | 512,60 | 400,18  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1416,
+   "numero": "11 102,45",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Outros Fluidos | 11 102,45 | 7 128,22  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1416,
+   "numero": "7 128,22",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Outros Fluidos | 11 102,45 | 7 128,22  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1417,
+   "numero": "513 134,58",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Deslocações e Estadas | 513 134,58 | 255 121,10  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1417,
+   "numero": "255 121,10",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Deslocações e Estadas | 513 134,58 | 255 121,10  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1418,
+   "numero": "4 710,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Transp. Pessoal | 4 710,00 | 5 090,00  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1423,
+   "numero": "9 341,36",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Contencioso e Notariado | 9 341,36 | 7 429,09  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1424,
+   "numero": "2 244,10",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Limpeza, Higiene e Conforto | 2 244,10 | 1 745,08  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1424,
+   "numero": "1 745,08",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Limpeza, Higiene e Conforto | 2 244,10 | 1 745,08  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1425,
+   "numero": "160 819,68",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Outros Serviços | 160 819,68 | 140 029,84  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1425,
+   "numero": "140 029,84",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Outros Serviços | 160 819,68 | 140 029,84  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1426,
+   "numero": "1 547 319,95",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Total** | **1 547 319,95** | **1 807 168,61**  |"
+  },
+  {
+   "bloque": "b28",
+   "pagina": 34,
+   "linea": 1426,
+   "numero": "1 807 168,61",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Total** | **1 547 319,95** | **1 807 168,61**  |"
+  },
+  {
+   "bloque": "b29",
+   "pagina": 35,
+   "linea": 1456,
+   "numero": "9 503,66",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Impostos | 9 503,66 | 2 752,18  |"
+  },
+  {
+   "bloque": "b29",
+   "pagina": 35,
+   "linea": 1456,
+   "numero": "2 752,18",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Impostos | 9 503,66 | 2 752,18  |"
+  },
+  {
+   "bloque": "b29",
+   "pagina": 35,
+   "linea": 1458,
+   "numero": "25 077,50",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Corr. Per. Anteriores | 254 350,38 | 25 077,50  |"
+  },
+  {
+   "bloque": "b29",
+   "pagina": 35,
+   "linea": 1459,
+   "numero": "191,58",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Diferenças câmbio desf. | 191,58 | 13 299,70  |"
+  },
+  {
+   "bloque": "b29",
+   "pagina": 35,
+   "linea": 1459,
+   "numero": "13 299,70",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Diferenças câmbio desf. | 191,58 | 13 299,70  |"
+  },
+  {
+   "bloque": "b29",
+   "pagina": 35,
+   "linea": 1461,
+   "numero": "40 974,12",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Outros | 40 974,12 | 16 110,10  |"
+  },
+  {
+   "bloque": "b29",
+   "pagina": 35,
+   "linea": 1461,
+   "numero": "16 110,10",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Outros | 40 974,12 | 16 110,10  |"
+  }
+ ]
+}

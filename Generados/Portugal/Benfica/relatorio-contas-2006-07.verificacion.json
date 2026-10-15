@@ -1,0 +1,375 @@
+{
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.pdf",
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.md",
+ "generado": "2026-10-15T21:55:00.121Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": null,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.pdf",
+   "campo": "cierre",
+   "valor": "2007-07-31",
+   "linea": null,
+   "motivo": "periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)",
+   "evidencia": ".md L196 exercício entre 1 de agosto de 2006 e 31 de julho de 2007",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
+ "cola": [
+  "bad0149",
+  "900ec6c",
+  "7ffdc3b",
+  "eafe941",
+  "7c675ce"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": false,
+   "detalle": "las líneas suman 223.573871 y el total impreso dice 83.350076"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "\"(G)\" 68.075647 cierra; además se suman 14 línea(s) fuera de ese total (193.740927)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 223.573871 - gastos 261.816574 ± financiero 7.367671 ± impuesto 0.038656 no da el impreso 15.274429",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Outros\" no suma el renglón (7.367671 contra 3.039614, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar que no afecta la carga: Son cuadros de análisis en miles de euros con reclasificación de gestión, no el estado oficial.",
+  "duda de extraer que no afecta la carga: El estado imprime (E) sin impuesto y (G) con impuesto; (F)-(G) da el resultado líquido (L941)."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Outros",
+   "suma": 7.367671,
+   "objetivo": 3.039614
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Outros",
+   "suma": 7.367671,
+   "objetivo": 3.039614
+  }
+ ],
+ "totales": {
+  "ingresos": 223.573871,
+  "gastos": 261.816574,
+  "financiero": 7.367671,
+  "impuesto": 0.038656,
+  "resultadoImpreso": 15.274429,
+  "resultadoParaCargar": 15.274429,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Publicidade e patrocínios",
+   "lado": "ingreso",
+   "M": 11.030738,
+   "pagina": 38,
+   "linea": 1330,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Receitas de bilheteira",
+   "lado": "ingreso",
+   "M": 9.893123,
+   "pagina": 38,
+   "linea": 1331,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Transmissões televisivas",
+   "lado": "ingreso",
+   "M": 9.204847,
+   "pagina": 38,
+   "linea": 1332,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Quotizações",
+   "lado": "ingreso",
+   "M": 8.327899,
+   "pagina": 38,
+   "linea": 1333,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Cativos",
+   "lado": "ingreso",
+   "M": 2.75027,
+   "pagina": 38,
+   "linea": 1334,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Cachet's",
+   "lado": "ingreso",
+   "M": 2.101342,
+   "pagina": 38,
+   "linea": 1335,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Cedência de atletas",
+   "lado": "ingreso",
+   "M": 0.850737,
+   "pagina": 38,
+   "linea": 1336,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Receitas competições FPF",
+   "lado": "ingreso",
+   "M": 0.23044,
+   "pagina": 38,
+   "linea": 1337,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Outras",
+   "lado": "ingreso",
+   "M": 0.094505,
+   "pagina": 38,
+   "linea": 1338,
+   "origen": "nota que desglosa \"Prestações de serviços\""
+  },
+  {
+   "etiqueta": "Proveitos suplementares",
+   "lado": "ingreso",
+   "M": 11.683949,
+   "pagina": 30,
+   "linea": 927,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0.003516,
+   "pagina": 30,
+   "linea": 928,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros proveitos e ganhos operacionais",
+   "lado": "ingreso",
+   "M": 0.702353,
+   "pagina": 30,
+   "linea": 929,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(D)",
+   "lado": "ingreso",
+   "M": 56.938273,
+   "pagina": 30,
+   "linea": 934,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ganhos em imobilizações",
+   "lado": "ingreso",
+   "M": 24.114308,
+   "pagina": 39,
+   "linea": 1377,
+   "origen": "nota que desglosa \"Proveitos e ganhos extraordinários\""
+  },
+  {
+   "etiqueta": "Benefícios de penalidades contratuais",
+   "lado": "ingreso",
+   "M": 0.034333,
+   "pagina": 39,
+   "linea": 1378,
+   "origen": "nota que desglosa \"Proveitos e ganhos extraordinários\""
+  },
+  {
+   "etiqueta": "Correcções relativas a exercícios anteriores",
+   "lado": "ingreso",
+   "M": 0.145772,
+   "pagina": 39,
+   "linea": 1379,
+   "origen": "nota que desglosa \"Proveitos e ganhos extraordinários\""
+  },
+  {
+   "etiqueta": "Outros proveitos e ganhos extraordinários",
+   "lado": "ingreso",
+   "M": 2.11739,
+   "pagina": 39,
+   "linea": 1380,
+   "origen": "nota que desglosa \"Proveitos e ganhos extraordinários\""
+  },
+  {
+   "etiqueta": "(F)",
+   "lado": "ingreso",
+   "M": 83.350076,
+   "pagina": 30,
+   "linea": 936,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fornecimentos e serviços externos",
+   "lado": "gasto",
+   "M": 15.0514,
+   "pagina": 30,
+   "linea": 902,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Remunerações",
+   "lado": "gasto",
+   "M": 22.936223,
+   "pagina": 30,
+   "linea": 904,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 3.039614,
+   "pagina": 30,
+   "linea": 906,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortizações do imobilizado corpóreo e incorpóreo",
+   "lado": "gasto",
+   "M": 13.278907,
+   "pagina": 30,
+   "linea": 908,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ajustamentos",
+   "lado": "gasto",
+   "M": 0.25,
+   "pagina": 30,
+   "linea": 909,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Provisões",
+   "lado": "gasto",
+   "M": 1.5,
+   "pagina": 30,
+   "linea": 910,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos",
+   "lado": "gasto",
+   "M": 0.597233,
+   "pagina": 30,
+   "linea": 912,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros custos e perdas operacionais",
+   "lado": "gasto",
+   "M": 1.013568,
+   "pagina": 30,
+   "linea": 913,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(C)",
+   "lado": "gasto",
+   "M": 64.970062,
+   "pagina": 30,
+   "linea": 918,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Perdas em imobilizações",
+   "lado": "gasto",
+   "M": 1.991163,
+   "pagina": 39,
+   "linea": 1370,
+   "origen": "nota que desglosa \"Custos e perdas extraordinários\""
+  },
+  {
+   "etiqueta": "Multas e penalidades",
+   "lado": "gasto",
+   "M": 0.292283,
+   "pagina": 39,
+   "linea": 1371,
+   "origen": "nota que desglosa \"Custos e perdas extraordinários\""
+  },
+  {
+   "etiqueta": "Correcções relativas a exercícios anteriores",
+   "lado": "gasto",
+   "M": 0.443064,
+   "pagina": 39,
+   "linea": 1372,
+   "origen": "nota que desglosa \"Custos e perdas extraordinários\""
+  },
+  {
+   "etiqueta": "Outros custos e perdas extraordinários",
+   "lado": "gasto",
+   "M": 0.340419,
+   "pagina": 39,
+   "linea": 1373,
+   "origen": "nota que desglosa \"Custos e perdas extraordinários\""
+  },
+  {
+   "etiqueta": "(E)",
+   "lado": "gasto",
+   "M": 68.036991,
+   "pagina": 30,
+   "linea": 920,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(G)",
+   "lado": "gasto",
+   "M": 68.075647,
+   "pagina": 30,
+   "linea": 922,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Outros",
+   "M": 7.303117,
+   "linea": 917
+  },
+  {
+   "etiqueta": "Outros",
+   "M": 0.064554,
+   "linea": 933
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do exercício",
+   "M": 0.038656,
+   "linea": 921
+  }
+ ]
+}

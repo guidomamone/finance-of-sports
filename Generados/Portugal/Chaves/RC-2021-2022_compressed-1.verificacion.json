@@ -1,0 +1,466 @@
+{
+ "pdf": "Clubes/Portugal/Chaves/RC-2021-2022_compressed-1.pdf",
+ "md": "Clubes/Portugal/Chaves/RC-2021-2022_compressed-1.md",
+ "generado": "2026-10-15T21:55:00.765Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "d96ff2b"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.031361190368841e-15
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 5.38383 en este documento y 5.38383 en RC-2022-2023-com.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (0.395487 contra 0.164889, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Gastos com o pessoal\" no suma el renglón (0.435452 contra 2.727319, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer que no afecta la carga: El cuadro b44 solo muestra 30/06/2022 con varias columnas; se tomó 'Rédito do período' y no hay comparativo 2021 (L1174-L1181)."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
+   "suma": 0.395487,
+   "objetivo": 0.164889
+  },
+  {
+   "renglon": "Gastos com o pessoal",
+   "suma": 0.435452,
+   "objetivo": 2.727319
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
+   "suma": 0.395487,
+   "objetivo": 0.164889
+  },
+  {
+   "renglon": "Gastos com o pessoal",
+   "suma": 0.435452,
+   "objetivo": 2.727319
+  }
+ ],
+ "totales": {
+  "ingresos": 5.38383,
+  "gastos": 5.265457,
+  "financiero": -0.089125,
+  "impuesto": -0.040338,
+  "resultadoImpreso": -0.011091,
+  "resultadoParaCargar": -0.011091,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Venda de bens",
+   "lado": "ingreso",
+   "M": 0.259505,
+   "pagina": 30,
+   "linea": 1146,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Publicidade",
+   "lado": "ingreso",
+   "M": 0.591394,
+   "pagina": 30,
+   "linea": 1148,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de serviços\""
+  },
+  {
+   "etiqueta": "Bilhetes Jogos",
+   "lado": "ingreso",
+   "M": 0.034833,
+   "pagina": 30,
+   "linea": 1149,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de serviços\""
+  },
+  {
+   "etiqueta": "Cessao direitos televisivos",
+   "lado": "ingreso",
+   "M": 0.6,
+   "pagina": 30,
+   "linea": 1150,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de serviços\""
+  },
+  {
+   "etiqueta": "Gold Pass/Cativos/Camarotes",
+   "lado": "ingreso",
+   "M": 0.050374,
+   "pagina": 30,
+   "linea": 1151,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de serviços\""
+  },
+  {
+   "etiqueta": "UEFA",
+   "lado": "ingreso",
+   "M": 0.16283,
+   "pagina": 31,
+   "linea": 1178,
+   "origen": "nota que desglosa \"Subsídio à Exploração\""
+  },
+  {
+   "etiqueta": "Inst. Apoio às PMI",
+   "lado": "ingreso",
+   "M": 0.000898,
+   "pagina": 31,
+   "linea": 1180,
+   "origen": "nota que desglosa \"Subsídio à Exploração\""
+  },
+  {
+   "etiqueta": "Jogos Placard",
+   "lado": "ingreso",
+   "M": 0.023626,
+   "pagina": 43,
+   "linea": 1686,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Distribuição de lucros dos jogos e apostas on-line",
+   "lado": "ingreso",
+   "M": 0.247871,
+   "pagina": 43,
+   "linea": 1687,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Premios de Participação Taça Liga",
+   "lado": "ingreso",
+   "M": 0.0075,
+   "pagina": 43,
+   "linea": 1688,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Premios Taça de Portugal",
+   "lado": "ingreso",
+   "M": 0.003252,
+   "pagina": 43,
+   "linea": 1689,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Subsídio de deslocação",
+   "lado": "ingreso",
+   "M": 0.000635,
+   "pagina": 43,
+   "linea": 1690,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Mecanismo de apoio à descida",
+   "lado": "ingreso",
+   "M": 0.113741,
+   "pagina": 43,
+   "linea": 1691,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Mecanismo Solidariedade",
+   "lado": "ingreso",
+   "M": 0.036657,
+   "pagina": 43,
+   "linea": 1693,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Transferências",
+   "lado": "ingreso",
+   "M": 3.15,
+   "pagina": 43,
+   "linea": 1694,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Fundo de Apoio Tesousararia",
+   "lado": "ingreso",
+   "M": 0.025,
+   "pagina": 43,
+   "linea": 1695,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Apoio à Contratação de ARDs",
+   "lado": "ingreso",
+   "M": 0.005,
+   "pagina": 43,
+   "linea": 1696,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Descontos de Pronto Pagamento",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 43,
+   "linea": 1698,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Correções relativas a periodos anteriores",
+   "lado": "ingreso",
+   "M": 0.00625,
+   "pagina": 43,
+   "linea": 1701,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Insc. P. Equipas",
+   "lado": "ingreso",
+   "M": 0.00625,
+   "pagina": 43,
+   "linea": 1702,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Quotas Grupo Desportivo de Chaves",
+   "lado": "ingreso",
+   "M": 0.052216,
+   "pagina": 43,
+   "linea": 1703,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "ingreso",
+   "M": 0.005998,
+   "pagina": 43,
+   "linea": 1704,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "gasto",
+   "M": 0.164889,
+   "pagina": 12,
+   "linea": 436,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Trabalhos Especializados",
+   "lado": "gasto",
+   "M": 1.313101,
+   "pagina": 42,
+   "linea": 1641,
+   "origen": "nota que desglosa \"Fornecimento e serviços externos\" > desglose de \"Serviços Especializados\""
+  },
+  {
+   "etiqueta": "Publicidade e Propaganda",
+   "lado": "gasto",
+   "M": 0.015402,
+   "pagina": 42,
+   "linea": 1642,
+   "origen": "nota que desglosa \"Fornecimento e serviços externos\" > desglose de \"Serviços Especializados\""
+  },
+  {
+   "etiqueta": "Vigilância e Segurança",
+   "lado": "gasto",
+   "M": 0.048617,
+   "pagina": 42,
+   "linea": 1643,
+   "origen": "nota que desglosa \"Fornecimento e serviços externos\" > desglose de \"Serviços Especializados\""
+  },
+  {
+   "etiqueta": "Honorários",
+   "lado": "gasto",
+   "M": 0.052529,
+   "pagina": 42,
+   "linea": 1644,
+   "origen": "nota que desglosa \"Fornecimento e serviços externos\" > desglose de \"Serviços Especializados\""
+  },
+  {
+   "etiqueta": "Conservação e Reparação",
+   "lado": "gasto",
+   "M": 0.08274,
+   "pagina": 42,
+   "linea": 1646,
+   "origen": "nota que desglosa \"Fornecimento e serviços externos\" > desglose de \"Serviços Especializados\""
+  },
+  {
+   "etiqueta": "Serviços Bancários",
+   "lado": "gasto",
+   "M": 0.003486,
+   "pagina": 42,
+   "linea": 1647,
+   "origen": "nota que desglosa \"Fornecimento e serviços externos\" > desglose de \"Serviços Especializados\""
+  },
+  {
+   "etiqueta": "Materiais",
+   "lado": "gasto",
+   "M": 0.016736,
+   "pagina": 42,
+   "linea": 1648,
+   "origen": "nota que desglosa \"Fornecimento e serviços externos\""
+  },
+  {
+   "etiqueta": "Energia e Fluidos",
+   "lado": "gasto",
+   "M": 0.054337,
+   "pagina": 42,
+   "linea": 1649,
+   "origen": "nota que desglosa \"Fornecimento e serviços externos\""
+  },
+  {
+   "etiqueta": "Deslocações e Estadas",
+   "lado": "gasto",
+   "M": 0.084192,
+   "pagina": 42,
+   "linea": 1650,
+   "origen": "nota que desglosa \"Fornecimento e serviços externos\""
+  },
+  {
+   "etiqueta": "Serviços Diversos",
+   "lado": "gasto",
+   "M": 0.124524,
+   "pagina": 42,
+   "linea": 1651,
+   "origen": "nota que desglosa \"Fornecimento e serviços externos\""
+  },
+  {
+   "etiqueta": "Gastos com o pessoal",
+   "lado": "gasto",
+   "M": 2.727319,
+   "pagina": 12,
+   "linea": 438,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outras imparidades",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 12,
+   "linea": 439,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos Indiretos",
+   "lado": "gasto",
+   "M": 0.001295,
+   "pagina": 44,
+   "linea": 1729,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Taxas",
+   "lado": "gasto",
+   "M": 0.002987,
+   "pagina": 44,
+   "linea": 1730,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Abates de Ativos Intangíveis",
+   "lado": "gasto",
+   "M": 0.000701,
+   "pagina": 44,
+   "linea": 1731,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Correcções relativas a ex. anterior",
+   "lado": "gasto",
+   "M": 0.095098,
+   "pagina": 44,
+   "linea": 1732,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Quotização",
+   "lado": "gasto",
+   "M": 0.001899,
+   "pagina": 44,
+   "linea": 1733,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Insuficiencia estimativa imposto",
+   "lado": "gasto",
+   "M": 0.000039,
+   "pagina": 44,
+   "linea": 1735,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Diferença de Câmbio Desfavorável",
+   "lado": "financiero",
+   "M": 0.00016,
+   "pagina": 44,
+   "linea": 1736,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Multas e Penalidades",
+   "lado": "gasto",
+   "M": 0.018257,
+   "pagina": 44,
+   "linea": 1737,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.000034,
+   "pagina": 44,
+   "linea": 1738,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "lado": "gasto",
+   "M": 0.457116,
+   "pagina": 12,
+   "linea": 443,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e gastos similares suportados",
+   "M": -0.089125,
+   "linea": 446
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": -0.040338,
+   "linea": 448
+  }
+ ]
+}

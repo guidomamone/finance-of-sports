@@ -1,0 +1,159 @@
+{
+ "pdf": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf",
+ "md": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.md",
+ "generado": "2026-10-15T22:48:04.457Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "e5b7eaa"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.6645352591003757e-15
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 9.926602,
+  "gastos": 17.314147,
+  "financiero": -0.931493,
+  "impuesto": 1.649761,
+  "resultadoImpreso": -6.669278,
+  "resultadoParaCargar": -6.669278,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Vendas e serviços prestados",
+   "lado": "ingreso",
+   "M": 4.424268,
+   "pagina": 14,
+   "linea": 584,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0.219358,
+   "pagina": 14,
+   "linea": 585,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros rendimentos",
+   "lado": "ingreso",
+   "M": 5.282976,
+   "pagina": 14,
+   "linea": 588,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fornecimentos e serviços externos",
+   "lado": "gasto",
+   "M": 3.886821,
+   "pagina": 14,
+   "linea": 586,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos com o pessoal",
+   "lado": "gasto",
+   "M": 10.608358,
+   "pagina": 14,
+   "linea": 587,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros gastos",
+   "lado": "gasto",
+   "M": 0.618006,
+   "pagina": 14,
+   "linea": 589,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "lado": "gasto",
+   "M": 2.200963,
+   "pagina": 14,
+   "linea": 591,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e gastos similares suportados",
+   "M": -0.931493,
+   "linea": 593
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": 1.649761,
+   "linea": 595
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "1cf60adb3d33915a1a2bef881e4a63fd5847b996",
+  "rango": [
+   581,
+   599
+  ],
+  "lineasCargadas": [
+   584,
+   585,
+   588,
+   586,
+   587,
+   589,
+   591,
+   593,
+   595
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 581 a 599 del .md):\nL581: |  Rendimentos e Gastos | Notas | Períodos  |   |\nL582: | --- | --- | --- | --- |\nL583: |   |   |  2023 / 2024 | 2022 / 2023  |\nL584: |  Vendas e serviços prestados | 22 | 4 424 268,14 | 4 381 907,20  |\nL585: |  Subsídios à exploração | 24 | 219 357,91 | 167 592,00  |\nL586: |  Fornecimentos e serviços externos | 32 | (3 886 821,10) | (3 682 602,27)  |\nL587: |  Gastos com o pessoal | 30 | (10 608 357,65) | (10 896 141,03)  |\nL588: |  Outros rendimentos | 25 / 32 | 5 282 975,74 | 1 558 871,12  |\nL589: |  Outros gastos | 25 / 32 | (618 005,71) | (2 006 729,13)  |\nL590: |  **Resultado antes de depreciações, gastos de financiamento e impostos** |  | **(5 186 582,67)** | **(10 477 102,11)**  |\nL591: |  Gastos/reversões de depreciação e de amortização | 8 / 9 / 32 | (2 200 962,59) | (2 369 649,13)  |\nL592: |  **Resultado operacional (antes de gastos de financiamento e impostos)** |  | **(7 387 545,26)** | **(12 846 751,24)**  |\nL593: |  Juros e gastos similares suportados | 32 | (931 493,06) | (620 118,75)  |\nL594: |  **Resultado antes de impostos** |  | **(8 319 038,32)** | **(13 466 869,99)**  |\nL595: |  Imposto sobre o rendimento do período | 27 | 1 649 760,57 | (18 544,50)  |\nL596: |  **Resultado líquido do período** |  | **(6 669 277,75)** | **(13 485 414,49)**  |\nL598: |  Resultado das actividades descontinuadas (líquido de impostos) incluído no resultado líquido do período |  |  |   |\nL599: | --- | --- | --- | --- |\n\nLO QUE SE CARGA:\n- ingreso · \"Vendas e serviços prestados\" · 4.424268 · L584\n- ingreso · \"Subsídios à exploração\" · 0.219358 · L585\n- ingreso · \"Outros rendimentos\" · 5.282976 · L588\n- gasto · \"Fornecimentos e serviços externos\" · 3.886821 · L586\n- gasto · \"Gastos com o pessoal\" · 10.608358 · L587\n- gasto · \"Outros gastos\" · 0.618006 · L589\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 2.200963 · L591\n- financiero · \"Juros e gastos similares suportados\" · -0.931493 · L593\n- impuesto · \"Imposto sobre o rendimento do período\" · 1.649761 · L595"
+ }
+}

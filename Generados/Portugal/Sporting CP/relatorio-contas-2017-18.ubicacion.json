@@ -1,0 +1,990 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2017-18.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2017-18.md",
+ "mdSha1": "bbf0c1b0b15444ad806d93ef3a14460882d66417",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T21:27:26.248Z",
+ "bloques": {
+  "b1": {
+   "pagina": 8,
+   "lineas": [
+    131,
+    137
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    191,
+    196
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    211,
+    235
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    239,
+    269
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 20,
+   "lineas": [
+    555,
+    576
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 21,
+   "lineas": [
+    595,
+    603
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 22,
+   "lineas": [
+    628,
+    635
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 23,
+   "lineas": [
+    656,
+    664
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 24,
+   "lineas": [
+    683,
+    688
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 25,
+   "lineas": [
+    700,
+    706
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 29,
+   "lineas": [
+    801,
+    805
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 31,
+   "lineas": [
+    874,
+    887
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 32,
+   "lineas": [
+    894,
+    926
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 33,
+   "lineas": [
+    939,
+    952
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 40,
+   "lineas": [
+    1259,
+    1266
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 45,
+   "lineas": [
+    1425,
+    1428
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 55,
+   "lineas": [
+    1844,
+    1854
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 59,
+   "lineas": [
+    1989,
+    1994
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 60,
+   "lineas": [
+    2017,
+    2022
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 74,
+   "lineas": [
+    2492,
+    2532
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 75,
+   "lineas": [
+    2543,
+    2566
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 76,
+   "lineas": [
+    2578,
+    2584
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 77,
+   "lineas": [
+    2596,
+    2609
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 78,
+   "lineas": [
+    2620,
+    2653
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 79,
+   "lineas": [
+    2674,
+    2677
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 84,
+   "lineas": [
+    2801,
+    2820
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 86,
+   "lineas": [
+    2884,
+    2890
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 99,
+   "lineas": [
+    3284,
+    3293
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 99,
+   "lineas": [
+    3299,
+    3304
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 99,
+   "lineas": [
+    3310,
+    3323
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 100,
+   "lineas": [
+    3338,
+    3347
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 100,
+   "lineas": [
+    3351,
+    3360
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 101,
+   "lineas": [
+    3379,
+    3393
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 101,
+   "lineas": [
+    3397,
+    3407
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 102,
+   "lineas": [
+    3422,
+    3428
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 102,
+   "lineas": [
+    3434,
+    3440
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 103,
+   "lineas": [
+    3455,
+    3465
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 103,
+   "lineas": [
+    3483,
+    3488
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 104,
+   "lineas": [
+    3501,
+    3506
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 104,
+   "lineas": [
+    3512,
+    3521
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 104,
+   "lineas": [
+    3529,
+    3533
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 105,
+   "lineas": [
+    3554,
+    3566
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 106,
+   "lineas": [
+    3577,
+    3589
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 106,
+   "lineas": [
+    3597,
+    3611
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 107,
+   "lineas": [
+    3637,
+    3644
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 107,
+   "lineas": [
+    3648,
+    3654
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 108,
+   "lineas": [
+    3669,
+    3673
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 108,
+   "lineas": [
+    3677,
+    3695
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 109,
+   "lineas": [
+    3702,
+    3720
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 109,
+   "lineas": [
+    3724,
+    3733
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 110,
+   "lineas": [
+    3752,
+    3756
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 110,
+   "lineas": [
+    3760,
+    3768
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 110,
+   "lineas": [
+    3772,
+    3789
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 111,
+   "lineas": [
+    3805,
+    3820
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 112,
+   "lineas": [
+    3843,
+    3849
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 113,
+   "lineas": [
+    3858,
+    3913
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 114,
+   "lineas": [
+    3930,
+    3932
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 114,
+   "lineas": [
+    3938,
+    3942
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 114,
+   "lineas": [
+    3946,
+    3959
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 115,
+   "lineas": [
+    3966,
+    3979
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 116,
+   "lineas": [
+    4004,
+    4008
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 116,
+   "lineas": [
+    4012,
+    4019
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 116,
+   "lineas": [
+    4027,
+    4032
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 117,
+   "lineas": [
+    4041,
+    4070
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 117,
+   "lineas": [
+    4074,
+    4080
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 118,
+   "lineas": [
+    4091,
+    4096
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 118,
+   "lineas": [
+    4104,
+    4111
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 119,
+   "lineas": [
+    4124,
+    4141
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 119,
+   "lineas": [
+    4153,
+    4162
+   ],
+   "tipo": "tabla"
+  },
+  "b70": {
+   "pagina": 121,
+   "lineas": [
+    4202,
+    4211
+   ],
+   "tipo": "tabla"
+  },
+  "b71": {
+   "pagina": 121,
+   "lineas": [
+    4215,
+    4220
+   ],
+   "tipo": "tabla"
+  },
+  "b72": {
+   "pagina": 121,
+   "lineas": [
+    4230,
+    4234
+   ],
+   "tipo": "tabla"
+  },
+  "b73": {
+   "pagina": 123,
+   "lineas": [
+    4271,
+    4276
+   ],
+   "tipo": "tabla"
+  },
+  "b74": {
+   "pagina": 123,
+   "lineas": [
+    4292,
+    4298
+   ],
+   "tipo": "tabla"
+  },
+  "b75": {
+   "pagina": 124,
+   "lineas": [
+    4313,
+    4321
+   ],
+   "tipo": "tabla"
+  },
+  "b76": {
+   "pagina": 124,
+   "lineas": [
+    4331,
+    4335
+   ],
+   "tipo": "tabla"
+  },
+  "b77": {
+   "pagina": 125,
+   "lineas": [
+    4348,
+    4365
+   ],
+   "tipo": "tabla"
+  },
+  "b78": {
+   "pagina": 126,
+   "lineas": [
+    4384,
+    4388
+   ],
+   "tipo": "tabla"
+  },
+  "b79": {
+   "pagina": 126,
+   "lineas": [
+    4394,
+    4406
+   ],
+   "tipo": "tabla"
+  },
+  "b80": {
+   "pagina": 126,
+   "lineas": [
+    4410,
+    4417
+   ],
+   "tipo": "tabla"
+  },
+  "b81": {
+   "pagina": 127,
+   "lineas": [
+    4428,
+    4444
+   ],
+   "tipo": "tabla"
+  },
+  "b82": {
+   "pagina": 127,
+   "lineas": [
+    4452,
+    4460
+   ],
+   "tipo": "tabla"
+  },
+  "b83": {
+   "pagina": 127,
+   "lineas": [
+    4464,
+    4470
+   ],
+   "tipo": "tabla"
+  },
+  "b84": {
+   "pagina": 128,
+   "lineas": [
+    4491,
+    4502
+   ],
+   "tipo": "tabla"
+  },
+  "b85": {
+   "pagina": 129,
+   "lineas": [
+    4515,
+    4525
+   ],
+   "tipo": "tabla"
+  },
+  "b86": {
+   "pagina": 129,
+   "lineas": [
+    4531,
+    4553
+   ],
+   "tipo": "tabla"
+  },
+  "b87": {
+   "pagina": 130,
+   "lineas": [
+    4562,
+    4567
+   ],
+   "tipo": "tabla"
+  },
+  "b88": {
+   "pagina": 131,
+   "lineas": [
+    4578,
+    4629
+   ],
+   "tipo": "tabla"
+  },
+  "b89": {
+   "pagina": 132,
+   "lineas": [
+    4642,
+    4649
+   ],
+   "tipo": "tabla"
+  },
+  "b90": {
+   "pagina": 132,
+   "lineas": [
+    4657,
+    4663
+   ],
+   "tipo": "tabla"
+  },
+  "b91": {
+   "pagina": 132,
+   "lineas": [
+    4669,
+    4672
+   ],
+   "tipo": "tabla"
+  },
+  "b92": {
+   "pagina": 133,
+   "lineas": [
+    4683,
+    4703
+   ],
+   "tipo": "tabla"
+  },
+  "b93": {
+   "pagina": 134,
+   "lineas": [
+    4736,
+    4758
+   ],
+   "tipo": "tabla"
+  },
+  "b94": {
+   "pagina": 135,
+   "lineas": [
+    4767,
+    4802
+   ],
+   "tipo": "tabla"
+  },
+  "b95": {
+   "pagina": 136,
+   "lineas": [
+    4851,
+    4856
+   ],
+   "tipo": "tabla"
+  },
+  "b96": {
+   "pagina": 137,
+   "lineas": [
+    4867,
+    4878
+   ],
+   "tipo": "tabla"
+  },
+  "b97": {
+   "pagina": 137,
+   "lineas": [
+    4886,
+    4891
+   ],
+   "tipo": "tabla"
+  },
+  "b98": {
+   "pagina": 138,
+   "lineas": [
+    4904,
+    4914
+   ],
+   "tipo": "tabla"
+  },
+  "b99": {
+   "pagina": 138,
+   "lineas": [
+    4918,
+    4927
+   ],
+   "tipo": "tabla"
+  },
+  "b100": {
+   "pagina": 138,
+   "lineas": [
+    4933,
+    4937
+   ],
+   "tipo": "tabla"
+  },
+  "b101": {
+   "pagina": 139,
+   "lineas": [
+    4946,
+    4953
+   ],
+   "tipo": "tabla"
+  },
+  "b102": {
+   "pagina": 139,
+   "lineas": [
+    4961,
+    4965
+   ],
+   "tipo": "tabla"
+  },
+  "b103": {
+   "pagina": 140,
+   "lineas": [
+    4997,
+    5000
+   ],
+   "tipo": "tabla"
+  },
+  "b104": {
+   "pagina": 140,
+   "lineas": [
+    5010,
+    5013
+   ],
+   "tipo": "tabla"
+  },
+  "b105": {
+   "pagina": 141,
+   "lineas": [
+    5038,
+    5052
+   ],
+   "tipo": "tabla"
+  },
+  "b106": {
+   "pagina": 142,
+   "lineas": [
+    5061,
+    5071
+   ],
+   "tipo": "tabla"
+  },
+  "b107": {
+   "pagina": 142,
+   "lineas": [
+    5079,
+    5085
+   ],
+   "tipo": "tabla"
+  },
+  "b108": {
+   "pagina": 143,
+   "lineas": [
+    5098,
+    5109
+   ],
+   "tipo": "tabla"
+  },
+  "b109": {
+   "pagina": 143,
+   "lineas": [
+    5115,
+    5119
+   ],
+   "tipo": "tabla"
+  },
+  "b110": {
+   "pagina": 143,
+   "lineas": [
+    5125,
+    5131
+   ],
+   "tipo": "tabla"
+  },
+  "b111": {
+   "pagina": 144,
+   "lineas": [
+    5142,
+    5149
+   ],
+   "tipo": "tabla"
+  },
+  "b112": {
+   "pagina": 144,
+   "lineas": [
+    5157,
+    5172
+   ],
+   "tipo": "tabla"
+  },
+  "b113": {
+   "pagina": 145,
+   "lineas": [
+    5205,
+    5220
+   ],
+   "tipo": "tabla"
+  },
+  "b114": {
+   "pagina": 146,
+   "lineas": [
+    5227,
+    5243
+   ],
+   "tipo": "tabla"
+  },
+  "b115": {
+   "pagina": 155,
+   "lineas": [
+    5491,
+    5493
+   ],
+   "tipo": "tabla"
+  },
+  "b116": {
+   "pagina": 156,
+   "lineas": [
+    5503,
+    5506
+   ],
+   "tipo": "tabla"
+  },
+  "b117": {
+   "pagina": 157,
+   "lineas": [
+    5516,
+    5519
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b21"
+ ],
+ "notas_ingresos": [
+  "b28",
+  "b29",
+  "b30",
+  "b31",
+  "b32",
+  "b42"
+ ],
+ "notas_gastos": [
+  "b33",
+  "b34",
+  "b35",
+  "b37",
+  "b39",
+  "b40",
+  "b41",
+  "b45",
+  "b46"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado de la Demonstração dos Resultados: \"EUR'000 30.Jun.18\"",
+ "moneda": "EUR",
+ "columna_ejercicio": "EUR'000 30.Jun.18",
+ "columna_anterior": "EUR'000 30.Jun.17",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de venta de direitos desportivos por jugador al 30-06-2018 (b43), dado que b42 ya da el total de la categoría?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Venda de direitos desportivos",
+   "texto": "b43 es detalle por jugador; el total de la venta ya figura en b42.",
+   "bloques": [
+    "b43",
+    "b42"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas individuales de Sporting Clube de Portugal - Futebol SAD (no hay consolidado en el índice). Estado de resultados en b21 (pág. 75). Notas: 2 vendas e prestações (b28, desglosado en b29 TV y b30 bilheteira), 3 outros rendimentos (b31, con b32 competições europeias), 4 FSE (b33, b34 subcontratos, b35 comissões), 5 pessoal (b37), 6 provisões (b39), 7 outros gastos (b40), 8 amortizações plantel (b41), 9 transações jogadores (b42), 10 resultados financeiros (b45, b46). Excluidos: análisis del informe de gestión (b6-b9), cuadros por jugador (b43, b44), balance, flujos y patrimonio."
+}

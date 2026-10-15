@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Famalicão/relatorio-contas-2023-24.md",
+ "clave": "fbc1825c97b03219d1711df0dcf98f22201efd6c",
+ "generado": "2026-10-15T21:55:41.842Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado cubre todos los renglones del estado para 30-Jun-24: Vendas e serviços prestados (L694), Fornecimentos e serviços externos (L698), Gastos com o pessoal (L699) y Outros gastos (L703) se cargan abiertos por sus notas. Las partes suman: ingresos de nota 5,702337; FSE 3,660672; pessoal 14,284863; outros gastos 0,738679. Provisões aparece como gasto negativo, es decir, una reversión de 35.100. Los subtotales (L704, L706, L708, L710) no se cargan. No hay problemas."
+ }
+}

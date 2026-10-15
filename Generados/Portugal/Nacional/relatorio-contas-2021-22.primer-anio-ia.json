@@ -1,0 +1,71 @@
+{
+ "md": "Clubes/Portugal/Nacional/relatorio-contas-2021-22.md",
+ "clave": "fced86e7ca34043181799871ec3b95be6f6ea6d4",
+ "generado": "2026-10-15T21:56:17.170Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [
+   {
+    "linea": 130,
+    "motivo": "Vendas e serviços prestados 2022 (782.474) no se carga; las partes L882-L888 suman ~4,83 M, que es el importe de 2021."
+   },
+   {
+    "linea": 131,
+    "motivo": "Subsídios à exploração 2022 (1.078.060) no se carga; las partes L750-L755 suman ~1,76 M, que es el importe de 2021."
+   },
+   {
+    "linea": 132,
+    "motivo": "FSE 2022 (1.038.043) no se carga; las partes L774-L790 suman ~1,78 M, que es el importe de 2021."
+   },
+   {
+    "linea": 133,
+    "motivo": "Gastos com o pessoal 2022 (3.450.249) no se carga; las partes L828-L844 suman ~4,95 M, que es el importe de 2021."
+   },
+   {
+    "linea": 134,
+    "motivo": "Provisiones 2022: una reversión de +988.064 (ingreso) no se carga; se cargó la cifra de 2021."
+   },
+   {
+    "linea": 135,
+    "motivo": "Outros rendimentos 2022 (1.448.769) no se carga; las partes L801-L811 suman ~2,15 M, que es el importe de 2021."
+   },
+   {
+    "linea": 136,
+    "motivo": "Outros gastos 2022 (453.517) no se carga; las partes L860-L864 suman ~0,61 M, que es el importe de 2021."
+   },
+   {
+    "linea": 138,
+    "motivo": "Depreciaciones 2022 (119.845) no se cargan; se cargó la cifra de 2021."
+   },
+   {
+    "linea": 142,
+    "motivo": "El impuesto 2022 (+324.990, ingreso) no se carga; se cargó la cifra de 2021."
+   }
+  ],
+  "sobran": [
+   {
+    "linea": 134,
+    "motivo": "1,08901 es la cifra de 2021, no la del ejercicio."
+   },
+   {
+    "linea": 138,
+    "motivo": "0,176808 es la cifra de 2021."
+   },
+   {
+    "linea": 140,
+    "motivo": "Los intereses de -0,003857 son de 2021; en 2022 el renglón está vacío."
+   },
+   {
+    "linea": 142,
+    "motivo": "-0,00949 es el impuesto de 2021."
+   },
+   {
+    "linea": 888,
+    "motivo": "Las aperturas de nota (ventas, subsidios, FSE, personal, otros) corresponden al año anterior."
+   }
+  ],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Toda la carga corresponde a la columna 30-jun-21: suma 121.032, que es el resultado de 2021, no el de 2022 (-439.297). Hay que recargar todo con la columna 2022. En 2022 las provisiones (+988.064) y el impuesto (+324.990) son ingresos."
+ }
+}

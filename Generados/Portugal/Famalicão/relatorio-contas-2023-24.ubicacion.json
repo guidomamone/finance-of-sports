@@ -1,0 +1,287 @@
+{
+ "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2023-24.pdf",
+ "md": "Clubes/Portugal/Famalicão/relatorio-contas-2023-24.md",
+ "mdSha1": "1517ad94f22734691f5ed3fd26c7e4d12392f697",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T19:18:42.881Z",
+ "bloques": {
+  "b1": {
+   "pagina": 19,
+   "lineas": [
+    389,
+    397
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 24,
+   "lineas": [
+    543,
+    556
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 25,
+   "lineas": [
+    604,
+    611
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 26,
+   "lineas": [
+    633,
+    671
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 27,
+   "lineas": [
+    692,
+    710
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 28,
+   "lineas": [
+    739,
+    774
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 29,
+   "lineas": [
+    802,
+    815
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 29,
+   "lineas": [
+    823,
+    835
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 32,
+   "lineas": [
+    949,
+    955
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 36,
+   "lineas": [
+    1140,
+    1144
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 37,
+   "lineas": [
+    1170,
+    1187
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 37,
+   "lineas": [
+    1197,
+    1208
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 38,
+   "lineas": [
+    1224,
+    1230
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 38,
+   "lineas": [
+    1236,
+    1241
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 38,
+   "lineas": [
+    1249,
+    1257
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 38,
+   "lineas": [
+    1261,
+    1267
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 39,
+   "lineas": [
+    1279,
+    1285
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 39,
+   "lineas": [
+    1291,
+    1302
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 39,
+   "lineas": [
+    1310,
+    1319
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 39,
+   "lineas": [
+    1325,
+    1333
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 40,
+   "lineas": [
+    1371,
+    1377
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 41,
+   "lineas": [
+    1403,
+    1408
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 41,
+   "lineas": [
+    1416,
+    1419
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 42,
+   "lineas": [
+    1453,
+    1466
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 42,
+   "lineas": [
+    1478,
+    1485
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 43,
+   "lineas": [
+    1507,
+    1518
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 43,
+   "lineas": [
+    1530,
+    1538
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 44,
+   "lineas": [
+    1570,
+    1576
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 44,
+   "lineas": [
+    1584,
+    1589
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 44,
+   "lineas": [
+    1591,
+    1600
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 45,
+   "lineas": [
+    1628,
+    1632
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 45,
+   "lineas": [
+    1644,
+    1646
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b24"
+ ],
+ "notas_gastos": [
+  "b25",
+  "b26",
+  "b27",
+  "b28"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30-Jun-24",
+ "columna_anterior": "30-Jun-23",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de la SAD (b5, pág. 27, en euros); el documento no muestra estados consolidados. Notas elegidas: ventas y servicios prestados (b24), costo de mercaderías vendidas (b25), FSE (b26), gastos de personal (b27) y otros gastos (b28). No aparece en el índice una nota de transacciones de derechos de jugadores, ni de otros ingresos o subsidios con tabla."
+}

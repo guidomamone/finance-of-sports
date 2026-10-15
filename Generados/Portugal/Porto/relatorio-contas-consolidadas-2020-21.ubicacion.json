@@ -1,0 +1,291 @@
+{
+ "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.pdf",
+ "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.md",
+ "mdSha1": "eeb84dcfb6c479f7881988335ea941afe48c704e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T20:34:06.734Z",
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    116,
+    120
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    124,
+    127
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    131,
+    138
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    301,
+    311
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 13,
+   "lineas": [
+    375,
+    383
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 19,
+   "lineas": [
+    483,
+    501
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 22,
+   "lineas": [
+    543,
+    570
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 35,
+   "lineas": [
+    817,
+    873
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 36,
+   "lineas": [
+    885,
+    911
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 37,
+   "lineas": [
+    925,
+    954
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 38,
+   "lineas": [
+    962,
+    998
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 43,
+   "lineas": [
+    1130,
+    1136
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 61,
+   "lineas": [
+    1710,
+    1723
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 61,
+   "lineas": [
+    1727,
+    1740
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 62,
+   "lineas": [
+    1760,
+    1773
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 63,
+   "lineas": [
+    1797,
+    1804
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 64,
+   "lineas": [
+    1818,
+    1824
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 64,
+   "lineas": [
+    1832,
+    1834
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 64,
+   "lineas": [
+    1836,
+    1839
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 70,
+   "lineas": [
+    1977,
+    1990
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 85,
+   "lineas": [
+    2348,
+    2357
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 88,
+   "lineas": [
+    2407,
+    2411
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 99,
+   "lineas": [
+    2671,
+    2684
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 100,
+   "lineas": [
+    2714,
+    2731
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 102,
+   "lineas": [
+    2773,
+    2779
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 107,
+   "lineas": [
+    2917,
+    2920
+   ],
+   "tipo": "texto"
+  },
+  "b27": {
+   "pagina": 110,
+   "lineas": [
+    2983,
+    2986
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 110,
+   "lineas": [
+    2988,
+    2994
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 110,
+   "lineas": [
+    2998,
+    3003
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 110,
+   "lineas": [
+    3005,
+    3009
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 110,
+   "lineas": [
+    3011,
+    3015
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b9"
+ ],
+ "notas_ingresos": [
+  "b23",
+  "b24",
+  "b25"
+ ],
+ "notas_gastos": [
+  "b24"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "La demonstração consolidada dos resultados (pág. 36) imprime importes completos, p. ej. 'Vendas e serviços prestados 152 414 460'; no hay leyenda de miles en ese cuadro.",
+ "moneda": "EUR",
+ "columna_ejercicio": "30 junho 2021",
+ "columna_anterior": "30 junho 2020",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga los cuadros del relatório de gestão 'Rendimentos operacionais' (b4) y 'Gastos operacionais' (b5), en miles de euros?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Vendas e serviços prestados",
+   "texto": "Son cuadros de gestión en miles que reagrupan rubros; las notas 27-29 que abren ventas, FSE y personal no aparecen en el índice.",
+   "bloques": [
+    "b4",
+    "b5"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento consolidado (Demonstrações Consolidadas). Estado: b9 (pág. 36), en euros. b6 es un resumen de gestión en miles, no se usa. Notas elegidas: b23 (nota 30 Outros rendimentos), b24 (nota 33 transações de passes, ingresos y gastos), b25 (nota 34 juros obtidos). Las notas 27, 28, 29, 31 no figuran en el índice de bloques."
+}

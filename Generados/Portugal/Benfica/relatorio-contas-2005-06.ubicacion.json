@@ -1,0 +1,251 @@
+{
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.md",
+ "mdSha1": "910f1ca6b2e1d192530fbcc3a07a85c6d6480ddd",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T18:24:50.705Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    118,
+    122
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    126,
+    130
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    134,
+    135
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    288,
+    317
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    337,
+    349
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    357,
+    369
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    605,
+    646
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    660,
+    696
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 20,
+   "lineas": [
+    706,
+    744
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    757,
+    770
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 21,
+   "lineas": [
+    776,
+    787
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 25,
+   "lineas": [
+    942,
+    956
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 25,
+   "lineas": [
+    958,
+    970
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 26,
+   "lineas": [
+    995,
+    999
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 26,
+   "lineas": [
+    1009,
+    1017
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 29,
+   "lineas": [
+    1111,
+    1114
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 30,
+   "lineas": [
+    1143,
+    1150
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 30,
+   "lineas": [
+    1160,
+    1172
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 30,
+   "lineas": [
+    1176,
+    1183
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 31,
+   "lineas": [
+    1194,
+    1200
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 31,
+   "lineas": [
+    1206,
+    1215
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 31,
+   "lineas": [
+    1219,
+    1227
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 33,
+   "lineas": [
+    1290,
+    1325
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 34,
+   "lineas": [
+    1343,
+    1349
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 38,
+   "lineas": [
+    1538,
+    1542
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 38,
+   "lineas": [
+    1548,
+    1552
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 38,
+   "lineas": [
+    1556,
+    1562
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "EUR",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El documento solo contiene el ejercicio 2005/2006 (cerrado el 31.07.06) y no el que cierra el 31.07.07?",
+   "propuesta": "sí",
+   "tema": "cuadro-de-otro-anio",
+   "renglon": "",
+   "texto": "Todos los estados (b9 DR por naturezas, b10 por funções) tienen columnas 2005/2006 y 2004/2005; el ejercicio pedido 2006/2007 no aparece.",
+   "bloques": [
+    "b9",
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El informe es de 2005/2006 (cierre 31-07-2006). El ejercicio pedido (cierre 2006-07-31 según la fecha) podría corresponder a 2005/2006 si la fecha pedida es literal: en ese caso el estado sería b9 (DR por naturezas, valores em Euros, individual SAD) con notas b18 (prestações de serviços), b19-b22 (resultados financeiros y extraordinarios), b5 (proveitos operacionais en mEuros). Como la fecha 2006-07-31 coincide con el cierre 31.07.06, revisar: si se confirma, cargar b9 con columna 2005/2006."
+}

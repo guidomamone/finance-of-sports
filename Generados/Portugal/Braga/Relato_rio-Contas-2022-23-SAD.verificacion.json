@@ -1,0 +1,675 @@
+{
+ "pdf": "Clubes/Portugal/Braga/Relato_rio-Contas-2022-23-SAD.pdf",
+ "md": "Clubes/Portugal/Braga/Relato_rio-Contas-2022-23-SAD.md",
+ "generado": "2026-10-15T21:55:00.412Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "a5c350a"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.000001999999998503199
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 77.20163 en este documento y 77.20163 en relatorio-contas-2023-24.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 51.747048 en relatorio-contas-2021-22.pdf y 51.747048 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (4.193753 contra 0.641787, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Imparidade de inventários (perdas/reversões)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar que no afecta la carga: Son reclasificaciones de gestión en miles de euros que repiten la información de las notas 15-23 en unidades.",
+  "duda de localizar que no afecta la carga: b36 abre el CMV en inventario inicial, compras y regularizaciones; es un desglose poco útil por categoría."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
+   "suma": 4.193753,
+   "objetivo": 0.641787
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
+   "suma": 4.193753,
+   "objetivo": 0.641787
+  }
+ ],
+ "totales": {
+  "ingresos": 77.20163,
+  "gastos": 55.315895,
+  "financiero": -1.100941,
+  "impuesto": -0.408128,
+  "resultadoImpreso": 20.376664,
+  "resultadoParaCargar": 20.376664,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "M": 0.810277,
+   "pagina": 117,
+   "linea": 3222,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Receita de bilheteira",
+   "lado": "ingreso",
+   "M": 0.666063,
+   "pagina": 117,
+   "linea": 3225,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Pacotes corporate",
+   "lado": "ingreso",
+   "M": 1.84856,
+   "pagina": 117,
+   "linea": 3226,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Direitos de transmissões",
+   "lado": "ingreso",
+   "M": 8.6,
+   "pagina": 117,
+   "linea": 3227,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Publicidade / Patrocínios",
+   "lado": "ingreso",
+   "M": 3.125944,
+   "pagina": 117,
+   "linea": 3228,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "ingreso",
+   "M": 0.159459,
+   "pagina": 117,
+   "linea": 3229,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0.260715,
+   "pagina": 70,
+   "linea": 1755,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Participação em competições europeias",
+   "lado": "ingreso",
+   "M": 10.640282,
+   "pagina": 125,
+   "linea": 3429,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Participação em competições nacionais",
+   "lado": "ingreso",
+   "M": 0.511405,
+   "pagina": 125,
+   "linea": 3430,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Rendimentos com alienações de direitos de atletas",
+   "lado": "ingreso",
+   "M": 47.727645,
+   "pagina": 125,
+   "linea": 3431,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Outros ganhos em operações com direitos de atletas",
+   "lado": "ingreso",
+   "M": 1.025,
+   "pagina": 125,
+   "linea": 3432,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Empréstimo de atletas",
+   "lado": "ingreso",
+   "M": 0.366667,
+   "pagina": 125,
+   "linea": 3433,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Cedência de atletas a seleções nacionais",
+   "lado": "ingreso",
+   "M": 0.377086,
+   "pagina": 125,
+   "linea": 3434,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Ganhos em rescisões de contratos",
+   "lado": "ingreso",
+   "M": 0.04798,
+   "pagina": 125,
+   "linea": 3435,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Mecanismo de solidariedade e direitos de formação",
+   "lado": "ingreso",
+   "M": 0.277083,
+   "pagina": 125,
+   "linea": 3436,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Receitas de apostas desportivas",
+   "lado": "ingreso",
+   "M": 0.345878,
+   "pagina": 125,
+   "linea": 3437,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Indemnizações",
+   "lado": "ingreso",
+   "M": 0.057458,
+   "pagina": 125,
+   "linea": 3438,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "ingreso",
+   "M": 0.354128,
+   "pagina": 125,
+   "linea": 3439,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "gasto",
+   "M": 0.641787,
+   "pagina": 70,
+   "linea": 1756,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Trabalhos especializados",
+   "lado": "gasto",
+   "M": 2.932905,
+   "pagina": 119,
+   "linea": 3269,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\""
+  },
+  {
+   "etiqueta": "Gastos com aquisição de atletas",
+   "lado": "gasto",
+   "M": 2.303395,
+   "pagina": 119,
+   "linea": 3270,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\""
+  },
+  {
+   "etiqueta": "Despesas com provas",
+   "lado": "gasto",
+   "M": 0.409528,
+   "pagina": 119,
+   "linea": 3272,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\""
+  },
+  {
+   "etiqueta": "Inscrições e registos",
+   "lado": "gasto",
+   "M": 0.124218,
+   "pagina": 119,
+   "linea": 3273,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\""
+  },
+  {
+   "etiqueta": "Vigilância e segurança",
+   "lado": "gasto",
+   "M": 0.837509,
+   "pagina": 119,
+   "linea": 3274,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\""
+  },
+  {
+   "etiqueta": "Honorários",
+   "lado": "gasto",
+   "M": 0.911895,
+   "pagina": 119,
+   "linea": 3275,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\""
+  },
+  {
+   "etiqueta": "Conservação e reparação",
+   "lado": "gasto",
+   "M": 0.095107,
+   "pagina": 119,
+   "linea": 3276,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\""
+  },
+  {
+   "etiqueta": "Serviços bancários",
+   "lado": "gasto",
+   "M": 0.071298,
+   "pagina": 119,
+   "linea": 3277,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\""
+  },
+  {
+   "etiqueta": "Ferramentas e utensílios de desgaste rápido",
+   "lado": "gasto",
+   "M": 0.089331,
+   "pagina": 119,
+   "linea": 3279,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\""
+  },
+  {
+   "etiqueta": "Equipamento e material desportivo",
+   "lado": "gasto",
+   "M": 0.968258,
+   "pagina": 119,
+   "linea": 3280,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.134364,
+   "pagina": 119,
+   "linea": 3281,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\""
+  },
+  {
+   "etiqueta": "Electricidade",
+   "lado": "gasto",
+   "M": 0.397119,
+   "pagina": 119,
+   "linea": 3283,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\""
+  },
+  {
+   "etiqueta": "Combustíveis",
+   "lado": "gasto",
+   "M": 0.339602,
+   "pagina": 119,
+   "linea": 3284,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\""
+  },
+  {
+   "etiqueta": "Água",
+   "lado": "gasto",
+   "M": 0.07304,
+   "pagina": 119,
+   "linea": 3285,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\""
+  },
+  {
+   "etiqueta": "Deslocações e estadas",
+   "lado": "gasto",
+   "M": 2.56311,
+   "pagina": 119,
+   "linea": 3286,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Corporate (catering)",
+   "lado": "gasto",
+   "M": 0.681322,
+   "pagina": 119,
+   "linea": 3287,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Rendas / Direitos Exploração",
+   "lado": "gasto",
+   "M": 1.082189,
+   "pagina": 119,
+   "linea": 3289,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\""
+  },
+  {
+   "etiqueta": "Comunicação",
+   "lado": "gasto",
+   "M": 0.089773,
+   "pagina": 119,
+   "linea": 3290,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\""
+  },
+  {
+   "etiqueta": "Royalties",
+   "lado": "gasto",
+   "M": 0.24,
+   "pagina": 119,
+   "linea": 3291,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 0.085231,
+   "pagina": 119,
+   "linea": 3292,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\""
+  },
+  {
+   "etiqueta": "Contencioso e notariado",
+   "lado": "gasto",
+   "M": 0.092353,
+   "pagina": 119,
+   "linea": 3293,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\""
+  },
+  {
+   "etiqueta": "Limpeza, higiene e conforto",
+   "lado": "gasto",
+   "M": 0.077686,
+   "pagina": 119,
+   "linea": 3294,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\""
+  },
+  {
+   "etiqueta": "Pessoal do SCB ao serviço da SAD",
+   "lado": "gasto",
+   "M": 0.517931,
+   "pagina": 119,
+   "linea": 3295,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\""
+  },
+  {
+   "etiqueta": "Remuneração da Comissão Executiva",
+   "lado": "gasto",
+   "M": 0.594944,
+   "pagina": 123,
+   "linea": 3368,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Senhas de presença",
+   "lado": "gasto",
+   "M": 0.0675,
+   "pagina": 123,
+   "linea": 3369,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Atletas",
+   "lado": "gasto",
+   "M": 12.891965,
+   "pagina": 123,
+   "linea": 3371,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Treinadores",
+   "lado": "gasto",
+   "M": 1.633797,
+   "pagina": 123,
+   "linea": 3372,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Staff Geral",
+   "lado": "gasto",
+   "M": 2.26497,
+   "pagina": 123,
+   "linea": 3373,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Prémios de desempenho",
+   "lado": "gasto",
+   "M": 3.858115,
+   "pagina": 123,
+   "linea": 3374,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Rescisão de contratos",
+   "lado": "gasto",
+   "M": 0.309706,
+   "pagina": 123,
+   "linea": 3375,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Indemnizações",
+   "lado": "gasto",
+   "M": 0.190924,
+   "pagina": 123,
+   "linea": 3376,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Encargos com remunerações",
+   "lado": "gasto",
+   "M": 1.709492,
+   "pagina": 123,
+   "linea": 3377,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Seguro de acidentes de trabalho",
+   "lado": "gasto",
+   "M": 2.528086,
+   "pagina": 123,
+   "linea": 3378,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Outros gastos com pessoal",
+   "lado": "gasto",
+   "M": 1.673434,
+   "pagina": 123,
+   "linea": 3379,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Imparidade de inventários (perdas/reversões)",
+   "lado": "gasto",
+   "M": 0.152748,
+   "pagina": 70,
+   "linea": 1759,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Provisões (aumentos/reduções)",
+   "lado": "gasto",
+   "M": 1.8096,
+   "pagina": 70,
+   "linea": 1760,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos",
+   "lado": "gasto",
+   "M": 0.055799,
+   "pagina": 129,
+   "linea": 3503,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Abates",
+   "lado": "gasto",
+   "M": 0.447131,
+   "pagina": 129,
+   "linea": 3504,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Direitos de preferência",
+   "lado": "gasto",
+   "M": 0.1,
+   "pagina": 129,
+   "linea": 3505,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Empréstimo de atletas",
+   "lado": "gasto",
+   "M": 0.1,
+   "pagina": 129,
+   "linea": 3506,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Direitos de formação e mecanismo de solidariedade",
+   "lado": "gasto",
+   "M": 0.114162,
+   "pagina": 129,
+   "linea": 3507,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Gastos com transações atletas",
+   "lado": "gasto",
+   "M": 0.2365,
+   "pagina": 129,
+   "linea": 3508,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Multas / Penalidades desportivas",
+   "lado": "gasto",
+   "M": 0.173215,
+   "pagina": 129,
+   "linea": 3509,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Protocolo Futebol Feminino",
+   "lado": "gasto",
+   "M": 0.6,
+   "pagina": 129,
+   "linea": 3510,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.151792,
+   "pagina": 129,
+   "linea": 3511,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Edifícios e outras construções",
+   "lado": "gasto",
+   "M": 0.410331,
+   "pagina": 130,
+   "linea": 3546,
+   "origen": "nota que desglosa \"Gastos/reversões de depreciação e de amortização\""
+  },
+  {
+   "etiqueta": "Equipamento básico",
+   "lado": "gasto",
+   "M": 0.197862,
+   "pagina": 130,
+   "linea": 3547,
+   "origen": "nota que desglosa \"Gastos/reversões de depreciação e de amortização\""
+  },
+  {
+   "etiqueta": "Equipamento de transporte",
+   "lado": "gasto",
+   "M": 0.327345,
+   "pagina": 130,
+   "linea": 3548,
+   "origen": "nota que desglosa \"Gastos/reversões de depreciação e de amortização\""
+  },
+  {
+   "etiqueta": "Equipamento administrativo",
+   "lado": "gasto",
+   "M": 0.025131,
+   "pagina": 130,
+   "linea": 3549,
+   "origen": "nota que desglosa \"Gastos/reversões de depreciação e de amortização\""
+  },
+  {
+   "etiqueta": "Plantel",
+   "lado": "gasto",
+   "M": 6.813736,
+   "pagina": 130,
+   "linea": 3552,
+   "origen": "nota que desglosa \"Gastos/reversões de depreciação e de amortização\""
+  },
+  {
+   "etiqueta": "Direitos de superfície",
+   "lado": "gasto",
+   "M": 0.005708,
+   "pagina": 130,
+   "linea": 3553,
+   "origen": "nota que desglosa \"Gastos/reversões de depreciação e de amortização\""
+  },
+  {
+   "etiqueta": "Outros ativos intangíveis",
+   "lado": "gasto",
+   "M": 0.112951,
+   "pagina": 130,
+   "linea": 3554,
+   "origen": "nota que desglosa \"Gastos/reversões de depreciação e de amortização\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e rendimentos similares obtidos",
+   "M": 0.347383,
+   "linea": 1768
+  },
+  {
+   "etiqueta": "Juros e gastos similares suportados",
+   "M": -1.448324,
+   "linea": 1769
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": -0.408128,
+   "linea": 1771
+  }
+ ]
+}

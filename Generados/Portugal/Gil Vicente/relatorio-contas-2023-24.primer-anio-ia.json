@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Gil Vicente/relatorio-contas-2023-24.md",
+ "clave": "1f69829a58e57bee62c955d3c097cbcf71357226",
+ "generado": "2026-10-15T21:55:58.124Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Todos los renglones del estado están cargados, directamente o abiertos por sus notas (ventas y servicios, subsidios, FSE, personal, otros ingresos y gastos, amortizaciones). Los renglones en cero (L812, L816, L821) no faltan. El impuesto L826 es positivo, un ingreso por impuesto, y está cargado con ese signo. Los subtotales no fueron cargados."
+ }
+}

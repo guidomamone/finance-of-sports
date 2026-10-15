@@ -1,0 +1,27 @@
+{
+ "pdf": "Clubes/Portugal/Arouca/relatorio-contas-2021-22.pdf",
+ "md": "Clubes/Portugal/Arouca/relatorio-contas-2021-22.md",
+ "mdSha1": "4e4d30da582d3dd91bc28d2811bd6e8fd6218cc2",
+ "modo": "escaneo",
+ "motivoModo": "el PDF no trae texto usable (17 números, 173 caracteres/pág): escaneo o texto roto",
+ "generado": "2026-10-15T18:16:35.440Z",
+ "fuentes": {
+  "7": "gemini",
+  "28": "gemini",
+  "29": "gemini",
+  "30": "gemini",
+  "31": "gemini"
+ },
+ "confirmados": 129,
+ "noConfirmados": [
+  {
+   "bloque": "b1",
+   "pagina": 7,
+   "linea": 199,
+   "numero": "1 006 894,08",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Vendas e serviços prestados | 9, 13 | 4 676 042,55 | 1 006 894,08 |"
+  }
+ ]
+}

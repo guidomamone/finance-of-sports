@@ -1,0 +1,41 @@
+{
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2020-21.pdf",
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2020-21.md",
+ "mdSha1": "0d2f371b488cf54310d65f13e71a10983c8412bf",
+ "modo": "digital",
+ "motivoModo": null,
+ "generado": "2026-10-15T18:26:03.917Z",
+ "fuentes": {
+  "96": "pdftotext",
+  "132": "pdftotext",
+  "133": "pdftotext",
+  "134": "pdftotext",
+  "135": "pdftotext",
+  "136": "pdftotext",
+  "137": "pdftotext",
+  "139": "pdftotext",
+  "140": "pdftotext",
+  "141": "pdftotext"
+ },
+ "confirmados": 183,
+ "noConfirmados": [
+  {
+   "bloque": "b95",
+   "pagina": 136,
+   "linea": 4830,
+   "numero": "20.04",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | 20.04.21 | 30.04.20  |"
+  },
+  {
+   "bloque": "b95",
+   "pagina": 136,
+   "linea": 4830,
+   "numero": "30.04",
+   "segundaLeyo": "3006",
+   "sinSegunda": false,
+   "texto": "|   | 20.04.21 | 30.04.20  |"
+  }
+ ]
+}

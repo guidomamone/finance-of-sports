@@ -1,0 +1,290 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.md",
+ "generado": "2026-10-15T21:55:08.268Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": null,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.pdf",
+   "campo": "cierre",
+   "valor": "2005-06-30",
+   "linea": null,
+   "motivo": "periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)",
+   "evidencia": ".md L17 relatório sobre o exercício findo em 30 de junho de 2005",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
+ "cola": [
+  "a4e2e8b",
+  "babc6b9",
+  "6cf3afe",
+  "a278d3b"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"(F)\" 100.237 cierra; además se suman 9 línea(s) fuera de ese total (134.425)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "\"(E)\" 45.567 cierra; además se suman 10 línea(s) fuera de ese total (133.723)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 234.662 - gastos 179.29 ± financiero 2.606 ± impuesto 0 no da el impreso 54.67",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Prestações de Serviços\" no suma el renglón (29.424 contra 29.815, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Custos e Perdas Extraordinários\" no suma el renglón (1.678 contra 0.839, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar que no afecta la carga: Es otra presentación del mismo resultado; se carga la DR por naturaleza (b6).",
+  "duda de extraer que no afecta la carga: Estado imprime 202 y b1 imprime 102 para 30 JUN 04; también O. Custos 384 vs 370 (L106 vs L413).",
+  "duda de extraer que no afecta la carga: L405 no trae importe; Remunerações + Outros ya suman 20 582."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Prestações de Serviços",
+   "suma": 29.424,
+   "objetivo": 29.815
+  },
+  {
+   "renglon": "Custos e Perdas Extraordinários",
+   "suma": 1.678,
+   "objetivo": 0.839
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Prestações de Serviços",
+   "suma": 29.424,
+   "objetivo": 29.815
+  },
+  {
+   "renglon": "Custos e Perdas Extraordinários",
+   "suma": 1.678,
+   "objetivo": 0.839
+  }
+ ],
+ "totales": {
+  "ingresos": 234.662,
+  "gastos": 179.29,
+  "financiero": 2.606,
+  "impuesto": 0,
+  "resultadoImpreso": 54.67,
+  "resultadoParaCargar": 54.67,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Prestações de Serviços",
+   "lado": "ingreso",
+   "M": 29.815,
+   "pagina": 18,
+   "linea": 402,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios à Exploração",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 18,
+   "linea": 403,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Proveitos Suplementares",
+   "lado": "ingreso",
+   "M": 3.074,
+   "pagina": 18,
+   "linea": 404,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros Proveitos e Ganhos Operacionais",
+   "lado": "ingreso",
+   "M": 1.299,
+   "pagina": 18,
+   "linea": 405,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(D)",
+   "lado": "ingreso",
+   "M": 34.655,
+   "pagina": 18,
+   "linea": 410,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "G. Imobilizações",
+   "lado": "ingreso",
+   "M": 64.981,
+   "pagina": 29,
+   "linea": 698,
+   "origen": "nota que desglosa \"Proveitos e Ganhos Extraordinários\""
+  },
+  {
+   "etiqueta": "Benef. Contratuais",
+   "lado": "ingreso",
+   "M": 0.176,
+   "pagina": 29,
+   "linea": 699,
+   "origen": "nota que desglosa \"Proveitos e Ganhos Extraordinários\""
+  },
+  {
+   "etiqueta": "Corr. Exer. Anteriores",
+   "lado": "ingreso",
+   "M": 0.266,
+   "pagina": 29,
+   "linea": 701,
+   "origen": "nota que desglosa \"Proveitos e Ganhos Extraordinários\""
+  },
+  {
+   "etiqueta": "O. P. Extraordinários",
+   "lado": "ingreso",
+   "M": 0.159,
+   "pagina": 29,
+   "linea": 702,
+   "origen": "nota que desglosa \"Proveitos e Ganhos Extraordinários\""
+  },
+  {
+   "etiqueta": "(F)",
+   "lado": "ingreso",
+   "M": 100.237,
+   "pagina": 18,
+   "linea": 423,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fornecimentos e Serviços Externos",
+   "lado": "gasto",
+   "M": 7.058,
+   "pagina": 18,
+   "linea": 402,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Remunerações",
+   "lado": "gasto",
+   "M": 19.716,
+   "pagina": 18,
+   "linea": 404,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.866,
+   "pagina": 18,
+   "linea": 406,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Corpóreo e Incorpóreo",
+   "lado": "gasto",
+   "M": 13.055,
+   "pagina": 18,
+   "linea": 409,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Provisões",
+   "lado": "gasto",
+   "M": 0.586,
+   "pagina": 18,
+   "linea": 410,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos",
+   "lado": "gasto",
+   "M": 0.08,
+   "pagina": 18,
+   "linea": 412,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros Custos e Perdas Operacionais",
+   "lado": "gasto",
+   "M": 1.228,
+   "pagina": 18,
+   "linea": 413,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(C)",
+   "lado": "gasto",
+   "M": 44.728,
+   "pagina": 18,
+   "linea": 417,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custos e Perdas Extraordinários",
+   "lado": "gasto",
+   "M": 0.839,
+   "pagina": 18,
+   "linea": 418,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(E)",
+   "lado": "gasto",
+   "M": 45.567,
+   "pagina": 18,
+   "linea": 419,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(G)",
+   "lado": "gasto",
+   "M": 45.567,
+   "pagina": 18,
+   "linea": 421,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Outros Juros e Proveitos Similares",
+   "M": 0.467,
+   "linea": 409
+  },
+  {
+   "etiqueta": "Juros e Custos Similares",
+   "M": 2.139,
+   "linea": 416
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o Rendimento do Exercício",
+   "M": 0,
+   "linea": 420
+  }
+ ]
+}

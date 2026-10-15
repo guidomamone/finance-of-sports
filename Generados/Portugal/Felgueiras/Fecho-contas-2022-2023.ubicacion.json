@@ -1,0 +1,310 @@
+{
+ "pdf": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.pdf",
+ "md": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md",
+ "mdSha1": "5039415ea73fbfa2326149518abc1b25e2fcbbc4",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T19:23:46.394Z",
+ "bloques": {
+  "b1": {
+   "pagina": 13,
+   "lineas": [
+    401,
+    404
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 15,
+   "lineas": [
+    426,
+    430
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 15,
+   "lineas": [
+    432,
+    437
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 15,
+   "lineas": [
+    445,
+    447
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 18,
+   "lineas": [
+    523,
+    554
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 19,
+   "lineas": [
+    568,
+    583
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 25,
+   "lineas": [
+    855,
+    861
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 25,
+   "lineas": [
+    884,
+    894
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 26,
+   "lineas": [
+    912,
+    920
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 26,
+   "lineas": [
+    924,
+    931
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 26,
+   "lineas": [
+    935,
+    943
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 27,
+   "lineas": [
+    962,
+    975
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 27,
+   "lineas": [
+    979,
+    994
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 27,
+   "lineas": [
+    998,
+    1002
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 28,
+   "lineas": [
+    1022,
+    1026
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 28,
+   "lineas": [
+    1046,
+    1052
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 28,
+   "lineas": [
+    1056,
+    1064
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 29,
+   "lineas": [
+    1083,
+    1088
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 29,
+   "lineas": [
+    1098,
+    1106
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 30,
+   "lineas": [
+    1124,
+    1131
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 30,
+   "lineas": [
+    1141,
+    1144
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 30,
+   "lineas": [
+    1149,
+    1159
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 32,
+   "lineas": [
+    1364,
+    1374
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 32,
+   "lineas": [
+    1382,
+    1392
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 33,
+   "lineas": [
+    1408,
+    1418
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 33,
+   "lineas": [
+    1426,
+    1433
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 33,
+   "lineas": [
+    1441,
+    1449
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 34,
+   "lineas": [
+    1464,
+    1475
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 34,
+   "lineas": [
+    1479,
+    1489
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 34,
+   "lineas": [
+    1493,
+    1499
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 34,
+   "lineas": [
+    1503,
+    1508
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 36,
+   "lineas": [
+    1566,
+    1592
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b21"
+ ],
+ "notas_gastos": [
+  "b32"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(montantes em euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "jun 2023",
+ "columna_anterior": "jun 2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de gastos con pessoal de la memoria (b1, pág. 13) por repetir el renglón del estado?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Gastos com o pessoal",
+   "texto": "b1 parece repetir el total de Gastos com Pessoal ya presente en b6 sin desglosarlo.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera el cuadro por actividad CAE 1 (b28/b29) y por mercado geográfico (b30/b31) porque solo repiten importes del estado?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "Vendas e serviços prestados",
+   "texto": "Una sola actividad y desglose geográfico que no abre categorías de ingresos o gastos.",
+   "bloques": [
+    "b28",
+    "b29",
+    "b30",
+    "b31"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados por naturezas de Futebol Clube Felgueiras Futebol SAD (individual), en euros. b21 desglosa Vendas e serviços prestados (prestação de serviços); b32 desglosa Fornecimentos e serviços externos. b25 es subsidios (cuadro de atribución) y b26 impuesto: no elegidos."
+}

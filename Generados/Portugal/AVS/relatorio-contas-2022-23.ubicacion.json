@@ -1,0 +1,285 @@
+{
+ "pdf": "Clubes/Portugal/AVS/relatorio-contas-2022-23.pdf",
+ "md": "Clubes/Portugal/AVS/relatorio-contas-2022-23.md",
+ "mdSha1": "d92694131e8057434ede3cd257fc80e5dc5f0f83",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T17:55:38.963Z",
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    158,
+    169
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 11,
+   "lineas": [
+    325,
+    360
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 12,
+   "lineas": [
+    378,
+    399
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    419,
+    441
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    457,
+    479
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    495,
+    538
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 17,
+   "lineas": [
+    568,
+    573
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 21,
+   "lineas": [
+    743,
+    751
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 22,
+   "lineas": [
+    771,
+    776
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 22,
+   "lineas": [
+    780,
+    785
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    793,
+    810
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 23,
+   "lineas": [
+    830,
+    846
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 23,
+   "lineas": [
+    850,
+    860
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 24,
+   "lineas": [
+    900,
+    908
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    926,
+    936
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    944,
+    949
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 25,
+   "lineas": [
+    957,
+    962
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 25,
+   "lineas": [
+    970,
+    981
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    1001,
+    1011
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 26,
+   "lineas": [
+    1019,
+    1028
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 27,
+   "lineas": [
+    1052,
+    1064
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 28,
+   "lineas": [
+    1094,
+    1100
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 28,
+   "lineas": [
+    1108,
+    1127
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    1141,
+    1155
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1161,
+    1167
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 29,
+   "lineas": [
+    1173,
+    1180
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 30,
+   "lineas": [
+    1202,
+    1213
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 30,
+   "lineas": [
+    1223,
+    1229
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 30,
+   "lineas": [
+    1235,
+    1247
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 31,
+   "lineas": [
+    1281,
+    1284
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b16",
+  "b18",
+  "b19",
+  "b20"
+ ],
+ "notas_gastos": [
+  "b14",
+  "b15",
+  "b17"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Unidade monetária Euro",
+ "moneda": "EUR",
+ "columna_ejercicio": "PERÍODOS 2022/23 (30.06.2023)",
+ "columna_anterior": "PERÍODOS 2021/22 (30.06.2022)",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Las columnas de 'Subsídios do Governo' (b20) rotuladas '2022/23' y '2020/21' corresponden en realidad a 2022/23 y 2021/22?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Reconhecidas como subsídios à exploração",
+   "texto": "El encabezado de b20 dice 2020/21 como año anterior, probablemente error de rótulo.",
+   "bloques": [
+    "b20"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados por naturezas individual de AVS Futebol SAD en b3 (euros). b1 es un resumen de gestión (3 ejercicios), no se carga. Notas: FSE b14, gastos de pessoal b15, outros rendimentos b16, outros gastos b17, juros b18, rédito b19, subsídios b20. Excluidos balance, flujos, patrimonio, activos fijos, impuestos y saldos."
+}

@@ -1,0 +1,911 @@
+{
+ "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
+ "generado": "2026-10-15T22:34:44.217Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (oliveirense-pt)"
+  },
+  {
+   "etapa": "año",
+   "motivo": "alta-club.mjs dice ejercicio 2025 y quien.mjs --quien (el que usa el registro) dice 2024"
+  },
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "7 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Prestação de serviços\" -> other_income 0.45; \"Liga Portuguesa de Futebol Profissional\" -> broadcasting 0.35; \"Fundo Infraestruturas - LPF\" -> other_income 0.6; \"Salários e ordenados\" -> wages_squad 0.7; \"Gastos com rescisão de contratos\" -> exceptional_items 0.5"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  }
+ ],
+ "avisos": [
+  "gastos: ningún total impreso igual a la suma de las líneas (-3.444962); queda la suma, verificada por el resultado del ejercicio",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "oliveirense-pt",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Venda de mercadorias",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.008868,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Prestação de serviços",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.141257,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 2,
+    "_conf": 0.45,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Federação Portuguesa de Futebol",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.004065,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Liga Portuguesa de Futebol Profissional",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.023905,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 2,
+    "_conf": 0.35,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Fundo Infraestruturas - LPF",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.037254,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Prémio Allianz Cup -LPF",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.008654,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subs. Deslocação - FPF",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.001224,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "UDO - Fundos Formação FIFA",
+    "normalizedCategory": "youth_football",
+    "amountNative": 0.060763,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Rendimentos suplementares",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.574802,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Descontos de pronto pagamento obtidos",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.000001,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outras",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.003995,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Custo das mercadorias vendidas e das matérias consumidas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.004274,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subcontratos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.026325,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Serviços especializados",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.684726,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Materiais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.038138,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Energia e fluidos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.050141,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Deslocações, estadas e transportes",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.229731,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Serviços diversos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.218521,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Salários e ordenados",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.622765,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 2,
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos com rescisão de contratos",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.122923,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Contribuições para a segurança social",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.141045,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 2,
+    "_conf": 0.65,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros gastos com o pessoal",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.257717,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Imparidade de dívidas a receber (perdas/reversões)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.03,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Impostos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.019071,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Descontos de pronto pagamento concedidos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.000001,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.07259,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos/reversões de depreciação e de amortização",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.049917,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2025-06-30",
+   "sourceId": "oliveirense-pt-relatorio-e-contas-202425",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0.004548,
+   "tax": -0.03774,
+   "extraRows": [
+    {
+     "label": "Juros e rendimentos similares obtidos",
+     "value": 0.149391
+    },
+    {
+     "label": "Juros e gastos similares suportados",
+     "value": -0.144843
+    },
+    {
+     "label": "Imposto sobre o rendimento do período",
+     "value": -0.03774
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 1.864788,
+   "officialTotalExpenses": 3.444962,
+   "officialPAT": -1.736289
+  },
+  "source": {
+   "id": "oliveirense-pt-relatorio-e-contas-202425",
+   "clubId": "oliveirense-pt",
+   "title": "Oliveirense — Relatorio-e-Contas-202425 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "oliveirense-pt",
+ "year": 2025,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 30,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Venda de mercadorias",
+   "page": 31,
+   "native": 0.008868,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 0.008868,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.008868
+  },
+  {
+   "label": "Prestação de serviços",
+   "page": 31,
+   "native": 1.141257,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 1.141257,
+   "cat": "other_income",
+   "conf": 0.45,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 1.141257
+  },
+  {
+   "label": "Federação Portuguesa de Futebol",
+   "page": 31,
+   "native": 0.004065,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
+   "signoFijo": 0.004065,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Vitória Guimarães), nota:subsidios a exploracao · Claude 2026-10-15 (subagente Sonnet, seguridad media-alta; revisado por Claude): fila de la nota de Subsídios [relatorio-contas-2024-25.md L1832-1834]",
+   "destino": "revenue",
+   "amountNative": 0.004065
+  },
+  {
+   "label": "Liga Portuguesa de Futebol Profissional",
+   "page": 31,
+   "native": 0.023905,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
+   "signoFijo": 0.023905,
+   "cat": "broadcasting",
+   "conf": 0.35,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 0.023905
+  },
+  {
+   "label": "Fundo Infraestruturas - LPF",
+   "page": 31,
+   "native": 0.037254,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
+   "signoFijo": 0.037254,
+   "cat": "other_income",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 0.037254
+  },
+  {
+   "label": "Prémio Allianz Cup -LPF",
+   "page": 31,
+   "native": 0.008654,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
+   "signoFijo": 0.008654,
+   "cat": "competition_bonus",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.008654
+  },
+  {
+   "label": "Subs. Deslocação - FPF",
+   "page": 31,
+   "native": 0.001224,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
+   "signoFijo": 0.001224,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.001224
+  },
+  {
+   "label": "UDO - Fundos Formação FIFA",
+   "page": 31,
+   "native": 0.060763,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
+   "signoFijo": 0.060763,
+   "cat": "youth_football",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.060763
+  },
+  {
+   "label": "Rendimentos suplementares",
+   "page": 36,
+   "native": 0.574802,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 0.574802,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.574802
+  },
+  {
+   "label": "Descontos de pronto pagamento obtidos",
+   "page": 36,
+   "native": 0.000001,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 0.000001,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.000001
+  },
+  {
+   "label": "Outras",
+   "page": 36,
+   "native": 0.003995,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 0.003995,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.003995
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "page": 40,
+   "native": 0.004274,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.004274,
+   "cat": "other_expenses",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.004274
+  },
+  {
+   "label": "Subcontratos",
+   "page": 36,
+   "native": 0.026325,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.026325,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.026325
+  },
+  {
+   "label": "Serviços especializados",
+   "page": 36,
+   "native": 0.684726,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.684726,
+   "cat": "admin_general_expense",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.684726
+  },
+  {
+   "label": "Materiais",
+   "page": 36,
+   "native": 0.038138,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.038138,
+   "cat": "admin_general_expense",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.038138
+  },
+  {
+   "label": "Energia e fluidos",
+   "page": 36,
+   "native": 0.050141,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.050141,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.050141
+  },
+  {
+   "label": "Deslocações, estadas e transportes",
+   "page": 36,
+   "native": 0.229731,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.229731,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.229731
+  },
+  {
+   "label": "Serviços diversos",
+   "page": 36,
+   "native": 0.218521,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.218521,
+   "cat": "other_expenses",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.218521
+  },
+  {
+   "label": "Salários e ordenados",
+   "page": 35,
+   "native": 1.622765,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
+   "signoFijo": 1.622765,
+   "cat": "wages_squad",
+   "conf": 0.7,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.622765
+  },
+  {
+   "label": "Gastos com rescisão de contratos",
+   "page": 35,
+   "native": 0.122923,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
+   "signoFijo": 0.122923,
+   "cat": "exceptional_items",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.122923
+  },
+  {
+   "label": "Contribuições para a segurança social",
+   "page": 35,
+   "native": 0.141045,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
+   "signoFijo": 0.141045,
+   "cat": "wages_squad",
+   "conf": 0.65,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.141045
+  },
+  {
+   "label": "Outros gastos com o pessoal",
+   "page": 35,
+   "native": 0.257717,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
+   "signoFijo": 0.257717,
+   "cat": "wages_squad",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.257717
+  },
+  {
+   "label": "Imparidade de dívidas a receber (perdas/reversões)",
+   "page": 40,
+   "native": 0.03,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.03,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.03
+  },
+  {
+   "label": "Impostos",
+   "page": 37,
+   "native": 0.019071,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Outros gastos\")",
+   "signoFijo": 0.019071,
+   "cat": "admin_general_expense",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.019071
+  },
+  {
+   "label": "Descontos de pronto pagamento concedidos",
+   "page": 37,
+   "native": 0.000001,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Outros gastos\")",
+   "signoFijo": 0.000001,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.000001
+  },
+  {
+   "label": "Outros",
+   "page": 37,
+   "native": 0.07259,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Outros gastos\")",
+   "signoFijo": 0.07259,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.07259
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização",
+   "page": 40,
+   "native": 0.049917,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.049917,
+   "cat": "depreciation",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.049917
+  },
+  {
+   "label": "Juros e rendimentos similares obtidos",
+   "page": null,
+   "native": 0.149391,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Juros e gastos similares suportados",
+   "page": null,
+   "native": -0.144843,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposto sobre o rendimento do período",
+   "page": null,
+   "native": -0.03774,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Estadio",
+   "lado": "ingreso"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Subsídios à exploração\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Gastos com o pessoal\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Outros gastos\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 1.864788,
+  "expSum": -3.444962,
+  "officialTotalRevenue": 1.864788,
+  "officialTotalExpenses": 3.444962,
+  "officialPAT": -1.736289,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -1.736289,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 1.864788
+  }
+ },
+ "liga": {
+  "valor": "pt-ligaportugal2",
+  "fuente": "roster cacheado de \"2024–25 Liga Portugal 2\" (tools/club-league-reference/pt.json), coincidencia exacta \"Oliveirense\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "contenido del .md (año más nuevo con fecha de cierre)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (56 de 56 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Portugal (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "oliveirense-pt-relatorio-e-contas-202425",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "pt-ligaportugal2",
+   "fuente": "roster cacheado de \"2024–25 Liga Portugal 2\" (tools/club-league-reference/pt.json), coincidencia exacta \"Oliveirense\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 5,
+  "lineasIngreso": 11,
+  "lineasGasto": 16,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

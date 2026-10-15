@@ -1,0 +1,292 @@
+{
+ "pdf": "Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2023-2024.pdf",
+ "md": "Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2023-2024.md",
+ "mdSha1": "700a72f05074c7e27d49d4596118a92ee0ce76e6",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T19:45:07.728Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    71,
+    79
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    92,
+    100
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    159,
+    201
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    218,
+    237
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    256,
+    298
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    316,
+    337
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    345,
+    366
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    690,
+    702
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    708,
+    720
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    739,
+    746
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 17,
+   "lineas": [
+    752,
+    765
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    784,
+    790
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    798,
+    802
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    829,
+    834
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 19,
+   "lineas": [
+    840,
+    844
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 19,
+   "lineas": [
+    854,
+    863
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 20,
+   "lineas": [
+    886,
+    896
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 20,
+   "lineas": [
+    902,
+    905
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 20,
+   "lineas": [
+    911,
+    915
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 21,
+   "lineas": [
+    934,
+    947
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 21,
+   "lineas": [
+    953,
+    961
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 22,
+   "lineas": [
+    982,
+    992
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 22,
+   "lineas": [
+    1000,
+    1008
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 23,
+   "lineas": [
+    1027,
+    1039
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 23,
+   "lineas": [
+    1045,
+    1050
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 23,
+   "lineas": [
+    1056,
+    1060
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 24,
+   "lineas": [
+    1077,
+    1081
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 24,
+   "lineas": [
+    1093,
+    1100
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 35,
+   "lineas": [
+    1463,
+    1466
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b19",
+  "b22",
+  "b26",
+  "b27"
+ ],
+ "notas_gastos": [
+  "b20",
+  "b21",
+  "b23",
+  "b24",
+  "b25"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Moneda: EUR (sin indicación de miles; resultado líquido de € 5 691,31 en el informe de gestión)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2023/2024",
+ "columna_anterior": "2022/2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga los cuadros por cuenta del informe de gestión (b1 gastos 62-69, b2 ingresos 71-79), que repiten los rubros del estado de resultados?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 y b2 (págs. 2-3) son resúmenes por cuenta SNC del informe de gestión, ya cubiertos por b4 y sus notas.",
+   "bloques": [
+    "b1",
+    "b2"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se acepta como individual el estado b4 aunque el archivo se titule 'Consolidado', dado que el balance b3 dice 'Balanço Individual'?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El nombre del archivo dice Consolidado pero b3 se titula 'Balanço Individual' y no se ve otro estado de resultados.",
+   "bloques": [
+    "b3",
+    "b4"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Solo hay un estado de resultados (b4, por naturaleza, SAD). El balance se titula individual pese al nombre del archivo. Notas: rédito (b19), otros rendimentos (b22), resultados financieros (b26), subsidios (b27); FSE (b20), personal (b21), otros gastos (b23), amortizaciones (b24), imparidades (b25). Impuesto b28 excluido (conciliación)."
+}

@@ -1,0 +1,270 @@
+{
+  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.md",
+  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.pdf",
+  "club": "sporting-cp",
+  "year": 2003,
+  "generatedAt": "2026-10-15T21:55:08.168Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Prestações de Serviços",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        17.607
+      ],
+      "glosa": "Prestación de servicios"
+    },
+    {
+      "label": "Subsídios à Exploração",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Proveitos Suplementares",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0.107
+      ],
+      "glosa": "Ingresos accesorios"
+    },
+    {
+      "label": "Outros Proveitos e Ganhos Operacionais",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0.198
+      ],
+      "glosa": "Otros ingresos y ganancias de explotación"
+    },
+    {
+      "label": "(D)",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        18.779
+      ],
+      "glosa": "(D)"
+    },
+    {
+      "label": "Ganhos em Imobiliz.",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        8.108
+      ],
+      "glosa": "Ganancias en inmovilizado"
+    },
+    {
+      "label": "Benefícios Contratuais",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.086
+      ],
+      "glosa": "Beneficios contractuales"
+    },
+    {
+      "label": "Redução de Provisões",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.139
+      ],
+      "glosa": "Reducción de provisiones"
+    },
+    {
+      "label": "Corr. R. Ex. Anterior.",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.005
+      ],
+      "glosa": "Corrección de resultados de ejercicios anteriores"
+    },
+    {
+      "label": "O Prov. e G. Extraord.",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.2
+      ],
+      "glosa": "Otros ingresos y ganancias extraordinarias"
+    },
+    {
+      "label": "(F)",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        27.316
+      ],
+      "glosa": "(F)"
+    },
+    {
+      "label": "Fornecimentos e Serviços Externos",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        8.174
+      ],
+      "glosa": "Suministros y servicios exteriores"
+    },
+    {
+      "label": "Remunerações",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        21.891
+      ],
+      "glosa": "Remuneraciones"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        1.101
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Corpóreo e Incorpóreo",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        16.936
+      ],
+      "glosa": "Material e intangible"
+    },
+    {
+      "label": "Provisões",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Provisiones"
+    },
+    {
+      "label": "Impostos",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0.102
+      ],
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Outros Custos e Perdas Operacionais",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0.914
+      ],
+      "glosa": "Otros gastos y pérdidas de explotación"
+    },
+    {
+      "label": "(C)",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        52.688
+      ],
+      "glosa": "(C)"
+    },
+    {
+      "label": "Donativos",
+      "lado": "expense",
+      "page": 31,
+      "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+      "values": [
+        0.012
+      ],
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "Perdas em Imobilizaç.",
+      "lado": "expense",
+      "page": 31,
+      "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+      "values": [
+        0.04
+      ],
+      "glosa": "Pérdidas en inmovilizado"
+    },
+    {
+      "label": "Multas e Penalidades",
+      "lado": "expense",
+      "page": 31,
+      "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+      "values": [
+        0.038
+      ],
+      "glosa": "Multas y sanciones"
+    },
+    {
+      "label": "Corr. R. Ex. Anterior.",
+      "lado": "expense",
+      "page": 31,
+      "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+      "values": [
+        0.104
+      ],
+      "glosa": "Corrección de resultados de ejercicios anteriores"
+    },
+    {
+      "label": "O. Custos P. Extraord.",
+      "lado": "expense",
+      "page": 31,
+      "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+      "values": [
+        1.731
+      ],
+      "glosa": "Otros gastos y pérdidas extraordinarias"
+    },
+    {
+      "label": "(E)",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        54.613
+      ],
+      "glosa": "(E)"
+    },
+    {
+      "label": "(G)",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        54.627
+      ],
+      "glosa": "(G)"
+    }
+  ]
+}

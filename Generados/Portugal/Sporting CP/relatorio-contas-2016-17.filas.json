@@ -1,0 +1,1457 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2016-17.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2016-17.md",
+ "mdSha1": "f1a428b1cda6afdc733cc1519b2e9b144a97d245",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T21:27:17.089Z",
+ "ubicacion": {
+  "estado": [
+   "b21"
+  ],
+  "notas_ingresos": [
+   "b29",
+   "b30",
+   "b31",
+   "b32",
+   "b33",
+   "b44"
+  ],
+  "notas_gastos": [
+   "b34",
+   "b35",
+   "b36",
+   "b38",
+   "b39",
+   "b41",
+   "b42",
+   "b43",
+   "b47"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b21",
+   "escala": "miles",
+   "evidencia": "EUR'000 30.Jun.17"
+  },
+  {
+   "bloque": "b29",
+   "escala": "miles",
+   "evidencia": "Euros'000 30.Jun.17"
+  },
+  {
+   "bloque": "b30",
+   "escala": "miles",
+   "evidencia": "Euros'000 30.Jun.17"
+  },
+  {
+   "bloque": "b31",
+   "escala": "miles",
+   "evidencia": "Euros'000 30.Jun.17"
+  },
+  {
+   "bloque": "b32",
+   "escala": "miles",
+   "evidencia": "Euros'000 30.Jun.17"
+  },
+  {
+   "bloque": "b33",
+   "escala": "miles",
+   "evidencia": "Euros'000 30.Jun.17"
+  },
+  {
+   "bloque": "b44",
+   "escala": "miles",
+   "evidencia": "Euros'000 30.Jun.17"
+  },
+  {
+   "bloque": "b34",
+   "escala": "miles",
+   "evidencia": "Euros'000 30.Jun.17"
+  },
+  {
+   "bloque": "b35",
+   "escala": "miles",
+   "evidencia": "Euros'000 30.Jun.17"
+  },
+  {
+   "bloque": "b36",
+   "escala": "miles",
+   "evidencia": "Euros'000 30.Jun.17"
+  },
+  {
+   "bloque": "b38",
+   "escala": "miles",
+   "evidencia": "Euros'000 30.Jun.17"
+  },
+  {
+   "bloque": "b39",
+   "escala": "no se sabe",
+   "evidencia": "Encabezado solo '30.Jun.17' sin escala; total 51.799 coincide con b38 en miles"
+  },
+  {
+   "bloque": "b41",
+   "escala": "miles",
+   "evidencia": "Euros'000 30.Jun.17"
+  },
+  {
+   "bloque": "b42",
+   "escala": "miles",
+   "evidencia": "Euros'000 30.Jun.17"
+  },
+  {
+   "bloque": "b43",
+   "escala": "miles",
+   "evidencia": "Euros'000 30.Jun.17"
+  },
+  {
+   "bloque": "b47",
+   "escala": "miles",
+   "evidencia": "Euros'000 30.Jun.17"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b21",
+   "linea": 2326,
+   "etiqueta": "Vendas e prestações de serviços",
+   "actual": "61.403",
+   "anterior": "56.100",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2327,
+   "etiqueta": "Outros rendimentos e ganhos",
+   "actual": "18.598",
+   "anterior": "12.650",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2328,
+   "etiqueta": "Rendimentos e ganhos operacionais sem transações com jogadores",
+   "actual": "80.001",
+   "anterior": "68.750",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2329,
+   "etiqueta": "Custo das mercadorias vendidas",
+   "actual": "(2.227)",
+   "anterior": "(2.247)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2330,
+   "etiqueta": "Fornecimentos e serviços externos",
+   "actual": "(18.120)",
+   "anterior": "(17.342)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2331,
+   "etiqueta": "Gastos com o pessoal",
+   "actual": "(63.998)",
+   "anterior": "(48.865)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2332,
+   "etiqueta": "Depreciações e amortizações excluindo plantel",
+   "actual": "(4.739)",
+   "anterior": "(4.378)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2333,
+   "etiqueta": "Provisões e perdas por imparidade excluindo plantel",
+   "actual": "(3.348)",
+   "anterior": "(3.051)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2334,
+   "etiqueta": "Outros gastos e perdas",
+   "actual": "(4.494)",
+   "anterior": "(2.611)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2335,
+   "etiqueta": "Gastos e perdas operacionais sem transações com jogadores",
+   "actual": "(96.926)",
+   "anterior": "(78.494)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2336,
+   "etiqueta": "Resultados operacionais sem transações com jogadores",
+   "actual": "(16.925)",
+   "anterior": "(9.744)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2337,
+   "etiqueta": "Amortizações e perdas de imparidade do plantel",
+   "actual": "(18.359)",
+   "anterior": "(9.332)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2338,
+   "etiqueta": "Rendimentos com transações com jogadores",
+   "actual": "92.997",
+   "anterior": "8.556",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2339,
+   "etiqueta": "Gastos com transações com jogadores",
+   "actual": "(15.089)",
+   "anterior": "(840)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2340,
+   "etiqueta": "Resultados operacionais das transações com jogadores",
+   "actual": "59.549",
+   "anterior": "(1.616)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2341,
+   "etiqueta": "Resultados operacionais (antes de outros gastos não recorrentes)",
+   "actual": "42.624",
+   "anterior": "(11.360)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2342,
+   "etiqueta": "Outros gastos não recorrentes",
+   "actual": "-",
+   "anterior": "(14.991)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2343,
+   "etiqueta": "Resultados operacionais",
+   "actual": "42.624",
+   "anterior": "(26.351)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2344,
+   "etiqueta": "Resultados financeiros",
+   "actual": "(7.427)",
+   "anterior": "(5.760)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2345,
+   "etiqueta": "Resultados antes de impostos",
+   "actual": "35.197",
+   "anterior": "(32.111)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2346,
+   "etiqueta": "Imposto sobre o rendimento",
+   "actual": "(4.660)",
+   "anterior": "206",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 2347,
+   "etiqueta": "Resultado líquido do exercício",
+   "actual": "30.537",
+   "anterior": "(31.905)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b29",
+   "linea": 3079,
+   "etiqueta": "Merchandising",
+   "actual": "3.937",
+   "anterior": "3.255",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e prestações de serviços"
+  },
+  {
+   "bloque": "b29",
+   "linea": 3080,
+   "etiqueta": "Vendas",
+   "actual": "3.937",
+   "anterior": "3.255",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e prestações de serviços"
+  },
+  {
+   "bloque": "b29",
+   "linea": 3081,
+   "etiqueta": "Direitos Televisivos",
+   "actual": "25.895",
+   "anterior": "24.809",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e prestações de serviços"
+  },
+  {
+   "bloque": "b29",
+   "linea": 3082,
+   "etiqueta": "Bilheteira e Bilhetes de Época",
+   "actual": "16.017",
+   "anterior": "14.198",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e prestações de serviços"
+  },
+  {
+   "bloque": "b29",
+   "linea": 3083,
+   "etiqueta": "Patrocínios e Publicidade",
+   "actual": "11.684",
+   "anterior": "9.921",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e prestações de serviços"
+  },
+  {
+   "bloque": "b29",
+   "linea": 3084,
+   "etiqueta": "Outros",
+   "actual": "3.871",
+   "anterior": "3.917",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e prestações de serviços"
+  },
+  {
+   "bloque": "b29",
+   "linea": 3085,
+   "etiqueta": "Prestação de serviços",
+   "actual": "57.467",
+   "anterior": "52.845",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e prestações de serviços"
+  },
+  {
+   "bloque": "b29",
+   "linea": 3086,
+   "etiqueta": "Total",
+   "actual": "61.403",
+   "anterior": "56.100",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e prestações de serviços"
+  },
+  {
+   "bloque": "b30",
+   "linea": 3099,
+   "etiqueta": "Contrato de transmissão de direitos televisivos com a PPTV, SA",
+   "actual": "23.075",
+   "anterior": "23.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Direitos Televisivos"
+  },
+  {
+   "bloque": "b30",
+   "linea": 3100,
+   "etiqueta": "Market Pool da Liga dos Campeões",
+   "actual": "2.820",
+   "anterior": "1.085",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Direitos Televisivos"
+  },
+  {
+   "bloque": "b30",
+   "linea": 3101,
+   "etiqueta": "Market Pool da Liga Europa",
+   "actual": "0",
+   "anterior": "724",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Direitos Televisivos"
+  },
+  {
+   "bloque": "b30",
+   "linea": 3102,
+   "etiqueta": "Total",
+   "actual": "25.895",
+   "anterior": "24.809",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Direitos Televisivos"
+  },
+  {
+   "bloque": "b31",
+   "linea": 3112,
+   "etiqueta": "Bilhetes de época (Gamebox)",
+   "actual": "5.628",
+   "anterior": "4.535",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Bilheteira e Bilhetes de Época"
+  },
+  {
+   "bloque": "b31",
+   "linea": 3113,
+   "etiqueta": "Bilheteira Liga Nacional",
+   "actual": "2.295",
+   "anterior": "2.536",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Bilheteira e Bilhetes de Época"
+  },
+  {
+   "bloque": "b31",
+   "linea": 3114,
+   "etiqueta": "Bilheteira UEFA",
+   "actual": "1.179",
+   "anterior": "725",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Bilheteira e Bilhetes de Época"
+  },
+  {
+   "bloque": "b31",
+   "linea": 3115,
+   "etiqueta": "Bilheteira Taça de Portugal",
+   "actual": "113",
+   "anterior": "297",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Bilheteira e Bilhetes de Época"
+  },
+  {
+   "bloque": "b31",
+   "linea": 3116,
+   "etiqueta": "Bilheteira Jogos particulares",
+   "actual": "278",
+   "anterior": "201",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Bilheteira e Bilhetes de Época"
+  },
+  {
+   "bloque": "b31",
+   "linea": 3117,
+   "etiqueta": "Bilheteira Taça da Liga",
+   "actual": "95",
+   "anterior": "36",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Bilheteira e Bilhetes de Época"
+  },
+  {
+   "bloque": "b31",
+   "linea": 3118,
+   "etiqueta": "Camarotes",
+   "actual": "4.230",
+   "anterior": "3.893",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Bilheteira e Bilhetes de Época"
+  },
+  {
+   "bloque": "b31",
+   "linea": 3119,
+   "etiqueta": "Business Seats",
+   "actual": "1.009",
+   "anterior": "710",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Bilheteira e Bilhetes de Época"
+  },
+  {
+   "bloque": "b31",
+   "linea": 3120,
+   "etiqueta": "Lugares de Leão e VIP",
+   "actual": "651",
+   "anterior": "648",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Bilheteira e Bilhetes de Época"
+  },
+  {
+   "bloque": "b31",
+   "linea": 3121,
+   "etiqueta": "Membros Fundadores",
+   "actual": "472",
+   "anterior": "472",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Bilheteira e Bilhetes de Época"
+  },
+  {
+   "bloque": "b31",
+   "linea": 3122,
+   "etiqueta": "Outros",
+   "actual": "67",
+   "anterior": "145",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Bilheteira e Bilhetes de Época"
+  },
+  {
+   "bloque": "b31",
+   "linea": 3123,
+   "etiqueta": "Total",
+   "actual": "16.017",
+   "anterior": "14.198",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Bilheteira e Bilhetes de Época"
+  },
+  {
+   "bloque": "b32",
+   "linea": 3138,
+   "etiqueta": "Participação nas Competições Europeias",
+   "actual": "14.942",
+   "anterior": "8.486",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos e ganhos"
+  },
+  {
+   "bloque": "b32",
+   "linea": 3139,
+   "etiqueta": "Participação nas Competições Nacionais",
+   "actual": "63",
+   "anterior": "33",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos e ganhos"
+  },
+  {
+   "bloque": "b32",
+   "linea": 3140,
+   "etiqueta": "Participação em Competições Particulares",
+   "actual": "-",
+   "anterior": "1.250",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos e ganhos"
+  },
+  {
+   "bloque": "b32",
+   "linea": 3141,
+   "etiqueta": "Cedência de jogadores",
+   "actual": "2.355",
+   "anterior": "727",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos e ganhos"
+  },
+  {
+   "bloque": "b32",
+   "linea": 3142,
+   "etiqueta": "Subsídios à exploração",
+   "actual": "204",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos e ganhos"
+  },
+  {
+   "bloque": "b32",
+   "linea": 3143,
+   "etiqueta": "Outros",
+   "actual": "1.034",
+   "anterior": "2.154",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos e ganhos"
+  },
+  {
+   "bloque": "b32",
+   "linea": 3144,
+   "etiqueta": "Total",
+   "actual": "18.598",
+   "anterior": "12.650",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos e ganhos"
+  },
+  {
+   "bloque": "b33",
+   "linea": 3150,
+   "etiqueta": "Apuramento para a fase de grupos da Liga dos Campeões",
+   "actual": "12.700",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Participação nas Competições Europeias"
+  },
+  {
+   "bloque": "b33",
+   "linea": 3151,
+   "etiqueta": "Apuramento para a fase de grupos da Liga Europa",
+   "actual": "-",
+   "anterior": "2.400",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Participação nas Competições Europeias"
+  },
+  {
+   "bloque": "b33",
+   "linea": 3152,
+   "etiqueta": "Participação no playoff da Liga dos Campeões",
+   "actual": "-",
+   "anterior": "3.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Participação nas Competições Europeias"
+  },
+  {
+   "bloque": "b33",
+   "linea": 3153,
+   "etiqueta": "Performance desportiva na fase de grupos da Liga dos Campeões",
+   "actual": "1.500",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Participação nas Competições Europeias"
+  },
+  {
+   "bloque": "b33",
+   "linea": 3154,
+   "etiqueta": "Performance desportiva na fase de grupos da Liga Europa",
+   "actual": "-",
+   "anterior": "1.450",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Participação nas Competições Europeias"
+  },
+  {
+   "bloque": "b33",
+   "linea": 3155,
+   "etiqueta": "Passagem às eliminatórias subsequentes da Liga Europa",
+   "actual": "-",
+   "anterior": "500",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Participação nas Competições Europeias"
+  },
+  {
+   "bloque": "b33",
+   "linea": 3156,
+   "etiqueta": "Outros prémios",
+   "actual": "742",
+   "anterior": "1.136",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Participação nas Competições Europeias"
+  },
+  {
+   "bloque": "b33",
+   "linea": 3157,
+   "etiqueta": "Total",
+   "actual": "14.942",
+   "anterior": "8.486",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Participação nas Competições Europeias"
+  },
+  {
+   "bloque": "b44",
+   "linea": 3367,
+   "etiqueta": "Venda de direitos desportivos",
+   "actual": "92.738",
+   "anterior": "8.472",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Rendimentos com transações com jogadores"
+  },
+  {
+   "bloque": "b44",
+   "linea": 3368,
+   "etiqueta": "Mecanismo de solidariedade/Compensação por formação",
+   "actual": "258",
+   "anterior": "84",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Rendimentos com transações com jogadores"
+  },
+  {
+   "bloque": "b44",
+   "linea": 3370,
+   "etiqueta": "Total",
+   "actual": "92.997",
+   "anterior": "8.556",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Rendimentos com transações com jogadores"
+  },
+  {
+   "bloque": "b44",
+   "linea": 3372,
+   "etiqueta": "Percentagem dos direitos económicos/mais valias",
+   "actual": "(13.243)",
+   "anterior": "(300)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com transações com jogadores"
+  },
+  {
+   "bloque": "b44",
+   "linea": 3373,
+   "etiqueta": "Comissões",
+   "actual": "(1.789)",
+   "anterior": "(525)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com transações com jogadores"
+  },
+  {
+   "bloque": "b44",
+   "linea": 3374,
+   "etiqueta": "Outros",
+   "actual": "(57)",
+   "anterior": "(15)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com transações com jogadores"
+  },
+  {
+   "bloque": "b44",
+   "linea": 3375,
+   "etiqueta": "Total",
+   "actual": "(15.089)",
+   "anterior": "(840)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos com transações com jogadores"
+  },
+  {
+   "bloque": "b44",
+   "linea": 3376,
+   "etiqueta": "Rendimentos/(Gastos) com transações de jogadores",
+   "actual": "77.908",
+   "anterior": "7.716",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b34",
+   "linea": 3176,
+   "etiqueta": "Subcontratos",
+   "actual": "6.227",
+   "anterior": "5.751",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b34",
+   "linea": 3177,
+   "etiqueta": "Organização e deslocações e estadias de jogos",
+   "actual": "1.447",
+   "anterior": "1.915",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b34",
+   "linea": 3178,
+   "etiqueta": "Comissões",
+   "actual": "2.090",
+   "anterior": "1.626",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b34",
+   "linea": 3179,
+   "etiqueta": "Honorários",
+   "actual": "1.183",
+   "anterior": "1.114",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b34",
+   "linea": 3180,
+   "etiqueta": "Trabalhos especializados",
+   "actual": "2.417",
+   "anterior": "2.291",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b34",
+   "linea": 3181,
+   "etiqueta": "Equipamentos Desportivos",
+   "actual": "667",
+   "anterior": "639",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b34",
+   "linea": 3182,
+   "etiqueta": "Combustíveis",
+   "actual": "530",
+   "anterior": "544",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b34",
+   "linea": 3183,
+   "etiqueta": "Publicidade e Propaganda",
+   "actual": "1.244",
+   "anterior": "1.279",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b34",
+   "linea": 3184,
+   "etiqueta": "Rendas e alugueres",
+   "actual": "444",
+   "anterior": "334",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b34",
+   "linea": 3185,
+   "etiqueta": "Conservação e reparação",
+   "actual": "342",
+   "anterior": "212",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b34",
+   "linea": 3186,
+   "etiqueta": "Seguros",
+   "actual": "584",
+   "anterior": "506",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b34",
+   "linea": 3187,
+   "etiqueta": "Outros",
+   "actual": "946",
+   "anterior": "1.131",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b34",
+   "linea": 3188,
+   "etiqueta": "Total",
+   "actual": "18.120",
+   "anterior": "17.342",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b35",
+   "linea": 3194,
+   "etiqueta": "Patrocínios e publicidade (nota 26)",
+   "actual": "341",
+   "anterior": "472",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Subcontratos"
+  },
+  {
+   "bloque": "b35",
+   "linea": 3195,
+   "etiqueta": "Manutenções",
+   "actual": "615",
+   "anterior": "454",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Subcontratos"
+  },
+  {
+   "bloque": "b35",
+   "linea": 3196,
+   "etiqueta": "Vigilância",
+   "actual": "566",
+   "anterior": "534",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Subcontratos"
+  },
+  {
+   "bloque": "b35",
+   "linea": 3197,
+   "etiqueta": "Limpeza",
+   "actual": "304",
+   "anterior": "278",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Subcontratos"
+  },
+  {
+   "bloque": "b35",
+   "linea": 3198,
+   "etiqueta": "Refeições",
+   "actual": "1.271",
+   "anterior": "1.325",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Subcontratos"
+  },
+  {
+   "bloque": "b35",
+   "linea": 3199,
+   "etiqueta": "Assistencia aos jogos",
+   "actual": "1.189",
+   "anterior": "1.102",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Subcontratos"
+  },
+  {
+   "bloque": "b35",
+   "linea": 3200,
+   "etiqueta": "Electricidade",
+   "actual": "895",
+   "anterior": "778",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Subcontratos"
+  },
+  {
+   "bloque": "b35",
+   "linea": 3201,
+   "etiqueta": "Outros",
+   "actual": "1.047",
+   "anterior": "809",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Subcontratos"
+  },
+  {
+   "bloque": "b35",
+   "linea": 3202,
+   "etiqueta": "Total",
+   "actual": "6.227",
+   "anterior": "5.751",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Subcontratos"
+  },
+  {
+   "bloque": "b36",
+   "linea": 3219,
+   "etiqueta": "Aquisição de jogadores",
+   "actual": "192",
+   "anterior": "607",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Comissões"
+  },
+  {
+   "bloque": "b36",
+   "linea": 3220,
+   "etiqueta": "Renovação de contratos de trabalho",
+   "actual": "979",
+   "anterior": "222",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Comissões"
+  },
+  {
+   "bloque": "b36",
+   "linea": 3221,
+   "etiqueta": "Cedência de jogadores",
+   "actual": "610",
+   "anterior": "218",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Comissões"
+  },
+  {
+   "bloque": "b36",
+   "linea": 3222,
+   "etiqueta": "Contratação da equipa técnica",
+   "actual": "0",
+   "anterior": "140",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Comissões"
+  },
+  {
+   "bloque": "b36",
+   "linea": 3223,
+   "etiqueta": "Organização de jogos",
+   "actual": "0",
+   "anterior": "75",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Comissões"
+  },
+  {
+   "bloque": "b36",
+   "linea": 3224,
+   "etiqueta": "Outras comissões",
+   "actual": "309",
+   "anterior": "364",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Comissões"
+  },
+  {
+   "bloque": "b36",
+   "linea": 3225,
+   "etiqueta": "Total",
+   "actual": "2.090",
+   "anterior": "1.626",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Comissões"
+  },
+  {
+   "bloque": "b38",
+   "linea": 3256,
+   "etiqueta": "Remuneração dos órgãos sociais",
+   "actual": "392",
+   "anterior": "410",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b38",
+   "linea": 3257,
+   "etiqueta": "Remuneração do pessoal",
+   "actual": "51.799",
+   "anterior": "39.945",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b38",
+   "linea": 3258,
+   "etiqueta": "Indemnizações",
+   "actual": "1.126",
+   "anterior": "243",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b38",
+   "linea": 3259,
+   "etiqueta": "Encargos com remunerações",
+   "actual": "5.262",
+   "anterior": "3.874",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b38",
+   "linea": 3260,
+   "etiqueta": "Gastos com benefícios pós-emprego (Nota 28)",
+   "actual": "360",
+   "anterior": "278",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b38",
+   "linea": 3261,
+   "etiqueta": "Seguros",
+   "actual": "4.834",
+   "anterior": "3.832",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b38",
+   "linea": 3262,
+   "etiqueta": "Outros",
+   "actual": "226",
+   "anterior": "283",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b38",
+   "linea": 3263,
+   "etiqueta": "Total",
+   "actual": "63.998",
+   "anterior": "48.865",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b39",
+   "linea": 3273,
+   "etiqueta": "Plantel e equipa técnica",
+   "actual": "48.384",
+   "anterior": "37.165",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Remuneração do pessoal"
+  },
+  {
+   "bloque": "b39",
+   "linea": 3274,
+   "etiqueta": "Outros",
+   "actual": "3.415",
+   "anterior": "2.780",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Remuneração do pessoal"
+  },
+  {
+   "bloque": "b39",
+   "linea": 3275,
+   "etiqueta": "Total",
+   "actual": "51.799",
+   "anterior": "39.945",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Remuneração do pessoal"
+  },
+  {
+   "bloque": "b41",
+   "linea": 3307,
+   "etiqueta": "Imparidade de clientes (Nota 14)",
+   "actual": "1.553",
+   "anterior": "314",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Provisões e perdas por imparidade excluindo plantel"
+  },
+  {
+   "bloque": "b41",
+   "linea": 3308,
+   "etiqueta": "Imparidade de inventários",
+   "actual": "29",
+   "anterior": "(83)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Provisões e perdas por imparidade excluindo plantel"
+  },
+  {
+   "bloque": "b41",
+   "linea": 3309,
+   "etiqueta": "Provisões para outros riscos e encargos (Nota 19)",
+   "actual": "1.765",
+   "anterior": "2.820",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Provisões e perdas por imparidade excluindo plantel"
+  },
+  {
+   "bloque": "b41",
+   "linea": 3310,
+   "etiqueta": "Total",
+   "actual": "3.348",
+   "anterior": "3.051",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Provisões e perdas por imparidade excluindo plantel"
+  },
+  {
+   "bloque": "b42",
+   "linea": 3318,
+   "etiqueta": "Cedência de jogadores de terceiros",
+   "actual": "2.171",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b42",
+   "linea": 3319,
+   "etiqueta": "Quotizações",
+   "actual": "266",
+   "anterior": "270",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b42",
+   "linea": 3320,
+   "etiqueta": "Impostos",
+   "actual": "289",
+   "anterior": "293",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b42",
+   "linea": 3321,
+   "etiqueta": "Multas e penalidades",
+   "actual": "195",
+   "anterior": "213",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b42",
+   "linea": 3322,
+   "etiqueta": "Prospecção de mercado",
+   "actual": "456",
+   "anterior": "391",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b42",
+   "linea": 3323,
+   "etiqueta": "Direitos de imagem",
+   "actual": "438",
+   "anterior": "914",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b42",
+   "linea": 3324,
+   "etiqueta": "Outros",
+   "actual": "679",
+   "anterior": "531",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b42",
+   "linea": 3325,
+   "etiqueta": "Total",
+   "actual": "4.494",
+   "anterior": "2.611",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos e perdas"
+  },
+  {
+   "bloque": "b43",
+   "linea": 3340,
+   "etiqueta": "Amortizações do exercício - Futebol profissional (Nota 12)",
+   "actual": "13.046",
+   "anterior": "8.157",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortizações e perdas de imparidade do plantel"
+  },
+  {
+   "bloque": "b43",
+   "linea": 3341,
+   "etiqueta": "Perdas por imparidade - Futebol profissional (Nota 12)",
+   "actual": "5.314",
+   "anterior": "1.175",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortizações e perdas de imparidade do plantel"
+  },
+  {
+   "bloque": "b43",
+   "linea": 3342,
+   "etiqueta": "Total",
+   "actual": "18.359",
+   "anterior": "9.332",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Amortizações e perdas de imparidade do plantel"
+  },
+  {
+   "bloque": "b47",
+   "linea": 3455,
+   "etiqueta": "Juros suportados com dívida financeira",
+   "actual": "(3.250)",
+   "anterior": "(2.963)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Resultados financeiros"
+  },
+  {
+   "bloque": "b47",
+   "linea": 3456,
+   "etiqueta": "Juros com cedência de créditos futuros - sem recurso",
+   "actual": "(753)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Resultados financeiros"
+  },
+  {
+   "bloque": "b47",
+   "linea": 3457,
+   "etiqueta": "Diferenças de câmbio",
+   "actual": "-",
+   "anterior": "(425)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Resultados financeiros"
+  },
+  {
+   "bloque": "b47",
+   "linea": 3458,
+   "etiqueta": "Actualização financeira de activos e passivos não correntes",
+   "actual": "(2.182)",
+   "anterior": "(2.560)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Resultados financeiros"
+  },
+  {
+   "bloque": "b47",
+   "linea": 3459,
+   "etiqueta": "Comissões bancárias",
+   "actual": "(525)",
+   "anterior": "(563)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Resultados financeiros"
+  },
+  {
+   "bloque": "b47",
+   "linea": 3460,
+   "etiqueta": "Outros ganhos e perdas de financiamento",
+   "actual": "(716)",
+   "anterior": "751",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Resultados financeiros"
+  },
+  {
+   "bloque": "b47",
+   "linea": 3461,
+   "etiqueta": "Total",
+   "actual": "(7.427)",
+   "anterior": "(5.760)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Resultados financeiros"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 2347,
+  "actual": "30.537",
+  "anterior": "(31.905)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera la fila 'Outros' de rendimentos con transações de jogadores (L3369), cuya celda 2017 está vacía?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "Rendimentos com transações com jogadores",
+   "texto": "L3369 no tiene importe 2017; 92.738+258=92.996 vs total 92.997, diferencia de redondeo.",
+   "bloques": [
+    "b44"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se toma la nota b39 (L3271) en miles aunque su encabezado no indique escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "Remuneração do pessoal",
+   "texto": "L3271 dice solo '30.Jun.17'; el total 51.799 coincide con b38 en miles.",
+   "bloques": [
+    "b39"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El estado no imprime total de ingresos ni de gastos globales; solo subtotales operativos sin transacciones con jugadores (L2328, L2335). En las notas los gastos figuran en positivo mientras el estado los muestra entre paréntesis. b39 detalla 'Remuneração do pessoal' de b38 (el texto dice 'Remunerações do pessoal'). Diferencias de 1 en b43 y b44 son redondeo."
+}

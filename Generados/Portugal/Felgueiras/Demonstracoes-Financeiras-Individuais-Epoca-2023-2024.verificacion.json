@@ -1,0 +1,212 @@
+{
+ "pdf": "Clubes/Portugal/Felgueiras/Demonstracoes-Financeiras-Individuais-Epoca-2023-2024.pdf",
+ "md": "Clubes/Portugal/Felgueiras/Demonstracoes-Financeiras-Individuais-Epoca-2023-2024.md",
+ "generado": "2026-10-15T21:56:50.130Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "f31901b",
+  "2df16b9"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 9.999999996956888e-7
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Vendas e serviços prestados\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Subsídios à exploração\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Fornecimentos e serviços externos\" no suma el renglón (0.369249 contra 0.365117, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Gastos/reversões de depreciação e de amortização\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Se usa el Anexo 3 (b36-b37, columna 'Contas Anuais ED*-1') como desglose del ejercicio 2023/2024 de ingresos y gastos del estado b3?",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro regulatorio 'Demonstração dos resultados' ED*-1/2/3 (b36 L1925-L1986 y b37 L2002-L2030)?",
+  "duda de extraer que no afecta la carga: Encabezados de fecha no coinciden con el cierre 30-06-2024 (L1052, L1071, L1142, L1206), pero los importes coinciden exactamente con el estado.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Fornecimentos e serviços externos",
+   "suma": 0.369249,
+   "objetivo": 0.365117
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Fornecimentos e serviços externos",
+   "suma": 0.369249,
+   "objetivo": 0.365117
+  }
+ ],
+ "totales": {
+  "ingresos": 0.428353,
+  "gastos": 1.163971,
+  "financiero": 0.003558,
+  "impuesto": -0.000637,
+  "resultadoImpreso": -0.732696,
+  "resultadoParaCargar": -0.732696,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Vendas e serviços prestados",
+   "lado": "ingreso",
+   "M": 0.418836,
+   "pagina": 6,
+   "linea": 206,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0.009517,
+   "pagina": 6,
+   "linea": 207,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros rendimentos",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 6,
+   "linea": 219,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fornecimentos e serviços externos",
+   "lado": "gasto",
+   "M": 0.365117,
+   "pagina": 6,
+   "linea": 212,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Remunerações do pessoal",
+   "lado": "gasto",
+   "M": 0.579119,
+   "pagina": 24,
+   "linea": 1145,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Encargos sobre remunerações",
+   "lado": "gasto",
+   "M": 0.090555,
+   "pagina": 24,
+   "linea": 1148,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 0.025698,
+   "pagina": 24,
+   "linea": 1149,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Outros gastos com pessoal",
+   "lado": "gasto",
+   "M": 0.099534,
+   "pagina": 24,
+   "linea": 1151,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Outros gastos",
+   "lado": "gasto",
+   "M": 0.001148,
+   "pagina": 6,
+   "linea": 220,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "lado": "gasto",
+   "M": 0.0028,
+   "pagina": 6,
+   "linea": 222,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e rendimentos similares obtidos",
+   "M": 0.004206,
+   "linea": 225
+  },
+  {
+   "etiqueta": "Juros e gastos similares suportados",
+   "M": -0.000648,
+   "linea": 226
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": -0.000637,
+   "linea": 228
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "91e9c8d0e376155fe76cde1cbd3c3bb9dd4e03f6",
+  "rango": [
+   203,
+   232
+  ],
+  "lineasCargadas": [
+   206,
+   207,
+   219,
+   212,
+   1145,
+   1148,
+   1149,
+   1151,
+   220,
+   222,
+   225,
+   226,
+   228
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 203 a 232 del .md):\nL204: |   | Notas | 2023/2024 | 2022/2023 |   |\nL205: | --- | --- | --- | --- | --- |\nL206: |  Vendas e serviços prestados | 35 | 418.836 | 179.315 | +  |\nL207: |  Subsídios à exploração | 36 | 9.517 | 8.297 | +  |\nL208: |  Ganhos/perdas imputados de subsidiárias, associadas e empreendimentos | 37 | - | - | +/-  |\nL209: |  Variação nos inventários da produção | 38 | - | - | +/-  |\nL210: |  Trabalhos para a própria entidade | 39 | - | - | +  |\nL211: |  Custo das mercadorias vendidas e das matérias consumidas | 40 | - | - | -  |\nL212: |  Fornecimentos e serviços externos | 41 | (365.117) | (301.449) | -  |\nL213: |  Gastos com o pessoal | 42 | (794.906) | (458.634) | -  |\nL214: |  Imparidade de inventários (perdas/reversões) | 13 | - | - | -/+  |\nL215: |  Imparidade de dívidas a receber (perdas/reversões) | 14 e 17 | - | - | -/+  |\nL216: |  Provisões (aumentos/reduções) | 29 | - | - | -/+  |\nL217: |  Imparidade de investimentos não depreciáveis/amortizáveis (perdas/reversões) | 43 | - | - | -/+  |\nL218: |  Aumentos/reduções de justo valor | 44 | - | - | +/-  |\nL219: |  Outros rendimentos | 45 | - | 9.521 | +  |\nL220: |  Outros gastos | 46 | (1.148) | (52) | -  |\nL221: |  **Resultado antes de depreciações, gastos de financiamento e impostos** |  | (732.817) | (563.003) | =  |\nL222: |  Gastos/reversões de depreciação e de amortização | 47 | (2.800) | (1.175) | -/+  |\nL223: |  Imparidade de investimentos depreciáveis/amortizáveis (perdas/reversões) | 48 | - | - | -/+  |\nL224: |  **Resultado operacional (antes de gastos de financiamento e impostos)** |  | (735.617) | (564.178) | =  |\nL225: |  Juros e rendimentos similares obtidos | 49 | 4.206 | - | +  |\nL226: |  Juros e gastos similares suportados | 49 | (648) | (123) | -  |\nL227: |  **Resultado antes de impostos** |  | (732.059) | (564.300) | =  |\nL228: |  Imposto sobre o rendimento do período | 15 | (637) | (2.884) | -/+  |\nL229: |  **Resultado líquido do período** |  | (732.696) | (567.184) | =  |\nL230: |  Resultado por ação básico |  | - | - |   |\nL232: Para ser lido com as notas anexas às demonstrações financeiras\n\nLO QUE SE CARGA:\n- ingreso · \"Vendas e serviços prestados\" · 0.418836 · L206\n- ingreso · \"Subsídios à exploração\" · 0.009517 · L207\n- ingreso · \"Outros rendimentos\" · 0 · L219\n- gasto · \"Fornecimentos e serviços externos\" · 0.365117 · L212\n- gasto · \"Remunerações do pessoal\" · 0.579119 · L1145 (de una nota)\n- gasto · \"Encargos sobre remunerações\" · 0.090555 · L1148 (de una nota)\n- gasto · \"Seguros\" · 0.025698 · L1149 (de una nota)\n- gasto · \"Outros gastos com pessoal\" · 0.099534 · L1151 (de una nota)\n- gasto · \"Outros gastos\" · 0.001148 · L220\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 0.0028 · L222\n- financiero · \"Juros e rendimentos similares obtidos\" · 0.004206 · L225\n- financiero · \"Juros e gastos similares suportados\" · -0.000648 · L226\n- impuesto · \"Imposto sobre o rendimento do período\" · -0.000637 · L228"
+ }
+}

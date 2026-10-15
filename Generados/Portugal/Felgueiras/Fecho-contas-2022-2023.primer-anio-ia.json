@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md",
+ "clave": "1d9580b16865b02d4284a6c01dbd8e53f6eba4ca",
+ "generado": "2026-10-15T21:55:49.421Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Los renglones del ejercicio (jun 2023) están cargados correctamente. Fornecimentos e serviços externos (L573, 301 449,15) se reemplaza por su apertura de la nota (L1569-L1584), cuyas partes suman 0,301449 millones. Los subtotales no están cargados, el financiero y el impuesto tienen el signo correcto y no se cargó ningún dato del año anterior."
+ }
+}

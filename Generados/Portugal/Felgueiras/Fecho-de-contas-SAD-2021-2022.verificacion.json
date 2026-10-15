@@ -1,0 +1,301 @@
+{
+ "pdf": "Clubes/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.pdf",
+ "md": "Clubes/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.md",
+ "generado": "2026-10-15T21:56:50.174Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": null,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.pdf",
+   "campo": "cierre",
+   "valor": "2022-06-30",
+   "linea": null,
+   "motivo": "periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)",
+   "evidencia": ".md L92 balanço em 30 de junho de 2022",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
+ "cola": [
+  "a64226c"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.1102230246251565e-16
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "duda de localizar confirmada por las sumas (usar-cuadro-por-segmento, \"Gastos com o pessoal\"): ¿Se carga el cuadro 'Informação por atividade económica' (b11) como desglose de 'Gastos com o pessoal' en Remunerações 160 180,67 y Outros 223 447,67?",
+  "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"Gastos com o pessoal\"): ¿Se cargan 'Remunerações' (L661) y 'Outros gastos' (L662) del cuadro por actividad b11 como desglose de 'Gastos com o pessoal'?",
+  "duda de extraer que no afecta la carga: Repiten importes ya cargados del estado b1 (L657-L660).",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.143014,
+  "gastos": 0.672154,
+  "financiero": -0.000217,
+  "impuesto": 0,
+  "resultadoImpreso": -0.529357,
+  "resultadoParaCargar": -0.529357,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Vendas e serviços prestados",
+   "lado": "ingreso",
+   "M": 0.138985,
+   "pagina": 6,
+   "linea": 204,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0.004029,
+   "pagina": 6,
+   "linea": 205,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros rendimentos",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 6,
+   "linea": 208,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Trabalhos especializados",
+   "lado": "gasto",
+   "M": 0.040094,
+   "pagina": 18,
+   "linea": 751,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Publicidade e propaganda",
+   "lado": "gasto",
+   "M": 0.000556,
+   "pagina": 18,
+   "linea": 752,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Vigilância e segurança",
+   "lado": "gasto",
+   "M": 0.009762,
+   "pagina": 18,
+   "linea": 753,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Honorários",
+   "lado": "gasto",
+   "M": 0.0005,
+   "pagina": 18,
+   "linea": 754,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Ferramentas e utensílios de desgaste rápido",
+   "lado": "gasto",
+   "M": 0.003244,
+   "pagina": 18,
+   "linea": 756,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Material de escritório",
+   "lado": "gasto",
+   "M": 0.001213,
+   "pagina": 18,
+   "linea": 757,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Eletricidade",
+   "lado": "gasto",
+   "M": 0.000633,
+   "pagina": 18,
+   "linea": 759,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.000016,
+   "pagina": 18,
+   "linea": 760,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Deslocações e estadas",
+   "lado": "gasto",
+   "M": 0.002018,
+   "pagina": 18,
+   "linea": 762,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Transportes de mercadorias",
+   "lado": "gasto",
+   "M": 0.007382,
+   "pagina": 18,
+   "linea": 763,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Rendas e alugueres",
+   "lado": "gasto",
+   "M": 0.0133,
+   "pagina": 18,
+   "linea": 765,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Comunicação",
+   "lado": "gasto",
+   "M": 0.000178,
+   "pagina": 18,
+   "linea": 766,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Contencioso e notariado",
+   "lado": "gasto",
+   "M": 0.000879,
+   "pagina": 18,
+   "linea": 767,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Despesas de representação",
+   "lado": "gasto",
+   "M": 0.028069,
+   "pagina": 18,
+   "linea": 768,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Limpeza, higiene e conforto",
+   "lado": "gasto",
+   "M": 0.000718,
+   "pagina": 18,
+   "linea": 769,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Outros serviços",
+   "lado": "gasto",
+   "M": 0.043752,
+   "pagina": 18,
+   "linea": 770,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Remunerações",
+   "lado": "gasto",
+   "M": 0.160181,
+   "pagina": 16,
+   "linea": 661,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Outros gastos",
+   "lado": "gasto",
+   "M": 0.223448,
+   "pagina": 16,
+   "linea": 662,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Outros gastos",
+   "lado": "gasto",
+   "M": 0.136213,
+   "pagina": 6,
+   "linea": 209,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Gasto líquido de financiamento",
+   "M": -0.000217,
+   "linea": 212
+  }
+ ],
+ "impuesto": [],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "790104d536ec5d2b6a8ab14139f9e8aaede724c2",
+  "rango": [
+   201,
+   217
+  ],
+  "lineasCargadas": [
+   204,
+   205,
+   208,
+   751,
+   752,
+   753,
+   754,
+   756,
+   757,
+   759,
+   760,
+   762,
+   763,
+   765,
+   766,
+   767,
+   768,
+   769,
+   770,
+   661,
+   662,
+   209,
+   212
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 201 a 217 del .md):\nL201: |  RENDIMENTOS E GASTOS | PERÍODOS  |   |\nL202: | --- | --- | --- |\nL203: |   |  jun 2022 | jun 2021  |\nL204: |  Vendas e serviços prestados | 138 985,49 |   |\nL205: |  Subsídios à exploração | 4 028,63 |   |\nL206: |  Fornecimentos e serviços externos | (152 312,85) | (5 900,00)  |\nL207: |  Gastos com o pessoal | (383 628,34) |   |\nL208: |  Outros rendimentos |  | 5 172,07  |\nL209: |  Outros gastos | (136 213,01) |   |\nL210: |  **Resultado antes de depreciações, gastos de financiamento e impostos** | **(529 140,08)** | **(727,93)**  |\nL211: |  **Resultado operacional (antes de gastos de financiamento e impostos)** | **(529 140,08)** | **(727,93)**  |\nL212: |  Gasto líquido de financiamento | (216,59) | (81,12)  |\nL213: |  **Resultado antes de impostos** | **(529 356,67)** | **(809,05)**  |\nL214: |  **Resultado líquido do período** | **(529 356,67)** | **(809,05)**  |\nL216: Administração / Gerência\n\nLO QUE SE CARGA:\n- ingreso · \"Vendas e serviços prestados\" · 0.138985 · L204\n- ingreso · \"Subsídios à exploração\" · 0.004029 · L205\n- ingreso · \"Outros rendimentos\" · 0 · L208\n- gasto · \"Trabalhos especializados\" · 0.040094 · L751 (de una nota)\n- gasto · \"Publicidade e propaganda\" · 0.000556 · L752 (de una nota)\n- gasto · \"Vigilância e segurança\" · 0.009762 · L753 (de una nota)\n- gasto · \"Honorários\" · 0.0005 · L754 (de una nota)\n- gasto · \"Ferramentas e utensílios de desgaste rápido\" · 0.003244 · L756 (de una nota)\n- gasto · \"Material de escritório\" · 0.001213 · L757 (de una nota)\n- gasto · \"Eletricidade\" · 0.000633 · L759 (de una nota)\n- gasto · \"Outros\" · 0.000016 · L760 (de una nota)\n- gasto · \"Deslocações e estadas\" · 0.002018 · L762 (de una nota)\n- gasto · \"Transportes de mercadorias\" · 0.007382 · L763 (de una nota)\n- gasto · \"Rendas e alugueres\" · 0.0133 · L765 (de una nota)\n- gasto · \"Comunicação\" · 0.000178 · L766 (de una nota)\n- gasto · \"Contencioso e notariado\" · 0.000879 · L767 (de una nota)\n- gasto · \"Despesas de representação\" · 0.028069 · L768 (de una nota)\n- gasto · \"Limpeza, higiene e conforto\" · 0.000718 · L769 (de una nota)\n- gasto · \"Outros serviços\" · 0.043752 · L770 (de una nota)\n- gasto · \"Remunerações\" · 0.160181 · L661 (de una nota)\n- gasto · \"Outros gastos\" · 0.223448 · L662 (de una nota)\n- gasto · \"Outros gastos\" · 0.136213 · L209\n- financiero · \"Gasto líquido de financiamento\" · -0.000217 · L212"
+ }
+}

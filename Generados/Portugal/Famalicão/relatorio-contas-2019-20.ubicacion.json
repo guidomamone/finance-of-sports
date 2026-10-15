@@ -1,0 +1,275 @@
+{
+ "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2019-20.pdf",
+ "md": "Clubes/Portugal/Famalicão/relatorio-contas-2019-20.md",
+ "mdSha1": "6422d35e7d4acc3d96e47d7550dd979c725547a0",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T19:12:32.701Z",
+ "bloques": {
+  "b1": {
+   "pagina": 9,
+   "lineas": [
+    215,
+    217
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 11,
+   "lineas": [
+    253,
+    266
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    331,
+    367
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    388,
+    404
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    432,
+    463
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    486,
+    498
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    514,
+    526
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    635,
+    641
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 22,
+   "lineas": [
+    755,
+    759
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 22,
+   "lineas": [
+    769,
+    785
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 23,
+   "lineas": [
+    805,
+    815
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 23,
+   "lineas": [
+    825,
+    830
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 24,
+   "lineas": [
+    849,
+    857
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 24,
+   "lineas": [
+    861,
+    867
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 24,
+   "lineas": [
+    875,
+    886
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    904,
+    911
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 25,
+   "lineas": [
+    917,
+    928
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    960,
+    965
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    973,
+    980
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 27,
+   "lineas": [
+    998,
+    1001
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 27,
+   "lineas": [
+    1009,
+    1022
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 28,
+   "lineas": [
+    1044,
+    1051
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 28,
+   "lineas": [
+    1057,
+    1068
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 28,
+   "lineas": [
+    1078,
+    1081
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1097,
+    1105
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 29,
+   "lineas": [
+    1123,
+    1128
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 30,
+   "lineas": [
+    1146,
+    1151
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 30,
+   "lineas": [
+    1153,
+    1162
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 30,
+   "lineas": [
+    1176,
+    1180
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b21"
+ ],
+ "notas_gastos": [
+  "b22",
+  "b23",
+  "b25",
+  "b26"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30-Jun-20",
+ "columna_anterior": "30-Jun-19",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Honorários de Agentes' (b24), por ser un detalle de una fila de los FSE ya abiertos en b23?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Fornecimentos e serviços externos",
+   "texto": "b24 muestra las comisiones a agentes incluidas en los FSE, junto con la parte pagada; no es una categoría separada del cuadro b23.",
+   "bloques": [
+    "b24"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Las cuentas son individuales de la SAD. b4 es la Demonstração dos Resultados Individuais. Las notas de desglose son: b21, ventas y servicios; b22, CMV; b23, FSE; b25, gastos con el personal; b26, otros gastos. Se excluyen el balance, el flujo de caja, el patrimonio, los activos fijos y el impuesto. No hay una nota visible de otros ingresos (nota 19/23)."
+}

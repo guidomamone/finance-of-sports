@@ -1,0 +1,329 @@
+{
+ "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2024-25.pdf",
+ "md": "Clubes/Portugal/Nacional/relatorio-contas-2024-25.md",
+ "mdSha1": "a665b58611b20238b4a0bd24a332876d66bdba7d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T19:57:23.064Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    72,
+    109
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    128,
+    145
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    164,
+    191
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    210,
+    222
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    226,
+    237
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    305,
+    312
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    382,
+    387
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    407,
+    421
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    427,
+    431
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    444,
+    449
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    451,
+    456
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 13,
+   "lineas": [
+    458,
+    461
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    467,
+    473
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    475,
+    481
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    483,
+    486
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    507,
+    511
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 14,
+   "lineas": [
+    513,
+    519
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 15,
+   "lineas": [
+    534,
+    540
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 15,
+   "lineas": [
+    546,
+    566
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 16,
+   "lineas": [
+    585,
+    589
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 16,
+   "lineas": [
+    593,
+    600
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 17,
+   "lineas": [
+    617,
+    646
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 18,
+   "lineas": [
+    661,
+    675
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 19,
+   "lineas": [
+    698,
+    741
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 20,
+   "lineas": [
+    754,
+    776
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 21,
+   "lineas": [
+    791,
+    805
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 21,
+   "lineas": [
+    813,
+    819
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 22,
+   "lineas": [
+    832,
+    848
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 22,
+   "lineas": [
+    854,
+    860
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 23,
+   "lineas": [
+    879,
+    902
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 24,
+   "lineas": [
+    915,
+    936
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 25,
+   "lineas": [
+    951,
+    963
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 25,
+   "lineas": [
+    973,
+    976
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 25,
+   "lineas": [
+    982,
+    985
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b27",
+  "b28",
+  "b29"
+ ],
+ "notas_gastos": [
+  "b30",
+  "b31",
+  "b32",
+  "b33"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(montantes em euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30-jun-25",
+ "columna_anterior": "30-jun-24",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿La columna '30-jun-25 17 meses' de la nota 15.1 (b27) corresponde en realidad a 12 meses y coincide con 'Vendas e serviços prestados' del estado de resultados?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Vendas e serviços prestados",
+   "texto": "El encabezado de b27 dice 17 meses mientras las demás notas dicen 12 meses; probablemente errata.",
+   "bloques": [
+    "b27",
+    "b2"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿La columna 'DR Imput. Subs. Expl. 30-jun-26 12 meses' de b29 es la del ejercicio cerrado el 30-06-2025?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Subsídios à exploração",
+   "texto": "El encabezado de b29 dice 30-jun-26, probablemente errata por 30-jun-25.",
+   "bloques": [
+    "b29"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual de Clube Desportivo Nacional, SAD (b2), en euros. Notas: b27 rédito, b28 otros rendimentos, b29 subsídios, b30 FSE, b31 pessoal, b32 outros gastos, b33 juros. Se excluyen balance, flujos, patrimonio, activos fijos, impuestos, partes relacionadas y provisiones."
+}

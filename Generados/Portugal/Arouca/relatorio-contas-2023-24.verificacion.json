@@ -1,0 +1,632 @@
+{
+ "pdf": "Clubes/Portugal/Arouca/relatorio-contas-2023-24.pdf",
+ "md": "Clubes/Portugal/Arouca/relatorio-contas-2023-24.md",
+ "generado": "2026-10-15T21:55:00.002Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.3322676295501878e-15
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 14.888051 en este documento y 14.888051 en wf-2024-2025-78053ec5.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 8.77516 en relatorio-contas-2022-23.pdf y 8.77516 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "línea 241: 63 000,00 no está en el texto del PDF; las sumas lo confirman (con la segunda lectura (8300000) el resultado daría -5.001447 y no cierra)",
+  "línea 1473: 132 787,64 no está en el texto del PDF; las sumas lo confirman (con la segunda lectura (13274764) el resultado daría 16.37753 y no cierra)",
+  "línea 1475: 4 950 000,00 no está en el texto del PDF; las sumas lo confirman (con la segunda lectura (490000000) el resultado daría 488.285553 y no cierra)",
+  "línea 1476: 593 000,00 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1512: 6 862 424,89 no está en el texto del PDF; las sumas lo confirman (con la segunda lectura (686242449) el resultado daría 682.615577 y no cierra)",
+  "línea 1321: 60 894,82 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1323: 484 762,98 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1324: 92 248,87 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1326: 73 763,72 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1405: 27 250,00 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1407: 6 871,93 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1408: 650,00 no está en el texto del PDF; las sumas lo confirman (con la segunda lectura (25000) el resultado daría 3.211203 y no cierra)",
+  "línea 1409: 9 377,79 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1411: 12 383,68 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1412: 28 785,17 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1414: 31 389,91 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1415: 512,60 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1416: 11 102,45 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1417: 513 134,58 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1418: 4 710,00 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1423: 9 341,36 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1424: 2 244,10 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1425: 160 819,68 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1456: 9 503,66 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1459: 191,58 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 1461: 40 974,12 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 14.888051,
+  "gastos": 11.570885,
+  "financiero": 0.113084,
+  "impuesto": -0.194697,
+  "resultadoImpreso": 3.235553,
+  "resultadoParaCargar": 3.235553,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Publicidade",
+   "lado": "ingreso",
+   "M": 0.394696,
+   "pagina": 35,
+   "linea": 1472,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Receitas de Bilheteira",
+   "lado": "ingreso",
+   "M": 0.132788,
+   "pagina": 35,
+   "linea": 1473,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Corporate",
+   "lado": "ingreso",
+   "M": 0.0638,
+   "pagina": 35,
+   "linea": 1474,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Transmissões Televisivas",
+   "lado": "ingreso",
+   "M": 4.95,
+   "pagina": 35,
+   "linea": 1475,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Ced. Temporária atletas",
+   "lado": "ingreso",
+   "M": 0.593,
+   "pagina": 35,
+   "linea": 1476,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Subsídios e Prémios",
+   "lado": "ingreso",
+   "M": 0.984618,
+   "pagina": 35,
+   "linea": 1477,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Receitas Apostas Desport.",
+   "lado": "ingreso",
+   "M": 0.352957,
+   "pagina": 35,
+   "linea": 1478,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "ingreso",
+   "M": 0.06905,
+   "pagina": 35,
+   "linea": 1479,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Descontos pp obtidos",
+   "lado": "ingreso",
+   "M": 0.001031,
+   "pagina": 36,
+   "linea": 1510,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Al. ativos intangíveis-Passes atletas",
+   "lado": "ingreso",
+   "M": 6.862425,
+   "pagina": 36,
+   "linea": 1512,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Benefícios de penalidades contratuais",
+   "lado": "ingreso",
+   "M": 0.317716,
+   "pagina": 36,
+   "linea": 1513,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Outros Rendimentos",
+   "lado": "ingreso",
+   "M": 0.165971,
+   "pagina": 36,
+   "linea": 1514,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Subcontratos",
+   "lado": "gasto",
+   "M": 0.004825,
+   "pagina": 34,
+   "linea": 1400,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Trabalhos Especializados",
+   "lado": "gasto",
+   "M": 0.488953,
+   "pagina": 34,
+   "linea": 1401,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Publicidade e propaganda",
+   "lado": "gasto",
+   "M": 0.001904,
+   "pagina": 34,
+   "linea": 1402,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Vigilância e Segurança",
+   "lado": "gasto",
+   "M": 0.098022,
+   "pagina": 34,
+   "linea": 1403,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Honorários",
+   "lado": "gasto",
+   "M": 0.019373,
+   "pagina": 34,
+   "linea": 1404,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Comissões",
+   "lado": "gasto",
+   "M": 0.02725,
+   "pagina": 34,
+   "linea": 1405,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Conservação e Reparação",
+   "lado": "gasto",
+   "M": 0.060838,
+   "pagina": 34,
+   "linea": 1406,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Serviços Bancários",
+   "lado": "gasto",
+   "M": 0.006872,
+   "pagina": 34,
+   "linea": 1407,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Out. Serv. Especializados",
+   "lado": "gasto",
+   "M": 0.00065,
+   "pagina": 34,
+   "linea": 1408,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Ferr. Ut. Desgaste Rápido",
+   "lado": "gasto",
+   "M": 0.009378,
+   "pagina": 34,
+   "linea": 1409,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Livros e doc. técnica",
+   "lado": "gasto",
+   "M": 0.000081,
+   "pagina": 34,
+   "linea": 1410,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Material de Escritório",
+   "lado": "gasto",
+   "M": 0.012384,
+   "pagina": 34,
+   "linea": 1411,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Artigos Oferta",
+   "lado": "gasto",
+   "M": 0.028785,
+   "pagina": 34,
+   "linea": 1412,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Eletricidade",
+   "lado": "gasto",
+   "M": 0.018505,
+   "pagina": 34,
+   "linea": 1413,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Combustíveis",
+   "lado": "gasto",
+   "M": 0.03139,
+   "pagina": 34,
+   "linea": 1414,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Água",
+   "lado": "gasto",
+   "M": 0.000513,
+   "pagina": 34,
+   "linea": 1415,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Outros Fluidos",
+   "lado": "gasto",
+   "M": 0.011102,
+   "pagina": 34,
+   "linea": 1416,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Deslocações e Estadas",
+   "lado": "gasto",
+   "M": 0.513135,
+   "pagina": 34,
+   "linea": 1417,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Transp. Pessoal",
+   "lado": "gasto",
+   "M": 0.00471,
+   "pagina": 34,
+   "linea": 1418,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Rendas e Alugueres",
+   "lado": "gasto",
+   "M": 0.03159,
+   "pagina": 34,
+   "linea": 1420,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Comunicação",
+   "lado": "gasto",
+   "M": 0.000533,
+   "pagina": 34,
+   "linea": 1421,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 0.004122,
+   "pagina": 34,
+   "linea": 1422,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Contencioso e Notariado",
+   "lado": "gasto",
+   "M": 0.009341,
+   "pagina": 34,
+   "linea": 1423,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Limpeza, Higiene e Conforto",
+   "lado": "gasto",
+   "M": 0.002244,
+   "pagina": 34,
+   "linea": 1424,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Outros Serviços",
+   "lado": "gasto",
+   "M": 0.16082,
+   "pagina": 34,
+   "linea": 1425,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Remun. Órgãos sociais",
+   "lado": "gasto",
+   "M": 0.060895,
+   "pagina": 32,
+   "linea": 1321,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Remunerações pessoal",
+   "lado": "gasto",
+   "M": 5.699921,
+   "pagina": 32,
+   "linea": 1322,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Indemnizações",
+   "lado": "gasto",
+   "M": 0.484763,
+   "pagina": 32,
+   "linea": 1323,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Encargos s/ remunerações",
+   "lado": "gasto",
+   "M": 0.092249,
+   "pagina": 32,
+   "linea": 1324,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Seg. Acidentes de Trabalho",
+   "lado": "gasto",
+   "M": 0.735511,
+   "pagina": 32,
+   "linea": 1325,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Outros Gastos c/ Pessoal",
+   "lado": "gasto",
+   "M": 0.073764,
+   "pagina": 32,
+   "linea": 1326,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": "gasto",
+   "M": 2.197608,
+   "pagina": 8,
+   "linea": 240,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Provisões (aumentos/reduções)",
+   "lado": "gasto",
+   "M": 0.063,
+   "pagina": 8,
+   "linea": 241,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos",
+   "lado": "gasto",
+   "M": 0.009504,
+   "pagina": 35,
+   "linea": 1456,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Desc. Pp concedidos",
+   "lado": "gasto",
+   "M": 0.00297,
+   "pagina": 35,
+   "linea": 1457,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Corr. Per. Anteriores",
+   "lado": "gasto",
+   "M": 0.25435,
+   "pagina": 35,
+   "linea": 1458,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Diferenças câmbio desf.",
+   "lado": "financiero",
+   "M": 0.000192,
+   "pagina": 35,
+   "linea": 1459,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Multas e penalidades",
+   "lado": "gasto",
+   "M": 0.034075,
+   "pagina": 35,
+   "linea": 1460,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.040974,
+   "pagina": 35,
+   "linea": 1461,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "lado": "gasto",
+   "M": 0.27379,
+   "pagina": 8,
+   "linea": 245,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e gastos similares obtidos",
+   "M": 0.113084,
+   "linea": 247
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": -0.194697,
+   "linea": 250
+  }
+ ],
+ "confirmadosPorSumas": [
+  {
+   "linea": 241,
+   "numero": "63 000,00"
+  },
+  {
+   "linea": 1473,
+   "numero": "132 787,64"
+  },
+  {
+   "linea": 1475,
+   "numero": "4 950 000,00"
+  },
+  {
+   "linea": 1476,
+   "numero": "593 000,00"
+  },
+  {
+   "linea": 1512,
+   "numero": "6 862 424,89"
+  },
+  {
+   "linea": 1321,
+   "numero": "60 894,82"
+  },
+  {
+   "linea": 1323,
+   "numero": "484 762,98"
+  },
+  {
+   "linea": 1324,
+   "numero": "92 248,87"
+  },
+  {
+   "linea": 1326,
+   "numero": "73 763,72"
+  },
+  {
+   "linea": 1405,
+   "numero": "27 250,00"
+  },
+  {
+   "linea": 1407,
+   "numero": "6 871,93"
+  },
+  {
+   "linea": 1408,
+   "numero": "650,00"
+  },
+  {
+   "linea": 1409,
+   "numero": "9 377,79"
+  },
+  {
+   "linea": 1411,
+   "numero": "12 383,68"
+  },
+  {
+   "linea": 1412,
+   "numero": "28 785,17"
+  },
+  {
+   "linea": 1414,
+   "numero": "31 389,91"
+  },
+  {
+   "linea": 1415,
+   "numero": "512,60"
+  },
+  {
+   "linea": 1416,
+   "numero": "11 102,45"
+  },
+  {
+   "linea": 1417,
+   "numero": "513 134,58"
+  },
+  {
+   "linea": 1418,
+   "numero": "4 710,00"
+  },
+  {
+   "linea": 1423,
+   "numero": "9 341,36"
+  },
+  {
+   "linea": 1424,
+   "numero": "2 244,10"
+  },
+  {
+   "linea": 1425,
+   "numero": "160 819,68"
+  },
+  {
+   "linea": 1456,
+   "numero": "9 503,66"
+  },
+  {
+   "linea": 1459,
+   "numero": "191,58"
+  },
+  {
+   "linea": 1461,
+   "numero": "40 974,12"
+  }
+ ]
+}

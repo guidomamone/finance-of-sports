@@ -1,0 +1,39 @@
+{
+ "pdf": "Clubes/Portugal/Gil Vicente/relatorio-contas-2023-24.pdf",
+ "generado": "2026-10-15T22:34:42.335Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 6 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (gilvicente-pt)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 6 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 2 ejercicio(s) con un solo perímetro (individual); 6 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Portugal/Gil Vicente/relatorio-contas-2023-24.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2024-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "gilvicente-pt",
+ "year": 2024,
+ "cortadoEn": "filas"
+}

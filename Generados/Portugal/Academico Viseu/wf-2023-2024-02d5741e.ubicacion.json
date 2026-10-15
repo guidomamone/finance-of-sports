@@ -1,0 +1,229 @@
+{
+ "pdf": "Clubes/Portugal/Academico Viseu/wf-2023-2024-02d5741e.pdf",
+ "md": "Clubes/Portugal/Academico Viseu/wf-2023-2024-02d5741e.md",
+ "mdSha1": "01facafef59a19a11e55b000e3eeb45630e32414",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T18:02:28.153Z",
+ "bloques": {
+  "b1": {
+   "pagina": 9,
+   "lineas": [
+    293,
+    331
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    352,
+    371
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    465,
+    474
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    504,
+    511
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    533,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    541,
+    545
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    557,
+    563
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    589,
+    603
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 17,
+   "lineas": [
+    616,
+    635
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    641,
+    653
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    715,
+    728
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    747,
+    751
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 20,
+   "lineas": [
+    759,
+    772
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    790,
+    801
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 21,
+   "lineas": [
+    807,
+    818
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    838,
+    843
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 22,
+   "lineas": [
+    849,
+    856
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    886,
+    902
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    926,
+    928
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    932,
+    936
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 24,
+   "lineas": [
+    940,
+    948
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    962,
+    979
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 25,
+   "lineas": [
+    983,
+    987
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b8"
+ ],
+ "notas_gastos": [
+  "b9",
+  "b10",
+  "b18",
+  "b6",
+  "b7",
+  "b12"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Las notas expresan importes en euros con céntimos (p.ej. 'nos montantes de 10.556,05€ e 14.911,94€'); no se ve indicación de miles en el estado.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2023/2024",
+ "columna_anterior": "2022/2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El estado de resultados (b2, pág. 10) está expresado en euros (unidades) y no en miles?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El índice no muestra la frase de escala sobre b2; las notas usan euros con céntimos.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de Académico de Viseu FC – Futebol SAD. b2 es la demonstração dos resultados por naturezas. b8 desglosa vendas/serviços y otros rendimentos; b9 FSE; b10 outros gastos; b18 gastos com pessoal; b6 gastos de financiamento; b7 CMVMC; b12 imparidades. Excluidos balance, activos fijos, saldos, partes relacionadas y contratos de suprimentos."
+}

@@ -1,0 +1,258 @@
+{
+ "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf",
+ "md": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md",
+ "generado": "2026-10-15T21:55:09.111Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 8.881784197001252e-16
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 0.613513 en Relatorio-Contas-UDL-SAD_2022-2023.pdf y 0.613513 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b28 detalla transacciones por entidad relacionada, no por categoría de ingreso o gasto.",
+  "duda de extraer que no afecta la carga: L646: las columnas Mercado Interno y Total tienen los mismos importes; se usó Total.",
+  "duda de extraer que no afecta la carga: L670-L673 es un movimiento de stock; saldos y compras no son gasto del ejercicio."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1.696455,
+  "gastos": 7.370219,
+  "financiero": -0.42124,
+  "impuesto": -0.036063,
+  "resultadoImpreso": -6.131068,
+  "resultadoParaCargar": -6.131068,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Vendas de mercadorias",
+   "lado": "ingreso",
+   "M": 0.097869,
+   "pagina": 19,
+   "linea": 647,
+   "origen": "nota que desglosa \"Vendas e Prestação de serviços\""
+  },
+  {
+   "etiqueta": "Prestação de serviços",
+   "lado": "ingreso",
+   "M": 1.546109,
+   "pagina": 19,
+   "linea": 648,
+   "origen": "nota que desglosa \"Vendas e Prestação de serviços\""
+  },
+  {
+   "etiqueta": "Subsídios do estado e outros entes públicas",
+   "lado": "ingreso",
+   "M": 0.013237,
+   "pagina": 19,
+   "linea": 659,
+   "origen": "nota que desglosa \"Subsídios à exploração\""
+  },
+  {
+   "etiqueta": "Subsídios de outras entidades",
+   "lado": "ingreso",
+   "M": 0.011565,
+   "pagina": 19,
+   "linea": 660,
+   "origen": "nota que desglosa \"Subsídios à exploração\""
+  },
+  {
+   "etiqueta": "Rendimentos suplementares",
+   "lado": "ingreso",
+   "M": 0.00234,
+   "pagina": 21,
+   "linea": 737,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Outros rendimentos e ganhos",
+   "lado": "ingreso",
+   "M": 0.025335,
+   "pagina": 21,
+   "linea": 738,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "gasto",
+   "M": 0.037626,
+   "pagina": 3,
+   "linea": 77,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subcontratos",
+   "lado": "gasto",
+   "M": 0.00794,
+   "pagina": 20,
+   "linea": 691,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Serviços especializados",
+   "lado": "gasto",
+   "M": 1.902194,
+   "pagina": 20,
+   "linea": 692,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Materiais",
+   "lado": "gasto",
+   "M": 0.03967,
+   "pagina": 20,
+   "linea": 693,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Energia e fluídos",
+   "lado": "gasto",
+   "M": 0.009294,
+   "pagina": 20,
+   "linea": 694,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Deslocações e estadas",
+   "lado": "gasto",
+   "M": 0.345991,
+   "pagina": 20,
+   "linea": 695,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Rendas e alugueres",
+   "lado": "gasto",
+   "M": 0.400387,
+   "pagina": 20,
+   "linea": 696,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Serviços diversos (*)",
+   "lado": "gasto",
+   "M": 0.157265,
+   "pagina": 20,
+   "linea": 697,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Remunerações do pessoal",
+   "lado": "gasto",
+   "M": 2.844058,
+   "pagina": 20,
+   "linea": 714,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Indemnizações",
+   "lado": "gasto",
+   "M": 0.267583,
+   "pagina": 20,
+   "linea": 715,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Encargos sobre remunerações",
+   "lado": "gasto",
+   "M": 0.288227,
+   "pagina": 20,
+   "linea": 716,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 0.273126,
+   "pagina": 20,
+   "linea": 717,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Outros gastos com pessoal",
+   "lado": "gasto",
+   "M": 0.353512,
+   "pagina": 20,
+   "linea": 718,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Impostos",
+   "lado": "gasto",
+   "M": 0.045131,
+   "pagina": 21,
+   "linea": 747,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Outros gastos e perdas",
+   "lado": "gasto",
+   "M": 0.305863,
+   "pagina": 21,
+   "linea": 748,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "lado": "gasto",
+   "M": 0.092352,
+   "pagina": 3,
+   "linea": 83,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Gastos de financiamento",
+   "M": -0.42124,
+   "linea": 85
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": -0.036063,
+   "linea": 87
+  }
+ ]
+}

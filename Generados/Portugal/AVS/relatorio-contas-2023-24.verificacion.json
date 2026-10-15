@@ -1,0 +1,486 @@
+{
+ "pdf": "Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf",
+ "md": "Clubes/Portugal/AVS/relatorio-contas-2023-24.md",
+ "generado": "2026-10-15T21:54:59.653Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "904fe63",
+  "b2ab312",
+  "4fa7d7a",
+  "f72e06d",
+  "bc3f3e9",
+  "5670c54"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "1.49427 = 1.49427",
+   "suma": 1.4942703800000003,
+   "impreso": 1.49427038
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "4.512755 = 4.512755",
+   "suma": 4.512754529999999,
+   "impreso": 4.5127545300000005
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 1.7763568394002505e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": false,
+   "detalle": "ingresos de 2023: 1.845759 en relatorio-contas-2022-23.pdf y 1.189759 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "línea 555: 1 509,51 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (150901) el resultado daría -3.190694 y no cierra)",
+  "línea 561: 9 939,20 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (293920) el resultado daría -3.325283 y no cierra)",
+  "línea 562: 94 297,48 no está en el segunda lectura; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 582: 1 084 433,54 no está en el segunda lectura; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "duda de localizar que no afecta la carga: b1 es un resumen del informe de gestión que repite importes del estado b3."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1.49427,
+  "gastos": 4.512755,
+  "financiero": 0.004346,
+  "impuesto": 0.018472,
+  "resultadoImpreso": 3.041302,
+  "resultadoParaCargar": 3.041302,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Quotizações",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 16,
+   "linea": 528,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas de bilheteira",
+   "lado": "ingreso",
+   "M": 0.023439,
+   "pagina": 16,
+   "linea": 529,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Patrocínios, publicidade e corporate",
+   "lado": "ingreso",
+   "M": 0.213195,
+   "pagina": 16,
+   "linea": 530,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas de televisão",
+   "lado": "ingreso",
+   "M": 0.45,
+   "pagina": 16,
+   "linea": 531,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "M": 0.012142,
+   "pagina": 16,
+   "linea": 532,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Competições da UEFA e nacionais",
+   "lado": "ingreso",
+   "M": 0.122228,
+   "pagina": 16,
+   "linea": 533,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios e donativos de Associações/Federações/Liga",
+   "lado": "ingreso",
+   "M": 0.227073,
+   "pagina": 16,
+   "linea": 534,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios do Estado e outros entes públicos",
+   "lado": "ingreso",
+   "M": 0.021038,
+   "pagina": 16,
+   "linea": 535,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Donativos de partes não relacionadas",
+   "lado": "ingreso",
+   "M": 0.003773,
+   "pagina": 16,
+   "linea": 536,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Contribuições/Donativos de partes relacionadas",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 16,
+   "linea": 537,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Rendimentos de operações extra-futebol não relacionadas com clube (l)",
+   "lado": "ingreso",
+   "M": 0.033751,
+   "pagina": 16,
+   "linea": 538,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros ganhos extraordinários",
+   "lado": "ingreso",
+   "M": 0.351414,
+   "pagina": 16,
+   "linea": 539,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros rendimentos operacionais (1)",
+   "lado": "ingreso",
+   "M": 0.036217,
+   "pagina": 16,
+   "linea": 540,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custo mercadorias vendidas e matérias consumidas",
+   "lado": "gasto",
+   "M": 0.032046,
+   "pagina": 16,
+   "linea": 544,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Equipa principal - remunerações",
+   "lado": "gasto",
+   "M": 1.00783,
+   "pagina": 16,
+   "linea": 547,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Equipa principal - encargos sobre remunerações",
+   "lado": "gasto",
+   "M": 0.048835,
+   "pagina": 16,
+   "linea": 548,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Equipa principal - encargos com seguros",
+   "lado": "gasto",
+   "M": 0.184536,
+   "pagina": 16,
+   "linea": 549,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Equipa principal - direitos de imagem",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 16,
+   "linea": 550,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Equipa principal - outros gastos",
+   "lado": "gasto",
+   "M": 0.394318,
+   "pagina": 16,
+   "linea": 551,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Treinador principal - remunerações",
+   "lado": "gasto",
+   "M": 0.086333,
+   "pagina": 16,
+   "linea": 553,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Treinador principal - encargos sobre remunerações",
+   "lado": "gasto",
+   "M": 0.020504,
+   "pagina": 16,
+   "linea": 554,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Treinador principal - encargos com seguros",
+   "lado": "gasto",
+   "M": 0.00151,
+   "pagina": 16,
+   "linea": 555,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Treinador principal - direitos de imagem",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 16,
+   "linea": 556,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Treinador principal - outros gastos",
+   "lado": "gasto",
+   "M": 0.018,
+   "pagina": 16,
+   "linea": 557,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outro pessoal - remunerações",
+   "lado": "gasto",
+   "M": 0.654772,
+   "pagina": 16,
+   "linea": 559,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outro pessoal - encargos sobre remunerações",
+   "lado": "gasto",
+   "M": 0.149376,
+   "pagina": 16,
+   "linea": 560,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outro pessoal - encargos com seguros",
+   "lado": "gasto",
+   "M": 0.009939,
+   "pagina": 16,
+   "linea": 561,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outro pessoal - outros gastos",
+   "lado": "gasto",
+   "M": 0.094297,
+   "pagina": 16,
+   "linea": 562,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros gastos com pessoal",
+   "lado": "gasto",
+   "M": 0.098571,
+   "pagina": 16,
+   "linea": 564,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Depreciações de ativos tangíveis",
+   "lado": "gasto",
+   "M": 0.019117,
+   "pagina": 16,
+   "linea": 567,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortizações de ativos intangíveis exc. atletas",
+   "lado": "gasto",
+   "M": 0.019731,
+   "pagina": 16,
+   "linea": 568,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Perdas por imparidade exc. atletas",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 16,
+   "linea": 569,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Reversões de Provisões/Imparidades exc. Atletas",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 16,
+   "linea": 570,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos em dia de jogo",
+   "lado": "gasto",
+   "M": 0.126342,
+   "pagina": 16,
+   "linea": 573,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos com logística e segurança",
+   "lado": "gasto",
+   "M": 0.087817,
+   "pagina": 16,
+   "linea": 574,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de patrocínios, publicidade e corporate",
+   "lado": "gasto",
+   "M": 0.017116,
+   "pagina": 16,
+   "linea": 575,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de actividades relacionadas com \"comercial\"",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 16,
+   "linea": 576,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos com conservação e reparação",
+   "lado": "gasto",
+   "M": 0.115709,
+   "pagina": 16,
+   "linea": 577,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos com agentes e intermediários",
+   "lado": "gasto",
+   "M": 0.0281,
+   "pagina": 16,
+   "linea": 578,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de operações extra-futebol não relacionadas com o clube (m)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 16,
+   "linea": 579,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos",
+   "lado": "gasto",
+   "M": 0.000978,
+   "pagina": 29,
+   "linea": 1163,
+   "origen": "nota que desglosa \"Gastos extraordinários\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.118131,
+   "pagina": 29,
+   "linea": 1165,
+   "origen": "nota que desglosa \"Gastos extraordinários\""
+  },
+  {
+   "etiqueta": "Honorários",
+   "lado": "gasto",
+   "M": 0.094414,
+   "pagina": 16,
+   "linea": 581,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros gastos operacionais (1)",
+   "lado": "gasto",
+   "M": 1.084434,
+   "pagina": 16,
+   "linea": 582,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Rendimentos e ganhos financeiros",
+   "M": null,
+   "linea": 603
+  },
+  {
+   "etiqueta": "Gastos e perdas financeiras",
+   "M": -0.004346,
+   "linea": 604
+  },
+  {
+   "etiqueta": "Ganhos e perdas com diferenças de câmbio",
+   "M": null,
+   "linea": 605
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento",
+   "M": -0.018472,
+   "linea": 612
+  }
+ ],
+ "confirmadosPorSumas": [
+  {
+   "linea": 555,
+   "numero": "1 509,51"
+  },
+  {
+   "linea": 561,
+   "numero": "9 939,20"
+  },
+  {
+   "linea": 562,
+   "numero": "94 297,48"
+  },
+  {
+   "linea": 582,
+   "numero": "1 084 433,54"
+  }
+ ]
+}

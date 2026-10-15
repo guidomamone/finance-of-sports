@@ -1,0 +1,247 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.md",
+ "mdSha1": "c8b7f663f87eb2d21c64d45bb5660a16fe7af552",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T21:12:45.324Z",
+ "bloques": {
+  "b1": {
+   "pagina": 8,
+   "lineas": [
+    177,
+    190
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    192,
+    203
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    205,
+    208
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    345,
+    351
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    357,
+    362
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    413,
+    420
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    619,
+    663
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    673,
+    697
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    699,
+    716
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 23,
+   "lineas": [
+    848,
+    850
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 23,
+   "lineas": [
+    860,
+    864
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 23,
+   "lineas": [
+    874,
+    884
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 23,
+   "lineas": [
+    890,
+    909
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 23,
+   "lineas": [
+    913,
+    916
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 23,
+   "lineas": [
+    920,
+    923
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 24,
+   "lineas": [
+    938,
+    941
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 24,
+   "lineas": [
+    947,
+    950
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 24,
+   "lineas": [
+    956,
+    960
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 25,
+   "lineas": [
+    993,
+    996
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 25,
+   "lineas": [
+    1004,
+    1013
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    1017,
+    1020
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    1026,
+    1032
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 25,
+   "lineas": [
+    1040,
+    1048
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 25,
+   "lineas": [
+    1056,
+    1062
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b8",
+  "b9"
+ ],
+ "notas_ingresos": [
+  "b22",
+  "b23"
+ ],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "(VALORES EXPRESSOS EM MILHARES DE EUROS) en el balance (b7); se asume igual para la demonstração dos resultados en pág. 19",
+ "moneda": "EUR",
+ "columna_ejercicio": "30 JUN 07",
+ "columna_anterior": "30 JUN 06",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga los cuadros de gestión de la pág. 8 (b1, b2, b3) que comparan presupuesto con resultados 30 JUN 07?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Son un resumen del informe de gestión con orçamento y una clasificación propia (bilheteira, bilhetes época); el estado oficial es b8/b9.",
+   "bloques": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿La demonstração dos resultados de la pág. 19 está expresada en miles de euros como el balance?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "La frase de escala aparece sobre el balance (b7) y no se ve sobre b8/b9.",
+   "bloques": [
+    "b7",
+    "b8",
+    "b9"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo SAD individual (Sporting SAD); no hay consolidado. Estado: b8 (custos e perdas) y b9 (proveitos e ganhos). Notas 45 (b22) y 46 (b23) desglosan resultados financieros y extraordinarios, con costos y proveitos en el mismo cuadro; se listan en notas_ingresos pero aplican también a gastos."
+}

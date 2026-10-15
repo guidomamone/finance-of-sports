@@ -1,0 +1,708 @@
+{
+ "pdf": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.pdf",
+ "generado": "2026-10-15T22:34:41.767Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (felgueiras-pt)"
+  },
+  {
+   "etapa": "alta:fx",
+   "motivo": "El documento declara un tipo de cambio con el dólar (1.0898 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 0.7381 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 0.8562 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 1.0739 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\")). En EUR el número solo no dice el sentido: el sitio guarda \"EUR por 1 USD\" (~0.7-1.15); si el documento escribió \"USD por 1 EUR\" hay que invertirlo. ¿Cuál es el de CIERRE y en qué sentido está?"
+  },
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros\" -> admin_general_expense 0.55; \"Outros\" -> admin_general_expense 0.55"
+  },
+  {
+   "etapa": "fx",
+   "motivo": "sin tipo de cambio: el documento declara 4 valores de tipo de cambio a USD: 1.0898 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 0.7381 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 0.8562 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 1.0739 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\")"
+  }
+ ],
+ "avisos": [
+  "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "felgueiras-pt",
+  "year": 2023,
+  "cierre": "2023-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Vendas e serviços prestados",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 0.179315,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subsídios à exploração",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.008297,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros rendimentos",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.009521,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Trabalhos especializados",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.051727,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Publicidade e propaganda",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.000509,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Vigilância e segurança",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.00153,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Honorários",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.002,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.015736,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ferramentas e utensílios de desgaste rápido",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.019351,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Material de escritório",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.000932,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Eletricidade",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.00164,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Água",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.000007,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.000047,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Deslocações e estadas",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.010869,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Transportes de mercadorias",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.007276,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Serviços diversos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.189825,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos com o pessoal",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.458634,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros gastos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.000052,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos/reversões de depreciação e de amortização",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.001175,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "sourceId": "felgueiras-pt-fecho-contas-2022-2023",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.000123,
+   "tax": -0.002884,
+   "extraRows": [
+    {
+     "label": "Gasto líquido de financiamento",
+     "value": -0.000123
+    },
+    {
+     "label": "Imposto sobre o rendimento do período",
+     "value": -0.002884
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Vendas e serviços prestados",
+     "lado": "revenue",
+     "importe": 0.179315,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 0.197133,
+   "officialTotalExpenses": 0.76131,
+   "officialPAT": -0.567184
+  },
+  "source": {
+   "id": "felgueiras-pt-fecho-contas-2022-2023",
+   "clubId": "felgueiras-pt",
+   "title": "Felgueiras — Fecho-contas-2022-2023 (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-06-30",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-15): periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)"
+ },
+ "clubId": "felgueiras-pt",
+ "year": 2023,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.pdf",
+   "campo": "cierre",
+   "valor": "2023-06-30",
+   "linea": null,
+   "motivo": "periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)",
+   "evidencia": ".md L102 balanço em 30 de junho de 2023 (L303 dice 31 de dezembro por plantilla)",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
+ "seleccion": {
+  "filas": 21,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Vendas e serviços prestados",
+   "page": 19,
+   "native": 0.179315,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.179315,
+   "cat": "lump_football_operations",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.179315
+  },
+  {
+   "label": "Subsídios à exploração",
+   "page": 19,
+   "native": 0.008297,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.008297,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.008297
+  },
+  {
+   "label": "Outros rendimentos",
+   "page": 19,
+   "native": 0.009521,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.009521,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.009521
+  },
+  {
+   "label": "Trabalhos especializados",
+   "page": 36,
+   "native": 0.051727,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\")",
+   "signoFijo": 0.051727,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.051727
+  },
+  {
+   "label": "Publicidade e propaganda",
+   "page": 36,
+   "native": 0.000509,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\")",
+   "signoFijo": 0.000509,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.000509
+  },
+  {
+   "label": "Vigilância e segurança",
+   "page": 36,
+   "native": 0.00153,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\")",
+   "signoFijo": 0.00153,
+   "cat": "match_organisation_expense",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.00153
+  },
+  {
+   "label": "Honorários",
+   "page": 36,
+   "native": 0.002,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\")",
+   "signoFijo": 0.002,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.002
+  },
+  {
+   "label": "Outros",
+   "page": 36,
+   "native": 0.015736,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\")",
+   "signoFijo": 0.015736,
+   "cat": "admin_general_expense",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.015736
+  },
+  {
+   "label": "Ferramentas e utensílios de desgaste rápido",
+   "page": 36,
+   "native": 0.019351,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\")",
+   "signoFijo": 0.019351,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.019351
+  },
+  {
+   "label": "Material de escritório",
+   "page": 36,
+   "native": 0.000932,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\")",
+   "signoFijo": 0.000932,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.000932
+  },
+  {
+   "label": "Eletricidade",
+   "page": 36,
+   "native": 0.00164,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\")",
+   "signoFijo": 0.00164,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.00164
+  },
+  {
+   "label": "Água",
+   "page": 36,
+   "native": 0.000007,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\")",
+   "signoFijo": 0.000007,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.000007
+  },
+  {
+   "label": "Outros",
+   "page": 36,
+   "native": 0.000047,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\")",
+   "signoFijo": 0.000047,
+   "cat": "admin_general_expense",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.000047
+  },
+  {
+   "label": "Deslocações e estadas",
+   "page": 36,
+   "native": 0.010869,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Deslocações, estadas e transportes\")",
+   "signoFijo": 0.010869,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.010869
+  },
+  {
+   "label": "Transportes de mercadorias",
+   "page": 36,
+   "native": 0.007276,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Deslocações, estadas e transportes\")",
+   "signoFijo": 0.007276,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Vitória Guimarães), nota:fornecimentos e servicos externos · Claude 2026-10-15 (subagente Sonnet, seguridad alta): energía, fluidos y transporte [wf-src-Relatorio-e-Contas-2021-22-SAD.md L1969, L1975]",
+   "destino": "expense",
+   "amountNative": -0.007276
+  },
+  {
+   "label": "Serviços diversos",
+   "page": 36,
+   "native": 0.189825,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.189825,
+   "cat": "other_expenses",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.189825
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "page": 19,
+   "native": 0.458634,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.458634,
+   "cat": "wages_squad",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.458634
+  },
+  {
+   "label": "Outros gastos",
+   "page": 19,
+   "native": 0.000052,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.000052,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.000052
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização",
+   "page": 19,
+   "native": 0.001175,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.001175,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Nacional), titulo:rendimentos e gastos · Claude 2026-10-15 (subagente Sonnet, seguridad alta; revisado por Claude): 81.250 es la amortización de pases (nota 7, solo columna Jogadores); las depreciaciones tangibles del ejercicio son 0 (nota 6: saldo inicial = final) [relatorio-contas-2023-24.md L139, L446-464]",
+   "destino": "expense",
+   "amountNative": -0.001175
+  },
+  {
+   "label": "Gasto líquido de financiamento",
+   "page": null,
+   "native": -0.000123,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposto sobre o rendimento do período",
+   "page": null,
+   "native": -0.002884,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Deslocações, estadas e transportes\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 0.197133,
+  "expSum": -0.76131,
+  "officialTotalRevenue": 0.197133,
+  "officialTotalExpenses": 0.76131,
+  "officialPAT": -0.567184,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.567184,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 0.197133
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 0.76131
+  }
+ },
+ "liga": {
+  "valor": "pt-liga3",
+  "fuente": "roster cacheado de \"2022–23 Liga 3 (Portugal)\" (tools/club-league-reference/pt.json), coincidencia única por palabras \"Felgueiras 1932\" = \"Felgueiras\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Portugal (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": [
+    1.0898,
+    0.7381,
+    0.8562,
+    1.0739
+   ],
+   "fuente": "el documento declara 4 valores de tipo de cambio a USD: 1.0898 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 0.7381 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 0.8562 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 1.0739 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\")",
+   "estado": "pregunta"
+  },
+  "sourceId": {
+   "valor": "felgueiras-pt-fecho-contas-2022-2023",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "pt-liga3",
+   "fuente": "roster cacheado de \"2022–23 Liga 3 (Portugal)\" (tools/club-league-reference/pt.json), coincidencia única por palabras \"Felgueiras 1932\" = \"Felgueiras\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 4,
+  "lineasIngreso": 3,
+  "lineasGasto": 16,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2018-19.pdf",
+ "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2018-19.md",
+ "mdSha1": "2adb20507e20067417a99805569566fa40b4f8b2",
+ "modo": "digital",
+ "motivoModo": "13 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 3285 vs 5285, 9647 vs 9627, 1971 vs 1941; 84 números del .md no están en el PDF (tolerancia 70)",
+ "generado": "2026-10-15T20:32:36.662Z",
+ "fuentes": {
+  "40": "pdftotext",
+  "79": "pdftotext",
+  "97": "pdftotext",
+  "98": "pdftotext",
+  "99": "pdftotext",
+  "100": "pdftotext",
+  "101": "pdftotext",
+  "102": "pdftotext",
+  "103": "pdftotext"
+ },
+ "confirmados": 251,
+ "noConfirmados": []
+}

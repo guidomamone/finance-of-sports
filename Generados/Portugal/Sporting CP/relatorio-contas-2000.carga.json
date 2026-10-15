@@ -1,0 +1,53 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf",
+ "generado": "2026-10-15T22:34:48.909Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "periodo",
+   "motivo": "el nombre del archivo dice otro cierre que el contenido (2001-07-31): confirmar qué ejercicio es antes de cargarlo"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (sportingcp-pt)"
+  },
+  {
+   "etapa": "alta:currency",
+   "motivo": "El ejercicio 2000 es anterior a 2002: el documento puede estar en PTE (12 menciones de la moneda vieja, 0 de EUR). El sitio no tiene ninguna moneda \"legado\" cargada: ¿se carga en PTE (con su fx a USD de ese cierre) o se convierte a EUR a la paridad fija?"
+  },
+  {
+   "etapa": "moneda",
+   "motivo": "el ejercicio saldría en PTE y el club reporta en EUR"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
+  "el documento cierra 2000-07-31 (ejercicio desde el 08-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2001-07-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada",
+  "nombreNoCoincide": true
+ },
+ "clubId": "sportingcp-pt",
+ "year": 2000,
+ "cortadoEn": "filas"
+}

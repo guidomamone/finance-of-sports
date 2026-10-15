@@ -1,0 +1,292 @@
+{
+ "pdf": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.pdf",
+ "md": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md",
+ "generado": "2026-10-15T21:56:50.145Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": null,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.pdf",
+   "campo": "cierre",
+   "valor": "2023-06-30",
+   "linea": null,
+   "motivo": "periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)",
+   "evidencia": ".md L102 balanço em 30 de junho de 2023 (L303 dice 31 de dezembro por plantilla)",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.1102230246251565e-16
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Vendas e serviços prestados\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "el desglose de \"Serviços diversos\" (7 filas) no suma la fila: quedó la fila",
+  "duda de localizar que no afecta la carga: b1 parece repetir el total de Gastos com Pessoal ya presente en b6 sin desglosarlo.",
+  "duda de localizar que no afecta la carga: Una sola actividad y desglose geográfico que no abre categorías de ingresos o gastos.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Serviços diversos",
+   "suma": 0.189825,
+   "objetivo": 0.189825
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Serviços diversos",
+   "suma": 0.189825,
+   "objetivo": 0.189825
+  }
+ ],
+ "totales": {
+  "ingresos": 0.197133,
+  "gastos": 0.76131,
+  "financiero": -0.000123,
+  "impuesto": -0.002884,
+  "resultadoImpreso": -0.567184,
+  "resultadoParaCargar": -0.567184,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Vendas e serviços prestados",
+   "lado": "ingreso",
+   "M": 0.179315,
+   "pagina": 19,
+   "linea": 571,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0.008297,
+   "pagina": 19,
+   "linea": 572,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros rendimentos",
+   "lado": "ingreso",
+   "M": 0.009521,
+   "pagina": 19,
+   "linea": 575,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Trabalhos especializados",
+   "lado": "gasto",
+   "M": 0.051727,
+   "pagina": 36,
+   "linea": 1569,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\""
+  },
+  {
+   "etiqueta": "Publicidade e propaganda",
+   "lado": "gasto",
+   "M": 0.000509,
+   "pagina": 36,
+   "linea": 1570,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\""
+  },
+  {
+   "etiqueta": "Vigilância e segurança",
+   "lado": "gasto",
+   "M": 0.00153,
+   "pagina": 36,
+   "linea": 1571,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\""
+  },
+  {
+   "etiqueta": "Honorários",
+   "lado": "gasto",
+   "M": 0.002,
+   "pagina": 36,
+   "linea": 1572,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.015736,
+   "pagina": 36,
+   "linea": 1573,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\""
+  },
+  {
+   "etiqueta": "Ferramentas e utensílios de desgaste rápido",
+   "lado": "gasto",
+   "M": 0.019351,
+   "pagina": 36,
+   "linea": 1575,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\""
+  },
+  {
+   "etiqueta": "Material de escritório",
+   "lado": "gasto",
+   "M": 0.000932,
+   "pagina": 36,
+   "linea": 1576,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\""
+  },
+  {
+   "etiqueta": "Eletricidade",
+   "lado": "gasto",
+   "M": 0.00164,
+   "pagina": 36,
+   "linea": 1578,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\""
+  },
+  {
+   "etiqueta": "Água",
+   "lado": "gasto",
+   "M": 0.000007,
+   "pagina": 36,
+   "linea": 1579,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.000047,
+   "pagina": 36,
+   "linea": 1580,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\""
+  },
+  {
+   "etiqueta": "Deslocações e estadas",
+   "lado": "gasto",
+   "M": 0.010869,
+   "pagina": 36,
+   "linea": 1582,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Deslocações, estadas e transportes\""
+  },
+  {
+   "etiqueta": "Transportes de mercadorias",
+   "lado": "gasto",
+   "M": 0.007276,
+   "pagina": 36,
+   "linea": 1583,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Deslocações, estadas e transportes\""
+  },
+  {
+   "etiqueta": "Serviços diversos",
+   "lado": "gasto",
+   "M": 0.189825,
+   "pagina": 36,
+   "linea": 1584,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Gastos com o pessoal",
+   "lado": "gasto",
+   "M": 0.458634,
+   "pagina": 19,
+   "linea": 574,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros gastos",
+   "lado": "gasto",
+   "M": 0.000052,
+   "pagina": 19,
+   "linea": 576,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "lado": "gasto",
+   "M": 0.001175,
+   "pagina": 19,
+   "linea": 578,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Gasto líquido de financiamento",
+   "M": -0.000123,
+   "linea": 580
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": -0.002884,
+   "linea": 582
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "1d9580b16865b02d4284a6c01dbd8e53f6eba4ca",
+  "rango": [
+   568,
+   586
+  ],
+  "lineasCargadas": [
+   571,
+   572,
+   575,
+   1569,
+   1570,
+   1571,
+   1572,
+   1573,
+   1575,
+   1576,
+   1578,
+   1579,
+   1580,
+   1582,
+   1583,
+   1584,
+   574,
+   576,
+   578,
+   580,
+   582
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 568 a 586 del .md):\nL568: |  RENDIMENTOS E GASTOS | PERÍODOS  |   |\nL569: | --- | --- | --- |\nL570: |   |  jun 2023 | jun 2022  |\nL571: |  Vendas e serviços prestados | 179 314,51 | 138 985,49  |\nL572: |  Subsídios à exploração | 8 296,87 | 4 028,63  |\nL573: |  Fornecimentos e serviços externos | (301 449,15) | (152 312,85)  |\nL574: |  Gastos com o pessoal | (458 634,27) | (383 628,34)  |\nL575: |  Outros rendimentos | 9 521,45 | 984,28  |\nL576: |  Outros gastos | (52,07) | (136 213,01)  |\nL577: |  Resultado antes de depreciações, gastos de financiamento e impostos | (563 002,66) | (528 155,80)  |\nL578: |  Gastos/reversões de depreciação e de amortização | (1 175,00) |   |\nL579: |  Resultado operacional (antes de gastos de financiamento e impostos) | (564 177,66) | (528 155,80)  |\nL580: |  Gasto líquido de financiamento | (122,72) | (295,37)  |\nL581: |  Resultado antes de impostos | (564 300,38) | (528 451,17)  |\nL582: |  Imposto sobre o rendimento do período | (2 883,58) |   |\nL583: |  Resultado líquido do período | (567 183,96) | (528 451,17)  |\nL585: Administração / Gerência\n\nLO QUE SE CARGA:\n- ingreso · \"Vendas e serviços prestados\" · 0.179315 · L571\n- ingreso · \"Subsídios à exploração\" · 0.008297 · L572\n- ingreso · \"Outros rendimentos\" · 0.009521 · L575\n- gasto · \"Trabalhos especializados\" · 0.051727 · L1569 (de una nota)\n- gasto · \"Publicidade e propaganda\" · 0.000509 · L1570 (de una nota)\n- gasto · \"Vigilância e segurança\" · 0.00153 · L1571 (de una nota)\n- gasto · \"Honorários\" · 0.002 · L1572 (de una nota)\n- gasto · \"Outros\" · 0.015736 · L1573 (de una nota)\n- gasto · \"Ferramentas e utensílios de desgaste rápido\" · 0.019351 · L1575 (de una nota)\n- gasto · \"Material de escritório\" · 0.000932 · L1576 (de una nota)\n- gasto · \"Eletricidade\" · 0.00164 · L1578 (de una nota)\n- gasto · \"Água\" · 0.000007 · L1579 (de una nota)\n- gasto · \"Outros\" · 0.000047 · L1580 (de una nota)\n- gasto · \"Deslocações e estadas\" · 0.010869 · L1582 (de una nota)\n- gasto · \"Transportes de mercadorias\" · 0.007276 · L1583 (de una nota)\n- gasto · \"Serviços diversos\" · 0.189825 · L1584 (de una nota)\n- gasto · \"Gastos com o pessoal\" · 0.458634 · L574\n- gasto · \"Outros gastos\" · 0.000052 · L576\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 0.001175 · L578\n- financiero · \"Gasto líquido de financiamento\" · -0.000123 · L580\n- impuesto · \"Imposto sobre o rendimento do período\" · -0.002884 · L582"
+ }
+}

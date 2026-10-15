@@ -1,0 +1,564 @@
+{
+ "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.pdf",
+ "md": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.md",
+ "mdSha1": "d8ca815f9d9c5898c2381a2663c39ec93890ed82",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T21:46:40.350Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b20",
+   "b21",
+   "b26"
+  ],
+  "notas_gastos": [
+   "b22",
+   "b23",
+   "b24",
+   "b27",
+   "b28"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "L72: (Valores expressos em euros)"
+  },
+  {
+   "bloque": "b20",
+   "escala": "unidades",
+   "evidencia": "Importes con decimales en euros; sin frase explícita, igual al estado"
+  },
+  {
+   "bloque": "b21",
+   "escala": "unidades",
+   "evidencia": "Importes con decimales que coinciden con el estado"
+  },
+  {
+   "bloque": "b26",
+   "escala": "unidades",
+   "evidencia": "Importes con decimales que coinciden con el estado"
+  },
+  {
+   "bloque": "b22",
+   "escala": "unidades",
+   "evidencia": "Importes con símbolo €"
+  },
+  {
+   "bloque": "b23",
+   "escala": "unidades",
+   "evidencia": "Total coincide con el estado"
+  },
+  {
+   "bloque": "b24",
+   "escala": "unidades",
+   "evidencia": "Total coincide con el estado"
+  },
+  {
+   "bloque": "b27",
+   "escala": "unidades",
+   "evidencia": "Total coincide con el estado"
+  },
+  {
+   "bloque": "b28",
+   "escala": "unidades",
+   "evidencia": "Total coincide con el estado"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 76,
+   "etiqueta": "Vendas e Prestação de serviços",
+   "actual": "597 358,88",
+   "anterior": "183 086,61",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 77,
+   "etiqueta": "Subsídios à exploração",
+   "actual": "5 487,62",
+   "anterior": "2 287,43",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 78,
+   "etiqueta": "Custo das mercadorias vendidas e das matérias consumidas",
+   "actual": "-25 688,77",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 79,
+   "etiqueta": "Fornecimentos e serviços externos",
+   "actual": "-1 921 074,37",
+   "anterior": "-598 988,05",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 80,
+   "etiqueta": "Gastos com o pessoal",
+   "actual": "-1 393 182,11",
+   "anterior": "-627 626,65",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 81,
+   "etiqueta": "Outros rendimentos",
+   "actual": "10 666,24",
+   "anterior": "93 590,02",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 82,
+   "etiqueta": "Outros gastos",
+   "actual": "-97 431,15",
+   "anterior": "-104 969,36",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 83,
+   "etiqueta": "Resultado antes de depreciações, gastos de financiamento e impostos",
+   "actual": "-2 823 863,66",
+   "anterior": "-1 052 620,00",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 84,
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "actual": "-39 271,07",
+   "anterior": "-4 749,05",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 85,
+   "etiqueta": "Resultado operacional (antes de gastos de financiamento e impostos)",
+   "actual": "-2 863 134,73",
+   "anterior": "-1 057 369,05",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 86,
+   "etiqueta": "Gastos de financiamento",
+   "actual": "-79 298,66",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 87,
+   "etiqueta": "Resultado antes de impostos",
+   "actual": "-2 942 433,39",
+   "anterior": "-1 057 369,05",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 88,
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "actual": "-67 468,06",
+   "anterior": "-23 344,43",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 89,
+   "etiqueta": "Resultado líquido do período",
+   "actual": "-3 009 901,45",
+   "anterior": "-1 080 713,48",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 654,
+   "etiqueta": "Vendas de mercadorias",
+   "actual": "41 386,30",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e Prestação de serviços"
+  },
+  {
+   "bloque": "b20",
+   "linea": 655,
+   "etiqueta": "Prestação de serviços",
+   "actual": "555 972,58",
+   "anterior": "183 086,61",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e Prestação de serviços"
+  },
+  {
+   "bloque": "b20",
+   "linea": 656,
+   "etiqueta": "",
+   "actual": "597 358,88",
+   "anterior": "183 086,61",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e Prestação de serviços"
+  },
+  {
+   "bloque": "b21",
+   "linea": 674,
+   "etiqueta": "Subsídios do estado e outros entes públicas",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Subsídios à exploração"
+  },
+  {
+   "bloque": "b21",
+   "linea": 675,
+   "etiqueta": "Subsídios de outras entidades",
+   "actual": "5 487,62",
+   "anterior": "2 287,43",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Subsídios à exploração"
+  },
+  {
+   "bloque": "b21",
+   "linea": 676,
+   "etiqueta": "",
+   "actual": "5 487,62",
+   "anterior": "2 287,43",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Subsídios à exploração"
+  },
+  {
+   "bloque": "b26",
+   "linea": 768,
+   "etiqueta": "Rendimentos suplementares",
+   "actual": "0,00",
+   "anterior": "55 000,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b26",
+   "linea": 769,
+   "etiqueta": "Descontos de pronto pagamento obtidos",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b26",
+   "linea": 770,
+   "etiqueta": "Rendimentos e ganhos em inv. não financeiros",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b26",
+   "linea": 771,
+   "etiqueta": "Outros rendimentos e ganhos",
+   "actual": "10 666,24",
+   "anterior": "38 590,02",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b26",
+   "linea": 772,
+   "etiqueta": "",
+   "actual": "10 666,24",
+   "anterior": "93 590,02",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b22",
+   "linea": 688,
+   "etiqueta": "Custo das mercadorias vendidas",
+   "actual": "25 688,77 €",
+   "anterior": "- €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 699,
+   "etiqueta": "Serviços especializados",
+   "actual": "1 192 124,99",
+   "anterior": "388 742,61",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b23",
+   "linea": 700,
+   "etiqueta": "Materiais",
+   "actual": "124 234,50",
+   "anterior": "15 959,66",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b23",
+   "linea": 701,
+   "etiqueta": "Energia e fluídos",
+   "actual": "5 604,15",
+   "anterior": "5 257,86",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b23",
+   "linea": 702,
+   "etiqueta": "Deslocações e estadas",
+   "actual": "304 152,70",
+   "anterior": "78 659,08",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b23",
+   "linea": 703,
+   "etiqueta": "Rendas e alugueres",
+   "actual": "207 123,77",
+   "anterior": "96 038,97",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b23",
+   "linea": 704,
+   "etiqueta": "Serviços diversos (*)",
+   "actual": "87 834,26",
+   "anterior": "14 329,87",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b23",
+   "linea": 705,
+   "etiqueta": "",
+   "actual": "1 921 074,37",
+   "anterior": "598 988,05",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b24",
+   "linea": 729,
+   "etiqueta": "Remunerações do pessoal",
+   "actual": "1 043 239,21",
+   "anterior": "515 774,36",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b24",
+   "linea": 730,
+   "etiqueta": "Indemnizações",
+   "actual": "31 000,00",
+   "anterior": "422,75",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b24",
+   "linea": 731,
+   "etiqueta": "Encargos sobre remunerações",
+   "actual": "97 499,27",
+   "anterior": "49 126,46",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b24",
+   "linea": 732,
+   "etiqueta": "Seguros",
+   "actual": "33 433,24",
+   "anterior": "20 448,01",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b24",
+   "linea": 733,
+   "etiqueta": "Outros gastos com pessoal",
+   "actual": "188 010,39",
+   "anterior": "41 855,07",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b24",
+   "linea": 734,
+   "etiqueta": "",
+   "actual": "1 393 182,11",
+   "anterior": "627 626,65",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b27",
+   "linea": 780,
+   "etiqueta": "Impostos",
+   "actual": "3 984,16",
+   "anterior": "298,15",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b27",
+   "linea": 781,
+   "etiqueta": "Descontos de pronto pagamento concedidos",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b27",
+   "linea": 782,
+   "etiqueta": "Dividas incobráveis",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b27",
+   "linea": 783,
+   "etiqueta": "Perdas em inventários",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b27",
+   "linea": 784,
+   "etiqueta": "Outros gastos e perdas",
+   "actual": "93 446,99",
+   "anterior": "104 671,21",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b27",
+   "linea": 785,
+   "etiqueta": "",
+   "actual": "97 431,15",
+   "anterior": "104 969,36",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b28",
+   "linea": 795,
+   "etiqueta": "Juros de financiamentos obtidos",
+   "actual": "79 298,66",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Gastos de financiamento"
+  },
+  {
+   "bloque": "b28",
+   "linea": 796,
+   "etiqueta": "",
+   "actual": "79 298,66",
+   "anterior": "0,00",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Gastos de financiamento"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 89,
+  "actual": "-3 009 901,45",
+  "anterior": "-1 080 713,48"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan solo la fila 'Custo das mercadorias vendidas' (L688) del cuadro de inventarios b22, dejando afuera saldo inicial, compras y saldo final?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
+   "texto": "El cuadro L685-L689 es un movimiento de inventario; solo L688 es gasto del ejercicio (columna Total).",
+   "bloques": [
+    "b22"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado sin totales de ingresos ni gastos impresos. Las notas b20 y b22 tienen columnas por mercado/tipo; se tomó la columna Total (b20 coincide con Mercado Interno). Subtotales de notas sin etiqueta impresa."
+}

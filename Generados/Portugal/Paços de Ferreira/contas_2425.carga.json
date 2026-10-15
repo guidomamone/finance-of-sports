@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Portugal/Paços de Ferreira/contas_2425.pdf",
+ "generado": "2026-10-15T22:34:44.976Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (pacosdeferreira-pt)"
+  },
+  {
+   "etapa": "año",
+   "motivo": "alta-club.mjs dice ejercicio 2025 y quien.mjs --quien (el que usa el registro) dice 2425"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Portugal/Paços de Ferreira/contas_2425.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "Demonstração dos Resultados por natureza do período de 01 de julho de 2024 a 30 de junho de 2025"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "pacosdeferreira-pt",
+ "year": 2025,
+ "cortadoEn": "filas"
+}

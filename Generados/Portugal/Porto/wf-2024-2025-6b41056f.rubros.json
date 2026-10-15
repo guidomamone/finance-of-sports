@@ -1,0 +1,457 @@
+{
+  "md": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.md",
+  "pdf": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf",
+  "club": "porto",
+  "year": 2025,
+  "generatedAt": "2026-10-15T22:54:26.355Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Vendas",
+      "lado": "revenue",
+      "page": 117,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        11.09
+      ],
+      "glosa": "Ventas"
+    },
+    {
+      "label": "Prémios competições UEFA",
+      "lado": "revenue",
+      "page": 152,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        17.179
+      ],
+      "glosa": "Premios de competiciones UEFA"
+    },
+    {
+      "label": "Prémios competições FIFA",
+      "lado": "revenue",
+      "page": 152,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        17.047
+      ],
+      "glosa": "Premios de competiciones FIFA"
+    },
+    {
+      "label": "Receita de bilheteira",
+      "lado": "revenue",
+      "page": 152,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        7.102
+      ],
+      "glosa": "Ingresos de taquilla"
+    },
+    {
+      "label": "Receita de lugares anuais",
+      "lado": "revenue",
+      "page": 152,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        6.485
+      ],
+      "glosa": "Ingresos por abonos anuales"
+    },
+    {
+      "label": "Outras receitas desportivas",
+      "lado": "revenue",
+      "page": 152,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        2.246
+      ],
+      "glosa": "Otros ingresos deportivos"
+    },
+    {
+      "label": "Publicidade",
+      "lado": "revenue",
+      "page": 152,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        19.579
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Direitos de transmissões",
+      "lado": "revenue",
+      "page": 152,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        42.926
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Corporate Hospitality",
+      "lado": "revenue",
+      "page": 152,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        10.553
+      ],
+      "glosa": "Hospitalidad corporativa"
+    },
+    {
+      "label": "Outras prestações de serviços",
+      "lado": "revenue",
+      "page": 152,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        12.484
+      ],
+      "glosa": "Otras prestaciones de servicios"
+    },
+    {
+      "label": "Diferencia de redondeo",
+      "lado": "revenue",
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        0.001
+      ],
+      "glosa": "Diferencia de redondeo"
+    },
+    {
+      "label": "Outros proveitos",
+      "lado": "revenue",
+      "page": 117,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.849
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Proveitos com alienações de passes de jogadores (i)",
+      "lado": "revenue",
+      "page": 156,
+      "section": "nota que desglosa \"Proveitos com transações de passes de jogadores\"",
+      "values": [
+        154.949
+      ],
+      "glosa": "Ingresos por enajenación de derechos federativos de jugadores (i)"
+    },
+    {
+      "label": "Proveitos com empréstimos de jogadores",
+      "lado": "revenue",
+      "page": 156,
+      "section": "nota que desglosa \"Proveitos com transações de passes de jogadores\"",
+      "values": [
+        11.554
+      ],
+      "glosa": "Ingresos por cesiones de jugadores"
+    },
+    {
+      "label": "Outros proveitos com jogadores",
+      "lado": "revenue",
+      "page": 156,
+      "section": "nota que desglosa \"Proveitos com transações de passes de jogadores\"",
+      "values": [
+        4.999
+      ],
+      "glosa": "Otros ingresos relacionados con jugadores"
+    },
+    {
+      "label": "Custo das vendas",
+      "lado": "expense",
+      "page": 117,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6.849
+      ],
+      "glosa": "Coste de las ventas"
+    },
+    {
+      "label": "Trabalhos especializados",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        8.824
+      ],
+      "glosa": "Trabajos especializados"
+    },
+    {
+      "label": "Subcontratos",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        6.563
+      ],
+      "glosa": "Subcontratos"
+    },
+    {
+      "label": "Direitos de imagem de atletas",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        3.838
+      ],
+      "glosa": "Derechos de imagen de deportistas"
+    },
+    {
+      "label": "Rendas e alugueres",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        3.247
+      ],
+      "glosa": "Arrendamientos y alquileres"
+    },
+    {
+      "label": "Vigilância e segurança",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        2.61
+      ],
+      "glosa": "Vigilancia y seguridad"
+    },
+    {
+      "label": "Despesas de organização",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        2.577
+      ],
+      "glosa": "Gastos de organización"
+    },
+    {
+      "label": "Honorários",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        2.124
+      ],
+      "glosa": "Honorarios"
+    },
+    {
+      "label": "Publicidade e propaganda",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.865
+      ],
+      "glosa": "Publicidad y propaganda"
+    },
+    {
+      "label": "Serviços de catering",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.863
+      ],
+      "glosa": "Servicios de catering"
+    },
+    {
+      "label": "Material desportivo",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.766
+      ],
+      "glosa": "Material deportivo"
+    },
+    {
+      "label": "Comunicação",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.457
+      ],
+      "glosa": "Comunicaciones"
+    },
+    {
+      "label": "Conservação e reparação",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.38
+      ],
+      "glosa": "Conservación y reparación"
+    },
+    {
+      "label": "Seguros",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.302
+      ],
+      "glosa": "Seguros"
+    },
+    {
+      "label": "Limpeza, higiene e conforto",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.198
+      ],
+      "glosa": "Limpieza, higiene y confort"
+    },
+    {
+      "label": "Combustíveis",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.867
+      ],
+      "glosa": "Combustibles"
+    },
+    {
+      "label": "Eletricidade",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.774
+      ],
+      "glosa": "Electricidad"
+    },
+    {
+      "label": "Despesas de representação",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.202
+      ],
+      "glosa": "Gastos de representación"
+    },
+    {
+      "label": "Outros fornecimentos e serviços",
+      "lado": "expense",
+      "page": 153,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        4.278
+      ],
+      "glosa": "Otros suministros y servicios"
+    },
+    {
+      "label": "Diferencia de redondeo",
+      "lado": "expense",
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        -0.001
+      ],
+      "glosa": "Diferencia de redondeo"
+    },
+    {
+      "label": "Custos com o pessoal",
+      "lado": "expense",
+      "page": 117,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        81.939
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Depreciações e Amortizações, excluindo passes de jogadores",
+      "lado": "expense",
+      "page": 117,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        10.375
+      ],
+      "glosa": "Depreciaciones y amortizaciones, excluyendo derechos de jugadores"
+    },
+    {
+      "label": "Provisões e perdas por imparidade excluindo passes de jogadores",
+      "lado": "expense",
+      "page": 117,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        -0.851
+      ],
+      "glosa": "Provisiones y pérdidas por deterioro, excluyendo derechos de jugadores"
+    },
+    {
+      "label": "Outros custos",
+      "lado": "expense",
+      "page": 117,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.053
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Amortizações de passes de jogadores",
+      "lado": "expense",
+      "page": 156,
+      "section": "nota que desglosa \"Amortizações e perdas por imparidade com passes de jogadores\"",
+      "values": [
+        31.036
+      ],
+      "glosa": "Amortizaciones de derechos de jugadores"
+    },
+    {
+      "label": "Perdas por imparidade com passes de jogadores",
+      "lado": "expense",
+      "page": 156,
+      "section": "nota que desglosa \"Amortizações e perdas por imparidade com passes de jogadores\"",
+      "values": [
+        3.341
+      ],
+      "glosa": "Pérdidas por deterioro de derechos de jugadores"
+    },
+    {
+      "label": "Custos com alienações de passes de jogadores (ii)",
+      "lado": "expense",
+      "page": 156,
+      "section": "nota que desglosa \"Custos com transações de passes de jogadores\"",
+      "values": [
+        62.006
+      ],
+      "glosa": "Gastos por enajenación de derechos de jugadores (ii)"
+    },
+    {
+      "label": "Custos com empréstimos de jogadores",
+      "lado": "expense",
+      "page": 156,
+      "section": "nota que desglosa \"Custos com transações de passes de jogadores\"",
+      "values": [
+        5.784
+      ],
+      "glosa": "Gastos por cesiones de jugadores"
+    },
+    {
+      "label": "Outros custos com jogadores",
+      "lado": "expense",
+      "page": 156,
+      "section": "nota que desglosa \"Custos com transações de passes de jogadores\"",
+      "values": [
+        3.276
+      ],
+      "glosa": "Otros gastos relacionados con jugadores"
+    },
+    {
+      "label": "Diferencia de redondeo",
+      "lado": "expense",
+      "section": "nota que desglosa \"Custos com transações de passes de jogadores\"",
+      "values": [
+        0.001
+      ],
+      "glosa": "Diferencia de redondeo"
+    }
+  ]
+}

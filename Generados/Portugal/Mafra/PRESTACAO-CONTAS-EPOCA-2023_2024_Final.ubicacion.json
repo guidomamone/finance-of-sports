@@ -1,0 +1,299 @@
+{
+ "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
+ "md": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md",
+ "mdSha1": "587b9f9e97097f942ee9ee056d443b6625b78a1f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T19:48:02.114Z",
+ "bloques": {
+  "b1": {
+   "pagina": 11,
+   "lineas": [
+    311,
+    315
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 15,
+   "lineas": [
+    414,
+    462
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 16,
+   "lineas": [
+    478,
+    502
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 17,
+   "lineas": [
+    518,
+    561
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 21,
+   "lineas": [
+    743,
+    748
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 22,
+   "lineas": [
+    763,
+    789
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 23,
+   "lineas": [
+    805,
+    824
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 24,
+   "lineas": [
+    845,
+    862
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 24,
+   "lineas": [
+    870,
+    872
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 24,
+   "lineas": [
+    876,
+    880
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 24,
+   "lineas": [
+    884,
+    888
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 24,
+   "lineas": [
+    890,
+    891
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 25,
+   "lineas": [
+    905,
+    930
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 26,
+   "lineas": [
+    950,
+    963
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 26,
+   "lineas": [
+    975,
+    979
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 27,
+   "lineas": [
+    994,
+    1002
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    1016,
+    1041
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 28,
+   "lineas": [
+    1061,
+    1068
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    1074,
+    1081
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 29,
+   "lineas": [
+    1099,
+    1128
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 29,
+   "lineas": [
+    1142,
+    1155
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 30,
+   "lineas": [
+    1171,
+    1175
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 30,
+   "lineas": [
+    1183,
+    1197
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 31,
+   "lineas": [
+    1209,
+    1226
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 32,
+   "lineas": [
+    1242,
+    1276
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 33,
+   "lineas": [
+    1290,
+    1302
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 35,
+   "lineas": [
+    1357,
+    1415
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 36,
+   "lineas": [
+    1437,
+    1483
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 37,
+   "lineas": [
+    1494,
+    1537
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 38,
+   "lineas": [
+    1561,
+    1583
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b15",
+  "b16",
+  "b28",
+  "b29"
+ ],
+ "notas_gastos": [
+  "b14",
+  "b24",
+  "b25",
+  "b26"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con decimales y símbolo € (ej. 'Os diferimentos de gastos a reconhecer apresentam o valor de 5.397,18 €'); el estado no indica 'em milhares'.",
+ "moneda": "EUR",
+ "columna_ejercicio": "PERÍODOS 2024 (30-06-2024)",
+ "columna_anterior": "PERÍODOS 2023 (30-06-2023)",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el Anexo 3 'Demonstração dos Resultados' (b28-b29, columna ED*-1) como desglose de ingresos y gastos del estado SNC b3?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Outros rendimentos operacionais (f)",
+   "texto": "Es un formato regulatorio (Liga) que abre ingresos por bilheteira, patrocinios, TV y gastos de personal por equipa; reclasifica renglones del estado por naturaleza.",
+   "bloques": [
+    "b28",
+    "b29"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿La columna 'Contas Anuais ED*-1' de b28-b29 corresponde al ejercicio cerrado el 30-06-2024?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado no nombra el año; ED*-1 parece ser el último ejercicio (incluye la venta de atleta de 2.300.000 €).",
+   "bloques": [
+    "b28",
+    "b29"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados por naturaleza en b3 (individual, SAD). Notas: rédito b15, otros rendimentos b16, CMVMC b14, gastos con pessoal b24, FSE b25, otros gastos b26. Anexo 3 de la Liga (b28-b29) como desglose adicional. b1 es gráfico de la memoria, no se usa."
+}

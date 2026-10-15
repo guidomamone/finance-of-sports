@@ -1,0 +1,777 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.md",
+ "mdSha1": "05233642c25017e95d60682f7842481214d36765",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T21:08:54.113Z",
+ "ubicacion": {
+  "estado": [
+   "b7"
+  ],
+  "notas_ingresos": [
+   "b1",
+   "b19",
+   "b20"
+  ],
+  "notas_gastos": [
+   "b19",
+   "b20"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b7",
+   "escala": "miles",
+   "evidencia": "L424: (Valores expressos em milhares de euros)"
+  },
+  {
+   "bloque": "b1",
+   "escala": "miles",
+   "evidencia": "Sin frase de escala; importes coinciden con b7 (Total de Proveitos 27 316)"
+  },
+  {
+   "bloque": "b19",
+   "escala": "miles",
+   "evidencia": "Sin frase de escala; Total 867 coincide con Outros Juros e Proveitos Similares de b7"
+  },
+  {
+   "bloque": "b20",
+   "escala": "miles",
+   "evidencia": "Sin frase de escala; Total 8 538 coincide (±1) con Proveitos e Ganhos Extraordinários de b7"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b7",
+   "linea": 428,
+   "etiqueta": "Prestações de Serviços",
+   "actual": "17 607",
+   "anterior": "21 477",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 430,
+   "etiqueta": "Subsídios à Exploração",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 431,
+   "etiqueta": "Proveitos Suplementares",
+   "actual": "107",
+   "anterior": "874",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 432,
+   "etiqueta": "Outros Proveitos e Ganhos Operacionais",
+   "actual": "198",
+   "anterior": "465",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 433,
+   "etiqueta": "",
+   "actual": "305",
+   "anterior": "1 339",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 434,
+   "etiqueta": "(B)",
+   "actual": "17 912",
+   "anterior": "22 816",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 435,
+   "etiqueta": "Outros Juros e Proveitos Similares",
+   "actual": "867",
+   "anterior": "1 244",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 436,
+   "etiqueta": "(D)",
+   "actual": "18 779",
+   "anterior": "24 060",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 437,
+   "etiqueta": "Proveitos e Ganhos Extraordinários",
+   "actual": "8 537",
+   "anterior": "14 107",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 449,
+   "etiqueta": "(F)",
+   "actual": "27 316",
+   "anterior": "38 167",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 428,
+   "etiqueta": "Fornecimentos e Serviços Externos",
+   "actual": "8 174",
+   "anterior": "8 243",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 430,
+   "etiqueta": "Remunerações",
+   "actual": "21 891",
+   "anterior": "27 335",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 432,
+   "etiqueta": "Outros",
+   "actual": "1 101",
+   "anterior": "1 084",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 433,
+   "etiqueta": "",
+   "actual": "22 992",
+   "anterior": "28 419",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 435,
+   "etiqueta": "Corpóreo e Incorpóreo",
+   "actual": "16 936",
+   "anterior": "17 898",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 436,
+   "etiqueta": "Provisões",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 437,
+   "etiqueta": "",
+   "actual": "16 936",
+   "anterior": "17 898",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 438,
+   "etiqueta": "Impostos",
+   "actual": "102",
+   "anterior": "180",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 439,
+   "etiqueta": "Outros Custos e Perdas Operacionais",
+   "actual": "914",
+   "anterior": "703",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 440,
+   "etiqueta": "",
+   "actual": "1 016",
+   "anterior": "883",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 441,
+   "etiqueta": "(A)",
+   "actual": "49 118",
+   "anterior": "55 443",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 442,
+   "etiqueta": "Juros e Custos Similares",
+   "actual": "3 570",
+   "anterior": "3 241",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 443,
+   "etiqueta": "(C)",
+   "actual": "52 688",
+   "anterior": "58 684",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 444,
+   "etiqueta": "Custos e Perdas Extraordinários",
+   "actual": "1 925",
+   "anterior": "2 198",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 445,
+   "etiqueta": "(E)",
+   "actual": "54 613",
+   "anterior": "60 882",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 446,
+   "etiqueta": "Imposto sobre o Rendimento do Exerc",
+   "actual": "14",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 447,
+   "etiqueta": "(G)",
+   "actual": "54 627",
+   "anterior": "60 882",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 448,
+   "etiqueta": "Resultado Líquido do Exercício",
+   "actual": "( 27 311)",
+   "anterior": "( 22 715)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 449,
+   "etiqueta": "",
+   "actual": "27 316",
+   "anterior": "38 167",
+   "tipo": "total",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 450,
+   "etiqueta": "Resultados Operacionais: ( B ) - ( A )",
+   "actual": "( 31 206)",
+   "anterior": "( 32 627)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 451,
+   "etiqueta": "Resultados Financeiros: ( D-B ) - ( C-A )",
+   "actual": "( 2 703)",
+   "anterior": "( 1 997)",
+   "tipo": "resultado",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 452,
+   "etiqueta": "Resultados Correntes: ( D ) - ( C )",
+   "actual": "( 33 909)",
+   "anterior": "( 34 624)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 453,
+   "etiqueta": "Resultados Antes de Impostos: ( F ) - ( E )",
+   "actual": "( 27 297)",
+   "anterior": "( 22 715)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 454,
+   "etiqueta": "Resultado Líquido do Exercício: ( F ) - ( G )",
+   "actual": "( 27 311)",
+   "anterior": "( 22 715)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 700,
+   "etiqueta": "Juros Obtidos",
+   "actual": "335",
+   "anterior": "3",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Outros Juros e Proveitos Similares"
+  },
+  {
+   "bloque": "b19",
+   "linea": 701,
+   "etiqueta": "Dif. C. Favoráveis",
+   "actual": "532",
+   "anterior": "1 241",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Outros Juros e Proveitos Similares"
+  },
+  {
+   "bloque": "b19",
+   "linea": 702,
+   "etiqueta": "Desc. P. Pag. Obtidos",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Outros Juros e Proveitos Similares"
+  },
+  {
+   "bloque": "b19",
+   "linea": 703,
+   "etiqueta": "O. Prov G Financeiros",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Outros Juros e Proveitos Similares"
+  },
+  {
+   "bloque": "b19",
+   "linea": 704,
+   "etiqueta": "Total",
+   "actual": "867",
+   "anterior": "1 244",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Outros Juros e Proveitos Similares"
+  },
+  {
+   "bloque": "b19",
+   "linea": 700,
+   "etiqueta": "Juros Suportados",
+   "actual": "2 312",
+   "anterior": "1 422",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Juros e Custos Similares"
+  },
+  {
+   "bloque": "b19",
+   "linea": 701,
+   "etiqueta": "Dif. C. Desfavoráveis",
+   "actual": "1 102",
+   "anterior": "1 642",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Juros e Custos Similares"
+  },
+  {
+   "bloque": "b19",
+   "linea": 702,
+   "etiqueta": "O. Custos e P. Financ.",
+   "actual": "156",
+   "anterior": "177",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Juros e Custos Similares"
+  },
+  {
+   "bloque": "b19",
+   "linea": 703,
+   "etiqueta": "Resultado Financeiro",
+   "actual": "(2 703)",
+   "anterior": "(1 997)",
+   "tipo": "resultado",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 704,
+   "etiqueta": "Total",
+   "actual": "867",
+   "anterior": "1 244",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 716,
+   "etiqueta": "Ganhos em Imobiliz.",
+   "actual": "8 108",
+   "anterior": "13 413",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Proveitos e Ganhos Extraordinários"
+  },
+  {
+   "bloque": "b20",
+   "linea": 717,
+   "etiqueta": "Benefícios Contratuais",
+   "actual": "86",
+   "anterior": "28",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Proveitos e Ganhos Extraordinários"
+  },
+  {
+   "bloque": "b20",
+   "linea": 718,
+   "etiqueta": "Redução de Provisões",
+   "actual": "139",
+   "anterior": "120",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Proveitos e Ganhos Extraordinários"
+  },
+  {
+   "bloque": "b20",
+   "linea": 719,
+   "etiqueta": "Corr. R. Ex. Anterior.",
+   "actual": "5",
+   "anterior": "272",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Proveitos e Ganhos Extraordinários"
+  },
+  {
+   "bloque": "b20",
+   "linea": 720,
+   "etiqueta": "O Prov. e G. Extraord.",
+   "actual": "200",
+   "anterior": "274",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Proveitos e Ganhos Extraordinários"
+  },
+  {
+   "bloque": "b20",
+   "linea": 723,
+   "etiqueta": "Total",
+   "actual": "8 538",
+   "anterior": "14 107",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Proveitos e Ganhos Extraordinários"
+  },
+  {
+   "bloque": "b20",
+   "linea": 716,
+   "etiqueta": "Donativos",
+   "actual": "12",
+   "anterior": "19",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custos e Perdas Extraordinários"
+  },
+  {
+   "bloque": "b20",
+   "linea": 717,
+   "etiqueta": "Dívidas Incobráveis",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custos e Perdas Extraordinários"
+  },
+  {
+   "bloque": "b20",
+   "linea": 718,
+   "etiqueta": "Perdas em Imobilizaç.",
+   "actual": "40",
+   "anterior": "9",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custos e Perdas Extraordinários"
+  },
+  {
+   "bloque": "b20",
+   "linea": 719,
+   "etiqueta": "Multas e Penalidades",
+   "actual": "38",
+   "anterior": "58",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custos e Perdas Extraordinários"
+  },
+  {
+   "bloque": "b20",
+   "linea": 720,
+   "etiqueta": "Corr. R. Ex. Anterior.",
+   "actual": "104",
+   "anterior": "175",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custos e Perdas Extraordinários"
+  },
+  {
+   "bloque": "b20",
+   "linea": 721,
+   "etiqueta": "O. Custos P. Extraord.",
+   "actual": "1 731",
+   "anterior": "1 937",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custos e Perdas Extraordinários"
+  },
+  {
+   "bloque": "b20",
+   "linea": 722,
+   "etiqueta": "Resultado Extraord.",
+   "actual": "6 613",
+   "anterior": "11 909",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 723,
+   "etiqueta": "Total",
+   "actual": "8 538",
+   "anterior": "14 107",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 124,
+   "etiqueta": "Bilheteira",
+   "actual": "2 527",
+   "anterior": "5 589",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 125,
+   "etiqueta": "Bilhetes de Época",
+   "actual": "2 053",
+   "anterior": "2 675",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 126,
+   "etiqueta": "Dir. Transmissão Televisiva",
+   "actual": "6 635",
+   "anterior": "7 073",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 127,
+   "etiqueta": "Quotas de Sócios",
+   "actual": "3 652",
+   "anterior": "3 590",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 128,
+   "etiqueta": "Patrocínios e Publicidade",
+   "actual": "2 180",
+   "anterior": "1 930",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 129,
+   "etiqueta": "Royalties",
+   "actual": "224",
+   "anterior": "523",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 130,
+   "etiqueta": "Mais-valias em Transferências",
+   "actual": "8 108",
+   "anterior": "13 413",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 131,
+   "etiqueta": "Participação L. Campeões",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 132,
+   "etiqueta": "Outros Proveitos",
+   "actual": "1 937",
+   "anterior": "3 374",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 133,
+   "etiqueta": "Total de Proveitos",
+   "actual": "27 316",
+   "anterior": "38 167",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 449,
+  "actual": "27 316"
+ },
+ "total_gastos": {
+  "linea": 447,
+  "actual": "54 627"
+ },
+ "resultado": {
+  "linea": 448,
+  "actual": "( 27 311)",
+  "anterior": "( 22 715)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el cuadro de proveitos del informe de gestión (b1, L124-L133) como desglose alternativo con detalla_a null, sin asignarlo a un renglón único del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "b1 es una reclasificación de gestión que mezcla Prestações de Serviços y extraordinarios (Mais-valias 8 108 = Ganhos em Imobiliz.), no desglosa un renglón del estado.",
+   "bloques": [
+    "b1",
+    "b7",
+    "b20"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera de la carga las filas de custos de b1 (L135-L143) por duplicar renglones del estado b7?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "Los custos de b1 repiten importes de b7 (8 174, 22 992, 16 936, 3 570, 1 925) con agrupación propia.",
+   "bloques": [
+    "b1",
+    "b7"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El renglón 'Encargos Sociais' (L431) está vacío y su importe va incluido en 'Outros'?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "Encargos Sociais",
+   "texto": "L431 no muestra importe; 21 891 + 1 101 = 22 992.",
+   "bloques": [
+    "b7"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en formato POC portugués (custos/proveitos en columnas). Nota 46 total 8 538 vs 8 537 en estado: redondeo. Nota 45: los custos financieros suman 3 570 = Juros e Custos Similares. Escala de notas inferida por coincidencia con el estado."
+}

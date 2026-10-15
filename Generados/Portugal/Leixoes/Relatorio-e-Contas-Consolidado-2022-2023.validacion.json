@@ -1,0 +1,46 @@
+{
+ "pdf": "Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2022-2023.pdf",
+ "md": "Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2022-2023.md",
+ "mdSha1": "b1ea2f37dd231b296d4319da210858d0e431fd76",
+ "modo": "escaneo",
+ "motivoModo": "el PDF no trae texto usable (0 números, 0 caracteres/pág): escaneo o texto roto",
+ "generado": "2026-10-15T19:44:08.902Z",
+ "fuentes": {
+  "5": "gemini",
+  "19": "gemini",
+  "20": "gemini",
+  "21": "gemini",
+  "22": "gemini",
+  "23": "gemini"
+ },
+ "confirmados": 161,
+ "noConfirmados": [
+  {
+   "bloque": "b2",
+   "pagina": 5,
+   "linea": 166,
+   "numero": "2 506 574,11",
+   "segundaLeyo": "250557411",
+   "sinSegunda": false,
+   "texto": "|   | 63 | Gastos com pessoal | 19 | -1 965 518,55 | -2 506 574,11  |"
+  },
+  {
+   "bloque": "b2",
+   "pagina": 5,
+   "linea": 169,
+   "numero": "1 226 596,29",
+   "segundaLeyo": "122659529",
+   "sinSegunda": false,
+   "texto": "|  78...+791 |  | Outros rendimentos | 20 | 1 226 596,29 | 2 162 591,74  |"
+  },
+  {
+   "bloque": "b2",
+   "pagina": 5,
+   "linea": 177,
+   "numero": "337 608,09",
+   "segundaLeyo": "38760809",
+   "sinSegunda": false,
+   "texto": "|   |  | Resultado antes de impostos |  | -814 088,44 | -337 608,09  |"
+  }
+ ]
+}

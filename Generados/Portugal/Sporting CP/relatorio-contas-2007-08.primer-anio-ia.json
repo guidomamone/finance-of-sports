@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2007-08.md",
+ "clave": "5863a9367468603be0e0942a7eb97dc0229ed8af",
+ "generado": "2026-10-15T21:56:46.559Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "No encontré problemas. Las aperturas de las notas suman lo mismo que sus renglones: L979 da 35.618, L980 da 9.843, y L983 y L984 cierran con un ajuste de redondeo de 0,001. L990 corresponde a un proveito, porque solo como ingreso de 2.488 se llega al resultado operativo de 2.563. Con los financieros y los impuestos, el resultado líquido queda en 597. Los subtotales L981, L988, L991, L992 y L995 no se cargaron, y está bien."
+ }
+}

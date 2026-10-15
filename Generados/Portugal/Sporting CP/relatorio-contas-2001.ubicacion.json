@@ -1,0 +1,264 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.md",
+ "mdSha1": "3d1be2d25d50bc40c7f1249a696c90f8604db087",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T21:07:08.446Z",
+ "bloques": {
+  "b1": {
+   "pagina": 8,
+   "lineas": [
+    116,
+    125
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    143,
+    165
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 12,
+   "lineas": [
+    198,
+    217
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 15,
+   "lineas": [
+    277,
+    282
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    288,
+    291
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    304,
+    311
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 21,
+   "lineas": [
+    415,
+    458
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 22,
+   "lineas": [
+    468,
+    497
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 26,
+   "lineas": [
+    583,
+    587
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 27,
+   "lineas": [
+    599,
+    603
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 27,
+   "lineas": [
+    613,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 28,
+   "lineas": [
+    631,
+    650
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 28,
+   "lineas": [
+    654,
+    662
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 29,
+   "lineas": [
+    668,
+    671
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 29,
+   "lineas": [
+    677,
+    679
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 29,
+   "lineas": [
+    685,
+    689
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 30,
+   "lineas": [
+    714,
+    716
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 31,
+   "lineas": [
+    724,
+    730
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 31,
+   "lineas": [
+    734,
+    737
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 31,
+   "lineas": [
+    741,
+    747
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 32,
+   "lineas": [
+    759,
+    768
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 32,
+   "lineas": [
+    778,
+    783
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 35,
+   "lineas": [
+    819,
+    857
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 36,
+   "lineas": [
+    867,
+    871
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 37,
+   "lineas": [
+    877,
+    897
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b8"
+ ],
+ "notas_ingresos": [
+  "b2"
+ ],
+ "notas_gastos": [
+  "b20",
+  "b21"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "31 JUL 02",
+ "columna_anterior": "31 JUL 01",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el cuadro del relatório de gestión 'Demonst. Resultados 31 JUL 02' (pág. 9) para abrir los ingresos (Bilheteira, Bilhetes de Época, TV, Quotas, Patrocínios, Royalties) que la Demonstração dos Resultados agrupa en Prestações de Serviços?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Prestações de Serviços",
+   "texto": "b2 es un cuadro de gestión, no una nota del anexo, pero es el único que desglosa los ingresos por categoría; se cargaría solo su columna 31 JUL 02.",
+   "bloques": [
+    "b2",
+    "b8"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera el cuadro de operaciones con empresas del Grupo Sporting (pág. 12)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "b3 muestra transacciones intragrupo que ya están dentro de los renglones del estado; no es un desglose por categoría.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera la Demonstração dos Resultados por Funções (pág. 37)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b25 presenta el mismo resultado con otra clasificación; se carga el estado por naturaleza b8.",
+   "bloques": [
+    "b25"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento de Sporting SAD, cuentas individuales al 31-07-2002. Estado: b8 (por naturaleza, miles de euros). b2 es un resumen de gestión con desglose de ingresos. b20 y b21 abren los resultados financieros y extraordinarios. b25 es el estado por funciones (duplicado) y no se usa."
+}

@@ -1,0 +1,58 @@
+{
+ "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2019-20.pdf",
+ "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2019-20.md",
+ "mdSha1": "cf8504d76e51a7b58661ed29dbd7ddce17ed7cc7",
+ "modo": "escaneo",
+ "motivoModo": "el PDF no trae texto usable (0 números, 0 caracteres/pág): escaneo o texto roto",
+ "generado": "2026-10-15T20:42:13.774Z",
+ "fuentes": {
+  "20": "gemini",
+  "45": "gemini",
+  "46": "gemini",
+  "47": "gemini",
+  "48": "gemini",
+  "49": "gemini",
+  "50": "gemini",
+  "51": "gemini",
+  "52": "gemini"
+ },
+ "confirmados": 164,
+ "noConfirmados": [
+  {
+   "bloque": "b2",
+   "pagina": 20,
+   "linea": 597,
+   "numero": "1 093 365,60",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Subsídios à exploração | 15 | 1 093 365,60 | 1 057 711,00 |"
+  },
+  {
+   "bloque": "b2",
+   "pagina": 20,
+   "linea": 600,
+   "numero": "5 269 795,36",
+   "segundaLeyo": "526976536",
+   "sinSegunda": false,
+   "texto": "| Gastos com o pessoal | 18 | (5 269 795,36) | (5 453 898,15) |"
+  },
+  {
+   "bloque": "b2",
+   "pagina": 20,
+   "linea": 600,
+   "numero": "5 453 898,15",
+   "segundaLeyo": "545369815",
+   "sinSegunda": false,
+   "texto": "| Gastos com o pessoal | 18 | (5 269 795,36) | (5 453 898,15) |"
+  },
+  {
+   "bloque": "b2",
+   "pagina": 20,
+   "linea": 603,
+   "numero": "551 838,46",
+   "segundaLeyo": "55163846",
+   "sinSegunda": false,
+   "texto": "| Outros gastos | 20 | (551 838,46) | (211 832,71) |"
+  }
+ ]
+}

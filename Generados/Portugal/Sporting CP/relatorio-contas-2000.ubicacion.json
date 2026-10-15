@@ -1,0 +1,96 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.md",
+ "mdSha1": "5a965711890750792c827a3240a460fea0919dfd",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T21:00:42.614Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    18,
+    57
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    59,
+    86
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    97,
+    120
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 2,
+   "lineas": [
+    122,
+    133
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 2,
+   "lineas": [
+    135,
+    142
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 3,
+   "lineas": [
+    150,
+    170
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 4,
+   "lineas": [
+    178,
+    216
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3",
+  "b4",
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de escudos)",
+ "moneda": "PTE",
+ "columna_ejercicio": "31 JUL 01",
+ "columna_anterior": "31 JUL 00",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga la 'Demonstração dos Resultados por Funções' (b6) por ser una presentación alternativa del mismo resultado ya cargado desde b3/b4?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b6 presenta el mismo ejercicio clasificado por funciones; el estado por naturaleza (b3-b5) es el principal.",
+   "bloques": [
+    "b6",
+    "b3",
+    "b4"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados por naturaleza de la SAD (individual): b3 custos e perdas, b4 proveitos e ganhos, b5 resumen de resultados. b6 es la versión por funciones (no elegida). No hay notas de desglose en el índice. Moneda escudos portugueses, en miles."
+}

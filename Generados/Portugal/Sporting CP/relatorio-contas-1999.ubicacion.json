@@ -1,0 +1,69 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-1999.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-1999.md",
+ "mdSha1": "f3490fbb6870d1462ee3e166bb04107ae3b96a46",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T20:59:41.683Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    14,
+    56
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    65,
+    91
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    100,
+    138
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    145,
+    165
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de escudos)",
+ "moneda": "PTE",
+ "columna_ejercicio": "31 JUL 00",
+ "columna_anterior": "31 JUL 99",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga la 'Demonstração dos Resultados por Funções' (b4), usando solo la demostración por naturaleza (b2)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b4 es el mismo resultado presentado por funciones; repetiría importes ya cargados desde b2.",
+   "bloques": [
+    "b4",
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento con balance (b1), DR por naturaleza (b2), flujo de caja (b3) y DR por funciones (b4). No se indica si es individual o consolidado; por el título (Sporting CP) se supone individual, coherente con años anteriores. Encabezado del balance tiene '31 JAN 00' probablemente errata por 31 JUL 00 (no afecta al estado de resultados). Moneda: escudos portugueses."
+}

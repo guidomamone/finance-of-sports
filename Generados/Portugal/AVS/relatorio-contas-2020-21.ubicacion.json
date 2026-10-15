@@ -1,0 +1,302 @@
+{
+ "pdf": "Clubes/Portugal/AVS/relatorio-contas-2020-21.pdf",
+ "md": "Clubes/Portugal/AVS/relatorio-contas-2020-21.md",
+ "mdSha1": "36ef6b53b441c01fc7631e8744bb7d30379f810c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T17:53:55.438Z",
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    175,
+    186
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 12,
+   "lineas": [
+    371,
+    374
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 12,
+   "lineas": [
+    379,
+    387
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    407,
+    443
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    456,
+    476
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    489,
+    508
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    521,
+    540
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 17,
+   "lineas": [
+    553,
+    596
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    622,
+    627
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 24,
+   "lineas": [
+    805,
+    817
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 24,
+   "lineas": [
+    827,
+    832
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 24,
+   "lineas": [
+    836,
+    839
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 25,
+   "lineas": [
+    855,
+    874
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 25,
+   "lineas": [
+    880,
+    887
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 26,
+   "lineas": [
+    910,
+    926
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 26,
+   "lineas": [
+    930,
+    942
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    984,
+    992
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 27,
+   "lineas": [
+    1000,
+    1010
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    1028,
+    1036
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    1044,
+    1050
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    1058,
+    1070
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 29,
+   "lineas": [
+    1088,
+    1097
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 29,
+   "lineas": [
+    1111,
+    1118
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 30,
+   "lineas": [
+    1142,
+    1154
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 31,
+   "lineas": [
+    1184,
+    1190
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 31,
+   "lineas": [
+    1198,
+    1219
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 32,
+   "lineas": [
+    1236,
+    1248
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 32,
+   "lineas": [
+    1258,
+    1262
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 32,
+   "lineas": [
+    1276,
+    1286
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 33,
+   "lineas": [
+    1308,
+    1313
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 33,
+   "lineas": [
+    1321,
+    1335
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 34,
+   "lineas": [
+    1373,
+    1376
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b22",
+  "b23",
+  "b19",
+  "b21"
+ ],
+ "notas_gastos": [
+  "b17",
+  "b18",
+  "b20"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Unidade monetária Euro)",
+ "moneda": "EUR",
+ "columna_ejercicio": "PERÍODOS: 07/20 - 06/21",
+ "columna_anterior": "PERÍODOS: 07/19 - 06/20",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Resultado das operações' del relatório de gestão (b1, pág. 6) por repetir la demonstração dos resultados?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 es un resumen de gestión con tres ejercicios que agrega renglones ya presentes en b5.",
+   "bloques": [
+    "b1",
+    "b5"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados por naturezas individual de la SAD en b5 (euros). Notas: réditos b22, subsidios b23, otros rendimientos b19, juros b21 (incluye gastos), FSE b17, pessoal b18, outros gastos b20. b14 (amortizaciones de intangibles por línea) no se elige."
+}

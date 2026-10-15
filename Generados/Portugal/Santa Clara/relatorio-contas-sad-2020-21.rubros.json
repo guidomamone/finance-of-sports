@@ -1,0 +1,310 @@
+{
+  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2020-21.md",
+  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2020-21.pdf",
+  "club": "santa-clara",
+  "year": 2021,
+  "generatedAt": "2026-10-15T21:55:07.871Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Equipamento desportivo",
+      "lado": "revenue",
+      "page": 48,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.074739
+      ],
+      "glosa": "Equipamiento deportivo"
+    },
+    {
+      "label": "Merchandising",
+      "lado": "revenue",
+      "page": 48,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.006006
+      ],
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Ingressos para jogos",
+      "lado": "revenue",
+      "page": 48,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.010527
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Apostas desportivas Placard",
+      "lado": "revenue",
+      "page": 48,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.220513
+      ],
+      "glosa": "Apuestas deportivas Placard"
+    },
+    {
+      "label": "Publicidade",
+      "lado": "revenue",
+      "page": 48,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.51189
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Prémios de participação (Taça Port. e Liga)",
+      "lado": "revenue",
+      "page": 48,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.10317
+      ],
+      "glosa": "Premios de participación (Copa de Portugal y Liga)"
+    },
+    {
+      "label": "Direitos televisivos",
+      "lado": "revenue",
+      "page": 48,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        5.341176
+      ],
+      "glosa": "Derechos de televisión"
+    },
+    {
+      "label": "Licença Electronic - konami",
+      "lado": "revenue",
+      "page": 48,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.01
+      ],
+      "glosa": "Licencia Electronic - Konami"
+    },
+    {
+      "label": "Cedência por empréstimos direitos desportivos",
+      "lado": "revenue",
+      "page": 48,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.083295
+      ],
+      "glosa": "Cesión temporal de derechos deportivos"
+    },
+    {
+      "label": "Diversos",
+      "lado": "revenue",
+      "page": 48,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.002234
+      ],
+      "glosa": "Diversos"
+    },
+    {
+      "label": "Direção Regional do Turismo",
+      "lado": "revenue",
+      "page": 49,
+      "section": "nota que desglosa \"Subsídios à exploração\"",
+      "values": [
+        1
+      ],
+      "glosa": "Dirección Regional de Turismo"
+    },
+    {
+      "label": "Inst.Seg Social Layoff",
+      "lado": "revenue",
+      "page": 49,
+      "section": "nota que desglosa \"Subsídios à exploração\"",
+      "values": [
+        0.011814
+      ],
+      "glosa": "Instituto de Seguridad Social - ERTE"
+    },
+    {
+      "label": "RAA - Fundo Regional Emprego",
+      "lado": "revenue",
+      "page": 49,
+      "section": "nota que desglosa \"Subsídios à exploração\"",
+      "values": [
+        0.000168
+      ],
+      "glosa": "RAA - Fondo Regional de Empleo"
+    },
+    {
+      "label": "Vice-Presidência Deslocações",
+      "lado": "revenue",
+      "page": 49,
+      "section": "nota que desglosa \"Subsídios à exploração\"",
+      "values": [
+        0.05158
+      ],
+      "glosa": "Vicepresidencia - Desplazamientos"
+    },
+    {
+      "label": "Donativos",
+      "lado": "revenue",
+      "page": 52,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        0.016068
+      ],
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "Cedência de direitos desportivos",
+      "lado": "revenue",
+      "page": 52,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        6.495
+      ],
+      "glosa": "Cesión de derechos deportivos"
+    },
+    {
+      "label": "Outros rendimentos",
+      "lado": "revenue",
+      "page": 52,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        0.000797
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Custo das mercadorias vendidas e das matérias consumidas",
+      "lado": "expense",
+      "page": 23,
+      "section": "estado",
+      "values": [
+        0.04031
+      ],
+      "glosa": "Coste de las mercancías vendidas y materias consumidas"
+    },
+    {
+      "label": "Fornecimentos e serviços externos",
+      "lado": "expense",
+      "page": 23,
+      "section": "estado",
+      "values": [
+        2.509163
+      ],
+      "glosa": "Servicios exteriores"
+    },
+    {
+      "label": "Renumerações Órgãos Sociais",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.375223
+      ],
+      "glosa": "Retribuciones de los órganos de gobierno"
+    },
+    {
+      "label": "Renumerações Atletas",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        3.528836
+      ],
+      "glosa": "Retribuciones a deportistas"
+    },
+    {
+      "label": "Renumerações equipa técnica (treinadores)",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.409731
+      ],
+      "glosa": "Retribuciones del cuerpo técnico (entrenadores)"
+    },
+    {
+      "label": "Renumerações ao pessoal",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.341035
+      ],
+      "glosa": "Retribuciones al personal"
+    },
+    {
+      "label": "Acordos Revogação",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.212587
+      ],
+      "glosa": "Acuerdos de rescisión contractual"
+    },
+    {
+      "label": "Encargos sobre renumerações",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.458158
+      ],
+      "glosa": "Cargas sociales sobre retribuciones"
+    },
+    {
+      "label": "Seguro acidentes de trabalho e doenças",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.497092
+      ],
+      "glosa": "Seguro de accidentes de trabajo y enfermedades"
+    },
+    {
+      "label": "Outros gastos com pessoal",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.843839
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Imparidades de dívidas a receber",
+      "lado": "expense",
+      "page": 23,
+      "section": "estado",
+      "values": [
+        0.766
+      ],
+      "glosa": "Pérdidas por deterioro de cuentas a cobrar"
+    },
+    {
+      "label": "Outros gastos",
+      "lado": "expense",
+      "page": 23,
+      "section": "estado",
+      "values": [
+        2.64349
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Gastos/reversões de depreciação e de amortização",
+      "lado": "expense",
+      "page": 23,
+      "section": "estado",
+      "values": [
+        0.213727
+      ],
+      "glosa": "Gastos/reversiones de amortización y depreciación"
+    }
+  ]
+}

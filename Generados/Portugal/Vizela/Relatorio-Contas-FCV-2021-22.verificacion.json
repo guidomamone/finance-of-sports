@@ -1,0 +1,156 @@
+{
+ "pdf": "Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.pdf",
+ "md": "Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.md",
+ "generado": "2026-10-15T21:55:09.140Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "4df5087",
+  "4df5087"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "5.802367 = 5.802367",
+   "suma": 5.80236677,
+   "impreso": 5.802366769999999
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "8.223657 = 8.223661",
+   "suma": 8.223657279999998,
+   "impreso": 8.22366133
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero invertido)",
+   "dif": 2.220446049250313e-15
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 5.802367 en este documento y 5.802367 en Relatorio-e-Contas-FCV-2022-23_Aprovadas.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: Los encabezados de b5 y b4 están cortados (L157, L170); se asume mismo orden que b6 (30/06/2022, 30/06/2021, variación, %), coherente con 5.802.366,77-8.223.661,33=-2.421.294,56."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 5.802367,
+  "gastos": 8.223657,
+  "financiero": 0.000004,
+  "impuesto": -0.008623,
+  "resultadoImpreso": -2.429918,
+  "resultadoParaCargar": -2.429918,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Vendas e Serviços Prestados",
+   "lado": "ingreso",
+   "M": 5.112926,
+   "pagina": 8,
+   "linea": 192,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0.343644,
+   "pagina": 8,
+   "linea": 194,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros Rendimentos",
+   "lado": "ingreso",
+   "M": 0.345797,
+   "pagina": 8,
+   "linea": 195,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custo Merc Vend e Matérias Consumidas",
+   "lado": "gasto",
+   "M": 0.037522,
+   "pagina": 7,
+   "linea": 172,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fornecimentos e Serviços Externos",
+   "lado": "gasto",
+   "M": 1.87259,
+   "pagina": 7,
+   "linea": 175,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos com Pessoal",
+   "lado": "gasto",
+   "M": 6.180784,
+   "pagina": 7,
+   "linea": 176,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de Depreciação e Amortização",
+   "lado": "gasto",
+   "M": 0.088132,
+   "pagina": 7,
+   "linea": 177,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros Gastos e Perdas",
+   "lado": "gasto",
+   "M": 0.044629,
+   "pagina": 7,
+   "linea": 178,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e gastos similares suportados",
+   "M": -0.000004,
+   "linea": 179
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Impostos Sobre o Rendimento Período",
+   "M": -0.008623,
+   "linea": 161
+  }
+ ]
+}

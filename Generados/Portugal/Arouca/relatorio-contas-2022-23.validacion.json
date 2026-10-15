@@ -1,0 +1,301 @@
+{
+ "pdf": "Clubes/Portugal/Arouca/relatorio-contas-2022-23.pdf",
+ "md": "Clubes/Portugal/Arouca/relatorio-contas-2022-23.md",
+ "mdSha1": "b817ce25ae573c7a99ef4f03d20b690141e91594",
+ "modo": "digital",
+ "motivoModo": "43 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 510208471 vs 510708471, 516783437 vs 576783437, 17864696 vs 17864695; 217 números del .md no están en el PDF (tolerancia 20); el .md solo tiene el 51% de los números del PDF (mínimo 85%): incompleto",
+ "generado": "2026-10-15T18:17:54.173Z",
+ "fuentes": {
+  "6": "gemini",
+  "27": "gemini",
+  "28": "pdftotext",
+  "29": "pdftotext",
+  "30": "pdftotext"
+ },
+ "hibridas": [
+  6,
+  27
+ ],
+ "confirmados": 106,
+ "noConfirmados": [
+  {
+   "bloque": "b2",
+   "pagina": 6,
+   "linea": 184,
+   "numero": "1 807 168,61",
+   "segundaLeyo": "180715861",
+   "sinSegunda": false,
+   "texto": "| Fornecimentos e serviços externos | 13 | (1 807 168,61) | (723 455,39) |"
+  },
+  {
+   "bloque": "b24",
+   "pagina": 29,
+   "linea": 1175,
+   "numero": "472 707,20",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Publicidade | 486 351,76 | 472 707,20  |"
+  },
+  {
+   "bloque": "b24",
+   "pagina": 29,
+   "linea": 1176,
+   "numero": "40 824,39",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Receitas de Bilheteira | 57 986,60 | 40 824,39  |"
+  },
+  {
+   "bloque": "b24",
+   "pagina": 29,
+   "linea": 1180,
+   "numero": "326 469,06",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Subsídios e Prémios | 326 469,06 | 38 642,32  |"
+  },
+  {
+   "bloque": "b24",
+   "pagina": 29,
+   "linea": 1180,
+   "numero": "38 642,32",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Subsídios e Prémios | 326 469,06 | 38 642,32  |"
+  },
+  {
+   "bloque": "b24",
+   "pagina": 29,
+   "linea": 1181,
+   "numero": "289 934,14",
+   "segundaLeyo": "24993414",
+   "sinSegunda": false,
+   "texto": "|  Receitas Apostas Desport. | 303 793,22 | 289 934,14  |"
+  },
+  {
+   "bloque": "b24",
+   "pagina": 29,
+   "linea": 1182,
+   "numero": "48,78",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Outros | 48,78 | 33 084,50  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 30,
+   "linea": 1212,
+   "numero": "478,77",
+   "segundaLeyo": "47477",
+   "sinSegunda": false,
+   "texto": "|  Descontos pp obtidos | 478,77 | 292,73  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 30,
+   "linea": 1214,
+   "numero": "2 198 750,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Al. ativos intangíveis-Passes atletas | 2 198 750,00 | 0,00  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 30,
+   "linea": 1215,
+   "numero": "398 211,11",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Outros Rendimentos | 107 673,09 | 398 211,11  |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 30,
+   "linea": 1216,
+   "numero": "418 503,84",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Total** | **2 324 652,39** | **418 503,84**  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1105,
+   "numero": "28 267,10",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Publicidade e propaganda | 28 267,10 | 0,00  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1107,
+   "numero": "10 402,04",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Honorários | 48 119,54 | 10 402,04  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1108,
+   "numero": "853 543,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Comissões | 853 543,00 | 127 336,00  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1109,
+   "numero": "61 609,39",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Conservação e Reparação | 61 609,39 | 58 239,24  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1109,
+   "numero": "58 239,24",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Conservação e Reparação | 61 609,39 | 58 239,24  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1112,
+   "numero": "14 980,59",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Ferr. Ut. Desgaste Rápido | 14 980,59 | 7 423,83  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1113,
+   "numero": "1 676,04",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Material de Escritório | 5 120,47 | 1 676,04  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1114,
+   "numero": "12 429,98",
+   "segundaLeyo": "1242994",
+   "sinSegunda": false,
+   "texto": "|  Artigos Oferta | 12 429,98 | 6 027,28  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1114,
+   "numero": "6 027,28",
+   "segundaLeyo": "602724",
+   "sinSegunda": false,
+   "texto": "|  Artigos Oferta | 12 429,98 | 6 027,28  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1116,
+   "numero": "17 237,54",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Combustíveis | 12 942,25 | 17 237,54  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1117,
+   "numero": "208,87",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Água | 400,18 | 208,87  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1124,
+   "numero": "445,50",
+   "segundaLeyo": "44554",
+   "sinSegunda": false,
+   "texto": "|  Seguros | 3 291,71 | 445,50  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1125,
+   "numero": "10 548,26",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Contencioso e Notariado | 7 429,09 | 10 548,26  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1126,
+   "numero": "1 428,45",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Limpeza, Higiene e Conforto | 1 745,08 | 1 428,45  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1127,
+   "numero": "140 029,84",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Outros Serviços | 140 029,84 | 124 002,45  |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 28,
+   "linea": 1128,
+   "numero": "1 807 168,61",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Total** | **1 807 168,61** | **723 455,39**  |"
+  },
+  {
+   "bloque": "b23",
+   "pagina": 29,
+   "linea": 1159,
+   "numero": "2 752,18",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Impostos | 2 752,18 | 5 373,53  |"
+  },
+  {
+   "bloque": "b23",
+   "pagina": 29,
+   "linea": 1160,
+   "numero": "120,87",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Desc. Pp concedidos | 1 462,74 | 120,87  |"
+  },
+  {
+   "bloque": "b23",
+   "pagina": 29,
+   "linea": 1165,
+   "numero": "88 827,55",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Total** | **88 827,55** | **203 708,16**  |"
+  },
+  {
+   "bloque": "b23",
+   "pagina": 29,
+   "linea": 1165,
+   "numero": "203 708,16",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Total** | **88 827,55** | **203 708,16**  |"
+  }
+ ]
+}

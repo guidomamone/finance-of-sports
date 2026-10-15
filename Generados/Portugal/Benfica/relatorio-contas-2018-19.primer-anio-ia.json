@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2018-19.md",
+ "clave": "64b880f914aaf5e649f1a37ed691c49a1f7c6f61",
+ "generado": "2026-10-15T22:48:01.150Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Sin problemas: las filas de notas reemplazan a los renglones del estado (ingresos operacionales, FSE, pessoal, depreciações, transações e amortizações de direitos de atletas) y el resto se carga desde el estado del ejercicio 30.06.19 (columna consolidada); no se cargan subtotales."
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.md",
+ "clave": "465fe0c1c31bc57d42fbe7a2bd7596fb8e0692c4",
+ "generado": "2026-10-15T22:54:35.536Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Las aperturas por nota coinciden con sus renglones: ventas y servicios (6,658977 frente a 6,658979), otros ingresos (0,838397), FSE (4,08275) y gastos de personal (16,165189). La deterioración de L342 se cargó como 0,011595, pero el estado muestra 11 194,64 € (0,011195). La diferencia es de 0,0004, posiblemente un error de tipeo, y no encaja en ninguna de las cuatro categorías. No se detectan renglones faltantes, sobrantes, repetidos ni en el lado equivocado."
+ }
+}

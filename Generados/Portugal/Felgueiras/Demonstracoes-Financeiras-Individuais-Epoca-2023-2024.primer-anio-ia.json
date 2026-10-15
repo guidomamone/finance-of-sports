@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Felgueiras/Demonstracoes-Financeiras-Individuais-Epoca-2023-2024.md",
+ "clave": "91e9c8d0e376155fe76cde1cbd3c3bb9dd4e03f6",
+ "generado": "2026-10-15T21:55:45.942Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Sin problemas. Los gastos con el personal (L213, 794.906) se cargan abiertos según la nota: 579.119 + 90.555 + 25.698 + 99.534 = 794.906, que reemplazan correctamente al renglón. Outros rendimentos vale cero en el ejercicio 2023/2024, así que cargarlo en cero es correcto. Los subtotales (L221, L224, L227, L229) no se cargan. El resultado cierra en -732.696."
+ }
+}

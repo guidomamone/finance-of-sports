@@ -1,0 +1,28 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2007-08.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2007-08.md",
+ "mdSha1": "73f7b9efb3de7c7984be9600f7b68fece4ff241c",
+ "modo": "digital",
+ "motivoModo": "7 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 1969 vs 1999, 2735 vs 2725, 2751 vs 2757; 43 números del .md no están en el PDF (tolerancia 21)",
+ "generado": "2026-10-15T21:14:44.991Z",
+ "fuentes": {
+  "40": "pdftotext",
+  "51": "pdftotext",
+  "52": "pdftotext",
+  "53": "pdftotext",
+  "54": "pdftotext",
+  "55": "pdftotext"
+ },
+ "confirmados": 71,
+ "noConfirmados": [
+  {
+   "bloque": "b5",
+   "pagina": 40,
+   "linea": 998,
+   "numero": "15 239",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Resultado líquido do exercício** |  | **597** | **15 239**  |"
+  }
+ ]
+}

@@ -1,0 +1,263 @@
+{
+ "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2018-19.pdf",
+ "md": "Clubes/Portugal/Famalicão/relatorio-contas-2018-19.md",
+ "mdSha1": "04fd47e3feb591b23370876adff5e556cce97917",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T19:10:38.497Z",
+ "bloques": {
+  "b1": {
+   "pagina": 8,
+   "lineas": [
+    195,
+    201
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    217,
+    219
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    254,
+    267
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    338,
+    374
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    393,
+    409
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    438,
+    469
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    492,
+    504
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    515,
+    527
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    647,
+    652
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 22,
+   "lineas": [
+    770,
+    774
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 23,
+   "lineas": [
+    796,
+    810
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 23,
+   "lineas": [
+    820,
+    830
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 24,
+   "lineas": [
+    851,
+    856
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 24,
+   "lineas": [
+    864,
+    872
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 24,
+   "lineas": [
+    876,
+    882
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    901,
+    912
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 25,
+   "lineas": [
+    920,
+    927
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 25,
+   "lineas": [
+    933,
+    944
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    976,
+    981
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 27,
+   "lineas": [
+    1000,
+    1007
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 27,
+   "lineas": [
+    1017,
+    1020
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 27,
+   "lineas": [
+    1028,
+    1041
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 28,
+   "lineas": [
+    1064,
+    1071
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 28,
+   "lineas": [
+    1077,
+    1088
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1110,
+    1118
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 29,
+   "lineas": [
+    1136,
+    1141
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 30,
+   "lineas": [
+    1160,
+    1165
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 30,
+   "lineas": [
+    1167,
+    1176
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 30,
+   "lineas": [
+    1188,
+    1192
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b22"
+ ],
+ "notas_gastos": [
+  "b23",
+  "b24",
+  "b25",
+  "b26"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30-Jun-19",
+ "columna_anterior": "30-Jun-18",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de la SAD (b5). Notas: vendas e serviços (b22), CMV (b23), FSE (b24), pessoal (b25), outros gastos (b26). No se ve en el índice una nota de subsídios à exploração (nota 19) como tabla. Imposto (b27/b28) es conciliación, excluido."
+}

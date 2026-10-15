@@ -1,0 +1,248 @@
+{
+ "pdf": "Clubes/Portugal/Academico Viseu/wf-2022-2023-b797bc64.pdf",
+ "md": "Clubes/Portugal/Academico Viseu/wf-2022-2023-b797bc64.md",
+ "mdSha1": "1908e0399ca07a8dd5c11d62620a1df14ebd8680",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T17:59:22.502Z",
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    188,
+    225
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    251,
+    268
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    270,
+    272
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    535,
+    540
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    576,
+    585
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    589,
+    602
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    606,
+    608
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    614,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    638,
+    660
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    668,
+    680
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    686,
+    692
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    721,
+    735
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    739,
+    752
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 17,
+   "lineas": [
+    801,
+    806
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 18,
+   "lineas": [
+    835,
+    848
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    852,
+    861
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 19,
+   "lineas": [
+    878,
+    891
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    904,
+    918
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 20,
+   "lineas": [
+    933,
+    939
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 20,
+   "lineas": [
+    953,
+    959
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 21,
+   "lineas": [
+    985,
+    1004
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 22,
+   "lineas": [
+    1049,
+    1058
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 22,
+   "lineas": [
+    1062,
+    1064
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 22,
+   "lineas": [
+    1068,
+    1071
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b12"
+ ],
+ "notas_gastos": [
+  "b11",
+  "b13",
+  "b18",
+  "b19",
+  "b21"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "No se ve indicación de escala en el índice; las notas muestran importes en euros con decimales (ej. 'Valor (€)').",
+ "moneda": "EUR",
+ "columna_ejercicio": "PERÍODOS 2022/2023",
+ "columna_anterior": "PERÍODOS 2021/2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El estado de resultados (b2) está expresado en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No hay frase de escala visible sobre b2; las notas usan euros con céntimos.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El cuadro b19 (Remunerações do pessoal... Total) es el desglose de 'Outro pessoal' de la nota 14.2 y no un duplicado de b18?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Gastos com o pessoal",
+   "texto": "b19 sigue a b18 en la página siguiente sin título visible; podría ser continuación o desglose.",
+   "bloques": [
+    "b18",
+    "b19"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "SAD sin consolidación aparente: estado individual b2 (DR por naturezas). Ingresos: b12 (nota 9.1 rédito). Gastos: b11 CMVMC, b13 outros gastos, b18/b19 gastos com pessoal, b21 FSE (sin título visible, por contenido Subcontratos/Trabalhos especializados). Excluidos balance, caja, partes relacionadas, intangibles por jugador, activos fijos, deudas, capital y hechos posteriores."
+}

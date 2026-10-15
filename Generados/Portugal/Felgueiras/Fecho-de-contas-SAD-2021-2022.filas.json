@@ -1,0 +1,419 @@
+{
+ "pdf": "Clubes/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.pdf",
+ "md": "Clubes/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.md",
+ "mdSha1": "2383c425c64c7abcd77f205db47d8373fa510a17",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T19:26:23.373Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b15",
+   "b11"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "Importes con decimales (ej. 138 985,49); no se imprime escala, se infiere unidades (euros)."
+  },
+  {
+   "bloque": "b15",
+   "escala": "unidades",
+   "evidencia": "Total 152 312,85 coincide con FSE del estado (L771 vs L206)."
+  },
+  {
+   "bloque": "b11",
+   "escala": "unidades",
+   "evidencia": "Importes con decimales iguales al estado (L657, L658)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 204,
+   "etiqueta": "Vendas e serviços prestados",
+   "actual": "138 985,49",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 205,
+   "etiqueta": "Subsídios à exploração",
+   "actual": "4 028,63",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 206,
+   "etiqueta": "Fornecimentos e serviços externos",
+   "actual": "(152 312,85)",
+   "anterior": "(5 900,00)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 207,
+   "etiqueta": "Gastos com o pessoal",
+   "actual": "(383 628,34)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 208,
+   "etiqueta": "Outros rendimentos",
+   "actual": "",
+   "anterior": "5 172,07",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 209,
+   "etiqueta": "Outros gastos",
+   "actual": "(136 213,01)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 210,
+   "etiqueta": "Resultado antes de depreciações, gastos de financiamento e impostos",
+   "actual": "(529 140,08)",
+   "anterior": "(727,93)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 211,
+   "etiqueta": "Resultado operacional (antes de gastos de financiamento e impostos)",
+   "actual": "(529 140,08)",
+   "anterior": "(727,93)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 212,
+   "etiqueta": "Gasto líquido de financiamento",
+   "actual": "(216,59)",
+   "anterior": "(81,12)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 213,
+   "etiqueta": "Resultado antes de impostos",
+   "actual": "(529 356,67)",
+   "anterior": "(809,05)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 214,
+   "etiqueta": "Resultado líquido do período",
+   "actual": "(529 356,67)",
+   "anterior": "(809,05)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 750,
+   "etiqueta": "Serviços especializados",
+   "actual": "50 911,50",
+   "anterior": "2 000,00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 751,
+   "etiqueta": "Trabalhos especializados",
+   "actual": "40 094,34",
+   "anterior": "2 000,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 752,
+   "etiqueta": "Publicidade e propaganda",
+   "actual": "555,50",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 753,
+   "etiqueta": "Vigilância e segurança",
+   "actual": "9 761,66",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 754,
+   "etiqueta": "Honorários",
+   "actual": "500,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 755,
+   "etiqueta": "Materiais",
+   "actual": "4 457,39",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 756,
+   "etiqueta": "Ferramentas e utensílios de desgaste rápido",
+   "actual": "3 244,04",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 757,
+   "etiqueta": "Material de escritório",
+   "actual": "1 213,35",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 758,
+   "etiqueta": "Energia e fluidos",
+   "actual": "649,15",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 759,
+   "etiqueta": "Eletricidade",
+   "actual": "632,89",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 760,
+   "etiqueta": "Outros",
+   "actual": "16,26",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 761,
+   "etiqueta": "Deslocações, estadas e transportes",
+   "actual": "9 399,51",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 762,
+   "etiqueta": "Deslocações e estadas",
+   "actual": "2 017,51",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 763,
+   "etiqueta": "Transportes de mercadorias",
+   "actual": "7 382,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 764,
+   "etiqueta": "Serviços diversos",
+   "actual": "86 895,30",
+   "anterior": "3 900,00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 765,
+   "etiqueta": "Rendas e alugueres",
+   "actual": "13 300,00",
+   "anterior": "3 900,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 766,
+   "etiqueta": "Comunicação",
+   "actual": "178,31",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 767,
+   "etiqueta": "Contencioso e notariado",
+   "actual": "878,76",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 768,
+   "etiqueta": "Despesas de representação",
+   "actual": "28 068,63",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 769,
+   "etiqueta": "Limpeza, higiene e conforto",
+   "actual": "717,65",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 770,
+   "etiqueta": "Outros serviços",
+   "actual": "43 751,95",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 771,
+   "etiqueta": "Total",
+   "actual": "152 312,85",
+   "anterior": "5 900,00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 661,
+   "etiqueta": "Remunerações",
+   "actual": "160 180,67",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b11",
+   "linea": 662,
+   "etiqueta": "Outros gastos",
+   "actual": "223 447,67",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 214,
+  "actual": "(529 356,67)",
+  "anterior": "(809,05)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan 'Remunerações' (L661) y 'Outros gastos' (L662) del cuadro por actividad b11 como desglose de 'Gastos com o pessoal'?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "Gastos com o pessoal",
+   "texto": "Suman 383 628,34 = Gastos com o pessoal, pero 'Outros gastos' (223 447,67) podría confundirse con el renglón 'Outros gastos' del estado (136 213,01) (L662).",
+   "bloques": [
+    "b11"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera las filas de b11 que repiten renglones del estado (Prestações de serviços L657, FSE L658, Gastos com o pessoal L660)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "Repiten importes ya cargados del estado b1 (L657-L660).",
+   "bloques": [
+    "b11",
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Sin escala impresa; importes en euros con decimales. El estado no imprime totales de ingresos ni gastos. Columna jun 2021 vacía para varios renglones. 'Outros rendimentos' solo tiene importe en jun 2021 (actual vacío)."
+}

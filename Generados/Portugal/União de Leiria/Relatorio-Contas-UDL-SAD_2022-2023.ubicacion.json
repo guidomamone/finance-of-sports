@@ -1,0 +1,305 @@
+{
+ "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.pdf",
+ "md": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.md",
+ "mdSha1": "d8ca815f9d9c5898c2381a2663c39ec93890ed82",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T21:46:07.378Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    21,
+    51
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    74,
+    89
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    201,
+    206
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    348,
+    368
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 12,
+   "lineas": [
+    370,
+    387
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    405,
+    414
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    416,
+    425
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    431,
+    435
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    449,
+    452
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 14,
+   "lineas": [
+    460,
+    467
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    475,
+    489
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 15,
+   "lineas": [
+    501,
+    511
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    517,
+    527
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 15,
+   "lineas": [
+    535,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    553,
+    557
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    563,
+    571
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 17,
+   "lineas": [
+    589,
+    601
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    609,
+    612
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 18,
+   "lineas": [
+    628,
+    639
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 18,
+   "lineas": [
+    651,
+    656
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 19,
+   "lineas": [
+    672,
+    676
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 19,
+   "lineas": [
+    682,
+    689
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 19,
+   "lineas": [
+    697,
+    705
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 20,
+   "lineas": [
+    727,
+    734
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 20,
+   "lineas": [
+    742,
+    752
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 21,
+   "lineas": [
+    766,
+    772
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 21,
+   "lineas": [
+    778,
+    785
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 21,
+   "lineas": [
+    793,
+    796
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 22,
+   "lineas": [
+    812,
+    817
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 22,
+   "lineas": [
+    821,
+    829
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 23,
+   "lineas": [
+    839,
+    852
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b20",
+  "b21",
+  "b26"
+ ],
+ "notas_gastos": [
+  "b22",
+  "b23",
+  "b24",
+  "b27",
+  "b28"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30.jun.23",
+ "columna_anterior": "30.jun.22",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de provisiones (b25), por ser un movimiento de saldos y no un desglose de un renglón de resultados?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Provisões",
+   "texto": "b25 es un cuadro de movimientos de provisiones; puede incluir el cargo del ejercicio, pero no abre categorías de gasto.",
+   "bloques": [
+    "b25"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de transacciones con partes relacionadas (b30)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Outros Rendimentos Suplementares",
+   "texto": "b30 detalla importes por contraparte y no desglosa categorías de ingreso o gasto.",
+   "bloques": [
+    "b30"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas individuales de la SAD (modelo reducido), en euros. Estado de resultados en b2. Las notas 18-26 (b20-b24, b26-b28) desglosan los renglones del estado. b22 es el cálculo del costo de mercaderías vendidas (CMVMC)."
+}

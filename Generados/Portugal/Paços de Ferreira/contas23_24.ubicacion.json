@@ -1,0 +1,136 @@
+{
+ "pdf": "Clubes/Portugal/Paços de Ferreira/contas23_24.pdf",
+ "md": "Clubes/Portugal/Paços de Ferreira/contas23_24.md",
+ "mdSha1": "e35a321aaa682edd58b047dcfb84622b5dc638ec",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T20:12:20.907Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    46
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    58,
+    75
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    87,
+    117
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    127,
+    138
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 4,
+   "lineas": [
+    142,
+    153
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    315,
+    324
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    334,
+    341
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    345,
+    355
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 17,
+   "lineas": [
+    367,
+    377
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    387,
+    415
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    429,
+    439
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    455,
+    461
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 20,
+   "lineas": [
+    465,
+    470
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b6",
+  "b7",
+  "b8"
+ ],
+ "notas_gastos": [
+  "b9",
+  "b10",
+  "b11"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con decimales de céntimo (ej. 1.086.237,21) y texto en € (317.938,63 €); no hay indicación de miles.",
+ "moneda": "EUR",
+ "columna_ejercicio": "30-06-2024",
+ "columna_anterior": "30-06-2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados por naturaleza individual de la SDUQ (b2). Las notas b6 (vendas e serviços), b7 (subsídios), b8 (outros rendimentos), b9 (pessoal), b10 (FSE) y b11 (outros gastos) desglosan los renglones del estado. Se excluyen balance (b1), flujos (b3), cambios en patrimonio (b4, b5) y financiamientos (b12, b13)."
+}

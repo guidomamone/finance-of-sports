@@ -1,0 +1,267 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2003-04.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2003-04.md",
+ "mdSha1": "cf01764780cfb5c4c3322c7e7067ee5dc5234c3c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T21:09:10.250Z",
+ "bloques": {
+  "b1": {
+   "pagina": 7,
+   "lineas": [
+    137,
+    162
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    206,
+    226
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 10,
+   "lineas": [
+    270,
+    274
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    280,
+    286
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    334,
+    341
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    478,
+    519
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    525,
+    552
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    564,
+    593
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 17,
+   "lineas": [
+    691,
+    694
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    708,
+    712
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 18,
+   "lineas": [
+    728,
+    738
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    746,
+    765
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    770,
+    779
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 18,
+   "lineas": [
+    784,
+    787
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 18,
+   "lineas": [
+    794,
+    799
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    806,
+    810
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 19,
+   "lineas": [
+    842,
+    844
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    851,
+    857
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    862,
+    865
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 19,
+   "lineas": [
+    870,
+    876
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 19,
+   "lineas": [
+    883,
+    892
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 19,
+   "lineas": [
+    899,
+    903
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 21,
+   "lineas": [
+    947,
+    985
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 22,
+   "lineas": [
+    1001,
+    1006
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 23,
+   "lineas": [
+    1016,
+    1037
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b8"
+ ],
+ "notas_ingresos": [
+  "b1",
+  "b20",
+  "b21"
+ ],
+ "notas_gastos": [
+  "b1",
+  "b20",
+  "b21"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30 JUN 04 (11 meses)",
+ "columna_anterior": "31 JUL 03 (12 meses)",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el cuadro de gestión de pág. 7 (b1, columna 'Demonst. Resultados 30 JUN 04') para abrir los proveitos operacionales del estado b8 en bilheteira, TV, quotas, patrocínios, etc.?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Prestações de Serviços",
+   "texto": "b1 es un cuadro del informe de gestión que reagrupa proveitos y costes (incluye mais-valias y extraordinarios) y puede no casar renglón a renglón con b8.",
+   "bloques": [
+    "b1",
+    "b8"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga el ejercicio de 11 meses (01-08-2003 a 30-06-2004) sin ajuste como el ejercicio pedido?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado de b8 indica 30 JUN 04 (11 meses) frente a 12 meses del anterior por cambio de fecha de cierre.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera la demonstração dos resultados por funções (b25) por duplicar el estado por naturaleza b8?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b25 presenta el mismo resultado clasificado por funciones.",
+   "bloques": [
+    "b25"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas individuales de Sporting SAD; estado por naturaleza b8 (miles EUR). Notas 45 (b20) y 46 (b21) abren resultados financieros y extraordinarios. b2 (operaciones con el Grupo Sporting) no se elige por ser cuadro de partes relacionadas."
+}

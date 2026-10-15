@@ -1,0 +1,233 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.md",
+ "generado": "2026-10-15T21:55:08.069Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2001,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "1b52802",
+  "4038ba7"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": false,
+   "detalle": "las líneas suman 18526.295 y el total impreso dice 6653.228"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "\"(E)\" 10952.653 cierra; además se suman 10 línea(s) fuera de ese total (32211.886)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 18526.295 - gastos 43164.539 ± financiero 612.979 ± impuesto 0 no da el impreso -4299.425",
+   "dif": null
+  },
+  {
+   "nombre": "documento del año 2000",
+   "ok": true,
+   "detalle": "ingresos de 2000: 17076.633 en relatorio-contas-1999.pdf y 17076.633 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b6 presenta el mismo ejercicio clasificado por funciones; el estado por naturaleza (b3-b5) es el principal.",
+  "duda de extraer que no afecta la carga: L108 año anterior 3 008 759 vs 3 000 759 + 0 en L106-L107; diferencia de 8 000, posible error tipográfico en el año anterior."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 18526.295,
+  "gastos": 43164.539,
+  "financiero": 612.979,
+  "impuesto": 0,
+  "resultadoImpreso": -4299.425,
+  "resultadoParaCargar": -4299.425,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Prestações de Serviços",
+   "lado": "ingreso",
+   "M": 3178.865,
+   "pagina": 2,
+   "linea": 124,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios à Exploração",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 2,
+   "linea": 125,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Proveitos Suplementares",
+   "lado": "ingreso",
+   "M": 1866.067,
+   "pagina": 2,
+   "linea": 126,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros Proveitos e Ganhos Operacionais",
+   "lado": "ingreso",
+   "M": 174.907,
+   "pagina": 2,
+   "linea": 127,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(D)",
+   "lado": "ingreso",
+   "M": 5453.614,
+   "pagina": 2,
+   "linea": 131,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Proveitos e Ganhos Extraordinários",
+   "lado": "ingreso",
+   "M": 1199.614,
+   "pagina": 2,
+   "linea": 132,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(F)",
+   "lado": "ingreso",
+   "M": 6653.228,
+   "pagina": 2,
+   "linea": 133,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fornecimentos e Serviços Externos",
+   "lado": "gasto",
+   "M": 1198.61,
+   "pagina": 2,
+   "linea": 99,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Remunerações",
+   "lado": "gasto",
+   "M": 4916.854,
+   "pagina": 2,
+   "linea": 101,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 200.022,
+   "pagina": 2,
+   "linea": 103,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Corpóreo e Incorpóreo",
+   "lado": "gasto",
+   "M": 3638.945,
+   "pagina": 2,
+   "linea": 106,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Provisões",
+   "lado": "gasto",
+   "M": 228.991,
+   "pagina": 2,
+   "linea": 107,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos",
+   "lado": "gasto",
+   "M": 21.527,
+   "pagina": 2,
+   "linea": 109,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros Custos e Perdas Operacionais",
+   "lado": "gasto",
+   "M": 101.631,
+   "pagina": 2,
+   "linea": 110,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(C)",
+   "lado": "gasto",
+   "M": 10685.784,
+   "pagina": 2,
+   "linea": 114,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custos e Perdas Extraordinários",
+   "lado": "gasto",
+   "M": 266.869,
+   "pagina": 2,
+   "linea": 115,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(E)",
+   "lado": "gasto",
+   "M": 10952.653,
+   "pagina": 2,
+   "linea": 116,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(G)",
+   "lado": "gasto",
+   "M": 10952.653,
+   "pagina": 2,
+   "linea": 118,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e Custos Similares",
+   "M": 379.204,
+   "linea": 113
+  },
+  {
+   "etiqueta": "Outros Juros e Proveitos Similares",
+   "M": 233.775,
+   "linea": 130
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o Rendimento do Exercício",
+   "M": 0,
+   "linea": 117
+  }
+ ]
+}

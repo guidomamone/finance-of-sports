@@ -1,0 +1,470 @@
+{
+  "md": "Clubes/Portugal/Arouca/relatorio-contas-2021-22.md",
+  "pdf": "Clubes/Portugal/Arouca/relatorio-contas-2021-22.pdf",
+  "club": "arouca",
+  "year": 2022,
+  "generatedAt": "2026-10-15T21:54:59.956Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Publicidade",
+      "lado": "revenue",
+      "page": 30,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.472707
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Receitas de Bilheteira",
+      "lado": "revenue",
+      "page": 30,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.040824
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Corporate",
+      "lado": "revenue",
+      "page": 30,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.00085
+      ],
+      "glosa": "Ingresos corporativos"
+    },
+    {
+      "label": "Transmissões Televisivas",
+      "lado": "revenue",
+      "page": 30,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        3.8
+      ],
+      "glosa": "Derechos de retransmisión televisiva"
+    },
+    {
+      "label": "Subsídios e Prémios",
+      "lado": "revenue",
+      "page": 30,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.038642
+      ],
+      "glosa": "Subvenciones y premios"
+    },
+    {
+      "label": "Receitas Apostas Desport.",
+      "lado": "revenue",
+      "page": 30,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.289934
+      ],
+      "glosa": "Ingresos por apuestas deportivas"
+    },
+    {
+      "label": "Outros",
+      "lado": "revenue",
+      "page": 30,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.033084
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Subsídios à exploração",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Descontos pp obtidos",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        0.000293
+      ],
+      "glosa": "Descuentos por pronto pago obtenidos"
+    },
+    {
+      "label": "Rend. Suplementares",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        0.02
+      ],
+      "glosa": "Ingresos accesorios"
+    },
+    {
+      "label": "Outros Rendimentos",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        0.398211
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Trabalhos Especializados",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.061088
+      ],
+      "glosa": "Trabajos especializados"
+    },
+    {
+      "label": "Vigilância e Segurança",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.049065
+      ],
+      "glosa": "Vigilancia y seguridad"
+    },
+    {
+      "label": "Honorários",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.010402
+      ],
+      "glosa": "Honorarios profesionales"
+    },
+    {
+      "label": "Comissões",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.127336
+      ],
+      "glosa": "Comisiones"
+    },
+    {
+      "label": "Conservação e Reparação",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.058239
+      ],
+      "glosa": "Reparaciones y conservación"
+    },
+    {
+      "label": "Serviços Bancários",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.000542
+      ],
+      "glosa": "Servicios bancarios"
+    },
+    {
+      "label": "Out. Serv. Especializados",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.000816
+      ],
+      "glosa": "Otros servicios especializados"
+    },
+    {
+      "label": "Ferr. Ut. Desgaste Rápido",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.007424
+      ],
+      "glosa": "Útiles y herramientas de rápido desgaste"
+    },
+    {
+      "label": "Material de Escritório",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.001676
+      ],
+      "glosa": "Material de oficina"
+    },
+    {
+      "label": "Artigos Oferta",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.006027
+      ],
+      "glosa": "Artículos promocionales y regalos"
+    },
+    {
+      "label": "Eletricidade",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.029925
+      ],
+      "glosa": "Electricidad"
+    },
+    {
+      "label": "Combustíveis",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.017238
+      ],
+      "glosa": "Combustibles"
+    },
+    {
+      "label": "Água",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.000209
+      ],
+      "glosa": "Agua"
+    },
+    {
+      "label": "Outros Fluidos",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.007696
+      ],
+      "glosa": "Otros fluidos"
+    },
+    {
+      "label": "Deslocações e Estadas",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.191096
+      ],
+      "glosa": "Desplazamientos y estancias"
+    },
+    {
+      "label": "Transp. Pessoal",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.002202
+      ],
+      "glosa": "Transporte de personal"
+    },
+    {
+      "label": "Desloc. Estadas - outros",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.003619
+      ],
+      "glosa": "Desplazamientos y estancias - otros"
+    },
+    {
+      "label": "Rendas e Alugueres",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.010929
+      ],
+      "glosa": "Arrendamientos y cánones"
+    },
+    {
+      "label": "Comunicação",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.001503
+      ],
+      "glosa": "Comunicaciones"
+    },
+    {
+      "label": "Seguros",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.000445
+      ],
+      "glosa": "Primas de seguros"
+    },
+    {
+      "label": "Contencioso e Notariado",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.010548
+      ],
+      "glosa": "Gastos contenciosos y notariales"
+    },
+    {
+      "label": "Limpeza, Higiene e Conforto",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.001428
+      ],
+      "glosa": "Limpieza, higiene y confort"
+    },
+    {
+      "label": "Outros Serviços",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.124002
+      ],
+      "glosa": "Otros servicios"
+    },
+    {
+      "label": "Remun. Órgãos sociais",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.019778
+      ],
+      "glosa": "Retribuciones de los órganos de gobierno"
+    },
+    {
+      "label": "Remunerações pessoal",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        2.944688
+      ],
+      "glosa": "Remuneraciones del personal"
+    },
+    {
+      "label": "Indemnizações",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.062968
+      ],
+      "glosa": "Indemnizaciones"
+    },
+    {
+      "label": "Encargos s/ remunerações",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.155084
+      ],
+      "glosa": "Cargas sociales sobre remuneraciones"
+    },
+    {
+      "label": "Seg. Acidentes de Trabalho",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.39681
+      ],
+      "glosa": "Seguro de accidentes de trabajo"
+    },
+    {
+      "label": "Outros Gastos c/ Pessoal",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.064425
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Impostos",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Outros gastos\"",
+      "values": [
+        0.005374
+      ],
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Desc. Pp concedidos",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Outros gastos\"",
+      "values": [
+        0.000121
+      ],
+      "glosa": "Descuentos por pronto pago concedidos"
+    },
+    {
+      "label": "Corr. Per. Anteriores",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Outros gastos\"",
+      "values": [
+        0.055195
+      ],
+      "glosa": "Ajustes de ejercicios anteriores"
+    },
+    {
+      "label": "Multas e penalidades",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Outros gastos\"",
+      "values": [
+        0.026618
+      ],
+      "glosa": "Multas y sanciones"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Outros gastos\"",
+      "values": [
+        0.1164
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Gastos/reversões de depreciação e de amortização",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.09185
+      ],
+      "glosa": "Gastos/reversiones de amortización y depreciación"
+    }
+  ]
+}

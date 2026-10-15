@@ -1,0 +1,43 @@
+{
+ "pdf": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf",
+ "generado": "2026-10-15T22:50:15.277Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (boavista-pt)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: un solo perímetro, la SAD no consolida (anexo 1.4 y 1.5 'Não aplicável'))"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2024-06-30",
+  "evidencia": {
+   "pagina": 13,
+   "texto": "|   |   |  30/06/2024 | 30/06/2023  |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "temporada"
+ },
+ "clubId": "boavista-pt",
+ "year": 2024,
+ "cortadoEn": "filas"
+}

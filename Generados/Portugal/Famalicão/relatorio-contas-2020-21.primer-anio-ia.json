@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Famalicão/relatorio-contas-2020-21.md",
+ "clave": "0463bc49e65b52efa9b0d6bf5d9aace846a03341",
+ "generado": "2026-10-15T21:55:37.645Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Sin problemas. Las aperturas por nota reemplazan correctamente a sus renglones: Vendas e serviços prestados (L409, 5,665860), Fornecimentos e serviços externos (L412, 2,429257), Gastos com o pessoal (L413, 10,954714) y Outros gastos (L416, 0,106584); las partes de cada uno suman su renglón. No se cargaron subtotales (L417, L419, L421, L423) y los signos son correctos."
+ }
+}

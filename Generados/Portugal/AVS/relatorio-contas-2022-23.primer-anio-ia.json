@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/AVS/relatorio-contas-2022-23.md",
+ "clave": "de7af20592257f1a7ea45f3c9684ef52e20f5f24",
+ "generado": "2026-10-15T21:55:17.475Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Todo lo cargado es consistente. Los renglones del estado de L382 (vendas 1,620215 = 1,173315 + 0,405 + 0,0419), L384 (FSE 1,247418), L385 (pessoal 2,086711) y L387 (outros gastos 0,255935 = 0,001176 + 0,254759) están reemplazados por sus aperturas en notas, y las sumas coinciden. No se cargó ningún subtotal y los lados son correctos."
+ }
+}

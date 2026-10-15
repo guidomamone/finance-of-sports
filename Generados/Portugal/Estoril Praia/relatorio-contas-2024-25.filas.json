@@ -1,0 +1,896 @@
+{
+ "pdf": "Clubes/Portugal/Estoril Praia/relatorio-contas-2024-25.pdf",
+ "md": "Clubes/Portugal/Estoril Praia/relatorio-contas-2024-25.md",
+ "mdSha1": "ba466a3bbd098ad4bbc5b7e1a731e3d0cf0d2fe1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T19:08:17.420Z",
+ "ubicacion": {
+  "estado": [
+   "b19"
+  ],
+  "notas_ingresos": [
+   "b46",
+   "b48",
+   "b52",
+   "b53"
+  ],
+  "notas_gastos": [
+   "b47",
+   "b49",
+   "b50"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b19",
+   "escala": "unidades",
+   "evidencia": "L812: (valores expressos em euros)"
+  },
+  {
+   "bloque": "b46",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; importes coinciden con el estado en euros"
+  },
+  {
+   "bloque": "b48",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; total coincide con el estado en euros"
+  },
+  {
+   "bloque": "b52",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; totales coinciden con el estado en euros"
+  },
+  {
+   "bloque": "b53",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; total coincide con el estado en euros"
+  },
+  {
+   "bloque": "b47",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; total coincide con el estado en euros"
+  },
+  {
+   "bloque": "b49",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; total coincide con el estado en euros"
+  },
+  {
+   "bloque": "b50",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; total coincide con el estado en euros"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b19",
+   "linea": 817,
+   "etiqueta": "Vendas",
+   "actual": "87 842",
+   "anterior": "37 673",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 818,
+   "etiqueta": "Receitas de bilheteira",
+   "actual": "279 129",
+   "anterior": "266 691",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 819,
+   "etiqueta": "Patrocínio e publicidade",
+   "actual": "768 083",
+   "anterior": "743 979",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 820,
+   "etiqueta": "Direitos de transmissão",
+   "actual": "3 600 000",
+   "anterior": "3 600 000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 821,
+   "etiqueta": "Atividades comerciais",
+   "actual": "649 274",
+   "anterior": "435 160",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 822,
+   "etiqueta": "Contribuições da UEFA e prémios monetários",
+   "actual": "28 532",
+   "anterior": "423 784",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 823,
+   "etiqueta": "Vendas e serviços Prestados",
+   "actual": "5 412 861",
+   "anterior": "5 507 286",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 824,
+   "etiqueta": "Subsídios à exploração",
+   "actual": "858 743",
+   "anterior": "283 130",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 825,
+   "etiqueta": "Custo das mercadorias vendidas e das matérias consumidas",
+   "actual": "( 76 165)",
+   "anterior": "( 31 650)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 826,
+   "etiqueta": "Fornecimentos e serviços externos",
+   "actual": "(3 662 011)",
+   "anterior": "(3 897 969)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 827,
+   "etiqueta": "Gastos com o pessoal",
+   "actual": "(10 779 566)",
+   "anterior": "(9 211 211)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 828,
+   "etiqueta": "Outros rendimentos",
+   "actual": "68 379",
+   "anterior": "834 100",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 829,
+   "etiqueta": "Outros gastos",
+   "actual": "( 421 544)",
+   "anterior": "( 296 913)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 830,
+   "etiqueta": "(Gastos)/rendimentos com transações de direitos de atletas",
+   "actual": "2 028 428",
+   "anterior": "7 522 840",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 831,
+   "etiqueta": "Resultado antes de depreciações, gastos de financiamento e impostos",
+   "actual": "(6 570 875)",
+   "anterior": "709 614",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 832,
+   "etiqueta": "Gastos/reversões de depreciação e de amortização (excluindo direitos de atletas)",
+   "actual": "( 201 496)",
+   "anterior": "( 246 538)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 833,
+   "etiqueta": "Gastos/reversões de depreciação e de amortização de direitos de atletas",
+   "actual": "( 621 481)",
+   "anterior": "( 239 786)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 834,
+   "etiqueta": "Resultado operacional (antes de gastos de financiamento e impostos)",
+   "actual": "(7 393 853)",
+   "anterior": "223 290",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 835,
+   "etiqueta": "Juros e rendimentos similares obtidos",
+   "actual": "12 200",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 836,
+   "etiqueta": "Juros e gastos similares suportados",
+   "actual": "( 458 154)",
+   "anterior": "( 7 920)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 837,
+   "etiqueta": "Resultado antes de impostos",
+   "actual": "(7 839 807)",
+   "anterior": "215 370",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 838,
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "actual": "( 30 609)",
+   "anterior": "( 29 229)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 839,
+   "etiqueta": "Resultado líquido do período",
+   "actual": "(7 870 416)",
+   "anterior": "186 141",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b46",
+   "linea": 1971,
+   "etiqueta": "Vendas",
+   "actual": "87 842",
+   "anterior": "37 673",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Vendas"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1973,
+   "etiqueta": "Competições nacionais",
+   "actual": "231 064",
+   "anterior": "234 110",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas de bilheteira"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1974,
+   "etiqueta": "Bilhetes época",
+   "actual": "48 065",
+   "anterior": "32 581",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas de bilheteira"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1975,
+   "etiqueta": "Patrocínio & Publicidade",
+   "actual": "768 083",
+   "anterior": "743 979",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Patrocínio e publicidade"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1977,
+   "etiqueta": "Competições nacionais",
+   "actual": "3 600 000",
+   "anterior": "3 600 000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Direitos de transmissão"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1978,
+   "etiqueta": "Atividades comerciais",
+   "actual": "649 274",
+   "anterior": "435 160",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Atividades comerciais"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1980,
+   "etiqueta": "Competições nacionais",
+   "actual": "28 532",
+   "anterior": "423 784",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Contribuições da UEFA e prémios monetários"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1981,
+   "etiqueta": "",
+   "actual": "5 412 861",
+   "anterior": "5 507 286",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e serviços Prestados"
+  },
+  {
+   "bloque": "b48",
+   "linea": 2019,
+   "etiqueta": "Subsídio do Estado e Outros entes públicos",
+   "actual": "3 794",
+   "anterior": "11 783",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Subsídios à exploração"
+  },
+  {
+   "bloque": "b48",
+   "linea": 2020,
+   "etiqueta": "Subsídio da UEFA",
+   "actual": "800 451",
+   "anterior": "219 033",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Subsídios à exploração"
+  },
+  {
+   "bloque": "b48",
+   "linea": 2021,
+   "etiqueta": "Outros subsídios",
+   "actual": "54 498",
+   "anterior": "52 314",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Subsídios à exploração"
+  },
+  {
+   "bloque": "b48",
+   "linea": 2022,
+   "etiqueta": "",
+   "actual": "858 743",
+   "anterior": "283 130",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Subsídios à exploração"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2148,
+   "etiqueta": "Rendimentos suplementares",
+   "actual": "5 260",
+   "anterior": "20 348",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2149,
+   "etiqueta": "Correções relativas a períodos anteriores",
+   "actual": "45",
+   "anterior": "11 525",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2150,
+   "etiqueta": "Outros rendimentos",
+   "actual": "63 074",
+   "anterior": "802 227",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2151,
+   "etiqueta": "",
+   "actual": "68 379",
+   "anterior": "834 100",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2153,
+   "etiqueta": "Impostos",
+   "actual": "5 773",
+   "anterior": "5 861",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2154,
+   "etiqueta": "Correções relativas a períodos anteriores",
+   "actual": "62 675",
+   "anterior": "7 937",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2155,
+   "etiqueta": "Quotizações",
+   "actual": "111 822",
+   "anterior": "97 901",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2156,
+   "etiqueta": "Multas desportivas",
+   "actual": "19 048",
+   "anterior": "25 274",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2157,
+   "etiqueta": "Inscrições desportivas",
+   "actual": "94 452",
+   "anterior": "98 177",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2158,
+   "etiqueta": "Donativos",
+   "actual": "108 310",
+   "anterior": "29 043",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2159,
+   "etiqueta": "Outros gastos",
+   "actual": "19 464",
+   "anterior": "32 720",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2160,
+   "etiqueta": "",
+   "actual": "421 544",
+   "anterior": "296 913",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2185,
+   "etiqueta": "Rendimentos com empréstimos de atletas",
+   "actual": "230 000",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(Gastos)/rendimentos com transações de direitos de atletas"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2186,
+   "etiqueta": "Mecanismo de solidariedade/compensação",
+   "actual": "178 210",
+   "anterior": "31 966",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(Gastos)/rendimentos com transações de direitos de atletas"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2187,
+   "etiqueta": "Outros Rendimentos com atletas",
+   "actual": "3 800",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(Gastos)/rendimentos com transações de direitos de atletas"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2188,
+   "etiqueta": "Mais-valias de alienações de passes de atletas",
+   "actual": "1 722 584",
+   "anterior": "7 837 152",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(Gastos)/rendimentos com transações de direitos de atletas"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2189,
+   "etiqueta": "Rendimentos com transações de atletas",
+   "actual": "2 134 593",
+   "anterior": "7 869 119",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "(Gastos)/rendimentos com transações de direitos de atletas"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2191,
+   "etiqueta": "Mecanismo de solidariedade/compensação",
+   "actual": "33 893",
+   "anterior": "4 039",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(Gastos)/rendimentos com transações de direitos de atletas"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2192,
+   "etiqueta": "Gastos com empréstimos de atletas",
+   "actual": "72 273",
+   "anterior": "122 727",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(Gastos)/rendimentos com transações de direitos de atletas"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2193,
+   "etiqueta": "Gastos por rescisão antecipada",
+   "actual": "-",
+   "anterior": "689",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(Gastos)/rendimentos com transações de direitos de atletas"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2194,
+   "etiqueta": "Menos-valias de alienações de passes de atletas",
+   "actual": "-",
+   "anterior": "218 824",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(Gastos)/rendimentos com transações de direitos de atletas"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2195,
+   "etiqueta": "Gastos com transações de atletas",
+   "actual": "106 165",
+   "anterior": "346 279",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "(Gastos)/rendimentos com transações de direitos de atletas"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2196,
+   "etiqueta": "",
+   "actual": "2 028 428",
+   "anterior": "7 522 840",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": "(Gastos)/rendimentos com transações de direitos de atletas"
+  },
+  {
+   "bloque": "b47",
+   "linea": 1999,
+   "etiqueta": "Saldo inicial em 1 de julho - Mercadorias",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
+  },
+  {
+   "bloque": "b47",
+   "linea": 2000,
+   "etiqueta": "Regularizações",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
+  },
+  {
+   "bloque": "b47",
+   "linea": 2001,
+   "etiqueta": "Compras",
+   "actual": "76 165",
+   "anterior": "31 650",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
+  },
+  {
+   "bloque": "b47",
+   "linea": 2002,
+   "etiqueta": "Saldo final em 31 de dezembro - Mercadorias",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
+  },
+  {
+   "bloque": "b47",
+   "linea": 2003,
+   "etiqueta": "CMVMC",
+   "actual": "76 165",
+   "anterior": "31 650",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2048,
+   "etiqueta": "Trabalhos especializados",
+   "actual": "1 527 478",
+   "anterior": "1 486 193",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2049,
+   "etiqueta": "Vigilância e Segurança",
+   "actual": "190 477",
+   "anterior": "209 606",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2050,
+   "etiqueta": "Honorários",
+   "actual": "438 774",
+   "anterior": "527 244",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2051,
+   "etiqueta": "Comissões",
+   "actual": "2 207",
+   "anterior": "8 975",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2052,
+   "etiqueta": "Conservação e Reparação",
+   "actual": "136 462",
+   "anterior": "145 531",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2053,
+   "etiqueta": "Serviços bancários",
+   "actual": "2 683",
+   "anterior": "2 762",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2054,
+   "etiqueta": "Materiais",
+   "actual": "12 224",
+   "anterior": "29 434",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2055,
+   "etiqueta": "Energia e fluídos",
+   "actual": "139 719",
+   "anterior": "139 381",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2056,
+   "etiqueta": "Deslocações, estadas e transportes",
+   "actual": "607 443",
+   "anterior": "869 857",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2057,
+   "etiqueta": "Serviços diversos",
+   "actual": "604 543",
+   "anterior": "478 986",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2058,
+   "etiqueta": "",
+   "actual": "3 662 011",
+   "anterior": "3 897 969",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2104,
+   "etiqueta": "Remunerações dos órgãos sociais",
+   "actual": "-",
+   "anterior": "78 687",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2105,
+   "etiqueta": "Remunerações do pessoal",
+   "actual": "8 486 862",
+   "anterior": "7 084 935",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2106,
+   "etiqueta": "Indemnizações",
+   "actual": "196 921",
+   "anterior": "446 804",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2107,
+   "etiqueta": "Encargos sobre remunerações",
+   "actual": "800 793",
+   "anterior": "615 814",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2108,
+   "etiqueta": "Seguros",
+   "actual": "815 754",
+   "anterior": "769 990",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2109,
+   "etiqueta": "Gastos de ação social",
+   "actual": "480",
+   "anterior": "650",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2110,
+   "etiqueta": "Outros gastos com pessoal",
+   "actual": "478 755",
+   "anterior": "214 332",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2111,
+   "etiqueta": "",
+   "actual": "10 779 566",
+   "anterior": "9 211 211",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 839,
+  "actual": "(7 870 416)",
+  "anterior": "186 141"
+ },
+ "dudas": [],
+ "observaciones": "El estado (b19) no imprime total de ingresos ni de gastos. El subtotal L823 no tiene etiqueta; se le asignó la del encabezado L816 'Vendas e serviços Prestados'. Las notas no indican escala pero sus totales coinciden con el estado en euros. En b46 'Bilhetes época' (L1974) se asignó a 'Receitas de bilheteira' por estar bajo ese encabezado (231 064 + 48 065 = 279 129). En b47 la etiqueta 'Saldo final em 31 de dezembro' se transcribió tal cual pese al cierre a 30 de junho."
+}

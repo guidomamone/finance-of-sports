@@ -1,0 +1,361 @@
+{
+ "pdf": "Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.pdf",
+ "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.md",
+ "generado": "2026-10-15T21:55:09.200Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 8.881784197001252e-16
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 6.759663 en este documento y 6.759661 en Relatorio-Gestao-e-contas-FCV-2023-24-Ass.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 5.802367 en Relatorio-Contas-FCV-2021-22.pdf y 5.802367 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Outros rendimentos e ganhos\" no suma el renglón (0.459945 contra 0.459945, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (0.048248 contra 0.014299, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar que no afecta la carga: b40 lista cesiones por jugador (Koffi, Cassiano, Francis Cann) y no desglosa por categoría.",
+  "duda de localizar confirmada por las sumas (columna, \"Custo das vendas\"): ¿La columna de b35 rotulada '30.06.2022 | 30.06.2022' tiene en la primera columna los importes de 2023?",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Vendas e serviços prestados\"): ¿Se deja afuera de la carga el cuadro b38 'Vendas e serviços prestados' (L1301-L1309) por repetir las mismas partidas del estado (L603-L611)?",
+  "duda de extraer que no afecta la carga: El encabezado L1251 repite 30.06.2022, pero el total 14.299,50 coincide con el ejercicio 2023 del estado (L613).",
+  "duda de extraer que no afecta la carga: Diferencia de 0,15 entre estado y nota, menor que redondeo relevante."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Outros rendimentos e ganhos",
+   "suma": 0.459945,
+   "objetivo": 0.459945
+  },
+  {
+   "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
+   "suma": 0.048248,
+   "objetivo": 0.014299
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Outros rendimentos e ganhos",
+   "suma": 0.459945,
+   "objetivo": 0.459945
+  },
+  {
+   "renglon": "Custo das mercadorias vendidas e das matérias consumidas",
+   "suma": 0.048248,
+   "objetivo": 0.014299
+  }
+ ],
+ "totales": {
+  "ingresos": 6.759663,
+  "gastos": 12.768881,
+  "financiero": 0,
+  "impuesto": -0.011836,
+  "resultadoImpreso": -6.021053,
+  "resultadoParaCargar": -6.021053,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Quotizações",
+   "lado": "ingreso",
+   "M": 0.047829,
+   "pagina": 21,
+   "linea": 603,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas de bilheteira",
+   "lado": "ingreso",
+   "M": 0.191193,
+   "pagina": 21,
+   "linea": 604,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Patrocínios, publicidade e corporate",
+   "lado": "ingreso",
+   "M": 0.574068,
+   "pagina": 21,
+   "linea": 605,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas de televisão",
+   "lado": "ingreso",
+   "M": 3.75,
+   "pagina": 21,
+   "linea": 606,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "M": 0.069298,
+   "pagina": 21,
+   "linea": 607,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Competições da UEFA e nacionais",
+   "lado": "ingreso",
+   "M": 0.250431,
+   "pagina": 21,
+   "linea": 608,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cedência de jogadores",
+   "lado": "ingreso",
+   "M": 0.0715,
+   "pagina": 21,
+   "linea": 609,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "ingreso",
+   "M": 0.211456,
+   "pagina": 21,
+   "linea": 610,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Município de Vizela",
+   "lado": "ingreso",
+   "M": 0.15,
+   "pagina": 31,
+   "linea": 1027,
+   "origen": "nota que desglosa \"Subsídios à exploração\""
+  },
+  {
+   "etiqueta": "I.E.F.P",
+   "lado": "ingreso",
+   "M": 0.003885,
+   "pagina": 31,
+   "linea": 1028,
+   "origen": "nota que desglosa \"Subsídios à exploração\""
+  },
+  {
+   "etiqueta": "Outras entidades",
+   "lado": "ingreso",
+   "M": 0.034489,
+   "pagina": 31,
+   "linea": 1029,
+   "origen": "nota que desglosa \"Subsídios à exploração\""
+  },
+  {
+   "etiqueta": "Outros rendimentos e ganhos",
+   "lado": "ingreso",
+   "M": 0.459945,
+   "pagina": 21,
+   "linea": 617,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos/rendimentos com transações de passes de atletas",
+   "lado": "ingreso",
+   "M": 0.945568,
+   "pagina": 21,
+   "linea": 619,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "gasto",
+   "M": 0.014299,
+   "pagina": 21,
+   "linea": 613,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subcontratos",
+   "lado": "gasto",
+   "M": 0.097067,
+   "pagina": 36,
+   "linea": 1262,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Serviços especializados",
+   "lado": "gasto",
+   "M": 1.008132,
+   "pagina": 36,
+   "linea": 1263,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Materiais",
+   "lado": "gasto",
+   "M": 0.137588,
+   "pagina": 36,
+   "linea": 1264,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Energia e fluídos",
+   "lado": "gasto",
+   "M": 0.061741,
+   "pagina": 36,
+   "linea": 1265,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Deslocações, estadas e transportes",
+   "lado": "gasto",
+   "M": 0.546127,
+   "pagina": 36,
+   "linea": 1266,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Serviços diversos",
+   "lado": "gasto",
+   "M": 0.688209,
+   "pagina": 36,
+   "linea": 1267,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Remunerações órgãos sociais",
+   "lado": "gasto",
+   "M": 0.387131,
+   "pagina": 37,
+   "linea": 1287,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Remunerações pessoal",
+   "lado": "gasto",
+   "M": 7.643369,
+   "pagina": 37,
+   "linea": 1288,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Encargos sobre remunerações",
+   "lado": "gasto",
+   "M": 0.885047,
+   "pagina": 37,
+   "linea": 1289,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 0.826688,
+   "pagina": 37,
+   "linea": 1290,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Outros gastos com pessoal",
+   "lado": "gasto",
+   "M": 0.057409,
+   "pagina": 37,
+   "linea": 1291,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": "gasto",
+   "M": 0.130307,
+   "pagina": 21,
+   "linea": 616,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos",
+   "lado": "gasto",
+   "M": 0.004703,
+   "pagina": 38,
+   "linea": 1347,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Multas e outras penalidades",
+   "lado": "gasto",
+   "M": 0.067257,
+   "pagina": 38,
+   "linea": 1348,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.00887,
+   "pagina": 38,
+   "linea": 1349,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Gastos/reversões de depreciação e de amortização (excluindo passes de jogadores)",
+   "lado": "gasto",
+   "M": 0.111159,
+   "pagina": 21,
+   "linea": 621,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos/reversões de depreciação e de amortização com passes de jogadores",
+   "lado": "gasto",
+   "M": 0.093776,
+   "pagina": 21,
+   "linea": 622,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e gastos similares suportados",
+   "M": 0,
+   "linea": 624
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": -0.011836,
+   "linea": 626
+  }
+ ]
+}

@@ -1,0 +1,249 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2005-06.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2005-06.md",
+ "mdSha1": "7f8a101894a553fe759aab6b0b6ee1202c3bb161",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T21:11:58.893Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    84,
+    109
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    184,
+    190
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    196,
+    201
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    249,
+    256
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 17,
+   "lineas": [
+    370,
+    415
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 18,
+   "lineas": [
+    425,
+    454
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 23,
+   "lineas": [
+    558,
+    560
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 24,
+   "lineas": [
+    572,
+    576
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 24,
+   "lineas": [
+    586,
+    596
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 25,
+   "lineas": [
+    604,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 25,
+   "lineas": [
+    627,
+    630
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 26,
+   "lineas": [
+    636,
+    638
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 26,
+   "lineas": [
+    644,
+    647
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 26,
+   "lineas": [
+    653,
+    655
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 26,
+   "lineas": [
+    659,
+    663
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 27,
+   "lineas": [
+    689,
+    691
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 28,
+   "lineas": [
+    701,
+    709
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 28,
+   "lineas": [
+    713,
+    716
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    720,
+    726
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 29,
+   "lineas": [
+    734,
+    742
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 29,
+   "lineas": [
+    750,
+    756
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 32,
+   "lineas": [
+    782,
+    822
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 33,
+   "lineas": [
+    832,
+    837
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 34,
+   "lineas": [
+    844,
+    865
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b1",
+  "b19",
+  "b20"
+ ],
+ "notas_gastos": [
+  "b1",
+  "b19",
+  "b20"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30 JUN 06",
+ "columna_anterior": "30 JUN 05",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el cuadro de gestión de la pág. 5 (b1, columna 'Resultados 30 JUN 06') para abrir los proveitos de la Demonstração dos Resultados en bilheteira, bilhetes época, direitos TV, quotização, patrocínios, royalties, UEFA?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Prestações de Serviços",
+   "texto": "b1 es un cuadro de gestión (presupuesto vs real) en el informe de gestión, no una nota del anexo, pero es el único que desglosa los ingresos por categoría.",
+   "bloques": [
+    "b1",
+    "b6"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga la Demonstração dos Resultados por Funções (b24) por duplicar el estado por naturaleza b6?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b24 presenta los mismos resultados clasificados por funciones; se usa b6 como estado principal.",
+   "bloques": [
+    "b24",
+    "b6"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento de la Sporting SAD, cuentas individuales. Estado de resultados por naturaleza en b6 (pág. 18); notas 45 (financieros, b19) y 46 (extraordinarios, b20) desglosan renglones. b1 es cuadro de gestión con desglose de proveitos por categoría. b24 es el estado por funciones (alternativo, no se carga)."
+}

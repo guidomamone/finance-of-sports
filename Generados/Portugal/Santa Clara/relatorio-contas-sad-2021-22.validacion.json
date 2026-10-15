@@ -1,0 +1,38 @@
+{
+ "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2021-22.pdf",
+ "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2021-22.md",
+ "mdSha1": "9b076a5f21aa0aba1bad0ba0634b8f1c7477c3b2",
+ "modo": "escaneo",
+ "motivoModo": "el PDF no trae texto usable (0 números, 0 caracteres/pág): escaneo o texto roto",
+ "generado": "2026-10-15T20:48:42.689Z",
+ "fuentes": {
+  "11": "gemini",
+  "33": "gemini",
+  "34": "gemini",
+  "35": "gemini",
+  "36": "gemini",
+  "37": "gemini",
+  "38": "gemini"
+ },
+ "confirmados": 170,
+ "noConfirmados": [
+  {
+   "bloque": "b3",
+   "pagina": 11,
+   "linea": 328,
+   "numero": "6 363 550,44",
+   "segundaLeyo": "636356044",
+   "sinSegunda": false,
+   "texto": "| Vendas e serviços prestados | 18 | 6 173 132,25 | 6 363 550,44 |"
+  },
+  {
+   "bloque": "b29",
+   "pagina": 35,
+   "linea": 1288,
+   "numero": "768 600,86",
+   "segundaLeyo": "76880086",
+   "sinSegunda": false,
+   "texto": "|  Deslocações, Estadas e Transportes | 768 600,86 | 393 427,10  |"
+  }
+ ]
+}

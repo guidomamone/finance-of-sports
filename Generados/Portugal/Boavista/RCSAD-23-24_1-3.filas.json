@@ -1,0 +1,162 @@
+{
+ "pdf": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf",
+ "md": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.md",
+ "mdSha1": "bac4b94e490f9d0412dc7cf241cf135db1f8bfa1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T22:47:56.964Z",
+ "ubicacion": {
+  "estado": [
+   "b7"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con decimales (ej. 4 424 268,14) indican euros en unidades"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b7",
+   "linea": 584,
+   "etiqueta": "Vendas e serviços prestados",
+   "actual": "4 424 268,14",
+   "anterior": "4 381 907,20",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 585,
+   "etiqueta": "Subsídios à exploração",
+   "actual": "219 357,91",
+   "anterior": "167 592,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 586,
+   "etiqueta": "Fornecimentos e serviços externos",
+   "actual": "(3 886 821,10)",
+   "anterior": "(3 682 602,27)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 587,
+   "etiqueta": "Gastos com o pessoal",
+   "actual": "(10 608 357,65)",
+   "anterior": "(10 896 141,03)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 588,
+   "etiqueta": "Outros rendimentos",
+   "actual": "5 282 975,74",
+   "anterior": "1 558 871,12",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 589,
+   "etiqueta": "Outros gastos",
+   "actual": "(618 005,71)",
+   "anterior": "(2 006 729,13)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 590,
+   "etiqueta": "Resultado antes de depreciações, gastos de financiamento e impostos",
+   "actual": "(5 186 582,67)",
+   "anterior": "(10 477 102,11)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 591,
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "actual": "(2 200 962,59)",
+   "anterior": "(2 369 649,13)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 592,
+   "etiqueta": "Resultado operacional (antes de gastos de financiamento e impostos)",
+   "actual": "(7 387 545,26)",
+   "anterior": "(12 846 751,24)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 593,
+   "etiqueta": "Juros e gastos similares suportados",
+   "actual": "(931 493,06)",
+   "anterior": "(620 118,75)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 594,
+   "etiqueta": "Resultado antes de impostos",
+   "actual": "(8 319 038,32)",
+   "anterior": "(13 466 869,99)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 595,
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "actual": "1 649 760,57",
+   "anterior": "(18 544,50)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 596,
+   "etiqueta": "Resultado líquido do período",
+   "actual": "(6 669 277,75)",
+   "anterior": "(13 485 414,49)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 596,
+  "actual": "(6 669 277,75)",
+  "anterior": "(13 485 414,49)"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados por naturezas individual en euros. No hay totales impresos de ingresos ni de gastos. No se proporcionaron notas de desglose. La venta de jugadores probablemente está incluida en 'Outros rendimentos' (notas 25/32)."
+}

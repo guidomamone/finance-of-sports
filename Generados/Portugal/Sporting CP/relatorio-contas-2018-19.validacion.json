@@ -1,0 +1,25 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2018-19.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2018-19.md",
+ "mdSha1": "5322126e97b0140d3528d94bb3c0e509741e04e7",
+ "modo": "digital",
+ "motivoModo": "16 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 30092016 vs 30092018, 1446 vs 1546, 6382 vs 6381; 56 números del .md no están en el PDF (tolerancia 43)",
+ "generado": "2026-10-15T21:29:08.747Z",
+ "fuentes": {
+  "73": "gemini",
+  "100": "pdftotext",
+  "101": "pdftotext",
+  "102": "pdftotext",
+  "103": "pdftotext",
+  "104": "pdftotext",
+  "105": "pdftotext",
+  "106": "pdftotext",
+  "108": "pdftotext",
+  "136": "pdftotext"
+ },
+ "hibridas": [
+  73
+ ],
+ "confirmados": 177,
+ "noConfirmados": []
+}

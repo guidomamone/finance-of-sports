@@ -1,0 +1,46 @@
+{
+ "pdf": "Clubes/Portugal/Felgueiras/Demonstracoes-Financeiras-Individuais-Epoca-2023-2024.pdf",
+ "md": "Clubes/Portugal/Felgueiras/Demonstracoes-Financeiras-Individuais-Epoca-2023-2024.md",
+ "mdSha1": "25b4e61ff7e84d878ba9f964dadb7892490f71c0",
+ "modo": "escaneo",
+ "motivoModo": "el PDF no trae texto usable (0 números, 0 caracteres/pág): escaneo o texto roto",
+ "generado": "2026-10-15T19:22:51.980Z",
+ "fuentes": {
+  "6": "gemini",
+  "23": "gemini",
+  "24": "gemini",
+  "25": "gemini",
+  "50": "gemini",
+  "51": "gemini"
+ },
+ "confirmados": 208,
+ "noConfirmados": [
+  {
+   "bloque": "b36",
+   "pagina": 50,
+   "linea": 1973,
+   "numero": "119,544.00",
+   "segundaLeyo": "11954404",
+   "sinSegunda": false,
+   "texto": "| Gastos em dia de jogo | - 97,683.99 € | - 119,544.00 € | - 73,498.09 € |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 24,
+   "linea": 1131,
+   "numero": "922,92",
+   "segundaLeyo": "90292",
+   "sinSegunda": false,
+   "texto": "| Seguros | 922,92 | 1.620,18 |"
+  },
+  {
+   "bloque": "b22",
+   "pagina": 24,
+   "linea": 1132,
+   "numero": "3.096,66",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Contencioso e notariado | 954,69 | 3.096,66 |"
+  }
+ ]
+}

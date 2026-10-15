@@ -1,0 +1,39 @@
+{
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2018-19.pdf",
+ "generado": "2026-10-15T22:55:31.136Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (benfica-pt)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 2: 2009-2019 traen consolidado e individual lado a lado y las controladas (Benfica Estádio, Benfica TV) hacen negocio del fútbol del club (estadio, canal))"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2018-19.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2019-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "benfica-pt",
+ "year": 2019,
+ "cortadoEn": "filas"
+}

@@ -1,0 +1,204 @@
+{
+ "pdf": "Clubes/Portugal/Academico Viseu/wf-src-RC21_22.pdf",
+ "md": "Clubes/Portugal/Academico Viseu/wf-src-RC21_22.md",
+ "mdSha1": "beb4a6f4cd55483dfbbb427fc73e61b45bb4b51c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T18:07:46.510Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    137,
+    172
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    191,
+    208
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    210,
+    212
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    429,
+    434
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 12,
+   "lineas": [
+    460,
+    465
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    469,
+    477
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    483,
+    495
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    509,
+    523
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    529,
+    535
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    549,
+    563
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    573,
+    590
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 15,
+   "lineas": [
+    653,
+    666
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    676,
+    683
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    687,
+    697
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    708,
+    715
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    717,
+    731
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 17,
+   "lineas": [
+    751,
+    756
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    762,
+    781
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 18,
+   "lineas": [
+    827,
+    836
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 19,
+   "lineas": [
+    846,
+    849
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b10"
+ ],
+ "notas_gastos": [
+  "b9",
+  "b11",
+  "b15",
+  "b16",
+  "b18"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "No se ve indicación de escala en el índice; los importes de otras notas aparecen con decimales (ej. 2 107 159,12), lo que sugiere euros en unidades.",
+ "moneda": "EUR",
+ "columna_ejercicio": "PERÍODOS: 2021/2022",
+ "columna_anterior": "PERÍODOS: 2020/2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El estado de resultados (b2) está expresado en euros en unidades (con céntimos)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No hay frase de escala visible arriba de b2; las notas usan importes con decimales.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de la SAD. b2 es la Demonstração dos Resultados por Naturezas. b10 desglosa el rédito (vendas e serviços y otros rendimentos). b9 es el CMV, b11 los outros gastos, b15 y b16 los gastos con pessoal (b16 es el detalle por atletas y otro pessoal) y b18 los FSE. Se excluyen el balance, los flujos de caja, las partes relacionadas, los intangibles por jugador, el AFT, los instrumentos financieros, el capital y los suprimentos."
+}

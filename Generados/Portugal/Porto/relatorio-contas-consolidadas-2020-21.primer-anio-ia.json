@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.md",
+ "clave": "48e1791d8ad3b72449503ddf8dd49597ff1fec36",
+ "generado": "2026-10-15T21:56:28.078Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado está completo y sin errores para 30/06/2021. Las filas tomadas de notas suman exactamente los renglones del estado que reemplazan: L894 (3,306911), L900 (112,577551), L899 (29,862477) y L901 (37,785297). Los subtotales no se cargaron. La atribución a asociados e intereses sin control (L910-L911) es un reparto del resultado neto, no un renglón a cargar."
+ }
+}

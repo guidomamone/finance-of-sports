@@ -1,0 +1,222 @@
+{
+ "pdf": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.pdf",
+ "md": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.md",
+ "mdSha1": "cd469e2142a9382c4646e6fe3ebbf6af6870cb8d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T18:22:26.535Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    114,
+    120
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    161,
+    194
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    216,
+    228
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    253,
+    262
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    278,
+    283
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    290,
+    293
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    322,
+    337
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    536,
+    543
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    549,
+    567
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    581,
+    599
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    605,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    641,
+    652
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    658,
+    664
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    670,
+    678
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 17,
+   "lineas": [
+    696,
+    700
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 17,
+   "lineas": [
+    706,
+    709
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 17,
+   "lineas": [
+    715,
+    721
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 18,
+   "lineas": [
+    739,
+    744
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 18,
+   "lineas": [
+    750,
+    757
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 18,
+   "lineas": [
+    763,
+    768
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 19,
+   "lineas": [
+    783,
+    815
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    833,
+    847
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    855,
+    861
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 21,
+   "lineas": [
+    879,
+    900
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b20"
+ ],
+ "notas_gastos": [
+  "b21",
+  "b22",
+  "b23"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Montantes expressos em euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30-06-2024",
+ "columna_anterior": "30-06-2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados por naturezas individual de la SDUQ en b3 (pág. 7). Notas: 15 Vendas e prestação de serviços (b20), 16 FSE (b21), 17 Gastos com pessoal (b22), 18 Outros gastos (b23). Se excluyen balance, flujos, patrimonio, activos, saldos y la conciliación de impuestos (b24)."
+}

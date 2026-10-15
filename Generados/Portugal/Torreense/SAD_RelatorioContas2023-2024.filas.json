@@ -1,0 +1,682 @@
+{
+ "pdf": "Clubes/Portugal/Torreense/SAD_RelatorioContas2023-2024.pdf",
+ "md": "Clubes/Portugal/Torreense/SAD_RelatorioContas2023-2024.md",
+ "mdSha1": "81978cb9475f3875adeef17889e4e2d78a7a6a23",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T21:46:00.620Z",
+ "ubicacion": {
+  "estado": [
+   "b23"
+  ],
+  "notas_ingresos": [
+   "b32"
+  ],
+  "notas_gastos": [
+   "b41",
+   "b42",
+   "b56",
+   "b45"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b23",
+   "escala": "unidades",
+   "evidencia": "Importes con dos decimales (ej. 4.772.150,29); no se imprime escala, se infiere unidades (euros)"
+  },
+  {
+   "bloque": "b32",
+   "escala": "unidades",
+   "evidencia": "Importes con decimales (4.772.150,29), coinciden con el estado"
+  },
+  {
+   "bloque": "b41",
+   "escala": "unidades",
+   "evidencia": "Importes con decimales; total en b42 coincide con estado"
+  },
+  {
+   "bloque": "b42",
+   "escala": "unidades",
+   "evidencia": "Total 2.793.884,19 igual al estado"
+  },
+  {
+   "bloque": "b56",
+   "escala": "unidades",
+   "evidencia": "Gastos com o pessoal 4.794.668,29 igual al estado"
+  },
+  {
+   "bloque": "b45",
+   "escala": "unidades",
+   "evidencia": "Importes con decimales (3.348,25)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b23",
+   "linea": 1262,
+   "etiqueta": "Vendas e serviços prestados",
+   "actual": "4.772.150,29",
+   "anterior": "796.703,46",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1263,
+   "etiqueta": "Fornecimentos e serviços externos",
+   "actual": "-2.793.884,19",
+   "anterior": "-2.185.908,68",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1264,
+   "etiqueta": "Gastos com o pessoal",
+   "actual": "-4.794.668,29",
+   "anterior": "-2.872.755,95",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1265,
+   "etiqueta": "Provisões (aumentos/reduções)",
+   "actual": "-2.820,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1266,
+   "etiqueta": "Aumentos/reduções de justo valor",
+   "actual": "2.907.000,00",
+   "anterior": "4.230.000,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1267,
+   "etiqueta": "Outros rendimentos",
+   "actual": "477.636,25",
+   "anterior": "497.333,69",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1268,
+   "etiqueta": "Outros gastos",
+   "actual": "-23.041,71",
+   "anterior": "-171.628,89",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1269,
+   "etiqueta": "Resultado antes de depreciações, gastos de financiamento e impostos",
+   "actual": "542.372,35",
+   "anterior": "293.743,63",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1270,
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "actual": "-3.495,90",
+   "anterior": "-1.859,24",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1271,
+   "etiqueta": "Resultado operacional (antes de gastos de financiamento e impostos)",
+   "actual": "538.876,45",
+   "anterior": "291.884,39",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1272,
+   "etiqueta": "Juros e rendimentos similares obtidos",
+   "actual": "77,48",
+   "anterior": "1.035,21",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1273,
+   "etiqueta": "Juros e gastos similares suportados",
+   "actual": "-497.181,54",
+   "anterior": "-163.016,47",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1274,
+   "etiqueta": "Resultado antes de impostos",
+   "actual": "41.772,39",
+   "anterior": "129.903,13",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1275,
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "actual": "-27.811,74",
+   "anterior": "-34.211,61",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1276,
+   "etiqueta": "Resultado líquido do período",
+   "actual": "13.960,65",
+   "anterior": "95.691,52",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 1824,
+   "etiqueta": "Prestação de serviços",
+   "actual": "4.772.150,29",
+   "anterior": "412.888,63",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e serviços prestados"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2041,
+   "etiqueta": "Serviços especializados",
+   "actual": "1.620.641,42",
+   "anterior": "907.427,58",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2042,
+   "etiqueta": "Trabalhos especializados",
+   "actual": "1.430.409,49",
+   "anterior": "832.138,83",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Serviços especializados"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2043,
+   "etiqueta": "Publicidade e propaganda",
+   "actual": "81.592,08",
+   "anterior": "29.268,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Serviços especializados"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2044,
+   "etiqueta": "Vigilância e segurança",
+   "actual": "97.890,24",
+   "anterior": "45.909,51",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Serviços especializados"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2045,
+   "etiqueta": "Comissões",
+   "actual": "262,50",
+   "anterior": "111,24",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Serviços especializados"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2046,
+   "etiqueta": "Conservação e reparação",
+   "actual": "10.487,11",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Serviços especializados"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2047,
+   "etiqueta": "Materiais",
+   "actual": "207.228,20",
+   "anterior": "153.581,56",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2048,
+   "etiqueta": "Ferramentas e utensílios de desgaste rápido",
+   "actual": "6.765,27",
+   "anterior": "3.998,11",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Materiais"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2049,
+   "etiqueta": "Material de escritório",
+   "actual": "2.476,17",
+   "anterior": "934,62",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Materiais"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2050,
+   "etiqueta": "Artigos para oferta",
+   "actual": "4.602,09",
+   "anterior": "2.150,86",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Materiais"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2051,
+   "etiqueta": "Outros",
+   "actual": "193.384,67",
+   "anterior": "146.497,97",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Materiais"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2052,
+   "etiqueta": "Energia e fluidos",
+   "actual": "49.802,14",
+   "anterior": "3.125,87",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2053,
+   "etiqueta": "Eletricidade",
+   "actual": "21.941,66",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Energia e fluidos"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2054,
+   "etiqueta": "Combustíveis",
+   "actual": "11.204,34",
+   "anterior": "3.125,87",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Energia e fluidos"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2055,
+   "etiqueta": "Água",
+   "actual": "16.656,14",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Energia e fluidos"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2056,
+   "etiqueta": "Deslocações, estadas e transportes",
+   "actual": "564.457,54",
+   "anterior": "340.110,75",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2057,
+   "etiqueta": "Deslocações e estadas",
+   "actual": "350.481,56",
+   "anterior": "225.404,97",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Deslocações, estadas e transportes"
+  },
+  {
+   "bloque": "b41",
+   "linea": 2058,
+   "etiqueta": "Transportes de pessoal",
+   "actual": "213.904,34",
+   "anterior": "114.705,78",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Deslocações, estadas e transportes"
+  },
+  {
+   "bloque": "b42",
+   "linea": 2075,
+   "etiqueta": "Transportes de mercadorias",
+   "actual": "71,64",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Deslocações, estadas e transportes"
+  },
+  {
+   "bloque": "b42",
+   "linea": 2077,
+   "etiqueta": "Serviços diversos",
+   "actual": "351.754,89",
+   "anterior": "74.308,09",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b42",
+   "linea": 2078,
+   "etiqueta": "Rendas e alugueres",
+   "actual": "327.788,84",
+   "anterior": "67.040,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Serviços diversos"
+  },
+  {
+   "bloque": "b42",
+   "linea": 2079,
+   "etiqueta": "Comunicação",
+   "actual": "5.316,06",
+   "anterior": "610,87",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Serviços diversos"
+  },
+  {
+   "bloque": "b42",
+   "linea": 2080,
+   "etiqueta": "Seguros",
+   "actual": "283,98",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Serviços diversos"
+  },
+  {
+   "bloque": "b42",
+   "linea": 2081,
+   "etiqueta": "Contencioso e notariado",
+   "actual": "2.565,02",
+   "anterior": "693,75",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Serviços diversos"
+  },
+  {
+   "bloque": "b42",
+   "linea": 2082,
+   "etiqueta": "Despesas de representação",
+   "actual": "4.941,51",
+   "anterior": "2.378,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Serviços diversos"
+  },
+  {
+   "bloque": "b42",
+   "linea": 2083,
+   "etiqueta": "Limpeza, higiene e conforto",
+   "actual": "5.986,90",
+   "anterior": "2.576,39",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Serviços diversos"
+  },
+  {
+   "bloque": "b42",
+   "linea": 2084,
+   "etiqueta": "Outros serviços",
+   "actual": "4.872,58",
+   "anterior": "1.009,08",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Serviços diversos"
+  },
+  {
+   "bloque": "b42",
+   "linea": 2085,
+   "etiqueta": "Total",
+   "actual": "2.793.884,19",
+   "anterior": "1.478.553,85",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2324,
+   "etiqueta": "Gastos com o pessoal",
+   "actual": "4.794.668,29",
+   "anterior": "2.236.171,11",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2325,
+   "etiqueta": "Remunerações do pessoal",
+   "actual": "3.812.199,85",
+   "anterior": "1.792.317,32",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2326,
+   "etiqueta": "Indemnizações",
+   "actual": "235.338,35",
+   "anterior": "97.188,80",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2327,
+   "etiqueta": "Encargos sobre as remunerações",
+   "actual": "349.401,96",
+   "anterior": "166.001,53",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2328,
+   "etiqueta": "Seguros de acidentes no trabalho e doenças profissionais",
+   "actual": "344.303,18",
+   "anterior": "151.281,03",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2329,
+   "etiqueta": "Gastos de acção social",
+   "actual": "1.439,98",
+   "anterior": "1.353,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2330,
+   "etiqueta": "Outros gastos com o pessoal, dos quais:",
+   "actual": "51.984,97",
+   "anterior": "28.029,43",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2331,
+   "etiqueta": "- Formação",
+   "actual": "45.524,46",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos com o pessoal, dos quais:"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2332,
+   "etiqueta": "- fardamento",
+   "actual": "242,86",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos com o pessoal, dos quais:"
+  },
+  {
+   "bloque": "b45",
+   "linea": 2139,
+   "etiqueta": "681 - Impostos",
+   "actual": "3.348,25",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b45",
+   "linea": 2141,
+   "etiqueta": "6881-Corr. Rel. Periodos Anteriores",
+   "actual": "1.155,29",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b45",
+   "linea": 2142,
+   "etiqueta": "6882-Donativos",
+   "actual": "4.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b45",
+   "linea": 2143,
+   "etiqueta": "6888-Multas e penalidades",
+   "actual": "13.646,60",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b45",
+   "linea": 2144,
+   "etiqueta": "6888-Desp. N dev. Documentadas",
+   "actual": "891,57",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 1276,
+  "actual": "13.960,65",
+  "anterior": "95.691,52"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga 'Outros réditos' (3.384.713,73, L1825) y el 'Total' (8.156.864,02, L1826) de b32?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Vendas e serviços prestados",
+   "texto": "L1825 no corresponde a 'Vendas e serviços prestados' (4.772.150,29); parece agrupar justo valor y otros rendimentos (2.907.000+477.636,25≈3.384.636) y no cuadra exacto.",
+   "bloques": [
+    "b32"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se acepta que la columna año anterior de las notas (ej. 412.888,63 en L1824, 2.236.171,11 en L2324, 1.478.553,85 en L2085) difiere del estado y se carga igual?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Gastos com o pessoal",
+   "texto": "Los comparativos de las notas no coinciden con la columna 2022 del estado (796.703,46; 2.872.755,95; 2.185.908,68), posible reexpresión o período distinto.",
+   "bloques": [
+    "b32",
+    "b41",
+    "b42",
+    "b56",
+    "b23"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga el detalle de 'Outros gastos' de b45 (L2139-L2144) aunque suma 23.041,71 solo si están completas sus filas?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Outros gastos",
+   "texto": "La tabla b45 no tiene encabezado de columnas ni comparativo; sus filas suman 23.041,71, igual al estado L1268.",
+   "bloques": [
+    "b45"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Escala no impresa; se infiere unidades (euros) por decimales y coincidencia con el estado. La tabla FSE continúa de b41 a b42; 'Transportes de mercadorias' (L2075) quedó como encabezado de tabla pero es parte de 'Deslocações, estadas e transportes'. En b56 la primera fila repite el total del renglón del estado. No hay total de ingresos ni de gastos impresos en el estado."
+}

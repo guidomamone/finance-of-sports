@@ -1,0 +1,278 @@
+{
+ "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf",
+ "md": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md",
+ "mdSha1": "476e9d6dd2524ee0d308929e825731e1fd17b52d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T21:46:45.368Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    21,
+    49
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    73,
+    88
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    200,
+    205
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    347,
+    365
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 12,
+   "lineas": [
+    367,
+    385
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    401,
+    419
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    425,
+    429
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    443,
+    446
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    454,
+    461
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    477,
+    487
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    491,
+    501
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 15,
+   "lineas": [
+    507,
+    517
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    533,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    543,
+    547
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    553,
+    561
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 17,
+   "lineas": [
+    579,
+    586
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 17,
+   "lineas": [
+    594,
+    597
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 18,
+   "lineas": [
+    613,
+    624
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    644,
+    649
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 19,
+   "lineas": [
+    657,
+    661
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 19,
+   "lineas": [
+    667,
+    673
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    689,
+    698
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    712,
+    719
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 21,
+   "lineas": [
+    735,
+    739
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 21,
+   "lineas": [
+    745,
+    749
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 21,
+   "lineas": [
+    757,
+    760
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 22,
+   "lineas": [
+    776,
+    781
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 22,
+   "lineas": [
+    785,
+    797
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 23,
+   "lineas": [
+    807,
+    820
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b19",
+  "b20",
+  "b24"
+ ],
+ "notas_gastos": [
+  "b21",
+  "b22",
+  "b23",
+  "b25",
+  "b26"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30.jun.24",
+ "columna_anterior": "30.jun.23",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de transações com partes relacionadas (b28)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "b28 detalla transacciones por entidad relacionada, no por categoría de ingreso o gasto.",
+   "bloques": [
+    "b28"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados modelo reducido en euros (b2), sólo cuentas individuales de la SAD. Notas: 18 Vendas e prestação de serviços (b19), 19 Subsídios (b20), 20 CMVMC (b21), 21 FSE (b22), 22 Gastos com pessoal (b23), 23 Outros rendimentos (b24), 24 Outros gastos (b25), 25 Gastos de financiamento (b26)."
+}

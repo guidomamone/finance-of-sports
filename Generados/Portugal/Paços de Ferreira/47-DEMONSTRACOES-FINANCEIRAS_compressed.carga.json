@@ -1,0 +1,40 @@
+{
+ "pdf": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.pdf",
+ "generado": "2026-10-15T22:34:44.432Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (pacosdeferreira-pt)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2020-06-30",
+  "evidencia": {
+   "pagina": 5,
+   "texto": "ANEXO ÀS DEMONSTRAÇÕES FINANCEIRAS DO PERÍODO ENTRE 01 DE JULHO DE 2019 E 30 DE JUNHO DE 2020"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "pacosdeferreira-pt",
+ "year": 2020,
+ "cortadoEn": "filas"
+}

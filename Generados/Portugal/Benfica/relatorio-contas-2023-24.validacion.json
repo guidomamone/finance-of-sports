@@ -1,0 +1,39 @@
+{
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2023-24.pdf",
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2023-24.md",
+ "mdSha1": "62022dd05851b31a43972f19dbd3aaf0ed8d372a",
+ "modo": "digital",
+ "motivoModo": "3 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 18658000 vs 11638000, 20160618 vs 20160278, 47695 vs 41695",
+ "generado": "2026-10-15T18:29:57.863Z",
+ "fuentes": {
+  "112": "pdftotext",
+  "150": "pdftotext",
+  "151": "pdftotext",
+  "152": "pdftotext",
+  "153": "pdftotext",
+  "154": "pdftotext",
+  "158": "pdftotext",
+  "159": "pdftotext"
+ },
+ "confirmados": 180,
+ "noConfirmados": [
+  {
+   "bloque": "b95",
+   "pagina": 151,
+   "linea": 5328,
+   "numero": "30.04",
+   "segundaLeyo": "3006",
+   "sinSegunda": false,
+   "texto": "|   | 30.04.24 | 30.04.25  |"
+  },
+  {
+   "bloque": "b95",
+   "pagina": 151,
+   "linea": 5328,
+   "numero": "30.04",
+   "segundaLeyo": "3006",
+   "sinSegunda": false,
+   "texto": "|   | 30.04.24 | 30.04.25  |"
+  }
+ ]
+}

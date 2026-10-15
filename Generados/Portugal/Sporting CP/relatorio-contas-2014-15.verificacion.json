@@ -1,0 +1,504 @@
+{
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2014-15.pdf",
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2014-15.md",
+ "generado": "2026-10-15T21:55:08.637Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2015,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2016",
+   "ok": true,
+   "detalle": "ingresos de 2015: 86.384 en este documento y 86.384 en relatorio-contas-2015-16.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2014",
+   "ok": true,
+   "detalle": "ingresos de 2014: 54.253 en relatorio-contas-2013-14.pdf y 54.253 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "escalón \"nota exacta en la lectura 5\": \"Vendas e prestações de serviços\" (L2335) se abre en las 7 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Outros rendimentos e ganhos\" (L2336) se abre en las 8 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Rendimentos/(gastos) com transações com jogadores\" (L2347) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Fornecimentos e serviços externos\" (L2339) se abre en las 10 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Gastos com o pessoal\" (L2340) se abre en las 8 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Provisões e perdas por imparidade excluindo plantel\" (L2342) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Outros gastos e perdas\" (L2343) se abre en las 8 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Amortizações e perdas de imparidade do plantel\" (L2346) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: b26 es una demostración pro forma de la fusión, no el estado de resultados reportado (b19).",
+  "duda de extraer que no afecta la carga: El encabezado de L3379 no dice Euros'000, pero el total 20.548 coincide con L3360."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 86.384,
+  "gastos": 62.921,
+  "financiero": -1.113,
+  "impuesto": -3.017,
+  "resultadoImpreso": 19.333,
+  "resultadoParaCargar": 19.333,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Loja Verde",
+   "lado": "ingreso",
+   "M": 1.317,
+   "pagina": 107,
+   "linea": 3207,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\""
+  },
+  {
+   "etiqueta": "Direitos Televisivos",
+   "lado": "ingreso",
+   "M": 17.353,
+   "pagina": 107,
+   "linea": 3209,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\""
+  },
+  {
+   "etiqueta": "Bilheteira e Bilhetes de Época",
+   "lado": "ingreso",
+   "M": 12.595,
+   "pagina": 107,
+   "linea": 3210,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\""
+  },
+  {
+   "etiqueta": "Patrocínios e Publicidade",
+   "lado": "ingreso",
+   "M": 10.181,
+   "pagina": 107,
+   "linea": 3211,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\""
+  },
+  {
+   "etiqueta": "Royalties",
+   "lado": "ingreso",
+   "M": 0.661,
+   "pagina": 107,
+   "linea": 3212,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "ingreso",
+   "M": 2.595,
+   "pagina": 107,
+   "linea": 3213,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "ingreso",
+   "M": 0.001,
+   "linea": 2335,
+   "origen": "nota que desglosa \"Vendas e prestações de serviços\""
+  },
+  {
+   "etiqueta": "Participação nas Competições Europeias",
+   "lado": "ingreso",
+   "M": 11.339,
+   "pagina": 108,
+   "linea": 3260,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Participações nas Competições Nacionais",
+   "lado": "ingreso",
+   "M": 0.278,
+   "pagina": 108,
+   "linea": 3261,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Participações em Competições Particulares",
+   "lado": "ingreso",
+   "M": 0.307,
+   "pagina": 108,
+   "linea": 3262,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Cedência de jogadores",
+   "lado": "ingreso",
+   "M": 0.42,
+   "pagina": 108,
+   "linea": 3263,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Diferenças de câmbio",
+   "lado": "ingreso",
+   "M": 0.446,
+   "pagina": 108,
+   "linea": 3264,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Descontos de pronto pagamento obtidos",
+   "lado": "ingreso",
+   "M": 0.199,
+   "pagina": 108,
+   "linea": 3265,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "ingreso",
+   "M": 0.691,
+   "pagina": 108,
+   "linea": 3266,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "ingreso",
+   "M": -0.001,
+   "linea": 2336,
+   "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Cedência de direitos económicos ao Sporting Portugal Fund",
+   "lado": "ingreso",
+   "M": 0.658,
+   "pagina": 114,
+   "linea": 3458,
+   "origen": "nota que desglosa \"Rendimentos/(gastos) com transações com jogadores\""
+  },
+  {
+   "etiqueta": "Venda de direitos desportivos",
+   "lado": "ingreso",
+   "M": 27.304,
+   "pagina": 114,
+   "linea": 3459,
+   "origen": "nota que desglosa \"Rendimentos/(gastos) com transações com jogadores\""
+  },
+  {
+   "etiqueta": "Mecanismo de solidariedade/compensão por formação",
+   "lado": "ingreso",
+   "M": 0.04,
+   "pagina": 114,
+   "linea": 3460,
+   "origen": "nota que desglosa \"Rendimentos/(gastos) com transações com jogadores\""
+  },
+  {
+   "etiqueta": "Custo das mercadorias vendidas",
+   "lado": "gasto",
+   "M": 0.902,
+   "pagina": 78,
+   "linea": 2338,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Subcontratos",
+   "lado": "gasto",
+   "M": 6.736,
+   "pagina": 110,
+   "linea": 3303,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Organização e deslocações e estadias de jogos",
+   "lado": "gasto",
+   "M": 1.075,
+   "pagina": 110,
+   "linea": 3304,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Comissões",
+   "lado": "gasto",
+   "M": 0.347,
+   "pagina": 110,
+   "linea": 3305,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Honorários",
+   "lado": "gasto",
+   "M": 0.952,
+   "pagina": 110,
+   "linea": 3306,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Trabalhos especializados",
+   "lado": "gasto",
+   "M": 1.442,
+   "pagina": 110,
+   "linea": 3307,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Equipamentos Desportivos",
+   "lado": "gasto",
+   "M": 0.667,
+   "pagina": 110,
+   "linea": 3308,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Combustíveis",
+   "lado": "gasto",
+   "M": 0.589,
+   "pagina": 110,
+   "linea": 3309,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Publicidade e Propaganda",
+   "lado": "gasto",
+   "M": 0.971,
+   "pagina": 110,
+   "linea": 3310,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Outros FSE",
+   "lado": "gasto",
+   "M": 1.367,
+   "pagina": 110,
+   "linea": 3311,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "gasto",
+   "M": 0.001,
+   "linea": 2339,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Remunerações Órgãos Sociais",
+   "lado": "gasto",
+   "M": 0.163,
+   "pagina": 111,
+   "linea": 3359,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Remuneração do Pessoal",
+   "lado": "gasto",
+   "M": 20.548,
+   "pagina": 111,
+   "linea": 3360,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Indemnizações",
+   "lado": "gasto",
+   "M": 0.949,
+   "pagina": 111,
+   "linea": 3361,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Encargos com remunerações",
+   "lado": "gasto",
+   "M": 1.678,
+   "pagina": 111,
+   "linea": 3362,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Gastos com benefícios pós-emprego (Nota 28)",
+   "lado": "gasto",
+   "M": 0.175,
+   "pagina": 111,
+   "linea": 3363,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 1.476,
+   "pagina": 111,
+   "linea": 3364,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.152,
+   "pagina": 111,
+   "linea": 3365,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "gasto",
+   "M": -0.001,
+   "linea": 2340,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Depreciações e amortizações excluindo plantel",
+   "lado": "gasto",
+   "M": 3.59,
+   "pagina": 78,
+   "linea": 2341,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Imparidade de clientes (Nota 14)",
+   "lado": "gasto",
+   "M": 2.83,
+   "pagina": 112,
+   "linea": 3404,
+   "origen": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\""
+  },
+  {
+   "etiqueta": "Imparidade de inventários",
+   "lado": "gasto",
+   "M": 0.056,
+   "pagina": 112,
+   "linea": 3406,
+   "origen": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\""
+  },
+  {
+   "etiqueta": "Provisões para outros riscos e encargos (Nota 19)",
+   "lado": "gasto",
+   "M": 1.138,
+   "pagina": 112,
+   "linea": 3407,
+   "origen": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\""
+  },
+  {
+   "etiqueta": "Cedência de jogadores de terceiros",
+   "lado": "gasto",
+   "M": 0.22,
+   "pagina": 113,
+   "linea": 3421,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Quotizações",
+   "lado": "gasto",
+   "M": 0.219,
+   "pagina": 113,
+   "linea": 3422,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Impostos",
+   "lado": "gasto",
+   "M": 0.737,
+   "pagina": 113,
+   "linea": 3423,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Multas e penalidades",
+   "lado": "gasto",
+   "M": 0.164,
+   "pagina": 113,
+   "linea": 3424,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Prospeção de mercado",
+   "lado": "gasto",
+   "M": 0.572,
+   "pagina": 113,
+   "linea": 3425,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Diferenças de câmbio desfavoráveis operacionais",
+   "lado": "gasto",
+   "M": 0.85,
+   "pagina": 113,
+   "linea": 3426,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Direitos de imagem",
+   "lado": "gasto",
+   "M": 0.655,
+   "pagina": 113,
+   "linea": 3427,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.885,
+   "pagina": 113,
+   "linea": 3428,
+   "origen": "nota que desglosa \"Outros gastos e perdas\""
+  },
+  {
+   "etiqueta": "Amortizações do exercício - Futebol profissional (Nota 12)",
+   "lado": "gasto",
+   "M": 7.333,
+   "pagina": 113,
+   "linea": 3439,
+   "origen": "nota que desglosa \"Amortizações e perdas de imparidade do plantel\""
+  },
+  {
+   "etiqueta": "Perdas por imparidade - Futebol profissional (Nota 12)",
+   "lado": "gasto",
+   "M": 3.483,
+   "pagina": 113,
+   "linea": 3440,
+   "origen": "nota que desglosa \"Amortizações e perdas de imparidade do plantel\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Resultados financeiros",
+   "M": -1.113,
+   "linea": 2350
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento",
+   "M": -3.017,
+   "linea": 2352
+  }
+ ]
+}

@@ -1,0 +1,305 @@
+{
+ "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.pdf",
+ "md": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.md",
+ "generado": "2026-10-15T21:55:01.631Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.0000013400000000718393
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 1.833554 en este documento y 1.833554 en Relatorio-e-Contas-202425.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 1.145694 en Relatorio-e-Contas-202223.pdf y 1.145694 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Outros gastos\" no suma el renglón (0.370469 contra 0.37047, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"Fornecimentos e serviços externos\"): ¿Se deja afuera de la carga el cuadro de FSE del relatório de gestão (b5), usando el de la nota 20.1 (b30)?",
+  "duda de extraer que no afecta la carga: L1389 no tiene importe en la columna 2024, solo -117,59 en 2023."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Outros gastos",
+   "suma": 0.370469,
+   "objetivo": 0.37047
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Outros gastos",
+   "suma": 0.370469,
+   "objetivo": 0.37047
+  }
+ ],
+ "totales": {
+  "ingresos": 1.833554,
+  "gastos": 3.099986,
+  "financiero": 0.159159,
+  "impuesto": -0.05477,
+  "resultadoImpreso": -1.162041,
+  "resultadoParaCargar": -1.162041,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Venda de mercadorias",
+   "lado": "ingreso",
+   "M": 0.031094,
+   "pagina": 26,
+   "linea": 943,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Prestação de serviços",
+   "lado": "ingreso",
+   "M": 1.325492,
+   "pagina": 26,
+   "linea": 944,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
+   "etiqueta": "Não reembolsáveis: Subsídios relacionados com resultados - IEFP",
+   "lado": "ingreso",
+   "M": 0.005388,
+   "pagina": 27,
+   "linea": 973,
+   "origen": "nota que desglosa \"Subsídios à exploração\""
+  },
+  {
+   "etiqueta": "Não reembolsáveis: Subsídios relacionados com resultados - Federação Portuguesa de Futebol",
+   "lado": "ingreso",
+   "M": 0.007317,
+   "pagina": 27,
+   "linea": 974,
+   "origen": "nota que desglosa \"Subsídios à exploração\""
+  },
+  {
+   "etiqueta": "Não reembolsáveis: Subsídios relacionados com resultados - Liga Portuguesa de Futebol Profissional",
+   "lado": "ingreso",
+   "M": 0.00625,
+   "pagina": 27,
+   "linea": 975,
+   "origen": "nota que desglosa \"Subsídios à exploração\""
+  },
+  {
+   "etiqueta": "Não reembolsáveis: Subsídios relacionados com resultados - Fundo Infraestruturas - LPF",
+   "lado": "ingreso",
+   "M": 0.030654,
+   "pagina": 27,
+   "linea": 976,
+   "origen": "nota que desglosa \"Subsídios à exploração\""
+  },
+  {
+   "etiqueta": "Não reembolsáveis: Subsídios relacionados com resultados - Prémio Allianz Cup - LPF",
+   "lado": "ingreso",
+   "M": 0.030536,
+   "pagina": 27,
+   "linea": 977,
+   "origen": "nota que desglosa \"Subsídios à exploração\""
+  },
+  {
+   "etiqueta": "Não reembolsáveis: Subsídios relacionados com resultados - Sub. Deslocação - FPF",
+   "lado": "ingreso",
+   "M": 0.008381,
+   "pagina": 27,
+   "linea": 978,
+   "origen": "nota que desglosa \"Subsídios à exploração\""
+  },
+  {
+   "etiqueta": "Não reembolsáveis: Subsídios relacionados com resultados - UD Oliveirense - fundos formação FIFA",
+   "lado": "ingreso",
+   "M": 0.021903,
+   "pagina": 27,
+   "linea": 979,
+   "origen": "nota que desglosa \"Subsídios à exploração\""
+  },
+  {
+   "etiqueta": "Rendimentos suplementares",
+   "lado": "ingreso",
+   "M": 0.354967,
+   "pagina": 32,
+   "linea": 1196,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Descontos de pronto pagamento obtidos",
+   "lado": "ingreso",
+   "M": 0.000012,
+   "pagina": 32,
+   "linea": 1197,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Outras",
+   "lado": "ingreso",
+   "M": 0.01156,
+   "pagina": 32,
+   "linea": 1199,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "gasto",
+   "M": 0.004185,
+   "pagina": 37,
+   "linea": 1386,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subcontratos",
+   "lado": "gasto",
+   "M": 0.0353,
+   "pagina": 32,
+   "linea": 1184,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Serviços especializados",
+   "lado": "gasto",
+   "M": 0.442202,
+   "pagina": 32,
+   "linea": 1185,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Materiais",
+   "lado": "gasto",
+   "M": 0.040489,
+   "pagina": 32,
+   "linea": 1186,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Energia e fluidos",
+   "lado": "gasto",
+   "M": 0.062784,
+   "pagina": 32,
+   "linea": 1187,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Deslocações, estadas e transportes",
+   "lado": "gasto",
+   "M": 0.186789,
+   "pagina": 32,
+   "linea": 1188,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Serviços diversos",
+   "lado": "gasto",
+   "M": 0.295107,
+   "pagina": 32,
+   "linea": 1189,
+   "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
+  },
+  {
+   "etiqueta": "Salários e ordenados",
+   "lado": "gasto",
+   "M": 1.338885,
+   "pagina": 31,
+   "linea": 1145,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Contribuições para a segurança social",
+   "lado": "gasto",
+   "M": 0.139226,
+   "pagina": 31,
+   "linea": 1148,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Outros gastos com o pessoal",
+   "lado": "gasto",
+   "M": 0.172513,
+   "pagina": 31,
+   "linea": 1149,
+   "origen": "nota que desglosa \"Gastos com o pessoal\""
+  },
+  {
+   "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 37,
+   "linea": 1389,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros gastos",
+   "lado": "gasto",
+   "M": 0.37047,
+   "pagina": 37,
+   "linea": 1391,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "lado": "gasto",
+   "M": 0.012037,
+   "pagina": 37,
+   "linea": 1395,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros e rendimentos similares obtidos",
+   "M": 0.159268,
+   "linea": 1399
+  },
+  {
+   "etiqueta": "Juros e gastos similares suportados",
+   "M": -0.000108,
+   "linea": 1400
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "M": -0.05477,
+   "linea": 1404
+  }
+ ]
+}

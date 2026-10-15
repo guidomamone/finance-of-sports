@@ -1,0 +1,278 @@
+{
+ "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2020-21.pdf",
+ "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2020-21.md",
+ "mdSha1": "d31aa06b00c5aaabda1b0302c9e8fb941f2e000e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T20:43:39.644Z",
+ "bloques": {
+  "b1": {
+   "pagina": 21,
+   "lineas": [
+    587,
+    626
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 23,
+   "lineas": [
+    661,
+    679
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 25,
+   "lineas": [
+    715,
+    738
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 27,
+   "lineas": [
+    773,
+    804
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 37,
+   "lineas": [
+    1134,
+    1138
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 37,
+   "lineas": [
+    1148,
+    1158
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 38,
+   "lineas": [
+    1180,
+    1193
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 39,
+   "lineas": [
+    1217,
+    1230
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 40,
+   "lineas": [
+    1256,
+    1267
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 41,
+   "lineas": [
+    1291,
+    1303
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 42,
+   "lineas": [
+    1327,
+    1339
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 43,
+   "lineas": [
+    1373,
+    1389
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 43,
+   "lineas": [
+    1393,
+    1401
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 44,
+   "lineas": [
+    1434,
+    1440
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 44,
+   "lineas": [
+    1442,
+    1443
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 44,
+   "lineas": [
+    1445,
+    1446
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 45,
+   "lineas": [
+    1468,
+    1473
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 46,
+   "lineas": [
+    1492,
+    1501
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 46,
+   "lineas": [
+    1507,
+    1520
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 47,
+   "lineas": [
+    1542,
+    1554
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 48,
+   "lineas": [
+    1584,
+    1598
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 49,
+   "lineas": [
+    1630,
+    1637
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 49,
+   "lineas": [
+    1651,
+    1655
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 50,
+   "lineas": [
+    1679,
+    1709
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 51,
+   "lineas": [
+    1738,
+    1749
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 52,
+   "lineas": [
+    1770,
+    1776
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 52,
+   "lineas": [
+    1782,
+    1790
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 53,
+   "lineas": [
+    1814,
+    1835
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 54,
+   "lineas": [
+    1862,
+    1871
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b21",
+  "b22",
+  "b27"
+ ],
+ "notas_gastos": [
+  "b23",
+  "b24",
+  "b25",
+  "b28",
+  "b29"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de la demonstração dos resultados: 'Euros'",
+ "moneda": "EUR",
+ "columna_ejercicio": "30.06.2021",
+ "columna_anterior": "30.06.2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿En el estado de resultados (b2) la primera columna de importes corresponde a 30.06.2021 y la segunda a 30.06.2020?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado de b2 solo muestra 'Euros', sin fechas por columna.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de Santa Clara Açores Futebol SAD en euros. Demonstração dos resultados por naturezas en b2. Notas: b21 vendas e serviços prestados, b22 subsídios à exploração, b27 outros rendimentos, b23 CMVMC, b24 FSE, b25 gastos com pessoal, b28 outros gastos, b29 gastos de financiamento. Se excluyen el balance, los flujos de caja, los cuadros de activo fijo e intangible, los impuestos y las deudas."
+}

@@ -1,0 +1,292 @@
+{
+ "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2020-21.pdf",
+ "md": "Clubes/Portugal/Famalicão/relatorio-contas-2020-21.md",
+ "mdSha1": "770a363f93b221904ee5e00fed37759d76a3c71d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T19:14:47.279Z",
+ "bloques": {
+  "b1": {
+   "pagina": 8,
+   "lineas": [
+    204,
+    210
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    224,
+    226
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    264,
+    273
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    315,
+    322
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 13,
+   "lineas": [
+    342,
+    379
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    407,
+    423
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    446,
+    482
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    506,
+    517
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    533,
+    544
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 19,
+   "lineas": [
+    661,
+    667
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 23,
+   "lineas": [
+    833,
+    837
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 24,
+   "lineas": [
+    858,
+    875
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 24,
+   "lineas": [
+    883,
+    894
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 25,
+   "lineas": [
+    914,
+    919
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    927,
+    935
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    939,
+    945
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 26,
+   "lineas": [
+    965,
+    976
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    984,
+    993
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    999,
+    1007
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 27,
+   "lineas": [
+    1040,
+    1046
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    1062,
+    1067
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 28,
+   "lineas": [
+    1077,
+    1080
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 28,
+   "lineas": [
+    1088,
+    1101
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    1124,
+    1131
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1137,
+    1148
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 30,
+   "lineas": [
+    1172,
+    1180
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 30,
+   "lineas": [
+    1198,
+    1205
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 31,
+   "lineas": [
+    1225,
+    1230
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 31,
+   "lineas": [
+    1232,
+    1241
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 32,
+   "lineas": [
+    1266,
+    1270
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 32,
+   "lineas": [
+    1282,
+    1284
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b23"
+ ],
+ "notas_gastos": [
+  "b24",
+  "b25",
+  "b26",
+  "b27"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30-Jun-21",
+ "columna_anterior": "30-Jun-20",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Existe en el PDF una nota 19 (Subsídios à exploração) o 23 (Outros rendimentos) con cuadro que no aparece en el índice y debería cargarse?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Outros rendimentos",
+   "texto": "El índice salta de b24 a b27 y el texto de arriba de b27 cita el ganho na alienação de jogadores (nota 23) sin cuadro propio visible.",
+   "bloques": [
+    "b24",
+    "b27"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo demostraciones individuales de la SAD (b6). b28/b29 son impuesto (conciliación), excluidos. b24 es el desglose del CMV (movimiento de inventario), incluido como nota de gastos."
+}

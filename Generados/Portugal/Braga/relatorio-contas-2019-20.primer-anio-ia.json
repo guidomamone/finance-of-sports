@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Braga/relatorio-contas-2019-20.md",
+ "clave": "9943f73a355cd606427a638660c4d51a79efd162",
+ "generado": "2026-10-15T21:55:25.255Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Sin problemas: los renglones del ejercicio 30.06.2020 están cargados directamente o abiertos en sus partes desde las notas (ventas, otros rendimientos, FSE, pessoal, outros gastos, depreciações). Los subtotales EBITDA, EBIT, EBT y el resultado líquido no se cargan. Los renglones en cero están cargados con importe 0, lo cual no afecta. El resultado de lo cargado coincide con el impreso."
+ }
+}

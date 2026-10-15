@@ -1,0 +1,274 @@
+{
+ "pdf": "Clubes/Portugal/Casa Pia/relatorio-contas-2024-25.pdf",
+ "md": "Clubes/Portugal/Casa Pia/relatorio-contas-2024-25.md",
+ "mdSha1": "388a4624928dbaa43a5fca8fe83448086ac00bdc",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T18:49:49.919Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    38,
+    81
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 11,
+   "lineas": [
+    320,
+    351
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 12,
+   "lineas": [
+    380,
+    398
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    427,
+    438
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 13,
+   "lineas": [
+    444,
+    452
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    476,
+    504
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 21,
+   "lineas": [
+    743,
+    747
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 21,
+   "lineas": [
+    773,
+    776
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 22,
+   "lineas": [
+    790,
+    794
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 22,
+   "lineas": [
+    798,
+    807
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    809,
+    818
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 23,
+   "lineas": [
+    834,
+    858
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 24,
+   "lineas": [
+    898,
+    901
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 25,
+   "lineas": [
+    915,
+    927
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    935,
+    947
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 26,
+   "lineas": [
+    961,
+    971
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 26,
+   "lineas": [
+    979,
+    982
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    986,
+    989
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    997,
+    1002
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 27,
+   "lineas": [
+    1020,
+    1036
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 27,
+   "lineas": [
+    1042,
+    1051
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 28,
+   "lineas": [
+    1065,
+    1085
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 28,
+   "lineas": [
+    1091,
+    1098
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    1118,
+    1130
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1138,
+    1142
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 30,
+   "lineas": [
+    1156,
+    1170
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 30,
+   "lineas": [
+    1184,
+    1192
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 31,
+   "lineas": [
+    1212,
+    1218
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 32,
+   "lineas": [
+    1236,
+    1245
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 32,
+   "lineas": [
+    1253,
+    1257
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b24",
+  "b25",
+  "b28"
+ ],
+ "notas_gastos": [
+  "b14",
+  "b26",
+  "b27",
+  "b29",
+  "b30"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "*Euros* (encabezado de la Demonstração dos Resultados por Naturezas, pág. 12)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30.06.2025",
+ "columna_anterior": "30.06.2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estados individuales de Casa Pia Atlético Clube - Futebol SDUQ Lda; no hay consolidado. b14 detalla el custo das mercadorias vendidas (nota 10). b26 corresponde a la nota 19 de Fornecimentos e serviços externos (sin título visible en el índice, pág. 30). b29 detalla otros gastos (nota 22). b30 detalla juros suportados; su texto dice 'Exercícios de 2024 e 2023', pero las columnas son 30.06.2025 y 30.06.2024."
+}

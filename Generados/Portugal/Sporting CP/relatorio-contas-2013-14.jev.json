@@ -1,0 +1,399 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2013-14.md",
+ "generatedAt": "2026-10-15T22:31:22.558Z",
+ "rubrosHuella": "bce5f3f37aa020c39e8fa928ea64d9e270fc2aa4",
+ "rubros": [
+  {
+   "label": "Direitos Televisivos",
+   "lado": "revenue",
+   "page": 103,
+   "section": "nota que desglosa \"Prestações de serviços\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteira e Bilhetes de Época",
+   "lado": "revenue",
+   "page": 103,
+   "section": "nota que desglosa \"Prestações de serviços\"",
+   "choice": "matchday_competition",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínios e Publicidade",
+   "lado": "revenue",
+   "page": 103,
+   "section": "nota que desglosa \"Prestações de serviços\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Royalties",
+   "lado": "revenue",
+   "page": 103,
+   "section": "nota que desglosa \"Prestações de serviços\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 108,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Participações nas Competições Nacionais",
+   "lado": "revenue",
+   "page": 104,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Participações em Competições Particulares",
+   "lado": "revenue",
+   "page": 104,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "competition_bonus",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Cedência de jogadores",
+   "lado": "revenue",
+   "page": 104,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Indemnizações de seguros",
+   "lado": "revenue",
+   "page": 104,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Diferenças de câmbio",
+   "lado": "revenue",
+   "page": 104,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Cedência de direitos económicos ao Sporting Portugal Fund",
+   "lado": "revenue",
+   "page": 109,
+   "section": "nota que desglosa \"Rendimentos/(gastos) com transações com jogadores\"",
+   "choice": "player_sales",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Venda de direitos desportivos",
+   "lado": "revenue",
+   "page": 109,
+   "section": "nota que desglosa \"Rendimentos/(gastos) com transações com jogadores\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mecanismo de solidariedade/compenção por formação",
+   "lado": "revenue",
+   "page": 109,
+   "section": "nota que desglosa \"Rendimentos/(gastos) com transações com jogadores\"",
+   "choice": "player_sales",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Subcontratos",
+   "lado": "expense",
+   "page": 105,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Comissões",
+   "lado": "expense",
+   "page": 105,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Honorários",
+   "lado": "expense",
+   "page": 105,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Trabalhos especializados",
+   "lado": "expense",
+   "page": 105,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipamentos Desportivos",
+   "lado": "expense",
+   "page": 105,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 106,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidade e Propaganda",
+   "lado": "expense",
+   "page": 105,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros FSE",
+   "lado": "expense",
+   "page": 105,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Remunerações Orgãos Sociais",
+   "lado": "expense",
+   "page": 106,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneração do Pessoal",
+   "lado": "expense",
+   "page": 106,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Indemnizações",
+   "lado": "expense",
+   "page": 106,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Encargos com remunerações",
+   "lado": "expense",
+   "page": 106,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos com benefícios pós-emprego (Nota 28)",
+   "lado": "expense",
+   "page": 106,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciações e amortizações excluindo plantel",
+   "lado": "expense",
+   "page": 80,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Imparidade de clientes (Nota 14)",
+   "lado": "expense",
+   "page": 108,
+   "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Imparidade de outras dívidas a receber (Nota 16)",
+   "lado": "expense",
+   "page": 108,
+   "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisões para outros riscos e encargos (Nota 19)",
+   "lado": "expense",
+   "page": 108,
+   "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Diferencia de redondeo",
+   "lado": "expense",
+   "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Quotizações",
+   "lado": "expense",
+   "page": 108,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 108,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Multas e penalidades",
+   "lado": "expense",
+   "page": 108,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Prospecção de mercado",
+   "lado": "expense",
+   "page": 108,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Diferenças de câmbio desfavoráveis operacionais",
+   "lado": "expense",
+   "page": 108,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizações e perdas de imparidade do plantel",
+   "lado": "expense",
+   "page": 80,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "player_amortisation",
+     0.65
+    ],
+    [
+     "other_amortisation",
+     0.16
+    ],
+    [
+     "player_impairment",
+     0.09
+    ]
+   ],
+   "tokens": 1114
+  },
+  {
+   "label": "Direitos de imagem",
+   "lado": "expense",
+   "page": 108,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "choice": "wages_squad",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "wages_squad",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Organização e deslocações e estadias de jogos",
+   "lado": "expense",
+   "page": 105,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1053
+  }
+ ]
+}

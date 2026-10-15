@@ -1,0 +1,37 @@
+{
+ "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2022-23.pdf",
+ "generado": "2026-10-15T22:34:41.484Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Portugal/Famalicão/relatorio-contas-2022-23.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-06-30",
+  "evidencia": {
+   "pagina": 5,
+   "texto": "|   | 30-06-2023 | 30-06-2022  |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "temporada"
+ },
+ "clubId": "famalicao-pt",
+ "year": 2023,
+ "cortadoEn": "filas"
+}
