@@ -125,6 +125,90 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2017–18 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Rio Ave".
 ```
 
+## 2017
+
+### Ingresos
+
+```text
+2017: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Rio Ave/relatorio-contas-2016-17.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bilheteira | pág. 33, Jev 1 |
+| 2 | Direitos Televisivos | pág. 33, Jev 1 |
+| 3 | Patrocínio e Publicidade | pág. 33, Jev 1 |
+| 4 | Atividades Comerciais | pág. 33, Jev 0.91 |
+| 5 | O Lucros de Exploração | pág. 33, Jev 0.92 |
+| 6 | Comparticipações da UEFA | pág. 34, ? 0.6 |
+| 7 | Subsídio Deslocação | pág. 34, Jev 0.95 |
+| 8 | Royalties | pág. 36, Jev 0.92 |
+| 9 | Participação nas Competições Europeias | pág. 36, Jev 1 |
+| 10 | Participação nas Competições Nacionais | pág. 36, Jev 1 |
+| 11 | Cedência de Jogadores | pág. 36, Jev 0.99 |
+| 12 | Venda de Direitos Desportivos | pág. 36, Jev 1 |
+| 13 | Outros | pág. 36, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subcontratos | pág. 34, precedente |
+| 2 | Trabalhos especializados | pág. 34, Jev 0.95 |
+| 3 | Vigilância e segurança | pág. 34, Jev 0.91 |
+| 4 | Honorários | pág. 34, Jev 0.99 |
+| 5 | Comissões | pág. 34, precedente |
+| 6 | Conservação e reparação | pág. 34, Jev 0.96 |
+| 7 | Outros serviços especializados | pág. 34, precedente |
+| 8 | Livros e Documentação Técnica | pág. 34, Jev 0.99 |
+| 9 | Material de escritório | pág. 34, Jev 1 |
+| 10 | Artigos para oferta | pág. 34, precedente |
+| 11 | Equipamento Desportivo | pág. 34, precedente |
+| 12 | Medicamentos e Artigos de Saúde | pág. 34, Jev 0.99 |
+| 13 | Outros materiais | pág. 34, precedente |
+| 14 | Electricidade | pág. 34, Jev 0.99 |
+| 15 | Combustíveis | pág. 34, Jev 0.99 |
+| 16 | Outras energias e fluidos | pág. 34, precedente |
+| 17 | Deslocações e estadas | pág. 34, Jev 0.95 |
+| 18 | Rendas e alugueres | pág. 34, precedente |
+| 19 | Comunicação | pág. 34, Jev 1 |
+| 20 | Seguros | pág. 34, Jev 0.9 |
+| 21 | Limpeza, higiene e conforto | pág. 34, Jev 0.99 |
+| 22 | Outros serviços diversos | pág. 34, Jev 0.98 |
+| 23 | Remunerações do pessoal | pág. 35, precedente |
+| 24 | Indemnizações | pág. 35, precedente |
+| 25 | Encargos s/ remunerações | pág. 35, precedente |
+| 26 | Seguros de acidentes no trabalho e doenças profissionais | pág. 35, precedente |
+| 27 | Mecanismo de Solidariedade | pág. 35, Jev 0.9 |
+| 28 | Outros gastos | pág. 35, Jev 0.99 |
+| 29 | Imparidade de dívidas a receber (perdas/reversões) | pág. 11, Jev 0.96 |
+| 30 | Quotizações/inacrições | pág. 36, precedente |
+| 31 | Impostos | pág. 36, Jev 0.93 |
+| 32 | Multas e Penalidades | pág. 36, Jev 0.98 |
+| 33 | Outros Gastos e Perdas | pág. 36, Jev 0.97 |
+| 34 | Outros Gastos de Financiamento | pág. 36, precedente |
+| 35 | Edifícios e outras construções | pág. 36, Claude 0.92 |
+| 36 | Equipamento Básico | pág. 36, Jev 0.99 |
+| 37 | Equipamento de Transporte | pág. 36, Jev 0.98 |
+| 38 | Equipamento Administrativo | pág. 36, Claude 0.93 |
+| 39 | Outros Ativos Fixos Tangíveis | pág. 36, Jev 0.99 |
+| 40 | Outros Direitos (Passes dos jogadores) | pág. 36, Claude 0.95 |
+| 41 | Outros Ativos Intangíveis | pág. 36, Claude 0.85 |
+
+### Meta
+
+```text
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2017-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2017-06-30
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2016–17 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Rio Ave".
+```
+
 ## Fuentes
 
 ### rioave-pt-relatorio-contas-2017-18
@@ -133,4 +217,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Rio Ave/relatorio-contas-2017-18.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### rioave-pt-relatorio-contas-2016-17
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

@@ -27,4 +27,12 @@ window.RANKINGS["pt-primeiraliga"] = {
         mix:[["Comercial / Sponsors",1.493],["Estadio",0.428],["Televisión",2.565],["Premios por competencias",0.343],["Venta de Jugadores",3.621],["Otros ingresos",0.806]] },
     ],
   },
+  2017: {
+    leagueSize: null,
+    clubs: [
+      { id:"rioave-pt", revenue:29.331, reportType:"official_balance_sheet",
+        sourceId:"rioave-pt-relatorio-contas-2016-17",
+        mix:[["Comercial / Sponsors",0.132],["Estadio",0.462],["Televisión",3.686],["Premios por competencias",0.517],["Venta de Jugadores",24.239],["Otros ingresos",0.296]] },
+    ],
+  },
 };
