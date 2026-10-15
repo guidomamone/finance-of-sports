@@ -333,17 +333,17 @@ Tel: +351 296 306 400 E-mail: info@cdsantaclara.com Site: www.cdsantaclara.com
 | Custo das mercadorias vendidas e das matérias consumidas | 9 | -378 447,62 € | -107 466,20 € |
 | Fornecimentos e serviços externos | 17 | -4 082 748,19 € | -2 917 723,52 € |
 | Gastos com o pessoal | 15 | -16 165 189,26 € | -12 132 898,09 € |
-| Imparidade de dívidas a receber (perdas/reversões) | 14 | -236 595,04 € | -202 265,85 € |
+| Imparidade de dívidas a receber (perdas/reversões) | 14 | -236 995,04 € | -202 269,85 € |
 | Provisões (aumentos/ Reduções) | 11 | -471 404,17 € | 60 146,03 € |
 | Outros rendimentos | 10 | 838 396,78 € | 2 612 800,40 € |
-| Outros gastos | 17 | -517 774,75 € | -618 741,98 € |
-| **Resultado antes de depreciações, gastos de financiamento e impostos** | | **-13 195 308,65 €** | **-10 400 123,28 €** |
+| Outros gastos | 17 | -517 774,75 € | -618 741,86 € |
+| **Resultado antes de depreciações, gastos de financiamento e impostos** | | **-13 195 708,65 €** | **-10 400 123,16 €** |
 | Gastos/reversões de depreciação e de amortização | 6;7 | -1 397 238,75 € | -1 198 188,29 € |
-| Imparidade de ativos depreciáveis/amortizáveis (perdas/reversões) | | -11 194,64 € | - € |
-| **Resultado operacional (antes de gastos de financiamento e impostos)** | | **-14 606 742,04 €** | **-11 598 311,49 €** |
+| Imparidade de ativos depreciáveis/amortizáveis (perdas/reversões) | | -11 194,68 € | - € |
+| **Resultado operacional (antes de gastos de financiamento e impostos)** | | **-14 604 142,08 €** | **-11 598 311,45 €** |
 | Juros e rendimentos similares obtidos | 10 | - € | - € |
 | Juros e gastos similares suportados | 8 | -289 445,53 € | -148 302,97 € |
-| **Resultado antes de impostos** | | **-14 893 187,61 €** | **-11 746 614,46 €** |
+| **Resultado antes de impostos** | | **-14 893 587,61 €** | **-11 746 614,42 €** |
 | Imposto sobre o rendimento do período | 13 | 1 652 448,39 € | 1 848 329,06 € |
 | **Resultado líquido do período** | | **-13 241 139,22 €** | **-9 898 285,36 €** |
 
@@ -1024,7 +1024,7 @@ SANTA CLARA AÇORES FUTEBOL SAD
 |  Direitos Televisivos | 3 600 000 € | 450 000 €  |
 |  Cedência por empréstimo de Direitos Desportivos | 347 472 € | 320 000 €  |
 |  **Diversos** | 1 500 € | 1 000 €  |
-|   | **6 270 606 €** | **1 831 588 €**  |
+|   | **6 270 606 €** | **1 831 508 €**  |
 |   | **6 658 979 €** | **2 006 030 €**  |
 
 10.2 - Outros Rendimentos
@@ -1548,7 +1548,7 @@ Outros Gastos:
 | Gastos não devidamente documentados | 157 836 € | 63 600 € |
 | Juros de Mora e compensatórios | 6 905 € | 7 787 € |
 | Outros | 4 450 € | 136 568 € |
-| **Total** | 517 975 € | 618 742 € |
+| **Total** | 517 775 € | 618 742 € |
 
 | **Ativo** | 30/06/2025 | 30/06/2024 |
 |---|---|---|
