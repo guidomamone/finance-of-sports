@@ -119,7 +119,7 @@ const { ajusteDe, ajustesDe, ajustePerimetroDe } = await import('./ajustes.mjs')
 const { cierrePorVecinos } = await import('./cierre-vecinos.mjs');
 const { VERSION_AMPLIADO } = await import('./indice-bloques.mjs');
 const { ARCHIVO: ARCHIVO_APRENDIDAS, padreDe } = await import('./memoria-categorias.mjs');
-const { padreEnClub, padreEnDoc, mismoPadre, contextoFila } = await import('./padres-filas.mjs'); // en qué nota está cada fila (Versión 403)
+const { padreEnClub, padreEnDoc, mismoPadre, contextoFila, sinMarca } = await import('./padres-filas.mjs'); // en qué nota está cada fila (Versión 403)
 // Nombres en castellano de las categorías (los de data/category-map.js), para que la pregunta de la cola diga "Administración y gastos
 // generales" y no "admin_general_expense".
 const NOMBRE_CAT = (() => { try { const t = readFileSync(resolve(import.meta.dirname, '..', 'data', 'category-map.js'), 'utf8'); const o = {}; for (const b of t.match(/_CATEGORY_LABELS = \{[\s\S]*?\n\};/g) || []) for (const m of b.matchAll(/^\s*(\w+): '([^']+)'/gm)) o[m[1]] = m[2]; return o; } catch { return {}; } })();
@@ -561,14 +561,34 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // categoría por etiqueta (.categorias.json, y el precedente sin contexto, que se arma con lo publicado y puede traer el error) no decide:
   // solo el precedente del club con la MISMA nota; si no hay, a la cola con la clave "etiqueta@renglón" y la categoría por etiqueta como
   // propuesta, así se contesta (o se corrige) una sola de las dos.
-  const padresPor = new Map();
-  for (const r of raw) { const k = `${norm(r.label)}|${r.tside || ''}`; const pd = padreDe(r.origen) || 'estado'; if (!padresPor.has(k)) padresPor.set(k, []); const ps = padresPor.get(k); if (!ps.some((x) => mismoPadre(x, pd))) ps.push(pd); }
+  // RENGLÓN DISTINTO = TÍTULO DISTINTO (to-do 234): acá los renglones se separan por su título exacto (sin la marca de nota), no por
+  // mismoPadre(), que junta dos títulos con una palabra en común. Olympiacos 2025: "Δαπάνη παροχών ποδοσφαιριστών" (jugadores) y "Δαπάνη
+  // παροχών λοιπών εργαζομένων" (otros empleados) comparten "Δαπάνη παροχών" y quedaban como una sola nota, así que "Εισφορές κοινωνικής
+  // ασφάλισης" de los otros empleados (1,20 M) heredaba wages_squad sin pregunta. Lo que decide si son distintos de verdad es la compuerta
+  // de abajo (dos categorías conocidas y distintas): dos variantes de un mismo título tienen la misma categoría y no preguntan.
+  const padresPor = new Map(); const hijasPor = new Map();
+  for (const r of raw) {
+    const k = `${norm(r.label)}|${r.tside || ''}`; const pd = padreDe(r.origen) || 'estado';
+    if (!padresPor.has(k)) padresPor.set(k, []); const ps = padresPor.get(k); if (!ps.some((x) => sinMarca(x) === sinMarca(pd))) ps.push(pd);
+    const kh = `${sinMarca(pd)}|${r.tside || ''}`; if (!hijasPor.has(kh)) hijasPor.set(kh, []); hijasPor.get(kh).push(r);
+  }
   // "Distintos" = renglones de CATEGORÍA distinta (la del renglón del estado en el .categorias.json): bajo "Gastos de administración" y
   // "Gastos de ventas" (Fortaleza 2017, los dos admin_general_expense) la etiqueta significa lo mismo y no se pregunta; bajo la nota del
   // departamento de fútbol y la de administración (PAOK), no. Medido en prueba-completa + PAOK: sin esto, 9 documentos que cargaban
   // pasaban a la cola con ~60 preguntas (34 solo en Fortaleza 2017). Un renglón sin categoría conocida (un "Total ..." que no está en el
   // .categorias.json) no cuenta: hacen falta dos categorías conocidas y distintas.
-  const catPadre = (pd, lado) => (pd === 'estado' ? 'estado' : (catDe(pd, lado).cat || null));
+  // ESCALERA DE LA CATEGORÍA DEL RENGLÓN (to-do 234, ok de Guido el 2026-10-15). Escalón 0: la del propio renglón (.categorias.json o
+  // precedente del club). Escalón 1: si no hay, la de las OTRAS filas que lo abren, si son al menos 2 y todas dicen lo mismo; no cuentan las
+  // filas cuya etiqueta también está bajo otro renglón (son las que están en duda). Olympiacos 2025 (pág. 35): los renglones de la nota 6 no
+  // están en el .categorias.json (solo las hojas); las otras filas de "jugadores" dan wages_squad y las de "otros empleados",
+  // admin_general_expense. Solo propone: la fila en duda sigue yendo a la cola con su clave "etiqueta@renglón".
+  const enVarios = (r) => (padresPor.get(`${norm(r.label)}|${r.tside || ''}`) || []).length > 1;
+  const catPadre = (pd, lado) => {
+    if (pd === 'estado') return 'estado';
+    const propia = catDe(pd, lado).cat; if (propia) return propia;
+    const cats = (hijasPor.get(`${sinMarca(pd)}|${lado || ''}`) || []).filter((h) => !enVarios(h)).map((h) => catDe(h.label, h.tside).cat);
+    const unicas = new Set(cats); return cats.length >= 2 && unicas.size === 1 && cats[0] ? cats[0] : null;
+  };
   const repetida = (r) => { const ps = padresPor.get(`${norm(r.label)}|${r.tside || ''}`) || []; return ps.length > 1 && new Set(ps.map((pd) => catPadre(pd, r.tside)).filter(Boolean)).size > 1; };
   const enCola = [];
   const filas = raw.map((r) => {
