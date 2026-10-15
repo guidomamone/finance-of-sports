@@ -242,7 +242,7 @@ tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado
 ### Ingresos
 
 ```text
-2022: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2022: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -255,7 +255,7 @@ Generados/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.categorias.json (escal�
 | 5 | Έσοδα από UEFA | pág. 9, precedente |
 | 6 | Λοιπά λειτουργικά έσοδα | pág. 9, Jev 0.99 |
 | 7 | Αξία πώλησης ποδοσφαιριστών | pág. 42, Jev 1 |
-| 8 | Λοιπά έσοδα κατά την πώληση | pág. 42, ? 0.6 |
+| 8 | Λοιπά έσοδα κατά την πώληση | pág. 42, precedente |
 | 9 | Αναπόσβεστο κόστος ποδοσφαιριστών | pág. 42, precedente |
 | 10 | Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών | pág. 42, precedente |
 
@@ -264,10 +264,10 @@ Generados/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.categorias.json (escal�
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Μισθοί και δόσεις συμβολαίων | pág. 40, Jev 1 |
-| 2 | Εισφορές κοινωνικής ασφάλισης | pág. 40, Claude 0.85 |
+| 2 | Εισφορές κοινωνικής ασφάλισης | pág. 40, precedente |
 | 3 | Λοιπές παροχές | pág. 40, Claude 0.8 |
 | 4 | Ημερομίσθια και μισθοί | pág. 40, precedente |
-| 5 | Εισφορές κοινωνικής ασφάλισης | pág. 40, Claude 0.85 |
+| 5 | Εισφορές κοινωνικής ασφάλισης | pág. 40, precedente |
 | 6 | Πρόβλεψη αποζημίωσης προσωπικού | pág. 40, precedente |
 | 7 | Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων | pág. 9, ? 0.75 |
 | 8 | Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση | pág. 9, Claude 0.8 |
@@ -282,20 +282,14 @@ Generados/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.categorias.json (escal�
 ### Meta
 
 ```text
-2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): categoria = player_sales. Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)
-2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): categoria = player_sales. Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)
-tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
-```
-
-```text
 tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-14): Claude 2026-10-14: perímetro individual (ajuste del club) = columna Εταιρεία del balance; caja-deuda.mjs leía la primera cifra, la del grupo (Όμιλος) — to-do 232 w
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2021–22 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Olympiacos".
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): categoria = player_sales. Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): categoria = player_sales. Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
 ## 2021
