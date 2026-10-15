@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 704 — Estonia transcripta con subagentes; altas de Portugal en borrador (2026-10-15)
+
+- Estonia: 66 informes anuales (10 clubes, 2019-2025) transcriptos por subagentes Sonnet desde pdftotext, con el chequeo de fidelidad y
+  un comparador de números contra el texto del PDF (Admin/transcripcion-subagentes/). Sin gasto de API.
+- Portugal: borradores de alta de 27 clubes (nombre legal, cierres, color, liga por temporada) en el scratchpad, a confirmar contra los
+  .md; caché de ligas de Portugal 1999-2026 (1.ª, 2.ª y Liga 3) y la Primeira Liga 2024-25 corregida a mano (el script había tomado la
+  tabla de cambios de técnico).
+
 ## Versión 703 — Portugal, lote 76 cerrado: 24 años en el sitio; regla de entidad cuando el fútbol está en una SAD (2026-10-15)
 
 - Nuevos en el sitio: Alverca 2024-2025, Famalicão 2022 (alta), Moreirense 2023-2024, Rio Ave 2016 y 2024, Tondela 2021 (alta) y

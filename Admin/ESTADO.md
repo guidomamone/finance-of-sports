@@ -82,6 +82,10 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   `perimetro` de un club nuevo cuando sus documentos coinciden (tablas de cada perímetro y voto con Jev); si la serie cambia de perímetro,
   no frena: un ejercicio con un solo perímetro se carga con ese (regla en `Admin/CONVENCIONES-DATOS.md`). Reconoce títulos en italiano e
   inglés; en otros idiomas decide el paso A2 (Claude, cinco criterios con peso). Frena solo si los votos de dos ejercicios chocan.
+- Transcripción con subagentes (sin API, con el límite de la suscripción): para PDFs digitales, un subagente Sonnet por documento sigue
+  `Admin/transcripcion-subagentes/reglas.md` y se controla con `check-transcripcion-fidelidad.js` y
+  `Admin/transcripcion-subagentes/comparar-numeros.mjs` (números del .md contra el texto del PDF). Después el pipeline sigue igual
+  (`pipeline.mjs --lista` valida gratis y el lote localiza).
 - Club asociación o sociedad (SAD/SDUQ): se elige entidad solo cuando hay dos documentos del mismo ejercicio; el de la otra va a
   `documentos-descartados.txt`, y entonces `alta-club.mjs` y el lote dejan de verlo. Un documento único del club que no trae el fútbol (la
   SAD no consolida) no se carga. Regla en `Admin/CONVENCIONES-DATOS.md`.

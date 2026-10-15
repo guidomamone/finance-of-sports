@@ -97,12 +97,29 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
        2024, Rio Ave 2016-2020 y 2022-2025, Tondela 2021 y Vitória Guimarães 2021, 2022, 2024 y 2025. Qué entidad se carga cuando el
        fútbol está en una SAD: regla en Admin/CONVENCIONES-DATOS.md. Transcripción del resto (etapa 2):
        `pipeline.mjs --lista Admin/lotes/transcribir-portugal.txt` (155 PDFs; los que no sirven ya están en documentos-descartados).
-       Después: el lote siguiente con solo los documentos que traen estado de resultados. A tener en cuenta al armarlo: Boavista 2023-24
+       Después: el lote siguiente con solo los documentos que traen estado de resultados. Altas: borradores de 27 clubes (nombre legal,
+       cierres, color, liga por temporada) en Admin/registros/altas-borrador-portugal.jsonl: confirmar el nombre contra cada .md, elegir los
+       colores marcados "PREGUNTA" o aproximados (Torreense, Oliveirense, Felgueiras, Braga, Santa Clara, Estoril, Marítimo, Casa Pia, Chaves,
+       Paços, Arouca) y pasarlos a altas-revision.jsonl. Estrela da Amadora 2023-24 es semestral (a documentos-parciales); Gil Vicente 2024-25
+       tiene SDUQ individual y consolidado del club (se carga la SDUQ); Porto 2016-2023 son consolidados del club con la SAD (se cargan). A tener en cuenta al armarlo: Boavista 2023-24
        viene partido en 3 PDFs (RCSAD-23-24_1-3/2-3/3-3); Sporting 1999 y 2000 están en escudos, con páginas rotadas, y el nombre del
        archivo va un año antes del ejercicio (cierres 31/07/2000 y 31/07/2001); Sporting 2003-04 es de 11 meses (cambio de cierre) y se
        carga igual (Guido); Chaves 2023-24 trae dos versiones del club; Chaves 2023-25, União de Leiria 2024-25 y Feirense solo tienen el
        documento del club: aplicar el punto 3 de la regla (si el propio documento dice que el fútbol está en una SAD que no consolida, no
        se carga). Sin documento: Benfica 2010-11, Porto SAD 2019-20, Braga SAD 2017-18 a 2018-19 y 2020-21, AVS 2021-22.
+    b1) ESTONIA Y BÉLGICA POR SUBAGENTES (decisión de Guido, 2026-10-15: usar el límite semanal de la suscripción en vez de API para
+       transcribir países 100% digitales). Estonia: los 66 .md hechos (commit "Estonia: 66 transcripciones"). Falta: (1) correr
+       `pipeline.mjs --lista` sobre los PDFs de Estonia (solo hace la validación gratis, ya tienen .md) y después el lote; (2) Bélgica: 61
+       PDFs digitales, mismo procedimiento. Cómo: un subagente Sonnet por documento, en tandas de ~8, con las reglas de
+       `Admin/transcripcion-subagentes/reglas.md` (formato, columnas, cifras partidas, páginas imagen) y los dos chequeos
+       (`check-transcripcion-fidelidad.js` y `Admin/transcripcion-subagentes/comparar-numeros.mjs`); ~110.000 tokens por documento de ~20 págs.
+       Para notar al verificar Estonia: Laagri 2023 es un primer ejercicio de menos de un año (constituido el 09.01.2023); Flora 2025 pág. 29
+       y Nõmme Kalju 2024 traen descuadres del propio PDF en el patrimonio; varios informes traen consolidado y la MTÜ sola.
+    b2) CAMBIOS DE SCRIPT SIN COMMITEAR (2026-10-15): `tools/lote.mjs` (título "RESULTADO ETAPA 7" y tabla final "ETAPA · #", pedido de
+       Guido, solo salida: falta probarlo con un ensayo sobre Admin/Archive/lotes/lote-76.txt y commitear) y
+       `tools/fetch-club-league-reference.mjs` (escalón "tabla limpia" + `--comparar`, ok de Guido: la medición sobre toda la caché con
+       `node Admin/transcripcion-subagentes/medir-ligas.mjs "$PWD" <salida.txt>` tiene que dar que SOLO cambia Portugal 2025; una versión más laxa rompía Colombia 2017-2020. Si
+       la medición no se pudo terminar, rehacerla antes de commitear; si da otra cosa, revertir con `git checkout` y anotarlo).
     b) SIGUIENTE. Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
        (`ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -1` para el número), `antes-de-localizar.mjs`, ensayo, Guido corre `lote.mjs --ejecutar
        --cargar`, y la cola se revisa con un Sonnet que recomienda respuestas con cita. Fichas listas para alta (`alta-club.mjs --todos`,
