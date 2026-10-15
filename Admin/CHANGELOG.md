@@ -15,7 +15,7 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión 697 — PAOK y Olympiacos rehechos con la pregunta por renglón (2026-10-15)
+## Versión 697 — PAOK y Olympiacos rehechos con la pregunta por renglón; deuda y caja 0/0 a null (2026-10-15)
 
 - To-do 234. PAOK 2017 y 2019-2025: personal, honorarios y servicios de terceros de administración y comercialización a
   admin_general_expense (antes wages_squad), y sus amortizaciones (0,24-0,28 M por año) a depreciation (antes player_amortisation); 18 casos
@@ -26,6 +26,10 @@ que dice `ESTADO.md` era verdad ese día.
   ποδοσφαιριστών" con "... λοιπών εργαζομένων") y la categoría del renglón tiene un escalón nuevo (la de sus otras filas, si coinciden).
   Medido con el ensayo de cargar en 570 documentos: 25 preguntas nuevas en 11, nada cambia sin pregunta. Además de Olympiacos, pregunta
   Ferroviária 2016 ("Alimentação" y "Serviços Prestados por Terceiros" en costos operativos y en administración) si se recarga.
+- 232 ab: deuda y caja de 0 a null en 24 años de la convención vieja (Once Caldas 2022-2025, Racing 2019/2026/2027, Boca 2027, Boyacá
+  Chicó 2024, Club América 2025, Midtjylland 2019, Brøndby 2020, FC København 2024, Mirassol 2024, 10 japoneses 2025) y la caja de
+  Argentinos 2019, cada uno con una línea en su evidencia. Panetolikos 2021 (deuda 0 real, caja 339.471) y Sunderland 2024 (caja 0 impresa)
+  quedan. To-do 235 nuevo: el sitio muestra 0 cuando falta uno solo de los dos.
 - El registro de transcripciones tenía los años de PAOK como no cargados (`--reemplazar` no se activaba): regenerado con
   `inventario-transcripciones.mjs --solo`.
 
