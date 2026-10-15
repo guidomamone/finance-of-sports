@@ -123,7 +123,7 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
     b2) CAMBIOS DE SCRIPT SIN COMMITEAR (2026-10-15): `tools/lote.mjs` (título "RESULTADO ETAPA 7" y tabla final "ETAPA · #", pedido de
        Guido, solo salida: falta probarlo con un ensayo sobre Admin/Archive/lotes/lote-76.txt y commitear) y
        `tools/fetch-club-league-reference.mjs` (escalón "tabla limpia" + `--comparar`, ok de Guido: la medición sobre toda la caché con
-       `node Admin/transcripcion-subagentes/medir-ligas.mjs "$PWD" <salida.txt>` tiene que dar que SOLO cambia Portugal 2025; una versión más laxa rompía Colombia 2017-2020. Si
+       `node Admin/transcripcion-subagentes/medir-ligas.mjs "$PWD" <salida.txt>` tiene que dar que SOLO cambia Portugal 2025; una versión más laxa rompía Colombia 2017-2020, y la siguiente cambiaba 4 temporadas por variantes de nombre (Chequia 2013, Serie A 2013, Portugal 2.ª 2012 y 2014); la de hoy agrega "menos nombres que la elegida" y NO está medida todavía. Si
        la medición no se pudo terminar, rehacerla antes de commitear; si da otra cosa, revertir con `git checkout` y anotarlo).
     b) SIGUIENTE. Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
        (`ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -1` para el número), `antes-de-localizar.mjs`, ensayo, Guido corre `lote.mjs --ejecutar
