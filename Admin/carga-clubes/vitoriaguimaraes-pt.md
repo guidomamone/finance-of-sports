@@ -341,6 +341,95 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia única por palabras "Vitória de Guimarães" = "Vitória Guimarães".
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Vitória Guimarães/relatorio-contas-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Vitória Guimarães/relatorio-contas-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Direitos Televisivos | pág. 18, precedente |
+| 2 | Merchandising | pág. 18, Jev 1 |
+| 3 | Quotização e Camarotes | pág. 18, precedente |
+| 4 | Patrocínios | pág. 18, Jev 1 |
+| 5 | Prémios | pág. 18, Jev 0.99 |
+| 6 | Outros Proveitos | pág. 18, Jev 0.95 |
+| 7 | Federação Portuguesa de Futebol | pág. 62, precedente |
+| 8 | Outras Entidades | pág. 62, precedente |
+| 9 | Rendimentos suplementares | pág. 73, precedente |
+| 10 | Descontos pronto pagamento obtidos | pág. 73, precedente |
+| 11 | Ganhos em inventarios | pág. 73, precedente |
+| 12 | Rendimentos e ganhos em investimentos | pág. 73, precedente |
+| 13 | Outros | pág. 73, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo de mercadorias vendidas e das matérias consumidas | pág. 27, precedente |
+| 2 | Trabalhos especializados | pág. 72, precedente |
+| 3 | Publicidade e propaganda | pág. 72, precedente |
+| 4 | Vigilância e segurança | pág. 72, precedente |
+| 5 | Honorários | pág. 72, precedente |
+| 6 | Comissões | pág. 72, precedente |
+| 7 | Conservação e reparação | pág. 72, precedente |
+| 8 | Despesas com Provas | pág. 72, precedente |
+| 9 | Prospecção; Empréstimos; | pág. 72, precedente |
+| 10 | Ferramentas, utensílios desgaste rápido | pág. 72, precedente |
+| 11 | Livros documentação técnica | pág. 72, precedente |
+| 12 | Material de escritório | pág. 72, precedente |
+| 13 | Artigos para oferta | pág. 72, precedente |
+| 14 | Material Desportivo | pág. 72, precedente |
+| 15 | Eletricidade | pág. 72, precedente |
+| 16 | Combustíveis | pág. 72, precedente |
+| 17 | Água | pág. 72, precedente |
+| 18 | Outros Fluidos | pág. 72, precedente |
+| 19 | Deslocações e estadas | pág. 72, precedente |
+| 20 | Transportes de mercadorias | pág. 72, precedente |
+| 21 | Rendas e alugueres | pág. 72, precedente |
+| 22 | Comunicação | pág. 72, precedente |
+| 23 | Seguros | pág. 72, precedente |
+| 24 | Contencioso e notariado | pág. 72, precedente |
+| 25 | Limpeza, higiene e conforto | pág. 72, precedente |
+| 26 | Outros serviços | pág. 72, precedente |
+| 27 | Pessoal VSC ao serviço SAD | pág. 72, precedente |
+| 28 | Remuneração Administração | pág. 70, precedente |
+| 29 | Remuneração pessoal administrativo | pág. 70, precedente |
+| 30 | Remuneração treinadores | pág. 70, precedente |
+| 31 | Remuneração jogadores | pág. 70, precedente |
+| 32 | Encargos com remunerações | pág. 70, precedente |
+| 33 | Seguro acidentes trabalho | pág. 70, precedente |
+| 34 | Outros gastos pessoal | pág. 70, precedente |
+| 35 | Imparidade de dívidas a receber | pág. 27, precedente |
+| 36 | Imparidade de invantários | pág. 27, precedente |
+| 37 | Provisões (aumentos/reduções) | pág. 27, precedente |
+| 38 | Impostos | pág. 73, precedente |
+| 39 | Descontos pronto pagamento concedidos | pág. 73, precedente |
+| 40 | Gastos, perdas em investimento não financeiros | pág. 73, precedente |
+| 41 | Correções relativas a exercicios anteriores | pág. 73, precedente |
+| 42 | Donativos | pág. 73, precedente |
+| 43 | Quotizações | pág. 73, precedente |
+| 44 | Multas | pág. 73, precedente |
+| 45 | Outros | pág. 73, precedente |
+| 46 | Gastos/reversões de depreciação e amortização | pág. 27, precedente |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2021-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2021-06-30
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2020–21 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia única por palabras "Vitória de Guimarães" = "Vitória Guimarães".
+```
+
 ## Fuentes
 
 ### vitoriaguimaraes-pt-relatorio-contas-2023-24
@@ -365,4 +454,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Vitória Guimarães/wf-src-Relatorio-e-Contas-2021-22-SAD.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vitoriaguimaraes-pt-relatorio-contas-2020-21
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Vitória Guimarães/relatorio-contas-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

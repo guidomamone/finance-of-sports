@@ -51,6 +51,14 @@ window.RANKINGS["pt-primeiraliga"] = {
         incluidos:[["Estadio","Otros ingresos",1]] },
     ],
   },
+  2021: {
+    leagueSize: null,
+    clubs: [
+      { id:"vitoriaguimaraes-pt", revenue:33.145, reportType:"official_balance_sheet",
+        sourceId:"vitoriaguimaraes-pt-relatorio-contas-2020-21",
+        mix:[["Comercial / Sponsors",1.776],["Estadio",0.934],["Televisión",8.318],["Premios por competencias",0.26],["Venta de Jugadores",19.847],["Otros ingresos",2.009]] },
+    ],
+  },
   2020: {
     leagueSize: null,
     clubs: [
