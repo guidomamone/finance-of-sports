@@ -100,6 +100,69 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Moreirense/relatorio-contas-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Moreirense/relatorio-contas-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas | pág. 22, precedente |
+| 2 | Direitos Televisivos | pág. 22, precedente |
+| 3 | Outros | pág. 22, precedente |
+| 4 | Subsídios à exploração | pág. 13, precedente |
+| 5 | Rendimentos suplementares | pág. 28, precedente |
+| 6 | Descontos de pronto pagamento obtidos | pág. 28, precedente |
+| 7 | Rendimentos em investimentos não financeiros a) | pág. 28, Jev 0.91 |
+| 8 | Outros | pág. 28, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 13, precedente |
+| 2 | 6221 Trabalhos especializados | pág. 28, precedente |
+| 3 | 6223 Vigilância e segurança | pág. 28, precedente |
+| 4 | 6224 Honorários | pág. 28, precedente |
+| 5 | 6226 Conservação e reparação | pág. 28, precedente |
+| 6 | 6231 Ferramentas e utensílios de desgaste rápido | pág. 28, precedente |
+| 7 | 6233 Material de escritório | pág. 28, precedente |
+| 8 | 6238 Outros | pág. 28, precedente |
+| 9 | 6241 Electricidade | pág. 28, precedente |
+| 10 | 6242 Combustíveis | pág. 28, precedente |
+| 11 | 6243 Água | pág. 28, precedente |
+| 12 | 625 Deslocações, estadas e transportes | pág. 28, precedente |
+| 13 | 6261 Rendas e alugueres | pág. 28, precedente |
+| 14 | 6262 Comunicação | pág. 28, precedente |
+| 15 | 6263 Seguros | pág. 28, precedente |
+| 16 | 6267 Limpeza, higiene e conforto | pág. 28, precedente |
+| 17 | 6268 Outros serviços | pág. 28, precedente |
+| 18 | Remunerações do pessoal | pág. 27, precedente |
+| 19 | Encargos sobre remunerações | pág. 27, precedente |
+| 20 | Seguros de acidentes de trabalho e doenças profissionais | pág. 27, precedente |
+| 21 | Outros gastos com pessoal | pág. 27, precedente |
+| 22 | Impostos | pág. 28, precedente |
+| 23 | Outros | pág. 28, precedente |
+| 24 | Gastos/reversões de depreciação e amortização | pág. 13, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2024-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2024-06-30
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2023–24 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Moreirense".
+```
+
 ## 2023
 
 ### Ingresos
@@ -266,4 +329,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Moreirense/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### moreirense-pt-relatorio-contas-2023-24
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Moreirense/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

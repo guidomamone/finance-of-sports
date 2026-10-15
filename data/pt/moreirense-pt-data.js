@@ -30,6 +30,16 @@ const moreirenseptRevenueLinesByYear = {
     { rawLabel:'Rendimentos em investimentos não financeiros a)', normalizedCategory:'player_sales', amountNative:2.059345, disclosureLevel:'aggregated' },
     { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.674498, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Vendas', normalizedCategory:'sponsorship_commercial', amountNative:0.002756, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos Televisivos', normalizedCategory:'broadcasting', amountNative:3.6, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.870241, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.683792, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendimentos suplementares', normalizedCategory:'other_income', amountNative:0.036198, disclosureLevel:'aggregated' },
+    { rawLabel:'Descontos de pronto pagamento obtidos', normalizedCategory:'other_income', amountNative:0.020423, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendimentos em investimentos não financeiros a)', normalizedCategory:'player_sales', amountNative:1.392045, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.206454, disclosureLevel:'aggregated' },
+  ],
 };
 const moreirenseptExpenseLinesByYear = {
   2022: [
@@ -126,6 +136,32 @@ const moreirenseptExpenseLinesByYear = {
     { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.357601, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e amortização', normalizedCategory:'player_amortisation', amountNative:-0.735805, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Custo das mercadorias vendidas e das matérias consumidas', normalizedCategory:'other_expenses', amountNative:-0.001012, disclosureLevel:'aggregated' },
+    { rawLabel:'6221 Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-0.52782, disclosureLevel:'aggregated' },
+    { rawLabel:'6223 Vigilância e segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.105546, disclosureLevel:'aggregated' },
+    { rawLabel:'6224 Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.182377, disclosureLevel:'aggregated' },
+    { rawLabel:'6226 Conservação e reparação', normalizedCategory:'admin_general_expense', amountNative:-0.118557, disclosureLevel:'aggregated' },
+    { rawLabel:'6231 Ferramentas e utensílios de desgaste rápido', normalizedCategory:'admin_general_expense', amountNative:-0.011214, disclosureLevel:'aggregated' },
+    { rawLabel:'6233 Material de escritório', normalizedCategory:'admin_general_expense', amountNative:-0.018108, disclosureLevel:'aggregated' },
+    { rawLabel:'6238 Outros', normalizedCategory:'other_expenses', amountNative:-0.005326, disclosureLevel:'aggregated' },
+    { rawLabel:'6241 Electricidade', normalizedCategory:'admin_general_expense', amountNative:-0.043754, disclosureLevel:'aggregated' },
+    { rawLabel:'6242 Combustíveis', normalizedCategory:'admin_general_expense', amountNative:-0.104099, disclosureLevel:'aggregated' },
+    { rawLabel:'6243 Água', normalizedCategory:'admin_general_expense', amountNative:-0.004672, disclosureLevel:'aggregated' },
+    { rawLabel:'625 Deslocações, estadas e transportes', normalizedCategory:'match_organisation_expense', amountNative:-0.203451, disclosureLevel:'aggregated' },
+    { rawLabel:'6261 Rendas e alugueres', normalizedCategory:'other_expenses', amountNative:-0.066466, disclosureLevel:'aggregated' },
+    { rawLabel:'6262 Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.00905, disclosureLevel:'aggregated' },
+    { rawLabel:'6263 Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.002801, disclosureLevel:'aggregated' },
+    { rawLabel:'6267 Limpeza, higiene e conforto', normalizedCategory:'admin_general_expense', amountNative:-0.005361, disclosureLevel:'aggregated' },
+    { rawLabel:'6268 Outros serviços', normalizedCategory:'other_expenses', amountNative:-0.087941, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações do pessoal', normalizedCategory:'wages_squad', amountNative:-4.310771, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre remunerações', normalizedCategory:'wages_squad', amountNative:-0.321272, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros de acidentes de trabalho e doenças profissionais', normalizedCategory:'admin_general_expense', amountNative:-0.533397, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos com pessoal', normalizedCategory:'admin_general_expense', amountNative:-0.285278, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.002234, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.157121, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e amortização', normalizedCategory:'player_amortisation', amountNative:-1.157787, disclosureLevel:'aggregated' },
+  ],
 };
 const moreirenseptFiscalYearMeta = {
   2022: {
@@ -161,6 +197,17 @@ const moreirenseptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:4.498905, officialTotalExpenses:3.830395, officialPAT:0.679516,
   },
+  2024: {
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'moreirense-pt-relatorio-contas-2023-24',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0, tax:-0.009235,
+    incluidoEn:{"matchday_competition":{"en":"other_income","posible":true},"stadium_other":{"en":"other_income","posible":true},"season_tickets":{"en":"other_income","posible":true}},
+    grossDebt:null, cash:null,
+    officialTotalRevenue:6.81191, officialTotalExpenses:8.265418, officialPAT:-1.462743,
+  },
 };
 const moreirenseptPresupuestoOverlayByYear = {};
 
@@ -190,6 +237,11 @@ Object.assign(sources, {
   'moreirense-pt-relatorio-contas-2022-23': {
     id:'moreirense-pt-relatorio-contas-2022-23', clubId:'moreirense-pt',
     title:'Moreirense Futebol Clube – Futebol SAD — relatorio-contas-2022-23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'moreirense-pt-relatorio-contas-2023-24': {
+    id:'moreirense-pt-relatorio-contas-2023-24', clubId:'moreirense-pt',
+    title:'Moreirense Futebol Clube – Futebol SAD — relatorio-contas-2023-24 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

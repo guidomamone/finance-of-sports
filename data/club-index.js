@@ -143,7 +143,7 @@ window.CLUB_INDEX = {
   "mirassol": {"n":"Mirassol","c":"BR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "monchengladbach-de": {"n":"Borussia Mönchengladbach","c":"DE","q":"full","y":2,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "monza-it": {"n":"Monza","c":"IT","q":"full","y":3,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
-  "moreirense-pt": {"n":"Moreirense","c":"PT","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
+  "moreirense-pt": {"n":"Moreirense","c":"PT","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "nacional-pt": {"n":"Nacional","c":"PT","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "nagoyagrampus": {"n":"Nagoya Grampus","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "napoli-it": {"n":"Napoli","c":"IT","q":"full","y":8,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"]]},

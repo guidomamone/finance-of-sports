@@ -22,6 +22,10 @@ window.RANKINGS["pt-primeiraliga"] = {
       { id:"vitoriaguimaraes-pt", revenue:23.426, reportType:"official_balance_sheet",
         sourceId:"vitoriaguimaraes-pt-relatorio-contas-2023-24",
         mix:[["Comercial / Sponsors",3.18],["Estadio",1.928],["Televisión",7.414],["Premios por competencias",1.027],["Venta de Jugadores",9.175],["Otros ingresos",0.701]] },
+      { id:"moreirense-pt", revenue:7.296, reportType:"official_balance_sheet",
+        sourceId:"moreirense-pt-relatorio-contas-2023-24",
+        mix:[["Comercial / Sponsors",0.003],["Televisión",3.856],["Venta de Jugadores",1.491],["Otros ingresos",1.946]],
+        incluidos:[["Estadio","Otros ingresos",1]] },
     ],
   },
   2023: {
