@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf",
   "club": "rio-ave",
   "year": 2024,
-  "generatedAt": "2026-10-15T06:24:11.820Z",
+  "generatedAt": "2026-10-15T12:42:56.636Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -64,7 +64,7 @@
       "values": [
         0.010925
       ],
-      "glosa": "Cánones y regalías"
+      "glosa": "Royalties"
     },
     {
       "label": "Participação nas Competições Nacionais",
@@ -114,7 +114,7 @@
       "values": [
         0.030629
       ],
-      "glosa": "Indemnizaciones por accidentes de trabajo"
+      "glosa": "Indemnizaciones AT"
     },
     {
       "label": "Mecanismo de Solidariedade",
@@ -144,7 +144,7 @@
       "values": [
         0.11082
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontratación"
     },
     {
       "label": "Trabalhos especializados",
@@ -224,7 +224,7 @@
       "values": [
         0.006491
       ],
-      "glosa": "Herramientas y utensilios de desgaste rápido"
+      "glosa": "Herramientas y útiles de rápido desgaste"
     },
     {
       "label": "Livros e Documentação Técnica",
@@ -354,7 +354,7 @@
       "values": [
         0.036999
       ],
-      "glosa": "Primas de seguros"
+      "glosa": "Seguros"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -364,7 +364,7 @@
       "values": [
         0.087239
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Outros serviços diversos",
@@ -444,7 +444,7 @@
       "values": [
         0.000005
       ],
-      "glosa": "Deterioro de créditos por cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -454,7 +454,7 @@
       "values": [
         0.692048
       ],
-      "glosa": "Provisiones (dotaciones/reversiones)"
+      "glosa": "Provisiones (aumentos/reducciones)"
     },
     {
       "label": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
@@ -474,7 +474,7 @@
       "values": [
         0.169352
       ],
-      "glosa": "Cuotas e inscripciones"
+      "glosa": "Cuotas/Inscripciones"
     },
     {
       "label": "Impostos",

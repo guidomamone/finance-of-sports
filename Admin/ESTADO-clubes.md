@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 226 clubes, 767 ejercicios, 17 países.
+TOTAL: 227 clubes, 768 ejercicios, 18 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -270,6 +270,9 @@ NL (4)
 
 PERÚ (1)
   Alianza Lima  6 ejercicios (2019 a 2024), balance, PEN
+
+PT (1)
+  Rio Ave  1 ejercicio (2017/2018), balance, EUR, sin deuda/caja
 
 RU (16)
   Akhmat Grozny          4 ejercicios (2022 a 2025), balance, RUB, sin deuda/caja

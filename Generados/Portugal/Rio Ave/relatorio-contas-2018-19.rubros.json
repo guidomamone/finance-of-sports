@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2018-19.pdf",
   "club": "rio-ave",
   "year": 2019,
-  "generatedAt": "2026-10-15T06:24:11.681Z",
+  "generatedAt": "2026-10-15T12:42:56.585Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         4.2
       ],
-      "glosa": "Derechos audiovisuales"
+      "glosa": "Derechos televisivos"
     },
     {
       "label": "Patrocínio e Publicidade",
@@ -64,7 +64,7 @@
       "values": [
         0.008
       ],
-      "glosa": "Royalties"
+      "glosa": "Regalías"
     },
     {
       "label": "Participação nas Competições Europeias",
@@ -124,7 +124,7 @@
       "values": [
         0.094853
       ],
-      "glosa": "Indemnizaciones por accidentes de trabajo"
+      "glosa": "Indemnizaciones AT"
     },
     {
       "label": "Mecanismo de Solidariedade",
@@ -204,7 +204,7 @@
       "values": [
         0.933614
       ],
-      "glosa": "Gastos por honorarios a agentes deportivos"
+      "glosa": "Gastos por honorarios de agentes deportivos"
     },
     {
       "label": "Outros serviços especializados",
@@ -224,7 +224,7 @@
       "values": [
         0.070493
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Reparaciones y conservación"
     },
     {
       "label": "Outros serviços especializados",
@@ -274,7 +274,7 @@
       "values": [
         0.051733
       ],
-      "glosa": "Medicamentos y artículos de salud"
+      "glosa": "Medicamentos y artículos sanitarios"
     },
     {
       "label": "Outros materiais",
@@ -364,7 +364,7 @@
       "values": [
         0.031406
       ],
-      "glosa": "Limpieza, higiene y mantenimiento"
+      "glosa": "Limpieza, higiene y confort"
     },
     {
       "label": "Outros serviços diversos",
@@ -434,7 +434,7 @@
       "values": [
         0
       ],
-      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
+      "glosa": "Deterioro de cuentas por cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Imparidade de investimentos não depreciáveis/amortizações (perdas/reversões)",
@@ -454,7 +454,7 @@
       "values": [
         0.17868
       ],
-      "glosa": "Cuotas/Inscripciones"
+      "glosa": "Cuotas e inscripciones"
     },
     {
       "label": "Impostos",
@@ -484,7 +484,7 @@
       "values": [
         3.003492
       ],
-      "glosa": "Bajas de activo"
+      "glosa": "Bajas de activos"
     },
     {
       "label": "Outros Gastos e Perdas",
@@ -504,7 +504,7 @@
       "values": [
         0.183974
       ],
-      "glosa": "Activos fijos tangibles"
+      "glosa": "Inmovilizado material"
     },
     {
       "label": "Ativos intangíveis",
@@ -514,7 +514,7 @@
       "values": [
         3.145308
       ],
-      "glosa": "Activos intangibles"
+      "glosa": "Inmovilizado intangible"
     }
   ]
 }

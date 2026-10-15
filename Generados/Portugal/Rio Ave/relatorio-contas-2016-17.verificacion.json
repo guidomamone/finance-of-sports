@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.pdf",
  "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.md",
- "generado": "2026-10-15T06:24:11.590Z",
- "estado": "cola",
+ "generado": "2026-10-15T12:42:56.552Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2017,
  "escala": {
@@ -23,10 +23,7 @@
    "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "45d7fd0",
-  "c4c3b1c"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -61,7 +58,8 @@
   }
  ],
  "notas": [
-  "el desglose de \"Outros gastos\" (9 filas) no suma la fila: quedó la fila"
+  "el desglose de \"Outros gastos\" (9 filas) no suma la fila: quedó la fila",
+  "duda de extraer ya contestada para el club (perimetro, \"Outros gastos\"): aceptar, en relatorio-contas-2016-17.pdf"
  ],
  "reintentar": [
   {

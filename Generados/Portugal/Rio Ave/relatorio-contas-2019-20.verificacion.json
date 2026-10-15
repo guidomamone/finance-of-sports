@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2019-20.pdf",
  "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2019-20.md",
- "generado": "2026-10-15T06:24:11.751Z",
- "estado": "cola",
+ "generado": "2026-10-15T12:42:56.601Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2020,
  "escala": {
@@ -23,9 +23,7 @@
    "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "af975f7"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -56,6 +54,7 @@
  ],
  "notas": [
   "el desglose de \"Outros gastos\" (7 filas) no suma la fila: quedó la fila",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en relatorio-contas-2019-20.pdf",
   "duda de extraer que no afecta la carga: L1055-L1056 tienen etiqueta '(...)' ilegible y L1056 repite el importe 13,75 de 'De depósitos', parecería subtotal.",
   "duda de extraer que no afecta la carga: L90 imprime '13,75 €' con coma decimal, distinto formato del resto; los resultados L89-L92 cuadran ignorándolo."
  ],

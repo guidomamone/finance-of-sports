@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/Relatorio_SDUQ_2022-2023.pdf",
  "md": "Clubes/Portugal/Rio Ave/Relatorio_SDUQ_2022-2023.md",
- "generado": "2026-10-15T06:24:11.477Z",
- "estado": "cola",
+ "generado": "2026-10-15T12:42:56.529Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2023,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "84a373e"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -51,6 +49,7 @@
  "notas": [
   "la nota de \"Subsídios à Exploração\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Imparidade de dívidas a receber (perdas/reversões)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de extraer ya contestada para el club (perimetro, \"Imparidade de dívidas a receber (perdas/reversões)\"): aceptar, en relatorio-contas-2024-25.pdf",
   "duda de extraer que no afecta la carga: L259-L262 detallan dentro del estado el mismo renglón que desglosa b25 (L1002-L1005), con los mismos importes."
  ],
  "reintentar": null,

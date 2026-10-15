@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2021-22.pdf",
   "club": "rio-ave",
   "year": 2022,
-  "generatedAt": "2026-10-15T06:24:11.763Z",
+  "generatedAt": "2026-10-15T12:42:56.618Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -104,7 +104,7 @@
       "values": [
         0.073277
       ],
-      "glosa": "Indemnizaciones por accidentes de trabajo"
+      "glosa": "Indemnizaciones AT"
     },
     {
       "label": "Mecanismo de Solidariedade",
@@ -144,7 +144,7 @@
       "values": [
         0.023498
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontratos"
     },
     {
       "label": "Trabalhos especializados",
@@ -244,7 +244,7 @@
       "values": [
         0.00375
       ],
-      "glosa": "Artículos para regalo"
+      "glosa": "Artículos para obsequio"
     },
     {
       "label": "Equipamento Desportivo",
@@ -324,7 +324,7 @@
       "values": [
         0.045984
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Comunicação",
@@ -454,7 +454,7 @@
       "values": [
         0.008114
       ],
-      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos a cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Quotizações/Inscrições",
@@ -464,7 +464,7 @@
       "values": [
         0.072496
       ],
-      "glosa": "Cuotas e inscripciones"
+      "glosa": "Cuotas/Inscripciones"
     },
     {
       "label": "Impostos",
@@ -484,7 +484,7 @@
       "values": [
         0.02057
       ],
-      "glosa": "Multas y penalizaciones"
+      "glosa": "Multas y sanciones"
     },
     {
       "label": "Multas Fiscais",
@@ -494,7 +494,7 @@
       "values": [
         0.005853
       ],
-      "glosa": "Multas fiscales"
+      "glosa": "Sanciones fiscales"
     },
     {
       "label": "Abates",
@@ -504,7 +504,7 @@
       "values": [
         1.048789
       ],
-      "glosa": "Bajas de activos"
+      "glosa": "Bajas de activo"
     },
     {
       "label": "Donativos",
@@ -514,7 +514,7 @@
       "values": [
         0.00044
       ],
-      "glosa": "Donativos"
+      "glosa": "Donaciones"
     },
     {
       "label": "Outros Gastos e Perdas",
@@ -534,7 +534,7 @@
       "values": [
         0.29808
       ],
-      "glosa": "Activos fijos tangibles"
+      "glosa": "Inmovilizado material"
     },
     {
       "label": "Ativos intangíveis",
@@ -544,7 +544,7 @@
       "values": [
         2.5751
       ],
-      "glosa": "Activos intangibles"
+      "glosa": "Inmovilizado intangible"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2024-25.pdf",
  "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2024-25.md",
- "generado": "2026-10-15T06:24:11.833Z",
- "estado": "cola",
+ "generado": "2026-10-15T12:42:56.639Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -23,9 +23,7 @@
    "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "fb0bf21"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -59,6 +57,7 @@
   "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (0.163444 contra 0.038067, sumando sus renglones): quedó el renglón del estado",
   "duda de localizar que no afecta la carga: b2 es un análisis del informe de gestión con 3 épocas; la nota 23 (b44) desglosa el mismo renglón del estado.",
   "duda de localizar que no afecta la carga: b1 y b3 son cuadros de análisis de 3 épocas que repiten importes de b36 y b38/b39.",
+  "duda de extraer ya contestada para el club (perimetro, \"Imparidade de dívidas a receber (perdas/reversões)\"): aceptar, en relatorio-contas-2024-25.pdf",
   "duda de extraer que no afecta la carga: b40 desglosa la línea L1455 de la nota de FSE.",
   "duda de extraer que no afecta la carga: L1597 suma partidas operativas y financieras de dos renglones distintos."
  ],

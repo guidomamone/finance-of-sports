@@ -27,3 +27,5 @@ lo omite por error.
 - Último chequeo: 2026-09-17.
 
 Color de marca: #007700 — pt.wikipedia, colores del club (cor_fundo1: camiseta a rayas verdes y blancas; el otro color es blanco, gana el verde), verificado 2026-10-09. El escudo es mayormente negro/dorado con olas verdes.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2018 desde `Clubes/Portugal/Rio Ave/relatorio-contas-2017-18.pdf` (sourceId `rioave-pt-relatorio-contas-2017-18`).

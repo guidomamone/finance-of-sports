@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2018-19.pdf",
  "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2018-19.md",
- "generado": "2026-10-15T06:24:11.680Z",
- "estado": "cola",
+ "generado": "2026-10-15T12:42:56.585Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2019,
  "escala": {
@@ -23,9 +23,7 @@
    "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "4d01e5e"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -62,6 +60,7 @@
  "notas": [
   "la nota de \"Subsídios à Exploração\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "el desglose de \"Outros gastos\" (8 filas) no suma la fila: quedó la fila",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en relatorio-contas-2019-20.pdf",
   "duda de extraer que no afecta la carga: En L59 figura 116 positivo y en b28 L906/L907 116 y total 116, mientras en 2018 la nota muestra 1.599 positivo con total -1.599: signos inconsistentes.",
   "duda de extraer que no afecta la carga: b2, b29 y b30 no indican escala; las notas con (Euros) coinciden exactamente con el estado."
  ],
