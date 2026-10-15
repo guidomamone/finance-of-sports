@@ -21,7 +21,7 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-ORDEN (2026-10-15): primero lo que corrige datos publicados (232 ad, 235), después el script que limpia la cola (232 aa), las altas
+ORDEN (2026-10-15): primero lo que corrige datos publicados (235), después el script que limpia la cola (232 aa), las altas
 de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (232 e, 233, 230) y lo que espera una decisión de Guido (130,
 183, 51). Las letras del 232 marcadas "conocido, sin daño hoy" (k, l, n, o, z) no se trabajan salvo que algo cambie.
 
@@ -41,11 +41,6 @@ de países nuevos (165 b y c) y las gestiones (195); al final el ahorro de API (
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
-    ad) CIFRAS CON FORMA IMPOSIBLE EN TODO EL PIPELINE (2026-10-14, al medir Jev): 1.960 números con dos separadores distintos y el último
-       repetido o el de miles después del decimal, en 118 transcripciones (Valencia "1.244,197,13" L8499, Rayo Vallecano "32.444,508,40" L662,
-       Espanyol 2025 "13.950,790,99" L361): errores del OCR. caja-deuda.mjs ya no usa esas filas (232 ac). Falta: (1) medir si alguna llegó a
-       un dato publicado (extraer/verificar las leen con parseNumber; la verificación de sumas debería atraparlas, no está medido); (2) que la
-       validación gratis de la etapa 2 (inventario-transcripciones.mjs) las marque como cifras a revisar, para re-leer esas páginas.
     aa) Casos de perfil que nadie va a contestar ni cerrar: OFI Crete (10), Levadiakos (2) y Paysandu (2) son de años YA cargados con el
        ingreso como renglón sin desglosar (lump_), donde `cargar.mjs` ya no hace la pregunta; `cola.mjs` `cerrarCargados()` no cierra
        'cargar · perfil' a propósito (sirve para los años que vienen). Quedan en la cola como pendientes. Escalón posible: un caso de perfil

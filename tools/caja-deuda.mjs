@@ -75,6 +75,7 @@ import { ajusteDe, ajusteClubODoc, ajustePerimetroDe } from './ajustes.mjs';
 import { normalizar, claveFamilia, CAJA_RE, DEUDA_FINANCIERA_RE, TITULO_BALANCE_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE, FLUJO_O_PATRIMONIO_RE, esTotal } from './vocabulario.mjs';
 import { archivosData, rutaData } from './data-clubes.js';
 import { cierrePorVecinos } from './cierre-vecinos.mjs';
+import { formaImposible } from './verify-numbers.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const PAG_RE = /^---\s*pág\.\s*(\d+)\s*---/i;
@@ -260,11 +261,6 @@ function columnasDePerimetro(L) {
   return res;
 }
 
-const formaImposible = (c) => {
-  const t = String(c).replace(/[^\d.,]/g, ''); if (!(t.includes('.') && t.includes(','))) return false;
-  const ultimo = Math.max(t.lastIndexOf('.'), t.lastIndexOf(',')); const sep = t[ultimo]; const otro = sep === '.' ? ',' : '.';
-  return t.split(sep).length - 1 > 1 || t.indexOf(otro) > ultimo;
-};
 export function filasDelMd(md) {
   const L = md.split('\n'); const filas = []; let pagina = 1; const textoPag = new Map();
   const notasAntes = columnasDeNotas(L); const notasPunto = columnasDeNotasConPunto(L); const notasForma = columnasConFormaDeNota(L); const colsPer = columnasDePerimetro(L);

@@ -63,6 +63,10 @@ Mitigaciones:
 - a) PDF digital (tiene texto propio): Mistral transcribe; el texto propio del PDF queda como segunda fuente gratis para la etapa 4.
 - b) PDF escaneado: Mistral lo marca como escaneo; no hay segunda fuente gratis.
 - c) PDF con texto roto (letras sin sentido en vez del texto real): se detecta solo y se trata como escaneo.
+- c2) Una cifra con forma imposible ("6.571,340,66": dos separadores distintos y el último repetido, error del OCR) no se valida gratis
+  con nada (`chequeos-gratis.mjs`, to-do 232 ad): su página queda dudosa y la relee la validación paga. La misma función
+  (`formaImposible`, en `verify-numbers.mjs`) hace que `caja-deuda.mjs` no lea esa fila. Lo ya transcripto no se relee: medido, ninguna
+  llegó a un dato publicado.
 - d) **Escalera** (escalón 1 construido; el 2 todavía no):
 
 ```

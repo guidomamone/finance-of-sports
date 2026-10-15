@@ -71,7 +71,7 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 import vm from 'node:vm';
-import { NUM_RE, norm as digitos, THRESHOLDS as VN } from './verify-numbers.mjs';
+import { NUM_RE, norm as digitos, THRESHOLDS as VN, formaImposible } from './verify-numbers.mjs';
 import { numeroDe, norm as normTxt } from './filas-rubro.mjs';
 import { paginasConNumeros } from './paginas-con-numeros.mjs';
 import { derivado, ubicar } from './rutas.mjs';
@@ -324,12 +324,12 @@ export async function chequearPaginas({ pdfPath, mdText, club, year, umbrales = 
     const occ = [];
     const enTabla = new Set();
     tablas.forEach((tb, ti) => tb.filas.forEach((f, fi) => f.forEach((c, ci) => {
-      for (const x of cifras(c, U.minDigitos)) { occ.push({ d: x.d, key: `${ti},${fi},${ci}`, r: new Set() }); enTabla.add(x.d); }
+      for (const x of cifras(c, U.minDigitos)) { occ.push({ d: x.d, raw: x.raw, key: `${ti},${fi},${ci}`, r: new Set() }); enTabla.add(x.d); }
     })));
     // Cifras fuera de las tablas (prosa de la misma página): se cuentan todas y se descuentan las que ya vinieron de tablas.
     const todas = cifras(p.body, U.minDigitos);
     const cnt = new Map(); for (const o of occ) cnt.set(o.d, (cnt.get(o.d) || 0) + 1);
-    for (const x of todas) { if (cnt.get(x.d) > 0) cnt.set(x.d, cnt.get(x.d) - 1); else occ.push({ d: x.d, key: null, r: new Set() }); }
+    for (const x of todas) { if (cnt.get(x.d) > 0) cnt.set(x.d, cnt.get(x.d) - 1); else occ.push({ d: x.d, raw: x.raw, key: null, r: new Set() }); }
     const celdasNumericas = occ.filter((o) => o.key).length;
 
     if (conNumeros ? !conNumeros.has(p.n) : (celdasNumericas === 0 && occ.length <= U.prosaMax)) {
@@ -356,13 +356,21 @@ export async function chequearPaginas({ pdfPath, mdText, club, year, umbrales = 
       casi = occ.filter((o) => !o.r.size).map((o) => [o.d, casiIgual(o.d, pdfSet)]).filter(([, q]) => q);
     }
 
+    // ESCALÓN 0: UNA CIFRA CON FORMA IMPOSIBLE (to-do 232 ad, ok de Guido el 2026-10-15) no se da por buena con ningún chequeo: el texto
+    // del PDF compara solo los dígitos, y la tolerancia de hasta 3 cifras sin respaldo la dejaba pasar. Caso: Ceará 2019 pág. 36,
+    // "6.571,340,66" (una sola cifra sin respaldo, tolerada): la página salía validada gratis con la cifra rota adentro. La página queda
+    // dudosa y la relee la validación paga. Medido: 32 páginas más a pagar en las 155 transcripciones con cifras así; en --prueba, 1
+    // página más y el mismo recall (1168/1168).
+    const rotas = occ.filter((o) => formaImposible(o.raw));
+    for (const o of rotas) o.r.clear();
     const sin = occ.filter((o) => !o.r.size);
     const usados = [...new Set(occ.flatMap((o) => [...o.r]))].sort();
     const tolera = U.toleranciaSoloConTexto && !pdfCifras.length ? 0 : U.maxSinRespaldo;
-    if (!casi.length && sin.length <= tolera) {
+    if (!casi.length && !rotas.length && sin.length <= tolera) {
       out.push({ pagina: p.n, estado: 'validada-gratis', chequeo: [...usados, ...(sin.length ? ['tolerada'] : [])].join('+') || 'sin-cifras-4d', detalle: `${occ.length - sin.length} de ${occ.length} cifras respaldadas${sin.length ? ` (${sin.length} sin respaldo tolerada(s), sin parecido a ninguna del PDF: ${sin.map((o) => o.d).join(', ')})` : ''} (${usados.map((u) => `${u} ${occ.filter((o) => o.r.has(u)).length}`).join(', ')})${sumas.cierres ? `, ${sumas.cierres} sumas cierran` : ''}` });
     } else {
       const why = [];
+      if (rotas.length) why.push(`${rotas.length} cifra(s) con forma imposible (error del OCR): ${rotas.slice(0, 3).map((o) => o.raw).join(', ')}`);
       if (casi.length) why.push(`${casi.length} cifra(s) casi iguales a una del PDF (lectura mal hecha): ${casi.slice(0, 3).map(([a, b]) => `${a} vs ${b}`).join(', ')}`);
       if (sin.length) why.push(`${sin.length} de ${occ.length} cifras sin respaldo${!capa.aplica ? ` (sin capa de texto: ${capa.motivo})` : !pdfCifras.length ? ' (página sin texto en el PDF)' : ''}: ${sin.slice(0, 5).map((o) => o.d).join(', ')}`);
       out.push({ pagina: p.n, estado: 'dudosa', chequeo: usados.join('+') || null, detalle: why.join('; ') });
