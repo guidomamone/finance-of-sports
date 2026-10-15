@@ -164,6 +164,32 @@ llegue acá.
        Benfica 2018-19 se volvieron a localizar y extraer, se pagó de nuevo (US$ 1,46) y salieron 5 dudas nuevas de localizar y extraer;
        Sporting 2024-25 frena solo por "faltan-datos" en el registro de altas: correr `node tools/alta-club.mjs --todos`). Un reintento
        por "cola contestada" debería volver a verificar sin pagar localizar/extraer.
+    t) EL ALTA FRENA POR "faltan-datos" AUNQUE YA ESTÉ LISTA (lote 79, dos veces: Sporting en la primera corrida; Porto, Braga y Benfica
+       en la tercera). Correr `node tools/alta-club.mjs --todos` a mano las dejó "listas para alta" sin cambiar nada más. Escalón posible:
+       que `cargar-lote.mjs` recalcule el registro de altas de los clubes de su lista antes de decidir, en vez de leer el estado viejo.
+    u) UN INFORME PARTIDO EN VARIOS PDF PIERDE LAS NOTAS (Boavista 2023-24: RCSAD-23-24_1-3/2-3/3-3). El lote lee solo la parte 1 (el
+       estado) y "Vendas e serviços prestados" 4.424.268,14 iba a la cola como fútbol sin desglosar, cuando la nota 22 de la parte 2
+       (RCSAD-23-24_2-3.md L1146-1149) lo abre en entradas, TV y publicidad. Se resolvió con tres ajustes `fila`. Escalón posible: que
+       localizar busque las notas en las otras partes del mismo ejercicio (mismo prefijo de archivo) cuando la parte del estado no las trae.
+    v) EL CUADRO DE INVENTARIOS ABRE DUDAS EN CADA CLUB (lote 79: Porto b102, Santa Clara b20, Braga b38). "Apuramento do custo das
+       mercadorias vendidas" (inicial + compras − final = CMV) no es un desglose aditivo; sumar sus filas descuadra (Santa Clara 633.981
+       contra 378.448) y cada club genera 2 preguntas con la misma respuesta: queda afuera y se carga el renglón del estado. Escalón
+       posible: reconocer el cuadro (filas "inicial/final" + "compras" cuyo cálculo da el renglón) y no ofrecerlo como desglose.
+    w) UNA FILA DE UNA NOTA DE INGRESOS QUEDA COMO GASTO (Santa Clara 2024-25: "Juros e Outros Rendimentos Similares" 33.375,18 está en la
+       nota 10.2 "Outros Rendimentos", L1041, pero se extrajo como gasto −33.375; el resultado no cerraba por el doble, 66.756). Se resolvió
+       con un ajuste `fila` en ingresos. Escalón posible: que el lado de cada fila de una nota salga del renglón del estado que la nota
+       abre, no de la palabra "juros".
+    x) EN UN ESCANEO, LA ARITMÉTICA DEL ESTADO ENCUENTRA LOS DÍGITOS MAL LEÍDOS (Santa Clara 2024-25: 26 números sin confirmar; armando
+       las dos columnas del estado de arriba hacia abajo y de abajo hacia arriba desde el resultado impreso aparecieron 12 cifras mal
+       leídas, p. ej. imparidad 236.595,04 → 236.995,04, que arrastraba los subtotales; se corrigió el .md y se confirmaron 29 números con
+       ajustes). Escalón posible: antes de mandar números sin confirmar a la cola, probar qué cambio de UN dígito en una fila hace cerrar
+       todos los subtotales y el resultado (compuerta: cierre al céntimo), y proponerlo con la imagen recortada.
+    y) EL PERFIL DE UNA SAD PORTUGUESA SE PUEDE CONTESTAR SOLO (Boavista, Benfica: "Participação em competições desportivas de carácter
+       profissional na modalidade de futebol", natureza da atividade / objeto social). Igual que la ΠΑΕ griega (to-do 232 c, cargar.mjs),
+       una SAD/SDUQ con ese objeto social no tiene socios ni otras secciones. Ojo con Porto, que alterna documentos del club (2016-2023) y
+       de la SAD: se resolvió con perfil "sí" y ajustes `cero-real` en el documento de la SAD (ver c).
+    z) UN NÚMERO CONFIRMADO CON AJUSTE VUELVE A LA COLA (Santa Clara 2024-25, L1542 "40 646": tenía el ajuste `confirmado` y la corrida
+       siguiente abrió el caso "numero-no-confirmado" 306c291 igual). Mirar si el ajuste se pierde cuando el .md cambia de versión.
 238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
    sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
    (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
