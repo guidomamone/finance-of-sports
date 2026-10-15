@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.pdf",
  "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md",
- "generado": "2026-10-14T06:15:24.470Z",
+ "generado": "2026-10-15T02:33:11.689Z",
  "estado": "ok",
  "clubId": "panetolikos-gr",
  "year": 2023,
@@ -23,6 +23,43 @@
    "evidencia": "Panetolikos_FS_2023-06-30.md, estado de resultados (Λοιπά συνήθη έσοδα) y nota 9 (Κύκλος εργασιών sin TV)",
    "autor": "Claude",
    "fecha": "2026-10-14"
+  },
+  {
+   "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.pdf",
+   "campo": "fila",
+   "valor": "5.090.619,22",
+   "linea": 548,
+   "etiqueta": "Κόστος πωλήσεων (sin el costo de personal)",
+   "lado": "gasto",
+   "reemplaza": "Κόστος πωλήσεων",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2023-06-30.md L1158) está dentro de \"Κόστος πωλήσεων\": queda 6.807.271,00 - 1.716.651,78",
+   "evidencia": "Panetolikos_FS_2023-06-30.md L1158",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.pdf",
+   "campo": "fila",
+   "valor": "1.716.651,78",
+   "linea": 548,
+   "etiqueta": "Σύνολο — Παροχές σε εργαζόμενους",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2023-06-30.md L1158) está dentro de \"Κόστος πωλήσεων\": el costo de personal va aparte",
+   "evidencia": "Panetolikos_FS_2023-06-30.md L1158",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Σύνολο — Παροχές σε εργαζόμενους",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2023-06-30.md L1158) está dentro de \"Κόστος πωλήσεων\": costo de personal -> wages_squad",
+   "evidencia": "Panetolikos_FS_2023-06-30.md L1158",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-15"
   }
  ],
  "cola": [],
@@ -41,7 +78,7 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 8.881784197001252e-16
+   "dif": 3.4000000059819513e-7
   },
   {
    "nombre": "año anterior cargado",
@@ -59,7 +96,10 @@
    "detalle": "ingresos de 2022: 2.982884 en Panetolikos_FS_2022-06-30.pdf y 2.982884 en este documento (columna del año anterior)"
   }
  ],
- "notas": [],
+ "notas": [
+  "ajuste manual: fila \"Κόστος πωλήσεων (sin el costo de personal)\" (gasto) 5.090.619,22, en lugar de \"Κόστος πωλήσεων\" (2026-10-15, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2023-06-30.md L1158) está dentro de \"Κόστος πωλήσεων\": queda 6.807.271,00 - 1.716.651,78)",
+  "ajuste manual: fila \"Σύνολο — Παροχές σε εργαζόμενους\" (gasto) 1.716.651,78 (2026-10-15, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2023-06-30.md L1158) está dentro de \"Κόστος πωλήσεων\": el costo de personal va aparte)"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
@@ -115,14 +155,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Κόστος πωλήσεων",
-   "lado": "gasto",
-   "M": 6.807271,
-   "pagina": 17,
-   "linea": 548,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Έξοδα διοίκησης",
    "lado": "gasto",
    "M": 0.570216,
@@ -169,6 +201,22 @@
    "pagina": 31,
    "linea": 1117,
    "origen": "nota que desglosa \"Λοιπά έξοδα και ζημίες\""
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων (sin el costo de personal)",
+   "lado": "gasto",
+   "M": 5.090619,
+   "pagina": 17,
+   "linea": 548,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Σύνολο — Παροχές σε εργαζόμενους",
+   "lado": "gasto",
+   "M": 1.716652,
+   "pagina": 17,
+   "linea": 548,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

@@ -149,7 +149,7 @@ tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado
 ### Ingresos
 
 ```text
-2023: cargado por tools/cargar.mjs (2026-10-14) desde Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2023: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -165,31 +165,29 @@ Generados/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.categorias.json (escalón
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Κόστος πωλήσεων | pág. 17, precedente |
-| 2 | Έξοδα διοίκησης | pág. 17, Jev 1 |
-| 3 | Έξοδα διάθεσης | pág. 17, precedente |
-| 4 | Παροχές τρίτων | pág. 31, precedente |
-| 5 | Φόροι και τέλη | pág. 31, Jev 0.9 |
-| 6 | Διάφορα έξοδα | pág. 31, Jev 0.94 |
-| 7 | Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις | pág. 31, precedente |
+| 1 | Έξοδα διοίκησης | pág. 17, Jev 1 |
+| 2 | Έξοδα διάθεσης | pág. 17, precedente |
+| 3 | Παροχές τρίτων | pág. 31, precedente |
+| 4 | Φόροι και τέλη | pág. 31, Jev 0.9 |
+| 5 | Διάφορα έξοδα | pág. 31, Jev 0.94 |
+| 6 | Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις | pág. 31, precedente |
+| 7 | Κόστος πωλήσεων (sin el costo de personal) | pág. 17, precedente |
+| 8 | Σύνολο — Παροχές σε εργαζόμενους | pág. 17, precedente |
 
 ### Meta
-
-```text
-2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): incluye = broadcasting. Claude 2026-10-14 (lote 75 resuelto sin API, pedido de Guido): el documento no abre 'Λοιπά συνήθη έσοδα' (L96 del informe de gestión solo da el total); los derechos de TV están adentro, junto con otros ingresos. Misma categoría que 2017-2022 ya cargados (other_income)
-tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
-sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
-```
 
 ```text
 tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.716652 (compuerta: documento siguiente): Jev (confianza 0.74): Panetolikos_FS_2023-06-30.md L1158 "Σύνολο"
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-14): gr-superleague, verificado contra roster cacheado de "2022–23 Super League Greece" (tools/club-league-reference/gr.json), coincidencia exacta "Panetolikos".
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): incluye = broadcasting. Claude 2026-10-14 (lote 75 resuelto sin API, pedido de Guido): el documento no abre 'Λοιπά συνήθη έσοδα' (L96 del informe de gestión solo da el total); los derechos de TV están adentro, junto con otros ingresos. Misma categoría que 2017-2022 ya cargados (other_income)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-15): fila = 5.090.619,22. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2023-06-30.md L1158) está dentro de "Κόστος πωλήσεων": queda 6.807.271,00 - 1.716.651,78
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-15): fila = 1.716.651,78. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2023-06-30.md L1158) está dentro de "Κόστος πωλήσεων": el costo de personal va aparte
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-15): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, Panetolikos_FS_2023-06-30.md L1158) está dentro de "Κόστος πωλήσεων": costo de personal -> wages_squad
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
 ## 2022
