@@ -237,6 +237,110 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2023–24 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia única por palabras "Vitória de Guimarães" = "Vitória Guimarães".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-15) desde Clubes/Portugal/Vitória Guimarães/wf-src-Relatorio-e-Contas-2021-22-SAD.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Vitória Guimarães/wf-src-Relatorio-e-Contas-2021-22-SAD.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Federação Portuguesa de Futebol | pág. 78, precedente |
+| 2 | Liga Portuguesa Futebol | pág. 78, precedente |
+| 3 | Outras Entidades | pág. 78, Jev 0.96 |
+| 4 | Rendimentos suplementares | pág. 82, Jev 0.99 |
+| 5 | Descontos pronto pagamento obtidos | pág. 82, Jev 1 |
+| 6 | Ganhos em inventários | pág. 82, Jev 0.98 |
+| 7 | Rendimentos e ganhos em investimentos | pág. 82, precedente |
+| 8 | Outros | pág. 82, precedente |
+| 9 | Bilheteira/ Quotização/ Pack sócio | pág. 77, precedente |
+| 10 | Prémios competições nacionais e UEFA | pág. 77, precedente |
+| 11 | Publicidade/ patrocínios | pág. 77, precedente |
+| 12 | Direitos televisivos | pág. 77, precedente |
+| 13 | Outros | pág. 77, precedente |
+| 14 | Venda de mercadorias | pág. 77, Jev 0.98 |
+| 15 | Outros | pág. 83, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo de mercadorias vendidas e das matérias consumidas | pág. 25, Jev 0.95 |
+| 2 | Trabalhos especializados | pág. 79, Jev 0.95 |
+| 3 | Publicidade e propaganda | pág. 79, Jev 1 |
+| 4 | Vigilância e segurança | pág. 79, Jev 0.92 |
+| 5 | Honorários | pág. 79, Jev 1 |
+| 6 | Comissões | pág. 79, precedente |
+| 7 | Conservação e reparação | pág. 79, Jev 0.93 |
+| 8 | Despesas com Provas | pág. 79, Jev 1 |
+| 9 | Prospeção; Empréstimos; | pág. 79, precedente |
+| 10 | Ferramentas, utensílios desgaste rápido | pág. 79, Jev 0.92 |
+| 11 | Material de escritório | pág. 79, Jev 1 |
+| 12 | Artigos para oferta | pág. 79, precedente |
+| 13 | Material Desportivo | pág. 79, precedente |
+| 14 | Eletricidade | pág. 79, Jev 0.99 |
+| 15 | Combustíveis | pág. 79, Jev 1 |
+| 16 | Água | pág. 79, Jev 0.97 |
+| 17 | Outros Fluidos | pág. 79, precedente |
+| 18 | Deslocações e estadas | pág. 79, Jev 0.95 |
+| 19 | Transportes de mercadorias | pág. 79, precedente |
+| 20 | Rendas e alugueres | pág. 79, precedente |
+| 21 | Comunicação | pág. 79, Jev 1 |
+| 22 | Seguros | pág. 79, Jev 0.91 |
+| 23 | Contencioso e notariado | pág. 79, Jev 0.99 |
+| 24 | Despesas de representação | pág. 79, Jev 0.99 |
+| 25 | Limpeza, higiene e conforto | pág. 79, Jev 0.99 |
+| 26 | Outros serviços | pág. 79, precedente |
+| 27 | Pessoal VSC ao serviço SAD | pág. 79, precedente |
+| 28 | Remuneração administração | pág. 81, Jev 1 |
+| 29 | Remuneração pessoal administrativo | pág. 81, Jev 0.99 |
+| 30 | Remuneração treinadores | pág. 81, Claude 0.85 |
+| 31 | Remuneração jogadores | pág. 81, Jev 1 |
+| 32 | Remuneração pessoal apoio ao futebol profissional | pág. 81, precedente |
+| 33 | Encargos com remunerações | pág. 81, precedente |
+| 34 | Seguro acidentes trabalho | pág. 81, precedente |
+| 35 | Outros gastos pessoal | pág. 81, precedente |
+| 36 | Clientes | pág. 85, precedente |
+| 37 | Outras contas a receber | pág. 85, precedente |
+| 38 | Provisões (aumentos/reduções) | pág. 25, Jev 0.9 |
+| 39 | Impostos | pág. 83, Jev 0.99 |
+| 40 | Gastos, perdas em investimento não financeiros | pág. 83, Jev 0.96 |
+| 41 | Correções relativas a exercícios anteriores | pág. 83, Claude 0.8 |
+| 42 | Donativos | pág. 83, Jev 1 |
+| 43 | Quotizações | pág. 83, precedente |
+| 44 | Multas | pág. 83, precedente |
+| 45 | Gastos/reversões de depreciação e amortização | pág. 25, Jev 0.91 |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2022-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2022-06-30 (espejo del informe de la SAD 2021-22)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 1 275 427,61. Claude 2026-10-15 (lote 76): la nota 16 abre 'Prestação de serviços' (10 531 656,06, L1896) en cinco sub-rubricas (L1905-1909) que la extracción no abrió; sin el desglose, la TV (6,92 M) quedaba como otros ingresos
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 743 007,66. Claude 2026-10-15 (lote 76): la nota 16 abre 'Prestação de serviços' (10 531 656,06, L1896) en cinco sub-rubricas (L1905-1909) que la extracción no abrió; sin el desglose, la TV (6,92 M) quedaba como otros ingresos
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 1 529 770,28. Claude 2026-10-15 (lote 76): la nota 16 abre 'Prestação de serviços' (10 531 656,06, L1896) en cinco sub-rubricas (L1905-1909) que la extracción no abrió; sin el desglose, la TV (6,92 M) quedaba como otros ingresos
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 6 922 619,12. Claude 2026-10-15 (lote 76): 'Vendas e serviços prestados' del estado (11 285 014,14, L590) se reemplaza por sus seis partes de la nota 16: Venda de mercadorias (L1895) y las cinco sub-rubricas de Prestação de serviços (L1905-1909). Reemplazar 'Prestação de serviços' no alcanzaba: en la lectura 5 entra después, al abrir el renglón con su nota
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 60 831,39. Claude 2026-10-15 (lote 76): la nota 16 abre 'Prestação de serviços' (10 531 656,06, L1896) en cinco sub-rubricas (L1905-1909) que la extracción no abrió; sin el desglose, la TV (6,92 M) quedaba como otros ingresos
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): categoria = matchday_competition. Claude 2026-10-15 (lote 76): taquilla, cuotas y pack de socio que paga el club (como 2025)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): categoria = competition_bonus. Claude 2026-10-15 (lote 76): premios de competiciones
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): categoria = sponsorship_commercial. Claude 2026-10-15 (lote 76): publicidad y patrocinios
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): categoria = broadcasting. Claude 2026-10-15 (lote 76): derechos de TV
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): categoria = other_income. Claude 2026-10-15 (lote 76): residual de prestación de servicios y de otros rendimientos
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): categoria = player_sales. Claude 2026-10-15 (lote 76): la nota dice que 'inclui rendimentos relativos a alienação de direitos económicos e desportivos de jogadores' (L2090); el informe de gestión: 'Alienação de jogadores ... com uma mais-valia superior a 16M' (L459). Formato SNC (to-do 237 h)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): categoria = other_expenses. Claude 2026-10-15 (lote 76): imparidad de deudores, como Moreirense y Rio Ave
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): categoria = other_expenses. Claude 2026-10-15 (lote 76): reversión de imparidad de deudores (+102 150,01), como Moreirense y Rio Ave
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 753 358,08. Claude 2026-10-15 (lote 76): 'Vendas e serviços prestados' del estado (11 285 014,14, L590) se reemplaza por sus seis partes de la nota 16: Venda de mercadorias (L1895) y las cinco sub-rubricas de Prestação de serviços (L1905-1909). Reemplazar 'Prestação de serviços' no alcanzaba: en la lectura 5 entra después, al abrir el renglón con su nota
+tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia única por palabras "Vitória de Guimarães" = "Vitória Guimarães".
+```
+
 ## Fuentes
 
 ### vitoriaguimaraes-pt-relatorio-contas-2023-24
@@ -253,4 +357,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vitoriaguimaraes-pt-wf-src-relatorio-e-contas-2021-22-sad
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Vitória Guimarães/wf-src-Relatorio-e-Contas-2021-22-SAD.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

@@ -5,5 +5,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'alverca-pt': { 2022: null, 2023: null },
   'nacional-pt': { 2024: 'pt-ligaportugal2' },
   'moreirense-pt': { 2022: 'pt-primeiraliga', 2025: 'pt-primeiraliga' },
-  'vitoriaguimaraes-pt': { 2024: 'pt-primeiraliga', 2025: 'pt-primeiraliga' },
+  'vitoriaguimaraes-pt': { 2024: 'pt-primeiraliga', 2025: 'pt-primeiraliga', 2022: 'pt-primeiraliga' },
 });

@@ -35,6 +35,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2022: {
     leagueSize: null,
     clubs: [
+      { id:"vitoriaguimaraes-pt", revenue:24.185, reportType:"official_balance_sheet",
+        sourceId:"vitoriaguimaraes-pt-wf-src-relatorio-e-contas-2021-22-sad",
+        mix:[["Comercial / Sponsors",2.372],["Estadio",1.325],["Televisión",7.191],["Premios por competencias",0.772],["Venta de Jugadores",10.903],["Otros ingresos",1.623]] },
       { id:"moreirense-pt", revenue:9.9, reportType:"official_balance_sheet",
         sourceId:"moreirense-pt-relatorio-contas-2021-22",
         mix:[["Comercial / Sponsors",0.002],["Televisión",3.739],["Venta de Jugadores",4.263],["Otros ingresos",1.896]],

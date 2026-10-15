@@ -44,3 +44,5 @@ Color de marca: null — la identidad es el blanco (pt.wikipedia: asociado al bl
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2025 desde `Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.pdf` (sourceId `vitoriaguimaraes-pt-relatorio-contas-2024-25`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2024 desde `Clubes/Portugal/Vitória Guimarães/relatorio-contas-2023-24.pdf` (sourceId `vitoriaguimaraes-pt-relatorio-contas-2023-24`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2022 desde `Clubes/Portugal/Vitória Guimarães/wf-src-Relatorio-e-Contas-2021-22-SAD.pdf` (sourceId `vitoriaguimaraes-pt-wf-src-relatorio-e-contas-2021-22-sad`).
