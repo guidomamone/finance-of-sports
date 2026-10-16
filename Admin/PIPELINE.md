@@ -449,6 +449,8 @@ Mitigaciones:
             gana la que cierra (Versión 462)
  COMPUERTA DEL LADO en todos los escalones (Versiones 374 y 377): la categoría tiene que ser del lado de la fila en el documento; si no,
             baja de escalón; la pregunta de la cola lleva la clave "etiqueta|lado"
+ RESPUESTA DEL OTRO LADO (to-do 237 f): si la carga no cierra el resultado y una respuesta de la cola es del otro lado que la fila, segunda
+            pasada mudando esas filas como el ajuste `categoria` (sin cambiar su efecto); gana solo si cierra el resultado impreso exacto
  nada → cola (pregunta de sí o no)
 ```
 

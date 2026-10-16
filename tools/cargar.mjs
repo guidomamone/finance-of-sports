@@ -239,8 +239,23 @@ export function perimetroCercano(her, year) {
 // Claude dio "no es rubro" con 0,85 a "Total Ingresos actividades ordinarias" 5.319,891 (pág. 14, L543): sin ella los ingresos sumaban 0,006.
 const frenaTieOut = (P) => (P.frena || []).some((f) => String(f.etapa).startsWith('tie-out'));
 const noRubroVerificadas = (P) => (P.filas || []).filter((f) => f.destino === 'excluida' && f.cat === 'no_es_rubro' && f.escalon === 2 && String(f.origen || '').startsWith('verificacion') && f.ladoDoc);
+// RESPUESTA DE LA COLA DEL OTRO LADO (to-do 237 f, ok de Guido). Una respuesta con una categoría del otro lado que la fila en el documento
+// (Nacional 2024 "Correções relativas a períodos anteriores", ingreso 229.792 en L793, contestada exceptional_items, que es de gastos) iba al
+// otro lado CAMBIANDO su efecto: un ingreso de 0,229792 quedaba como gasto de −0,229792 y el resultado no cerraba por el doble. Segunda
+// pasada, solo si la primera no cierra el resultado: esas filas se mudan como el ajuste `categoria` (sin cambiar su efecto: el ingreso queda
+// como gasto de +0,229792). COMPUERTA: con la mudanza, el resultado cierra contra el impreso exacto; si no, queda la primera pasada. Cuando la
+// primera ya cierra, no se prueba: ahí el lado del documento era el equivocado y la respuesta lo corrige (Tondela 2020-21, Chaves 2022-23,
+// Cuiabá 2024). Así sobran los ajustes `categoria` de Nacional 2024 y 2025, Académica 2023, Benfica 2006-07 y Sporting 2001-2006.
+const respuestasDelOtroLado = (P) => (P.filas || []).filter((f) => f.ladoContradictorio && f.fuenteCat === 'respuesta de Guido en la cola');
+const cierraResultado = (P) => !frenaTieOut(P) && P.totales?.verificacion?.pat === 'impreso';
 export async function proponerConEscalera(pdfArg, opts = {}) {
-  const P0 = await proponer(pdfArg, opts);
+  let P0 = await proponer(pdfArg, opts);
+  if (frenaTieOut(P0) && respuestasDelOtroLado(P0).length) {
+    const Pv = await proponer(pdfArg, { ...opts, voltearRespuestas: true, escribirCola: false });
+    const nombres = respuestasDelOtroLado(P0).map((f) => `"${f.label}" (${f.cat})`).join(', ');
+    if (cierraResultado(Pv)) { for (const c of Pv.casosPendientes || []) agregarCaso(c); Pv.avisos.push(`respuesta de la cola del otro lado: ${nombres} se mudan sin cambiar su efecto y el resultado cierra con el impreso (to-do 237 f)`); P0 = Pv; }
+    else P0.avisos.push(`respuesta de la cola del otro lado probada sin cambiar el efecto (${nombres}): tampoco cierra el resultado; queda como estaba`);
+  }
   if (!frenaTieOut(P0) || !noRubroVerificadas(P0).length) return P0;
   const P1 = await proponer(pdfArg, { ...opts, incluirNoRubro: true, escribirCola: false });
   const nombres = noRubroVerificadas(P0).map((f) => `"${f.label}"`).join(', ');
@@ -268,7 +283,7 @@ function porQueNoListo(e) {
   if (nc) return `la etapa 6 cerró, pero la etapa 4 dejó hasta ${nc} número(s) sin confirmar (${derivado(e.md, '.validacion.json', { crear: false })}, "noConfirmados"; ver to-do 160)`;
   return 'la etapa 6 cerró y la etapa 4 no deja números sin confirmar, pero el registro no se actualizó: correr el lote (la marca solo la pone el lote, ver to-do 160)';
 }
-export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false, escribirCola = true } = {}) {
+export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false, escribirCola = true, voltearRespuestas = false } = {}) {
   // (Versión 462) escribirCola false: el intento del escalón 1 no escribe casos en la cola; los deja en P.casosPendientes (se escriben si gana).
   const casosPendientes = [];
   const agregarCaso = (c) => (escribirCola ? agregarCasoCola(c) : casosPendientes.push(c));
@@ -648,6 +663,8 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     if (rg?.cat) {
       Object.assign(f, { cat: rg.cat, conf: 1, escalon: 0, fuenteCat: 'respuesta de Guido en la cola', enLista: true, notaGuido: rg.nota });
       const lado = ladoDeCat(rg.cat);
+      // (to-do 237 f) segunda pasada de proponerConEscalera: la respuesta del otro lado muda la fila como el ajuste `categoria`
+      if (voltearRespuestas && lado && r.tside && lado !== r.tside) { f.signoFijo = f.signoFijo !== undefined ? -f.signoFijo : -Math.abs(f.native); f.ladoDoc = lado; f.fuenteCat += ' (del otro lado: se muda sin cambiar su efecto, to-do 237 f)'; }
       if (lado && !aprendidasYa.includes(`"label":${JSON.stringify(r.label)},"padre":${JSON.stringify(padreDe(r.origen))},"glosa":null,"categoria":${JSON.stringify(rg.cat)},"confianza":1`)) appendFileSync(ARCHIVO_APRENDIDAS, JSON.stringify({ ts: new Date().toISOString(), club: clubId, year: year != null ? String(year) : null, lado, label: r.label, padre: padreDe(r.origen), glosa: null, categoria: rg.cat, confianza: 1, motivo: 'respuesta de Guido en la cola humana (cargar.mjs)', jevDecia: null, jevConf: null, modelo: 'guido', md: e.md }) + '\n');
     }
     if (rg?.choque) Object.assign(f, { conf: 0, escalon: 2, choque: rg.choque, fuenteCat: `${f.fuenteCat}; en ${rg.choqueDe} se aceptó ${rg.choque} con otra propuesta: no decide, segunda mirada (to-do 237 ad)` });

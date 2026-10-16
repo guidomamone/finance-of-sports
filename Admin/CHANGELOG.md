@@ -21,6 +21,8 @@ que dice `ESTADO.md` era verdad ese día.
   cola con su propuesta y la nota de lo aceptado (ad). Medido: 12 filas de 11 años ya publicados pasan a la cola; ninguna cambia sola.
 - cargar.mjs: "Outros" (y Otros, Others, Altri...) con la genérica de su lado se carga sin preguntar si el renglón que la abre no dice
   otra categoría (n). Medido: con la cola real, 7 filas de 4 documentos dejan la cola con la misma categoría; con la cola vacía, 24.
+- cargar.mjs: si no cierra el resultado, una respuesta de la cola del otro lado se prueba mudando la fila sin cambiar su efecto (f).
+  Medido: 733 idénticos; sin sus ajustes `categoria`, Nacional 2024 y 2025, Benfica 2006-07 y Sporting 2001 y 2003-04 cargan igual.
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)
 
