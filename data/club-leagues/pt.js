@@ -33,5 +33,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'uniaodeleiria-pt': { 2024: 'pt-ligaportugal2', 2023: 'pt-liga3' },
   'casapia-pt': { 2025: 'pt-primeiraliga', 2022: 'pt-ligaportugal2', 2023: 'pt-primeiraliga', 2024: 'pt-primeiraliga' },
   'mafra-pt': { 2024: 'pt-ligaportugal2' },
-  'avs-pt': { 2024: 'pt-ligaportugal2', 2021: null },
+  'avs-pt': { 2024: 'pt-ligaportugal2', 2021: null, 2023: null },
 });

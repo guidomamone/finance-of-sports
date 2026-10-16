@@ -106,6 +106,55 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2023–24 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "AVS".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/AVS/relatorio-contas-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/AVS/relatorio-contas-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Atividades Operacionais | pág. 26, precedente |
+| 2 | Receitas de Televisão | pág. 26, Jev 1 |
+| 3 | Receitas da Formação | pág. 26, precedente |
+| 4 | Subsidios à exploração | pág. 12, Jev 0.95 |
+| 5 | Outros rendimentos | pág. 12, Jev 0.95 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Serviços Especializados | pág. 24, Jev 0.98 |
+| 2 | Materiais | pág. 24, precedente |
+| 3 | Energia e Fluidos | pág. 24, Jev 1 |
+| 4 | Deslocações Estadas e Transportes | pág. 24, Jev 1 |
+| 5 | Serviços Diversos | pág. 24, Jev 0.98 |
+| 6 | Remunerações do pessoal | pág. 25, precedente |
+| 7 | Encargos sobre Remunerações | pág. 25, precedente |
+| 8 | Indemnizações | pág. 25, precedente |
+| 9 | Seguro Ac. Trab. e Doenças Prof. | pág. 25, precedente |
+| 10 | Gastos com ação social | pág. 25, precedente |
+| 11 | Outros gastos com Pessoal | pág. 25, precedente |
+| 12 | Impostos | pág. 25, precedente |
+| 13 | Outros | pág. 25, precedente |
+| 14 | Gastos/reversões de depreciação e de amortização | pág. 12, ? 0.65 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2023 (pt-primeiraliga, pt-ligaportugal2, pt-liga3): puede haber jugado otra división).
+```
+
 ## 2021
 
 ### Ingresos
@@ -173,4 +222,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/AVS/relatorio-contas-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### avs-pt-relatorio-contas-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/AVS/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

@@ -32,3 +32,5 @@ societaria con Aves.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf` (sourceId `avs-pt-relatorio-contas-2023-24`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2021 desde `Clubes/Portugal/AVS/relatorio-contas-2020-21.pdf` (sourceId `avs-pt-relatorio-contas-2020-21`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/AVS/relatorio-contas-2022-23.pdf` (sourceId `avs-pt-relatorio-contas-2022-23`).

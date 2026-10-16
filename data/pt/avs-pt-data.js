@@ -22,6 +22,13 @@ const avsptRevenueLinesByYear = {
     { rawLabel:'Rend. Ganhos em Invest. não Financeiros', normalizedCategory:'other_income', amountNative:0.02117, disclosureLevel:'aggregated' },
     { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.000832, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Atividades Operacionais', normalizedCategory:'lump_football_operations', amountNative:1.173315, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas de Televisão', normalizedCategory:'broadcasting', amountNative:0.405, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas da Formação', normalizedCategory:'youth_football', amountNative:0.0419, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsidios à exploração', normalizedCategory:'other_income', amountNative:0.2074, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:0.018144, disclosureLevel:'aggregated' },
+  ],
 };
 const avsptExpenseLinesByYear = {
   2024: [
@@ -65,6 +72,22 @@ const avsptExpenseLinesByYear = {
     { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.033367, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.01304, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Serviços Especializados', normalizedCategory:'admin_general_expense', amountNative:-0.601024, disclosureLevel:'aggregated' },
+    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.106726, disclosureLevel:'aggregated' },
+    { rawLabel:'Energia e Fluidos', normalizedCategory:'admin_general_expense', amountNative:-0.058604, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações Estadas e Transportes', normalizedCategory:'match_organisation_expense', amountNative:-0.264742, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços Diversos', normalizedCategory:'other_expenses', amountNative:-0.216322, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações do pessoal', normalizedCategory:'wages_squad', amountNative:-1.592087, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre Remunerações', normalizedCategory:'wages_squad', amountNative:-0.164473, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações', normalizedCategory:'wages_squad', amountNative:-0.090421, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguro Ac. Trab. e Doenças Prof.', normalizedCategory:'admin_general_expense', amountNative:-0.11337, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos com ação social', normalizedCategory:'wages_squad', amountNative:-0.073023, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos com Pessoal', normalizedCategory:'wages_squad', amountNative:-0.053338, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.001176, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.254759, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.018262, disclosureLevel:'aggregated' },
+  ],
 };
 const avsptFiscalYearMeta = {
   2024: {
@@ -100,6 +123,23 @@ const avsptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0.901186, officialTotalExpenses:2.920545, officialPAT:-2.031772,
   },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'avs-pt-relatorio-contas-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.009, tax:-0.010997,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.009},
+      {label:'Imposto sobre o rendimento do período', value:-0.010997},
+    ],
+    sinDesglose: [
+      {renglon:'Atividades Operacionais', lado:'revenue', importe:1.173315, motivo:'Claude 2026-10-16 (subagente Sonnet): nota 17 de rédito, prestação de serviços sin desglose (actividades operacionales) [relatorio-contas-2020-21.md L1093]'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:1.845759, officialTotalExpenses:3.608326, officialPAT:-1.782564,
+  },
 };
 const avsptPresupuestoOverlayByYear = {};
 
@@ -124,6 +164,11 @@ Object.assign(sources, {
   'avs-pt-relatorio-contas-2020-21': {
     id:'avs-pt-relatorio-contas-2020-21', clubId:'avs-pt',
     title:'AVS — relatorio-contas-2020-21 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'avs-pt-relatorio-contas-2022-23': {
+    id:'avs-pt-relatorio-contas-2022-23', clubId:'avs-pt',
+    title:'AVS — relatorio-contas-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
