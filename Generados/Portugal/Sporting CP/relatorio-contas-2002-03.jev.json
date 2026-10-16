@@ -1,0 +1,187 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.md",
+ "generatedAt": "2026-10-16T04:18:34.543Z",
+ "rubrosHuella": "5135260f59b3c19e1cea5e9168d0220f7f3a1325",
+ "rubros": [
+  {
+   "label": "Prestações de Serviços",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Subsídios à Exploração",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Proveitos Suplementares",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros Proveitos e Ganhos Operacionais",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ganhos em Imobiliz.",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Benefícios Contratuais",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Redução de Provisões",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Corr. R. Ex. Anterior.",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "O Prov. e G. Extraord.",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Fornecimentos e Serviços Externos",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Remunerações",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Corpóreo e Incorpóreo",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisões",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado",
+   "choice": "other_amortisation",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros Custos e Perdas Operacionais",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Donativos",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Perdas em Imobilizaç.",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+   "choice": "exceptional_items",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Multas e Penalidades",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "O. Custos P. Extraord.",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+   "choice": "exceptional_items",
+   "confidence": 0.51,
+   "desdeCache": true
+  }
+ ]
+}

@@ -3,18 +3,9 @@
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
  "club": "benfica-pt",
  "year": 2006,
- "generatedAt": "2026-10-16T04:15:23.078Z",
+ "generatedAt": "2026-10-16T17:13:25.626Z",
  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
  "rubros": [
-  {
-   "label": "Prestações de serviços",
-   "lado": "revenue",
-   "page": 20,
-   "section": "estado",
-   "values": [
-    38.644161
-   ]
-  },
   {
    "label": "Proveitos suplementares",
    "lado": "revenue",
@@ -49,6 +40,87 @@
    "section": "estado",
    "values": [
     11.442643
+   ]
+  },
+  {
+   "label": "Receitas de jogos",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "values": [
+    11.687937
+   ]
+  },
+  {
+   "label": "Transmissões televisivas",
+   "lado": "revenue",
+   "page": 11,
+   "section": "ajuste manual",
+   "values": [
+    7.625
+   ]
+  },
+  {
+   "label": "Patrocínios",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "values": [
+    8.13284
+   ]
+  },
+  {
+   "label": "Cessão de exploração do estádio – quotas sócios",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "values": [
+    6.542049
+   ]
+  },
+  {
+   "label": "Cativos",
+   "lado": "revenue",
+   "page": 11,
+   "section": "ajuste manual",
+   "values": [
+    2.482822
+   ]
+  },
+  {
+   "label": "Cedência de atletas",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "values": [
+    1.471521
+   ]
+  },
+  {
+   "label": "Receitas competições FPF",
+   "lado": "revenue",
+   "page": 11,
+   "section": "ajuste manual",
+   "values": [
+    0.349321
+   ]
+  },
+  {
+   "label": "Cachet's",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "values": [
+    0.25
+   ]
+  },
+  {
+   "label": "Outras",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "values": [
+    0.102671
    ]
   },
   {

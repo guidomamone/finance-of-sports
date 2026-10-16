@@ -1,37 +1,281 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
- "generado": "2026-10-15T22:34:49.130Z",
+ "generado": "2026-10-16T04:18:54.155Z",
  "frena": [
   {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 4 caso(s) en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Corr. R. Ex. Anterior.\" -> other_income 0; \"Corpóreo e Incorpóreo\" -> depreciation 0.6; \"Donativos\" -> other_expenses 0.75; \"Perdas em Imobilizaç.\" -> other_expenses 0.55; \"O. Custos P. Extraord.\" -> other_expenses 0.6"
   },
   {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (sportingcp-pt)"
-  },
-  {
-   "etapa": "año",
-   "motivo": "alta-club.mjs dice ejercicio 2002 y quien.mjs --quien (el que usa el registro) dice 2001"
-  },
-  {
-   "etapa": "alta:fx",
-   "motivo": "El documento declara un tipo de cambio con el dólar (0.9783 (línea 587: \"|  USD | 0,9783  |\")). En EUR el número solo no dice el sentido: el sitio guarda \"EUR por 1 USD\" (~0.7-1.15); si el documento escribió \"USD por 1 EUR\" hay que invertirlo. ¿Cuál es el de CIERRE y en qué sentido está?"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 4 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
-  "el documento cierra 2002-07-31 (ejercicio desde el 08-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?"
+  "el documento cierra 2002-07-31 (ejercicio desde el 08-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?",
+  "gastos: ningún total impreso igual a la suma de las líneas (-57.466); queda la suma, verificada por el resultado del ejercicio",
+  "gestión: ningún presidente confirmado cubre 2002 (cierre 2002-07-31); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "sportingcp-pt",
+  "year": 2002,
+  "cierre": "2002-07-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Prestações de Serviços",
+    "normalizedCategory": "other_income",
+    "amountNative": 21.477,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subsídios à Exploração",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proveitos Suplementares",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.874,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros Proveitos e Ganhos Operacionais",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.465,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ganhos em Imobiliz.",
+    "normalizedCategory": "other_income",
+    "amountNative": 13.413,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Benefícios Contratuais",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.028,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Redução de Provisões",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.12,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Corr. R. Ex. Anterior.",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.272,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado"
+   },
+   {
+    "rawLabel": "O Prov. e G. Extraord.",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.274,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Fornecimentos e Serviços Externos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -8.243,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Remunerações",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -27.335,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.084,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Corpóreo e Incorpóreo",
+    "normalizedCategory": "depreciation",
+    "amountNative": -17.898,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Provisões",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Impostos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.18,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros Custos e Perdas Operacionais",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.703,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Donativos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.019,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Perdas em Imobilizaç.",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.009,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Multas e Penalidades",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.058,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Corr. R. Ex. Anterior.",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.175,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "O. Custos P. Extraord.",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.937,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fx": 1.0222,
+   "fxSource": "manual",
+   "sourceId": "sportingcp-pt-relatorio-contas-2001",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -1.997,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Outros Juros e Proveitos Similares",
+     "value": 1.244
+    },
+    {
+     "label": "Juros e Custos Similares",
+     "value": -3.241
+    },
+    {
+     "label": "Imposto sobre o Rendimento do Exerc",
+     "value": 0
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 36.923,
+   "officialTotalExpenses": 57.466,
+   "officialPAT": -22.715
+  },
+  "source": {
+   "id": "sportingcp-pt-relatorio-contas-2001",
+   "clubId": "sportingcp-pt",
+   "title": "SPORTING - Sociedade Desportiva de Futebol, SAD — relatorio-contas-2001 (ejercicio 2002)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2001.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.md",
  "reemplaza": false,
  "periodo": {
@@ -44,5 +288,494 @@
  },
  "clubId": "sportingcp-pt",
  "year": 2002,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
+   "campo": "cierre",
+   "valor": "2002-07-31",
+   "linea": null,
+   "motivo": "periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)",
+   "evidencia": ".md L411 balanço em 31 de julho de 2002",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
+   "campo": "anio",
+   "valor": "2002",
+   "linea": null,
+   "motivo": "Claude 2026-10-16: el documento es el ejercicio del 1/8/2001 al 31/7/2002 (L17); la etiqueta sale del cierre: 2002. El nombre del archivo ('2001') hacía que el registro dijera 2001 y alta-club 2002",
+   "evidencia": "relatorio-contas-2001.md L17",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
+   "campo": "fx",
+   "valor": "1.0222",
+   "linea": null,
+   "motivo": "Claude 2026-10-16: la nota 4 da 1 EUR = 0,9783 USD al 31/07/2002; el sitio guarda EUR por 1 USD = 1/0,9783 = 1,0222",
+   "evidencia": "relatorio-contas-2001.md L582-587 (nota 4)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
+ "seleccion": {
+  "filas": 24,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Prestações de Serviços",
+   "page": 22,
+   "native": 21.477,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 21.477,
+   "cat": "other_income",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 21.477
+  },
+  {
+   "label": "Subsídios à Exploração",
+   "page": 22,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Proveitos Suplementares",
+   "page": 22,
+   "native": 0.874,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.874,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.874
+  },
+  {
+   "label": "Outros Proveitos e Ganhos Operacionais",
+   "page": 22,
+   "native": 0.465,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.465,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.465
+  },
+  {
+   "label": "Ganhos em Imobiliz.",
+   "page": 32,
+   "native": 13.413,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Proveitos e Ganhos Extraordinários\")",
+   "signoFijo": 13.413,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 13.413
+  },
+  {
+   "label": "Benefícios Contratuais",
+   "page": 32,
+   "native": 0.028,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Proveitos e Ganhos Extraordinários\")",
+   "signoFijo": 0.028,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.028
+  },
+  {
+   "label": "Redução de Provisões",
+   "page": 32,
+   "native": 0.12,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Proveitos e Ganhos Extraordinários\")",
+   "signoFijo": 0.12,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.12
+  },
+  {
+   "label": "Corr. R. Ex. Anterior.",
+   "page": 32,
+   "native": 0.272,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Proveitos e Ganhos Extraordinários\")",
+   "signoFijo": 0.272,
+   "cat": "other_income",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado",
+   "enLista": true,
+   "ladoRechazado": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 0.272
+  },
+  {
+   "label": "O Prov. e G. Extraord.",
+   "page": 32,
+   "native": 0.274,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Proveitos e Ganhos Extraordinários\")",
+   "signoFijo": 0.274,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.274
+  },
+  {
+   "label": "Fornecimentos e Serviços Externos",
+   "page": 22,
+   "native": 8.243,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 8.243,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -8.243
+  },
+  {
+   "label": "Remunerações",
+   "page": 22,
+   "native": 27.335,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 27.335,
+   "cat": "wages_squad",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -27.335
+  },
+  {
+   "label": "Outros",
+   "page": 22,
+   "native": 1.084,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.084,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.084
+  },
+  {
+   "label": "Corpóreo e Incorpóreo",
+   "page": 22,
+   "native": 17.898,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 17.898,
+   "cat": "depreciation",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -17.898
+  },
+  {
+   "label": "Provisões",
+   "page": 22,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_amortisation",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Impostos",
+   "page": 22,
+   "native": 0.18,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.18,
+   "cat": "admin_general_expense",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.18
+  },
+  {
+   "label": "Outros Custos e Perdas Operacionais",
+   "page": 22,
+   "native": 0.703,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.703,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.703
+  },
+  {
+   "label": "Donativos",
+   "page": 32,
+   "native": 0.019,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custos e Perdas Extraordinários\")",
+   "signoFijo": 0.019,
+   "cat": "other_expenses",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.019
+  },
+  {
+   "label": "Perdas em Imobilizaç.",
+   "page": 32,
+   "native": 0.009,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custos e Perdas Extraordinários\")",
+   "signoFijo": 0.009,
+   "cat": "other_expenses",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.009
+  },
+  {
+   "label": "Multas e Penalidades",
+   "page": 32,
+   "native": 0.058,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custos e Perdas Extraordinários\")",
+   "signoFijo": 0.058,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.058
+  },
+  {
+   "label": "Corr. R. Ex. Anterior.",
+   "page": 32,
+   "native": 0.175,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custos e Perdas Extraordinários\")",
+   "signoFijo": 0.175,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.175
+  },
+  {
+   "label": "O. Custos P. Extraord.",
+   "page": 32,
+   "native": 1.937,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custos e Perdas Extraordinários\")",
+   "signoFijo": 1.937,
+   "cat": "other_expenses",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.937
+  },
+  {
+   "label": "Outros Juros e Proveitos Similares",
+   "page": null,
+   "native": 1.244,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Juros e Custos Similares",
+   "page": null,
+   "native": -3.241,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposto sobre o Rendimento do Exerc",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Televisión",
+   "lado": "ingreso"
+  },
+  {
+   "categoria": "Estadio",
+   "lado": "ingreso"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Proveitos e Ganhos Extraordinários\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Custos e Perdas Extraordinários\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 36.923,
+  "expSum": -57.466,
+  "officialTotalRevenue": 36.923,
+  "officialTotalExpenses": 57.466,
+  "officialPAT": -22.715,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -22.715,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 36.923
+  }
+ },
+ "liga": {
+  "valor": "pt-primeiraliga",
+  "fuente": "roster cacheado de \"2002–03 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Sporting CP\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2002,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2002-07-31",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-15)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Portugal (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": 1.0222,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): Claude 2026-10-16: la nota 4 da 1 EUR = 0,9783 USD al 31/07/2002; el sitio guarda EUR por 1 USD = 1/0,9783 = 1,0222",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "sportingcp-pt-relatorio-contas-2001",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "pt-primeiraliga",
+   "fuente": "roster cacheado de \"2002–03 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Sporting CP\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 2,
+  "lineasIngreso": 9,
+  "lineasGasto": 12,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.md",
- "generado": "2026-10-16T04:15:23.103Z",
+ "generado": "2026-10-16T17:13:25.651Z",
  "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2007,
@@ -31,6 +31,17 @@
    "evidencia": "relatorio-contas-2006-07.md: sin estados consolidados; relatorio-contas-2023-24.md L1319",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.pdf",
+   "campo": "categoria",
+   "valor": "exceptional_items",
+   "linea": null,
+   "etiqueta": "Correcções relativas a exercícios anteriores",
+   "motivo": "Claude 2026-10-16 (lote 84): corrección de ejercicios anteriores del lado ingreso, ingreso extraordinario: exceptional_items (CONVENCIONES-DATOS), como Nacional 2024-25. Ajuste categoria para mudarla sin cambiarle el signo (to-do 237 f)",
+   "evidencia": "relatorio-contas-2006-07.md L1379",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "cola": [],

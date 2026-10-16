@@ -1,0 +1,221 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.md",
+ "generatedAt": "2026-10-16T04:18:35.193Z",
+ "rubrosHuella": "761cffdca5e29551c8186ded29bb1dd15fa880fc",
+ "rubros": [
+  {
+   "label": "Prestações de Serviços",
+   "lado": "revenue",
+   "page": 18,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Subsídios à Exploração",
+   "lado": "revenue",
+   "page": 18,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Proveitos Suplementares",
+   "lado": "revenue",
+   "page": 18,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros Proveitos e Ganhos Operacionais",
+   "lado": "revenue",
+   "page": 18,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Fornecimentos e Serviços Externos",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Remunerações",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Corpóreo e Incorpóreo",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisões",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "other_amortisation",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros Custos e Perdas Operacionais",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "O. P. Extraordinários",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Benef. Contratuais",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1106
+  },
+  {
+   "label": "Corr. Exer. Anteriores",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1111
+  },
+  {
+   "label": "G. Imobilizações",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Custos e Perdas Extraordinários",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "exceptional_items",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1070
+  }
+ ]
+}

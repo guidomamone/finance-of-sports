@@ -1,0 +1,229 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2003-04.md",
+ "generatedAt": "2026-10-16T04:18:34.878Z",
+ "rubrosHuella": "9d02d0fa10b2d81796f7f57c3debc4c62287d577",
+ "rubros": [
+  {
+   "label": "Prestações de Serviços",
+   "lado": "revenue",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Subsídios à Exploração",
+   "lado": "revenue",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Proveitos Suplementares",
+   "lado": "revenue",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros Proveitos e Ganhos Operacionais",
+   "lado": "revenue",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ganhos em Imobiliz.",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Benefícios Contratuais",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Redução de Provisões",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Fornecimentos e Serviços Externos",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Remunerações",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Corpóreo e Incorpóreo",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisões",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_amortisation",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros Custos e Perdas Operacionais",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Donativos",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Multas e Penalidades",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "O. Custos P. Extraord.",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+   "choice": "exceptional_items",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Perdas em Imobilização",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "exceptional_items",
+     0.34
+    ],
+    [
+     "player_impairment",
+     0.02
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Corr. R. Ex. Anterior",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "top3": [
+    [
+     "exceptional_items",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "O. Prov. e G. Extraord.",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1039
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.md",
- "generado": "2026-10-16T04:15:23.078Z",
+ "generado": "2026-10-16T17:13:25.625Z",
  "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2006,
@@ -29,6 +29,123 @@
    "linea": null,
    "motivo": "Relatório e contas anual del ejercicio 1/8/2005-31/7/2006, no un intermedio.",
    "evidencia": ".md L14, L204",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "11.687.937",
+   "linea": 1163,
+   "etiqueta": "Receitas de jogos",
+   "lado": "ingreso",
+   "reemplaza": "Prestações de serviços",
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "7.625.000",
+   "linea": 344,
+   "etiqueta": "Transmissões televisivas",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "8.132.840",
+   "linea": 1165,
+   "etiqueta": "Patrocínios",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "6.542.049",
+   "linea": 1166,
+   "etiqueta": "Cessão de exploração do estádio – quotas sócios",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "2.482.822",
+   "linea": 340,
+   "etiqueta": "Cativos",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "1.471.521",
+   "linea": 1168,
+   "etiqueta": "Cedência de atletas",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "349.321",
+   "linea": 347,
+   "etiqueta": "Receitas competições FPF",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "250.000",
+   "linea": 1170,
+   "etiqueta": "Cachet's",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "102.671",
+   "linea": 1171,
+   "etiqueta": "Outras",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
    "autor": "Claude",
    "fecha": "2026-10-16"
   }
@@ -68,6 +185,15 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Receitas de jogos\" (ingreso) 11.687.937, en lugar de \"Prestações de serviços\" (2026-10-16, Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota))",
+  "ajuste manual: fila \"Transmissões televisivas\" (ingreso) 7.625.000 (2026-10-16, Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota))",
+  "ajuste manual: fila \"Patrocínios\" (ingreso) 8.132.840 (2026-10-16, Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota))",
+  "ajuste manual: fila \"Cessão de exploração do estádio – quotas sócios\" (ingreso) 6.542.049 (2026-10-16, Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota))",
+  "ajuste manual: fila \"Cativos\" (ingreso) 2.482.822 (2026-10-16, Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota))",
+  "ajuste manual: fila \"Cedência de atletas\" (ingreso) 1.471.521 (2026-10-16, Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota))",
+  "ajuste manual: fila \"Receitas competições FPF\" (ingreso) 349.321 (2026-10-16, Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota))",
+  "ajuste manual: fila \"Cachet's\" (ingreso) 250.000 (2026-10-16, Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota))",
+  "ajuste manual: fila \"Outras\" (ingreso) 102.671 (2026-10-16, Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota))",
   "escalón \"acumulados\": \"(D)\" (L737) es \"(B)\" (L734) + \"Outros\" (L736); no se cuenta",
   "escalón \"acumulados\": \"(C)\" (L722) es \"(A)\" (L719) + \"Outros\" (L721); no se cuenta",
   "escalón \"acumulados\": \"(G)\" (L726) es \"(E)\" (L724) + \"Imposto sobre o rendimento do exercício\" (L725); no se cuenta",
@@ -91,14 +217,6 @@
   "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
-  {
-   "etiqueta": "Prestações de serviços",
-   "lado": "ingreso",
-   "M": 38.644161,
-   "pagina": 20,
-   "linea": 730,
-   "origen": "estado"
-  },
   {
    "etiqueta": "Proveitos suplementares",
    "lado": "ingreso",
@@ -130,6 +248,78 @@
    "pagina": 20,
    "linea": 738,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas de jogos",
+   "lado": "ingreso",
+   "M": 11.687937,
+   "pagina": 30,
+   "linea": 1163,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Transmissões televisivas",
+   "lado": "ingreso",
+   "M": 7.625,
+   "pagina": 11,
+   "linea": 344,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Patrocínios",
+   "lado": "ingreso",
+   "M": 8.13284,
+   "pagina": 30,
+   "linea": 1165,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Cessão de exploração do estádio – quotas sócios",
+   "lado": "ingreso",
+   "M": 6.542049,
+   "pagina": 30,
+   "linea": 1166,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Cativos",
+   "lado": "ingreso",
+   "M": 2.482822,
+   "pagina": 11,
+   "linea": 340,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Cedência de atletas",
+   "lado": "ingreso",
+   "M": 1.471521,
+   "pagina": 30,
+   "linea": 1168,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Receitas competições FPF",
+   "lado": "ingreso",
+   "M": 0.349321,
+   "pagina": 11,
+   "linea": 347,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Cachet's",
+   "lado": "ingreso",
+   "M": 0.25,
+   "pagina": 30,
+   "linea": 1170,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Outras",
+   "lado": "ingreso",
+   "M": 0.102671,
+   "pagina": 30,
+   "linea": 1171,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Fornecimentos e serviços externos",

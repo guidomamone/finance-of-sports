@@ -1,0 +1,235 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.md",
+ "generatedAt": "2026-10-16T04:18:35.849Z",
+ "rubrosHuella": "24cc8409e8dd22de9a4bc72b3d3dc93b078dd366",
+ "rubros": [
+  {
+   "label": "Prestações de Serviços",
+   "lado": "revenue",
+   "page": 19,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Subsídios à Exploração",
+   "lado": "revenue",
+   "page": 19,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Proveitos Suplementares",
+   "lado": "revenue",
+   "page": 19,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros Proveitos e Ganhos Operacionais",
+   "lado": "revenue",
+   "page": 19,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "O. P. EXTRAORDINAR.",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Fornecimentos e Serviços Externos",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Remunerações",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros Custos e Perdas Operacionais",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Custos e Perdas Extraordinários",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "BENEF. CONTRATIAIS",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 981
+  },
+  {
+   "label": "CONR. EX. ANTERIORES",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1112
+  },
+  {
+   "label": "Ajustamento de Dívidas de Clientes",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Encargos Sociais",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Provisões do Exercício",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "other_amortisation",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_amortisation",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Amortizações de Imob. Corpóreas e Incorpóreas",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     0.99
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1087
+  }
+ ]
+}

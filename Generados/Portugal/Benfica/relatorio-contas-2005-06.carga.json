@@ -1,24 +1,214 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
- "generado": "2026-10-16T01:51:14.712Z",
+ "generado": "2026-10-16T04:18:53.558Z",
  "frena": [
   {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Prestações de serviços\" -> lump_football_operations 0.5; \"Remunerações\" -> wages_squad 0.75; \"Ajustamentos\" -> other_amortisation 0.55"
   }
  ],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 2: 2009-2019 traen consolidado e individual lado a lado y las controladas (Benfica Estádio, Benfica TV) hacen negocio del fútbol del club (estadio, canal))"
+  "perímetro: consolidado (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 2: 2009-2019 traen consolidado e individual lado a lado y las controladas (Benfica Estádio, Benfica TV) hacen negocio del fútbol del club (estadio, canal))",
+  "gastos: ningún total impreso igual a la suma de las líneas (-55.986409); queda la suma, verificada por el resultado del ejercicio",
+  "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo",
+  "gestión: ningún presidente confirmado cubre 2006 (cierre 2006-06-30); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "benfica-pt",
+  "year": 2006,
+  "cierre": "2006-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Prestações de serviços",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 38.644161,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proveitos suplementares",
+    "normalizedCategory": "other_income",
+    "amountNative": 12.765682,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subsídios à exploração",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.028136,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros proveitos e ganhos operacionais",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.5625,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proveitos e ganhos extraordinários",
+    "normalizedCategory": "other_income",
+    "amountNative": 11.442643,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Fornecimentos e serviços externos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -12.477445,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Remunerações",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -27.497682,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -3.38139,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortizações do imobilizado corpóreo e incorpóreo",
+    "normalizedCategory": "depreciation",
+    "amountNative": -10.73711,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ajustamentos",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -0.104379,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Provisões",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -1.291943,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Impostos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.392925,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros custos e perdas operacionais",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.103535,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Custos e perdas extraordinários",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -3.61037,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2006-06-30",
+   "sourceId": "benfica-pt-relatorio-contas-2005-06",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -5.041071,
+   "tax": -0.026196,
+   "extraRows": [
+    {
+     "label": "Outros",
+     "value": -5.086831
+    },
+    {
+     "label": "Outros",
+     "value": 0.04576
+    },
+    {
+     "label": "Imposto sobre o rendimento do exercício",
+     "value": -0.026196
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Prestações de serviços",
+     "lado": "revenue",
+     "importe": 38.644161,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 63.443122,
+   "officialTotalExpenses": 55.986409,
+   "officialPAT": -1.220924
+  },
+  "source": {
+   "id": "benfica-pt-relatorio-contas-2005-06",
+   "clubId": "benfica-pt",
+   "title": "Sport Lisboa e Benfica – Futebol, SAD — relatorio-contas-2005-06 (ejercicio 2006)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2005-06.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.md",
  "reemplaza": false,
  "periodo": {
@@ -34,5 +224,373 @@
  },
  "clubId": "benfica-pt",
  "year": 2006,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "estado",
+   "valor": "b9",
+   "linea": null,
+   "motivo": "localizar.mjs dudó de la fecha y no eligió estado, pero el informe es del ejercicio 2005/2006 (cierre 31/07/2006) y trae la Demonstração dos Resultados por naturezas en euros, individual (la SAD no consolidaba).",
+   "evidencia": "relatorio-contas-2005-06.md L702-748 (pág. 20 del visor, impreso 18-19); resultado líquido (1.220.924)",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Relatório e contas anual del ejercicio 1/8/2005-31/7/2006, no un intermedio.",
+   "evidencia": ".md L14, L204",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
+ "seleccion": {
+  "filas": 17,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Prestações de serviços",
+   "page": 20,
+   "native": 38.644161,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 38.644161,
+   "cat": "lump_football_operations",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 38.644161
+  },
+  {
+   "label": "Proveitos suplementares",
+   "page": 20,
+   "native": 12.765682,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 12.765682,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 12.765682
+  },
+  {
+   "label": "Subsídios à exploração",
+   "page": 20,
+   "native": 0.028136,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.028136,
+   "cat": "other_income",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.028136
+  },
+  {
+   "label": "Outros proveitos e ganhos operacionais",
+   "page": 20,
+   "native": 0.5625,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.5625,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.5625
+  },
+  {
+   "label": "Proveitos e ganhos extraordinários",
+   "page": 20,
+   "native": 11.442643,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 11.442643,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 11.442643
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "page": 20,
+   "native": 12.477445,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 12.477445,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -12.477445
+  },
+  {
+   "label": "Remunerações",
+   "page": 20,
+   "native": 27.497682,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 27.497682,
+   "cat": "wages_squad",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -27.497682
+  },
+  {
+   "label": "Outros",
+   "page": 20,
+   "native": 3.38139,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.38139,
+   "cat": "other_expenses",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.38139
+  },
+  {
+   "label": "Amortizações do imobilizado corpóreo e incorpóreo",
+   "page": 20,
+   "native": 10.73711,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 10.73711,
+   "cat": "depreciation",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -10.73711
+  },
+  {
+   "label": "Ajustamentos",
+   "page": 20,
+   "native": 0.104379,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.104379,
+   "cat": "other_amortisation",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.104379
+  },
+  {
+   "label": "Provisões",
+   "page": 20,
+   "native": 1.291943,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.291943,
+   "cat": "other_amortisation",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.291943
+  },
+  {
+   "label": "Impostos",
+   "page": 20,
+   "native": 0.392925,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.392925,
+   "cat": "admin_general_expense",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.392925
+  },
+  {
+   "label": "Outros custos e perdas operacionais",
+   "page": 20,
+   "native": 0.103535,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.103535,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.103535
+  },
+  {
+   "label": "Custos e perdas extraordinários",
+   "page": 20,
+   "native": 3.61037,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.61037,
+   "cat": "exceptional_items",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.61037
+  },
+  {
+   "label": "Outros",
+   "page": null,
+   "native": -5.086831,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": "other_expenses",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Outros",
+   "page": null,
+   "native": 0.04576,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": "other_expenses",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposto sobre o rendimento do exercício",
+   "page": null,
+   "native": -0.026196,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 63.443122,
+  "expSum": -55.986409,
+  "officialTotalRevenue": 63.443122,
+  "officialTotalExpenses": 55.986409,
+  "officialPAT": -1.220924,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -1.220924,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 63.443122
+  }
+ },
+ "liga": {
+  "valor": "pt-primeiraliga",
+  "fuente": "roster cacheado de \"2005–06 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Benfica\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2006,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2006-06-30",
+   "fuente": "año del ejercicio + mes de cierre (los demás .md del club (16 de 17 documentos cierran en el mes 6); este documento no alcanza solo)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): Relatório e contas anual del ejercicio 1/8/2005-31/7/2006, no un intermedio.",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-15)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Portugal (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": null,
+   "fuente": "el .md menciona tipo de cambio y dólar con números en 2 línea(s), pero ninguno es una cotización plausible",
+   "estado": "pendiente"
+  },
+  "fxRef": {
+   "valor": "EUR@2006-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2006-06-30 = 0.786596 (Tipo de referencia del Banco Central Europeo al 2006-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "benfica-pt-relatorio-contas-2005-06",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "pt-primeiraliga",
+   "fuente": "roster cacheado de \"2005–06 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Benfica\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 5,
+  "lineasGasto": 9,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }
