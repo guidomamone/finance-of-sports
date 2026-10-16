@@ -331,6 +331,10 @@ function checkLineas(api) {
     for (const [sec, lines] of [['ingreso', rev], ['gasto', exp]]) {
       const vistos = new Map();
       for (const l of lines) {
+        // (to-do 237 aa) "Diferencia de redondeo" no es una copia pegada: verificar.mjs agrega una por cada nota que abre un renglón y
+        // no suma exacto al centavo (±media unidad impresa), así que dos con el mismo ±0,001 son legítimas. Caso: Sporting 2017-18
+        // (personal −0,001, provisiones −0,001, otros gastos +0,001, plantel +0,001), que la guarda revertía aunque los totales cierran.
+        if (l.rawLabel === 'Diferencia de redondeo') continue;
         const prev = vistos.get(l.rawLabel);
         if (prev != null) {
           const sev = prev === l.amountNative ? 'P1' : 'P3';
