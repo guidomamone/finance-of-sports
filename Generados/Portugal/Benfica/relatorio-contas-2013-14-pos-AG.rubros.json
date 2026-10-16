@@ -2,8 +2,8 @@
   "md": "Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.md",
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.pdf",
   "club": "benfica-pt",
-  "year": 2017,
-  "generatedAt": "2026-10-15T23:54:53.216Z",
+  "year": 2014,
+  "generatedAt": "2026-10-16T00:30:33.535Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         8.35
       ],
-      "glosa": "Hospitalidad y palcos corporativos"
+      "glosa": "Ingresos corporativos"
     },
     {
       "label": "RECEITAS DE BILHETEIRA",
@@ -64,7 +64,7 @@
       "values": [
         2.967
       ],
-      "glosa": "Alquiler de espacios"
+      "glosa": "Alquileres de espacios"
     },
     {
       "label": "CATIVOS",
@@ -74,7 +74,7 @@
       "values": [
         2.068
       ],
-      "glosa": "Abonos de asientos reservados"
+      "glosa": "Asientos reservados"
     },
     {
       "label": "BILHETES DE ÉPOCA",
@@ -144,7 +144,7 @@
       "values": [
         1.4
       ],
-      "glosa": "Regalías y royalties"
+      "glosa": "Cánones y royalties"
     },
     {
       "label": "ASSISTÊNCIA TÉCNICA",
@@ -184,7 +184,7 @@
       "values": [
         63.833
       ],
-      "glosa": "Enajenaciones de derechos de futbolistas"
+      "glosa": "Enajenaciones de derechos de deportistas"
     },
     {
       "label": "CEDÊNCIA DE DIREITOS BENFICA STARS FUND",
@@ -204,7 +204,7 @@
       "values": [
         1.934
       ],
-      "glosa": "Cesiones temporales de futbolistas"
+      "glosa": "Cesiones temporales de deportistas"
     },
     {
       "label": "FUNDO DE SOLIDARIEDADE",
@@ -214,7 +214,7 @@
       "values": [
         1.119
       ],
-      "glosa": "Mecanismo de solidaridad"
+      "glosa": "Fondo de solidaridad"
     },
     {
       "label": "OUTROS RENDIMENTOS E GANHOS",
@@ -234,7 +234,7 @@
       "values": [
         0.137
       ],
-      "glosa": "Participación en beneficios de entidades asociadas"
+      "glosa": "Resultados de inversiones en asociadas"
     },
     {
       "label": "TRABALHOS ESPECIALIZADOS",
@@ -244,7 +244,7 @@
       "values": [
         5.248
       ],
-      "glosa": "Servicios de especialistas y profesionales independientes"
+      "glosa": "Trabajos especializados"
     },
     {
       "label": "DESLOCAÇÕES E ESTADAS",
@@ -264,7 +264,7 @@
       "values": [
         2.54
       ],
-      "glosa": "Honorarios profesionales"
+      "glosa": "Honorarios"
     },
     {
       "label": "CONSERVAÇÃO E REPARAÇÃO",
@@ -274,7 +274,7 @@
       "values": [
         2.186
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "SERVIÇOS DE CATERING/SOFTDRINK",
@@ -284,7 +284,7 @@
       "values": [
         2.067
       ],
-      "glosa": "Servicios de catering y refrescos"
+      "glosa": "Servicios de catering y bebidas"
     },
     {
       "label": "EQUIPAMENTO DESPORTIVO",
@@ -294,7 +294,7 @@
       "values": [
         1.609
       ],
-      "glosa": "Material y equipamiento deportivo"
+      "glosa": "Material deportivo"
     },
     {
       "label": "SUBCONTRATOS",
@@ -304,7 +304,7 @@
       "values": [
         1.513
       ],
-      "glosa": "Subcontrataciones"
+      "glosa": "Subcontratación"
     },
     {
       "label": "ELECTRICIDADE",
@@ -324,7 +324,7 @@
       "values": [
         1.239
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "VIDILÂNCIA E SEGURANÇA",
@@ -384,7 +384,7 @@
       "values": [
         0.612
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "ÁGUA E OUTROS FLUÍDOS",
@@ -424,7 +424,7 @@
       "values": [
         0.459
       ],
-      "glosa": "Retribuciones fijas"
+      "glosa": "Remuneraciones fijas"
     },
     {
       "label": "REMUNERAÇÕES VARIÁVEIS/PRÉMIOS",
@@ -434,7 +434,7 @@
       "values": [
         0.07
       ],
-      "glosa": "Retribuciones variables y primas"
+      "glosa": "Remuneraciones variables y primas"
     },
     {
       "label": "REMUNERAÇÕES FIXAS",
@@ -444,7 +444,7 @@
       "values": [
         43.943
       ],
-      "glosa": "Retribuciones fijas"
+      "glosa": "Remuneraciones fijas"
     },
     {
       "label": "REMUNERAÇÕES VARIÁVEIS/PRÉMIOS",
@@ -454,7 +454,7 @@
       "values": [
         10.081
       ],
-      "glosa": "Retribuciones variables y primas"
+      "glosa": "Remuneraciones variables y primas"
     },
     {
       "label": "INDEMNIZAÇÕES",
@@ -474,7 +474,7 @@
       "values": [
         0.223
       ],
-      "glosa": "Retribuciones a largo plazo y postempleo"
+      "glosa": "Retribuciones post-empleo"
     },
     {
       "label": "ENCARGOS SOBRE REMUNERAÇÕES",
@@ -484,7 +484,7 @@
       "values": [
         4.809
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales"
     },
     {
       "label": "SEGUROS DE ACIDENTES DE TRABALHO",
@@ -494,7 +494,7 @@
       "values": [
         2.153
       ],
-      "glosa": "Seguros de accidentes de trabajo"
+      "glosa": "Seguros de accidentes laborales"
     },
     {
       "label": "OUTROS GASTOS COM PESSOAL",
@@ -524,7 +524,7 @@
       "values": [
         1.359
       ],
-      "glosa": "Instalaciones técnicas y equipamiento"
+      "glosa": "Instalaciones técnicas y maquinaria"
     },
     {
       "label": "EQUIPAMENTO DE TRANSPORTE",
@@ -604,7 +604,7 @@
       "values": [
         0.314
       ],
-      "glosa": "Dotación a provisiones para otros riesgos"
+      "glosa": "Dotación de provisiones para otros riesgos"
     },
     {
       "label": "REDUÇÃO DE PROVISÕES PARA OUTROS RISCOS",
@@ -624,7 +624,7 @@
       "values": [
         -0.249
       ],
-      "glosa": "Reversión de deterioro de créditos comerciales y deudores"
+      "glosa": "Reversión de pérdidas por deterioro de clientes y deudores"
     },
     {
       "label": "IMPOSTOS",
@@ -654,7 +654,7 @@
       "values": [
         28.352
       ],
-      "glosa": "Amortización de derechos federativos de futbolistas"
+      "glosa": "Amortizaciones de derechos de deportistas"
     },
     {
       "label": "REFORÇO DE IMPARIDADE",
@@ -674,7 +674,7 @@
       "values": [
         -0.285
       ],
-      "glosa": "Reversión de pérdidas por deterioro de valor"
+      "glosa": "Reversiones por deterioro de valor"
     },
     {
       "label": "GASTOS COM TRANSFERÊNCIA DE ATLETAS",
@@ -684,7 +684,7 @@
       "values": [
         6.144
       ],
-      "glosa": "Gastos por transferencias de futbolistas"
+      "glosa": "Gastos por transferencias de deportistas"
     },
     {
       "label": "CEDÊNCIAS TEMPORÁRIAS DE ATLETAS",
@@ -694,7 +694,7 @@
       "values": [
         2.083
       ],
-      "glosa": "Cesiones temporales de futbolistas"
+      "glosa": "Cesiones temporales de deportistas"
     },
     {
       "label": "FUNDO DE SOLIDARIEDADE",
@@ -704,7 +704,7 @@
       "values": [
         0.277
       ],
-      "glosa": "Mecanismo de solidaridad"
+      "glosa": "Fondo de solidaridad"
     },
     {
       "label": "ABATES DE DIREITOS DE ATLETAS",
@@ -714,7 +714,7 @@
       "values": [
         0.223
       ],
-      "glosa": "Bajas de derechos federativos de futbolistas"
+      "glosa": "Bajas de derechos de deportistas"
     },
     {
       "label": "ALIENAÇÕES DE DIREITOS DE ATLETAS",
@@ -724,7 +724,7 @@
       "values": [
         0.129
       ],
-      "glosa": "Enajenaciones de derechos de futbolistas"
+      "glosa": "Enajenaciones de derechos de deportistas"
     },
     {
       "label": "OUTROS GASTOS E PERDAS",

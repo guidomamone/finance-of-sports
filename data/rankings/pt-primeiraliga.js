@@ -188,4 +188,12 @@ window.RANKINGS["pt-primeiraliga"] = {
         mix:[["Cuotas Sociales",3.326],["Comercial / Sponsors",11.344],["Estadio",11.135],["Televisión",15.784],["Premios por competencias",5.907],["Venta de Jugadores",7.451],["Otros ingresos",3.448]] },
     ],
   },
+  2010: {
+    leagueSize: null,
+    clubs: [
+      { id:"benfica-pt", revenue:107.208, reportType:"official_balance_sheet",
+        sourceId:"benfica-pt-prestacao-contas-2010-11-11",
+        mix:[["Cuotas Sociales",11.022],["Comercial / Sponsors",18.28],["Estadio",25.86],["Televisión",10.853],["Premios por competencias",4.229],["Venta de Jugadores",26.836],["Otros ingresos",10.128]] },
+    ],
+  },
 };

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2023-24.pdf",
   "club": "benfica-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T23:54:38.255Z",
+  "generatedAt": "2026-10-16T00:30:33.709Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         50.463
       ],
-      "glosa": "Ingresos por retransmisión televisiva"
+      "glosa": "Ingresos por televisión"
     },
     {
       "label": "Prémios da UEFA",
@@ -54,7 +54,7 @@
       "values": [
         4.777
       ],
-      "glosa": "Alquiler de espacios"
+      "glosa": "Arrendamientos de espacios"
     },
     {
       "label": "Royalties",
@@ -64,7 +64,7 @@
       "values": [
         4.205
       ],
-      "glosa": "Regalías"
+      "glosa": "Royalties"
     },
     {
       "label": "Outras receitas",
@@ -84,7 +84,7 @@
       "values": [
         15.248
       ],
-      "glosa": "Corporativo / Hospitality"
+      "glosa": "Corporate"
     },
     {
       "label": "Bilhetes de época",
@@ -144,7 +144,7 @@
       "values": [
         0.99
       ],
-      "glosa": "Otros ingresos por transferencias de derechos de deportistas"
+      "glosa": "Otros ingresos por transacciones de derechos de deportistas"
     },
     {
       "label": "Gestão operacional do estádio",
@@ -244,7 +244,7 @@
       "values": [
         1.182
       ],
-      "glosa": "Limpieza, higiene y mantenimiento"
+      "glosa": "Limpieza, higiene y confort"
     },
     {
       "label": "Publicidade e propaganda",
@@ -264,7 +264,7 @@
       "values": [
         1.05
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Conservação e reparação",
@@ -274,7 +274,7 @@
       "values": [
         1.033
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Associações, Federações e Liga",
@@ -354,7 +354,7 @@
       "values": [
         0.042
       ],
-      "glosa": "Retribuciones post-empleo"
+      "glosa": "Beneficios post-empleo"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -404,7 +404,7 @@
       "values": [
         0.325
       ],
-      "glosa": "Instalaciones técnicas y equipamiento"
+      "glosa": "Equipamiento básico"
     },
     {
       "label": "Equipamento de transporte",
@@ -424,7 +424,7 @@
       "values": [
         0.377
       ],
-      "glosa": "Equipamiento de oficina y mobiliario"
+      "glosa": "Equipamiento administrativo"
     },
     {
       "label": "Direitos de uso",
@@ -444,7 +444,7 @@
       "values": [
         1.52
       ],
-      "glosa": "Derecho de uso de marca"
+      "glosa": "Derecho de utilización de la marca"
     },
     {
       "label": "Programas de computador",
@@ -454,7 +454,7 @@
       "values": [
         1.466
       ],
-      "glosa": "Aplicaciones informáticas"
+      "glosa": "Programas informáticos"
     },
     {
       "label": "Provisões/Imparidades (2)",
@@ -494,7 +494,7 @@
       "values": [
         8.366
       ],
-      "glosa": "Gastos asociados a la enajenación de derechos de deportistas (comisiones)"
+      "glosa": "Gastos asociados a enajenaciones de derechos de deportistas (comisiones)"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -534,7 +534,7 @@
       "values": [
         3.714
       ],
-      "glosa": "Pérdidas por deterioro de valor de derechos de deportistas"
+      "glosa": "Pérdidas por deterioro de derechos de deportistas"
     }
   ]
 }

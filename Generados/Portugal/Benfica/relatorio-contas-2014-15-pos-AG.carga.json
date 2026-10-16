@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.pdf",
- "generado": "2026-10-16T00:11:49.513Z",
+ "generado": "2026-10-16T00:46:03.302Z",
  "frena": [
   {
    "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
   },
   {
    "etapa": "categorizacion",
@@ -12,7 +12,7 @@
   },
   {
    "etapa": "filas",
-   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [

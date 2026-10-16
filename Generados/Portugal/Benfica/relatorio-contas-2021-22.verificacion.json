@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.md",
- "generado": "2026-10-15T23:54:38.208Z",
+ "generado": "2026-10-16T00:30:33.667Z",
  "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2022,
@@ -21,6 +21,16 @@
    "evidencia": "relatorio-contas-2021-22.md: sin estados consolidados; relatorio-contas-2023-24.md L1319",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.pdf",
+   "campo": "fx",
+   "valor": "0.9627",
+   "linea": null,
+   "motivo": "el documento da 1 EUR = 1,0387 USD al 30/06/2022 (cierre BCE); el sitio guarda EUR por 1 USD = 1/1,0387 = 0,9627, igual que AC Milan 2021-22",
+   "evidencia": ".md L5703",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "cola": [],

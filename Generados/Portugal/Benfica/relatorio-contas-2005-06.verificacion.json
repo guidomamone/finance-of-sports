@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.md",
- "generado": "2026-10-15T23:54:39.165Z",
+ "generado": "2026-10-16T00:30:34.447Z",
  "estado": "cola",
  "clubId": "benfica-pt",
  "year": 2006,
@@ -21,12 +21,20 @@
    "evidencia": "relatorio-contas-2005-06.md L702-748 (pág. 20 del visor, impreso 18-19); resultado líquido (1.220.924)",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Relatório e contas anual del ejercicio 1/8/2005-31/7/2006, no un intermedio.",
+   "evidencia": ".md L14, L204",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "cola": [
-  "32d8f2e",
-  "e2a0539",
-  "857d865"
+  "32d8f2e"
  ],
  "chequeos": [
   {
@@ -57,7 +65,9 @@
   }
  ],
  "notas": [
-  "duda de localizar que no afecta la carga: La nota 16 (b15) indica que las cuentas de la SAD se incluirán en la consolidación del Sport Lisboa e Benfica, lo que sugiere que estas son individuales, mientras el club usa consolidado."
+  "duda de localizar ya contestada para el club (cuadro-de-otro-anio, \"-\"): aceptar, en relatorio-contas-2013-14-pos-AG.pdf",
+  "duda de localizar que no afecta la carga: La nota 16 (b15) indica que las cuentas de la SAD se incluirán en la consolidación del Sport Lisboa e Benfica, lo que sugiere que estas son individuales, mientras el club usa consolidado.",
+  "duda de extraer ya contestada para el club (columna, \"-\"): aceptar, en relatorio-contas-2005-06.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

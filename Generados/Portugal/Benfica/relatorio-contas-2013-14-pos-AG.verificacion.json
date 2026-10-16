@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.md",
- "generado": "2026-10-15T23:54:53.216Z",
- "estado": "cola",
+ "generado": "2026-10-16T00:30:33.535Z",
+ "estado": "ok",
  "clubId": "benfica-pt",
- "year": 2017,
+ "year": 2014,
  "escala": {
   "valor": "miles",
   "escalon": 0,
@@ -23,13 +23,7 @@
    "fecha": "2026-10-15"
   }
  ],
- "cola": [
-  "758b332",
-  "aaccda0",
-  "d3ec7b3",
-  "703b4c5",
-  "93b232d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -53,24 +47,14 @@
    "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
   },
   {
-   "nombre": "documento del año 2018",
-   "ok": false,
-   "detalle": "ingresos de 2017: 180.752 en este documento y 251.23 en relatorio-contas-2017-18.pdf (columna del año anterior)"
-  },
-  {
-   "nombre": "documento del año 2016",
-   "ok": false,
-   "detalle": "ingresos de 2016: 207.968 en relatorio-contas-2015-16.pdf y 139.772 en este documento (columna del año anterior)"
+   "nombre": "documento del año 2015",
+   "ok": true,
+   "detalle": "ingresos de 2014: 180.752 en este documento y 180.615 en relatorio-contas-2014-15-pos-AG.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "detalle": "el sitio no tiene 2013: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -87,7 +71,7 @@
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (cuadro-de-otro-anio, \"-\"): aceptar, en relatorio-contas-2013-14-pos-AG.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -710,93 +694,5 @@
    "M": 0.121,
    "linea": 2578
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "e6aa77ee7b7b2f767457131f059d333aec9d4f6f",
-  "rango": [
-   2555,
-   2582
-  ],
-  "lineasCargadas": [
-   3583,
-   3584,
-   3585,
-   3586,
-   3587,
-   3588,
-   3589,
-   3590,
-   3591,
-   3592,
-   3593,
-   3652,
-   3653,
-   3654,
-   3655,
-   3656,
-   3657,
-   3939,
-   3940,
-   3941,
-   3942,
-   3943,
-   2576,
-   3682,
-   3683,
-   3684,
-   3685,
-   3686,
-   3687,
-   3688,
-   3689,
-   3690,
-   3691,
-   3692,
-   3693,
-   3694,
-   3695,
-   3696,
-   3697,
-   3698,
-   3700,
-   3743,
-   3744,
-   3746,
-   3747,
-   3748,
-   3749,
-   3750,
-   3751,
-   3752,
-   3831,
-   3832,
-   3833,
-   3834,
-   3835,
-   3836,
-   3839,
-   3840,
-   3843,
-   3866,
-   3867,
-   3871,
-   3897,
-   3898,
-   3915,
-   3917,
-   3918,
-   3946,
-   3947,
-   3948,
-   3949,
-   3950,
-   3951,
-   2574,
-   2575,
-   2578
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 2555 a 2582 del .md):\nL2555: | --- | --- | --- | --- | --- | --- |\nL2556: |   |   |  30.06.14 | 30.06.13 | 30.06.14 | 30.06.13  |\nL2557: |  **RENDIMENTOS E GANHOS OPERACIONAIS**  |   |   |   |   |   |\nL2558: |  PRESTAÇÃO DE SERVIÇOS | 5 | 75.906 | 58.862 | 60.203 | 43.917  |\nL2559: |  OUTROS RENDIMENTOS E GANHOS OPERACIONAIS ^{(1)} | 6 | 29.133 | 27.079 | 27.636 | 26.617  |\nL2560: |   |  | **105.039** | **85.941** | **87.839** | **70.534**  |\nL2561: |  **GASTOS E PERDAS OPERACIONAIS**  |   |   |   |   |   |\nL2562: |  FORNECIMENTOS E SERVIÇOS DE TERCEIROS | 7 | (31.804) | (26.583) | (31.687) | (20.187)  |\nL2563: |  GASTOS COM PESSOAL | 8 | (63.181) | (50.431) | (58.556) | (48.140)  |\nL2564: |  DEPRECIAÇÕES/AMORTIZAÇÕES ^{(2)} | 9 | (13.883) | (8.932) | (1.810) | (1.820)  |\nL2565: |  PROVISÕES/IMPARIDADES ^{(3)} | 10 | 2.251 | (2.076) | 711 | (4.860)  |\nL2566: |  OUTROS GASTOS E PERDAS OPERACIONAIS ^{(4)} | 11 | (2.539) | (4.551) | (2.088) | (3.227)  |\nL2567: |   |  | **(109.156)** | **(92.573)** | **(93.430)** | **(78.234)**  |\nL2568: |  **RESULTADOS OPERACIONAIS SEM ATLETAS ^{(5)(6)(7)}** |  | **(4.117)** | **(6.632)** | **(5.591)** | **(7.700)**  |\nL2569: |  AMORTIZAÇÕES E PERDAS DE IMPARIDADE DE DIREITOS DE ATLETAS | 12 | (28.902) | (29.520) | (28.902) | (29.520)  |\nL2570: |  RENDIMENTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS | 13 | 75.576 | 53.831 | 75.576 | 53.831  |\nL2571: |  GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS | 13 | (9.031) | (10.605) | (9.031) | (10.605)  |\nL2572: |  **RESULTADOS COM ATLETAS** |  | **37.643** | **13.706** | **37.643** | **13.706**  |\nL2573: |  **RESULTADOS OPERACIONAIS** |  | **33.526** | **7.074** | **32.052** | **6.006**  |\nL2574: |  RENDIMENTOS E GANHOS FINANCEIROS | 14 | 4.086 | 5.237 | 3.557 | 4.654  |\nL2575: |  GASTOS E PERDAS FINANCEIROS | 14 | (23.705) | (22.691) | (20.380) | (19.733)  |\nL2576: |  RESULTADOS RELATIVOS A INVESTIMENTOS EM ASSOCIADAS | 15 | 137 | (369) | 130 | (369)  |\nL2577: |  **RESULTADOS ANTES DE IMPOSTOS** |  | **14.044** | **(10.749)** | **15.359** | **(9.442)**  |\nL2578: |  IMPOSTO SOBRE O RENDIMENTO | 16 | 121 | 355 | (221) | (216)  |\nL2579: |  **RESULTADO LÍQUIDO DO PERÍODO** |  | **14.165** | **(10.394)** | **15.138** | **(9.658)**  |\nL2580: |  RESULTADO POR AÇÃO BÁSICO/DILUÍDO (EM EUROS) |  | 0,62 | (0,45) | 0,66 | (0,42)  |\nL2582: $^{(1)}$ EXCLUINDO TRANSAÇÕES DE DIREITOS DE ATLETAS $^{^{(2)}$ EXCLUINDO AMORTIZAÇÕES DE DIREITOS DE ATLETAS $^{^{(3)}$ EXCLUINDO IMPARIDADES DE DIREITOS DE ATLETAS\n\nLO QUE SE CARGA:\n- ingreso · \"RECEITAS DE TELEVISÃO\" · 28.136 · L3583 (de una nota)\n- ingreso · \"PUBLICIDADE E PATROCÍNIOS\" · 19.066 · L3584 (de una nota)\n- ingreso · \"CORPORATE\" · 8.35 · L3585 (de una nota)\n- ingreso · \"RECEITAS DE BILHETEIRA\" · 6.523 · L3586 (de una nota)\n- ingreso · \"QUOTIZAÇÕES\" · 3.042 · L3587 (de una nota)\n- ingreso · \"RENDAS DE ESPAÇO\" · 2.967 · L3588 (de una nota)\n- ingreso · \"CATIVOS\" · 2.068 · L3589 (de una nota)\n- ingreso · \"BILHETES DE ÉPOCA\" · 1.869 · L3590 (de una nota)\n- ingreso · \"TÍTULOS FUNDADOR E CENTENARIUM\" · 1.393 · L3591 (de una nota)\n- ingreso · \"RECEITAS OUTRAS COMPETIÇÕES\" · 1.219 · L3592 (de una nota)\n- ingreso · \"OUTROS\" · 1.273 · L3593 (de una nota)\n- ingreso · \"PRÉMIOS UEFA\" · 22.407 · L3652 (de una nota)\n- ingreso · \"INDEMNIZAÇÕES DE SEGUROS\" · 1.455 · L3653 (de una nota)\n- ingreso · \"ROYALTIES\" · 1.4 · L3654 (de una nota)\n- ingreso · \"ASSISTÊNCIA TÉCNICA\" · 1.182 · L3655 (de una nota)\n- ingreso · \"COMISSÕES\" · 0.232 · L3656 (de una nota)\n- ingreso · \"OUTROS RENDIMENTOS OPERACIONAIS\" · 2.457 · L3657 (de una nota)\n- ingreso · \"ALIENAÇÕES DE DIREITOS DE ATLETAS\" · 63.833 · L3939 (de una nota)\n- ingreso · \"CEDÊNCIA DE DIREITOS BENFICA STARS FUND\" · 8.631 · L3940 (de una nota)\n- ingreso · \"CEDÊNCIAS TEMPORÁRIAS DE ATLETAS\" · 1.934 · L3941 (de una nota)\n- ingreso · \"FUNDO DE SOLIDARIEDADE\" · 1.119 · L3942 (de una nota)\n- ingreso · \"OUTROS RENDIMENTOS E GANHOS\" · 0.059 · L3943 (de una nota)\n- ingreso · \"RESULTADOS RELATIVOS A INVESTIMENTOS EM ASSOCIADAS\" · 0.137 · L2576\n- gasto · \"TRABALHOS ESPECIALIZADOS\" · 5.248 · L3682 (de una nota)\n- gasto · \"DESLOCAÇÕES E ESTADAS\" · 3.719 · L3683 (de una nota)\n- gasto · \"HONORÁRIOS\" · 2.54 · L3684 (de una nota)\n- gasto · \"CONSERVAÇÃO E REPARAÇÃO\" · 2.186 · L3685 (de una nota)\n- gasto · \"SERVIÇOS DE CATERING/SOFTDRINK\" · 2.067 · L3686 (de una nota)\n- gasto · \"EQUIPAMENTO DESPORTIVO\" · 1.609 · L3687 (de una nota)\n- gasto · \"SUBCONTRATOS\" · 1.513 · L3688 (de una nota)\n- gasto · \"ELECTRICIDADE\" · 1.374 · L3689 (de una nota)\n- gasto · \"RENDAS E ALUSUÍERES\" · 1.239 · L3690 (de una nota)\n- gasto · \"VIDILÂNCIA E SEGURANÇA\" · 1.243 · L3691 (de una nota)\n- gasto · \"LICENÇA MARCA BENFICA\" · 1.143 · L3692 (de una nota)\n- gasto · \"PUBLICIDADE E PROPAGANDA\" · 0.994 · L3693 (de una nota)\n- gasto · \"CEDÊNCIA DIREITOS DE IMAGEM\" · 0.88 · L3694 (de una nota)\n- gasto · \"DESPESAS MÉDICAS\" · 0.646 · L3695 (de una nota)\n- gasto · \"LIMPEZA, HIGIENE E CONFORTO\" · 0.612 · L3696 (de una nota)\n- gasto · \"ÁGUA E OUTROS FLUÍDOS\" · 0.504 · L3697 (de una nota)\n- gasto · \"COMUNICAÇÃO\" · 0.452 · L3698 (de una nota)\n- gasto · \"OUTROS FORNECIMENTOS E SERVIÇOS\" · 3.835 · L3700 (de una nota)\n- gasto · \"REMUNERAÇÕES FIXAS\" · 0.459 · L3743 (de una nota)\n- gasto · \"REMUNERAÇÕES VARIÁVEIS/PRÉMIOS\" · 0.07 · L3744 (de una nota)\n- gasto · \"REMUNERAÇÕES FIXAS\" · 43.943 · L3746 (de una nota)\n- gasto · \"REMUNERAÇÕES VARIÁVEIS/PRÉMIOS\" · 10.081 · L3747 (de una nota)\n- gasto · \"INDEMNIZAÇÕES\" · 0.649 · L3748 (de una nota)\n- gasto · \"BENEFÍCIOS PÓS-EMPREGO\" · 0.223 · L3749 (de una nota)\n- gasto · \"ENCARGOS SOBRE REMUNERAÇÕES\" · 4.809 · L3750 (de una nota)\n- gasto · \"SEGUROS DE ACIDENTES DE TRABALHO\" · 2.153 · L3751 (de una nota)\n- gasto · \"OUTROS GASTOS COM PESSOAL\" · 0.794 · L3752 (de una nota)\n- gasto · \"EDIFÍCIOS E OUTRAS CONSTRUÇÕES\" · 5.139 · L3831 (de una nota)\n- gasto · \"EQUIPAMENTO BÁSICO\" · 1.359 · L3832 (de una nota)\n- gasto · \"EQUIPAMENTO DE TRANSPORTE\" · 0.156 · L3833 (de una nota)\n- gasto · \"FERRAMENTAS E UTENSÍLIOS\" · 0.015 · L3834 (de una nota)\n- gasto · \"EQUIPAMENTO ADMINISTRATIVO\" · 1.332 · L3835 (de una nota)\n- gasto · \"OUTROS ACTIVOS TANGÍVEIS\" · 0.058 · L3836 (de una nota)\n- gasto · \"PROGRAMAS TV\" · 5.093 · L3839 (de una nota)\n- gasto · \"DIREITO UTILIZAÇÃO DA MARCA BENFICA\" · 0.399 · L3840 (de una nota)\n- gasto · \"GALERIA COMERCIAL\" · 0.332 · L3843 (de una nota)\n- gasto · \"REFORÇO DE PROVISÕES PARA OUTROS RISCOS\" · 0.314 · L3866 (de una nota)\n- gasto · \"REDUÇÃO DE PROVISÕES PARA OUTROS RISCOS\" · -2.316 · L3867 (de una nota)\n- gasto · \"REDUÇÃO DE IMPARIDADES DE CLIENTES/DEVEDORES\" · -0.249 · L3871 (de una nota)\n- gasto · \"IMPOSTOS\" · 1.08 · L3897 (de una nota)\n- gasto · \"OUTROS GASTOS E PERDAS OPERACIONAIS\" · 1.459 · L3898 (de una nota)\n- gasto · \"AMORTIZAÇÕES DE DIREITOS DE ATLETAS\" · 28.352 · L3915 (de una nota)\n- gasto · \"REFORÇO DE IMPARIDADE\" · 0.835 · L3917 (de una nota)\n- gasto · \"REVERSÕES DE IMPARIDADE\" · -0.285 · L3918 (de una nota)\n- gasto · \"GASTOS COM TRANSFERÊNCIA DE ATLETAS\" · 6.144 · L3946 (de una nota)\n- gasto · \"CEDÊNCIAS TEMPORÁRIAS DE ATLETAS\" · 2.083 · L3947 (de una nota)\n- gasto · \"FUNDO DE SOLIDARIEDADE\" · 0.277 · L3948 (de una nota)\n- gasto · \"ABATES DE DIREITOS DE ATLETAS\" · 0.223 · L3949 (de una nota)\n- gasto · \"ALIENAÇÕES DE DIREITOS DE ATLETAS\" · 0.129 · L3950 (de una nota)\n- gasto · \"OUTROS GASTOS E PERDAS\" · 0.175 · L3951 (de una nota)\n- financiero · \"RENDIMENTOS E GANHOS FINANCEIROS\" · 4.086 · L2574\n- financiero · \"GASTOS E PERDAS FINANCEIROS\" · -23.705 · L2575\n- impuesto · \"IMPOSTO SOBRE O RENDIMENTO\" · 0.121 · L2578"
- }
+ ]
 }

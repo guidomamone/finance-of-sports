@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2023-24.md",
- "generado": "2026-10-15T23:54:38.255Z",
+ "generado": "2026-10-16T00:30:33.709Z",
  "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2024,
@@ -21,6 +21,16 @@
    "evidencia": "relatorio-contas-2023-24.md: sin estados consolidados; relatorio-contas-2023-24.md L1319",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2023-24.pdf",
+   "campo": "fx",
+   "valor": "0.9341",
+   "linea": null,
+   "motivo": "el documento da 1 EUR = 1,0705 USD al 30/06/2024 (primera columna, cierre BCE del 28/06/2024; el encabezado de la tabla dice 30.06.25 por error en la segunda columna, que es 30/06/2023 = 1,0866); EUR por 1 USD = 1/1,0705 = 0,9341",
+   "evidencia": ".md L5787-5789",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "cola": [],

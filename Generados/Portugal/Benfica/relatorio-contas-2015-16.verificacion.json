@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2015-16.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2015-16.md",
- "generado": "2026-10-15T23:54:38.056Z",
- "estado": "cola",
+ "generado": "2026-10-16T00:30:33.570Z",
+ "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2016,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "2d1b5af",
-  "66d8c02",
-  "8ce4c0e"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -41,8 +37,8 @@
   },
   {
    "nombre": "documento del año 2017",
-   "ok": false,
-   "detalle": "ingresos de 2016: 207.968 en este documento y 139.772 en relatorio-contas-2013-14-pos-AG.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2016: 207.968 en este documento y 207.968 en relatorio-contas-2016-17-pos-AG.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2015",
@@ -67,8 +63,9 @@
   "escalón \"nota exacta en la lectura 5\": \"AMORTIZAÇÕES E PERDAS DE IMPARIDADE DE DIREITOS DE ATLETAS\" (L2587) se abre en las 2 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 5\": \"GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\" (L2589) se abre en las 4 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en relatorio-contas-2016-17-pos-AG.pdf",
   "duda de localizar que no afecta la carga: Son resúmenes del informe de gestión que reagrupan las rubricas del estado ya abiertas en las notas 5-14.",
-  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"RENDIMENTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\"): ¿Se deja afuera de la carga el cuadro de ganancias y pérdidas por alienaciones de derechos de atletas (b62, L3916-L3919), por repetir filas ya desglosadas en b61?",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"RENDIMENTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\"): ¿Se deja afuera de la carga el cuadro de ganancias y pérdidas por alienaciones de derechos de atletas (b62, L3916-L3919), por repetir filas ya desglosadas en b61?",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
   "duda de extraer que no afecta la carga: Las notas de gastos (b52,b53,b57,b58,b59,b60) presentan los gastos en positivo, al revés que el estado."
  ],

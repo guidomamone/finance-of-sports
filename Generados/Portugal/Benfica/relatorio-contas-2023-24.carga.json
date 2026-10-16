@@ -1,20 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2023-24.pdf",
- "generado": "2026-10-16T00:11:51.094Z",
- "frena": [
-  {
-   "etapa": "alta:fx",
-   "motivo": "El documento declara un tipo de cambio con el dólar (1.0705 (línea 5789: \"|  Dólar americano | 1,0705 | 1,0866  |\") | 1.0866 (línea 5789: \"|  Dólar americano | 1,0705 | 1,0866  |\")). En EUR el número solo no dice el sentido: el sitio guarda \"EUR por 1 USD\" (~0.7-1.15); si el documento escribió \"USD por 1 EUR\" hay que invertirlo. ¿Cuál es el de CIERRE y en qué sentido está?"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Gestão operacional do estádio\" -> match_organisation_expense 0.5; \"Gestão operacional do canal BTV\" -> admin_general_expense 0.5; \"Direitos de uso\" -> depreciation 0.75; \"Outros gastos com transações de direitos\" -> other_expenses 0.75"
-  },
-  {
-   "etapa": "fx",
-   "motivo": "sin tipo de cambio: el documento declara 2 valores de tipo de cambio a USD: 1.0705 (línea 5789: \"|  Dólar americano | 1,0705 | 1,0866  |\") | 1.0866 (línea 5789: \"|  Dólar americano | 1,0705 | 1,0866  |\")"
-  }
- ],
+ "generado": "2026-10-16T00:46:04.654Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS))",
   "gastos: ningún total impreso igual a la suma de las líneas (-268.985); queda la suma, verificada por el resultado del ejercicio",
@@ -174,9 +161,9 @@
     "amountNative": -29.135,
     "disclosureLevel": "aggregated",
     "_pag": 151,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Trabalhos especializados",
@@ -190,13 +177,13 @@
    },
    {
     "rawLabel": "Gestão operacional do canal BTV",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -8.048,
     "disclosureLevel": "aggregated",
     "_pag": 151,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Licença da marca Benfica",
@@ -454,9 +441,9 @@
     "amountNative": -3.624,
     "disclosureLevel": "aggregated",
     "_pag": 153,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Direito de utilização da marca",
@@ -534,9 +521,9 @@
     "amountNative": -6.772,
     "disclosureLevel": "aggregated",
     "_pag": 154,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Amortizações de direitos de atletas",
@@ -561,6 +548,8 @@
   ],
   "fiscalYearMeta": {
    "currency": "EUR",
+   "fx": 0.9341,
+   "fxSource": "manual",
    "sourceId": "benfica-pt-relatorio-contas-2023-24",
    "reportType": "official_balance_sheet",
    "gestionId": null,
@@ -619,6 +608,16 @@
    "evidencia": "relatorio-contas-2023-24.md: sin estados consolidados; relatorio-contas-2023-24.md L1319",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2023-24.pdf",
+   "campo": "fx",
+   "valor": "0.9341",
+   "linea": null,
+   "motivo": "el documento da 1 EUR = 1,0705 USD al 30/06/2024 (primera columna, cierre BCE del 28/06/2024; el encabezado de la tabla dice 30.06.25 por error en la segunda columna, que es 30/06/2023 = 1,0866); EUR por 1 USD = 1/1,0705 = 0,9341",
+   "evidencia": ".md L5787-5789",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "seleccion": {
@@ -848,11 +847,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 29.135,
    "cat": "match_organisation_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): servicios de Benfica Estádio por el uso y operación del estadio (nota de FSE).",
    "destino": "expense",
    "amountNative": -29.135
   },
@@ -878,12 +877,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 8.048,
-   "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): servicios de Benfica TV para gestionar el canal (contrato de mandato): actividad propia del club, no administración general.",
    "destino": "expense",
    "amountNative": -8.048
   },
@@ -1276,11 +1275,11 @@
    "origen": "verificacion (nota que desglosa \"Depreciações/Amortizações (1)\")",
    "signoFijo": 3.624,
    "cat": "depreciation",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): depreciación IFRS 16 del derecho de uso (estadio), bajo 'Depreciações de ativos tangíveis'.",
    "destino": "expense",
    "amountNative": -3.624
   },
@@ -1398,11 +1397,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com transações de direitos de atletas\")",
    "signoFijo": 6.772,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): préstamos de atletas, formación y comisiones de cesiones; other_expenses como Porto.",
    "destino": "expense",
    "amountNative": -6.772
   },
@@ -1541,12 +1540,9 @@
    "estado": "ok"
   },
   "fx": {
-   "valor": [
-    1.0705,
-    1.0866
-   ],
-   "fuente": "el documento declara 2 valores de tipo de cambio a USD: 1.0705 (línea 5789: \"|  Dólar americano | 1,0705 | 1,0866  |\") | 1.0866 (línea 5789: \"|  Dólar americano | 1,0705 | 1,0866  |\")",
-   "estado": "pregunta"
+   "valor": 0.9341,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): el documento da 1 EUR = 1,0705 USD al 30/06/2024 (primera columna, cierre BCE del 28/06/2024; el encabezado de la tabla dice 30.06.25 por error en la segunda columna, que es 30/06/2023 = 1,0866); EUR por 1 USD = 1/1,0705 = 0,9341",
+   "estado": "ok"
   },
   "sourceId": {
    "valor": "benfica-pt-relatorio-contas-2023-24",
@@ -1560,8 +1556,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 3,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 14,
   "lineasGasto": 39,
   "metaFilas": 3,

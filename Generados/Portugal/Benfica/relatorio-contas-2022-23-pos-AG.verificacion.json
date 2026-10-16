@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.md",
- "generado": "2026-10-15T23:54:38.232Z",
+ "generado": "2026-10-16T00:30:33.688Z",
  "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2023,
@@ -21,6 +21,16 @@
    "evidencia": "relatorio-contas-2022-23-pos-AG.md: sin estados consolidados; relatorio-contas-2023-24.md L1319",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.pdf",
+   "campo": "fx",
+   "valor": "0.9203",
+   "linea": null,
+   "motivo": "el documento da 1 EUR = 1,0866 USD al 30/06/2023 (primera columna; 1,0387 es el año anterior); EUR por 1 USD = 0,9203, igual que AC Milan 2022-23",
+   "evidencia": ".md L5326",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "cola": [],

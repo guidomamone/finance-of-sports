@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.md",
- "generado": "2026-10-15T23:54:38.010Z",
+ "generado": "2026-10-16T00:30:33.565Z",
  "estado": "cola",
  "clubId": "benfica-pt",
  "year": 2015,
@@ -14,8 +14,7 @@
  "ajustes": null,
  "cola": [
   "b4cf6d7",
-  "0762757",
-  "927036d"
+  "0762757"
  ],
  "chequeos": [
   {
@@ -40,6 +39,11 @@
    "detalle": "ingresos de 2015: 180.799 en este documento y 180.799 en relatorio-contas-2015-16.pdf (columna del año anterior)"
   },
   {
+   "nombre": "documento del año 2014",
+   "ok": true,
+   "detalle": "ingresos de 2014: 180.752 en relatorio-contas-2013-14-pos-AG.pdf y 180.615 en este documento (columna del año anterior)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2014: este chequeo no se puede hacer"
@@ -47,6 +51,7 @@
  ],
  "notas": [
   "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en relatorio-contas-2014-15-pos-AG.pdf",
   "duda de extraer que no afecta la carga: No hay frase de escala en los bloques; magnitudes (L2615 80.049) sugieren miles de euros."
  ],
  "reintentar": null,

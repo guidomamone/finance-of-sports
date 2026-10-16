@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.pdf",
  "md": "Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.md",
- "generado": "2026-10-15T23:54:37.789Z",
+ "generado": "2026-10-16T00:30:33.389Z",
  "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2010,
@@ -21,6 +21,39 @@
    "evidencia": ".md L3880 a 30 de junho de 2010; L3748 patrimonio al 30/06/2009 como comparativo",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.pdf",
+   "campo": "categoria",
+   "valor": "other_expenses",
+   "linea": null,
+   "etiqueta": "CUSTOS COM TRANSFERÊNCIA DE ATLETAS",
+   "motivo": "Costo de la nota 'Custos com transacções de atletas' (1.445.250 entre paréntesis) que la extracción dejó en ingresos con signo negativo; pasa a gasto sin cambiar el resultado.",
+   "evidencia": "prestacao-contas-2010-11-11.md L7548",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.pdf",
+   "campo": "categoria",
+   "valor": "other_expenses",
+   "linea": null,
+   "etiqueta": "CUSTOS COM FUNDO DE SOLIDARIEDADE",
+   "motivo": "Costo de 'Custos com transacções de atletas' (245.324) en ingresos con signo negativo; pasa a gasto sin cambiar el resultado.",
+   "evidencia": "prestacao-contas-2010-11-11.md L7550",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.pdf",
+   "campo": "categoria",
+   "valor": "other_income",
+   "linea": null,
+   "etiqueta": "GANHOS EM EMPRESAS ASSOCIADAS",
+   "motivo": "Ganancia (6.066) de 'Resultados relativos a investimentos' que quedó en gastos con signo positivo; pasa a ingreso, como Benfica 2019 'Resultado relativo a investimentos em participadas'.",
+   "evidencia": "prestacao-contas-2010-11-11.md L7629",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "cola": [],

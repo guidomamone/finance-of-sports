@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2016-17-pos-AG.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2016-17-pos-AG.md",
- "generado": "2026-10-15T23:54:38.088Z",
- "estado": "cola",
+ "generado": "2026-10-16T00:30:33.594Z",
+ "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2017,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "e7633c2",
-  "3b3271f"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -67,6 +64,7 @@
   "escalón \"nota exacta en la lectura 5\": \"Gastos com transações de direitos de atletas\" (L2644) se abre en las 4 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 5\": \"Amortizações e perdas de imparidade de direitos de atletas\" (L2646) se abre en las 3 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en relatorio-contas-2016-17-pos-AG.pdf",
   "duda de extraer ya contestada para el club (antes de su alta) (cuadro-duplicado, \"Resultado com transações de direitos de atletas\"): corregir sí, en relatorio-contas-2022-23-pos-AG.pdf",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Resultado com alienações de direitos de atletas\"): ¿Se deja afuera de la carga la conciliación L4983-L4985 de b118, que repite las filas de b117?"
  ],

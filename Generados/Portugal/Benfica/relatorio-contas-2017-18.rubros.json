@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2017-18.pdf",
   "club": "benfica-pt",
   "year": 2018,
-  "generatedAt": "2026-10-15T23:54:38.121Z",
+  "generatedAt": "2026-10-16T00:30:33.638Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -64,7 +64,7 @@
       "values": [
         1.745
       ],
-      "glosa": "Regalías"
+      "glosa": "Royalties"
     },
     {
       "label": "Outras receitas",
@@ -84,7 +84,7 @@
       "values": [
         10.479
       ],
-      "glosa": "Servicios corporativos"
+      "glosa": "Corporate"
     },
     {
       "label": "Bilhetes de época",
@@ -154,7 +154,7 @@
       "values": [
         3.971
       ],
-      "glosa": "Viajes y estancias"
+      "glosa": "Desplazamientos y estancias"
     },
     {
       "label": "Honorários",
@@ -174,7 +174,7 @@
       "values": [
         2.32
       ],
-      "glosa": "Subcontratos"
+      "glosa": "Subcontratación"
     },
     {
       "label": "Conservação e reparação",
@@ -184,7 +184,7 @@
       "values": [
         2.173
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Serviços de *catering/softdrink*",
@@ -194,7 +194,7 @@
       "values": [
         1.989
       ],
-      "glosa": "Servicios de catering y bebidas"
+      "glosa": "Servicios de *catering/softdrink*"
     },
     {
       "label": "Rendas e alugueres",
@@ -254,7 +254,7 @@
       "values": [
         7.193
       ],
-      "glosa": "Otros suministros y servicios"
+      "glosa": "Otros aprovisionamientos y servicios"
     },
     {
       "label": "Remunerações fixas",
@@ -264,7 +264,7 @@
       "values": [
         0.573
       ],
-      "glosa": "Retribuciones fijas"
+      "glosa": "Remuneraciones fijas"
     },
     {
       "label": "Remunerações variáveis",
@@ -274,7 +274,7 @@
       "values": [
         0.069
       ],
-      "glosa": "Retribuciones variables"
+      "glosa": "Remuneraciones variables"
     },
     {
       "label": "Remunerações fixas",
@@ -284,7 +284,7 @@
       "values": [
         50.035
       ],
-      "glosa": "Retribuciones fijas"
+      "glosa": "Remuneraciones fijas"
     },
     {
       "label": "Remunerações variáveis",
@@ -294,7 +294,7 @@
       "values": [
         6.005
       ],
-      "glosa": "Retribuciones variables"
+      "glosa": "Remuneraciones variables"
     },
     {
       "label": "Indemnizações",
@@ -314,7 +314,7 @@
       "values": [
         0.386
       ],
-      "glosa": "Beneficios post-empleo"
+      "glosa": "Retribuciones post-empleo"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -324,7 +324,7 @@
       "values": [
         4.946
       ],
-      "glosa": "Cargas sociales sobre retribuciones"
+      "glosa": "Cargas sociales sobre salarios"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -364,7 +364,7 @@
       "values": [
         1.543
       ],
-      "glosa": "Instalaciones técnicas y equipamiento"
+      "glosa": "Instalaciones técnicas y maquinaria"
     },
     {
       "label": "Equipamento de transporte",
@@ -384,7 +384,7 @@
       "values": [
         1.485
       ],
-      "glosa": "Equipamiento de oficina"
+      "glosa": "Equipos de oficina y administrativos"
     },
     {
       "label": "Outros ativos tangíveis",
@@ -444,7 +444,7 @@
       "values": [
         -0.912
       ],
-      "glosa": "Provisiones/Pérdidas por deterioro ^{(2)}"
+      "glosa": "Provisiones/Deterioros ^{(2)}"
     },
     {
       "label": "Outros gastos e perdas operacionais ^{(3)}",
@@ -474,7 +474,7 @@
       "values": [
         4.382
       ],
-      "glosa": "Gastos asociados a enajenaciones de derechos de jugadores"
+      "glosa": "Gastos asociados a la enajenación de derechos de jugadores"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -504,7 +504,7 @@
       "values": [
         34.479
       ],
-      "glosa": "Amortizaciones de derechos de jugadores"
+      "glosa": "Amortización de derechos de jugadores"
     },
     {
       "label": "Perdas de imparidade de direitos de atletas",

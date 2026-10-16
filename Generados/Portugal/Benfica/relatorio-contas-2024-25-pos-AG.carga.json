@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2024-25-pos-AG.pdf",
- "generado": "2026-10-16T00:11:51.354Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "6 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Gestão operacional do estádio\" -> admin_general_expense 0.55; \"Gestão operacional do canal BTV\" -> admin_general_expense 0.5; \"Redébitos de/a partes relacionadas ^{1)}\" -> wages_squad 0.6; \"Direitos de uso\" -> depreciation 0.6; \"Direito de exploração futebol feminino\" -> other_amortisation 0.6"
-  }
- ],
+ "generado": "2026-10-16T00:46:04.823Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS))",
   "gastos: ningún total impreso igual a la suma de las líneas (-293.306); queda la suma, verificada por el resultado del ejercicio",
@@ -163,23 +158,23 @@
   "expenseLines": [
    {
     "rawLabel": "Gestão operacional do estádio",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "match_organisation_expense",
     "amountNative": -31.587,
     "disclosureLevel": "aggregated",
     "_pag": 158,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gestão operacional do canal BTV",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -8.687,
     "disclosureLevel": "aggregated",
     "_pag": 158,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Trabalhos especializados^{1)}",
@@ -377,9 +372,9 @@
     "amountNative": -5.483,
     "disclosureLevel": "aggregated",
     "_pag": 159,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos com pessoal",
@@ -437,9 +432,9 @@
     "amountNative": -3.529,
     "disclosureLevel": "aggregated",
     "_pag": 160,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Direito de utilização da marca",
@@ -457,9 +452,9 @@
     "amountNative": -1.16,
     "disclosureLevel": "aggregated",
     "_pag": 160,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Programas de computador",
@@ -527,9 +522,9 @@
     "amountNative": -8.019,
     "disclosureLevel": "aggregated",
     "_pag": 161,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Amortizações de direitos de atletas",
@@ -841,12 +836,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos (1)\")",
    "signoFijo": 31.587,
-   "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): mismo criterio que 2021-2024 (servicios de operación del estadio). [relatorio-contas-2024-25-pos-AG.md L5604]",
    "destino": "expense",
    "amountNative": -31.587
   },
@@ -857,12 +852,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos (1)\")",
    "signoFijo": 8.687,
-   "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): servicios de Benfica TV para gestionar el canal (contrato de mandato): actividad propia del club, no administración general.",
    "destino": "expense",
    "amountNative": -8.687
   },
@@ -1164,11 +1159,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com pessoal (1)\")",
    "signoFijo": 5.483,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): gasto de personal del grupo refacturado, dentro de Gastos com pessoal (127,713). [relatorio-contas-2024-25-pos-AG.md L5666]",
    "destino": "expense",
    "amountNative": -5.483
   },
@@ -1256,11 +1251,11 @@
    "origen": "verificacion (nota que desglosa \"Depreciações/Amortizações (2)\")",
    "signoFijo": 3.529,
    "cat": "depreciation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): depreciación IFRS 16 del derecho de uso (estadio), bajo 'Depreciações de ativos tangíveis'.",
    "destino": "expense",
    "amountNative": -3.529
   },
@@ -1287,11 +1282,11 @@
    "origen": "verificacion (nota que desglosa \"Depreciações/Amortizações (2)\")",
    "signoFijo": 1.16,
    "cat": "other_amortisation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): amortización de un intangible no jugador (derecho de explotación del fútbol femenino). [relatorio-contas-2024-25-pos-AG.md L5723]",
    "destino": "expense",
    "amountNative": -1.16
   },
@@ -1394,11 +1389,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com transações de direitos de atletas\")",
    "signoFijo": 8.019,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): préstamos de atletas, formación y comisiones de cesiones; other_expenses como Porto.",
    "destino": "expense",
    "amountNative": -8.019
   },
@@ -1558,8 +1553,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 14,
   "lineasGasto": 39,
   "metaFilas": 3,

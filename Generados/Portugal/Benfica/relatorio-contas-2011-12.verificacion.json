@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2011-12.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2011-12.md",
- "generado": "2026-10-15T23:54:53.186Z",
- "estado": "cola",
+ "generado": "2026-10-16T00:30:33.440Z",
+ "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2012,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "7c36778"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -59,9 +57,9 @@
   "escalón \"nota exacta en la lectura 6\": \"Outros custos operacionais ^{(1)}\" (L2628) se abre en las 2 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 6\": \"Amortizações e perdas de imparidade com passes de atletas\" (L2631) se abre en las 4 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en relatorio-contas-2016-17-pos-AG.pdf",
   "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
-  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2016-17-pos-AG.pdf",
   "club": "benfica-pt",
   "year": 2017,
-  "generatedAt": "2026-10-15T23:54:38.089Z",
+  "generatedAt": "2026-10-16T00:30:33.595Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         38.776
       ],
-      "glosa": "Ingresos por televisión"
+      "glosa": "Ingresos por retransmisión televisiva"
     },
     {
       "label": "Prémios da UEFA",
@@ -54,7 +54,7 @@
       "values": [
         2.75
       ],
-      "glosa": "Alquileres de espacios"
+      "glosa": "Arrendamiento de espacios"
     },
     {
       "label": "Royalties",
@@ -64,7 +64,7 @@
       "values": [
         2.078
       ],
-      "glosa": "Cánones y royalties"
+      "glosa": "Cánones y regalías"
     },
     {
       "label": "Outra receitas",
@@ -84,7 +84,7 @@
       "values": [
         9.7
       ],
-      "glosa": "Corporate"
+      "glosa": "Servicios corporativos y hospitality"
     },
     {
       "label": "Bilhetes de época",
@@ -204,7 +204,7 @@
       "values": [
         1.902
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Equipamento desportivo",
@@ -264,7 +264,7 @@
       "values": [
         8.198
       ],
-      "glosa": "Otros suministros y servicios"
+      "glosa": "Otros aprovisionamientos y servicios"
     },
     {
       "label": "Remunerações fixas",
@@ -324,7 +324,7 @@
       "values": [
         0.255
       ],
-      "glosa": "Prestaciones post-empleo"
+      "glosa": "Retribuciones post-empleo"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -344,7 +344,7 @@
       "values": [
         3.622
       ],
-      "glosa": "Seguros de accidentes de trabajo"
+      "glosa": "Seguros de accidentes laborales"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -404,7 +404,7 @@
       "values": [
         0.058
       ],
-      "glosa": "Otros activos tangibles"
+      "glosa": "Otro inmovilizado material"
     },
     {
       "label": "Direito de utilização da marca",
@@ -414,7 +414,7 @@
       "values": [
         1.52
       ],
-      "glosa": "Derechos de uso de marca"
+      "glosa": "Derecho de uso de marca"
     },
     {
       "label": "Programas de computador",
@@ -424,7 +424,7 @@
       "values": [
         0.309
       ],
-      "glosa": "Programas informáticos"
+      "glosa": "Aplicaciones informáticas"
     },
     {
       "label": "Direitos de televisão",
@@ -434,7 +434,7 @@
       "values": [
         0.25
       ],
-      "glosa": "Derechos de televisión"
+      "glosa": "Derechos de retransmisión televisiva"
     },
     {
       "label": "Galeria comercial",
@@ -454,7 +454,7 @@
       "values": [
         -0.079
       ],
-      "glosa": "Provisiones/Deterioros ^{(2)}"
+      "glosa": "Provisiones / Pérdidas por deterioro ^{(2)}"
     },
     {
       "label": "Outros gastos e perdas operacionais ^{(3)}",
@@ -484,7 +484,7 @@
       "values": [
         11.625
       ],
-      "glosa": "Gastos asociados a enajenaciones de derechos de deportistas"
+      "glosa": "Gastos asociados a la enajenación de derechos de deportistas"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -534,7 +534,7 @@
       "values": [
         -0.597
       ],
-      "glosa": "Reversiones por deterioro"
+      "glosa": "Reversiones de deterioro"
     }
   ]
 }

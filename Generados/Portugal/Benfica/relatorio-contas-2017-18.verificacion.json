@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2017-18.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2017-18.md",
- "generado": "2026-10-15T23:54:38.120Z",
+ "generado": "2026-10-16T00:30:33.638Z",
  "estado": "cola",
  "clubId": "benfica-pt",
  "year": 2018,
@@ -13,8 +13,8 @@
  },
  "ajustes": null,
  "cola": [
-  "0b0fe24",
-  "5bebf3a"
+  "8be5181",
+  "6f12741"
  ],
  "chequeos": [
   {
@@ -40,13 +40,13 @@
   },
   {
    "nombre": "documento del año 2019",
-   "ok": true,
-   "detalle": "ingresos de 2018: 199.253 en este documento y 199.255 en relatorio-contas-2018-19.pdf (columna del año anterior)"
+   "ok": false,
+   "detalle": "ingresos de 2018: 199.253 en este documento y 120.030991 en relatorio-contas-2012-13-pos-AG.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2017",
-   "ok": false,
-   "detalle": "ingresos de 2017: 180.752 en relatorio-contas-2013-14-pos-AG.pdf y 251.23 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2017: 251.23 en relatorio-contas-2016-17-pos-AG.pdf y 251.23 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",

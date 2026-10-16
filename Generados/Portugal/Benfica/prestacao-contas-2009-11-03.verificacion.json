@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2009-11-03.pdf",
  "md": "Clubes/Portugal/Benfica/prestacao-contas-2009-11-03.md",
- "generado": "2026-10-15T23:54:37.779Z",
- "estado": "cola",
+ "generado": "2026-10-16T00:30:33.352Z",
+ "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2009,
  "escala": {
@@ -11,10 +11,29 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "a99ff2d"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2009-11-03.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Relatório e contas anual del ejercicio 1/7/2008-30/6/2009 (el nombre del archivo lleva la fecha de publicación).",
+   "evidencia": ".md L13",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2009-11-03.pdf",
+   "campo": "cierre",
+   "valor": "2009-06-30",
+   "linea": null,
+   "motivo": "El nombre del archivo (2009-11-03) es la fecha de publicación; el ejercicio cierra el 30/06/2009.",
+   "evidencia": ".md L13 'DE 1 DE JULHO DE 2008 A 30 DE JUNHO DE 2009'",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -64,6 +83,7 @@
   "escalón \"nota exacta en la lectura 6\": \"Outros custos operacionais ^{(1)}\" (L1300) se abre en las 5 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 6\": \"Amortizações e perdas de imparidade com passes de atletas\" (L1303) se abre en las 3 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en relatorio-contas-2016-17-pos-AG.pdf",
   "duda de extraer que no afecta la carga: L2268 rotula las columnas como 'Consolidado'; los importes coinciden con L1309 del estado.",
   "duda de extraer que no afecta la carga: L1289: la columna anterior cubre 11 meses; se cargan tal cual los importes."
  ],

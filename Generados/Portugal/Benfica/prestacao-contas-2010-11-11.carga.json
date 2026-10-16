@@ -1,15 +1,11 @@
 {
  "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.pdf",
- "generado": "2026-10-16T00:11:48.395Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "18 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"CACHETS\" -> other_income 0.6; \"CEDÊNCIA DE ATLETAS\" -> player_sales 0.6; \"DIREITOS\" -> other_income 0.4; \"RENDAS DE ESPAÇO\" -> other_income 0.75; \"CEDÊNCIA DE DIREITOS BENFICA STARS FUND\" -> player_sales 0.75"
-  }
- ],
+ "generado": "2026-10-16T00:46:01.993Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 2: 2009-2019 traen consolidado e individual lado a lado y las controladas (Benfica Estádio, Benfica TV) hacen negocio del fútbol del club (estadio, canal))",
-  "gastos: ningún total impreso igual a la suma de las líneas (-96.953591); queda la suma, verificada por el resultado del ejercicio (el impreso \"total de gastos (verificado)\" 96.977773 difiere en 0.024182: redondeo)",
+  "ingresos: ningún total impreso igual a la suma de las líneas (87.366955); queda la suma, verificada por el resultado del ejercicio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-98.650231); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2010 (cierre 2010-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -74,9 +70,9 @@
     "amountNative": 2.04291,
     "disclosureLevel": "aggregated",
     "_pag": 134,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "CEDÊNCIA DE ATLETAS",
@@ -84,19 +80,19 @@
     "amountNative": 0.890884,
     "disclosureLevel": "aggregated",
     "_pag": 134,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "DIREITOS",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "stadium_other",
     "amountNative": 5.880653,
     "disclosureLevel": "aggregated",
     "_pag": 134,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "RENDAS DE ESPAÇO",
@@ -104,9 +100,9 @@
     "amountNative": 1.40096,
     "disclosureLevel": "aggregated",
     "_pag": 134,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "OUTROS",
@@ -244,9 +240,9 @@
     "amountNative": 7.79296,
     "disclosureLevel": "aggregated",
     "_pag": 146,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "PROVEITOS COM FUNDO SOLIDARIEDADE",
@@ -254,9 +250,9 @@
     "amountNative": 0.455061,
     "disclosureLevel": "aggregated",
     "_pag": 146,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "CEDÊNCIA DE DIREITOS BENFICA STARS FUND",
@@ -264,19 +260,9 @@
     "amountNative": -4.949536,
     "disclosureLevel": "aggregated",
     "_pag": 146,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "CUSTOS COM TRANSFERÊNCIA DE ATLETAS",
-    "normalizedCategory": "other_income",
-    "amountNative": -1.44525,
-    "disclosureLevel": "aggregated",
-    "_pag": 146,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "VENDA DE DIREITOS",
@@ -289,17 +275,37 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "CUSTOS COM FUNDO DE SOLIDARIEDADE",
+    "rawLabel": "GANHOS EM EMPRESAS ASSOCIADAS",
     "normalizedCategory": "other_income",
-    "amountNative": -0.245324,
+    "amountNative": 0.006066,
     "disclosureLevel": "aggregated",
-    "_pag": 146,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_pag": 149,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Ganancia (6.066) de 'Resultados relativos a investimentos' que quedó en gastos con signo positivo; pasa a ingreso, como Benfica 2019 'Resultado relativo a investimentos em participadas'."
    }
   ],
   "expenseLines": [
+   {
+    "rawLabel": "CUSTOS COM TRANSFERÊNCIA DE ATLETAS",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.44525,
+    "disclosureLevel": "aggregated",
+    "_pag": 146,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Costo de la nota 'Custos com transacções de atletas' (1.445.250 entre paréntesis) que la extracción dejó en ingresos con signo negativo; pasa a gasto sin cambiar el resultado."
+   },
+   {
+    "rawLabel": "CUSTOS COM FUNDO DE SOLIDARIEDADE",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.245324,
+    "disclosureLevel": "aggregated",
+    "_pag": 146,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Costo de 'Custos com transacções de atletas' (245.324) en ingresos con signo negativo; pasa a gasto sin cambiar el resultado."
+   },
    {
     "rawLabel": "TRABALHOS ESPECIALIZADOS",
     "normalizedCategory": "admin_general_expense",
@@ -366,9 +372,9 @@
     "amountNative": -1.095508,
     "disclosureLevel": "aggregated",
     "_pag": 139,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "SUBCONTRATOS",
@@ -406,9 +412,9 @@
     "amountNative": -0.89569,
     "disclosureLevel": "aggregated",
     "_pag": 139,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "ELECTRICIDADE",
@@ -442,13 +448,13 @@
    },
    {
     "rawLabel": "DESPESAS MÉDICAS",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.425078,
     "disclosureLevel": "aggregated",
     "_pag": 139,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "PUBLICIDADE E PROPAGANDA",
@@ -476,9 +482,9 @@
     "amountNative": -0.4,
     "disclosureLevel": "aggregated",
     "_pag": 139,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "COMUNICAÇÃO",
@@ -556,9 +562,9 @@
     "amountNative": -0.0136,
     "disclosureLevel": "aggregated",
     "_pag": 139,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "OUTROS FORNECIMENTOS E SERVIÇOS",
@@ -756,9 +762,9 @@
     "amountNative": 0.26467,
     "disclosureLevel": "aggregated",
     "_pag": 144,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "IMPARIDADE PARA CRÉDITOS DE COBRANÇA DUVIDOSA",
@@ -786,9 +792,9 @@
     "amountNative": -0.090411,
     "disclosureLevel": "aggregated",
     "_pag": 145,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "CORRECÇÕES RELATIVAS A EXERCÍCIOS ANTERIORES",
@@ -802,13 +808,13 @@
    },
    {
     "rawLabel": "QUOTIZAÇÕES",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.005591,
     "disclosureLevel": "aggregated",
     "_pag": 145,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía member_dues, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "OUTROS CUSTOS E PERDAS OPERACIONAIS",
@@ -851,16 +857,6 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "GANHOS EM EMPRESAS ASSOCIADAS",
-    "normalizedCategory": "other_expenses",
-    "amountNative": 0.006066,
-    "disclosureLevel": "aggregated",
-    "_pag": 149,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado"
-   },
-   {
     "rawLabel": "PERDAS EM EMPRESAS ASSOCIADAS",
     "normalizedCategory": "other_expenses",
     "amountNative": -0.009205,
@@ -897,8 +893,8 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 85.670315,
-   "officialTotalExpenses": 96.953591,
+   "officialTotalRevenue": 87.366955,
+   "officialTotalExpenses": 98.650231,
    "officialPAT": -18.997724
   },
   "source": {
@@ -932,6 +928,39 @@
    "evidencia": ".md L3880 a 30 de junho de 2010; L3748 patrimonio al 30/06/2009 como comparativo",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.pdf",
+   "campo": "categoria",
+   "valor": "other_expenses",
+   "linea": null,
+   "etiqueta": "CUSTOS COM TRANSFERÊNCIA DE ATLETAS",
+   "motivo": "Costo de la nota 'Custos com transacções de atletas' (1.445.250 entre paréntesis) que la extracción dejó en ingresos con signo negativo; pasa a gasto sin cambiar el resultado.",
+   "evidencia": "prestacao-contas-2010-11-11.md L7548",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.pdf",
+   "campo": "categoria",
+   "valor": "other_expenses",
+   "linea": null,
+   "etiqueta": "CUSTOS COM FUNDO DE SOLIDARIEDADE",
+   "motivo": "Costo de 'Custos com transacções de atletas' (245.324) en ingresos con signo negativo; pasa a gasto sin cambiar el resultado.",
+   "evidencia": "prestacao-contas-2010-11-11.md L7550",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.pdf",
+   "campo": "categoria",
+   "valor": "other_income",
+   "linea": null,
+   "etiqueta": "GANHOS EM EMPRESAS ASSOCIADAS",
+   "motivo": "Ganancia (6.066) de 'Resultados relativos a investimentos' que quedó en gastos con signo positivo; pasa a ingreso, como Benfica 2019 'Resultado relativo a investimentos em participadas'.",
+   "evidencia": "prestacao-contas-2010-11-11.md L7629",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "seleccion": {
@@ -1023,11 +1052,11 @@
    "origen": "verificacion (nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\")",
    "signoFijo": 2.04291,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "revenue",
    "amountNative": 2.04291
   },
@@ -1039,11 +1068,11 @@
    "origen": "verificacion (nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\")",
    "signoFijo": 0.890884,
    "cat": "player_sales",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "revenue",
    "amountNative": 0.890884
   },
@@ -1054,12 +1083,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\")",
    "signoFijo": 5.880653,
-   "cat": "other_income",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "stadium_other",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Títulos Fundador y Centenarium (derechos de asiento), bilhetes de época y corporate (camarotes): derechos del estadio, mixto sin abrir; como 'Corporate' 2019. [prestacao-contas-2010-11-11.md L7240]",
    "destino": "revenue",
    "amountNative": 5.880653
   },
@@ -1071,11 +1100,11 @@
    "origen": "verificacion (nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\")",
    "signoFijo": 1.40096,
    "cat": "other_income",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "revenue",
    "amountNative": 1.40096
   },
@@ -1282,11 +1311,11 @@
    "origen": "verificacion (nota que desglosa \"PROVEITOS / (CUSTOS) COM TRANSACÇÕES DE PASSES DE ATLETAS\")",
    "signoFijo": 7.79296,
    "cat": "player_sales",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "revenue",
    "amountNative": 7.79296
   },
@@ -1298,11 +1327,11 @@
    "origen": "verificacion (nota que desglosa \"PROVEITOS / (CUSTOS) COM TRANSACÇÕES DE PASSES DE ATLETAS\")",
    "signoFijo": 0.455061,
    "cat": "player_sales",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "revenue",
    "amountNative": 0.455061
   },
@@ -1314,11 +1343,11 @@
    "origen": "verificacion (nota que desglosa \"PROVEITOS / (CUSTOS) COM TRANSACÇÕES DE PASSES DE ATLETAS\")",
    "signoFijo": -4.949536,
    "cat": "player_sales",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "revenue",
    "amountNative": -4.949536
   },
@@ -1326,17 +1355,16 @@
    "label": "CUSTOS COM TRANSFERÊNCIA DE ATLETAS",
    "page": 146,
    "native": 1.44525,
-   "ladoDoc": "revenue",
+   "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"PROVEITOS / (CUSTOS) COM TRANSACÇÕES DE PASSES DE ATLETAS\")",
-   "signoFijo": -1.44525,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "signoFijo": 1.44525,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Costo de la nota 'Custos com transacções de atletas' (1.445.250 entre paréntesis) que la extracción dejó en ingresos con signo negativo; pasa a gasto sin cambiar el resultado.",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
-   "destino": "revenue",
+   "ladoRechazado": false,
+   "destino": "expense",
    "amountNative": -1.44525
   },
   {
@@ -1358,17 +1386,16 @@
    "label": "CUSTOS COM FUNDO DE SOLIDARIEDADE",
    "page": 146,
    "native": 0.245324,
-   "ladoDoc": "revenue",
+   "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"PROVEITOS / (CUSTOS) COM TRANSACÇÕES DE PASSES DE ATLETAS\")",
-   "signoFijo": -0.245324,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "signoFijo": 0.245324,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Costo de 'Custos com transacções de atletas' (245.324) en ingresos con signo negativo; pasa a gasto sin cambiar el resultado.",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
-   "destino": "revenue",
+   "ladoRechazado": false,
+   "destino": "expense",
    "amountNative": -0.245324
   },
   {
@@ -1469,11 +1496,11 @@
    "origen": "verificacion (nota que desglosa \"FORNECIMENTOS E SER. DE TERCEIROS\")",
    "signoFijo": 1.095508,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "expense",
    "amountNative": -1.095508
   },
@@ -1530,12 +1557,12 @@
    "origen": "verificacion (nota que desglosa \"FORNECIMENTOS E SER. DE TERCEIROS\")",
    "signoFijo": 0.89569,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "expense",
    "amountNative": -0.89569
   },
@@ -1591,12 +1618,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"FORNECIMENTOS E SER. DE TERCEIROS\")",
    "signoFijo": 0.425078,
-   "cat": "match_organisation_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): gastos médicos del plantel, no organización de partidos. [prestacao-contas-2010-11-11.md L7320]",
    "destino": "expense",
    "amountNative": -0.425078
   },
@@ -1638,12 +1665,12 @@
    "origen": "verificacion (nota que desglosa \"FORNECIMENTOS E SER. DE TERCEIROS\")",
    "signoFijo": 0.4,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "expense",
    "amountNative": -0.4
   },
@@ -1760,11 +1787,11 @@
    "origen": "verificacion (nota que desglosa \"FORNECIMENTOS E SER. DE TERCEIROS\")",
    "signoFijo": 0.0136,
    "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "expense",
    "amountNative": -0.0136
   },
@@ -2064,11 +2091,11 @@
    "origen": "verificacion (nota que desglosa \"PROVISÕES DO EXERCÍCIO\")",
    "signoFijo": -0.26467,
    "cat": "other_amortisation",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "expense",
    "amountNative": 0.26467
   },
@@ -2110,11 +2137,11 @@
    "origen": "verificacion (nota que desglosa \"OUTROS CUSTOS OPERACIONAIS^{(3)}\")",
    "signoFijo": 0.090411,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "expense",
    "amountNative": -0.090411
   },
@@ -2140,13 +2167,13 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"OUTROS CUSTOS OPERACIONAIS^{(3)}\")",
    "signoFijo": 0.005591,
-   "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía member_dues, del otro lado que la fila: se propone la genérica de su lado",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): cuotas a asociaciones, como Alverca/Tondela/Santa Clara/Nacional. [prestacao-contas-2010-11-11.md L7501]",
    "destino": "expense",
    "amountNative": -0.005591
   },
@@ -2214,17 +2241,16 @@
    "label": "GANHOS EM EMPRESAS ASSOCIADAS",
    "page": 149,
    "native": 0.006066,
-   "ladoDoc": "expense",
+   "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"RESULTADOS RELATIVOS A INVESTIMENTOS EM ASSOCIADAS\")",
-   "signoFijo": -0.006066,
-   "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado",
+   "signoFijo": 0.006066,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Ganancia (6.066) de 'Resultados relativos a investimentos' que quedó en gastos con signo positivo; pasa a ingreso, como Benfica 2019 'Resultado relativo a investimentos em participadas'.",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
-   "destino": "expense",
+   "ladoRechazado": false,
+   "destino": "revenue",
    "amountNative": 0.006066
   },
   {
@@ -2280,7 +2306,7 @@
   "porTabla": {
    "verificacion (nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\")": "gastos con signo",
    "verificacion (nota que desglosa \"OUTROS PROVEITOS OPERACIONAIS^{(1)}\")": "gastos con signo",
-   "verificacion (nota que desglosa \"PROVEITOS / (CUSTOS) COM TRANSACÇÕES DE PASSES DE ATLETAS\")": "gastos con signo",
+   "verificacion (nota que desglosa \"PROVEITOS / (CUSTOS) COM TRANSACÇÕES DE PASSES DE ATLETAS\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"FORNECIMENTOS E SER. DE TERCEIROS\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"CUSTOS COM PESSOAL\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"AMORTIZAÇÕES^{(2)}\")": "gastos sin signo (se invierten)",
@@ -2293,14 +2319,14 @@
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 85.670315,
-  "expSum": -96.953591,
-  "officialTotalRevenue": 85.670315,
-  "officialTotalExpenses": 96.953591,
+  "revSum": 87.366955,
+  "expSum": -98.650231,
+  "officialTotalRevenue": 87.366955,
+  "officialTotalExpenses": 98.650231,
   "officialPAT": -18.997724,
   "verificacion": {
    "pat": "impreso",
-   "ingresos": "impreso",
+   "ingresos": "por-resultado",
    "gastos": "por-resultado"
   },
   "patImpreso": {
@@ -2308,11 +2334,6 @@
    "pag": null,
    "M": -18.997724,
    "signos": "signos de la verificación; financiero/impuesto como su tabla"
-  },
-  "revImpreso": {
-   "label": "total de ingresos (verificado)",
-   "pag": null,
-   "M": 85.670315
   }
  },
  "liga": {
@@ -2363,10 +2384,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
-  "lineasIngreso": 28,
-  "lineasGasto": 57,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 27,
+  "lineasGasto": 58,
   "metaFilas": 3,
   "excluidas": 0
  }
