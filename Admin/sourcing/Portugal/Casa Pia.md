@@ -34,3 +34,5 @@ Ninguna. Si se retoma, buscar ejercicios anteriores a 2021/22 (la SDUQ de fútbo
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Casa Pia/relatorio-contas-2021-22.pdf` (sourceId `casapia-pt-relatorio-contas-2021-22`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Casa Pia/relatorio-contas-2022-23.pdf` (sourceId `casapia-pt-relatorio-contas-2022-23`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Casa Pia/relatorio-contas-2023-24.pdf` (sourceId `casapia-pt-relatorio-contas-2023-24`).

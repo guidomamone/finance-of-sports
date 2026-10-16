@@ -35,6 +35,21 @@ const casapiaptRevenueLinesByYear = {
     { rawLabel:'IAPMEI', normalizedCategory:'other_income', amountNative:0.000112, disclosureLevel:'aggregated' },
     { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:9.05839, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Vendas:', normalizedCategory:'sponsorship_commercial', amountNative:0.15338, disclosureLevel:'aggregated' },
+    { rawLabel:'Bilheteira', normalizedCategory:'matchday_competition', amountNative:0.264377, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínios, publicidade e corporate', normalizedCategory:'sponsorship_commercial', amountNative:0.536055, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas TV, Premios de participação Competições', normalizedCategory:'broadcasting', amountNative:3.724854, disclosureLevel:'aggregated' },
+    { rawLabel:'Lucros jogos Online e Placard', normalizedCategory:'other_income', amountNative:0.315134, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços Scouting', normalizedCategory:'other_income', amountNative:0.023836, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência direitos desportivos', normalizedCategory:'player_sales', amountNative:3.854888, disclosureLevel:'aggregated' },
+    { rawLabel:'Federação Portuguesa de Futebol', normalizedCategory:'other_income', amountNative:0.061884, disclosureLevel:'aggregated' },
+    { rawLabel:'IEFP', normalizedCategory:'other_income', amountNative:0.007104, disclosureLevel:'aggregated' },
+    { rawLabel:'Correções relativas a exercícios anteriores', normalizedCategory:'other_income', amountNative:0.041171, disclosureLevel:'aggregated' },
+    { rawLabel:'Acordo de gestão', normalizedCategory:'other_income', amountNative:11.006988, disclosureLevel:'aggregated' },
+    { rawLabel:'Alienações - ativos intangíveis', normalizedCategory:'player_sales', amountNative:0.02, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:0.10901, disclosureLevel:'aggregated' },
+  ],
 };
 const casapiaptExpenseLinesByYear = {
   2025: [
@@ -113,6 +128,35 @@ const casapiaptExpenseLinesByYear = {
     { rawLabel:'Outros n/ aceites fiscalmente', normalizedCategory:'other_expenses', amountNative:-0.001871, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.494277, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Custo das mercadorias vendidas e das matérias consumidas', normalizedCategory:'other_expenses', amountNative:-0.034205, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-0.913111, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade', normalizedCategory:'admin_general_expense', amountNative:-0.192927, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e Segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.133028, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.208795, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e reparação', normalizedCategory:'admin_general_expense', amountNative:-0.204822, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços bancários', normalizedCategory:'admin_general_expense', amountNative:-0.055111, disclosureLevel:'aggregated' },
+    { rawLabel:'Materias', normalizedCategory:'admin_general_expense', amountNative:-0.184884, disclosureLevel:'aggregated' },
+    { rawLabel:'Energia e fluidos', normalizedCategory:'admin_general_expense', amountNative:-0.018119, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e estadas', normalizedCategory:'match_organisation_expense', amountNative:-0.524221, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.150112, disclosureLevel:'aggregated' },
+    { rawLabel:'Contencioso e notariado', normalizedCategory:'admin_general_expense', amountNative:-0.001136, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros serviços diversos', normalizedCategory:'other_expenses', amountNative:-0.099674, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações dos orgão sociais', normalizedCategory:'admin_general_expense', amountNative:-0.080789, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações do pessoal', normalizedCategory:'wages_squad', amountNative:-5.839569, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre remunerações', normalizedCategory:'wages_squad', amountNative:-0.511529, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.712069, disclosureLevel:'aggregated' },
+    { rawLabel:'Equipamentos', normalizedCategory:'wages_squad', amountNative:-0.032914, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.072476, disclosureLevel:'aggregated' },
+    { rawLabel:'Correções relativas a exercícios anteriores', normalizedCategory:'exceptional_items', amountNative:-0.107711, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos em investimentos não financeiros', normalizedCategory:'other_expenses', amountNative:-0.080833, disclosureLevel:'aggregated' },
+    { rawLabel:'Quotizações', normalizedCategory:'admin_general_expense', amountNative:-0.085378, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas', normalizedCategory:'other_expenses', amountNative:-0.064127, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos não devidamente documentados', normalizedCategory:'other_expenses', amountNative:-0.033616, disclosureLevel:'aggregated' },
+    { rawLabel:'Acordo de gestão', normalizedCategory:'other_expenses', amountNative:-8.800839, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros n/ aceites fiscalmente', normalizedCategory:'other_expenses', amountNative:-0.059632, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.799499, disclosureLevel:'aggregated' },
+  ],
 };
 const casapiaptFiscalYearMeta = {
   2025: {
@@ -158,6 +202,20 @@ const casapiaptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:14.081952, officialTotalExpenses:13.955841, officialPAT:-0.01765,
   },
+  2024: {
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'casapia-pt-relatorio-contas-2023-24',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.039376, tax:-0.095603,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.039376},
+      {label:'Imposto sobre o rendimento', value:-0.095603},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:20.118681, officialTotalExpenses:19.893415, officialPAT:-0.017425,
+  },
 };
 const casapiaptPresupuestoOverlayByYear = {};
 
@@ -187,6 +245,11 @@ Object.assign(sources, {
   'casapia-pt-relatorio-contas-2022-23': {
     id:'casapia-pt-relatorio-contas-2022-23', clubId:'casapia-pt',
     title:'Casa Pia — relatorio-contas-2022-23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'casapia-pt-relatorio-contas-2023-24': {
+    id:'casapia-pt-relatorio-contas-2023-24', clubId:'casapia-pt',
+    title:'Casa Pia — relatorio-contas-2023-24 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
