@@ -14,6 +14,14 @@ const avsptRevenueLinesByYear = {
     { rawLabel:'Outros ganhos extraordinários', normalizedCategory:'other_income', amountNative:0.351414, disclosureLevel:'aggregated' },
     { rawLabel:'Outros rendimentos operacionais', normalizedCategory:'other_income', amountNative:0.036217, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Atividades Operacionais', normalizedCategory:'lump_football_operations', amountNative:0.373011, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas de Televisão', normalizedCategory:'broadcasting', amountNative:0.35, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas de Formação', normalizedCategory:'youth_football', amountNative:0.011774, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.144399, disclosureLevel:'aggregated' },
+    { rawLabel:'Rend. Ganhos em Invest. não Financeiros', normalizedCategory:'other_income', amountNative:0.02117, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.000832, disclosureLevel:'aggregated' },
+  ],
 };
 const avsptExpenseLinesByYear = {
   2024: [
@@ -40,6 +48,23 @@ const avsptExpenseLinesByYear = {
     { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.094414, disclosureLevel:'aggregated' },
     { rawLabel:'Outros gastos operacionais', normalizedCategory:'other_expenses', amountNative:-1.084434, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Serviços Especializados', normalizedCategory:'admin_general_expense', amountNative:-0.41049, disclosureLevel:'aggregated' },
+    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.058931, disclosureLevel:'aggregated' },
+    { rawLabel:'Energia e Fluidos', normalizedCategory:'admin_general_expense', amountNative:-0.033305, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações Estadas e Transportes', normalizedCategory:'match_organisation_expense', amountNative:-0.15037, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços Diversos', normalizedCategory:'other_expenses', amountNative:-0.157517, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações do pessoal', normalizedCategory:'wages_squad', amountNative:-1.263904, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre Remunerações', normalizedCategory:'wages_squad', amountNative:-0.141435, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações', normalizedCategory:'wages_squad', amountNative:-0.319325, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguro Ac. Trab. e Doenças Profi.', normalizedCategory:'admin_general_expense', amountNative:-0.110717, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos com ação social', normalizedCategory:'wages_squad', amountNative:-0.056633, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos com Pessoal', normalizedCategory:'wages_squad', amountNative:-0.141378, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.000132, disclosureLevel:'aggregated' },
+    { rawLabel:'Perdas em investimentos não financeiros', normalizedCategory:'other_expenses', amountNative:-0.03, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.033367, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.01304, disclosureLevel:'aggregated' },
+  ],
 };
 const avsptFiscalYearMeta = {
   2024: {
@@ -57,6 +82,23 @@ const avsptFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:1.49427, officialTotalExpenses:4.512755, officialPAT:-3.041302,
+  },
+  2021: {
+    currency:'EUR', fxRef:'EUR@2021-06-30',
+    sourceId:'avs-pt-relatorio-contas-2020-21',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.005442, tax:-0.006971,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.005442},
+      {label:'Imposto sobre o rendimento do período', value:-0.006971},
+    ],
+    sinDesglose: [
+      {renglon:'Atividades Operacionais', lado:'revenue', importe:0.373011, motivo:'Claude 2026-10-16 (subagente Sonnet): nota 17 de rédito, prestação de serviços sin desglose (actividades operacionales) [relatorio-contas-2020-21.md L1093]'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.901186, officialTotalExpenses:2.920545, officialPAT:-2.031772,
   },
 };
 const avsptPresupuestoOverlayByYear = {};
@@ -77,6 +119,11 @@ Object.assign(sources, {
   'avs-pt-relatorio-contas-2023-24': {
     id:'avs-pt-relatorio-contas-2023-24', clubId:'avs-pt',
     title:'AVS — relatorio-contas-2023-24 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'avs-pt-relatorio-contas-2020-21': {
+    id:'avs-pt-relatorio-contas-2020-21', clubId:'avs-pt',
+    title:'AVS — relatorio-contas-2020-21 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

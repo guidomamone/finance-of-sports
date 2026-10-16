@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Portugal/AVS/relatorio-contas-2020-21.pdf",
- "generado": "2026-10-15T22:34:32.616Z",
- "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (avs-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "7 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Atividades Operacionais\" -> lump_football_operations 0.45; \"Receitas de Formação\" -> youth_football 0.7; \"Rend. Ganhos em Invest. não Financeiros\" -> player_sales 0.6; \"Materiais\" -> admin_general_expense 0.75; \"Seguro Ac. Trab. e Doenças Profi.\" -> wages_squad 0.5"
-  }
- ],
+ "generado": "2026-10-16T03:59:02.212Z",
+ "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2021 (cierre 2021-06-30); pregunta en la cola (no frena)"
  ],
@@ -26,9 +17,9 @@
     "amountNative": 0.373011,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Receitas de Televisão",
@@ -46,9 +37,9 @@
     "amountNative": 0.011774,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Subsídios à exploração",
@@ -62,13 +53,13 @@
    },
    {
     "rawLabel": "Rend. Ganhos em Invest. não Financeiros",
-    "normalizedCategory": "player_sales",
+    "normalizedCategory": "other_income",
     "amountNative": 0.02117,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -98,9 +89,9 @@
     "amountNative": -0.058931,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Energia e Fluidos",
@@ -164,13 +155,13 @@
    },
    {
     "rawLabel": "Seguro Ac. Trab. e Doenças Profi.",
-    "normalizedCategory": "wages_squad",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.110717,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos com ação social",
@@ -178,9 +169,9 @@
     "amountNative": -0.056633,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos com Pessoal",
@@ -188,9 +179,9 @@
     "amountNative": -0.141378,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Impostos",
@@ -258,7 +249,7 @@
      "renglon": "Atividades Operacionais",
      "lado": "revenue",
      "importe": 0.373011,
-     "motivo": "el documento no desglosa este renglón"
+     "motivo": "Claude 2026-10-16 (subagente Sonnet): nota 17 de rédito, prestação de serviços sin desglose (actividades operacionales) [relatorio-contas-2020-21.md L1093]"
     }
    ],
    "grossDebt": null,
@@ -273,7 +264,7 @@
    "title": "AVS — relatorio-contas-2020-21 (ejercicio 2021)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/AVS/relatorio-contas-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/AVS/relatorio-contas-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/AVS/relatorio-contas-2020-21.md",
@@ -307,11 +298,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 0.373011,
    "cat": "lump_football_operations",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): nota 17 de rédito, prestação de serviços sin desglose (actividades operacionales) [relatorio-contas-2020-21.md L1093]",
    "destino": "revenue",
    "amountNative": 0.373011
   },
@@ -338,11 +329,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 0.011774,
    "cat": "youth_football",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): línea propia de formación en la nota 17 [relatorio-contas-2020-21.md L1095]",
    "destino": "revenue",
    "amountNative": 0.011774
   },
@@ -368,12 +359,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.02117,
-   "cat": "player_sales",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): nota 14 Outros rendimentos; los intangibles son software y propiedad industrial, sin derechos de jugadores ni ventas de pases: ganancia por inmovilizado no-pases [relatorio-contas-2020-21.md L1033, L843]",
    "destino": "revenue",
    "amountNative": 0.02117
   },
@@ -390,7 +381,7 @@
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "notaGuido": "precedente del país: 1 clubes (Tondela), nota:outros rendimentos · Claude 2026-10-15 (subagente Sonnet): ingreso, nota 16.1 (L1181)",
+   "notaGuido": "precedente del país: 2 clubes (Tondela, Maritimo), nota:outros rendimentos · Claude 2026-10-15 (subagente Sonnet): 'Outros' se abre con ajustes (Taças, solidaridad FIFA, lugares anuais).",
    "destino": "revenue",
    "amountNative": 0.000832
   },
@@ -417,11 +408,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.058931,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): nota 12 FSE [relatorio-contas-2020-21.md L988]",
    "destino": "expense",
    "amountNative": -0.058931
   },
@@ -512,7 +503,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "precedente del país: 2 clubes (Moreirense, Rio Ave), nota:gastos com o pessoal · Claude 2026-10-15 (subagente Sonnet, seguridad alta): indemnizaciones dentro de gastos de personal; precedentes Fortaleza, Avaí, Lazio [relatorio-contas-2017-18.md L1217]",
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): nota Gastos com o pessoal, precedente indemnizações => wages_squad [relatorio-contas-2023-24.md L1135]",
    "destino": "expense",
    "amountNative": -0.319325
   },
@@ -523,12 +514,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.110717,
-   "cat": "wages_squad",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): como AVS 2024 cargado (data/pt/avs-pt-data.js) [relatorio-contas-2020-21.md L1006]",
    "destino": "expense",
    "amountNative": -0.110717
   },
@@ -540,11 +531,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.056633,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): nota Gastos com o pessoal, precedente Famalicão [relatorio-contas-2023-24.md L1137]",
    "destino": "expense",
    "amountNative": -0.056633
   },
@@ -556,11 +547,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.141378,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): residual de la nota Gastos com o pessoal [relatorio-contas-2023-24.md L1138]",
    "destino": "expense",
    "amountNative": -0.141378
   },
@@ -736,8 +727,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 6,
   "lineasGasto": 15,
   "metaFilas": 2,
