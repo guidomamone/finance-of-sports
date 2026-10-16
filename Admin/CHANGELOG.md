@@ -38,7 +38,8 @@ que dice `ESTADO.md` era verdad ese día.
   respuestas la contradecían.
 - verificar.mjs: el chequeo del año vecino compara un documento en moneda legado (ajuste `moneda` con `euroFijo`) con uno en euros a la
   paridad fija (paridad PTE). Medido: 384 de 385 idénticos; Sporting 2001 pasa a OK (6.419,453 M PTE / 200,482 = 32,02 M EUR, como 2002).
-- Sporting 2001: ajustes anio, cierre, moneda PTE y fx (PTE@2001-07-31 en FX_CLOSE).
+- Sporting 2001: ajustes anio, cierre, moneda PTE y fx (PTE@2001-07-31 en FX_CLOSE); cargado con el lote 88. TODO 239 (el lote saltea por
+  una propuesta vieja aunque haya ajuste anio).
 - lote.mjs, cargar-lote.mjs y pipeline.mjs: texto nuevo de la terminal, aprobado por Guido (pasos 1/5 a 5/5, "Aviso (no frena)", ensayo con
   el costo total, la cola sin pedirle nada a Guido) (r). Solo salida.
 - Lotes 86 y 87: Felgueiras 2021-22 y Benfica 2007-08 cargados; caja de Felgueiras 2022-2024. Listas 80, 86 y 87 al archivo.

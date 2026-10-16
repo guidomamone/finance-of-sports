@@ -47,8 +47,6 @@ con los que no están en los pasos de arriba.
     b0) PORTUGAL, CARGADO SALVO LO QUE ESPERA SCRIPTS (al 2026-10-16). Qué hay en el sitio: Admin/ESTADO-clubes.md (lotes 76 y 79-83;
        los 32 clubes con documento tienen al menos un año). Falta solo lo que espera una mejora de script:
        - Benfica 2014-15 (237 q, en HALLAZGOS).
-       - Sporting 2001 (relatorio-contas-2000.pdf, miles de escudos): ajustes anio, cierre, moneda y fx puestos y la verificación cierra con
-         la paridad PTE (lote 88).
        - Gil Vicente: 2024 se cargó (o se carga) con el consolidado de la Associação (único documento del año) y el resto con la SDUQ.
        Reglas que salieron de Portugal (en CONVENCIONES-DATOS o en las respuestas de la cola): qué entidad se carga cuando el fútbol está
        en una SAD; "Outros" toma la categoría del bloque; cuadros de inventario y de bruto a neto afuera; palcos y cativos a stadium_other;
