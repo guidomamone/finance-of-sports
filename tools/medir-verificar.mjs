@@ -6,7 +6,7 @@
 // POR QUÉ: `lote.mjs --lista Admin/lotes/prueba-*.txt` saltea desde la etapa 3 los documentos cuyo año ya está en el sitio, así que su
 // ensayo ya no mide la verificación de lo cargado (que es justamente lo que un cambio no tiene que romper). Esto corre verificar.mjs
 // (--rubros, como el lote) sobre la lista y guarda, por documento, el estado (OK / COLA / ...), los totales y cada línea que suma
-// (etiqueta, lado, importe, origen), más el financiero y el impuesto. Dos corridas se comparan con --comparar.
+// (etiqueta, lado, importe, origen), más el financiero, el impuesto y los totales (con el resultado que se carga). Dos corridas se comparan con --comparar.
 //
 // SIN EFECTOS AL COSTADO: verificar.mjs agrega casos a la cola, cierra obsoletos y reescribe los derivados de Generados/. Antes de correr se
 // copian Admin/registros/ y los derivados de cada documento de la lista; al terminar se restauran (y se borra lo que no existía). La cola
@@ -62,7 +62,7 @@ function medir(lista, salida, pasadas = 1, script = 'tools/verificar.mjs') {
     const [pv] = derivados(pdf);
     let v = null; try { v = JSON.parse(readFileSync(pv, 'utf8')); } catch { /* sin verificación */ }
     const lin = (arr) => (arr || []).map((f) => [f.lado, f.etiqueta, r6(f.M), f.linea ?? null, f.origen || '']);
-    return { pdf, estado: estadoDe.get(pdf) || '(sin salida)', lineas: v ? lin(v.lineas) : null, financiero: v ? lin(v.financiero) : null, impuesto: v ? lin(v.impuesto) : null };
+    return { pdf, estado: estadoDe.get(pdf) || '(sin salida)', lineas: v ? lin(v.lineas) : null, financiero: v ? lin(v.financiero) : null, impuesto: v ? lin(v.impuesto) : null, totales: v ? v.totales || null : null };
   });
   writeFileSync(salida, filas.map((f) => JSON.stringify(f)).join('\n') + '\n');
   // 3. restaurar
@@ -81,9 +81,10 @@ function comparar(a, b) {
     const y = B1.get(pdf);
     if (!y) { cambios.push(`${pdf}: falta en ${b}`); continue; }
     const mismo = (k) => JSON.stringify(x[k]) === JSON.stringify(y[k]);
-    if (mismo('estado') && mismo('lineas') && mismo('financiero') && mismo('impuesto')) { iguales++; continue; }
+    if (mismo('estado') && mismo('lineas') && mismo('financiero') && mismo('impuesto') && mismo('totales')) { iguales++; continue; }
     const det = [];
     if (!mismo('estado')) det.push(`  estado: ${x.estado}\n       -> ${y.estado}`);
+    if (!mismo('totales')) det.push(`  totales: ${JSON.stringify(x.totales)}\n       -> ${JSON.stringify(y.totales)}`);
     for (const k of ['lineas', 'financiero', 'impuesto']) {
       if (mismo(k)) continue;
       const s = (arr) => new Set((arr || []).map((r) => JSON.stringify(r)));
