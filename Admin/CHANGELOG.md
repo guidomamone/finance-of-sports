@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 12 letras resueltas y medidas (2026-10-16)
+
+- Lotes 82 a 85: unos 40 años nuevos de Portugal (Gil Vicente, Portimonense, Vizela, Chaves, Marítimo 2021-2024, Académica, Felgueiras
+  2023, Paços 2022, Nacional 2025, AVS 2021-2024 con su alta, Casa Pia 2022-2024, Benfica 2006-2007, Sporting 2000 y 2002-2008, 2018 y
+  2021). Sporting 2000 en escudos (PTE, moneda legado con paridad fija); Sporting 2002-2007 con TV y taquilla desde el cuadro de gestión
+  (45 ajustes `fila`, suma exacta). Colas contestadas con subagentes Sonnet y un criterio común de Portugal.
+- verificar.mjs: escalones "acumulados" (totales (A)-(G) del POC), q1/q2 (filas sin lado), lado de las filas del financiero dentro de
+  ingresos o gastos (w), pérdida impresa sin signo (am), vecino sin descartados (l); no reescribe un .rubros.json igual (an).
+- lote.mjs: re-verifica si la cola tiene respuestas más nuevas (af, s); rehace validar o extraer si están viejos (ai, ak, cache-al-dia.mjs).
+- audit.js: "Diferencia de redondeo" no es línea duplicada (aa). vocabulario.mjs: juros SNC (k).
+- Medición: lotes de prueba actualizados (rápida 44, mediana 118, completa 358), tools/medir-verificar.mjs nuevo, medir-cargar.mjs en
+  paralelo (7:16 -> 1:35 min). Lo que falta del 237, con el diseño de cada letra, en el TODO.
+
 ## Versión 706 — Portugal: lotes 79 a 82 (más de 75 años cargados, 26 clubes nuevos); lote.mjs saltea lo cargado; perfil de SAD (2026-10-16)
 
 - Lote 79: Sporting, Porto, Braga, Benfica, Boavista y Santa Clara con su primer año. Lote 80: 46 años más de esos clubes. Lote 81:

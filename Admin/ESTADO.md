@@ -93,8 +93,11 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 - Un club nuevo entra al lote con un solo ejercicio; el resto de sus años, después del alta y de contestar su cola (skill
   `club-or-year-onboarding`), para que las respuestas del primero sirvan de precedente. Las respuestas grandes de la cola que todavía
   no se aplicaron quedan en `Admin/registros/cola-borradores/`. Antes de correr un lote cuyos documentos ya arrastran casos, conviene
-  contestarlos primero (subagentes por grupos de clubes, con un archivo de criterio común) y re-verificar a mano con
-  `node tools/verificar.mjs --lista <lista> --rubros` (gratis): el lote no re-verifica solo un documento con respuestas nuevas (to-do 237 af).
+  contestarlos primero (subagentes por grupos de clubes, con un archivo de criterio común). El lote vuelve a verificar solo un documento
+  con respuestas nuevas; aun así, antes de pasar el comando conviene el ensayo de `cargar.mjs --desde-verificacion` de cada documento,
+  porque frenos de la carga (signo del resultado, filas del otro lado) no se ven en la verificación.
+- Portugal está cargado salvo lo que espera una mejora de script (to-do 165 b0). Lo que falta del to-do 237, con el diseño medido de cada
+  letra, está en el propio to-do; los años en escudos (PTE) se cargan en su moneda con la paridad fija al euro, como las liras.
 - `lote.mjs` saltea desde la etapa 3 los documentos cuyo año ya está en el sitio (salvo `--reintentar`): volver a correr una lista
   trabaja solo sobre lo que falta. En Portugal, si la portada dice SAD o SDUQ, cuotas y otras secciones en 0 son reales en ese
   documento y no se pregunta (`cargar.mjs`); el perfil del club no se toca (Porto publica años del club y de la SAD).

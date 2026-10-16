@@ -33,6 +33,13 @@ no cubre ni la lista ni un año cargado (to-do 232 q): se suma a la lista o va a
   se cortó (Ctrl+C, terminal cerrada), lo avisa y lo reemplaza.
 - Lo que ya está hecho no se repite (queda en `Generados/`, que se respalda en git). Si el .md cambió desde extraer (`cache-al-dia.mjs`:
   misma huella, o cada fila sigue en su línea), un año sin cargar se rehace y uno cargado solo avisa.
+  Además (to-do 237 ai y ak): si las filas son de otra localización (`.filas.json` guarda la huella de la `.ubicacion.json`) se rehacen
+  validar y extraer; si la validación es de otra versión del .md (su `mdSha1`, o la fecha) se rehace solo validar. `cargar.mjs` usa la
+  misma compuerta de la validación (`validacionAlDia`).
+- (to-do 237 af y s) Si la cola tiene respuestas a casos de la etapa 6 de un documento más nuevas que su `.verificacion.json`, el lote lo
+  vuelve a verificar (gratis) antes de decidir el reintento o el rearmado con el texto propio; ya no hace falta `verificar.mjs` a mano.
+- Para medir un cambio: `tools/medir-verificar.mjs` (verificar, sin tocar registros, `--pasadas 2`, `--script` para la versión vieja) y
+  `tools/medir-cargar.mjs` (cargar, en paralelo por club, `--lista`/`--dir`), con las listas `Admin/lotes/prueba-{rapida,mediana,completa}.txt`.
 - Un documento cuyo año ya está en el sitio (registro, o el sitio por el club y año de su propuesta) no pasa por ninguna etapa más: ni
   verificar, ni categorizar, ni la propuesta de carga; dice "ya en el sitio" y la tabla final lo cuenta ahí. Con `--reintentar` sigue el
   camino de siempre. Así un lote que se vuelve a correr trabaja solo sobre lo que falta.
@@ -303,6 +310,13 @@ Mitigaciones:
             la columna con el mismo escalón (en el vecino, si su .verificacion.json dice que cerró así). Casos: Benfica 2005-06 y 2006-07,
             Sporting 1999, 2001 y 2002-03 a 2006-07. Medido con tools/medir-verificar.mjs (prueba-completa, dos pasadas): 349 de 358
             idénticos; los 9 que cambian son esos casos.
+ ESCALONES  "sin-otros" y "otros con el signo del resultado" (to-do 237 q1/q2), después de "acumulados", los dos con compuerta de resultado
+            exacto: el primero repite "acumulados" sin las filas sin lado (un "Cash Flow" impreso debajo del resultado); el segundo lee las
+            filas sin lado con el signo del RESULTADO y sin totales ("(Custos)/Proveitos com transacções de passes", Sporting 2008-09/2009-10).
+ AL ESCRIBIR (to-do 237 w) una fila del financiero que sumó dentro de ingresos o gastos (Juros de una nota de Outros rendimentos) se escribe
+            con el lado de esa lista; (237 am) la pérdida impresa sin signo también se reconoce por el menos al final del importe o por la
+            misma etiqueta en negativo en otra línea; (237 l) el chequeo del año vecino ignora documentos descartados y parciales; (237 an)
+            el .rubros.json no se reescribe si no cambió (glosar no vuelve a pagar).
  ESCALÓN    "sección D" (Versión 589, to-do 166): con el encabezado "D) Rettifiche di valore" (o "Value adjustments") impreso entre el
             financiero y el resultado y sin ajuste manual del financiero en esa zona: las filas sin lado de ahí van al financiero (las de un 18)
             suman |valor|, las de un 19) restan |valor|); compuerta: su suma da exacto el total de D impreso; después las lecturas 0-6 y gana la
