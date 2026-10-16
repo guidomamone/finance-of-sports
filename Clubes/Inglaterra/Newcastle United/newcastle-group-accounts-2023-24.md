@@ -1,0 +1,1959 @@
+> Transcripción: Tesseract OCR + revisión de un subagente de Claude contra la imagen de las páginas clave (estados y notas financieras).
+
+--- pág. 1 ---
+
+Newcastle United Limited
+Financial statements
+For the year ended 30 June 2024
+
+[Sello: TUESDAY — *ADY470A2* — A10 11/03/2025 #26 — COMPANIES HOUSE]
+
+Company no 02529667
+
+--- pág. 2 ---
+
+Newcastle United Limited 7
+Financial statements for the year ended 30 June 2024
+Company information
+Company registration number: 02529667
+Registered office: St. James Park
+NEWCASTLE UPON TYNE
+NE1 4ST
+Directors: Y O Al-Rumayyan
+A A Alhagbani
+J A Reuben
+A M A Rezeeq
+J F Solis Patino
+R Thornton
+Bankers: HSBC UK Bank plc
+24th Floor
+Landmark
+St Peter’s Square
+1 Oxford Street
+Manchester
+M1 4BP
+Deutsche Bank AG
+1 Great Winchester Street
+London
+EC2N 2DB
+Independent Auditor: RSM UK Audit LLP
+Statutory Auditors
+Chartered Accountants
+25 Farringdon Street
+London EC4A 4AB
+
+--- pág. 3 ---
+
+Newcastle United Limited
+Financial statements for the year ended 30 June 2024
+Index to the financial statements
+
+Group strategic report 1-8
+Directors’ report , 9-11
+Independent auditor's report . 12-14
+
+Consolidated statement of comprehensive income | 15
+Consolidated statement of financial position 16
+
+Consolidated statement of changes in equity 17 ,
+
+Company statement of financial position 18
+
+Company statement of changes in equity 19
+Consolidated statement of cash flows © 20
+Notes to the financial statements 21 - 45 .
+
+--- pág. 4 ---
+
+Newcastle United Limited 1 .
+Financial statements for the year ended 30 June 2024
+Group strategic report
+Principal activities and business review
+The Directors present the Group’s strategic report for the year ended 30 June 2024.
+The principal activities of the Group during the year were the operation of professional football clubs together with
+related and ancillary activities.
+The Group has continued its on and off the pitch progress and growth in the 2023/ 24 season driven by the vision
+and investment provided by the shareholders led by PIF. These reports and accounts set out a brief summary of the
+substantial progress made by the Group in the year delivering substantial revenue growth, continued strong on pitch
+performance and further strengthening of the Group’s underlying organisational capacity.
+The Directors report a loss after tax for the year of £11.1m (2023: loss £71.8m restated), a substantial reduction in
+the loss from the last 2 financial years. The Club has generated significant revenue growth from participation in the
+UEFA Champions League (“UCL”) alongside an enhanced profit on player trading, partially offset by further
+investment into the playing squad and in the Club’s operational performance.
+UCL participation and growth across key sponsorship and commercial income streams contributed towards a profit
+of £28.8m before player amortisation & impairment (2023: profit of £21.6m restated). Player amortisation &
+impairment costs rose to £97.5m (2023: £89.3m) in line with the increased value of the playing squad offset by an
+increase in the Profit on Disposal of players and staff registrations of £69.8m (2023 £2.8m).
+The continuation of investment into the team to improve its competitive position and to develop the Group’s
+infrastructure has led to further improvements in the Group’s commercial revenues and overall financial
+performance.
+On the pitch, the men’s team were drawn in a very challenging UCL Group and did not progress further than the
+Group Stages and finished 7th in the Premier League. The team also reached both the EFL and FA Cup Quarter Finals,
+the first time that has been achieved in the same season in 20 years. Average crowds at St James’ Park continued to
+exceed 52,000 — the Club’s incredible support and match day atmosphere is a major aid to the team’s on pitch
+performance.
+Newcastle United Women who, with significant investment, turned full time professional in the summer of 2023,
+secured their second consecutive promotion, winning the FA Northern Premier League at the 1st attempt, and are
+playing in the FA Women’s Championship in 2024-25.
+The Club continued to invest in its operations and assets to grow revenue and improve performance. The Club entered
+into several new commercial partnerships including an innovative shirt sponsorship deal with Sela. Working together
+Sela and the Club produced some outstanding activations including “Unsilence the Crowd” with the Royal National
+Institute for the Deaf which garnered much positive press coverage and praise. An investment of £4m into
+improvements to certain Hospitality lounges at St James Park significantly enhanced hospitality revenue and May 24 saw
+the successful launch of the Club’s inhouse retail operation driven by its new kit partnership with Adidas after many
+years of having outsourced the retail operations and sales.
+The Club invested into the construction of the ‘St James STACK, powered by Sela’(“STACK”) fan park which opened
+in early August 24 and is already enhancing the food and beverage experience in Newcastle.
+Further investments were also made into the First Team and Academy Training Grounds to continue to develop them
+to match the Club’s ambitions. During the year Dan Ashworth left to join Manchester United after the agreement of
+compensation between the two clubs and, subsequent to the year end, Paul Mitchell replaced him in the role of Sporting
+Director. The Executive team has also been strengthened with Brad Miller joining as Chief Operating Officer. Overall
+employee numbers also continued to grow across all areas of the club (see note 7) as the Group expanded its operations
+to meet the enhanced performance standards being set.
+After the year end Amanda Staveley stepped down from the Board of Directors of the Group and divested her
+shareholding in the Group. Roger Thornton and Jacobo Solis joined the Board.
+
+--- pág. 5 ---
+
+Newcastle United Limited 2
+Financial statements for the year ended 30 June 2024
+
+Group strategic report
+
+The Group's key financial performance indicators are listed below:
+
+| | 2024 | 2023 Restated* | Inc/(Dec) |
+|---|---:|---:|---:|
+| Turnover | £320.3m | £250.3m | £70.0m |
+| Operating profit before amortisation & impairment | £28.8m | £21.6m | £7.2m |
+| Operating profit/(loss) | £1.2m | (£64.9m) | £66.1m |
+| Loss after tax | £(11.1m) | (£71.8m) | £60.7m |
+| Staff costs to turnover ratio | 68.3% | 74.0% | (5.7%) |
+| Cash at year end | £15.4m | £13.4m | |
+| Average home league attendance | 52,115 | 52,205 | |
+| League position | 7th | 4th | |
+
+*as detailed on page 21 the Group has amended its accounting policy for loyalty bonus accounting, and the 2023 prior year results have been restated to be consistent with this amended policy.
+
+Financial overview
+
+Turnover increased £70.0m (28%) from £250.3m to £320.3m, with significant increases across the majority of the main revenue streams. An analysis by category is shown in Note 4 on page 32, with the principal movements explained below.
+
+- Match income increased £12.2m (32%) from £37.9m to £50.1m, including 3 home UCL fixtures which significantly increased the home revenue and with 1 home and 6 away domestic cup fixtures played in the year (2022-23: 7 fixtures)
+- Media income (excluding UEFA distributions) fell £11.5m (7%) from £165.5m to £154.0m. The merit award decreased in line with the club's 7th place finish in the league (2022-23: 4th) and the number of live TV appearances decreased to 24 (2022-23: 26).
+- UEFA Champions League distributions amounted to £29.8m (2022-23 £nil).
+- Commercial income increased £39.7m (90%) from £43.9m to £83.6m with growth in the club's main commercial partnerships income from new and enhanced deals with Sela, Noon, Fenwick, InPost and Adidas all contributing to the rise in revenue. The release of the four part documentary 'We Are Newcastle United' on Amazon Prime in August 23 together with changes in the operating and financial models for the Club's retail and catering activities all contributed to the overall increase in Commercial income.
+
+Operating expenses for the year increased £62.9m (28%) to £291.5m (2023 £228.6m). The main components of those costs are as follows:
+
+Staff costs increased £33.6m (18%) from £185.1m to £218.7m, the main factors being an increase in first team squad costs, along with an increase of c115 employees across the club (see note 7) as the development of a fit for purpose operational structure continues across football operations, commercial teams, executive and central support functions.
+
+Other operating expenses rose £27.7m (69%) from £40.1m to £67.8m, the majority of the increase being in line with increased revenues (see Match income and Commercial income above) and the development of departments across the club also referenced above.
+
+The net effect of the above is an improvement in operating profit before player amortisation and impairment to £28.8m from £21.6m in 2023.
+
+Amortisation increased by £9.9m from £86.8m to £96.7m, reflecting a full year impact of January 2023 player spend, together with additions in Summer 2023 including Barnes, Tonali, Livramento and Hall. There were impairment charges of £0.8m in the year (2023: £2.5m).
+
+Profit on disposal of players' and staff registrations totalled £69.8m (2023: £2.8m) mainly arising from the sales of Anderson, Minteh and Saint-Maximin.
+
+--- pág. 6 ---
+
+Newcastle United Limited 3 :
+Financial statements for the year ended 30 June 2024
+Group strategic report
+The net interest cost increased £5.4m to £12.3m (2023: £6.9m). The Group operates a term loan facility of £50m
+and a revolving loan facility of £25m with HSBC UK Bank Plc and Deutsche Bank AG, both of which bear interest
+at market rates which have increased over the period. Utilisation of these facilities resulted in an interest charge of
+£5.8m (2023: £3.7m). In addition a net (notional) interest charge of £7.2m (2023: £4.2m) arose from the unwinding
+of the notional discounts on deferred player trading payments and receipts, the increase reflecting the player
+acquisitions during the year together with an increase in the Group’s cost of capital arising from increases in Bank of
+England base rates.
+The Group incurred a reduced loss before and after tax of £11.1m (2023: Loss: £71.8m before tax increasing to
+£71.9m after a taxation charge of £0.1m).
+Net assets increased £85.9m to £248.3m at 30 June 2024 (30 June 2023: £162.4m):
+- Intangible assets increased £87.8m to £350.0m (30 June 2023: £262.2m) as a result of the player acquisitions
+referenced above.
+- Investment into the stadium, First Team Training Ground and STACK accounted for the majority of the
+£16.4m tangible fixed asset additions.
+- Current assets increased from £56.9m to £169.6m mainly due to transfer fees receivable at year end.
+- Current liabilities increased from £120.5m to £195.3m driven amongst other reasons by an increase in transfer
+fees payable within 12 months
+- Creditors falling due after more than one year increased from £107.7m to £140.4m, mainly due to transfer fees
+payable at year end.
+- Provisions increased from £5.1m to £23.1m, being the net result of new provisions required in relation to
+player acquisitions in the year and onerous employment contracts and amounts utilised and/or released during
+the year.
+Cashflow
+The Group had a net cash inflow of £2.0m in the year (2023: net cash inflow of £8.4m). Cash generated from
+operating activities of £27.9m (2023: cash used £3.0m) together with equity funding received of £97m (2023:
+£127.4m equity funding plus £50.0m term loan) was invested into the acquisition of intangible and tangible assets
+totalling £126.3m (2023: £167.6m). The year end cash balance was £15.4m (2023: £13.4m)
+Section 172 Statement
+Section 172 of the Companies Act 2006 requires directors to take into consideration the interests of all stakeholders
+in promoting the success of the Group and, in doing so, have regard to a range of matters in their decision making
+including:
+- the likely long term consequences;
+- the interests of the Group’s employees;
+- the need to foster the Group’s business relationships with suppliers, customers and others;
+- the impact of the Group’s operations on the community and the environment;
+- the reputation for a high standard of business conduct; and
+- the need to act fairly as between members of the Group
+The Board schedules at least 4 meetings a year and additional meetings are held as required to approve transactions
+with short timescales. The Group has four standing committees: Nomination and Remuneration, Executive,
+Football, and Audit, Risk and Compliance. The Board has delegated certain powers and responsibilities to each of
+these committees. Decision making powers across the Group are defined in a formal Delegation of Authority
+framework, and the Club’s Executive, Commercial, Finance and Legal teams have weekly calls with various
+representatives of the ownership groups to facilitate the appropriate governance over decision making.
+The Directors have identified the Group’s key stakeholder groups - Local, national and international supporters,
+Employees, Community, Business Partners and Shareholders— and understand their duty to each.
+
+--- pág. 7 ---
+
+Newcastle United Limited 4
+Financial statements for the year ended 30 June 2024
+Group strategic report
+Long Term consequences of decisions
+The Club has a long term strategy defining the Shareholders’ and Board’s ambitions for the Group. This strategy
+takes into account the long term impact of each major decision the Group is making on the range of stakeholders as
+‘set out below. The Board considers all the relevant impacts in making decisions reviewed through both the
+considerations of the Board and its subsidiary committees which may be involved when a decision is made based on
+the Club’s Governance Structure.
+Reputation for high standard of business conduct
+The Company Board has set out policies and processes which require it to operate in accordance with best standards
+of corporate governance. These polices cover areas such as:.
+- The operation of an Audit and Risk Committee with powers delegated by the Board to oversee the risk
+position of the Club;
+- Policies to minimise risk of the Club engaging with companies or individuals involved in Corporate
+corruption and money laundering
+- The implementation of a Tax Strategy which defines a low risk approach to Tax compliance and the
+implementation of policies to minimise the risk of the Club engaging with companies or individuals
+involved in Tax evasion or Fraud;
+- The Clubs public commitment to the UN Climate Change for Sport goals.
+- The implementation of a public strategy to minimise the risk of the Club engaging with companies or
+individuals involved in Modern Slavery.
+- Accreditation of the Club as a living wage foundation accredited employer.
+Supporters
+Newcastle United’s supporters are at the core of all the Club’s activities and are the Club’s largest group of customers.
+The Club is committed to collaborative, constructive and consistent engagement with supporters, wherever they may be,
+ensuring fans have an opportunity to inform the club’s decision-making at all levels. The Club’s Fan Advisory Board
+was constituted during the year, holding its first meeting in February 2024. The board of nine elected supporter
+members serves as a direct linkage between the Club’s management and fans, meeting with the Club at least three times
+"a year, to consult on major issues impacting the Club and its supporters.
+In addition, the Club has also undertaken large scale in person and online fans forums to update the fan base on Club
+developments as well as numerous smaller consultations with fan groups in a variety of ways, including in person
+workshops on a range of issues as well as online meetings and broader consultations.
+The Club undertook a major consultation on the future of St James Park with CAA Icon undertaking a survey of
+attitudes and interest which received over 18,000 responses from the Club’s Fans. This consultation is informing the
+Clubs initial review of its strategic options.
+The Club has also worked in consultation with fans to deliver several initiatives over the past 12 months to improve the
+supporter experience at St. James’ Park including the introduction, of licensed safe standing following a supporter
+consultation process reaching more than 4,000 fans. Digital ticketing was introduced to bring St James’ Park in line with
+other world class arenas. Ticket ballots were also introduced for season tickets holders and members to give greater
+matchday access for a wider range of fans and after consulting with the Fanbase this has been slightly enhanced for
+season 24/25 with 20% of tickets being sold on a 1st come 1st served basis. The St James STACK Fanzone on
+Strawberry Place was constructed during the year which successfully opened in August 2024 creating a great new venue
+for fans to congregate. Monthly meetings with individual supporters and groups including Newcastle United Supporter
+Trust (NUST) and Newcastle United Disabled Supporters Association (NUDSA) continue to be held. The Club also is
+developing its international fan base with a process of recognising and engaging with international fan groups.
+
+--- pág. 8 ---
+
+Newcastle United Limited 5 .
+Financial statements for the year ended 30 June 2024
+Group strategic report
+Customers
+As noted above the Club’s fans are the largest Group of customers for the Club, in areas such as ticketing, hospitality
+membership and retail. The Club also has larger corporate customers in areas such as commercial sponsorship. In all
+these areas the Club strives to:
+- Provide services and products to the appropriate standards and quality;
+- Set pricing in a fair and transparent way;
+- Work with the Clubs Fans and customers to develop the Clubs products, facilities and offerings to enhance ~
+the customer experience;
+'¢@ — Provide access to high demand products in ways which balances the interests of long term loyal customers and
+new customers;
+- Work with customers to provide equitable payment terms which both protect the Club but allow customers to
+spread the cash impact such as season ticket holder direct debit payment schemes.
+- The Club works with its commercial partners towards building strong and enduring relationships which add
+value to both parties.
+Employees
+Newcastle United’s success is built on the hard work, passion, collaboration and self-discipline of its people and it is
+these values which define the organisation. The Groups’ commitment to its employees is to ensure its values guide all
+parts of an employee journey through recruitment, induction, development, progression and recognition. The Club
+strives to be inclusive, supportive and trusted and to engage with employees through regular events, internal
+communications, Employee Forum and values-based recognition. The Group focuses on wellbeing including providing
+access to healthcare services, independent counselling and wellbeing resources as well as working with partner
+agencies. The Club is an Accredited Living Wage Employer, and its total reward offers are independently benchmarked
+to ensure fairness and consistency, and to aid attraction and retention.
+Community
+Newcastle United is uniquely a club at the heart of its community and plays a key role in the North East, working in
+partnership with Newcastle United Foundation and in collaboration with local councils, businesses and agencies to
+support delivery of community programmes. Using the power of football to connect, motivate and inspire people,
+Newcastle United Foundation delivers education, health and wellbeing, employability and sports programmes across the
+region, and in 2023/24 supported almost 70,000 people through outreach work and at NUCASTLE, its world class
+community hub located five minutes’ walk from St. James’ Park. Club employees are supported to volunteer through
+Foundation and community programmes and the club works closely with supporter groups, who are part of the
+Newcastle United family.
+The Club’s investment into the St James’ STACK has created a vibrant community asset and has generated over 165
+jobs in the City whilst partnering with a number of local food providers to support the local business community.
+Newcastle United is a Gold Partner of NewcastleGateshead Initiative, taking a seat on the destination marketing
+organisation’s strategic board. Through this relationship the club actively supports the region’s economic ambitions
+to increase inbound tourism and investment to the region. The Club continues to work with regional stakeholders to
+identify opportunities to host special sporting, cultural and business events at St. James’ Park, with many world class
+events successfully delivered, returning in subsequent years.
+The Club’s delivers its EDI commitments under its Diversity and Inclusion brand “United as One”. The Club actively
+seeks out new additions to the Newcastle United family to enable it to increase its diversity and to better reflect the
+communities it serves. The Club works with a broad range of partners, supporter and community groups in the EDI
+space and recently hosted Unite for Access, Show Racism the Red Card and Iftar events at our Stadium. Newcastle
+United are proud signatories to the Football Leadership Diversity Code and have achieved the Premier League’s
+Equality, Diversity and Inclusion standard at Intermediate Level.
+
+--- pág. 9 ---
+
+Newcastle United Limited 6
+Financial statements for the year ended 30 June 2024
+
+Group strategic report
+
+Business relationships
+
+The Group recognises the importance of strong business relationships with its suppliers and other stakeholders, and also the need to be seen to be upholding high standards of compliance and business conduct. When significant decisions are made Newcastle United considers the impact on its business partners, suppliers, its reputation and how its decisions will impact all its key stakeholders.
+
+The Group has historically had strong local business relationships which it continues to value, and is now building a commercial team who will continue to develop the relationships which are vital in supporting its global ambitions. The group has relationships with commercial and business partners at local and national levels which it values and continues to develop and intends to also grow at an international level, building engagement with fans and other business partners for mutual impact. Local networks provide a high level of engagement with the club and form a key part of the club's supply chain, particularly in areas such as stadium maintenance and IT.
+
+The Club is also a Partner Member of the North East Chamber of Commerce to ensure a presence at regional networking opportunities. Newcastle United has recently launched its own Business Club, which will give organisations the opportunity to establish closer links with the club.
+
+Streamlined Energy and Carbon Reporting (SECR)
+
+The Group is committed to ensuring all activities are managed in a sustainable way and with minimal environmental impact.
+
+As part of the annual Streamlined Energy and Carbon Reporting (SECR) requirements the following table details the carbon emissions used per scope area (full scope 3 emission calculation is not necessary for SECR but is currently being calculated and will be available for future reports
+
+| | Year ended 30 June 2024 — Energy Usage (kWh) | Year ended 30 June 2024 — Greenhouse Gas Emissions (tCO2e) | Year ended 30 June 2023 — Energy Usage (kWh) | Year ended 30 June 2023 — Greenhouse Gas Emissions (tCO2e) |
+|---|---:|---:|---:|---:|
+| **Scope 1 – Direct GHG Emissions** | | | | |
+| Gas consumption | 10,269,400 | 1,879 | 10,805,638 | 1,973 |
+| Transport consumption | 331,143 | 79 | 376,138 | 91 |
+| **Scope 2 – Energy Indirect Emissions** | | | | |
+| Purchased Electricity consumption | 7,061,459 | 1,462 | 6,840,313 | 1,323 |
+| **Scope 3 – Other Indirect Emissions** | | | | |
+| Business Travel in rental cars/vans and employee owned vehicles | 540,266 | 124 | 248,347 | 58 |
+| **Total** | **18,202,268** | **3,544** | **18,270,436** | **3,445** |
+| Emissions Intensity Ratio (tCO2e per £1m turnover) | 11.06 | | 13.76 | |
+
+The Group has chosen tonnes of carbon emitted per £million turnover for its Intensity Ratio.
+
+External consultants used collected data from supplier invoices, fuel usage and mileage records, in line with the methodology set out in the GHG Protocol – Corporate Standard and the Energy Managers Association guidance. UK Government GHG Conversion factors for Company Reporting for 2023 were used in the conversion of transport and other fuels into kWh and CO2e. Data collected confirms the Group's highest consuming area is St James' Park, totalling 81.62% of the overall tCO2e emissions.
+
+The Group has continued to make extensive progress with LED lighting, primarily at St James' Park, where twenty areas have benefited from upgrades which are estimated to save over £3k annually. Variable Speed Drives (VSD) have been installed onto Air Handling Units (AHU). Prior to installation, AHUs on site were running 112 hrs pr week at 100% speed. Post installation this reduced to 70% providing a reduction in energy consumption. Three Potterton 130kW boilers were installed in December 2023 to the South West plant room at St James' Park. These boilers have a gross seasonal efficiency of up to 97.3% which is significantly higher than the end of life boilers they replaced.
+
+--- pág. 10 ---
+
+Newcastle United Limited . 7 .
+Financial statements for the year ended 30 June 2024
+Group strategic report
+The Sustainability agenda has moved forward significantly during the year under review with several initiatives
+implemented:
+- Installation of new recycling bins in offices across all three of the Group’s sites to increase separation of waste
+at source and improve recycling rates.
+- Staff participation in litter picks within the local community.
+- ‘Meat free Monday’ staff lunches at the stadium and plans to install a kitchen garden at the Training Ground to
+supply the kitchens at that site.
+- Installation of a new waste compactor, and utilisation of the telemetry system to automatically call off when a
+compactor needs emptying rather than having scheduled weekly collections.
+- Completion and submission of the Energy Saving and Opportunity Scheme report to comply with the
+Environment Agency deadline.
+- Completion of the Club’s carbon footprint, including Scopes 1, 2 and 3. This work is a continual process, and
+the footprint will be completed annually to measure improvement.
+- Support for North East Community Forests with monetary and volunteering contributions to plant an orchard
+garden within a local village.
+- Appointment of external consultants to implement a dedicated energy monitoring system within the stadium
+with multiple metering positions to provide granular electricity consumption details.
+- Continued support of the ‘Magpie Mover’ ticket which offers discounted match day travel, the Marketing team
+re-designed the ticket and carried out promotions on match days through the programme and in stadia screens.
+- Worked collaboratively with Newcastle City Council and transport providers to give all fans attending the
+men’s and women’s games over the weekend of the 10th /11th February 2024 free travel on Tyne & Wear
+Metro and local bus services. The City Council reported a reduction in car park occupancies and increase in bus
+passenger numbers over the weekend.
+
+Principal risks and uncertainties
+
+There are a number of key business risks and uncertainties which could materially impact on the Group’s performance.
+
+The Board regularly reviews and monitors these risks and the actions required to manage and/or mitigate them:
+
+Football performance: membership of the Premier League is hugely important for the Group’s revenue and
+cash generation and poor league performance, or relegation from the league for any prolonged period of
+time, will severely impact all the Group’s major income streams. Qualification for UEFA Competitions has
+a significant impact on the Club's income and costs in season where participation is achieved.
+
+a Retention and recruitment of playing staff and other key employees in what is a highly competitive domestic
+and international market.
+
+Unavailability of key playing staff for any prolonged period of time through injury, illness or suspension.
+
+Football Governance: the club is governed by the rules and regulations of the FA, PL, EFL, UEFA and
+FIFA in areas such as competition formats, revenue distribution, Profitability and Sustainability, eligibility of
+players and operation of the transfer market, and changes to any of these could significantly impact the club.
+The Group monitors its compliance with all applicable rules and regulations and the likely impacts of any
+potential changes.
+
+Negotiation of key commercial contracts — including Premier League and UEFA centrally negotiated
+broadcasting and commercial agreements.
+
+Health and safety risks associated with the stadium operation on match and non-match days.
+
+Cash management, including the impact of dealing with overseas customers and suppliers where
+
+transactions (particularly the purchase and sale of player’s registrations) are subject to currency fluctuations.
+
+Liquidity risk around the Group’s working capital inflows and outflows is managed through preparation,
+regular review and update of financial forecasts, including stress testing for material items. The Group
+monitors compliance with the terms and conditions and financial covenants of its bank facilities on a
+continuous basis.
+
+--- pág. 11 ---
+
+Newcastle United Limited 8
+Financial statements for the year ended 30 June 2024
+
+Future Outlook
+
+The Group and its shareholders are committed to the ongoing development of the Club with an ambitious investment
+
+programme to deliver sustained success and profitability.
+
+- Football Performance: The men’s team currently sits mid table in the Premier League
+
+- Newcastle United Women (“NUW’”) — Since becoming full time professional the Club has been promoted
+to the FAWSL Championship. The group continues to invest to challenge for promotion to the WSL and
+NUW’ currently sits mid table in the FAWSL Championship.
+
+- Commercial Revenue: The Club has built on the gains from last year with Sela, Noon, Fenwick, InPost and
+
+Adidas, with new deals with VI Markets, RedBull and Bet365 continuing to increase the Club’s partnership
+
+income.
+
+- The Clubs inhouse retail operation and partnership with Adidas commenced in May 24 with a successful
+home shirt launch and is expected to lead to a significant increase in the Club’s revenue.
+
+- The Group is continuing to explore a range of options in relation to potential enhancement or expansion of
+St James’ Park or the development of a new stadium. Work is also being undertaken to determine the
+preferred way forward in relation to the Clubs’ training infrastructure.
+
+- The Group opened its new Fanzone ‘St James’ Park STACK presented by Sela’ in August 2024 and trading
+has been strong to date.
+
+This report was approved by the board on 16.01.2025 - and signed on its behalf.
+
+Y O Al-Rumayyan
+
+--- pág. 12 ---
+
+Newcastle United Limited ‘ 9 oy
+Financial statements for year ended 30 June 2024
+Directors’ report
+
+The Directors present their report and the financial statements for the year ended 30 June 2024.
+
+Information included in the Strategic Report
+
+The Group has chosen, in accordance with Companies Act 2006 s.414C(11), to set out in the Group’s strategic report
+
+information required by the Large and Medium-sized Companies and Groups (Accounts and Reports) Regulations 2008
+
+Sch. 7 to be contained in the Directors’ Report. It has done so in respect of engagement with employees, suppliers,
+
+customers and others, carbon reporting disclosures and future developments as the directors consider these to be of
+
+strategic importance to the Group.
+
+Dividends
+The Directors do not recommend the payment of a dividend for the year ended 30 June 2024 (2023: £nil).
+Directors
+The Directors who served during the year, and subsequent to the year end were:
+
+Y O Al-Rumayyan
+A A Alhagbani
+J A Reuben
+A M A Rezeeq
+R Thornton (appointed 25 July 2024)
+J F Solis Patino (appointed 16 December 2024)
+A L Staveley (resigned 12 July 2024)
+Directors’ responsibilities statement
+The Directors are responsible for preparing the Group Strategic Report, the Directors’ Report and the consolidated
+financial statements in accordance with applicable law and regulations.
+Company law requires the Directors to prepare financial statements for each financial year. Under that law the
+Directors have elected to prepare the financial statements in accordance with United Kingdom Generally Accepted
+Accounting Practice (United Kingdom Accounting Standards and applicable law), including FRS 102 “The Financial
+Reporting Standard applicable in the UK and Republic of Ireland’. Under company law the Directors must not
+approve the financial statements unless they are satisfied that they give a true and fair view of the state of affairs of
+the Group and the Company and of the profit or loss of the Group for that period. In preparing these financial
+statements, the Directors are required to:
+select suitable accounting policies and then apply them consistently;
+make judgements and accounting estimates that are reasonable and prudent;
+" state whether applicable UK Accounting Standards have been followed, subject to any material departures
+disclosed and explained in the financial statements; and
+prepare the financial statements on the going concern basis unless it is inappropriate to presume that the
+Group and the Company will continue in business.
+The Directors are responsible for keeping adequate accounting records that are sufficient to show and explain the
+Group’s and Company’s transactions and disclose with reasonable accuracy at any time the financial position of the
+Group and the Company and enable them to ensure that the financial statements comply with the Companies Act
+2006. They are also responsible for safeguarding the assets of the Group and the Company and hence for taking
+reasonable steps for the prevention and detection of fraud and other irregularities.
+The Directors are responsible for the maintenance and integrity of the corporate and financial information included
+on the Company’s Website. Legislation in the United Kingdom governing the preparation and dissemination of
+financial statements may differ from legislation in other jurisdictions.
+
+--- pág. 13 ---
+
+Newcastle United Limited 10
+Financial statements for the year ended 30 June 2024
+,
+Directors’ report (continued)
+Directors’ Indemnities
+The Group has made qualifying third party indemnity provisions for the benefit of the Directors which remain in place
+at the date of this report.
+Political and charitable donations
+The Group’s charitable donations for the year amounted to £920,000 including quantifiable gifts in kind to
+Newcastle United Foundation (“NUF”). (2023: £868,000 including quantifiable gifts in kind to NUF). There were no
+political contributions (2023: £nil).
+Payment to suppliers
+The Group does not have a standard creditor payment policy but seeks the best possible terms from suppliers
+appropriate to its business and, in placing orders, gives consideration to quality, price and terms of payment, which will
+be agreed with suppliers when the details of each transaction are settled. The Group will continue to honour its
+contractual and other legal obligations and to pay creditors on the dates agreed in contracts and purchase orders.
+Principal financial risk management policies and objectives
+The Group aims to minimise financial risk and prepares rolling cash flow and profit forecasts to monitor
+performance against budget, and to ensure that its available cash is managed effectively.
+The financial assets that expose the Group to financial risk include cash and trade debtors. Cash is held at HSBC
+UK Bank Plc. Trade debtors are monitored closely to minimise the possibility of bad debts arising. Amounts due
+from other clubs are covered by specific football creditor rules as a result of which these amounts carry minimal risk
+of default. In relation to player trading transactions the Group may, where appropriate, use foreign exchange forward
+contracts to minimise the foreign exchange risk associated with future trade receivables.
+Employee involvement
+The Group recognises the importance of employee engagement and, within the bounds of commercial
+confidentiality, seeks to keep staff across the organisation informed of matters relating to the performance of the
+Group that may be of interest to them as employees. Further details are contained in the Strategic Report.
+Disabled employees
+The Group ensures that all employees, and job applicants, are treated fairly, in accordance with its Group policies
+and values. Applications for employment by disabled persons are fully considered and assessed objectively against
+the requirements of the job, giving consideration to any reasonable adjustments that may be required for someone
+with a disability. In the event that an existing employee becomes disabled, all reasonable and practicable steps will be
+taken to ensure their employment with the Group continues.
+
+Subsequent events
+After the year end the Group contracted for the acquisition and disposal of a number of player registrations. The net
+cost of these transfers, excluding any contingent fees was £20m (2023: £124m).
+
+Subsequent to the year end, on 30 October 2024, Newcastle United Limited issued 1 ordinary share in respect of £35m
+further equity funding.
+
+Going concern
+Detailed cash flow forecasts have been prepared for the period until 30 June 2026 to undertake an assessment of the
+Group’s going concern status.
+
+--- pág. 14 ---
+
+Newcastle United Limited 11
+Financial statements for the year ended 30 June 2024
+
+Directors’ report (continued)
+
+The Group has obtained a letter from PZ Newco Limited, the immediate parent, confirming that the present policy of PZ Newco Limited will ensure the Group receives sufficient support, including funds, to meet its liabilities as they fall due for the period to 30 June 2026. The letter notes that this is an expression of PZ Newco Limited’s present policy and should not be construed as constituting a promise as to future conduct and does not create any legally binding obligations. PZ Newco Limited has received equivalent letters from each of its beneficial owners.
+
+The Directors have, after careful consideration of those matters set out above, concluded that the Company and the Group remain a going concern and, as a result, have prepared the financial statements on the going concern basis.
+
+Disclosure of information to auditor
+
+The Directors at the time when this Directors’ Report is approved have confirmed that:
+- so far as they are aware, there is no relevant audit information of which the Company and the Group’s auditor is unaware; and
+- they have taken all the steps that they ought to have taken as directors in order to make themselves aware of any relevant audit information and to establish that the Company and the Group’s auditor is aware of that information.
+
+This report was approved by the board on 16.01.2025 and signed on its behalf.
+
+[firma]
+Y O Al-Rumayyan
+Director
+
+--- pág. 15 ---
+
+12
+,
+Independent auditor's report to the members of
+Newcastle United Limited
+Opinion
+We have audited the financial statements of Newcastle United Limited (the ‘parent company’) and its subsidiaries (the
+‘group’) for the year ended 30 June 2024 which comprise the Consolidated statement of comprehensive income,
+Consolidated and Company statements of financial position, Consolidated and Company statements of changes in
+equity, Consolidated statement of cash flows and notes to the financial statements, including significant accounting
+policies. The financial reporting framework that has been applied in their preparation is applicable law and United
+Kingdom Accounting Standards, including FRS 102 ‘The Financial Reporting Standard applicable in the UK and
+Republic of Ireland’ (United Kingdom Generally Accepted Accounting Practice).
+In our opinion, the financial statements:
+give a true and fair view of the state of the group’s and of the parent company’s affairs as at 30 June 2024 and of
+the group’s loss for the year then ended;
+have been properly prepared in accordance with United Kingdom Generally Accepted Accounting Practice; and
+have been prepared in accordance with the requirements of the Companies Act 2006.
+Basis for opinion
+We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and applicable
+law. Our responsibilities under those standards are further described in the ‘Auditor’s responsibilities for the audit of
+the financial statements’ section of our report. We are independent of the group and the parent company in
+accordance with the ethical requirements that are relevant to our audit of the financial statements in the UK,
+including the FRC’s Ethical Standard, and we have fulfilled our other ethical responsibilities in accordance with these
+requirements. We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for
+our opinion.
+Conclusions relating to going concern
+In auditing the financial statements, we have concluded that the directors’ use of the going concern basis of accounting in
+the preparation of the financial statements is appropriate.
+Based on the work we have performed, we have not identified any material uncertainties relating to events or conditions
+that, individually or collectively, may cast significant doubt on the group’s or the parent company’s ability to continue as
+a going concern for a petiod of at least twelve months from when the financial statements are authorised for issue.
+Our responsibilities and the responsibilities of the directors with respect to going concern are described in the relevant
+sections of this report.
+Other information
+The other information comprises the information included in the annual report, other than the financial statements and
+our auditor’s report thereon. The directors are responsible for the other information contained within the-annual report.
+Our opinion on the financial statements does not cover the other information and, except to the extent otherwise
+explicitly stated in our report, we do not express any form of assurance conclusion thereon.
+Our responsibility is to read the other information and, in doing so, consider whether the other information is materially
+inconsistent with the financial statements or our knowledge obtained in the course of the audit or otherwise appears to
+be materially misstated. If we identify such material inconsistencies or apparent material misstatements, we are required
+
+to determine whether this gives rise to a material misstatement in the financial statements themselves. If, based on the
+work we have performed, we conclude that there is a material misstatement of this other information, we are required to
+report that fact.
+We have nothing to report in this regard.
+
+--- pág. 16 ---
+
+13 .
+1 1
+Independent auditor's report to the members of
+Opinions on other matters prescribed by the Companies Act 2006
+In our opinion, based on the work undertaken in the course of the audit:
+the information given in the strategic report and the directors’ report for the financial year for which the financial
+statements are prepared is consistent with the financial statements; and
+the strategic report and the directors’ report have been prepared in accordance with applicable legal requirements.
+Matters on which we are required to report by exception
+In the light of the knowledge and understanding of the group and the parent company and their environment
+obtained in the course of the audit, we have not identified material misstatements in the strategic report or the
+directors’ report.
+We have nothing to report in respect of the following matters in relation to which the Companies Act 2006 requires
+us to report to you if, in our opinion:
+adequate accounting records have not been kept by the parent company, or returns adequate for our audit have
+not been received from branches not visited by us; or
+the parent company financial statements are not in agreement with the accounting records and returns; or
+certain disclosures of directors’ remuneration specified by law are not made; or
+id we have not received all the information and explanations we require for our audit.
+Responsibilities of directors
+As explained more fully in the directors’ responsibilities statement set out on page 9, the directors are responsible for
+the preparation of the financial statements and for being satisfied that they give a true and fair view, and for such
+internal control as the directors determine is necessary to enable the preparation of financial statements that are free
+from material misstatement, whether due to fraud or error.
+In preparing the financial statements, the directors are responsible for assessing the group’s and the parent
+company’s ability to continue as a going concern, disclosing, as applicable, matters related to going concern and
+using the going concern basis of accounting unless the directors either intend to liquidate the group or the parent
+company or to cease operations, or have no realistic alternative but to do so.
+Auditor’s responsibilities for the audit of the financial statements
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from
+material misstatement, whether due to fraud or error, and to issue an auditor’s report that includes our opinion.
+Reasonable assurance is a high level of assurance, but is not a guarantee that an audit conducted in accordance with
+ISAs (UK) will always detect a material misstatement when it exists. Misstatements can arise from fraud or error and
+are considered material if, individually or in the aggregate, they could reasonably be expected to influence the
+economic decisions of users taken on the basis of these financial statements.
+The extent to which the audit was considered capable of detecting irregularities, including fraud
+Irregularities are instances of non-compliance with laws and regulations. The objectives of our audit are to obtain
+sufficient appropriate audit evidence regarding compliance with laws and regulations that have a direct effect on the
+determination of material amounts and disclosures in the financial statements, to perform audit procedures to help
+identify instances of non-compliance with other laws and regulations that may have a material effect on the financial
+statements, and to respond appropriately to identified or suspected non-compliance with laws and regulations identified
+during the audit.
+In relation to fraud, the objectives of our audit are to identify and assess the risk of material misstatement of the
+financial statements due to fraud, to obtain sufficient appropriate audit evidence regarding the assessed risks of material
+misstatement due to fraud through designing and implementing appropriate responses and to respond appropriately to
+fraud or suspected fraud identified during the audit.
+
+--- pág. 17 ---
+
+14
+Independent auditor's report to the members of
+Newcastle United Limited (continued)
+
+However, it is the primary responsibility of management, with the oversight of those charged with governance, to ensure
+that the entity's operations are conducted in accordance with the provisions of laws and regulations and for the
+prevention and detection of fraud.
+
+In identifying and assessing risks of material misstatement in respect of irregularities, including fraud, the group audit
+engagement team:
+
+- obtained an understanding of the nature of the industry and sector, including the legal and regulatory
+framework that the group and parent company operate in and how the group and parent company are
+complying with the legal and regulatory framework;
+
+- inquired of management, and those charged with governance, about their own identification and assessment of
+the risks of irregularities, including any known actual, suspected or alleged instances of fraud;
+
+- discussed matters about non-compliance with laws and regulations and how fraud might occur including
+assessment of how and where the financial statements may be susceptible to fraud.
+
+As a result of these procedures we consider the most significant laws and regulations that have a direct impact on the
+financial statements are FRS 102, the Companies Act 2006 and tax compliance regulations. We performed audit
+
+procedures to detect non-compliances which may have a material impact on the financial statements which included
+reviewing financial statement disclosures, completion of a financial statements disclosure checklist and reviewing the tax
+computations prepared by external tax advisors.
+The most significant laws and regulations that have an indirect impact on the financial statements are the Premier
+League’s Profit and Sustainability Rules (PSR). We performed audit procedures to check the Group’s PSR calculations
+and to inquire of management whether any non-compliance has occurred or is expected to occur in the foreseeable
+future.
+The group audit engagement team identified the risk of management override of controls as the area where the financial
+statements were most susceptible to material misstatement due to fraud. Audit procedures performed included but were
+not limited to testing a sample of journal entries and other adjustments to the financial statements, evaluating the
+business rationale in relation to significant, unusual transactions and transactions entered into outside the normal course
+of business and reviewing, challenging and corroborating accounting judgements and estimates, especially those matters
+set out in note 3 to the financial statements.
+A further description of our responsibilities for the audit of the financial statements is located on the Financial
+Reporting Council’s website at: www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditor’s
+report.
+Use of our report
+This report is made solely to the company’s members, as a body, in accordance with Chapter 3 of Part 16 of the
+Companies Act 2006. Our audit work has been undertaken so that we might state to the company’s members those
+matters we are required to state to them in an auditor’s report and for no other purpose. To the fullest extent
+permitted by law, we do not accept or assume responsibility to anyone other than the company and the company’s
+members as a body, for our audit work, for this report, or for the opinions’ we have formed.
+
+Richard Coates
+
+RICHARD COATES (Senior Statutory Auditor)
+For and on behalf of RSM UK Audit LLP, Statutory Auditor
+Chartered Accountants
+25 Farringdon Street
+London EC4A 4AB
+16/01/2025 ,
+
+--- pág. 18 ---
+
+Newcastle United Limited 15
+Financial statements for the year ended 30 June 2024
+
+Consolidated statement of comprehensive income
+
+| | Note | 2024 £000 | 2023 restated £000 |
+|---|---:|---:|---:|
+| Turnover | 4 | 320,313 | 250,265 |
+| Operating expenses before amortisation and impairment | | (291,484) | (228,636) |
+| **Operating profit before amortisation and impairment** | | 28,829 | 21,629 |
+| Amortisation and impairment of players' registrations | 12 | (97,545) | (89,343) |
+| **Operating loss before profit on disposal of players' and staff registrations and tangible fixed assets** | | (68,716) | (67,714) |
+| Profit on disposal of players' and staff registrations | | 69,816 | 2,836 |
+| Profit on disposal of tangible fixed assets | | 113 | - |
+| **Operating profit/(loss)** | 5 | 1,213 | (64,878) |
+| Interest receivable and similar income | 9 | 2,127 | 617 |
+| Interest payable and similar expenses | 10 | (14,419) | (7,490) |
+| **Loss before tax** | | (11,079) | (71,751) |
+| Taxation | 11 | (18) | (91) |
+| **Loss and total comprehensive income for the year** | | (11,097) | (71,842) |
+
+The notes on pages 21 - 44 form part of these financial statements.
+
+--- pág. 19 ---
+
+Newcastle United Limited 16
+Financial statements for the year ended 30 June 2024
+Company no 02529667
+
+Consolidated statement of financial position
+
+| | Note | 2024 £000 | 2024 £000 | 2023 Restated £000 | 2023 Restated £000 |
+|---|---:|---:|---:|---:|---:|
+| **Fixed assets** | | | | | |
+| Intangible assets | 12 | | 349,970 | | 262,180 |
+| Tangible assets | 13 | | 87,984 | | 76,553 |
+| | | | 437,954 | | 338,733 |
+| **Current assets** | | | | | |
+| Stocks | | 2,753 | | 34 | |
+| Debtors: amounts falling due within one year | 15 | 129,479 | | 42,490 | |
+| Debtors: amounts falling due after one year | 15 | 21,935 | | 972 | |
+| Cash at bank and in hand | | 15,429 | | 13,424 | |
+| | | 169,596 | | 56,920 | |
+| Creditors: amounts falling due within one year | 16 | (195,281) | | (120,452) | |
+| **Net current liabilities** | | | (25,685) | | (63,532) |
+| **Total assets less current liabilities** | | | 412,269 | | 275,201 |
+| Creditors: amounts falling due after more than one year | 17 | | (140,418) | | (107,716) |
+| **Provisions for liabilities** | 18 | | (23,579) | | (5,116) |
+| **Net assets** | | | 248,272 | | 162,369 |
+| **Capital and reserves** | | | | | |
+| Called up share capital | 20 | | 6,655 | | 6,655 |
+| Share premium account | 21 | | 461,256 | | 364,256 |
+| Capital redemption reserve | 21 | | 831 | | 831 |
+| Capital contribution reserve | 21 | | 676 | | 676 |
+| Retained earnings | 21 | | (221,146) | | (210,049) |
+| | | | 248,272 | | 162,369 |
+
+The financial statements were approved and authorised for issue by the board and were signed on its behalf on 16.01.2025
+
+[firma]
+Y O Al-Rumayyan
+Director
+
+The notes on pages 21 - 44 form part of these financial statements.
+
+--- pág. 20 ---
+
+Newcastle United Limited 17
+Financial statements for the year ended 30 June 2024
+Company no 02529667
+
+Consolidated statement of changes in equity
+
+| | Called up share capital £'000 | Share premium account £'000 | Capital redemption reserve £'000 | Capital contribution reserve £'000 | Retained Earnings £'000 | Total £'000 |
+|---|---:|---:|---:|---:|---:|---:|
+| At 1 July 2022 (as originally stated) | 6,655 | 236,856 | 831 | 676 | (138,880) | 106,138 |
+| Restatement | - | - | - | - | 673 | 673 |
+| At 1 July 2022 (restated) | 6,655 | 236,856 | 831 | 676 | (138,207) | 106,811 |
+| Loss for the year(restated) | - | - | - | - | (71,842) | (71,842) |
+| Shares issued in year | - | 127,400 | - | - | - | 127,400 |
+| **At 30 June 2023** | **6,655** | **364,256** | **831** | **676** | **(210,049)** | **162,369** |
+
+| | Called up share capital £'000 | Share premium account £'000 | Capital redemption reserve £'000 | Capital contribution reserve £'000 | Retained Earnings £'000 | Total £'000 |
+|---|---:|---:|---:|---:|---:|---:|
+| At 1 July 2023(as originally stated) | 6,655 | 364,256 | 831 | 676 | (212,301) | 160,117 |
+| Restatement | - | - | - | - | 2,252 | 2,252 |
+| At 1 July 2023 (restated) | 6,655 | 364,256 | 831 | 676 | (210,049) | 162,369 |
+| Loss for the year | - | - | - | - | (11,097) | (11,097) |
+| Shares issued in year | - | 97,000 | - | - | - | 97,000 |
+| **At 30 June 2024** | **6,655** | **461,256** | **831** | **676** | **(221,146)** | **248,272** |
+
+--- pág. 21 ---
+
+Newcastle United Limited 18
+Financial statements for the year ended 30 June 2024
+Company no 02529667
+
+Company statement of financial position
+
+| | Note | 2024 £000 | 2024 £000 | 2023 £000 | 2023 £000 |
+|---|---:|---:|---:|---:|---:|
+| **Fixed assets** | | | | | |
+| Investments | 14 | | 462,257 | | 365,257 |
+| **Current assets** | | | | | |
+| Debtors: amounts falling due within one year | 15 | 10,018 | | 10,018 | |
+| Cash at bank and in hand | | - | | - | |
+| | | 10,018 | | 10,018 | |
+| Creditors: amounts falling due within one year | 16 | (1,233) | | (1,233) | |
+| **Net current assets** | | | 8,785 | | 8,785 |
+| **Total assets less current liabilities** | | | 471,042 | | 374,042 |
+| **Net assets** | | | 471,042 | | 374,042 |
+| **Capital and reserves** | | | | | |
+| Called up share capital | 20 | | 6,655 | | 6,655 |
+| Share premium account | 21 | | 461,256 | | 364,256 |
+| Capital redemption reserve | 21 | | 831 | | 831 |
+| Retained earnings | 21 | | 2,300 | | 2,300 |
+| | | | 471,042 | | 374,042 |
+
+The Company has taken advantage of the exemption allowed under section 408 of the Companies Act 2006 and has not presented its own Income Statement in these financial statements. The profit after tax of the parent Company for the year was £nil (2023: £10,000).
+
+The financial statements were approved and authorised for issue by the board and were signed on its behalf on 16.01.2025
+
+[firma]
+Y O Al-Rumayyan
+Director
+
+The notes on pages 21 – 44 form part of these financial statements.
+
+--- pág. 22 ---
+
+Newcastle United Limited 19
+Financial statements for the year ended 30 June 2024
+Company no 02529667
+
+Company statement of changes in equity
+
+| | Called up share capital £'000 | Share premium account £'000 | Capital redemption reserve £'000 | Retained Earnings £'000 | Total £'000 |
+|---|---:|---:|---:|---:|---:|
+| At 1 July 2022 | 6,655 | 236,856 | 831 | 2,290 | 246,632 |
+| Profit for the year | - | - | - | 10 | 10 |
+| Shares issued in year | - | 127,400 | - | - | 127,400 |
+| **At 30 June 2023** | **6,655** | **364,256** | **831** | **2,300** | **374,042** |
+
+| | Called up share capital £'000 | Share premium account £'000 | Capital redemption reserve £'000 | Retained Earnings £'000 | Total £'000 |
+|---|---:|---:|---:|---:|---:|
+| At 1 July 2023 | 6,655 | 364,256 | 831 | 2,300 | 374,042 |
+| Profit for the year | - | - | - | - | - |
+| Shares issued in year | - | 97,000 | - | - | 97,000 |
+| **At 30 June 2024** | **6,655** | **461,256** | **831** | **2,300** | **471,042** |
+
+--- pág. 23 ---
+
+Newcastle United Limited 20
+Financial statements for the year ended 30 June 2024
+
+Consolidated statement of cash flows
+
+| | 2024 £000 | 2023 Restated £000 |
+|---|---:|---:|
+| **Cash flow from operating activities** | | |
+| Loss for the financial year | (11,097) | (71,842) |
+| **Adjustments for:** | | |
+| Amortisation & impairment of intangible assets | 97,545 | 89,343 |
+| Depreciation of tangible assets | 4,962 | 3,425 |
+| Profit on disposal of intangible assets | (69,816) | (2,836) |
+| Profit on disposal of tangible assets | (113) | - |
+| Interest payable | 14,419 | 7,490 |
+| Interest receivable | (2,127) | (617) |
+| Taxation charge | 18 | 91 |
+| Grants | (87) | (87) |
+| Increase in stocks | (2,719) | (6) |
+| Increase in debtors | (24,614) | (12,345) |
+| (Decrease)/increase in creditors | 17,639 | (3,536) |
+| (Decrease)/increase in provisions | 4,063 | (12,193) |
+| Taxation (paid)/received | (203) | 132 |
+| **Net cash generated by/(used in) operating activities** | 27,870 | (2,981) |
+| **Cash flows used in investing activities** | | |
+| Purchase of intangible fixed assets | (111,124) | (144,232) |
+| Sale of intangible assets | 9,968 | 4,448 |
+| Purchase of tangible fixed assets | (15,133) | (23,330) |
+| Sale of tangible fixed assets | 150 | - |
+| Interest received | 500 | 421 |
+| Loan advance (see note 27) | (881) | (600) |
+| **Net cash used in investing activities** | (116,520) | (163,293) |
+| **Cash flows from financing activities** | | |
+| Share capital issued | 97,000 | 127,400 |
+| New loans | - | 50,000 |
+| Interest paid (including loan arrangement fees) | (6,345) | (2,759) |
+| **Net cash from financing activities** | 90,655 | 174,641 |
+| **Net increase in cash and cash equivalents** | 2,005 | 8,367 |
+| Cash and cash equivalents at beginning of year | 13,424 | 5,057 |
+| **Cash and cash equivalents at the end of year** | 15,429 | 13,424 |
+
+The notes on pages 21 - 44 form part of these financial statements.
+
+--- pág. 24 ---
+
+Newcastle United Limited 21
+Financial statements for the year ended 30 June 2024
+
+Notes to the financial statements (continued)
+
+1 General information
+
+Newcastle United Limited ('The Company') is a company incorporated in the United Kingdom. Its registered office is St. James' Park, Newcastle Upon Tyne, NE1 4ST. The Group financial statements consolidate those of the Company and its subsidiaries (together referred to as 'the Group'). The Parent company financial statements present information about the Company as a separate entity and not about its Group.
+
+The financial statements are prepared under the historical cost convention, and in accordance with accounting principles generally accepted in the United Kingdom.
+
+The financial statements are presented in sterling and all values are rounded to the nearest thousand pounds (£000) except where otherwise stated.
+
+The accounting policies set out below have, unless otherwise stated, been applied consistently for both the Group and the Company to all periods presented in these consolidated and Company financial statements.
+
+Restatement
+
+The Directors have undertaken a review of the group's accounting policies and as a result have identified the change explained below.
+
+Staff costs - Loyalty bonus payments
+
+Loyalty bonuses which fall due for payment over the period of the players' contracts have previously been charged to the consolidated income statement as a staff cost evenly over the life of the contract. The Directors have reviewed this accounting policy and concluded that amending it to recognise the liability at the point at which payment is virtually certain will provide more reliable and relevant financial information. Loyalty bonuses are now recognised as a staff cost in the period that the payment becomes contractually due. The prior period results to 30 June 2023 have been restated to be consistent with this amended policy.
+
+Restatement Summary
+
+The impact of this change in accounting policy has resulted in the following restatements:
+
+| Consolidated statement of comprehensive income — Year ended 30 June 2023 | As previously stated £000 | Restatement £000 | As restated £000 |
+|---|---:|---:|---:|
+| Operating expenses before amortisation and impairment | (230,215) | 1,579 | (228,636) |
+| Loss and total comprehensive income for the period | (73,421) | 1,579 | (71,842) |
+
+--- pág. 25 ---
+
+Newcastle United Limited 22
+Financial statements for the year ended 30 June 2024
+
+Notes to the financial statements (continued)
+
+| Consolidated statement of financial position — 30 June 2023 | As previously stated £000 | Restatement £000 | As restated £000 |
+|---|---:|---:|---:|
+| Creditors falling due within one year | (122,704) | 2,252 | (120,452) |
+| Retained earnings | (212,301) | 2,252 | (210,049) |
+
+In addition to the impact of the accounting policy change disclosed above, the consolidated statement of cash flows was restated to move a loan advance of £600,000 to investing activities as set out below.
+
+| Consolidated statement of cash flows — 30 June 2023 | As previously stated £000 | Restatement £000 | As restated £000 |
+|---|---:|---:|---:|
+| **Cash flows from operating activities** | | | |
+| Loss for the financial period | (73,421) | 1,579 | (71,842) |
+| **Adjustments for:** | | | |
+| Increase in debtors | (12,945) | 600 | (12,345) |
+| Decrease in creditors | (1,957) | (1,579) | (3,536) |
+| **Net cash used in operating activities** | (3,581) | 600 | (2,981) |
+| **Cash flows used in investing activities** | (162,693) | (600) | (163,293) |
+
+2 Accounting policies
+
+2.1 Basis of preparation of financial statements
+
+The financial statements have been prepared under the historical cost convention and in accordance with Financial Reporting Standard 102, the Financial Reporting Standard applicable in the UK and the Republic of Ireland and the Companies Act 2006.
+
+The preparation of financial statements in compliance with FRS 102 requires the use of certain critical accounting estimates. It also requires Group management to exercise judgement in applying the Company's accounting policies (see note 3). The following principal accounting policies have been applied:
+
+2.2 Going concern
+
+Detailed cash flow forecasts have been prepared for the period until 30 June 2026 to undertake an assessment of the Group's going concern status.
+
+--- pág. 26 ---
+
+Newcastle United Limited 23 :
+
+Financial statements for the year ended 30 June 2024 ,
+
+Notes to the financial statements (continued)
+
+2 Accounting policies (continued)
+The Group has obtained a letter from PZ Newco Limited, the immediate parent, confirming that the present
+policy of PZ Newco Limited will ensure the Group receives sufficient support, including funds, to meet its
+liabilities as they fall due for the period to 30 June 2026. The letter notes that this is an expression of PZ Newco
+Limited’s present policy and should not be construed as constituting a promise as to future conduct and does not
+create any legally binding obligations. PZ Newco Limited has received equivalent letters from each of its
+beneficial owners.
+The Directors have, after careful consideration of those matters set out above, concluded that the Company and
+the Group remain a going concern and, as a result, have prepared the financial statements on the going concern
+basis.
+2.3. Basis of consolidation
+The consolidated financial statements present the results of the Group and its own subsidiaries (‘the Group") as
+if they form a single entity. Intercompany transactions and balances between group companies are therefore
+eliminated in full.
+The consolidated financial statements incorporate the results of business combinations using the purchase
+method. In the Statement of financial position, the acquiree’s identifiable assets, liabilities and contingent
+liabilities are initially recognised at their fair values at the acquisition date. The results of acquired operations are
+included in the Consolidated Income Statement from the date on which control is obtained. They are
+deconsolidated from the date control ceases.
+Subsidiaries are entities controlled by the Group. Control exists where the Group has the power, directly or
+indirectly, to govern the financial and operating policies of an entity so as to obtain benefits from its activities. In
+assessing control, potential voting rights that are currently exercisable or convertible are taken into account. The
+financial statements of subsidiaries are included in the consolidated financial statements from the date that
+control commences until the date that control ceases, using the acquisition method of accounting.
+The Company has taken advantage of the exemption available within FRS102 from the requirement to present a
+Company cash flow statement as a consolidated cash flow statement is presented within these financial
+statements.
+2.4 Revenue
+Revenue represents income arising from sales to third parties, and excludes transfer fees receivable, which are
+dealt with in the profit or loss on disposal of players’ registrations, and value added tax. Revenue can be
+analysed into four major streams, within which significant amounts are accounted for, as follows:
+Matchday
+Season ticket and corporate hospitality revenue is recognised over the period of the football season as home
+matches are played. Any revenues received in respect of future games are held as deferred income.
+Media
+Fixed elements of central broadcasting contracts are recognised over the period of the football season as
+league matches (home and away) are played. Facility fees are recognised at the point of broadcast.. The merit-
+
+based payment is recognised at the end of the league season, when the final league position is known. UEFA
+distributions are spread over the matches played in the competition (if related to participation) or recognised
+when earned (if related to performance).
+Commercial
+Sponsorship contracts are recognised over the duration of the contract, either on a straightline basis, or over
+the period of the football season, as appropriate based on the terms of the contract. Contingent revenue is
+recognised when the relevant performance conditions are satisfied. Catering revenues are recognised on an
+earned basis. Revenue from the sale of branded products is recognised at the point of despatch when
+significant risks and rewards of ownership are deemed to have been transferred to the buyer.
+
+--- pág. 27 ---
+
+Newcastle United Limited 24 .
+Financial statements for the year ended 30 June 2024
+Notes to the financial statements (continued)
+2 ‘Accounting policies (continued)
+Other income
+Other income includes grants, research and development expenditure tax credits and fees in respect of
+players’ international duties. Grants are accounted for under the accruals model and all other income is
+recognised on an accruals basis.
+2.5 Intangible assets
+Acquired players’ registrations
+The costs associated with the acquisition of players’ registrations are capitalised at cost at the date of
+acquisition as intangible fixed assets. These costs are fully amortised, on a straight line basis, over the
+period of the respective players’ contracts.
+For the purposes of impairment reviews, acquired players’ registrations are classified as a single cash
+generating unit until the point at which it is clear that, in the opinion of the Group, the player is now
+considered permanently to no longer be a member of the playing squad. In these circumstances the carrying
+value of that individual player’s registration is reviewed against a measurable net realisable value.
+Contingent payments
+Under the conditions of certain transfer agreements, further fees may become payable to the selling club in
+the event of the player concerned making a certain number of first team appearances, or on the
+occurrence of certain other specified future events. Liabilities in respect of these additional payments are
+accounted for when the Group considers it probable that the number of required appearances will be
+achieved or the specified future event will occur. The balance of potential costs is included as a contingent
+liability. Any additional liabilities or payments made under these agreements are added to the cost of players’
+registrations within intangible fixed assets and amortised over the remaining period of the respective players’
+contracts.
+2.6 Tangible fixed assets
+Tangible fixed assets under the cost model are stated at historical cost less accumulated depreciation and any
+accumulated impairment losses. Historical cost includes expenditure that is directly attributable to bringing
+the asset to the location and condition necessary for it to be capable of operating in the manner intended by
+management.
+At each reporting date the Group assesses whether there is any indication of impairment. If such indication
+exists, the recoverable amount of the asset is determined which is the higher of its fair value less costs to sell
+and its value in use. An impairment loss is recognised where the carrying amount exceeds the recoverable
+amount.
+Depreciation is charged so as to allocate the cost of assets less their residual value over their estimated useful
+lives, using the straight-line method.
+The estimated useful lives range as follows:
+Leasehold land and buildings - over the shorter of the unexpired term of the lease and 50 years
+Fixtures and equipment - 3-15 years
+The assets’ residual values, useful lives and depreciation methods are reviewed, and adjusted prospectively if
+appropriate, or if there is an indication of a significant change since the last reporting date.
+Gains and losses on disposals are determined by comparing the proceeds with the carrying amount and are
+recognised in the Consolidated Income Statement.
+
+--- pág. 28 ---
+
+Newcastle United Limited 25 .
+Financial statements for the year ended 30 June 2024
+Notes to the financial statements (continued)
+2 Accounting policies (continued)
+2.7. Impairment of intangible and tangible fixed assets
+Assets that are subject to depreciation or amortisation are assessed at each reporting date to determine
+whether there is any indication that the assets are impaired. Where there is any indication that an asset may be
+impaired, the carrying value of the asset (or cash generating unit ((CGU’) to which the asset has been
+allocated) is tested for impairment. An impairment loss is recognised for the amount by which the asset’s
+carrying amount exceeds its recoverable amount. The recoverable amount is the higher of an asset’s (or
+CGU’s) fair value less costs to sell and value in use. For the purposes of assessing impairment, assets are
+grouped at the lowest levels for which there are separately identifiable cash flows (CGUs). Non-financial
+assets that have been previously impaired are reviewed at each reporting date to assess whether there is any
+indication that the impairment losses recognised in prior periods may no longer exist or may have decreased.
+
+‘2.8 Valuation of investments
+Investments in subsidiaries are measured at cost less accumulated impairment. Where merger relief is
+applicable, the cost of the investment in a subsidiary undertaking is measured at the nominal value of the
+
+shares issued together with the fair value of any additional consideration paid.
+2.9 Stocks
+Stocks are stated at the lower of cost and net realisable value. Provision is made for obsolete, slow moving or
+defective items where appropriate.
+2.10 Grants
+Grants are accounted for under the accruals model. The deferred element of grants is included in creditors as
+deferred income.
+2.11 Deferred income
+Deferred income comprises amounts received from capital grants, sponsorship, bond, corporate hospitality
+and season ticket income. Capital grants are released to the Consolidated Income Statement on a straight-line
+basis over the estimated useful lives of the assets to which they relate. Other deferred income is released to
+the Consolidated Income Statement on a straight-line basis over the period to which it relates.
+2.12 Debtors
+Short term debtors are measured at transaction price, less any impairment. Loans receivable are measured
+initially at fair value, net of transaction costs, and are measured subsequently at amortised cost using the
+effective interest method, less any impairment.
+2.13. Cash and cash equivalents
+
+Cash is represented by cash in hand and deposits with financial institutions repayable without penalty on
+notice of not more than 24 hours. Cash equivalents are highly liquid investments that mature in no more than
+three months from the date of acquisition and that are readily convertible to known amounts of cash with
+insignificant risk of change in value.
+
+--- pág. 29 ---
+
+Newcastle United Limited ; 26
+Financial statements for the year ended 30 June 2024
+2 Accounting policies (continued)
+2.14 Financial instruments
+The Group only enters into basic financial instruments transactions that result in the recognition of financial
+assets and liabilities like trade and other debtors and creditors and loans from other third parties.
+Debt instruments (other than those wholly repayable or receivable within one year), including loans and other
+accounts receivable and payable, are initially measured at present value of the future cash flows and
+subsequently at amortised cost using the effective interest method. Debt instruments that are payable or
+receivable within one yeat, typically trade payables or receivables, are measured, initially and subsequently, at
+the undiscounted amount of the cash or other consideration expected to be paid or received. However if the
+arrangements of a short term instrument constitute a financing transaction, like the payment of a trade debt
+deferred beyond normal business terms or financed at a rate of interest that is not a market rate or in case of
+an outright short term loan not at market rate, the financial asset or liability is measured, initially, at the
+present value of the future cash flow discounted at a market rate of interest for a similar debt instrument and
+subsequently at amortised cost.
+Financial assets that are measured at cost and amortised cost are assessed at the end of each reporting period
+for objective evidence of impairment. If objective evidence of impairment is found, an impairment loss is
+recognised in the Income Statement.
+For financial assets measured at amortised cost, the impairment loss is measured as the difference between an
+" asset’s carrying amount and the present value of estimated cash flows discounted at the asset’s original
+effective interest rate. If a financial asset has a variable interest rate, the discount rate for measuring any
+impairment loss is the current effective interest rate determined under the contract.
+For financial assets measured at cost less impairment, the impairment loss is measured as the difference
+between an asset’s carrying amount and best estimate, which is an approximation of the amount that the
+Group would receive for the asset if it were to be sold at the reporting date.
+Financial assets and liabilities are offset and the net amount reported in the Statement of financial position
+when there is an enforceable right to set off the recognised amounts and there is an intention to settleona
+net basis or to realise the asset and settle the liability simultaneously.
+2.15 Creditors
+Short term creditors are measured at the transaction price. Other financial liabilities are measured initially at
+fair value, net of transaction costs, and are measured subsequéntly at amortised cost using the effective
+interest method.
+2.16 Foreign currency translation
+Functional and presentation currency
+The consolidated financial statements are presented in GBP, which is also the functional currency of the
+company.
+Transactions and balances
+Foreign currency transactions are translated into the functional currency using the spot exchange rates at the
+dates of the transactions.
+At each period end foreign currency monetary items are translated using the closing rate. Non-monetary
+items measured at historical cost are translated using the exchange rate at the date of the transaction and
+non-monetary items measured at fair value are measured using the exchange rate when fair value was
+determined.
+Foreign exchange gains and losses resulting from the settlement of transactions and from the translation at
+period end exchange rates of monetary assets and liabilities denominated in foreign currencies are recognised
+in the Consolidated Income Statement.
+
+--- pág. 30 ---
+
+Newcastle United Limited 27 .
+Financial statements for the year ended 30 June 2024
+2 Accounting policies (continued)
+2.16 Foreign currency translation (continued)
+Foreign exchange gains and losses are presented in the Statement of consolidated income within ‘operating
+costs’.
+2.17 Finance costs
+Finance costs are charged to the Consolidated Income Statement over the term of the debt using the effective
+interest method so that the amount charged is at a constant rate on the carrying amount. Issue costs are
+initially recognised as a reduction in the proceeds of the associated capital instrument.
+2.18 Operating leases
+Rentals paid under operating leases are charged to the Consolidated Income Statement on a straight line basis
+over the lease term.
+Benefits received and receivable as an incentive to sign an operating lease are recognised on a straight line
+basis over the period until the date the rent is expected to be adjusted to the prevailing market rate.
+
+2.19 Onerous contracts
+Present obligations arising under onerous contracts are recognised and measured as they arise. An onerous
+contract is considered to exist where the Group has a contract under which the unavoidable costs of meeting
+the obligations under the contract exceed the economic benefits expected to be received under it.
+
+2.20 Pensions
+
+Defined contribution plans
+
+The Group operates a defined contribution plan for its employees. A defined contribution plan is a pension
+plan under which the Group pays fixed contributions into a separate entity.
+Obligations for contributions to defined contribution pension plans are recognised as an expense in the
+Income Statement when they fall due. Amounts not paid are shown in accruals as a liability in the Statement
+of Financial Position. The assets of the plan are held separately from the Group in independently
+administered funds.
+Football League Limited Pension and Life Assurance Scheme
+The Group is a member of the Football League Pension and Life Assurance Scheme, a multi employer plan.
+It is not possible for the Group to obtain sufficient information to enable it to account for the plan as a
+
+defined benefit plan. It accounts for the plan as a defined contribution plan. The scheme is in deficit and the
+
+Group has formally agreed to participate in a deficit funding arrangement accordingly the Group recognises a
+liability for this obligation. The amount recognised is the net present value of the obligation payable under the
+agreement that relates to the deficits. The amount is expensed in the Income Statement. The unwinding of
+the discount is recognised as a finance cost.
+
+--- pág. 31 ---
+
+Newcastle United Limited 28
+Financial statements for the year ended 30 June 2024
+Notes to the financial statements (continued)
+2 Accounting policies (continued)
+
+2.21 Interest income
+Interest income is recognised in the Consolidated Income Statement using the effective interest method.
+
+2.22 Borrowing costs
+All borrowing costs are recognised in the Consolidated Income Statement in the year in which they are
+incurred.
+
+2.23 Provisions for liabilities
+Provisions are made where an event has taken place that gives the Group a legal or constructive obligation
+that probably requires settlement by a transfer of economic benefit, and a reliable estimate can be made of
+the amount of the obligation.
+Provisions are charged as an expense to the Income Statement in the year that the Group becomes aware of
+
+the obligation, and are measured at the best estimate at the Statement of Financial Position date of the
+
+expenditure required to settle the obligation, taking into account relevant risks and uncertainties.
+When payments are eventually made, they are charged to the provision carried in the Statement of Financial
+Position.
+A provision is recognised in the Statement of Financial Position when the Group has a present legal or
+constructive obligation as a result of a past event, and it is probable that an outflow of economic benefits will
+be required to settle the obligation. If the effect is material, provisions are determined by discounting the
+expected future cash flows at a pre-tax rate that reflects current market assessments of the time value of
+money and, where appropriate, the risks specific to the liability.
+
+2.24 Current and deferred taxation
+The tax expense for the year comprises current and deferred tax. Tax is recognised in the Consolidated
+Income Statement, except a change attributable to an item of income and expense recognised as other
+comprehensive income or to an item recognised directly in equity is recognised in other comprehensive
+income or directly in equity respectively.
+The current income tax charge is calculated on the basis of tax rates and laws that have been enacted or
+substantively enacted by the reporting date.
+
+--- pág. 32 ---
+
+Newcastle United Limited 29 .
+Financial statements for the year ended 30 June 2024 :
+2 Accounting policies (continued)
+Deferred tax balances are recognised in respect of all timing differences that have originated but not reversed
+by the Statement of Financial Position date, except that:
+- The recognition of deferred tax assets is limited to the extent that it is probable that they will be recovered
+against the reversal of deferred tax liabilities or other future taxable profits;
+Any deferred tax balances are reversed if and when all conditions for retaining associated tax allowances
+have been met.
+Deferred tax balances are not recognised in respect of permanent differences except in respect of business
+combinations, when deferred tax is recognised on the differences between the fair values of assets acquired
+and the future tax deductions available for them and the differences between the fair values of liabilities
+acquired and the amount that will be assessed for tax. Deferred tax is determined using tax rates and laws that
+have been enacted or substantively enacted by the reporting date.
+The charge for taxation is based upon the result for the year and comprises current taxation and taxation
+deferred through timing differences between the treatment of certain items for taxation and accounting
+purposes.
+Current tax is the expected tax payable on the taxable profits for the period, using tax rates enacted or
+substantively enacted at the Statement of financial position date, and any adjustment to tax payable in respect
+of previous years.
+
+Deferred taxation is recognised in respect of all timing differences that have originated but not reversed at the
+
+Statement of financial position date where transactions or events have occurred at that date that will result in
+an obligation to pay more, or right to pay less or to receive more, tax, with the following exceptions:
+
+Provision is made for tax on gains arising from the revaluation (and similar fair value adjustments) of fixed
+assets, or gains on disposal of fixed assets that have been rolled over into replacement assets, only to the
+extent that, at the Statement of financial position date, there is a binding agreement to dispose of the assets
+concerned. However, no provision is made where, on the basis of all available evidence at the Statement of
+financial position date, it is more likely than not that the taxable gain will be rolled over into replacement
+assets and charged to tax only where the replacement assets are sold.
+
+Deferred tax is measured on an undiscounted basis at the tax rates that are expected to apply in the periods in
+which timing differences reverse, based on tax rates and laws enacted or substantively enacted at the Statement of
+financial position date.
+
+--- pág. 33 ---
+
+Newcastle United Limited , 30
+Financial statements for the year ended 30 June 2024
+2 Accounting policies (continued)
+2.25 Exceptional items
+Exceptional items are transactions that fall within the ordinary activities of the Group but are presented
+separately due to their size or incidence.
+
+The Group presents as exceptional items, on the face of the Consolidated Income Statement, those material
+items of income and expense which, because of the nature and expected infrequency of the events giving rise
+to them, merit separate presentation to allow shareholders to better understand the elements of financial
+performance in the year, so as to facilitate comparison with prior periods and to better assess trends in
+
+financial performance. Amortisation and impairment of intangibles is also presented separately on the face of
+the Consolidated Income Statement so as to facilitate comparison with prior periods and to better assess
+trends in financial performance.
+
+2.26 Loans
+Loans are initially stated at the amount of the net proceeds after deducting any issue costs which are
+amortised over the life of the loan. The carrying amount is increased by the finance cost in respect of the
+accounting period and reduced by payments made in the period.
+
+2.27 Signing on fees
+Signing on fees are charged to the Consolidated Income Statement over the period of the player’s contract,
+unless there are conditions attached to payment in which case the charge is recognised at the point at which
+payment is contractually due.
+Loyalty bonuses
+Loyalty bonuses are charged to the Consolidated Income Statement at the point at which payment becomes
+contractually due. See note on page 21 detailing change to policy.
+
+2.28 Operating loss
+
+The operating loss is calculated after operating expenses (including amortisation and impairment) and profit
+
+on disposal of players’ and staff registrations.
+
+--- pág. 34 ---
+
+Newcastle United Limited 31 .
+Financial statements for the year ended 30 June 2024
+Notes to the financial statements (continued)
+3 Judgements in applying accounting policies and key sources of estimation uncertainty
+Preparation of the financial statements requires management to make significant estimates and judgements.
+The items in the financial statements where these judgements and estimates have been made include:
+Impairment of Player Registrations
+Under certain circumstances (as outlined in note 2.5) the Group may be required to estimate a net
+realisable value for an individual player’s registration. This value will take in to account any offers received for that
+player, as well as the Group’s knowledge and experience of recent trading and market conditions.
+When considered necessary, an impairment charge will be made to reduce the carrying value of the player’s
+registration to their fair value less any costs of disposal. An impairment charge for the year of £0.8m (2023: £2.5m)
+arose in respect of players no longer expected to remain an active member of the playing squad.
+Claims against the Group
+The Group assesses claims made against it taking into account all information supporting those claims. To the extent
+that the claim is more likely than not to require Group resources to settle the claim an assessment of an appropriate
+provision is made. Any claim where it is possible that material resources will be required to settle a claim is disclosed
+as a contingent liability. See note 23 for details.
+Provisions for onerous employment contracts
+Onerous contract provisions are recognised in accordance with note 2.19 above. Provisions are recognised based on
+management’s best estimate of certain future events, such as the quantum and timing of future transfer agreements
+or settlement agreements. Provisions are disclosed in note 18.
+Provisions and contingent liabilities for player transactions
+As set out above in note 2.5, under the conditions of certain transfer agreements, further fees may become payable
+to the selling club in the event of the player concerned making a certain number of first team appearances, or on the
+occurrence of certain other specified future events. Provisions are recognised based on management’s best estimate
+of certain future events, such as the number of player appearances, and the amount that will become payable as a
+result. Provisions are disclosed in note 18 and contingent liabilities in note 23. .
+
+--- pág. 35 ---
+
+Newcastle United Limited 32
+Financial statements for the year ended 30 June 2024
+
+Notes to the financial statements (continued)
+
+4 Turnover
+
+The Group's revenue is derived from the operation of professional football clubs together with related and ancillary activities. It operates in one geographical segment, the United Kingdom and accordingly no additional geographical segment information is required to be provided. Turnover streams comprise:
+
+Matchday
+Season and matchday tickets and corporate hospitality income.
+
+Media
+Television and broadcasting income, including distributions from broadcasting agreements, cup competitions and local radio, excluding amounts arising from participation in UEFA competitions.
+
+UEFA
+Television and broadcasting income from participation in UEFA competitions.
+
+Commercial
+Sponsorship income, merchandising, conference and banqueting, catering, film production revenue and related tax credit and other sundry commercial revenue.
+
+Other Income
+Other income consists of research and development expenditure tax credits, grant income and international fees.
+
+An analysis of turnover by class of business is as follows:
+
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Matchday | 50,095 | 37,914 |
+| Media | 153,950 | 165,485 |
+| UEFA | 29,835 | - |
+| Commercial | 83,573 | 43,915 |
+| Other income | 2,860 | 2,951 |
+| | 320,313 | 250,265 |
+
+All turnover arose within the United Kingdom.
+
+5 Operating profit/(loss)
+
+The operating profit/(loss) is stated after charging/(crediting):
+
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Other operating income – release of capital grants | (87) | (87) |
+| Depreciation and other amounts written off tangible fixed assets: | | |
+| - owned and long leasehold | 4,962 | 3,425 |
+| Amortisation of intangible assets | 96,744 | 86,811 |
+| Impairment of intangible assets | 801 | 2,532 |
+| Operating lease payments | 696 | 696 |
+| Foreign exchange (gains)/losses | (1,316) | 845 |
+
+--- pág. 36 ---
+
+Newcastle United Limited 33
+Financial statements for the year ended 30 June 2024
+
+Notes to the financial statements (continued)
+
+6 Auditor's remuneration
+
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Fees payable to the Group's auditor and its associates for the audit of the Group's annual financial statements | 117 | 95 |
+| **Fees payable to the Group's auditor and its associates in respect of:** | | |
+| Audit-related regulatory reporting | 20 | 10 |
+
+7 Employees
+
+Staff costs were as follows:
+
+| | 2024 £000 | 2023 Restated £000 |
+|---|---:|---:|
+| Wages and salaries | 194,522 | 163,221 |
+| Social security costs | 23,536 | 21,532 |
+| Other pension costs | 680 | 347 |
+| | 218,738 | 185,100 |
+
+The total staff costs including directors' remuneration for the company was nil (2023: £nil).
+
+The average monthly number of employees, including the Directors, during the year was as follows:
+
+| | 2024 No. | 2023 No. |
+|---|---:|---:|
+| Playing squads, academy, team management and support | 252 | 210 |
+| Business operations | 273 | 200 |
+| | 525 | 410 |
+
+In addition, the Group employed an average of 800 sessional workers each month, including matchday stewards. (2023: 779)
+
+The average monthly number of employees, including the Directors, for the company was nil (2023: nil).
+
+Total compensation of key management personnel for the year amounted to £6.9m (2023:£3.5m). Key management includes Directors and members of senior management.
+
+8 Directors' remuneration
+
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Directors' emoluments | 23 | 7 |
+
+One director received taxable benefits in kind in the year (2023: 1 director). Remuneration of the highest paid director amounted to £23,000 (2023: £7,000).
+
+During the current and prior year no retirement benefits were accruing to any director in respect of defined contribution pension schemes.
+
+--- pág. 37 ---
+
+Newcastle United Limited 34
+Financial statements for the year ended 30 June 2024
+
+Notes to the financial statements (continued)
+
+9 Interest receivable and similar income
+
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Bank & other interest receivable | 732 | 515 |
+| Unwinding of discount on deferred payments for players' registrations | 1,395 | 102 |
+| | 2,127 | 617 |
+
+10 Interest payable and similar expenses
+
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Term loan interest payable | 5,815 | 3,715 |
+| Interest payable on multi employer pension scheme | 4 | 8 |
+| Unwinding of discount on deferred payments for players' registrations | 8,626 | 4,255 |
+| Other interest payable | (26) | (488) |
+| | 14,419 | 7,490 |
+
+11 Taxation
+
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| **Current tax** | | |
+| Corporation tax | 18 | 91 |
+| Deferred tax | | |
+| Origination and reversal of timing differences | - | - |
+| Total tax charge for the year | 18 | 91 |
+
+**Factors affecting tax charge for the year**
+The tax assessed for the year differs from the applicable rate of corporation tax in the UK of 25% (2023: 20.5%). The differences are explained below:
+
+| | 2024 £000 | 2023 Restated £000 |
+|---|---:|---:|
+| Loss before tax | (11,079) | (71,751) |
+| Loss before tax multiplied by the applicable rate of corporation tax in the UK of 25% (2023: 20.5%) | (2,770) | (14,709) |
+| Effects of: | | |
+| Expenses not deductible for tax purposes | 1,165 | 639 |
+| Income not taxable | (320) | - |
+| Other timing differences | - | 5,268 |
+| Deferred tax not provided | 1,925 | 8,802 |
+| Adjustments to tax charge in respect of prior periods | 18 | 91 |
+| **Total tax charge for the year** | 18 | 91 |
+
+--- pág. 38 ---
+
+Newcastle United Limited 35
+Financial statements for the year ended 30 June 2024
+
+Notes to the financial statements (continued)
+
+12 Intangible assets
+
+Group
+
+| | Players' registrations £000 |
+|---|---:|
+| **Cost** | |
+| At 30 June 2023 | 472,285 |
+| Additions | 206,113 |
+| Disposals | (73,317) |
+| At 30 June 2024 | 605,081 |
+| **Amortisation and impairment** | |
+| At 30 June 2023 | 210,105 |
+| Charge for the year | 97,545 |
+| On disposals | (52,539) |
+| At 30 June 2024 | 255,111 |
+| **Net book value** | |
+| At 30 June 2024 | 349,970 |
+| At 30 June 2023 | 262,180 |
+
+The intangible asset that is material to the financial statements is the first team squad. The carrying value of the squad is £350.0m with a remaining amortisation period of 1-5 years. The amortisation charge for the current squad over this period will be;
+
+2024/25 - £99,183,000
+2025/26 - £88,720,000
+2026/27 - £80,634,000
+2027/28 - £65,689,000
+2028/29 - £15,744,000
+
+--- pág. 39 ---
+
+Newcastle United Limited 36
+Financial statements for the year ended 30 June 2024
+
+Notes to the financial statements (continued)
+
+13 Tangible fixed assets
+
+Group
+
+| | Land and buildings £000 | Fixtures and equipment £000 | Assets under construction £000 | Total £000 |
+|---|---:|---:|---:|---:|
+| **Cost** | | | | |
+| At 30 June 2023 | 118,614 | 14,780 | - | 133,394 |
+| Additions | 1,676 | 8,618 | 6,136 | 16,430 |
+| Disposals | - | (1,316) | - | (1,316) |
+| At 30 June 2024 | 120,290 | 22,082 | 6,136 | 148,508 |
+| **Depreciation** | | | | |
+| At 30 June 2023 | 48,417 | 8,424 | - | 56,841 |
+| Charge for the year | 2,459 | 2,503 | - | 4,962 |
+| Eliminated on disposal | - | (1,279) | - | (1,279) |
+| At 30 June 2024 | 50,876 | 9,648 | - | 60,524 |
+| **Net book value** | | | | |
+| At 30 June 2024 | 69,414 | 12,434 | 6,136 | 87,984 |
+| At 30 June 2023 | 70,197 | 6,356 | - | 76,553 |
+
+Assets under construction of £6,136,000 (2023: £nil) comprise STACK (which opened post year end in August 24) and improvement works at the stadium, training ground and academy.
+Cumulative finance costs capitalised in prior years, excluding tax relief, included in the value of tangible fixed assets amount to £3,964,000 (2023: £3,964,000).
+
+The net book value of land and buildings is all long leasehold.
+
+--- pág. 40 ---
+
+Newcastle United Limited 37
+Financial statements for the year ended 30 June 2024
+
+Notes to the financial statements (continued)
+
+14 Fixed asset investments
+
+Company
+
+| | Investments in subsidiary companies £000 |
+|---|---:|
+| **Cost** | |
+| At 1 July 2023 | 365,257 |
+| Additions in year | 97,000 |
+| At 30 June 2024 | 462,257 |
+| **Net book value** | |
+| At 30 June 2024 | 462,257 |
+| At 30 June 2023 | 365,257 |
+
+Subsidiary undertakings
+
+| Name | Class of shares | Holding | Holding | Principal activity |
+|---|---|---|---:|---|
+| Newcastle United Football Company Limited | Ordinary | Direct | 100% | Professional football club |
+| Newcastle United Football Club Projects Limited | Ordinary | Indirect | 100% | Property ownership and development |
+| Newcastle United Women’s Football Club Limited | Ordinary | Indirect | 100% | Professional women’s football club |
+| Newcastle United Promotions Limited | Ordinary | Direct | 100% | Leisure hub & Fanzone |
+| Maltings Pictures Limited | Ordinary | Indirect | 100% | Film production |
+| Newcastle United Enterprises Limited | Ordinary | Direct | 100% | Dormant |
+| St. James’ Park Newcastle Limited | Ordinary | Direct | 100% | Dormant |
+| nufc.co.uk Limited | Ordinary | Direct | 100% | Dormant |
+| Newcastle United 1892 Limited | Ordinary | Direct | 100% | Dormant |
+| Newcastle United Catering Limited | Ordinary | Direct | 100% | Dormant |
+| Newcastle United Employment Limited | Ordinary | Direct | 100% | Dormant |
+| Newcastle United Entertainment Limited | Ordinary | Direct | 100% | Dormant |
+| Newcastle United Group Limited | Ordinary | Direct | 100% | Dormant |
+| Newcastle United Licensing Limited | Ordinary | Direct | 100% | Dormant |
+| Newcastle United Publications Limited | Ordinary | Direct | 100% | Dormant |
+| Newcastle United Sports Limited | Ordinary | Direct | 100% | Dormant |
+| Newcastle United Sportswear Limited | Ordinary | Direct | 100% | Dormant |
+| Newcastle United Telecoms Limited | Ordinary | Direct | 100% | Dormant |
+| Newcastle United Television Limited | Ordinary | Direct | 100% | Dormant |
+| Newcastle United Ventures Limited | Ordinary | Direct | 100% | Dormant |
+| NUFC Limited | Ordinary | Direct | 100% | Dormant |
+| Newcastle United FC Limited | Ordinary | Direct | 100% | Dormant |
+| Newcastle United Football Club Limited | Ordinary | Direct | 100% | Dormant |
+| The Football Channel Limited | Ordinary | Direct | 100% | Dormant |
+| Balmbra’s Limited | Ordinary | Direct | 100% | Dormant |
+
+The Group owns 100% of the ordinary share capital in each of its subsidiary undertakings.
+All subsidiary undertakings were incorporated in England and Wales and have their registered offices at St James' Park, Newcastle upon Tyne, NE1 4ST.
+
+--- pág. 41 ---
+
+Newcastle United Limited 38
+Financial statements for the year ended 30 June 2024
+
+Notes to the financial statements (continued)
+
+15 Debtors
+
+Amounts falling due within one year
+
+| | Group 2024 £000 | Group 2023 £000 | Company 2024 £000 | Company 2023 £000 |
+|---|---:|---:|---:|---:|
+| Trade debtors | 22,511 | 4,962 | - | - |
+| Amounts owed by parent | 312 | - | - | - |
+| Amounts owed by subsidiary undertakings | - | - | 10,018 | 10,018 |
+| Transfer fees receivable | 74,776 | 2,828 | - | - |
+| Corporation tax | 203 | - | - | - |
+| Other debtors | 10,143 | 9,083 | - | - |
+| Prepayments and accrued income | 21,534 | 25,617 | - | - |
+| | 129,479 | 42,490 | 10,018 | 10,018 |
+
+Amounts falling due after one year
+
+| | Group 2024 £000 | Group 2023 £000 | Company 2024 £000 | Company 2023 £000 |
+|---|---:|---:|---:|---:|
+| Transfer fees receivable | 21,625 | 36 | - | - |
+| Prepayments and accrued income | 310 | 936 | - | - |
+| | 21,935 | 972 | - | - |
+
+Gross transfer fees receivable before discounting are £100,492,000 (2023: £2,878,000). Transfer fees receivable disclosed in the tables above are net of a present value adjustment of £4,091,000 (2023: £14,000).
+
+The amount of debtors written off to the Consolidated Income Statement in the year was £14,000 (2023: £8,000 written off). The impairment included against debtors at the year end is £nil (2023: £ nil).
+
+--- pág. 42 ---
+
+Newcastle United Limited 39
+Financial statements for the year ended 30 June 2024
+
+Notes to the financial statements (continued)
+
+16 Creditors: amounts falling due within one year
+
+| | Group 2024 £000 | Group 2023 £000 restated | Company 2024 £000 | Company 2023 £000 |
+|---|---:|---:|---:|---:|
+| Trade creditors | 16,609 | 10,631 | - | - |
+| Transfer fees payable | 86,664 | 32,705 | - | - |
+| Taxation and social security | 21,084 | 16,523 | - | - |
+| Corporation tax payable | 18 | - | - | - |
+| Other creditors | 1,918 | 1,877 | 1,233 | 1,233 |
+| Accruals and deferred income | 68,988 | 58,716 | - | - |
+| | 195,281 | 120,452 | 1,233 | 1,233 |
+
+Gross transfer fees payable before discounting are £87,342,000 (2023: £33,104,000). Transfer fees payable disclosed in the table above are stated net of a present value adjustment of £ 678,000 (2023: £399,000).
+
+17 Creditors: amounts falling due after more than one year
+
+| | Group 2024 £000 | Group 2023 £000 | Company 2024 £000 | Company 2023 £000 |
+|---|---:|---:|---:|---:|
+| Term loan | 49,716 | 49,451 | - | - |
+| Transfer fees payable | 73,684 | 47,216 | - | - |
+| Accruals and deferred income | 17,018 | 11,049 | - | - |
+| | 140,418 | 107,716 | - | - |
+
+Gross transfer fees payable before discounting are £81,024,000 (2023: £51,467,000). Transfer fees payable disclosed in the table above are stated net of a present value adjustment of £7,340,000 (2023: £4,251,000).
+
+Within accruals and deferred income is deferred income totalling £2.7m (2023: £2.9m) falling due after more than 5 years.
+
+The term loan is a £50m facility (disclosed net of unamortised arrangement fees) from HSBC. The Club also holds a £25m revolving working capital facility ("RCF") which was undrawn on 30 June 2024. (30 June 2023: undrawn). The RCF was utilised during the year for short-term financing purposes. The RCF utilisation receipts and repayments have been netted in the cash flow statement in accordance with FRS 102.7.10A(b). The facilities are in place until July 2025, when the term loan is repayable in full, and bear interest at SONIA + 2.9% and are secured by the assignment of Premier League Central distributions and Group ticketing revenues and a floating charge over the assets of the Group. The Club is currently in negotiations to extend the facility for a further 4 year term.
+
+--- pág. 43 ---
+
+Newcastle United Limited 40
+Financial statements for the year ended 30 June 2024
+
+Notes to the financial statements (continued)
+
+18 Provisions for liabilities
+
+Group
+
+| | Player registrations £000 | Onerous employment contracts £000 | Other £000 | Total £000 |
+|---|---:|---:|---:|---:|
+| At 30 June 2023 | 2,080 | 3,036 | - | 5,116 |
+| Provisions made in year | 14,372 | 7,237 | 930 | 22,539 |
+| Provisions utilised/released in year | (1,040) | (3,036) | - | (4,076) |
+| At 30 June 2024 | 15,412 | 7,237 | 930 | 23,579 |
+
+The player registration provision represents contingent amounts payable under the terms of transfer agreements which are expected to be paid over the period to 30 June 2029. The onerous employment contracts provision is expected to be utilised over the period to 30 June 2026.
+Other provision relates to remedial works required to long leasehold land owned by the Group and is expected to be utilised over the period to 30 June 2025.
+
+19 Deferred taxation
+
+The unprovided deferred taxation balance is made up as follows:
+
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Fixed asset timing differences | (25,099) | (11,311) |
+| Tax losses carried forward | 56,102 | 41,400 |
+| Other timing differences | 2,585 | 3,093 |
+| | 33,588 | 33,182 |
+
+The group has cumulative tax losses, available to carry forward against future taxable profits of £224m (2023: £166m) which gives rise to the tax losses carried forward deferred tax asset set out above.
+
+20 Share capital
+
+| Shares classified as equity | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| **Allotted, called up and fully paid** | | |
+| 133,107,128 (2023: 133,107,126) Ordinary shares of £0.05 each | 6,655 | 6,655 |
+
+The holders of ordinary shares are entitled to receive dividends as declared from time to time and are entitled to one vote per share at meetings of the Group. During the year, the company issued 2 ordinary shares for cash consideration of £97,000,000.
+
+--- pág. 44 ---
+
+Newcastle United Limited 41
+Financial statements for the year ended 30 June 2024
+
+Notes to the financial statements (continued)
+
+21 Reserves
+
+Share premium
+Includes any premiums received on issue of share capital. Any transaction costs associated with the issuing of shares are deducted from share premium.
+
+Capital redemption
+Following the re-purchase of shares by the company this is the nominal value of the re-purchased shares that are non-distributable to shareholders.
+
+Capital contribution reserve
+A capital contribution of £676,000 was received from the Public Investment Fund to meet the cost of the first team squad's warm weather training camp in Saudi Arabia in January 2022.
+
+Retained earnings
+Includes all current and prior period profits and losses.
+
+22 Net debt reconciliation
+
+| | 30 June 2023 £000 | Cash flows £000 | Other non-cash changes £000 | 30 June 2024 £000 |
+|---|---:|---:|---:|---:|
+| Cash at bank and in hand | 13,424 | 2,005 | - | 15,429 |
+| Term loan | (49,451) | - | (265) | (49,716) |
+| Net debt | (36,027) | 2,005 | (265) | (34,287) |
+
+23 Contingent liabilities
+
+Under the terms of certain contracts for the signing of players, additional amounts may become payable to other football clubs. The maximum unprovided liability which may arise in respect of these players at 30 June 2024 is £52.4m (30 June 2023: £23.5m). The Group does not currently think that it is probable that such sums will be payable, on the basis that the qualifying criteria are more likely than not to be met.
+
+Newcastle United Football Company Limited ("NUFCL") received assessments from HMRC relating to alleged underpayment of tax and national insurance, along with interest and penalties thereon arising from Agency activity prior to 2017. HMRC and NUFCL are finalising a legal settlement agreement to conclude the dispute and these financial statements include an accrual for the expected settlement value along with an estimate of the associated costs of concluding the settlement.
+
+In February 2024 Frasers Group plc commenced legal action against NUFCL in relation to the supply of retail products. The Group is vigorously rejecting this action and is confident of success in the case.
+
+24 Pension commitments
+
+The Group operates a defined contribution pension scheme. The assets of the scheme are held separately from those of the Group in an independently administered fund. The pension cost charge represents contributions payable by the Group to the fund and amounted to £462,000 (2023: £347,000).
+
+--- pág. 45 ---
+
+Newcastle United Limited 42
+Financial statements for the year ended 30 June 2024
+Notes to the financial statements (continued)
+Newcastle United Football Company Limited also participates in the closed Football League Pension and Life
+Assurance Scheme (‘the Scheme’). The Scheme is a funded multi-employer defined benefit scheme, with 92
+participating employers, and where members may have periods of service attributable to several participating
+employers. Newcastle United Football Company Limited is unable to identify its share of the assets and liabilities of
+the Scheme and therefore accounts for its contributions as if they were paid to a defined contribution scheme.
+The accrual of benefits ceased within the Scheme on 31 August 1999, therefore there are no contributions relating to
+current accrual. Newcastle United Football Company Limited pays monthly contributions based on a notional split
+of the total expenses and deficit contributions of the Scheme.
+The Scheme Actuary finalised a full valuation as at 31 August 2023 and allocated £231,772 as NUFCL’s share of the
+deficit as at 1 September 2023. The increase in the deficit arising from this revaluation has been recognised in the
+profit and loss account. The deficit is funded by annual contributions and the Club incurs interest at 6% on its.
+allocated share of the deficit. The balance outstanding at the year end date of £232,000 (2023: £96,000) is included ~
+in Accruals and Deferred Income. The Club has made contributions of £85,334 in the year (2023: £81,274).
+25 Commitments under operating leases
+At 30 June 2024 the Group had future minimum lease payments under non-cancellable operating leases as follows:
+2024 2023
+£000 £000
+Land and buildings
+Not later than 1 year 696 696
+Between one and five years 2,782 2,782
+After five years 55,211 55,909
+58,689 59,387
+The commitments above relate to annual payments due under leases with expiry dates ranging from 2097-2126. 0
+During the year £696,000 was recognised as an expense in the Consolidated Income Statement in respect of
+operating leases (2023: £696,000).
+26 Capital commitments
+At 30 June 2024, the Group had capital commitments to purchase property, plant and equipment for which no
+provision had been made of £2.5m (2023: £4.8m). The Company had no capital commitments (2023: £nil).
+27 Related party transactions
+Transactions between the Company and its group undertakings are not disclosed as permitted by Section 33 of FRS 102
+“The Financial Reporting Standard applicable in the UK and Republic of Ireland”.
+The Group recognised commercial revenue in the year of £29,005,000 (2023: £6,710,000) from fellow subsidiary and
+associated undertakings of the Public Investment Fund (“PIF”), the Company’s ultimate parent undertaking. Of the
+amounts recognised to 30 June 2024 £583,000 had not been invoiced and thus is included in accrued income (2023
+£4,277,000). £11,005,000 of the invoiced amounts was outstanding as at 30 June 2024 (2023: £500,000).
+The Group transferred player registrations in the year for consideration (before discounting) of USD 25,000,000 (year to
+30 June 2023: £nil) to a fellow subsidiary undertaking of PIF. The balance outstanding at 30 June 2024 was USD 18,750,000
+(translated at period end £14,830,000) (2023: £nil).
+
+--- pág. 46 ---
+
+Newcastle United Limited 43
+Financial statements for the year ended 30 June 2024
+Notes to the financial statements (continued)
+
+Fees of £nil were charged to the Group by Cantervale Limited for strategic advisory services provided to Newcastle United
+
+Football Company Limited (Year ended 30 June 2023: £312,500). The balance owed by the Group at 30 June 2024 and
+
+30 June 2023 was £nil. Cantervale Limited is a company controlled by A L Staveley, a director during the current and prior
+
+years.
+
+The Group advanced £312,500 to Cantervale Limited during the year (year ended 30 June 2023:£625,000). £312,500 has
+
+been refunded and the balance outstanding at 30 June 2024 of £625,000 ( 30 June 2023 :£625,000) is included in Note 15
+
+within ‘Other debtors’ and is expected to be-refunded subsequent to the balance sheet date.
+
+In the prior year a loan of £600,000 was made to A L Staveley in respect of certain legal fees. Further amounts were
+advanced during this year and the balance outstanding at 30 June 2024 was £1,481,000 ( 30 June 2023: £600,000.) The
+loan is interest free. The loan was repaid in full to NUFCL in December 2024.
+
+28 Subsequent events
+After the year end the Group contracted for the purchase and sale of a number of players. The net cost of these
+transfers, excluding any contingent fees was £20m (2023: £124m).
+
+In October 2024, the Company issued 1 ordinary share to PZ Newco Limited in consideration for £35m funding
+provided.
+In December 2024 the Company issued 1 ordinary share to PZ Newco ‘Limited in consideration for £13.5m funding
+provided.
+After the year end Amanda Staveley stepped down from the Board of Directors of the Group and divested her
+shareholding in the Group. Roger Thornton and Jacobo Solis joined the Board.
+
+29 Ultimate parent undertaking and controlling party
+The immediate parent undertaking is PZ Newco Limited and ultimate parent undertaking and ultimate controlling
+party is the Public Investment Fund.
+The smallest group in which the results are consolidated is headed by NCUK Investment Limited, whose registered
+office is 8". Floor, 20 Farringdon Street, London, EC4A 4AB. The largest group in which the results are consolidated
+is the Public Investment Fund, which is established in Saudi Arabia and whose financial statements are available
+online.
+
+--- pág. 47 ---
+
+Newcastle United Limited 44
+Financial statements for the year ended 30 June 2024
+
+Notes to the financial statements (continued)
+
+30 Annex G Accounting requirements for the preparation of financial statements
+
+The Group is required to disclose any areas in which its financial statements, as reported under UK GAAP, are not in compliance with the requirements of Annex G of the UEFA Club Licensing and Financial Sustainability Regulations (2023). The table below sets out those differences, and the impact on the financial statements for the current and prior periods.
+
+| Consolidated statement of comprehensive income — 12 months ended 30 June 2024 | As reported £000 | Required adjustment £000 | Annex G compliant £000 |
+|---|---:|---:|---:|
+| Operating expenses before amortisation and impairment | (291,484) | 4,201 | (287,283) |
+| Amortisation and impairment of players' registrations | (97,545) | (793) | (98,338) |
+| Operating loss before profit on disposal of players and staff registrations and tangible fixed assets | (68,716) | 3,408 | (65,308) |
+| Profit on disposal of players' and staff registrations | 69,816 | (30,447) | 39,369 |
+| Operating profit/(loss) | 1,213 | (27,039) | (25,826) |
+| Loss before tax and total comprehensive income for the period | (11,097) | (27,039) | (38,136) |
+
+| Consolidated statement of financial position — 30 June 2024 | As reported £000 | Required adjustment £000 | Annex G compliant £000 |
+|---|---:|---:|---:|
+| Intangible assets | 349,970 | (22,793) | 327,177 |
+| Provision for liabilities | (23,059) | 7,237 | (15,822) |
+| Adjustment to retained earnings | (221,146) | (24,003) | (245,149) |
+| Add back Annex G permanent difference | - | 8,447 | 8,447 |
+| Retained earnings | (221,146) | (15,556) | (236,702) |
+| Net assets | 248,272 | (15,556) | 232,716 |
+
+--- pág. 48 ---
+
+Newcastle United Limited 45
+Financial statements for the year ended 30 June 2024
+
+Notes to the financial statements (continued)
+
+| Consolidated statement of comprehensive income — 12 months ended 30 June 2023 | As reported £000 | Required adjustment £000 | Annex G compliant £000 |
+|---|---:|---:|---:|
+| Operating expenses before amortisation and impairment | (228,636) | (12,193) | (240,829) |
+| Operating loss before profit on disposal of players and staff registrations and tangible fixed assets | (67,714) | (12,193) | (79,907) |
+| Operating profit/(loss) | (64,878) | (12,193) | (77,071) |
+| Loss before tax and total comprehensive income for the period | (71,751) | (12,193) | (83,944) |
+
+| Consolidated statement of financial position — 30 June 2023 | As reported £000 | Required adjustment £000 | Annex G compliant £000 |
+|---|---:|---:|---:|
+| Provision for liabilities | (5,116) | 3,036 | (2,080) |
+| Retained earnings | (210,049) | 3,036 | (207,013) |
+| Net assets | 162,369 | 3,036 | 165,405 |
+
+The adjustment to reduce operating expenses before amortisation and impairment is required under Rules G.5.1.a and G.5.2 so that employee benefit expenses and termination benefits for employees are accounted for in the correct accounting period.
+
+The adjustment to increase the amortisation and impairment of players' registrations is required under Rule G.3.4.c so that each individual player's registration is being amortised up to a maximum of 5 years.
+
+The adjustments to reduce profit on disposal of players' registrations arise from the application of paragraphs G.3.5 and G.3.7.b in relation to the transfer of player registrations.

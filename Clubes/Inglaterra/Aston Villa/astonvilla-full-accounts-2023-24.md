@@ -1,0 +1,1169 @@
+> Transcripción: Tesseract OCR + revisión de un subagente de Claude contra la imagen de las páginas clave (estados y notas financieras).
+
+--- pág. 1 ---
+
+Registered number: 03375789
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+ANNUAL REPORT AND FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+*ADZB7YR7*
+A05 28/03/2025 #195
+COMPANIES HOUSE
+
+--- pág. 2 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+CONTENTS
+
+| | Page |
+|---|---:|
+| Company Information | 1 |
+| Strategic Report | 2 |
+| Directors' Report | 4 |
+| Independent Auditors' Report to the Members of Aston Villa Football Club Limited | 8 |
+| Statement of Comprehensive Income | 12 |
+| Balance Sheet | 13 |
+| Statement of Changes in Equity | 14 |
+| Notes to the Financial Statements | 15 |
+
+--- pág. 3 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+COMPANY INFORMATION
+Directors
+W R Edens
+N Sawiris
+M Angelakis
+C Hall
+B Lebada
+S L Watterson
+Company secretary
+B Schuurmans
+Registered number
+03375789
+Registered office
+Villa Park Trinity Road
+Aston
+Birmingham
+West Midlands
+B6 6HE
+Independent auditors
+PricewaterhouseCoopers LLP
+Chartered Accountants and Statutory Auditors
+One Chamberlain Square
+Birmingham
+B3 3AX
+1
+
+--- pág. 4 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+STRATEGIC REPORT
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+The directors present the Strategic Report and the audited financial statements of Aston Villa Football Club
+Limited (the "Company") for the 13 month period ended 30 June 2024.
+The Company has changed its accounting period from 31 May 2024 to 30 June 2024.
+Principal activities
+The Company is engaged in running the commercial activities of a professional football club in the English
+Football League.
+Review of business
+The football season culminated in a final league place of 4th which meant the Club qualified to participate
+in the UEFA Champions League in the 2024/25 season, returning to the top European club completion for
+the first time in over 40 years. The Club will also again compete in the Premier League in the 2024/25 season.
+Turnover for the financial period amounted to £263,079,000 (year ended 31 May 2023: £204,526,000).
+Operating expenses amounted to £318,901,000 (year ended 31 May 2023: £320,275,000).
+The operating loss for the period amounted to £50,709,000 (year ended 31 May 2023: £115,749,000). The
+loss for the financial period of £49,425,000 (year ended 31 May 2023: £116,099,000) has been deducted from
+reserves.
+Net liabilities at the period-end were £64,293,000 (31 May 2023: £14,874,000). The directors believe that
+preparing the financial statements an the going concern basis is appropriate due to the continued financial
+support of the ultimate parent company.
+Key performance indicators ("KPIs")
+As a wholly owned subsidiary of the NSWE Sports Limited group, the directors do not consider that there are
+any informative KPIs for the Company. A description of KPIs for the NSWE Sports Limited group is included in
+the NSWE Sports Limited Strategic Report.
+Principal risks and uncertainties
+The key risk facing any club is the deterioration of on field performance and results. The board mitigates this
+risk to the best of its ability by providing the manager with first class training facilities and appropriate payroll &
+transfer budgets, and through generous support to the Academy. The acquisition of players and their related
+payroll costs are deemed a core activity risk and, whilst assisting the manager in improving the playing squad,
+the directors are mindful of the pitfalls that are inherent in this area of the business.
+Aston Villa Football Club Limited's management regularly review and monitor the Company's risks.
+The principal risks and uncertainties of the NSWE UK Limited group are set out in the NSWE UK Limited's
+Strategic Report.
+2
+
+--- pág. 5 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+Directors’ statement of compliance with duty to promote the success of the Company
+Section 172 of the Companies Act 2006 requires directors to take into consideration the interests of
+stakeholders in their decision making. The directors acknowledge their responsibility to act in a manner that
+protects the interests of ali stakeholders.
+The Board of Directors have acted in a manner they consider most likely to promote the success of the
+Company for the benefit of its members and stakeholders in the decisions taken during the period.
+The key relationships of the business are those with its supporters, staff, local community, commercial
+sponsors and governing authorities and the Company engages proactively with these stakeholders to ensure
+good relationships are maintained.
+The relationships between the Company and other members of the Group are primarily guided by a
+Shareholder agreement. Further details of stakeholder engagement are set out in the Strategic Report of
+NSWE UK Limited Group financial statements.
+This report was approved by the board and signed on its behalf by:
+N Sawiris
+Director
+Date. 9 October 2024
+
+3
+
+--- pág. 6 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+DIRECTORS’ REPORT
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+The directors present their annual report and the audited financial statements of Aston Villa Football Club
+Limited (the "Company") for the 13 month period ended 30 June 2024.
+Principal activities
+The principal activities of the Company are enclosed within the Strategic Report on page 2.
+Results and dividends
+The loss for the financial period amounted to £49,425,000 (year ended 31 May 2023: £116,099,000).
+The directors have not declared or paid an interim dividend during the period (year ended 31 May 2023: £Nil).
+They do not recommend a final dividend (31 May 2023: £Nil).
+Directors
+The directors who served during the period and up to the date of signing the financial statements, unless
+otherwise stated, were:
+W R Edens
+CMC Purslow (resigned 12 June 2023)
+N Sawiris
+M Angelakis (appointed 12 April 2024)
+C Hall (appointed 12 April 2024)
+B Lebada (appointed 12 April 2024)
+S L Watterson (appointed 12 April 2024)
+Directors’ and officers’ insurance
+Throughout the period and up to the date of signing of the financial statements, the Company maintains cover
+under a qualifying third-party indemnity for all directors and officer against liabilities which may be incurred by
+them whilst acting as directors or officers.
+Future developments
+The Company is a wholly owned subsidiary of the NSWE UK Limited group. A description of future
+developments for the NSWE UK Limited group is included in the NSWE UK Limited’s Directors’ Report.
+Going concern
+The directors have formed a judgement at the time of approving the financial statements that the Company
+has adequate resources available to continue operating and to discharge all financial obligations as they fall
+due for a penod of at least 12 months from the date of approval of the financial statements.
+The directors believe that preparing the financial statements on the going concern basis is appropriate due to
+the continued financial support of the parent company NSWE UK Limited.
+The directors have received confirmation that NSWE UK Limited intends to support the Company for at least
+12 months from the approval of these financial statements.
+4
+
+--- pág. 7 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+DIRECTORS’ REPORT (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+Going concern (continued)
+Regarding the going concern assessment of the Group, the directors have prepared detailed cashflow
+forecasts for the Group to assess potential funding requirements for a period of 12 months from the signing of
+the Group financial statements. The forecasts model assumes continued availability of the banking overdraft
+facility provided to the Club by Barclays Bank Plc. The directors have made enquiries of Barclays Bank Plc
+over the continued provision of this facility for the going concern assessment period and received confirmation
+that there were no concerns in relation to it continuing to be made available,
+The directors are confident in their assumption that cash flow forecasts for 2024/25 should be based upon
+participation in the Premier League. As such various scenarios are modelled to provide a range of on field
+performances to assess the cashflow requirements for 12 months from the date of approval of the financial
+statements. Based upon current expectations and with the continued support of the Club's ultimate parent
+company, V Sports S.C.S., the Group are forecast to have sufficient resources to meet their liabilities to a
+period not shorter than 12 months from the date of approvai of the financial statements.
+The directors are also confident that there are sufficient options available for the Club to mitigate additional
+funding requirements in the unlikely but mathematically possible event of a 17th place finish at the end of
+2024/25 season including the procurement of further support from V Sports S.C.S and the option to generate
+funds from the sale of players.
+Additionally, the directors would not commit to any further spend above the current forecasted levels,
+particularly in relation to the acquisition of players, without first confirming availability of sufficient funding. As
+such, the directors do not consider there to be a material uncertainty in relation to the ability of the Club to
+continue as a going concern.
+The directors therefore believe that preparing the financiat statements on the going concern basis is
+appropriate due to the continued financial support of the ultimate parent company V Sports S.C.S.
+Charitable contributions
+All fund-raising events are dealt with by the Aston Villa Foundation which is registered with the Charity
+Commission. There were no political contributions in the period (year ended 31 May 2023: £Nil).
+Financial risk management
+The financial risk management objectives and policies of the Group are fu'ly described in the 2024 annuat
+report of the holding company, NSWE UK Limited.
+Employees
+The Company continues its policy of keeping its employees informed on a regular basis of matters concerning
+them as employees and on financial and economic factors affecting the performance of the Company.
+
+5
+
+--- pág. 8 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+DIRECTORS’ REPORT (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+Disabled persons
+The Company recognises its responsibility to employ disabled persons in suitable employment and gives full ,
+and fair consideration to applications for employment made by such persons, having regard to their particular
+aptitudes and abilities.
+Any employee who becomes disabted is encouraged to remain in the Company's empioyment, in the same
+job if this is practicable. \f a change of job is necessary, such an employee is considered for any suitable
+alternative work which is available and any necessary training is arranged.
+Disabled employees are treated equally with all employees in respect of their eligibility for training, career
+development and promotion.
+Streamlined Energy and Carbon Report (SECR)
+The Group Streamlined Energy and Carbon Report (SECR) are set out in the Strategic Report of NSWE UK
+Limited Group financial statements.
+Statement of directors’ responsibilities in respect of the financial statements
+The directors ara responsible for preparing the Annual Report and the financial statements in accordance with
+applicable law and regulation.
+Company law requires the directors to prepare financial statements for each financial year. Under that law the
+directors have prepared the financial statements in accordance with United Kingdom Generally Accepted
+Accounting Practice (United Kingdom Accounting Standards, comprising FRS 102 “The Financial Reporting
+Standard applicable in the UK and Repubiic of Ireland’, and applicable law). Under company law, directors
+must not approve the financial statements unless they are satisfied that they give a true and fair view of the
+state of affairs of the Company and of the profit or loss of the Campany for that period. In preparing the
+financial statements, the directors are required to:
+* select suitable accounting policies and then apply them consistently;
+* state whether applicable United Kingdom Accounting Standards, comprising FRS 102, have been followed,
+subject to any material departures disclosed and explained in the financial statements;
+* make judgements and accounting estimates that are reasonable and prudent; and
+* prepare the financial statements on the going concern basis untess it is inappropriate to presume that the
+Company will continue in business.
+The directors are responsible for safeguarding the assets of the Company and hence for taking reasanable
+steps for the prevention and detection of fraud and other irregularities.
+The directors are also responsible for keep.ng adequate accounting records that are sufficient to show and
+explain the Company’s transactions and disclose with reasonable accuracy at any time the financial position
+of the Company and enable them to ensure that the financial statements comply with the Companies Act
+2006.
+6
+
+--- pág. 9 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+
+DIRECTORS’ REPORT (continued)
+
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+Directors’ confirmations
+
+In the case of each director in office at the date the Directors' Report ts approved:
+
+* so far as the director is aware, there is no relevant audit information of which the Company's auditors are
+unaware; and
+
+* they have taken all the steps that they ought to have taken as a director in order to make themselves
+aware of any relevant audt information and to establish that the Company's auditors are aware of that
+information.
+
+Independent auditors
+
+Under section 487(2) of the Companies Act 2006, PricewaterhouseCoopers LLP will be deemed to have been
+
+reappointed as independent auditors 28 days after these financial statements were sent to members or 28
+
+days after the latest date prescribed for filing the financial statements with the registrar, whichever is earlier.
+
+This report was approved by the board and signed on its behalf by:
+
+N Sawiris
+
+Director
+
+Date: 9 October 2024
+
+7
+
+--- pág. 10 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+
+INDEPENDENT AUDITORS’ REPORT TO THE MEMBERS OF ASTON
+VILLA FOOTBALL CLUB LIMITED
+
+Report on the audit of the financial statements
+
+Opinion
+
+In our opinion, Aston Villa Football Club Limited's financial statements:
+
+* give a true and fair view of the state of the Company's affairs as at 30 June 2024 and of its loss for the
+13 month period then ended;
+
+* have been properly prepared in accordance with United Kingdom Generally Accepted Accounting
+Practice (United Kingdom Accounting Standards, including FRS 102 “The Financial Reporting
+Standard applicable in the UK and Republic of ireland”, and applicable jaw); and
+
+* have been prepared in accordance with the requirements of the Companies Act 2006.
+
+We have audited the financial statements, included within the Annual Report and Financial Statements (the
+*Annuat Report"), which comprise: the Balance Sheet as at 30 June 2024; the Statement of Comprehensive
+
+Income and the Statement of Changes in Equity for the period then ended; and the notes to the financial
+
+statements, which include a description of the significant accounting policies.
+
+Basis for opinion
+
+We conducted our audit in accordance with International Standards on Auditing (UK) ("ISAs (UK)") and
+
+applicable law. Our responsibilities under ISAs (UK) are further described in the Auditors’ responsibilities for
+
+the audit of the financial statements section of our report. We believe that the audit evidence we have
+
+obtained is sufficient and appropriate to provide a basis for our opinion.
+
+independence
+
+We remained independent of the Company in accordance with the ethical requirements that are relevant to
+
+our audit of the financial statements in the UK, which includes the FRC's Ethical Standard, and we have
+
+fulfilled our other ethical responsibilities in accordance with these requirements.
+
+Conclusions relating to going concern
+
+Based on the work we have performed, we have not identified any material uncertainties relating to events or
+
+conditions that, individually or collectively, may cast significant doubt on the Company's ability to continue as a
+
+going concern for a period of at least twelve months from when the financial statements are authorised for
+
+issue.
+
+In auditing the financial statements, we have concluded that the directors’ use of the going concern basis of
+
+accounting in the preparation of the financial statements is appropriate.
+
+However, because not all future events or conditions can be predicted, this conclusion is not a guarantee as to
+
+the Company's ability to continue as a going concern.
+
+Our responsibilities and the responsibilities of the directors with respect to going concern are described in the
+
+relevant sections of this report.
+
+8
+
+--- pág. 11 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+INDEPENDENT AUDITORS’ REPORT TO THE MEMBERS OF ASTON
+VILLA FOOTBALL CLUB LIMITED (continued)
+Reporting on other information
+The other information comprises all of the information in the Annual Report other than the financial statements
+and our auditors’ report thereon. The directors are responsible for the other information. Our opinion on the
+financial statements does not cover the other information and, accordingly, we do not express an audit opinion
+or, except to the extent otherwise explicitly stated in this report, any form of assurance thereon.
+In connection with our audit of the financial statements, our responsibility is to read the other information and,
+in doing so, consider whether the other information is materially inconsistent with the financial statements or
+our knowledge obtained in the audit, or otherwise appears to be materially misstated. If we identify an
+apparent material inconsistency or material misstatement, we are required to perform procedures to conclude
+whether there is a material misstatement of the financial statements or a material misstatement of the other
+information. If, based on the work we have performed, we conclude that there is a material misstatement of
+this other information, we are required to report that fact. We have nothing to report based on these
+responsibilities.
+With respect to the Strategic Report and Directors' Report, we also considered whether the disclosures
+required by the UK Companies Act 2006 have been included.
+Based on our work undertaken in the course of the audit, the Companies Act 2006 requires us also to report
+certain opinions and matters as described below.
+Strategic Report and Directors' Report
+In our opinion, based on the work undertaken in the course of the audit, the information given in the Strategic
+Report and Directors’ Report for the period ended 30 June 2024 is consistent with the financial statements
+and has been prepared in accordance with applicable legal requirements.
+In light of the knowledge and understanding of the Company and its environment obtained in the course of the
+audit, we did not identify any material misstatements in the Strategic Report and Directors’ Report.
+Responsibilities for the financial statements and the audit
+Responsibilities of the directors for the financial statements
+As explained more fully in the Statement of directors’ responsibilities in respect of the financial statements, the
+directors are responsible for the preparation of the financial statements in accordance with the applicable
+framework and for being satisfied that they give a true and fair view. The directors are also responsible for
+such internal contro! as they determine is necessary to enable the preparation of financial statements that are
+free from material misstatement, whether due to fraud or error.
+In preparing the financial statements, the directors are responsible for assessing the Company's ability to
+continue as a going concern, disclosing, as applicable, matters related to going concern and using the going
+concern basis of accounting unless the directors either intend to liquidate the Company or to cease
+operations, or have no realistic alternative but to do so.
+
+9
+
+--- pág. 12 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+INDEPENDENT AUDITORS’ REPORT TO THE MEMBERS OF ASTON
+VILLA FOOTBALL CLUB LIMITED (continued)
+Auditors’ responsibilities for the audit of the financial statements
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free
+from material misstatement, whether due to fraud or error, and to issue an auditors’ report that includes our
+opinion. Reasonable assurance is a high level of assurance, but is not a guarantee that an audit conducted in
+accordance with {SAs (UK) will always detect a material misstatement when it exists. Misstatements can arise
+from fraud or error and are considered material if, individually or in the aggregate, they couid reasonably be
+expected to influence the economic decisions of users taken on the basis of these financial statements.
+(regularities, including fraud, are instances of non-compliance with laws and regulations. We design
+procedures in line with our responsibilities, outlined above, to detect material misstatements in respect of
+irregularities, including fraud. The extent to which our pracedures are capable of detecting irregularities,
+including fraud, is detailed below.
+Based on our understanding of the Company and industry, we identified that the principal risks of non-
+compliance with laws and regulations related to Profit and Sustainability Rules (PSR) of the FA Premier
+League, and we considered the extent to which non-compliance might have a material effect on the financial
+statements. We also considered those Jaws and regulations that have a direct impact on the financial
+statements such as taxation legislation and the companiess Act 2006. We evaluated management's incentives
+and opportunities for fraudulent manipulation of the financial statements (including the risk of override of
+controls), and determined that the principal risks were related to journal entries to improve the reported
+financia! position or performance of the business and management bias in accounting estimates and
+
+judgements. Audit procedures performed by the engagement team included:
+
+* Discussions with management and the in house lega! team in relation to known or suspected
+instances of non-compliance with laws and regulation and fraud;
+* Identifying and testing journal entries through a risk based approach, in particular any journal entries
+
+posted with unusual account combinations;
+
+* Reviewing accounting estimates for evidence of b.as and validating the support behind these
+estimates which has been provided by management;
+
+* Reviewing financial statement disclosures and testing to appropriate supporting documentation to
+assess compliance with accounting standards and applicable laws and regulations;
+
+* Reviewing PSR calculations and correspondence with the FA Premier League with respect to PSR
+submission; and
+
+* Incorporating elements of unpredictability into the nature, timing and extent of testing.
+
+There are inherent limitations in the audit procedures described above. We are less likely to become aware of .
+instances of non-compliance with Jaws and regulations that are not closely related to events and transactions
+reflected in the financia) statements. Also, the risk of not detecting a material misstatement due to fraud is
+higher than the risk of not detecting one resulting from error, as fraud may nvolve deliberate concealment by,
+for example, forgery or intentional misrepresentations, or through collusion.
+
+A further description of our responsibilities for the audit of the financial statements is located on the FRC's
+website at: www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditors’ report.
+Use of this report
+This report, including the opinions, has been prepared for and only for the Company's members as a bady in
+accordance with Chapter 3 of Part 16 of the Companies Act 2006 and for no other purpose. We do not, in
+giving these opinions, accept or assume responsibility for any other purpose or to any other person to whom
+this report is shown or into whose hands it may come save where expressly agreed by our prior consent in
+writing.
+
+10
+
+--- pág. 13 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+INDEPENDENT AUDITORS’ REPORT TO THE MEMBERS OF ASTON
+VILLA FOOTBALL CLUB LIMITED (continued)
+Other required reporting
+Companies Act 2006 exception reporting
+Under the Companies Act 2006 we are required to report to you if, in our opinion:
+
+* we have not obtained all the information and explanations we require for our audit; or
+
+* adequate accounting records have not been kept by the Company, or returns adequate for our audit
+
+have not been received from branches not visited by us; or
+
+* certain disclosures of directors’ remuneration specified by law are not made; or
+
+* the financial statements are not in agreement with the accounting records and returns.
+We have no exceptions to report arising fram this responsibility.
+Matt Palmer (Senior Statutory Auditor)
+for and on behaif of PricewaterhouseCoopers LLP
+Chartered Accountants and Statutory Auditors
+Birmingham
+Date: [ilegible]
+
+11
+
+--- pág. 14 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+STATEMENT OF COMPREHENSIVE INCOME
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+| | Note | 13 month period ended 30 June 2024 £'000 | Year ended 31 May 2023 £'000 |
+|---|---:|---:|---:|
+| Turnover | 4 | 263,079 | 204,526 |
+| Other operating income | 5 | 5,113 | - |
+| Operating expenses | 6 | (318,901) | (320,275) |
+| **Operating Loss** | | (50,709) | (115,749) |
+| Interest payable and similar expenses | 9 | - | (129) |
+| **Loss before taxation** | | (50,709) | (115,878) |
+| Tax on loss | 10 | 1,284 | (221) |
+| **Loss for the financial period/year** | | (49,425) | (116,099) |
+
+All operations are continuing.
+
+The notes on pages 15 to 28 form part of these financial statements.
+
+12
+
+--- pág. 15 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+REGISTERED NUMBER: 03375789
+BALANCE SHEET
+AS AT 30 JUNE 2024
+
+| | Note | 30 June 2024 £'000 | 31 May 2023 £'000 |
+|---|---:|---:|---:|
+| **Fixed assets** | | | |
+| Tangible assets | 11 | 26,725 | 24,096 |
+| **Current assets** | | | |
+| Stock | 12 | 66 | - |
+| Debtors | 13 | 165,742 | 221,336 |
+| Cash at bank and in hand | 14 | 6,505 | 6,109 |
+| | | 172,313 | 227,445 |
+| Creditors: amounts falling due within one year | 15 | (263,331) | (266,415) |
+| **Net current liabilities** | | (91,018) | (38,970) |
+| **Total assets less current liabilities** | | (64,293) | (14,874) |
+| **Capital and reserves** | | | |
+| Called up share capital | 17 | 594,690 | 594,690 |
+| Profit and loss account | 18 | (658,983) | (609,558) |
+| **Total shareholders' deficit** | | (64,293) | (14,868) |
+
+The financial statements on pages 12 to 28 were approved by the Board of Directors on 9 October 2024
+and signed on its behalf by:
+
+[firma]
+
+N Sawiris
+Director
+
+The notes on pages 15 to 28 form part of these financial statements.
+
+13
+
+--- pág. 16 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+STATEMENT OF CHANGES IN EQUITY
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+| | Called up share capital £'000 | Profit and loss account £'000 | Total shareholders' deficit £'000 |
+|---|---:|---:|---:|
+| At 1 June 2022 | 471,190 | (493,459) | (22,269) |
+| **Comprehensive expense for the financial year** | | | |
+| Loss for the financial year | - | (116,099) | (116,099) |
+| **Total comprehensive expense for the financial year** | - | (116,099) | (116,099) |
+| **Contributions by and distributions to owners** | | | |
+| Shares issued during the financial year | 123,500 | - | 123,500 |
+| **Total transactions with owners** | 123,500 | - | 123,500 |
+| **At 31 May 2023 and 1 June 2023** | 594,690 | (609,558) | (14,868) |
+| **Comprehensive expense for the financial period** | | | |
+| Loss for the financial period | - | (49,425) | (49,425) |
+| **Total comprehensive expense for the financial period** | - | (49,425) | (49,425) |
+| **At 30 June 2024** | 594,690 | (658,983) | (64,293) |
+
+The notes on pages 15 to 28 form part of these financial statements.
+
+14
+
+--- pág. 17 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+1 General information
+Aston Villa Football Club Limited’s (the "Company“) principal activity continues to be the running of
+commercial activities of a professional football club.
+The Company is incorporated and registered in Englane, UK and is a private company limited by
+shares. The address of its registered office is Villa Park Trinity Road, Aston, Birmingham, West
+Midlands, B6 6HE.
+
+2 Accounting policies
+
+2.1 Basis of preparation of financial statements
+The financial statements have been prepared on a going concern basis, under the historical cost
+convention and in accordance with Financial Reporting Standard 102, the Financial Reporting Standard
+applicable in the UK and the Republic of treland and the Companies Act 2006.
+The preparation of financial statements in compliance with FRS 102 requires the use of certain critical
+accounting estimates. It also requires management to exercise judgement in applying the Company's
+accounting policies (see note 3).
+The following principal accounting policies have been applied consistently throughout the period:
+
+2.2 Financial reporting standard 102 - reduced disclosure exemptions
+The Company has taken advantage of the following disclosure exemptions in preparing these financial
+statements, as permitted by the FRS 102 “The Financial Reporting Standard applicable in the UK and
+Republic of Ireland”:
+* the requirements of Section 7 Statement of Cash Flows;
+* the requirements of Section 3 Financial Statement Presentation paragraph 3.17(d);
+* the requirements of Section 11 Financial Instruments paragraphs 11.42, 11.44 to 11.45, 11.47,
+
+11.48(a)(ili), 11.48(a)(iv), 11.48(b) and 11.48(c);
+* the requirements of Section 12 Other Financia! instruments paragraphs 12.26 to 12.27, 12.29(a),
+12,29(b) and 12.29A; and
+* the requirements of Section 33 Related Party Disclosures paragraph 33.7.
+This information is included in the consolidated financial statements of NSWE UK Limited as at 30 June
+2024 and these financial statements may be obtained from Villa Park, Trinity Road, Birmingham, B6
+6HE.
+16
+
+--- pág. 18 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+2 Accounting policies (continued)
+2.3. Going concern
+The directors have formed a judgement at the time of approving the financial statements that the
+Company has adequate resources available to continue operating and to discharge all financial
+obligations as they fall due for a period of at Jeast 12 months from the date of approval of the financial
+statements.
+The directors believe that preparing the financial statements on the going concern basis is appropriate
+due to the continued financial support of the parent company NSWE Uk Limited.
+The directors have received confirmation that NSWE UK Limited intends to support the Company for at
+feast 12 months from the approval of these financial statements.
+Regarding the going concern assessment of the Group, the directors have prepared detailed cashflow
+forecasts for the Group to assess potential funding requirements for a period of 12 months from the
+signing of the Group financial statements. The forecasts model assumes continued availability of the
+banking overdraft facility provided to the Club by Barclays Bank Plc. The directors have made enquiries
+of Barclays Bank Plc over the continued provision of this facility for the going concern assessment
+period and received confirmation that there were no concerns in relation to it continuing to be made
+available.
+The directors are confident in their assumption that cash fiow forecasts for 2024/25 should be based
+upon participation in the Premier League. As such vatious scenarios are modelled to provide a range of
+on field periormances to assess the cashflow requirements for 12 months from the date of approval of
+the financial statements. Based upon current expectations and with the continued support of the Club's
+ultimate parent company, V Sports S.C.S., the Group are forecast to have sufficient resources to meet
+their liabilities to a period not shorter than 12 months from the date of approval of the financial
+statements.
+The directors are also confident that there are sufficient options available for the Club to mitigate
+additional funding requirements in the unlikely but mathematically possible event of a 17th place finish
+at the end of 2024/25 season including the procurement of further support from V Sports S.C.S and the
+option to generate funds from the sale of players.
+Additionally, the directors would not commit to any further spend above the current forecasted {evels,
+particularly in relation to the acquisition of players, without first confirming availability of sufficient
+funding. As such, the directors do not consider there to be a material uncertainty in relation to the ability
+of the Club to continue as a going concern.
+The directors therefore believe that preparing the financial statements on the going concern basis is
+appropriate due to the continued financial support of the ultimate parent company V Sports S.C.S.
+2.4 Foreign currency
+The Company's functional and presentational currency is Pound Sterling.
+16
+
+--- pág. 19 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+2 Accounting policies (continued)
+
+2.5 Turnover
+Turnover represents amounts receivable for goods and services, excluding transfer fees receivable in
+respect of the disposal of players’ registrations, in the normal course of the Group's business. It is
+stated net of discounts and value added tax.
+Gate receipts turnover is recognised over the period of the English football season, as home matches
+are played, with amounts deferred for the 24/25 season relating to matches which had not taken place
+by the end of the financial year.
+Fixed elements of broadcasting contracts are taken in proportion to the number of league matches
+played, home and away. Broadcasting facility fees are accounted for wnen earned. Rebates payable to
+broadcasters as a result of the suspension of the 2020-21 Premier League season have been allocated
+to fixed elements or broadcasting facility fea elements of income and recognised on the same basis as
+the related revenue.
+Sponsorship turnover, including royalties, are recognised over the duration of their respective contracts.
+Merchandising, travel and catering turnover, included within Commercial turnover, are recognised on an
+earned basis. Executive box rentals are recognised over the duration of their contracts and included in
+Commercial turnover..
+UEFA turnover relates to income received directly from UEFA for participation in European club footbalt
+and is recognised as matches are played.
+
+2.6 Finance costs
+Finance costs are charged to the Statement of Comprehensive Income over the term of the debt using
+the effective interest method so that the amount charged is at a constant rate on the carrying amount.
+Issue costs are initially recognised as a reduction in the proceeds of the associated capital instrument.
+
+2.7 Tangible assets
+Tangible assets are stated at historic purchase cost less accumulated depreciation and any provision
+for impairment. Cost includes the original purchase price of the asset and the costs attributable to
+bringing the asset to its working condition for its intended use.
+Depreciation is calculated on a straight-line basis to write down the assets to their estimated residual
+value over the anticipated useful lives, which are re-assessed on a periodic basis, at the following
+annual rates:
+
+Freehold buildings - 2%
+Plant and equipment - 10-33%
+
+2.8 Impairment of tangible assets
+At each Balance Sheet date, the Company reviews the carrying amounts of its tangible assets to
+determine whether there is any indication that those assets have suffered an impairment loss. If any
+such indication exists, the recoverable amount of the asset is estimated in arder to determine the extent
+of the impairment loss. The recoverable amount is the higher of fair value less costs to sell and the
+value in use. Any impairment loss is recognised immediately as an expense.
+
+17
+
+--- pág. 20 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+2 Accounting policies (continued)
+2.9 Current and deferred taxation
+The taxation expense represents the sum of tax currently payable or recoverabie and deterred taxation,
+
+and takes into account adjustments for prior periods.
+
+Current tax is the amount of income tax payable in respect of the taxable profit for the year or prior
+years. Tax is calculated on the basis of tax rates and laws that have been enacted or substantively
+
+enacted by the period end.
+
+Deferred taxation is the tax expected to be payable or recoverable on differences between the carrying
+amounts of assets and liabilities in the financia) statements and the corresponding tax bases used in
+
+the computation of taxable profit and is accounted for using the Balance Sheet liability method.
+
+Deferred tax liabilities are generally recognised for all taxable temporary differences and deferred tax
+assets are recognised to the extent that it is probable that taxable profits will be available against which
+deductible timing differences can be utilised.
+
+Deferred tax is calculated at the tax rates that are expected to apply in the period when the liability is
+settled or the asset realised. Deferred tax is charged or credited to the Statement of Comprehensive
+Income, except when it relates to items charged or credited directly to equity, in which case the deferred
+tax is also dealt with in equity.
+Deferred tax assets and liabilities are offset when there is a legally enforceable right to set off current
+tax assets against current tax liabilities and when they relate to income taxes levied by the same
+taxation authority and the Group intends to settle its current tax assets and fiabilities on a net basis.
+Deferred tax is measured on an undiscounted basis.
+
+2.10 Pensions
+Defined contribution pension plan
+Payments to various defined contribution retirement schemes are charged as an expense as they fall
+due.
+Certain of the Company's employees and ex-employees are members of the Football League Limited
+Pension and Life Assurance Scheme (FLLPLAS), a defined benefit scheme. As the Company is one of
+a number of participating employers in FLLPLAS it is not possible to identify the Company's share of
+the individual assets and liabilities within the scheme. However, the actuarial surpius or deficit is
+estimated and a provision is made for any unfunded obligation with any payments made being
+deducted from the outstanding balance. The assets of the scheme are heid separately from those of the
+Group, being invested with insurance companies. Further details are set out in note 19.
+
+2.11 Leases
+Assets acquired under finance leases and other similar contracts, which confer rights and abtigations
+similar ta those attached to owned assets, are capitalised as tangible assets and are depreciated over
+their useful lives. The capital element of future lease obligations are recorded as liabilities with the
+interest element being charged to the profit and loss account at a constant rate over the period of the
+lease.
+
+18
+
+--- pág. 21 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+2 Accounting policies (continued)
+
+2.12 Financial instruments
+The Company has chosen to adopt sections 11 and 12 of FRS 102 in respect of financial instruments.
+Financial assets
+Basic financial assets, including trade and other receivables and cash and bank balances, are initially
+recognised at transaction price, unless the arrangement constitutes a financing transaction, where the
+transaction is measured at the present value of the future receipts discounted at a market rates of
+interest.
+Such assets are subsequently carried at amortised cost using the effective interest method.
+At the end of each reporting period financial assets measured at amortised cost are assessed for
+objective evidence of impairment. If an asset is impaired the impairment loss is the difference between
+the carrying amount and the present value of the estimated cash flows discounted at the asset's original
+effective interest rate. The impairment is recognised in the Statement of Comprehensive Income.
+Financial assets are derecognised when (a) the contractual rights to the cash flows from the assets
+expire or are settled, or (b) substantially all the risk and regards of the ownership of the asset are
+transferred to another party or (c) control of the asset has been transferred to another party who has
+the practical ability to unilaterally self the asset to an unrelated third party without imposing additional
+restrictions.
+Financial liabilities
+Basic financial liabilities, including trade and other payables and amounts due to fellow group
+companies afe initially recognised at transaction price, unless the arrangement constitutes a financing
+transaction, where the debt instrument is measured at the present value of the future receipts
+discounted at a market rate of interest.
+Trade payables are obligations to pay for goods or services that have been acquired in the ordinary
+course of business from suppliers. Accounts payable are classified as current liabilities if payment is
+due within one year or less. If not, they are presented as non-current liabilities. Trade- payables are
+recognised initially at transaction price and subsequently measured at amortised cost using the
+effective interest.
+
+2.13 Borrowing costs
+Ail borrowing costs are recognised in Statement of Comprehensive Income in the year in which they are
+incurred.
+
+2.14 Debtors
+Short term debtors are measured at transaction price, less any impairment. Loans receivable are
+measured initially at fair value, net of transaction costs, and are measured subsequently at amortised
+cost using the effective interest method, less any impairment.
+
+19
+
+--- pág. 22 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+2 Accounting policies (continued)
+2.15 Cash and cash equivalents
+Cash is represented by cash in hand and deposits with financial institutians repayable without penalty
+on notice of not more than 24 hours. Cash equivalents are highty liquid investments that mature in no
+more than three months from the date of acquisition and that are readily convertible to known amounts
+of cash with insignificant risk of change in value.
+2.16 Creditors
+Short term creditors are measured at the transaction price. Other financial fiabilities, including bank
+loans, are measured initially at fair vatue, net of transaction costs, and are measured subsequently at
+amortised cost using the effective interest method.
+2.17 Share capital and distributions to equity holders
+Ordinary shares ate class‘fied as equity. Dividends and other distributions to the Company's
+shareholders is recognised as a liability in the financiat statements in the period in which the dividend
+and other distributions are approved by the shareholders.
+3 Judgements in applying accounting policies and key sources of estimation uncertainty
+The Company makes estimates and assumptions concerning the future. The resulting accounting
+estimates will, by definition, seldom equal the related actual results. There are no estimates and
+assumptions that have a significant risk of causing a material adjustment to the carrying amounts of
+assets and liabilities within the next financial year.
+20
+
+--- pág. 23 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+4 Turnover
+
+Turnover comprises:
+
+| | 13 month period ended 30 June 2024 £'000 | Year ended 31 May 2023 £'000 |
+|---|---:|---:|
+| Gate receipts | 28,009 | 18,777 |
+| Broadcasting | 170,718 | 152,556 |
+| Sponsorship | 21,895 | 16,303 |
+| Commercial | 28,767 | 16,890 |
+| UEFA | 13,690 | - |
+| | 263,079 | 204,526 |
+
+The constituents of each component are as follows:
+
+* Gate receipts - Revenues generated from the sale of match tickets.
+* Broadcasting - Distributions from the FA Premier League and English Football League broadcasting agreements, including the merit award, cup competition broadcasting rights and local radio broadcasting.
+* Sponsorship - Major sponsorship contracts and club partnership agreements.
+* Commercial - Merchandising, royalties, conference and banqueting and all other revenue sources.
+* UEFA – Distributions from UEFA including the merit award and cup competition broadcasting rights.
+
+The Company only recognises one segment, being professional football operations, and one main
+geographical segment, being the United Kingdom, therefore no further segmental information is
+provided.
+
+5 Other operating income
+
+| | 2024 £'000 | 2023 £'000 |
+|---|---:|---:|
+| Insurance claims receivable | 2,500 | - |
+| V Sports recharge | 2,613 | - |
+| | 5,113 | - |
+
+Insurance claims relate to claims made against the club's business interruption insurance policy due to
+disruption caused by the Covid pandemic.
+
+V Sports recharge relates to services provided by the group staff on behalf of V Sports.
+
+21
+
+--- pág. 24 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+6 Operating expenses
+
+Operating expenses comprise:
+
+| | 13 month period ended 30 June 2024 £'000 | Year ended 31 May 2023 £'000 |
+|---|---:|---:|
+| Depreciation of tangible assets (see note 11) | 4,909 | 3,317 |
+| Staff costs (see note 7) | 15,196 | 10,760 |
+| Other operating charges | 298,796 | 306,198 |
+| | 318,901 | 320,275 |
+
+Other operating charges are stated after (crediting)/charging:
+
+| | 13 month period ended 30 June 2024 £'000 | Year ended 31 May 2023 £'000 |
+|---|---:|---:|
+| Profit on disposal of tangible assets | - | (9) |
+| Auditor's remuneration - audit of the Company's financial statements | 122 | 65 |
+
+The Company has taken advantage of the exemption not to disclose amounts paid for non-audit
+services as these are disclosed in the Group financial statements of the parent Company.
+
+The directors have agreed with the company's auditors that the auditor's liability to damages for breach
+of duty in relation to the audit of the company's financial statements for the period to 30 June 2024
+should be limited to the greater of £5 million or 5 times the auditor's fees, and that in any event the
+auditor's liability for damages should be limited to that part of any loss suffered by the company as is
+just and equitable having regard to the extent to which the auditor, the company and any third parties
+are responsible for the loss in question. The shareholders approved this limited liability agreement, as
+required by the Companies Act 2006, by a resolution dated 15 August 2024.
+
+7 Employees
+
+Staff costs, including directors' remuneration, were as follows:
+
+| | 13 month period ended 30 June 2024 £'000 | Year ended 31 May 2023 £'000 |
+|---|---:|---:|
+| Wages and salaries | 12,827 | 9,080 |
+| Social security costs | 1,877 | 1,202 |
+| Other pension costs (note 18) | 492 | 478 |
+| | 15,196 | 10,760 |
+
+22
+
+--- pág. 25 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+7 Employees (continued)
+
+The average monthly number of employees by activity:
+
+| | 13 month period ended 30 June 2024 Number | Year ended 31 May 2023 Number |
+|---|---:|---:|
+| Directors | 4 | 3 |
+| Commercial, merchandising and operational | 161 | 137 |
+| Maintenance and administration | 88 | 89 |
+| Part time employees on matchdays and other events | 452 | 464 |
+| | 705 | 693 |
+
+8 Directors' remuneration
+
+| | 13 month period ended 30 June 2024 £'000 | Year ended 31 May 2023 £'000 |
+|---|---:|---:|
+| Aggregate remuneration | 662 | 1,121 |
+
+During the period retirement benefits were accruing to no directors (year ended 31 May 2023: none) in
+respect of defined contribution pension schemes.
+
+The highest paid director received remuneration of £662,000 (year ended 31 May 2023: £1,121,000).
+
+The director also received a total BIK of £1,000 (year ended 31 May 2023: £20,000) during the period.
+
+Only one of the directors are remunerated in relation to their services to the Group by a subsidiary
+company and none of the directors received remuneration in relation to their services to the Company.
+
+Key management personnel are considered to be the directors of the Company.
+
+9 Interest payable and similar expenses
+
+| | 13 month period ended 30 June 2024 £'000 | Year ended 31 May 2023 £'000 |
+|---|---:|---:|
+| Bank interest payable | - | 129 |
+
+23
+
+--- pág. 26 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+10 Tax on loss
+
+| | 13 month period ended 30 June 2024 £'000 | Year ended 31 May 2023 £'000 |
+|---|---:|---:|
+| **Corporation tax** | | |
+| Current tax on (loss)/profit for the financial period/year | (821) | (132) |
+| Adjustments in respect of prior years | (463) | 353 |
+| **Total current tax** | (1,284) | 221 |
+
+Factors affecting tax charge for the period/year
+
+The tax assessed for the period is higher than (year ended 31 May 2023: lower than) the standard rate
+of corporation tax in the UK of 25% (year ended 31 May 2023: 20%). The differences are explained
+below:
+
+| | 13 month period ended 30 June 2024 £'000 | Year ended 31 May 2023 £'000 |
+|---|---:|---:|
+| Loss before taxation | (50,709) | (115,878) |
+| Loss before taxation multiplied by standard rate of corporation tax in the UK of 25% (2023: 20%) | (12,677) | (23,176) |
+| *Effects of:* | | |
+| Expenses not deductible | 992 | 246 |
+| Movement in unprovided deferred tax | 10,864 | 22,799 |
+| Adjustments in respect of prior years | (463) | 353 |
+| **Total tax charge for the financial period/year** | (1,284) | 222 |
+
+Factors that may affect future tax charges
+
+There are not considered to be any known future tax changes which will impact the Company.
+
+24
+
+--- pág. 27 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+11 Tangible assets
+
+| | Freehold buildings £'000 | Plant and equipment £'000 | Total £'000 |
+|---|---:|---:|---:|
+| **Cost** | | | |
+| At 1 June 2023 | 7,528 | 42,876 | 50,404 |
+| Additions | 9,764 | 6,586 | 16,350 |
+| Transfers | (8,812) | - | (8,812) |
+| **At 30 June 2024** | 8,480 | 49,462 | 57,942 |
+| **Accumulated depreciation** | | | |
+| At 1 June 2023 | 2,151 | 24,157 | 26,308 |
+| Charge for the period | 1,037 | 3,872 | 4,909 |
+| **At 30 June 2024** | 3,188 | 28,029 | 31,217 |
+| **Net book value** | | | |
+| **At 30 June 2024** | 5,292 | 21,433 | 26,725 |
+| At 31 May 2023 | 5,377 | 18,719 | 24,096 |
+
+12 Stocks
+
+| | 30 June 2024 £'000 | 31 May 2023 £'000 |
+|---|---:|---:|
+| Finished goods | 66 | - |
+
+There is no significant difference between the replacement cost of the inventory and its carrying
+amount.
+
+13 Debtors
+
+| | 30 June 2024 £'000 | 31 May 2023 £'000 |
+|---|---:|---:|
+| Trade debtors | 12,693 | 6,891 |
+| Amounts owed by group undertakings | 134,156 | 206,574 |
+| Other debtors | 184 | 36 |
+| Corporation tax receivable | 1,284 | 132 |
+| Prepayments and accrued income | 17,425 | 7,703 |
+| | 165,742 | 221,336 |
+
+Debtors are stated after provisions for impairment of £Nil (31 May 2023: £Nil).
+
+Trade debtors and other debtors are measured at amortised cost.
+
+Amounts owed by group undertakings are unsecured, interest free and are repayable on demand.
+
+Prepayments and accrued income are made up of £10.1m (31 May 2023: £0.2m) accrued income
+relating to 23/24 season and £7.3m (31 May 2023: £7.5m) prepayments held for costs relating 24/25
+season.
+
+25
+
+--- pág. 28 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+14 Cash at bank and in hand
+
+| | 30 June 2024 £'000 | 31 May 2023 £'000 |
+|---|---:|---:|
+| Cash at bank and in hand | 6,505 | 6,109 |
+
+15 Creditors: amounts falling due within one year
+
+| | 30 June 2024 £'000 | 31 May 2023 £'000 |
+|---|---:|---:|
+| Trade creditors | 3,199 | 7,684 |
+| Amounts owed to group undertakings | 214,717 | 219,951 |
+| Other taxation and social security | 7,414 | 12,109 |
+| Other creditors | 1,043 | 1,437 |
+| Accruals and deferred income | 36,958 | 25,234 |
+| | 263,331 | 266,415 |
+
+Amounts owed to group undertakings are unsecured, bear no interest and are repayable on demand.
+
+Deferred income includes £32,177,000 (31 May 2023: £21,988,000) related to revenue for the 24/25
+season with the remaining balanced being accrued costs in the 23/24 season awaiting settlement.
+
+16 Deferred taxation
+
+A deferred tax asset has not been recognised in respect of timing differences relating to capital
+allowances, short term timing differences and tax trading losses as there is insufficient evidence that the
+asset will be recovered. The amount of the asset not recognised is £147,164,000 (31 May 2023:
+£136,300,000). The asset would be recovered if sufficient taxable trading profits arise in the future.
+
+17 Called up share capital
+
+| | 30 June 2024 £'000 | 31 May 2023 £'000 |
+|---|---:|---:|
+| **Allotted, called up and fully paid** | | |
+| 594,690,384 (31 May 2023: 594,690,384) Ordinary shares of £1 (31 May 2023: £1) each | 594,690 | 594,690 |
+
+18 Profit and loss account
+
+The profit and loss account represents the accumulated profits, losses and distributions of the
+Company.
+
+26
+
+--- pág. 29 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+19 Retirement benefit schemes
+Certain members of the Group's staff are members of either the Football League Limited Players’
+Retirement Income Scheme, a defined contribution scheme, or the Football League Limited Pension
+and Life Assurance Scheme (FLLPLAS), a defined benefit scheme. As the Company is one of a number
+of participating employers in the scheme, it is not possible to allocate any actuarial surplus or deficit on
+an annual basis. However, under Section 75 of the Pensions Act 1995, the Company, as a participating
+employer in the scheme, is liable to fund the deficit relating to Company's ex-employees who are
+members of the scheme. The Scheme Actuary finalised a full valuation as at 1 September 2020 and
+allocated £454,000 as the Club's share of the deficit. The deficit is funded by annual contributions. The
+balance outstanding at the period-end date is included in other creditors. The Club has made
+contributions of £129,000 in the period (31 May 2023: £113,000). The assets of the scheme are held
+separately from those of the Company.
+At the period end, the amount outstanding in relation to the defined contribution schemes was £25,000
+(31 May 2023: £154,000).
+Contributions are also paid into individuals’ private pension schemes. The total contributions across all
+schemes during the period amounted to £492,000 (31 May 2023: £478,000). At the end of the period,
+contributions of £168,000 (31 May 2023: £123,000) were outstanding.
+20 Commitments under operating leases
+At 30 June the Company had future minimum lease payments due under non-cancellable operating
+leases for each of the following periods:
+
+| | 30 June 2024 £'000 | 31 May 2023 £'000 |
+|---|---:|---:|
+| Not later than 1 year | 2,383 | 2,600 |
+| Later than 1 year and not later than 5 years | - | 2,600 |
+| | 2,383 | 5,200 |
+
+21 Related party transactions
+The Company is exempt from disclosing related party transactions as they are with other companies
+that are wholly owned within the Group.
+During the period/year New Malden Golf Centre provided £1,000 (31 May 2023: £20,000) of services to
+the Club, for which Christian Purslow is a director.
+Other operating income includes £2,612,630 V Sports recharge (31 May 2023: £Nil).
+Amounts owed by group undertakings of £935,000 (31 May 2023: £934,500) relate to 1874
+Developments Ltd.
+27
+
+--- pág. 30 ---
+
+ASTON VILLA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+22 ~=—Ultimate parent undertaking and controlling party
+At 30 June 2024 the directors consider V Sports S.C.S, registered in Luxembourg to be the Company's
+controlling party and ultimate parent undertaking.
+The immediate parent undertaking is Aston Villa Limited. Tne largest group to consolidate these
+financial statements is NSWE UK Limited and the smallest group to consolidate these financial
+statements is NSWE Sports Limited. Copies of these consolidated financial statements of NSWE UK
+Limited and NSWE Sports Limited can be obtained from their registered address at Villa Park,
+Birmingham, West Midlands, B6 6HE.
+28

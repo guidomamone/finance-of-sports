@@ -1,0 +1,2002 @@
+> Transcripción: Tesseract OCR + revisión de un subagente de Claude contra la imagen de las páginas clave (estados y notas financieras).
+
+--- pág. 1 ---
+
+Company Registration Number 66516
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+Annual Report and Financial Statements
+For the year ended 31 May 2024
+
+--- pág. 2 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+ANNUAL REPORT AND FINANCIAL STATEMENTS
+For the year ended 31 May 2024
+CONTENTS
+Strategic report 3
+Directors’ report 12
+Independent auditors’ report 23
+Statement of Comprehensive Income 27
+Balance Sheet 28
+Statement of Changes in Equity 29
+Notes to the financial statements ; 30
+2
+
+--- pág. 3 ---
+
+STRATEGIC REPORT
+for the year ended 31 May 2024
+The directors present their annual report together with the audited financial statements of West Ham United
+Football Club Limited (“the Company”) for the year ended 31 May 2024.
+Principal Activities
+The principal activity of the Company is that of a professional football club as a member of The FA Premier
+League and the Football Association together with related and ancillary activities.
+Results and Dividends
+The results of the Company are as set out in the statement of comprehensive income on page 27.
+The shareholders remain focused on the growth and success of West Ham United, and continue to invest in
+the playing squad to ensure the continuation of our long-running presence in the Premier League, which
+remains the principle aim of every season.
+In line with the strategic decision taken when the majority shareholders acquired the Club in 2010 to re-invest
+all surplus funds into the squad and infrastructure, and in keeping with all the years since they took
+ownership, the directors do not propose the payment of a dividend (2023: £nil).
+The balance sheet can be found on page 28 and shows that the total shareholders’ funds have increased from
+31 May 2023 by £61.2m in line with the profit for the year and a surplus on the revaluation of properties.
+Review of the year
+The Club once again made the strategic decision to provide funds to significantly enhance the squad during
+the 2023-24 summer transfer window with five new additions to the squad. This strategy proved to be
+successful as the Club was able to secure its core aim of maintaining our Premier League status for a
+thirteenth consecutive season, which is the longest consistent period the Club has remained in the top flight in
+the modern era and in the Premier League since its inception in 1992.
+We said farewell to our long-serving manager, David Moyes at the end of the season, and we thank him for
+his efforts over the last four and a half years.
+As part of the Club’s football strategy, and in line with wider changes to the structure of the football
+department, a new Head Coach, Julen Lopetegui, was appointed on 1st July 2024, with the Board providing
+the support and backing to enable the Club to continue progressing with the aim of getting back into Europe in
+the near future.
+3
+
+--- pág. 4 ---
+
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+Review of the year (continued)
+Turnover at £268.2m was up £32.8m on the previous year, largely due to the improved position in the Premier
+league (9th v 14th) and higher European income, due to the relative values of the UEFA Europa Conference
+League (the “UECL”) in which we participated during the comparative period and the UEFA Europa League
+(the “UEL”) in which we participated this season, as well as the inclusion of the UECL prize money for
+succeeding in winning the competition in June 2023.
+As a result of this success, the club qualified straight into the group stages of the UEL, progressing to the
+quarter-final knock out round.
+Broadcasting revenue of £167.0m (2023: £147.6m) this year includes UEL income plus recognition of the
+UECL prize money of £1.7m for winning the 2022-23 competition in June 2023, the positional fee awarded
+for finishing 9th in the Premier League and facility fees for having been selected for twenty-one ‘live’ Premier
+League matches. Last year’s broadcasting income included the income from our UEL games and the
+recognition of facility income for attracting twenty one ‘live’ matches and the positional fee.
+Income is up across the board, as the Executive Team capitalized on achieving the club’s goal of participating
+in European competition.
+Match income at £43.8m is £3.5m higher this year, reflecting the higher attendances in the UEL and generally
+higher match by match income driven by the growth of the Ticket Exchange, while maintaining accessible
+prices for supporters.
+Commercial income at £41.2m is higher than last year by £6.7m due to improved partnership income, pre-
+season tour income, and higher corporate income from the UEL campaign.
+Retail income at £16.1m is up £3.2m on last year, a reflection of the ability to hold price and maximizing the
+UEFA Europa League Conference League victory in June and the general enthusiasm when the club was
+participating in European competition and competing well in the Premier League.
+The primary reason for the change from a loss of £17.4m in 2022-2023 to the net profit for the year of
+£58.5m, is the higher profit on sale of players, notably of Academy graduate Declan Rice to Arsenal in July
+2023. Other factors are the increase in turnover as a result of achieving the higher Premier League position
+and higher revenues in the UEL as opposed to the UECL.
+This profit placed the Club in a strong and healthy position to enable substantial investment into the men’s
+first team playing squad during the summer transfer window, following the arrival of new Head Coach Julen
+Lopetegui.
+This year’s financial results have again been impacted by an increase in implied interest on transfer fees
+payable with extended payment terms. This is driven by a combination of significant investment in the playing
+squad over the past two years, the significant value of transfer fees payable with extended payment terms, the
+current high level of interest rates and the requirement to discount such payments to present value upon initial
+recognition. The implied interest charge of £7.9m (2023:£11.6m) has been offset by a reduction to the annual
+amortisation charge of £7.8m (2023:£6.8m), the net effect being a charge of credit of £0.1m to the
+consolidated statement of comprehensive income.
+The same accounting treatment has been applied to future transfer fees receivable resulting in an implied
+interest credit of £4.6m (2023:£nil) to the consolidated statement of comprehensive income.
+4
+
+--- pág. 5 ---
+
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+
+Review of the year (continued)
+The Club continues to optimise its funding and, as a result, took the decision to repay the outstanding £55.0m
+
+MSD facility in August 2023. The club renewed its £40.0m overdraft facility with Barclays Bank PLC for a
+further year on 17th June 2024, through to 15th July 2025. In addition, the club has accelerated a number of
+future transfer fee receivables (Note 29).
+On the pitch, the team secured a top ten finish in the Premier League season which culminated in a 9th place
+spot and reached a creditable quarter final place in the UEL. In domestic cup competitions we reached the
+third round of the FA Cup and the quarter-final of the Carabao Cup. In addition, the team won the ECL in
+June 2023 and the prize money is reflected in this set of accounts.
+Future Prospects
+As with all Premier League football clubs, the performance of the men’s first team and the league in which it
+operates remains a future risk. However, strong performances in the 2023-24 season, in both the Premier
+League and UEFA Europa League, followed by the appointment of a highly regarded First Team Coach and
+team of backroom staff, as well as an exciting squad assembled through a combination of new signings in a
+successful summer transfer window and retaining top international talent, has given the Club a sound
+platform. The Football Department benefits from a supportive Board, respected Technical Director and an
+
+ambitious Head Coach.
+The objective going forward is for the Club to continue to create an environment and mentality built around
+the core values that our supporters cherish — hard work, desire, youth, team spirit, togetherness excitement and
+all for our fans at home and across the world — qualities that underpin our identity on and off the pitch. West
+Ham United are heading into a record 13th consecutive Premier League campaign — as secure and established
+position that the Club has been in during the modern era. We now have a clear opportunity, using the
+"foundation of genuine progress and success in recent years, to continue an upward trajectory.
+The Club will continue to work with its new football structure to build and improve the squad in line with its
+mission and goal to be a London Premier League Club at the heart of its community, challenging for Europe
+for the benefit and enjoyment of its fans both at home and around the globe.
+The loyalty displayed by the Club’s fanbase, indicated by the high level of Season Ticket renewals for the
+2024-25 season, gives us one of the highest numbers of Season Ticket holders in London and the Premier
+League, putting the Club in a strong position as we move forward.
+Despite our recent success, in line with our values and commitment to our community, the Club continues to
+offer the cheapest adult Season Ticket and one of the cheapest junior Season Tickets in the Premier League,
+which is aligned to our objective to make London Stadium accessible to all and to support our local
+community with affordable family football in the heart of the capital.
+5
+
+--- pág. 6 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+Future Prospects (continued)
+
+Indeed, since moving to London Stadium, we’ve issued over 35,000 £99 Season Tickets, and for the 2024/25
+season, Under-18 Season Tickets are available from just £109, still currently one of the cheapest junior Season
+Tickets in the Premier League. This means a family of four (two adults and two Under-18s) could attend all
+Premier League home fixtures for £47.78 per match.
+
+The club also runs its ever-popular ‘Kids for a Quid’ initiative, with Under-18 tickets available for just £1.00,
+and adult tickets from just £10.00. This was delivered for two fixtures across the 2023/24 season, which meant
+a family of four could attend a match from just £22.00. Over the course of the last six seasons, noting of
+course that there were no supporters attending matches in the 2020-21 Covid season, we’ve issued an
+incredible 63,210 £1.00 tickets to youngsters at London Stadium, showing the true value, we place on
+attracting fans of the future to our iconic home in East London.
+For West Ham United, the brand and team are its greatest contributors to value, which — along with having
+one of the fastest growing digital footprints in the Premier League — has resulted in it being listed as the 16th
+most valuable club in the world in 2023-24 in Forbes’ World’s Most Valuable Soccer Clubs list.
+Principal Risks and Uncertainties
+There are a number of potential matters which could have a material impact on the Club’s long-term
+performance. These are monitored by the Board on a regular basis.
+The Company’s principal business risk remains that of the football club being relegated from the Premier
+League with the serious financial consequences which follow. The Company prepares budgets two seasons in
+advance which include an evaluation of the impact of relegation and associated contingency plans.
+It is a feature of football clubs’ income streams that a significant element is known in advance because of its
+long-term contractual nature. Centrally negotiated broadcast and sponsorship deals are presently in place to at
+least the end of the 2026-27 season. The Company’s own major sponsorship and partnership agreements are
+also in place until the end of seasons 2024-25 and 2025-26 respectively. Season Ticket sales (including
+corporate sales) are made at the start of each season and represent the bulk of the Company’s match day
+revenue. Therefore, in the region of 75% of the Company’s annual turnover will be guaranteed, and in many
+cases received, by 31 July each year.
+To the extent that there are ever any material variances from the budget leading to a liquidity shortfall,
+football clubs have the ability to address any potential liquidity risks through player trading. However, this is
+in extreme circumstances and given the strong measures taken by the Club’s shareholders in raising
+investment when required, and the progress and strong performance of the team in recent seasons, this is not a
+measure West Ham United are expected to require in the short or long term.
+At the London Stadium, the stadium operator holds the annual safety certificate, however we continue to hold
+£500 million of public liability insurance in respect of any one occurrence.
+As a professional football club playing in the English Premier League, West Ham United is regulated by the
+Football Association, the Premier League and UEFA, and therefore operates within their regulatory
+framework which includes the risk of breach of Financial Fair Play rules. The club continues to comply with
+Financial Fair Play (FFP) rules and expects to do so in the future as the new Squad Cost Ratio (SCR) rules are
+introduced in the forthcoming years.
+
+6
+
+--- pág. 7 ---
+
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+Financial Risk Management
+Financial assets that expose the Company to financial risk consist principally of cash, and trade and other
+debtors. Financial liabilities that expose the Company to financial risk consist principally of trade and other
+creditors. The financial risks associated with these financial instruments are considered minimal.
+The Company is exposed to foreign exchange risks in respect of the purchase or sale of player registrations
+negotiated in foreign currency. In the course of the year just ended, the Company made a loss on foreign
+currency translation of £0.7m (2022-23: £0.6m loss) due to adverse movements in the Euro foreign exchange
+markets at the year-end date.
+The Company places surplus cash with Barclays Bank PLC. The Company performs an ongoing credit
+evaluation of its debtors’ financial condition. The carrying amounts of cash, and trade and other debtors
+represent the maximum credit risk to which the Company is exposed.
+Going Concern
+The Board has prepared and approved forecasts for the current and forthcoming season (through to May
+2026), which capture the period of at least twelve months from the date of approval of these financial
+statements.
+The base forecast has been prepared assuming the club remains in the Premier League for the 2024-25 season.
+This forecast assumes no further player trading, revenues received in line with current commercial agreements
+and other revenues in line with historical achievement. In August 2023 the Company repaid in full the £55.0m
+long-term financing facility with MSD. The Company agreed a new overdraft facility with Barclays to replace
+the MSD facility which expires in July 2025. The Barclays facility has a maximum limit of £40.0m. This is
+likely to be either extended on a season-by-season basis, or a similar facility entered into for the 2025-26
+season.
+The Company is likely to require further funding within the next twelve months, either from third parties or
+from shareholders, but it remains confident that this will be obtained as it has a proven track record of
+securing funding historically.
+Despite the current strong squad, the Board has also considered a severe but plausible scenario as required.
+This scenario includes relegation at the end of the 2024-25 season and includes the adjustments necessary to
+revenues and costs, although the scenario does not include any player trading as this is uncertain. This is
+considered to be the main business risk that warrants scenario analysis.
+In the event the severe but plausible scenario occurs, mitigating actions considered by the Board include the
+factoring of transfer fee receivables, the option of player disposals to generate transfer fee income and wage
+savings, and obtaining additional third party financing.
+Under the base case forecast, the Board has concluded that the Company has sufficient liquidity to continue to
+meet its liabilities as they fall due for a period of at least 12 months from the date of approval of these
+financial statements. This is on the basis of some additional external or shareholder funding, which is
+confidently expected to be obtained. It is also subject to the extension of the existing overdraft facility on the
+same terms as it is currently, as this facility currently expires during the going concern period due to the
+nature of it being in place for one football season at a time.
+7
+
+--- pág. 8 ---
+
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+Going Concern (continued)
+In the event that the associated mitigating initiatives do not generate the necessary cash flows to allow the
+Company to operate within its secured borrowing limits, certain of the investing owners have undertaken to
+provide what the Board has concluded would be a sufficient level of financial support to allow the Company
+to continue to operate within its borrowing limits and meet its debts as they fall due for at least 12 months
+from the date of approval of these financial statements.
+Consequently, after making enquiries and taking account of the uncertainties described above, the directors
+have a reasonable expectation that the Company has adequate resources to continue in operational existence
+for at least 12 months from the date of approval of these financial statements. Accordingly, the directors
+continue to adopt the going concern basis in preparing the annual report and financial statements.
+Section 172(1) statement
+Section 172(1) of the Companies Act 2006 requires each director of the Company to act in a way in which
+he/she considers, in good faith, would be most likely to promote the success of the Company for the benefit of
+its members as a whole, and in doing so have regard to a range of matters including:
+• The likely consequences of any decision in the long term.
+• The interests of the Company’s employees.
+• The need to foster the Company’s business relationship with suppliers, customers and others.
+• The impact of the Company’s operations on the community and the environment.
+• The desirability of the Company maintaining a reputation for high standards of business conduct; and
+• The need to act fairly as between the Company’s members.
+With respect to this, the Board meets periodically and refers to ongoing strategic plans having regard to the
+following considerations:
+Long term consequences
+• Long term sustainability / viability of business model
+- We continue to invest substantial funds into the playing squad in order to maximise the best
+possible chances of achieving success on the football pitch.
+- The Company’s adherence to UEFA and Premier League Financial Fair Play rules ensures
+sustainable, responsible and transparent spending.
+- The club continues to comply with the Financial Fair Play (FFP) rules and expects to do so in
+the future as the new Squad Cost Ratio (SCR) rules are introduced in the forthcoming years.
+- Preparation for changes in policy impacting the Company.
+• Risk appetite and risk management
+- See page 7 for details on the Company’s Financial risk management objectives and policies.
+Interests of employees
+• The health, safety and well-being of our employees is one of our primary considerations. We put great
+emphasis on employee consultation, and actively promote equality, diversity and inclusion - it is a
+Board objective to be an Equity leader in the Premier League, and The Premier League has
+recognised
+8
+
+--- pág. 9 ---
+
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+Section 172(1) statement (continued)
+
+West Ham United’s ongoing dedication and commitment to equality, diversity and inclusion (EDI)
+with the PLEDIS Advanced Award — the highest level of accolade in this area —-early on in the
+inception of the award and most recently again in 2023 in line with the cycle of assessment. We are
+also fully committed to paying the London Living Wage.
+
+• We are committed to ensuring that male and female employees (excluding First Team football
+operations) are paid equally for equivalent work and release an Annual Gender Pay Gap Report to
+support this.
+
+• In April 2024, the mean gender pay gap, when male first-team players, management and coaches are
+removed, was -2.1%, and for the eighth consecutive year was in favour of women. The figure was
+once again more favourable than the current mean national pay gap at 5.45%. Women make up over
+30% of the whole workforce, and for the second year running, almost half of those are represented in
+the first two quartiles. The Club remains resolute in its ambition to have a 50:50 men / women split in
+its workforce by 2030.
+
+Interests of other stakeholders (suppliers, customers, others)
+• Fans
+- Fans are the lifeblood of our club and are always foremost in our decision making.
+- We have a Board objective around putting our Fans First in our decision making recognising
+our custodianship
+
+- We are proud to have an ever-increasing number of supporters’ clubs around the world.
+Fan Engagement
+Meetings between the Club Board, senior management and supporters’ groups take place throughout the
+season. The meetings focus on strategic matters relating to supporter experience. For the 23-24 season, the
+club had 6 formal meetings with supporters, alongside numerous phone calls, informal meetings, and further
+communication to help support a culture of information sharing. Meetings predominantly focused on
+consultation in relation to the creation of the Club’s Fan Advisory Board, part of our commitment to the
+Premier League’s Fan Engagement Standard.
+Additional highlights included working with Pride of Irons on the ‘Hammers Pride Bar, launching our new
+Official Supporters Club portal and, after feedback from the Club’s Junior Supporters Board, holding our first
+Junior Hammers matchday takeover.
+The Club works regularly alongside the Premier League, Football Supporters’ Association, Kick It Out, Level
+Playing Field and a number of other supporter focused organisations and causes. Throughout the season, the
+Club and its supporters are also. represented at Safety Advisory Group meetings and Independent Advisory
+Group meetings which are focused on local police matters.
+We aim to give every one of our fans a voice to share their feedback and views, keeping our supporters
+reliably informed with the latest information across our channels and through personal and direct
+communication with all Season Ticket Holders, Claret members and match-by-match attending fans, and a 50-
+strong Supporter Liaison Officer team working at each matchday.
+The Club published a Fan Engagement Plan, available across Club channels, which outlines West Ham
+United’s commitment to fan engagement
+
+9
+
+--- pág. 10 ---
+
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+Section 172(1) statement (continued)
+• Partners
+- Our commercial partners remain as important to us as ever and we are pleased to have multi-
+year contracts in place with key partners across a variety of industries.
+• Suppliers
+- We value our suppliers and have long-standing contracts with key suppliers who share our
+core values.
+Impact on the community
+• The Company places huge importance on being a pillar of our community at the heart of London on
+which we deliver through a variety of projects. In Spring 2025, we will open our doors to a new state-
+of-the-art facility at Beckton, the home of the West Ham United Foundation, as part of the Club’s
+ongoing investment and commitment to London and our community across East London and beyond.
+• The West Ham United Foundation is the Club’s community outreach vehicle, delivering more than
+thirty community projects in East London, Essex and international locations and engaging up to
+50,000 people every year across Health, Community Sport, Football Development and Learning and
+Employability.
+High standards of business conduct
+• The Company is committed to ensuring there is openness in our own business and in our approach to
+tackling modern slavery both within our business and through our supply chains, consistent with our
+disclosure obligations under the Modern Slavery Act 2015.
+• The Company is committed to paying the right amount of tax, in the right place, on a timely basis in
+accordance with tax law and practice in the United Kingdom.
+10
+
+--- pág. 11 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+
+Key Performance Indicators ("KPI's")
+
+The Company monitors the financial performance of the first team against a range of key performance indicators on an annual basis. Although not exhaustive, the table below summarises major KPI's over the last five years. Although the Company does not set targets to be achieved each season it nevertheless seeks to maximise performance, both financial and non-financial, on an annual basis.
+
+| | 2023-24 | 2022-23 | 2021-22 | 2020-21 | 2019-20 |
+|---|---|---|---|---|---|
+| League position | 9th | 14th | 7th | 6th | 16th |
+| FA Cup | 3rd round | 5th round | 5th round | 5th round | 4th round |
+| EFL Cup | Quarter final | 3rd round | 5th round | 4th round | 3rd round |
+| UEFA Europa League | Quarter final | - | Semi final | - | - |
+| UEFA Conf. League | - Winners* | Winners* | - | - | - |
+| Average league gate | 62,463 | 62,459 | 59,789 | 568** | 59,925 |
+| Wage: turnover ratio | 59.3% | 57.5% | 53.4% | 66.9% | 93.7% |
+| Operating profit/(loss) before exceptional items & player trading | £54.6m | £53.3m | £71.6m | £34.0m | (£24.7m) |
+
+*The 2022-23 UEFA Conference League final tie was played in June 2023. Income and costs arising from the fixture will be accounted for in the 2023-24 financial statements.
+**Indicates the season played during the COVID-19 pandemic, which saw only two home fixtures played with few spectators present, both games at a significantly reduced stadium capacity due to the Government restrictions that were in place at the time.
+
+On behalf of the board
+
+[firma]
+Andy Mollett
+Director
+
+16 December 2024
+
+11
+
+--- pág. 12 ---
+
+DIRECTORS’ REPORT
+for the year ended 31 May 2024
+Directors
+The directors of the Company who were in office during the year and up to the date of signing the audited
+financial statements of the Company were:
+D Sullivan
+Baroness Brady, CBE
+A Mollett
+J Albert Smith
+P Horsky
+P Mitka
+T Warren
+DKE Sullivan
+JHF Sullivan
+D Cunningham
+V Gold
+As permitted by the Articles of Association, the directors have the benefit of an indemnity which is a
+qualifying third-party indemnity provision as defined by Section 234 of the Companies Act 2006. The
+indemnity was in force throughout the last financial year and is currently in force. The Company also
+purchased and maintained throughout the financial year Directors’ and Officers’ liability insurance in respect
+of itself and its directors.
+Results and Dividends
+The results of the Company are as set out in the statement of comprehensive income on page 27. The directors
+do not propose the payment of a dividend (2023: £nil).
+Political donations
+No donations were made to a registered political party or other political organisation in the EU or the UK, or
+any independent elections candidate and no EU political expenditure exceeding £2,000 in aggregate was
+incurred in the financial year (2023: £12,500).
+12
+
+--- pág. 13 ---
+
+DIRECTORS’ REPORT
+for the year ended 31 May 2024
+(continued)
+Employees
+Recruitment & Staffing
+West Ham United is people-centric and its employees are the most visible part of the business to its
+supporters. We are committed to a high standard of employment practices and compliance, providing equality
+of opportunity, training and development and a safe workplace for all, in addition to developing initiatives
+which encourage innovation.
+West Ham United aims to be an exceptional employer; one that recognises talent and develops people to the
+best of their abilities. We ask our people to share our determination to succeed and to deliver strong business
+success which is why it is important for us to appropriately reward, engage, listen to and develop our
+employees.
+We promote equality, diversity and inclusion for all of our staff through the development and continuous
+review of policies, training and strive to create a working environment and culture where every individual can
+feel safe, experience a sense of belonging and is empowered to achieve their full potential.
+Our commitment to equality, diversity and inclusion remains unwavering, we strive harder every year to make
+the matchday experience the best it can be for all supporters with disabilities. That includes dedicated expert
+teams, bespoke matchday commentary for visually impaired supporters, dedicated access lanes to enter the
+Stadium, our Sensory Room and our 18 complimentary shuttle buses, which assist over 840 disabled
+supporters with accessibility requirements in travelling to and from the Stadium every matchday.
+We continue to be a member of the Hidden Disabilities Sunflower Scheme to identify what further support we
+can provide to supporters whose disabilities are not visible. Those hidden disabilities include mental health
+conditions, an issue that is particularly important to our Club.
+Since rolling out the Ripple Suicide Prevention tool across all of our digital channels in 2022, this year we
+held our inaugural charity tournament, with awareness and vital funds being raised for the Club's official
+charity's community programmes and Ripple's life-saving technology.
+We have appointed our first Academy Link Mentor specifically to provide pathways into football for players
+and coaches from South Asian backgrounds, both male and female.
+As well as our own EDI campaigns, we have taken a pro-active and creative approach to supporting important
+national moments such as Mental Health Awareness Week, Holocaust Memorial Day, Pride Month, Black
+History Month, and International Women's Day. We have led from the front in our support for Premier
+League campaigns including No Room For Racism, Rainbow Laces and Inside Matters.
+The Club is proud to be a Disability Confident Leader and is part of The Valuable 500, committed to putting
+diversity inclusion onto our business leadership agenda. The Club is also signed up to the Football League
+Diversity Code; committing to tackle inequality across senior leadership positions, broader team operations
+and coaching roles in both the women's and men's games. The Club has appointed its first female manager
+since earning Women's Super League status in 2018 and in line with the Club's key objective to continue
+driving the progress and success of women's football, the Women's Team has three female directors on its
+Board.
+13
+
+--- pág. 14 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+DIRECTORS’ REPORT
+for the year ended 31 May 2024
+(continued)
+
+Employees (continued)
+
+The Club is proud to have become the first Premier League Club to receive the Menopause Friendly
+
+Accreditation (MF A) in recognition of its high standards and proven practices that embrace menopause in the
+
+workplace.
+
+We are committed to equal opportunities for all of our people from recruitment and selection, training and
+
+development and promotion. The Club has achieved the Premier League's Equality Standard Advanced level
+
+health check, the highest level of award, recognising our ongoing dedication and commitment to equality,
+
+diversity and inclusion, and we continue to maintain our efforts in this area.
+
+We received the advanced level health check, the highest level of award, recognising our ongoing dedication
+
+and commitment to equality, diversity and inclusion, and we continue to maintain our efforts in this area.
+
+All members of staff continue to receive equality and diversity training including equality impact assessment,
+
+disability awareness, mental health awareness and equality and diversity in recruitment.
+
+We have established a Staff Equality Forum to not only support the work of the Equality Strategic Group,
+
+which feeds directly into the Board, but also to help ensure that equality is embedded at every level of the
+
+organisation, in line with our goals to continue to be an Equity leader in the Premier League.
+
+Our informal and inclusive culture creates communication channels, promoting innovation and the sharing of
+ideas and we all work together in striving to achieve the common goal of the Club as a whole. We hold
+
+regular management meetings and ensure that employees from across the business are in dialogue with our
+
+business leaders. West Ham United's employees are kept well informed of the performance of the Club and
+
+key events concerning the business through regular staff briefings and updates from the Vice Chair as well as
+
+through communications via our intranet, staff newsletter, staff surveys and email.
+
+The Company’s policy is to communicate honestly with employees and encourage consultation between
+
+employees and management. It places considerable value on the involvement of its employees and has
+
+continued to keep them informed on matters affecting them and on the various factors affecting the
+
+performance of the Company. This is achieved through formal and informal meetings with the vice Chairman
+
+or other members of senior management. This leads to sharing the same understanding of goals, processes,
+
+and expectations.
+
+Developing our people
+
+Every employee plays a part in the Club's success and we are focused on developing our people to the best of
+
+their abilities. Engaged and motivated staff help us to continue to be successful and grow. When joining the
+
+business, employees undertake a thorough induction which includes training on how to perform in their new
+
+role and orientation around different areas of the business, and mandatory training in Equality, Diversity and
+
+Inclusion, mental health awareness training, Cardiopulmonary Resuscitation, Cyber Awareness, General Data
+
+Protection Regulations, fire awareness, Safeguarding and Display Screen Equipment.
+
+The West Ham United Skills School was launched in 2017 and the Club has heavily invested in staff who
+
+have benefitted from a range of training programmes and development courses, including apprenticeships and
+leadership, that have further enhanced skills and output across all departments, upskilling the entire workforce
+
+and producing stars of the future who can lead the Club as it grows at London Stadium.
+
+14
+
+--- pág. 15 ---
+
+DIRECTORS’ REPORT
+for the year ended 31 May 2024
+(continued)
+Employees (continued)
+Compensation & Benefits
+The Club invests in benefits, programmes and services to assist its employees and provides a wide range of
+resources to support mental and physical health and financial well-being. The Club has Mental Health
+Champions, a regular GP drop-in service and an Employee Assistance Programme to help employees deal
+with personal problems that might adversely impact their work performance, health and wellbeing. The
+programme generally includes assessment, and short-term counselling services for both staff and their
+immediate family.
+The Club has also undertaken a gender pay gap audit and the results show that the real pay gap is currently -
+2.1% (2023: -1%), and for the eighth consecutive year running is in favour of women (excluding men’s first
+team players, management and coaching staff).
+The Club pays equal pay for men and women performing equal jobs who are not on the football operations
+staff. Categorically, men and women doing the same non-playing job are paid the same rate of pay.
+The Board continues to work very hard to address the gender issues faced in football. This has been achieved
+through the promotion and development of existing staff and positive action in external recruitment and more
+than half of the Vice-Chair's direct reports are female.
+The Club is also very supportive of its workforce who have children, providing maternity and paternity pay
+above the statutory thresholds.
+Additionally, West Ham United has paid the equivalent of the London Living Wage to all staff since June
+2015 and became an accredited London Living Wage Employer in December 2017, the second Premier league
+club in London to do so.
+Safeguarding
+Our Safeguarding Team comprises of six members of staff who work across our Men’s First Team &
+Academy, Academy House, Women’s First Team, and match-days and events. We have recently brought
+onboard a dedicated Women’s Safeguarding Officer and invested additional resources for match-day
+safeguarding arrangements to assist the Team in responding appropriately to incidents, concerns and
+allegations.
+Club resourcing and arrangements to support staff well-being is an area the Club continues to strengthen,
+with, among other initiatives, the introduction of Mental Health Ambassadors and the uptake of Ripple anti-
+suicide prevention technology.
+To strengthen our recruitment process and ensure the safety of all involved, we have enlisted the help of a
+third-party company to manage our social media and online screening services. By conducting thorough
+checks, we can identify any potential issues related to safeguarding or inclusivity that may pose a risk to
+children or the reputation of West Ham United Football Club and take action to prevent them.
+15
+
+--- pág. 16 ---
+
+DIRECTORS’ REPORT
+for the year ended 31 May 2024
+(continued)
+Streamlined Energy and Carbon Reporting (SECR)
+The Company is firmly committed to operating in a green and sustainable manner and takes its responsibilities
+in these areas extremely seriously. Environmental awareness is embedded into the Club’s day to day
+operations with initiatives in place across operational sites including reduced energy consumption with the use
+of LED lighting, installation of lighting motion sensors and centrally controlled heating. The club has been
+and will continue to explore several improvements that were recommended from our ESOS phase 1 and 2
+assessments which include BMS upgrades, boiler optimisation, LED upgrades and controls, solar thermal,
+secondary metering, power management and better practices to reduce energy usage.
+Data has been collected from a variety of sources including utility providers, plant asset lists, fuel usage and
+mileage records. The methodology used to calculate our Greenhouse Gas (GHG) is the GHG Protocol
+Corporate Accounting and Reporting Standard. The SECR disclosure presents our carbon footprint across
+Scopes 1 and 2 along with an appropriate intensity metric and our total energy use of electricity and gas. The
+external consultants used our energy invoices and bill validation reports to calculate, quantify and validate our
+GHG emissions disclosure for 2023-24 in line with the methodology set out in the GHG Protocol Corporate
+Standard and the Energy Managers Association.
+The Club’s energy usage in the year ending 31 May 2024 was 3,596 million KWH (2023: 3,259 million kWH)
+and total UK emissions were 737.4 tCO2e (2023: 647.09 tCO2e). This represents an intensity ratio of 2.75
+(tCO2e per £1m of turnover) against 2.73 in 2023.
+Our electricity emissions are below our 2022 levels, but gas emissions have increased over the year, as have
+transport emissions due to academy scouts increasing their searches for talent around the country.
+This is still a lower usage than our pre-COVID position, and we continue to investigate ways of reducing this
+further.
+2024 2023 2022 2021 2020
+Electricity 334.87 323.69 339.60 324.32 376.90
+Gas 210.39 175.73 185.12 164.12 186.80
+Transport 151.16 115.89 112.60 70.69 73.70
+Other Fuels 40.99 31.77 33.09 30.62 122.37
+Total GHG Emissions (tCO2e) 737.41 647.09 670.41 589.75 759.77
+Scope 1 CO2 emissions (tonnes) 266.68 268.76 282.36 243.91 382.70
+Scope 2 CO2 emissions (tonnes) 386.39 323.69 339.60 324.32 376.90
+Scope 3 CO2 emissions (tonnes) 84.34 54.63 48.50 23.49 33.36
+Total GHG Emissions (tCO2e) 737.41 647.09 670.46 591.72 792.96
+Intensity Ratio tCO2e per £M turnover 2.75 2.73 2.66 3.07 5.44
+16
+
+--- pág. 17 ---
+
+DIRECTORS’ REPORT
+for the year ended 31 May 2024
+(continued)
+West Ham United Foundation
+As West Ham United’s official charity, the West Ham United Foundation is an award-winning anchor
+organisation located in Beckton, Newham, East London, that is committed to making a positive difference to
+people in the local area. Each year we deliver more than 35 initiatives that aim to respond to those in need,
+unite our community and provide an environment for all to thrive: educating, motivating and raising
+aspirations across individuals, groups and communities.
+Through their services, they reach up to 50,000 people of all ages and abilities each year across the East
+London boroughs of Newham, Barking & Dagenham, Havering, Redbridge, Tower Hamlets, as well as Essex
+and international sites — whereby they are committed to offering guidance, opportunities and pathways which
+aim to transform lives and help to create thriving communities.
+Following the historic 2022-23 UEFA Europa Conference League men’s first team campaign and the
+subsequent vibrant parade which filled the streets of Newham, throughout the 2023-24 season, the Foundation
+continued to be represented on the matchday kit during the men’s first team’s UEFA Europa League
+campaign.
+Placed just below the players' shirt numbers, the emblem embodied our shared commitment to empower and
+uplift communities: standing as a powerful reminder of football’s incredible ability to inspire and drive
+positive change.
+Although the Foundation’s programmes often encompass free football activities and other football focused
+engagement techniques, the power of the West Ham United brand goes far beyond the pitch. With health
+interventions, wellbeing assistance, career guidance, mentoring supporting those in vulnerable situations as
+well as preventing serious issues, the Foundation’s work has continued to act as a catalyst for change and
+inspiration and hope by driving collaboration, sharing knowledge and experiences, and performing as an
+enabler for people and communities across East London, Essex and internationally.
+The Club’s positive financial results in 2023-24 have also supported plans for a stunning new redevelopment
+for the Club’s award-winning Foundation headquarters, set to re-open in Spring 2025.
+The £4.1-million, state-of the-art project will see the footprint of the current building treble, enabling the
+Foundation to serve thousands of children, young people, adults, families, elderly residents and hard-to-reach
+groups and individuals, doubling the current 2,000 weekly participant footfall in the process.
+True to the Club’s deeply held values of community and inclusion, and as recognised equity leaders, the site
+promises to deliver a thriving Hub and safe space, accessible and open to everyone.
+Through its Foundation, West Ham United is the first football club to lead a consortium of local partners and
+networks, with significant financial backing from the Mayor of London’s Violence Reduction Unit, working
+to prevent and tackle violence across Barking and Dagenham.
+This builds on the Club’s long track record of community investment and support, evidenced by reports from
+EY and Future Proof.
+The findings demonstrate the significant ongoing contribution of West Ham United to the local economy, by
+serving as a local employer; engaging with local businesses in its supply chain; and by drawing thousands of
+visitors throughout the season.
+17
+
+--- pág. 18 ---
+
+DIRECTORS’ REPORT
+for the year ended 31 May 2024
+(continued)
+West Ham United Foundation (continued)
+In this period, West Ham United helped thousands of individuals across some of the UK’s most ethnically
+diverse communities in east London and Essex, with the Club’s outreach efforts of increasingly vital
+importance in the wake of the COVID-19 pandemic, in particular in the Borough of Newham, with its status
+as one of the hardest hit areas in the UK.
+The analysis revealed:
+• The Club contributed a total of £323 million in Gross Value Added to the regional economy (London &
+Essex), both directly and indirectly through its supply chain, supporting employment and the
+visitor economy.
+• The Club supported over 3,300 local and regional jobs and has created over £77 million in social value
+— with a further £33 million created by our Foundation; together equating to more than £110 million
+in overall social value.
+• The economic activity of West Ham resulted in a total figure of £150 million in UK tax contributions.
+In addition, the Club provided nearly £24 million in social value linked to jobs from core matchday
+operations, showcasing the true entrepreneurial spirit which the Club prides itself on, and is integral to its
+ongoing delivery of the Olympic Legacy at London Stadium.
+As detailed below, the Foundation’s aims and objectives underpin everything we do through this our CSR arm
+of the Club.
+As detailed below, the Foundation’s aims and objectives underpin everything they do.
+Mission: To provide an innovative approach to understanding and meeting the needs of our community;
+building partnerships and utilising insight and technology to create an environment where all can thrive - from
+the heart of East London.
+Strategic Objectives:
+Responding to local need - Engaging our community to understand local needs and to ensure that our
+programmes, facilities and reporting structures are designed around them.
+° Uniting our community - Understanding our community, what works and how innovative thinking
+across our stakeholders is essential to support fitter and healthier lifestyle choices.
+° Providing an environment for all to thrive - Shaping the programmes we run and our ways of working
+to create effective, efficient and innovative mechanisms that support anyone in need of help for as long as they
+need it.
+Efforts across the community are engrossed in the heart of social inequalities; overcoming entrenched views;
+tackling often hidden health issues; creating opportunities for personal development and growth; and
+ultimately transforming lives.
+18
+
+--- pág. 19 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+DIRECTORS’ REPORT
+for the year ended 31 May 2024
+(continued)
+West Ham United Foundation (continued)
+Strategically, the Foundation has been supporting a variety of conversations, ranging from health and
+wellbeing needs with partners through the NHS; unpicking and strengthening-learning and employability
+opportunities with education providers; evaluating and growing footballing pathways across our networks, and
+much more.
+As part of this, the Foundation also helped to lead key discussions regarding the high rates of violence
+affecting young people - joining forces with Senior Circuit Judge Sarah Munro KC for a series of roundtables
+at the Old Bailey involving third, private and public sectors. Key to this has been the Foundation’s work
+developing and delivering initiatives focusing on prevention, intervention and partnership working.
+In addition to initiatives which have continued to be agile and person-centred, West Ham United has been
+driving plans for the state-of-the-art redevelopment of the Foundation’s Beckton headquarters. In recent years,
+as the Foundation’s services have grown, the headquarters has become restrictive. As such, with the ambition
+of establishing a thriving community hub at the heart of East London, the new facility — set for Spring 2025
+opening — will continue to build on the impact being delivered.
+The new facility will allow for increased delivery of youth activities, health programmes and learning and
+development schemes whilst fostering social cohesion; create a true Community Hub, with the facilities and
+services to continue meet the needs of the local community; and generate more opportunities to change lives
+in east London and beyond, now and for years to come.
+19
+
+--- pág. 20 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+DIRECTORS’ REPORT
+for the year ended 31 May 2024
+(continued)
+Financial risk management
+See Strategic report, page 7
+Future prospects
+See Strategic report page 5
+Post Balance Sheet Events
+Note 29 provides details of material events which have occurred since the balance sheet date.
+Going Concern
+See Strategic report, page 7
+Dividends
+See Strategic report, page 3 |
+20
+
+--- pág. 21 ---
+
+DIRECTORS’ REPORT
+for the year ended 31 May 2024
+(continued)
+Statement on Information Given to Independent Auditors
+Each of the persons who is a director at the date of approval of this report confirms that:
+
+1) so far as the director is aware, there is no relevant audit information of which the Company's auditors
+are unaware; and
+
+2) the director has taken all the steps that he/she ought to have taken as a director in order to make
+himself/herself aware of any relevant audit information and to establish that the Company's auditors
+are aware of that information.
+
+This confirmation is given and should be interpreted in accordance with the provisions of s418 of the
+Companies Act 2006.
+Independent Auditors
+The auditors, PricewaterhouseCoopers LLP, have indicated their willingness to continue in office and a
+resolution concerning their reappointment will be proposed at the annual general meeting.
+
+21
+
+--- pág. 22 ---
+
+DIRECTORS’ REPORT
+for the year ended 31 May 2024
+(continued)
+
+Statement of directors’ responsibilities in respect of the financial statements
+The directors are responsible for preparing the Annual Report and the financial statements in accordance with
+applicable law and regulation.
+Company law requires the directors to prepare financial statements for each financial year. Under that law the
+directors have prepared the Company financial statements in accordance with United Kingdom Generally
+Accepted Accounting Practice (United Kingdom Accounting Standards, comprising FRS 102 “The Financial
+Reporting Standard applicable in the UK and Republic of Ireland”, and applicable law).
+Under company law, directors must not approve the financial statements unless they are satisfied that they
+give a true and fair view of the state of affairs of the Company and of the profit or loss of the Company for
+that period. In preparing the financial statements, the directors are required to:
+
+• select suitable accounting policies and then apply them consistently;
+
+• state whether. applicable United Kingdom Accounting Standards, comprising FRS 102 have been
+
+followed, subject to any material departures disclosed and explained in the financial statements;
+• make judgements and accounting estimates that are reasonable and prudent; and
+• prepare the financial statements on the going concern basis unless it is inappropriate to presume that
+the Company will continue in business.
+The directors are also responsible for safeguarding the assets of the Company and hence for taking reasonable
+steps for the prevention and detection of fraud and other irregularities.
+The directors are responsible for keeping adequate accounting records that are sufficient to show and explain
+the Company’s transactions and disclose with reasonable accuracy at any time the financial position of the
+Company and enable them to ensure that the financial statements comply with the Companies Act 2006.
+The directors are responsible for the maintenance and integrity of the Company’s website. Legislation in the
+United Kingdom governing the preparation and dissemination of financial statements may differ from
+legislation in other jurisdictions.
+On behalf of the board
+[firma]
+A Mollett
+Director
+16 December 2024
+22
+
+--- pág. 23 ---
+
+Independent auditors’ report to the
+
+members of West Ham United Football
+
+Club Limited
+
+Report on the audit of the financial statements
+Opinion
+
+In our opinion, West Ham United Football Club Limited’s financial statements:
+
+• give a true and fair view of the state of the Company’s affairs as at 31 May 2024 and of its profit for
+the year then ended;
+
+• have been properly prepared in accordance with United Kingdom Generally Accepted Accounting
+Practice (United Kingdom Accounting Standards, including FRS 102 “The Financial Reporting Standard
+applicable in the UK and Republic of Ireland”, and applicable law); and
+
+• have been prepared in accordance with the requirements of the Companies Act 2006.
+
+We have audited the financial statements, included within the Annual Report and Financial Statements
+
+(the “Annual Report”), which comprise: the Balance Sheet as at 31 May 2024; the Statement of
+
+Comprehensive Income and the Statement of Changes in Equity for the year then ended; and the notes
+
+to the financial statements, which include a description of the significant accounting policies.
+
+Basis for opinion
+
+We conducted our audit in accordance with International Standards on Auditing (UK) (“ISAs (UK)”) and
+
+applicable law. Our responsibilities under ISAs (UK) are further described in the Auditors’ responsibilities
+
+for the audit of the financial statements section of our report. We believe that the audit evidence we
+have obtained is sufficient and appropriate to provide a basis for our opinion.
+- Independence
+
+We remained independent of the Company in accordance with the ethical requirements that are relevant
+
+to our audit of the financial statements in the UK, which includes the FRC’s Ethical Standard, and we have
+
+fulfilled our other ethical responsibilities in accordance with these requirements.
+
+Conclusions relating to going concern
+
+Based on the work we have performed, we have not identified any material uncertainties relating to
+
+events or conditions that, individually or collectively, may cast significant doubt on the Company’s ability
+
+to continue as a going concern for a period of at least twelve months from when the financial statements
+are authorised for issue.
+
+in auditing the financial statements, we have concluded that the directors’ use of the going concern
+
+basis of accounting in the preparation of the financial statements is appropriate.
+
+--- pág. 24 ---
+
+However, because not all future events or conditions can be predicted, this conclusion is not a guarantee
+
+as to the Company's ability to continue as a going concern.
+Our responsibilities and the responsibilities of the directors with respect to going concern are described -
+in the relevant sections of this report.
+Reporting on other information
+The other information comprises all of the information in the Annual Report other than the financial
+
+statements and our auditors’ report thereon. The directors are responsible for the other information.
+Our opinion on the financial statements does not cover the other information and, accordingly, we do
+not express an audit opinion or, except to the extent otherwise explicitly stated in this report, any form
+of assurance thereon.
+In connection with our audit of the financial statements, our responsibility is to read the other
+information and, in doing so, consider whether the other information is materially inconsistent with the
+financial statements or our knowledge obtained in the audit, or otherwise appears to be materially
+misstated. If we identify an apparent material inconsistency or material misstatement, we are required
+to perform procedures to conclude whether there is a material misstatement of the financial statements
+or a material misstatement of the other information. If, based on the work we have performed, we
+conclude that there is a material misstatement of this other information, we are required to report that
+fact. We have nothing to report based on these responsibilities.
+With respect to the Strategic Report and Directors’ Report, we also considered whether the disclosures
+required by the UK Companies Act 2006 have been included.
+Based on our work undertaken in the course of the audit, the Companies Act 2006 requires us also to
+report certain opinions and matters as described below.
+Strategic Report and Directors' Report
+In our opinion, based on the work undertaken in the course of the audit, the information given in the
+Strategic Report and Directors' Report for the year ended 31 May 2024 is consistent with the financial
+statements and has been prepared in accordance with applicable legal requirements.
+In light of the knowledge and understanding of the Company and its environment obtained in the course
+of the audit, we did not identify any material misstatements in the Strategic Report and Directors’ Report.
+Responsibilities for the financial statements and the audit
+Responsibilities of the Directors for the financial statements
+As explained more fully in the Statement of directors’ responsibilities in respect of the financial
+statements, the directors are responsible for the preparation of the financial statements in accordance
+with the applicable framework and for being satisfied that they give a true and fair view. The directors
+are also responsible for such internal control as they determine is necessary to enable the preparation
+of financial statements that are free from material misstatement, whether due to fraud or error.
+In preparing the financial statements, the directors are responsible for assessing the Company’s ability
+to continue as a going concern, disclosing, as applicable, matters related to going concern and using the
+
+--- pág. 25 ---
+
+going concern basis of accounting unless the directors either intend to liquidate the Company or to cease
+operations, or have no realistic alternative but to do so.
+Auditors’ responsibilities for the audit of the financial statements
+
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole
+
+are free from material misstatement, whether due to fraud or error, and to issue an auditors’ report that
+includes our opinion. Reasonable assurance is a high level of assurance, but is not a guarantee that an
+
+audit conducted in accordance with ISAs (UK) will always detect a material misstatement when it exists.
+Misstatements can arise from fraud or error and are considered material if, individually or in the
+aggregate, they could reasonably be expected to influence the economic decisions of users taken on the
+
+basis of these financial statements.
+
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design
+procedures in line with our responsibilities, outlined above, to detect material misstatements in respect
+of irregularities, including fraud. The extent to which our procedures are capable of detecting
+irregularities, including fraud, is detailed below.
+
+Based on our understanding of the Company and industry, we identified that the principal risks of non-
+compliance with laws and regulations related to the risk surrounding non-compliance with the Financial
+Fair Play (FFP) regulations imposed by UEFA and the Profit and Sustainability Rules (PSR) by the FA
+Premier League and employment laws, and we considered the extent to which non-compliance might
+have a material effect on the financial statements. We also considered those laws and regulations that
+have a direct impact on the financial statements such as the Companies Act 2006 and UK tax legislation,
+including corporation tax, sales tax and employment tax. We evaluated management’s incentives and
+opportunities for fraudulent manipulation of the financial statements (including the risk of override of
+controls), and determined that the principal risks were related to the manipulation of the financial
+statements through journal entries, and bias shown in judgements and estimates to further manipulate
+the above. Audit procedures performed by the engagement team included:
+
+• Enquiries of the directors and management including consideration of known or suspected instances
+of non compliance with laws and regulations and fraud;
+
+• Review of minutes of meetings of the Board of directors;
+
+• Challenging assumptions and judgements made by management in relation to their significant
+accounting judgements and estimates; and
+
+• Identifying and testing journal entries, in particular any journal entries posted with unusual account
+combinations.
+
+There are inherent limitations in the audit procedures described above. We are less likely to become
+
+aware of instances of non-compliance with laws and regulations that are not closely related to events
+
+and transactions reflected in the financial statements. Also, the risk of not detecting a material
+
+misstatement due to fraud is higher than the risk of not detecting one resulting from error, as fraud may
+
+involve deliberate concealment by, for example, forgery or intentional misrepresentations, or through
+
+collusion.
+
+A further description of our responsibilities for the audit of the financial statements is located on the
+
+FRC’s website at: www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditors’
+
+report.
+
+--- pág. 26 ---
+
+Use of this report
+This report, including the opinions, has been prepared for and only for the Company’s members as a
+body in accordance with Chapter 3 of Part 16 of the Companies Act 2006 and for no other purpose. We
+do not, in giving these opinions, accept or assume responsibility for any other purpose or to any other
+person to whom this report is shown or into whose hands it may come save where expressly agreed by
+our prior consent in writing.
+Other required reporting
+Companies Act 2006 exception reporting
+Under the Companies Act 2006 we are required to report to you if, in our opinion:
+• we have not obtained all the information and explanations we require for our audit; or
+• adequate accounting records have not been kept by the Company, or returns adequate for our audit
+have not been received from branches not visited by us; or
+• certain disclosures of directors’ remuneration specified by law are not made; or
+• the financial statements are not in agreement with the accounting records and returns.
+We have no exceptions to report arising from this responsibility.
+[firma]
+Timothy McAllister (Senior Statutory Auditor)
+for and on behalf of PricewaterhouseCoopers LLP
+Chartered Accountants and Statutory Auditors
+London
+16 December 2024
+
+--- pág. 27 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+STATEMENT OF COMPREHENSIVE INCOME FOR THE YEAR ENDED 31 MAY 2024
+
+| | Note | 2024 Operations excluding player trading* £000 | 2024 Player trading ** (notes 6 & 11) £000 | 2024 Total £000 | 2023 Operations excluding player trading* £000 | 2023 Player trading ** (notes 6 & 11) £000 | 2023 Total £000 |
+|---|---|---|---|---|---|---|---|
+| Turnover | 2 | 268,201 | - | 268,201 | 235,361 | - | 235,361 |
+| Other operating income | | 6,929 | - | 6,929 | 2,495 | - | 2,495 |
+| Operating costs | | (221,083) | (83,489) | (304,572) | (188,470) | (65,306) | (253,776) |
+| **Operating (loss)** | 4 | 54,047 | (83,489) | (29,442) | 49,386 | (65,306) | (15,920) |
+| Analysed as; | | | | | | | |
+| Operating (loss)/profit before Exceptional items (Non-GAAP) | | 54,609 | (83,489) | (28,880) | 53,327 | (65,306) | (11,979) |
+| Exceptional items | 3 | (562) | - | (562) | (3,941) | - | (3,941) |
+| **Operating (loss)** | | 54,047 | (83,489) | (29,442) | 49,386 | (65,306) | (15,920) |
+| Profit on disposal of players | 6 | - | 96,313 | 96,313 | - | 16,980 | 16,980 |
+| **Profit on operating activities before interest and taxation** | | 54,047 | 12,824 | 66,871 | 49,386 | (48,326) | 1,060 |
+| Interest receivable and similar income | 7 | | | 5,013 | | | 579 |
+| Interest payable and similar expenses | 8 | | | (13,341) | | | (19,025) |
+| **Profit/(loss) before taxation** | | | | 58,543 | | | (17,386) |
+| Tax on profit/(loss) | 9 | | | - | | | 1,217 |
+| **Profit/(loss) after taxation** | 24 | | | 58,543 | | | (16,169) |
+| Other comprehensive income for the financial year | | | | | | | |
+| Revaluation of tangible assets | | | | 2,651 | | | - |
+| **Total comprehensive income/(expense) for the financial year** | | | | 61,194 | | | (16,169) |
+
+**Excludes all player trading related costs and income which if included would materially distort the results derived from normal operations.
+
+** Player trading represents the amortisation of registrations, and the profit or loss on disposal of registrations.
+
+All activities derive from continuing operations.
+
+The notes on pages 30 to 48 are an integral part of these financial statements.
+
+27
+
+--- pág. 28 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+BALANCE SHEET
+as at 31 May 2024
+
+(Nota de transcripción: el original rotula ambas columnas como "2023"; la primera corresponde a 31 May 2024. Se transcribe como está.)
+
+| | Note(s) | 2023 £000 | 2023 £000 | 2023 £000 | 2023 £000 |
+|---|---|---|---|---|---|
+| **Fixed assets** | | | | | |
+| Investments | 10 | | - | | - |
+| Intangible assets | 11 | | 213,949 | | 218,738 |
+| Tangible assets | 12 | | 26,843 | | 24,454 |
+| **Current assets** | | | 240,792 | | 243,192 |
+| Stocks | 13 | 2,895 | | 2,475 | |
+| Debtors: amounts falling due after more than one year | 14 | 57,296 | | 22,823 | |
+| Debtors: amounts falling due within one year | 14 | 56,925 | | 32,128 | |
+| Cash at bank and in hand | | 33,046 | | 35,122 | |
+| | | 150,162 | | 92,548 | |
+| **Creditors - amounts falling due within one year** | 15 | (396,630) | | (342,595) | |
+| **Net current liabilities** | | | (246,468) | | (250,047) |
+| **Total assets less current liabilities** | | | (5,676) | | (6,855) |
+| **Creditors – amounts falling due after more than one year** | 15 | | (93,207) | | (146,703) |
+| **Provisions for liabilities** | 19,20 | | (9,478) | | (15,998) |
+| **Net liabilities** | | | (108,361) | | (169,556) |
+| **Capital and reserves** | | | | | |
+| Called up share capital | 21 | | 5,500 | | 5,500 |
+| Share premium account | 22 | | 4,847 | | 4,847 |
+| Revaluation reserve | 23 | | 6,588 | | 3,936 |
+| Profit and loss account | 24 | | (125,296) | | (183,839) |
+| **Total shareholders' deficit** | 25 | | (108,361) | | (169,556) |
+
+The notes on pages 30 to 48 are an integral part of these financial statements.
+
+These financial statements, on pages 27 to 48, for company registration number 66516, were approved by the board of directors on 11 December 2024 and signed on its behalf.
+
+[firma]
+A Mollett
+Director
+
+28
+
+--- pág. 29 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+STATEMENT OF CHANGES IN EQUITY
+For the year ended 31 May 2024
+
+| | Called up share capital £000 | Share premium £000 | Revaluation reserve £000 | Profit and loss account £000 | Total shareholders' deficit £000 |
+|---|---|---|---|---|---|
+| **Balance as at 1 June 2023** | 5,500 | 4,847 | 3,936 | (183,839) | (169,556) |
+| Profit for the year | - | - | - | 58,543 | 58,543 |
+| **Other comprehensive income for the year** | - | - | 2,651 | - | 2,651 |
+| **Balance as at 31 May 2024** | 5,500 | 4,847 | 6,588 | (125,296) | (108,361) |
+
+The notes on pages 30 to 48 are an integral part of these financial statements.
+
+29
+
+--- pág. 30 ---
+
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+1. Accounting Policies
+a) General information
+West Ham United Football Club Limited (‘the Company’) operates as a professional football club, West Ham United
+Football Club, currently playing in the English Premier League.
+The Company is a private company limited by shares and is incorporated in England, United Kingdom. The address of its
+registered office is London Stadium, Queen Elizabeth Olympic Park, London E20 2ST.
+b) Statement of compliance and basis of preparation
+The financial statements of West Ham United Football Club Limited have been prepared in compliance with United
+Kingdom Accounting Standards, including Financial Reporting Standard 102, ‘‘The Financial Reporting Standard
+applicable in the United Kingdom and the Republic of Ireland’’ (‘‘FRS 102’) and the Companies Act 2006.
+The principal accounting policies applied in the preparation of these financial statements are set out below. These
+policies have been applied consistently to all the years presented, unless otherwise stated.
+These financial statements have been prepared on a going concern basis, under the historical cost convention, as modified
+by the revaluation of freehold land and buildings.
+The preparation of financial statements requires the use of certain critical accounting estimates. It also requires
+management to exercise its judgement in the process of applying the Company’s accounting policies. The areas involving
+a higher degree of judgement or complexity, or areas where assumptions and estimates are significant to the financial
+statements, are disclosed in note 1d.
+Exemptions for qualifying entities under FRS 102
+FRS 102 allows a qualifying entity certain disclosure exemptions, subject to certain conditions, which have been
+complied with, including notification of, and no objection to, the use of exemptions by the Company’s shareholders.
+The Company has taken advantage of the following disclosure exemptions:
+(i) The requirement to prepare a statement of cash flows under Section 7 of FRS 102 and para 3.17(d).
+(ii) The requirement of Section 33 Related Party Disclosures to disclose transactions with fellow group companies.
+(iii) A reconciliation of the number of shares outstanding at the beginning and end of the period under 4.12(a)(iv).
+The Company has taken an exemption from the financial instrument disclosures, required under FRS 102 paragraphs
+11.42, 11.44, 11.45, 11.47, 11.48(a)(ili), 11.48(a)(iv), 11.48(b), 11.48(c), 12.26, 12.27, 12.29(a), 12.29(b) and 12.29A as
+the information is provided in the financial statements of WH Holding Limited.
+The Company is a wholly owned subsidiary of WH Holding Limited. It is included in the consolidated financial
+statements of WH Holding Limited which are publicly available. The Company is exempt by virtue of section 400 of the
+Companies Act 2006 from the requirement to prepare consolidated financial statements. The ultimate parent undertaking
+and the smallest and largest Company to consolidate these financial statements is WH Holding Limited. The address of
+the parent’s registered office is London Stadium, Queen Elizabeth Olympic Park, London, England, E20 2ST.
+These financial statements are the Company’s separate financial statements.
+30
+
+--- pág. 31 ---
+
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+
+1. Accounting Policies (continued)
+
+b) Statement of compliance and basis of preparation (continued)
+
+Going concern
+
+The Board has prepared and approved forecasts for the current and forthcoming season (through to May
+
+2026), which capture the period of at least twelve months from the date of approval of these financial
+
+statements.
+
+The base forecast has been prepared assuming the club remains in the Premier League for the 2024-25 season.
+
+This forecast assumes no further player trading, revenues received in line with current commercial agreements
+
+and other revenues in line with historical achievement. In August 2023 the Company repaid in full the £55.0m
+
+long-term financing facility with MSD. The Company agreed a new overdraft facility with Barclays to replace
+
+the MSD facility which expires in July 2025. The Barclays facility has a maximum limit of £40.0m. This is
+
+likely to be either extended on a season-by-season basis, or a similar facility entered into for the 2025-26
+
+season.
+
+The Company is likely to require further funding within the next twelve months, either from third parties or
+
+from shareholders, but it remains confident that this will be obtained as it has a proven track record of
+
+securing funding historically.
+
+Despite the current strong squad, the Board has also considered a severe but plausible scenario as required.
+
+This scenario includes relegation at the end of the 2024-25 season and includes the adjustments necessary to
+revenues and costs, although the scenario does not include any player trading as this is uncertain. This is
+
+considered to be the main business risk that warrants scenario analysis.
+
+In the event the severe but plausible scenario occurs, mitigating actions considered by the Board include the
+
+factoring of transfer fee receivables, the option of player disposals to generate transfer fee income and wage
+
+savings, and obtaining additional third party financing.
+
+Under the base case forecast, the Board has concluded that the Company has sufficient liquidity to continue to
+
+meet its liabilities as they fall due for a period of at least 12 months from the date of approval of these
+
+financial statements. This is on the basis of some additional external or shareholder funding, which is
+
+confidently expected to be obtained. It is also subject to the extension of the existing overdraft facility on the
+
+same terms as it is currently, as this facility currently expires during the going concern period due to the
+
+nature of it being in place for one football season at a time.
+
+In the event that the associated mitigating initiatives do not generate the necessary cash flows to allow the
+
+Company to operate within its secured borrowing limits, certain of the investing owners have undertaken to
+
+provide what the Board has concluded would be a sufficient level of financial support to allow the Company
+
+to continue to operate within its borrowing limits and meet its debts as they fall due for at least 12 months
+
+from the date of approval of these financial statements.
+
+Consequently, after making enquiries and taking account of the uncertainties described above, the directors
+
+have a reasonable expectation that the Company has adequate resources to continue in operational existence
+
+for at least 12 months from the date of approval of these financial statements. Accordingly, the directors
+
+continue to adopt the going concern basis in preparing the annual report and financial statements.
+
+31
+
+--- pág. 32 ---
+
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+1. Accounting Policies (continued)
+c) Significant accounting policies (continued)
+Turnover
+Turnover represents the fair value of all amounts received and receivable in respect of football matches played, goods
+sold and services provided during the period excluding value added tax, returns discounts and rebates. Gate receipts and
+other match day revenue are recognised as games are played. Sponsorship and similar commercial income are recognised
+over the duration of the respective contracts. The fixed element of broadcasting revenues is recognised over the duration
+of the football season, whilst facility fees received for live coverage or highlights are taken when matches are played.
+Other operating income
+Non-trading income, which relates primarily to government and other grant income and insurance claims, is disclosed as
+other operating income and is recognised once there is certainty that the income will be received.
+Tangible fixed assets
+The Chadwell Heath, Little Heath, Rush Green training grounds and the Beckton Community Centre are held under the
+revaluation model. A full valuation was undertaken and reflected in the financial statements for the year ended 31 May
+2024. Full valuations take place at least every three years and any surplus or deficit is transferred to the revaluation
+reserve through other comprehensive income, where the balance held on reserve permits.
+Where insufficient revaluation reserve balances are held, the revaluation deficit is charged to the current year profit and
+loss account. Where depreciation charges are increased following a revaluation, where material, an amount equal to the
+increase is transferred annually from the revaluation reserve to the profit and loss account as a movement on reserves. On
+the disposal or recognition of a provision for impairment of a revalued fixed asset, any related balance remaining in the
+revaluation reserve is also transferred to the profit and loss account as a movement on reserves.
+Land is not depreciated. Depreciation on other assets is calculated, using the straight-line method, to allocate the
+depreciable amount to their residual values over their estimated useful lives, as follows:
+Freehold land and buildings 2-10%
+Plant, fittings and equipment 10-33%
+Motor vehicles 25%
+At the balance sheet date, the Company reviews the carrying amounts of its tangible assets to determine whether there is
+any indication that those assets have suffered an impairment loss. If any such indication exists, the recoverable amount of
+the asset is estimated in order to determine the extent of the impairment loss. The recoverable amount is the higher of fair
+value less costs to sell and value in use. Any impairment loss is recognised immediately as an expense. Assets are stated
+‘net of any provision for impairment.
+Intangible assets — player registrations
+Payments made to third parties in order to acquire a player’s registration are capitalised at cost. The cost is then
+amortised during the year on a straight-line basis over the period of the player’s contract. Where a player’s contract is
+renegotiated before its expiry, the unamortised balance of the original capitalised cost is then amortised over the term of
+the new contract together with any costs associated with the renegotiation. In the event of the disposal of a player’s
+registration, the unamortised cost of acquiring the registration is deducted from the net proceeds of disposal to arrive at a
+profit or loss on disposal.
+32
+
+--- pág. 33 ---
+
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+1. Accounting Policies (continued)
+c) Significant accounting policies (continued)
+Intangible assets — player registrations (continued)
+Future payments for the acquisition of a player’s registration, which may become due dependent on the performance of
+the team and/or the individual player, are recognised within the original cost of acquisition if, in the opinion of the -
+directors, it is probable that these payments will eventually be made. Payments not considered as probable are not
+recognised in acquisition costs but are disclosed in the financial statements as contingent liabilities (see note 27).
+Payments which are considered to be remote are not disclosed in the financial statements.
+Similar terms may exist in contracts for the sale of players’ registrations but such payments are not recognised as part of
+the proceeds of disposal until the event upon which the payment is dependent is known to have occurred.
+At the balance sheet date, the Company reviews the carrying amounts of its intangible assets to determine whether there
+is any indication that those assets have suffered an impairment loss. If any such indication exists, the recoverable amount
+of the asset is estimated in order to determine the extent of the impairment loss. The recoverable amount is the higher of
+fair value less costs to sell and value in use. Any impairment loss is recognised immediately as an expense.
+Players on loan
+Fees receivable for players on loan, over and above the reimbursement of salary costs, are recognised within profit/loss
+on the disposal of players.
+Signing on fees
+Signing on fees payable under an employment contract are accounted for on an earnings basis. Where such fees are
+payable in equal annual instalments, under Football League and FA Premier League regulations, they are charged to the
+profit and loss account evenly over the period of the player’s contract. In the event of the player’s registration being sold,
+the balance of any signing on fees paid or payable to a player is treated as a cost of disposal of the registration.
+Stocks
+Stocks are stated at the lower of cost and estimated selling price less costs to sell. Stocks are recognised as an operating
+cost of goods sold in the period in which the related turnover is recognised.
+Cost is determined on the first-in, first-out (FIFO) method. Cost includes the purchase price, including taxes and duties
+and transport and handling costs directly attributable to bringing the inventory to its present location and condition.
+At the end of each reporting period stocks are assessed for impairment. If an item of inventory is impaired, the identified
+inventory is reduced to its selling price less costs to complete and sell and an impairment charge is recognised in the
+profit and loss account. Where a reversal of the impairment is required, the impairment charge is reversed, up to the
+original impairment loss, and is.recognised as a credit in the profit and loss account.
+Taxation
+Current tax is provided at amounts expected to be paid (or recovered) using the tax rates and laws that have been enacted
+_ or substantively enacted by the balance sheet date.
+Deferred taxation is provided in full on timing differences that result in an obligation at the balance sheet date to pay
+more tax, or a right to pay less tax, at a future date, at rates expected to apply when they crystallise based on enacted or
+substantively enacted current tax rates and law. Timing differences arise from the inclusion of items of income and
+expenditure in taxation computations in periods different from those in which they are included in financial statements.
+Deferred tax is not provided on timing differences arising from the revaluation of fixed assets where there is no binding
+contract to dispose of these assets. Deferred tax assets are recognised to the extent that it is regarded as more likely than
+not that they will be recovered. Deferred tax assets and liabilities are not discounted.
+33
+
+--- pág. 34 ---
+
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+1. Accounting Policies (continued)
+c) Significant accounting policies
+Pension costs
+The Company makes contributions on behalf of employees and directors to a number of independently controlled defined
+contribution and money purchase schemes. Contributions are charged to the profit and loss account over the period to
+which they relate.
+
+In addition, the Company is making contributions in respect of its share of the deficit of The Football League Pension
+and Life Assurance Scheme (the “Scheme”). Contributions are charged to the profit and loss account as soon as they are
+claimed by the Scheme. This is a multi-employer scheme therefore the liability recognised in the balance sheet in respect
+of the Scheme represents the Company’s liability for the contributions payable for its share of the deficit.
+
+The assets of all schemes are held in funds independent from the Company.
+Provisions
+Provisions are recognised when the Company has a present obligation as a result of a past event, it is probable that a
+transfer of economic benefits will be required to settle the obligation, and a reliable estimate can be made of the amount
+of the obligation.
+Leases
+Rental costs under operating leases are charged to the profit and loss account in equal annual amounts over the periods of
+the leases.
+Foreign exchange
+Transactions denominated in foreign currencies are translated into sterling at the rate ruling at the date of the transaction.
+Monetary assets and liabilities denominated in foreign currencies at the balance sheet date are translated at the rates
+ruling at that date. Translation differences are dealt with in the profit and loss account.
+Exceptional items
+Exceptional items are charges and credits which are a non-recurring item that is outside the Company’s normal course of
+business and material by size or nature. Adjustments have been made for specific costs associated with such transactions
+that have occurred during the financial year.
+Financial instruments
+The Company has chosen to adopt Sections 11 and 12 of FRS 102 in respect of financial instruments.
+(i) Financial assets
+Basic financial assets, including trade and other receivables and cash and bank balances are initially recognised at
+transaction price, unless the arrangement constitutes a financing transaction, where the transaction is measured at the
+present value of the future receipts discounted at a market rate of interest. Such assets are subsequently carried at
+amortised cost using the effective interest method.
+At the end of each reporting period financial assets measured at amortised cost are assessed for objective evidence of
+impairment. If an asset is impaired the impairment loss is the difference between the carrying amount and the present
+value of the estimated cash flows discounted at the asset’s original effective interest rate. The impairment loss is
+recognised in profit or loss.
+If there is a decrease in the impairment loss arising from an event occurring after the impairment was recognised, the
+impairment is reversed. The reversal is such that the current carrying amount does not exceed what the carrying amount
+would have been had the impairment not previously been recognised. The impairment reversal is recognised in profit or
+loss.
+34
+
+--- pág. 35 ---
+
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+1. Accounting Policies (continued)
+c) Significant accounting policies (continued)
+(i) Financial assets (continued)
+Financial assets are derecognised when (a) the contractual rights to the cash flows from the asset expire or are settled, or
+(b) substantially all the risks and rewards of the ownership of the asset are transferred to another party or (c) despite
+having retained some significant risks and rewards of ownership, control of the asset has been transferred to another party
+who has the practical ability to unilaterally sell the asset to an unrelated third party without imposing additional
+restrictions.
+(ii) Financial liabilities
+Basic financial liabilities, including trade and other payables, bank loans and loans from fellow Group companies are
+initially recognised at transaction price, unless the arrangement constitutes a financing transaction, where the debt
+instrument is measured at the present value of the future receipts discounted at a market rate of interest.
+Debt instruments are subsequently carried at amortised cost, using the effective interest rate method.
+Trade payables are obligations to pay for goods or services that have been acquired in the ordinary course of business
+from suppliers. Accounts payable are classified as current liabilities if payment is due within one year or less. If not, they
+are presented as non-current liabilities. Trade payables are recognised initially at transaction price and subsequently
+measured at amortised cost using the effective interest method.
+Derivatives, including interest rate swaps and forward foreign exchange contracts, are not basic financial instruments.
+Derivatives are initially recognised at fair value on the date a derivative contract is entered into and are subsequently re-
+measured at their fair value. Changes in the fair value of derivatives are recognised in profit or loss in finance costs or
+income as appropriate.
+The Company does not currently apply hedge accounting for interest rate and foreign exchange derivatives.
+Financial liabilities are derecognised when the liability is extinguished, that is when the contractual obligation is
+discharged, cancelled or expires.
+(iii) Offsetting
+Financial assets and liabilities are offset and the net amounts presented in the financial statements when there is a legally
+enforceable right to offset the recognised amounts and there is an intention to settle on a net basis or to realise the asset
+and settle the liability simultaneously.
+Related party transactions
+The Company discloses transactions with related parties which are not wholly owned within the same Company. Where
+appropriate, transactions of a similar nature are aggregated unless, in the opinion of the directors, separate disclosure is
+necessary to understand the effect of the transactions on the Company’s financial statements.
+Investment in subsidiary company
+Investment in a subsidiary company is held at cost less accumulated impairment losses.
+A subsidiary is an entity controlled by the Company. Control is the power to govern the financial and operating policies
+of an entity so as to obtain benefits from its activities. Where the Company owns less than 50% of the voting powers of
+an entity but controls the entity by virtue of an agreement with other investors which give it control of the financial and
+operating policies of the entity, it accounts for that entity as a subsidiary.
+35
+
+--- pág. 36 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+
+1. Accounting Policies (continued)
+
+d) Critical accounting judgements and estimates
+
+The Company makes estimates and assumptions concerning the future. These are continually evaluated and are based on historical experience and other factors, including expectations of future events that are believed to be reasonable under the circumstances. The resulting accounting estimates will, by definition, seldom equal the actual results. The estimates and assumptions that have a significant risk of causing a material adjustment to the carrying amounts of assets and liabilities are addressed below, albeit such a risk is not expected to arise in the coming financial year. There are no critical judgements, but there are certain critical estimates which are set out below.
+
+(i) Impairment of intangible assets
+The Company considers whether intangible assets are impaired. Where an indication of impairment is identified the recoverable value of the cash generating units ("CGUs") is required to be determined. This requires estimation of the future cash flows from the CGUs and also selection of appropriate discount rates in order to calculate the net present value of those cash flows. Any players outside of the CGU are assessed for impairment on an individual basis.
+
+(ii) Provisions
+Provisions are made for contingent amounts payable under the terms of transfer agreements.
+These provisions require management's best estimate of the costs that will be incurred based on contractual agreements and the deemed likelihood of the trigger event occurring.
+
+Contingent liabilities are not recognised. Contingent liabilities arise as a result of past events when;
+(i) it is not probable that there will be an outflow of resources or that the amount cannot reliably be measured at the reporting date or
+(ii) when the existence will be confirmed by the occurrence or non-occurrence of uncertain future events not wholly within the Company's control. Contingent liabilities are not disclosed in the financial statements if the probability of an outflow of resources is remote.
+
+(iii) Interest rate
+During the year the Company had trade creditors with extended payment terms. These are initially measured at the present value of their future cash flows and subsequently at amortised cost over the period of repayment. Where the periods of repayment are determinable, an estimate of the interest rate to be used has to be made. The present value of these, and subsequent implied interest expense, could be materially different as a result of this estimate. Similarly, fluctuations in interest rates will impact the value of payables disclosed in the financial statements. A 5 percentage point increase in the discount rate used in current year transactions would reduce the intangible assets additions by £2,082,000 and the profit on disposal of players by £4,530,000,
+
+2. Turnover
+
+An analysis of turnover by class of business is provided below. All turnover is derived in the United Kingdom.
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Match receipts and related football activities | 43,807 | 40,267 |
+| Broadcast and central sponsorship distributions | 167,022 | 147,584 |
+| Commercial activities | 41,225 | 34,534 |
+| Retail and merchandising | 16,146 | 12,976 |
+| | 268,201 | 235,361 |
+
+36
+
+--- pág. 37 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+
+3. Exceptional Items
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Stadium lease penalty clause | - | 3,941 |
+| English Football League Pension scheme revaluation (note 32) | 562 | - |
+| | 562 | 3,941 |
+
+4. Operating (Loss)/profit
+
+Company operating (loss)/profit is stated after charging/(crediting) the following:
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Employment costs (note 5) | 159,040 | 135,343 |
+| Premier League Youth Academy grant income | (1,160) | (1,160) |
+| Loss on translation of foreign currency | 657 | 600 |
+| Business and Player insurance claims received | (5,423) | - |
+| Amortisation of intangible fixed assets (note 11) | 83,489 | 65,306 |
+| Depreciation on tangible fixed assets (note 12) | 2,252 | 2,440 |
+| Fees payable to the Company's auditors for the audit of the Company's financial statements | 108 | 100 |
+| Operating leases – land and buildings | 3,970 | 3,569 |
+| Operating leases – plant and machinery | 39 | 48 |
+
+The total income received from successful business and player insurance claims during the year was £5,423,000 (2023 : £nil)
+
+5. Staff Costs, Emoluments and Employees
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Wages and salaries | 139,032 | 117,490 |
+| Social security costs | 19,722 | 17,576 |
+| Other pension costs | 286 | 277 |
+| | 159,040 | 135,343 |
+
+37
+
+--- pág. 38 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+
+5. Staff Costs, Emoluments and Employees (continued)
+
+| | Number 2024 | Number 2023 |
+|---|---|---|
+| Average monthly number of persons employed (including directors) | | |
+| Players, team management & training | 171 | 131 |
+| Commercial & administrative | 212 | 221 |
+| | 383 | 352 |
+| Part-time employees | 498 | 438 |
+| | 881 | 790 |
+
+| | 2023 £000 | 2023 £000 |
+|---|---|---|
+| Aggregate Directors' emoluments | 2,187 | 2,046 |
+
+(Nota de transcripción: el original rotula ambas columnas como "2023"; la primera corresponde a 2024. Se transcribe como está.)
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Aggregate emoluments of highest paid director | 1,437 | 1,357 |
+
+There were no payments to directors for compensation for loss of office (2022: £nil).
+
+6. Profit on Disposal of Players
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Profit on sale of players | 96,313 | 16,980 |
+| | 96,313 | 16,980 |
+
+7. Interest Receivable and Similar Income
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Bank and other interest receivable | 383 | 579 |
+| Implied interest credit on long term transfer fees receivable | 4,630 | - |
+| | 5,013 | 579 |
+
+38
+
+--- pág. 39 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+
+8. Interest Payable and Similar Expenses
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Interest payable on secured loans | 1,459 | 6,722 |
+| Interest payable on bank overdraft | 1,513 | - |
+| Other finance costs | 2,407 | 750 |
+| Implied interest on transfer fees payable with extended payment terms | 7,962 | 11,553 |
+| | 13,341 | 19,025 |
+
+The Implied interest charge represents the cost of discounting future transfer fees payable to present value as required by FRS102.
+
+9. Tax on Loss/Profit
+
+As at 31 May 2024 cumulative unrecognised tax losses available to carry forward against future trading profits were £110,162,348 (2023: £129,785,211). Refer to note 21 for the associated unprovided deferred tax asset.
+
+There is no tax charge for the current year.
+The standard rate of corporation tax in the United Kingdom is 25% (2023: 20.0%).
+
+Factors affecting the corporation tax charge for the year are explained below.
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Profit/(loss) before taxation | 58,543 | (17,386) |
+| Tax charge/ (credit) on profit/(loss) @ 25.0% (2023: 20.00%) thereon | 14,646 | (3,477) |
+| Expenses not deductible/income not taxable for tax purposes | (2,701) | 3,347 |
+| Fixed asset timing differences | (730) | (33) |
+| Adjustments to tax charge in respect of previous periods | (1,955) | (1,221) |
+| Losses carried forward unrecognised | (306) | (1,078) |
+| Other timing differences | (79) | (55) |
+| Movement in deferred tax not recognised | (6,782) | - |
+| Loss carried back | (2,093) | 1,300 |
+| Corporation tax (repayment) / payable for the year | - | (1,217) |
+
+From 1 April 2023 the corporation tax rate increased to 25%. Deferred taxes at the balance sheet date have been measured using this tax rate and reflected in these financial statements.
+
+39
+
+--- pág. 40 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+
+10. Investments
+
+The Company acquired 100% of the share capital of West Ham United Women Football Club Limited on 1 June 2019 for £1, reflecting the value of the net assets acquired, from West Ham United Foundation.
+
+Direct subsidiary undertakings comprise the following.
+
+| Company | Percentage of ordinary shares held | Country of incorporation and operation | Principal activities |
+|---|---|---|---|
+| West Ham United Women Football Club Limited | 100% | Great Britain | Professional football club |
+
+The registered office of the subsidiary undertakings is London Stadium, Queen Elizabeth Olympic Park, London E20 2ST.
+
+11. Intangible Assets
+
+| | Player Registrations £000 |
+|---|---|
+| Cost | |
+| 1 June 2023 | 385,534 |
+| Additions | 124,065 |
+| Disposals | (99,009) |
+| 31 May 2024 | 410,590 |
+| Accumulated amortisation | |
+| 1 June 2022 | 166,796 |
+| Charge for the year | 83,489 |
+| Disposals | (53,644) |
+| 31 May 2023 | 196,641 |
+| Net book value | |
+| 31 May 2024 | 213,949 |
+| 31 May 2023 | 218,738 |
+
+(Nota de transcripción: en "Accumulated amortisation" el original dice "1 June 2022" y "31 May 2023"; por las cifras corresponden a 1 June 2023 y 31 May 2024. Se transcribe como está.)
+
+40
+
+--- pág. 41 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+
+12. Tangible Assets
+
+| | Freehold land & buildings £000 | Plant, fittings & equipment £000 | Motor Vehicles £000 | Total £000 |
+|---|---|---|---|---|
+| Cost or valuation | | | | |
+| 1 June 2023 | 28,524 | 19,523 | 90 | 48,137 |
+| Additions | 768 | 1,221 | - | 1,989 |
+| Revaluation | 95 | - | - | 95 |
+| 31 May 2024 | 29,387 | 20,744 | 90 | 50,221 |
+| Accumulated depreciation | | | | |
+| 1 June 2023 | 8,125 | 15,448 | 70 | 23,683 |
+| Charge for the year | 1,438 | 807 | 7 | 2,252 |
+| Revaluation | (2,557) | - | - | (2,557) |
+| 31 May 2024 | 7,006 | 16,295 | 77 | 23,378 |
+| Net book value | | | | |
+| 31 May 2024 | 22,381 | 4,449 | 13 | 26,843 |
+| 31 May 2023 | 20,399 | 4,035 | 20 | 24,454 |
+
+Montague Evans, independent Chartered Surveyors, undertook valuations of the freehold properties belonging to the Company as at 31 May 2024. A summary of valuations of the properties and the bases of valuation is set out below.
+
+| Property | Basis of valuation | £000 |
+|---|---|---|
+| Chadwell Heath training ground | Depreciated replacement cost | 10,047 |
+| Little Heath training ground | Depreciated replacement cost | 553 |
+| Rush Green training ground | Depreciated replacement cost | 4,329 |
+| Beckton Community Centre | Depreciated replacement cost | 1,786 |
+
+The historical cost equivalent of the revalued properties is £8,583,000.
+
+13. Stocks
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Goods for resale | 2,895 | 2,475 |
+
+Stock expensed during the year was £8.9m (2023: £7.2m).
+There is no significant difference between the replacement cost of goods for resale and their carrying amounts.
+
+41
+
+--- pág. 42 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+
+14. Debtors
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| **Amounts falling due within one year:** | | |
+| Trade debtors | 12,656 | 5,753 |
+| Amounts owed by Group undertakings | 5,027 | 3,532 |
+| Debtors arising from player transfers | 20,097 | 9,397 |
+| Other debtors | 10,195 | 3,520 |
+| Corporation tax receivable | - | 1,217 |
+| Prepayments and accrued income | 8,950 | 8,709 |
+| | 56,925 | 32,128 |
+| **Amounts falling due after more than one year:** | | |
+| Debtors arising from player transfers | 43,635 | 9,010 |
+| Prepayments and accrued income | 13,661 | 13,813 |
+| | 57,296 | 22,823 |
+
+Amounts owed by Group undertakings are interest free and repayable on demand.
+
+Prepayments and accrued income due after more than one year relate primarily to an advanced one-off usage fee of £15,000,000 paid to E20 Stadium LLP in respect of use of the London Stadium in July 2016. The fee is being released to the profit and loss account on a straight-line basis over the term of the 99-year lease until 2115.
+
+The undiscounted value of debtors arising from player transfers due within one year is £20.2m (2023:£nil) and due after more than one year is £46.8m (2023:£nil).
+
+During the year the Company entered into a receivable finance arrangement in respect of a transfer fee receivable with a carrying amount of £28.2m. This arrangement is without recourse and as such the relevant transfer fee receivable has been derecognised
+
+15. Creditors
+
+| Amounts falling due within one year | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Trade Creditors | 9,712 | 4,765 |
+| Amounts owed to Group undertakings | 36,354 | 36,354 |
+| Amount owed to parent company | 176,306 | 176,306 |
+| Corporation Tax payable | 581 | - |
+| Other Taxation and social security | 19,956 | 14,827 |
+| Creditors arising from player transfers | 100,227 | 81,523 |
+| Other creditors | 935 | 2,521 |
+| Receipts in advance | 33,473 | 12,935 |
+| Accruals and deferred income | 19,086 | 13,364 |
+| | 396,630 | 342,595 |
+
+| Amounts falling due after more than one year | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Debenture loans (note 16 &17) | 611 | 611 |
+| Bank loans and overdrafts (note 16) | - | 55,000 |
+| Creditors arising from player transfers | 90,435 | 89,015 |
+| Other creditors | 2,161 | 2,077 |
+| | 93,207 | 146,703 |
+
+42
+
+--- pág. 43 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+
+15. Creditors (continued)
+
+The undiscounted value of creditors arising from player transfers due within one year is £101.4m (2023: £82.0m) and due after more than one year is £103.2m (2023: £98.5m). The net credit to the profit and loss account resulting from the discounting of player transfer creditors is £2.0m.
+
+Creditors arising from player transfers include a total of £14.0m payable to a Russian football club.
+The club is currently prevented from making this payment due to the sanctions imposed by the UK Government.
+
+The increase of £20.5m Receipts in Advance is driven by an earlier on sale date for 2024/25 season tickets compared to the 2023/24 season.
+
+The long term bank loan provided by MSD Holdings Limited was repaid in full in August 2023 and the fixed and floating charges held over the assets of the club were released on 14 August 2023.
+
+16. Total Borrowings
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Debenture loans and subscriptions repayable after five years or more (notes 15&17) | 611 | 611 |
+| Secured loan repayable after greater than one year | - | 55,000 |
+| | - | 55,000 |
+
+The £55.0m drawn down on the MSD loan facility was repaid in full during the financial year.
+
+17. Debenture Loans and Subscriptions
+
+The balance of £611,000 comprises both full and part payments towards the purchase of debentures under the Hammers Bond Scheme in 1991-92.
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| 97 'A' bonds | 49 | 49 |
+| 641 'B' bonds | 481 | 481 |
+| 70 'C' bonds | 68 | 68 |
+| Part payments | 13 | 13 |
+| | 611 | 611 |
+
+Under the terms and conditions of the scheme, the debentures are repayable at par after 150 years. The debentures are non-interest bearing and are unsecured.
+
+43
+
+--- pág. 44 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+
+18. Bank and other loans
+
+The secured loan provided by MSD Holdings Limited was repaid in August 2023 and the charge held over the assets of the Club subsequently released.
+
+19. Provisions for Liabilities – Cost of Player Registrations
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| At start of the year | 15,998 | 1,026 |
+| Utilised in the year | (3,150) | (6,711) |
+| Released in the year | (9,243) | - |
+| Provided in the year | 5,873 | 21,683 |
+| At end of the year | 9,478 | 15,998 |
+
+The above provision represents contingent amounts payable under the terms of transfer agreements which are deemed likely to be paid.
+
+20. Provisions for Liabilities – Deferred Taxation
+
+The amount of deferred taxation provided in the financial statements is as follows:
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Fixed asset timing differences | (9,963) | (530) |
+| Other timing differences | 7,832 | 2,617 |
+| Surplus on revaluation of properties | (1,917) | (2,087) |
+| Adjustment for prior period | 1,955 | - |
+| Total deferred tax asset/(liability) | (2,093) | - |
+
+The amount of potential deferred taxation not provided in the financial statements is as follows:
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Unprovided deferred tax asset | 27,541 | 32,446 |
+
+21. Called up Share Capital
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Allotted and fully paid | | |
+| 11,000,000 (2022: 11,000,000) ordinary shares of 50 pence each | 5,500 | 5,500 |
+
+Ordinary shares have full voting and dividend rights. No dividends were paid during the year.
+
+44
+
+--- pág. 45 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+
+22. Share Premium Account
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| At start and end of the financial year | 4,847 | 4,847 |
+
+23. Revaluation Reserve
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| At start of the financial year | 3,936 | 3,936 |
+| Surplus on revaluation of properties | 2,651 | - |
+| At end of the financial year | 6,587 | 3,936 |
+
+(Nota de transcripción: el original dice 6,587 acá y 6,588 en el balance; 3,936 + 2,651 = 6,587. Se transcribe como está.)
+
+24. Profit and Loss Account
+
+| | 2023 £000 | 2023 £000 |
+|---|---|---|
+| At the start of the year | (183,839) | (167,670) |
+| Profit/(loss) for the financial year | 58,543 | (16,169) |
+| At the end of the year | (125,296) | (183,839) |
+
+(Nota de transcripción: el original rotula ambas columnas como "2023"; la primera corresponde a 2024. Se transcribe como está.)
+
+25. Reconciliation of Movements in Shareholders' Deficit
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| At the start of the year | (169,556) | (153,387) |
+| Profit/(loss) for the financial year | 58,543 | (16,169) |
+| Surplus on revaluation of properties | 2,651 | - |
+| Closing shareholders' deficit | (108,361) | (169,556) |
+
+45
+
+--- pág. 46 ---
+
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+
+26. Operating Lease Commitments
+
+At 31 May 2024 the Company was committed to making the following annual payments in respect of operating leases.
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Land and buildings | | |
+| Expiring within one year | 4,608 | 4,140 |
+| Expiring within two to five years | 18,216 | 15,705 |
+| Expiring more than five years | 374,481 | 340,443 |
+| | 397,305 | 360,288 |
+| Other operating leases | | |
+| Expiring within one year | - | 12 |
+| Expiring within two to five years | 133 | 50 |
+| | 133 | 62 |
+| | 397,438 | 360,350 |
+
+27. Contingent Liabilities & Guarantees
+
+There is an ongoing HMRC investigation in relation to agents' fees which commenced on 26 April 2017. Although the associated criminal investigation has been terminated, a civil compliance investigation is still open. The outcome of which, potential quantum of any liability, and timing of resolution are still unknown, and hence no provision has been made in the accounts. The Club continues to defend its position and considers any potential claim received under the civil compliance investigation to be invalid.
+
+In common with other Group companies, the Company is party to a Group VAT registration whereby each member company guarantees the liability to VAT of the other members.
+
+Under the terms of transfer agreements for certain players, additional transfer fees might be payable dependent on the success of the football club or those players making a certain number of club or international appearances. At the balance sheet date, the maximum unprovided contingent liability was £4,784,000 (2023: £4,380,000).
+
+Other than with regard to the potential contingent liability in respect of additional transfer fees, contingent liabilities are not expected to give rise to any material losses.
+
+28. Contingent Assets
+
+Under the terms of certain contracts for the sale of players' registrations, future payments may be received over a number of years, dependent on the future performance of the players sold and the future success of the buying clubs. At this stage, it is impractical to quantify the likely financial effect of these provisions or to state with any degree of certainty that any payments will be received. Accordingly, no further disclosure is made.
+
+46
+
+--- pág. 47 ---
+
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+
+29. Post Balance Sheet Events
+
+‘The transfer of player registrations completed subsequent to 31 May 2024 amount to a net £109,872,000 (inclusive of
+player related agent fees) payable by the Company over the long and short-term (2023: £4,678,000 payable). A further
+net £10,575,000 (2023: £12,629,000) may become payable contingent on certain future events.
+Future transfer fees receivable totalling £69.2m were accelerated without recourse. The total cash received was £64.0m,
+after deduction of £5.1m interest charges.
+The Company renewed its short-term overdraft facility with Barclays Bank on 15 June 2024. The £40.0m facility is in
+place until 15 July 2025 and is secured, subject to retaining Premier League status, and by a fixed and floating charge on
+the assets of the Club.
+The Company entered into a £5.0m term loan arrangement with Barclays Bank on 17 June 2024, the purpose of which is
+to assist with the redevelopment of the Rush Green training ground. Funds were drawn down in full on 30 August 2024.
+30. Pension Scheme
+Eligible staff are members of the Football League Limited Pension and Life Assurance Scheme which is a defined
+contribution scheme with a defined benefit section. The assets of the scheme are held separately from those of the
+Company, the defined contribution section being invested with an insurance company and the defined benefit section
+with professional investment managers.
+Until 31 August 1999 the Football League Limited Pension and Life Assurance Scheme had been a defined benefit
+scheme. Following an actuarial funding review of the scheme, the scheme actuary identified a substantial deficit and
+accrual of benefits was suspended with effect from 31 August 1999. Thereafter, the defined contributions section was
+established for future contributions on behalf of members.
+Under UK pensions legislation, participating employers to the scheme, including the Company, are required to contribute
+to the deficit in accordance with an agreed schedule of contributions. Following the actuarial valuation as at 31 August
+1999 a schedule of contributions was put in place in July 2001 to pay off the deficit disclosed.
+The scheme is required to undergo an actuarial valuation every three years, the most recent of which was performed by
+Broadstone Consultants and Actuaries Limited taking place in July 2024. Following the latest valuation, the Company’s
+total contribution towards the deficit was calculated as £2,088,968, and this has resulted in a one-off exceptional charge
+in the current financial year accounts of £562,000. Legislation permits participating employers to make good any deficit
+over an extended period and so the revised schedule provides for the balance of contributions to be paid between
+September 2017 and November 2028. 'The liability outstanding at 31 May 2024 was £2,088,968 (2023: £1,992,993)
+owed by the Company.
+Total pension costs charged under other defined contribution schemes during the year amounted to £305,177 (2023:
+£295,432).
+
+47
+
+--- pág. 48 ---
+
+NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2024
+(continued)
+31. Ultimate Controlling Party
+At the balance sheet date, the issued share capital of the ultimate parent company WH Holding Limited was held as
+follows;
+2023-24 2022-23
+David Sullivan 38.8% 38.8%
+Daniel Kretinsky 27.0% 27.0%
+Estate of David Gold 25.1% 25.1%
+J Albert Smith 8.0% 8.0%
+Other investors 1.1% 1.1%
+As a consequence, no single party has ultimate control over the Company.
+Additional copies of these financial statements can be obtained by writing to the address shown below:
+The Company Secretary
+WH Holding Limited
+London Stadium
+Queen Elizabeth Olympic Park
+London E20 2ST
+32. Related Party Disclosures
+Sales of £7,030 (2023: £26,886) to Conegate Limited, a company wholly owned by David Sullivan were made during the
+year. Payments totalling £5,885 were received, leaving a balance of £1,145 outstanding at the year end date. This was
+subsequently settled in full by 27 June 2024.
+During the year, sales of £9,474.80 (2023: £120) were made to Daniel Harris, a Director of the WH Holding Limited
+Group. The balance was settled in full by 31 May 2024.
+48
