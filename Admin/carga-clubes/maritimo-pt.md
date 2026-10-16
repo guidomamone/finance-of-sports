@@ -116,6 +116,74 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2024–25 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Marítimo".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Maritimo/MaritimoSAD_RC_30.06.2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Publicidade e patrocínios | pág. 40, Jev 1 |
+| 2 | Cedências de atletas | pág. 40, Jev 0.97 |
+| 3 | Proveitos de bilheteira | pág. 40, Jev 1 |
+| 4 | Outros | pág. 40, precedente |
+| 5 | Subsídios à exploração | pág. 29, Jev 0.99 |
+| 6 | Outros rendimentos | pág. 29, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subconfratos | pág. 52, Jev 0.97 |
+| 2 | Trabalhos especializados | pág. 52, Jev 0.99 |
+| 3 | Deslocações e estadas | pág. 52, Jev 1 |
+| 4 | Outros serviços | pág. 52, Jev 1 |
+| 5 | Honorários | pág. 52, Jev 1 |
+| 6 | Vigilância e segurança | pág. 52, Jev 0.95 |
+| 7 | Contencioso e notariado | pág. 52, Jev 1 |
+| 8 | Comunicação | pág. 52, Jev 1 |
+| 9 | Conservação e reparação | pág. 52, Jev 0.99 |
+| 10 | Energia e fluidos | pág. 52, Jev 1 |
+| 11 | Material de escritório | pág. 52, Jev 1 |
+| 12 | Comissões | pág. 52, precedente |
+| 13 | Limpeza, higiene e conforto | pág. 52, Jev 1 |
+| 14 | Rendas e alugueres | pág. 52, precedente |
+| 15 | Seguros | pág. 52, Claude 0.8 |
+| 16 | Serviços bancários e financeiros | pág. 53, Jev 0.97 |
+| 17 | Ferramentas e utensílios de desgaste rápido | pág. 53, Jev 1 |
+| 18 | Órgãos sociais | pág. 53, Jev 0.96 |
+| 19 | Técnicos e administrativos | pág. 53, precedente |
+| 20 | Atletas | pág. 53, Jev 1 |
+| 21 | Seguros | pág. 53, Claude 0.8 |
+| 22 | Outros custos | pág. 53, Jev 0.99 |
+| 23 | Imparidade de dívidas a receber (perdas/reversões) | pág. 29, Jev 0.98 |
+| 24 | Provisões (aumentos/reduções) | pág. 29, Jev 0.99 |
+| 25 | Impostos | pág. 53, Jev 0.97 |
+| 26 | Gastos e perdas em investimentos não financeiros | pág. 53, Jev 1 |
+| 27 | Correções relativas a exercícios anteriores | pág. 53, Jev 1 |
+| 28 | Donativo | pág. 53, Jev 0.98 |
+| 29 | Outros | pág. 53, Jev 0.99 |
+| 30 | Gastos/reversões de depreciação e de amortização | pág. 29, precedente |
+| 31 | Imparidade de investimentos depreciáveis/amortizáveis (perdas/reversões) | pág. 29, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): incluye = broadcasting. Claude 2026-10-16 (lote 82): la nota de Vendas e prestação de serviços (Publicidade e patrocínios, Cedências, Bilheteira, Outros) no tiene renglón de TV, y el documento atribuye la variación de Vendas e Prestações de Serviços a los derechos de transmisión televisiva; Marítimo 2024 dice que están en Publicidade e Patrocínios. Posible porque este año no nombra el renglón
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Marítimo".
+```
+
 ## 2021
 
 ### Ingresos
@@ -199,4 +267,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### maritimo-pt-maritimosad-rc-30-06-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

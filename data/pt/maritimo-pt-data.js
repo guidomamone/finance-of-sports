@@ -20,6 +20,14 @@ const maritimoptRevenueLinesByYear = {
     { rawLabel:'Cedências de atletas', normalizedCategory:'player_sales', amountNative:3.045638, disclosureLevel:'aggregated' },
     { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.94765, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Publicidade e patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:7.982659, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedências de atletas', normalizedCategory:'player_sales', amountNative:0.831, disclosureLevel:'aggregated' },
+    { rawLabel:'Proveitos de bilheteira', normalizedCategory:'matchday_competition', amountNative:0.157927, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.327306, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:1.8945, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:3.020498, disclosureLevel:'aggregated' },
+  ],
 };
 const maritimoptExpenseLinesByYear = {
   2025: [
@@ -86,6 +94,39 @@ const maritimoptExpenseLinesByYear = {
     { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.352901, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'player_amortisation', amountNative:-0.681756, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Subconfratos', normalizedCategory:'admin_general_expense', amountNative:-1.978654, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-0.650715, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e estadas', normalizedCategory:'match_organisation_expense', amountNative:-0.547012, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros serviços', normalizedCategory:'other_expenses', amountNative:-0.394218, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.31274, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.083143, disclosureLevel:'aggregated' },
+    { rawLabel:'Contencioso e notariado', normalizedCategory:'admin_general_expense', amountNative:-0.070907, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.04585, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e reparação', normalizedCategory:'admin_general_expense', amountNative:-0.035926, disclosureLevel:'aggregated' },
+    { rawLabel:'Energia e fluidos', normalizedCategory:'admin_general_expense', amountNative:-0.035477, disclosureLevel:'aggregated' },
+    { rawLabel:'Material de escritório', normalizedCategory:'admin_general_expense', amountNative:-0.020948, disclosureLevel:'aggregated' },
+    { rawLabel:'Comissões', normalizedCategory:'other_expenses', amountNative:-0.02, disclosureLevel:'aggregated' },
+    { rawLabel:'Limpeza, higiene e conforto', normalizedCategory:'admin_general_expense', amountNative:-0.017755, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.016877, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.005643, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços bancários e financeiros', normalizedCategory:'admin_general_expense', amountNative:-0.00434, disclosureLevel:'aggregated' },
+    { rawLabel:'Ferramentas e utensílios de desgaste rápido', normalizedCategory:'admin_general_expense', amountNative:-0.00077, disclosureLevel:'aggregated' },
+    { rawLabel:'Órgãos sociais', normalizedCategory:'admin_general_expense', amountNative:-0.176312, disclosureLevel:'aggregated' },
+    { rawLabel:'Técnicos e administrativos', normalizedCategory:'admin_general_expense', amountNative:-1.072725, disclosureLevel:'aggregated' },
+    { rawLabel:'Atletas', normalizedCategory:'wages_squad', amountNative:-4.849847, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.623385, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros custos', normalizedCategory:'other_expenses', amountNative:-0.139657, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de dívidas a receber (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:-0.696884, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisões (aumentos/reduções)', normalizedCategory:'admin_general_expense', amountNative:0.136115, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.00046, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos e perdas em investimentos não financeiros', normalizedCategory:'other_expenses', amountNative:-0.07725, disclosureLevel:'aggregated' },
+    { rawLabel:'Correções relativas a exercícios anteriores', normalizedCategory:'exceptional_items', amountNative:-0.005748, disclosureLevel:'aggregated' },
+    { rawLabel:'Donativo', normalizedCategory:'other_expenses', amountNative:-0.000275, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.070928, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'player_amortisation', amountNative:-0.826123, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de investimentos depreciáveis/amortizáveis (perdas/reversões)', normalizedCategory:'player_impairment', amountNative:0, disclosureLevel:'aggregated' },
+  ],
 };
 const maritimoptFiscalYearMeta = {
   2025: {
@@ -117,6 +158,22 @@ const maritimoptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:14.967829, officialTotalExpenses:12.191827, officialPAT:2.048385,
   },
+  2022: {
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'maritimo-pt-maritimosad-rc-30-06-2022',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.006031, tax:-0.175346,
+    extraRows: [
+      {label:'Juros e rendimentos similares obtidos', value:null},
+      {label:'Juros e gastos similares suportados', value:-0.006031},
+      {label:'Imposto sobre o rendimento', value:-0.175346},
+    ],
+    incluidoEn:{"broadcasting":{"en":"sponsorship_commercial","posible":true}},
+    grossDebt:null, cash:null,
+    officialTotalRevenue:14.21389, officialTotalExpenses:12.644454, officialPAT:1.388062,
+  },
 };
 const maritimoptPresupuestoOverlayByYear = {};
 
@@ -141,6 +198,11 @@ Object.assign(sources, {
   'maritimo-pt-maritimosad-rc-30-06-2021': {
     id:'maritimo-pt-maritimosad-rc-30-06-2021', clubId:'maritimo-pt',
     title:'MARÍTIMO DA MADEIRA - Futebol, SAD — MaritimoSAD_RC_30.06.2021 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'maritimo-pt-maritimosad-rc-30-06-2022': {
+    id:'maritimo-pt-maritimosad-rc-30-06-2022', clubId:'maritimo-pt',
+    title:'MARÍTIMO DA MADEIRA - Futebol, SAD — MaritimoSAD_RC_30.06.2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
