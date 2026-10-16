@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Paços de Ferreira/contas21_22.pdf",
  "md": "Clubes/Portugal/Paços de Ferreira/contas21_22.md",
- "generado": "2026-10-15T21:55:01.736Z",
+ "generado": "2026-10-16T03:02:57.066Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "pacosdeferreira-pt",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Paços de Ferreira/contas21_22.pdf",
+   "campo": "anio",
+   "valor": "2022",
+   "linea": null,
+   "motivo": "El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2022 según el registro (periodo.cierre).",
+   "evidencia": "transcripciones-estado.jsonl, periodo.cierre 2022-06-30",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -38,7 +49,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [

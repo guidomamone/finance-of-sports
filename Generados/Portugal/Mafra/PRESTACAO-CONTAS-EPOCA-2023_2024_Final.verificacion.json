@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
  "md": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md",
- "generado": "2026-10-16T02:44:08.164Z",
- "estado": "ok",
+ "generado": "2026-10-16T03:02:57.128Z",
+ "estado": "cola",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -38,9 +38,90 @@
    "evidencia": "PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md L1001",
    "autor": "Claude",
    "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
+   "campo": "fila",
+   "valor": "25.811,26",
+   "linea": 1441,
+   "etiqueta": "Receitas de bilheteira",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 481,
+   "motivo": "Vendas e serviços prestados se abre con el Anexo 3 (formato UEFA), que cierra exacto; evita el reintento pago por TV y estadio en 0.",
+   "evidencia": "PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md L1441-1452 (Anexo 3, formato UEFA, columna ED*-1): suman 1.275.143,83 = Vendas e serviços prestados del estado (L481)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
+   "campo": "fila",
+   "valor": "146.869,92",
+   "linea": 1442,
+   "etiqueta": "Patrocínios, publicidade e corporate",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de Vendas e serviços prestados (Anexo 3).",
+   "evidencia": "PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md L1441-1452 (Anexo 3, formato UEFA, columna ED*-1): suman 1.275.143,83 = Vendas e serviços prestados del estado (L481)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
+   "campo": "fila",
+   "valor": "450.000,00",
+   "linea": 1443,
+   "etiqueta": "Receitas de televisão",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de Vendas e serviços prestados (Anexo 3).",
+   "evidencia": "PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md L1441-1452 (Anexo 3, formato UEFA, columna ED*-1): suman 1.275.143,83 = Vendas e serviços prestados del estado (L481)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
+   "campo": "fila",
+   "valor": "682,17",
+   "linea": 1444,
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de Vendas e serviços prestados (Anexo 3).",
+   "evidencia": "PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md L1441-1452 (Anexo 3, formato UEFA, columna ED*-1): suman 1.275.143,83 = Vendas e serviços prestados del estado (L481)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
+   "campo": "fila",
+   "valor": "15.353,07",
+   "linea": 1445,
+   "etiqueta": "Competições da UEFA e nacionais",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de Vendas e serviços prestados (Anexo 3).",
+   "evidencia": "PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md L1441-1452 (Anexo 3, formato UEFA, columna ED*-1): suman 1.275.143,83 = Vendas e serviços prestados del estado (L481)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
+   "campo": "fila",
+   "valor": "636.427,41",
+   "linea": 1452,
+   "etiqueta": "Outros rendimentos operacionais (Anexo 3)",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de Vendas e serviços prestados (Anexo 3).",
+   "evidencia": "PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md L1441-1452 (Anexo 3, formato UEFA, columna ED*-1): suman 1.275.143,83 = Vendas e serviços prestados del estado (L481)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
- "cola": [],
+ "cola": [
+  "ea335cb"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -56,17 +137,12 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 6.661338147750939e-16
+   "dif": 2.220446049250313e-16
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [
@@ -74,6 +150,12 @@
   "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "ajuste manual: fila \"Rendimentos com transferências de direitos de atletas\" (ingreso) 2.300.000,00, en lugar de la fila de L1001 (2026-10-16, 'Outros' 2.304.155,62 de Outros rendimentos (L1001) es 2.300.000 de venta de jugadores (Anexo 3: transacciones de atletas 1.954.064,13 = 2.300.000 − 345.935,87 de amortización) más 4.155,62.)",
   "ajuste manual: fila \"Outros (resto)\" (ingreso) 4.155,62 (2026-10-16, Resto de 'Outros' (L1001) después de separar la venta de jugadores: 2.304.155,62 − 2.300.000,00.)",
+  "ajuste manual: fila \"Receitas de bilheteira\" (ingreso) 25.811,26, en lugar de la fila de L481 (2026-10-16, Vendas e serviços prestados se abre con el Anexo 3 (formato UEFA), que cierra exacto; evita el reintento pago por TV y estadio en 0.)",
+  "ajuste manual: fila \"Patrocínios, publicidade e corporate\" (ingreso) 146.869,92 (2026-10-16, Parte de Vendas e serviços prestados (Anexo 3).)",
+  "ajuste manual: fila \"Receitas de televisão\" (ingreso) 450.000,00 (2026-10-16, Parte de Vendas e serviços prestados (Anexo 3).)",
+  "ajuste manual: fila \"Merchandising\" (ingreso) 682,17 (2026-10-16, Parte de Vendas e serviços prestados (Anexo 3).)",
+  "ajuste manual: fila \"Competições da UEFA e nacionais\" (ingreso) 15.353,07 (2026-10-16, Parte de Vendas e serviços prestados (Anexo 3).)",
+  "ajuste manual: fila \"Outros rendimentos operacionais (Anexo 3)\" (ingreso) 636.427,41 (2026-10-16, Parte de Vendas e serviços prestados (Anexo 3).)",
   "duda de localizar confirmada por las sumas (columna, \"-\"): ¿La columna 'Contas Anuais ED*-1' de b28-b29 corresponde al ejercicio cerrado el 30-06-2024?",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro de formato Liga (b28-b29, L1437-L1537) por ser una reclasificación del mismo estado con otra estructura?",
   "duda de extraer que no afecta la carga: La suma de L1292+L1295+L1296 da 35.225,20, el total impreso, así que el documento lo incluye en gastos."
@@ -104,22 +186,6 @@
   "lecturaSignos": "como impresos"
  },
  "lineas": [
-  {
-   "etiqueta": "Vendas",
-   "lado": "ingreso",
-   "M": 0.000682,
-   "pagina": 26,
-   "linea": 977,
-   "origen": "nota que desglosa \"Vendas e serviços prestados\""
-  },
-  {
-   "etiqueta": "Prestações de Serviço",
-   "lado": "ingreso",
-   "M": 1.274462,
-   "pagina": 26,
-   "linea": 978,
-   "origen": "nota que desglosa \"Vendas e serviços prestados\""
-  },
   {
    "etiqueta": "Subsídios à exploração",
    "lado": "ingreso",
@@ -174,6 +240,54 @@
    "M": 0.004156,
    "pagina": 27,
    "linea": 1001,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Receitas de bilheteira",
+   "lado": "ingreso",
+   "M": 0.025811,
+   "pagina": 36,
+   "linea": 1441,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Patrocínios, publicidade e corporate",
+   "lado": "ingreso",
+   "M": 0.14687,
+   "pagina": 36,
+   "linea": 1442,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Receitas de televisão",
+   "lado": "ingreso",
+   "M": 0.45,
+   "pagina": 36,
+   "linea": 1443,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "M": 0.000682,
+   "pagina": 36,
+   "linea": 1444,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Competições da UEFA e nacionais",
+   "lado": "ingreso",
+   "M": 0.015353,
+   "pagina": 36,
+   "linea": 1445,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Outros rendimentos operacionais (Anexo 3)",
+   "lado": "ingreso",
+   "M": 0.636427,
+   "pagina": 36,
+   "linea": 1452,
    "origen": "ajuste manual"
   },
   {
@@ -514,15 +628,13 @@
  ],
  "primerAnio": {
   "escalon": 3,
-  "estado": "confirmado",
-  "clave": "a78e2999c2dc4054583cbbdf1eb6601aa4e6ca00",
+  "estado": "pendiente",
+  "clave": "5e3714df65d4ddbebaedc575002a47a3252651a1",
   "rango": [
    478,
    505
   ],
   "lineasCargadas": [
-   977,
-   978,
    482,
    483,
    484,
@@ -530,6 +642,12 @@
    999,
    1001,
    1001,
+   1441,
+   1442,
+   1443,
+   1444,
+   1445,
+   1452,
    485,
    1247,
    1248,
@@ -573,6 +691,6 @@
    499,
    501
   ],
-  "user": "ESTADO DE RESULTADOS (líneas 478 a 505 del .md):\nL478: |  RENDIMENTOS E GASTOS | NOTAS | PERÍODOS  |   |\nL479: | --- | --- | --- | --- |\nL480: |   |   |  30 JUN 2024 | 30 JUN 2023  |\nL481: |  Vendas e serviços prestados | 11 | 1.275.143,83 | 2.788.061,97  |\nL482: |  Subsídios à exploração | 12 | 259.913,01 | 216.199,42  |\nL483: |  Variação nos inventários da produção |  | 0,00 | 0,00  |\nL484: |  Trabalhos para a própria entidade |  | 0,00 | 0,00  |\nL485: |  Custo das mercadorias vendidas e das matérias consumidas | 10 | -425,25 | -269,10  |\nL486: |  Fornecimentos e serviços externos | 16 | -1.237.111,23 | -719.414,66  |\nL487: |  Gastos com o pessoal | 15 | -3.277.011,81 | -2.290.033,29  |\nL488: |  Ajustamentos de inventários (perdas/reversões) |  | 0,00 | 0,00  |\nL489: |  Imparidade de dívidas a receber (perdas/reversões) |  | 0,00 | 0,00  |\nL490: |  Provisões (aumentos/reduções) |  | 0,00 | 0,00  |\nL491: |  Outras imparidades (perdas/reversões) |  | 0,00 | 0,00  |\nL492: |  Aumentos/reduções de justo valor |  | 0,00 | 0,00  |\nL493: |  Outros rendimentos | 11 | 2.374.119,95 | 15.035,57  |\nL494: |  Outros gastos | 16 | -35.225,20 | -24.023,60  |\nL495: |  Resultado antes de depreciações, gastos de financiamento e impostos |  | -640.596,70 | -14.443,69  |\nL496: |  Gastos/reversões de depreciação e de amortização | 5 | -377.064,18 | -21.723,51  |\nL497: |  Resultado operacional (antes de gastos de financiamento e impostos) |  | -1.017.660,88 | -36.167,20  |\nL498: |  Juros e rendimentos similares obtidos |  | 0,00 | 0,00  |\nL499: |  Juros e gastos similares suportados | 14 | -45.040,39 | -3.443,32  |\nL500: |  Resultado antes de impostos |  | -1.062.701,27 | -39.610,52  |\nL501: |  Impostos sobre rendimento do período | 13 | -12.407,97 | -4.418,01  |\nL502: |  Resultado líquido do período |  | -1.075.109,24 | -44.028,53  |\nL504: Administração\n\nLO QUE SE CARGA:\n- ingreso · \"Vendas\" · 0.000682 · L977 (de una nota)\n- ingreso · \"Prestações de Serviço\" · 1.274462 · L978 (de una nota)\n- ingreso · \"Subsídios à exploração\" · 0.259913 · L482\n- ingreso · \"Variação nos inventários da produção\" · 0 · L483\n- ingreso · \"Trabalhos para a própria entidade\" · 0 · L484\n- ingreso · \"Rendimentos Suplementares\" · 0.000272 · L997 (de una nota)\n- ingreso · \"Correção Exercícios Anteriores\" · 0.069693 · L999 (de una nota)\n- ingreso · \"Rendimentos com transferências de direitos de atletas\" · 2.3 · L1001 (de una nota)\n- ingreso · \"Outros (resto)\" · 0.004156 · L1001 (de una nota)\n- gasto · \"Custo das mercadorias vendidas e das matérias consumidas\" · 0.000425 · L485\n- gasto · \"Trabalhos Especializados\" · 0.265229 · L1247 (de una nota)\n- gasto · \"Publicidade e Propaganda\" · 0.00415 · L1248 (de una nota)\n- gasto · \"Vigilância e Segurança\" · 0.021985 · L1249 (de una nota)\n- gasto · \"Comissões\" · 0.138988 · L1251 (de una nota)\n- gasto · \"Conservação e Reparação\" · 0.047307 · L1252 (de una nota)\n- gasto · \"Ferramentas e Utens. Desg. Rápido\" · 0.007744 · L1255 (de una nota)\n- gasto · \"Material de Escritório\" · 0.003718 · L1256 (de una nota)\n- gasto · \"Artigos para Oferta\" · 0.000037 · L1257 (de una nota)\n- gasto · \"Equipamentos Desportivos\" · 0.070557 · L1258 (de una nota)\n- gasto · \"Eletricidade\" · 0.001566 · L1262 (de una nota)\n- gasto · \"Combustíveis\" · 0.020646 · L1263 (de una nota)\n- gasto · \"Água\" · 0.001785 · L1264 (de una nota)\n- gasto · \"Outros\" · 0.000022 · L1265 (de una nota)\n- gasto · \"Deslocações e Estadas\" · 0.284329 · L1267 (de una nota)\n- gasto · \"Transporte de Pessoal\" · 0.001524 · L1268 (de una nota)\n- gasto · \"Rendas e Alugueres\" · 0.321943 · L1270 (de una nota)\n- gasto · \"Comunicação\" · 0.000682 · L1271 (de una nota)\n- gasto · \"Seguros\" · 0.005498 · L1272 (de una nota)\n- gasto · \"Contencioso e Notariado\" · 0.000774 · L1273 (de una nota)\n- gasto · \"Limpeza, Higiene e Conforto\" · 0.003418 · L1274 (de una nota)\n- gasto · \"Outros Serviços\" · 0.03521 · L1275 (de una nota)\n- gasto · \"Remunerações do pessoal\" · 2.549786 · L1213 (de una nota)\n- gasto · \"Encargos sobre remunerações\" · 0.276043 · L1219 (de una nota)\n- gasto · \"Seguros AT e doenças profissionais\" · 0.21423 · L1220 (de una nota)\n- gasto · \"Outros gastos com pessoal:\" · 0.236953 · L1222 (de una nota)\n- gasto · \"Ajustamentos de inventários (perdas/reversões)\" · 0 · L488\n- gasto · \"Imparidade de dívidas a receber (perdas/reversões)\" · 0 · L489\n- gasto · \"Provisões (aumentos/reduções)\" · 0 · L490\n- gasto · \"Outras imparidades (perdas/reversões)\" · 0 · L491\n- gasto · \"Impostos Indiretos\" · 0.000702 · L1293 (de una nota)\n- gasto · \"Taxas\" · 0.00145 · L1294 (de una nota)\n- gasto · \"Descontos de Pronto Pagamento Obtidos\" · 0.000127 · L1295 (de una nota)\n- gasto · \"Correções Relativas Exercisio Anteriores\" · 0.006195 · L1297 (de una nota)\n- gasto · \"Donativos\" · 0.0003 · L1298 (de una nota)\n- gasto · \"Quotizações\" · 0.011685 · L1299 (de una nota)\n- gasto · \"Insuficiência de Estimativa para Impostos\" · 0.000921 · L1300 (de una nota)\n- gasto · \"Outros não especificados\" · 0.013846 · L1301 (de una nota)\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 0.377064 · L496\n- financiero · \"Juros e rendimentos similares obtidos\" · 0 · L498\n- financiero · \"Juros e gastos similares suportados\" · -0.04504 · L499\n- impuesto · \"Impostos sobre rendimento do período\" · -0.012408 · L501"
+  "user": "ESTADO DE RESULTADOS (líneas 478 a 505 del .md):\nL478: |  RENDIMENTOS E GASTOS | NOTAS | PERÍODOS  |   |\nL479: | --- | --- | --- | --- |\nL480: |   |   |  30 JUN 2024 | 30 JUN 2023  |\nL481: |  Vendas e serviços prestados | 11 | 1.275.143,83 | 2.788.061,97  |\nL482: |  Subsídios à exploração | 12 | 259.913,01 | 216.199,42  |\nL483: |  Variação nos inventários da produção |  | 0,00 | 0,00  |\nL484: |  Trabalhos para a própria entidade |  | 0,00 | 0,00  |\nL485: |  Custo das mercadorias vendidas e das matérias consumidas | 10 | -425,25 | -269,10  |\nL486: |  Fornecimentos e serviços externos | 16 | -1.237.111,23 | -719.414,66  |\nL487: |  Gastos com o pessoal | 15 | -3.277.011,81 | -2.290.033,29  |\nL488: |  Ajustamentos de inventários (perdas/reversões) |  | 0,00 | 0,00  |\nL489: |  Imparidade de dívidas a receber (perdas/reversões) |  | 0,00 | 0,00  |\nL490: |  Provisões (aumentos/reduções) |  | 0,00 | 0,00  |\nL491: |  Outras imparidades (perdas/reversões) |  | 0,00 | 0,00  |\nL492: |  Aumentos/reduções de justo valor |  | 0,00 | 0,00  |\nL493: |  Outros rendimentos | 11 | 2.374.119,95 | 15.035,57  |\nL494: |  Outros gastos | 16 | -35.225,20 | -24.023,60  |\nL495: |  Resultado antes de depreciações, gastos de financiamento e impostos |  | -640.596,70 | -14.443,69  |\nL496: |  Gastos/reversões de depreciação e de amortização | 5 | -377.064,18 | -21.723,51  |\nL497: |  Resultado operacional (antes de gastos de financiamento e impostos) |  | -1.017.660,88 | -36.167,20  |\nL498: |  Juros e rendimentos similares obtidos |  | 0,00 | 0,00  |\nL499: |  Juros e gastos similares suportados | 14 | -45.040,39 | -3.443,32  |\nL500: |  Resultado antes de impostos |  | -1.062.701,27 | -39.610,52  |\nL501: |  Impostos sobre rendimento do período | 13 | -12.407,97 | -4.418,01  |\nL502: |  Resultado líquido do período |  | -1.075.109,24 | -44.028,53  |\nL504: Administração\n\nLO QUE SE CARGA:\n- ingreso · \"Subsídios à exploração\" · 0.259913 · L482\n- ingreso · \"Variação nos inventários da produção\" · 0 · L483\n- ingreso · \"Trabalhos para a própria entidade\" · 0 · L484\n- ingreso · \"Rendimentos Suplementares\" · 0.000272 · L997 (de una nota)\n- ingreso · \"Correção Exercícios Anteriores\" · 0.069693 · L999 (de una nota)\n- ingreso · \"Rendimentos com transferências de direitos de atletas\" · 2.3 · L1001 (de una nota)\n- ingreso · \"Outros (resto)\" · 0.004156 · L1001 (de una nota)\n- ingreso · \"Receitas de bilheteira\" · 0.025811 · L1441 (de una nota)\n- ingreso · \"Patrocínios, publicidade e corporate\" · 0.14687 · L1442 (de una nota)\n- ingreso · \"Receitas de televisão\" · 0.45 · L1443 (de una nota)\n- ingreso · \"Merchandising\" · 0.000682 · L1444 (de una nota)\n- ingreso · \"Competições da UEFA e nacionais\" · 0.015353 · L1445 (de una nota)\n- ingreso · \"Outros rendimentos operacionais (Anexo 3)\" · 0.636427 · L1452 (de una nota)\n- gasto · \"Custo das mercadorias vendidas e das matérias consumidas\" · 0.000425 · L485\n- gasto · \"Trabalhos Especializados\" · 0.265229 · L1247 (de una nota)\n- gasto · \"Publicidade e Propaganda\" · 0.00415 · L1248 (de una nota)\n- gasto · \"Vigilância e Segurança\" · 0.021985 · L1249 (de una nota)\n- gasto · \"Comissões\" · 0.138988 · L1251 (de una nota)\n- gasto · \"Conservação e Reparação\" · 0.047307 · L1252 (de una nota)\n- gasto · \"Ferramentas e Utens. Desg. Rápido\" · 0.007744 · L1255 (de una nota)\n- gasto · \"Material de Escritório\" · 0.003718 · L1256 (de una nota)\n- gasto · \"Artigos para Oferta\" · 0.000037 · L1257 (de una nota)\n- gasto · \"Equipamentos Desportivos\" · 0.070557 · L1258 (de una nota)\n- gasto · \"Eletricidade\" · 0.001566 · L1262 (de una nota)\n- gasto · \"Combustíveis\" · 0.020646 · L1263 (de una nota)\n- gasto · \"Água\" · 0.001785 · L1264 (de una nota)\n- gasto · \"Outros\" · 0.000022 · L1265 (de una nota)\n- gasto · \"Deslocações e Estadas\" · 0.284329 · L1267 (de una nota)\n- gasto · \"Transporte de Pessoal\" · 0.001524 · L1268 (de una nota)\n- gasto · \"Rendas e Alugueres\" · 0.321943 · L1270 (de una nota)\n- gasto · \"Comunicação\" · 0.000682 · L1271 (de una nota)\n- gasto · \"Seguros\" · 0.005498 · L1272 (de una nota)\n- gasto · \"Contencioso e Notariado\" · 0.000774 · L1273 (de una nota)\n- gasto · \"Limpeza, Higiene e Conforto\" · 0.003418 · L1274 (de una nota)\n- gasto · \"Outros Serviços\" · 0.03521 · L1275 (de una nota)\n- gasto · \"Remunerações do pessoal\" · 2.549786 · L1213 (de una nota)\n- gasto · \"Encargos sobre remunerações\" · 0.276043 · L1219 (de una nota)\n- gasto · \"Seguros AT e doenças profissionais\" · 0.21423 · L1220 (de una nota)\n- gasto · \"Outros gastos com pessoal:\" · 0.236953 · L1222 (de una nota)\n- gasto · \"Ajustamentos de inventários (perdas/reversões)\" · 0 · L488\n- gasto · \"Imparidade de dívidas a receber (perdas/reversões)\" · 0 · L489\n- gasto · \"Provisões (aumentos/reduções)\" · 0 · L490\n- gasto · \"Outras imparidades (perdas/reversões)\" · 0 · L491\n- gasto · \"Impostos Indiretos\" · 0.000702 · L1293 (de una nota)\n- gasto · \"Taxas\" · 0.00145 · L1294 (de una nota)\n- gasto · \"Descontos de Pronto Pagamento Obtidos\" · 0.000127 · L1295 (de una nota)\n- gasto · \"Correções Relativas Exercisio Anteriores\" · 0.006195 · L1297 (de una nota)\n- gasto · \"Donativos\" · 0.0003 · L1298 (de una nota)\n- gasto · \"Quotizações\" · 0.011685 · L1299 (de una nota)\n- gasto · \"Insuficiência de Estimativa para Impostos\" · 0.000921 · L1300 (de una nota)\n- gasto · \"Outros não especificados\" · 0.013846 · L1301 (de una nota)\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 0.377064 · L496\n- financiero · \"Juros e rendimentos similares obtidos\" · 0 · L498\n- financiero · \"Juros e gastos similares suportados\" · -0.04504 · L499\n- impuesto · \"Impostos sobre rendimento do período\" · -0.012408 · L501"
  }
 }

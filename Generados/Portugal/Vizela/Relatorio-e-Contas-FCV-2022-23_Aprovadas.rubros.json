@@ -1,320 +1,289 @@
 {
-  "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.md",
-  "pdf": "Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.pdf",
-  "club": "vizela",
-  "year": 2023,
-  "generatedAt": "2026-10-15T21:55:09.200Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Quotizações",
-      "lado": "revenue",
-      "page": 21,
-      "section": "estado",
-      "values": [
-        0.047829
-      ],
-      "glosa": "Cuotas de socios"
-    },
-    {
-      "label": "Receitas de bilheteira",
-      "lado": "revenue",
-      "page": 21,
-      "section": "estado",
-      "values": [
-        0.191193
-      ],
-      "glosa": "Ingresos por taquilla"
-    },
-    {
-      "label": "Patrocínios, publicidade e corporate",
-      "lado": "revenue",
-      "page": 21,
-      "section": "estado",
-      "values": [
-        0.574068
-      ],
-      "glosa": "Patrocinios, publicidad y eventos corporativos"
-    },
-    {
-      "label": "Receitas de televisão",
-      "lado": "revenue",
-      "page": 21,
-      "section": "estado",
-      "values": [
-        3.75
-      ],
-      "glosa": "Ingresos por televisión"
-    },
-    {
-      "label": "Merchandising",
-      "lado": "revenue",
-      "page": 21,
-      "section": "estado",
-      "values": [
-        0.069298
-      ],
-      "glosa": "Merchandising"
-    },
-    {
-      "label": "Competições da UEFA e nacionais",
-      "lado": "revenue",
-      "page": 21,
-      "section": "estado",
-      "values": [
-        0.250431
-      ],
-      "glosa": "Competiciones de la UEFA y nacionales"
-    },
-    {
-      "label": "Cedência de jogadores",
-      "lado": "revenue",
-      "page": 21,
-      "section": "estado",
-      "values": [
-        0.0715
-      ],
-      "glosa": "Cesión de jugadores"
-    },
-    {
-      "label": "Outros",
-      "lado": "revenue",
-      "page": 21,
-      "section": "estado",
-      "values": [
-        0.211456
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "Município de Vizela",
-      "lado": "revenue",
-      "page": 31,
-      "section": "nota que desglosa \"Subsídios à exploração\"",
-      "values": [
-        0.15
-      ],
-      "glosa": "Municipio de Vizela"
-    },
-    {
-      "label": "I.E.F.P",
-      "lado": "revenue",
-      "page": 31,
-      "section": "nota que desglosa \"Subsídios à exploração\"",
-      "values": [
-        0.003885
-      ],
-      "glosa": "I.E.F.P."
-    },
-    {
-      "label": "Outras entidades",
-      "lado": "revenue",
-      "page": 31,
-      "section": "nota que desglosa \"Subsídios à exploração\"",
-      "values": [
-        0.034489
-      ],
-      "glosa": "Otras entidades"
-    },
-    {
-      "label": "Outros rendimentos e ganhos",
-      "lado": "revenue",
-      "page": 21,
-      "section": "estado",
-      "values": [
-        0.459945
-      ],
-      "glosa": "Otros ingresos y ganancias"
-    },
-    {
-      "label": "Gastos/rendimentos com transações de passes de atletas",
-      "lado": "revenue",
-      "page": 21,
-      "section": "estado",
-      "values": [
-        0.945568
-      ],
-      "glosa": "Gastos/ingresos por transacciones de derechos de jugadores"
-    },
-    {
-      "label": "Custo das mercadorias vendidas e das matérias consumidas",
-      "lado": "expense",
-      "page": 21,
-      "section": "estado",
-      "values": [
-        0.014299
-      ],
-      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
-    },
-    {
-      "label": "Subcontratos",
-      "lado": "expense",
-      "page": 36,
-      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-      "values": [
-        0.097067
-      ],
-      "glosa": "Subcontratos"
-    },
-    {
-      "label": "Serviços especializados",
-      "lado": "expense",
-      "page": 36,
-      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-      "values": [
-        1.008132
-      ],
-      "glosa": "Servicios especializados"
-    },
-    {
-      "label": "Materiais",
-      "lado": "expense",
-      "page": 36,
-      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-      "values": [
-        0.137588
-      ],
-      "glosa": "Materiales"
-    },
-    {
-      "label": "Energia e fluídos",
-      "lado": "expense",
-      "page": 36,
-      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-      "values": [
-        0.061741
-      ],
-      "glosa": "Energía y fluidos"
-    },
-    {
-      "label": "Deslocações, estadas e transportes",
-      "lado": "expense",
-      "page": 36,
-      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-      "values": [
-        0.546127
-      ],
-      "glosa": "Desplazamientos, estancias y transportes"
-    },
-    {
-      "label": "Serviços diversos",
-      "lado": "expense",
-      "page": 36,
-      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-      "values": [
-        0.688209
-      ],
-      "glosa": "Servicios diversos"
-    },
-    {
-      "label": "Remunerações órgãos sociais",
-      "lado": "expense",
-      "page": 37,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        0.387131
-      ],
-      "glosa": "Remuneraciones de los órganos sociales"
-    },
-    {
-      "label": "Remunerações pessoal",
-      "lado": "expense",
-      "page": 37,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        7.643369
-      ],
-      "glosa": "Remuneraciones del personal"
-    },
-    {
-      "label": "Encargos sobre remunerações",
-      "lado": "expense",
-      "page": 37,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        0.885047
-      ],
-      "glosa": "Cargas sociales"
-    },
-    {
-      "label": "Seguros",
-      "lado": "expense",
-      "page": 37,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        0.826688
-      ],
-      "glosa": "Seguros"
-    },
-    {
-      "label": "Outros gastos com pessoal",
-      "lado": "expense",
-      "page": 37,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        0.057409
-      ],
-      "glosa": "Otros gastos de personal"
-    },
-    {
-      "label": "Imparidade de dívidas a receber (perdas/reversões)",
-      "lado": "expense",
-      "page": 21,
-      "section": "estado",
-      "values": [
-        0.130307
-      ],
-      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
-    },
-    {
-      "label": "Impostos",
-      "lado": "expense",
-      "page": 38,
-      "section": "nota que desglosa \"Outros gastos e perdas\"",
-      "values": [
-        0.004703
-      ],
-      "glosa": "Impuestos"
-    },
-    {
-      "label": "Multas e outras penalidades",
-      "lado": "expense",
-      "page": 38,
-      "section": "nota que desglosa \"Outros gastos e perdas\"",
-      "values": [
-        0.067257
-      ],
-      "glosa": "Multas y otras sanciones"
-    },
-    {
-      "label": "Outros",
-      "lado": "expense",
-      "page": 38,
-      "section": "nota que desglosa \"Outros gastos e perdas\"",
-      "values": [
-        0.00887
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "Gastos/reversões de depreciação e de amortização (excluindo passes de jogadores)",
-      "lado": "expense",
-      "page": 21,
-      "section": "estado",
-      "values": [
-        0.111159
-      ],
-      "glosa": "Gastos/reversiones por depreciación y amortización (excluyendo derechos de jugadores)"
-    },
-    {
-      "label": "Gastos/reversões de depreciação e de amortização com passes de jogadores",
-      "lado": "expense",
-      "page": 21,
-      "section": "estado",
-      "values": [
-        0.093776
-      ],
-      "glosa": "Gastos/reversiones por depreciación y amortización de derechos de jugadores"
-    }
-  ]
+ "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.md",
+ "pdf": "Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.pdf",
+ "club": "vizela-pt",
+ "year": 2023,
+ "generatedAt": "2026-10-16T03:02:56.384Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Quotizações",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "values": [
+    0.047829
+   ]
+  },
+  {
+   "label": "Receitas de bilheteira",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "values": [
+    0.191193
+   ]
+  },
+  {
+   "label": "Patrocínios, publicidade e corporate",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "values": [
+    0.574068
+   ]
+  },
+  {
+   "label": "Receitas de televisão",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "values": [
+    3.75
+   ]
+  },
+  {
+   "label": "Merchandising",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "values": [
+    0.069298
+   ]
+  },
+  {
+   "label": "Competições da UEFA e nacionais",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "values": [
+    0.250431
+   ]
+  },
+  {
+   "label": "Cedência de jogadores",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "values": [
+    0.0715
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "values": [
+    0.211456
+   ]
+  },
+  {
+   "label": "Município de Vizela",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Subsídios à exploração\"",
+   "values": [
+    0.15
+   ]
+  },
+  {
+   "label": "I.E.F.P",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Subsídios à exploração\"",
+   "values": [
+    0.003885
+   ]
+  },
+  {
+   "label": "Outras entidades",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Subsídios à exploração\"",
+   "values": [
+    0.034489
+   ]
+  },
+  {
+   "label": "Outros rendimentos e ganhos",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "values": [
+    0.459945
+   ]
+  },
+  {
+   "label": "Gastos/rendimentos com transações de passes de atletas",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "values": [
+    0.945568
+   ]
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado",
+   "values": [
+    0.014299
+   ]
+  },
+  {
+   "label": "Subcontratos",
+   "lado": "expense",
+   "page": 36,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "values": [
+    0.097067
+   ]
+  },
+  {
+   "label": "Serviços especializados",
+   "lado": "expense",
+   "page": 36,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "values": [
+    1.008132
+   ]
+  },
+  {
+   "label": "Materiais",
+   "lado": "expense",
+   "page": 36,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "values": [
+    0.137588
+   ]
+  },
+  {
+   "label": "Energia e fluídos",
+   "lado": "expense",
+   "page": 36,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "values": [
+    0.061741
+   ]
+  },
+  {
+   "label": "Deslocações, estadas e transportes",
+   "lado": "expense",
+   "page": 36,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "values": [
+    0.546127
+   ]
+  },
+  {
+   "label": "Serviços diversos",
+   "lado": "expense",
+   "page": 36,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "values": [
+    0.688209
+   ]
+  },
+  {
+   "label": "Remunerações órgãos sociais",
+   "lado": "expense",
+   "page": 37,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    0.387131
+   ]
+  },
+  {
+   "label": "Remunerações pessoal",
+   "lado": "expense",
+   "page": 37,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    7.643369
+   ]
+  },
+  {
+   "label": "Encargos sobre remunerações",
+   "lado": "expense",
+   "page": 37,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    0.885047
+   ]
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 37,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    0.826688
+   ]
+  },
+  {
+   "label": "Outros gastos com pessoal",
+   "lado": "expense",
+   "page": 37,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    0.057409
+   ]
+  },
+  {
+   "label": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado",
+   "values": [
+    0.130307
+   ]
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 38,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "values": [
+    0.004703
+   ]
+  },
+  {
+   "label": "Multas e outras penalidades",
+   "lado": "expense",
+   "page": 38,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "values": [
+    0.067257
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 38,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "values": [
+    0.00887
+   ]
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização (excluindo passes de jogadores)",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado",
+   "values": [
+    0.111159
+   ]
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização com passes de jogadores",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado",
+   "values": [
+    0.093776
+   ]
+  }
+ ]
 }

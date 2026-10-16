@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Académica/9-RC-SDUQ-2021-2022.pdf",
  "md": "Clubes/Portugal/Académica/9-RC-SDUQ-2021-2022.md",
- "generado": "2026-10-15T21:56:50.035Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:02:56.978Z",
+ "estado": "ok",
+ "clubId": "academica-pt",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "3116a35",
-  "a317536"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -41,7 +38,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -53,8 +50,7 @@
   "duda de localizar que no afecta la carga: b2 tiene 16 filas y 34 importes, lo que sugiere dos columnas pero el encabezado solo nombra una.",
   "duda de localizar confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"Juros e gastos similares suportados\"): ¿En la nota 19 (b21) la segunda columna rotulada '2020-2021' corresponde en realidad a 2021-2022?",
   "duda de localizar que no afecta la carga: Son ajustes a resultados transitados de 2020/2021, no desglosan el estado del ejercicio.",
-  "duda de extraer que no afecta la carga: L681 repite '2020-2021' en ambas columnas, pero el total de la segunda (72.113) coincide con el estado 2021/2022 (-72.112,91, L202).",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L681 repite '2020-2021' en ambas columnas, pero el total de la segunda (72.113) coincide con el estado 2021/2022 (-72.112,91, L202)."
  ],
  "reintentar": null,
  "reintentado": false,

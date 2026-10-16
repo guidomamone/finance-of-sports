@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.pdf",
  "md": "Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.md",
- "generado": "2026-10-15T21:55:09.140Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:02:57.097Z",
+ "estado": "ok",
+ "clubId": "vizela-pt",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "4df5087",
-  "4df5087"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,7 +42,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -54,6 +51,8 @@
   }
  ],
  "notas": [
+  "duda de localizar ya contestada para el club (antes de su alta) (cuadro-de-otro-anio, \"-\"): aceptar, en Relatorio-Contas-FCV-2021-22.pdf",
+  "duda de localizar ya contestada para el club (antes de su alta) (cuadro-de-otro-anio, \"-\"): aceptar, en Relatorio-Contas-FCV-2021-22.pdf",
   "duda de extraer que no afecta la carga: Los encabezados de b5 y b4 están cortados (L157, L170); se asume mismo orden que b6 (30/06/2022, 30/06/2021, variación, %), coherente con 5.802.366,77-8.223.661,33=-2.421.294,56."
  ],
  "reintentar": null,

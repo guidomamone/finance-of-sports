@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.pdf",
  "md": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.md",
- "generado": "2026-10-15T21:55:09.108Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:02:57.095Z",
+ "estado": "ok",
+ "clubId": "uniaodeleiria-pt",
  "year": 2023,
  "escala": {
   "valor": "unidades",
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "8b7eb0a"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -40,7 +38,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2021-22.pdf",
  "md": "Clubes/Portugal/Nacional/relatorio-contas-2021-22.md",
- "generado": "2026-10-16T02:44:08.224Z",
+ "generado": "2026-10-16T03:02:57.150Z",
  "estado": "ok",
  "clubId": "nacional-pt",
  "year": 2022,
@@ -62,8 +62,7 @@
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar de escala confirmada por otro documento del club (to-do 213): relatorio-contas-2022-23.md L664 imprime 439.297 con su moneda; la carga usó unidades",
   "duda de extraer de escala confirmada por otro documento del club (to-do 213): relatorio-contas-2022-23.md L664 imprime 439.297 con su moneda; la carga usó unidades",
-  "duda de extraer que no afecta la carga: L134 es positivo en 2022 (reversión) y negativo en 2021; se clasificó como gasto con su signo impreso.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L134 es positivo en 2022 (reversión) y negativo en 2021; se clasificó como gasto con su signo impreso."
  ],
  "reintentar": null,
  "reintentado": false,

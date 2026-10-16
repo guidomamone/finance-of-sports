@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2024-25.pdf",
  "md": "Clubes/Portugal/Nacional/relatorio-contas-2024-25.md",
- "generado": "2026-10-16T02:44:08.256Z",
+ "generado": "2026-10-16T03:02:57.155Z",
  "estado": "ok",
  "clubId": "nacional-pt",
  "year": 2025,
@@ -11,7 +11,22 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2024-25.pdf",
+   "campo": "fila",
+   "valor": "113.202",
+   "linea": 842,
+   "etiqueta": "Correções relativas a períodos anteriores",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 842,
+   "motivo": "Fila de la nota 15.2 Outros rendimentos que la extracción puso como gasto (−113.202); es ingreso. Con el cambio los ingresos dan 9.365.062 (impreso 6.067.662 + 2.235.880 + 1.061.519) y el resultado 570.264 (impreso 570.265). Mismo patrón que Nacional 2024 (TODO 237 f) y Santa Clara (w).",
+   "evidencia": "relatorio-contas-2024-25.md L842, estado L132-146",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -43,6 +58,7 @@
  ],
  "notas": [
   "la nota de \"Subsídios à exploração\" no suma el renglón (2.2 contra 2.23588, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"Correções relativas a períodos anteriores\" (ingreso) 113.202, en lugar de la fila de L842 (2026-10-16, Fila de la nota 15.2 Outros rendimentos que la extracción puso como gasto (−113.202); es ingreso. Con el cambio los ingresos dan 9.365.062 (impreso 6.067.662 + 2.235.880 + 1.061.519) y el resultado 570.264 (impreso 570.265). Mismo patrón que Nacional 2024 (TODO 237 f) y Santa Clara (w).)",
   "duda de localizar que no afecta la carga: El encabezado de b27 dice 17 meses mientras las demás notas dicen 12 meses; probablemente errata.",
   "duda de localizar confirmada por las sumas (columna, \"Subsídios à exploração\"): ¿La columna 'DR Imput. Subs. Expl. 30-jun-26 12 meses' de b29 es la del ejercicio cerrado el 30-06-2025?",
   "duda de extraer confirmada por las sumas (columna, \"Subsídios à exploração\"): ¿Las columnas '30-jun-26' de la nota de subsidios (L854) corresponden en realidad al ejercicio 30-jun-25?",
@@ -147,14 +163,6 @@
    "origen": "nota que desglosa \"Outros rendimentos\""
   },
   {
-   "etiqueta": "Correções relativas a períodos anteriores",
-   "lado": "ingreso",
-   "M": 0.113202,
-   "pagina": 22,
-   "linea": 842,
-   "origen": "nota que desglosa \"Outros rendimentos\""
-  },
-  {
    "etiqueta": "Cedências de jogadores",
    "lado": "ingreso",
    "M": 0.00005,
@@ -185,6 +193,14 @@
    "pagina": 22,
    "linea": 847,
    "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Correções relativas a períodos anteriores",
+   "lado": "ingreso",
+   "M": 0.113202,
+   "pagina": 22,
+   "linea": 842,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Trabalhos especializados",

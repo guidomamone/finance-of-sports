@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Gil Vicente/wf-src-Relatorio_SDUQ_Final.pdf",
  "md": "Clubes/Portugal/Gil Vicente/wf-src-Relatorio_SDUQ_Final.md",
- "generado": "2026-10-15T21:55:01.340Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:02:57.034Z",
+ "estado": "ok",
+ "clubId": "gilvicente-pt",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -11,10 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "12e3abc"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Gil Vicente/wf-src-Relatorio_SDUQ_Final.pdf",
+   "campo": "anio",
+   "valor": "2022",
+   "linea": null,
+   "motivo": "El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2022 según el registro (periodo.cierre).",
+   "evidencia": "transcripciones-estado.jsonl, periodo.cierre 2022-06-30",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,7 +54,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [

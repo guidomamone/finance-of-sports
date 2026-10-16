@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Chaves/RC-2021-2022_compressed-1.pdf",
  "md": "Clubes/Portugal/Chaves/RC-2021-2022_compressed-1.md",
- "generado": "2026-10-15T21:55:00.765Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:02:56.995Z",
+ "estado": "ok",
+ "clubId": "chaves-pt",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "d96ff2b"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -40,7 +38,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [

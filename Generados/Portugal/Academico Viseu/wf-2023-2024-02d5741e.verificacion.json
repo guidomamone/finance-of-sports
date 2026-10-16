@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Academico Viseu/wf-2023-2024-02d5741e.pdf",
  "md": "Clubes/Portugal/Academico Viseu/wf-2023-2024-02d5741e.md",
- "generado": "2026-10-15T21:54:59.742Z",
+ "generado": "2026-10-16T03:02:56.932Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "academicoviseu-pt",
  "year": 2024,
  "escala": {
   "valor": "unidades",
@@ -45,7 +45,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -56,7 +56,7 @@
  "notas": [
   "la nota de \"Custo das mercadorias vendidas e matérias consumidas\" no suma el renglón (0.125732 contra 0.10462, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Imparidades de dívidas a receber (perdas/reversões)\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
-  "duda de localizar de escala confirmada por otro documento del club (to-do 213): wf-2024-2025-efe7ad0a.md L78 imprime 12.682.053,13 con su moneda; la carga usó unidades",
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-src-RC21_22.pdf",
   "duda de extraer que no afecta la carga: L618 tiene la celda 2023/2024 vacía y '-' en 2022/2023; se omitió.",
   "duda de extraer que no afecta la carga: L602 está marcado 'Outros rendimentos' pero 642.829,95 = 174.350,22 + 468.479,73, mezcla dos renglones del estado."
  ],

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Vizela/Relatorio-Gestao-e-contas-FCV-2023-24-Ass.pdf",
  "md": "Clubes/Portugal/Vizela/Relatorio-Gestao-e-contas-FCV-2023-24-Ass.md",
- "generado": "2026-10-15T21:55:09.154Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:02:57.101Z",
+ "estado": "ok",
+ "clubId": "vizela-pt",
  "year": 2024,
  "escala": {
   "valor": "unidades",
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "1790850"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,7 +43,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [

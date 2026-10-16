@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.pdf",
  "md": "Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.md",
- "generado": "2026-10-15T21:54:59.899Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:02:56.973Z",
+ "estado": "ok",
+ "clubId": "academica-pt",
  "year": 2023,
  "escala": {
   "valor": "unidades",
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "53f8610",
-  "a42705c"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -51,7 +48,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [

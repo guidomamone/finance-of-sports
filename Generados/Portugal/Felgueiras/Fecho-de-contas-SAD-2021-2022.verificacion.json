@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.pdf",
  "md": "Clubes/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.md",
- "generado": "2026-10-15T21:56:50.174Z",
- "estado": "cola",
- "clubId": null,
- "year": null,
+ "generado": "2026-10-16T03:02:57.015Z",
+ "estado": "ok",
+ "clubId": "felgueiras-pt",
+ "year": 2022,
  "escala": {
   "valor": "unidades",
   "escalon": 0,
@@ -23,9 +23,7 @@
    "fecha": "2026-10-15"
   }
  ],
- "cola": [
-  "a64226c"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -44,21 +42,21 @@
    "dif": 1.1102230246251565e-16
   },
   {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 0.143014 en este documento y 0.143998 en Fecho-contas-2022-2023.pdf (columna del año anterior)"
   },
   {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "duda de localizar confirmada por las sumas (usar-cuadro-por-segmento, \"Gastos com o pessoal\"): ¿Se carga el cuadro 'Informação por atividade económica' (b11) como desglose de 'Gastos com o pessoal' en Remunerações 160 180,67 y Outros 223 447,67?",
+  "duda de localizar ya contestada para el club (antes de su alta) (cuadro-de-otro-anio, \"-\"): descartar, en Fecho-de-contas-SAD-2021-2022.pdf",
   "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"Gastos com o pessoal\"): ¿Se cargan 'Remunerações' (L661) y 'Outros gastos' (L662) del cuadro por actividad b11 como desglose de 'Gastos com o pessoal'?",
-  "duda de extraer que no afecta la carga: Repiten importes ya cargados del estado b1 (L657-L660).",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Repiten importes ya cargados del estado b1 (L657-L660)."
  ],
  "reintentar": null,
  "reintentado": false,
@@ -262,40 +260,5 @@
    "linea": 212
   }
  ],
- "impuesto": [],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "790104d536ec5d2b6a8ab14139f9e8aaede724c2",
-  "rango": [
-   201,
-   217
-  ],
-  "lineasCargadas": [
-   204,
-   205,
-   208,
-   751,
-   752,
-   753,
-   754,
-   756,
-   757,
-   759,
-   760,
-   762,
-   763,
-   765,
-   766,
-   767,
-   768,
-   769,
-   770,
-   661,
-   662,
-   209,
-   212
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 201 a 217 del .md):\nL201: |  RENDIMENTOS E GASTOS | PERÍODOS  |   |\nL202: | --- | --- | --- |\nL203: |   |  jun 2022 | jun 2021  |\nL204: |  Vendas e serviços prestados | 138 985,49 |   |\nL205: |  Subsídios à exploração | 4 028,63 |   |\nL206: |  Fornecimentos e serviços externos | (152 312,85) | (5 900,00)  |\nL207: |  Gastos com o pessoal | (383 628,34) |   |\nL208: |  Outros rendimentos |  | 5 172,07  |\nL209: |  Outros gastos | (136 213,01) |   |\nL210: |  **Resultado antes de depreciações, gastos de financiamento e impostos** | **(529 140,08)** | **(727,93)**  |\nL211: |  **Resultado operacional (antes de gastos de financiamento e impostos)** | **(529 140,08)** | **(727,93)**  |\nL212: |  Gasto líquido de financiamento | (216,59) | (81,12)  |\nL213: |  **Resultado antes de impostos** | **(529 356,67)** | **(809,05)**  |\nL214: |  **Resultado líquido do período** | **(529 356,67)** | **(809,05)**  |\nL216: Administração / Gerência\n\nLO QUE SE CARGA:\n- ingreso · \"Vendas e serviços prestados\" · 0.138985 · L204\n- ingreso · \"Subsídios à exploração\" · 0.004029 · L205\n- ingreso · \"Outros rendimentos\" · 0 · L208\n- gasto · \"Trabalhos especializados\" · 0.040094 · L751 (de una nota)\n- gasto · \"Publicidade e propaganda\" · 0.000556 · L752 (de una nota)\n- gasto · \"Vigilância e segurança\" · 0.009762 · L753 (de una nota)\n- gasto · \"Honorários\" · 0.0005 · L754 (de una nota)\n- gasto · \"Ferramentas e utensílios de desgaste rápido\" · 0.003244 · L756 (de una nota)\n- gasto · \"Material de escritório\" · 0.001213 · L757 (de una nota)\n- gasto · \"Eletricidade\" · 0.000633 · L759 (de una nota)\n- gasto · \"Outros\" · 0.000016 · L760 (de una nota)\n- gasto · \"Deslocações e estadas\" · 0.002018 · L762 (de una nota)\n- gasto · \"Transportes de mercadorias\" · 0.007382 · L763 (de una nota)\n- gasto · \"Rendas e alugueres\" · 0.0133 · L765 (de una nota)\n- gasto · \"Comunicação\" · 0.000178 · L766 (de una nota)\n- gasto · \"Contencioso e notariado\" · 0.000879 · L767 (de una nota)\n- gasto · \"Despesas de representação\" · 0.028069 · L768 (de una nota)\n- gasto · \"Limpeza, higiene e conforto\" · 0.000718 · L769 (de una nota)\n- gasto · \"Outros serviços\" · 0.043752 · L770 (de una nota)\n- gasto · \"Remunerações\" · 0.160181 · L661 (de una nota)\n- gasto · \"Outros gastos\" · 0.223448 · L662 (de una nota)\n- gasto · \"Outros gastos\" · 0.136213 · L209\n- financiero · \"Gasto líquido de financiamento\" · -0.000217 · L212"
- }
+ "impuesto": []
 }

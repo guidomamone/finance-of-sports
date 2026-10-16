@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.pdf",
  "md": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.md",
- "generado": "2026-10-15T21:55:01.631Z",
+ "generado": "2026-10-16T03:02:57.062Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "oliveirense-pt",
  "year": 2024,
  "escala": {
   "valor": "unidades",
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.pdf",
+   "campo": "anio",
+   "valor": "2024",
+   "linea": null,
+   "motivo": "El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2024 según el registro (periodo.cierre).",
+   "evidencia": "transcripciones-estado.jsonl, periodo.cierre 2024-06-30",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -43,7 +54,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [

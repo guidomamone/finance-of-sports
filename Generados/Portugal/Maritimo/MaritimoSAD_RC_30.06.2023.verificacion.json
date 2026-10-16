@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.pdf",
  "md": "Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.md",
- "generado": "2026-10-15T21:55:01.568Z",
+ "generado": "2026-10-16T03:02:57.055Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "maritimo-pt",
  "year": 2023,
  "escala": {
   "valor": "unidades",
@@ -11,9 +11,31 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.pdf",
+   "campo": "categoria",
+   "valor": "other_expenses",
+   "linea": null,
+   "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",
+   "motivo": "Reversión (+703.162) de imparidad que quedó como ingreso; va del lado del gasto (neta), sin cambiar el resultado, como Marítimo 2025.",
+   "evidencia": "MaritimoSAD_RC_30.06.2023.md L1170",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.pdf",
+   "campo": "categoria",
+   "valor": "other_amortisation",
+   "linea": null,
+   "etiqueta": "Provisões (aumentos/reduções)",
+   "motivo": "Reversión (+510.000) de provisiones que quedó como ingreso; provisiones netas van a other_amortisation del lado del gasto.",
+   "evidencia": "MaritimoSAD_RC_30.06.2023.md L1171",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [
-  "ec726db",
   "c70e31f"
  ],
  "chequeos": [
@@ -51,7 +73,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [

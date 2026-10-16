@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Academico Viseu/wf-2022-2023-b797bc64.pdf",
  "md": "Clubes/Portugal/Academico Viseu/wf-2022-2023-b797bc64.md",
- "generado": "2026-10-15T21:54:59.715Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:02:56.924Z",
+ "estado": "ok",
+ "clubId": "academicoviseu-pt",
  "year": 2023,
  "escala": {
   "valor": "no se sabe",
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "a31db0a",
-  "7b44665"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -46,12 +43,13 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (0.11882 contra 0.088996, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Outros gastos\" no suma el renglón (0.705515 contra 0.706109, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-src-RC21_22.pdf",
   "duda de localizar confirmada por las sumas (cuadro-duplicado, \"Gastos com o pessoal\"): ¿El cuadro b19 (Remunerações do pessoal... Total) es el desglose de 'Outro pessoal' de la nota 14.2 y no un duplicado de b18?",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Gastos com o pessoal\"): ¿Se deja afuera de la carga el cuadro 14.2 'Gastos com o pessoal' por categoría (b18, L906-L918) y se usa b19 (L935-L939) como desglose de 'Gastos com o pessoal'?"
  ],

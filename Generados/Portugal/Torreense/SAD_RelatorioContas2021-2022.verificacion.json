@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Torreense/SAD_RelatorioContas2021-2022.pdf",
  "md": "Clubes/Portugal/Torreense/SAD_RelatorioContas2021-2022.md",
- "generado": "2026-10-15T21:55:09.053Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:02:57.089Z",
+ "estado": "ok",
+ "clubId": "torreense-pt",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "32280b1"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -40,12 +38,13 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "duda de localizar que no afecta la carga: Una sola columna CAE; Remunerações/Outros gastos ya se abren en la nota de pessoal (b32).",
   "duda de localizar que no afecta la carga: Solo repite importes; 'Rendimentos suplementares' podría abrir Outros rendimentos pero es una única fila.",
+  "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"Juros e gastos similares suportados\"): aceptar, en SAD_RelatorioContas2021-2022.pdf",
   "duda de extraer que no afecta la carga: L1626 agrega varios renglones del estado (L629, L632, L633) y no desglosa uno solo; su total L1627 no es un renglón impreso del estado."
  ],
  "reintentar": null,

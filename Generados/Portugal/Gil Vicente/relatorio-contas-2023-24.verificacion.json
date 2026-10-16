@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Gil Vicente/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/Gil Vicente/relatorio-contas-2023-24.md",
- "generado": "2026-10-15T21:56:50.192Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:02:57.030Z",
+ "estado": "ok",
+ "clubId": "gilvicente-pt",
  "year": 2024,
  "escala": {
   "valor": "unidades",
@@ -12,14 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "dcf6376",
-  "bb2062b",
-  "b82cd3f",
-  "14755d1",
-  "a7812ac",
-  "d603499"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -50,7 +43,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -59,9 +52,9 @@
   }
  ],
  "notas": [
+  "duda de localizar ya contestada para el club (antes de su alta) (perimetro, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
   "duda de localizar que no afecta la carga: b4 tiene las mismas filas (Venda Merchandising... Quotas) que b46.",
-  "duda de extraer que no afecta la carga: En L2212-L2216 el ejercicio actual muestra los importes en 'Reversões' y 0 en 'Gastos', probablemente error de columna; se usó la columna Total.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: En L2212-L2216 el ejercicio actual muestra los importes en 'Reversões' y 0 en 'Gastos', probablemente error de columna; se usó la columna Total."
  ],
  "reintentar": null,
  "reintentado": false,

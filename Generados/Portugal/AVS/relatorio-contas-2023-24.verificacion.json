@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/AVS/relatorio-contas-2023-24.md",
- "generado": "2026-10-16T02:44:07.935Z",
+ "generado": "2026-10-16T03:02:57.110Z",
  "estado": "ok",
  "clubId": null,
  "year": 2024,
@@ -58,7 +58,6 @@
  "notas": [
   "la nota del subtotal \"Total - Gastos com pessoal\" suma el subtotal impreso (2.76882): reemplaza a \"Outros gastos com pessoal\" + \"Outro pessoal - outros gastos\" + \"Outro pessoal - encargos com seguros\" + \"Outro pessoal - encargos sobre remunerações\" + \"Outro pessoal - remunerações\" + \"Treinador principal - outros gastos\" + \"Treinador principal - direitos de imagem\" + \"Treinador principal - encargos com seguros\" + \"Treinador principal - encargos sobre remunerações\" + \"Treinador principal - remunerações\" + \"Equipa principal - outros gastos\" + \"Equipa principal - direitos de imagem\" + \"Equipa principal - encargos com seguros\" + \"Equipa principal - encargos sobre remunerações\" + \"Equipa principal - remunerações\"",
   "la lectura base no cerraba; cerró con la lectura 4",
-  "línea 582: 1 084 433,54 no está en el segunda lectura; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
   "duda de localizar que no afecta la carga: b1 es un resumen del informe de gestión que repite importes del estado b3."
  ],
  "reintentar": null,
@@ -386,11 +385,5 @@
  ],
  "notaSubtotal": [
   "gasto"
- ],
- "confirmadosPorSumas": [
-  {
-   "linea": 582,
-   "numero": "1 084 433,54"
-  }
  ]
 }

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Estoril Praia/relatorio-contas-2021-22.pdf",
  "md": "Clubes/Portugal/Estoril Praia/relatorio-contas-2021-22.md",
- "generado": "2026-10-15T21:55:00.793Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:02:57.000Z",
+ "estado": "ok",
+ "clubId": "estorilpraia-pt",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "eeed426"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,7 +43,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [

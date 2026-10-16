@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Paços de Ferreira/contas22_23.pdf",
  "md": "Clubes/Portugal/Paços de Ferreira/contas22_23.md",
- "generado": "2026-10-15T21:55:01.800Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:02:57.070Z",
+ "estado": "ok",
+ "clubId": "pacosdeferreira-pt",
  "year": 2023,
  "escala": {
   "valor": "unidades",
@@ -11,10 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "187a52d"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Paços de Ferreira/contas22_23.pdf",
+   "campo": "anio",
+   "valor": "2023",
+   "linea": null,
+   "motivo": "El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2023 según el registro (periodo.cierre).",
+   "evidencia": "transcripciones-estado.jsonl, periodo.cierre 2023-06-30",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,13 +54,14 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "el desglose de \"Outros\" (3 filas) no suma la fila: quedó la fila",
   "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (0.230308 contra 0.07229, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Subcontratos\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en contas22_23.pdf",
   "duda de extraer que no afecta la carga: L407 es diferencia de cambio incluida en Outros rendimentos; solo tiene importe en 2022 (28 199,10 €).",
   "duda de extraer que no afecta la carga: El estado (L71) incluye este costo de cesión de créditos en el renglón de juros; la nota b12 lo desglosa."
  ],

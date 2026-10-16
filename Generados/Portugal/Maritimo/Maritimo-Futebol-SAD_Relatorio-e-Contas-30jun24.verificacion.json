@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.pdf",
  "md": "Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.md",
- "generado": "2026-10-15T21:55:01.508Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:02:57.045Z",
+ "estado": "ok",
+ "clubId": "maritimo-pt",
  "year": 2024,
  "escala": {
   "valor": "unidades",
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "3707d3a",
-  "e647d23",
-  "21f2617"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -42,16 +38,17 @@
   {
    "nombre": "documento del año 2023",
    "ok": false,
-   "detalle": "ingresos de 2023: 14.403189 en MaritimoSAD_RC_30.06.2023.pdf y 12.659907 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2023: 15.616351 en MaritimoSAD_RC_30.06.2023.pdf y 12.659907 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "duda de localizar confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"-\"): ¿Se usa como año anterior la columna 2022/2023 Reexpresso del estado de resultados (b11) en lugar de la original?",
+  "duda de extraer ya contestada para el club (antes de su alta) (columna, \"Outros rendimentos\"): aceptar, en Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.pdf",
   "duda de extraer que no afecta la carga: L1583-L1584 aparecen en b25 y b26 con el mismo contenido; se cargaron solo desde b25."
  ],
  "reintentar": null,
