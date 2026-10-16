@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md",
+ "generado": "2026-10-16T20:28:57.907Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(montantes em euros)",
+ "caja": {
+  "lineas": [
+   535
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   546,
+   551
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los financiamientos obtenidos no corrientes (L546) podrían corresponder a préstamos del accionista y no a deuda bancaria. La línea corriente L551 solo tiene valor en jun 2022 y está vacía en jun 2023."
+}
