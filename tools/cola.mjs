@@ -134,9 +134,10 @@ export function casoYRespuesta(pdf, etapa, motivo, detalle = '') {
 // La respuesta a una duda POR TEMA de un club (Versión 341): busca en TODOS los documentos un caso con ese motivo y ese detalle
 // ("club|tema|renglón") que Guido ya contestó. Así una duda contestada para un año del club vale para todos sus años, aunque la IA la redacte
 // distinto (pasó tres veces con "¿se usa el cuadro por segmento para abrir 'Ingresos Comerciales'?" de UC 2018-2025).
+// El filtro recibe el caso y su respuesta (to-do 237 ad: cargar.mjs mira si la respuesta es un `aceptar`).
 export function respuestaPorDetalle(etapa, motivo, detalle, filtro = () => true) {
   const { casos, resp } = leer(); let mejor = null;
-  for (const c of casos.values()) if (c.etapa === etapa && c.motivo === motivo && c.detalle === detalle && filtro(c) && resp.has(c.id)) { const r = resp.get(c.id); if (!mejor || r.ts > mejor.resp.ts) mejor = { caso: c, resp: r }; }
+  for (const c of casos.values()) if (c.etapa === etapa && c.motivo === motivo && c.detalle === detalle && resp.has(c.id) && filtro(c, resp.get(c.id))) { const r = resp.get(c.id); if (!mejor || r.ts > mejor.resp.ts) mejor = { caso: c, resp: r }; }
   return mejor;
 }
 
@@ -273,9 +274,11 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     // `obsoleto` solo los pendientes de la MISMA carpeta y el MISMO detalle (etiqueta, o etiqueta|lado). La nota no se mira acá: si en un año
     // la fila está en otra nota, cargar.mjs no aplica la respuesta, vuelve a levantar el caso y agregarCaso() lo reabre. Medido en la cola: de
     // 264 grupos club+etiqueta con 2+ respuestas, 260 dieron la misma categoría. `no_es_rubro` vale solo para su documento: no cierra otros.
+    // (to-do 237 ad) Un `aceptar` cierra solo los casos con la MISMA categoriaPropuesta: aceptar la propuesta de un año no dice nada de otra
+    // propuesta en otro año (cargar.mjs tampoco la aplica allá). `corregir` nombra la categoría y cierra todos, como antes.
     if (casos.get(id).etapa === 'cargar' && casos.get(id).motivo === 'categoria' && (decision === 'aceptar' || (decision === 'corregir' && flag('--valor') !== 'no_es_rubro'))) {
       const o = casos.get(id); const carpeta = o.pdf.split('/').slice(0, -1).join('/'); let n = 0;
-      for (const c of casos.values()) if (c.id !== id && c.etapa === 'cargar' && c.motivo === 'categoria' && c.detalle === o.detalle && c.pdf.split('/').slice(0, -1).join('/') === carpeta && cerrarResueltoPorClub(c.pdf, c.etapa, c.motivo, c.detalle, o)) n++;
+      for (const c of casos.values()) if (c.id !== id && c.etapa === 'cargar' && c.motivo === 'categoria' && c.detalle === o.detalle && c.pdf.split('/').slice(0, -1).join('/') === carpeta && (decision !== 'aceptar' || c.categoriaPropuesta === o.categoriaPropuesta) && cerrarResueltoPorClub(c.pdf, c.etapa, c.motivo, c.detalle, o)) n++;
       if (n) console.log(`Cerré ${n} caso(s) de la misma etiqueta en otros años del club (cargar.mjs los reabre si en ese año la fila está en otra nota).`);
     }
     const c0 = casos.get(id); const v = decision === 'corregir' ? (/^s[ií]/i.test(flag('--valor')) ? true : /^no/i.test(flag('--valor')) ? false : undefined) : undefined;

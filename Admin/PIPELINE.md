@@ -419,7 +419,8 @@ Mitigaciones:
 
 ```
  ESCALÓN 0  ajuste manual · respuesta de la cola para esa fila, o la de otro documento del club con la misma etiqueta (si se sabe la
-            nota de las dos filas, tiene que ser la misma; Versiones 344 y 403) ──────── gana siempre, en cualquier fila
+            nota de las dos filas, tiene que ser la misma; Versiones 344 y 403; un `aceptar` de otro documento vale solo si allá la
+            propuesta era la misma que acá: si no, la fila va a la cola con su propuesta, to-do 237 ad) ──── gana siempre, en cualquier fila
  ETIQUETA REPETIDA (to-do 232 h y 234) la misma etiqueta (mismo lado) bajo dos o más renglones de categoría distinta del documento
             (PAOK "Αποσβέσεις" en fútbol y en administración; Olympiacos "Εισφορές" de jugadores y de otros empleados): el precedente sin
             contexto y la respuesta por etiqueta no deciden; solo el precedente del club con la misma nota, o la cola con la clave
@@ -639,7 +640,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
     vale para todos sus años, también si se contestó antes del alta (la clave lleva el id del sitio; to-do 153);
   - una de perfil (`corregir --valor sí|no`) se guarda en el perfil y cierra los casos iguales de los otros años (to-do 232 r);
   - una de categoría (aceptar o corregir, salvo `no_es_rubro`) cierra los casos pendientes del club con la misma etiqueta en otros años
-    (to-do 232 d), queda como precedente del club (`Admin/registros/categorias-aprendidas.jsonl`) y `cargar.mjs` la aplica en otro
+    (to-do 232 d; un `aceptar`, solo los que tienen la misma categoría propuesta, to-do 237 ad), queda como precedente del club (`Admin/registros/categorias-aprendidas.jsonl`) y `cargar.mjs` la aplica en otro
     documento solo si la fila está en la misma nota (si no, el caso se reabre);
   - sacar una fila (`no_es_rubro`) vale solo para su documento (to-do 205).
 - Cada caso es una **pregunta de sí o no**, con la propuesta del sistema, la página del visor y la impresa, y las líneas del .md.

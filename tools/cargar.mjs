@@ -498,7 +498,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   //     toman como precedente gratis (memoria-categorias.mjs).
   // `clave` (Versión 374): la etiqueta normalizada, o "etiqueta|lado" para la pregunta propia de una fila cuyo lado contradice la respuesta
   // que ya hay para la etiqueta (ver COMPUERTA DEL LADO abajo).
-  const respuestaCat = (label, clave = norm(label), padre = null, lado = null, { familia = false } = {}) => {
+  const respuestaCat = (label, clave = norm(label), padre = null, lado = null, { familia = false, propuesta = null } = {}) => {
     let { caso, resp } = casoYRespuesta(pdf, 'cargar', 'categoria', clave);
     // Si no hay respuesta para ESTE documento, vale la de otro documento del MISMO club con la misma etiqueta (Versión 344: "Otras ganancias
     // (pérdidas)" de UC llegaba a la cola una vez por año, 2010-2014). La carpeta del documento identifica al club.
@@ -506,7 +506,21 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // nota de alguna de las dos, como antes). Caso: "Serviços de terceiros", contestado para la fila de "Custo com futebol" (Goiás 2024-2025),
     // se aplicaba a 2008-2016, donde está en el bloque administrativo.
     const mismaNota = (c) => { if (!padre || !lado) return true; const otro = padreEnDoc(c.md || c.pdf.replace(/\.pdf$/i, '.md'), lado, label); return otro == null || mismoPadre(otro, padre); };
-    if (!resp) { const otra = respuestaPorDetalle('cargar', 'categoria', clave, (c) => dirname(c.pdf) === dirname(pdf) && mismaNota(c)); if (otra) ({ caso, resp } = otra); }
+    // (to-do 237 ad) UN `aceptar` DE OTRO DOCUMENTO VALE SOLO CON LA MISMA PROPUESTA. `aceptar` dice "la propuesta de ESE caso está bien", no
+    // "esta etiqueta va siempre ahí": si en este documento la fila tiene otra propuesta, la respuesta de allá no decide (sigue la escalera:
+    // su propia categoría o la cola con su pregunta). `corregir` nombra la categoría y vale como antes. Casos de daño silencioso: Fortaleza
+    // "auxilio de transporte", Goiás "servicos de terceiros", Avaí "viagens e hospedagens", Ferroviária "aluguel".
+    // Lo que deja de decidir NO baja a la categoría propia de la fila (eso sería decidir distinto, no menos): pide una segunda mirada. Si el
+    // `aceptar` salteado es lo único que había, la fila va a la cola con su propuesta y la nota de lo aceptado allá (`choque`), y no se
+    // prueban los escalones A y B. Un `aceptar` del OTRO lado no choca: lo resuelve la clave "etiqueta|lado" (COMPUERTA DEL LADO, abajo).
+    // Casos: Gil Vicente 2020-21 "Provisões (aumentos/reduções)" (aceptado other_amortisation en 2022-2024; acá la propuesta es
+    // admin_general_expense), Braga 2015-16 "Direitos de formação", Goiás 2014 "(-) Serviços de terceiros".
+    const choca = (c, x) => propuesta && x?.decision === 'aceptar' && c.categoriaPropuesta !== propuesta && !(lado && ladoDeCat(c.categoriaPropuesta) && ladoDeCat(c.categoriaPropuesta) !== lado);
+    if (!resp) {
+      const delClub = (c) => dirname(c.pdf) === dirname(pdf) && mismaNota(c);
+      const otra = respuestaPorDetalle('cargar', 'categoria', clave, (c, x) => delClub(c) && !choca(c, x)); if (otra) ({ caso, resp } = otra);
+      else { const ch = respuestaPorDetalle('cargar', 'categoria', clave, (c, x) => delClub(c) && choca(c, x)); if (ch) return { choque: ch.caso.categoriaPropuesta, choqueDe: ch.caso.pdf.split('/').pop() }; }
+    }
     // ESCALÓN A (to-do 152, ok de Guido): la respuesta de otro documento del MISMO club con una etiqueta de la MISMA FAMILIA (mismaFamilia() de
     // tools/vocabulario.mjs: sin la marca de lista "b)", "c)", "-", sin mayúsculas ni acentos). Hasta acá solo valía la etiqueta exacta y la
     // familia solo se usaba con los años ya CARGADOS. Caso: Atalanta 2024 "oneri sociali" volvió a preguntar lo contestado en 2021 como
@@ -627,13 +641,14 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       if (r.tside && ladoDeCat(ajCat.valor) !== r.tside) { f.signoFijo = f.signoFijo !== undefined ? -f.signoFijo : -Math.abs(f.native); f.ladoDoc = ladoDeCat(ajCat.valor); }
     }
     const claveBase = repetida(r) ? `${norm(r.label)}@${norm(padreDe(r.origen) || 'estado')}` : norm(r.label); // (to-do 232 h) una pregunta por renglón
-    let rg = (r.catAjuste || ajCat) ? null : respuestaCat(r.label, claveBase, padreDe(r.origen), r.tside, { familia: !aceptable(f) && !repetida(r) }); let claveCola = claveBase;
-    if (!ajCat && ((rg?.cat && r.tside && ladoDeCat(rg.cat) && ladoDeCat(rg.cat) !== r.tside) || (f.ladoRechazado && !rg))) { claveCola = `${claveBase}|${r.tside}`; rg = respuestaCat(r.label, claveCola, padreDe(r.origen), r.tside, { familia: !aceptable(f) }); }
+    let rg = (r.catAjuste || ajCat) ? null : respuestaCat(r.label, claveBase, padreDe(r.origen), r.tside, { familia: !aceptable(f) && !repetida(r), propuesta: f.cat }); let claveCola = claveBase;
+    if (!ajCat && ((rg?.cat && r.tside && ladoDeCat(rg.cat) && ladoDeCat(rg.cat) !== r.tside) || (f.ladoRechazado && !rg))) { claveCola = `${claveBase}|${r.tside}`; rg = respuestaCat(r.label, claveCola, padreDe(r.origen), r.tside, { familia: !aceptable(f), propuesta: f.cat }); }
     if (rg?.cat) {
       Object.assign(f, { cat: rg.cat, conf: 1, escalon: 0, fuenteCat: 'respuesta de Guido en la cola', enLista: true, notaGuido: rg.nota });
       const lado = ladoDeCat(rg.cat);
       if (lado && !aprendidasYa.includes(`"label":${JSON.stringify(r.label)},"padre":${JSON.stringify(padreDe(r.origen))},"glosa":null,"categoria":${JSON.stringify(rg.cat)},"confianza":1`)) appendFileSync(ARCHIVO_APRENDIDAS, JSON.stringify({ ts: new Date().toISOString(), club: clubId, year: year != null ? String(year) : null, lado, label: r.label, padre: padreDe(r.origen), glosa: null, categoria: rg.cat, confianza: 1, motivo: 'respuesta de Guido en la cola humana (cargar.mjs)', jevDecia: null, jevConf: null, modelo: 'guido', md: e.md }) + '\n');
     }
+    if (rg?.choque) Object.assign(f, { conf: 0, escalon: 2, choque: rg.choque, fuenteCat: `${f.fuenteCat}; en ${rg.choqueDe} se aceptó ${rg.choque} con otra propuesta: no decide, segunda mirada (to-do 237 ad)` });
     if (rg?.descartar) { f.destino = 'excluida'; f.fuenteCat = 'Guido la descartó en la cola'; return f; }
     const nl = norm(r.label);
     const verificadaConLado = String(r.origen || '').startsWith('verificacion') && !!r.tside;
@@ -654,7 +669,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       // a la cola (ver CATEGORÍA DUDOSA arriba); en las sumas cuenta con la categoría propuesta
       const nombre = NOMBRE_CAT[f.cat] || f.cat;
       f.casoCola = ({ pdf, md: e.md, etapa: 'cargar', motivo: 'categoria', detalle: claveCola, categoriaPropuesta: f.cat, pagina: r.page || null,
-        que: `¿"${r.label}" (${Math.abs(r.native)} en millones de la moneda del documento) va como "${nombre}"?  (por qué: la categorización le dio ${f.conf ?? '?'} de confianza, menos que el mínimo ${UMBRAL_CLAUDE})`,
+        que: `¿"${r.label}" (${Math.abs(r.native)} en millones de la moneda del documento) va como "${nombre}"?  (por qué: la categorización le dio ${f.conf ?? '?'} de confianza, menos que el mínimo ${UMBRAL_CLAUDE}${f.choque ? `; en otro año del club se aceptó como "${NOMBRE_CAT[f.choque] || f.choque}"` : ''})`,
         propuesta: `sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)` });
       enCola.push(f); f.enCola = true; f.destino = ladoDeCat(f.cat);
     }

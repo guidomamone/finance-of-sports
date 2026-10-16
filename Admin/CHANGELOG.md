@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 708 — to-do 237: las letras que faltan, una por commit (2026-10-16)
+
+- cargar.mjs y cola.mjs: un `aceptar` de otro año del club vale (y cierra casos) solo con la misma propuesta; si no, la fila va a la
+  cola con su propuesta y la nota de lo aceptado (ad). Medido: 12 filas de 11 años ya publicados pasan a la cola; ninguna cambia sola.
+
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)
 
 - Lotes 82 a 85: unos 40 años nuevos de Portugal (Gil Vicente, Portimonense, Vizela, Chaves, Marítimo 2021-2024, Académica, Felgueiras

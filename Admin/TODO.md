@@ -105,17 +105,13 @@ con los que no están en los pasos de arriba.
     Mejoras de script vistas en Grecia: to-do 232.
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
-    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707): aa, q (POC y q1/q2), k, w, am, l (vecino sin
+    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, aa, q (POC y q1/q2), k, w, am, l (vecino sin
     descartados), ah, af+s, ai+ak, z, g y la letra nueva an (verificar no reescribe el .rubros.json igual, glosar no vuelve a pagar). Pasaron a
     Admin/HALLAZGOS-pipeline.md: b, c, h, i, j, l (primera parte), m, p, u, x, ae, aj y Benfica 2014-15. Guido dejó al para después.
     Cómo medir cada letra: verificar -> node tools/medir-verificar.mjs --lista Admin/lotes/prueba-completa.txt --salida <x> --pasadas 2
     (antes con --script <copia de la versión vieja dentro de tools/>) y --comparar; cargar -> node tools/medir-cargar.mjs --salida <x>
     (paralelo, ~1,5 min) y --comparar, después git checkout -- Admin/registros/categorias-aprendidas.jsonl; auditoría -> node tools/audit.js.
     PENDIENTES, con el diseño que dejaron los diagnósticos (subagentes Sonnet; ok de Guido para codear todas salvo al), en este orden:
-    - ad (S-M): cola.mjs ~L269-271, el cierre en cadena de un `aceptar` solo cierra casos con la MISMA categoriaPropuesta; cargar.mjs ~L562,
-      un `aceptar` de otro documento solo decide si la fila de este tiene la misma propuesta. Daño silencioso hoy en ~12 grupos (Fortaleza
-      "auxilio de transporte", Goiás "servicos de terceiros", Avaí "viagens e hospedagens", Ferroviária "aluguel"). Medir: medir-cargar
-      (lo que cambia pasa a la cola; revisar uno por uno).
     - n (S-M): cargar.mjs ~L470 y ~L611: etiqueta genérica de lista cerrada (Outros/Outras/Otros/Others/Altri) con propuesta = la genérica
       de su lado (other_income/other_expenses) cuenta como aceptable sin cola. Backtest: 47 de 48 respuestas de Portugal coinciden. La rama
       `repetida` (etiqueta bajo dos notas) aparte, con la categoría del bloque.
