@@ -1,24 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Casa Pia/relatorio-contas-2023-24.pdf",
- "generado": "2026-10-15T22:34:39.799Z",
- "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (casapia-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "8 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Receitas TV, Premios de participação Com\" -> broadcasting 0.75; \"Serviços Scouting\" -> other_income 0.7; \"Correções relativas a exercícios anterio\" -> other_income 0; \"Acordo de gestão\" -> other_income 0.6; \"Alienações - ativos intangíveis\" -> player_sales 0.7"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-16T03:59:02.842Z",
+ "frena": [],
  "avisos": [
   "gastos: ningún total impreso igual a la suma de las líneas (-19.893415); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-06-30); pregunta en la cola (no frena)"
@@ -37,7 +20,7 @@
     "_pag": 25,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía no_es_rubro)"
    },
    {
     "rawLabel": "Bilheteira",
@@ -65,9 +48,9 @@
     "amountNative": 3.724854,
     "disclosureLevel": "aggregated",
     "_pag": 25,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Lucros jogos Online e Placard",
@@ -85,9 +68,9 @@
     "amountNative": 0.023836,
     "disclosureLevel": "aggregated",
     "_pag": 25,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Cedência direitos desportivos",
@@ -125,9 +108,9 @@
     "amountNative": 0.041171,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía exceptional_items)"
    },
    {
     "rawLabel": "Acordo de gestão",
@@ -135,9 +118,9 @@
     "amountNative": 11.006988,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Alienações - ativos intangíveis",
@@ -145,9 +128,9 @@
     "amountNative": 0.02,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros rendimentos",
@@ -237,9 +220,9 @@
     "amountNative": -0.184884,
     "disclosureLevel": "aggregated",
     "_pag": 26,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Energia e fluidos",
@@ -337,9 +320,9 @@
     "amountNative": -0.032914,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": 2,
-    "_conf": 0.35,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -407,9 +390,9 @@
     "amountNative": -8.800839,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros n/ aceites fiscalmente",
@@ -464,7 +447,7 @@
    "title": "Casa Pia — relatorio-contas-2023-24 (ejercicio 2024)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Casa Pia/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Casa Pia/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Casa Pia/relatorio-contas-2023-24.md",
@@ -500,10 +483,8 @@
    "cat": "sponsorship_commercial",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía no_es_rubro)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "precedente del país: 1 clubes (Moreirense), nota:vendas e servicos prestados · Claude 2026-10-15 (subagente Sonnet, seguridad media): venta de mercadería [relatorio-contas-2024-25.md L1009]",
    "destino": "revenue",
    "amountNative": 0.15338
   },
@@ -545,11 +526,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 3.724854,
    "cat": "broadcasting",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): como Casa Pia 2025 [relatorio-contas-2023-24.md L994]",
    "destino": "revenue",
    "amountNative": 3.724854
   },
@@ -576,11 +557,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 0.023836,
    "cat": "other_income",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Casa Pia 2024-25): filas de las notas de Outros rendimentos/gastos y personal.",
    "destino": "revenue",
    "amountNative": 0.023836
   },
@@ -638,12 +619,10 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.041171,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía exceptional_items)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "revenue",
    "amountNative": 0.041171
   },
@@ -655,11 +634,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 11.006988,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Casa Pia 2024-25): filas de las notas de Outros rendimentos/gastos y personal.",
    "destino": "revenue",
    "amountNative": 11.006988
   },
@@ -671,11 +650,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.02,
    "cat": "player_sales",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Casa Pia 2024-25): filas de las notas de Outros rendimentos/gastos y personal.",
    "destino": "revenue",
    "amountNative": 0.02
   },
@@ -807,11 +786,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.184884,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): nota FSE [relatorio-contas-2023-24.md L1033]",
    "destino": "expense",
    "amountNative": -0.184884
   },
@@ -961,11 +940,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.032914,
    "cat": "wages_squad",
-   "conf": 0.35,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Casa Pia 2024-25): filas de las notas de Outros rendimentos/gastos y personal.",
    "destino": "expense",
    "amountNative": -0.032914
   },
@@ -1068,12 +1047,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 8.800839,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Casa Pia 2024-25): filas de las notas de Outros rendimentos/gastos y personal.",
    "destino": "expense",
    "amountNative": -8.800839
   },
@@ -1214,8 +1192,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 4,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 13,
   "lineasGasto": 27,
   "metaFilas": 2,

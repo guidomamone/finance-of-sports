@@ -1,24 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Casa Pia/relatorio-contas-2021-22.pdf",
- "generado": "2026-10-15T22:34:39.423Z",
- "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (casapia-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "7 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Receitas TV, Premios de participação Com\" -> broadcasting 0.75; \"Serviços Scouting\" -> other_income 0.7; \"Materias\" -> admin_general_expense 0.6; \"Testes laboratoriais/COVID\" -> match_organisation_expense 0.45; \"Equipamentos\" -> wages_squad 0.35"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-16T03:59:02.634Z",
+ "frena": [],
  "avisos": [
   "gastos: ningún total impreso igual a la suma de las líneas (-4.84011); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-06-30); pregunta en la cola (no frena)"
@@ -55,9 +38,9 @@
     "amountNative": 0.584504,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Lucros jogos Online e Placard",
@@ -75,9 +58,9 @@
     "amountNative": 0.0432,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Cedência direitos desportivos",
@@ -177,9 +160,9 @@
     "amountNative": -0.027292,
     "disclosureLevel": "aggregated",
     "_pag": 24,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Energia e fluidos",
@@ -283,13 +266,13 @@
    },
    {
     "rawLabel": "Testes laboratoriais/COVID",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "wages_squad",
     "amountNative": -0.038197,
     "disclosureLevel": "aggregated",
     "_pag": 24,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Equipamentos",
@@ -297,9 +280,9 @@
     "amountNative": -0.084688,
     "disclosureLevel": "aggregated",
     "_pag": 24,
-    "_escalon": 2,
-    "_conf": 0.35,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -357,9 +340,9 @@
     "amountNative": -1.135215,
     "disclosureLevel": "aggregated",
     "_pag": 25,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos de financiamento",
@@ -367,9 +350,9 @@
     "amountNative": -0.005095,
     "disclosureLevel": "aggregated",
     "_pag": 25,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía no_es_rubro con 0.6 (fila verificada: no se excluye sola): se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros n/ aceites fiscalmente",
@@ -424,7 +407,7 @@
    "title": "Casa Pia — relatorio-contas-2021-22 (ejercicio 2022)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Casa Pia/relatorio-contas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Casa Pia/relatorio-contas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Casa Pia/relatorio-contas-2021-22.md",
@@ -488,11 +471,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 0.584504,
    "cat": "broadcasting",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): como Casa Pia 2025 cargado [relatorio-contas-2021-22.md L745]",
    "destino": "revenue",
    "amountNative": 0.584504
   },
@@ -519,11 +502,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 0.0432,
    "cat": "other_income",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Casa Pia 2024-25): filas de las notas de Outros rendimentos/gastos y personal.",
    "destino": "revenue",
    "amountNative": 0.0432
   },
@@ -670,11 +653,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.027292,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): nota 15.2 FSE [relatorio-contas-2021-22.md L992]",
    "destino": "expense",
    "amountNative": -0.027292
   },
@@ -839,12 +822,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.038197,
-   "cat": "match_organisation_expense",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): está en la nota 15.3 Gastos com o pessoal, como gastos médicos de atletas (Famalicão) y Equipamentos de la misma nota en Casa Pia 2025 [relatorio-contas-2021-22.md L1017]",
    "destino": "expense",
    "amountNative": -0.038197
   },
@@ -856,11 +839,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.084688,
    "cat": "wages_squad",
-   "conf": 0.35,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Casa Pia 2024-25): filas de las notas de Outros rendimentos/gastos y personal.",
    "destino": "expense",
    "amountNative": -0.084688
   },
@@ -948,11 +931,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 1.135215,
    "cat": "other_expenses",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Casa Pia 2024-25): filas de las notas de Outros rendimentos/gastos y personal.",
    "destino": "expense",
    "amountNative": -1.135215
   },
@@ -964,12 +947,12 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.005095,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía no_es_rubro con 0.6 (fila verificada: no se excluye sola): se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): fila de la nota 15.4 Outros gastos, incluida en su total 1.251.920; el estado cierra así [relatorio-contas-2021-22.md L1045, L366]",
    "destino": "expense",
    "amountNative": -0.005095
   },
@@ -1108,8 +1091,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 4,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 8,
   "lineasGasto": 28,
   "metaFilas": 2,
