@@ -22,7 +22,7 @@ ni en el comentario de ningún archivo de código.
 ## Qué hay que hacer
 
 ORDEN (pedido de Guido, 2026-10-15), en este orden y sin saltear:
-1. Terminar de cargar Portugal (165 b0: confirmar altas, lote 77 y los que sigan hasta que no quede nada de Portugal por cargar).
+1. Terminar de cargar Portugal (165 b0: la cola del lote 82 y una vuelta más; lo demás espera scripts).
 2. Mejoras de script: 237 y los cambios sin commitear de 165 b2 (`lote.mjs`, `fetch-club-league-reference.mjs`), medidos antes de
    commitear.
 3. 238 (llevar a 0 los estados intermedios), que incluye Estonia y Bélgica (165 b1: ya transcriptas, falta validarlas y cargarlas).
@@ -43,20 +43,18 @@ llegue acá.
        datos de los clubes del lote 71 al cerrar Grecia; después, con las columnas por perímetro y Jev en caja-deuda.mjs, se sumaron
        Olympiacos (caja 2016-2025), AEK 2025 (caja), PAOK 2021 y Panetolikos 2022 (deuda). Conocido, sin tocar (histórico): Panathinaikos 2025 tiene
        "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου" como competition_bonus; en AEK 2023 y 2025 va como other_income.
-    b0) PORTUGAL, EN CURSO. En el sitio, del lote 76 (archivado): Alverca 2022-2025, Famalicão 2022, Moreirense 2022-2025, Nacional
-       2024, Rio Ave 2016-2020 y 2022-2025, Tondela 2021 y Vitória Guimarães 2021, 2022, 2024 y 2025. Qué entidad se carga cuando el
-       fútbol está en una SAD: regla en Admin/CONVENCIONES-DATOS.md. Transcripción del resto (etapa 2):
-       hecha y commiteada (todos en "transcripción validada, sin localizar"; los que no sirven ya están en documentos-descartados).
-       Falta: el lote siguiente con solo los documentos que traen estado de resultados. Altas: borradores de 27 clubes (nombre legal,
-       cierres, color, liga por temporada) en Admin/registros/altas-borrador-portugal.jsonl: confirmar el nombre contra cada .md, elegir los
-       colores marcados "PREGUNTA" o aproximados (Torreense, Oliveirense, Felgueiras, Braga, Santa Clara, Estoril, Marítimo, Casa Pia, Chaves,
-       Paços, Arouca) y pasarlos a altas-revision.jsonl. Estrela da Amadora 2023-24 es semestral (a documentos-parciales); Gil Vicente 2024-25
-       tiene SDUQ individual y consolidado del club (se carga la SDUQ); Porto 2016-2023 son consolidados del club con la SAD (se cargan). A tener en cuenta al armarlo: Boavista 2023-24
-       viene partido en 3 PDFs (RCSAD-23-24_1-3/2-3/3-3); Sporting 1999 y 2000 están en escudos, con páginas rotadas, y el nombre del
-       archivo va un año antes del ejercicio (cierres 31/07/2000 y 31/07/2001); Sporting 2003-04 es de 11 meses (cambio de cierre) y se
-       carga igual (Guido); Chaves 2023-24 trae dos versiones del club; Chaves 2023-25, União de Leiria 2024-25 y Feirense solo tienen el
-       documento del club: aplicar el punto 3 de la regla (si el propio documento dice que el fútbol está en una SAD que no consolida, no
-       se carga). Sin documento: Benfica 2010-11, Porto SAD 2019-20, Braga SAD 2017-18 a 2018-19 y 2020-21, AVS 2021-22.
+    b0) PORTUGAL, EN CURSO (al 2026-10-16). Qué hay en el sitio: Admin/ESTADO-clubes.md (lotes 76 y 79-82; los 32 clubes con documento
+       tienen al menos un año, salvo AVS, cuyo primer año sigue en la cola). Falta, en este orden:
+       - La cola que dejó el lote 82 (unos 20 documentos: categorías y algún "no cierra"), contestar con subagentes (archivo de criterio
+         común en el scratchpad de la sesión: rehacerlo desde las respuestas firmadas de Portugal) y volver a correr Admin/lotes/lote-82.txt.
+       - Los otros años de AVS y Casa Pia (esperaban su primer año: Casa Pia 2025 ya entró; AVS 2024 sigue frenado).
+       - Felgueiras 2021-22: frena por "ingresos implausibles" (0,15 M USD; club chico real, mismo caso que Alverca: to-do 237 e).
+       - Esperan una mejora de script: Sporting 1999-2010 y Benfica 2005-06, 2006-07 y 2014-15 (237 q, subtotales), Sporting 2008, 2018
+         y 2021 (237 aa, redondeos), Benfica 2007-08 (237 ab, 11 meses). Lista: Admin/lotes/lote-80.txt.
+       - Gil Vicente: 2024 se cargó (o se carga) con el consolidado de la Associação (único documento del año) y el resto con la SDUQ.
+       Reglas que salieron de Portugal (en CONVENCIONES-DATOS o en las respuestas de la cola): qué entidad se carga cuando el fútbol está
+       en una SAD; "Outros" toma la categoría del bloque; cuadros de inventario y de bruto a neto afuera; palcos y cativos a stadium_other;
+       ejercicio de 11 meses por cambio de cierre se carga.
     b1) ESTONIA Y BÉLGICA POR SUBAGENTES (decisión de Guido, 2026-10-15: usar el límite semanal de la suscripción en vez de API para
        transcribir países 100% digitales). Estonia: los 66 .md hechos (commit "Estonia: 66 transcripciones"). Falta: (1) correr
        `pipeline.mjs --lista` sobre los PDFs de Estonia (solo hace la validación gratis, ya tienen .md) y después el lote; (2) Bélgica: los

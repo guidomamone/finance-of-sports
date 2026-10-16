@@ -15,6 +15,20 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 706 — Portugal: lotes 79 a 82 (más de 75 años cargados, 26 clubes nuevos); lote.mjs saltea lo cargado; perfil de SAD (2026-10-16)
+
+- Lote 79: Sporting, Porto, Braga, Benfica, Boavista y Santa Clara con su primer año. Lote 80: 46 años más de esos clubes. Lote 81:
+  Famalicão 2019-2025, Nacional 2023, Estrela 2022 y altas de 16 clubes (Belenenses, Estoril, Vizela, Académico Viseu, Académica,
+  Arouca, Chaves, Felgueiras, Gil Vicente, Leixões, Marítimo, Oliveirense, Paços, Portimonense, Torreense, União de Leiria).
+  Lote 82: el resto de los años de esos clubes (ver ESTADO-clubes). La cola la contestaron subagentes Sonnet con revisión de las
+  correcciones grandes; .md corregidos donde el escaneo leyó mal (Santa Clara 2024-25, AVS 2023-24, Casa Pia 2024-25, Paços 2019-20).
+- lote.mjs: un documento cuyo año ya está en el sitio no pasa por verificar, categorizar ni la propuesta de carga (to-do 237 ag);
+  tabla final "ETAPA · #". cargar.mjs: en Portugal, SAD/SDUQ en la portada = cuotas y otras secciones en 0 reales en ese documento,
+  sin tocar el perfil del club (237 y; medido: 7 de 677 documentos cambian, solo pierden la pregunta de perfil).
+- Regla (CONVENCIONES-DATOS): el ejercicio de 11 meses por cambio de cierre se carga (decisión de Guido); falta el escalón 237 ab.
+- TODO 237: letras t a al (mejoras vistas en los lotes 79-82); 237 af con el contexto para encontrar la causa (arreglo directo
+  revertido por riesgo).
+
 ## Versión 705 — Portugal transcripto y lote 77; Bélgica, Suiza y Beşiktaş transcriptos por subagentes (2026-10-15)
 
 - Portugal: 159 transcripciones (etapa 2) validadas; 26 altas confirmadas contra los .md por subagentes Sonnet (nombre legal, color) en

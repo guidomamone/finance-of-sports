@@ -90,7 +90,14 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   las puede cotejar y se aceptan si sus totales coinciden con el balance.
 - Un club nuevo entra al lote con un solo ejercicio; el resto de sus años, después del alta y de contestar su cola (skill
   `club-or-year-onboarding`), para que las respuestas del primero sirvan de precedente. Las respuestas grandes de la cola que todavía
-  no se aplicaron quedan en `Admin/registros/cola-borradores/`.
+  no se aplicaron quedan en `Admin/registros/cola-borradores/`. Antes de correr un lote cuyos documentos ya arrastran casos, conviene
+  contestarlos primero (subagentes por grupos de clubes, con un archivo de criterio común) y re-verificar a mano con
+  `node tools/verificar.mjs --lista <lista> --rubros` (gratis): el lote no re-verifica solo un documento con respuestas nuevas (to-do 237 af).
+- `lote.mjs` saltea desde la etapa 3 los documentos cuyo año ya está en el sitio (salvo `--reintentar`): volver a correr una lista
+  trabaja solo sobre lo que falta. En Portugal, si la portada dice SAD o SDUQ, cuotas y otras secciones en 0 son reales en ese
+  documento y no se pregunta (`cargar.mjs`); el perfil del club no se toca (Porto publica años del club y de la SAD).
+- Para enterarse de que terminó un lote sin mirar la terminal: el comando lleva al final
+  `; osascript -e 'display notification "Terminó el lote" with title "finance-of-sports" sound name "Glass"'; say "lote terminado"`.
 - El plan para Guido (solo lo pendiente, corto) vive en el panel Plan de la app; el detalle, en `Admin/TODO.md`.
 - Club asociación o sociedad (SAD/SDUQ): se elige entidad solo cuando hay dos documentos del mismo ejercicio; el de la otra va a
   `documentos-descartados.txt`, y entonces `alta-club.mjs` y el lote dejan de verlo. Un documento único del club que no trae el fútbol (la
