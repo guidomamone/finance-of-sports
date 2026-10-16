@@ -408,4 +408,12 @@ window.RANKINGS["pt-primeiraliga"] = {
         mix:[["Cuotas Sociales",11.629],["Comercial / Sponsors",17.014],["Estadio",12.066],["Televisión",14.238],["Premios por competencias",1.227],["Venta de Jugadores",11.623],["Otros ingresos",6.197]] },
     ],
   },
+  2007: {
+    leagueSize: null,
+    clubs: [
+      { id:"benfica-pt", revenue:113.96, reportType:"official_balance_sheet",
+        sourceId:"benfica-pt-relatorio-contas-2006-07",
+        mix:[["Cuotas Sociales",11.415],["Comercial / Sponsors",15.12],["Estadio",17.33],["Televisión",12.617],["Premios por competencias",0.316],["Venta de Jugadores",1.166],["Otros ingresos",55.995]] },
+    ],
+  },
 };

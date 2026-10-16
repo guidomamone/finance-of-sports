@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
- "generado": "2026-10-16T04:18:53.558Z",
+ "generado": "2026-10-16T17:18:58.992Z",
  "frena": [
   {
    "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Prestações de serviços\" -> lump_football_operations 0.5; \"Remunerações\" -> wages_squad 0.75; \"Ajustamentos\" -> other_amortisation 0.55"
+   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Cessão de exploração do estádio – quotas\" -> member_dues 0.6; \"Cedência de atletas\" -> player_sales 0.75"
   }
  ],
  "avisos": [
@@ -19,16 +19,6 @@
   "cierre": "2006-06-30",
   "perimetro": "consolidado",
   "revenueLines": [
-   {
-    "rawLabel": "Prestações de serviços",
-    "normalizedCategory": "lump_football_operations",
-    "amountNative": 38.644161,
-    "disclosureLevel": "aggregated",
-    "_pag": 20,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
-   },
    {
     "rawLabel": "Proveitos suplementares",
     "normalizedCategory": "other_income",
@@ -68,6 +58,96 @@
     "_escalon": 1,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Receitas de jogos",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 11.687937,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Transmissões televisivas",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 7.625,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Patrocínios",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 8.13284,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cessão de exploração do estádio – quotas sócios",
+    "normalizedCategory": "member_dues",
+    "amountNative": 6.542049,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cativos",
+    "normalizedCategory": "season_tickets",
+    "amountNative": 2.482822,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cedência de atletas",
+    "normalizedCategory": "player_sales",
+    "amountNative": 1.471521,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Receitas competições FPF",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.349321,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cachet's",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.25,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 2,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outras",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.102671,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
    }
   ],
   "expenseLines": [
@@ -87,9 +167,9 @@
     "amountNative": -27.497682,
     "disclosureLevel": "aggregated",
     "_pag": 20,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -117,9 +197,9 @@
     "amountNative": -0.104379,
     "disclosureLevel": "aggregated",
     "_pag": 20,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Provisões",
@@ -186,14 +266,6 @@
      "value": -0.026196
     }
    ],
-   "sinDesglose": [
-    {
-     "renglon": "Prestações de serviços",
-     "lado": "revenue",
-     "importe": 38.644161,
-     "motivo": "el documento no desglosa este renglón"
-    }
-   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 63.443122,
@@ -244,30 +316,131 @@
    "evidencia": ".md L14, L204",
    "autor": "Claude",
    "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "11.687.937",
+   "linea": 1163,
+   "etiqueta": "Receitas de jogos",
+   "lado": "ingreso",
+   "reemplaza": "Prestações de serviços",
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "7.625.000",
+   "linea": 344,
+   "etiqueta": "Transmissões televisivas",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "8.132.840",
+   "linea": 1165,
+   "etiqueta": "Patrocínios",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "6.542.049",
+   "linea": 1166,
+   "etiqueta": "Cessão de exploração do estádio – quotas sócios",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "2.482.822",
+   "linea": 340,
+   "etiqueta": "Cativos",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "1.471.521",
+   "linea": 1168,
+   "etiqueta": "Cedência de atletas",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "349.321",
+   "linea": 347,
+   "etiqueta": "Receitas competições FPF",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "250.000",
+   "linea": 1170,
+   "etiqueta": "Cachet's",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "fila",
+   "valor": "102.671",
+   "linea": 1171,
+   "etiqueta": "Outras",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)",
+   "evidencia": "relatorio-contas-2005-06.md L1156-1172 (nota 44)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "seleccion": {
-  "filas": 17,
+  "filas": 25,
   "notasUsadas": [],
   "refM": null
  },
  "filas": [
-  {
-   "label": "Prestações de serviços",
-   "page": 20,
-   "native": 38.644161,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 38.644161,
-   "cat": "lump_football_operations",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "enCola": true,
-   "destino": "revenue",
-   "amountNative": 38.644161
-  },
   {
    "label": "Proveitos suplementares",
    "page": 20,
@@ -329,6 +502,143 @@
    "amountNative": 11.442643
   },
   {
+   "label": "Receitas de jogos",
+   "page": 30,
+   "native": 11.687937,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 11.687937,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 11.687937
+  },
+  {
+   "label": "Transmissões televisivas",
+   "page": 11,
+   "native": 7.625,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 7.625,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.625
+  },
+  {
+   "label": "Patrocínios",
+   "page": 30,
+   "native": 8.13284,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 8.13284,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 8.13284
+  },
+  {
+   "label": "Cessão de exploração do estádio – quotas sócios",
+   "page": 30,
+   "native": 6.542049,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 6.542049,
+   "cat": "member_dues",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 6.542049
+  },
+  {
+   "label": "Cativos",
+   "page": 11,
+   "native": 2.482822,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 2.482822,
+   "cat": "season_tickets",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.482822
+  },
+  {
+   "label": "Cedência de atletas",
+   "page": 30,
+   "native": 1.471521,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1.471521,
+   "cat": "player_sales",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 1.471521
+  },
+  {
+   "label": "Receitas competições FPF",
+   "page": 11,
+   "native": 0.349321,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.349321,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.349321
+  },
+  {
+   "label": "Cachet's",
+   "page": 30,
+   "native": 0.25,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.25,
+   "cat": "other_income",
+   "conf": 0.92,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.25
+  },
+  {
+   "label": "Outras",
+   "page": 30,
+   "native": 0.102671,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.102671,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.102671
+  },
+  {
    "label": "Fornecimentos e serviços externos",
    "page": 20,
    "native": 12.477445,
@@ -351,11 +661,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 27.497682,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet, revisado): la nota de personal no separa plantel; los años posteriores de Benfica cargan la remuneración en wages_squad [relatorio-contas-2005-06.md L424, L931]",
    "destino": "expense",
    "amountNative": -27.497682
   },
@@ -397,11 +707,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.104379,
    "cat": "other_amortisation",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet, revisado): ajustes de deudas a cobrar, en el bloque de amortizaciones y provisiones del estado; como Sporting 2012 [relatorio-contas-2005-06.md L715, L896]",
    "destino": "expense",
    "amountNative": -0.104379
   },
@@ -506,6 +816,7 @@
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos con signo",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
@@ -588,7 +899,7 @@
  "resumen": {
   "carga": false,
   "motivos": 1,
-  "lineasIngreso": 5,
+  "lineasIngreso": 13,
   "lineasGasto": 9,
   "metaFilas": 3,
   "excluidas": 0

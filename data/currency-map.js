@@ -180,6 +180,7 @@ const FX_CLOSE = {
   'RUB@2023-12-31': { fx: 89.6883, source: 'market_close', label: 'Tipo oficial del Banco de Rusia, última rueda hábil antes del cierre (2023-12-30, 2023-12-31 no es día hábil)' },
   'RUB@2024-12-31': { fx: 101.6797, source: 'market_close', label: 'Tipo oficial del Banco de Rusia, última rueda hábil antes del cierre (2024-12-29, 2024-12-31 no es día hábil)' },
   'RUB@2025-12-31': { fx: 78.2267, source: 'market_close', label: 'Tipo oficial del Banco de Rusia al 2025-12-31' },
+  'EUR@2007-07-31': { fx: 0.729554, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2007-07-31' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve

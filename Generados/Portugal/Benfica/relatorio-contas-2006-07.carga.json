@@ -1,16 +1,12 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.pdf",
- "generado": "2026-10-16T04:18:53.924Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Correcções relativas a exercícios anteri\" -> other_income 0; \"Remunerações\" -> wages_squad 0.75; \"Ajustamentos\" -> other_amortisation 0.55; \"Perdas em imobilizações\" -> other_expenses 0.6"
-  }
- ],
+ "generado": "2026-10-16T17:18:59.367Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS))",
   "el documento cierra 2007-07-31 (ejercicio desde el 08-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?",
-  "gastos: ningún total impreso igual a la suma de las líneas (-60.29081); queda la suma, verificada por el resultado del ejercicio",
+  "ingresos: ningún total impreso igual a la suma de las líneas (83.13975); queda la suma, verificada por el resultado del ejercicio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-58.299647); queda la suma, verificada por el resultado del ejercicio",
   "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo",
   "gestión: ningún presidente confirmado cubre 2007 (cierre 2007-07-31); pregunta en la cola (no frena)"
  ],
@@ -161,16 +157,6 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Correcções relativas a exercícios anteriores",
-    "normalizedCategory": "other_income",
-    "amountNative": 0.145772,
-    "disclosureLevel": "aggregated",
-    "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado"
-   },
-   {
     "rawLabel": "Outros proveitos e ganhos extraordinários",
     "normalizedCategory": "other_income",
     "amountNative": 2.11739,
@@ -182,6 +168,16 @@
    }
   ],
   "expenseLines": [
+   {
+    "rawLabel": "Correcções relativas a exercícios anteriores",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": 0.145772,
+    "disclosureLevel": "aggregated",
+    "_pag": 39,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Claude 2026-10-16 (lote 84): corrección de ejercicios anteriores del lado ingreso, ingreso extraordinario: exceptional_items (CONVENCIONES-DATOS), como Nacional 2024-25. Ajuste categoria para mudarla sin cambiarle el signo (to-do 237 f)"
+   },
    {
     "rawLabel": "Fornecimentos e serviços externos",
     "normalizedCategory": "admin_general_expense",
@@ -198,9 +194,9 @@
     "amountNative": -22.936223,
     "disclosureLevel": "aggregated",
     "_pag": 30,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -228,9 +224,9 @@
     "amountNative": -0.25,
     "disclosureLevel": "aggregated",
     "_pag": 30,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Provisões",
@@ -264,13 +260,13 @@
    },
    {
     "rawLabel": "Perdas em imobilizações",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "exceptional_items",
     "amountNative": -1.991163,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Multas e penalidades",
@@ -288,9 +284,9 @@
     "amountNative": -0.443064,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Claude 2026-10-16 (lote 84): corrección de ejercicios anteriores del lado ingreso, ingreso extraordinario: exceptional_items (CONVENCIONES-DATOS), como Nacional 2024-25. Ajuste categoria para mudarla sin cambiarle el signo (to-do 237 f)"
    },
    {
     "rawLabel": "Outros custos e perdas extraordinários",
@@ -329,8 +325,8 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 83.285522,
-   "officialTotalExpenses": 60.29081,
+   "officialTotalRevenue": 83.13975,
+   "officialTotalExpenses": 58.299647,
    "officialPAT": 15.274429
   },
   "source": {
@@ -374,6 +370,17 @@
    "evidencia": "relatorio-contas-2006-07.md: sin estados consolidados; relatorio-contas-2023-24.md L1319",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.pdf",
+   "campo": "categoria",
+   "valor": "exceptional_items",
+   "linea": null,
+   "etiqueta": "Correcções relativas a exercícios anteriores",
+   "motivo": "Claude 2026-10-16 (lote 84): corrección de ejercicios anteriores del lado ingreso, ingreso extraordinario: exceptional_items (CONVENCIONES-DATOS), como Nacional 2024-25. Ajuste categoria para mudarla sin cambiarle el signo (to-do 237 f)",
+   "evidencia": "relatorio-contas-2006-07.md L1379",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "seleccion": {
@@ -597,17 +604,16 @@
    "label": "Correcções relativas a exercícios anteriores",
    "page": 39,
    "native": 0.145772,
-   "ladoDoc": "revenue",
+   "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Proveitos e ganhos extraordinários\")",
-   "signoFijo": 0.145772,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado",
+   "signoFijo": -0.145772,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Claude 2026-10-16 (lote 84): corrección de ejercicios anteriores del lado ingreso, ingreso extraordinario: exceptional_items (CONVENCIONES-DATOS), como Nacional 2024-25. Ajuste categoria para mudarla sin cambiarle el signo (to-do 237 f)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
-   "destino": "revenue",
+   "ladoRechazado": false,
+   "destino": "expense",
    "amountNative": 0.145772
   },
   {
@@ -648,11 +654,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 22.936223,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet, revisado): como 2005-06 [relatorio-contas-2006-07.md L904]",
    "destino": "expense",
    "amountNative": -22.936223
   },
@@ -694,11 +700,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.25,
    "cat": "other_amortisation",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet, revisado): como 2005-06 [relatorio-contas-2006-07.md L909, L1084]",
    "destino": "expense",
    "amountNative": -0.25
   },
@@ -754,12 +760,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Custos e perdas extraordinários\")",
    "signoFijo": 1.991163,
-   "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet, revisado): bajas de derechos de jugadores (1,991 M), como las pérdidas por alienaciones de atletas de Benfica [relatorio-contas-2006-07.md L563, L1370]",
    "destino": "expense",
    "amountNative": -1.991163
   },
@@ -787,9 +793,10 @@
    "signoFijo": 0.443064,
    "cat": "exceptional_items",
    "conf": 1,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Claude 2026-10-16 (lote 84): corrección de ejercicios anteriores del lado ingreso, ingreso extraordinario: exceptional_items (CONVENCIONES-DATOS), como Nacional 2024-25. Ajuste categoria para mudarla sin cambiarle el signo (to-do 237 f)",
    "enLista": true,
+   "ladoRechazado": false,
    "destino": "expense",
    "amountNative": -0.443064
   },
@@ -850,21 +857,21 @@
   "porTabla": {
    "verificacion (nota que desglosa \"Prestações de serviços\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
-   "verificacion (nota que desglosa \"Proveitos e ganhos extraordinários\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Proveitos e ganhos extraordinários\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Custos e perdas extraordinários\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 83.285522,
-  "expSum": -60.29081,
-  "officialTotalRevenue": 83.285522,
-  "officialTotalExpenses": 60.29081,
+  "revSum": 83.13975,
+  "expSum": -58.299647,
+  "officialTotalRevenue": 83.13975,
+  "officialTotalExpenses": 58.299647,
   "officialPAT": 15.274429,
   "verificacion": {
    "pat": "impreso",
-   "ingresos": "impreso",
+   "ingresos": "por-resultado",
    "gastos": "por-resultado"
   },
   "patImpreso": {
@@ -872,11 +879,6 @@
    "pag": null,
    "M": 15.274429,
    "signos": "signos de la verificación; financiero/impuesto como su tabla"
-  },
-  "revImpreso": {
-   "label": "total de ingresos (verificado)",
-   "pag": null,
-   "M": 83.285522
   }
  },
  "fxCloseNuevo": {
@@ -938,10 +940,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
-  "lineasIngreso": 16,
-  "lineasGasto": 12,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 15,
+  "lineasGasto": 13,
   "metaFilas": 3,
   "excluidas": 0
  }

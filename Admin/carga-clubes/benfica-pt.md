@@ -1479,6 +1479,66 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2008–09 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
 ```
 
+## 2007
+
+### Ingresos
+
+```text
+2007: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Benfica/relatorio-contas-2006-07.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Benfica/relatorio-contas-2006-07.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Publicidade e patrocínios | pág. 38, precedente |
+| 2 | Receitas de bilheteira | pág. 38, precedente |
+| 3 | Transmissões televisivas | pág. 38, precedente |
+| 4 | Quotizações | pág. 38, precedente |
+| 5 | Cativos | pág. 38, precedente |
+| 6 | Cachet's | pág. 38, Claude 0.93 |
+| 7 | Cedência de atletas | pág. 38, precedente |
+| 8 | Receitas competições FPF | pág. 38, Jev 1 |
+| 9 | Outras | pág. 38, Jev 1 |
+| 10 | Proveitos suplementares | pág. 30, Jev 1 |
+| 11 | Subsídios à exploração | pág. 30, Jev 0.97 |
+| 12 | Outros proveitos e ganhos operacionais | pág. 30, Jev 1 |
+| 13 | Ganhos em imobilizações | pág. 39, Jev 0.99 |
+| 14 | Benefícios de penalidades contratuais | pág. 39, precedente |
+| 15 | Outros proveitos e ganhos extraordinários | pág. 39, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Correcções relativas a exercícios anteriores | pág. 39, precedente |
+| 2 | Fornecimentos e serviços externos | pág. 30, Jev 0.98 |
+| 3 | Remunerações | pág. 30, precedente |
+| 4 | Outros | pág. 30, Jev 0.98 |
+| 5 | Amortizações do imobilizado corpóreo e incorpóreo | pág. 30, Jev 0.98 |
+| 6 | Ajustamentos | pág. 30, precedente |
+| 7 | Provisões | pág. 30, Claude 0.85 |
+| 8 | Impostos | pág. 30, Jev 0.96 |
+| 9 | Outros custos e perdas operacionais | pág. 30, Jev 1 |
+| 10 | Perdas em imobilizações | pág. 39, precedente |
+| 11 | Multas e penalidades | pág. 39, Claude 0.8 |
+| 12 | Correcções relativas a exercícios anteriores | pág. 39, precedente |
+| 13 | Outros custos e perdas extraordinários | pág. 39, Claude 0.8 |
+
+### Meta
+
+```text
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2007-07-31. periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): perimetro = individual. regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS)
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): categoria = exceptional_items. Claude 2026-10-16 (lote 84): corrección de ejercicios anteriores del lado ingreso, ingreso extraordinario: exceptional_items (CONVENCIONES-DATOS), como Nacional 2024-25. Ajuste categoria para mudarla sin cambiarle el signo (to-do 237 f)
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2007–08 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
+```
+
 ## Fuentes
 
 ### benfica-pt-relatorio-contas-2018-19
@@ -1607,4 +1667,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2019-20-pos-AG.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### benfica-pt-relatorio-contas-2006-07
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2006-07.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

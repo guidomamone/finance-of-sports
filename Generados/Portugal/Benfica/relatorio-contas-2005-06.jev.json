@@ -1,8 +1,17 @@
 {
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.md",
- "generatedAt": "2026-10-16T04:18:33.560Z",
- "rubrosHuella": "fc5ed71bb0e8d6e27c86b63e487512e7fc7c073f",
+ "generatedAt": "2026-10-16T17:18:50.195Z",
+ "rubrosHuella": "62e7d7c2ff921c223c42826c98bbbfded4c919f8",
  "rubros": [
+  {
+   "label": "Proveitos suplementares",
+   "lado": "revenue",
+   "page": 20,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
   {
    "label": "Subsídios à exploração",
    "lado": "revenue",
@@ -13,50 +22,121 @@
    "desdeCache": true
   },
   {
-   "label": "Prestações de serviços",
-   "lado": "revenue",
-   "page": 20,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 0.81,
-   "top3": [
-    [
-     "other_income",
-     0.8200000000000001
-    ],
-    [
-     "lump_football_operations",
-     0.18
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1037
-  },
-  {
-   "label": "Proveitos suplementares",
+   "label": "Outros proveitos e ganhos operacionais",
    "lado": "revenue",
    "page": 20,
    "section": "estado",
    "choice": "other_income",
    "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1064
+   "desdeCache": true
+  },
+  {
+   "label": "Proveitos e ganhos extraordinários",
+   "lado": "revenue",
+   "page": 20,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Transmissões televisivas",
+   "lado": "revenue",
+   "page": 11,
+   "section": "ajuste manual",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Cativos",
+   "lado": "revenue",
+   "page": 11,
+   "section": "ajuste manual",
+   "choice": "season_tickets",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Cedência de atletas",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas competições FPF",
+   "lado": "revenue",
+   "page": 11,
+   "section": "ajuste manual",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Cachet's",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Remunerações",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizações do imobilizado corpóreo e incorpóreo",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Ajustamentos",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.4,
+   "desdeCache": true
   },
   {
    "label": "Provisões",
@@ -86,188 +166,82 @@
    "desdeCache": true
   },
   {
-   "label": "Fornecimentos e serviços externos",
-   "lado": "expense",
-   "page": 20,
-   "section": "estado",
-   "choice": "admin_general_expense",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.98
-    ],
-    [
-     "other_expenses",
-     0.02
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1009
-  },
-  {
-   "label": "Proveitos e ganhos extraordinários",
-   "lado": "revenue",
-   "page": 20,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1033
-  },
-  {
-   "label": "Outros",
-   "lado": "expense",
-   "page": 20,
-   "section": "estado",
-   "choice": "other_expenses",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "other_expenses",
-     0.98
-    ],
-    [
-     "admin_general_expense",
-     0.02
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 985
-  },
-  {
-   "label": "Outros proveitos e ganhos operacionais",
-   "lado": "revenue",
-   "page": 20,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1050
-  },
-  {
-   "label": "Remunerações",
-   "lado": "expense",
-   "page": 20,
-   "section": "estado",
-   "choice": "wages_squad",
-   "confidence": 0.84,
-   "top3": [
-    [
-     "wages_squad",
-     0.85
-    ],
-    [
-     "admin_general_expense",
-     0.07
-    ],
-    [
-     "other_expenses",
-     0.05
-    ]
-   ],
-   "tokens": 1010
-  },
-  {
-   "label": "Amortizações do imobilizado corpóreo e incorpóreo",
-   "lado": "expense",
-   "page": 20,
-   "section": "estado",
-   "choice": "depreciation",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "depreciation",
-     0.98
-    ],
-    [
-     "other_amortisation",
-     0.02
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1098
-  },
-  {
-   "label": "Ajustamentos",
-   "lado": "expense",
-   "page": 20,
-   "section": "estado",
-   "choice": "exceptional_items",
-   "confidence": 0.4,
-   "top3": [
-    [
-     "exceptional_items",
-     0.45
-    ],
-    [
-     "other_expenses",
-     0.37
-    ],
-    [
-     "other_amortisation",
-     0.18
-    ]
-   ],
-   "tokens": 919
-  },
-  {
    "label": "Custos e perdas extraordinários",
    "lado": "expense",
    "page": 20,
    "section": "estado",
    "choice": "exceptional_items",
    "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas de jogos",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "choice": "matchday_competition",
+   "confidence": 1,
    "top3": [
     [
-     "exceptional_items",
-     0.95
+     "matchday_competition",
+     1
     ],
     [
-     "other_expenses",
-     0.05
+     "member_dues",
+     0
     ],
     [
-     "wages_squad",
+     "season_tickets",
      0
     ]
    ],
-   "tokens": 1069
+   "tokens": 1017
+  },
+  {
+   "label": "Cessão de exploração do estádio – quotas sócios",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "choice": "stadium_other",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "stadium_other",
+     0.67
+    ],
+    [
+     "member_dues",
+     0.27
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Patrocínios",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1045
   }
  ]
 }

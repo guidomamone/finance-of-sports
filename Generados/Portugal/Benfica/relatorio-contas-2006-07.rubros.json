@@ -1,262 +1,290 @@
 {
- "md": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.md",
- "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.pdf",
- "club": "benfica-pt",
- "year": 2007,
- "generatedAt": "2026-10-16T17:14:57.636Z",
- "origen": "verificar.mjs (proceso nuevo, Versión 324)",
- "rubros": [
-  {
-   "label": "Publicidade e patrocínios",
-   "lado": "revenue",
-   "page": 38,
-   "section": "nota que desglosa \"Prestações de serviços\"",
-   "values": [
-    11.030738
-   ]
-  },
-  {
-   "label": "Receitas de bilheteira",
-   "lado": "revenue",
-   "page": 38,
-   "section": "nota que desglosa \"Prestações de serviços\"",
-   "values": [
-    9.893123
-   ]
-  },
-  {
-   "label": "Transmissões televisivas",
-   "lado": "revenue",
-   "page": 38,
-   "section": "nota que desglosa \"Prestações de serviços\"",
-   "values": [
-    9.204847
-   ]
-  },
-  {
-   "label": "Quotizações",
-   "lado": "revenue",
-   "page": 38,
-   "section": "nota que desglosa \"Prestações de serviços\"",
-   "values": [
-    8.327899
-   ]
-  },
-  {
-   "label": "Cativos",
-   "lado": "revenue",
-   "page": 38,
-   "section": "nota que desglosa \"Prestações de serviços\"",
-   "values": [
-    2.75027
-   ]
-  },
-  {
-   "label": "Cachet's",
-   "lado": "revenue",
-   "page": 38,
-   "section": "nota que desglosa \"Prestações de serviços\"",
-   "values": [
-    2.101342
-   ]
-  },
-  {
-   "label": "Cedência de atletas",
-   "lado": "revenue",
-   "page": 38,
-   "section": "nota que desglosa \"Prestações de serviços\"",
-   "values": [
-    0.850737
-   ]
-  },
-  {
-   "label": "Receitas competições FPF",
-   "lado": "revenue",
-   "page": 38,
-   "section": "nota que desglosa \"Prestações de serviços\"",
-   "values": [
-    0.23044
-   ]
-  },
-  {
-   "label": "Outras",
-   "lado": "revenue",
-   "page": 38,
-   "section": "nota que desglosa \"Prestações de serviços\"",
-   "values": [
-    0.094505
-   ]
-  },
-  {
-   "label": "Proveitos suplementares",
-   "lado": "revenue",
-   "page": 30,
-   "section": "estado",
-   "values": [
-    11.683949
-   ]
-  },
-  {
-   "label": "Subsídios à exploração",
-   "lado": "revenue",
-   "page": 30,
-   "section": "estado",
-   "values": [
-    0.003516
-   ]
-  },
-  {
-   "label": "Outros proveitos e ganhos operacionais",
-   "lado": "revenue",
-   "page": 30,
-   "section": "estado",
-   "values": [
-    0.702353
-   ]
-  },
-  {
-   "label": "Ganhos em imobilizações",
-   "lado": "revenue",
-   "page": 39,
-   "section": "nota que desglosa \"Proveitos e ganhos extraordinários\"",
-   "values": [
-    24.114308
-   ]
-  },
-  {
-   "label": "Benefícios de penalidades contratuais",
-   "lado": "revenue",
-   "page": 39,
-   "section": "nota que desglosa \"Proveitos e ganhos extraordinários\"",
-   "values": [
-    0.034333
-   ]
-  },
-  {
-   "label": "Correcções relativas a exercícios anteriores",
-   "lado": "revenue",
-   "page": 39,
-   "section": "nota que desglosa \"Proveitos e ganhos extraordinários\"",
-   "values": [
-    0.145772
-   ]
-  },
-  {
-   "label": "Outros proveitos e ganhos extraordinários",
-   "lado": "revenue",
-   "page": 39,
-   "section": "nota que desglosa \"Proveitos e ganhos extraordinários\"",
-   "values": [
-    2.11739
-   ]
-  },
-  {
-   "label": "Fornecimentos e serviços externos",
-   "lado": "expense",
-   "page": 30,
-   "section": "estado",
-   "values": [
-    15.0514
-   ]
-  },
-  {
-   "label": "Remunerações",
-   "lado": "expense",
-   "page": 30,
-   "section": "estado",
-   "values": [
-    22.936223
-   ]
-  },
-  {
-   "label": "Outros",
-   "lado": "expense",
-   "page": 30,
-   "section": "estado",
-   "values": [
-    3.039614
-   ]
-  },
-  {
-   "label": "Amortizações do imobilizado corpóreo e incorpóreo",
-   "lado": "expense",
-   "page": 30,
-   "section": "estado",
-   "values": [
-    13.278907
-   ]
-  },
-  {
-   "label": "Ajustamentos",
-   "lado": "expense",
-   "page": 30,
-   "section": "estado",
-   "values": [
-    0.25
-   ]
-  },
-  {
-   "label": "Provisões",
-   "lado": "expense",
-   "page": 30,
-   "section": "estado",
-   "values": [
-    1.5
-   ]
-  },
-  {
-   "label": "Impostos",
-   "lado": "expense",
-   "page": 30,
-   "section": "estado",
-   "values": [
-    0.597233
-   ]
-  },
-  {
-   "label": "Outros custos e perdas operacionais",
-   "lado": "expense",
-   "page": 30,
-   "section": "estado",
-   "values": [
-    1.013568
-   ]
-  },
-  {
-   "label": "Perdas em imobilizações",
-   "lado": "expense",
-   "page": 39,
-   "section": "nota que desglosa \"Custos e perdas extraordinários\"",
-   "values": [
-    1.991163
-   ]
-  },
-  {
-   "label": "Multas e penalidades",
-   "lado": "expense",
-   "page": 39,
-   "section": "nota que desglosa \"Custos e perdas extraordinários\"",
-   "values": [
-    0.292283
-   ]
-  },
-  {
-   "label": "Correcções relativas a exercícios anteriores",
-   "lado": "expense",
-   "page": 39,
-   "section": "nota que desglosa \"Custos e perdas extraordinários\"",
-   "values": [
-    0.443064
-   ]
-  },
-  {
-   "label": "Outros custos e perdas extraordinários",
-   "lado": "expense",
-   "page": 39,
-   "section": "nota que desglosa \"Custos e perdas extraordinários\"",
-   "values": [
-    0.340419
-   ]
-  }
- ]
+  "md": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.md",
+  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.pdf",
+  "club": "benfica-pt",
+  "year": 2007,
+  "generatedAt": "2026-10-16T17:17:04.720Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Publicidade e patrocínios",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        11.030738
+      ],
+      "glosa": "Publicidad y patrocinios"
+    },
+    {
+      "label": "Receitas de bilheteira",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        9.893123
+      ],
+      "glosa": "Ingresos de taquilla"
+    },
+    {
+      "label": "Transmissões televisivas",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        9.204847
+      ],
+      "glosa": "Retransmisiones televisivas"
+    },
+    {
+      "label": "Quotizações",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        8.327899
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Cativos",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        2.75027
+      ],
+      "glosa": "Abonos"
+    },
+    {
+      "label": "Cachet's",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        2.101342
+      ],
+      "glosa": "Cachés"
+    },
+    {
+      "label": "Cedência de atletas",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        0.850737
+      ],
+      "glosa": "Cesión de deportistas"
+    },
+    {
+      "label": "Receitas competições FPF",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        0.23044
+      ],
+      "glosa": "Ingresos por competiciones FPF"
+    },
+    {
+      "label": "Outras",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Prestações de serviços\"",
+      "values": [
+        0.094505
+      ],
+      "glosa": "Otras"
+    },
+    {
+      "label": "Proveitos suplementares",
+      "lado": "revenue",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        11.683949
+      ],
+      "glosa": "Ingresos accesorios"
+    },
+    {
+      "label": "Subsídios à exploração",
+      "lado": "revenue",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        0.003516
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Outros proveitos e ganhos operacionais",
+      "lado": "revenue",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        0.702353
+      ],
+      "glosa": "Otros ingresos y ganancias de explotación"
+    },
+    {
+      "label": "Ganhos em imobilizações",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Proveitos e ganhos extraordinários\"",
+      "values": [
+        24.114308
+      ],
+      "glosa": "Ganancias en inmovilizado"
+    },
+    {
+      "label": "Benefícios de penalidades contratuais",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Proveitos e ganhos extraordinários\"",
+      "values": [
+        0.034333
+      ],
+      "glosa": "Ingresos por penalizaciones contractuales"
+    },
+    {
+      "label": "Correcções relativas a exercícios anteriores",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Proveitos e ganhos extraordinários\"",
+      "values": [
+        0.145772
+      ],
+      "glosa": "Correcciones relativas a ejercicios anteriores"
+    },
+    {
+      "label": "Outros proveitos e ganhos extraordinários",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Proveitos e ganhos extraordinários\"",
+      "values": [
+        2.11739
+      ],
+      "glosa": "Otros ingresos y ganancias extraordinarias"
+    },
+    {
+      "label": "Fornecimentos e serviços externos",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        15.0514
+      ],
+      "glosa": "Suministros y servicios exteriores"
+    },
+    {
+      "label": "Remunerações",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        22.936223
+      ],
+      "glosa": "Remuneraciones"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        3.039614
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Amortizações do imobilizado corpóreo e incorpóreo",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        13.278907
+      ],
+      "glosa": "Amortizaciones del inmovilizado material e intangible"
+    },
+    {
+      "label": "Ajustamentos",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        0.25
+      ],
+      "glosa": "Ajustes"
+    },
+    {
+      "label": "Provisões",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        1.5
+      ],
+      "glosa": "Provisiones"
+    },
+    {
+      "label": "Impostos",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        0.597233
+      ],
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Outros custos e perdas operacionais",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        1.013568
+      ],
+      "glosa": "Otros gastos y pérdidas de explotación"
+    },
+    {
+      "label": "Perdas em imobilizações",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Custos e perdas extraordinários\"",
+      "values": [
+        1.991163
+      ],
+      "glosa": "Pérdidas en inmovilizado"
+    },
+    {
+      "label": "Multas e penalidades",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Custos e perdas extraordinários\"",
+      "values": [
+        0.292283
+      ],
+      "glosa": "Multas y sanciones"
+    },
+    {
+      "label": "Correcções relativas a exercícios anteriores",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Custos e perdas extraordinários\"",
+      "values": [
+        0.443064
+      ],
+      "glosa": "Correcciones relativas a ejercicios anteriores"
+    },
+    {
+      "label": "Outros custos e perdas extraordinários",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Custos e perdas extraordinários\"",
+      "values": [
+        0.340419
+      ],
+      "glosa": "Otros gastos y pérdidas extraordinarias"
+    }
+  ]
 }
