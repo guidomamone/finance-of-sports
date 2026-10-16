@@ -13,7 +13,7 @@
 // `git checkout -- Admin/registros/categorias-aprendidas.jsonl`.
 //
 // USO (desde la raíz; ~6 min para ~570 documentos):
-//   node tools/medir-cargar.mjs --salida /tmp/antes.jsonl          # antes del cambio
+//   node tools/medir-cargar.mjs --salida /tmp/antes.jsonl          # antes del cambio (--trabajadores N, --lista <archivo>, --dir <carpeta>)
 //   node tools/medir-cargar.mjs --salida /tmp/despues.jsonl        # después
 //   node tools/medir-cargar.mjs --comparar /tmp/antes.jsonl /tmp/despues.jsonl
 //   node tools/medir-cargar.mjs --contra-sitio /tmp/despues.jsonl  # ¿el ensayo reproduce lo publicado? (to-do 236)
@@ -35,26 +35,39 @@ const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
 const flag = (f) => { const i = A.indexOf(f); return i >= 0 ? A[i + 1] : null; };
 
-function medir(salida) {
-  writeFileSync(salida, '');
-  const cola = `${salida}.cola.jsonl`; copyFileSync(resolve(ROOT, 'Admin/registros/cola-revision.jsonl'), cola);
-  const docs = [];
+// (to-do 237 ah) EN PARALELO Y ACOTABLE: un pool de procesos (--trabajadores N, default 8; 1 = en serie como antes). Los documentos de un
+// mismo club van al MISMO trabajador y en orden (cargar.mjs aplica respuestas de la cola a otros años del club), cada trabajador con su
+// copia de la cola, y la salida se escribe al final ordenada por pdf: --comparar entre una corrida en serie y una en paralelo da idéntico.
+// --lista <archivo> o --dir <carpeta> miden solo esos documentos (los que tienen .categorias.json).
+async function medir(salida) {
+  const { execFile } = await import('node:child_process'); const { promisify } = await import('node:util'); const run = promisify(execFile);
+  const N = Math.max(1, Number(flag('--trabajadores') || 8));
+  let docs = [];
   const walk = (d) => { for (const n of readdirSync(d)) { const p = join(d, n); if (statSync(p).isDirectory()) walk(p); else if (n.endsWith('.categorias.json')) docs.push(p); } };
   walk(resolve(ROOT, 'Generados'));
-  let i = 0;
-  for (const c of docs.sort()) {
-    const pdf = c.slice(ROOT.length + 1).replace(/^Generados\//, 'Clubes/').replace(/\.categorias\.json$/, '.pdf');
-    if (!existsSync(resolve(ROOT, pdf))) { appendFileSync(salida, JSON.stringify({ pdf, error: 'sin pdf' }) + '\n'); continue; }
-    let out = '';
-    try { out = execFileSync('node', ['tools/cargar.mjs', pdf, '--desde-verificacion', '--reemplazar'], { cwd: ROOT, env: { ...process.env, COLA_ARCHIVO: cola }, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 1 << 28 }); }
-    catch (e) { out = String(e.stdout || ''); }
-    let j; try { j = JSON.parse(out.slice(out.indexOf('{'))); } catch { appendFileSync(salida, JSON.stringify({ pdf, error: 'sin json' }) + '\n'); continue; }
-    appendFileSync(salida, JSON.stringify({ pdf, clubId: j.clubId ?? null, year: j.year ?? null, sourceId: j.procedencia?.sourceId?.valor ?? null,
-      frena: (j.frena || []).map((f) => f.etapa), frenaMotivos: (j.frena || []).map((f) => `${f.etapa}: ${String(f.motivo).slice(0, 160)}`), carga: j.resumen?.carga,
-      filas: (j.filas || []).map((f) => [f.label, f.origen, f.cat, f.destino, !!f.enCola, f.casoCola?.detalle || null, f.amountNative]) }) + '\n');
-    if (++i % 50 === 0) console.log(i, '/', docs.length);
-  }
-  console.log(`listo: ${docs.length} documentos en ${salida}`);
+  const pdfDe = (c) => c.slice(ROOT.length + 1).replace(/^Generados\//, 'Clubes/').replace(/\.categorias\.json$/, '.pdf');
+  if (flag('--lista')) { const set = new Set(readFileSync(resolve(ROOT, flag('--lista')), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'))); docs = docs.filter((c) => set.has(pdfDe(c))); }
+  if (flag('--dir')) { const dir = flag('--dir').replace(/\/$/, '') + '/'; docs = docs.filter((c) => pdfDe(c).startsWith(dir)); }
+  const porClub = new Map(); for (const c of docs.sort()) { const pdf = pdfDe(c); const club = pdf.split('/').slice(0, 3).join('/'); if (!porClub.has(club)) porClub.set(club, []); porClub.get(club).push(pdf); }
+  const colas = [...porClub.values()].sort((a, b) => b.length - a.length); const carga = Array.from({ length: N }, () => []); const peso = new Array(N).fill(0);
+  for (const g of colas) { const k = peso.indexOf(Math.min(...peso)); carga[k].push(...g); peso[k] += g.length; } // reparto por club, balanceado
+  const res = []; let hechos = 0;
+  await Promise.all(carga.map(async (lista, k) => {
+    const cola = `${salida}.cola${k}.jsonl`; copyFileSync(resolve(ROOT, 'Admin/registros/cola-revision.jsonl'), cola);
+    for (const pdf of lista) {
+      if (!existsSync(resolve(ROOT, pdf))) { res.push({ pdf, error: 'sin pdf' }); continue; }
+      let out = '';
+      try { out = (await run('node', ['tools/cargar.mjs', pdf, '--desde-verificacion', '--reemplazar'], { cwd: ROOT, env: { ...process.env, COLA_ARCHIVO: cola }, encoding: 'utf8', maxBuffer: 1 << 28 })).stdout; }
+      catch (e) { out = String(e.stdout || ''); }
+      let j; try { j = JSON.parse(out.slice(out.indexOf('{'))); } catch { res.push({ pdf, error: 'sin json' }); continue; }
+      res.push({ pdf, clubId: j.clubId ?? null, year: j.year ?? null, sourceId: j.procedencia?.sourceId?.valor ?? null,
+        frena: (j.frena || []).map((f) => f.etapa), frenaMotivos: (j.frena || []).map((f) => `${f.etapa}: ${String(f.motivo).slice(0, 160)}`), carga: j.resumen?.carga,
+        filas: (j.filas || []).map((f) => [f.label, f.origen, f.cat, f.destino, !!f.enCola, f.casoCola?.detalle || null, f.amountNative]) });
+      if (++hechos % 50 === 0) console.log(hechos, '/', docs.length);
+    }
+  }));
+  writeFileSync(salida, res.sort((a, b) => (a.pdf < b.pdf ? -1 : a.pdf > b.pdf ? 1 : 0)).map((o) => JSON.stringify(o)).join('\n') + '\n');
+  console.log(`listo: ${docs.length} documentos en ${salida} (${N} trabajador(es))`);
 }
 
 function comparar(fa, fb) {
