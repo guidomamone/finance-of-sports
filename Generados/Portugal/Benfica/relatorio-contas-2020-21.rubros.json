@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2020-21.pdf",
   "club": "benfica-pt",
   "year": 2021,
-  "generatedAt": "2026-10-16T00:56:35.728Z",
+  "generatedAt": "2026-10-16T01:14:49.167Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         55.015
       ],
-      "glosa": "Ingresos de televisión"
+      "glosa": "Ingresos por televisión"
     },
     {
       "label": "Prémios da UEFA",
@@ -44,7 +44,7 @@
       "values": [
         18.906
       ],
-      "glosa": "Patrocinios"
+      "glosa": "Patrocinadores"
     },
     {
       "label": "Rendas de espaço",
@@ -54,7 +54,7 @@
       "values": [
         2.977
       ],
-      "glosa": "Alquiler de espacios"
+      "glosa": "Alquileres de espacios"
     },
     {
       "label": "*Royalties*",
@@ -164,7 +164,7 @@
       "values": [
         4.277
       ],
-      "glosa": "Licencia de marca Benfica"
+      "glosa": "Licencia marca Benfica"
     },
     {
       "label": "Gestão operacional do canal BTV",
@@ -194,7 +194,7 @@
       "values": [
         1.733
       ],
-      "glosa": "Material deportivo"
+      "glosa": "Equipamiento deportivo"
     },
     {
       "label": "Honorários",
@@ -284,7 +284,7 @@
       "values": [
         0.025
       ],
-      "glosa": "Retribuciones post-empleo"
+      "glosa": "Beneficios post-empleo"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -294,7 +294,7 @@
       "values": [
         6.326
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -334,7 +334,7 @@
       "values": [
         0.427
       ],
-      "glosa": "Instalaciones técnicas y maquinaria"
+      "glosa": "Equipamiento básico"
     },
     {
       "label": "Equipamento de transporte",
@@ -354,7 +354,7 @@
       "values": [
         0.498
       ],
-      "glosa": "Mobiliario y equipos de oficina"
+      "glosa": "Equipamiento administrativo"
     },
     {
       "label": "Outros ativos tangíveis",
@@ -384,7 +384,7 @@
       "values": [
         1.52
       ],
-      "glosa": "Derecho de uso de marca"
+      "glosa": "Derecho de uso de la marca"
     },
     {
       "label": "Programas de computador",
@@ -484,7 +484,7 @@
       "values": [
         -0.683
       ],
-      "glosa": "Reversiones por deterioro"
+      "glosa": "Reversiones de deterioro"
     }
   ]
 }

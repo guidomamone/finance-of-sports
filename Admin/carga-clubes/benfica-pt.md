@@ -727,6 +727,107 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2009–10 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
 ```
 
+## 2009
+
+### Ingresos
+
+```text
+2009: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Benfica/prestacao-contas-2009-11-03.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Benfica/prestacao-contas-2009-11-03.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Publicidade e patrocínios | pág. 55, Jev 1 |
+| 2 | Transmissões televisivas | pág. 55, Jev 1 |
+| 3 | Quotizações | pág. 55, precedente |
+| 4 | Receitas de bilheteira | pág. 55, Jev 1 |
+| 5 | Cativos | pág. 55, Jev 0.92 |
+| 6 | Cedência de atletas | pág. 55, precedente |
+| 7 | Cachets | pág. 55, precedente |
+| 8 | Outros | pág. 55, Claude 0.85 |
+| 9 | Royalties | pág. 56, precedente |
+| 10 | Comissões | pág. 56, precedente |
+| 11 | Prémios UEFA | pág. 56, Jev 1 |
+| 12 | Prémios Carlsberg Cup | pág. 56, Jev 1 |
+| 13 | Benefícios de penalidades contratuais | pág. 56, Jev 1 |
+| 14 | Indemnizações de seguros | pág. 56, Jev 1 |
+| 15 | Outros proveitos operacionais | pág. 56, Jev 0.99 |
+| 16 | Venda de direitos | pág. 61, Jev 1 |
+| 17 | Proveitos com fundo solidariedade | pág. 61, precedente |
+| 18 | Custos com transferência de atletas | pág. 61, precedente |
+| 19 | Custos com fundo de solidariedade | pág. 61, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Electricidade | pág. 57, Jev 1 |
+| 2 | Água e outros fluidos | pág. 57, Jev 0.99 |
+| 3 | Artigos para oferta | pág. 57, Jev 0.98 |
+| 4 | Rendas e alugueres | pág. 57, Jev 0.96 |
+| 5 | Medicamentos | pág. 57, Jev 0.96 |
+| 6 | Despesas de representação | pág. 57, Jev 0.99 |
+| 7 | Comunicação | pág. 57, Jev 1 |
+| 8 | Seguros | pág. 57, Jev 0.97 |
+| 9 | Deslocações e estadas | pág. 57, precedente |
+| 10 | Comissões | pág. 57, precedente |
+| 11 | Honorários | pág. 57, precedente |
+| 12 | Contencioso e notariado | pág. 57, Jev 1 |
+| 13 | Conservação e reparação | pág. 57, precedente |
+| 14 | Publicidade e propaganda | pág. 57, Jev 1 |
+| 15 | Limpeza, higiene e conforto | pág. 57, Jev 1 |
+| 16 | Vigilância e segurança | pág. 57, precedente |
+| 17 | Trabalhos especializados | pág. 57, precedente |
+| 18 | Equipamento desportivo | pág. 57, precedente |
+| 19 | Subsídios futebol formação | pág. 57, Jev 0.91 |
+| 20 | Acordos e protocolos | pág. 57, precedente |
+| 21 | Associações, Federações e Liga | pág. 57, Jev 0.97 |
+| 22 | Empréstimos de jogadores | pág. 57, precedente |
+| 23 | Cedência de jogadores | pág. 57, Jev 0.99 |
+| 24 | Cedência direitos de imagem | pág. 57, precedente |
+| 25 | Cachets | pág. 57, precedente |
+| 26 | Outros fornecimentos e serviços | pág. 57, precedente |
+| 27 | Remunerações fixas | pág. 58, precedente |
+| 28 | Remunerações variáveis / prémios | pág. 58, Jev 1 |
+| 29 | Remunerações fixas | pág. 58, precedente |
+| 30 | Remunerações variáveis / prémios | pág. 58, Jev 1 |
+| 31 | Indemnizações | pág. 58, precedente |
+| 32 | Complemento de reforma | pág. 58, Claude 0.8 |
+| 33 | Encargos sobre remunerações | pág. 58, precedente |
+| 34 | Seguros de acidentes de trabalho | pág. 58, precedente |
+| 35 | Outros custos | pág. 58, Jev 0.96 |
+| 36 | Edifícios e outras construções | pág. 59, precedente |
+| 37 | Equipamento básico | pág. 59, precedente |
+| 38 | Equipamento de transporte | pág. 59, precedente |
+| 39 | Equipamento administrativo e utensílios | pág. 59, Jev 0.95 |
+| 40 | Outras imobilizações corpóreas | pág. 59, precedente |
+| 41 | Direito utilização da marca | pág. 59, Jev 0.95 |
+| 42 | Provisões do exercício | pág. 39, Claude 0.85 |
+| 43 | Impostos indirectos | pág. 60, Claude 0.85 |
+| 44 | Impostos directos | pág. 60, precedente |
+| 45 | Quotizações | pág. 60, precedente |
+| 46 | Correcções relativas a exercícios anteriores | pág. 60, Jev 1 |
+| 47 | Outros custos e perdas operacionais | pág. 60, Jev 1 |
+| 48 | Amortizações do exercício | pág. 60, Jev 0.97 |
+| 49 | Abates de atletas - revogações | pág. 60, Claude 0.85 |
+| 50 | Perdas de imparidade | pág. 60, precedente |
+| 51 | Resultados relativos a investimentos | pág. 39, Jev 0.99 |
+
+### Meta
+
+```text
+2009: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): reportType = official_balance_sheet. Relatório e contas anual del ejercicio 1/7/2008-30/6/2009 (el nombre del archivo lleva la fecha de publicación).
+2009: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cierre = 2009-06-30. El nombre del archivo (2009-11-03) es la fecha de publicación; el ejercicio cierra el 30/06/2009.
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2008–09 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
+```
+
 ## Fuentes
 
 ### benfica-pt-relatorio-contas-2018-19
@@ -791,4 +892,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2017-18.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### benfica-pt-prestacao-contas-2009-11-03
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/prestacao-contas-2009-11-03.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

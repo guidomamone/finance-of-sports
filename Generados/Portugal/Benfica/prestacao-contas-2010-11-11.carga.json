@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.pdf",
- "generado": "2026-10-16T01:09:20.420Z",
+ "generado": "2026-10-16T01:30:40.171Z",
  "frena": [
   {
    "etapa": "registro",
@@ -143,9 +143,9 @@
     "amountNative": 2.408333,
     "disclosureLevel": "aggregated",
     "_pag": 137,
-    "_escalon": 2,
-    "_conf": 0.8,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "PRÉMIOS TAÇA DA LIGA",
@@ -355,9 +355,9 @@
     "amountNative": -1.465721,
     "disclosureLevel": "aggregated",
     "_pag": 139,
-    "_escalon": 2,
-    "_conf": 0.8,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "EQUIPAMENTO DESPORTIVO",
@@ -427,7 +427,7 @@
     "_pag": 139,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "ELECTRICIDADE",
@@ -1159,10 +1159,11 @@
    "origen": "verificacion (nota que desglosa \"OUTROS PROVEITOS OPERACIONAIS^{(1)}\")",
    "signoFijo": 2.408333,
    "cat": "other_income",
-   "conf": 0.8,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-15: comisiones comerciales dentro de 'Proveitos suplementares' (nota de Outros proveitos operacionais). [prestacao-contas-2009-11-03.md L1977]",
    "destino": "revenue",
    "amountNative": 2.408333
   },
@@ -1464,10 +1465,11 @@
    "origen": "verificacion (nota que desglosa \"FORNECIMENTOS E SER. DE TERCEIROS\")",
    "signoFijo": 1.465721,
    "cat": "wages_squad",
-   "conf": 0.8,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-15: pagos por derechos de imagen de jugadores: remuneración del plantel.",
    "destino": "expense",
    "amountNative": -1.465721
   },
@@ -1572,8 +1574,9 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "expense",
    "amountNative": -0.89569
   },

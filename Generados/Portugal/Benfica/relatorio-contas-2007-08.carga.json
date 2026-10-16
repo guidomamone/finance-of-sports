@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2007-08.pdf",
- "generado": "2026-10-16T01:09:20.638Z",
+ "generado": "2026-10-16T01:30:40.372Z",
  "frena": [
   {
    "etapa": "periodo",
@@ -9,14 +9,12 @@
   {
    "etapa": "alta:reportType",
    "motivo": "El documento parece un estado financiero INTERMEDIO, no el anual: el sitio carga ejercicios completos. ¿Es así (y hay que buscar el anual), o es el anual de un ejercicio corto?"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Comissões\" -> other_income 0.75; \"Despesas com transferência de atletas\" -> other_income 0; \"Despesas com fundo de solidariedade\" -> other_income 0"
   }
  ],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS))",
+  "ingresos: ningún total impreso igual a la suma de las líneas (63.040143); queda la suma, verificada por el resultado del ejercicio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-59.044243); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2008 (cierre 2008-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -121,9 +119,9 @@
     "amountNative": 2.05713,
     "disclosureLevel": "aggregated",
     "_pag": 58,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Prémios Liga Campeões",
@@ -214,29 +212,29 @@
     "_escalon": 1,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Despesas com transferência de atletas",
-    "normalizedCategory": "other_income",
-    "amountNative": -0.37175,
-    "disclosureLevel": "aggregated",
-    "_pag": 62,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
-   },
-   {
-    "rawLabel": "Despesas com fundo de solidariedade",
-    "normalizedCategory": "other_income",
-    "amountNative": -0.180934,
-    "disclosureLevel": "aggregated",
-    "_pag": 62,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
    }
   ],
   "expenseLines": [
+   {
+    "rawLabel": "Despesas com transferência de atletas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.37175,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Costo de transacciones de atletas que la extracción dejó en ingresos con signo negativo; pasa a gasto sin cambiar el resultado (como Benfica 2010)."
+   },
+   {
+    "rawLabel": "Despesas com fundo de solidariedade",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.180934,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Costo de transacciones de atletas que la extracción dejó en ingresos con signo negativo; pasa a gasto sin cambiar el resultado (como Benfica 2010)."
+   },
    {
     "rawLabel": "Comissões",
     "normalizedCategory": "other_expenses",
@@ -245,7 +243,7 @@
     "_pag": 59,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Rendas e alugueres",
@@ -714,8 +712,8 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 62.487459,
-   "officialTotalExpenses": 58.491559,
+   "officialTotalRevenue": 63.040143,
+   "officialTotalExpenses": 59.044243,
    "officialPAT": 0.120932
   },
   "source": {
@@ -751,6 +749,28 @@
    "evidencia": "relatorio-contas-2007-08.md: sin estados consolidados; relatorio-contas-2023-24.md L1319",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2007-08.pdf",
+   "campo": "categoria",
+   "valor": "other_expenses",
+   "linea": null,
+   "etiqueta": "Despesas com transferência de atletas",
+   "motivo": "Costo de transacciones de atletas que la extracción dejó en ingresos con signo negativo; pasa a gasto sin cambiar el resultado (como Benfica 2010).",
+   "evidencia": "relatorio-contas-2007-08.md, nota de transacções de atletas (pág. 62)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2007-08.pdf",
+   "campo": "categoria",
+   "valor": "other_expenses",
+   "linea": null,
+   "etiqueta": "Despesas com fundo de solidariedade",
+   "motivo": "Costo de transacciones de atletas que la extracción dejó en ingresos con signo negativo; pasa a gasto sin cambiar el resultado (como Benfica 2010).",
+   "evidencia": "relatorio-contas-2007-08.md, nota de transacções de atletas (pág. 62)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "seleccion": {
@@ -904,11 +924,11 @@
    "origen": "verificacion (nota que desglosa \"Outros proveitos operacionais ^{(1)}\")",
    "signoFijo": 2.05713,
    "cat": "other_income",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15: comisiones comerciales dentro de 'Proveitos suplementares' (nota de Outros proveitos operacionais). [prestacao-contas-2009-11-03.md L1977]",
    "destino": "revenue",
    "amountNative": 2.05713
   },
@@ -1052,34 +1072,32 @@
    "label": "Despesas com transferência de atletas",
    "page": 62,
    "native": 0.37175,
-   "ladoDoc": "revenue",
+   "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Proveitos/(Custos) com transacções de passes de atletas\")",
-   "signoFijo": -0.37175,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "signoFijo": 0.37175,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Costo de transacciones de atletas que la extracción dejó en ingresos con signo negativo; pasa a gasto sin cambiar el resultado (como Benfica 2010).",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
-   "destino": "revenue",
+   "ladoRechazado": false,
+   "destino": "expense",
    "amountNative": -0.37175
   },
   {
    "label": "Despesas com fundo de solidariedade",
    "page": 62,
    "native": 0.180934,
-   "ladoDoc": "revenue",
+   "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Proveitos/(Custos) com transacções de passes de atletas\")",
-   "signoFijo": -0.180934,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "signoFijo": 0.180934,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Costo de transacciones de atletas que la extracción dejó en ingresos con signo negativo; pasa a gasto sin cambiar el resultado (como Benfica 2010).",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
-   "destino": "revenue",
+   "ladoRechazado": false,
+   "destino": "expense",
    "amountNative": -0.180934
   },
   {
@@ -1092,8 +1110,9 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "expense",
    "amountNative": -2.179819
   },
@@ -1799,7 +1818,7 @@
   "porTabla": {
    "verificacion (nota que desglosa \"Prestação de serviços\")": "gastos con signo",
    "verificacion (nota que desglosa \"Outros proveitos operacionais ^{(1)}\")": "gastos con signo",
-   "verificacion (nota que desglosa \"Proveitos/(Custos) com transacções de passes de atletas\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Proveitos/(Custos) com transacções de passes de atletas\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Fornecimentos e serviços de terceiros\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Custos com pessoal\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Amortizações ^{(2)}\")": "gastos sin signo (se invierten)",
@@ -1811,31 +1830,21 @@
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 62.487459,
-  "expSum": -58.491559,
-  "officialTotalRevenue": 62.487459,
-  "officialTotalExpenses": 58.491559,
+  "revSum": 63.040143,
+  "expSum": -59.044243,
+  "officialTotalRevenue": 63.040143,
+  "officialTotalExpenses": 59.044243,
   "officialPAT": 0.120932,
   "verificacion": {
    "pat": "impreso",
-   "ingresos": "impreso",
-   "gastos": "impreso"
+   "ingresos": "por-resultado",
+   "gastos": "por-resultado"
   },
   "patImpreso": {
    "label": "resultado detectado por proponer-carga",
    "pag": null,
    "M": 0.120932,
    "signos": "signos de la verificación; financiero/impuesto como su tabla"
-  },
-  "revImpreso": {
-   "label": "total de ingresos (verificado)",
-   "pag": null,
-   "M": 62.487459
-  },
-  "expImpreso": {
-   "label": "total de gastos (verificado)",
-   "pag": null,
-   "M": 58.491559
   }
  },
  "liga": {
@@ -1887,9 +1896,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
-  "lineasIngreso": 21,
-  "lineasGasto": 45,
+  "motivos": 2,
+  "lineasIngreso": 19,
+  "lineasGasto": 47,
   "metaFilas": 3,
   "excluidas": 0
  }

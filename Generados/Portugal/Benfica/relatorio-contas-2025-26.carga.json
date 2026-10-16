@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2025-26.pdf",
- "generado": "2026-10-16T01:09:23.223Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Redébitos de/a partes relacionadas\" -> wages_squad 0.5"
-  }
- ],
+ "generado": "2026-10-16T01:30:42.900Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS))",
   "gastos: ningún total impreso igual a la suma de las líneas (-290.879); queda la suma, verificada por el resultado del ejercicio",
@@ -407,9 +402,9 @@
     "amountNative": -6.038,
     "disclosureLevel": "aggregated",
     "_pag": 98,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos com pessoal",
@@ -1229,11 +1224,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
    "signoFijo": 6.038,
    "cat": "wages_squad",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15: gasto de personal del grupo refacturado, wages_squad como 2025.",
    "destino": "expense",
    "amountNative": -6.038
   },
@@ -1608,8 +1603,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 14,
   "lineasGasto": 41,
   "metaFilas": 3,

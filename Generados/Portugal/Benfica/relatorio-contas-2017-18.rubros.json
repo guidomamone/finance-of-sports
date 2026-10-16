@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2017-18.pdf",
   "club": "benfica-pt",
   "year": 2018,
-  "generatedAt": "2026-10-16T00:56:35.695Z",
+  "generatedAt": "2026-10-16T01:14:49.147Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         3.015
       ],
-      "glosa": "Alquileres de espacios"
+      "glosa": "Alquiler de espacios"
     },
     {
       "label": "Royalties",
@@ -64,7 +64,7 @@
       "values": [
         1.745
       ],
-      "glosa": "Regalías / Royalties"
+      "glosa": "Royalties"
     },
     {
       "label": "Outras receitas",
@@ -84,7 +84,7 @@
       "values": [
         10.479
       ],
-      "glosa": "Servicios corporativos / Hospitality"
+      "glosa": "Corporativo"
     },
     {
       "label": "Bilhetes de época",
@@ -134,7 +134,7 @@
       "values": [
         16.723
       ],
-      "glosa": "Otros ingresos / rendimientos"
+      "glosa": "Otros ingresos de explotación"
     },
     {
       "label": "Trabalhos especializados",
@@ -164,7 +164,7 @@
       "values": [
         2.599
       ],
-      "glosa": "Honorarios profesionales"
+      "glosa": "Honorarios"
     },
     {
       "label": "Subcontratos",
@@ -174,7 +174,7 @@
       "values": [
         2.32
       ],
-      "glosa": "Subcontrataciones"
+      "glosa": "Subcontratas"
     },
     {
       "label": "Conservação e reparação",
@@ -184,7 +184,7 @@
       "values": [
         2.173
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Reparación y conservación"
     },
     {
       "label": "Serviços de *catering/softdrink*",
@@ -204,7 +204,7 @@
       "values": [
         1.935
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Equipamento desportivo",
@@ -314,7 +314,7 @@
       "values": [
         0.386
       ],
-      "glosa": "Retribuciones post-empleo"
+      "glosa": "Prestaciones postempleo"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -324,7 +324,7 @@
       "values": [
         4.946
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -364,7 +364,7 @@
       "values": [
         1.543
       ],
-      "glosa": "Instalaciones técnicas y equipamiento básico"
+      "glosa": "Instalaciones técnicas y maquinaria"
     },
     {
       "label": "Equipamento de transporte",
@@ -384,7 +384,7 @@
       "values": [
         1.485
       ],
-      "glosa": "Equipos de oficina y administrativos"
+      "glosa": "Equipamiento administrativo"
     },
     {
       "label": "Outros ativos tangíveis",
@@ -394,7 +394,7 @@
       "values": [
         0.056
       ],
-      "glosa": "Otros activos tangibles"
+      "glosa": "Otro inmovilizado material"
     },
     {
       "label": "Direito de utilização da marca",
@@ -444,7 +444,7 @@
       "values": [
         -0.912
       ],
-      "glosa": "Provisiones / Deterioros de valor ^{(2)}"
+      "glosa": "Provisiones/Deterioros ^{(2)}"
     },
     {
       "label": "Outros gastos e perdas operacionais ^{(3)}",

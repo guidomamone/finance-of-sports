@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2015-16.pdf",
- "generado": "2026-10-16T01:09:21.610Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros rendimentos e ganhos\" -> player_sales 0.75; \"Alienações de direitos de atletas\" -> other_expenses 0"
-  }
- ],
+ "generado": "2026-10-16T01:30:41.378Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 2: 2009-2019 traen consolidado e individual lado a lado y las controladas (Benfica Estádio, Benfica TV) hacen negocio del fútbol del club (estadio, canal))",
+  "gastos: ningún total impreso igual a la suma de las líneas (-168.564); queda la suma, verificada por el resultado del ejercicio",
   "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo",
   "gestión: ningún presidente confirmado cubre 2016 (cierre 2016-06-30); pregunta en la cola (no frena)"
  ],
@@ -174,9 +170,9 @@
     "amountNative": 3.74,
     "disclosureLevel": "aggregated",
     "_pag": 120,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -592,13 +588,13 @@
    },
    {
     "rawLabel": "Alienações de direitos de atletas",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "exceptional_items",
     "amountNative": -1.386,
     "disclosureLevel": "aggregated",
     "_pag": 120,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía player_sales, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos e perdas",
@@ -638,7 +634,7 @@
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 207.968,
-   "officialTotalExpenses": 169.95,
+   "officialTotalExpenses": 168.564,
    "officialPAT": 20.396
   },
   "source": {
@@ -904,11 +900,11 @@
    "origen": "verificacion (nota que desglosa \"RENDIMENTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\")",
    "signoFijo": 3.74,
    "cat": "player_sales",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15: 'Outros rendimentos e ganhos' dentro de Rendimentos com transações de direitos de atletas, player_sales como Benfica 2019.",
    "destino": "revenue",
    "amountNative": 3.74
   },
@@ -1539,13 +1535,13 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\")",
    "signoFijo": 1.386,
-   "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía player_sales, del otro lado que la fila: se propone la genérica de su lado",
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15: 'Alienações de direitos de atletas' entre paréntesis dentro de Gastos com transações = pérdida por venta (menos-valia); exceptional_items como Benfica 2019 y las minusvalenze de Italia. [relatorio-contas-2015-16.md L3898]",
    "destino": "expense",
    "amountNative": -1.386
   },
@@ -1616,14 +1612,14 @@
  },
  "totales": {
   "revSum": 207.968,
-  "expSum": -169.95,
+  "expSum": -168.564,
   "officialTotalRevenue": 207.968,
-  "officialTotalExpenses": 169.95,
+  "officialTotalExpenses": 168.564,
   "officialPAT": 20.396,
   "verificacion": {
    "pat": "impreso",
    "ingresos": "impreso",
-   "gastos": "impreso"
+   "gastos": "por-resultado"
   },
   "patImpreso": {
    "label": "resultado detectado por proponer-carga",
@@ -1635,11 +1631,6 @@
    "label": "total de ingresos (verificado)",
    "pag": null,
    "M": 207.968
-  },
-  "expImpreso": {
-   "label": "total de gastos (verificado)",
-   "pag": null,
-   "M": 169.95
   }
  },
  "liga": {
@@ -1695,8 +1686,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 16,
   "lineasGasto": 43,
   "metaFilas": 3,

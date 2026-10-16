@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2016-17-pos-AG.pdf",
   "club": "benfica-pt",
   "year": 2017,
-  "generatedAt": "2026-10-16T00:56:35.674Z",
+  "generatedAt": "2026-10-16T01:14:49.127Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         38.776
       ],
-      "glosa": "Ingresos por derechos de televisión"
+      "glosa": "Ingresos por televisión"
     },
     {
       "label": "Prémios da UEFA",
@@ -44,7 +44,7 @@
       "values": [
         22.236
       ],
-      "glosa": "Patrocinadores"
+      "glosa": "Patrocinios"
     },
     {
       "label": "Rendas de espaço",
@@ -54,7 +54,7 @@
       "values": [
         2.75
       ],
-      "glosa": "Arrendamientos de espacios"
+      "glosa": "Arrendamiento de espacios"
     },
     {
       "label": "Royalties",
@@ -64,7 +64,7 @@
       "values": [
         2.078
       ],
-      "glosa": "Regalías (royalties)"
+      "glosa": "Royalties"
     },
     {
       "label": "Outra receitas",
@@ -84,7 +84,7 @@
       "values": [
         9.7
       ],
-      "glosa": "Hospitalidad corporativa"
+      "glosa": "Corporativo"
     },
     {
       "label": "Bilhetes de época",
@@ -134,7 +134,7 @@
       "values": [
         117.924
       ],
-      "glosa": "Ganancias por enajenación de derechos de deportistas"
+      "glosa": "Beneficios por enajenación de derechos de jugadores"
     },
     {
       "label": "Outros rendimentos e ganhos",
@@ -194,7 +194,7 @@
       "values": [
         2.004
       ],
-      "glosa": "Servicios de catering y refrescos"
+      "glosa": "Servicios de catering y bebidas"
     },
     {
       "label": "Conservação e reparação",
@@ -324,7 +324,7 @@
       "values": [
         0.255
       ],
-      "glosa": "Beneficios post-empleo"
+      "glosa": "Retribuciones post-empleo"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -344,7 +344,7 @@
       "values": [
         3.622
       ],
-      "glosa": "Seguros de accidentes de trabajo"
+      "glosa": "Seguros de accidentes laborales"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -374,7 +374,7 @@
       "values": [
         1.627
       ],
-      "glosa": "Instalaciones técnicas y maquinaria"
+      "glosa": "Equipamiento básico"
     },
     {
       "label": "Equipamento de transporte",
@@ -424,7 +424,7 @@
       "values": [
         0.309
       ],
-      "glosa": "Programas informáticos"
+      "glosa": "Aplicaciones informáticas"
     },
     {
       "label": "Direitos de televisão",
@@ -454,7 +454,7 @@
       "values": [
         -0.079
       ],
-      "glosa": "Provisiones / Deterioro de valor ^{(2)}"
+      "glosa": "Provisiones/Deterioros ^{(2)}"
     },
     {
       "label": "Outros gastos e perdas operacionais ^{(3)}",
@@ -474,7 +474,7 @@
       "values": [
         1.072
       ],
-      "glosa": "Pérdidas por enajenación de derechos de deportistas"
+      "glosa": "Pérdidas por enajenación de derechos de jugadores"
     },
     {
       "label": "Gastos associados a alienações de direitos de atletas",
@@ -484,7 +484,7 @@
       "values": [
         11.625
       ],
-      "glosa": "Gastos asociados a la enajenación de derechos de deportistas"
+      "glosa": "Gastos asociados a la enajenación de derechos de jugadores"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -494,7 +494,7 @@
       "values": [
         3.866
       ],
-      "glosa": "Bajas de derechos de deportistas"
+      "glosa": "Bajas de derechos de jugadores"
     },
     {
       "label": "Outros gastos e perdas",
@@ -514,7 +514,7 @@
       "values": [
         40.606
       ],
-      "glosa": "Amortizaciones de derechos de deportistas"
+      "glosa": "Amortizaciones de derechos de jugadores"
     },
     {
       "label": "Reforços de imparidade",
@@ -534,7 +534,7 @@
       "values": [
         -0.597
       ],
-      "glosa": "Reversiones de deterioro de valor"
+      "glosa": "Reversiones por deterioro de valor"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2012-13-pos-AG.pdf",
   "club": "benfica-pt",
   "year": 2013,
-  "generatedAt": "2026-10-16T00:56:35.589Z",
+  "generatedAt": "2026-10-16T01:14:49.046Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         8.462025
       ],
-      "glosa": "Ingresos de taquilla"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "TRANSMISSÕES TELEVISIVAS",
@@ -44,7 +44,7 @@
       "values": [
         8.19676
       ],
-      "glosa": "Área corporativa y palcos VIP"
+      "glosa": "Corporativo"
     },
     {
       "label": "QUOTIZAÇÕES",
@@ -64,7 +64,7 @@
       "values": [
         2.596244
       ],
-      "glosa": "Alquiler de espacios"
+      "glosa": "Alquileres de espacios"
     },
     {
       "label": "CEDÊNCIA DE ATLETAS",
@@ -74,7 +74,7 @@
       "values": [
         2.3647
       ],
-      "glosa": "Cesión de jugadores"
+      "glosa": "Cesión de deportistas"
     },
     {
       "label": "CATIVOS",
@@ -84,7 +84,7 @@
       "values": [
         2.315878
       ],
-      "glosa": "Asientos reservados"
+      "glosa": "Abonos de asiento reservado"
     },
     {
       "label": "BILHETES DE ÉPOCA",
@@ -104,7 +104,7 @@
       "values": [
         1.42064
       ],
-      "glosa": "Títulos Fundador y Centenarium"
+      "glosa": "Títulos de fundador y Centenarium"
     },
     {
       "label": "RECEITAS OUTRAS COMPETIÇÕES",
@@ -204,7 +204,7 @@
       "values": [
         42.482948
       ],
-      "glosa": "Beneficios por enajenación de derechos de jugadores"
+      "glosa": "Beneficios por enajenación de derechos de deportistas"
     },
     {
       "label": "CEDÊNCIA DE DIREITOS BENFICA STARS FUND",
@@ -244,7 +244,7 @@
       "values": [
         -7.489029
       ],
-      "glosa": "Gastos por transferencia de jugadores"
+      "glosa": "Gastos por transferencias de deportistas"
     },
     {
       "label": "PERDAS NA ALIENAÇÃO DE DIREITOS DE ATLETAS",
@@ -254,7 +254,7 @@
       "values": [
         -2.212494
       ],
-      "glosa": "Pérdidas por enajenación de derechos de jugadores"
+      "glosa": "Pérdidas por enajenación de derechos de deportistas"
     },
     {
       "label": "FUNDO DE SOLIDARIEDADE",
@@ -274,7 +274,7 @@
       "values": [
         4.502092
       ],
-      "glosa": "Servicios especializados"
+      "glosa": "Trabajos especializados"
     },
     {
       "label": "DESLOCAÇÕES E ESTADAS",
@@ -304,7 +304,7 @@
       "values": [
         1.871149
       ],
-      "glosa": "Servicios de catering y bebidas"
+      "glosa": "Servicios de catering/refrescos"
     },
     {
       "label": "CEDÊNCIA DIREITOS DE IMAGEM",
@@ -354,7 +354,7 @@
       "values": [
         1.155287
       ],
-      "glosa": "Subcontratación"
+      "glosa": "Subcontratas"
     },
     {
       "label": "ELECTRICIDADE",
@@ -434,7 +434,7 @@
       "values": [
         0.4255
       ],
-      "glosa": "Agua y otros suministros"
+      "glosa": "Agua y otros fluidos"
     },
     {
       "label": "DESPESAS DE REPRESENTAÇÃO",
@@ -484,7 +484,7 @@
       "values": [
         1.460744
       ],
-      "glosa": "Otros servicios exteriores"
+      "glosa": "Otros suministros y servicios exteriores"
     },
     {
       "label": "REMUNERAÇÕES FIXAS",
@@ -504,7 +504,7 @@
       "values": [
         0.078
       ],
-      "glosa": "Remuneraciones variables y primas"
+      "glosa": "Remuneraciones variables/primas"
     },
     {
       "label": "REMUNERAÇÕES FIXAS",
@@ -524,7 +524,7 @@
       "values": [
         5.34835
       ],
-      "glosa": "Remuneraciones variables y primas"
+      "glosa": "Remuneraciones variables/primas"
     },
     {
       "label": "INDEMNIZAÇÕES",
@@ -554,7 +554,7 @@
       "values": [
         3.460666
       ],
-      "glosa": "Cargas sociales sobre salarios"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "SEGUROS DE ACIDENTES DE TRABALHO",
@@ -624,7 +624,7 @@
       "values": [
         0.968557
       ],
-      "glosa": "Mobiliario y equipos de oficina"
+      "glosa": "Equipos de oficina"
     },
     {
       "label": "OUTROS ACTIVOS TANGÍVEIS",
@@ -664,7 +664,7 @@
       "values": [
         1.136945
       ],
-      "glosa": "Dotación a las provisiones para otros riesgos"
+      "glosa": "Dotación a provisiones para otros riesgos"
     },
     {
       "label": "REDUÇÃO DE PROVISÕES PARA OUTROS RISCOS",
@@ -684,7 +684,7 @@
       "values": [
         3.38706
       ],
-      "glosa": "Dotación por deterioro de créditos comerciales"
+      "glosa": "Dotación por deterioro de clientes/deudores"
     },
     {
       "label": "REDUÇÃO DE IMPARIDADES DE CLIENTES/DEVEDORES",
@@ -694,7 +694,7 @@
       "values": [
         -1.216603
       ],
-      "glosa": "Reversión de deterioro de créditos comerciales"
+      "glosa": "Reversión del deterioro de clientes/deudores"
     },
     {
       "label": "IMPOSTOS",
@@ -704,7 +704,7 @@
       "values": [
         1.946485
       ],
-      "glosa": "Tributos"
+      "glosa": "Impuestos"
     },
     {
       "label": "OUTROS GASTOS E PERDAS OPERACIONAIS",
@@ -734,7 +734,7 @@
       "values": [
         0.215765
       ],
-      "glosa": "Derechos económicos de jugadores"
+      "glosa": "Derechos económicos de deportistas"
     },
     {
       "label": "PERDAS DE IMPARIDADE",
@@ -744,7 +744,7 @@
       "values": [
         5.439936
       ],
-      "glosa": "Pérdidas por deterioro de valor"
+      "glosa": "Pérdidas por deterioro"
     },
     {
       "label": "ABATES DE ATLETAS - REVOGAÇÕES",
@@ -754,7 +754,7 @@
       "values": [
         0.476042
       ],
-      "glosa": "Bajas de jugadores por rescisión"
+      "glosa": "Bajas de deportistas - rescisiones"
     },
     {
       "label": "RESULTADOS RELATIVOS A INVESTIMENTOS EM ASSOCIADAS",
@@ -764,7 +764,7 @@
       "values": [
         0.368748
       ],
-      "glosa": "Resultado de participaciones en entidades asociadas"
+      "glosa": "Resultados de inversiones en empresas asociadas"
     }
   ]
 }

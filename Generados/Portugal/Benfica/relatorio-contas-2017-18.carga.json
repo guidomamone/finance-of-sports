@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2017-18.pdf",
- "generado": "2026-10-16T01:09:22.028Z",
- "frena": [],
+ "generado": "2026-10-16T01:30:41.770Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "benfica-pt ya tiene el ejercicio 2018 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['benfica-pt-relatorio-contas-2017-18'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 2: 2009-2019 traen consolidado e individual lado a lado y las controladas (Benfica Estádio, Benfica TV) hacen negocio del fútbol del club (estadio, canal))",
   "gastos: ningún total impreso igual a la suma de las líneas (-162.431); queda la suma, verificada por el resultado del ejercicio",
@@ -1451,8 +1464,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2017–18 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Benfica\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1497,13 +1510,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2017–18 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Benfica\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 13,
   "lineasGasto": 38,
   "metaFilas": 4,

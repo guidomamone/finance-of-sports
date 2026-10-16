@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2016-17-pos-AG.pdf",
- "generado": "2026-10-16T01:09:21.821Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros rendimentos e ganhos\" -> player_sales 0.75"
-  }
- ],
+ "generado": "2026-10-16T01:30:41.575Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 2: 2009-2019 traen consolidado e individual lado a lado y las controladas (Benfica Estádio, Benfica TV) hacen negocio del fútbol del club (estadio, canal))",
   "gastos: ningún total impreso igual a la suma de las líneas (-187.253); queda la suma, verificada por el resultado del ejercicio",
@@ -155,9 +150,9 @@
     "amountNative": 5.071,
     "disclosureLevel": "aggregated",
     "_pag": 145,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -819,11 +814,11 @@
    "origen": "verificacion (nota que desglosa \"Rendimentos com transações de direitos de atletas\")",
    "signoFijo": 5.071,
    "cat": "player_sales",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15: 'Outros rendimentos e ganhos' dentro de Rendimentos com transações de direitos de atletas, player_sales como Benfica 2019.",
    "destino": "revenue",
    "amountNative": 5.071
   },
@@ -1556,8 +1551,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 14,
   "lineasGasto": 39,
   "metaFilas": 4,

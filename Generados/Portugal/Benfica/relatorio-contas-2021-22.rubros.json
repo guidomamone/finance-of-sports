@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.pdf",
   "club": "benfica-pt",
   "year": 2022,
-  "generatedAt": "2026-10-16T00:56:35.756Z",
+  "generatedAt": "2026-10-16T01:14:49.173Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         47.267
       ],
-      "glosa": "Ingresos por derechos de televisión"
+      "glosa": "Ingresos por televisión"
     },
     {
       "label": "Outras receitas",
@@ -44,7 +44,7 @@
       "values": [
         20.233
       ],
-      "glosa": "Patrocinios"
+      "glosa": "Patrocinadores"
     },
     {
       "label": "Rendas de espaço",
@@ -134,7 +134,7 @@
       "values": [
         62.095
       ],
-      "glosa": "Beneficios por enajenación de derechos de deportistas (plusvalías)"
+      "glosa": "Beneficios por enajenación de derechos de jugadores (plusvalías)"
     },
     {
       "label": "Outros rendimentos",
@@ -184,7 +184,7 @@
       "values": [
         6.048
       ],
-      "glosa": "Licencia de la marca Benfica"
+      "glosa": "Licencia de marca Benfica"
     },
     {
       "label": "Deslocações e estadas",
@@ -264,7 +264,7 @@
       "values": [
         8.319
       ],
-      "glosa": "Otros aprovisionamientos y servicios"
+      "glosa": "Otros suministros y servicios"
     },
     {
       "label": "Remunerações fixas",
@@ -274,7 +274,7 @@
       "values": [
         0.632
       ],
-      "glosa": "Retribuciones fijas"
+      "glosa": "Remuneraciones fijas"
     },
     {
       "label": "Remunerações variáveis",
@@ -284,7 +284,7 @@
       "values": [
         0.098
       ],
-      "glosa": "Retribuciones variables"
+      "glosa": "Remuneraciones variables"
     },
     {
       "label": "Remunerações fixas",
@@ -294,7 +294,7 @@
       "values": [
         79.165
       ],
-      "glosa": "Retribuciones fijas"
+      "glosa": "Remuneraciones fijas"
     },
     {
       "label": "Remunerações variáveis",
@@ -304,7 +304,7 @@
       "values": [
         13.165
       ],
-      "glosa": "Retribuciones variables"
+      "glosa": "Remuneraciones variables"
     },
     {
       "label": "Indemnizações",
@@ -334,7 +334,7 @@
       "values": [
         5.975
       ],
-      "glosa": "Cargas sobre remuneraciones"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -374,7 +374,7 @@
       "values": [
         0.487
       ],
-      "glosa": "Instalaciones técnicas y maquinaria"
+      "glosa": "Equipamiento básico"
     },
     {
       "label": "Equipamento de transporte",
@@ -394,7 +394,7 @@
       "values": [
         0.391
       ],
-      "glosa": "Equipamiento de oficina"
+      "glosa": "Equipamiento administrativo"
     },
     {
       "label": "Direitos de uso",
@@ -424,7 +424,7 @@
       "values": [
         0.995
       ],
-      "glosa": "Programas informáticos"
+      "glosa": "Aplicaciones informáticas"
     },
     {
       "label": "Provisões/Imparidades ^{(2)}",
@@ -434,7 +434,7 @@
       "values": [
         1.892
       ],
-      "glosa": "Provisiones/Pérdidas por deterioro ^{(2)}"
+      "glosa": "Provisiones/Deterioros ^{(2)}"
     },
     {
       "label": "Outros gastos e perdas operacionais ^{(3)}",
@@ -454,7 +454,7 @@
       "values": [
         4.379
       ],
-      "glosa": "Pérdidas por enajenación de derechos de deportistas (minusvalías)"
+      "glosa": "Pérdidas por enajenación de derechos de jugadores (minusvalías)"
     },
     {
       "label": "Gastos associados a alienações de direitos de atletas (comissões)",
@@ -464,7 +464,7 @@
       "values": [
         9.998
       ],
-      "glosa": "Gastos asociados a enajenaciones de derechos de deportistas (comisiones)"
+      "glosa": "Gastos asociados a enajenaciones de derechos de jugadores (comisiones)"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -474,7 +474,7 @@
       "values": [
         0.059
       ],
-      "glosa": "Bajas de derechos de deportistas"
+      "glosa": "Bajas de derechos de jugadores"
     },
     {
       "label": "Outros gastos",
@@ -494,7 +494,7 @@
       "values": [
         43.326
       ],
-      "glosa": "Amortizaciones de derechos de deportistas"
+      "glosa": "Amortizaciones de derechos de jugadores"
     },
     {
       "label": "Reforços de imparidade",

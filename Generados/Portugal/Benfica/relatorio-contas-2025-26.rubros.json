@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2025-26.pdf",
   "club": "benfica-pt",
   "year": 2026,
-  "generatedAt": "2026-10-16T00:56:35.842Z",
+  "generatedAt": "2026-10-16T01:14:49.195Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         55.678
       ],
-      "glosa": "Ingresos de televisión"
+      "glosa": "Ingresos por televisión"
     },
     {
       "label": "Outras receitas",
@@ -54,7 +54,7 @@
       "values": [
         5.527
       ],
-      "glosa": "Arrendamiento de espacios"
+      "glosa": "Alquiler de espacios"
     },
     {
       "label": "Royalties",
@@ -64,7 +64,7 @@
       "values": [
         3.57
       ],
-      "glosa": "Cánones y regalías"
+      "glosa": "Royalties"
     },
     {
       "label": "Outras receitas",
@@ -84,7 +84,7 @@
       "values": [
         18.031
       ],
-      "glosa": "Corporate"
+      "glosa": "Corporate (hospitality)"
     },
     {
       "label": "Bilhetes de época",
@@ -94,7 +94,7 @@
       "values": [
         14.62
       ],
-      "glosa": "Abonos de temporada"
+      "glosa": "Abonos"
     },
     {
       "label": "Competições nacionais",
@@ -134,7 +134,7 @@
       "values": [
         106.425
       ],
-      "glosa": "Ganancias por enajenaciones de derechos de deportistas (plusvalías)"
+      "glosa": "Beneficios por enajenación de derechos de futbolistas (plusvalías)"
     },
     {
       "label": "Outros rendimentos com transações de direitos de atletas",
@@ -144,7 +144,7 @@
       "values": [
         3.962
       ],
-      "glosa": "Otros ingresos por transacciones de derechos de deportistas"
+      "glosa": "Otros ingresos por transacciones de derechos de futbolistas"
     },
     {
       "label": "Gestão operacional do estádio",
@@ -224,7 +224,7 @@
       "values": [
         1.361
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Associações, Federações e Liga",
@@ -234,7 +234,7 @@
       "values": [
         1.2
       ],
-      "glosa": "Asociaciones, federaciones y liga"
+      "glosa": "Asociaciones, Federaciones y Liga"
     },
     {
       "label": "Conservação e reparação",
@@ -244,7 +244,7 @@
       "values": [
         1.162
       ],
-      "glosa": "Reparación y conservación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Publicidade e propaganda",
@@ -264,7 +264,7 @@
       "values": [
         0.998
       ],
-      "glosa": "Equipamiento deportivo"
+      "glosa": "Material deportivo"
     },
     {
       "label": "Eletricidade",
@@ -294,7 +294,7 @@
       "values": [
         5.847
       ],
-      "glosa": "Otros suministros y servicios"
+      "glosa": "Otros aprovisionamientos y servicios"
     },
     {
       "label": "Royalties marca Benfica",
@@ -304,7 +304,7 @@
       "values": [
         9.45
       ],
-      "glosa": "Regalías de la marca Benfica"
+      "glosa": "Royalties marca Benfica"
     },
     {
       "label": "Remunerações fixas",
@@ -364,7 +364,7 @@
       "values": [
         0.079
       ],
-      "glosa": "Beneficios post-empleo"
+      "glosa": "Beneficios postempleo"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -424,7 +424,7 @@
       "values": [
         0.27
       ],
-      "glosa": "Equipamiento básico"
+      "glosa": "Equipamiento técnico"
     },
     {
       "label": "Equipamento administrativo",
@@ -454,7 +454,7 @@
       "values": [
         1.098
       ],
-      "glosa": "Derecho de uso de marca"
+      "glosa": "Derecho de uso de la marca"
     },
     {
       "label": "Programas de computador",
@@ -464,7 +464,7 @@
       "values": [
         1.524
       ],
-      "glosa": "Programas informáticos"
+      "glosa": "Aplicaciones informáticas"
     },
     {
       "label": "Direito de exploração futebol feminino",
@@ -474,7 +474,7 @@
       "values": [
         1.16
       ],
-      "glosa": "Derecho de explotación de fútbol femenino"
+      "glosa": "Derecho de explotación fútbol femenino"
     },
     {
       "label": "Provisões/Imparidades (2)",
@@ -484,7 +484,7 @@
       "values": [
         3.37
       ],
-      "glosa": "Provisiones / Deterioros de valor (2)"
+      "glosa": "Provisiones/Deterioros (2)"
     },
     {
       "label": "Outros gastos e perdas operacionais (3)",
@@ -504,7 +504,7 @@
       "values": [
         1.495
       ],
-      "glosa": "Pérdidas por enajenaciones de derechos de deportistas (minusvalías)"
+      "glosa": "Pérdidas por enajenación de derechos de futbolistas (minusvalías)"
     },
     {
       "label": "Gastos associados a alienações de direitos de atletas (comissões)",
@@ -514,7 +514,7 @@
       "values": [
         7.227
       ],
-      "glosa": "Gastos asociados a enajenaciones de derechos de deportistas (comisiones)"
+      "glosa": "Gastos asociados a enajenaciones de derechos de futbolistas (comisiones)"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -524,7 +524,7 @@
       "values": [
         0.097
       ],
-      "glosa": "Bajas de derechos de deportistas"
+      "glosa": "Bajas de derechos de futbolistas"
     },
     {
       "label": "Outros gastos com transações de direitos de atletas",
@@ -534,7 +534,7 @@
       "values": [
         2.22
       ],
-      "glosa": "Otros gastos por transacciones de derechos de deportistas"
+      "glosa": "Otros gastos por transacciones de derechos de futbolistas"
     },
     {
       "label": "Amortizações de direitos de atletas",
@@ -544,7 +544,7 @@
       "values": [
         48.104
       ],
-      "glosa": "Amortizaciones de derechos de deportistas"
+      "glosa": "Amortizaciones de derechos de futbolistas"
     },
     {
       "label": "Perdas de imparidade de direitos de atletas",
@@ -554,7 +554,7 @@
       "values": [
         3.83
       ],
-      "glosa": "Pérdidas por deterioro de derechos de deportistas"
+      "glosa": "Pérdidas por deterioro de derechos de futbolistas"
     }
   ]
 }

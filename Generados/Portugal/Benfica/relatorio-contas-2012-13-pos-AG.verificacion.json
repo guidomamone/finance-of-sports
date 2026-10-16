@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2012-13-pos-AG.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2012-13-pos-AG.md",
- "generado": "2026-10-16T00:56:35.589Z",
- "estado": "cola",
+ "generado": "2026-10-16T01:14:49.046Z",
+ "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2013,
  "escala": {
@@ -33,10 +33,7 @@
    "fecha": "2026-10-16"
   }
  ],
- "cola": [
-  "c035a87",
-  "24279cd"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -88,8 +85,7 @@
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
   "duda de extraer ya contestada para el club (cuadro-de-otro-anio, \"-\"): aceptar, en relatorio-contas-2013-14-pos-AG.pdf",
-  "duda de extraer que no afecta la carga: No hay frase de escala en L2750-L2777 ni en las notas; los importes completos sugieren euros en unidades.",
-  "4 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: No hay frase de escala en L2750-L2777 ni en las notas; los importes completos sugieren euros en unidades."
  ],
  "reintentar": null,
  "reintentado": false,

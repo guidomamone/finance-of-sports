@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2009-11-03.pdf",
   "club": "benfica-pt",
   "year": 2009,
-  "generatedAt": "2026-10-16T00:56:35.463Z",
+  "generatedAt": "2026-10-16T01:14:48.970Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,7 +44,7 @@
       "values": [
         5.974134
       ],
-      "glosa": "Ingresos de taquilla"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "Cativos",
@@ -54,7 +54,7 @@
       "values": [
         2.5625
       ],
-      "glosa": "Abonos y localidades reservadas"
+      "glosa": "Abonos reservados"
     },
     {
       "label": "Cedência de atletas",
@@ -94,7 +94,7 @@
       "values": [
         0.495833
       ],
-      "glosa": "Regalías (royalties)"
+      "glosa": "Cánones"
     },
     {
       "label": "Comissões",
@@ -184,7 +184,7 @@
       "values": [
         -1.036843
       ],
-      "glosa": "Costes por transferencia de deportistas"
+      "glosa": "Gastos por traspaso de deportistas"
     },
     {
       "label": "Custos com fundo de solidariedade",
@@ -194,7 +194,7 @@
       "values": [
         -0.697872
       ],
-      "glosa": "Costes por mecanismo de solidaridad"
+      "glosa": "Gastos por mecanismo de solidaridad"
     },
     {
       "label": "Electricidade",
@@ -214,7 +214,7 @@
       "values": [
         0.167866
       ],
-      "glosa": "Agua y otros fluidos"
+      "glosa": "Agua y otros suministros"
     },
     {
       "label": "Artigos para oferta",
@@ -224,7 +224,7 @@
       "values": [
         0.143398
       ],
-      "glosa": "Artículos para obsequios y promociones"
+      "glosa": "Artículos promocionales y regalos"
     },
     {
       "label": "Rendas e alugueres",
@@ -304,7 +304,7 @@
       "values": [
         1.341726
       ],
-      "glosa": "Honorarios profesionales"
+      "glosa": "Honorarios"
     },
     {
       "label": "Contencioso e notariado",
@@ -314,7 +314,7 @@
       "values": [
         0.086069
       ],
-      "glosa": "Servicios contenciosos y notariales"
+      "glosa": "Servicios jurídicos y notariales"
     },
     {
       "label": "Conservação e reparação",
@@ -324,7 +324,7 @@
       "values": [
         0.359201
       ],
-      "glosa": "Reparación y conservación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Publicidade e propaganda",
@@ -374,7 +374,7 @@
       "values": [
         1.201522
       ],
-      "glosa": "Equipamiento deportivo"
+      "glosa": "Material deportivo"
     },
     {
       "label": "Subsídios futebol formação",
@@ -394,7 +394,7 @@
       "values": [
         0.033
       ],
-      "glosa": "Convenios y acuerdos"
+      "glosa": "Acuerdos y convenios"
     },
     {
       "label": "Associações, Federações e Liga",
@@ -464,7 +464,7 @@
       "values": [
         0.344789
       ],
-      "glosa": "Remuneraciones fijas"
+      "glosa": "Retribuciones fijas"
     },
     {
       "label": "Remunerações variáveis / prémios",
@@ -474,7 +474,7 @@
       "values": [
         0.01
       ],
-      "glosa": "Remuneraciones variables / primas"
+      "glosa": "Retribuciones variables / primas"
     },
     {
       "label": "Remunerações fixas",
@@ -484,7 +484,7 @@
       "values": [
         28.309708
       ],
-      "glosa": "Remuneraciones fijas"
+      "glosa": "Retribuciones fijas"
     },
     {
       "label": "Remunerações variáveis / prémios",
@@ -494,7 +494,7 @@
       "values": [
         0.9628
       ],
-      "glosa": "Remuneraciones variables / primas"
+      "glosa": "Retribuciones variables / primas"
     },
     {
       "label": "Indemnizações",
@@ -544,7 +544,7 @@
       "values": [
         0.372112
       ],
-      "glosa": "Otros costes de personal"
+      "glosa": "Otros costes"
     },
     {
       "label": "Edifícios e outras construções",
@@ -584,7 +584,7 @@
       "values": [
         0.220739
       ],
-      "glosa": "Equipamiento de oficina y utillaje"
+      "glosa": "Mobiliario y equipos de oficina"
     },
     {
       "label": "Outras imobilizações corpóreas",
@@ -604,7 +604,7 @@
       "values": [
         0.398652
       ],
-      "glosa": "Derechos de uso de marca"
+      "glosa": "Derecho de uso de la marca"
     },
     {
       "label": "Provisões do exercício",
@@ -654,7 +654,7 @@
       "values": [
         0.068083
       ],
-      "glosa": "Ajustes relativos a ejercicios anteriores"
+      "glosa": "Ajustes de ejercicios anteriores"
     },
     {
       "label": "Outros custos e perdas operacionais",
@@ -684,7 +684,7 @@
       "values": [
         0.476531
       ],
-      "glosa": "Bajas de deportistas - rescisiones contractuales"
+      "glosa": "Bajas de deportistas - rescisiones"
     },
     {
       "label": "Perdas de imparidade",
@@ -694,7 +694,7 @@
       "values": [
         2.244893
       ],
-      "glosa": "Pérdidas por deterioro de valor"
+      "glosa": "Pérdidas por deterioro"
     },
     {
       "label": "Resultados relativos a investimentos",

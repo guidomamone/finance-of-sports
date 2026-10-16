@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2011-12.pdf",
- "generado": "2026-10-16T01:09:20.844Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Títulos Centenarium e Fundador\" -> season_tickets 0.55; \"Comissões\" -> other_income 0.75; \"Cedência direitos de imagem\" -> wages_squad 0.7"
-  }
- ],
+ "generado": "2026-10-16T01:30:40.556Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 2: 2009-2019 traen consolidado e individual lado a lado y las controladas (Benfica Estádio, Benfica TV) hacen negocio del fútbol del club (estadio, canal))",
   "gestión: ningún presidente confirmado cubre 2012 (cierre 2012-06-30); pregunta en la cola (no frena)"
@@ -99,13 +94,13 @@
    },
    {
     "rawLabel": "Títulos Centenarium e Fundador",
-    "normalizedCategory": "season_tickets",
+    "normalizedCategory": "stadium_other",
     "amountNative": 1.462392,
     "disclosureLevel": "aggregated",
     "_pag": 96,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Cedência de atletas",
@@ -163,9 +158,9 @@
     "amountNative": 2.644167,
     "disclosureLevel": "aggregated",
     "_pag": 98,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Assistência técnica",
@@ -325,9 +320,9 @@
     "amountNative": -1.440108,
     "disclosureLevel": "aggregated",
     "_pag": 99,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Vigilância e segurança",
@@ -357,7 +352,7 @@
     "_pag": 99,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Electricidade",
@@ -969,12 +964,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Prestação de serviços\")",
    "signoFijo": 1.462392,
-   "cat": "season_tickets",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "stadium_other",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15: Títulos Fundador y Centenarium son derechos de asiento del estadio; stadium_other como 'DIREITOS' de 2010 y Corporate de 2019.",
    "destino": "revenue",
    "amountNative": 1.462392
   },
@@ -1063,11 +1058,11 @@
    "origen": "verificacion (nota que desglosa \"Outros proveitos operacionais ^{(1)}\")",
    "signoFijo": 2.644167,
    "cat": "other_income",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15: comisiones comerciales dentro de 'Proveitos suplementares' (nota de Outros proveitos operacionais). [prestacao-contas-2009-11-03.md L1977]",
    "destino": "revenue",
    "amountNative": 2.644167
   },
@@ -1307,11 +1302,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços de terceiros\")",
    "signoFijo": 1.440108,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15: pagos por derechos de imagen de jugadores: remuneración del plantel.",
    "destino": "expense",
    "amountNative": -1.440108
   },
@@ -1355,8 +1350,9 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "expense",
    "amountNative": -1.068852
   },
@@ -2123,8 +2119,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 25,
   "lineasGasto": 51,
   "metaFilas": 3,
