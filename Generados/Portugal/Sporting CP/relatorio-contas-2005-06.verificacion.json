@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2005-06.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2005-06.md",
- "generado": "2026-10-15T21:55:08.312Z",
- "estado": "cola",
- "clubId": null,
- "year": null,
+ "generado": "2026-10-16T04:15:23.206Z",
+ "estado": "ok",
+ "clubId": "sportingcp-pt",
+ "year": 2006,
  "escala": {
   "valor": "miles",
   "escalon": 0,
@@ -23,37 +23,53 @@
    "fecha": "2026-10-15"
   }
  ],
- "cola": [
-  "a62cd17",
-  "70bafcd",
-  "d28f6fb",
-  "32a1f23"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "\"(F)\" 40.213 cierra; además se suman 9 línea(s) fuera de ese total (79.401)"
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "\"(E)\" 39.9 cierra; además se suman 13 línea(s) fuera de ese total (115.588)"
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 119.614 - gastos 155.488 ± financiero 2.196 ± impuesto 0.012 no da el impreso 0.313",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 0.0009999999999905085
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2007",
+   "ok": true,
+   "detalle": "ingresos de 2006: 39.922 en este documento y 39.922 en relatorio-contas-2006-07.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2005",
+   "ok": true,
+   "detalle": "ingresos de 2005: 99.77 en relatorio-contas-2004-05.pdf y 99.77 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2005: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "escalón \"acumulados\": \"(D)\" (L435) es \"(B)\" (L433) + \"Outros Juros e Proveitos Similares\" (L434); no se cuenta",
+  "escalón \"acumulados\": \"(C)\" (L442) es \"(A)\" (L440) + \"Juros e Custos Similares\" (L441); no se cuenta",
+  "escalón \"acumulados\": \"(G)\" (L446) es \"(E)\" (L444) + \"Imposto sobre o Rendimento do Exercício\" (L445); no se cuenta",
+  "escalón \"acumulados\": cerró el resultado exacto sin contar los totales que acumulan el anterior (to-do 237 q)",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b24 presenta los mismos resultados clasificados por funciones; se usa b6 como estado principal.",
+  "duda de extraer ya contestada para el club (antes de su alta) (cuadro-duplicado, \"-\"): aceptar, en relatorio-contas-2010-11.pdf",
   "duda de extraer que no afecta la carga: L439 anterior imprime 1 308 cuando 80+1 228 también da 1 308; consistente, pero el subtotal no tiene etiqueta.",
   "duda de extraer que no afecta la carga: L726 total 291 corresponde solo a proveitos; el lado de custos suma 1 905 con el resultado como balanceo, ya cargado en b6 L450.",
   "duda de extraer que no afecta la carga: L741 es el saldo extraordinario usado para balancear la nota, no un gasto.",
@@ -63,14 +79,14 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 119.614,
-  "gastos": 155.488,
-  "financiero": 2.196,
+  "ingresos": 39.922,
+  "gastos": 37.982,
+  "financiero": -1.614,
   "impuesto": 0.012,
   "resultadoImpreso": 0.313,
   "resultadoParaCargar": 0.313,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -106,14 +122,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "(D)",
-   "lado": "ingreso",
-   "M": 39.479,
-   "pagina": 18,
-   "linea": 435,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "G. Imobilizações",
    "lado": "ingreso",
    "M": 0.013,
@@ -144,14 +152,6 @@
    "pagina": 29,
    "linea": 740,
    "origen": "nota que desglosa \"Proveitos e Ganhos Extraordinários\""
-  },
-  {
-   "etiqueta": "(F)",
-   "lado": "ingreso",
-   "M": 40.213,
-   "pagina": 18,
-   "linea": 448,
-   "origen": "estado"
   },
   {
    "etiqueta": "Fornecimentos e Serviços Externos",
@@ -210,14 +210,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "(C)",
-   "lado": "gasto",
-   "M": 37.718,
-   "pagina": 18,
-   "linea": 442,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Donativos",
    "lado": "gasto",
    "M": 0.002,
@@ -248,27 +240,11 @@
    "pagina": 29,
    "linea": 740,
    "origen": "nota que desglosa \"Custos e Perdas Extraordinários\""
-  },
-  {
-   "etiqueta": "(E)",
-   "lado": "gasto",
-   "M": 39.888,
-   "pagina": 18,
-   "linea": 444,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(G)",
-   "lado": "gasto",
-   "M": 39.9,
-   "pagina": 18,
-   "linea": 446,
-   "origen": "estado"
   }
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -278,14 +254,14 @@
   },
   {
    "etiqueta": "Juros e Custos Similares",
-   "M": 1.905,
+   "M": -1.905,
    "linea": 441
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Imposto sobre o Rendimento do Exercício",
-   "M": 0.012,
+   "M": -0.012,
    "linea": 445
   }
  ]

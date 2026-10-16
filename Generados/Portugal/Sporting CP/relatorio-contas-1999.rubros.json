@@ -1,200 +1,136 @@
 {
-  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-1999.md",
-  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-1999.pdf",
-  "club": "sporting-cp",
-  "year": 2000,
-  "generatedAt": "2026-10-15T21:55:08.037Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Prestações de Serviços",
-      "lado": "revenue",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        3117.769
-      ],
-      "glosa": "Prestación de servicios"
-    },
-    {
-      "label": "Subsídios à Exploração",
-      "lado": "revenue",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        13.457
-      ],
-      "glosa": "Subvenciones a la explotación"
-    },
-    {
-      "label": "Proveitos Suplementares",
-      "lado": "revenue",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        12.853
-      ],
-      "glosa": "Ingresos accesorios"
-    },
-    {
-      "label": "Outros Proveitos e Ganhos Operacionais",
-      "lado": "revenue",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        42.148
-      ],
-      "glosa": "Otros ingresos y ganancias de explotación"
-    },
-    {
-      "label": "(D)",
-      "lado": "revenue",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        3354.795
-      ],
-      "glosa": "(D)"
-    },
-    {
-      "label": "Proveitos e Ganhos Extraordinários",
-      "lado": "revenue",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        3590.408
-      ],
-      "glosa": "Ingresos y ganancias extraordinarios"
-    },
-    {
-      "label": "(F)",
-      "lado": "revenue",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        6945.203
-      ],
-      "glosa": "(F)"
-    },
-    {
-      "label": "Fornecimentos e Serviços Externos",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        1315.265
-      ],
-      "glosa": "Suministros y servicios exteriores"
-    },
-    {
-      "label": "Remunerações",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        4088.187
-      ],
-      "glosa": "Remuneraciones"
-    },
-    {
-      "label": "Encargos Sociais",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Cargas sociales"
-    },
-    {
-      "label": "Outros",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        159.14
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "Corpóreo e Incorpóreo",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        3008.759
-      ],
-      "glosa": "Material e intangible"
-    },
-    {
-      "label": "Provisões",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Provisiones"
-    },
-    {
-      "label": "Impostos",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        5.086
-      ],
-      "glosa": "Impuestos"
-    },
-    {
-      "label": "Outros Custos e Perdas Operacionais",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        224.884
-      ],
-      "glosa": "Otros gastos y pérdidas de explotación"
-    },
-    {
-      "label": "(C)",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        8999.133
-      ],
-      "glosa": "(C)"
-    },
-    {
-      "label": "Custos e Perdas Extraordinários",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        238.493
-      ],
-      "glosa": "Gastos y pérdidas extraordinarios"
-    },
-    {
-      "label": "(E)",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        9237.626
-      ],
-      "glosa": "(E)"
-    },
-    {
-      "label": "(G)",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        9237.626
-      ],
-      "glosa": "(G)"
-    }
-  ]
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-1999.md",
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-1999.pdf",
+ "club": "sportingcp-pt",
+ "year": 2000,
+ "generatedAt": "2026-10-16T04:14:24.359Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Prestações de Serviços",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    3117.769
+   ]
+  },
+  {
+   "label": "Subsídios à Exploração",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    13.457
+   ]
+  },
+  {
+   "label": "Proveitos Suplementares",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    12.853
+   ]
+  },
+  {
+   "label": "Outros Proveitos e Ganhos Operacionais",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    42.148
+   ]
+  },
+  {
+   "label": "Proveitos e Ganhos Extraordinários",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    3590.408
+   ]
+  },
+  {
+   "label": "Fornecimentos e Serviços Externos",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    1315.265
+   ]
+  },
+  {
+   "label": "Remunerações",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    4088.187
+   ]
+  },
+  {
+   "label": "Encargos Sociais",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    159.14
+   ]
+  },
+  {
+   "label": "Corpóreo e Incorpóreo",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    3008.759
+   ]
+  },
+  {
+   "label": "Provisões",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    5.086
+   ]
+  },
+  {
+   "label": "Outros Custos e Perdas Operacionais",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    224.884
+   ]
+  },
+  {
+   "label": "Custos e Perdas Extraordinários",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    238.493
+   ]
+  }
+ ]
 }

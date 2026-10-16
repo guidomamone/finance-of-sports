@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.md",
- "generado": "2026-10-16T01:34:17.596Z",
- "estado": "cola",
+ "generado": "2026-10-16T04:15:23.078Z",
+ "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2006,
  "escala": {
@@ -33,30 +33,33 @@
    "fecha": "2026-10-16"
   }
  ],
- "cola": [
-  "32d8f2e"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "\"(F)\" 63.488882 cierra; además se suman 6 línea(s) fuera de ese total (115.489361)"
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "\"(E)\" 64.709806 cierra; además se suman 11 línea(s) fuera de ese total (185.353629)"
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 178.978243 - gastos 250.063435 ± financiero 5.132591 ± impuesto 0.026196 no da el impreso -1.220924",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 3.774758283725532e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2007",
    "ok": true,
-   "detalle": "ingresos de 2006: 178.978243 en este documento y 178.978243 en relatorio-contas-2006-07.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2006: 63.443122 en este documento y 63.443122 en relatorio-contas-2006-07.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -65,6 +68,11 @@
   }
  ],
  "notas": [
+  "escalón \"acumulados\": \"(D)\" (L737) es \"(B)\" (L734) + \"Outros\" (L736); no se cuenta",
+  "escalón \"acumulados\": \"(C)\" (L722) es \"(A)\" (L719) + \"Outros\" (L721); no se cuenta",
+  "escalón \"acumulados\": \"(G)\" (L726) es \"(E)\" (L724) + \"Imposto sobre o rendimento do exercício\" (L725); no se cuenta",
+  "escalón \"acumulados\": cerró el resultado exacto sin contar los totales que acumulan el anterior (to-do 237 q)",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar ya contestada para el club (cuadro-de-otro-anio, \"-\"): aceptar, en relatorio-contas-2013-14-pos-AG.pdf",
   "duda de localizar que no afecta la carga: La nota 16 (b15) indica que las cuentas de la SAD se incluirán en la consolidación del Sport Lisboa e Benfica, lo que sugiere que estas son individuales, mientras el club usa consolidado.",
   "duda de extraer ya contestada para el club (columna, \"-\"): aceptar, en relatorio-contas-2005-06.pdf"
@@ -73,14 +81,14 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 178.978243,
-  "gastos": 250.063435,
-  "financiero": 5.132591,
+  "ingresos": 63.443122,
+  "gastos": 59.596779,
+  "financiero": -5.041071,
   "impuesto": 0.026196,
   "resultadoImpreso": -1.220924,
   "resultadoParaCargar": -1.220924,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -116,27 +124,11 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "(D)",
-   "lado": "ingreso",
-   "M": 52.046239,
-   "pagina": 20,
-   "linea": 737,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Proveitos e ganhos extraordinários",
    "lado": "ingreso",
    "M": 11.442643,
    "pagina": 20,
    "linea": 738,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(F)",
-   "lado": "ingreso",
-   "M": 63.488882,
-   "pagina": 20,
-   "linea": 739,
    "origen": "estado"
   },
   {
@@ -204,46 +196,22 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "(C)",
-   "lado": "gasto",
-   "M": 61.07324,
-   "pagina": 20,
-   "linea": 722,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Custos e perdas extraordinários",
    "lado": "gasto",
    "M": 3.61037,
    "pagina": 20,
    "linea": 723,
    "origen": "estado"
-  },
-  {
-   "etiqueta": "(E)",
-   "lado": "gasto",
-   "M": 64.68361,
-   "pagina": 20,
-   "linea": 724,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(G)",
-   "lado": "gasto",
-   "M": 64.709806,
-   "pagina": 20,
-   "linea": 726,
-   "origen": "estado"
   }
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "Outros",
-   "M": 5.086831,
+   "M": -5.086831,
    "linea": 721
   },
   {
@@ -255,7 +223,7 @@
  "impuesto": [
   {
    "etiqueta": "Imposto sobre o rendimento do exercício",
-   "M": 0.026196,
+   "M": -0.026196,
    "linea": 725
   }
  ]

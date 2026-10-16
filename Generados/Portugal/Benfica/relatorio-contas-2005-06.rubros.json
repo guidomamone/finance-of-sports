@@ -1,200 +1,136 @@
 {
-  "md": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.md",
-  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
-  "club": "benfica-pt",
-  "year": 2006,
-  "generatedAt": "2026-10-16T01:34:17.596Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Prestações de serviços",
-      "lado": "revenue",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        38.644161
-      ],
-      "glosa": "Prestación de servicios"
-    },
-    {
-      "label": "Proveitos suplementares",
-      "lado": "revenue",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        12.765682
-      ],
-      "glosa": "Ingresos suplementarios"
-    },
-    {
-      "label": "Subsídios à exploração",
-      "lado": "revenue",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        0.028136
-      ],
-      "glosa": "Subvenciones a la explotación"
-    },
-    {
-      "label": "Outros proveitos e ganhos operacionais",
-      "lado": "revenue",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        0.5625
-      ],
-      "glosa": "Otros ingresos y ganancias de explotación"
-    },
-    {
-      "label": "(D)",
-      "lado": "revenue",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        52.046239
-      ],
-      "glosa": "(D)"
-    },
-    {
-      "label": "Proveitos e ganhos extraordinários",
-      "lado": "revenue",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        11.442643
-      ],
-      "glosa": "Ingresos y ganancias extraordinarios"
-    },
-    {
-      "label": "(F)",
-      "lado": "revenue",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        63.488882
-      ],
-      "glosa": "(F)"
-    },
-    {
-      "label": "Fornecimentos e serviços externos",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        12.477445
-      ],
-      "glosa": "Suministros y servicios exteriores"
-    },
-    {
-      "label": "Remunerações",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        27.497682
-      ],
-      "glosa": "Remuneraciones"
-    },
-    {
-      "label": "Outros",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        3.38139
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "Amortizações do imobilizado corpóreo e incorpóreo",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        10.73711
-      ],
-      "glosa": "Amortizaciones del inmovilizado material e intangible"
-    },
-    {
-      "label": "Ajustamentos",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        0.104379
-      ],
-      "glosa": "Ajustes"
-    },
-    {
-      "label": "Provisões",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        1.291943
-      ],
-      "glosa": "Provisiones"
-    },
-    {
-      "label": "Impostos",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        0.392925
-      ],
-      "glosa": "Impuestos"
-    },
-    {
-      "label": "Outros custos e perdas operacionais",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        0.103535
-      ],
-      "glosa": "Otros gastos y pérdidas de explotación"
-    },
-    {
-      "label": "(C)",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        61.07324
-      ],
-      "glosa": "(C)"
-    },
-    {
-      "label": "Custos e perdas extraordinários",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        3.61037
-      ],
-      "glosa": "Gastos y pérdidas extraordinarios"
-    },
-    {
-      "label": "(E)",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        64.68361
-      ],
-      "glosa": "(E)"
-    },
-    {
-      "label": "(G)",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        64.709806
-      ],
-      "glosa": "(G)"
-    }
-  ]
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.md",
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+ "club": "benfica-pt",
+ "year": 2006,
+ "generatedAt": "2026-10-16T04:15:23.078Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Prestações de serviços",
+   "lado": "revenue",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    38.644161
+   ]
+  },
+  {
+   "label": "Proveitos suplementares",
+   "lado": "revenue",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    12.765682
+   ]
+  },
+  {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    0.028136
+   ]
+  },
+  {
+   "label": "Outros proveitos e ganhos operacionais",
+   "lado": "revenue",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    0.5625
+   ]
+  },
+  {
+   "label": "Proveitos e ganhos extraordinários",
+   "lado": "revenue",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    11.442643
+   ]
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    12.477445
+   ]
+  },
+  {
+   "label": "Remunerações",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    27.497682
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    3.38139
+   ]
+  },
+  {
+   "label": "Amortizações do imobilizado corpóreo e incorpóreo",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    10.73711
+   ]
+  },
+  {
+   "label": "Ajustamentos",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    0.104379
+   ]
+  },
+  {
+   "label": "Provisões",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    1.291943
+   ]
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    0.392925
+   ]
+  },
+  {
+   "label": "Outros custos e perdas operacionais",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    0.103535
+   ]
+  },
+  {
+   "label": "Custos e perdas extraordinários",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    3.61037
+   ]
+  }
+ ]
 }

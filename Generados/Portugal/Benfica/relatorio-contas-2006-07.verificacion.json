@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.md",
- "generado": "2026-10-15T21:55:00.121Z",
- "estado": "cola",
- "clubId": null,
- "year": null,
+ "generado": "2026-10-16T04:15:23.103Z",
+ "estado": "ok",
+ "clubId": "benfica-pt",
+ "year": 2007,
  "escala": {
   "valor": "unidades",
   "escalon": 0,
@@ -21,41 +21,66 @@
    "evidencia": ".md L196 exercício entre 1 de agosto de 2006 e 31 de julho de 2007",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS)",
+   "evidencia": "relatorio-contas-2006-07.md: sin estados consolidados; relatorio-contas-2023-24.md L1319",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
   }
  ],
- "cola": [
-  "bad0149",
-  "900ec6c",
-  "7ffdc3b",
-  "eafe941",
-  "7c675ce"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": false,
-   "detalle": "las líneas suman 223.573871 y el total impreso dice 83.350076"
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "\"(G)\" 68.075647 cierra; además se suman 14 línea(s) fuera de ese total (193.740927)"
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 223.573871 - gastos 261.816574 ± financiero 7.367671 ± impuesto 0.038656 no da el impreso 15.274429",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 1.7763568394002505e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2008",
+   "ok": true,
+   "detalle": "ingresos de 2007: 83.285522 en este documento y 82.058219 en relatorio-contas-2007-08.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2006",
+   "ok": true,
+   "detalle": "ingresos de 2006: 63.443122 en relatorio-contas-2005-06.pdf y 63.443122 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2006: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"Outros\" no suma el renglón (7.367671 contra 3.039614, sumando sus renglones): quedó el renglón del estado",
+  "escalón \"acumulados\": \"(D)\" (L934) es \"(B)\" (L931) + \"Outros\" (L933); no se cuenta",
+  "escalón \"acumulados\": \"(C)\" (L918) es \"(A)\" (L915) + \"Outros\" (L917); no se cuenta",
+  "escalón \"acumulados\": \"(G)\" (L922) es \"(E)\" (L920) + \"Imposto sobre o rendimento do exercício\" (L921); no se cuenta",
+  "escalón \"acumulados\": cerró el resultado exacto sin contar los totales que acumulan el anterior (to-do 237 q)",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: Son cuadros de análisis en miles de euros con reclasificación de gestión, no el estado oficial.",
+  "duda de extraer ya contestada para el club (antes de su alta) (columna, \"Custos com o pessoal\"): aceptar, en relatorio-contas-2006-07.pdf",
   "duda de extraer que no afecta la carga: El estado imprime (E) sin impuesto y (G) con impuesto; (F)-(G) da el resultado líquido (L941)."
  ],
  "reintentar": [
@@ -74,14 +99,14 @@
   }
  ],
  "totales": {
-  "ingresos": 223.573871,
-  "gastos": 261.816574,
-  "financiero": 7.367671,
+  "ingresos": 83.285522,
+  "gastos": 60.733874,
+  "financiero": -7.238563,
   "impuesto": 0.038656,
   "resultadoImpreso": 15.274429,
   "resultadoParaCargar": 15.274429,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -181,14 +206,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "(D)",
-   "lado": "ingreso",
-   "M": 56.938273,
-   "pagina": 30,
-   "linea": 934,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Ganhos em imobilizações",
    "lado": "ingreso",
    "M": 24.114308,
@@ -219,14 +236,6 @@
    "pagina": 39,
    "linea": 1380,
    "origen": "nota que desglosa \"Proveitos e ganhos extraordinários\""
-  },
-  {
-   "etiqueta": "(F)",
-   "lado": "ingreso",
-   "M": 83.350076,
-   "pagina": 30,
-   "linea": 936,
-   "origen": "estado"
   },
   {
    "etiqueta": "Fornecimentos e serviços externos",
@@ -293,14 +302,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "(C)",
-   "lado": "gasto",
-   "M": 64.970062,
-   "pagina": 30,
-   "linea": 918,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Perdas em imobilizações",
    "lado": "gasto",
    "M": 1.991163,
@@ -331,32 +332,16 @@
    "pagina": 39,
    "linea": 1373,
    "origen": "nota que desglosa \"Custos e perdas extraordinários\""
-  },
-  {
-   "etiqueta": "(E)",
-   "lado": "gasto",
-   "M": 68.036991,
-   "pagina": 30,
-   "linea": 920,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(G)",
-   "lado": "gasto",
-   "M": 68.075647,
-   "pagina": 30,
-   "linea": 922,
-   "origen": "estado"
   }
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "Outros",
-   "M": 7.303117,
+   "M": -7.303117,
    "linea": 917
   },
   {
@@ -368,7 +353,7 @@
  "impuesto": [
   {
    "etiqueta": "Imposto sobre o rendimento do exercício",
-   "M": 0.038656,
+   "M": -0.038656,
    "linea": 921
   }
  ]

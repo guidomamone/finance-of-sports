@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.md",
- "generado": "2026-10-15T21:55:08.168Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T04:15:23.145Z",
+ "estado": "ok",
+ "clubId": "sportingcp-pt",
  "year": 2003,
  "escala": {
   "valor": "miles",
@@ -12,57 +12,68 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "853ed6c",
-  "38f08dd",
-  "1291a06",
-  "4bf8bc4"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "\"(F)\" 27.316 cierra; además se suman 10 línea(s) fuera de ese total (45.229)"
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "\"(E)\" 54.627 cierra; además se suman 14 línea(s) fuera de ese total (158.344)"
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 72.545 - gastos 212.971 ± financiero 4.437 ± impuesto 0.014 no da el impreso -27.311",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 0.0009999999999976694
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2004",
    "ok": true,
-   "detalle": "ingresos de 2003: 72.545 en este documento y 72.545 en relatorio-contas-2003-04.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2003: 26.45 en este documento y 26.45 en relatorio-contas-2003-04.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2002",
+   "ok": true,
+   "detalle": "ingresos de 2002: 36.923 en relatorio-contas-2001.pdf y 36.923 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2002: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "escalón \"acumulados\": \"(D)\" (L436) es \"(B)\" (L434) + \"Outros Juros e Proveitos Similares\" (L435); no se cuenta",
+  "escalón \"acumulados\": \"(C)\" (L443) es \"(A)\" (L441) + \"Juros e Custos Similares\" (L442); no se cuenta",
+  "escalón \"acumulados\": \"(G)\" (L447) es \"(E)\" (L445) + \"Imposto sobre o Rendimento do Exerc\" (L446); no se cuenta",
+  "escalón \"acumulados\": cerró el resultado exacto sin contar los totales que acumulan el anterior (to-do 237 q)",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b24 repite el resultado del ejercicio por funciones; ya se carga el estado por naturaleza b7.",
   "duda de localizar que no afecta la carga: b2 muestra transacciones con partes relacionadas, no un desglose de renglones del estado.",
+  "duda de extraer ya contestada para el club (antes de su alta) (cuadro-duplicado, \"-\"): aceptar, en relatorio-contas-2010-11.pdf",
   "duda de extraer que no afecta la carga: L431 no muestra importe; 21 891 + 1 101 = 22 992."
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 72.545,
-  "gastos": 212.971,
-  "financiero": 4.437,
+  "ingresos": 26.45,
+  "gastos": 51.043,
+  "financiero": -2.703,
   "impuesto": 0.014,
   "resultadoImpreso": -27.311,
   "resultadoParaCargar": -27.311,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -95,14 +106,6 @@
    "M": 0.198,
    "pagina": 21,
    "linea": 432,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(D)",
-   "lado": "ingreso",
-   "M": 18.779,
-   "pagina": 21,
-   "linea": 436,
    "origen": "estado"
   },
   {
@@ -144,14 +147,6 @@
    "pagina": 31,
    "linea": 720,
    "origen": "nota que desglosa \"Proveitos e Ganhos Extraordinários\""
-  },
-  {
-   "etiqueta": "(F)",
-   "lado": "ingreso",
-   "M": 27.316,
-   "pagina": 21,
-   "linea": 449,
-   "origen": "estado"
   },
   {
    "etiqueta": "Fornecimentos e Serviços Externos",
@@ -210,14 +205,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "(C)",
-   "lado": "gasto",
-   "M": 52.688,
-   "pagina": 21,
-   "linea": 443,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Donativos",
    "lado": "gasto",
    "M": 0.012,
@@ -256,27 +243,11 @@
    "pagina": 31,
    "linea": 721,
    "origen": "nota que desglosa \"Custos e Perdas Extraordinários\""
-  },
-  {
-   "etiqueta": "(E)",
-   "lado": "gasto",
-   "M": 54.613,
-   "pagina": 21,
-   "linea": 445,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(G)",
-   "lado": "gasto",
-   "M": 54.627,
-   "pagina": 21,
-   "linea": 447,
-   "origen": "estado"
   }
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -286,14 +257,14 @@
   },
   {
    "etiqueta": "Juros e Custos Similares",
-   "M": 3.57,
+   "M": -3.57,
    "linea": 442
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Imposto sobre o Rendimento do Exerc",
-   "M": 0.014,
+   "M": -0.014,
    "linea": 446
   }
  ]

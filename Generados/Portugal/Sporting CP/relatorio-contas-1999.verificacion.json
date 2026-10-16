@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-1999.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-1999.md",
- "generado": "2026-10-15T21:55:08.037Z",
+ "generado": "2026-10-16T04:14:24.358Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "sportingcp-pt",
  "year": 2000,
  "escala": {
   "valor": "miles",
@@ -13,50 +13,63 @@
  },
  "ajustes": null,
  "cola": [
-  "f385c8d",
-  "d05f702"
+  "6cf2049",
+  "a4e455b",
+  "adedbdb"
  ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "\"(F)\" 6945.203 cierra; además se suman 6 línea(s) fuera de ese total (10131.43)"
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "\"(E)\" 9237.626 cierra; además se suman 11 línea(s) fuera de ese total (27276.573)"
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 17076.633 - gastos 36514.199 ± financiero 366.38 ± impuesto 0 no da el impreso -2292.423",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2001",
-   "ok": true,
-   "detalle": "ingresos de 2000: 17076.633 en este documento y 17076.633 en relatorio-contas-2000.pdf (columna del año anterior)"
+   "ok": false,
+   "detalle": "ingresos de 2000: 6776.635 en este documento y 17076.633 en relatorio-contas-2000.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 1999: este chequeo no se puede hacer"
   }
  ],
- "notas": [],
+ "notas": [
+  "escalón \"acumulados\": \"(D)\" (L75) es \"(B)\" (L73) + \"Outros Juros e Proveitos Similares\" (L74); no se cuenta",
+  "escalón \"acumulados\": \"(C)\" (L82) es \"(A)\" (L80) + \"Juros e Custos Similares\" (L81); no se cuenta",
+  "escalón \"acumulados\": \"(G)\" (L86) es \"(E)\" (L84); no se cuenta",
+  "escalón \"acumulados\": cerró el resultado exacto sin contar los totales que acumulan el anterior (to-do 237 q)",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar ya contestada para el club (antes de su alta) (cuadro-duplicado, \"-\"): aceptar, en relatorio-contas-2010-11.pdf"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 17076.633,
-  "gastos": 36514.199,
-  "financiero": 366.38,
+  "ingresos": 6776.635,
+  "gastos": 9039.814,
+  "financiero": -29.244,
   "impuesto": 0,
   "resultadoImpreso": -2292.423,
   "resultadoParaCargar": -2292.423,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -92,27 +105,11 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "(D)",
-   "lado": "ingreso",
-   "M": 3354.795,
-   "pagina": 2,
-   "linea": 75,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Proveitos e Ganhos Extraordinários",
    "lado": "ingreso",
    "M": 3590.408,
    "pagina": 2,
    "linea": 76,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(F)",
-   "lado": "ingreso",
-   "M": 6945.203,
-   "pagina": 2,
-   "linea": 84,
    "origen": "estado"
   },
   {
@@ -180,35 +177,11 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "(C)",
-   "lado": "gasto",
-   "M": 8999.133,
-   "pagina": 2,
-   "linea": 82,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Custos e Perdas Extraordinários",
    "lado": "gasto",
    "M": 238.493,
    "pagina": 2,
    "linea": 83,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(E)",
-   "lado": "gasto",
-   "M": 9237.626,
-   "pagina": 2,
-   "linea": 84,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(G)",
-   "lado": "gasto",
-   "M": 9237.626,
-   "pagina": 2,
-   "linea": 86,
    "origen": "estado"
   }
  ],
@@ -219,7 +192,7 @@
  "financiero": [
   {
    "etiqueta": "Juros e Custos Similares",
-   "M": 197.812,
+   "M": -197.812,
    "linea": 81
   },
   {
@@ -234,5 +207,34 @@
    "M": 0,
    "linea": 85
   }
- ]
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "pendiente",
+  "clave": "e63ec14204d54c1ce6b119f8a2f69d9d91694199",
+  "rango": [
+   64,
+   93
+  ],
+  "lineasCargadas": [
+   67,
+   69,
+   70,
+   71,
+   76,
+   67,
+   69,
+   70,
+   71,
+   74,
+   75,
+   77,
+   78,
+   83,
+   81,
+   74,
+   85
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 64 a 93 del .md):\nL65: | CUSTOS E PERDAS | 31 JUL 00 | 31 JUL 99 | PROVEITOS E GANHOS | 31 JUL 00 | 31 JUL 99 |\nL66: | :--- | :---: | :---: | :--- | :---: | :---: |\nL67: | Fornecimentos e Serviços Externos | 1 315 265 | 1 140 677 | Prestações de Serviços | 3 117 769 | 2 521 505 |\nL68: | Custos com o Pessoal: | | | | | |\nL69: | Remunerações | 4 088 187 | 2 275 881 | Subsídios à Exploração | 13 457 | 0 |\nL70: | Encargos Sociais | 0 | | Proveitos Suplementares | 12 853 | 24 413 |\nL71: | Outros | 159 140 | 154 567 | Outros Proveitos e Ganhos Operacionais | 42 148 | 132 857 |\nL72: | | 4 247 327 | 2 430 448 | | 68 458 | 157 270 |\nL73: | Amortizações do Imobilizado | | | **(B)** | 3 186 227 | 2 678 775 |\nL74: | Corpóreo e Incorpóreo | 3 008 759 | 2 782 485 | Outros Juros e Proveitos Similares | 168 568 | 173 142 |\nL75: | Provisões | 0 | 0 | **(D)** | 3 354 795 | 2 851 917 |\nL76: | | 3 008 759 | 2 782 485 | Proveitos e Ganhos Extraordinários | 3 590 408 | 3 869 972 |\nL77: | Impostos | 5 086 | 14 185 | | | |\nL78: | Outros Custos e Perdas Operacionais | 224 884 | 225 997 | | | |\nL79: | | 229 970 | 240 182 | | | |\nL80: | **(A)** | 8 801 321 | 6 593 792 | | | |\nL81: | Juros e Custos Similares | 197 812 | 277 422 | | | |\nL82: | **(C)** | 8 999 133 | 6 871 214 | | | |\nL83: | Custos e Perdas Extraordinários | 238 493 | 361 087 | | | |\nL84: | **(E)** | 9 237 626 | 7 232 301 | **(F)** | 6 945 203 | 6 721 889 |\nL85: | Imposto sobre o Rendimento do Exercício | 0 | 0 | | | |\nL86: | **(G)** | 9 237 626 | 7 232 301 | Resultados Operacionais: (B) - (A) | (5 615 094) | (3 915 017) |\nL87: | Resultado Líquido do Exercício | (2 292 423) | (510 412) | Resultados Financeiros (D-B) - (C-A) | (29 244) | (104 280) |\nL88: | | 6 945 203 | 6 721 889 | Resultados Correntes: (D) - (C) | (5 644 338) | (4 019 297) |\nL89: | | | | Resultados Antes de Impostos: (F) - (E) | (2 292 423) | (510 412) |\nL90: | | | | Resultado Líquido do Exercício: (F) - (G) | (2 292 423) | (510 412) |\nL91: | | | | Cash Flow: (RLE) + (Amortizações + Provisões) | 716 336 | 2 272 073 |\nL93: O Anexo faz parte integrante desta Demonstração dos Resultados\n\nLO QUE SE CARGA:\n- ingreso · \"Prestações de Serviços\" · 3117.769 · L67\n- ingreso · \"Subsídios à Exploração\" · 13.457 · L69\n- ingreso · \"Proveitos Suplementares\" · 12.853 · L70\n- ingreso · \"Outros Proveitos e Ganhos Operacionais\" · 42.148 · L71\n- ingreso · \"Proveitos e Ganhos Extraordinários\" · 3590.408 · L76\n- gasto · \"Fornecimentos e Serviços Externos\" · 1315.265 · L67\n- gasto · \"Remunerações\" · 4088.187 · L69\n- gasto · \"Encargos Sociais\" · 0 · L70\n- gasto · \"Outros\" · 159.14 · L71\n- gasto · \"Corpóreo e Incorpóreo\" · 3008.759 · L74\n- gasto · \"Provisões\" · 0 · L75\n- gasto · \"Impostos\" · 5.086 · L77\n- gasto · \"Outros Custos e Perdas Operacionais\" · 224.884 · L78\n- gasto · \"Custos e Perdas Extraordinários\" · 238.493 · L83\n- financiero · \"Juros e Custos Similares\" · -197.812 · L81\n- financiero · \"Outros Juros e Proveitos Similares\" · 168.568 · L74\n- impuesto · \"Imposto sobre o Rendimento do Exercício\" · 0 · L85"
+ }
 }
