@@ -14,3 +14,5 @@
 - Todo descubierto con Exa y bajado del sitio del club. Revisar a qué entidad corresponde cada PDF (SAD vs clube) antes de cargar.
 - Relatórios SAD 2021/22 a 2024/25 (38-42 págs.); los de 6-7 págs. son del clube asociación.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Vizela/Relatorio-e-Contas-2024-25-FCV.pdf` (sourceId `vizela-pt-relatorio-e-contas-2024-25-fcv`).
