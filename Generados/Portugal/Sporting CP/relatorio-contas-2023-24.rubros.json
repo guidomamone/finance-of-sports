@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2023-24.pdf",
   "club": "sportingcp-pt",
   "year": 2024,
-  "generatedAt": "2026-10-16T01:14:49.430Z",
+  "generatedAt": "2026-10-16T01:34:17.572Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         4.341
       ],
-      "glosa": "Distribución / Minorista"
+      "glosa": "Distribución / Comercio minorista"
     },
     {
       "label": "Loja Verde Online",
@@ -34,7 +34,7 @@
       "values": [
         3.003
       ],
-      "glosa": "Tienda oficial en línea"
+      "glosa": "Tienda oficial online"
     },
     {
       "label": "Direitos televisivos",
@@ -44,7 +44,7 @@
       "values": [
         27.6
       ],
-      "glosa": "Derechos de televisión"
+      "glosa": "Derechos de retransmisión televisiva"
     },
     {
       "label": "Market Pool da Liga Europa",
@@ -54,7 +54,7 @@
       "values": [
         1.649
       ],
-      "glosa": "Market pool de la Liga Europa"
+      "glosa": "Market pool de la Europa League"
     },
     {
       "label": "Outros direitos televisivos",
@@ -64,7 +64,7 @@
       "values": [
         0.685
       ],
-      "glosa": "Otros derechos de televisión"
+      "glosa": "Otros derechos de retransmisión"
     },
     {
       "label": "Bilhetes de época",
@@ -104,7 +104,7 @@
       "values": [
         1.855
       ],
-      "glosa": "Asientos VIP / Business Seats"
+      "glosa": "Asientos Business"
     },
     {
       "label": "Bilheteira Liga Europa",
@@ -114,7 +114,7 @@
       "values": [
         1.542
       ],
-      "glosa": "Taquilla de la Liga Europa"
+      "glosa": "Taquilla de la Europa League"
     },
     {
       "label": "Bilheteira Taça de Portugal",
@@ -194,7 +194,7 @@
       "values": [
         8.79
       ],
-      "glosa": "Premio por rendimiento por participación en la Liga Europa"
+      "glosa": "Prima por rendimiento por participación en la Europa League"
     },
     {
       "label": "Prémio de performance na fase de Grupos da Liga Europa",
@@ -204,7 +204,7 @@
       "values": [
         2.31
       ],
-      "glosa": "Premio por rendimiento en la fase de grupos de la Liga Europa"
+      "glosa": "Prima por rendimiento en la fase de grupos de la Europa League"
     },
     {
       "label": "Passagem ao play-off da Liga Europa",
@@ -214,7 +214,7 @@
       "values": [
         0.55
       ],
-      "glosa": "Clasificación a la fase de eliminatorias de la Liga Europa"
+      "glosa": "Clasificación para el play-off de la Europa League"
     },
     {
       "label": "Outros prémios",
@@ -224,7 +224,7 @@
       "values": [
         0.584
       ],
-      "glosa": "Otros premios"
+      "glosa": "Otras primas"
     },
     {
       "label": "Participação nas Competições Nacionais",
@@ -294,7 +294,7 @@
       "values": [
         140.622
       ],
-      "glosa": "Venta de derechos deportivos"
+      "glosa": "Venta de derechos federativos"
     },
     {
       "label": "Mecanismo de solidariedade/Compensação por formação",
@@ -334,7 +334,7 @@
       "values": [
         2.6
       ],
-      "glosa": "Asistencia a los partidos"
+      "glosa": "Asistencia y operativa de partidos"
     },
     {
       "label": "Vigilância",
@@ -344,7 +344,7 @@
       "values": [
         0.945
       ],
-      "glosa": "Seguridad y vigilancia"
+      "glosa": "Vigilancia y seguridad"
     },
     {
       "label": "Manutenções",
@@ -364,7 +364,7 @@
       "values": [
         0.877
       ],
-      "glosa": "Electricidad"
+      "glosa": "Suministro eléctrico"
     },
     {
       "label": "Limpeza",
@@ -404,7 +404,7 @@
       "values": [
         6.049
       ],
-      "glosa": "Organización, desplazamientos y alojamiento de partidos"
+      "glosa": "Organización, desplazamientos y estancias para partidos"
     },
     {
       "label": "Trabalhos especializados",
@@ -414,7 +414,7 @@
       "values": [
         5.342
       ],
-      "glosa": "Trabajos y servicios especializados"
+      "glosa": "Servicios y trabajos especializados"
     },
     {
       "label": "*Royalties*",
@@ -424,7 +424,7 @@
       "values": [
         2.775
       ],
-      "glosa": "*Royalties*"
+      "glosa": "Cánones (royalties)"
     },
     {
       "label": "Honorários",
@@ -484,7 +484,7 @@
       "values": [
         1.318
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Rentas y alquileres"
     },
     {
       "label": "Comunicações",
@@ -504,7 +504,7 @@
       "values": [
         0.372
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Conservação e reparação",
@@ -554,7 +554,7 @@
       "values": [
         1.086
       ],
-      "glosa": "Retribución de los órganos de administración"
+      "glosa": "Remuneración de los órganos de gobierno"
     },
     {
       "label": "Remuneração do pessoal",
@@ -564,7 +564,7 @@
       "values": [
         64.646
       ],
-      "glosa": "Remuneración del personal"
+      "glosa": "Gastos de personal"
     },
     {
       "label": "Encargos com remunerações",
@@ -574,7 +574,7 @@
       "values": [
         7.806
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales sobre retribuciones"
     },
     {
       "label": "Seguros",
@@ -584,7 +584,7 @@
       "values": [
         4.722
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Prémios de desempenho e de performance desportiva",
@@ -594,7 +594,7 @@
       "values": [
         8.988
       ],
-      "glosa": "Primas por rendimiento y desempeño deportivo"
+      "glosa": "Primas de rendimiento deportivo"
     },
     {
       "label": "Indemnizações",
@@ -624,7 +624,7 @@
       "values": [
         5.531
       ],
-      "glosa": "Amortizaciones y depreciaciones excluyendo plantilla"
+      "glosa": "Dotación para amortizaciones y depreciaciones (excluyendo plantilla)"
     },
     {
       "label": "Imparidade de clientes (Nota 15)",
@@ -634,7 +634,7 @@
       "values": [
         0.319
       ],
-      "glosa": "Deterioro de clientes (Nota 15)"
+      "glosa": "Pérdidas por deterioro de clientes (Nota 15)"
     },
     {
       "label": "Provisões para outros riscos e encargos (Nota 20)",
@@ -654,7 +654,7 @@
       "values": [
         0.499
       ],
-      "glosa": "Cuotas de socios y afiliaciones"
+      "glosa": "Cuotas de socios"
     },
     {
       "label": "Multas e penalidades",
@@ -674,7 +674,7 @@
       "values": [
         0.097
       ],
-      "glosa": "Impuestos"
+      "glosa": "Tributos e impuestos"
     },
     {
       "label": "Cedência de jogadores",
@@ -694,7 +694,7 @@
       "values": [
         0.027
       ],
-      "glosa": "Prospección de mercado"
+      "glosa": "Prospección y análisis de mercado"
     },
     {
       "label": "Juros de mora",
@@ -744,7 +744,7 @@
       "values": [
         32.442
       ],
-      "glosa": "Porcentaje de derechos económicos / plusvalías"
+      "glosa": "Porcentaje sobre derechos económicos / plusvalías"
     },
     {
       "label": "Comissões",

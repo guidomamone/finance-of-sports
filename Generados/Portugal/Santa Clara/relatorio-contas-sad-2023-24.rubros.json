@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.pdf",
   "club": "santaclara-pt",
   "year": 2024,
-  "generatedAt": "2026-10-16T01:14:49.325Z",
+  "generatedAt": "2026-10-16T01:34:17.466Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.071567
       ],
-      "glosa": "Venta de entradas"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "Apostas Desportivas e Placard",
@@ -64,7 +64,7 @@
       "values": [
         0.45
       ],
-      "glosa": "Derechos audiovisuales"
+      "glosa": "Derechos de televisión"
     },
     {
       "label": "Cedência por Empréstimos Direitos Desportivos",
@@ -74,7 +74,7 @@
       "values": [
         0.32
       ],
-      "glosa": "Cesión temporal de derechos deportivos"
+      "glosa": "Cesión por préstamos de derechos deportivos"
     },
     {
       "label": "Diversos",
@@ -104,7 +104,7 @@
       "values": [
         1.81501
       ],
-      "glosa": "Traspasos de jugadores"
+      "glosa": "Enajenación de jugadores"
     },
     {
       "label": "Correções Relativas a Períodos Anteriores",
@@ -114,7 +114,7 @@
       "values": [
         0.370993
       ],
-      "glosa": "Ajustes de ejercicios anteriores"
+      "glosa": "Correcciones relativas a periodos anteriores"
     },
     {
       "label": "Outros",
@@ -144,7 +144,7 @@
       "values": [
         0.107466
       ],
-      "glosa": "Coste de las mercancías vendidas y materiales consumidos"
+      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
     },
     {
       "label": "Subcontratos",
@@ -154,7 +154,7 @@
       "values": [
         0.286702
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontratos"
     },
     {
       "label": "Serviços Especializados",
@@ -214,7 +214,7 @@
       "values": [
         0.272994
       ],
-      "glosa": "Retribuciones de los órganos de administración"
+      "glosa": "Remuneraciones de los órganos sociales"
     },
     {
       "label": "Remunerações ao Pessoal",
@@ -224,7 +224,7 @@
       "values": [
         9.259487
       ],
-      "glosa": "Sueldos y salarios del personal"
+      "glosa": "Remuneraciones al personal"
     },
     {
       "label": "Indemnizações",
@@ -244,7 +244,7 @@
       "values": [
         1.036626
       ],
-      "glosa": "Cargas sociales"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguro Acidentes de Trabalho e Doenças",
@@ -284,7 +284,7 @@
       "values": [
         -0.060146
       ],
-      "glosa": "Provisiones (dotaciones/reversiones)"
+      "glosa": "Provisiones (aumentos/reducciones)"
     },
     {
       "label": "IMI",
@@ -294,7 +294,7 @@
       "values": [
         0.001014
       ],
-      "glosa": "Impuesto Municipal sobre Inmuebles (IMI)"
+      "glosa": "Impuesto sobre bienes inmuebles (IMI)"
     },
     {
       "label": "IUC",
@@ -304,7 +304,7 @@
       "values": [
         0.000574
       ],
-      "glosa": "Impuesto Único de Circulación (IUC)"
+      "glosa": "Impuesto de circulación (IUC)"
     },
     {
       "label": "Imposto de Selo",
@@ -334,7 +334,7 @@
       "values": [
         0.181499
       ],
-      "glosa": "Ajustes de ejercicios anteriores"
+      "glosa": "Correcciones relativas a periodos anteriores"
     },
     {
       "label": "Donativos",
@@ -344,7 +344,7 @@
       "values": [
         0.01234
       ],
-      "glosa": "Donaciones"
+      "glosa": "Donativos"
     },
     {
       "label": "Quotizações",
@@ -384,7 +384,7 @@
       "values": [
         0.0636
       ],
-      "glosa": "Gastos no debidamente documentados"
+      "glosa": "Gastos no justificados documentalmente"
     },
     {
       "label": "Juros de mora e compensatórios",
@@ -414,7 +414,7 @@
       "values": [
         1.198188
       ],
-      "glosa": "Dotaciones/reversiones por amortización y depreciación"
+      "glosa": "Gastos/reversiones por amortización y depreciación"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2022-23.pdf",
   "club": "santaclara-pt",
   "year": 2023,
-  "generatedAt": "2026-10-16T01:14:49.319Z",
+  "generatedAt": "2026-10-16T01:34:17.460Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.239985
       ],
-      "glosa": "Taquilla y venta de entradas"
+      "glosa": "Venta de entradas y taquilla"
     },
     {
       "label": "Apostos desportivas e Placard",
@@ -54,7 +54,7 @@
       "values": [
         0.047398
       ],
-      "glosa": "Premios por participación"
+      "glosa": "Premios de participación"
     },
     {
       "label": "Direitos televisivos",
@@ -64,7 +64,7 @@
       "values": [
         3.599981
       ],
-      "glosa": "Derechos de retransmisión televisiva"
+      "glosa": "Derechos de televisión"
     },
     {
       "label": "Cêdencia por empréstimos direitos desportivos",
@@ -74,7 +74,7 @@
       "values": [
         1.097754
       ],
-      "glosa": "Cesión de derechos deportivos en préstamo"
+      "glosa": "Cesión por préstamo de derechos deportivos"
     },
     {
       "label": "Diversos",
@@ -104,7 +104,7 @@
       "values": [
         0.05863
       ],
-      "glosa": "Compensación de gastos de desplazamiento"
+      "glosa": "Compensación por gastos de desplazamiento"
     },
     {
       "label": "UEFA Surplus",
@@ -134,7 +134,7 @@
       "values": [
         0.110265
       ],
-      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y materiales consumidos"
     },
     {
       "label": "Subcontratos",
@@ -144,7 +144,7 @@
       "values": [
         0.423635
       ],
-      "glosa": "Subcontratación"
+      "glosa": "Subcontratas"
     },
     {
       "label": "Trabalhos especializados",
@@ -174,7 +174,7 @@
       "values": [
         0.02574
       ],
-      "glosa": "Honorarios profesionales"
+      "glosa": "Honorarios"
     },
     {
       "label": "Conservação e reparação",
@@ -184,7 +184,7 @@
       "values": [
         0.025546
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Reparaciones y conservación"
     },
     {
       "label": "Participação em competições",
@@ -214,7 +214,7 @@
       "values": [
         0.099888
       ],
-      "glosa": "Herramientas y utillaje"
+      "glosa": "Herramientas y utensilios"
     },
     {
       "label": "Livros e documentação técnica",
@@ -264,7 +264,7 @@
       "values": [
         0.031948
       ],
-      "glosa": "Suministros y energía"
+      "glosa": "Energía y fluidos"
     },
     {
       "label": "Deslocações, estadas e transportes",
@@ -284,7 +284,7 @@
       "values": [
         0.198894
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Comunicação",
@@ -304,7 +304,7 @@
       "values": [
         0.006704
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Contencioso e notariado",
@@ -314,7 +314,7 @@
       "values": [
         0.165384
       ],
-      "glosa": "Servicios contenciosos y notariales"
+      "glosa": "Gastos notariales y contenciosos"
     },
     {
       "label": "Despesas de representação",
@@ -354,7 +354,7 @@
       "values": [
         0.251032
       ],
-      "glosa": "Remuneraciones de los órganos de gobierno"
+      "glosa": "Retribución de los órganos de administración"
     },
     {
       "label": "Remunerações ao pessoal",
@@ -384,7 +384,7 @@
       "values": [
         0.773416
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales"
     },
     {
       "label": "Seguro acidentes de trabalho e doenças",
@@ -414,7 +414,7 @@
       "values": [
         0.13075
       ],
-      "glosa": "Pérdidas por deterioro de cuentas por cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -434,7 +434,7 @@
       "values": [
         0.000103
       ],
-      "glosa": "Impuesto Municipal sobre Inmuebles (IMI)"
+      "glosa": "IMI (Impuesto Municipal sobre Bienes Inmuebles)"
     },
     {
       "label": "IUC",
@@ -444,7 +444,7 @@
       "values": [
         0.00016
       ],
-      "glosa": "Impuesto de Circulación (IUC)"
+      "glosa": "IUC (Impuesto Único de Circulación)"
     },
     {
       "label": "Imposto de selo",
@@ -454,7 +454,7 @@
       "values": [
         0.00415
       ],
-      "glosa": "Impuesto de transmisiones patrimoniales y timbre"
+      "glosa": "Impuesto de timbre"
     },
     {
       "label": "Outros impostos indiretos",
@@ -484,7 +484,7 @@
       "values": [
         0.000016
       ],
-      "glosa": "Descuentos sobre ventas por pronto pago concedidos"
+      "glosa": "Descuentos concedidos por pronto pago"
     },
     {
       "label": "Perdas em inventários",
@@ -514,7 +514,7 @@
       "values": [
         0.099542
       ],
-      "glosa": "Ajustes de ejercicios anteriores"
+      "glosa": "Ajustes correspondientes a ejercicios anteriores"
     },
     {
       "label": "Quotizações",
@@ -524,7 +524,7 @@
       "values": [
         0.011902
       ],
-      "glosa": "Cuotas de socios y afiliaciones"
+      "glosa": "Cuotas de socios"
     },
     {
       "label": "Diferenças de câmbio desfavoráveis",
@@ -554,7 +554,7 @@
       "values": [
         0.010574
       ],
-      "glosa": "Gastos no documentados"
+      "glosa": "Gastos no justificados documentalmente"
     },
     {
       "label": "Juros de mora e compensatórios",
@@ -574,7 +574,7 @@
       "values": [
         0.49653
       ],
-      "glosa": "Dotaciones y reversiones por amortización y depreciación"
+      "glosa": "Dotaciones/reversiones por amortización y depreciación"
     }
   ]
 }

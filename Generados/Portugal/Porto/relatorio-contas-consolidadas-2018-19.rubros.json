@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2018-19.pdf",
   "club": "porto-pt",
   "year": 2019,
-  "generatedAt": "2026-10-16T01:14:49.262Z",
+  "generatedAt": "2026-10-16T01:34:17.419Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -194,7 +194,7 @@
       "values": [
         86.547488
       ],
-      "glosa": "Ingresos por enajenación de derechos federativos de jugadores"
+      "glosa": "Ingresos por traspaso de derechos de jugadores"
     },
     {
       "label": "Proveitos com empréstimos de jogadores",
@@ -214,7 +214,7 @@
       "values": [
         0.907593
       ],
-      "glosa": "Otros ingresos relativos a jugadores"
+      "glosa": "Otros ingresos por jugadores"
     },
     {
       "label": "Custo das mercadorias vendidas e das matérias consumidas",
@@ -224,7 +224,7 @@
       "values": [
         3.860791
       ],
-      "glosa": "Coste de las mercancías vendidas y materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
     },
     {
       "label": "Trabalhos Especializados",
@@ -244,7 +244,7 @@
       "values": [
         4.097571
       ],
-      "glosa": "Subcontratación"
+      "glosa": "Subcontratas"
     },
     {
       "label": "Rendas e Alugueres",
@@ -344,7 +344,7 @@
       "values": [
         0.821068
       ],
-      "glosa": "Comunicación"
+      "glosa": "Comunicaciones"
     },
     {
       "label": "Despesas de representação",
@@ -364,7 +364,7 @@
       "values": [
         0.972094
       ],
-      "glosa": "Limpieza, higiene y mantenimiento"
+      "glosa": "Limpieza, higiene y confort"
     },
     {
       "label": "Relvados",
@@ -374,7 +374,7 @@
       "values": [
         0.256437
       ],
-      "glosa": "Terrenos de juego"
+      "glosa": "Mantenimiento de terrenos de juego"
     },
     {
       "label": "Energia e Fluídos",
@@ -404,7 +404,7 @@
       "values": [
         2.709585
       ],
-      "glosa": "Otros servicios exteriores"
+      "glosa": "Otros aprovisionamientos y servicios"
     },
     {
       "label": "Remunerações dos Órgãos Sociais",
@@ -414,7 +414,7 @@
       "values": [
         3.573892
       ],
-      "glosa": "Retribuciones de los órganos de gobierno"
+      "glosa": "Remuneraciones de los Órganos de Gobierno"
     },
     {
       "label": "Remunerações de atletas e equipas técnicas",
@@ -424,7 +424,7 @@
       "values": [
         67.874848
       ],
-      "glosa": "Retribuciones de deportistas y cuerpos técnicos"
+      "glosa": "Remuneraciones de deportistas y cuerpos técnicos"
     },
     {
       "label": "Remunerações do pessoal",
@@ -434,7 +434,7 @@
       "values": [
         9.752012
       ],
-      "glosa": "Retribuciones del personal"
+      "glosa": "Remuneraciones del personal"
     },
     {
       "label": "Benefícios pós-emprego",
@@ -464,7 +464,7 @@
       "values": [
         7.262656
       ],
-      "glosa": "Cargas sociales sobre retribuciones"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho e doenças profissionais",
@@ -474,7 +474,7 @@
       "values": [
         3.584852
       ],
-      "glosa": "Seguros de accidentes de trabajo y enfermedades profesionales"
+      "glosa": "Seguros de accidentes laborales y enfermedades profesionales"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -504,7 +504,7 @@
       "values": [
         0.550374
       ],
-      "glosa": "Deterioro de créditos por cobrar (pérdidas / reversiones)"
+      "glosa": "Deterioro de créditos comerciales a cobrar (pérdidas / reversiones)"
     },
     {
       "label": "Provisões (aumentos / reduções)",
@@ -514,7 +514,7 @@
       "values": [
         0
       ],
-      "glosa": "Provisiones (dotaciones / reversiones)"
+      "glosa": "Provisiones (dotaciones / aplicaciones)"
     },
     {
       "label": "Dívidas incobráveis",
@@ -564,7 +564,7 @@
       "values": [
         0.120377
       ],
-      "glosa": "Multas y deudas fiscales y no fiscales"
+      "glosa": "Multas / Deudas fiscales y no fiscales"
     },
     {
       "label": "Organização Taça Mundo e Europa de Bilhar",
@@ -654,7 +654,7 @@
       "values": [
         38.713749
       ],
-      "glosa": "Costes por enajenación de derechos federativos de jugadores (Nota 10)"
+      "glosa": "Costes por traspaso de derechos federativos de jugadores (Nota 10)"
     },
     {
       "label": "Custos com empréstimos de jogadores",
@@ -674,7 +674,7 @@
       "values": [
         6.011722
       ],
-      "glosa": "Otros costes por jugadores"
+      "glosa": "Otros costes de jugadores"
     },
     {
       "label": "Resultados relativos a investimentos",
@@ -684,7 +684,7 @@
       "values": [
         1.21957
       ],
-      "glosa": "Resultados relativos a inversiones"
+      "glosa": "Resultados procedentes de inversiones"
     }
   ]
 }

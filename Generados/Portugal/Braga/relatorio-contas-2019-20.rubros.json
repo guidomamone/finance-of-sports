@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Braga/relatorio-contas-2019-20.pdf",
   "club": "braga-pt",
   "year": 2020,
-  "generatedAt": "2026-10-16T01:14:49.231Z",
+  "generatedAt": "2026-10-16T01:34:17.387Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,7 +44,7 @@
       "values": [
         2.046823
       ],
-      "glosa": "Publicidad y patrocinios"
+      "glosa": "Publicidad / Patrocinios"
     },
     {
       "label": "Pacotes corporate",
@@ -104,7 +104,7 @@
       "values": [
         23.968396
       ],
-      "glosa": "Ingresos / (gastos) por transferencias de deportistas"
+      "glosa": "Ingresos / (gastos) por traspasos de jugadores"
     },
     {
       "label": "Empréstimo de atletas",
@@ -114,7 +114,7 @@
       "values": [
         0.383598
       ],
-      "glosa": "Cesión de deportistas"
+      "glosa": "Cesión de jugadores"
     },
     {
       "label": "Receitas de apostas desportivas",
@@ -174,7 +174,7 @@
       "values": [
         2.091634
       ],
-      "glosa": "Gastos por adquisición de deportistas"
+      "glosa": "Gastos por adquisición de jugadores"
     },
     {
       "label": "Publicidade e propaganda",
@@ -234,7 +234,7 @@
       "values": [
         0.107256
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Outros serviços especializados",
@@ -354,7 +354,7 @@
       "values": [
         0.370929
       ],
-      "glosa": "Catering corporativo"
+      "glosa": "Corporativo (catering)"
     },
     {
       "label": "Rendas / Direitos Exploração",
@@ -364,7 +364,7 @@
       "values": [
         1.004974
       ],
-      "glosa": "Arrendamientos y derechos de explotación"
+      "glosa": "Alquileres / Derechos de explotación"
     },
     {
       "label": "Comunicação",
@@ -404,7 +404,7 @@
       "values": [
         0.084913
       ],
-      "glosa": "Limpieza, higiene y mantenimiento"
+      "glosa": "Limpieza, higiene y confort"
     },
     {
       "label": "Pessoal do SCB ao serviço da SAD",
@@ -424,7 +424,7 @@
       "values": [
         0.212057
       ],
-      "glosa": "Retribución de la Comisión Ejecutiva"
+      "glosa": "Retribución del Comité Ejecutivo"
     },
     {
       "label": "Senhas de Presença no CA",
@@ -444,7 +444,7 @@
       "values": [
         10.603004
       ],
-      "glosa": "Deportistas"
+      "glosa": "Jugadores"
     },
     {
       "label": "Treinadores",
@@ -474,7 +474,7 @@
       "values": [
         2.305624
       ],
-      "glosa": "Primas de rendimiento"
+      "glosa": "Primas por rendimiento"
     },
     {
       "label": "Rescisão de contratos",
@@ -504,7 +504,7 @@
       "values": [
         1.707802
       ],
-      "glosa": "Seguro de accidentes de trabajo"
+      "glosa": "Seguro de accidentes laborales"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -524,7 +524,7 @@
       "values": [
         0
       ],
-      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos comerciales a cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Imparidade de inventários (perdas/reversões)",
@@ -544,7 +544,7 @@
       "values": [
         0
       ],
-      "glosa": "Provisiones (dotaciones/reversiones)"
+      "glosa": "Provisiones (dotaciones/aplicaciones)"
     },
     {
       "label": "Impostos",
@@ -574,7 +574,7 @@
       "values": [
         0.2
       ],
-      "glosa": "Derechos de preferencia"
+      "glosa": "Derechos de tanteo / preferencia"
     },
     {
       "label": "Empréstimo de atletas",
@@ -584,7 +584,7 @@
       "values": [
         1.026391
       ],
-      "glosa": "Cesión de deportistas"
+      "glosa": "Cesión de jugadores"
     },
     {
       "label": "Direitos de formação e mecanismo de solidariedade",
@@ -614,7 +614,7 @@
       "values": [
         0.149124
       ],
-      "glosa": "Multas y sanciones deportivas"
+      "glosa": "Multas / Sanciones deportivas"
     },
     {
       "label": "Protocolo Futebol Feminino",
@@ -654,7 +654,7 @@
       "values": [
         0.075
       ],
-      "glosa": "Deterioro del inmovilizado amortizable"
+      "glosa": "Deterioro de inmovilizado amortizable"
     },
     {
       "label": "Edifícios e outras construções",
@@ -674,7 +674,7 @@
       "values": [
         0.218382
       ],
-      "glosa": "Equipamiento básico"
+      "glosa": "Instalaciones técnicas"
     },
     {
       "label": "Equipamento de transporte",
@@ -694,7 +694,7 @@
       "values": [
         0.027135
       ],
-      "glosa": "Equipamiento administrativo"
+      "glosa": "Mobiliario y equipos de oficina"
     },
     {
       "label": "Plantel",

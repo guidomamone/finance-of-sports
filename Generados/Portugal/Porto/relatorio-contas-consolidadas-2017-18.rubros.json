@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2017-18.pdf",
   "club": "porto-pt",
   "year": 2018,
-  "generatedAt": "2026-10-16T01:14:49.257Z",
+  "generatedAt": "2026-10-16T01:34:17.414Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         5.28466
       ],
-      "glosa": "Cuotas de socios y abonados"
+      "glosa": "Cuotas de socios"
     },
     {
       "label": "Prémios competições europeias",
@@ -54,7 +54,7 @@
       "values": [
         3.007157
       ],
-      "glosa": "Ingresos por abonos anuales"
+      "glosa": "Ingresos por abonos de temporada"
     },
     {
       "label": "Outras receitas desportivas",
@@ -114,7 +114,7 @@
       "values": [
         1.126194
       ],
-      "glosa": "Compensación por cesión de jugadores al Mundial 2018"
+      "glosa": "Compensación por cesión de jugadores en el Mundial 2018"
     },
     {
       "label": "Rendimentos de propriedades de investimento",
@@ -124,7 +124,7 @@
       "values": [
         0.036207
       ],
-      "glosa": "Ingresos de inversiones inmobiliarias"
+      "glosa": "Rendimientos de inversiones inmobiliarias"
     },
     {
       "label": "Imputação de subsídios para o investimento",
@@ -134,7 +134,7 @@
       "values": [
         0.070247
       ],
-      "glosa": "Imputación de subvenciones de capital"
+      "glosa": "Imputación de subvenciones a la inversión"
     },
     {
       "label": "Outros rendimentos suplementares",
@@ -154,7 +154,7 @@
       "values": [
         0.008024
       ],
-      "glosa": "Correcciones relativas a ejercicios anteriores"
+      "glosa": "Ajustes de ejercicios anteriores"
     },
     {
       "label": "Reembolsos de sinistros",
@@ -164,7 +164,7 @@
       "values": [
         0.130339
       ],
-      "glosa": "Indemnizaciones de siniestros"
+      "glosa": "Indemnizaciones por siniestros"
     },
     {
       "label": "Outros rendimentos e ganhos",
@@ -184,7 +184,7 @@
       "values": [
         67.365557
       ],
-      "glosa": "Ingresos por traspaso de derechos federativos de jugadores"
+      "glosa": "Beneficios por traspasos de jugadores"
     },
     {
       "label": "Proveitos com empréstimos de jogadores",
@@ -204,7 +204,7 @@
       "values": [
         3.798094
       ],
-      "glosa": "Otros ingresos por jugadores"
+      "glosa": "Otros ingresos relacionados con jugadores"
     },
     {
       "label": "Custo das mercadorias vendidas e das matérias consumidas",
@@ -214,7 +214,7 @@
       "values": [
         3.92874
       ],
-      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y materiales consumidos"
     },
     {
       "label": "Trabalhos Especializados",
@@ -234,7 +234,7 @@
       "values": [
         3.763307
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontratación"
     },
     {
       "label": "Rendas e Alugueres",
@@ -354,7 +354,7 @@
       "values": [
         0.894021
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento de instalaciones"
     },
     {
       "label": "Relvados",
@@ -364,7 +364,7 @@
       "values": [
         0.341916
       ],
-      "glosa": "Mantenimiento de terrenos de juego"
+      "glosa": "Mantenimiento de césped y terrenos de juego"
     },
     {
       "label": "Energia e Fluidos",
@@ -394,7 +394,7 @@
       "values": [
         2.525941
       ],
-      "glosa": "Otros aprovisionamientos y servicios"
+      "glosa": "Otros suministros y servicios exteriores"
     },
     {
       "label": "Remunerações dos Órgãos Sociais",
@@ -404,7 +404,7 @@
       "values": [
         2.124505
       ],
-      "glosa": "Remuneraciones de los Órganos de Administración"
+      "glosa": "Remuneraciones de los órganos de administración"
     },
     {
       "label": "Remunerações de atletas e equipas técnicas",
@@ -434,7 +434,7 @@
       "values": [
         0.024335
       ],
-      "glosa": "Prestaciones post-empleo"
+      "glosa": "Retribuciones post-empleo"
     },
     {
       "label": "Indemnizações",
@@ -494,7 +494,7 @@
       "values": [
         1.026578
       ],
-      "glosa": "Deterioro de créditos y cuentas a cobrar (pérdidas / reversiones)"
+      "glosa": "Deterioro de créditos comerciales (pérdidas / reversiones)"
     },
     {
       "label": "Provisões (aumentos / reduções)",
@@ -524,7 +524,7 @@
       "values": [
         0.066438
       ],
-      "glosa": "Correcciones relativas a ejercicios anteriores"
+      "glosa": "Ajustes de ejercicios anteriores"
     },
     {
       "label": "Impostos",
@@ -594,7 +594,7 @@
       "values": [
         0.028414
       ],
-      "glosa": "Otros activos intangibles (Nota 11)"
+      "glosa": "Otro inmovilizado intangible (Nota 11)"
     },
     {
       "label": "Goodwill (Nota 12)",
@@ -634,7 +634,7 @@
       "values": [
         19.768298
       ],
-      "glosa": "Costes por traspaso de derechos federativos de jugadores (Nota 10)"
+      "glosa": "Costes por traspasos de derechos federativos de jugadores (Nota 10)"
     },
     {
       "label": "Custos com empréstimos de jogadores",
@@ -654,7 +654,7 @@
       "values": [
         1.730274
       ],
-      "glosa": "Otros costes con jugadores"
+      "glosa": "Otros costes relacionados con jugadores"
     }
   ]
 }

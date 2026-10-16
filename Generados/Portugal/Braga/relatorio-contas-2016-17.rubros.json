@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Braga/relatorio-contas-2016-17.pdf",
   "club": "braga-pt",
   "year": 2017,
-  "generatedAt": "2026-10-16T01:14:49.226Z",
+  "generatedAt": "2026-10-16T01:34:17.382Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -104,7 +104,7 @@
       "values": [
         15.478071
       ],
-      "glosa": "Ingresos / (gastos) por transferencias de jugadores"
+      "glosa": "Rendimientos / (gastos) por transacciones de jugadores"
     },
     {
       "label": "Empréstimo de atletas",
@@ -374,7 +374,7 @@
       "values": [
         0.045646
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Pessoal do SCB ao serviço da SAD",
@@ -454,7 +454,7 @@
       "values": [
         0.958696
       ],
-      "glosa": "Seguro de accidentes de trabajo"
+      "glosa": "Seguro de accidentes laborales"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -474,7 +474,7 @@
       "values": [
         0.126223
       ],
-      "glosa": "Deterioro de créditos por cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de cuentas por cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Impostos",
@@ -544,7 +544,7 @@
       "values": [
         3.912258
       ],
-      "glosa": "Gastos/reversiones de amortización y depreciación"
+      "glosa": "Gastos/reversiones de depreciación y amortización"
     }
   ]
 }
