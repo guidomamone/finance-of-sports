@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf",
- "generado": "2026-10-15T22:34:33.062Z",
+ "generado": "2026-10-16T02:33:27.440Z",
  "frena": [
   {
    "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 6 caso(s) en la cola humana (node tools/cola.mjs)"
+   "motivo": "todavía no se puede categorizar: la etapa 6 cerró, pero la etapa 4 (validar-bloques.mjs) es de una versión anterior del .md: correr el lote"
   },
   {
    "etapa": "categorizacion",
@@ -15,12 +15,67 @@
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (avs-pt)"
   },
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 6 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel, Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "44 fila(s) impresa(s) que no están en el .categorias.json (la verificación las abrió después de categorizar): \"Quotizações\" 0 (pág. 16); \"Receitas de bilheteira\" 0.023439 (pág. 16); \"Patrocínios, publicidade e corporate\" 0.213195 (pág. 16); \"Receitas de televisão\" 0.45 (pág. 16). Volver a correr la etapa 5 o categorizarlas en la cola (node tools/cola.mjs --corregir-categoria)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "100.0% del dinero de ingresos queda sin categoría aceptable (tope 5%): \"Quotizações\" 0 (no está en categorias.json); \"Receitas de bilheteira\" 0.023439 (no está en categorias.json); \"Patrocínios, publicidade e corporate\" 0.213195 (no está en categorias.json)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "100.0% del dinero de gastos queda sin categoría aceptable (tope 5%): \"Custo mercadorias vendidas e matérias co\" 0.032046 (no está en categorias.json); \"Equipa principal - remunerações\" 1.00783 (no está en categorias.json); \"Equipa principal - encargos sobre remune\" 0.048835 (no está en categorias.json)"
+  },
+  {
+   "etapa": "tie-out",
+   "motivo": "ninguna fila de ingresos con categoría aceptable"
   }
  ],
- "avisos": [],
- "ejercicio": null,
+ "avisos": [
+  "\"Cuotas sociales\" en 0: real en este documento (lo presenta una SAD/SDUQ, solo fútbol profesional: Clubes/Portugal/AVS/relatorio-contas-2023-24.md L11 \"AVS Futebol, SAD\"; to-do 237 y)",
+  "\"Otras secciones deportivas\" en 0: real en este documento (lo presenta una SAD/SDUQ, solo fútbol profesional: Clubes/Portugal/AVS/relatorio-contas-2023-24.md L11 \"AVS Futebol, SAD\"; to-do 237 y)",
+  "ingresos: 13 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"Quotizações\" (no está en categorias.json); \"Receitas de bilheteira\" (no está en categorias.json); \"Patrocínios, publicidade e corporate\" (no está en categorias.json); \"Receitas de televisão\" (no está en categorias.json); \"Merchandising\" (no está en categorias.json)",
+  "gastos: 31 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"Custo mercadorias vendidas e matérias consumidas\" (no está en categorias.json); \"Equipa principal - remunerações\" (no está en categorias.json); \"Equipa principal - encargos sobre remunerações\" (no está en categorias.json); \"Equipa principal - encargos com seguros\" (no está en categorias.json); \"Equipa principal - direitos de imagem\" (no está en categorias.json)",
+  "no se encontró el resultado del ejercicio impreso: officialPAT queda null (audit.js P2 balance-sin-pat)",
+  "ninguna fila de gastos: officialTotalExpenses queda null (el sitio muestra \"sin dato\")",
+  "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "avs-pt",
+  "year": 2024,
+  "cierre": "2024-06-30",
+  "perimetro": "individual",
+  "revenueLines": [],
+  "expenseLines": [],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2024-06-30",
+   "sourceId": "avs-pt-relatorio-contas-2023-24",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.004346,
+   "tax": -0.018472,
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": null,
+   "officialTotalExpenses": null,
+   "officialPAT": null
+  },
+  "source": {
+   "id": "avs-pt-relatorio-contas-2023-24",
+   "clubId": "avs-pt",
+   "title": "AVS — relatorio-contas-2023-24 (ejercicio 2024)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/AVS/relatorio-contas-2023-24.md; categorías del pipeline (Jev/Claude). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Portugal/AVS/relatorio-contas-2023-24.md",
  "reemplaza": false,
  "periodo": {
@@ -37,5 +92,669 @@
  },
  "clubId": "avs-pt",
  "year": 2024,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 48,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Quotizações",
+   "page": 16,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Receitas de bilheteira",
+   "page": 16,
+   "native": 0.023439,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.023439,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Patrocínios, publicidade e corporate",
+   "page": 16,
+   "native": 0.213195,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.213195,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Receitas de televisão",
+   "page": 16,
+   "native": 0.45,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.45,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Merchandising",
+   "page": 16,
+   "native": 0.012142,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.012142,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Competições da UEFA e nacionais",
+   "page": 16,
+   "native": 0.122228,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.122228,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Subsídios e donativos de Associações/Federações/Liga",
+   "page": 16,
+   "native": 0.227073,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.227073,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Subsídios do Estado e outros entes públicos",
+   "page": 16,
+   "native": 0.021038,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.021038,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Donativos de partes não relacionadas",
+   "page": 16,
+   "native": 0.003773,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.003773,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Contribuições/Donativos de partes relacionadas",
+   "page": 16,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Rendimentos de operações extra-futebol não relacionadas com clube (l)",
+   "page": 16,
+   "native": 0.033751,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.033751,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Outros ganhos extraordinários",
+   "page": 16,
+   "native": 0.351414,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.351414,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Outros rendimentos operacionais (1)",
+   "page": 16,
+   "native": 0.036217,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.036217,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Custo mercadorias vendidas e matérias consumidas",
+   "page": 16,
+   "native": 0.032046,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.032046,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Equipa principal - remunerações",
+   "page": 16,
+   "native": 1.00783,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.00783,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Equipa principal - encargos sobre remunerações",
+   "page": 16,
+   "native": 0.048835,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.048835,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Equipa principal - encargos com seguros",
+   "page": 16,
+   "native": 0.184536,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.184536,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Equipa principal - direitos de imagem",
+   "page": 16,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Equipa principal - outros gastos",
+   "page": 16,
+   "native": 0.394318,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.394318,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Treinador principal - remunerações",
+   "page": 16,
+   "native": 0.086333,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.086333,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Treinador principal - encargos sobre remunerações",
+   "page": 16,
+   "native": 0.020504,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.020504,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Treinador principal - encargos com seguros",
+   "page": 16,
+   "native": 0.00151,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.00151,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Treinador principal - direitos de imagem",
+   "page": 16,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Treinador principal - outros gastos",
+   "page": 16,
+   "native": 0.018,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.018,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Outro pessoal - remunerações",
+   "page": 16,
+   "native": 0.654772,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.654772,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Outro pessoal - encargos sobre remunerações",
+   "page": 16,
+   "native": 0.149376,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.149376,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Outro pessoal - encargos com seguros",
+   "page": 16,
+   "native": 0.009939,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.009939,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Outro pessoal - outros gastos",
+   "page": 16,
+   "native": 0.094297,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.094297,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Outros gastos com pessoal",
+   "page": 16,
+   "native": 0.098571,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.098571,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Depreciações de ativos tangíveis",
+   "page": 16,
+   "native": 0.019117,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.019117,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Amortizações de ativos intangíveis exc. atletas",
+   "page": 16,
+   "native": 0.019731,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.019731,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Perdas por imparidade exc. atletas",
+   "page": 16,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Reversões de Provisões/Imparidades exc. Atletas",
+   "page": 16,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Gastos em dia de jogo",
+   "page": 16,
+   "native": 0.126342,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.126342,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Gastos com logística e segurança",
+   "page": 16,
+   "native": 0.087817,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.087817,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Gastos de patrocínios, publicidade e corporate",
+   "page": 16,
+   "native": 0.017116,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.017116,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Gastos de actividades relacionadas com \"comercial\"",
+   "page": 16,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Gastos com conservação e reparação",
+   "page": 16,
+   "native": 0.115709,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.115709,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Gastos com agentes e intermediários",
+   "page": 16,
+   "native": 0.0281,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.0281,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Gastos de operações extra-futebol não relacionadas com o clube (m)",
+   "page": 16,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Impostos",
+   "page": 29,
+   "native": 0.000978,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos extraordinários\")",
+   "signoFijo": 0.000978,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Outros",
+   "page": 29,
+   "native": 0.118131,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos extraordinários\")",
+   "signoFijo": 0.118131,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Honorários",
+   "page": 16,
+   "native": 0.094414,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.094414,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Outros gastos operacionais (1)",
+   "page": 16,
+   "native": 1.084434,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.084434,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Rendimentos e ganhos financeiros",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Gastos e perdas financeiras",
+   "page": null,
+   "native": -0.004346,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Ganhos e perdas com diferenças de câmbio",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposto sobre o rendimento",
+   "page": null,
+   "native": -0.018472,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Salarios del plantel",
+   "lado": "gasto"
+  },
+  {
+   "categoria": "Televisión",
+   "lado": "ingreso"
+  },
+  {
+   "categoria": "Estadio",
+   "lado": "ingreso"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos con signo",
+   "verificacion (nota que desglosa \"Gastos extraordinários\")": "gastos con signo",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+ },
+ "totales": {
+  "revSum": 0,
+  "expSum": 0,
+  "officialTotalRevenue": null,
+  "officialTotalExpenses": null,
+  "officialPAT": null,
+  "verificacion": {}
+ },
+ "liga": {
+  "valor": "pt-ligaportugal2",
+  "fuente": "roster cacheado de \"2023–24 Liga Portugal 2\" (tools/club-league-reference/pt.json), coincidencia exacta \"AVS\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2024,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2024-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (68 de 70 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Portugal (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2024-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2024-06-30 = 0.9337 (Cierre BCE al 30/6/2024 (1 EUR = 1,071 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "avs-pt-relatorio-contas-2023-24",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "pt-ligaportugal2",
+   "fuente": "roster cacheado de \"2023–24 Liga Portugal 2\" (tools/club-league-reference/pt.json), coincidencia exacta \"AVS\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 8,
+  "lineasIngreso": 0,
+  "lineasGasto": 0,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
 }

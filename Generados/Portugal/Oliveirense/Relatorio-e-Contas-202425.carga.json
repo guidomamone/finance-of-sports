@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
- "generado": "2026-10-15T22:34:44.217Z",
+ "generado": "2026-10-16T02:33:30.529Z",
  "frena": [
   {
    "etapa": "club",
@@ -11,20 +11,11 @@
    "motivo": "alta-club.mjs dice ejercicio 2025 y quien.mjs --quien (el que usa el registro) dice 2024"
   },
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "7 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Prestação de serviços\" -> other_income 0.45; \"Liga Portuguesa de Futebol Profissional\" -> broadcasting 0.35; \"Fundo Infraestruturas - LPF\" -> other_income 0.6; \"Salários e ordenados\" -> wages_squad 0.7; \"Gastos com rescisão de contratos\" -> exceptional_items 0.5"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
    "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
-  "gastos: ningún total impreso igual a la suma de las líneas (-3.444962); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -49,9 +40,9 @@
     "amountNative": 1.141257,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Federação Portuguesa de Futebol",
@@ -65,13 +56,13 @@
    },
    {
     "rawLabel": "Liga Portuguesa de Futebol Profissional",
-    "normalizedCategory": "broadcasting",
+    "normalizedCategory": "other_income",
     "amountNative": 0.023905,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.35,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Fundo Infraestruturas - LPF",
@@ -79,9 +70,9 @@
     "amountNative": 0.037254,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Prémio Allianz Cup -LPF",
@@ -221,19 +212,19 @@
     "amountNative": -1.622765,
     "disclosureLevel": "aggregated",
     "_pag": 35,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos com rescisão de contratos",
-    "normalizedCategory": "exceptional_items",
+    "normalizedCategory": "wages_squad",
     "amountNative": -0.122923,
     "disclosureLevel": "aggregated",
     "_pag": 35,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Contribuições para a segurança social",
@@ -241,9 +232,9 @@
     "amountNative": -0.141045,
     "disclosureLevel": "aggregated",
     "_pag": 35,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos com o pessoal",
@@ -251,9 +242,9 @@
     "amountNative": -0.257717,
     "disclosureLevel": "aggregated",
     "_pag": 35,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Imparidade de dívidas a receber (perdas/reversões)",
@@ -333,16 +324,16 @@
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 1.864788,
-   "officialTotalExpenses": 3.444962,
+   "officialTotalExpenses": 3.567885,
    "officialPAT": -1.736289
   },
   "source": {
    "id": "oliveirense-pt-relatorio-e-contas-202425",
    "clubId": "oliveirense-pt",
-   "title": "Oliveirense — Relatorio-e-Contas-202425 (ejercicio 2025)",
+   "title": "União Desportiva Oliveirense - Futebol, SAD — Relatorio-e-Contas-202425 (ejercicio 2025)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.md",
@@ -387,11 +378,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 1.141257,
    "cat": "other_income",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
    "destino": "revenue",
    "amountNative": 1.141257
   },
@@ -418,12 +409,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.023905,
-   "cat": "broadcasting",
-   "conf": 0.35,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): subsidio de la Liga dentro de Subsídios à exploração, como Vitória.",
    "destino": "revenue",
    "amountNative": 0.023905
   },
@@ -435,11 +426,11 @@
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.037254,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
    "destino": "revenue",
    "amountNative": 0.037254
   },
@@ -646,11 +637,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 1.622765,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
    "destino": "expense",
    "amountNative": -1.622765
   },
@@ -661,12 +652,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.122923,
-   "cat": "exceptional_items",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): rescisión de contratos laborales dentro de Gastos com pessoal.",
    "destino": "expense",
    "amountNative": -0.122923
   },
@@ -678,11 +669,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.141045,
    "cat": "wages_squad",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
    "destino": "expense",
    "amountNative": -0.141045
   },
@@ -694,11 +685,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.257717,
    "cat": "wages_squad",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
    "destino": "expense",
    "amountNative": -0.257717
   },
@@ -813,6 +804,10 @@
  ],
  "reintentar": [
   {
+   "categoria": "Televisión",
+   "lado": "ingreso"
+  },
+  {
    "categoria": "Estadio",
    "lado": "ingreso"
   }
@@ -832,14 +827,14 @@
  },
  "totales": {
   "revSum": 1.864788,
-  "expSum": -3.444962,
+  "expSum": -3.567885,
   "officialTotalRevenue": 1.864788,
-  "officialTotalExpenses": 3.444962,
+  "officialTotalExpenses": 3.567885,
   "officialPAT": -1.736289,
   "verificacion": {
    "pat": "impreso",
    "ingresos": "impreso",
-   "gastos": "por-resultado"
+   "gastos": "impreso"
   },
   "patImpreso": {
    "label": "resultado detectado por proponer-carga",
@@ -851,6 +846,11 @@
    "label": "total de ingresos (verificado)",
    "pag": null,
    "M": 1.864788
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 3.567885
   }
  },
  "liga": {
@@ -902,7 +902,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
+  "motivos": 3,
   "lineasIngreso": 11,
   "lineasGasto": 16,
   "metaFilas": 3,

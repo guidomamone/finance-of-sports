@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf",
- "generado": "2026-10-15T22:35:01.084Z",
+ "generado": "2026-10-16T02:33:31.169Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (uniaodeleiria-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Prestação de serviços\" -> other_income 0.45; \"Materiais\" -> admin_general_expense 0.75; \"Outros gastos com pessoal\" -> wages_squad 0.55; \"Gastos/reversões de depreciação e de amo\" -> depreciation 0.6"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   },
   {
    "etapa": "reintento",
@@ -48,9 +36,9 @@
     "amountNative": 1.546109,
     "disclosureLevel": "aggregated",
     "_pag": 19,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Subsídios do estado e outros entes públicas",
@@ -130,9 +118,9 @@
     "amountNative": -0.03967,
     "disclosureLevel": "aggregated",
     "_pag": 20,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Energia e fluídos",
@@ -220,9 +208,9 @@
     "amountNative": -0.353512,
     "disclosureLevel": "aggregated",
     "_pag": 20,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Impostos",
@@ -250,9 +238,9 @@
     "amountNative": -0.092352,
     "disclosureLevel": "aggregated",
     "_pag": 3,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -287,7 +275,7 @@
    "title": "União de Leiria- Futebol, SAD — Relatorio-Contas-UDL-SAD_2023-2024 (ejercicio 2024)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md",
@@ -332,11 +320,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e Prestação de serviços\")",
    "signoFijo": 1.546109,
    "cat": "other_income",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
    "destino": "revenue",
    "amountNative": 1.546109
   },
@@ -453,11 +441,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.03967,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
    "destino": "expense",
    "amountNative": -0.03967
   },
@@ -593,11 +581,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.353512,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
    "destino": "expense",
    "amountNative": -0.353512
   },
@@ -639,11 +627,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.092352,
    "cat": "depreciation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
    "destino": "expense",
    "amountNative": -0.092352
   },
@@ -770,7 +758,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
+  "motivos": 2,
   "lineasIngreso": 6,
   "lineasGasto": 16,
   "metaFilas": 2,

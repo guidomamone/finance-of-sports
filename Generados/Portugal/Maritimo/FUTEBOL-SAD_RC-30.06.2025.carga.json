@@ -1,41 +1,18 @@
 {
  "pdf": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf",
- "generado": "2026-10-15T22:34:42.979Z",
+ "generado": "2026-10-16T02:33:30.182Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (maritimo-pt)"
   },
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros\" -> other_income 0; \"Juros\" -> other_expenses 0; \"Outros\" -> other_income 0; \"Outro Pessoal\" -> admin_general_expense 0.55"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
    "etapa": "reintento",
    "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  },
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 6.552588 + gastos -9.051087 + netInterest -0.029824 + tax 0 = -2.528323 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -2.302562)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "ingresos: las filas suman 6.552588 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -8.996586 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
   }
  ],
  "avisos": [
+  "gastos: ningún total impreso igual a la suma de las líneas (-8.883706); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -63,16 +40,6 @@
     "_escalon": 1,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Outros",
-    "normalizedCategory": "other_income",
-    "amountNative": 0.176636,
-    "disclosureLevel": "aggregated",
-    "_pag": 38,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
    },
    {
     "rawLabel": "Subsídios à exploração",
@@ -110,22 +77,52 @@
     "amountNative": 1.161317,
     "disclosureLevel": "aggregated",
     "_pag": 38,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Verbas LPFP e FPF (Taça da Liga / Taça de Portugal)",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.012719,
+    "disclosureLevel": "aggregated",
+    "_pag": 38,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mecanismo de Solidariedade FIFA",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.060925,
+    "disclosureLevel": "aggregated",
+    "_pag": 38,
+    "_escalon": 1,
+    "_conf": 0.94,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lugares anuais",
+    "normalizedCategory": "season_tickets",
+    "amountNative": 0.102992,
+    "disclosureLevel": "aggregated",
+    "_pag": 38,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Juros",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.11288,
+    "disclosureLevel": "aggregated",
+    "_pag": 38,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
    }
   ],
   "expenseLines": [
-   {
-    "rawLabel": "Juros",
-    "normalizedCategory": "other_expenses",
-    "amountNative": -0.11288,
-    "disclosureLevel": "aggregated",
-    "_pag": 38,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía no_es_rubro con 0.7 (fila verificada: no se excluye sola): se propone la genérica de su lado"
-   },
    {
     "rawLabel": "Subcontratos",
     "normalizedCategory": "admin_general_expense",
@@ -332,9 +329,9 @@
     "amountNative": -0.863594,
     "disclosureLevel": "aggregated",
     "_pag": 50,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Órgãos sociais",
@@ -447,11 +444,21 @@
    "assetSales": 0,
    "netInterest": -0.029824,
    "tax": 0,
+   "extraRows": [
+    {
+     "label": "Juros e gastos similares suportados",
+     "value": -0.029824
+    },
+    {
+     "label": "Imposto sobre o rendimento",
+     "value": null
+    }
+   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalRevenue": 6.665468,
+   "officialTotalExpenses": 8.883706,
+   "officialPAT": -2.302562
   },
   "source": {
    "id": "maritimo-pt-futebol-sad-rc-30-06-2025",
@@ -459,7 +466,7 @@
    "title": "MARÍTIMO DA MADEIRA - Futebol, SAD — FUTEBOL-SAD_RC-30.06.2025 (ejercicio 2025)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.md",
@@ -478,9 +485,64 @@
  },
  "clubId": "maritimo-pt",
  "year": 2025,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf",
+   "campo": "fila",
+   "valor": "12 719",
+   "linea": 1468,
+   "etiqueta": "Verbas LPFP e FPF (Taça da Liga / Taça de Portugal)",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 1468,
+   "motivo": "'Outros' 176.636 de la nota de réditos se detalla en el texto: verbas LPFP/FPF, solidaridad FIFA y lugares anuais (8.654 + 4.065 + 60.925 + 102.992 = 176.636).",
+   "evidencia": "FUTEBOL-SAD_RC-30.06.2025.md L1468, L1473-1475",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf",
+   "campo": "fila",
+   "valor": "60 925",
+   "linea": 1474,
+   "etiqueta": "Mecanismo de Solidariedade FIFA",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de 'Outros' (L1468) según el texto de la nota.",
+   "evidencia": "FUTEBOL-SAD_RC-30.06.2025.md L1474",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf",
+   "campo": "fila",
+   "valor": "102 992",
+   "linea": 1475,
+   "etiqueta": "Lugares anuais",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de 'Outros' (L1468): venta de lugares anuais para los partidos del equipo A.",
+   "evidencia": "FUTEBOL-SAD_RC-30.06.2025.md L1475",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf",
+   "campo": "fila",
+   "valor": "112 880",
+   "linea": 1487,
+   "etiqueta": "Juros",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 1487,
+   "motivo": "Fila de la nota de Outros rendimentos (suma 4.444.586) que la extracción puso como gasto (−112.880); es ingreso (to-do 237 w).",
+   "evidencia": "FUTEBOL-SAD_RC-30.06.2025.md L1487",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
-  "filas": 41,
+  "filas": 43,
   "notasUsadas": [],
   "refM": null
  },
@@ -514,23 +576,6 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.071557
-  },
-  {
-   "label": "Outros",
-   "page": 38,
-   "native": 0.176636,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
-   "signoFijo": 0.176636,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
-   "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
-   "destino": "revenue",
-   "amountNative": 0.176636
   },
   {
    "label": "Subsídios à exploração",
@@ -578,23 +623,6 @@
    "amountNative": 0.6605
   },
   {
-   "label": "Juros",
-   "page": 38,
-   "native": 0.11288,
-   "ladoDoc": "expense",
-   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
-   "signoFijo": 0.11288,
-   "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía no_es_rubro con 0.7 (fila verificada: no se excluye sola): se propone la genérica de su lado",
-   "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
-   "destino": "expense",
-   "amountNative": -0.11288
-  },
-  {
    "label": "Outros",
    "page": 38,
    "native": 1.161317,
@@ -602,14 +630,74 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 1.161317,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): 'Outros' se abre con ajustes (Taças, solidaridad FIFA, lugares anuais).",
    "destino": "revenue",
    "amountNative": 1.161317
+  },
+  {
+   "label": "Verbas LPFP e FPF (Taça da Liga / Taça de Portugal)",
+   "page": 38,
+   "native": 0.012719,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.012719,
+   "cat": "competition_bonus",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.012719
+  },
+  {
+   "label": "Mecanismo de Solidariedade FIFA",
+   "page": 38,
+   "native": 0.060925,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.060925,
+   "cat": "player_sales",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.060925
+  },
+  {
+   "label": "Lugares anuais",
+   "page": 38,
+   "native": 0.102992,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.102992,
+   "cat": "season_tickets",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.102992
+  },
+  {
+   "label": "Juros",
+   "page": 38,
+   "native": 0.11288,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.11288,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.11288
   },
   {
    "label": "Subcontratos",
@@ -921,11 +1009,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.863594,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): personal no deportivo (nota 15.3).",
    "destino": "expense",
    "amountNative": -0.863594
   },
@@ -1113,22 +1201,38 @@
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
-   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos con signo",
+   "verificacion (ajuste manual)": "gastos con signo",
    "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Gastos com o pessoal\")": "gastos sin signo (se invierten)",
    "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Outros gastos\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 6.552588,
-  "expSum": -8.996586,
-  "officialTotalRevenue": null,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
-  "verificacion": {}
+  "revSum": 6.665468,
+  "expSum": -8.883706,
+  "officialTotalRevenue": 6.665468,
+  "officialTotalExpenses": 8.883706,
+  "officialPAT": -2.302562,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -2.302562,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 6.665468
+  }
  },
  "liga": {
   "valor": "pt-ligaportugal2",
@@ -1179,9 +1283,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 8,
-  "lineasIngreso": 7,
-  "lineasGasto": 32,
+  "motivos": 2,
+  "lineasIngreso": 10,
+  "lineasGasto": 31,
   "metaFilas": 2,
   "excluidas": 0
  }

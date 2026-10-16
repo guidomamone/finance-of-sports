@@ -1,13 +1,13 @@
 {
  "md": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md",
- "clave": "5d615b5e9902f81ea3fef53839e07c824ca7e207",
- "generado": "2026-10-15T21:56:04.884Z",
+ "clave": "a78e2999c2dc4054583cbbdf1eb6601aa4e6ca00",
+ "generado": "2026-10-16T02:25:11.335Z",
  "fuente": "API",
  "datos": {
   "faltan": [],
   "sobran": [],
   "repetidas": [],
   "lado_equivocado": [],
-  "observacion": "Sin problemas. Los renglones Vendas e serviços prestados (L481), Outros rendimentos (L493), Fornecimentos e serviços externos (L486), Gastos com o pessoal (L487) y Outros gastos (L494) se cargan abiertos por sus notas, y las partes suman el renglón: 0,000682+1,274462=1,275144; 0,000272+0,069693+2,304156=2,374121; FSE ≈1,237111; pessoal 3,277012; outros gastos 0,035226. Los subtotales (L495, L497, L500, L502) no se cargan. Los renglones en cero no faltan."
+  "observacion": "Se cargan todos los renglones con importe del ejercicio 2024. Las filas de notas abren sus renglones y suman lo mismo que el estado: Vendas y Prestações de Serviço dan 1,275144 (L481); los rendimentos de la nota dan 2,374120 (L493); el detalle de FSE da 1,237111 (L486); el de pessoal da 3,277012 (L487) y el de Outros gastos da 0,035226 (L494). No se cargan subtotales y los signos son coherentes."
  }
 }

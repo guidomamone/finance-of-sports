@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Académica/RC-SDUQ-2023-2024.pdf",
- "generado": "2026-10-15T22:34:33.830Z",
+ "generado": "2026-10-16T02:33:28.048Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (academica-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Salários\" -> wages_squad 0.75; \"Contribuições\" -> wages_squad 0.7; \"Imparidades (Perdas/Reversões)\" -> other_expenses 0.55"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   },
   {
    "etapa": "reintento",
@@ -251,9 +239,9 @@
     "amountNative": -0.404049,
     "disclosureLevel": "aggregated",
     "_pag": 19,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Contribuições",
@@ -261,9 +249,9 @@
     "amountNative": -0.071845,
     "disclosureLevel": "aggregated",
     "_pag": 19,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -281,9 +269,9 @@
     "amountNative": -0.145012,
     "disclosureLevel": "aggregated",
     "_pag": 4,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Provisões (Aumentos/Reversões)",
@@ -358,7 +346,7 @@
    "title": "Académica — RC-SDUQ-2023-2024 (ejercicio 2024)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Académica/RC-SDUQ-2023-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Académica/RC-SDUQ-2023-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Académica/RC-SDUQ-2023-2024.md",
@@ -469,7 +457,7 @@
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "notaGuido": "precedente del país: 1 clubes (Tondela), nota:outros rendimentos · Claude 2026-10-15 (subagente Sonnet): ingreso, nota 16.1 (L1181)",
+   "notaGuido": "precedente del país: 2 clubes (Tondela, Maritimo), nota:outros rendimentos · Claude 2026-10-15 (subagente Sonnet): 'Outros' se abre con ajustes (Taças, solidaridad FIFA, lugares anuais).",
    "destino": "revenue",
    "amountNative": 0.073596
   },
@@ -708,11 +696,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
    "signoFijo": 0.404049,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): desglose de Gastos com pessoal / imparidad de clientes (other_expenses). [RC-SDUQ-2023-2024.md]",
    "destino": "expense",
    "amountNative": -0.404049
   },
@@ -724,11 +712,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
    "signoFijo": 0.071845,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): desglose de Gastos com pessoal / imparidad de clientes (other_expenses). [RC-SDUQ-2023-2024.md]",
    "destino": "expense",
    "amountNative": -0.071845
   },
@@ -755,11 +743,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.145012,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): desglose de Gastos com pessoal / imparidad de clientes (other_expenses). [RC-SDUQ-2023-2024.md]",
    "destino": "expense",
    "amountNative": -0.145012
   },
@@ -941,7 +929,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
+  "motivos": 2,
   "lineasIngreso": 6,
   "lineasGasto": 23,
   "metaFilas": 2,

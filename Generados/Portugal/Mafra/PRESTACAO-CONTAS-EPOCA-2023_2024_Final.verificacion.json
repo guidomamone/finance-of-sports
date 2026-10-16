@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
  "md": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md",
- "generado": "2026-10-16T02:22:50.441Z",
- "estado": "cola",
+ "generado": "2026-10-16T02:25:11.387Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -40,9 +40,7 @@
    "fecha": "2026-10-16"
   }
  ],
- "cola": [
-  "ea335cb"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -64,6 +62,11 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [
@@ -73,7 +76,8 @@
   "ajuste manual: fila \"Outros (resto)\" (ingreso) 4.155,62 (2026-10-16, Resto de 'Outros' (L1001) después de separar la venta de jugadores: 2.304.155,62 − 2.300.000,00.)",
   "duda de localizar confirmada por las sumas (columna, \"-\"): ¿La columna 'Contas Anuais ED*-1' de b28-b29 corresponde al ejercicio cerrado el 30-06-2024?",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro de formato Liga (b28-b29, L1437-L1537) por ser una reclasificación del mismo estado con otra estructura?",
-  "duda de extraer que no afecta la carga: La suma de L1292+L1295+L1296 da 35.225,20, el total impreso, así que el documento lo incluye en gastos."
+  "duda de extraer que no afecta la carga: La suma de L1292+L1295+L1296 da 35.225,20, el total impreso, así que el documento lo incluye en gastos.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -511,7 +515,7 @@
  ],
  "primerAnio": {
   "escalon": 3,
-  "estado": "pendiente",
+  "estado": "confirmado",
   "clave": "a78e2999c2dc4054583cbbdf1eb6601aa4e6ca00",
   "rango": [
    478,

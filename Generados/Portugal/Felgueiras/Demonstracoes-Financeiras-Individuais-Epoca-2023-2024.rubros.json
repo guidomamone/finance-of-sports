@@ -1,100 +1,110 @@
 {
- "md": "Clubes/Portugal/Felgueiras/Demonstracoes-Financeiras-Individuais-Epoca-2023-2024.md",
- "pdf": "Clubes/Portugal/Felgueiras/Demonstracoes-Financeiras-Individuais-Epoca-2023-2024.pdf",
- "club": "felgueiras",
- "year": 2024,
- "generatedAt": "2026-10-16T02:22:43.511Z",
- "origen": "verificar.mjs (proceso nuevo, Versión 324)",
- "rubros": [
-  {
-   "label": "Vendas e serviços prestados",
-   "lado": "revenue",
-   "page": 6,
-   "section": "estado",
-   "values": [
-    0.418836
-   ]
-  },
-  {
-   "label": "Subsídios à exploração",
-   "lado": "revenue",
-   "page": 6,
-   "section": "estado",
-   "values": [
-    0.009517
-   ]
-  },
-  {
-   "label": "Outros rendimentos",
-   "lado": "revenue",
-   "page": 6,
-   "section": "estado",
-   "values": [
-    0
-   ]
-  },
-  {
-   "label": "Fornecimentos e serviços externos",
-   "lado": "expense",
-   "page": 6,
-   "section": "estado",
-   "values": [
-    0.365117
-   ]
-  },
-  {
-   "label": "Remunerações do pessoal",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.579119
-   ]
-  },
-  {
-   "label": "Encargos sobre remunerações",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.090555
-   ]
-  },
-  {
-   "label": "Seguros",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.025698
-   ]
-  },
-  {
-   "label": "Outros gastos com pessoal",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.099534
-   ]
-  },
-  {
-   "label": "Outros gastos",
-   "lado": "expense",
-   "page": 6,
-   "section": "estado",
-   "values": [
-    0.001148
-   ]
-  },
-  {
-   "label": "Gastos/reversões de depreciação e de amortização",
-   "lado": "expense",
-   "page": 6,
-   "section": "estado",
-   "values": [
-    0.0028
-   ]
-  }
- ]
+  "md": "Clubes/Portugal/Felgueiras/Demonstracoes-Financeiras-Individuais-Epoca-2023-2024.md",
+  "pdf": "Clubes/Portugal/Felgueiras/Demonstracoes-Financeiras-Individuais-Epoca-2023-2024.pdf",
+  "club": "felgueiras",
+  "year": 2024,
+  "generatedAt": "2026-10-16T02:25:06.502Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Vendas e serviços prestados",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.418836
+      ],
+      "glosa": "Ventas y prestaciones de servicios"
+    },
+    {
+      "label": "Subsídios à exploração",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.009517
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Outros rendimentos",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Fornecimentos e serviços externos",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.365117
+      ],
+      "glosa": "Suministros y servicios exteriores"
+    },
+    {
+      "label": "Remunerações do pessoal",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.579119
+      ],
+      "glosa": "Remuneraciones del personal"
+    },
+    {
+      "label": "Encargos sobre remunerações",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.090555
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Seguros",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.025698
+      ],
+      "glosa": "Seguros"
+    },
+    {
+      "label": "Outros gastos com pessoal",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.099534
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Outros gastos",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.001148
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Gastos/reversões de depreciação e de amortização",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.0028
+      ],
+      "glosa": "Gastos/reversiones de amortización y depreciación"
+    }
+  ]
 }
