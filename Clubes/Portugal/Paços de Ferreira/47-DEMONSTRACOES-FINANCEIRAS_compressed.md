@@ -70,7 +70,7 @@ Demonstração dos Resultados por natureza do período de 01 de julho de 2019 a 
 | Vendas e serviços prestados | 15 | 4 637 816,57 | 1 280 317,82 |
 | Subsídios à exploração | 16 | 261 168,40 | 226 274,97 |
 | Custo das mercadorias vendidas e das matérias consumidas | 7 | -30 760,61 | -9 044,24 |
-| Fornecimentos e serviços externos | 17 | -2 425 988,43 | -3 197 852,85 |
+| Fornecimentos e serviços externos | 17 | -2 425 968,43 | -3 197 862,85 |
 | Gastos com o pessoal | 18 | -4 299 377,82 | -2 642 372,91 |
 | Outros rendimentos | 19 | 1 085 162,79 | 5 986 439,88 |
 | Outros gastos | 20 | -92 396,44 | -30 313,60 |
