@@ -1,17 +1,8 @@
 {
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2003-04.md",
- "generatedAt": "2026-10-16T04:18:34.878Z",
- "rubrosHuella": "9d02d0fa10b2d81796f7f57c3debc4c62287d577",
+ "generatedAt": "2026-10-16T17:18:50.621Z",
+ "rubrosHuella": "781c445ca540e24754c0fe25372566b823339356",
  "rubros": [
-  {
-   "label": "Prestações de Serviços",
-   "lado": "revenue",
-   "page": 15,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 0.92,
-   "desdeCache": true
-  },
   {
    "label": "Subsídios à Exploração",
    "lado": "revenue",
@@ -19,15 +10,6 @@
    "section": "estado",
    "choice": "other_income",
    "confidence": 0.98,
-   "desdeCache": true
-  },
-  {
-   "label": "Proveitos Suplementares",
-   "lado": "revenue",
-   "page": 15,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 1,
    "desdeCache": true
   },
   {
@@ -62,6 +44,87 @@
    "lado": "revenue",
    "page": 19,
    "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Corr. R. Ex. Anterior",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "O. Prov. e G. Extraord.",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteira",
+   "lado": "revenue",
+   "page": 7,
+   "section": "ajuste manual",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilhetes de Época",
+   "lado": "revenue",
+   "page": 7,
+   "section": "ajuste manual",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Dir. Transmissão Televisiva",
+   "lado": "revenue",
+   "page": 7,
+   "section": "ajuste manual",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Quotas de Sócios",
+   "lado": "revenue",
+   "page": 7,
+   "section": "ajuste manual",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínios e Publicidade",
+   "lado": "revenue",
+   "page": 7,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Royalties",
+   "lado": "revenue",
+   "page": 7,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros proveitos operacionais (resto)",
+   "lado": "revenue",
+   "page": 7,
+   "section": "ajuste manual",
    "choice": "other_income",
    "confidence": 1,
    "desdeCache": true
@@ -139,6 +202,15 @@
    "desdeCache": true
   },
   {
+   "label": "Perdas em Imobilização",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
    "label": "Multas e Penalidades",
    "lado": "expense",
    "page": 19,
@@ -155,75 +227,6 @@
    "choice": "exceptional_items",
    "confidence": 0.51,
    "desdeCache": true
-  },
-  {
-   "label": "Perdas em Imobilização",
-   "lado": "expense",
-   "page": 19,
-   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
-   "choice": "other_expenses",
-   "confidence": 0.57,
-   "top3": [
-    [
-     "other_expenses",
-     0.61
-    ],
-    [
-     "exceptional_items",
-     0.34
-    ],
-    [
-     "player_impairment",
-     0.02
-    ]
-   ],
-   "tokens": 1043
-  },
-  {
-   "label": "Corr. R. Ex. Anterior",
-   "lado": "expense",
-   "page": 19,
-   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
-   "choice": "exceptional_items",
-   "confidence": 1,
-   "top3": [
-    [
-     "exceptional_items",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1060
-  },
-  {
-   "label": "O. Prov. e G. Extraord.",
-   "lado": "revenue",
-   "page": 19,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "choice": "other_income",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "other_income",
-     0.98
-    ],
-    [
-     "lump_football_operations",
-     0.02
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1039
   }
  ]
 }

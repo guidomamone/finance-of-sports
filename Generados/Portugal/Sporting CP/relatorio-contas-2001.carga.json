@@ -1,20 +1,12 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
- "generado": "2026-10-16T04:18:54.155Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Corr. R. Ex. Anterior.\" -> other_income 0; \"Corpóreo e Incorpóreo\" -> depreciation 0.6; \"Donativos\" -> other_expenses 0.75; \"Perdas em Imobilizaç.\" -> other_expenses 0.55; \"O. Custos P. Extraord.\" -> other_expenses 0.6"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-16T17:18:59.542Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
   "el documento cierra 2002-07-31 (ejercicio desde el 08-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?",
-  "gastos: ningún total impreso igual a la suma de las líneas (-57.466); queda la suma, verificada por el resultado del ejercicio",
+  "ingresos: ningún total impreso igual a la suma de las líneas (36.651); queda la suma, verificada por el resultado del ejercicio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-57.457); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2002 (cierre 2002-07-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -24,16 +16,6 @@
   "perimetro": "individual",
   "revenueLines": [
    {
-    "rawLabel": "Prestações de Serviços",
-    "normalizedCategory": "other_income",
-    "amountNative": 21.477,
-    "disclosureLevel": "aggregated",
-    "_pag": 22,
-    "_escalon": 1,
-    "_conf": 0.92,
-    "_fuenteCat": "categorias.json"
-   },
-   {
     "rawLabel": "Subsídios à Exploração",
     "normalizedCategory": "other_income",
     "amountNative": 0,
@@ -41,16 +23,6 @@
     "_pag": 22,
     "_escalon": 1,
     "_conf": 0.98,
-    "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Proveitos Suplementares",
-    "normalizedCategory": "other_income",
-    "amountNative": 0.874,
-    "disclosureLevel": "aggregated",
-    "_pag": 22,
-    "_escalon": 1,
-    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -94,16 +66,6 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Corr. R. Ex. Anterior.",
-    "normalizedCategory": "other_income",
-    "amountNative": 0.272,
-    "disclosureLevel": "aggregated",
-    "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado"
-   },
-   {
     "rawLabel": "O Prov. e G. Extraord.",
     "normalizedCategory": "other_income",
     "amountNative": 0.274,
@@ -112,9 +74,89 @@
     "_escalon": 1,
     "_conf": 0.98,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bilheteira",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 5.589,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bilhetes de Época",
+    "normalizedCategory": "season_tickets",
+    "amountNative": 2.675,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Dir. Transmissão Televisiva",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 7.073,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Quotas de Sócios",
+    "normalizedCategory": "member_dues",
+    "amountNative": 3.59,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Patrocínios",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.93,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Royalties",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.523,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros proveitos operacionais (resto)",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.971,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
    }
   ],
   "expenseLines": [
+   {
+    "rawLabel": "Corr. R. Ex. Anterior.",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": 0.272,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Claude 2026-10-16 (lote 84): corrección de ejercicios anteriores del lado ingreso, ingreso extraordinario: exceptional_items (CONVENCIONES-DATOS), como Nacional 2024-25. Ajuste categoria para mudarla sin cambiarle el signo (to-do 237 f)"
+   },
    {
     "rawLabel": "Fornecimentos e Serviços Externos",
     "normalizedCategory": "admin_general_expense",
@@ -147,13 +189,13 @@
    },
    {
     "rawLabel": "Corpóreo e Incorpóreo",
-    "normalizedCategory": "depreciation",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -17.898,
     "disclosureLevel": "aggregated",
     "_pag": 22,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Provisões",
@@ -191,19 +233,19 @@
     "amountNative": -0.019,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Perdas em Imobilizaç.",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "exceptional_items",
     "amountNative": -0.009,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Multas e Penalidades",
@@ -221,19 +263,19 @@
     "amountNative": -0.175,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Claude 2026-10-16 (lote 84): corrección de ejercicios anteriores del lado ingreso, ingreso extraordinario: exceptional_items (CONVENCIONES-DATOS), como Nacional 2024-25. Ajuste categoria para mudarla sin cambiarle el signo (to-do 237 f)"
    },
    {
     "rawLabel": "O. Custos P. Extraord.",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "wages_squad",
     "amountNative": -1.937,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -263,8 +305,8 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 36.923,
-   "officialTotalExpenses": 57.466,
+   "officialTotalRevenue": 36.651,
+   "officialTotalExpenses": 57.457,
    "officialPAT": -22.715
   },
   "source": {
@@ -318,29 +360,116 @@
    "evidencia": "relatorio-contas-2001.md L582-587 (nota 4)",
    "autor": "Claude",
    "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
+   "campo": "categoria",
+   "valor": "exceptional_items",
+   "linea": null,
+   "etiqueta": "Corr. R. Ex. Anterior.",
+   "motivo": "Claude 2026-10-16 (lote 84): corrección de ejercicios anteriores del lado ingreso, ingreso extraordinario: exceptional_items (CONVENCIONES-DATOS), como Nacional 2024-25. Ajuste categoria para mudarla sin cambiarle el signo (to-do 237 f)",
+   "evidencia": "relatorio-contas-2001.md L764",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
+   "campo": "fila",
+   "valor": "5589",
+   "linea": 146,
+   "etiqueta": "Bilheteira",
+   "lado": "ingreso",
+   "reemplaza": "Prestações de Serviços",
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (21477+874=22351) en 6 filas (21380); el resto (971) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2001.md L146-L151 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
+   "campo": "fila",
+   "valor": "2675",
+   "linea": 147,
+   "etiqueta": "Bilhetes de Época",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (21477+874=22351) en 6 filas (21380); el resto (971) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2001.md L146-L151 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
+   "campo": "fila",
+   "valor": "7073",
+   "linea": 148,
+   "etiqueta": "Dir. Transmissão Televisiva",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (21477+874=22351) en 6 filas (21380); el resto (971) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2001.md L146-L151 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
+   "campo": "fila",
+   "valor": "3590",
+   "linea": 149,
+   "etiqueta": "Quotas de Sócios",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (21477+874=22351) en 6 filas (21380); el resto (971) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2001.md L146-L151 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
+   "campo": "fila",
+   "valor": "1930",
+   "linea": 150,
+   "etiqueta": "Patrocínios",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (21477+874=22351) en 6 filas (21380); el resto (971) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2001.md L146-L151 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
+   "campo": "fila",
+   "valor": "523",
+   "linea": 151,
+   "etiqueta": "Royalties",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (21477+874=22351) en 6 filas (21380); el resto (971) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2001.md L146-L151 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
+   "campo": "fila",
+   "valor": "971",
+   "linea": 151,
+   "etiqueta": "Outros proveitos operacionais (resto)",
+   "lado": "ingreso",
+   "reemplaza": "Proveitos Suplementares",
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (21477+874=22351) en 6 filas (21380); el resto (971) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2001.md L146-L151 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "seleccion": {
-  "filas": 24,
+  "filas": 29,
   "notasUsadas": [],
   "refM": null
  },
  "filas": [
-  {
-   "label": "Prestações de Serviços",
-   "page": 22,
-   "native": 21.477,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 21.477,
-   "cat": "other_income",
-   "conf": 0.92,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 21.477
-  },
   {
    "label": "Subsídios à Exploração",
    "page": 22,
@@ -355,21 +484,6 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0
-  },
-  {
-   "label": "Proveitos Suplementares",
-   "page": 22,
-   "native": 0.874,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.874,
-   "cat": "other_income",
-   "conf": 1,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 0.874
   },
   {
    "label": "Outros Proveitos e Ganhos Operacionais",
@@ -435,17 +549,16 @@
    "label": "Corr. R. Ex. Anterior.",
    "page": 32,
    "native": 0.272,
-   "ladoDoc": "revenue",
+   "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Proveitos e Ganhos Extraordinários\")",
-   "signoFijo": 0.272,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado",
+   "signoFijo": -0.272,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Claude 2026-10-16 (lote 84): corrección de ejercicios anteriores del lado ingreso, ingreso extraordinario: exceptional_items (CONVENCIONES-DATOS), como Nacional 2024-25. Ajuste categoria para mudarla sin cambiarle el signo (to-do 237 f)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
-   "destino": "revenue",
+   "ladoRechazado": false,
+   "destino": "expense",
    "amountNative": 0.272
   },
   {
@@ -462,6 +575,111 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.274
+  },
+  {
+   "label": "Bilheteira",
+   "page": 9,
+   "native": 5.589,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 5.589,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.589
+  },
+  {
+   "label": "Bilhetes de Época",
+   "page": 9,
+   "native": 2.675,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 2.675,
+   "cat": "season_tickets",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.675
+  },
+  {
+   "label": "Dir. Transmissão Televisiva",
+   "page": 9,
+   "native": 7.073,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 7.073,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.073
+  },
+  {
+   "label": "Quotas de Sócios",
+   "page": 9,
+   "native": 3.59,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 3.59,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.59
+  },
+  {
+   "label": "Patrocínios",
+   "page": 9,
+   "native": 1.93,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1.93,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.93
+  },
+  {
+   "label": "Royalties",
+   "page": 9,
+   "native": 0.523,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.523,
+   "cat": "sponsorship_commercial",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.523
+  },
+  {
+   "label": "Outros proveitos operacionais (resto)",
+   "page": 9,
+   "native": 0.971,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.971,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.971
   },
   {
    "label": "Fornecimentos e Serviços Externos",
@@ -515,12 +733,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 17.898,
-   "cat": "depreciation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet, revisado): la fila junta amortización de derechos de jugadores y depreciación; la mayor parte son pases: va entera a la parte mayor, como Moreirense y PAOK (to-do 237 b) [relatorio-contas-2001.md L621-622, L649: pases 14.908 de 17.898]",
    "destino": "expense",
    "amountNative": -17.898
   },
@@ -577,11 +795,11 @@
    "origen": "verificacion (nota que desglosa \"Custos e Perdas Extraordinários\")",
    "signoFijo": 0.019,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet, revisado): donativos, other_expenses como Alverca, Braga y Académico Viseu",
    "destino": "expense",
    "amountNative": -0.019
   },
@@ -592,12 +810,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Custos e Perdas Extraordinários\")",
    "signoFijo": 0.009,
-   "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet, revisado): pérdidas en inmovilizado; la cuenta hermana de ganancias son derechos deportivos: como los abates de jugadores de Sporting y Benfica",
    "destino": "expense",
    "amountNative": -0.009
   },
@@ -625,9 +843,10 @@
    "signoFijo": 0.175,
    "cat": "exceptional_items",
    "conf": 1,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Claude 2026-10-16 (lote 84): corrección de ejercicios anteriores del lado ingreso, ingreso extraordinario: exceptional_items (CONVENCIONES-DATOS), como Nacional 2024-25. Ajuste categoria para mudarla sin cambiarle el signo (to-do 237 f)",
    "enLista": true,
+   "ladoRechazado": false,
    "destino": "expense",
    "amountNative": -0.175
   },
@@ -638,12 +857,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Custos e Perdas Extraordinários\")",
    "signoFijo": 1.937,
-   "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet, revisado): indemnizaciones por rescisión de contratos con jugadores (1,768 M), como Indemnizações en Benfica y Sporting 2012 [relatorio-contas-2001.md L772, L190]",
    "destino": "expense",
    "amountNative": -1.937
   },
@@ -681,34 +900,25 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
-   "verificacion (nota que desglosa \"Proveitos e Ganhos Extraordinários\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Proveitos e Ganhos Extraordinários\")": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos con signo",
    "verificacion (nota que desglosa \"Custos e Perdas Extraordinários\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 36.923,
-  "expSum": -57.466,
-  "officialTotalRevenue": 36.923,
-  "officialTotalExpenses": 57.466,
+  "revSum": 36.651,
+  "expSum": -57.457,
+  "officialTotalRevenue": 36.651,
+  "officialTotalExpenses": 57.457,
   "officialPAT": -22.715,
   "verificacion": {
    "pat": "impreso",
-   "ingresos": "impreso",
+   "ingresos": "por-resultado",
    "gastos": "por-resultado"
   },
   "patImpreso": {
@@ -716,11 +926,6 @@
    "pag": null,
    "M": -22.715,
    "signos": "signos de la verificación; financiero/impuesto como su tabla"
-  },
-  "revImpreso": {
-   "label": "total de ingresos (verificado)",
-   "pag": null,
-   "M": 36.923
   }
  },
  "liga": {
@@ -771,10 +976,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
-  "lineasIngreso": 9,
-  "lineasGasto": 12,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 13,
+  "lineasGasto": 13,
   "metaFilas": 3,
   "excluidas": 0
  }

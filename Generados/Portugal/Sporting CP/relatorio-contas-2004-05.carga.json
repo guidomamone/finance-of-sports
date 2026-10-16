@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.pdf",
- "generado": "2026-10-16T04:18:54.881Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Corpóreo e Incorpóreo\" -> depreciation 0.6"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-16T17:19:00.069Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-42.589); queda la suma, verificada por el resultado del ejercicio",
@@ -24,16 +15,6 @@
   "perimetro": "individual",
   "revenueLines": [
    {
-    "rawLabel": "Prestações de Serviços",
-    "normalizedCategory": "other_income",
-    "amountNative": 29.815,
-    "disclosureLevel": "aggregated",
-    "_pag": 18,
-    "_escalon": 1,
-    "_conf": 0.92,
-    "_fuenteCat": "categorias.json"
-   },
-   {
     "rawLabel": "Subsídios à Exploração",
     "normalizedCategory": "other_income",
     "amountNative": 0,
@@ -41,16 +22,6 @@
     "_pag": 18,
     "_escalon": 1,
     "_conf": 0.98,
-    "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Proveitos Suplementares",
-    "normalizedCategory": "other_income",
-    "amountNative": 3.074,
-    "disclosureLevel": "aggregated",
-    "_pag": 18,
-    "_escalon": 1,
-    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -102,6 +73,86 @@
     "_escalon": 1,
     "_conf": 0.98,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bilheteira",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 6.203,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bilhetes Época",
+    "normalizedCategory": "season_tickets",
+    "amountNative": 5.736,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Direitos TV",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 9.731,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Quotização",
+    "normalizedCategory": "member_dues",
+    "amountNative": 3.761,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Patrocínios",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 2.778,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Royalties",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.215,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Particip. UEFA",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 3.053,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros proveitos operacionais (resto)",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.412,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
    }
   ],
   "expenseLines": [
@@ -137,13 +188,13 @@
    },
    {
     "rawLabel": "Corpóreo e Incorpóreo",
-    "normalizedCategory": "depreciation",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -13.055,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Provisões",
@@ -247,29 +298,118 @@
    "evidencia": ".md L17 relatório sobre o exercício findo em 30 de junho de 2005",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.pdf",
+   "campo": "fila",
+   "valor": "6203",
+   "linea": 87,
+   "etiqueta": "Bilheteira",
+   "lado": "ingreso",
+   "reemplaza": "Prestações de Serviços",
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (29815+3074=32889) en 7 filas (32477); el resto (412) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2004-05.md L87-L94 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.pdf",
+   "campo": "fila",
+   "valor": "5736",
+   "linea": 88,
+   "etiqueta": "Bilhetes Época",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (29815+3074=32889) en 7 filas (32477); el resto (412) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2004-05.md L87-L94 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.pdf",
+   "campo": "fila",
+   "valor": "9731",
+   "linea": 89,
+   "etiqueta": "Direitos TV",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (29815+3074=32889) en 7 filas (32477); el resto (412) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2004-05.md L87-L94 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.pdf",
+   "campo": "fila",
+   "valor": "3761",
+   "linea": 90,
+   "etiqueta": "Quotização",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (29815+3074=32889) en 7 filas (32477); el resto (412) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2004-05.md L87-L94 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.pdf",
+   "campo": "fila",
+   "valor": "2778",
+   "linea": 91,
+   "etiqueta": "Patrocínios",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (29815+3074=32889) en 7 filas (32477); el resto (412) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2004-05.md L87-L94 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.pdf",
+   "campo": "fila",
+   "valor": "1215",
+   "linea": 92,
+   "etiqueta": "Royalties",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (29815+3074=32889) en 7 filas (32477); el resto (412) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2004-05.md L87-L94 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.pdf",
+   "campo": "fila",
+   "valor": "3053",
+   "linea": 94,
+   "etiqueta": "Particip. UEFA",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (29815+3074=32889) en 7 filas (32477); el resto (412) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2004-05.md L87-L94 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.pdf",
+   "campo": "fila",
+   "valor": "412",
+   "linea": 94,
+   "etiqueta": "Outros proveitos operacionais (resto)",
+   "lado": "ingreso",
+   "reemplaza": "Proveitos Suplementares",
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (29815+3074=32889) en 7 filas (32477); el resto (412) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2004-05.md L87-L94 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "seleccion": {
-  "filas": 19,
+  "filas": 25,
   "notasUsadas": [],
   "refM": null
  },
  "filas": [
-  {
-   "label": "Prestações de Serviços",
-   "page": 18,
-   "native": 29.815,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 29.815,
-   "cat": "other_income",
-   "conf": 0.92,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 29.815
-  },
   {
    "label": "Subsídios à Exploração",
    "page": 18,
@@ -284,21 +424,6 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0
-  },
-  {
-   "label": "Proveitos Suplementares",
-   "page": 18,
-   "native": 3.074,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 3.074,
-   "cat": "other_income",
-   "conf": 1,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 3.074
   },
   {
    "label": "Outros Proveitos e Ganhos Operacionais",
@@ -376,6 +501,126 @@
    "amountNative": 0.159
   },
   {
+   "label": "Bilheteira",
+   "page": 5,
+   "native": 6.203,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 6.203,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.203
+  },
+  {
+   "label": "Bilhetes Época",
+   "page": 5,
+   "native": 5.736,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 5.736,
+   "cat": "season_tickets",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.736
+  },
+  {
+   "label": "Direitos TV",
+   "page": 5,
+   "native": 9.731,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 9.731,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 9.731
+  },
+  {
+   "label": "Quotização",
+   "page": 5,
+   "native": 3.761,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 3.761,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.761
+  },
+  {
+   "label": "Patrocínios",
+   "page": 5,
+   "native": 2.778,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 2.778,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.778
+  },
+  {
+   "label": "Royalties",
+   "page": 5,
+   "native": 1.215,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1.215,
+   "cat": "sponsorship_commercial",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.215
+  },
+  {
+   "label": "Particip. UEFA",
+   "page": 5,
+   "native": 3.053,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 3.053,
+   "cat": "competition_bonus",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.053
+  },
+  {
+   "label": "Outros proveitos operacionais (resto)",
+   "page": 5,
+   "native": 0.412,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.412,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.412
+  },
+  {
    "label": "Fornecimentos e Serviços Externos",
    "page": 18,
    "native": 7.058,
@@ -427,12 +672,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 13.055,
-   "cat": "depreciation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet, revisado): la fila junta amortización de derechos de jugadores y depreciación; la mayor parte son pases: va entera a la parte mayor, como Moreirense y PAOK (to-do 237 b) [relatorio-contas-2004-05.md L564, L591: pases 12.928 de 13.055]",
    "destino": "expense",
    "amountNative": -13.055
   },
@@ -530,20 +775,11 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Proveitos e Ganhos Extraordinários\")": "gastos con signo",
+   "verificacion (ajuste manual)": "gastos con signo",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
@@ -624,9 +860,9 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
-  "lineasIngreso": 8,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 14,
   "lineasGasto": 8,
   "metaFilas": 3,
   "excluidas": 0

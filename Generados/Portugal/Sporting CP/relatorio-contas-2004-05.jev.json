@@ -1,17 +1,8 @@
 {
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.md",
- "generatedAt": "2026-10-16T04:18:35.193Z",
- "rubrosHuella": "761cffdca5e29551c8186ded29bb1dd15fa880fc",
+ "generatedAt": "2026-10-16T17:18:50.926Z",
+ "rubrosHuella": "fc81e8a4303efb4bb98fc644c0df3c99f1dd858d",
  "rubros": [
-  {
-   "label": "Prestações de Serviços",
-   "lado": "revenue",
-   "page": 18,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 0.92,
-   "desdeCache": true
-  },
   {
    "label": "Subsídios à Exploração",
    "lado": "revenue",
@@ -22,21 +13,84 @@
    "desdeCache": true
   },
   {
-   "label": "Proveitos Suplementares",
-   "lado": "revenue",
-   "page": 18,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 1,
-   "desdeCache": true
-  },
-  {
    "label": "Outros Proveitos e Ganhos Operacionais",
    "lado": "revenue",
    "page": 18,
    "section": "estado",
    "choice": "other_income",
    "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "G. Imobilizações",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Benef. Contratuais",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Corr. Exer. Anteriores",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "O. P. Extraordinários",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteira",
+   "lado": "revenue",
+   "page": 5,
+   "section": "ajuste manual",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínios",
+   "lado": "revenue",
+   "page": 5,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Royalties",
+   "lado": "revenue",
+   "page": 5,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros proveitos operacionais (resto)",
+   "lado": "revenue",
+   "page": 5,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 1,
    "desdeCache": true
   },
   {
@@ -103,119 +157,105 @@
    "desdeCache": true
   },
   {
-   "label": "O. P. Extraordinários",
-   "lado": "revenue",
-   "page": 29,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "choice": "other_income",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "other_income",
-     0.98
-    ],
-    [
-     "competition_bonus",
-     0.01
-    ],
-    [
-     "lump_football_operations",
-     0.01
-    ]
-   ],
-   "tokens": 1036
-  },
-  {
-   "label": "Benef. Contratuais",
-   "lado": "revenue",
-   "page": 29,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1106
-  },
-  {
-   "label": "Corr. Exer. Anteriores",
-   "lado": "revenue",
-   "page": 29,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1111
-  },
-  {
-   "label": "G. Imobilizações",
-   "lado": "revenue",
-   "page": 29,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "choice": "other_income",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "other_income",
-     0.99
-    ],
-    [
-     "player_sales",
-     0.01
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1011
-  },
-  {
    "label": "Custos e Perdas Extraordinários",
    "lado": "expense",
    "page": 18,
    "section": "estado",
    "choice": "exceptional_items",
    "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Direitos TV",
+   "lado": "revenue",
+   "page": 5,
+   "section": "ajuste manual",
+   "choice": "broadcasting",
+   "confidence": 1,
    "top3": [
     [
-     "exceptional_items",
-     0.98
+     "broadcasting",
+     1
     ],
     [
-     "other_expenses",
-     0.02
+     "member_dues",
+     0
     ],
     [
-     "wages_squad",
+     "season_tickets",
      0
     ]
    ],
-   "tokens": 1070
+   "tokens": 1015
+  },
+  {
+   "label": "Bilhetes Época",
+   "lado": "revenue",
+   "page": 5,
+   "section": "ajuste manual",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "top3": [
+    [
+     "season_tickets",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Quotização",
+   "lado": "revenue",
+   "page": 5,
+   "section": "ajuste manual",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Particip. UEFA",
+   "lado": "revenue",
+   "page": 5,
+   "section": "ajuste manual",
+   "choice": "competition_bonus",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "competition_bonus",
+     0.9
+    ],
+    [
+     "broadcasting",
+     0.06
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 1130
   }
  ]
 }

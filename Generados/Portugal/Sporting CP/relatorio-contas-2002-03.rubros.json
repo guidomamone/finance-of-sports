@@ -1,244 +1,270 @@
 {
- "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.md",
- "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.pdf",
- "club": "sportingcp-pt",
- "year": 2003,
- "generatedAt": "2026-10-16T17:14:57.692Z",
- "origen": "verificar.mjs (proceso nuevo, Versión 324)",
- "rubros": [
-  {
-   "label": "Subsídios à Exploração",
-   "lado": "revenue",
-   "page": 21,
-   "section": "estado",
-   "values": [
-    0
-   ]
-  },
-  {
-   "label": "Outros Proveitos e Ganhos Operacionais",
-   "lado": "revenue",
-   "page": 21,
-   "section": "estado",
-   "values": [
-    0.198
-   ]
-  },
-  {
-   "label": "Ganhos em Imobiliz.",
-   "lado": "revenue",
-   "page": 31,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "values": [
-    8.108
-   ]
-  },
-  {
-   "label": "Benefícios Contratuais",
-   "lado": "revenue",
-   "page": 31,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "values": [
-    0.086
-   ]
-  },
-  {
-   "label": "Redução de Provisões",
-   "lado": "revenue",
-   "page": 31,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "values": [
-    0.139
-   ]
-  },
-  {
-   "label": "Corr. R. Ex. Anterior.",
-   "lado": "revenue",
-   "page": 31,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "values": [
-    0.005
-   ]
-  },
-  {
-   "label": "O Prov. e G. Extraord.",
-   "lado": "revenue",
-   "page": 31,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "values": [
-    0.2
-   ]
-  },
-  {
-   "label": "Bilheteira",
-   "lado": "revenue",
-   "page": 9,
-   "section": "ajuste manual",
-   "values": [
-    2.527
-   ]
-  },
-  {
-   "label": "Bilhetes de Época",
-   "lado": "revenue",
-   "page": 9,
-   "section": "ajuste manual",
-   "values": [
-    2.053
-   ]
-  },
-  {
-   "label": "Dir. Transmissão Televisiva",
-   "lado": "revenue",
-   "page": 9,
-   "section": "ajuste manual",
-   "values": [
-    6.635
-   ]
-  },
-  {
-   "label": "Quotas de Sócios",
-   "lado": "revenue",
-   "page": 9,
-   "section": "ajuste manual",
-   "values": [
-    3.652
-   ]
-  },
-  {
-   "label": "Patrocínios e Publicidade",
-   "lado": "revenue",
-   "page": 9,
-   "section": "ajuste manual",
-   "values": [
-    2.18
-   ]
-  },
-  {
-   "label": "Royalties",
-   "lado": "revenue",
-   "page": 9,
-   "section": "ajuste manual",
-   "values": [
-    0.224
-   ]
-  },
-  {
-   "label": "Outros proveitos operacionais (resto)",
-   "lado": "revenue",
-   "page": 9,
-   "section": "ajuste manual",
-   "values": [
-    0.443
-   ]
-  },
-  {
-   "label": "Fornecimentos e Serviços Externos",
-   "lado": "expense",
-   "page": 21,
-   "section": "estado",
-   "values": [
-    8.174
-   ]
-  },
-  {
-   "label": "Remunerações",
-   "lado": "expense",
-   "page": 21,
-   "section": "estado",
-   "values": [
-    21.891
-   ]
-  },
-  {
-   "label": "Outros",
-   "lado": "expense",
-   "page": 21,
-   "section": "estado",
-   "values": [
-    1.101
-   ]
-  },
-  {
-   "label": "Corpóreo e Incorpóreo",
-   "lado": "expense",
-   "page": 21,
-   "section": "estado",
-   "values": [
-    16.936
-   ]
-  },
-  {
-   "label": "Provisões",
-   "lado": "expense",
-   "page": 21,
-   "section": "estado",
-   "values": [
-    0
-   ]
-  },
-  {
-   "label": "Impostos",
-   "lado": "expense",
-   "page": 21,
-   "section": "estado",
-   "values": [
-    0.102
-   ]
-  },
-  {
-   "label": "Outros Custos e Perdas Operacionais",
-   "lado": "expense",
-   "page": 21,
-   "section": "estado",
-   "values": [
-    0.914
-   ]
-  },
-  {
-   "label": "Donativos",
-   "lado": "expense",
-   "page": 31,
-   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
-   "values": [
-    0.012
-   ]
-  },
-  {
-   "label": "Perdas em Imobilizaç.",
-   "lado": "expense",
-   "page": 31,
-   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
-   "values": [
-    0.04
-   ]
-  },
-  {
-   "label": "Multas e Penalidades",
-   "lado": "expense",
-   "page": 31,
-   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
-   "values": [
-    0.038
-   ]
-  },
-  {
-   "label": "Corr. R. Ex. Anterior.",
-   "lado": "expense",
-   "page": 31,
-   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
-   "values": [
-    0.104
-   ]
-  },
-  {
-   "label": "O. Custos P. Extraord.",
-   "lado": "expense",
-   "page": 31,
-   "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
-   "values": [
-    1.731
-   ]
-  }
- ]
+  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.md",
+  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.pdf",
+  "club": "sportingcp-pt",
+  "year": 2003,
+  "generatedAt": "2026-10-16T17:17:04.783Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Subsídios à Exploração",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Outros Proveitos e Ganhos Operacionais",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0.198
+      ],
+      "glosa": "Otros ingresos y ganancias de explotación"
+    },
+    {
+      "label": "Ganhos em Imobiliz.",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        8.108
+      ],
+      "glosa": "Ganancias en inmovilizado"
+    },
+    {
+      "label": "Benefícios Contratuais",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.086
+      ],
+      "glosa": "Beneficios contractuales"
+    },
+    {
+      "label": "Redução de Provisões",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.139
+      ],
+      "glosa": "Reversión de provisiones"
+    },
+    {
+      "label": "Corr. R. Ex. Anterior.",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.005
+      ],
+      "glosa": "Corrección de resultados de ejercicios anteriores"
+    },
+    {
+      "label": "O Prov. e G. Extraord.",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.2
+      ],
+      "glosa": "Otros ingresos y ganancias extraordinarios"
+    },
+    {
+      "label": "Bilheteira",
+      "lado": "revenue",
+      "page": 9,
+      "section": "ajuste manual",
+      "values": [
+        2.527
+      ],
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "Bilhetes de Época",
+      "lado": "revenue",
+      "page": 9,
+      "section": "ajuste manual",
+      "values": [
+        2.053
+      ],
+      "glosa": "Abonos de temporada"
+    },
+    {
+      "label": "Dir. Transmissão Televisiva",
+      "lado": "revenue",
+      "page": 9,
+      "section": "ajuste manual",
+      "values": [
+        6.635
+      ],
+      "glosa": "Derechos de retransmisión televisiva"
+    },
+    {
+      "label": "Quotas de Sócios",
+      "lado": "revenue",
+      "page": 9,
+      "section": "ajuste manual",
+      "values": [
+        3.652
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Patrocínios e Publicidade",
+      "lado": "revenue",
+      "page": 9,
+      "section": "ajuste manual",
+      "values": [
+        2.18
+      ],
+      "glosa": "Patrocinios y publicidad"
+    },
+    {
+      "label": "Royalties",
+      "lado": "revenue",
+      "page": 9,
+      "section": "ajuste manual",
+      "values": [
+        0.224
+      ],
+      "glosa": "Regalías"
+    },
+    {
+      "label": "Outros proveitos operacionais (resto)",
+      "lado": "revenue",
+      "page": 9,
+      "section": "ajuste manual",
+      "values": [
+        0.443
+      ],
+      "glosa": "Otros ingresos de explotación (resto)"
+    },
+    {
+      "label": "Fornecimentos e Serviços Externos",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        8.174
+      ],
+      "glosa": "Suministros y servicios exteriores"
+    },
+    {
+      "label": "Remunerações",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        21.891
+      ],
+      "glosa": "Remuneraciones"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        1.101
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Corpóreo e Incorpóreo",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        16.936
+      ],
+      "glosa": "Material e intangible"
+    },
+    {
+      "label": "Provisões",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Provisiones"
+    },
+    {
+      "label": "Impostos",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0.102
+      ],
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Outros Custos e Perdas Operacionais",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0.914
+      ],
+      "glosa": "Otros gastos y pérdidas de explotación"
+    },
+    {
+      "label": "Donativos",
+      "lado": "expense",
+      "page": 31,
+      "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+      "values": [
+        0.012
+      ],
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "Perdas em Imobilizaç.",
+      "lado": "expense",
+      "page": 31,
+      "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+      "values": [
+        0.04
+      ],
+      "glosa": "Pérdidas en inmovilizado"
+    },
+    {
+      "label": "Multas e Penalidades",
+      "lado": "expense",
+      "page": 31,
+      "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+      "values": [
+        0.038
+      ],
+      "glosa": "Multas y sanciones"
+    },
+    {
+      "label": "Corr. R. Ex. Anterior.",
+      "lado": "expense",
+      "page": 31,
+      "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+      "values": [
+        0.104
+      ],
+      "glosa": "Corrección de resultados de ejercicios anteriores"
+    },
+    {
+      "label": "O. Custos P. Extraord.",
+      "lado": "expense",
+      "page": 31,
+      "section": "nota que desglosa \"Custos e Perdas Extraordinários\"",
+      "values": [
+        1.731
+      ],
+      "glosa": "Otros gastos y pérdidas extraordinarios"
+    }
+  ]
 }

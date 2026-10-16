@@ -1,17 +1,8 @@
 {
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.md",
- "generatedAt": "2026-10-16T04:18:34.543Z",
- "rubrosHuella": "5135260f59b3c19e1cea5e9168d0220f7f3a1325",
+ "generatedAt": "2026-10-16T17:18:50.620Z",
+ "rubrosHuella": "ff2c4fca556601596925e71215aa607b5f60c9c3",
  "rubros": [
-  {
-   "label": "Prestações de Serviços",
-   "lado": "revenue",
-   "page": 21,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 0.92,
-   "desdeCache": true
-  },
   {
    "label": "Subsídios à Exploração",
    "lado": "revenue",
@@ -19,15 +10,6 @@
    "section": "estado",
    "choice": "other_income",
    "confidence": 0.98,
-   "desdeCache": true
-  },
-  {
-   "label": "Proveitos Suplementares",
-   "lado": "revenue",
-   "page": 21,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 1,
    "desdeCache": true
   },
   {
@@ -82,6 +64,69 @@
    "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
    "choice": "other_income",
    "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteira",
+   "lado": "revenue",
+   "page": 9,
+   "section": "ajuste manual",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilhetes de Época",
+   "lado": "revenue",
+   "page": 9,
+   "section": "ajuste manual",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Dir. Transmissão Televisiva",
+   "lado": "revenue",
+   "page": 9,
+   "section": "ajuste manual",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Quotas de Sócios",
+   "lado": "revenue",
+   "page": 9,
+   "section": "ajuste manual",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínios e Publicidade",
+   "lado": "revenue",
+   "page": 9,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Royalties",
+   "lado": "revenue",
+   "page": 9,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros proveitos operacionais (resto)",
+   "lado": "revenue",
+   "page": 9,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 1,
    "desdeCache": true
   },
   {

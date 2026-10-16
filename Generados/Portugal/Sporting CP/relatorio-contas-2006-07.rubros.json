@@ -1,208 +1,230 @@
 {
- "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.md",
- "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf",
- "club": "sportingcp-pt",
- "year": 2007,
- "generatedAt": "2026-10-16T17:14:57.804Z",
- "origen": "verificar.mjs (proceso nuevo, Versión 324)",
- "rubros": [
-  {
-   "label": "Subsídios à Exploração",
-   "lado": "revenue",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    0
-   ]
-  },
-  {
-   "label": "Outros Proveitos e Ganhos Operacionais",
-   "lado": "revenue",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    26.761
-   ]
-  },
-  {
-   "label": "BENEF. CONTRATIAIS",
-   "lado": "revenue",
-   "page": 25,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "values": [
-    0.208
-   ]
-  },
-  {
-   "label": "CONR. EX. ANTERIORES",
-   "lado": "revenue",
-   "page": 25,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "values": [
-    0.22
-   ]
-  },
-  {
-   "label": "O. P. EXTRAORDINAR.",
-   "lado": "revenue",
-   "page": 25,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "values": [
-    0.015
-   ]
-  },
-  {
-   "label": "BILHETEIRA",
-   "lado": "revenue",
-   "page": 8,
-   "section": "ajuste manual",
-   "values": [
-    3.47
-   ]
-  },
-  {
-   "label": "BILHETES ÉPOCA",
-   "lado": "revenue",
-   "page": 8,
-   "section": "ajuste manual",
-   "values": [
-    7.86
-   ]
-  },
-  {
-   "label": "DIREITOS TV",
-   "lado": "revenue",
-   "page": 8,
-   "section": "ajuste manual",
-   "values": [
-    8.992
-   ]
-  },
-  {
-   "label": "QUOTIZAÇÃO",
-   "lado": "revenue",
-   "page": 8,
-   "section": "ajuste manual",
-   "values": [
-    4.098
-   ]
-  },
-  {
-   "label": "PATROCÍNIOS + PUBLIC.",
-   "lado": "revenue",
-   "page": 8,
-   "section": "ajuste manual",
-   "values": [
-    6.131
-   ]
-  },
-  {
-   "label": "ROYALTIES",
-   "lado": "revenue",
-   "page": 8,
-   "section": "ajuste manual",
-   "values": [
-    0.297
-   ]
-  },
-  {
-   "label": "PARTICIPAÇÃO LC",
-   "lado": "revenue",
-   "page": 8,
-   "section": "ajuste manual",
-   "values": [
-    6.618
-   ]
-  },
-  {
-   "label": "Outros proveitos operacionais (resto)",
-   "lado": "revenue",
-   "page": 8,
-   "section": "ajuste manual",
-   "values": [
-    0.655
-   ]
-  },
-  {
-   "label": "Fornecimentos e Serviços Externos",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    12.342
-   ]
-  },
-  {
-   "label": "Remunerações",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    20.853
-   ]
-  },
-  {
-   "label": "Encargos Sociais",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    0.813
-   ]
-  },
-  {
-   "label": "Amortizações de Imob. Corpóreas e Incorpóreas",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    9.711
-   ]
-  },
-  {
-   "label": "Ajustamento de Dívidas de Clientes",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    0.125
-   ]
-  },
-  {
-   "label": "Provisões do Exercício",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    2
-   ]
-  },
-  {
-   "label": "Impostos",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    0.18
-   ]
-  },
-  {
-   "label": "Outros Custos e Perdas Operacionais",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    1.404
-   ]
-  },
-  {
-   "label": "Custos e Perdas Extraordinários",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    1.06
-   ]
-  }
- ]
+  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.md",
+  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf",
+  "club": "sportingcp-pt",
+  "year": 2007,
+  "generatedAt": "2026-10-16T17:17:04.896Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Subsídios à Exploração",
+      "lado": "revenue",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Outros Proveitos e Ganhos Operacionais",
+      "lado": "revenue",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        26.761
+      ],
+      "glosa": "Otros ingresos y ganancias de explotación"
+    },
+    {
+      "label": "BENEF. CONTRATIAIS",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.208
+      ],
+      "glosa": "Beneficios contractuales"
+    },
+    {
+      "label": "CONR. EX. ANTERIORES",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.22
+      ],
+      "glosa": "Correcciones de ejercicios anteriores"
+    },
+    {
+      "label": "O. P. EXTRAORDINAR.",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+      "values": [
+        0.015
+      ],
+      "glosa": "Otros ingresos extraordinarios"
+    },
+    {
+      "label": "BILHETEIRA",
+      "lado": "revenue",
+      "page": 8,
+      "section": "ajuste manual",
+      "values": [
+        3.47
+      ],
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "BILHETES ÉPOCA",
+      "lado": "revenue",
+      "page": 8,
+      "section": "ajuste manual",
+      "values": [
+        7.86
+      ],
+      "glosa": "Abonos de temporada"
+    },
+    {
+      "label": "DIREITOS TV",
+      "lado": "revenue",
+      "page": 8,
+      "section": "ajuste manual",
+      "values": [
+        8.992
+      ],
+      "glosa": "Derechos de televisión"
+    },
+    {
+      "label": "QUOTIZAÇÃO",
+      "lado": "revenue",
+      "page": 8,
+      "section": "ajuste manual",
+      "values": [
+        4.098
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "PATROCÍNIOS + PUBLIC.",
+      "lado": "revenue",
+      "page": 8,
+      "section": "ajuste manual",
+      "values": [
+        6.131
+      ],
+      "glosa": "Patrocinios y publicidad"
+    },
+    {
+      "label": "ROYALTIES",
+      "lado": "revenue",
+      "page": 8,
+      "section": "ajuste manual",
+      "values": [
+        0.297
+      ],
+      "glosa": "Regalías"
+    },
+    {
+      "label": "PARTICIPAÇÃO LC",
+      "lado": "revenue",
+      "page": 8,
+      "section": "ajuste manual",
+      "values": [
+        6.618
+      ],
+      "glosa": "Participación en la Liga de Campeones"
+    },
+    {
+      "label": "Outros proveitos operacionais (resto)",
+      "lado": "revenue",
+      "page": 8,
+      "section": "ajuste manual",
+      "values": [
+        0.655
+      ],
+      "glosa": "Otros ingresos de explotación (resto)"
+    },
+    {
+      "label": "Fornecimentos e Serviços Externos",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        12.342
+      ],
+      "glosa": "Suministros y servicios exteriores"
+    },
+    {
+      "label": "Remunerações",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        20.853
+      ],
+      "glosa": "Remuneraciones"
+    },
+    {
+      "label": "Encargos Sociais",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        0.813
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Amortizações de Imob. Corpóreas e Incorpóreas",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        9.711
+      ],
+      "glosa": "Amortizaciones del inmovilizado material e intangible"
+    },
+    {
+      "label": "Ajustamento de Dívidas de Clientes",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        0.125
+      ],
+      "glosa": "Ajustes por deterioro de deudas de clientes"
+    },
+    {
+      "label": "Provisões do Exercício",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        2
+      ],
+      "glosa": "Provisiones del ejercicio"
+    },
+    {
+      "label": "Impostos",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        0.18
+      ],
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Outros Custos e Perdas Operacionais",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        1.404
+      ],
+      "glosa": "Otros gastos y pérdidas de explotación"
+    },
+    {
+      "label": "Custos e Perdas Extraordinários",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        1.06
+      ],
+      "glosa": "Gastos y pérdidas extraordinarios"
+    }
+  ]
 }

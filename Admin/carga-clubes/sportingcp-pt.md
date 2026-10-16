@@ -1188,6 +1188,72 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2010–11 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
 ```
 
+## 2002
+
+### Ingresos
+
+```text
+2002: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Sporting CP/relatorio-contas-2001.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Sporting CP/relatorio-contas-2001.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subsídios à Exploração | pág. 22, Jev 0.98 |
+| 2 | Outros Proveitos e Ganhos Operacionais | pág. 22, Jev 0.99 |
+| 3 | Ganhos em Imobiliz. | pág. 32, Jev 0.99 |
+| 4 | Benefícios Contratuais | pág. 32, precedente |
+| 5 | Redução de Provisões | pág. 32, Jev 1 |
+| 6 | O Prov. e G. Extraord. | pág. 32, Jev 0.98 |
+| 7 | Bilheteira | pág. 9, Jev 1 |
+| 8 | Bilhetes de Época | pág. 9, Jev 1 |
+| 9 | Dir. Transmissão Televisiva | pág. 9, Jev 1 |
+| 10 | Quotas de Sócios | pág. 9, Jev 1 |
+| 11 | Patrocínios | pág. 9, Jev 1 |
+| 12 | Royalties | pág. 9, Jev 0.99 |
+| 13 | Outros proveitos operacionais (resto) | pág. 9, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Corr. R. Ex. Anterior. | pág. 32, precedente |
+| 2 | Fornecimentos e Serviços Externos | pág. 22, Jev 1 |
+| 3 | Remunerações | pág. 22, Jev 0.99 |
+| 4 | Outros | pág. 22, precedente |
+| 5 | Corpóreo e Incorpóreo | pág. 22, precedente |
+| 6 | Provisões | pág. 22, Claude 0.85 |
+| 7 | Impostos | pág. 22, Claude 0.85 |
+| 8 | Outros Custos e Perdas Operacionais | pág. 22, Jev 1 |
+| 9 | Donativos | pág. 32, precedente |
+| 10 | Perdas em Imobilizaç. | pág. 32, precedente |
+| 11 | Multas e Penalidades | pág. 32, precedente |
+| 12 | Corr. R. Ex. Anterior. | pág. 32, precedente |
+| 13 | O. Custos P. Extraord. | pág. 32, precedente |
+
+### Meta
+
+```text
+2002: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2002-07-31. periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)
+2002: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): anio = 2002. Claude 2026-10-16: el documento es el ejercicio del 1/8/2001 al 31/7/2002 (L17); la etiqueta sale del cierre: 2002. El nombre del archivo ('2001') hacía que el registro dijera 2001 y alta-club 2002
+2002: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fx = 1.0222. Claude 2026-10-16: la nota 4 da 1 EUR = 0,9783 USD al 31/07/2002; el sitio guarda EUR por 1 USD = 1/0,9783 = 1,0222
+2002: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): categoria = exceptional_items. Claude 2026-10-16 (lote 84): corrección de ejercicios anteriores del lado ingreso, ingreso extraordinario: exceptional_items (CONVENCIONES-DATOS), como Nacional 2024-25. Ajuste categoria para mudarla sin cambiarle el signo (to-do 237 f)
+2002: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 5589. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (21477+874=22351) en 6 filas (21380); el resto (971) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+2002: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 2675. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (21477+874=22351) en 6 filas (21380); el resto (971) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+2002: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 7073. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (21477+874=22351) en 6 filas (21380); el resto (971) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+2002: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 3590. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (21477+874=22351) en 6 filas (21380); el resto (971) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+2002: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 1930. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (21477+874=22351) en 6 filas (21380); el resto (971) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+2002: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 523. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (21477+874=22351) en 6 filas (21380); el resto (971) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+2002: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 971. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (21477+874=22351) en 6 filas (21380); el resto (971) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2002–03 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
+```
+
 ## Fuentes
 
 ### sportingcp-pt-relatorio-contas-2024-25
@@ -1292,4 +1358,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sportingcp-pt-relatorio-contas-2001
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2001.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

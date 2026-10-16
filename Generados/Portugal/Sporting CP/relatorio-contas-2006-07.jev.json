@@ -1,17 +1,8 @@
 {
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.md",
- "generatedAt": "2026-10-16T04:18:35.849Z",
- "rubrosHuella": "24cc8409e8dd22de9a4bc72b3d3dc93b078dd366",
+ "generatedAt": "2026-10-16T17:18:51.177Z",
+ "rubrosHuella": "62767652de9bfd44090345afb1251b5deafbb34d",
  "rubros": [
-  {
-   "label": "Prestações de Serviços",
-   "lado": "revenue",
-   "page": 19,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 0.92,
-   "desdeCache": true
-  },
   {
    "label": "Subsídios à Exploração",
    "lado": "revenue",
@@ -19,15 +10,6 @@
    "section": "estado",
    "choice": "other_income",
    "confidence": 0.98,
-   "desdeCache": true
-  },
-  {
-   "label": "Proveitos Suplementares",
-   "lado": "revenue",
-   "page": 19,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 1,
    "desdeCache": true
   },
   {
@@ -40,12 +22,84 @@
    "desdeCache": true
   },
   {
+   "label": "BENEF. CONTRATIAIS",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "CONR. EX. ANTERIORES",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
    "label": "O. P. EXTRAORDINAR.",
    "lado": "revenue",
    "page": 25,
    "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
    "choice": "other_income",
    "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "BILHETEIRA",
+   "lado": "revenue",
+   "page": 8,
+   "section": "ajuste manual",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "BILHETES ÉPOCA",
+   "lado": "revenue",
+   "page": 8,
+   "section": "ajuste manual",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DIREITOS TV",
+   "lado": "revenue",
+   "page": 8,
+   "section": "ajuste manual",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "QUOTIZAÇÃO",
+   "lado": "revenue",
+   "page": 8,
+   "section": "ajuste manual",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "ROYALTIES",
+   "lado": "revenue",
+   "page": 8,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros proveitos operacionais (resto)",
+   "lado": "revenue",
+   "page": 8,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 1,
    "desdeCache": true
   },
   {
@@ -64,6 +118,42 @@
    "section": "estado",
    "choice": "wages_squad",
    "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Encargos Sociais",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizações de Imob. Corpóreas e Incorpóreas",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ajustamento de Dívidas de Clientes",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisões do Exercício",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "other_amortisation",
+   "confidence": 0.91,
    "desdeCache": true
   },
   {
@@ -94,15 +184,15 @@
    "desdeCache": true
   },
   {
-   "label": "BENEF. CONTRATIAIS",
+   "label": "PATROCÍNIOS + PUBLIC.",
    "lado": "revenue",
-   "page": 25,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "choice": "other_income",
+   "page": 8,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
    "confidence": 1,
    "top3": [
     [
-     "other_income",
+     "sponsorship_commercial",
      1
     ],
     [
@@ -114,18 +204,18 @@
      0
     ]
    ],
-   "tokens": 981
+   "tokens": 1048
   },
   {
-   "label": "CONR. EX. ANTERIORES",
+   "label": "PARTICIPAÇÃO LC",
    "lado": "revenue",
-   "page": 25,
-   "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
-   "choice": "other_income",
+   "page": 8,
+   "section": "ajuste manual",
+   "choice": "competition_bonus",
    "confidence": 1,
    "top3": [
     [
-     "other_income",
+     "competition_bonus",
      1
     ],
     [
@@ -134,98 +224,6 @@
     ],
     [
      "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1112
-  },
-  {
-   "label": "Ajustamento de Dívidas de Clientes",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "choice": "other_expenses",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_expenses",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1041
-  },
-  {
-   "label": "Encargos Sociais",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "choice": "wages_squad",
-   "confidence": 0.91,
-   "top3": [
-    [
-     "wages_squad",
-     0.92
-    ],
-    [
-     "admin_general_expense",
-     0.06
-    ],
-    [
-     "other_expenses",
-     0.02
-    ]
-   ],
-   "tokens": 1003
-  },
-  {
-   "label": "Provisões do Exercício",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "choice": "other_amortisation",
-   "confidence": 0.91,
-   "top3": [
-    [
-     "other_amortisation",
-     0.92
-    ],
-    [
-     "admin_general_expense",
-     0.06
-    ],
-    [
-     "player_amortisation",
-     0.01
-    ]
-   ],
-   "tokens": 1025
-  },
-  {
-   "label": "Amortizações de Imob. Corpóreas e Incorpóreas",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "choice": "depreciation",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "depreciation",
-     0.99
-    ],
-    [
-     "other_amortisation",
-     0.01
-    ],
-    [
-     "wages_squad",
      0
     ]
    ],

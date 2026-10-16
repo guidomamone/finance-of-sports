@@ -416,4 +416,12 @@ window.RANKINGS["pt-primeiraliga"] = {
         mix:[["Cuotas Sociales",11.415],["Comercial / Sponsors",15.12],["Estadio",17.33],["Televisión",12.617],["Premios por competencias",0.316],["Venta de Jugadores",1.166],["Otros ingresos",55.995]] },
     ],
   },
+  2002: {
+    leagueSize: null,
+    clubs: [
+      { id:"sportingcp-pt", revenue:35.855, reportType:"official_balance_sheet",
+        sourceId:"sportingcp-pt-relatorio-contas-2001",
+        mix:[["Cuotas Sociales",3.512],["Comercial / Sponsors",2.4],["Estadio",8.085],["Televisión",6.919],["Otros ingresos",14.939]] },
+    ],
+  },
 };
