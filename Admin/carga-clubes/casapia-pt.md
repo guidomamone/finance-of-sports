@@ -97,6 +97,72 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Casa Pia".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Casa Pia/relatorio-contas-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Casa Pia/relatorio-contas-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bilheteira | pág. 19, Jev 1 |
+| 2 | Patrocínios, publicidade e corporate | pág. 19, Jev 1 |
+| 3 | Receitas TV, Premios de participação Competições | pág. 19, precedente |
+| 4 | Lucros jogos Online e Placard | pág. 19, Jev 0.97 |
+| 5 | Serviços Scouting | pág. 19, precedente |
+| 6 | Cedência direitos desportivos | pág. 19, Jev 0.99 |
+| 7 | Federação Portuguesa de Futebol | pág. 19, precedente |
+| 8 | IEFP | pág. 19, Claude 0.85 |
+| 9 | IAPMEI | pág. 19, Claude 0.85 |
+| 10 | Outros rendimentos | pág. 9, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trabalhos especializados | pág. 24, Jev 0.99 |
+| 2 | Publicidade | pág. 24, Jev 1 |
+| 3 | Vigilância e Segurança | pág. 24, Jev 0.97 |
+| 4 | Honorários | pág. 24, Jev 1 |
+| 5 | Conservação e reparação | pág. 24, Jev 1 |
+| 6 | Serviços bancários | pág. 24, Jev 0.98 |
+| 7 | Materias | pág. 24, precedente |
+| 8 | Energia e fluidos | pág. 24, Jev 1 |
+| 9 | Deslocações e estadas | pág. 24, Jev 1 |
+| 10 | Rendas e alugueres | pág. 24, precedente |
+| 11 | Contencioso e notariado | pág. 24, Jev 1 |
+| 12 | Outros serviços diversos | pág. 24, Jev 1 |
+| 13 | Remunerações dos orgão sociais | pág. 25, Jev 0.99 |
+| 14 | Remunerações do pessoal | pág. 25, precedente |
+| 15 | Indemnizações | pág. 25, precedente |
+| 16 | Encargos sobre remunerações | pág. 25, Jev 0.9 |
+| 17 | Seguros | pág. 25, precedente |
+| 18 | Equipamentos | pág. 25, precedente |
+| 19 | Outros | pág. 25, Jev 0.91 |
+| 20 | Correções relativas a exercícios anteriores | pág. 25, Jev 1 |
+| 21 | Gastos em investimentos não financeiros | pág. 25, Jev 1 |
+| 22 | Quotizações | pág. 25, precedente |
+| 23 | Multas | pág. 25, Jev 1 |
+| 24 | Gastos não devidamente documentados | pág. 25, Jev 1 |
+| 25 | Acordo de gestão | pág. 25, precedente |
+| 26 | Outros n/ aceites fiscalmente | pág. 25, Jev 0.97 |
+| 27 | Gastos/reversões de depreciação e de amortização | pág. 9, Jev 0.91 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2022–23 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Casa Pia".
+```
+
 ## 2022
 
 ### Ingresos
@@ -178,4 +244,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Casa Pia/relatorio-contas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### casapia-pt-relatorio-contas-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Casa Pia/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
