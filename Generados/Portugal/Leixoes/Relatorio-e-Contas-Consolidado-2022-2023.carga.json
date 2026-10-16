@@ -1,26 +1,447 @@
 {
  "pdf": "Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2022-2023.pdf",
- "generado": "2026-10-15T22:34:42.717Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (leixoes-pt)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
+ "generado": "2026-10-16T03:18:41.887Z",
+ "frena": [],
+ "avisos": [
+  "gastos: ningún total impreso igual a la suma de las líneas (-2.874807); queda la suma, verificada por el resultado del ejercicio",
+  "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-06-30); pregunta en la cola (no frena)"
  ],
- "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "leixoes-pt",
+  "year": 2023,
+  "cierre": "2023-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Venda de Bens",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.001367,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Prestação de Serviços",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 0.785473,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subsídios à exploração",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.225684,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Rendimentos e Ganhos em Investimento",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.001597,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Outros",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.000545,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Correcções relativas a períodos anteriores",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.002021,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Distribuição de Lucros Placard",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.111542,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cedência desportiva de jogadores",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.584553,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Direitos de Formação",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.029654,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Empréstimo de Jogadores",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.235491,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Jogos On-line",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.261194,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Serviços Especializados",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.445534,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Materiais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.006903,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Energia e Fluidos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.03289,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Deslocações, Estadas e Transportes",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.059997,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Rendas e Alugueres",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.025464,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Comunicação",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.010814,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Seguros",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.001535,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Contencioso e Notariado",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.142031,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros Serviços",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.038787,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Remunerações",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.663912,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Encargos Sociais",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.138038,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Seguros de Ac. Trabalho",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.062031,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros Gastos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.101537,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Imparidade de dívidas a receber (perdas/reversões)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.025845,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Provisões (aumentos/reduções)",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Impostos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.002821,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Correcções relativas a períodos anteriores",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.044869,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)"
+   },
+   {
+    "rawLabel": "Quotizações",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.000643,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Outros não especificados",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.03161,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Despesas não documentadas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.007252,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Edifícios e Outras Construções",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.002211,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Equipamento Básico",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.001571,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Equipamento de Transporte",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.027357,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Equipamento Administrativo",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.000277,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Marca",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -0.035,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Plantel",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.010747,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Imparidade de activos depreciáveis / amortizáveis (perdas/reversões)",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2023-06-30",
+   "sourceId": "leixoes-pt-relatorio-e-contas-consolidado-2022-2023",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.133532,
+   "tax": -0.056302,
+   "extraRows": [
+    {
+     "label": "Juros e rendimentos similares obtidos",
+     "value": 0
+    },
+    {
+     "label": "Juros e gastos similares suportados",
+     "value": -0.133532
+    },
+    {
+     "label": "Impostos sobre o rendimento do período",
+     "value": -0.056302
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Prestação de Serviços",
+     "lado": "revenue",
+     "importe": 0.785473,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 2.239121,
+   "officialTotalExpenses": 2.874807,
+   "officialPAT": -0.87039
+  },
+  "source": {
+   "id": "leixoes-pt-relatorio-e-contas-consolidado-2022-2023",
+   "clubId": "leixoes-pt",
+   "title": "Leixões Sport Clube - Futebol, SAD — Relatorio-e-Contas-Consolidado-2022-2023 (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2022-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2022-2023.md",
  "reemplaza": false,
  "periodo": {
@@ -33,5 +454,714 @@
  },
  "clubId": "leixoes-pt",
  "year": 2023,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 41,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Venda de Bens",
+   "page": 19,
+   "native": 0.001367,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 0.001367,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
+   "destino": "revenue",
+   "amountNative": 0.001367
+  },
+  {
+   "label": "Prestação de Serviços",
+   "page": 19,
+   "native": 0.785473,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 0.785473,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.785473
+  },
+  {
+   "label": "Subsídios à exploração",
+   "page": 5,
+   "native": 0.225684,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.225684,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.225684
+  },
+  {
+   "label": "Rendimentos e Ganhos em Investimento",
+   "page": 21,
+   "native": 0.001597,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 0.001597,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
+   "destino": "revenue",
+   "amountNative": 0.001597
+  },
+  {
+   "label": "Outros",
+   "page": 21,
+   "native": 0.000545,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 0.000545,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.000545
+  },
+  {
+   "label": "Correcções relativas a períodos anteriores",
+   "page": 21,
+   "native": 0.002021,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 0.002021,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.002021
+  },
+  {
+   "label": "Distribuição de Lucros Placard",
+   "page": 21,
+   "native": 0.111542,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 0.111542,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.111542
+  },
+  {
+   "label": "Cedência desportiva de jogadores",
+   "page": 21,
+   "native": 0.584553,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 0.584553,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.584553
+  },
+  {
+   "label": "Direitos de Formação",
+   "page": 21,
+   "native": 0.029654,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 0.029654,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): derechos de formación cobrados. [L858]",
+   "destino": "revenue",
+   "amountNative": 0.029654
+  },
+  {
+   "label": "Empréstimo de Jogadores",
+   "page": 21,
+   "native": 0.235491,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 0.235491,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.235491
+  },
+  {
+   "label": "Jogos On-line",
+   "page": 21,
+   "native": 0.261194,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 0.261194,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
+   "destino": "revenue",
+   "amountNative": 0.261194
+  },
+  {
+   "label": "Serviços Especializados",
+   "page": 20,
+   "native": 0.445534,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.445534,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.445534
+  },
+  {
+   "label": "Materiais",
+   "page": 20,
+   "native": 0.006903,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.006903,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.006903
+  },
+  {
+   "label": "Energia e Fluidos",
+   "page": 20,
+   "native": 0.03289,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.03289,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.03289
+  },
+  {
+   "label": "Deslocações, Estadas e Transportes",
+   "page": 20,
+   "native": 0.059997,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.059997,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.059997
+  },
+  {
+   "label": "Rendas e Alugueres",
+   "page": 20,
+   "native": 0.025464,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.025464,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.025464
+  },
+  {
+   "label": "Comunicação",
+   "page": 20,
+   "native": 0.010814,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.010814,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.010814
+  },
+  {
+   "label": "Seguros",
+   "page": 20,
+   "native": 0.001535,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.001535,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.001535
+  },
+  {
+   "label": "Contencioso e Notariado",
+   "page": 20,
+   "native": 0.142031,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.142031,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.142031
+  },
+  {
+   "label": "Outros Serviços",
+   "page": 20,
+   "native": 0.038787,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
+   "signoFijo": 0.038787,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.038787
+  },
+  {
+   "label": "Remunerações",
+   "page": 20,
+   "native": 1.663912,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
+   "signoFijo": 1.663912,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.663912
+  },
+  {
+   "label": "Encargos Sociais",
+   "page": 20,
+   "native": 0.138038,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
+   "signoFijo": 0.138038,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
+   "destino": "expense",
+   "amountNative": -0.138038
+  },
+  {
+   "label": "Seguros de Ac. Trabalho",
+   "page": 20,
+   "native": 0.062031,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
+   "signoFijo": 0.062031,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.062031
+  },
+  {
+   "label": "Outros Gastos",
+   "page": 20,
+   "native": 0.101537,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
+   "signoFijo": 0.101537,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.101537
+  },
+  {
+   "label": "Imparidade de dívidas a receber (perdas/reversões)",
+   "page": 5,
+   "native": 0.025845,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.025845,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.025845
+  },
+  {
+   "label": "Provisões (aumentos/reduções)",
+   "page": 5,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Impostos",
+   "page": 21,
+   "native": 0.002821,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Outros gastos\")",
+   "signoFijo": 0.002821,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.002821
+  },
+  {
+   "label": "Correcções relativas a períodos anteriores",
+   "page": 21,
+   "native": 0.044869,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Outros gastos\")",
+   "signoFijo": 0.044869,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.044869
+  },
+  {
+   "label": "Quotizações",
+   "page": 21,
+   "native": 0.000643,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Outros gastos\")",
+   "signoFijo": 0.000643,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Nacional), nota:outros gastos · Claude 2026-10-15 (subagente Sonnet, seguridad alta): cuotas pagadas a asociaciones [relatorio-contas-2023-24.md L909]",
+   "destino": "expense",
+   "amountNative": -0.000643
+  },
+  {
+   "label": "Outros não especificados",
+   "page": 21,
+   "native": 0.03161,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Outros gastos\")",
+   "signoFijo": 0.03161,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.03161
+  },
+  {
+   "label": "Despesas não documentadas",
+   "page": 21,
+   "native": 0.007252,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Outros gastos\")",
+   "signoFijo": 0.007252,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.007252
+  },
+  {
+   "label": "Edifícios e Outras Construções",
+   "page": 22,
+   "native": 0.002211,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos / reversões de depreciação e de amortização\" > desglose de \"Ativos Fixos Tangíveis\")",
+   "signoFijo": 0.002211,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.002211
+  },
+  {
+   "label": "Equipamento Básico",
+   "page": 22,
+   "native": 0.001571,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos / reversões de depreciação e de amortização\" > desglose de \"Ativos Fixos Tangíveis\")",
+   "signoFijo": 0.001571,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.001571
+  },
+  {
+   "label": "Equipamento de Transporte",
+   "page": 22,
+   "native": 0.027357,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos / reversões de depreciação e de amortização\" > desglose de \"Ativos Fixos Tangíveis\")",
+   "signoFijo": 0.027357,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.027357
+  },
+  {
+   "label": "Equipamento Administrativo",
+   "page": 22,
+   "native": 0.000277,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos / reversões de depreciação e de amortização\" > desglose de \"Ativos Fixos Tangíveis\")",
+   "signoFijo": 0.000277,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.000277
+  },
+  {
+   "label": "Marca",
+   "page": 22,
+   "native": 0.035,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos / reversões de depreciação e de amortização\" > desglose de \"Ativos Intangíveis\")",
+   "signoFijo": 0.035,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.035
+  },
+  {
+   "label": "Plantel",
+   "page": 22,
+   "native": 0.010747,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos / reversões de depreciação e de amortização\" > desglose de \"Ativos Intangíveis\")",
+   "signoFijo": 0.010747,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.010747
+  },
+  {
+   "label": "Imparidade de activos depreciáveis / amortizáveis (perdas/reversões)",
+   "page": 5,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Juros e rendimentos similares obtidos",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Juros e gastos similares suportados",
+   "page": null,
+   "native": -0.133532,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Impostos sobre o rendimento do período",
+   "page": null,
+   "native": -0.056302,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Gastos com pessoal\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Outros gastos\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Gastos / reversões de depreciação e de amortização\" > desglose de \"Ativos Fixos Tangíveis\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Gastos / reversões de depreciação e de amortização\" > desglose de \"Ativos Intangíveis\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 2.239121,
+  "expSum": -2.874807,
+  "officialTotalRevenue": 2.239121,
+  "officialTotalExpenses": 2.874807,
+  "officialPAT": -0.87039,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.87039,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 2.239121
+  }
+ },
+ "liga": {
+  "valor": "pt-ligaportugal2",
+  "fuente": "roster cacheado de \"2022–23 Liga Portugal 2\" (tools/club-league-reference/pt.json), coincidencia exacta \"Leixões\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (112 de 112 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Portugal (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2023-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2023-06-30 = 0.9203 (Cierre BCE al 30/6/2023 (1 EUR = 1,0866 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "leixoes-pt-relatorio-e-contas-consolidado-2022-2023",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "pt-ligaportugal2",
+   "fuente": "roster cacheado de \"2022–23 Liga Portugal 2\" (tools/club-league-reference/pt.json), coincidencia exacta \"Leixões\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 11,
+  "lineasGasto": 27,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

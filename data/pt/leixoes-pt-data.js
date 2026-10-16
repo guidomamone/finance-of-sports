@@ -12,6 +12,19 @@ const leixoesptRevenueLinesByYear = {
     { rawLabel:'Empréstimo de Jogadores', normalizedCategory:'player_sales', amountNative:0.008, disclosureLevel:'aggregated' },
     { rawLabel:'Jogos On-line', normalizedCategory:'other_income', amountNative:0.262672, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Venda de Bens', normalizedCategory:'sponsorship_commercial', amountNative:0.001367, disclosureLevel:'aggregated' },
+    { rawLabel:'Prestação de Serviços', normalizedCategory:'lump_football_operations', amountNative:0.785473, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.225684, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendimentos e Ganhos em Investimento', normalizedCategory:'other_income', amountNative:0.001597, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.000545, disclosureLevel:'aggregated' },
+    { rawLabel:'Correcções relativas a períodos anteriores', normalizedCategory:'other_income', amountNative:0.002021, disclosureLevel:'aggregated' },
+    { rawLabel:'Distribuição de Lucros Placard', normalizedCategory:'other_income', amountNative:0.111542, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência desportiva de jogadores', normalizedCategory:'player_sales', amountNative:0.584553, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos de Formação', normalizedCategory:'player_sales', amountNative:0.029654, disclosureLevel:'aggregated' },
+    { rawLabel:'Empréstimo de Jogadores', normalizedCategory:'player_sales', amountNative:0.235491, disclosureLevel:'aggregated' },
+    { rawLabel:'Jogos On-line', normalizedCategory:'other_income', amountNative:0.261194, disclosureLevel:'aggregated' },
+  ],
 };
 const leixoesptExpenseLinesByYear = {
   2025: [
@@ -46,6 +59,35 @@ const leixoesptExpenseLinesByYear = {
     { rawLabel:'Plantel', normalizedCategory:'player_amortisation', amountNative:-0.205924, disclosureLevel:'aggregated' },
     { rawLabel:'Imparidade de activos depreciáveis / amortizáveis (perdas/reversões)', normalizedCategory:'other_amortisation', amountNative:0, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Serviços Especializados', normalizedCategory:'admin_general_expense', amountNative:-0.445534, disclosureLevel:'aggregated' },
+    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.006903, disclosureLevel:'aggregated' },
+    { rawLabel:'Energia e Fluidos', normalizedCategory:'admin_general_expense', amountNative:-0.03289, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações, Estadas e Transportes', normalizedCategory:'match_organisation_expense', amountNative:-0.059997, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e Alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.025464, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.010814, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.001535, disclosureLevel:'aggregated' },
+    { rawLabel:'Contencioso e Notariado', normalizedCategory:'admin_general_expense', amountNative:-0.142031, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Serviços', normalizedCategory:'other_expenses', amountNative:-0.038787, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações', normalizedCategory:'wages_squad', amountNative:-1.663912, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos Sociais', normalizedCategory:'wages_squad', amountNative:-0.138038, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros de Ac. Trabalho', normalizedCategory:'admin_general_expense', amountNative:-0.062031, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Gastos', normalizedCategory:'other_expenses', amountNative:-0.101537, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de dívidas a receber (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:-0.025845, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisões (aumentos/reduções)', normalizedCategory:'other_amortisation', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.002821, disclosureLevel:'aggregated' },
+    { rawLabel:'Correcções relativas a períodos anteriores', normalizedCategory:'exceptional_items', amountNative:-0.044869, disclosureLevel:'aggregated' },
+    { rawLabel:'Quotizações', normalizedCategory:'admin_general_expense', amountNative:-0.000643, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros não especificados', normalizedCategory:'other_expenses', amountNative:-0.03161, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas não documentadas', normalizedCategory:'other_expenses', amountNative:-0.007252, disclosureLevel:'aggregated' },
+    { rawLabel:'Edifícios e Outras Construções', normalizedCategory:'depreciation', amountNative:-0.002211, disclosureLevel:'aggregated' },
+    { rawLabel:'Equipamento Básico', normalizedCategory:'depreciation', amountNative:-0.001571, disclosureLevel:'aggregated' },
+    { rawLabel:'Equipamento de Transporte', normalizedCategory:'depreciation', amountNative:-0.027357, disclosureLevel:'aggregated' },
+    { rawLabel:'Equipamento Administrativo', normalizedCategory:'depreciation', amountNative:-0.000277, disclosureLevel:'aggregated' },
+    { rawLabel:'Marca', normalizedCategory:'other_amortisation', amountNative:-0.035, disclosureLevel:'aggregated' },
+    { rawLabel:'Plantel', normalizedCategory:'player_amortisation', amountNative:-0.010747, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de activos depreciáveis / amortizáveis (perdas/reversões)', normalizedCategory:'other_amortisation', amountNative:0, disclosureLevel:'aggregated' },
+  ],
 };
 const leixoesptFiscalYearMeta = {
   2025: {
@@ -66,6 +108,24 @@ const leixoesptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:2.758322, officialTotalExpenses:6.933258, officialPAT:-4.475963,
   },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'leixoes-pt-relatorio-e-contas-consolidado-2022-2023',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.133532, tax:-0.056302,
+    extraRows: [
+      {label:'Juros e rendimentos similares obtidos', value:0},
+      {label:'Juros e gastos similares suportados', value:-0.133532},
+      {label:'Impostos sobre o rendimento do período', value:-0.056302},
+    ],
+    sinDesglose: [
+      {renglon:'Prestação de Serviços', lado:'revenue', importe:0.785473, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:2.239121, officialTotalExpenses:2.874807, officialPAT:-0.87039,
+  },
 };
 const leixoesptPresupuestoOverlayByYear = {};
 
@@ -85,6 +145,11 @@ Object.assign(sources, {
   'leixoes-pt-relatorio-de-gestao-e-contas-2024-2025': {
     id:'leixoes-pt-relatorio-de-gestao-e-contas-2024-2025', clubId:'leixoes-pt',
     title:'Leixões Sport Clube - Futebol, SAD — Relatorio-de-Gestao-e-Contas-2024-2025 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'leixoes-pt-relatorio-e-contas-consolidado-2022-2023': {
+    id:'leixoes-pt-relatorio-e-contas-consolidado-2022-2023', clubId:'leixoes-pt',
+    title:'Leixões Sport Clube - Futebol, SAD — Relatorio-e-Contas-Consolidado-2022-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

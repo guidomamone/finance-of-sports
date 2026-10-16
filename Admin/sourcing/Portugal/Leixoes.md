@@ -16,3 +16,5 @@
 - Último chequeo: 2026-10-08.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Leixoes/Relatorio-de-Gestao-e-Contas-2024-2025.pdf` (sourceId `leixoes-pt-relatorio-de-gestao-e-contas-2024-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2022-2023.pdf` (sourceId `leixoes-pt-relatorio-e-contas-consolidado-2022-2023`).

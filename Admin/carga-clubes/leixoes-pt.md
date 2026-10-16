@@ -112,6 +112,74 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2024–25 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Leixões".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2022-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2022-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Venda de Bens | pág. 19, precedente |
+| 2 | Prestação de Serviços | pág. 19, precedente |
+| 3 | Subsídios à exploração | pág. 5, precedente |
+| 4 | Rendimentos e Ganhos em Investimento | pág. 21, precedente |
+| 5 | Outros | pág. 21, precedente |
+| 6 | Correcções relativas a períodos anteriores | pág. 21, precedente |
+| 7 | Distribuição de Lucros Placard | pág. 21, precedente |
+| 8 | Cedência desportiva de jogadores | pág. 21, precedente |
+| 9 | Direitos de Formação | pág. 21, precedente |
+| 10 | Empréstimo de Jogadores | pág. 21, precedente |
+| 11 | Jogos On-line | pág. 21, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Serviços Especializados | pág. 20, precedente |
+| 2 | Materiais | pág. 20, precedente |
+| 3 | Energia e Fluidos | pág. 20, precedente |
+| 4 | Deslocações, Estadas e Transportes | pág. 20, precedente |
+| 5 | Rendas e Alugueres | pág. 20, precedente |
+| 6 | Comunicação | pág. 20, precedente |
+| 7 | Seguros | pág. 20, precedente |
+| 8 | Contencioso e Notariado | pág. 20, precedente |
+| 9 | Outros Serviços | pág. 20, precedente |
+| 10 | Remunerações | pág. 20, precedente |
+| 11 | Encargos Sociais | pág. 20, precedente |
+| 12 | Seguros de Ac. Trabalho | pág. 20, precedente |
+| 13 | Outros Gastos | pág. 20, precedente |
+| 14 | Imparidade de dívidas a receber (perdas/reversões) | pág. 5, precedente |
+| 15 | Provisões (aumentos/reduções) | pág. 5, precedente |
+| 16 | Impostos | pág. 21, precedente |
+| 17 | Correcções relativas a períodos anteriores | pág. 21, precedente |
+| 18 | Quotizações | pág. 21, precedente |
+| 19 | Outros não especificados | pág. 21, precedente |
+| 20 | Despesas não documentadas | pág. 21, precedente |
+| 21 | Edifícios e Outras Construções | pág. 22, precedente |
+| 22 | Equipamento Básico | pág. 22, precedente |
+| 23 | Equipamento de Transporte | pág. 22, precedente |
+| 24 | Equipamento Administrativo | pág. 22, precedente |
+| 25 | Marca | pág. 22, precedente |
+| 26 | Plantel | pág. 22, precedente |
+| 27 | Imparidade de activos depreciáveis / amortizáveis (perdas/reversões) | pág. 5, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2022–23 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Leixões".
+```
+
 ## Fuentes
 
 ### leixoes-pt-relatorio-de-gestao-e-contas-2024-2025
@@ -120,4 +188,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Leixoes/Relatorio-de-Gestao-e-Contas-2024-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### leixoes-pt-relatorio-e-contas-consolidado-2022-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2022-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
