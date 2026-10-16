@@ -41,6 +41,70 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2022: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2022-06-30","sourceId":"famalicao-pt-relatorio-contas-2021-22"}
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Famalicão/relatorio-contas-2024-25.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Famalicão/relatorio-contas-2024-25.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas de mercadorias | pág. 40, precedente |
+| 2 | Ingressos | pág. 40, precedente |
+| 3 | Competições | pág. 40, precedente |
+| 4 | Publicidade | pág. 40, precedente |
+| 5 | Patrocínios | pág. 40, precedente |
+| 6 | Direitos Clube | pág. 40, precedente |
+| 7 | Apostas desportivas | pág. 40, precedente |
+| 8 | Outras receitas desportivas | pág. 40, precedente |
+| 9 | Subsídios à exploração | pág. 26, precedente |
+| 10 | Outros rendimentos | pág. 26, precedente |
+| 11 | Ganhos/perdas imputados de subsidiárias, associadas e empresas | pág. 26, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas | pág. 26, precedente |
+| 2 | Serviços especializados | pág. 41, precedente |
+| 3 | Materiais | pág. 41, precedente |
+| 4 | Energia e fluidos | pág. 41, precedente |
+| 5 | Deslocações, estadas e transportes | pág. 41, precedente |
+| 6 | Rendas e alugueres | pág. 41, precedente |
+| 7 | Limpeza, Higiene e conforto | pág. 41, precedente |
+| 8 | Outros | pág. 41, precedente |
+| 9 | Remunerações do pessoal | pág. 42, precedente |
+| 10 | Benefícios pós-emprego | pág. 42, Jev 0.98 |
+| 11 | Indemnizações | pág. 42, precedente |
+| 12 | Encargos sobre remunerações | pág. 42, precedente |
+| 13 | Seguros | pág. 42, precedente |
+| 14 | Gastos de ação social | pág. 42, precedente |
+| 15 | Outros gastos com pessoal | pág. 42, precedente |
+| 16 | Imparidade de dívidas a receber (perdas/reversões) | pág. 26, precedente |
+| 17 | Provisões (aumentos/reduções) | pág. 26, precedente |
+| 18 | Impostos | pág. 42, precedente |
+| 19 | Descontos de pronto pagamento concedidos | pág. 42, precedente |
+| 20 | Gastos e perdas em inv. não financeiros | pág. 42, precedente |
+| 21 | Outros gastos e perdas | pág. 42, precedente |
+| 22 | Gastos/reversões de depreciação e de amortização | pág. 26, precedente |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2025-06-30. periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 5 007,78. Renglón de ingresos del estado que la extracción no trajo; con él el resultado operacional da el impreso 262.412,53 y el líquido −3.257.811,34.
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Famalicão".
+```
+
 ## 2024
 
 ### Ingresos
@@ -440,4 +504,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Famalicão/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### famalicao-pt-relatorio-contas-2024-25
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Famalicão/relatorio-contas-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
