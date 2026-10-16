@@ -46,9 +46,10 @@ con los que no están en los pasos de arriba.
        "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου" como competition_bonus; en AEK 2023 y 2025 va como other_income.
     b0) PORTUGAL, CARGADO SALVO LO QUE ESPERA SCRIPTS (al 2026-10-16). Qué hay en el sitio: Admin/ESTADO-clubes.md (lotes 76 y 79-83;
        los 32 clubes con documento tienen al menos un año). Falta solo lo que espera una mejora de script:
-       - Felgueiras 2021-22: frena por "ingresos implausibles" (0,15 M USD; club chico real, mismo caso que Alverca: to-do 237 e).
-       - Sporting 1999-2010 y Benfica 2005-06, 2006-07 y 2014-15 (237 q, subtotales), Sporting 2008, 2018
-         y 2021 (237 aa, redondeos), Benfica 2007-08 (237 ab, 11 meses). Lista: Admin/lotes/lote-80.txt.
+       - Benfica 2014-15 (237 q, en HALLAZGOS).
+       - Sporting 2001 (relatorio-contas-2000.pdf, en miles de escudos): la verificación no cierra (2 casos en la cola: ingresos 18.526
+         contra el total impreso 6.653), el nombre del archivo lo hace pasar por 2000 (nombreNoCoincide, cierre 2001-07-31) y le falta el
+         ajuste `moneda` PTE, como Sporting 2000.
        - Gil Vicente: 2024 se cargó (o se carga) con el consolidado de la Associação (único documento del año) y el resto con la SDUQ.
        Reglas que salieron de Portugal (en CONVENCIONES-DATOS o en las respuestas de la cola): qué entidad se carga cuando el fútbol está
        en una SAD; "Outros" toma la categoría del bloque; cuadros de inventario y de bruto a neto afuera; palcos y cativos a stadium_other;
@@ -107,21 +108,15 @@ con los que no están en los pasos de arriba.
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
     ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, aa, q (POC y q1/q2), k, w, am, l (vecino sin
     descartados), ah, af+s, ai+ak, z, g y la letra nueva an (verificar no reescribe el .rubros.json igual, glosar no vuelve a pagar). Pasaron a
-    Admin/HALLAZGOS-pipeline.md: o, b, c, h, i, j, l (primera parte), m, p, u, x, ae, aj y Benfica 2014-15. Guido dejó al para después.
+    Admin/HALLAZGOS-pipeline.md: o, paridad PTE, b, c, h, i, j, l (primera parte), m, p, u, x, ae, aj y Benfica 2014-15. Guido dejó al para después.
     Cómo medir cada letra: verificar -> node tools/medir-verificar.mjs --lista Admin/lotes/prueba-completa.txt --salida <x> --pasadas 2
     (antes con --script <copia de la versión vieja dentro de tools/>) y --comparar; cargar -> node tools/medir-cargar.mjs --salida <x>
     (paralelo, ~1,5 min) y --comparar, después git checkout -- Admin/registros/categorias-aprendidas.jsonl; auditoría -> node tools/audit.js.
     PENDIENTES, con el diseño que dejaron los diagnósticos (subagentes Sonnet; ok de Guido para codear todas salvo al), en este orden:
-    - Paridad PTE en el año vecino (S): el chequeo de vecinos compara Sporting 2000 (miles de escudos) con la columna 2000 de 2001 (EUR);
-      con la paridad fija (200,482) coinciden. Destraba Sporting 2000 (ver también el freno "PTE y el club en EUR" de cargar).
     - r (S): textos de la terminal del lote (numeración de etapas, "DE VERDAD", "OJO", "?" en el resumen); mostrarle el texto a Guido antes.
     r) EL COPY DE LA TERMINAL QUEDÓ VIEJO (pedido de Guido, 2026-10-15). "(DE VERDAD)", "ENSAYO", los "OJO:" y la mayoría de los mensajes
        de pipeline.mjs y lote.mjs no terminan de explicar qué está pasando ni qué tiene que hacer Guido. Repasar la salida de las dos
        tools con un lote real y proponerle el texto nuevo (solo salida, no lógica) antes de tocarlo.
-    ad) CERRAR UNA ETIQUETA EN TODOS LOS AÑOS PUEDE ACEPTAR LA PROPUESTA EQUIVOCADA (lote 80: "Gestão operacional do estádio" de Benfica
-       tenía propuesta match_organisation_expense en 2021-2024 y admin_general_expense en 2025; `cola.mjs --responder 36c73ff aceptar` cerró
-       los otros 4 años, incluido 2025 con SU propuesta). Se corrigió respondiendo 2025 después. Escalón posible: que el cierre en cadena
-       copie la CATEGORÍA de la respuesta, no la decisión "aceptar", o que no cierre los años cuya propuesta es otra.
     al) EL ANEXO EN FORMATO UEFA ABRE LAS VENTAS Y NADIE LO USA (Mafra 2023-24, "Contas Anuais ED*-1", .md L1437-1483: bilheteira, patrocínios,
        TV, merchandising, competições y otros = 1.275.143,83, exacto con Vendas e serviços prestados; el lote pedía un reintento pago por TV y
        estadio en 0). Se cargó con ajustes `fila`. Portimonense 2024-25 trae algo parecido en el informe de gestión. Escalón posible: que

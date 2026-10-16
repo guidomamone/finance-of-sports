@@ -139,6 +139,11 @@ Del to-do 237 (diagnóstico por subagentes Sonnet, 2026-10-16):
   en euros; Novorizontino 2016). El año anterior confirma la escala que usó la carga, y esa no siempre es la que dice la propuesta. Sin daño
   hoy: esas dudas van a la cola y se contestan. Retomar: si localizar o extraer dejan la escala propuesta como campo (miles / unidades) y
   no solo en el texto de la pregunta; entonces la compuerta compara ese campo con la escala que usó la carga.
+- 237, paridad PTE en el año vecino: el diagnóstico suponía que el documento de 2001 de Sporting estaba en euros; está en miles de escudos
+  (relatorio-contas-2000.md L14), como el de 2000, así que esa comparación no necesita paridad (falla por otra cosa: el de 2001 no cierra
+  en verificar). El único par escudos-euros es 2001 (PTE) contra la columna 2001 del documento 2002 (EUR): 6.653,228 M PTE / 200,482 =
+  33,19 M EUR contra 32,02 (3,6%, fuera del 2%). Sin daño hoy: Sporting 2000 está publicado y Sporting 2001 frena por su propia
+  verificación. Retomar: cuando Sporting 2001 cierre en verificar y lo único que lo frene sea el vecino en euros.
 - Etiquetado `perimetro` de las dudas de localizar y extraer: la IA lo usa para preguntas de inventarios, imparidad o notas que difieren
   del estado (Rio Ave, Famalicão, Santa Clara, Torreense). Sin daño (se contestan igual). Retomar: si una regla empieza a contestar
   dudas por su tema.
