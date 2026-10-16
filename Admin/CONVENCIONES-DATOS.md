@@ -266,6 +266,12 @@ existe). Casos: Kifisia 2022 (09/08/2021 – 30/06/2022, sin columna) y Volos 20
 columna 2017-2018 toda en 0,00). Un cambio de cierre o un semestral siempre tienen importes del año anterior y siguen siendo parciales. La
 fuente lleva `publicNote` "Primer ejercicio de la sociedad: del ... al ... (N meses)". Lo aplica `tools/cargar.mjs` (sin cola).
 
+**Ejercicio de 11 meses por cambio de cierre (decisión de Guido, 2026-10-15).** Cuando un club pasa el cierre de julio a junio, el ejercicio
+de transición (1 de agosto a 30 de junio, 11 meses) se carga como el año: contiene la temporada entera y no hay otro tramo que buscar. Casos:
+Benfica 2007-08 ("período de 11 meses, que compreende o período de 1 de Agosto de 2007 a 30 de Junho de 2008") y Sporting 2003-04. La
+fuente lleva `publicNote` con las fechas y los meses. Un semestral o un tramo que deja afuera parte de la temporada sigue siendo parcial.
+Hoy `cargar.mjs` lo frena ("período otro de 11 meses"): falta el escalón del to-do 237 ab.
+
 **Nota aparte encontrada en el mismo documento** (no una regla, un dato suelto para no perder): la
 última columna mensual del PDF de Instituto dice "dic-24" en vez de "dic-25" — es un typo del propio
 documento (todas las demás 11 columnas van ene-25 a nov-25, y el total anual solo cierra si esa

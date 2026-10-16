@@ -198,6 +198,11 @@ llegue acá.
        personal −0,001, provisiones −0,001, otros gastos +0,001, plantel +0,001) y con todas los totales cierran exacto con el impreso.
        Escalón posible: que la guarda de cargar exima las filas de origen redondeo (o que verificar las nombre con su renglón).
        Además, w) se repitió en Santa Clara 2023-24 ("Juros e Outros Rendimentos Similares" 360.009 como gasto; ajuste `fila`).
+    ab) EL EJERCICIO DE 11 MESES POR CAMBIO DE CIERRE SE CARGA (decisión de Guido, 2026-10-15; regla en CONVENCIONES-DATOS). cargar.mjs frena
+       Benfica 2007-08 (1/8/2007-30/6/2008, "período de 11 meses", relatorio-contas-2007-08.md L236) con "período otro de 11 meses", y ningún
+       ajuste lo destraba. Escalón posible: un ajuste `periodo` (valor: "cambio-de-cierre") que deje pasar ese documento con publicNote, o la
+       señal del propio documento (inicio = día siguiente al cierre del ejercicio anterior y fin = nuevo cierre). Casos: Benfica 2007-08,
+       Sporting 2003-04.
 238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
    sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
    (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
