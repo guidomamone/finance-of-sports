@@ -4,6 +4,12 @@ const torreenseptRevenueLinesByYear = {
     { rawLabel:'Aumentos/reduções de justo valor', normalizedCategory:'other_income', amountNative:2.907, disclosureLevel:'aggregated' },
     { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:0.477636, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Vendas e serviços prestados', normalizedCategory:'lump_football_operations', amountNative:0.057377, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.008245, disclosureLevel:'aggregated' },
+    { rawLabel:'Aumentos/reduções de justo valor', normalizedCategory:'other_income', amountNative:2.127779, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:0.140701, disclosureLevel:'aggregated' },
+  ],
 };
 const torreenseptExpenseLinesByYear = {
   2024: [
@@ -43,6 +49,37 @@ const torreenseptExpenseLinesByYear = {
     { rawLabel:'6888-Desp. N dev. Documentadas', normalizedCategory:'other_expenses', amountNative:-0.000892, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.003496, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-0.696917, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade e propaganda', normalizedCategory:'admin_general_expense', amountNative:-0.037521, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.021236, disclosureLevel:'aggregated' },
+    { rawLabel:'Comissões', normalizedCategory:'other_expenses', amountNative:-0.000043, disclosureLevel:'aggregated' },
+    { rawLabel:'Ferramentas e utensílios de desgaste rápido', normalizedCategory:'admin_general_expense', amountNative:-0.003984, disclosureLevel:'aggregated' },
+    { rawLabel:'Material de escritório', normalizedCategory:'admin_general_expense', amountNative:-0.000774, disclosureLevel:'aggregated' },
+    { rawLabel:'Artigos para oferta', normalizedCategory:'admin_general_expense', amountNative:-0.000453, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.024773, disclosureLevel:'aggregated' },
+    { rawLabel:'Eletricidade', normalizedCategory:'admin_general_expense', amountNative:-0.000171, disclosureLevel:'aggregated' },
+    { rawLabel:'Combustíveis', normalizedCategory:'admin_general_expense', amountNative:-0.002238, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e estadas', normalizedCategory:'match_organisation_expense', amountNative:-0.069224, disclosureLevel:'aggregated' },
+    { rawLabel:'Transportes de pessoal', normalizedCategory:'match_organisation_expense', amountNative:-0.062117, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.097705, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.000788, disclosureLevel:'aggregated' },
+    { rawLabel:'Contencioso e notariado', normalizedCategory:'admin_general_expense', amountNative:-0.016425, disclosureLevel:'aggregated' },
+    { rawLabel:'Limpeza, higiene e conforto', normalizedCategory:'admin_general_expense', amountNative:-0.000124, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros serviços', normalizedCategory:'other_expenses', amountNative:-0.00102, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações do pessoal', normalizedCategory:'wages_squad', amountNative:-1.0459, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações', normalizedCategory:'wages_squad', amountNative:-0.02686, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre as remunerações', normalizedCategory:'wages_squad', amountNative:-0.070076, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros de acidentes no trabalho e doenças profissionais', normalizedCategory:'admin_general_expense', amountNative:-0.039194, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos com o pessoal, dos quais:', normalizedCategory:'wages_squad', amountNative:-0.000231, disclosureLevel:'aggregated' },
+    { rawLabel:'681 - Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.00236, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas não fiscais', normalizedCategory:'other_expenses', amountNative:-0.033654, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras Penalidades', normalizedCategory:'other_expenses', amountNative:-0.000007, disclosureLevel:'aggregated' },
+    { rawLabel:'Desp. Não devidamente document.', normalizedCategory:'other_expenses', amountNative:-0.000554, disclosureLevel:'aggregated' },
+    { rawLabel:'6881 - Corr.Relat.Periodos anteriores', normalizedCategory:'exceptional_items', amountNative:-0.001007, disclosureLevel:'aggregated' },
+    { rawLabel:'6885 - Insufic. Estimat. p/ Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.001411, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.000419, disclosureLevel:'aggregated' },
+  ],
 };
 const torreenseptFiscalYearMeta = {
   2024: {
@@ -63,6 +100,23 @@ const torreenseptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:8.156787, officialTotalExpenses:7.61791, officialPAT:0.013961,
   },
+  2022: {
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'torreense-pt-sad-relatoriocontas2021-2022',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.034179, tax:-0.020486,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.034179},
+      {label:'Imposto sobre o rendimento do período', value:-0.020486},
+    ],
+    sinDesglose: [
+      {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.057377, motivo:'Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:2.334103, officialTotalExpenses:2.257188, officialPAT:0.022249,
+  },
 };
 const torreenseptPresupuestoOverlayByYear = {};
 
@@ -82,6 +136,11 @@ Object.assign(sources, {
   'torreense-pt-sad-relatoriocontas2023-2024': {
     id:'torreense-pt-sad-relatoriocontas2023-2024', clubId:'torreense-pt',
     title:'Sport Clube União Torreense - Futebol, SAD — SAD_RelatorioContas2023-2024 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'torreense-pt-sad-relatoriocontas2021-2022': {
+    id:'torreense-pt-sad-relatoriocontas2021-2022', clubId:'torreense-pt',
+    title:'Sport Clube União Torreense - Futebol, SAD — SAD_RelatorioContas2021-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

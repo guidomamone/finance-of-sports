@@ -20,4 +20,12 @@ window.RANKINGS["pt-liga3"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.449],["Otros ingresos",0.01]] },
     ],
   },
+  2022: {
+    leagueSize: null,
+    clubs: [
+      { id:"torreense-pt", revenue:2.425, reportType:"official_balance_sheet",
+        sourceId:"torreense-pt-sad-relatoriocontas2021-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.06],["Otros ingresos",2.365]] },
+    ],
+  },
 };

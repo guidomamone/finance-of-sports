@@ -109,6 +109,69 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2023–24 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Torreense".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Torreense/SAD_RelatorioContas2021-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Torreense/SAD_RelatorioContas2021-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas e serviços prestados | pág. 25, precedente |
+| 2 | Subsídios à exploração | pág. 25, Jev 0.94 |
+| 3 | Aumentos/reduções de justo valor | pág. 25, precedente |
+| 4 | Outros rendimentos | pág. 25, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trabalhos especializados | pág. 45, precedente |
+| 2 | Publicidade e propaganda | pág. 45, precedente |
+| 3 | Vigilância e segurança | pág. 45, precedente |
+| 4 | Comissões | pág. 45, precedente |
+| 5 | Ferramentas e utensílios de desgaste rápido | pág. 45, precedente |
+| 6 | Material de escritório | pág. 45, precedente |
+| 7 | Artigos para oferta | pág. 45, precedente |
+| 8 | Outros | pág. 45, precedente |
+| 9 | Eletricidade | pág. 45, precedente |
+| 10 | Combustíveis | pág. 45, precedente |
+| 11 | Deslocações e estadas | pág. 45, precedente |
+| 12 | Transportes de pessoal | pág. 45, precedente |
+| 13 | Rendas e alugueres | pág. 45, precedente |
+| 14 | Comunicação | pág. 45, precedente |
+| 15 | Contencioso e notariado | pág. 45, precedente |
+| 16 | Limpeza, higiene e conforto | pág. 45, precedente |
+| 17 | Outros serviços | pág. 45, precedente |
+| 18 | Remunerações do pessoal | pág. 50, precedente |
+| 19 | Indemnizações | pág. 50, precedente |
+| 20 | Encargos sobre as remunerações | pág. 50, precedente |
+| 21 | Seguros de acidentes no trabalho e doenças profissionais | pág. 50, precedente |
+| 22 | Outros gastos com o pessoal, dos quais: | pág. 50, precedente |
+| 23 | 681 - Impostos | pág. 46, precedente |
+| 24 | Multas não fiscais | pág. 46, Jev 0.97 |
+| 25 | Outras Penalidades | pág. 46, Jev 0.99 |
+| 26 | Desp. Não devidamente document. | pág. 46, Jev 1 |
+| 27 | 6881 - Corr.Relat.Periodos anteriores | pág. 46, precedente |
+| 28 | 6885 - Insufic. Estimat. p/ Impostos | pág. 46, Jev 1 |
+| 29 | Gastos/reversões de depreciação e de amortização | pág. 25, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-liga3, verificado contra roster cacheado de "2021–22 Liga 3 (Portugal)" (tools/club-league-reference/pt.json), coincidencia exacta "Torreense".
+```
+
 ## Fuentes
 
 ### torreense-pt-sad-relatoriocontas2023-2024
@@ -117,4 +180,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Torreense/SAD_RelatorioContas2023-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### torreense-pt-sad-relatoriocontas2021-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Torreense/SAD_RelatorioContas2021-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

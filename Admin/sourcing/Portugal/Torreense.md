@@ -15,3 +15,5 @@
 - Último chequeo: 2026-10-08.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Torreense/SAD_RelatorioContas2023-2024.pdf` (sourceId `torreense-pt-sad-relatoriocontas2023-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Torreense/SAD_RelatorioContas2021-2022.pdf` (sourceId `torreense-pt-sad-relatoriocontas2021-2022`).
