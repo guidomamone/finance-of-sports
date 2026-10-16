@@ -530,7 +530,7 @@ Mitigaciones:
 - En el lote es propuesta; con `lote.mjs --ejecutar --cargar` (o `node tools/cargar-lote.mjs --lista <lista> [--escribir]`) lo que quedó
   "listo para cargar" se escribe solo (Versión 642): alta del club nuevo si el registro de altas lo da listo y `Admin/registros/altas-revision.jsonl`
   tiene su color, `cargar.mjs --escribir` con su auditoría, y un commit por año (el alta en el del primer año). Si ningún año de un club
-  nuevo escribe, el alta se revierte (restaura lo que existía y borra lo nuevo que dejó en `data/` y `fuentes/`, to-do 237 d). Exige `data/`, `index.html`, `fuentes/` y `Admin/sourcing/` sin cambios al empezar. Sin push.
+  nuevo escribe, el alta se revierte. Antes de decidir un alta recalcula el registro de altas de ese club (`alta-club.mjs --todos --solo`, to-do 237 t). El revertir restaura lo que existía y borra lo nuevo que dejó en `data/` y `fuentes/`, to-do 237 d). Exige `data/`, `index.html`, `fuentes/` y `Admin/sourcing/` sin cambios al empezar. Sin push.
   Saltea, igual que `lote.mjs`, los documentos de `documentos-descartados.txt` y de `documentos-parciales.txt` aunque tengan un `.carga.json`
   viejo (to-do 232 j: Kifisia 2022, parcial, se había publicado igual).
 - Club nuevo en el ENSAYO (to-do 210): sin `--escribir`, `cargar.mjs` no corta en "el club no existe": si la ficha del alta (`analizar()`)

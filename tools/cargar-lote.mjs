@@ -65,7 +65,7 @@ const descartados = new Set(leerLineas('Admin/registros/documentos-descartados.t
 // igual. Caso: Kifisia 2022 (9/8/2021-30/6/2022), marcado parcial antes del lote 71 y publicado por la corrida (be8e6849b; se sacó a mano).
 const parciales = new Set(leerLineas('Admin/registros/documentos-parciales.txt'));
 const docs = leerLineas(LISTA).filter((d) => !descartados.has(d) && !parciales.has(d));
-const altas = new Map(leerJsonl('Admin/registros/altas-club.jsonl').map((o) => [o.carpeta, o]));
+let altas = new Map(leerJsonl('Admin/registros/altas-club.jsonl').map((o) => [o.carpeta, o]));
 const revision = new Map(leerJsonl('Admin/registros/altas-revision.jsonl').map((o) => [o.clubId, o]));
 
 // 1) El ensayo de cada documento (cargar.mjs sin --escribir: no toma el candado ni escribe el sitio).
@@ -87,6 +87,12 @@ for (const pdf of docs) {
 }
 
 // 2) Por club: si hace falta alta, ¿se puede? (registro de altas listo + color elegido en la revisión).
+// (to-do 237 t) ANTES DE DECIDIR, EL REGISTRO DE ALTAS AL DÍA para los clubes de la lista que necesitan alta: `alta-club.mjs --todos --solo
+// "<país>/<club>"` (gratis, recalcula solo si la huella de la carpeta cambió). Se leía el registro viejo: en el lote 79 el alta frenó por
+// "faltan-datos" dos veces (Sporting; después Porto, Braga y Benfica) aunque ya estaba lista, y correr --todos a mano la destrababa.
+const paraAlta = [...clubes].filter(([, xs]) => xs.some((x) => x.alta)).map(([carpeta]) => carpeta.split('/').slice(1, 3).join('/'));
+for (const solo of paraAlta) node('tools/alta-club.mjs', ['--todos', '--solo', solo]);
+if (paraAlta.length) altas = new Map(leerJsonl('Admin/registros/altas-club.jsonl').map((o) => [o.carpeta, o]));
 const plan = [];
 for (const [carpeta, xs] of clubes) {
   xs.sort((a, b) => a.year - b.year || a.pdf.localeCompare(b.pdf));

@@ -24,6 +24,7 @@ que dice `ESTADO.md` era verdad ese día.
 - cargar.mjs: si no cierra el resultado, una respuesta de la cola del otro lado se prueba mudando la fila sin cambiar su efecto (f).
   Medido: 733 idénticos; sin sus ajustes `categoria`, Nacional 2024 y 2025, Benfica 2006-07 y Sporting 2001 y 2003-04 cargan igual.
 - cargar-lote.mjs: revertir un alta borra también los archivos nuevos que dejó en data/ y fuentes/ (d).
+- cargar-lote.mjs: antes de decidir un alta, recalcula el registro de altas de ese club (alta-club.mjs --todos --solo, gratis) (t).
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)
 
