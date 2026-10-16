@@ -1,24 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Estoril Praia/relatorio-contas-2022-23.pdf",
- "generado": "2026-10-15T22:34:40.570Z",
- "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (estorilpraia-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "6 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Vendas\" -> sponsorship_commercial 0.6; \"Subsídio da UEFA\" -> competition_bonus 0.55; \"Correções relativas a períodos anteriore\" -> other_income 0; \"Materiais\" -> admin_general_expense 0.6; \"Outros gastos com pessoal\" -> wages_squad 0.55"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-16T03:18:40.999Z",
+ "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-06-30); pregunta en la cola (no frena)"
  ],
@@ -34,9 +17,9 @@
     "amountNative": 0.038979,
     "disclosureLevel": "aggregated",
     "_pag": 23,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Receitas de bilheteira",
@@ -104,9 +87,9 @@
     "amountNative": 0.2074,
     "disclosureLevel": "aggregated",
     "_pag": 55,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros subsídios",
@@ -134,9 +117,9 @@
     "amountNative": 0.00387,
     "disclosureLevel": "aggregated",
     "_pag": 57,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía exceptional_items)"
    },
    {
     "rawLabel": "Outros rendimentos",
@@ -246,9 +229,9 @@
     "amountNative": -0.031028,
     "disclosureLevel": "aggregated",
     "_pag": 55,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Energia e fluídos",
@@ -346,9 +329,9 @@
     "amountNative": -0.223598,
     "disclosureLevel": "aggregated",
     "_pag": 56,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Imparidade de dívidas a receber (perdas/reversões)",
@@ -406,9 +389,9 @@
     "amountNative": -0.119114,
     "disclosureLevel": "aggregated",
     "_pag": 57,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Donativos",
@@ -480,10 +463,10 @@
   "source": {
    "id": "estorilpraia-pt-relatorio-contas-2022-23",
    "clubId": "estorilpraia-pt",
-   "title": "Estoril Praia — relatorio-contas-2022-23 (ejercicio 2023)",
+   "title": "Estoril Praia – Futebol, SAD — relatorio-contas-2022-23 (ejercicio 2023)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Estoril Praia/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Estoril Praia/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Estoril Praia/relatorio-contas-2022-23.md",
@@ -516,11 +499,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.038979,
    "cat": "sponsorship_commercial",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Estoril 2024-25).",
    "destino": "revenue",
    "amountNative": 0.038979
   },
@@ -622,11 +605,11 @@
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.2074,
    "cat": "competition_bonus",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Estoril 2024-25).",
    "destino": "revenue",
    "amountNative": 0.2074
   },
@@ -668,12 +651,10 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.00387,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía exceptional_items)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "revenue",
    "amountNative": 0.00387
   },
@@ -836,11 +817,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.031028,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Estoril 2024-25).",
    "destino": "expense",
    "amountNative": -0.031028
   },
@@ -991,11 +972,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.223598,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Estoril 2024-25).",
    "destino": "expense",
    "amountNative": -0.223598
   },
@@ -1083,11 +1064,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.119114,
    "cat": "match_organisation_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Estoril 2024-25).",
    "destino": "expense",
    "amountNative": -0.119114
   },
@@ -1262,8 +1243,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 4,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 13,
   "lineasGasto": 29,
   "metaFilas": 2,

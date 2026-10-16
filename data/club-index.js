@@ -89,7 +89,7 @@ window.CLUB_INDEX = {
   "elche-es": {"n":"Elche CF","c":"ES","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "envigado": {"n":"Envigado FC","c":"CO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "espanyol-es": {"n":"RCD Espanyol","c":"ES","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
-  "estorilpraia-pt": {"n":"Estoril Praia","c":"PT","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
+  "estorilpraia-pt": {"n":"Estoril Praia","c":"PT","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "estreladaamadora-pt": {"n":"Estrela da Amadora","c":"PT","q":"full","y":2,"last":2023,"yrs":[[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "estudianteslp": {"n":"Estudiantes de La Plata","c":"AR","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "everton-gb": {"n":"Everton","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
