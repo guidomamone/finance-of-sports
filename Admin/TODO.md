@@ -128,6 +128,49 @@ con los que no están en los pasos de arriba.
    el clubId y el año del `.carga.json` de la última propuesta, aunque después se haya puesto un ajuste `anio` que cambia el año. Caso:
    Sporting 2001 (relatorio-contas-2000.pdf): la propuesta vieja decía 2000 (por el nombre del archivo), 2000 está cargado, y el lote lo
    salteaba; se destrabó moviendo el `.carga.json` viejo. Escalón posible: si el documento tiene ajuste `anio`, el año sale del ajuste.
+240. LINK DEDICADO, NIVEL 1: EL ESTADO EN LA URL (mejoras de proyecto, pedido de Guido 2026-10-16). `?club=boca-ar&tab=finanzas`, `?liga=laliga`: la URL se actualiza al cambiar de
+   pantalla, se lee al abrir el link y "atrás" funciona. Una o dos sesiones. Listo cuando un link copiado abre el mismo club, pestaña y años.
+241. LINK DEDICADO, NIVEL 2: RUTAS REALES, TARJETA AL COMPARTIR Y SEO (mejoras de proyecto, pedido de Guido 2026-10-16). `/club/<id>` y `/liga/<id>` pre-generadas (redirect de Netlify +
+   un generador de HTML por club, como `fuentes/<club>.html`), con título, descripción y OG image ("Boca Juniors · Ingresos 2025: US$ 120 M").
+   WhatsApp y Google no ejecutan JS: sin esto la preview es la portada y nadie que busque "deuda de Boca" llega. Mockups con Design antes de codear.
+242. PARA PERIODISTAS: CSV, CÓMO CITAR Y METODOLOGÍA PÚBLICA (mejoras de proyecto, pedido de Guido 2026-10-16). Descarga en CSV por club y año, un "cómo citar" con link, y una página
+   pública de metodología (cómo se categoriza, cómo se convierte a USD, cómo se ajusta por inflación).
+243. LO QUE SE BUSCA SIN RESULTADO GUÍA EL SOURCING (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker ya registra las búsquedas que no encuentran club: esa lista decide qué
+   club se carga después (junto con el repaso de métricas, to-do 254).
+244. LICENCIA DEL DATASET Y DE CADA FUENTE (mejoras de proyecto, pedido de Guido 2026-10-16). Hoy data/**/*.js y Clubes/**/*.md se bajan sin licencia (terminos.html no dice nada).
+   Definir una (p. ej. CC BY-NC) y anotar, por fuente externa (ligas, pases, cotizaciones, deflactores, presidentes), de dónde sale y si
+   permite reventa. Es lo que después permite cobrar el uso comercial.
+245. DATOS COMO JSON CON ESQUEMA (mejoras de proyecto, pedido de Guido 2026-10-16). Hoy son JS (`const xRevenueLinesByYear = {...}`), sin versión de esquema, con la unidad implícita
+   (millones) y la moneda en otro archivo. JSON con schema_version, unit/scale/currency explícitos y fecha de corte, como fuente; el JS del
+   sitio se genera desde ahí.
+246. IDS ESTABLES (mejoras de proyecto, pedido de Guido 2026-10-16). Conviven ids sin país (realmadrid, athleticclub) y con país (elche-es, corinthians-br). Normalizar antes de tener
+   clientes de una API, con un mapa de alias de los ids viejos.
+247. REGISTRO PÚBLICO DE CORRECCIONES (mejoras de proyecto, pedido de Guido 2026-10-16). Las correcciones se registran adentro (ajustes, evidencia por club); afuera nadie sabe qué cambió
+   ni cuándo, dato por dato. Un registro público versionado.
+248. TAXONOMÍA GENÉRICA + SUBCATEGORÍAS POR DEPORTE (mejoras de proyecto, pedido de Guido 2026-10-16). Una capa genérica (ingresos y gastos operativos, deuda) y las subcategorías de cada
+   deporte debajo, para que wages_squad no quede como campo de primer nivel de una API (ver to-do 130).
+249. API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
+   api.financeofsports.com desde el primer día. No construirla ahora.
+250. HOOKS DE CLAUDE CODE (mejoras de proyecto, pedido de Guido 2026-10-16). Hoy no hay ninguno. Candidatos: audit.js antes de cada commit; bloquear la edición de .claude/skills/ sin el
+   ok de Guido; avisar si cambió data/ y no subió ASSET_V. Lo que una máquina puede chequear sale del texto de las reglas.
+251. WORKTREES PARA SESIONES EN PARALELO (mejoras de proyecto, pedido de Guido 2026-10-16). Cada sesión en su copia y su rama, y después se mergea, en vez de "no edites que hay otra
+   sesión abierta".
+252. TAREA PROGRAMADA: EJERCICIOS NUEVOS (mejoras de proyecto, pedido de Guido 2026-10-16). Los clubes publican una vez por año (casi todos entre septiembre y diciembre). Una tarea semanal
+   revisa reguladores y webs de los clubes cargados y deja los links en Admin/sourcing/README.md (con Claude in Chrome para los portales con
+   sesión o formularios difíciles).
+253. TABLERO DEL PIPELINE (ARTIFACT CON BASE DE DATOS) (mejoras de proyecto, pedido de Guido 2026-10-16). Lo de estado.mjs, la cola, el gasto de API por país y el seguimiento de mails a
+   clubes, abrible desde el celular.
+254. REPASO MENSUAL DE MÉTRICAS (MIXPANEL Y NETLIFY) (mejoras de proyecto, pedido de Guido 2026-10-16). Qué clubes se buscan y no están, y dónde se corta el embudo del selector.
+255. CONSOLIDAR LAS REGLAS (mejoras de proyecto, pedido de Guido 2026-10-16). CLAUDE.md, las memorias, 7 skills, CONVENCIONES, CONVENCIONES-DATOS, PANTALLA y PIPELINE: una regla en tres
+   lugares es lo que hace que una sesión contradiga a otra. Pasada de consolidación; lo chequeable va a hooks (250) o a audit.js.
+256. CHANGELOG CORTO (mejoras de proyecto, pedido de Guido 2026-10-16). Casi 3.000 líneas y git ya guarda la historia: dejar los últimos 30 días y archivar el resto en Admin/Archive/.
+257. SKILLS QUE FALTAN (mejoras de proyecto, pedido de Guido 2026-10-16). Producto/pantalla (mockup, ok, implementación, chequeo en celular; hoy mezclado en PANTALLA.md); contenido y
+   difusión (un año cargado → hilo o post con el dato verificado y el link a la fuente); contrato de datos/API (esquema público y qué lo
+   rompe); deploy/release (qué chequear antes de pushear y cómo verificar producción).
+258. ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). clubs.js + club-index.js pesan ~93 KB para ~230 clubes y se bajan siempre (con 10.000 clubes,
+   ~4 MB). Partir el índice y cargar el buscador aparte cuando la skill escala-finance-of-sports diga que llegó el momento.
+259. MATERIAL DE DIFUSIÓN (mejoras de proyecto, pedido de Guido 2026-10-16). Un deck para periodistas y sponsors, o un informe por liga ("las finanzas de LaLiga 2025 en 10 slides"), con
+   el tipo Slides. Sin código.
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
     e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
