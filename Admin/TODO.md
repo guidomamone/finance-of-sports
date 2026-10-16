@@ -215,6 +215,10 @@ llegue acá.
     ae) NOTAS COMO IMAGEN SIN TRANSCRIBIR (Porto 2020-21: las notas 27 Rédito, 31 Outros gastos y 32 Depreciação quedaron como el nombre de
        la imagen, img-48/img-52, sin la tabla). El año se cargó con los renglones del estado (cierra), pero sin el detalle de esas notas.
        Escalón posible: que la validación de la etapa 2 marque un .md con referencias a imágenes de tablas y transcriba esas páginas.
+    af) EL LOTE NO VUELVE A VERIFICAR CUANDO LLEGA UNA RESPUESTA (lote 80: Sporting 2007-08 y Benfica 2019-20 tenían sus 4 casos contestados,
+       pero `lote.mjs` solo verifica los documentos recién extraídos y siguió frenando "4 casos pendientes" con la verificación vieja). Se
+       destrabó con `node tools/verificar.mjs "<pdf>" --rubros` a mano (gratis). Escalón posible: que la etapa 6 del lote también tome los
+       documentos cuya verificación es anterior a la última respuesta de la cola para ese PDF (ver s).
 238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
    sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
    (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
