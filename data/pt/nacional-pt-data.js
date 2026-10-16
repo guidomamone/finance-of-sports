@@ -13,6 +13,22 @@ const nacionalptRevenueLinesByYear = {
     { rawLabel:'Comparticipação tarifa residente', normalizedCategory:'other_income', amountNative:0.242545, disclosureLevel:'aggregated' },
     { rawLabel:'Outros não especificados', normalizedCategory:'other_income', amountNative:0.037125, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Bilhetes, Camarotes', normalizedCategory:'matchday_competition', amountNative:0.010294, disclosureLevel:'aggregated' },
+    { rawLabel:'Competições', normalizedCategory:'competition_bonus', amountNative:0.023367, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:0.177064, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos Televisivos', normalizedCategory:'broadcasting', amountNative:0.5, disclosureLevel:'aggregated' },
+    { rawLabel:'DRJD', normalizedCategory:'other_income', amountNative:0.875, disclosureLevel:'aggregated' },
+    { rawLabel:'INST. SEG. SOCIAL', normalizedCategory:'other_income', amountNative:0.001898, disclosureLevel:'aggregated' },
+    { rawLabel:'FPF - TAÇA PORTUGAL', normalizedCategory:'competition_bonus', amountNative:0.001725, disclosureLevel:'aggregated' },
+    { rawLabel:'Prémios - LPFP Apostas Desportivas Placard', normalizedCategory:'other_income', amountNative:0.190942, disclosureLevel:'aggregated' },
+    { rawLabel:'Prémios Federação Portuguesa de Futebol', normalizedCategory:'competition_bonus', amountNative:0.512794, disclosureLevel:'aggregated' },
+    { rawLabel:'Prémios - Mecanismo de Solidariedade', normalizedCategory:'player_sales', amountNative:0.000803, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedências de jogadores', normalizedCategory:'player_sales', amountNative:0.009001, disclosureLevel:'aggregated' },
+    { rawLabel:'Venda de Jogadores', normalizedCategory:'player_sales', amountNative:0.4, disclosureLevel:'aggregated' },
+    { rawLabel:'Comparticipação tarifa residente', normalizedCategory:'other_income', amountNative:0.21716, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros não especificados', normalizedCategory:'other_income', amountNative:0.140515, disclosureLevel:'aggregated' },
+  ],
 };
 const nacionalptExpenseLinesByYear = {
   2024: [
@@ -54,6 +70,42 @@ const nacionalptExpenseLinesByYear = {
     { rawLabel:'Outros não especificados', normalizedCategory:'other_expenses', amountNative:-0.028882, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'player_amortisation', amountNative:-0.08125, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-0.117007, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.043684, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.096308, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e reparação', normalizedCategory:'admin_general_expense', amountNative:-0.046667, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços bancários', normalizedCategory:'admin_general_expense', amountNative:-0.003283, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.057165, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.067909, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e estadas', normalizedCategory:'match_organisation_expense', amountNative:-0.413991, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.01014, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.12, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.013492, disclosureLevel:'aggregated' },
+    { rawLabel:'Contencioso e notariado', normalizedCategory:'admin_general_expense', amountNative:-0.013891, disclosureLevel:'aggregated' },
+    { rawLabel:'Limpeza, higiene e conforto', normalizedCategory:'admin_general_expense', amountNative:-0.005279, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros serviços', normalizedCategory:'other_expenses', amountNative:-0.007477, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações órgãos sociais', normalizedCategory:'admin_general_expense', amountNative:-0.129908, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações do Pessoal - Funcionários', normalizedCategory:'admin_general_expense', amountNative:-0.293472, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações do Pessoal - Jogadores', normalizedCategory:'wages_squad', amountNative:-1.26642, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações do Pessoal - Treinadores', normalizedCategory:'wages_squad', amountNative:-0.1955, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnização para despedimento', normalizedCategory:'wages_squad', amountNative:-0.006496, disclosureLevel:'aggregated' },
+    { rawLabel:'Enc. s/rem.-orgãos sociais', normalizedCategory:'admin_general_expense', amountNative:-0.030853, disclosureLevel:'aggregated' },
+    { rawLabel:'Enc. s/rem.-pessoal - Funcionários', normalizedCategory:'admin_general_expense', amountNative:-0.061619, disclosureLevel:'aggregated' },
+    { rawLabel:'Enc. s/rem.-pessoal - Treinadores', normalizedCategory:'wages_squad', amountNative:-0.041048, disclosureLevel:'aggregated' },
+    { rawLabel:'Enc. s/rem.-pessoal - Jogadores', normalizedCategory:'wages_squad', amountNative:-0.043833, disclosureLevel:'aggregated' },
+    { rawLabel:'Seg.ac.trb - pessoal', normalizedCategory:'admin_general_expense', amountNative:-0.002573, disclosureLevel:'aggregated' },
+    { rawLabel:'Seg.ac.trb - Jogadores', normalizedCategory:'wages_squad', amountNative:-0.137649, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Custos com Pessoal - Jogadores', normalizedCategory:'wages_squad', amountNative:-0.004265, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Custos com Pessoal - Outros', normalizedCategory:'admin_general_expense', amountNative:-0.003558, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos com descontos de letras', normalizedCategory:'other_expenses', amountNative:-0.004774, disclosureLevel:'aggregated' },
+    { rawLabel:'Correções relativas a períodos anteriores', normalizedCategory:'exceptional_items', amountNative:-0.00007, disclosureLevel:'aggregated' },
+    { rawLabel:'Quotizações', normalizedCategory:'admin_general_expense', amountNative:-0.001347, disclosureLevel:'aggregated' },
+    { rawLabel:'Transferências de jogadores', normalizedCategory:'player_amortisation', amountNative:-0.003, disclosureLevel:'aggregated' },
+    { rawLabel:'Custas, tribunal, etc', normalizedCategory:'admin_general_expense', amountNative:-0.059689, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros não especificados', normalizedCategory:'other_expenses', amountNative:-0.143106, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'player_amortisation', amountNative:-0.082761, disclosureLevel:'aggregated' },
+  ],
 };
 const nacionalptFiscalYearMeta = {
   2024: {
@@ -69,6 +121,20 @@ const nacionalptFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:2.900823, officialTotalExpenses:4.244431, officialPAT:-0.972572,
+  },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'nacional-pt-relatorio-contas-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.001911, tax:0.051055,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.001911},
+      {label:'Imposto sobre rendimento do período', value:0.051055},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:3.060563, officialTotalExpenses:3.528234, officialPAT:-0.418529,
   },
 };
 const nacionalptPresupuestoOverlayByYear = {};
@@ -89,6 +155,11 @@ Object.assign(sources, {
   'nacional-pt-relatorio-contas-2023-24': {
     id:'nacional-pt-relatorio-contas-2023-24', clubId:'nacional-pt',
     title:'Clube Desportivo Nacional, Futebol SAD — relatorio-contas-2023-24 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'nacional-pt-relatorio-contas-2022-23': {
+    id:'nacional-pt-relatorio-contas-2022-23', clubId:'nacional-pt',
+    title:'Clube Desportivo Nacional, Futebol SAD — relatorio-contas-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

@@ -23,3 +23,5 @@ Ninguna sobre el canal. Si se retoma, buscar ejercicios anteriores a 2021/22.
 - Último chequeo: 2026-09-17.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2024 desde `Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf` (sourceId `nacional-pt-relatorio-contas-2023-24`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Nacional/relatorio-contas-2022-23.pdf` (sourceId `nacional-pt-relatorio-contas-2022-23`).

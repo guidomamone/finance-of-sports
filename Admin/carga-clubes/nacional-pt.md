@@ -119,6 +119,83 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-ligaportugal2, verificado contra roster cacheado de "2023–24 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Nacional".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Nacional/relatorio-contas-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Nacional/relatorio-contas-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bilhetes, Camarotes | pág. 20, precedente |
+| 2 | Competições | pág. 20, Jev 0.9 |
+| 3 | Publicidade | pág. 20, precedente |
+| 4 | Direitos Televisivos | pág. 20, precedente |
+| 5 | DRJD | pág. 21, precedente |
+| 6 | INST. SEG. SOCIAL | pág. 21, Jev 0.96 |
+| 7 | FPF - TAÇA PORTUGAL | pág. 21, ? 0.7 |
+| 8 | Prémios - LPFP Apostas Desportivas Placard | pág. 21, precedente |
+| 9 | Prémios Federação Portuguesa de Futebol | pág. 21, precedente |
+| 10 | Prémios - Mecanismo de Solidariedade | pág. 21, precedente |
+| 11 | Cedências de jogadores | pág. 21, Jev 0.96 |
+| 12 | Venda de Jogadores | pág. 21, Jev 1 |
+| 13 | Comparticipação tarifa residente | pág. 21, precedente |
+| 14 | Outros não especificados | pág. 21, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trabalhos especializados | pág. 22, precedente |
+| 2 | Vigilância e segurança | pág. 22, precedente |
+| 3 | Honorários | pág. 22, precedente |
+| 4 | Conservação e reparação | pág. 22, precedente |
+| 5 | Serviços bancários | pág. 22, precedente |
+| 6 | Outros | pág. 22, precedente |
+| 7 | Outros | pág. 22, precedente |
+| 8 | Deslocações e estadas | pág. 22, precedente |
+| 9 | Outros | pág. 22, precedente |
+| 10 | Rendas e alugueres | pág. 22, precedente |
+| 11 | Comunicação | pág. 22, precedente |
+| 12 | Contencioso e notariado | pág. 22, precedente |
+| 13 | Limpeza, higiene e conforto | pág. 22, precedente |
+| 14 | Outros serviços | pág. 22, precedente |
+| 15 | Remunerações órgãos sociais | pág. 22, precedente |
+| 16 | Remunerações do Pessoal - Funcionários | pág. 22, precedente |
+| 17 | Remunerações do Pessoal - Jogadores | pág. 22, precedente |
+| 18 | Remunerações do Pessoal - Treinadores | pág. 22, precedente |
+| 19 | Indemnização para despedimento | pág. 22, precedente |
+| 20 | Enc. s/rem.-orgãos sociais | pág. 22, precedente |
+| 21 | Enc. s/rem.-pessoal - Funcionários | pág. 22, precedente |
+| 22 | Enc. s/rem.-pessoal - Treinadores | pág. 22, precedente |
+| 23 | Enc. s/rem.-pessoal - Jogadores | pág. 22, precedente |
+| 24 | Seg.ac.trb - pessoal | pág. 22, precedente |
+| 25 | Seg.ac.trb - Jogadores | pág. 22, precedente |
+| 26 | Outros Custos com Pessoal - Jogadores | pág. 22, precedente |
+| 27 | Outros Custos com Pessoal - Outros | pág. 22, precedente |
+| 28 | Encargos com descontos de letras | pág. 23, precedente |
+| 29 | Correções relativas a períodos anteriores | pág. 23, precedente |
+| 30 | Quotizações | pág. 23, precedente |
+| 31 | Transferências de jogadores | pág. 23, precedente |
+| 32 | Custas, tribunal, etc | pág. 23, precedente |
+| 33 | Outros não especificados | pág. 23, precedente |
+| 34 | Gastos/reversões de depreciação e de amortização | pág. 4, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2022–23 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Nacional".
+```
+
 ## Fuentes
 
 ### nacional-pt-relatorio-contas-2023-24
@@ -127,4 +204,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Nacional/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### nacional-pt-relatorio-contas-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Nacional/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

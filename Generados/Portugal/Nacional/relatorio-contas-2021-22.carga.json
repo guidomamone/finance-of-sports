@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2021-22.pdf",
- "generado": "2026-10-15T22:34:43.717Z",
+ "generado": "2026-10-16T02:33:30.318Z",
  "frena": [
   {
    "etapa": "registro",
@@ -22,13 +22,10 @@
  "periodo": {
   "tipo": "anual",
   "meses": 12,
-  "cierre": "2021-06-30",
-  "evidencia": {
-   "pagina": 6,
-   "texto": "Demonstração das Alterações no Capital Próprio no período de 1 de julho de 2020 a 30 de junho de 2021"
-  },
+  "cierre": "2022-06-30",
+  "anual": "temporada",
   "confianza": "alta",
-  "anual": "temporada"
+  "evidencia": "ajuste manual (2026-10-16): periodo.mjs tomó 30/06/2021 (columna comparativa); el informe es del período de doce meses findo el 30/06/2022."
  },
  "clubId": "nacional-pt",
  "year": 2022,

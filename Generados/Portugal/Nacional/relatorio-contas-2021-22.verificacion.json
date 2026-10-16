@@ -1,19 +1,30 @@
 {
  "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2021-22.pdf",
  "md": "Clubes/Portugal/Nacional/relatorio-contas-2021-22.md",
- "generado": "2026-10-15T21:56:50.234Z",
+ "generado": "2026-10-16T02:25:06.635Z",
  "estado": "cola",
  "clubId": "nacional-pt",
  "year": 2021,
  "escala": {
-  "valor": "unidades",
+  "valor": "no se sabe",
   "escalon": 0,
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2021-22.pdf",
+   "campo": "cierre",
+   "valor": "2022-06-30",
+   "linea": null,
+   "motivo": "periodo.mjs tomó 30/06/2021 (columna comparativa); el informe es del período de doce meses findo el 30/06/2022.",
+   "evidencia": "relatorio-contas-2021-22.md L241 'período de doze meses findo em 30 de junho de 2022', L216",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [
-  "0d9c297"
+  "88f8036"
  ],
  "chequeos": [
   {
@@ -39,8 +50,7 @@
   }
  ],
  "notas": [
-  "duda de localizar que no afecta la carga: El documento es el relatorio 2021/22; el ejercicio pedido (cierre 30-06-2021) aparece solo como columna comparativa y no hay datos de 30-jun-20.",
-  "duda de localizar que no afecta la carga: b30 es un movimiento de saldos de provisiones de una sola fila, no abre el renglón en categorías."
+  "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)"
  ],
  "reintentar": null,
  "reintentado": false,
