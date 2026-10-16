@@ -15,6 +15,9 @@ window.RANKINGS["pt-liga3"] = {
       { id:"academica-pt", revenue:0.486, reportType:"official_balance_sheet",
         sourceId:"academica-pt-rc-sduq-2023-2024",
         mix:[["Comercial / Sponsors",0.236],["Estadio",0.042],["Venta de Jugadores",0.022],["Otros ingresos",0.186]] },
+      { id:"felgueiras-pt", revenue:0.459, reportType:"official_balance_sheet",
+        sourceId:"felgueiras-pt-demonstracoes-financeiras-individuais-epoca-2023-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.449],["Otros ingresos",0.01]] },
     ],
   },
 };

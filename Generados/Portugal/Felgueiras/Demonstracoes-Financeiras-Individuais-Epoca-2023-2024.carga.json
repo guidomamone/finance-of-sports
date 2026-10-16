@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Felgueiras/Demonstracoes-Financeiras-Individuais-Epoca-2023-2024.pdf",
- "generado": "2026-10-16T02:33:29.431Z",
+ "generado": "2026-10-16T02:49:44.890Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (felgueiras-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros gastos com pessoal\" -> wages_squad 0.6; \"Gastos/reversões de depreciação e de amo\" -> depreciation 0.6"
   }
  ],
  "avisos": [
@@ -98,9 +94,9 @@
     "amountNative": -0.099534,
     "disclosureLevel": "aggregated",
     "_pag": 24,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos",
@@ -118,9 +114,9 @@
     "amountNative": -0.0028,
     "disclosureLevel": "aggregated",
     "_pag": 6,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -306,11 +302,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.099534,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.099534
   },
@@ -337,11 +333,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.0028,
    "cat": "depreciation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.0028
   },
@@ -464,7 +460,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 3,
   "lineasGasto": 7,
   "metaFilas": 3,

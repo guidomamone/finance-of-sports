@@ -22,4 +22,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'academica-pt': { 2024: 'pt-liga3' },
   'arouca-pt': { 2025: 'pt-primeiraliga' },
   'chaves-pt': { 2023: 'pt-primeiraliga' },
+  'felgueiras-pt': { 2024: 'pt-liga3' },
 });
