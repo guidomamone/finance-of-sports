@@ -1,82 +1,90 @@
 {
- "md": "Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.md",
- "pdf": "Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.pdf",
- "club": "vizela-pt",
- "year": 2022,
- "generatedAt": "2026-10-16T03:34:30.862Z",
- "origen": "verificar.mjs (proceso nuevo, Versión 324)",
- "rubros": [
-  {
-   "label": "Vendas e Serviços Prestados",
-   "lado": "revenue",
-   "page": 8,
-   "section": "estado",
-   "values": [
-    5.112926
-   ]
-  },
-  {
-   "label": "Subsídios à exploração",
-   "lado": "revenue",
-   "page": 8,
-   "section": "estado",
-   "values": [
-    0.343644
-   ]
-  },
-  {
-   "label": "Outros Rendimentos",
-   "lado": "revenue",
-   "page": 8,
-   "section": "estado",
-   "values": [
-    0.345797
-   ]
-  },
-  {
-   "label": "Custo Merc Vend e Matérias Consumidas",
-   "lado": "expense",
-   "page": 7,
-   "section": "estado",
-   "values": [
-    0.037522
-   ]
-  },
-  {
-   "label": "Fornecimentos e Serviços Externos",
-   "lado": "expense",
-   "page": 7,
-   "section": "estado",
-   "values": [
-    1.87259
-   ]
-  },
-  {
-   "label": "Gastos com Pessoal",
-   "lado": "expense",
-   "page": 7,
-   "section": "estado",
-   "values": [
-    6.180784
-   ]
-  },
-  {
-   "label": "Gastos de Depreciação e Amortização",
-   "lado": "expense",
-   "page": 7,
-   "section": "estado",
-   "values": [
-    0.088132
-   ]
-  },
-  {
-   "label": "Outros Gastos e Perdas",
-   "lado": "expense",
-   "page": 7,
-   "section": "estado",
-   "values": [
-    0.044629
-   ]
-  }
- ]
+  "md": "Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.md",
+  "pdf": "Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.pdf",
+  "club": "vizela-pt",
+  "year": 2022,
+  "generatedAt": "2026-10-16T03:35:28.792Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Vendas e Serviços Prestados",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        5.112926
+      ],
+      "glosa": "Ventas y prestación de servicios"
+    },
+    {
+      "label": "Subsídios à exploração",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.343644
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Outros Rendimentos",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.345797
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Custo Merc Vend e Matérias Consumidas",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.037522
+      ],
+      "glosa": "Coste de las mercaderías vendidas y materias consumidas"
+    },
+    {
+      "label": "Fornecimentos e Serviços Externos",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.87259
+      ],
+      "glosa": "Suministros y servicios exteriores"
+    },
+    {
+      "label": "Gastos com Pessoal",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        6.180784
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Gastos de Depreciação e Amortização",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.088132
+      ],
+      "glosa": "Gastos de amortización y depreciación"
+    },
+    {
+      "label": "Outros Gastos e Perdas",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.044629
+      ],
+      "glosa": "Otros gastos y pérdidas"
+    }
+  ]
 }

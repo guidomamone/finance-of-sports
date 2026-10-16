@@ -32,6 +32,11 @@ const vizelaptRevenueLinesByYear = {
     { rawLabel:'Outros rendimentos e ganhos', normalizedCategory:'other_income', amountNative:0.459945, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/rendimentos com transações de passes de atletas', normalizedCategory:'player_sales', amountNative:0.945568, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Vendas e Serviços Prestados', normalizedCategory:'lump_football_operations', amountNative:5.112926, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.343644, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Rendimentos', normalizedCategory:'other_income', amountNative:0.345797, disclosureLevel:'aggregated' },
+  ],
 };
 const vizelaptExpenseLinesByYear = {
   2025: [
@@ -76,6 +81,13 @@ const vizelaptExpenseLinesByYear = {
     { rawLabel:'Gastos/reversões de depreciação e de amortização (excluindo passes de jogadores)', normalizedCategory:'depreciation', amountNative:-0.111159, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização com passes de jogadores', normalizedCategory:'player_amortisation', amountNative:-0.093776, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Custo Merc Vend e Matérias Consumidas', normalizedCategory:'other_expenses', amountNative:-0.037522, disclosureLevel:'aggregated' },
+    { rawLabel:'Fornecimentos e Serviços Externos', normalizedCategory:'admin_general_expense', amountNative:-1.87259, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos com Pessoal', normalizedCategory:'wages_squad', amountNative:-6.180784, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos de Depreciação e Amortização', normalizedCategory:'depreciation', amountNative:-0.088132, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Gastos e Perdas', normalizedCategory:'other_expenses', amountNative:-0.044629, disclosureLevel:'aggregated' },
+  ],
 };
 const vizelaptFiscalYearMeta = {
   2025: {
@@ -106,6 +118,24 @@ const vizelaptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:6.759663, officialTotalExpenses:12.768881, officialPAT:-6.021053,
   },
+  2022: {
+    incluidoEn:{ member_dues:{ en:'lump_football_operations', posible:true, por:'precedente' }, sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, competition_bonus:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' } },
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'vizela-pt-relatorio-contas-fcv-2021-22',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.000004, tax:-0.008623,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.000004},
+      {label:'Impostos Sobre o Rendimento Período', value:-0.008623},
+    ],
+    sinDesglose: [
+      {renglon:'Vendas e Serviços Prestados', lado:'revenue', importe:5.112926, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:5.802367, officialTotalExpenses:8.223657, officialPAT:-2.429918,
+  },
 };
 const vizelaptPresupuestoOverlayByYear = {};
 
@@ -130,6 +160,11 @@ Object.assign(sources, {
   'vizela-pt-relatorio-e-contas-fcv-2022-23-aprovadas': {
     id:'vizela-pt-relatorio-e-contas-fcv-2022-23-aprovadas', clubId:'vizela-pt',
     title:'Futebol Clube de Vizela - Futebol, SAD — Relatorio-e-Contas-FCV-2022-23_Aprovadas (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'vizela-pt-relatorio-contas-fcv-2021-22': {
+    id:'vizela-pt-relatorio-contas-fcv-2021-22', clubId:'vizela-pt',
+    title:'Futebol Clube de Vizela - Futebol, SAD — Relatorio-Contas-FCV-2021-22 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

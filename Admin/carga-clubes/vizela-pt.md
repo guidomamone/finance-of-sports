@@ -166,6 +166,48 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2022–23 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Vizela".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas e Serviços Prestados | pág. 8, Jev 0.95 |
+| 2 | Subsídios à exploração | pág. 8, Jev 0.95 |
+| 3 | Outros Rendimentos | pág. 8, Jev 0.92 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo Merc Vend e Matérias Consumidas | pág. 7, Claude 0.93 |
+| 2 | Fornecimentos e Serviços Externos | pág. 7, Jev 0.99 |
+| 3 | Gastos com Pessoal | pág. 7, Jev 0.9 |
+| 4 | Gastos de Depreciação e Amortização | pág. 7, precedente |
+| 5 | Outros Gastos e Perdas | pág. 7, Jev 1 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2025): Cuotas Sociales, Comercial / Sponsors, Estadio, Televisión, Premios por competencias, Venta de Jugadores
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Vizela".
+```
+
 ## Fuentes
 
 ### vizela-pt-relatorio-e-contas-2024-25-fcv
@@ -182,4 +224,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vizela-pt-relatorio-contas-fcv-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.pdf",
- "generado": "2026-10-16T03:18:43.723Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Gastos de Depreciação e Amortização\" -> depreciation 0.6"
-  }
- ],
+ "generado": "2026-10-16T03:41:08.529Z",
+ "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-06-30); pregunta en la cola (no frena)"
  ],
@@ -84,9 +79,9 @@
     "amountNative": -0.088132,
     "disclosureLevel": "aggregated",
     "_pag": 7,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros Gastos e Perdas",
@@ -263,11 +258,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.088132,
    "cat": "depreciation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): casi todo depreciación de tangibles (83.801,52, nota 4.1), intangibles 6.118 sin pases [Relatorio-Contas-FCV-2021-22.md L447, L649]",
    "destino": "expense",
    "amountNative": -0.088132
   },
@@ -392,8 +387,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 3,
   "lineasGasto": 5,
   "metaFilas": 2,
