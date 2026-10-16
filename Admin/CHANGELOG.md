@@ -30,7 +30,10 @@ que dice `ESTADO.md` era verdad ese día.
   "Outros gastos" de personal como wages_squad).
 - cargar.mjs: el ejercicio de transición por cambio de cierre (11 meses que encadenan con el cierre anterior y el siguiente) se carga con
   nota pública (ab). Medido: solo cambia Benfica 2007-08 (deja de frenar por período).
-- Lote 86: Felgueiras 2021-22 cargado.
+- periodo.mjs: en un anual por descarte, el par de encabezado (f | f un año antes) le gana a la fecha más citada si esa no sale de una frase
+  de período (a + ac). Medido en 3.346 .md: cambian 10, todos bien (4 coinciden con ajustes `cierre` existentes; Gorica 2021 deja de frenar
+  por período); las 4 regresiones del prototipo no aparecen. Carga y antes-de-localizar idénticos.
+- Lotes 86 y 87: Felgueiras 2021-22 y Benfica 2007-08 cargados; caja de Felgueiras 2022-2024. Listas 80, 86 y 87 al archivo.
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)
 

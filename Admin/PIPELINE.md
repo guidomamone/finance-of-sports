@@ -501,6 +501,9 @@ Mitigaciones:
  TIPO DE CAMBIO   ajuste ─► declarado (compuerta: su frase no trae otra fecha que el cierre) ─► en tabla (fecha más nueva) ─► serie oficial ─► cola
  PERÍMETRO        heredado del año cargado más cercano ─► cola
  FECHA DE CIERRE  títulos ─► encabezados de las tablas (ejercicio | un año antes) ─► vecinos ─► cola; compuerta: no más de 2 años después de hoy
+                  ─► en un anual por descarte, si la fecha más citada no sale de una frase de período ("findo em", "ended") y una fila de
+                  tabla que es solo encabezado trae el par (f | f un año antes) con otra fecha, manda el par: la más citada era la firma
+                  o el fin de mandato (to-do 237 a + ac; Alverca 2022-23, Gorica 2021, Aris acta 2021)
  AÑO (alta-club)  ajuste `anio` ─► nombre con dos años seguidos que bajan ("2017-2016", ambiguo): el de las fechas de cierre del .md si es
                   uno de los dos (Versión 519) ─► la regla del nombre (el segundo de un par, el de una fecha ISO...) ─► contenido ─► cola
  PRESIDENTES      (Versión 552) data/gestiones/<país>.js tiene una gestión confirmada que cubre el cierre ─► si no, caso `gestion` en la

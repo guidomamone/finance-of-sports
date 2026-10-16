@@ -105,27 +105,19 @@ con los que no están en los pasos de arriba.
     Mejoras de script vistas en Grecia: to-do 232.
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
-    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, aa, q (POC y q1/q2), k, w, am, l (vecino sin
+    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, aa, q (POC y q1/q2), k, w, am, l (vecino sin
     descartados), ah, af+s, ai+ak, z, g y la letra nueva an (verificar no reescribe el .rubros.json igual, glosar no vuelve a pagar). Pasaron a
     Admin/HALLAZGOS-pipeline.md: b, c, h, i, j, l (primera parte), m, p, u, x, ae, aj y Benfica 2014-15. Guido dejó al para después.
     Cómo medir cada letra: verificar -> node tools/medir-verificar.mjs --lista Admin/lotes/prueba-completa.txt --salida <x> --pasadas 2
     (antes con --script <copia de la versión vieja dentro de tools/>) y --comparar; cargar -> node tools/medir-cargar.mjs --salida <x>
     (paralelo, ~1,5 min) y --comparar, después git checkout -- Admin/registros/categorias-aprendidas.jsonl; auditoría -> node tools/audit.js.
     PENDIENTES, con el diseño que dejaron los diagnósticos (subagentes Sonnet; ok de Guido para codear todas salvo al), en este orden:
-    - a + ac (M, riesgo medio): periodo.mjs ~L195-229, "par de encabezado" (fila de tabla con fechas f y f-1 año y celdas sin dígitos;
-      fechas de 2 dígitos solo ahí). Prototipo de un subagente: 23 de 3.220 cambian; 4 regresiones a decidir (Slavia 2002, Trabzonspor
-      intermedio, Almagro 2019, Aris acta). Variante a medir: no sustituir cuando el cierre de títulos sale de una frase de período
-      ("findo em", "ended", "do 1.1. a 30.6"). Si no pasa limpio, a HALLAZGOS.
     - v + o (S/M): verificar.mjs, bloque de dudas (~L1296-1390): la identidad de inventario (inicial + compras - final = CMV del estado,
       exacta) contesta sola la duda del cuadro de inventarios; una duda de escala con propuesta "sí" se cierra sola si el chequeo "año
       anterior cargado" dio ok. Medir contra los ~14 casos ya contestados.
     - Paridad PTE en el año vecino (S): el chequeo de vecinos compara Sporting 2000 (miles de escudos) con la columna 2000 de 2001 (EUR);
       con la paridad fija (200,482) coinciden. Destraba Sporting 2000 (ver también el freno "PTE y el club en EUR" de cargar).
     - r (S): textos de la terminal del lote (numeración de etapas, "DE VERDAD", "OJO", "?" en el resumen); mostrarle el texto a Guido antes.
-    a) `periodo.mjs` tomó la FECHA DE FIRMA como cierre: Alverca 2022-23 quedó con cierre 2023-09-29 ("Alverca, 29 de Setembro de 2023",
-       relatorio-contas-2022-23.md L75 y L108) cuando el documento dice "Período findo em 30 de Junho de 2023" (L87) y las columnas
-       "30/06/2023 | 30/06/2022" (L93). Se resolvió con un ajuste `cierre`. Escalón posible: una fecha precedida por un nombre de lugar
-       ("<Ciudad>, <día> de <mes> de <año>") es la firma, no el cierre; y el "período findo em" o la fecha de las columnas del estado manda.
     o) VERIFICAR (186 casos en Portugal): 64 dudas de extraer, 39 dudas de tema (escala, cuadro), 32 que no cierran, 24 de localizar,
        14 de año vecino, 10 de primer año. Mirar antes de diseñar si las dudas de escala ("¿en euros y no en miles?") y las filas
        informativas debajo del total se repiten por club y se pueden contestar una vez por club, como en m).
@@ -136,11 +128,6 @@ con los que no están en los pasos de arriba.
        mercadorias vendidas" (inicial + compras − final = CMV) no es un desglose aditivo; sumar sus filas descuadra (Santa Clara 633.981
        contra 378.448) y cada club genera 2 preguntas con la misma respuesta: queda afuera y se carga el renglón del estado. Escalón
        posible: reconocer el cuadro (filas "inicial/final" + "compras" cuyo cálculo da el renglón) y no ofrecerlo como desglose.
-    ac) `periodo.mjs` TOMA EL FIN DE MANDATO DE LOS ÓRGANOS SOCIALES COMO CIERRE (lote 80: Benfica 2013-14 quedó con cierre 2017-06-30 y
-       2012-13 con 2019-06-30, por la tabla de mandatos "30/06/2016", relatorio-contas-2013-14-pos-AG.md L1417-1421). Con el cierre mal,
-       localizar no eligió estado ("no contiene el ejercicio pedido"), verificar comparó años equivocados y abrió 8 casos de año vecino falsos.
-       Se resolvió con ajustes `cierre` y `estado`. Mismo patrón que a) (fecha de firma): una fecha dentro de una tabla de mandatos o de
-       órganos sociales no es el cierre; manda "A 30 DE JUNHO DE 2014" del índice y el encabezado del estado.
     ad) CERRAR UNA ETIQUETA EN TODOS LOS AÑOS PUEDE ACEPTAR LA PROPUESTA EQUIVOCADA (lote 80: "Gestão operacional do estádio" de Benfica
        tenía propuesta match_organisation_expense en 2021-2024 y admin_general_expense en 2025; `cola.mjs --responder 36c73ff aceptar` cerró
        los otros 4 años, incluido 2025 con SU propuesta). Se corrigió respondiendo 2025 después. Escalón posible: que el cierre en cadena

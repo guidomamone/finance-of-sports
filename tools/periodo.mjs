@@ -228,6 +228,30 @@ export function periodoDe(mdText, nombreArchivo = '') {
     const [mejor, v] = [...votos].sort((a, b) => b[1].n - a[1].n || (a[0] < b[0] ? 1 : -1))[0] || [];
     if (mejor) { res.cierre = mejor; res.cierreDe = 'encabezados de tablas (escalón 1)'; res.evidencia = res.evidencia || { pagina: v.pagina, texto: v.texto }; res.confianza = 'media'; }
   }
+  // ESCALÓN "PAR DE ENCABEZADO" (to-do 237 a + ac). En un anual por descarte, el cierre salía de la fecha MÁS CITADA en los títulos, y la más
+  // citada puede ser otra cosa: la fecha de firma (Alverca 2022-23: "Alverca, 29 de Setembro de 2023" dos veces, cuando el documento dice
+  // "Período findo em 30 de Junho de 2023" y sus columnas "30/06/2023 | 30/06/2022") o el fin de mandato de los órganos sociales (Benfica
+  // 2013-14: "30/06/2016" en la tabla de mandatos; quedó con cierre 2017-06-30). Las dos se arreglaron con ajustes `cierre`. Escalón, UNA
+  // compuerta: una fila de tabla que es SOLO encabezado (ninguna celda con dígitos salvo las fechas) con dos fechas, f y f un año antes (el
+  // par ejercicio + comparativo); las fechas con año de 2 dígitos ("30/06/23") valen solo ahí. Si la fecha del par más repetida no es la más
+  // citada, manda el par. No se aplica cuando el cierre de títulos sale de una frase de período ("findo em", "ended", "do 1.1. a 30.6"): esa
+  // fecha la dijo el documento, no se contó.
+  if (res.tipo === 'anual' && !res.evidencia && res.cierre && res.cierre === masCitado && !res.cierreDe) {
+    const FRASE_PERIODO_RE = /findo|ended|year end|terminad|finalizad|encerrad|cerrad|clos|chius|beendet|afgesloten|sona eren|exercicio de|ejercicio (economico )?(de|del)|periodo (de|del|do)|\bdo \d|\bal \d|\bdal \d|\bvom \d/;
+    const dichaEnFrase = lineas.some((l) => FRASE_PERIODO_RE.test(l.t) && fechasDe(l.texto).some((f) => iso(f) === res.cierre));
+    const fechaCelda = (c) => { const t = c.trim(); const m2 = t.match(/^(\d{1,2})[./-](\d{1,2})[./-](\d{2})$/); if (m2) { const yy = +m2[3]; return { a: yy > 50 ? 1900 + yy : 2000 + yy, m: +m2[2], d: +m2[1] }; } const fs = fechasDe(t); return fs.length === 1 ? fs[0] : null; };
+    const votos = new Map();
+    if (!dichaEnFrase) for (const p of paginasDe(mdText)) for (const l of p.body.split('\n')) {
+      if (!l.trim().startsWith('|')) continue;
+      const celdas = l.split('|').slice(1, -1); const fs = []; let soloEncabezado = true;
+      for (const c of celdas) { const f = fechaCelda(c); if (f) fs.push(f); else if (/\d/.test(c.replace(/\b(?:19|20)\d{2}\b/g, ''))) { soloEncabezado = false; break; } }
+      if (!soloEncabezado || fs.length < 2) continue;
+      const [f1, f2] = fs;
+      if (finDeMes(f1) && f2.a === f1.a - 1 && f2.m === f1.m && f2.d === f1.d && iso(f1) <= TOPE) { const v = votos.get(iso(f1)) || { n: 0, pagina: p.n, texto: l.trim().slice(0, 200) }; v.n++; votos.set(iso(f1), v); }
+    }
+    const [mejor, v] = [...votos].sort((a, b) => b[1].n - a[1].n || (a[0] < b[0] ? 1 : -1))[0] || [];
+    if (mejor && mejor !== res.cierre && v.n >= Number(process.env.PERIODO_PAR_MIN || 1)) { res.cierreTitulos = res.cierre; res.cierre = mejor; res.cierreDe = 'par de encabezado (to-do 237 a + ac)'; res.evidencia = { pagina: v.pagina, texto: v.texto }; }
+  }
   if (res.tipo === 'anual' && res.cierre) res.anual = res.cierre.slice(5, 7) === '12' ? 'calendario' : 'temporada';
   // ¿El nombre del archivo dice otra cosa? (fecha AAAA-MM-DD / DD-MM-AAAA o el año de cierre)
   const nom = basename(nombreArchivo);
