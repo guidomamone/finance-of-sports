@@ -75,6 +75,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 2 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 5
+```
+
 ### Liga
 
 ```text
@@ -124,6 +128,10 @@ Generados/Portugal/Felgueiras/Fecho-contas-2022-2023.categorias.json (escalón d
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fx = 0.9203. Claude 2026-10-16 (lote 82): las cotizaciones EUR/USD de L325 son de un párrafo sobre 2015 copiado en el informe, no del cierre. Cierre 30/06/2023: 1 EUR = 1,0866 USD (BCE), EUR por 1 USD = 0,9203, igual que Benfica 2022-23 y AC Milan 2022-23
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 18
 ```
 
 ### Liga
@@ -177,6 +185,10 @@ Generados/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.categorias.json (esc
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2022-06-30. periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 7
 ```
 
 ### Liga
