@@ -1122,7 +1122,7 @@ O detalhe das “Vendas e serviços prestados” relativos aos exercícios findo
 |  Prestações de serviços: |  |   |
 |  Bilheteira | 262 439 | 264 377  |
 |  Patrocínios, publicidade e corporate | 557 069 | 536 055  |
-|  Receitas IV, Premios de participação Competições | 3 629 792 | 3 724 854  |
+|  Receitas TV, Premios de participação Competições | 3 629 792 | 3 724 854  |
 |  Lucros jogos Online e Placard | 348 881 | 315 134  |
 |  Serviços Scouting | 10 500 | 23 836  |
 |  Cedência direitos desportivos | 2 618 628 | 3 854 888  |

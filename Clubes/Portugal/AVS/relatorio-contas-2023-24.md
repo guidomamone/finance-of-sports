@@ -531,7 +531,7 @@ Rua Luis Gonzaga Mendes Carvalho 265, 4795-080 Vila das Aves
 | Receitas de televisão | 450 000,00 € | 450 000,00 € |
 | Merchandising | 12 142,13 € | - € |
 | Competições da UEFA e nacionais | 122 228,07 € | - € |
-| Subsídios e donativos de Associações/Federações/Liga | 227 073,33 € | 201 400,00 € |
+| Subsídios e donativos de Associações/Federações/Liga | 227 073,33 € | 207 400,00 € |
 | Subsídios do Estado e outros entes públicos | 21 037,50 € | - € |
 | Donativos de partes não relacionadas | 3 773,47 € | - € |
 | Contribuições/Donativos de partes relacionadas | - € | 41 900,00 € |
