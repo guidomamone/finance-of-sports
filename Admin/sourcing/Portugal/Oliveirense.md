@@ -17,3 +17,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf` (sourceId `oliveirense-pt-relatorio-e-contas-202425`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202223.pdf` (sourceId `oliveirense-pt-relatorio-e-contas-202223`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.pdf` (sourceId `oliveirense-pt-relatorio-e-contas-202324`).

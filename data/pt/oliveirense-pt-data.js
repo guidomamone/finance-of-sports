@@ -23,6 +23,20 @@ const oliveirenseptRevenueLinesByYear = {
     { rawLabel:'Rendimentos em investimentos não financeiros', normalizedCategory:'player_sales', amountNative:0.184, disclosureLevel:'aggregated' },
     { rawLabel:'Outras', normalizedCategory:'other_income', amountNative:0.002909, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Venda de mercadorias', normalizedCategory:'sponsorship_commercial', amountNative:0.031094, disclosureLevel:'aggregated' },
+    { rawLabel:'Prestação de serviços', normalizedCategory:'lump_football_operations', amountNative:1.325492, disclosureLevel:'aggregated' },
+    { rawLabel:'Não reembolsáveis: Subsídios relacionados com resultados - IEFP', normalizedCategory:'other_income', amountNative:0.005388, disclosureLevel:'aggregated' },
+    { rawLabel:'Não reembolsáveis: Subsídios relacionados com resultados - Federação Portuguesa de Futebol', normalizedCategory:'other_income', amountNative:0.007317, disclosureLevel:'aggregated' },
+    { rawLabel:'Não reembolsáveis: Subsídios relacionados com resultados - Liga Portuguesa de Futebol Profissional', normalizedCategory:'other_income', amountNative:0.00625, disclosureLevel:'aggregated' },
+    { rawLabel:'Não reembolsáveis: Subsídios relacionados com resultados - Fundo Infraestruturas - LPF', normalizedCategory:'other_income', amountNative:0.030654, disclosureLevel:'aggregated' },
+    { rawLabel:'Não reembolsáveis: Subsídios relacionados com resultados - Prémio Allianz Cup - LPF', normalizedCategory:'competition_bonus', amountNative:0.030536, disclosureLevel:'aggregated' },
+    { rawLabel:'Não reembolsáveis: Subsídios relacionados com resultados - Sub. Deslocação - FPF', normalizedCategory:'other_income', amountNative:0.008381, disclosureLevel:'aggregated' },
+    { rawLabel:'Não reembolsáveis: Subsídios relacionados com resultados - UD Oliveirense - fundos formação FIFA', normalizedCategory:'youth_football', amountNative:0.021903, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendimentos suplementares', normalizedCategory:'other_income', amountNative:0.354967, disclosureLevel:'aggregated' },
+    { rawLabel:'Descontos de pronto pagamento obtidos', normalizedCategory:'other_income', amountNative:0.000012, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras', normalizedCategory:'other_income', amountNative:0.01156, disclosureLevel:'aggregated' },
+  ],
 };
 const oliveirenseptExpenseLinesByYear = {
   2025: [
@@ -60,6 +74,21 @@ const oliveirenseptExpenseLinesByYear = {
     { rawLabel:'Descontos de pronto pagamento concedidos', normalizedCategory:'other_expenses', amountNative:-0.000005, disclosureLevel:'aggregated' },
     { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.079586, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.009282, disclosureLevel:'aggregated' },
+  ],
+  2024: [
+    { rawLabel:'Custo das mercadorias vendidas e das matérias consumidas', normalizedCategory:'other_expenses', amountNative:-0.004185, disclosureLevel:'aggregated' },
+    { rawLabel:'Subcontratos', normalizedCategory:'admin_general_expense', amountNative:-0.0353, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços especializados', normalizedCategory:'admin_general_expense', amountNative:-0.442202, disclosureLevel:'aggregated' },
+    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.040489, disclosureLevel:'aggregated' },
+    { rawLabel:'Energia e fluidos', normalizedCategory:'admin_general_expense', amountNative:-0.062784, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações, estadas e transportes', normalizedCategory:'match_organisation_expense', amountNative:-0.186789, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços diversos', normalizedCategory:'other_expenses', amountNative:-0.295107, disclosureLevel:'aggregated' },
+    { rawLabel:'Salários e ordenados', normalizedCategory:'wages_squad', amountNative:-1.338885, disclosureLevel:'aggregated' },
+    { rawLabel:'Contribuições para a segurança social', normalizedCategory:'wages_squad', amountNative:-0.139226, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos com o pessoal', normalizedCategory:'wages_squad', amountNative:-0.172513, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de dívidas a receber (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos', normalizedCategory:'other_expenses', amountNative:-0.37047, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.012037, disclosureLevel:'aggregated' },
   ],
 };
 const oliveirenseptFiscalYearMeta = {
@@ -100,6 +129,24 @@ const oliveirenseptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:1.145694, officialTotalExpenses:2.123294, officialPAT:-0.931672,
   },
+  2024: {
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'oliveirense-pt-relatorio-e-contas-202324',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.15916, tax:-0.05477,
+    extraRows: [
+      {label:'Juros e rendimentos similares obtidos', value:0.159268},
+      {label:'Juros e gastos similares suportados', value:-0.000108},
+      {label:'Imposto sobre o rendimento do período', value:-0.05477},
+    ],
+    sinDesglose: [
+      {renglon:'Prestação de serviços', lado:'revenue', importe:1.325492, motivo:'Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): \'Prestação de serviços\' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:1.833554, officialTotalExpenses:3.099986, officialPAT:-1.162041,
+  },
 };
 const oliveirenseptPresupuestoOverlayByYear = {};
 
@@ -124,6 +171,11 @@ Object.assign(sources, {
   'oliveirense-pt-relatorio-e-contas-202223': {
     id:'oliveirense-pt-relatorio-e-contas-202223', clubId:'oliveirense-pt',
     title:'União Desportiva Oliveirense - Futebol, SAD — Relatorio-e-Contas-202223 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'oliveirense-pt-relatorio-e-contas-202324': {
+    id:'oliveirense-pt-relatorio-e-contas-202324', clubId:'oliveirense-pt',
+    title:'União Desportiva Oliveirense - Futebol, SAD — Relatorio-e-Contas-202324 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
