@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2007-08.pdf",
   "club": "benfica-pt",
   "year": 2008,
-  "generatedAt": "2026-10-16T01:14:49.000Z",
+  "generatedAt": "2026-10-16T01:34:17.153Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         8.408547
       ],
-      "glosa": "Retransmisiones televisivas"
+      "glosa": "Derechos de retransmisión televisiva"
     },
     {
       "label": "Quotizações",
@@ -44,7 +44,7 @@
       "values": [
         7.685986
       ],
-      "glosa": "Ingresos por taquilla"
+      "glosa": "Ingresos de taquilla"
     },
     {
       "label": "Cativos",
@@ -54,7 +54,7 @@
       "values": [
         2.868367
       ],
-      "glosa": "Abonos y asientos reservados"
+      "glosa": "Abonos de temporada"
     },
     {
       "label": "Cachets",
@@ -94,7 +94,7 @@
       "values": [
         0.4125
       ],
-      "glosa": "Regalías (royalties)"
+      "glosa": "Royalties"
     },
     {
       "label": "Comissões",
@@ -114,7 +114,7 @@
       "values": [
         7.88267
       ],
-      "glosa": "Premios de la Liga de Campeones"
+      "glosa": "Premios Liga de Campeones"
     },
     {
       "label": "Prémios Carlsberg cup",
@@ -124,7 +124,7 @@
       "values": [
         0.203794
       ],
-      "glosa": "Premios de la Copa Carlsberg"
+      "glosa": "Premios Copa Carlsberg"
     },
     {
       "label": "Redução de imparidade de créditos",
@@ -184,7 +184,7 @@
       "values": [
         0.015
       ],
-      "glosa": "Ingresos por mecanismo de solidaridad"
+      "glosa": "Ingresos por fondo de solidaridad"
     },
     {
       "label": "Venda de direitos",
@@ -204,7 +204,7 @@
       "values": [
         -0.37175
       ],
-      "glosa": "Gastos por transferencia de jugadores"
+      "glosa": "Gastos por traspaso de jugadores"
     },
     {
       "label": "Despesas com fundo de solidariedade",
@@ -214,7 +214,7 @@
       "values": [
         -0.180934
       ],
-      "glosa": "Gastos por mecanismo de solidaridad"
+      "glosa": "Gastos por fondo de solidaridad"
     },
     {
       "label": "Comissões",
@@ -234,7 +234,7 @@
       "values": [
         2.167103
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Trabalhos especializados",
@@ -294,7 +294,7 @@
       "values": [
         0.523687
       ],
-      "glosa": "Material y equipamiento deportivo"
+      "glosa": "Material deportivo"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -344,7 +344,7 @@
       "values": [
         0.413532
       ],
-      "glosa": "Medicamentos y material sanitario"
+      "glosa": "Medicamentos"
     },
     {
       "label": "Despesas de representação",
@@ -384,7 +384,7 @@
       "values": [
         0.159913
       ],
-      "glosa": "Artículos de regalo y promoción"
+      "glosa": "Artículos para obsequio"
     },
     {
       "label": "Associações, Federações e Liga",
@@ -394,7 +394,7 @@
       "values": [
         0.13852
       ],
-      "glosa": "Asociaciones, Federaciones y Liga"
+      "glosa": "Asociaciones, federaciones y liga"
     },
     {
       "label": "Subsídios futebol formação",
@@ -404,7 +404,7 @@
       "values": [
         0.100906
       ],
-      "glosa": "Subvenciones al fútbol base"
+      "glosa": "Subvenciones de fútbol base"
     },
     {
       "label": "Conservação e reparação",
@@ -414,7 +414,7 @@
       "values": [
         0.048488
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Reparación y conservación"
     },
     {
       "label": "Cedência de jogadores",
@@ -434,7 +434,7 @@
       "values": [
         0.033317
       ],
-      "glosa": "Acuerdos y convenios"
+      "glosa": "Acuerdos y protocolos"
     },
     {
       "label": "Outros fornecimentos e serviços",
@@ -444,7 +444,7 @@
       "values": [
         0.119925
       ],
-      "glosa": "Otros aprovisionamientos y servicios"
+      "glosa": "Otros servicios exteriores"
     },
     {
       "label": "- Remunerações fixas",
@@ -454,7 +454,7 @@
       "values": [
         0.113847
       ],
-      "glosa": "- Remuneraciones fijas"
+      "glosa": "- Retribuciones fijas"
     },
     {
       "label": "- Remunerações fixas",
@@ -464,7 +464,7 @@
       "values": [
         21.45074
       ],
-      "glosa": "- Remuneraciones fijas"
+      "glosa": "- Retribuciones fijas"
     },
     {
       "label": "- Remunerações variáveis / prémios",
@@ -474,7 +474,7 @@
       "values": [
         0.642617
       ],
-      "glosa": "- Remuneraciones variables / primas"
+      "glosa": "- Retribuciones variables / primas"
     },
     {
       "label": "- Indeminizações",
@@ -494,7 +494,7 @@
       "values": [
         0.986574
       ],
-      "glosa": "Complementos de jubilación"
+      "glosa": "- Complementos de jubilación"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -504,7 +504,7 @@
       "values": [
         1.451549
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales sobre retribuciones"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -524,7 +524,7 @@
       "values": [
         0.315282
       ],
-      "glosa": "Otros costes"
+      "glosa": "Otros costes de personal"
     },
     {
       "label": "Edifícios e outras construções",
@@ -544,7 +544,7 @@
       "values": [
         0.148621
       ],
-      "glosa": "Instalaciones técnicas y maquinaria"
+      "glosa": "Instalaciones técnicas"
     },
     {
       "label": "Equipamento de transporte",
@@ -584,7 +584,7 @@
       "values": [
         0.365431
       ],
-      "glosa": "Derecho de uso de marca"
+      "glosa": "Derechos de uso de marca"
     },
     {
       "label": "Provisões",
@@ -624,7 +624,7 @@
       "values": [
         0.128263
       ],
-      "glosa": "Pérdidas por deterioro de créditos de dudoso cobro"
+      "glosa": "Deterioro de créditos comerciales de dudoso cobro"
     },
     {
       "label": "Outros custos e perdas operacionais",
@@ -664,7 +664,7 @@
       "values": [
         1.024179
       ],
-      "glosa": "Pérdidas por deterioro"
+      "glosa": "Pérdidas por deterioro de valor"
     }
   ]
 }

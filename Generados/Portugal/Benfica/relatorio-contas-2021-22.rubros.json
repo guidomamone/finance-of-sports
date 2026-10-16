@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.pdf",
   "club": "benfica-pt",
   "year": 2022,
-  "generatedAt": "2026-10-16T01:14:49.173Z",
+  "generatedAt": "2026-10-16T01:34:17.330Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         47.267
       ],
-      "glosa": "Ingresos por televisión"
+      "glosa": "Ingresos de televisión"
     },
     {
       "label": "Outras receitas",
@@ -54,7 +54,7 @@
       "values": [
         2.474
       ],
-      "glosa": "Alquileres de espacios"
+      "glosa": "Arrendamiento de espacios"
     },
     {
       "label": "*Royalties*",
@@ -134,7 +134,7 @@
       "values": [
         62.095
       ],
-      "glosa": "Beneficios por enajenación de derechos de jugadores (plusvalías)"
+      "glosa": "Beneficios por enajenaciones de derechos de deportistas (plusvalías)"
     },
     {
       "label": "Outros rendimentos",
@@ -144,7 +144,7 @@
       "values": [
         2.116
       ],
-      "glosa": "Otros rendimientos"
+      "glosa": "Otros ingresos"
     },
     {
       "label": "Gestão operacional do estádio",
@@ -324,7 +324,7 @@
       "values": [
         -1.561
       ],
-      "glosa": "Beneficios post-empleo"
+      "glosa": "Retribuciones post-empleo"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -374,7 +374,7 @@
       "values": [
         0.487
       ],
-      "glosa": "Equipamiento básico"
+      "glosa": "Instalaciones técnicas y maquinaria"
     },
     {
       "label": "Equipamento de transporte",
@@ -394,7 +394,7 @@
       "values": [
         0.391
       ],
-      "glosa": "Equipamiento administrativo"
+      "glosa": "Equipos de oficina"
     },
     {
       "label": "Direitos de uso",
@@ -454,7 +454,7 @@
       "values": [
         4.379
       ],
-      "glosa": "Pérdidas por enajenación de derechos de jugadores (minusvalías)"
+      "glosa": "Pérdidas por enajenaciones de derechos de deportistas (minusvalías)"
     },
     {
       "label": "Gastos associados a alienações de direitos de atletas (comissões)",
@@ -464,7 +464,7 @@
       "values": [
         9.998
       ],
-      "glosa": "Gastos asociados a enajenaciones de derechos de jugadores (comisiones)"
+      "glosa": "Gastos asociados a enajenaciones de derechos de deportistas (comisiones)"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -474,7 +474,7 @@
       "values": [
         0.059
       ],
-      "glosa": "Bajas de derechos de jugadores"
+      "glosa": "Bajas de derechos de deportistas"
     },
     {
       "label": "Outros gastos",
@@ -494,7 +494,7 @@
       "values": [
         43.326
       ],
-      "glosa": "Amortizaciones de derechos de jugadores"
+      "glosa": "Amortizaciones de derechos de deportistas"
     },
     {
       "label": "Reforços de imparidade",

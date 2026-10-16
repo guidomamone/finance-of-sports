@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.pdf",
   "club": "benfica-pt",
   "year": 2010,
-  "generatedAt": "2026-10-16T01:14:48.994Z",
+  "generatedAt": "2026-10-16T01:34:17.147Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         12.370246
       ],
-      "glosa": "Ingresos de taquilla"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "QUOTIZAÇÕES",
@@ -54,7 +54,7 @@
       "values": [
         2.823209
       ],
-      "glosa": "Abonos"
+      "glosa": "Abonos y asientos reservados"
     },
     {
       "label": "CACHETS",
@@ -144,7 +144,7 @@
       "values": [
         0.5
       ],
-      "glosa": "Cánones y royalties"
+      "glosa": "Regalías y cánones"
     },
     {
       "label": "ASSISTÊNCIA TÉCNICA",
@@ -204,7 +204,7 @@
       "values": [
         0.005077
       ],
-      "glosa": "Reversión del deterioro de créditos"
+      "glosa": "Reversión de deterioro de créditos"
     },
     {
       "label": "OUTROS PROVEITOS OPERACIONAIS",
@@ -264,7 +264,7 @@
       "values": [
         -1.44525
       ],
-      "glosa": "Gastos por traspaso de deportistas"
+      "glosa": "Costes por transferencia de deportistas"
     },
     {
       "label": "VENDA DE DIREITOS",
@@ -284,7 +284,7 @@
       "values": [
         -0.245324
       ],
-      "glosa": "Gastos por mecanismo de solidaridad"
+      "glosa": "Costes por mecanismo de solidaridad"
     },
     {
       "label": "TRABALHOS ESPECIALIZADOS",
@@ -314,7 +314,7 @@
       "values": [
         1.750229
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "CEDÊNCIA DIREITOS DE IMAGEM",
@@ -354,7 +354,7 @@
       "values": [
         1.095508
       ],
-      "glosa": "Préstamos de jugadores"
+      "glosa": "Cesiones de jugadores"
     },
     {
       "label": "SUBCONTRATOS",
@@ -424,7 +424,7 @@
       "values": [
         0.471765
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "DESPESAS MÉDICAS",
@@ -494,7 +494,7 @@
       "values": [
         0.23981
       ],
-      "glosa": "Agua y otros fluidos"
+      "glosa": "Agua y otros suministros"
     },
     {
       "label": "ARTIGOS PARA OFERTA",
@@ -504,7 +504,7 @@
       "values": [
         0.224662
       ],
-      "glosa": "Artículos promocionales y obsequios"
+      "glosa": "Artículos de regalo y promocionales"
     },
     {
       "label": "ASSOCIAÇÕES, FEDERAÇÕES E LIGA",
@@ -524,7 +524,7 @@
       "values": [
         0.111903
       ],
-      "glosa": "Subvenciones fútbol base"
+      "glosa": "Subvenciones al fútbol base"
     },
     {
       "label": "CONTENCIOSO E NOTARIADO",
@@ -544,7 +544,7 @@
       "values": [
         0.0136
       ],
-      "glosa": "Acuerdos y protocolos"
+      "glosa": "Acuerdos y convenios"
     },
     {
       "label": "OUTROS FORNECIMENTOS E SERVIÇOS",
@@ -624,7 +624,7 @@
       "values": [
         2.113015
       ],
-      "glosa": "Cargas sociales"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "SEGUROS DE ACIDENTES DE TRABALHO",
@@ -694,7 +694,7 @@
       "values": [
         0.590237
       ],
-      "glosa": "Mobiliario y equipos administrativos"
+      "glosa": "Equipos administrativos y mobiliario"
     },
     {
       "label": "OUTRAS IMOBILIZAÇÕES CORPÓREAS",
@@ -784,7 +784,7 @@
       "values": [
         0.024182
       ],
-      "glosa": "Ajustes de ejercicios anteriores"
+      "glosa": "Ajustes correspondientes a ejercicios anteriores"
     },
     {
       "label": "QUOTIZAÇÕES",
@@ -824,7 +824,7 @@
       "values": [
         1.250826
       ],
-      "glosa": "Pérdidas por deterioro"
+      "glosa": "Pérdidas por deterioro de valor"
     },
     {
       "label": "ABATES DE ATLETAS - REVOGAÇÕES",
@@ -844,7 +844,7 @@
       "values": [
         -0.006066
       ],
-      "glosa": "Beneficios en empresas asociadas"
+      "glosa": "Participación en beneficios de asociadas"
     },
     {
       "label": "PERDAS EM EMPRESAS ASSOCIADAS",
@@ -854,7 +854,7 @@
       "values": [
         0.009205
       ],
-      "glosa": "Pérdidas en empresas asociadas"
+      "glosa": "Participación en pérdidas de asociadas"
     }
   ]
 }

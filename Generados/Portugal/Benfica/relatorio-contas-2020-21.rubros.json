@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2020-21.pdf",
   "club": "benfica-pt",
   "year": 2021,
-  "generatedAt": "2026-10-16T01:14:49.167Z",
+  "generatedAt": "2026-10-16T01:34:17.324Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         55.015
       ],
-      "glosa": "Ingresos por televisión"
+      "glosa": "Ingresos de televisión"
     },
     {
       "label": "Prémios da UEFA",
@@ -124,7 +124,7 @@
       "values": [
         88.085
       ],
-      "glosa": "Ganancias por enajenación de derechos de deportistas (plusvalías)"
+      "glosa": "Beneficios por enajenación de derechos de futbolistas (plusvalías)"
     },
     {
       "label": "Outros rendimentos",
@@ -134,7 +134,7 @@
       "values": [
         11.931
       ],
-      "glosa": "Otros ingresos"
+      "glosa": "Otros ingresos de explotación"
     },
     {
       "label": "Gestão operacional do estádio",
@@ -164,7 +164,7 @@
       "values": [
         4.277
       ],
-      "glosa": "Licencia marca Benfica"
+      "glosa": "Licencia de marca Benfica"
     },
     {
       "label": "Gestão operacional do canal BTV",
@@ -194,7 +194,7 @@
       "values": [
         1.733
       ],
-      "glosa": "Equipamiento deportivo"
+      "glosa": "Material deportivo"
     },
     {
       "label": "Honorários",
@@ -224,7 +224,7 @@
       "values": [
         8.16
       ],
-      "glosa": "Otros suministros y servicios"
+      "glosa": "Otros aprovisionamientos y servicios"
     },
     {
       "label": "Remunerações fixas",
@@ -284,7 +284,7 @@
       "values": [
         0.025
       ],
-      "glosa": "Beneficios post-empleo"
+      "glosa": "Retribuciones post-empleo"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -294,7 +294,7 @@
       "values": [
         6.326
       ],
-      "glosa": "Cargas sobre remuneraciones"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -334,7 +334,7 @@
       "values": [
         0.427
       ],
-      "glosa": "Equipamiento básico"
+      "glosa": "Instalaciones técnicas y maquinaria"
     },
     {
       "label": "Equipamento de transporte",
@@ -354,7 +354,7 @@
       "values": [
         0.498
       ],
-      "glosa": "Equipamiento administrativo"
+      "glosa": "Equipos de oficina y administrativos"
     },
     {
       "label": "Outros ativos tangíveis",
@@ -404,7 +404,7 @@
       "values": [
         1.42
       ],
-      "glosa": "Provisiones/Deterioros ^{(2)}"
+      "glosa": "Provisiones / Deterioros ^{(2)}"
     },
     {
       "label": "Outros gastos e perdas operacionais ^{(3)}",
@@ -424,7 +424,7 @@
       "values": [
         0.23
       ],
-      "glosa": "Pérdidas por enajenación de derechos de deportistas (minusvalías)"
+      "glosa": "Pérdidas por enajenación de derechos de futbolistas (minusvalías)"
     },
     {
       "label": "Gastos associados a alienações de direitos de atletas (comissões)",
@@ -434,7 +434,7 @@
       "values": [
         5.987
       ],
-      "glosa": "Gastos asociados a enajenaciones de derechos de deportistas (comisiones)"
+      "glosa": "Gastos asociados a la enajenación de derechos de futbolistas (comisiones)"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -444,7 +444,7 @@
       "values": [
         0.47
       ],
-      "glosa": "Bajas de derechos de deportistas"
+      "glosa": "Bajas de derechos de futbolistas"
     },
     {
       "label": "Outros gastos",
@@ -464,7 +464,7 @@
       "values": [
         47.104
       ],
-      "glosa": "Amortizaciones de derechos de deportistas"
+      "glosa": "Amortizaciones de derechos de futbolistas"
     },
     {
       "label": "Reforços de imparidade",

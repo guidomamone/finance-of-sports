@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2011-12.pdf",
- "generado": "2026-10-16T01:30:40.556Z",
- "frena": [],
+ "generado": "2026-10-16T01:51:05.301Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "benfica-pt ya tiene el ejercicio 2012 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['benfica-pt-relatorio-contas-2011-12'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 2: 2009-2019 traen consolidado e individual lado a lado y las controladas (Benfica Estádio, Benfica TV) hacen negocio del fútbol del club (estadio, canal))",
   "gestión: ningún presidente confirmado cubre 2012 (cierre 2012-06-30); pregunta en la cola (no frena)"
@@ -60,7 +73,7 @@
     "_pag": 96,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Calivos",
@@ -250,7 +263,7 @@
     "_pag": 104,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Fundo de solidariedade",
@@ -906,8 +919,9 @@
    "cat": "stadium_other",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "categorias.json",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-15: corporate = camarotes y executive seats, stadium_other como Benfica 2019 y 2010.",
    "destino": "revenue",
    "amountNative": 7.516088
   },
@@ -1197,10 +1211,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15: la fila está del lado equivocado; la muda un ajuste 'categoria' (gana sobre esta respuesta). [prestacao-contas-2010-11-11.md L7548-7550, L7629]",
    "destino": "revenue",
    "amountNative": -1.212276
   },
@@ -2073,8 +2085,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2011–12 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Benfica\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -2114,13 +2126,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2011–12 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Benfica\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 25,
   "lineasGasto": 51,
   "metaFilas": 3,

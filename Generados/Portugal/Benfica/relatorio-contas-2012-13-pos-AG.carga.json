@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2012-13-pos-AG.pdf",
- "generado": "2026-10-16T01:30:40.759Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"CORPORATE\" -> sponsorship_commercial 0.6"
-  }
- ],
+ "generado": "2026-10-16T01:51:05.510Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 2: 2009-2019 traen consolidado e individual lado a lado y las controladas (Benfica Estádio, Benfica TV) hacen negocio del fútbol del club (estadio, canal))",
   "gestión: ningún presidente confirmado cubre 2013 (cierre 2013-06-30); pregunta en la cola (no frena)"
@@ -49,13 +44,13 @@
    },
    {
     "rawLabel": "CORPORATE",
-    "normalizedCategory": "sponsorship_commercial",
+    "normalizedCategory": "stadium_other",
     "amountNative": 8.19676,
     "disclosureLevel": "aggregated",
     "_pag": 131,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "QUOTIZAÇÕES",
@@ -911,12 +906,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\")",
    "signoFijo": 8.19676,
-   "cat": "sponsorship_commercial",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "stadium_other",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15: corporate = camarotes y executive seats, stadium_other como Benfica 2019 y 2010.",
    "destino": "revenue",
    "amountNative": 8.19676
   },
@@ -2141,8 +2136,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 26,
   "lineasGasto": 50,
   "metaFilas": 3,

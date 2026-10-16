@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2017-18.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2017-18.md",
- "generado": "2026-10-16T01:14:49.146Z",
+ "generado": "2026-10-16T01:34:17.298Z",
  "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2018,
@@ -36,6 +36,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2017 de este documento suma ingresos 251.23; el sitio tiene 251.23"
+  },
+  {
    "nombre": "documento del año 2019",
    "ok": true,
    "detalle": "ingresos de 2018: 199.253 en este documento y 199.255 en relatorio-contas-2018-19.pdf (columna del año anterior)"
@@ -44,11 +49,6 @@
    "nombre": "documento del año 2017",
    "ok": true,
    "detalle": "ingresos de 2017: 251.23 en relatorio-contas-2016-17-pos-AG.pdf y 251.23 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
   }
  ],
  "notas": [

@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2015-16.pdf",
- "generado": "2026-10-16T01:30:41.378Z",
- "frena": [],
+ "generado": "2026-10-16T01:51:06.106Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "benfica-pt ya tiene el ejercicio 2016 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['benfica-pt-relatorio-contas-2015-16'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 2: 2009-2019 traen consolidado e individual lado a lado y las controladas (Benfica Estádio, Benfica TV) hacen negocio del fútbol del club (estadio, canal))",
   "gastos: ningún total impreso igual a la suma de las líneas (-168.564); queda la suma, verificada por el resultado del ejercicio",
@@ -42,7 +55,7 @@
     "_pag": 113,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "RECEITAS DE BILHETEIRA",
@@ -594,7 +607,7 @@
     "_pag": 120,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía player_sales)"
    },
    {
     "rawLabel": "Outros gastos e perdas",
@@ -705,8 +718,9 @@
    "cat": "stadium_other",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "categorias.json",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-15: corporate = camarotes y executive seats, stadium_other como Benfica 2019 y 2010.",
    "destino": "revenue",
    "amountNative": 8.929
   },
@@ -1538,10 +1552,8 @@
    "cat": "exceptional_items",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía player_sales)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15: 'Alienações de direitos de atletas' entre paréntesis dentro de Gastos com transações = pérdida por venta (menos-valia); exceptional_items como Benfica 2019 y las minusvalenze de Italia. [relatorio-contas-2015-16.md L3898]",
    "destino": "expense",
    "amountNative": -1.386
   },
@@ -1635,8 +1647,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2015–16 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Benfica\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1681,13 +1693,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2015–16 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Benfica\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 16,
   "lineasGasto": 43,
   "metaFilas": 3,

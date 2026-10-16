@@ -967,6 +967,113 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2013–14 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
 ```
 
+## 2013
+
+### Ingresos
+
+```text
+2013: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Benfica/relatorio-contas-2012-13-pos-AG.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Benfica/relatorio-contas-2012-13-pos-AG.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | PUBLICIDADE E PATROCÍNIOS | pág. 131, precedente |
+| 2 | RECEITAS DE BILHETEIRA | pág. 131, precedente |
+| 3 | TRANSMISSÕES TELEVISIVAS | pág. 131, precedente |
+| 4 | CORPORATE | pág. 131, precedente |
+| 5 | QUOTIZAÇÕES | pág. 131, precedente |
+| 6 | RENDAS DE ESPAÇO | pág. 131, precedente |
+| 7 | CEDÊNCIA DE ATLETAS | pág. 131, precedente |
+| 8 | CATIVOS | pág. 131, precedente |
+| 9 | BILHETES DE ÉPOCA | pág. 131, Jev 1 |
+| 10 | TÍTULOS FUNDADOR E CENTENARIUM | pág. 131, precedente |
+| 11 | RECEITAS OUTRAS COMPETIÇÕES | pág. 131, Jev 0.94 |
+| 12 | CACHETS | pág. 131, precedente |
+| 13 | OUTROS | pág. 131, precedente |
+| 14 | PRÉMIOS UEFA | pág. 133, Jev 1 |
+| 15 | COMISSÕES | pág. 133, Claude 0.8 |
+| 16 | ASSISTÊNCIA TÉCNICA | pág. 133, Jev 0.95 |
+| 17 | ROYALTIES | pág. 133, Jev 0.96 |
+| 18 | INDEMNIZAÇÕES DE SEGUROS | pág. 133, precedente |
+| 19 | OUTROS RENDIMENTOS OPERACIONAIS | pág. 133, Claude 0.8 |
+| 20 | GANHOS NA ALIENAÇÃO DE DIREITOS DE ATLETAS | pág. 139, Jev 1 |
+| 21 | CEDÊNCIA DE DIREITOS BENFICA STARS FUND | pág. 139, precedente |
+| 22 | FUNDO DE SOLIDARIEDADE | pág. 139, Jev 0.96 |
+| 23 | OUTROS RENDIMENTOS E GANHOS | pág. 139, precedente |
+| 24 | GASTOS COM TRANSFERÊNCIA DE ATLETAS | pág. 139, precedente |
+| 25 | PERDAS NA ALIENAÇÃO DE DIREITOS DE ATLETAS | pág. 139, Jev 0.96 |
+| 26 | FUNDO DE SOLIDARIEDADE | pág. 139, Jev 0.96 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | TRABALHOS ESPECIALIZADOS | pág. 134, precedente |
+| 2 | DESLOCAÇÕES E ESTADAS | pág. 134, precedente |
+| 3 | HONORÁRIOS | pág. 134, precedente |
+| 4 | SERVIÇOS DE CATERING/SOFTDRINK | pág. 134, precedente |
+| 5 | CEDÊNCIA DIREITOS DE IMAGEM | pág. 134, precedente |
+| 6 | EQUIPAMENTO DESPORTIVO | pág. 134, precedente |
+| 7 | VIGILÂNCIA E SEGURANÇA | pág. 134, precedente |
+| 8 | CONSERVAÇÃO E REPARAÇÃO | pág. 134, precedente |
+| 9 | SUBCONTRATOS | pág. 134, precedente |
+| 10 | ELECTRICIDADE | pág. 134, precedente |
+| 11 | PUBLICIDADE E PROPAGANDA | pág. 134, precedente |
+| 12 | RENDAS E ALUGUERES | pág. 134, precedente |
+| 13 | LICENÇA MARCA BENFICA | pág. 134, precedente |
+| 14 | LIMPEZA, HIGIENE E COMPORTO | pág. 134, precedente |
+| 15 | COMISSÕES | pág. 134, precedente |
+| 16 | DESPESAS MÉDICAS | pág. 134, precedente |
+| 17 | ÁGUA E OUTROS FLUÍDOS | pág. 134, precedente |
+| 18 | DESPESAS DE REPRESENTAÇÃO | pág. 134, precedente |
+| 19 | SEGUROS | pág. 134, precedente |
+| 20 | COMUNICAÇÃO | pág. 134, precedente |
+| 21 | CACHETS | pág. 134, precedente |
+| 22 | OUTROS FORNECIMENTOS E SERVIÇOS | pág. 134, precedente |
+| 23 | REMUNERAÇÕES FIXAS | pág. 135, precedente |
+| 24 | REMUNERAÇÕES VARIÁVEIS/PRÊMIOS | pág. 135, precedente |
+| 25 | REMUNERAÇÕES FIXAS | pág. 135, precedente |
+| 26 | REMUNERAÇÕES VARIÁVEIS/PRÊMIOS | pág. 135, precedente |
+| 27 | INDEMNIZAÇÕES | pág. 135, precedente |
+| 28 | BENEFÍCIOS PÓS-EMPREGO | pág. 135, precedente |
+| 29 | ENCARGOS SOBRE REMUNERAÇÕES | pág. 135, precedente |
+| 30 | SEGUROS DE ACIDENTES DE TRABALHO | pág. 135, precedente |
+| 31 | OUTROS GASTOS COM PESSOAL | pág. 135, precedente |
+| 32 | EDIFÍCIOS E OUTRAS CONSTRUÇÕES | pág. 137, precedente |
+| 33 | EQUIPAMENTO BÁSICO | pág. 137, precedente |
+| 34 | EQUIPAMENTO DE TRANSPORTE | pág. 137, precedente |
+| 35 | FERRAMENTAS E UTENSÍLIOS | pág. 137, precedente |
+| 36 | EQUIPAMENTO ADMINISTRATIVO | pág. 137, precedente |
+| 37 | OUTROS ACTIVOS TANGÍVEIS | pág. 137, precedente |
+| 38 | DIREITO UTILIZAÇÃO DA MARCA BENFICA | pág. 137, precedente |
+| 39 | GALERIA COMERCIAL | pág. 137, precedente |
+| 40 | REFORÇO DE PROVISÕES PARA OUTROS RISCOS | pág. 138, precedente |
+| 41 | REDUÇÃO DE PROVISÕES PARA OUTROS RISCOS | pág. 138, Claude 0.85 |
+| 42 | REFORÇO DE IMPARIDADES DE CLIENTES/DEVEDORES | pág. 138, Jev 0.92 |
+| 43 | REDUÇÃO DE IMPARIDADES DE CLIENTES/DEVEDORES | pág. 138, Claude 0.8 |
+| 44 | IMPOSTOS | pág. 138, Jev 0.96 |
+| 45 | OUTROS GASTOS E PERDAS OPERACIONAIS | pág. 138, Jev 1 |
+| 46 | AMORTIZAÇÕES DO EXERCÍCIO | pág. 139, precedente |
+| 47 | DIREITOS ECONÓMICOS DE ATLETAS | pág. 139, Jev 0.92 |
+| 48 | PERDAS DE IMPARIDADE | pág. 139, precedente |
+| 49 | ABATES DE ATLETAS - REVOGAÇÕES | pág. 139, precedente |
+| 50 | RESULTADOS RELATIVOS A INVESTIMENTOS EM ASSOCIADAS | pág. 100, Jev 0.99 |
+
+### Meta
+
+```text
+2013: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cierre = 2013-06-30. periodo.mjs tomó un cierre equivocado (localizar buscó el ejercicio 2019-06-30); el informe es del ejercicio 2012/13.
+2013: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): estado = b43. Demonstração consolidada e individual dos resultados al 30/06/2013 (se carga la columna consolidada, ajuste de perímetro del club).
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2012–13 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
+```
+
 ## 2012
 
 ### Ingresos
@@ -1403,4 +1510,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2025-26.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### benfica-pt-relatorio-contas-2012-13-pos-ag
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2012-13-pos-AG.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

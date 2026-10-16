@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2009-11-03.pdf",
- "generado": "2026-10-16T01:30:39.822Z",
- "frena": [],
+ "generado": "2026-10-16T01:51:04.539Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "benfica-pt ya tiene el ejercicio 2009 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['benfica-pt-prestacao-contas-2009-11-03'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 2: 2009-2019 traen consolidado e individual lado a lado y las controladas (Benfica Estádio, Benfica TV) hacen negocio del fútbol del club (estadio, canal))",
   "gastos: ningún total impreso igual a la suma de las líneas (-82.22394); queda la suma, verificada por el resultado del ejercicio",
@@ -191,7 +204,7 @@
     "_pag": 61,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Custos com fundo de solidariedade",
@@ -201,7 +214,7 @@
     "_pag": 61,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    }
   ],
   "expenseLines": [
@@ -1064,10 +1077,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15: la fila está del lado equivocado; la muda un ajuste 'categoria' (gana sobre esta respuesta). [prestacao-contas-2010-11-11.md L7548-7550, L7629]",
    "destino": "revenue",
    "amountNative": -1.036843
   },
@@ -1081,10 +1092,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15: la fila está del lado equivocado; la muda un ajuste 'categoria' (gana sobre esta respuesta). [prestacao-contas-2010-11-11.md L7548-7550, L7629]",
    "destino": "revenue",
    "amountNative": -0.697872
   },
@@ -1937,8 +1946,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2008–09 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Benfica\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1978,13 +1987,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2008–09 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Benfica\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 19,
   "lineasGasto": 51,
   "metaFilas": 3,

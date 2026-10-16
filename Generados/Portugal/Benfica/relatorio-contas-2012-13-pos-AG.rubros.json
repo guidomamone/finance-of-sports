@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2012-13-pos-AG.pdf",
   "club": "benfica-pt",
   "year": 2013,
-  "generatedAt": "2026-10-16T01:14:49.046Z",
+  "generatedAt": "2026-10-16T01:34:17.200Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,7 +44,7 @@
       "values": [
         8.19676
       ],
-      "glosa": "Corporativo"
+      "glosa": "Servicios corporativos y palcos VIP"
     },
     {
       "label": "QUOTIZAÇÕES",
@@ -64,7 +64,7 @@
       "values": [
         2.596244
       ],
-      "glosa": "Alquileres de espacios"
+      "glosa": "Alquiler de espacios"
     },
     {
       "label": "CEDÊNCIA DE ATLETAS",
@@ -74,7 +74,7 @@
       "values": [
         2.3647
       ],
-      "glosa": "Cesión de deportistas"
+      "glosa": "Cesión de jugadores"
     },
     {
       "label": "CATIVOS",
@@ -84,7 +84,7 @@
       "values": [
         2.315878
       ],
-      "glosa": "Abonos de asiento reservado"
+      "glosa": "Abonos de asientos reservados"
     },
     {
       "label": "BILHETES DE ÉPOCA",
@@ -104,7 +104,7 @@
       "values": [
         1.42064
       ],
-      "glosa": "Títulos de fundador y Centenarium"
+      "glosa": "Títulos Fundador y Centenarium"
     },
     {
       "label": "RECEITAS OUTRAS COMPETIÇÕES",
@@ -174,7 +174,7 @@
       "values": [
         0.595833
       ],
-      "glosa": "Royalties"
+      "glosa": "Cánones y royalties"
     },
     {
       "label": "INDEMNIZAÇÕES DE SEGUROS",
@@ -204,7 +204,7 @@
       "values": [
         42.482948
       ],
-      "glosa": "Beneficios por enajenación de derechos de deportistas"
+      "glosa": "Beneficios por enajenación de derechos de jugadores"
     },
     {
       "label": "CEDÊNCIA DE DIREITOS BENFICA STARS FUND",
@@ -224,7 +224,7 @@
       "values": [
         0.269365
       ],
-      "glosa": "Fondo de solidaridad"
+      "glosa": "Mecanismo de solidaridad"
     },
     {
       "label": "OUTROS RENDIMENTOS E GANHOS",
@@ -234,7 +234,7 @@
       "values": [
         0.003068
       ],
-      "glosa": "Otros ingresos y ganancias"
+      "glosa": "Otros ingresos y beneficios"
     },
     {
       "label": "GASTOS COM TRANSFERÊNCIA DE ATLETAS",
@@ -244,7 +244,7 @@
       "values": [
         -7.489029
       ],
-      "glosa": "Gastos por transferencias de deportistas"
+      "glosa": "Gastos por transferencias de jugadores"
     },
     {
       "label": "PERDAS NA ALIENAÇÃO DE DIREITOS DE ATLETAS",
@@ -254,7 +254,7 @@
       "values": [
         -2.212494
       ],
-      "glosa": "Pérdidas por enajenación de derechos de deportistas"
+      "glosa": "Pérdidas por enajenación de derechos de jugadores"
     },
     {
       "label": "FUNDO DE SOLIDARIEDADE",
@@ -264,7 +264,7 @@
       "values": [
         -0.377179
       ],
-      "glosa": "Fondo de solidaridad"
+      "glosa": "Mecanismo de solidaridad"
     },
     {
       "label": "TRABALHOS ESPECIALIZADOS",
@@ -304,7 +304,7 @@
       "values": [
         1.871149
       ],
-      "glosa": "Servicios de catering/refrescos"
+      "glosa": "Servicios de catering y refrescos"
     },
     {
       "label": "CEDÊNCIA DIREITOS DE IMAGEM",
@@ -344,7 +344,7 @@
       "values": [
         1.215553
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Reparación y conservación"
     },
     {
       "label": "SUBCONTRATOS",
@@ -384,7 +384,7 @@
       "values": [
         0.786194
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "LICENÇA MARCA BENFICA",
@@ -404,7 +404,7 @@
       "values": [
         0.579731
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "COMISSÕES",
@@ -434,7 +434,7 @@
       "values": [
         0.4255
       ],
-      "glosa": "Agua y otros fluidos"
+      "glosa": "Agua y otros suministros"
     },
     {
       "label": "DESPESAS DE REPRESENTAÇÃO",
@@ -484,7 +484,7 @@
       "values": [
         1.460744
       ],
-      "glosa": "Otros suministros y servicios exteriores"
+      "glosa": "Otros aprovisionamientos y servicios exteriores"
     },
     {
       "label": "REMUNERAÇÕES FIXAS",
@@ -504,7 +504,7 @@
       "values": [
         0.078
       ],
-      "glosa": "Remuneraciones variables/primas"
+      "glosa": "Remuneraciones variables y primas"
     },
     {
       "label": "REMUNERAÇÕES FIXAS",
@@ -524,7 +524,7 @@
       "values": [
         5.34835
       ],
-      "glosa": "Remuneraciones variables/primas"
+      "glosa": "Remuneraciones variables y primas"
     },
     {
       "label": "INDEMNIZAÇÕES",
@@ -554,7 +554,7 @@
       "values": [
         3.460666
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales sobre retribuciones"
     },
     {
       "label": "SEGUROS DE ACIDENTES DE TRABALHO",
@@ -594,7 +594,7 @@
       "values": [
         0.67878
       ],
-      "glosa": "Instalaciones técnicas"
+      "glosa": "Instalaciones técnicas y maquinaria"
     },
     {
       "label": "EQUIPAMENTO DE TRANSPORTE",
@@ -624,7 +624,7 @@
       "values": [
         0.968557
       ],
-      "glosa": "Equipos de oficina"
+      "glosa": "Equipos de oficina y mobiliario"
     },
     {
       "label": "OUTROS ACTIVOS TANGÍVEIS",
@@ -684,7 +684,7 @@
       "values": [
         3.38706
       ],
-      "glosa": "Dotación por deterioro de clientes/deudores"
+      "glosa": "Dotación por deterioro de clientes y deudores"
     },
     {
       "label": "REDUÇÃO DE IMPARIDADES DE CLIENTES/DEVEDORES",
@@ -694,7 +694,7 @@
       "values": [
         -1.216603
       ],
-      "glosa": "Reversión del deterioro de clientes/deudores"
+      "glosa": "Reversión del deterioro de clientes y deudores"
     },
     {
       "label": "IMPOSTOS",
@@ -734,7 +734,7 @@
       "values": [
         0.215765
       ],
-      "glosa": "Derechos económicos de deportistas"
+      "glosa": "Derechos económicos de jugadores"
     },
     {
       "label": "PERDAS DE IMPARIDADE",
@@ -754,7 +754,7 @@
       "values": [
         0.476042
       ],
-      "glosa": "Bajas de deportistas - rescisiones"
+      "glosa": "Bajas de jugadores - rescisiones contractuales"
     },
     {
       "label": "RESULTADOS RELATIVOS A INVESTIMENTOS EM ASSOCIADAS",
@@ -764,7 +764,7 @@
       "values": [
         0.368748
       ],
-      "glosa": "Resultados de inversiones en empresas asociadas"
+      "glosa": "Resultados procedentes de inversiones en asociadas"
     }
   ]
 }

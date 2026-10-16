@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2023-24.pdf",
   "club": "benfica-pt",
   "year": 2024,
-  "generatedAt": "2026-10-16T01:14:49.185Z",
+  "generatedAt": "2026-10-16T01:34:17.342Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         50.463
       ],
-      "glosa": "Ingresos por televisión"
+      "glosa": "Ingresos por retransmisión televisiva"
     },
     {
       "label": "Prémios da UEFA",
@@ -44,7 +44,7 @@
       "values": [
         22.457
       ],
-      "glosa": "Patrocinadores"
+      "glosa": "Patrocinios"
     },
     {
       "label": "Rendas de espaço",
@@ -84,7 +84,7 @@
       "values": [
         15.248
       ],
-      "glosa": "Corporate"
+      "glosa": "Hospitalidad corporativa"
     },
     {
       "label": "Bilhetes de época",
@@ -134,7 +134,7 @@
       "values": [
         76.339
       ],
-      "glosa": "Ganancias por enajenación de derechos de deportistas (plusvalías)"
+      "glosa": "Beneficios por enajenación de derechos de deportistas (plusvalías)"
     },
     {
       "label": "Outros rendimentos com transações de direitos de atletas",
@@ -224,7 +224,7 @@
       "values": [
         2.737
       ],
-      "glosa": "Equipamiento deportivo"
+      "glosa": "Material deportivo"
     },
     {
       "label": "Honorários",
@@ -244,7 +244,7 @@
       "values": [
         1.182
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Publicidade e propaganda",
@@ -274,7 +274,7 @@
       "values": [
         1.033
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Reparación y conservación"
     },
     {
       "label": "Associações, Federações e Liga",
@@ -294,7 +294,7 @@
       "values": [
         6.215
       ],
-      "glosa": "Otros suministros y servicios"
+      "glosa": "Otros servicios exteriores"
     },
     {
       "label": "Remunerações fixas",
@@ -364,7 +364,7 @@
       "values": [
         7.985
       ],
-      "glosa": "Cargas sobre remuneraciones"
+      "glosa": "Cargas sociales sobre salarios"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -404,7 +404,7 @@
       "values": [
         0.325
       ],
-      "glosa": "Equipamiento básico"
+      "glosa": "Maquinaria e instalaciones técnicas"
     },
     {
       "label": "Equipamento de transporte",
@@ -424,7 +424,7 @@
       "values": [
         0.377
       ],
-      "glosa": "Equipamiento administrativo"
+      "glosa": "Equipos de oficina y administrativos"
     },
     {
       "label": "Direitos de uso",
@@ -464,7 +464,7 @@
       "values": [
         1.163
       ],
-      "glosa": "Provisiones/Deterioros (2)"
+      "glosa": "Provisiones / Pérdidas por deterioro (2)"
     },
     {
       "label": "Outros gastos e perdas operacionais (3)",

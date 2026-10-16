@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.md",
- "generado": "2026-10-16T01:14:49.097Z",
+ "generado": "2026-10-16T01:34:17.244Z",
  "estado": "cola",
  "clubId": "benfica-pt",
  "year": 2015,
@@ -34,6 +34,11 @@
    "dif": null
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2014 de este documento suma ingresos 180.615; el sitio tiene 180.752"
+  },
+  {
    "nombre": "documento del año 2016",
    "ok": true,
    "detalle": "ingresos de 2015: 180.799 en este documento y 180.799 en relatorio-contas-2015-16.pdf (columna del año anterior)"
@@ -42,11 +47,6 @@
    "nombre": "documento del año 2014",
    "ok": true,
    "detalle": "ingresos de 2014: 180.752 en relatorio-contas-2013-14-pos-AG.pdf y 180.615 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2014: este chequeo no se puede hacer"
   }
  ],
  "notas": [

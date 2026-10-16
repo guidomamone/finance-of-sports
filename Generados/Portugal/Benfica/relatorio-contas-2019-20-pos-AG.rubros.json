@@ -1,469 +1,520 @@
 {
- "md": "Clubes/Portugal/Benfica/relatorio-contas-2019-20-pos-AG.md",
- "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2019-20-pos-AG.pdf",
- "club": "benfica-pt",
- "year": 2020,
- "generatedAt": "2026-10-16T01:33:17.492Z",
- "origen": "verificar.mjs (proceso nuevo, Versión 324)",
- "rubros": [
-  {
-   "label": "Prémios da UEFA",
-   "lado": "revenue",
-   "page": 130,
-   "section": "nota que desglosa \"Direitos de televisão\"",
-   "values": [
-    48.491
-   ]
-  },
-  {
-   "label": "Receitas de televisão",
-   "lado": "revenue",
-   "page": 130,
-   "section": "nota que desglosa \"Direitos de televisão\"",
-   "values": [
-    38.594
-   ]
-  },
-  {
-   "label": "Outras receitas",
-   "lado": "revenue",
-   "page": 130,
-   "section": "nota que desglosa \"Direitos de televisão\"",
-   "values": [
-    0.196
-   ]
-  },
-  {
-   "label": "Patrocinadores",
-   "lado": "revenue",
-   "page": 130,
-   "section": "nota que desglosa \"Atividades comerciais\"",
-   "values": [
-    19.258
-   ]
-  },
-  {
-   "label": "Rendas de espaço",
-   "lado": "revenue",
-   "page": 130,
-   "section": "nota que desglosa \"Atividades comerciais\"",
-   "values": [
-    2.351
-   ]
-  },
-  {
-   "label": "Royalties",
-   "lado": "revenue",
-   "page": 130,
-   "section": "nota que desglosa \"Atividades comerciais\"",
-   "values": [
-    1.539
-   ]
-  },
-  {
-   "label": "Outras receitas",
-   "lado": "revenue",
-   "page": 130,
-   "section": "nota que desglosa \"Atividades comerciais\"",
-   "values": [
-    7.37
-   ]
-  },
-  {
-   "label": "Corporate",
-   "lado": "revenue",
-   "page": 130,
-   "section": "nota que desglosa \"Receitas de jogos\"",
-   "values": [
-    9.914
-   ]
-  },
-  {
-   "label": "Bilhetes de época",
-   "lado": "revenue",
-   "page": 130,
-   "section": "nota que desglosa \"Receitas de jogos\"",
-   "values": [
-    7.316
-   ]
-  },
-  {
-   "label": "Competições nacionais",
-   "lado": "revenue",
-   "page": 130,
-   "section": "nota que desglosa \"Receitas de jogos\"",
-   "values": [
-    2.831
-   ]
-  },
-  {
-   "label": "Competições europeias",
-   "lado": "revenue",
-   "page": 130,
-   "section": "nota que desglosa \"Receitas de jogos\"",
-   "values": [
-    1.497
-   ]
-  },
-  {
-   "label": "Outras receitas",
-   "lado": "revenue",
-   "page": 130,
-   "section": "nota que desglosa \"Receitas de jogos\"",
-   "values": [
-    0.597
-   ]
-  },
-  {
-   "label": "Ganhos com alienações de direitos de atletas (mais-valias)",
-   "lado": "revenue",
-   "page": 134,
-   "section": "nota que desglosa \"Rendimentos com transações de direitos de atletas\"",
-   "values": [
-    135.488
-   ]
-  },
-  {
-   "label": "Outros rendimentos",
-   "lado": "revenue",
-   "page": 134,
-   "section": "nota que desglosa \"Rendimentos com transações de direitos de atletas\"",
-   "values": [
-    9.666
-   ]
-  },
-  {
-   "label": "Gestão operacional do estádio",
-   "lado": "expense",
-   "page": 131,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    25.724
-   ]
-  },
-  {
-   "label": "Trabalhos especializados",
-   "lado": "expense",
-   "page": 131,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    11.43
-   ]
-  },
-  {
-   "label": "Licença marca Benfica",
-   "lado": "expense",
-   "page": 131,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    7.501
-   ]
-  },
-  {
-   "label": "Gestão operacional do canal BTV",
-   "lado": "expense",
-   "page": 131,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    5.507
-   ]
-  },
-  {
-   "label": "Deslocações e estadas",
-   "lado": "expense",
-   "page": 131,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    4.912
-   ]
-  },
-  {
-   "label": "Equipamento desportivo",
-   "lado": "expense",
-   "page": 131,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    2.342
-   ]
-  },
-  {
-   "label": "Vigilância e segurança",
-   "lado": "expense",
-   "page": 131,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    2.187
-   ]
-  },
-  {
-   "label": "Honorários",
-   "lado": "expense",
-   "page": 131,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    1.638
-   ]
-  },
-  {
-   "label": "Publicidade e propaganda",
-   "lado": "expense",
-   "page": 131,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    1.262
-   ]
-  },
-  {
-   "label": "Rendas e alugueres",
-   "lado": "expense",
-   "page": 131,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    1.217
-   ]
-  },
-  {
-   "label": "Eletricidade",
-   "lado": "expense",
-   "page": 131,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    1.043
-   ]
-  },
-  {
-   "label": "Outros fornecimentos e serviços",
-   "lado": "expense",
-   "page": 131,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    7.9
-   ]
-  },
-  {
-   "label": "Remunerações fixas",
-   "lado": "expense",
-   "page": 132,
-   "section": "nota que desglosa \"Gastos com pessoal\"",
-   "values": [
-    0.596
-   ]
-  },
-  {
-   "label": "Remunerações variáveis",
-   "lado": "expense",
-   "page": 132,
-   "section": "nota que desglosa \"Gastos com pessoal\"",
-   "values": [
-    0.096
-   ]
-  },
-  {
-   "label": "Remunerações fixas",
-   "lado": "expense",
-   "page": 132,
-   "section": "nota que desglosa \"Gastos com pessoal\"",
-   "values": [
-    62.968
-   ]
-  },
-  {
-   "label": "Remunerações variáveis",
-   "lado": "expense",
-   "page": 132,
-   "section": "nota que desglosa \"Gastos com pessoal\"",
-   "values": [
-    7.272
-   ]
-  },
-  {
-   "label": "Indemnizações",
-   "lado": "expense",
-   "page": 132,
-   "section": "nota que desglosa \"Gastos com pessoal\"",
-   "values": [
-    3.957
-   ]
-  },
-  {
-   "label": "Benefícios pós-emprego",
-   "lado": "expense",
-   "page": 132,
-   "section": "nota que desglosa \"Gastos com pessoal\"",
-   "values": [
-    -0.104
-   ]
-  },
-  {
-   "label": "Encargos sobre remunerações",
-   "lado": "expense",
-   "page": 132,
-   "section": "nota que desglosa \"Gastos com pessoal\"",
-   "values": [
-    4.77
-   ]
-  },
-  {
-   "label": "Seguros de acidentes de trabalho",
-   "lado": "expense",
-   "page": 132,
-   "section": "nota que desglosa \"Gastos com pessoal\"",
-   "values": [
-    4.653
-   ]
-  },
-  {
-   "label": "Outros gastos com pessoal",
-   "lado": "expense",
-   "page": 132,
-   "section": "nota que desglosa \"Gastos com pessoal\"",
-   "values": [
-    1.452
-   ]
-  },
-  {
-   "label": "Edifícios e outras construções",
-   "lado": "expense",
-   "page": 133,
-   "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
-   "values": [
-    1.003
-   ]
-  },
-  {
-   "label": "Equipamento básico",
-   "lado": "expense",
-   "page": 133,
-   "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
-   "values": [
-    0.394
-   ]
-  },
-  {
-   "label": "Equipamento de transporte",
-   "lado": "expense",
-   "page": 133,
-   "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
-   "values": [
-    0.123
-   ]
-  },
-  {
-   "label": "Equipamento administrativo",
-   "lado": "expense",
-   "page": 133,
-   "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
-   "values": [
-    0.488
-   ]
-  },
-  {
-   "label": "Outros ativos tangíveis",
-   "lado": "expense",
-   "page": 133,
-   "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
-   "values": [
-    0.001
-   ]
-  },
-  {
-   "label": "Direitos de uso",
-   "lado": "expense",
-   "page": 133,
-   "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
-   "values": [
-    3.61
-   ]
-  },
-  {
-   "label": "Direito de utilização da marca",
-   "lado": "expense",
-   "page": 133,
-   "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
-   "values": [
-    1.52
-   ]
-  },
-  {
-   "label": "Programas de computador",
-   "lado": "expense",
-   "page": 133,
-   "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
-   "values": [
-    1.069
-   ]
-  },
-  {
-   "label": "Provisões/Imparidades^{15}",
-   "lado": "expense",
-   "page": 90,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    2.968
-   ]
-  },
-  {
-   "label": "Outros gastos e perdas operacionais^{16}",
-   "lado": "expense",
-   "page": 90,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    2.416
-   ]
-  },
-  {
-   "label": "Perdas com alienações de direitos de atletas (menos-valias)",
-   "lado": "expense",
-   "page": 134,
-   "section": "nota que desglosa \"Gastos com transações de direitos de atletas\"",
-   "values": [
-    0.452
-   ]
-  },
-  {
-   "label": "Gastos associados a alienações de direitos de atletas (comissões)",
-   "lado": "expense",
-   "page": 134,
-   "section": "nota que desglosa \"Gastos com transações de direitos de atletas\"",
-   "values": [
-    13.126
-   ]
-  },
-  {
-   "label": "Atletas de direitos de atletas",
-   "lado": "expense",
-   "page": 134,
-   "section": "nota que desglosa \"Gastos com transações de direitos de atletas\"",
-   "values": [
-    0.13
-   ]
-  },
-  {
-   "label": "Outros gastos",
-   "lado": "expense",
-   "page": 134,
-   "section": "nota que desglosa \"Gastos com transações de direitos de atletas\"",
-   "values": [
-    5.731
-   ]
-  },
-  {
-   "label": "Amortizações de direitos de atletas",
-   "lado": "expense",
-   "page": 137,
-   "section": "nota que desglosa \"Amortizações e perdas de imparidade de direitos de atletas\"",
-   "values": [
-    36.089
-   ]
-  },
-  {
-   "label": "Reforços de imparidade",
-   "lado": "expense",
-   "page": 137,
-   "section": "nota que desglosa \"Amortizações e perdas de imparidade de direitos de atletas\"",
-   "values": [
-    3.698
-   ]
-  }
- ]
+  "md": "Clubes/Portugal/Benfica/relatorio-contas-2019-20-pos-AG.md",
+  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2019-20-pos-AG.pdf",
+  "club": "benfica-pt",
+  "year": 2020,
+  "generatedAt": "2026-10-16T01:34:17.303Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Prémios da UEFA",
+      "lado": "revenue",
+      "page": 130,
+      "section": "nota que desglosa \"Direitos de televisão\"",
+      "values": [
+        48.491
+      ],
+      "glosa": "Premios de la UEFA"
+    },
+    {
+      "label": "Receitas de televisão",
+      "lado": "revenue",
+      "page": 130,
+      "section": "nota que desglosa \"Direitos de televisão\"",
+      "values": [
+        38.594
+      ],
+      "glosa": "Ingresos por retransmisión televisiva"
+    },
+    {
+      "label": "Outras receitas",
+      "lado": "revenue",
+      "page": 130,
+      "section": "nota que desglosa \"Direitos de televisão\"",
+      "values": [
+        0.196
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Patrocinadores",
+      "lado": "revenue",
+      "page": 130,
+      "section": "nota que desglosa \"Atividades comerciais\"",
+      "values": [
+        19.258
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Rendas de espaço",
+      "lado": "revenue",
+      "page": 130,
+      "section": "nota que desglosa \"Atividades comerciais\"",
+      "values": [
+        2.351
+      ],
+      "glosa": "Alquiler de espacios"
+    },
+    {
+      "label": "Royalties",
+      "lado": "revenue",
+      "page": 130,
+      "section": "nota que desglosa \"Atividades comerciais\"",
+      "values": [
+        1.539
+      ],
+      "glosa": "Regalías"
+    },
+    {
+      "label": "Outras receitas",
+      "lado": "revenue",
+      "page": 130,
+      "section": "nota que desglosa \"Atividades comerciais\"",
+      "values": [
+        7.37
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Corporate",
+      "lado": "revenue",
+      "page": 130,
+      "section": "nota que desglosa \"Receitas de jogos\"",
+      "values": [
+        9.914
+      ],
+      "glosa": "Servicios corporativos"
+    },
+    {
+      "label": "Bilhetes de época",
+      "lado": "revenue",
+      "page": 130,
+      "section": "nota que desglosa \"Receitas de jogos\"",
+      "values": [
+        7.316
+      ],
+      "glosa": "Abonos de temporada"
+    },
+    {
+      "label": "Competições nacionais",
+      "lado": "revenue",
+      "page": 130,
+      "section": "nota que desglosa \"Receitas de jogos\"",
+      "values": [
+        2.831
+      ],
+      "glosa": "Competiciones nacionales"
+    },
+    {
+      "label": "Competições europeias",
+      "lado": "revenue",
+      "page": 130,
+      "section": "nota que desglosa \"Receitas de jogos\"",
+      "values": [
+        1.497
+      ],
+      "glosa": "Competiciones europeas"
+    },
+    {
+      "label": "Outras receitas",
+      "lado": "revenue",
+      "page": 130,
+      "section": "nota que desglosa \"Receitas de jogos\"",
+      "values": [
+        0.597
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Ganhos com alienações de direitos de atletas (mais-valias)",
+      "lado": "revenue",
+      "page": 134,
+      "section": "nota que desglosa \"Rendimentos com transações de direitos de atletas\"",
+      "values": [
+        135.488
+      ],
+      "glosa": "Beneficios por enajenación de derechos de futbolistas (plusvalías)"
+    },
+    {
+      "label": "Outros rendimentos",
+      "lado": "revenue",
+      "page": 134,
+      "section": "nota que desglosa \"Rendimentos com transações de direitos de atletas\"",
+      "values": [
+        9.666
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Gestão operacional do estádio",
+      "lado": "expense",
+      "page": 131,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        25.724
+      ],
+      "glosa": "Gestión operativa del estadio"
+    },
+    {
+      "label": "Trabalhos especializados",
+      "lado": "expense",
+      "page": 131,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        11.43
+      ],
+      "glosa": "Trabajos especializados"
+    },
+    {
+      "label": "Licença marca Benfica",
+      "lado": "expense",
+      "page": 131,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        7.501
+      ],
+      "glosa": "Licencia de marca Benfica"
+    },
+    {
+      "label": "Gestão operacional do canal BTV",
+      "lado": "expense",
+      "page": 131,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        5.507
+      ],
+      "glosa": "Gestión operativa del canal BTV"
+    },
+    {
+      "label": "Deslocações e estadas",
+      "lado": "expense",
+      "page": 131,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        4.912
+      ],
+      "glosa": "Desplazamientos y estancias"
+    },
+    {
+      "label": "Equipamento desportivo",
+      "lado": "expense",
+      "page": 131,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        2.342
+      ],
+      "glosa": "Material deportivo"
+    },
+    {
+      "label": "Vigilância e segurança",
+      "lado": "expense",
+      "page": 131,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        2.187
+      ],
+      "glosa": "Vigilancia y seguridad"
+    },
+    {
+      "label": "Honorários",
+      "lado": "expense",
+      "page": 131,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.638
+      ],
+      "glosa": "Honorarios profesionales"
+    },
+    {
+      "label": "Publicidade e propaganda",
+      "lado": "expense",
+      "page": 131,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.262
+      ],
+      "glosa": "Publicidad y propaganda"
+    },
+    {
+      "label": "Rendas e alugueres",
+      "lado": "expense",
+      "page": 131,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.217
+      ],
+      "glosa": "Arrendamientos y alquileres"
+    },
+    {
+      "label": "Eletricidade",
+      "lado": "expense",
+      "page": 131,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        1.043
+      ],
+      "glosa": "Electricidad"
+    },
+    {
+      "label": "Outros fornecimentos e serviços",
+      "lado": "expense",
+      "page": 131,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        7.9
+      ],
+      "glosa": "Otros servicios y suministros"
+    },
+    {
+      "label": "Remunerações fixas",
+      "lado": "expense",
+      "page": 132,
+      "section": "nota que desglosa \"Gastos com pessoal\"",
+      "values": [
+        0.596
+      ],
+      "glosa": "Remuneraciones fijas"
+    },
+    {
+      "label": "Remunerações variáveis",
+      "lado": "expense",
+      "page": 132,
+      "section": "nota que desglosa \"Gastos com pessoal\"",
+      "values": [
+        0.096
+      ],
+      "glosa": "Remuneraciones variables"
+    },
+    {
+      "label": "Remunerações fixas",
+      "lado": "expense",
+      "page": 132,
+      "section": "nota que desglosa \"Gastos com pessoal\"",
+      "values": [
+        62.968
+      ],
+      "glosa": "Remuneraciones fijas"
+    },
+    {
+      "label": "Remunerações variáveis",
+      "lado": "expense",
+      "page": 132,
+      "section": "nota que desglosa \"Gastos com pessoal\"",
+      "values": [
+        7.272
+      ],
+      "glosa": "Remuneraciones variables"
+    },
+    {
+      "label": "Indemnizações",
+      "lado": "expense",
+      "page": 132,
+      "section": "nota que desglosa \"Gastos com pessoal\"",
+      "values": [
+        3.957
+      ],
+      "glosa": "Indemnizaciones"
+    },
+    {
+      "label": "Benefícios pós-emprego",
+      "lado": "expense",
+      "page": 132,
+      "section": "nota que desglosa \"Gastos com pessoal\"",
+      "values": [
+        -0.104
+      ],
+      "glosa": "Retribuciones post-empleo"
+    },
+    {
+      "label": "Encargos sobre remunerações",
+      "lado": "expense",
+      "page": 132,
+      "section": "nota que desglosa \"Gastos com pessoal\"",
+      "values": [
+        4.77
+      ],
+      "glosa": "Cargas sociales sobre remuneraciones"
+    },
+    {
+      "label": "Seguros de acidentes de trabalho",
+      "lado": "expense",
+      "page": 132,
+      "section": "nota que desglosa \"Gastos com pessoal\"",
+      "values": [
+        4.653
+      ],
+      "glosa": "Seguros de accidentes laborales"
+    },
+    {
+      "label": "Outros gastos com pessoal",
+      "lado": "expense",
+      "page": 132,
+      "section": "nota que desglosa \"Gastos com pessoal\"",
+      "values": [
+        1.452
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Edifícios e outras construções",
+      "lado": "expense",
+      "page": 133,
+      "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
+      "values": [
+        1.003
+      ],
+      "glosa": "Edificios y otras construcciones"
+    },
+    {
+      "label": "Equipamento básico",
+      "lado": "expense",
+      "page": 133,
+      "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
+      "values": [
+        0.394
+      ],
+      "glosa": "Equipamiento básico"
+    },
+    {
+      "label": "Equipamento de transporte",
+      "lado": "expense",
+      "page": 133,
+      "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
+      "values": [
+        0.123
+      ],
+      "glosa": "Elementos de transporte"
+    },
+    {
+      "label": "Equipamento administrativo",
+      "lado": "expense",
+      "page": 133,
+      "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
+      "values": [
+        0.488
+      ],
+      "glosa": "Equipos de oficina"
+    },
+    {
+      "label": "Outros ativos tangíveis",
+      "lado": "expense",
+      "page": 133,
+      "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
+      "values": [
+        0.001
+      ],
+      "glosa": "Otros activos tangibles"
+    },
+    {
+      "label": "Direitos de uso",
+      "lado": "expense",
+      "page": 133,
+      "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
+      "values": [
+        3.61
+      ],
+      "glosa": "Derechos de uso"
+    },
+    {
+      "label": "Direito de utilização da marca",
+      "lado": "expense",
+      "page": 133,
+      "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
+      "values": [
+        1.52
+      ],
+      "glosa": "Derechos de uso de marca"
+    },
+    {
+      "label": "Programas de computador",
+      "lado": "expense",
+      "page": 133,
+      "section": "nota que desglosa \"Depreciações/Amortizações^{13}\"",
+      "values": [
+        1.069
+      ],
+      "glosa": "Aplicaciones informáticas"
+    },
+    {
+      "label": "Provisões/Imparidades^{15}",
+      "lado": "expense",
+      "page": 90,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.968
+      ],
+      "glosa": "Provisiones / Deterioro de valor^{15}"
+    },
+    {
+      "label": "Outros gastos e perdas operacionais^{16}",
+      "lado": "expense",
+      "page": 90,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.416
+      ],
+      "glosa": "Otros gastos y pérdidas de explotación^{16}"
+    },
+    {
+      "label": "Perdas com alienações de direitos de atletas (menos-valias)",
+      "lado": "expense",
+      "page": 134,
+      "section": "nota que desglosa \"Gastos com transações de direitos de atletas\"",
+      "values": [
+        0.452
+      ],
+      "glosa": "Pérdidas por enajenación de derechos de futbolistas (minusvalías)"
+    },
+    {
+      "label": "Gastos associados a alienações de direitos de atletas (comissões)",
+      "lado": "expense",
+      "page": 134,
+      "section": "nota que desglosa \"Gastos com transações de direitos de atletas\"",
+      "values": [
+        13.126
+      ],
+      "glosa": "Gastos asociados a enajenaciones de derechos de futbolistas (comisiones)"
+    },
+    {
+      "label": "Atletas de direitos de atletas",
+      "lado": "expense",
+      "page": 134,
+      "section": "nota que desglosa \"Gastos com transações de direitos de atletas\"",
+      "values": [
+        0.13
+      ],
+      "glosa": "Derechos federativos de futbolistas"
+    },
+    {
+      "label": "Outros gastos",
+      "lado": "expense",
+      "page": 134,
+      "section": "nota que desglosa \"Gastos com transações de direitos de atletas\"",
+      "values": [
+        5.731
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Amortizações de direitos de atletas",
+      "lado": "expense",
+      "page": 137,
+      "section": "nota que desglosa \"Amortizações e perdas de imparidade de direitos de atletas\"",
+      "values": [
+        36.089
+      ],
+      "glosa": "Amortizaciones de derechos de futbolistas"
+    },
+    {
+      "label": "Reforços de imparidade",
+      "lado": "expense",
+      "page": 137,
+      "section": "nota que desglosa \"Amortizações e perdas de imparidade de direitos de atletas\"",
+      "values": [
+        3.698
+      ],
+      "glosa": "Dotaciones por deterioro de valor"
+    }
+  ]
 }
