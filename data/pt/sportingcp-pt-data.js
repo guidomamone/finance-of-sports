@@ -308,6 +308,21 @@ const sportingcpptRevenueLinesByYear = {
     { rawLabel:'Royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.523, disclosureLevel:'aggregated' },
     { rawLabel:'Outros proveitos operacionais (resto)', normalizedCategory:'other_income', amountNative:0.971, disclosureLevel:'aggregated' },
   ],
+  2003: [
+    { rawLabel:'Subsídios à Exploração', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Proveitos e Ganhos Operacionais', normalizedCategory:'other_income', amountNative:0.198, disclosureLevel:'aggregated' },
+    { rawLabel:'Ganhos em Imobiliz.', normalizedCategory:'other_income', amountNative:8.108, disclosureLevel:'aggregated' },
+    { rawLabel:'Benefícios Contratuais', normalizedCategory:'other_income', amountNative:0.086, disclosureLevel:'aggregated' },
+    { rawLabel:'Redução de Provisões', normalizedCategory:'other_income', amountNative:0.139, disclosureLevel:'aggregated' },
+    { rawLabel:'O Prov. e G. Extraord.', normalizedCategory:'other_income', amountNative:0.2, disclosureLevel:'aggregated' },
+    { rawLabel:'Bilheteira', normalizedCategory:'matchday_competition', amountNative:2.527, disclosureLevel:'aggregated' },
+    { rawLabel:'Bilhetes de Época', normalizedCategory:'season_tickets', amountNative:2.053, disclosureLevel:'aggregated' },
+    { rawLabel:'Dir. Transmissão Televisiva', normalizedCategory:'broadcasting', amountNative:6.635, disclosureLevel:'aggregated' },
+    { rawLabel:'Quotas de Sócios', normalizedCategory:'member_dues', amountNative:3.652, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínios e Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:2.18, disclosureLevel:'aggregated' },
+    { rawLabel:'Royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.224, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros proveitos operacionais (resto)', normalizedCategory:'other_income', amountNative:0.443, disclosureLevel:'aggregated' },
+  ],
 };
 const sportingcpptExpenseLinesByYear = {
   2025: [
@@ -850,6 +865,21 @@ const sportingcpptExpenseLinesByYear = {
     { rawLabel:'Corr. R. Ex. Anterior.', normalizedCategory:'exceptional_items', amountNative:-0.175, disclosureLevel:'aggregated' },
     { rawLabel:'O. Custos P. Extraord.', normalizedCategory:'wages_squad', amountNative:-1.937, disclosureLevel:'aggregated' },
   ],
+  2003: [
+    { rawLabel:'Corr. R. Ex. Anterior.', normalizedCategory:'exceptional_items', amountNative:0.005, disclosureLevel:'aggregated' },
+    { rawLabel:'Fornecimentos e Serviços Externos', normalizedCategory:'admin_general_expense', amountNative:-8.174, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações', normalizedCategory:'wages_squad', amountNative:-21.891, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-1.101, disclosureLevel:'aggregated' },
+    { rawLabel:'Corpóreo e Incorpóreo', normalizedCategory:'player_amortisation', amountNative:-16.936, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisões', normalizedCategory:'other_amortisation', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.102, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Custos e Perdas Operacionais', normalizedCategory:'other_expenses', amountNative:-0.914, disclosureLevel:'aggregated' },
+    { rawLabel:'Donativos', normalizedCategory:'other_expenses', amountNative:-0.012, disclosureLevel:'aggregated' },
+    { rawLabel:'Perdas em Imobilizaç.', normalizedCategory:'exceptional_items', amountNative:-0.04, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas e Penalidades', normalizedCategory:'other_expenses', amountNative:-0.038, disclosureLevel:'aggregated' },
+    { rawLabel:'Corr. R. Ex. Anterior.', normalizedCategory:'exceptional_items', amountNative:-0.104, disclosureLevel:'aggregated' },
+    { rawLabel:'O. Custos P. Extraord.', normalizedCategory:'wages_squad', amountNative:-1.731, disclosureLevel:'aggregated' },
+  ],
 };
 const sportingcpptFiscalYearMeta = {
   2025: {
@@ -1055,6 +1085,21 @@ const sportingcpptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:36.651, officialTotalExpenses:57.457, officialPAT:-22.715,
   },
+  2003: {
+    currency:'EUR', fxRef:'EUR@2003-07-31',
+    sourceId:'sportingcp-pt-relatorio-contas-2002-03',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-2.703, tax:-0.014,
+    extraRows: [
+      {label:'Outros Juros e Proveitos Similares', value:0.867},
+      {label:'Juros e Custos Similares', value:-3.57},
+      {label:'Imposto sobre o Rendimento do Exerc', value:-0.014},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:26.45, officialTotalExpenses:50.899, officialPAT:-27.311,
+  },
 };
 const sportingcpptPresupuestoOverlayByYear = {};
 
@@ -1139,6 +1184,11 @@ Object.assign(sources, {
   'sportingcp-pt-relatorio-contas-2001': {
     id:'sportingcp-pt-relatorio-contas-2001', clubId:'sportingcp-pt',
     title:'SPORTING - Sociedade Desportiva de Futebol, SAD — relatorio-contas-2001 (ejercicio 2002)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'sportingcp-pt-relatorio-contas-2002-03': {
+    id:'sportingcp-pt-relatorio-contas-2002-03', clubId:'sportingcp-pt',
+    title:'SPORTING - Sociedade Desportiva de Futebol, SAD — relatorio-contas-2002-03 (ejercicio 2003)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
