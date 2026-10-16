@@ -26,9 +26,10 @@ ORDEN (pedido de Guido, 2026-10-15), en este orden y sin saltear:
 2. Mejoras de script: 237 y los cambios sin commitear de 165 b2 (`lote.mjs`, `fetch-club-league-reference.mjs`), medidos antes de
    commitear.
 3. 238 (llevar a 0 los estados intermedios), que incluye Estonia y Bélgica (165 b1: ya transcriptas, falta validarlas y cargarlas).
+4. Mejoras de proyecto: Guido tiene ideas, todavía sin contar; preguntarle cuando se llegue acá.
 Después: el resto de las altas de países nuevos (165 c) y las gestiones (195); al final el ahorro de API (232, 233, 230) y lo que
-espera una decisión de Guido (130, 183, 51). Guido tiene ideas para mejorar el proyecto, todavía sin contar: preguntarle cuando se
-llegue acá.
+espera una decisión de Guido (130, 183, 51). El panel Plan lleva además una lista "Otros to-dos abiertos" (número: descripción breve)
+con los que no están en los pasos de arriba.
 
 165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (decisión de Guido, 2026-10-07; estado al 2026-10-10). Un país por vez, con el pipeline
     (skill club-or-year-onboarding; club nuevo: revisión del alta en Admin/registros/altas-revision.jsonl: nombre, color, perímetro, cierres y ligas).
