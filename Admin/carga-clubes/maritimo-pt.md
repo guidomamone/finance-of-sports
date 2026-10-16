@@ -107,7 +107,9 @@ Generados/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.categorias.json (escalón 
 2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 102 992. Parte de 'Outros' (L1468): venta de lugares anuais para los partidos del equipo A.
 2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 112 880. Fila de la nota de Outros rendimentos (suma 4.444.586) que la extracción puso como gasto (−112.880); es ingreso (to-do 237 w).
 2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cero-real = Televisión. El documento no tiene ingresos de TV (subagente Sonnet, revisado por Claude).
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): incluye = broadcasting. Claude 2026-10-16 (ok de Guido): reemplaza la lectura 'sin TV' del cero-real. La nota de rédito (publicidade, bilheteira, outros) no tiene renglón de TV, y el documento de 2024 dice que la TV está dentro de Publicidade e Patrocínios; posible porque este año no nombra el renglón
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ### Liga

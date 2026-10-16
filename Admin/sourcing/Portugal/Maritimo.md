@@ -25,3 +25,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.pdf` (sourceId `maritimo-pt-maritimosad-rc-30-06-2023`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.pdf` (sourceId `maritimo-pt-futebol-sad-relatorio-e-contas-30jun24`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf` (sourceId `maritimo-pt-futebol-sad-rc-30-06-2025`).
