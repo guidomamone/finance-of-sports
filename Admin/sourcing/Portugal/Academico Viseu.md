@@ -17,3 +17,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Academico Viseu/wf-2022-2023-b797bc64.pdf` (sourceId `academicoviseu-pt-wf-2022-2023-b797bc64`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Academico Viseu/wf-2023-2024-02d5741e.pdf` (sourceId `academicoviseu-pt-wf-2023-2024-02d5741e`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Academico Viseu/wf-src-RC21_22.pdf` (sourceId `academicoviseu-pt-wf-src-rc21-22`).

@@ -37,6 +37,16 @@ const academicoviseuptRevenueLinesByYear = {
     { rawLabel:'Fundo de infraestruturas Liga Portugal', normalizedCategory:'other_income', amountNative:0.031368, disclosureLevel:'aggregated' },
     { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.094739, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:0.027214, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínios, publicidade e corporate', normalizedCategory:'sponsorship_commercial', amountNative:0.063857, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas de televisão', normalizedCategory:'broadcasting', amountNative:0.45, disclosureLevel:'aggregated' },
+    { rawLabel:'Competições Nacionais', normalizedCategory:'competition_bonus', amountNative:0.021067, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à Exploração', normalizedCategory:'other_income', amountNative:0.16251, disclosureLevel:'aggregated' },
+    { rawLabel:'Associações/Federações/Liga', normalizedCategory:'other_income', amountNative:0.038951, disclosureLevel:'aggregated' },
+    { rawLabel:'Jogos e apostas (distribuição lucros)', normalizedCategory:'other_income', amountNative:0.290127, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.036372, disclosureLevel:'aggregated' },
+  ],
 };
 const academicoviseuptExpenseLinesByYear = {
   2025: [
@@ -145,6 +155,43 @@ const academicoviseuptExpenseLinesByYear = {
     { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.000619, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-2.196108, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Custo das mercadorias vendidas e das matérias consumidas', normalizedCategory:'other_expenses', amountNative:-0.008631, disclosureLevel:'aggregated' },
+    { rawLabel:'Subcontratos', normalizedCategory:'admin_general_expense', amountNative:-0.00045, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos Especializados', normalizedCategory:'admin_general_expense', amountNative:-0.154938, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade e Propaganda', normalizedCategory:'admin_general_expense', amountNative:-0.00177, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e Segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.02007, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.052284, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e Reparação', normalizedCategory:'admin_general_expense', amountNative:-0.008491, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços bancários e financeiros', normalizedCategory:'admin_general_expense', amountNative:-0.001194, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros serviços especializados', normalizedCategory:'other_expenses', amountNative:-0.0068, disclosureLevel:'aggregated' },
+    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.006989, disclosureLevel:'aggregated' },
+    { rawLabel:'Energia e Fluidos', normalizedCategory:'admin_general_expense', amountNative:-0.018911, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e Estadas', normalizedCategory:'match_organisation_expense', amountNative:-0.123403, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.200143, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.004844, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.001514, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas de Representação', normalizedCategory:'admin_general_expense', amountNative:-0.001251, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.028715, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações do pessoal', normalizedCategory:'wages_squad', amountNative:-2.171663, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre as remunerações', normalizedCategory:'wages_squad', amountNative:-0.191051, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros de acidentes no trabalho', normalizedCategory:'admin_general_expense', amountNative:-0.165789, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.121142, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de dívidas a receber (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:-0.04059, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisões', normalizedCategory:'admin_general_expense', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.000043, disclosureLevel:'aggregated' },
+    { rawLabel:'Descontos de p.p. concedidos', normalizedCategory:'other_expenses', amountNative:-0.000003, disclosureLevel:'aggregated' },
+    { rawLabel:'Correções relativas a períodos anteriores', normalizedCategory:'exceptional_items', amountNative:-0.05619, disclosureLevel:'aggregated' },
+    { rawLabel:'Donativos e Quotizações', normalizedCategory:'other_expenses', amountNative:-0.002996, disclosureLevel:'aggregated' },
+    { rawLabel:'Insuficiência da estimativa para impostos', normalizedCategory:'admin_general_expense', amountNative:-0.002415, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas', normalizedCategory:'other_expenses', amountNative:-0.041828, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos não devidamente documentados', normalizedCategory:'other_expenses', amountNative:-0.028726, disclosureLevel:'aggregated' },
+    { rawLabel:'Inscrições', normalizedCategory:'match_organisation_expense', amountNative:-0.009963, disclosureLevel:'aggregated' },
+    { rawLabel:'Transferências', normalizedCategory:'other_expenses', amountNative:-0.040587, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.000068, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência de Atletas', normalizedCategory:'other_expenses', amountNative:-0.006995, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/ reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.137329, disclosureLevel:'aggregated' },
+  ],
 };
 const academicoviseuptFiscalYearMeta = {
   2025: {
@@ -190,6 +237,20 @@ const academicoviseuptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:1.568093, officialTotalExpenses:12.789802, officialPAT:-12.682053,
   },
+  2022: {
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'academicoviseu-pt-wf-src-rc21-22',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.206727, tax:-0.006221,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.206727},
+      {label:'Imposto sobre o rendimento do período', value:-0.006221},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:1.090098, officialTotalExpenses:3.601586, officialPAT:-2.780627,
+  },
 };
 const academicoviseuptPresupuestoOverlayByYear = {};
 
@@ -219,6 +280,11 @@ Object.assign(sources, {
   'academicoviseu-pt-wf-2023-2024-02d5741e': {
     id:'academicoviseu-pt-wf-2023-2024-02d5741e', clubId:'academicoviseu-pt',
     title:'Académico de Viseu Futebol Clube, Futebol SAD — wf-2023-2024-02d5741e (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'academicoviseu-pt-wf-src-rc21-22': {
+    id:'academicoviseu-pt-wf-src-rc21-22', clubId:'academicoviseu-pt',
+    title:'Académico de Viseu Futebol Clube, Futebol SAD — wf-src-RC21_22 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

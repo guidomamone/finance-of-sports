@@ -112,6 +112,9 @@ window.RANKINGS["pt-ligaportugal2"] = {
       { id:"estreladaamadora-pt", revenue:1.651, reportType:"official_balance_sheet",
         sourceId:"estreladaamadora-pt-relatorio-contas-2021-22",
         mix:[["Venta de Jugadores",0.494],["Fútbol profesional (sin desglosar por la fuente)",1.014],["Otros ingresos",0.143]] },
+      { id:"academicoviseu-pt", revenue:1.132, reportType:"official_balance_sheet",
+        sourceId:"academicoviseu-pt-wf-src-rc21-22",
+        mix:[["Comercial / Sponsors",0.095],["Televisión",0.467],["Premios por competencias",0.022],["Otros ingresos",0.548]] },
     ],
   },
   2019: {

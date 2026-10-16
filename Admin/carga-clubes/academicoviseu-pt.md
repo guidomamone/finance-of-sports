@@ -260,6 +260,80 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2022–23 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia única por palabras "Académico de Viseu" = "Academico Viseu".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Academico Viseu/wf-src-RC21_22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Academico Viseu/wf-src-RC21_22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Merchandising | pág. 13, precedente |
+| 2 | Patrocínios, publicidade e corporate | pág. 13, precedente |
+| 3 | Receitas de televisão | pág. 13, precedente |
+| 4 | Competições Nacionais | pág. 13, Claude 0.85 |
+| 5 | Subsídios à Exploração | pág. 6, Jev 0.95 |
+| 6 | Associações/Federações/Liga | pág. 13, Jev 0.96 |
+| 7 | Jogos e apostas (distribuição lucros) | pág. 13, Jev 1 |
+| 8 | Outros | pág. 13, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 6, precedente |
+| 2 | Subcontratos | pág. 17, Jev 0.96 |
+| 3 | Trabalhos Especializados | pág. 17, precedente |
+| 4 | Publicidade e Propaganda | pág. 17, precedente |
+| 5 | Vigilância e Segurança | pág. 17, precedente |
+| 6 | Honorários | pág. 17, precedente |
+| 7 | Conservação e Reparação | pág. 17, precedente |
+| 8 | Serviços bancários e financeiros | pág. 17, Jev 0.99 |
+| 9 | Outros serviços especializados | pág. 17, precedente |
+| 10 | Materiais | pág. 17, precedente |
+| 11 | Energia e Fluidos | pág. 17, precedente |
+| 12 | Deslocações e Estadas | pág. 17, Jev 1 |
+| 13 | Rendas e alugueres | pág. 17, precedente |
+| 14 | Comunicação | pág. 17, precedente |
+| 15 | Seguros | pág. 17, precedente |
+| 16 | Despesas de Representação | pág. 17, precedente |
+| 17 | Outros | pág. 17, Jev 0.92 |
+| 18 | Remunerações do pessoal | pág. 16, precedente |
+| 19 | Encargos sobre as remunerações | pág. 16, Jev 1 |
+| 20 | Seguros de acidentes no trabalho | pág. 16, Jev 0.99 |
+| 21 | Outros | pág. 16, Jev 0.92 |
+| 22 | Imparidade de dívidas a receber (perdas/reversões) | pág. 6, Jev 0.99 |
+| 23 | Provisões | pág. 6, precedente |
+| 24 | Impostos | pág. 14, precedente |
+| 25 | Descontos de p.p. concedidos | pág. 14, Jev 1 |
+| 26 | Correções relativas a períodos anteriores | pág. 14, Jev 1 |
+| 27 | Donativos e Quotizações | pág. 14, precedente |
+| 28 | Insuficiência da estimativa para impostos | pág. 14, Jev 1 |
+| 29 | Multas | pág. 14, Jev 0.99 |
+| 30 | Gastos não devidamente documentados | pág. 14, Jev 1 |
+| 31 | Inscrições | pág. 14, Jev 0.96 |
+| 32 | Transferências | pág. 14, precedente |
+| 33 | Outros | pág. 14, Jev 0.92 |
+| 34 | Cedência de Atletas | pág. 14, Jev 0.98 |
+| 35 | Gastos/ reversões de depreciação e de amortização | pág. 6, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): anio = 2022. El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2022 según el registro (periodo.cierre).
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cero-real = Estadio. Claude 2026-10-16 (lote 82): la nota 9.1 de rédito imprime 'Receitas de bilheteira' 0,00 en 2021/2022 (y en 2020/2021): sin ingresos de estadio ese año
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2021–22 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia única por palabras "Académico de Viseu" = "Academico Viseu".
+```
+
 ## Fuentes
 
 ### academicoviseu-pt-wf-2024-2025-efe7ad0a
@@ -284,4 +358,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Academico Viseu/wf-2023-2024-02d5741e.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### academicoviseu-pt-wf-src-rc21-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Academico Viseu/wf-src-RC21_22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

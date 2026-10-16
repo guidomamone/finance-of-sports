@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Academico Viseu/wf-src-RC21_22.pdf",
- "generado": "2026-10-16T03:41:06.802Z",
- "frena": [
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-16T03:51:53.061Z",
+ "frena": [],
  "avisos": [
   "\"Otras secciones deportivas\" en 0: real en este documento (lo presenta una SAD/SDUQ, solo fútbol profesional: Clubes/Portugal/Academico Viseu/wf-src-RC21_22.md L16 \"Académico de Viseu Futebol Clube Futebol SAD\"; to-do 237 y)",
+  "\"Estadio\" en 0: real, por ajuste manual (2026-10-16, Claude 2026-10-16 (lote 82): la nota 9.1 de rédito imprime 'Receitas de bilheteira' 0,00 en 2021/2022 (y en 2020/2021): sin ingresos de estadio ese año)",
   "gastos: ningún total impreso igual a la suma de las líneas (-3.601586); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-06-30); pregunta en la cola (no frena)"
  ],
@@ -510,6 +506,16 @@
    "linea": null,
    "motivo": "El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2022 según el registro (periodo.cierre).",
    "evidencia": "transcripciones-estado.jsonl, periodo.cierre 2022-06-30",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Academico Viseu/wf-src-RC21_22.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "Claude 2026-10-16 (lote 82): la nota 9.1 de rédito imprime 'Receitas de bilheteira' 0,00 en 2021/2022 (y en 2020/2021): sin ingresos de estadio ese año",
+   "evidencia": "wf-src-RC21_22.md L549-551",
    "autor": "Claude",
    "fecha": "2026-10-16"
   }
@@ -1191,12 +1197,6 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
@@ -1281,8 +1281,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 8,
   "lineasGasto": 35,
   "metaFilas": 2,
