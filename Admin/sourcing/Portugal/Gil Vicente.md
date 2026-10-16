@@ -43,3 +43,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Gil Vicente/relatorio-contas-2024-25.pdf` (sourceId `gilvicente-pt-relatorio-contas-2024-25`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2021 desde `Clubes/Portugal/Gil Vicente/relatorio-contas-2020-21.pdf` (sourceId `gilvicente-pt-relatorio-contas-2020-21`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Gil Vicente/wf-src-Relatorio_SDUQ_Final.pdf` (sourceId `gilvicente-pt-wf-src-relatorio-sduq-final`).

@@ -127,6 +127,99 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Gil Vicente".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Gil Vicente/wf-src-Relatorio_SDUQ_Final.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Gil Vicente/wf-src-Relatorio_SDUQ_Final.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Venda Merchandising | pág. 45, precedente |
+| 2 | Venda de Atletas | pág. 45, Jev 1 |
+| 3 | Publicidade | pág. 45, precedente |
+| 4 | Receitas de Jogos - Lugares Cativos | pág. 45, precedente |
+| 5 | Participação nas Competições - Taça de Portugal | pág. 45, Jev 1 |
+| 6 | Participação nas Competições - Taça de Portugal | pág. 45, Jev 1 |
+| 7 | Receitas de Jogos - Bilhetes | pág. 45, precedente |
+| 8 | Direitos Televisivos | pág. 45, precedente |
+| 9 | Participação nas Competições - Taça da Liga | pág. 45, Jev 1 |
+| 10 | Outras Prestações de Serviços | pág. 45, precedente |
+| 11 | Subsídios à exploração | pág. 24, Jev 0.97 |
+| 12 | Outros rendimentos suplementares | pág. 47, precedente |
+| 13 | Correções relativas a períodos anteriores | pág. 47, precedente |
+| 14 | Outros não especificados | pág. 47, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 24, precedente |
+| 2 | Comissões | pág. 46, precedente |
+| 3 | Honorários | pág. 46, precedente |
+| 4 | Conservação e Reparações | pág. 46, precedente |
+| 5 | Publicidade e Propaganda | pág. 46, precedente |
+| 6 | Trabalhos especializados | pág. 46, precedente |
+| 7 | Serviços bancários | pág. 46, precedente |
+| 8 | Deslocações | pág. 46, precedente |
+| 9 | Inscrições de Atletas | pág. 46, precedente |
+| 10 | Despesas Médicas | pág. 46, precedente |
+| 11 | Organização de Jogos | pág. 46, precedente |
+| 12 | Material de Ginásio e Treino | pág. 46, precedente |
+| 13 | Produtos Energéticos | pág. 46, precedente |
+| 14 | Equipamentos Desportivos | pág. 46, precedente |
+| 15 | Direitos de Formação | pág. 46, precedente |
+| 16 | Empréstimos de Atletas | pág. 46, precedente |
+| 17 | Despesas Diversas | pág. 46, precedente |
+| 18 | Serviços Scouting | pág. 46, precedente |
+| 19 | Seguros | pág. 46, precedente |
+| 20 | Rendas e Alugueres | pág. 46, precedente |
+| 21 | Contencioso e notariado | pág. 46, precedente |
+| 22 | Outros Serviços | pág. 46, precedente |
+| 23 | Comunicação | pág. 46, precedente |
+| 24 | Limpeza, higiene e conforto | pág. 46, precedente |
+| 25 | Electricidade | pág. 46, precedente |
+| 26 | Combustíveis | pág. 46, precedente |
+| 27 | Água | pág. 46, precedente |
+| 28 | Gás | pág. 46, precedente |
+| 29 | Resíduos Urbanos | pág. 46, Jev 0.99 |
+| 30 | Ferramentas e utensílios de desgaste rápido | pág. 46, Jev 1 |
+| 31 | Material de escritório | pág. 46, Jev 1 |
+| 32 | Bilhetes | pág. 46, precedente |
+| 33 | BILHETES | pág. 46, precedente |
+| 34 | Remunerações do Pessoal | pág. 46, precedente |
+| 35 | Encargos sobre remunerações | pág. 46, precedente |
+| 36 | Seguros acidentes no trabalho e doença | pág. 46, precedente |
+| 37 | Outros gastos com o pessoal | pág. 46, precedente |
+| 38 | Imparidade de dívidas a receber (perdas/reversões) | pág. 24, precedente |
+| 39 | Provisões (aumentos/reduções) | pág. 24, precedente |
+| 40 | Impostos | pág. 47, Jev 1 |
+| 41 | Correções relativas a períodos anteriores | pág. 47, Jev 1 |
+| 42 | Donativos | pág. 47, Jev 0.99 |
+| 43 | Quotizações | pág. 47, precedente |
+| 44 | Ofertas e amostras de inventários | pág. 47, precedente |
+| 45 | Multas e penalidades | pág. 47, precedente |
+| 46 | Mecanismo de Solidariedade | pág. 47, precedente |
+| 47 | Outros | pág. 47, Jev 0.99 |
+| 48 | Gastos/reversões de depreciação e de amortização | pág. 24, precedente |
+| 49 | Imparidade de investimentos depreciáveis/amortizáveis (perdas/reversões) | pág. 24, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): anio = 2022. El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2022 según el registro (periodo.cierre).
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Gil Vicente".
+```
+
 ## 2021
 
 ### Ingresos
@@ -235,4 +328,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Gil Vicente/relatorio-contas-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### gilvicente-pt-wf-src-relatorio-sduq-final
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Gil Vicente/wf-src-Relatorio_SDUQ_Final.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

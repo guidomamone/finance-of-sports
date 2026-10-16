@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Gil Vicente/wf-src-Relatorio_SDUQ_Final.pdf",
- "generado": "2026-10-16T03:18:41.765Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Provisões (aumentos/reduções)\" -> other_amortisation 0.5"
-  }
- ],
+ "generado": "2026-10-16T03:41:07.592Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 2 ejercicio(s) con un solo perímetro (individual); 6 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-7.199659); queda la suma, verificada por el resultado del ejercicio",
@@ -146,7 +141,7 @@
     "_pag": 47,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía exceptional_items)"
    },
    {
     "rawLabel": "Outros não especificados",
@@ -546,9 +541,9 @@
     "amountNative": -0.29731,
     "disclosureLevel": "aggregated",
     "_pag": 24,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Impostos",
@@ -915,10 +910,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía exceptional_items)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 82 (Felgueiras, Gil Vicente, Leixões, Marítimo, Oliveirense, Paços); Gil Vicente 2024 con el consolidado de la Associação (único documento del año); Paços 2020 FSE corregido en el .md.",
    "destino": "revenue",
    "amountNative": 0.16614
   },
@@ -1524,11 +1517,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.29731,
    "cat": "other_amortisation",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): provisiones por procesos judiciales (nota 14) [wf-src-Relatorio_SDUQ_Final.md L691]",
    "destino": "expense",
    "amountNative": -0.29731
   },
@@ -1818,8 +1811,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 14,
   "lineasGasto": 49,
   "metaFilas": 4,

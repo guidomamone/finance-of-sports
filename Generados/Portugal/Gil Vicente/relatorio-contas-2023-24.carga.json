@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Gil Vicente/relatorio-contas-2023-24.pdf",
- "generado": "2026-10-16T03:18:41.580Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Participação eliga Portugal\" -> competition_bonus 0.6; \"UEFA\" -> other_income 0.6; \"Outros rendimentos e ganhos\" -> other_income 0.75; \"Provisões (aumentos/reduções)\" -> other_amortisation 0.5"
-  }
- ],
+ "generado": "2026-10-16T03:41:07.500Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 2 ejercicio(s) con un solo perímetro (individual); 6 documento(s) mirados)",
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-06-30); pregunta en la cola (no frena)"
@@ -83,9 +78,9 @@
     "amountNative": 0.00415,
     "disclosureLevel": "aggregated",
     "_pag": 57,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Participação UEFA",
@@ -183,9 +178,9 @@
     "amountNative": 0.003659,
     "disclosureLevel": "aggregated",
     "_pag": 58,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "IEFP",
@@ -233,9 +228,9 @@
     "amountNative": 0.346323,
     "disclosureLevel": "aggregated",
     "_pag": 60,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -605,9 +600,9 @@
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Impostos",
@@ -816,11 +811,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 0.00415,
    "cat": "competition_bonus",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): nota 21, con Participação UEFA y Taças [relatorio-contas-2023-24.md L2037]",
    "destino": "revenue",
    "amountNative": 0.00415
   },
@@ -968,11 +963,11 @@
    "origen": "verificacion (nota que desglosa \"Subsídios, doações e legados à exploração\")",
    "signoFijo": 0.003659,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): nota 22 Subsídios à exploração, no el premio (Participação UEFA va en la nota 21) [relatorio-contas-2023-24.md L2065]",
    "destino": "revenue",
    "amountNative": 0.003659
   },
@@ -1044,11 +1039,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.346323,
    "cat": "other_income",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): residual de la nota 26, total 672.696,15 aparte [relatorio-contas-2023-24.md L2177]",
    "destino": "revenue",
    "amountNative": 0.346323
   },
@@ -1606,11 +1601,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0,
    "cat": "other_amortisation",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): provisiones, importe 0 [relatorio-contas-2023-24.md L816]",
    "destino": "expense",
    "amountNative": 0
   },
@@ -1815,8 +1810,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 22,
   "lineasGasto": 42,
   "metaFilas": 3,
