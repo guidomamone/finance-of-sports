@@ -141,6 +141,14 @@ window.RANKINGS["pt-primeiraliga"] = {
         mix:[["Comercial / Sponsors",0.231],["Estadio",0.258],["Televisión",3.643],["Premios por competencias",1.203],["Venta de Jugadores",2.16],["Otros ingresos",0.187]] },
     ],
   },
+  2013: {
+    leagueSize: null,
+    clubs: [
+      { id:"sportingcp-pt", revenue:63.957, reportType:"official_balance_sheet",
+        sourceId:"sportingcp-pt-relatorio-contas-2012-13",
+        mix:[["Cuotas Sociales",1.821],["Comercial / Sponsors",11.674],["Estadio",6.679],["Televisión",15.137],["Premios por competencias",2.99],["Venta de Jugadores",22.632],["Otros ingresos",3.024]] },
+    ],
+  },
   2012: {
     leagueSize: null,
     clubs: [
