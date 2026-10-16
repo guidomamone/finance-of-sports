@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2008-09.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2008-09.md",
- "generado": "2026-10-15T21:55:08.433Z",
- "estado": "cola",
- "clubId": null,
- "year": null,
+ "generado": "2026-10-16T18:10:36.506Z",
+ "estado": "ok",
+ "clubId": "sportingcp-pt",
+ "year": 2009,
  "escala": {
   "valor": "miles",
   "escalon": 0,
@@ -23,51 +23,63 @@
    "fecha": "2026-10-15"
   }
  ],
- "cola": [
-  "81bf8f7",
-  "dce0aba",
-  "4c84e41"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "46.822 = 46.822",
-   "suma": 46.822,
-   "impreso": 46.822
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
   },
   {
    "nombre": "total de gastos",
-   "ok": false,
-   "detalle": "las líneas suman 55.616 y el total impreso dice 44.065"
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 46.822 - gastos 55.616 ± financiero -2.432 ± impuesto 1.526 no da el impreso -13.349",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 8.881784197001252e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
+   "ok": true,
+   "detalle": "la columna 2008 de este documento suma ingresos 47.949; el sitio tiene 47.949"
+  },
+  {
+   "nombre": "documento del año 2010",
+   "ok": true,
+   "detalle": "ingresos de 2009: 46.822 en este documento y 46.822 en relatorio-contas-2009-10.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2008",
+   "ok": true,
+   "detalle": "ingresos de 2008: 47.949 en relatorio-contas-2007-08.pdf y 47.949 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
-  "duda de localizar que no afecta la carga: b1 es una versión analítica del mismo estado individual de la SAD con columna de variación; b27 es el estado oficial con notas."
+  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar que no afecta la carga: b1 es una versión analítica del mismo estado individual de la SAD con columna de variación; b27 es el estado oficial con notas.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 46.822,
-  "gastos": 55.616,
+  "gastos": 56.213,
   "financiero": -2.432,
   "impuesto": 1.526,
   "resultadoImpreso": -13.349,
   "resultadoParaCargar": -13.349,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -381,11 +393,19 @@
    "pagina": 118,
    "linea": 3077,
    "origen": "nota que desglosa \"Amortizações e perdas de imparidade com passes de jogadores\""
+  },
+  {
+   "etiqueta": "(Custos)/Proveitos com transacções de passes de jogadores",
+   "lado": "gasto",
+   "M": 0.597,
+   "pagina": 95,
+   "linea": 2316,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)"
   }
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -402,12 +422,12 @@
  "impuesto": [
   {
    "etiqueta": "Impostos diferidos",
-   "M": 1.503,
+   "M": -1.503,
    "linea": 2322
   },
   {
    "etiqueta": "Imposto sobre o rendimento",
-   "M": 0.023,
+   "M": -0.023,
    "linea": 2323
   }
  ]
