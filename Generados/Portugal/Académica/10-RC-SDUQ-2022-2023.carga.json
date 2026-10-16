@@ -1,7 +1,11 @@
 {
  "pdf": "Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.pdf",
- "generado": "2026-10-16T03:18:39.999Z",
+ "generado": "2026-10-16T03:41:07.041Z",
  "frena": [
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros\" -> other_expenses 0; \"Outros\" -> other_expenses 0; \"Outros\" -> other_expenses 0; \"Outros\" -> other_expenses 0"
+  },
   {
    "etapa": "reintento",
    "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
@@ -154,9 +158,9 @@
     "amountNative": -0.005429,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_income)"
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Fornecimentos e serviços externos\""
    },
    {
     "rawLabel": "Ferramentas e utensílios de desgaste rápido",
@@ -254,9 +258,9 @@
     "amountNative": -0.021691,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_income)"
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Fornecimentos e serviços externos\""
    },
    {
     "rawLabel": "Salários",
@@ -284,9 +288,9 @@
     "amountNative": -0.076037,
     "disclosureLevel": "aggregated",
     "_pag": 35,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_income)"
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Gastos com pessoal\""
    },
    {
     "rawLabel": "Imparidades (Perdas/Reversões)",
@@ -334,9 +338,9 @@
     "amountNative": -0.002364,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_income)"
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Outros gastos\""
    },
    {
     "rawLabel": "Gastos/reversões de depreciação e de amortização",
@@ -609,10 +613,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.005429,
    "cat": "other_expenses",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "precedente del club, exacto (categorias.json decía other_income)",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Fornecimentos e serviços externos\"",
    "enLista": true,
+   "enCola": true,
    "destino": "expense",
    "amountNative": -0.005429
   },
@@ -759,10 +764,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.021691,
    "cat": "other_expenses",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "precedente del club, exacto (categorias.json decía other_income)",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Fornecimentos e serviços externos\"",
    "enLista": true,
+   "enCola": true,
    "destino": "expense",
    "amountNative": -0.021691
   },
@@ -806,10 +812,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
    "signoFijo": 0.076037,
    "cat": "other_expenses",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "precedente del club, exacto (categorias.json decía other_income)",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Gastos com pessoal\"",
    "enLista": true,
+   "enCola": true,
    "destino": "expense",
    "amountNative": -0.076037
   },
@@ -882,10 +889,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.002364,
    "cat": "other_expenses",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "precedente del club, exacto (categorias.json decía other_income)",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Outros gastos\"",
    "enLista": true,
+   "enCola": true,
    "destino": "expense",
    "amountNative": -0.002364
   },
@@ -1023,7 +1031,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 1,
+  "motivos": 2,
   "lineasIngreso": 7,
   "lineasGasto": 26,
   "metaFilas": 2,

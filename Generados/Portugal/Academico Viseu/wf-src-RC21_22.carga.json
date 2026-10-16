@@ -1,11 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Academico Viseu/wf-src-RC21_22.pdf",
- "generado": "2026-10-16T03:18:39.886Z",
+ "generado": "2026-10-16T03:41:06.802Z",
  "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Transferências\" -> other_expenses 0.65"
-  },
   {
    "etapa": "reintento",
    "motivo": "categorías en 0 que deberían tener número: Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
@@ -100,7 +96,7 @@
     "_pag": 13,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    }
   ],
   "expenseLines": [
@@ -420,9 +416,9 @@
     "amountNative": -0.040587,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -639,10 +635,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "precedente del país: 2 clubes (Tondela, Maritimo), nota:outros rendimentos · Claude 2026-10-15 (subagente Sonnet): 'Outros' se abre con ajustes (Taças, solidaridad FIFA, lugares anuais).",
    "destino": "revenue",
    "amountNative": 0.036372
   },
@@ -1121,11 +1115,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\" > desglose de \"Outros gastos e perdas\")",
    "signoFijo": 0.040587,
    "cat": "other_expenses",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): nota 9.2 Outros gastos, sin indicio de pases (Cedência de Atletas va aparte) [wf-src-RC21_22.md L587]",
    "destino": "expense",
    "amountNative": -0.040587
   },
@@ -1288,7 +1282,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 8,
   "lineasGasto": 35,
   "metaFilas": 2,

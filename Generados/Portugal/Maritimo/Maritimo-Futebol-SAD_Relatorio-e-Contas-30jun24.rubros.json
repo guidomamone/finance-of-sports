@@ -3,7 +3,7 @@
  "pdf": "Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.pdf",
  "club": "maritimo-pt",
  "year": 2024,
- "generatedAt": "2026-10-16T03:34:30.557Z",
+ "generatedAt": "2026-10-16T03:45:35.977Z",
  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
  "rubros": [
   {
@@ -43,15 +43,6 @@
    ]
   },
   {
-   "label": "Juros",
-   "lado": "expense",
-   "page": 41,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "values": [
-    0.00906
-   ]
-  },
-  {
    "label": "Transferências de atletas",
    "lado": "revenue",
    "page": 41,
@@ -76,6 +67,15 @@
    "section": "nota que desglosa \"Outros rendimentos\"",
    "values": [
     1.972199
+   ]
+  },
+  {
+   "label": "Juros",
+   "lado": "revenue",
+   "page": 41,
+   "section": "ajuste manual",
+   "values": [
+    0.00906
    ]
   },
   {

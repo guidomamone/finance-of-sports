@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.pdf",
  "md": "Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.md",
- "generado": "2026-10-16T03:34:30.613Z",
+ "generado": "2026-10-16T03:44:37.982Z",
  "estado": "ok",
  "clubId": "maritimo-pt",
  "year": 2023,
@@ -31,6 +31,19 @@
    "etiqueta": "Provisões (aumentos/reduções)",
    "motivo": "Reversión (+510.000) de provisiones que quedó como ingreso; provisiones netas van a other_amortisation del lado del gasto.",
    "evidencia": "MaritimoSAD_RC_30.06.2023.md L1171",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.pdf",
+   "campo": "fila",
+   "valor": "598.818",
+   "linea": 1666,
+   "etiqueta": "Juros",
+   "lado": "ingreso",
+   "reemplaza": "Juros",
+   "motivo": "Claude 2026-10-16 (lote 82): la fila está dentro de la nota 'Outros rendimentos' (Juros 598.818 + Cedências 1.743.281 + Outros 997.073 = 3.339.172, igual al renglón del estado), pero la extracción la puso como gasto. Es ingreso: con ella al revés el resultado da -1.536.255 en vez de -338.616 (diferencia 2 x 598.818). Mismo caso que Santa Clara 2024-25 (to-do 237 w)",
+   "evidencia": "MaritimoSAD_RC_30.06.2023.md L1664-1669 (nota Outros rendimentos), L1171 (Outros rendimentos 3 339 171 en el estado)",
    "autor": "Claude",
    "fecha": "2026-10-16"
   }
@@ -75,6 +88,7 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Juros\" (ingreso) 598.818, en lugar de \"Juros\" (2026-10-16, Claude 2026-10-16 (lote 82): la fila está dentro de la nota 'Outros rendimentos' (Juros 598.818 + Cedências 1.743.281 + Outros 997.073 = 3.339.172, igual al renglón del estado), pero la extracción la puso como gasto. Es ingreso: con ella al revés el resultado da -1.536.255 en vez de -338.616 (diferencia 2 x 598.818). Mismo caso que Santa Clara 2024-25 (to-do 237 w))",
   "la lectura base no cerraba; cerró con la lectura 3",
   "duda de localizar que no afecta la carga: b8 es un resumen del informe de gestión que reagrupa renglones del estado b13."
  ],
@@ -133,14 +147,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Juros",
-   "lado": "financiero",
-   "M": 0.598818,
-   "pagina": 44,
-   "linea": 1666,
-   "origen": "nota que desglosa \"Outros rendimentos\""
-  },
-  {
    "etiqueta": "Cedências de atletas",
    "lado": "ingreso",
    "M": 1.743281,
@@ -155,6 +161,14 @@
    "pagina": 44,
    "linea": 1668,
    "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Juros",
+   "lado": "ingreso",
+   "M": 0.598818,
+   "pagina": 44,
+   "linea": 1666,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Imparidade de dívidas a receber (perdas/reversões)",

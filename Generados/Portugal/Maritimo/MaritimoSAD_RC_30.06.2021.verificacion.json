@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2021.pdf",
  "md": "Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2021.md",
- "generado": "2026-10-16T03:34:30.575Z",
+ "generado": "2026-10-16T03:46:26.459Z",
  "estado": "ok",
  "clubId": "maritimo-pt",
  "year": 2021,
@@ -11,7 +11,20 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2021.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "sponsorship_commercial",
+   "posible": true,
+   "motivo": "Claude 2026-10-16 (lote 82): la nota de Vendas e prestação de serviços (Publicidade e patrocínios, Cedências, Bilheteira, Outros) no tiene renglón de TV, y el documento atribuye la variación de Vendas e Prestações de Serviços a los derechos de transmisión televisiva; Marítimo 2024 dice que están en Publicidade e Patrocínios. Posible porque este año no nombra el renglón",
+   "evidencia": "MaritimoSAD_RC_30.06.2021.md L763",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

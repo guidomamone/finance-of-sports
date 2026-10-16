@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.pdf",
  "md": "Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.md",
- "generado": "2026-10-16T03:34:59.049Z",
+ "generado": "2026-10-16T03:47:15.437Z",
  "estado": "ok",
  "clubId": "academica-pt",
  "year": 2023,
@@ -11,7 +11,29 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "Claude 2026-10-16 (lote 82): la nota 25 Outros rendimentos imprime 'Direitos Televisivos' 0 en 2022-2023 (600.000 en 2021-2022): sin ingresos de TV ese año",
+   "evidencia": "10-RC-SDUQ-2022-2023.md L2240-2247",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.pdf",
+   "campo": "categoria",
+   "valor": "exceptional_items",
+   "linea": null,
+   "etiqueta": "Ganhos em perdão de dívida",
+   "motivo": "Claude 2026-10-16 (lote 82): condonación de deuda (corte del 80% del plan de recuperación aprobado), ingreso extraordinario: exceptional_items según CONVENCIONES-DATOS (condonaciones de Racing). Ajuste categoria para mudarla sin cambiar su efecto (to-do 237 f)",
+   "evidencia": "10-RC-SDUQ-2022-2023.md L2245, L2248",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

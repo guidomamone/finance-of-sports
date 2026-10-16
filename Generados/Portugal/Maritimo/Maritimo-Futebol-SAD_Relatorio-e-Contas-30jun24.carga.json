@@ -1,11 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.pdf",
- "generado": "2026-10-16T03:18:42.065Z",
+ "generado": "2026-10-16T03:41:07.679Z",
  "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros\" -> other_income 0"
-  },
   {
    "etapa": "reintento",
    "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
@@ -54,9 +50,9 @@
     "amountNative": 0.056332,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Subsídios à exploração",
@@ -497,12 +493,12 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 0.056332,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): residual de la nota 9.1 Vendas e prestação de serviços [Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.md L1583]",
    "destino": "revenue",
    "amountNative": 0.056332
   },
@@ -1139,7 +1135,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 3,
   "lineasIngreso": 7,
   "lineasGasto": 31,
   "metaFilas": 2,

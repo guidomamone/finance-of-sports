@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/AVS/relatorio-contas-2023-24.md",
- "generado": "2026-10-16T03:34:30.920Z",
+ "generado": "2026-10-16T03:45:19.204Z",
  "estado": "ok",
  "clubId": null,
  "year": 2024,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf",
+   "campo": "resultado-final",
+   "valor": "-3.041.302,19",
+   "linea": null,
+   "motivo": "Claude 2026-10-16 (lote 82): pérdida; el resultado que tomó la carga (+3.041.302) sale de la tabla de L613 con el signo al final ('3 041 302,19 € -'), que se perdió. El estado (L513 '- 3 041 302,19 €') y el resumen (L229 '(3.041.302,19)') dicen negativo; ingresos y gastos cierran con lo impreso",
+   "evidencia": "relatorio-contas-2023-24.md L229, L513, L613",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -40,6 +51,11 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "-3.041302 por ajuste manual (-3.041.302,19: Claude 2026-10-16 (lote 82): pérdida; el resultado que tomó la carga (+3.041.302) sale de la tabla de L613 con el signo al final ('3 041 302,19 € -'), que se perdió. El estado (L513 '- 3 041 302,19 €') y el resumen (L229 '(3.041.302,19)') dicen negativo; ingresos y gastos cierran con lo impreso); impuesto deducido 0.027164 (antes de impuestos -3.014139; el documento imprimía 0.018472)"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": false,
    "detalle": "ingresos de 2023: 1.845759 en relatorio-contas-2022-23.pdf y 1.189759 en este documento (columna del año anterior)"
@@ -58,6 +74,7 @@
  "notas": [
   "la nota del subtotal \"Total - Gastos com pessoal\" suma el subtotal impreso (2.76882): reemplaza a \"Outros gastos com pessoal\" + \"Outro pessoal - outros gastos\" + \"Outro pessoal - encargos com seguros\" + \"Outro pessoal - encargos sobre remunerações\" + \"Outro pessoal - remunerações\" + \"Treinador principal - outros gastos\" + \"Treinador principal - direitos de imagem\" + \"Treinador principal - encargos com seguros\" + \"Treinador principal - encargos sobre remunerações\" + \"Treinador principal - remunerações\" + \"Equipa principal - outros gastos\" + \"Equipa principal - direitos de imagem\" + \"Equipa principal - encargos com seguros\" + \"Equipa principal - encargos sobre remunerações\" + \"Equipa principal - remunerações\"",
   "la lectura base no cerraba; cerró con la lectura 4",
+  "ajuste manual: resultado final -3.041.302,19 (2026-10-16, Claude 2026-10-16 (lote 82): pérdida; el resultado que tomó la carga (+3.041.302) sale de la tabla de L613 con el signo al final ('3 041 302,19 € -'), que se perdió. El estado (L513 '- 3 041 302,19 €') y el resumen (L229 '(3.041.302,19)') dicen negativo; ingresos y gastos cierran con lo impreso)",
   "línea 582: 1 084 433,54 no está en el segunda lectura; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
   "duda de localizar que no afecta la carga: b1 es un resumen del informe de gestión que repite importes del estado b3."
  ],
@@ -68,10 +85,17 @@
   "ingresos": 1.49427,
   "gastos": 4.512755,
   "financiero": 0.004346,
-  "impuesto": 0.018472,
+  "impuesto": 0.027164,
   "resultadoImpreso": 3.041302,
-  "resultadoParaCargar": 3.041302,
-  "resultadoFinal": null,
+  "resultadoParaCargar": -3.041302,
+  "resultadoFinal": {
+   "valor": -3.041302,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/registros/ajustes-manuales.jsonl",
+   "impuestoImpreso": 0.018472,
+   "impuestoDeducido": 0.027164
+  },
   "lecturaSignos": "financiero e impuesto invertidos"
  },
  "lineas": [
@@ -357,7 +381,7 @@
   }
  ],
  "signosCarga": {
-  "financiero": -1,
+  "financiero": 1,
   "impuesto": -1
  },
  "financiero": [
@@ -368,7 +392,7 @@
   },
   {
    "etiqueta": "Gastos e perdas financeiras",
-   "M": -0.004346,
+   "M": 0.004346,
    "linea": 604
   },
   {
@@ -379,8 +403,8 @@
  ],
  "impuesto": [
   {
-   "etiqueta": "Imposto sobre o rendimento",
-   "M": -0.018472,
+   "etiqueta": "Imposto sobre o rendimento (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": -0.027164,
    "linea": 612
   }
  ],

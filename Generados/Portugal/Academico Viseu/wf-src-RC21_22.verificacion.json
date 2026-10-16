@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Academico Viseu/wf-src-RC21_22.pdf",
  "md": "Clubes/Portugal/Academico Viseu/wf-src-RC21_22.md",
- "generado": "2026-10-16T03:34:30.151Z",
+ "generado": "2026-10-16T03:47:42.724Z",
  "estado": "ok",
  "clubId": "academicoviseu-pt",
  "year": 2022,
@@ -19,6 +19,16 @@
    "linea": null,
    "motivo": "El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2022 según el registro (periodo.cierre).",
    "evidencia": "transcripciones-estado.jsonl, periodo.cierre 2022-06-30",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Academico Viseu/wf-src-RC21_22.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "Claude 2026-10-16 (lote 82): la nota 9.1 de rédito imprime 'Receitas de bilheteira' 0,00 en 2021/2022 (y en 2020/2021): sin ingresos de estadio ese año",
+   "evidencia": "wf-src-RC21_22.md L549-551",
    "autor": "Claude",
    "fecha": "2026-10-16"
   }

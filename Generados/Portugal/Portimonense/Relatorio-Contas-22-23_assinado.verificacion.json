@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-22-23_assinado.pdf",
  "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-22-23_assinado.md",
- "generado": "2026-10-16T03:35:28.753Z",
+ "generado": "2026-10-16T03:45:20.187Z",
  "estado": "ok",
  "clubId": "portimonense-pt",
  "year": 2023,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-22-23_assinado.pdf",
+   "campo": "resultado-final",
+   "valor": "-1.597.143,15",
+   "linea": null,
+   "motivo": "Claude 2026-10-16 (lote 82): pérdida; el resultado que tomó la carga (+1.597.143) sale de L1101, sin signo. El estado (L1036 '-1,597,143.15'), el resumen (L343) y la propuesta de aplicación (L503 'Resultado Líquido negativo de 1.597.143,15€') dicen negativo",
+   "evidencia": "Relatorio-Contas-22-23_assinado.md L343, L503, L1036, L1101",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -31,6 +42,16 @@
    "dif": 1.9984014443252818e-15
   },
   {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "-1.597143 por ajuste manual (-1.597.143,15: Claude 2026-10-16 (lote 82): pérdida; el resultado que tomó la carga (+1.597.143) sale de L1101, sin signo. El estado (L1036 '-1,597,143.15'), el resumen (L343) y la propuesta de aplicación (L503 'Resultado Líquido negativo de 1.597.143,15€') dicen negativo); impuesto deducido 0.213994 (antes de impuestos -1.383149; el documento imprimía 0.188031)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 21.9736; el sitio tiene 21.9736"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": true,
    "detalle": "ingresos de 2023: 13.980915 en este documento y 13.980915 en Relatorio-Contas-23-24_assinado.pdf (columna del año anterior)"
@@ -39,14 +60,10 @@
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2022: 21.9736 en Relatorio-Contas-21-22_assinado.pdf y 21.9736 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "ajuste manual: resultado final -1.597.143,15 (2026-10-16, Claude 2026-10-16 (lote 82): pérdida; el resultado que tomó la carga (+1.597.143) sale de L1101, sin signo. El estado (L1036 '-1,597,143.15'), el resumen (L343) y la propuesta de aplicación (L503 'Resultado Líquido negativo de 1.597.143,15€') dicen negativo)",
   "duda de localizar que no afecta la carga: Es detalle por jugador de los rendimientos en investimentos não financeiros (8.194.310,73€).",
   "duda de localizar que no afecta la carga: Repite ventas/FSE/pessoal del estado y b24/b29, con cifras 2022 que no coinciden."
  ],
@@ -57,10 +74,17 @@
   "ingresos": 13.980915,
   "gastos": 15.377046,
   "financiero": 0.012981,
-  "impuesto": 0.188031,
+  "impuesto": 0.213994,
   "resultadoImpreso": 1.597143,
-  "resultadoParaCargar": 1.597143,
-  "resultadoFinal": null,
+  "resultadoParaCargar": -1.597143,
+  "resultadoFinal": {
+   "valor": -1.597143,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/registros/ajustes-manuales.jsonl",
+   "impuestoImpreso": 0.188031,
+   "impuestoDeducido": 0.213994
+  },
   "lecturaSignos": "financiero e impuesto invertidos"
  },
  "lineas": [
@@ -418,20 +442,20 @@
   }
  ],
  "signosCarga": {
-  "financiero": -1,
+  "financiero": 1,
   "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "Juros e gastos similares suportados",
-   "M": -0.012981,
+   "M": 0.012981,
    "linea": 1098
   }
  ],
  "impuesto": [
   {
-   "etiqueta": "Imposto sobre o rendimento do período",
-   "M": -0.188031,
+   "etiqueta": "Imposto sobre o rendimento do período (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": -0.213994,
    "linea": 1100
   }
  ]

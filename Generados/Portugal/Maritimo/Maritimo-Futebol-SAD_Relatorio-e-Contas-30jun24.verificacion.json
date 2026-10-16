@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.pdf",
  "md": "Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.md",
- "generado": "2026-10-16T03:34:30.557Z",
+ "generado": "2026-10-16T03:45:35.976Z",
  "estado": "ok",
  "clubId": "maritimo-pt",
  "year": 2024,
@@ -11,7 +11,21 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.pdf",
+   "campo": "fila",
+   "valor": "9.060",
+   "linea": 1588,
+   "etiqueta": "Juros",
+   "lado": "ingreso",
+   "reemplaza": "Juros",
+   "motivo": "Claude 2026-10-16 (lote 82): la fila está dentro de la nota 'Outros rendimentos' (9.060 + 2.113.905 + 44.990 + 1.972.199 = 4.140.153 a 1 de redondeo), pero la extracción la puso como gasto; es ingreso (resultado -4.523.738 en vez de -4.496.269 por 2 x 9.060 más redondeo). Como Marítimo 2023 (to-do 237 w)",
+   "evidencia": "Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.md L1586-1593",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -47,6 +61,7 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Juros\" (ingreso) 9.060, en lugar de \"Juros\" (2026-10-16, Claude 2026-10-16 (lote 82): la fila está dentro de la nota 'Outros rendimentos' (9.060 + 2.113.905 + 44.990 + 1.972.199 = 4.140.153 a 1 de redondeo), pero la extracción la puso como gasto; es ingreso (resultado -4.523.738 en vez de -4.496.269 por 2 x 9.060 más redondeo). Como Marítimo 2023 (to-do 237 w))",
   "duda de localizar confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"-\"): ¿Se usa como año anterior la columna 2022/2023 Reexpresso del estado de resultados (b11) en lugar de la original?",
   "duda de extraer ya contestada para el club (antes de su alta) (columna, \"Outros rendimentos\"): aceptar, en Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.pdf",
   "duda de extraer que no afecta la carga: L1583-L1584 aparecen en b25 y b26 con el mismo contenido; se cargaron solo desde b25."
@@ -98,14 +113,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Juros",
-   "lado": "financiero",
-   "M": 0.00906,
-   "pagina": 41,
-   "linea": 1588,
-   "origen": "nota que desglosa \"Outros rendimentos\""
-  },
-  {
    "etiqueta": "Transferências de atletas",
    "lado": "ingreso",
    "M": 2.113905,
@@ -128,6 +135,14 @@
    "pagina": 41,
    "linea": 1591,
    "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Juros",
+   "lado": "ingreso",
+   "M": 0.00906,
+   "pagina": 41,
+   "linea": 1588,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Subcontratos",

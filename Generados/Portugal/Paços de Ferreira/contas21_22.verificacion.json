@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Paços de Ferreira/contas21_22.pdf",
  "md": "Clubes/Portugal/Paços de Ferreira/contas21_22.md",
- "generado": "2026-10-16T03:34:30.690Z",
+ "generado": "2026-10-16T03:45:03.501Z",
  "estado": "ok",
  "clubId": "pacosdeferreira-pt",
  "year": 2022,
@@ -19,6 +19,30 @@
    "linea": null,
    "motivo": "El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2022 según el registro (periodo.cierre).",
    "evidencia": "transcripciones-estado.jsonl, periodo.cierre 2022-06-30",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Paços de Ferreira/contas21_22.pdf",
+   "campo": "fila",
+   "valor": "28.199,10",
+   "linea": 330,
+   "etiqueta": "Diferências de Câmbio favoráveis",
+   "lado": "ingreso",
+   "reemplaza": "Diferências de Câmbio favoráveis",
+   "motivo": "Claude 2026-10-16 (lote 82): la fila está dentro de la nota 'Outros Rendimentos' (Cedências 1.576.106,85 + Diferenças de câmbio 28.199,10 + Placard 338.529,17 + Outros 241.427,30 = 2.184.262,42), pero la extracción la puso como gasto y la categorización la sacó (no_es_rubro). Es ingreso: sin ella el resultado da -498.594 en vez de -470.395 (diferencia 28.199). Como Marítimo 2023 y Santa Clara 2024-25 (to-do 237 w)",
+   "evidencia": "contas21_22.md L324-333 (nota Outros Rendimentos, pág. 14)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Paços de Ferreira/contas21_22.pdf",
+   "campo": "categoria",
+   "valor": "other_income",
+   "linea": null,
+   "etiqueta": "Diferências de Câmbio favoráveis",
+   "motivo": "Claude 2026-10-16 (lote 82): diferencia de cambio favorable operativa, en la nota de Outros Rendimentos: other_income, como Tondela 2020-21 (la categorización la había sacado con no_es_rubro)",
+   "evidencia": "contas21_22.md L330",
    "autor": "Claude",
    "fecha": "2026-10-16"
   }
@@ -54,6 +78,7 @@
  ],
  "notas": [
   "el desglose de \"Outros\" (3 filas) no suma la fila: quedó la fila",
+  "ajuste manual: fila \"Diferências de Câmbio favoráveis\" (ingreso) 28.199,10, en lugar de \"Diferências de Câmbio favoráveis\" (2026-10-16, Claude 2026-10-16 (lote 82): la fila está dentro de la nota 'Outros Rendimentos' (Cedências 1.576.106,85 + Diferenças de câmbio 28.199,10 + Placard 338.529,17 + Outros 241.427,30 = 2.184.262,42), pero la extracción la puso como gasto y la categorización la sacó (no_es_rubro). Es ingreso: sin ella el resultado da -498.594 en vez de -470.395 (diferencia 28.199). Como Marítimo 2023 y Santa Clara 2024-25 (to-do 237 w))",
   "duda de extraer que no afecta la carga: L330: diferencia de cambio incluida en Outros rendimentos del estado; se cargó con lado financiero pero forma parte del renglón operativo."
  ],
  "reintentar": [
@@ -163,14 +188,6 @@
    "origen": "nota que desglosa \"Outros rendimentos\""
   },
   {
-   "etiqueta": "Diferências de Câmbio favoráveis",
-   "lado": "financiero",
-   "M": 0.028199,
-   "pagina": 14,
-   "linea": 330,
-   "origen": "nota que desglosa \"Outros rendimentos\""
-  },
-  {
    "etiqueta": "Lucros Placard",
    "lado": "ingreso",
    "M": 0.338529,
@@ -185,6 +202,14 @@
    "pagina": 14,
    "linea": 333,
    "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Diferências de Câmbio favoráveis",
+   "lado": "ingreso",
+   "M": 0.028199,
+   "pagina": 14,
+   "linea": 330,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Custo das mercadorias vendidas e das matérias consumidas",

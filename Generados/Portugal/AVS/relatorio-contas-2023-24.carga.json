@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf",
- "generado": "2026-10-16T03:18:44.036Z",
+ "generado": "2026-10-16T03:41:08.682Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (avs-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "6 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Indemnizações\" -> wages_squad 0.65; \"Gastos com ação social\" -> wages_squad 0.7; \"Outros gastos com Pessoal\" -> wages_squad 0.65; \"Reversões de Provisões/Imparidades exc. \" -> exceptional_items 0.5; \"Gastos de actividades relacionadas com \"\" -> admin_general_expense 0.7"
   },
   {
    "etapa": "tie-out-resultado",
@@ -194,9 +190,9 @@
     "amountNative": -0.120249,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Seguro Ac. Trab. e Doenças Profi.",
@@ -214,9 +210,9 @@
     "amountNative": -0.098571,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos com Pessoal",
@@ -224,9 +220,9 @@
     "amountNative": -0.011849,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Depreciações de ativos tangíveis",
@@ -260,13 +256,13 @@
    },
    {
     "rawLabel": "Reversões de Provisões/Imparidades exc. Atletas",
-    "normalizedCategory": "exceptional_items",
+    "normalizedCategory": "other_amortisation",
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos em dia de jogo",
@@ -304,9 +300,9 @@
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos com conservação e reparação",
@@ -324,9 +320,9 @@
     "amountNative": -0.0281,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos de operações extra-futebol não relacionadas com o clube (m)",
@@ -675,11 +671,11 @@
    "origen": "verificacion (nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal))",
    "signoFijo": 0.120249,
    "cat": "wages_squad",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): nota Gastos com o pessoal, precedente indemnizações => wages_squad [relatorio-contas-2023-24.md L1135]",
    "destino": "expense",
    "amountNative": -0.120249
   },
@@ -706,11 +702,11 @@
    "origen": "verificacion (nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal))",
    "signoFijo": 0.098571,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): nota Gastos com o pessoal, precedente Famalicão [relatorio-contas-2023-24.md L1137]",
    "destino": "expense",
    "amountNative": -0.098571
   },
@@ -722,11 +718,11 @@
    "origen": "verificacion (nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal))",
    "signoFijo": 0.011849,
    "cat": "wages_squad",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): residual de la nota Gastos com o pessoal [relatorio-contas-2023-24.md L1138]",
    "destino": "expense",
    "amountNative": -0.011849
   },
@@ -782,12 +778,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0,
-   "cat": "exceptional_items",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): bloque Depreciações, Amortizações e Perdas por imparidade exc. atletas; provisiones e imparidades no-pases => other_amortisation; importe 0 [relatorio-contas-2023-24.md L570]",
    "destino": "expense",
    "amountNative": 0
   },
@@ -844,11 +840,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0,
    "cat": "admin_general_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): Outros gastos operacionais, importe 0 [relatorio-contas-2023-24.md L576]",
    "destino": "expense",
    "amountNative": 0
   },
@@ -875,11 +871,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.0281,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): honorarios de agentes, como Rio Ave y Porto [relatorio-contas-2023-24.md L578]",
    "destino": "expense",
    "amountNative": -0.0281
   },
@@ -1082,7 +1078,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 2,
   "lineasIngreso": 13,
   "lineasGasto": 22,
   "metaFilas": 4,

@@ -3,7 +3,7 @@
  "pdf": "Clubes/Portugal/Paços de Ferreira/contas21_22.pdf",
  "club": "pacosdeferreira-pt",
  "year": 2022,
- "generatedAt": "2026-10-16T03:34:30.690Z",
+ "generatedAt": "2026-10-16T03:45:03.502Z",
  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
  "rubros": [
   {
@@ -97,15 +97,6 @@
    ]
   },
   {
-   "label": "Diferências de Câmbio favoráveis",
-   "lado": "expense",
-   "page": 14,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "values": [
-    0.028199
-   ]
-  },
-  {
    "label": "Lucros Placard",
    "lado": "revenue",
    "page": 14,
@@ -121,6 +112,15 @@
    "section": "nota que desglosa \"Outros rendimentos\"",
    "values": [
     0.241427
+   ]
+  },
+  {
+   "label": "Diferências de Câmbio favoráveis",
+   "lado": "revenue",
+   "page": 14,
+   "section": "ajuste manual",
+   "values": [
+    0.028199
    ]
   },
   {

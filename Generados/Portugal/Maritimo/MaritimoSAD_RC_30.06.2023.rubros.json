@@ -3,7 +3,7 @@
  "pdf": "Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.pdf",
  "club": "maritimo-pt",
  "year": 2023,
- "generatedAt": "2026-10-16T03:34:30.613Z",
+ "generatedAt": "2026-10-16T03:44:37.982Z",
  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
  "rubros": [
   {
@@ -52,15 +52,6 @@
    ]
   },
   {
-   "label": "Juros",
-   "lado": "expense",
-   "page": 44,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "values": [
-    0.598818
-   ]
-  },
-  {
    "label": "Cedências de atletas",
    "lado": "revenue",
    "page": 44,
@@ -76,6 +67,15 @@
    "section": "nota que desglosa \"Outros rendimentos\"",
    "values": [
     0.997073
+   ]
+  },
+  {
+   "label": "Juros",
+   "lado": "revenue",
+   "page": 44,
+   "section": "ajuste manual",
+   "values": [
+    0.598818
    ]
   },
   {
