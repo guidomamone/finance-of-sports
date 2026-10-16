@@ -62,3 +62,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Benfica/relatorio-contas-2021-22.pdf` (sourceId `benfica-pt-relatorio-contas-2021-22`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.pdf` (sourceId `benfica-pt-relatorio-contas-2022-23-pos-ag`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Benfica/relatorio-contas-2023-24.pdf` (sourceId `benfica-pt-relatorio-contas-2023-24`).
