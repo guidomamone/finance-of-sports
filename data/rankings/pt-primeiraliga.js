@@ -126,6 +126,9 @@ window.RANKINGS["pt-primeiraliga"] = {
       { id:"rioave-pt", revenue:8.383, reportType:"official_balance_sheet",
         sourceId:"rioave-pt-relatorio-sduq-2022-2023",
         mix:[["Comercial / Sponsors",0.577],["Estadio",0.121],["Televisión",5.596],["Premios por competencias",0.048],["Venta de Jugadores",1.329],["Otros ingresos",0.713]] },
+      { id:"vizela-pt", revenue:7.345, reportType:"official_balance_sheet",
+        sourceId:"vizela-pt-relatorio-e-contas-fcv-2022-23-aprovadas",
+        mix:[["Cuotas Sociales",0.052],["Comercial / Sponsors",0.699],["Estadio",0.208],["Televisión",4.075],["Premios por competencias",0.272],["Venta de Jugadores",1.105],["Otros ingresos",0.934]] },
     ],
   },
   2022: {

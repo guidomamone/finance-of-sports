@@ -16,3 +16,5 @@
 - Último chequeo: 2026-10-08.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Vizela/Relatorio-e-Contas-2024-25-FCV.pdf` (sourceId `vizela-pt-relatorio-e-contas-2024-25-fcv`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.pdf` (sourceId `vizela-pt-relatorio-e-contas-fcv-2022-23-aprovadas`).

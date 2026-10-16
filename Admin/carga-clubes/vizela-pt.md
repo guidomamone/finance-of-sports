@@ -106,6 +106,66 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2024–25 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Vizela".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Quotizações | pág. 21, Jev 1 |
+| 2 | Receitas de bilheteira | pág. 21, Jev 1 |
+| 3 | Patrocínios, publicidade e corporate | pág. 21, Jev 1 |
+| 4 | Receitas de televisão | pág. 21, Jev 1 |
+| 5 | Merchandising | pág. 21, Jev 1 |
+| 6 | Competições da UEFA e nacionais | pág. 21, Jev 1 |
+| 7 | Cedência de jogadores | pág. 21, Jev 1 |
+| 8 | Outros | pág. 21, precedente |
+| 9 | Município de Vizela | pág. 31, Claude 0.8 |
+| 10 | I.E.F.P | pág. 31, Claude 0.85 |
+| 11 | Outras entidades | pág. 31, Jev 0.99 |
+| 12 | Outros rendimentos e ganhos | pág. 21, Jev 1 |
+| 13 | Gastos/rendimentos com transações de passes de atletas | pág. 21, Jev 0.97 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 21, Jev 0.97 |
+| 2 | Subcontratos | pág. 36, Jev 0.98 |
+| 3 | Serviços especializados | pág. 36, Jev 0.98 |
+| 4 | Materiais | pág. 36, Claude 0.8 |
+| 5 | Energia e fluídos | pág. 36, Jev 1 |
+| 6 | Deslocações, estadas e transportes | pág. 36, Jev 1 |
+| 7 | Serviços diversos | pág. 36, Jev 0.96 |
+| 8 | Remunerações órgãos sociais | pág. 37, Jev 1 |
+| 9 | Remunerações pessoal | pág. 37, precedente |
+| 10 | Encargos sobre remunerações | pág. 37, Jev 0.97 |
+| 11 | Seguros | pág. 37, precedente |
+| 12 | Outros gastos com pessoal | pág. 37, precedente |
+| 13 | Imparidade de dívidas a receber (perdas/reversões) | pág. 21, Jev 0.99 |
+| 14 | Impostos | pág. 38, Jev 0.92 |
+| 15 | Multas e outras penalidades | pág. 38, Jev 0.99 |
+| 16 | Outros | pág. 38, Jev 0.99 |
+| 17 | Gastos/reversões de depreciação e de amortização (excluindo passes de jogadores) | pág. 21, Claude 0.85 |
+| 18 | Gastos/reversões de depreciação e de amortização com passes de jogadores | pág. 21, Jev 0.97 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2022–23 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Vizela".
+```
+
 ## Fuentes
 
 ### vizela-pt-relatorio-e-contas-2024-25-fcv
@@ -114,4 +174,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Vizela/Relatorio-e-Contas-2024-25-FCV.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vizela-pt-relatorio-e-contas-fcv-2022-23-aprovadas
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
