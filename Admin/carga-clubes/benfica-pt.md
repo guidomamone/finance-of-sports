@@ -609,6 +609,111 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2017–18 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
 ```
 
+## 2012
+
+### Ingresos
+
+```text
+2012: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Benfica/relatorio-contas-2011-12.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Benfica/relatorio-contas-2011-12.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Publicidade e patrocínios | pág. 96, Jev 1 |
+| 2 | Receitas de bilheteira | pág. 96, Jev 1 |
+| 3 | Transmissões televisivas | pág. 96, Jev 1 |
+| 4 | Quotizações | pág. 96, precedente |
+| 5 | Corporate | pág. 96, precedente |
+| 6 | Calivos | pág. 96, Jev 0.98 |
+| 7 | Rendas de espaço | pág. 96, precedente |
+| 8 | Bilhetes de época | pág. 96, precedente |
+| 9 | Títulos Centenarium e Fundador | pág. 96, precedente |
+| 10 | Cedência de atletas | pág. 96, precedente |
+| 11 | Receitas outras competições | pág. 96, Jev 0.94 |
+| 12 | Cachets | pág. 96, precedente |
+| 13 | Outros | pág. 96, Claude 0.85 |
+| 14 | Prémios UEFA | pág. 98, Jev 1 |
+| 15 | Comissões | pág. 98, precedente |
+| 16 | Assistência técnica | pág. 98, Jev 0.95 |
+| 17 | Royalties | pág. 98, precedente |
+| 18 | Indemnizações de seguros | pág. 98, Jev 1 |
+| 19 | Outros proveitos | pág. 98, Claude 0.85 |
+| 20 | Alienações de direitos de atletas | pág. 104, Jev 1 |
+| 21 | Cedência de direitos Benfica Stars Fund | pág. 104, precedente |
+| 22 | Fundo de solidariedade | pág. 104, Jev 0.96 |
+| 23 | Outros proveitos | pág. 104, Claude 0.85 |
+| 24 | Custos com transferência de atletas | pág. 104, precedente |
+| 25 | Fundo de solidariedade | pág. 104, Jev 0.96 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trabalhos especializados | pág. 99, precedente |
+| 2 | Deslocações e estadas | pág. 99, precedente |
+| 3 | Honorários | pág. 99, precedente |
+| 4 | Equipamento desportivo | pág. 99, precedente |
+| 5 | Serviços de catering/softdrink | pág. 99, precedente |
+| 6 | Cedência direitos de imagem | pág. 99, precedente |
+| 7 | Vigilância e segurança | pág. 99, precedente |
+| 8 | Conservação e reparação | pág. 99, precedente |
+| 9 | Comissões | pág. 99, precedente |
+| 10 | Electricidade | pág. 99, Jev 1 |
+| 11 | Subcontratos | pág. 99, precedente |
+| 12 | Licença marca Benfica | pág. 99, precedente |
+| 13 | Rendas e alugueres | pág. 99, Jev 0.96 |
+| 14 | Limpeza, higiene e conforto | pág. 99, Jev 1 |
+| 15 | Publicidade e propaganda | pág. 99, Jev 1 |
+| 16 | Despesas médicas | pág. 99, precedente |
+| 17 | Cachets | pág. 99, precedente |
+| 18 | Seguros | pág. 99, Jev 0.97 |
+| 19 | Água e outros fluidos | pág. 99, Jev 0.99 |
+| 20 | Comunicação | pág. 99, Jev 1 |
+| 21 | Despesas de representação | pág. 99, Jev 0.99 |
+| 22 | Acordos e protocolos | pág. 99, precedente |
+| 23 | Outros fornecimentos e serviços | pág. 99, precedente |
+| 24 | Remunerações fixas | pág. 100, precedente |
+| 25 | Remunerações variáveis / prémios | pág. 100, Jev 1 |
+| 26 | Remunerações fixas | pág. 100, precedente |
+| 27 | Remunerações variáveis / prémios | pág. 100, Jev 1 |
+| 28 | Indemnizações | pág. 100, precedente |
+| 29 | Benefícios pós-emprego | pág. 100, precedente |
+| 30 | Encargos sobre remunerações | pág. 100, precedente |
+| 31 | Seguros de acidentes de trabalho | pág. 100, precedente |
+| 32 | Outros custos | pág. 100, Jev 0.96 |
+| 33 | Edifícios e outras construções | pág. 102, precedente |
+| 34 | Equipamento básico | pág. 102, precedente |
+| 35 | Equipamento de transporte | pág. 102, precedente |
+| 36 | Ferramentas e utensílios | pág. 102, Claude 0.85 |
+| 37 | Equipamento administrativo e utensílios | pág. 102, Jev 0.95 |
+| 38 | Outras imobilizações corpóreas | pág. 102, precedente |
+| 39 | Direito utilização da marca 'Benfica' | pág. 102, Claude 0.92 |
+| 40 | Galeria comercial | pág. 102, Claude 0.88 |
+| 41 | Reforço de provisões para outros riscos | pág. 103, Claude 0.9 |
+| 42 | Redução de provisões para outros riscos | pág. 103, Claude 0.85 |
+| 43 | Reforço de imparidade de clientes/devedores | pág. 103, Jev 0.99 |
+| 44 | Redução de imparidade de clientes/devedores | pág. 103, Jev 0.96 |
+| 45 | Impostos | pág. 103, Jev 0.96 |
+| 46 | Outros custos e perdas operacionais | pág. 103, Jev 1 |
+| 47 | Amortizações do exercício | pág. 104, Jev 0.97 |
+| 48 | Direitos económicos de atletas | pág. 104, Jev 0.92 |
+| 49 | Perdas de imparidade | pág. 104, precedente |
+| 50 | Abates de atletas - revogações | pág. 104, Claude 0.85 |
+| 51 | Resultados relativos a investimentos em associadas | pág. 71, Jev 0.99 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2011–12 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
+```
+
 ## 2010
 
 ### Ingresos
@@ -900,4 +1005,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/prestacao-contas-2009-11-03.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### benfica-pt-relatorio-contas-2011-12
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2011-12.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
