@@ -138,6 +138,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2020: {
     leagueSize: null,
     clubs: [
+      { id:"sportingcp-pt", revenue:196.499, reportType:"official_balance_sheet",
+        sourceId:"sportingcp-pt-relatorio-contas-2019-20",
+        mix:[["Comercial / Sponsors",19.89],["Estadio",13.974],["Televisión",23.258],["Premios por competencias",11.025],["Venta de Jugadores",120.981],["Otros ingresos",7.372]] },
       { id:"braga-pt", revenue:75.121, reportType:"official_balance_sheet",
         sourceId:"braga-pt-relatorio-contas-2019-20",
         mix:[["Comercial / Sponsors",4.218],["Estadio",0.931],["Televisión",7.403],["Premios por competencias",12.57],["Venta de Jugadores",27.27],["Otros ingresos",22.729]] },
