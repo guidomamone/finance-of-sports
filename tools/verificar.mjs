@@ -498,7 +498,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const lect2 = existsSync(pV2) ? Number(((JSON.parse(readFileSync(pV2, 'utf8')).chequeos || []).find((c) => c.nombre === 'lectura')?.detalle?.match(/lectura (\d)/) || [])[1] || 0) : 0;
     const subRep2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "subtotal repetido"')) : false; // (to-do 175)
     const ventana2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "gestión de jugadores neta"')) : false; // (to-do 170)
-    const acum2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "acumulados"')) : false; // (to-do 237 q)
+    const acumNotas2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).filter((n) => String(n).startsWith('escalón "acumulados"')) : []; const otrosRes2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "otros con el signo del resultado"')) : false; const acum2 = acumNotas2.length ? (acumNotas2.some((n) => n.includes('(sin-otros)')) ? 'sin-otros' : true) : otrosRes2 ? 'otros-resultado' : false; // (to-do 237 q)
     return { otro, U2, k2, lect2, subRep2, ventana2, acum2, anclado: !!MULT[U2.escala] || esc2?.escalon === 1, A2: armar(JSON.parse(readFileSync(pF2, 'utf8')), U2, false, k2) };
   };
   // Los ingresos de un documento leídos con UNA lectura de la escalera (Versión 398): 3 suma los renglones sin lado por su signo (y lee los
@@ -520,7 +520,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     }
     const g = A.estado.filter((f) => f.lado === 'gasto' && f.tipo === 'renglon' && isFinite(f.M) && f.M); const neg = g.length ? g.filter((f) => f.M < 0).length >= g.length / 2 : true;
     const otrosI = A.estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo] && (neg ? f[campo] > 0 : f[campo] < 0)).map((f) => ({ ...f, [campo]: Math.abs(f[campo]) }));
-    return [...A.lineasDeLado('ingreso', campo, true, nivel >= 4, (subRep || acum) && nivel === 4, false, acum && nivel === 4), ...otrosI];
+    const acumB = acum === true || acum === 'sin-otros'; // (to-do 237 q) 'sin-otros': el escalón "acumulados" cerró sin las filas sin lado; 'otros-resultado': cerró con ellas al signo del resultado
+    const otrosV = nivel !== 4 ? otrosI : acum === 'sin-otros' ? [] : acum === 'otros-resultado' ? A.estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo] > 0).map((f) => ({ ...f, [campo]: Math.abs(f[campo]) })) : otrosI;
+    return [...A.lineasDeLado('ingreso', campo, true, nivel >= 4, (subRep || acumB) && nivel === 4, false, acumB && nivel === 4), ...otrosV];
   };
   // compara los ingresos del año en común (mi columna actual con la "año anterior" del siguiente, o al revés) con mi documento a escala k
   const saleDelAjuste = (a, f) => (a.reemplaza ? String(f.etiqueta).trim() === a.reemplaza.trim() || String(f.origen || '').includes(`desglosa "${a.reemplaza.trim()}"`) : false)
@@ -783,7 +785,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // renglones sin lado según su signo, como la lectura 3. Caso: Juventus 2015-16 a 2019-20, "Other non-recurring revenues and costs"
     // (+10.638.769, 2015-16 .md L1880) y "Group's share of results of associates" (−661.133, L1884) quedan sin lado; las lecturas 3-4 los
     // suman pero fallan por el total impreso de ingresos, y la 5 no los suma. Solo se llega acá si fallaron la 0 a la 5.
-    if ((nivel >= 3 && nivel < 5) || nivel >= 6) for (const f of otros) { if (excluirOtros && excluirOtros.has(f)) continue; if (nivel >= 6 && reemplazada(f)) continue; const esGasto = gastosNeg ? f.M < 0 : f.M > 0; (esGasto ? gas : ing).push({ ...f, lado: esGasto ? 'gasto' : 'ingreso', M: Math.abs(f.M), origen: `estado (sin lado en el documento: entra como ${esGasto ? 'gasto' : 'ingreso'} por su signo, impreso ${f.M < 0 ? 'en negativo' : 'en positivo'}; lectura ${nivel >= 6 ? 6 : 3})` }); } // el origen le llega a Jev y a Claude como sección (Versión 346)
+    if ((nivel >= 3 && nivel < 5) || nivel >= 6) for (const f of otros) { if (excluirOtros && excluirOtros.has(f)) continue; if (nivel >= 6 && reemplazada(f)) continue; const esGasto = bases?.otrosResultado ? f.M < 0 : gastosNeg ? f.M < 0 : f.M > 0; (esGasto ? gas : ing).push({ ...f, lado: esGasto ? 'gasto' : 'ingreso', M: Math.abs(f.M), origen: `estado (sin lado en el documento: entra como ${esGasto ? 'gasto' : 'ingreso'} por su signo, impreso ${f.M < 0 ? 'en negativo' : 'en positivo'}; lectura ${nivel >= 6 ? 6 : 3})` }); } // el origen le llega a Jev y a Claude como sección (Versión 346)
     const ajuste = (arr, total, nombre, lineaTotal) => {
       if (total == null || !isFinite(total)) { ch.push({ nombre: `total de ${nombre}`, ok: null, detalle: 'el documento no lo imprime' }); return arr; }
       const sm = suma(arr); const tolRed = Math.max(TOL, 0.5 * arr.reduce((a, f) => a + (f.u || 0), 0));
@@ -1067,7 +1069,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (!E && finBloque) { const ec = evaluar(4, false, finBloque, { ing: ing4c, gas: gas4c, sinTotales: true }); if (ec.cierra && ec.exacto) { E = ec; escalonFinBloque = true; } }
   // (to-do 237 q) ESCALÓN "ACUMULADOS" (el último: solo si nada cerró). Los totales (A)-(G) del POC no se cuentan y el financiero toma el
   // signo de su lado (ver lineasDeLado). Como los totales impresos acumulan lados, la compuerta es el resultado impreso EXACTO.
-  if (!E && finAcum) { const ea = evaluar(4, false, finAcum, { ing: ing4a, gas: gas4a, sinTotales: true }); if (ea.cierra && ea.exacto) { E = ea; escalonAcum = true; } }
+  if (!E && finAcum) { let ea = evaluar(4, false, finAcum, { ing: ing4a, gas: gas4a, sinTotales: true }); let sinOtros = false; if (!(ea.cierra && ea.exacto) && otros.length) { ea = evaluar(4, false, finAcum, { ing: ing4a, gas: gas4a, sinTotales: true }, new Set(otros)); sinOtros = true; } if (ea.cierra && ea.exacto) { E = ea; escalonAcum = sinOtros ? 'sin-otros' : true; } }
+  // (to-do 237 q) ESCALÓN "OTROS CON EL SIGNO DEL RESULTADO" (después de "acumulados"): una fila sin lado cuyo rótulo es neto, "(Custos)/Proveitos
+  // com transacções de passes de jogadores", se imprime con el signo del RESULTADO (negativo = costo) y no con el de los gastos; y el total
+  // de costos impreso excluye la amortización de pases, así que no es compuerta. Compuerta: resultado impreso EXACTO.
+  let escalonOtrosRes = false;
+  if (!E && otros.length) { const eo = evaluar(4, false, null, { ing: ing4, gas: gas4, sinTotales: true, otrosResultado: true }); if (eo.cierra && eo.exacto) { E = eo; escalonOtrosRes = true; } }
   const sinNumero = !E && E0.ch.every((c) => c.ok === null) && !filaAntes;
   if (!E) E = E0;
   let ing = E.ing; let gas = E.gas; chequeos.push(...E.ch);
@@ -1098,7 +1105,8 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (escalonSubRep) notas.push(...notasSubRep, 'escalón "subtotal repetido": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba');
   if (escalonD) fin.splice(0, fin.length, ...finD);
   if (escalonFinBloque) { fin.splice(0, fin.length, ...finBloque); notas.push(...notasFinBloque, 'escalón "financiero dentro de un subtotal": cerró el resultado exacto (los totales impresos mezclan lados)'); }
-  if (escalonAcum) { fin.splice(0, fin.length, ...finAcum); notas.push(...notasAcum, 'escalón "acumulados": cerró el resultado exacto sin contar los totales que acumulan el anterior (to-do 237 q)'); }
+  if (escalonOtrosRes) notas.push('escalón "otros con el signo del resultado": las filas sin lado (rótulo neto "(Custos)/Proveitos ...") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)');
+  if (escalonAcum) { fin.splice(0, fin.length, ...finAcum); notas.push(...notasAcum, `escalón "acumulados": cerró el resultado exacto sin contar los totales que acumulan el anterior${escalonAcum === 'sin-otros' ? ' ni las filas sin lado (sin-otros)' : ''} (to-do 237 q)`); }
   if ((escalon17 || escalonD) && nota17bis) notas.push(nota17bis);
   if (escalon17 && nota17D) notas.push(nota17D);
   if (escalon17) { fin.splice(0, fin.length, ...fin17); notas.push(`escalón "17) resta": el financiero con el 17) restando da el total de C impreso; cerró la lectura ${E.nivel}`); }
@@ -1171,8 +1179,8 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // (Versión 393) la columna del año anterior se lee con LA MISMA LECTURA con la que cerró este año: si cerró con la lectura 3, los
     // renglones sin lado entran por su signo (y los subtotales se leen con ellos). Caso: Goiás 2024, la columna 2023 sumaba 89.972.753
     // (sin "Outras Receitas e Despesas" 140.214.785) y el sitio tiene 230.187.538 (cargado con la lectura 3): falsa alarma.
-    const otrosA = E.nivel >= 3 ? otros.filter((f) => isFinite(f.A) && f.A && (gastosNeg ? f.A > 0 : f.A < 0)).map((f) => ({ ...f, A: Math.abs(f.A) })) : [];
-    const ingA = E.nivel >= 5 ? ingresosConLectura({ estado, lineasDeLado }, 'A', E.nivel, false, escalonVentanaOtros) : E.nivel >= 3 ? [...lineasDeLado('ingreso', 'A', true, E.nivel >= 4, (escalonSubRep || escalonAcum) && E.nivel === 4, false, escalonAcum && E.nivel === 4), ...otrosA] : lineasDeLado('ingreso', 'A'); let sA = suma(ingA, 'A'); // (Versión 416) la lectura 5 también acá
+    const otrosA = E.nivel >= 3 ? otros.filter((f) => isFinite(f.A) && f.A && (escalonOtrosRes ? f.A > 0 : gastosNeg ? f.A > 0 : f.A < 0)).map((f) => ({ ...f, A: Math.abs(f.A) })) : [];
+    const ingA = E.nivel >= 5 ? ingresosConLectura({ estado, lineasDeLado }, 'A', E.nivel, false, escalonVentanaOtros) : E.nivel >= 3 ? [...lineasDeLado('ingreso', 'A', true, E.nivel >= 4, (escalonSubRep || escalonAcum) && E.nivel === 4, false, escalonAcum && E.nivel === 4), ...(escalonAcum === 'sin-otros' && E.nivel === 4 ? [] : otrosA)] : lineasDeLado('ingreso', 'A'); let sA = suma(ingA, 'A'); // (Versión 416) la lectura 5 también acá
     const prodI = (cd.revenueLinesByYear?.[prev] || []).reduce((a, l) => a + l.amountNative, 0);
     // Una GANANCIA extraordinaria que un ajuste `categoria` sacó de los ingresos del año anterior (exceptional_items en positivo) también
     // cuenta: el documento la sigue sumando como ingreso. Caso: Goiás 2024 contra 2023 (venta del 20% de la Liga Forte União, 140.214.785).
@@ -1196,7 +1204,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // (el documento vecino y su escala: vecinoDe(), arriba, junto a la escalera de escala)
   for (const [dy, v] of vecinosDoc) {
     const { otro } = v;
-    const { mio, suyo, ok, sinColumna, otroRegimen } = compararVecino(dy, v, kEsc, E.nivel, escalonSubRep, escalonVentanaOtros, E.ing, escalonAcum);
+    const { mio, suyo, ok, sinColumna, otroRegimen } = compararVecino(dy, v, kEsc, E.nivel, escalonSubRep, escalonVentanaOtros, E.ing, escalonAcum || (escalonOtrosRes ? 'otros-resultado' : false));
     vecinos.push(ok);
     if (otroRegimen) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no` }); continue; }
     if (sinColumna) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} no trae la columna del año anterior` }); continue; }
