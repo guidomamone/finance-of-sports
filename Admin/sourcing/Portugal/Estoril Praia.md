@@ -32,3 +32,5 @@ se retoma.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Estoril Praia/relatorio-contas-2024-25.pdf` (sourceId `estorilpraia-pt-relatorio-contas-2024-25`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Estoril Praia/relatorio-contas-2021-22.pdf` (sourceId `estorilpraia-pt-relatorio-contas-2021-22`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Estoril Praia/relatorio-contas-2022-23.pdf` (sourceId `estorilpraia-pt-relatorio-contas-2022-23`).

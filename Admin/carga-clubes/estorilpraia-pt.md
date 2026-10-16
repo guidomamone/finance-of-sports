@@ -110,6 +110,77 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia única por palabras "Estoril" = "Estoril Praia".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Estoril Praia/relatorio-contas-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Estoril Praia/relatorio-contas-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas | pág. 23, precedente |
+| 2 | Receitas de bilheteira | pág. 23, Jev 1 |
+| 3 | Patrocínio e publicidade | pág. 23, Jev 1 |
+| 4 | Direitos de transmissão | pág. 23, Jev 1 |
+| 5 | Atividades comerciais | pág. 23, Jev 0.99 |
+| 6 | Contribuições da UEFA e prémios monetários | pág. 23, Jev 1 |
+| 7 | Subsídio do Estado e Outros entes públicos | pág. 55, Jev 0.99 |
+| 8 | Subsídio da UEFA | pág. 55, precedente |
+| 9 | Outros subsídios | pág. 55, Jev 0.99 |
+| 10 | Rendimentos suplementares | pág. 57, Jev 0.99 |
+| 11 | Correções relativas a períodos anteriores | pág. 57, precedente |
+| 12 | Outros rendimentos | pág. 57, Jev 0.99 |
+| 13 | (Gastos)/rendimentos com transações de passes de atletas | pág. 23, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 23, Jev 0.97 |
+| 2 | Trabalhos especializados | pág. 55, Jev 0.99 |
+| 3 | Publicidade e Propaganda | pág. 55, Jev 1 |
+| 4 | Vigilância e Segurança | pág. 55, Jev 0.96 |
+| 5 | Honorários | pág. 55, Jev 1 |
+| 6 | Comissões | pág. 55, precedente |
+| 7 | Conservação e Reparação | pág. 55, Jev 0.99 |
+| 8 | Serviços bancários | pág. 55, Jev 0.98 |
+| 9 | Materiais | pág. 55, precedente |
+| 10 | Energia e fluídos | pág. 55, Jev 1 |
+| 11 | Deslocações, estadas e transportes | pág. 55, Jev 1 |
+| 12 | Serviços diversos | pág. 55, Jev 0.95 |
+| 13 | Remunerações dos órgãos sociais | pág. 56, Jev 1 |
+| 14 | Remunerações do pessoal | pág. 56, precedente |
+| 15 | Indemnizações | pág. 56, precedente |
+| 16 | Encargos sobre remunerações | pág. 56, Jev 0.92 |
+| 17 | Seguros | pág. 56, precedente |
+| 18 | Gastos de ação social | pág. 56, precedente |
+| 19 | Outros gastos com pessoal | pág. 56, precedente |
+| 20 | Imparidade de dívidas a receber (perdas/reversões) | pág. 23, Jev 0.98 |
+| 21 | Impostos | pág. 57, Jev 0.93 |
+| 22 | Correções relativas a períodos anteriores | pág. 57, Jev 0.99 |
+| 23 | Quotizações | pág. 57, precedente |
+| 24 | Multas desportivas | pág. 57, Jev 0.92 |
+| 25 | Inscrições desportivas | pág. 57, precedente |
+| 26 | Donativos | pág. 57, Jev 1 |
+| 27 | Outros gastos | pág. 57, Jev 1 |
+| 28 | Gastos/reversões de depreciação e de amortização (excluindo passes de jogadores) | pág. 23, Jev 0.97 |
+| 29 | Gastos/reversões de depreciação e de amortização com passes de jogadores | pág. 23, Jev 0.99 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2022–23 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia única por palabras "Estoril" = "Estoril Praia".
+```
+
 ## 2022
 
 ### Ingresos
@@ -196,4 +267,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Estoril Praia/relatorio-contas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### estorilpraia-pt-relatorio-contas-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Estoril Praia/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

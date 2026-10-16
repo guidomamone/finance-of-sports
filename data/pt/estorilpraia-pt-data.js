@@ -31,6 +31,21 @@ const estorilpraiaptRevenueLinesByYear = {
     { rawLabel:'Imparidade de dívidas a receber (perdas/reversões)', normalizedCategory:'other_income', amountNative:0.166675, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/rendimentos com transações de passes de atletas', normalizedCategory:'player_sales', amountNative:3.512275, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Vendas', normalizedCategory:'sponsorship_commercial', amountNative:0.038979, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas de bilheteira', normalizedCategory:'matchday_competition', amountNative:0.202393, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínio e publicidade', normalizedCategory:'sponsorship_commercial', amountNative:0.767723, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos de transmissão', normalizedCategory:'broadcasting', amountNative:3.6, disclosureLevel:'aggregated' },
+    { rawLabel:'Atividades comerciais', normalizedCategory:'sponsorship_commercial', amountNative:0.340764, disclosureLevel:'aggregated' },
+    { rawLabel:'Contribuições da UEFA e prémios monetários', normalizedCategory:'competition_bonus', amountNative:0.061477, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídio do Estado e Outros entes públicos', normalizedCategory:'other_income', amountNative:0.018011, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídio da UEFA', normalizedCategory:'competition_bonus', amountNative:0.2074, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros subsídios', normalizedCategory:'other_income', amountNative:0.019721, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendimentos suplementares', normalizedCategory:'other_income', amountNative:0.028166, disclosureLevel:'aggregated' },
+    { rawLabel:'Correções relativas a períodos anteriores', normalizedCategory:'other_income', amountNative:0.00387, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:0.083997, disclosureLevel:'aggregated' },
+    { rawLabel:'(Gastos)/rendimentos com transações de passes de atletas', normalizedCategory:'player_sales', amountNative:7.207821, disclosureLevel:'aggregated' },
+  ],
 };
 const estorilpraiaptExpenseLinesByYear = {
   2025: [
@@ -90,6 +105,37 @@ const estorilpraiaptExpenseLinesByYear = {
     { rawLabel:'Gastos/reversões de depreciação e de amortização (excluindo passes de jogadores)', normalizedCategory:'depreciation', amountNative:-0.198826, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização com passes de jogadores', normalizedCategory:'player_amortisation', amountNative:-0.313018, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Custo das mercadorias vendidas e das matérias consumidas', normalizedCategory:'other_expenses', amountNative:-0.032873, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-1.402868, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade e Propaganda', normalizedCategory:'admin_general_expense', amountNative:-0.000129, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e Segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.16693, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.925724, disclosureLevel:'aggregated' },
+    { rawLabel:'Comissões', normalizedCategory:'other_expenses', amountNative:-0.009243, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e Reparação', normalizedCategory:'admin_general_expense', amountNative:-0.06273, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços bancários', normalizedCategory:'admin_general_expense', amountNative:-0.002884, disclosureLevel:'aggregated' },
+    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.031028, disclosureLevel:'aggregated' },
+    { rawLabel:'Energia e fluídos', normalizedCategory:'admin_general_expense', amountNative:-0.122882, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações, estadas e transportes', normalizedCategory:'match_organisation_expense', amountNative:-0.782496, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços diversos', normalizedCategory:'other_expenses', amountNative:-0.36272, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações dos órgãos sociais', normalizedCategory:'admin_general_expense', amountNative:-0.193484, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações do pessoal', normalizedCategory:'wages_squad', amountNative:-5.850472, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações', normalizedCategory:'wages_squad', amountNative:-0.023895, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre remunerações', normalizedCategory:'wages_squad', amountNative:-0.5785, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.65505, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos de ação social', normalizedCategory:'wages_squad', amountNative:-0.00028, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos com pessoal', normalizedCategory:'wages_squad', amountNative:-0.223598, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de dívidas a receber (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.004569, disclosureLevel:'aggregated' },
+    { rawLabel:'Correções relativas a períodos anteriores', normalizedCategory:'exceptional_items', amountNative:-0.006215, disclosureLevel:'aggregated' },
+    { rawLabel:'Quotizações', normalizedCategory:'admin_general_expense', amountNative:-0.063153, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas desportivas', normalizedCategory:'other_expenses', amountNative:-0.031469, disclosureLevel:'aggregated' },
+    { rawLabel:'Inscrições desportivas', normalizedCategory:'match_organisation_expense', amountNative:-0.119114, disclosureLevel:'aggregated' },
+    { rawLabel:'Donativos', normalizedCategory:'other_expenses', amountNative:-0.03525, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos', normalizedCategory:'other_expenses', amountNative:-0.008238, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização (excluindo passes de jogadores)', normalizedCategory:'depreciation', amountNative:-0.227239, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização com passes de jogadores', normalizedCategory:'player_amortisation', amountNative:-0.142941, disclosureLevel:'aggregated' },
+  ],
 };
 const estorilpraiaptFiscalYearMeta = {
   2025: {
@@ -121,6 +167,20 @@ const estorilpraiaptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:9.548583, officialTotalExpenses:9.879659, officialPAT:-0.438511,
   },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'estorilpraia-pt-relatorio-contas-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.05226, tax:-0.043821,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.05226},
+      {label:'Imposto sobre o rendimento do período', value:-0.043821},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:12.580322, officialTotalExpenses:12.065974, officialPAT:0.418266,
+  },
 };
 const estorilpraiaptPresupuestoOverlayByYear = {};
 
@@ -145,6 +205,11 @@ Object.assign(sources, {
   'estorilpraia-pt-relatorio-contas-2021-22': {
     id:'estorilpraia-pt-relatorio-contas-2021-22', clubId:'estorilpraia-pt',
     title:'Estoril Praia – Futebol, SAD — relatorio-contas-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'estorilpraia-pt-relatorio-contas-2022-23': {
+    id:'estorilpraia-pt-relatorio-contas-2022-23', clubId:'estorilpraia-pt',
+    title:'Estoril Praia – Futebol, SAD — relatorio-contas-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
