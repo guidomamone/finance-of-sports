@@ -13,3 +13,5 @@
 
 - Relatório e Contas 2022/23, 2023/24 y 2024/25 (`Relatorio-e-Contas-202223/202324/202425`); el sitio de la SAD también publica estatutos y el protocolo clube-SAD.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf` (sourceId `oliveirense-pt-relatorio-e-contas-202425`).

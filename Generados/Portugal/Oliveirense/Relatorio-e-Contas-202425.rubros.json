@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
   "club": "oliveirense",
   "year": 2025,
-  "generatedAt": "2026-10-16T02:25:06.681Z",
+  "generatedAt": "2026-10-16T02:44:08.277Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         0.037254
       ],
-      "glosa": "Fondo de Infraestructuras - LPF"
+      "glosa": "Fondo de infraestructuras - LPF"
     },
     {
       "label": "Prémio Allianz Cup -LPF",
@@ -74,7 +74,7 @@
       "values": [
         0.001224
       ],
-      "glosa": "Subv. de desplazamiento - FPF"
+      "glosa": "Subvención por desplazamientos - FPF"
     },
     {
       "label": "UDO - Fundos Formação FIFA",
@@ -84,7 +84,7 @@
       "values": [
         0.060763
       ],
-      "glosa": "UDO - Fondos de Formación FIFA"
+      "glosa": "UDO - Fondos de formación FIFA"
     },
     {
       "label": "Rendimentos suplementares",
@@ -94,7 +94,7 @@
       "values": [
         0.574802
       ],
-      "glosa": "Ingresos suplementarios"
+      "glosa": "Ingresos accesorios"
     },
     {
       "label": "Descontos de pronto pagamento obtidos",
@@ -104,7 +104,7 @@
       "values": [
         0.000001
       ],
-      "glosa": "Descuentos sobre compras por pronto pago"
+      "glosa": "Descuentos por pronto pago obtenidos"
     },
     {
       "label": "Outras",
@@ -124,7 +124,7 @@
       "values": [
         0.004274
       ],
-      "glosa": "Coste de las mercaderías vendidas y materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
     },
     {
       "label": "Subcontratos",
@@ -134,7 +134,7 @@
       "values": [
         0.026325
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontratación"
     },
     {
       "label": "Serviços especializados",
@@ -164,7 +164,7 @@
       "values": [
         0.050141
       ],
-      "glosa": "Energía y fluidos"
+      "glosa": "Energía y suministros"
     },
     {
       "label": "Deslocações, estadas e transportes",
@@ -174,7 +174,7 @@
       "values": [
         0.229731
       ],
-      "glosa": "Desplazamientos, dietas y transportes"
+      "glosa": "Desplazamientos, estancias y transportes"
     },
     {
       "label": "Serviços diversos",
@@ -214,7 +214,7 @@
       "values": [
         0.141045
       ],
-      "glosa": "Aportaciones a la seguridad social"
+      "glosa": "Cotizaciones a la seguridad social"
     },
     {
       "label": "Outros gastos com o pessoal",
@@ -234,7 +234,7 @@
       "values": [
         0.03
       ],
-      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
+      "glosa": "Deterioro del valor de créditos comerciales (pérdidas/reversiones)"
     },
     {
       "label": "Impostos",
@@ -244,7 +244,7 @@
       "values": [
         0.019071
       ],
-      "glosa": "Tributos"
+      "glosa": "Impuestos"
     },
     {
       "label": "Descontos de pronto pagamento concedidos",
@@ -254,7 +254,7 @@
       "values": [
         0.000001
       ],
-      "glosa": "Descuentos sobre ventas por pronto pago"
+      "glosa": "Descuentos por pronto pago concedidos"
     },
     {
       "label": "Outros",
@@ -274,7 +274,7 @@
       "values": [
         0.049917
       ],
-      "glosa": "Amortizaciones y depreciaciones (gastos/reversiones)"
+      "glosa": "Gastos/reversiones de amortización y depreciación"
     }
   ]
 }

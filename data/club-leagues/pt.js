@@ -26,4 +26,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'gilvicente-pt': { 2025: 'pt-primeiraliga' },
   'leixoes-pt': { 2025: 'pt-ligaportugal2' },
   'maritimo-pt': { 2025: 'pt-ligaportugal2' },
+  'oliveirense-pt': { 2025: 'pt-ligaportugal2' },
 });

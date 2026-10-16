@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
  "md": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.md",
- "generado": "2026-10-16T02:25:06.680Z",
+ "generado": "2026-10-16T02:44:08.277Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -11,7 +11,63 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
+   "campo": "anio",
+   "valor": "2025",
+   "linea": null,
+   "motivo": "El nombre del archivo (202425) se lee mal; el ejercicio es 2024-25, cierre 30/06/2025.",
+   "evidencia": "alta-club.mjs: ejercicio 2025; documento 2024/25",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
+   "campo": "incluye",
+   "valor": "matchday_competition",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "motivo": "La bilheteira está dentro de 'Prestação de serviços' sin desglose (subagente Sonnet, revisado por Claude).",
+   "evidencia": "Oliveirense/Relatorio-e-Contas-202425.md, nota de réditos",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
+   "campo": "incluye",
+   "valor": "stadium_other",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "motivo": "La bilheteira está dentro de 'Prestação de serviços' sin desglose (subagente Sonnet, revisado por Claude).",
+   "evidencia": "Oliveirense/Relatorio-e-Contas-202425.md, nota de réditos",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
+   "campo": "incluye",
+   "valor": "season_tickets",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "motivo": "La bilheteira está dentro de 'Prestação de serviços' sin desglose (subagente Sonnet, revisado por Claude).",
+   "evidencia": "Oliveirense/Relatorio-e-Contas-202425.md, nota de réditos",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Prestação de serviços es el 99% del rédito y no se abre; la TV, si la hubo, está ahí.",
+   "evidencia": "Relatorio-e-Contas-202425.md L1160-1166",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

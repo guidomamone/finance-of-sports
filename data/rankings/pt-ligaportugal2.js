@@ -19,6 +19,10 @@ window.RANKINGS["pt-ligaportugal2"] = {
       { id:"alverca-pt", revenue:2.414, reportType:"official_balance_sheet",
         sourceId:"alverca-pt-relatorio-contas-2024-25",
         mix:[["Venta de Jugadores",1.199],["Fútbol profesional (sin desglosar por la fuente)",0.747],["Otros ingresos",0.468]] },
+      { id:"oliveirense-pt", revenue:2.186, reportType:"official_balance_sheet",
+        sourceId:"oliveirense-pt-relatorio-e-contas-202425",
+        mix:[["Comercial / Sponsors",0.01],["Premios por competencias",0.01],["Otras secciones deportivas",0.071],["Fútbol profesional (sin desglosar por la fuente)",1.338],["Otros ingresos",0.756]],
+        incluidos:[["Estadio","Fútbol profesional (sin desglosar por la fuente)"],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2024: {

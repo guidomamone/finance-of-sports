@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
- "generado": "2026-10-16T02:33:30.529Z",
+ "generado": "2026-10-16T02:49:45.598Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (oliveirense-pt)"
-  },
-  {
-   "etapa": "año",
-   "motivo": "alta-club.mjs dice ejercicio 2025 y quien.mjs --quien (el que usa el registro) dice 2024"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
@@ -36,7 +28,7 @@
    },
    {
     "rawLabel": "Prestação de serviços",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "lump_football_operations",
     "amountNative": 1.141257,
     "disclosureLevel": "aggregated",
     "_pag": 31,
@@ -321,6 +313,23 @@
      "value": -0.03774
     }
    ],
+   "incluidoEn": {
+    "matchday_competition": "lump_football_operations",
+    "stadium_other": "lump_football_operations",
+    "season_tickets": "lump_football_operations",
+    "broadcasting": {
+     "en": "lump_football_operations",
+     "posible": true
+    }
+   },
+   "sinDesglose": [
+    {
+     "renglon": "Prestação de serviços",
+     "lado": "revenue",
+     "importe": 1.141257,
+     "motivo": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense."
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 1.864788,
@@ -348,7 +357,63 @@
  },
  "clubId": "oliveirense-pt",
  "year": 2025,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
+   "campo": "anio",
+   "valor": "2025",
+   "linea": null,
+   "motivo": "El nombre del archivo (202425) se lee mal; el ejercicio es 2024-25, cierre 30/06/2025.",
+   "evidencia": "alta-club.mjs: ejercicio 2025; documento 2024/25",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
+   "campo": "incluye",
+   "valor": "matchday_competition",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "motivo": "La bilheteira está dentro de 'Prestação de serviços' sin desglose (subagente Sonnet, revisado por Claude).",
+   "evidencia": "Oliveirense/Relatorio-e-Contas-202425.md, nota de réditos",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
+   "campo": "incluye",
+   "valor": "stadium_other",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "motivo": "La bilheteira está dentro de 'Prestação de serviços' sin desglose (subagente Sonnet, revisado por Claude).",
+   "evidencia": "Oliveirense/Relatorio-e-Contas-202425.md, nota de réditos",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
+   "campo": "incluye",
+   "valor": "season_tickets",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "motivo": "La bilheteira está dentro de 'Prestação de serviços' sin desglose (subagente Sonnet, revisado por Claude).",
+   "evidencia": "Oliveirense/Relatorio-e-Contas-202425.md, nota de réditos",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Prestação de serviços es el 99% del rédito y no se abre; la TV, si la hubo, está ahí.",
+   "evidencia": "Relatorio-e-Contas-202425.md L1160-1166",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
   "filas": 30,
   "notasUsadas": [],
@@ -377,12 +442,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 1.141257,
-   "cat": "other_income",
+   "cat": "lump_football_operations",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
+   "notaGuido": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.",
    "destino": "revenue",
    "amountNative": 1.141257
   },
@@ -802,16 +867,6 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
@@ -861,7 +916,7 @@
  "procedencia": {
   "anio": {
    "valor": 2025,
-   "fuente": "contenido del .md (año más nuevo con fecha de cierre)",
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): El nombre del archivo (202425) se lee mal; el ejercicio es 2024-25, cierre 30/06/2025., confirmado por las fechas de cierre del .md",
    "estado": "ok"
   },
   "cierre": {
@@ -902,7 +957,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 11,
   "lineasGasto": 16,
   "metaFilas": 3,
