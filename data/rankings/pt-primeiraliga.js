@@ -69,6 +69,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2022: {
     leagueSize: null,
     clubs: [
+      { id:"benfica-pt", revenue:242.597, reportType:"official_balance_sheet",
+        sourceId:"benfica-pt-relatorio-contas-2021-22",
+        mix:[["Comercial / Sponsors",22.551],["Estadio",21.088],["Televisión",49.098],["Premios por competencias",72.783],["Venta de Jugadores",66.699],["Otros ingresos",10.378]] },
       { id:"sportingcp-pt", revenue:188.96, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2021-22",
         mix:[["Comercial / Sponsors",25.825],["Estadio",17.779],["Televisión",27.664],["Premios por competencias",48.605],["Venta de Jugadores",62.861],["Otros ingresos",6.226]] },

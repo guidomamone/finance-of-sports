@@ -42,6 +42,87 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2019: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2019-06-30","sourceId":"benfica-pt-relatorio-contas-2018-19"}
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Benfica/relatorio-contas-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Benfica/relatorio-contas-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Prémios da UEFA | pág. 150, precedente |
+| 2 | Receitas de televisão | pág. 150, precedente |
+| 3 | Outras receitas | pág. 150, precedente |
+| 4 | Patrocinadores | pág. 150, precedente |
+| 5 | Rendas de espaço | pág. 150, precedente |
+| 6 | Royalties | pág. 150, precedente |
+| 7 | Outras receitas | pág. 150, precedente |
+| 8 | Corporate | pág. 150, precedente |
+| 9 | Bilhetes de época | pág. 150, precedente |
+| 10 | Competições europeias | pág. 150, precedente |
+| 11 | Competições nacionais | pág. 150, precedente |
+| 12 | Outras receitas | pág. 150, precedente |
+| 13 | Ganhos com alienações de direitos de atletas (mais-valias) | pág. 154, precedente |
+| 14 | Outros rendimentos | pág. 154, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gestão operacional do estádio | pág. 151, precedente |
+| 2 | Trabalhos especializados | pág. 151, precedente |
+| 3 | Gestão operacional do canal BTV | pág. 151, precedente |
+| 4 | Licença marca Benfica | pág. 151, precedente |
+| 5 | Deslocações e estadas | pág. 151, precedente |
+| 6 | Vigilância e segurança | pág. 151, precedente |
+| 7 | Equipamento desportivo | pág. 151, precedente |
+| 8 | Honorários | pág. 151, precedente |
+| 9 | Comissões | pág. 151, precedente |
+| 10 | Eletricidade | pág. 151, Jev 1 |
+| 11 | Publicidade e propaganda | pág. 151, Jev 1 |
+| 12 | Outros fornecimentos e serviços | pág. 151, precedente |
+| 13 | Remunerações fixas | pág. 152, precedente |
+| 14 | Remunerações variáveis | pág. 152, precedente |
+| 15 | Remunerações fixas | pág. 152, precedente |
+| 16 | Remunerações variáveis | pág. 152, precedente |
+| 17 | Indemnizações | pág. 152, precedente |
+| 18 | Benefícios pós-emprego | pág. 152, precedente |
+| 19 | Encargos sobre remunerações | pág. 152, precedente |
+| 20 | Seguros de acidentes de trabalho | pág. 152, precedente |
+| 21 | Outros gastos com pessoal | pág. 152, precedente |
+| 22 | Edifícios e outras construções | pág. 153, precedente |
+| 23 | Equipamento básico | pág. 153, precedente |
+| 24 | Equipamento de transporte | pág. 153, precedente |
+| 25 | Equipamento administrativo | pág. 153, precedente |
+| 26 | Direitos de uso | pág. 153, precedente |
+| 27 | Direito de utilização da marca | pág. 153, precedente |
+| 28 | Programas de computador | pág. 153, precedente |
+| 29 | Provisões/Imparidades ^{(2)} | pág. 114, Claude 0.93 |
+| 30 | Outros gastos e perdas operacionais ^{(3)} | pág. 114, Jev 1 |
+| 31 | Perdas com alienações de direitos de atletas (menos-valias) | pág. 154, precedente |
+| 32 | Gastos associados a alienações de direitos de atletas (comissões) | pág. 154, precedente |
+| 33 | Abates de direitos de atletas | pág. 154, precedente |
+| 34 | Outros gastos | pág. 154, precedente |
+| 35 | Amortizações de direitos de atletas | pág. 157, precedente |
+| 36 | Reforços de imparidade | pág. 157, Jev 0.91 |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): perimetro = individual. regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fx = 0.9627. el documento da 1 EUR = 1,0387 USD al 30/06/2022 (cierre BCE); el sitio guarda EUR por 1 USD = 1/1,0387 = 0,9627, igual que AC Milan 2021-22
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
+```
+
 ## 2021
 
 ### Ingresos
@@ -343,4 +424,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### benfica-pt-relatorio-contas-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
