@@ -22,9 +22,10 @@ ni en el comentario de ningún archivo de código.
 ## Qué hay que hacer
 
 ORDEN (pedido de Guido, 2026-10-15), en este orden y sin saltear:
-1. Mejoras de script: 237 (primero q, aa, ab y e, que frenan años de Portugal: 165 b0) y los cambios sin commitear de 165 b2
+1. Mejoras de script: 237 (primero aa, ab y e, que frenan años de Portugal: 165 b0; la q ya está) y los cambios sin commitear de 165 b2
    (`lote.mjs`, `fetch-club-league-reference.mjs`), medidos antes de commitear.
-2. 238 (llevar a 0 los estados intermedios), que incluye Estonia y Bélgica (165 b1: ya transcriptas, falta validarlas y cargarlas).
+2. 238 (llevar a 0 los estados intermedios), que incluye lo transcripto por subagentes (165 b1: Estonia, Bélgica, Suiza, Beşiktaş,
+   Países Bajos y Colombia; falta limpiar lo que lista el (5), validarlos con pipeline.mjs --lista y cargarlos).
 3. Mejoras de proyecto: Guido tiene ideas, todavía sin contar; preguntarle cuando se llegue acá.
 Después: el resto de las altas de países nuevos (165 c) y las gestiones (195); al final el ahorro de API (232, 233, 230) y lo que
 espera una decisión de Guido (130, 183, 51). El panel Plan lleva además una lista "Otros to-dos abiertos" (número: descripción breve)
