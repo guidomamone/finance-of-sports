@@ -536,11 +536,6 @@
   "motivo": "VERIFICADO 2026-10-02 (onboarding de Novorizontino): año de fundación del club. balanco-2010.md L3 dice '(em reais)' y L10 'Receita Líquida Operacional' 130.350,36: unos US$ 78 mil reales, no un error de escala."
  },
  {
-  "code": "escala-implausible",
-  "match": "novorizontino-br 2015: revenue",
-  "motivo": "VERIFICADO 2026-10-02 (onboarding de Novorizontino): balancete en reais con centavos (balanco-2015.md); receitas 746.574,12, confirmado por el documento 2016, que en miles da 747 para 2015 (balanco-2016.md L6, L32-60). Club en el Paulista de divisiones de acceso."
- },
- {
   "code": "signo-invertido",
   "match": "goias-br 2012 ingreso \"(-) Deduções da receita\"",
   "motivo": "VERIFICADO 2026-10-05 (to-do 138, hallazgo 11): deducción de la receita impresa en negativo por el propio documento (demonstracoes-contabeis-2012-2011.md (nota 19, por segmento)); va entera a other_income porque el documento no la abre por tipo de ingreso (Admin/CONVENCIONES-DATOS.md, 'Deducciones de ingresos que el documento no abre')."
@@ -799,10 +794,5 @@
   "code": "salto-interanual",
   "match": "kifisia-gr: revenue salta de",
   "motivo": "VERIFICADO contra la fuente (Claude 2026-10-14): Kifisia subió a la Super League en 2023-24; Kifisia_notes_2024-06-30.md L1006-L1012: TV 1.362.068,97 y subsidio de ΠΑΜΕ ΣΤΟΙΧΗΜΑ 1.502.820,00 (en 2022-23, en la Super League 2, eran 42.500 y 185.802,21: Kifisia_notes_2023-06-30.md L1004, L1007). El salto es real."
- },
- {
-  "code": "escala-implausible",
-  "match": "alverca-pt 2022",
-  "motivo": "VERIFICADO (lote 76, 2026-10-15): Alverca era una SAD de tercera división; ingresos 152.299,54 € = Vendas e serviços prestados 93.570,42 + Subsídios à exploração 37.669 + Outros rendimentos 21.060,12 (relatorio-contas-2021-22.md L95-100), resultado líquido −2.416.476,69 (L109). No es un error de escala: la banda de 0,2 M USD no contempla clubes de tercera (to-do 237 e)."
  }
 ]

@@ -370,6 +370,7 @@ function checkLineas(api) {
 function checkMoneda(api) {
   const porPais = {};
   const serie = {};
+  const fueraDeBanda = [];
   let placeholdersSinFx = 0;
 
   for (const { clubId, year, ym, rev } of clubYears(api)) {
@@ -406,12 +407,21 @@ function checkMoneda(api) {
     // Banda absoluta ancha a propósito: agarra el error de escala (×1.000 por un
     // documento "expresado en miles") sin opinar sobre si un club es grande o
     // chico. Un club profesional del mundo real no factura 0,2 M USD ni 2.000 M.
-    if (usd < 0.2 || usd > 2000) {
-      add('P0', 'escala-implausible', `${ref(clubId, year)}: revenue = ${usd.toFixed(2)} M USD, fuera de toda banda plausible — sospechar error de escala (documento en miles) o fx equivocado`);
-    }
+    // (to-do 237 e) La decisión se toma después del recorrido (fueraDeBanda, abajo): hace falta la serie entera del club.
+    if (usd < 0.2 || usd > 2000) fueraDeBanda.push({ clubId, year, usd });
     const pais = (api.clubs[clubId] || {}).country || '??';
     (porPais[pais] = porPais[pais] || []).push({ clubId, year, usd });
     (serie[clubId] = serie[clubId] || []).push({ year, usd, currency: ym.currency });
+  }
+
+  // ESCALA FUERA DE BANDA, CONFIRMADA POR EL AÑO VECINO (to-do 237 e). La banda frena a clubes chicos reales de tercera división (Alverca
+  // 2022, 152.299,54 € ≈ US$ 0,16 M; Novorizontino 2015; Felgueiras 2021-22) y hasta acá cada uno pedía una entrada en audit-ignore.json.
+  // Un error de escala (×1.000 por "en miles") salta contra los otros años del club; un club chico, no. COMPUERTA: otro ejercicio del club a
+  // 2 años o menos está DENTRO de la banda y a menos de 20 veces de este -> P3 (aviso); si no, P0 como siempre.
+  for (const x of fueraDeBanda) {
+    const vecino = (serie[x.clubId] || []).find((o) => o.year !== x.year && Math.abs(Number(o.year) - Number(x.year)) <= 2 && o.usd >= 0.2 && o.usd <= 2000 && Math.max(o.usd, x.usd) / Math.min(o.usd, x.usd) < 20);
+    if (vecino) add('P3', 'escala-implausible', `${ref(x.clubId, x.year)}: revenue = ${x.usd.toFixed(2)} M USD, fuera de la banda plausible pero a ${(Math.max(vecino.usd, x.usd) / Math.min(vecino.usd, x.usd)).toFixed(1)}× de ${vecino.year} (${vecino.usd.toFixed(2)} M USD): club chico, no error de escala`);
+    else add('P0', 'escala-implausible', `${ref(x.clubId, x.year)}: revenue = ${x.usd.toFixed(2)} M USD, fuera de toda banda plausible — sospechar error de escala (documento en miles) o fx equivocado`);
   }
 
   // Comparación entre pares de la misma liga: un tie-out no puede ver esto, porque

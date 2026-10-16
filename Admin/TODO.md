@@ -105,16 +105,13 @@ con los que no están en los pasos de arriba.
     Mejoras de script vistas en Grecia: to-do 232.
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
-    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, aa, q (POC y q1/q2), k, w, am, l (vecino sin
+    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, aa, q (POC y q1/q2), k, w, am, l (vecino sin
     descartados), ah, af+s, ai+ak, z, g y la letra nueva an (verificar no reescribe el .rubros.json igual, glosar no vuelve a pagar). Pasaron a
     Admin/HALLAZGOS-pipeline.md: b, c, h, i, j, l (primera parte), m, p, u, x, ae, aj y Benfica 2014-15. Guido dejó al para después.
     Cómo medir cada letra: verificar -> node tools/medir-verificar.mjs --lista Admin/lotes/prueba-completa.txt --salida <x> --pasadas 2
     (antes con --script <copia de la versión vieja dentro de tools/>) y --comparar; cargar -> node tools/medir-cargar.mjs --salida <x>
     (paralelo, ~1,5 min) y --comparar, después git checkout -- Admin/registros/categorias-aprendidas.jsonl; auditoría -> node tools/audit.js.
     PENDIENTES, con el diseño que dejaron los diagnósticos (subagentes Sonnet; ok de Guido para codear todas salvo al), en este orden:
-    - e (S-M): audit.js ~L405: `escala-implausible` baja a P3 si otro ejercicio del club a 2 años o menos está dentro de la banda y a menos
-      de 20x. Destraba Felgueiras 2021-22 (además tiene "Outros gastos" en la cola) y sobran los audit-ignore de Alverca 2022 y
-      Novorizontino 2015. Medir: audit.js antes y después.
     - ab (M): cargar.mjs ~L314-320, junto al "primer ejercicio": compuerta "cadena de cierres": cierre anterior + meses = este cierre y el
       siguiente cierra 12 meses después (Benfica: 2007-07-31 + 11 = 2008-06-30, siguiente 2009-06-30). El freno de reportType de Benfica
       2007-08 va con un ajuste `reportType` (no tocar alta-club). Medir: medir-cargar.
@@ -132,33 +129,12 @@ con los que no están en los pasos de arriba.
        relatorio-contas-2022-23.md L75 y L108) cuando el documento dice "Período findo em 30 de Junho de 2023" (L87) y las columnas
        "30/06/2023 | 30/06/2022" (L93). Se resolvió con un ajuste `cierre`. Escalón posible: una fecha precedida por un nombre de lugar
        ("<Ciudad>, <día> de <mes> de <año>") es la firma, no el cierre; y el "período findo em" o la fecha de las columnas del estado manda.
-    d) `cargar-lote.mjs`: cuando un año de un club nuevo no se escribe y el alta se revierte, quedan los archivos NUEVOS del alta sin
-       borrar (Alverca: data/pt/alverca-pt-data.js y data/club-leagues/pt.js, sin trackear). El alta siguiente de la misma corrida (Rio Ave
-       2018, que estaba listo) frena por "cambios sin commitear en el sitio" y también se revierte. Se borraron a mano y Rio Ave 2018 entró.
-       El revertir tiene que borrar lo que el alta creó, no solo restaurar lo que existía.
-    e) La banda de `audit.js` (ingresos entre 0,2 y 2.000 M USD, P0 `escala-implausible`) frena a un club real de tercera división:
-       Alverca 2022, 152.299,54 € (≈ US$ 0,16 M), verificado y silenciado en audit-ignore.json. Escalón posible: que la banda tenga en
-       cuenta la liga del año (data/club-leagues) o que, con el resultado impreso cerrando, baje a aviso.
-    f) Una respuesta de la cola con una categoría del OTRO lado cambia el signo de la fila en vez de mudarla sin cambiar su efecto (como hace
-       el ajuste `categoria`): Nacional 2024, "Correções relativas a períodos anteriores" (ingreso 229.792, L793) contestada
-       exceptional_items quedó como gasto −0,229792 y el resultado no cerraba por 0,459584 (el doble). Se arregló con un ajuste `categoria`.
-       Más casos (lote 82): Nacional 2025, la misma fila (113.202); Académica 2023, "Ganhos em perdão de dívida" (2.710.737, condonación).
-    n) "Outros" Y ETIQUETAS GENÉRICAS CON CONFIANZA 0 (23 preguntas en Portugal). Si la fila genérica cae dentro de un bloque con nombre
-       (p. ej. "Outros" bajo "Rendimentos suplementares"), el bloque decide la categoría; hoy sale 0 y va a la cola. A diseñar con 2-3
-       casos reales. Medido el 2026-10-15 en toda la cola (preguntas de categoría con etiqueta genérica Outros/Otros/Others/Altri...):
-       Portugal 96 de 588 (16%), Italia 20 de 491, Brasil 11 de 575, Colombia 6 de 205, Grecia 0. No es el idioma: el formato SNC trae una
-       tabla por nota y casi todas cierran con "Outros". Aparte, y sin arreglo por etiqueta: el "Outros" cuyo detalle está en el TEXTO bajo
-       la tabla (Mafra 2023-24: 2.300.000 de venta de jugadores dentro de "Outros" 2.304.155,62; Marítimo 2024-25: Taças, solidaridad FIFA y
-       lugares anuais dentro de "Outros" 176.636), resueltos con ajustes `fila`; va con h) (leer la nota de la fila).
     o) VERIFICAR (186 casos en Portugal): 64 dudas de extraer, 39 dudas de tema (escala, cuadro), 32 que no cierran, 24 de localizar,
        14 de año vecino, 10 de primer año. Mirar antes de diseñar si las dudas de escala ("¿en euros y no en miles?") y las filas
        informativas debajo del total se repiten por club y se pueden contestar una vez por club, como en m).
     r) EL COPY DE LA TERMINAL QUEDÓ VIEJO (pedido de Guido, 2026-10-15). "(DE VERDAD)", "ENSAYO", los "OJO:" y la mayoría de los mensajes
        de pipeline.mjs y lote.mjs no terminan de explicar qué está pasando ni qué tiene que hacer Guido. Repasar la salida de las dos
        tools con un lote real y proponerle el texto nuevo (solo salida, no lógica) antes de tocarlo.
-    t) EL ALTA FRENA POR "faltan-datos" AUNQUE YA ESTÉ LISTA (lote 79, dos veces: Sporting en la primera corrida; Porto, Braga y Benfica
-       en la tercera). Correr `node tools/alta-club.mjs --todos` a mano las dejó "listas para alta" sin cambiar nada más. Escalón posible:
-       que `cargar-lote.mjs` recalcule el registro de altas de los clubes de su lista antes de decidir, en vez de leer el estado viejo.
     v) EL CUADRO DE INVENTARIOS ABRE DUDAS EN CADA CLUB (lote 79: Porto b102, Santa Clara b20, Braga b38). "Apuramento do custo das
        mercadorias vendidas" (inicial + compras − final = CMV) no es un desglose aditivo; sumar sus filas descuadra (Santa Clara 633.981
        contra 378.448) y cada club genera 2 preguntas con la misma respuesta: queda afuera y se carga el renglón del estado. Escalón

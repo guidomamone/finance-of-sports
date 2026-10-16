@@ -25,6 +25,9 @@ que dice `ESTADO.md` era verdad ese día.
   Medido: 733 idénticos; sin sus ajustes `categoria`, Nacional 2024 y 2025, Benfica 2006-07 y Sporting 2001 y 2003-04 cargan igual.
 - cargar-lote.mjs: revertir un alta borra también los archivos nuevos que dejó en data/ y fuentes/ (d).
 - cargar-lote.mjs: antes de decidir un alta, recalcula el registro de altas de ese club (alta-club.mjs --todos --solo, gratis) (t).
+- audit.js: `escala-implausible` baja a P3 si otro ejercicio del club a 2 años o menos está en la banda y a menos de 20× (e). Medido:
+  Alverca 2022 y Novorizontino 2015 pasan a P3 (salen sus entradas de audit-ignore); destraba Felgueiras 2021-22 (respondida su fila
+  "Outros gastos" de personal como wages_squad).
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)
 
