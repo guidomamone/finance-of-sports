@@ -70,3 +70,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Arouca/relatorio-contas-2021-22.pdf` (sourceId `arouca-pt-relatorio-contas-2021-22`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Arouca/relatorio-contas-2022-23.pdf` (sourceId `arouca-pt-relatorio-contas-2022-23`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Arouca/relatorio-contas-2023-24.pdf` (sourceId `arouca-pt-relatorio-contas-2023-24`).

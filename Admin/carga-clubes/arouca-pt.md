@@ -124,6 +124,87 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Arouca".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Arouca/relatorio-contas-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Arouca/relatorio-contas-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Publicidade | pág. 35, Jev 1 |
+| 2 | Receitas de Bilheteira | pág. 35, Jev 0.99 |
+| 3 | Corporate | pág. 35, Jev 0.95 |
+| 4 | Transmissões Televisivas | pág. 35, Jev 1 |
+| 5 | Ced. Temporária atletas | pág. 35, Jev 1 |
+| 6 | Subsídios e Prémios | pág. 35, precedente |
+| 7 | Receitas Apostas Desport. | pág. 35, Jev 0.96 |
+| 8 | Outros | pág. 35, precedente |
+| 9 | Descontos pp obtidos | pág. 36, Jev 1 |
+| 10 | Al. ativos intangíveis-Passes atletas | pág. 36, Jev 0.99 |
+| 11 | Benefícios de penalidades contratuais | pág. 36, Jev 1 |
+| 12 | Outros Rendimentos | pág. 36, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subcontratos | pág. 34, Jev 0.97 |
+| 2 | Trabalhos Especializados | pág. 34, Jev 0.99 |
+| 3 | Publicidade e propaganda | pág. 34, Jev 1 |
+| 4 | Vigilância e Segurança | pág. 34, Jev 0.98 |
+| 5 | Honorários | pág. 34, Jev 1 |
+| 6 | Comissões | pág. 34, precedente |
+| 7 | Conservação e Reparação | pág. 34, Jev 1 |
+| 8 | Serviços Bancários | pág. 34, Jev 0.98 |
+| 9 | Out. Serv. Especializados | pág. 34, Jev 0.95 |
+| 10 | Ferr. Ut. Desgaste Rápido | pág. 34, Jev 1 |
+| 11 | Livros e doc. técnica | pág. 34, Jev 1 |
+| 12 | Material de Escritório | pág. 34, Jev 1 |
+| 13 | Artigos Oferta | pág. 34, Jev 0.93 |
+| 14 | Eletricidade | pág. 34, Jev 1 |
+| 15 | Combustíveis | pág. 34, Jev 0.99 |
+| 16 | Água | pág. 34, Jev 0.98 |
+| 17 | Outros Fluidos | pág. 34, Jev 0.96 |
+| 18 | Deslocações e Estadas | pág. 34, Jev 1 |
+| 19 | Transp. Pessoal | pág. 34, precedente |
+| 20 | Rendas e Alugueres | pág. 34, precedente |
+| 21 | Comunicação | pág. 34, Jev 1 |
+| 22 | Seguros | pág. 34, Jev 0.96 |
+| 23 | Contencioso e Notariado | pág. 34, Jev 1 |
+| 24 | Limpeza, Higiene e Conforto | pág. 34, Jev 1 |
+| 25 | Outros Serviços | pág. 34, Jev 1 |
+| 26 | Remun. Órgãos sociais | pág. 32, Jev 1 |
+| 27 | Remunerações pessoal | pág. 32, precedente |
+| 28 | Indemnizações | pág. 32, precedente |
+| 29 | Encargos s/ remunerações | pág. 32, Jev 0.92 |
+| 30 | Seg. Acidentes de Trabalho | pág. 32, Jev 0.99 |
+| 31 | Outros Gastos c/ Pessoal | pág. 32, precedente |
+| 32 | Imparidade de dívidas a receber (perdas/reversões) | pág. 8, Jev 0.99 |
+| 33 | Provisões (aumentos/reduções) | pág. 8, Jev 0.98 |
+| 34 | Impostos | pág. 35, Jev 0.95 |
+| 35 | Desc. Pp concedidos | pág. 35, Jev 1 |
+| 36 | Corr. Per. Anteriores | pág. 35, Jev 1 |
+| 37 | Diferenças câmbio desf. | pág. 35, Jev 0.99 |
+| 38 | Multas e penalidades | pág. 35, Jev 0.98 |
+| 39 | Outros | pág. 35, Jev 0.99 |
+| 40 | Gastos/reversões de depreciação e de amortização | pág. 8, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2023–24 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Arouca".
+```
+
 ## 2023
 
 ### Ingresos
@@ -301,4 +382,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Arouca/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### arouca-pt-relatorio-contas-2023-24
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Arouca/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
