@@ -15,7 +15,7 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 12 letras resueltas y medidas (2026-10-16)
+## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)
 
 - Lotes 82 a 85: unos 40 años nuevos de Portugal (Gil Vicente, Portimonense, Vizela, Chaves, Marítimo 2021-2024, Académica, Felgueiras
   2023, Paços 2022, Nacional 2025, AVS 2021-2024 con su alta, Casa Pia 2022-2024, Benfica 2006-2007, Sporting 2000 y 2002-2008, 2018 y
@@ -25,6 +25,7 @@ que dice `ESTADO.md` era verdad ese día.
   ingresos o gastos (w), pérdida impresa sin signo (am), vecino sin descartados (l); no reescribe un .rubros.json igual (an).
 - lote.mjs: re-verifica si la cola tiene respuestas más nuevas (af, s); rehace validar o extraer si están viejos (ai, ak, cache-al-dia.mjs).
 - audit.js: "Diferencia de redondeo" no es línea duplicada (aa). vocabulario.mjs: juros SNC (k).
+- verificar.mjs: un número confirmado a mano no vuelve a la cola (z). cargar.mjs: un incluye sobre una de las tres del estadio alcanza (g).
 - Medición: lotes de prueba actualizados (rápida 44, mediana 118, completa 358), tools/medir-verificar.mjs nuevo, medir-cargar.mjs en
   paralelo (7:16 -> 1:35 min). Lo que falta del 237, con el diseño de cada letra, en el TODO.
 

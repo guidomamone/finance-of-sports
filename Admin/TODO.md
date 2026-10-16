@@ -106,15 +106,12 @@ con los que no están en los pasos de arriba.
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
     ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707): aa, q (POC y q1/q2), k, w, am, l (vecino sin
-    descartados), ah, af+s, ai+ak y la letra nueva an (verificar no reescribe el .rubros.json igual, glosar no vuelve a pagar). Pasaron a
+    descartados), ah, af+s, ai+ak, z, g y la letra nueva an (verificar no reescribe el .rubros.json igual, glosar no vuelve a pagar). Pasaron a
     Admin/HALLAZGOS-pipeline.md: b, c, h, i, j, l (primera parte), m, p, u, x, ae, aj y Benfica 2014-15. Guido dejó al para después.
     Cómo medir cada letra: verificar -> node tools/medir-verificar.mjs --lista Admin/lotes/prueba-completa.txt --salida <x> --pasadas 2
     (antes con --script <copia de la versión vieja dentro de tools/>) y --comparar; cargar -> node tools/medir-cargar.mjs --salida <x>
     (paralelo, ~1,5 min) y --comparar, después git checkout -- Admin/registros/categorias-aprendidas.jsonl; auditoría -> node tools/audit.js.
     PENDIENTES, con el diseño que dejaron los diagnósticos (subagentes Sonnet; ok de Guido para codear todas salvo al), en este orden:
-    - z (S): verificar.mjs, bucle de V.noConfirmados (~L1134): saltear el número si hay ajuste `confirmado` con la misma línea y valor
-      (la compuerta que ya usa avisarRegistro, ~L1628). Medir: medir-verificar.
-    - g (S): cargar.mjs ~L704, el aviso de las tres categorías del estadio: `every` -> `some` en incluidoEn. Medir: medir-cargar.
     - ad (S-M): cola.mjs ~L269-271, el cierre en cadena de un `aceptar` solo cierra casos con la MISMA categoriaPropuesta; cargar.mjs ~L562,
       un `aceptar` de otro documento solo decide si la fila de este tiene la misma propuesta. Daño silencioso hoy en ~12 grupos (Fortaleza
       "auxilio de transporte", Goiás "servicos de terceiros", Avaí "viagens e hospedagens", Ferroviária "aluguel"). Medir: medir-cargar
@@ -159,9 +156,6 @@ con los que no están en los pasos de arriba.
        el ajuste `categoria`): Nacional 2024, "Correções relativas a períodos anteriores" (ingreso 229.792, L793) contestada
        exceptional_items quedó como gasto −0,229792 y el resultado no cerraba por 0,459584 (el doble). Se arregló con un ajuste `categoria`.
        Más casos (lote 82): Nacional 2025, la misma fila (113.202); Académica 2023, "Ganhos em perdão de dívida" (2.710.737, condonación).
-    g) El aviso "Estadio en 0" pide que las TRES categorías del estadio (matchday_competition, stadium_other, season_tickets) tengan
-       ajuste `incluye`; con la de entradas alcanza para decir que el estadio está dentro de otra línea. Moreirense 2022 y 2025 llevan los
-       tres ajustes.
     n) "Outros" Y ETIQUETAS GENÉRICAS CON CONFIANZA 0 (23 preguntas en Portugal). Si la fila genérica cae dentro de un bloque con nombre
        (p. ej. "Outros" bajo "Rendimentos suplementares"), el bloque decide la categoría; hoy sale 0 y va a la cola. A diseñar con 2-3
        casos reales. Medido el 2026-10-15 en toda la cola (preguntas de categoría con etiqueta genérica Outros/Otros/Others/Altri...):
@@ -182,8 +176,6 @@ con los que no están en los pasos de arriba.
        mercadorias vendidas" (inicial + compras − final = CMV) no es un desglose aditivo; sumar sus filas descuadra (Santa Clara 633.981
        contra 378.448) y cada club genera 2 preguntas con la misma respuesta: queda afuera y se carga el renglón del estado. Escalón
        posible: reconocer el cuadro (filas "inicial/final" + "compras" cuyo cálculo da el renglón) y no ofrecerlo como desglose.
-    z) UN NÚMERO CONFIRMADO CON AJUSTE VUELVE A LA COLA (Santa Clara 2024-25, L1542 "40 646": tenía el ajuste `confirmado` y la corrida
-       siguiente abrió el caso "numero-no-confirmado" 306c291 igual). Mirar si el ajuste se pierde cuando el .md cambia de versión.
     ab) EL EJERCICIO DE 11 MESES POR CAMBIO DE CIERRE SE CARGA (decisión de Guido, 2026-10-15; regla en CONVENCIONES-DATOS). cargar.mjs frena
        Benfica 2007-08 (1/8/2007-30/6/2008, "período de 11 meses", relatorio-contas-2007-08.md L236) con "período otro de 11 meses", y ningún
        ajuste lo destraba. Escalón posible: un ajuste `periodo` (valor: "cambio-de-cierre") que deje pasar ese documento con publicNote, o la
