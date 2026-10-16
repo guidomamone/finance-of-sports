@@ -43,3 +43,5 @@ Buscar 2017/18 y 2018/19 en Wayback (no intentado esta sesión) antes de darlos 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2017 desde `Clubes/Portugal/Braga/relatorio-contas-2016-17.pdf` (sourceId `braga-pt-relatorio-contas-2016-17`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Braga/relatorio-contas-2021-22.pdf` (sourceId `braga-pt-relatorio-contas-2021-22`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Braga/Relato_rio-Contas-2022-23-SAD.pdf` (sourceId `braga-pt-relato-rio-contas-2022-23-sad`).
