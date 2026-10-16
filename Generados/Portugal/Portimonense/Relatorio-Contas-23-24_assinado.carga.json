@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-23-24_assinado.pdf",
- "generado": "2026-10-16T03:18:43.351Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Provisões (aumentos/reduções)\" -> other_expenses 0.45"
-  }
- ],
+ "generado": "2026-10-16T03:41:08.438Z",
+ "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-06-30); pregunta en la cola (no frena)"
  ],
@@ -430,13 +425,13 @@
    },
    {
     "rawLabel": "Provisões (aumentos/reduções)",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "other_amortisation",
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 33,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outras imparidades (perdas/reversões)",
@@ -1164,12 +1159,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0,
-   "cat": "other_expenses",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): provisiones, precedente de Portugal provisões => other_amortisation; importe 0 [Relatorio-Contas-23-24_assinado.md L1046]",
    "destino": "expense",
    "amountNative": 0
   },
@@ -1339,8 +1334,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 9,
   "lineasGasto": 36,
   "metaFilas": 3,

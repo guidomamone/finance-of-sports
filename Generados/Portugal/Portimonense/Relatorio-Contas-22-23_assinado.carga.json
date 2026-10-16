@@ -1,11 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-22-23_assinado.pdf",
- "generado": "2026-10-16T03:18:43.213Z",
+ "generado": "2026-10-16T03:41:08.348Z",
  "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Materiais Covid\" -> admin_general_expense 0.6; \"Outras diferenças de câmbio desfavorávei\" -> other_expenses 0.55"
-  },
   {
    "etapa": "tie-out-resultado",
    "motivo": "resultado: ingresos 13.980916 + gastos -15.377042 + netInterest -0.012981 + tax -0.188031 = -1.597138 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 1.597143)"
@@ -208,9 +204,9 @@
     "amountNative": -0.000012,
     "disclosureLevel": "aggregated",
     "_pag": 54,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -438,9 +434,9 @@
     "amountNative": -0.283029,
     "disclosureLevel": "aggregated",
     "_pag": 55,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -799,11 +795,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.000012,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): nota Fornecimentos e serviços externos, materiales [Relatorio-Contas-22-23_assinado.md L1857]",
    "destino": "expense",
    "amountNative": -0.000012
   },
@@ -1146,11 +1142,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.283029,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): nota Outros gastos e perdas, diferencia de cambio operativa [Relatorio-Contas-22-23_assinado.md L1911]",
    "destino": "expense",
    "amountNative": -0.283029
   },
@@ -1289,7 +1285,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 7,
   "lineasGasto": 37,
   "metaFilas": 2,
