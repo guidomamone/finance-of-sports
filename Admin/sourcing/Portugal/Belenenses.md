@@ -14,3 +14,5 @@
 - Todo descubierto con Exa y bajado del sitio del club. Revisar a qué entidad corresponde cada PDF (SAD vs clube) antes de cargar.
 - Los PDF `cfb-*` son del clube asociación; los `SDUQ` son de la sociedad del fútbol. Gran lío de perímetro: ver cada archivo.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.pdf` (sourceId `belenenses-pt-sduq-demonstracoes-financeiras-30junho2025`).

@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.pdf",
- "generado": "2026-10-15T22:34:34.678Z",
+ "generado": "2026-10-16T02:33:28.354Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (belenenses-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Acompanhamento Nutricional\" -> other_expenses 0.45; \"Catapult One Team\" -> other_expenses 0.45; \"Quotizações Assoc. Futebol Lisboa\" -> match_organisation_expense 0.55"
   }
  ],
  "avisos": [
@@ -88,9 +84,9 @@
     "amountNative": -0.008541,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Catapult One Team",
@@ -98,9 +94,9 @@
     "amountNative": -0.004,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros Serviços",
@@ -354,13 +350,13 @@
    },
    {
     "rawLabel": "Quotizações Assoc. Futebol Lisboa",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.01552,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Multas desportivas",
@@ -433,7 +429,7 @@
    "title": "Belenenses — Belenenses-SDUQ-demonstracoes-financeiras-30junho2025 (ejercicio 2025)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.md",
@@ -567,11 +563,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Trabalhos especializados i)\")",
    "signoFijo": 0.008541,
    "cat": "other_expenses",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): servicio contratado dentro de FSE.",
    "destino": "expense",
    "amountNative": -0.008541
   },
@@ -583,11 +579,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Trabalhos especializados i)\")",
    "signoFijo": 0.004,
    "cat": "other_expenses",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): servicio contratado dentro de FSE.",
    "destino": "expense",
    "amountNative": -0.004
   },
@@ -976,12 +972,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.01552,
-   "cat": "match_organisation_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): cuotas pagadas a la asociación, como Alverca/Nacional/Benfica.",
    "destino": "expense",
    "amountNative": -0.01552
   },
@@ -1142,7 +1138,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 3,
   "lineasGasto": 34,
   "metaFilas": 2,
