@@ -1,89 +1,361 @@
-# Lista de PRUEBA (Versión 450, pedido de Guido 2026-10-04): para medir cualquier cambio de script antes y después (ensayo, gratis). Sin repetidos.
-# COMPLETA: los 87 documentos distintos de los lotes 07 a 13.
+# Lista de PRUEBA (Versión 450, pedido de Guido 2026-10-04; actualizada el 2026-10-16): para medir cualquier cambio de script antes y después. Sin repetidos.
+# Cómo medir un cambio de verificar.mjs o cargar.mjs: node tools/medir-verificar.mjs --lista <esta lista> antes y después (gratis, deja los registros como estaban).
+# COMPLETA: la mediana + la completa original (lotes 07 a 13) + todo Portugal y Grecia con verificación.
 Clubes/Brasil/Goias/demonstracoes-contabeis-2008-2007.pdf
+Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf
+Clubes/Brasil/Novorizontino/balanco-2010.pdf
+Clubes/Brasil/Novorizontino/balanco-2015.pdf
+Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2025.pdf
+Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2013.pdf
+Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2015.pdf
+Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2022.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2018.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf
+Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2025-06-30_a.pdf
+Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.pdf
+Clubes/Italia/Juventus/Juventus-annual-financial-report-2006-07.pdf
+Clubes/Italia/Juventus/Juventus-annual-financial-report-2020-21.pdf
+Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf
+Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf
+Clubes/Brasil/Ferroviaria/balanco-2012.pdf
+Clubes/Brasil/Ferroviaria/balanco-2016.pdf
+Clubes/Italia/Parma/Parma-bilancio-31.12.2024-individual.pdf
+Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.pdf
+Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf
+Clubes/Brasil/Remo/dre-2023.pdf
+Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.pdf
+Clubes/Brasil/Goias/demonstracoes-contabeis-2023.pdf
+Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2018-19.pdf
+Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2024.pdf
+Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2016-17.pdf
+Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2020-21.pdf
+Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2022.pdf
+Clubes/Italia/Torino/Torino-bilancio-2020.pdf
+Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf
+Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Nacional/relatorio-contas-2024-25.pdf
+Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.pdf
+Clubes/Portugal/Paços de Ferreira/contas21_22.pdf
+Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Portimonense/Relatorio-Contas-22-23_assinado.pdf
+Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Moreirense/relatorio-contas-2022-23.pdf
+Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2007-08.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2007-08.pdf
+Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2009-2008.pdf
+Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.pdf
+Clubes/Brasil/Goias/demonstracoes-contabeis-2017-2016.pdf
+Clubes/Brasil/Novorizontino/balanco-2013.pdf
+Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2018.pdf
+Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.pdf
+Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2010.pdf
+Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2016.pdf
+Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2020.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf
+Clubes/Grecia/AEL Larissa/AEL_FS_2022-06-30.pdf
+Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.pdf
+Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.pdf
+Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf
+Clubes/Italia/Juventus/Juventus-annual-financial-report-2010-11.pdf
+Clubes/Italia/Juventus/Juventus-annual-financial-report-2016-17.pdf
+Clubes/Portugal/AVS/relatorio-contas-2020-21.pdf
+Clubes/Portugal/AVS/relatorio-contas-2022-23.pdf
+Clubes/Portugal/Casa Pia/relatorio-contas-2021-22.pdf
+Clubes/Portugal/Casa Pia/relatorio-contas-2022-23.pdf
+Clubes/Portugal/Casa Pia/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Academico Viseu/wf-2022-2023-b797bc64.pdf
+Clubes/Portugal/Academico Viseu/wf-2023-2024-02d5741e.pdf
+Clubes/Portugal/Academico Viseu/wf-src-RC21_22.pdf
+Clubes/Portugal/Académica/9-RC-SDUQ-2021-2022.pdf
+Clubes/Portugal/Arouca/relatorio-contas-2021-22.pdf
+Clubes/Portugal/Arouca/relatorio-contas-2022-23.pdf
+Clubes/Portugal/Arouca/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.pdf
+Clubes/Portugal/Chaves/RC-2021-2022_compressed-1.pdf
+Clubes/Portugal/Estoril Praia/relatorio-contas-2021-22.pdf
+Clubes/Portugal/Estoril Praia/relatorio-contas-2022-23.pdf
+Clubes/Portugal/Estoril Praia/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.pdf
+Clubes/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.pdf
+Clubes/Portugal/Gil Vicente/relatorio-contas-2020-21.pdf
+Clubes/Portugal/Gil Vicente/relatorio-contas-2022-23.pdf
+Clubes/Portugal/Gil Vicente/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Gil Vicente/wf-src-Relatorio_SDUQ_Final.pdf
+Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2022-2023.pdf
+Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2023-2024.pdf
+Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.pdf
+Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2021.pdf
+Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2022.pdf
+Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202223.pdf
+Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.pdf
+Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.pdf
+Clubes/Portugal/Paços de Ferreira/contas22_23.pdf
+Clubes/Portugal/Paços de Ferreira/contas23_24.pdf
+Clubes/Portugal/Portimonense/Relatorio-Contas-21-22_assinado.pdf
+Clubes/Portugal/Portimonense/Relatorio-Contas-23-24_assinado.pdf
+Clubes/Portugal/Torreense/SAD_RelatorioContas2021-2022.pdf
+Clubes/Portugal/Torreense/SAD_RelatorioContas2022-2023.pdf
+Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.pdf
+Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.pdf
+Clubes/Portugal/Vizela/Relatorio-Gestao-e-contas-FCV-2023-24-Ass.pdf
+Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.pdf
+Clubes/Portugal/Casa Pia/relatorio-contas-2024-25.pdf
+Clubes/Portugal/Nacional/relatorio-contas-2021-22.pdf
+Clubes/Grecia/AEK Athens/AEK_FS_2016-2017.pdf
+Clubes/Grecia/AEK Athens/AEK_Notes_IFRS_2021-06-30.pdf
+Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.pdf
+Clubes/Grecia/Aris/Aris_FS_audited_art47_2022-06-30.pdf
+Clubes/Grecia/Asteras Tripolis/Asteras_FS_2024-06-30.pdf
+Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.pdf
+Clubes/Grecia/Levadiakos/Levadiakos_FS_2020-06-30.pdf
+Clubes/Grecia/OFI Crete/OFI_income_stmt_2019-06-30.pdf
+Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2024-06-30.pdf
+Clubes/Grecia/PAOK/PAOK_FS_2016-17.pdf
+Clubes/Grecia/Panetolikos/Panetolikos_FS_2016-17.pdf
+Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.pdf
+Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2010-2009.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2011-2010.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf
-Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2014-2013.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2015-2014.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.pdf
-Clubes/Brasil/Goias/demonstracoes-contabeis-2017-2016.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2021.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2022-fgf-go.pdf
-Clubes/Brasil/Goias/demonstracoes-contabeis-2023.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2024.pdf
-Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf
-Clubes/Brasil/Novorizontino/balanco-2010.pdf
-Clubes/Brasil/Novorizontino/balanco-2013.pdf
 Clubes/Brasil/Novorizontino/balanco-2014-b.pdf
-Clubes/Brasil/Novorizontino/balanco-2015.pdf
 Clubes/Brasil/Novorizontino/balanco-2016.pdf
-Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2018.pdf
 Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2019.pdf
 Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2020.pdf
-Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.pdf
 Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.pdf
 Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2023.pdf
 Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf
-Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2025.pdf
 Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.pdf
-Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2010.pdf
 Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2011.pdf
 Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2012.pdf
-Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2013.pdf
 Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2014.pdf
-Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2015.pdf
-Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2016.pdf
 Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2017.pdf
 Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2018.pdf
 Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2019.pdf
-Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2020.pdf
 Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2021.pdf
-Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2022.pdf
 Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2023.pdf
 Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2024.pdf
 Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2025.pdf
-Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf
-Clubes/Colombia/Fortaleza CEIF/estados-financieros-2018.pdf
-Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf
 Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf
-Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.pdf
 Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf
-Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf
 Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.pdf
-Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf
-Clubes/Grecia/AEL Larissa/AEL_FS_2022-06-30.pdf
 Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.pdf
 Clubes/Grecia/AEL Larissa/AEL_FS_ELP_2024-06-30.pdf
-Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.pdf
 Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2017-06-30.pdf
-Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.pdf
-Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.pdf
 Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2020-06-30.pdf
 Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2021-06-30.pdf
-Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2025-06-30_a.pdf
-Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.pdf
-Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2004-05.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.pdf
-Clubes/Italia/Juventus/Juventus-annual-financial-report-2006-07.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2008-09.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2009-10.pdf
-Clubes/Italia/Juventus/Juventus-annual-financial-report-2010-11.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2012-13.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2013-14.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2014-15.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2015-16.pdf
-Clubes/Italia/Juventus/Juventus-annual-financial-report-2016-17.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2017-18.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2018-19.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2019-20.pdf
-Clubes/Italia/Juventus/Juventus-annual-financial-report-2020-21.pdf
-Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2022-23.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2023-24.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2024-25.pdf
+Clubes/Portugal/Academico Viseu/wf-2024-2025-efe7ad0a.pdf
+Clubes/Portugal/Académica/RC-SDUQ-2023-2024.pdf
+Clubes/Portugal/Alverca/relatorio-contas-2021-22.pdf
+Clubes/Portugal/Alverca/relatorio-contas-2022-23.pdf
+Clubes/Portugal/Alverca/relatorio-contas-2024-25.pdf
+Clubes/Portugal/Arouca/wf-2024-2025-78053ec5.pdf
+Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.pdf
+Clubes/Portugal/Benfica/prestacao-contas-2009-11-03.pdf
+Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2006-07.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2011-12.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2012-13-pos-AG.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2015-16.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2016-17-pos-AG.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2017-18.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2018-19.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2019-20-pos-AG.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2020-21.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2021-22.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2024-25-pos-AG.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2025-26.pdf
+Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf
+Clubes/Portugal/Braga/Relato_rio-Contas-2022-23-SAD.pdf
+Clubes/Portugal/Braga/relatorio-contas-2015-16.pdf
+Clubes/Portugal/Braga/relatorio-contas-2016-17.pdf
+Clubes/Portugal/Braga/relatorio-contas-2019-20.pdf
+Clubes/Portugal/Braga/relatorio-contas-2021-22.pdf
+Clubes/Portugal/Braga/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Braga/relatorio-contas-2024-25.pdf
+Clubes/Portugal/Chaves/RC-2022-2023-com.pdf
+Clubes/Portugal/Estoril Praia/relatorio-contas-2024-25.pdf
+Clubes/Portugal/Estrela da Amadora/relatorio-contas-2021-22.pdf
+Clubes/Portugal/Estrela da Amadora/relatorio-contas-2022-23.pdf
+Clubes/Portugal/Famalicão/relatorio-contas-2018-19.pdf
+Clubes/Portugal/Famalicão/relatorio-contas-2019-20.pdf
+Clubes/Portugal/Famalicão/relatorio-contas-2020-21.pdf
+Clubes/Portugal/Famalicão/relatorio-contas-2021-22.pdf
+Clubes/Portugal/Famalicão/relatorio-contas-2022-23.pdf
+Clubes/Portugal/Famalicão/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Famalicão/relatorio-contas-2024-25.pdf
+Clubes/Portugal/Felgueiras/Demonstracoes-Financeiras-Individuais-Epoca-2023-2024.pdf
+Clubes/Portugal/Gil Vicente/relatorio-contas-2024-25.pdf
+Clubes/Portugal/Leixoes/Relatorio-de-Gestao-e-Contas-2024-2025.pdf
+Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf
+Clubes/Portugal/Moreirense/relatorio-contas-2021-22.pdf
+Clubes/Portugal/Moreirense/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf
+Clubes/Portugal/Nacional/relatorio-contas-2022-23.pdf
+Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf
+Clubes/Portugal/Paços de Ferreira/contas_2425.pdf
+Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.pdf
+Clubes/Portugal/Porto/relatorio-contas-consolidadas-2015-16.pdf
+Clubes/Portugal/Porto/relatorio-contas-consolidadas-2016-17.pdf
+Clubes/Portugal/Porto/relatorio-contas-consolidadas-2017-18.pdf
+Clubes/Portugal/Porto/relatorio-contas-consolidadas-2018-19.pdf
+Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.pdf
+Clubes/Portugal/Porto/relatorio-contas-consolidadas-2021-22.pdf
+Clubes/Portugal/Porto/relatorio-contas-consolidadas-2022-23.pdf
+Clubes/Portugal/Porto/wf-2023-2024-293efed8.pdf
+Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf
+Clubes/Portugal/Rio Ave/Relatorio_SDUQ_2022-2023.pdf
+Clubes/Portugal/Rio Ave/relatorio-contas-2014-15.pdf
+Clubes/Portugal/Rio Ave/relatorio-contas-2015-16.pdf
+Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.pdf
+Clubes/Portugal/Rio Ave/relatorio-contas-2017-18.pdf
+Clubes/Portugal/Rio Ave/relatorio-contas-2018-19.pdf
+Clubes/Portugal/Rio Ave/relatorio-contas-2019-20.pdf
+Clubes/Portugal/Rio Ave/relatorio-contas-2021-22.pdf
+Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Rio Ave/relatorio-contas-2024-25.pdf
+Clubes/Portugal/Santa Clara/relatorio-contas-sad-2019-20.pdf
+Clubes/Portugal/Santa Clara/relatorio-contas-sad-2020-21.pdf
+Clubes/Portugal/Santa Clara/relatorio-contas-sad-2021-22.pdf
+Clubes/Portugal/Santa Clara/relatorio-contas-sad-2022-23.pdf
+Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-1999.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2003-04.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2005-06.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2008-09.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2009-10.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2010-11.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2011-12.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2012-13.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2013-14.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2014-15.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2015-16.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2016-17.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2017-18.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2018-19.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2019-20.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2020-21.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2021-22.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2022-23.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2024-25.pdf
+Clubes/Portugal/Tondela/relatorio-contas-2020-21.pdf
+Clubes/Portugal/Torreense/SAD_RelatorioContas2023-2024.pdf
+Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf
+Clubes/Portugal/Vitória Guimarães/relatorio-contas-2020-21.pdf
+Clubes/Portugal/Vitória Guimarães/relatorio-contas-2021-22.pdf
+Clubes/Portugal/Vitória Guimarães/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.pdf
+Clubes/Portugal/Vitória Guimarães/wf-src-Relatorio-e-Contas-2021-22-SAD.pdf
+Clubes/Portugal/Vizela/Relatorio-e-Contas-2024-25-FCV.pdf
+Clubes/Grecia/AEK Athens/AEK_FS_2023-06-30.pdf
+Clubes/Grecia/AEK Athens/AEK_FS_2024-06-30.pdf
+Clubes/Grecia/AEK Athens/AEK_FS_orthi_epanalipsi_2022.pdf
+Clubes/Grecia/AEK Athens/AEK_NOTES_IFRS_2025-06-30_a.pdf
+Clubes/Grecia/AEK Athens/AEK_Notes_2018-06-30.pdf
+Clubes/Grecia/AEK Athens/AEK_Notes_2019-06-30.pdf
+Clubes/Grecia/AEK Athens/AEK_Notes_2020-06-30.pdf
+Clubes/Grecia/AEK Athens/AEK_Notes_IFRS_2022-06-30.pdf
+Clubes/Grecia/AEK Athens/AEK_oikonomikes_katastaseis.pdf
+Clubes/Grecia/Aris/Aris_FS_2023-06-30.pdf
+Clubes/Grecia/Aris/Aris_FS_2024-06-30.pdf
+Clubes/Grecia/Aris/Aris_FS_2025-06-30.pdf
+Clubes/Grecia/Aris/Aris_FS_notes_ELP_2019-06-30.pdf
+Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.pdf
+Clubes/Grecia/Asteras Tripolis/Asteras_FS_2019-06-30.pdf
+Clubes/Grecia/Asteras Tripolis/Asteras_FS_2020-06-30.pdf
+Clubes/Grecia/Asteras Tripolis/Asteras_FS_2021-06-30.pdf
+Clubes/Grecia/Asteras Tripolis/Asteras_FS_2022-06-30.pdf
+Clubes/Grecia/Asteras Tripolis/Asteras_FS_2023-06-30.pdf
+Clubes/Grecia/Asteras Tripolis/Asteras_FS_2025-06-30.pdf
+Clubes/Grecia/Athens Kallithea/Ισολογισμός-2020.pdf
+Clubes/Grecia/Atromitos/Atromitos_FS_2019-06-30.pdf
+Clubes/Grecia/Atromitos/Atromitos_FS_2022-06-30.pdf
+Clubes/Grecia/Atromitos/Atromitos_FS_2023-06-30.pdf
+Clubes/Grecia/Atromitos/Atromitos_FS_2024-06-30.pdf
+Clubes/Grecia/Atromitos/Atromitos_FS_2025-06-30.pdf
+Clubes/Grecia/Atromitos/Atromitos_notes_2020-06-30.pdf
+Clubes/Grecia/Atromitos/Atromitos_notes_2021-06-30.pdf
+Clubes/Grecia/Kifisia/Kifisia_notes_2022-06-30.pdf
+Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.pdf
+Clubes/Grecia/Kifisia/Kifisia_notes_2024-06-30.pdf
+Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.pdf
+Clubes/Grecia/Levadiakos/Levadiakos_FS_2019-06-30.pdf
+Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.pdf
+Clubes/Grecia/Levadiakos/Levadiakos_FS_2022-06-30.pdf
+Clubes/Grecia/Levadiakos/Levadiakos_FS_2023-06-30.pdf
+Clubes/Grecia/Levadiakos/Levadiakos_FS_2024-06-30.pdf
+Clubes/Grecia/Levadiakos/Levadiakos_FS_2025-06-30.pdf
+Clubes/Grecia/OFI Crete/OFI_FS_2025-06-30.pdf
+Clubes/Grecia/OFI Crete/OFI_income_stmt_2018-06-30.pdf
+Clubes/Grecia/OFI Crete/OFI_income_stmt_2021-06-30.pdf
+Clubes/Grecia/OFI Crete/OFI_income_stmt_2022-06-30.pdf
+Clubes/Grecia/OFI Crete/OFI_income_stmt_2023-06-30.pdf
+Clubes/Grecia/OFI Crete/OFI_income_stmt_2024-06-30.pdf
+Clubes/Grecia/OFI Crete/OFI_notes_2020-06-30.pdf
+Clubes/Grecia/Olympiacos/PAE_Olympiacos_Chrimatooikonomikes_katastaseis_2016-06-30.pdf
+Clubes/Grecia/Olympiacos/PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.pdf
+Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2017-06-30.pdf
+Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2018-06-30.pdf
+Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2019-06-30.pdf
+Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2020-06-30.pdf
+Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2021-06-30.pdf
+Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2022-06-30.pdf
+Clubes/Grecia/Olympiacos/PAE_Olympiacos_IFRS_FS_2025-06-30.pdf
+Clubes/Grecia/PAOK/PAOK_FS_2019-06-30.pdf
+Clubes/Grecia/PAOK/PAOK_FS_2020-06-30.pdf
+Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.pdf
+Clubes/Grecia/PAOK/PAOK_FS_2022-06-30.pdf
+Clubes/Grecia/PAOK/PAOK_FS_2023-06-30.pdf
+Clubes/Grecia/PAOK/PAOK_FS_2024-06-30.pdf
+Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.pdf
+Clubes/Grecia/Panetolikos/Panetolikos_FS_2017-18.pdf
+Clubes/Grecia/Panetolikos/Panetolikos_FS_2019-20.pdf
+Clubes/Grecia/Panetolikos/Panetolikos_FS_2021-06-30.pdf
+Clubes/Grecia/Panetolikos/Panetolikos_FS_2022-06-30.pdf
+Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.pdf
+Clubes/Grecia/Panetolikos/Panetolikos_FS_2024-06-30.pdf
+Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.pdf
+Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2025-06-30.pdf
+Clubes/Grecia/Volos NFC/Volos_income_stmt_2019-06-30.pdf
+Clubes/Grecia/Volos NFC/Volos_income_stmt_2020-06-30.pdf
+Clubes/Grecia/Volos NFC/Volos_income_stmt_2021-06-30.pdf
+Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.pdf
+Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.pdf
+Clubes/Grecia/Volos NFC/Volos_income_stmt_2024-06-30.pdf

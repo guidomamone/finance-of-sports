@@ -1,5 +1,8 @@
-# Lista de PRUEBA (Versión 450, pedido de Guido 2026-10-04): para medir cualquier cambio de script antes y después (ensayo, gratis). Sin repetidos.
-# RÁPIDA: los casos que ya rompieron algo una vez (UC 2013 cuadro por segmento, 2015 PDF híbrido; Fortaleza 2017 sueldos en 0, 2018 notas como estado; Goiás 2008 rearmado; Novorizontino 2025 estado girado, 2015 deuda en dos filas; Juventus 2003 escala, 2007 deuda en dos filas, 2021 y 2022 perímetro y .md cambiado).
+# Lista de PRUEBA (Versión 450, pedido de Guido 2026-10-04; actualizada el 2026-10-16): para medir cualquier cambio de script antes y después. Sin repetidos.
+# Cómo medir un cambio de verificar.mjs o cargar.mjs: node tools/medir-verificar.mjs --lista <esta lista> antes y después (gratis, deja los registros como estaban).
+# RÁPIDA: los casos que ya rompieron algo una vez. Los 16 originales (UC, Fortaleza, Goiás 2008, Novorizontino, Juventus, AEL) y los de los escalones de
+# verificar.mjs (Avaí 2021, Ferroviária 2012 y 2016, Parma 2024-25, Remo, Criciúma 2022, Goiás 2023, Lazio 2016-17, Milan 2018-19, Atalanta 2024, Bologna,
+# Salernitana, Torino) y de Portugal (237 f, w y am; Santa Clara, Nacional, Marítimo, Paços, AVS, Portimonense, Alverca, Moreirense, Mafra, Académica; Benfica y Sporting 2007-08).
 Clubes/Brasil/Goias/demonstracoes-contabeis-2008-2007.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf
 Clubes/Brasil/Novorizontino/balanco-2010.pdf
@@ -16,3 +19,31 @@ Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2006-07.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2020-21.pdf
 Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf
+Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf
+Clubes/Brasil/Ferroviaria/balanco-2012.pdf
+Clubes/Brasil/Ferroviaria/balanco-2016.pdf
+Clubes/Italia/Parma/Parma-bilancio-31.12.2024-individual.pdf
+Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.pdf
+Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf
+Clubes/Brasil/Remo/dre-2023.pdf
+Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.pdf
+Clubes/Brasil/Goias/demonstracoes-contabeis-2023.pdf
+Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2018-19.pdf
+Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2024.pdf
+Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2016-17.pdf
+Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2020-21.pdf
+Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2022.pdf
+Clubes/Italia/Torino/Torino-bilancio-2020.pdf
+Clubes/Portugal/Santa Clara/relatorio-contas-sad-2024-25.pdf
+Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Nacional/relatorio-contas-2024-25.pdf
+Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.pdf
+Clubes/Portugal/Paços de Ferreira/contas21_22.pdf
+Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Portimonense/Relatorio-Contas-22-23_assinado.pdf
+Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf
+Clubes/Portugal/Moreirense/relatorio-contas-2022-23.pdf
+Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf
+Clubes/Portugal/Benfica/relatorio-contas-2007-08.pdf
+Clubes/Portugal/Sporting CP/relatorio-contas-2007-08.pdf
+Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.pdf
