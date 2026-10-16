@@ -200,6 +200,8 @@ llegue acá.
        personal −0,001, provisiones −0,001, otros gastos +0,001, plantel +0,001) y con todas los totales cierran exacto con el impreso.
        Escalón posible: que la guarda de cargar exima las filas de origen redondeo (o que verificar las nombre con su renglón).
        Además, w) se repitió en Santa Clara 2023-24 ("Juros e Outros Rendimentos Similares" 360.009 como gasto; ajuste `fila`).
+       Y en el lote 81: Marítimo 2024-25 ("Juros" 112.880 de Outros rendimentos) y Nacional 2024-25 ("Correções relativas a períodos
+       anteriores" 113.202, nota 15.2): las dos como gasto, resueltas con ajuste `fila`. Ya son 5 casos: vale la pena el escalón de w).
     ab) EL EJERCICIO DE 11 MESES POR CAMBIO DE CIERRE SE CARGA (decisión de Guido, 2026-10-15; regla en CONVENCIONES-DATOS). cargar.mjs frena
        Benfica 2007-08 (1/8/2007-30/6/2008, "período de 11 meses", relatorio-contas-2007-08.md L236) con "período otro de 11 meses", y ningún
        ajuste lo destraba. Escalón posible: un ajuste `periodo` (valor: "cambio-de-cierre") que deje pasar ese documento con publicNote, o la
@@ -250,6 +252,16 @@ llegue acá.
        alta-club.mjs arma pacosdeferreira-pt y uniaodeleiria-pt desde la carpeta, y cargar-lote.mjs busca el color por clubId: los dos
        habrían frenado "sin color elegido"). Se resolvió agregando la revisión con el id de la carpeta. Escalón posible: que la revisión se
        cruce por carpeta (campo `carpeta`, que ya tiene) además de por clubId, o que alta-club.mjs avise cuando la revisión usa otro id.
+    ak) CORREGIR EL .md NO REHACE LA VALIDACIÓN EN EL LOTE (lote 81: se corrigieron cifras en AVS 2023-24 L534 y Casa Pia 2024-25 L1125; la
+       segunda corrida no rehízo la etapa 4 y cargar.mjs frenó "la etapa 4 es de una versión anterior del .md: correr el lote", que es lo que
+       se acababa de hacer). Causa probable: el lote decide rehacer por `cache-al-dia.mjs` (huella o cada fila en su línea: una cifra
+       cambiada deja las líneas iguales -> "al día"), y cargar.mjs mira la fecha del .validacion.json contra la del .md. Dos compuertas
+       distintas para lo mismo. Se destrabó sacando los .validacion.json. Escalón posible: una sola compuerta (la del lote, que use también
+       el mdSha1 que ya guarda el .validacion.json).
+    al) EL ANEXO EN FORMATO UEFA ABRE LAS VENTAS Y NADIE LO USA (Mafra 2023-24, "Contas Anuais ED*-1", .md L1437-1483: bilheteira, patrocínios,
+       TV, merchandising, competições y otros = 1.275.143,83, exacto con Vendas e serviços prestados; el lote pedía un reintento pago por TV y
+       estadio en 0). Se cargó con ajustes `fila`. Portimonense 2024-25 trae algo parecido en el informe de gestión. Escalón posible: que
+       localizar ofrezca ese anexo como desglose de Vendas cuando su suma da el renglón (compuerta: suma exacta).
     ah) `medir-cargar.mjs` NO SE PUEDE ACOTAR (2026-10-15, medición de la 237 y: ~6 min por corrida, dos corridas, sobre los ~570 documentos con
        categorías de todos los países, cuando el cambio solo actúa en Clubes/Portugal/). Escalón posible: `--lista <archivo>` y `--dir <carpeta>`
        para medir solo lo que el cambio puede tocar; la corrida completa queda para los cambios que afectan a todos (escalera de categorías).
