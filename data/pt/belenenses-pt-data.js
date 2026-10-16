@@ -4,6 +4,9 @@ const belenensesptRevenueLinesByYear = {
     { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.222067, disclosureLevel:'aggregated' },
     { rawLabel:'Outros não especificados', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Vendas e serviços prestados', normalizedCategory:'lump_football_operations', amountNative:1.288499, disclosureLevel:'aggregated' },
+  ],
 };
 const belenensesptExpenseLinesByYear = {
   2025: [
@@ -42,6 +45,36 @@ const belenensesptExpenseLinesByYear = {
     { rawLabel:'Outros gastos e perdas', normalizedCategory:'other_expenses', amountNative:-0.010946, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos / reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.009439, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-0.14608, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade e propaganda', normalizedCategory:'admin_general_expense', amountNative:-0.010046, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.107391, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.040036, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços bancários', normalizedCategory:'admin_general_expense', amountNative:-0.000884, disclosureLevel:'aggregated' },
+    { rawLabel:'Comissões', normalizedCategory:'other_expenses', amountNative:-0.000004, disclosureLevel:'aggregated' },
+    { rawLabel:'Ferramentas e utensílios de desgaste rápido', normalizedCategory:'admin_general_expense', amountNative:-0.009121, disclosureLevel:'aggregated' },
+    { rawLabel:'Material de escritório', normalizedCategory:'admin_general_expense', amountNative:-0.000301, disclosureLevel:'aggregated' },
+    { rawLabel:'Eletricidade', normalizedCategory:'admin_general_expense', amountNative:-0.001857, disclosureLevel:'aggregated' },
+    { rawLabel:'Água', normalizedCategory:'admin_general_expense', amountNative:-0.001136, disclosureLevel:'aggregated' },
+    { rawLabel:'Combustíveis', normalizedCategory:'admin_general_expense', amountNative:-0.001013, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e estadias', normalizedCategory:'match_organisation_expense', amountNative:-0.180413, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.031715, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.001874, disclosureLevel:'aggregated' },
+    { rawLabel:'Contechisioso e notariado', normalizedCategory:'admin_general_expense', amountNative:-0.0003, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas de representação', normalizedCategory:'admin_general_expense', amountNative:-0.000103, disclosureLevel:'aggregated' },
+    { rawLabel:'Limpeza, higiene e conforto', normalizedCategory:'admin_general_expense', amountNative:-0.000075, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.008684, disclosureLevel:'aggregated' },
+    { rawLabel:'Órgãos sociais e outros colaboradores', normalizedCategory:'admin_general_expense', amountNative:-0.066042, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações Plantel e Equipa Técnica', normalizedCategory:'wages_squad', amountNative:-0.703895, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre remunerações', normalizedCategory:'wages_squad', amountNative:-0.063015, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.068499, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.030648, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.000953, disclosureLevel:'aggregated' },
+    { rawLabel:'Taxas', normalizedCategory:'admin_general_expense', amountNative:-0.0005, disclosureLevel:'aggregated' },
+    { rawLabel:'Menos valias de ativos intangíveis', normalizedCategory:'player_impairment', amountNative:-0.08, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos e perdas', normalizedCategory:'other_expenses', amountNative:-0.000408, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos / reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.123999, disclosureLevel:'aggregated' },
+  ],
 };
 const belenensesptFiscalYearMeta = {
   2025: {
@@ -60,6 +93,23 @@ const belenensesptFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:0.758823, officialTotalExpenses:1.190468, officialPAT:-0.451035,
+  },
+  2024: {
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'belenenses-pt-sduq-relatorio-e-contas-2023-2024',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.00001, tax:0,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.00001},
+      {label:'Imposto sobre o rendimento do período', value:null},
+    ],
+    sinDesglose: [
+      {renglon:'Vendas e serviços prestados', lado:'revenue', importe:1.288499, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:1.288499, officialTotalExpenses:1.678994, officialPAT:-0.390504,
   },
 };
 const belenensesptPresupuestoOverlayByYear = {};
@@ -80,6 +130,11 @@ Object.assign(sources, {
   'belenenses-pt-sduq-demonstracoes-financeiras-30junho2025': {
     id:'belenenses-pt-sduq-demonstracoes-financeiras-30junho2025', clubId:'belenenses-pt',
     title:'Belenenses — Belenenses-SDUQ-demonstracoes-financeiras-30junho2025 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'belenenses-pt-sduq-relatorio-e-contas-2023-2024': {
+    id:'belenenses-pt-sduq-relatorio-e-contas-2023-2024', clubId:'belenenses-pt',
+    title:'Belenenses — Belenenses-SDUQ-Relatorio-e-Contas-2023-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

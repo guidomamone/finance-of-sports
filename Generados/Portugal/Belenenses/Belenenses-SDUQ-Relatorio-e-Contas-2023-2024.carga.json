@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.pdf",
- "generado": "2026-10-15T22:34:34.609Z",
- "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (belenenses-pt)"
-  }
- ],
+ "generado": "2026-10-16T03:18:40.710Z",
+ "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-06-30); pregunta en la cola (no frena)"
  ],
@@ -349,7 +344,7 @@
    "title": "Belenenses — Belenenses-SDUQ-Relatorio-e-Contas-2023-2024 (ejercicio 2024)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.md",
@@ -918,8 +913,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 1,
   "lineasGasto": 28,
   "metaFilas": 2,

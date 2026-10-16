@@ -108,6 +108,65 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-16): pt-liga3, verificado contra roster cacheado de "2024–25 Liga 3 (Portugal)" (tools/club-league-reference/pt.json), coincidencia exacta "Belenenses".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas e serviços prestados | pág. 7, Jev 0.9 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trabalhos especializados | pág. 19, Jev 0.99 |
+| 2 | Publicidade e propaganda | pág. 19, Jev 1 |
+| 3 | Vigilância e segurança | pág. 19, Jev 0.97 |
+| 4 | Honorários | pág. 19, Jev 1 |
+| 5 | Serviços bancários | pág. 19, Jev 0.99 |
+| 6 | Comissões | pág. 19, precedente |
+| 7 | Ferramentas e utensílios de desgaste rápido | pág. 19, Jev 1 |
+| 8 | Material de escritório | pág. 19, Jev 1 |
+| 9 | Eletricidade | pág. 19, Jev 1 |
+| 10 | Água | pág. 19, Jev 0.98 |
+| 11 | Combustíveis | pág. 19, Jev 0.99 |
+| 12 | Deslocações e estadias | pág. 19, Jev 1 |
+| 13 | Rendas e alugueres | pág. 19, precedente |
+| 14 | Comunicação | pág. 19, Jev 1 |
+| 15 | Contechisioso e notariado | pág. 19, Jev 1 |
+| 16 | Despesas de representação | pág. 19, Jev 0.99 |
+| 17 | Limpeza, higiene e conforto | pág. 19, Jev 1 |
+| 18 | Outros | pág. 19, Jev 0.92 |
+| 19 | Órgãos sociais e outros colaboradores | pág. 20, Claude 0.8 |
+| 20 | Remunerações Plantel e Equipa Técnica | pág. 20, Jev 1 |
+| 21 | Encargos sobre remunerações | pág. 20, Jev 0.91 |
+| 22 | Seguros | pág. 20, precedente |
+| 23 | Outros | pág. 20, Jev 0.92 |
+| 24 | Impostos | pág. 20, Jev 0.97 |
+| 25 | Taxas | pág. 20, Claude 0.85 |
+| 26 | Menos valias de ativos intangíveis | pág. 20, Jev 0.92 |
+| 27 | Outros gastos e perdas | pág. 20, Jev 0.99 |
+| 28 | Gastos / reversões de depreciação e de amortização | pág. 7, Jev 0.91 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2023–24 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Belenenses".
+```
+
 ## Fuentes
 
 ### belenenses-pt-sduq-demonstracoes-financeiras-30junho2025
@@ -116,4 +175,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### belenenses-pt-sduq-relatorio-e-contas-2023-2024
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

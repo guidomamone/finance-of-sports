@@ -50,6 +50,9 @@ window.RANKINGS["pt-ligaportugal2"] = {
       { id:"academicoviseu-pt", revenue:1.679, reportType:"official_balance_sheet",
         sourceId:"academicoviseu-pt-wf-2023-2024-02d5741e",
         mix:[["Comercial / Sponsors",0.429],["Estadio",0.072],["Televisión",0.482],["Premios por competencias",0.008],["Otros ingresos",0.688]] },
+      { id:"belenenses-pt", revenue:1.38, reportType:"official_balance_sheet",
+        sourceId:"belenenses-pt-sduq-relatorio-e-contas-2023-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.38]] },
     ],
   },
   2023: {

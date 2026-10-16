@@ -16,3 +16,5 @@
 - Último chequeo: 2026-10-08.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.pdf` (sourceId `belenenses-pt-sduq-demonstracoes-financeiras-30junho2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.pdf` (sourceId `belenenses-pt-sduq-relatorio-e-contas-2023-2024`).
