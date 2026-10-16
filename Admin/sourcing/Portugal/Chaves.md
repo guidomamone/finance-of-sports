@@ -13,3 +13,5 @@
 
 - Temporadas 2021/22 a 2024/25 (archivos `RC-2021-2022`, `RC-2022-2023`, `Atividades-e-Contas-GDC-23-24`, `...24_25`); el CDX da dos versiones de 2022/23 y 2023/24. Verificar si cubren solo el clube o también la SAD.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Chaves/RC-2022-2023-com.pdf` (sourceId `chaves-pt-rc-2022-2023-com`).

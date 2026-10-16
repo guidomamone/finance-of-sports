@@ -1,0 +1,123 @@
+# chaves-pt — evidencia de carga
+
+Lo que antes iba como comentario en el data file del club, `data/<país>/chaves-pt-data.js` (la regla: `Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA
+COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y meta. Las notas de cada fila van en una tabla con su número de
+fila (hay nombres de rubro repetidos en un mismo año).
+
+## Cabecera
+
+```text
+Chaves: alta por tools/alta-club.mjs (2026-10-16) desde Clubes/Portugal/Chaves/RC-2022-2023-com.pdf. brandColor #191970
+(procedencia en Admin/sourcing/Portugal/Chaves.md; tools/cargar-lote.mjs).
+```
+
+```text
+data/pt/chaves-pt-data.js — Grupo Desportivo de Chaves - Futebol, SAD (Portugal).
+ALTA POR SCRIPT (tools/alta-club.mjs, 2026-10-16), SIN EJERCICIOS CARGADOS TODAVÍA: las estructuras del data file
+nacen vacías a propósito. Los rubros, los totales oficiales y el resto del fiscalYearMeta los agrega la etapa de carga.
+
+Documento que originó el alta: Clubes/Portugal/Chaves/RC-2022-2023-com.pdf
+
+De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
+  id                 ok        "chaves-pt" — slug de "Chaves" + '-pt' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
+  name               ok        "Grupo Desportivo de Chaves - Futebol, SAD" — respuesta de Guido en la cola (9f44a00)
+  displayName        ok        "Chaves" — nombre de la carpeta del club en Clubes/
+  country            ok        "PT" — carpeta de país "Portugal" (tabla PAISES)
+  reportingCurrency  ok        "EUR" — moneda de curso legal de Portugal
+  fiscalYearStart    ok        "07-01" — cierre del ejercicio: contenido del .md (100 de 102 fechas de fin de mes caen en el mes 6)
+  sport              ok        "futbol" — el .md nombra el fútbol 68 veces y ningún otro deporte más que eso
+  brandColor         pendiente (ausente) — la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)
+  anio               ok        2023 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
+  cierre             ok        "2023-06-30" — año del ejercicio + mes de cierre (contenido del .md (100 de 102 fechas de fin de mes caen en el mes 6))
+  reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
+  perimetro          ok        "individual" — el .md no presenta estados consolidados (1 menciones de "consolidado")
+  currency           ok        "EUR" — moneda de curso legal de Portugal (tabla PAISES de alta-club.mjs)
+  fxRef              ok        "EUR@2023-06-30" — el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2023-06-30 = 0.9203 (Cierre BCE al 30/6/2023 (1 EUR = 1,0866 USD))
+  sourceId           ok        "chaves-pt-rc-2022-2023-com" — clubId + nombre del archivo en slug
+  liga               ok        "pt-primeiraliga" — roster cacheado de "2022–23 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Chaves"
+
+FISCAL YEAR META PROPUESTO para 2023 (NO registrado: un ejercicio con meta y
+sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
+  2023: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2023-06-30","sourceId":"chaves-pt-rc-2022-2023-com"}
+```
+
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Chaves/RC-2022-2023-com.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Chaves/RC-2022-2023-com.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Venda de bens | pág. 29, precedente |
+| 2 | Publicidade | pág. 29, Jev 1 |
+| 3 | Bilhetes Jogos | pág. 29, Jev 1 |
+| 4 | Cessao direitos televisivos | pág. 29, Jev 1 |
+| 5 | Gold Pass/Cativos/Camarotes | pág. 29, precedente |
+| 6 | UEFA | pág. 29, precedente |
+| 7 | Inst. Apoio às PME | pág. 29, Jev 0.97 |
+| 8 | Jogos Placard | pág. 39, Claude 0.8 |
+| 9 | Distribuição de lucros dos jogos e apostas on-line | pág. 39, Jev 0.99 |
+| 10 | Premios de Participação Taça Liga Allianz Cup | pág. 39, Jev 1 |
+| 11 | Premios Taça de Portugal | pág. 39, Jev 1 |
+| 12 | Subsídio de deslocação Taça de Portugal | pág. 39, Jev 0.96 |
+| 13 | Quotas Grupo Desportivo de Chaves | pág. 39, Jev 1 |
+| 14 | Mecanismo de Solidariedade Matheus Pereira | pág. 39, Jev 0.96 |
+| 15 | Transferências | pág. 39, Jev 0.99 |
+| 16 | Fundo de Apoio Desenvolvimento Infrastruras Tecnológicas | pág. 39, Jev 1 |
+| 17 | Premio Liga Portugal | pág. 39, Jev 0.98 |
+| 18 | Cedência Direitos Económicos | pág. 39, Jev 0.98 |
+| 19 | Descontos de Pronto Pagamento Obtidos | pág. 39, Jev 1 |
+| 20 | Diferenças de Câmbio Favoráveis | pág. 39, precedente |
+| 21 | Indeminização de Seguros | pág. 39, Jev 1 |
+| 22 | Indeminização de Vencimentos | pág. 39, Jev 0.92 |
+| 23 | Outros | pág. 39, Jev 0.97 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 10, Jev 0.98 |
+| 2 | Trabalhos Especializados | pág. 38, Jev 0.99 |
+| 3 | Publicidade e Propaganda | pág. 38, Jev 1 |
+| 4 | Vigilância e Segurança | pág. 38, Jev 0.98 |
+| 5 | Honorários | pág. 38, Jev 1 |
+| 6 | Conservação e Reparação | pág. 38, Jev 0.98 |
+| 7 | Serviços Bancários | pág. 38, Jev 0.98 |
+| 8 | Materiais | pág. 38, Jev 0.9 |
+| 9 | Energia e Fluidos | pág. 38, Jev 1 |
+| 10 | Deslocações e Estadas | pág. 38, Jev 1 |
+| 11 | Serviços Diversos | pág. 38, Jev 0.92 |
+| 12 | Gastos com o pessoal | pág. 10, Claude 0.8 |
+| 13 | Impostos Indiretos | pág. 40, Jev 1 |
+| 14 | Taxas | pág. 40, Claude 0.85 |
+| 15 | Correcções relativas a ex. anterior | pág. 40, Jev 1 |
+| 16 | Quotização | pág. 40, ? 0.6 |
+| 17 | Insuficiencia estimativa imposto | pág. 40, Jev 0.9 |
+| 18 | Multas e Penalidades | pág. 40, Jev 0.95 |
+| 19 | Gastos/reversões de depreciação e de amortização | pág. 10, Jev 0.91 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+alta-club.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2022–23 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Chaves".
+```
+
+## Fuentes
+
+### chaves-pt-rc-2022-2023-com
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Chaves/RC-2022-2023-com.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

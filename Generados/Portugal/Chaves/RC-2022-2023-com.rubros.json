@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Chaves/RC-2022-2023-com.pdf",
   "club": "chaves",
   "year": 2023,
-  "generatedAt": "2026-10-16T02:25:06.332Z",
+  "generatedAt": "2026-10-16T02:44:08.055Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         0.470289
       ],
-      "glosa": "Taquilla de partidos"
+      "glosa": "Venta de entradas de partidos"
     },
     {
       "label": "Cessao direitos televisivos",
@@ -44,7 +44,7 @@
       "values": [
         3.6
       ],
-      "glosa": "Cesión de derechos de televisión"
+      "glosa": "Cesión de derechos de retransmisión televisiva"
     },
     {
       "label": "Gold Pass/Cativos/Camarotes",
@@ -54,7 +54,7 @@
       "values": [
         0.232416
       ],
-      "glosa": "Pases VIP / Asientos reservados / Palcos"
+      "glosa": "Abonos VIP / Asientos reservados / Palcos"
     },
     {
       "label": "UEFA",
@@ -74,7 +74,7 @@
       "values": [
         0.004692
       ],
-      "glosa": "Inst. de Apoyo a las PYME"
+      "glosa": "Instituto de Apoyo a las PYMES"
     },
     {
       "label": "Jogos Placard",
@@ -94,7 +94,7 @@
       "values": [
         0.384781
       ],
-      "glosa": "Distribución de beneficios de juegos y apuestas online"
+      "glosa": "Distribución de beneficios de juegos y apuestas en línea"
     },
     {
       "label": "Premios de Participação Taça Liga Allianz Cup",
@@ -194,7 +194,7 @@
       "values": [
         0
       ],
-      "glosa": "Descuentos por pronto pago obtenidos"
+      "glosa": "Descuentos sobre compras por pronto pago"
     },
     {
       "label": "Diferenças de Câmbio Favoráveis",
@@ -284,7 +284,7 @@
       "values": [
         0.082961
       ],
-      "glosa": "Honorarios"
+      "glosa": "Honorarios profesionales"
     },
     {
       "label": "Conservação e Reparação",
@@ -294,7 +294,7 @@
       "values": [
         0.114189
       ],
-      "glosa": "Reparación y conservación"
+      "glosa": "Reparaciones y conservación"
     },
     {
       "label": "Serviços Bancários",
@@ -324,7 +324,7 @@
       "values": [
         0.094843
       ],
-      "glosa": "Energía y suministros"
+      "glosa": "Suministros de energía y fluidos"
     },
     {
       "label": "Deslocações e Estadas",
@@ -334,7 +334,7 @@
       "values": [
         0.098455
       ],
-      "glosa": "Viajes y dietas"
+      "glosa": "Desplazamientos y estancias"
     },
     {
       "label": "Serviços Diversos",
@@ -394,7 +394,7 @@
       "values": [
         0.003935
       ],
-      "glosa": "Cotizaciones y cuotas"
+      "glosa": "Cuotas"
     },
     {
       "label": "Insuficiencia estimativa imposto",
@@ -404,7 +404,7 @@
       "values": [
         0.006396
       ],
-      "glosa": "Insuficiencia en la estimación de impuestos"
+      "glosa": "Insuficiencia de la estimación del impuesto"
     },
     {
       "label": "Multas e Penalidades",
@@ -424,7 +424,7 @@
       "values": [
         0.519159
       ],
-      "glosa": "Dotaciones/reversiones de amortización y deterioro de valor"
+      "glosa": "Gastos/reversiones de depreciación y amortización"
     }
   ]
 }

@@ -21,4 +21,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'academicoviseu-pt': { 2025: 'pt-ligaportugal2' },
   'academica-pt': { 2024: 'pt-liga3' },
   'arouca-pt': { 2025: 'pt-primeiraliga' },
+  'chaves-pt': { 2023: 'pt-primeiraliga' },
 });
