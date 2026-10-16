@@ -14,3 +14,5 @@
 - Todo descubierto con Exa y bajado del sitio del club. Revisar a qué entidad corresponde cada PDF (SAD vs clube) antes de cargar.
 
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.pdf` (sourceId `portimonense-pt-relatorio-contas-24-25-assinado`).

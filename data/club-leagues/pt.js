@@ -28,4 +28,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'maritimo-pt': { 2025: 'pt-ligaportugal2' },
   'oliveirense-pt': { 2025: 'pt-ligaportugal2' },
   'pacosdeferreira-pt': { 2025: 'pt-ligaportugal2' },
+  'portimonense-pt': { 2025: 'pt-ligaportugal2' },
 });

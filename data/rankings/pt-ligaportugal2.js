@@ -4,6 +4,9 @@ window.RANKINGS["pt-ligaportugal2"] = {
   2025: {
     leagueSize: null,
     clubs: [
+      { id:"portimonense-pt", revenue:11.211, reportType:"official_balance_sheet",
+        sourceId:"portimonense-pt-relatorio-contas-24-25-assinado",
+        mix:[["Comercial / Sponsors",0.676],["Estadio",0.082],["Televisión",0.527],["Venta de Jugadores",8.229],["Otros ingresos",1.696]] },
       { id:"maritimo-pt", revenue:7.812, reportType:"official_balance_sheet",
         sourceId:"maritimo-pt-futebol-sad-rc-30-06-2025",
         mix:[["Comercial / Sponsors",0.94],["Estadio",0.205],["Premios por competencias",0.015],["Venta de Jugadores",3.787],["Otros ingresos",2.865]] },

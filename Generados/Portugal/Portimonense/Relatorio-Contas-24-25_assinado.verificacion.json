@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.pdf",
  "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.md",
- "generado": "2026-10-16T02:25:06.720Z",
+ "generado": "2026-10-16T02:44:08.322Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -11,7 +11,48 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.pdf",
+   "campo": "fila",
+   "valor": "70.054",
+   "linea": 379,
+   "etiqueta": "Bilheteira",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 2121,
+   "motivo": "Prestações de Serviços se abre con el cuadro de gestión, que cierra exacto con la nota 12.",
+   "evidencia": "Relatorio-Contas-24-25_assinado.md L379-381 (cuadro de gestión 'Rendimentos e Ganhos Operacionais'); suman 1.018.340, igual a Prestações de Serviços L2121",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.pdf",
+   "campo": "fila",
+   "valor": "498.286",
+   "linea": 380,
+   "etiqueta": "Publicidade e patrocínios",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de Prestações de Serviços (cuadro de gestión).",
+   "evidencia": "Relatorio-Contas-24-25_assinado.md L379-381 (cuadro de gestión 'Rendimentos e Ganhos Operacionais'); suman 1.018.340, igual a Prestações de Serviços L2121",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.pdf",
+   "campo": "fila",
+   "valor": "450.000",
+   "linea": 381,
+   "etiqueta": "Direitos televisivos",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de Prestações de Serviços (cuadro de gestión).",
+   "evidencia": "Relatorio-Contas-24-25_assinado.md L379-381 (cuadro de gestión 'Rendimentos e Ganhos Operacionais'); suman 1.018.340, igual a Prestações de Serviços L2121",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -28,7 +69,7 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 0
+   "dif": 2.700000010236181e-7
   },
   {
    "nombre": "documento del año 2024",
@@ -45,7 +86,10 @@
   "la nota de \"Custo das mercadorias vendidas e das matérias cons.\" no suma el renglón (0.089631 contra 0.051774, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Gastos com o Pessoal\" no suma el renglón (6.005807 contra 6.304874, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Outros gastos e perdas\" no suma el renglón (1.121594 contra 1.12515, sumando sus renglones): quedó el renglón del estado",
-  "línea 2285: 116 111,51 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (11511151) el resultado daría -16.100929 y no cierra)",
+  "ajuste manual: fila \"Bilheteira\" (ingreso) 70.054, en lugar de la fila de L2121 (2026-10-16, Prestações de Serviços se abre con el cuadro de gestión, que cierra exacto con la nota 12.)",
+  "ajuste manual: fila \"Publicidade e patrocínios\" (ingreso) 498.286 (2026-10-16, Parte de Prestações de Serviços (cuadro de gestión).)",
+  "ajuste manual: fila \"Direitos televisivos\" (ingreso) 450.000 (2026-10-16, Parte de Prestações de Serviços (cuadro de gestión).)",
+  "línea 2285: 116 111,51 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (11511151) el resultado daría -16.10093 y no cierra)",
   "duda de localizar que no afecta la carga: Es detalle por jugador de un renglón ya abierto en b35.",
   "duda de extraer que no afecta la carga: L2119 rotula ambas columnas 30-06-2024, pero el total de la primera (L2122) coincide con 2025 del estado."
  ],
@@ -85,7 +129,7 @@
   }
  ],
  "totales": {
-  "ingresos": 9.565185,
+  "ingresos": 9.565184,
   "gastos": 13.574984,
   "financiero": -0.366821,
   "impuesto": -0.329269,
@@ -101,14 +145,6 @@
    "M": 0.078818,
    "pagina": 66,
    "linea": 2120,
-   "origen": "nota que desglosa \"Vendas e serviços prestados\""
-  },
-  {
-   "etiqueta": "Prestações de Serviços",
-   "lado": "ingreso",
-   "M": 1.01834,
-   "pagina": 66,
-   "linea": 2121,
    "origen": "nota que desglosa \"Vendas e serviços prestados\""
   },
   {
@@ -158,6 +194,30 @@
    "pagina": 71,
    "linea": 2314,
    "origen": "nota que desglosa \"Outros rendimentos e ganhos\""
+  },
+  {
+   "etiqueta": "Bilheteira",
+   "lado": "ingreso",
+   "M": 0.070054,
+   "pagina": 11,
+   "linea": 379,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Publicidade e patrocínios",
+   "lado": "ingreso",
+   "M": 0.498286,
+   "pagina": 11,
+   "linea": 380,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Direitos televisivos",
+   "lado": "ingreso",
+   "M": 0.45,
+   "pagina": 11,
+   "linea": 381,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Custo das mercadorias vendidas e das matérias cons.",

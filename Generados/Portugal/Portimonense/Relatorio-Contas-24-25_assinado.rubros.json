@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.pdf",
   "club": "portimonense",
   "year": 2025,
-  "generatedAt": "2026-10-16T02:25:06.720Z",
+  "generatedAt": "2026-10-16T02:44:08.322Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -15,16 +15,6 @@
         0.078818
       ],
       "glosa": "Ventas"
-    },
-    {
-      "label": "Prestações de Serviços",
-      "lado": "revenue",
-      "page": 66,
-      "section": "nota que desglosa \"Vendas e serviços prestados\"",
-      "values": [
-        1.01834
-      ],
-      "glosa": "Prestaciones de servicios"
     },
     {
       "label": "Subsídios à exploração",
@@ -64,7 +54,7 @@
       "values": [
         0.000002
       ],
-      "glosa": "Ingresos y ganancias en los restantes activos financieros"
+      "glosa": "Ingresos y ganancias en el resto de activos financieros"
     },
     {
       "label": "Rendimentos e ganhos em investimentos não financeiros",
@@ -85,6 +75,36 @@
         0.922934
       ],
       "glosa": "Otros"
+    },
+    {
+      "label": "Bilheteira",
+      "lado": "revenue",
+      "page": 11,
+      "section": "ajuste manual",
+      "values": [
+        0.070054
+      ],
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "Publicidade e patrocínios",
+      "lado": "revenue",
+      "page": 11,
+      "section": "ajuste manual",
+      "values": [
+        0.498286
+      ],
+      "glosa": "Publicidad y patrocinios"
+    },
+    {
+      "label": "Direitos televisivos",
+      "lado": "revenue",
+      "page": 11,
+      "section": "ajuste manual",
+      "values": [
+        0.45
+      ],
+      "glosa": "Derechos de televisión"
     },
     {
       "label": "Custo das mercadorias vendidas e das matérias cons.",
@@ -154,7 +174,7 @@
       "values": [
         0.141484
       ],
-      "glosa": "Reparación y conservación"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Outros",
@@ -264,7 +284,7 @@
       "values": [
         0.238601
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Comunicação",
@@ -354,7 +374,7 @@
       "values": [
         2.210126
       ],
-      "glosa": "Gastos/reversiones de depreciación y de amortización"
+      "glosa": "Gastos/reversiones de amortización y depreciación"
     }
   ]
 }

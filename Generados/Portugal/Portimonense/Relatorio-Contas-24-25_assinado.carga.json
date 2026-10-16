@@ -1,17 +1,15 @@
 {
  "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.pdf",
- "generado": "2026-10-16T02:33:30.765Z",
+ "generado": "2026-10-16T02:49:45.763Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (portimonense-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Prestações de Serviços\" -> lump_football_operations 0.45; \"Rendimentos e ganhos em investimentos nã\" -> player_sales 0.7; \"Outros\" -> other_income 0; \"Gastos com o Pessoal\" -> wages_squad 0.75"
   }
  ],
  "avisos": [
+  "\"Cuotas sociales\" en 0: real en este documento (lo presenta una SAD/SDUQ, solo fútbol profesional: Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.md L11 \"PORTIMONENSE FUTEBOL SAD\"; to-do 237 y)",
+  "\"Otras secciones deportivas\" en 0: real en este documento (lo presenta una SAD/SDUQ, solo fútbol profesional: Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.md L11 \"PORTIMONENSE FUTEBOL SAD\"; to-do 237 y)",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -28,16 +26,6 @@
     "_pag": 66,
     "_escalon": 1,
     "_conf": 0.9,
-    "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Prestações de Serviços",
-    "normalizedCategory": "lump_football_operations",
-    "amountNative": 1.01834,
-    "disclosureLevel": "aggregated",
-    "_pag": 66,
-    "_escalon": 2,
-    "_conf": 0.45,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -86,9 +74,9 @@
     "amountNative": 7.02126,
     "disclosureLevel": "aggregated",
     "_pag": 71,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -96,9 +84,39 @@
     "amountNative": 0.922934,
     "disclosureLevel": "aggregated",
     "_pag": 71,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Bilheteira",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.070054,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Publicidade e patrocínios",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.498286,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Direitos televisivos",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.45,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
    }
   ],
   "expenseLines": [
@@ -348,9 +366,9 @@
     "amountNative": -6.304874,
     "disclosureLevel": "aggregated",
     "_pag": 49,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos e perdas",
@@ -393,17 +411,9 @@
      "value": -0.329269
     }
    ],
-   "sinDesglose": [
-    {
-     "renglon": "Prestações de Serviços",
-     "lado": "revenue",
-     "importe": 1.01834,
-     "motivo": "el documento no desglosa este renglón"
-    }
-   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 9.565185,
+   "officialTotalRevenue": 9.565184,
    "officialTotalExpenses": 13.574984,
    "officialPAT": -4.70589
   },
@@ -432,9 +442,50 @@
  },
  "clubId": "portimonense-pt",
  "year": 2025,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.pdf",
+   "campo": "fila",
+   "valor": "70.054",
+   "linea": 379,
+   "etiqueta": "Bilheteira",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 2121,
+   "motivo": "Prestações de Serviços se abre con el cuadro de gestión, que cierra exacto con la nota 12.",
+   "evidencia": "Relatorio-Contas-24-25_assinado.md L379-381 (cuadro de gestión 'Rendimentos e Ganhos Operacionais'); suman 1.018.340, igual a Prestações de Serviços L2121",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.pdf",
+   "campo": "fila",
+   "valor": "498.286",
+   "linea": 380,
+   "etiqueta": "Publicidade e patrocínios",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de Prestações de Serviços (cuadro de gestión).",
+   "evidencia": "Relatorio-Contas-24-25_assinado.md L379-381 (cuadro de gestión 'Rendimentos e Ganhos Operacionais'); suman 1.018.340, igual a Prestações de Serviços L2121",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.pdf",
+   "campo": "fila",
+   "valor": "450.000",
+   "linea": 381,
+   "etiqueta": "Direitos televisivos",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de Prestações de Serviços (cuadro de gestión).",
+   "evidencia": "Relatorio-Contas-24-25_assinado.md L379-381 (cuadro de gestión 'Rendimentos e Ganhos Operacionais'); suman 1.018.340, igual a Prestações de Serviços L2121",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
-  "filas": 37,
+  "filas": 39,
   "notasUsadas": [],
   "refM": null
  },
@@ -453,22 +504,6 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.078818
-  },
-  {
-   "label": "Prestações de Serviços",
-   "page": 66,
-   "native": 1.01834,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
-   "signoFijo": 1.01834,
-   "cat": "lump_football_operations",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "enCola": true,
-   "destino": "revenue",
-   "amountNative": 1.01834
   },
   {
    "label": "Subsídios à exploração",
@@ -538,11 +573,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 7.02126,
    "cat": "player_sales",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "revenue",
    "amountNative": 7.02126
   },
@@ -554,14 +589,59 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 0.922934,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "revenue",
    "amountNative": 0.922934
+  },
+  {
+   "label": "Bilheteira",
+   "page": 11,
+   "native": 0.070054,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.070054,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.070054
+  },
+  {
+   "label": "Publicidade e patrocínios",
+   "page": 11,
+   "native": 0.498286,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.498286,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.498286
+  },
+  {
+   "label": "Direitos televisivos",
+   "page": 11,
+   "native": 0.45,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.45,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.45
   },
   {
    "label": "Custo das mercadorias vendidas e das matérias cons.",
@@ -932,11 +1012,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 6.304874,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "expense",
    "amountNative": -6.304874
   },
@@ -998,6 +1078,7 @@
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")": "gastos con signo",
+   "verificacion (ajuste manual)": "gastos con signo",
    "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
@@ -1006,7 +1087,7 @@
  "totales": {
   "revSum": 9.565185,
   "expSum": -13.574987,
-  "officialTotalRevenue": 9.565185,
+  "officialTotalRevenue": 9.565184,
   "officialTotalExpenses": 13.574984,
   "officialPAT": -4.70589,
   "verificacion": {
@@ -1023,7 +1104,7 @@
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
-   "M": 9.565185
+   "M": 9.565184
   },
   "expImpreso": {
    "label": "total de gastos (verificado)",
@@ -1080,8 +1161,8 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
-  "lineasIngreso": 8,
+  "motivos": 1,
+  "lineasIngreso": 10,
   "lineasGasto": 27,
   "metaFilas": 2,
   "excluidas": 0
