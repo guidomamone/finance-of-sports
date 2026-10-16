@@ -19,7 +19,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'estorilpraia-pt': { 2025: 'pt-primeiraliga' },
   'vizela-pt': { 2025: 'pt-ligaportugal2' },
   'academicoviseu-pt': { 2025: 'pt-ligaportugal2', 2023: 'pt-ligaportugal2', 2024: 'pt-ligaportugal2' },
-  'academica-pt': { 2024: 'pt-liga3' },
+  'academica-pt': { 2024: 'pt-liga3', 2022: 'pt-ligaportugal2' },
   'arouca-pt': { 2025: 'pt-primeiraliga' },
   'chaves-pt': { 2023: 'pt-primeiraliga' },
   'felgueiras-pt': { 2024: 'pt-liga3' },

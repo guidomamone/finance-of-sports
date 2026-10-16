@@ -100,6 +100,66 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-liga3, verificado contra roster cacheado de "2023–24 Liga 3 (Portugal)" (tools/club-league-reference/pt.json), coincidencia exacta "Académica".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Académica/9-RC-SDUQ-2021-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Académica/9-RC-SDUQ-2021-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bilhetes de Jogo | pág. 20, precedente |
+| 2 | Prestações de Serviços | pág. 20, precedente |
+| 3 | Subsidios à exploração | pág. 7, precedente |
+| 4 | Publicidade | pág. 21, precedente |
+| 5 | Direitos Televisivos | pág. 21, Jev 1 |
+| 6 | Alienações e Direitos desportivos | pág. 21, precedente |
+| 7 | Outros | pág. 21, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trabalhos especializados | pág. 21, precedente |
+| 2 | Publicidade e propaganda | pág. 21, precedente |
+| 3 | Vigilância e segurança | pág. 21, precedente |
+| 4 | Honorários | pág. 21, precedente |
+| 5 | Comissões | pág. 21, precedente |
+| 6 | Conservação e reparação | pág. 21, precedente |
+| 7 | Outros | pág. 21, precedente |
+| 8 | Ferramentas e utensílios de desgaste rápido | pág. 21, precedente |
+| 9 | Material de escritório | pág. 21, precedente |
+| 10 | Combustíveis | pág. 21, Jev 1 |
+| 11 | Deslocações e estadas | pág. 21, precedente |
+| 12 | Rendas e alugueres | pág. 21, precedente |
+| 13 | Comunicação | pág. 21, precedente |
+| 14 | Seguros | pág. 21, precedente |
+| 15 | Contencioso e notariado | pág. 21, Jev 1 |
+| 16 | Limpeza, higiene e conforto | pág. 21, precedente |
+| 17 | Outros | pág. 21, precedente |
+| 18 | Salários | pág. 20, precedente |
+| 19 | Contribuições | pág. 20, precedente |
+| 20 | Outros | pág. 20, precedente |
+| 21 | Imparidades (Perdas/Reversões) | pág. 7, precedente |
+| 22 | Provisões (Aumentos/Reversões) | pág. 7, precedente |
+| 23 | Outros gastos | pág. 7, Jev 1 |
+| 24 | Gastos/reversões de depreciação e de amortização | pág. 7, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2021–22 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Académica".
+```
+
 ## Fuentes
 
 ### academica-pt-rc-sduq-2023-2024
@@ -108,4 +168,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Académica/RC-SDUQ-2023-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### academica-pt-9-rc-sduq-2021-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Académica/9-RC-SDUQ-2021-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

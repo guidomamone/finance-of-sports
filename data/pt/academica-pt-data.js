@@ -7,6 +7,15 @@ const academicaptRevenueLinesByYear = {
     { rawLabel:'Alienações e Direitos desportivos', normalizedCategory:'player_sales', amountNative:0.0204, disclosureLevel:'aggregated' },
     { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.073596, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Bilhetes de Jogo', normalizedCategory:'matchday_competition', amountNative:0.039359, disclosureLevel:'aggregated' },
+    { rawLabel:'Prestações de Serviços', normalizedCategory:'other_income', amountNative:0.016609, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsidios à exploração', normalizedCategory:'other_income', amountNative:0.23642, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:0.245723, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos Televisivos', normalizedCategory:'broadcasting', amountNative:0.6, disclosureLevel:'aggregated' },
+    { rawLabel:'Alienações e Direitos desportivos', normalizedCategory:'player_sales', amountNative:0.07, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.564206, disclosureLevel:'aggregated' },
+  ],
 };
 const academicaptExpenseLinesByYear = {
   2024: [
@@ -34,6 +43,32 @@ const academicaptExpenseLinesByYear = {
     { rawLabel:'Outros Gastos e Perdas', normalizedCategory:'other_expenses', amountNative:-0.007984, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.000729, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-0.058152, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade e propaganda', normalizedCategory:'admin_general_expense', amountNative:-0.000045, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.046624, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.011451, disclosureLevel:'aggregated' },
+    { rawLabel:'Comissões', normalizedCategory:'other_expenses', amountNative:-0.024582, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e reparação', normalizedCategory:'admin_general_expense', amountNative:-0.00021, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.008642, disclosureLevel:'aggregated' },
+    { rawLabel:'Ferramentas e utensílios de desgaste rápido', normalizedCategory:'admin_general_expense', amountNative:-0.000293, disclosureLevel:'aggregated' },
+    { rawLabel:'Material de escritório', normalizedCategory:'admin_general_expense', amountNative:-0.000677, disclosureLevel:'aggregated' },
+    { rawLabel:'Combustíveis', normalizedCategory:'admin_general_expense', amountNative:-0.011366, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e estadas', normalizedCategory:'match_organisation_expense', amountNative:-0.147883, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.086148, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.000344, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.005144, disclosureLevel:'aggregated' },
+    { rawLabel:'Contencioso e notariado', normalizedCategory:'admin_general_expense', amountNative:-0.001082, disclosureLevel:'aggregated' },
+    { rawLabel:'Limpeza, higiene e conforto', normalizedCategory:'admin_general_expense', amountNative:-0.000442, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.031892, disclosureLevel:'aggregated' },
+    { rawLabel:'Salários', normalizedCategory:'wages_squad', amountNative:-1.796241, disclosureLevel:'aggregated' },
+    { rawLabel:'Contribuições', normalizedCategory:'wages_squad', amountNative:-0.198285, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.37844, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidades (Perdas/Reversões)', normalizedCategory:'other_expenses', amountNative:-0.405637, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisões (Aumentos/Reversões)', normalizedCategory:'admin_general_expense', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos', normalizedCategory:'other_expenses', amountNative:-0.094118, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.000185, disclosureLevel:'aggregated' },
+  ],
 };
 const academicaptFiscalYearMeta = {
   2024: {
@@ -49,6 +84,20 @@ const academicaptFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:0.453634, officialTotalExpenses:1.227265, officialPAT:-0.792388,
+  },
+  2022: {
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'academica-pt-9-rc-sduq-2021-2022',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.072113, tax:0,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.072113},
+      {label:'Imposto sobre rendimento do período', value:0},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:1.772317, officialTotalExpenses:3.307883, officialPAT:-1.60768,
   },
 };
 const academicaptPresupuestoOverlayByYear = {};
@@ -69,6 +118,11 @@ Object.assign(sources, {
   'academica-pt-rc-sduq-2023-2024': {
     id:'academica-pt-rc-sduq-2023-2024', clubId:'academica-pt',
     title:'Académica — RC-SDUQ-2023-2024 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'academica-pt-9-rc-sduq-2021-2022': {
+    id:'academica-pt-9-rc-sduq-2021-2022', clubId:'academica-pt',
+    title:'Académica — 9-RC-SDUQ-2021-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
