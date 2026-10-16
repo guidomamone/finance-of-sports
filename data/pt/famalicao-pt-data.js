@@ -11,6 +11,19 @@ const famalicaoptRevenueLinesByYear = {
     { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.167736, disclosureLevel:'aggregated' },
     { rawLabel:'Outros rendimentos', normalizedCategory:'player_sales', amountNative:5.141805, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Vendas de mercadorias', normalizedCategory:'sponsorship_commercial', amountNative:0.027361, disclosureLevel:'aggregated' },
+    { rawLabel:'Ingressos', normalizedCategory:'matchday_competition', amountNative:0.06745, disclosureLevel:'aggregated' },
+    { rawLabel:'Competições', normalizedCategory:'competition_bonus', amountNative:0.038254, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:0.390202, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:0.061751, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos Clube', normalizedCategory:'broadcasting', amountNative:0.7, disclosureLevel:'aggregated' },
+    { rawLabel:'Apostas desportivas', normalizedCategory:'other_income', amountNative:0.204446, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras receitas desportivas', normalizedCategory:'other_income', amountNative:0.055525, disclosureLevel:'aggregated' },
+    { rawLabel:'Descontos e Abatimentos', normalizedCategory:'other_income', amountNative:-0.011405, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.188401, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros rendimentos', normalizedCategory:'player_sales', amountNative:0.024638, disclosureLevel:'aggregated' },
+  ],
 };
 const famalicaoptExpenseLinesByYear = {
   2022: [
@@ -36,6 +49,21 @@ const famalicaoptExpenseLinesByYear = {
     { rawLabel:'Outros gastos e perdas', normalizedCategory:'other_expenses', amountNative:-0.119427, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-1.23441, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Custo das mercadorias vendidas', normalizedCategory:'admin_general_expense', amountNative:-0.019172, disclosureLevel:'aggregated' },
+    { rawLabel:'Fornecimentos e serviços externos', normalizedCategory:'admin_general_expense', amountNative:-0.951736, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações do pessoal', normalizedCategory:'wages_squad', amountNative:-2.158421, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações', normalizedCategory:'wages_squad', amountNative:-0.111664, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre remunerações', normalizedCategory:'wages_squad', amountNative:-0.220708, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.155976, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos de ação social', normalizedCategory:'wages_squad', amountNative:-0.023652, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos com pessoal', normalizedCategory:'player_amortisation', amountNative:-0.153281, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de dívidas a receber (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:-0.133332, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.001453, disclosureLevel:'aggregated' },
+    { rawLabel:'Descontos de pronto pagamento concedi', normalizedCategory:'other_expenses', amountNative:-0.000006, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos e perdas', normalizedCategory:'other_expenses', amountNative:-0.227823, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.118354, disclosureLevel:'aggregated' },
+  ],
 };
 const famalicaoptFiscalYearMeta = {
   2022: {
@@ -51,6 +79,20 @@ const famalicaoptFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:10.86323, officialTotalExpenses:18.145301, officialPAT:-9.40273,
+  },
+  2019: {
+    currency:'EUR', fxRef:'EUR@2019-06-30',
+    sourceId:'famalicao-pt-relatorio-contas-2018-19',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.293679, tax:0.047468,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.293679},
+      {label:'Imposto sobre o rendimento do período', value:0.047468},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:1.746623, officialTotalExpenses:4.275577, officialPAT:-2.775165,
   },
 };
 const famalicaoptPresupuestoOverlayByYear = {};
@@ -71,6 +113,11 @@ Object.assign(sources, {
   'famalicao-pt-relatorio-contas-2021-22': {
     id:'famalicao-pt-relatorio-contas-2021-22', clubId:'famalicao-pt',
     title:'Futebol Clube de Famalicão - Futebol S.A.D. — relatorio-contas-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'famalicao-pt-relatorio-contas-2018-19': {
+    id:'famalicao-pt-relatorio-contas-2018-19', clubId:'famalicao-pt',
+    title:'Futebol Clube de Famalicão - Futebol S.A.D. — relatorio-contas-2018-19 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

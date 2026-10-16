@@ -40,4 +40,12 @@ window.RANKINGS["pt-ligaportugal2"] = {
         mix:[["Comercial / Sponsors",0.192],["Estadio",0.028],["Televisión",1.08],["Premios por competencias",0.204],["Venta de Jugadores",4.052],["Otros ingresos",1.544]] },
     ],
   },
+  2019: {
+    leagueSize: null,
+    clubs: [
+      { id:"famalicao-pt", revenue:1.988, reportType:"official_balance_sheet",
+        sourceId:"famalicao-pt-relatorio-contas-2018-19",
+        mix:[["Comercial / Sponsors",0.545],["Estadio",0.077],["Televisión",0.797],["Premios por competencias",0.044],["Venta de Jugadores",0.028],["Otros ingresos",0.497]] },
+    ],
+  },
 };
