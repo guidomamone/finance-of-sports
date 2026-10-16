@@ -107,6 +107,22 @@ const portoptRevenueLinesByYear = {
     { rawLabel:'Proveitos com empréstimos de jogadores', normalizedCategory:'player_sales', amountNative:0.741971, disclosureLevel:'aggregated' },
     { rawLabel:'Outros proveitos com jogadores', normalizedCategory:'player_sales', amountNative:0.907593, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Vendas e serviços prestados', normalizedCategory:'lump_football_operations', amountNative:152.41446, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.029729, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendimentos de propriedades de investimento', normalizedCategory:'other_income', amountNative:0.247895, disclosureLevel:'aggregated' },
+    { rawLabel:'Imputação de subsídios para o investimento', normalizedCategory:'other_income', amountNative:0.078516, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros rendimentos suplementares', normalizedCategory:'other_income', amountNative:0.010146, disclosureLevel:'aggregated' },
+    { rawLabel:'Correções relativas a exercícios anteriores', normalizedCategory:'other_income', amountNative:0.003002, disclosureLevel:'aggregated' },
+    { rawLabel:'Reembolsos de sinistros', normalizedCategory:'other_income', amountNative:1.496914, disclosureLevel:'aggregated' },
+    { rawLabel:'Reembolsos de impostos', normalizedCategory:'other_income', amountNative:0.050992, disclosureLevel:'aggregated' },
+    { rawLabel:'Transferências de atletas de outras modalidades', normalizedCategory:'other_sports', amountNative:0.72, disclosureLevel:'aggregated' },
+    { rawLabel:'Mais-valias', normalizedCategory:'other_income', amountNative:0.336833, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros rendimentos e ganhos', normalizedCategory:'other_income', amountNative:0.362613, disclosureLevel:'aggregated' },
+    { rawLabel:'Proveitos com alienações de passes de jogadores', normalizedCategory:'player_sales', amountNative:102.889181, disclosureLevel:'aggregated' },
+    { rawLabel:'Proveitos com empréstimos de jogadores', normalizedCategory:'player_sales', amountNative:5.30199, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros proveitos com jogadores', normalizedCategory:'player_sales', amountNative:4.38638, disclosureLevel:'aggregated' },
+  ],
 };
 const portoptExpenseLinesByYear = {
   2025: [
@@ -328,6 +344,20 @@ const portoptExpenseLinesByYear = {
     { rawLabel:'Outros custos com jogadores', normalizedCategory:'other_expenses', amountNative:-6.011722, disclosureLevel:'aggregated' },
     { rawLabel:'Resultados relativos a investimentos', normalizedCategory:'other_expenses', amountNative:-1.21957, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Custo das mercadorias vendidas e das matérias consumidas', normalizedCategory:'other_expenses', amountNative:-3.648411, disclosureLevel:'aggregated' },
+    { rawLabel:'Fornecimentos e serviços externos', normalizedCategory:'admin_general_expense', amountNative:-37.671574, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos com o pessoal', normalizedCategory:'wages_squad', amountNative:-100.091415, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de inventários (perdas / reversões)', normalizedCategory:'other_expenses', amountNative:-0.275455, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de dívidas a receber (perdas / reversões)', normalizedCategory:'other_expenses', amountNative:-0.335689, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos e perdas', normalizedCategory:'other_expenses', amountNative:-1.275737, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos / reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-5.554148, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortizações de passes de jogadores', normalizedCategory:'player_amortisation', amountNative:-29.843687, disclosureLevel:'aggregated' },
+    { rawLabel:'Perdas por imparidade com passes de jogadores', normalizedCategory:'player_impairment', amountNative:-0.01879, disclosureLevel:'aggregated' },
+    { rawLabel:'Custos com alienações de passes de jogadores', normalizedCategory:'player_amortisation', amountNative:-30.725022, disclosureLevel:'aggregated' },
+    { rawLabel:'Custos com empréstimos de jogadores', normalizedCategory:'other_expenses', amountNative:-1.094487, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros custos com jogadores', normalizedCategory:'other_expenses', amountNative:-5.965788, disclosureLevel:'aggregated' },
+  ],
 };
 const portoptFiscalYearMeta = {
   2025: {
@@ -408,6 +438,26 @@ const portoptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:267.224983, officialTotalExpenses:238.367688, officialPAT:9.764222,
   },
+  2021: {
+    incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, competition_bonus:{ en:'lump_football_operations', posible:true, por:'precedente' } },
+    currency:'EUR', fxRef:'EUR@2021-06-30',
+    sourceId:'porto-pt-relatorio-contas-consolidadas-2020-21',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-20.089387, tax:-1.284922,
+    extraRows: [
+      {label:'Juros e rendimentos similares obtidos', value:2.400778},
+      {label:'Juros e gastos similares suportados', value:-22.433797},
+      {label:'Resultados relativos a investimentos', value:-0.056368},
+      {label:'Imposto sobre o rendimento do período', value:-1.284922},
+    ],
+    sinDesglose: [
+      {renglon:'Vendas e serviços prestados', lado:'revenue', importe:152.41446, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:268.328651, officialTotalExpenses:216.500203, officialPAT:30.454137,
+  },
 };
 const portoptPresupuestoOverlayByYear = {};
 
@@ -447,6 +497,11 @@ Object.assign(sources, {
   'porto-pt-relatorio-contas-consolidadas-2018-19': {
     id:'porto-pt-relatorio-contas-consolidadas-2018-19', clubId:'porto-pt',
     title:'Futebol Clube do Porto — relatorio-contas-consolidadas-2018-19 (ejercicio 2019)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'porto-pt-relatorio-contas-consolidadas-2020-21': {
+    id:'porto-pt-relatorio-contas-consolidadas-2020-21', clubId:'porto-pt',
+    title:'Futebol Clube do Porto — relatorio-contas-consolidadas-2020-21 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

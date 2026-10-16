@@ -118,6 +118,66 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Porto".
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Porto/relatorio-contas-consolidadas-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas e serviços prestados | pág. 36, Jev 0.94 |
+| 2 | Subsídios à exploração | pág. 36, Jev 0.98 |
+| 3 | Rendimentos de propriedades de investimento | pág. 99, Jev 0.98 |
+| 4 | Imputação de subsídios para o investimento | pág. 99, Jev 1 |
+| 5 | Outros rendimentos suplementares | pág. 99, Jev 1 |
+| 6 | Correções relativas a exercícios anteriores | pág. 99, Jev 1 |
+| 7 | Reembolsos de sinistros | pág. 99, Jev 1 |
+| 8 | Reembolsos de impostos | pág. 99, Jev 1 |
+| 9 | Transferências de atletas de outras modalidades | pág. 99, precedente |
+| 10 | Mais-valias | pág. 99, ? 0.6 |
+| 11 | Outros rendimentos e ganhos | pág. 99, Jev 0.97 |
+| 12 | Proveitos com alienações de passes de jogadores | pág. 100, precedente |
+| 13 | Proveitos com empréstimos de jogadores | pág. 100, precedente |
+| 14 | Outros proveitos com jogadores | pág. 100, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 36, Jev 0.99 |
+| 2 | Fornecimentos e serviços externos | pág. 36, Jev 0.99 |
+| 3 | Gastos com o pessoal | pág. 36, precedente |
+| 4 | Imparidade de inventários (perdas / reversões) | pág. 36, Jev 1 |
+| 5 | Imparidade de dívidas a receber (perdas / reversões) | pág. 36, Jev 1 |
+| 6 | Outros gastos e perdas | pág. 36, Jev 1 |
+| 7 | Gastos / reversões de depreciação e de amortização | pág. 36, Claude 0.8 |
+| 8 | Amortizações de passes de jogadores | pág. 100, precedente |
+| 9 | Perdas por imparidade com passes de jogadores | pág. 100, precedente |
+| 10 | Custos com alienações de passes de jogadores | pág. 100, precedente |
+| 11 | Custos com empréstimos de jogadores | pág. 100, precedente |
+| 12 | Outros custos com jogadores | pág. 100, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2016, 2017, 2018, 2019, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2020–21 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Porto".
+```
+
 ## 2019
 
 ### Ingresos
@@ -539,4 +599,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Porto/relatorio-contas-consolidadas-2018-19.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### porto-pt-relatorio-contas-consolidadas-2020-21
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

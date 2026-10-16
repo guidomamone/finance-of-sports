@@ -108,6 +108,10 @@ window.RANKINGS["pt-primeiraliga"] = {
   2021: {
     leagueSize: null,
     clubs: [
+      { id:"porto-pt", revenue:318.869, reportType:"official_balance_sheet",
+        sourceId:"porto-pt-relatorio-contas-consolidadas-2020-21",
+        mix:[["Venta de Jugadores",133.782],["Otras secciones deportivas",0.856],["Fútbol profesional (sin desglosar por la fuente)",181.122],["Otros ingresos",3.109]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"benfica-pt", revenue:230.597, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2020-21",
         mix:[["Comercial / Sponsors",24.559],["Estadio",0.436],["Televisión",65.377],["Premios por competencias",12.189],["Venta de Jugadores",118.854],["Otros ingresos",9.181]] },
