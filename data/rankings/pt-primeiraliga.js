@@ -93,6 +93,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2021: {
     leagueSize: null,
     clubs: [
+      { id:"benfica-pt", revenue:230.597, reportType:"official_balance_sheet",
+        sourceId:"benfica-pt-relatorio-contas-2020-21",
+        mix:[["Comercial / Sponsors",24.559],["Estadio",0.436],["Televisión",65.377],["Premios por competencias",12.189],["Venta de Jugadores",118.854],["Otros ingresos",9.181]] },
       { id:"vitoriaguimaraes-pt", revenue:33.145, reportType:"official_balance_sheet",
         sourceId:"vitoriaguimaraes-pt-relatorio-contas-2020-21",
         mix:[["Comercial / Sponsors",1.776],["Estadio",0.934],["Televisión",8.318],["Premios por competencias",0.26],["Venta de Jugadores",19.847],["Otros ingresos",2.009]] },

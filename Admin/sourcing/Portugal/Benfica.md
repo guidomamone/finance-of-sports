@@ -56,3 +56,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2019 desde `Clubes/Portugal/Benfica/relatorio-contas-2018-19.pdf` (sourceId `benfica-pt-relatorio-contas-2018-19`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2010 desde `Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.pdf` (sourceId `benfica-pt-prestacao-contas-2010-11-11`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2021 desde `Clubes/Portugal/Benfica/relatorio-contas-2020-21.pdf` (sourceId `benfica-pt-relatorio-contas-2020-21`).
