@@ -41,6 +41,68 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2022: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2022-06-30","sourceId":"famalicao-pt-relatorio-contas-2021-22"}
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Famalicão/relatorio-contas-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Famalicão/relatorio-contas-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas de mercadorias | pág. 42, precedente |
+| 2 | Ingressos | pág. 42, precedente |
+| 3 | Competições | pág. 42, precedente |
+| 4 | Publicidade | pág. 42, precedente |
+| 5 | Patrocínios | pág. 42, precedente |
+| 6 | Direitos Clube | pág. 42, precedente |
+| 7 | Apostas desportivas | pág. 42, precedente |
+| 8 | Outras receitas desportivas | pág. 42, precedente |
+| 9 | Subsídios à exploração | pág. 27, precedente |
+| 10 | Ganhos/perdas imputados de subsidiárias, associadas e empre | pág. 27, Jev 1 |
+| 11 | Outros rendimentos | pág. 27, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas | pág. 27, precedente |
+| 2 | Serviços especializados | pág. 43, precedente |
+| 3 | Materiais | pág. 43, precedente |
+| 4 | Energia e fluidos | pág. 43, precedente |
+| 5 | Deslocações, estadas e transportes | pág. 43, precedente |
+| 6 | Rendas e alugueres | pág. 43, precedente |
+| 7 | Limpeza, Higiene e conforto | pág. 43, precedente |
+| 8 | Outros | pág. 43, precedente |
+| 9 | Remunerações do pessoal | pág. 43, precedente |
+| 10 | Indemnizações | pág. 43, precedente |
+| 11 | Encargos sobre remunerações | pág. 43, precedente |
+| 12 | Seguros | pág. 43, precedente |
+| 13 | Gastos de ação social | pág. 43, precedente |
+| 14 | Outros gastos com pessoal | pág. 43, precedente |
+| 15 | Imparidade de dívidas a receber (perdas/reversões) | pág. 27, precedente |
+| 16 | Provisões (aumentos/reduções) | pág. 27, precedente |
+| 17 | Impostos | pág. 44, precedente |
+| 18 | Descontos de pronto pagamento concedidos | pág. 44, precedente |
+| 19 | Gastos e perdas em inv. não financeiros | pág. 44, precedente |
+| 20 | Outros gastos e perdas | pág. 44, precedente |
+| 21 | Gastos/reversões de depreciação e de amortização | pág. 27, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2024-06-30. periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2023–24 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Famalicão".
+```
+
 ## 2023
 
 ### Ingresos
@@ -370,4 +432,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Famalicão/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### famalicao-pt-relatorio-contas-2023-24
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Famalicão/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
