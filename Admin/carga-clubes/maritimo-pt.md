@@ -116,6 +116,77 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2024–25 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Marítimo".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Publicidade e patrocínios | pág. 44, precedente |
+| 2 | Cedências de atletas | pág. 44, Jev 0.99 |
+| 3 | Proveitos de bilheteira | pág. 44, precedente |
+| 4 | Outros | pág. 44, precedente |
+| 5 | Subsídios à exploração | pág. 33, precedente |
+| 6 | Cedências de atletas | pág. 44, Jev 0.99 |
+| 7 | Outros | pág. 44, precedente |
+| 8 | Juros | pág. 44, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Imparidade de dívidas a receber (perdas/reversões) | pág. 33, precedente |
+| 2 | Provisões (aumentos/reduções) | pág. 33, precedente |
+| 3 | Subcontratos | pág. 56, precedente |
+| 4 | Deslocações e estadas | pág. 56, precedente |
+| 5 | Comissões | pág. 56, precedente |
+| 6 | Trabalhos especializados | pág. 56, precedente |
+| 7 | Outros serviços | pág. 56, precedente |
+| 8 | Honorários | pág. 56, precedente |
+| 9 | Vigilância e segurança | pág. 56, precedente |
+| 10 | Contencioso e notariado | pág. 56, precedente |
+| 11 | Rendas e alugueres | pág. 56, precedente |
+| 12 | Energia e fluídos | pág. 56, precedente |
+| 13 | Comunicação | pág. 56, precedente |
+| 14 | Conservação e reparação | pág. 56, precedente |
+| 15 | Limpeza, higiene e conforto | pág. 56, precedente |
+| 16 | Material de escritório | pág. 56, precedente |
+| 17 | Serviços bancários e financeiros | pág. 56, precedente |
+| 18 | Seguros | pág. 56, precedente |
+| 19 | Ferramentas e utensílios de desgaste rápido | pág. 56, precedente |
+| 20 | Órgãos sociais | pág. 56, precedente |
+| 21 | Técnicos e administrativos | pág. 56, precedente |
+| 22 | Atletas | pág. 56, precedente |
+| 23 | Seguros | pág. 56, precedente |
+| 24 | Outros custos | pág. 56, precedente |
+| 25 | Impostos | pág. 57, precedente |
+| 26 | Gastos e perdas em investimentos não financeiros | pág. 57, precedente |
+| 27 | Correções relativas a exercícios anteriores | pág. 57, precedente |
+| 28 | Outros | pág. 57, Jev 0.99 |
+| 29 | Gastos/reversões de depreciação e de amortização | pág. 33, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): categoria = other_expenses. Reversión (+703.162) de imparidad que quedó como ingreso; va del lado del gasto (neta), sin cambiar el resultado, como Marítimo 2025.
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): categoria = other_amortisation. Reversión (+510.000) de provisiones que quedó como ingreso; provisiones netas van a other_amortisation del lado del gasto.
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 598.818. Claude 2026-10-16 (lote 82): la fila está dentro de la nota 'Outros rendimentos' (Juros 598.818 + Cedências 1.743.281 + Outros 997.073 = 3.339.172, igual al renglón del estado), pero la extracción la puso como gasto. Es ingreso: con ella al revés el resultado da -1.536.255 en vez de -338.616 (diferencia 2 x 598.818). Mismo caso que Santa Clara 2024-25 (to-do 237 w)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): incluye = broadcasting. Claude 2026-10-16 (lote 82): la nota de Vendas e prestação de serviços (Publicidade e patrocínios, Cedências, Bilheteira, Outros) no tiene renglón de TV, y el documento atribuye la variación de Vendas e Prestações de Serviços a los derechos de transmisión televisiva; Marítimo 2024 dice que están en Publicidade e Patrocínios. Posible porque este año no nombra el renglón
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2022–23 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Marítimo".
+```
+
 ## 2022
 
 ### Ingresos
@@ -275,4 +346,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### maritimo-pt-maritimosad-rc-30-06-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

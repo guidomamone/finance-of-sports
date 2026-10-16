@@ -21,3 +21,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2021 desde `Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2021.pdf` (sourceId `maritimo-pt-maritimosad-rc-30-06-2021`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2022.pdf` (sourceId `maritimo-pt-maritimosad-rc-30-06-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.pdf` (sourceId `maritimo-pt-maritimosad-rc-30-06-2023`).
