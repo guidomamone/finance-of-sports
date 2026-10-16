@@ -14,5 +14,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'braga-pt': { 2025: 'pt-primeiraliga', 2016: 'pt-primeiraliga', 2017: 'pt-primeiraliga', 2022: 'pt-primeiraliga', 2023: 'pt-primeiraliga' },
   'benfica-pt': { 2019: 'pt-primeiraliga' },
   'boavista-pt': { 2024: 'pt-primeiraliga' },
-  'santaclara-pt': { 2025: 'pt-primeiraliga', 2022: 'pt-primeiraliga' },
+  'santaclara-pt': { 2025: 'pt-primeiraliga', 2022: 'pt-primeiraliga', 2023: 'pt-primeiraliga' },
 });

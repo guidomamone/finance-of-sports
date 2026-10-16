@@ -166,6 +166,92 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Santa Clara".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Santa Clara/relatorio-contas-sad-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Santa Clara/relatorio-contas-sad-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Merchandising | pág. 33, Jev 1 |
+| 2 | Ingressos para jogos | pág. 33, Jev 1 |
+| 3 | Apostos desportivas e Placard | pág. 33, Jev 0.98 |
+| 4 | Publicidade | pág. 33, Jev 1 |
+| 5 | Prémios de participação | pág. 33, Jev 1 |
+| 6 | Direitos televisivos | pág. 33, Jev 1 |
+| 7 | Cêdencia por empréstimos direitos desportivos | pág. 33, Jev 1 |
+| 8 | Diversos | pág. 33, Jev 1 |
+| 9 | Direção Regional do Turismo | pág. 33, precedente |
+| 10 | Compensação dos encargos com deslocações | pág. 33, Jev 0.96 |
+| 11 | UEFA Surplus | pág. 33, precedente |
+| 12 | Outros rendimentos | pág. 11, Jev 0.97 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 11, Jev 0.97 |
+| 2 | Subcontratos | pág. 34, Jev 0.98 |
+| 3 | Trabalhos especializados | pág. 34, Jev 0.99 |
+| 4 | Vigilância e segurança | pág. 34, Jev 0.97 |
+| 5 | Honorários | pág. 34, Jev 1 |
+| 6 | Conservação e reparação | pág. 34, Jev 0.98 |
+| 7 | Participação em competições | pág. 34, Jev 1 |
+| 8 | Serviços bancários | pág. 34, Jev 0.98 |
+| 9 | Ferramentas e utensílios | pág. 34, Jev 1 |
+| 10 | Livros e documentação técnica | pág. 34, Jev 1 |
+| 11 | Material escritório | pág. 34, Jev 1 |
+| 12 | Artigos para oferta | pág. 34, Jev 0.97 |
+| 13 | Equipamentos | pág. 34, precedente |
+| 14 | Energia e fluidos | pág. 34, Jev 1 |
+| 15 | Deslocações, estadas e transportes | pág. 34, Jev 1 |
+| 16 | Rendas e alugueres | pág. 34, precedente |
+| 17 | Comunicação | pág. 34, Jev 1 |
+| 18 | Seguros | pág. 34, Jev 0.9 |
+| 19 | Contencioso e notariado | pág. 34, Jev 1 |
+| 20 | Despesas de representação | pág. 34, Jev 0.99 |
+| 21 | Limpeza, higiene e conforto | pág. 34, Jev 1 |
+| 22 | Outros | pág. 34, Jev 0.97 |
+| 23 | Remunerações órgãos sociais | pág. 35, Jev 1 |
+| 24 | Remunerações ao pessoal | pág. 35, precedente |
+| 25 | Indemnizações | pág. 35, precedente |
+| 26 | Encargos sobre remunerações | pág. 35, Jev 0.95 |
+| 27 | Seguro acidentes de trabalho e doenças | pág. 35, Jev 0.99 |
+| 28 | Outros gastos com pessoal | pág. 35, precedente |
+| 29 | Imparidade de dívidas a receber (perdas/reversões) | pág. 11, Jev 0.99 |
+| 30 | Provisões (aumentos/reduções) | pág. 11, Jev 0.98 |
+| 31 | IMI | pág. 36, Jev 0.98 |
+| 32 | IUC | pág. 36, Claude 0.85 |
+| 33 | Imposto de selo | pág. 36, Jev 0.92 |
+| 34 | Outros impostos indiretos | pág. 36, Jev 0.99 |
+| 35 | Taxas | pág. 36, precedente |
+| 36 | Descontos de pronto pagamento concedidos | pág. 36, Jev 1 |
+| 37 | Perdas em inventários | pág. 36, Jev 0.95 |
+| 38 | Jogadores | pág. 36, Jev 0.93 |
+| 39 | Correções relativas a períodos anteriores | pág. 36, Jev 1 |
+| 40 | Quotizações | pág. 36, Jev 0.91 |
+| 41 | Diferenças de câmbio desfavoráveis | pág. 36, Jev 0.99 |
+| 42 | Multas e penalidades | pág. 36, Jev 0.97 |
+| 43 | Gastos não devidamente documentados | pág. 36, Jev 1 |
+| 44 | Juros de mora e compensatórios | pág. 36, Jev 1 |
+| 45 | Gastos/reversões de depreciação e de amortização | pág. 11, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2022–23 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Santa Clara".
+```
+
 ## 2022
 
 ### Ingresos
@@ -264,4 +350,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Santa Clara/relatorio-contas-sad-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### santaclara-pt-relatorio-contas-sad-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Santa Clara/relatorio-contas-sad-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
