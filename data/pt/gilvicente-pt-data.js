@@ -351,7 +351,7 @@ const gilvicenteptFiscalYearMeta = {
       {label:'Imposto sobre o rendimento do período', value:-0.012678},
       {label:'Ativos por impostos diferidos', value:0.576519},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:3.748228, cash:null,
     officialTotalRevenue:17.311297, officialTotalExpenses:19.476555, officialPAT:-2.410558,
   },
   2021: {

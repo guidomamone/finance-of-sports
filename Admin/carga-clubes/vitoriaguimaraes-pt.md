@@ -132,6 +132,10 @@ Generados/Portugal/Vitória Guimarães/relatorio-contas-2024-25.categorias.json 
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 24 + "Financiamentos obtidos" pág. 24
+```
+
 ### Liga
 
 ```text
@@ -229,6 +233,10 @@ Generados/Portugal/Vitória Guimarães/relatorio-contas-2023-24.categorias.json 
 ```text
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2024-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2024-06-30
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 28 + "Financiamentos obtidos" pág. 28
 ```
 
 ### Liga

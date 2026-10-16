@@ -121,6 +121,10 @@ Generados/Portugal/Gil Vicente/relatorio-contas-2024-25.categorias.json (escaló
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 16 + "Financiamentos obtidos" pág. 16
+```
+
 ### Liga
 
 ```text

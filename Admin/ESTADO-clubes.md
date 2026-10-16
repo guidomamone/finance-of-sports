@@ -303,7 +303,7 @@ PT (33)
   Tondela             1 ejercicio (2020/2021), balance, EUR, sin deuda/caja
   Torreense           3 ejercicios (2021/2022 a 2023/2024), balance, EUR
   União de Leiria     2 ejercicios (2022/2023 a 2023/2024), balance, EUR
-  Vitória Guimarães   4 ejercicios (2020/2021, 2021/2022, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
+  Vitória Guimarães   4 ejercicios (2020/2021, 2021/2022, 2023/2024, 2024/2025), balance, EUR
   Vizela              4 ejercicios (2021/2022 a 2024/2025), balance, EUR
 
 RU (16)

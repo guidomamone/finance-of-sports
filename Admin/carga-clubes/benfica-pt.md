@@ -449,6 +449,10 @@ Generados/Portugal/Benfica/relatorio-contas-2021-22.categorias.json (escalón de
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos obtidos" pág. 113 + "Empréstimos obtidos" pág. 113
+```
+
 ### Liga
 
 ```text
@@ -529,6 +533,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 95
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos obtidos" pág. 95 + "Empréstimos obtidos" pág. 95
 ```
 
 ### Liga
@@ -614,6 +622,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 89
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos obtidos" pág. 89 + "Empréstimos obtidos" pág. 89
 ```
 
 ### Liga
@@ -785,6 +797,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 31
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Empréstimos obtidos" pág. 81 + "Empréstimos obtidos" pág. 81
+```
+
 ### Liga
 
 ```text
@@ -869,6 +885,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 87
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos obtidos" pág. 87 + "Empréstimos obtidos" pág. 87
 ```
 
 ### Liga
@@ -961,6 +981,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "CAIXA E EQUIVALENTES DE CAIXA" pág. 89
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "EMPRÉSTIMOS OBTIDOS" pág. 89 + "EMPRÉSTIMOS OBTIDOS" pág. 89
 ```
 
 ### Liga
@@ -1064,6 +1088,10 @@ Generados/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.categorias.json (esca
 ```text
 2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2014-06-30. periodo.mjs tomó 2017-06-30 (fin de mandato de los órganos sociales, L1417-1421); el informe es del ejercicio cerrado el 30/06/2014.
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: año anterior): "CAIXA E EQUIVALENTES DE CAIXA" pág. 95
 ```
 
 ### Liga
@@ -1284,6 +1312,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e disponibilidades em bancos" pág. 73
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos obtidos" pág. 73 + "Empréstimos obtidos" pág. 73
 ```
 
 ### Liga
@@ -1511,6 +1543,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e disponibilidades em bancos" pág. 40
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Empréstimos obtidos" pág. 40 + "Empréstimos obtidos" pág. 40
 ```
 
 ### Liga
