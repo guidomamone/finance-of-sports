@@ -138,6 +138,105 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Braga".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Braga/relatorio-contas-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Braga/relatorio-contas-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Merchandising | pág. 112, precedente |
+| 2 | Receita de bilheteira | pág. 112, precedente |
+| 3 | Pacotes corporate | pág. 112, precedente |
+| 4 | Direitos de transmissões | pág. 112, precedente |
+| 5 | Publicidade / Patrocínios | pág. 112, precedente |
+| 6 | Outros | pág. 112, precedente |
+| 7 | Subsídios à exploração | pág. 67, precedente |
+| 8 | Participação em competições europeias | pág. 119, precedente |
+| 9 | Participação em competições nacionais | pág. 119, precedente |
+| 10 | Rendimentos com transações atletas | pág. 119, Jev 1 |
+| 11 | Empréstimo de atletas | pág. 119, precedente |
+| 12 | Ganhos em rescisões de contratos | pág. 119, ? 0.6 |
+| 13 | Receitas de apostas desportivas | pág. 119, precedente |
+| 14 | Indemnizações | pág. 119, precedente |
+| 15 | Outros | pág. 119, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 67, precedente |
+| 2 | Trabalhos especializados | pág. 114, precedente |
+| 3 | Gastos com aquisição de atletas | pág. 114, precedente |
+| 4 | Publicidade e propaganda | pág. 114, Jev 1 |
+| 5 | Despesas com provas | pág. 114, precedente |
+| 6 | Inscrições e registos | pág. 114, precedente |
+| 7 | Vigilância e segurança | pág. 114, precedente |
+| 8 | Honorários | pág. 114, precedente |
+| 9 | Conservação e reparação | pág. 114, precedente |
+| 10 | Outros serviços especializados | pág. 114, Jev 0.9 |
+| 11 | Ferramentas e utensílios de desgaste rápido | pág. 114, precedente |
+| 12 | Material de escritório | pág. 114, Jev 1 |
+| 13 | Artigos para oferta | pág. 114, Jev 0.98 |
+| 14 | Equipamento e material desportivo | pág. 114, precedente |
+| 15 | Outros | pág. 114, precedente |
+| 16 | Eletricidade | pág. 114, precedente |
+| 17 | Combustíveis | pág. 114, precedente |
+| 18 | Água | pág. 114, precedente |
+| 19 | Deslocações e estadas | pág. 114, precedente |
+| 20 | Corporate (catering) | pág. 114, precedente |
+| 21 | Rendas / Direitos de exploração | pág. 114, Jev 0.92 |
+| 22 | Comunicação | pág. 114, precedente |
+| 23 | Seguros | pág. 114, precedente |
+| 24 | Contencioso e notariado | pág. 114, precedente |
+| 25 | Limpeza, higiene e conforto | pág. 114, precedente |
+| 26 | Pessoal do SCB ao serviço da SAD | pág. 114, precedente |
+| 27 | Remuneração da Comissão Executiva | pág. 117, precedente |
+| 28 | Senhas de presença | pág. 117, precedente |
+| 29 | Atletas | pág. 117, precedente |
+| 30 | Treinadores | pág. 117, precedente |
+| 31 | Staff Geral | pág. 117, precedente |
+| 32 | Prémios de desempenho | pág. 117, precedente |
+| 33 | Rescisão de contratos | pág. 117, precedente |
+| 34 | Encargos com remunerações | pág. 117, precedente |
+| 35 | Seguro de acidentes de trabalho | pág. 117, precedente |
+| 36 | Outros gastos com pessoal | pág. 117, precedente |
+| 37 | Imparidade de inventários (perdas/reversões) | pág. 67, precedente |
+| 38 | Provisões (aumentos/reduções) | pág. 67, precedente |
+| 39 | Impostos | pág. 123, precedente |
+| 40 | Abates | pág. 123, precedente |
+| 41 | Direitos de preferência | pág. 123, Jev 0.96 |
+| 42 | Empréstimo de atletas | pág. 123, precedente |
+| 43 | Direitos de formação e mecanismo de solidariedade | pág. 123, precedente |
+| 44 | Gastos com transações atletas | pág. 123, Jev 1 |
+| 45 | Multas / Penalidades desportivas | pág. 123, precedente |
+| 46 | Protocolo futebol feminino | pág. 123, Jev 0.99 |
+| 47 | Donativos | pág. 123, Jev 1 |
+| 48 | Outros | pág. 123, precedente |
+| 49 | Edifícios e outras construções | pág. 125, precedente |
+| 50 | Equipamento básico | pág. 125, precedente |
+| 51 | Equipamento de transporte | pág. 125, precedente |
+| 52 | Equipamento administrativo | pág. 125, precedente |
+| 53 | Plantel | pág. 125, precedente |
+| 54 | Direitos de superfície | pág. 125, precedente |
+| 55 | Outros ativos intangíveis | pág. 125, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Braga".
+```
+
 ## 2017
 
 ### Ingresos
@@ -328,4 +427,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Braga/relatorio-contas-2016-17.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### braga-pt-relatorio-contas-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Braga/relatorio-contas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
