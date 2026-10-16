@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.md",
- "generado": "2026-10-16T00:30:33.667Z",
+ "generado": "2026-10-16T00:56:35.756Z",
  "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2022,
@@ -57,6 +57,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 194.047; el sitio tiene 194.047"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2022: 233.548 en este documento y 233.548 en relatorio-contas-2022-23-pos-AG.pdf (columna del año anterior)"
@@ -65,11 +70,6 @@
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2021: 194.047 en relatorio-contas-2020-21.pdf y 194.047 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2016-17-pos-AG.pdf",
   "club": "benfica-pt",
   "year": 2017,
-  "generatedAt": "2026-10-16T00:30:33.595Z",
+  "generatedAt": "2026-10-16T00:56:35.674Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         38.776
       ],
-      "glosa": "Ingresos por retransmisión televisiva"
+      "glosa": "Ingresos por derechos de televisión"
     },
     {
       "label": "Prémios da UEFA",
@@ -44,7 +44,7 @@
       "values": [
         22.236
       ],
-      "glosa": "Patrocinios"
+      "glosa": "Patrocinadores"
     },
     {
       "label": "Rendas de espaço",
@@ -54,7 +54,7 @@
       "values": [
         2.75
       ],
-      "glosa": "Arrendamiento de espacios"
+      "glosa": "Arrendamientos de espacios"
     },
     {
       "label": "Royalties",
@@ -64,7 +64,7 @@
       "values": [
         2.078
       ],
-      "glosa": "Cánones y regalías"
+      "glosa": "Regalías (royalties)"
     },
     {
       "label": "Outra receitas",
@@ -84,7 +84,7 @@
       "values": [
         9.7
       ],
-      "glosa": "Servicios corporativos y hospitality"
+      "glosa": "Hospitalidad corporativa"
     },
     {
       "label": "Bilhetes de época",
@@ -134,7 +134,7 @@
       "values": [
         117.924
       ],
-      "glosa": "Beneficios por enajenación de derechos de deportistas"
+      "glosa": "Ganancias por enajenación de derechos de deportistas"
     },
     {
       "label": "Outros rendimentos e ganhos",
@@ -184,7 +184,7 @@
       "values": [
         2.198
       ],
-      "glosa": "Subcontrataciones"
+      "glosa": "Subcontratación"
     },
     {
       "label": "Serviços de catering/softdrink",
@@ -264,7 +264,7 @@
       "values": [
         8.198
       ],
-      "glosa": "Otros aprovisionamientos y servicios"
+      "glosa": "Otros suministros y servicios"
     },
     {
       "label": "Remunerações fixas",
@@ -324,7 +324,7 @@
       "values": [
         0.255
       ],
-      "glosa": "Retribuciones post-empleo"
+      "glosa": "Beneficios post-empleo"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -334,7 +334,7 @@
       "values": [
         5.007
       ],
-      "glosa": "Cargas sociales sobre salarios"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -344,7 +344,7 @@
       "values": [
         3.622
       ],
-      "glosa": "Seguros de accidentes laborales"
+      "glosa": "Seguros de accidentes de trabajo"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -394,7 +394,7 @@
       "values": [
         1.457
       ],
-      "glosa": "Mobiliario y equipos de oficina"
+      "glosa": "Equipamiento administrativo"
     },
     {
       "label": "Outros ativos tangíveis",
@@ -404,7 +404,7 @@
       "values": [
         0.058
       ],
-      "glosa": "Otro inmovilizado material"
+      "glosa": "Otros activos tangibles"
     },
     {
       "label": "Direito de utilização da marca",
@@ -424,7 +424,7 @@
       "values": [
         0.309
       ],
-      "glosa": "Aplicaciones informáticas"
+      "glosa": "Programas informáticos"
     },
     {
       "label": "Direitos de televisão",
@@ -434,7 +434,7 @@
       "values": [
         0.25
       ],
-      "glosa": "Derechos de retransmisión televisiva"
+      "glosa": "Derechos de televisión"
     },
     {
       "label": "Galeria comercial",
@@ -454,7 +454,7 @@
       "values": [
         -0.079
       ],
-      "glosa": "Provisiones / Pérdidas por deterioro ^{(2)}"
+      "glosa": "Provisiones / Deterioro de valor ^{(2)}"
     },
     {
       "label": "Outros gastos e perdas operacionais ^{(3)}",
@@ -524,7 +524,7 @@
       "values": [
         3.719
       ],
-      "glosa": "Dotaciones por deterioro"
+      "glosa": "Dotaciones por deterioro de valor"
     },
     {
       "label": "Reversões de imparidade",
@@ -534,7 +534,7 @@
       "values": [
         -0.597
       ],
-      "glosa": "Reversiones de deterioro"
+      "glosa": "Reversiones de deterioro de valor"
     }
   ]
 }

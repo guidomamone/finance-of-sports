@@ -2,8 +2,8 @@
   "md": "Clubes/Portugal/Benfica/relatorio-contas-2012-13-pos-AG.md",
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2012-13-pos-AG.pdf",
   "club": "benfica-pt",
-  "year": 2019,
-  "generatedAt": "2026-10-16T00:30:39.930Z",
+  "year": 2013,
+  "generatedAt": "2026-10-16T00:56:35.589Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         8.462025
       ],
-      "glosa": "Ingresos por taquilla"
+      "glosa": "Ingresos de taquilla"
     },
     {
       "label": "TRANSMISSÕES TELEVISIVAS",
@@ -44,7 +44,7 @@
       "values": [
         8.19676
       ],
-      "glosa": "Corporativo y hospitalidad"
+      "glosa": "Área corporativa y palcos VIP"
     },
     {
       "label": "QUOTIZAÇÕES",
@@ -74,7 +74,7 @@
       "values": [
         2.3647
       ],
-      "glosa": "Cesión de deportistas"
+      "glosa": "Cesión de jugadores"
     },
     {
       "label": "CATIVOS",
@@ -174,7 +174,7 @@
       "values": [
         0.595833
       ],
-      "glosa": "Cánones y royalties"
+      "glosa": "Royalties"
     },
     {
       "label": "INDEMNIZAÇÕES DE SEGUROS",
@@ -204,7 +204,7 @@
       "values": [
         42.482948
       ],
-      "glosa": "Beneficios por enajenación de derechos de deportistas"
+      "glosa": "Beneficios por enajenación de derechos de jugadores"
     },
     {
       "label": "CEDÊNCIA DE DIREITOS BENFICA STARS FUND",
@@ -244,7 +244,7 @@
       "values": [
         -7.489029
       ],
-      "glosa": "Gastos por traspaso de deportistas"
+      "glosa": "Gastos por transferencia de jugadores"
     },
     {
       "label": "PERDAS NA ALIENAÇÃO DE DIREITOS DE ATLETAS",
@@ -254,7 +254,7 @@
       "values": [
         -2.212494
       ],
-      "glosa": "Pérdidas por enajenación de derechos de deportistas"
+      "glosa": "Pérdidas por enajenación de derechos de jugadores"
     },
     {
       "label": "FUNDO DE SOLIDARIEDADE",
@@ -274,7 +274,7 @@
       "values": [
         4.502092
       ],
-      "glosa": "Trabajos especializados"
+      "glosa": "Servicios especializados"
     },
     {
       "label": "DESLOCAÇÕES E ESTADAS",
@@ -304,7 +304,7 @@
       "values": [
         1.871149
       ],
-      "glosa": "Servicios de catering y refrescos"
+      "glosa": "Servicios de catering y bebidas"
     },
     {
       "label": "CEDÊNCIA DIREITOS DE IMAGEM",
@@ -354,7 +354,7 @@
       "values": [
         1.155287
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontratación"
     },
     {
       "label": "ELECTRICIDADE",
@@ -384,7 +384,7 @@
       "values": [
         0.786194
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "LICENÇA MARCA BENFICA",
@@ -434,7 +434,7 @@
       "values": [
         0.4255
       ],
-      "glosa": "Agua y otros fluidos"
+      "glosa": "Agua y otros suministros"
     },
     {
       "label": "DESPESAS DE REPRESENTAÇÃO",
@@ -484,7 +484,7 @@
       "values": [
         1.460744
       ],
-      "glosa": "Otros suministros y servicios"
+      "glosa": "Otros servicios exteriores"
     },
     {
       "label": "REMUNERAÇÕES FIXAS",
@@ -584,7 +584,7 @@
       "values": [
         6.350903
       ],
-      "glosa": "Construcciones"
+      "glosa": "Edificios y otras construcciones"
     },
     {
       "label": "EQUIPAMENTO BÁSICO",
@@ -664,7 +664,7 @@
       "values": [
         1.136945
       ],
-      "glosa": "Dotación a provisiones para otros riesgos"
+      "glosa": "Dotación a las provisiones para otros riesgos"
     },
     {
       "label": "REDUÇÃO DE PROVISÕES PARA OUTROS RISCOS",
@@ -684,7 +684,7 @@
       "values": [
         3.38706
       ],
-      "glosa": "Dotación por deterioro de clientes y deudores"
+      "glosa": "Dotación por deterioro de créditos comerciales"
     },
     {
       "label": "REDUÇÃO DE IMPARIDADES DE CLIENTES/DEVEDORES",
@@ -694,7 +694,7 @@
       "values": [
         -1.216603
       ],
-      "glosa": "Reversión del deterioro de clientes y deudores"
+      "glosa": "Reversión de deterioro de créditos comerciales"
     },
     {
       "label": "IMPOSTOS",
@@ -704,7 +704,7 @@
       "values": [
         1.946485
       ],
-      "glosa": "Impuestos"
+      "glosa": "Tributos"
     },
     {
       "label": "OUTROS GASTOS E PERDAS OPERACIONAIS",
@@ -734,7 +734,7 @@
       "values": [
         0.215765
       ],
-      "glosa": "Derechos económicos de deportistas"
+      "glosa": "Derechos económicos de jugadores"
     },
     {
       "label": "PERDAS DE IMPARIDADE",
@@ -744,7 +744,7 @@
       "values": [
         5.439936
       ],
-      "glosa": "Pérdidas por deterioro"
+      "glosa": "Pérdidas por deterioro de valor"
     },
     {
       "label": "ABATES DE ATLETAS - REVOGAÇÕES",
@@ -754,7 +754,7 @@
       "values": [
         0.476042
       ],
-      "glosa": "Bajas de deportistas - rescisiones"
+      "glosa": "Bajas de jugadores por rescisión"
     },
     {
       "label": "RESULTADOS RELATIVOS A INVESTIMENTOS EM ASSOCIADAS",
@@ -764,7 +764,7 @@
       "values": [
         0.368748
       ],
-      "glosa": "Resultados relativos a participaciones en asociadas"
+      "glosa": "Resultado de participaciones en entidades asociadas"
     }
   ]
 }

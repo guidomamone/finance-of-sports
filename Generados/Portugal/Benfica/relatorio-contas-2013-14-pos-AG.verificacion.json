@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.md",
- "generado": "2026-10-16T00:30:33.535Z",
- "estado": "ok",
+ "generado": "2026-10-16T00:56:35.635Z",
+ "estado": "cola",
  "clubId": "benfica-pt",
  "year": 2014,
  "escala": {
@@ -23,7 +23,10 @@
    "fecha": "2026-10-15"
   }
  ],
- "cola": [],
+ "cola": [
+  "c73cef1",
+  "76501dd"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -50,6 +53,11 @@
    "nombre": "documento del año 2015",
    "ok": true,
    "detalle": "ingresos de 2014: 180.752 en este documento y 180.615 en relatorio-contas-2014-15-pos-AG.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2013",
+   "ok": false,
+   "detalle": "ingresos de 2013: 129.693491 en relatorio-contas-2012-13-pos-AG.pdf y 139.772 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",

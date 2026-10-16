@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2011-12.pdf",
   "club": "benfica-pt",
   "year": 2012,
-  "generatedAt": "2026-10-16T00:30:33.440Z",
+  "generatedAt": "2026-10-16T00:56:35.538Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         9.420093
       ],
-      "glosa": "Ingresos de taquilla"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "Transmissões televisivas",
@@ -54,7 +54,7 @@
       "values": [
         7.516088
       ],
-      "glosa": "Servicios corporativos"
+      "glosa": "Hospitality corporativo"
     },
     {
       "label": "Calivos",
@@ -64,7 +64,7 @@
       "values": [
         2.976742
       ],
-      "glosa": "Abonos reservados"
+      "glosa": "Palcos y asientos VIP (Calivos)"
     },
     {
       "label": "Rendas de espaço",
@@ -174,7 +174,7 @@
       "values": [
         0.55
       ],
-      "glosa": "Royalties"
+      "glosa": "Cánones y regalías (Royalties)"
     },
     {
       "label": "Indemnizações de seguros",
@@ -194,7 +194,7 @@
       "values": [
         0.956272
       ],
-      "glosa": "Otros ingresos"
+      "glosa": "Otros ingresos de explotación"
     },
     {
       "label": "Alienações de direitos de atletas",
@@ -224,7 +224,7 @@
       "values": [
         0.066365
       ],
-      "glosa": "Mecanismo de solidaridad"
+      "glosa": "Fondo de solidaridad"
     },
     {
       "label": "Outros proveitos",
@@ -234,7 +234,7 @@
       "values": [
         0.010706
       ],
-      "glosa": "Otros ingresos"
+      "glosa": "Otros ingresos de explotación"
     },
     {
       "label": "Custos com transferência de atletas",
@@ -244,7 +244,7 @@
       "values": [
         -1.212276
       ],
-      "glosa": "Costes por transferencias de deportistas"
+      "glosa": "Costes por transferencia de deportistas"
     },
     {
       "label": "Fundo de solidariedade",
@@ -254,7 +254,7 @@
       "values": [
         -0.478383
       ],
-      "glosa": "Mecanismo de solidaridad"
+      "glosa": "Fondo de solidaridad"
     },
     {
       "label": "Trabalhos especializados",
@@ -294,7 +294,7 @@
       "values": [
         1.935018
       ],
-      "glosa": "Material deportivo"
+      "glosa": "Material y equipamiento deportivo"
     },
     {
       "label": "Serviços de catering/softdrink",
@@ -304,7 +304,7 @@
       "values": [
         1.614172
       ],
-      "glosa": "Servicios de catering y bebidas"
+      "glosa": "Servicios de catering y refrescos"
     },
     {
       "label": "Cedência direitos de imagem",
@@ -334,7 +334,7 @@
       "values": [
         1.127377
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Comissões",
@@ -374,7 +374,7 @@
       "values": [
         0.75
       ],
-      "glosa": "Licencia de marca Benfica"
+      "glosa": "Licencia marca Benfica"
     },
     {
       "label": "Rendas e alugueres",
@@ -394,7 +394,7 @@
       "values": [
         0.582824
       ],
-      "glosa": "Limpieza, higiene y mantenimiento"
+      "glosa": "Limpieza, higiene y confort"
     },
     {
       "label": "Publicidade e propaganda",
@@ -434,7 +434,7 @@
       "values": [
         0.366989
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Água e outros fluidos",
@@ -444,7 +444,7 @@
       "values": [
         0.342632
       ],
-      "glosa": "Agua y otros suministros"
+      "glosa": "Agua y otros fluidos"
     },
     {
       "label": "Comunicação",
@@ -474,7 +474,7 @@
       "values": [
         0.301599
       ],
-      "glosa": "Acuerdos y convenios"
+      "glosa": "Acuerdos y protocolos"
     },
     {
       "label": "Outros fornecimentos e serviços",
@@ -484,7 +484,7 @@
       "values": [
         1.2017
       ],
-      "glosa": "Otros suministros y servicios"
+      "glosa": "Otros suministros y servicios exteriores"
     },
     {
       "label": "Remunerações fixas",
@@ -494,7 +494,7 @@
       "values": [
         0.47173
       ],
-      "glosa": "Retribuciones fijas"
+      "glosa": "Remuneraciones fijas"
     },
     {
       "label": "Remunerações variáveis / prémios",
@@ -504,7 +504,7 @@
       "values": [
         0.04995
       ],
-      "glosa": "Retribuciones variables / primas"
+      "glosa": "Remuneraciones variables y primas"
     },
     {
       "label": "Remunerações fixas",
@@ -514,7 +514,7 @@
       "values": [
         35.784985
       ],
-      "glosa": "Retribuciones fijas"
+      "glosa": "Remuneraciones fijas"
     },
     {
       "label": "Remunerações variáveis / prémios",
@@ -524,7 +524,7 @@
       "values": [
         5.695487
       ],
-      "glosa": "Retribuciones variables / primas"
+      "glosa": "Remuneraciones variables y primas"
     },
     {
       "label": "Indemnizações",
@@ -554,7 +554,7 @@
       "values": [
         3.180252
       ],
-      "glosa": "Cargas sociales sobre retribuciones"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -574,7 +574,7 @@
       "values": [
         0.333446
       ],
-      "glosa": "Otros costes"
+      "glosa": "Otros gastos"
     },
     {
       "label": "Edifícios e outras construções",
@@ -594,7 +594,7 @@
       "values": [
         0.712334
       ],
-      "glosa": "Instalaciones técnicas"
+      "glosa": "Instalaciones técnicas y maquinaria"
     },
     {
       "label": "Equipamento de transporte",
@@ -624,7 +624,7 @@
       "values": [
         0.94313
       ],
-      "glosa": "Equipos administrativos y mobiliario"
+      "glosa": "Mobiliario y equipos de oficina"
     },
     {
       "label": "Outras imobilizações corpóreas",
@@ -684,7 +684,7 @@
       "values": [
         0.724255
       ],
-      "glosa": "Dotación por deterioro de créditos comerciales y otros deudores"
+      "glosa": "Dotación por deterioro de créditos comerciales"
     },
     {
       "label": "Redução de imparidade de clientes/devedores",
@@ -694,7 +694,7 @@
       "values": [
         -0.687203
       ],
-      "glosa": "Reversión de deterioro de créditos comerciales y otros deudores"
+      "glosa": "Reversión por deterioro de créditos comerciales"
     },
     {
       "label": "Impostos",
@@ -704,7 +704,7 @@
       "values": [
         1.315122
       ],
-      "glosa": "Impuestos"
+      "glosa": "Impuestos y tributos"
     },
     {
       "label": "Outros custos e perdas operacionais",
@@ -764,7 +764,7 @@
       "values": [
         0.027998
       ],
-      "glosa": "Resultados relativos a inversiones en asociadas"
+      "glosa": "Resultado de participaciones en asociadas"
     }
   ]
 }

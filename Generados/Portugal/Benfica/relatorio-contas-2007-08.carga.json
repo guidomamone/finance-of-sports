@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2007-08.pdf",
- "generado": "2026-10-16T00:46:02.230Z",
+ "generado": "2026-10-16T01:09:20.638Z",
  "frena": [
   {
    "etapa": "periodo",
@@ -245,7 +245,7 @@
     "_pag": 59,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)"
    },
    {
     "rawLabel": "Rendas e alugueres",
@@ -1092,10 +1092,8 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "expense",
    "amountNative": -2.179819
   },

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2009-11-03.pdf",
   "club": "benfica-pt",
   "year": 2009,
-  "generatedAt": "2026-10-16T00:30:33.352Z",
+  "generatedAt": "2026-10-16T00:56:35.463Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         2.5625
       ],
-      "glosa": "Abonos y asientos reservados"
+      "glosa": "Abonos y localidades reservadas"
     },
     {
       "label": "Cedência de atletas",
@@ -64,7 +64,7 @@
       "values": [
         1.017604
       ],
-      "glosa": "Cesión de jugadores"
+      "glosa": "Cesión de deportistas"
     },
     {
       "label": "Cachets",
@@ -94,7 +94,7 @@
       "values": [
         0.495833
       ],
-      "glosa": "Royalties"
+      "glosa": "Regalías (royalties)"
     },
     {
       "label": "Comissões",
@@ -124,7 +124,7 @@
       "values": [
         0.563379
       ],
-      "glosa": "Premios Copa de la Liga"
+      "glosa": "Premios Carlsberg Cup"
     },
     {
       "label": "Benefícios de penalidades contratuais",
@@ -174,7 +174,7 @@
       "values": [
         0.133983
       ],
-      "glosa": "Ingresos por fondo de solidaridad"
+      "glosa": "Ingresos por mecanismo de solidaridad"
     },
     {
       "label": "Custos com transferência de atletas",
@@ -184,7 +184,7 @@
       "values": [
         -1.036843
       ],
-      "glosa": "Gastos por traspaso de jugadores"
+      "glosa": "Costes por transferencia de deportistas"
     },
     {
       "label": "Custos com fundo de solidariedade",
@@ -194,7 +194,7 @@
       "values": [
         -0.697872
       ],
-      "glosa": "Gastos por fondo de solidaridad"
+      "glosa": "Costes por mecanismo de solidaridad"
     },
     {
       "label": "Electricidade",
@@ -214,7 +214,7 @@
       "values": [
         0.167866
       ],
-      "glosa": "Agua y otros suministros"
+      "glosa": "Agua y otros fluidos"
     },
     {
       "label": "Artigos para oferta",
@@ -224,7 +224,7 @@
       "values": [
         0.143398
       ],
-      "glosa": "Artículos promocionales y obsequios"
+      "glosa": "Artículos para obsequios y promociones"
     },
     {
       "label": "Rendas e alugueres",
@@ -234,7 +234,7 @@
       "values": [
         2.156184
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Medicamentos",
@@ -314,7 +314,7 @@
       "values": [
         0.086069
       ],
-      "glosa": "Gastos contenciosos y notariales"
+      "glosa": "Servicios contenciosos y notariales"
     },
     {
       "label": "Conservação e reparação",
@@ -374,7 +374,7 @@
       "values": [
         1.201522
       ],
-      "glosa": "Material deportivo"
+      "glosa": "Equipamiento deportivo"
     },
     {
       "label": "Subsídios futebol formação",
@@ -394,7 +394,7 @@
       "values": [
         0.033
       ],
-      "glosa": "Acuerdos y convenios"
+      "glosa": "Convenios y acuerdos"
     },
     {
       "label": "Associações, Federações e Liga",
@@ -404,7 +404,7 @@
       "values": [
         0.142969
       ],
-      "glosa": "Asociaciones, federaciones y liga"
+      "glosa": "Asociaciones, Federaciones y Liga"
     },
     {
       "label": "Empréstimos de jogadores",
@@ -414,7 +414,7 @@
       "values": [
         0.506667
       ],
-      "glosa": "Cesiones de jugadores recibidas"
+      "glosa": "Préstamos de jugadores"
     },
     {
       "label": "Cedência de jogadores",
@@ -454,7 +454,7 @@
       "values": [
         0.194644
       ],
-      "glosa": "Otros aprovisionamientos y servicios"
+      "glosa": "Otros suministros y servicios exteriores"
     },
     {
       "label": "Remunerações fixas",
@@ -464,7 +464,7 @@
       "values": [
         0.344789
       ],
-      "glosa": "Retribuciones fijas"
+      "glosa": "Remuneraciones fijas"
     },
     {
       "label": "Remunerações variáveis / prémios",
@@ -474,7 +474,7 @@
       "values": [
         0.01
       ],
-      "glosa": "Retribuciones variables / primas"
+      "glosa": "Remuneraciones variables / primas"
     },
     {
       "label": "Remunerações fixas",
@@ -484,7 +484,7 @@
       "values": [
         28.309708
       ],
-      "glosa": "Retribuciones fijas"
+      "glosa": "Remuneraciones fijas"
     },
     {
       "label": "Remunerações variáveis / prémios",
@@ -494,7 +494,7 @@
       "values": [
         0.9628
       ],
-      "glosa": "Retribuciones variables / primas"
+      "glosa": "Remuneraciones variables / primas"
     },
     {
       "label": "Indemnizações",
@@ -524,7 +524,7 @@
       "values": [
         1.899316
       ],
-      "glosa": "Cargas sociales sobre retribuciones"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -544,7 +544,7 @@
       "values": [
         0.372112
       ],
-      "glosa": "Otros costes"
+      "glosa": "Otros costes de personal"
     },
     {
       "label": "Edifícios e outras construções",
@@ -564,7 +564,7 @@
       "values": [
         0.186912
       ],
-      "glosa": "Instalaciones técnicas y equipamiento básico"
+      "glosa": "Instalaciones técnicas y maquinaria"
     },
     {
       "label": "Equipamento de transporte",
@@ -584,7 +584,7 @@
       "values": [
         0.220739
       ],
-      "glosa": "Mobiliario, equipos de oficina y utillaje"
+      "glosa": "Equipamiento de oficina y utillaje"
     },
     {
       "label": "Outras imobilizações corpóreas",
@@ -604,7 +604,7 @@
       "values": [
         0.398652
       ],
-      "glosa": "Derecho de uso de marca"
+      "glosa": "Derechos de uso de marca"
     },
     {
       "label": "Provisões do exercício",
@@ -654,7 +654,7 @@
       "values": [
         0.068083
       ],
-      "glosa": "Ajustes de ejercicios anteriores"
+      "glosa": "Ajustes relativos a ejercicios anteriores"
     },
     {
       "label": "Outros custos e perdas operacionais",
@@ -684,7 +684,7 @@
       "values": [
         0.476531
       ],
-      "glosa": "Bajas de jugadores por rescisión"
+      "glosa": "Bajas de deportistas - rescisiones contractuales"
     },
     {
       "label": "Perdas de imparidade",

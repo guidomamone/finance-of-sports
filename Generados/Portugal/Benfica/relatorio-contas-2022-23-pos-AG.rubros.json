@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.pdf",
   "club": "benfica-pt",
   "year": 2023,
-  "generatedAt": "2026-10-16T00:30:33.689Z",
+  "generatedAt": "2026-10-16T00:56:35.779Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,7 +44,7 @@
       "values": [
         23.884
       ],
-      "glosa": "Patrocinios"
+      "glosa": "Patrocinadores"
     },
     {
       "label": "Rendas de espaço",
@@ -54,7 +54,7 @@
       "values": [
         3.6
       ],
-      "glosa": "Alquiler de espacios"
+      "glosa": "Alquileres de espacios"
     },
     {
       "label": "*Royalties*",
@@ -134,7 +134,7 @@
       "values": [
         85.931
       ],
-      "glosa": "Beneficios por enajenación de derechos de jugadores (plusvalías)"
+      "glosa": "Beneficios por enajenación de derechos de deportistas (plusvalías)"
     },
     {
       "label": "Outros rendimentos",
@@ -254,7 +254,7 @@
       "values": [
         9.295
       ],
-      "glosa": "Otros aprovisionamientos y servicios"
+      "glosa": "Otros suministros y servicios"
     },
     {
       "label": "Remunerações fixas",
@@ -424,7 +424,7 @@
       "values": [
         0.306
       ],
-      "glosa": "Provisiones / Deterioros de valor (2)"
+      "glosa": "Provisiones/Pérdidas por deterioro (2)"
     },
     {
       "label": "Outros gastos e perdas operacionais (3)",
@@ -444,7 +444,7 @@
       "values": [
         4.704
       ],
-      "glosa": "Pérdidas por enajenación de derechos de jugadores (minusvalías)"
+      "glosa": "Pérdidas por enajenación de derechos de deportistas (minusvalías)"
     },
     {
       "label": "Gastos associados a alienações de direitos de atletas (comissões)",
@@ -454,7 +454,7 @@
       "values": [
         11.227
       ],
-      "glosa": "Gastos asociados a enajenaciones de derechos de jugadores (comisiones)"
+      "glosa": "Gastos asociados a la enajenación de derechos de deportistas (comisiones)"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -464,7 +464,7 @@
       "values": [
         1.255
       ],
-      "glosa": "Bajas de derechos de jugadores"
+      "glosa": "Bajas de derechos de deportistas"
     },
     {
       "label": "Outros gastos",
@@ -484,7 +484,7 @@
       "values": [
         38.737
       ],
-      "glosa": "Amortizaciones de derechos de jugadores"
+      "glosa": "Amortizaciones de derechos de deportistas"
     },
     {
       "label": "Perdas de imparidade de direitos de atletas",
@@ -494,7 +494,7 @@
       "values": [
         0.676
       ],
-      "glosa": "Pérdidas por deterioro de valor de derechos de jugadores"
+      "glosa": "Pérdidas por deterioro de derechos de deportistas"
     }
   ]
 }

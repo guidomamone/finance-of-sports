@@ -172,6 +172,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2018: {
     leagueSize: null,
     clubs: [
+      { id:"benfica-pt", revenue:232.289, reportType:"official_balance_sheet",
+        sourceId:"benfica-pt-relatorio-contas-2017-18",
+        mix:[["Comercial / Sponsors",26.799],["Estadio",26.096],["Televisión",49.992],["Premios por competencias",22.751],["Venta de Jugadores",90.597],["Otros ingresos",16.054]] },
       { id:"porto-pt", revenue:213.425, reportType:"official_balance_sheet",
         sourceId:"porto-pt-relatorio-contas-consolidadas-2017-18",
         mix:[["Cuotas Sociales",6.161],["Comercial / Sponsors",36.326],["Estadio",10.176],["Televisión",27.643],["Premios por competencias",36.054],["Venta de Jugadores",84.414],["Otros ingresos",12.652]] },

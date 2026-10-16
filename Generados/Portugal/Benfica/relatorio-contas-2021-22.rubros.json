@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.pdf",
   "club": "benfica-pt",
   "year": 2022,
-  "generatedAt": "2026-10-16T00:30:33.667Z",
+  "generatedAt": "2026-10-16T00:56:35.756Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         47.267
       ],
-      "glosa": "Ingresos por retransmisiones televisivas"
+      "glosa": "Ingresos por derechos de televisión"
     },
     {
       "label": "Outras receitas",
@@ -54,7 +54,7 @@
       "values": [
         2.474
       ],
-      "glosa": "Alquiler de espacios"
+      "glosa": "Alquileres de espacios"
     },
     {
       "label": "*Royalties*",
@@ -134,7 +134,7 @@
       "values": [
         62.095
       ],
-      "glosa": "Beneficios por traspasos de derechos de deportistas (plusvalías)"
+      "glosa": "Beneficios por enajenación de derechos de deportistas (plusvalías)"
     },
     {
       "label": "Outros rendimentos",
@@ -184,7 +184,7 @@
       "values": [
         6.048
       ],
-      "glosa": "Licencia de marca Benfica"
+      "glosa": "Licencia de la marca Benfica"
     },
     {
       "label": "Deslocações e estadas",
@@ -264,7 +264,7 @@
       "values": [
         8.319
       ],
-      "glosa": "Otros suministros y servicios"
+      "glosa": "Otros aprovisionamientos y servicios"
     },
     {
       "label": "Remunerações fixas",
@@ -274,7 +274,7 @@
       "values": [
         0.632
       ],
-      "glosa": "Remuneraciones fijas"
+      "glosa": "Retribuciones fijas"
     },
     {
       "label": "Remunerações variáveis",
@@ -284,7 +284,7 @@
       "values": [
         0.098
       ],
-      "glosa": "Remuneraciones variables"
+      "glosa": "Retribuciones variables"
     },
     {
       "label": "Remunerações fixas",
@@ -294,7 +294,7 @@
       "values": [
         79.165
       ],
-      "glosa": "Remuneraciones fijas"
+      "glosa": "Retribuciones fijas"
     },
     {
       "label": "Remunerações variáveis",
@@ -304,7 +304,7 @@
       "values": [
         13.165
       ],
-      "glosa": "Remuneraciones variables"
+      "glosa": "Retribuciones variables"
     },
     {
       "label": "Indemnizações",
@@ -324,7 +324,7 @@
       "values": [
         -1.561
       ],
-      "glosa": "Retribuciones post-empleo"
+      "glosa": "Beneficios post-empleo"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -334,7 +334,7 @@
       "values": [
         5.975
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -394,7 +394,7 @@
       "values": [
         0.391
       ],
-      "glosa": "Mobiliario y equipos de oficina"
+      "glosa": "Equipamiento de oficina"
     },
     {
       "label": "Direitos de uso",
@@ -424,7 +424,7 @@
       "values": [
         0.995
       ],
-      "glosa": "Aplicaciones informáticas"
+      "glosa": "Programas informáticos"
     },
     {
       "label": "Provisões/Imparidades ^{(2)}",
@@ -434,7 +434,7 @@
       "values": [
         1.892
       ],
-      "glosa": "Provisiones/Deterioros ^{(2)}"
+      "glosa": "Provisiones/Pérdidas por deterioro ^{(2)}"
     },
     {
       "label": "Outros gastos e perdas operacionais ^{(3)}",
@@ -454,7 +454,7 @@
       "values": [
         4.379
       ],
-      "glosa": "Pérdidas por enajenaciones de derechos de deportistas (minusvalías)"
+      "glosa": "Pérdidas por enajenación de derechos de deportistas (minusvalías)"
     },
     {
       "label": "Gastos associados a alienações de direitos de atletas (comissões)",
@@ -504,7 +504,7 @@
       "values": [
         6.802
       ],
-      "glosa": "Dotaciones por deterioro de valor"
+      "glosa": "Dotaciones por deterioro"
     }
   ]
 }

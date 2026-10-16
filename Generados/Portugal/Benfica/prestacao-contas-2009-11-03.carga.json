@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2009-11-03.pdf",
- "generado": "2026-10-16T00:46:01.511Z",
+ "generado": "2026-10-16T01:09:20.015Z",
  "frena": [
   {
    "etapa": "categoria-en-cola",
@@ -308,7 +308,7 @@
     "_pag": 57,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)"
    },
    {
     "rawLabel": "Honorários",
@@ -658,7 +658,7 @@
     "_pag": 60,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía member_dues)"
    },
    {
     "rawLabel": "Correcções relativas a exercícios anteriores",
@@ -1238,10 +1238,8 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "expense",
    "amountNative": -1.197586
   },
@@ -1470,7 +1468,6 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "ladoRechazado": true,
    "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "expense",
    "amountNative": -0.57
@@ -1774,10 +1771,8 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía member_dues)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): cuotas a asociaciones, como Alverca/Tondela/Santa Clara/Nacional. [prestacao-contas-2010-11-11.md L7501]",
    "destino": "expense",
    "amountNative": -0.003591
   },

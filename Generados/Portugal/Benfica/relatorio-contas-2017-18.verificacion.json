@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2017-18.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2017-18.md",
- "generado": "2026-10-16T00:30:33.638Z",
- "estado": "cola",
+ "generado": "2026-10-16T00:56:35.695Z",
+ "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2018,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "8be5181",
-  "6f12741"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -40,8 +37,8 @@
   },
   {
    "nombre": "documento del año 2019",
-   "ok": false,
-   "detalle": "ingresos de 2018: 199.253 en este documento y 120.030991 en relatorio-contas-2012-13-pos-AG.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2018: 199.253 en este documento y 199.255 en relatorio-contas-2018-19.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2017",
@@ -67,7 +64,8 @@
   "escalón \"nota exacta en la lectura 5\": \"Amortizações e perdas de imparidade de direitos de atletas\" (L2514) se abre en las 2 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar ya contestada para el club (antes de su alta) (cuadro-duplicado, \"Resultado com transações de direitos de atletas\"): corregir sí, en relatorio-contas-2022-23-pos-AG.pdf",
-  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf"
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {

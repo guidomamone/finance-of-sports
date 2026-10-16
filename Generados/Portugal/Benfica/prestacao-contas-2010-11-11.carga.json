@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.pdf",
- "generado": "2026-10-16T00:46:01.993Z",
- "frena": [],
+ "generado": "2026-10-16T01:09:20.420Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "benfica-pt ya tiene el ejercicio 2010 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['benfica-pt-prestacao-contas-2010-11-11'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 2: 2009-2019 traen consolidado e individual lado a lado y las controladas (Benfica Estádio, Benfica TV) hacen negocio del fútbol del club (estadio, canal))",
   "ingresos: ningún total impreso igual a la suma de las líneas (87.366955); queda la suma, verificada por el resultado del ejercicio",
@@ -414,7 +427,7 @@
     "_pag": 139,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)"
    },
    {
     "rawLabel": "ELECTRICIDADE",
@@ -814,7 +827,7 @@
     "_pag": 145,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía member_dues)"
    },
    {
     "rawLabel": "OUTROS CUSTOS E PERDAS OPERACIONAIS",
@@ -1559,10 +1572,8 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "expense",
    "amountNative": -0.89569
   },
@@ -1669,7 +1680,6 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "ladoRechazado": true,
    "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
    "destino": "expense",
    "amountNative": -0.4
@@ -2170,10 +2180,8 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía member_dues)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): cuotas a asociaciones, como Alverca/Tondela/Santa Clara/Nacional. [prestacao-contas-2010-11-11.md L7501]",
    "destino": "expense",
    "amountNative": -0.005591
   },
@@ -2338,8 +2346,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2009–10 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Benfica\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -2379,13 +2387,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2009–10 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Benfica\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 27,
   "lineasGasto": 58,
   "metaFilas": 3,

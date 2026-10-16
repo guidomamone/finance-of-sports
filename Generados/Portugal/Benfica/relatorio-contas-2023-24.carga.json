@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2023-24.pdf",
- "generado": "2026-10-16T00:46:04.654Z",
- "frena": [],
+ "generado": "2026-10-16T01:09:22.830Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "benfica-pt ya tiene el ejercicio 2024 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['benfica-pt-relatorio-contas-2023-24'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS))",
   "gastos: ningún total impreso igual a la suma de las líneas (-268.985); queda la suma, verificada por el resultado del ejercicio",
@@ -1510,8 +1523,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2023–24 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Benfica\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1551,13 +1564,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2023–24 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Benfica\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 14,
   "lineasGasto": 39,
   "metaFilas": 3,

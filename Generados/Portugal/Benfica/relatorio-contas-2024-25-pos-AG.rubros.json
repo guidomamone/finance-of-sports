@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2024-25-pos-AG.pdf",
   "club": "benfica-pt",
   "year": 2025,
-  "generatedAt": "2026-10-16T00:30:33.730Z",
+  "generatedAt": "2026-10-16T00:56:35.821Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         52.694
       ],
-      "glosa": "Ingresos por derechos de televisión"
+      "glosa": "Ingresos por televisión"
     },
     {
       "label": "Outras receitas",
@@ -64,7 +64,7 @@
       "values": [
         3.901
       ],
-      "glosa": "Regalías"
+      "glosa": "Royalties"
     },
     {
       "label": "Outras receitas^{1)}",
@@ -94,7 +94,7 @@
       "values": [
         13.565
       ],
-      "glosa": "Abonos de temporada"
+      "glosa": "Abonos"
     },
     {
       "label": "Competições nacionais",
@@ -134,7 +134,7 @@
       "values": [
         115.053
       ],
-      "glosa": "Beneficios por enajenación de derechos de futbolistas (plusvalías)"
+      "glosa": "Beneficios por enajenación de derechos de jugadores (plusvalías)"
     },
     {
       "label": "Outros rendimentos com transações de direitos de atletas",
@@ -144,7 +144,7 @@
       "values": [
         2.285
       ],
-      "glosa": "Otros ingresos por transacciones de derechos de futbolistas"
+      "glosa": "Otros ingresos por transacciones de derechos de jugadores"
     },
     {
       "label": "Gestão operacional do estádio",
@@ -244,7 +244,7 @@
       "values": [
         1.073
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Reparación y conservación"
     },
     {
       "label": "Associações, Federações e Liga",
@@ -264,7 +264,7 @@
       "values": [
         8.509
       ],
-      "glosa": "Otros suministros y servicios exteriores"
+      "glosa": "Otros aprovisionamientos y servicios"
     },
     {
       "label": "Royalties marca Benfica",
@@ -274,7 +274,7 @@
       "values": [
         10.632
       ],
-      "glosa": "Regalías de la marca Benfica"
+      "glosa": "Royalties marca Benfica"
     },
     {
       "label": "Remunerações fixas",
@@ -414,7 +414,7 @@
       "values": [
         0.355
       ],
-      "glosa": "Equipamiento de oficina"
+      "glosa": "Mobiliario y equipos de oficina"
     },
     {
       "label": "Direitos de uso",
@@ -464,7 +464,7 @@
       "values": [
         0.624
       ],
-      "glosa": "Provisiones/Deterioros de valor (3)"
+      "glosa": "Provisiones / Deterioros de valor (3)"
     },
     {
       "label": "Outros gastos e perdas operacionais (4)",
@@ -484,7 +484,7 @@
       "values": [
         4.04
       ],
-      "glosa": "Pérdidas por enajenación de derechos de futbolistas (minusvalías)"
+      "glosa": "Pérdidas por enajenación de derechos de jugadores (minusvalías)"
     },
     {
       "label": "Gastos associados a alienações de direitos de atletas (comissões)",
@@ -494,7 +494,7 @@
       "values": [
         16.24
       ],
-      "glosa": "Gastos asociados a enajenaciones de derechos de futbolistas (comisiones)"
+      "glosa": "Gastos asociados a la enajenación de derechos de jugadores (comisiones)"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -504,7 +504,7 @@
       "values": [
         0.129
       ],
-      "glosa": "Bajas de derechos de futbolistas"
+      "glosa": "Bajas de derechos de jugadores"
     },
     {
       "label": "Outros gastos com transações de direitos de atletas",
@@ -514,7 +514,7 @@
       "values": [
         8.019
       ],
-      "glosa": "Otros gastos por transacciones de derechos de futbolistas"
+      "glosa": "Otros gastos por transacciones de derechos de jugadores"
     },
     {
       "label": "Amortizações de direitos de atletas",
@@ -524,7 +524,7 @@
       "values": [
         41.204
       ],
-      "glosa": "Amortizaciones de derechos de futbolistas"
+      "glosa": "Amortizaciones de derechos de jugadores"
     },
     {
       "label": "Perdas de imparidade de direitos de atletas",
@@ -534,7 +534,7 @@
       "values": [
         0.967
       ],
-      "glosa": "Pérdidas por deterioro del valor de derechos de futbolistas"
+      "glosa": "Pérdidas por deterioro de valor de derechos de jugadores"
     }
   ]
 }
