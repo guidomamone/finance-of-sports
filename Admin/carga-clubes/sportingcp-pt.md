@@ -137,6 +137,86 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
 ```
 
+## 2015
+
+### Ingresos
+
+```text
+2015: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Sporting CP/relatorio-contas-2014-15.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Sporting CP/relatorio-contas-2014-15.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Loja Verde | pág. 107, Jev 0.97 |
+| 2 | Direitos Televisivos | pág. 107, Jev 1 |
+| 3 | Bilheteira e Bilhetes de Época | pág. 107, precedente |
+| 4 | Patrocínios e Publicidade | pág. 107, Jev 1 |
+| 5 | Royalties | pág. 107, Jev 0.99 |
+| 6 | Outros | pág. 107, precedente |
+| 7 | Diferencia de redondeo | pág. ?, precedente |
+| 8 | Participação nas Competições Europeias | pág. 108, Jev 1 |
+| 9 | Participações nas Competições Nacionais | pág. 108, Jev 1 |
+| 10 | Participações em Competições Particulares | pág. 108, Jev 0.98 |
+| 11 | Cedência de jogadores | pág. 108, Jev 0.99 |
+| 12 | Diferenças de câmbio | pág. 108, Jev 1 |
+| 13 | Descontos de pronto pagamento obtidos | pág. 108, Jev 1 |
+| 14 | Outros | pág. 108, precedente |
+| 15 | Diferencia de redondeo | pág. ?, precedente |
+| 16 | Cedência de direitos económicos ao Sporting Portugal Fund | pág. 114, Jev 0.94 |
+| 17 | Venda de direitos desportivos | pág. 114, Jev 1 |
+| 18 | Mecanismo de solidariedade/compensão por formação | pág. 114, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas | pág. 78, precedente |
+| 2 | Subcontratos | pág. 110, Jev 0.96 |
+| 3 | Organização e deslocações e estadias de jogos | pág. 110, Jev 1 |
+| 4 | Comissões | pág. 110, precedente |
+| 5 | Honorários | pág. 110, Jev 1 |
+| 6 | Trabalhos especializados | pág. 110, Jev 0.99 |
+| 7 | Equipamentos Desportivos | pág. 110, precedente |
+| 8 | Combustíveis | pág. 110, Jev 0.99 |
+| 9 | Publicidade e Propaganda | pág. 110, Jev 1 |
+| 10 | Outros FSE | pág. 110, precedente |
+| 11 | Diferencia de redondeo | pág. ?, Jev 0.98 |
+| 12 | Remunerações Órgãos Sociais | pág. 111, Jev 1 |
+| 13 | Remuneração do Pessoal | pág. 111, precedente |
+| 14 | Indemnizações | pág. 111, precedente |
+| 15 | Encargos com remunerações | pág. 111, Jev 0.97 |
+| 16 | Gastos com benefícios pós-emprego | pág. 111, precedente |
+| 17 | Seguros | pág. 111, precedente |
+| 18 | Outros | pág. 111, Jev 0.9 |
+| 19 | Diferencia de redondeo | pág. ?, Jev 0.98 |
+| 20 | Depreciações e amortizações excluindo plantel | pág. 78, Jev 0.98 |
+| 21 | Imparidade de clientes | pág. 112, Jev 0.99 |
+| 22 | Imparidade de inventários | pág. 112, Jev 0.99 |
+| 23 | Provisões para outros riscos e encargos | pág. 112, precedente |
+| 24 | Cedência de jogadores de terceiros | pág. 113, Jev 0.98 |
+| 25 | Quotizações | pág. 113, Jev 0.92 |
+| 26 | Impostos | pág. 113, Claude 0.88 |
+| 27 | Multas e penalidades | pág. 113, Jev 0.99 |
+| 28 | Prospeção de mercado | pág. 113, Jev 0.98 |
+| 29 | Diferenças de câmbio desfavoráveis operacionais | pág. 113, precedente |
+| 30 | Direitos de imagem | pág. 113, Claude 0.8 |
+| 31 | Outros | pág. 113, Jev 0.9 |
+| 32 | Amortizações do exercício - Futebol profissional | pág. 113, Jev 1 |
+| 33 | Perdas por imparidade - Futebol profissional | pág. 113, Jev 0.91 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2014–15 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
+```
+
 ## 2014
 
 ### Ingresos
@@ -390,4 +470,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2013-14.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sportingcp-pt-relatorio-contas-2014-15
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2014-15.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
