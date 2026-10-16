@@ -511,7 +511,9 @@ Mitigaciones:
                   <carpeta> [--escribir]` suma las confirmadas a data/gestiones (misma gestión = mismo corto y mismo desde), publica y
                   contesta los casos cubiertos (to-do 232 b). Solo tandas armadas por --armar (tanda.json).
  PERÍODO CORTO    menos de 12 meses ─► la columna del año anterior sin importes (primer ejercicio de una sociedad nueva) → se carga
-                  como el año con publicNote (Volos 2019, Kifisia 2022; Admin/CONVENCIONES-DATOS.md) ─► con importes → frena (parcial)
+                  como el año con publicNote (Volos 2019, Kifisia 2022; Admin/CONVENCIONES-DATOS.md) ─► encadena con el cierre anterior
+                  (+ los meses del período) y el siguiente (+12 meses): ejercicio de transición por cambio de cierre → se carga con
+                  publicNote (Benfica 2007-08, to-do 237 ab) ─► si no → frena (parcial)
  ETIQUETA REPETIDA se decide por renglón: ver la escalera de la etapa 7 (to-do 232 h y 234)
  SIN CATEGORÍA    fila impresa (con página) que no está en el .categorias.json y nada categorizó ─► frena con su nombre (to-do 232 x;
                   AEK 2024) ─► las demás sin categoría aceptable: más del 5% del dinero del lado frena, menos es aviso y no se cargan

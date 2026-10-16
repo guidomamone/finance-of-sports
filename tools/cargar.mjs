@@ -332,7 +332,22 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       const fs = existsSync(fp) ? (JSON.parse(readFileSync(fp, 'utf8')).filas || []) : [];
       if (fs.length && fs.every((x) => x.anterior == null || String(x.anterior).trim() === '' || parseNumber(x.anterior) === 0)) primero = { meses: per.meses, inicio: per.inicio || null, cierre: per.cierre || null };
     }
-    if (primero) { P.primerEjercicio = primero; P.avisos.push(`primer ejercicio de la sociedad (${per.meses} meses${per.inicio ? `, desde ${per.inicio}` : ''}): la columna del año anterior no tiene importes; se carga como el año, con nota pública`); }
+    // EJERCICIO DE TRANSICIÓN POR CAMBIO DE CIERRE (to-do 237 ab; decisión de Guido, 2026-10-15, Admin/CONVENCIONES-DATOS.md). Cuando el club
+    // pasa el cierre de julio a junio, el ejercicio de 11 meses contiene la temporada entera y no hay otro tramo que buscar. UNA compuerta, la
+    // "cadena de cierres" con los otros documentos del club (registro): el cierre anterior + los meses del período = este cierre, Y el
+    // siguiente cierra 12 meses después (se comparan año y mes). Benfica 2007-08: 2007-07-31 + 11 = 2008-06; el siguiente, 2009-06. Un
+    // semestral no pasa (el siguiente cierra 6 meses después) y un tramo suelto tampoco (no encadena). Se carga con nota pública, como el
+    // primer ejercicio.
+    let transicion = null;
+    if (!primero && per.tipo !== 'anual' && per.meses && per.meses < 12 && per.cierre) {
+      const ym = (f, d) => { const [y, m] = String(f).split('-').map(Number); const t = y * 12 + (m - 1) + d; return `${Math.floor(t / 12)}-${String((t % 12) + 1).padStart(2, '0')}`; };
+      const cierres = registro.filter((x) => x.pdf !== pdf && dirname(x.pdf) === dirname(pdf) && x.periodo?.tipo === 'anual' && x.periodo?.cierre).map((x) => ({ pdf: x.pdf, ym: String(x.periodo.cierre).slice(0, 7), cierre: x.periodo.cierre }));
+      const ant = cierres.find((c) => c.ym === ym(per.cierre, -per.meses)); const sig = cierres.find((c) => c.ym === ym(per.cierre, 12));
+      const diaDespues = (f) => { const d = new Date(`${f}T00:00:00Z`); d.setUTCDate(d.getUTCDate() + 1); return d.toISOString().slice(0, 10); };
+      if (ant && sig) transicion = { meses: per.meses, inicio: per.inicio || diaDespues(ant.cierre), cierre: per.cierre, anterior: ant.cierre, siguiente: sig.cierre };
+    }
+    if (transicion) { P.transicion = transicion; P.avisos.push(`ejercicio de transición por cambio de cierre (${per.meses} meses al ${per.cierre}): encadena con el cierre anterior ${transicion.anterior} y el siguiente ${transicion.siguiente}; se carga como el año, con nota pública (to-do 237 ab)`); }
+    else if (primero) { P.primerEjercicio = primero; P.avisos.push(`primer ejercicio de la sociedad (${per.meses} meses${per.inicio ? `, desde ${per.inicio}` : ''}): la columna del año anterior no tiene importes; se carga como el año, con nota pública`); }
     else if (per.tipo !== 'anual') frena('periodo', `el documento cubre un período ${per.tipo}${per.meses ? ` de ${per.meses} meses` : ''}${per.cierre ? ` al ${per.cierre}` : ''}: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)`);
     if (per.nombreNoCoincide) frena('periodo', `el nombre del archivo dice otro cierre que el contenido (${per.cierre || '?'}): confirmar qué ejercicio es antes de cargarlo`);
   }
@@ -1171,7 +1186,8 @@ export function escribir(P) {
     // la nota INTERNA de la fuente va a la evidencia del club (to-do 209: data/ se publica), no a un campo `note` de sources{}
     if (!(P.reemplaza && cargarSitio().sources?.[S.id])) {
       const dmy = (f) => f.split('-').reverse().join('/');
-      const notaPrimero = P.primerEjercicio ? `Primer ejercicio de la sociedad: ${P.primerEjercicio.inicio && P.primerEjercicio.cierre ? `del ${dmy(P.primerEjercicio.inicio)} al ${dmy(P.primerEjercicio.cierre)} ` : ''}(${P.primerEjercicio.meses} meses).` : null;
+      const notaPrimero = P.primerEjercicio ? `Primer ejercicio de la sociedad: ${P.primerEjercicio.inicio && P.primerEjercicio.cierre ? `del ${dmy(P.primerEjercicio.inicio)} al ${dmy(P.primerEjercicio.cierre)} ` : ''}(${P.primerEjercicio.meses} meses).`
+        : P.transicion ? `Ejercicio de transición por cambio de fecha de cierre: ${P.transicion.inicio ? `del ${dmy(P.transicion.inicio)} ` : ''}al ${dmy(P.transicion.cierre)} (${P.transicion.meses} meses).` : null;
       src = insertarEnObjeto(src, 'Object.assign(sources, {', `  ${js(S.id)}: {\n    id:${js(S.id)}, clubId:${js(S.clubId)},\n    title:${js(S.title)},\n    type:${js(S.type)}, reliability:${js(S.reliability)},\n${notaPrimero ? `    publicNote:${js(notaPrimero)},\n` : ''}  },\n`, dataRel);
       if (S.note) ev = EV.agregarFuente(ev, S.id, [S.note], 'note (cargar.mjs)');
     }

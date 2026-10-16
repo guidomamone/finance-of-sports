@@ -105,16 +105,13 @@ con los que no están en los pasos de arriba.
     Mejoras de script vistas en Grecia: to-do 232.
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
-    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, aa, q (POC y q1/q2), k, w, am, l (vecino sin
+    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, aa, q (POC y q1/q2), k, w, am, l (vecino sin
     descartados), ah, af+s, ai+ak, z, g y la letra nueva an (verificar no reescribe el .rubros.json igual, glosar no vuelve a pagar). Pasaron a
     Admin/HALLAZGOS-pipeline.md: b, c, h, i, j, l (primera parte), m, p, u, x, ae, aj y Benfica 2014-15. Guido dejó al para después.
     Cómo medir cada letra: verificar -> node tools/medir-verificar.mjs --lista Admin/lotes/prueba-completa.txt --salida <x> --pasadas 2
     (antes con --script <copia de la versión vieja dentro de tools/>) y --comparar; cargar -> node tools/medir-cargar.mjs --salida <x>
     (paralelo, ~1,5 min) y --comparar, después git checkout -- Admin/registros/categorias-aprendidas.jsonl; auditoría -> node tools/audit.js.
     PENDIENTES, con el diseño que dejaron los diagnósticos (subagentes Sonnet; ok de Guido para codear todas salvo al), en este orden:
-    - ab (M): cargar.mjs ~L314-320, junto al "primer ejercicio": compuerta "cadena de cierres": cierre anterior + meses = este cierre y el
-      siguiente cierra 12 meses después (Benfica: 2007-07-31 + 11 = 2008-06-30, siguiente 2009-06-30). El freno de reportType de Benfica
-      2007-08 va con un ajuste `reportType` (no tocar alta-club). Medir: medir-cargar.
     - a + ac (M, riesgo medio): periodo.mjs ~L195-229, "par de encabezado" (fila de tabla con fechas f y f-1 año y celdas sin dígitos;
       fechas de 2 dígitos solo ahí). Prototipo de un subagente: 23 de 3.220 cambian; 4 regresiones a decidir (Slavia 2002, Trabzonspor
       intermedio, Almagro 2019, Aris acta). Variante a medir: no sustituir cuando el cierre de títulos sale de una frase de período
@@ -139,11 +136,6 @@ con los que no están en los pasos de arriba.
        mercadorias vendidas" (inicial + compras − final = CMV) no es un desglose aditivo; sumar sus filas descuadra (Santa Clara 633.981
        contra 378.448) y cada club genera 2 preguntas con la misma respuesta: queda afuera y se carga el renglón del estado. Escalón
        posible: reconocer el cuadro (filas "inicial/final" + "compras" cuyo cálculo da el renglón) y no ofrecerlo como desglose.
-    ab) EL EJERCICIO DE 11 MESES POR CAMBIO DE CIERRE SE CARGA (decisión de Guido, 2026-10-15; regla en CONVENCIONES-DATOS). cargar.mjs frena
-       Benfica 2007-08 (1/8/2007-30/6/2008, "período de 11 meses", relatorio-contas-2007-08.md L236) con "período otro de 11 meses", y ningún
-       ajuste lo destraba. Escalón posible: un ajuste `periodo` (valor: "cambio-de-cierre") que deje pasar ese documento con publicNote, o la
-       señal del propio documento (inicio = día siguiente al cierre del ejercicio anterior y fin = nuevo cierre). Casos: Benfica 2007-08,
-       Sporting 2003-04.
     ac) `periodo.mjs` TOMA EL FIN DE MANDATO DE LOS ÓRGANOS SOCIALES COMO CIERRE (lote 80: Benfica 2013-14 quedó con cierre 2017-06-30 y
        2012-13 con 2019-06-30, por la tabla de mandatos "30/06/2016", relatorio-contas-2013-14-pos-AG.md L1417-1421). Con el cierre mal,
        localizar no eligió estado ("no contiene el ejercicio pedido"), verificar comparó años equivocados y abrió 8 casos de año vecino falsos.

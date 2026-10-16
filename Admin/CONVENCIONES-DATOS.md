@@ -270,7 +270,8 @@ fuente lleva `publicNote` "Primer ejercicio de la sociedad: del ... al ... (N me
 de transición (1 de agosto a 30 de junio, 11 meses) se carga como el año: contiene la temporada entera y no hay otro tramo que buscar. Casos:
 Benfica 2007-08 ("período de 11 meses, que compreende o período de 1 de Agosto de 2007 a 30 de Junho de 2008") y Sporting 2003-04. La
 fuente lleva `publicNote` con las fechas y los meses. Un semestral o un tramo que deja afuera parte de la temporada sigue siendo parcial.
-Hoy `cargar.mjs` lo frena ("período otro de 11 meses"): falta el escalón del to-do 237 ab.
+`cargar.mjs` lo reconoce por la cadena de cierres con los otros documentos del club: el cierre anterior más los meses del período da este
+cierre, y el siguiente cierra 12 meses después.
 
 **Nota aparte encontrada en el mismo documento** (no una regla, un dato suelto para no perder): la
 última columna mensual del PDF de Instituto dice "dic-24" en vez de "dic-25" — es un typo del propio

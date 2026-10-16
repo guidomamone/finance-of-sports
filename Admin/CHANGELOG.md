@@ -28,6 +28,9 @@ que dice `ESTADO.md` era verdad ese día.
 - audit.js: `escala-implausible` baja a P3 si otro ejercicio del club a 2 años o menos está en la banda y a menos de 20× (e). Medido:
   Alverca 2022 y Novorizontino 2015 pasan a P3 (salen sus entradas de audit-ignore); destraba Felgueiras 2021-22 (respondida su fila
   "Outros gastos" de personal como wages_squad).
+- cargar.mjs: el ejercicio de transición por cambio de cierre (11 meses que encadenan con el cierre anterior y el siguiente) se carga con
+  nota pública (ab). Medido: solo cambia Benfica 2007-08 (deja de frenar por período).
+- Lote 86: Felgueiras 2021-22 cargado.
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)
 
