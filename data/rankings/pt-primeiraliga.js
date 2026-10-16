@@ -416,6 +416,14 @@ window.RANKINGS["pt-primeiraliga"] = {
         mix:[["Cuotas Sociales",11.415],["Comercial / Sponsors",15.12],["Estadio",17.33],["Televisión",12.617],["Premios por competencias",0.316],["Venta de Jugadores",1.166],["Otros ingresos",55.995]] },
     ],
   },
+  2005: {
+    leagueSize: null,
+    clubs: [
+      { id:"sportingcp-pt", revenue:120.642, reportType:"official_balance_sheet",
+        sourceId:"sportingcp-pt-relatorio-contas-2004-05",
+        mix:[["Cuotas Sociales",4.548],["Comercial / Sponsors",4.828],["Estadio",14.437],["Televisión",11.767],["Premios por competencias",3.692],["Otros ingresos",81.371]] },
+    ],
+  },
   2004: {
     leagueSize: null,
     clubs: [
