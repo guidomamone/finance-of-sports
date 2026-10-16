@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Braga/Relato_rio-Contas-2022-23-SAD.pdf",
  "md": "Clubes/Portugal/Braga/Relato_rio-Contas-2022-23-SAD.md",
- "generado": "2026-10-15T21:55:00.412Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.328Z",
+ "estado": "ok",
+ "clubId": "braga-pt",
  "year": 2023,
  "escala": {
   "valor": "unidades",
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "a5c350a"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,14 +43,15 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (4.193753 contra 0.641787, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Imparidade de inventários (perdas/reversões)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "duda de localizar que no afecta la carga: Son reclasificaciones de gestión en miles de euros que repiten la información de las notas 15-23 en unidades.",
-  "duda de localizar que no afecta la carga: b36 abre el CMV en inventario inicial, compras y regularizaciones; es un desglose poco útil por categoría."
+  "duda de localizar que no afecta la carga: b36 abre el CMV en inventario inicial, compras y regularizaciones; es un desglose poco útil por categoría.",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2024-25.pdf"
  ],
  "reintentar": [
   {

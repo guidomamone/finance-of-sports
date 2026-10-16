@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Braga/relatorio-contas-2015-16.pdf",
  "md": "Clubes/Portugal/Braga/relatorio-contas-2015-16.md",
- "generado": "2026-10-15T21:55:00.427Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.351Z",
+ "estado": "ok",
+ "clubId": "braga-pt",
  "year": 2016,
  "escala": {
   "valor": "unidades",
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "521ab40"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -40,7 +38,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2015: este chequeo no se puede hacer"
   }
  ],
  "notas": [

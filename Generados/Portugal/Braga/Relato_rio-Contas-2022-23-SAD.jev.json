@@ -1,0 +1,1525 @@
+{
+ "md": "Clubes/Portugal/Braga/Relato_rio-Contas-2022-23-SAD.md",
+ "generatedAt": "2026-10-16T00:10:24.549Z",
+ "rubrosHuella": "73373f37ff74245a1a1b9cdd0df662f845115b13",
+ "rubros": [
+  {
+   "label": "Merchandising",
+   "lado": "revenue",
+   "page": 117,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 70,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 129,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 985
+  },
+  {
+   "label": "Direitos de transmissões",
+   "lado": "revenue",
+   "page": 117,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Receita de bilheteira",
+   "lado": "revenue",
+   "page": 117,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Publicidade / Patrocínios",
+   "lado": "revenue",
+   "page": 117,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1081
+  },
+  {
+   "label": "Participação em competições europeias",
+   "lado": "revenue",
+   "page": 125,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Pacotes corporate",
+   "lado": "revenue",
+   "page": 117,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.97
+    ],
+    [
+     "stadium_other",
+     0.03
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 937
+  },
+  {
+   "label": "Ganhos em rescisões de contratos",
+   "lado": "revenue",
+   "page": 125,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "player_sales",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "player_sales",
+     0.59
+    ],
+    [
+     "other_income",
+     0.41
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Mecanismo de solidariedade e direitos de formação",
+   "lado": "revenue",
+   "page": 125,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "player_sales",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "player_sales",
+     0.9
+    ],
+    [
+     "youth_football",
+     0.07
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1092
+  },
+  {
+   "label": "Participação em competições nacionais",
+   "lado": "revenue",
+   "page": 125,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1076
+  },
+  {
+   "label": "Cedência de atletas a seleções nacionais",
+   "lado": "revenue",
+   "page": 125,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "player_sales",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Rendimentos com alienações de direitos de atletas",
+   "lado": "revenue",
+   "page": 125,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Empréstimo de atletas",
+   "lado": "expense",
+   "page": 129,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "player_amortisation",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "player_amortisation",
+     0.88
+    ],
+    [
+     "wages_squad",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Receitas de apostas desportivas",
+   "lado": "revenue",
+   "page": 125,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Outros ganhos em operações com direitos de atletas",
+   "lado": "revenue",
+   "page": 125,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Indemnizações",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "wages_squad",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "Trabalhos especializados",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 968
+  },
+  {
+   "label": "Gastos com aquisição de atletas",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Inscrições e registos",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1185
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "expense",
+   "page": 70,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Vigilância e segurança",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "Honorários",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Despesas com provas",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Serviços bancários",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Conservação e reparação",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Ferramentas e utensílios de desgaste rápido",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Água",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Equipamento e material desportivo",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Combustíveis",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Electricidade",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 921
+  },
+  {
+   "label": "Comunicação",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Deslocações e estadas",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1072
+  },
+  {
+   "label": "Rendas / Direitos Exploração",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Corporate (catering)",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 949
+  },
+  {
+   "label": "Contencioso e notariado",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 914
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1005
+  },
+  {
+   "label": "Royalties",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 897
+  },
+  {
+   "label": "Limpeza, higiene e conforto",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Remuneração da Comissão Executiva",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "wages_squad",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Pessoal do SCB ao serviço da SAD",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "wages_squad",
+     0.07
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1100
+  },
+  {
+   "label": "Atletas",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Treinadores",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 981
+  },
+  {
+   "label": "Senhas de presença",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "wages_squad",
+     0.09
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Rescisão de contratos",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "player_amortisation",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "player_amortisation",
+     0.59
+    ],
+    [
+     "player_impairment",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Staff Geral",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "wages_squad",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 989
+  },
+  {
+   "label": "Prémios de desempenho",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Encargos com remunerações",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Seguro de acidentes de trabalho",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "wages_squad",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Imparidade de inventários (perdas/reversões)",
+   "lado": "expense",
+   "page": 70,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "Outros gastos com pessoal",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "wages_squad",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Provisões (aumentos/reduções)",
+   "lado": "expense",
+   "page": 70,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 129,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Abates",
+   "lado": "expense",
+   "page": 129,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "exceptional_items",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "exceptional_items",
+     0.56
+    ],
+    [
+     "depreciation",
+     0.36
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Direitos de preferência",
+   "lado": "expense",
+   "page": 129,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Direitos de formação e mecanismo de solidariedade",
+   "lado": "expense",
+   "page": 129,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1120
+  },
+  {
+   "label": "Gastos com transações atletas",
+   "lado": "expense",
+   "page": 129,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Multas / Penalidades desportivas",
+   "lado": "expense",
+   "page": 129,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Edifícios e outras construções",
+   "lado": "expense",
+   "page": 130,
+   "section": "nota que desglosa \"Gastos/reversões de depreciação e de amortização\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Protocolo Futebol Feminino",
+   "lado": "expense",
+   "page": 129,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Equipamento básico",
+   "lado": "expense",
+   "page": 130,
+   "section": "nota que desglosa \"Gastos/reversões de depreciação e de amortização\"",
+   "choice": "depreciation",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "depreciation",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Equipamento administrativo",
+   "lado": "expense",
+   "page": 130,
+   "section": "nota que desglosa \"Gastos/reversões de depreciação e de amortização\"",
+   "choice": "depreciation",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "depreciation",
+     0.9400000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Equipamento de transporte",
+   "lado": "expense",
+   "page": 130,
+   "section": "nota que desglosa \"Gastos/reversões de depreciação e de amortização\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Direitos de superfície",
+   "lado": "expense",
+   "page": 130,
+   "section": "nota que desglosa \"Gastos/reversões de depreciação e de amortização\"",
+   "choice": "other_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_amortisation",
+     0.99
+    ],
+    [
+     "depreciation",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Outros ativos intangíveis",
+   "lado": "expense",
+   "page": 130,
+   "section": "nota que desglosa \"Gastos/reversões de depreciação e de amortização\"",
+   "choice": "other_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "Plantel",
+   "lado": "expense",
+   "page": 130,
+   "section": "nota que desglosa \"Gastos/reversões de depreciação e de amortização\"",
+   "choice": "player_amortisation",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "player_amortisation",
+     0.9299999999999999
+    ],
+    [
+     "wages_squad",
+     0.05
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 1028
+  }
+ ]
+}

@@ -118,6 +118,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2016: {
     leagueSize: null,
     clubs: [
+      { id:"braga-pt", revenue:29.135, reportType:"official_balance_sheet",
+        sourceId:"braga-pt-relatorio-contas-2015-16",
+        mix:[["Comercial / Sponsors",2.516],["Estadio",0.85],["Televisión",4.163],["Premios por competencias",7.217],["Venta de Jugadores",13.409],["Otros ingresos",0.98]] },
       { id:"rioave-pt", revenue:7.683, reportType:"official_balance_sheet",
         sourceId:"rioave-pt-relatorio-contas-2015-16",
         mix:[["Comercial / Sponsors",0.231],["Estadio",0.258],["Televisión",3.643],["Premios por competencias",1.203],["Venta de Jugadores",2.16],["Otros ingresos",0.187]] },

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Braga/relatorio-contas-2019-20.pdf",
  "md": "Clubes/Portugal/Braga/relatorio-contas-2019-20.md",
- "generado": "2026-10-15T21:56:50.053Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.394Z",
+ "estado": "ok",
+ "clubId": "braga-pt",
  "year": 2020,
  "escala": {
   "valor": "unidades",
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "ff2a172"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -35,7 +33,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -47,8 +45,7 @@
   "la nota de \"Custo das mercadorias vendidas\" no suma el renglón (0.88332 contra 0.246645, sumando sus renglones): quedó el renglón del estado",
   "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se dejan afuera de la carga los cuadros del Relatório de Gestão en miles de euros (b10-b16), usando solo las notas de las demonstrações financeiras?",
   "duda de extraer que no afecta la carga: La etiqueta indica que el importe 23 968 396 es neto de gastos por transacciones de atletas (L3344).",
-  "duda de extraer que no afecta la carga: No hay frase de escala en b22 ni en las notas; los importes coinciden entre bloques y parecen euros en unidades.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: No hay frase de escala en b22 ni en las notas; los importes coinciden entre bloques y parecen euros en unidades."
  ],
  "reintentar": [
   {

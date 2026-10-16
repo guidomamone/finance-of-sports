@@ -1,24 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Braga/relatorio-contas-2016-17.pdf",
- "generado": "2026-10-15T22:34:37.665Z",
- "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (braga-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "11 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros\" -> other_income 0; \"Outros\" -> other_income 0; \"Custo das mercadorias vendidas\" -> other_expenses 0.6; \"Pessoal do SCB ao serviço da SAD\" -> admin_general_expense 0.6; \"Remuneração do pessoal\" -> wages_squad 0.75"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-16T00:11:52.113Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 7 documento(s) mirados)",
   "gestión: ningún presidente confirmado cubre 2017 (cierre 2017-06-30); pregunta en la cola (no frena)"
@@ -85,9 +68,9 @@
     "amountNative": 0.017828,
     "disclosureLevel": "aggregated",
     "_pag": 69,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Participação em competições europeias",
@@ -155,9 +138,9 @@
     "amountNative": 0.548454,
     "disclosureLevel": "aggregated",
     "_pag": 84,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
    }
   ],
   "expenseLines": [
@@ -167,9 +150,9 @@
     "amountNative": -0.142371,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Trabalhos especializados",
@@ -407,9 +390,9 @@
     "amountNative": -0.386379,
     "disclosureLevel": "aggregated",
     "_pag": 82,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Remuneração da Comissão Executiva",
@@ -437,9 +420,9 @@
     "amountNative": -9.566659,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Prémios de desempenho",
@@ -457,9 +440,9 @@
     "amountNative": -1.669615,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Encargos com remunerações",
@@ -483,13 +466,13 @@
    },
    {
     "rawLabel": "Outros gastos com pessoal",
-    "normalizedCategory": "wages_squad",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.894776,
     "disclosureLevel": "aggregated",
     "_pag": 79,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Imparidade de dívidas a receber (perdas/reversões)",
@@ -523,13 +506,13 @@
    },
    {
     "rawLabel": "Empréstimo de atletas",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -0.858,
     "disclosureLevel": "aggregated",
     "_pag": 85,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía player_sales, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía player_sales)"
    },
    {
     "rawLabel": "Direitos de formação",
@@ -537,9 +520,9 @@
     "amountNative": -0.117737,
     "disclosureLevel": "aggregated",
     "_pag": 85,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Penalidades Desportivas",
@@ -547,9 +530,9 @@
     "amountNative": -0.134686,
     "disclosureLevel": "aggregated",
     "_pag": 85,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -563,13 +546,13 @@
    },
    {
     "rawLabel": "Gastos/reversões de depreciação e de amortização",
-    "normalizedCategory": "depreciation",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -3.912258,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -605,10 +588,10 @@
   "source": {
    "id": "braga-pt-relatorio-contas-2016-17",
    "clubId": "braga-pt",
-   "title": "Braga — relatorio-contas-2016-17 (ejercicio 2017)",
+   "title": "Sporting Clube de Braga – Futebol, SAD — relatorio-contas-2016-17 (ejercicio 2017)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Braga/relatorio-contas-2016-17.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Braga/relatorio-contas-2016-17.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Braga/relatorio-contas-2016-17.md",
@@ -717,12 +700,10 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de serviços\")",
    "signoFijo": 0.017828,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "revenue",
    "amountNative": 0.017828
   },
@@ -824,12 +805,10 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.548454,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "revenue",
    "amountNative": 0.548454
   },
@@ -841,11 +820,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.142371,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Costo de mercaderías (merchandising); igual a Moreirense y Vitória Guimarães. [relatorio-contas-2016-17.md L351: Custo das mercadorias vendidas | 142 371]",
    "destino": "expense",
    "amountNative": -0.142371
   },
@@ -1205,11 +1184,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços diversos\")",
    "signoFijo": 0.386379,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Personal del club (SCB) cedido a la SAD, dentro de Fornecimentos e serviços externos; es servicio administrativo, no plantel. [relatorio-contas-2016-17.md L2613: Pessoal do SCB ao serviço da SAD | 386 379]",
    "destino": "expense",
    "amountNative": -0.386379
   },
@@ -1251,11 +1230,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 9.566659,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Remuneración del personal (plantel y staff) en Gastos com pessoal. [relatorio-contas-2016-17.md L2484: Remuneração do pessoal | 9 566 659]",
    "destino": "expense",
    "amountNative": -9.566659
   },
@@ -1282,11 +1261,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 1.669615,
    "cat": "wages_squad",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Rescisiones de contratos laborales (deportivos) dentro de Gastos com pessoal; va con el sueldo. [relatorio-contas-2016-17.md L2486: Rescisão de contratos | 1 669 615]",
    "destino": "expense",
    "amountNative": -1.669615
   },
@@ -1327,12 +1306,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.894776,
-   "cat": "wages_squad",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Rubro residual de personal; precedente de Guido en Nacional ('Outros Custos com Pessoal - Outros') a admin_general_expense. [relatorio-contas-2016-17.md L2489: Outros gastos com pessoal | 894 776]",
    "destino": "expense",
    "amountNative": -0.894776
   },
@@ -1388,13 +1367,11 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.858,
-   "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía player_sales, del otro lado que la fila: se propone la genérica de su lado",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía player_sales)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "expense",
    "amountNative": -0.858
   },
@@ -1406,11 +1383,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.117737,
    "cat": "player_amortisation",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Derechos de formación pagados por jugadores incorporados: costo de adquisición de jugadores. [relatorio-contas-2016-17.md L2715: Direitos de formação | 117 737]",
    "destino": "expense",
    "amountNative": -0.117737
   },
@@ -1422,11 +1399,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.134686,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Multas deportivas, residual. [relatorio-contas-2016-17.md L2716: Penalidades Desportivas | 134 686]",
    "destino": "expense",
    "amountNative": -0.134686
   },
@@ -1452,12 +1429,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 3.912258,
-   "cat": "depreciation",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, revisado contra el documento): fila del estado 3.912.258, de los cuales 3.515.503 son amortización de pases (L482, L1070); precedente Moreirense 2022 y Nacional 2024",
    "destino": "expense",
    "amountNative": -3.912258
   },
@@ -1588,8 +1565,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 4,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 13,
   "lineasGasto": 41,
   "metaFilas": 3,

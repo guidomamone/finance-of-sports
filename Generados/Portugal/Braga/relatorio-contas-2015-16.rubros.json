@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Braga/relatorio-contas-2015-16.md",
   "pdf": "Clubes/Portugal/Braga/relatorio-contas-2015-16.pdf",
-  "club": "braga",
+  "club": "braga-pt",
   "year": 2016,
-  "generatedAt": "2026-10-15T21:55:00.427Z",
+  "generatedAt": "2026-10-15T23:54:38.351Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.765635
       ],
-      "glosa": "Ingresos de taquilla"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "Direitos de transmissões",
@@ -94,7 +94,7 @@
       "values": [
         8.976466
       ],
-      "glosa": "Ingresos / (gastos) por traspaso de jugadores"
+      "glosa": "Ingresos / (gastos) por traspasos de futbolistas"
     },
     {
       "label": "Empréstimo de atletas",
@@ -104,7 +104,7 @@
       "values": [
         3.101574
       ],
-      "glosa": "Cesión de jugadores"
+      "glosa": "Cesión de futbolistas"
     },
     {
       "label": "Indemnizações",
@@ -154,7 +154,7 @@
       "values": [
         0.230072
       ],
-      "glosa": "Gastos de competición"
+      "glosa": "Gastos de competiciones"
     },
     {
       "label": "Vigilância e segurança",
@@ -194,7 +194,7 @@
       "values": [
         0.060385
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Outros serviços especializados",
@@ -214,7 +214,7 @@
       "values": [
         0.034984
       ],
-      "glosa": "Herramientas y útiles de rápido desgaste"
+      "glosa": "Herramientas y utensilios de desgaste rápido"
     },
     {
       "label": "Livros e documentação técnica",
@@ -304,7 +304,7 @@
       "values": [
         0.049562
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Comunicação",
@@ -334,7 +334,7 @@
       "values": [
         0.231504
       ],
-      "glosa": "Gastos contenciosos y notariales"
+      "glosa": "Gastos jurídicos y notariales"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -344,7 +344,7 @@
       "values": [
         0.040567
       ],
-      "glosa": "Limpieza, higiene y mantenimiento"
+      "glosa": "Limpieza, higiene y confort"
     },
     {
       "label": "Pessoal do SCB ao serviço da SAD",
@@ -444,7 +444,7 @@
       "values": [
         0.05
       ],
-      "glosa": "Cesión de jugadores"
+      "glosa": "Cesión de futbolistas"
     },
     {
       "label": "Direitos de formação",
@@ -514,7 +514,7 @@
       "values": [
         0.114698
       ],
-      "glosa": "Instalaciones técnicas y maquinaria"
+      "glosa": "Equipamiento básico"
     },
     {
       "label": "Equipamento de transporte",
@@ -544,7 +544,7 @@
       "values": [
         0.000007
       ],
-      "glosa": "Otro inmovilizado material"
+      "glosa": "Otros activos fijos tangibles"
     }
   ]
 }

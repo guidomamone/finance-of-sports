@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Braga/relatorio-contas-2016-17.md",
   "pdf": "Clubes/Portugal/Braga/relatorio-contas-2016-17.pdf",
-  "club": "braga",
+  "club": "braga-pt",
   "year": 2017,
-  "generatedAt": "2026-10-15T21:55:00.431Z",
+  "generatedAt": "2026-10-15T23:54:38.372Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         0.343993
       ],
-      "glosa": "Venta de mercancías (merchandising)"
+      "glosa": "Venta de mercaderías (merchandising)"
     },
     {
       "label": "Receita de bilheteira",
@@ -24,7 +24,7 @@
       "values": [
         0.686021
       ],
-      "glosa": "Ingresos por taquilla"
+      "glosa": "Ingresos de taquilla"
     },
     {
       "label": "Direitos de transmissões",
@@ -144,7 +144,7 @@
       "values": [
         0.142371
       ],
-      "glosa": "Coste de las mercancías vendidas"
+      "glosa": "Coste de las mercaderías vendidas"
     },
     {
       "label": "Trabalhos especializados",
@@ -364,7 +364,7 @@
       "values": [
         0.2827
       ],
-      "glosa": "Contencioso y notaría"
+      "glosa": "Gastos contenciosos y notariales"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -424,7 +424,7 @@
       "values": [
         0.570589
       ],
-      "glosa": "Primas de rendimiento"
+      "glosa": "Primas por rendimiento"
     },
     {
       "label": "Rescisão de contratos",
@@ -444,7 +444,7 @@
       "values": [
         0.825513
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales"
     },
     {
       "label": "Seguro de acidentes de trabalho",
@@ -474,7 +474,7 @@
       "values": [
         0.126223
       ],
-      "glosa": "Deterioro de créditos a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Impostos",
@@ -544,7 +544,7 @@
       "values": [
         3.912258
       ],
-      "glosa": "Gastos/reversiones por depreciación y amortización"
+      "glosa": "Gastos/reversiones por amortización y depreciación"
     }
   ]
 }

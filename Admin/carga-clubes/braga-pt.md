@@ -138,6 +138,89 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Braga".
 ```
 
+## 2016
+
+### Ingresos
+
+```text
+2016: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Braga/relatorio-contas-2015-16.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Braga/relatorio-contas-2015-16.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Venda de mercadorias (merchandising) | pág. 72, Jev 1 |
+| 2 | Receita de bilheteira | pág. 72, precedente |
+| 3 | Direitos de transmissões | pág. 72, precedente |
+| 4 | Publicidade / Patrocínios | pág. 72, precedente |
+| 5 | Pacotes corporate | pág. 72, precedente |
+| 6 | Outros | pág. 72, precedente |
+| 7 | Participação em competições europeias | pág. 72, precedente |
+| 8 | Participação em competições nacionais | pág. 72, precedente |
+| 9 | Rend. / (gastos) com trans. passes atletas | pág. 84, Jev 1 |
+| 10 | Empréstimo de atletas | pág. 84, precedente |
+| 11 | Indemnizações | pág. 84, precedente |
+| 12 | Outros | pág. 84, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas | pág. 45, precedente |
+| 2 | Trabalhos especializados | pág. 85, precedente |
+| 3 | Despesas com provas | pág. 85, precedente |
+| 4 | Vigilância e segurança | pág. 85, precedente |
+| 5 | Honorários | pág. 85, precedente |
+| 6 | Comissões | pág. 85, precedente |
+| 7 | Conservação e reparação | pág. 85, precedente |
+| 8 | Outros serviços especializados | pág. 85, Jev 0.9 |
+| 9 | Ferramentas e utensílios de desgaste rápido | pág. 85, precedente |
+| 10 | Livros e documentação técnica | pág. 85, Jev 1 |
+| 11 | Material de escritório | pág. 85, Jev 1 |
+| 12 | Equipamento e material desportivo | pág. 85, precedente |
+| 13 | Outros | pág. 85, precedente |
+| 14 | Electricidade | pág. 85, precedente |
+| 15 | Combustíveis | pág. 85, precedente |
+| 16 | Água | pág. 85, precedente |
+| 17 | Deslocações e estadas | pág. 85, precedente |
+| 18 | Rendas e alugueres | pág. 85, precedente |
+| 19 | Comunicação | pág. 85, precedente |
+| 20 | Seguros | pág. 85, precedente |
+| 21 | Contencioso e notariado | pág. 85, precedente |
+| 22 | Limpeza, higiene e conforto | pág. 85, precedente |
+| 23 | Pessoal do SCB ao serviço da SAD | pág. 85, precedente |
+| 24 | Remunerações do pessoal | pág. 82, Claude 0.85 |
+| 25 | Prémios de desempenho | pág. 82, precedente |
+| 26 | Encargos sobre Remunerações | pág. 82, Jev 0.96 |
+| 27 | Seguro Ac. Trab. e Doenças Profi. | pág. 82, Claude 0.92 |
+| 28 | Senhas de presença CA | pág. 82, Jev 0.97 |
+| 29 | Outros gastos com pessoal | pág. 82, precedente |
+| 30 | Impostos | pág. 86, precedente |
+| 31 | Gastos e perdas investim. não financeiros | pág. 86, Jev 1 |
+| 32 | Empréstimo de atletas | pág. 86, precedente |
+| 33 | Direitos de formação | pág. 86, precedente |
+| 34 | Penalidades Desportivas | pág. 86, precedente |
+| 35 | Outros | pág. 86, precedente |
+| 36 | Valor do plantel | pág. 66, Claude 0.93 |
+| 37 | Programas de computador | pág. 66, Jev 0.98 |
+| 38 | Edifícios e outras construções | pág. 70, precedente |
+| 39 | Equipamento básico | pág. 70, precedente |
+| 40 | Equipamento de transporte | pág. 70, precedente |
+| 41 | Equipamento administrativo | pág. 70, precedente |
+| 42 | Outros ativos fixos tangíveis | pág. 70, Jev 0.99 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2015–16 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Braga".
+```
+
 ## Fuentes
 
 ### braga-pt-relatorio-contas-2024-25
@@ -146,4 +229,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Braga/relatorio-contas-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### braga-pt-relatorio-contas-2015-16
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Braga/relatorio-contas-2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

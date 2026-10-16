@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Braga/relatorio-contas-2023-24.md",
   "pdf": "Clubes/Portugal/Braga/relatorio-contas-2023-24.pdf",
-  "club": "braga",
+  "club": "braga-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T21:55:00.502Z",
+  "generatedAt": "2026-10-15T23:54:38.438Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         3.998207
       ],
-      "glosa": "Publicidad / Patrocinios"
+      "glosa": "Publicidad y patrocinios"
     },
     {
       "label": "Outros",
@@ -104,7 +104,7 @@
       "values": [
         32.560592
       ],
-      "glosa": "Ingresos por enajenación de derechos de jugadores"
+      "glosa": "Ingresos por enajenación de derechos de deportistas"
     },
     {
       "label": "Outros ganhos com operações de atletas",
@@ -114,7 +114,7 @@
       "values": [
         1.040694
       ],
-      "glosa": "Otras ganancias por operaciones con jugadores"
+      "glosa": "Otras ganancias por operaciones con deportistas"
     },
     {
       "label": "Empréstimo de atletas",
@@ -124,7 +124,7 @@
       "values": [
         1.1
       ],
-      "glosa": "Cesión de jugadores"
+      "glosa": "Cesión temporal de deportistas"
     },
     {
       "label": "Cedência de atletas a seleções nacionais",
@@ -134,7 +134,7 @@
       "values": [
         0.040249
       ],
-      "glosa": "Cesión de jugadores a selecciones nacionales"
+      "glosa": "Cesión de deportistas a selecciones nacionales"
     },
     {
       "label": "Mecanismo de solidariedade e direitos de formação",
@@ -194,7 +194,7 @@
       "values": [
         0.752814
       ],
-      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
+      "glosa": "Consumo de mercaderías y materias consumibles"
     },
     {
       "label": "Trabalhos especializados",
@@ -204,7 +204,7 @@
       "values": [
         3.90887
       ],
-      "glosa": "Trabajos especializados"
+      "glosa": "Servicios de profesionales independientes y trabajos especializados"
     },
     {
       "label": "Gastos com aquisição de atletas",
@@ -214,7 +214,7 @@
       "values": [
         3.819472
       ],
-      "glosa": "Gastos por adquisición de jugadores"
+      "glosa": "Gastos por adquisición de deportistas"
     },
     {
       "label": "Despesas com provas",
@@ -224,7 +224,7 @@
       "values": [
         0.858614
       ],
-      "glosa": "Gastos de competiciones"
+      "glosa": "Gastos por competiciones y partidos"
     },
     {
       "label": "Inscrições e registos",
@@ -264,7 +264,7 @@
       "values": [
         0.124506
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Serviços bancários",
@@ -364,7 +364,7 @@
       "values": [
         0.522019
       ],
-      "glosa": "Corporativo (catering)"
+      "glosa": "Servicios corporativos (catering)"
     },
     {
       "label": "Rendas / Direitos Exploração",
@@ -374,7 +374,7 @@
       "values": [
         1.128561
       ],
-      "glosa": "Alquileres / Derechos de explotación"
+      "glosa": "Arrendamientos y derechos de explotación"
     },
     {
       "label": "Comunicação",
@@ -384,7 +384,7 @@
       "values": [
         0.220878
       ],
-      "glosa": "Comunicación"
+      "glosa": "Comunicaciones"
     },
     {
       "label": "Royalties",
@@ -394,7 +394,7 @@
       "values": [
         0.24
       ],
-      "glosa": "Royalties"
+      "glosa": "Cánones y royalties"
     },
     {
       "label": "Seguros",
@@ -404,7 +404,7 @@
       "values": [
         0.089685
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Contencioso e notariado",
@@ -414,7 +414,7 @@
       "values": [
         0.213587
       ],
-      "glosa": "Servicios jurídicos y notariales"
+      "glosa": "Servicios contenciosos y notariales"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -424,7 +424,7 @@
       "values": [
         0.210045
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Pessoal do SCB ao serviço da SAD",
@@ -444,7 +444,7 @@
       "values": [
         0.0125
       ],
-      "glosa": "Otros servicios diversos"
+      "glosa": "Otros servicios exteriores diversos"
     },
     {
       "label": "Remuneração da Comissão Executiva",
@@ -474,7 +474,7 @@
       "values": [
         16.376346
       ],
-      "glosa": "Jugadores"
+      "glosa": "Deportistas"
     },
     {
       "label": "Treinadores",
@@ -534,7 +534,7 @@
       "values": [
         2.84622
       ],
-      "glosa": "Cargas sobre remuneraciones"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho",
@@ -564,7 +564,7 @@
       "values": [
         0
       ],
-      "glosa": "Deterioro de cuentas por cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
     },
     {
       "label": "Imparidade de inventários (perdas/reversões)",
@@ -604,7 +604,7 @@
       "values": [
         1.134461
       ],
-      "glosa": "Bajas de activos"
+      "glosa": "Bajas de activo"
     },
     {
       "label": "Empréstimo de atletas",
@@ -614,7 +614,7 @@
       "values": [
         0.02
       ],
-      "glosa": "Cesión de jugadores"
+      "glosa": "Cesión temporal de deportistas"
     },
     {
       "label": "Direitos de formação e mecanismo de solidariedade",
@@ -634,7 +634,7 @@
       "values": [
         0.294375
       ],
-      "glosa": "Gastos por transacciones de jugadores"
+      "glosa": "Gastos por transacciones de deportistas"
     },
     {
       "label": "Multas / Penalidades desportivas",
@@ -644,7 +644,7 @@
       "values": [
         0.232578
       ],
-      "glosa": "Multas / Sanciones deportivas"
+      "glosa": "Multas y sanciones deportivas"
     },
     {
       "label": "Outros",
@@ -694,7 +694,7 @@
       "values": [
         0.045568
       ],
-      "glosa": "Equipamiento de oficina"
+      "glosa": "Mobiliario y equipos de oficina"
     },
     {
       "label": "Plantel",
@@ -724,7 +724,7 @@
       "values": [
         0.081287
       ],
-      "glosa": "Otros activos intangibles"
+      "glosa": "Otro inmovilizado intangible"
     }
   ]
 }
