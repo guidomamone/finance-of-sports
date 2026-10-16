@@ -1584,7 +1584,13 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (escribirRubros) {
     const club = clubId || pdf.split('/')[2].toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     const rubros = out.lineas.filter((l) => l.origen !== 'redondeo').map((l) => ({ label: l.etiqueta, lado: l.lado === 'ingreso' ? 'revenue' : 'expense', page: l.pagina, section: l.origen, values: [l.M] }));
-    writeFileSync(resolve(ROOT, derivado(md, '.rubros.json')), JSON.stringify({ md, pdf, club, year, generatedAt: new Date().toISOString(), origen: 'verificar.mjs (proceso nuevo, Versión 324)', rubros }, null, 1));
+    // (to-do 237 an) Si el .rubros.json que ya está tiene EXACTAMENTE lo mismo (md, pdf, club, año y cada rubro) salvo la fecha y las glosas,
+    // no se reescribe: reescribirlo borraba las glosas y glosar-rubros.mjs volvía a pagar a Gemini por cada documento de cada corrida del lote
+    // (~19 s por documento), aunque no hubiera cambiado nada. Jev y Claude ya no se rehacían (huellas.mjs excluye la glosa y la fecha).
+    const pR = resolve(ROOT, derivado(md, '.rubros.json'));
+    const sinGlosa = (arr) => JSON.stringify((arr || []).map(({ glosa, ...r }) => r));
+    let igual = false; try { const v = JSON.parse(readFileSync(pR, 'utf8')); igual = v.md === md && v.pdf === pdf && v.club === club && v.year === year && sinGlosa(v.rubros) === sinGlosa(rubros); } catch { /* no hay */ }
+    if (!igual) writeFileSync(pR, JSON.stringify({ md, pdf, club, year, generatedAt: new Date().toISOString(), origen: 'verificar.mjs (proceso nuevo, Versión 324)', rubros }, null, 1));
     if (out.estado === 'ok') avisarRegistro(md, rubros.length, registro, out);
   }
   return out;
