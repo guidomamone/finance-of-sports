@@ -9,7 +9,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'famalicao-pt': { 2022: 'pt-primeiraliga' },
   'tondela-pt': { 2021: 'pt-primeiraliga' },
   'estreladaamadora-pt': { 2023: 'pt-ligaportugal2' },
-  'sportingcp-pt': { 2025: 'pt-primeiraliga', 2012: 'pt-primeiraliga', 2013: 'pt-primeiraliga', 2014: 'pt-primeiraliga', 2015: 'pt-primeiraliga', 2016: 'pt-primeiraliga', 2019: 'pt-primeiraliga', 2022: 'pt-primeiraliga', 2023: 'pt-primeiraliga' },
+  'sportingcp-pt': { 2025: 'pt-primeiraliga', 2012: 'pt-primeiraliga', 2013: 'pt-primeiraliga', 2014: 'pt-primeiraliga', 2015: 'pt-primeiraliga', 2016: 'pt-primeiraliga', 2019: 'pt-primeiraliga', 2022: 'pt-primeiraliga', 2023: 'pt-primeiraliga', 2024: 'pt-primeiraliga' },
   'porto-pt': { 2025: 'pt-primeiraliga' },
   'braga-pt': { 2025: 'pt-primeiraliga', 2016: 'pt-primeiraliga', 2017: 'pt-primeiraliga', 2022: 'pt-primeiraliga', 2023: 'pt-primeiraliga' },
   'benfica-pt': { 2019: 'pt-primeiraliga' },

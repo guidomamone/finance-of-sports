@@ -137,6 +137,112 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Sporting CP/relatorio-contas-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Sporting CP/relatorio-contas-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Loja Verde | pág. 120, Jev 0.97 |
+| 2 | Distribuição/Retalho | pág. 120, Jev 0.97 |
+| 3 | Loja Verde Online | pág. 120, Jev 0.97 |
+| 4 | Direitos televisivos | pág. 120, Jev 1 |
+| 5 | Market Pool da Liga Europa | pág. 120, precedente |
+| 6 | Outros direitos televisivos | pág. 120, Jev 0.99 |
+| 7 | Bilhetes de época | pág. 121, Jev 1 |
+| 8 | Camarotes | pág. 121, precedente |
+| 9 | Bilheteira Liga Nacional | pág. 121, Jev 1 |
+| 10 | Business Seats | pág. 121, precedente |
+| 11 | Bilheteira Liga Europa | pág. 121, Jev 1 |
+| 12 | Bilheteira Taça de Portugal | pág. 121, Jev 1 |
+| 13 | Lugares de Leão e VIP | pág. 121, precedente |
+| 14 | Bilheteira Jogos particulares | pág. 121, Jev 1 |
+| 15 | Bilheteira Taça da Liga | pág. 121, Jev 0.96 |
+| 16 | Outros | pág. 121, precedente |
+| 17 | Patrocínios e Publicidade | pág. 120, Jev 1 |
+| 18 | Outros | pág. 120, precedente |
+| 19 | Prémio de performance pela participação na Liga Europa | pág. 121, Jev 1 |
+| 20 | Prémio de performance na fase de Grupos da Liga Europa | pág. 121, Jev 1 |
+| 21 | Passagem ao play-off da Liga Europa | pág. 121, Jev 0.99 |
+| 22 | Outros prémios | pág. 121, Jev 0.99 |
+| 23 | Participação nas Competições Nacionais | pág. 121, Jev 1 |
+| 24 | Participação em Competições Particulares | pág. 121, Jev 0.94 |
+| 25 | Cedência e rendimentos com jogadores | pág. 121, Jev 0.97 |
+| 26 | Recuperação de custos | pág. 121, Jev 1 |
+| 27 | Subsidios à exploração | pág. 121, Jev 0.97 |
+| 28 | Outros | pág. 121, precedente |
+| 29 | Venda de direitos desportivos | pág. 126, Jev 1 |
+| 30 | Mecanismo de solidariedade/Compensação por formação | pág. 126, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas | pág. 97, precedente |
+| 2 | Refeições | pág. 123, precedente |
+| 3 | Assistencia aos jogos | pág. 123, Jev 0.91 |
+| 4 | Vigilância | pág. 123, precedente |
+| 5 | Manutenções | pág. 123, Jev 0.9 |
+| 6 | Electricidade | pág. 123, Jev 0.99 |
+| 7 | Limpeza | pág. 123, Jev 0.99 |
+| 8 | Patrocinios e publicidade | pág. 123, Jev 0.91 |
+| 9 | Outros | pág. 123, Jev 0.9 |
+| 10 | Organização, deslocações e estadias de jogos | pág. 122, Jev 1 |
+| 11 | Trabalhos especializados | pág. 122, Jev 0.99 |
+| 12 | Royalties | pág. 122, precedente |
+| 13 | Honorários | pág. 122, Jev 1 |
+| 14 | Publicidade e Propaganda | pág. 122, Jev 1 |
+| 15 | Aquisição de jogadores | pág. 123, Jev 0.9 |
+| 16 | Cedência de jogadores | pág. 123, Jev 0.98 |
+| 17 | Outras comissões | pág. 123, Jev 0.99 |
+| 18 | Rendas e alugueres | pág. 122, precedente |
+| 19 | Comunicações | pág. 122, Jev 0.99 |
+| 20 | Seguros | pág. 122, Claude 0.85 |
+| 21 | Conservação e reparação | pág. 122, Jev 0.99 |
+| 22 | Combustíveis | pág. 122, Jev 0.99 |
+| 23 | Equipamentos Desportivos | pág. 122, precedente |
+| 24 | Outros | pág. 122, Jev 0.9 |
+| 25 | Remuneração dos órgãos sociais | pág. 124, Jev 1 |
+| 26 | Remuneração do pessoal | pág. 124, precedente |
+| 27 | Encargos com remunerações | pág. 124, Jev 0.97 |
+| 28 | Seguros | pág. 124, Claude 0.85 |
+| 29 | Prémios de desempenho e de performance desportiva | pág. 124, Jev 1 |
+| 30 | Indemnizações | pág. 124, precedente |
+| 31 | Outros | pág. 124, Jev 0.9 |
+| 32 | Depreciações e amortizações excluindo plantel | pág. 97, Jev 0.98 |
+| 33 | Imparidade de clientes | pág. 125, Jev 0.99 |
+| 34 | Provisões para outros riscos e encargos | pág. 125, precedente |
+| 35 | Quotizações | pág. 125, Jev 0.92 |
+| 36 | Multas e penalidades | pág. 125, Jev 0.99 |
+| 37 | Impostos | pág. 125, Claude 0.88 |
+| 38 | Cedência de jogadores | pág. 125, Jev 0.98 |
+| 39 | Prospecção de mercado | pág. 125, Jev 0.96 |
+| 40 | Juros de mora | pág. 125, Jev 1 |
+| 41 | Outros | pág. 125, Jev 0.9 |
+| 42 | Amortizações do exercício | pág. 125, Claude 0.95 |
+| 43 | Perdas por imparidade | pág. 125, Claude 0.93 |
+| 44 | Percentagem dos direitos económicos/mais-valias | pág. 126, precedente |
+| 45 | Comissões | pág. 126, precedente |
+| 46 | Mecanismo de solidariedade/Compensação por formação | pág. 126, precedente |
+| 47 | Outros/Abates | pág. 126, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2023–24 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
+```
+
 ## 2023
 
 ### Ingresos
@@ -877,4 +983,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sportingcp-pt-relatorio-contas-2023-24
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
