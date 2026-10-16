@@ -36,7 +36,7 @@ import { spawnSync } from 'node:child_process';
 import { localizar } from './localizar.mjs';
 import { validar } from './validar-bloques.mjs';
 import { extraer, estimarExtraerSinBloques } from './extraer.mjs';
-import { pendientes } from './cola.mjs';
+import { pendientes, respuestaPosterior } from './cola.mjs';
 import { derivado } from './rutas.mjs';
 import { etapaDe } from './etapa-doc.mjs';
 import { paginasARearmar, rearmar } from './texto-propio-a-md.mjs';
@@ -228,6 +228,15 @@ for (const pdf of docs) {
   // data/it/juventus-it-data.js y `cargado: false` en el registro; un --reintentar lo volvía a pagar). Se mira también el sitio, por el clubId y
   // el año de la última propuesta de carga del documento.
   const cargado = e.cargado || (() => { const c = leerDerivado(e, '.carga.json'); return !!(c?.clubId && c?.year && sitio.generic?.[c.clubId]?.fiscalYearMeta?.[c.year]); })();
+  // (to-do 237 af y s) RESPUESTA POSTERIOR A LA VERIFICACIÓN: si la cola tiene respuestas a casos de la etapa 6 de este documento más nuevas
+  // que su .verificacion.json, se vuelve a verificar (gratis) ANTES de decidir el reintento y el rearmado, que se deciden con esa verificación.
+  // Sin esto, un documento con la cola ya contestada seguía con la verificación vieja: no pasaba a "extraído", pedía rearmar con el texto
+  // propio (paginasARearmar) o un --reintentar pagaba localizar y extraer de nuevo y abría preguntas nuevas (lote 80: Sporting 2007-08 y
+  // Benfica 2019-20; lote 79). Compuerta: solo si la respuesta es posterior; después de verificar, ya no lo es (no se repite).
+  if (!cargado && e.md && respuestaPosterior(pdf, 'verificar', leerDerivado(e, '.verificacion.json')?.generado || null) && leerDerivado(e, '.verificacion.json') && leerDerivado(e, '.filas.json')) {
+    const [[, VQ]] = verificarLista([pdf], { registro, sitio });
+    console.log(`  ${pdf}: la cola tiene respuestas posteriores a su verificación: etapa 6 de nuevo, gratis -> ${VQ?.estado || VQ?.error || '?'}`);
+  }
   const reintento = !REINTENTAR ? null : cargado ? (cargaFresca && categoriasPendientes(e).length ? categoriasPendientes(e) : null) : verifDe(e)?.reintentar || null;
   if (REINTENTAR && cargado && !reintento) { estado[pdf] = 'ya cargado, sin categorías en 0 que reintentar'; console.log(`  ${pdf}: ya cargado (no se reintenta por desgloses)`); continue; }
   const sinEstadoAntes = !!leerDerivado(e, '.ubicacion.json')?.sin_estado; // candidato al escalón 1 de la etapa 2 (re-transcribir)

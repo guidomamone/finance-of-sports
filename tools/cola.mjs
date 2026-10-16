@@ -148,6 +148,13 @@ export function respuestasDonde(etapa, motivo, filtro = () => true) {
   return out;
 }
 
+// (to-do 237 af) ¿Tiene este documento alguna respuesta (de Guido o de un subagente) a un caso de la etapa `etapa` posterior a `desde` (ISO)?
+// La usa lote.mjs para volver a verificar un documento cuya verificación guardada es anterior a las respuestas de su cola.
+export function respuestaPosterior(pdf, etapa, desde) {
+  const L = leer(); const t = Date.parse(desde || 0) || 0;
+  for (const [id, r] of L.resp) { const c = L.casos.get(id); if (c && c.pdf === pdf && c.etapa === etapa && (Date.parse(r.ts || 0) || 0) > t) return true; }
+  return false;
+}
 export function pendientes() { const L = leer(); return [...L.casos.values()].filter((c) => pendiente(c, L)); }
 // OBSOLETOS (Versión 327). Un caso que la última corrida de su etapa YA NO levanta (la duda desapareció porque extraer se rehízo, la nota
 // ahora cierra, el total ahora cuadra) se cierra solo con decision 'obsoleto', para que la cola muestre únicamente lo vigente. Lo llama la
