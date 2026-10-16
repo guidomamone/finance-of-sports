@@ -1,17 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.pdf",
- "generado": "2026-10-16T03:41:07.041Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros\" -> other_expenses 0; \"Outros\" -> other_expenses 0; \"Outros\" -> other_expenses 0; \"Outros\" -> other_expenses 0"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-16T03:51:53.313Z",
+ "frena": [],
  "avisos": [
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-16, Claude 2026-10-16 (lote 82): la nota 25 Outros rendimentos imprime 'Direitos Televisivos' 0 en 2022-2023 (600.000 en 2021-2022): sin ingresos de TV ese año)",
+  "ingresos: ningún total impreso igual a la suma de las líneas (0.736676); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -71,16 +64,6 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Ganhos em perdão de dívida",
-    "normalizedCategory": "other_income",
-    "amountNative": 2.710737,
-    "disclosureLevel": "aggregated",
-    "_pag": 39,
-    "_escalon": 1,
-    "_conf": 1,
-    "_fuenteCat": "categorias.json"
-   },
-   {
     "rawLabel": "Outros",
     "normalizedCategory": "other_income",
     "amountNative": 0.538593,
@@ -92,6 +75,16 @@
    }
   ],
   "expenseLines": [
+   {
+    "rawLabel": "Ganhos em perdão de dívida",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": 2.710737,
+    "disclosureLevel": "aggregated",
+    "_pag": 39,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Claude 2026-10-16 (lote 82): condonación de deuda (corte del 80% del plan de recuperación aprobado), ingreso extraordinario: exceptional_items según CONVENCIONES-DATOS (condonaciones de Racing). Ajuste categoria para mudarla sin cambiar su efecto (to-do 237 f)"
+   },
    {
     "rawLabel": "Trabalhos especializados",
     "normalizedCategory": "admin_general_expense",
@@ -158,9 +151,9 @@
     "amountNative": -0.005429,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Fornecimentos e serviços externos\""
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Ferramentas e utensílios de desgaste rápido",
@@ -258,9 +251,9 @@
     "amountNative": -0.021691,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Fornecimentos e serviços externos\""
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Salários",
@@ -288,9 +281,9 @@
     "amountNative": -0.076037,
     "disclosureLevel": "aggregated",
     "_pag": 35,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Gastos com pessoal\""
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Imparidades (Perdas/Reversões)",
@@ -338,9 +331,9 @@
     "amountNative": -0.002364,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Outros gastos\""
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos/reversões de depreciação e de amortização",
@@ -375,7 +368,7 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 3.447413,
+   "officialTotalRevenue": 0.736676,
    "officialTotalExpenses": 1.693315,
    "officialPAT": 1.601271
   },
@@ -403,7 +396,29 @@
  },
  "clubId": "academica-pt",
  "year": 2023,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "Claude 2026-10-16 (lote 82): la nota 25 Outros rendimentos imprime 'Direitos Televisivos' 0 en 2022-2023 (600.000 en 2021-2022): sin ingresos de TV ese año",
+   "evidencia": "10-RC-SDUQ-2022-2023.md L2240-2247",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.pdf",
+   "campo": "categoria",
+   "valor": "exceptional_items",
+   "linea": null,
+   "etiqueta": "Ganhos em perdão de dívida",
+   "motivo": "Claude 2026-10-16 (lote 82): condonación de deuda (corte del 80% del plan de recuperación aprobado), ingreso extraordinario: exceptional_items según CONVENCIONES-DATOS (condonaciones de Racing). Ajuste categoria para mudarla sin cambiar su efecto (to-do 237 f)",
+   "evidencia": "10-RC-SDUQ-2022-2023.md L2245, L2248",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
   "filas": 35,
   "notasUsadas": [],
@@ -489,15 +504,16 @@
    "label": "Ganhos em perdão de dívida",
    "page": 39,
    "native": 2.710737,
-   "ladoDoc": "revenue",
+   "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
-   "signoFijo": 2.710737,
-   "cat": "other_income",
+   "signoFijo": -2.710737,
+   "cat": "exceptional_items",
    "conf": 1,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-16): Claude 2026-10-16 (lote 82): condonación de deuda (corte del 80% del plan de recuperación aprobado), ingreso extraordinario: exceptional_items según CONVENCIONES-DATOS (condonaciones de Racing). Ajuste categoria para mudarla sin cambiar su efecto (to-do 237 f)",
    "enLista": true,
-   "destino": "revenue",
+   "ladoRechazado": false,
+   "destino": "expense",
    "amountNative": 2.710737
   },
   {
@@ -613,11 +629,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.005429,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Fornecimentos e serviços externos\"",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16: residual de la nota 23 Fornecimentos e serviços externos (columna 2022-2023, la segunda); igual que Académica 2021-22 (8.642 en other_expenses) [10-RC-SDUQ-2022-2023.md L2103]",
    "destino": "expense",
    "amountNative": -0.005429
   },
@@ -764,11 +780,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.021691,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Fornecimentos e serviços externos\"",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16: residual de la nota 23 Fornecimentos e serviços externos (columna 2022-2023, la segunda); igual que Académica 2021-22 (8.642 en other_expenses) [10-RC-SDUQ-2022-2023.md L2103]",
    "destino": "expense",
    "amountNative": -0.021691
   },
@@ -812,11 +828,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
    "signoFijo": 0.076037,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Gastos com pessoal\"",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16: residual de la nota 21 Gastos com o pessoal (columna 2022-2023); igual que Académica 2021-22 (378.440 en other_expenses) [10-RC-SDUQ-2022-2023.md L2061]",
    "destino": "expense",
    "amountNative": -0.076037
   },
@@ -889,11 +905,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.002364,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Outros gastos\"",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16: residual de la nota 24 Outros gastos (columna 2022-2023) [10-RC-SDUQ-2022-2023.md L2232]",
    "destino": "expense",
    "amountNative": -0.002364
   },
@@ -935,17 +951,11 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
-   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Gastos com pessoal\")": "gastos sin signo (se invierten)",
    "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
@@ -955,14 +965,14 @@
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 3.447413,
+  "revSum": 0.736676,
   "expSum": -1.693315,
-  "officialTotalRevenue": 3.447413,
+  "officialTotalRevenue": 0.736676,
   "officialTotalExpenses": 1.693315,
   "officialPAT": 1.601271,
   "verificacion": {
    "pat": "impreso",
-   "ingresos": "impreso",
+   "ingresos": "por-resultado",
    "gastos": "impreso"
   },
   "patImpreso": {
@@ -970,11 +980,6 @@
    "pag": null,
    "M": 1.601271,
    "signos": "signos de la verificación; financiero/impuesto como su tabla"
-  },
-  "revImpreso": {
-   "label": "total de ingresos (verificado)",
-   "pag": null,
-   "M": 3.447413
   },
   "expImpreso": {
    "label": "total de gastos (verificado)",
@@ -1030,10 +1035,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
-  "lineasIngreso": 7,
-  "lineasGasto": 26,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 6,
+  "lineasGasto": 27,
   "metaFilas": 2,
   "excluidas": 0
  }

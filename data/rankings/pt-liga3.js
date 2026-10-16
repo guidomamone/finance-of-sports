@@ -23,6 +23,9 @@ window.RANKINGS["pt-liga3"] = {
   2023: {
     leagueSize: null,
     clubs: [
+      { id:"academica-pt", revenue:0.8, reportType:"official_balance_sheet",
+        sourceId:"academica-pt-10-rc-sduq-2022-2023",
+        mix:[["Comercial / Sponsors",0.099],["Estadio",0.013],["Venta de Jugadores",0.039],["Otros ingresos",0.65]] },
       { id:"uniaodeleiria-pt", revenue:0.667, reportType:"official_balance_sheet",
         sourceId:"uniaodeleiria-pt-relatorio-contas-udl-sad-2022-2023",
         mix:[["Comercial / Sponsors",0.045],["Fútbol profesional (sin desglosar por la fuente)",0.604],["Otros ingresos",0.018]] },

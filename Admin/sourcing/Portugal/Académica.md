@@ -17,3 +17,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Académica/RC-SDUQ-2023-2024.pdf` (sourceId `academica-pt-rc-sduq-2023-2024`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Académica/9-RC-SDUQ-2021-2022.pdf` (sourceId `academica-pt-9-rc-sduq-2021-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.pdf` (sourceId `academica-pt-10-rc-sduq-2022-2023`).

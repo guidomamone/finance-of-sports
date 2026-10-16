@@ -100,6 +100,70 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-liga3, verificado contra roster cacheado de "2023–24 Liga 3 (Portugal)" (tools/club-league-reference/pt.json), coincidencia exacta "Académica".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Académica/10-RC-SDUQ-2022-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bilhetes de logo | pág. 37, precedente |
+| 2 | Prestações de Serviços | pág. 37, precedente |
+| 3 | Subsídios à exploração | pág. 11, precedente |
+| 4 | Publicidade | pág. 39, precedente |
+| 5 | Alienações e Direitos desportivos | pág. 39, precedente |
+| 6 | Outros | pág. 39, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ganhos em perdão de dívida | pág. 39, precedente |
+| 2 | Trabalhos especializados | pág. 37, precedente |
+| 3 | Publicidade e propaganda | pág. 37, precedente |
+| 4 | Vigilância e segurança | pág. 37, precedente |
+| 5 | Honorários | pág. 37, precedente |
+| 6 | Comissões | pág. 37, precedente |
+| 7 | Conservação e reparação | pág. 37, precedente |
+| 8 | Outros | pág. 37, precedente |
+| 9 | Ferramentas e utensílios de desgaste rápido | pág. 37, precedente |
+| 10 | Material de escritório | pág. 37, precedente |
+| 11 | Combustíveis | pág. 37, Jev 1 |
+| 12 | Deslocações e estadas | pág. 37, precedente |
+| 13 | Rendas e alugueres | pág. 37, precedente |
+| 14 | Comunicação | pág. 37, precedente |
+| 15 | Seguros | pág. 37, precedente |
+| 16 | Contencioso e notariado | pág. 37, Jev 1 |
+| 17 | Limpeza, higiene e conforto | pág. 37, precedente |
+| 18 | Outros | pág. 37, precedente |
+| 19 | Salários | pág. 35, precedente |
+| 20 | Contribuições | pág. 35, precedente |
+| 21 | Outros | pág. 35, precedente |
+| 22 | Imparidades (Perdas/Reversões) | pág. 11, precedente |
+| 23 | Provisões (Aumentos/Reversões) | pág. 11, precedente |
+| 24 | Impostos e Taxas | pág. 39, precedente |
+| 25 | Outros Gastos e Perdas | pág. 39, precedente |
+| 26 | Outros | pág. 39, precedente |
+| 27 | Gastos/reversões de depreciação e de amortização | pág. 11, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cero-real = Televisión. Claude 2026-10-16 (lote 82): la nota 25 Outros rendimentos imprime 'Direitos Televisivos' 0 en 2022-2023 (600.000 en 2021-2022): sin ingresos de TV ese año
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): categoria = exceptional_items. Claude 2026-10-16 (lote 82): condonación de deuda (corte del 80% del plan de recuperación aprobado), ingreso extraordinario: exceptional_items según CONVENCIONES-DATOS (condonaciones de Racing). Ajuste categoria para mudarla sin cambiar su efecto (to-do 237 f)
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-liga3, verificado contra roster cacheado de "2022–23 Liga 3 (Portugal)" (tools/club-league-reference/pt.json), coincidencia exacta "Académica".
+```
+
 ## 2022
 
 ### Ingresos
@@ -176,4 +240,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Académica/9-RC-SDUQ-2021-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### academica-pt-10-rc-sduq-2022-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
