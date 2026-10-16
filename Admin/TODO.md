@@ -203,6 +203,18 @@ llegue acá.
        ajuste lo destraba. Escalón posible: un ajuste `periodo` (valor: "cambio-de-cierre") que deje pasar ese documento con publicNote, o la
        señal del propio documento (inicio = día siguiente al cierre del ejercicio anterior y fin = nuevo cierre). Casos: Benfica 2007-08,
        Sporting 2003-04.
+    ac) `periodo.mjs` TOMA EL FIN DE MANDATO DE LOS ÓRGANOS SOCIALES COMO CIERRE (lote 80: Benfica 2013-14 quedó con cierre 2017-06-30 y
+       2012-13 con 2019-06-30, por la tabla de mandatos "30/06/2016", relatorio-contas-2013-14-pos-AG.md L1417-1421). Con el cierre mal,
+       localizar no eligió estado ("no contiene el ejercicio pedido"), verificar comparó años equivocados y abrió 8 casos de año vecino falsos.
+       Se resolvió con ajustes `cierre` y `estado`. Mismo patrón que a) (fecha de firma): una fecha dentro de una tabla de mandatos o de
+       órganos sociales no es el cierre; manda "A 30 DE JUNHO DE 2014" del índice y el encabezado del estado.
+    ad) CERRAR UNA ETIQUETA EN TODOS LOS AÑOS PUEDE ACEPTAR LA PROPUESTA EQUIVOCADA (lote 80: "Gestão operacional do estádio" de Benfica
+       tenía propuesta match_organisation_expense en 2021-2024 y admin_general_expense en 2025; `cola.mjs --responder 36c73ff aceptar` cerró
+       los otros 4 años, incluido 2025 con SU propuesta). Se corrigió respondiendo 2025 después. Escalón posible: que el cierre en cadena
+       copie la CATEGORÍA de la respuesta, no la decisión "aceptar", o que no cierre los años cuya propuesta es otra.
+    ae) NOTAS COMO IMAGEN SIN TRANSCRIBIR (Porto 2020-21: las notas 27 Rédito, 31 Outros gastos y 32 Depreciação quedaron como el nombre de
+       la imagen, img-48/img-52, sin la tabla). El año se cargó con los renglones del estado (cierra), pero sin el detalle de esas notas.
+       Escalón posible: que la validación de la etapa 2 marque un .md con referencias a imágenes de tablas y transcriba esas páginas.
 238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
    sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
    (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
