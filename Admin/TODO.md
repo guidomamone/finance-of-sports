@@ -171,6 +171,17 @@ con los que no están en los pasos de arriba.
    ~4 MB). Partir el índice y cargar el buscador aparte cuando la skill escala-finance-of-sports diga que llegó el momento.
 259. MATERIAL DE DIFUSIÓN (mejoras de proyecto, pedido de Guido 2026-10-16). Un deck para periodistas y sponsors, o un informe por liga ("las finanzas de LaLiga 2025 en 10 slides"), con
    el tipo Slides. Sin código.
+260. CAJA Y DEUDA: MEJORAS DE SCRIPT VISTAS EN PORTUGAL (sin aplicar; corrida del 2026-10-16: 151 de 327 datos, IA ~US$ 6). Cada una es un
+   escalón a diseñar con el ok de Guido y a medir con `caja-deuda.mjs --medir`.
+   a) ESCALA SIN AÑO CARGADO: Porto 2016-2019 tomó la caja de la tabla del informe de gestión, en miles ("7.392", .md L657), como euros (0,007
+      M contra 154 M de ingresos); la compuerta pasó porque el documento vecino tiene la misma tabla en miles. Se corrigió con ajustes `caja`
+      del balance en euros. Escalón posible: sin año cargado del dato, plausibilidad contra los ingresos del año, o preferir la fila de la
+      página del balance (título del balance) a la de una tabla del informe de gestión. Ojo: Casa Pia 2025 tiene de verdad 4.539 € de caja
+      con 30,7 M de ingresos (balance en euros, L333): una regla por proporción sola la rompería.
+   b) DEUDA: Portugal tiene 37 de 165 años con deuda (contra 117 con caja). Mirar por qué la mayoría no pasa la compuerta (¿"Financiamentos
+      obtidos" con más de dos filas, consolidado y separado en el mismo .md, o el vecino sin la misma familia?).
+   c) CLUBES EN 0: AVS (0 de 6), Boavista (0 de 2), Chaves (0 de 4), Famalicão (0 de 14), Mafra (0 de 2), Tondela (0 de 2), Vitória
+      Guimarães (0 de 8) y la deuda de Felgueiras (0 de 3): ni Jev ni la IA pasaron la compuerta. Diagnosticar 2-3 antes de diseñar.
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
     e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
