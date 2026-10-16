@@ -116,6 +116,76 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2024–25 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Marítimo".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Publicidade e patrocínios | pág. 41, precedente |
+| 2 | Proveitos de bilheteira | pág. 41, precedente |
+| 3 | Outros | pág. 41, precedente |
+| 4 | Subsídios à exploração | pág. 28, precedente |
+| 5 | Transferências de atletas | pág. 41, precedente |
+| 6 | Cedências de atletas | pág. 41, precedente |
+| 7 | Outros | pág. 41, precedente |
+| 8 | Juros | pág. 41, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subcontratos | pág. 51, precedente |
+| 2 | Deslocações e estadas | pág. 51, precedente |
+| 3 | Trabalhos especializados | pág. 51, precedente |
+| 4 | Honorários | pág. 51, precedente |
+| 5 | Comissões | pág. 51, precedente |
+| 6 | Vigilância e segurança | pág. 51, precedente |
+| 7 | Outros serviços | pág. 51, precedente |
+| 8 | Conservação e reparação | pág. 51, precedente |
+| 9 | Rendas e alugueres | pág. 51, precedente |
+| 10 | Energia e fluidos | pág. 51, precedente |
+| 11 | Comunicação | pág. 51, precedente |
+| 12 | Contencioso e notariado | pág. 51, precedente |
+| 13 | Limpeza, higiene e conforto | pág. 51, precedente |
+| 14 | Material de escritório | pág. 51, precedente |
+| 15 | Seguros | pág. 51, precedente |
+| 16 | Serviços bancários e financeiros | pág. 51, precedente |
+| 17 | Ferramentas e utensílios de desgaste rápido | pág. 51, precedente |
+| 18 | Publicidade e propaganda | pág. 51, Jev 1 |
+| 19 | Órgãos sociais | pág. 51, precedente |
+| 20 | Técnicos e administrativos | pág. 51, precedente |
+| 21 | Atletas | pág. 51, precedente |
+| 22 | Seguros | pág. 51, precedente |
+| 23 | Outros custos | pág. 51, precedente |
+| 24 | Imparidade de dívidas a receber (perdas/reversões) | pág. 28, precedente |
+| 25 | Provisões (aumentos/reduções) | pág. 28, precedente |
+| 26 | Impostos | pág. 52, precedente |
+| 27 | Gastos e perdas em investimentos não financeiros | pág. 52, precedente |
+| 28 | Correções relativas a exercícios anteriores | pág. 52, precedente |
+| 29 | Outros | pág. 52, Jev 0.99 |
+| 30 | Gastos/reversões de depreciação e de amortização | pág. 28, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 9.060. Claude 2026-10-16 (lote 82): la fila está dentro de la nota 'Outros rendimentos' (9.060 + 2.113.905 + 44.990 + 1.972.199 = 4.140.154; total impreso 4.140.153), pero la extracción la puso como gasto; es ingreso. Con el ajuste la carga cierra con el resultado impreso (-4.496.269). Como Marítimo 2023 (to-do 237 w)
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): incluye = broadcasting. Claude 2026-10-16 (lote 82): la nota de Vendas e prestação de serviços no tiene renglón de TV; el documento dice que la variación de Publicidade e Patrocínios se explica por la baja de los derechos de transmisión televisiva: la TV está dentro de ese renglón
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2023–24 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Marítimo".
+```
+
 ## 2023
 
 ### Ingresos
@@ -354,4 +424,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### maritimo-pt-futebol-sad-relatorio-e-contas-30jun24
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
