@@ -146,6 +146,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2020: {
     leagueSize: null,
     clubs: [
+      { id:"benfica-pt", revenue:319.27, reportType:"official_balance_sheet",
+        sourceId:"benfica-pt-relatorio-contas-2019-20-pos-ag",
+        mix:[["Comercial / Sponsors",23.289],["Estadio",22.465],["Televisión",43.218],["Premios por competencias",55.978],["Venta de Jugadores",162.546],["Otros ingresos",11.774]] },
       { id:"sportingcp-pt", revenue:196.499, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2019-20",
         mix:[["Comercial / Sponsors",19.89],["Estadio",13.974],["Televisión",23.258],["Premios por competencias",11.025],["Venta de Jugadores",120.981],["Otros ingresos",7.372]] },
