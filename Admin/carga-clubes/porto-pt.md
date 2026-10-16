@@ -118,6 +118,103 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Porto".
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Porto/relatorio-contas-consolidadas-2018-19.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Porto/relatorio-contas-consolidadas-2018-19.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas | pág. 97, Jev 0.91 |
+| 2 | Receitas associativas | pág. 97, Jev 1 |
+| 3 | Prémios competições europeias | pág. 97, Jev 1 |
+| 4 | Receita de bilheteira | pág. 97, precedente |
+| 5 | Receita de lugares anuais | pág. 97, precedente |
+| 6 | Outras receitas desportivas | pág. 97, precedente |
+| 7 | Publicidade | pág. 97, precedente |
+| 8 | Direitos de transmissões televisivas | pág. 97, Jev 1 |
+| 9 | Outros | pág. 97, precedente |
+| 10 | Subsídios à exploração | pág. 40, Jev 0.98 |
+| 11 | Compensação de utilização de jogadores no Mundial 2018 | pág. 99, precedente |
+| 12 | Rendimentos de propriedades de investimento | pág. 99, Jev 0.98 |
+| 13 | Imputação de subsídios para o investimento | pág. 99, Jev 1 |
+| 14 | Outros rendimentos suplementares | pág. 99, Jev 1 |
+| 15 | Correções relativas a exercícios anteriores | pág. 99, precedente |
+| 16 | Reembolsos de sinistros | pág. 99, Jev 1 |
+| 17 | Reembolsos de impostos | pág. 99, Jev 1 |
+| 18 | Outros rendimentos e ganhos | pág. 99, Jev 0.97 |
+| 19 | Proveitos com alienações de passes de jogadores | pág. 101, precedente |
+| 20 | Proveitos com empréstimos de jogadores | pág. 101, precedente |
+| 21 | Outros proveitos com jogadores | pág. 101, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 40, Jev 0.99 |
+| 2 | Trabalhos Especializados | pág. 98, precedente |
+| 3 | Subcontratos | pág. 98, precedente |
+| 4 | Rendas e Alugueres | pág. 98, precedente |
+| 5 | Direitos de imagem de atletas | pág. 98, precedente |
+| 6 | Vigilância e Segurança | pág. 98, precedente |
+| 7 | Conservação e reparação | pág. 98, precedente |
+| 8 | Publicidade e propaganda | pág. 98, precedente |
+| 9 | Despesas de organização | pág. 98, precedente |
+| 10 | Seguros | pág. 98, precedente |
+| 11 | Honorários | pág. 98, precedente |
+| 12 | Material Desportivo | pág. 98, precedente |
+| 13 | Comunicação | pág. 98, precedente |
+| 14 | Despesas de representação | pág. 98, precedente |
+| 15 | Limpeza, higiene e conforto | pág. 98, precedente |
+| 16 | Relvados | pág. 98, precedente |
+| 17 | Energia e Fluídos | pág. 98, Jev 1 |
+| 18 | Serviços de catering | pág. 98, precedente |
+| 19 | Outros fornecimentos e serviços | pág. 98, precedente |
+| 20 | Remunerações dos Órgãos Sociais | pág. 99, Jev 1 |
+| 21 | Remunerações de atletas e equipas técnicas | pág. 99, Jev 1 |
+| 22 | Remunerações do pessoal | pág. 99, precedente |
+| 23 | Benefícios pós-emprego | pág. 99, Jev 0.97 |
+| 24 | Indemnizações | pág. 99, precedente |
+| 25 | Encargos sobre remunerações | pág. 99, Jev 0.97 |
+| 26 | Seguros de acidentes de trabalho e doenças profissionais | pág. 99, Jev 1 |
+| 27 | Outros gastos com pessoal | pág. 99, precedente |
+| 28 | Imparidade de inventários (perdas / reversões) | pág. 40, Jev 1 |
+| 29 | Imparidade de dívidas a receber (perdas / reversões) | pág. 40, Jev 1 |
+| 30 | Provisões (aumentos / reduções) | pág. 40, Jev 0.97 |
+| 31 | Dívidas incobráveis | pág. 100, Jev 1 |
+| 32 | Correções relativas a exercícios anteriores | pág. 100, Jev 1 |
+| 33 | Impostos | pág. 100, Jev 0.92 |
+| 34 | Penalizações Desportivas | pág. 100, Jev 0.93 |
+| 35 | Multas/Dividas Fiscais e não fiscais | pág. 100, precedente |
+| 36 | Organização Taça Mundo e Europa de Bilhar | pág. 100, precedente |
+| 37 | Outros | pág. 100, Jev 1 |
+| 38 | Ativos fixos tangíveis | pág. 100, Jev 1 |
+| 39 | Propriedades de investimento | pág. 100, precedente |
+| 40 | Outros ativos intangíveis | pág. 100, Jev 1 |
+| 41 | Goodwill | pág. 100, Jev 0.99 |
+| 42 | Amortizações de passes de jogadores | pág. 101, precedente |
+| 43 | Perdas por imparidade com passes de jogadores | pág. 101, precedente |
+| 44 | Custos com alienações de passes de jogadores | pág. 101, precedente |
+| 45 | Custos com empréstimos de jogadores | pág. 101, precedente |
+| 46 | Outros custos com jogadores | pág. 101, precedente |
+| 47 | Resultados relativos a investimentos | pág. 40, Jev 0.99 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2018–19 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Porto".
+```
+
 ## 2018
 
 ### Ingresos
@@ -434,4 +531,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Porto/relatorio-contas-consolidadas-2017-18.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### porto-pt-relatorio-contas-consolidadas-2018-19
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Porto/relatorio-contas-consolidadas-2018-19.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
