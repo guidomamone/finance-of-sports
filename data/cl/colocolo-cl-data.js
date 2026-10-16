@@ -87,7 +87,7 @@ const colocoloFiscalYearMeta = {
     gestionId:'mosa3',
     netInterest:0.609 - 1794.667 - 700.471,
     tax:370.515, profitOnPlayerSales:0, assetSales:0,
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:3435.024,
     officialTotalRevenue:47608.495, officialTotalExpenses:44816.074, officialPAT:668.407,
   },
   2023: {
@@ -97,7 +97,7 @@ const colocoloFiscalYearMeta = {
     gestionId:'stohwing',
     netInterest:0.273 - 1005.992 - 278.728,
     tax:-34.283, profitOnPlayerSales:0, assetSales:0,
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:43.523,
     officialTotalRevenue:31920.289, officialTotalExpenses:29783.789, officialPAT:817.770,
   },
   2022: {
@@ -107,7 +107,7 @@ const colocoloFiscalYearMeta = {
     gestionId:'stohwing',
     netInterest:80.129 - 1408.430 - 1211.160,
     tax:1623.264, profitOnPlayerSales:0, assetSales:0,
-    grossDebt:null, cash:null,
+    grossDebt:410.88, cash:1293.536,
     officialTotalRevenue:28955.528, officialTotalExpenses:27247.870, officialPAT:791.461,
   },
 };

@@ -536,7 +536,7 @@ const atalantaitFiscalYearMeta = {
       {label:'d) imposte differite', value:-1.73917},
       {label:'e) imposte anticipate', value:0.821257},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:57.139921,
     officialTotalRevenue:242.670019, officialTotalExpenses:185.454299, officialPAT:35.142575,
   },
   2024: {
@@ -558,7 +558,7 @@ const atalantaitFiscalYearMeta = {
       {label:'d) imposte differite', value:7.141271},
       {label:'e) imposte anticipate', value:-0.654236},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:37.090223,
     officialTotalRevenue:243.723844, officialTotalExpenses:223.674422, officialPAT:11.875955,
   },
   2020: {
@@ -581,7 +581,7 @@ const atalantaitFiscalYearMeta = {
       {label:'d) imposte differite', value:-7.248351},
       {label:'e) imposte anticipate', value:0.540012},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:51.945337,
     officialTotalRevenue:241.997996, officialTotalExpenses:164.313841, officialPAT:51.738249,
   },
   2025: {
@@ -602,7 +602,7 @@ const atalantaitFiscalYearMeta = {
       {label:'d) imposte differite', value:-9.845609},
       {label:'e) imposte anticipate', value:0.177389},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:43.710989,
     officialTotalRevenue:320.817768, officialTotalExpenses:261.388228, officialPAT:37.861985,
   },
   2019: {
@@ -622,7 +622,7 @@ const atalantaitFiscalYearMeta = {
       {label:'Oneri da adesione al consolidato fiscale', value:-6.710851},
       {label:'Imposte differite (anticipate)', value:-2.566854},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:11.178796,
     officialTotalRevenue:188.621207, officialTotalExpenses:146.862549, officialPAT:26.497451,
   },
   2018: {
@@ -645,7 +645,7 @@ const atalantaitFiscalYearMeta = {
       {label:'Imposte differite', value:-0.093657},
       {label:'Imposte anticipate', value:0.630028},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:9.257506,
     officialTotalRevenue:155.740626, officialTotalExpenses:120.096113, officialPAT:23.958355,
   },
   2023: {
@@ -667,7 +667,7 @@ const atalantaitFiscalYearMeta = {
       {label:'d) imposte differite', value:-1.06139},
       {label:'e) imposte anticipate', value:-0.10458},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:24.538428,
     officialTotalRevenue:195.386565, officialTotalExpenses:185.488783, officialPAT:5.616433,
   },
   2022: {
@@ -688,7 +688,7 @@ const atalantaitFiscalYearMeta = {
       {label:'d) imposte differite', value:1.432496},
       {label:'e) imposte anticipate', value:0.4419},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:54.805282,
     officialTotalRevenue:120.30974, officialTotalExpenses:102.904219, officialPAT:11.367514,
   },
 };

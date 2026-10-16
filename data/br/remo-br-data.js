@@ -129,7 +129,7 @@ const remobrFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-0.250527, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:2.216362, cash:0.753395,
     officialTotalRevenue:42.957263, officialTotalExpenses:19.887233, officialPAT:22.819501,
   },
   2025: {
@@ -162,7 +162,7 @@ const remobrFiscalYearMeta = {
       {label:'Receitas Financeiras', value:0.014197},
       {label:'Despesas financeiras', value:-0.40641},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2.928154, cash:0.284456,
     officialTotalRevenue:21.530819, officialTotalExpenses:29.103327, officialPAT:-7.964721,
   },
   2019: {
@@ -192,7 +192,7 @@ const remobrFiscalYearMeta = {
       {renglon:'Receita De Atividades Esportivas', lado:'revenue', importe:12.351668, motivo:'Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose'},
       {renglon:'Custos das Atividades Esportivas', lado:'expense', importe:7.54864, motivo:'Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:4.211051, cash:null,
     officialTotalRevenue:12.351668, officialTotalExpenses:14.222078, officialPAT:-2.064503,
   },
   2023: {

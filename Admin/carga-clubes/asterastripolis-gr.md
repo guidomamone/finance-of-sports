@@ -131,6 +131,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 17 + "Τραπεζικά δάνεια" pág. 17; cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 16
+```
+
 ### Liga
 
 ```text
@@ -177,6 +181,10 @@ Generados/Grecia/Asteras Tripolis/Asteras_FS_2023-06-30.categorias.json (escaló
 ```text
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 17 + "Τραπεζικά δάνεια" pág. 17; cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 16
 ```
 
 ### Liga
@@ -228,6 +236,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 17 + "Τραπεζικά δάνεια" pág. 17; cash escalón 1b (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 16
+```
+
 ### Liga
 
 ```text
@@ -273,6 +285,10 @@ Generados/Grecia/Asteras Tripolis/Asteras_FS_2021-06-30.categorias.json (escaló
 ```text
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 16
 ```
 
 ### Liga
@@ -322,6 +338,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 17
+```
+
 ## 2019
 
 ### Ingresos
@@ -369,6 +389,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-13): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 17 + "Τραπεζικά δάνεια" pág. 17
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 16
 ```
 
 ### Liga

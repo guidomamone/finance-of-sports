@@ -233,7 +233,7 @@ const cremoneseitFiscalYearMeta = {
       {label:'imposte correnti', value:-1.182142},
       {label:'imposte differite e anticipate', value:2.255274},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:1.850092,
     officialTotalRevenue:57.398341, officialTotalExpenses:65.452619, officialPAT:-6.985407,
   },
   2022: {
@@ -249,7 +249,7 @@ const cremoneseitFiscalYearMeta = {
       {label:'imposte correnti', value:-0.687127},
       {label:'imposte differite e anticipate', value:-0.221933},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.44693,
     officialTotalRevenue:28.106539, officialTotalExpenses:29.98067, officialPAT:-2.923614,
   },
   2024: {
@@ -264,7 +264,7 @@ const cremoneseitFiscalYearMeta = {
       {label:'altri', value:-0.079062},
       {label:'imposte correnti', value:-1.547347},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.392111,
     officialTotalRevenue:57.678554, officialTotalExpenses:54.081038, officialPAT:2.001962,
   },
   2023: {
@@ -282,7 +282,7 @@ const cremoneseitFiscalYearMeta = {
       {label:'imposte correnti', value:-2.652176},
       {label:'imposte differite e anticipate', value:-0.076756},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:1.386926,
     officialTotalRevenue:89.089098, officialTotalExpenses:78.99476, officialPAT:7.173283,
   },
 };

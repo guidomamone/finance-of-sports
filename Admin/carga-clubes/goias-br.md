@@ -112,6 +112,10 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e equivalentes de caixa" pág. 6
+```
+
 ## 2024
 
 ### Ingresos
@@ -186,6 +190,10 @@ tools/cargar.mjs (2026-10-03)
 ```text
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 6
 ```
 
 ### Liga
@@ -270,6 +278,10 @@ tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (n
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 6
+```
+
 ### Liga
 
 ```text
@@ -348,6 +360,10 @@ tools/cargar.mjs (2026-10-02)
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 6
+```
+
 ### Liga
 
 ```text
@@ -416,6 +432,10 @@ tools/cargar.mjs (2026-10-02)
 
 ```text
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 8
 ```
 
 ### Liga
@@ -694,6 +714,10 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e equivalentes de caixa (nota 4)" pág. 4
+```
+
 ### Liga
 
 ```text
@@ -750,6 +774,10 @@ tools/cargar.mjs (2026-10-03)
 2013: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2013. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2013-2012' es el ejercicio 2013 con 2012 de comparativo, no 2012.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 4
 ```
 
 ### Liga
@@ -997,6 +1025,10 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e equivalente de caixa" pág. 1 + "Títulos e valores mobiliários (nota 3)" pág. 1 + "Contas a receber de parceiros e patrocionadores (n" pág. 1 + "Contas a receber do Clube dos (nota 13)" pág. 1 + "Contas a receber (nota 5)" pág. 1 + "Direitos de uso de imagem (nota 6)" pág. 1 + "Tributos a recuperar" pág. 1 + "Outros valores a receber" pág. 1
+```
+
 ### Liga
 
 ```text
@@ -1060,6 +1092,10 @@ tools/cargar.mjs (2026-10-03)
 ```text
 2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2008. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2008-2007' es el ejercicio 2008 con 2007 de comparativo, no 2007.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos e financiamentos (nota 8)" pág. 1 + "Empréstimos de terceiros" pág. 1; cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 1 + "Títulos e valores mobiliários (nota 3)" pág. 1 + "Contas a receber de parceiros e patrocinadores (no" pág. 1 + "Contas a receber do Clube dos (nota 13)" pág. 1 + "Contas a receber (nota 6)" pág. 1 + "Direitos de uso de imagem (nota 11)" pág. 1 + "Outros valores a receber" pág. 1
 ```
 
 ### Liga

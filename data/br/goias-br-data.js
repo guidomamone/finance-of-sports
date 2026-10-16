@@ -553,7 +553,7 @@ const goiasbrFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-1.473957, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:2.892613,
     officialTotalRevenue:46.859523, officialTotalExpenses:52.797352, officialPAT:-7.412038,
   },
   2022: {
@@ -567,7 +567,7 @@ const goiasbrFiscalYearMeta = {
       {label:'Receitas financeiras', value:1.371401},
       {label:'Despesas financeiras', value:-4.539741},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:13.669874,
     officialTotalRevenue:106.090159, officialTotalExpenses:89.763784, officialPAT:13.158035,
   },
   2017: {
@@ -590,7 +590,7 @@ const goiasbrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Serviços de terceiros', lado:'expense', importe:7.501287, motivo:'Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:86.601392,
     officialTotalRevenue:89.972753, officialTotalExpenses:104.328162, officialPAT:124.434274,
   },
   2008: {
@@ -604,7 +604,7 @@ const goiasbrFiscalYearMeta = {
       {label:'Receitas financeiras', value:0.452506},
       {label:'Despesas financeiras', value:-1.287746},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2.740459, cash:5.176767,
     officialTotalRevenue:20.242293, officialTotalExpenses:39.151513, officialPAT:-19.74446,
   },
   2012: {
@@ -645,7 +645,7 @@ const goiasbrFiscalYearMeta = {
       {label:'Receitas financeiras', value:0.181964},
       {label:'Despesas financeiras', value:-2.418567},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:7.505452,
     officialTotalRevenue:29.913572, officialTotalExpenses:47.005665, officialPAT:-19.328697,
   },
   2010: {
@@ -690,7 +690,7 @@ const goiasbrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'(-) Despesas com futebol profissional e amador', lado:'expense', importe:44.649623, motivo:'Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.259244,
     officialTotalRevenue:51.074726, officialTotalExpenses:54.518463, officialPAT:-7.493428,
   },
   2014: {
@@ -704,7 +704,7 @@ const goiasbrFiscalYearMeta = {
       {label:'(+) Receitas financeiras', value:0.08474},
       {label:'(-) Despesas financeiras', value:-6.162524},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:2.407631,
     officialTotalRevenue:62.602773, officialTotalExpenses:41.416673, officialPAT:15.108316,
   },
   2016: {
@@ -731,7 +731,7 @@ const goiasbrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Serviços de terceiros', lado:'expense', importe:8.114569, motivo:'Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:42.024026,
     officialTotalRevenue:37.975414, officialTotalExpenses:104.353681, officialPAT:-69.120627,
   },
   2025: {
@@ -748,7 +748,7 @@ const goiasbrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Serviços de terceiros (b)', lado:'expense', importe:12.827914, motivo:'Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:9.416947,
     officialTotalRevenue:45.374624, officialTotalExpenses:134.176779, officialPAT:-98.110093,
   },
 };

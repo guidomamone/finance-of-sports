@@ -242,7 +242,7 @@ const vilanovabrFiscalYearMeta = {
       {renglon:'Receitas Atividades Esportivas', lado:'revenue', importe:2.338518, motivo:'el documento no desglosa este renglón'},
       {renglon:'Despesas Depto Esportes', lado:'expense', importe:3.649581, motivo:'Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:18.819918, cash:0.077259,
     officialTotalRevenue:6.890197, officialTotalExpenses:8.598927, officialPAT:-1.675435,
   },
   2016: {
@@ -261,7 +261,7 @@ const vilanovabrFiscalYearMeta = {
       {renglon:'Receitas Atividades Esportivas', lado:'revenue', importe:2.220891, motivo:'el documento no desglosa este renglón'},
       {renglon:'Despesas Depto Esportes', lado:'expense', importe:4.783521, motivo:'Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:18.593245, cash:0.056715,
     officialTotalRevenue:12.894474, officialTotalExpenses:15.320054, officialPAT:-2.772003,
   },
   2017: {
@@ -280,7 +280,7 @@ const vilanovabrFiscalYearMeta = {
       {renglon:'Receitas Atividades Esportivas', lado:'revenue', importe:3.342234, motivo:'el documento no desglosa este renglón'},
       {renglon:'Despesas Depto Esportes', lado:'expense', importe:31.235464, motivo:'Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:18.643609, cash:0.181721,
     officialTotalRevenue:37.954292, officialTotalExpenses:39.474131, officialPAT:-1.585118,
   },
   2021: {
@@ -322,7 +322,7 @@ const vilanovabrFiscalYearMeta = {
       {label:'(-) DESPESAS FINANCEIRAS', value:-4.019144},
       {label:'RECEITAS FINANCEIRAS', value:3.834567},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.395459,
     officialTotalRevenue:29.345546, officialTotalExpenses:33.621615, officialPAT:-4.460647,
   },
   2024: {
@@ -351,7 +351,7 @@ const vilanovabrFiscalYearMeta = {
       {renglon:'Receitas Atividades Esportivas', lado:'revenue', importe:1.965462, motivo:'el documento no desglosa este renglón'},
       {renglon:'Despesas Depto Esportes', lado:'expense', importe:3.268187, motivo:'Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:18.658933, cash:1.404004,
     officialTotalRevenue:6.116236, officialTotalExpenses:6.488968, officialPAT:-0.376919,
   },
 };

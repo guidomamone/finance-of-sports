@@ -290,6 +290,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Empréstimos e financiamentos" pág. 10; cash escalón 1 (compuerta: documento anterior): "Caixa e Equivalentes de Caixa" pág. 9
+```
+
 ### Liga
 
 ```text
@@ -353,6 +357,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos e financiamentos" pág. 15; cash escalón 1 (compuerta: documento siguiente): "Caixa e Equivalentes de Caixa" pág. 15
+```
+
 ## 2020
 
 ### Ingresos
@@ -403,6 +411,10 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 
 ```text
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos e Financiamentos" pág. 7
 ```
 
 ### Liga

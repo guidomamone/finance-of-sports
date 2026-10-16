@@ -145,6 +145,26 @@ _al lado del campo `grossDebt`:_
 no sourceado en esta sesión (fuera de alcance)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "Efectivo y Equivalentes al Efectivo" pág. 5
+```
+
+## 2023
+
+### Meta
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Efectivo y Equivalentes al Efectivo" pág. 5
+```
+
+## 2022
+
+### Meta
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento siguiente): "Otros pasivos financieros corrientes" pág. 6 + "Otros pasivos financieros, no corrientes" pág. 6; cash escalón 1b (compuerta: documento siguiente): "Efectivo y Equivalentes al Efectivo" pág. 5
+```
+
 ## Fuentes
 
 ### colocolo-cl-estados-financieros-2024

@@ -199,7 +199,7 @@ const oncecaldasFiscalYearMeta = {
     netInterest:1539.774,
     tax:-2403.687,
     profitOnPlayerSales:0, assetSales:0,
-    grossDebt:null, cash:null,
+    grossDebt:337.5, cash:null,
     officialTotalRevenue:26971.040, officialTotalExpenses:21994.867, officialPAT:4112.260,
   },
   2025: {

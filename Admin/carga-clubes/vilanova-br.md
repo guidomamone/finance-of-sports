@@ -240,6 +240,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e Equivalentes de Caixa" pág. 3
+```
+
 ### Liga
 
 ```text
@@ -397,6 +401,10 @@ tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por pr
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Empréstimos de Conselheiros" pág. 1 + "Empréstimos de Terceiros" pág. 1 + "Empréstimos Bancários" pág. 1; cash escalón 1b (compuerta: documento anterior): "Disponível" pág. 1
+```
+
 ### Liga
 
 ```text
@@ -453,6 +461,10 @@ tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por pr
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos de Conselheiros" pág. 1 + "Empréstimos de Terceiros" pág. 1 + "Empréstimos Bancários" pág. 1; cash escalón 1b (compuerta: documento siguiente): "Disponível" pág. 1
+```
+
 ### Liga
 
 ```text
@@ -502,6 +514,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2023, 2024, 2025): Televisión, Salarios y primas (plantel y cuerpo técnico)
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos de Conselheiros" pág. 1 + "Empréstimos de Terceiros" pág. 1 + "Empréstimos Bancários" pág. 1; cash escalón 1b (compuerta: documento siguiente): "Disponível" pág. 1
 ```
 
 ### Liga
@@ -565,6 +581,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2023, 2024, 2025): Salarios y primas (plantel y cuerpo técnico)
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos de Conselheiros" pág. 1 + "Empréstimos de Terceiros" pág. 1 + "Empréstimos Bancários" pág. 1; cash escalón 1b (compuerta: documento siguiente): "Disponível" pág. 1
 ```
 
 ## Gestiones

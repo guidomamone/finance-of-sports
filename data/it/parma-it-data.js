@@ -442,7 +442,7 @@ const parmaitFiscalYearMeta = {
       {label:'altri (proventi finanziari)', value:0.040063},
       {label:'altri (oneri finanziari)', value:-0.108646},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:14.308296,
     officialTotalRevenue:28.891375, officialTotalExpenses:109.315074, officialPAT:-80.492282,
   },
   2021: {
@@ -521,7 +521,7 @@ const parmaitFiscalYearMeta = {
       {label:'verso imprese controllanti', value:-0.004255},
       {label:'altri', value:-0.006545},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.385472,
     officialTotalRevenue:11.457715, officialTotalExpenses:33.690094, officialPAT:-22.297121,
   },
   2019: {
@@ -536,7 +536,7 @@ const parmaitFiscalYearMeta = {
       {label:'altri', value:-0.102433},
       {label:'imposte correnti', value:-1.124432},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:3.708338,
     officialTotalRevenue:60.242771, officialTotalExpenses:68.442673, officialPAT:-9.423,
   },
   2016: {
@@ -550,7 +550,7 @@ const parmaitFiscalYearMeta = {
       {label:'altri', value:0.003132},
       {label:'altri', value:-0.001035},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:2.196583,
     officialTotalRevenue:3.10168, officialTotalExpenses:4.782903, officialPAT:-1.679126,
   },
   2017: {
@@ -565,7 +565,7 @@ const parmaitFiscalYearMeta = {
       {label:'verso imprese controllanti', value:-0.003423},
       {label:'altri', value:-0.001009},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.031888, cash:2.00306,
     officialTotalRevenue:6.652121, officialTotalExpenses:13.940628, officialPAT:-7.29294,
   },
 };

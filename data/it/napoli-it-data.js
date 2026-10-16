@@ -578,7 +578,7 @@ const napoliitFiscalYearMeta = {
       {label:'d) imposte differite', value:-15.489341},
       {label:'e) imposte anticipate', value:7.13287},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:37.413067, cash:null,
     officialTotalRevenue:290.860326, officialTotalExpenses:315.481532, officialPAT:-21.382397,
   },
   2024: {
@@ -599,7 +599,7 @@ const napoliitFiscalYearMeta = {
       {label:'d) imposte differite', value:-7.180915},
       {label:'e) imposte anticipate', value:6.339788},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:50.524973, cash:210.491999,
     officialTotalRevenue:328.190374, officialTotalExpenses:244.448668, officialPAT:63.029181,
   },
   2023: {
@@ -620,7 +620,7 @@ const napoliitFiscalYearMeta = {
       {label:'d) imposte differite', value:-15.855455},
       {label:'e) imposte anticipate', value:5.968328},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:51.61407, cash:168.94598,
     officialTotalRevenue:359.264354, officialTotalExpenses:242.559928, officialPAT:79.700081,
   },
   2021: {
@@ -662,7 +662,7 @@ const napoliitFiscalYearMeta = {
       {label:'d) imposte differite', value:-0.538566},
       {label:'e) imposte anticipate', value:10.528949},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:51.970131, cash:107.822204,
     officialTotalRevenue:175.995109, officialTotalExpenses:234.279517, officialPAT:-51.951202,
   },
   2019: {
@@ -683,7 +683,7 @@ const napoliitFiscalYearMeta = {
       {label:'d) imposte differite', value:-16.186023},
       {label:'e) imposte anticipate', value:7.98596},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:105.087098,
     officialTotalRevenue:299.862181, officialTotalExpenses:252.016884, officialPAT:29.163834,
   },
   2018: {
@@ -704,7 +704,7 @@ const napoliitFiscalYearMeta = {
       {label:'d) imposte differite', value:-6.73048},
       {label:'e) imposte anticipate', value:9.610023},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:118.706308,
     officialTotalRevenue:215.585266, officialTotalExpenses:218.995201, officialPAT:-6.372812,
   },
   2020: {
@@ -725,7 +725,7 @@ const napoliitFiscalYearMeta = {
       {label:'d) imposte differite', value:-12.057359},
       {label:'e) imposte anticipate', value:11.883123},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:123.818369,
     officialTotalRevenue:274.773521, officialTotalExpenses:294.892229, officialPAT:-18.971803,
   },
 };

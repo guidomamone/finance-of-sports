@@ -162,7 +162,7 @@ const genoaitFiscalYearMeta = {
       {label:'17 bis) b) perdite su cambi', value:-0.023945},
       {label:'20) a) imposte correnti (deducido: antes de impuestos − resultado final, por ajuste manual)', value:9.396313},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:15.678033, cash:null,
     officialTotalRevenue:84.663638, officialTotalExpenses:132.986472, officialPAT:-61.728621,
   },
   2025: {
@@ -206,7 +206,7 @@ const genoaitFiscalYearMeta = {
       {label:'imposte differite e anticipate', value:5.310717},
       {label:'proventi da adesione consolidato fiscale (resta del impuesto)', value:0.012799},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:20.667997, cash:null,
     officialTotalRevenue:116.983486, officialTotalExpenses:134.959544, officialPAT:-32.541764,
   },
 };

@@ -112,6 +112,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Debiti finanziari a breve termine" pág. 19; cash escalón 1 (compuerta: documento anterior): "Disponibilità liquide ed azioni proprie" pág. 19
+```
+
 ### Liga
 
 ```text
@@ -182,6 +186,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Debiti finanziari a breve termine" pág. 5; cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide ed azioni proprie" pág. 5
+```
+
 ### Liga
 
 ```text
@@ -244,6 +252,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide ed azioni proprie" pág. 39
 ```
 
 ## Gestiones

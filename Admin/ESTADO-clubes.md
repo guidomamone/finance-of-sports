@@ -72,7 +72,7 @@ BRASIL (42)
   Athletico Paranaense  2 ejercicios (2024 a 2025), balance, BRL
   Atlético Goianiense   1 ejercicio (2025), balance, BRL
   Atlético Mineiro      3 ejercicios (2023 a 2025), balance, BRL
-  Avai                  5 ejercicios (2021 a 2025), balance, BRL, sin deuda/caja
+  Avai                  5 ejercicios (2021 a 2025), balance, BRL
   Bahia                 2 ejercicios (2024 a 2025), balance, BRL
   Botafogo              3 ejercicios (2023 a 2025), balance, BRL
   Botafogo-SP           1 ejercicio (2024), balance, BRL
@@ -80,15 +80,15 @@ BRASIL (42)
   Chapecoense           2 ejercicios (2017, 2021), balance, BRL
   Corinthians           2 ejercicios (2024 a 2025), balance, BRL
   Coritiba              2 ejercicios (2023 a 2024), balance, BRL
-  CRB                   6 ejercicios (2020 a 2025), balance, BRL, sin deuda/caja
-  Criciuma              14 ejercicios (2012 a 2025), balance, BRL, sin deuda/caja
+  CRB                   6 ejercicios (2020 a 2025), balance, BRL
+  Criciuma              14 ejercicios (2012 a 2025), balance, BRL
   Cruzeiro              4 ejercicios (2022 a 2025), balance, BRL
-  Cuiaba                4 ejercicios (2022 a 2025), balance, BRL, sin deuda/caja
+  Cuiaba                4 ejercicios (2022 a 2025), balance, BRL
   Ferroviaria           13 ejercicios (2010, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2021, 2022, 2023, 2024, 2025), balance, BRL, sin deuda/caja
   Flamengo              2 ejercicios (2024 a 2025), balance, BRL
   Fluminense            2 ejercicios (2024 a 2025), balance, BRL
   Fortaleza             1 ejercicio (2025), balance, BRL
-  Goiás                 15 ejercicios (2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2021, 2022, 2023, 2024, 2025), balance, BRL, sin deuda/caja
+  Goiás                 15 ejercicios (2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2021, 2022, 2023, 2024, 2025), balance, BRL
   Grêmio                1 ejercicio (2024), balance, BRL
   Guarani               2 ejercicios (2024 a 2025), balance, BRL
   Internacional         2 ejercicios (2024 a 2025), balance, BRL
@@ -101,17 +101,17 @@ BRASIL (42)
   Paysandu              4 ejercicios (2021, 2023, 2024, 2025), balance, BRL, sin deuda/caja
   Ponte Preta           3 ejercicios (2022 a 2024), balance, BRL
   RB Bragantino         2 ejercicios (2019, 2024), balance, BRL
-  Remo                  7 ejercicios (2019 a 2025), balance, BRL, sin deuda/caja
+  Remo                  7 ejercicios (2019 a 2025), balance, BRL
   Santos                2 ejercicios (2024 a 2025), balance, BRL
   São Paulo             2 ejercicios (2023 a 2024), balance, BRL
   Sport Recife          1 ejercicio (2025), balance, BRL
   Vasco da Gama         1 ejercicio (2023), balance, BRL
-  Vila Nova             9 ejercicios (2014, 2015, 2016, 2017, 2021, 2022, 2023, 2024, 2025), balance, BRL, sin deuda/caja
+  Vila Nova             9 ejercicios (2014, 2015, 2016, 2017, 2021, 2022, 2023, 2024, 2025), balance, BRL
   Vitória               1 ejercicio (2025), balance, BRL
   Volta Redonda         2 ejercicios (2024 a 2025), balance, BRL
 
 CHILE (3)
-  Colo-Colo             3 ejercicios (2022 a 2024), balance, CLP, sin deuda/caja
+  Colo-Colo             3 ejercicios (2022 a 2024), balance, CLP
   Universidad Católica  16 ejercicios (2010 a 2025), balance, CLP
   Universidad de Chile  3 ejercicios (2022 a 2024), balance, CLP
 
@@ -126,7 +126,7 @@ COLOMBIA (12)
   Independiente Santa Fe  1 ejercicio (2025), balance, COP
   Junior de Barranquilla  1 ejercicio (2025), balance, COP
   Millonarios             1 ejercicio (2025), balance, COP
-  Once Caldas             4 ejercicios (2022 a 2025), balance, COP, sin deuda/caja
+  Once Caldas             4 ejercicios (2022 a 2025), balance, COP
   Unión Magdalena         1 ejercicio (2018), balance, COP
 
 ALEMANIA (11)
@@ -201,7 +201,7 @@ GR (14)
   AEK Athens        10 ejercicios (2015/2016 a 2024/2025), balance, EUR
   AEL Larissa       10 ejercicios (2015/2016 a 2024/2025), balance, EUR
   Aris              6 ejercicios (2018/2019, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
-  Asteras Tripolis  7 ejercicios (2018/2019 a 2024/2025), balance, EUR, sin deuda/caja
+  Asteras Tripolis  7 ejercicios (2018/2019 a 2024/2025), balance, EUR
   Atromitos         8 ejercicios (2015/2016, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
   Kifisia           4 ejercicios (2021/2022 a 2024/2025), balance, EUR
   Levadiakos        7 ejercicios (2018/2019 a 2024/2025), balance, EUR
@@ -225,22 +225,22 @@ HR (8)
 
 IT (22)
   AC Milan       14 ejercicios (2008, 2009, 2010, 2011, 2012, 2013, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
-  AS Roma        21 ejercicios (2004/2005 a 2024/2025), balance, EUR, sin deuda/caja
-  Atalanta       8 ejercicios (2018 a 2024/2025), balance, EUR, sin deuda/caja
-  Bologna        8 ejercicios (2017/2018 a 2024/2025), balance, EUR, sin deuda/caja
-  Chievo Verona  3 ejercicios (2013/2014 a 2015/2016), balance, EUR, sin deuda/caja
+  AS Roma        21 ejercicios (2004/2005 a 2024/2025), balance, EUR
+  Atalanta       8 ejercicios (2018 a 2024/2025), balance, EUR
+  Bologna        8 ejercicios (2017/2018 a 2024/2025), balance, EUR
+  Chievo Verona  3 ejercicios (2013/2014 a 2015/2016), balance, EUR
   Como           2 ejercicios (2023/2024 a 2024/2025), balance, EUR, sin deuda/caja
-  Cremonese      4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
-  Fiorentina     5 ejercicios (2019, 2020/2021, 2021/2022, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
-  Genoa          3 ejercicios (2022, 2023, 2024/2025), balance, EUR, sin deuda/caja
+  Cremonese      4 ejercicios (2021/2022 a 2024/2025), balance, EUR
+  Fiorentina     5 ejercicios (2019, 2020/2021, 2021/2022, 2023/2024, 2024/2025), balance, EUR
+  Genoa          3 ejercicios (2022, 2023, 2024/2025), balance, EUR
   Hellas Verona  6 ejercicios (2019/2020 a 2024/2025), balance, EUR, sin deuda/caja
   Inter          8 ejercicios (2017/2018 a 2024/2025), balance, EUR, sin deuda/caja
   Juve Stabia    1 ejercicio (2023/2024), balance, EUR, sin deuda/caja
   Juventus       23 ejercicios (2002/2003 a 2024/2025), balance, EUR
   Lazio          26 ejercicios (1998/1999, 1999/2000, 2000/2001, 2003/2004, 2004/2005, 2005/2006, 2006/2007, 2007/2008, 2008/2009, 2009/2010, 2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025, 2025/2026), balance, ITL/EUR, sin deuda/caja
-  Monza          3 ejercicios (2022 a 2024), balance, EUR, sin deuda/caja
-  Napoli         8 ejercicios (2017/2018 a 2024/2025), balance, EUR, sin deuda/caja
-  Parma          9 ejercicios (2015/2016, 2016/2017, 2017/2018, 2018/2019, 2021, 2022, 2023, 2024, 2025), balance, EUR, sin deuda/caja
+  Monza          3 ejercicios (2022 a 2024), balance, EUR
+  Napoli         8 ejercicios (2017/2018 a 2024/2025), balance, EUR
+  Parma          9 ejercicios (2015/2016, 2016/2017, 2017/2018, 2018/2019, 2021, 2022, 2023, 2024, 2025), balance, EUR
   Salernitana    2 ejercicios (2021/2022 a 2022/2023), balance, EUR, sin deuda/caja
   Sampdoria      4 ejercicios (2018 a 2021), balance, EUR, sin deuda/caja
   Sassuolo       8 ejercicios (2018 a 2025), balance, EUR, sin deuda/caja

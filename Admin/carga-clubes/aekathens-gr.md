@@ -83,6 +83,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1b (compuerta: documento anterior): "Μακροπρόθεσμες Υποχρεώσεις πληρωτέες στην Επόμενη " pág. 13
+```
+
 ### Liga
 
 ```text
@@ -146,6 +150,10 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-14): Claude 2026-10-14 (AEK 2024 con tokens de sesión): el balance L430 da 6.320.395 (y 7.725.899 el año anterior, igual al 2023 cargado); el flujo de efectivo L546 confirma 6.320.395. caja-deuda.mjs escalón 0 leía 0,000007 (to-do 232 x)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento siguiente): "Μακροπρόθεσμες Υποχρεώσεις πληρωτέες στην Επόμενη " pág. 13
 ```
 
 ### Liga

@@ -294,6 +294,10 @@ _al lado del campo `grossDebt`:_
 no verificado esta sesión (el foco fue validar tools/extract-table-rows.mjs, to-do 98) -- el documento sí trae Notas de deuda financiera (10, 16) que permitirían cargarlo en una sesión futura
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "TOTAL OBLIGACIONES FINANCIERAS A LARGO PLAZO" pág. 6
+```
+
 ## 2023
 
 ### Ingresos
