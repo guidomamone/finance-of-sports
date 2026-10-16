@@ -138,6 +138,107 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Braga".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Braga/relatorio-contas-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Braga/relatorio-contas-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Merchandising | pág. 127, precedente |
+| 2 | Receita de bilheteira | pág. 127, precedente |
+| 3 | Pacotes corporate | pág. 127, precedente |
+| 4 | Direitos de transmissões | pág. 127, precedente |
+| 5 | Publicidade / Patrocínios | pág. 127, precedente |
+| 6 | Outros | pág. 127, precedente |
+| 7 | Subsídios à exploração | pág. 80, precedente |
+| 8 | Participação em competições internacionais | pág. 135, Jev 1 |
+| 9 | Participação em competições nacionais | pág. 135, precedente |
+| 10 | Rendimentos com alienações de direitos de atletas | pág. 135, precedente |
+| 11 | Outros ganhos com operações de atletas | pág. 135, precedente |
+| 12 | Empréstimo de atletas | pág. 135, precedente |
+| 13 | Cedência de atletas a seleções nacionais | pág. 135, precedente |
+| 14 | Mecanismo de solidariedade e direitos de formação | pág. 135, precedente |
+| 15 | Ganhos em rescisões de contratos | pág. 135, precedente |
+| 16 | Receitas de apostas desportivas | pág. 135, precedente |
+| 17 | Indemnizações | pág. 135, precedente |
+| 18 | Outros | pág. 135, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 80, precedente |
+| 2 | Trabalhos especializados | pág. 129, precedente |
+| 3 | Gastos com aquisição de atletas | pág. 129, precedente |
+| 4 | Despesas com provas | pág. 129, precedente |
+| 5 | Inscrições e registos | pág. 129, precedente |
+| 6 | Vigilância e segurança | pág. 129, precedente |
+| 7 | Honorários | pág. 129, precedente |
+| 8 | Conservação e reparação | pág. 129, precedente |
+| 9 | Serviços bancários | pág. 129, precedente |
+| 10 | Ferramentas e utensílios de desgaste rápido | pág. 129, precedente |
+| 11 | Equipamento e material desportivo | pág. 129, precedente |
+| 12 | Outros | pág. 129, precedente |
+| 13 | Eletricidade | pág. 129, precedente |
+| 14 | Combustíveis | pág. 129, precedente |
+| 15 | Água | pág. 129, precedente |
+| 16 | Outros | pág. 129, precedente |
+| 17 | Deslocações e estadas | pág. 129, precedente |
+| 18 | Corporate (catering) | pág. 129, precedente |
+| 19 | Rendas / Direitos Exploração | pág. 129, precedente |
+| 20 | Comunicação | pág. 129, precedente |
+| 21 | Royalties | pág. 129, precedente |
+| 22 | Seguros | pág. 129, precedente |
+| 23 | Contencioso e notariado | pág. 129, precedente |
+| 24 | Limpeza, higiene e conforto | pág. 129, precedente |
+| 25 | Pessoal do SCB ao serviço da SAD | pág. 129, precedente |
+| 26 | Outros serviços diversos | pág. 129, Jev 0.98 |
+| 27 | Remuneração da Comissão Executiva | pág. 132, precedente |
+| 28 | Senhas de presença | pág. 132, precedente |
+| 29 | Atletas | pág. 132, precedente |
+| 30 | Treinadores | pág. 132, precedente |
+| 31 | Staff Geral | pág. 132, precedente |
+| 32 | Prémios de assinatura | pág. 132, precedente |
+| 33 | Prémios de desempenho | pág. 132, precedente |
+| 34 | Indemnizações | pág. 132, precedente |
+| 35 | Encargos com remunerações | pág. 132, precedente |
+| 36 | Seguros de acidentes de trabalho | pág. 132, precedente |
+| 37 | Outros Gastos | pág. 132, precedente |
+| 38 | Imparidade de dívidas a receber (perdas/reversões) | pág. 80, precedente |
+| 39 | Imparidade de inventários (perdas/reversões) | pág. 80, precedente |
+| 40 | Provisões (aumentos/reduções) | pág. 80, precedente |
+| 41 | Impostos | pág. 138, precedente |
+| 42 | Abates | pág. 138, precedente |
+| 43 | Empréstimo de atletas | pág. 138, precedente |
+| 44 | Direitos de formação e mecanismo de solidariedade | pág. 138, precedente |
+| 45 | Gastos com transações atletas | pág. 138, Jev 1 |
+| 46 | Multas / Penalidades desportivas | pág. 138, precedente |
+| 47 | Outros | pág. 138, precedente |
+| 48 | Edifícios e outras construções | pág. 140, precedente |
+| 49 | Equipamento básico | pág. 140, precedente |
+| 50 | Equipamento de transporte | pág. 140, precedente |
+| 51 | Equipamento administrativo | pág. 140, precedente |
+| 52 | Plantel | pág. 140, precedente |
+| 53 | Direitos de superfície | pág. 140, precedente |
+| 54 | Outros ativos intangíveis | pág. 140, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2023–24 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Braga".
+```
+
 ## 2023
 
 ### Ingresos
@@ -652,4 +753,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Braga/relatorio-contas-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### braga-pt-relatorio-contas-2023-24
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Braga/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
