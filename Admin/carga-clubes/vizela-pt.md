@@ -106,6 +106,70 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2024–25 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Vizela".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Vizela/Relatorio-Gestao-e-contas-FCV-2023-24-Ass.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Vizela/Relatorio-Gestao-e-contas-FCV-2023-24-Ass.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Quotizações | pág. 21, precedente |
+| 2 | Receitas de bilheteira | pág. 21, precedente |
+| 3 | Patrocínios, publicidade e corporate | pág. 21, precedente |
+| 4 | Receitas de televisão | pág. 21, precedente |
+| 5 | Merchandising | pág. 21, precedente |
+| 6 | Competições da UEFA e nacionais | pág. 21, precedente |
+| 7 | Cedência de jogadores | pág. 21, precedente |
+| 8 | Outros | pág. 21, precedente |
+| 9 | Município de Vizela | pág. 31, precedente |
+| 10 | I.E.F.P | pág. 31, precedente |
+| 11 | Outras entidades (UEFA) | pág. 31, Claude 0.93 |
+| 12 | Outros rendimentos suplementares | pág. 37, precedente |
+| 13 | Subsídio deslocação | pág. 37, precedente |
+| 14 | Distribuição de lucros Placard | pág. 37, Jev 1 |
+| 15 | Outros | pág. 37, precedente |
+| 16 | Gastos/rendimentos com transações de passes de atletas | pág. 21, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 21, precedente |
+| 2 | Subcontratos | pág. 36, precedente |
+| 3 | Serviços especializados | pág. 36, precedente |
+| 4 | Materiais | pág. 36, precedente |
+| 5 | Energia e fluídos | pág. 36, precedente |
+| 6 | Deslocações, estadas e transportes | pág. 36, precedente |
+| 7 | Serviços diversos | pág. 36, precedente |
+| 8 | Remunerações orgãos sociais | pág. 36, precedente |
+| 9 | Remunerações pessoal | pág. 36, precedente |
+| 10 | Encargos sobre remunerações | pág. 36, precedente |
+| 11 | Seguros | pág. 36, precedente |
+| 12 | Outros gastos com pessoal | pág. 36, precedente |
+| 13 | Imparidade de dívidas a receber (perdas/reversões) | pág. 21, precedente |
+| 14 | Provisões (aumentos / reduções) | pág. 21, precedente |
+| 15 | Impostos | pág. 38, precedente |
+| 16 | Multas e outras penalidades | pág. 38, precedente |
+| 17 | Outros | pág. 38, precedente |
+| 18 | Gastos/reversões de depreciação e de amortização (excluindo passes de jogadores) | pág. 21, precedente |
+| 19 | Gastos/reversões de depreciação e de amortização com passes de jogadores | pág. 21, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2023–24 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Vizela".
+```
+
 ## 2023
 
 ### Ingresos
@@ -199,7 +263,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2025): Cuotas Sociales, Comercial / Sponsors, Estadio, Televisión, Premios por competencias, Venta de Jugadores
+tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Cuotas Sociales, Comercial / Sponsors, Estadio, Televisión, Premios por competencias, Venta de Jugadores
 ```
 
 ### Liga
@@ -232,4 +296,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vizela-pt-relatorio-gestao-e-contas-fcv-2023-24-ass
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Vizela/Relatorio-Gestao-e-contas-FCV-2023-24-Ass.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

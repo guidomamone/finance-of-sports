@@ -17,7 +17,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'santaclara-pt': { 2025: 'pt-primeiraliga', 2022: 'pt-primeiraliga', 2023: 'pt-primeiraliga', 2020: 'pt-primeiraliga', 2021: 'pt-primeiraliga', 2024: 'pt-ligaportugal2' },
   'belenenses-pt': { 2025: 'pt-liga3', 2024: 'pt-ligaportugal2' },
   'estorilpraia-pt': { 2025: 'pt-primeiraliga', 2022: 'pt-primeiraliga', 2023: 'pt-primeiraliga', 2024: 'pt-primeiraliga' },
-  'vizela-pt': { 2025: 'pt-ligaportugal2', 2023: 'pt-primeiraliga', 2022: 'pt-primeiraliga' },
+  'vizela-pt': { 2025: 'pt-ligaportugal2', 2023: 'pt-primeiraliga', 2022: 'pt-primeiraliga', 2024: 'pt-primeiraliga' },
   'academicoviseu-pt': { 2025: 'pt-ligaportugal2', 2023: 'pt-ligaportugal2', 2024: 'pt-ligaportugal2' },
   'academica-pt': { 2024: 'pt-liga3', 2022: 'pt-ligaportugal2' },
   'arouca-pt': { 2025: 'pt-primeiraliga', 2022: 'pt-primeiraliga', 2023: 'pt-primeiraliga', 2024: 'pt-primeiraliga' },

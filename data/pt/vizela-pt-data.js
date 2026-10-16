@@ -37,6 +37,24 @@ const vizelaptRevenueLinesByYear = {
     { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.343644, disclosureLevel:'aggregated' },
     { rawLabel:'Outros Rendimentos', normalizedCategory:'other_income', amountNative:0.345797, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Quotizações', normalizedCategory:'member_dues', amountNative:0.080496, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas de bilheteira', normalizedCategory:'matchday_competition', amountNative:0.215379, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínios, publicidade e corporate', normalizedCategory:'sponsorship_commercial', amountNative:0.869453, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas de televisão', normalizedCategory:'broadcasting', amountNative:4.2, disclosureLevel:'aggregated' },
+    { rawLabel:'Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:0.064268, disclosureLevel:'aggregated' },
+    { rawLabel:'Competições da UEFA e nacionais', normalizedCategory:'competition_bonus', amountNative:0.076202, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência de jogadores', normalizedCategory:'player_sales', amountNative:1.526281, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.211303, disclosureLevel:'aggregated' },
+    { rawLabel:'Município de Vizela', normalizedCategory:'other_income', amountNative:0.08, disclosureLevel:'aggregated' },
+    { rawLabel:'I.E.F.P', normalizedCategory:'other_income', amountNative:0.01877, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras entidades (UEFA)', normalizedCategory:'other_income', amountNative:0.376007, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros rendimentos suplementares', normalizedCategory:'other_income', amountNative:0.03614, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídio deslocação', normalizedCategory:'other_income', amountNative:0.004061, disclosureLevel:'aggregated' },
+    { rawLabel:'Distribuição de lucros Placard', normalizedCategory:'other_income', amountNative:0.405422, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.03309, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/rendimentos com transações de passes de atletas', normalizedCategory:'player_sales', amountNative:1.1725, disclosureLevel:'aggregated' },
+  ],
 };
 const vizelaptExpenseLinesByYear = {
   2025: [
@@ -88,6 +106,27 @@ const vizelaptExpenseLinesByYear = {
     { rawLabel:'Gastos de Depreciação e Amortização', normalizedCategory:'depreciation', amountNative:-0.088132, disclosureLevel:'aggregated' },
     { rawLabel:'Outros Gastos e Perdas', normalizedCategory:'other_expenses', amountNative:-0.044629, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Custo das mercadorias vendidas e das matérias consumidas', normalizedCategory:'other_expenses', amountNative:-0.015509, disclosureLevel:'aggregated' },
+    { rawLabel:'Subcontratos', normalizedCategory:'admin_general_expense', amountNative:-0.051032, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços especializados', normalizedCategory:'admin_general_expense', amountNative:-0.899998, disclosureLevel:'aggregated' },
+    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.174692, disclosureLevel:'aggregated' },
+    { rawLabel:'Energia e fluídos', normalizedCategory:'admin_general_expense', amountNative:-0.093673, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações, estadas e transportes', normalizedCategory:'match_organisation_expense', amountNative:-0.379207, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços diversos', normalizedCategory:'other_expenses', amountNative:-1.226358, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações orgãos sociais', normalizedCategory:'admin_general_expense', amountNative:-0.346173, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações pessoal', normalizedCategory:'wages_squad', amountNative:-5.511883, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre remunerações', normalizedCategory:'wages_squad', amountNative:-0.559072, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.646125, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos com pessoal', normalizedCategory:'wages_squad', amountNative:-0.098918, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de dívidas a receber (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisões (aumentos / reduções)', normalizedCategory:'admin_general_expense', amountNative:-0.01875, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.006664, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas e outras penalidades', normalizedCategory:'other_expenses', amountNative:-0.111976, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.004635, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização (excluindo passes de jogadores)', normalizedCategory:'depreciation', amountNative:-0.122524, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização com passes de jogadores', normalizedCategory:'player_amortisation', amountNative:-0.125833, disclosureLevel:'aggregated' },
+  ],
 };
 const vizelaptFiscalYearMeta = {
   2025: {
@@ -136,6 +175,20 @@ const vizelaptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:5.802367, officialTotalExpenses:8.223657, officialPAT:-2.429918,
   },
+  2024: {
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'vizela-pt-relatorio-gestao-e-contas-fcv-2023-24-ass',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.019368, tax:-0.015577,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.019368},
+      {label:'Imposto sobre o rendimento do período', value:-0.015577},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:9.369372, officialTotalExpenses:10.393022, officialPAT:-1.058594,
+  },
 };
 const vizelaptPresupuestoOverlayByYear = {};
 
@@ -165,6 +218,11 @@ Object.assign(sources, {
   'vizela-pt-relatorio-contas-fcv-2021-22': {
     id:'vizela-pt-relatorio-contas-fcv-2021-22', clubId:'vizela-pt',
     title:'Futebol Clube de Vizela - Futebol, SAD — Relatorio-Contas-FCV-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'vizela-pt-relatorio-gestao-e-contas-fcv-2023-24-ass': {
+    id:'vizela-pt-relatorio-gestao-e-contas-fcv-2023-24-ass', clubId:'vizela-pt',
+    title:'Futebol Clube de Vizela - Futebol, SAD — Relatorio-Gestao-e-contas-FCV-2023-24-Ass (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
