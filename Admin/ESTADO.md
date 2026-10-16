@@ -85,8 +85,10 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 - Transcripción con subagentes (sin API, con el límite de la suscripción): para PDFs digitales, un subagente Sonnet por documento sigue
   `Admin/transcripcion-subagentes/reglas.md` y se controla con `check-transcripcion-fidelidad.js` y
   `Admin/transcripcion-subagentes/comparar-numeros.mjs` (números del .md contra el texto del PDF). Después el pipeline sigue igual
-  (`pipeline.mjs --lista` valida gratis y el lote localiza). Transcriptos así y esperando validación: Estonia, Bélgica, Suiza y parte
-  de Turquía (Beşiktaş); el detalle, en el TODO 165 b1. Las páginas imagen (informes del auditor) se leen del render: el comparador no
+  (`pipeline.mjs --lista` valida gratis y el lote localiza). Transcriptos así y esperando validación: Estonia, Bélgica, Suiza, Países
+  Bajos, parte de Turquía (Beşiktaş) y parte de Colombia; el detalle, en el TODO 165 b1 (y por documento, en
+  `Admin/transcripcion-subagentes/avance-<fecha>.md`). Un digital es el que `pdftotext` lee con 10 o más cifras y 300 o más letras
+  por página en promedio; el resto va por Mistral. Las páginas imagen (informes del auditor) se leen del render: el comparador no
   las puede cotejar y se aceptan si sus totales coinciden con el balance.
 - Un club nuevo entra al lote con un solo ejercicio; el resto de sus años, después del alta y de contestar su cola (skill
   `club-or-year-onboarding`), para que las respuestas del primero sirvan de precedente. Las respuestas grandes de la cola que todavía
