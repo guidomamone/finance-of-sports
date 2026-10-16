@@ -57,6 +57,22 @@ const sportingcpptRevenueLinesByYear = {
     { rawLabel:'Abate de direitos desportivos', normalizedCategory:'player_sales', amountNative:-0.017, disclosureLevel:'aggregated' },
     { rawLabel:'Diferencia de redondeo', normalizedCategory:'other_income', amountNative:0.001, disclosureLevel:'aggregated' },
   ],
+  2014: [
+    { rawLabel:'Direitos Televisivos', normalizedCategory:'broadcasting', amountNative:15.244, disclosureLevel:'aggregated' },
+    { rawLabel:'Bilheteira e Bilhetes de Época', normalizedCategory:'matchday_competition', amountNative:6.528, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínios e Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:6.113, disclosureLevel:'aggregated' },
+    { rawLabel:'Royalties', normalizedCategory:'sponsorship_commercial', amountNative:1.107, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.621, disclosureLevel:'aggregated' },
+    { rawLabel:'Participações nas Competições Nacionais', normalizedCategory:'competition_bonus', amountNative:0.007, disclosureLevel:'aggregated' },
+    { rawLabel:'Participações em Competições Particulares', normalizedCategory:'competition_bonus', amountNative:0.025, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência de jogadores', normalizedCategory:'player_sales', amountNative:0.613, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações de seguros', normalizedCategory:'other_income', amountNative:0.001, disclosureLevel:'aggregated' },
+    { rawLabel:'Diferenças de câmbio', normalizedCategory:'other_income', amountNative:0.249, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:4.836, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência de direitos económicos ao Sporting Portugal Fund', normalizedCategory:'player_sales', amountNative:2.46, disclosureLevel:'aggregated' },
+    { rawLabel:'Venda de direitos desportivos', normalizedCategory:'player_sales', amountNative:16.271, disclosureLevel:'aggregated' },
+    { rawLabel:'Mecanismo de solidariedade/compenção por formação', normalizedCategory:'player_sales', amountNative:0.178, disclosureLevel:'aggregated' },
+  ],
 };
 const sportingcpptExpenseLinesByYear = {
   2025: [
@@ -170,6 +186,37 @@ const sportingcpptExpenseLinesByYear = {
     { rawLabel:'Amortizações do exercício - Futebol profissional', normalizedCategory:'player_amortisation', amountNative:-13.406, disclosureLevel:'aggregated' },
     { rawLabel:'Perdas por imparidade - Futebol profissional', normalizedCategory:'player_impairment', amountNative:-5.957, disclosureLevel:'aggregated' },
   ],
+  2014: [
+    { rawLabel:'Subcontratos', normalizedCategory:'admin_general_expense', amountNative:-9.022, disclosureLevel:'aggregated' },
+    { rawLabel:'Organização e deslocações e estadias de jogos', normalizedCategory:'match_organisation_expense', amountNative:-0.494, disclosureLevel:'aggregated' },
+    { rawLabel:'Comissões', normalizedCategory:'other_expenses', amountNative:-0.243, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.853, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-0.628, disclosureLevel:'aggregated' },
+    { rawLabel:'Equipamentos Desportivos', normalizedCategory:'other_expenses', amountNative:-0.432, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.246, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade e Propaganda', normalizedCategory:'admin_general_expense', amountNative:-0.191, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros FSE', normalizedCategory:'other_expenses', amountNative:-0.659, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações Orgãos Sociais', normalizedCategory:'admin_general_expense', amountNative:-0.221, disclosureLevel:'aggregated' },
+    { rawLabel:'Remuneração do Pessoal', normalizedCategory:'wages_squad', amountNative:-20.656, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações', normalizedCategory:'wages_squad', amountNative:-1.366, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos com remunerações', normalizedCategory:'wages_squad', amountNative:-1.512, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos com benefícios pós-emprego', normalizedCategory:'wages_squad', amountNative:-0.203, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.953, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.097, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciações e amortizações excluindo plantel', normalizedCategory:'depreciation', amountNative:-1.062, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de clientes', normalizedCategory:'other_expenses', amountNative:-0.672, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de outras dívidas a receber', normalizedCategory:'other_expenses', amountNative:-0.215, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisões para outros riscos e encargos', normalizedCategory:'other_amortisation', amountNative:0.532, disclosureLevel:'aggregated' },
+    { rawLabel:'Diferencia de redondeo', normalizedCategory:'other_expenses', amountNative:-0.001, disclosureLevel:'aggregated' },
+    { rawLabel:'Quotizações', normalizedCategory:'admin_general_expense', amountNative:-0.177, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.71, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas e penalidades', normalizedCategory:'other_expenses', amountNative:-0.16, disclosureLevel:'aggregated' },
+    { rawLabel:'Prospecção de mercado', normalizedCategory:'other_expenses', amountNative:-0.524, disclosureLevel:'aggregated' },
+    { rawLabel:'Diferenças de câmbio desfavoráveis operacionais', normalizedCategory:'other_expenses', amountNative:-0.144, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos de imagem', normalizedCategory:'wages_squad', amountNative:-0.485, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.567, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortizações e perdas de imparidade do plantel', normalizedCategory:'player_amortisation', amountNative:-8.029, disclosureLevel:'aggregated' },
+  ],
 };
 const sportingcpptFiscalYearMeta = {
   2025: {
@@ -217,6 +264,21 @@ const sportingcpptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:48.897, officialTotalExpenses:85.575, officialPAT:-43.816,
   },
+  2014: {
+    currency:'EUR', fxRef:'EUR@2014-06-30',
+    sourceId:'sportingcp-pt-relatorio-contas-2013-14',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-3.775, tax:-0.12,
+    extraRows: [
+      {label:'Gastos e perdas financeiros', value:-6.511},
+      {label:'Rendimentos e ganhos financeiros', value:2.736},
+      {label:'Imposto sobre o rendimento', value:-0.12},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:54.253, officialTotalExpenses:49.99, officialPAT:0.368,
+  },
 };
 const sportingcpptPresupuestoOverlayByYear = {};
 
@@ -246,6 +308,11 @@ Object.assign(sources, {
   'sportingcp-pt-relatorio-contas-2012-13': {
     id:'sportingcp-pt-relatorio-contas-2012-13', clubId:'sportingcp-pt',
     title:'SPORTING - Sociedade Desportiva de Futebol, SAD — relatorio-contas-2012-13 (ejercicio 2013)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'sportingcp-pt-relatorio-contas-2013-14': {
+    id:'sportingcp-pt-relatorio-contas-2013-14', clubId:'sportingcp-pt',
+    title:'SPORTING - Sociedade Desportiva de Futebol, SAD — relatorio-contas-2013-14 (ejercicio 2014)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
