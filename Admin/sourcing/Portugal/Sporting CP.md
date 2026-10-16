@@ -62,3 +62,5 @@ ejercicios más nuevos (no bajadas, se priorizó el PDF legible).
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Sporting CP/relatorio-contas-2023-24.pdf` (sourceId `sportingcp-pt-relatorio-contas-2023-24`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2011 desde `Clubes/Portugal/Sporting CP/relatorio-contas-2010-11.pdf` (sourceId `sportingcp-pt-relatorio-contas-2010-11`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2017 desde `Clubes/Portugal/Sporting CP/relatorio-contas-2016-17.pdf` (sourceId `sportingcp-pt-relatorio-contas-2016-17`).
