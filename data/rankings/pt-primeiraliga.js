@@ -49,6 +49,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2023: {
     leagueSize: null,
     clubs: [
+      { id:"sportingcp-pt", revenue:241.24, reportType:"official_balance_sheet",
+        sourceId:"sportingcp-pt-relatorio-contas-2022-23",
+        mix:[["Comercial / Sponsors",27.361],["Estadio",21.239],["Televisión",30.836],["Premios por competencias",43.916],["Venta de Jugadores",111.731],["Otros ingresos",6.158]] },
       { id:"braga-pt", revenue:83.887, reportType:"official_balance_sheet",
         sourceId:"braga-pt-relato-rio-contas-2022-23-sad",
         mix:[["Comercial / Sponsors",6.286],["Estadio",0.724],["Televisión",9.345],["Premios por competencias",12.117],["Venta de Jugadores",53.726],["Otros ingresos",1.689]] },
