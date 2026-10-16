@@ -60,6 +60,25 @@ const santaclaraptRevenueLinesByYear = {
     { rawLabel:'Vice Presidencia Deslocações', normalizedCategory:'other_income', amountNative:0.051593, disclosureLevel:'aggregated' },
     { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:2.517276, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Equipamento desportivo', normalizedCategory:'sponsorship_commercial', amountNative:0.074739, disclosureLevel:'aggregated' },
+    { rawLabel:'Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:0.006006, disclosureLevel:'aggregated' },
+    { rawLabel:'Ingressos para jogos', normalizedCategory:'matchday_competition', amountNative:0.010527, disclosureLevel:'aggregated' },
+    { rawLabel:'Apostas desportivas Placard', normalizedCategory:'other_income', amountNative:0.220513, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:0.51189, disclosureLevel:'aggregated' },
+    { rawLabel:'Prémios de participação (Taça Port. e Liga)', normalizedCategory:'competition_bonus', amountNative:0.10317, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos televisivos', normalizedCategory:'broadcasting', amountNative:5.341176, disclosureLevel:'aggregated' },
+    { rawLabel:'Licença Electronic - konami', normalizedCategory:'sponsorship_commercial', amountNative:0.01, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência por empréstimos direitos desportivos', normalizedCategory:'player_sales', amountNative:0.083295, disclosureLevel:'aggregated' },
+    { rawLabel:'Diversos', normalizedCategory:'other_income', amountNative:0.002234, disclosureLevel:'aggregated' },
+    { rawLabel:'Direção Regional do Turismo', normalizedCategory:'other_income', amountNative:1, disclosureLevel:'aggregated' },
+    { rawLabel:'Inst.Seg Social Layoff', normalizedCategory:'other_income', amountNative:0.011814, disclosureLevel:'aggregated' },
+    { rawLabel:'RAA - Fundo Regional Emprego', normalizedCategory:'other_income', amountNative:0.000168, disclosureLevel:'aggregated' },
+    { rawLabel:'Vice-Presidência Deslocações', normalizedCategory:'other_income', amountNative:0.05158, disclosureLevel:'aggregated' },
+    { rawLabel:'Donativos', normalizedCategory:'other_income', amountNative:0.016068, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência de direitos desportivos', normalizedCategory:'player_sales', amountNative:6.495, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:0.000797, disclosureLevel:'aggregated' },
+  ],
 };
 const santaclaraptExpenseLinesByYear = {
   2025: [
@@ -241,6 +260,21 @@ const santaclaraptExpenseLinesByYear = {
     { rawLabel:'Outros gastos', normalizedCategory:'other_expenses', amountNative:-0.551838, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'player_amortisation', amountNative:-0.148338, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Custo das mercadorias vendidas e das matérias consumidas', normalizedCategory:'other_expenses', amountNative:-0.04031, disclosureLevel:'aggregated' },
+    { rawLabel:'Fornecimentos e serviços externos', normalizedCategory:'admin_general_expense', amountNative:-2.509163, disclosureLevel:'aggregated' },
+    { rawLabel:'Renumerações Órgãos Sociais', normalizedCategory:'admin_general_expense', amountNative:-0.375223, disclosureLevel:'aggregated' },
+    { rawLabel:'Renumerações Atletas', normalizedCategory:'wages_squad', amountNative:-3.528836, disclosureLevel:'aggregated' },
+    { rawLabel:'Renumerações equipa técnica (treinadores)', normalizedCategory:'wages_squad', amountNative:-0.409731, disclosureLevel:'aggregated' },
+    { rawLabel:'Renumerações ao pessoal', normalizedCategory:'wages_squad', amountNative:-0.341035, disclosureLevel:'aggregated' },
+    { rawLabel:'Acordos Revogação', normalizedCategory:'wages_squad', amountNative:-0.212587, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre renumerações', normalizedCategory:'wages_squad', amountNative:-0.458158, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguro acidentes de trabalho e doenças', normalizedCategory:'admin_general_expense', amountNative:-0.497092, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos com pessoal', normalizedCategory:'wages_squad', amountNative:-0.843839, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidades de dívidas a receber', normalizedCategory:'other_expenses', amountNative:-0.766, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos', normalizedCategory:'other_expenses', amountNative:-2.64349, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'player_amortisation', amountNative:-0.213727, disclosureLevel:'aggregated' },
+  ],
 };
 const santaclaraptFiscalYearMeta = {
   2025: {
@@ -303,6 +337,21 @@ const santaclaraptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:8.077392, officialTotalExpenses:7.417375, officialPAT:0.427392,
   },
+  2021: {
+    currency:'EUR', fxRef:'EUR@2021-06-30',
+    sourceId:'santaclara-pt-relatorio-contas-sad-2020-21',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.219058, tax:-0.058194,
+    extraRows: [
+      {label:'Juros e rendimentos similares obtidos', value:0.000005},
+      {label:'Juros e gastos similares suportados', value:-0.219063},
+      {label:'Imposto sobre o rendimento do período', value:-0.058194},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:13.938977, officialTotalExpenses:12.83919, officialPAT:0.822535,
+  },
 };
 const santaclaraptPresupuestoOverlayByYear = {};
 
@@ -337,6 +386,11 @@ Object.assign(sources, {
   'santaclara-pt-relatorio-contas-sad-2019-20': {
     id:'santaclara-pt-relatorio-contas-sad-2019-20', clubId:'santaclara-pt',
     title:'Santa Clara Açores - Futebol, S.A.D. — relatorio-contas-sad-2019-20 (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'santaclara-pt-relatorio-contas-sad-2020-21': {
+    id:'santaclara-pt-relatorio-contas-sad-2020-21', clubId:'santaclara-pt',
+    title:'Santa Clara Açores - Futebol, S.A.D. — relatorio-contas-sad-2020-21 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

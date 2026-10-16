@@ -35,3 +35,5 @@ convendría cruzarlos para ver si alguno tiene series más largas.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Santa Clara/relatorio-contas-sad-2022-23.pdf` (sourceId `santaclara-pt-relatorio-contas-sad-2022-23`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2020 desde `Clubes/Portugal/Santa Clara/relatorio-contas-sad-2019-20.pdf` (sourceId `santaclara-pt-relatorio-contas-sad-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2021 desde `Clubes/Portugal/Santa Clara/relatorio-contas-sad-2020-21.pdf` (sourceId `santaclara-pt-relatorio-contas-sad-2020-21`).
