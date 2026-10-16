@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2021-22.md",
   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2021-22.pdf",
-  "club": "santa-clara",
+  "club": "santaclara-pt",
   "year": 2022,
-  "generatedAt": "2026-10-15T21:55:07.888Z",
+  "generatedAt": "2026-10-15T23:54:38.685Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.147464
       ],
-      "glosa": "Venta de entradas para partidos"
+      "glosa": "Entradas para partidos"
     },
     {
       "label": "Apostas desportivas e Placard",
@@ -54,7 +54,7 @@
       "values": [
         1.227285
       ],
-      "glosa": "Premios de participación"
+      "glosa": "Premios por participación"
     },
     {
       "label": "Direitos televisivos",
@@ -64,7 +64,7 @@
       "values": [
         3.69
       ],
-      "glosa": "Derechos televisivos"
+      "glosa": "Derechos de televisión"
     },
     {
       "label": "Cêdencia por empréstimos direitos desportivos",
@@ -124,7 +124,7 @@
       "values": [
         0.125361
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontratos"
     },
     {
       "label": "Trabalhos especializados",
@@ -224,7 +224,7 @@
       "values": [
         0.001536
       ],
-      "glosa": "Artículos para obsequio"
+      "glosa": "Artículos para regalo"
     },
     {
       "label": "Energia e Fluidos",
@@ -274,7 +274,7 @@
       "values": [
         0.010649
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Contencioso e Notariado",
@@ -354,7 +354,7 @@
       "values": [
         0.451947
       ],
-      "glosa": "Seguro de accidentes de trabajo y enfermedades"
+      "glosa": "Seguro de accidentes de trabajo y enfermedades profesionales"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -374,7 +374,7 @@
       "values": [
         -0.766
       ],
-      "glosa": "Deterioro del valor de créditos a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -394,7 +394,7 @@
       "values": [
         0.000206
       ],
-      "glosa": "Impuesto Municipal sobre Inmuebles (IMI)"
+      "glosa": "Impuesto sobre Bienes Inmuebles (IMI)"
     },
     {
       "label": "IUC",
@@ -424,7 +424,7 @@
       "values": [
         0.009784
       ],
-      "glosa": "Impuesto de timbre"
+      "glosa": "Impuesto de Actos Jurídicos Documentados y Timbre"
     },
     {
       "label": "Taxas",
@@ -494,7 +494,7 @@
       "values": [
         0.000384
       ],
-      "glosa": "Insuficiencia de la estimación para impuestos"
+      "glosa": "Insuficiencia de estimación para impuestos"
     },
     {
       "label": "Multas e penalidades",
@@ -534,7 +534,7 @@
       "values": [
         0.117731
       ],
-      "glosa": "Dotaciones/reversiones por amortización y depreciación"
+      "glosa": "Gastos/reversiones por depreciación y amortización"
     }
   ]
 }

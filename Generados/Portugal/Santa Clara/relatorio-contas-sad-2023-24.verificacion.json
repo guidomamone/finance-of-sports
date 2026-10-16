@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.pdf",
  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.md",
- "generado": "2026-10-15T21:55:07.940Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.726Z",
+ "estado": "ok",
+ "clubId": "santaclara-pt",
  "year": 2024,
  "escala": {
   "valor": "unidades",
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "d06b801",
-  "55d8f1a",
-  "0b07513"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -52,7 +48,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [

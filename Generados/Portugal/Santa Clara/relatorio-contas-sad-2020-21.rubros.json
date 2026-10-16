@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2020-21.md",
   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2020-21.pdf",
-  "club": "santa-clara",
+  "club": "santaclara-pt",
   "year": 2021,
-  "generatedAt": "2026-10-15T21:55:07.871Z",
+  "generatedAt": "2026-10-15T23:54:38.664Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         0.010527
       ],
-      "glosa": "Ingresos por taquilla"
+      "glosa": "Entradas para partidos"
     },
     {
       "label": "Apostas desportivas Placard",
@@ -64,7 +64,7 @@
       "values": [
         0.10317
       ],
-      "glosa": "Premios de participación (Copa de Portugal y Liga)"
+      "glosa": "Premios de participación (Copa de Port. y Liga)"
     },
     {
       "label": "Direitos televisivos",
@@ -124,7 +124,7 @@
       "values": [
         0.011814
       ],
-      "glosa": "Instituto de Seguridad Social - ERTE"
+      "glosa": "Instituto de la Seguridad Social - Layoff"
     },
     {
       "label": "RAA - Fundo Regional Emprego",
@@ -184,7 +184,7 @@
       "values": [
         0.04031
       ],
-      "glosa": "Coste de las mercancías vendidas y materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
     },
     {
       "label": "Fornecimentos e serviços externos",
@@ -194,7 +194,7 @@
       "values": [
         2.509163
       ],
-      "glosa": "Servicios exteriores"
+      "glosa": "Suministros y servicios exteriores"
     },
     {
       "label": "Renumerações Órgãos Sociais",
@@ -204,7 +204,7 @@
       "values": [
         0.375223
       ],
-      "glosa": "Retribuciones de los órganos de gobierno"
+      "glosa": "Remuneraciones de los órganos sociales"
     },
     {
       "label": "Renumerações Atletas",
@@ -214,7 +214,7 @@
       "values": [
         3.528836
       ],
-      "glosa": "Retribuciones a deportistas"
+      "glosa": "Remuneraciones a deportistas"
     },
     {
       "label": "Renumerações equipa técnica (treinadores)",
@@ -224,7 +224,7 @@
       "values": [
         0.409731
       ],
-      "glosa": "Retribuciones del cuerpo técnico (entrenadores)"
+      "glosa": "Remuneraciones del cuerpo técnico (entrenadores)"
     },
     {
       "label": "Renumerações ao pessoal",
@@ -234,7 +234,7 @@
       "values": [
         0.341035
       ],
-      "glosa": "Retribuciones al personal"
+      "glosa": "Remuneraciones al personal"
     },
     {
       "label": "Acordos Revogação",
@@ -254,7 +254,7 @@
       "values": [
         0.458158
       ],
-      "glosa": "Cargas sociales sobre retribuciones"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguro acidentes de trabalho e doenças",
@@ -284,7 +284,7 @@
       "values": [
         0.766
       ],
-      "glosa": "Pérdidas por deterioro de cuentas a cobrar"
+      "glosa": "Deterioro de créditos por cobrar"
     },
     {
       "label": "Outros gastos",
@@ -304,7 +304,7 @@
       "values": [
         0.213727
       ],
-      "glosa": "Gastos/reversiones de amortización y depreciación"
+      "glosa": "Gastos/reversiones de depreciación y amortización"
     }
   ]
 }

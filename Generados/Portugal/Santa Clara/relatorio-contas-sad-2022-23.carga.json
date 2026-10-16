@@ -1,24 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2022-23.pdf",
- "generado": "2026-10-15T22:34:48.210Z",
- "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (santaclara-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "7 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Direção Regional do Turismo\" -> other_income 0.6; \"UEFA Surplus\" -> competition_bonus 0.6; \"Equipamentos\" -> admin_general_expense 0.55; \"Remunerações ao pessoal\" -> wages_squad 0.7; \"Outros gastos com pessoal\" -> wages_squad 0.45"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-16T00:11:54.993Z",
+ "frena": [],
  "avisos": [
   "gastos: ningún total impreso igual a la suma de las líneas (-14.557093); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-06-30); pregunta en la cola (no frena)"
@@ -115,9 +98,9 @@
     "amountNative": 0.9,
     "disclosureLevel": "aggregated",
     "_pag": 33,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Compensação dos encargos com deslocações",
@@ -135,9 +118,9 @@
     "amountNative": 0.059,
     "disclosureLevel": "aggregated",
     "_pag": 33,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros rendimentos",
@@ -277,9 +260,9 @@
     "amountNative": -0.010578,
     "disclosureLevel": "aggregated",
     "_pag": 34,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Energia e fluidos",
@@ -387,9 +370,9 @@
     "amountNative": -7.478088,
     "disclosureLevel": "aggregated",
     "_pag": 35,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Indemnizações",
@@ -427,9 +410,9 @@
     "amountNative": -0.301453,
     "disclosureLevel": "aggregated",
     "_pag": 35,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Imparidade de dívidas a receber (perdas/reversões)",
@@ -497,9 +480,9 @@
     "amountNative": -0.000007,
     "disclosureLevel": "aggregated",
     "_pag": 36,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Descontos de pronto pagamento concedidos",
@@ -593,13 +576,13 @@
    },
    {
     "rawLabel": "Gastos/reversões de depreciação e de amortização",
-    "normalizedCategory": "depreciation",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -0.49653,
     "disclosureLevel": "aggregated",
     "_pag": 11,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -638,7 +621,7 @@
    "title": "Santa Clara Açores - Futebol, S.A.D. — relatorio-contas-sad-2022-23 (ejercicio 2023)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Santa Clara/relatorio-contas-sad-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Santa Clara/relatorio-contas-sad-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2022-23.md",
@@ -788,11 +771,11 @@
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.9,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Subsidio del gobierno regional (Turismo): other_income, igual que DRJD de Nacional (respuesta de Guido). [relatorio-contas-sad-2022-23.md L1333: Direção Regional do Turismo 900 000]",
    "destino": "revenue",
    "amountNative": 0.9
   },
@@ -819,11 +802,11 @@
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.059,
    "cat": "competition_bonus",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Pago de UEFA ligado a competiciones (surplus del programa de clubes); equivalente a los premios por competencia. Importe chico (59 000). [relatorio-contas-sad-2022-23.md L1335: UEFA Surplus 59 000]",
    "destino": "revenue",
    "amountNative": 0.059
   },
@@ -1030,11 +1013,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.010578,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Fila de Materiais dentro de FSE, vecina de Ferramentas e utensílios (admin_general_expense por Guido en Moreirense). [relatorio-contas-sad-2022-23.md L1375: Equipamentos 10 578 (FSE, Materiais)]",
    "destino": "expense",
    "amountNative": -0.010578
   },
@@ -1197,11 +1180,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 7.478088,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Mismo mapeo que Moreirense (respuesta de Guido): Remunerações do pessoal es wages_squad. La nota no separa plantel de administrativos. [relatorio-contas-sad-2022-23.md L1417: Remunerações ao pessoal 7 478 088]",
    "destino": "expense",
    "amountNative": -7.478088
   },
@@ -1259,11 +1242,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.301453,
    "cat": "wages_squad",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Rubro residual de gastos con personal sin desglose (301 453); acompaña al sueldo de su sector (cargas van con el sueldo), como Indemnizações y Encargos en Moreirense. [relatorio-contas-sad-2022-23.md L1421: Outros gastos com pessoal 301 453]",
    "destino": "expense",
    "amountNative": -0.301453
   },
@@ -1365,11 +1348,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.000007,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Tasas (7 €) dentro de Outros gastos: impuestos y tasas van a admin_general_expense; igual que IUC ya categorizado en este club. [relatorio-contas-sad-2022-23.md L1481: Taxas 7]",
    "destino": "expense",
    "amountNative": -0.000007
   },
@@ -1515,12 +1498,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0.49653,
-   "cat": "depreciation",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): fila del estado 496 530, de los cuales 445 154 son amortización de intangibles (plantel); precedente Moreirense para la misma fila",
    "destino": "expense",
    "amountNative": -0.49653
   },
@@ -1641,8 +1624,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 4,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 12,
   "lineasGasto": 45,
   "metaFilas": 3,

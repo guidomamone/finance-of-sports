@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2019-20.pdf",
  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2019-20.md",
- "generado": "2026-10-15T21:55:07.835Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.642Z",
+ "estado": "ok",
+ "clubId": "santaclara-pt",
  "year": 2020,
  "escala": {
   "valor": "unidades",
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "6f1069c",
-  "d1f2c25"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -41,13 +38,14 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"Outros rendimentos\" no suma el renglón (2.51862 contra 2.517276, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Outros gastos\" no suma el renglón (0.551639 contra 0.551838, sumando sus renglones): quedó el renglón del estado",
   "línea 603: 551 838,46 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (55163846) el resultado daría -54.184814 y no cierra)",
+  "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"Outros rendimentos\"): aceptar, en relatorio-contas-sad-2021-22.pdf",
   "duda de extraer que no afecta la carga: Diferencia de 200 entre nota (L1832) y estado (L603); las partidas de b34 suman 551 639, posible error en el estado o fila faltante."
  ],
  "reintentar": [

@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.md",
   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.pdf",
-  "club": "santa-clara",
+  "club": "santaclara-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T21:55:07.941Z",
+  "generatedAt": "2026-10-15T23:54:38.726Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.071567
       ],
-      "glosa": "Ingresos por taquilla"
+      "glosa": "Entradas para partidos"
     },
     {
       "label": "Apostas Desportivas e Placard",
@@ -54,7 +54,7 @@
       "values": [
         0.065016
       ],
-      "glosa": "Premios de participación"
+      "glosa": "Premios por participación"
     },
     {
       "label": "Direitos Televisivos",
@@ -64,7 +64,7 @@
       "values": [
         0.45
       ],
-      "glosa": "Derechos de televisión"
+      "glosa": "Derechos audiovisuales"
     },
     {
       "label": "Cedência por Empréstimos Direitos Desportivos",
@@ -84,7 +84,7 @@
       "values": [
         0.001
       ],
-      "glosa": "Diversos"
+      "glosa": "Ingresos diversos"
     },
     {
       "label": "Subsídios à exploração",
@@ -134,7 +134,7 @@
       "values": [
         0.360009
       ],
-      "glosa": "Intereses y otros ingresos similares"
+      "glosa": "Intereses y otros ingresos financieros similares"
     },
     {
       "label": "Custo das mercadorias vendidas e das matérias consumidas",
@@ -154,7 +154,7 @@
       "values": [
         0.286702
       ],
-      "glosa": "Subcontratación"
+      "glosa": "Subcontratos"
     },
     {
       "label": "Serviços Especializados",
@@ -214,7 +214,7 @@
       "values": [
         0.272994
       ],
-      "glosa": "Retribución de órganos de gobierno"
+      "glosa": "Remuneraciones de los órganos sociales"
     },
     {
       "label": "Remunerações ao Pessoal",
@@ -224,7 +224,7 @@
       "values": [
         9.259487
       ],
-      "glosa": "Retribuciones del personal"
+      "glosa": "Remuneraciones del personal"
     },
     {
       "label": "Indemnizações",
@@ -244,7 +244,7 @@
       "values": [
         1.036626
       ],
-      "glosa": "Cargas sociales sobre salarios"
+      "glosa": "Cargas sociales sobre las remuneraciones"
     },
     {
       "label": "Seguro Acidentes de Trabalho e Doenças",
@@ -274,7 +274,7 @@
       "values": [
         0.20227
       ],
-      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos a cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -304,7 +304,7 @@
       "values": [
         0.000574
       ],
-      "glosa": "Impuesto de circulación (IUC)"
+      "glosa": "Impuesto Único de Circulación (IUC)"
     },
     {
       "label": "Imposto de Selo",
@@ -314,7 +314,7 @@
       "values": [
         0.149233
       ],
-      "glosa": "Impuesto de actos jurídicos documentados y timbre"
+      "glosa": "Impuesto de timbre"
     },
     {
       "label": "Taxas",
@@ -344,7 +344,7 @@
       "values": [
         0.01234
       ],
-      "glosa": "Donativos"
+      "glosa": "Donaciones"
     },
     {
       "label": "Quotizações",
@@ -414,7 +414,7 @@
       "values": [
         1.198188
       ],
-      "glosa": "Dotaciones/reversiones de amortizaciones y depreciaciones"
+      "glosa": "Gastos/reversiones de amortización y depreciación"
     }
   ]
 }

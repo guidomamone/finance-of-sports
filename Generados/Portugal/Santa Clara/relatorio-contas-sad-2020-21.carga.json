@@ -1,26 +1,364 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2020-21.pdf",
- "generado": "2026-10-15T22:34:48.023Z",
+ "generado": "2026-10-16T00:11:54.781Z",
  "frena": [
   {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (santaclara-pt)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Renumerações ao pessoal\" -> wages_squad 0.6; \"Acordos Revogação\" -> wages_squad 0.7"
   }
  ],
- "avisos": [],
- "ejercicio": null,
+ "avisos": [
+  "materialidad: \"Equipamento desportivo\" va como sponsorship_commercial con 0.75 (las dudas de ingresos suman 0.54% de su lado)",
+  "gestión: ningún presidente confirmado cubre 2021 (cierre 2021-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "santaclara-pt",
+  "year": 2021,
+  "cierre": "2021-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Equipamento desportivo",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.074739,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": "materialidad",
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.54% (≤ 1%) y esta tiene 0.75"
+   },
+   {
+    "rawLabel": "Merchandising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.006006,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ingressos para jogos",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.010527,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Apostas desportivas Placard",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.220513,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Publicidade",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.51189,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Prémios de participação (Taça Port. e Liga)",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.10317,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Direitos televisivos",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 5.341176,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Licença Electronic - konami",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.01,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cedência por empréstimos direitos desportivos",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.083295,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diversos",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.002234,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Direção Regional do Turismo",
+    "normalizedCategory": "other_income",
+    "amountNative": 1,
+    "disclosureLevel": "aggregated",
+    "_pag": 49,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Inst.Seg Social Layoff",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.011814,
+    "disclosureLevel": "aggregated",
+    "_pag": 49,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "RAA - Fundo Regional Emprego",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.000168,
+    "disclosureLevel": "aggregated",
+    "_pag": 49,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Vice-Presidência Deslocações",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.05158,
+    "disclosureLevel": "aggregated",
+    "_pag": 49,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Donativos",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.016068,
+    "disclosureLevel": "aggregated",
+    "_pag": 52,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cedência de direitos desportivos",
+    "normalizedCategory": "player_sales",
+    "amountNative": 6.495,
+    "disclosureLevel": "aggregated",
+    "_pag": 52,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros rendimentos",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.000797,
+    "disclosureLevel": "aggregated",
+    "_pag": 52,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Custo das mercadorias vendidas e das matérias consumidas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.04031,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Fornecimentos e serviços externos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.509163,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Renumerações Órgãos Sociais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.375223,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Renumerações Atletas",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -3.528836,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Renumerações equipa técnica (treinadores)",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.409731,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Renumerações ao pessoal",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.341035,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Acordos Revogação",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.212587,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 2,
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Encargos sobre renumerações",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.458158,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 2,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Seguro acidentes de trabalho e doenças",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.497092,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros gastos com pessoal",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.843839,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Imparidades de dívidas a receber",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.766,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros gastos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -2.64349,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos/reversões de depreciação e de amortização",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.213727,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2021-06-30",
+   "sourceId": "santaclara-pt-relatorio-contas-sad-2020-21",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.219058,
+   "tax": -0.058194,
+   "extraRows": [
+    {
+     "label": "Juros e rendimentos similares obtidos",
+     "value": 0.000005
+    },
+    {
+     "label": "Juros e gastos similares suportados",
+     "value": -0.219063
+    },
+    {
+     "label": "Imposto sobre o rendimento do período",
+     "value": -0.058194
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 13.938977,
+   "officialTotalExpenses": 12.83919,
+   "officialPAT": 0.822535
+  },
+  "source": {
+   "id": "santaclara-pt-relatorio-contas-sad-2020-21",
+   "clubId": "santaclara-pt",
+   "title": "Santa Clara Açores - Futebol, S.A.D. — relatorio-contas-sad-2020-21 (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Santa Clara/relatorio-contas-sad-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2020-21.md",
  "reemplaza": false,
  "periodo": {
@@ -37,5 +375,595 @@
  },
  "clubId": "santaclara-pt",
  "year": 2021,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 33,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Equipamento desportivo",
+   "page": 48,
+   "native": 0.074739,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 0.074739,
+   "cat": "sponsorship_commercial",
+   "conf": 0.75,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.54% (≤ 1%) y esta tiene 0.75",
+   "enLista": true,
+   "enCola": false,
+   "destino": "revenue",
+   "amountNative": 0.074739
+  },
+  {
+   "label": "Merchandising",
+   "page": 48,
+   "native": 0.006006,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 0.006006,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.006006
+  },
+  {
+   "label": "Ingressos para jogos",
+   "page": 48,
+   "native": 0.010527,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 0.010527,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.010527
+  },
+  {
+   "label": "Apostas desportivas Placard",
+   "page": 48,
+   "native": 0.220513,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 0.220513,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.220513
+  },
+  {
+   "label": "Publicidade",
+   "page": 48,
+   "native": 0.51189,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 0.51189,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.51189
+  },
+  {
+   "label": "Prémios de participação (Taça Port. e Liga)",
+   "page": 48,
+   "native": 0.10317,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 0.10317,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.10317
+  },
+  {
+   "label": "Direitos televisivos",
+   "page": 48,
+   "native": 5.341176,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 5.341176,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.341176
+  },
+  {
+   "label": "Licença Electronic - konami",
+   "page": 48,
+   "native": 0.01,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 0.01,
+   "cat": "sponsorship_commercial",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.01
+  },
+  {
+   "label": "Cedência por empréstimos direitos desportivos",
+   "page": 48,
+   "native": 0.083295,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 0.083295,
+   "cat": "player_sales",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.083295
+  },
+  {
+   "label": "Diversos",
+   "page": 48,
+   "native": 0.002234,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 0.002234,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.002234
+  },
+  {
+   "label": "Direção Regional do Turismo",
+   "page": 49,
+   "native": 1,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
+   "signoFijo": 1,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Subsidio del gobierno regional (Turismo): other_income, igual que DRJD de Nacional (respuesta de Guido). [relatorio-contas-sad-2022-23.md L1333: Direção Regional do Turismo 900 000]",
+   "destino": "revenue",
+   "amountNative": 1
+  },
+  {
+   "label": "Inst.Seg Social Layoff",
+   "page": 49,
+   "native": 0.011814,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
+   "signoFijo": 0.011814,
+   "cat": "other_income",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.011814
+  },
+  {
+   "label": "RAA - Fundo Regional Emprego",
+   "page": 49,
+   "native": 0.000168,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
+   "signoFijo": 0.000168,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.000168
+  },
+  {
+   "label": "Vice-Presidência Deslocações",
+   "page": 49,
+   "native": 0.05158,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
+   "signoFijo": 0.05158,
+   "cat": "other_income",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.05158
+  },
+  {
+   "label": "Donativos",
+   "page": 52,
+   "native": 0.016068,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 0.016068,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.016068
+  },
+  {
+   "label": "Cedência de direitos desportivos",
+   "page": 52,
+   "native": 6.495,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 6.495,
+   "cat": "player_sales",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.495
+  },
+  {
+   "label": "Outros rendimentos",
+   "page": 52,
+   "native": 0.000797,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 0.000797,
+   "cat": "other_income",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.000797
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "page": 23,
+   "native": 0.04031,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.04031,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.04031
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "page": 23,
+   "native": 2.509163,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.509163,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.509163
+  },
+  {
+   "label": "Renumerações Órgãos Sociais",
+   "page": 51,
+   "native": 0.375223,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
+   "signoFijo": 0.375223,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.375223
+  },
+  {
+   "label": "Renumerações Atletas",
+   "page": 51,
+   "native": 3.528836,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
+   "signoFijo": 3.528836,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.528836
+  },
+  {
+   "label": "Renumerações equipa técnica (treinadores)",
+   "page": 51,
+   "native": 0.409731,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
+   "signoFijo": 0.409731,
+   "cat": "wages_squad",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.409731
+  },
+  {
+   "label": "Renumerações ao pessoal",
+   "page": 51,
+   "native": 0.341035,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
+   "signoFijo": 0.341035,
+   "cat": "wages_squad",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.341035
+  },
+  {
+   "label": "Acordos Revogação",
+   "page": 51,
+   "native": 0.212587,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
+   "signoFijo": 0.212587,
+   "cat": "wages_squad",
+   "conf": 0.7,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.212587
+  },
+  {
+   "label": "Encargos sobre renumerações",
+   "page": 51,
+   "native": 0.458158,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
+   "signoFijo": 0.458158,
+   "cat": "wages_squad",
+   "conf": 0.9,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.458158
+  },
+  {
+   "label": "Seguro acidentes de trabalho e doenças",
+   "page": 51,
+   "native": 0.497092,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
+   "signoFijo": 0.497092,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.497092
+  },
+  {
+   "label": "Outros gastos com pessoal",
+   "page": 51,
+   "native": 0.843839,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
+   "signoFijo": 0.843839,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Rubro residual de gastos con personal sin desglose (301 453); acompaña al sueldo de su sector (cargas van con el sueldo), como Indemnizações y Encargos en Moreirense. [relatorio-contas-sad-2022-23.md L1421: Outros gastos com pessoal 301 453]",
+   "destino": "expense",
+   "amountNative": -0.843839
+  },
+  {
+   "label": "Imparidades de dívidas a receber",
+   "page": 23,
+   "native": 0.766,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.766,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.766
+  },
+  {
+   "label": "Outros gastos",
+   "page": 23,
+   "native": 2.64349,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.64349,
+   "cat": "other_expenses",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.64349
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização",
+   "page": 23,
+   "native": 0.213727,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.213727,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): fila del estado 496 530, de los cuales 445 154 son amortización de intangibles (plantel); precedente Moreirense para la misma fila",
+   "destino": "expense",
+   "amountNative": -0.213727
+  },
+  {
+   "label": "Juros e rendimentos similares obtidos",
+   "page": null,
+   "native": 0.000005,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Juros e gastos similares suportados",
+   "page": null,
+   "native": -0.219063,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposto sobre o rendimento do período",
+   "page": null,
+   "native": -0.058194,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Subsídios à exploração\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Gastos com o pessoal\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 13.938977,
+  "expSum": -12.839191,
+  "officialTotalRevenue": 13.938977,
+  "officialTotalExpenses": 12.83919,
+  "officialPAT": 0.822535,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.822535,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 13.938977
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 12.83919
+  }
+ },
+ "liga": {
+  "valor": "pt-primeiraliga",
+  "fuente": "roster cacheado de \"2020–21 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Santa Clara\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (92 de 95 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Portugal (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2021-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2021-06-30 = 0.8415 (Cierre BCE al 30/6/2021 (1 EUR = 1,1884 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "santaclara-pt-relatorio-contas-sad-2020-21",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "pt-primeiraliga",
+   "fuente": "roster cacheado de \"2020–21 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Santa Clara\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 17,
+  "lineasGasto": 13,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

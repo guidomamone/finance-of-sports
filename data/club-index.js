@@ -194,7 +194,7 @@ window.CLUB_INDEX = {
   "sampdoria-it": {"n":"Sampdoria","c":"IT","q":"full","y":4,"last":2021,"yrs":[[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
   "sanfreccehiroshima": {"n":"Sanfrecce Hiroshima","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "sanlorenzo": {"n":"San Lorenzo","c":"AR","q":"full","y":8,"last":2024,"yrs":[[2024,"official_budget"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"],[2015,"official_balance_sheet"],[2014,"official_balance_sheet"],[2013,"official_balance_sheet"],[2012,"official_balance_sheet"],[2011,"official_balance_sheet"]]},
-  "santaclara-pt": {"n":"Santa Clara","c":"PT","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
+  "santaclara-pt": {"n":"Santa Clara","c":"PT","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "santafe-co": {"n":"Independiente Santa Fe","c":"CO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "santos-br": {"n":"Santos","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "saopaulo-br": {"n":"São Paulo","c":"BR","q":"full","y":2,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
