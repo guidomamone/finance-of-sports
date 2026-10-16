@@ -67,6 +67,9 @@ window.RANKINGS["pt-ligaportugal2"] = {
   2023: {
     leagueSize: null,
     clubs: [
+      { id:"torreense-pt", revenue:6.002, reportType:"official_balance_sheet",
+        sourceId:"torreense-pt-sad-relatoriocontas2022-2023",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.866],["Otros ingresos",5.137]] },
       { id:"moreirense-pt", revenue:4.889, reportType:"official_balance_sheet",
         sourceId:"moreirense-pt-relatorio-contas-2022-23",
         mix:[["Comercial / Sponsors",0.001],["Televisión",0.598],["Premios por competencias",0.002],["Venta de Jugadores",2.238],["Otros ingresos",2.05]],
