@@ -444,7 +444,7 @@ export const VOCABULARIO = {
   // rótulo dice cuál suma y cuál resta. Una fila que matchea los dos (o ninguno) queda con su signo impreso.
   FIN_INGRESO: {
     es: ['ingresos financieros', 'ingreso financiero', 'intereses ganados', 'intereses cobrados', 'rendimientos financieros'],
-    pt: ['receitas financeiras', 'receita financeira', 'rendimentos financeiros', 'juros ativos', 'juros recebidos', 'juros auferidos'],
+    pt: ['receitas financeiras', 'receita financeira', 'rendimentos financeiros', 'juros ativos', 'juros recebidos', 'juros auferidos', 'rendimentos similares obtidos'],
     en: ['finance income', 'financial income', 'interest income', 'interest receivable', 'interest received', 'investment income'],
     de: ['zinsertrage', 'zinsen und ahnliche ertrage', 'finanzertrage', 'finanzertrag'], fr: ['produits financiers'],
     it: ['proventi finanziari', 'interessi attivi'], nl: ['financiele baten', 'rentebaten', 'financiele opbrengsten'],
@@ -455,7 +455,7 @@ export const VOCABULARIO = {
   },
   FIN_GASTO: {
     es: ['gastos financieros', 'gasto financiero', 'intereses pagados', 'costos financieros', 'costes financieros'],
-    pt: ['despesas financeiras', 'despesa financeira', 'juros passivos', 'juros pagos', 'encargos financeiros'],
+    pt: ['despesas financeiras', 'despesa financeira', 'juros passivos', 'juros pagos', 'encargos financeiros', 'gastos similares suportados'],
     en: ['finance costs', 'finance cost', 'financial expense*', 'financial costs', 'interest expense', 'interest payable', 'interest paid'],
     de: ['zinsaufwand', 'zinsaufwendungen', 'zinsen und ahnliche aufwendungen', 'finanzaufwand', 'finanzaufwendungen'], fr: ['charges financieres'],
     it: ['oneri finanziari', 'interessi passivi'], nl: ['financiele lasten', 'rentelasten'],
