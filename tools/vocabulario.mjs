@@ -560,7 +560,7 @@ export const VOCABULARIO = {
   // ---- CAJA y DEUDA FINANCIERA del balance (Versión 352, tools/caja-deuda.mjs, escalón 1). Al comienzo de una etiqueta. Caja: lo que el sitio
   // guarda en fiscalYearMeta.cash. Deuda financiera: el criterio por defecto de grossDebt para un club sin precedente (club-data-mapping/referencia/formato-simplificado.md, "grossDebt", ok de Guido 2026-10-01): préstamos y obligaciones bancarias/financieras, corriente + no corriente; NUNCA el total del pasivo.
   CAJA: {
-    es: ['efectivo y equivalente*', 'caja y banco*', 'caja y equivalente*', 'disponibilidades', 'caja'], pt: ['caixa e equivalente*', 'disponibilidades', 'caixa e bancos'],
+    es: ['efectivo y equivalente*', 'caja y banco*', 'caja y equivalente*', 'disponibilidades', 'caja'], pt: ['caixa e equivalente*', 'disponibilidades', 'caixa e bancos', 'caixa e depositos bancarios'], // el último: rubro del formato SNC (to-do caja y deuda, 2026-10-16; 135 de 186 documentos de Portugal)
     en: ['cash and cash equivalent*', 'cash at bank*', 'cash and bank*', 'cash'], de: ['flussige mittel', 'kassenbestand*', 'guthaben bei kreditinstitut*', 'liquide mittel'],
     fr: ['tresorerie et equivalent*', 'disponibilites'], it: ['disponibilita liquide', 'cassa e disponibilita*'], nl: ['liquide middelen', 'geldmiddelen'],
     da: ['likvide beholdninger', 'likvide midler'], no: ['bankinnskudd*', 'kontanter og bankinnskudd'], sv: ['kassa och bank', 'likvida medel'],

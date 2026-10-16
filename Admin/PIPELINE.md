@@ -735,7 +735,8 @@ Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentar
  AJUSTE MANUAL `caja` / `deuda` del año (Versiones 419 y 495): el número tal cual impreso, gana sobre la escalera y NO pasa por la
             compuerta (es una decisión de Guido)
  ESCALÓN 0  precedente del club (las familias que suman lo cargado en el año más cercano)
- ESCALÓN 1  diccionario (vocabulario.mjs) + términos del club o del documento (ajuste `deuda-incluye`); jerarquía de balancete: padre e
+ ESCALÓN 1  diccionario (vocabulario.mjs; en portugués también "Caixa e depósitos bancários", el rubro del SNC) + términos del club o
+            del documento (ajuste `deuda-incluye`); jerarquía de balancete: padre e
             hija no se suman; cuenta D no es deuda. Además propone: deuda corriente + no corriente de la misma etiqueta (exactamente
             dos filas, a cada lado del total del pasivo no corriente); las filas de la nota de efectivo si la caja es una parte; el total
             de la nota de deuda si no hay otra fila de deuda
