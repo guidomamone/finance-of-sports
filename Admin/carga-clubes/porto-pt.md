@@ -118,6 +118,79 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Porto".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Porto/wf-2023-2024-293efed8.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Porto/wf-2023-2024-293efed8.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas | pág. 43, precedente |
+| 2 | Prémios competições europeias | pág. 105, Jev 1 |
+| 3 | Receita de bilheteira | pág. 105, precedente |
+| 4 | Receita de lugares anuais | pág. 105, precedente |
+| 5 | Outras receitas desportivas | pág. 105, precedente |
+| 6 | Publicidade | pág. 105, precedente |
+| 7 | Direitos de transmissões | pág. 105, precedente |
+| 8 | Corporate Hospitality | pág. 105, precedente |
+| 9 | Outras prestações de serviços | pág. 105, precedente |
+| 10 | Outros proveitos | pág. 43, precedente |
+| 11 | Proveitos com alienações de passes de jogadores (i) | pág. 109, precedente |
+| 12 | Proveitos com empréstimos de jogadores | pág. 109, precedente |
+| 13 | Outros proveitos com jogadores | pág. 109, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 |  | pág. 87, precedente |
+| 2 | Perdas por imparidade | pág. 87, precedente |
+| 3 | Trabalhos especializados | pág. 106, precedente |
+| 4 | Subcontratos | pág. 106, precedente |
+| 5 | Material desportivo | pág. 106, precedente |
+| 6 | Despesas de representação | pág. 106, precedente |
+| 7 | Despesas de organização | pág. 106, precedente |
+| 8 | Vigilância e segurança | pág. 106, precedente |
+| 9 | Seguros | pág. 106, precedente |
+| 10 | Rendas e alugueres | pág. 106, precedente |
+| 11 | Direitos de imagem de atletas | pág. 106, precedente |
+| 12 | Honorários | pág. 106, precedente |
+| 13 | Publicidade e propaganda | pág. 106, precedente |
+| 14 | Conservação e reparação | pág. 106, precedente |
+| 15 | Comunicação | pág. 106, precedente |
+| 16 | Combustíveis | pág. 106, precedente |
+| 17 | Eletricidade | pág. 106, precedente |
+| 18 | Limpeza, higiene e conforto | pág. 106, precedente |
+| 19 | Serviços de catering | pág. 106, precedente |
+| 20 | Outros fornecimentos e serviços | pág. 106, precedente |
+| 21 | Custos com o pessoal | pág. 43, precedente |
+| 22 | Depreciações e Amortizações, excluindo passes de jogadores | pág. 43, precedente |
+| 23 | Provisões e perdas por imparidade excluindo passes de jogadores | pág. 43, precedente |
+| 24 | Outros custos | pág. 43, precedente |
+| 25 | Amortizações de passes de jogadores | pág. 109, precedente |
+| 26 | Perdas por imparidade com passes de jogadores | pág. 109, precedente |
+| 27 | Custos com alienações de passes de jogadores (ii) | pág. 109, precedente |
+| 28 | Custos com empréstimos de jogadores | pág. 109, precedente |
+| 29 | Outros custos com jogadores | pág. 109, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cero-real = Cuotas sociales. Documento de FC Porto SAD (no del club asociación): la SAD no cobra cuotas; perfil de porto-pt = sí por los consolidados del club 2016-2023. Igual que 2024-25.
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cero-real = Otras secciones deportivas. Documento de FC Porto SAD: solo la modalidad fútbol; las modalidades son del club asociación. Igual que 2024-25.
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2023–24 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Porto".
+```
+
 ## 2023
 
 ### Ingresos
@@ -363,7 +436,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2016, 2017, 2018, 2019, 2022, 2023, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias
+tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias
 ```
 
 ### Liga
@@ -817,4 +890,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Porto/relatorio-contas-consolidadas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### porto-pt-wf-2023-2024-293efed8
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Porto/wf-2023-2024-293efed8.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

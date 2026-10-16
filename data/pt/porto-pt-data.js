@@ -171,6 +171,21 @@ const portoptRevenueLinesByYear = {
     { rawLabel:'Proveitos com empréstimos de jogadores', normalizedCategory:'player_sales', amountNative:0.62, disclosureLevel:'aggregated' },
     { rawLabel:'Outros proveitos com jogadores', normalizedCategory:'player_sales', amountNative:7.043997, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Vendas', normalizedCategory:'sponsorship_commercial', amountNative:10.964494, disclosureLevel:'aggregated' },
+    { rawLabel:'Prémios competições europeias', normalizedCategory:'competition_bonus', amountNative:65.032255, disclosureLevel:'aggregated' },
+    { rawLabel:'Receita de bilheteira', normalizedCategory:'matchday_competition', amountNative:7.279933, disclosureLevel:'aggregated' },
+    { rawLabel:'Receita de lugares anuais', normalizedCategory:'season_tickets', amountNative:4.575169, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras receitas desportivas', normalizedCategory:'other_income', amountNative:2.203918, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:20.566113, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos de transmissões', normalizedCategory:'broadcasting', amountNative:42.635493, disclosureLevel:'aggregated' },
+    { rawLabel:'Corporate Hospitality', normalizedCategory:'stadium_other', amountNative:9.837117, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras prestações de serviços', normalizedCategory:'other_income', amountNative:9.785155, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros proveitos', normalizedCategory:'other_income', amountNative:1.618929, disclosureLevel:'aggregated' },
+    { rawLabel:'Proveitos com alienações de passes de jogadores (i)', normalizedCategory:'player_sales', amountNative:68.04363, disclosureLevel:'aggregated' },
+    { rawLabel:'Proveitos com empréstimos de jogadores', normalizedCategory:'player_sales', amountNative:0.870563, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros proveitos com jogadores', normalizedCategory:'player_sales', amountNative:1.860681, disclosureLevel:'aggregated' },
+  ],
 };
 const portoptExpenseLinesByYear = {
   2025: [
@@ -502,6 +517,37 @@ const portoptExpenseLinesByYear = {
     { rawLabel:'Custos com empréstimos de jogadores', normalizedCategory:'other_expenses', amountNative:-0.165, disclosureLevel:'aggregated' },
     { rawLabel:'Outros custos com jogadores', normalizedCategory:'other_expenses', amountNative:-3.164943, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'', normalizedCategory:'other_expenses', amountNative:-6.587753, disclosureLevel:'aggregated' },
+    { rawLabel:'Perdas por imparidade', normalizedCategory:'other_expenses', amountNative:0.120395, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-17.010257, disclosureLevel:'aggregated' },
+    { rawLabel:'Subcontratos', normalizedCategory:'admin_general_expense', amountNative:-7.217555, disclosureLevel:'aggregated' },
+    { rawLabel:'Material desportivo', normalizedCategory:'other_expenses', amountNative:-1.603014, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas de representação', normalizedCategory:'admin_general_expense', amountNative:-1.019267, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas de organização', normalizedCategory:'match_organisation_expense', amountNative:-2.765269, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e segurança', normalizedCategory:'match_organisation_expense', amountNative:-2.464775, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-1.18207, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e alugueres', normalizedCategory:'admin_general_expense', amountNative:-1.652154, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos de imagem de atletas', normalizedCategory:'wages_squad', amountNative:-6.701986, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-2.139564, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade e propaganda', normalizedCategory:'admin_general_expense', amountNative:-1.418837, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e reparação', normalizedCategory:'admin_general_expense', amountNative:-3.038169, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.795012, disclosureLevel:'aggregated' },
+    { rawLabel:'Combustíveis', normalizedCategory:'admin_general_expense', amountNative:-0.816255, disclosureLevel:'aggregated' },
+    { rawLabel:'Eletricidade', normalizedCategory:'admin_general_expense', amountNative:-0.490343, disclosureLevel:'aggregated' },
+    { rawLabel:'Limpeza, higiene e conforto', normalizedCategory:'admin_general_expense', amountNative:-1.0562, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços de catering', normalizedCategory:'match_organisation_expense', amountNative:-1.67557, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros fornecimentos e serviços', normalizedCategory:'other_expenses', amountNative:-3.735309, disclosureLevel:'aggregated' },
+    { rawLabel:'Custos com o pessoal', normalizedCategory:'wages_squad', amountNative:-89.419466, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciações e Amortizações, excluindo passes de jogadores', normalizedCategory:'depreciation', amountNative:-9.774683, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisões e perdas por imparidade excluindo passes de jogadores', normalizedCategory:'other_amortisation', amountNative:-10.896657, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros custos', normalizedCategory:'other_expenses', amountNative:-3.124829, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortizações de passes de jogadores', normalizedCategory:'player_amortisation', amountNative:-29.364657, disclosureLevel:'aggregated' },
+    { rawLabel:'Perdas por imparidade com passes de jogadores', normalizedCategory:'player_impairment', amountNative:-3.013496, disclosureLevel:'aggregated' },
+    { rawLabel:'Custos com alienações de passes de jogadores (ii)', normalizedCategory:'player_amortisation', amountNative:-25.927152, disclosureLevel:'aggregated' },
+    { rawLabel:'Custos com empréstimos de jogadores', normalizedCategory:'other_expenses', amountNative:-0.453928, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros custos com jogadores', normalizedCategory:'other_expenses', amountNative:-2.815935, disclosureLevel:'aggregated' },
+  ],
 };
 const portoptFiscalYearMeta = {
   2025: {
@@ -633,6 +679,22 @@ const portoptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:192.494197, officialTotalExpenses:218.932323, officialPAT:-48.289955,
   },
+  2024: {
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'porto-pt-wf-2023-2024-293efed8',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-29.831474, tax:0.027293,
+    extraRows: [
+      {label:'Custos e perdas financeiras', value:-31.716318},
+      {label:'Proveitos e ganhos financeiros', value:2.058012},
+      {label:'Resultados relativos a investimentos', value:-0.173168},
+      {label:'Imposto sobre o rendimento', value:0.027293},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:245.27345, officialTotalExpenses:238.039767, officialPAT:-22.570498,
+  },
 };
 const portoptPresupuestoOverlayByYear = {};
 
@@ -687,6 +749,11 @@ Object.assign(sources, {
   'porto-pt-relatorio-contas-consolidadas-2022-23': {
     id:'porto-pt-relatorio-contas-consolidadas-2022-23', clubId:'porto-pt',
     title:'Futebol Clube do Porto — relatorio-contas-consolidadas-2022-23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'porto-pt-wf-2023-2024-293efed8': {
+    id:'porto-pt-wf-2023-2024-293efed8', clubId:'porto-pt',
+    title:'Futebol Clube do Porto — wf-2023-2024-293efed8 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
