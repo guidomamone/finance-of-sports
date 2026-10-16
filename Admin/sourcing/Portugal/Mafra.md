@@ -14,3 +14,5 @@
 - Documentos hallados y bajados del sitio del club; no se verificó que cada uno traiga cuenta de resultados. Revisar la entidad (club/sociedad/koncern) de cada PDF antes de cargar.
 - Prestação de contas de la temporada 2023/24.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf` (sourceId `mafra-pt-prestacao-contas-epoca-2023-2024-final`).

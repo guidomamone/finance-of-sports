@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
- "generado": "2026-10-16T02:49:45.212Z",
+ "generado": "2026-10-16T03:18:44.348Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (mafra-pt)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
@@ -22,26 +18,6 @@
   "cierre": "2024-06-30",
   "perimetro": "individual",
   "revenueLines": [
-   {
-    "rawLabel": "Vendas",
-    "normalizedCategory": "sponsorship_commercial",
-    "amountNative": 0.000682,
-    "disclosureLevel": "aggregated",
-    "_pag": 26,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
-   },
-   {
-    "rawLabel": "Prestações de Serviço",
-    "normalizedCategory": "other_income",
-    "amountNative": 1.274462,
-    "disclosureLevel": "aggregated",
-    "_pag": 26,
-    "_escalon": 1,
-    "_conf": 0.98,
-    "_fuenteCat": "categorias.json"
-   },
    {
     "rawLabel": "Subsídios à exploração",
     "normalizedCategory": "other_income",
@@ -110,6 +86,66 @@
     "_pag": 27,
     "_escalon": 1,
     "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Receitas de bilheteira",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.025811,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Patrocínios, publicidade e corporate",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.14687,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Receitas de televisão",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.45,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Merchandising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.000682,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Competições da UEFA e nacionais",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.015353,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros rendimentos operacionais",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.636427,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    }
   ],
@@ -587,45 +623,93 @@
    "evidencia": "PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md L1001",
    "autor": "Claude",
    "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
+   "campo": "fila",
+   "valor": "25.811,26",
+   "linea": 1441,
+   "etiqueta": "Receitas de bilheteira",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 481,
+   "motivo": "Vendas e serviços prestados se abre con el Anexo 3 (formato UEFA), que cierra exacto; evita el reintento pago por TV y estadio en 0.",
+   "evidencia": "PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md L1441-1452 (Anexo 3, formato UEFA, columna ED*-1): suman 1.275.143,83 = Vendas e serviços prestados del estado (L481)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
+   "campo": "fila",
+   "valor": "146.869,92",
+   "linea": 1442,
+   "etiqueta": "Patrocínios, publicidade e corporate",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de Vendas e serviços prestados (Anexo 3).",
+   "evidencia": "PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md L1441-1452 (Anexo 3, formato UEFA, columna ED*-1): suman 1.275.143,83 = Vendas e serviços prestados del estado (L481)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
+   "campo": "fila",
+   "valor": "450.000,00",
+   "linea": 1443,
+   "etiqueta": "Receitas de televisão",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de Vendas e serviços prestados (Anexo 3).",
+   "evidencia": "PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md L1441-1452 (Anexo 3, formato UEFA, columna ED*-1): suman 1.275.143,83 = Vendas e serviços prestados del estado (L481)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
+   "campo": "fila",
+   "valor": "682,17",
+   "linea": 1444,
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de Vendas e serviços prestados (Anexo 3).",
+   "evidencia": "PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md L1441-1452 (Anexo 3, formato UEFA, columna ED*-1): suman 1.275.143,83 = Vendas e serviços prestados del estado (L481)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
+   "campo": "fila",
+   "valor": "15.353,07",
+   "linea": 1445,
+   "etiqueta": "Competições da UEFA e nacionais",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de Vendas e serviços prestados (Anexo 3).",
+   "evidencia": "PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md L1441-1452 (Anexo 3, formato UEFA, columna ED*-1): suman 1.275.143,83 = Vendas e serviços prestados del estado (L481)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
+   "campo": "fila",
+   "valor": "636.427,41",
+   "linea": 1452,
+   "etiqueta": "Outros rendimentos operacionais (Anexo 3)",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de Vendas e serviços prestados (Anexo 3).",
+   "evidencia": "PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md L1441-1452 (Anexo 3, formato UEFA, columna ED*-1): suman 1.275.143,83 = Vendas e serviços prestados del estado (L481)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "seleccion": {
-  "filas": 51,
+  "filas": 55,
   "notasUsadas": [],
   "refM": null
  },
  "filas": [
-  {
-   "label": "Vendas",
-   "page": 26,
-   "native": 0.000682,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
-   "signoFijo": 0.000682,
-   "cat": "sponsorship_commercial",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
-   "notaGuido": "precedente del país: 1 clubes (Moreirense), nota:vendas e servicos prestados · Claude 2026-10-15 (subagente Sonnet, seguridad media): venta de mercadería [relatorio-contas-2024-25.md L1009]",
-   "destino": "revenue",
-   "amountNative": 0.000682
-  },
-  {
-   "label": "Prestações de Serviço",
-   "page": 26,
-   "native": 1.274462,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
-   "signoFijo": 1.274462,
-   "cat": "other_income",
-   "conf": 0.98,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 1.274462
-  },
   {
    "label": "Subsídios à exploração",
    "page": 16,
@@ -730,6 +814,96 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.004156
+  },
+  {
+   "label": "Receitas de bilheteira",
+   "page": 36,
+   "native": 0.025811,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.025811,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.025811
+  },
+  {
+   "label": "Patrocínios, publicidade e corporate",
+   "page": 36,
+   "native": 0.14687,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.14687,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.14687
+  },
+  {
+   "label": "Receitas de televisão",
+   "page": 36,
+   "native": 0.45,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.45,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.45
+  },
+  {
+   "label": "Merchandising",
+   "page": 36,
+   "native": 0.000682,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.000682,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.000682
+  },
+  {
+   "label": "Competições da UEFA e nacionais",
+   "page": 36,
+   "native": 0.015353,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.015353,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.015353
+  },
+  {
+   "label": "Outros rendimentos operacionais",
+   "page": 36,
+   "native": 0.636427,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.636427,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.636427
   },
   {
    "label": "Custo das mercadorias vendidas e das matérias consumidas",
@@ -1356,19 +1530,8 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
-   "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos con signo",
    "verificacion (ajuste manual)": "gastos con signo",
@@ -1386,7 +1549,7 @@
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 3.909178,
+  "revSum": 3.909177,
   "expSum": -4.920644,
   "officialTotalRevenue": 3.909177,
   "officialTotalExpenses": 4.926838,
@@ -1462,8 +1625,8 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
-  "lineasIngreso": 9,
+  "motivos": 1,
+  "lineasIngreso": 13,
   "lineasGasto": 39,
   "metaFilas": 3,
   "excluidas": 0

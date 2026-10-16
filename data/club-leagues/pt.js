@@ -32,4 +32,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'torreense-pt': { 2024: 'pt-ligaportugal2', 2022: 'pt-liga3', 2023: 'pt-ligaportugal2' },
   'uniaodeleiria-pt': { 2024: 'pt-ligaportugal2', 2023: 'pt-liga3' },
   'casapia-pt': { 2025: 'pt-primeiraliga' },
+  'mafra-pt': { 2024: 'pt-ligaportugal2' },
 });
