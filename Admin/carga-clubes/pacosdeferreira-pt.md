@@ -112,6 +112,10 @@ Generados/Portugal/Paços de Ferreira/contas_2425.categorias.json (escalón de c
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 2; cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 2
+```
+
 ### Liga
 
 ```text
@@ -192,6 +196,10 @@ Generados/Portugal/Paços de Ferreira/contas23_24.categorias.json (escalón de c
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 1; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 1
+```
+
 ### Liga
 
 ```text
@@ -266,6 +274,10 @@ Generados/Portugal/Paços de Ferreira/contas22_23.categorias.json (escalón de c
 ```text
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): anio = 2023. El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2023 según el registro (periodo.cierre).
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 1; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 1
 ```
 
 ### Liga
@@ -346,6 +358,10 @@ Generados/Portugal/Paços de Ferreira/contas21_22.categorias.json (escalón de c
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 28.199,10. Claude 2026-10-16 (lote 82): la fila está dentro de la nota 'Outros Rendimentos' (Cedências 1.576.106,85 + Diferenças de câmbio 28.199,10 + Placard 338.529,17 + Outros 241.427,30 = 2.184.262,42), pero la extracción la puso como gasto y la categorización la sacó (no_es_rubro). Es ingreso: sin ella el resultado da -498.594 en vez de -470.395 (diferencia 28.199). Como Marítimo 2023 y Santa Clara 2024-25 (to-do 237 w)
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): categoria = other_income. Claude 2026-10-16 (lote 82): diferencia de cambio favorable operativa, en la nota de Outros Rendimentos: other_income, como Tondela 2020-21 (la categorización la había sacado con no_es_rubro)
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 1; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 1
 ```
 
 ### Liga

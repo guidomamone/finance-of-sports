@@ -112,6 +112,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 25
+```
+
 ### Liga
 
 ```text
@@ -180,6 +184,10 @@ Generados/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.cate
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): incluye = broadcasting. Claude 2026-10-16 (lote 82): la nota de Vendas e prestação de serviços no tiene renglón de TV; el documento dice que la variación de Publicidade e Patrocínios se explica por la baja de los derechos de transmisión televisiva: la TV está dentro de ese renglón
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 27 + "Financiamentos obtidos" pág. 27; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 27
 ```
 
 ### Liga
@@ -253,6 +261,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 32 + "Financiamentos obtidos" pág. 32; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 32
+```
+
 ### Liga
 
 ```text
@@ -321,6 +333,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 28 + "Financiamentos obtidos" pág. 28; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 28
+```
+
 ### Liga
 
 ```text
@@ -386,6 +402,10 @@ Generados/Portugal/Maritimo/MaritimoSAD_RC_30.06.2021.categorias.json (escalón 
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): incluye = broadcasting. Claude 2026-10-16 (lote 82): la nota de Vendas e prestação de serviços (Publicidade e patrocínios, Cedências, Bilheteira, Outros) no tiene renglón de TV, y el documento atribuye la variación de Vendas e Prestações de Serviços a los derechos de transmisión televisiva; Marítimo 2024 dice que están en Publicidade e Patrocínios. Posible porque este año no nombra el renglón
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 27 + "Financiamentos obtidos" pág. 27; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 27
 ```
 
 ### Liga

@@ -94,6 +94,10 @@ Generados/Portugal/Académica/RC-SDUQ-2023-2024.categorias.json (escalón de cad
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos Obtidos" pág. 2 + "Financiamentos Obtidos" pág. 2; cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 2
+```
+
 ### Liga
 
 ```text
@@ -158,6 +162,10 @@ Generados/Portugal/Académica/10-RC-SDUQ-2022-2023.categorias.json (escalón de 
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos Obtidos" pág. 9 + "Financiamentos Obtidos" pág. 9; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 9
+```
+
 ### Liga
 
 ```text
@@ -216,6 +224,10 @@ Generados/Portugal/Académica/9-RC-SDUQ-2021-2022.categorias.json (escalón de c
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos Obtidos" pág. 6 + "Financiamentos Obtidos" pág. 6; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 6
 ```
 
 ### Liga

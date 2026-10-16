@@ -92,6 +92,10 @@ incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con ot
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 2; cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 2
+```
+
 ### Liga
 
 ```text
@@ -139,6 +143,10 @@ Generados/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.categoria
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 2
 ```
 
 ### Liga

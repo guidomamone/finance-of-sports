@@ -534,7 +534,7 @@ const rioaveptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.268983},
       {label:'Imposto sobre o rendimento do período', value:null},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:3.501321, cash:3.80365,
     officialTotalRevenue:7.939188, officialTotalExpenses:9.265391, officialPAT:-1.659019,
   },
   2017: {
@@ -548,7 +548,7 @@ const rioaveptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.081883},
       {label:'Imposto sobre o rendimento do período', value:-0.792541},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.097497,
     officialTotalRevenue:25.701485, officialTotalExpenses:15.729811, officialPAT:9.097251,
   },
   2019: {
@@ -562,7 +562,7 @@ const rioaveptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.235605},
       {label:'Imposto sobre o rendimento do período', value:-0.049545},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:3.333333, cash:2.335072,
     officialTotalRevenue:18.648544, officialTotalExpenses:13.467675, officialPAT:1.892463,
   },
   2020: {
@@ -577,7 +577,7 @@ const rioaveptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.105284},
       {label:'Imposto sobre o rendimento do período', value:-0.099317},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:2.588834,
     officialTotalRevenue:12.881624, officialTotalExpenses:11.142127, officialPAT:1.459909,
   },
   2022: {
@@ -591,7 +591,7 @@ const rioaveptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.102855},
       {label:'Imposto sobre o rendimento do período', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:2.322328,
     officialTotalRevenue:6.836575, officialTotalExpenses:11.7439, officialPAT:-6.058969,
   },
   2023: {
@@ -601,7 +601,7 @@ const rioaveptFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-0.357169, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:3.909166, cash:1.26077,
     officialTotalRevenue:7.715111, officialTotalExpenses:13.012327, officialPAT:-7.805557,
   },
   2025: {
@@ -630,7 +630,7 @@ const rioaveptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.021949},
       {label:'Imposto sobre o rendimento do período', value:-0.006415},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.103074,
     officialTotalRevenue:6.920547, officialTotalExpenses:6.88658, officialPAT:0.005602,
   },
   2024: {

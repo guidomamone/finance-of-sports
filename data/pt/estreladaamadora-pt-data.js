@@ -71,7 +71,7 @@ const estreladaamadoraptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:1.07693, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.007356,
     officialTotalRevenue:1.886476, officialTotalExpenses:4.785272, officialPAT:-2.905739,
   },
   2022: {
@@ -84,7 +84,7 @@ const estreladaamadoraptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.976145, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.005976,
     officialTotalRevenue:1.58963, officialTotalExpenses:2.02632, officialPAT:-0.450101,
   },
 };

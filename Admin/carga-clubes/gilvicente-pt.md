@@ -404,6 +404,10 @@ Generados/Portugal/Gil Vicente/wf-src-Relatorio_SDUQ_Final.categorias.json (esca
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 13 + "Financiamentos obtidos" pág. 13; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 13
+```
+
 ### Liga
 
 ```text
@@ -494,6 +498,10 @@ Generados/Portugal/Gil Vicente/relatorio-contas-2020-21.categorias.json (escaló
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 17 + "Financiamentos obtidos" pág. 17; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 17
 ```
 
 ### Liga

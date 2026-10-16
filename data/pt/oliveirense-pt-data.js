@@ -108,7 +108,7 @@ const oliveirenseptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Prestação de serviços', lado:'revenue', importe:1.141257, motivo:'Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): \'Prestação de serviços\' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:6.679944, cash:0.744551,
     officialTotalRevenue:1.864788, officialTotalExpenses:3.567885, officialPAT:-1.736289,
   },
   2023: {
@@ -126,7 +126,7 @@ const oliveirenseptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Prestação de serviços', lado:'revenue', importe:0.571986, motivo:'Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): \'Prestação de serviços\' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:3.674536, cash:0.136569,
     officialTotalRevenue:1.145694, officialTotalExpenses:2.123294, officialPAT:-0.931672,
   },
   2024: {
@@ -144,7 +144,7 @@ const oliveirenseptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Prestação de serviços', lado:'revenue', importe:1.325492, motivo:'Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): \'Prestação de serviços\' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:4.841621, cash:0.414566,
     officialTotalRevenue:1.833554, officialTotalExpenses:3.099986, officialPAT:-1.162041,
   },
 };

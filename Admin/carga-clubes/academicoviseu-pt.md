@@ -112,6 +112,10 @@ Generados/Portugal/Academico Viseu/wf-2024-2025-efe7ad0a.categorias.json (escal�
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 9
+```
+
 ### Liga
 
 ```text
@@ -192,6 +196,10 @@ Generados/Portugal/Academico Viseu/wf-2023-2024-02d5741e.categorias.json (escal�
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 9
+```
+
 ### Liga
 
 ```text
@@ -252,6 +260,10 @@ Generados/Portugal/Academico Viseu/wf-2022-2023-b797bc64.categorias.json (escal�
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 6
 ```
 
 ### Liga
@@ -326,6 +338,10 @@ Generados/Portugal/Academico Viseu/wf-src-RC21_22.categorias.json (escalón de c
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): anio = 2022. El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2022 según el registro (periodo.cierre).
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cero-real = Estadio. Claude 2026-10-16 (lote 82): la nota 9.1 de rédito imprime 'Receitas de bilheteira' 0,00 en 2021/2022 (y en 2020/2021): sin ingresos de estadio ese año
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 5
 ```
 
 ### Liga

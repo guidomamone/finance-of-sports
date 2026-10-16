@@ -296,6 +296,10 @@ Generados/Portugal/Rio Ave/Relatorio_SDUQ_2022-2023.categorias.json (escalón de
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 11; cash escalón 2 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 11
+```
+
 ### Liga
 
 ```text
@@ -380,6 +384,10 @@ Generados/Portugal/Rio Ave/relatorio-contas-2021-22.categorias.json (escalón de
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 13
+```
+
 ### Liga
 
 ```text
@@ -461,6 +469,10 @@ Generados/Portugal/Rio Ave/relatorio-contas-2019-20.categorias.json (escalón de
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 2
+```
+
 ### Liga
 
 ```text
@@ -540,6 +552,10 @@ Generados/Portugal/Rio Ave/relatorio-contas-2018-19.categorias.json (escalón de
 ```text
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2019-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2019-06-30
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 1 + "Financiamentos obtidos" pág. 1; cash escalón 2 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 1
 ```
 
 ### Liga
@@ -626,6 +642,10 @@ Generados/Portugal/Rio Ave/relatorio-contas-2017-18.categorias.json (escalón de
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 10; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 10
+```
+
 ### Liga
 
 ```text
@@ -708,6 +728,10 @@ Generados/Portugal/Rio Ave/relatorio-contas-2016-17.categorias.json (escalón de
 ```text
 2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2017-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2017-06-30
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 12
 ```
 
 ### Liga
@@ -794,6 +818,10 @@ Generados/Portugal/Rio Ave/relatorio-contas-2015-16.categorias.json (escalón de
 ```text
 2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2016-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2016-06-30
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 3
 ```
 
 ### Liga

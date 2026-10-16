@@ -224,7 +224,7 @@ const maritimoptFiscalYearMeta = {
       {label:'Imposto sobre o rendimento', value:-0.698437},
     ],
     incluidoEn:{"broadcasting":{"en":"sponsorship_commercial","posible":true}},
-    grossDebt:null, cash:null,
+    grossDebt:0.507755, cash:15.144512,
     officialTotalRevenue:14.967829, officialTotalExpenses:12.191827, officialPAT:2.048385,
   },
   2022: {
@@ -240,7 +240,7 @@ const maritimoptFiscalYearMeta = {
       {label:'Imposto sobre o rendimento', value:-0.175346},
     ],
     incluidoEn:{"broadcasting":{"en":"sponsorship_commercial","posible":true}},
-    grossDebt:null, cash:null,
+    grossDebt:0.449425, cash:6.747112,
     officialTotalRevenue:14.21389, officialTotalExpenses:12.644454, officialPAT:1.388062,
   },
   2023: {
@@ -255,7 +255,7 @@ const maritimoptFiscalYearMeta = {
       {label:'Imposto sobre o rendimento', value:0.008323},
     ],
     incluidoEn:{"broadcasting":{"en":"sponsorship_commercial","posible":true}},
-    grossDebt:null, cash:null,
+    grossDebt:0.256981, cash:2.390553,
     officialTotalRevenue:14.403189, officialTotalExpenses:14.679255, officialPAT:-0.338616,
   },
   2024: {
@@ -270,7 +270,7 @@ const maritimoptFiscalYearMeta = {
       {label:'Imposto sobre o rendimento', value:null},
     ],
     incluidoEn:{"broadcasting":"sponsorship_commercial"},
-    grossDebt:null, cash:null,
+    grossDebt:0.164789, cash:0.150018,
     officialTotalRevenue:6.028518, officialTotalExpenses:10.549663, officialPAT:-4.496269,
   },
   2025: {
@@ -285,7 +285,7 @@ const maritimoptFiscalYearMeta = {
       {label:'Imposto sobre o rendimento', value:null},
     ],
     incluidoEn:{"broadcasting":{"en":"sponsorship_commercial","posible":true}},
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.400168,
     officialTotalRevenue:6.665468, officialTotalExpenses:8.883706, officialPAT:-2.302562,
   },
 };

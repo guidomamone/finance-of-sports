@@ -277,6 +277,10 @@ Generados/Portugal/Arouca/relatorio-contas-2022-23.categorias.json (escalón de 
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 8 + "Financiamentos obtidos" pág. 8
+```
+
 ### Liga
 
 ```text
@@ -350,6 +354,10 @@ Generados/Portugal/Arouca/relatorio-contas-2021-22.categorias.json (escalón de 
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 9 + "Financiamentos obtidos" pág. 9
 ```
 
 ### Liga

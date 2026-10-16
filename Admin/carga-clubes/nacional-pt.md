@@ -118,6 +118,10 @@ Generados/Portugal/Nacional/relatorio-contas-2024-25.categorias.json (escalón d
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 3
+```
+
 ### Liga
 
 ```text
@@ -196,6 +200,10 @@ Generados/Portugal/Nacional/relatorio-contas-2023-24.categorias.json (escalón d
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 3
+```
+
 ### Liga
 
 ```text
@@ -271,6 +279,10 @@ Generados/Portugal/Nacional/relatorio-contas-2022-23.categorias.json (escalón d
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 3
 ```
 
 ### Liga
@@ -353,6 +365,10 @@ Generados/Portugal/Nacional/relatorio-contas-2021-22.categorias.json (escalón d
 ```text
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cierre = 2022-06-30. periodo.mjs tomó 30/06/2021 (columna comparativa); el informe es del período de doce meses findo el 30/06/2022.
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 3
 ```
 
 ### Liga

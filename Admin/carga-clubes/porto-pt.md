@@ -536,6 +536,13 @@ Generados/Portugal/Porto/relatorio-contas-consolidadas-2018-19.categorias.json (
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-16): Claude 2026-10-16: balance consolidado en euros (L944); Jev había tomado la tabla en miles (L611)
+```
+
 ### Liga
 
 ```text
@@ -629,6 +636,13 @@ Generados/Portugal/Porto/relatorio-contas-consolidadas-2017-18.categorias.json (
 ```text
 2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cero-real = Otras secciones deportivas. Las modalidades del club no tienen fila propia: sus ingresos vienen mezclados en 'Outras receitas desportivas' (con Taça, pretemporada y Dragon Force) y sus gastos dentro de FSE y personal; no se pueden separar sin inventar (subagente Sonnet, revisado por Claude).
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-16): Claude 2026-10-16: balance consolidado en euros (L842); Jev había tomado la tabla en miles (L584)
 ```
 
 ### Liga
@@ -726,6 +740,13 @@ Generados/Portugal/Porto/relatorio-contas-consolidadas-2016-17.categorias.json (
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-16): Claude 2026-10-16: balance consolidado en euros (L842); Jev había tomado la tabla en miles (L587)
+```
+
 ### Liga
 
 ```text
@@ -818,6 +839,13 @@ Generados/Portugal/Porto/relatorio-contas-consolidadas-2015-16.categorias.json (
 ```text
 2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cero-real = Otras secciones deportivas. Las modalidades del club no tienen fila propia: sus ingresos vienen mezclados en 'Outras receitas desportivas' (con Taça, pretemporada y Dragon Force) y sus gastos dentro de FSE y personal; no se pueden separar sin inventar (subagente Sonnet, revisado por Claude).
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-16): Claude 2026-10-16: balance consolidado en euros (L976); Jev había tomado la tabla del informe de gestión en miles (L657, '7.392') como euros
 ```
 
 ### Liga

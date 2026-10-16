@@ -131,7 +131,7 @@ const torreenseptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:4.77215, motivo:'Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:12.413842, cash:0.001333,
     officialTotalRevenue:8.156787, officialTotalExpenses:7.61791, officialPAT:0.013961,
   },
   2022: {
@@ -148,7 +148,7 @@ const torreenseptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.057377, motivo:'Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2.909845, cash:0.007283,
     officialTotalRevenue:2.334103, officialTotalExpenses:2.257188, officialPAT:0.022249,
   },
   2023: {
@@ -166,7 +166,7 @@ const torreenseptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.796703, motivo:'Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:7.196232, cash:0.001872,
     officialTotalRevenue:5.524037, officialTotalExpenses:5.232153, officialPAT:0.070443,
   },
 };

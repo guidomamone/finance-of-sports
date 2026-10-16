@@ -272,39 +272,39 @@ PERÚ (1)
   Alianza Lima  6 ejercicios (2019 a 2024), balance, PEN
 
 PT (33)
-  Académica           3 ejercicios (2021/2022 a 2023/2024), balance, EUR, sin deuda/caja
-  Academico Viseu     4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
-  Alverca             4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
-  Arouca              4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
+  Académica           3 ejercicios (2021/2022 a 2023/2024), balance, EUR
+  Academico Viseu     4 ejercicios (2021/2022 a 2024/2025), balance, EUR
+  Alverca             4 ejercicios (2021/2022 a 2024/2025), balance, EUR
+  Arouca              4 ejercicios (2021/2022 a 2024/2025), balance, EUR
   AVS                 3 ejercicios (2020/2021, 2022/2023, 2023/2024), balance, EUR, sin deuda/caja
-  Belenenses          2 ejercicios (2023/2024 a 2024/2025), balance, EUR, sin deuda/caja
-  Benfica             19 ejercicios (2005/2006, 2006/2007, 2007/2008, 2008/2009, 2009/2010, 2011/2012, 2012/2013, 2013/2014, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025, 2025/2026), balance, EUR, sin deuda/caja
+  Belenenses          2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+  Benfica             19 ejercicios (2005/2006, 2006/2007, 2007/2008, 2008/2009, 2009/2010, 2011/2012, 2012/2013, 2013/2014, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025, 2025/2026), balance, EUR
   Boavista            1 ejercicio (2023/2024), balance, EUR, sin deuda/caja
-  Braga               7 ejercicios (2015/2016, 2016/2017, 2019/2020, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
-  Casa Pia            4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
+  Braga               7 ejercicios (2015/2016, 2016/2017, 2019/2020, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
+  Casa Pia            4 ejercicios (2021/2022 a 2024/2025), balance, EUR
   Chaves              2 ejercicios (2021/2022 a 2022/2023), balance, EUR, sin deuda/caja
-  Estoril Praia       4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
-  Estrela da Amadora  2 ejercicios (2021/2022 a 2022/2023), balance, EUR, sin deuda/caja
+  Estoril Praia       4 ejercicios (2021/2022 a 2024/2025), balance, EUR
+  Estrela da Amadora  2 ejercicios (2021/2022 a 2022/2023), balance, EUR
   Famalicão           7 ejercicios (2018/2019 a 2024/2025), balance, EUR, sin deuda/caja
   Felgueiras          3 ejercicios (2021/2022 a 2023/2024), balance, EUR
-  Gil Vicente         5 ejercicios (2020/2021 a 2024/2025), balance, EUR, sin deuda/caja
-  Leixoes             3 ejercicios (2022/2023 a 2024/2025), balance, EUR, sin deuda/caja
+  Gil Vicente         5 ejercicios (2020/2021 a 2024/2025), balance, EUR
+  Leixoes             3 ejercicios (2022/2023 a 2024/2025), balance, EUR
   Mafra               1 ejercicio (2023/2024), balance, EUR, sin deuda/caja
-  Maritimo            5 ejercicios (2020/2021 a 2024/2025), balance, EUR, sin deuda/caja
-  Moreirense          4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
-  Nacional            4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
-  Oliveirense         3 ejercicios (2022/2023 a 2024/2025), balance, EUR, sin deuda/caja
-  Paços de Ferreira   5 ejercicios (2019/2020, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
-  Portimonense        4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
-  Porto               9 ejercicios (2015/2016, 2016/2017, 2017/2018, 2018/2019, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
-  Rio Ave             9 ejercicios (2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
-  Santa Clara         6 ejercicios (2019/2020 a 2024/2025), balance, EUR, sin deuda/caja
-  Sporting CP         24 ejercicios (1999/2000, 2000/2001, 2001/2002, 2002/2003, 2003/2004, 2004/2005, 2005/2006, 2006/2007, 2007/2008, 2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, PTE/EUR, sin deuda/caja
+  Maritimo            5 ejercicios (2020/2021 a 2024/2025), balance, EUR
+  Moreirense          4 ejercicios (2021/2022 a 2024/2025), balance, EUR
+  Nacional            4 ejercicios (2021/2022 a 2024/2025), balance, EUR
+  Oliveirense         3 ejercicios (2022/2023 a 2024/2025), balance, EUR
+  Paços de Ferreira   5 ejercicios (2019/2020, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
+  Portimonense        4 ejercicios (2021/2022 a 2024/2025), balance, EUR
+  Porto               9 ejercicios (2015/2016, 2016/2017, 2017/2018, 2018/2019, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
+  Rio Ave             9 ejercicios (2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
+  Santa Clara         6 ejercicios (2019/2020 a 2024/2025), balance, EUR
+  Sporting CP         24 ejercicios (1999/2000, 2000/2001, 2001/2002, 2002/2003, 2003/2004, 2004/2005, 2005/2006, 2006/2007, 2007/2008, 2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, PTE/EUR
   Tondela             1 ejercicio (2020/2021), balance, EUR, sin deuda/caja
-  Torreense           3 ejercicios (2021/2022 a 2023/2024), balance, EUR, sin deuda/caja
-  União de Leiria     2 ejercicios (2022/2023 a 2023/2024), balance, EUR, sin deuda/caja
+  Torreense           3 ejercicios (2021/2022 a 2023/2024), balance, EUR
+  União de Leiria     2 ejercicios (2022/2023 a 2023/2024), balance, EUR
   Vitória Guimarães   4 ejercicios (2020/2021, 2021/2022, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
-  Vizela              4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
+  Vizela              4 ejercicios (2021/2022 a 2024/2025), balance, EUR
 
 RU (16)
   Akhmat Grozny          4 ejercicios (2022 a 2025), balance, RUB, sin deuda/caja

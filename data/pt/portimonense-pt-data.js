@@ -200,7 +200,7 @@ const portimonenseptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.366821},
       {label:'Imposto sobre o rendimento do período', value:-0.329269},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.157411,
     officialTotalRevenue:9.565184, officialTotalExpenses:13.574984, officialPAT:-4.70589,
   },
   2022: {
@@ -217,7 +217,7 @@ const portimonenseptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Prestações de Serviços', lado:'revenue', importe:4.387657, motivo:'Claude 2026-10-16 (revisado): el renglón se reemplaza por bilheteira, publicidade y TV con ajustes \'fila\' (cuadro de gestión, cierra exacto).'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:4.147526,
     officialTotalRevenue:21.9736, officialTotalExpenses:17.233504, officialPAT:4.401551,
   },
   2024: {
@@ -235,7 +235,7 @@ const portimonenseptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Prestações de Serviços', lado:'revenue', importe:4.94831, motivo:'Claude 2026-10-16 (revisado): el renglón se reemplaza por bilheteira, publicidade y TV con ajustes \'fila\' (cuadro de gestión, cierra exacto).'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.246222,
     officialTotalRevenue:9.712256, officialTotalExpenses:16.187753, officialPAT:-6.739942,
   },
   2023: {
@@ -252,7 +252,7 @@ const portimonenseptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Prestações de Serviços', lado:'revenue', importe:4.442864, motivo:'Claude 2026-10-16 (revisado): el renglón se reemplaza por bilheteira, publicidade y TV con ajustes \'fila\' (cuadro de gestión, cierra exacto).'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.390108,
     officialTotalRevenue:13.980915, officialTotalExpenses:15.377046, officialPAT:-1.597143,
   },
 };

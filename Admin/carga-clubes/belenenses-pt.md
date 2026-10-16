@@ -102,6 +102,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 3
+```
+
 ### Liga
 
 ```text
@@ -159,6 +163,10 @@ Generados/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.categ
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 6
 ```
 
 ### Liga

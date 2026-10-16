@@ -132,6 +132,10 @@ Generados/Portugal/Braga/relatorio-contas-2024-25.categorias.json (escalón de c
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 76
+```
+
 ### Liga
 
 ```text
@@ -231,6 +235,10 @@ Generados/Portugal/Braga/relatorio-contas-2023-24.categorias.json (escalón de c
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 79
 ```
 
 ### Liga
@@ -333,6 +341,10 @@ Generados/Portugal/Braga/Relato_rio-Contas-2022-23-SAD.categorias.json (escalón
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 69
+```
+
 ### Liga
 
 ```text
@@ -430,6 +442,10 @@ Generados/Portugal/Braga/relatorio-contas-2021-22.categorias.json (escalón de c
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 66
 ```
 
 ### Liga
@@ -616,6 +632,10 @@ Generados/Portugal/Braga/relatorio-contas-2016-17.categorias.json (escalón de c
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 40
+```
+
 ### Liga
 
 ```text
@@ -697,6 +717,10 @@ Generados/Portugal/Braga/relatorio-contas-2015-16.categorias.json (escalón de c
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 44
 ```
 
 ### Liga

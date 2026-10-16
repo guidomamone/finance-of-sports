@@ -246,7 +246,7 @@ const aroucaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.000251},
       {label:'Imposto sobre o rendimento do período', value:-0.037944},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.03525, cash:null,
     officialTotalRevenue:5.094546, officialTotalExpenses:5.607571, officialPAT:-0.606415,
   },
   2023: {
@@ -256,7 +256,7 @@ const aroucaptFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:0, tax:-0.360802,
-    grossDebt:null, cash:null,
+    grossDebt:0.026438, cash:null,
     officialTotalRevenue:8.77516, officialTotalExpenses:7.974954, officialPAT:0.414325,
   },
   2024: {

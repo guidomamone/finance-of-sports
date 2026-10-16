@@ -194,7 +194,7 @@ const estorilpraiaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.458154},
       {label:'Imposto sobre o rendimento do período', value:-0.030609},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:4.846825,
     officialTotalRevenue:8.36841, officialTotalExpenses:15.699586, officialPAT:-7.870416,
   },
   2022: {
@@ -208,7 +208,7 @@ const estorilpraiaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.086719},
       {label:'Imposto sobre o rendimento do período', value:-0.020716},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.776992,
     officialTotalRevenue:9.548583, officialTotalExpenses:9.879659, officialPAT:-0.438511,
   },
   2023: {
@@ -222,7 +222,7 @@ const estorilpraiaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.05226},
       {label:'Imposto sobre o rendimento do período', value:-0.043821},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:3.176534, cash:1.091772,
     officialTotalRevenue:12.580322, officialTotalExpenses:12.065974, officialPAT:0.418266,
   },
   2024: {
@@ -236,7 +236,7 @@ const estorilpraiaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.00792},
       {label:'Imposto sobre o rendimento do período', value:-0.029229},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:8.517811,
     officialTotalRevenue:14.147357, officialTotalExpenses:13.924068, officialPAT:0.186141,
   },
 };

@@ -95,7 +95,7 @@ const alvercaptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.09357, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.047464,
     officialTotalRevenue:0.1523, officialTotalExpenses:2.550781, officialPAT:-2.416477,
   },
   2023: {
@@ -112,7 +112,7 @@ const alvercaptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.063878, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.00424,
     officialTotalRevenue:0.827308, officialTotalExpenses:4.076494, officialPAT:-3.257014,
   },
   2024: {
@@ -129,7 +129,7 @@ const alvercaptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.069051, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.080657,
     officialTotalRevenue:0.754874, officialTotalExpenses:3.975531, officialPAT:-3.230497,
   },
   2025: {
@@ -146,7 +146,7 @@ const alvercaptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.637398, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.09302,
     officialTotalRevenue:2.060033, officialTotalExpenses:8.1202, officialPAT:-6.079177,
   },
 };

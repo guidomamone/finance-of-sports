@@ -98,6 +98,10 @@ incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con ot
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 39; cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 39
+```
+
 ### Liga
 
 ```text
@@ -154,6 +158,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 35; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 35
+```
+
 ### Liga
 
 ```text
@@ -208,6 +216,10 @@ Generados/Portugal/Oliveirense/Relatorio-e-Contas-202223.categorias.json (escal�
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): anio = 2023. El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2023 según el registro (periodo.cierre).
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 19; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 19
 ```
 
 ### Liga

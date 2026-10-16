@@ -131,6 +131,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2024-25.categorias.json (escaló
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 124 + "Financiamentos obtidos" pág. 124; cash escalón 1b (compuerta: documento anterior): "Caixa e equivalentes de caixa" pág. 124
+```
+
 ### Liga
 
 ```text
@@ -235,6 +239,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2023-24.categorias.json (escaló
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 96 + "Financiamentos obtidos" pág. 96; cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 96
 ```
 
 ### Liga
@@ -344,6 +352,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2022-23.categorias.json (escaló
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Clientes" pág. 92 + "Inventários" pág. 92 + "Estado e outros entes públicos" pág. 92 + "Outros devedores" pág. 92 + "Outros activos correntes" pág. 92 + "Caixa e equivalentes de caixa" pág. 92
+```
+
 ### Liga
 
 ```text
@@ -448,6 +460,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2021-22.categorias.json (escaló
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 105 + "Financiamentos obtidos" pág. 105; cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 105 + "Inventários" pág. 105 + "Estado e outros entes públicos" pág. 105 + "Outros devedores" pág. 105 + "Outros activos correntes" pág. 105 + "Caixa e equivalentes de caixa" pág. 105
+```
+
 ### Liga
 
 ```text
@@ -519,6 +535,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2020-21.categorias.json (escaló
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 87 + "Financiamentos obtidos" pág. 87; cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 87 + "Inventários" pág. 87 + "Estado e outros entes públicos" pág. 87 + "Outros devedores" pág. 87 + "Outros activos correntes" pág. 87 + "Caixa e equivalentes de caixa" pág. 87
 ```
 
 ### Liga
@@ -625,6 +645,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2019-20.categorias.json (escaló
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 97 + "Financiamentos obtidos" pág. 97; cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 97 + "Inventários" pág. 97 + "Estado e outros entes públicos" pág. 97 + "Outros devedores" pág. 97 + "Outros Activos correntes" pág. 97 + "Caixa e equivalentes de caixa" pág. 97
+```
+
 ### Liga
 
 ```text
@@ -704,6 +728,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2018-19.categorias.json (escaló
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 72 + "Financiamentos obtidos" pág. 72; cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 72
 ```
 
 ### Liga
@@ -787,6 +815,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2017-18.categorias.json (escaló
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 74
 ```
 
 ### Liga
@@ -891,6 +923,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2016-17.categorias.json (escaló
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 89
+```
+
 ### Liga
 
 ```text
@@ -964,6 +1000,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2015-16.categorias.json (escaló
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 108
 ```
 
 ### Liga
@@ -1046,6 +1086,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2014-15.categorias.json (escaló
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 79
+```
+
 ### Liga
 
 ```text
@@ -1116,6 +1160,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2013-14.categorias.json (escaló
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 81
 ```
 
 ### Liga
@@ -1193,6 +1241,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2012-13.categorias.json (escaló
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 81
+```
+
 ### Liga
 
 ```text
@@ -1267,6 +1319,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2011-12.categorias.json (escaló
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 21 + "Caixa e equivalentes de caixa" pág. 21 + "Outros devedores" pág. 21 + "Outros ativos correntes" pág. 21
+```
+
 ### Liga
 
 ```text
@@ -1336,6 +1392,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2010-11.categorias.json (escaló
 2011: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2011-06-30. periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)
 2011: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 18.168. La extracción dejó afuera el neto de transacciones de pases (nota 9), impreso sin paréntesis en el bloque de costos: es proveito (18.168 − 23.288 = (5.120), el subtotal impreso). Con la fila el resultado cierra: 35.366 + 18.168 − 76.062 − 7.331 − 14.132 = −43.991.
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 25
 ```
 
 ### Liga
@@ -1523,6 +1583,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2005-06.categorias.json (escaló
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 17 + "Clientes c/Corrente" pág. 17
+```
+
 ### Liga
 
 ```text
@@ -1581,6 +1645,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2004-05.categorias.json (escaló
 2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 3053. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (29815+3074=32889) en 7 filas (32477); el resto (412) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
 2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 412. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (29815+3074=32889) en 7 filas (32477); el resto (412) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Cash Flow: (RLE) + (Amortizações + Provisões)" pág. 18
 ```
 
 ### Liga
@@ -1646,6 +1714,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2003-04.categorias.json (escaló
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Cash Flow: (RLE) + (Amortizações + Provisões)" pág. 15
+```
+
 ### Liga
 
 ```text
@@ -1707,6 +1779,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2002-03.categorias.json (escaló
 2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 224. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (17607+107=17714) en 6 filas (17271); el resto (443) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
 2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 443. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (17607+107=17714) en 6 filas (17271); el resto (443) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1b (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 20; cash escalón 1 (compuerta: documento anterior): "Cash Flow: (RLE) + (Amortizações + Provis" pág. 21
 ```
 
 ### Liga
@@ -1775,6 +1851,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2001.categorias.json (escalón d
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1b (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 21; cash escalón 1 (compuerta: documento siguiente): "Cash Flow: (RLE) + (Amortizações + Provis" pág. 22
+```
+
 ### Liga
 
 ```text
@@ -1824,6 +1904,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Cash Flow: (RLE) + (Amortizações + Provisões)" pág. 2
 ```
 
 ### Liga
@@ -1880,6 +1964,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025): Comercial / Sponsors
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Cash Flow: (RLE) + (Amortizações + Provisões)" pág. 2
 ```
 
 ### Liga

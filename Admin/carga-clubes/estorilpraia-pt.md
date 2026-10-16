@@ -104,6 +104,10 @@ Generados/Portugal/Estoril Praia/relatorio-contas-2024-25.categorias.json (escal
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Clientes" pág. 9 + "Dívidas de terceiros relativos a transferências de" pág. 9 + "Empresas do grupo e partes relacionadas" pág. 9 + "Estado e outros entes públicos" pág. 9 + "Outros créditos a receber" pág. 9 + "Diferimentos" pág. 9 + "Outros ativos financeiros" pág. 9 + "Caixa e depósitos bancários" pág. 9
+```
+
 ### Liga
 
 ```text
@@ -171,6 +175,10 @@ Generados/Portugal/Estoril Praia/relatorio-contas-2023-24.categorias.json (escal
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 9 + "Dívidas de terceiros relativos a transferências de" pág. 9 + "Empresas do grupo e partes relacionadas" pág. 9 + "Estado e outros entes públicos" pág. 9 + "Outros créditos a receber" pág. 9 + "Diferimentos" pág. 9 + "Outros ativos financeiros" pág. 9 + "Caixa e depósitos bancários" pág. 9
 ```
 
 ### Liga
@@ -244,6 +252,10 @@ Generados/Portugal/Estoril Praia/relatorio-contas-2022-23.categorias.json (escal
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1b (compuerta: documento siguiente): "Financiamentos obtidos" pág. 10 + "Financiamentos obtidos de entidades do grupo e out" pág. 10 + "Financiamentos obtidos" pág. 10; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 9
+```
+
 ### Liga
 
 ```text
@@ -312,6 +324,10 @@ Generados/Portugal/Estoril Praia/relatorio-contas-2021-22.categorias.json (escal
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 10
 ```
 
 ### Liga

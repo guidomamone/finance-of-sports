@@ -91,6 +91,10 @@ Generados/Portugal/Casa Pia/relatorio-contas-2024-25.categorias.json (escalón d
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 11
+```
+
 ### Liga
 
 ```text
@@ -160,6 +164,10 @@ Generados/Portugal/Casa Pia/relatorio-contas-2023-24.categorias.json (escalón d
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 7
+```
+
 ### Liga
 
 ```text
@@ -226,6 +234,10 @@ Generados/Portugal/Casa Pia/relatorio-contas-2022-23.categorias.json (escalón d
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "Caixa e equivalentes" pág. 14
+```
+
 ### Liga
 
 ```text
@@ -289,6 +301,10 @@ Generados/Portugal/Casa Pia/relatorio-contas-2021-22.categorias.json (escalón d
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes" pág. 14
 ```
 
 ### Liga

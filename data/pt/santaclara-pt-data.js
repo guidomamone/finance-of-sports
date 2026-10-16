@@ -334,7 +334,7 @@ const santaclaraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.289446},
       {label:'Imposto sobre o rendimento do período', value:1.652448},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:1.375725,
     officialTotalRevenue:8.656848, officialTotalExpenses:23.22035, officialPAT:-13.241139,
   },
   2022: {
@@ -349,7 +349,7 @@ const santaclaraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.775581},
       {label:'Imposto sobre o rendimento do período', value:-0.045},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.348376,
     officialTotalRevenue:10.373838, officialTotalExpenses:8.870168, officialPAT:0.612188,
   },
   2023: {
@@ -364,7 +364,7 @@ const santaclaraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.321725},
       {label:'Imposto sobre o rendimento do período', value:-0.0032},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:2.502352,
     officialTotalRevenue:13.70457, officialTotalExpenses:14.557093, officialPAT:-1.276988,
   },
   2020: {
@@ -379,7 +379,7 @@ const santaclaraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.203198},
       {label:'Imposto sobre o rendimento do período', value:-0.03097},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:6.503523, cash:0.366046,
     officialTotalRevenue:8.077392, officialTotalExpenses:7.417375, officialPAT:0.427392,
   },
   2021: {
@@ -394,7 +394,7 @@ const santaclaraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.219063},
       {label:'Imposto sobre o rendimento do período', value:-0.058194},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:6.933246, cash:0.008814,
     officialTotalRevenue:13.938977, officialTotalExpenses:12.83919, officialPAT:0.822535,
   },
   2024: {
@@ -409,7 +409,7 @@ const santaclaraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.148303},
       {label:'Imposto sobre o rendimento do período', value:1.848329},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:2.779011,
     officialTotalRevenue:4.777955, officialTotalExpenses:16.93564, officialPAT:-10.63916,
   },
 };

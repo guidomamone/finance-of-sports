@@ -149,7 +149,7 @@ const leixoesptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Prestação de Serviços', lado:'revenue', importe:0.776457, motivo:'precedente del país: 1 clubes (Oliveirense), nota:vendas e servicos prestados · Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): \'Prestação de serviços\' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.014348,
     officialTotalRevenue:2.758322, officialTotalExpenses:6.933258, officialPAT:-4.475963,
   },
   2023: {
@@ -167,7 +167,7 @@ const leixoesptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Prestação de Serviços', lado:'revenue', importe:0.785473, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.003178,
     officialTotalRevenue:2.239121, officialTotalExpenses:2.874807, officialPAT:-0.87039,
   },
   2024: {
@@ -185,7 +185,7 @@ const leixoesptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Prestação de Serviços', lado:'revenue', importe:1.001111, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:2.578377,
     officialTotalRevenue:3.979029, officialTotalExpenses:3.649551, officialPAT:0.005691,
   },
 };

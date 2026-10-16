@@ -251,7 +251,7 @@ const pacosdeferreiraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.000081},
       {label:'Imposto sobre o rendimento do período', value:-0.020385},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2.318508, cash:0.019527,
     officialTotalRevenue:2.827625, officialTotalExpenses:4.613911, officialPAT:-1.806752,
   },
   2020: {
@@ -280,7 +280,7 @@ const pacosdeferreiraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.041945},
       {label:'Imposto sobre o rendimento do período', value:-0.011372},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.735093, cash:0.00852,
     officialTotalRevenue:9.262878, officialTotalExpenses:9.852456, officialPAT:-0.642895,
   },
   2024: {
@@ -294,7 +294,7 @@ const pacosdeferreiraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.000422},
       {label:'Imposto sobre o rendimento do período', value:-0.006205},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1.536338, cash:0.020169,
     officialTotalRevenue:3.416315, officialTotalExpenses:5.321068, officialPAT:-1.987982,
   },
   2022: {
@@ -309,7 +309,7 @@ const pacosdeferreiraptFiscalYearMeta = {
       {label:'Imposto sobre o rendimento do período', value:-0.001778},
       {label:'Impostos Diferidos', value:0.357055},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1.923739, cash:0.184371,
     officialTotalRevenue:8.664259, officialTotalExpenses:9.424955, officialPAT:-0.470395,
   },
 };

@@ -527,6 +527,10 @@ Generados/Portugal/Benfica/relatorio-contas-2020-21.categorias.json (escalón de
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 95
+```
+
 ### Liga
 
 ```text
@@ -606,6 +610,10 @@ Generados/Portugal/Benfica/relatorio-contas-2019-20-pos-AG.categorias.json (esca
 ```text
 2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): perimetro = individual. regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS)
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 89
 ```
 
 ### Liga
@@ -689,6 +697,10 @@ Generados/Portugal/Benfica/relatorio-contas-2018-19.categorias.json (escalón de
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 2 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 89
+```
+
 ### Liga
 
 ```text
@@ -767,6 +779,10 @@ Generados/Portugal/Benfica/relatorio-contas-2017-18.categorias.json (escalón de
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 31
 ```
 
 ### Liga
@@ -849,6 +865,10 @@ Generados/Portugal/Benfica/relatorio-contas-2016-17-pos-AG.categorias.json (esca
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 87
 ```
 
 ### Liga
@@ -937,6 +957,10 @@ Generados/Portugal/Benfica/relatorio-contas-2015-16.categorias.json (escalón de
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "CAIXA E EQUIVALENTES DE CAIXA" pág. 89
 ```
 
 ### Liga
@@ -1149,6 +1173,10 @@ Generados/Portugal/Benfica/relatorio-contas-2012-13-pos-AG.categorias.json (esca
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "CAIXA E DISPONIBILIDADES EM BANCOS" pág. 101
+```
+
 ### Liga
 
 ```text
@@ -1252,6 +1280,10 @@ Generados/Portugal/Benfica/relatorio-contas-2011-12.categorias.json (escalón de
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e disponibilidades em bancos" pág. 73
 ```
 
 ### Liga
@@ -1372,6 +1404,10 @@ Generados/Portugal/Benfica/prestacao-contas-2010-11-11.categorias.json (escalón
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "CAIXA E DISPONIBILIDADES EM BANCOS" pág. 103
+```
+
 ### Liga
 
 ```text
@@ -1473,6 +1509,10 @@ Generados/Portugal/Benfica/prestacao-contas-2009-11-03.categorias.json (escalón
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e disponibilidades em bancos" pág. 40
+```
+
 ### Liga
 
 ```text
@@ -1570,6 +1610,10 @@ Generados/Portugal/Benfica/relatorio-contas-2007-08.categorias.json (escalón de
 2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): categoria = other_expenses. Costo de transacciones de atletas que la extracción dejó en ingresos con signo negativo; pasa a gasto sin cambiar el resultado (como Benfica 2010).
 2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): reportType = official_balance_sheet. Claude 2026-10-16 (to-do 237 ab): es el relatório e contas anual del ejercicio de transición de 11 meses (1/8/2007-30/6/2008, cambio de cierre de julio a junio), no un intermedio
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e disponibilidades em bancos" pág. 40
 ```
 
 ### Liga

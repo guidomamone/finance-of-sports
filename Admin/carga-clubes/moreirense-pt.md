@@ -100,6 +100,10 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 8
+```
+
 ## 2024
 
 ### Ingresos
@@ -155,6 +159,10 @@ Generados/Portugal/Moreirense/relatorio-contas-2023-24.categorias.json (escalón
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2024-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2024-06-30
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 9
 ```
 
 ### Liga
@@ -231,6 +239,10 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Inventários" pág. 10 + "Clientes" pág. 10 + "Estado e outros entes públicos" pág. 10 + "Outros créditos a receber" pág. 10 + "Diferimentos" pág. 10 + "Caixa e depósitos bancários" pág. 10
+```
+
 ### Liga
 
 ```text
@@ -297,6 +309,10 @@ Generados/Portugal/Moreirense/relatorio-contas-2021-22.categorias.json (escalón
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2022-06-30. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el documento dice cierre 2022-06-30
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Inventários" pág. 9 + "Clientes" pág. 9 + "Estado e outros entes públicos" pág. 9 + "Outros créditos a receber" pág. 9 + "Diferimentos" pág. 9 + "Caixa e depósitos bancários" pág. 9
 ```
 
 ### Liga

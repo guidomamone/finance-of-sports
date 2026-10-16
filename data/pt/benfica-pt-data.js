@@ -1161,7 +1161,7 @@ const benficaptFiscalYearMeta = {
       {label:'Gastos e perdas financeiros', value:-16.446},
       {label:'Imposto sobre o rendimento', value:4.312},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:16.295,
     officialTotalRevenue:259.842, officialTotalExpenses:217.366, officialPAT:29.39,
   },
   2010: {
@@ -1176,7 +1176,7 @@ const benficaptFiscalYearMeta = {
       {label:'CUSTOS E PERDAS FINANCEIROS', value:-11.612197},
       {label:'IMPOSTO SOBRE LUCROS', value:0.249754},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:6.881132,
     officialTotalRevenue:87.366955, officialTotalExpenses:98.650231, officialPAT:-18.997724,
   },
   2021: {
@@ -1191,7 +1191,7 @@ const benficaptFiscalYearMeta = {
       {label:'Gastos e perdas financeiros', value:-18.78},
       {label:'Imposto sobre o rendimento', value:16.641},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:44.072,
     officialTotalRevenue:194.047, officialTotalExpenses:218.934, officialPAT:-17.38,
   },
   2022: {
@@ -1267,7 +1267,7 @@ const benficaptFiscalYearMeta = {
       {label:'Resultado relativo a investimentos em participadas', value:0.002},
       {label:'Imposto sobre o rendimento', value:-0.295},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:7.539,
     officialTotalRevenue:199.253, officialTotalExpenses:162.431, officialPAT:20.582,
   },
   2009: {
@@ -1282,7 +1282,7 @@ const benficaptFiscalYearMeta = {
       {label:'Custos e perdas financeiros', value:-5.8715},
       {label:'Imposto sobre lucros', value:-0.062637},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.786035,
     officialTotalRevenue:52.35127, officialTotalExpenses:82.22394, officialPAT:-34.855766,
   },
   2012: {
@@ -1297,7 +1297,7 @@ const benficaptFiscalYearMeta = {
       {label:'Custos e perdas financeiros', value:-22.795645},
       {label:'Imposto sobre lucros', value:0.13396},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:3.35862,
     officialTotalRevenue:120.030991, officialTotalExpenses:114.933412, officialPAT:-11.690253,
   },
   2014: {
@@ -1327,7 +1327,7 @@ const benficaptFiscalYearMeta = {
       {label:'GASTOS E PERDAS FINANCEIROS', value:-21.381},
       {label:'IMPOSTO SOBRE O RENDIMENTO', value:-0.141},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:30.338,
     officialTotalRevenue:207.968, officialTotalExpenses:168.564, officialPAT:20.396,
   },
   2017: {
@@ -1343,7 +1343,7 @@ const benficaptFiscalYearMeta = {
       {label:'Resultado relativo a investimentos em participadas', value:0.001},
       {label:'Imposto sobre o rendimento', value:-0.847},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:13.252,
     officialTotalRevenue:251.23, officialTotalExpenses:187.253, officialPAT:44.537,
   },
   2026: {
@@ -1373,7 +1373,7 @@ const benficaptFiscalYearMeta = {
       {label:'GASTOS E PERDAS FINANCEIROS', value:-22.690806},
       {label:'IMPOSTO SOBRE O RENDIMENTO', value:0.355364},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.394934,
     officialTotalRevenue:129.693491, officialTotalExpenses:122.988331, officialPAT:-10.393584,
   },
   2020: {
@@ -1388,7 +1388,7 @@ const benficaptFiscalYearMeta = {
       {label:'Gastos e perdas financeiros', value:-16.793},
       {label:'Imposto sobre o rendimento', value:-4.788},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:5.326,
     officialTotalRevenue:285.108, officialTotalExpenses:230.689, officialPAT:41.705,
   },
   2007: {
@@ -1433,7 +1433,7 @@ const benficaptFiscalYearMeta = {
       {label:'Custos e perdas financeiros', value:-4.247865},
       {label:'Imposto sobre o rendimento', value:-0.05044},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.409343,
     officialTotalRevenue:63.040143, officialTotalExpenses:59.044243, officialPAT:0.120932,
   },
 };

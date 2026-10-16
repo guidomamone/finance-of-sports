@@ -103,6 +103,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 53 + "Financiamentos obtidos" pág. 53; cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 53
+```
+
 ### Liga
 
 ```text
@@ -161,6 +165,10 @@ Generados/Portugal/Torreense/SAD_RelatorioContas2022-2023.categorias.json (escal
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 23 + "Financiamentos obtidos" pág. 23; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 23
 ```
 
 ### Liga
@@ -224,6 +232,10 @@ Generados/Portugal/Torreense/SAD_RelatorioContas2021-2022.categorias.json (escal
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 23 + "Financiamentos obtidos" pág. 23; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 23
 ```
 
 ### Liga

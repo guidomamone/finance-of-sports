@@ -579,7 +579,7 @@ const portoptFiscalYearMeta = {
       {label:'Resultados relativos a investimentos', value:-0.604084},
       {label:'Imposto sobre o rendimento do período', value:-1.09381},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:7.392033,
     officialTotalRevenue:154.273361, officialTotalExpenses:194.480284, officialPAT:-57.344712,
   },
   2017: {
@@ -594,7 +594,7 @@ const portoptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-17.787236},
       {label:'Imposto sobre o rendimento do período', value:-0.900686},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:14.74335,
     officialTotalRevenue:168.376805, officialTotalExpenses:185.685268, officialPAT:-34.262304,
   },
   2018: {
@@ -610,7 +610,7 @@ const portoptFiscalYearMeta = {
       {label:'Resultados relativos a investimentos', value:-0.117775},
       {label:'Imposto sobre o rendimento do período', value:-1.027866},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:29.020109,
     officialTotalRevenue:183.072058, officialTotalExpenses:196.059969, officialPAT:-28.692873,
   },
   2019: {
@@ -625,7 +625,7 @@ const portoptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-19.878855},
       {label:'Imposto sobre o rendimento do período', value:-1.776616},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:9.48963,
     officialTotalRevenue:267.224983, officialTotalExpenses:238.367688, officialPAT:9.764222,
   },
   2021: {

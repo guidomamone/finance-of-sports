@@ -160,6 +160,10 @@ Generados/Portugal/Santa Clara/relatorio-contas-sad-2024-25.categorias.json (esc
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 17
+```
+
 ### Liga
 
 ```text
@@ -229,6 +233,10 @@ Generados/Portugal/Santa Clara/relatorio-contas-sad-2023-24.categorias.json (esc
 ```text
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 360 009. Fila de la nota 21 'Outros Rendimentos' (suma 2.771.925, igual al renglón del estado L322) que la extracción puso como gasto (−360.009). Es ingreso, como en 2024-25. Con el cambio el resultado da −10.639.158 contra −10.639.160,36 impreso.
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e Depósitos Bancários" pág. 16
 ```
 
 ### Liga
@@ -317,6 +325,10 @@ Generados/Portugal/Santa Clara/relatorio-contas-sad-2022-23.categorias.json (esc
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 10
+```
+
 ### Liga
 
 ```text
@@ -399,6 +411,10 @@ Generados/Portugal/Santa Clara/relatorio-contas-sad-2021-22.categorias.json (esc
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 10
+```
+
 ### Liga
 
 ```text
@@ -456,6 +472,10 @@ Generados/Portugal/Santa Clara/relatorio-contas-sad-2020-21.categorias.json (esc
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 21 + "Financiamentos obtidos" pág. 21; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 21
 ```
 
 ### Liga
@@ -533,6 +553,10 @@ Generados/Portugal/Santa Clara/relatorio-contas-sad-2019-20.categorias.json (esc
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 19 + "Financiamentos obtidos" pág. 19; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 19
 ```
 
 ### Liga
