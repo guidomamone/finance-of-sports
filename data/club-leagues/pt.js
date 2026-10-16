@@ -26,7 +26,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'gilvicente-pt': { 2025: 'pt-primeiraliga', 2021: 'pt-primeiraliga' },
   'leixoes-pt': { 2025: 'pt-ligaportugal2', 2023: 'pt-ligaportugal2', 2024: 'pt-ligaportugal2' },
   'maritimo-pt': { 2025: 'pt-ligaportugal2' },
-  'oliveirense-pt': { 2025: 'pt-ligaportugal2' },
+  'oliveirense-pt': { 2025: 'pt-ligaportugal2', 2023: 'pt-ligaportugal2' },
   'pacosdeferreira-pt': { 2025: 'pt-ligaportugal2' },
   'portimonense-pt': { 2025: 'pt-ligaportugal2' },
   'torreense-pt': { 2024: 'pt-ligaportugal2' },

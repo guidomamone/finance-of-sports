@@ -1,28 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.pdf",
- "generado": "2026-10-15T22:34:44.008Z",
- "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (oliveirense-pt)"
-  },
-  {
-   "etapa": "año",
-   "motivo": "alta-club.mjs dice ejercicio 2024 y quien.mjs --quien (el que usa el registro) dice 2023"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "8 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Prestação de serviços\" -> other_income 0.45; \"Não reembolsáveis: Subsídios relacionado\" -> other_income 0.5; \"Não reembolsáveis: Subsídios relacionado\" -> other_income 0.45; \"Não reembolsáveis: Subsídios relacionado\" -> competition_bonus 0.75; \"Não reembolsáveis: Subsídios relacionado\" -> youth_football 0.65"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-16T03:18:42.591Z",
+ "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-06-30); pregunta en la cola (no frena)"
  ],
@@ -44,13 +23,13 @@
    },
    {
     "rawLabel": "Prestação de serviços",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "lump_football_operations",
     "amountNative": 1.325492,
     "disclosureLevel": "aggregated",
     "_pag": 26,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Não reembolsáveis: Subsídios relacionados com resultados - IEFP",
@@ -68,9 +47,9 @@
     "amountNative": 0.007317,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Não reembolsáveis: Subsídios relacionados com resultados - Liga Portuguesa de Futebol Profissional",
@@ -78,9 +57,9 @@
     "amountNative": 0.00625,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Não reembolsáveis: Subsídios relacionados com resultados - Fundo Infraestruturas - LPF",
@@ -98,9 +77,9 @@
     "amountNative": 0.030536,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Não reembolsáveis: Subsídios relacionados com resultados - Sub. Deslocação - FPF",
@@ -118,9 +97,9 @@
     "amountNative": 0.021903,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Rendimentos suplementares",
@@ -230,9 +209,9 @@
     "amountNative": -1.338885,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Contribuições para a segurança social",
@@ -240,9 +219,9 @@
     "amountNative": -0.139226,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos com o pessoal",
@@ -250,9 +229,9 @@
     "amountNative": -0.172513,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Imparidade de dívidas a receber (perdas/reversões)",
@@ -309,6 +288,14 @@
      "value": -0.05477
     }
    ],
+   "sinDesglose": [
+    {
+     "renglon": "Prestação de serviços",
+     "lado": "revenue",
+     "importe": 1.325492,
+     "motivo": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense."
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 1.833554,
@@ -318,10 +305,10 @@
   "source": {
    "id": "oliveirense-pt-relatorio-e-contas-202324",
    "clubId": "oliveirense-pt",
-   "title": "Oliveirense — Relatorio-e-Contas-202324 (ejercicio 2024)",
+   "title": "União Desportiva Oliveirense - Futebol, SAD — Relatorio-e-Contas-202324 (ejercicio 2024)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.md",
@@ -336,7 +323,18 @@
  },
  "clubId": "oliveirense-pt",
  "year": 2024,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.pdf",
+   "campo": "anio",
+   "valor": "2024",
+   "linea": null,
+   "motivo": "El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2024 según el registro (periodo.cierre).",
+   "evidencia": "transcripciones-estado.jsonl, periodo.cierre 2024-06-30",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
   "filas": 28,
   "notasUsadas": [],
@@ -365,12 +363,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 1.325492,
-   "cat": "other_income",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.",
    "destino": "revenue",
    "amountNative": 1.325492
   },
@@ -397,11 +395,11 @@
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.007317,
    "cat": "other_income",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 82 (Felgueiras, Gil Vicente, Leixões, Marítimo, Oliveirense, Paços); Gil Vicente 2024 con el consolidado de la Associação (único documento del año); Paços 2020 FSE corregido en el .md.",
    "destino": "revenue",
    "amountNative": 0.007317
   },
@@ -413,11 +411,11 @@
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.00625,
    "cat": "other_income",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 82 (Felgueiras, Gil Vicente, Leixões, Marítimo, Oliveirense, Paços); Gil Vicente 2024 con el consolidado de la Associação (único documento del año); Paços 2020 FSE corregido en el .md.",
    "destino": "revenue",
    "amountNative": 0.00625
   },
@@ -444,11 +442,11 @@
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.030536,
    "cat": "competition_bonus",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 82 (Felgueiras, Gil Vicente, Leixões, Marítimo, Oliveirense, Paços); Gil Vicente 2024 con el consolidado de la Associação (único documento del año); Paços 2020 FSE corregido en el .md.",
    "destino": "revenue",
    "amountNative": 0.030536
   },
@@ -475,11 +473,11 @@
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.021903,
    "cat": "youth_football",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 82 (Felgueiras, Gil Vicente, Leixões, Marítimo, Oliveirense, Paços); Gil Vicente 2024 con el consolidado de la Associação (único documento del año); Paços 2020 FSE corregido en el .md.",
    "destino": "revenue",
    "amountNative": 0.021903
   },
@@ -641,11 +639,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 1.338885,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
    "destino": "expense",
    "amountNative": -1.338885
   },
@@ -657,11 +655,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.139226,
    "cat": "wages_squad",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
    "destino": "expense",
    "amountNative": -0.139226
   },
@@ -673,11 +671,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.172513,
    "cat": "wages_squad",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
    "destino": "expense",
    "amountNative": -0.172513
   },
@@ -760,16 +758,6 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
@@ -818,7 +806,7 @@
  "procedencia": {
   "anio": {
    "valor": 2024,
-   "fuente": "contenido del .md (año más nuevo con fecha de cierre)",
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2024 según el registro (periodo.cierre)., confirmado por las fechas de cierre del .md",
    "estado": "ok"
   },
   "cierre": {
@@ -858,8 +846,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 5,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 12,
   "lineasGasto": 13,
   "metaFilas": 3,

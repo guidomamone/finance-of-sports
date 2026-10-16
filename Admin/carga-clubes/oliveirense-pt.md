@@ -104,6 +104,62 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2024–25 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Oliveirense".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202223.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Oliveirense/Relatorio-e-Contas-202223.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Venda de mercadorias | pág. 39, precedente |
+| 2 | Prestação de serviços | pág. 39, precedente |
+| 3 | Federação P. Futebol / LPFP | pág. 40, Claude 0.85 |
+| 4 | Fundo Infraestruturas - Liga Portuguesa F[ilegible] | pág. 40, Jev 0.99 |
+| 5 | IEFP | pág. 40, Jev 0.95 |
+| 6 | Rendimentos suplementares | pág. 45, precedente |
+| 7 | Descontos de pronto pagamento obtidos | pág. 45, precedente |
+| 8 | Rendimentos em investimentos não financeiros | pág. 45, Jev 0.95 |
+| 9 | Outras | pág. 45, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 21, precedente |
+| 2 | Subcontratos | pág. 45, precedente |
+| 3 | Serviços especializados | pág. 45, precedente |
+| 4 | Materiais | pág. 45, precedente |
+| 5 | Energia e fluidos | pág. 45, precedente |
+| 6 | Deslocações, estadas e transportes | pág. 45, precedente |
+| 7 | Serviços diversos | pág. 45, precedente |
+| 8 | Salários e ordenados | pág. 44, precedente |
+| 9 | Gastos com rescisão de contratos | pág. 44, precedente |
+| 10 | Contribuições para a segurança social | pág. 44, precedente |
+| 11 | Outros gastos com o pessoal | pág. 44, precedente |
+| 12 | Imparidade de dívidas a receber (perdas/reversões) | pág. 21, precedente |
+| 13 | Impostos | pág. 45, precedente |
+| 14 | Descontos de pronto pagamento concedidos | pág. 45, precedente |
+| 15 | Outros | pág. 45, precedente |
+| 16 | Gastos/reversões de depreciação e de amortização | pág. 21, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): anio = 2023. El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2023 según el registro (periodo.cierre).
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2022–23 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Oliveirense".
+```
+
 ## Fuentes
 
 ### oliveirense-pt-relatorio-e-contas-202425
@@ -112,4 +168,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### oliveirense-pt-relatorio-e-contas-202223
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202223.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

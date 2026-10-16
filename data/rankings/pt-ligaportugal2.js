@@ -77,6 +77,9 @@ window.RANKINGS["pt-ligaportugal2"] = {
       { id:"academicoviseu-pt", revenue:1.868, reportType:"official_balance_sheet",
         sourceId:"academicoviseu-pt-wf-2022-2023-b797bc64",
         mix:[["Comercial / Sponsors",0.245],["Estadio",0.201],["Televisión",0.489],["Premios por competencias",0.227],["Otros ingresos",0.706]] },
+      { id:"oliveirense-pt", revenue:1.245, reportType:"official_balance_sheet",
+        sourceId:"oliveirense-pt-relatorio-e-contas-202223",
+        mix:[["Comercial / Sponsors",0.005],["Venta de Jugadores",0.2],["Fútbol profesional (sin desglosar por la fuente)",0.622],["Otros ingresos",0.418]] },
     ],
   },
   2022: {
