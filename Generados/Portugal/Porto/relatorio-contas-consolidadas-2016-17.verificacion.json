@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2016-17.pdf",
  "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2016-17.md",
- "generado": "2026-10-15T23:54:38.482Z",
+ "generado": "2026-10-16T00:30:33.913Z",
  "estado": "ok",
  "clubId": "porto-pt",
  "year": 2017,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2016-17.pdf",
+   "campo": "cero-real",
+   "valor": "Otras secciones deportivas",
+   "linea": null,
+   "motivo": "Las modalidades del club no tienen fila propia: sus ingresos vienen mezclados en 'Outras receitas desportivas' (con Taça, pretemporada y Dragon Force) y sus gastos dentro de FSE y personal; no se pueden separar sin inventar (subagente Sonnet, revisado por Claude).",
+   "evidencia": "relatorio-contas-consolidadas-2016-17.md, nota de Rédito y texto de gestión ('receitas de participação das modalidades em provas desportivas')",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

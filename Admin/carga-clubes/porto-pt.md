@@ -118,6 +118,100 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Porto".
 ```
 
+## 2016
+
+### Ingresos
+
+```text
+2016: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Porto/relatorio-contas-consolidadas-2015-16.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Porto/relatorio-contas-consolidadas-2015-16.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas | pág. 99, Jev 0.91 |
+| 2 | Receitas associativas | pág. 99, Jev 1 |
+| 3 | Prémios competições europeias | pág. 99, Jev 1 |
+| 4 | Receita de bilheteira | pág. 99, precedente |
+| 5 | Receita de lugares anuais | pág. 99, precedente |
+| 6 | Outras receitas desportivas | pág. 99, precedente |
+| 7 | Publicidade | pág. 99, precedente |
+| 8 | Direitos de transmissão televisiva | pág. 99, Jev 1 |
+| 9 | Corporate Hospitality | pág. 99, precedente |
+| 10 | Outros | pág. 99, precedente |
+| 11 | Subsídios à exploração | pág. 37, Jev 0.98 |
+| 12 | Compensação de utilização de jogadores no Europeu 2016 | pág. 101, Jev 0.91 |
+| 13 | Royalties | pág. 101, Jev 0.96 |
+| 14 | Rendimentos de propriedades de investimento | pág. 101, Jev 0.98 |
+| 15 | Imputação de subsídios para o investimento | pág. 101, Jev 1 |
+| 16 | Outros rendimentos suplementares | pág. 101, Jev 1 |
+| 17 | Reembolsos de sinistros | pág. 101, Jev 1 |
+| 18 | Outros | pág. 101, precedente |
+| 19 | Proveitos com alienações de passes de jogadores | pág. 103, precedente |
+| 20 | Proveitos com empréstimos de jogadores | pág. 103, precedente |
+| 21 | Outros proveitos com jogadores | pág. 103, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 37, Jev 0.99 |
+| 2 | Trabalhos Especializados | pág. 100, precedente |
+| 3 | Subcontratos | pág. 100, precedente |
+| 4 | Direitos de imagem de atletas | pág. 100, precedente |
+| 5 | Rendas e Alugueres | pág. 100, precedente |
+| 6 | Vigilância e Segurança | pág. 100, precedente |
+| 7 | Conservação e reparação | pág. 100, precedente |
+| 8 | Energia e Fluidos | pág. 100, Jev 1 |
+| 9 | Despesas de organização | pág. 100, precedente |
+| 10 | Seguros | pág. 100, precedente |
+| 11 | Material Desportivo | pág. 100, precedente |
+| 12 | Honorários | pág. 100, precedente |
+| 13 | Comunicação | pág. 100, precedente |
+| 14 | Publicidade e propaganda | pág. 100, precedente |
+| 15 | Limpeza, higiene e conforto | pág. 100, precedente |
+| 16 | Despesas de representação | pág. 100, precedente |
+| 17 | Relvados | pág. 100, precedente |
+| 18 | Outros fornecimentos e serviços | pág. 100, precedente |
+| 19 | Remunerações dos Órgãos Sociais | pág. 101, Jev 1 |
+| 20 | Remunerações dos Atletas/Técnicos/Médicos | pág. 101, Jev 1 |
+| 21 | Remunerações do pessoal | pág. 101, precedente |
+| 22 | Benefícios pós-emprego | pág. 101, Jev 0.97 |
+| 23 | Indemnizações | pág. 101, precedente |
+| 24 | Encargos sobre remunerações | pág. 101, Jev 0.97 |
+| 25 | Seguros de acidentes de trabalho e doenças profissionais | pág. 101, Jev 1 |
+| 26 | Outros gastos com pessoal | pág. 101, precedente |
+| 27 | Imparidade de inventários (perdas / reversões) | pág. 37, Jev 1 |
+| 28 | Imparidade de dívidas a receber (perdas / reversões) | pág. 37, Jev 1 |
+| 29 | Provisões (aumentos / reduções) | pág. 37, Jev 0.97 |
+| 30 | Correções relativas a exercícios anteriores | pág. 102, Jev 1 |
+| 31 | Impostos | pág. 102, Jev 0.92 |
+| 32 | Penalizações Desportivas | pág. 102, Jev 0.93 |
+| 33 | Multas/Dividas Fiscais e não fiscais | pág. 102, precedente |
+| 34 | Comissões de intermediação contratação de treinadores | pág. 102, precedente |
+| 35 | Outros | pág. 102, Jev 1 |
+| 36 | Ativos fixos tangíveis | pág. 102, Jev 1 |
+| 37 | Propriedades de investimento | pág. 102, precedente |
+| 38 | Outros ativos intangíveis | pág. 102, Jev 1 |
+| 39 | Amortizações de passes de jogadores | pág. 103, precedente |
+| 40 | Perdas por imparidade com passes de jogadores | pág. 103, precedente |
+| 41 | Custos com alienações de passes de jogadores | pág. 103, precedente |
+| 42 | Custos com empréstimos de jogadores | pág. 103, precedente |
+| 43 | Outros custos com jogadores | pág. 103, precedente |
+
+### Meta
+
+```text
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cero-real = Otras secciones deportivas. Las modalidades del club no tienen fila propia: sus ingresos vienen mezclados en 'Outras receitas desportivas' (con Taça, pretemporada y Dragon Force) y sus gastos dentro de FSE y personal; no se pueden separar sin inventar (subagente Sonnet, revisado por Claude).
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2015–16 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Porto".
+```
+
 ## Fuentes
 
 ### porto-pt-wf-2024-2025-6b41056f
@@ -126,4 +220,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Porto/wf-2024-2025-6b41056f.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### porto-pt-relatorio-contas-consolidadas-2015-16
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Porto/relatorio-contas-consolidadas-2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

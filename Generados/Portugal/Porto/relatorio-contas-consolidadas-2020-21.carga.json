@@ -1,15 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.pdf",
- "generado": "2026-10-16T00:11:53.696Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Transferências de atletas de outras moda\" -> other_sports 0.55"
-  }
- ],
+ "generado": "2026-10-16T00:46:06.653Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 8 ejercicio(s) con un solo perímetro (consolidado); 9 documento(s) mirados)",
-  "materialidad: \"Mais-valias\" va como other_income con 0.6 (las dudas de ingresos suman 0.39% de su lado)",
+  "materialidad: \"Mais-valias\" va como other_income con 0.6 (las dudas de ingresos suman 0.13% de su lado)",
   "gestión: ningún presidente confirmado cubre 2021 (cierre 2021-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -104,9 +99,9 @@
     "amountNative": 0.72,
     "disclosureLevel": "aggregated",
     "_pag": 99,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mais-valias",
@@ -116,7 +111,7 @@
     "_pag": 99,
     "_escalon": "materialidad",
     "_conf": 0.6,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.39% (≤ 1%) y esta tiene 0.6"
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.13% (≤ 1%) y esta tiene 0.6"
    },
    {
     "rawLabel": "Outros rendimentos e ganhos",
@@ -483,11 +478,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 0.72,
    "cat": "other_sports",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): resultado neto de venta de jugadores de otras modalidades: other_sports.",
    "destino": "revenue",
    "amountNative": 0.72
   },
@@ -501,7 +496,7 @@
    "cat": "other_income",
    "conf": 0.6,
    "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.39% (≤ 1%) y esta tiene 0.6",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.13% (≤ 1%) y esta tiene 0.6",
    "enLista": true,
    "enCola": false,
    "destino": "revenue",
@@ -882,8 +877,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 14,
   "lineasGasto": 12,
   "metaFilas": 4,

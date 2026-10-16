@@ -52,3 +52,5 @@ Confirmar si CMVM tiene ejercicios anteriores a 2015/16 para completar la serie.
 Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 3 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2023-2024, 2024-2025; `wf-src-*`: 1 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2025 desde `Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf` (sourceId `porto-pt-wf-2024-2025-6b41056f`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2016 desde `Clubes/Portugal/Porto/relatorio-contas-consolidadas-2015-16.pdf` (sourceId `porto-pt-relatorio-contas-consolidadas-2015-16`).

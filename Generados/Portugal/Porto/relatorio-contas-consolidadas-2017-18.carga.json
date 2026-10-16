@@ -1,21 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2017-18.pdf",
- "generado": "2026-10-16T00:11:53.227Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros\" -> other_income 0; \"Compensação de utilização de jogadores n\" -> other_income 0.55; \"Correções relativas a exercícios anterio\" -> other_income 0; \"Outros gastos com pessoal\" -> wages_squad 0.55"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Otras secciones deportivas. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-16T00:46:06.383Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 8 ejercicio(s) con un solo perímetro (consolidado); 9 documento(s) mirados)",
-  "materialidad: \"Relvados\" va como admin_general_expense con 0.6 (las dudas de gastos suman 0.78% de su lado)",
-  "materialidad: \"Multas/Dividas Fiscais e não fiscais\" va como other_expenses con 0.6 (las dudas de gastos suman 0.78% de su lado)",
-  "materialidad: \"Propriedades de investimento (Nota 9)\" va como depreciation con 0.75 (las dudas de gastos suman 0.78% de su lado)",
+  "\"Otras secciones deportivas\" en 0: real, por ajuste manual (2026-10-16, Las modalidades del club no tienen fila propia: sus ingresos vienen mezclados en 'Outras receitas desportivas' (con Taça, pretemporada y Dragon Force) y sus gastos dentro de FSE y personal; no se pueden separar sin inventar (subagente Sonnet, revisado por Claude).)",
   "gastos: ningún total impreso igual a la suma de las líneas (-196.059969); queda la suma, verificada por el resultado del ejercicio (el impreso \"total de gastos (verificado)\" 196.126407 difiere en 0.066438: redondeo)",
   "gestión: ningún presidente confirmado cubre 2018 (cierre 2018-06-30); pregunta en la cola (no frena)"
  ],
@@ -111,9 +100,9 @@
     "amountNative": 4.294599,
     "disclosureLevel": "aggregated",
     "_pag": 93,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Subsídios à exploração",
@@ -131,9 +120,9 @@
     "amountNative": 1.126194,
     "disclosureLevel": "aggregated",
     "_pag": 95,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Rendimentos de propriedades de investimento",
@@ -171,9 +160,9 @@
     "amountNative": 0.008024,
     "disclosureLevel": "aggregated",
     "_pag": 95,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Reembolsos de sinistros",
@@ -383,9 +372,9 @@
     "amountNative": -0.341916,
     "disclosureLevel": "aggregated",
     "_pag": 94,
-    "_escalon": "materialidad",
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.78% (≤ 1%) y esta tiene 0.6"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Energia e Fluidos",
@@ -493,9 +482,9 @@
     "amountNative": -1.137943,
     "disclosureLevel": "aggregated",
     "_pag": 95,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Imparidade de inventários (perdas / reversões)",
@@ -573,9 +562,9 @@
     "amountNative": -0.006861,
     "disclosureLevel": "aggregated",
     "_pag": 96,
-    "_escalon": "materialidad",
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.78% (≤ 1%) y esta tiene 0.6"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -603,9 +592,9 @@
     "amountNative": -0.057589,
     "disclosureLevel": "aggregated",
     "_pag": 96,
-    "_escalon": "materialidad",
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.78% (≤ 1%) y esta tiene 0.75"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros ativos intangíveis",
@@ -736,7 +725,18 @@
  },
  "clubId": "porto-pt",
  "year": 2018,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2017-18.pdf",
+   "campo": "cero-real",
+   "valor": "Otras secciones deportivas",
+   "linea": null,
+   "motivo": "Las modalidades del club no tienen fila propia: sus ingresos vienen mezclados en 'Outras receitas desportivas' (con Taça, pretemporada y Dragon Force) y sus gastos dentro de FSE y personal; no se pueden separar sin inventar (subagente Sonnet, revisado por Claude).",
+   "evidencia": "relatorio-contas-consolidadas-2017-18.md, nota de Rédito y texto de gestión ('receitas de participação das modalidades em provas desportivas')",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
   "filas": 69,
   "notasUsadas": [],
@@ -871,12 +871,12 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 4.294599,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): 'Outros' al final de la nota de Rédito (ingresos): other_income.",
    "destino": "revenue",
    "amountNative": 4.294599
   },
@@ -903,11 +903,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 1.126194,
    "cat": "other_income",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): compensación FIFA por jugadores en el Mundial 2018: other_income.",
    "destino": "revenue",
    "amountNative": 1.126194
   },
@@ -964,12 +964,12 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 0.008024,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): correcciones de ejercicios anteriores en la nota de Outros rendimentos (ingreso): other_income.",
    "destino": "revenue",
    "amountNative": 0.008024
   },
@@ -1282,11 +1282,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.341916,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.78% (≤ 1%) y esta tiene 0.6",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): mantenimiento del césped (FSE): admin_general_expense.",
    "destino": "expense",
    "amountNative": -0.341916
   },
@@ -1451,11 +1451,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 1.137943,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): residuo de la nota de personal: wages_squad, como Benfica.",
    "destino": "expense",
    "amountNative": -1.137943
   },
@@ -1572,11 +1572,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos e perdas\")",
    "signoFijo": 0.006861,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.78% (≤ 1%) y esta tiene 0.6",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): multas y deudas fiscales: other_expenses.",
    "destino": "expense",
    "amountNative": -0.006861
   },
@@ -1618,11 +1618,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos / reversões de depreciação e de amortização\")",
    "signoFijo": 0.057589,
    "cat": "depreciation",
-   "conf": 0.75,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.78% (≤ 1%) y esta tiene 0.75",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): depreciación de propiedades de inversión (nota de depreciación): depreciation.",
    "destino": "expense",
    "amountNative": -0.057589
   },
@@ -1778,11 +1778,6 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Otras secciones deportivas"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
@@ -1871,8 +1866,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 20,
   "lineasGasto": 45,
   "metaFilas": 4,

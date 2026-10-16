@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Porto/wf-2023-2024-293efed8.pdf",
  "md": "Clubes/Portugal/Porto/wf-2023-2024-293efed8.md",
- "generado": "2026-10-15T23:54:38.620Z",
+ "generado": "2026-10-16T00:30:34.041Z",
  "estado": "ok",
  "clubId": "porto-pt",
  "year": 2024,
@@ -11,7 +11,28 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Porto/wf-2023-2024-293efed8.pdf",
+   "campo": "cero-real",
+   "valor": "Cuotas sociales",
+   "linea": null,
+   "motivo": "Documento de FC Porto SAD (no del club asociación): la SAD no cobra cuotas; perfil de porto-pt = sí por los consolidados del club 2016-2023. Igual que 2024-25.",
+   "evidencia": "wf-2023-2024-293efed8.md, objeto social de la SAD",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Porto/wf-2023-2024-293efed8.pdf",
+   "campo": "cero-real",
+   "valor": "Otras secciones deportivas",
+   "linea": null,
+   "motivo": "Documento de FC Porto SAD: solo la modalidad fútbol; las modalidades son del club asociación. Igual que 2024-25.",
+   "evidencia": "wf-2023-2024-293efed8.md, objeto social de la SAD",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2021-22.pdf",
- "generado": "2026-10-16T00:11:53.857Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "8 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros\" -> other_income 0; \"Correções relativas a exercícios anterio\" -> other_income 0; \"Transferências de atletas de outras moda\" -> other_sports 0.55; \"Relvados\" -> admin_general_expense 0.6; \"Outros gastos com pessoal\" -> wages_squad 0.55"
-  }
- ],
+ "generado": "2026-10-16T00:46:06.787Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 8 ejercicio(s) con un solo perímetro (consolidado); 9 documento(s) mirados)",
   "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-06-30); pregunta en la cola (no frena)"
@@ -103,9 +98,9 @@
     "amountNative": 5.797299,
     "disclosureLevel": "aggregated",
     "_pag": 95,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Subsídios à exploração",
@@ -173,9 +168,9 @@
     "amountNative": 0.014333,
     "disclosureLevel": "aggregated",
     "_pag": 98,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Reembolsos de sinistros",
@@ -203,9 +198,9 @@
     "amountNative": 0.01785,
     "disclosureLevel": "aggregated",
     "_pag": 98,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros rendimentos e ganhos",
@@ -405,9 +400,9 @@
     "amountNative": -0.334138,
     "disclosureLevel": "aggregated",
     "_pag": 96,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Energia e Fluidos",
@@ -515,9 +510,9 @@
     "amountNative": -2.082599,
     "disclosureLevel": "aggregated",
     "_pag": 97,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Imparidade de inventários (perdas / reversões)",
@@ -585,9 +580,9 @@
     "amountNative": -0.405994,
     "disclosureLevel": "aggregated",
     "_pag": 98,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos com transferências de atletas de outras modalidades",
@@ -595,9 +590,9 @@
     "amountNative": -0.02,
     "disclosureLevel": "aggregated",
     "_pag": 98,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -625,9 +620,9 @@
     "amountNative": -0.036758,
     "disclosureLevel": "aggregated",
     "_pag": 99,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros ativos intangíveis",
@@ -900,12 +895,12 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 5.797299,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): 'Outros' al final de la nota de Rédito (ingresos): other_income.",
    "destino": "revenue",
    "amountNative": 5.797299
   },
@@ -1007,12 +1002,12 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 0.014333,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): correcciones de ejercicios anteriores en la nota de Outros rendimentos (ingreso): other_income.",
    "destino": "revenue",
    "amountNative": 0.014333
   },
@@ -1054,11 +1049,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 0.01785,
    "cat": "other_sports",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): resultado neto de venta de jugadores de otras modalidades: other_sports.",
    "destino": "revenue",
    "amountNative": 0.01785
   },
@@ -1356,11 +1351,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.334138,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): mantenimiento del césped (FSE): admin_general_expense.",
    "destino": "expense",
    "amountNative": -0.334138
   },
@@ -1525,11 +1520,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 2.082599,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): residuo de la nota de personal: wages_squad, como Benfica.",
    "destino": "expense",
    "amountNative": -2.082599
   },
@@ -1631,11 +1626,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos e perdas\")",
    "signoFijo": 0.405994,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): multas y deudas fiscales: other_expenses.",
    "destino": "expense",
    "amountNative": -0.405994
   },
@@ -1647,11 +1642,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos e perdas\")",
    "signoFijo": 0.02,
    "cat": "youth_other_sports_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): gasto de transferencias de otras modalidades: youth_other_sports_expense.",
    "destino": "expense",
    "amountNative": -0.02
   },
@@ -1693,11 +1688,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos / reversões de depreciação e de amortização\")",
    "signoFijo": 0.036758,
    "cat": "depreciation",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): depreciación de propiedades de inversión (nota de depreciación): depreciation.",
    "destino": "expense",
    "amountNative": -0.036758
   },
@@ -1952,8 +1947,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 23,
   "lineasGasto": 46,
   "metaFilas": 3,
