@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Academico Viseu/wf-2024-2025-efe7ad0a.pdf",
- "generado": "2026-10-16T02:33:27.796Z",
+ "generado": "2026-10-16T02:49:44.251Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (academicoviseu-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "9 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Subsídios Associações/FPF/Liga/UEFA\" -> competition_bonus 0.6; \"Fundo de infraestruturas Liga Portugal\" -> other_income 0.6; \"Compensação de formação (FIFA Clearing H\" -> youth_football 0.55; \"Ganhos em investimentos não financeiros\" -> player_sales 0.6; \"Donativos e Quotizações\" -> other_expenses 0.5"
   }
  ],
  "avisos": [
@@ -73,13 +69,13 @@
    },
    {
     "rawLabel": "Subsídios Associações/FPF/Liga/UEFA",
-    "normalizedCategory": "competition_bonus",
+    "normalizedCategory": "other_income",
     "amountNative": 0.359044,
     "disclosureLevel": "aggregated",
     "_pag": 21,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Subsídios do Estado e outros entes públicos",
@@ -107,19 +103,19 @@
     "amountNative": 0.046632,
     "disclosureLevel": "aggregated",
     "_pag": 21,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Compensação de formação (FIFA Clearing House)",
-    "normalizedCategory": "youth_football",
+    "normalizedCategory": "player_sales",
     "amountNative": 0.063392,
     "disclosureLevel": "aggregated",
     "_pag": 21,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Ganhos em investimentos não financeiros",
@@ -127,9 +123,9 @@
     "amountNative": 3.932136,
     "disclosureLevel": "aggregated",
     "_pag": 21,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Indemnizações de seguros de acidentes de trabalho",
@@ -409,9 +405,9 @@
     "amountNative": -0.013571,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Multas e penalidades",
@@ -449,9 +445,9 @@
     "amountNative": -0.035917,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Contratos de formação desportiva - Gastos com alimentação",
@@ -459,9 +455,9 @@
     "amountNative": -0.233549,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Contratos de formação desportiva - Taxas de inscrição e transferências",
@@ -469,9 +465,9 @@
     "amountNative": -0.018674,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Contratos de formação desportiva - Outros gastos",
@@ -479,9 +475,9 @@
     "amountNative": -0.001404,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros não especificados",
@@ -648,12 +644,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.359044,
-   "cat": "competition_bonus",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): subsidio de Liga/FPF/UEFA (solidaridad vía FPF), sin premio de competición explícito. [wf-2024-2025-efe7ad0a.md L724, L87]",
    "destino": "revenue",
    "amountNative": 0.359044
   },
@@ -695,11 +691,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.046632,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "revenue",
    "amountNative": 0.046632
   },
@@ -710,12 +706,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.063392,
-   "cat": "youth_football",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): compensación de formación cobrada (FIFA Clearing House). [L730]",
    "destino": "revenue",
    "amountNative": 0.063392
   },
@@ -727,11 +723,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 3.932136,
    "cat": "player_sales",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "revenue",
    "amountNative": 3.932136
   },
@@ -1154,11 +1150,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.013571,
    "cat": "other_expenses",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.013571
   },
@@ -1215,11 +1211,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.035917,
    "cat": "youth_other_sports_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.035917
   },
@@ -1231,11 +1227,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.233549,
    "cat": "youth_other_sports_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.233549
   },
@@ -1247,11 +1243,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.018674,
    "cat": "youth_other_sports_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.018674
   },
@@ -1263,11 +1259,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.001404,
    "cat": "youth_other_sports_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.001404
   },
@@ -1425,7 +1421,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 13,
   "lineasGasto": 35,
   "metaFilas": 3,
