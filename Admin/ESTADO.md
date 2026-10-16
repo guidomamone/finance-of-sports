@@ -96,8 +96,9 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   contestarlos primero (subagentes por grupos de clubes, con un archivo de criterio común). El lote vuelve a verificar solo un documento
   con respuestas nuevas; aun así, antes de pasar el comando conviene el ensayo de `cargar.mjs --desde-verificacion` de cada documento,
   porque frenos de la carga (signo del resultado, filas del otro lado) no se ven en la verificación.
-- Portugal está cargado salvo lo que espera una mejora de script (to-do 165 b0). Lo que falta del to-do 237, con el diseño medido de cada
-  letra, está en el propio to-do; los años en escudos (PTE) se cargan en su moneda con la paridad fija al euro, como las liras.
+- Portugal está cargado salvo Benfica 2014-15 (en HALLAZGOS) y Sporting 2001 (su verificación no cierra; to-do 165 b0). Del to-do 237
+  queda solo `al` (Guido la dejó para después). Los años en escudos (PTE) se cargan en su moneda con la paridad fija al euro, como las liras.
+  Un ejercicio de transición por cambio de cierre (11 meses que encadenan con el cierre anterior y el siguiente) se carga con nota pública.
 - `lote.mjs` saltea desde la etapa 3 los documentos cuyo año ya está en el sitio (salvo `--reintentar`): volver a correr una lista
   trabaja solo sobre lo que falta. En Portugal, si la portada dice SAD o SDUQ, cuotas y otras secciones en 0 son reales en ese
   documento y no se pregunta (`cargar.mjs`); el perfil del club no se toca (Porto publica años del club y de la SAD).
