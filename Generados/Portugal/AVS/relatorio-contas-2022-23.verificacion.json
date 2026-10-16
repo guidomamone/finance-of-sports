@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/AVS/relatorio-contas-2022-23.pdf",
  "md": "Clubes/Portugal/AVS/relatorio-contas-2022-23.md",
- "generado": "2026-10-15T21:56:50.015Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:57:13.756Z",
+ "estado": "ok",
+ "clubId": "avs-pt",
  "year": 2023,
  "escala": {
   "valor": "unidades",
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "a80799c",
-  "dda62a6"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -41,7 +38,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -53,8 +50,7 @@
   "la nota de \"Subsidios à exploração\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Outros rendimentos\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "duda de localizar que no afecta la carga: El encabezado de b20 dice 2020/21 como año anterior, probablemente error de rótulo.",
-  "duda de extraer que no afecta la carga: L1026 tiene la columna corrida; 147.701,97+392,00=148.093,97 confirma que 392,00 es del año anterior, y el encabezado L1019 dice 2020/21 en vez de 2021/22.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L1026 tiene la columna corrida; 147.701,97+392,00=148.093,97 confirma que 392,00 es del año anterior, y el encabezado L1019 dice 2020/21 en vez de 2021/22."
  ],
  "reintentar": null,
  "reintentado": false,

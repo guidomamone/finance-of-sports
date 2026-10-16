@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/AVS/relatorio-contas-2020-21.pdf",
  "md": "Clubes/Portugal/AVS/relatorio-contas-2020-21.md",
- "generado": "2026-10-15T21:56:49.962Z",
+ "generado": "2026-10-16T03:57:13.730Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "avs-pt",
  "year": 2021,
  "escala": {
   "valor": "unidades",
@@ -33,7 +33,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -45,8 +45,7 @@
   "la nota de \"Subsídios à exploração\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "duda de localizar que no afecta la carga: b1 es un resumen de gestión con tres ejercicios que agrega renglones ya presentes en b5.",
   "duda de extraer que no afecta la carga: L1116 solo tiene importe en 2019/20; el actual está vacío.",
-  "duda de extraer que no afecta la carga: Diferencia de 0,03 € en el año anterior entre nota y estado.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Diferencia de 0,03 € en el año anterior entre nota y estado."
  ],
  "reintentar": null,
  "reintentado": false,
