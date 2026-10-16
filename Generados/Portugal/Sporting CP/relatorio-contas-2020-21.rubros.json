@@ -1,447 +1,403 @@
 {
-  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2020-21.md",
-  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2020-21.pdf",
-  "club": "sportingcp-pt",
-  "year": 2021,
-  "generatedAt": "2026-10-16T01:34:17.539Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Loja Verde",
-      "lado": "revenue",
-      "page": 112,
-      "section": "nota que desglosa \"Vendas e prestações de serviços\"",
-      "values": [
-        1.461
-      ],
-      "glosa": "Tienda oficial (Loja Verde)"
-    },
-    {
-      "label": "Distribuição/Retalho",
-      "lado": "revenue",
-      "page": 112,
-      "section": "nota que desglosa \"Vendas e prestações de serviços\"",
-      "values": [
-        0.703
-      ],
-      "glosa": "Distribución / Comercio minorista"
-    },
-    {
-      "label": "Loja Verde Online",
-      "lado": "revenue",
-      "page": 112,
-      "section": "nota que desglosa \"Vendas e prestações de serviços\"",
-      "values": [
-        2.284
-      ],
-      "glosa": "Tienda oficial online"
-    },
-    {
-      "label": "Direitos Televisivos",
-      "lado": "revenue",
-      "page": 112,
-      "section": "nota que desglosa \"Vendas e prestações de serviços\"",
-      "values": [
-        29.727
-      ],
-      "glosa": "Derechos audiovisuales"
-    },
-    {
-      "label": "Bilheteira e Bilhetes de Época",
-      "lado": "revenue",
-      "page": 112,
-      "section": "nota que desglosa \"Vendas e prestações de serviços\"",
-      "values": [
-        0.973
-      ],
-      "glosa": "Taquilla y abonos"
-    },
-    {
-      "label": "Patrocínios e Publicidade",
-      "lado": "revenue",
-      "page": 112,
-      "section": "nota que desglosa \"Vendas e prestações de serviços\"",
-      "values": [
-        16.588
-      ],
-      "glosa": "Patrocinios y publicidad"
-    },
-    {
-      "label": "Outros",
-      "lado": "revenue",
-      "page": 112,
-      "section": "nota que desglosa \"Vendas e prestações de serviços\"",
-      "values": [
-        4.842
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "Diferencia de redondeo",
-      "lado": "revenue",
-      "section": "nota que desglosa \"Vendas e prestações de serviços\"",
-      "values": [
-        -0.001
-      ],
-      "glosa": "Diferencia de redondeo"
-    },
-    {
-      "label": "Participação nas Competições Europeias",
-      "lado": "revenue",
-      "page": 113,
-      "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
-      "values": [
-        0.277
-      ],
-      "glosa": "Participación en competiciones europeas"
-    },
-    {
-      "label": "Participação nas Competições Nacionais",
-      "lado": "revenue",
-      "page": 113,
-      "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
-      "values": [
-        0.241
-      ],
-      "glosa": "Participación en competiciones nacionales"
-    },
-    {
-      "label": "Cedência de jogadores",
-      "lado": "revenue",
-      "page": 113,
-      "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
-      "values": [
-        0.47
-      ],
-      "glosa": "Cesión de jugadores"
-    },
-    {
-      "label": "Subsidios à exploração",
-      "lado": "revenue",
-      "page": 113,
-      "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
-      "values": [
-        0.263
-      ],
-      "glosa": "Subvenciones a la explotación"
-    },
-    {
-      "label": "Recuperação de custos",
-      "lado": "revenue",
-      "page": 113,
-      "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
-      "values": [
-        0.276
-      ],
-      "glosa": "Recuperación de costes"
-    },
-    {
-      "label": "Outros",
-      "lado": "revenue",
-      "page": 113,
-      "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
-      "values": [
-        6.342
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "Venda de direitos desportivos",
-      "lado": "revenue",
-      "page": 119,
-      "section": "nota que desglosa \"Rendimentos com transacções com jogadores\"",
-      "values": [
-        35.298
-      ],
-      "glosa": "Venta de derechos deportivos"
-    },
-    {
-      "label": "Mecanismo de solidariedade/Compensação por formação",
-      "lado": "revenue",
-      "page": 119,
-      "section": "nota que desglosa \"Rendimentos com transacções com jogadores\"",
-      "values": [
-        0.467
-      ],
-      "glosa": "Mecanismo de solidaridad / Compensación por formación"
-    },
-    {
-      "label": "Custo das mercadorias vendidas",
-      "lado": "expense",
-      "page": 88,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        2.952
-      ],
-      "glosa": "Coste de las mercancías vendidas"
-    },
-    {
-      "label": "Fornecimentos e serviços externos",
-      "lado": "expense",
-      "page": 88,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        19.735
-      ],
-      "glosa": "Suministros y servicios exteriores"
-    },
-    {
-      "label": "Remuneração dos órgãos sociais",
-      "lado": "expense",
-      "page": 116,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        0.416
-      ],
-      "glosa": "Remuneración de los órganos de gobierno"
-    },
-    {
-      "label": "Remuneração do pessoal",
-      "lado": "expense",
-      "page": 116,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        46.956
-      ],
-      "glosa": "Remuneración del personal"
-    },
-    {
-      "label": "Prémios de desempenho e de performance desportiva",
-      "lado": "expense",
-      "page": 116,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        2.898
-      ],
-      "glosa": "Primas por rendimiento y logros deportivos"
-    },
-    {
-      "label": "Indemnizações",
-      "lado": "expense",
-      "page": 116,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        2.051
-      ],
-      "glosa": "Indemnizaciones"
-    },
-    {
-      "label": "Encargos com remunerações",
-      "lado": "expense",
-      "page": 116,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        4.496
-      ],
-      "glosa": "Cargas sociales sobre remuneraciones"
-    },
-    {
-      "label": "Gastos com benefícios pós-emprego (Nota 29)",
-      "lado": "expense",
-      "page": 116,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        0.357
-      ],
-      "glosa": "Gastos por beneficios post-empleo (Nota 29)"
-    },
-    {
-      "label": "Seguros",
-      "lado": "expense",
-      "page": 116,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        4.429
-      ],
-      "glosa": "Seguros"
-    },
-    {
-      "label": "Outros",
-      "lado": "expense",
-      "page": 116,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        0.388
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "Depreciações e amortizações excluindo plantel",
-      "lado": "expense",
-      "page": 88,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        5.074
-      ],
-      "glosa": "Depreciaciones y amortizaciones excluyendo plantilla"
-    },
-    {
-      "label": "Imparidade de clientes (Nota 15)",
-      "lado": "expense",
-      "page": 117,
-      "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
-      "values": [
-        -1.081
-      ],
-      "glosa": "Deterioro de clientes (Nota 15)"
-    },
-    {
-      "label": "Imparidade de inventários",
-      "lado": "expense",
-      "page": 117,
-      "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
-      "values": [
-        0.351
-      ],
-      "glosa": "Deterioro de existencias"
-    },
-    {
-      "label": "Provisões para outros riscos e encargos (Nota 20)",
-      "lado": "expense",
-      "page": 117,
-      "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
-      "values": [
-        0.308
-      ],
-      "glosa": "Provisiones para otros riesgos y gastos (Nota 20)"
-    },
-    {
-      "label": "Diferencia de redondeo",
-      "lado": "expense",
-      "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
-      "values": [
-        -0.001
-      ],
-      "glosa": "Diferencia de redondeo"
-    },
-    {
-      "label": "Quotizações",
-      "lado": "expense",
-      "page": 118,
-      "section": "nota que desglosa \"Outros gastos e perdas\"",
-      "values": [
-        0.509
-      ],
-      "glosa": "Cuotas de socios"
-    },
-    {
-      "label": "Impostos",
-      "lado": "expense",
-      "page": 118,
-      "section": "nota que desglosa \"Outros gastos e perdas\"",
-      "values": [
-        0.153
-      ],
-      "glosa": "Impuestos"
-    },
-    {
-      "label": "Multas e penalidades",
-      "lado": "expense",
-      "page": 118,
-      "section": "nota que desglosa \"Outros gastos e perdas\"",
-      "values": [
-        0.161
-      ],
-      "glosa": "Multas y sanciones"
-    },
-    {
-      "label": "Prospecção de mercado",
-      "lado": "expense",
-      "page": 118,
-      "section": "nota que desglosa \"Outros gastos e perdas\"",
-      "values": [
-        0.031
-      ],
-      "glosa": "Prospección de mercado"
-    },
-    {
-      "label": "Juros de mora",
-      "lado": "expense",
-      "page": 118,
-      "section": "nota que desglosa \"Outros gastos e perdas\"",
-      "values": [
-        0.81
-      ],
-      "glosa": "Intereses de demora"
-    },
-    {
-      "label": "Outros",
-      "lado": "expense",
-      "page": 118,
-      "section": "nota que desglosa \"Outros gastos e perdas\"",
-      "values": [
-        0.946
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "Diferencia de redondeo",
-      "lado": "expense",
-      "section": "nota que desglosa \"Outros gastos e perdas\"",
-      "values": [
-        -0.001
-      ],
-      "glosa": "Diferencia de redondeo"
-    },
-    {
-      "label": "Amortizações do exercício - Futebol profissional (Nota 12)",
-      "lado": "expense",
-      "page": 118,
-      "section": "nota que desglosa \"Amortizações e perdas de imparidade do plantel\"",
-      "values": [
-        20.676
-      ],
-      "glosa": "Amortizaciones del ejercicio - Fútbol profesional (Nota 12)"
-    },
-    {
-      "label": "Perdas por imparidade - Futebol profissional (Nota 12)",
-      "lado": "expense",
-      "page": 118,
-      "section": "nota que desglosa \"Amortizações e perdas de imparidade do plantel\"",
-      "values": [
-        3.883
-      ],
-      "glosa": "Pérdidas por deterioro - Fútbol profesional (Nota 12)"
-    },
-    {
-      "label": "Percentagem dos direitos económicos/mais-valias",
-      "lado": "expense",
-      "page": 119,
-      "section": "nota que desglosa \"Gastos com transacções com jogadores\"",
-      "values": [
-        1.207
-      ],
-      "glosa": "Porcentaje de derechos económicos / plusvalías"
-    },
-    {
-      "label": "Comissões",
-      "lado": "expense",
-      "page": 119,
-      "section": "nota que desglosa \"Gastos com transacções com jogadores\"",
-      "values": [
-        5.892
-      ],
-      "glosa": "Comisiones"
-    },
-    {
-      "label": "Mecanismo de solidariedade/Compensação por formação",
-      "lado": "expense",
-      "page": 119,
-      "section": "nota que desglosa \"Gastos com transacções com jogadores\"",
-      "values": [
-        0.948
-      ],
-      "glosa": "Mecanismo de solidaridad / Compensación por formación"
-    },
-    {
-      "label": "Outros",
-      "lado": "expense",
-      "page": 119,
-      "section": "nota que desglosa \"Gastos com transacções com jogadores\"",
-      "values": [
-        0.162
-      ],
-      "glosa": "Otros"
-    }
-  ]
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2020-21.md",
+ "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2020-21.pdf",
+ "club": "sportingcp-pt",
+ "year": 2021,
+ "generatedAt": "2026-10-16T17:31:50.118Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Loja Verde",
+   "lado": "revenue",
+   "page": 112,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\"",
+   "values": [
+    1.461
+   ]
+  },
+  {
+   "label": "Distribuição/Retalho",
+   "lado": "revenue",
+   "page": 112,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\"",
+   "values": [
+    0.703
+   ]
+  },
+  {
+   "label": "Loja Verde Online",
+   "lado": "revenue",
+   "page": 112,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\"",
+   "values": [
+    2.284
+   ]
+  },
+  {
+   "label": "Direitos Televisivos",
+   "lado": "revenue",
+   "page": 112,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\"",
+   "values": [
+    29.727
+   ]
+  },
+  {
+   "label": "Bilheteira e Bilhetes de Época",
+   "lado": "revenue",
+   "page": 112,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\"",
+   "values": [
+    0.973
+   ]
+  },
+  {
+   "label": "Patrocínios e Publicidade",
+   "lado": "revenue",
+   "page": 112,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\"",
+   "values": [
+    16.588
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "revenue",
+   "page": 112,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\"",
+   "values": [
+    4.842
+   ]
+  },
+  {
+   "label": "Diferencia de redondeo",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Vendas e prestações de serviços\"",
+   "values": [
+    -0.001
+   ]
+  },
+  {
+   "label": "Participação nas Competições Europeias",
+   "lado": "revenue",
+   "page": 113,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "values": [
+    0.277
+   ]
+  },
+  {
+   "label": "Participação nas Competições Nacionais",
+   "lado": "revenue",
+   "page": 113,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "values": [
+    0.241
+   ]
+  },
+  {
+   "label": "Cedência de jogadores",
+   "lado": "revenue",
+   "page": 113,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "values": [
+    0.47
+   ]
+  },
+  {
+   "label": "Subsidios à exploração",
+   "lado": "revenue",
+   "page": 113,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "values": [
+    0.263
+   ]
+  },
+  {
+   "label": "Recuperação de custos",
+   "lado": "revenue",
+   "page": 113,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "values": [
+    0.276
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "revenue",
+   "page": 113,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "values": [
+    6.342
+   ]
+  },
+  {
+   "label": "Venda de direitos desportivos",
+   "lado": "revenue",
+   "page": 119,
+   "section": "nota que desglosa \"Rendimentos com transacções com jogadores\"",
+   "values": [
+    35.298
+   ]
+  },
+  {
+   "label": "Mecanismo de solidariedade/Compensação por formação",
+   "lado": "revenue",
+   "page": 119,
+   "section": "nota que desglosa \"Rendimentos com transacções com jogadores\"",
+   "values": [
+    0.467
+   ]
+  },
+  {
+   "label": "Custo das mercadorias vendidas",
+   "lado": "expense",
+   "page": 88,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    2.952
+   ]
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": "expense",
+   "page": 88,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    19.735
+   ]
+  },
+  {
+   "label": "Remuneração dos órgãos sociais",
+   "lado": "expense",
+   "page": 116,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    0.416
+   ]
+  },
+  {
+   "label": "Remuneração do pessoal",
+   "lado": "expense",
+   "page": 116,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    46.956
+   ]
+  },
+  {
+   "label": "Prémios de desempenho e de performance desportiva",
+   "lado": "expense",
+   "page": 116,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    2.898
+   ]
+  },
+  {
+   "label": "Indemnizações",
+   "lado": "expense",
+   "page": 116,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    2.051
+   ]
+  },
+  {
+   "label": "Encargos com remunerações",
+   "lado": "expense",
+   "page": 116,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    4.496
+   ]
+  },
+  {
+   "label": "Gastos com benefícios pós-emprego (Nota 29)",
+   "lado": "expense",
+   "page": 116,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    0.357
+   ]
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 116,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    4.429
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 116,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    0.388
+   ]
+  },
+  {
+   "label": "Depreciações e amortizações excluindo plantel",
+   "lado": "expense",
+   "page": 88,
+   "section": "estado (lectura 5: hoja)",
+   "values": [
+    5.074
+   ]
+  },
+  {
+   "label": "Imparidade de clientes (Nota 15)",
+   "lado": "expense",
+   "page": 117,
+   "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
+   "values": [
+    -1.081
+   ]
+  },
+  {
+   "label": "Imparidade de inventários",
+   "lado": "expense",
+   "page": 117,
+   "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
+   "values": [
+    0.351
+   ]
+  },
+  {
+   "label": "Provisões para outros riscos e encargos (Nota 20)",
+   "lado": "expense",
+   "page": 117,
+   "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
+   "values": [
+    0.308
+   ]
+  },
+  {
+   "label": "Diferencia de redondeo",
+   "lado": "expense",
+   "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
+   "values": [
+    -0.001
+   ]
+  },
+  {
+   "label": "Quotizações",
+   "lado": "expense",
+   "page": 118,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "values": [
+    0.509
+   ]
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 118,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "values": [
+    0.153
+   ]
+  },
+  {
+   "label": "Multas e penalidades",
+   "lado": "expense",
+   "page": 118,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "values": [
+    0.161
+   ]
+  },
+  {
+   "label": "Prospecção de mercado",
+   "lado": "expense",
+   "page": 118,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "values": [
+    0.031
+   ]
+  },
+  {
+   "label": "Juros de mora",
+   "lado": "expense",
+   "page": 118,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "values": [
+    0.81
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 118,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "values": [
+    0.946
+   ]
+  },
+  {
+   "label": "Diferencia de redondeo",
+   "lado": "expense",
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "values": [
+    -0.001
+   ]
+  },
+  {
+   "label": "Amortizações do exercício - Futebol profissional (Nota 12)",
+   "lado": "expense",
+   "page": 118,
+   "section": "nota que desglosa \"Amortizações e perdas de imparidade do plantel\"",
+   "values": [
+    20.676
+   ]
+  },
+  {
+   "label": "Perdas por imparidade - Futebol profissional (Nota 12)",
+   "lado": "expense",
+   "page": 118,
+   "section": "nota que desglosa \"Amortizações e perdas de imparidade do plantel\"",
+   "values": [
+    3.883
+   ]
+  },
+  {
+   "label": "Percentagem dos direitos económicos/mais-valias",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Gastos com transacções com jogadores\"",
+   "values": [
+    1.207
+   ]
+  },
+  {
+   "label": "Comissões",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Gastos com transacções com jogadores\"",
+   "values": [
+    5.892
+   ]
+  },
+  {
+   "label": "Mecanismo de solidariedade/Compensação por formação",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Gastos com transacções com jogadores\"",
+   "values": [
+    0.948
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"Gastos com transacções com jogadores\"",
+   "values": [
+    0.162
+   ]
+  }
+ ]
 }

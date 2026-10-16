@@ -225,6 +225,9 @@ window.RANKINGS["pt-primeiraliga"] = {
       { id:"benfica-pt", revenue:230.597, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2020-21",
         mix:[["Comercial / Sponsors",24.559],["Estadio",0.436],["Televisión",65.377],["Premios por competencias",12.189],["Venta de Jugadores",118.854],["Otros ingresos",9.181]] },
+      { id:"sportingcp-pt", revenue:119.086, reportType:"official_balance_sheet",
+        sourceId:"sportingcp-pt-relatorio-contas-2020-21",
+        mix:[["Comercial / Sponsors",24.998],["Estadio",1.156],["Televisión",35.326],["Premios por competencias",0.616],["Venta de Jugadores",43.06],["Otros ingresos",13.93]] },
       { id:"vitoriaguimaraes-pt", revenue:33.145, reportType:"official_balance_sheet",
         sourceId:"vitoriaguimaraes-pt-relatorio-contas-2020-21",
         mix:[["Comercial / Sponsors",1.776],["Estadio",0.934],["Televisión",8.318],["Premios por competencias",0.26],["Venta de Jugadores",19.847],["Otros ingresos",2.009]] },
@@ -409,6 +412,14 @@ window.RANKINGS["pt-primeiraliga"] = {
       { id:"benfica-pt", revenue:73.993, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-prestacao-contas-2009-11-03",
         mix:[["Cuotas Sociales",11.629],["Comercial / Sponsors",17.014],["Estadio",12.066],["Televisión",14.238],["Premios por competencias",1.227],["Venta de Jugadores",11.623],["Otros ingresos",6.197]] },
+    ],
+  },
+  2008: {
+    leagueSize: null,
+    clubs: [
+      { id:"sportingcp-pt", revenue:75.587, reportType:"official_balance_sheet",
+        sourceId:"sportingcp-pt-relatorio-contas-2007-08",
+        mix:[["Cuotas Sociales",6.268],["Comercial / Sponsors",11.47],["Estadio",19.713],["Televisión",17.771],["Premios por competencias",11.352],["Venta de Jugadores",3.973],["Otros ingresos",5.041]] },
     ],
   },
   2007: {

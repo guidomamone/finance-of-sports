@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2007-08.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2007-08.md",
- "generado": "2026-10-16T01:34:17.576Z",
+ "generado": "2026-10-16T17:31:40.784Z",
  "estado": "ok",
  "clubId": "sportingcp-pt",
  "year": 2008,
@@ -47,24 +47,19 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2007 de este documento suma ingresos 65.56; el sitio tiene 65.325"
+  },
+  {
    "nombre": "documento del año 2009",
    "ok": false,
    "detalle": "ingresos de 2008: 47.949 en este documento y 45.461 en relatorio-contas-2008-09.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2007",
-   "ok": false,
-   "detalle": "ingresos de 2007: 195.878 en relatorio-contas-2006-07.pdf y 65.56 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2007: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
    "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "detalle": "ingresos de 2007: 65.325 en relatorio-contas-2006-07.pdf y 65.56 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
@@ -375,53 +370,5 @@
    "M": -0.022,
    "linea": 997
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "5863a9367468603be0e0942a7eb97dc0229ed8af",
-  "rango": [
-   976,
-   1001
-  ],
-  "lineasCargadas": [
-   1358,
-   1359,
-   1360,
-   1361,
-   1362,
-   1363,
-   1384,
-   1385,
-   1386,
-   1387,
-   990,
-   1400,
-   1401,
-   1402,
-   1403,
-   1404,
-   1405,
-   1406,
-   1407,
-   1408,
-   983,
-   1429,
-   1430,
-   1431,
-   1432,
-   1433,
-   1434,
-   984,
-   985,
-   986,
-   987,
-   989,
-   993,
-   994,
-   996,
-   997
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 976 a 1001 del .md):\nL976: |   | Notas | EUR'000 30.Jun.08 | EUR'000 30.Jun.07  |\nL977: | --- | --- | --- | --- |\nL978: |  **Proveitos operacionais**  |   |   |   |\nL979: |  Prestações de serviços | 2 | 35 618 | 32 714  |\nL980: |  Outros proveitos operacionais | 3 | 9 843 | 7 390  |\nL981: |  Proveitos operacionais excluindo proveitos com transacções de passes de jogadores |  | 45 461 | 40 104  |\nL982: |  **Custos operacionais**  |   |   |   |\nL983: |  Fornecimentos e serviços externos | 4 | 15 753 | 12 077  |\nL984: |  Custos com o pessoal | 5 | 19 863 | 22 234  |\nL985: |  Amortizações excluindo depreciação do plantel |  | 82 | 40  |\nL986: |  Provisões e perdas por imparidade excluindo plantel | 17 | (435) | 1 432  |\nL987: |  Outros custos operacionais | 6 | 3 072 | 3 034  |\nL988: |  Custos operacionais excluindo custos com transacções de passes de jogadores |  | 38 335 | 38 817  |\nL989: |  Amortizações e perdas de imparidade com passes de jogadores | 7 | 7 051 | 9 643  |\nL990: |  (Custos)/Proveitos com transacções de passes de jogadores | 8 | 2 488 | 25 456  |\nL991: |   |  | (4 563) | 15 813  |\nL992: |  Resultados operacionais |  | 2 563 | 17 100  |\nL993: |  Custos e perdas financeiros | 9 | (3 076) | (2 515)  |\nL994: |  Proveitos e ganhos financeiros | 9 | 1 148 | 709  |\nL995: |  Resultados antes de impostos |  | 635 | 15 294  |\nL996: |  Impostos diferidos | 26 | 16 | 40  |\nL997: |  Imposto sobre o rendimento | 26 | 22 | 15  |\nL998: |  **Resultado líquido do exercício** |  | **597** | **15 239**  |\nL999: |  **Resultado por acção ( Euros)** | 16 | **0,03** | **0,73**  |\nL1001: Para ser tido com as notas anexas às demonstrações financeiras.\n\nLO QUE SE CARGA:\n- ingreso · \"Quotizações\" · 3.976 · L1358 (de una nota)\n- ingreso · \"Direitos Televisivos\" · 11.273 · L1359 (de una nota)\n- ingreso · \"Bilheteira e Bilhetes de Época\" · 12.505 · L1360 (de una nota)\n- ingreso · \"Patrocinios e Publicidade\" · 7.276 · L1361 (de una nota)\n- ingreso · \"Serviços Directos\" · 0.433 · L1362 (de una nota)\n- ingreso · \"Outras\" · 0.155 · L1363 (de una nota)\n- ingreso · \"Participações nas Competições Europeias\" · 7.201 · L1384 (de una nota)\n- ingreso · \"Cedência de Jogadores a terceiros\" · 0.032 · L1385 (de una nota)\n- ingreso · \"Benefícios contratuais\" · 1.849 · L1386 (de una nota)\n- ingreso · \"Outras\" · 0.761 · L1387 (de una nota)\n- ingreso · \"(Custos)/Proveitos com transacções de passes de jogadores\" · 2.488 · L990\n- gasto · \"Sub-contratos\" · 10.232 · L1400 (de una nota)\n- gasto · \"Trabalhos especializados\" · 1.154 · L1401 (de una nota)\n- gasto · \"Organização de jogos\" · 0.738 · L1402 (de una nota)\n- gasto · \"Deslocações e Estadas\" · 0.934 · L1403 (de una nota)\n- gasto · \"Honorários\" · 1.414 · L1404 (de una nota)\n- gasto · \"Comissões\" · 0.086 · L1405 (de una nota)\n- gasto · \"Seguros\" · 0.218 · L1406 (de una nota)\n- gasto · \"Equipamentos Desportivos\" · 0.264 · L1407 (de una nota)\n- gasto · \"Outros FSE\" · 0.712 · L1408 (de una nota)\n- gasto · \"Diferencia de redondeo\" · 0.001 · L983\n- gasto · \"Remunerações Órgãos Sociais\" · 0.291 · L1429 (de una nota)\n- gasto · \"Remuneração do Pessoal\" · 17.143 · L1430 (de una nota)\n- gasto · \"Encargos com remunerações\" · 0.858 · L1431 (de una nota)\n- gasto · \"Seguros\" · 0.74 · L1432 (de una nota)\n- gasto · \"Pensões de Reforma\" · 0.244 · L1433 (de una nota)\n- gasto · \"Outros\" · 0.586 · L1434 (de una nota)\n- gasto · \"Diferencia de redondeo\" · 0.001 · L984\n- gasto · \"Amortizações excluindo depreciação do plantel\" · 0.082 · L985\n- gasto · \"Provisões e perdas por imparidade excluindo plantel\" · -0.435 · L986\n- gasto · \"Outros custos operacionais\" · 3.072 · L987\n- gasto · \"Amortizações e perdas de imparidade com passes de jogadores\" · 7.051 · L989\n- financiero · \"Custos e perdas financeiros\" · -3.076 · L993\n- financiero · \"Proveitos e ganhos financeiros\" · 1.148 · L994\n- impuesto · \"Impostos diferidos\" · -0.016 · L996\n- impuesto · \"Imposto sobre o rendimento\" · -0.022 · L997"
- }
+ ]
 }
