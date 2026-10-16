@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
- "generado": "2026-10-16T02:33:30.020Z",
+ "generado": "2026-10-16T02:49:45.212Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (mafra-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros\" -> admin_general_expense 0.6; \"Transporte de Pessoal\" -> match_organisation_expense 0.55; \"Outros gastos com pessoal:\" -> wages_squad 0.5; \"Provisões (aumentos/reduções)\" -> other_amortisation 0.6"
   },
   {
    "etapa": "reintento",
@@ -250,13 +246,13 @@
    },
    {
     "rawLabel": "Outros",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.000022,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Deslocações e Estadas",
@@ -274,9 +270,9 @@
     "amountNative": -0.001524,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Rendas e Alugueres",
@@ -374,9 +370,9 @@
     "amountNative": -0.236953,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Ajustamentos de inventários (perdas/reversões)",
@@ -404,9 +400,9 @@
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outras imparidades (perdas/reversões)",
@@ -937,12 +933,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e Fluidos\")",
    "signoFijo": 0.000022,
-   "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): 'Outros' al final de un bloque de FSE.",
    "destino": "expense",
    "amountNative": -0.000022
   },
@@ -969,11 +965,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Deslocações, Estadas e Transportes\")",
    "signoFijo": 0.001524,
    "cat": "match_organisation_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "expense",
    "amountNative": -0.001524
   },
@@ -1121,11 +1117,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.236953,
    "cat": "wages_squad",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "expense",
    "amountNative": -0.236953
   },
@@ -1167,11 +1163,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0,
    "cat": "other_amortisation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "expense",
    "amountNative": 0
   },
@@ -1466,7 +1462,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 2,
   "lineasIngreso": 9,
   "lineasGasto": 39,
   "metaFilas": 3,

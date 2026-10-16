@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
   "club": "mafra",
   "year": 2024,
-  "generatedAt": "2026-10-16T02:25:11.387Z",
+  "generatedAt": "2026-10-16T02:44:08.165Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -64,7 +64,7 @@
       "values": [
         0.000272
       ],
-      "glosa": "Ingresos accesorios"
+      "glosa": "Ingresos suplementarios"
     },
     {
       "label": "Correção Exercícios Anteriores",
@@ -264,7 +264,7 @@
       "values": [
         0.321943
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Comunicação",
@@ -294,7 +294,7 @@
       "values": [
         0.000774
       ],
-      "glosa": "Gastos jurídicos y notariales"
+      "glosa": "Servicios contenciosos y notariales"
     },
     {
       "label": "Limpeza, Higiene e Conforto",
@@ -364,7 +364,7 @@
       "values": [
         0
       ],
-      "glosa": "Ajustes de existencias (pérdidas/reversiones)"
+      "glosa": "Ajustes de inventarios (pérdidas/reversiones)"
     },
     {
       "label": "Imparidade de dívidas a receber (perdas/reversões)",
@@ -374,7 +374,7 @@
       "values": [
         0
       ],
-      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
+      "glosa": "Deterioro de cuentas por cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -484,7 +484,7 @@
       "values": [
         0.377064
       ],
-      "glosa": "Gastos/reversiones de amortización y depreciación"
+      "glosa": "Gastos/reversiones por depreciación y amortización"
     }
   ]
 }

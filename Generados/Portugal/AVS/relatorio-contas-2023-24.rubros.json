@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf",
   "club": "avs",
   "year": 2024,
-  "generatedAt": "2026-10-16T02:25:06.210Z",
+  "generatedAt": "2026-10-16T02:44:07.938Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,7 +44,7 @@
       "values": [
         0.45
       ],
-      "glosa": "Ingresos de televisión"
+      "glosa": "Ingresos por televisión"
     },
     {
       "label": "Merchandising",
@@ -84,7 +84,7 @@
       "values": [
         0.021038
       ],
-      "glosa": "Subvenciones del Estado y otras entidades públicas"
+      "glosa": "Subvenciones del Estado y otros entes públicos"
     },
     {
       "label": "Donativos de partes não relacionadas",
@@ -104,7 +104,7 @@
       "values": [
         0
       ],
-      "glosa": "Contribuciones/Donaciones de partes vinculadas"
+      "glosa": "Aportaciones/Donaciones de partes vinculadas"
     },
     {
       "label": "Rendimentos de operações extra-futebol não relacionadas com clube (l)",
@@ -114,7 +114,7 @@
       "values": [
         0.033751
       ],
-      "glosa": "Ingresos de operaciones no futbolísticas no relacionadas con el club (l)"
+      "glosa": "Ingresos de operaciones extrafútbol no relacionadas con el club (l)"
     },
     {
       "label": "Outros ganhos extraordinários",
@@ -144,155 +144,65 @@
       "values": [
         0.032046
       ],
-      "glosa": "Coste de mercancías vendidas y materiales consumidos"
+      "glosa": "Coste de las mercancías vendidas y materias consumidas"
     },
     {
-      "label": "Equipa principal - remunerações",
+      "label": "Remunerações do pessoal",
       "lado": "expense",
-      "page": 16,
-      "section": "estado",
+      "page": 29,
+      "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
       "values": [
-        1.00783
+        2.123752
       ],
-      "glosa": "Primer equipo - remuneraciones"
+      "glosa": "Remuneraciones del personal"
     },
     {
-      "label": "Equipa principal - encargos sobre remunerações",
+      "label": "Encargos sobre Remunerações",
       "lado": "expense",
-      "page": 16,
-      "section": "estado",
+      "page": 29,
+      "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
       "values": [
-        0.048835
+        0.218715
       ],
-      "glosa": "Primer equipo - cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sobre remuneraciones"
     },
     {
-      "label": "Equipa principal - encargos com seguros",
+      "label": "Indemnizações",
       "lado": "expense",
-      "page": 16,
-      "section": "estado",
+      "page": 29,
+      "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
       "values": [
-        0.184536
+        0.120249
       ],
-      "glosa": "Primer equipo - gastos de seguros"
+      "glosa": "Indemnizaciones"
     },
     {
-      "label": "Equipa principal - direitos de imagem",
+      "label": "Seguro Ac. Trab. e Doenças Profi.",
       "lado": "expense",
-      "page": 16,
-      "section": "estado",
+      "page": 29,
+      "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
       "values": [
-        0
+        0.195684
       ],
-      "glosa": "Primer equipo - derechos de imagen"
+      "glosa": "Seguro de accidentes de trabajo y enfermedades profesionales"
     },
     {
-      "label": "Equipa principal - outros gastos",
+      "label": "Gastos com ação social",
       "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.394318
-      ],
-      "glosa": "Primer equipo - otros gastos"
-    },
-    {
-      "label": "Treinador principal - remunerações",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.086333
-      ],
-      "glosa": "Entrenador principal - remuneraciones"
-    },
-    {
-      "label": "Treinador principal - encargos sobre remunerações",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.020504
-      ],
-      "glosa": "Entrenador principal - cargas sociales sobre remuneraciones"
-    },
-    {
-      "label": "Treinador principal - encargos com seguros",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.00151
-      ],
-      "glosa": "Entrenador principal - gastos de seguros"
-    },
-    {
-      "label": "Treinador principal - direitos de imagem",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Entrenador principal - derechos de imagen"
-    },
-    {
-      "label": "Treinador principal - outros gastos",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.018
-      ],
-      "glosa": "Entrenador principal - otros gastos"
-    },
-    {
-      "label": "Outro pessoal - remunerações",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.654772
-      ],
-      "glosa": "Otro personal - remuneraciones"
-    },
-    {
-      "label": "Outro pessoal - encargos sobre remunerações",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.149376
-      ],
-      "glosa": "Otro personal - cargas sociales sobre remuneraciones"
-    },
-    {
-      "label": "Outro pessoal - encargos com seguros",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.009939
-      ],
-      "glosa": "Otro personal - gastos de seguros"
-    },
-    {
-      "label": "Outro pessoal - outros gastos",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.094297
-      ],
-      "glosa": "Otro personal - otros gastos"
-    },
-    {
-      "label": "Outros gastos com pessoal",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
+      "page": 29,
+      "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
       "values": [
         0.098571
+      ],
+      "glosa": "Gastos de acción social"
+    },
+    {
+      "label": "Outros gastos com Pessoal",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
+      "values": [
+        0.011849
       ],
       "glosa": "Otros gastos de personal"
     },
@@ -314,7 +224,7 @@
       "values": [
         0.019731
       ],
-      "glosa": "Amortizaciones de activos intangibles exc. atletas"
+      "glosa": "Amortizaciones de activos intangibles excl. deportistas"
     },
     {
       "label": "Perdas por imparidade exc. atletas",
@@ -324,7 +234,7 @@
       "values": [
         0
       ],
-      "glosa": "Pérdidas por deterioro exc. atletas"
+      "glosa": "Pérdidas por deterioro excl. deportistas"
     },
     {
       "label": "Reversões de Provisões/Imparidades exc. Atletas",
@@ -334,7 +244,7 @@
       "values": [
         0
       ],
-      "glosa": "Reversiones de provisiones/deterioros exc. atletas"
+      "glosa": "Reversiones de provisiones/deterioro excl. deportistas"
     },
     {
       "label": "Gastos em dia de jogo",
@@ -364,7 +274,7 @@
       "values": [
         0.017116
       ],
-      "glosa": "Gastos de patrocinios, publicidad y corporativo"
+      "glosa": "Gastos de patrocinio, publicidad y corporativo"
     },
     {
       "label": "Gastos de actividades relacionadas com \"comercial\"",
@@ -394,7 +304,7 @@
       "values": [
         0.0281
       ],
-      "glosa": "Gastos por agentes e intermediarios"
+      "glosa": "Gastos con agentes e intermediarios"
     },
     {
       "label": "Gastos de operações extra-futebol não relacionadas com o clube (m)",
@@ -404,7 +314,7 @@
       "values": [
         0
       ],
-      "glosa": "Gastos de operaciones no futbolísticas no relacionadas con el club (m)"
+      "glosa": "Gastos de operaciones extrafútbol no relacionadas con el club (m)"
     },
     {
       "label": "Impostos",

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/AVS/relatorio-contas-2023-24.md",
- "generado": "2026-10-16T02:25:06.209Z",
+ "generado": "2026-10-16T02:44:07.935Z",
  "estado": "ok",
  "clubId": null,
  "year": 2024,
@@ -25,14 +25,14 @@
    "nombre": "total de gastos",
    "ok": true,
    "detalle": "4.512755 = 4.512755",
-   "suma": 4.512754529999999,
+   "suma": 4.51275453,
    "impreso": 4.5127545300000005
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (financiero e impuesto invertidos)",
-   "dif": 1.7763568394002505e-15
+   "dif": 8.881784197001252e-16
   },
   {
    "nombre": "lectura",
@@ -56,10 +56,8 @@
   }
  ],
  "notas": [
+  "la nota del subtotal \"Total - Gastos com pessoal\" suma el subtotal impreso (2.76882): reemplaza a \"Outros gastos com pessoal\" + \"Outro pessoal - outros gastos\" + \"Outro pessoal - encargos com seguros\" + \"Outro pessoal - encargos sobre remunerações\" + \"Outro pessoal - remunerações\" + \"Treinador principal - outros gastos\" + \"Treinador principal - direitos de imagem\" + \"Treinador principal - encargos com seguros\" + \"Treinador principal - encargos sobre remunerações\" + \"Treinador principal - remunerações\" + \"Equipa principal - outros gastos\" + \"Equipa principal - direitos de imagem\" + \"Equipa principal - encargos com seguros\" + \"Equipa principal - encargos sobre remunerações\" + \"Equipa principal - remunerações\"",
   "la lectura base no cerraba; cerró con la lectura 4",
-  "línea 555: 1 509,51 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (150901) el resultado daría -3.190694 y no cierra)",
-  "línea 561: 9 939,20 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (293920) el resultado daría -3.325283 y no cierra)",
-  "línea 562: 94 297,48 no está en el segunda lectura; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
   "línea 582: 1 084 433,54 no está en el segunda lectura; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
   "duda de localizar que no afecta la carga: b1 es un resumen del informe de gestión que repite importes del estado b3."
  ],
@@ -190,124 +188,52 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Equipa principal - remunerações",
+   "etiqueta": "Remunerações do pessoal",
    "lado": "gasto",
-   "M": 1.00783,
-   "pagina": 16,
-   "linea": 547,
-   "origen": "estado"
+   "M": 2.123752,
+   "pagina": 29,
+   "linea": 1133,
+   "origen": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)"
   },
   {
-   "etiqueta": "Equipa principal - encargos sobre remunerações",
+   "etiqueta": "Encargos sobre Remunerações",
    "lado": "gasto",
-   "M": 0.048835,
-   "pagina": 16,
-   "linea": 548,
-   "origen": "estado"
+   "M": 0.218715,
+   "pagina": 29,
+   "linea": 1134,
+   "origen": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)"
   },
   {
-   "etiqueta": "Equipa principal - encargos com seguros",
+   "etiqueta": "Indemnizações",
    "lado": "gasto",
-   "M": 0.184536,
-   "pagina": 16,
-   "linea": 549,
-   "origen": "estado"
+   "M": 0.120249,
+   "pagina": 29,
+   "linea": 1135,
+   "origen": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)"
   },
   {
-   "etiqueta": "Equipa principal - direitos de imagem",
+   "etiqueta": "Seguro Ac. Trab. e Doenças Profi.",
    "lado": "gasto",
-   "M": 0,
-   "pagina": 16,
-   "linea": 550,
-   "origen": "estado"
+   "M": 0.195684,
+   "pagina": 29,
+   "linea": 1136,
+   "origen": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)"
   },
   {
-   "etiqueta": "Equipa principal - outros gastos",
-   "lado": "gasto",
-   "M": 0.394318,
-   "pagina": 16,
-   "linea": 551,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Treinador principal - remunerações",
-   "lado": "gasto",
-   "M": 0.086333,
-   "pagina": 16,
-   "linea": 553,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Treinador principal - encargos sobre remunerações",
-   "lado": "gasto",
-   "M": 0.020504,
-   "pagina": 16,
-   "linea": 554,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Treinador principal - encargos com seguros",
-   "lado": "gasto",
-   "M": 0.00151,
-   "pagina": 16,
-   "linea": 555,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Treinador principal - direitos de imagem",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 16,
-   "linea": 556,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Treinador principal - outros gastos",
-   "lado": "gasto",
-   "M": 0.018,
-   "pagina": 16,
-   "linea": 557,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Outro pessoal - remunerações",
-   "lado": "gasto",
-   "M": 0.654772,
-   "pagina": 16,
-   "linea": 559,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Outro pessoal - encargos sobre remunerações",
-   "lado": "gasto",
-   "M": 0.149376,
-   "pagina": 16,
-   "linea": 560,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Outro pessoal - encargos com seguros",
-   "lado": "gasto",
-   "M": 0.009939,
-   "pagina": 16,
-   "linea": 561,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Outro pessoal - outros gastos",
-   "lado": "gasto",
-   "M": 0.094297,
-   "pagina": 16,
-   "linea": 562,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Outros gastos com pessoal",
+   "etiqueta": "Gastos com ação social",
    "lado": "gasto",
    "M": 0.098571,
-   "pagina": 16,
-   "linea": 564,
-   "origen": "estado"
+   "pagina": 29,
+   "linea": 1137,
+   "origen": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Outros gastos com Pessoal",
+   "lado": "gasto",
+   "M": 0.011849,
+   "pagina": 29,
+   "linea": 1138,
+   "origen": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)"
   },
   {
    "etiqueta": "Depreciações de ativos tangíveis",
@@ -458,19 +384,10 @@
    "linea": 612
   }
  ],
+ "notaSubtotal": [
+  "gasto"
+ ],
  "confirmadosPorSumas": [
-  {
-   "linea": 555,
-   "numero": "1 509,51"
-  },
-  {
-   "linea": 561,
-   "numero": "9 939,20"
-  },
-  {
-   "linea": 562,
-   "numero": "94 297,48"
-  },
   {
    "linea": 582,
    "numero": "1 084 433,54"

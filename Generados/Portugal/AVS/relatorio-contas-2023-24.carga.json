@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf",
- "generado": "2026-10-16T02:33:27.440Z",
+ "generado": "2026-10-16T02:49:43.911Z",
  "frena": [
   {
    "etapa": "registro",
@@ -20,7 +20,7 @@
   },
   {
    "etapa": "categorizacion",
-   "motivo": "44 fila(s) impresa(s) que no están en el .categorias.json (la verificación las abrió después de categorizar): \"Quotizações\" 0 (pág. 16); \"Receitas de bilheteira\" 0.023439 (pág. 16); \"Patrocínios, publicidade e corporate\" 0.213195 (pág. 16); \"Receitas de televisão\" 0.45 (pág. 16). Volver a correr la etapa 5 o categorizarlas en la cola (node tools/cola.mjs --corregir-categoria)"
+   "motivo": "35 fila(s) impresa(s) que no están en el .categorias.json (la verificación las abrió después de categorizar): \"Quotizações\" 0 (pág. 16); \"Receitas de bilheteira\" 0.023439 (pág. 16); \"Patrocínios, publicidade e corporate\" 0.213195 (pág. 16); \"Receitas de televisão\" 0.45 (pág. 16). Volver a correr la etapa 5 o categorizarlas en la cola (node tools/cola.mjs --corregir-categoria)"
   },
   {
    "etapa": "categorizacion",
@@ -28,7 +28,7 @@
   },
   {
    "etapa": "categorizacion",
-   "motivo": "100.0% del dinero de gastos queda sin categoría aceptable (tope 5%): \"Custo mercadorias vendidas e matérias co\" 0.032046 (no está en categorias.json); \"Equipa principal - remunerações\" 1.00783 (no está en categorias.json); \"Equipa principal - encargos sobre remune\" 0.048835 (no está en categorias.json)"
+   "motivo": "100.0% del dinero de gastos queda sin categoría aceptable (tope 5%): \"Custo mercadorias vendidas e matérias co\" 0.032046 (no está en categorias.json); \"Remunerações do pessoal\" 2.123752 (no está en categorias.json); \"Encargos sobre Remunerações\" 0.218715 (no está en categorias.json)"
   },
   {
    "etapa": "tie-out",
@@ -39,7 +39,7 @@
   "\"Cuotas sociales\" en 0: real en este documento (lo presenta una SAD/SDUQ, solo fútbol profesional: Clubes/Portugal/AVS/relatorio-contas-2023-24.md L11 \"AVS Futebol, SAD\"; to-do 237 y)",
   "\"Otras secciones deportivas\" en 0: real en este documento (lo presenta una SAD/SDUQ, solo fútbol profesional: Clubes/Portugal/AVS/relatorio-contas-2023-24.md L11 \"AVS Futebol, SAD\"; to-do 237 y)",
   "ingresos: 13 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"Quotizações\" (no está en categorias.json); \"Receitas de bilheteira\" (no está en categorias.json); \"Patrocínios, publicidade e corporate\" (no está en categorias.json); \"Receitas de televisão\" (no está en categorias.json); \"Merchandising\" (no está en categorias.json)",
-  "gastos: 31 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"Custo mercadorias vendidas e matérias consumidas\" (no está en categorias.json); \"Equipa principal - remunerações\" (no está en categorias.json); \"Equipa principal - encargos sobre remunerações\" (no está en categorias.json); \"Equipa principal - encargos com seguros\" (no está en categorias.json); \"Equipa principal - direitos de imagem\" (no está en categorias.json)",
+  "gastos: 22 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"Custo mercadorias vendidas e matérias consumidas\" (no está en categorias.json); \"Remunerações do pessoal\" (no está en categorias.json); \"Encargos sobre Remunerações\" (no está en categorias.json); \"Indemnizações\" (no está en categorias.json); \"Seguro Ac. Trab. e Doenças Profi.\" (no está en categorias.json)",
   "no se encontró el resultado del ejercicio impreso: officialPAT queda null (audit.js P2 balance-sin-pat)",
   "ninguna fila de gastos: officialTotalExpenses queda null (el sitio muestra \"sin dato\")",
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-06-30); pregunta en la cola (no frena)"
@@ -94,7 +94,7 @@
  "year": 2024,
  "ajustes": null,
  "seleccion": {
-  "filas": 48,
+  "filas": 39,
   "notasUsadas": [],
   "refM": null
  },
@@ -268,180 +268,72 @@
    "destino": "sin-categoria"
   },
   {
-   "label": "Equipa principal - remunerações",
-   "page": 16,
-   "native": 1.00783,
+   "label": "Remunerações do pessoal",
+   "page": 29,
+   "native": 2.123752,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 1.00783,
+   "origen": "verificacion (nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal))",
+   "signoFijo": 2.123752,
    "cat": null,
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "sin-categoria"
   },
   {
-   "label": "Equipa principal - encargos sobre remunerações",
-   "page": 16,
-   "native": 0.048835,
+   "label": "Encargos sobre Remunerações",
+   "page": 29,
+   "native": 0.218715,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.048835,
+   "origen": "verificacion (nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.218715,
    "cat": null,
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "sin-categoria"
   },
   {
-   "label": "Equipa principal - encargos com seguros",
-   "page": 16,
-   "native": 0.184536,
+   "label": "Indemnizações",
+   "page": 29,
+   "native": 0.120249,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.184536,
+   "origen": "verificacion (nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.120249,
    "cat": null,
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "sin-categoria"
   },
   {
-   "label": "Equipa principal - direitos de imagem",
-   "page": 16,
-   "native": 0,
+   "label": "Seguro Ac. Trab. e Doenças Profi.",
+   "page": 29,
+   "native": 0.195684,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0,
+   "origen": "verificacion (nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.195684,
    "cat": null,
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "sin-categoria"
   },
   {
-   "label": "Equipa principal - outros gastos",
-   "page": 16,
-   "native": 0.394318,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.394318,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
-  },
-  {
-   "label": "Treinador principal - remunerações",
-   "page": 16,
-   "native": 0.086333,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.086333,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
-  },
-  {
-   "label": "Treinador principal - encargos sobre remunerações",
-   "page": 16,
-   "native": 0.020504,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.020504,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
-  },
-  {
-   "label": "Treinador principal - encargos com seguros",
-   "page": 16,
-   "native": 0.00151,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.00151,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
-  },
-  {
-   "label": "Treinador principal - direitos de imagem",
-   "page": 16,
-   "native": 0,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
-  },
-  {
-   "label": "Treinador principal - outros gastos",
-   "page": 16,
-   "native": 0.018,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.018,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
-  },
-  {
-   "label": "Outro pessoal - remunerações",
-   "page": 16,
-   "native": 0.654772,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.654772,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
-  },
-  {
-   "label": "Outro pessoal - encargos sobre remunerações",
-   "page": 16,
-   "native": 0.149376,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.149376,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
-  },
-  {
-   "label": "Outro pessoal - encargos com seguros",
-   "page": 16,
-   "native": 0.009939,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.009939,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
-  },
-  {
-   "label": "Outro pessoal - outros gastos",
-   "page": 16,
-   "native": 0.094297,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.094297,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
-  },
-  {
-   "label": "Outros gastos com pessoal",
-   "page": 16,
+   "label": "Gastos com ação social",
+   "page": 29,
    "native": 0.098571,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
+   "origen": "verificacion (nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal))",
    "signoFijo": 0.098571,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Outros gastos com Pessoal",
+   "page": 29,
+   "native": 0.011849,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.011849,
    "cat": null,
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
@@ -689,6 +581,7 @@
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos con signo",
+   "verificacion (nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal))": "gastos con signo",
    "verificacion (nota que desglosa \"Gastos extraordinários\")": "gastos con signo",
    "verificacion": "gastos con signo"
   },

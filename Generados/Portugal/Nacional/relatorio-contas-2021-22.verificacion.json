@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2021-22.pdf",
  "md": "Clubes/Portugal/Nacional/relatorio-contas-2021-22.md",
- "generado": "2026-10-16T02:25:06.635Z",
- "estado": "cola",
+ "generado": "2026-10-16T02:44:08.224Z",
+ "estado": "ok",
  "clubId": "nacional-pt",
- "year": 2021,
+ "year": 2022,
  "escala": {
   "valor": "no se sabe",
   "escalon": 0,
@@ -23,9 +23,7 @@
    "fecha": "2026-10-16"
   }
  ],
- "cola": [
-  "88f8036"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -41,51 +39,66 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 0.000004000000003251403
+   "dif": 1.27675647831893e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 3.309302 en este documento y 3.309302 en relatorio-contas-2022-23.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
-  "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)"
+  "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar de escala confirmada por otro documento del club (to-do 213): relatorio-contas-2022-23.md L664 imprime 439.297 con su moneda; la carga usó unidades",
+  "duda de extraer de escala confirmada por otro documento del club (to-do 213): relatorio-contas-2022-23.md L664 imprime 439.297 con su moneda; la carga usó unidades",
+  "duda de extraer que no afecta la carga: L134 es positivo en 2022 (reversión) y negativo en 2021; se clasificó como gasto con su signo impreso.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 8.73865,
-  "gastos": 8.604267,
-  "financiero": -0.003857,
-  "impuesto": -0.00949,
-  "resultadoImpreso": 0.121032,
-  "resultadoParaCargar": 0.121032,
+  "ingresos": 3.309302,
+  "gastos": 4.073589,
+  "financiero": 0,
+  "impuesto": 0.32499,
+  "resultadoImpreso": -0.439297,
+  "resultadoParaCargar": -0.439297,
   "resultadoFinal": null,
   "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
-   "etiqueta": "Mercadorias",
-   "lado": "ingreso",
-   "M": 0.000617,
-   "pagina": 23,
-   "linea": 882,
-   "origen": "nota que desglosa \"Vendas e serviços prestados\""
-  },
-  {
    "etiqueta": "Bilhetes, Camarotes",
    "lado": "ingreso",
-   "M": 0.00082,
+   "M": 0.008201,
    "pagina": 23,
    "linea": 885,
    "origen": "nota que desglosa \"Vendas e serviços prestados\""
   },
   {
+   "etiqueta": "COMPETIÇÕES",
+   "lado": "ingreso",
+   "M": 0.007317,
+   "pagina": 23,
+   "linea": 886,
+   "origen": "nota que desglosa \"Vendas e serviços prestados\""
+  },
+  {
    "etiqueta": "Publicidade",
    "lado": "ingreso",
-   "M": 0.226843,
+   "M": 0.166956,
    "pagina": 23,
    "linea": 887,
    "origen": "nota que desglosa \"Vendas e serviços prestados\""
@@ -93,7 +106,7 @@
   {
    "etiqueta": "Direitos Televisivos",
    "lado": "ingreso",
-   "M": 4.6,
+   "M": 0.6,
    "pagina": 23,
    "linea": 888,
    "origen": "nota que desglosa \"Vendas e serviços prestados\""
@@ -101,7 +114,7 @@
   {
    "etiqueta": "Subsídios EOEP - IDRAM",
    "lado": "ingreso",
-   "M": 1.75,
+   "M": 0.893791,
    "pagina": 20,
    "linea": 750,
    "origen": "nota que desglosa \"Subsídios à exploração\""
@@ -109,31 +122,39 @@
   {
    "etiqueta": "Subsídios EOEP - INST. SEG. SOCIAL",
    "lado": "ingreso",
-   "M": 0.006594,
+   "M": 0.007438,
    "pagina": 20,
    "linea": 751,
    "origen": "nota que desglosa \"Subsídios à exploração\""
   },
   {
-   "etiqueta": "Subsídios EOEP - INST. EMPREGO",
+   "etiqueta": "Subsídios EOEP - IDERAM / InvesteRA",
    "lado": "ingreso",
-   "M": 0.000743,
+   "M": 0.172642,
    "pagina": 20,
-   "linea": 753,
+   "linea": 752,
    "origen": "nota que desglosa \"Subsídios à exploração\""
   },
   {
    "etiqueta": "FPF - TAÇA PORTUGAL",
    "lado": "ingreso",
-   "M": 0.001772,
+   "M": 0.004189,
    "pagina": 20,
    "linea": 755,
    "origen": "nota que desglosa \"Subsídios à exploração\""
   },
   {
+   "etiqueta": "Rendimentos em ativos não financeiros",
+   "lado": "ingreso",
+   "M": 0.000452,
+   "pagina": 21,
+   "linea": 799,
+   "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
    "etiqueta": "Prémios - LPFP Apostas Desportivas Placard",
    "lado": "ingreso",
-   "M": 0.184124,
+   "M": 0.242518,
    "pagina": 21,
    "linea": 801,
    "origen": "nota que desglosa \"Outros rendimentos\""
@@ -141,7 +162,7 @@
   {
    "etiqueta": "Prémios Federação Portuguesa de Futebol",
    "lado": "ingreso",
-   "M": 0.079395,
+   "M": 0.326625,
    "pagina": 21,
    "linea": 802,
    "origen": "nota que desglosa \"Outros rendimentos\""
@@ -149,47 +170,31 @@
   {
    "etiqueta": "Prémios - Mecanismo de Solidariedade",
    "lado": "ingreso",
-   "M": 0.013968,
+   "M": 0.009787,
    "pagina": 21,
    "linea": 803,
    "origen": "nota que desglosa \"Outros rendimentos\""
   },
   {
-   "etiqueta": "Correções relativas a períodos anteriores",
+   "etiqueta": "Excesso da estimativa para impostos",
    "lado": "ingreso",
-   "M": 0.010337,
+   "M": 0.000411,
    "pagina": 21,
-   "linea": 805,
+   "linea": 806,
    "origen": "nota que desglosa \"Outros rendimentos\""
   },
   {
    "etiqueta": "Quotas - 50% CDN",
    "lado": "ingreso",
-   "M": 0.009607,
+   "M": 0.017449,
    "pagina": 21,
    "linea": 807,
    "origen": "nota que desglosa \"Outros rendimentos\""
   },
   {
-   "etiqueta": "Cedências de jogadores",
-   "lado": "ingreso",
-   "M": 0.0025,
-   "pagina": 21,
-   "linea": 808,
-   "origen": "nota que desglosa \"Outros rendimentos\""
-  },
-  {
-   "etiqueta": "Venda de Jogadores",
-   "lado": "ingreso",
-   "M": 1.430806,
-   "pagina": 21,
-   "linea": 809,
-   "origen": "nota que desglosa \"Outros rendimentos\""
-  },
-  {
    "etiqueta": "Comparticipação tarifa residente",
    "lado": "ingreso",
-   "M": 0.196322,
+   "M": 0.230045,
    "pagina": 21,
    "linea": 810,
    "origen": "nota que desglosa \"Outros rendimentos\""
@@ -197,7 +202,7 @@
   {
    "etiqueta": "Outros não especificados",
    "lado": "ingreso",
-   "M": 0.224202,
+   "M": 0.621481,
    "pagina": 21,
    "linea": 811,
    "origen": "nota que desglosa \"Outros rendimentos\""
@@ -205,7 +210,7 @@
   {
    "etiqueta": "Trabalhos especializados",
    "lado": "gasto",
-   "M": 0.098854,
+   "M": 0.051232,
    "pagina": 21,
    "linea": 774,
    "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
@@ -213,7 +218,7 @@
   {
    "etiqueta": "Vigilância e segurança",
    "lado": "gasto",
-   "M": 0.030452,
+   "M": 0.031133,
    "pagina": 21,
    "linea": 775,
    "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
@@ -221,7 +226,7 @@
   {
    "etiqueta": "Honorários",
    "lado": "gasto",
-   "M": 0.15529,
+   "M": 0.123164,
    "pagina": 21,
    "linea": 776,
    "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
@@ -229,7 +234,7 @@
   {
    "etiqueta": "Conservação e reparação",
    "lado": "gasto",
-   "M": 0.075452,
+   "M": 0.078001,
    "pagina": 21,
    "linea": 777,
    "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
@@ -237,7 +242,7 @@
   {
    "etiqueta": "Serviços bancários",
    "lado": "gasto",
-   "M": 0.003008,
+   "M": 0.002914,
    "pagina": 21,
    "linea": 778,
    "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
@@ -245,7 +250,7 @@
   {
    "etiqueta": "Outros",
    "lado": "gasto",
-   "M": 0.576686,
+   "M": 0.065396,
    "pagina": 21,
    "linea": 779,
    "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
@@ -253,7 +258,7 @@
   {
    "etiqueta": "Outros",
    "lado": "gasto",
-   "M": 0.04062,
+   "M": 0.078688,
    "pagina": 21,
    "linea": 781,
    "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
@@ -261,7 +266,7 @@
   {
    "etiqueta": "Deslocações e estadas",
    "lado": "gasto",
-   "M": 0.606844,
+   "M": 0.433332,
    "pagina": 21,
    "linea": 783,
    "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
@@ -269,7 +274,7 @@
   {
    "etiqueta": "Outros",
    "lado": "gasto",
-   "M": 0.005136,
+   "M": 0.007065,
    "pagina": 21,
    "linea": 784,
    "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
@@ -277,7 +282,7 @@
   {
    "etiqueta": "Rendas e alugueres",
    "lado": "gasto",
-   "M": 0.12075,
+   "M": 0.12,
    "pagina": 21,
    "linea": 786,
    "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
@@ -285,7 +290,7 @@
   {
    "etiqueta": "Comunicação",
    "lado": "gasto",
-   "M": 0.014692,
+   "M": 0.017457,
    "pagina": 21,
    "linea": 787,
    "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
@@ -293,7 +298,7 @@
   {
    "etiqueta": "Contencioso e notariado",
    "lado": "gasto",
-   "M": 0.020743,
+   "M": 0.008644,
    "pagina": 21,
    "linea": 788,
    "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
@@ -301,7 +306,7 @@
   {
    "etiqueta": "Limpeza, higiene e conforto",
    "lado": "gasto",
-   "M": 0.011303,
+   "M": 0.006775,
    "pagina": 21,
    "linea": 789,
    "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
@@ -309,7 +314,7 @@
   {
    "etiqueta": "Outros serviços",
    "lado": "gasto",
-   "M": 0.020442,
+   "M": 0.014241,
    "pagina": 21,
    "linea": 790,
    "origen": "nota que desglosa \"Fornecimentos e serviços externos\""
@@ -317,7 +322,7 @@
   {
    "etiqueta": "Remunerações órgãos sociais",
    "lado": "gasto",
-   "M": 0.210665,
+   "M": 0.168174,
    "pagina": 22,
    "linea": 828,
    "origen": "nota que desglosa \"Gastos com o pessoal\""
@@ -325,7 +330,7 @@
   {
    "etiqueta": "Remunerações do Pessoal - Funcionários",
    "lado": "gasto",
-   "M": 0.342793,
+   "M": 0.358403,
    "pagina": 22,
    "linea": 830,
    "origen": "nota que desglosa \"Gastos com o pessoal\""
@@ -333,7 +338,7 @@
   {
    "etiqueta": "Remunerações do Pessoa - Jogadores",
    "lado": "gasto",
-   "M": 3.30075,
+   "M": 2.298124,
    "pagina": 22,
    "linea": 831,
    "origen": "nota que desglosa \"Gastos com o pessoal\""
@@ -341,7 +346,7 @@
   {
    "etiqueta": "Remunerações do Pessoal - Treinadores",
    "lado": "gasto",
-   "M": 0.45799,
+   "M": 0.198521,
    "pagina": 22,
    "linea": 832,
    "origen": "nota que desglosa \"Gastos com o pessoal\""
@@ -349,7 +354,7 @@
   {
    "etiqueta": "Enc. s/rem.-orgãos sociais",
    "lado": "gasto",
-   "M": 0.053106,
+   "M": 0.036921,
    "pagina": 22,
    "linea": 834,
    "origen": "nota que desglosa \"Gastos com o pessoal\""
@@ -357,7 +362,7 @@
   {
    "etiqueta": "Enc. s/rem.-pessoal - Funcionários",
    "lado": "gasto",
-   "M": 0.068883,
+   "M": 0.075001,
    "pagina": 22,
    "linea": 835,
    "origen": "nota que desglosa \"Gastos com o pessoal\""
@@ -365,7 +370,7 @@
   {
    "etiqueta": "Enc. s/rem.-pessoal - Treinadores",
    "lado": "gasto",
-   "M": 0.092031,
+   "M": 0.041543,
    "pagina": 22,
    "linea": 836,
    "origen": "nota que desglosa \"Gastos com o pessoal\""
@@ -373,23 +378,15 @@
   {
    "etiqueta": "Enc. s/rem.-pessoal - Jogadores",
    "lado": "gasto",
-   "M": 0.121732,
+   "M": 0.083274,
    "pagina": 22,
    "linea": 837,
    "origen": "nota que desglosa \"Gastos com o pessoal\""
   },
   {
-   "etiqueta": "Enc. s/rem.-pessoal - Prestadores de Serviço",
-   "lado": "gasto",
-   "M": 0.0008,
-   "pagina": 22,
-   "linea": 838,
-   "origen": "nota que desglosa \"Gastos com o pessoal\""
-  },
-  {
    "etiqueta": "Seg.ac.trb - pessoal",
    "lado": "gasto",
-   "M": 0.03767,
+   "M": 0.005649,
    "pagina": 22,
    "linea": 840,
    "origen": "nota que desglosa \"Gastos com o pessoal\""
@@ -397,7 +394,7 @@
   {
    "etiqueta": "Seg.ac.trb - Jogadores",
    "lado": "gasto",
-   "M": 0.178601,
+   "M": 0.143172,
    "pagina": 22,
    "linea": 841,
    "origen": "nota que desglosa \"Gastos com o pessoal\""
@@ -405,7 +402,7 @@
   {
    "etiqueta": "Outros Custos com Pessoal - Jogadores",
    "lado": "gasto",
-   "M": 0.084954,
+   "M": 0.04049,
    "pagina": 22,
    "linea": 843,
    "origen": "nota que desglosa \"Gastos com o pessoal\""
@@ -413,7 +410,7 @@
   {
    "etiqueta": "Outros Custos com Pessoal - Outros",
    "lado": "gasto",
-   "M": 0.001257,
+   "M": 0.000977,
    "pagina": 22,
    "linea": 844,
    "origen": "nota que desglosa \"Gastos com o pessoal\""
@@ -421,15 +418,39 @@
   {
    "etiqueta": "Provisões (aumentos/reduções)",
    "lado": "gasto",
-   "M": 1.08901,
+   "M": -0.988064,
    "pagina": 4,
    "linea": 134,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "Menos-valias jogadores",
+   "lado": "gasto",
+   "M": 0.05,
+   "pagina": 22,
+   "linea": 856,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.000461,
+   "pagina": 22,
+   "linea": 857,
+   "origen": "nota que desglosa \"Outros gastos\""
+  },
+  {
+   "etiqueta": "Correções relativas a períodos anteriores",
+   "lado": "gasto",
+   "M": 0.095417,
+   "pagina": 22,
+   "linea": 859,
+   "origen": "nota que desglosa \"Outros gastos\""
   },
   {
    "etiqueta": "Quotizações",
    "lado": "gasto",
-   "M": 0.009742,
+   "M": 0.001796,
    "pagina": 22,
    "linea": 860,
    "origen": "nota que desglosa \"Outros gastos\""
@@ -437,7 +458,7 @@
   {
    "etiqueta": "Transferências de jogadores",
    "lado": "gasto",
-   "M": 0.32,
+   "M": 0.00225,
    "pagina": 22,
    "linea": 861,
    "origen": "nota que desglosa \"Outros gastos\""
@@ -445,7 +466,7 @@
   {
    "etiqueta": "Outros custos - Protocolos",
    "lado": "gasto",
-   "M": 0.03,
+   "M": 0.015,
    "pagina": 22,
    "linea": 862,
    "origen": "nota que desglosa \"Outros gastos\""
@@ -453,7 +474,7 @@
   {
    "etiqueta": "Custas, Quota TV (estorno), etc",
    "lado": "gasto",
-   "M": 0.124763,
+   "M": 0.133489,
    "pagina": 22,
    "linea": 863,
    "origen": "nota que desglosa \"Outros gastos\""
@@ -461,7 +482,7 @@
   {
    "etiqueta": "Outros não especificados",
    "lado": "gasto",
-   "M": 0.12244,
+   "M": 0.155104,
    "pagina": 22,
    "linea": 864,
    "origen": "nota que desglosa \"Outros gastos\""
@@ -469,7 +490,7 @@
   {
    "etiqueta": "Gastos/reversões de depreciação e de amortização",
    "lado": "gasto",
-   "M": 0.176808,
+   "M": 0.119845,
    "pagina": 4,
    "linea": 138,
    "origen": "estado"
@@ -482,166 +503,15 @@
  "financiero": [
   {
    "etiqueta": "Juros e gastos similares suportados",
-   "M": -0.003857,
+   "M": null,
    "linea": 140
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Imposto sobre rendimento do período",
-   "M": -0.00949,
+   "M": 0.32499,
    "linea": 142
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "alarma",
-  "clave": "fced86e7ca34043181799871ec3b95be6f6ea6d4",
-  "rango": [
-   127,
-   146
-  ],
-  "lineasCargadas": [
-   882,
-   885,
-   887,
-   888,
-   750,
-   751,
-   753,
-   755,
-   801,
-   802,
-   803,
-   805,
-   807,
-   808,
-   809,
-   810,
-   811,
-   774,
-   775,
-   776,
-   777,
-   778,
-   779,
-   781,
-   783,
-   784,
-   786,
-   787,
-   788,
-   789,
-   790,
-   828,
-   830,
-   831,
-   832,
-   834,
-   835,
-   836,
-   837,
-   838,
-   840,
-   841,
-   843,
-   844,
-   134,
-   860,
-   861,
-   862,
-   863,
-   864,
-   138,
-   140,
-   142
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 127 a 146 del .md):\nL127: | --- | --- | --- | --- |\nL128: |   |   |  30-jun-22 | 30-jun-21  |\nL129: |   |   |  12 meses | 12 meses  |\nL130: |  Vendas e serviços prestados | 20 | 782.474 | 4.828.279  |\nL131: |  Subsídios à exploração | 15 | 1.078.060 | 1.759.109  |\nL132: |  Fornecimentos e serviços externos | 16 | (1.038.043) | (1.780.272)  |\nL133: |  Gastos com o pessoal | 18 | (3.450.249) | (4.951.233)  |\nL134: |  Provisões (aumentos/reduções) | 22 | 988.064 | (1.089.010)  |\nL135: |  Outros rendimentos | 17 | 1.448.769 | 2.151.260  |\nL136: |  Outros gastos | 19 | (453.517) | (606.945)  |\nL137: |  **Resultado antes de depreciações, gastos de financiamento e impostos** |  | **(644.441)** | **311.188**  |\nL138: |  Gastos/reversões de depreciação e de amortização | 6 e 7 | (119.845) | (176.808)  |\nL139: |  **Resultado Operacional (antes de gastos de financiamento e impostos)** |  | **(764.287)** | **134.380**  |\nL140: |  Juros e gastos similares suportados | 21 | - | (3.857)  |\nL141: |  **Resultado antes de impostos** |  | **(764.287)** | **130.523**  |\nL142: |  Imposto sobre rendimento do período | 9.1 | 324.990 | (9.490)  |\nL143: |  **Resultado líquido do período** |  | **(439.297)** | **121.032**  |\nL145: O anexo faz parte destas demonstrações financeiras\n\nLO QUE SE CARGA:\n- ingreso · \"Mercadorias\" · 0.000617 · L882 (de una nota)\n- ingreso · \"Bilhetes, Camarotes\" · 0.00082 · L885 (de una nota)\n- ingreso · \"Publicidade\" · 0.226843 · L887 (de una nota)\n- ingreso · \"Direitos Televisivos\" · 4.6 · L888 (de una nota)\n- ingreso · \"Subsídios EOEP - IDRAM\" · 1.75 · L750 (de una nota)\n- ingreso · \"Subsídios EOEP - INST. SEG. SOCIAL\" · 0.006594 · L751 (de una nota)\n- ingreso · \"Subsídios EOEP - INST. EMPREGO\" · 0.000743 · L753 (de una nota)\n- ingreso · \"FPF - TAÇA PORTUGAL\" · 0.001772 · L755 (de una nota)\n- ingreso · \"Prémios - LPFP Apostas Desportivas Placard\" · 0.184124 · L801 (de una nota)\n- ingreso · \"Prémios Federação Portuguesa de Futebol\" · 0.079395 · L802 (de una nota)\n- ingreso · \"Prémios - Mecanismo de Solidariedade\" · 0.013968 · L803 (de una nota)\n- ingreso · \"Correções relativas a períodos anteriores\" · 0.010337 · L805 (de una nota)\n- ingreso · \"Quotas - 50% CDN\" · 0.009607 · L807 (de una nota)\n- ingreso · \"Cedências de jogadores\" · 0.0025 · L808 (de una nota)\n- ingreso · \"Venda de Jogadores\" · 1.430806 · L809 (de una nota)\n- ingreso · \"Comparticipação tarifa residente\" · 0.196322 · L810 (de una nota)\n- ingreso · \"Outros não especificados\" · 0.224202 · L811 (de una nota)\n- gasto · \"Trabalhos especializados\" · 0.098854 · L774 (de una nota)\n- gasto · \"Vigilância e segurança\" · 0.030452 · L775 (de una nota)\n- gasto · \"Honorários\" · 0.15529 · L776 (de una nota)\n- gasto · \"Conservação e reparação\" · 0.075452 · L777 (de una nota)\n- gasto · \"Serviços bancários\" · 0.003008 · L778 (de una nota)\n- gasto · \"Outros\" · 0.576686 · L779 (de una nota)\n- gasto · \"Outros\" · 0.04062 · L781 (de una nota)\n- gasto · \"Deslocações e estadas\" · 0.606844 · L783 (de una nota)\n- gasto · \"Outros\" · 0.005136 · L784 (de una nota)\n- gasto · \"Rendas e alugueres\" · 0.12075 · L786 (de una nota)\n- gasto · \"Comunicação\" · 0.014692 · L787 (de una nota)\n- gasto · \"Contencioso e notariado\" · 0.020743 · L788 (de una nota)\n- gasto · \"Limpeza, higiene e conforto\" · 0.011303 · L789 (de una nota)\n- gasto · \"Outros serviços\" · 0.020442 · L790 (de una nota)\n- gasto · \"Remunerações órgãos sociais\" · 0.210665 · L828 (de una nota)\n- gasto · \"Remunerações do Pessoal - Funcionários\" · 0.342793 · L830 (de una nota)\n- gasto · \"Remunerações do Pessoa - Jogadores\" · 3.30075 · L831 (de una nota)\n- gasto · \"Remunerações do Pessoal - Treinadores\" · 0.45799 · L832 (de una nota)\n- gasto · \"Enc. s/rem.-orgãos sociais\" · 0.053106 · L834 (de una nota)\n- gasto · \"Enc. s/rem.-pessoal - Funcionários\" · 0.068883 · L835 (de una nota)\n- gasto · \"Enc. s/rem.-pessoal - Treinadores\" · 0.092031 · L836 (de una nota)\n- gasto · \"Enc. s/rem.-pessoal - Jogadores\" · 0.121732 · L837 (de una nota)\n- gasto · \"Enc. s/rem.-pessoal - Prestadores de Serviço\" · 0.0008 · L838 (de una nota)\n- gasto · \"Seg.ac.trb - pessoal\" · 0.03767 · L840 (de una nota)\n- gasto · \"Seg.ac.trb - Jogadores\" · 0.178601 · L841 (de una nota)\n- gasto · \"Outros Custos com Pessoal - Jogadores\" · 0.084954 · L843 (de una nota)\n- gasto · \"Outros Custos com Pessoal - Outros\" · 0.001257 · L844 (de una nota)\n- gasto · \"Provisões (aumentos/reduções)\" · 1.08901 · L134\n- gasto · \"Quotizações\" · 0.009742 · L860 (de una nota)\n- gasto · \"Transferências de jogadores\" · 0.32 · L861 (de una nota)\n- gasto · \"Outros custos - Protocolos\" · 0.03 · L862 (de una nota)\n- gasto · \"Custas, Quota TV (estorno), etc\" · 0.124763 · L863 (de una nota)\n- gasto · \"Outros não especificados\" · 0.12244 · L864 (de una nota)\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 0.176808 · L138\n- financiero · \"Juros e gastos similares suportados\" · -0.003857 · L140\n- impuesto · \"Imposto sobre rendimento do período\" · -0.00949 · L142",
-  "problemas": [
-   {
-    "tipo": "faltan",
-    "linea": 130,
-    "motivo": "Vendas e serviços prestados 2022 (782.474) no se carga; las partes L882-L888 suman ~4,83 M, que es el importe de 2021.",
-    "citaValida": true
-   },
-   {
-    "tipo": "faltan",
-    "linea": 131,
-    "motivo": "Subsídios à exploração 2022 (1.078.060) no se carga; las partes L750-L755 suman ~1,76 M, que es el importe de 2021.",
-    "citaValida": true
-   },
-   {
-    "tipo": "faltan",
-    "linea": 132,
-    "motivo": "FSE 2022 (1.038.043) no se carga; las partes L774-L790 suman ~1,78 M, que es el importe de 2021.",
-    "citaValida": true
-   },
-   {
-    "tipo": "faltan",
-    "linea": 133,
-    "motivo": "Gastos com o pessoal 2022 (3.450.249) no se carga; las partes L828-L844 suman ~4,95 M, que es el importe de 2021.",
-    "citaValida": true
-   },
-   {
-    "tipo": "faltan",
-    "linea": 134,
-    "motivo": "Provisiones 2022: una reversión de +988.064 (ingreso) no se carga; se cargó la cifra de 2021.",
-    "citaValida": true
-   },
-   {
-    "tipo": "faltan",
-    "linea": 135,
-    "motivo": "Outros rendimentos 2022 (1.448.769) no se carga; las partes L801-L811 suman ~2,15 M, que es el importe de 2021.",
-    "citaValida": true
-   },
-   {
-    "tipo": "faltan",
-    "linea": 136,
-    "motivo": "Outros gastos 2022 (453.517) no se carga; las partes L860-L864 suman ~0,61 M, que es el importe de 2021.",
-    "citaValida": true
-   },
-   {
-    "tipo": "faltan",
-    "linea": 138,
-    "motivo": "Depreciaciones 2022 (119.845) no se cargan; se cargó la cifra de 2021.",
-    "citaValida": true
-   },
-   {
-    "tipo": "faltan",
-    "linea": 142,
-    "motivo": "El impuesto 2022 (+324.990, ingreso) no se carga; se cargó la cifra de 2021.",
-    "citaValida": true
-   },
-   {
-    "tipo": "sobran",
-    "linea": 134,
-    "motivo": "1,08901 es la cifra de 2021, no la del ejercicio.",
-    "citaValida": true
-   },
-   {
-    "tipo": "sobran",
-    "linea": 138,
-    "motivo": "0,176808 es la cifra de 2021.",
-    "citaValida": true
-   },
-   {
-    "tipo": "sobran",
-    "linea": 140,
-    "motivo": "Los intereses de -0,003857 son de 2021; en 2022 el renglón está vacío.",
-    "citaValida": true
-   },
-   {
-    "tipo": "sobran",
-    "linea": 142,
-    "motivo": "-0,00949 es el impuesto de 2021.",
-    "citaValida": true
-   },
-   {
-    "tipo": "sobran",
-    "linea": 888,
-    "motivo": "Las aperturas de nota (ventas, subsidios, FSE, personal, otros) corresponden al año anterior.",
-    "citaValida": true
-   }
-  ]
- }
+ ]
 }

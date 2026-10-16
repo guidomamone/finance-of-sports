@@ -1,11 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2024-25.pdf",
- "generado": "2026-10-16T02:33:30.444Z",
+ "generado": "2026-10-16T02:49:45.524Z",
  "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Regularização Quotas TV (Liga)\" -> other_expenses 0"
-  },
   {
    "etapa": "tie-out-resultado",
    "motivo": "resultado: ingresos 9.25186 + gastos -8.565081 + netInterest -0.158771 + tax -0.184148 = 0.34386 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 0.570265)"
@@ -517,9 +513,9 @@
     "amountNative": -0.093359,
     "disclosureLevel": "aggregated",
     "_pag": 25,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía broadcasting, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Juros mora",
@@ -1341,12 +1337,12 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.093359,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía broadcasting, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.093359
   },
@@ -1488,7 +1484,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 3,
   "lineasIngreso": 13,
   "lineasGasto": 39,
   "metaFilas": 2,
