@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2017-18.pdf",
  "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2017-18.md",
- "generado": "2026-10-15T21:55:03.118Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.505Z",
+ "estado": "ok",
+ "clubId": "porto-pt",
  "year": 2018,
  "escala": {
   "valor": "unidades",
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "b14f4b9",
-  "f7810d5",
-  "cd3fc1b"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -52,12 +48,13 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "el desglose de \"Outros rendimentos e ganhos\" (9 filas) no suma la fila: quedó la fila",
   "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-2024-2025-6b41056f.pdf",
   "duda de extraer que no afecta la carga: En L3224 el anterior 1.776.504 coincide con el total y las partidas 2017 no suman; probable error de transcripción (debería ser ~1)."
  ],
  "reintentar": [

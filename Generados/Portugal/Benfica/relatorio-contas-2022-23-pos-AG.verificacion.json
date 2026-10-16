@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.md",
- "generado": "2026-10-15T21:55:00.199Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.232Z",
+ "estado": "ok",
+ "clubId": "benfica-pt",
  "year": 2023,
  "escala": {
   "valor": "miles",
@@ -11,11 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "9947b17",
-  "2b3e525"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS)",
+   "evidencia": "relatorio-contas-2022-23-pos-AG.md: sin estados consolidados; relatorio-contas-2023-24.md L1319",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -51,7 +59,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -67,6 +75,7 @@
   "escalón \"nota exacta en la lectura 5\": \"Amortizações e perdas de imparidade de direitos de atletas\" (L3459) se abre en las 2 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar confirmada por las sumas (columna, \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"): ¿La columna rotulada '30.06.22' en primer lugar del cuadro de FSE (b93) corresponde en realidad al ejercicio 30.06.23?",
+  "duda de localizar ya contestada para el club (antes de su alta) (cuadro-duplicado, \"RESULTADO COM TRANSAÇÕES DE DIREITOS DE ATLETAS\"): corregir sí, en relatorio-contas-2022-23-pos-AG.pdf",
   "duda de extraer que no afecta la carga: L4890 rotula ambas columnas '30.06.22', pero el total 82.106 (L4904) coincide con 30.06.23 del estado (L3449).",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Rendimentos com transações de direitos de atletas\"): ¿Se deja afuera de la carga el cuadro b98 (L5058-L5065) por repetir las mismas partidas de b97 reordenadas?"
  ],

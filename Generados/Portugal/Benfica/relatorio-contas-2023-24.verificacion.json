@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2023-24.md",
- "generado": "2026-10-15T21:55:00.228Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.255Z",
+ "estado": "ok",
+ "clubId": "benfica-pt",
  "year": 2024,
  "escala": {
   "valor": "miles",
@@ -11,11 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "2e288e1",
-  "6744e30"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2023-24.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS)",
+   "evidencia": "relatorio-contas-2023-24.md: sin estados consolidados; relatorio-contas-2023-24.md L1319",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -39,6 +47,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 256.373 en este documento y 253.893 en relatorio-contas-2024-25-pos-AG.pdf (columna del año anterior)"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 284.712 en relatorio-contas-2022-23-pos-AG.pdf y 284.712 en este documento (columna del año anterior)"
@@ -46,7 +59,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -61,7 +74,8 @@
   "escalón \"nota exacta en la lectura 5\": \"Amortizações e perdas de imparidade de direitos de atletas\" (L3794) se abre en las 2 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: b100 reordena las mismas partidas de b99 (total 58.402 en ambos).",
-  "duda de extraer confirmada por las sumas (columna, \"Fornecimentos e serviços externos\"): ¿Se carga la nota de fornecimentos e serviços externos (b95) tomando la columna '30.04.24' como ejercicio 30.06.24 y '30.04.25' como 30.06.23?"
+  "duda de extraer confirmada por las sumas (columna, \"Fornecimentos e serviços externos\"): ¿Se carga la nota de fornecimentos e serviços externos (b95) tomando la columna '30.04.24' como ejercicio 30.06.24 y '30.04.25' como 30.06.23?",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

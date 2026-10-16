@@ -1,0 +1,380 @@
+{
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.md",
+ "mdSha1": "910f1ca6b2e1d192530fbcc3a07a85c6d6480ddd",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-15T23:54:37.594Z",
+ "ubicacion": {
+  "estado": [
+   "b9"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "L704: valores em Euros"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b9",
+   "linea": 709,
+   "etiqueta": "Fornecimentos e serviços externos",
+   "actual": "12.477.445",
+   "anterior": "10.655.239",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 711,
+   "etiqueta": "Remunerações",
+   "actual": "27.497.682",
+   "anterior": "22.144.448",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 713,
+   "etiqueta": "Outros",
+   "actual": "3.381.390",
+   "anterior": "2.865.530",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 713,
+   "etiqueta": "Custos com o pessoal",
+   "actual": "30.879.072",
+   "anterior": "25.009.978",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 714,
+   "etiqueta": "Amortizações do imobilizado corpóreo e incorpóreo",
+   "actual": "10.737.110",
+   "anterior": "10.135.678",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 715,
+   "etiqueta": "Ajustamentos",
+   "actual": "104.379",
+   "anterior": "3.006.972",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 716,
+   "etiqueta": "Provisões",
+   "actual": "1.291.943",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 716,
+   "etiqueta": "Amortizações, ajustamentos e provisões",
+   "actual": "12.133.432",
+   "anterior": "13.142.650",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 717,
+   "etiqueta": "Impostos",
+   "actual": "392.925",
+   "anterior": "283.617",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 718,
+   "etiqueta": "Outros custos e perdas operacionais",
+   "actual": "103.535",
+   "anterior": "56.313",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 718,
+   "etiqueta": "Impostos e outros custos operacionais",
+   "actual": "496.460",
+   "anterior": "339.930",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 719,
+   "etiqueta": "(A)",
+   "actual": "55.986.409",
+   "anterior": "49.147.797",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 721,
+   "etiqueta": "Outros",
+   "actual": "5.086.831",
+   "anterior": "4.120.075",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 722,
+   "etiqueta": "(C)",
+   "actual": "61.073.240",
+   "anterior": "53.267.872",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 723,
+   "etiqueta": "Custos e perdas extraordinários",
+   "actual": "3.610.370",
+   "anterior": "2.250.343",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 724,
+   "etiqueta": "(E)",
+   "actual": "64.683.610",
+   "anterior": "55.518.215",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 725,
+   "etiqueta": "Imposto sobre o rendimento do exercício",
+   "actual": "26.196",
+   "anterior": "21.874",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 726,
+   "etiqueta": "(G)",
+   "actual": "64.709.806",
+   "anterior": "55.540.089",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 730,
+   "etiqueta": "Prestações de serviços",
+   "actual": "38.644.161",
+   "anterior": "34.193.547",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 731,
+   "etiqueta": "Proveitos suplementares",
+   "actual": "12.765.682",
+   "anterior": "3.030.587",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 732,
+   "etiqueta": "Subsídios à exploração",
+   "actual": "28.136",
+   "anterior": "27.445",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 733,
+   "etiqueta": "Outros proveitos e ganhos operacionais",
+   "actual": "562.500",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 733,
+   "etiqueta": "Outros proveitos operacionais (subtotal)",
+   "actual": "13.356.318",
+   "anterior": "3.058.032",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 734,
+   "etiqueta": "(B)",
+   "actual": "52.000.479",
+   "anterior": "37.251.579",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 736,
+   "etiqueta": "Outros",
+   "actual": "45.760",
+   "anterior": "17.784",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 737,
+   "etiqueta": "(D)",
+   "actual": "52.046.239",
+   "anterior": "37.269.363",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 738,
+   "etiqueta": "Proveitos e ganhos extraordinários",
+   "actual": "11.442.643",
+   "anterior": "12.435.731",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 739,
+   "etiqueta": "(F)",
+   "actual": "63.488.882",
+   "anterior": "49.705.094",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 740,
+   "etiqueta": "Resultados operacionais: (B) – (A):",
+   "actual": "(3.985.930)",
+   "anterior": "(11.896.218)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 741,
+   "etiqueta": "Resultados financeiros: (D – B) – (C – A):",
+   "actual": "(5.041.071)",
+   "anterior": "(4.102.291)",
+   "tipo": "resultado",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 742,
+   "etiqueta": "Resultados correntes: (D) – (C):",
+   "actual": "(9.027.001)",
+   "anterior": "(15.998.509)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 743,
+   "etiqueta": "Resultados antes de impostos: (F) – (E):",
+   "actual": "(1.194.728)",
+   "anterior": "(5.813.121)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 744,
+   "etiqueta": "Resultado líquido do exercício: (F) – (G):",
+   "actual": "(1.220.924)",
+   "anterior": "(5.834.995)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 739,
+  "actual": "63.488.882"
+ },
+ "total_gastos": {
+  "linea": 726,
+  "actual": "64.709.806"
+ },
+ "resultado": {
+  "linea": 744,
+  "actual": "(1.220.924)",
+  "anterior": "(5.834.995)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se toma la columna 2005/2006 (L706) como el ejercicio pedido con cierre 2006-07-31 y 2004/2005 como anterior?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El pedido no nombra la columna; L706 muestra 2005/2006 y 2004/2005, coherente con cierre 31-07-2006.",
+   "bloques": [
+    "b9"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Formato POC portugués en dos columnas (parcial y total). Las etiquetas de subtotales de L713, L716, L718 y L733 no están impresas; se usaron etiquetas descriptivas para las sumas de la segunda columna. L727 (resultado líquido en el lado de custos) y L728 (total de cuadre 63.488.882) no se cargaron por duplicar L744 y L739."
+}

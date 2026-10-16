@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.md",
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.pdf",
-  "club": "benfica",
+  "club": "benfica-pt",
   "year": 2023,
-  "generatedAt": "2026-10-15T21:55:00.199Z",
+  "generatedAt": "2026-10-15T23:54:38.232Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         48.84
       ],
-      "glosa": "Ingresos de televisión"
+      "glosa": "Ingresos por retransmisión televisiva"
     },
     {
       "label": "Outras receitas",
@@ -44,7 +44,7 @@
       "values": [
         23.884
       ],
-      "glosa": "Patrocinadores"
+      "glosa": "Patrocinios"
     },
     {
       "label": "Rendas de espaço",
@@ -54,7 +54,7 @@
       "values": [
         3.6
       ],
-      "glosa": "Arrendamientos de espacios"
+      "glosa": "Alquiler de espacios"
     },
     {
       "label": "*Royalties*",
@@ -134,7 +134,7 @@
       "values": [
         85.931
       ],
-      "glosa": "Beneficios por enajenación de derechos de jugadores (plusvalías)"
+      "glosa": "Beneficios por enajenación de derechos de futbolistas (plusvalías)"
     },
     {
       "label": "Outros rendimentos",
@@ -144,7 +144,7 @@
       "values": [
         2.984
       ],
-      "glosa": "Otros ingresos de explotación"
+      "glosa": "Otros ingresos"
     },
     {
       "label": "Gestão operacional do estádio",
@@ -164,7 +164,7 @@
       "values": [
         13.955
       ],
-      "glosa": "Servicios especializados"
+      "glosa": "Trabajos especializados"
     },
     {
       "label": "Licença da marca Benfica",
@@ -254,7 +254,7 @@
       "values": [
         9.295
       ],
-      "glosa": "Otros aprovisionamientos y servicios"
+      "glosa": "Otros suministros y servicios exteriores"
     },
     {
       "label": "Remunerações fixas",
@@ -334,7 +334,7 @@
       "values": [
         4.419
       ],
-      "glosa": "Seguros de accidentes laborales"
+      "glosa": "Seguros de accidentes de trabajo"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -384,7 +384,7 @@
       "values": [
         0.365
       ],
-      "glosa": "Equipos de oficina"
+      "glosa": "Equipamiento de oficina"
     },
     {
       "label": "Direitos de uso",
@@ -404,7 +404,7 @@
       "values": [
         1.52
       ],
-      "glosa": "Derecho de uso de la marca"
+      "glosa": "Derecho de uso de marca"
     },
     {
       "label": "Programas de computador",
@@ -424,7 +424,7 @@
       "values": [
         0.306
       ],
-      "glosa": "Provisiones / Deterioros (2)"
+      "glosa": "Provisiones/Pérdidas por deterioro (2)"
     },
     {
       "label": "Outros gastos e perdas operacionais (3)",
@@ -444,7 +444,7 @@
       "values": [
         4.704
       ],
-      "glosa": "Pérdidas por enajenación de derechos de jugadores (minusvalías)"
+      "glosa": "Pérdidas por enajenación de derechos de futbolistas (minusvalías)"
     },
     {
       "label": "Gastos associados a alienações de direitos de atletas (comissões)",
@@ -454,7 +454,7 @@
       "values": [
         11.227
       ],
-      "glosa": "Gastos asociados a enajenaciones de derechos de jugadores (comisiones)"
+      "glosa": "Gastos asociados a enajenaciones de derechos de futbolistas (comisiones)"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -464,7 +464,7 @@
       "values": [
         1.255
       ],
-      "glosa": "Bajas de derechos de jugadores"
+      "glosa": "Bajas de derechos de futbolistas"
     },
     {
       "label": "Outros gastos",
@@ -484,7 +484,7 @@
       "values": [
         38.737
       ],
-      "glosa": "Amortizaciones de derechos de jugadores"
+      "glosa": "Amortizaciones de derechos de futbolistas"
     },
     {
       "label": "Perdas de imparidade de direitos de atletas",
@@ -494,7 +494,7 @@
       "values": [
         0.676
       ],
-      "glosa": "Pérdidas por deterioro de valor de derechos de jugadores"
+      "glosa": "Pérdidas por deterioro de derechos de futbolistas"
     }
   ]
 }

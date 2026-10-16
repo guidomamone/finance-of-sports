@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.md",
- "generado": "2026-10-15T21:55:00.170Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.208Z",
+ "estado": "ok",
+ "clubId": "benfica-pt",
  "year": 2022,
  "escala": {
   "valor": "miles",
@@ -11,11 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "06bba30",
-  "6cef056"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS)",
+   "evidencia": "relatorio-contas-2021-22.md: sin estados consolidados; relatorio-contas-2023-24.md L1319",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -51,7 +59,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -68,6 +76,7 @@
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: b117 parece reordenar los mismos renglones de b116.",
   "duda de localizar que no afecta la carga: Probable error de transcripción de la fecha en el encabezado de b116.",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
   "duda de extraer que no afecta la carga: El encabezado L5409 dice 30.04.22/30.04.21 pero los totales coinciden con el estado al 30.06.22, probablemente error de transcripción.",
   "duda de extraer que no afecta la carga: Diferencia de 22 en el año anterior entre el estado (L3730) y la nota b115 (L5390); no afecta el ejercicio pedido."
  ],

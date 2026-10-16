@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.pdf",
  "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.md",
- "generado": "2026-10-15T21:56:50.283Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.548Z",
+ "estado": "ok",
+ "clubId": "porto-pt",
  "year": 2021,
  "escala": {
   "valor": "unidades",
@@ -12,12 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "0364347",
-  "809586c",
-  "25b2359",
-  "180be84"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -43,7 +38,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -53,8 +48,7 @@
  ],
  "notas": [
   "el desglose de \"Outros rendimentos e ganhos\" (11 filas) no suma la fila: quedó la fila",
-  "duda de extraer que no afecta la carga: El total 2 400 778 coincide con el estado consolidado L904, pese al encabezado de entidad en L2771.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: El total 2 400 778 coincide con el estado consolidado L904, pese al encabezado de entidad en L2771."
  ],
  "reintentar": [
   {

@@ -1,0 +1,802 @@
+{
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.pdf",
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.md",
+ "generado": "2026-10-15T23:54:53.216Z",
+ "estado": "cola",
+ "clubId": "benfica-pt",
+ "year": 2017,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.pdf",
+   "campo": "cierre",
+   "valor": "2014-06-30",
+   "linea": null,
+   "motivo": "periodo.mjs tomó 2017-06-30 (fin de mandato de los órganos sociales, L1417-1421); el informe es del ejercicio cerrado el 30/06/2014.",
+   "evidencia": "relatorio-contas-2013-14-pos-AG.md L61-62, L151 'A 30 DE JUNHO DE 2014'",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
+ "cola": [
+  "758b332",
+  "aaccda0",
+  "d3ec7b3",
+  "703b4c5",
+  "93b232d"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.0658141036401503e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": false,
+   "detalle": "ingresos de 2017: 180.752 en este documento y 251.23 en relatorio-contas-2017-18.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2016",
+   "ok": false,
+   "detalle": "ingresos de 2016: 207.968 en relatorio-contas-2015-16.pdf y 139.772 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "escalón \"nota exacta en la lectura 6\": \"PRESTAÇÃO DE SERVIÇOS\" (L2558) se abre en las 11 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"OUTROS RENDIMENTOS E GANHOS OPERACIONAIS ^{(1)}\" (L2559) se abre en las 6 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"RENDIMENTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\" (L2570) se abre en las 5 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\" (L2562) se abre en las 18 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"GASTOS COM PESSOAL\" (L2563) se abre en las 9 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{(2)}\" (L2564) se abre en las 9 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"PROVISÕES/IMPARIDADES ^{(3)}\" (L2565) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"OUTROS GASTOS E PERDAS OPERACIONAIS ^{(4)}\" (L2566) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"AMORTIZAÇÕES E PERDAS DE IMPARIDADE DE DIREITOS DE ATLETAS\" (L2569) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\" (L2571) se abre en las 6 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 180.752,
+  "gastos": 147.089,
+  "financiero": -19.619,
+  "impuesto": 0.121,
+  "resultadoImpreso": 14.165,
+  "resultadoParaCargar": 14.165,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "RECEITAS DE TELEVISÃO",
+   "lado": "ingreso",
+   "M": 28.136,
+   "pagina": 121,
+   "linea": 3583,
+   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\""
+  },
+  {
+   "etiqueta": "PUBLICIDADE E PATROCÍNIOS",
+   "lado": "ingreso",
+   "M": 19.066,
+   "pagina": 121,
+   "linea": 3584,
+   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\""
+  },
+  {
+   "etiqueta": "CORPORATE",
+   "lado": "ingreso",
+   "M": 8.35,
+   "pagina": 121,
+   "linea": 3585,
+   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\""
+  },
+  {
+   "etiqueta": "RECEITAS DE BILHETEIRA",
+   "lado": "ingreso",
+   "M": 6.523,
+   "pagina": 121,
+   "linea": 3586,
+   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\""
+  },
+  {
+   "etiqueta": "QUOTIZAÇÕES",
+   "lado": "ingreso",
+   "M": 3.042,
+   "pagina": 121,
+   "linea": 3587,
+   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\""
+  },
+  {
+   "etiqueta": "RENDAS DE ESPAÇO",
+   "lado": "ingreso",
+   "M": 2.967,
+   "pagina": 121,
+   "linea": 3588,
+   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\""
+  },
+  {
+   "etiqueta": "CATIVOS",
+   "lado": "ingreso",
+   "M": 2.068,
+   "pagina": 121,
+   "linea": 3589,
+   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\""
+  },
+  {
+   "etiqueta": "BILHETES DE ÉPOCA",
+   "lado": "ingreso",
+   "M": 1.869,
+   "pagina": 121,
+   "linea": 3590,
+   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\""
+  },
+  {
+   "etiqueta": "TÍTULOS FUNDADOR E CENTENARIUM",
+   "lado": "ingreso",
+   "M": 1.393,
+   "pagina": 121,
+   "linea": 3591,
+   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\""
+  },
+  {
+   "etiqueta": "RECEITAS OUTRAS COMPETIÇÕES",
+   "lado": "ingreso",
+   "M": 1.219,
+   "pagina": 121,
+   "linea": 3592,
+   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\""
+  },
+  {
+   "etiqueta": "OUTROS",
+   "lado": "ingreso",
+   "M": 1.273,
+   "pagina": 121,
+   "linea": 3593,
+   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\""
+  },
+  {
+   "etiqueta": "PRÉMIOS UEFA",
+   "lado": "ingreso",
+   "M": 22.407,
+   "pagina": 123,
+   "linea": 3652,
+   "origen": "nota que desglosa \"OUTROS RENDIMENTOS E GANHOS OPERACIONAIS ^{(1)}\""
+  },
+  {
+   "etiqueta": "INDEMNIZAÇÕES DE SEGUROS",
+   "lado": "ingreso",
+   "M": 1.455,
+   "pagina": 123,
+   "linea": 3653,
+   "origen": "nota que desglosa \"OUTROS RENDIMENTOS E GANHOS OPERACIONAIS ^{(1)}\""
+  },
+  {
+   "etiqueta": "ROYALTIES",
+   "lado": "ingreso",
+   "M": 1.4,
+   "pagina": 123,
+   "linea": 3654,
+   "origen": "nota que desglosa \"OUTROS RENDIMENTOS E GANHOS OPERACIONAIS ^{(1)}\""
+  },
+  {
+   "etiqueta": "ASSISTÊNCIA TÉCNICA",
+   "lado": "ingreso",
+   "M": 1.182,
+   "pagina": 123,
+   "linea": 3655,
+   "origen": "nota que desglosa \"OUTROS RENDIMENTOS E GANHOS OPERACIONAIS ^{(1)}\""
+  },
+  {
+   "etiqueta": "COMISSÕES",
+   "lado": "ingreso",
+   "M": 0.232,
+   "pagina": 123,
+   "linea": 3656,
+   "origen": "nota que desglosa \"OUTROS RENDIMENTOS E GANHOS OPERACIONAIS ^{(1)}\""
+  },
+  {
+   "etiqueta": "OUTROS RENDIMENTOS OPERACIONAIS",
+   "lado": "ingreso",
+   "M": 2.457,
+   "pagina": 123,
+   "linea": 3657,
+   "origen": "nota que desglosa \"OUTROS RENDIMENTOS E GANHOS OPERACIONAIS ^{(1)}\""
+  },
+  {
+   "etiqueta": "ALIENAÇÕES DE DIREITOS DE ATLETAS",
+   "lado": "ingreso",
+   "M": 63.833,
+   "pagina": 130,
+   "linea": 3939,
+   "origen": "nota que desglosa \"RENDIMENTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\""
+  },
+  {
+   "etiqueta": "CEDÊNCIA DE DIREITOS BENFICA STARS FUND",
+   "lado": "ingreso",
+   "M": 8.631,
+   "pagina": 130,
+   "linea": 3940,
+   "origen": "nota que desglosa \"RENDIMENTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\""
+  },
+  {
+   "etiqueta": "CEDÊNCIAS TEMPORÁRIAS DE ATLETAS",
+   "lado": "ingreso",
+   "M": 1.934,
+   "pagina": 130,
+   "linea": 3941,
+   "origen": "nota que desglosa \"RENDIMENTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\""
+  },
+  {
+   "etiqueta": "FUNDO DE SOLIDARIEDADE",
+   "lado": "ingreso",
+   "M": 1.119,
+   "pagina": 130,
+   "linea": 3942,
+   "origen": "nota que desglosa \"RENDIMENTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\""
+  },
+  {
+   "etiqueta": "OUTROS RENDIMENTOS E GANHOS",
+   "lado": "ingreso",
+   "M": 0.059,
+   "pagina": 130,
+   "linea": 3943,
+   "origen": "nota que desglosa \"RENDIMENTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\""
+  },
+  {
+   "etiqueta": "RESULTADOS RELATIVOS A INVESTIMENTOS EM ASSOCIADAS",
+   "lado": "ingreso",
+   "M": 0.137,
+   "pagina": 94,
+   "linea": 2576,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)"
+  },
+  {
+   "etiqueta": "TRABALHOS ESPECIALIZADOS",
+   "lado": "gasto",
+   "M": 5.248,
+   "pagina": 124,
+   "linea": 3682,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "DESLOCAÇÕES E ESTADAS",
+   "lado": "gasto",
+   "M": 3.719,
+   "pagina": 124,
+   "linea": 3683,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "HONORÁRIOS",
+   "lado": "gasto",
+   "M": 2.54,
+   "pagina": 124,
+   "linea": 3684,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "CONSERVAÇÃO E REPARAÇÃO",
+   "lado": "gasto",
+   "M": 2.186,
+   "pagina": 124,
+   "linea": 3685,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "SERVIÇOS DE CATERING/SOFTDRINK",
+   "lado": "gasto",
+   "M": 2.067,
+   "pagina": 124,
+   "linea": 3686,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "EQUIPAMENTO DESPORTIVO",
+   "lado": "gasto",
+   "M": 1.609,
+   "pagina": 124,
+   "linea": 3687,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "SUBCONTRATOS",
+   "lado": "gasto",
+   "M": 1.513,
+   "pagina": 124,
+   "linea": 3688,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "ELECTRICIDADE",
+   "lado": "gasto",
+   "M": 1.374,
+   "pagina": 124,
+   "linea": 3689,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "RENDAS E ALUSUÍERES",
+   "lado": "gasto",
+   "M": 1.239,
+   "pagina": 124,
+   "linea": 3690,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "VIDILÂNCIA E SEGURANÇA",
+   "lado": "gasto",
+   "M": 1.243,
+   "pagina": 124,
+   "linea": 3691,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "LICENÇA MARCA BENFICA",
+   "lado": "gasto",
+   "M": 1.143,
+   "pagina": 124,
+   "linea": 3692,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "PUBLICIDADE E PROPAGANDA",
+   "lado": "gasto",
+   "M": 0.994,
+   "pagina": 124,
+   "linea": 3693,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "CEDÊNCIA DIREITOS DE IMAGEM",
+   "lado": "gasto",
+   "M": 0.88,
+   "pagina": 124,
+   "linea": 3694,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "DESPESAS MÉDICAS",
+   "lado": "gasto",
+   "M": 0.646,
+   "pagina": 124,
+   "linea": 3695,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "LIMPEZA, HIGIENE E CONFORTO",
+   "lado": "gasto",
+   "M": 0.612,
+   "pagina": 124,
+   "linea": 3696,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "ÁGUA E OUTROS FLUÍDOS",
+   "lado": "gasto",
+   "M": 0.504,
+   "pagina": 124,
+   "linea": 3697,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "COMUNICAÇÃO",
+   "lado": "gasto",
+   "M": 0.452,
+   "pagina": 124,
+   "linea": 3698,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "OUTROS FORNECIMENTOS E SERVIÇOS",
+   "lado": "gasto",
+   "M": 3.835,
+   "pagina": 124,
+   "linea": 3700,
+   "origen": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS DE TERCEIROS\""
+  },
+  {
+   "etiqueta": "REMUNERAÇÕES FIXAS",
+   "lado": "gasto",
+   "M": 0.459,
+   "pagina": 125,
+   "linea": 3743,
+   "origen": "nota que desglosa \"GASTOS COM PESSOAL\""
+  },
+  {
+   "etiqueta": "REMUNERAÇÕES VARIÁVEIS/PRÉMIOS",
+   "lado": "gasto",
+   "M": 0.07,
+   "pagina": 125,
+   "linea": 3744,
+   "origen": "nota que desglosa \"GASTOS COM PESSOAL\""
+  },
+  {
+   "etiqueta": "REMUNERAÇÕES FIXAS",
+   "lado": "gasto",
+   "M": 43.943,
+   "pagina": 125,
+   "linea": 3746,
+   "origen": "nota que desglosa \"GASTOS COM PESSOAL\""
+  },
+  {
+   "etiqueta": "REMUNERAÇÕES VARIÁVEIS/PRÉMIOS",
+   "lado": "gasto",
+   "M": 10.081,
+   "pagina": 125,
+   "linea": 3747,
+   "origen": "nota que desglosa \"GASTOS COM PESSOAL\""
+  },
+  {
+   "etiqueta": "INDEMNIZAÇÕES",
+   "lado": "gasto",
+   "M": 0.649,
+   "pagina": 125,
+   "linea": 3748,
+   "origen": "nota que desglosa \"GASTOS COM PESSOAL\""
+  },
+  {
+   "etiqueta": "BENEFÍCIOS PÓS-EMPREGO",
+   "lado": "gasto",
+   "M": 0.223,
+   "pagina": 125,
+   "linea": 3749,
+   "origen": "nota que desglosa \"GASTOS COM PESSOAL\""
+  },
+  {
+   "etiqueta": "ENCARGOS SOBRE REMUNERAÇÕES",
+   "lado": "gasto",
+   "M": 4.809,
+   "pagina": 125,
+   "linea": 3750,
+   "origen": "nota que desglosa \"GASTOS COM PESSOAL\""
+  },
+  {
+   "etiqueta": "SEGUROS DE ACIDENTES DE TRABALHO",
+   "lado": "gasto",
+   "M": 2.153,
+   "pagina": 125,
+   "linea": 3751,
+   "origen": "nota que desglosa \"GASTOS COM PESSOAL\""
+  },
+  {
+   "etiqueta": "OUTROS GASTOS COM PESSOAL",
+   "lado": "gasto",
+   "M": 0.794,
+   "pagina": 125,
+   "linea": 3752,
+   "origen": "nota que desglosa \"GASTOS COM PESSOAL\""
+  },
+  {
+   "etiqueta": "EDIFÍCIOS E OUTRAS CONSTRUÇÕES",
+   "lado": "gasto",
+   "M": 5.139,
+   "pagina": 127,
+   "linea": 3831,
+   "origen": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{(2)}\""
+  },
+  {
+   "etiqueta": "EQUIPAMENTO BÁSICO",
+   "lado": "gasto",
+   "M": 1.359,
+   "pagina": 127,
+   "linea": 3832,
+   "origen": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{(2)}\""
+  },
+  {
+   "etiqueta": "EQUIPAMENTO DE TRANSPORTE",
+   "lado": "gasto",
+   "M": 0.156,
+   "pagina": 127,
+   "linea": 3833,
+   "origen": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{(2)}\""
+  },
+  {
+   "etiqueta": "FERRAMENTAS E UTENSÍLIOS",
+   "lado": "gasto",
+   "M": 0.015,
+   "pagina": 127,
+   "linea": 3834,
+   "origen": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{(2)}\""
+  },
+  {
+   "etiqueta": "EQUIPAMENTO ADMINISTRATIVO",
+   "lado": "gasto",
+   "M": 1.332,
+   "pagina": 127,
+   "linea": 3835,
+   "origen": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{(2)}\""
+  },
+  {
+   "etiqueta": "OUTROS ACTIVOS TANGÍVEIS",
+   "lado": "gasto",
+   "M": 0.058,
+   "pagina": 127,
+   "linea": 3836,
+   "origen": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{(2)}\""
+  },
+  {
+   "etiqueta": "PROGRAMAS TV",
+   "lado": "gasto",
+   "M": 5.093,
+   "pagina": 127,
+   "linea": 3839,
+   "origen": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{(2)}\""
+  },
+  {
+   "etiqueta": "DIREITO UTILIZAÇÃO DA MARCA BENFICA",
+   "lado": "gasto",
+   "M": 0.399,
+   "pagina": 127,
+   "linea": 3840,
+   "origen": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{(2)}\""
+  },
+  {
+   "etiqueta": "GALERIA COMERCIAL",
+   "lado": "gasto",
+   "M": 0.332,
+   "pagina": 127,
+   "linea": 3843,
+   "origen": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{(2)}\""
+  },
+  {
+   "etiqueta": "REFORÇO DE PROVISÕES PARA OUTROS RISCOS",
+   "lado": "gasto",
+   "M": 0.314,
+   "pagina": 128,
+   "linea": 3866,
+   "origen": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{(3)}\""
+  },
+  {
+   "etiqueta": "REDUÇÃO DE PROVISÕES PARA OUTROS RISCOS",
+   "lado": "gasto",
+   "M": -2.316,
+   "pagina": 128,
+   "linea": 3867,
+   "origen": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{(3)}\""
+  },
+  {
+   "etiqueta": "REDUÇÃO DE IMPARIDADES DE CLIENTES/DEVEDORES",
+   "lado": "gasto",
+   "M": -0.249,
+   "pagina": 128,
+   "linea": 3871,
+   "origen": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{(3)}\""
+  },
+  {
+   "etiqueta": "IMPOSTOS",
+   "lado": "gasto",
+   "M": 1.08,
+   "pagina": 129,
+   "linea": 3897,
+   "origen": "nota que desglosa \"OUTROS GASTOS E PERDAS OPERACIONAIS ^{(4)}\""
+  },
+  {
+   "etiqueta": "OUTROS GASTOS E PERDAS OPERACIONAIS",
+   "lado": "gasto",
+   "M": 1.459,
+   "pagina": 129,
+   "linea": 3898,
+   "origen": "nota que desglosa \"OUTROS GASTOS E PERDAS OPERACIONAIS ^{(4)}\""
+  },
+  {
+   "etiqueta": "AMORTIZAÇÕES DE DIREITOS DE ATLETAS",
+   "lado": "gasto",
+   "M": 28.352,
+   "pagina": 129,
+   "linea": 3915,
+   "origen": "nota que desglosa \"AMORTIZAÇÕES E PERDAS DE IMPARIDADE DE DIREITOS DE ATLETAS\""
+  },
+  {
+   "etiqueta": "REFORÇO DE IMPARIDADE",
+   "lado": "gasto",
+   "M": 0.835,
+   "pagina": 129,
+   "linea": 3917,
+   "origen": "nota que desglosa \"AMORTIZAÇÕES E PERDAS DE IMPARIDADE DE DIREITOS DE ATLETAS\""
+  },
+  {
+   "etiqueta": "REVERSÕES DE IMPARIDADE",
+   "lado": "gasto",
+   "M": -0.285,
+   "pagina": 129,
+   "linea": 3918,
+   "origen": "nota que desglosa \"AMORTIZAÇÕES E PERDAS DE IMPARIDADE DE DIREITOS DE ATLETAS\""
+  },
+  {
+   "etiqueta": "GASTOS COM TRANSFERÊNCIA DE ATLETAS",
+   "lado": "gasto",
+   "M": 6.144,
+   "pagina": 130,
+   "linea": 3946,
+   "origen": "nota que desglosa \"GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\""
+  },
+  {
+   "etiqueta": "CEDÊNCIAS TEMPORÁRIAS DE ATLETAS",
+   "lado": "gasto",
+   "M": 2.083,
+   "pagina": 130,
+   "linea": 3947,
+   "origen": "nota que desglosa \"GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\""
+  },
+  {
+   "etiqueta": "FUNDO DE SOLIDARIEDADE",
+   "lado": "gasto",
+   "M": 0.277,
+   "pagina": 130,
+   "linea": 3948,
+   "origen": "nota que desglosa \"GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\""
+  },
+  {
+   "etiqueta": "ABATES DE DIREITOS DE ATLETAS",
+   "lado": "gasto",
+   "M": 0.223,
+   "pagina": 130,
+   "linea": 3949,
+   "origen": "nota que desglosa \"GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\""
+  },
+  {
+   "etiqueta": "ALIENAÇÕES DE DIREITOS DE ATLETAS",
+   "lado": "gasto",
+   "M": 0.129,
+   "pagina": 130,
+   "linea": 3950,
+   "origen": "nota que desglosa \"GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\""
+  },
+  {
+   "etiqueta": "OUTROS GASTOS E PERDAS",
+   "lado": "gasto",
+   "M": 0.175,
+   "pagina": 130,
+   "linea": 3951,
+   "origen": "nota que desglosa \"GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "RENDIMENTOS E GANHOS FINANCEIROS",
+   "M": 4.086,
+   "linea": 2574
+  },
+  {
+   "etiqueta": "GASTOS E PERDAS FINANCEIROS",
+   "M": -23.705,
+   "linea": 2575
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "IMPOSTO SOBRE O RENDIMENTO",
+   "M": 0.121,
+   "linea": 2578
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "e6aa77ee7b7b2f767457131f059d333aec9d4f6f",
+  "rango": [
+   2555,
+   2582
+  ],
+  "lineasCargadas": [
+   3583,
+   3584,
+   3585,
+   3586,
+   3587,
+   3588,
+   3589,
+   3590,
+   3591,
+   3592,
+   3593,
+   3652,
+   3653,
+   3654,
+   3655,
+   3656,
+   3657,
+   3939,
+   3940,
+   3941,
+   3942,
+   3943,
+   2576,
+   3682,
+   3683,
+   3684,
+   3685,
+   3686,
+   3687,
+   3688,
+   3689,
+   3690,
+   3691,
+   3692,
+   3693,
+   3694,
+   3695,
+   3696,
+   3697,
+   3698,
+   3700,
+   3743,
+   3744,
+   3746,
+   3747,
+   3748,
+   3749,
+   3750,
+   3751,
+   3752,
+   3831,
+   3832,
+   3833,
+   3834,
+   3835,
+   3836,
+   3839,
+   3840,
+   3843,
+   3866,
+   3867,
+   3871,
+   3897,
+   3898,
+   3915,
+   3917,
+   3918,
+   3946,
+   3947,
+   3948,
+   3949,
+   3950,
+   3951,
+   2574,
+   2575,
+   2578
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 2555 a 2582 del .md):\nL2555: | --- | --- | --- | --- | --- | --- |\nL2556: |   |   |  30.06.14 | 30.06.13 | 30.06.14 | 30.06.13  |\nL2557: |  **RENDIMENTOS E GANHOS OPERACIONAIS**  |   |   |   |   |   |\nL2558: |  PRESTAÇÃO DE SERVIÇOS | 5 | 75.906 | 58.862 | 60.203 | 43.917  |\nL2559: |  OUTROS RENDIMENTOS E GANHOS OPERACIONAIS ^{(1)} | 6 | 29.133 | 27.079 | 27.636 | 26.617  |\nL2560: |   |  | **105.039** | **85.941** | **87.839** | **70.534**  |\nL2561: |  **GASTOS E PERDAS OPERACIONAIS**  |   |   |   |   |   |\nL2562: |  FORNECIMENTOS E SERVIÇOS DE TERCEIROS | 7 | (31.804) | (26.583) | (31.687) | (20.187)  |\nL2563: |  GASTOS COM PESSOAL | 8 | (63.181) | (50.431) | (58.556) | (48.140)  |\nL2564: |  DEPRECIAÇÕES/AMORTIZAÇÕES ^{(2)} | 9 | (13.883) | (8.932) | (1.810) | (1.820)  |\nL2565: |  PROVISÕES/IMPARIDADES ^{(3)} | 10 | 2.251 | (2.076) | 711 | (4.860)  |\nL2566: |  OUTROS GASTOS E PERDAS OPERACIONAIS ^{(4)} | 11 | (2.539) | (4.551) | (2.088) | (3.227)  |\nL2567: |   |  | **(109.156)** | **(92.573)** | **(93.430)** | **(78.234)**  |\nL2568: |  **RESULTADOS OPERACIONAIS SEM ATLETAS ^{(5)(6)(7)}** |  | **(4.117)** | **(6.632)** | **(5.591)** | **(7.700)**  |\nL2569: |  AMORTIZAÇÕES E PERDAS DE IMPARIDADE DE DIREITOS DE ATLETAS | 12 | (28.902) | (29.520) | (28.902) | (29.520)  |\nL2570: |  RENDIMENTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS | 13 | 75.576 | 53.831 | 75.576 | 53.831  |\nL2571: |  GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS | 13 | (9.031) | (10.605) | (9.031) | (10.605)  |\nL2572: |  **RESULTADOS COM ATLETAS** |  | **37.643** | **13.706** | **37.643** | **13.706**  |\nL2573: |  **RESULTADOS OPERACIONAIS** |  | **33.526** | **7.074** | **32.052** | **6.006**  |\nL2574: |  RENDIMENTOS E GANHOS FINANCEIROS | 14 | 4.086 | 5.237 | 3.557 | 4.654  |\nL2575: |  GASTOS E PERDAS FINANCEIROS | 14 | (23.705) | (22.691) | (20.380) | (19.733)  |\nL2576: |  RESULTADOS RELATIVOS A INVESTIMENTOS EM ASSOCIADAS | 15 | 137 | (369) | 130 | (369)  |\nL2577: |  **RESULTADOS ANTES DE IMPOSTOS** |  | **14.044** | **(10.749)** | **15.359** | **(9.442)**  |\nL2578: |  IMPOSTO SOBRE O RENDIMENTO | 16 | 121 | 355 | (221) | (216)  |\nL2579: |  **RESULTADO LÍQUIDO DO PERÍODO** |  | **14.165** | **(10.394)** | **15.138** | **(9.658)**  |\nL2580: |  RESULTADO POR AÇÃO BÁSICO/DILUÍDO (EM EUROS) |  | 0,62 | (0,45) | 0,66 | (0,42)  |\nL2582: $^{(1)}$ EXCLUINDO TRANSAÇÕES DE DIREITOS DE ATLETAS $^{^{(2)}$ EXCLUINDO AMORTIZAÇÕES DE DIREITOS DE ATLETAS $^{^{(3)}$ EXCLUINDO IMPARIDADES DE DIREITOS DE ATLETAS\n\nLO QUE SE CARGA:\n- ingreso · \"RECEITAS DE TELEVISÃO\" · 28.136 · L3583 (de una nota)\n- ingreso · \"PUBLICIDADE E PATROCÍNIOS\" · 19.066 · L3584 (de una nota)\n- ingreso · \"CORPORATE\" · 8.35 · L3585 (de una nota)\n- ingreso · \"RECEITAS DE BILHETEIRA\" · 6.523 · L3586 (de una nota)\n- ingreso · \"QUOTIZAÇÕES\" · 3.042 · L3587 (de una nota)\n- ingreso · \"RENDAS DE ESPAÇO\" · 2.967 · L3588 (de una nota)\n- ingreso · \"CATIVOS\" · 2.068 · L3589 (de una nota)\n- ingreso · \"BILHETES DE ÉPOCA\" · 1.869 · L3590 (de una nota)\n- ingreso · \"TÍTULOS FUNDADOR E CENTENARIUM\" · 1.393 · L3591 (de una nota)\n- ingreso · \"RECEITAS OUTRAS COMPETIÇÕES\" · 1.219 · L3592 (de una nota)\n- ingreso · \"OUTROS\" · 1.273 · L3593 (de una nota)\n- ingreso · \"PRÉMIOS UEFA\" · 22.407 · L3652 (de una nota)\n- ingreso · \"INDEMNIZAÇÕES DE SEGUROS\" · 1.455 · L3653 (de una nota)\n- ingreso · \"ROYALTIES\" · 1.4 · L3654 (de una nota)\n- ingreso · \"ASSISTÊNCIA TÉCNICA\" · 1.182 · L3655 (de una nota)\n- ingreso · \"COMISSÕES\" · 0.232 · L3656 (de una nota)\n- ingreso · \"OUTROS RENDIMENTOS OPERACIONAIS\" · 2.457 · L3657 (de una nota)\n- ingreso · \"ALIENAÇÕES DE DIREITOS DE ATLETAS\" · 63.833 · L3939 (de una nota)\n- ingreso · \"CEDÊNCIA DE DIREITOS BENFICA STARS FUND\" · 8.631 · L3940 (de una nota)\n- ingreso · \"CEDÊNCIAS TEMPORÁRIAS DE ATLETAS\" · 1.934 · L3941 (de una nota)\n- ingreso · \"FUNDO DE SOLIDARIEDADE\" · 1.119 · L3942 (de una nota)\n- ingreso · \"OUTROS RENDIMENTOS E GANHOS\" · 0.059 · L3943 (de una nota)\n- ingreso · \"RESULTADOS RELATIVOS A INVESTIMENTOS EM ASSOCIADAS\" · 0.137 · L2576\n- gasto · \"TRABALHOS ESPECIALIZADOS\" · 5.248 · L3682 (de una nota)\n- gasto · \"DESLOCAÇÕES E ESTADAS\" · 3.719 · L3683 (de una nota)\n- gasto · \"HONORÁRIOS\" · 2.54 · L3684 (de una nota)\n- gasto · \"CONSERVAÇÃO E REPARAÇÃO\" · 2.186 · L3685 (de una nota)\n- gasto · \"SERVIÇOS DE CATERING/SOFTDRINK\" · 2.067 · L3686 (de una nota)\n- gasto · \"EQUIPAMENTO DESPORTIVO\" · 1.609 · L3687 (de una nota)\n- gasto · \"SUBCONTRATOS\" · 1.513 · L3688 (de una nota)\n- gasto · \"ELECTRICIDADE\" · 1.374 · L3689 (de una nota)\n- gasto · \"RENDAS E ALUSUÍERES\" · 1.239 · L3690 (de una nota)\n- gasto · \"VIDILÂNCIA E SEGURANÇA\" · 1.243 · L3691 (de una nota)\n- gasto · \"LICENÇA MARCA BENFICA\" · 1.143 · L3692 (de una nota)\n- gasto · \"PUBLICIDADE E PROPAGANDA\" · 0.994 · L3693 (de una nota)\n- gasto · \"CEDÊNCIA DIREITOS DE IMAGEM\" · 0.88 · L3694 (de una nota)\n- gasto · \"DESPESAS MÉDICAS\" · 0.646 · L3695 (de una nota)\n- gasto · \"LIMPEZA, HIGIENE E CONFORTO\" · 0.612 · L3696 (de una nota)\n- gasto · \"ÁGUA E OUTROS FLUÍDOS\" · 0.504 · L3697 (de una nota)\n- gasto · \"COMUNICAÇÃO\" · 0.452 · L3698 (de una nota)\n- gasto · \"OUTROS FORNECIMENTOS E SERVIÇOS\" · 3.835 · L3700 (de una nota)\n- gasto · \"REMUNERAÇÕES FIXAS\" · 0.459 · L3743 (de una nota)\n- gasto · \"REMUNERAÇÕES VARIÁVEIS/PRÉMIOS\" · 0.07 · L3744 (de una nota)\n- gasto · \"REMUNERAÇÕES FIXAS\" · 43.943 · L3746 (de una nota)\n- gasto · \"REMUNERAÇÕES VARIÁVEIS/PRÉMIOS\" · 10.081 · L3747 (de una nota)\n- gasto · \"INDEMNIZAÇÕES\" · 0.649 · L3748 (de una nota)\n- gasto · \"BENEFÍCIOS PÓS-EMPREGO\" · 0.223 · L3749 (de una nota)\n- gasto · \"ENCARGOS SOBRE REMUNERAÇÕES\" · 4.809 · L3750 (de una nota)\n- gasto · \"SEGUROS DE ACIDENTES DE TRABALHO\" · 2.153 · L3751 (de una nota)\n- gasto · \"OUTROS GASTOS COM PESSOAL\" · 0.794 · L3752 (de una nota)\n- gasto · \"EDIFÍCIOS E OUTRAS CONSTRUÇÕES\" · 5.139 · L3831 (de una nota)\n- gasto · \"EQUIPAMENTO BÁSICO\" · 1.359 · L3832 (de una nota)\n- gasto · \"EQUIPAMENTO DE TRANSPORTE\" · 0.156 · L3833 (de una nota)\n- gasto · \"FERRAMENTAS E UTENSÍLIOS\" · 0.015 · L3834 (de una nota)\n- gasto · \"EQUIPAMENTO ADMINISTRATIVO\" · 1.332 · L3835 (de una nota)\n- gasto · \"OUTROS ACTIVOS TANGÍVEIS\" · 0.058 · L3836 (de una nota)\n- gasto · \"PROGRAMAS TV\" · 5.093 · L3839 (de una nota)\n- gasto · \"DIREITO UTILIZAÇÃO DA MARCA BENFICA\" · 0.399 · L3840 (de una nota)\n- gasto · \"GALERIA COMERCIAL\" · 0.332 · L3843 (de una nota)\n- gasto · \"REFORÇO DE PROVISÕES PARA OUTROS RISCOS\" · 0.314 · L3866 (de una nota)\n- gasto · \"REDUÇÃO DE PROVISÕES PARA OUTROS RISCOS\" · -2.316 · L3867 (de una nota)\n- gasto · \"REDUÇÃO DE IMPARIDADES DE CLIENTES/DEVEDORES\" · -0.249 · L3871 (de una nota)\n- gasto · \"IMPOSTOS\" · 1.08 · L3897 (de una nota)\n- gasto · \"OUTROS GASTOS E PERDAS OPERACIONAIS\" · 1.459 · L3898 (de una nota)\n- gasto · \"AMORTIZAÇÕES DE DIREITOS DE ATLETAS\" · 28.352 · L3915 (de una nota)\n- gasto · \"REFORÇO DE IMPARIDADE\" · 0.835 · L3917 (de una nota)\n- gasto · \"REVERSÕES DE IMPARIDADE\" · -0.285 · L3918 (de una nota)\n- gasto · \"GASTOS COM TRANSFERÊNCIA DE ATLETAS\" · 6.144 · L3946 (de una nota)\n- gasto · \"CEDÊNCIAS TEMPORÁRIAS DE ATLETAS\" · 2.083 · L3947 (de una nota)\n- gasto · \"FUNDO DE SOLIDARIEDADE\" · 0.277 · L3948 (de una nota)\n- gasto · \"ABATES DE DIREITOS DE ATLETAS\" · 0.223 · L3949 (de una nota)\n- gasto · \"ALIENAÇÕES DE DIREITOS DE ATLETAS\" · 0.129 · L3950 (de una nota)\n- gasto · \"OUTROS GASTOS E PERDAS\" · 0.175 · L3951 (de una nota)\n- financiero · \"RENDIMENTOS E GANHOS FINANCEIROS\" · 4.086 · L2574\n- financiero · \"GASTOS E PERDAS FINANCEIROS\" · -23.705 · L2575\n- impuesto · \"IMPOSTO SOBRE O RENDIMENTO\" · 0.121 · L2578"
+ }
+}

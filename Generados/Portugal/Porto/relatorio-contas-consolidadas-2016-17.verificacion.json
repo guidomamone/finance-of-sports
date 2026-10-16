@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2016-17.pdf",
  "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2016-17.md",
- "generado": "2026-10-15T21:55:02.705Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.482Z",
+ "estado": "ok",
+ "clubId": "porto-pt",
  "year": 2017,
  "escala": {
   "valor": "unidades",
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "f8612fe",
-  "b019b47"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -51,12 +48,13 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "el desglose de \"Outros rendimentos e ganhos\" (10 filas) no suma la fila: quedó la fila",
   "la lectura base no cerraba; cerró con la lectura 3",
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-2024-2025-6b41056f.pdf",
   "duda de localizar que no afecta la carga: Repite en miles el rédito de la nota 27 (b61).",
   "duda de extraer que no afecta la carga: En L3265 el año anterior muestra 1.776.504, que no cierra con el total 1.992.701 (33.191+1.959.509=1.992.700); parece un desplazamiento de celdas.",
   "duda de extraer que no afecta la carga: Ningún bloque imprime la escala; por los valores y la coincidencia de totales parecen unidades de euro."

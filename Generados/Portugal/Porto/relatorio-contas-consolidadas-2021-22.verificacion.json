@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2021-22.pdf",
  "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2021-22.md",
- "generado": "2026-10-15T21:55:07.021Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.572Z",
+ "estado": "ok",
+ "clubId": "porto-pt",
  "year": 2022,
  "escala": {
   "valor": "no se sabe",
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "92e181b",
-  "ba4adea",
-  "2d89b71"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -52,13 +48,13 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "el desglose de \"Outros rendimentos e ganhos\" (12 filas) no suma la fila: quedó la fila",
   "la lectura base no cerraba; cerró con la lectura 4",
-  "duda de localizar de escala confirmada por otro documento del club (to-do 213): relatorio-contas-consolidadas-2022-23.md L2470 imprime 404.570 con su moneda; la carga usó unidades",
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-2024-2025-6b41056f.pdf",
   "duda de extraer que no afecta la carga: Saldos iniciales/finales y compras no son partidas de resultados; solo reconcilian el CMVMC de L909.",
   "duda de extraer que no afecta la carga: L3344 tiene columnas original, ajuste y reexpresada; el estado usa la reexpresada (98.447.641)."
  ],

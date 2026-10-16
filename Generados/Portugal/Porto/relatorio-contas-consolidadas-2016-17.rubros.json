@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2016-17.md",
   "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2016-17.pdf",
-  "club": "porto",
+  "club": "porto-pt",
   "year": 2017,
-  "generatedAt": "2026-10-15T21:55:02.706Z",
+  "generatedAt": "2026-10-15T23:54:38.482Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         2.724476
       ],
-      "glosa": "Ingresos por abonos anuales"
+      "glosa": "Ingresos por abonos de temporada"
     },
     {
       "label": "Outras receitas desportivas",
@@ -134,7 +134,7 @@
       "values": [
         0.064341
       ],
-      "glosa": "Imputación de subvenciones para inversión"
+      "glosa": "Imputación de subvenciones a la inversión"
     },
     {
       "label": "Outros rendimentos suplementares",
@@ -194,7 +194,7 @@
       "values": [
         57.670146
       ],
-      "glosa": "Ingresos por traspaso de derechos de jugadores"
+      "glosa": "Ingresos por traspasos de derechos federativos de jugadores"
     },
     {
       "label": "Proveitos com empréstimos de jogadores",
@@ -214,7 +214,7 @@
       "values": [
         1.159763
       ],
-      "glosa": "Otros ingresos relacionados con jugadores"
+      "glosa": "Otros ingresos relativos a jugadores"
     },
     {
       "label": "Custo das mercadorias vendidas e das matérias consumidas",
@@ -224,7 +224,7 @@
       "values": [
         3.321726
       ],
-      "glosa": "Coste de las mercancías vendidas y materiales consumidos"
+      "glosa": "Coste de las mercancías vendidas y materias consumidas"
     },
     {
       "label": "Trabalhos Especializados",
@@ -284,7 +284,7 @@
       "values": [
         1.905044
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Reparación y conservación"
     },
     {
       "label": "Publicidade e propaganda",
@@ -324,7 +324,7 @@
       "values": [
         1.608577
       ],
-      "glosa": "Honorarios"
+      "glosa": "Honorarios profesionales"
     },
     {
       "label": "Material Desportivo",
@@ -364,7 +364,7 @@
       "values": [
         0.842235
       ],
-      "glosa": "Limpieza, higiene y mantenimiento"
+      "glosa": "Limpieza, higiene y acondicionamiento"
     },
     {
       "label": "Relvados",
@@ -374,7 +374,7 @@
       "values": [
         0.227944
       ],
-      "glosa": "Céspedes y terrenos de juego"
+      "glosa": "Césped y terrenos de juego"
     },
     {
       "label": "Energia e Fluídos",
@@ -394,7 +394,7 @@
       "values": [
         2.859464
       ],
-      "glosa": "Otros aprovisionamientos y servicios exteriores"
+      "glosa": "Otros suministros y servicios exteriores"
     },
     {
       "label": "Remunerações dos Órgãos Sociais",
@@ -404,7 +404,7 @@
       "values": [
         1.979606
       ],
-      "glosa": "Remuneraciones del Órgano de Administración"
+      "glosa": "Retribuciones de los órganos de gobierno"
     },
     {
       "label": "Remunerações de atletas e equipas técnicas",
@@ -414,7 +414,7 @@
       "values": [
         57.610709
       ],
-      "glosa": "Remuneraciones de deportistas y cuerpo técnico"
+      "glosa": "Remuneraciones de deportistas y cuerpos técnicos"
     },
     {
       "label": "Remunerações do pessoal",
@@ -454,7 +454,7 @@
       "values": [
         5.711596
       ],
-      "glosa": "Cargas sociales"
+      "glosa": "Cargas sociales sobre retribuciones"
     },
     {
       "label": "Seguros de acidentes de trabalho e doenças profissionais",
@@ -464,7 +464,7 @@
       "values": [
         3.188055
       ],
-      "glosa": "Seguros de accidentes de trabajo y enfermedades profesionales"
+      "glosa": "Seguros de accidentes laborales y enfermedades profesionales"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -494,7 +494,7 @@
       "values": [
         0.006366
       ],
-      "glosa": "Deterioro de créditos comerciales (pérdidas / reversiones)"
+      "glosa": "Deterioro de créditos comerciales a cobrar (pérdidas / reversiones)"
     },
     {
       "label": "Dívidas incobráveis",
@@ -584,7 +584,7 @@
       "values": [
         0.025086
       ],
-      "glosa": "Otro inmovilizado intangible (Nota 11)"
+      "glosa": "Otros activos intangibles (Nota 11)"
     },
     {
       "label": "Goodwill (Nota 12)",
@@ -624,7 +624,7 @@
       "values": [
         19.947849
       ],
-      "glosa": "Costes por enajenación de derechos federativos de jugadores (Nota 10)"
+      "glosa": "Costes por traspasos de derechos federativos de jugadores (Nota 10)"
     },
     {
       "label": "Custos com empréstimos de jogadores",
@@ -644,7 +644,7 @@
       "values": [
         2.664979
       ],
-      "glosa": "Otros costes relacionados con jugadores"
+      "glosa": "Otros costes relativos a jugadores"
     },
     {
       "label": "Resultados relativos a investimentos",

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Porto/wf-2023-2024-293efed8.pdf",
  "md": "Clubes/Portugal/Porto/wf-2023-2024-293efed8.md",
- "generado": "2026-10-15T21:55:07.756Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.620Z",
+ "estado": "ok",
+ "clubId": "porto-pt",
  "year": 2024,
  "escala": {
   "valor": "unidades",
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "18b316f",
-  "18b316f",
-  "d3e4a6d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -35,6 +31,11 @@
    "dif": 1.7763568394002505e-14
   },
   {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 245.27345 en este documento y 245.273 en wf-2024-2025-6b41056f.pdf (columna del año anterior)"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 192.494197 en relatorio-contas-consolidadas-2022-23.pdf y 189.500171 en este documento (columna del año anterior)"
@@ -42,12 +43,14 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"Custos com o pessoal\" no suma el renglón (89.419214 contra 89.419466, sumando sus renglones): quedó el renglón del estado",
-  "duda de localizar que no afecta la carga: Los segmentos parecen repetir ingresos ya abiertos en la nota de prestações de serviços (b68)."
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-2024-2025-6b41056f.pdf",
+  "duda de localizar que no afecta la carga: Los segmentos parecen repetir ingresos ya abiertos en la nota de prestações de serviços (b68).",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-2024-2025-6b41056f.pdf"
  ],
  "reintentar": [
   {

@@ -1,28 +1,337 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.pdf",
- "generado": "2026-10-15T22:34:46.363Z",
+ "generado": "2026-10-16T00:11:53.696Z",
  "frena": [
   {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 4 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (porto-pt)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 4 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Transferências de atletas de outras moda\" -> other_sports 0.55"
   }
  ],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 8 ejercicio(s) con un solo perímetro (consolidado); 9 documento(s) mirados)"
+  "perímetro: consolidado (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 8 ejercicio(s) con un solo perímetro (consolidado); 9 documento(s) mirados)",
+  "materialidad: \"Mais-valias\" va como other_income con 0.6 (las dudas de ingresos suman 0.39% de su lado)",
+  "gestión: ningún presidente confirmado cubre 2021 (cierre 2021-06-30); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "porto-pt",
+  "year": 2021,
+  "cierre": "2021-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Vendas e serviços prestados",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 152.41446,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.94,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subsídios à exploração",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.029729,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Rendimentos de propriedades de investimento",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.247895,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Imputação de subsídios para o investimento",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.078516,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros rendimentos suplementares",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.010146,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Correções relativas a exercícios anteriores",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.003002,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Reembolsos de sinistros",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.496914,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Reembolsos de impostos",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.050992,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Transferências de atletas de outras modalidades",
+    "normalizedCategory": "other_sports",
+    "amountNative": 0.72,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mais-valias",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.336833,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": "materialidad",
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.39% (≤ 1%) y esta tiene 0.6"
+   },
+   {
+    "rawLabel": "Outros rendimentos e ganhos",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.362613,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proveitos com alienações de passes de jogadores",
+    "normalizedCategory": "player_sales",
+    "amountNative": 102.889181,
+    "disclosureLevel": "aggregated",
+    "_pag": 100,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proveitos com empréstimos de jogadores",
+    "normalizedCategory": "player_sales",
+    "amountNative": 5.30199,
+    "disclosureLevel": "aggregated",
+    "_pag": 100,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros proveitos com jogadores",
+    "normalizedCategory": "player_sales",
+    "amountNative": 4.38638,
+    "disclosureLevel": "aggregated",
+    "_pag": 100,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Custo das mercadorias vendidas e das matérias consumidas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -3.648411,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Fornecimentos e serviços externos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -37.671574,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos com o pessoal",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -100.091415,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Imparidade de inventários (perdas / reversões)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.275455,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Imparidade de dívidas a receber (perdas / reversões)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.335689,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros gastos e perdas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.275737,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos / reversões de depreciação e de amortização",
+    "normalizedCategory": "depreciation",
+    "amountNative": -5.554148,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortizações de passes de jogadores",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -29.843687,
+    "disclosureLevel": "aggregated",
+    "_pag": 100,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Perdas por imparidade com passes de jogadores",
+    "normalizedCategory": "player_impairment",
+    "amountNative": -0.01879,
+    "disclosureLevel": "aggregated",
+    "_pag": 100,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Custos com alienações de passes de jogadores",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -30.725022,
+    "disclosureLevel": "aggregated",
+    "_pag": 100,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Custos com empréstimos de jogadores",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.094487,
+    "disclosureLevel": "aggregated",
+    "_pag": 100,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Outros custos com jogadores",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -5.965788,
+    "disclosureLevel": "aggregated",
+    "_pag": 100,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2021-06-30",
+   "sourceId": "porto-pt-relatorio-contas-consolidadas-2020-21",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -20.089387,
+   "tax": -1.284922,
+   "extraRows": [
+    {
+     "label": "Juros e rendimentos similares obtidos",
+     "value": 2.400778
+    },
+    {
+     "label": "Juros e gastos similares suportados",
+     "value": -22.433797
+    },
+    {
+     "label": "Resultados relativos a investimentos",
+     "value": -0.056368
+    },
+    {
+     "label": "Imposto sobre o rendimento do período",
+     "value": -1.284922
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Vendas e serviços prestados",
+     "lado": "revenue",
+     "importe": 152.41446,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 268.328651,
+   "officialTotalExpenses": 216.500203,
+   "officialPAT": 30.454137
+  },
+  "source": {
+   "id": "porto-pt-relatorio-contas-consolidadas-2020-21",
+   "clubId": "porto-pt",
+   "title": "Futebol Clube do Porto — relatorio-contas-consolidadas-2020-21 (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.md",
  "reemplaza": false,
  "periodo": {
@@ -39,5 +348,545 @@
  },
  "clubId": "porto-pt",
  "year": 2021,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 30,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Vendas e serviços prestados",
+   "page": 36,
+   "native": 152.41446,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 152.41446,
+   "cat": "lump_football_operations",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 152.41446
+  },
+  {
+   "label": "Subsídios à exploração",
+   "page": 36,
+   "native": 0.029729,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.029729,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.029729
+  },
+  {
+   "label": "Rendimentos de propriedades de investimento",
+   "page": 99,
+   "native": 0.247895,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
+   "signoFijo": 0.247895,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.247895
+  },
+  {
+   "label": "Imputação de subsídios para o investimento",
+   "page": 99,
+   "native": 0.078516,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
+   "signoFijo": 0.078516,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.078516
+  },
+  {
+   "label": "Outros rendimentos suplementares",
+   "page": 99,
+   "native": 0.010146,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
+   "signoFijo": 0.010146,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.010146
+  },
+  {
+   "label": "Correções relativas a exercícios anteriores",
+   "page": 99,
+   "native": 0.003002,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
+   "signoFijo": 0.003002,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.003002
+  },
+  {
+   "label": "Reembolsos de sinistros",
+   "page": 99,
+   "native": 1.496914,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
+   "signoFijo": 1.496914,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.496914
+  },
+  {
+   "label": "Reembolsos de impostos",
+   "page": 99,
+   "native": 0.050992,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
+   "signoFijo": 0.050992,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.050992
+  },
+  {
+   "label": "Transferências de atletas de outras modalidades",
+   "page": 99,
+   "native": 0.72,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
+   "signoFijo": 0.72,
+   "cat": "other_sports",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 0.72
+  },
+  {
+   "label": "Mais-valias",
+   "page": 99,
+   "native": 0.336833,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
+   "signoFijo": 0.336833,
+   "cat": "other_income",
+   "conf": 0.6,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.39% (≤ 1%) y esta tiene 0.6",
+   "enLista": true,
+   "enCola": false,
+   "destino": "revenue",
+   "amountNative": 0.336833
+  },
+  {
+   "label": "Outros rendimentos e ganhos",
+   "page": 99,
+   "native": 0.362613,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
+   "signoFijo": 0.362613,
+   "cat": "other_income",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.362613
+  },
+  {
+   "label": "Proveitos com alienações de passes de jogadores",
+   "page": 100,
+   "native": 102.889181,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Proveitos com transações de passes de jogadores de futebol\")",
+   "signoFijo": 102.889181,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 102.889181
+  },
+  {
+   "label": "Proveitos com empréstimos de jogadores",
+   "page": 100,
+   "native": 5.30199,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Proveitos com transações de passes de jogadores de futebol\")",
+   "signoFijo": 5.30199,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.30199
+  },
+  {
+   "label": "Outros proveitos com jogadores",
+   "page": 100,
+   "native": 4.38638,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Proveitos com transações de passes de jogadores de futebol\")",
+   "signoFijo": 4.38638,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): nota 28 de pases: solidaridad no reclamada + acuerdos con agentes; fila mixta en una línea. [wf-2024-2025-6b41056f.md L7719]",
+   "destino": "revenue",
+   "amountNative": 4.38638
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "page": 36,
+   "native": 3.648411,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.648411,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.648411
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "page": 36,
+   "native": 37.671574,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 37.671574,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -37.671574
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "page": 36,
+   "native": 100.091415,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 100.091415,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -100.091415
+  },
+  {
+   "label": "Imparidade de inventários (perdas / reversões)",
+   "page": 36,
+   "native": 0.275455,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.275455,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.275455
+  },
+  {
+   "label": "Imparidade de dívidas a receber (perdas / reversões)",
+   "page": 36,
+   "native": 0.335689,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.335689,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.335689
+  },
+  {
+   "label": "Outros gastos e perdas",
+   "page": 36,
+   "native": 1.275737,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.275737,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.275737
+  },
+  {
+   "label": "Gastos / reversões de depreciação e de amortização",
+   "page": 36,
+   "native": 5.554148,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.554148,
+   "cat": "depreciation",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.554148
+  },
+  {
+   "label": "Amortizações de passes de jogadores",
+   "page": 100,
+   "native": 29.843687,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Amortizações e perdas de imparidade com passes de jogadores de futebol\")",
+   "signoFijo": 29.843687,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -29.843687
+  },
+  {
+   "label": "Perdas por imparidade com passes de jogadores",
+   "page": 100,
+   "native": 0.01879,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Amortizações e perdas de imparidade com passes de jogadores de futebol\")",
+   "signoFijo": 0.01879,
+   "cat": "player_impairment",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.01879
+  },
+  {
+   "label": "Custos com alienações de passes de jogadores",
+   "page": 100,
+   "native": 30.725022,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custos com transações de passes de jogadores de futebol\")",
+   "signoFijo": 30.725022,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -30.725022
+  },
+  {
+   "label": "Custos com empréstimos de jogadores",
+   "page": 100,
+   "native": 1.094487,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custos com transações de passes de jogadores de futebol\")",
+   "signoFijo": 1.094487,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): costos de préstamos de jugadores, other_expenses como Sporting 'Cedência de jogadores'. [wf-2024-2025-6b41056f.md L7717]",
+   "destino": "expense",
+   "amountNative": -1.094487
+  },
+  {
+   "label": "Outros custos com jogadores",
+   "page": 100,
+   "native": 5.965788,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custos com transações de passes de jogadores de futebol\")",
+   "signoFijo": 5.965788,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): comisiones e indemnizaciones de la nota 28. [wf-2024-2025-6b41056f.md L7721]",
+   "destino": "expense",
+   "amountNative": -5.965788
+  },
+  {
+   "label": "Juros e rendimentos similares obtidos",
+   "page": null,
+   "native": 2.400778,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Juros e gastos similares suportados",
+   "page": null,
+   "native": -22.433797,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Resultados relativos a investimentos",
+   "page": null,
+   "native": -0.056368,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposto sobre o rendimento do período",
+   "page": null,
+   "native": -1.284922,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Proveitos com transações de passes de jogadores de futebol\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Amortizações e perdas de imparidade com passes de jogadores de futebol\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Custos com transações de passes de jogadores de futebol\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 268.328651,
+  "expSum": -216.500203,
+  "officialTotalRevenue": 268.328651,
+  "officialTotalExpenses": 216.500203,
+  "officialPAT": 30.454137,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 30.454137,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 268.328651
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 216.500203
+  }
+ },
+ "liga": {
+  "valor": "pt-primeiraliga",
+  "fuente": "roster cacheado de \"2020–21 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Porto\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (235 de 237 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-15)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Portugal (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2021-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2021-06-30 = 0.8415 (Cierre BCE al 30/6/2021 (1 EUR = 1,1884 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "porto-pt-relatorio-contas-consolidadas-2020-21",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "pt-primeiraliga",
+   "fuente": "roster cacheado de \"2020–21 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Porto\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 14,
+  "lineasGasto": 12,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
 }

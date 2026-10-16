@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2015-16.pdf",
  "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2015-16.md",
- "generado": "2026-10-15T21:55:02.343Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.460Z",
+ "estado": "ok",
+ "clubId": "porto-pt",
  "year": 2016,
  "escala": {
   "valor": "unidades",
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "9872d52",
-  "7d8d9e6"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -41,11 +38,12 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2015: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (9.360302 contra 2.943864, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-2024-2025-6b41056f.pdf",
   "duda de extraer que no afecta la carga: L3614 y L3615 repiten el mismo total; se cargó solo L3615."
  ],
  "reintentar": [

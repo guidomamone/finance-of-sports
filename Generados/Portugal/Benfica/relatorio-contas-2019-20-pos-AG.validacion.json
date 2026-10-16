@@ -1,0 +1,58 @@
+{
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2019-20-pos-AG.pdf",
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2019-20-pos-AG.md",
+ "mdSha1": "41bbfcbc654dddc3156a24ecdf43b43a903f1f68",
+ "modo": "digital",
+ "motivoModo": "1 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 508628752 vs 506628752",
+ "generado": "2026-10-15T23:50:12.632Z",
+ "fuentes": {
+  "90": "pdftotext",
+  "130": "pdftotext",
+  "131": "pdftotext",
+  "132": "pdftotext",
+  "133": "pdftotext",
+  "134": "pdftotext",
+  "135": "pdftotext",
+  "137": "pdftotext",
+  "138": "pdftotext"
+ },
+ "confirmados": 189,
+ "noConfirmados": [
+  {
+   "bloque": "b79",
+   "pagina": 130,
+   "linea": 4455,
+   "numero": "30.05",
+   "segundaLeyo": "3006",
+   "sinSegunda": false,
+   "texto": "|   | 30.05.20 | 30.05.19  |"
+  },
+  {
+   "bloque": "b79",
+   "pagina": 130,
+   "linea": 4455,
+   "numero": "30.05",
+   "segundaLeyo": "3006",
+   "sinSegunda": false,
+   "texto": "|   | 30.05.20 | 30.05.19  |"
+  },
+  {
+   "bloque": "b81",
+   "pagina": 132,
+   "linea": 4550,
+   "numero": "30.05",
+   "segundaLeyo": "3006",
+   "sinSegunda": false,
+   "texto": "|   | 30.05.20 | 30.05.19  |"
+  },
+  {
+   "bloque": "b81",
+   "pagina": 132,
+   "linea": 4550,
+   "numero": "30.05",
+   "segundaLeyo": "3006",
+   "sinSegunda": false,
+   "texto": "|   | 30.05.20 | 30.05.19  |"
+  }
+ ]
+}

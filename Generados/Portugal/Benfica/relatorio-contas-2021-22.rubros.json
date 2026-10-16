@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.md",
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.pdf",
-  "club": "benfica",
+  "club": "benfica-pt",
   "year": 2022,
-  "generatedAt": "2026-10-15T21:55:00.170Z",
+  "generatedAt": "2026-10-15T23:54:38.208Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         47.267
       ],
-      "glosa": "Ingresos por retransmisión televisiva"
+      "glosa": "Ingresos de televisión"
     },
     {
       "label": "Outras receitas",
@@ -54,7 +54,7 @@
       "values": [
         2.474
       ],
-      "glosa": "Arrendamiento de espacios"
+      "glosa": "Alquileres de espacios"
     },
     {
       "label": "*Royalties*",
@@ -134,7 +134,7 @@
       "values": [
         62.095
       ],
-      "glosa": "Beneficios por enajenación de derechos de futbolistas (plusvalías)"
+      "glosa": "Beneficios por enajenación de derechos de deportistas (plusvalías)"
     },
     {
       "label": "Outros rendimentos",
@@ -144,7 +144,7 @@
       "values": [
         2.116
       ],
-      "glosa": "Otros ingresos de explotación"
+      "glosa": "Otros rendimientos"
     },
     {
       "label": "Gestão operacional do estádio",
@@ -184,7 +184,7 @@
       "values": [
         6.048
       ],
-      "glosa": "Licencia de marca Benfica"
+      "glosa": "Licencia de la marca Benfica"
     },
     {
       "label": "Deslocações e estadas",
@@ -264,7 +264,7 @@
       "values": [
         8.319
       ],
-      "glosa": "Otros suministros y servicios exteriores"
+      "glosa": "Otros suministros y servicios"
     },
     {
       "label": "Remunerações fixas",
@@ -394,7 +394,7 @@
       "values": [
         0.391
       ],
-      "glosa": "Mobiliario y equipos de oficina"
+      "glosa": "Equipos de oficina"
     },
     {
       "label": "Direitos de uso",
@@ -414,7 +414,7 @@
       "values": [
         1.52
       ],
-      "glosa": "Derecho de uso de la marca"
+      "glosa": "Derecho de utilización de la marca"
     },
     {
       "label": "Programas de computador",
@@ -434,7 +434,7 @@
       "values": [
         1.892
       ],
-      "glosa": "Provisiones/Deterioros ^{(2)}"
+      "glosa": "Provisiones/Pérdidas por deterioro ^{(2)}"
     },
     {
       "label": "Outros gastos e perdas operacionais ^{(3)}",
@@ -454,7 +454,7 @@
       "values": [
         4.379
       ],
-      "glosa": "Pérdidas por enajenación de derechos de futbolistas (minusvalías)"
+      "glosa": "Pérdidas por enajenación de derechos de deportistas (minusvalías)"
     },
     {
       "label": "Gastos associados a alienações de direitos de atletas (comissões)",
@@ -464,7 +464,7 @@
       "values": [
         9.998
       ],
-      "glosa": "Gastos asociados a la enajenación de derechos de futbolistas (comisiones)"
+      "glosa": "Gastos asociados a enajenaciones de derechos de deportistas (comisiones)"
     },
     {
       "label": "Abates de direitos de atletas",
@@ -474,7 +474,7 @@
       "values": [
         0.059
       ],
-      "glosa": "Bajas de derechos de futbolistas"
+      "glosa": "Bajas de derechos de deportistas"
     },
     {
       "label": "Outros gastos",
@@ -494,7 +494,7 @@
       "values": [
         43.326
       ],
-      "glosa": "Amortizaciones de derechos de futbolistas"
+      "glosa": "Amortizaciones de derechos de deportistas"
     },
     {
       "label": "Reforços de imparidade",
@@ -504,7 +504,7 @@
       "values": [
         6.802
       ],
-      "glosa": "Dotaciones por deterioro de valor"
+      "glosa": "Dotaciones por deterioro"
     }
   ]
 }

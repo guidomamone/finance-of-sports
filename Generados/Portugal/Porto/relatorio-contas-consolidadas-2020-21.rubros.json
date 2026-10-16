@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.md",
   "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.pdf",
-  "club": "porto",
+  "club": "porto-pt",
   "year": 2021,
-  "generatedAt": "2026-10-15T21:56:50.283Z",
+  "generatedAt": "2026-10-15T23:54:38.549Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         152.41446
       ],
-      "glosa": "Ventas y prestaciones de servicios"
+      "glosa": "Ventas y prestación de servicios"
     },
     {
       "label": "Subsídios à exploração",
@@ -44,7 +44,7 @@
       "values": [
         0.078516
       ],
-      "glosa": "Imputación de subvenciones para la inversión"
+      "glosa": "Imputación de subvenciones de inversión"
     },
     {
       "label": "Outros rendimentos suplementares",
@@ -54,7 +54,7 @@
       "values": [
         0.010146
       ],
-      "glosa": "Otros ingresos accesorios"
+      "glosa": "Otros ingresos suplementarios"
     },
     {
       "label": "Correções relativas a exercícios anteriores",
@@ -94,7 +94,7 @@
       "values": [
         0.72
       ],
-      "glosa": "Transferencias de deportistas de otras modalidades"
+      "glosa": "Traspasos de deportistas de otras disciplinas"
     },
     {
       "label": "Mais-valias",
@@ -124,7 +124,7 @@
       "values": [
         102.889181
       ],
-      "glosa": "Ingresos por traspasos de derechos de jugadores"
+      "glosa": "Ingresos por enajenación de derechos de jugadores"
     },
     {
       "label": "Proveitos com empréstimos de jogadores",
@@ -134,7 +134,7 @@
       "values": [
         5.30199
       ],
-      "glosa": "Ingresos por cesiones de jugadores"
+      "glosa": "Ingresos por cesión de jugadores"
     },
     {
       "label": "Outros proveitos com jogadores",
@@ -154,7 +154,7 @@
       "values": [
         3.648411
       ],
-      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y materiales consumidos"
     },
     {
       "label": "Fornecimentos e serviços externos",
@@ -214,7 +214,7 @@
       "values": [
         5.554148
       ],
-      "glosa": "Gastos / reversiones de depreciación y amortización"
+      "glosa": "Dotaciones / reversiones de amortizaciones"
     },
     {
       "label": "Amortizações de passes de jogadores (Nota 10)",
@@ -244,7 +244,7 @@
       "values": [
         30.725022
       ],
-      "glosa": "Gastos por enajenaciones de derechos de jugadores (Nota 10)"
+      "glosa": "Costes por enajenación de derechos de jugadores (Nota 10)"
     },
     {
       "label": "Custos com empréstimos de jogadores",
@@ -254,7 +254,7 @@
       "values": [
         1.094487
       ],
-      "glosa": "Gastos por cesiones de jugadores"
+      "glosa": "Costes por cesión de jugadores"
     },
     {
       "label": "Outros custos com jogadores",
@@ -264,7 +264,7 @@
       "values": [
         5.965788
       ],
-      "glosa": "Otros gastos relacionados con jugadores"
+      "glosa": "Otros costes relacionados con jugadores"
     }
   ]
 }

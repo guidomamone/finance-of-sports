@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2011-12.md",
+ "clave": "108b097c3b688c47a8bf19853a36872bfba7258b",
+ "generado": "2026-10-15T23:54:43.330Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Se carga la columna consolidada 30.06.12. Los renglones L2620, L2621, L2624-L2628, L2631 y L2632 están reemplazados por las partes de sus notas. L2637, L2635, L2636 y L2639 se cargan directamente. No se cargan subtotales y el resultado coincide con el impreso."
+ }
+}

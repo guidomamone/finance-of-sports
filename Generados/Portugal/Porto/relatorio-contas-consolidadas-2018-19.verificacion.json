@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2018-19.pdf",
  "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2018-19.md",
- "generado": "2026-10-15T21:55:05.748Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.526Z",
+ "estado": "ok",
+ "clubId": "porto-pt",
  "year": 2019,
  "escala": {
   "valor": "no se sabe",
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "42ee4d5",
-  "92a56c3"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -46,7 +43,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -54,6 +51,7 @@
   "el desglose de \"Outros rendimentos e ganhos\" (9 filas) no suma la fila: quedó la fila",
   "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (11.488288 contra 3.860791, sumando sus renglones): quedó el renglón del estado",
   "la lectura base no cerraba; cerró con la lectura 3",
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-2024-2025-6b41056f.pdf",
   "duda de extraer que no afecta la carga: Ningún bloque imprime la moneda/escala; los importes con todas las cifras sugieren unidades."
  ],
  "reintentar": [

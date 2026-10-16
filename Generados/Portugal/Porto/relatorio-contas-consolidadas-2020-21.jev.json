@@ -1,0 +1,353 @@
+{
+ "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.md",
+ "generatedAt": "2026-10-16T00:10:30.854Z",
+ "rubrosHuella": "5ed9b9bb19f2ae43b1f665100c5af6aa77ee9379",
+ "rubros": [
+  {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 36,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Rendimentos de propriedades de investimento",
+   "lado": "revenue",
+   "page": 99,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Imputação de subsídios para o investimento",
+   "lado": "revenue",
+   "page": 99,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros rendimentos suplementares",
+   "lado": "revenue",
+   "page": 99,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Reembolsos de sinistros",
+   "lado": "revenue",
+   "page": 99,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Reembolsos de impostos",
+   "lado": "revenue",
+   "page": 99,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros rendimentos e ganhos",
+   "lado": "revenue",
+   "page": 99,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Proveitos com alienações de passes de jogadores",
+   "lado": "revenue",
+   "page": 100,
+   "section": "nota que desglosa \"Proveitos com transações de passes de jogadores de futebol\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Proveitos com empréstimos de jogadores",
+   "lado": "revenue",
+   "page": 100,
+   "section": "nota que desglosa \"Proveitos com transações de passes de jogadores de futebol\"",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros proveitos com jogadores",
+   "lado": "revenue",
+   "page": 100,
+   "section": "nota que desglosa \"Proveitos com transações de passes de jogadores de futebol\"",
+   "choice": "player_sales",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "expense",
+   "page": 36,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Imparidade de inventários (perdas / reversões)",
+   "lado": "expense",
+   "page": 36,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Imparidade de dívidas a receber (perdas / reversões)",
+   "lado": "expense",
+   "page": 36,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mais-valias",
+   "lado": "revenue",
+   "page": 99,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "player_sales",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "player_sales",
+     0.89
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 904
+  },
+  {
+   "label": "Amortizações de passes de jogadores (Nota 10)",
+   "lado": "expense",
+   "page": 100,
+   "section": "nota que desglosa \"Amortizações e perdas de imparidade com passes de jogadores de futebol\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Perdas por imparidade com passes de jogadores (Nota 10)",
+   "lado": "expense",
+   "page": 100,
+   "section": "nota que desglosa \"Amortizações e perdas de imparidade com passes de jogadores de futebol\"",
+   "choice": "player_impairment",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Custos com alienações de passes de jogadores (Nota 10)",
+   "lado": "expense",
+   "page": 100,
+   "section": "nota que desglosa \"Custos com transações de passes de jogadores de futebol\"",
+   "choice": "player_amortisation",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Custos com empréstimos de jogadores",
+   "lado": "expense",
+   "page": 100,
+   "section": "nota que desglosa \"Custos com transações de passes de jogadores de futebol\"",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros custos com jogadores",
+   "lado": "expense",
+   "page": 100,
+   "section": "nota que desglosa \"Custos com transações de passes de jogadores de futebol\"",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros gastos e perdas",
+   "lado": "expense",
+   "page": 36,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Correções relativas a exercícios anteriores",
+   "lado": "revenue",
+   "page": 99,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Transferências de atletas de outras modalidades",
+   "lado": "revenue",
+   "page": 99,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "player_sales",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "player_sales",
+     0.46
+    ],
+    [
+     "other_sports",
+     0.34
+    ],
+    [
+     "other_income",
+     0.2
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "Gastos / reversões de depreciação e de amortização",
+   "lado": "expense",
+   "page": 36,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "depreciation",
+     0.88
+    ],
+    [
+     "player_amortisation",
+     0.1
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1113
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "lado": "expense",
+   "page": 36,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "wages_squad",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Vendas e serviços prestados",
+   "lado": "revenue",
+   "page": 36,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.94
+    ],
+    [
+     "sponsorship_commercial",
+     0.05
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": "expense",
+   "page": 36,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1014
+  }
+ ]
+}

@@ -1,0 +1,252 @@
+{
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.md",
+ "generado": "2026-10-15T23:54:39.165Z",
+ "estado": "cola",
+ "clubId": "benfica-pt",
+ "year": 2006,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+   "campo": "estado",
+   "valor": "b9",
+   "linea": null,
+   "motivo": "localizar.mjs dudó de la fecha y no eligió estado, pero el informe es del ejercicio 2005/2006 (cierre 31/07/2006) y trae la Demonstração dos Resultados por naturezas en euros, individual (la SAD no consolidaba).",
+   "evidencia": "relatorio-contas-2005-06.md L702-748 (pág. 20 del visor, impreso 18-19); resultado líquido (1.220.924)",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
+  }
+ ],
+ "cola": [
+  "32d8f2e",
+  "e2a0539",
+  "857d865"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"(F)\" 63.488882 cierra; además se suman 6 línea(s) fuera de ese total (115.489361)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "\"(E)\" 64.709806 cierra; además se suman 11 línea(s) fuera de ese total (185.353629)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 178.978243 - gastos 250.063435 ± financiero 5.132591 ± impuesto 0.026196 no da el impreso -1.220924",
+   "dif": null
+  },
+  {
+   "nombre": "documento del año 2007",
+   "ok": true,
+   "detalle": "ingresos de 2006: 178.978243 en este documento y 178.978243 en relatorio-contas-2006-07.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2005: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: La nota 16 (b15) indica que las cuentas de la SAD se incluirán en la consolidación del Sport Lisboa e Benfica, lo que sugiere que estas son individuales, mientras el club usa consolidado."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 178.978243,
+  "gastos": 250.063435,
+  "financiero": 5.132591,
+  "impuesto": 0.026196,
+  "resultadoImpreso": -1.220924,
+  "resultadoParaCargar": -1.220924,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Prestações de serviços",
+   "lado": "ingreso",
+   "M": 38.644161,
+   "pagina": 20,
+   "linea": 730,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Proveitos suplementares",
+   "lado": "ingreso",
+   "M": 12.765682,
+   "pagina": 20,
+   "linea": 731,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Subsídios à exploração",
+   "lado": "ingreso",
+   "M": 0.028136,
+   "pagina": 20,
+   "linea": 732,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros proveitos e ganhos operacionais",
+   "lado": "ingreso",
+   "M": 0.5625,
+   "pagina": 20,
+   "linea": 733,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(D)",
+   "lado": "ingreso",
+   "M": 52.046239,
+   "pagina": 20,
+   "linea": 737,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Proveitos e ganhos extraordinários",
+   "lado": "ingreso",
+   "M": 11.442643,
+   "pagina": 20,
+   "linea": 738,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(F)",
+   "lado": "ingreso",
+   "M": 63.488882,
+   "pagina": 20,
+   "linea": 739,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fornecimentos e serviços externos",
+   "lado": "gasto",
+   "M": 12.477445,
+   "pagina": 20,
+   "linea": 709,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Remunerações",
+   "lado": "gasto",
+   "M": 27.497682,
+   "pagina": 20,
+   "linea": 711,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 3.38139,
+   "pagina": 20,
+   "linea": 713,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortizações do imobilizado corpóreo e incorpóreo",
+   "lado": "gasto",
+   "M": 10.73711,
+   "pagina": 20,
+   "linea": 714,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ajustamentos",
+   "lado": "gasto",
+   "M": 0.104379,
+   "pagina": 20,
+   "linea": 715,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Provisões",
+   "lado": "gasto",
+   "M": 1.291943,
+   "pagina": 20,
+   "linea": 716,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos",
+   "lado": "gasto",
+   "M": 0.392925,
+   "pagina": 20,
+   "linea": 717,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outros custos e perdas operacionais",
+   "lado": "gasto",
+   "M": 0.103535,
+   "pagina": 20,
+   "linea": 718,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(C)",
+   "lado": "gasto",
+   "M": 61.07324,
+   "pagina": 20,
+   "linea": 722,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custos e perdas extraordinários",
+   "lado": "gasto",
+   "M": 3.61037,
+   "pagina": 20,
+   "linea": 723,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(E)",
+   "lado": "gasto",
+   "M": 64.68361,
+   "pagina": 20,
+   "linea": 724,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(G)",
+   "lado": "gasto",
+   "M": 64.709806,
+   "pagina": 20,
+   "linea": 726,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Outros",
+   "M": 5.086831,
+   "linea": 721
+  },
+  {
+   "etiqueta": "Outros",
+   "M": 0.04576,
+   "linea": 736
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposto sobre o rendimento do exercício",
+   "M": 0.026196,
+   "linea": 725
+  }
+ ]
+}
