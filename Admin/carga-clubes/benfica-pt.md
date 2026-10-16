@@ -609,6 +609,109 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2017–18 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
 ```
 
+## 2014
+
+### Ingresos
+
+```text
+2014: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | RECEITAS DE TELEVISÃO | pág. 121, Jev 1 |
+| 2 | PUBLICIDADE E PATROCÍNIOS | pág. 121, Jev 1 |
+| 3 | CORPORATE | pág. 121, precedente |
+| 4 | RECEITAS DE BILHETEIRA | pág. 121, Jev 1 |
+| 5 | QUOTIZAÇÕES | pág. 121, precedente |
+| 6 | RENDAS DE ESPAÇO | pág. 121, precedente |
+| 7 | CATIVOS | pág. 121, Jev 0.92 |
+| 8 | BILHETES DE ÉPOCA | pág. 121, precedente |
+| 9 | TÍTULOS FUNDADOR E CENTENARIUM | pág. 121, precedente |
+| 10 | RECEITAS OUTRAS COMPETIÇÕES | pág. 121, Jev 0.94 |
+| 11 | OUTROS | pág. 121, Claude 0.85 |
+| 12 | PRÉMIOS UEFA | pág. 123, Jev 1 |
+| 13 | INDEMNIZAÇÕES DE SEGUROS | pág. 123, Jev 1 |
+| 14 | ROYALTIES | pág. 123, precedente |
+| 15 | ASSISTÊNCIA TÉCNICA | pág. 123, Jev 0.95 |
+| 16 | COMISSÕES | pág. 123, Jev 1 |
+| 17 | OUTROS RENDIMENTOS OPERACIONAIS | pág. 123, Claude 0.8 |
+| 18 | ALIENAÇÕES DE DIREITOS DE ATLETAS | pág. 130, Claude 0.93 |
+| 19 | CEDÊNCIA DE DIREITOS BENFICA STARS FUND | pág. 130, precedente |
+| 20 | CEDÊNCIAS TEMPORÁRIAS DE ATLETAS | pág. 130, precedente |
+| 21 | FUNDO DE SOLIDARIEDADE | pág. 130, precedente |
+| 22 | OUTROS RENDIMENTOS E GANHOS | pág. 130, precedente |
+| 23 | RESULTADOS RELATIVOS A INVESTIMENTOS EM ASSOCIADAS | pág. 94, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | TRABALHOS ESPECIALIZADOS | pág. 124, precedente |
+| 2 | DESLOCAÇÕES E ESTADAS | pág. 124, precedente |
+| 3 | HONORÁRIOS | pág. 124, precedente |
+| 4 | CONSERVAÇÃO E REPARAÇÃO | pág. 124, precedente |
+| 5 | SERVIÇOS DE CATERING/SOFTDRINK | pág. 124, precedente |
+| 6 | EQUIPAMENTO DESPORTIVO | pág. 124, precedente |
+| 7 | SUBCONTRATOS | pág. 124, precedente |
+| 8 | ELECTRICIDADE | pág. 124, Jev 1 |
+| 9 | RENDAS E ALUSUÍERES | pág. 124, Jev 0.96 |
+| 10 | VIDILÂNCIA E SEGURANÇA | pág. 124, precedente |
+| 11 | LICENÇA MARCA BENFICA | pág. 124, precedente |
+| 12 | PUBLICIDADE E PROPAGANDA | pág. 124, Jev 1 |
+| 13 | CEDÊNCIA DIREITOS DE IMAGEM | pág. 124, precedente |
+| 14 | DESPESAS MÉDICAS | pág. 124, precedente |
+| 15 | LIMPEZA, HIGIENE E CONFORTO | pág. 124, Jev 1 |
+| 16 | ÁGUA E OUTROS FLUÍDOS | pág. 124, Jev 0.99 |
+| 17 | COMUNICAÇÃO | pág. 124, Jev 1 |
+| 18 | OUTROS FORNECIMENTOS E SERVIÇOS | pág. 124, precedente |
+| 19 | REMUNERAÇÕES FIXAS | pág. 125, precedente |
+| 20 | REMUNERAÇÕES VARIÁVEIS/PRÉMIOS | pág. 125, Jev 1 |
+| 21 | REMUNERAÇÕES FIXAS | pág. 125, precedente |
+| 22 | REMUNERAÇÕES VARIÁVEIS/PRÉMIOS | pág. 125, Jev 1 |
+| 23 | INDEMNIZAÇÕES | pág. 125, precedente |
+| 24 | BENEFÍCIOS PÓS-EMPREGO | pág. 125, precedente |
+| 25 | ENCARGOS SOBRE REMUNERAÇÕES | pág. 125, precedente |
+| 26 | SEGUROS DE ACIDENTES DE TRABALHO | pág. 125, precedente |
+| 27 | OUTROS GASTOS COM PESSOAL | pág. 125, precedente |
+| 28 | EDIFÍCIOS E OUTRAS CONSTRUÇÕES | pág. 127, precedente |
+| 29 | EQUIPAMENTO BÁSICO | pág. 127, precedente |
+| 30 | EQUIPAMENTO DE TRANSPORTE | pág. 127, precedente |
+| 31 | FERRAMENTAS E UTENSÍLIOS | pág. 127, Claude 0.85 |
+| 32 | EQUIPAMENTO ADMINISTRATIVO | pág. 127, precedente |
+| 33 | OUTROS ACTIVOS TANGÍVEIS | pág. 127, precedente |
+| 34 | PROGRAMAS TV | pág. 127, Claude 0.85 |
+| 35 | DIREITO UTILIZAÇÃO DA MARCA BENFICA | pág. 127, Jev 0.92 |
+| 36 | GALERIA COMERCIAL | pág. 127, Claude 0.88 |
+| 37 | REFORÇO DE PROVISÕES PARA OUTROS RISCOS | pág. 128, Claude 0.9 |
+| 38 | REDUÇÃO DE PROVISÕES PARA OUTROS RISCOS | pág. 128, Claude 0.85 |
+| 39 | REDUÇÃO DE IMPARIDADES DE CLIENTES/DEVEDORES | pág. 128, Claude 0.8 |
+| 40 | IMPOSTOS | pág. 129, Jev 0.96 |
+| 41 | OUTROS GASTOS E PERDAS OPERACIONAIS | pág. 129, Jev 1 |
+| 42 | AMORTIZAÇÕES DE DIREITOS DE ATLETAS | pág. 129, precedente |
+| 43 | REFORÇO DE IMPARIDADE | pág. 129, Jev 0.95 |
+| 44 | REVERSÕES DE IMPARIDADE | pág. 129, precedente |
+| 45 | GASTOS COM TRANSFERÊNCIA DE ATLETAS | pág. 130, Jev 0.99 |
+| 46 | CEDÊNCIAS TEMPORÁRIAS DE ATLETAS | pág. 130, Jev 0.93 |
+| 47 | FUNDO DE SOLIDARIEDADE | pág. 130, Jev 0.97 |
+| 48 | ABATES DE DIREITOS DE ATLETAS | pág. 130, precedente |
+| 49 | ALIENAÇÕES DE DIREITOS DE ATLETAS | pág. 130, precedente |
+| 50 | OUTROS GASTOS E PERDAS | pág. 130, Jev 0.99 |
+
+### Meta
+
+```text
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2014-06-30. periodo.mjs tomó 2017-06-30 (fin de mandato de los órganos sociales, L1417-1421); el informe es del ejercicio cerrado el 30/06/2014.
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2013–14 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
+```
+
 ## 2012
 
 ### Ingresos
@@ -1013,4 +1116,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2011-12.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### benfica-pt-relatorio-contas-2013-14-pos-ag
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

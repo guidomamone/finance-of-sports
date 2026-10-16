@@ -228,6 +228,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2014: {
     leagueSize: null,
     clubs: [
+      { id:"benfica-pt", revenue:246.871, reportType:"official_balance_sheet",
+        sourceId:"benfica-pt-relatorio-contas-2013-14-pos-ag",
+        mix:[["Cuotas Sociales",4.155],["Comercial / Sponsors",27.952],["Estadio",27.593],["Televisión",38.428],["Premios por competencias",32.268],["Venta de Jugadores",103.222],["Otros ingresos",13.252]] },
       { id:"sportingcp-pt", revenue:74.099, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2013-14",
         mix:[["Comercial / Sponsors",9.861],["Estadio",8.916],["Televisión",20.82],["Premios por competencias",0.044],["Venta de Jugadores",26.663],["Otros ingresos",7.795]] },
