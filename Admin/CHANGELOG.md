@@ -33,6 +33,9 @@ que dice `ESTADO.md` era verdad ese día.
 - periodo.mjs: en un anual por descarte, el par de encabezado (f | f un año antes) le gana a la fecha más citada si esa no sale de una frase
   de período (a + ac). Medido en 3.346 .md: cambian 10, todos bien (4 coinciden con ajustes `cierre` existentes; Gorica 2021 deja de frenar
   por período); las 4 regresiones del prototipo no aparecen. Carga y antes-de-localizar idénticos.
+- verificar.mjs: la duda del cuadro de inventarios se cierra sola si la identidad da exacta y la carga no usa el cuadro (v). Medido: 375
+  idénticos; con la cola vacía, 7 dudas menos (todas con la respuesta que ya tenían). o (escala por el año anterior) a HALLAZGOS: 2 de 12
+  respuestas la contradecían.
 - Lotes 86 y 87: Felgueiras 2021-22 y Benfica 2007-08 cargados; caja de Felgueiras 2022-2024. Listas 80, 86 y 87 al archivo.
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)

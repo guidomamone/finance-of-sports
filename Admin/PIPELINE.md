@@ -392,6 +392,10 @@ Mitigaciones:
             o subtotal; menos sus filas de otro lado) contra todas las combinaciones de renglones del estado de ese lado más el financiero
             del mismo signo, exacto a media unidad por fila. UNA combinación y propuesta "sí" ──► sí; NINGUNA y la carga no usa el cuadro
             ──► no; si no, cola. Medido: 7 de 7 respuestas iguales (Asteras 2020-2025, Levadiakos 2020, OFI 2020)
+ INVENTARIOS (to-do 237 v) el primer bloque de la duda es el cuadro de inventarios: UNA fila inicial, UNA final, compras (± regularizações)
+            y UNA de costo, la identidad da exacta, el estado tiene ese costo y la carga no usa filas del cuadro ──► se cierra con nota,
+            sin importar cómo esté redactada la pregunta (el cuadro queda afuera siempre). Medido con la cola vacía: 7 dudas, todas con la
+            respuesta que ya tenían
  COLA HUMANA (escala, perímetro, cuadro de otro año, fila ilegible, "otro" y las propuestas "no" siempre llegan: medido el 2026-10-09,
             un tercio de esas dudas terminó corregido, así que son preguntas legítimas)
 ```

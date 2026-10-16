@@ -1338,6 +1338,34 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     if (!dan.length && ![...ing, ...gas].some((f) => f.bloque === C)) return { decision: 'no', porque: `el cuadro ${C} (${String(tots[0].actual)}) no es la suma de ningún grupo de renglones del estado, y la carga no usa sus filas` };
     return null;
   };
+  // (to-do 237 v) EL CUADRO DE INVENTARIOS. "Apuramento do custo das mercadorias vendidas" (inicial + compras ± regularizações − final = costo)
+  // no es un desglose aditivo y abría 2 dudas por club con la misma respuesta (Porto b102, Santa Clara b20, Braga b38; 31 en la cola). La
+  // respuesta es siempre la misma, aunque la pregunta venga redactada al revés ("¿se cargan…?" / "¿se dejan afuera…?"): el cuadro queda afuera
+  // y se carga el renglón del estado. COMPUERTA, una sola: el bloque de la duda tiene UNA fila de inventario inicial, UNA de final, compras y
+  // UNA de costo, la identidad da exacta (media unidad por fila), el estado tiene un renglón con ese costo y la carga no usa ninguna fila del
+  // cuadro. Entonces la duda no cambia nada de lo que se carga: se cierra con nota. Si algo no se cumple, sigue a la cola como siempre.
+  const cuadroInventario = (d) => {
+    const est = new Set(U.estado || []); const num = (f) => Math.abs(parseNumber(f.actual) ?? NaN);
+    for (const C of (d.bloques || []).slice(0, 1)) { // el cuadro es el PRIMER bloque de la duda (como en cuadroNaturaleza): una duda de escala de "todos los bloques" no es sobre el cuadro
+      if (est.has(C)) continue;
+      const filasC = (F.filas || []).filter((f) => f.bloque === C && isFinite(parseNumber(f.actual) ?? NaN));
+      const nl = (f) => normalizar(String(f.etiqueta ?? f.label ?? ''));
+      const ini = filasC.filter((f) => /inicia|no inicio|saldo inicial|existencias? inicia/.test(nl(f)));
+      const fin = filasC.filter((f) => /\bfina(l|is)\b|no fim|fim do periodo|saldo final/.test(nl(f)));
+      const comp = filasC.filter((f) => /\bcompras?\b|purchases/.test(nl(f)) && !ini.includes(f) && !fin.includes(f));
+      const reg = filasC.filter((f) => /regulariza|reclassifica/.test(nl(f)) && !ini.includes(f) && !fin.includes(f));
+      const cmv = filasC.filter((f) => /custo|c\.?m\.?v|mercadorias vendidas|consumid|cost of (goods|sales)/.test(nl(f)) && ![...ini, ...fin, ...comp, ...reg].includes(f));
+      if (ini.length !== 1 || fin.length !== 1 || cmv.length !== 1 || comp.length < 1) continue;
+      const dec = (String(cmv[0].actual).split(/[.,]/).pop() || '').length; const u = dec > 0 && dec <= 2 ? 10 ** -dec : 1;
+      const calc = num(ini[0]) + comp.reduce((a, f) => a + num(f), 0) + reg.reduce((a, f) => a + (parseNumber(f.actual) || 0), 0) - num(fin[0]);
+      const n = 3 + comp.length + reg.length;
+      if (Math.abs(calc - num(cmv[0])) > 0.5 * u * n) continue;
+      if (!(F.filas || []).some((f) => est.has(f.bloque) && f.tipo === 'renglon' && Math.abs(num(f) - num(cmv[0])) <= 0.5 * u)) continue;
+      if ([...ing, ...gas].some((f) => f.bloque === C)) continue;
+      return `el bloque ${C} es el cuadro de inventarios: inicial ${ini[0].actual} + compras ${comp.map((f) => f.actual).join(' + ')}${reg.length ? ` ± regularizações ${reg.map((f) => f.actual).join(', ')}` : ''} − final ${fin[0].actual} = costo ${cmv[0].actual} (L${cmv[0].linea}), el renglón del estado; la carga no usa sus filas`;
+    }
+    return null;
+  };
   const pendientes = []; const contestadas = []; // (to-do 211) las dudas que irían a la cola se juntan por cuadro antes de escribirlas (abajo)
   for (const [origen, lista] of [['localizar', U.dudas || []], ['extraer', F.dudas || []]]) {
     for (const d of lista.map(dudaComoObjeto)) {
@@ -1384,6 +1412,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         // TEMA "ESCALA" (Versión 363, parte B sacada en la 372 por decisión de Guido: era un desvío entre escaleras, no un escalón): las sumas
         // NO confirman una escala (cerrar es invariante a la escala del documento entero; Fortaleza CEIF 2023 tenía aceptadas a la vez "¿están
         // en miles?" y "¿están en unidades y no en miles?"), así que el tema 'escala' no está en la lista de abajo y va a la cola (o a un ajuste).
+        { const inv = cuadroInventario(d); if (inv) { notas.push(`duda de ${origen} decidida por la identidad de inventarios (to-do 237 v): ${inv}. "${d.pregunta}"`); continue; } }
         if (E.cierra && !vecinos.includes(false) && ['usar-cuadro-por-segmento', 'cuadro-duplicado', 'columna'].includes(d.tema) && d.propuesta === 'sí') { notas.push(`duda de ${origen} confirmada por las sumas (${d.tema}, "${d.renglon || '-'}"): ${d.pregunta}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
         // ESCALÓN 2b (to-do 173, aprobado por Guido el 2026-10-09): lo mismo cuando lo ÚNICO que frenó al escalón 2 es un año vecino que da distinto.
         // En estos 3 temas la duda es qué cuadro o qué columna del MISMO documento se usa, y eso lo confirma la suma del propio documento; el
@@ -1394,6 +1423,8 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         pendientes.push({ origen, motivo: 'duda-tema', detalle: det, que, pregunta: d.pregunta || d.texto, bloques: d.bloques || [], extra: { pagina, lineas, propuesta } });
         continue;
       }
+      const inv = cuadroInventario(d);
+      if (inv) { notas.push(`duda de ${origen} decidida por la identidad de inventarios (to-do 237 v): ${inv}. "${d.pregunta}"`); continue; }
       const cn = cuadroNaturaleza(d);
       if (cn) { notas.push(`duda de ${origen} decidida por las sumas (to-do 222): ${cn.decision}, ${cn.porque}. "${d.pregunta}"`); continue; }
       pendientes.push({ origen, motivo: `duda-de-${origen}`, detalle: (d.pregunta || d.texto).slice(0, 80), que, pregunta: d.pregunta || d.texto, bloques: d.bloques || [], extra: { pagina, lineas, propuesta } });

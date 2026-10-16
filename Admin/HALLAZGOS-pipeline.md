@@ -134,6 +134,11 @@ Del to-do 237 (diagnóstico por subagentes Sonnet, 2026-10-16):
 - 237 q, resto) Benfica 2014-15: una fila sin lado después del resultado ("ACIONISTAS DA EMPRESA-MÃE") contada como ingreso y una nota de
   PROVISÕES con el signo del resultado; probar una regla de signo de nota rompía Vitória Guimarães 2021-22. Retomar: un segundo documento
   con nota de signo contrario (mientras tanto, `resultado-final` y ajustes `fila` a mano).
+- 237 o) Cerrar sola una duda de escala con propuesta "sí" cuando el chequeo "año anterior cargado" da ok: medido (2026-10-16) con la cola
+  vacía en 100 documentos, decidía 36; de las 12 que ya tenían respuesta, 2 se habían contestado "no" (Torino 2024 "¿está en miles?", era
+  en euros; Novorizontino 2016). El año anterior confirma la escala que usó la carga, y esa no siempre es la que dice la propuesta. Sin daño
+  hoy: esas dudas van a la cola y se contestan. Retomar: si localizar o extraer dejan la escala propuesta como campo (miles / unidades) y
+  no solo en el texto de la pregunta; entonces la compuerta compara ese campo con la escala que usó la carga.
 - Etiquetado `perimetro` de las dudas de localizar y extraer: la IA lo usa para preguntas de inventarios, imparidad o notas que difieren
   del estado (Rio Ave, Famalicão, Santa Clara, Torreense). Sin daño (se contestan igual). Retomar: si una regla empieza a contestar
   dudas por su tema.
