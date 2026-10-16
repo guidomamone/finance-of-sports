@@ -20,6 +20,14 @@ window.RANKINGS["pt-liga3"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.449],["Otros ingresos",0.01]] },
     ],
   },
+  2023: {
+    leagueSize: null,
+    clubs: [
+      { id:"uniaodeleiria-pt", revenue:0.667, reportType:"official_balance_sheet",
+        sourceId:"uniaodeleiria-pt-relatorio-contas-udl-sad-2022-2023",
+        mix:[["Comercial / Sponsors",0.045],["Fútbol profesional (sin desglosar por la fuente)",0.604],["Otros ingresos",0.018]] },
+    ],
+  },
   2022: {
     leagueSize: null,
     clubs: [

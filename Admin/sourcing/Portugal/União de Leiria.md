@@ -16,3 +16,5 @@
 - Último chequeo: 2026-10-08.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf` (sourceId `uniaodeleiria-pt-relatorio-contas-udl-sad-2023-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.pdf` (sourceId `uniaodeleiria-pt-relatorio-contas-udl-sad-2022-2023`).

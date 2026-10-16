@@ -98,6 +98,55 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2023–24 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "União de Leiria".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas de mercadorias | pág. 18, precedente |
+| 2 | Prestação de serviços | pág. 18, precedente |
+| 3 | Subsídios à exploração | pág. 3, Jev 0.95 |
+| 4 | Outros rendimentos | pág. 3, Claude 0.85 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 3, precedente |
+| 2 | Serviços especializados | pág. 19, precedente |
+| 3 | Materiais | pág. 19, precedente |
+| 4 | Energia e fluídos | pág. 19, precedente |
+| 5 | Deslocações e estadas | pág. 19, precedente |
+| 6 | Rendas e alugueres | pág. 19, precedente |
+| 7 | Serviços diversos (*) | pág. 19, precedente |
+| 8 | Remunerações do pessoal | pág. 20, precedente |
+| 9 | Indemnizações | pág. 20, precedente |
+| 10 | Encargos sobre remunerações | pág. 20, precedente |
+| 11 | Seguros | pág. 20, precedente |
+| 12 | Outros gastos com pessoal | pág. 20, precedente |
+| 13 | Impostos | pág. 21, precedente |
+| 14 | Outros gastos e perdas | pág. 21, precedente |
+| 15 | Gastos/reversões de depreciação e de amortização | pág. 3, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-liga3, verificado contra roster cacheado de "2022–23 Liga 3 (Portugal)" (tools/club-league-reference/pt.json), coincidencia exacta "União de Leiria".
+```
+
 ## Fuentes
 
 ### uniaodeleiria-pt-relatorio-contas-udl-sad-2023-2024
@@ -106,4 +155,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### uniaodeleiria-pt-relatorio-contas-udl-sad-2022-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
