@@ -42,6 +42,24 @@ const santaclaraptRevenueLinesByYear = {
     { rawLabel:'UEFA Surplus', normalizedCategory:'competition_bonus', amountNative:0.059, disclosureLevel:'aggregated' },
     { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:6.451434, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Equipamento desportivo', normalizedCategory:'sponsorship_commercial', amountNative:0.049948, disclosureLevel:'aggregated' },
+    { rawLabel:'Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:0.008246, disclosureLevel:'aggregated' },
+    { rawLabel:'Ingressos para jogos', normalizedCategory:'matchday_competition', amountNative:0.170571, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência temporária atletas', normalizedCategory:'player_sales', amountNative:0.135521, disclosureLevel:'aggregated' },
+    { rawLabel:'Apostas desportivas Placard', normalizedCategory:'other_income', amountNative:0.204769, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:0.338147, disclosureLevel:'aggregated' },
+    { rawLabel:'Prémios de participação ( TaçaPort. E Liga)', normalizedCategory:'competition_bonus', amountNative:0.089968, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos televisivos', normalizedCategory:'broadcasting', amountNative:3.458824, disclosureLevel:'aggregated' },
+    { rawLabel:'Licença Electronic - konami', normalizedCategory:'sponsorship_commercial', amountNative:0.005, disclosureLevel:'aggregated' },
+    { rawLabel:'Portes vendas', normalizedCategory:'other_income', amountNative:0.000864, disclosureLevel:'aggregated' },
+    { rawLabel:'Diversos', normalizedCategory:'other_income', amountNative:0.004892, disclosureLevel:'aggregated' },
+    { rawLabel:'Direção Regional do Turismo', normalizedCategory:'other_income', amountNative:1, disclosureLevel:'aggregated' },
+    { rawLabel:'Inst. Seg Social Layoff', normalizedCategory:'other_income', amountNative:0.023629, disclosureLevel:'aggregated' },
+    { rawLabel:'RAA - Fundo Regional Emprego', normalizedCategory:'other_income', amountNative:0.018144, disclosureLevel:'aggregated' },
+    { rawLabel:'Vice Presidencia Deslocações', normalizedCategory:'other_income', amountNative:0.051593, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:2.517276, disclosureLevel:'aggregated' },
+  ],
 };
 const santaclaraptExpenseLinesByYear = {
   2025: [
@@ -189,6 +207,40 @@ const santaclaraptExpenseLinesByYear = {
     { rawLabel:'Juros de mora e compensatórios', normalizedCategory:'other_expenses', amountNative:-0.018131, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'player_amortisation', amountNative:-0.49653, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Custo das mercadorias vendidas e das matérias consumidas', normalizedCategory:'other_expenses', amountNative:-0.018441, disclosureLevel:'aggregated' },
+    { rawLabel:'Subcontratos', normalizedCategory:'admin_general_expense', amountNative:-0.029866, disclosureLevel:'aggregated' },
+    { rawLabel:'Informatica', normalizedCategory:'admin_general_expense', amountNative:-0.00064, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade', normalizedCategory:'admin_general_expense', amountNative:-0.003926, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-0.085888, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilancia e Segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.126644, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.037443, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e Reparação', normalizedCategory:'admin_general_expense', amountNative:-0.010268, disclosureLevel:'aggregated' },
+    { rawLabel:'Part. Compet. Desportivas', normalizedCategory:'match_organisation_expense', amountNative:-0.089133, disclosureLevel:'aggregated' },
+    { rawLabel:'Ferramentas e utensílios', normalizedCategory:'admin_general_expense', amountNative:-0.033508, disclosureLevel:'aggregated' },
+    { rawLabel:'Livros e documentação técnica', normalizedCategory:'admin_general_expense', amountNative:-0.002117, disclosureLevel:'aggregated' },
+    { rawLabel:'Material escritorio', normalizedCategory:'admin_general_expense', amountNative:-0.001702, disclosureLevel:'aggregated' },
+    { rawLabel:'Artigos para oferta', normalizedCategory:'admin_general_expense', amountNative:-0.000195, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros relativos com a atividade', normalizedCategory:'other_expenses', amountNative:-0.124153, disclosureLevel:'aggregated' },
+    { rawLabel:'Energia e Fluidos', normalizedCategory:'admin_general_expense', amountNative:-0.017569, disclosureLevel:'aggregated' },
+    { rawLabel:'De atletas e pessoal', normalizedCategory:'match_organisation_expense', amountNative:-0.645309, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras (ex. portagens, parques)', normalizedCategory:'match_organisation_expense', amountNative:-0.001834, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e Alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.098962, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.022469, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.007484, disclosureLevel:'aggregated' },
+    { rawLabel:'Contencioso e Notariado', normalizedCategory:'admin_general_expense', amountNative:-0.004116, disclosureLevel:'aggregated' },
+    { rawLabel:'Limpeza, higiene e conforto', normalizedCategory:'admin_general_expense', amountNative:-0.025008, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.06073, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações órgãos sociais', normalizedCategory:'admin_general_expense', amountNative:-0.307405, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações ao pessoal', normalizedCategory:'wages_squad', amountNative:-3.980073, disclosureLevel:'aggregated' },
+    { rawLabel:'Acordo Revogação', normalizedCategory:'wages_squad', amountNative:-0.101642, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre remunerações', normalizedCategory:'wages_squad', amountNative:-0.35175, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguro acidentes de trabalho e doenças', normalizedCategory:'admin_general_expense', amountNative:-0.412226, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos com pessoal', normalizedCategory:'wages_squad', amountNative:-0.116698, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidades de dívidas a receber', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos', normalizedCategory:'other_expenses', amountNative:-0.551838, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'player_amortisation', amountNative:-0.148338, disclosureLevel:'aggregated' },
+  ],
 };
 const santaclaraptFiscalYearMeta = {
   2025: {
@@ -236,6 +288,21 @@ const santaclaraptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:13.70457, officialTotalExpenses:14.557093, officialPAT:-1.276988,
   },
+  2020: {
+    currency:'EUR', fxRef:'EUR@2020-06-30',
+    sourceId:'santaclara-pt-relatorio-contas-sad-2019-20',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.201854, tax:-0.03097,
+    extraRows: [
+      {label:'Juros e rendimentos similares obtidos', value:0.001344},
+      {label:'Juros e gastos similares suportados', value:-0.203198},
+      {label:'Imposto sobre o rendimento do período', value:-0.03097},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:8.077392, officialTotalExpenses:7.417375, officialPAT:0.427392,
+  },
 };
 const santaclaraptPresupuestoOverlayByYear = {};
 
@@ -265,6 +332,11 @@ Object.assign(sources, {
   'santaclara-pt-relatorio-contas-sad-2022-23': {
     id:'santaclara-pt-relatorio-contas-sad-2022-23', clubId:'santaclara-pt',
     title:'Santa Clara Açores - Futebol, S.A.D. — relatorio-contas-sad-2022-23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'santaclara-pt-relatorio-contas-sad-2019-20': {
+    id:'santaclara-pt-relatorio-contas-sad-2019-20', clubId:'santaclara-pt',
+    title:'Santa Clara Açores - Futebol, S.A.D. — relatorio-contas-sad-2019-20 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2019-20.pdf",
- "generado": "2026-10-16T00:11:54.619Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Publicidade\" -> other_expenses 0; \"De atletas e pessoal\" -> match_organisation_expense 0.75; \"Outras (ex. portagens, parques)\" -> match_organisation_expense 0.55; \"Acordo Revogação\" -> wages_squad 0.75"
-  }
- ],
+ "generado": "2026-10-16T00:46:07.252Z",
+ "frena": [],
  "avisos": [
   "materialidad: \"Equipamento desportivo\" va como sponsorship_commercial con 0.75 (las dudas de ingresos suman 0.63% de su lado)",
   "materialidad: \"Portes vendas\" va como other_income con 0.6 (las dudas de ingresos suman 0.63% de su lado)",
@@ -212,13 +207,13 @@
    },
    {
     "rawLabel": "Publicidade",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.003926,
     "disclosureLevel": "aggregated",
     "_pag": 48,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía sponsorship_commercial, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Trabalhos especializados",
@@ -336,9 +331,9 @@
     "amountNative": -0.645309,
     "disclosureLevel": "aggregated",
     "_pag": 48,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outras (ex. portagens, parques)",
@@ -346,9 +341,9 @@
     "amountNative": -0.001834,
     "disclosureLevel": "aggregated",
     "_pag": 48,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Rendas e Alugueres",
@@ -436,9 +431,9 @@
     "amountNative": -0.101642,
     "disclosureLevel": "aggregated",
     "_pag": 49,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Encargos sobre remunerações",
@@ -858,13 +853,13 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.003926,
-   "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía sponsorship_commercial, del otro lado que la fila: se propone la genérica de su lado",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): gasto dentro de Serviços especializados (FSE), como 'Publicidade e propaganda' en 2025. [relatorio-contas-sad-2019-20.md L1690]",
    "destino": "expense",
    "amountNative": -0.003926
   },
@@ -1041,11 +1036,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.645309,
    "cat": "match_organisation_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Deslocações, estadas e transportes (viajes del plantel y staff), como 2021-2025.",
    "destino": "expense",
    "amountNative": -0.645309
   },
@@ -1057,11 +1052,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.001834,
    "cat": "match_organisation_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Deslocações, estadas e transportes (viajes del plantel y staff), como 2021-2025.",
    "destino": "expense",
    "amountNative": -0.001834
   },
@@ -1194,11 +1189,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.101642,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): dentro de Gastos com o pessoal (remuneraciones y acuerdos de rescisión), wages_squad.",
    "destino": "expense",
    "amountNative": -0.101642
   },
@@ -1415,8 +1410,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 16,
   "lineasGasto": 32,
   "metaFilas": 3,

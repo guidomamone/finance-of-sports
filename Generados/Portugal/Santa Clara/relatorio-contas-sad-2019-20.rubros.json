@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2019-20.pdf",
   "club": "santaclara-pt",
   "year": 2020,
-  "generatedAt": "2026-10-15T23:54:38.642Z",
+  "generatedAt": "2026-10-16T00:30:34.060Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         0.170571
       ],
-      "glosa": "Entradas para partidos"
+      "glosa": "Ingresos por entradas"
     },
     {
       "label": "Cedência temporária atletas",
@@ -84,7 +84,7 @@
       "values": [
         3.458824
       ],
-      "glosa": "Derechos audiovisuales"
+      "glosa": "Derechos de televisión"
     },
     {
       "label": "Licença Electronic - konami",
@@ -134,7 +134,7 @@
       "values": [
         0.023629
       ],
-      "glosa": "Seguridad Social - Expediente de regulación temporal de empleo"
+      "glosa": "Inst. Seguridad Social - ERTE (Layoff)"
     },
     {
       "label": "RAA - Fundo Regional Emprego",
@@ -184,7 +184,7 @@
       "values": [
         0.029866
       ],
-      "glosa": "Subcontratos"
+      "glosa": "Subcontratas"
     },
     {
       "label": "Informatica",
@@ -234,7 +234,7 @@
       "values": [
         0.037443
       ],
-      "glosa": "Honorarios profesionales"
+      "glosa": "Honorarios"
     },
     {
       "label": "Conservação e Reparação",
@@ -244,7 +244,7 @@
       "values": [
         0.010268
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Reparaciones y conservación"
     },
     {
       "label": "Part. Compet. Desportivas",
@@ -294,7 +294,7 @@
       "values": [
         0.000195
       ],
-      "glosa": "Artículos promocionales y de regalo"
+      "glosa": "Artículos de regalo y promoción"
     },
     {
       "label": "Outros relativos com a atividade",
@@ -314,7 +314,7 @@
       "values": [
         0.017569
       ],
-      "glosa": "Energía y suministros"
+      "glosa": "Suministros de energía y fluidos"
     },
     {
       "label": "De atletas e pessoal",
@@ -344,7 +344,7 @@
       "values": [
         0.098962
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Comunicação",
@@ -364,7 +364,7 @@
       "values": [
         0.007484
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Contencioso e Notariado",
@@ -384,7 +384,7 @@
       "values": [
         0.025008
       ],
-      "glosa": "Limpieza, higiene y confort"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Outros",
@@ -404,7 +404,7 @@
       "values": [
         0.307405
       ],
-      "glosa": "Retribuciones de órganos de gobierno"
+      "glosa": "Retribuciones a los órganos de administración"
     },
     {
       "label": "Remunerações ao pessoal",
@@ -424,7 +424,7 @@
       "values": [
         0.101642
       ],
-      "glosa": "Acuerdo de rescisión de contrato"
+      "glosa": "Indemnizaciones por rescisión de contratos"
     },
     {
       "label": "Encargos sobre remunerações",
@@ -444,7 +444,7 @@
       "values": [
         0.412226
       ],
-      "glosa": "Seguro de accidentes de trabajo y enfermedades laborales"
+      "glosa": "Seguro de accidentes de trabajo y enfermedades"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -464,7 +464,7 @@
       "values": [
         0
       ],
-      "glosa": "Pérdidas por deterioro de créditos comerciales a cobrar"
+      "glosa": "Deterioro del valor de créditos a cobrar"
     },
     {
       "label": "Outros gastos",
@@ -474,7 +474,7 @@
       "values": [
         0.551838
       ],
-      "glosa": "Otros gastos de explotación"
+      "glosa": "Otros gastos"
     },
     {
       "label": "Gastos/reversões de depreciação e de amortização",
@@ -484,7 +484,7 @@
       "values": [
         0.148338
       ],
-      "glosa": "Dotaciones/reversiones por amortización y deterioro de valor"
+      "glosa": "Dotaciones/reversiones por amortización y depreciación"
     }
   ]
 }

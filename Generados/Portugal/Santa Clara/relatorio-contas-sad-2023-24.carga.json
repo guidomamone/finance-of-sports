@@ -1,21 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.pdf",
- "generado": "2026-10-16T00:11:55.083Z",
- "frena": [
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 4.417946 + gastos -17.477148 + netInterest -0.148303 + tax 1.848329 = -11.359176 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -10.63916)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "ingresos: las filas suman 4.417946 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -17.295649 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  }
- ],
+ "generado": "2026-10-16T00:46:07.615Z",
+ "frena": [],
  "avisos": [
+  "gastos: ningún total impreso igual a la suma de las líneas (-16.93564); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -70,7 +58,7 @@
     "amountNative": 0.065016,
     "disclosureLevel": "aggregated",
     "_pag": 40,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -90,8 +78,8 @@
     "amountNative": 0.32,
     "disclosureLevel": "aggregated",
     "_pag": 40,
-    "_escalon": 1,
-    "_conf": 0.98,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -143,19 +131,19 @@
     "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Juros e Outros Rendimentos Similares",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.360009,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
    }
   ],
   "expenseLines": [
-   {
-    "rawLabel": "Juros e Outros Rendimentos Similares",
-    "normalizedCategory": "other_expenses",
-    "amountNative": -0.360009,
-    "disclosureLevel": "aggregated",
-    "_pag": 42,
-    "_escalon": 1,
-    "_conf": 0.97,
-    "_fuenteCat": "categorias.json"
-   },
    {
     "rawLabel": "Custo das mercadorias vendidas e das matérias consumidas",
     "normalizedCategory": "other_expenses",
@@ -202,7 +190,7 @@
     "amountNative": -0.036422,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -212,7 +200,7 @@
     "amountNative": -1.225203,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -232,7 +220,7 @@
     "amountNative": -0.272994,
     "disclosureLevel": "aggregated",
     "_pag": 42,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -262,8 +250,8 @@
     "amountNative": -1.036626,
     "disclosureLevel": "aggregated",
     "_pag": 42,
-    "_escalon": 1,
-    "_conf": 0.98,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -272,7 +260,7 @@
     "amountNative": -0.572905,
     "disclosureLevel": "aggregated",
     "_pag": 42,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -424,7 +412,7 @@
     "_pag": 43,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_income)"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)"
    },
    {
     "rawLabel": "Gastos/reversões de depreciação e de amortização",
@@ -447,11 +435,25 @@
    "assetSales": 0,
    "netInterest": -0.148303,
    "tax": 1.848329,
+   "extraRows": [
+    {
+     "label": "Juros e rendimentos similares obtidos",
+     "value": null
+    },
+    {
+     "label": "Juros e gastos similares suportados",
+     "value": -0.148303
+    },
+    {
+     "label": "Imposto sobre o rendimento do período",
+     "value": 1.848329
+    }
+   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalRevenue": 4.777955,
+   "officialTotalExpenses": 16.93564,
+   "officialPAT": -10.63916
   },
   "source": {
    "id": "santaclara-pt-relatorio-contas-sad-2023-24",
@@ -474,7 +476,21 @@
  },
  "clubId": "santaclara-pt",
  "year": 2024,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.pdf",
+   "campo": "fila",
+   "valor": "360 009",
+   "linea": 1177,
+   "etiqueta": "Juros e Outros Rendimentos Similares",
+   "lado": "ingreso",
+   "reemplaza": "Juros e Outros Rendimentos Similares",
+   "motivo": "Fila de la nota 21 'Outros Rendimentos' (suma 2.771.925, igual al renglón del estado L322) que la extracción puso como gasto (−360.009). Es ingreso, como en 2024-25. Con el cambio el resultado da −10.639.158 contra −10.639.160,36 impreso.",
+   "evidencia": "relatorio-contas-sad-2023-24.md L1164-1178, L322",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
   "filas": 44,
   "notasUsadas": [],
@@ -550,7 +566,7 @@
    "signoFijo": 0.065016,
    "cat": "competition_bonus",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -579,8 +595,8 @@
    "origen": "verificacion (nota que desglosa \"Vendas e Serviços Prestados\")",
    "signoFijo": 0.32,
    "cat": "player_sales",
-   "conf": 0.98,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -665,16 +681,16 @@
    "label": "Juros e Outros Rendimentos Similares",
    "page": 42,
    "native": 0.360009,
-   "ladoDoc": "expense",
-   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
    "signoFijo": 0.360009,
-   "cat": "other_expenses",
-   "conf": 0.97,
-   "escalon": 1,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
-   "destino": "expense",
-   "amountNative": -0.360009
+   "destino": "revenue",
+   "amountNative": 0.360009
   },
   {
    "label": "Custo das mercadorias vendidas e das matérias consumidas",
@@ -745,7 +761,7 @@
    "signoFijo": 0.036422,
    "cat": "admin_general_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -760,7 +776,7 @@
    "signoFijo": 1.225203,
    "cat": "match_organisation_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -790,7 +806,7 @@
    "signoFijo": 0.272994,
    "cat": "admin_general_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -835,8 +851,8 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 1.036626,
    "cat": "wages_squad",
-   "conf": 0.98,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -851,7 +867,7 @@
    "signoFijo": 0.572905,
    "cat": "admin_general_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1079,7 +1095,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto (categorias.json decía other_income)",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.136568
@@ -1138,22 +1154,38 @@
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e Serviços Prestados\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
-   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos con signo",
+   "verificacion (ajuste manual)": "gastos con signo",
    "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Gastos com o pessoal\")": "gastos sin signo (se invierten)",
    "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Outros gastos\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 4.417946,
-  "expSum": -17.295649,
-  "officialTotalRevenue": null,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
-  "verificacion": {}
+  "revSum": 4.777955,
+  "expSum": -16.93564,
+  "officialTotalRevenue": 4.777955,
+  "officialTotalExpenses": 16.93564,
+  "officialPAT": -10.63916,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -10.63916,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 4.777955
+  }
  },
  "liga": {
   "valor": "pt-ligaportugal2",
@@ -1203,10 +1235,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 3,
-  "lineasIngreso": 12,
-  "lineasGasto": 29,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 13,
+  "lineasGasto": 28,
   "metaFilas": 3,
   "excluidas": 0
  }

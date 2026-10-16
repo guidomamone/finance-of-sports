@@ -334,6 +334,83 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Santa Clara".
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Santa Clara/relatorio-contas-sad-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Santa Clara/relatorio-contas-sad-2019-20.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Equipamento desportivo | pág. 45, ? 0.75 |
+| 2 | Merchandising | pág. 45, precedente |
+| 3 | Ingressos para jogos | pág. 45, precedente |
+| 4 | Cedência temporária atletas | pág. 45, Jev 0.94 |
+| 5 | Apostas desportivas Placard | pág. 45, precedente |
+| 6 | Publicidade | pág. 45, precedente |
+| 7 | Prémios de participação ( TaçaPort. E Liga) | pág. 45, Jev 1 |
+| 8 | Direitos televisivos | pág. 45, precedente |
+| 9 | Licença Electronic - konami | pág. 45, Jev 0.97 |
+| 10 | Portes vendas | pág. 45, ? 0.6 |
+| 11 | Diversos | pág. 45, precedente |
+| 12 | Direção Regional do Turismo | pág. 46, precedente |
+| 13 | Inst. Seg Social Layoff | pág. 46, Jev 0.97 |
+| 14 | RAA - Fundo Regional Emprego | pág. 46, Jev 0.98 |
+| 15 | Vice Presidencia Deslocações | pág. 46, Jev 0.9 |
+| 16 | Outros rendimentos | pág. 20, Jev 0.96 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 20, precedente |
+| 2 | Subcontratos | pág. 48, precedente |
+| 3 | Informatica | pág. 48, Jev 0.96 |
+| 4 | Publicidade | pág. 48, precedente |
+| 5 | Trabalhos especializados | pág. 48, precedente |
+| 6 | Vigilancia e Segurança | pág. 48, precedente |
+| 7 | Honorários | pág. 48, precedente |
+| 8 | Conservação e Reparação | pág. 48, precedente |
+| 9 | Part. Compet. Desportivas | pág. 48, Jev 1 |
+| 10 | Ferramentas e utensílios | pág. 48, Jev 1 |
+| 11 | Livros e documentação técnica | pág. 48, precedente |
+| 12 | Material escritorio | pág. 48, Jev 1 |
+| 13 | Artigos para oferta | pág. 48, precedente |
+| 14 | Outros relativos com a atividade | pág. 48, Jev 0.92 |
+| 15 | Energia e Fluidos | pág. 48, Jev 1 |
+| 16 | De atletas e pessoal | pág. 48, precedente |
+| 17 | Outras (ex. portagens, parques) | pág. 48, precedente |
+| 18 | Rendas e Alugueres | pág. 48, precedente |
+| 19 | Comunicação | pág. 48, precedente |
+| 20 | Seguros | pág. 48, precedente |
+| 21 | Contencioso e Notariado | pág. 48, precedente |
+| 22 | Limpeza, higiene e conforto | pág. 48, precedente |
+| 23 | Outros | pág. 48, precedente |
+| 24 | Remunerações órgãos sociais | pág. 49, Jev 1 |
+| 25 | Remunerações ao pessoal | pág. 49, precedente |
+| 26 | Acordo Revogação | pág. 49, precedente |
+| 27 | Encargos sobre remunerações | pág. 49, Jev 0.98 |
+| 28 | Seguro acidentes de trabalho e doenças | pág. 49, Jev 1 |
+| 29 | Outros gastos com pessoal | pág. 49, precedente |
+| 30 | Imparidades de dívidas a receber | pág. 20, precedente |
+| 31 | Outros gastos | pág. 20, Jev 0.95 |
+| 32 | Gastos/reversões de depreciação e de amortização | pág. 20, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2019–20 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Santa Clara".
+```
+
 ## Fuentes
 
 ### santaclara-pt-relatorio-contas-sad-2024-25
@@ -358,4 +435,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Santa Clara/relatorio-contas-sad-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### santaclara-pt-relatorio-contas-sad-2019-20
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Santa Clara/relatorio-contas-sad-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

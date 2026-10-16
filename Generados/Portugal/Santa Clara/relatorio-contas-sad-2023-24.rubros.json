@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.pdf",
   "club": "santaclara-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T23:54:38.726Z",
+  "generatedAt": "2026-10-16T00:30:34.140Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.071567
       ],
-      "glosa": "Entradas para partidos"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "Apostas Desportivas e Placard",
@@ -54,7 +54,7 @@
       "values": [
         0.065016
       ],
-      "glosa": "Premios por participación"
+      "glosa": "Premios de participación"
     },
     {
       "label": "Direitos Televisivos",
@@ -64,7 +64,7 @@
       "values": [
         0.45
       ],
-      "glosa": "Derechos audiovisuales"
+      "glosa": "Derechos de televisión"
     },
     {
       "label": "Cedência por Empréstimos Direitos Desportivos",
@@ -74,7 +74,7 @@
       "values": [
         0.32
       ],
-      "glosa": "Cesión temporal de derechos deportivos"
+      "glosa": "Cesión por préstamo de derechos deportivos"
     },
     {
       "label": "Diversos",
@@ -84,7 +84,7 @@
       "values": [
         0.001
       ],
-      "glosa": "Ingresos diversos"
+      "glosa": "Diversos"
     },
     {
       "label": "Subsídios à exploração",
@@ -114,7 +114,7 @@
       "values": [
         0.370993
       ],
-      "glosa": "Correcciones relativas a periodos anteriores"
+      "glosa": "Correcciones relativas a ejercicios anteriores"
     },
     {
       "label": "Outros",
@@ -128,13 +128,13 @@
     },
     {
       "label": "Juros e Outros Rendimentos Similares",
-      "lado": "expense",
+      "lado": "revenue",
       "page": 42,
-      "section": "nota que desglosa \"Outros rendimentos\"",
+      "section": "ajuste manual",
       "values": [
         0.360009
       ],
-      "glosa": "Intereses y otros ingresos financieros similares"
+      "glosa": "Intereses y otros ingresos similares"
     },
     {
       "label": "Custo das mercadorias vendidas e das matérias consumidas",
@@ -244,7 +244,7 @@
       "values": [
         1.036626
       ],
-      "glosa": "Cargas sociales sobre las remuneraciones"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguro Acidentes de Trabalho e Doenças",
@@ -274,7 +274,7 @@
       "values": [
         0.20227
       ],
-      "glosa": "Deterioro de créditos a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -284,7 +284,7 @@
       "values": [
         -0.060146
       ],
-      "glosa": "Provisiones (dotaciones/reversiones)"
+      "glosa": "Provisiones (aumentos/reducciones)"
     },
     {
       "label": "IMI",
@@ -294,7 +294,7 @@
       "values": [
         0.001014
       ],
-      "glosa": "Impuesto sobre Bienes Inmuebles (IMI)"
+      "glosa": "Impuesto sobre bienes inmuebles (IMI)"
     },
     {
       "label": "IUC",
@@ -304,7 +304,7 @@
       "values": [
         0.000574
       ],
-      "glosa": "Impuesto Único de Circulación (IUC)"
+      "glosa": "Impuesto sobre vehículos de tracción mecánica (IUC)"
     },
     {
       "label": "Imposto de Selo",
@@ -314,7 +314,7 @@
       "values": [
         0.149233
       ],
-      "glosa": "Impuesto de timbre"
+      "glosa": "Impuesto de transmisiones y actos jurídicos / timbre"
     },
     {
       "label": "Taxas",
@@ -334,7 +334,7 @@
       "values": [
         0.181499
       ],
-      "glosa": "Correcciones relativas a periodos anteriores"
+      "glosa": "Correcciones relativas a ejercicios anteriores"
     },
     {
       "label": "Donativos",
@@ -384,7 +384,7 @@
       "values": [
         0.0636
       ],
-      "glosa": "Gastos no justificados documentalmente"
+      "glosa": "Gastos no debidamente justificados"
     },
     {
       "label": "Juros de mora e compensatórios",

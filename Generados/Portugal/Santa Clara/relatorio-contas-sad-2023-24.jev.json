@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.md",
- "generatedAt": "2026-10-16T00:10:35.539Z",
- "rubrosHuella": "44e5b16e6a511b18677a71d2760263f49c0fadce",
+ "generatedAt": "2026-10-16T00:45:28.889Z",
+ "rubrosHuella": "626be0673f7a6f57de8a91e541659e068d8f6c81",
  "rubros": [
   {
    "label": "Merchandising",
@@ -76,6 +76,24 @@
    "desdeCache": true
   },
   {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 17,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Alienações de jogadores",
+   "lado": "revenue",
+   "page": 42,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
    "label": "Correções relativas a períodos anteriores",
    "lado": "expense",
    "page": 43,
@@ -112,6 +130,24 @@
    "desdeCache": true
   },
   {
+   "label": "Serviços Especializados",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Materiais",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
    "label": "Energia e Fluídos",
    "lado": "expense",
    "page": 41,
@@ -127,6 +163,15 @@
    "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
    "choice": "match_organisation_expense",
    "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços Diversos",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "other_expenses",
+   "confidence": 0.92,
    "desdeCache": true
   },
   {
@@ -256,6 +301,15 @@
    "desdeCache": true
   },
   {
+   "label": "Diferenças de câmbio desfavoráveis",
+   "lado": "expense",
+   "page": 43,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
    "label": "Multas e penalidades",
    "lado": "expense",
    "page": 43,
@@ -293,129 +347,14 @@
   },
   {
    "label": "Juros e Outros Rendimentos Similares",
-   "lado": "expense",
-   "page": 42,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "choice": "other_expenses",
-   "confidence": 0.97,
-   "top3": [
-    [
-     "other_expenses",
-     0.97
-    ],
-    [
-     "admin_general_expense",
-     0.03
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1021
-  },
-  {
-   "label": "Diferenças de câmbio desfavoráveis",
-   "lado": "expense",
-   "page": 43,
-   "section": "nota que desglosa \"Outros gastos\"",
-   "choice": "admin_general_expense",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.99
-    ],
-    [
-     "other_expenses",
-     0.01
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 990
-  },
-  {
-   "label": "Subsídios à exploração",
    "lado": "revenue",
-   "page": 17,
-   "section": "estado",
+   "page": 42,
+   "section": "ajuste manual",
    "choice": "other_income",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "other_income",
-     0.99
-    ],
-    [
-     "lump_football_operations",
-     0.01
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1063
-  },
-  {
-   "label": "Serviços Especializados",
-   "lado": "expense",
-   "page": 41,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "choice": "admin_general_expense",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.98
-    ],
-    [
-     "other_expenses",
-     0.02
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1019
-  },
-  {
-   "label": "Serviços Diversos",
-   "lado": "expense",
-   "page": 41,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "choice": "other_expenses",
-   "confidence": 0.92,
-   "top3": [
-    [
-     "other_expenses",
-     0.93
-    ],
-    [
-     "admin_general_expense",
-     0.07
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1014
-  },
-  {
-   "label": "Alienações de jogadores",
-   "lado": "revenue",
-   "page": 42,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "choice": "player_sales",
    "confidence": 1,
    "top3": [
     [
-     "player_sales",
+     "other_income",
      1
     ],
     [
@@ -427,30 +366,7 @@
      0
     ]
    ],
-   "tokens": 1042
-  },
-  {
-   "label": "Materiais",
-   "lado": "expense",
-   "page": 41,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "choice": "admin_general_expense",
-   "confidence": 0.88,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.89
-    ],
-    [
-     "other_expenses",
-     0.11
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1005
+   "tokens": 1034
   }
  ]
 }

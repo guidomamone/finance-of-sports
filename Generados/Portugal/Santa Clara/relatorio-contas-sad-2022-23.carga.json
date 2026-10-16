@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2022-23.pdf",
- "generado": "2026-10-16T00:11:54.993Z",
- "frena": [],
+ "generado": "2026-10-16T00:46:07.535Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "santaclara-pt ya tiene el ejercicio 2023 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['santaclara-pt-relatorio-contas-sad-2022-23'] ya existe"
+  }
+ ],
  "avisos": [
   "gastos: ningún total impreso igual a la suma de las líneas (-14.557093); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-06-30); pregunta en la cola (no frena)"
@@ -1578,8 +1591,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2022–23 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Santa Clara\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1619,13 +1632,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2022–23 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Santa Clara\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 12,
   "lineasGasto": 45,
   "metaFilas": 3,

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2022-23.pdf",
   "club": "santaclara-pt",
   "year": 2023,
-  "generatedAt": "2026-10-15T23:54:38.705Z",
+  "generatedAt": "2026-10-16T00:30:34.118Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.239985
       ],
-      "glosa": "Venta de entradas para partidos"
+      "glosa": "Taquilla y venta de entradas"
     },
     {
       "label": "Apostos desportivas e Placard",
@@ -54,7 +54,7 @@
       "values": [
         0.047398
       ],
-      "glosa": "Premios de participación"
+      "glosa": "Premios por participación"
     },
     {
       "label": "Direitos televisivos",
@@ -104,7 +104,7 @@
       "values": [
         0.05863
       ],
-      "glosa": "Compensación de gastos de desplazamientos"
+      "glosa": "Compensación de gastos de desplazamiento"
     },
     {
       "label": "UEFA Surplus",
@@ -144,7 +144,7 @@
       "values": [
         0.423635
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontratación"
     },
     {
       "label": "Trabalhos especializados",
@@ -174,7 +174,7 @@
       "values": [
         0.02574
       ],
-      "glosa": "Honorarios"
+      "glosa": "Honorarios profesionales"
     },
     {
       "label": "Conservação e reparação",
@@ -184,7 +184,7 @@
       "values": [
         0.025546
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Participação em competições",
@@ -244,7 +244,7 @@
       "values": [
         0.001139
       ],
-      "glosa": "Artículos promocionales y de regalo"
+      "glosa": "Artículos promocionales y obsequios"
     },
     {
       "label": "Equipamentos",
@@ -254,7 +254,7 @@
       "values": [
         0.010578
       ],
-      "glosa": "Equipamientos"
+      "glosa": "Equipamiento"
     },
     {
       "label": "Energia e fluidos",
@@ -304,7 +304,7 @@
       "values": [
         0.006704
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Contencioso e notariado",
@@ -354,7 +354,7 @@
       "values": [
         0.251032
       ],
-      "glosa": "Retribuciones a órganos de administración"
+      "glosa": "Retribuciones a los órganos de gobierno"
     },
     {
       "label": "Remunerações ao pessoal",
@@ -394,7 +394,7 @@
       "values": [
         1.010083
       ],
-      "glosa": "Seguro de accidentes de trabajo y enfermedades profesionales"
+      "glosa": "Seguro de accidentes de trabajo y enfermedades"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -434,7 +434,7 @@
       "values": [
         0.000103
       ],
-      "glosa": "Impuesto sobre Bienes Inmuebles (IMI)"
+      "glosa": "Impuesto sobre bienes inmuebles (IMI)"
     },
     {
       "label": "IUC",
@@ -444,7 +444,7 @@
       "values": [
         0.00016
       ],
-      "glosa": "Impuesto sobre Vehículos de Tracción Mecánica (IUC)"
+      "glosa": "Impuesto único de circulación (IUC)"
     },
     {
       "label": "Imposto de selo",
@@ -454,7 +454,7 @@
       "values": [
         0.00415
       ],
-      "glosa": "Impuesto de timbre"
+      "glosa": "Impuesto de transmisiones y actos jurídicos / timbre"
     },
     {
       "label": "Outros impostos indiretos",
@@ -484,7 +484,7 @@
       "values": [
         0.000016
       ],
-      "glosa": "Descuentos por pronto pago concedidos"
+      "glosa": "Descuentos sobre ventas por pronto pago"
     },
     {
       "label": "Perdas em inventários",
@@ -514,7 +514,7 @@
       "values": [
         0.099542
       ],
-      "glosa": "Correcciones relativas a ejercicios anteriores"
+      "glosa": "Ajustes de ejercicios anteriores"
     },
     {
       "label": "Quotizações",
@@ -574,7 +574,7 @@
       "values": [
         0.49653
       ],
-      "glosa": "Amortizaciones y depreciaciones (gastos/reversiones)"
+      "glosa": "Dotaciones/reversiones por amortización y deterioro"
     }
   ]
 }
