@@ -118,6 +118,104 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Porto".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Porto/relatorio-contas-consolidadas-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Porto/relatorio-contas-consolidadas-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas | pág. 95, Jev 0.91 |
+| 2 | Receitas associativas | pág. 95, Jev 1 |
+| 3 | Prémios competições europeias | pág. 95, Jev 1 |
+| 4 | Receita de bilheteira | pág. 95, precedente |
+| 5 | Receita de lugares anuais | pág. 95, precedente |
+| 6 | Outras receitas desportivas | pág. 95, precedente |
+| 7 | Publicidade | pág. 95, precedente |
+| 8 | Direitos de transmissões televisivas | pág. 95, Jev 1 |
+| 9 | Outros | pág. 95, precedente |
+| 10 | Subsídios à exploração | pág. 35, Jev 0.98 |
+| 11 | Compensação por utilização de jogadores ao serviço de seleções nacionais | pág. 98, Jev 0.95 |
+| 12 | Royalties | pág. 98, Jev 0.96 |
+| 13 | Rendimentos de propriedades de investimento | pág. 98, Jev 0.98 |
+| 14 | Imputação de subsídios para o investimento | pág. 98, Jev 1 |
+| 15 | Outros rendimentos suplementares | pág. 98, Jev 1 |
+| 16 | Correções relativas a exercícios anteriores | pág. 98, precedente |
+| 17 | Reembolsos de sinistros | pág. 98, Jev 1 |
+| 18 | Reembolsos de impostos | pág. 98, Jev 1 |
+| 19 | Transferências de atletas de outras modalidades | pág. 98, precedente |
+| 20 | Outros rendimentos e ganhos | pág. 98, Jev 0.97 |
+| 21 | Proveitos com alienações de passes de jogadores (i) | pág. 99, precedente |
+| 22 | Proveitos com empréstimos de jogadores | pág. 99, precedente |
+| 23 | Outros proveitos com jogadores | pág. 99, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 35, Jev 0.99 |
+| 2 | Trabalhos Especializados | pág. 96, precedente |
+| 3 | Subcontratos | pág. 96, precedente |
+| 4 | Rendas e Alugueres | pág. 96, precedente |
+| 5 | Direitos de imagem de atletas | pág. 96, precedente |
+| 6 | Vigilância e Segurança | pág. 96, precedente |
+| 7 | Conservação e reparação | pág. 96, precedente |
+| 8 | Publicidade e propaganda | pág. 96, precedente |
+| 9 | Despesas de organização | pág. 96, precedente |
+| 10 | Seguros | pág. 96, precedente |
+| 11 | Honorários | pág. 96, precedente |
+| 12 | Material Desportivo | pág. 96, precedente |
+| 13 | Comunicação | pág. 96, precedente |
+| 14 | Despesas de representação | pág. 96, precedente |
+| 15 | Limpeza, higiene e conforto | pág. 96, precedente |
+| 16 | Relvados | pág. 96, precedente |
+| 17 | Energia e Fluidos | pág. 96, Jev 1 |
+| 18 | Serviços de catering | pág. 96, precedente |
+| 19 | Outros fornecimentos e serviços | pág. 96, precedente |
+| 20 | Remunerações dos Órgãos Sociais | pág. 97, Jev 1 |
+| 21 | Remunerações de atletas e equipas técnicas | pág. 97, Jev 1 |
+| 22 | Remunerações do pessoal | pág. 97, precedente |
+| 23 | Benefícios pós-emprego | pág. 97, Jev 0.97 |
+| 24 | Indemnizações | pág. 97, precedente |
+| 25 | Encargos sobre remunerações | pág. 97, Jev 0.97 |
+| 26 | Seguros de acidentes de trabalho e doenças profissionais | pág. 97, Jev 1 |
+| 27 | Outros gastos com pessoal | pág. 97, precedente |
+| 28 | Imparidade de inventários (perdas / reversões) | pág. 35, Jev 1 |
+| 29 | Imparidade de dívidas a receber (perdas / reversões) | pág. 35, Jev 1 |
+| 30 | Provisões (aumentos / reduções) | pág. 35, Jev 0.97 |
+| 31 | Correções relativas a exercícios anteriores | pág. 98, Jev 1 |
+| 32 | Impostos | pág. 98, Jev 0.92 |
+| 33 | Penalizações Desportivas | pág. 98, Jev 0.93 |
+| 34 | Multas/Dividas Fiscais e não fiscais | pág. 98, precedente |
+| 35 | Gastos com transferências de atletas de outras modalidades | pág. 98, precedente |
+| 36 | Outros | pág. 98, Jev 1 |
+| 37 | Ativos fixos tangíveis | pág. 99, Jev 1 |
+| 38 | Propriedades de investimento | pág. 99, precedente |
+| 39 | Outros ativos intangíveis | pág. 99, Jev 1 |
+| 40 | Goodwill | pág. 99, Jev 0.99 |
+| 41 | Amortizações de passes de jogadores | pág. 99, precedente |
+| 42 | Perdas por imparidade com passes de jogadores | pág. 99, precedente |
+| 43 | Custos com alienações de passes de jogadores (ii) | pág. 99, precedente |
+| 44 | Custos com empréstimos de jogadores | pág. 99, precedente |
+| 45 | Outros custos com jogadores | pág. 99, precedente |
+| 46 | Resultados relativos a investimentos | pág. 35, Jev 0.99 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Porto".
+```
+
 ## 2021
 
 ### Ingresos
@@ -169,7 +267,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2016, 2017, 2018, 2019, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias
+tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2016, 2017, 2018, 2019, 2022, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias
 ```
 
 ### Liga
@@ -607,4 +705,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### porto-pt-relatorio-contas-consolidadas-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Porto/relatorio-contas-consolidadas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

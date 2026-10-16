@@ -62,3 +62,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2019 desde `Clubes/Portugal/Porto/relatorio-contas-consolidadas-2018-19.pdf` (sourceId `porto-pt-relatorio-contas-consolidadas-2018-19`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2021 desde `Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.pdf` (sourceId `porto-pt-relatorio-contas-consolidadas-2020-21`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Porto/relatorio-contas-consolidadas-2021-22.pdf` (sourceId `porto-pt-relatorio-contas-consolidadas-2021-22`).
