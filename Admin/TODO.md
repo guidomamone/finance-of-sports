@@ -121,6 +121,8 @@ llegue acá.
        con confianza alta y no fue a la cola: Moreirense 2022 (4,10 M) y 2025 (8,00 M) se publicaron mal y se corrigieron con ajustes
        `categoria`. Además, el ajuste compara la etiqueta con el asterisco de la nota ("...financeiros*") aunque la carga lo muestra sin él.
        Escalón posible: leer la nota al pie de la fila (como "la nota de la fila" de caja-deuda) antes de categorizar.
+       Mismo problema con un "Outros" cuyo detalle está en el texto bajo la tabla (Mafra 2023-24 y Marítimo 2024-25, lote 81): casos y
+       medición en n).
     i) En la lectura 5 de `verificar.mjs`, un ajuste `fila` con `reemplaza` no alcanza una fila que entra DESPUÉS, al abrir un renglón con
        su nota ("nota exacta en la lectura 5"); y los ajustes `fila` sin `reemplaza` no entran. Vitória 2022 SAD: las cinco sub-rubricas de
        "Prestação de serviços" (nota 16, L1905-1909) no llegaban a la carga (TV 6,92 M en 0) y, con `reemplaza "Prestação de serviços"`, la
