@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Leixoes/Relatorio-de-Gestao-e-Contas-2024-2025.pdf",
   "club": "leixoes",
   "year": 2025,
-  "generatedAt": "2026-10-16T02:25:06.549Z",
+  "generatedAt": "2026-10-16T02:44:08.143Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,7 +44,7 @@
       "values": [
         0.0204
       ],
-      "glosa": "Rendimientos y ganancias en inversiones"
+      "glosa": "Rendimientos y ganancias de inversiones"
     },
     {
       "label": "Outros",
@@ -64,7 +64,7 @@
       "values": [
         0.069045
       ],
-      "glosa": "Correcciones relativas a ejercicios anteriores"
+      "glosa": "Correcciones relativas a períodos anteriores"
     },
     {
       "label": "Distribuição de Lucros Placard",
@@ -74,7 +74,7 @@
       "values": [
         0.093611
       ],
-      "glosa": "Distribución de beneficios de Placard"
+      "glosa": "Distribución de beneficios Placard"
     },
     {
       "label": "Cedência desportiva de jogadores",
@@ -174,7 +174,7 @@
       "values": [
         0.359415
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Rentas y alquileres"
     },
     {
       "label": "Comunicação",
@@ -184,7 +184,7 @@
       "values": [
         0.010155
       ],
-      "glosa": "Comunicaciones"
+      "glosa": "Comunicación"
     },
     {
       "label": "Seguros",
@@ -274,7 +274,7 @@
       "values": [
         0.001812
       ],
-      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos a cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -304,7 +304,7 @@
       "values": [
         0.11103
       ],
-      "glosa": "Correcciones relativas a ejercicios anteriores"
+      "glosa": "Correcciones relativas a períodos anteriores"
     },
     {
       "label": "Outros não especificados",
@@ -354,7 +354,7 @@
       "values": [
         0.013419
       ],
-      "glosa": "Equipamiento básico"
+      "glosa": "Equipo básico"
     },
     {
       "label": "Equipamento de Transporte",
@@ -404,7 +404,7 @@
       "values": [
         0.205924
       ],
-      "glosa": "Plantilla deportiva"
+      "glosa": "Plantilla"
     },
     {
       "label": "Imparidade de activos depreciáveis / amortizáveis (perdas/reversões)",
@@ -414,7 +414,7 @@
       "values": [
         0
       ],
-      "glosa": "Deterioro de activos depreciables/amortizables (pérdidas/reversiones)"
+      "glosa": "Deterioro de activos depreciables / amortizables (pérdidas/reversiones)"
     }
   ]
 }

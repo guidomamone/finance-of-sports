@@ -1,22 +1,13 @@
 {
  "pdf": "Clubes/Portugal/Leixoes/Relatorio-de-Gestao-e-Contas-2024-2025.pdf",
- "generado": "2026-10-16T02:33:29.801Z",
+ "generado": "2026-10-16T02:49:45.103Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (leixoes-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "7 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Venda de Bens\" -> sponsorship_commercial 0.5; \"Rendimentos e Ganhos em Investimento\" -> other_income 0.5; \"Direitos de Formação\" -> youth_football 0.55; \"Jogos On-line\" -> other_income 0.75; \"Indeminizações\" -> wages_squad 0.45"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
-  "\"Cuotas sociales\" en 0: real en este documento (lo presenta una SAD/SDUQ, solo fútbol profesional: Clubes/Portugal/Leixoes/Relatorio-de-Gestao-e-Contas-2024-2025.md L13 \"FUTEBOL, SAD\"; to-do 237 y)",
   "gastos: ningún total impreso igual a la suma de las líneas (-6.933258); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
@@ -32,13 +23,13 @@
     "amountNative": 0.001471,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Prestação de Serviços",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "lump_football_operations",
     "amountNative": 0.776457,
     "disclosureLevel": "aggregated",
     "_pag": 17,
@@ -62,9 +53,9 @@
     "amountNative": 0.0204,
     "disclosureLevel": "aggregated",
     "_pag": 19,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -108,13 +99,13 @@
    },
    {
     "rawLabel": "Direitos de Formação",
-    "normalizedCategory": "youth_football",
+    "normalizedCategory": "player_sales",
     "amountNative": 0.014504,
     "disclosureLevel": "aggregated",
     "_pag": 19,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Empréstimo de Jogadores",
@@ -132,9 +123,9 @@
     "amountNative": 0.262672,
     "disclosureLevel": "aggregated",
     "_pag": 19,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -254,9 +245,9 @@
     "amountNative": -0.015426,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Encargos Sociais",
@@ -264,9 +255,9 @@
     "amountNative": -0.34795,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Seguros de Ac. Trabalho",
@@ -304,9 +295,9 @@
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Impostos",
@@ -463,6 +454,14 @@
      "value": -0.059565
     }
    ],
+   "sinDesglose": [
+    {
+     "renglon": "Prestação de Serviços",
+     "lado": "revenue",
+     "importe": 0.776457,
+     "motivo": "precedente del país: 1 clubes (Oliveirense), nota:vendas e servicos prestados · Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense."
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 2.758322,
@@ -505,11 +504,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 0.001471,
    "cat": "sponsorship_commercial",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "revenue",
    "amountNative": 0.001471
   },
@@ -520,12 +519,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
    "signoFijo": 0.776457,
-   "cat": "other_income",
+   "cat": "lump_football_operations",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "precedente del país: 1 clubes (Oliveirense), nota:vendas e servicos prestados · Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
+   "notaGuido": "precedente del país: 1 clubes (Oliveirense), nota:vendas e servicos prestados · Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.",
    "destino": "revenue",
    "amountNative": 0.776457
   },
@@ -552,11 +551,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.0204,
    "cat": "other_income",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "revenue",
    "amountNative": 0.0204
   },
@@ -631,12 +630,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.014504,
-   "cat": "youth_football",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): derechos de formación cobrados. [L858]",
    "destino": "revenue",
    "amountNative": 0.014504
   },
@@ -663,11 +662,11 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.262672,
    "cat": "other_income",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "revenue",
    "amountNative": 0.262672
   },
@@ -846,11 +845,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
    "signoFijo": 0.015426,
    "cat": "wages_squad",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "expense",
    "amountNative": -0.015426
   },
@@ -862,11 +861,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
    "signoFijo": 0.34795,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "expense",
    "amountNative": -0.34795
   },
@@ -923,11 +922,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0,
    "cat": "other_amortisation",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "expense",
    "amountNative": 0
   },
@@ -1160,16 +1159,6 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
@@ -1256,7 +1245,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 11,
   "lineasGasto": 30,
   "metaFilas": 3,

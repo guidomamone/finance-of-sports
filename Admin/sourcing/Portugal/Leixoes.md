@@ -14,3 +14,5 @@
 - Todo descubierto con Exa y bajado del sitio del club. Revisar a qué entidad corresponde cada PDF (SAD vs clube) antes de cargar.
 - Relatório e Contas consolidados 2022/23, 2023/24 y 2024/25. La SAD tiene sitio propio (`leixoessad.pt`).
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Leixoes/Relatorio-de-Gestao-e-Contas-2024-2025.pdf` (sourceId `leixoes-pt-relatorio-de-gestao-e-contas-2024-2025`).
