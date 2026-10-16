@@ -36,7 +36,9 @@ que dice `ESTADO.md` era verdad ese día.
 - verificar.mjs: la duda del cuadro de inventarios se cierra sola si la identidad da exacta y la carga no usa el cuadro (v). Medido: 375
   idénticos; con la cola vacía, 7 dudas menos (todas con la respuesta que ya tenían). o (escala por el año anterior) a HALLAZGOS: 2 de 12
   respuestas la contradecían.
-- Paridad PTE en el año vecino a HALLAZGOS: el documento de 2001 de Sporting también está en escudos; lo que falta es Sporting 2001 (TODO 165 b0).
+- verificar.mjs: el chequeo del año vecino compara un documento en moneda legado (ajuste `moneda` con `euroFijo`) con uno en euros a la
+  paridad fija (paridad PTE). Medido: 384 de 385 idénticos; Sporting 2001 pasa a OK (6.419,453 M PTE / 200,482 = 32,02 M EUR, como 2002).
+- Sporting 2001: ajustes anio, cierre, moneda PTE y fx (PTE@2001-07-31 en FX_CLOSE).
 - lote.mjs, cargar-lote.mjs y pipeline.mjs: texto nuevo de la terminal, aprobado por Guido (pasos 1/5 a 5/5, "Aviso (no frena)", ensayo con
   el costo total, la cola sin pedirle nada a Guido) (r). Solo salida.
 - Lotes 86 y 87: Felgueiras 2021-22 y Benfica 2007-08 cargados; caja de Felgueiras 2022-2024. Listas 80, 86 y 87 al archivo.

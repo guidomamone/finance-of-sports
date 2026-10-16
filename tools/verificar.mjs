@@ -50,6 +50,8 @@ const { loadSite, parseNumber } = await import('./datos-sitio.mjs');
 process.argv = argvAntes;
 
 const ROOT = resolve(import.meta.dirname, '..');
+// Monedas legado con paridad fija al euro (PTE, ITL...: `euroFijo` en data/currency-map.js). Las usa el escalón de paridad del año vecino.
+const EURO_FIJO = (() => { try { return Object.fromEntries([...readFileSync(resolve(ROOT, 'data', 'currency-map.js'), 'utf8').matchAll(/^\s*([A-Z]{3}):\s*\{[^}\n]*euroFijo:\s*([\d.]+)/gm)].map((m) => [m[1], Number(m[2])])); } catch { return {}; } })();
 const ARGS = process.argv.slice(2);
 const flag = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
 const MULT = { unidades: 1e-6, miles: 1e-3, millones: 1 };
@@ -572,12 +574,22 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // COMPUERTA DEL ESCALÓN 0 (Versión 416, escalera aprobada por Guido el 2026-10-02): la columna del año en común ("año anterior", la mía o
     // la del siguiente) tiene que existir: alguna fila del estado la trae leída. Si no, "no se puede comparar" (null), como sin vecino. Caso:
     // Novorizontino 2014 y 2015, balancetes de una sola columna: se comparaba 0 contra 1.060.016 y mandaba un falso "no coincide" a la cola.
+    // (to-do 237, paridad PTE) ESCALÓN 3: UN DOCUMENTO EN MONEDA LEGADO Y EL OTRO EN EUROS. Sporting 2001 (miles de escudos, ajuste `moneda`
+    // PTE) contra la columna 2001 del documento 2002 (euros): 6.419,453 M PTE contra 32,02 M EUR; con la paridad fija, 6.419,453 / 200,482 =
+    // 32,02. COMPUERTA: solo uno de los dos tiene ajuste `moneda` y esa moneda tiene `euroFijo` en data/currency-map.js; con la conversión,
+    // la misma del escalón 0 (2%). Dos documentos en la misma moneda nunca pasan por acá.
+    let paridad = null;
+    if (!(suyo && cerca(mio, suyo, 0.02))) {
+      const mA = ajusteDe(pdf, 'moneda')?.valor || null; const mB = ajusteDe(V2.otro.pdf, 'moneda')?.valor || null;
+      const fA = mA && !mB ? EURO_FIJO[mA] : null; const fB = mB && !mA ? EURO_FIJO[mB] : null;
+      if (fA || fB) { const m3 = fA ? mio / fA : mio; const s3 = fB ? suyo / fB : suyo; if (s3 && cerca(m3, s3, 0.02)) { mio = m3; suyo = s3; paridad = mA || mB; } }
+    }
     const conAnterior = (A) => A.estado.some((f) => f.lado === 'ingreso' && f.A != null && isFinite(f.A) && f.A);
     if (!conAnterior(campoMio === 'A' ? Amio : V2.A2)) return { mio, suyo, ok: null, sinColumna: true };
     // (to-do 170) uno de los dos documentos cuenta la gestión de jugadores NETA como ingreso (escalón "gestión de jugadores neta") y el otro no: no
     // definen "ingresos" igual, no se pueden comparar. Caso: Roma 2017 (254.076 con la neta) contra la columna 2017 del documento 2018 (175.000, sin ella).
     if (!!ventanaMio !== !!V2.ventana2) return { mio, suyo, ok: null, otroRegimen: true };
-    return { mio, suyo, ok: suyo ? cerca(mio, suyo, 0.02) : null };
+    return { mio, suyo, ok: suyo ? cerca(mio, suyo, 0.02) : null, paridad };
   };
   const vecinosDoc = [[1, vecinoDe(1)], [-1, vecinoDe(-1)]].filter(([, v]) => v);
 
@@ -1208,11 +1220,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // (el documento vecino y su escala: vecinoDe(), arriba, junto a la escalera de escala)
   for (const [dy, v] of vecinosDoc) {
     const { otro } = v;
-    const { mio, suyo, ok, sinColumna, otroRegimen } = compararVecino(dy, v, kEsc, E.nivel, escalonSubRep, escalonVentanaOtros, E.ing, escalonAcum || (escalonOtrosRes ? 'otros-resultado' : false));
+    const { mio, suyo, ok, sinColumna, otroRegimen, paridad } = compararVecino(dy, v, kEsc, E.nivel, escalonSubRep, escalonVentanaOtros, E.ing, escalonAcum || (escalonOtrosRes ? 'otros-resultado' : false));
     vecinos.push(ok);
     if (otroRegimen) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no` }); continue; }
     if (sinColumna) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} no trae la columna del año anterior` }); continue; }
-    chequeos.push({ nombre: `documento del año ${year + dy}`, ok, detalle: `ingresos de ${dy === 1 ? year : year - 1}: ${r6(dy === 1 ? mio : suyo)} en ${dy === 1 ? 'este documento' : otro.pdf.split('/').pop()} y ${r6(dy === 1 ? suyo : mio)} en ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} (columna del año anterior)` });
+    chequeos.push({ nombre: `documento del año ${year + dy}`, ok, detalle: `${paridad ? `en euros, con la paridad fija de ${paridad} (1 EUR = ${EURO_FIJO[paridad]}): ` : ''}ingresos de ${dy === 1 ? year : year - 1}: ${r6(dy === 1 ? mio : suyo)} en ${dy === 1 ? 'este documento' : otro.pdf.split('/').pop()} y ${r6(dy === 1 ? suyo : mio)} en ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} (columna del año anterior)` });
     // (to-do 232 m, aprobado por Guido el 2026-10-14) PRESENTACIÓN DISTINTA: la diferencia es exactamente UNA fila de GASTO (no un total) de
     // uno de los dos documentos: uno la presenta y el otro la netea. Casos: Olympiacos 2020 (82,46 M bruto) contra la columna anterior de 2021
     // (74,81 M neto): "Δαπάνες πώλησης/λύσεις συμβολαίων ποδοσφαιριστών" 7.645.064,67; Cuiabá 2022 y 2023, "(-) Deduções das receitas" (bruto

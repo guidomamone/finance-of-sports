@@ -47,9 +47,8 @@ con los que no están en los pasos de arriba.
     b0) PORTUGAL, CARGADO SALVO LO QUE ESPERA SCRIPTS (al 2026-10-16). Qué hay en el sitio: Admin/ESTADO-clubes.md (lotes 76 y 79-83;
        los 32 clubes con documento tienen al menos un año). Falta solo lo que espera una mejora de script:
        - Benfica 2014-15 (237 q, en HALLAZGOS).
-       - Sporting 2001 (relatorio-contas-2000.pdf, en miles de escudos): la verificación no cierra (2 casos en la cola: ingresos 18.526
-         contra el total impreso 6.653), el nombre del archivo lo hace pasar por 2000 (nombreNoCoincide, cierre 2001-07-31) y le falta el
-         ajuste `moneda` PTE, como Sporting 2000.
+       - Sporting 2001 (relatorio-contas-2000.pdf, miles de escudos): ajustes anio, cierre, moneda y fx puestos y la verificación cierra con
+         la paridad PTE (lote 88).
        - Gil Vicente: 2024 se cargó (o se carga) con el consolidado de la Associação (único documento del año) y el resto con la SDUQ.
        Reglas que salieron de Portugal (en CONVENCIONES-DATOS o en las respuestas de la cola): qué entidad se carga cuando el fútbol está
        en una SAD; "Outros" toma la categoría del bloque; cuadros de inventario y de bruto a neto afuera; palcos y cativos a stadium_other;
@@ -104,9 +103,9 @@ con los que no están en los pasos de arriba.
     Mejoras de script vistas en Grecia: to-do 232.
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
-    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, r, aa, q (POC y q1/q2), k, w, am, l (vecino sin
+    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, r, paridad PTE, aa, q (POC y q1/q2), k, w, am, l (vecino sin
     descartados), ah, af+s, ai+ak, z, g y la letra nueva an (verificar no reescribe el .rubros.json igual, glosar no vuelve a pagar). Pasaron a
-    Admin/HALLAZGOS-pipeline.md: o, paridad PTE, b, c, h, i, j, l (primera parte), m, p, u, x, ae, aj y Benfica 2014-15. Guido dejó al para después.
+    Admin/HALLAZGOS-pipeline.md: o, b, c, h, i, j, l (primera parte), m, p, u, x, ae, aj y Benfica 2014-15. Guido dejó al para después.
     Cómo medir cada letra: verificar -> node tools/medir-verificar.mjs --lista Admin/lotes/prueba-completa.txt --salida <x> --pasadas 2
     (antes con --script <copia de la versión vieja dentro de tools/>) y --comparar; cargar -> node tools/medir-cargar.mjs --salida <x>
     (paralelo, ~1,5 min) y --comparar, después git checkout -- Admin/registros/categorias-aprendidas.jsonl; auditoría -> node tools/audit.js.

@@ -401,6 +401,8 @@ Mitigaciones:
  COLA HUMANA (escala, perímetro, cuadro de otro año, fila ilegible, "otro" y las propuestas "no" siempre llegan: medido el 2026-10-09,
             un tercio de esas dudas terminó corregido, así que son preguntas legítimas)
 ```
+- Año vecino en otra moneda: si solo uno de los dos documentos tiene ajuste `moneda` con paridad fija al euro (PTE, ITL), se compara en
+  euros a esa paridad (to-do 237, paridad PTE; Sporting 2001 contra la columna 2001 del documento 2002).
 - g) Sin fecha de cierre detectada: se deduce si el documento anterior y el siguiente del club cierran el mismo día (con aviso).
 - h) **Compuerta del registro** (deja el documento "listo" para categorizar): exige confirmados solo los números de los bloques que usa la
   lectura que cerró (las filas que se cargan); un número de una nota que no se carga no frena (Versión 457). Marca `listo-para-jev`:
