@@ -107,6 +107,37 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
 Defectos medidos que hoy no afectan ningún dato publicado ni frenan nada. Cada uno dice cuándo se retoma; si pasa, vuelve a `Admin/TODO.md`.
 Salieron del TODO el 2026-10-15 (pedido de Guido: hacían ruido en la lista).
 
+Del to-do 237 (diagnóstico por subagentes Sonnet, 2026-10-16):
+- 237 b) Un renglón que junta amortización de pases y depreciación (Moreirense 2022 y 2025) se carga entero a la parte mayor; la parte chica
+  es menos del 3% de los gastos. Retomar: otro club con la parte menor de más del 10% de los gastos.
+- 237 c) El perfil del club (socios, otros deportes) es por club y no por entidad o ejercicio (Rio Ave). Retomar: un reintento por 0 en
+  cuotas o deportes que se dispare (o no) mal en el año de otra entidad del mismo club.
+- 237 h) La venta de jugadores en "Outros rendimentos" con nota al pie (Moreirense): ya cargado como player_sales con ajustes. Retomar: un
+  segundo club con nota al pie que cambie la categoría de una fila de más del 5% de los ingresos.
+- 237 i y j) Un ajuste `fila` con `reemplaza` no alcanza una fila que entra después al abrir la nota en la lectura 5 (Vitória 2022 SAD), y
+  un renglón corregido por ajuste ya no se abre con su nota (Alverca 2024). Hay workaround (reemplazar el renglón por sus partes).
+  Retomar: un tercer caso donde ese workaround no sirva.
+- 237 l, primera parte) verificar.mjs toma el valor absoluto de un ajuste `fila` en la lectura base: una reversión de gasto (Rio Ave 2024)
+  va como ajuste de ingreso con valor positivo (mismo efecto). Retomar: un documento donde la reversión no se pueda pasar al ingreso.
+- 237 m) La cola repite preguntas por año: el cierre en cadena del to-do 232 d ya las cierra con una respuesta, y 42 grupos de Portugal
+  tienen respuestas distintas entre años (no se puede contestar por club). Retomar: la cola de categoría pasa de ~100 casos repetidos.
+- 237 p) La etapa 8 preguntando el perímetro con ajuste manual fue una carrera de tiempos (la cola se abrió 5 minutos antes del ajuste);
+  el código ya usa el ajuste como escalón 0. Retomar: un caso de perímetro creado después de que exista el ajuste.
+- 237 u) Un informe partido en varios PDF (Boavista 2023-24) se resolvió con 3 ajustes `fila`. Retomar: otro año frenado por una nota que
+  está en otra parte del informe.
+- 237 x) Buscar con la aritmética del estado el dígito mal leído (Santa Clara 2024-25, 12 cifras) es M y riesgo medio para un solo
+  documento. Retomar: un segundo escaneo con 5 o más cifras mal leídas sin el cierre ya resuelto.
+- 237 ae) Notas como imagen sin transcribir (Porto 2020-21): el año cierra con el estado, faltan solo detalles. Retomar: un año frenado o
+  con un renglón grande sin desglose por una tabla en imagen (primero detectar y marcar el .md, no transcribir).
+- 237 aj) El id del club en la revisión del alta distinto del de alta-club.mjs: 0 daño hoy (la revisión ya tiene la línea con el id de la
+  carpeta). Retomar: un alta frenada por "sin color elegido" teniendo la revisión en la carpeta (buscarla por `carpeta`).
+- 237 q, resto) Benfica 2014-15: una fila sin lado después del resultado ("ACIONISTAS DA EMPRESA-MÃE") contada como ingreso y una nota de
+  PROVISÕES con el signo del resultado; probar una regla de signo de nota rompía Vitória Guimarães 2021-22. Retomar: un segundo documento
+  con nota de signo contrario (mientras tanto, `resultado-final` y ajustes `fila` a mano).
+- Etiquetado `perimetro` de las dudas de localizar y extraer: la IA lo usa para preguntas de inventarios, imparidad o notas que difieren
+  del estado (Rio Ave, Famalicão, Santa Clara, Torreense). Sin daño (se contestan igual). Retomar: si una regla empieza a contestar
+  dudas por su tema.
+
 - 232 k) Una respuesta "no" de la cola a una duda de importe ("¿se carga X del estado y no Y de la nota?", Olympiacos 2023 caso 446850a)
   no cambia nada: la verificación siguió con el importe del estado y hubo que agregar un ajuste `fila` a mano. Que esa respuesta
   aplique sola el importe de la nota (es lo que la pregunta ofrece), con la misma compuerta de cierre.

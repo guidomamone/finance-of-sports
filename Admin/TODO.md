@@ -105,17 +105,49 @@ con los que no están en los pasos de arriba.
     Mejoras de script vistas en Grecia: to-do 232.
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
+    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707): aa, q (POC y q1/q2), k, w, am, l (vecino sin
+    descartados), ah, af+s, ai+ak y la letra nueva an (verificar no reescribe el .rubros.json igual, glosar no vuelve a pagar). Pasaron a
+    Admin/HALLAZGOS-pipeline.md: b, c, h, i, j, l (primera parte), m, p, u, x, ae, aj y Benfica 2014-15. Guido dejó al para después.
+    Cómo medir cada letra: verificar -> node tools/medir-verificar.mjs --lista Admin/lotes/prueba-completa.txt --salida <x> --pasadas 2
+    (antes con --script <copia de la versión vieja dentro de tools/>) y --comparar; cargar -> node tools/medir-cargar.mjs --salida <x>
+    (paralelo, ~1,5 min) y --comparar, después git checkout -- Admin/registros/categorias-aprendidas.jsonl; auditoría -> node tools/audit.js.
+    PENDIENTES, con el diseño que dejaron los diagnósticos (subagentes Sonnet; ok de Guido para codear todas salvo al), en este orden:
+    - z (S): verificar.mjs, bucle de V.noConfirmados (~L1134): saltear el número si hay ajuste `confirmado` con la misma línea y valor
+      (la compuerta que ya usa avisarRegistro, ~L1628). Medir: medir-verificar.
+    - g (S): cargar.mjs ~L704, el aviso de las tres categorías del estadio: `every` -> `some` en incluidoEn. Medir: medir-cargar.
+    - ad (S-M): cola.mjs ~L269-271, el cierre en cadena de un `aceptar` solo cierra casos con la MISMA categoriaPropuesta; cargar.mjs ~L562,
+      un `aceptar` de otro documento solo decide si la fila de este tiene la misma propuesta. Daño silencioso hoy en ~12 grupos (Fortaleza
+      "auxilio de transporte", Goiás "servicos de terceiros", Avaí "viagens e hospedagens", Ferroviária "aluguel"). Medir: medir-cargar
+      (lo que cambia pasa a la cola; revisar uno por uno).
+    - n (S-M): cargar.mjs ~L470 y ~L611: etiqueta genérica de lista cerrada (Outros/Outras/Otros/Others/Altri) con propuesta = la genérica
+      de su lado (other_income/other_expenses) cuenta como aceptable sin cola. Backtest: 47 de 48 respuestas de Portugal coinciden. La rama
+      `repetida` (etiqueta bajo dos notas) aparte, con la categoría del bloque.
+    - f (M): cargar.mjs ~L620-633: una respuesta de la cola con categoría del OTRO lado hoy no voltea la fila. Pasada 2 solo si ninguna
+      lectura cierra: voltear esas filas como el ajuste `categoria`; compuerta resultado impreso exacto. No-regresión: Tondela 2020-21,
+      Chaves 2022-23 y Cuiabá 2024 (ahí el lado del documento estaba mal y NO hay que voltear). Objetivo: los 8 ajustes `categoria` de
+      Nacional, Académica, Benfica 2006-07 y Sporting 2001-2006 sobran.
+    - d (S): cargar-lote.mjs revertirAlta (~L117): después del git checkout, `git clean -fdq -- data fuentes` (el árbol arranca limpio).
+    - t (S): cargar-lote.mjs ~L50: antes de decidir el alta, `node tools/alta-club.mjs --todos --solo "<país>/<club>"` (gratis) y recargar.
+    - e (S-M): audit.js ~L405: `escala-implausible` baja a P3 si otro ejercicio del club a 2 años o menos está dentro de la banda y a menos
+      de 20x. Destraba Felgueiras 2021-22 (además tiene "Outros gastos" en la cola) y sobran los audit-ignore de Alverca 2022 y
+      Novorizontino 2015. Medir: audit.js antes y después.
+    - ab (M): cargar.mjs ~L314-320, junto al "primer ejercicio": compuerta "cadena de cierres": cierre anterior + meses = este cierre y el
+      siguiente cierra 12 meses después (Benfica: 2007-07-31 + 11 = 2008-06-30, siguiente 2009-06-30). El freno de reportType de Benfica
+      2007-08 va con un ajuste `reportType` (no tocar alta-club). Medir: medir-cargar.
+    - a + ac (M, riesgo medio): periodo.mjs ~L195-229, "par de encabezado" (fila de tabla con fechas f y f-1 año y celdas sin dígitos;
+      fechas de 2 dígitos solo ahí). Prototipo de un subagente: 23 de 3.220 cambian; 4 regresiones a decidir (Slavia 2002, Trabzonspor
+      intermedio, Almagro 2019, Aris acta). Variante a medir: no sustituir cuando el cierre de títulos sale de una frase de período
+      ("findo em", "ended", "do 1.1. a 30.6"). Si no pasa limpio, a HALLAZGOS.
+    - v + o (S/M): verificar.mjs, bloque de dudas (~L1296-1390): la identidad de inventario (inicial + compras - final = CMV del estado,
+      exacta) contesta sola la duda del cuadro de inventarios; una duda de escala con propuesta "sí" se cierra sola si el chequeo "año
+      anterior cargado" dio ok. Medir contra los ~14 casos ya contestados.
+    - Paridad PTE en el año vecino (S): el chequeo de vecinos compara Sporting 2000 (miles de escudos) con la columna 2000 de 2001 (EUR);
+      con la paridad fija (200,482) coinciden. Destraba Sporting 2000 (ver también el freno "PTE y el club en EUR" de cargar).
+    - r (S): textos de la terminal del lote (numeración de etapas, "DE VERDAD", "OJO", "?" en el resumen); mostrarle el texto a Guido antes.
     a) `periodo.mjs` tomó la FECHA DE FIRMA como cierre: Alverca 2022-23 quedó con cierre 2023-09-29 ("Alverca, 29 de Setembro de 2023",
        relatorio-contas-2022-23.md L75 y L108) cuando el documento dice "Período findo em 30 de Junho de 2023" (L87) y las columnas
        "30/06/2023 | 30/06/2022" (L93). Se resolvió con un ajuste `cierre`. Escalón posible: una fecha precedida por un nombre de lugar
        ("<Ciudad>, <día> de <mes> de <año>") es la firma, no el cierre; y el "período findo em" o la fecha de las columnas del estado manda.
-    b) Un renglón del estado que JUNTA amortización de pases y depreciación ("Gastos/reversões de depreciação e amortização", notas 4 y 5)
-       va entero a una sola categoría. Moreirense 2022: pases 1.031.142,16 (L720) + depreciación 89.555,61 (L691) = 1.120.697,77 (L498);
-       2025: 612.126 (L944) + 291.735 (L895) = 903.861 (L530). Se cargó entero como player_amortisation (la parte mayor, como PAOK).
-       Escalón posible: si las notas que el renglón cita dan cada parte y suman exacto el renglón, abrirlo en dos filas con su categoría.
-    c) El perfil (socios, otros deportes) es por club, pero un mismo club publica como entidades distintas: Rio Ave 2014-15 es el club
-       asociación (cuotas 217.671,75 y futsal), 2015-16 a 2022-23 la SDUQ y 2023-24 en adelante la SAD. Se contestó "no" (SDUQ/SAD); no
-       cambia nada hoy porque 2014-15 trae las cifras. Pensar si el perfil va por entidad o por ejercicio.
     d) `cargar-lote.mjs`: cuando un año de un club nuevo no se escribe y el alta se revierte, quedan los archivos NUEVOS del alta sin
        borrar (Alverca: data/pt/alverca-pt-data.js y data/club-leagues/pt.js, sin trackear). El alta siguiente de la misma corrida (Rio Ave
        2018, que estaba listo) frena por "cambios sin commitear en el sitio" y también se revierte. Se borraron a mano y Rio Ave 2018 entró.
@@ -130,36 +162,6 @@ con los que no están en los pasos de arriba.
     g) El aviso "Estadio en 0" pide que las TRES categorías del estadio (matchday_competition, stadium_other, season_tickets) tengan
        ajuste `incluye`; con la de entradas alcanza para decir que el estadio está dentro de otra línea. Moreirense 2022 y 2025 llevan los
        tres ajustes.
-    h) Formato portugués (SNC): la venta de jugadores viene en "Outros rendimentos" como "Rendimentos em investimentos não financeiros", con
-       una nota al pie que lo dice ("Inclui ... alienação de direitos desportivos de jogadores"). La categorización la puso en other_income
-       con confianza alta y no fue a la cola: Moreirense 2022 (4,10 M) y 2025 (8,00 M) se publicaron mal y se corrigieron con ajustes
-       `categoria`. Además, el ajuste compara la etiqueta con el asterisco de la nota ("...financeiros*") aunque la carga lo muestra sin él.
-       Escalón posible: leer la nota al pie de la fila (como "la nota de la fila" de caja-deuda) antes de categorizar.
-       Mismo problema con un "Outros" cuyo detalle está en el texto bajo la tabla (Mafra 2023-24 y Marítimo 2024-25, lote 81): casos y
-       medición en n).
-    i) En la lectura 5 de `verificar.mjs`, un ajuste `fila` con `reemplaza` no alcanza una fila que entra DESPUÉS, al abrir un renglón con
-       su nota ("nota exacta en la lectura 5"); y los ajustes `fila` sin `reemplaza` no entran. Vitória 2022 SAD: las cinco sub-rubricas de
-       "Prestação de serviços" (nota 16, L1905-1909) no llegaban a la carga (TV 6,92 M en 0) y, con `reemplaza "Prestação de serviços"`, la
-       fila madre no salía (ingresos 34,02 contra 23,49). Se resolvió reemplazando el renglón del ESTADO ("Vendas e serviços prestados", L590)
-       por sus seis partes. Escalón posible: aplicar `reemplaza` también a las filas que abre la nota, y avisar cuando un ajuste no entra.
-    j) Un ajuste `fila` que corrige el OCR de un renglón del estado (Alverca 2024, "Outros rendimentos" 522.591,60 -> 622.591,65) deja de
-       abrirse con su nota: la venta de jugadores (581.500, nota 17.2.3) quedaba en other_income dentro del renglón. Se resolvió con una
-       fila por línea de la nota. Escalón posible: que el renglón corregido por ajuste siga pasando por la apertura con su nota.
-    k) Cuando el .md pierde TODOS los signos de una tabla escaneada (Rio Ave 2024, pág. 14), los intereses obtenidos se suman como costo
-       (financiero 0,317495 en vez del neto −0,085703) y las reversiones de imparidad sin "-" quedan como gasto. Se resolvió con ajustes
-       `fila` mirando la imagen. Escalón posible: que la lectura con signos pruebe el financiero por etiqueta ("obtidos"/"suportados").
-    l) `cargar.mjs` toma el valor ABSOLUTO de un ajuste `fila` de gasto con valor negativo (una reversión), aunque `verificar.mjs` cierra con
-       el signo: Rio Ave 2024, reversiones de imparidad −4,89 y −2.500,00 como gasto; verificar cerraba y la carga quedaba 5.011 € arriba en
-       gastos (tie-out). Se pasaron al lado del ingreso con valor positivo (mismo efecto). Escalón posible: que cargar respete el signo del
-       ajuste como lo hace la lectura "signo del documento" (to-do 200). Además, el chequeo del año vecino compara con documentos que están en
-       documentos-descartados.txt (Vitória 2021 contra el 2021-22 de la asociación; Rio Ave 2016 contra el 2014-15): tendría que saltearlos.
-
-    m) LA COLA SE LLENA DE PREGUNTAS REPETIDAS (lote 77: 617 casos de Portugal en 145 documentos; pedido de Guido: "son muuuchas
-       preguntas en cola"). Medido: de 298 preguntas de categoría, solo 156 son de club + etiqueta distinta (casi la mitad repite la
-       misma etiqueta del mismo club en otro año: "Bilheteira e Bilhetes de Época" de Sporting sale en 7 años con la misma propuesta).
-       Escalón posible: preguntar UNA vez por club + etiqueta + categoría propuesta y aplicar la respuesta a todos los años del lote
-       (hoy el precedente del club recién existe cuando el primer año se carga, y en un club nuevo ninguno está cargado). Compuerta: la
-       misma, pero el precedente vale desde la respuesta y no desde la carga. A medir con la cola actual de Portugal.
     n) "Outros" Y ETIQUETAS GENÉRICAS CON CONFIANZA 0 (23 preguntas en Portugal). Si la fila genérica cae dentro de un bloque con nombre
        (p. ej. "Outros" bajo "Rendimentos suplementares"), el bloque decide la categoría; hoy sale 0 y va a la cola. A diseñar con 2-3
        casos reales. Medido el 2026-10-15 en toda la cola (preguntas de categoría con etiqueta genérica Outros/Otros/Others/Altri...):
@@ -170,48 +172,16 @@ con los que no están en los pasos de arriba.
     o) VERIFICAR (186 casos en Portugal): 64 dudas de extraer, 39 dudas de tema (escala, cuadro), 32 que no cierran, 24 de localizar,
        14 de año vecino, 10 de primer año. Mirar antes de diseñar si las dudas de escala ("¿en euros y no en miles?") y las filas
        informativas debajo del total se repiten por club y se pueden contestar una vez por club, como en m).
-    p) LA ETAPA 8 PREGUNTA EL PERÍMETRO AUNQUE HAYA AJUSTE MANUAL DEL CLUB (lote 78: Benfica 2019 y Boavista 2024 llegaron a la cola con
-       "¿se carga CONSOLIDADO?" teniendo el ajuste `perimetro` del club, y en Boavista la propuesta era la contraria al ajuste). El ajuste
-       es el escalón 0: si existe, la pregunta no debería abrirse.
-    q) SUBTOTALES CONTADOS COMO FILAS: lo del POC (totales (A)-(G) que acumulan y juros en positivo en las dos columnas) está resuelto con
-       el escalón "acumulados" de verificar.mjs (Benfica 2005-06 y 2006-07, Sporting 1999, 2001 y 2002-03 a 2006-07 cierran el resultado
-       exacto). Quedan, cada uno con su propio defecto, por diagnosticar: Sporting 2000 (las líneas suman 18.526 y el total impreso dice
-       6.653: otra estructura o escala), Sporting 2008-09 y 2009-10 (IFRS: el resultado no cierra; el total impreso excluye la
-       amortización de pases), Benfica 2014-15 (un total sin rótulo, L2624, y 48 líneas de notas fuera de él). Los 9 que cierran todavía
-       tienen dudas de localizar y extraer en la cola (cuadros del informe de gestión) y Sporting 1999 y 2001 el año vecino contra 2000:
-       las respuestas del subagente están sin aplicar en Admin/registros/cola-borradores/sporting-1999-2010.jsonl.
     r) EL COPY DE LA TERMINAL QUEDÓ VIEJO (pedido de Guido, 2026-10-15). "(DE VERDAD)", "ENSAYO", los "OJO:" y la mayoría de los mensajes
        de pipeline.mjs y lote.mjs no terminan de explicar qué está pasando ni qué tiene que hacer Guido. Repasar la salida de las dos
        tools con un lote real y proponerle el texto nuevo (solo salida, no lógica) antes de tocarlo.
-    s) --reintentar VUELVE A LOCALIZAR Y ABRE PREGUNTAS NUEVAS (lote 79, 2026-10-15: con la cola ya contestada, Porto, Santa Clara y
-       Benfica 2018-19 se volvieron a localizar y extraer, se pagó de nuevo (US$ 1,46) y salieron 5 dudas nuevas de localizar y extraer;
-       Sporting 2024-25 frena solo por "faltan-datos" en el registro de altas: correr `node tools/alta-club.mjs --todos`). Un reintento
-       por "cola contestada" debería volver a verificar sin pagar localizar/extraer.
     t) EL ALTA FRENA POR "faltan-datos" AUNQUE YA ESTÉ LISTA (lote 79, dos veces: Sporting en la primera corrida; Porto, Braga y Benfica
        en la tercera). Correr `node tools/alta-club.mjs --todos` a mano las dejó "listas para alta" sin cambiar nada más. Escalón posible:
        que `cargar-lote.mjs` recalcule el registro de altas de los clubes de su lista antes de decidir, en vez de leer el estado viejo.
-    u) UN INFORME PARTIDO EN VARIOS PDF PIERDE LAS NOTAS (Boavista 2023-24: RCSAD-23-24_1-3/2-3/3-3). El lote lee solo la parte 1 (el
-       estado) y "Vendas e serviços prestados" 4.424.268,14 iba a la cola como fútbol sin desglosar, cuando la nota 22 de la parte 2
-       (RCSAD-23-24_2-3.md L1146-1149) lo abre en entradas, TV y publicidad. Se resolvió con tres ajustes `fila`. Escalón posible: que
-       localizar busque las notas en las otras partes del mismo ejercicio (mismo prefijo de archivo) cuando la parte del estado no las trae.
     v) EL CUADRO DE INVENTARIOS ABRE DUDAS EN CADA CLUB (lote 79: Porto b102, Santa Clara b20, Braga b38). "Apuramento do custo das
        mercadorias vendidas" (inicial + compras − final = CMV) no es un desglose aditivo; sumar sus filas descuadra (Santa Clara 633.981
        contra 378.448) y cada club genera 2 preguntas con la misma respuesta: queda afuera y se carga el renglón del estado. Escalón
        posible: reconocer el cuadro (filas "inicial/final" + "compras" cuyo cálculo da el renglón) y no ofrecerlo como desglose.
-    w) UNA FILA DE UNA NOTA DE INGRESOS QUEDA COMO GASTO (Santa Clara 2024-25: "Juros e Outros Rendimentos Similares" 33.375,18 está en la
-       nota 10.2 "Outros Rendimentos", L1041, pero se extrajo como gasto −33.375; el resultado no cerraba por el doble, 66.756). Se resolvió
-       con un ajuste `fila` en ingresos. Escalón posible: que el lado de cada fila de una nota salga del renglón del estado que la nota
-       abre, no de la palabra "juros".
-       Más casos (lote 82): Marítimo 2023 "Juros" 598.818 y 2024 "Juros" 9.060 (nota Outros rendimentos); Paços de Ferreira 2022
-       "Diferenças de câmbio favoráveis" 28.199 (además la categorización la sacó con no_es_rubro). Todos con ajuste `fila` en ingresos.
-       Además se repitió en Santa Clara 2023-24 ("Juros e Outros Rendimentos Similares" 360.009 como gasto; ajuste `fila`).
-       Y en el lote 81: Marítimo 2024-25 ("Juros" 112.880 de Outros rendimentos) y Nacional 2024-25 ("Correções relativas a períodos
-       anteriores" 113.202, nota 15.2): las dos como gasto, resueltas con ajuste `fila`. Ya son 5 casos: vale la pena el escalón de w).
-    x) EN UN ESCANEO, LA ARITMÉTICA DEL ESTADO ENCUENTRA LOS DÍGITOS MAL LEÍDOS (Santa Clara 2024-25: 26 números sin confirmar; armando
-       las dos columnas del estado de arriba hacia abajo y de abajo hacia arriba desde el resultado impreso aparecieron 12 cifras mal
-       leídas, p. ej. imparidad 236.595,04 → 236.995,04, que arrastraba los subtotales; se corrigió el .md y se confirmaron 29 números con
-       ajustes). Escalón posible: antes de mandar números sin confirmar a la cola, probar qué cambio de UN dígito en una fila hace cerrar
-       todos los subtotales y el resultado (compuerta: cierre al céntimo), y proponerlo con la imagen recortada.
     z) UN NÚMERO CONFIRMADO CON AJUSTE VUELVE A LA COLA (Santa Clara 2024-25, L1542 "40 646": tenía el ajuste `confirmado` y la corrida
        siguiente abrió el caso "numero-no-confirmado" 306c291 igual). Mirar si el ajuste se pierde cuando el .md cambia de versión.
     ab) EL EJERCICIO DE 11 MESES POR CAMBIO DE CIERRE SE CARGA (decisión de Guido, 2026-10-15; regla en CONVENCIONES-DATOS). cargar.mjs frena
@@ -228,69 +198,12 @@ con los que no están en los pasos de arriba.
        tenía propuesta match_organisation_expense en 2021-2024 y admin_general_expense en 2025; `cola.mjs --responder 36c73ff aceptar` cerró
        los otros 4 años, incluido 2025 con SU propuesta). Se corrigió respondiendo 2025 después. Escalón posible: que el cierre en cadena
        copie la CATEGORÍA de la respuesta, no la decisión "aceptar", o que no cierre los años cuya propuesta es otra.
-    ae) NOTAS COMO IMAGEN SIN TRANSCRIBIR (Porto 2020-21: las notas 27 Rédito, 31 Outros gastos y 32 Depreciação quedaron como el nombre de
-       la imagen, img-48/img-52, sin la tabla). El año se cargó con los renglones del estado (cierra), pero sin el detalle de esas notas.
-       Escalón posible: que la validación de la etapa 2 marque un .md con referencias a imágenes de tablas y transcriba esas páginas.
-    af) EL LOTE NO VUELVE A VERIFICAR CUANDO LLEGA UNA RESPUESTA (lote 80: Sporting 2007-08 y Benfica 2019-20 tenían sus 4 casos contestados,
-       pero `lote.mjs` solo verifica los documentos recién extraídos y siguió frenando "4 casos pendientes" con la verificación vieja). Se
-       destrabó con `node tools/verificar.mjs "<pdf>" --rubros` a mano (gratis). Escalón posible: que la etapa 6 del lote también tome los
-       documentos cuya verificación es anterior a la última respuesta de la cola para ese PDF (ver s).
-       OJO (2026-10-15, intento revertido): verificar.mjs escribe siempre, así que en esa corrida el documento NO llegó a la etapa 6 (salió
-       del bucle de las etapas 3-5 por otro camino que no se pudo ver: la salida estaba truncada). Sumarlo a la etapa 6 "si hay respuesta
-       posterior" es un parche con riesgo: re-verificaría con filas viejas un documento que esa corrida decidió dejar afuera (sin estado,
-       falta fijar el cierre). Primero encontrar la causa: la próxima vez, el RESUMEN DEL LOTE dice el estado de ese PDF.
-       CONTEXTO PARA BUSCAR LA CAUSA (pedido de Guido, 2026-10-15):
-       - Hechos: lote 80, cuarta corrida (2026-10-16 ~01:20 UTC, con --ejecutar --cargar). Sporting 2007-08 y Benfica 2019-20 tenían sus 4 casos
-         contestados a las 00:21-00:22 UTC; sus .verificacion.json quedaron con generado 2026-10-15T23:54 (no se reescribieron) y la etapa 8
-         frenó "[filas] 4 casos pendientes". verificar.mjs escribe el .verificacion.json SIEMPRE (L1518) y verificarLista no tiene caché:
-         esos dos PDF no llegaron a la etapa 6, o sea que en el bucle de las etapas 3-5 de lote.mjs NO quedaron en estado 'extraído'.
-       - En los ENSAYOS de esa misma lista los dos imprimían "estado bN · digital · N filas" (llegaban a 'extraído'): la diferencia está en
-         algo que solo corre con --ejecutar.
-       - Caminos del bucle que hacen continue antes de 'extraído' y corren distinto con --ejecutar (empezar por acá): el escalón 1a de la
-         etapa 2 si el registro dice e.estado 'sin-verificar' o 'revisar' (resolver-inventario.mjs --ejecutar cambia el registro y el
-         documento puede seguir por otra rama); el rearmado con el texto propio (paginasARearmar y rearmar: con --ejecutar y sin
-         --reintentar hace continue); "falta fijar el cierre o el perímetro" (aFijar); validar o extraer con error.
-       - Cómo reproducirlo sin gastar mucho: una lista con solo ese PDF, contestar un caso suyo y correr el lote con --ejecutar (sin --cargar);
-         mirar su línea en "=== RESUMEN DEL LOTE ===" (dice el estado final) y si aparece en "=== Etapa 6 ===". Comparar el campo estado de
-         ese PDF en transcripciones-estado.jsonl antes y después.
-       - Una vez encontrada la rama: que deje el documento en 'extraído' si sus derivados están al día, o que la etapa 6 lo tome con una
-         compuerta que excluya lo que la corrida decidió dejar afuera (sin estado, falta fijar). Medir con prueba-completa.
-    ai) RELOCALIZAR NO REHACE LA EXTRACCIÓN (lote 81: Nacional 2021-22 con ajuste `cierre 2022-06-30`; se borró su .ubicacion.json, el lote
-       volvió a localizar y eligió bien la columna "30-jun-22", pero reusó el .filas.json del 15/10 19:55, extraído con la columna 2021: la
-       verificación quedó con el año 2021 e ingresos 8,74 M en vez de 3,31 M). Se destrabó sacando también el .filas.json. Escalón posible:
-       que extraer.mjs dé por vieja la extracción si el .ubicacion.json es posterior (o si cambió la columna del ejercicio). Riesgo si no:
-       cargar un año con la columna comparativa de otro documento.
-    aj) EL ID DEL CLUB EN LA REVISIÓN DEL ALTA NO COINCIDE CON EL QUE ARMA alta-club.mjs (lote 81: la revisión tenía pacos-pt y udleiria-pt;
-       alta-club.mjs arma pacosdeferreira-pt y uniaodeleiria-pt desde la carpeta, y cargar-lote.mjs busca el color por clubId: los dos
-       habrían frenado "sin color elegido"). Se resolvió agregando la revisión con el id de la carpeta. Escalón posible: que la revisión se
-       cruce por carpeta (campo `carpeta`, que ya tiene) además de por clubId, o que alta-club.mjs avise cuando la revisión usa otro id.
-    ak) CORREGIR EL .md NO REHACE LA VALIDACIÓN EN EL LOTE (lote 81: se corrigieron cifras en AVS 2023-24 L534 y Casa Pia 2024-25 L1125; la
-       segunda corrida no rehízo la etapa 4 y cargar.mjs frenó "la etapa 4 es de una versión anterior del .md: correr el lote", que es lo que
-       se acababa de hacer). Causa probable: el lote decide rehacer por `cache-al-dia.mjs` (huella o cada fila en su línea: una cifra
-       cambiada deja las líneas iguales -> "al día"), y cargar.mjs mira la fecha del .validacion.json contra la del .md. Dos compuertas
-       distintas para lo mismo. Se destrabó sacando los .validacion.json. Escalón posible: una sola compuerta (la del lote, que use también
-       el mdSha1 que ya guarda el .validacion.json).
     al) EL ANEXO EN FORMATO UEFA ABRE LAS VENTAS Y NADIE LO USA (Mafra 2023-24, "Contas Anuais ED*-1", .md L1437-1483: bilheteira, patrocínios,
        TV, merchandising, competições y otros = 1.275.143,83, exacto con Vendas e serviços prestados; el lote pedía un reintento pago por TV y
        estadio en 0). Se cargó con ajustes `fila`. Portimonense 2024-25 trae algo parecido en el informe de gestión. Escalón posible: que
        localizar ofrezca ese anexo como desglose de Vendas cuando su suma da el renglón (compuerta: suma exacta).
        Más casos (lote 84): Sporting 2002 a 2007, cuadro de gestión de los proveitos (columna de resultados reales, mismo total que
        el estado): cargado con 45 ajustes `fila` (TV, taquilla, abonos, cuotas, sponsors, royalties, UEFA y un resto).
-    am) EL RESULTADO IMPRESO SE TOMA SIN SIGNO (lote 82: AVS 2023-24 lo lee de L613 "3 041 302,19 € -", con el menos al final; Portimonense
-       2022-23 de L1101, que no trae signo; los dos son pérdidas y el estado (L513 y L1036) lo dice). verificar.mjs dio OK y la propuesta de
-       carga frenó por tie-out-resultado. Se resolvió con ajustes `resultado-final`. Escalón posible: con varios candidatos al resultado
-       que coinciden en valor absoluto, tomar el signo del que lo imprime explícito (el estado). Ojo de proceso: la re-verificación a mano
-       (`verificar.mjs --rubros`) no anticipa estos frenos ni los de f y w; antes de pasar el comando del lote conviene el ensayo de
-       `cargar.mjs --desde-verificacion` de cada documento.
-    ah) `medir-cargar.mjs` NO SE PUEDE ACOTAR (2026-10-15, medición de la 237 y: ~6 min por corrida, dos corridas, sobre los ~570 documentos con
-       categorías de todos los países, cuando el cambio solo actúa en Clubes/Portugal/). Escalón posible: `--lista <archivo>` y `--dir <carpeta>`
-       para medir solo lo que el cambio puede tocar; la corrida completa queda para los cambios que afectan a todos (escalera de categorías).
-       CAUSA DE LA LENTITUD (mirado): lanza `node tools/cargar.mjs <pdf>` como proceso nuevo por cada documento y en serie (execFileSync,
-       L49); cada uno arranca Node y relee el sitio entero y los registros grandes (cola, ajustes, inventario): ~0,6 s × 570. Escalones, de
-       menos a más riesgo: (1) en paralelo, un pool de ~8 procesos (la Mac tiene 10 núcleos) con una copia de la cola por proceso, sin tocar
-       la lógica: ~6 min -> ~1 min; (2) un solo proceso que llame a `proponer()` (ya exportada) con el sitio y los registros leídos una vez,
-       cuidando sus efectos al costado (agregarCaso, categorias-aprendidas): compuerta, que --comparar dé idéntico contra la versión de
-       procesos. Una base de datos no lo resuelve (el costo es arrancar y releer, no consultar) y suma infraestructura a un sitio estático.
 238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
    sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
    (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
