@@ -15,7 +15,7 @@
 // Sin .filas.json (todavía no se extrajo) no hay nada que mirar: al día (lo que había antes).
 // ============================================================================
 
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 import { derivado } from './rutas.mjs';
@@ -46,4 +46,33 @@ export function cacheAlDia(mdRel) {
   if (!fuera.length) return { alDia: true, escalon: 1, detalle: `las ${filas.length} filas siguen en su línea` };
   const ej = fuera[0];
   return { alDia: false, escalon: null, detalle: `el .md cambió desde extraer: ${fuera.length} de ${filas.length} filas fuera de su línea (ej. "${String(ej.etiqueta).slice(0, 40)}" ${ej.actual}, citada en L${ej.linea})` };
+}
+
+// (to-do 237 ak) ¿La validación (etapa 4) es de esta versión del .md? Por su huella mdSha1 si la tiene; si no, por fecha (generado >= mtime
+// del .md). Una cifra corregida a mano en el .md que no es de ninguna fila extraída deja cacheAlDia() "al día" (las filas siguen en su
+// línea) pero la validación quedaba vieja y cargar.mjs frenaba ("la etapa 4 es de una versión anterior del .md"; AVS y Casa Pia, lote 81;
+// UC 2009). Lo usan lote.mjs (rehace SOLO validar) y cargar.mjs (la misma compuerta, así un `touch` sin cambios ya no frena).
+export function validacionAlDia(mdRel) {
+  const pv = resolve(ROOT, derivado(mdRel, '.validacion.json', { crear: false }));
+  if (!existsSync(pv) || !existsSync(resolve(ROOT, mdRel))) return true;
+  let V; try { V = JSON.parse(readFileSync(pv, 'utf8')); } catch { return true; }
+  if (V.mdSha1) return V.mdSha1 === shaMd(mdRel);
+  return !!V.generado && new Date(V.generado).getTime() >= statSync(resolve(ROOT, mdRel)).mtimeMs;
+}
+
+// (to-do 237 ai) Huella de lo que localizar eligió y de lo que extraer usa: bloques elegidos (con sus líneas), columnas, escala y perímetro.
+export function huellaUbicacion(ub) {
+  if (!ub) return null;
+  const ids = [...new Set([...(ub.estado || []), ...(ub.notas_ingresos || []), ...(ub.notas_gastos || [])])].sort();
+  return createHash('sha1').update(JSON.stringify({ sin_estado: !!ub.sin_estado, estado: ub.estado || [], ni: ub.notas_ingresos || [], ng: ub.notas_gastos || [],
+    bloques: ids.map((id) => [id, ub.bloques?.[id] ?? null]), escala: ub.escala ?? null, ce: ub.columna_ejercicio ?? null, ca: ub.columna_anterior ?? null, per: ub.perimetro ?? null })).digest('hex');
+}
+// ¿Las filas (.filas.json) son de la localización vigente? Por la huella guardada al extraer; un .filas.json viejo sin huella, por fecha.
+// Relocalizar sin rehacer la extracción dejaba las filas de la columna vieja (Nacional 2021-22, lote 81: columna comparativa de otro año).
+export function ubicacionAlDia(mdRel) {
+  const pf = resolve(ROOT, derivado(mdRel, '.filas.json', { crear: false })); const pu = resolve(ROOT, derivado(mdRel, '.ubicacion.json', { crear: false }));
+  if (!existsSync(pf) || !existsSync(pu)) return true;
+  let X, U; try { X = JSON.parse(readFileSync(pf, 'utf8')); U = JSON.parse(readFileSync(pu, 'utf8')); } catch { return true; }
+  if (X.ubicacionSha1) return X.ubicacionSha1 === huellaUbicacion(U);
+  return !(U.generado && X.generado && new Date(U.generado).getTime() > new Date(X.generado).getTime());
 }

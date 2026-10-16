@@ -46,7 +46,7 @@ const { verificarLista } = await import('./verificar.mjs');
 const { ajusteDe, ajustePerimetroDe } = await import('./ajustes.mjs');
 const { loadSite } = await import('./datos-sitio.mjs');
 const { faltaAntesDeLocalizar } = await import('./antes-de-localizar.mjs');
-const { cacheAlDia } = await import('./cache-al-dia.mjs');
+const { cacheAlDia, validacionAlDia, ubicacionAlDia } = await import('./cache-al-dia.mjs');
 const { gastoPorDocumento, lineasGasto } = await import('./gasto-doc.mjs');
 process.argv = argvAntes;
 
@@ -359,8 +359,14 @@ for (const pdf of docs) {
   }
   // En el ensayo, validar y extraer TAMBIÉN van en ensayo (hasta la Versión 326 iban con ejecutar: true fijo: con localizar ya hecho, el
   // ensayo llamaba a extraer de verdad y gastaba). validar en un PDF digital es gratis y corre igual; en un escaneo estima.
-  const V = await validar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo }); usd += (EJECUTAR ? anotarValidar(pdf, V) : V.costo) || V.usd || 0;
-  const X = await extraer(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo, reintento });
+  // (to-do 237 ai y ak) Las filas se rehacen si son de otra localización (relocalizar cambió columna, bloques o escala) y la validación si es
+  // de otra versión del .md (una cifra corregida a mano). Un año cargado no se toca. Lo mismo deciden cargar.mjs (validación) y extraer (huella).
+  const ubVieja = !cargado && !REHACER && !reintento && !cacheViejo && !ubicacionAlDia(e.md);
+  const valVieja = !cargado && !REHACER && !reintento && !cacheViejo && !validacionAlDia(e.md);
+  if (ubVieja) console.log(`  ${pdf}: las filas son de otra localización: se rehacen validar y extraer`);
+  else if (valVieja) console.log(`  ${pdf}: la validación es de otra versión del .md: se rehace validar (no localizar ni extraer)`);
+  const V = await validar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo || ubVieja || valVieja }); usd += (EJECUTAR ? anotarValidar(pdf, V) : V.costo) || V.usd || 0;
+  const X = await extraer(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo || ubVieja, reintento });
   if (X.ensayo) { usd += X.usd; console.log(`  ${pdf}: localizar ya hecho · extraer ~US$ ${X.usd.toFixed(3)} (estimado)`); continue; }
   usd += X.costo || 0;
   if (X.error) { estado[pdf] = `extraer: ${X.error}`; continue; }

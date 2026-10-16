@@ -100,6 +100,7 @@ import vm from 'node:vm';
 import { archivosData, rutaData } from './data-clubes.js';
 import { TOCA_UNA_CARGA } from './rutas.mjs';
 import { parseNumber } from './datos-sitio.mjs';
+import { validacionAlDia } from './cache-al-dia.mjs'; // (to-do 237 ak)
 
 // Los módulos que se reusan leen process.argv al importarse (alta-club.mjs: --escribir activa ANOTAR_MISSES y --anio fuerza el año;
 // proponer-carga.mjs: --tabla, --limit, --club...). Las opciones de ESTE comando no son las de ellos: se les pasa un argv limpio.
@@ -262,7 +263,7 @@ function porQueNoListo(e) {
   const val = leer('.validacion.json');
   if (!val) return 'la etapa 6 cerró, pero no hay .validacion.json (etapa 4): correr el lote';
   // Misma condición que avisarRegistro(): una validación anterior al .md es de otra versión del .md (UC 2009: .md del 04/10, validación del 01/10).
-  if (!val.generado || new Date(val.generado).getTime() < statSync(resolve(ROOT, e.md)).mtimeMs) return 'la etapa 6 cerró, pero la etapa 4 (validar-bloques.mjs) es de una versión anterior del .md: correr el lote';
+  if (!validacionAlDia(e.md)) return 'la etapa 6 cerró, pero la etapa 4 (validar-bloques.mjs) es de una versión anterior del .md: correr el lote'; // (to-do 237 ak) misma compuerta que lote.mjs: huella del .md, o fecha si no la tiene
   const nc = (val.noConfirmados || []).length;
   if (nc) return `la etapa 6 cerró, pero la etapa 4 dejó hasta ${nc} número(s) sin confirmar (${derivado(e.md, '.validacion.json', { crear: false })}, "noConfirmados"; ver to-do 160)`;
   return 'la etapa 6 cerró y la etapa 4 no deja números sin confirmar, pero el registro no se actualizó: correr el lote (la marca solo la pone el lote, ver to-do 160)';

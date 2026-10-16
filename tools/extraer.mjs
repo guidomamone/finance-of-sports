@@ -31,7 +31,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { ajusteDe } from './ajustes.mjs';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
-import { shaMd } from './cache-al-dia.mjs'; // (Versión 445) huella del .md con el que se hizo el caché
+import { shaMd, huellaUbicacion } from './cache-al-dia.mjs'; // (Versión 445) huella del .md con el que se hizo el caché; (237 ai) y de la ubicación
 import { llamarClaude, tokensDe, usdEstimado, MODELO } from './claude-llamada.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -141,7 +141,7 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
     r = { ...r, costo: (r.costo || 0) + costo0 };
   }
   if (r.error) return { error: r.error, costo: r.costo };
-  const datos = { pdf, md, mdSha1: shaMd(md), modelo: MODELO, generado: new Date().toISOString(), ubicacion: { estado: ub.estado, notas_ingresos: ub.notas_ingresos, notas_gastos: ub.notas_gastos }, ...r.datos };
+  const datos = { pdf, md, mdSha1: shaMd(md), ubicacionSha1: huellaUbicacion(ub), modelo: MODELO, generado: new Date().toISOString(), ubicacion: { estado: ub.estado, notas_ingresos: ub.notas_ingresos, notas_gastos: ub.notas_gastos }, ...r.datos }; // ubicacionSha1: to-do 237 ai (cache-al-dia.mjs, ubicacionAlDia)
   writeFileSync(out, JSON.stringify(datos, null, 1));
   return { hecho: true, archivo: out, datos, costo: r.costo };
 }
