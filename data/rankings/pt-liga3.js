@@ -29,6 +29,9 @@ window.RANKINGS["pt-liga3"] = {
       { id:"uniaodeleiria-pt", revenue:0.667, reportType:"official_balance_sheet",
         sourceId:"uniaodeleiria-pt-relatorio-contas-udl-sad-2022-2023",
         mix:[["Comercial / Sponsors",0.045],["Fútbol profesional (sin desglosar por la fuente)",0.604],["Otros ingresos",0.018]] },
+      { id:"felgueiras-pt", revenue:0.214, reportType:"official_balance_sheet",
+        sourceId:"felgueiras-pt-fecho-contas-2022-2023",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.195],["Otros ingresos",0.019]] },
     ],
   },
   2022: {

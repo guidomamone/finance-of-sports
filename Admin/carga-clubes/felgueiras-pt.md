@@ -81,6 +81,57 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-16): pt-liga3, verificado contra roster cacheado de "2023–24 Liga 3 (Portugal)" (tools/club-league-reference/pt.json), coincidencia exacta "Felgueiras".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Felgueiras/Fecho-contas-2022-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas e serviços prestados | pág. 19, Jev 0.98 |
+| 2 | Subsídios à exploração | pág. 19, Jev 0.99 |
+| 3 | Outros rendimentos | pág. 19, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trabalhos especializados | pág. 36, Jev 0.98 |
+| 2 | Publicidade e propaganda | pág. 36, Jev 1 |
+| 3 | Vigilância e segurança | pág. 36, Jev 0.96 |
+| 4 | Honorários | pág. 36, Jev 1 |
+| 5 | Outros | pág. 36, precedente |
+| 6 | Ferramentas e utensílios de desgaste rápido | pág. 36, Jev 1 |
+| 7 | Material de escritório | pág. 36, Jev 1 |
+| 8 | Eletricidade | pág. 36, Jev 1 |
+| 9 | Água | pág. 36, Jev 1 |
+| 10 | Outros | pág. 36, precedente |
+| 11 | Deslocações e estadas | pág. 36, Jev 1 |
+| 12 | Transportes de mercadorias | pág. 36, precedente |
+| 13 | Serviços diversos | pág. 36, Jev 0.93 |
+| 14 | Gastos com o pessoal | pág. 19, Jev 0.95 |
+| 15 | Outros gastos | pág. 19, Jev 1 |
+| 16 | Gastos/reversões de depreciação e de amortização | pág. 19, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2023-06-30. periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fx = 0.9203. Claude 2026-10-16 (lote 82): las cotizaciones EUR/USD de L325 son de un párrafo sobre 2015 copiado en el informe, no del cierre. Cierre 30/06/2023: 1 EUR = 1,0866 USD (BCE), EUR por 1 USD = 0,9203, igual que Benfica 2022-23 y AC Milan 2022-23
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-liga3, verificado contra roster cacheado de "2022–23 Liga 3 (Portugal)" (tools/club-league-reference/pt.json), coincidencia única por palabras "Felgueiras 1932" = "Felgueiras".
+```
+
 ## Fuentes
 
 ### felgueiras-pt-demonstracoes-financeiras-individuais-epoca-2023-2024
@@ -89,4 +140,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Felgueiras/Demonstracoes-Financeiras-Individuais-Epoca-2023-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### felgueiras-pt-fecho-contas-2022-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.pdf",
- "generado": "2026-10-16T03:41:07.257Z",
- "frena": [
-  {
-   "etapa": "alta:fx",
-   "motivo": "El documento declara un tipo de cambio con el dólar (1.0898 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 0.7381 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 0.8562 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 1.0739 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\")). En EUR el número solo no dice el sentido: el sitio guarda \"EUR por 1 USD\" (~0.7-1.15); si el documento escribió \"USD por 1 EUR\" hay que invertirlo. ¿Cuál es el de CIERRE y en qué sentido está?"
-  },
-  {
-   "etapa": "fx",
-   "motivo": "sin tipo de cambio: el documento declara 4 valores de tipo de cambio a USD: 1.0898 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 0.7381 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 0.8562 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 1.0739 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\")"
-  }
- ],
+ "generado": "2026-10-16T03:51:53.403Z",
+ "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-06-30); pregunta en la cola (no frena)"
  ],
@@ -215,6 +206,8 @@
   ],
   "fiscalYearMeta": {
    "currency": "EUR",
+   "fx": 0.9203,
+   "fxSource": "manual",
    "sourceId": "felgueiras-pt-fecho-contas-2022-2023",
    "reportType": "official_balance_sheet",
    "gestionId": null,
@@ -277,6 +270,16 @@
    "evidencia": ".md L102 balanço em 30 de junho de 2023 (L303 dice 31 de dezembro por plantilla)",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.pdf",
+   "campo": "fx",
+   "valor": "0.9203",
+   "linea": null,
+   "motivo": "Claude 2026-10-16 (lote 82): las cotizaciones EUR/USD de L325 son de un párrafo sobre 2015 copiado en el informe, no del cierre. Cierre 30/06/2023: 1 EUR = 1,0866 USD (BCE), EUR por 1 USD = 0,9203, igual que Benfica 2022-23 y AC Milan 2022-23",
+   "evidencia": "Fecho-contas-2022-2023.md L325 (párrafo de 2015); Benfica relatorio-contas-2022-23-pos-AG.md L5326",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
  "seleccion": {
@@ -669,14 +672,9 @@
    "estado": "ok"
   },
   "fx": {
-   "valor": [
-    1.0898,
-    0.7381,
-    0.8562,
-    1.0739
-   ],
-   "fuente": "el documento declara 4 valores de tipo de cambio a USD: 1.0898 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 0.7381 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 0.8562 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 1.0739 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\")",
-   "estado": "pregunta"
+   "valor": 0.9203,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): Claude 2026-10-16 (lote 82): las cotizaciones EUR/USD de L325 son de un párrafo sobre 2015 copiado en el informe, no del cierre. Cierre 30/06/2023: 1 EUR = 1,0866 USD (BCE), EUR por 1 USD = 0,9203, igual que Benfica 2022-23 y AC Milan 2022-23",
+   "estado": "ok"
   },
   "sourceId": {
    "valor": "felgueiras-pt-fecho-contas-2022-2023",
@@ -690,8 +688,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 3,
   "lineasGasto": 16,
   "metaFilas": 2,

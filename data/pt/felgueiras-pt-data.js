@@ -4,6 +4,11 @@ const felgueirasptRevenueLinesByYear = {
     { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.009517, disclosureLevel:'aggregated' },
     { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Vendas e serviços prestados', normalizedCategory:'lump_football_operations', amountNative:0.179315, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.008297, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros rendimentos', normalizedCategory:'other_income', amountNative:0.009521, disclosureLevel:'aggregated' },
+  ],
 };
 const felgueirasptExpenseLinesByYear = {
   2024: [
@@ -14,6 +19,24 @@ const felgueirasptExpenseLinesByYear = {
     { rawLabel:'Outros gastos com pessoal', normalizedCategory:'wages_squad', amountNative:-0.099534, disclosureLevel:'aggregated' },
     { rawLabel:'Outros gastos', normalizedCategory:'other_expenses', amountNative:-0.001148, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.0028, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-0.051727, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade e propaganda', normalizedCategory:'admin_general_expense', amountNative:-0.000509, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.00153, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.002, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.015736, disclosureLevel:'aggregated' },
+    { rawLabel:'Ferramentas e utensílios de desgaste rápido', normalizedCategory:'admin_general_expense', amountNative:-0.019351, disclosureLevel:'aggregated' },
+    { rawLabel:'Material de escritório', normalizedCategory:'admin_general_expense', amountNative:-0.000932, disclosureLevel:'aggregated' },
+    { rawLabel:'Eletricidade', normalizedCategory:'admin_general_expense', amountNative:-0.00164, disclosureLevel:'aggregated' },
+    { rawLabel:'Água', normalizedCategory:'admin_general_expense', amountNative:-0.000007, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.000047, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e estadas', normalizedCategory:'match_organisation_expense', amountNative:-0.010869, disclosureLevel:'aggregated' },
+    { rawLabel:'Transportes de mercadorias', normalizedCategory:'admin_general_expense', amountNative:-0.007276, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços diversos', normalizedCategory:'other_expenses', amountNative:-0.189825, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos com o pessoal', normalizedCategory:'wages_squad', amountNative:-0.458634, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos', normalizedCategory:'other_expenses', amountNative:-0.000052, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.001175, disclosureLevel:'aggregated' },
   ],
 };
 const felgueirasptFiscalYearMeta = {
@@ -35,6 +58,23 @@ const felgueirasptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0.428353, officialTotalExpenses:1.163971, officialPAT:-0.732696,
   },
+  2023: {
+    currency:'EUR', fx:0.9203, fxSource:'manual',
+    sourceId:'felgueiras-pt-fecho-contas-2022-2023',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.000123, tax:-0.002884,
+    extraRows: [
+      {label:'Gasto líquido de financiamento', value:-0.000123},
+      {label:'Imposto sobre o rendimento do período', value:-0.002884},
+    ],
+    sinDesglose: [
+      {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.179315, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.197133, officialTotalExpenses:0.76131, officialPAT:-0.567184,
+  },
 };
 const felgueirasptPresupuestoOverlayByYear = {};
 
@@ -54,6 +94,11 @@ Object.assign(sources, {
   'felgueiras-pt-demonstracoes-financeiras-individuais-epoca-2023-2024': {
     id:'felgueiras-pt-demonstracoes-financeiras-individuais-epoca-2023-2024', clubId:'felgueiras-pt',
     title:'Futebol Clube de Felgueiras - Futebol SAD — Demonstracoes-Financeiras-Individuais-Epoca-2023-2024 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'felgueiras-pt-fecho-contas-2022-2023': {
+    id:'felgueiras-pt-fecho-contas-2022-2023', clubId:'felgueiras-pt',
+    title:'Futebol Clube de Felgueiras - Futebol SAD — Fecho-contas-2022-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
