@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Benfica/prestacao-contas-2009-11-03.md",
+ "generado": "2026-10-16T21:46:35.327Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(valores expressos em euros)",
+ "caja": {
+  "lineas": [
+   1347
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1358,
+   1362
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Columna 30.06.09; deuda financiera = empréstimos obtidos no corrientes y corrientes."
+}

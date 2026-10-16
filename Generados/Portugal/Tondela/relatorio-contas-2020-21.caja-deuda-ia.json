@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Tondela/relatorio-contas-2020-21.md",
+ "generado": "2026-10-16T21:56:01.948Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "As demonstrações financeiras são apresentadas em Euros, sendo o Euro a divisa legal.",
+ "caja": {
+  "lineas": [
+   331
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   351,
+   360
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Valores en euros con céntimos (unidades). Deuda financiera = Financiamentos obtidos no corriente (400.000,00) + corriente (480.361,43)."
+}

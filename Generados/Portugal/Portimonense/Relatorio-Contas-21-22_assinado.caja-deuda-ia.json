@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-21-22_assinado.md",
+ "generado": "2026-10-16T21:52:30.684Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EURO",
+ "caja": {
+  "lineas": [
+   983
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1004,
+   1014
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Financiamentos obtidos incluye suprimentos de accionistas (4,15 M€), locaciones financieras y otros financiadores; no hay deuda bancaria pura. La evidencia 'EURO' proviene de la demostración de resultados; el balance está en euros con decimales."
+}

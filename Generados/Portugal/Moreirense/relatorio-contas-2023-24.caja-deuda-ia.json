@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Moreirense/relatorio-contas-2023-24.md",
+ "generado": "2026-10-16T21:51:20.454Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Euro)",
+ "caja": {
+  "lineas": [
+   395
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   410,
+   415
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los 'Financiamentos obtidos' (809.941,46 no corriente y 750.000 corriente) son financiamientos del Club y suprimentos/mútuos de otros participantes, no bancarios (Anexo E los clasifica como deudas a partes relacionadas y muestra préstamos bancarios en 0); se incluyen como deuda financiera, aunque podría discutirse."
+}

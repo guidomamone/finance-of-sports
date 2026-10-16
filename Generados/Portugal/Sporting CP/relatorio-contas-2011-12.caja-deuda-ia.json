@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2011-12.md",
+ "generado": "2026-10-16T21:55:23.451Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "EUR'000",
+ "caja": {
+  "lineas": [
+   2185
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2199,
+   2203
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance de las demonstrações financeiras (p.77); la misma información aparece en L551, L565 y L569 del relatório de gestão. La dívida financeira incluye factoring, VMOC (componente dívida) y descobertos bancários."
+}

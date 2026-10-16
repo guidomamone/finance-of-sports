@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2023-24.md",
+ "generado": "2026-10-16T21:54:05.435Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "b) - A moeda de reporte é o Euro.",
+ "caja": {
+  "lineas": [
+   297
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   311,
+   320
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance en euros con céntimos (unidades); deuda financiera = Financiamentos obtidos no corriente y corriente. Endividamento líquido del informe (4.465.236) coincide con 4.499.940 + 1.452.788 - 1.487.492."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2011-12.md",
+ "generado": "2026-10-16T21:46:46.470Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   2706
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2720,
+   2728
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se toma la columna Consolidado 30.06.12. Los valores están en euros (unidades), ya que las notas citan importes como '4.554.791 euros', pero el balance no incluye una frase explícita de escala. Los derivados (L2721) no se incluyen como deuda financiera."
+}

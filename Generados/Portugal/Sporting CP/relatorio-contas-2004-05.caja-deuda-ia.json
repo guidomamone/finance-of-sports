@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.md",
+ "generado": "2026-10-16T21:54:59.758Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de euros)",
+ "caja": {
+  "lineas": [
+   380,
+   381,
+   382
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   361,
+   365
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja tomada como Caixa + Depósitos Bancários + Depósitos a Prazo (subtotal L383 = 463). El empréstimo obrigacionista de 2002 no aparece como línea separada en el balance; podría estar incluido en Outros Credores, por lo que no se incluyó."
+}

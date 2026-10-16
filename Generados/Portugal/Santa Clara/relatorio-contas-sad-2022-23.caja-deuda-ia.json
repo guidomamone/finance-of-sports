@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2022-23.md",
+ "generado": "2026-10-16T21:54:25.032Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euros",
+ "caja": {
+  "lineas": [
+   297
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   312,
+   320
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Financiamentos obtidos no corriente 11.145.000 € (fondos del accionista, nota 15); el corriente es nulo en 2023 pero se incluye la línea por existir en el balance."
+}

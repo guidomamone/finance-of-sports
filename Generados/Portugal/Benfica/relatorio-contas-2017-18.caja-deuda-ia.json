@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2017-18.md",
+ "generado": "2026-10-16T21:47:08.960Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "valores em milhares de euros",
+ "caja": {
+  "lineas": [
+   2456
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2469,
+   2475
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa la columna Consolidado 30.06.18; los derivados (L2470, L2476) no se incluyen como deuda financiera."
+}

@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-1999.md",
+ "generado": "2026-10-16T21:54:46.591Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de escudos)",
+ "caja": {
+  "lineas": [
+   47,
+   48
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   27,
+   31
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance a 31 JUL 00 (columna más reciente; el encabezado del pasivo dice '31 JAN 00', probable error de OCR). Caja = Depósitos Bancários + Caixa (subtotal L49). Deuda = Dívidas a Instituições de Crédito de médio/longo prazo y de curto prazo; no se incluyen Accionistas ni Outros Credores. Documento escaneado: verificar las cifras contra el PDF."
+}

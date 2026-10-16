@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.md",
+ "generado": "2026-10-16T21:46:11.923Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Montantes expressos em euros",
+ "caja": {
+  "lineas": [
+   82
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   95
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La única línea de deuda financiera es 'Financiamentos obtidos' no corriente (L95), que figura en cero ('-') en 2025; no hay financiamientos corrientes en el balance, por lo que la deuda financiera efectiva es nula."
+}

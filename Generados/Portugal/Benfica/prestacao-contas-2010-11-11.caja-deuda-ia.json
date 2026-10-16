@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.md",
+ "generado": "2026-10-16T21:46:42.645Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EM EUROS",
+ "caja": {
+  "lineas": [
+   6331
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   6343,
+   6352
+  ],
+  "ninguna": false
+ },
+ "observaciones": "The balance-sheet header shows 30.06.09 | 30.06.10, but the first consolidated column (total assets 381.231.590) matches the 2010 figure in the management report (381,2 milhões), so that column was taken as the latest year. The balance sheet does not state its own scale: amounts are in full euros, and 'EM EUROS' comes from a note. Derivatives (L6344) are excluded from debt."
+}

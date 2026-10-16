@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2015-16.md",
+ "generado": "2026-10-16T21:52:57.281Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Relatório e Contas Consolidado 2015/2016",
+ "caja": {
+  "lineas": [
+   976
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   994,
+   995,
+   1003,
+   1004
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance consolidado oficial (L956-L1012) está en euros sin indicación explícita de escala; los valores (p. ej. 7.392.033) son unidades de euro, mientras que el resumen (L648) dice 'valores em milhares de euros'. Por eso la evidencia de escala citada no expresa la escala; no hay una frase literal que lo diga. 'Outros credores' (L1005) incluye financiamientos de terceros e intereses devengados, pero se excluyó por ser mayormente cesiones de derechos económicos de jugadores."
+}

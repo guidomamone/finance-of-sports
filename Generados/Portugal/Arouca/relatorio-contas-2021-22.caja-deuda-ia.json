@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Arouca/relatorio-contas-2021-22.md",
+ "generado": "2026-10-16T21:45:28.812Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Montantes expressos em EURO",
+ "caja": {
+  "lineas": [
+   255
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   295,
+   302
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Financiamentos obtidos (não corrente 31.725,00 + corrente 3.525,00) são apoios reembolsáveis da FPF (COVID-19), não bancários. Os passivos do Plano de Insolvência estão em Outras dívidas a pagar e não foram incluídos."
+}

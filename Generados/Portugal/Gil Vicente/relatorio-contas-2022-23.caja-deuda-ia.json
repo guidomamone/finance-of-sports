@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Gil Vicente/relatorio-contas-2022-23.md",
+ "generado": "2026-10-16T21:50:10.357Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em euros)",
+ "caja": {
+  "lineas": [
+   766
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   779,
+   784
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance oficial del anexo (L746-789); el cuadro del relatório de gestão repite las cifras pero muestra Provisões 218.000 en lugar de 281.000. Los Financiamentos obtidos incluyen mútuos de asociados (2,26 M) y contas caucionadas."
+}

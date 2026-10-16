@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2024-25.md",
+ "generado": "2026-10-16T21:45:15.591Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Unidade Monetária: euro",
+ "caja": {
+  "lineas": [
+   329
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "No hay préstamos bancarios ni financiamientos obtenidos (nota 11.3 con 0 y sin gastos de intereses); 'Outras dívidas a pagar' no corriente (L345, 15,97 M€) son deudas con accionistas (FCA Consulting y Universo Big 7), excluidas por no ser deuda bancaria/financiera, aunque podrían considerarse financiamiento de accionistas."
+}

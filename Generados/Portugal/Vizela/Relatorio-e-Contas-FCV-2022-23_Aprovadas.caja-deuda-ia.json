@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.md",
+ "generado": "2026-10-16T22:00:59.860Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "um resultado líquido do período negativo de 6.021.053,01€",
+ "caja": {
+  "lineas": [
+   546
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   560
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Valores en euros con céntimos (unidades); no hay frase explícita de escala en el balance. La única línea de deuda financiera es 'Financiamentos obtidos' no corriente, con valor 0,00; no existe línea de financiamentos en el pasivo corriente, por lo que la deuda financiera es efectivamente nula."
+}

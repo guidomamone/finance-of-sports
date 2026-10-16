@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2007-08.md",
+ "generado": "2026-10-16T21:46:32.804Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(valores expressos em euros)",
+ "caja": {
+  "lineas": [
+   1342
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1353,
+   1357
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Empréstimos obtidos no corriente (L1353) + corriente (L1357), columna IFRS 30.06.08."
+}

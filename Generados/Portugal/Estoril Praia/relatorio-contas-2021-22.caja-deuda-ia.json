@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Portugal/Estoril Praia/relatorio-contas-2021-22.md",
+ "generado": "2026-10-16T21:49:05.474Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(valores expressos em euros)",
+ "caja": {
+  "lineas": [
+   770
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   782,
+   783,
+   791
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se incluyen los financiamientos obtenidos de entidades del grupo (L783, préstamos del accionista) como deuda financiera; la deuda bancaria pura (L782 y L791) es muy pequeña. No se incluyeron las 'Dívidas a terceiros a entidades do grupo' corrientes (L789), por ser dudosa su naturaleza financiera."
+}

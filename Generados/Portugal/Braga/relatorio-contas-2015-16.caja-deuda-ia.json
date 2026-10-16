@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Braga/relatorio-contas-2015-16.md",
+ "generado": "2026-10-16T21:47:58.728Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "6.000.000,00 euros",
+ "caja": {
+  "lineas": [
+   1092
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1105,
+   1111
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no indica escala explícita; los valores parecen estar en euros (unidades), coherente con el capital social de 6.000.000,00 euros = 6 000 000 en balance. Financiamentos obtidos incluye factoring y locações financeiras."
+}

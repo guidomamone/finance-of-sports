@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2019-20-pos-AG.md",
+ "generado": "2026-10-16T21:47:16.640Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "valores em milhares de euros",
+ "caja": {
+  "lineas": [
+   2850
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2864,
+   2869
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Empréstimos obtidos no corriente (66.177) y corriente (31.903); se excluyen derivados y otros pasivos."
+}

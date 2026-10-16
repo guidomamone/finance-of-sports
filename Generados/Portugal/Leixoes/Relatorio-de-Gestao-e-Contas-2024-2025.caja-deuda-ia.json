@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Leixoes/Relatorio-de-Gestao-e-Contas-2024-2025.md",
+ "generado": "2026-10-16T21:50:40.773Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "**Moeda:** EUR",
+ "caja": {
+  "lineas": [
+   148
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   165,
+   173
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Valores en euros con decimales (unidades). Los financiamentos obtidos corresponden a préstamos de participantes de capital (accionistas), no bancarios; se incluyen como deuda financiera."
+}

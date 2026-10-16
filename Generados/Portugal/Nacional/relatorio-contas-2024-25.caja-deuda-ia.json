@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Nacional/relatorio-contas-2024-25.md",
+ "generado": "2026-10-16T21:51:47.489Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(montantes em euros)",
+ "caja": {
+  "lineas": [
+   85
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   97,
+   105
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Financiamentos obtidos corrente (L105) é zero em 30-jun-25; a dívida financeira do período resume-se ao não corrente (L97: 450.199)."
+}

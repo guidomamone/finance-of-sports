@@ -1,0 +1,25 @@
+{
+ "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2018-19.md",
+ "generado": "2026-10-16T21:53:13.224Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Balanços Consolidados",
+ "caja": {
+  "lineas": [
+   944
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   962,
+   963,
+   964,
+   972,
+   973,
+   974
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado oficial (L925-L982), expresado en euros (unidades) sin frase explícita de escala; la escala_evidencia es solo el título de la tabla, no una frase que declare la escala. El resumen de L602 está 'em milhares de euros'. 'Outros empréstimos' (notas 21) se incluye como deuda financiera; 'Outros credores' (nota 22) se excluye."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Estoril Praia/relatorio-contas-2023-24.md",
+ "generado": "2026-10-16T21:49:10.613Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(valores expressos em euros)",
+ "caja": {
+  "lineas": [
+   775
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   787,
+   796
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La deuda financiera incluye los financiamientos obtenidos del accionista/partes relacionadas (L787, 3 200 000) y los financiamientos obtenidos corrientes (L796, 0 en 2024); es dudoso si el préstamo del grupo debe considerarse deuda bancaria/financiera según el criterio."
+}

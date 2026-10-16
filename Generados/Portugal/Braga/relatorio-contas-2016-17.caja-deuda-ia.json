@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Braga/relatorio-contas-2016-17.md",
+ "generado": "2026-10-16T21:48:02.821Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Em 30 de Junho de 2017 o passivo global da Sociedade ascendia a 33,59 milhões de euros",
+ "caja": {
+  "lineas": [
+   1023
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1034,
+   1040
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no declara la escala explícitamente; las cifras están en euros (unidades), coherente con 33 592 432 = 33,59 milhões. Financiamentos obtidos incluye factoring y locações financeiras (total 14 048 933)."
+}

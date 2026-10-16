@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2015-16.md",
+ "generado": "2026-10-16T21:53:45.354Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "647.604,66 €",
+ "caja": {
+  "lineas": [
+   121
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   138,
+   145
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Valores expresados en euros con céntimos (unidades), sin frase explícita de escala; la línea L140 repite el importe de L138 y parece un subtotal del passivo não corrente mal etiquetado, por lo que no se incluye."
+}

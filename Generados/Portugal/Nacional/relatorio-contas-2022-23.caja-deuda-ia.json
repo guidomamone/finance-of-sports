@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Nacional/relatorio-contas-2022-23.md",
+ "generado": "2026-10-16T21:51:40.629Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(montantes em euros)",
+ "caja": {
+  "lineas": [
+   88
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   100,
+   105
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Financiamentos obtidos não corrente é zero em 30-jun-23; deuda financiera corresponde sobretudo à linha corrente (565.522)."
+}

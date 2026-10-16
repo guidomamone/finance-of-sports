@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Gil Vicente/relatorio-contas-2023-24.md",
+ "generado": "2026-10-16T21:50:13.847Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em euros)",
+ "caja": {
+  "lineas": [
+   760
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   772,
+   778
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado oficial (L736+); 'Financiamentos obtidos' no corriente incluye 2.233.228 de mútuos de asociados (otros empréstimos), considerados deuda financiera."
+}

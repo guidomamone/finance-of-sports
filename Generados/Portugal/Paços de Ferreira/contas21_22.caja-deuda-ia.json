@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Portugal/Paços de Ferreira/contas21_22.md",
+ "generado": "2026-10-16T21:52:17.904Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   23
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   41
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no indica la escala explícitamente; los importes con céntimos sugieren unidades (euros). Financiamentos obtidos no corriente (L36) está vacío en 2022, por lo que solo se toma la porción corriente (L41)."
+}

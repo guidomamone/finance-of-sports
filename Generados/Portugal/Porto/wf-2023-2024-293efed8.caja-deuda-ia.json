@@ -1,0 +1,25 @@
+{
+ "md": "Clubes/Portugal/Porto/wf-2023-2024-293efed8.md",
+ "generado": "2026-10-16T21:53:28.660Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   954
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   973,
+   974,
+   975,
+   984,
+   985,
+   986
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado (L935-L993); valores en euros sin indicación explícita de escala en las páginas del balance (las notas mencionan 'Euros'). Se excluyen los passivos de locação (L976, L987). Empréstimos bancários no corriente es '-' en 2024."
+}

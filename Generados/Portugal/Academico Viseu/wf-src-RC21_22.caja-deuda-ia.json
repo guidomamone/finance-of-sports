@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Academico Viseu/wf-src-RC21_22.md",
+ "generado": "2026-10-16T21:44:35.047Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "As demonstrações financeiras são apresentadas em euros.",
+ "caja": {
+  "lineas": [
+   150
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   162,
+   167
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los 'Financiamentos obtidos' son íntegramente suprimentos de accionistas (HOBRA y el club), sin préstamos bancarios; se incluyen como deuda financiera al ser financiamientos con intereses. Escala en euros con decimales."
+}

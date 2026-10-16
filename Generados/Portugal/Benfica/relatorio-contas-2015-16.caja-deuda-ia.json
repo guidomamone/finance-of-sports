@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2015-16.md",
+ "generado": "2026-10-16T21:47:01.895Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "TOLEREC EM MILHARES DE SUBO",
+ "caja": {
+  "lineas": [
+   2653
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2667,
+   2675
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se toma la columna consolidada 30.06.16. La escala en miles se infiere del texto OCR distorsionado ('VALORIS EM RQUARES', 'TOLEREC EM MILHARES DE SUBO', es decir 'valores em milhares de euros'). Los derivados (L2668) no se incluyeron como deuda financiera."
+}

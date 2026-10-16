@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2022-23.md",
+ "generado": "2026-10-16T21:45:07.413Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Unidade Monetária: euro",
+ "caja": {
+  "lineas": [
+   28
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "No hay préstamos bancarios ni financiamientos en el balance; 'Outras dívidas a pagar' no corrientes (L42, 7.112.329,07) son montos adeudados a accionistas (FCA Consulting y Ribatejo Sports), no deuda bancaria, por lo que se excluyen aunque podrían considerarse financiamiento de accionistas. Documento escaneado con OCR: verificar cifras."
+}

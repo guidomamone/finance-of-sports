@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Portugal/Casa Pia/relatorio-contas-2023-24.md",
+ "generado": "2026-10-16T21:48:39.659Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euros",
+ "caja": {
+  "lineas": [
+   207
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no presenta rubrica de financiamentos obtidos; el pasivo es solo corriente (fornecedores, Estado, outros passivos correntes, diferimentos). Hay juros suportados (39 376), por lo que podría existir deuda financiera dentro de 'Outros passivos correntes' (L221), no desglosada en estas páginas."
+}

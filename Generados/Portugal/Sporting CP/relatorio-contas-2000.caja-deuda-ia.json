@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.md",
+ "generado": "2026-10-16T21:54:50.479Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de escudos)",
+ "caja": {
+  "lineas": [
+   50
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   71,
+   75
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento es relatorio 2000 pero el balance muestra 31 JUL 01 como cierre más reciente; se toma esa columna. Caja = subtotal Depósitos Bancários e Caixa (L48+L49). Documento escaneado con OCR: verificar cifras."
+}

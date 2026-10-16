@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2005-06.md",
+ "generado": "2026-10-16T21:55:05.633Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de euros)",
+ "caja": {
+  "lineas": [
+   405,
+   406,
+   407
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   388,
+   392
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja tomada como suma de Caixa, Depósitos Bancários y Depósitos a Prazo (subtotal en L408 = 131). Deuda financiera: Dívidas a Instituições de Crédito de largo y corto plazo (33 000 + 1 766), que posiblemente incluyen los empréstitos obligacionistas. No se incluyen los saldos con Accionistas ni Outros Credores."
+}

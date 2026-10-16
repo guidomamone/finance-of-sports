@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.md",
+ "generado": "2026-10-16T21:52:13.795Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "1 456 991,60 €",
+ "caja": {
+  "lineas": [
+   32
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   48
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no declara la escala explícitamente; las cifras van con céntimos y las notas usan '€', por lo que se asume unidades de euros. La deuda financiera es solo corriente (Financiamentos obtidos). Hay préstamos de sócios/direção en partes relacionadas, posiblemente incluidos en 'Outras dívidas a pagar'; no se incluyen."
+}

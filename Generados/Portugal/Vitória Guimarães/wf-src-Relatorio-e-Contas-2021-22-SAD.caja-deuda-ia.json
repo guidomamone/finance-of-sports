@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Vitória Guimarães/wf-src-Relatorio-e-Contas-2021-22-SAD.md",
+ "generado": "2026-10-16T22:00:41.371Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "34 542 942,70 €",
+ "caja": {
+  "lineas": [
+   541
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   553,
+   562
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance expresado en euros con decimales (unidades); no hay frase explícita de escala, se toma el formato de los importes como evidencia."
+}

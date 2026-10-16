@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2024-25-pos-AG.md",
+ "generado": "2026-10-16T21:47:34.921Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "valores em milhares de euros",
+ "caja": {
+  "lineas": [
+   3976
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3989,
+   3993
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa la demonstração da posição financeira (L3962-L4002). El encabezado de la columna comparativa dice '30.06.26', probablemente una errata por 30.06.24. Los empréstimos obtidos (142.931 + 60.368 = 203.299) coinciden con el total del informe de gestión, que incluye los juros acrescidos."
+}

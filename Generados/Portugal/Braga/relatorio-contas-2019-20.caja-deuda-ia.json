@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Braga/relatorio-contas-2019-20.md",
+ "generado": "2026-10-16T21:48:06.715Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "no montante de 30.194 Euros",
+ "caja": {
+  "lineas": [
+   1644
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1656,
+   1662
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no indica la escala explícitamente; los importes están en euros (unidades), deducido por el formato de las cifras y la mención en euros en el texto."
+}

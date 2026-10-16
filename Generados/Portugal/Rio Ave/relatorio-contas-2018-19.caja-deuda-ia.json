@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2018-19.md",
+ "generado": "2026-10-16T21:53:51.505Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Euro)",
+ "caja": {
+  "lineas": [
+   22
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   33,
+   40
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Financiamentos obtidos no corriente (2.900.000) y corriente (433.333); se excluyen las deudas por transferencias de jugadores y proveedores."
+}

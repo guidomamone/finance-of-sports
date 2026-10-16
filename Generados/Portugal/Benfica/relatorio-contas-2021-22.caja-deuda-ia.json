@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2021-22.md",
+ "generado": "2026-10-16T21:47:22.301Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "valores em milhares de euros",
+ "caja": {
+  "lineas": [
+   3681
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3694,
+   3699
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Empréstimos obtidos no corriente (145.342) + corriente (25.815); se excluyen derivados y otros pasivos."
+}

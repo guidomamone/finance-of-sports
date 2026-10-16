@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.md",
+ "generado": "2026-10-16T21:46:07.829Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Montantes expressos em euros",
+ "caja": {
+  "lineas": [
+   172
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   185
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La única línea de deuda financiera es 'Financiamentos obtidos' no corriente (L185), con valor '-' (cero) en 30-06-2024; no hay financiamientos corrientes en el balance."
+}

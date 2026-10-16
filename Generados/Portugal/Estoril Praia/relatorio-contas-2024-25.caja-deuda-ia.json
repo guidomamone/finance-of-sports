@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Portugal/Estoril Praia/relatorio-contas-2024-25.md",
+ "generado": "2026-10-16T21:49:14.296Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(valores expressos em euros)",
+ "caja": {
+  "lineas": [
+   744
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   760,
+   761,
+   770
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se incluyen los financiamientos obtenidos de entidades del grupo (L761) como deuda financiera no corriente; la línea L768 'Dívidas a terceiros a entidades do grupo' corriente no se incluyó por no indicar naturaleza de financiamiento."
+}

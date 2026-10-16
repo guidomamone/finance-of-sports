@@ -1,0 +1,24 @@
+{
+ "md": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.md",
+ "generado": "2026-10-16T21:53:33.781Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(montantes expressos em milhares de euros)",
+ "caja": {
+  "lineas": [
+   5307
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   5337,
+   5338,
+   5348,
+   5349,
+   5350
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado (columna 30.06.2025); se excluyen pasivos de locación. Existe también balance individual (L8551+) con cifras distintas."
+}

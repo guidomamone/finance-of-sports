@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2016-17.md",
+ "generado": "2026-10-16T21:55:40.852Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "EUR'000 30.Jun.17",
+ "caja": {
+  "lineas": [
+   2374
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2387,
+   2392
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Financiamentos obtidos no corriente (36.265) + corriente (91.106) = 127.371, coincide con nota 30. Las Valores mobiliários obrigatoriamente convertíveis (VMOC) se presentan en capital propio y no se incluyen como deuda."
+}

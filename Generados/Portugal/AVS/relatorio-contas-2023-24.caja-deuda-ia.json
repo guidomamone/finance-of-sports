@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Portugal/AVS/relatorio-contas-2023-24.md",
+ "generado": "2026-10-16T21:46:03.291Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Unidade monetária: Euro",
+ "caja": {
+  "lineas": [
+   460
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   482,
+   483,
+   496
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Descobertos bancários y empréstimos corrientes están en cero; la deuda financiera es el empréstimo não corrente (L496, 4.908.445,31 €). La evidencia de escala proviene de la demostração dos resultados, ya que el balance expresa los valores en euros (€) sin indicar escala."
+}

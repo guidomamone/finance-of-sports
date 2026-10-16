@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Gil Vicente/relatorio-contas-2024-25.md",
+ "generado": "2026-10-16T21:50:18.290Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em euros)",
+ "caja": {
+  "lineas": [
+   829
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   842,
+   847
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance individual de las demostraciones financieras (L809-L852), que coincide con el del relatório de gestão; la deuda financiera son los Financiamentos obtidos no corriente (2.233.228,00) y corriente (1.515.000,00), en euros."
+}
