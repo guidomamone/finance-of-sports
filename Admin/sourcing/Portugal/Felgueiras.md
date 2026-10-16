@@ -17,3 +17,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Felgueiras/Demonstracoes-Financeiras-Individuais-Epoca-2023-2024.pdf` (sourceId `felgueiras-pt-demonstracoes-financeiras-individuais-epoca-2023-2024`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.pdf` (sourceId `felgueiras-pt-fecho-contas-2022-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.pdf` (sourceId `felgueiras-pt-fecho-de-contas-sad-2021-2022`).

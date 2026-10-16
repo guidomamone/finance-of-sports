@@ -40,6 +40,9 @@ window.RANKINGS["pt-liga3"] = {
       { id:"torreense-pt", revenue:2.425, reportType:"official_balance_sheet",
         sourceId:"torreense-pt-sad-relatoriocontas2021-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.06],["Otros ingresos",2.365]] },
+      { id:"felgueiras-pt", revenue:0.149, reportType:"official_balance_sheet",
+        sourceId:"felgueiras-pt-fecho-de-contas-sad-2021-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.144],["Otros ingresos",0.004]] },
     ],
   },
 };

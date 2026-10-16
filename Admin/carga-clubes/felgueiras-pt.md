@@ -132,6 +132,59 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/cargar.mjs (2026-10-16): pt-liga3, verificado contra roster cacheado de "2022–23 Liga 3 (Portugal)" (tools/club-league-reference/pt.json), coincidencia única por palabras "Felgueiras 1932" = "Felgueiras".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas e serviços prestados | pág. 6, precedente |
+| 2 | Subsídios à exploração | pág. 6, precedente |
+| 3 | Outros rendimentos | pág. 6, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trabalhos especializados | pág. 18, Jev 0.99 |
+| 2 | Publicidade e propaganda | pág. 18, Jev 1 |
+| 3 | Vigilância e segurança | pág. 18, Jev 0.97 |
+| 4 | Honorários | pág. 18, Jev 1 |
+| 5 | Ferramentas e utensílios de desgaste rápido | pág. 18, Jev 1 |
+| 6 | Material de escritório | pág. 18, Jev 1 |
+| 7 | Eletricidade | pág. 18, Jev 1 |
+| 8 | Outros | pág. 18, precedente |
+| 9 | Deslocações e estadas | pág. 18, Jev 1 |
+| 10 | Transportes de mercadorias | pág. 18, Jev 0.98 |
+| 11 | Rendas e alugueres | pág. 18, precedente |
+| 12 | Comunicação | pág. 18, Jev 1 |
+| 13 | Contencioso e notariado | pág. 18, Jev 1 |
+| 14 | Despesas de representação | pág. 18, Jev 1 |
+| 15 | Limpeza, higiene e conforto | pág. 18, Jev 1 |
+| 16 | Outros serviços | pág. 18, Jev 1 |
+| 17 | Remunerações | pág. 16, Jev 1 |
+| 18 | Outros gastos | pág. 16, precedente |
+| 19 | Outros gastos | pág. 6, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2022-06-30. periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-liga3, verificado contra roster cacheado de "2021–22 Liga 3 (Portugal)" (tools/club-league-reference/pt.json), coincidencia exacta "Felgueiras".
+```
+
 ## Fuentes
 
 ### felgueiras-pt-demonstracoes-financeiras-individuais-epoca-2023-2024
@@ -148,4 +201,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### felgueiras-pt-fecho-de-contas-sad-2021-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

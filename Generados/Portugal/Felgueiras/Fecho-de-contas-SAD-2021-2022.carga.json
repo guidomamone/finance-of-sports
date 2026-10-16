@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.pdf",
- "generado": "2026-10-16T03:51:53.476Z",
+ "generado": "2026-10-16T20:21:03.499Z",
  "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-06-30); pregunta en la cola (no frena)"
@@ -215,13 +215,13 @@
    },
    {
     "rawLabel": "Outros gastos",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "wages_squad",
     "amountNative": -0.223448,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos",
@@ -229,9 +229,9 @@
     "amountNative": -0.136213,
     "disclosureLevel": "aggregated",
     "_pag": 6,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "precedente del club con la misma nota (\"estado\"): la etiqueta está bajo renglones de categoría distinta"
    }
   ],
   "fiscalYearMeta": {
@@ -606,11 +606,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.223448,
-   "cat": "other_expenses",
+   "cat": "wages_squad",
    "conf": 1,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-16: residual de Gastos com o pessoal (383.628,34 = Remunerações 160.180,67 + Outros gastos 223.447,67, nota 15.1, Fecho-de-contas-SAD-2021-2022.md L656-662); como Felgueiras 2023-24 y el resto de Portugal (outros gastos com pessoal -> wages_squad)",
    "destino": "expense",
    "amountNative": -0.223448
   },
@@ -623,8 +624,8 @@
    "signoFijo": 0.136213,
    "cat": "other_expenses",
    "conf": 1,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "escalon": 0,
+   "fuenteCat": "precedente del club con la misma nota (\"estado\"): la etiqueta está bajo renglones de categoría distinta",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.136213
