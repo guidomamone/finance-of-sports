@@ -22,11 +22,10 @@ ni en el comentario de ningún archivo de código.
 ## Qué hay que hacer
 
 ORDEN (pedido de Guido, 2026-10-15), en este orden y sin saltear:
-1. Terminar de cargar Portugal (165 b0: la cola del lote 82 y una vuelta más; lo demás espera scripts).
-2. Mejoras de script: 237 y los cambios sin commitear de 165 b2 (`lote.mjs`, `fetch-club-league-reference.mjs`), medidos antes de
-   commitear.
-3. 238 (llevar a 0 los estados intermedios), que incluye Estonia y Bélgica (165 b1: ya transcriptas, falta validarlas y cargarlas).
-4. Mejoras de proyecto: Guido tiene ideas, todavía sin contar; preguntarle cuando se llegue acá.
+1. Mejoras de script: 237 (primero q, aa, ab y e, que frenan años de Portugal: 165 b0) y los cambios sin commitear de 165 b2
+   (`lote.mjs`, `fetch-club-league-reference.mjs`), medidos antes de commitear.
+2. 238 (llevar a 0 los estados intermedios), que incluye Estonia y Bélgica (165 b1: ya transcriptas, falta validarlas y cargarlas).
+3. Mejoras de proyecto: Guido tiene ideas, todavía sin contar; preguntarle cuando se llegue acá.
 Después: el resto de las altas de países nuevos (165 c) y las gestiones (195); al final el ahorro de API (232, 233, 230) y lo que
 espera una decisión de Guido (130, 183, 51). El panel Plan lleva además una lista "Otros to-dos abiertos" (número: descripción breve)
 con los que no están en los pasos de arriba.
@@ -44,13 +43,10 @@ con los que no están en los pasos de arriba.
        datos de los clubes del lote 71 al cerrar Grecia; después, con las columnas por perímetro y Jev en caja-deuda.mjs, se sumaron
        Olympiacos (caja 2016-2025), AEK 2025 (caja), PAOK 2021 y Panetolikos 2022 (deuda). Conocido, sin tocar (histórico): Panathinaikos 2025 tiene
        "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου" como competition_bonus; en AEK 2023 y 2025 va como other_income.
-    b0) PORTUGAL, EN CURSO (al 2026-10-16). Qué hay en el sitio: Admin/ESTADO-clubes.md (lotes 76 y 79-82; los 32 clubes con documento
-       tienen al menos un año, salvo AVS, cuyo primer año sigue en la cola). Falta, en este orden:
-       - La cola que dejó el lote 82 (unos 20 documentos: categorías y algún "no cierra"), contestar con subagentes (archivo de criterio
-         común en el scratchpad de la sesión: rehacerlo desde las respuestas firmadas de Portugal) y volver a correr Admin/lotes/lote-82.txt.
-       - Los otros años de AVS y Casa Pia (esperaban su primer año: Casa Pia 2025 ya entró; AVS 2024 sigue frenado).
+    b0) PORTUGAL, CARGADO SALVO LO QUE ESPERA SCRIPTS (al 2026-10-16). Qué hay en el sitio: Admin/ESTADO-clubes.md (lotes 76 y 79-83;
+       los 32 clubes con documento tienen al menos un año). Falta solo lo que espera una mejora de script:
        - Felgueiras 2021-22: frena por "ingresos implausibles" (0,15 M USD; club chico real, mismo caso que Alverca: to-do 237 e).
-       - Esperan una mejora de script: Sporting 1999-2010 y Benfica 2005-06, 2006-07 y 2014-15 (237 q, subtotales), Sporting 2008, 2018
+       - Sporting 1999-2010 y Benfica 2005-06, 2006-07 y 2014-15 (237 q, subtotales), Sporting 2008, 2018
          y 2021 (237 aa, redondeos), Benfica 2007-08 (237 ab, 11 meses). Lista: Admin/lotes/lote-80.txt.
        - Gil Vicente: 2024 se cargó (o se carga) con el consolidado de la Associação (único documento del año) y el resto con la SDUQ.
        Reglas que salieron de Portugal (en CONVENCIONES-DATOS o en las respuestas de la cola): qué entidad se carga cuando el fútbol está
@@ -112,6 +108,7 @@ con los que no están en los pasos de arriba.
     f) Una respuesta de la cola con una categoría del OTRO lado cambia el signo de la fila en vez de mudarla sin cambiar su efecto (como hace
        el ajuste `categoria`): Nacional 2024, "Correções relativas a períodos anteriores" (ingreso 229.792, L793) contestada
        exceptional_items quedó como gasto −0,229792 y el resultado no cerraba por 0,459584 (el doble). Se arregló con un ajuste `categoria`.
+       Más casos (lote 82): Nacional 2025, la misma fila (113.202); Académica 2023, "Ganhos em perdão de dívida" (2.710.737, condonación).
     g) El aviso "Estadio en 0" pide que las TRES categorías del estadio (matchday_competition, stadium_other, season_tickets) tengan
        ajuste `incluye`; con la de entradas alcanza para decir que el estadio está dentro de otra línea. Moreirense 2022 y 2025 llevan los
        tres ajustes.
@@ -187,6 +184,8 @@ con los que no están en los pasos de arriba.
        nota 10.2 "Outros Rendimentos", L1041, pero se extrajo como gasto −33.375; el resultado no cerraba por el doble, 66.756). Se resolvió
        con un ajuste `fila` en ingresos. Escalón posible: que el lado de cada fila de una nota salga del renglón del estado que la nota
        abre, no de la palabra "juros".
+       Más casos (lote 82): Marítimo 2023 "Juros" 598.818 y 2024 "Juros" 9.060 (nota Outros rendimentos); Paços de Ferreira 2022
+       "Diferenças de câmbio favoráveis" 28.199 (además la categorización la sacó con no_es_rubro). Todos con ajuste `fila` en ingresos.
     x) EN UN ESCANEO, LA ARITMÉTICA DEL ESTADO ENCUENTRA LOS DÍGITOS MAL LEÍDOS (Santa Clara 2024-25: 26 números sin confirmar; armando
        las dos columnas del estado de arriba hacia abajo y de abajo hacia arriba desde el resultado impreso aparecieron 12 cifras mal
        leídas, p. ej. imparidad 236.595,04 → 236.995,04, que arrastraba los subtotales; se corrigió el .md y se confirmaron 29 números con
@@ -261,6 +260,12 @@ con los que no están en los pasos de arriba.
        TV, merchandising, competições y otros = 1.275.143,83, exacto con Vendas e serviços prestados; el lote pedía un reintento pago por TV y
        estadio en 0). Se cargó con ajustes `fila`. Portimonense 2024-25 trae algo parecido en el informe de gestión. Escalón posible: que
        localizar ofrezca ese anexo como desglose de Vendas cuando su suma da el renglón (compuerta: suma exacta).
+    am) EL RESULTADO IMPRESO SE TOMA SIN SIGNO (lote 82: AVS 2023-24 lo lee de L613 "3 041 302,19 € -", con el menos al final; Portimonense
+       2022-23 de L1101, que no trae signo; los dos son pérdidas y el estado (L513 y L1036) lo dice). verificar.mjs dio OK y la propuesta de
+       carga frenó por tie-out-resultado. Se resolvió con ajustes `resultado-final`. Escalón posible: con varios candidatos al resultado
+       que coinciden en valor absoluto, tomar el signo del que lo imprime explícito (el estado). Ojo de proceso: la re-verificación a mano
+       (`verificar.mjs --rubros`) no anticipa estos frenos ni los de f y w; antes de pasar el comando del lote conviene el ensayo de
+       `cargar.mjs --desde-verificacion` de cada documento.
     ah) `medir-cargar.mjs` NO SE PUEDE ACOTAR (2026-10-15, medición de la 237 y: ~6 min por corrida, dos corridas, sobre los ~570 documentos con
        categorías de todos los países, cuando el cambio solo actúa en Clubes/Portugal/). Escalón posible: `--lista <archivo>` y `--dir <carpeta>`
        para medir solo lo que el cambio puede tocar; la corrida completa queda para los cambios que afectan a todos (escalera de categorías).
