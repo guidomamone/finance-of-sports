@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2019-20.pdf",
   "club": "sportingcp-pt",
   "year": 2020,
-  "generatedAt": "2026-10-16T00:56:36.286Z",
+  "generatedAt": "2026-10-16T01:14:49.391Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         1.541
       ],
-      "glosa": "Taquilla de Liga Nacional"
+      "glosa": "Taquilla de la Liga Nacional"
     },
     {
       "label": "Bilheteira Liga UEFA",
@@ -64,7 +64,7 @@
       "values": [
         0.294
       ],
-      "glosa": "Taquilla de Liga UEFA"
+      "glosa": "Taquilla de competiciones UEFA"
     },
     {
       "label": "Bilheteira Supertaça",
@@ -74,7 +74,7 @@
       "values": [
         0.133
       ],
-      "glosa": "Taquilla de Supercopa"
+      "glosa": "Taquilla de la Supercopa"
     },
     {
       "label": "Bilheteira Taça de Portugal",
@@ -84,7 +84,7 @@
       "values": [
         0.016
       ],
-      "glosa": "Taquilla de Copa de Portugal"
+      "glosa": "Taquilla de la Copa de Portugal"
     },
     {
       "label": "Bilheteira Jogos particulares",
@@ -104,7 +104,7 @@
       "values": [
         0.012
       ],
-      "glosa": "Taquilla de Copa de la Liga"
+      "glosa": "Taquilla de la Copa de la Liga"
     },
     {
       "label": "Camarotes",
@@ -134,7 +134,7 @@
       "values": [
         0.651
       ],
-      "glosa": "Localidades de León y VIP"
+      "glosa": "Localidades VIP y Leão"
     },
     {
       "label": "Outros",
@@ -194,7 +194,7 @@
       "values": [
         1
       ],
-      "glosa": "Pase a las eliminatorias siguientes de la Liga Europa"
+      "glosa": "Clasificación para las eliminatorias posteriores de la Liga Europa"
     },
     {
       "label": "Outros prémios",
@@ -284,7 +284,7 @@
       "values": [
         2.795
       ],
-      "glosa": "Mecanismo de solidaridad / Compensación por formación"
+      "glosa": "Mecanismo de solidaridad / Indemnización por formación"
     },
     {
       "label": "Custo das mercadorias vendidas",
@@ -304,7 +304,7 @@
       "values": [
         0.647
       ],
-      "glosa": "Patrocinios y publicidad (Nota 27)"
+      "glosa": "Patrocinios y publicidad (nota 27)"
     },
     {
       "label": "Manutenções",
@@ -324,7 +324,7 @@
       "values": [
         0.765
       ],
-      "glosa": "Vigilancia"
+      "glosa": "Seguridad y vigilancia"
     },
     {
       "label": "Limpeza",
@@ -344,7 +344,7 @@
       "values": [
         1.737
       ],
-      "glosa": "Comidas y manutención"
+      "glosa": "Dietas y manutención"
     },
     {
       "label": "Assistência aos jogos",
@@ -434,7 +434,7 @@
       "values": [
         3.439
       ],
-      "glosa": "Trabajos especializados"
+      "glosa": "Servicios y trabajos especializados"
     },
     {
       "label": "Equipamentos desportivos",
@@ -444,7 +444,7 @@
       "values": [
         0.837
       ],
-      "glosa": "Material deportivo"
+      "glosa": "Equipamiento deportivo"
     },
     {
       "label": "Combustíveis",
@@ -474,7 +474,7 @@
       "values": [
         0.681
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Conservação e reparação",
@@ -484,7 +484,7 @@
       "values": [
         0.273
       ],
-      "glosa": "Reparaciones y conservación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Seguros",
@@ -564,7 +564,7 @@
       "values": [
         0.61
       ],
-      "glosa": "Gastos por beneficios post-empleo (Nota 29)"
+      "glosa": "Gastos por prestaciones postempleo (Nota 29)"
     },
     {
       "label": "Seguros",
@@ -594,7 +594,7 @@
       "values": [
         5.424
       ],
-      "glosa": "Amortizaciones excluyendo plantilla deportiva"
+      "glosa": "Amortizaciones y depreciaciones excluyendo plantilla deportiva"
     },
     {
       "label": "Imparidade de clientes (Nota 15)",
@@ -604,7 +604,7 @@
       "values": [
         -0.107
       ],
-      "glosa": "Deterioro de valor de clientes (Nota 15)"
+      "glosa": "Pérdidas por deterioro de clientes (Nota 15)"
     },
     {
       "label": "Imparidade de inventários",
@@ -614,7 +614,7 @@
       "values": [
         0.228
       ],
-      "glosa": "Deterioro de valor de existencias"
+      "glosa": "Pérdidas por deterioro de existencias"
     },
     {
       "label": "Provisões para outros riscos e encargos (Nota 20)",
@@ -654,7 +654,7 @@
       "values": [
         0.215
       ],
-      "glosa": "Impuestos"
+      "glosa": "Tributos e impuestos"
     },
     {
       "label": "Multas e penalidades",
@@ -674,7 +674,7 @@
       "values": [
         0.199
       ],
-      "glosa": "Prospección de mercado"
+      "glosa": "Prospección de mercado (scouting)"
     },
     {
       "label": "Direitos de imagem",
@@ -714,7 +714,7 @@
       "values": [
         1.569
       ],
-      "glosa": "Pérdidas por deterioro de valor - Fútbol profesional (Nota 12)"
+      "glosa": "Pérdidas por deterioro - Fútbol profesional (Nota 12)"
     },
     {
       "label": "Percentagem dos direitos económicos/mais-valias",
@@ -744,7 +744,7 @@
       "values": [
         2.519
       ],
-      "glosa": "Mecanismo de solidaridad / Compensación por formación"
+      "glosa": "Mecanismo de solidaridad / Indemnización por formación"
     },
     {
       "label": "Outros",

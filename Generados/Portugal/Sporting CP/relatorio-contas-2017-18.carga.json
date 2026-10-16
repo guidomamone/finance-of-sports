@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2017-18.pdf",
- "generado": "2026-10-16T01:09:27.804Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Diferencia de redondeo\" -> other_expenses 0"
-  }
- ],
+ "generado": "2026-10-16T01:30:47.405Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
   "gestión: ningún presidente confirmado cubre 2018 (cierre 2018-06-30); pregunta en la cola (no frena)"
@@ -384,9 +379,9 @@
     "normalizedCategory": "other_expenses",
     "amountNative": 0.001,
     "disclosureLevel": "aggregated",
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Gastos com o pessoal\""
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Depreciações e amortizações excluindo plantel",
@@ -1176,11 +1171,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": -0.001,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Gastos com o pessoal\"",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15: redondeo de una nota (verificar.mjs), other_expenses.",
    "destino": "expense",
    "amountNative": 0.001
   },
@@ -1554,8 +1549,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 15,
   "lineasGasto": 39,
   "metaFilas": 2,

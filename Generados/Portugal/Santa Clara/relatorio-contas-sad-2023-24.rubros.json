@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.pdf",
   "club": "santaclara-pt",
   "year": 2024,
-  "generatedAt": "2026-10-16T00:56:36.169Z",
+  "generatedAt": "2026-10-16T01:14:49.325Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.071567
       ],
-      "glosa": "Ingresos por taquilla"
+      "glosa": "Venta de entradas"
     },
     {
       "label": "Apostas Desportivas e Placard",
@@ -64,7 +64,7 @@
       "values": [
         0.45
       ],
-      "glosa": "Derechos de televisión"
+      "glosa": "Derechos audiovisuales"
     },
     {
       "label": "Cedência por Empréstimos Direitos Desportivos",
@@ -74,7 +74,7 @@
       "values": [
         0.32
       ],
-      "glosa": "Cesión de derechos deportivos a préstamo"
+      "glosa": "Cesión temporal de derechos deportivos"
     },
     {
       "label": "Diversos",
@@ -104,7 +104,7 @@
       "values": [
         1.81501
       ],
-      "glosa": "Enajenación de jugadores"
+      "glosa": "Traspasos de jugadores"
     },
     {
       "label": "Correções Relativas a Períodos Anteriores",
@@ -114,7 +114,7 @@
       "values": [
         0.370993
       ],
-      "glosa": "Correcciones relativas a periodos anteriores"
+      "glosa": "Ajustes de ejercicios anteriores"
     },
     {
       "label": "Outros",
@@ -134,7 +134,7 @@
       "values": [
         0.360009
       ],
-      "glosa": "Intereses y otros rendimientos similares"
+      "glosa": "Intereses y otros ingresos similares"
     },
     {
       "label": "Custo das mercadorias vendidas e das matérias consumidas",
@@ -144,7 +144,7 @@
       "values": [
         0.107466
       ],
-      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y materiales consumidos"
     },
     {
       "label": "Subcontratos",
@@ -154,7 +154,7 @@
       "values": [
         0.286702
       ],
-      "glosa": "Subcontratación"
+      "glosa": "Subcontratas"
     },
     {
       "label": "Serviços Especializados",
@@ -214,7 +214,7 @@
       "values": [
         0.272994
       ],
-      "glosa": "Remuneraciones de los órganos de gobierno"
+      "glosa": "Retribuciones de los órganos de administración"
     },
     {
       "label": "Remunerações ao Pessoal",
@@ -224,7 +224,7 @@
       "values": [
         9.259487
       ],
-      "glosa": "Remuneraciones al personal"
+      "glosa": "Sueldos y salarios del personal"
     },
     {
       "label": "Indemnizações",
@@ -244,7 +244,7 @@
       "values": [
         1.036626
       ],
-      "glosa": "Cargas sociales sobre remuneraciones"
+      "glosa": "Cargas sociales"
     },
     {
       "label": "Seguro Acidentes de Trabalho e Doenças",
@@ -274,7 +274,7 @@
       "values": [
         0.20227
       ],
-      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -284,7 +284,7 @@
       "values": [
         -0.060146
       ],
-      "glosa": "Provisiones (aumentos/reducciones)"
+      "glosa": "Provisiones (dotaciones/reversiones)"
     },
     {
       "label": "IMI",
@@ -294,7 +294,7 @@
       "values": [
         0.001014
       ],
-      "glosa": "Impuesto municipal sobre bienes inmuebles (IMI)"
+      "glosa": "Impuesto Municipal sobre Inmuebles (IMI)"
     },
     {
       "label": "IUC",
@@ -304,7 +304,7 @@
       "values": [
         0.000574
       ],
-      "glosa": "Impuesto único de circulación (IUC)"
+      "glosa": "Impuesto Único de Circulación (IUC)"
     },
     {
       "label": "Imposto de Selo",
@@ -334,7 +334,7 @@
       "values": [
         0.181499
       ],
-      "glosa": "Correcciones relativas a periodos anteriores"
+      "glosa": "Ajustes de ejercicios anteriores"
     },
     {
       "label": "Donativos",
@@ -414,7 +414,7 @@
       "values": [
         1.198188
       ],
-      "glosa": "Amortizaciones y depreciaciones (gastos/reversiones)"
+      "glosa": "Dotaciones/reversiones por amortización y depreciación"
     }
   ]
 }

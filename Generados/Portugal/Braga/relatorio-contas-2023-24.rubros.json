@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Braga/relatorio-contas-2023-24.pdf",
   "club": "braga-pt",
   "year": 2024,
-  "generatedAt": "2026-10-16T00:56:35.907Z",
+  "generatedAt": "2026-10-16T01:14:49.242Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -104,7 +104,7 @@
       "values": [
         32.560592
       ],
-      "glosa": "Ingresos por enajenación de derechos de jugadores"
+      "glosa": "Ingresos por enajenación de derechos de futbolistas"
     },
     {
       "label": "Outros ganhos com operações de atletas",
@@ -114,7 +114,7 @@
       "values": [
         1.040694
       ],
-      "glosa": "Otras ganancias por operaciones con jugadores"
+      "glosa": "Otros beneficios por operaciones con futbolistas"
     },
     {
       "label": "Empréstimo de atletas",
@@ -124,7 +124,7 @@
       "values": [
         1.1
       ],
-      "glosa": "Cesión de jugadores"
+      "glosa": "Cesión de futbolistas"
     },
     {
       "label": "Cedência de atletas a seleções nacionais",
@@ -134,7 +134,7 @@
       "values": [
         0.040249
       ],
-      "glosa": "Cesión de jugadores a selecciones nacionales"
+      "glosa": "Cesión de futbolistas a selecciones nacionales"
     },
     {
       "label": "Mecanismo de solidariedade e direitos de formação",
@@ -154,7 +154,7 @@
       "values": [
         2
       ],
-      "glosa": "Ganancias por rescisión de contratos"
+      "glosa": "Beneficios por rescisión de contratos"
     },
     {
       "label": "Receitas de apostas desportivas",
@@ -194,7 +194,7 @@
       "values": [
         0.752814
       ],
-      "glosa": "Coste de las mercancías vendidas y materias consumidas"
+      "glosa": "Consumo de mercaderías y materias primas"
     },
     {
       "label": "Trabalhos especializados",
@@ -214,7 +214,7 @@
       "values": [
         3.819472
       ],
-      "glosa": "Gastos por adquisición de jugadores"
+      "glosa": "Gastos por adquisición de futbolistas"
     },
     {
       "label": "Despesas com provas",
@@ -224,7 +224,7 @@
       "values": [
         0.858614
       ],
-      "glosa": "Gastos de competiciones"
+      "glosa": "Gastos de partidos y competiciones"
     },
     {
       "label": "Inscrições e registos",
@@ -234,7 +234,7 @@
       "values": [
         0.108653
       ],
-      "glosa": "Inscripciones y registros"
+      "glosa": "Inscripciones y licencias"
     },
     {
       "label": "Vigilância e segurança",
@@ -264,7 +264,7 @@
       "values": [
         0.124506
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Serviços bancários",
@@ -284,7 +284,7 @@
       "values": [
         0.250236
       ],
-      "glosa": "Herramientas y útiles de rápido desgaste"
+      "glosa": "Herramientas y utensilios de desgaste rápido"
     },
     {
       "label": "Equipamento e material desportivo",
@@ -384,7 +384,7 @@
       "values": [
         0.220878
       ],
-      "glosa": "Comunicación"
+      "glosa": "Comunicaciones"
     },
     {
       "label": "Royalties",
@@ -394,7 +394,7 @@
       "values": [
         0.24
       ],
-      "glosa": "Cánones y royalties"
+      "glosa": "Royalties"
     },
     {
       "label": "Seguros",
@@ -414,7 +414,7 @@
       "values": [
         0.213587
       ],
-      "glosa": "Contencioso y notaría"
+      "glosa": "Gastos jurídicos y notariales"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -454,7 +454,7 @@
       "values": [
         0.59521
       ],
-      "glosa": "Remuneración de la Comisión Ejecutiva"
+      "glosa": "Retribución de la Comisión Ejecutiva"
     },
     {
       "label": "Senhas de presença",
@@ -464,7 +464,7 @@
       "values": [
         0.0615
       ],
-      "glosa": "Dietas por asistencia"
+      "glosa": "Dietas de asistencia"
     },
     {
       "label": "Atletas",
@@ -474,7 +474,7 @@
       "values": [
         16.376346
       ],
-      "glosa": "Jugadores"
+      "glosa": "Futbolistas"
     },
     {
       "label": "Treinadores",
@@ -564,7 +564,7 @@
       "values": [
         0
       ],
-      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de créditos comerciales (pérdidas/reversiones)"
     },
     {
       "label": "Imparidade de inventários (perdas/reversões)",
@@ -584,7 +584,7 @@
       "values": [
         0.075
       ],
-      "glosa": "Provisiones (aumentos/reducciones)"
+      "glosa": "Provisiones (dotaciones/reversiones)"
     },
     {
       "label": "Impostos",
@@ -614,7 +614,7 @@
       "values": [
         0.02
       ],
-      "glosa": "Cesión de jugadores"
+      "glosa": "Cesión de futbolistas"
     },
     {
       "label": "Direitos de formação e mecanismo de solidariedade",
@@ -634,7 +634,7 @@
       "values": [
         0.294375
       ],
-      "glosa": "Gastos por transacciones de jugadores"
+      "glosa": "Gastos por transacciones de deportistas"
     },
     {
       "label": "Multas / Penalidades desportivas",
@@ -664,7 +664,7 @@
       "values": [
         0.956243
       ],
-      "glosa": "Edificios y otras construcciones"
+      "glosa": "Construcciones y edificios"
     },
     {
       "label": "Equipamento básico",
@@ -674,7 +674,7 @@
       "values": [
         0.480644
       ],
-      "glosa": "Instalaciones técnicas y maquinaria"
+      "glosa": "Maquinaria e instalaciones técnicas"
     },
     {
       "label": "Equipamento de transporte",
@@ -694,7 +694,7 @@
       "values": [
         0.045568
       ],
-      "glosa": "Equipamiento administrativo"
+      "glosa": "Mobiliario y equipos de oficina"
     },
     {
       "label": "Plantel",

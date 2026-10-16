@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2015-16.pdf",
- "generado": "2026-10-16T01:09:24.344Z",
+ "generado": "2026-10-16T01:30:44.038Z",
  "frena": [
   {
    "etapa": "registro",
@@ -9,10 +9,6 @@
   {
    "etapa": "año",
    "motivo": "porto-pt ya tiene el ejercicio 2016 cargado"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros\" -> other_income 0"
   },
   {
    "etapa": "fuente",
@@ -207,9 +203,9 @@
     "amountNative": 0.160172,
     "disclosureLevel": "aggregated",
     "_pag": 101,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_income) no decide para la fila de \"Outros rendimentos e ganhos\""
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Proveitos com alienações de passes de jogadores",
@@ -1011,12 +1007,12 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 0.160172,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_income) no decide para la fila de \"Outros rendimentos e ganhos\"",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15: 'Outros' de la nota de Rédito, other_income como los otros años de Porto.",
    "destino": "revenue",
    "amountNative": 0.160172
   },
@@ -1856,7 +1852,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 3,
   "lineasIngreso": 21,
   "lineasGasto": 43,
   "metaFilas": 4,
