@@ -444,6 +444,21 @@ console.log(`\nGastado: US$ ${usd.toFixed(2)} (más la categorización: node too
 // carga (<doc>.carga.json) de CADA documento de la lista, no solo de los que pasaron por la etapa 8 en esta corrida (en un --reintentar la
 // etapa 8 corre solo sobre los reintentados). "Ya en el sitio" va aparte: un año ya cargado frena por diseño (cargar.mjs no pisa un
 // ejercicio), y contarlo como frenado escondería los frenados de verdad.
+// La etapa de un documento frenado, para la tabla final: la MÁS TEMPRANA de sus frenos (lo que hay que destrabar primero). `registro`
+// dice en el motivo qué etapa no cerró (6, o 4 si quedaron números sin confirmar). `club` solo no frena de verdad con --cargar (el alta la
+// hace cargar-lote.mjs), por eso va después de las demás.
+function etapaDeFrenos(frenos) {
+  const de = (f) => {
+    const e = String(f.etapa || ''); const m = String(f.motivo || '');
+    if (e === 'registro') { const n = (m.match(/la etapa (\d)/) || [])[1]; return n ? `${n} ${n === '4' ? 'validar (números sin confirmar)' : n === '6' ? 'verificar (sumas)' : 'pipeline'}` : '6 verificar (sumas)'; }
+    if (e === 'filas') return '6 verificar (casos en la cola)';
+    if (['categorizacion', 'categoria-en-cola', 'perfil-en-cola'].includes(e)) return '7 categorizar (cola de categorías y perfil)';
+    if (['tie-out', 'tie-out-resultado', 'reintento'].includes(e)) return '8 cargar: no cierra o pide reintento';
+    if (e === 'club' || e === 'alta') return '8 alta del club nuevo';
+    return `8 cargar: ${e || 'otro'}`;
+  };
+  return frenos.map(de).sort((a, b) => a.localeCompare(b, 'es', { numeric: true }))[0] || '8 cargar: otro';
+}
 const resultado = { listo: [], frenado: [], yaCargado: [], sinPropuesta: [] };
 for (const pdf of docs.filter((d) => !testigos.has(d))) {
   const e = registro.find((x) => x.pdf === pdf); const c = e?.md ? leerDerivado(e, '.carga.json') : null;
@@ -458,10 +473,12 @@ for (const pdf of docs.filter((d) => !testigos.has(d))) {
   // (to-do 159, ok de Guido) TODOS los motivos, uno por línea (antes solo c.frena[0]: Sampdoria 2021 frenaba por 4 y mostraba solo el
   // primero, y el del período quedaba escondido), y si cargar.mjs cortó el análisis en un freno (`cortadoEn`), el aviso de que después de
   // resolverlo pueden aparecer más (lote 15: las 5 altas escondían 64 preguntas de categoría, socios y gestión que todavía no se calculaban).
-  else resultado.frenado.push({ anio, motivos: c.frena.map((f) => `[${f.etapa}] ${String(f.motivo).slice(0, 160)}`), cortadoEn: c.cortadoEn || null });
+  else resultado.frenado.push({ anio, motivos: c.frena.map((f) => `[${f.etapa}] ${String(f.motivo).slice(0, 160)}`), cortadoEn: c.cortadoEn || null, etapaFreno: etapaDeFrenos(c.frena) });
 }
 const anios = (xs) => xs.map((x) => x.anio).sort().join(', ');
-console.log('\n=== RESULTADO ===');
+// (pedido de Guido, 2026-10-15) El título dice qué es: la propuesta de carga de la etapa 7, antes de escribir; lo escrito de verdad lo
+// cuenta la etapa 8 y la tabla final "ETAPA · #".
+console.log('\n=== RESULTADO ETAPA 7 (propuesta de carga, antes de escribir) ===');
 console.log(`Listo para cargar ${resultado.listo.length}${resultado.listo.length ? `   (${anios(resultado.listo)})` : ''}`);
 console.log(`Frenados ${resultado.frenado.length}`);
 for (const x of resultado.frenado.sort((a, b) => String(a.anio).localeCompare(String(b.anio)))) {
@@ -475,7 +492,29 @@ if (resultado.sinPropuesta.length) { console.log(`Sin propuesta de carga ${resul
 // ETAPA 8 DE VERDAD (Versión 642, ok de Guido el 2026-10-09): con --cargar, lo que quedó "listo para cargar" se escribe en el sitio con
 // tools/cargar-lote.mjs (alta del club nuevo con su color, cargar.mjs --escribir con su auditoría, un commit por año; sin push). Sin
 // --ejecutar es su ensayo. El candado del lote se suelta antes: cargar.mjs --escribir toma el suyo.
+let escritos = 0;
 if (CARGAR) {
   soltarCandado();
-  spawnSync('node', [resolve(ROOT, 'tools/cargar-lote.mjs'), '--lista', LISTA, ...(EJECUTAR ? ['--escribir'] : [])], { cwd: ROOT, stdio: 'inherit' });
+  // La salida de cargar-lote.mjs se muestra igual que antes; se lee además para contar los años escritos en la tabla final.
+  const r = spawnSync('node', [resolve(ROOT, 'tools/cargar-lote.mjs'), '--lista', LISTA, ...(EJECUTAR ? ['--escribir'] : [])], { cwd: ROOT, stdio: ['inherit', 'pipe', 'inherit'], encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+  if (r.stdout) process.stdout.write(r.stdout);
+  escritos = (String(r.stdout || '').match(/: escrito y commiteado/g) || []).length;
+}
+
+// TABLA FINAL "ETAPA · #" (pedido de Guido, 2026-10-15): cada documento de la lista una sola vez, en la etapa más temprana donde frenó.
+// Solo lee lo que ya se calculó arriba (la propuesta de carga de cada documento) y lo escrito por la etapa 8: no cambia nada.
+{
+  const filas = new Map(); const sumar = (k, n = 1) => filas.set(k, (filas.get(k) || 0) + n);
+  sumar('3-5 sin propuesta de carga (localizar, validar, extraer)', resultado.sinPropuesta.length);
+  for (const x of resultado.frenado) sumar(x.etapaFreno);
+  const listosSinEscribir = Math.max(0, resultado.listo.length - escritos);
+  if (CARGAR && EJECUTAR) { sumar('8 escrito en esta corrida', escritos); sumar('8 listo pero no se escribió (ver la etapa 8 arriba)', listosSinEscribir); }
+  else sumar('8 listo para cargar (falta --cargar --ejecutar)', resultado.listo.length);
+  sumar('ya estaba en el sitio', resultado.yaCargado.length);
+  const orden = [...filas].filter(([, n]) => n > 0).sort(([a], [b]) => a.localeCompare(b, 'es', { numeric: true }));
+  const ancho = Math.max(5, ...orden.map(([k]) => k.length));
+  console.log('\n=== ETAPA · # (dónde quedó cada PDF de la lista) ===');
+  console.log(`${'ETAPA'.padEnd(ancho)}   #`);
+  for (const [k, n] of orden) console.log(`${k.padEnd(ancho)}  ${String(n).padStart(2)}`);
+  console.log(`${'TOTAL'.padEnd(ancho)}  ${String(orden.reduce((s, [, n]) => s + n, 0)).padStart(2)}`);
 }
