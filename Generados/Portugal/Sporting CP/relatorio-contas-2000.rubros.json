@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.md",
   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf",
-  "club": "sporting-cp",
+  "club": "sportingcp-pt",
   "year": 2001,
-  "generatedAt": "2026-10-15T21:55:08.070Z",
+  "generatedAt": "2026-10-16T21:31:05.733Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -47,16 +47,6 @@
       "glosa": "Otros ingresos y ganancias de explotación"
     },
     {
-      "label": "(D)",
-      "lado": "revenue",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        5453.614
-      ],
-      "glosa": "(D)"
-    },
-    {
       "label": "Proveitos e Ganhos Extraordinários",
       "lado": "revenue",
       "page": 2,
@@ -65,16 +55,6 @@
         1199.614
       ],
       "glosa": "Ingresos y ganancias extraordinarios"
-    },
-    {
-      "label": "(F)",
-      "lado": "revenue",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        6653.228
-      ],
-      "glosa": "(F)"
     },
     {
       "label": "Fornecimentos e Serviços Externos",
@@ -147,16 +127,6 @@
       "glosa": "Otros gastos y pérdidas de explotación"
     },
     {
-      "label": "(C)",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        10685.784
-      ],
-      "glosa": "(C)"
-    },
-    {
       "label": "Custos e Perdas Extraordinários",
       "lado": "expense",
       "page": 2,
@@ -165,26 +135,6 @@
         266.869
       ],
       "glosa": "Gastos y pérdidas extraordinarios"
-    },
-    {
-      "label": "(E)",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        10952.653
-      ],
-      "glosa": "(E)"
-    },
-    {
-      "label": "(G)",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        10952.653
-      ],
-      "glosa": "(G)"
     }
   ]
 }

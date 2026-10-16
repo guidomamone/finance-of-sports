@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.md",
- "generado": "2026-10-15T21:55:08.069Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T21:31:05.732Z",
+ "estado": "ok",
+ "clubId": "sportingcp-pt",
  "year": 2001,
  "escala": {
   "valor": "miles",
@@ -11,40 +11,93 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "1b52802",
-  "4038ba7"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf",
+   "campo": "anio",
+   "valor": "2001",
+   "linea": null,
+   "motivo": "Claude 2026-10-16: el documento es el ejercicio cerrado el 31/07/2001 (balance '31 JUL 01', L18 y L97); el nombre del archivo dice 2000",
+   "evidencia": "relatorio-contas-2000.md L18, L97",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf",
+   "campo": "cierre",
+   "valor": "2001-07-31",
+   "linea": null,
+   "motivo": "Claude 2026-10-16: ejercicio del 1/8/2000 al 31/7/2001 (columnas '31 JUL 01 | 31 JUL 00')",
+   "evidencia": "relatorio-contas-2000.md L97",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf",
+   "campo": "moneda",
+   "valor": "PTE",
+   "linea": null,
+   "motivo": "Claude 2026-10-16: el ejercicio al 31/07/2001 está en miles de escudos (L14 'Valores expressos em milhares de escudos'); se carga en PTE con la paridad fija, como Sporting 2000",
+   "evidencia": "relatorio-contas-2000.md L14",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf",
+   "campo": "fx",
+   "valor": "228.9913",
+   "linea": null,
+   "motivo": "Claude 2026-10-16: 1 EUR = 200,482 PTE (paridad fija) y BCE al 31/07/2001: 1,142204 EUR por USD -> 228,9913 PTE por USD (FX_CLOSE PTE@2001-07-31)",
+   "evidencia": "tools/lookup-fx-close.js 2001-07-31 --currency EUR",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": false,
-   "detalle": "las líneas suman 18526.295 y el total impreso dice 6653.228"
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "\"(E)\" 10952.653 cierra; además se suman 10 línea(s) fuera de ese total (32211.886)"
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 18526.295 - gastos 43164.539 ± financiero 612.979 ± impuesto 0 no da el impreso -4299.425",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 9.094947017729282e-13
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2000 de este documento suma ingresos 6776.635; el sitio tiene 6776.635"
+  },
+  {
+   "nombre": "documento del año 2002",
+   "ok": true,
+   "detalle": "en euros, con la paridad fija de PTE (1 EUR = 200.482): ingresos de 2001: 32.020097 en este documento y 32.02 en relatorio-contas-2001.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2000",
    "ok": true,
-   "detalle": "ingresos de 2000: 17076.633 en relatorio-contas-1999.pdf y 17076.633 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "ingresos de 2000: 6776.635 en relatorio-contas-1999.pdf y 6776.635 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
+  "escalón \"acumulados\": \"(D)\" (L131) es \"(B)\" (L129) + \"Outros Juros e Proveitos Similares\" (L130); no se cuenta",
+  "escalón \"acumulados\": \"(C)\" (L114) es \"(A)\" (L112) + \"Juros e Custos Similares\" (L113); no se cuenta",
+  "escalón \"acumulados\": \"(G)\" (L118) es \"(E)\" (L116); no se cuenta",
+  "escalón \"acumulados\": cerró el resultado exacto sin contar los totales que acumulan el anterior ni las filas sin lado (sin-otros) (to-do 237 q)",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b6 presenta el mismo ejercicio clasificado por funciones; el estado por naturaleza (b3-b5) es el principal.",
   "duda de extraer que no afecta la carga: L108 año anterior 3 008 759 vs 3 000 759 + 0 en L106-L107; diferencia de 8 000, posible error tipográfico en el año anterior."
  ],
@@ -52,14 +105,14 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 18526.295,
-  "gastos": 43164.539,
-  "financiero": 612.979,
+  "ingresos": 6419.453,
+  "gastos": 10573.449,
+  "financiero": -145.429,
   "impuesto": 0,
   "resultadoImpreso": -4299.425,
   "resultadoParaCargar": -4299.425,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -95,27 +148,11 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "(D)",
-   "lado": "ingreso",
-   "M": 5453.614,
-   "pagina": 2,
-   "linea": 131,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Proveitos e Ganhos Extraordinários",
    "lado": "ingreso",
    "M": 1199.614,
    "pagina": 2,
    "linea": 132,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(F)",
-   "lado": "ingreso",
-   "M": 6653.228,
-   "pagina": 2,
-   "linea": 133,
    "origen": "estado"
   },
   {
@@ -175,35 +212,11 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "(C)",
-   "lado": "gasto",
-   "M": 10685.784,
-   "pagina": 2,
-   "linea": 114,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Custos e Perdas Extraordinários",
    "lado": "gasto",
    "M": 266.869,
    "pagina": 2,
    "linea": 115,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(E)",
-   "lado": "gasto",
-   "M": 10952.653,
-   "pagina": 2,
-   "linea": 116,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(G)",
-   "lado": "gasto",
-   "M": 10952.653,
-   "pagina": 2,
-   "linea": 118,
    "origen": "estado"
   }
  ],
@@ -214,7 +227,7 @@
  "financiero": [
   {
    "etiqueta": "Juros e Custos Similares",
-   "M": 379.204,
+   "M": -379.204,
    "linea": 113
   },
   {

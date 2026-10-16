@@ -1,53 +1,573 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf",
- "generado": "2026-10-15T22:34:48.909Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "periodo",
-   "motivo": "el nombre del archivo dice otro cierre que el contenido (2001-07-31): confirmar qué ejercicio es antes de cargarlo"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (sportingcp-pt)"
-  },
-  {
-   "etapa": "alta:currency",
-   "motivo": "El ejercicio 2000 es anterior a 2002: el documento puede estar en PTE (12 menciones de la moneda vieja, 0 de EUR). El sitio no tiene ninguna moneda \"legado\" cargada: ¿se carga en PTE (con su fx a USD de ese cierre) o se convierte a EUR a la paridad fija?"
-  },
-  {
-   "etapa": "moneda",
-   "motivo": "el ejercicio saldría en PTE y el club reporta en EUR"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-16T21:31:18.685Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
-  "el documento cierra 2000-07-31 (ejercicio desde el 08-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?"
+  "el documento cierra 2001-07-31 (ejercicio desde el 08-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?",
+  "gastos: ningún total impreso igual a la suma de las líneas (-10306.58); queda la suma, verificada por el resultado del ejercicio",
+  "gestión: ningún presidente confirmado cubre 2001 (cierre 2001-07-31); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "sportingcp-pt",
+  "year": 2001,
+  "cierre": "2001-07-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Prestações de Serviços",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 3178.865,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subsídios à Exploração",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proveitos Suplementares",
+    "normalizedCategory": "other_income",
+    "amountNative": 1866.067,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros Proveitos e Ganhos Operacionais",
+    "normalizedCategory": "other_income",
+    "amountNative": 174.907,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proveitos e Ganhos Extraordinários",
+    "normalizedCategory": "other_income",
+    "amountNative": 1199.614,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Fornecimentos e Serviços Externos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1198.61,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Remunerações",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -4916.854,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -200.022,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Corpóreo e Incorpóreo",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -3638.945,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Provisões",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -228.991,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Impostos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -21.527,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros Custos e Perdas Operacionais",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -101.631,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Custos e Perdas Extraordinários",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -266.869,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "PTE",
+   "fx": 228.9913,
+   "fxSource": "manual",
+   "sourceId": "sportingcp-pt-relatorio-contas-2000",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -145.429,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Juros e Custos Similares",
+     "value": -379.204
+    },
+    {
+     "label": "Outros Juros e Proveitos Similares",
+     "value": 233.775
+    },
+    {
+     "label": "Imposto sobre o Rendimento do Exercício",
+     "value": 0
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Prestações de Serviços",
+     "lado": "revenue",
+     "importe": 3178.865,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 6419.453,
+   "officialTotalExpenses": 10306.58,
+   "officialPAT": -4299.425
+  },
+  "source": {
+   "id": "sportingcp-pt-relatorio-contas-2000",
+   "clubId": "sportingcp-pt",
+   "title": "SPORTING - Sociedade Desportiva de Futebol, SAD — relatorio-contas-2000 (ejercicio 2001)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2000.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.md",
  "reemplaza": false,
  "periodo": {
   "tipo": "anual",
   "meses": 12,
   "cierre": "2001-07-31",
-  "evidencia": null,
-  "confianza": "media",
   "anual": "temporada",
-  "nombreNoCoincide": true
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-16): Claude 2026-10-16: ejercicio del 1/8/2000 al 31/7/2001 (columnas '31 JUL 01 | 31 JUL 00')"
  },
  "clubId": "sportingcp-pt",
- "year": 2000,
- "cortadoEn": "filas"
+ "year": 2001,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf",
+   "campo": "anio",
+   "valor": "2001",
+   "linea": null,
+   "motivo": "Claude 2026-10-16: el documento es el ejercicio cerrado el 31/07/2001 (balance '31 JUL 01', L18 y L97); el nombre del archivo dice 2000",
+   "evidencia": "relatorio-contas-2000.md L18, L97",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf",
+   "campo": "cierre",
+   "valor": "2001-07-31",
+   "linea": null,
+   "motivo": "Claude 2026-10-16: ejercicio del 1/8/2000 al 31/7/2001 (columnas '31 JUL 01 | 31 JUL 00')",
+   "evidencia": "relatorio-contas-2000.md L97",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf",
+   "campo": "moneda",
+   "valor": "PTE",
+   "linea": null,
+   "motivo": "Claude 2026-10-16: el ejercicio al 31/07/2001 está en miles de escudos (L14 'Valores expressos em milhares de escudos'); se carga en PTE con la paridad fija, como Sporting 2000",
+   "evidencia": "relatorio-contas-2000.md L14",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2000.pdf",
+   "campo": "fx",
+   "valor": "228.9913",
+   "linea": null,
+   "motivo": "Claude 2026-10-16: 1 EUR = 200,482 PTE (paridad fija) y BCE al 31/07/2001: 1,142204 EUR por USD -> 228,9913 PTE por USD (FX_CLOSE PTE@2001-07-31)",
+   "evidencia": "tools/lookup-fx-close.js 2001-07-31 --currency EUR",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
+ "seleccion": {
+  "filas": 16,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Prestações de Serviços",
+   "page": 2,
+   "native": 3178.865,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3178.865,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3178.865
+  },
+  {
+   "label": "Subsídios à Exploração",
+   "page": 2,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Proveitos Suplementares",
+   "page": 2,
+   "native": 1866.067,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1866.067,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1866.067
+  },
+  {
+   "label": "Outros Proveitos e Ganhos Operacionais",
+   "page": 2,
+   "native": 174.907,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 174.907,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 174.907
+  },
+  {
+   "label": "Proveitos e Ganhos Extraordinários",
+   "page": 2,
+   "native": 1199.614,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1199.614,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1199.614
+  },
+  {
+   "label": "Fornecimentos e Serviços Externos",
+   "page": 2,
+   "native": 1198.61,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1198.61,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1198.61
+  },
+  {
+   "label": "Remunerações",
+   "page": 2,
+   "native": 4916.854,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4916.854,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4916.854
+  },
+  {
+   "label": "Outros",
+   "page": 2,
+   "native": 200.022,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 200.022,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -200.022
+  },
+  {
+   "label": "Corpóreo e Incorpóreo",
+   "page": 2,
+   "native": 3638.945,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3638.945,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet, revisado): la fila junta amortización de derechos de jugadores y depreciación; la mayor parte son pases: va entera a la parte mayor, como Moreirense y PAOK (to-do 237 b) [relatorio-contas-2004-05.md L564, L591: pases 12.928 de 13.055]",
+   "destino": "expense",
+   "amountNative": -3638.945
+  },
+  {
+   "label": "Provisões",
+   "page": 2,
+   "native": 228.991,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 228.991,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -228.991
+  },
+  {
+   "label": "Impostos",
+   "page": 2,
+   "native": 21.527,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 21.527,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -21.527
+  },
+  {
+   "label": "Outros Custos e Perdas Operacionais",
+   "page": 2,
+   "native": 101.631,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 101.631,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -101.631
+  },
+  {
+   "label": "Custos e Perdas Extraordinários",
+   "page": 2,
+   "native": 266.869,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 266.869,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -266.869
+  },
+  {
+   "label": "Juros e Custos Similares",
+   "page": null,
+   "native": -379.204,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Outros Juros e Proveitos Similares",
+   "page": null,
+   "native": 233.775,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposto sobre o Rendimento do Exercício",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 6419.453,
+  "expSum": -10306.58,
+  "officialTotalRevenue": 6419.453,
+  "officialTotalExpenses": 10306.58,
+  "officialPAT": -4299.425,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -4299.425,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 6419.453
+  }
+ },
+ "liga": {
+  "valor": "pt-primeiraliga",
+  "fuente": "roster cacheado de \"2001–02 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Sporting CP\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2001,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): Claude 2026-10-16: ejercicio del 1/8/2000 al 31/7/2001 (columnas '31 JUL 01 | 31 JUL 00')",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2001-07-31",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): Claude 2026-10-16: ejercicio del 1/8/2000 al 31/7/2001 (columnas '31 JUL 01 | 31 JUL 00'))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-15)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "PTE",
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): Claude 2026-10-16: el ejercicio al 31/07/2001 está en miles de escudos (L14 'Valores expressos em milhares de escudos'); se carga en PTE con la paridad fija, como Sporting 2000",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": 228.9913,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): Claude 2026-10-16: 1 EUR = 200,482 PTE (paridad fija) y BCE al 31/07/2001: 1,142204 EUR por USD -> 228,9913 PTE por USD (FX_CLOSE PTE@2001-07-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "sportingcp-pt-relatorio-contas-2000",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "pt-primeiraliga",
+   "fuente": "roster cacheado de \"2001–02 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Sporting CP\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 5,
+  "lineasGasto": 8,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }
