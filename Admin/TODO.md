@@ -180,6 +180,9 @@ con los que no están en los pasos de arriba.
       con 30,7 M de ingresos (balance en euros, L333): una regla por proporción sola la rompería.
    b) DEUDA: Portugal tiene 37 de 165 años con deuda (contra 117 con caja). Mirar por qué la mayoría no pasa la compuerta (¿"Financiamentos
       obtidos" con más de dos filas, consolidado y separado en el mismo .md, o el vecino sin la misma familia?).
+   d) CELDA DE NOTAS CON ";": AVS 2022-23 "| Financiamentos obtidos | 3;8;9;21; | 4.495.141,06 | 2.062.069,19 |" (L352) se lee como importe
+      38.921, y 2021 y 2023 proponen deuda 0,04 M (la compuerta no los confirma). Escalón posible: una celda de enteros chicos separados
+      por ";" es una referencia a notas (esRefNota). Medir con --medir.
    c) CLUBES EN 0: AVS (0 de 6), Boavista (0 de 2), Chaves (0 de 4), Famalicão (0 de 14), Mafra (0 de 2), Tondela (0 de 2), Vitória
       Guimarães (0 de 8) y la deuda de Felgueiras (0 de 3): ni Jev ni la IA pasaron la compuerta. Diagnosticar 2-3 antes de diseñar.
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada

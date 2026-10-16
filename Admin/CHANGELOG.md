@@ -54,6 +54,8 @@ que dice `ESTADO.md` era verdad ese día.
 - caja-deuda.mjs: "Total do passivo não corrente" como divisor del par corriente + no corriente, y la propuesta no mezcla tablas (deuda,
   mejora 2). Medido: --medir idéntico; Portugal +8 deudas de Benfica (2009-2022), ninguna perdida; sin la compuerta de la misma tabla
   salían mal Benfica 2023, 2025 y 2026 (desglose de una tabla resumen sumado al balance).
+- Caja y deuda, mejora 3 (vecino por valor) a HALLAZGOS: abierta confirmaba errores (Palmeiras 2024, Sporting 2007) y restringida no ganaba
+  casos; el caso que la motivó (AVS) es una celda de notas "3;8;9;21;" leída como importe (TODO 260 d).
 - Lotes 86 y 87: Felgueiras 2021-22 y Benfica 2007-08 cargados; caja de Felgueiras 2022-2024. Listas 80, 86 y 87 al archivo.
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)

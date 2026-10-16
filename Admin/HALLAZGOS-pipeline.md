@@ -139,6 +139,11 @@ Del to-do 237 (diagnóstico por subagentes Sonnet, 2026-10-16):
   en euros; Novorizontino 2016). El año anterior confirma la escala que usó la carga, y esa no siempre es la que dice la propuesta. Sin daño
   hoy: esas dudas van a la cola y se contestan. Retomar: si localizar o extraer dejan la escala propuesta como campo (miles / unidades) y
   no solo en el texto de la pregunta; entonces la compuerta compara ese campo con la escala que usó la carga.
+- Caja y deuda, mejora 3 (confirmar con el vecino por valor y no por nombre de familia): medida el 2026-10-16. Abierta (caja, deuda,
+  todos los escalones) confirmaba errores que el vecino repite: Palmeiras 2024 caja 1,3 M contra 38,4 M cargado (fila mal leída), Sporting
+  2007 "caja" de una fila del Cash Flow. Restringida a deuda del escalón 1, no ganaba ningún caso: el que la motivó (AVS 2024) era otra
+  cosa, una celda de notas "3;8;9;21;" leída como importe (to-do 260 d). Retomar: si aparecen casos de deuda de escalón 1 que cambian de
+  nombre entre años y no los resuelve otra mejora.
 - Etiquetado `perimetro` de las dudas de localizar y extraer: la IA lo usa para preguntas de inventarios, imparidad o notas que difieren
   del estado (Rio Ave, Famalicão, Santa Clara, Torreense). Sin daño (se contestan igual). Retomar: si una regla empieza a contestar
   dudas por su tema.
