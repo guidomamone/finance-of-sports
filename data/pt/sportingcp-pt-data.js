@@ -108,6 +108,23 @@ const sportingcpptRevenueLinesByYear = {
     { rawLabel:'Venda de direitos desportivos', normalizedCategory:'player_sales', amountNative:7.632, disclosureLevel:'aggregated' },
     { rawLabel:'Mecanismo de solidariedade/compenção por formação', normalizedCategory:'player_sales', amountNative:0.084, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:4.553, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos Televisivos', normalizedCategory:'broadcasting', amountNative:24.532, disclosureLevel:'aggregated' },
+    { rawLabel:'Bilheteira e Bilhetes de Época', normalizedCategory:'matchday_competition', amountNative:14.895, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínios e Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:13.392, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:4.082, disclosureLevel:'aggregated' },
+    { rawLabel:'Diferencia de redondeo', normalizedCategory:'other_income', amountNative:0.001, disclosureLevel:'aggregated' },
+    { rawLabel:'Participação nas Competições Europeias', normalizedCategory:'competition_bonus', amountNative:10.525, disclosureLevel:'aggregated' },
+    { rawLabel:'Participação nas Competições Nacionais', normalizedCategory:'competition_bonus', amountNative:0.563, disclosureLevel:'aggregated' },
+    { rawLabel:'Prémio Mundial 2018', normalizedCategory:'competition_bonus', amountNative:0.147, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência de jogadores', normalizedCategory:'player_sales', amountNative:1.986, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.191, disclosureLevel:'aggregated' },
+    { rawLabel:'Redébito de gastos', normalizedCategory:'other_income', amountNative:0.04, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.93, disclosureLevel:'aggregated' },
+    { rawLabel:'Venda de direitos desportivos', normalizedCategory:'player_sales', amountNative:71.404, disclosureLevel:'aggregated' },
+    { rawLabel:'Mecanismo de solidariedade/Compensação por formação', normalizedCategory:'player_sales', amountNative:4.389, disclosureLevel:'aggregated' },
+  ],
 };
 const sportingcpptExpenseLinesByYear = {
   2025: [
@@ -322,6 +339,45 @@ const sportingcpptExpenseLinesByYear = {
     { rawLabel:'Perdas por imparidade - Futebol profissional', normalizedCategory:'player_impairment', amountNative:-1.175, disclosureLevel:'aggregated' },
     { rawLabel:'Outros gastos não recorrentes', normalizedCategory:'exceptional_items', amountNative:-14.991, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Custo das mercadorias vendidas', normalizedCategory:'other_expenses', amountNative:-2.679, disclosureLevel:'aggregated' },
+    { rawLabel:'Subcontratos', normalizedCategory:'admin_general_expense', amountNative:-7.958, disclosureLevel:'aggregated' },
+    { rawLabel:'Organização, deslocações e estadias de jogos', normalizedCategory:'match_organisation_expense', amountNative:-2.846, disclosureLevel:'aggregated' },
+    { rawLabel:'Comissões', normalizedCategory:'other_expenses', amountNative:-2.831, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-1.41, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-2.708, disclosureLevel:'aggregated' },
+    { rawLabel:'Equipamentos Desportivos', normalizedCategory:'other_expenses', amountNative:-0.824, disclosureLevel:'aggregated' },
+    { rawLabel:'Combustíveis', normalizedCategory:'admin_general_expense', amountNative:-0.636, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade e Propaganda', normalizedCategory:'admin_general_expense', amountNative:-1.464, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.88, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e reparação', normalizedCategory:'admin_general_expense', amountNative:-0.191, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.527, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-1.617, disclosureLevel:'aggregated' },
+    { rawLabel:'Remuneração dos órgãos sociais', normalizedCategory:'admin_general_expense', amountNative:-0.387, disclosureLevel:'aggregated' },
+    { rawLabel:'Remuneração do pessoal', normalizedCategory:'wages_squad', amountNative:-53.091, disclosureLevel:'aggregated' },
+    { rawLabel:'Prémios de desempenho e de performance desportiva', normalizedCategory:'wages_squad', amountNative:-3.272, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações', normalizedCategory:'wages_squad', amountNative:-1.693, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos com remunerações', normalizedCategory:'wages_squad', amountNative:-4.318, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos com benefícios pós-emprego', normalizedCategory:'wages_squad', amountNative:-0.484, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-4.332, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-1.324, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciações e amortizações excluindo plantel', normalizedCategory:'depreciation', amountNative:-5.038, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de clientes', normalizedCategory:'other_expenses', amountNative:-0.245, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisões para outros riscos e encargos (Nota 19 e 27)', normalizedCategory:'other_amortisation', amountNative:2.44, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência de jogadores de terceiros', normalizedCategory:'other_expenses', amountNative:-3.281, disclosureLevel:'aggregated' },
+    { rawLabel:'Quotizações', normalizedCategory:'admin_general_expense', amountNative:-0.526, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.274, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas e penalidades', normalizedCategory:'other_expenses', amountNative:-0.278, disclosureLevel:'aggregated' },
+    { rawLabel:'Prospecção de mercado', normalizedCategory:'other_expenses', amountNative:-0.841, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-1.396, disclosureLevel:'aggregated' },
+    { rawLabel:'Diferencia de redondeo', normalizedCategory:'other_expenses', amountNative:0.001, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortizações do exercício - Futebol profissional', normalizedCategory:'player_amortisation', amountNative:-22.324, disclosureLevel:'aggregated' },
+    { rawLabel:'Perdas por imparidade - Futebol profissional', normalizedCategory:'player_impairment', amountNative:-8.577, disclosureLevel:'aggregated' },
+    { rawLabel:'Percentagem dos direitos económicos/mais valias', normalizedCategory:'other_expenses', amountNative:-1.319, disclosureLevel:'aggregated' },
+    { rawLabel:'Comissões', normalizedCategory:'other_expenses', amountNative:-7.342, disclosureLevel:'aggregated' },
+    { rawLabel:'Mecanismo de solidariedade/Compensação por formação', normalizedCategory:'other_expenses', amountNative:-2.278, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.819, disclosureLevel:'aggregated' },
+  ],
 };
 const sportingcpptFiscalYearMeta = {
   2025: {
@@ -412,6 +468,20 @@ const sportingcpptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:76.466, officialTotalExpenses:87.826, officialPAT:-31.905,
   },
+  2019: {
+    currency:'EUR', fxRef:'EUR@2019-06-30',
+    sourceId:'sportingcp-pt-relatorio-contas-2018-19',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-10.405, tax:-1.532,
+    extraRows: [
+      {label:'Resultados financeiros', value:-10.405},
+      {label:'Imposto sobre o rendimento', value:-1.532},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:151.63, officialTotalExpenses:147.569, officialPAT:-7.877,
+  },
 };
 const sportingcpptPresupuestoOverlayByYear = {};
 
@@ -456,6 +526,11 @@ Object.assign(sources, {
   'sportingcp-pt-relatorio-contas-2015-16': {
     id:'sportingcp-pt-relatorio-contas-2015-16', clubId:'sportingcp-pt',
     title:'SPORTING - Sociedade Desportiva de Futebol, SAD — relatorio-contas-2015-16 (ejercicio 2016)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'sportingcp-pt-relatorio-contas-2018-19': {
+    id:'sportingcp-pt-relatorio-contas-2018-19', clubId:'sportingcp-pt',
+    title:'SPORTING - Sociedade Desportiva de Futebol, SAD — relatorio-contas-2018-19 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

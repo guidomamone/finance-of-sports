@@ -137,6 +137,87 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Sporting CP/relatorio-contas-2018-19.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Sporting CP/relatorio-contas-2018-19.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Merchandising | pág. 100, Jev 1 |
+| 2 | Direitos Televisivos | pág. 100, Jev 1 |
+| 3 | Bilheteira e Bilhetes de Época | pág. 100, precedente |
+| 4 | Patrocínios e Publicidade | pág. 100, Jev 1 |
+| 5 | Outros | pág. 100, precedente |
+| 6 | Diferencia de redondeo | pág. ?, precedente |
+| 7 | Participação nas Competições Europeias | pág. 101, Jev 1 |
+| 8 | Participação nas Competições Nacionais | pág. 101, Jev 1 |
+| 9 | Prémio Mundial 2018 | pág. 101, Jev 1 |
+| 10 | Cedência de jogadores | pág. 101, precedente |
+| 11 | Subsídios à exploração | pág. 101, Jev 0.98 |
+| 12 | Redébito de gastos | pág. 101, Jev 1 |
+| 13 | Outros | pág. 101, precedente |
+| 14 | Venda de direitos desportivos | pág. 106, precedente |
+| 15 | Mecanismo de solidariedade/Compensação por formação | pág. 106, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas | pág. 73, precedente |
+| 2 | Subcontratos | pág. 102, Jev 0.97 |
+| 3 | Organização, deslocações e estadias de jogos | pág. 102, precedente |
+| 4 | Comissões | pág. 102, precedente |
+| 5 | Honorários | pág. 102, precedente |
+| 6 | Trabalhos especializados | pág. 102, precedente |
+| 7 | Equipamentos Desportivos | pág. 102, precedente |
+| 8 | Combustíveis | pág. 102, precedente |
+| 9 | Publicidade e Propaganda | pág. 102, precedente |
+| 10 | Rendas e alugueres | pág. 102, precedente |
+| 11 | Conservação e reparação | pág. 102, precedente |
+| 12 | Seguros | pág. 102, precedente |
+| 13 | Outros | pág. 102, precedente |
+| 14 | Remuneração dos órgãos sociais | pág. 103, precedente |
+| 15 | Remuneração do pessoal | pág. 103, precedente |
+| 16 | Prémios de desempenho e de performance desportiva | pág. 103, precedente |
+| 17 | Indemnizações | pág. 103, precedente |
+| 18 | Encargos com remunerações | pág. 103, precedente |
+| 19 | Gastos com benefícios pós-emprego | pág. 103, precedente |
+| 20 | Seguros | pág. 103, precedente |
+| 21 | Outros | pág. 103, precedente |
+| 22 | Depreciações e amortizações excluindo plantel | pág. 73, precedente |
+| 23 | Imparidade de clientes | pág. 104, precedente |
+| 24 | Provisões para outros riscos e encargos (Nota 19 e 27) | pág. 104, precedente |
+| 25 | Cedência de jogadores de terceiros | pág. 105, Jev 1 |
+| 26 | Quotizações | pág. 105, precedente |
+| 27 | Impostos | pág. 105, precedente |
+| 28 | Multas e penalidades | pág. 105, precedente |
+| 29 | Prospecção de mercado | pág. 105, precedente |
+| 30 | Outros | pág. 105, precedente |
+| 31 | Diferencia de redondeo | pág. ?, Jev 1 |
+| 32 | Amortizações do exercício - Futebol profissional | pág. 105, precedente |
+| 33 | Perdas por imparidade - Futebol profissional | pág. 105, precedente |
+| 34 | Percentagem dos direitos económicos/mais valias | pág. 106, precedente |
+| 35 | Comissões | pág. 106, precedente |
+| 36 | Mecanismo de solidariedade/Compensação por formação | pág. 106, precedente |
+| 37 | Outros | pág. 106, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2018–19 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
+```
+
 ## 2016
 
 ### Ingresos
@@ -561,4 +642,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sportingcp-pt-relatorio-contas-2018-19
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2018-19.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
