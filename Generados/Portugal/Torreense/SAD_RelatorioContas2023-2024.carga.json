@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Torreense/SAD_RelatorioContas2023-2024.pdf",
- "generado": "2026-10-16T02:33:31.014Z",
+ "generado": "2026-10-16T02:49:45.932Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (torreense-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Vendas e serviços prestados\" -> lump_football_operations 0.5; \"Gastos de acção social\" -> wages_squad 0.55; \"Provisões (aumentos/reduções)\" -> other_amortisation 0.5"
   }
  ],
  "avisos": [
@@ -26,9 +22,9 @@
     "amountNative": 4.77215,
     "disclosureLevel": "aggregated",
     "_pag": 54,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Aumentos/reduções de justo valor",
@@ -318,9 +314,9 @@
     "amountNative": -0.00144,
     "disclosureLevel": "aggregated",
     "_pag": 75,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros gastos com o pessoal, dos quais:",
@@ -338,9 +334,9 @@
     "amountNative": -0.00282,
     "disclosureLevel": "aggregated",
     "_pag": 54,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "681 - Impostos",
@@ -432,7 +428,7 @@
      "renglon": "Vendas e serviços prestados",
      "lado": "revenue",
      "importe": 4.77215,
-     "motivo": "el documento no desglosa este renglón"
+     "motivo": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense)."
     }
    ],
    "grossDebt": null,
@@ -477,11 +473,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 4.77215,
    "cat": "lump_football_operations",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "revenue",
    "amountNative": 4.77215
   },
@@ -917,11 +913,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 0.00144,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "expense",
    "amountNative": -0.00144
   },
@@ -949,11 +945,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.00282,
    "cat": "other_amortisation",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "expense",
    "amountNative": -0.00282
   },
@@ -1172,7 +1168,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 3,
   "lineasGasto": 35,
   "metaFilas": 3,

@@ -34,6 +34,9 @@ window.RANKINGS["pt-ligaportugal2"] = {
   2024: {
     leagueSize: null,
     clubs: [
+      { id:"torreense-pt", revenue:8.736, reportType:"official_balance_sheet",
+        sourceId:"torreense-pt-sad-relatoriocontas2023-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.111],["Otros ingresos",3.625]] },
       { id:"santaclara-pt", revenue:5.117, reportType:"official_balance_sheet",
         sourceId:"santaclara-pt-relatorio-contas-sad-2023-24",
         mix:[["Comercial / Sponsors",0.692],["Estadio",0.077],["Televisión",0.482],["Premios por competencias",0.07],["Venta de Jugadores",2.287],["Otros ingresos",1.511]] },

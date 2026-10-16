@@ -13,3 +13,5 @@
 
 - Relatório e Contas de la SAD 2021/22, 2022/23 y 2023/24.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Torreense/SAD_RelatorioContas2023-2024.pdf` (sourceId `torreense-pt-sad-relatoriocontas2023-2024`).
