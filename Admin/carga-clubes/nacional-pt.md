@@ -41,6 +41,89 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2024: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2024-06-30","sourceId":"nacional-pt-relatorio-contas-2023-24"}
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Nacional/relatorio-contas-2024-25.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Nacional/relatorio-contas-2024-25.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bilhetes, Camarotes | pág. 21, precedente |
+| 2 | Publicidade | pág. 21, precedente |
+| 3 | Direitos Televisivos | pág. 21, precedente |
+| 4 | Subsídios à exploração | pág. 4, Jev 0.98 |
+| 5 | Prémios - LPFP Apostas Desportivas Placard | pág. 22, precedente |
+| 6 | Prémios Federação Portuguesa de Futebol | pág. 22, precedente |
+| 7 | Mecanismo de solidariedade da UEFA | pág. 22, Claude 0.85 |
+| 8 | LPFP Quartos de Final/Allianz Cup | pág. 22, precedente |
+| 9 | Prémios Federação Portuguesa de Futebol | pág. 22, precedente |
+| 10 | Cedências de jogadores | pág. 22, precedente |
+| 11 | Venda de Jogadores | pág. 22, precedente |
+| 12 | Comparticipação tarifa residente | pág. 22, precedente |
+| 13 | Outros não especificados | pág. 22, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Correções relativas a períodos anteriores | pág. 22, precedente |
+| 2 | Trabalhos especializados | pág. 23, precedente |
+| 3 | Vigilância e segurança | pág. 23, precedente |
+| 4 | Honorários | pág. 23, precedente |
+| 5 | Comissões | pág. 23, Jev 0.97 |
+| 6 | Conservação e reparação | pág. 23, precedente |
+| 7 | Serviços bancários | pág. 23, precedente |
+| 8 | Outros | pág. 23, precedente |
+| 9 | Outros | pág. 23, precedente |
+| 10 | Outros | pág. 23, precedente |
+| 11 | Deslocações e estadas | pág. 23, precedente |
+| 12 | Outros | pág. 23, precedente |
+| 13 | Rendas e alugueres | pág. 23, precedente |
+| 14 | Comunicação | pág. 23, precedente |
+| 15 | Contencioso e notariado | pág. 23, precedente |
+| 16 | Limpeza, higiene e conforto | pág. 23, precedente |
+| 17 | Outros serviços | pág. 23, precedente |
+| 18 | Remunerações órgãos sociais | pág. 24, precedente |
+| 19 | Remunerações do Pessoal - Funcionários | pág. 24, precedente |
+| 20 | Remunerações do Pessoal - Jogadores | pág. 24, precedente |
+| 21 | Remunerações do Pessoal - Treinadores | pág. 24, precedente |
+| 22 | Indemnização para despedimento | pág. 24, precedente |
+| 23 | Enc. s/rem.-orgãos sociais | pág. 24, precedente |
+| 24 | Enc. s/rem.-pessoal - Funcionários | pág. 24, precedente |
+| 25 | Enc. s/rem.-pessoal - Treinadores | pág. 24, precedente |
+| 26 | Enc. s/rem.-pessoal - Jogadores | pág. 24, precedente |
+| 27 | Seg.ac.trb - Jogadores | pág. 24, precedente |
+| 28 | Gastos de ação social | pág. 24, precedente |
+| 29 | Outros Custos com Pessoal - Jogadores | pág. 24, precedente |
+| 30 | Outros Custos com Pessoal - Outros | pág. 24, precedente |
+| 31 | Provisões (aumentos/reduções) | pág. 4, precedente |
+| 32 | Impostos | pág. 25, Jev 1 |
+| 33 | Correções relativas a períodos anteriores | pág. 25, precedente |
+| 34 | Quotizações | pág. 25, precedente |
+| 35 | Transferências de jogadores | pág. 25, precedente |
+| 36 | Regularização Quotas TV (Liga) | pág. 25, precedente |
+| 37 | Juros mora | pág. 25, Jev 1 |
+| 38 | Outros não especificados | pág. 25, precedente |
+| 39 | Gastos/reversões de depreciação e de amortização | pág. 4, precedente |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 113.202. Fila de la nota 15.2 Outros rendimentos que la extracción puso como gasto (−113.202); es ingreso. Con el cambio los ingresos dan 9.365.062 (impreso 6.067.662 + 2.235.880 + 1.061.519) y el resultado 570.264 (impreso 570.265). Mismo patrón que Nacional 2024 (TODO 237 f) y Santa Clara (w).
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): categoria = exceptional_items. Claude 2026-10-16 (lote 82): corrección de ejercicios anteriores, como Nacional 2024: el ingreso (113.202, L842) y el gasto (L957) a exceptional_items (CONVENCIONES-DATOS). El ajuste muda el ingreso de lado sin cambiar su efecto; la respuesta de la cola lo cambiaba de signo (to-do 237 f)
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Nacional".
+```
+
 ## 2024
 
 ### Ingresos
@@ -302,4 +385,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Nacional/relatorio-contas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### nacional-pt-relatorio-contas-2024-25
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Nacional/relatorio-contas-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
