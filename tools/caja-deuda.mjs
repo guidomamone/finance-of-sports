@@ -264,6 +264,10 @@ function columnasDePerimetro(L) {
 export function filasDelMd(md) {
   const L = md.split('\n'); const filas = []; let pagina = 1; const textoPag = new Map();
   const notasAntes = columnasDeNotas(L); const notasPunto = columnasDeNotasConPunto(L); const notasForma = columnasConFormaDeNota(L); const colsPer = columnasDePerimetro(L);
+  // (caja y deuda, mejora 2) LA SECCIÓN DEL PASIVO de cada fila, por los títulos sin cifras de la tabla ("Passivo não corrente:", "Passivo
+  // corrente:"): la usa parCorrienteYNoCorriente() cuando el subtotal del no corriente no tiene nombre. Un título de activo o de patrimonio,
+  // o el total del pasivo, la cierra. No cambia ninguna lectura: solo agrega `seccion` a la fila.
+  let seccion = null;
   for (let i = 0; i < L.length; i++) {
     const l = L[i]; const m = l.match(PAG_RE); if (m) { pagina = Number(m[1]); continue; }
     textoPag.set(pagina, (textoPag.get(pagina) || '') + '\n' + l);
@@ -272,6 +276,10 @@ export function filasDelMd(md) {
       const celdas = l.trim().replace(/^\||\|$/g, '').split('|').map((c) => c.replace(/\*\*/g, '').trim());
       if (celdas.every((c) => /^:?-{2,}:?$/.test(c) || !c)) continue;
       const iEt = celdas.findIndex((c) => /\p{L}{3,}/u.test(c)); if (iEt < 0) continue;
+      { const t0 = normalizar(celdas[iEt]).replace(/[:*]/g, '').trim(); const sinCifras = celdas.every((c, j) => j === iEt || !/\d/.test(c));
+        if (sinCifras && SECCION_PNC_RE.test(t0)) seccion = 'no-corriente';
+        else if (sinCifras && SECCION_PC_RE.test(t0)) seccion = 'corriente';
+        else if ((sinCifras && SECCION_FIN_RE.test(t0)) || TOTAL_PASIVO_FIN_RE.test(t0)) seccion = null; }
       // (Versión 424) BALANCE DE DOS LADOS EN UNA FILA: "| Caixa | 4 | 952 | 85 | Empréstimos e financiamentos | 8 | 87 | 79 |". Cada etiqueta
       // con sus cifras es una fila (antes las del pasivo quedaban pegadas a la caja y la deuda no existía como fila). Caso: Novorizontino
       // 2018-2025 (la IA terminaba eligiendo la fila de "Caixa" como deuda porque esa línea dice "Empréstimos").
@@ -344,7 +352,7 @@ export function filasDelMd(md) {
     // de perímetro se reparten en dos grupos del mismo largo (lo demás, la nota, no cuenta). conPerimetro() elige la del ajuste `perimetro`.
     let porPerimetro = null; const mp = ix0 ? colsPer.get(i) : null;
     if (mp) { const g = { consolidado: [], individual: [] }; ix0.forEach((k, q) => { const per = mp.get(k); const v = parseNumber(cr0[q]); if (per && v !== null) g[per].push(Math.abs(v)); }); if (g.consolidado.length && g.consolidado.length === g.individual.length) porPerimetro = g; }
-    filas.push({ linea: i + 1, pagina, etiqueta, cd, codigo, norm: normalizar(sinCodigo), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums, ...(lecturaB && lecturaB.valor !== nums[0] ? { lecturaB } : {}), ...(nota ? { nota } : {}), ...(porPerimetro ? { porPerimetro } : {}) });
+    filas.push({ linea: i + 1, pagina, etiqueta, cd, codigo, norm: normalizar(sinCodigo), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums, ...(seccion ? { seccion } : {}), ...(lecturaB && lecturaB.valor !== nums[0] ? { lecturaB } : {}), ...(nota ? { nota } : {}), ...(porPerimetro ? { porPerimetro } : {}) });
     }
   }
   // Páginas del balance: título o total del activo/pasivo, y sin el título del flujo de efectivo / cambios en el patrimonio.
@@ -587,11 +595,21 @@ async function pedirJev(body, archivo, ejecutar, extraer) {
 // (Versión 451) Las dos filas de una familia de deuda, una a cada lado del total del pasivo no corriente del mismo balance; si no son
 // exactamente dos así, null.
 const TOTAL_NO_CORRIENTE_RE = /^[\s*]*total\s+(de\s+|del\s+)?(non[\s-]?current\s+liabilities|pasivos?\s+no\s+corrientes?|passivo\s+nao\s+circulante|exigivel\s+a\s+longo\s+prazo)/u;
+// (caja y deuda, mejora 2) Títulos de sección del pasivo, sobre la etiqueta normalizada y sin ":"; y lo que cierra la sección.
+const SECCION_PNC_RE = /^(passivo|pasivo)s?\s+(nao\s+corrente|no\s+corriente|nao\s+circulante)s?$|^non[\s-]?current\s+liabilities$/u;
+const SECCION_PC_RE = /^(passivo|pasivo)s?\s+(corrente|corriente|circulante)s?$|^current\s+liabilities$/u;
+const SECCION_FIN_RE = /^(ativo|activo|assets|capital|patrimonio|equity|fundos proprios)\b/u;
+const TOTAL_PASIVO_FIN_RE = /^total\s+(do\s+|del\s+|de\s+)?(passivo|pasivo|liabilities)s?$|^total\s+(do\s+)?capital\s+proprio\s+e\s+(do\s+)?passivo/u;
 function parCorrienteYNoCorriente(filas, fam) {
   const xs = dedupe(filas.filter((f) => f.balance && f.familia === fam && !esTotal(f.etiqueta) && f.cd !== 'D'));
   if (xs.length !== 2 || xs[1].linea - xs[0].linea > 40) return null;
   const entre = filas.some((f) => f.linea > xs[0].linea && f.linea < xs[1].linea && TOTAL_NO_CORRIENTE_RE.test(f.norm));
-  return entre ? xs : null;
+  if (entre) return xs;
+  // (caja y deuda, mejora 2) sin total con nombre entre las dos: el divisor son los títulos de sección (Portugal: el subtotal del no corriente
+  // es una fila sin etiqueta y la tabla dice "Passivo não corrente:" y "Passivo corrente:"; 154 de 186 documentos). Una fila en cada sección.
+  // Caso: Arouca 2021-22, "Financiamentos obtidos" 31.725,00 (no corriente, L295) + 3.525,00 (corriente, L302).
+  const secs = new Set(xs.map((f) => f.seccion));
+  return secs.has('no-corriente') && secs.has('corriente') ? xs : null;
 }
 // LA ESCALA EN LA COMPUERTA (Versión 459, punto 1 del HANDOFF, aprobado por Guido el 2026-10-04). La escala de un documento es una sola (la
 // del estado de resultados), pero hay documentos con dos (Juventus 2002-06: posición financiera en €000 y estado en euros; Novorizontino

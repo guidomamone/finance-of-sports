@@ -738,7 +738,8 @@ Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentar
  ESCALÓN 1  diccionario (vocabulario.mjs; en portugués también "Caixa e depósitos bancários", el rubro del SNC) + términos del club o
             del documento (ajuste `deuda-incluye`); jerarquía de balancete: padre e
             hija no se suman; cuenta D no es deuda. Además propone: deuda corriente + no corriente de la misma etiqueta (exactamente
-            dos filas, a cada lado del total del pasivo no corriente); las filas de la nota de efectivo si la caja es una parte; el total
+            dos filas, a cada lado del total del pasivo no corriente, o, si ese total no tiene nombre, una bajo el título "Passivo não
+            corrente" y otra bajo "Passivo corrente": caja y deuda, mejora 2); las filas de la nota de efectivo si la caja es una parte; el total
             de la nota de deuda si no hay otra fila de deuda
  ESCALÓN 1b Jev (to-do 233 + 232 t, fijo en --club): propone la fila de caja (opción cerrada entre las filas del balance) y las de
             deuda (sí/no por fila), antes de la IA cara; medido en todos los clubes: caja 9 de 9, deuda 5 de 7 (los 2 distintos, errores

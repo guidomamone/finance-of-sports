@@ -44,6 +44,8 @@ que dice `ESTADO.md` era verdad ese día.
   el costo total, la cola sin pedirle nada a Guido) (r). Solo salida.
 - vocabulario.mjs: "Caixa e depósitos bancários" como caja en portugués (caja y deuda, mejora 1). Medido: --medir +1 igual, 0 distintos
   nuevos; en Portugal los escalones gratis completan 93 de 327 datos vacíos (antes 28).
+- caja-deuda.mjs: la deuda partida en corriente y no corriente se reconoce también por los títulos de sección del pasivo (mejora 2).
+  Medido: --medir idéntico; en Portugal, 23 deudas más gratis (116 de 327); revisadas Arouca 2022, Académica 2022 y Gil Vicente 2021.
 - Lotes 86 y 87: Felgueiras 2021-22 y Benfica 2007-08 cargados; caja de Felgueiras 2022-2024. Listas 80, 86 y 87 al archivo.
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)
