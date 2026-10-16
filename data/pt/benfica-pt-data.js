@@ -322,6 +322,21 @@ const benficaptRevenueLinesByYear = {
     { rawLabel:'Benefícios de penalidades contratuais', normalizedCategory:'other_income', amountNative:0.034333, disclosureLevel:'aggregated' },
     { rawLabel:'Outros proveitos e ganhos extraordinários', normalizedCategory:'other_income', amountNative:2.11739, disclosureLevel:'aggregated' },
   ],
+  2006: [
+    { rawLabel:'Proveitos suplementares', normalizedCategory:'other_income', amountNative:12.765682, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.028136, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros proveitos e ganhos operacionais', normalizedCategory:'other_income', amountNative:0.5625, disclosureLevel:'aggregated' },
+    { rawLabel:'Proveitos e ganhos extraordinários', normalizedCategory:'other_income', amountNative:11.442643, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas de jogos', normalizedCategory:'matchday_competition', amountNative:11.687937, disclosureLevel:'aggregated' },
+    { rawLabel:'Transmissões televisivas', normalizedCategory:'broadcasting', amountNative:7.625, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:8.13284, disclosureLevel:'aggregated' },
+    { rawLabel:'Cessão de exploração do estádio – quotas sócios', normalizedCategory:'member_dues', amountNative:6.542049, disclosureLevel:'aggregated' },
+    { rawLabel:'Cativos', normalizedCategory:'season_tickets', amountNative:2.482822, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência de atletas', normalizedCategory:'player_sales', amountNative:1.471521, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas competições FPF', normalizedCategory:'competition_bonus', amountNative:0.349321, disclosureLevel:'aggregated' },
+    { rawLabel:'Cachet\'s', normalizedCategory:'other_income', amountNative:0.25, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras', normalizedCategory:'other_income', amountNative:0.102671, disclosureLevel:'aggregated' },
+  ],
 };
 const benficaptExpenseLinesByYear = {
   2019: [
@@ -1051,6 +1066,17 @@ const benficaptExpenseLinesByYear = {
     { rawLabel:'Correcções relativas a exercícios anteriores', normalizedCategory:'exceptional_items', amountNative:-0.443064, disclosureLevel:'aggregated' },
     { rawLabel:'Outros custos e perdas extraordinários', normalizedCategory:'other_expenses', amountNative:-0.340419, disclosureLevel:'aggregated' },
   ],
+  2006: [
+    { rawLabel:'Fornecimentos e serviços externos', normalizedCategory:'admin_general_expense', amountNative:-12.477445, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações', normalizedCategory:'wages_squad', amountNative:-27.497682, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-3.38139, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortizações do imobilizado corpóreo e incorpóreo', normalizedCategory:'depreciation', amountNative:-10.73711, disclosureLevel:'aggregated' },
+    { rawLabel:'Ajustamentos', normalizedCategory:'other_amortisation', amountNative:-0.104379, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisões', normalizedCategory:'other_amortisation', amountNative:-1.291943, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.392925, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros custos e perdas operacionais', normalizedCategory:'other_expenses', amountNative:-0.103535, disclosureLevel:'aggregated' },
+    { rawLabel:'Custos e perdas extraordinários', normalizedCategory:'exceptional_items', amountNative:-3.61037, disclosureLevel:'aggregated' },
+  ],
 };
 const benficaptFiscalYearMeta = {
   2019: {
@@ -1310,6 +1336,21 @@ const benficaptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:83.13975, officialTotalExpenses:58.299647, officialPAT:15.274429,
   },
+  2006: {
+    currency:'EUR', fxRef:'EUR@2006-06-30',
+    sourceId:'benfica-pt-relatorio-contas-2005-06',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-5.041071, tax:-0.026196,
+    extraRows: [
+      {label:'Outros', value:-5.086831},
+      {label:'Outros', value:0.04576},
+      {label:'Imposto sobre o rendimento do exercício', value:-0.026196},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:63.443122, officialTotalExpenses:55.986409, officialPAT:-1.220924,
+  },
 };
 const benficaptPresupuestoOverlayByYear = {};
 
@@ -1409,6 +1450,11 @@ Object.assign(sources, {
   'benfica-pt-relatorio-contas-2006-07': {
     id:'benfica-pt-relatorio-contas-2006-07', clubId:'benfica-pt',
     title:'Sport Lisboa e Benfica – Futebol, SAD — relatorio-contas-2006-07 (ejercicio 2007)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'benfica-pt-relatorio-contas-2005-06': {
+    id:'benfica-pt-relatorio-contas-2005-06', clubId:'benfica-pt',
+    title:'Sport Lisboa e Benfica – Futebol, SAD — relatorio-contas-2005-06 (ejercicio 2006)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

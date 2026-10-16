@@ -422,6 +422,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2006: {
     leagueSize: null,
     clubs: [
+      { id:"benfica-pt", revenue:80.655, reportType:"official_balance_sheet",
+        sourceId:"benfica-pt-relatorio-contas-2005-06",
+        mix:[["Cuotas Sociales",8.317],["Comercial / Sponsors",10.339],["Estadio",18.015],["Televisión",9.694],["Premios por competencias",0.444],["Venta de Jugadores",1.871],["Otros ingresos",31.975]] },
       { id:"sportingcp-pt", revenue:50.271, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2005-06",
         mix:[["Cuotas Sociales",4.816],["Comercial / Sponsors",6.667],["Estadio",12.627],["Televisión",10.305],["Premios por competencias",5.725],["Otros ingresos",10.132]] },

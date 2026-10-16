@@ -1539,6 +1539,68 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2007–08 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
 ```
 
+## 2006
+
+### Ingresos
+
+```text
+2006: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Benfica/relatorio-contas-2005-06.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Benfica/relatorio-contas-2005-06.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Proveitos suplementares | pág. 20, Jev 1 |
+| 2 | Subsídios à exploração | pág. 20, Jev 0.97 |
+| 3 | Outros proveitos e ganhos operacionais | pág. 20, Jev 1 |
+| 4 | Proveitos e ganhos extraordinários | pág. 20, Jev 1 |
+| 5 | Receitas de jogos | pág. 30, Jev 1 |
+| 6 | Transmissões televisivas | pág. 11, Jev 1 |
+| 7 | Patrocínios | pág. 30, Jev 1 |
+| 8 | Cessão de exploração do estádio – quotas sócios | pág. 30, precedente |
+| 9 | Cativos | pág. 11, Jev 0.92 |
+| 10 | Cedência de atletas | pág. 30, precedente |
+| 11 | Receitas competições FPF | pág. 11, Jev 1 |
+| 12 | Cachet's | pág. 30, Claude 0.92 |
+| 13 | Outras | pág. 30, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Fornecimentos e serviços externos | pág. 20, Jev 0.98 |
+| 2 | Remunerações | pág. 20, precedente |
+| 3 | Outros | pág. 20, Jev 0.98 |
+| 4 | Amortizações do imobilizado corpóreo e incorpóreo | pág. 20, Jev 0.98 |
+| 5 | Ajustamentos | pág. 20, precedente |
+| 6 | Provisões | pág. 20, Claude 0.85 |
+| 7 | Impostos | pág. 20, Jev 0.96 |
+| 8 | Outros custos e perdas operacionais | pág. 20, Jev 1 |
+| 9 | Custos e perdas extraordinários | pág. 20, Jev 0.95 |
+
+### Meta
+
+```text
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): estado = b9. localizar.mjs dudó de la fecha y no eligió estado, pero el informe es del ejercicio 2005/2006 (cierre 31/07/2006) y trae la Demonstração dos Resultados por naturezas en euros, individual (la SAD no consolidaba).
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): reportType = official_balance_sheet. Relatório e contas anual del ejercicio 1/8/2005-31/7/2006, no un intermedio.
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 11.687.937. Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 7.625.000. Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 8.132.840. Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 6.542.049. Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 2.482.822. Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 1.471.521. Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 349.321. Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 250.000. Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)
+2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 102.671. Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2005–06 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
+```
+
 ## Fuentes
 
 ### benfica-pt-relatorio-contas-2018-19
@@ -1675,4 +1737,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2006-07.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### benfica-pt-relatorio-contas-2005-06
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2005-06.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

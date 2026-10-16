@@ -1,230 +1,208 @@
 {
-  "md": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.md",
-  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
-  "club": "benfica-pt",
-  "year": 2006,
-  "generatedAt": "2026-10-16T17:17:04.692Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Proveitos suplementares",
-      "lado": "revenue",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        12.765682
-      ],
-      "glosa": "Ingresos accesorios"
-    },
-    {
-      "label": "Subsídios à exploração",
-      "lado": "revenue",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        0.028136
-      ],
-      "glosa": "Subvenciones a la explotación"
-    },
-    {
-      "label": "Outros proveitos e ganhos operacionais",
-      "lado": "revenue",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        0.5625
-      ],
-      "glosa": "Otros ingresos y ganancias de explotación"
-    },
-    {
-      "label": "Proveitos e ganhos extraordinários",
-      "lado": "revenue",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        11.442643
-      ],
-      "glosa": "Ingresos y ganancias extraordinarias"
-    },
-    {
-      "label": "Receitas de jogos",
-      "lado": "revenue",
-      "page": 30,
-      "section": "ajuste manual",
-      "values": [
-        11.687937
-      ],
-      "glosa": "Ingresos por partidos"
-    },
-    {
-      "label": "Transmissões televisivas",
-      "lado": "revenue",
-      "page": 11,
-      "section": "ajuste manual",
-      "values": [
-        7.625
-      ],
-      "glosa": "Retransmisiones televisivas"
-    },
-    {
-      "label": "Patrocínios",
-      "lado": "revenue",
-      "page": 30,
-      "section": "ajuste manual",
-      "values": [
-        8.13284
-      ],
-      "glosa": "Patrocinios"
-    },
-    {
-      "label": "Cessão de exploração do estádio – quotas sócios",
-      "lado": "revenue",
-      "page": 30,
-      "section": "ajuste manual",
-      "values": [
-        6.542049
-      ],
-      "glosa": "Cesión de explotación del estadio – cuotas de socios"
-    },
-    {
-      "label": "Cativos",
-      "lado": "revenue",
-      "page": 11,
-      "section": "ajuste manual",
-      "values": [
-        2.482822
-      ],
-      "glosa": "Abonos"
-    },
-    {
-      "label": "Cedência de atletas",
-      "lado": "revenue",
-      "page": 30,
-      "section": "ajuste manual",
-      "values": [
-        1.471521
-      ],
-      "glosa": "Cesión de deportistas"
-    },
-    {
-      "label": "Receitas competições FPF",
-      "lado": "revenue",
-      "page": 11,
-      "section": "ajuste manual",
-      "values": [
-        0.349321
-      ],
-      "glosa": "Ingresos por competiciones de la FPF"
-    },
-    {
-      "label": "Cachet's",
-      "lado": "revenue",
-      "page": 30,
-      "section": "ajuste manual",
-      "values": [
-        0.25
-      ],
-      "glosa": "Cachés"
-    },
-    {
-      "label": "Outras",
-      "lado": "revenue",
-      "page": 30,
-      "section": "ajuste manual",
-      "values": [
-        0.102671
-      ],
-      "glosa": "Otras"
-    },
-    {
-      "label": "Fornecimentos e serviços externos",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        12.477445
-      ],
-      "glosa": "Suministros y servicios exteriores"
-    },
-    {
-      "label": "Remunerações",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        27.497682
-      ],
-      "glosa": "Remuneraciones"
-    },
-    {
-      "label": "Outros",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        3.38139
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "Amortizações do imobilizado corpóreo e incorpóreo",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        10.73711
-      ],
-      "glosa": "Amortizaciones del inmovilizado material e intangible"
-    },
-    {
-      "label": "Ajustamentos",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        0.104379
-      ],
-      "glosa": "Ajustes"
-    },
-    {
-      "label": "Provisões",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        1.291943
-      ],
-      "glosa": "Provisiones"
-    },
-    {
-      "label": "Impostos",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        0.392925
-      ],
-      "glosa": "Impuestos"
-    },
-    {
-      "label": "Outros custos e perdas operacionais",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        0.103535
-      ],
-      "glosa": "Otros gastos y pérdidas de explotación"
-    },
-    {
-      "label": "Custos e perdas extraordinários",
-      "lado": "expense",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        3.61037
-      ],
-      "glosa": "Gastos y pérdidas extraordinarias"
-    }
-  ]
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.md",
+ "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf",
+ "club": "benfica-pt",
+ "year": 2006,
+ "generatedAt": "2026-10-16T17:20:30.377Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Proveitos suplementares",
+   "lado": "revenue",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    12.765682
+   ]
+  },
+  {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    0.028136
+   ]
+  },
+  {
+   "label": "Outros proveitos e ganhos operacionais",
+   "lado": "revenue",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    0.5625
+   ]
+  },
+  {
+   "label": "Proveitos e ganhos extraordinários",
+   "lado": "revenue",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    11.442643
+   ]
+  },
+  {
+   "label": "Receitas de jogos",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "values": [
+    11.687937
+   ]
+  },
+  {
+   "label": "Transmissões televisivas",
+   "lado": "revenue",
+   "page": 11,
+   "section": "ajuste manual",
+   "values": [
+    7.625
+   ]
+  },
+  {
+   "label": "Patrocínios",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "values": [
+    8.13284
+   ]
+  },
+  {
+   "label": "Cessão de exploração do estádio – quotas sócios",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "values": [
+    6.542049
+   ]
+  },
+  {
+   "label": "Cativos",
+   "lado": "revenue",
+   "page": 11,
+   "section": "ajuste manual",
+   "values": [
+    2.482822
+   ]
+  },
+  {
+   "label": "Cedência de atletas",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "values": [
+    1.471521
+   ]
+  },
+  {
+   "label": "Receitas competições FPF",
+   "lado": "revenue",
+   "page": 11,
+   "section": "ajuste manual",
+   "values": [
+    0.349321
+   ]
+  },
+  {
+   "label": "Cachet's",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "values": [
+    0.25
+   ]
+  },
+  {
+   "label": "Outras",
+   "lado": "revenue",
+   "page": 30,
+   "section": "ajuste manual",
+   "values": [
+    0.102671
+   ]
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    12.477445
+   ]
+  },
+  {
+   "label": "Remunerações",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    27.497682
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    3.38139
+   ]
+  },
+  {
+   "label": "Amortizações do imobilizado corpóreo e incorpóreo",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    10.73711
+   ]
+  },
+  {
+   "label": "Ajustamentos",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    0.104379
+   ]
+  },
+  {
+   "label": "Provisões",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    1.291943
+   ]
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    0.392925
+   ]
+  },
+  {
+   "label": "Outros custos e perdas operacionais",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    0.103535
+   ]
+  },
+  {
+   "label": "Custos e perdas extraordinários",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    3.61037
+   ]
+  }
+ ]
 }
