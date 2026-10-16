@@ -223,6 +223,22 @@ llegue acá.
        del bucle de las etapas 3-5 por otro camino que no se pudo ver: la salida estaba truncada). Sumarlo a la etapa 6 "si hay respuesta
        posterior" es un parche con riesgo: re-verificaría con filas viejas un documento que esa corrida decidió dejar afuera (sin estado,
        falta fijar el cierre). Primero encontrar la causa: la próxima vez, el RESUMEN DEL LOTE dice el estado de ese PDF.
+       CONTEXTO PARA BUSCAR LA CAUSA (pedido de Guido, 2026-10-15):
+       - Hechos: lote 80, cuarta corrida (2026-10-16 ~01:20 UTC, con --ejecutar --cargar). Sporting 2007-08 y Benfica 2019-20 tenían sus 4 casos
+         contestados a las 00:21-00:22 UTC; sus .verificacion.json quedaron con generado 2026-10-15T23:54 (no se reescribieron) y la etapa 8
+         frenó "[filas] 4 casos pendientes". verificar.mjs escribe el .verificacion.json SIEMPRE (L1518) y verificarLista no tiene caché:
+         esos dos PDF no llegaron a la etapa 6, o sea que en el bucle de las etapas 3-5 de lote.mjs NO quedaron en estado 'extraído'.
+       - En los ENSAYOS de esa misma lista los dos imprimían "estado bN · digital · N filas" (llegaban a 'extraído'): la diferencia está en
+         algo que solo corre con --ejecutar.
+       - Caminos del bucle que hacen continue antes de 'extraído' y corren distinto con --ejecutar (empezar por acá): el escalón 1a de la
+         etapa 2 si el registro dice e.estado 'sin-verificar' o 'revisar' (resolver-inventario.mjs --ejecutar cambia el registro y el
+         documento puede seguir por otra rama); el rearmado con el texto propio (paginasARearmar y rearmar: con --ejecutar y sin
+         --reintentar hace continue); "falta fijar el cierre o el perímetro" (aFijar); validar o extraer con error.
+       - Cómo reproducirlo sin gastar mucho: una lista con solo ese PDF, contestar un caso suyo y correr el lote con --ejecutar (sin --cargar);
+         mirar su línea en "=== RESUMEN DEL LOTE ===" (dice el estado final) y si aparece en "=== Etapa 6 ===". Comparar el campo estado de
+         ese PDF en transcripciones-estado.jsonl antes y después.
+       - Una vez encontrada la rama: que deje el documento en 'extraído' si sus derivados están al día, o que la etapa 6 lo tome con una
+         compuerta que excluya lo que la corrida decidió dejar afuera (sin estado, falta fijar). Medir con prueba-completa.
 238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
    sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
    (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
