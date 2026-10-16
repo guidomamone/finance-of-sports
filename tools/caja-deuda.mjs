@@ -268,8 +268,12 @@ export function filasDelMd(md) {
   // corrente:"): la usa parCorrienteYNoCorriente() cuando el subtotal del no corriente no tiene nombre. Un título de activo o de patrimonio,
   // o el total del pasivo, la cierra. No cambia ninguna lectura: solo agrega `seccion` a la fila.
   let seccion = null;
+  // (deuda, mejora 1) EN QUÉ TABLA ESTÁ CADA FILA: un bloque de líneas "|" seguidas es una tabla (`tabla`, un número por documento). Lo usa
+  // tablasDelTotal(). No cambia ninguna lectura.
+  let tabla = 0; let enTabla = false;
   for (let i = 0; i < L.length; i++) {
-    const l = L[i]; const m = l.match(PAG_RE); if (m) { pagina = Number(m[1]); continue; }
+    const l = L[i]; const m = l.match(PAG_RE); if (m) { pagina = Number(m[1]); enTabla = false; continue; }
+    { const esT = l.trim().startsWith('|'); if (esT && !enTabla) tabla++; enTabla = esT; }
     textoPag.set(pagina, (textoPag.get(pagina) || '') + '\n' + l);
     let etiqueta = null; let crudos = []; const segmentos = []; let ixPrim = null; let jPrim = null;
     if (l.trim().startsWith('|')) {
@@ -352,7 +356,7 @@ export function filasDelMd(md) {
     // de perímetro se reparten en dos grupos del mismo largo (lo demás, la nota, no cuenta). conPerimetro() elige la del ajuste `perimetro`.
     let porPerimetro = null; const mp = ix0 ? colsPer.get(i) : null;
     if (mp) { const g = { consolidado: [], individual: [] }; ix0.forEach((k, q) => { const per = mp.get(k); const v = parseNumber(cr0[q]); if (per && v !== null) g[per].push(Math.abs(v)); }); if (g.consolidado.length && g.consolidado.length === g.individual.length) porPerimetro = g; }
-    filas.push({ linea: i + 1, pagina, etiqueta, cd, codigo, norm: normalizar(sinCodigo), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums, ...(seccion ? { seccion } : {}), ...(lecturaB && lecturaB.valor !== nums[0] ? { lecturaB } : {}), ...(nota ? { nota } : {}), ...(porPerimetro ? { porPerimetro } : {}) });
+    filas.push({ linea: i + 1, pagina, etiqueta, cd, codigo, norm: normalizar(sinCodigo), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums, ...(seccion ? { seccion } : {}), ...(l.trim().startsWith('|') ? { tabla } : {}), ...(lecturaB && lecturaB.valor !== nums[0] ? { lecturaB } : {}), ...(nota ? { nota } : {}), ...(porPerimetro ? { porPerimetro } : {}) });
     }
   }
   // Páginas del balance: título o total del activo/pasivo, y sin el título del flujo de efectivo / cambios en el patrimonio.
@@ -411,6 +415,26 @@ function esTotalBalance(n) {
   if (!(TOTAL_ACTIVO_RE.test(n) || TOTAL_PASIVO_RE.test(n) || TOTAL_BALANCE_RE.test(n))) return false;
   const resto = n.replace(TOTAL_BALANCE_RE, '').replace(TOTAL_ACTIVO_RE, '').replace(TOTAL_PASIVO_RE, '').trim().split(/\s+/).filter(Boolean);
   return resto.length <= 3; // "y patrimonio", "corrientes", "e patrimonio liquido": sí; "liquidos en moneda extranjera": no
+}
+// (deuda, mejora 1) LAS TABLAS DEL BALANCE PROPIAMENTE DICHO: las que tienen el total del pasivo (deuda) o del activo (caja). Los clubes
+// grandes repiten las filas en tablas resumen del informe de gestión, en miles (Porto 2016-17: "Empréstimos Bancários" en L594/L598 y en el
+// balance L860/L869; Porto 2015-16: "Caixa e depósitos bancários" 7.392 en L657 contra 7.392.033 en L976).
+function tablasDelTotal(filas, cual) {
+  const lado = cual === 'cash' ? /\b(activos?|ativos?|assets)\b/u : /\b(pasivos?|passivos?|liabilities)\b/u;
+  // Un total en texto corrido (sin tabla) cuenta como una tabla más ('texto'): Botafogo 2025 trae el balance en texto (pág. 31) y la tabla de
+  // reexpresión del año anterior (pág. 44) es la única con tabla; sin esto, quedaba esa.
+  return new Set(filas.filter((f) => f.balance && esTotalBalance(f.norm) && lado.test(f.norm)).map((f) => f.tabla ?? 'texto'));
+}
+// Si una familia tiene filas en más de una tabla y una de esas tablas es la ÚNICA del documento con el total, quedan solo las de esa tabla.
+// Una familia en una sola tabla, o sin tabla del total, queda igual.
+function soloTablaDelBalance(xs, filas, cual) {
+  // UNA sola tabla con el total en el documento: con dos (Botafogo 2025, el balance y la tabla de reexpresión del año anterior, cada una con
+  // su "Total do Passivo") no se sabe cuál es el balance del año, y queda como antes.
+  const tt = tablasDelTotal(filas, cual); if (tt.size !== 1) return xs;
+  const porFam = new Map(); for (const f of xs) porFam.set(f.familia, [...(porFam.get(f.familia) || []), f]);
+  const out = [];
+  for (const [, fs] of porFam) { const tablas = new Set(fs.map((f) => f.tabla)); const enTotal = fs.filter((f) => tt.has(f.tabla)); out.push(...(tablas.size > 1 && enTotal.length ? enTotal : fs)); }
+  return xs.filter((f) => out.includes(f));
 }
 const dedupe = (fs) => { const vistos = new Set(); return fs.filter((f) => { const k = `${f.familia}|${f.valor}`; if (vistos.has(k)) return false; vistos.add(k); return true; }); };
 const r6 = (x) => Math.round(x * 1e6) / 1e6;
@@ -479,7 +503,7 @@ function propuestaVocabulario(filas, cual, club, extraDeuda = []) {
   const cand = filas.filter((f) => f.balance && re.test(f.norm) && !esTotal(f.etiqueta) && !(cual === 'deuda' && f.cd === 'D'));
   const hija = (f) => cand.some((g) => g !== f && ((g.codigo && f.codigo && f.codigo.length > g.codigo.length && f.codigo.startsWith(g.codigo))
     || (!f.codigo && g.linea < f.linea && f.linea - g.linea <= 2 && g.valor === f.valor)));
-  const m = dedupe(cand.filter((f) => !hija(f)));
+  const m = dedupe(soloTablaDelBalance(cand.filter((f) => !hija(f)), filas, cual)); // (deuda, mejora 1)
   // EL TOTAL DE LA NOTA DE DEUDA (Versión 385): si no hay filas de deuda pero sí el TOTAL de una nota de deuda financiera, se propone ese
   // total (misma compuerta). Antes caía en "ninguna fila = 0". Caso: Fortaleza 2018 y 2019, cuya nota es solo "Total Prestamos y Sobregiros
   // Bancarios 4,398 / 794" (2018 L396, 2019 L582): se escribía deuda 0, y la compuerta lo dejaba pasar porque 2017 también es 0.
@@ -601,7 +625,7 @@ const SECCION_PC_RE = /^(passivo|pasivo)s?\s+(corrente|corriente|circulante)s?$|
 const SECCION_FIN_RE = /^(ativo|activo|assets|capital|patrimonio|equity|fundos proprios)\b/u;
 const TOTAL_PASIVO_FIN_RE = /^total\s+(do\s+|del\s+|de\s+)?(passivo|pasivo|liabilities)s?$|^total\s+(do\s+)?capital\s+proprio\s+e\s+(do\s+)?passivo/u;
 function parCorrienteYNoCorriente(filas, fam) {
-  const xs = dedupe(filas.filter((f) => f.balance && f.familia === fam && !esTotal(f.etiqueta) && f.cd !== 'D'));
+  const xs = dedupe(soloTablaDelBalance(filas.filter((f) => f.balance && f.familia === fam && !esTotal(f.etiqueta) && f.cd !== 'D'), filas, 'deuda')); // (deuda, mejora 1)
   if (xs.length !== 2 || xs[1].linea - xs[0].linea > 40) return null;
   const entre = filas.some((f) => f.linea > xs[0].linea && f.linea < xs[1].linea && TOTAL_NO_CORRIENTE_RE.test(f.norm));
   if (entre) return xs;

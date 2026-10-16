@@ -48,6 +48,9 @@ que dice `ESTADO.md` era verdad ese día.
   Medido: --medir idéntico; en Portugal, 23 deudas más gratis (116 de 327); revisadas Arouca 2022, Académica 2022 y Gil Vicente 2021.
 - Caja y deuda de Portugal (caja-deuda.mjs --ejecutar --escribir en los 33 clubes): 151 de 327 datos; Portugal pasa de 3 a 117 años con
   caja y de 0 a 37 con deuda. Porto 2016-2019: caja corregida con ajustes `caja` (Jev había leído miles como euros). Mejoras vistas: TODO 260.
+- caja-deuda.mjs: si una familia está en varias tablas y hay una sola tabla con el total del balance, cuentan las filas de esa (deuda,
+  mejora 1). Medido: --medir +1 deuda y +2 cajas iguales, 0 distintos nuevos (una primera versión daba mal Botafogo 2025: corregida);
+  Portugal +3 deudas (Gil Vicente 2025, Vitória 2024 y 2025).
 - Lotes 86 y 87: Felgueiras 2021-22 y Benfica 2007-08 cargados; caja de Felgueiras 2022-2024. Listas 80, 86 y 87 al archivo.
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)

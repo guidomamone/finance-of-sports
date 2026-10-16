@@ -741,6 +741,9 @@ Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentar
             dos filas, a cada lado del total del pasivo no corriente, o, si ese total no tiene nombre, una bajo el título "Passivo não
             corrente" y otra bajo "Passivo corrente": caja y deuda, mejora 2); las filas de la nota de efectivo si la caja es una parte; el total
             de la nota de deuda si no hay otra fila de deuda
+ TABLA DEL BALANCE (deuda, mejora 1) si una familia de deuda o de caja aparece en más de una tabla de las páginas del balance y el
+            documento tiene UNA sola tabla con el total del pasivo (o del activo), cuentan solo las filas de esa tabla (un total en texto
+            corrido cuenta como otra tabla: Botafogo 2025). Las tablas resumen del informe de gestión, en miles, quedan afuera
  ESCALÓN 1b Jev (to-do 233 + 232 t, fijo en --club): propone la fila de caja (opción cerrada entre las filas del balance) y las de
             deuda (sí/no por fila), antes de la IA cara; medido en todos los clubes: caja 9 de 9, deuda 5 de 7 (los 2 distintos, errores
             del sitio)
