@@ -105,14 +105,13 @@ con los que no están en los pasos de arriba.
     Mejoras de script vistas en Grecia: to-do 232.
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
-    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, aa, q (POC y q1/q2), k, w, am, l (vecino sin
+    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, aa, q (POC y q1/q2), k, w, am, l (vecino sin
     descartados), ah, af+s, ai+ak, z, g y la letra nueva an (verificar no reescribe el .rubros.json igual, glosar no vuelve a pagar). Pasaron a
     Admin/HALLAZGOS-pipeline.md: b, c, h, i, j, l (primera parte), m, p, u, x, ae, aj y Benfica 2014-15. Guido dejó al para después.
     Cómo medir cada letra: verificar -> node tools/medir-verificar.mjs --lista Admin/lotes/prueba-completa.txt --salida <x> --pasadas 2
     (antes con --script <copia de la versión vieja dentro de tools/>) y --comparar; cargar -> node tools/medir-cargar.mjs --salida <x>
     (paralelo, ~1,5 min) y --comparar, después git checkout -- Admin/registros/categorias-aprendidas.jsonl; auditoría -> node tools/audit.js.
     PENDIENTES, con el diseño que dejaron los diagnósticos (subagentes Sonnet; ok de Guido para codear todas salvo al), en este orden:
-    - d (S): cargar-lote.mjs revertirAlta (~L117): después del git checkout, `git clean -fdq -- data fuentes` (el árbol arranca limpio).
     - t (S): cargar-lote.mjs ~L50: antes de decidir el alta, `node tools/alta-club.mjs --todos --solo "<país>/<club>"` (gratis) y recargar.
     - e (S-M): audit.js ~L405: `escala-implausible` baja a P3 si otro ejercicio del club a 2 años o menos está dentro de la banda y a menos
       de 20x. Destraba Felgueiras 2021-22 (además tiene "Outros gastos" en la cola) y sobran los audit-ignore de Alverca 2022 y

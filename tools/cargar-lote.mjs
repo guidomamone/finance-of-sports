@@ -128,6 +128,12 @@ function revertirAlta(clubId) {
   git('checkout', '-q', '--', ...SITIO.filter((x) => x !== 'fuentes' && x !== 'Admin/sourcing'), 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html');
   git('checkout', '-q', '--', 'fuentes', 'Admin/sourcing');
   for (const f of [rutaData(clubId), `fuentes/${clubId}.html`, EV.rutaRel(clubId)]) { try { unlinkSync(resolve(ROOT, f)); } catch { /* no estaba */ } }
+  // (to-do 237 d) Y TODO LO NUEVO que dejó el alta en data/ y fuentes/, no solo los tres archivos de arriba: el checkout restaura lo que
+  // existía, pero un archivo NUEVO (el de ligas de un país nuevo, data/club-leagues/pt.js con Alverca) quedaba sin trackear y el alta
+  // siguiente de la misma corrida (Rio Ave 2018, lista) frenaba por "cambios sin commitear en el sitio". Seguro: la corrida exige data/ y
+  // fuentes/ sin cambios ni archivos nuevos al empezar (git status --porcelain, arriba), así que lo que hay sin trackear lo creó la corrida.
+  // `git clean` sin -x no toca lo que está en .gitignore.
+  git('clean', '-fdq', '--', 'data', 'fuentes');
 }
 
 let commits = 0; const noEscritos = [];
