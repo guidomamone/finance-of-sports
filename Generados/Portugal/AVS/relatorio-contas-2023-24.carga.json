@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf",
- "generado": "2026-10-16T03:41:08.682Z",
+ "generado": "2026-10-16T03:51:54.138Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (avs-pt)"
-  },
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 1.49427 + gastos -4.512755 + netInterest -0.004346 + tax -0.018472 = -3.041303 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 3.041302)"
   }
  ],
  "avisos": [
@@ -383,13 +379,31 @@
    "gestionId": null,
    "profitOnPlayerSales": 0,
    "assetSales": 0,
-   "netInterest": -0.004346,
-   "tax": -0.018472,
+   "netInterest": 0.004346,
+   "tax": -0.027164,
+   "extraRows": [
+    {
+     "label": "Rendimentos e ganhos financeiros",
+     "value": null
+    },
+    {
+     "label": "Gastos e perdas financeiras",
+     "value": 0.004346
+    },
+    {
+     "label": "Ganhos e perdas com diferenças de câmbio",
+     "value": null
+    },
+    {
+     "label": "Imposto sobre o rendimento (deducido: antes de impuestos − resultado final, por ajuste manual)",
+     "value": -0.027164
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 1.49427,
    "officialTotalExpenses": 4.512755,
-   "officialPAT": null
+   "officialPAT": -3.041302
   },
   "source": {
    "id": "avs-pt-relatorio-contas-2023-24",
@@ -416,7 +430,18 @@
  },
  "clubId": "avs-pt",
  "year": 2024,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf",
+   "campo": "resultado-final",
+   "valor": "-3.041.302,19",
+   "linea": null,
+   "motivo": "Claude 2026-10-16 (lote 82): pérdida; el resultado que tomó la carga (+3.041.302) sale de la tabla de L613 con el signo al final ('3 041 302,19 € -'), que se perdió. El estado (L513 '- 3 041 302,19 €') y el resumen (L229 '(3.041.302,19)') dicen negativo; ingresos y gastos cierran con lo impreso",
+   "evidencia": "relatorio-contas-2023-24.md L229, L513, L613",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
   "filas": 39,
   "notasUsadas": [],
@@ -968,7 +993,7 @@
   {
    "label": "Gastos e perdas financeiras",
    "page": null,
-   "native": -0.004346,
+   "native": 0.004346,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -988,9 +1013,9 @@
    "destino": "netInterest"
   },
   {
-   "label": "Imposto sobre o rendimento",
+   "label": "Imposto sobre o rendimento (deducido: antes de impuestos − resultado final, por ajuste manual)",
    "page": null,
-   "native": -0.018472,
+   "native": -0.027164,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -1006,17 +1031,24 @@
    "verificacion (nota que desglosa \"Gastos extraordinários\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
   "revSum": 1.49427,
   "expSum": -4.512755,
   "officialTotalRevenue": 1.49427,
   "officialTotalExpenses": 4.512755,
-  "officialPAT": null,
+  "officialPAT": -3.041302,
   "verificacion": {
+   "pat": "impreso",
    "ingresos": "impreso",
    "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -3.041302,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
   },
   "revImpreso": {
    "label": "total de ingresos (verificado)",
@@ -1078,7 +1110,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 13,
   "lineasGasto": 22,
   "metaFilas": 4,

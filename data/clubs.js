@@ -261,6 +261,7 @@ const clubs = {
   'uniaodeleiria-pt': { id:'uniaodeleiria-pt', name:'União de Leiria- Futebol, SAD', displayName:'União de Leiria', country:'PT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#D71920' },
   'casapia-pt': { id:'casapia-pt', name:'Casa Pia', displayName:'Casa Pia', country:'PT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#000000' },
   'mafra-pt': { id:'mafra-pt', name:'Clube Desportivo de Mafra – Futebol, SAD', displayName:'Mafra', country:'PT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#008000' },
+  'avs-pt': { id:'avs-pt', name:'AVS', displayName:'AVS', country:'PT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FF0000' },
 };
 
 // Source: de dónde sale cada número; `reliability` es lo que distingue dato oficial, de prensa o placeholder.
