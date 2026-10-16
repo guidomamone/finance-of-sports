@@ -1496,6 +1496,18 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       if (res > 0 && PERDIDA.test(etRes) && !GANANCIA.test(etRes)) senales.push(`la etiqueta "${etRes.trim().replace(/\*/g, '')}" es de pérdida`);
       if (res > 0 && /\bD\s*$/.test(String(F.resultado?.actual || ''))) senales.push(`el importe impreso "${F.resultado.actual}" lleva la marca D`);
       if (ingImpresos.length && dinero(ingImpresos.filter((f) => /^\s*[-(−]/.test(String(f.actual)))) > dinero(ingImpresos) / 2) senales.push('los ingresos vienen impresos en negativo (signos de balancete)');
+      // (to-do 237 am) señales nuevas: el signo VA AL FINAL del importe impreso ("3 041 302,19 € -", AVS 2023-24), o el MISMO resultado
+      // (misma etiqueta, mismo importe) está impreso en otra línea del documento con signo negativo explícito (el estado, el resumen o el
+      // patrimonio: AVS L229/L513, Portimonense L1036). Misma compuerta de arriba: el resultado cerró EXACTO con el signo opuesto.
+      if (res > 0 && /\d[\s€*]*[-−]\s*\**\s*$/.test(String(F.resultado?.actual || ''))) senales.push(`el importe impreso "${F.resultado.actual}" lleva el signo menos al final`);
+      if (res > 0 && !senales.length && etRes.trim()) {
+        try {
+          const abs0 = Math.abs(parseNumber(String(F.resultado?.actual)) ?? NaN); const et0 = normalizar(etRes);
+          const otra = readFileSync(resolve(ROOT, md), 'utf8').split('\n').map((t, i) => [t, i + 1]).find(([t, n]) => n !== F.resultado?.linea && t.includes('|') && normalizar(t.split('|').filter((c) => /[a-zà-ú]/i.test(c))[0] || '') === et0
+            && t.split('|').slice(1).some((c) => { const v = parseNumber(c); return v != null && v < 0 && Math.abs(Math.abs(v) - abs0) < 0.005 + 1e-9; }));
+          if (otra) senales.push(`la misma etiqueta imprime el importe en negativo en L${otra[1]}`);
+        } catch {}
+      }
       if (senales.length) {
         resParaCargar = -res;
         chequeos.push({ nombre: 'signo del resultado', ok: true, detalle: `escalón 2: las filas dan ${r6(pat)} y el impreso es ${r6(res)}; se carga ${r6(-res)} porque ${senales.join('; ')}` });
