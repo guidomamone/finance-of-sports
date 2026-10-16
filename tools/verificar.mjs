@@ -1141,7 +1141,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // 1. números no confirmados contra el PDF: la aritmética los confirma si todo cerró; si no, se prueba con lo que leyó la segunda fuente
   const cerro = okRes === true || chequeos.filter((c) => c.nombre.startsWith('total')).some((c) => c.ok === true);
   const usadas = [...ing, ...gas, ...fin, ...imp];
+  const confirmadosAManoZ = ajustesDe(pdf).filter((a) => a.campo === 'confirmado'); // (to-do 237 z)
   for (const nc of V?.noConfirmados || []) {
+    // (to-do 237 z) un número confirmado a mano (ajuste `confirmado`, misma línea y mismo valor: la compuerta de avisarRegistro) no vuelve a
+    // la cola como "número no confirmado" (Santa Clara 2024-25, L1542 "40 646").
+    if (confirmadosAManoZ.some((a) => Number(a.linea) === Number(nc.linea) && String(a.valor).trim() === String(nc.numero).trim())) continue;
     const fila = usadas.find((f) => f.linea === nc.linea && normNum(String(f.actual || '')).includes(normNum(nc.numero)));
     if (!fila) continue; // número de otra columna o de una fila que no se usa
     // (to-do 176, escalón b, aprobado por Guido el 2026-10-08) con la etapa 6 cerrada, LAS SUMAS ELIGEN ENTRE LAS DOS LECTURAS: el número de
